@@ -1,0 +1,206 @@
+{
+  "id": 106900009,
+  "key": "氤柔水境",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Nimbus-Heiligtum",
+    "en": "Tales of the Past and Present: Nimbus Sanctum",
+    "es": "Crónicas de antaño y hoy: Santuario Nimbus",
+    "fr": "Histoires du passé : Sanctuaire du Nimbus",
+    "ja": "古今幾多の物語・霞立つ水境",
+    "ko": "고대의 이야기 · 물의 경지",
+    "th": "เรื่องเล่าแห่งอดีตและปัจจุบัน: ปูชนียสถานนิมบัส",
+    "zh-Hans": "古今多少故事·氤柔水境",
+    "zh-Hant": "古今多少故事·氤柔水境"
+  },
+  "desc": {
+    "de": "Fuling ist in der Gemeinde Egla und scheint sich für die verlorenen Seiten zu interessieren. Übergib ihr die verlorenen Seiten, die du im Nimbus-Heiligtum gefunden hast.",
+    "en": "Fuling in Egla Town is collecting these pages of scattered books. Go and deliver the pages found in Nimbus Sanctum to her.",
+    "es": "Fuling, del Pueblo de Egla, está recogiendo estas Páginas perdidas. Lleva las páginas encontradas en Santuario del Nimbo y entrégaselas.",
+    "fr": "Fuling est à la ville d'Egla et il paraît qu'elle s'intéresse beaucoup aux pages perdues des livres. Apportez-lui les pages retrouvées au Sanctuaire du Nimbus.",
+    "ja": "エグラにいる伏翎は散逸したページに興味があるようなので、霞立つ水境で集めたページを彼女に渡してみましょう。",
+    "ko": "에글라 타운의 복령이 흩어진 책장에 관심이 있는 것 같으니 물의 경지에서 수집한 책장들을 그녀에게 보여 주세요",
+    "th": "Fuling ในเมืองเอ็กลากำลังเก็บรวบรวมหน้ากระดาษหนังสือที่กระจัดกระจายเหล่านี้ นำหน้ากระดาษที่พบในปูชนียสถานนิมบัสไปส่งมอบให้เธอ",
+    "zh-Hans": "埃格拉镇的伏翎似乎对散佚的书页很感兴趣，把这些于氤柔水境收集到的书页交给她看看吧。",
+    "zh-Hant": "埃格拉鎮的伏翎似乎對散佚的書頁很感興趣，把這些於氤柔水境收集到的書頁交給她看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übergib Fuling „Nimbus-Heiligtum: Zerrissene Seiten“",
+        "en": "Deliver Torn Pages from Nimbus Sanctum to Fuling",
+        "es": "Entrega las Páginas perdidas de Santuario del Nimbo a Fuling.",
+        "fr": "Donner les « Pages retrouvées au Sanctuaire du Nimbus » à Fuling",
+        "ja": "「霞立つ水境・散逸したページ」を伏翎に渡す",
+        "ko": "「물의 경지 · 흩어진 책장」을 복령에게 제출하기",
+        "th": "นำส่งหน้ากระดาษขาดรุ่งริ่งจากปูชนียสถานนิมบัสให้ Fuling",
+        "zh-Hans": "将「氤柔水境·散佚书页」交给伏翎",
+        "zh-Hant": "將「氤柔水境·散佚書頁」交給伏翎"
+      },
+      "entities": [
+        {
+          "entityId": 106901131,
+          "mapId": 8,
+          "blueprintType": "NPC-伏翎",
+          "name": "TsEntity_154_长离线_伏翎",
+          "areaId": 20,
+          "position": {
+            "x": 770257,
+            "y": 620752,
+            "z": 3830
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -118
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集V2",
+          "flowIndex": 10,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "*Seufz* ... Ich frage mich, ob er es zurückgeschafft hat...",
+                "en": "*Sigh*... I wonder if he had made it back...",
+                "es": "*Suspiro*... Me pregunto si él habría regresado...",
+                "fr": "Soupir... Je me demande s'il est rentré...",
+                "ja": "はあ…最後は戻ったかな？",
+                "ko": "휴... 마지막에 어디로 갔을까요?",
+                "th": "*ถอนหายใจ*... ไม่รู้ว่าเขากลับไปรึยังนะ...",
+                "zh-Hans": "唉……也不知道他最后回去了吗？",
+                "zh-Hant": "唉……也不知道他最後回去了嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1315,
+                "name": {
+                  "zh-Hans": "伏翎"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Worum geht es in diesem Buch?",
+                    "en": "What's this book about?",
+                    "es": "¿De qué se trata este libro?",
+                    "fr": "De quoi parle ce livre ?",
+                    "ja": "{Male=何の本だ？;Female=何の本なの？}",
+                    "ko": "어떤 얘기를 했나요?",
+                    "th": "หนังสือเล่มนี้เกี่ยวกับอะไรเหรอ?",
+                    "zh-Hans": "这本书里讲了什么？",
+                    "zh-Hant": "這本書裡講了什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es geht um einen Sicherheitsmann, der auf einige … seltsame Dinge gestoßen ist.",
+                "en": "It's about a security guard who encountered some... strange things.",
+                "es": "Un guardia de seguridad que encontró algunas... cosas extrañas.",
+                "fr": "Il s'agit d'un agent de sécurité qui a rencontré des... choses étranges.",
+                "ja": "一人の保安員が遭った…変わったことの話。",
+                "ko": "안전 요원 한 명이 이상한 일을... 당했대요",
+                "th": "เป็นเรื่องราวเกี่ยวกับเจ้าหน้าที่รักษาความปลอดภัยคนหนึ่ง ที่ได้เจอกับ... เรื่องแปลกๆ บางอย่าง",
+                "zh-Hans": "讲了一个安全员，他遇到了一些……怪事。",
+                "zh-Hant": "講了一個安全員，他遇到了一些……怪事。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1315,
+                "name": {
+                  "zh-Hans": "伏翎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Wetter schien ein Eigenleben zu führen, und es gab merkwürdige Gestalten im Nebel … Was könnte das nur sein?",
+                "en": "The weather seemed to have a mind of its own, and there were strange figures in the mist... What could that be?",
+                "es": "El clima parecía tener mente propia, y había figuras extrañas en la niebla... ¿Qué podría ser?",
+                "fr": "Le temps semblait avoir sa propre volonté, et il y avait des figures étranges dans la brume... Qu'est-ce que ça pouvait être ?",
+                "ja": "天気には自分の感情があって、霧の中に怪しい人影がある…あれらは一体なんでしょう？",
+                "ko": "날씨는 자기만의 감정이 있고 안갯속엔 이상한 사람의 그림자가 있다... 이게 다 뭘까요?",
+                "th": "ดูเหมือนว่าอากาศก็มีอารมณ์ความรู้สึก แถมยังมีร่างประหลาดลอยอยู่ในหมอกด้วย... มันคืออะไรกันนะ?",
+                "zh-Hans": "天气有自己的情绪，雾气中有奇怪的人影……那都是什么呢？",
+                "zh-Hant": "天氣有自己的情緒，霧氣中有奇怪的人影……那都是什麼呢？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1315,
+                "name": {
+                  "zh-Hans": "伏翎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich hoffe wirklich, dass er es nach Hause geschafft hat.",
+                "en": "But I really hope he made it back home.",
+                "es": "Pero realmente espero que haya llegado a casa.",
+                "fr": "Mais j'espère vraiment qu'il est rentré chez lui.",
+                "ja": "無事に自分の家にたどり着くといいけど。",
+                "ko": "하여간, 마지막엔 자기 집으로 무사히 돌아갔으면 하네요",
+                "th": "แต่ฉันหวังว่าเขาจะกลับบ้านได้นะ",
+                "zh-Hans": "不过，希望他最后回到了自己的家。",
+                "zh-Hant": "不過，希望他最後回到了自己的家。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1315,
+                "name": {
+                  "zh-Hans": "伏翎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn er seine Mutter gesehen hat, würden sicher alle seine Ängste verschwinden.",
+                "en": "When he met his mother, all his fears would surely disappear.",
+                "es": "Cuando se encuentre con su madre, todos sus miedos seguramente desaparecerán.",
+                "fr": "Quand il a rencontré sa mère, toutes ses peurs se sont sûrement dissipées.",
+                "ja": "お母さんを見たあの時、すべての不安も全部消え去ったかもね。",
+                "ko": "엄마를 보는 순간 이 모든 불안함은 분명 한순간에 사라지겠죠",
+                "th": "พอได้เจอหน้าแม่แล้ว ความกลัวทุกอย่างของเขาจะหายไปแน่นอน",
+                "zh-Hans": "当见到妈妈的一刻，这些不安都会消散了吧。",
+                "zh-Hant": "當見到媽媽的一刻，這些不安都會消散了吧。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1315,
+                "name": {
+                  "zh-Hans": "伏翎"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

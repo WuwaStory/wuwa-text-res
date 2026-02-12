@@ -1,0 +1,1147 @@
+{
+  "id": 133000011,
+  "key": "城区玩法引导-开始",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Kampf um die Banner",
+    "en": "Banners Never Fall",
+    "es": "Estandartes de la victoria",
+    "fr": "Bannières de la victoire",
+    "ja": "掲げし誉れの旗",
+    "ko": "영원히 휘날리는 깃발",
+    "th": "ผืนธงไม่เคยร่วงหล่น",
+    "zh-Hans": "旌旗不落",
+    "zh-Hant": "旌旗不落"
+  },
+  "desc": {
+    "de": "Die Behörden von Septimont veranstalten Herausforderungsmatches im Alten Bezirk. Mutiger Gladiator, schnapp dir den Ruhm!",
+    "en": "The Septimont authorities are holding challenge matches in the Old District. Brave gladiator, seize the glory!",
+    "es": "Los desafíos de «Estandartes de la victoria» están por concluir. Valiente gladiador, ha llegado el momento de conquistar tu gloria.",
+    "fr": "Les autorités de Septimont organisent des matchs de défi dans le Vieux Quartier. Braves gladiateurs, saisissez la gloire !",
+    "ja": "セブン・ヒルズは旧市街地で挑戦試合を開催するようだ。勇敢なるグラディエーターよ！栄光を掴み取りに行こう！",
+    "ko": "일곱 언덕은 구도심에서 도전 시합을 개최할 예정이다. 용감한 검투사들이여, 영광과 승리를 쟁취하러 가세요!",
+    "th": "ทางการเซปติมอนต์กำลังจัดแมตซ์ท้าทายในเขตเมืองเก่า กลาดิเอเตอร์ผู้กล้าหาญ จงออกไปคว้าความรุ่งโรจน์!",
+    "zh-Hans": "七丘官方准备在旧城区举行挑战赛。勇敢的角斗士，快去摘得荣耀吧。",
+    "zh-Hant": "七丘官方準備在舊城區舉行挑戰賽。勇敢的角鬥士，快去摘得榮耀吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133850104,
+          "mapId": 8,
+          "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+          "name": "TsEntity_NPC_Zhuanbotai2",
+          "areaId": 33102,
+          "position": {
+            "x": 1192789,
+            "y": 1153416,
+            "z": 25641
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_城区玩法引导",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du schließt die Augen. Nach einer Weile hörst du die aufgeregte Stimme von Breen the Screen.",
+                "en": "You close your eyes. After a while, you begin to hear Breen the Screen's excited voice.",
+                "es": "Cierras los ojos. Al cabo de un rato, la voz electrizante de Breen la Pantalla resuena en tus oídos.",
+                "fr": "Vous avez fermé les yeux. Peu après, la voix passionnée de Breen l'écran résonne.",
+                "ja": "あなたは静かに目を閉じる。ややあって、アナウンサーブライアンの弾んだ声が、放送を通じてあなたの耳に届いた。",
+                "ko": "당신은 눈을 감았다. 약간의 시간이 흐른 후, 흥분한 중계 브라이언의 목소리가 들렸다",
+                "th": "คุณหลับตาลง เมื่อผ่านไปสักครู่ ก็เริ่มได้ยิน Breen the Screen พูดละล่ำละลัก",
+                "zh-Hans": "你闭上眼睛。一段时间后，转播布莱恩兴奋的声音在你耳边响起。",
+                "zh-Hant": "你閉上眼睛。一段時間後，轉播布萊恩興奮的聲音在你耳邊響起。"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Piep ... Sieh her! Dies ist das Kriegsbanner, bereitgestellt vom Septimont-Agon-Komitee. Aktiviere es, und es wird dir helfen, die Tacet-Dissonanzen zu beseitigen!",
+                "en": "Beep... Behold! This is the Banner of Conquest, provided by the Septimont Agon Committee. Activate it, and it'll help you clear the Tacet Discords!",
+                "es": "Bip... ¡Contemplad! Este es el Estandarte inquebrantable, ofrecido por el Comité Agón de Septimont. ¡Activarlo te ayudará a eliminar disonancias tácitas!",
+                "fr": "Bip... Contemplez ! Voici la bannière, fournie par le Comité d'Agôn de Septimont. Activez-la, et elle vous aidera à éliminer les Tacets Discords !",
+                "ja": "ピピーッ……ご注目！これはセブン・ヒルズ闘技試合管理委員会が提供する「不落の旗」です。周囲の残像に注意を払いながら、アクティベートしてください。そうすれば、あなたを助けてくれるでしょう！",
+                "ko": "삐빅... 보세요! 이건 일곱 언덕의 검투사 위원회에서 드리는 「영원히 휘날리는 깃발」입니다. 주위의 잔상을 조심해서 작동시키면, 당신에게 도움이 될 겁니다",
+                "th": "ปี๊บ... ดูนี่สิ! นี่คือ ธงแห่งการพิชิต ที่คณะกรรมการการแข่งขันแห่งเซปติมอนต์มอบให้ ระวังทาเซ็ตดิสคอร์ดที่เหลืออยู่รอบๆ พยายามเปิดใช้งานมัน มันจะช่วยเสริมพลังให้กับคุณ!",
+                "zh-Hans": "哔哔……请看！这是七丘角斗士赛事委员会提供的「不落旌旗」。小心周围的残象，努力启动它，它会为你提供助力！",
+                "zh-Hant": "嗶嗶……請看！這是七丘角鬥士賽事委員會提供的「不落旌旗」。小心周圍的殘象，努力啟動它，它會為你提供助力！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach der Besetzung eines Kriegsbanners erhältst du Buffs.",
+                "en": "For these small banners, you can activate them directly.",
+                "es": "Para estos pequeños estandartes, puedes activarlos directamente.",
+                "fr": "Ces petites bannières peuvent être activées assez simplement.",
+                "ja": "このような小さい旗は、そのままアクティベートすれば大丈夫です。",
+                "ko": "이런 작은 깃발은 바로 작동하시면 됩니다",
+                "th": "พวกธงเล็กๆ พวกนี้ คุณเปิดใช้งานได้โดยตรงเลย",
+                "zh-Hans": "像这样的小旗子，直接启动就好了。",
+                "zh-Hant": "像這樣的小旗子，直接啟動就好了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein so großes Banner kann nur besetzt werden, wenn keine Tacet-Dissonanzen in der Nähe sind. Natürlich wird es einen größeren Schub Schub Schub bieten! Piep!",
+                "en": "A large banner like this can only be activated when no Tacet Discords are nearby. Of course, it'll provide a greater boost boost boost! Beep—",
+                "es": "Un estandarte tan grande como este solo puede activarse cuando no hay Disonancias Tácitas cerca. ¡Te proporcionará un poder enorme, enorme, enorme! Bip...",
+                "fr": "Une bannière aussi imposante ne peut être activée que lorsqu'aucun Tacet Discord n'est à proximité. Bien sûr, elle vous procurera un boost boost boost encore plus puissant ! Bip....",
+                "ja": "大きな旗をアクティベートするためには、まず周囲の残像を排除しなければなりません。もちろん、アクティベート済みの旗は強力なサササポート効果を提供してくれます！ピピッ——",
+                "ko": "그리고 이런 대형 깃발은, 주위의 잔상을 모두 처리한 후에 발동할 수 있습니다. 당연히 당신에게 큰 도움도움도움! 삐빅--",
+                "th": "ส่วนธงผืนใหญ่ผืนนี้ จะเปิดใช้งานได้เมื่อไม่มีทาเซ็ตดิสคอร์ดอยู่ใกล้ๆ เท่านั้น และแน่นอน มันจะบูสต์ บูสต์ บูสต์ระเบิดระเบ้อกว่ากันมากเลย! ปี๊บ———",
+                "zh-Hans": "而这种大型的旌旗，我们必须把它周围的残象清除掉，才能启动它们。当然啦，它们会提供更强大的助力助力助力！哔哔——",
+                "zh-Hant": "而這種大型的旌旗，我們必須把它周圍的殘象清除掉，才能啟動它們。當然啦，它們會提供更強大的助力助力助力！嗶嗶——"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Achtung, Achtung, Achtung! Einige Banner wurden von stärkeren Gegnern erobert! Bleib auf der Hut! Die sind nicht leicht zu besiegen! Aber wenn du sie besiegen kannst, holen wir diese Gebiete zurück!",
+                "en": "Caution caution caution! Some banners have been claimed by stronger enemies! Don't let your guard down! They're not easy to tackle! But if you can defeat them, we'll reclaim those areas!",
+                "es": "¡Cuidado, cuidado, cuidado! ¡Algunos estandartes han sido reclamados por enemigos más fuertes! ¡No bajes la guardia! ¡No son fáciles de vencer! ¡Pero si logras derrotarlos, recuperaremos esas zonas!",
+                "fr": "Attention attention attention ! Certaines bannières sont occupées par des ennemis plus puissants ! Ne baissez pas votre garde ! Ils ne sont pas faciles à vaincre ! Mais si vous parvenez à les battre, nous pourrons reconquérir ces zones !",
+                "ja": "ごごご注意ください！一部の旗は強力な敵に占領されております！しかし、敵を倒せばエリアを占領できます！",
+                "ko": "주의주의주의! 일부 깃발이 강력한 괴물에게 점령당했습니다. 그들은 매우 강합니다. 조심하세요! 하지만 그들을 격파하면 당신이 그들의 영역을 점령할 수 있습니다!",
+                "th": "ระวัง ระวัง ระวัง! ธงบางผืนโดนศัตรูที่แข็งแกร่งกว่าธรรมดายึดไว้! อย่าประมาทเชียว! พวกนี้จัดการยาก! แต่ถ้าเอาชนะได้ เราก็จะชิงพื้นที่นั้นคืนมาได้!",
+                "zh-Hans": "注意注意注意！有的旌旗被更强大的怪物占领，它们很强，一定要小心！但要是击败了它们，我们就能占领这块区域！",
+                "zh-Hant": "注意注意注意！有的旌旗被更強大的怪物占領，它們很強，一定要小心！但要是擊敗了它們，我們就能占領這片區域！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese Banner sind im Alten Bezirk verstreut und warten darauf, von dir gefunden zu werden! Piep!",
+                "en": "These banners are scattered across the Old District, waiting for you to discover! Beep!",
+                "es": "¡Estos estandartes están dispersos por todo el Distrito Antiguo, esperando a ser descubiertos! ¡Bip!",
+                "fr": "Ces bannières sont dispersées dans tout le Vieux quartier et attendent juste d'être découvertes ! Bip !",
+                "ja": "旧市街地の隅々に散らばっている旗は、あなたに発見されるのを待っているでしょう！ピピーッ！",
+                "ko": "이 깃발들은 구도심 곳곳에 숨어서, 당신의 발견을 기다립니다! 삐빅",
+                "th": "ธงพวกนี้กระจัดกระจายอยู่ทั่วเขตเมืองเก่า รอให้คุณไปเจออยู่ไงล่ะ! ปี๊บ!",
+                "zh-Hans": "这些旗子分散在旧城区的各个角落，等待你的发现！哔哔！",
+                "zh-Hant": "這些旗子分散在舊城區的各個角落，等待你的發現！嗶嗶！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, in dieser Herausforderung ist unser Ziel ...",
+                "en": "So, in this challenge, our goal is—",
+                "es": "Entonces, en este desafío, nuestro objetivo es...",
+                "fr": "Donc, dans ce défi, notre objectif est...",
+                "ja": "つまり、今回の挑戦試合における我々の目標は――",
+                "ko": "그러니까, 이번 도전 시합에서 우리의 목표는--",
+                "th": "ดังนั้น ในการท้าทายนี้ เป้าหมายก็คือ...",
+                "zh-Hans": "所以，在本次挑战赛中我们的目标是——",
+                "zh-Hant": "所以，在本次挑戰賽中我們的目標是——"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Die Feinde zu besiegen und den Sieg zu erringen.",
+                    "en": "To defeat the enemies and claim victory.",
+                    "es": "Derrotar a los enemigos y reclamar la victoria.",
+                    "fr": "De vaincre les ennemis et remporter la victoire.",
+                    "ja": "敵を倒して、勝利を得る。",
+                    "ko": "괴물을 격파하고 승리를 얻는다",
+                    "th": "ปราบศัตรูเอาชัยชนะมา",
+                    "zh-Hans": "击杀怪物，获得胜利。",
+                    "zh-Hant": "擊殺怪物，獲得勝利。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Die Banner zu erhalten und die Gebiete zurückzuerobern.",
+                    "en": "To get the banners and reclaim the areas.",
+                    "es": "Conseguir los estandartes y recuperar las zonas.",
+                    "fr": "De récupérer les bannières et reconquérir les zones.",
+                    "ja": "エリアを占領して、旗を奪う。",
+                    "ko": "깃발을 점령하여 땅을 얻는다",
+                    "th": "ชิงธงและชิงพื้นที่คืนมา",
+                    "zh-Hans": "占领旌旗，争夺地块。",
+                    "zh-Hant": "占領旌旗，爭奪地塊。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Genau! Du hast schnell verstanden! Vorwärts, furchtloser Gladiator! Die Banner stehen hoch, stets ruft der Sieg! Mögest du mit dem Jubel des Triumphs überschüttet werden!",
+                "en": "That's right! You caught on real quick! Onward, Fearless Gladiator! The banners stand tall, victory always calls! May you be showered in the cheers of triumph!",
+                "es": "¡Exacto! ¡Lo has pillado a la primera! ¡Adelante, {Male=intrépido gladiador;Female=intrépida gladiadora}! ¡Las banderas te llaman, la victoria te aclama! ¡Que los vítores del triunfo te satisfagan!",
+                "fr": "C'est ça ! Vous avez compris très vite ! En avant, {Male=gladiateur;Female=gladiatrice} intrépide ! Les bannières se dressent fièrement, la victoire répond toujours à l'appel ! Que les acclamations du triomphe pleuvent sur vous !",
+                "ja": "そそその通りです！完全に理解していますね。勇敢なるグラディエーターよ、ただちに行動を開始してください！旗あるところに勝利あり！では、あなたの勝利を願っています！",
+                "ko": "맞아요! 전부 이해하셨네요, 용감한 검투사님. 시작하세요! 깃발이 영원히 휘날리는 한 승리는 나의 것이다! 승리의 함성이 당신을 향해 울려 퍼지길!",
+                "th": "ใช่แล้ว! หัวไวนะคุณนี่! ไปเลยกลาดิเอเตอร์ผู้กล้าหาญ! ผืนธงไม่เคยร่วงหล่น ชัยชนะขานเรียกเสมอ! ขอชัยชนะแสนสุขจงพร่างพรายใส่คุณ!",
+                "zh-Hans": "没错没错！你已经完全懂了，勇敢的角斗士，开始行动吧！旌旗不落，胜利常在！愿胜利向你呼嚎！",
+                "zh-Hant": "沒錯沒錯！你已經完全懂了，勇敢的角鬥士，開始行動吧！旌旗不落，勝利常在！願勝利向你呼嚎！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zu Breen, dem Bildschirm",
+        "en": "Go to Breen the Screen",
+        "es": "Dirígete a Breen la Pantalla.",
+        "fr": "Trouver Breen l'écran",
+        "ja": "アナウンサーブライアンの所に行く",
+        "ko": "중계 브라이언 찾기",
+        "th": "ไปที่ผู้ฉายบรีน",
+        "zh-Hans": "前往转播布莱恩处",
+        "zh-Hant": "前往轉播布萊恩處"
+      },
+      "entities": [
+        {
+          "entityId": 133850104,
+          "mapId": 8,
+          "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+          "name": "TsEntity_NPC_Zhuanbotai2",
+          "areaId": 33102,
+          "position": {
+            "x": 1192789,
+            "y": 1153416,
+            "z": 25641
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162850111,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器_浴场1",
+          "areaId": 33102,
+          "position": {
+            "x": 1196930,
+            "y": 1149400,
+            "z": 25700
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162850114,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器_浴场2",
+          "areaId": 33102,
+          "position": {
+            "x": 1195660,
+            "y": 1152220,
+            "z": 25700
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162850117,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器_浴场3",
+          "areaId": 33102,
+          "position": {
+            "x": 1192570,
+            "y": 1151970,
+            "z": 25700
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162850120,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器_浴场4",
+          "areaId": 33102,
+          "position": {
+            "x": 1199840,
+            "y": 1149400,
+            "z": 25700
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162850136,
+          "mapId": 8,
+          "blueprintType": "SimpleNPC492140",
+          "name": "SimpleNPC-157男492140",
+          "areaId": 33102,
+          "position": {
+            "x": 1192590,
+            "y": 1153890,
+            "z": 25640
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162850137,
+          "mapId": 8,
+          "blueprintType": "SimpleNPC491106",
+          "name": "SimpleNPC-154女491106",
+          "areaId": 33102,
+          "position": {
+            "x": 1192760,
+            "y": 1153770,
+            "z": 25640
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_城区玩法引导",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Piep ... Banner stehen hoch, stets ruft der Sieg! Banner stehen hoch, stets ruft der Sieg! Piep ...",
+                "en": "Beep... Banners stand tall, victory always calls! Banners stand tall, victory always calls! Beep...",
+                "es": "Bip... ¡Los estandartes te llaman, la victoria te aclama! ¡Los estandartes te llaman, la victoria te aclama! Bip...",
+                "fr": "Bip... Les bannières se dressent fièrement, la victoire répond toujours à l'appel ! Les bannières se dressent fièrement, la victoire répond toujours à l'appel ! Bip...",
+                "ja": "ピピッ……旗あるところに勝利あり！旗あるところに勝利あり！ピピーッ……",
+                "ko": "삐빅... 깃발이 영원히 휘날리는 한, 승리는 나의 것! 깃발이 영원히 휘날리는 한, 승리는 나의 것! 삐빅...",
+                "th": "ปี๊บ... ผืนธงไม่เคยร่วงหล่น ชัยชนะขานเรียกเสมอ! ผืนธงไม่เคยร่วงหล่น ชัยชนะขานเรียกเสมอ! ปี๊บ...",
+                "zh-Hans": "哔哔……旌旗不落，胜利常在！旌旗不落，胜利常在！哔哔……",
+                "zh-Hant": "嗶嗶……旌旗不落，勝利常在！旌旗不落，勝利常在！嗶嗶……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist das?",
+                    "en": "What's this?",
+                    "es": "¿Qué es esto?",
+                    "fr": "Qu'est-ce que c'est ?",
+                    "ja": "これは一体……",
+                    "ko": "이건 뭐지...",
+                    "th": "นี่มันอะไรเนี่ย?",
+                    "zh-Hans": "这是什么……",
+                    "zh-Hant": "這是什麼……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Piep ... Aufnahme wird abgespielt! Willkommen, furchtloser Gladiator, zu unserem Siegesbanner-Trainingsmatch! Ich freue mich, dir unseren Wettkampf vorzustellen ... Wettkampf ... Wettkampf ... Piep!",
+                "en": "Beep... Playing recording! Welcome, fearless Gladiator, to our Banners Never Fall challenges! I'm excited to introduce you to our competition... competition... competition... Beep!",
+                "es": "Bip... ¡Reproduciendo grabación! ¡{Male=Bienvenido, intrépido gladiador;Female=Bienvenida, intrépida gladiadora}, a Estandartes de la Victoria! Me complace presentarte nuestra competición... competición... competición... ¡Bip!",
+                "fr": "Bip... Lecture de l'enregistrement ! Salutations, intrépide {Male=gladiateur;Female=gladiatrice}, à notre match d'entraînement des Bannières de la victoire ! Je suis ravi de vous présenter notre compétition... compétition... Bip !",
+                "ja": "ピピッ……録音再生！勇敢なグラディエーターよ、挑戦試合「掲げし誉れの旗」へようこそ！試合のルールを説明します……ピピーッ！",
+                "ko": "삐빅... 재생 시작! 용감한 검투사님, 「영원히 휘날리는 깃발」 훈련 시합에 오신 걸 환영합니다! 제가 당신을 위해 경기경기경기 제도... 삐빅...",
+                "th": "ปี๊บ... กำลังเล่นเสียงที่บันทึกไว้! ยินดีต้อนรับกลาดิเอเตอร์ผู้กล้าหาญสู่การท้าทาย ผืนธงไม่เคยร่วงหล่น ของเรา! ฉันตื่นเต้นมากที่จะให้คุณได้พบกับการแข่งขันของเรา... การแข่งขัน... การแข่งขัน... ปี๊บ!",
+                "zh-Hans": "哔哔……播放录音！勇敢的角斗士，欢迎来参加「旌旗不落」训练挑战赛！我会为你介绍比赛比赛比赛制度……哔哔！",
+                "zh-Hant": "嗶嗶……播放錄音！勇敢的角鬥士，歡迎來參加「旌旗不落」訓練挑戰賽！我會為你介紹比賽比賽比賽制度……嗶嗶！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ist es kaputt?",
+                    "en": "Is it broken?",
+                    "es": "¿Está averiado?",
+                    "fr": "Est-ce qu'il est cassé ?",
+                    "ja": "壊れてる……？",
+                    "ko": "고장난 건 아니겠지...",
+                    "th": "นี่พังแล้วรึเปล่าเนี่ย?",
+                    "zh-Hans": "不会是坏了吧……",
+                    "zh-Hant": "不會是壞了吧……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Herausfinden, was es sagen will)",
+                    "en": "(Figure out what it tries to say)",
+                    "es": "(Intenta entender lo que dice).",
+                    "fr": "(Essayer de comprendre ce qu'il tente de dire)",
+                    "ja": "（最後まで聞いてみよう）",
+                    "ko": "(무슨 말을 하는지 들어보자)",
+                    "th": "(พยายามทำความเข้าใจว่ามันจะพูดอะไร)",
+                    "zh-Hans": "（听听它想说什么）",
+                    "zh-Hant": "（聽聽它想說什麼）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Piep ... Hallo, furchtloser Gladiator! Hier in Septimont genießen unsere Champions Skulpturen, Jagden und den tosenden Jubel der Hörner. Aber denk daran, ein friedliches Septimont ist auf jeden Helden angewiesen, um diese lästigen Tacet-Dissonanzen aufzuspüren!",
+                "en": "Beep... Greetings, fearless Gladiator! Here in Septimont, our champions revel in sculptures, hunts, and the roaring cheers of horns. But remember, a peaceful Septimont depends on every hero to track down those pesky Tacet Discords!",
+                "es": "Bip... ¡Saludos, valiente {Male=gladiador;Female=gladiadora}! Los campeones de Septimont viven de esculturas, cacerías y el estruendoso clamor de los cuernos. Pero recuerda, ¡un Septimont pacífico depende de que estos héroes acaben con las molestas disonancias tácitas!",
+                "fr": "Bip... Salutations, intrépide {Male=Gladiateur;Female=Gladiatrice} ! Ici à Septimont, nos champions se délectent de sculptures, de chasses et des acclamations rugissantes des cors. Mais n'oubliez pas, la paix de Septimont dépend de la capacité de chaque héros à traquer ces agaçants Tacets Discords !",
+                "ja": "ピピーッ……こんにちは、勇敢なるグラディエーター！セブン・ヒルズの英雄たちは皆、彫刻、狩猟、そして勝利を告げるホーンの音を愛しています！セブン・ヒルズの平和は、英雄たちの残像狩りにかかっているでしょう！",
+                "ko": "삐빅... 안녕하세요, 용감한 검투사님! 일곱 언덕의 영웅들은 조각과 사냥, 그리고 승리의 호각을 부는 것을 좋아하죠. 일곱 언덕의 평화는 영웅 여러분의 잔상 사냥에 달려 있습니다!",
+                "th": "ปี๊บ... สวัสดีกลาดิเอเตอร์ผู้กล้าหาญ! ในเซปติมอนต์แห่งนี้ แชมป์ของเราจะได้สนุกสนานกับรูปแกะสลัก การล่า และเสียงแตรเชียร์ดังสนั่น แต่จงจำไว้ว่า ที่เซปติมอนต์สงบสุขได้ก็เพราะเหล่าผู้กล้าทุกคนที่ไล่ล่าพวก ทาเซ็ตดิสคอร์ดที่คอยรังควานพวกนั้น!",
+                "zh-Hans": "哔哔……你好，勇敢的角斗士！七丘的英雄们喜好雕塑、狩猎和高呼胜利的号角，七丘的和平也要靠英雄们狩猎残象！",
+                "zh-Hant": "嗶嗶……你好，勇敢的角鬥士！七丘的英雄們喜好雕塑、狩獵和高呼勝利的號角，七丘的和平也要靠英雄們狩獵殘象！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deshalb veranstalten wir eine simulierte Jagd in den chaotischen Windungen und Wendungen des trocken gelegten Alten Viertels!",
+                "en": "That's why we are throwing a simulated hunt in the chaotic twists and turns of the drained Old District!",
+                "es": "¡Por esa razón organizamos una cacería simulada en los caóticos recovecos del antaño anegado Distrito Antiguo!",
+                "fr": "C'est pourquoi nous organisons une chasse simulée dans les méandres chaotiques du Vieux quartier asséché !",
+                "ja": "そこで排水後の旧市街地の複雑な地形を生かし、シミュレーションプログラムで狩猟の演習を行なうことにしました！",
+                "ko": "그래서, 저희는 잠긴 구도심의 물을 빼서, 그곳의 복잡하고 낯선 지형을 이용해 사냥 시뮬레이션 훈련장을 만들었습니다!",
+                "th": "เพราะแบบนั้น เราเลยจัดหมาป่าสาวไล่ล่าจำลองขึ้นในความพลิกผันเหนือคาดหมายของเขตเมืองเก่าไงล่ะ!",
+                "zh-Hans": "为此，我们决定利用排水后旧城区里陌生复杂的地形来一场围猎模拟演练！",
+                "zh-Hant": "為此，我們決定利用排水後舊城區裡陌生複雜的地形來一場圍獵模擬演練！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bist du bereit zu kämpfen? Pochenden Herzens, brennenden Blutes? Jage diese Tacet-Dissonanzen, sammle Punkte und stürme in die nächste Runde!",
+                "en": "Are you ready to fight? Heart pounding, blood burning? Hunt down those Tacet Discords, rack up points, and charge into the next round!",
+                "es": "¿Estás {Male=preparado;Female=preparada} para luchar? ¿Con el corazón acelerado y la sangre candente? ¡Caza disonancias tácitas, acumula puntos y avanza hasta la siguiente ronda!",
+                "fr": "Êtes-vous {Male=prêt;Female=prête} à combattre ? Le cœur qui bat, le sang qui bout ? Traquez ces Tacets Discords, accumulez des points et foncez vers le prochain tour !",
+                "ja": "参加しますか？それとも参加しますか！？シミュレーションで再現された残像を倒してポイントを獲得すれば、なんと昇格できます！",
+                "ko": "참가를 원하시나요? 참가하고 싶으신가요? 시뮬레이션 훈련에서 잔상을 잡으면 포인트를 얻고 레벨이 상승합니다!",
+                "th": "พร้อมจะสู้รึยัง? ใจเต้นแรงมั้ย เลือดเดือดพล่านรึเปล่า? ไปล่าทาเซ็ตดิสคอร์ดพวกนั้น สะสมคะแนน แล้วมุ่งหน้าสู่รอบต่อไปได้เลย!",
+                "zh-Hans": "要参加吗？要参加吗！击败模拟出来的残象们，就可以拿到积分，成功晋级！",
+                "zh-Hant": "要參加嗎？要參加嗎！擊敗模擬出來的殘象們，就可以拿到積分，成功晉級！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gibt es Belohnungen?",
+                    "en": "Any rewards?",
+                    "es": "¿Hay recompensas?",
+                    "fr": "Il y a des récompenses ?",
+                    "ja": "報酬は？",
+                    "ko": "보상이 있나요?",
+                    "th": "มีรางวัลมั้ย?",
+                    "zh-Hans": "有奖励吗？",
+                    "zh-Hant": "有獎勵嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Piep ... Schlüsselwort erkannt! Aufnahme wird abgespielt ... Absolut! Du wirst fantastische Belohnungen erhalten! Wir sprechen von einer ordentlichen Summe und erstklassiger Unterstützung, die auf dich wartet! Moment, Mom—",
+                "en": "Beep... Keyword detected! Playing recording... Absolutely! You'll score amazing rewards! We're talking a serious sum and top-tier backup coming your way! Hold on, hold—",
+                "es": "Bip... ¡Palabra clave detectada! Reproduciendo grabación... ¡Por supuesto! ¡Obtendrás recompensas increíbles! ¡Hablamos de una suma considerable y materiales de primera categoría! Espera, espe—",
+                "fr": "Bip... Mot-clé détecté ! Lecture de l'enregistrement... Absolument ! Vous obtiendrez des récompenses incroyables ! Nous parlons d'une somme considérable et d'un soutien de premier ordre qui vous attend ! Attendez, atten...",
+                "ja": "ピピーッ……キーワード「報酬」確認しました！録音再生……もももちろんです！報酬たっぷり、サポートばっちり！少々少々少々お待ちを！",
+                "ko": "삐빅... 보상 검색! 재생 시작... 그건 당연하죠! 적지 않은 보상이 주어집니다. 버프도 얻을 수 있어요! 일단 눈을 감고, 잠시만 기다려 주세요. 잠시만 기다려 주세요!",
+                "th": "ปี๊บ... ตรวจพบคำสำคัญ! กำลังเล่นเสียงที่บันทึกไว้... มีสิ! คุณจะได้รางวัลอย่างงามเลย! เรากำลังพูดถึงเงินจำนวนมากและการสนับสนุนระดับแนวหน้าที่กำลังมุ่งหน้ามาหาคุณ! รอเดี๋ยวนะ",
+                "zh-Hans": "哔哔……奖励关键词！播放录音……当然啦，当然啦！奖励一点不少，助力还要多多！你先闭上眼睛，稍等一下，稍等一下！",
+                "zh-Hant": "嗶嗶……獎勵關鍵字！播放錄音……當然啦，當然啦！獎勵一點不少，助力還多多！你先閉上眼睛，稍等一下，稍等一下！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 300052,
+                "name": {
+                  "zh-Hans": "转播布莱恩"
+                },
+                "entity": {
+                  "entityId": 133850104,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_167_TsEntity_NPC_Zhuanbotai",
+                  "name": "TsEntity_NPC_Zhuanbotai2",
+                  "areaId": 33102,
+                  "position": {
+                    "x": 1192789,
+                    "y": 1153416,
+                    "z": 25641
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "AlwaysTrue",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133850489,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_cq1",
+          "areaId": 33102,
+          "position": {
+            "x": 1196750,
+            "y": 1141050,
+            "z": 23535
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850490,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_cq2",
+          "areaId": 33004,
+          "position": {
+            "x": 1185163,
+            "y": 1183728,
+            "z": 21198
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -35
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850491,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_cq3",
+          "areaId": 33103,
+          "position": {
+            "x": 1236386,
+            "y": 1143511,
+            "z": 32193
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850492,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_cq4",
+          "areaId": 33103,
+          "position": {
+            "x": 1220296,
+            "y": 1165889,
+            "z": 27339
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850493,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_cq5",
+          "areaId": 33103,
+          "position": {
+            "x": 1219409,
+            "y": 1186488,
+            "z": 24508
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850590,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_cq1",
+          "areaId": 33102,
+          "position": {
+            "x": 1196709,
+            "y": 1140935,
+            "z": 23536
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850591,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_cq2",
+          "areaId": 33004,
+          "position": {
+            "x": 1185293,
+            "y": 1183728,
+            "z": 21198
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850592,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_cq3",
+          "areaId": 33103,
+          "position": {
+            "x": 1236265,
+            "y": 1143511,
+            "z": 32193
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850593,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_cq4",
+          "areaId": 33103,
+          "position": {
+            "x": 1220197,
+            "y": 1165889,
+            "z": 27339
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133850594,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_cq5",
+          "areaId": 33103,
+          "position": {
+            "x": 1219409,
+            "y": 1186397,
+            "z": 24508
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

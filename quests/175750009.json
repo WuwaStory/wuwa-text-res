@@ -1,0 +1,823 @@
+{
+  "id": 175750009,
+  "key": "呜呜物流_第二天（香水和宝石）",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Kampagne II",
+    "en": "Lollo Campaign II",
+    "es": "Campaña Lollo: II",
+    "fr": "Projet Loulou II",
+    "ja": "ブブ企画・二",
+    "ko": "무무 기획 · Ⅱ",
+    "th": "แคมเปญลอลโล่ II",
+    "zh-Hans": "呜呜企划 · 二",
+    "zh-Hant": "嗚嗚企劃 · 二"
+  },
+  "desc": {
+    "de": "Überprüfe die Auftragsliste bei Maji",
+    "en": "Go to Maji's place and check for new errands.",
+    "es": "Pregúntale a Maji qué son los nuevos encargos.",
+    "fr": "Parler à Maji pour savoir s'il y a une nouvelle commande.",
+    "ja": "新しい依頼を確認するため、馬計のところへ行ってみよう。",
+    "ko": "마현에게 가서 새로운 의뢰서를 확인하세요",
+    "th": "ไปที่บ้านของมาจิและตรวจสอบงานรับจ้างใหม่",
+    "zh-Hans": "去马计那儿看看新的委托单吧。",
+    "zh-Hant": "去馬計那裡看看新的委託單吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Maji nach seiner Bitte",
+        "en": "Ask Maji what he needs",
+        "es": "Pregúntale a Maji qué es lo que necesita.",
+        "fr": "Parler à Maji pour savoir ce qu'il a besoin",
+        "ja": "馬計から依頼内容を聞く",
+        "ko": "마현에게 수요 파악하기",
+        "th": "ถามมาจิว่าเขาต้องการอะไร",
+        "zh-Hans": "向马计了解需求",
+        "zh-Hant": "向馬計了解需求"
+      },
+      "entities": [
+        {
+          "entityId": 175750001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+          "areaId": 1692,
+          "position": {
+            "x": 688680,
+            "y": 573670,
+            "z": 168
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 175750006,
+          "mapId": 8,
+          "blueprintType": "branch2.0_TsEntity_拉古纳平民女4881147",
+          "name": "TsEntity_拉古纳平民女4881149_2.2_二小姐管家",
+          "areaId": 1691,
+          "position": {
+            "x": 705220,
+            "y": 567960,
+            "z": 1183
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 122
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 175750021,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_呜呜物流_2.2_马计3",
+          "areaId": 20,
+          "position": {
+            "x": 796508,
+            "y": 620616,
+            "z": 9671
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 42
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}! {PlayerName}! Hier stimmt etwas nicht … BITTE RETTE MICH!",
+                "en": "{PlayerName}! {PlayerName}! Something's off here... PLEASE SAVE ME!",
+                "es": "¡{PlayerName}! ¡{PlayerName}! Aquí pasa algo raro… ¡SÁLVAME!",
+                "fr": "{PlayerName} ! {PlayerName} ! Quelque chose cloche ici... PITIÉ, SAUVE-MOI !",
+                "ja": "{PlayerName}！{PlayerName}！まずい、厄介事に巻き込まれて……助けて！",
+                "ko": "{PlayerName}! {PlayerName}! 큰일 났어요... 구해줘요!",
+                "th": "{PlayerName}! {PlayerName}! มีบางอย่างแปลกๆ... ช่วยฉันด้วย!",
+                "zh-Hans": "{PlayerName}！{PlayerName}！大事不好了……快来救我！",
+                "zh-Hant": "{PlayerName}！{PlayerName}！大事不好了……快來救我！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750149,
+                "name": {
+                  "zh-Hans": "马计（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Klingt, als wäre Maji in Schwierigkeiten … Ich sollte hin gehen und ihm helfen.",
+                "en": "Sounds like Maji is in trouble... I'd better go lend a hand.",
+                "es": "Parece que Maji está en problemas… Será mejor que lo ayude.",
+                "fr": "On dirait que Maji a des ennuis... Je devrais aller lui prêter main-forte.",
+                "ja": "馬計がトラブルに巻き込まれているみたいだ……見に行こう。",
+                "ko": "마현에게 뭔가 문제가 생긴 것 같아... 어서 가보자",
+                "th": "ดูเหมือน Maji จะเจอปัญหาอะไรบางอย่าง... ไปดูกันเถอะ",
+                "zh-Hans": "马计似乎遇到了什么麻烦……过去看看吧。",
+                "zh-Hant": "馬計似乎遇到了什麼麻煩……過去看看吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Liefere Parfüm und Juwelenset",
+        "en": "Deliver the \"Perfume\" and \"Jewelry\"",
+        "es": "Entrega el perfume y el juego de joyas.",
+        "fr": "Livrer le « Parfum » et l' « Ensemble de bijoux »",
+        "ja": "「パフューム」と「ジュエリーセット」を届ける",
+        "ko": "「향수」와 「주얼리 세트」 제출",
+        "th": "ส่ง \"น้ำหอม\" และ \"เครื่องประดับ\"",
+        "zh-Hans": "交付「香水」和「珠宝套装」",
+        "zh-Hant": "交付「香水」和「珠寶套裝」"
+      },
+      "entities": [
+        {
+          "entityId": 175750001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+          "areaId": 1692,
+          "position": {
+            "x": 688680,
+            "y": 573670,
+            "z": 168
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 175750006,
+          "mapId": 8,
+          "blueprintType": "branch2.0_TsEntity_拉古纳平民女4881147",
+          "name": "TsEntity_拉古纳平民女4881149_2.2_二小姐管家",
+          "areaId": 1691,
+          "position": {
+            "x": 705220,
+            "y": 567960,
+            "z": 1183
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 122
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Danke für deinen … Oh, du bist es. Ich erinnere mich, dich schon einmal mit Lady Carlotta gesehen zu haben.",
+                "en": "Thank you for your... Oh, it's you, {Male=sir;Female=miss}. I remember seeing you with Lady Carlotta before.",
+                "es": "Muchas gracias por confiar en… Ah, es usted, {Male=señor;Female=señorita}. Recuerdo que estuvo con la señorita Carlotta antes.",
+                "fr": "Merci pour votre... Oh, c'est vous, {Male=monsieur;Female=madame}. Je me souviens de vous. Vous étiez avec Mlle Carlotta.",
+                "ja": "ご苦労様です……おや、{PlayerName}殿でしたか。以前、お嬢様のお側にてお見かけしたことがございます。",
+                "ko": "갖다주셔서 고마워요... 어머, 당신이었네요. 전에 둘째 아가씨랑 함께 뵌 적이 있죠",
+                "th": "ขอบคุณที่มาส่งนะ... อ๊ะ คุณนี่เอง ฉันเคยเห็นคุณอยู่กับคุณ Carlotta",
+                "zh-Hans": "谢谢您的运送……啊，是您。我曾在二小姐身边见过您。",
+                "zh-Hant": "謝謝您的運送……啊，是您。我曾在二小姐身邊見過您。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750106,
+                "name": {
+                  "zh-Hans": "多诺万"
+                },
+                "entity": {
+                  "entityId": 175750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民女4881147",
+                  "name": "TsEntity_拉古纳平民女4881149_2.2_二小姐管家",
+                  "areaId": 1691,
+                  "position": {
+                    "x": 705220,
+                    "y": 567960,
+                    "z": 1183
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 122
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hier, bitte nimm dein Paket.",
+                    "en": "Please take your package.",
+                    "es": "Aquí tiene el paquete.",
+                    "fr": "Veuillez pendre votre colis.",
+                    "ja": "はい、こちら注文の荷物だ。",
+                    "ko": "여기 받으세요",
+                    "th": "รับพัสดุไปสิ",
+                    "zh-Hans": "这是您的包裹。",
+                    "zh-Hant": "這是您的包裹。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Verzeihung, aber du bist …?",
+                    "en": "Excuse me, but you are...?",
+                    "es": "Disculpa, ¿tú eres…?",
+                    "fr": "Je m'excuse, mais vous êtes... ?",
+                    "ja": "あなたは？",
+                    "ko": "누구시죠?",
+                    "th": "คุณคือ...?",
+                    "zh-Hans": "您是？",
+                    "zh-Hant": "您是？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Vielen Dank für die schnelle Lieferung. Es ist genau das, was Lady Carlotta braucht.",
+                "en": "Thank you for the prompt delivery. It's exactly what Lady Carlotta needed.",
+                "es": "Gracias por tan rauda entrega. Es justo lo que la señorita Carlotta necesitaba.",
+                "fr": "Merci pour cette livraison rapide. C'est exactement ce dont Mlle Carlotta a besoin.",
+                "ja": "迅速に届けて貰い感謝致します。お嬢様が注文品を急いでおりまして。",
+                "ko": "고마워요. 둘째 아가씨께서 급히 「향수」랑 「주얼리 세트」가 필요하다고 해서요, 마침 잘 오셨어요",
+                "th": "ขอบคุณมาก คุณ Carlotta กำลังรีบใช้ น้ำหอม กับ ชุดเครื่องประดับ คุณมาส่งได้ทันเวลาเลย",
+                "zh-Hans": "谢谢，谢谢。二小姐正急用「香水」和「珠宝套装」，您送得太及时了。",
+                "zh-Hant": "謝謝，謝謝。二小姐正急用「香水」和「珠寶套裝」，您送得太及時了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750106,
+                "name": {
+                  "zh-Hans": "多诺万"
+                },
+                "entity": {
+                  "entityId": 175750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民女4881147",
+                  "name": "TsEntity_拉古纳平民女4881149_2.2_二小姐管家",
+                  "areaId": 1691,
+                  "position": {
+                    "x": 705220,
+                    "y": 567960,
+                    "z": 1183
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 122
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hehe, ich bin nur ein Butler der Familie Montelli. Vielen Dank für die schnelle Lieferung. Es ist genau das, was Lady Carlotta braucht.",
+                "en": "Hehe, I'm just a butler from the Montelli family. Thank you for the prompt delivery. It's exactly what Lady Carlotta needed.",
+                "es": "Je, je. Solo trabajo para la familia Montelli. Gracias por tan rauda entrega. Es justo lo que la señorita Carlotta necesitaba.",
+                "fr": "Héhé, je suis seulement au service de la famille Montelli. Merci pour cette livraison rapide. C'est exactement ce dont Mlle Carlotta a besoin.",
+                "ja": "失礼いたしました。私はモンテリファミリーに仕える執事の一人でございます。「パフューム」と「ジュエリーセット」は急を要しておりましたため、迅速にお届けくださり、心より感謝申し上げます。",
+                "ko": "하하, 전 몬텔리 가문에서 일하고 있는 집사 중의 한 명이죠. 둘째 아가씨께서 급히 「향수」랑 「주얼리 세트」가 필요하다고 해서요. 마침 잘 오셨어요",
+                "th": "ฮ่าๆ ฉันเป็นหนึ่งในบัตเลอร์ของตระกูล Montelli น่ะ คุณ Carlotta กำลังรีบใช้ น้ำหอม กับ ชุดเครื่องประดับ คุณมาส่งได้ทันเวลาเลย",
+                "zh-Hans": "哈哈，我是莫塔里家族的管家之一。二小姐正急用「香水」和「珠宝套装」，您送得太及时了。",
+                "zh-Hant": "哈哈，我是莫塔里家族的管家之一。二小姐正急用「香水」和「珠寶套裝」，您送得太及時了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750106,
+                "name": {
+                  "zh-Hans": "多诺万"
+                },
+                "entity": {
+                  "entityId": 175750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民女4881147",
+                  "name": "TsEntity_拉古纳平民女4881149_2.2_二小姐管家",
+                  "areaId": 1691,
+                  "position": {
+                    "x": 705220,
+                    "y": 567960,
+                    "z": 1183
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 122
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Noch einen angenehmen Tag.",
+                "en": "Good day to you, {Male=sir;Female=miss}.",
+                "es": "Que tenga un buen día, {Male=señor;Female=señorita}.",
+                "fr": "Bonne journée à vous, {Male=monsieur;Female=madame}.",
+                "ja": "誠にありがとうございます。どうぞ素晴らしい一日をお過ごしください。",
+                "ko": "고마워요. 좋은 하루 되세요",
+                "th": "ขอบคุณมาก และขอให้คุณมีวันที่ดีนะ",
+                "zh-Hans": "非常感谢，也祝您度过美好的一天。",
+                "zh-Hant": "非常感謝，也祝您度過美好的一天。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750106,
+                "name": {
+                  "zh-Hans": "多诺万"
+                },
+                "entity": {
+                  "entityId": 175750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民女4881147",
+                  "name": "TsEntity_拉古纳平民女4881149_2.2_二小姐管家",
+                  "areaId": 1691,
+                  "position": {
+                    "x": 705220,
+                    "y": 567960,
+                    "z": 1183
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 122
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 175750025,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_呜呜物流_2.2_马计4",
+          "areaId": 20,
+          "position": {
+            "x": 796508,
+            "y": 620616,
+            "z": 9671
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 33
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Puh … Danke für deine rasche Hilfe.",
+                "en": "Phew... Thanks for your timely aid.",
+                "es": "Fiuf… Gracias por tu ayuda tan oportuna.",
+                "fr": "Pfiou... merci, tu tombes vraiment à pic.",
+                "ja": "ああ……ありがとう！来てくれて本当に助かったよ！",
+                "ko": "후... 고마워요. 당신 덕분에 살았어요!",
+                "th": "ฮู้...ขอบคุณที่ช่วยไว้ มาได้ทันเวลาพอดีเลย!",
+                "zh-Hans": "呼……感谢搭救，还好有你！",
+                "zh-Hant": "呼……感謝搭救，還好有你！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750025,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计4",
+                  "areaId": 20,
+                  "position": {
+                    "x": 796508,
+                    "y": 620616,
+                    "z": 9671
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 33
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué pasó?",
+                    "fr": "Que s'est-il passé ?",
+                    "ja": "さっきは、どういう状況？",
+                    "ko": "어떻게 된 거예요?",
+                    "th": "เกิดอะไรขึ้น?",
+                    "zh-Hans": "什么情况？",
+                    "zh-Hant": "什麼情況？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hm, also ich hätte nicht gedacht, dass gleich nach dem Beginn der Kampagne ein Raubüberfall geschieht … Ich zähle heute auf dich, wie immer.",
+                "en": "Hmph, I didn't expect a robbery to happen right after launching the campaign... I'm counting on you today, as always.",
+                "es": "Buf, no esperaba un robo justo después de la gran inauguración. Cuento contigo hoy, como siempre.",
+                "fr": "Hmpf, je ne m'attendais pas à un vol juste après le lancement de la campagne... Je compte sur toi aujourd'hui, comme toujours.",
+                "ja": "はぁ、新事業を始めた矢先、まさか強盗に遭うなんて……そんなことより、今日も依頼が来てるんだ。",
+                "ko": "어휴, 새로운 기획을 시작하자마자 강도를 만났지 뭐예요... 아무튼 오늘 주문도 부탁드릴게요",
+                "th": "ฮึ่ม ไม่คิดเลยว่าจะโดนปล้นทันทีที่เริ่มแคมเปญ... วันนี้ก็ฝากด้วยเหมือนเดิมนะ",
+                "zh-Hans": "唉，我也没想到新企划刚启动就遇上打劫的……闲话不多说，今天这单也要拜托你了。",
+                "zh-Hant": "唉，我也沒想到新企劃剛啟動就遇上打劫的……閒話不多說，今天這單也要拜託你了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750025,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计4",
+                  "areaId": 20,
+                  "position": {
+                    "x": 796508,
+                    "y": 620616,
+                    "z": 9671
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 33
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Gegenstände auf der Liste sind... Schmuck und Parfüm. Warum ist dieses Paket denn so schwer? Sag bloß, der Schmuck wird nach Kilo und nicht nach Karat gewogen?",
+                "en": "The items on the list are... jewelry and perfume. But why is this package so heavy? Don't tell me the jewelry is weighed by the kilo, not the carat?",
+                "es": "Los objetos de la lista son… joyas y perfumes. Entonces, ¿por qué pesa tanto el paquete? No me digas que las joyas se pesaron por kilo y no por quilate.",
+                "fr": "Les objets de la liste sont... des bijoux et du parfum, mais pourquoi ce colis est-il si lourd ? Ne me dis pas que les bijoux se pèsent au kilo et pas au carat ?",
+                "ja": "どれどれ……「パフューム」と「ジュエリーセット」だとさ。でも、荷物はやけに重い。香水と宝石って、こんなに重かったっけ？まさか、単位がカラットじゃなくてキログラム？",
+                "ko": "주문 내역을 한 번 볼까요... 향수랑 보석 세트라. 그런데 이상하네요. 상자가 엄청 무거운데, 이게 정말 향수랑 보석 세트 맞나요? 혹시... 캐럿이 아니라 킬로그램 단위의 보석인 건 아니겠죠?",
+                "th": "สินค้าในรายการมี... เครื่องเพชรกับน้ำหอม แปลกจัง พัสดุนี้หนักมาก น้ำหอมกับเครื่องประดับจะหนักขนาดนี้ได้ยังไง? อย่าบอกนะว่าเครื่องเพชรนี่หนักเป็นกิโลไม่ใช่ Cara?",
+                "zh-Hans": "让我看看代购单……要送的是香水和珠宝套装。怪了，这箱子沉得很，香水和珠宝能有这么重吗？难道是不以克拉而以公斤为单位的珠宝？",
+                "zh-Hant": "讓我看看代購單……要送的是香水和珠寶套裝。怪了，這箱子沉得很，香水和珠寶能有這麼重嗎？難道是不以克拉而以公斤為單位的珠寶？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750025,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计4",
+                  "areaId": 20,
+                  "position": {
+                    "x": 796508,
+                    "y": 620616,
+                    "z": 9671
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 33
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wohl ein großes Vermögen.",
+                    "en": "Worth a great fortune, I guess.",
+                    "es": "Supongo que valen una buena fortuna.",
+                    "fr": "Ça doit valoir une fortune.",
+                    "ja": "{Male=一体いくらするんだ！;Female=一体いくらするの！}",
+                    "ko": "가격이 얼마일지 상상조차 안 가네요!",
+                    "th": "น่าจะราคาแพงพอตัวเลยมั้ง",
+                    "zh-Hans": "这得多少钱啊！",
+                    "zh-Hant": "這得多少錢啊！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Netter Versuch, aber nicht ganz.",
+                    "en": "Nice try, but not quite.",
+                    "es": "Casi haces un buen chiste.",
+                    "fr": "Bien tenté, mais pas vraiment.",
+                    "ja": "{Male=あと少しで正解だったな。;Female=あと少しで正解だったね。}",
+                    "ko": "거의 비슷하게 맞췄네요",
+                    "th": "เกือบจะทายถูกแล้วล่ะ",
+                    "zh-Hans": "就差一点你就能猜对了。",
+                    "zh-Hant": "就差一點你就能猜對了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Auf jeden Fall müssen wir besonders vorsichtig sein, wenn wir ausliefern, {PlayerName}!",
+                "en": "Anyway, we need to be extra careful when delivering them, {PlayerName}!",
+                "es": "Como sea, debemos tener mucho cuidado con la entrega, {PlayerName}.",
+                "fr": "Enfin, nous devons faire très attention en les livrant, {PlayerName} !",
+                "ja": "なんにせよ、こんなお高いものだから、取り扱いは慎重に。{PlayerName}、頼んだよ！",
+                "ko": "어찌 됐든 아주 비싼 물건이니 조심해서 옮겨야 해요. {PlayerName}, 부탁할게요!",
+                "th": "ยังไงก็ตาม ของที่แพงขนาดนี้ ต้องระวังกันหน่อยล่ะนะ {PlayerName} ฝากด้วย!",
+                "zh-Hans": "不管怎么说，既然是这么昂贵的东西，那一定要小心运输。{PlayerName}，拜托你了！",
+                "zh-Hant": "不管怎麼說，既然是這麼昂貴的東西，那一定要小心運輸。{PlayerName}，拜託你了！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750025,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计4",
+                  "areaId": 20,
+                  "position": {
+                    "x": 796508,
+                    "y": 620616,
+                    "z": 9671
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 33
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlass das mir.",
+                    "en": "Leave it to me.",
+                    "es": "Yo me encargo.",
+                    "fr": "Je m'en occupe.",
+                    "ja": "{Male=俺に任せろ。;Female=私に任せて。}",
+                    "ko": "저한테 맡겨주세요",
+                    "th": "ไว้ใจได้เลย",
+                    "zh-Hans": "交给我吧。",
+                    "zh-Hant": "交給我吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Mit solchem „Schmuck“ und „Parfüm“ sollte man vorsichtig umgehen …",
+                    "en": "Such \"jewelry\" and \"perfume\" should be handled carefully...",
+                    "es": "Claro, debemos tener cuidado al entregar estas «joyas» y «perfumes»…",
+                    "fr": "De tels « bijoux » et « parfums » devraient être manipulés avec précaution...",
+                    "ja": "「パフューム」と「ジュエリーセット」は、もちろん慎重に、慎重に……",
+                    "ko": "「향수」랑 「주얼리」인데 당연히 조심해야죠...",
+                    "th": "ต้องระมัดระวังกันหน่อยกับ น้ำหอม และ เครื่องเพชร...",
+                    "zh-Hans": "这「香水」和「珠宝」当然得小心运了……",
+                    "zh-Hant": "這「香水」和「珠寶」當然得小心運了……"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Maji",
+        "en": "Find Maji",
+        "es": "Encuentra a Maji.",
+        "fr": "Trouver Maji",
+        "ja": "馬計を探す",
+        "ko": "마현 찾기",
+        "th": "หามาจิ",
+        "zh-Hans": "寻找马计",
+        "zh-Hant": "尋找馬計"
+      },
+      "entities": [
+        {
+          "entityId": 106900403,
+          "mapId": 8,
+          "blueprintType": "Monster059",
+          "name": "TsEntity_精英_琉璃刀伶19",
+          "areaId": 20,
+          "position": {
+            "x": 799400,
+            "y": 621450,
+            "z": 9760
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 128
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 4,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "HILFE! Lasst mein Paket!",
+                "en": "HELP! Leave my package alone!",
+                "es": "¡AYUDA! ¡Suelta mi paquete!",
+                "fr": "À L'AIDE ! Pas touche à mon colis !",
+                "ja": "助けてー！その荷物には絶対――――あ～！",
+                "ko": "살려주세요! 가방은 안된다고요——!",
+                "th": "ช่วยด้วย! อย่ายุ่งกับพัสดุของฉันนะ!",
+                "zh-Hans": "救命！不要碰我的包裹啊——！",
+                "zh-Hant": "救命！不要碰我的包裹啊——！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die Gegner innerhalb des Zeitlimits",
+        "en": "Defeat the enemies within the time limit",
+        "es": "Derrota a los enemigos dentro del límite de tiempo.",
+        "fr": "Vaincre les ennemis dans le temps imparti",
+        "ja": "制限時間内に敵を倒す",
+        "ko": "제한 시간 내에 적군 격파",
+        "th": "เอาชนะศัตรูภายในเวลาที่กำหนด",
+        "zh-Hans": "在时间限制内击败敌人",
+        "zh-Hant": "在時間限制內擊敗敵人"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 7,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

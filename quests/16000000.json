@@ -1,0 +1,214 @@
+{
+  "id": 16000000,
+  "key": "潜行任务",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 16000004,
+          "mapId": 32,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩3",
+          "areaId": 0,
+          "position": {
+            "x": -320,
+            "y": 1140,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 16000005,
+          "mapId": 32,
+          "blueprintType": "Monster013",
+          "name": "TsEntity_小怪_流放者女喷火器",
+          "areaId": 0,
+          "position": {
+            "x": 900,
+            "y": 840,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 16000006,
+          "mapId": 32,
+          "blueprintType": "Monster013",
+          "name": "TsEntity_小怪_流放者女喷火器2",
+          "areaId": 0,
+          "position": {
+            "x": -250,
+            "y": 280,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 16000007,
+          "mapId": 32,
+          "blueprintType": "NPC002",
+          "name": "TsEntity_121_002_皇龙小孩5",
+          "areaId": 0,
+          "position": {
+            "x": 950,
+            "y": 80,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 3,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 3,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 16000007,
+          "mapId": 32,
+          "blueprintType": "NPC002",
+          "name": "TsEntity_121_002_皇龙小孩5",
+          "areaId": 0,
+          "position": {
+            "x": 950,
+            "y": 80,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 16000008,
+          "mapId": 32,
+          "blueprintType": "Treasure011",
+          "name": "TsEntity_丰厚物资箱_黑石增生",
+          "areaId": 0,
+          "position": {
+            "x": 680,
+            "y": 240,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 5,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 6,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 12,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 12,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

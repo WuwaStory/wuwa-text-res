@@ -1,0 +1,1039 @@
+{
+  "id": 181700011,
+  "key": "导引任务",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Genie: Ein neuer Beginn",
+    "en": "Lollo Genie Campaign: Start",
+    "es": "Campaña del Genio de Lollo: Renacimiento",
+    "fr": "Projet Loulou : Renaissance",
+    "ja": "ブブジーニー企画・一新",
+    "ko": "무무 요정 기획 · 새로운 시작",
+    "th": "แคมเปญ Lollo Genie - เริ่มต้นครั้งใหม่",
+    "zh-Hans": "呜呜精灵计划·更始",
+    "zh-Hant": "嗚嗚精靈企劃·更始"
+  },
+  "desc": {
+    "de": "Maji erzählt dir von seiner neuen Kampagne, die sich um die Echos von Ragunna dreht, und du entscheidest dich, ihm zu helfen.",
+    "en": "Maji tells you about his new campaign centered on the Echoes of Ragunna, and you decide to lend him a hand.",
+    "es": "Maji te habla de su nueva campaña centrada en los Ecos de Raguna, y decides echarle una mano.",
+    "fr": "Maji vous présente sa nouvelle campagne. Cette fois, il l'a centrée sur les Échos de Ragunna, et vous décidez de lui prêter main forte.",
+    "ja": "馬計が新しい企画をあなたに伝えた。今回はラグーナの音骸を対象にしているらしい。あなたは彼を手助けして、企画を進めることにした。",
+    "ko": "마현이 새로운 기획을 당신에게 알려주었다. 이번 목표 고객은 라군나의 에코였으며 당신은 그의 기획을 돕기로 한다",
+    "th": "Maji บอกแคมเปญใหม่กับคุณ คราวนี้เขาเล็งกลุ่มลูกค้าเป้าหมายไว้ที่เอคโค่ในรากูนน่า คุณตัดสินใจช่วยเขาทำแคมเปญให้สำเร็จ",
+    "zh-Hans": "马计将新企划告诉了你，这一次他将目标客户放在了拉古那的声骸身上，你决定帮助他完成企划。",
+    "zh-Hant": "馬計將新企劃告訴了你，這一次他將目標客戶放在了拉古那的聲骸身上，你決定幫助他完成企劃。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maji",
+        "en": "Talk to Maji",
+        "es": "Habla con Maji.",
+        "fr": "Parler à Maji",
+        "ja": "馬計と会話する",
+        "ko": "마현과 대화하기",
+        "th": "คุยกับ Maji",
+        "zh-Hans": "与马计交谈",
+        "zh-Hant": "與馬計交談"
+      },
+      "entities": [
+        {
+          "entityId": 181700001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理",
+          "areaId": 1692,
+          "position": {
+            "x": 693440,
+            "y": 583100,
+            "z": 166
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_导引+7天日常",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallilhallo, {Male=mein alter Freund;Female=meine alte Freundin}!",
+                "en": "Hello again, my old friend!",
+                "es": "¡Hola de nuevo, {Male=viejo amigo;Female=vieja amiga}!",
+                "fr": "Rebonjour, {Male=mon ami;Female=mon amie} !",
+                "ja": "我が友よ、また会ったな！",
+                "ko": "오랜 친구여, 또 만났네요~",
+                "th": "ว่าไง, เจอกันอีกแล้ว~",
+                "zh-Hans": "老朋友，又见面了~",
+                "zh-Hant": "老朋友，又見面了~"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wir sehen uns in letzter Zeit recht häufig.",
+                    "en": "We've been seeing each other a lot lately.",
+                    "es": "Últimamente nos vemos mucho.",
+                    "fr": "On se voit fréquemment ces temps-ci.",
+                    "ja": "{Male=最近会う回数が少し多すぎないか？;Female=最近会う回数がちょっと多すぎない？}",
+                    "ko": "요즘 너무 자주 보는 거 아니에요?",
+                    "th": "ช่วงนี้เจอกันบ่อยนะว่ามั้ย?",
+                    "zh-Hans": "最近见得是不是有点频繁？",
+                    "zh-Hant": "最近見得是不是有點頻繁？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Worum geht es diesmal?",
+                    "en": "What will it be this time?",
+                    "es": "¿Qué será esta vez?",
+                    "fr": "De quoi as-tu besoin cette fois-ci ?",
+                    "ja": "{Male=また何か手伝ってほしいことでもあるのか？;Female=また何か手伝ってほしいことでもあるの？}",
+                    "ko": "또 제 도움이 필요하신가요?",
+                    "th": "มีอะไรให้ช่วยอีก?",
+                    "zh-Hans": "又有什么事要帮忙？",
+                    "zh-Hant": "又有什麼事要幫忙？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ähm. Erinnerst du dich noch an meine Idee, das Eintauschen von Lollo-Briefmarken bequemer zu machen?",
+                "en": "Ahem. Remember that Lollo Stamp exchange QoL improvement I proposed?",
+                "es": "Ejem. ¿Te acuerdas de la mejora para el intercambio de Sellos de Lollo que propuse?",
+                "fr": "Hum… Tu te souviens de l'amélioration que j'avais suggérée pour la plateforme d'échange de Jeton Loulou ?",
+                "ja": "コホン、前に私がブブコイン交換システムの最適化を提案したのを覚えてるか？",
+                "ko": "크흠, 지난번에 무무 코인 교환 시스템의 최적화를 시작한 거 기억하시죠?",
+                "th": "อะแฮ่ม... เธอจำเรื่องการปรับปรุงฟีเจอร์แลกเหรียญลอลโล่ที่ฉันเสนอไปคราวที่แล้วได้ใช่มั้ย?",
+                "zh-Hans": "咳咳，你还记得我上次发起的呜呜邮币兑换系统的优化吧？",
+                "zh-Hant": "咳咳，你還記得我上次發起的嗚嗚郵幣兌換系統的優化吧？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich meine den Vorschlag, dass du ab jetzt keine Aufträge mehr persönlich bei mir abholen musst. Das System schickt dir die Verträge und Lollo-Briefmarken automatisch – so, als würde dir jemand abends ein Glas warme Milch ans Bett bringen.",
+                "en": "The one that involves the system automatically sending contracts and Lollo Stamps directly to you. \"Like bringing a glass of hot milk to your bed right before bedtime.\" Ring any bells?",
+                "es": "La que haría que el sistema te enviase directamente contratos y Sellos de Lollo de forma automática. «Como que te lleven un vaso de leche caliente a la cama antes de irte a dormir». ¿Te acuerdas?",
+                "fr": "L'idée, c'est que le système t'envoie des contrats et des Jetons Loulou. « Comme si on t'apportait une tasse de lait chaud au lit juste avant de dormir. » Ça te dit quelque chose ?",
+                "ja": "ほら、あの「毎日わざわざ依頼を受けに行く必要がない。システムが依頼とブブコインを、寝んねする前のホットミルクみたいに届けてくれる」ってやつだ。",
+                "ko": "「이제는 매일 저를 찾아오지 않아도 시스템이 자동으로 의뢰와 무무 코인을 새벽 배달 신문처럼 직접 당신에게 전달해 준다니까요」라고 한 거요",
+                "th": "ก็ที่บอกว่า 'ไม่ต้องลำบากเธอแวะมาหาฉันเพื่อรับออเดอร์ทุกวัน ระบบจะส่งคำขอกับเหรียญลอลโล่มา เสิร์ฟให้ถึงที่เหมือนนมอุ่นๆ ก่อนนอน' ไง",
+                "zh-Hans": "就是“不用麻烦你每天来找我接订单，系统会直接把委托和呜呜邮币像睡前的热牛奶一样递到你面前”的那个。",
+                "zh-Hant": "就是「不用麻煩你每天來找我接訂單，系統會直接把委託和嗚嗚郵幣像睡前的熱牛奶一樣遞到你面前」的那個。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ach, der Vorschlag. Was ist damit?",
+                    "en": "Oh, that one. What about it?",
+                    "es": "Ah, sí, eso. ¿Qué pasa?",
+                    "fr": "Je vois. Qu'est-ce que ça a donné ?",
+                    "ja": "{Male=あれか。それがどうしたんだ？;Female=あれね。それがどうかしたの？}",
+                    "ko": "아, 생각났어요, 근데 그게 왜요?",
+                    "th": "อ้ออ้อ... นึกออกแล้ว ทำไมหรอ?",
+                    "zh-Hans": "哦哦，想起来了，怎么了？",
+                    "zh-Hant": "想起來了，怎麼了？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Hattest du mal wieder eine deiner „großartigen“ Ideen, die dann im Chaos endeten?",
+                    "en": "Don't tell me it's not another one of your failed ideas again, is it?",
+                    "es": "No me digas que se trata de otra de esas ideas tuyas que no van a ninguna parte.",
+                    "fr": "Ne me dis pas que c'est encore une de tes idées ratées ?",
+                    "ja": "{Male=まさか、またダメになったのか？;Female=まさか、またダメになったの？}",
+                    "ko": "설마 그 기획이 또 물 건너갔어요?",
+                    "th": "หา... อย่าบอกนะว่าโปรเจคนั้นล่มไปแล้วหรอ?",
+                    "zh-Hans": "该不会那个企划又泡汤了？",
+                    "zh-Hant": "那個企劃不會又泡湯了吧？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun ja ... meine Vorgesetzten meinten, die Arbeitsabläufe seien noch nicht detailliert genug und das Reporting noch etwas vage. Mit anderen Worten, es fehlen nur noch ein paar winzig kleine Details, bevor er umgesetzt werden kann.",
+                "en": "Well... The higher-ups pointed out that it lacks granularity in the workflow, that I need to be more precise with the reports, plus a few extra details to be ironed out before it can be implemented...",
+                "es": "Bueno... Los superiores dicen que este flujo de trabajo carece de granularidad, que tengo que hacer informes más detallados y otras cosas que es necesario pulir antes de implementarlas...",
+                "fr": "Eh bien... Les supérieurs ont dit que les processus manquaient de granularité, que les rapports devaient être plus précis et qu'il y avait quelques autres détails à régler avant le déploiement...",
+                "ja": "えーっと…上から、「この企画、手順のディテールが欠けてるし、報告も正確さが足りない。細かいところまでちゃんと詰めないと実行できない」って言われちゃってさ……",
+                "ko": "그... 윗선에서 이 기획은 세분화되지 못하고 결과 보고서도 정밀도가 부족해서, 세세한 부분을 더 갈고닦아야 진행할 수 있다고 했네요...",
+                "th": "เอ่อ... เบื้องบนบอกมาว่า ขั้นตอนของโปรเจกต์นี้ยังขาดความละเอียด ผลการรายงานยังขาดความแม่นยำ ยังต้องเกลารายละเอียดเพิ่มอีก ถึงจะเอาไปปฏิบัติจริงได้...",
+                "zh-Hans": "那个……上头说了，该企划流程缺乏颗粒度，汇报结果缺乏精密度，还需要继续打磨细节，才能支撑落地……",
+                "zh-Hant": "那個……主管說了，該企劃流程缺乏顆粒度，匯報結果缺乏精密度，還需要繼續打磨細節，才能支撐落地……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Boah! Die Arbeitsabläufe sind nur ein bisschen grob und das Reporting leicht... äh, interpretierbar – sonst passt alles!",
+                "en": "Hey, it's only lacking a bit of granularity in the workflow, and some precision with the reports, that's all...",
+                "es": "Oye, solo se trata de falta de granularidad en el flujo de trabajo y de ser más claro con mis informes, eso es todo...",
+                "fr": "Hé, il faut juste un peu plus de granularité dans le processus, et un peu plus de précision dans les rapports, c'est tout...",
+                "ja": "コホン、ちょっと企画の手順にディテールが欠けてて、報告も正確さが足りなかっただけさ……",
+                "ko": "크흠, 과정이 세분화되지 못하고, 결과 보고서의 정밀도가 부족한 것에 불과하죠...",
+                "th": "อะแฮ่ม... มันก็แค่ขั้นตอนยังขาดความละเอียดไปบ้าง แล้วผลรายงานขาดความแม่นยำก็แค่นั้น...",
+                "zh-Hans": "咳咳，只不过是流程缺乏颗粒度，汇报结果缺乏精密度罢了……",
+                "zh-Hant": "咳咳，只不過是流程缺乏顆粒度，匯報結果缺乏精密度罷了……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, kurz gesagt: Die Kampagne liegt leider erstmal auf Eis.",
+                "en": "Long story short, the campaign's put on hold for now.",
+                "es": "En resumidas cuentas, la campaña se ha suspendido temporalmente.",
+                "fr": "Mais en bref, le projet est en suspens jusqu'à nouvel ordre.",
+                "ja": "まあ、とりあえず前回の企画は一時中止になった。",
+                "ko": "아무튼 짧게 말하자면, 지난 기획은 잠깐 보류됐어요",
+                "th": "สรุปสั้นๆ คือ... โปรเจกต์ที่แล้วโดนดองน่ะ",
+                "zh-Hans": "总而言之就是，上个企划暂时搁置了。",
+                "zh-Hant": "總而言之就是，上個企劃暫時擱置了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Egal. Was neue Kampagnen anbetrifft, habe ich eine – nein, zwei – nein, eine Zwei-in-einem-Kampagne vorbereitet: „Der kleine Echohelfer“ und „Lollo-Genie“!",
+                "en": "However, I've come up with a brand new... no, wait, two... no, no, a two-in-one campaign called—\"Echo's Little Helper\" & \"Lollo Genie\"!",
+                "es": "Aunque se me ha ocurrido una..., no, espera, dos..., no, no, una campaña doble titulada: ¡Ayudante de Ecos & Genio Lollo!",
+                "fr": "Mais j'ai un nouveau… non, en fait deux… non, même pas, un concept deux-en-un : « Assistant Écho » et « Génie Loulou ».",
+                "ja": "でも、またアイディアを思い付いたんだ！ひとつ……いや、ふたつ……あれ、ちがうな……ふたつを合体させたひとつの斬新な企画なんだ——その名も「音骸の助っ人」＆「ブブジーニー」！",
+                "ko": "그런데 새로 생각난 게 하나 있어요! 아니, 두 개예요. 아, 아니다, 둘을 하나로 합친 건데, 바로—— 「헬프 에코」 & 「무무 요정」이에요!",
+                "th": "แต่ว่านะ ฉันคิดอันใหม่ขึ้นมาได้อีกหนึ่ง... เอ้ย ไม่สิ สอง... เอ้ย ก็ไม่ถูก ต้องบอกว่าเป็นโปรเจกต์ใหม่แกะกล่องแบบทูอินวัน—\"Echo's Little Helper\" & \"Lollo Genie\"!",
+                "zh-Hans": "不过，我又想到了一个，哦不，是两个，哦也不对，是合二为一的全新企划——「帮帮声骸」&「呜呜精灵」！",
+                "zh-Hant": "不過，我又想到了一個，欸不對，是兩個，也不對，是合二為一的全新企劃——「幫幫聲骸」&「嗚嗚精靈」！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich bei einem Projekt nicht gebraucht werde, starte ich einfach ein neues. Oder gleich zwei?",
+                "en": "If I'm not needed in one pipeline, I just make another. Or two? Umm... another pipeline!",
+                "es": "Si no se me necesita para un proyecto, no pasa nada, creo otro. ¿O dos más? Mmm..., ¡otro proyecto!",
+                "fr": "S'il n'y a pas de pipeline qui a besoin de moi, j'en inventerai un autre. Ou deux ? Non, un !",
+                "ja": "ひとつのパイプラインが私を必要としなくなったら？答えは簡単、もうひとつ……いや、ふたつ？……とにかく新しいパイプラインを作ればいいんだ！",
+                "ko": "사업 파이프라인에서 절 필요로 하지 않을 땐, 제가 그냥 하나? 둘? 음... 하나의 파이프라인을 더 만들면 돼요!",
+                "th": "ในเมื่อไปป์ไลน์นึงไม่ต้องการฉัน งั้นฉันก็สร้างขึ้นมาใหม่อีกอันสิ? หรือสองอันดี? เอ่อ... เอาเป็นไปป์ไลน์เดียวก็พอ!",
+                "zh-Hans": "当一个管线不需要我的时候，我就再创造一个？两个？呃……一个管线！",
+                "zh-Hant": "當一個管線不需要我的時候，我就再創造一個？兩個？呃……一個管線！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach meinen Beobachtungen haben nämlich die Echos in Ragunna ganz eigene Sorgen, daher die Idee: „Lass den Echos helfen, ihre Echo-Probleme zu lösen.“ Das ist ein Geschäftsfeld, das noch völlig brachliegt! Ein Ozean des Business, der noch nie befahren wurde!",
+                "en": "According to my recent observations, Echoes in Ragunna have troubles of their own. \"Help Echoes solve their Echo troubles\"—an idea yet explored, an elegant new business venture!",
+                "es": "Según mis observaciones recientes, los Ecos de Raguna tienen sus propios problemas. «Ayuda a los Ecos a solucionar sus problemas». ¡Una idea que aún no ha sido explotada y una oportunidad de negocio única!",
+                "fr": "D'après mes dernières observations, les Échos de Ragunna ont leur lot de soucis. « Aidez les Échos à résoudre leurs problèmes. » Une idée novatrice, avec un fort potentiel commercial !",
+                "ja": "ここ数日の観察でわかったんだが、どうやらラグーナの音骸たちもそれぞれ悩みを抱えてるみたいなんだ。そこで「音骸たちの悩みを何でも解決！」——これぞ新たなブルー・オーシャン！素敵なニュービジネスだろ？",
+                "ko": "최근에 제가 관찰한 바에 따르면, 라군나의 에코들한테 각자의 고민이 있어요. 「에코 고민 상담소」—— 지금까지 아무도 하지 않았던 블루오션이자 아름다운 신사업이죠!",
+                "th": "ช่วงนี้ฉันเห็นว่า เอคโค่ในรากูนน่าต่างก็มีความกลัดกลุ้มเป็นของตัวเอง เพราะงั้น 'การช่วยเอคโค่คลายความกลัดกลุ้ม'—นี่แหละคือบลูโอเชียนที่ยังไม่มีใครเคยแตะต้อง ธุรกิจใหม่ที่งดงามเลิศเลอ!",
+                "zh-Hans": "据我近日观察，拉古那的声骸们会有自己的烦恼，“帮声骸消解烦恼”——无人涉及过的蓝海，优美的新业务！",
+                "zh-Hant": "據我近日觀察，拉古那的聲骸們會有自己的煩惱，「幫聲骸消解煩惱」——無人涉及過的藍海，優美的新業務！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gleichzeitig gibt es gerade auf ganz Solaris einen Hype für künstliche Intelligenz. Lollo-Logistik möchte gerne auch auf der KI-Welle reiten und plant daher einen eigenen digitalen Assistenten – „Lollo-Genie“!",
+                "en": "Meanwhile, with artificial intelligence gone full-blown across Solaris, Lollo Logistics wants to capitalize on the craze by creating their own exclusive digital assistant—\"Lollo Genie\"!",
+                "es": "Mientras tanto, Logística Lollo tiene la intención de aprovechar las expectativas que ha creado la inteligencia artificial en todo Solaris con su exclusivo asistente digital, ¡el «Genio Lollo»!",
+                "fr": "En même temps, l'intelligence artificielle est en plein boom dans tout Solaris, Loulou Logistique veut donc capitaliser sur la tendance avec un assistant numérique exclusif : Génie Loulou !",
+                "ja": "ブブ物流としては、今世界中をにぎわせているAIブームに便乗しない手はない。専属のAIアシスタント——その名も「ブブジーニー」を作るんだ！",
+                "ko": "그와 동시에 무무물류는 지금 전 세계를 휩쓴 인공지능 열풍을 타고, 나만의 똑똑 비서인 「무무 요정」을 만들 생각이에요!",
+                "th": "ในขณะเดียวกัน ลอลโล่โลจิสติกส์ ก็อยากจะเกาะกระแส AI ที่กำลังมาแรงไปทั่วโลกนี้ เพื่อสร้างผู้ช่วยอิเล็กทรอนิกส์อัจฉริยะของตัวเอง — \"Lollo Genie\"!",
+                "zh-Hans": "与此同时，呜呜物流想要搭上这趟席卷全球的人工智能热潮，做出自己的专属智能电子助手——「呜呜精灵」！",
+                "zh-Hant": "與此同時，嗚嗚物流想要搭上這趟席捲全球的人工智慧熱潮，做出自己的專屬智慧電子助手——「嗚嗚精靈」！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denk doch mal an die Plüschtier-Truppe, an Hau-Haus, Wanne-Welpen – also an all die Echos, welche die Straßen und Gassen von Ragunna bevölkern! Sie haben alle unterschiedliche Echo-nalitäten und Gefühle sowie unterschiedliche Nutzerpräferenzen ... Sie sind eine lebende Target Group, die wir wunderbar in unser Business einspannen können!",
+                "en": "Think about Plushie Squads, Chop Chops, Tubpups... Echoes that scatter across Ragunna's streets and alleys! They all have different Echo-nalities and emotions, with their own unique utilities... Living samples. Might as well make good use of them!",
+                "es": "Piensa en las Bandas de Peluches, los Flotanes gigantes, las Canbañeras... ¡Ecos que están en todas las calles de Raguna! Todos tienen distintas econalidades y emociones, con sus respectivos usos... Muestras vivientes. ¿Por qué no aprovecharlo?",
+                "fr": "Pense à l'Équipe de peluches, à Hache hache, à Bainpatou… On trouve des Échos partout dans les rues de Ragunna ! Ils ont tous des origines, des émotions et des capacités qui leur sont propres…  Des échantillons vivants. Autant en profiter !",
+                "ja": "ぬいぐるみスクワッド、フロートアルマ、タブドッグ……ラグーナ中に、性格も感情も機能もバラバラな音骸が山ほどいるだろ？まさにサンプルにもってこいじゃないか！",
+                "ko": "인형 소대, 유령 인형, 욕조견... 각종 에코가 라군나 곳곳에 있고, 서로 다른 성격과 감정을 가지고 있으며, 다양한 기능도 있어요... 이런 참고 샘플을 그냥 두면 아깝죠!",
+                "th": "พวกแก๊งตุ๊กตา, Chop Chop, Tubpup... เอคโค่สารพัดชนิดกระจายอยู่ทั่วทุกตรอกซอกซอยของรากูนน่า พวกมันมี 'บุคลิกเอคโค่' และอารมณ์ที่แตกต่างกัน แถมยังมีฟังก์ชันหลากหลายขนาดนั้น... นี่มันตัวอย่างอ้างอิงชั้นดีที่มีอยู่แล้ว ไม่ใช้ก็เสียของแย่สิ!",
+                "zh-Hans": "布偶小队、浮灵偶、浴缸狗……各种声骸遍布拉古那的大街小巷，有不同的骸格和情感，还有那么多不同的功能……现成的参考样本，不用白不用！",
+                "zh-Hant": "布偶小隊、浮靈偶、浴缸狗……各種聲骸遍布拉古那的大街小巷，有不同的骸格和情感，還有那麼多不同的功能……現成的參考樣本，不用白不用！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir würden also dafür bezahlt werden, den Echos zu helfen, und gleichzeitig können wir die Daten der Echos benutzen, um den digitalen Assistenten zu trainieren. So erreichen wir eine Conversion Rate von mindestens 120 %! Krass, oder? Ich bin wirklich ein Business-Genie!",
+                "en": "Getting paid to help Echoes on one hand, then using that Echo data to establish a digital assistant on the other. Wait, are we gonna achieve a conversion rate of at least 120% or what? I'm a business genius!",
+                "es": "Por una parte está que te paguen para ayudar a los Ecos, y por otra, aprovechar esos mismos datos de Ecos para crear asistentes digitales. Espera, ¿vamos a conseguir una tasa de conversión de al menos un 120 % o qué? ¡Soy un genio de los negocios!",
+                "fr": "On se fait payer pour aider les Échos, et en même temps, on recueille des données pour créer un assistant numérique. Je sens qu'on va atteindre un taux de conversion de 120 % au moins ! Je suis un génie des affaires !",
+                "ja": "音骸を助けることで報酬がもらえるし、AIアシスタント開発に必要な音骸のデータも集められる。これ……ひょっとして転換率120％いけるかもしれないぞ！？私はビジネスの申し子か？",
+                "ko": "에코를 돕고 보수를 받으면서 에코 데이터를 활용해 전자 비서를 구축하면, 구매 전환율이 120%를 넘지 않을까요? 전 진짜 업무 천재예요!",
+                "th": "ด้านนึงก็ช่วยเอคโค่แล้วเก็บค่าตอบแทน อีกด้านก็เอาข้อมูลเอคโค่มาสร้างผู้ช่วยอิเล็กทรอนิกส์ แบบนี้ Conversion Rate ไม่พุ่งทะลุ 120% เลยเหรอ? ฉันนี่มันอัจฉริยะทางธุรกิจจริงๆ!",
+                "zh-Hans": "一边帮助声骸收取报酬，一边运用声骸数据建立电子助手，这转化率不得120%？我可真是个业务天才！",
+                "zh-Hant": "一邊幫助聲骸收取報酬，一邊運用聲骸數據建立電子助手，這轉化率不得120%？我可真是個業務天才！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, ich zähle auf dich, {PlayerName}.",
+                "en": "I'll be counting on you, {PlayerName}.",
+                "es": "Cuento contigo, {PlayerName}.",
+                "fr": "Je compte sur toi, {PlayerName}.",
+                "ja": "そういうことだから{PlayerName}、あとは頼んだよ！",
+                "ko": "그럼 {PlayerName}, 부탁드려요~",
+                "th": "รบกวนหน่อยนะ {PlayerName}~",
+                "zh-Hans": "所以{PlayerName}，就拜托你啦~",
+                "zh-Hant": "所以{PlayerName}，就拜託你啦~"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ist das überhaupt legal?",
+                    "en": "Is this even legal?",
+                    "es": "¿Pero esto es legal?",
+                    "fr": "Est-ce légal ?",
+                    "ja": "{Male=これって合法なのか？;Female=これって合法なの？}",
+                    "ko": "합법적인 일인가요?",
+                    "th": "นี่มันถูกกฎหมายเหรอ?",
+                    "zh-Hans": "这合乎律法吗？",
+                    "zh-Hant": "這合乎律法嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Warum fragst du immer mich?!",
+                    "en": "Why is it always me?!",
+                    "es": "¡¿Por qué siempre acabo pringando?!",
+                    "fr": "Pourquoi ça tombe toujours sur moi ?",
+                    "ja": "{Male=なんでまた俺なんだ？;Female=どうしてまた私なの？}",
+                    "ko": "왜 하필 또 저예요?",
+                    "th": "ทำไมต้องเป็นฉันล่ะ!",
+                    "zh-Hans": "为什么又是我！",
+                    "zh-Hant": "為什麼又是我！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Entspann dich, ganz ruhig! Ich habe schon mit einem Vorgesetzten und ein paar hohen Tieren in Ragunna gesprochen. Wir sind ein etabliertes Unternehmen und all unsere Aktivitäten finden im Rahmen der lokalen Vorschriften und Gesetze statt.",
+                "en": "Relax, relax. I've already spoken with the higher-ups and those big shots in Ragunna. We're a legitimate company, and everything we do will be in compliance with the local law.",
+                "es": "Calma, calma. Ya he hablado con los superiores y los peces gordos de Raguna. Somos una empresa legítima y todas nuestras operaciones se harán de acuerdo a la legislación local.",
+                "fr": "Calme-toi. J'ai déjà discuté avec la direction et les huiles de Ragunna. Nous sommes une entreprise respectable, et nous agissons toujours conformément aux lois et réglementations locales.",
+                "ja": "大丈夫、大丈夫。ラグーナのお偉いさんたちとはもう相談済みだよ。ちゃんとした会社だから、違法なことなんてしないさ。",
+                "ko": "걱정 마세요, 윗선에서 라군나의 높으신 분들한테 미리 얘기했어요. 저희는 떳떳한 회사니까, 모든 행동은 법을 엄격히 준수할 거예요",
+                "th": "วางใจได้ วางใจได้ เบื้องบนไปคุยกับพวกผู้ใหญ่ในรากูนน่าไว้เรียบร้อยแล้ว~ บริษัทเราเป็นบริษัทที่ถูกต้องตามกฎหมาย การกระทำทุกอย่างย่อมเคารพกฎหมายอยู่แล้ว~",
+                "zh-Hans": "放心放心，上头和拉古那的大人物打过招呼啦~我们是正经公司，一切行为都会遵守律法~",
+                "zh-Hant": "放心放心，主管和拉古那的大人物打過招呼啦~我們是正經公司，一切行為都會遵守律法~"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na ja, du bist halt {Male=der Lorbeerträger;Female=die Lorbeerträgerin} von Ragunna, {Male=mein Freund;Female=meine Liebe}! Außerdem habe ich gehört, dass du gute Connections zu den Familien Montelli und Fisalia hast – sogar zum Orden! Das heißt, dieser Auftrag sollte ein Kinderspiel für dich sein.",
+                "en": "Well, you're Ragunna's \"Laureate,\" my friend! I've heard you have strong connections with the Montelli and Fisalia families, and even the Order, so it should be a piece of cake for you!",
+                "es": "¡Bueno, eres «{Male=el Laureado;Female=la Laureada}» de Raguna, compi! Sé que tienes muchos contactos en las familias Montelli y Fisalia, incluso en la Orden. ¡Será pan comido para ti!",
+                "fr": "Parce que tu es {Male=le Lauréat;Female=la Lauréate} de Ragunna ! Il paraît que tu connais les Montelli, les Fisalia et l'Ordre, alors avec toi, l'affaire est dans le sac !",
+                "ja": "ラグーナの「月桂冠」、モンテリ、フィサリア、教団でさえ顔が広い君が代わりにやってくれるのなら、きっと全部うまくいくはずさ！",
+                "ko": "친구여, 당신은 라군나의 「월계관을 쟁취한 자」예요! 몬텔리, 피살리아, 심지어 수도회에도 인맥이 있으니까, 일 처리가 훨씬 수월해질 거예요!",
+                "th": "คุณเป็นถึง \"ลอเรล\" แห่งรากูนน่าเชียวนะ เพื่อน! ได้ยินมาว่าเธอมีเส้นสายพอตัวทั้งใน Montelli, Fisalia, ไปจนถึงภาคีเลยนี่นา เวลาจะทำอะไรต้องสะดวกกว่าคนอื่นเยอะแน่ๆ!",
+                "zh-Hans": "你可是拉古那的「桂冠」，我的朋友！听说你在莫塔里、翡萨烈，乃至修会都颇有人脉，办起事来肯定方便很多！",
+                "zh-Hant": "你可是拉古那的「桂冠」，我的朋友！聽說你在莫塔里、翡薩烈，乃至修會都頗有人脈，辦起事來肯定方便很多！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Außerdem habe ich gesehen, wie gerne all diese niedlichen, kleinen Echos von dir gestreichelt werden.",
+                "en": "Besides, I've seen the way those adorable little Echoes cuddle with you.",
+                "es": "Además, he visto cómo esos adorables Ecos se acurrucan junto a ti.",
+                "fr": "Et puis, j'ai vu à quel point ces adorables Échos t'apprécient.",
+                "ja": "それに、君はかわいい音骸たちにも懐かれているからな！",
+                "ko": "게다가 그 귀여운 에코들이 당신을 좋아하잖아요~",
+                "th": "แถมพวกเอคโค่น้อยน่ารักพวกนั้นยังติดเธอแจเลยด้วยนะ~",
+                "zh-Hans": "况且，那些可爱小骸多亲近你呀~",
+                "zh-Hant": "況且，那些可愛小骸多親近你呀~"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also: Du musst einfach nur deine täglichen Aufträge erfüllen und die Daten dazu hochladen. Dann werde ich dir Lollo-Briefmarken auf dein Konto schicken – so wie ein leckeres Glas heiße Milch zum Schlafengehen.",
+                "en": "Just complete your daily orders and upload their data, and I'll transfer Lollo Stamps to your account. As smooth as a warm cup of milk before bed.",
+                "es": "Completa los encargos diarios, sube los datos correspondientes y transferiré Sellos de Lollo a tu cuenta. Como un vasito de leche caliente antes de dormir.",
+                "fr": "Termine les commandes quotidiennes, mets les données en ligne, et j'ajouterai des Jetons Loulou à ton compte. Ce sera aussi réconfortant qu'une tasse de lait chaud avant d'aller au lit.",
+                "ja": "毎日依頼をこなしてデータを送ってくれれば、ブブコインを寝んねする前のホットミルクみたいに、スムーズに届けてあげるよ！",
+                "ko": "매일 주문을 완성하고 데이터를 전송하면, 무무 코인을 새벽 배달 신문처럼 직접 당신에게 전달해 줄게요",
+                "th": "ขอแค่เธอทำออเดอร์ให้เสร็จและส่งข้อมูลกลับมาทุกวัน ฉันก็จะโอนเหรียญลอลโล่เข้าบัญชีเธอให้อย่างลื่นไหล เหมือนนมอุ่นๆ ก่อนนอนเลยล่ะ",
+                "zh-Hans": "只要你每天完成订单，传回数据，我就会把呜呜邮币像睡前的热牛奶一样丝滑地打到你的账号上。",
+                "zh-Hant": "只要你每天完成訂單，傳回數據，我就會把嗚嗚郵幣像睡前的熱牛奶一樣絲滑地打到你的帳號上。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Wirst du je mit diesen seltsamen Metaphern aufhören?)",
+                "en": "(When are you gonna stop with these weird metaphors?)",
+                "es": "(¿Cuándo dejará de usar esas estúpidas metáforas?)",
+                "fr": "(Tu pourrais arrêter avec les métaphores débiles ?)",
+                "ja": "{Male=（この変わった例えを相当気に入ってるみたいだな。）;Female=（この変わった例えを相当気に入ってるみたいね。）}",
+                "ko": "(도대체 언제쯤이면 이상한 비유를 포기할까?)",
+                "th": "(เมื่อไหร่จะเลิกเปรียบเปรยอะไรพิสดารแบบนั้นสักทีนะ!)",
+                "zh-Hans": "（到底什么时候才能放弃神奇比喻啊！）",
+                "zh-Hant": "（到底什麼時候才能放棄神奇比喻啊！）"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alles klar!",
+                "en": "All right, then.",
+                "es": "Muy bien.",
+                "fr": "Bon, d'accord.",
+                "ja": "わかった。",
+                "ko": "알겠어요",
+                "th": "ก็ได้",
+                "zh-Hans": "好吧。",
+                "zh-Hant": "好吧。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Piep – Systemnachricht: Neuen Auftrag erhalten.",
+                "en": "Beep—System notification: New order received.",
+                "es": "Bip... Notificación del sistema: Nuevo encargo recibido.",
+                "fr": "Bip ! Notification système : nouvelle commande.",
+                "ja": "ピコンッ——システム通知です。新しい依頼が届きました。",
+                "ko": "띠—— 시스템 알림입니다. 새로운 주문이 있습니다",
+                "th": "ติ๊ด—ประกาศจากระบบ คุณมีออเดอร์ใหม่",
+                "zh-Hans": "滴——系统提示，您有新的订单。",
+                "zh-Hant": "滴——系統提示，您有新的訂單。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau doch gleich nach: Dein erster Auftrag des Tages! Lass mal lesen ... „Ein Echo möchte ein glänzendes, neues Werbefoto.“",
+                "en": "Would you look at that, our first order of the day! Let's see here... \"Echo wants a shiny new publicity photo.\"",
+                "es": "¡Mira por dónde, el primer encargo del día! Veamos... «El Eco quiere que le hagan una foto promocional de las buenas».",
+                "fr": "La première commande du jour ! Voyons voir… « Un Écho veut une nouvelle photo publicitaire toute belle. »",
+                "ja": "おっと、さっそく依頼が入ったね！どれどれ……「ボク、とびっきり映える宣材写真を撮ってもらいたい」ってさ。",
+                "ko": "오, 첫 주문이네요! 어디 보자... 「한 에코가 끝내주는 프로필 사진을 원해요」",
+                "th": "โอ๊ะ ลูกค้ารายแรกมาแล้ว! ไหนขอดูหน่อยซิ... \"มีเอคโค่อยากได้ภาพโปรโมตใบใหม่ที่สวยสะดุดตา\"",
+                "zh-Hans": "哟，开门生意！让我看看……“某骸想要一张新的绝美宣传照”。",
+                "zh-Hant": "喲，開門生意！讓我看看……「某骸想要一張新的絕美宣傳照」。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Infos zu Kunden und den Ort findest du bereits auf deinem Terminal. Viel Glück, {Male=Partner;Female=Partnerin}!",
+                "en": "The client's info and location are already in your terminal. Best of luck to you, partner!",
+                "es": "La información y ubicación del cliente ya están en tu terminal. ¡Mucha suerte, {Male=socio;Female=socia}!",
+                "fr": "Le dossier du client a été transmis à ta Borne. Bon courage, partenaire !",
+                "ja": "クライアントの情報と座標はデバイスに送っておいた。頼んだぞ、私のビジネスパートナーよ！",
+                "ko": "고객 정보와 좌표는 단말기로 보냈어요. 오랜 파트너, 잘 해봅시다!",
+                "th": "ฉันส่งข้อมูลลูกค้ากับพิกัดไปที่เทอร์มินัลของเธอแล้วนะ ขอให้งานราบรื่นนะ คู่หู!",
+                "zh-Hans": "客户信息和坐标传你终端啦，合作愉快，老拍档！",
+                "zh-Hant": "客戶資料和坐標傳你終端啦，合作愉快，老搭檔！"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

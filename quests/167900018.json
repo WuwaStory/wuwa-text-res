@@ -1,0 +1,2209 @@
+{
+  "id": 167900018,
+  "key": "2.0联机副本引导",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Unberührbare Farbe",
+    "en": "Although Colors Have No Form",
+    "es": "Colores intangibles",
+    "fr": "Couleurs invisibles",
+    "ja": "色に形はないけれど",
+    "ko": "색채는 형태가 없지만",
+    "th": "แม้ว่าสีสันจะไร้รูป",
+    "zh-Hans": "虽然色彩无形",
+    "zh-Hant": "雖然色彩無形"
+  },
+  "desc": {
+    "de": "Neben dem mysteriösen Morph-Gemälde erweckst du das in einen Albtraum verstrickte Mädchen, die Malerin Claudia. \nClaudia bittet dich, ihr zu helfen, die Welt innerhalb des Gemäldes zu erkunden, und schenkt dir ein Amulett zur Unterstützung.",
+    "en": "Beside a mysterious morph painting, you find a painter named Claudia, trapped in her nightmares. \nClaudia asks you to investigate the world within the painting and gives you a protective talisman.",
+    "es": "Junto al misterioso cuadro de Eco, despertaste a Claudia, la joven pintora atrapada en sus pesadillas.\nClaudia te pide que la ayudes a investigar el mundo del cuadro y te da un amuleto como ayuda.",
+    "fr": "À côté d'une peinture transmutatrice mystérieuse, vous réveillez une jeune fille capturée par un cauchemar, Claudia.\nElle vous demande de l'aider à explorer le monde à l'intérieur de la peinture et vous donne une amulette en guise de soutien.",
+    "ja": "とある神秘的な音骸絵のそばで、あなたは悪夢に囚われた絵師・クラウディアを呼び起こす。\n目覚めた彼女は、あなたに絵の中の世界を調べてほしいと頼み、ひとつのお守りを託した。",
+    "ko": "신비한 에코 그림 옆에서, 당신은 악몽에 빠진 화가 소녀 클라우디아를 깨웠다.\n클라우디아는 당신이 그림 속 세계를 조사하는 것을 도와달라고 부탁했고, 당신에게 도움이 될 부적도 선물했다",
+    "th": "ข้างภาพวาดแปรสภาพลึกลับ คุณพบจิตรกรนามว่าคลอเดียที่ติดอยู่ในฝันร้ายของเธอ \nคลอเดียขอให้คุณสำรวจโลกภายในภาพวาดและมอบเครื่องรางป้องกันให้คุณ",
+    "zh-Hans": "神秘的声骸画旁，你唤醒了陷入噩梦的画师女孩克劳迪亚。\n克劳迪亚请求你帮助调查画中世界，并将护身符赠与你作为协助。",
+    "zh-Hant": "神秘的聲骸畫旁，你喚醒了陷入噩夢的畫師女孩克勞迪亞。\n克勞迪亞請求你幫助調查畫中世界，並將護身符贈與你作為協助。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 167900022,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC1",
+          "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+          "areaId": 20,
+          "position": {
+            "x": 784899,
+            "y": 632891,
+            "z": 6944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -103
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 167900024,
+          "mapId": 8,
+          "blueprintType": "Quest001",
+          "name": "TsEntity_任务_空实体for睡着克劳迪亚",
+          "areaId": 20,
+          "position": {
+            "x": 784899,
+            "y": 632891,
+            "z": 6944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.0联机副本",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Claudia schläft vor dem Bild, die Stirn gerunzelt, Schweißperlen laufen ihr Gesicht hinunter. Sie scheint in einem Albtraum gefangen zu sein.",
+                "en": "Claudia sleeps before the painting, her brow furrowed, beads of sweat trailing down her face. She seems ensnared in a nightmare.",
+                "es": "Claudia está durmiendo frente a la pintura, con el ceño fruncido, gotas de sudor recorriendo su rostro. Parece atrapada en una pesadilla.",
+                "fr": "Claudia dort devant le tableau, le front plissé. La sueur coule sur son visage. Elle semble prise dans un cauchemar.",
+                "ja": "クラウディアが絵の前に座って居眠りをしている。その眉はきつくひそめられ、汗は止まることを知らない。どうやらひどくうなされているようだ。",
+                "ko": "클라우디아가 그림 앞에 앉아 깊은 잠에 빠져 있다. 그녀는 찡그린 표정으로 식은땀을 흘리고 있다. 그 모습은 마치 악몽을 꾸고 있는 것 같다",
+                "th": "Claudia หลับอยู่หน้าภาพวาด คิ้วของเธอขมวดมุ่น เหงื่อซึมที่หน้าผาก เธอดูเหมือนติดอยู่ในฝันร้าย",
+                "zh-Hans": "克劳迪亚坐在画前沉睡着，眉头紧缩，冷汗直冒。她似乎正处于一场噩梦之中。",
+                "zh-Hant": "克勞迪亞坐在畫前沉睡著，眉頭緊皺，冷汗直冒。她似乎正處於一場噩夢之中。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Sie sanft wecken.)",
+                    "en": "(Gently wake her.)",
+                    "es": "(Suavemente despiértala.)",
+                    "fr": "(Essayer de la réveiller gentiment.)",
+                    "ja": "（そっと起こしてみる。）",
+                    "ko": "(살며시 그녀를 깨운다）",
+                    "th": "(ค่อยๆ ปลุกเธอ)",
+                    "zh-Hans": "（轻轻唤醒她。）",
+                    "zh-Hant": "（輕輕喚醒她。）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "(Nachdem sie deinen Ruf gehört hat, wacht Claudia aus ihrem Albtraum auf.)",
+                "en": "After hearing your call, Claudia wakes from her nightmare.",
+                "es": "(Después de escuchar tu llamada, Claudia despierta de su pesadilla).",
+                "fr": "(Après avoir entendu votre appel, Claudia se réveille de son cauchemar.)",
+                "ja": "あなたの呼びかけに、クラウディアはゆっくりと悪夢から目を覚ました。",
+                "ko": "당신의 부름을 들은 클라우디아는 악몽에서 깨어났다",
+                "th": "หลังจากได้ยินเสียงเรียกของคุณ Claudia ก็ตื่นจากฝันร้าย",
+                "zh-Hans": "听到你的呼唤后，克劳迪亚从噩梦中缓缓醒了过来。",
+                "zh-Hant": "聽到你的呼喚後，克勞迪亞從噩夢中緩緩醒了過來。"
+              },
+              "id": 14
+            },
+            {
+              "text": {
+                "de": "Mmm ... Ich ... Wo bin ich? Bin ich aufgewacht? Oder ist das ein weiterer Traum ... Ach, du bist es, {PlayerName}. Hast du mich aufgeweckt?",
+                "en": "Mmm... I... Where am I? Am I awake? Or is this another dream... Oh, it's you, {PlayerName}. Did you wake me up?",
+                "es": "Mmm... ¿Dónde estoy? ¿Estoy despierta? ¿O es esto otro sueño...? Ah, eres tú, {PlayerName}. ¿Me despertaste?",
+                "fr": "Mmm... Moi... Où suis-je ? Suis-je éveillée ? Ou est-ce un autre rêve... Oh, c'est toi, {PlayerName}. Tu m'as réveillée ?",
+                "ja": "うぅ……わ、私は……目を覚ました？それとも、これも夢……？ああ、{PlayerName}さん、あなたが私を起こしてくださったのですね？",
+                "ko": "음... 제, 제가... 깨어났어요? 아니면 또 다른 꿈인가요... 아, {PlayerName}, 당신이 저를 도와주셨나요?",
+                "th": "อืมม... ฉัน... ฉันอยู่ที่ไหนเนี่ย? ฉันตื่นอยู่ใช่ไหม? หรือว่านี่ก็เป็นอีกความฝัน... อ๋อ คุณนั่นเอง {PlayerName} คุณปลุกฉันสินะ?",
+                "zh-Hans": "唔……我，我这是……我醒过来了？还是又一场梦……啊，{PlayerName}，是你帮了我么。",
+                "zh-Hant": "唔……我，我這是……我醒過來了？還是又一場夢……啊，{PlayerName}，是你幫了我嗎。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es scheint, als hättest du einen Alptraum gehabt.",
+                    "en": "It seems like you had a nightmare.",
+                    "es": "Parece que tuviste una pesadilla.",
+                    "fr": "Tu as fait un cauchemar.",
+                    "ja": "悪夢にうなされていたようだ。",
+                    "ko": "악몽을 꾼 것 같아요",
+                    "th": "ดูเหมือนคุณจะฝันร้ายนะ",
+                    "zh-Hans": "你似乎做噩梦了。",
+                    "zh-Hant": "你似乎做噩夢了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich ... Ich bin eingeschlafen, nachdem ich das Bild berührt habe und hatte einen langen Albtraum. Es fühlte sich an, als wäre ich im Traum jemand anders geworden. Warte, habe ich in meinem Traum gesprochen?",
+                "en": "I... I fell asleep after touching the painting and had a long nightmare. It felt like I became someone else in the dream. Wait, did I speak in my dream?",
+                "es": "Yo... Me dormí después de tocar la pintura y tuve una larga pesadilla. Sentí que me convertí en otra persona en el sueño. Espera, ¿hablé en mi sueño?",
+                "fr": "Je... Je me suis endormie après avoir touché le tableau et j'ai fait un long cauchemar. J'avais l'impression de devenir quelqu'un d'autre dans le rêve. Attends, ai-je parlé dans mon rêve ?",
+                "ja": "わ、私……この絵に触れたら、いつの間にか眠りについて、悪夢に落ちてしまったのです。夢の中で、私はまるで別人になったかのような感じでした。ちょっと待って、私、寝言言ってませんでした……？",
+                "ko": "저는... 이 그림을 만지던 중 잠이 들었고, 긴 악몽을 꾸었어요. 꿈속의 저는 다른 사람이 된 것 같았는데... 잠깐, 제가 잠꼬대를 했나요?",
+                "th": "ฉัน... ฉันเผลอหลับไปหลังจากแตะภาพวาด แล้วก็ฝันร้ายไปนานเลยล่ะ ตอนอยู่ในฝัน ฉันรู้สึกเหมือนตัวเองกลายเป็นคนอื่น เดี๋ยวนะ เมื่อกี้ฉันพูดในฝันเหรอ?",
+                "zh-Hans": "我……我在接触这幅画的时候睡过去了，做了一场很长的噩梦。梦中我似乎变成了其他人，等下，我是不是说梦话了……",
+                "zh-Hant": "我……我在接觸這幅畫的時候睡過去了，做了一場很長的噩夢。夢中我似乎變成了其他人，等一下，我是不是說夢話了……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich habe nichts gehört.",
+                    "en": "I didn't hear anything.",
+                    "es": "No escuché nada.",
+                    "fr": "Je n'ai rien entendu.",
+                    "ja": "何も聞こえなかった。",
+                    "ko": "아무것도 못 들었어요",
+                    "th": "ฉันไม่ได้ยินอะไรเลย",
+                    "zh-Hans": "我什么都没听见。",
+                    "zh-Hant": "我什麼都沒聽見。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "... Hust. Ich hoffe, ich habe mich nicht zum Narren gemacht.",
+                "en": "...Ahem. I hope I haven't made a fool of myself.",
+                "es": "...Ejem. Espero no haber hecho el ridículo.",
+                "fr": "...Ahem. J'espère que je ne me suis pas ridiculisée.",
+                "ja": "……コホン。お恥ずかしいところをお見せしました。",
+                "ko": "...정말 부끄럽네요",
+                "th": "...อะแฮ่ม หวังว่าฉันคงไม่ได้ทำตัวเองขายหน้านะ",
+                "zh-Hans": "……咳咳。让你见笑了。",
+                "zh-Hant": "……讓你見笑了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, {PlayerName}, kennst du solche Morph-Gemälde wie dieses hier?",
+                "en": "By the way, {PlayerName}, are you familiar with morph paintings like this one?",
+                "es": "Por cierto, ¿sabes algo sobre este tipo de pintura Eco?",
+                "fr": "Au fait, {PlayerName}, connais-tu les peintures transmutatrices comme celle-ci ?",
+                "ja": "そういえば、{PlayerName}さん。このような音骸絵にはお詳しいでしょうか？",
+                "ko": "참, {PlayerName}, 혹시 이런 에코 그림에 대해 아시는 게 있으신가요?",
+                "th": "ว่าแต่ {PlayerName} คุณคุ้นเคยกับภาพวาดแปรสภาพพวกนี้บ้างไหม?",
+                "zh-Hans": "说起来{PlayerName}对这种声骸画是否有所了解呢？",
+                "zh-Hant": "說起來{PlayerName}對這種聲骸畫是否有所了解呢？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Gemälde, das mit einer anderen Dimension verbunden ist.",
+                    "en": "I know it's a painting that links to another dimension.",
+                    "es": "Sé que es una pintura que se conecta a otra dimensión.",
+                    "fr": "Je sais que c'est une peinture qui se connecte à une autre dimension.",
+                    "ja": "{Male=特殊な空間に繋がる絵だな。;Female=特殊な空間に繋がる絵だね。}",
+                    "ko": "특수한 공간과 연결된 그림 같군요",
+                    "th": "ฉันรู้ว่ามันคือภาพวาดที่เชื่อมไปยังอีกมิติหนึ่ง",
+                    "zh-Hans": "可以连通特殊的空间的画。",
+                    "zh-Hant": "可以連通特殊空間的畫。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eine Tasche, die magische Werkzeuge aus einer anderen Dimension hervorzieht?",
+                    "en": "Is that a pocket that pulls out magical tools from another dimension?",
+                    "es": "¿Es eso un bolsillo para sacar herramientas mágicas de otra dimensión?",
+                    "fr": "Est-ce une poche qui sort des outils magiques d'une autre dimension ?",
+                    "ja": "不思議な道具が出る異次元ポケットかな？",
+                    "ko": "멋진 도구를 꺼낼 수 있는 다른 차원의 주머니 같군요",
+                    "th": "มันคือช่องเก็บของที่ดึงเอาเครื่องมือวิเศษจากอีกมิติออกมาได้ใช่มั้ย?",
+                    "zh-Hans": "能掏出妙妙工具的异次元口袋？",
+                    "zh-Hant": "能掏出妙妙工具的異次元口袋？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, du hast also einige der Geheimnisse entdeckt, die in diesen Gemälden verborgen sind.",
+                "en": "I see, you must have glimpsed some of the mysteries hidden within these paintings.",
+                "es": "Ya veo, debes haber vislumbrado algunos de los misterios ocultos dentro de estas pinturas.",
+                "fr": "Je vois, tu as dû entrevoir certains des mystères cachés dans ces tableaux.",
+                "ja": "そうですか。あなたはこのような絵の秘密をすでにご存知なのですね。",
+                "ko": "그러시군요. 틀림없이 당신은 이미 이 그림 속의 신비감을 느끼셨나보군요",
+                "th": "อย่างนี้นี่เอง แสดงว่าคุณได้เห็นความลึกลับที่ซ่อนอยู่ในภาพวาดเหล่านี้บ้างแล้วสินะ",
+                "zh-Hans": "原来如此，那想必你一定见识过某些画中的奥秘了。",
+                "zh-Hant": "原來如此，那想必你一定見識過某些畫中的奧秘了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was? Sie können das? Kein Wunder, dass die ältere Linie so viele geheime Schätze mysteriösen Ursprungs besitzt ...",
+                "en": "What? They can do that? No wonder the senior line possesses so many secret treasures of mysterious origin...",
+                "es": "¿Qué? ¿Pueden hacer eso? No es de extrañar que la familia principal posea tantos tesoros secretos de origen misterioso...",
+                "fr": "Quoi ? Ils peuvent faire ça ? Pas étonnant que le chef de ma famille possède tant de trésors secrets d'origine mystérieuse...",
+                "ja": "えっ？そうなんですか？どうりで宗家には出所不明の財宝がたくさんあるわけですね……",
+                "ko": "정말요? 그렇게 사용할 수도 있다니... 종가에 출처를 알 수 없는 비밀 재산이 왜 그렇게 많은지 이제 알게 되네요",
+                "th": "อะไรนะ? มันทำแบบนั้นได้ด้วยเหรอ? มิน่าล่ะ สายอาวุโสถึงได้มีของวิเศษลึกลับมากมายขนาดนี้...",
+                "zh-Hans": "诶？居然还能这样用么？难怪宗家有那么多来路不明的秘密财宝……",
+                "zh-Hant": "欸？居然還能這樣用嗎？難怪宗家有那麼多來路不明的秘密財寶……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer ... abgesehen von der Gefahr könnten die Erinnerungen, die ich in meinem Traum gesehen habe, mit dem Künstler dieses Gemäldes zusammenhängen.",
+                "en": "Anyway... despite the danger, the memories I glimpsed in my dream may be connected to the artist of this painting.",
+                "es": "De todos modos... a pesar del peligro, los recuerdos que vislumbré en mi sueño pueden estar conectados con el artista de esta pintura.",
+                "fr": "Quoi qu'il en soit... malgré le danger, les souvenirs que j'ai aperçus dans mon rêve peuvent être liés à l'artiste de cette peinture.",
+                "ja": "でも……恐ろしかったとは言え、恐らくさっき私が夢で見たあの記憶、絵の作者と何らかの関係があるのでしょうね。",
+                "ko": "그런데... 위험하긴 하지만 방금 꿈속에서 본 기억들은 아마도 그림의 창작자와 관련이 있을 거예요",
+                "th": "แต่จะว่าไป... ถ้าไม่นับเรื่องความอันตราย ความทรงจำที่ฉันเห็นในฝันอาจมีส่วนเชื่อมโยงกับศิลปินผู้วาดภาพนี้ก็ได้",
+                "zh-Hans": "不过……虽然很危险，但刚刚我在梦中见到的那些记忆，想来也许就和画的作者有关。",
+                "zh-Hant": "不過……雖然很危險，但剛剛我在夢中見到的那些記憶，想來也許就和畫的作者有關。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Leider kann ich mich nicht an die Details des Traums erinnern. Wenn ich nur noch einmal nachforschen könnte ...",
+                "en": "Unfortunately, I can't recall the dream's details. If only I could investigate again...",
+                "es": "Desafortunadamente, no puedo recordar los detalles del sueño. Si tan solo pudiera investigar de nuevo...",
+                "fr": "Malheureusement, je ne me souviens pas des détails du rêve. Si seulement je pouvais enquêter à nouveau...",
+                "ja": "もう夢の詳しいことは覚えていません。でも、もう一度夢の中に入って調べることができれば……",
+                "ko": "꿈의 내용을 자세히 기억할 순 없지만, 다시 한 번 조사할 수 있다면...",
+                "th": "น่าเสียดายที่ฉันจำรายละเอียดในฝันไม่ได้เลย ถ้าได้กลับไปสำรวจอีกก็คงดี...",
+                "zh-Hans": "现在梦的细节已经无法回忆起了，但如果能再调查一遍的话……",
+                "zh-Hant": "現在夢的細節已經無法回憶起了，但如果能再調查一遍的話……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, wäre es möglich, dass du für mich die Geheimnisse in dem Gemälde untersuchst, {PlayerName}? Ich möchte herausfinden, was in diesen vergangenen Erinnerungen verborgen ist.",
+                "en": "By the way, would it be possible for you to investigate the secrets within the painting for me, {PlayerName}? I want to uncover what's hidden within those past memories.",
+                "es": "Por cierto, ¿sería posible que investigaras los secretos dentro de la pintura por mí, {PlayerName}? Quiero descubrir lo que está oculto en esos recuerdos del pasado.",
+                "fr": "Au fait, pourrais-tu enquêter sur les secrets du tableau à ma place, {PlayerName} ? Je veux découvrir ce qui est caché dans ces souvenirs passés.",
+                "ja": "そこでですが、{PlayerName}さんにお願いしてもいいでしょうか？絵の秘密を探っていただけませんか？過去の記憶のかけらに、いったい何が隠されているのかを調べてほしいのです。",
+                "ko": "참, {PlayerName}, 혹시 그림 속의 비밀을 조사해 주실 수 있을까요? 그 과거 기억의 조각들 속에 무엇이 숨겨져 있는지 조사해 보고 싶어요",
+                "th": "ว่าแต่ คุณพอจะช่วยสืบหาความลับที่ซ่อนอยู่ในภาพวาดให้ฉันได้ไหมคะ {PlayerName}? ฉันอยากรู้ว่ามีอะไรซ่อนอยู่ในความทรงจำจากอดีตเหล่านั้น",
+                "zh-Hans": "对了，不知道{PlayerName}是否方便代我调查一下画中的秘密呢？我想调查下在那些过去记忆的碎片中究竟藏着些什么。",
+                "zh-Hant": "對了，不知道{PlayerName}是否方便代我調查一下畫中的秘密呢？我想調查一下那些過去記憶的碎片中究竟藏著些什麼。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlass es mir.",
+                    "en": "I'll consider it.",
+                    "es": "Lo consideraré.",
+                    "fr": "Je vais y réfléchir.",
+                    "ja": "少し考えさせて。",
+                    "ko": "생각해 볼게요",
+                    "th": "ฉันจะลองคิดดูนะ",
+                    "zh-Hans": "我可以考虑一下。",
+                    "zh-Hant": "我可以考慮一下。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke dir. Ich werde eine angemessene Belohnung für deine Hilfe vorbereiten. Und nimm bitte dieses Amulett. Die Welt im Gemälde wird gefährlich sein, und es sollte dir helfen.",
+                "en": "Thank you. I'll prepare a proper reward for your help. And please take this talisman. The world inside the painting will be dangerous, and it should help you.",
+                "es": "Gracias. Prepararé una recompensa por tu ayuda. Ah, y por favor, toma este amuleto. El mundo dentro de la pintura será peligroso, y te servirá.",
+                "fr": "Merci. Je préparerai une récompense appropriée pour ton aide. Et s'il te plaît, prends cette amulette. Le monde à l'intérieur de la peinture sera dangereux, elle devrait t'aider.",
+                "ja": "もちろん、それに相応しい報酬を用意しておきますので。あっ、このお守りもどうか持っていってください。絵の中では、危険に遭遇するかもしれませんので、このお守りが必ずお役に立てるでしょう。",
+                "ko": "물론 그에 따른 보수도 드릴게요. 아, 참, 조사하러 가실 때 이 부적을 꼭 가지고 가주세요. 그림 속에서 위험에 직면할 수도 있는데, 이게 분명히 당신에게 도움이 될 거예요",
+                "th": "ขอบคุณมาก ฉันจะเตรียมรางวัลที่เหมาะสมไว้ตอบแทนน้ำใจคุณนะคะ แล้วก็รับเครื่องรางนี้ไปด้วยสิคะ โลกภายในภาพวาดต้องเต็มไปด้วยอันตรายแน่ สิ่งนี้น่าจะช่วยคุณได้",
+                "zh-Hans": "我当然也会准备相应的报酬的。对了，如果前往调查请带上这个护身符吧，画中难免会遇见一些威胁，它一定可以帮到你。",
+                "zh-Hant": "我當然也會準備相應的報酬。對了，如果前往調查請帶著這個護身符吧，畫中難免會遇見一些威脅，它一定可以幫到你。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist ein Geschenk meiner Vorfahren, das man glaubt, ein Fragment des Leuchtfeuers zu sein, das die Menschen einst nach Ragunna führte.",
+                "en": "It is a gift from my ancestors, believed to be a fragment of the beacon that once guided people to Ragunna.",
+                "es": "Es un regalo de mis ancestros, creído ser un fragmento del faro que una vez guió a las personas a Raguna.",
+                "fr": "C'est un cadeau de mes ancêtres et on m'a dit que c'est un fragment du Nexus qui guidait autrefois les gens vers Ragunna.",
+                "ja": "ファミリーのご先祖様からいただいたプレゼントです。かつて、人々をラグーナへと導いてくれた、信号塔のかけらだと言われているものです。",
+                "ko": "가문 어른들이 제게 주신 선물인데, 사람들을 라군나로 인도했던 비콘의 조각이라고 하더군요",
+                "th": "มันเป็นของที่ตกทอดมาจากบรรพบุรุษ เชื่อกันว่าเป็นเศษเสี้ยวของเสาสัญญาณที่เคยชี้ทางให้ผู้คนมายังรากูนน่า",
+                "zh-Hans": "这是家族的祖辈送给我的礼物，据说，也是曾经引导人们来到拉古那的信标碎片。",
+                "zh-Hant": "這是家族的長輩送給我的禮物，據說，也是曾經引導人們來到拉古那的信標碎片。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit seiner Hilfe, falls du deinen Weg im Gemälde verlierst, wird das Licht des Hütenden dich leiten, {PlayerName}.",
+                "en": "With its aid, should you lose your way within the painting, the light of the Sentinel will guide you, {PlayerName}.",
+                "es": "Con su ayuda, si pierdes el camino dentro de la pintura, la luz del Centinela te guiará, {PlayerName}.",
+                "fr": "Si tu te perds dans la peinture, la lumière de la Sentinelle te guidera, {PlayerName}.",
+                "ja": "このお守りさえあれば、絵の世界で道に迷っても、歳主様の輝きが必ずやその道を照らしてくださるでしょう。",
+                "ko": "이게 있으면, 그림 속 세상에서 길을 잃더라도 수호신의 빛이 반드시 당신에게 나아갈 길을 알려 줄 거예요",
+                "th": "สิ่งนี้จะช่วยให้คุณไม่หลงทางในภาพวาด แสงแห่งเซนติเนลจะช่วยนำทางคุณ {PlayerName}",
+                "zh-Hans": "有它帮忙的话，就算在画中的世界迷失方向，岁主的光辉也会为{PlayerName}指明道路的。",
+                "zh-Hant": "有它幫忙的話，就算在畫中的世界迷失方向，歲主的光輝也會為{PlayerName}指明道路的。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_V2.0联机副本",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein fein gekleidetes Mädchen schläft vor dem Gemälde, ihre Stirn gerunzelt, Schweißperlen laufen ihr Gesicht hinunter. Sie scheint in einem Albtraum gefangen zu sein.",
+                "en": "A finely dressed girl sleeps before the painting, her brow furrowed, beads of sweat trailing down her face. She seems ensnared in a nightmare.",
+                "es": "Una chica finamente vestida duerme frente a la pintura, con el ceño fruncido, gotas de sudor recorriendo su rostro. Parece atrapada en una pesadilla.",
+                "fr": "Une fille bien habillée dort devant le tableau, les sourcils froncés. La sueur coule sur son visage. Il paraît qu'elle est piégée par un cauchemar.",
+                "ja": "きれいな身なりをした女の子が絵の前に座って居眠りをしている。その眉はきつくひそめられ、汗は止まることを知らない。どうやらひどくうなされているようだ。",
+                "ko": "잘 차려입은 소녀가 그림 앞에 앉아 깊은 잠에 빠져 있다. 그녀는 찡그린 표정으로 식은땀을 흘리고 있다. 그 모습은 마치 악몽을 꾸고 있는 것 같다",
+                "th": "หญิงสาวแต่งกายงดงามหลับอยู่หน้าภาพวาด คิ้วของเธอขมวดมุ่น เหงื่อซึมที่หน้าผาก เธอดูเหมือนติดอยู่ในฝันร้าย",
+                "zh-Hans": "一个衣着精致的女孩坐在画前沉睡着，眉头紧缩，冷汗直冒。她似乎正处于一场噩梦之中。",
+                "zh-Hant": "一個衣著精緻的女孩坐在畫前沉睡著，眉頭緊皺，冷汗直冒。她似乎正處於一場噩夢之中。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Sie sanft wecken.)",
+                    "en": "(Gently wake her.)",
+                    "es": "(Suavemente despiértala.)",
+                    "fr": "(Essayer de la réveiller gentiment.)",
+                    "ja": "（そっと起こしてみる。）",
+                    "ko": "(살며시 그녀를 깨운다）",
+                    "th": "(ค่อยๆ ปลุกเธอ)",
+                    "zh-Hans": "（轻轻唤醒她。）",
+                    "zh-Hant": "（輕輕喚醒她。）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "(Nachdem sie deinen Ruf gehört hat, wacht das Mädchen aus ihrem Albtraum auf.)",
+                "en": "After hearing your call, the girl wakes from her nightmare.",
+                "es": "(Después de escuchar tu llamada, la chica despierta de su pesadilla.)",
+                "fr": "(Après avoir entendu votre appel, la fille se réveille de son cauchemar.)",
+                "ja": "あなたの呼びかけに、女の子はゆっくりと悪夢から目を覚ました。",
+                "ko": "당신의 부름을 들은 소녀는 악몽에서 깨어났다",
+                "th": "หลังจากได้ยินเสียงเรียกของคุณ หญิงสาวก็ตื่นจากฝันร้าย",
+                "zh-Hans": "听到你的呼唤后，女孩从噩梦中缓缓醒了过来。",
+                "zh-Hant": "聽到你的呼喚後，女孩從噩夢中緩緩醒了過來。"
+              },
+              "id": 14
+            },
+            {
+              "text": {
+                "de": "Mmm ... Ich ... Wo bin ich? Bin ich aufgewacht? Oder ist das wieder ein Traum ... Oh, hast du mich aufgeweckt?",
+                "en": "Mmm... I... Where am I? Am I awake? Or is this another dream... Oh, did you wake me up?",
+                "es": "Mmm... Yo... ¿Dónde estoy? ¿Estoy despierta? ¿O es esto otro sueño...? Ah, ¿me despertaste?",
+                "fr": "Hmm... Où suis-je ? Suis-je réveillée ? Ou est-ce un autre rêve... Oh, tu m'as réveillée ?",
+                "ja": "うぅ……わ、私は……目を覚ました？それとも、これも夢……？ああ、あなたが私を起こしてくださったのですね？",
+                "ko": "음... 제, 제가... 깨어났어요? 아니면 또 다른 꿈인가요... 아, 당신이 저를 깨우신 건가요?",
+                "th": "อืมม... ฉัน... ฉันอยู่ที่ไหนเนี่ย? ฉันตื่นอยู่ใช่ไหม? หรือว่านี่ก็เป็นอีกความฝัน... อ๋อ คุณปลุกฉันสินะ?",
+                "zh-Hans": "唔……我，我这是……我醒过来了？还是又一场梦……啊，是您将我唤醒的么？",
+                "zh-Hant": "唔……我，我這是……我醒過來了？還是又一場夢……啊，是您將我喚醒的嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es scheint, als hättest du einen Albtraum gehabt.",
+                    "en": "It seems like you had a nightmare.",
+                    "es": "Parece que tuviste una pesadilla.",
+                    "fr": "Tu as fait un cauchemar ?",
+                    "ja": "悪夢にうなされていたようだ。",
+                    "ko": "악몽을 꾼 것 같아요",
+                    "th": "ดูเหมือนคุณจะฝันร้ายนะ",
+                    "zh-Hans": "你似乎做噩梦了。",
+                    "zh-Hant": "你似乎做噩夢了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, das hatte ich ... Danke für deine Hilfe. Ich bin Claudia, eine reisende Künstlerin, die Inspirationen und Geschichten von Kunstwerken einfängt.",
+                "en": "Yes, I did... Thank you for your help. I'm Claudia, a traveling artist capturing inspirations and the history of artworks.",
+                "es": "Sí. Gracias por tu ayuda. Soy Claudia, una artista itinerante que captura inspiraciones y la historia de las obras de arte.",
+                "fr": "Oui, merci de ton aide... Enchantée, je suis Claudia, une artiste voyageuse qui capture des inspirations et l'histoire des œuvres d'art.",
+                "ja": "はい、私……起こしてくださってありがとうございます。私の名はクラウディア、今は旅をしながら、途中で得たインスピレーションや芸術品の歴史を記録している絵師です。",
+                "ko": "네, 맞아요... 도와주셔서 정말 감사해요. 저는 클라우디아라고 해요. 지금은 이곳저곳을 돌아다니며 영감과 예술품의 역사를 기록하는 여행 화가예요",
+                "th": "ใช่ค่ะ... ขอบคุณที่ช่วยนะ ฉันชื่อ Claudia เป็นศิลปินที่ออกเดินทางเพื่อค้นหาแรงบันดาลใจและเรียนรู้ความเป็นมาของงานศิลปะค่ะ",
+                "zh-Hans": "是的，我……非常感谢您的帮助，我名为克劳迪亚，目前是个正在四处记录灵感和艺术品历史的旅行画师。",
+                "zh-Hant": "是的，我……非常感謝您的幫助，我名為克勞迪亞，目前是正在四處記錄靈感和藝術品歷史的旅行畫師。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nachdem ich das Gemälde berührt hatte, bin ich eingeschlafen und hatte einen langen Albtraum. Es fühlte sich an, als wäre ich im Traum jemand anderes geworden ... Wie peinlich, dass du mich so gesehen hast.",
+                "en": "I fell asleep after touching the painting and had a long nightmare. It felt like I became someone else in the dream... How embarrassing for you to see me like that.",
+                "es": "Me quedé dormida después de tocar la pintura y tuve una larga pesadilla. Sentí que me convertía en otra persona en el sueño... Qué vergüenza que me vieras así.",
+                "fr": "Je me suis endormie après avoir touché ce tableau et j'ai fait un long cauchemar. J'avais l'impression de devenir quelqu'un d'autre dans le rêve... C'est gênant que tu me voies ainsi.",
+                "ja": "この絵に触れたら、いつの間にか眠りについて、悪夢に落ちてしまったのです。夢の中で、私はまるで別人になったかのような感じでした。お恥ずかしいところを……本当にすみません。",
+                "ko": "저는 이 그림을 만지던 중 잠이 들었고, 긴 악몽을 꾸었어요. 꿈속의 저는 다른 사람이 된 것 같았는데... 이렇게 우스꽝스런 모습을 보여드리게 되었네요",
+                "th": "ฉันเผลอหลับไปหลังจากแตะภาพวาด แล้วก็ฝันร้ายไปนานเลยล่ะ ตอนอยู่ในฝัน ฉันรู้สึกเหมือนตัวเองกลายเป็นคนอื่น... น่าอายจริงๆ ที่คุณต้องมาเห็นฉันในสภาพนั้น",
+                "zh-Hans": "我在接触这幅画的时候睡过去了，做了一场很长的噩梦。梦中我似乎变成了其他人，如此窘态……真是让您见笑了。",
+                "zh-Hant": "我在接觸這幅畫的時候睡過去了，做了一場很長的噩夢。夢中我似乎變成了其他人，如此窘態……真是讓您見笑了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, bist du mit Morph-Gemälden wie diesem vertraut?",
+                "en": "By the way, my foreign friend, are you familiar with morph paintings like this one?",
+                "es": "Por cierto, ¿sabes algo sobre este tipo de pintura Eco?",
+                "fr": "Au fait, {Male=mon ami étranger;Female=mon amie étrangère}, connais-tu les peintures transmutatrices comme celle-ci ?",
+                "ja": "そういえば、異邦からの旅のお方。このような音骸絵にはお詳しいでしょうか？",
+                "ko": "외국에서 오신 분이시죠...? 혹시 이런 에코 그림에 대해 아시는 게 있으신가요?",
+                "th": "ว่าแต่ เพื่อนจากแดนไกล คุณคุ้นเคยกับภาพวาดแปรสภาพพวกนี้บ้างไหม?",
+                "zh-Hans": "对了，不知这位异国来的朋友，你对这种声骸画是否有所了解呢？",
+                "zh-Hant": "對了，不知這位異國來的朋友，你對這種聲骸畫是否有所了解呢？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Gemälde, das mit einer anderen Dimension verbunden ist.",
+                    "en": "I know it's a painting that links to another dimension.",
+                    "es": "Sé que es una pintura que conecta con otra dimensión.",
+                    "fr": "Je sais que c'est une peinture qui se connecte à une autre dimension.",
+                    "ja": "{Male=特殊な空間に繋がる絵だな。;Female=特殊な空間に繋がる絵だね。}",
+                    "ko": "특수한 공간과 연결된 그림 같군요",
+                    "th": "ฉันรู้ว่ามันคือภาพวาดที่เชื่อมไปยังอีกมิติหนึ่ง",
+                    "zh-Hans": "可以连通特殊的空间的画。",
+                    "zh-Hant": "可以連通特殊空間的畫。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eine Tasche, die magische Werkzeuge aus einer anderen Dimension hervorzieht?",
+                    "en": "Is that a pocket that pulls out magical tools from another dimension?",
+                    "es": "¿Es eso un bolsillo para sacar herramientas mágicas de otra dimensión?",
+                    "fr": "Est-ce une poche qui sort des outils magiques d'une autre dimension ?",
+                    "ja": "不思議な道具が出る異次元ポケットかな？",
+                    "ko": "멋진 도구를 꺼낼 수 있는 다른 차원의 주머니 같군요",
+                    "th": "มันคือช่องเก็บของที่ดึงเอาเครื่องมือวิเศษจากอีกมิติออกมาได้ใช่มั้ย?",
+                    "zh-Hans": "能掏出妙妙工具的异次元口袋？",
+                    "zh-Hant": "能掏出妙妙工具的異次元口袋？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, du hast also einige der Geheimnisse entdeckt, die in diesen Gemälden verborgen sind.",
+                "en": "I see, you must have glimpsed some of the mysteries hidden within these paintings.",
+                "es": "Ya veo, debes haber vislumbrado algunos de los misterios ocultos dentro de estas pinturas.",
+                "fr": "Je vois, tu as dû entrevoir certains des mystères cachés dans ces peintures.",
+                "ja": "そうですか。あなたはこのような絵の秘密をすでにご存知なのですね。",
+                "ko": "그러시군요. 틀림없이 당신은 이미 이 그림 속의 신비감을 느끼셨나보군요",
+                "th": "อย่างนี้นี่เอง แสดงว่าคุณได้เห็นความลึกลับที่ซ่อนอยู่ในภาพวาดเหล่านี้บ้างแล้วสินะ",
+                "zh-Hans": "原来如此，那想必您一定是见识过某些画中的奥秘了。",
+                "zh-Hant": "原來如此，那想必您一定是見識過某些畫中的奧秘了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was? Das können sie? Kein Wunder, dass die ältere Linie so viele geheimnisvolle Schätze von mysteriöser Herkunft besitzt ...",
+                "en": "What? They can do that? No wonder the senior line possesses so many secret treasures of mysterious origin...",
+                "es": "¿Qué? ¿Pueden hacer eso? No es de extrañar que la familia principal posea tantos tesoros secretos de origen misterioso...",
+                "fr": "Quoi ? Ils peuvent faire ça ? Pas étonnant que le chef de ma famille possède tant de trésors secrets d'origine mystérieuse...",
+                "ja": "えっ？そうなんですか？どうりで宗家には出所不明の財宝がたくさんあるわけですね……",
+                "ko": "정말요? 그렇게 사용할 수도 있다니... 종가에 출처를 알 수 없는 비밀 재산이 왜 그렇게 많은지 이제 알게 되네요",
+                "th": "อะไรนะ? มันทำแบบนั้นได้ด้วยเหรอ? มิน่าล่ะ สายอาวุโสถึงได้มีของวิเศษลึกลับมากมายขนาดนี้...",
+                "zh-Hans": "诶？居然还能这样用么？难怪宗家有那么多来路不明的秘密财宝……",
+                "zh-Hant": "欸？居然還能這樣用嗎？難怪宗家有那麼多來路不明的秘密財寶……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer ... abgesehen von der Gefahr könnten die Erinnerungen, die ich in meinem Traum gesehen habe, mit dem Künstler dieses Gemäldes zusammenhängen.",
+                "en": "Anyway... despite the danger, the memories I glimpsed in my dream may be connected to the artist of this painting.",
+                "es": "De todos modos... a pesar del peligro, los recuerdos que vislumbré en mi sueño pueden estar conectados con el artista de esta pintura.",
+                "fr": "Quoi qu'il en soit... malgré le danger, les souvenirs que j'ai aperçus dans mon rêve peuvent être liés à l'artiste de cette peinture.",
+                "ja": "でも……恐ろしかったとは言え、恐らくさっき私が夢で見たあの記憶、絵の作者と何らかの関係があるのでしょうね。",
+                "ko": "그런데... 위험하긴 하지만 방금 꿈속에서 본 기억들은 아마도 그림의 창작자와 관련이 있을 거예요",
+                "th": "แต่จะว่าไป... ถ้าไม่นับเรื่องความอันตราย ความทรงจำที่ฉันเห็นในฝันอาจมีส่วนเชื่อมโยงกับศิลปินผู้วาดภาพนี้ก็ได้",
+                "zh-Hans": "不过……虽然很危险，但刚刚我在梦中见到的那些记忆，想来也许就和画的作者有关。",
+                "zh-Hant": "不過……雖然很危險，但我剛剛在夢中見到的那些記憶，想來也許就和畫的作者有關。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Leider kann ich mich an die Details des Traums nicht erinnern. Wenn ich nur noch einmal nachforschen könnte ... Aber da ich keine Resonatorin bin, kann ich das Wesen dieses Morph-Gemäldes nicht erfassen.",
+                "en": "Unfortunately, I can't recall the dream's details. If only I could investigate again... But since I'm not a Resonator, I can't grasp the essence of this morph painting.",
+                "es": "Desafortunadamente, no puedo recordar los detalles del sueño. Si tan solo pudiera investigar de nuevo... Pero como no soy una Resonadora, no puedo captar la esencia de esta pintura Eco.",
+                "fr": "Malheureusement, je ne me souviens pas des détails du rêve. Si seulement je pouvais enquêter à nouveau... Mais comme je ne suis pas une Résonatrice, je ne peux pas saisir l'essence de cette œuvre.",
+                "ja": "もう夢の詳しいことは覚えていません。でも、もう一度夢の中に入って調べることができれば……残念ながら、私は共鳴者ではありません。この音骸絵の本質を見抜くことは難しいでしょう。",
+                "ko": "꿈의 내용을 자세히 기억할 순 없지만, 다시 한 번 조사할 수 있다면... 아쉽게도 전 공명자가 아니어서 이 에코 그림의 본질을 느낄 수가 없어요",
+                "th": "น่าเสียดายที่ฉันจำรายละเอียดในฝันไม่ได้เลย ถ้าได้กลับไปสำรวจอีกก็คงดี... แต่เพราะฉันไม่ใช่เรโซเนเตอร์ เลยไม่อาจเข้าถึงแก่นแท้ของภาพวาดแปรสภาพนี้ได้",
+                "zh-Hans": "现在梦的细节已经无法回忆起了，但如果能再调查一遍的话……只可惜我并非是共鸣者，难以感受这声骸画的本质。",
+                "zh-Hant": "現在夢的細節已經無法回憶起了，但如果能再調查一遍的話……只可惜我並非是共鳴者，難以感受這聲骸畫的本質。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Könnte ich dir diese Aufgabe anvertrauen? Ich hoffe, du kannst die Geheimnisse des Gemäldes enthüllen und die Fragmente der vergangenen Erinnerungen, die es birgt, ans Licht bringen.",
+                "en": "Could I entrust this quest to you? I hope you can uncover the secrets hidden within the painting and reveal the fragments of past memories it holds.",
+                "es": "¿Podría pedirte un favor? Espero que puedas descubrir los secretos ocultos dentro de la pintura y revelar los fragmentos de recuerdos pasados que contiene.",
+                "fr": "Pourrais-je te confier cette quête ? J'espère que tu pourras découvrir les secrets cachés dans la peinture et révéler les fragments de souvenirs qu'elle contient.",
+                "ja": "そこでですが、あなたにお願いしてもいいでしょうか？絵の秘密を探っていただけませんか？過去の記憶のかけらに、いったい何が隠されているのかを調べてほしいのです。",
+                "ko": "한 번 부탁드려도 될까요? 저를 대신해 그림 속의 비밀, 그리고 그 과거 기억의 조각들 속에 무엇이 숨겨져 있는지 알아봐 주신다면 정말 감사할 거예요",
+                "th": "ฉันฝากฝังภารกิจนี้ให้คุณได้มั้ย? หวังว่าคุณจะเปิดเผยความลับที่ซ่อนอยู่ในภาพวาด และค้นพบเศษเสี้ยวความทรงจำในอดีตที่มันเก็บเอาไว้ได้นะ",
+                "zh-Hans": "不知可否委托您呢？我希望您代我调查一下画中的秘密，调查下在那些过去记忆的碎片中究竟藏着些什么。",
+                "zh-Hant": "不知可否委託您呢？我希望您代我調查一下畫中的秘密，調查一下那些過去記憶的碎片中究竟藏著些什麼。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlass es mir.",
+                    "en": "I'll consider it.",
+                    "es": "Lo consideraré.",
+                    "fr": "Je vais y réfléchir.",
+                    "ja": "少し考えさせて。",
+                    "ko": "생각해 볼게요",
+                    "th": "ฉันจะลองคิดดูนะ",
+                    "zh-Hans": "我可以考虑一下。",
+                    "zh-Hant": "我可以考慮一下。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke dir. Ich werde eine Belohnung für deine Hilfe vorbereiten. Ach, und nimm bitte dieses Amulett. Die Welt im Gemälde wird gefährlich sein und es sollte dir helfen.",
+                "en": "Thank you. I will prepare a reward for your help. Oh, and please take this talisman. The world inside the painting will be dangerous, and it should help you.",
+                "es": "Gracias. Prepararé una recompensa por tu ayuda. Ah, y por favor, toma este amuleto. El mundo dentro de la pintura será peligroso, y te servirá.",
+                "fr": "Merci. Je préparerai une récompense pour ton aide. Oh, prends cette amulette. Le monde à l'intérieur de la peinture sera dangereux, et elle devrait t'aider.",
+                "ja": "ありがとうございます。もし協力してくださるのなら、必ずそれ相応の報酬を用意しておきましょう……あっ、このお守りもどうか持っていってください。絵の中では、危険に遭遇するかもしれませんので、このお守りが必ずお役に立てるでしょう。",
+                "ko": "감사해요. 도와주신다면 그에 따른 보수도 드릴게요... 아, 참, 조사하러 가실 때 이 부적을 꼭 가지고 가주세요. 그림 속에서 위험에 직면할 수도 있는데, 이게 분명히 당신에게 도움이 될 거예요",
+                "th": "ขอบคุณมาก ฉันจะเตรียมรางวัลไว้ตอบแทนน้ำใจคุณนะคะ อ้อ แล้วก็รับเครื่องรางนี้ไปด้วยสิคะ โลกภายในภาพวาดต้องเต็มไปด้วยอันตรายแน่ สิ่งนี้น่าจะช่วยคุณได้",
+                "zh-Hans": "谢谢您，如果您愿意帮忙的话，我一定会为您准备相应的报酬……哦对了，如果前往调查请务必带上这个护身符，画中难免会遇见一些威胁，我相信它一定可以帮到您。",
+                "zh-Hant": "謝謝您，如果您願意幫忙的話，我一定會為您準備相應的報酬……哦對了，如果前往調查請務必帶著這個護身符，畫中難免會遇見一些威脅，我相信它一定可以幫到您。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist ein Geschenk meiner Vorfahren, das als Fragment des Leuchtfeuers gilt, das einst Menschen nach Ragunna führte.",
+                "en": "It is a gift from my ancestors, believed to be a fragment of the beacon that once guided people to Ragunna.",
+                "es": "Es un regalo de mis antepasados, se cree que es un fragmento del faro que una vez guió a la gente a Raguna.",
+                "fr": "C'est un cadeau de mes ancêtres et on m'a dit que c'est un fragment du Nexus qui guidait autrefois les gens vers Ragunna.",
+                "ja": "ファミリーのご先祖様からいただいたプレゼントです。かつて、人々をラグーナへと導いてくれた、信号塔のかけらだと言われているものです。",
+                "ko": "가문 어른들이 제게 주신 선물인데, 사람들을 라군나로 인도했던 비콘의 조각이라고 하더군요",
+                "th": "มันเป็นของที่ตกทอดมาจากบรรพบุรุษ เชื่อกันว่าเป็นเศษเสี้ยวของเสาสัญญาณที่เคยชี้ทางให้ผู้คนมายังรากูนน่า",
+                "zh-Hans": "这是家族的祖辈送给我的礼物，据说，也是曾经引导人们来到拉古那的信标碎片。",
+                "zh-Hant": "這是家族的長輩送給我的禮物，據說，也是曾經引導人們來到拉古那的信標碎片。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit seiner Hilfe wirst du, falls du dich im Gemälde verirrst, vom Licht des Hütenden geleitet.",
+                "en": "With its aid, should you lose your way within the painting, the light of the Sentinel will guide you.",
+                "es": "Con su ayuda, si pierdes tu camino dentro de la pintura, la luz del Centinela te guiará.",
+                "fr": "Si tu te perds dans la peinture, la lumière de la Sentinelle te guidera.",
+                "ja": "このお守りさえあれば、絵の世界で道に迷っても、歳主様の輝きが必ずやその道を照らしてくださるでしょう。",
+                "ko": "이게 있으면, 그림 속 세상에서 길을 잃더라도 수호신의 빛이 반드시 당신에게 나아갈 길을 알려 줄 거예요",
+                "th": "สิ่งนี้จะช่วยให้คุณไม่หลงทางในภาพวาด แสงแห่งเซนติเนลจะช่วยนำทางคุณ",
+                "zh-Hans": "有它帮忙的话，就算在画中的世界迷失方向，岁主的光辉也一定会为您指明道路。",
+                "zh-Hant": "有它幫忙的話，就算在畫中的世界迷失方向，歲主的光輝也一定會為您指明道路。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Claudia",
+        "en": "Talk to Claudia",
+        "es": "Habla con Claudia.",
+        "fr": "Parler à Claudia",
+        "ja": "クラウディアと会話する",
+        "ko": "클라우디아와 대화",
+        "th": "คุยกับคลอเดีย",
+        "zh-Hans": "与克劳迪亚交谈",
+        "zh-Hant": "與克勞迪亞交談"
+      },
+      "entities": [
+        {
+          "entityId": 167900022,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC1",
+          "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+          "areaId": 20,
+          "position": {
+            "x": 784899,
+            "y": 632891,
+            "z": 6944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -103
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 167900024,
+          "mapId": 8,
+          "blueprintType": "Quest001",
+          "name": "TsEntity_任务_空实体for睡着克劳迪亚",
+          "areaId": 20,
+          "position": {
+            "x": 784899,
+            "y": 632891,
+            "z": 6944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.0联机副本",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Claudia schläft vor dem Bild, die Stirn gerunzelt, Schweißperlen laufen ihr Gesicht hinunter. Sie scheint in einem Albtraum gefangen zu sein.",
+                "en": "Claudia sleeps before the painting, her brow furrowed, beads of sweat trailing down her face. She seems ensnared in a nightmare.",
+                "es": "Claudia está durmiendo frente a la pintura, con el ceño fruncido, gotas de sudor recorriendo su rostro. Parece atrapada en una pesadilla.",
+                "fr": "Claudia dort devant le tableau, le front plissé. La sueur coule sur son visage. Elle semble prise dans un cauchemar.",
+                "ja": "クラウディアが絵の前に座って居眠りをしている。その眉はきつくひそめられ、汗は止まることを知らない。どうやらひどくうなされているようだ。",
+                "ko": "클라우디아가 그림 앞에 앉아 깊은 잠에 빠져 있다. 그녀는 찡그린 표정으로 식은땀을 흘리고 있다. 그 모습은 마치 악몽을 꾸고 있는 것 같다",
+                "th": "Claudia หลับอยู่หน้าภาพวาด คิ้วของเธอขมวดมุ่น เหงื่อซึมที่หน้าผาก เธอดูเหมือนติดอยู่ในฝันร้าย",
+                "zh-Hans": "克劳迪亚坐在画前沉睡着，眉头紧缩，冷汗直冒。她似乎正处于一场噩梦之中。",
+                "zh-Hant": "克勞迪亞坐在畫前沉睡著，眉頭緊皺，冷汗直冒。她似乎正處於一場噩夢之中。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Sie sanft wecken.)",
+                    "en": "(Gently wake her.)",
+                    "es": "(Suavemente despiértala.)",
+                    "fr": "(Essayer de la réveiller gentiment.)",
+                    "ja": "（そっと起こしてみる。）",
+                    "ko": "(살며시 그녀를 깨운다）",
+                    "th": "(ค่อยๆ ปลุกเธอ)",
+                    "zh-Hans": "（轻轻唤醒她。）",
+                    "zh-Hant": "（輕輕喚醒她。）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "(Nachdem sie deinen Ruf gehört hat, wacht Claudia aus ihrem Albtraum auf.)",
+                "en": "After hearing your call, Claudia wakes from her nightmare.",
+                "es": "(Después de escuchar tu llamada, Claudia despierta de su pesadilla).",
+                "fr": "(Après avoir entendu votre appel, Claudia se réveille de son cauchemar.)",
+                "ja": "あなたの呼びかけに、クラウディアはゆっくりと悪夢から目を覚ました。",
+                "ko": "당신의 부름을 들은 클라우디아는 악몽에서 깨어났다",
+                "th": "หลังจากได้ยินเสียงเรียกของคุณ Claudia ก็ตื่นจากฝันร้าย",
+                "zh-Hans": "听到你的呼唤后，克劳迪亚从噩梦中缓缓醒了过来。",
+                "zh-Hant": "聽到你的呼喚後，克勞迪亞從噩夢中緩緩醒了過來。"
+              },
+              "id": 14
+            },
+            {
+              "text": {
+                "de": "Mmm ... Ich ... Wo bin ich? Bin ich aufgewacht? Oder ist das ein weiterer Traum ... Ach, du bist es, {PlayerName}. Hast du mich aufgeweckt?",
+                "en": "Mmm... I... Where am I? Am I awake? Or is this another dream... Oh, it's you, {PlayerName}. Did you wake me up?",
+                "es": "Mmm... ¿Dónde estoy? ¿Estoy despierta? ¿O es esto otro sueño...? Ah, eres tú, {PlayerName}. ¿Me despertaste?",
+                "fr": "Mmm... Moi... Où suis-je ? Suis-je éveillée ? Ou est-ce un autre rêve... Oh, c'est toi, {PlayerName}. Tu m'as réveillée ?",
+                "ja": "うぅ……わ、私は……目を覚ました？それとも、これも夢……？ああ、{PlayerName}さん、あなたが私を起こしてくださったのですね？",
+                "ko": "음... 제, 제가... 깨어났어요? 아니면 또 다른 꿈인가요... 아, {PlayerName}, 당신이 저를 도와주셨나요?",
+                "th": "อืมม... ฉัน... ฉันอยู่ที่ไหนเนี่ย? ฉันตื่นอยู่ใช่ไหม? หรือว่านี่ก็เป็นอีกความฝัน... อ๋อ คุณนั่นเอง {PlayerName} คุณปลุกฉันสินะ?",
+                "zh-Hans": "唔……我，我这是……我醒过来了？还是又一场梦……啊，{PlayerName}，是你帮了我么。",
+                "zh-Hant": "唔……我，我這是……我醒過來了？還是又一場夢……啊，{PlayerName}，是你幫了我嗎。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es scheint, als hättest du einen Alptraum gehabt.",
+                    "en": "It seems like you had a nightmare.",
+                    "es": "Parece que tuviste una pesadilla.",
+                    "fr": "Tu as fait un cauchemar.",
+                    "ja": "悪夢にうなされていたようだ。",
+                    "ko": "악몽을 꾼 것 같아요",
+                    "th": "ดูเหมือนคุณจะฝันร้ายนะ",
+                    "zh-Hans": "你似乎做噩梦了。",
+                    "zh-Hant": "你似乎做噩夢了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich ... Ich bin eingeschlafen, nachdem ich das Bild berührt habe und hatte einen langen Albtraum. Es fühlte sich an, als wäre ich im Traum jemand anders geworden. Warte, habe ich in meinem Traum gesprochen?",
+                "en": "I... I fell asleep after touching the painting and had a long nightmare. It felt like I became someone else in the dream. Wait, did I speak in my dream?",
+                "es": "Yo... Me dormí después de tocar la pintura y tuve una larga pesadilla. Sentí que me convertí en otra persona en el sueño. Espera, ¿hablé en mi sueño?",
+                "fr": "Je... Je me suis endormie après avoir touché le tableau et j'ai fait un long cauchemar. J'avais l'impression de devenir quelqu'un d'autre dans le rêve. Attends, ai-je parlé dans mon rêve ?",
+                "ja": "わ、私……この絵に触れたら、いつの間にか眠りについて、悪夢に落ちてしまったのです。夢の中で、私はまるで別人になったかのような感じでした。ちょっと待って、私、寝言言ってませんでした……？",
+                "ko": "저는... 이 그림을 만지던 중 잠이 들었고, 긴 악몽을 꾸었어요. 꿈속의 저는 다른 사람이 된 것 같았는데... 잠깐, 제가 잠꼬대를 했나요?",
+                "th": "ฉัน... ฉันเผลอหลับไปหลังจากแตะภาพวาด แล้วก็ฝันร้ายไปนานเลยล่ะ ตอนอยู่ในฝัน ฉันรู้สึกเหมือนตัวเองกลายเป็นคนอื่น เดี๋ยวนะ เมื่อกี้ฉันพูดในฝันเหรอ?",
+                "zh-Hans": "我……我在接触这幅画的时候睡过去了，做了一场很长的噩梦。梦中我似乎变成了其他人，等下，我是不是说梦话了……",
+                "zh-Hant": "我……我在接觸這幅畫的時候睡過去了，做了一場很長的噩夢。夢中我似乎變成了其他人，等一下，我是不是說夢話了……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich habe nichts gehört.",
+                    "en": "I didn't hear anything.",
+                    "es": "No escuché nada.",
+                    "fr": "Je n'ai rien entendu.",
+                    "ja": "何も聞こえなかった。",
+                    "ko": "아무것도 못 들었어요",
+                    "th": "ฉันไม่ได้ยินอะไรเลย",
+                    "zh-Hans": "我什么都没听见。",
+                    "zh-Hant": "我什麼都沒聽見。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "... Hust. Ich hoffe, ich habe mich nicht zum Narren gemacht.",
+                "en": "...Ahem. I hope I haven't made a fool of myself.",
+                "es": "...Ejem. Espero no haber hecho el ridículo.",
+                "fr": "...Ahem. J'espère que je ne me suis pas ridiculisée.",
+                "ja": "……コホン。お恥ずかしいところをお見せしました。",
+                "ko": "...정말 부끄럽네요",
+                "th": "...อะแฮ่ม หวังว่าฉันคงไม่ได้ทำตัวเองขายหน้านะ",
+                "zh-Hans": "……咳咳。让你见笑了。",
+                "zh-Hant": "……讓你見笑了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, {PlayerName}, kennst du solche Morph-Gemälde wie dieses hier?",
+                "en": "By the way, {PlayerName}, are you familiar with morph paintings like this one?",
+                "es": "Por cierto, ¿sabes algo sobre este tipo de pintura Eco?",
+                "fr": "Au fait, {PlayerName}, connais-tu les peintures transmutatrices comme celle-ci ?",
+                "ja": "そういえば、{PlayerName}さん。このような音骸絵にはお詳しいでしょうか？",
+                "ko": "참, {PlayerName}, 혹시 이런 에코 그림에 대해 아시는 게 있으신가요?",
+                "th": "ว่าแต่ {PlayerName} คุณคุ้นเคยกับภาพวาดแปรสภาพพวกนี้บ้างไหม?",
+                "zh-Hans": "说起来{PlayerName}对这种声骸画是否有所了解呢？",
+                "zh-Hant": "說起來{PlayerName}對這種聲骸畫是否有所了解呢？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Gemälde, das mit einer anderen Dimension verbunden ist.",
+                    "en": "I know it's a painting that links to another dimension.",
+                    "es": "Sé que es una pintura que se conecta a otra dimensión.",
+                    "fr": "Je sais que c'est une peinture qui se connecte à une autre dimension.",
+                    "ja": "{Male=特殊な空間に繋がる絵だな。;Female=特殊な空間に繋がる絵だね。}",
+                    "ko": "특수한 공간과 연결된 그림 같군요",
+                    "th": "ฉันรู้ว่ามันคือภาพวาดที่เชื่อมไปยังอีกมิติหนึ่ง",
+                    "zh-Hans": "可以连通特殊的空间的画。",
+                    "zh-Hant": "可以連通特殊空間的畫。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eine Tasche, die magische Werkzeuge aus einer anderen Dimension hervorzieht?",
+                    "en": "Is that a pocket that pulls out magical tools from another dimension?",
+                    "es": "¿Es eso un bolsillo para sacar herramientas mágicas de otra dimensión?",
+                    "fr": "Est-ce une poche qui sort des outils magiques d'une autre dimension ?",
+                    "ja": "不思議な道具が出る異次元ポケットかな？",
+                    "ko": "멋진 도구를 꺼낼 수 있는 다른 차원의 주머니 같군요",
+                    "th": "มันคือช่องเก็บของที่ดึงเอาเครื่องมือวิเศษจากอีกมิติออกมาได้ใช่มั้ย?",
+                    "zh-Hans": "能掏出妙妙工具的异次元口袋？",
+                    "zh-Hant": "能掏出妙妙工具的異次元口袋？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, du hast also einige der Geheimnisse entdeckt, die in diesen Gemälden verborgen sind.",
+                "en": "I see, you must have glimpsed some of the mysteries hidden within these paintings.",
+                "es": "Ya veo, debes haber vislumbrado algunos de los misterios ocultos dentro de estas pinturas.",
+                "fr": "Je vois, tu as dû entrevoir certains des mystères cachés dans ces tableaux.",
+                "ja": "そうですか。あなたはこのような絵の秘密をすでにご存知なのですね。",
+                "ko": "그러시군요. 틀림없이 당신은 이미 이 그림 속의 신비감을 느끼셨나보군요",
+                "th": "อย่างนี้นี่เอง แสดงว่าคุณได้เห็นความลึกลับที่ซ่อนอยู่ในภาพวาดเหล่านี้บ้างแล้วสินะ",
+                "zh-Hans": "原来如此，那想必你一定见识过某些画中的奥秘了。",
+                "zh-Hant": "原來如此，那想必你一定見識過某些畫中的奧秘了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was? Sie können das? Kein Wunder, dass die ältere Linie so viele geheime Schätze mysteriösen Ursprungs besitzt ...",
+                "en": "What? They can do that? No wonder the senior line possesses so many secret treasures of mysterious origin...",
+                "es": "¿Qué? ¿Pueden hacer eso? No es de extrañar que la familia principal posea tantos tesoros secretos de origen misterioso...",
+                "fr": "Quoi ? Ils peuvent faire ça ? Pas étonnant que le chef de ma famille possède tant de trésors secrets d'origine mystérieuse...",
+                "ja": "えっ？そうなんですか？どうりで宗家には出所不明の財宝がたくさんあるわけですね……",
+                "ko": "정말요? 그렇게 사용할 수도 있다니... 종가에 출처를 알 수 없는 비밀 재산이 왜 그렇게 많은지 이제 알게 되네요",
+                "th": "อะไรนะ? มันทำแบบนั้นได้ด้วยเหรอ? มิน่าล่ะ สายอาวุโสถึงได้มีของวิเศษลึกลับมากมายขนาดนี้...",
+                "zh-Hans": "诶？居然还能这样用么？难怪宗家有那么多来路不明的秘密财宝……",
+                "zh-Hant": "欸？居然還能這樣用嗎？難怪宗家有那麼多來路不明的秘密財寶……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer ... abgesehen von der Gefahr könnten die Erinnerungen, die ich in meinem Traum gesehen habe, mit dem Künstler dieses Gemäldes zusammenhängen.",
+                "en": "Anyway... despite the danger, the memories I glimpsed in my dream may be connected to the artist of this painting.",
+                "es": "De todos modos... a pesar del peligro, los recuerdos que vislumbré en mi sueño pueden estar conectados con el artista de esta pintura.",
+                "fr": "Quoi qu'il en soit... malgré le danger, les souvenirs que j'ai aperçus dans mon rêve peuvent être liés à l'artiste de cette peinture.",
+                "ja": "でも……恐ろしかったとは言え、恐らくさっき私が夢で見たあの記憶、絵の作者と何らかの関係があるのでしょうね。",
+                "ko": "그런데... 위험하긴 하지만 방금 꿈속에서 본 기억들은 아마도 그림의 창작자와 관련이 있을 거예요",
+                "th": "แต่จะว่าไป... ถ้าไม่นับเรื่องความอันตราย ความทรงจำที่ฉันเห็นในฝันอาจมีส่วนเชื่อมโยงกับศิลปินผู้วาดภาพนี้ก็ได้",
+                "zh-Hans": "不过……虽然很危险，但刚刚我在梦中见到的那些记忆，想来也许就和画的作者有关。",
+                "zh-Hant": "不過……雖然很危險，但剛剛我在夢中見到的那些記憶，想來也許就和畫的作者有關。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Leider kann ich mich nicht an die Details des Traums erinnern. Wenn ich nur noch einmal nachforschen könnte ...",
+                "en": "Unfortunately, I can't recall the dream's details. If only I could investigate again...",
+                "es": "Desafortunadamente, no puedo recordar los detalles del sueño. Si tan solo pudiera investigar de nuevo...",
+                "fr": "Malheureusement, je ne me souviens pas des détails du rêve. Si seulement je pouvais enquêter à nouveau...",
+                "ja": "もう夢の詳しいことは覚えていません。でも、もう一度夢の中に入って調べることができれば……",
+                "ko": "꿈의 내용을 자세히 기억할 순 없지만, 다시 한 번 조사할 수 있다면...",
+                "th": "น่าเสียดายที่ฉันจำรายละเอียดในฝันไม่ได้เลย ถ้าได้กลับไปสำรวจอีกก็คงดี...",
+                "zh-Hans": "现在梦的细节已经无法回忆起了，但如果能再调查一遍的话……",
+                "zh-Hant": "現在夢的細節已經無法回憶起了，但如果能再調查一遍的話……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, wäre es möglich, dass du für mich die Geheimnisse in dem Gemälde untersuchst, {PlayerName}? Ich möchte herausfinden, was in diesen vergangenen Erinnerungen verborgen ist.",
+                "en": "By the way, would it be possible for you to investigate the secrets within the painting for me, {PlayerName}? I want to uncover what's hidden within those past memories.",
+                "es": "Por cierto, ¿sería posible que investigaras los secretos dentro de la pintura por mí, {PlayerName}? Quiero descubrir lo que está oculto en esos recuerdos del pasado.",
+                "fr": "Au fait, pourrais-tu enquêter sur les secrets du tableau à ma place, {PlayerName} ? Je veux découvrir ce qui est caché dans ces souvenirs passés.",
+                "ja": "そこでですが、{PlayerName}さんにお願いしてもいいでしょうか？絵の秘密を探っていただけませんか？過去の記憶のかけらに、いったい何が隠されているのかを調べてほしいのです。",
+                "ko": "참, {PlayerName}, 혹시 그림 속의 비밀을 조사해 주실 수 있을까요? 그 과거 기억의 조각들 속에 무엇이 숨겨져 있는지 조사해 보고 싶어요",
+                "th": "ว่าแต่ คุณพอจะช่วยสืบหาความลับที่ซ่อนอยู่ในภาพวาดให้ฉันได้ไหมคะ {PlayerName}? ฉันอยากรู้ว่ามีอะไรซ่อนอยู่ในความทรงจำจากอดีตเหล่านั้น",
+                "zh-Hans": "对了，不知道{PlayerName}是否方便代我调查一下画中的秘密呢？我想调查下在那些过去记忆的碎片中究竟藏着些什么。",
+                "zh-Hant": "對了，不知道{PlayerName}是否方便代我調查一下畫中的秘密呢？我想調查一下那些過去記憶的碎片中究竟藏著些什麼。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlass es mir.",
+                    "en": "I'll consider it.",
+                    "es": "Lo consideraré.",
+                    "fr": "Je vais y réfléchir.",
+                    "ja": "少し考えさせて。",
+                    "ko": "생각해 볼게요",
+                    "th": "ฉันจะลองคิดดูนะ",
+                    "zh-Hans": "我可以考虑一下。",
+                    "zh-Hant": "我可以考慮一下。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke dir. Ich werde eine angemessene Belohnung für deine Hilfe vorbereiten. Und nimm bitte dieses Amulett. Die Welt im Gemälde wird gefährlich sein, und es sollte dir helfen.",
+                "en": "Thank you. I'll prepare a proper reward for your help. And please take this talisman. The world inside the painting will be dangerous, and it should help you.",
+                "es": "Gracias. Prepararé una recompensa por tu ayuda. Ah, y por favor, toma este amuleto. El mundo dentro de la pintura será peligroso, y te servirá.",
+                "fr": "Merci. Je préparerai une récompense appropriée pour ton aide. Et s'il te plaît, prends cette amulette. Le monde à l'intérieur de la peinture sera dangereux, elle devrait t'aider.",
+                "ja": "もちろん、それに相応しい報酬を用意しておきますので。あっ、このお守りもどうか持っていってください。絵の中では、危険に遭遇するかもしれませんので、このお守りが必ずお役に立てるでしょう。",
+                "ko": "물론 그에 따른 보수도 드릴게요. 아, 참, 조사하러 가실 때 이 부적을 꼭 가지고 가주세요. 그림 속에서 위험에 직면할 수도 있는데, 이게 분명히 당신에게 도움이 될 거예요",
+                "th": "ขอบคุณมาก ฉันจะเตรียมรางวัลที่เหมาะสมไว้ตอบแทนน้ำใจคุณนะคะ แล้วก็รับเครื่องรางนี้ไปด้วยสิคะ โลกภายในภาพวาดต้องเต็มไปด้วยอันตรายแน่ สิ่งนี้น่าจะช่วยคุณได้",
+                "zh-Hans": "我当然也会准备相应的报酬的。对了，如果前往调查请带上这个护身符吧，画中难免会遇见一些威胁，它一定可以帮到你。",
+                "zh-Hant": "我當然也會準備相應的報酬。對了，如果前往調查請帶著這個護身符吧，畫中難免會遇見一些威脅，它一定可以幫到你。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist ein Geschenk meiner Vorfahren, das man glaubt, ein Fragment des Leuchtfeuers zu sein, das die Menschen einst nach Ragunna führte.",
+                "en": "It is a gift from my ancestors, believed to be a fragment of the beacon that once guided people to Ragunna.",
+                "es": "Es un regalo de mis ancestros, creído ser un fragmento del faro que una vez guió a las personas a Raguna.",
+                "fr": "C'est un cadeau de mes ancêtres et on m'a dit que c'est un fragment du Nexus qui guidait autrefois les gens vers Ragunna.",
+                "ja": "ファミリーのご先祖様からいただいたプレゼントです。かつて、人々をラグーナへと導いてくれた、信号塔のかけらだと言われているものです。",
+                "ko": "가문 어른들이 제게 주신 선물인데, 사람들을 라군나로 인도했던 비콘의 조각이라고 하더군요",
+                "th": "มันเป็นของที่ตกทอดมาจากบรรพบุรุษ เชื่อกันว่าเป็นเศษเสี้ยวของเสาสัญญาณที่เคยชี้ทางให้ผู้คนมายังรากูนน่า",
+                "zh-Hans": "这是家族的祖辈送给我的礼物，据说，也是曾经引导人们来到拉古那的信标碎片。",
+                "zh-Hant": "這是家族的長輩送給我的禮物，據說，也是曾經引導人們來到拉古那的信標碎片。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit seiner Hilfe, falls du deinen Weg im Gemälde verlierst, wird das Licht des Hütenden dich leiten, {PlayerName}.",
+                "en": "With its aid, should you lose your way within the painting, the light of the Sentinel will guide you, {PlayerName}.",
+                "es": "Con su ayuda, si pierdes el camino dentro de la pintura, la luz del Centinela te guiará, {PlayerName}.",
+                "fr": "Si tu te perds dans la peinture, la lumière de la Sentinelle te guidera, {PlayerName}.",
+                "ja": "このお守りさえあれば、絵の世界で道に迷っても、歳主様の輝きが必ずやその道を照らしてくださるでしょう。",
+                "ko": "이게 있으면, 그림 속 세상에서 길을 잃더라도 수호신의 빛이 반드시 당신에게 나아갈 길을 알려 줄 거예요",
+                "th": "สิ่งนี้จะช่วยให้คุณไม่หลงทางในภาพวาด แสงแห่งเซนติเนลจะช่วยนำทางคุณ {PlayerName}",
+                "zh-Hans": "有它帮忙的话，就算在画中的世界迷失方向，岁主的光辉也会为{PlayerName}指明道路的。",
+                "zh-Hant": "有它幫忙的話，就算在畫中的世界迷失方向，歲主的光輝也會為{PlayerName}指明道路的。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Claudia",
+        "en": "Talk to Claudia",
+        "es": "Habla con Claudia.",
+        "fr": "Parler à Claudia",
+        "ja": "クラウディアと会話する",
+        "ko": "클라우디아와 대화",
+        "th": "คุยกับคลอเดีย",
+        "zh-Hans": "与克劳迪亚交谈",
+        "zh-Hant": "與克勞迪亞交談"
+      },
+      "entities": [
+        {
+          "entityId": 167900022,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC1",
+          "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+          "areaId": 20,
+          "position": {
+            "x": 784899,
+            "y": 632891,
+            "z": 6944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -103
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 167900024,
+          "mapId": 8,
+          "blueprintType": "Quest001",
+          "name": "TsEntity_任务_空实体for睡着克劳迪亚",
+          "areaId": 20,
+          "position": {
+            "x": 784899,
+            "y": 632891,
+            "z": 6944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.0联机副本",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein fein gekleidetes Mädchen schläft vor dem Gemälde, ihre Stirn gerunzelt, Schweißperlen laufen ihr Gesicht hinunter. Sie scheint in einem Albtraum gefangen zu sein.",
+                "en": "A finely dressed girl sleeps before the painting, her brow furrowed, beads of sweat trailing down her face. She seems ensnared in a nightmare.",
+                "es": "Una chica finamente vestida duerme frente a la pintura, con el ceño fruncido, gotas de sudor recorriendo su rostro. Parece atrapada en una pesadilla.",
+                "fr": "Une fille bien habillée dort devant le tableau, les sourcils froncés. La sueur coule sur son visage. Il paraît qu'elle est piégée par un cauchemar.",
+                "ja": "きれいな身なりをした女の子が絵の前に座って居眠りをしている。その眉はきつくひそめられ、汗は止まることを知らない。どうやらひどくうなされているようだ。",
+                "ko": "잘 차려입은 소녀가 그림 앞에 앉아 깊은 잠에 빠져 있다. 그녀는 찡그린 표정으로 식은땀을 흘리고 있다. 그 모습은 마치 악몽을 꾸고 있는 것 같다",
+                "th": "หญิงสาวแต่งกายงดงามหลับอยู่หน้าภาพวาด คิ้วของเธอขมวดมุ่น เหงื่อซึมที่หน้าผาก เธอดูเหมือนติดอยู่ในฝันร้าย",
+                "zh-Hans": "一个衣着精致的女孩坐在画前沉睡着，眉头紧缩，冷汗直冒。她似乎正处于一场噩梦之中。",
+                "zh-Hant": "一個衣著精緻的女孩坐在畫前沉睡著，眉頭緊皺，冷汗直冒。她似乎正處於一場噩夢之中。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Sie sanft wecken.)",
+                    "en": "(Gently wake her.)",
+                    "es": "(Suavemente despiértala.)",
+                    "fr": "(Essayer de la réveiller gentiment.)",
+                    "ja": "（そっと起こしてみる。）",
+                    "ko": "(살며시 그녀를 깨운다）",
+                    "th": "(ค่อยๆ ปลุกเธอ)",
+                    "zh-Hans": "（轻轻唤醒她。）",
+                    "zh-Hant": "（輕輕喚醒她。）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "(Nachdem sie deinen Ruf gehört hat, wacht das Mädchen aus ihrem Albtraum auf.)",
+                "en": "After hearing your call, the girl wakes from her nightmare.",
+                "es": "(Después de escuchar tu llamada, la chica despierta de su pesadilla.)",
+                "fr": "(Après avoir entendu votre appel, la fille se réveille de son cauchemar.)",
+                "ja": "あなたの呼びかけに、女の子はゆっくりと悪夢から目を覚ました。",
+                "ko": "당신의 부름을 들은 소녀는 악몽에서 깨어났다",
+                "th": "หลังจากได้ยินเสียงเรียกของคุณ หญิงสาวก็ตื่นจากฝันร้าย",
+                "zh-Hans": "听到你的呼唤后，女孩从噩梦中缓缓醒了过来。",
+                "zh-Hant": "聽到你的呼喚後，女孩從噩夢中緩緩醒了過來。"
+              },
+              "id": 14
+            },
+            {
+              "text": {
+                "de": "Mmm ... Ich ... Wo bin ich? Bin ich aufgewacht? Oder ist das wieder ein Traum ... Oh, hast du mich aufgeweckt?",
+                "en": "Mmm... I... Where am I? Am I awake? Or is this another dream... Oh, did you wake me up?",
+                "es": "Mmm... Yo... ¿Dónde estoy? ¿Estoy despierta? ¿O es esto otro sueño...? Ah, ¿me despertaste?",
+                "fr": "Hmm... Où suis-je ? Suis-je réveillée ? Ou est-ce un autre rêve... Oh, tu m'as réveillée ?",
+                "ja": "うぅ……わ、私は……目を覚ました？それとも、これも夢……？ああ、あなたが私を起こしてくださったのですね？",
+                "ko": "음... 제, 제가... 깨어났어요? 아니면 또 다른 꿈인가요... 아, 당신이 저를 깨우신 건가요?",
+                "th": "อืมม... ฉัน... ฉันอยู่ที่ไหนเนี่ย? ฉันตื่นอยู่ใช่ไหม? หรือว่านี่ก็เป็นอีกความฝัน... อ๋อ คุณปลุกฉันสินะ?",
+                "zh-Hans": "唔……我，我这是……我醒过来了？还是又一场梦……啊，是您将我唤醒的么？",
+                "zh-Hant": "唔……我，我這是……我醒過來了？還是又一場夢……啊，是您將我喚醒的嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es scheint, als hättest du einen Albtraum gehabt.",
+                    "en": "It seems like you had a nightmare.",
+                    "es": "Parece que tuviste una pesadilla.",
+                    "fr": "Tu as fait un cauchemar ?",
+                    "ja": "悪夢にうなされていたようだ。",
+                    "ko": "악몽을 꾼 것 같아요",
+                    "th": "ดูเหมือนคุณจะฝันร้ายนะ",
+                    "zh-Hans": "你似乎做噩梦了。",
+                    "zh-Hant": "你似乎做噩夢了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, das hatte ich ... Danke für deine Hilfe. Ich bin Claudia, eine reisende Künstlerin, die Inspirationen und Geschichten von Kunstwerken einfängt.",
+                "en": "Yes, I did... Thank you for your help. I'm Claudia, a traveling artist capturing inspirations and the history of artworks.",
+                "es": "Sí. Gracias por tu ayuda. Soy Claudia, una artista itinerante que captura inspiraciones y la historia de las obras de arte.",
+                "fr": "Oui, merci de ton aide... Enchantée, je suis Claudia, une artiste voyageuse qui capture des inspirations et l'histoire des œuvres d'art.",
+                "ja": "はい、私……起こしてくださってありがとうございます。私の名はクラウディア、今は旅をしながら、途中で得たインスピレーションや芸術品の歴史を記録している絵師です。",
+                "ko": "네, 맞아요... 도와주셔서 정말 감사해요. 저는 클라우디아라고 해요. 지금은 이곳저곳을 돌아다니며 영감과 예술품의 역사를 기록하는 여행 화가예요",
+                "th": "ใช่ค่ะ... ขอบคุณที่ช่วยนะ ฉันชื่อ Claudia เป็นศิลปินที่ออกเดินทางเพื่อค้นหาแรงบันดาลใจและเรียนรู้ความเป็นมาของงานศิลปะค่ะ",
+                "zh-Hans": "是的，我……非常感谢您的帮助，我名为克劳迪亚，目前是个正在四处记录灵感和艺术品历史的旅行画师。",
+                "zh-Hant": "是的，我……非常感謝您的幫助，我名為克勞迪亞，目前是正在四處記錄靈感和藝術品歷史的旅行畫師。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nachdem ich das Gemälde berührt hatte, bin ich eingeschlafen und hatte einen langen Albtraum. Es fühlte sich an, als wäre ich im Traum jemand anderes geworden ... Wie peinlich, dass du mich so gesehen hast.",
+                "en": "I fell asleep after touching the painting and had a long nightmare. It felt like I became someone else in the dream... How embarrassing for you to see me like that.",
+                "es": "Me quedé dormida después de tocar la pintura y tuve una larga pesadilla. Sentí que me convertía en otra persona en el sueño... Qué vergüenza que me vieras así.",
+                "fr": "Je me suis endormie après avoir touché ce tableau et j'ai fait un long cauchemar. J'avais l'impression de devenir quelqu'un d'autre dans le rêve... C'est gênant que tu me voies ainsi.",
+                "ja": "この絵に触れたら、いつの間にか眠りについて、悪夢に落ちてしまったのです。夢の中で、私はまるで別人になったかのような感じでした。お恥ずかしいところを……本当にすみません。",
+                "ko": "저는 이 그림을 만지던 중 잠이 들었고, 긴 악몽을 꾸었어요. 꿈속의 저는 다른 사람이 된 것 같았는데... 이렇게 우스꽝스런 모습을 보여드리게 되었네요",
+                "th": "ฉันเผลอหลับไปหลังจากแตะภาพวาด แล้วก็ฝันร้ายไปนานเลยล่ะ ตอนอยู่ในฝัน ฉันรู้สึกเหมือนตัวเองกลายเป็นคนอื่น... น่าอายจริงๆ ที่คุณต้องมาเห็นฉันในสภาพนั้น",
+                "zh-Hans": "我在接触这幅画的时候睡过去了，做了一场很长的噩梦。梦中我似乎变成了其他人，如此窘态……真是让您见笑了。",
+                "zh-Hant": "我在接觸這幅畫的時候睡過去了，做了一場很長的噩夢。夢中我似乎變成了其他人，如此窘態……真是讓您見笑了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, bist du mit Morph-Gemälden wie diesem vertraut?",
+                "en": "By the way, my foreign friend, are you familiar with morph paintings like this one?",
+                "es": "Por cierto, ¿sabes algo sobre este tipo de pintura Eco?",
+                "fr": "Au fait, {Male=mon ami étranger;Female=mon amie étrangère}, connais-tu les peintures transmutatrices comme celle-ci ?",
+                "ja": "そういえば、異邦からの旅のお方。このような音骸絵にはお詳しいでしょうか？",
+                "ko": "외국에서 오신 분이시죠...? 혹시 이런 에코 그림에 대해 아시는 게 있으신가요?",
+                "th": "ว่าแต่ เพื่อนจากแดนไกล คุณคุ้นเคยกับภาพวาดแปรสภาพพวกนี้บ้างไหม?",
+                "zh-Hans": "对了，不知这位异国来的朋友，你对这种声骸画是否有所了解呢？",
+                "zh-Hant": "對了，不知這位異國來的朋友，你對這種聲骸畫是否有所了解呢？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Gemälde, das mit einer anderen Dimension verbunden ist.",
+                    "en": "I know it's a painting that links to another dimension.",
+                    "es": "Sé que es una pintura que conecta con otra dimensión.",
+                    "fr": "Je sais que c'est une peinture qui se connecte à une autre dimension.",
+                    "ja": "{Male=特殊な空間に繋がる絵だな。;Female=特殊な空間に繋がる絵だね。}",
+                    "ko": "특수한 공간과 연결된 그림 같군요",
+                    "th": "ฉันรู้ว่ามันคือภาพวาดที่เชื่อมไปยังอีกมิติหนึ่ง",
+                    "zh-Hans": "可以连通特殊的空间的画。",
+                    "zh-Hant": "可以連通特殊空間的畫。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eine Tasche, die magische Werkzeuge aus einer anderen Dimension hervorzieht?",
+                    "en": "Is that a pocket that pulls out magical tools from another dimension?",
+                    "es": "¿Es eso un bolsillo para sacar herramientas mágicas de otra dimensión?",
+                    "fr": "Est-ce une poche qui sort des outils magiques d'une autre dimension ?",
+                    "ja": "不思議な道具が出る異次元ポケットかな？",
+                    "ko": "멋진 도구를 꺼낼 수 있는 다른 차원의 주머니 같군요",
+                    "th": "มันคือช่องเก็บของที่ดึงเอาเครื่องมือวิเศษจากอีกมิติออกมาได้ใช่มั้ย?",
+                    "zh-Hans": "能掏出妙妙工具的异次元口袋？",
+                    "zh-Hant": "能掏出妙妙工具的異次元口袋？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, du hast also einige der Geheimnisse entdeckt, die in diesen Gemälden verborgen sind.",
+                "en": "I see, you must have glimpsed some of the mysteries hidden within these paintings.",
+                "es": "Ya veo, debes haber vislumbrado algunos de los misterios ocultos dentro de estas pinturas.",
+                "fr": "Je vois, tu as dû entrevoir certains des mystères cachés dans ces peintures.",
+                "ja": "そうですか。あなたはこのような絵の秘密をすでにご存知なのですね。",
+                "ko": "그러시군요. 틀림없이 당신은 이미 이 그림 속의 신비감을 느끼셨나보군요",
+                "th": "อย่างนี้นี่เอง แสดงว่าคุณได้เห็นความลึกลับที่ซ่อนอยู่ในภาพวาดเหล่านี้บ้างแล้วสินะ",
+                "zh-Hans": "原来如此，那想必您一定是见识过某些画中的奥秘了。",
+                "zh-Hant": "原來如此，那想必您一定是見識過某些畫中的奧秘了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was? Das können sie? Kein Wunder, dass die ältere Linie so viele geheimnisvolle Schätze von mysteriöser Herkunft besitzt ...",
+                "en": "What? They can do that? No wonder the senior line possesses so many secret treasures of mysterious origin...",
+                "es": "¿Qué? ¿Pueden hacer eso? No es de extrañar que la familia principal posea tantos tesoros secretos de origen misterioso...",
+                "fr": "Quoi ? Ils peuvent faire ça ? Pas étonnant que le chef de ma famille possède tant de trésors secrets d'origine mystérieuse...",
+                "ja": "えっ？そうなんですか？どうりで宗家には出所不明の財宝がたくさんあるわけですね……",
+                "ko": "정말요? 그렇게 사용할 수도 있다니... 종가에 출처를 알 수 없는 비밀 재산이 왜 그렇게 많은지 이제 알게 되네요",
+                "th": "อะไรนะ? มันทำแบบนั้นได้ด้วยเหรอ? มิน่าล่ะ สายอาวุโสถึงได้มีของวิเศษลึกลับมากมายขนาดนี้...",
+                "zh-Hans": "诶？居然还能这样用么？难怪宗家有那么多来路不明的秘密财宝……",
+                "zh-Hant": "欸？居然還能這樣用嗎？難怪宗家有那麼多來路不明的秘密財寶……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer ... abgesehen von der Gefahr könnten die Erinnerungen, die ich in meinem Traum gesehen habe, mit dem Künstler dieses Gemäldes zusammenhängen.",
+                "en": "Anyway... despite the danger, the memories I glimpsed in my dream may be connected to the artist of this painting.",
+                "es": "De todos modos... a pesar del peligro, los recuerdos que vislumbré en mi sueño pueden estar conectados con el artista de esta pintura.",
+                "fr": "Quoi qu'il en soit... malgré le danger, les souvenirs que j'ai aperçus dans mon rêve peuvent être liés à l'artiste de cette peinture.",
+                "ja": "でも……恐ろしかったとは言え、恐らくさっき私が夢で見たあの記憶、絵の作者と何らかの関係があるのでしょうね。",
+                "ko": "그런데... 위험하긴 하지만 방금 꿈속에서 본 기억들은 아마도 그림의 창작자와 관련이 있을 거예요",
+                "th": "แต่จะว่าไป... ถ้าไม่นับเรื่องความอันตราย ความทรงจำที่ฉันเห็นในฝันอาจมีส่วนเชื่อมโยงกับศิลปินผู้วาดภาพนี้ก็ได้",
+                "zh-Hans": "不过……虽然很危险，但刚刚我在梦中见到的那些记忆，想来也许就和画的作者有关。",
+                "zh-Hant": "不過……雖然很危險，但我剛剛在夢中見到的那些記憶，想來也許就和畫的作者有關。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Leider kann ich mich an die Details des Traums nicht erinnern. Wenn ich nur noch einmal nachforschen könnte ... Aber da ich keine Resonatorin bin, kann ich das Wesen dieses Morph-Gemäldes nicht erfassen.",
+                "en": "Unfortunately, I can't recall the dream's details. If only I could investigate again... But since I'm not a Resonator, I can't grasp the essence of this morph painting.",
+                "es": "Desafortunadamente, no puedo recordar los detalles del sueño. Si tan solo pudiera investigar de nuevo... Pero como no soy una Resonadora, no puedo captar la esencia de esta pintura Eco.",
+                "fr": "Malheureusement, je ne me souviens pas des détails du rêve. Si seulement je pouvais enquêter à nouveau... Mais comme je ne suis pas une Résonatrice, je ne peux pas saisir l'essence de cette œuvre.",
+                "ja": "もう夢の詳しいことは覚えていません。でも、もう一度夢の中に入って調べることができれば……残念ながら、私は共鳴者ではありません。この音骸絵の本質を見抜くことは難しいでしょう。",
+                "ko": "꿈의 내용을 자세히 기억할 순 없지만, 다시 한 번 조사할 수 있다면... 아쉽게도 전 공명자가 아니어서 이 에코 그림의 본질을 느낄 수가 없어요",
+                "th": "น่าเสียดายที่ฉันจำรายละเอียดในฝันไม่ได้เลย ถ้าได้กลับไปสำรวจอีกก็คงดี... แต่เพราะฉันไม่ใช่เรโซเนเตอร์ เลยไม่อาจเข้าถึงแก่นแท้ของภาพวาดแปรสภาพนี้ได้",
+                "zh-Hans": "现在梦的细节已经无法回忆起了，但如果能再调查一遍的话……只可惜我并非是共鸣者，难以感受这声骸画的本质。",
+                "zh-Hant": "現在夢的細節已經無法回憶起了，但如果能再調查一遍的話……只可惜我並非是共鳴者，難以感受這聲骸畫的本質。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Könnte ich dir diese Aufgabe anvertrauen? Ich hoffe, du kannst die Geheimnisse des Gemäldes enthüllen und die Fragmente der vergangenen Erinnerungen, die es birgt, ans Licht bringen.",
+                "en": "Could I entrust this quest to you? I hope you can uncover the secrets hidden within the painting and reveal the fragments of past memories it holds.",
+                "es": "¿Podría pedirte un favor? Espero que puedas descubrir los secretos ocultos dentro de la pintura y revelar los fragmentos de recuerdos pasados que contiene.",
+                "fr": "Pourrais-je te confier cette quête ? J'espère que tu pourras découvrir les secrets cachés dans la peinture et révéler les fragments de souvenirs qu'elle contient.",
+                "ja": "そこでですが、あなたにお願いしてもいいでしょうか？絵の秘密を探っていただけませんか？過去の記憶のかけらに、いったい何が隠されているのかを調べてほしいのです。",
+                "ko": "한 번 부탁드려도 될까요? 저를 대신해 그림 속의 비밀, 그리고 그 과거 기억의 조각들 속에 무엇이 숨겨져 있는지 알아봐 주신다면 정말 감사할 거예요",
+                "th": "ฉันฝากฝังภารกิจนี้ให้คุณได้มั้ย? หวังว่าคุณจะเปิดเผยความลับที่ซ่อนอยู่ในภาพวาด และค้นพบเศษเสี้ยวความทรงจำในอดีตที่มันเก็บเอาไว้ได้นะ",
+                "zh-Hans": "不知可否委托您呢？我希望您代我调查一下画中的秘密，调查下在那些过去记忆的碎片中究竟藏着些什么。",
+                "zh-Hant": "不知可否委託您呢？我希望您代我調查一下畫中的秘密，調查一下那些過去記憶的碎片中究竟藏著些什麼。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlass es mir.",
+                    "en": "I'll consider it.",
+                    "es": "Lo consideraré.",
+                    "fr": "Je vais y réfléchir.",
+                    "ja": "少し考えさせて。",
+                    "ko": "생각해 볼게요",
+                    "th": "ฉันจะลองคิดดูนะ",
+                    "zh-Hans": "我可以考虑一下。",
+                    "zh-Hant": "我可以考慮一下。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke dir. Ich werde eine Belohnung für deine Hilfe vorbereiten. Ach, und nimm bitte dieses Amulett. Die Welt im Gemälde wird gefährlich sein und es sollte dir helfen.",
+                "en": "Thank you. I will prepare a reward for your help. Oh, and please take this talisman. The world inside the painting will be dangerous, and it should help you.",
+                "es": "Gracias. Prepararé una recompensa por tu ayuda. Ah, y por favor, toma este amuleto. El mundo dentro de la pintura será peligroso, y te servirá.",
+                "fr": "Merci. Je préparerai une récompense pour ton aide. Oh, prends cette amulette. Le monde à l'intérieur de la peinture sera dangereux, et elle devrait t'aider.",
+                "ja": "ありがとうございます。もし協力してくださるのなら、必ずそれ相応の報酬を用意しておきましょう……あっ、このお守りもどうか持っていってください。絵の中では、危険に遭遇するかもしれませんので、このお守りが必ずお役に立てるでしょう。",
+                "ko": "감사해요. 도와주신다면 그에 따른 보수도 드릴게요... 아, 참, 조사하러 가실 때 이 부적을 꼭 가지고 가주세요. 그림 속에서 위험에 직면할 수도 있는데, 이게 분명히 당신에게 도움이 될 거예요",
+                "th": "ขอบคุณมาก ฉันจะเตรียมรางวัลไว้ตอบแทนน้ำใจคุณนะคะ อ้อ แล้วก็รับเครื่องรางนี้ไปด้วยสิคะ โลกภายในภาพวาดต้องเต็มไปด้วยอันตรายแน่ สิ่งนี้น่าจะช่วยคุณได้",
+                "zh-Hans": "谢谢您，如果您愿意帮忙的话，我一定会为您准备相应的报酬……哦对了，如果前往调查请务必带上这个护身符，画中难免会遇见一些威胁，我相信它一定可以帮到您。",
+                "zh-Hant": "謝謝您，如果您願意幫忙的話，我一定會為您準備相應的報酬……哦對了，如果前往調查請務必帶著這個護身符，畫中難免會遇見一些威脅，我相信它一定可以幫到您。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist ein Geschenk meiner Vorfahren, das als Fragment des Leuchtfeuers gilt, das einst Menschen nach Ragunna führte.",
+                "en": "It is a gift from my ancestors, believed to be a fragment of the beacon that once guided people to Ragunna.",
+                "es": "Es un regalo de mis antepasados, se cree que es un fragmento del faro que una vez guió a la gente a Raguna.",
+                "fr": "C'est un cadeau de mes ancêtres et on m'a dit que c'est un fragment du Nexus qui guidait autrefois les gens vers Ragunna.",
+                "ja": "ファミリーのご先祖様からいただいたプレゼントです。かつて、人々をラグーナへと導いてくれた、信号塔のかけらだと言われているものです。",
+                "ko": "가문 어른들이 제게 주신 선물인데, 사람들을 라군나로 인도했던 비콘의 조각이라고 하더군요",
+                "th": "มันเป็นของที่ตกทอดมาจากบรรพบุรุษ เชื่อกันว่าเป็นเศษเสี้ยวของเสาสัญญาณที่เคยชี้ทางให้ผู้คนมายังรากูนน่า",
+                "zh-Hans": "这是家族的祖辈送给我的礼物，据说，也是曾经引导人们来到拉古那的信标碎片。",
+                "zh-Hant": "這是家族的長輩送給我的禮物，據說，也是曾經引導人們來到拉古那的信標碎片。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit seiner Hilfe wirst du, falls du dich im Gemälde verirrst, vom Licht des Hütenden geleitet.",
+                "en": "With its aid, should you lose your way within the painting, the light of the Sentinel will guide you.",
+                "es": "Con su ayuda, si pierdes tu camino dentro de la pintura, la luz del Centinela te guiará.",
+                "fr": "Si tu te perds dans la peinture, la lumière de la Sentinelle te guidera.",
+                "ja": "このお守りさえあれば、絵の世界で道に迷っても、歳主様の輝きが必ずやその道を照らしてくださるでしょう。",
+                "ko": "이게 있으면, 그림 속 세상에서 길을 잃더라도 수호신의 빛이 반드시 당신에게 나아갈 길을 알려 줄 거예요",
+                "th": "สิ่งนี้จะช่วยให้คุณไม่หลงทางในภาพวาด แสงแห่งเซนติเนลจะช่วยนำทางคุณ",
+                "zh-Hans": "有它帮忙的话，就算在画中的世界迷失方向，岁主的光辉也一定会为您指明道路。",
+                "zh-Hant": "有它幫忙的話，就算在畫中的世界迷失方向，歲主的光輝也一定會為您指明道路。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                },
+                "entity": {
+                  "entityId": 167900022,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC1",
+                  "name": "TsEntity_NPC_克劳迪亚副本引导睡觉",
+                  "areaId": 20,
+                  "position": {
+                    "x": 784899,
+                    "y": 632891,
+                    "z": 6944
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -103
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

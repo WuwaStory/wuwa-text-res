@@ -1,0 +1,3635 @@
+{
+  "id": 162750010,
+  "key": "3.1无尽宴会第一天主线",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Immerfest und Lollo-Party",
+    "ko": "끝없는 파티와 무무파티",
+    "th": "งานเลี้ยงนิจนิรันดร์และลอลโล่ปาร์ตี้",
+    "zh-Hans": "无尽盛宴与呜呜派对",
+    "zh-Hant": "無盡盛宴與嗚嗚派對"
+  },
+  "desc": {
+    "de": "Auf Lumis Einladung hin betrittst du ein Immerfest ...",
+    "ko": "루미의 초대로 당신은 끝없는 파티에 오게 되었다...",
+    "th": "คุณตอบรับคำเชิญของ Lumi และมาถึงงานเลี้ยงนิจนิรันดร์...",
+    "zh-Hans": "应灯灯邀请，你来到一个无尽的宴会……",
+    "zh-Hant": "應燈燈邀請，你來到一個無盡的宴會……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche nach Lumi.",
+        "ko": "루미 찾기",
+        "th": "ไปหา Lumi",
+        "zh-Hans": "去找灯灯",
+        "zh-Hant": "去找燈燈"
+      },
+      "entities": [
+        {
+          "entityId": 162750000,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+          "areaId": 36,
+          "position": {
+            "x": 1185107,
+            "y": 1290340,
+            "z": 24318
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750034,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM11_5",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM11_5",
+          "areaId": 36002,
+          "position": {
+            "x": 1181550,
+            "y": 1295260,
+            "z": 24101
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 230750011,
+          "mapId": 8900,
+          "blueprintType": "branch3.1_230_Gameplay_3_0/Common4",
+          "name": "TsEntity_春节场景交互摩托",
+          "areaId": 0,
+          "position": {
+            "x": 3029,
+            "y": -971,
+            "z": 485
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动引导任务第一天",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}, da bist du ja! Also, was denkst du? Kann sich sehen lassen, was?",
+                "en": "{PlayerName}, you made it! So, what d'ye think? Not too shabby, eh?",
+                "fr": "{PlayerName}, te voilà ! Alors, qu'en penses-tu ? Pas si mal, hein ?",
+                "ja": "{PlayerName}さん、やっと来たんだね！どう？すごくいい場所でしょ！",
+                "ko": "{PlayerName}, 오셨네요! 어때요? 멋지지 않나요?",
+                "th": "{PlayerName} มาถึงแล้วเหรอ! เป็นไงบ้าง ที่นี่เจ๋งเป้งเลยใช่ไหม?",
+                "zh-Hans": "{PlayerName}，你终于来啦！怎么样，这里很不错吧！",
+                "zh-Hant": "{PlayerName}，你終於來啦！怎麼樣，這裡很不錯吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Passt nicht ganz zu dem Bild, das ich von Lollo-Logistik hatte.",
+                    "en": "Not exactly the image I had of Lollo Logistics.",
+                    "fr": "Ce n'est pas vraiment l'idée que je me faisais de Loulou logistique.",
+                    "ja": "{Male=ブブ物流のイメージとは、だいぶ違うな。;Female=ブブ物流のイメージとは、だいぶ違うね。}",
+                    "ko": "여긴, 무무물류랑은 연상이 잘 안 되는데",
+                    "th": "ลบภาพลอลโล่โลจิสติกส์ที่เคยมีจนเกลี้ยงเลยล่ะ",
+                    "zh-Hans": "很难和呜呜物流联系起来。",
+                    "zh-Hant": "很難和嗚嗚物流聯繫起來。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hihihi! Für unsere Kunden sind wir alles, was gefragt ist! Aber zugegeben: Selbst ich war überrascht von der Entscheidung, hier eine Party zu schmeißen.",
+                "en": "Heehee! For our clients, we can be anythin' we need to be! But I'll admit, throwin' a party here was a right surprise, even for me.",
+                "fr": "Hé hé ! Pour nos clients, on peut arborer n'importe quel visage ! Cela étant, je t'avoue qu'organiser une fiesta ici, c'était une sacrée surprise, même pour moi.",
+                "ja": "えへへ、お客様により良いサービスを提供するためなら、何でもやるから！でも、ここでパーティーを開くことになったのは、偶然だったんだけどね。",
+                "ko": "헤헷, 고객에게 더 나은 서비스를 제공하기 위해서라면 어떤 모습으로든 변할 수 있어야죠! 하지만, 저희도 우연한 기회로 여기서 파티를 열게 됐어요",
+                "th": "อิอิ เพื่อการบริการที่ดียิ่งขึ้น เราจะเปลี่ยนแปลงรูปแบบยังไงก็ได้! แต่การจัดปาร์ตี้ที่นี่ ก็เหนือความคาดหมายเหมือนกันนะ",
+                "zh-Hans": "嘻嘻，为了更好地服务客户，我们可以变成任何样子！不过，在这里举办派对，也确实是意外。",
+                "zh-Hant": "嘻嘻，為了更好地服務客戶，我們可以變成任何樣子！不過，在這裡舉辦派對，也確實是意外。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin vor geraumer Zeit über diese Sonoro gestolpert und habe dort diesen extravaganten Ort entdeckt! Und darin wimmelt es von diesen „besonderen Leuten“.",
+                "en": "I stumbled into this Sonoro a while back and found this extravagant place inside! And it's full of all these... \"special folk.\"",
+                "fr": "Il y a quelque temps, j'ai trouvé cette Sonora par hasard, et à l'intérieur, j'ai découvert un palais extravagant ! Il était habité de tout un tas de « gens spéciaux ».",
+                "ja": "少し前に、たまたまこのソノラに迷い込んじゃって、中に入ってみたら豪華な場所があったんだ！それに、たくさんの「特別な人」もいたの。",
+                "ko": "얼마 전 우연히 이 소노라에 발을 들였는데, 들어와 보니 엄청 호화로운 곳이더라고요! 게다가 안에는 「특별한 존재」들도 잔뜩 있었죠",
+                "th": "เมื่อไม่นานมานี้ ฉันบังเอิญหลงเข้ามาที่มิติโซโนโร พอเข้ามาก็พบว่าภายในมีสถานที่หรูหราแบบนี้ด้วย! แถมยังมี \"คนพิเศษ\" อยู่เต็มไปหมดเลย",
+                "zh-Hans": "不久前，我偶然误入了这个索诺拉，进来一看，发现里面竟然有这么豪华的地方！而且，里面还有好多好多“特殊的人”呢。",
+                "zh-Hant": "不久前，我偶然誤入了這個索諾拉，進來一看，發現裡面竟然有這麼豪華的地方！而且，裡面還有好多好多「特殊的人」呢。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Besondere Leute? Für mich sehen sie ziemlich normal aus.",
+                "en": "Special? They look pretty ordinary to me.",
+                "fr": "Spéciaux ? Ils m'ont tout l'air ordinaires.",
+                "ja": "{Male=特別？普通の人と変わらないように見えるが。;Female=特別？普通の人と変わらないように見えるけど。}",
+                "ko": "특별한 존재요? 겉보기엔 일반인들이랑 별반 차이가 없어 보이는데요?",
+                "th": "คนพิเศษ? แต่พวกเขาก็ดูเหมือนคนปกติเลยนะ",
+                "zh-Hans": "特殊？可他们看起来似乎和正常人没有区别。",
+                "zh-Hant": "特殊？可他們看起來似乎和正常人沒有區別。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben beim Hauptquartier nachgefragt. Offenbar ist dieser Ort durch die seltene Fähigkeit einer Resonatorin entstanden. Die Leute hier spüren das mehr oder weniger, aber die meisten hören irgendwann auf, Fragen zu stellen, und verlieren sich im Immerfest.",
+                "en": "We checked with HQ. Turns out this place was created by a Resonator's rare ability. The folks here sense it, kind of, but most just stop askin' questions and lose themselves in the Forever Fest.",
+                "fr": "Le QG a mené sa petite enquête, et figure-toi que cet endroit a été créé par la capacité rare d'une Résonatrice. Les gens du coin la ressentent, enfin plus ou moins, mais la plupart ont cessé de se poser des questions et préfèrent se perdre dans les Festivités éternelles.",
+                "ja": "本部に連絡して、少し調査してみたんだ。ここは、ある共鳴者の特殊な能力で作られた空間で、ここにいる人たちも、何となく分かってるみたい。でも、ほとんどのお客さんは深く考えずに、ただ終わりのない宴に浸ってるんだって。",
+                "ko": "본사와 연락 후 조사해 봤는데, 여긴 어떤 공명자의 특별한 공명 어빌리티에서 탄생한 곳이라고 해요. 이곳 사람들도 어느 정도는 그 사실을 의식하고 있지만, 대부분은 깊이 생각하지 않고 끝없는 파티를 즐기고 있죠",
+                "th": "หลังจากติดต่อสำนักงานใหญ่แล้ว เราเลยลองตรวจสอบดู พบว่าที่นี่เกิดจากพลังพิเศษของเรโซเนเตอร์ท่านหนึ่ง ผู้คนที่นี่ก็แอบรู้สึกถึงสิ่งนี้ได้เหมือนกัน แต่ส่วนใหญ่เลือกที่จะไม่คิดเยอะ แล้วดื่มด่ำกับงานเลี้ยงนิจนิรันดร์ต่อไป",
+                "zh-Hans": "联系总部后，我们调查了一下，这里的诞生源于一位共鸣者的特殊能力，这里的人也只是模糊地意识到了这一点，但大都选择不再思考，沉浸在无尽的宴会中。",
+                "zh-Hant": "聯繫總部後，我們調查了一下，這裡的誕生源於一位共鳴者的特殊能力，這裡的人也只是模糊地意識到了這一點，但大都選擇不再思考，沉浸在無盡的宴會中。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber nichts hält wirklich ewig, stimmt’s? Nicht mal diese Sonoro. Siehst du? Schon beginnt sie, sich aufzulösen.",
+                "en": "But nothing really lasts forever, does it? Even this Sonoro. See? It's already startin' to fade.",
+                "fr": "Mais rien ne dure éternellement, tu sais ? Pas même cette Sonora. Tu vois ? Elle commence déjà à s'effacer.",
+                "ja": "でも、何事も「終わりがない」なんて、あり得ないよね。この場所もそう。知ってる？このソノラは今、消えかかってるんだよ。",
+                "ko": "하지만, 그 어떤 일이든 영원이라는 게 쉽지는 않잖아요. 이곳도 마찬가지고요. 이 소노라가 사라지고 있다는 사실, 혹시 눈치채셨나요?",
+                "th": "แต่ไม่ว่าเรื่องอะไร พอพูดถึงคำว่า \"นิรันดร์\" ก็จัดการยากอยู่นะ เหมือนที่นี่ไง คุณรู้ไหมว่ามิติโซโนโรแห่งนี้กำลังจะหายไป",
+                "zh-Hans": "不过，任何事情只要提到永远，总是很难的吧。就像这里，你知道吗？这个索诺拉正在消失哦。",
+                "zh-Hant": "不過，任何事情只要提到永遠，總是很難的吧。就像這裡，你知道嗎？這個索諾拉正在消失哦。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und sie alle wissen es. Sogar ein „Immerfest“ währt nicht ewig. Aber sie haben sich so an das Glück hier gewöhnt, dass sie auch ein glückliches Ende vorziehen.",
+                "en": "They all know it. Even a \"Forever Fest\" won't last forever. But they've grown so used to the happiness here, they'd rather the endin' be a happy one, too.",
+                "fr": "Eux non plus ne sont pas dupes. « Éternelles », ce n'est qu'un nom. Mais ils se sont tant habitués à leur félicité qu'ils préfèrent la conserver jusqu'à la fin.",
+                "ja": "実は、みんな知ってるんだ。いつかは終わりが来るって。でも、楽しい宴に慣れてしまった彼らは、最後まで楽しく過ごしたいんだって。",
+                "ko": "사실 여기 있는 사람들도 다 알고 있어요. 끝없는 파티라고는 하지만, 언젠가는 끝이 찾아온다는 걸... 하지만 다들 이미 즐거움에 익숙해져서 마지막 순간마저도 즐거움 속에서 보내려고 하는 거예요",
+                "th": "จริงๆ พวกเขาก็รู้แหละ ปากก็พูดกันว่าเป็นงานเลี้ยงนิจนิรันดร์ แต่ยังไงก็ต้องมีวันจบอยู่ดี พวกเขาคงชินกับความสุขแล้วล่ะ ถึงแม้งานเลี้ยงจะเลิกรา พวกเขาก็อยากให้จบแบบมีความสุข",
+                "zh-Hans": "其实他们也都知道。说是无尽宴会，但总有结束的一天，不过，他们已经习惯了快乐。就算是散场，也要在快乐中度过。",
+                "zh-Hant": "其實他們也都知道。說是無盡宴會，但總有結束的一天，不過，他們已經習慣了快樂。就算是散場，也要在快樂中度過。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bevor dieser Ort verschwindet, möchten sie wissen, was den Gastgeber bedrückt. Ich wurde damit beauftragt, der Sache nachzugehen.",
+                "en": "Before this place vanishes, they want to know what's weighing on the host's heart. They asked me to look into it.",
+                "fr": "Avant que cet endroit ne disparaisse, ils désirent savoir ce qui pèse sur le cœur de l'hôte. Ils m'ont demandé de mener l'enquête.",
+                "ja": "ここが消えちゃう前に、お客さんたちは宴の主の心残りが何なのか知りたいらしいんだ。それで、調査の依頼が回ってきたの。",
+                "ko": "하지만 그 전에, 이 파티의 호스트가 품고 있는 한이 뭔지 알고 싶어했죠. 그래서 저한테 의뢰를 한 거고요",
+                "th": "แต่ก่อนที่มันจะหายไป ผู้คนที่ติดอยู่ภายในมิตินี้อยากรู้ว่า เจ้าของงานเลี้ยงมีปมอะไรในใจ ก็เลยอยากให้ฉันช่วยสืบเรื่องนี้น่ะ",
+                "zh-Hans": "但在这里消散之前，被困在其中的他们想知道，宴会主人的心结到底是什么，想委托我帮忙调查一下。",
+                "zh-Hant": "但在這裡消散之前，被困在其中的他們想知道，宴會主人的心結到底是什麼，想委託我幫忙調查一下。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Darum also hast du diese Party mitorganisiert.",
+                    "en": "So that's why you co-hosted this party.",
+                    "fr": "Et donc, tu as choisi d'organiser cette fête avec eux.",
+                    "ja": "{Male=だから、このパーティーを開催したのか。;Female=だから、このパーティーを開催したのね。}",
+                    "ko": "그래서 당신들이 함께 이 파티를 연 거였군요",
+                    "th": "พวกเธอเลยจัดปาร์ตี้ร่วมกันซะเลย",
+                    "zh-Hans": "所以你们合办了这场派对。",
+                    "zh-Hant": "所以你們合辦了這場派對。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Genau! Als ich mich hier verlaufen hatte, halfen sie mir. Jetzt möchte ich ihnen helfen, das Immerfest quietschfidel zu Ende zu bringen.",
+                "en": "Exactly! When I got lost here, they helped me. Now I want to help them wrap up the Forever Fest with a proper smile.",
+                "fr": "Précisément ! Ils m'ont aidée quand j'étais perdue, alors je veux les aider à clore les Festivités éternelles avec un franc sourire.",
+                "ja": "その通り！わたしが中で道に迷った時、彼らが助けてくれたんだ。この宴がハッピーエンドを迎えられるように願ってるよ。",
+                "ko": "맞아요! 제가 이 안에서 길을 잃었을 때 그분들의 도움을 받았으니까, 저도 그분들이 즐겁게 이 파티를 마무리했으면 좋겠어요",
+                "th": "ใช่แล้วล่ะ! ตอนที่ฉันหลงทางอยู่ในนั้น พวกเขาก็ช่วยฉันไว้ ฉันเองก็อยากให้งานเลี้ยงของพวกเขาจบแบบสวยๆ น่ะ",
+                "zh-Hans": "没错 ！我在里面迷路时，他们帮了我，我也希望他们能够真的在快乐中结束这场宴会。",
+                "zh-Hant": "沒錯 ！我在裡面迷路時，他們幫了我，我也希望他們能夠真的在快樂中結束這場宴會。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach Gesprächen mit beiden Seiten haben wir beschlossen, die Party etwas aufzupeppen und so hoffentlich herauszufinden, wie alles angefangen hat!",
+                "en": "So I had a chat with both sides. Decided we'd liven up the party and hopefully, we'll suss out how it all started that way!",
+                "fr": "Après une conversation avec toutes les parties intéressées, on a décidé d'égayer un peu la fête et, on croise les doigts, de découvrir comment tout cela a commencé.",
+                "ja": "わたしは両方と相談して、一緒に盛り上げながら、宴が開かれた原因を調べてみることにしたんだ。",
+                "ko": "그래서 전 양쪽 사람들과 다 같이 논의해서 함께 더 신나는 파티를 만들기로 했어요. 그리고, 조금 더 노력해서 이 파티가 만들어진 원인도 파헤치고요",
+                "th": "ฉันก็เลยปรึกษากับผู้ใหญ่ทั้งสองฝ่าย และได้ข้อสรุปว่าจะทำให้ปาร์ตี้คึกคักขึ้น แล้วพยายามสืบหาสาเหตุของงานเลี้ยงนี้ด้วย",
+                "zh-Hans": "所以，我和两边的大伙都商量了一下，我们决定一起让宴会更热闹一些，再努力查查看这场宴会出现的原委。",
+                "zh-Hant": "所以，我和兩邊的大伙都商量了一下，我們決定一起讓宴會更熱鬧一些，再努力查查看這場宴會出現的原委。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Typisch Lumi.",
+                    "en": "That's just like you, Lumi.",
+                    "fr": "Ça ne m'étonne pas de toi, Lumi.",
+                    "ja": "{Male=さすが、灯灯だな。;Female=さすが、灯灯だね。}",
+                    "ko": "역시 루미답네요",
+                    "th": "สุดยอดไปเลย Lumi!",
+                    "zh-Hans": "不愧是灯灯。",
+                    "zh-Hant": "不愧是燈燈。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hehe. Um ehrlich zu sein, haben wir bisher nur Jahresabschlussfeiern von Firmen organisiert. Anfangs hatte ich null Peilung! Zum Glück war Herr Cobb Copo zur Stelle, um mir den Hintern zu retten!",
+                "en": "Hehe. Truth is, the only events we've ever handled were company year-enders. At first, I was stumped! But thankfully, a Mr. Cobb Copo showed up to save the day!",
+                "fr": "Hé hé. À vrai dire, je n'avais organisé jusqu'ici que des fêtes d'entreprise de fin d'année. Au départ, je pédalais dans la semoule, mais heureusement, M. Cobb Copo a volé à ma rescousse !",
+                "ja": "えへへ。実を言うと、わたしたちも忘年会くらいしか開いたことがなかったから、最初はお手上げ状態だったんだ。でも幸い、頭を悩ませていた時に、コブ・コーポさんが現れたんだよね。",
+                "ko": "헤헤, 하지만 저도 송년회 정도밖에는 열어본 적이 없어서, 처음에는 정말 막막했어요. 곤란한 순간에 코브 · 코포 씨가 나타나 주셔서 천만다행이었죠",
+                "th": "อิอิ แต่ที่จริงพวกเรามีแค่ประสบการณ์จัดงานปีใหม่ ช่วงเริ่มแรกนี่คิดไม่ออกเลยนะ แต่โชคดีที่ได้คุณ Cobb Copo เข้ามาช่วยคิดในตอนที่ฉันกำลังสมองตันสุดๆ",
+                "zh-Hans": "嘿嘿。不过，其实我们以前也只有办年会的经验，刚开始可真是一筹莫展。不过还好，就在我最头疼的时候，柯布·科波先生出现了。",
+                "zh-Hant": "嘿嘿。不過，其實我們以前也只有辦年會的經驗，剛開始可真是一籌莫展。不過還好，就在我最頭疼的時候，柯布·科波先生出現了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Und wer ist das?",
+                    "en": "Who might that be?",
+                    "fr": "Qui ça ?",
+                    "ja": "{Male=それは誰だ？;Female=それって誰？}",
+                    "ko": "어떤 분이시죠?",
+                    "th": "ใครน่ะ?",
+                    "zh-Hans": "那是谁？",
+                    "zh-Hant": "那是誰？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ein neuer Mitarbeiter von Lollo-Logistik?",
+                    "en": "A new hire at Lollo Logistics?",
+                    "fr": "Une nouvelle recrue de Loulou logistique ?",
+                    "ja": "{Male=ブブ物流の社員か？;Female=ブブ物流の社員？}",
+                    "ko": "무무 물류의 신입사원인가요?",
+                    "th": "พนักงานใหม่ของลอลโล่โลจิสติกส์เหรอ?",
+                    "zh-Hans": "呜呜物流的新员工吗？",
+                    "zh-Hant": "嗚嗚物流的新員工嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Er ist der ureigene Butler des Immerfestes. Der organisiert das alles mit links! Er war mir eine große Hilfe.",
+                "en": "He's the Forever Fest's dedicated butler. Managing all this is second nature to the man! He's been a huge help.",
+                "fr": "C'est le majordome attitré des Festivités éternelles. La gestion d'événement est une seconde nature, pour lui ! Je lui dois une fière chandelle.",
+                "ja": "コーポさんは、「終わりのない宴」の専属執事だよ。こういう対応は得意だから、よく助けてもらってるの。",
+                "ko": "끝없는 파티의 전담 집사세요. 파티에 관한 일을 처리하는 데 아주 능숙하셔서, 저희한테 정말 큰 도움이 됐죠",
+                "th": "เขาคือผู้ดูแลงานเลี้ยงนิจนิรันดร์ที่จัดการทุกเรื่องได้อย่างคล่องปรื๋อ ช่วยแบ่งเบาเราได้เยอะมากเลย",
+                "zh-Hans": "他是无尽宴会的专用管家，处理起这些事情来简直得心应手，帮了我们好大的忙。",
+                "zh-Hant": "他是無盡宴會的專用管家，處理起這些事情來簡直得心應手，幫了我們好大的忙。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nein, nein. Er ist der ureigene Butler des Immerfestes. Der organisiert das alles praktisch mit links! Er war mir eine große Hilfe.",
+                "en": "Oh no, no. He is the Forever Fest's dedicated butler. Managing all this is almost second nature to him. He's been a huge help.",
+                "fr": "Pas du tout. C'est le majordome attitré des Festivités éternelles. La gestion d'événement est presque une seconde nature, pour lui ! Je lui dois une fière chandelle.",
+                "ja": "違うよ。コーポさんは、「終わりのない宴」の専属執事だよ。こういう対応は得意だから、よく助けてもらってるの。",
+                "ko": "아뇨, 아뇨. 끝없는 파티의 전담 집사세요. 파티에 관한 일을 처리하는 데 아주 능숙하셔서, 저희한테 정말 큰 도움이 됐죠",
+                "th": "เปล่าหรอก เขาคือผู้ดูแลงานเลี้ยงนิจนิรันดร์ที่จัดการทุกเรื่องได้อย่างคล่องปรื๋อ ช่วยแบ่งเบาเราได้เยอะมากเลย",
+                "zh-Hans": "不是不是，他呀，是无尽宴会的专用管家，处理起这些事情来简直得心应手，帮了我们好大的忙。",
+                "zh-Hant": "不是不是，他呀，是無盡宴會的專用管家，處理起這些事情來簡直得心應手，幫了我們好大的忙。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er bereitet übrigens gerade die Spiele vor. Du findest ihn am Kartentisch! Was wäre eine echte Party ohne ein Spielchen zum Auftakt?",
+                "en": "By the way, he's settin' up the games right now. You'll find him by the card table! What's a proper party without a wee game to start, eh?",
+                "fr": "D'ailleurs, il prépare les jeux en ce moment même. Tu le trouveras près de la table des jeux de cartes ! Rien de tel pour mettre les invités dans l'ambiance, pas vrai ?",
+                "ja": "そうだ、彼は今、ゲームの準備をしてるんだ。カードテーブルのそばに行けば会えるよ！盛大なパーティーの幕開けには、やっぱりパーティーゲームがないと！",
+                "ko": "아! 한창 게임을 준비 중이시니 카드 테이블 쪽으로 가면 만나실 수 있을 거예요! 즐거운 파티는 역시 게임으로 시작하는 법이니까요!",
+                "th": "อ้อ เขากำลังเตรียมเกมปาร์ตี้อยู่ ไปหาเขาที่โต๊ะไพ่ได้เลยนะ! งานปาร์ตี้จะคึกคัก ก็ต้องเปิดฉากด้วยเกมสนุกๆ !",
+                "zh-Hans": "对了，他正在准备派对游戏呢，你可以去牌桌旁找他！一场欢乐的派对，当然要以派对游戏开场！",
+                "zh-Hant": "對了，他正在準備派對遊戲呢，你可以去牌桌旁找他！一場歡樂的派對，當然要以派對遊戲開場！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750000,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay293",
+                  "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290340,
+                    "z": 24318
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Jinhsi.",
+        "ko": "금희와 대화하기",
+        "th": "ไปพูดคุยกับ Jinhsi",
+        "zh-Hans": "与今汐对话",
+        "zh-Hant": "與今汐對話"
+      },
+      "entities": [
+        {
+          "entityId": 162750018,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口7",
+          "areaId": 36002,
+          "position": {
+            "x": 1178397,
+            "y": 1295670,
+            "z": 23965
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动引导任务第一天",
+          "flowIndex": 1,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Als Herr Copo es erklärte, hielt ich es für eine angenehme Zerstreuung. Aber jetzt, wo ich gegen dich gespielt habe, spüre ich den Nervenkitzel.",
+                "en": "When Mr. Copo explained it, I thought it a light amusement. But now, playing against you, I've truly felt its thrill.",
+                "fr": "En apprenant les règles, j'ai pris ce jeu pour un simple passe-temps, mais face à toi, je prends conscience de son véritable potentiel.",
+                "ja": "ルールを伺った時は、ただ簡単な面白い遊戯だと感じましたが……こうして一局交えると、その奥深さに触れた気がします。",
+                "ko": "코브 · 코포 씨의 설명만 들었을 때는 단순히 재밌다고만 생각했었는데, 당신과 대결하니 그 속에 담긴 진정한 묘미가 느껴지네요",
+                "th": "เมื่อครู่ได้ยินคุณ Cobb Copo แนะนำเกม เลยคิดว่าเกมนี้ง่ายและน่าสนใจดี พอได้ลองเล่นกับคุณ ก็รู้สึกว่ามันสนุกจริงๆ ด้วย",
+                "zh-Hans": "方才听柯布·科波先生介绍，只觉得简单有趣。如今与你对局一场，才真正体会出其中畅快。",
+                "zh-Hant": "方才聽柯布·科波先生介紹，只覺得簡單有趣。如今與你對局一場，才真正體會出其中暢快。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750018,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口7",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1178397,
+                    "y": 1295670,
+                    "z": 23965
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gegen dich zu spielen, ist ein Vergnügen.",
+                    "en": "Playing against you is a treat.",
+                    "fr": "C'était un plaisir de jouer contre toi.",
+                    "ja": "{Male=今汐との勝負、楽しかったな。;Female=今汐との勝負、楽しかったよ。}",
+                    "ko": "금희와의 대결은 역시 재밌네요",
+                    "th": "เล่นกับ Jinhsi สนุกจริงๆ",
+                    "zh-Hans": "和今汐对局真是有趣。",
+                    "zh-Hant": "和今汐對局真是有趣。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du bist schwer zu durchschauen, Jinhsi.",
+                    "en": "You are hard to read, Jinhsi.",
+                    "fr": "Ton expression est indéchiffrable, Jinhsi.",
+                    "ja": "{Male=今汐にも、捉えどころのない一面があるんだな。;Female=今汐にも、捉えどころのない一面があるのね。}",
+                    "ko": "금희도 종잡을 수 없는 구석이 있다니까요...",
+                    "th": "Jinhsi เองก็มีมุมที่เดาทางไม่ถูกเหมือนกัน",
+                    "zh-Hans": "今汐也有难以捉摸的一面。",
+                    "zh-Hant": "今汐也有難以捉摸的一面。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mhm. Wenn es die Zeit erlaubt, sollten wir öfter spielen.",
+                "en": "Mm. When time allows, we should play more often.",
+                "fr": "Hm. Il faudra jouer la revanche, si nous en avons un jour l'occasion.",
+                "ja": "ええ。今後も時間があれば、二人で興ずるのも悪くないでしょう。",
+                "ko": "네. 시간이 있을 때마다, 이렇게 대결해 보는 것도 좋을 것 같아요",
+                "th": "อื้ม ถ้ามีเวลา เราก็มาเล่นด้วยบ่อยๆ ได้นะ",
+                "zh-Hans": "嗯，有时间的话，我们可以常常这样切磋。",
+                "zh-Hant": "嗯，有時間的話，我們可以常常這樣切磋。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750018,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口7",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1178397,
+                    "y": 1295670,
+                    "z": 23965
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine Magistratin muss darin geübt sein, je nach Gegebenheit ein anderes Gesicht zu tragen.",
+                "en": "A Magistrate must learn to wear many faces for different situations.",
+                "fr": "Une Magistrate se doit de revêtir le masque qui convient aux circonstances.",
+                "ja": "令尹たる者、様々な状況に対応するために、いくつもの顔を使い分ける必要がありますから。",
+                "ko": "영윤으로서 여러 가지 상황에 대처하는 법을 배워야죠",
+                "th": "ในฐานะเจ้าเมือง ก็ต้องเรียนรู้ที่จะปรับตัวให้เข้ากับสถานการณ์ต่างๆ",
+                "zh-Hans": "身为令尹，也要学会使用多种面目应对不同状况。",
+                "zh-Hant": "身為令尹，也要學會使用多種面目應對不同狀況。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750018,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口7",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1178397,
+                    "y": 1295670,
+                    "z": 23965
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber zugegeben: In einer der Runden war ich vielleicht etwas leichtsinnig …",
+                "en": "But in one of the rounds, I confess I may have gotten a little reckless...",
+                "fr": "Cela dit, je dois admettre que j'ai agi de manière imprudente lors d'une des manches…",
+                "ja": "ただ、先ほどは少し考えが及ばない手があったようです……",
+                "ko": "하지만... 방금 라운드에서는 생각이 좀 짧았던 것 같네요...",
+                "th": "แต่เมื่อกี้เหมือนจะมีอยู่รอบหนึ่งที่ตัดสินใจยังไม่ค่อยรอบคอบ...",
+                "zh-Hans": "不过，刚才有一回合似乎有些欠考虑之处……",
+                "zh-Hant": "不過，剛才有一回合似乎有些欠考慮之處……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750018,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口7",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1178397,
+                    "y": 1295670,
+                    "z": 23965
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schon gut, Jinhsi. Ein Partyspiel soll Spaß machen.",
+                "en": "Don't worry, Jinhsi. A game at a party is meant to be fun.",
+                "fr": "Détends-toi, Jinhsi. Les jeux sont faits pour s'amuser, surtout pendant une fête.",
+                "ja": "{Male=大丈夫だ、今汐。パーティーゲームなんだから、あまり思い詰めるな。;Female=大丈夫だよ、今汐。パーティーゲームなんだから、あまり思い詰めないで。}",
+                "ko": "괜찮아요, 파티의 게임일 뿐이니까 너무 복잡하게 생각하지 마세요",
+                "th": "ไม่เป็นไรหรอกน่า Jinhsi แค่เกมปาร์ตี้เอง คิดเยอะก็เปลืองสมอง",
+                "zh-Hans": "没关系，今汐，只是派对游戏而已，不要太费脑筋。",
+                "zh-Hant": "沒關係，今汐，只是派對遊戲而已，不要太費腦筋。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast recht. Ich tendiere dazu, mir zu viele Gedanken zu machen.",
+                "en": "You're right. I do have a habit of overthinking.",
+                "fr": "Tu as raison. J'ai la fâcheuse tendance à trop réfléchir.",
+                "ja": "ええ。あなたの言う通り、余には考えすぎてしまう癖があるようです。",
+                "ko": "네, 당신 말이 맞아요. 습관적으로 너무 많은 걸 생각했던 것 같아요",
+                "th": "นั่นสิ คุณพูดถูก ฉันชอบคิดเยอะเกินไป",
+                "zh-Hans": "嗯，你说得没错，我总是惯于考虑太多。",
+                "zh-Hant": "嗯，你說得沒錯，我總是慣於考慮太多。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750018,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口7",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1178397,
+                    "y": 1295670,
+                    "z": 23965
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du solltest dir etwas mehr Ruhe gönnen, Jinhsi. Wenn sich die Gelegenheit ergibt, sehen wir uns in Jinzhou wieder.",
+                "en": "Don't forget to breathe, Magistrate. I'm looking forward to seeing you back in Jinzhou someday.",
+                "fr": "N'oubliez pas de respirer, Magistrate. Je m'attends à recevoir un accueil bien plus détendu à Jinzhou.",
+                "ja": "{Male=もっとリラックスすることだな。また今州で会おう。;Female=もっとリラックスしないとね。また今州で会おう。}",
+                "ko": "좀 더 내려놓아도 좋을 것 같아요. 나중에 기회가 되면 금주에서 보죠",
+                "th": "เธอควรปล่อยสมองให้ผ่อนคลายบ้าง ไว้เจอกันใหม่ที่จินโจวนะ",
+                "zh-Hans": "你该多放松些，等到有机会，我们今州再见。",
+                "zh-Hant": "你該多放鬆些，等到有機會，我們今州再見。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In Ordnung. Ich werde dich erwarten.",
+                "en": "Very well, I'll be waiting.",
+                "fr": "D'accord. Je t'attendrai.",
+                "ja": "はい、お待ちしています。",
+                "ko": "좋아요, 기다리고 있을게요",
+                "th": "ได้สิ ฉันจะรอนะ",
+                "zh-Hans": "好，我等你。",
+                "zh-Hant": "好，我等你。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750018,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口7",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1178397,
+                    "y": 1295670,
+                    "z": 23965
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Cobb Copo.",
+        "ko": "코브 · 코포를 찾아 대화하기",
+        "th": "คุยกับ Cobb Copo",
+        "zh-Hans": "找柯布·科波聊聊",
+        "zh-Hant": "找柯布·科波聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 162750003,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫2",
+          "areaId": 36002,
+          "position": {
+            "x": 1173379,
+            "y": 1293832,
+            "z": 24830
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750007,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+          "areaId": 36002,
+          "position": {
+            "x": 1173390,
+            "y": 1293460,
+            "z": 24825
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750033,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM12_6",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM12_6",
+          "areaId": 36002,
+          "position": {
+            "x": 1184354,
+            "y": 1292536,
+            "z": 24203
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750054,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_4",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_10",
+          "areaId": 33102,
+          "position": {
+            "x": 1210500,
+            "y": 1209100,
+            "z": 28500
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动引导任务第一天",
+          "flowIndex": 1,
+          "stateId": 8,
+          "talks": [
+            {
+              "text": {
+                "de": "Du kommst gerade recht, {Male=Verehrtester;Female=Verehrteste}. Wir haben soeben in diesem Bereich für Ordnung gesorgt. Mein Arbeitgeber, Herr Geiser, liebt es nämlich, zu verreisen und Kuriositäten zu sammeln. Und er hat eine spezielle Vorliebe für Echos.",
+                "en": "Your timing is impeccable, my friend. We've just finished tidying this area. You see, my employer, Mr. Geisel, loves traveling and collecting curiosities. And he has a particular fondness for Echoes.",
+                "fr": "Vous tombez à point nommé, {Male=mon ami;Female=mon amie}. Nous venons d'achever le rangement dans cette zone. Vous savez, mon employeur, M. Geisel, aime voyager et collectionner des curiosités. Il est tout particulièrement friand d'Échos.",
+                "ja": "お客様、ちょうど良いところに。たった今、片付けを終えたところでございます。私の雇い主であるガイゼル様は、世界を駆け巡り、珍奇な品々を収集する趣味をお持ちなのです。中でも、音骸に大変興味がおありのようで。",
+                "ko": "마침 잘 오셨습니다. 방금 이곳 정리를 마쳤거든요. 제 고용주인 가이젤 씨께선 세상 곳곳을 다니면서 신기하고 재밌는 물건들을 수집하는 걸 아주 좋아하신답니다. 그중에서도 에코에 큰 관심을 갖고 계시죠",
+                "th": "สหาย คุณมาได้จังหวะพอดี เราเพิ่งจัดการพื้นที่ตรงนี้เสร็จ Geisel เจ้านายของผมชอบผจญภัยทั่วโลกและสะสมของแปลกใหม่ แถมสนใจเอคโค่มากเลย",
+                "zh-Hans": "朋友，您来得正好，我们刚刚把这里收拾出来。我的雇主盖泽尔先生酷爱闯荡世界，收集奇趣之物，尤其对声骸十分感兴趣。",
+                "zh-Hant": "朋友，您來得正好，我們剛剛把這裡收拾出來。我的雇主蓋澤爾先生酷愛闖蕩世界，收集奇趣之物，尤其對聲骸十分感興趣。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750003,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫2",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173379,
+                    "y": 1293832,
+                    "z": 24830
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es heißt, er habe sich einst auf eine Reise begeben, um Echo-Meister zu werden. Er bezwang vielerlei Bösewichte und sammelte mit seinem unverkennbaren rot-weißen Echo-Ball eine ganze Menagerie von Echos. Sie alle sind hier ausgestellt.",
+                "en": "They say he once set out on a journey to become an Echo Master. Along the way, he fought many villains, gathering a whole menagerie of Echoes with his signature red-and-white Echo ball. All displayed here.",
+                "fr": "Il semblerait qu'il ait juré un jour de devenir le plus grand Maître de l'Écho. En chemin, il combattit sans relâche et amassa toute une ménagerie d'Échos grâce à son Écho Ball rouge et blanche si reconnaissable. Tout cela vous est présenté ici.",
+                "ja": "伺ったところ、ガイゼル様は音骸マスターになるために冒険の旅を始め、様々な悪役を打ち負かし、紅白の音骸ボールで無数の音骸を集め、並べて飾っている、とか。",
+                "ko": "소문에 의하면, 일찍이 에코 마스터가 되는 것을 목표로 모험을 떠나 많은 빌런을 제압하고 빨간색과 하얀색으로 이루어진 에코볼로 수많은 에코를 수집해 이곳에 전시해 두셨다고 합니다",
+                "th": "ได้ยินว่า เขาเคยออกผจญภัยเพื่อที่จะได้เป็นปรมาจารย์แห่งเอคโค่ แถมยังเอาชนะศัตรูมากมาย และใช้ลูกบอลเอคโค่สีแดงขาวเพื่อสะสมเอคโค่จำนวนมาก แล้วนำมาวางแสดงที่นี่",
+                "zh-Hans": "据说，他曾以成为声骸大师为目标踏上冒险之旅，战胜许多反派角色，用一只红白色的声骸球收集了无数声骸带到这里陈列。",
+                "zh-Hant": "據說，他曾以成為聲骸大師為目標踏上冒險之旅，戰勝許多反派角色，用一隻紅白色的聲骸球收集了無數聲骸帶到這裡陳列。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750003,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫2",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173379,
+                    "y": 1293832,
+                    "z": 24830
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Diese Geschichte klingt vertraut.)",
+                    "en": "(The story sounds familiar.)",
+                    "fr": "(Cette histoire paraît familière.)",
+                    "ja": "（この話……どこかで、聞いたことがあるような気が）",
+                    "ko": "(왠지 어디선가 들어본 것 같은데)",
+                    "th": "(พล็อตเรื่องคุ้นๆ แฮะ)",
+                    "zh-Hans": "（总觉得在哪里听过。）",
+                    "zh-Hant": "（總覺得在哪裡聽過。）"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Echo-Ball? Ist es nicht normalerweise ein Terminal …?)",
+                    "en": "(Echo ball? Isn't it usually a Terminal...?)",
+                    "fr": "(Un Écho Ball ? Ce n'est pas un terminal, d'habitude… ?)",
+                    "ja": "（デバイスではなく、音骸ボール？）",
+                    "ko": "(에코볼이라고? 단말기 아냐?...)",
+                    "th": "(ลูกบอลเอคโค่? ไม่ใช่เทอร์มินัลเหรอ...)",
+                    "zh-Hans": "（声骸球？不是终端吗……）",
+                    "zh-Hant": "（聲骸球？不是終端嗎……）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das war seine persönliche Galerie. Diese bezaubernden Wesen bringen stets Farbe und Leben in das Fest.",
+                "en": "This was his personal gallery. These adorable beings always bring color and life to the fest.",
+                "fr": "Voici sa galerie personnelle. Ces adorables créatures apportent toujours un brin de couleur et de vie aux festivités.",
+                "ja": "ここは、彼が音骸を並べていた場所です。この愛おしい音骸たちは、宴に多くの彩りを添えてくれます。",
+                "ko": "그리고 이곳이 바로 그분께서 에코를 전시하시는 곳입니다. 이 귀여운 녀석들은 언제나 파티를 더 빛내주죠",
+                "th": "ที่นี่คือที่ที่เขาจัดวางเอคโค่ไว้ เจ้าเอคโค่พวกนี้น่ารักมากเลยนะ มันช่วยเติมสีสันให้ปาร์ตี้สนุกขึ้นด้วย",
+                "zh-Hans": "这里就是他摆放声骸的地方。这些可爱的家伙总能为宴会增添许多亮色。",
+                "zh-Hant": "這裡就是他擺放聲骸的地方。這些可愛的傢伙總能為宴會增添許多亮色。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750003,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫2",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173379,
+                    "y": 1293832,
+                    "z": 24830
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Arrangiere sie nach Lust und Laune. Sie freuen sich bestimmt über deine Aufmerksamkeit.",
+                "en": "Feel free to arrange them as you like. I'm sure they are eager for your attention.",
+                "fr": "Disposez-les à votre guise. Je suis certain qu'elles n'attendent que votre attention.",
+                "ja": "もちろん、お客様のお好みに合わせて、任意に入れ替えることができます。この子たちもきっと、お客様のお眼鏡にかなう日を心待ちにしていることでしょう。",
+                "ko": "물론, 당신의 취향에 맞춰 마음껏 바꾸셔도 좋습니다. 아마 당신의 손길을 기다리고 있을지도 모르겠군요",
+                "th": "แน่นอนว่าคุณสามารถเปลี่ยนมันตามความชอบได้เลย ผมคิดว่าพวกมันกำลังรอรับความโปรดปรานจากคุณอยู่",
+                "zh-Hans": "当然，您也可以根据自己的喜好任意更换它们。我想，它们一定都在等待着您的垂青。",
+                "zh-Hant": "當然，您也可以根據自己的喜好任意更換它們。我想，它們一定都在等待著您的垂青。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750003,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫2",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173379,
+                    "y": 1293832,
+                    "z": 24830
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schau dir den Echo-Ausstellungsstand an.",
+        "ko": "에코 전시대 보기",
+        "th": "ชมแท่นจัดแสดงเอคโค่",
+        "zh-Hans": "看看声骸展示台",
+        "zh-Hant": "看看聲骸展示台"
+      },
+      "entities": [
+        {
+          "entityId": 162750003,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫2",
+          "areaId": 36002,
+          "position": {
+            "x": 1173379,
+            "y": 1293832,
+            "z": 24830
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 230750014,
+          "mapId": 8900,
+          "blueprintType": "branch3.1_42_Event_PhantomExhibit",
+          "name": "TsEntity_机关_声骸展台2",
+          "areaId": 0,
+          "position": {
+            "x": -5,
+            "y": -2106,
+            "z": 490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 6,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Cobb Copo.",
+        "ko": "코브 · 코포와 대화하기",
+        "th": "คุยกับ Cobb Copo",
+        "zh-Hans": "与柯布·科波聊聊",
+        "zh-Hant": "與柯布·科波聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 162750006,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫5",
+          "areaId": 36002,
+          "position": {
+            "x": 1173210,
+            "y": 1293530,
+            "z": 24835
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动引导任务第一天",
+          "flowIndex": 1,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Hast du etwas auf dem Herzen, Herr Copo?",
+                "en": "Something on your mind, Mr. Copo?",
+                "fr": "À quoi pensez-vous, M. Copo ?",
+                "ja": "{Male=何か困ってるのか……？;Female=何か困ってるの……？}",
+                "ko": "코브 · 코포 씨, 무슨 일 있으신가요?",
+                "th": "คุณ Cobb Copo เจอปัญหาอะไรหรือเปล่า?",
+                "zh-Hans": "柯布·科波先生，您遇到什么麻烦了吗？",
+                "zh-Hant": "柯布·科波先生，您遇到什麼麻煩了嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Verzeih meine Zerstreutheit. Es ist nichts Gravierendes, nur hat sich die Einrichtung hier im Verlauf der Jahre kaum verändert.",
+                "en": "Please, forgive my preoccupation. It is no grave matter, only that over all these long years, the decor here has scarcely changed.",
+                "fr": "Pardonnez ma préoccupation. Ce n'est rien de grave, si ce n'est qu'après toutes ces longues années, le décor de ces lieux n'a guère changé.",
+                "ja": "ご心配をおかけしてしまい、申し訳ありません。お気になさらず。ただ、ここの内装が長らく変わっていないことに気づきまして、少々考え事を。",
+                "ko": "걱정을 끼쳐 드려 죄송합니다. 큰 일은 아니지만, 이곳의 인테리어는 오랜 세월 동안 거의 바뀌지 않았거든요",
+                "th": "ขออภัยด้วยครับที่ทำให้คุณเป็นห่วง จริงๆ มันไม่ใช่เรื่องใหญ่หรอก แค่รู้สึกว่าตลอดเวลาที่ผ่านมา การตกแต่งของที่นี่แทบจะไม่เคยเปลี่ยนเลย",
+                "zh-Hans": "抱歉，让您挂心了。其实并非什么大事。只是，过去那漫长岁月中，这些地方的装潢几乎从来没有变过。",
+                "zh-Hant": "抱歉，讓您掛心了。其實並非什麼大事。只是，過去那漫長歲月中，這些地方的裝潢幾乎從來沒有變過。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫5",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173210,
+                    "y": 1293530,
+                    "z": 24835
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Neue Gäste verdienen eine frische Atmosphäre, doch all die Jahre, die ich hier zugebracht habe, haben mich hinsichtlich gegenwärtiger Modetrends blind gemacht. Vielleicht hast du ein paar Anregungen …?",
+                "en": "New guests deserve a fresh atmosphere, but the long years I've spent here have blinded me to the world's current fashions. Might you offer some suggestions?",
+                "fr": "Nos {Male=nouveaux invités;Female=nouvelles invitées} méritent une atmosphère inédite, mais mon long isolement ici m'a coupé des tendances mondiales actuelles. Pourriez-vous m'offrir vos suggestions ?",
+                "ja": "新しいお客様がお見えになったからには、新しい風を通すべきでしょう。ですが、ここに来てから長いため、外の流行に疎いのです。どうか、お力添えいただけませんか？",
+                "ko": "새로운 손님이 오셨으니 새로운 모습으로 맞이하고 싶습니다만... 전 오랫동안 이곳에만 있던지라, 바깥세상의 유행에 대해서는 잘 모릅니다. 혹시 도와주실 수 있을까요?",
+                "th": "แขกใหม่ๆ ก็น่าจะสร้างบรรยากาศใหม่ๆ แต่ผมอยู่ที่นี่มานานเกินไป ไม่ค่อยเข้าใจเทรนด์ภายนอกเลย คุณพอจะช่วยผมหน่อยได้ไหม?",
+                "zh-Hans": "既然来了新的客人，就该有新的气象。可我在这里太久，实在无法理解外面的潮流。或许，您可以帮帮我吗？",
+                "zh-Hant": "既然來了新的客人，就該有新的氣象。可我在這裡太久，實在無法理解外面的潮流。或許，您可以幫幫我嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫5",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173210,
+                    "y": 1293530,
+                    "z": 24835
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin {Male=der führende Trendsetter;Female=die führende Trendsetterin} in Solaris.",
+                    "en": "I am the No.1 tastemaker in Solaris.",
+                    "fr": "À Solaris, c'est moi qui définis la tendance.",
+                    "ja": "{Male=俺はソラリスで一番のトレンドセッターだ。;Female=私はソラリス一番のトレンドセッターよ。}",
+                    "ko": "솔라리스 유행에 관해선 제가 가장 잘 알죠",
+                    "th": "ฉันนี่แหละตัวตึงแห่งโซลาริส",
+                    "zh-Hans": "我是索拉里斯第一弄潮儿。",
+                    "zh-Hant": "我是索拉里斯第一弄潮兒。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich werde tun, was ich kann.",
+                    "en": "I'll see what I can do.",
+                    "fr": "Je vais voir ce que je peux faire.",
+                    "ja": "分かった。",
+                    "ko": "한 번 해볼게요",
+                    "th": "ฉันจะลองดูนะ",
+                    "zh-Hans": "我可以试一试。",
+                    "zh-Hant": "我可以試一試。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das habe ich auf den ersten Blick erkannt.",
+                "en": "I could tell at first glance.",
+                "fr": "Je l'ai su dès que mon regard s'est posé sur vous.",
+                "ja": "ええ、そう思っておりました。",
+                "ko": "역시, 사실 첫눈에 그러실 줄 알았답니다",
+                "th": "มองแว๊บเดียวผมก็ดูออกแล้วล่ะ",
+                "zh-Hans": "其实我第一眼就看出来了。",
+                "zh-Hant": "其實我第一眼就看出來了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫5",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173210,
+                    "y": 1293530,
+                    "z": 24835
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hervorragend. Ich weiß deine Hilfe wirklich zu schätzen.",
+                "en": "Splendid. Your help will be greatly appreciated.",
+                "fr": "Splendide. Je n'oublierai pas l'aide que vous m'apportez.",
+                "ja": "非常に助かります。お力添え、心より感謝いたします。",
+                "ko": "다행이군요. 도와주신다니 정말 감사합니다",
+                "th": "ดีจังเลย ขอบคุณที่ยื่นมือมาช่วยนะครับ",
+                "zh-Hans": "太好了，谢谢您的出手相助。",
+                "zh-Hant": "太好了，謝謝您的出手相助。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫5",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173210,
+                    "y": 1293530,
+                    "z": 24835
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also bitte, lass deiner Kreativität freien Lauf! Ob neues Mobiliar oder ein frischer Fußboden – teil mir deine Idee mit und ich werde sie verwirklichen.",
+                "en": "So please, let your creativity flow! Be it new furnishings or a change of floor design, just speak your idea, and I shall see it done.",
+                "fr": "Laissez libre cours à votre créativité ! Qu'il s'agisse de trouver du nouveau mobilier, ou bien de changer le sol, faites-moi part de vos idées, et j'en ferai une réalité.",
+                "ja": "では、どうぞ気の赴くまま、素晴らしい感性をお見せいただければと。家具の配置や床の様式など、ご意見さえくだされば、あとは私が。",
+                "ko": "그럼, 즐거운 마음으로 창의력을 마음껏 발휘하시기 바랍니다. 새로운 가구를 배치하시든, 바닥의 스타일을 변경하시든 말씀만 해 주시죠. 나머지는 제가 전부 알아서 처리하겠습니다.",
+                "th": "งั้นโปรดใช้จินตนาการและปลดปล่อยความคิดสร้างสรรค์ของคุณออกมาให้เต็มที่ได้เลย ไม่ว่าจะเป็นการจัดวางเฟอร์นิเจอร์ใหม่ หรือการเปลี่ยนรูปแบบพื้น ผมจะคอยรับฟังไอเดียจากคุณ ส่วนที่เหลือผมจัดการเอง",
+                "zh-Hans": "那么，请您抱着欢快的心情尽情挥洒创意吧。无论是摆设新的家具，还是变更地板的样式，您只需提出想法，剩下的交给我便好。",
+                "zh-Hant": "那麼，請您抱著歡快的心情盡情揮灑創意吧。無論是擺設新的家具，還是變更地板的樣式，您只需提出想法，剩下的交給我便好。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750006,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫5",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173210,
+                    "y": 1293530,
+                    "z": 24835
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Party-Deko",
+        "ja": "デコレーションのチュートリアル",
+        "ko": "파티 장식 튜토리얼",
+        "th": "คำแนะนำการตกแต่งปาร์ตี้",
+        "zh-Hans": "派对装潢引导",
+        "zh-Hant": "派對裝潢引導"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Lumi.",
+        "ko": "루미와 대화하기",
+        "th": "คุยกับ Lumi",
+        "zh-Hans": "与灯灯聊聊",
+        "zh-Hant": "與燈燈聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 162750005,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫4",
+          "areaId": 36002,
+          "position": {
+            "x": 1172835,
+            "y": 1291846,
+            "z": 24833
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750030,
+          "mapId": 8,
+          "blueprintType": "branch2.6_162_TsEntity_MN_B2_6_七丘_FemaleM_YN1_10",
+          "name": "TsEntity_MN_B2_6_七丘_FemaleM_YN1_10",
+          "areaId": 36003,
+          "position": {
+            "x": 1163635,
+            "y": 1315270,
+            "z": 34936
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750031,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_1BSW",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_1BSW",
+          "areaId": 36002,
+          "position": {
+            "x": 1180980,
+            "y": 1293020,
+            "z": 24008
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动引导任务第一天",
+          "flowIndex": 1,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Führst du Umfragen zur Kundenzufriedenheit durch, Lumi?",
+                "en": "Doing guest satisfaction surveys, Lumi?",
+                "fr": "Tu donnes des sondages de satisfaction aux invités, Lumi ?",
+                "ja": "{Male=灯灯、満足度調査でもしてるのか？;Female=灯灯、満足度調査でもしてるの？}",
+                "ko": "고객 만족도 조사 중인가요?",
+                "th": "Lumi เธอกำลังทำแบบสำรวจความพึงพอใจของลูกค้าเหรอ?",
+                "zh-Hans": "灯灯在做宾客满意度调查吗？",
+                "zh-Hant": "燈燈在做賓客滿意度調查嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach was, wozu auch! Ich habe vollstes Vertrauen in Herrn Copo und Lollo-Logistik! Er hat dir bestimmt schon von unserem Gastgeber erzählt? Wie hieß der noch mal …? Ach ja, Geiser!",
+                "en": "Oh, no need for that! I have full faith in Mr. Copo and Lollo Logistics! Bet he's already told you about the host? What's he called now...? Ah, Geisel!",
+                "fr": "Oh, non, c'est pas la peine ! J'ai une confiance totale en M. Copo et Loulou logistique ! Je parie qu'il t'a déjà parlé de l'hôte. Comment s'appelait-il déjà…? Ah oui, Geisel !",
+                "ja": "そんなの必要ないよ！わたしはコーポさんとブブ物流をすごく信頼してるから！あなたも、きっとコブ・コーポさんから宴の主について聞いたでしょ？ええっと……そう、ガイゼルさん！",
+                "ko": "조사라뇨! 전 코브 · 코포 씨와 무무 물류를 항상 믿고 있는걸요. 파티 호스트에 관한 이야기는 코브 · 코포 씨한테서 들으셨죠? 성함이 뭐였더라... 아, 가이젤 씨요!",
+                "th": "แบบสำรวจพวกนั้นไม่จำเป็นหรอกน่า ฉันมั่นใจในตัวคุณ Cobb Copo และลอลโล่โลจิสติกส์สุดๆ ! คุณคงได้ยินเรื่องเจ้าของงานเลี้ยงจากคุณ Cobb Copo แล้วใช่ไหม? ชื่อไรน้ออ... Geisel!",
+                "zh-Hans": "那种事情就不需要啦，我对柯布·科波先生和呜呜物流很有信心！你一定从柯布科波先生那里听说了宴会主人的事情吧？叫么子（越州方言）……盖泽尔！",
+                "zh-Hant": "那種事情就不需要啦，我對柯布·科波先生和嗚嗚物流很有信心！你一定從柯布科波先生那裡聽說了宴會主人的事情吧？叫么子（越州方言）……蓋澤爾！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750005,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫4",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1172835,
+                    "y": 1291846,
+                    "z": 24833
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja, das ist sein Name.",
+                    "en": "Yes, that's the name.",
+                    "fr": "Oui, c'est bien ça.",
+                    "ja": "{Male=ああ、聞いた。;Female=ええ、聞いた。}",
+                    "ko": "아, 확실히 들어본 적이 있어요",
+                    "th": "เคยได้ยินอยู่",
+                    "zh-Hans": "确实听过。",
+                    "zh-Hant": "確實聽過。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich wusste es. Er kann einfach nicht anders! Er labert ständig von Geiser – warum er weg ist, wo er hin ist. Und das gilt nicht nur für Herrn Copo. Alle hier stellen sich dieselbe Frage.",
+                "en": "I knew it. He can't help himself! Always talkin' about Geisel, why he left, where he went. And it's not just Mr. Copo. Everyone here is wonderin' the same.",
+                "fr": "Je le savais. Il ne peut pas s'en empêcher ! Il ne cesse de parler de Geisel, des raisons de son départ et de l'endroit où il est allé. Et il n'y a pas que M. Copo. Ici, tout le monde pose la même question.",
+                "ja": "そうだよね。彼はいつも、無意識のうちにガイゼルさんの話を口にするんだ。彼が去った原因、そして、行方……実は、コーポさんだけじゃなくて、ほかのお客さんたちも知りたがってるんだ。",
+                "ko": "그분, 항상 무의식적으로 가이젤 씨 이름을 부른다니까요? 대체 왜 떠난 건지, 어디로 간 건지... 사실 코브 · 코포 씨뿐만 아니라 파티에 참가한 다른 분들도 모두 궁금해하고 계세요",
+                "th": "เห็นป่ะ เขาชอบเผลอพูดถึง Geisel แบบไม่รู้ตัว ทำไมเขาไปจากที่นี่นะ แล้วตอนนี้เขาอยู่ที่ไหน จริงๆ ไม่ใช่แค่คุณ Cobb Copo หรอก คนอื่นๆ ในงานก็อยากรู้เหมือนกัน",
+                "zh-Hans": "看吧，他总是不自觉地把盖泽尔挂在嘴上，他到底为什么离开，又是去了哪里。其实，不只是柯布·科波先生，宴会的其他人也都很想知道咧。",
+                "zh-Hant": "看吧，他總是不自覺地把蓋澤爾掛在嘴上，他到底為什麼離開，又是去了哪裡。其實，不只是柯布·科波先生，宴會的其他人也都很想知道咧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750005,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫4",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1172835,
+                    "y": 1291846,
+                    "z": 24833
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Darum höre ich mich um. Ich muss der Sache bald auf den Grund gehen.",
+                "en": "That's why I'm askin' around. Gotta get to the bottom of it fast.",
+                "fr": "C'est pour ça que j'interroge tout le monde. Je veux lever le voile sur ce mystère, et vite.",
+                "ja": "だから、みんなにちゃんと話を聞いて、早くすべての謎をはっきりさせたい。",
+                "ko": "그래서 모든 분들한테 제대로 물어봐서 최대한 빨리 모든 걸 알아내려고요",
+                "th": "เพราะงั้น ฉันเลยอยากถามทุกคนให้ชัดเจนว่าเกิดอะไรขึ้น แล้วสืบทุกอย่างโดยเร็วที่สุด",
+                "zh-Hans": "所以，我想找所有人好好问问，尽快把这些事情全部查清楚。",
+                "zh-Hant": "所以，我想找所有人好好問問，盡快把這些事情全部查清楚。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750005,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫4",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1172835,
+                    "y": 1291846,
+                    "z": 24833
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine wirklich tolle Party sollte niemanden enttäuscht zurücklassen, oder?",
+                "en": "How can a truly good party leave anyone with regrets, right?",
+                "fr": "Les regrets donneraient un arrière-goût amer à nos festivités parfaites, pas vrai ?",
+                "ja": "こういうパーティーは、全員で心おきなく楽しまなくっちゃ。そうでしょ？",
+                "ko": "진정으로 즐거운 파티라면 그 누구도 아쉬움을 남겨선 안 되는 법이니까. 안 그런가요?",
+                "th": "งานปาร์ตี้สุดหรรษาที่แท้ทรู ต้องไม่ทิ้งปมไว้ให้ผู้ร่วมงานคาใจ คุณคิดว่างี้ไหม?",
+                "zh-Hans": "一个真正欢乐的派对，总不能让任何人留有遗憾，你说对吧？",
+                "zh-Hant": "一個真正歡樂的派對，總不能讓任何人留有遺憾，你說對吧？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750005,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫4",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1172835,
+                    "y": 1291846,
+                    "z": 24833
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Genau so ist es.",
+                    "en": "Couldn't have said it better.",
+                    "fr": "Je n'aurais pas dit mieux moi-même.",
+                    "ja": "{Male=灯灯の言う通りだ。;Female=灯灯の言う通りね。}",
+                    "ko": "루미 말이 맞아요",
+                    "th": "Lumi พูดถูกเผง!",
+                    "zh-Hans": "灯灯说得很对。",
+                    "zh-Hant": "燈燈說得很對。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das ist wirklich nett von dir, Lumi.",
+                    "en": "That's very sweet, Lumi.",
+                    "fr": "C'est très gentil de ta part, Lumi.",
+                    "ja": "{Male=よく言ったな、灯灯。;Female=よく言ったね、灯灯。}",
+                    "ko": "루미, 감동적이네요",
+                    "th": "Lumi น่าประทับใจจัง",
+                    "zh-Hans": "灯灯，令人感动。",
+                    "zh-Hant": "燈燈，令人感動。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hehe, dann frage ich mal weiter! Aber hey, mach dir deshalb keinen Kopf. Genieße einfach die Party und nimm viele schöne Erinnerungen mit!",
+                "en": "Hehe, I'll carry on with my questions then! But hey, don't you go worryin' about it. Just enjoy yourself and leave with a heart full of happy memories!",
+                "fr": "Héhé, je vais poursuivre mes interrogatoires, alors ! Hé, ne te fais pas de bile, d'accord ? Amuse-toi, et tâche de repartir le cœur rempli de joyeux souvenirs !",
+                "ja": "えへへ。じゃあ、わたしは話の続きを聞いてくるね！もちろん、あなたは気にせずに、パーティーを思いっきり楽しんでね。心残りができないように！",
+                "ko": "헤헤, 전 그럼 계속 알아볼게요! 방랑자는 신경 쓰지 마시고, 후회 없이 신나게 파티를 즐기시면 돼요!",
+                "th": "อิอิ งั้นฉันจะไปสอบถามต่อนะ! คุณไม่ต้องห่วงเรื่องนี้หรอกนะ สนุกกับงานปาร์ตี้ให้เต็มที่ จะได้ไม่รู้สึกเสียดายทีหลัง!",
+                "zh-Hans": "嘿嘿，那我继续去问啦！当然，这件事请你不要挂在心上。只要好好享受这场派对就好，不要留下任何遗憾哦！",
+                "zh-Hant": "嘿嘿，那我繼續去問啦！當然，這件事請你不要掛在心上。只要好好享受這場派對就好，不要留下任何遺憾哦！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750005,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫4",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1172835,
+                    "y": 1291846,
+                    "z": 24833
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "parentId": 12,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frag Lumi, ob sie etwas Neues entdeckt hat.",
+        "ko": "루미를 찾아 새로운 발견이 있는지 물어보기",
+        "th": "ถาม Lumi ว่าพบอะไรใหม่บ้าง",
+        "zh-Hans": "问问灯灯有没有新发现",
+        "zh-Hant": "問問燈燈有沒有新發現"
+      },
+      "entities": [
+        {
+          "entityId": 162750006,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫5",
+          "areaId": 36002,
+          "position": {
+            "x": 1173210,
+            "y": 1293530,
+            "z": 24835
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750007,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+          "areaId": 36002,
+          "position": {
+            "x": 1173390,
+            "y": 1293460,
+            "z": 24825
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750030,
+          "mapId": 8,
+          "blueprintType": "branch2.6_162_TsEntity_MN_B2_6_七丘_FemaleM_YN1_10",
+          "name": "TsEntity_MN_B2_6_七丘_FemaleM_YN1_10",
+          "areaId": 36003,
+          "position": {
+            "x": 1163635,
+            "y": 1315270,
+            "z": 34936
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750031,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_1BSW",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_1BSW",
+          "areaId": 36002,
+          "position": {
+            "x": 1180980,
+            "y": 1293020,
+            "z": 24008
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750033,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM12_6",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM12_6",
+          "areaId": 36002,
+          "position": {
+            "x": 1184354,
+            "y": 1292536,
+            "z": 24203
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750054,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_4",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_JDS2_10",
+          "areaId": 33102,
+          "position": {
+            "x": 1210500,
+            "y": 1209100,
+            "z": 28500
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动引导任务第一天",
+          "flowIndex": 1,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Deinem Gesichtsausdruck zufolge hast du einen Hinweis gefunden, nicht wahr, Lumi?",
+                "en": "Judging by that look on your face, you've dug up a clue, haven't you, Lumi?",
+                "fr": "D'après ton expression, j'en déduis que tu as trouvé un indice. Pas vrai, Lumi ?",
+                "ja": "{Male=灯灯、何か聞き出せたのか？;Female=灯灯、何か聞き出せたの？}",
+                "ko": "루미. 보아하니, 뭔가 알아낸 모양이네요?",
+                "th": "Lumi ดูเหมือนเธอจะได้ข้อมูลอะไรบางอย่างมาแล้วใช่ไหม?",
+                "zh-Hans": "灯灯，看你的样子，是不是打听出了什么？",
+                "zh-Hant": "燈燈，看你的樣子，是不是打聽出了什麼？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mhm … Nicht ganz die Antwort, nach der wir suchen, aber ich habe etwas Interessantes gehört.",
+                "en": "Mm… not the answer we're lookin' for, but I did hear somethin' intriguing.",
+                "fr": "Hmm… ce n'est pas vraiment la réponse que l'on cherchait, mais j'ai bien entendu quelque chose d'intrigant.",
+                "ja": "うん……はっきりしたことは分からないんだけど、気になる話を聞いちゃって。",
+                "ko": "음... 아직 답을 찾은 건 아니지만 한 가지 신경 쓰이는 소식을 들었어요",
+                "th": "อืม... ถึงยังไม่ได้คำตอบชัดเจน แต่ก็ได้ข้อมูลชวนสงสัยมาอย่างนึง",
+                "zh-Hans": "嗯……虽然还没有得到答案，但听说了一件令人在意的事情。",
+                "zh-Hant": "嗯……雖然還沒有得到答案，但聽說了一件令人在意的事情。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lass hören.",
+                    "en": "Let's hear it.",
+                    "fr": "Dis-moi tout.",
+                    "ja": "教えてほしい。",
+                    "ko": "어떤 거죠?",
+                    "th": "ยังไงไหนเล่าซิ๊",
+                    "zh-Hans": "说来听听。",
+                    "zh-Hant": "說來聽聽。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin ganz Ohr.",
+                    "en": "I'm listening.",
+                    "fr": "J'écoute.",
+                    "ja": "{Male=聞かせてくれ。;Female=聞かせて。}",
+                    "ko": "말해 줄 수 있을까요?",
+                    "th": "ขอฟังรายละเอียดหน่อย",
+                    "zh-Hans": "愿闻其详。",
+                    "zh-Hant": "願聞其詳。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich habe gehört, dass Geiser bei seinem letzten Besuch eine Dame dabei hatte. Aber angeblich war sie furchtbar unhöflich.",
+                "en": "I heard that during Geisel's last visit, he brought a lady with him, but they all said she was terribly rude.",
+                "fr": "Il semblerait que lors de sa dernière visite, Geisel était accompagné d'une femme. Mais les invités sont unanimes : elle a été d’une impolitesse révoltante.",
+                "ja": "ガイゼルさんが最後に訪れた時、一緒に女性もいたんだって。みんなが言うには、すごく無礼な女性らしいよ。",
+                "ko": "가이젤 씨가 마지막으로 방문했을 때, 어떤 여성분도 같이 오셨대요. 그런데 다들 그 분이 너무 무례했다고 하는 거예요",
+                "th": "ฉันได้ยินมาว่า ตอนที่ Geisel มาเยี่ยมเยือนครั้งสุดท้าย เขาพาแฟนสาวมาด้วย แต่ทุกคนบอกว่าเธอเป็นผู้หญิงที่ไม่ค่อยมีมารยาทเท่าไหร่",
+                "zh-Hans": "我听说，在盖泽尔最后一次来访的时候，身边还带着一位女伴哦。不过，他们都说，那是个很不礼貌的女士。",
+                "zh-Hant": "我聽說，在蓋澤爾最後一次來訪的時候，身邊還帶著一位女伴哦。不過，他們都說，那是個很不禮貌的女士。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wieso das?",
+                    "en": "How so?",
+                    "fr": "Comment ça ?",
+                    "ja": "つまり？",
+                    "ko": "어떤 부분에서요?",
+                    "th": "ทำไมถึงคิดแบบนั้นล่ะ?",
+                    "zh-Hans": "何以见得？",
+                    "zh-Hant": "何以見得？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es war das erste Mal, dass Geiser in Damenbegleitung war, also waren alle erfreut. Das feinste Essen wurde aufgetischt, die feinsten Räumlichkeiten herausgeputzt, aber das interessierte sie nicht die Bohne.",
+                "en": "It was Geisel's first time bringing a lady back, so everyone was glad. They laid out the best food, prepared the finest room. But she didn't seem to care one bit.",
+                "fr": "Tout le monde se faisait une joie de voir Geisel convier une dame à la fête pour la première fois, alors ils ont sorti leurs meilleurs plats et préparé la plus belle pièce. Pourtant, elle n'en avait rien à faire.",
+                "ja": "ガイゼルさんが初めて女性を連れて帰ってきたから、みんなすごく喜んで、最高の食事と快適な部屋を用意したんだって。でも、その女性はあまり興味がなかったみたい。",
+                "ko": "가이젤 씨가 여성분을 데리고 온 건 처음이라 다들 기뻐하면서 맛있는 음식도 내오고, 가장 좋은 방도 마련해 드렸는데... 그분은 별 반응이 없었다고 하네요",
+                "th": "ครั้งแรกที่ Geisel พาแฟนสาวกลับมา ทุกคนดีใจมาก จัดเตรียมอาหารอร่อยที่สุด จัดห้องพักที่สบายที่สุด แต่ผู้หญิงคนนั้นกลับดูเหมือนไม่ยินดีเลย",
+                "zh-Hans": "盖泽尔第一次带女伴回来，大家其实都很高兴，拿出最好的食物，收拾出最舒适的房间，可这位女士好像一点都不领情呢。",
+                "zh-Hant": "蓋澤爾第一次帶女伴回來，大家其實都很高興，拿出最好的食物，收拾出最舒適的房間，但這位女士好像一點都不領情呢。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie aß nichts, trank nichts, würdigte den Raum nicht eines Blickes. Stolzierte nur ein bisschen herum und ging dann alleine.",
+                "en": "She didn't eat, didn't drink, didn't even bother looking at the room. Just strutted around a bit, then left on her own.",
+                "fr": "Elle n'a rien mangé, elle n'a rien bu, et elle n'a même pas regardé les décorations. Elle s'est contentée de faire son petit tour et de repartir seule.",
+                "ja": "あまり食事を取らずに、部屋を見ることもなく、軽く見て回ってから一人で帰ったとか。",
+                "ko": "먹고 마시기는커녕 방에는 눈길조차 주지 않았대요. 그냥 한 바퀴 둘러보고는 먼저 떠났다지 뭐예요",
+                "th": "ไม่ดื่มไม่ดริ้งก์ ไม่ชายตามองห้องพักเลย เอาแต่เดินวนรอบๆ สักพักแล้วก็ปลีกตัวไปคนเดียว",
+                "zh-Hans": "没吃也没喝，房间也是看都没看一眼。只是轻佻地转了一圈，没多久就自个儿走了。",
+                "zh-Hant": "沒吃也沒喝，房間也是看都沒看一眼。只是輕佻地轉了一圈，沒多久就自個兒走了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt seltsam.",
+                    "en": "That's strange.",
+                    "fr": "C'est étrange.",
+                    "ja": "{Male=変な話だな。;Female=変な話だね。}",
+                    "ko": "확실히 이상하네요",
+                    "th": "มีเงื่อนงำแน่ๆ",
+                    "zh-Hans": "真是奇怪。",
+                    "zh-Hant": "真是奇怪。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ach, und bevor sie ging, machte sie noch Stunk und sagte was wie: „Es wird Zeit, dass du erwachsen wirst, Geiser.“",
+                "en": "Oh! And apprantly before she left, she got a wee bit cross and said somethin' like \"It's time you grew up, Geisel.\"",
+                "fr": "Oh ! Et avant de partir, elle aurait froncé les sourcils en déclarant : « Il serait temps de grandir un peu, Geisel ».",
+                "ja": "それと、去る前の彼女は、少し怒ってたらしいね。「もう大人になりなさい、ガイゼル」って。",
+                "ko": "그리고 떠나기 전에 화난 목소리로 이렇게 말했대요. 「어른이 될 때가 왔어요, 가이젤」",
+                "th": "แล้วก่อนที่เธอจะจากไป เธอก็พูดด้วยเสียงไม่ค่อยพอใจว่า \"นายควรโตซะทีนะ Geisel\"",
+                "zh-Hans": "还有呢，离开前，她还有些生气地说过一句话。什么：“你该长大了，盖泽尔。”",
+                "zh-Hant": "還有呢，離開前，她還有些生氣地說過一句話。什麼：「你該長大了，蓋澤爾。」"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was soll das denn bedeuten?",
+                    "en": "What's that supposed to mean?",
+                    "fr": "Qu'est-ce que ça peut bien vouloir dire ?",
+                    "ja": "{Male=それは、どういう意味だ……？;Female=それは、どういう意味……？}",
+                    "ko": "대체 무슨 뜻이죠?",
+                    "th": "มันหมายความว่ายังไงกันเนี่ย...",
+                    "zh-Hans": "到底是什么意思呢。",
+                    "zh-Hant": "到底是什麼意思呢。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, oder? Das ergibt keinen Sinn! Kurz darauf verschwand Geiser jedenfalls selbst.",
+                "en": "Right? It makes no sense! But anyway, not long after that, Geisel himself left.",
+                "fr": "J'en sais rien ! Ça n'a aucun sens ! Quoi qu'il en soit, après ça, Geisel lui-même n'a pas tardé à partir.",
+                "ja": "うーん、よく分からない。とにかく、それからしばらくして、ガイゼルさんもいなくなったって聞いたよ。",
+                "ko": "그러니까요. 도무지 알 수가 없단 말이죠. 아무튼, 얼마 지나지 않아 가이젤 씨도 이곳을 떠났대요",
+                "th": "นั่นสิ ฉันก็ไม่เข้าใจเหมือนกัน สรุปแล้วไม่นานหลังจากนั้น Geisel ก็จากไปที่นี่",
+                "zh-Hans": "对呀，真是搞不明白咧，总之，后面没过多久，盖泽尔就离开了这里。",
+                "zh-Hant": "對呀，真是搞不明白咧，總之，後面沒過多久，蓋澤爾就離開了這裡。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Klingt fast so, als hätte er all das für sie aufgegeben. Aber … ich bezweifle, dass es so einfach ist.",
+                "en": "Sounds like he left this all behind for her. But... I doubt it's that simple.",
+                "fr": "J'ai presque l'impression qu'il a abandonné cet endroit pour ses beaux yeux. Mais… ça paraît trop simple.",
+                "ja": "{Male=話を聞く限り、その女性のためにガイゼルはここを捨てたように思える。だが、そう単純な話ではないような。;Female=話を聞く限り、その女性のためにガイゼルはここを捨てたように思える。だけど、そう単純な話ではないような。}",
+                "ko": "가이젤 씨가 그분 때문에 이곳을 버린 것 같은 느낌이네요. 하지만, 그 뒤에 뭔가 숨겨진 이유가 있는 것 같아요",
+                "th": "ฟังดูเหมือน Geisel ทิ้งที่นี่ไปเพื่อผู้หญิงคนนั้น แต่... ฉันว่ามันไม่น่าใช่แค่นั้น",
+                "zh-Hans": "听起来，像是盖泽尔为了这位女士抛弃了这里。但……总觉得事情没有这么简单。",
+                "zh-Hant": "聽起來，像是蓋澤爾為了這位女士拋棄了這裡。但……總覺得事情沒有這麼簡單。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das denke ich auch! Ein Hinweis führt immer zum nächsten. Die Party mag irgendwann zu Ende gehen, aber wir haben immer noch Zeit, das Rätsel zu lösen.",
+                "en": "Exactly my thoughts! One clue will always lead to another. The party may end eventually, but we've still got time to figure it out.",
+                "fr": "On est sur la même longueur d'onde ! Un indice en mène toujours à un autre. La fête s'achèvera bien un jour, mais nous avons encore le temps de résoudre ce mystère.",
+                "ja": "わたしもそう思う。とにかく、手掛かりが見つかったからには、きっと何か分かるはずだよ。パーティーは終わっちゃうけど、まだ時間はたくさんあるし。",
+                "ko": "저도 같은 생각이에요. 단서를 찾았으니까, 더 많은 걸 파헤칠 수 있을 거예요. 파티는 끝나겠지만 시간은 아직 많이 남았으니까요",
+                "th": "ฉันก็คิดแบบนั้นเหมือนกัน จะยังไงก็ช่างเถอะ ในเมื่อมีเบาะแสแล้ว ก็ต้องหาข้อมูลเพิ่มเติมได้แน่นอน ถึงงานปาร์ตี้จะจบลง แต่เรายังมีเวลาอีกเยอะ",
+                "zh-Hans": "我也这么想，总之，既然有了线索，就一定能挖出更多事情。派对虽然会结束，但毕竟还有很多时间嘛。",
+                "zh-Hant": "我也這麼想，總之，既然有了線索，就一定能挖出更多事情。派對雖然會結束，但畢竟還有很多時間嘛。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Genug geschnüffelt fürs Erste! Zurück zur Partyordnung. Herr Copo meint, wir brauchen morgen neue Bereiche, also mache ich mich mal an die Arbeit!",
+                "en": "Alright, enough snoopin' for now! Back to party business. Mr. Copo says we need new areas ready tomorrow, so I'd best get crackin'!",
+                "fr": "Bon, j'ai assez fouiné pour aujourd'hui ! Je retourne m'atteler à la fête. D'après M. Copo, on aura besoin de nouvelles zones, pour demain, donc je dois me retrousser les manches !",
+                "ja": "そうだ。聞き込みばっかりしてないで、そろそろパーティーの準備に戻らなきゃ。コーポさんにも、明日はもっと広いエリアを片付けてって言われたから。のんびりしてると間に合わなくなっちゃう。",
+                "ko": "아참, 소식만 캐고 다니느라 파티 일은 하나도 못 했으니 이제 슬슬 착수해야겠네요. 코브 · 코포 씨가 그러는데, 내일 더 많은 구역을 만들겠대요. 지금 안 하면 시간이 부족하다나요",
+                "th": "ไปถามนู่นถามนี่มาตั้งนาน ฉันควรต้องไปจัดการเรื่องงานปาร์ตี้บ้างแล้วล่ะ คุณ Cobb Copo บอกว่า พรุ่งนี้ต้องจัดเตรียมพื้นที่เพิ่มอีก ถ้ามัวชักช้าคงไม่ทันแน่",
+                "zh-Hans": "对了，问了这么久，我该去忙些派对本身的事啦。柯布·科波先生说，明天要收拾更多区域出来。再拖下去，可就等不及啦。",
+                "zh-Hant": "對了，問了這麼久，我該去忙些派對本身的事啦。柯布·科波先生說，明天要收拾更多區域出來。再拖下去，可就等不及啦。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1437,
+                "name": {
+                  "zh-Hans": "灯灯"
+                },
+                "entity": {
+                  "entityId": 162750007,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫6",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173390,
+                    "y": 1293460,
+                    "z": 24825
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parentId": 20,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche nach Herrn Copo.",
+        "ko": "코브 · 코포 찾기",
+        "th": "ตามหา Cobb Copo",
+        "zh-Hans": "寻找柯布·科波",
+        "zh-Hant": "尋找柯布·科波"
+      },
+      "entities": [
+        {
+          "entityId": 162750000,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条_狩猎营地_走进狩猎营地",
+          "areaId": 36,
+          "position": {
+            "x": 1185107,
+            "y": 1290340,
+            "z": 24318
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750001,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口",
+          "areaId": 36,
+          "position": {
+            "x": 1185107,
+            "y": 1290360,
+            "z": 24278
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 162750002,
+          "mapId": 8,
+          "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+          "areaId": 36002,
+          "position": {
+            "x": 1173772,
+            "y": 1293162,
+            "z": 24840
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动引导任务第一天",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Es scheint, als hättest du die Regeln voll und ganz gemeistert, Fräulein Jinhsi. Der Tisch wartet nun nur noch auf die Hand deines Kontrahenten.",
+                "en": "It seems you have mastered the rules in full, Miss Jinhsi. The table now awaits only the hand of your opponent.",
+                "fr": "Je vois que vous maîtrisez déjà les règles, Mademoiselle Jinhsi. La table n'attend plus que la main de votre adversaire.",
+                "ja": "どうやら、今汐様はゲームのルールを完全にマスターされたご様子ですね。どなたかと腕試しをされてはいかがでしょう。",
+                "ko": "보아하니, 영윤 대인 금희 님께선 이미 게임의 규칙을 다 익히신 것 같군요. 그렇다면 상대를 찾아 한판 겨뤄 보셔야죠",
+                "th": "ดูเหมือนว่า คุณ Jinhsi ได้เข้าใจกฎของเกมอย่างสมบูรณ์แล้ว ต่อไปก็สามารถหาคู่แข่งมาประลองได้แล้วนะครับ",
+                "zh-Hans": "看来，今汐小姐已经完全掌握了游戏的规则。接下来，就可以找人切磋一把了。",
+                "zh-Hant": "看來，今汐小姐已經完全掌握了遊戲的規則。接下來，就可以找人切磋一把了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke, Herr Copo. Ich glaube, {Male=er;Female=sie} ist gerade eingetroffen.",
+                "en": "Thank you, Mr. Copo. I believe {Male=he;Female=she} has just arrived.",
+                "fr": "Merci, M. Copo. Je crois {Male=qu'il;Female=qu'elle} vient juste d'arriver.",
+                "ja": "ありがとうございます。余が待つ相手は、もういらしゃったようですね。",
+                "ko": "고마워요, 코브 · 코포 씨. 안 그래도 제 상대분께서 오신 것 같네요",
+                "th": "ขอบคุณนะคะ คุณ Cobb Copo ฉันคิดว่าคู่แข่งของฉันคงมาถึงแล้ว",
+                "zh-Hans": "谢谢柯布·科波先生，我想，我的对手已经来了。",
+                "zh-Hant": "謝謝柯布·科波先生，我想，我的對手已經來了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jinhsi wendet sich um und blickt dich an, bis du an ihrer Seite stehst.",
+                "ko": "금희가 고개를 돌려 당신이 곁으로 다가올 때까지 쳐다본다",
+                "th": "Jinhsi หันกลับมามองคุณ จนกระทั่งคุณเดินไปข้างๆ เธอ",
+                "zh-Hans": "今汐回头看向你，直到你走到她的身边。",
+                "zh-Hant": "今汐回頭看向你，直到你走到她的身邊。"
+              },
+              "id": 19
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, lang ist’s her. Ich habe bereits von deiner Ankunft gehört und hier auf dich gewartet.",
+                "en": "{PlayerName}, it has been too long. Word of your arrival reached me, so I've been waiting here.",
+                "fr": "{PlayerName}, tu m'as manquée. Je t'attends depuis que j'ai reçu des nouvelles de ton arrivée.",
+                "ja": "{PlayerName}、お久しぶりです。あなたが来ると聞き、余はずっと待っていました。",
+                "ko": "방랑자, 오랜만이에요. 오신다는 소식을 듣고 여기서 당신을 계속 기다리고 있었어요",
+                "th": "{PlayerName} ไม่ได้เจอกันนานเลยนะ ได้ยินมาว่าคุณจะมาที่นี่ ฉันก็เลยรอคุณอยู่ตรงนี้",
+                "zh-Hans": "{PlayerName}，好久不见。听说你要来，我便一直在这里等你。",
+                "zh-Hant": "{PlayerName}，好久不見。聽說你要來，我便一直在這裡等你。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jinhsi, es ist wirklich zu lange her … Ich dachte, du würdest Jinzhou nie verlassen.",
+                "en": "Jinhsi, it really has been too long… I thought you'd never leave Jinzhou.",
+                "fr": "Jinhsi, ça faisait vraiment longtemps… Je croyais que tu ne quitterais jamais Jinzhou.",
+                "ja": "{Male=今汐、久しぶりだな……てっきり、ずっと今州にいると思った。;Female=今汐、久しぶりだね……てっきり、ずっと今州にいると思った。}",
+                "ko": "오랜만이네요, 금희... 금주에 계속 계실 줄 알았는데",
+                "th": "ไม่เจอกันนานเลยนะ Jinhsi... ฉันคิดว่าเธอจะอยู่ที่จินโจวไปตลอดซะอีก",
+                "zh-Hans": "今汐，好久不见……我以为你要一直留在今州。",
+                "zh-Hant": "今汐，好久不見……我以為你要一直留在今州。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun … ich bin immer noch in Jinzhou.",
+                "en": "Well… I still am in Jinzhou.",
+                "fr": "Eh bien… Je suis toujours à Jinzhou.",
+                "ja": "……確かに、余は今も今州にいます。",
+                "ko": "사실... 금주에 있는 게 맞아요",
+                "th": "จริงๆ แล้ว... ฉันก็ยังอยู่ที่จินโจวนั่นแหละ",
+                "zh-Hans": "其实……我的确还在今州。",
+                "zh-Hant": "其實……我的確還在今州。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Eine weitere Projektion?",
+                    "en": "Another projection?",
+                    "fr": "C'est une autre projection ?",
+                    "ja": "{Male=また映像か？;Female=また映像なの？}",
+                    "ko": "설마 또 영상 메시지인가요?",
+                    "th": "ใช้โฮโลกราฟิกอีกแล้วเหรอ?",
+                    "zh-Hans": "竟然又是影像吗？",
+                    "zh-Hant": "竟然又是影像嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Huanglongs Holografietechnologie kann sich mittlerweile sehen lassen.",
+                    "en": "Huanglong's holographic tech has come a long way.",
+                    "fr": "Les hologrammes de Huanglong ont fait un bond en avant.",
+                    "ja": "{Male=瑝瓏の映像技術は日進月歩だな。;Female=瑝瓏の映像技術は日進月歩だね。}",
+                    "ko": "황룡의 영상 기술은 참 발전이 빠르네요",
+                    "th": "เทคโนโลยีโฮโลกราฟิกของหวงหลงพัฒนารวดเร็วจริงๆ",
+                    "zh-Hans": "瑝珑的影像技术真是突飞猛进。",
+                    "zh-Hant": "瑝瓏的影像技術真是突飛猛進。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Allerdings. Wir haben der Huaxu-Akademie zusätzliche Ressourcen zur Verfügung gestellt. Die Früchte ihrer harten Arbeit siehst du vor dir.",
+                "en": "Yes. We've invested more resources in Huaxu Academy. Their hard work has borne exceptional fruit.",
+                "fr": "Oui. Nous avons investi davantage de ressources dans l'académie de Huaxu. Le travail acharné de ses membres a produit des résultats exceptionnels.",
+                "ja": "はい。最近は華胥研究院に、より多くの資金とリソースを投入しました。これほどの技術進歩が見られたのも、ひとえに研究員たちの尽力の賜物です。",
+                "ko": "네. 최근 화서연구원에 더 많은 자원을 투입했고, 그분들의 노력 덕분에 빠른 기술 발전을 이뤄냈어요",
+                "th": "ใช่แล้วล่ะ เมื่อไม่นานมานี้ เราลงทุนเพิ่มเติมให้กับสถาบันหัวซวี เพราะความทุ่มเทของพวกเขา เทคโนโลยีเลยพัฒนาแบบก้าวกระโดดขนาดนี้",
+                "zh-Hans": "是的，我们最近给华胥研究院投入了更多资源，多亏了他们的努力，技术才能发展得这么快。",
+                "zh-Hant": "是的，我們最近給華胥研究院投入了更多資源，多虧了他們的努力，技術才能發展得這麼快。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Ingenieursabteilung ließ mich wissen, dass dies mehr als ein bloßes Hologramm ist. Das nächste Mal können wir uns vielleicht auf „greifbarere“ Weise außerhalb von Huanglong treffen.",
+                "en": "The engineers inform me that this goes beyond mere holograms. Next time, the tech may have advancecd enough to meet in a more tangible way outside Huanglong.",
+                "fr": "D'après les ingénieurs, cette technologie va bien au-delà d'un simple hologramme. Notre prochaine rencontre en dehors de Huanglong pourrait bien être tangible.",
+                "ja": "担当者の話によれば、ただの映像伝送ではないそうです。次からは瑝瓏の外でも、より実感を伴った出会いが叶うかもしれませんね。",
+                "ko": "기술자들의 말에 따르면, 이건 단순한 영상 전송이 아니라고 해요. 아마 다음에는 황룡 밖에서도 더 현실감 있게 만나 뵐 수 있을지도 모르겠네요",
+                "th": "จากที่เจ้าหน้าที่เทคโนโลยีบอก นี่ไม่ใช่แค่การถ่ายทอดโฮโลกราฟิกธรรมดา ไม่แน่ว่าครั้งหน้าเราอาจจะพบกันนอกหวงหลงแบบตัวจริงเสียงจริงก็ได้นะ",
+                "zh-Hans": "按技术人员的说法，这可不是简单的影像传输，说不定，下次我们可以更切实地在瑝珑外的地方见面了。",
+                "zh-Hant": "按技術人員的說法，這可不是簡單的影像傳輸，說不定，下次我們可以更切實地在瑝瓏外的地方見面了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, erlaube mir, Herrn Copo vorzustellen. Ich war gerade dabei, ihm von deinen Heldentaten zu berichten.",
+                "en": "Ah, allow me to introduce Mr. Copo. I was just sharing some of your exploits with him.",
+                "fr": "Ah, laisse-moi te présenter M. Copo. Je lui énumérais justement tes exploits.",
+                "ja": "こちらはコブ・コーポさんです。先ほど、余は彼にあなたのことを少し話していました。",
+                "ko": "아, 이 분은 코브 · 코포 씨에요. 방금 전까지 이분과 당신에 관한 이야기를 하던 참이었어요",
+                "th": "อ้อ นี่คือคุณ Cobb Copo ฉันเพิ่งเล่าเรื่องคุณให้เขาฟัง",
+                "zh-Hans": "对了，这位是柯布·科波先生。我刚刚还对他提起过你的事迹。",
+                "zh-Hant": "對了，這位是柯布·科波先生。我剛剛還對他提起過你的事跡。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Cobb Copo zu Diensten. Dein Auftreten ist bemerkenswert … Man könnte dich direkt für {Male=den Gastgeber;Female=die Gastgeberin} dieses Festes halten.",
+                "en": "Cobb Copo, at your service. What an extraordinary demeanor. One might easily mistake you for the very host of this fest.",
+                "fr": "Cobb Copo, à votre service. Vous dégagez une prestance extraordinaire… à tel point qu'on pourrait aisément vous prendre pour l'hôte de ces festivités.",
+                "ja": "コブ・コーポと申します。お目にかかれて光栄です。やはり、非凡な佇まい……そこに立っているだけで、この場の主と思えるほどの風格が感じられます。",
+                "ko": "만나 뵙게 되어 영광입니다. 듣던 대로 평범하지 않은 분이신 것 같군요. 가만히 서 계시는 것만으로도 높은 분 같은 기품이 흘러넘치십니다",
+                "th": "Cobb Copo เคยพบคุณแล้วล่ะ คุณมีสง่าราศีที่ไม่เหมือนใคร แค่ยืนอยู่ตรงนี้ก็มองเห็นบารมีของเจ้าภาพได้อย่างชัดเจน",
+                "zh-Hans": "柯布·科波见过阁下。您的气质果然非同凡响，只需站在这里，便自有一番东道主的神采。",
+                "zh-Hant": "柯布·科波見過閣下。您的氣質果然非同凡響，只需站在這裡，便自有一番東道主的神采。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750001,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290360,
+                    "z": 24278
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Apropos, wo ist der Gastgeber?",
+                "en": "Speaking of which, where is the host?",
+                "fr": "En parlant de ça, où se trouve cet hôte ?",
+                "ja": "{Male=「終わりのない宴」の主は、ここにいるのか？;Female=「終わりのない宴」の主は、ここにいるの？}",
+                "ko": "그러고 보니, 이 끝없는 파티의 호스트분도 이곳에 계시나요?",
+                "th": "จะว่าไปเจ้าของงานเลี้ยงนิจนิรันดร์ก็อยู่ที่นี่ด้วยเหรอ?",
+                "zh-Hans": "说起来，无尽宴会的主人也在这里吗？",
+                "zh-Hant": "說起來，無盡宴會的主人也在這裡嗎？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Herr Geiser verweilt hier nur selten. Einst pflegte er nach Belieben zu kommen und zu gehen, aber seit seiner letzten Abreise ist viel Zeit verstrichen. Ich fürchte …",
+                "en": "Mr. Geisel rarely resides here. He used to come and go, but it has been a very long time since his last departure. I'm afraid…",
+                "fr": "M. Geisel ne se joint que rarement à nous. Jadis, il venait et repartait souvent, mais je crains que cela ne fasse très longtemps qu'il ne nous a pas rendu visite…",
+                "ja": "ガイゼル様は、普段ここにおりません。時折お戻りになりますが、前回お発ちになってから、長いことお見えになっていませんね。あるいは……",
+                "ko": "가이젤 씨는 원래 이곳에 늘 계시는 분이 아닙니다. 가끔, 아주 가끔씩 잠깐 들르시곤 하셨죠. 하지만... 지난번에 떠나신 이후론 오랫동안 나타나지 않으셨습니다. 어쩌면...",
+                "th": "คุณ Geisel ไม่ค่อยอยู่ที่นี่หรอกครับ ท่านกลับมาเป็นครั้งคราว นับตั้งแต่ที่ท่านจากไป ก็ไม่กลับมาเลย บางที...",
+                "zh-Hans": "盖泽尔先生平日不在这里，只是时不时会回来，但自上回离开，他已经很久很久没有出现了，也许……",
+                "zh-Hant": "蓋澤爾先生平日不在這裡，只是三不五時會回來，但自上回離開，他已經很久很久沒有出現了，也許……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750001,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290360,
+                    "z": 24278
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, verzeiht meine Unbedachtsamkeit. Heute seid ihr die Sterne dieses Festes – nein, dieser Party. Bitte, keine Zurückhaltung. Amüsiert euch.",
+                "en": "Ah, forgive me. I've spoken out of turn. Tonight, you are the stars of this fest—no, this party. Please, no need for reserve. Enjoy it to the fullest.",
+                "fr": "Ah, excusez-moi. Mes histoires ne vous intéressent pas. Ce soir, vous êtes les vedettes des festi… non, de la fête. Ne soyez pas timides, et profitez pleinement de l'occasion.",
+                "ja": "申し訳ありません、つい余計なことを……今はあなた方が、この宴……いえ、パーティーの主役です。どうか、遠慮せず心ゆくまでお楽しみください。",
+                "ko": "죄송합니다, 제가 또 말이 많았군요. 지금 이 연회... 아니, 파티의 주인공은 바로 여러분이니까요. 아무것도 신경 쓰지 마시고, 오직 즐거운 시간만 보내시기 바랍니다",
+                "th": "ขออภัยด้วยครับ ผมพูดมากไปหน่อย ตอนนี้พวกคุณต่างหากที่เป็นคนสำคัญของงานเลี้ยง อ๊ะ ไม่สิ งานปาร์ตี้นี้... เชิญตามสบายนะครับ ตักตวงช่วงเวลาแห่งความสุขกันเถอะ",
+                "zh-Hans": "抱歉，我又多言了。现在你们才是这场宴会……不，派对的主角。请不要有任何拘谨，尽情享受欢乐时光吧。",
+                "zh-Hant": "抱歉，我又多言了。現在你們才是這場宴會……不，派對的主角。請不要有任何拘謹，盡情享受歡樂時光吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750001,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290360,
+                    "z": 24278
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In diesem Sinne verabschiede ich mich. Sollten meine Dienste vonnöten sein, wendet euch jederzeit an mich.",
+                "en": "With that, I'll take my leave. Should you need anything, you have but to call.",
+                "fr": "Sur ce, je vais prendre congé. S'il vous faut autre chose, n'hésitez pas à m'appeler.",
+                "ja": "では、一度失礼いたします。何かお役に立てることがございましたら、いつでもお呼びつけください。",
+                "ko": "그럼 전 이만 물러가겠습니다. 필요하시다면 언제든 불러주십시오",
+                "th": "ผมคงต้องขอตัวก่อน หากมีอะไรที่ผมช่วยได้ กรุณาบอกมาได้เลยนะครับ",
+                "zh-Hans": "那么，我先退下了，有任何需要效劳的事，请随时来找我。",
+                "zh-Hant": "那麼，我先退下了，有任何需要效勞的事，請隨時來找我。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 150105,
+                "name": {
+                  "zh-Hans": "柯布·科波"
+                },
+                "entity": {
+                  "entityId": 162750001,
+                  "mapId": 8,
+                  "blueprintType": "Gameplay581",
+                  "name": "TsEntity_特殊_行人NPC生成器_号角营地_营地门口",
+                  "areaId": 36,
+                  "position": {
+                    "x": 1185107,
+                    "y": 1290360,
+                    "z": 24278
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Herr Copo erwähnt Herrn Geiser immer wieder beiläufig. Vorhin hat er mir auch ein paar Dinge über ihn erzählt.",
+                "en": "Mr. Copo always manages to slip Mr. Geisel into the conversation. He even told me a few stories earlier.",
+                "fr": "M. Copo parvient toujours à glisser le nom de M. Geisel dans la conversation. Il m'a même raconté des histoires à son sujet, un peu plus tôt.",
+                "ja": "コーポさんは、いつもガイゼルさんのことを口にします。先ほども、ちょうどその話をしていました。",
+                "ko": "코브 · 코포 씨는 계속 의식적이든 무의식적이든 그 가이젤이라는 분 이름을 입에 올리셨어요. 방금도 저한테 그분의 이야기를 들려주셨고요",
+                "th": "คุณ Cobb Copo ชอบพูดถึงคุณ Geisel อยู่บ่อยๆ ก่อนหน้านี้ก็เล่าเรื่องของเขาให้ฉันฟัง",
+                "zh-Hans": "柯布·科波先生总是有意无意地提起那个盖泽尔先生，刚才也和我说了些他的事。",
+                "zh-Hant": "柯布·科波先生總是有意無意地提起那個蓋澤爾先生，剛才也和我說了些他的事。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht verbindet die beiden ja etwas. Wenn einem jemand wichtig ist, rutscht der Name eben ganz unbewusst über die Lippen … Ähem, nun gut, {PlayerName} …",
+                "en": "Maybe they share a deep connection. When someone means that much, their name naturally slips into your speech… Ahem. In any case, {PlayerName}—",
+                "fr": "Leur lien est peut-être plus étroit qu'il n'y paraît. Quand on tient tant à quelqu'un, son nom se glisse tout seul dans nos paroles… Ahem. Quoi qu'il en soit, {PlayerName}…",
+                "ja": "深い絆で結ばれているのでしょう。無意識に名が出るほど……コホン、失礼しました。話を戻しますが、{PlayerName}……",
+                "ko": "아마 정말 각별한 사이이신가 봐요... 호감을 느끼는 사람의 이름은, 자기도 모르게 자꾸 입 밖으로 새어 나오니까... 앗, 흠흠...! 아, {PlayerName}. 그러고 보니까...",
+                "th": "พวกเขาอาจมีความสัมพันธ์ที่ลึกซึ้งก็ได้นะ ก็เลยเผลอหลุดปากพูดถึงโดยไม่รู้ตัว... เอ่อคือ {PlayerName}",
+                "zh-Hans": "或许他们之间有着很深的感情吧，有感情的名字总会不自觉地溜到嘴边……咳嗯，对了，{PlayerName}。",
+                "zh-Hant": "或許他們之間有著很深的感情吧，有感情的名字總會不自覺地溜到嘴邊……咳嗯，對了，{PlayerName}。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Herr Copo hat mir ein Kartenspiel beigebracht. Es unterscheidet sich von Weiqi, doch es hat etwas für sich. Möchtest du {Male=mein Gegner;Female=meine Gegnerin} sein?",
+                "en": "Mr. Copo just taught me a card game. It's different from Weiqi, but charming in its own way. Would you be my opponent?",
+                "fr": "M. Copo vient de m'enseigner les règles d'un jeu de cartes. Il diffère du Weiqi, mais il a ses charmes. Accepterais-tu d'être mon adversaire ?",
+                "ja": "先ほどコーポさんから、あるカードゲームを教えていただきました。囲碁とは別の趣きがあります。{PlayerName}、余の相手となってもらえませんか？",
+                "ko": "코브 · 코포 씨가 방금 저한테 재밌는 카드 게임 하나를 가르쳐 주셨는데, 바둑과는 또 다른 재미가 있더라고요. {PlayerName}, 저의 상대가 되어주시겠어요?",
+                "th": "คุณ Cobb Copo เพิ่งสอนฉันเล่นเกมไพ่ ฉันรู้สึกว่ามันสนุกกว่าเล่นหมากรุกน่ะ {PlayerName} คุณยินดีเป็นคู่แข่งของฉันไหม?",
+                "zh-Hans": "柯布·科波先生刚刚教会我一种纸牌游戏，相比下棋，倒是别有一番趣味。{PlayerName}，你愿意成为我的对手吗？",
+                "zh-Hant": "柯布·科波先生剛剛教會我一種紙牌遊戲，相比下棋，倒是別有一番趣味。{PlayerName}，你願意成為我的對手嗎？"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Aber ich kenne die Regeln gar nicht.",
+                    "en": "But I don't know the rules yet.",
+                    "fr": "Mais je ne connais pas encore les règles.",
+                    "ja": "{Male=だが、俺はまだルールを知らない。;Female=でも、私はまだルールを知らない。}",
+                    "ko": "전 아직 규칙도 모르는데요",
+                    "th": "แต่ฉันยังไม่รู้กฎเลย",
+                    "zh-Hans": "可我还不知道规则。",
+                    "zh-Hant": "但我還不知道規則。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es wäre mir eine Ehre.",
+                    "en": "I'd be honored.",
+                    "fr": "Ce serait un honneur.",
+                    "ja": "喜んで。",
+                    "ko": "좋아요",
+                    "th": "ได้สิ",
+                    "zh-Hans": "我愿意。",
+                    "zh-Hant": "我願意。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Keine Sorge, ich bringe dir alles bei, was ich soeben gelernt habe.",
+                "en": "Don't worry, I'll teach you everything I just learned.",
+                "fr": "Ne t'en fais pas, je te transmettrai la leçon que j'ai reçue.",
+                "ja": "心配せずとも、余が教えましょう。",
+                "ko": "괜찮아요, 방금 배운 걸 가르쳐 드릴게요",
+                "th": "ไม่เป็นไร ฉันจะสอนกฎทั้งหมดที่ฉันเรียนรู้ให้คุณเอง",
+                "zh-Hans": "没关系，我会把我学到的全部教给你。",
+                "zh-Hant": "沒關係，我會把我學到的全部教給你。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mhm, ich freue mich darauf, wohlan.",
+                "en": "Mm, I look forward to it.",
+                "fr": "Hmm, j'ai hâte.",
+                "ja": "ええ、楽しみです。",
+                "ko": "네, 벌써 기대가 되네요",
+                "th": "ฉันอยากเล่นกับคุณจังเลย",
+                "zh-Hans": "嗯，我很期待。",
+                "zh-Hant": "嗯，我很期待。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                },
+                "entity": {
+                  "entityId": 162750002,
+                  "mapId": 8,
+                  "blueprintType": "branch2.6_TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "name": "TsEntity_MN_生态NPC_声骸_狩王鹫",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1173772,
+                    "y": 1293162,
+                    "z": 24840
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "parentId": 20,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Spiele eine Partie Kartenspiel mit Jinhsi.",
+        "ko": "금희와 함께 카드 게임 하기",
+        "th": "เริ่มเล่นเกมไพ่กับ Jinhsi",
+        "zh-Hans": "与今汐开始纸牌游戏",
+        "zh-Hant": "與今汐開始紙牌遊戲"
+      },
+      "entities": [
+        {
+          "entityId": 314750035,
+          "mapId": 8900,
+          "blueprintType": "Gameplay129_1_2",
+          "name": "TsEntity_特殊_客户端触发器",
+          "areaId": 0,
+          "position": {
+            "x": 17,
+            "y": 458,
+            "z": 363
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

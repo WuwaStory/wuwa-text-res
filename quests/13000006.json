@@ -1,0 +1,302 @@
+{
+  "id": 13000006,
+  "key": "唤醒占用1",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 13000001,
+          "mapId": 100,
+          "blueprintType": "NPC002",
+          "name": "TsEntity_121_002_接取1",
+          "areaId": 0,
+          "position": {
+            "x": -89020,
+            "y": -44660,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 13000003,
+          "mapId": 100,
+          "blueprintType": "NPC0005",
+          "name": "TsEntity_0005_180_陈皮",
+          "areaId": 0,
+          "position": {
+            "x": -88990,
+            "y": -43880,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 13,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Okay, Chenpi ist bereits belegt.",
+                "es": "Está bien, Chen Pi ya está ocupado",
+                "zh-Hans": "好了，陈皮已经被占用了"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 13000003,
+          "mapId": 100,
+          "blueprintType": "NPC0005",
+          "name": "TsEntity_0005_180_陈皮",
+          "areaId": 0,
+          "position": {
+            "x": -88990,
+            "y": -43880,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 13,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Orangenabdeckung freigegeben",
+                "es": "Chen Pi ha sido liberado",
+                "zh-Hans": "陈皮占用被释放"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 13000001,
+          "mapId": 100,
+          "blueprintType": "NPC002",
+          "name": "TsEntity_121_002_接取1",
+          "areaId": 0,
+          "position": {
+            "x": -89020,
+            "y": -44660,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 13000006,
+          "mapId": 100,
+          "blueprintType": "NPC0004",
+          "name": "TsEntity_0004_154_甘雪2",
+          "areaId": 0,
+          "position": {
+            "x": -89150,
+            "y": -43830,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 13,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Okay, Gan Xue ist bereits belegt",
+                "es": "Está bien, Gan Xue ya está ocupado",
+                "zh-Hans": "好了，甘雪已经被占用了"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 13000006,
+          "mapId": 100,
+          "blueprintType": "NPC0004",
+          "name": "TsEntity_0004_154_甘雪2",
+          "areaId": 0,
+          "position": {
+            "x": -89150,
+            "y": -43830,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 13,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Gan Xue belegt freigegeben",
+                "es": "Gan Xue ha sido liberado",
+                "zh-Hans": "甘雪占用被释放"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

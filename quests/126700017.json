@@ -1,0 +1,356 @@
+{
+  "id": 126700017,
+  "key": "倾听动物之声·兔语翻译",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lauschen auf die Worte der Tiere: Übersetzung der Hasensprache",
+    "en": "Listen to Animals' Words: Translation of Rabbit's Language",
+    "es": "Escuchar las palabras de los animales: Traducción del lenguaje de los conejos",
+    "fr": "Écouter la voix des animaux : Lapin",
+    "ja": "動物の声を聞こう・兎語通訳",
+    "ko": "동물의 소리 듣기·토끼 언어 번역",
+    "th": "รับฟังคำพูดสัตว์: คำแปลภาษากระต่าย",
+    "zh-Hans": "倾听动物之声·兔语翻译",
+    "zh-Hant": "傾聽動物之聲·兔語翻譯"
+  },
+  "desc": {
+    "de": "Du triffst Xuanyin wieder. Dieses Mal beobachtet sie einen grünen Hasen...",
+    "en": "You meet Xuanyin again. This time, she is spying on a Green Rabbit...",
+    "es": "Te encuentras con Xuanyin de nuevo. Esta vez, está espiando a un Conejo Verde...",
+    "fr": "Vous rencontrez à nouveau Xuanyin, elle observe un lapin vert...",
+    "ja": "再び懸音と出会った。彼女は青雑兎を観察しているようだ……",
+    "ko": "다시 한번 현음과 마주쳤습니다.  그녀가 푸른토끼를 관찰하고 있습니다...",
+    "th": "คุณพบ Xuanyin อีก ครั้งนี้เธอกำลังแอบสังเกตกระต่ายเขียว",
+    "zh-Hans": "你又见到了悬音，她正在观察青杂兔……",
+    "zh-Hant": "你又見到了懸音，她正在觀察青雜兔……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe ein Perlenblatt an Xuanyin",
+        "en": "Deliver a Pearl Leaf to Xuanyin",
+        "es": "Entrega una Hierba de perla a Xuanyin",
+        "fr": "Donner des Graines en bas feuilles à Xuanyin",
+        "ja": "真珠草を懸音に渡す",
+        "ko": "현음에게 여우구슬 전달하기",
+        "th": "ส่งมอบหญ้าไข่มุกให้ Xuanyin",
+        "zh-Hans": "将一棵珍珠草给悬音",
+        "zh-Hant": "將一棵珍珠草給懸音"
+      },
+      "entities": [
+        {
+          "entityId": 126000169,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "倾听动物之声_黑石尾_悬音",
+          "areaId": 4,
+          "position": {
+            "x": -48250,
+            "y": 63400,
+            "z": 3312
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_世界事件_倾听动物之声_黑石尾",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Kein Schwanz! Hässlich! Hässlich!",
+                "en": "No tail! Ugly! Ugly!",
+                "es": "¡Sin cola! ¡Feo! ¡Feo!",
+                "fr": "Queue, aucune, moche, moche !",
+                "ja": "尻尾ない、ブス、しっし！",
+                "ko": "꼬리가 없다. 못난이, 못난이!",
+                "th": "หางกุด! น่าเกลียด! น่าเกลียด!",
+                "zh-Hans": "尾巴，没有，丑丑，丑丑！",
+                "zh-Hant": "尾巴，沒有，醜醜，醜醜！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 384,
+                "name": {
+                  "zh-Hans": "有尾青杂兔（翻译）"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum reden sie so?",
+                    "en": "Why do they talk like that?",
+                    "es": "¿Por qué hablan así?",
+                    "fr": "Vous aimez les mots redondants ?",
+                    "ja": "この喋り方は？",
+                    "ko": "단어를 중복해서 사용하는 걸 좋아하나요?",
+                    "th": "ทำไมพวกมันพูดอย่างนั้น?",
+                    "zh-Hans": "你很喜欢叠词词？",
+                    "zh-Hant": "你很喜歡疊詞詞？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Tut mir leid, so habe ich es eingestellt.",
+                "en": "Sorry, that's how I set it.",
+                "es": "Lo siento, así es como lo configuré.",
+                "fr": "Il s'agit juste d'une bizarrerie personnelle.",
+                "ja": "えへへ、すみません。私が設定したものです。",
+                "ko": "헤헤, 사소한... 개인적인 취미일 뿐이에요",
+                "th": "ขอโทษที ฉันตั้งค่าไว้แบบนั้นน่ะ",
+                "zh-Hans": "嘿嘿，一些小小的个人癖好罢了。",
+                "zh-Hant": "嘿嘿，一些小小的個人癖好罷了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Findest du es nicht auf diese Weise interessanter und verständlicher?",
+                "en": "Don't you think it's more interesting and understandable this way?",
+                "es": "¿No crees que es más interesante y comprensible de esta manera?",
+                "fr": "La recherche scientifique n'a pas besoin d'être remplie des termes compliqués.",
+                "ja": "研究員全員が堅苦しい言葉を使うというわけではありませんよ。",
+                "ko": "과학 연구를 한다고 해서 반드시 어려운 용어를 사용하는 건 아니니까요",
+                "th": "คุณว่าแบบนี้น่าสนใจและเข้าใจง่ายกว่าไหม?",
+                "zh-Hans": "搞科研也不一定处处都用佶屈聱牙的术语嘛。",
+                "zh-Hant": "搞科研也不一定處處都用佶屈聱牙的術語嘛。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aus der Sicht eines Forschers wird der Schwanzverlust bei Grünen Hasen als natürlicher Aspekt ihres Stoffwechsels betrachtet. Für sie dient der Schwanz jedoch als Kriterium, um Schönheit von Hässlichkeit zu unterscheiden. Ziemlich faszinierend.",
+                "en": "From a researcher's standpoint, tail loss in Green Rabbits is considered a natural aspect of their metabolism. However, for them, the tail serves as a criterion to distinguish beauty from ugliness. Quite intriguing.",
+                "es": "Desde el punto de vista de un investigador, la pérdida de cola en los Conejos Verdes se considera un aspecto natural de su metabolismo. Sin embargo, para ellos, la cola sirve como un criterio para distinguir la belleza de la fealdad. Bastante intrigante.",
+                "fr": "Du point de vue, la perte de la queue des lapins verts est un comportement métabolique normal, mais pour eux, il s'agit peut-être d'une norme permettant de distinguer la beauté de la laideur ?",
+                "ja": "……コホン、研究員らしく言わせてもらうと、青雑兎の尻尾を捨てる行為は正常な代謝の一環に過ぎません。でもあの子たちにとって、美醜の基準になるとは……",
+                "ko": "연구자의 관점에서 볼 때 푸른토끼가 꼬리를 제거하는 건 정상적인 신진대사지만, 저들에게는 아름다움과 추함을 구별하는 기준이 되는 것 같아요",
+                "th": "ตามมุมมองนักวิจัย การสลัดหางเป็นขั้นตอนทางธรรมชาติในการเผาผลาญพลังงานของกระต่ายเขียว แต่สำหรับพวกมัน หางเป็นเกณฑ์แยกแยะความงามกับความอัปลักษณ์ น่าสนใจทีเดียว",
+                "zh-Hans": "从研究者的眼光看来，青杂兔断尾是一种正常的代谢行为，对它们来说却是一种区分美丑的标准？",
+                "zh-Hant": "從研究者的眼光看來，青雜兔斷尾是一種正常的代謝行為，對它們來說卻是一種區分美醜的標準？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sind Hasen auch um ihr Aussehen besorgt?",
+                    "en": "Are rabbits also concerned about appearances?",
+                    "es": "¿Los conejos también se preocupan por su apariencia?",
+                    "fr": "Les lapins sont-ils également soucieux de leur apparence ?",
+                    "ja": "兎なのに面食いってこと？",
+                    "ko": "토끼도 외모를 판단하나요?",
+                    "th": "กระต่ายสนใจรูปลักษณ์ภายนอกด้วยหรือ?",
+                    "zh-Hans": "兔子也是外貌协会？",
+                    "zh-Hant": "兔子也是外貌協會？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Alle Tiere wollen \"hochwertige Partner auswählen\", da es als eine Form der Überlebensstrategie dient.",
+                "en": "All animals want to \"select high-quality mates,\" as it serves as a form of survival strategy.",
+                "es": "Todos los animales quieren \"seleccionar parejas de alta calidad\", ya que sirve como una forma de estrategia de supervivencia.",
+                "fr": "Les animaux espèrent également de « trouver des bons partenaires », c'est une stratégie de survie.",
+                "ja": "そもそも動物には「質が高い」配偶者を好む傾向があります。 これも生存戦略の一つです。",
+                "ko": "동물들은 모두 「뛰어난 배우자」를 선택하길 원하는데, 이것도 일종의 생존 전략이라고 할 수 있죠",
+                "th": "สัตว์ทุกชนิดล้วนต้องการ \"เลือกคู่ที่ดี\" ซึ่งเป็นรูปแบบหนึ่งของกลยุทธ์การเอาชีวิตรอด",
+                "zh-Hans": "动物都希望「选择高质量配偶」嘛，这也算是一种生存策略。",
+                "zh-Hant": "動物都希望「選擇高質量配偶」嘛，這也算是一種生存策略。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Grüne Hasen ernähren sich von Gras und ihre Schwanzdrüsen spielen eine wichtige Rolle bei der Metabolisierung von Toxinen. Wenn Toxine sich bis zu einem gewissen Grad ansammeln, zeigt sich das als \"Schwanzverlust\".",
+                "en": "Green Rabbits feed on grass and their tail glands play an important role in metabolizing toxins. When toxins accumulate to a certain extent, it manifests as \"tail loss.\"",
+                "es": "Los Conejos Verdes se alimentan de hierba y sus glándulas de la cola juegan un papel importante en la metabolización de toxinas. Cuando las toxinas se acumulan hasta cierto punto, se manifiesta como \"pérdida de cola\".",
+                "fr": "Les lapins verts se nourrissent de diverses plantes et les glandes situées dans leur queue jouent un rôle dans le métabolisme des toxines. Lorsque les toxines s'accumulent jusqu'à un certain niveau, elles se manifestent par une « perte de queue ».",
+                "ja": "草食動物の青雑兎は、尻尾にある腺組織は解毒代謝の機能が備われており、尻尾を「捨てる」事で代謝廃棄物を処理できます。",
+                "ko": "푸른토끼는 풀 종류는 모두 먹고사는데, 풀에 독이 있을 수도 있잖아요. 그 독들을 꼬리의 땀샘이 책임져요. 독소가 어느 정도 축적되면 「꼬리 제거」가 일어나요",
+                "th": "กระต่ายเขียวกินหญ้าเป็นอาหาร และต่อมที่หางมีบทบาทสำคัญในการกำจัดสารพิษ เมื่อสารพิษสะสมจนถึงระดับหนึ่งก็จะนำไปสู่การ \"สลัดหาง\"",
+                "zh-Hans": "青杂兔以百草为食，尾部的腺体承担着代谢毒素的功能，毒素积蓄到一定程度，便会表现为「断尾」的体征。",
+                "zh-Hant": "青雜兔以百草為食，尾部的腺體承擔著代謝毒素的功能，毒素積蓄到一定程度，便會表現為「斷尾」的體徵。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich hätte nicht erwartet, dass sie aus diesem Grund so entmutigt wären...",
+                "en": "But I didn't anticipate that they would be so disheartened because of this reason...",
+                "es": "Pero no anticipé que se desanimarían tanto por esta razón...",
+                "fr": "Il est triste pour une raison comme telle ...",
+                "ja": "代謝行為しただけなのに、こんな惨めな気持ちを味わわなきゃいけないなんて……",
+                "ko": "결국은 이런 이유 때문에 우울하고 슬퍼하는 거예요...",
+                "th": "แต่ฉันไม่นึกว่าพวกมันจะหดหู่อย่างหนักด้วยเหตุนี้...",
+                "zh-Hans": "竟会因为这种原因黯然神伤……",
+                "zh-Hant": "竟會因為這種原因黯然神傷……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Auf Wiedersehen! Ich gehe zurück, um den Bericht zu schreiben. Bis zum nächsten Mal!",
+                    "en": "They're just rabbits.",
+                    "es": "¡Adiós! Volveré a escribir el informe. ¡Nos vemos la próxima vez!",
+                    "fr": "Ce ne sont que des lapins.",
+                    "ja": "兎がそんなこと考える？",
+                    "ko": "그들도 그저 토끼일 뿐이네요",
+                    "th": "พวกมันเป็นแค่กระต่าย",
+                    "zh-Hans": "它们只是兔子而已。",
+                    "zh-Hant": "它們只是兔子而已。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun, als ich das Modul optimierte, habe ich dieses Mal menschliche Denklogik eingeführt.",
+                "en": "Well, when I was optimizing the module, I introduced human thinking logic to it this time.",
+                "es": "Bueno, cuando estaba optimizando el módulo, introduje la lógica de pensamiento humano en esta ocasión.",
+                "fr": "Pour cette nouvelle version, j'ai introduit la logique de la pensée humaine dans le module de traduction.",
+                "ja": "アップデートで、人間らしい思考方法を入れました。",
+                "ko": "이번 최적화로 번역 모듈에 인간의 사고 논리를 도입했어요",
+                "th": "ตอนที่ปรับแต่งโมดูลครั้งนี้ ฉันเพิ่มตรรกะการคิดแบบมนุษย์เข้าไปด้วย",
+                "zh-Hans": "这次的优化，我在翻译模块中引入了人类的思考逻辑。",
+                "zh-Hant": "這次的優化，我在翻譯模組中引入了人類的思考邏輯。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und! Ich, selbst, bin der Sampler der menschlichen Denklogik. Findest du nicht, dass die Übersetzung lebendiger ist?",
+                "en": "And! I, myself, am the sampler of human thinking logic. Don't you think the translation is more vivid?",
+                "es": "¡Y! Yo, mismo, soy el ejemplo de la lógica de pensamiento humano. ¿No crees que la traducción es más vívida?",
+                "fr": "Et c'est moi qui fournis la logique de la pensée, ce qui la rend plus vivante, n'est-ce pas ?",
+                "ja": "前より生き生きとしていませんか？ちなみにその「思考」サンプルは何を隠そう私自身です。",
+                "ko": "논리를 생각하는 표본은 저에요. 생동감 있지 않나요?",
+                "th": "แล้วก็! ฉันเองคือตัวอย่างของตรรกะการคิดแบบมนุษย์ คุณว่าคำแปลมีชีวิตชีวาขึ้นไหม?",
+                "zh-Hans": "思考逻辑的采样者正是我本人，是不是生动了很多！",
+                "zh-Hant": "思考邏輯的採樣者正是我本人，是不是生動了很多！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "【Die Übersetzungsmodul für Hasensprache wurde von Ihrem Panggu-Terminal deinstalliert und die entsprechenden Daten wurden übertragen.】",
+                "en": "Xuanyin uninstalls the Rabbit Language Translation Module from your Pangu Terminal and transmits the related data back to her.",
+                "es": "Xuanyin desinstaló el Módulo de Traducción de Lenguaje de Conejo de tu Terminal Pangu y transmitió los datos relacionados.",
+                "fr": "Xuanyin a désinstallé le Module de Traduction de Langue de Lapin de votre Borne et a transmis les données associées.",
+                "ja": "【懸音はあなたのデバイスから兎語翻訳モジュールを外し、データを記録した】",
+                "ko": "[현음이 단말기에서 토끼 언어 번역 모듈을 제거하고 관련 데이터를 전송한다]",
+                "th": "Xuanyin ถอนการติดตั้งโมดูลแปลภาษากระต่ายออกจากเทอร์มินัลผานกู่ของคุณ และส่งข้อมูลที่เกี่ยวข้องกลับไปให้ตัวเอง",
+                "zh-Hans": "【悬音将兔语翻译模块从你的盘古终端上卸载，并回传了相关数据。】",
+                "zh-Hant": "【懸音將兔語翻譯模塊從你的盤古終端上卸載，並回傳了相關數據。】"
+              },
+              "id": 11
+            },
+            {
+              "text": {
+                "de": "Auf Wiedersehen! Ich gehe zurück, um den Bericht zu schreiben. Bis zum nächsten Mal!",
+                "en": "Farewell! I'll go back to write the report. See you next time!",
+                "es": "¡Adiós! Regresaré a escribir el informe. ¡Nos vemos la próxima vez!",
+                "fr": "Je retourne écrire le rapport, à la prochaine fois !",
+                "ja": "では私まだ報告書の作成が残っていますから、また今度！",
+                "ko": "저는 먼저 돌아가서 보고서를 작성해야겠어요. 다음에 만나요",
+                "th": "ลาก่อนนะ! ฉันจะกลับไปเขียนรายงานแล้ว แล้วพบกันใหม่!",
+                "zh-Hans": "我先回去写报告啦，下次见！",
+                "zh-Hant": "我先回去寫報告啦，下次見！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

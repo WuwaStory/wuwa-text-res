@@ -1,0 +1,58 @@
+{
+  "id": 151850000,
+  "key": "放水前完成npc对话完成状态判定",
+  "type": "branch",
+  "typeId": 11,
+  "name": {},
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Action",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "Action",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

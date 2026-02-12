@@ -1,0 +1,4040 @@
+{
+  "id": 880000031,
+  "key": "（忌炎）慰问支线",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Grund zum Kämpfen",
+    "en": "Cause to Fight for",
+    "es": "Motivo para luchar",
+    "fr": "Cause à défendre",
+    "ja": "戦いの理由",
+    "ko": "무엇을 위해 싸우는가",
+    "th": "สาเหตุที่ต่อสู้",
+    "zh-Hans": "因何而战",
+    "zh-Hant": "因何而戰"
+  },
+  "desc": {
+    "de": "Jiyan schickt von seinem Posten weit an der Front eine Nachricht, die etwas Wichtiges zu betreffen scheint ...\n\nEine/einen Gefährtin/Gefährten wird nach Abschluss dieser Quest freigeschaltet",
+    "en": "Jiyan sends a message from his post far on the frontline, which seems to concern something important...\n\nUnlock a new Companion after completing this quest.",
+    "es": "Jiyan ha enviado un mensaje desde su puesto en la lejana frontera pidiendo ayuda para un asunto importante...\n\nDesbloquea un nuevo compañero después de completar esta misión.",
+    "fr": "Jiyan, qui est en mission, envoie un contact, dans lequel il demande de l'aide pour une affaire apparemment importante...\n\nCompléter cette quête pour débloquer un nouveau partenaire.",
+    "ja": "遠い辺境にいる忌炎から通信が来た。何か大事な相談があるようで......\n\nクリア後、新しい「経営仲間」を解放。",
+    "ko": "먼 변방에 있던 기염에게 연락이 왔는데, 도움을 필요로 하는 아주 중요한 일이 있는 것 같다...\n\n해당 임무 완료 후 새로운 경영 파트너가 해제됩니다",
+    "th": "Jiyan ส่งสารมาจากที่ประจำการแนวหน้าอันห่างไกล ซึ่งดูจะเป็นเรื่องสำคัญ...\n\nเพื่อนร่วมทางใหม่จะปลดล็อกหลังจากที่ทำภารกิจนี้เสร็จสมบูรณ์",
+    "zh-Hans": "远在边关的忌炎发来了通讯，他似乎有很重要的事需要帮忙……\n\n完成此任务后解锁新的经营伙伴。",
+    "zh-Hant": "遠在邊關的忌炎發來了通訊，他似乎有很重要的事需要幫忙……\n\n完成此任務後解鎖新的經營夥伴。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit der älteren Person",
+        "en": "Talk to the elder",
+        "es": "Habla con la persona mayor",
+        "fr": "Parler à la personne âgée",
+        "ja": "老人と会話する",
+        "ko": "노인과 대화",
+        "th": "คุยกับผู้อาวุโส",
+        "zh-Hans": "与老人交谈",
+        "zh-Hant": "與老人交談"
+      },
+      "entities": [
+        {
+          "entityId": 125700007,
+          "mapId": 8,
+          "blueprintType": "NPC313",
+          "name": "TsEntity_157_002_皇龙老人2",
+          "areaId": 406,
+          "position": {
+            "x": -101620,
+            "y": 46299,
+            "z": 5218
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1.2同行插曲支线",
+          "flowIndex": 4,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh, du bist es, {PlayerName}.",
+                "en": "Oh, it's you, {PlayerName}.",
+                "es": "Oh, eres tú, {PlayerName}.",
+                "fr": "Oh, c'est toi, {PlayerName}.",
+                "ja": "ほう、{PlayerName}じゃないか。",
+                "ko": "아, {PlayerName}, 자네구먼",
+                "th": "อ้าว คุณนี่เอง {PlayerName}",
+                "zh-Hans": "啊，是{PlayerName}啊。",
+                "zh-Hant": "啊，是{PlayerName}啊。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700069,
+                "name": {
+                  "zh-Hans": "和蔼的老人"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Seid ihr hier für „Schwimm, Gulpuff, schwimm“?",
+                    "en": "Are you here for \"Swim, Gulpuff, Swim\"?",
+                    "es": "¿Estás aquí por «Burbujín, ¡adelante!»?",
+                    "fr": "Vous êtes là pour Nage de Gulboule ?",
+                    "ja": "あなたも<ano=ぎょすいらく>魚水楽</ano>を？",
+                    "ko": "어수락(魚水樂)하러 오신 건가요?",
+                    "th": "นี่คุณมาเล่น Gulpuff ว่ายหรรษา เหรอ?",
+                    "zh-Hans": "您也来玩鱼水乐吗？",
+                    "zh-Hant": "您也來玩魚水樂嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was? Oh, nicht wirklich ... das ist der Stand für dieses Gulpuff-Spiel? Entschuldigung. Meine Augen sind auch nicht mehr, was sie mal waren.",
+                "en": "What? Oh, not really… So this is the stall for that Gulpuff game? My apologies. My eyes aren't as sharp as they used to be.",
+                "es": "¿Qué? Oh, no, no es eso... ¿Este es el puesto del juego de Burbujín? Lo siento, mis ojos ya no me funcionan tan bien como antes.",
+                "fr": "Comment ? Oh, pas vraiment… Alors, c'est le kiosque pour le jeu de Gulboule ? Toutes mes excuses. Ma vue n'est pas aussi bonne qu'avant.",
+                "ja": "<ano=ぎょすいらく>魚水楽</ano>？いやいや……そうか、この露店は<ano=ぎょすいらく>魚水楽</ano>だったか。悪いね、老眼でよく見えなくて。",
+                "ko": "으음? 아니, 아니라네... 아, 여긴 어수락(魚水樂) 가게였군. 미안하네, 늙어서 앞이 잘 보이지 않는군",
+                "th": "อะไรนะ? อ๋อ ไม่ใช่หรอก... แปลว่านี่คือซุ้มเกม Gulpuff ว่ายหรรษานั่นเหรือ? ขอโทษที สายตาฉันไม่ชัดเจนเหมือนเมื่อก่อนแล้ว",
+                "zh-Hans": "啊？不是不是……哦，原来这个摊位是鱼水乐啊。抱歉，我老眼昏花了，看不清楚。",
+                "zh-Hant": "啊？ 不是不是……哦，原來這個攤位是魚水樂啊。 抱歉，我老眼昏花了，看不清楚。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700069,
+                "name": {
+                  "zh-Hans": "和蔼的老人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mein Sohn ist Resonator. Das könnte ihm gefallen, denke ich ...",
+                "en": "My son is a Resonator. He might like this, I guess...",
+                "es": "Mi hijo es un Resonador, así que supongo que esto le gustará...",
+                "fr": "Mon fils est un Résonateur. Je pense que ça pourrait lui plaire...",
+                "ja": "だが、私の息子は……共鳴者でね。こういうものが好きかもしれない。",
+                "ko": "하지만, 내 아들... 그 녀석은 공명자인데 이런 걸 좋아할지도 모르겠구군",
+                "th": "ลูกชายของฉัน... เขาเป็นเรโซเนเตอร์ เขาอาจจะชอบก็ได้มั้ง...",
+                "zh-Hans": "不过，我的儿子……他可是个共鸣者，说不定他会喜欢这个？",
+                "zh-Hant": "不過，我的兒子……他可是個共鳴者，說不定他會喜歡這個？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700069,
+                "name": {
+                  "zh-Hans": "和蔼的老人"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Dein Sohn?",
+                    "en": "Your son?",
+                    "es": "¿Tu hijo?",
+                    "fr": "Votre fils ?",
+                    "ja": "息子さんって？",
+                    "ko": "아드님이요?",
+                    "th": "ลูกชายคุณงั้นเหรอ?",
+                    "zh-Hans": "您的儿子？",
+                    "zh-Hant": "您的兒子？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Er ist ein Mitternachtsranger. Sie haben ihm ein paar Tage Urlaub gegeben. Wenn er zurückkommt, will ich mit ihm auf den Mondlichtmarkt gehen.",
+                "en": "Yes. He's a Midnight Ranger. They gave him a few day off. When he comes back, I plan to visit the Moonlit Fair with him.",
+                "es": "Sí, es un Ranger de Medianoche. Le han dado unos días de descanso, así que cuando vuelva quiero venir a la Feria de la Luna con él.",
+                "fr": "Oui. Il est un Gardien de minuit. On lui a accordé quelques jours de congé. Je prévoit de visiter le Marché de la lune de avec lui de son retour.",
+                "ja": "あの子は今<ano=よき>夜帰</ano>軍にいてね。数日休暇をもらったようだから、帰ってきたら、一緒に<ano=よいづきかい>宵月会</ano>を見て回るつもりなんだよ。",
+                "ko": "지금 야귀군에서 복무 중이지. 야귀군에서 휴가를 받았다고 하던데, 돌아오는 대로 함께 달맞이 야시장을 돌아볼 생각이라네",
+                "th": "ใช่แล้ว เขาเป็นทหารของมิดไนท์เรนเจอร์ ได้หยุดงานบ้างน่ะ พอลูกกลับมา ฉันว่าจะมาเที่ยวงานเทศกาลจันทร์พรายแสงกับเขานี่แหละ",
+                "zh-Hans": "他在夜归军服役，夜归军给他放了几天假，等他回来，我打算和他一起来逛逛宵月会。",
+                "zh-Hant": "他在夜歸軍服役，夜歸軍給他放了幾天假，等他回來，我打算和他一起來逛逛宵月會。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700069,
+                "name": {
+                  "zh-Hans": "和蔼的老人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haha, er wird sicher eine Menge Spaß haben.",
+                "en": "Haha, I'm sure he'll have a lot of fun.",
+                "es": "Jaja, seguro que se lo pasa muy bien.",
+                "fr": "Haha, je suis sûr qu'il va bien s'amuser.",
+                "ja": "ふふ、今年の賑やかな<ano=よいづきかい>宵月会</ano>を見たら、きっと喜ぶだろうなぁ。",
+                "ko": "허허, 올해 달맞이 야시장은 유난히 시끌벅적한 게 아들 녀석이 무척 좋아하겠어",
+                "th": "ฮ่าๆ เขาคงจะดีใจมากแน่ๆ ที่เห็นว่าเทศกาลจันทร์พรายแสงปีนี้คึกคักขนาดนี้",
+                "zh-Hans": "哈哈，看到今年的宵月会办得这么热闹，他一定会很高兴的。",
+                "zh-Hant": "哈哈，看到今年的宵月會辦得這麼熱鬧，他一定會很高興的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700069,
+                "name": {
+                  "zh-Hans": "和蔼的老人"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_1.2同行插曲支线",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}, lange nicht gesehen.",
+                "en": "{PlayerName}, it's been a while.",
+                "es": "{PlayerName}, cuánto tiempo.",
+                "fr": "{PlayerName}, ça faisait longtemps.",
+                "ja": "久しぶりだな、{PlayerName}。",
+                "ko": "{PlayerName}, 오랜만에 연락하는 것 같군",
+                "th": "{PlayerName} ไม่เจอกันนานเลยนะ",
+                "zh-Hans": "{PlayerName}，久疏问候。",
+                "zh-Hant": "{PlayerName}，久疏問候。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Jiyan? Ist etwas an der Front passiert?",
+                    "en": "Jiyan? Did something happen on the front lines?",
+                    "es": "¿Jiyan? ¿Ha ocurrido algo en el frente?",
+                    "fr": "Jiyan ? Il s'est passé quelque chose au front ?",
+                    "ja": "{Male=忌炎？そっちで何かあったのか？;Female=忌炎？そっちで何かあったの？}",
+                    "ko": "기염? 변방에 무슨 문제라도 있나요?",
+                    "th": "Jiyan เหรอ? เกิดอะไรขึ้นที่ชายแดนหรือเปล่า?",
+                    "zh-Hans": "忌炎？难道是边关出问题了？",
+                    "zh-Hant": "忌炎？ 難道是邊關出問題了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Keine Sorge. Ich bin nicht wegen der Arbeit hier.",
+                "en": "Don't worry. I'm not calling you for work this time.",
+                "es": "No te preocupes. Esta vez no te llamo por trabajo.",
+                "fr": "Ha, ne t'inquiète pas. Je ne suis pas là pour le travail cette fois-ci.",
+                "ja": "案ずるな。そうではない。",
+                "ko": "그런 건 아니니 안심해",
+                "th": "ไม่ต้องห่วง ไม่ใช่เรื่องงานหรอก",
+                "zh-Hans": "请放心。这倒不是。",
+                "zh-Hant": "請放心。 這倒不是。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben den schlüpfenden Threnodianer unter Kontrolle gebracht. Es sollte eine Weile dauern, bis sich neue Bedrohungen durch Tacet-Dissonanzen bilden können.",
+                "en": "We have contained the hatching Threnodian. Any new threat from the Tacet Discords will likely take time to materialize.",
+                "es": "Hemos contenido la incubación del Trenodiano. Cualquier amenaza de las Disonancias Tácitas probablemente tardará un tiempo en materializarse.",
+                "fr": "Nous avons réussi à contenir le Réprimantum en train d'éclore. Toute nouvelle menace des Tacets Discords prendra certainement du temps avant de se concrétiser.",
+                "ja": "<ano=めいしき>鳴式</ano>の孵化が抑制され、しばらくの間、<ano=ざんぞう>残像</ano> は <ano=こんしゅう>今州</ano>を脅かす規模にまで成長できなくなった。",
+                "ko": "명식의 부화를 막았으니 잔상은 한동안 금주에 심각한 위협이 될 만큼 세력을 형성하지 못할 테니까",
+                "th": "เราควบคุมการฟักตัวของเธรโนเดียนได้แล้ว ทาเซ็ตดิสคอร์ดอาจจะไม่สามารถเติบโตถึงขนาดที่เป็นภัยต่อจินโจวได้ในช่วงระยะเวลาค่อนข้างนาน",
+                "zh-Hans": "鸣式的孵化已得到抑制，残象在相当长的时间内，都可能无法形成足以威胁到今州的规模。",
+                "zh-Hant": "鳴式的孵化已得到抑制，殘象在相當長的時間內，都可能無法形成足以威脅到今州的規模。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das wäre ohne dich nicht möglich gewesen, {PlayerName}. Danke.",
+                "en": "It wouldn't have been possible without you, {PlayerName}. Thank you.",
+                "es": "{PlayerName}, no habría sido posible sin ti. Gracias.",
+                "fr": "Ça n'aurait pas été possible sans toi, {PlayerName}. Merci.",
+                "ja": "これは全て{PlayerName}のおかげだ、本当に感謝している。",
+                "ko": "이게 다 {PlayerName} 덕분이지, 고맙네",
+                "th": "ทั้งหมดนี้เป็นไปไม่ได้เลยถ้าไม่มีคุณ {PlayerName} ขอบคุณนะ",
+                "zh-Hans": "这都要归功于你，{PlayerName}。谢谢你。",
+                "zh-Hant": "這都要歸功於你，{PlayerName}。 謝謝你。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Angesichts des nahenden Mondjagdfestivals und der gesicherten Lage an den Grenzen habe ich allen Soldaten Ausgang bewilligt, die schon länger keinen mehr hatten. Sie haben es verdient, Zeit mit ihren Lieben zu verbringen.",
+                "en": "With the Moon-Chasing Festival near and our borders secured, I've granted leave for soldiers who haven't taken any in too long. They deserve time with loved ones.",
+                "es": "El Festival de la Caza de la Luna es dentro de poco, y las fronteras están seguras, así que les he concedido vacaciones a los soldados que llevaban un tiempo sin tomarse unas. Se merecen pasar un tiempo con sus seres queridos.",
+                "fr": "Comme la Fête de Chasser la lune s'approche et que nos frontières sont sécurisées, j'ai accordé une permission aux soldats qui ne l'avaient pas eue depuis trop longtemps. Ils méritent de passer du temps avec les gens qui leur sont chers.",
+                "ja": "ちょうど今は<ano=げっついさい>月追祭</ano>だ。関外の状況が落ち着いていることも考慮し、長く見張りをしている<ano=よき>夜帰</ano>軍も家族と過ごせるよう、数日暇をやることにした。",
+                "ko": "변방의 형세도 안정 궤도에 오른 터라 달맞이 축제를 맞이해 오랫동안 그곳을 지키는 야귀군에게 며칠 간의 휴가를 줬지. 가족들과 좋은 시간 보내라고 말이야",
+                "th": "ในเมื่อเป็นโอกาสเทศกาลล่าจันทรา และสถานการณ์นอกชายแดนก็ปลอดภัยแล้ว ฉันจึงอนุญาตให้ทหารมิดไนท์เรนเจอร์ที่ไม่ได้ลาพักมานานได้ลาหยุดกัน พวกเขาควรได้ใช้เวลากับครอบครัวบ้าง",
+                "zh-Hans": "如今正逢追月节，考虑到目前关外态势已然平定，我决定给那些长期值守的夜归军几日假期，让他们得以陪伴家人。",
+                "zh-Hant": "如今正逢追月節，考慮到目前關外態勢已然平定，我決定給那些長期值守的夜歸軍幾日假期，讓他們得以陪伴家人。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bleibe mit den übrigen Soldaten auf meinem Posten, um die Sicherheit zu gewährleisten.",
+                "en": "I will remain on post with the rest to ensure continued safety.",
+                "es": "Yo permaneceré en mi puesto con los demás para seguir garantizando la seguridad.",
+                "fr": "Je resterai en poste avec les autres pour assurer la sécurité.",
+                "ja": "万全を期すため、俺は他の兵士を率いて引き続き警護に当たる。",
+                "ko": "하지만 난 만일의 사태에 대비해 남은 병사들과 함께 이곳을 계속 지키고 있네",
+                "th": "ฉันจะประจำการอยู่กับทหารส่วนที่เหลือเพื่อรักษาความปลอดภัยต่อไป",
+                "zh-Hans": "而我会带领其余士兵继续镇守，以确保万无一失。",
+                "zh-Hant": "而我會帶領其餘士兵繼續鎮守，以確保萬無一失。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das erinnert mich an etwas ... manche dieser Soldaten haben ihre Familien durch Tacet-Dissonanzen verloren.",
+                "en": "That reminds me... Some of the soldiers on leave have lost their families to Tacet Discords.",
+                "es": "Aunque... algunos de los soldados perdieron a sus familias por culpa de las Disonancias Tácitas.",
+                "fr": "Ça me fait penser... Certains soldats en permission ont perdu leurs familles à cause de Tacets Discords.",
+                "ja": "しかし、休暇をとる兵士の数名は…家族が<ano=ざんぞうちょう>残像潮</ano>が起こったとき不幸にも命を落としている。",
+                "ko": "그런데... 휴가를 받은 병사들 중에서... 잔상류가 쳐들어왔을 때 불행하게도 가족을 잃은 자들이 있다고 하더군",
+                "th": "แต่... มีทหารบางคนที่ลาหยุด... ครอบครัวของพวกเขาถูกฆ่าตายเมื่อเหตุการณ์การแพร่กระจายของทาเซ็ตดิสคอร์ด",
+                "zh-Hans": "不过，还有几名休假的士兵……他们的家人在残象潮入侵时不幸罹难。",
+                "zh-Hant": "不過，還有幾名休假的士兵……他們的家人在殘象潮入侵時不幸罹難。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin mir nicht sicher, was sie jetzt machen oder ob sie Hilfe brauchen. Vielleicht sollte ich ...",
+                "en": "I'm not sure how they'll spend this time or if they need help. Maybe I will...",
+                "es": "No sé qué van a hacer en su tiempo libre, o si necesitan ayuda. Quizás yo...",
+                "fr": "Je ne sais pas ce qu'ils vont faire pendant ce temps libre ou s'ils ont besoin d'aide. Je pourrais peut-être...",
+                "ja": "俺自身で状況を確認できないが、心配だ。何か手伝いが必要かもしれない。",
+                "ko": "병사들의 상황을 확인할 수 없는 터라 아무래도 걱정이 되는군. 도와줄 일이 있는지 궁금하기도 하고",
+                "th": "ฉันไม่แน่ใจว่าสภาพของพวกเขาเป็นยังไงบ้าง และฉันกังวลว่าพวกเขาอาจต้องการความช่วยเหลือ",
+                "zh-Hans": "我无法确认他们的状况，也担心，他们会有需要帮助的地方。",
+                "zh-Hant": "我無法確認他們的狀況，也擔心，他們會有需要幫助的地方。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das brauchst du nicht. Überlass das mir.",
+                    "en": "No need. You can count on me.",
+                    "es": "No hace falta. Puedes contar conmigo.",
+                    "fr": "Pas besoin. Tu peux compter sur moi.",
+                    "ja": "{Male=じゃあ俺が様子を見てくるよ。;Female=じゃあ私が様子を見てくるわ。}",
+                    "ko": "제가 가서 확인해 볼게요",
+                    "th": "งั้นฉันไปดูให้เลย",
+                    "zh-Hans": "那我去看看吧。",
+                    "zh-Hant": "那我去看看吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich werde schauen, wie es ihnen geht.",
+                    "en": "I'll go check on them for you.",
+                    "es": "Yo iré a echarles una mano.",
+                    "fr": "Je m'occupe d'aller les voir.",
+                    "ja": "{Male=俺が手伝って来るよ。;Female=私が手伝ってくるわ。}",
+                    "ko": "제가 가서 도와줄게요",
+                    "th": "เดี๋ยวฉันจะไปดูแลพวกเขาให้เอง",
+                    "zh-Hans": "我会去帮助他们的。",
+                    "zh-Hant": "我會去幫助他們的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du ... *Lächeln* dann nehme deine Hilfe gerne an, {PlayerName}.",
+                "en": "You... *smile* Then I'll gladly accept your help, {PlayerName}.",
+                "es": "¿De verdad...? Muchísimas gracias, {PlayerName}.",
+                "fr": "Tu... *sourire* J'accepte ton aide avec plaisir, {PlayerName}.",
+                "ja": "いいのか？では…{PlayerName}、感謝する。",
+                "ko": "그래 줄 수 있겠나? 그럼... 부탁하네, {PlayerName}",
+                "th": "ได้มั้ยนะ ขอบคุณมากนะ {PlayerName}",
+                "zh-Hans": "可以吗？那……非常感谢，{PlayerName}。",
+                "zh-Hant": "可以嗎？ 那……非常感謝，{PlayerName}。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 688,
+                "name": {
+                  "zh-Hans": "忌炎（通讯中）"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde den ersten Soldaten",
+        "en": "Find the first soldier",
+        "es": "Encuentra al primer soldado",
+        "fr": "Trouver le premier soldat",
+        "ja": "一人目の兵士を探す",
+        "ko": "첫 번째 병사 찾기",
+        "th": "ตามหาทหารคนแรก",
+        "zh-Hans": "寻找第一名士兵",
+        "zh-Hant": "尋找第一名士兵"
+      },
+      "entities": [
+        {
+          "entityId": 109002474,
+          "mapId": 8,
+          "blueprintType": "NPC0127",
+          "name": "TsEntity_157_001_高伯",
+          "areaId": 301,
+          "position": {
+            "x": -54630,
+            "y": 109640,
+            "z": 1606
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 175
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700151,
+          "mapId": 8,
+          "blueprintType": "NPC300",
+          "name": "TsEntity_157_035_夜归-空手",
+          "areaId": 301,
+          "position": {
+            "x": -54810,
+            "y": 109970,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700152,
+          "mapId": 8,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩2",
+          "areaId": 301,
+          "position": {
+            "x": -54830,
+            "y": 110070,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700153,
+          "mapId": 8,
+          "blueprintType": "NPC262",
+          "name": "TsEntity_121_004_皇龙小孩6",
+          "areaId": 301,
+          "position": {
+            "x": -54770,
+            "y": 110060,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1.2同行插曲支线",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Yanwu! Du bist zurück!",
+                "en": "Yanwu! You're back!",
+                "es": "¡Yanwu! ¡Ya estás de vuelta!",
+                "fr": "Yanwu ! Tu es revenu !",
+                "ja": "——ゲンブ兄ちゃん！おかえり！",
+                "ko": "——언무 형! 돌아왔구나!",
+                "th": "———พี่ Yanwu! กลับมาแล้วเหรอ!",
+                "zh-Hans": "——彦武哥哥！你回来啦！",
+                "zh-Hant": "——彥武哥哥！ 你回來啦！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700042,
+                "name": {
+                  "zh-Hans": "小乐"
+                },
+                "entity": {
+                  "entityId": 880700152,
+                  "mapId": 8,
+                  "blueprintType": "NPC001",
+                  "name": "TsEntity_121_001_皇龙小孩2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54830,
+                    "y": 110070,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Yanwu! Wo sind die Leckereien, die du uns letztes Mal versprochen hast?",
+                "en": "Yanwu! Where are the yummies you promised last time?",
+                "es": "¡Yanwu! ¿Dónde está la comida que me prometiste la última vez?",
+                "fr": "Yanwu ! Où sont les friandises que tu avais promises la dernière fois ?",
+                "ja": "——ゲンブ兄ちゃん！おいしいものもってきてくれた？この前わかったって言ったよね！",
+                "ko": "——언무 형! 맛있는 거 사 왔어? 저번에 사다 준다고 했잖아!",
+                "th": "———พี่ Yanwu! ไหนล่ะของกินอร่อยๆ ที่สัญญาไว้คราวก่อน?",
+                "zh-Hans": "——彦武哥哥！给我们带好吃的回来了吗？上次你可是答应好的！",
+                "zh-Hant": "——彥武哥哥！ 給我們帶好吃的回來了嗎？ 上次你可是答應好的！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700043,
+                "name": {
+                  "zh-Hans": "阿进"
+                },
+                "entity": {
+                  "entityId": 880700153,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩6",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54770,
+                    "y": 110060,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh nein! Die habe ich total vergessen ...",
+                "en": "Oh no! I totally forgot…",
+                "es": "¡Oh, no! Se me ha olvidado completamente...",
+                "fr": "Oh non ! J'ai complètement oublié...",
+                "ja": "うわ…し、しまった、忘れちまった…",
+                "ko": "앗... 이, 이런, 깜빡했어...",
+                "th": "เอ๊ย ไม่นะ! ฉันลืมสนิทเลย...",
+                "zh-Hans": "啊……糟、糟糕，我给忘了……",
+                "zh-Hant": "啊……糟、糟糕，我給忘了……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hmpf! Du Lügner!",
+                "en": "Hmph! You liar!",
+                "es": "¡Tsk! ¡Mentiroso!",
+                "fr": "Pff ! Espèce de menteur !",
+                "ja": "ゲンブ兄ちゃんのうそつき！",
+                "ko": "언무 형은 거짓말쟁이야!",
+                "th": "ฮึ่ม! โกหกชัดๆ!",
+                "zh-Hans": "彦武哥哥是大骗子！",
+                "zh-Hant": "彥武哥哥是大騙子！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700043,
+                "name": {
+                  "zh-Hans": "阿进"
+                },
+                "entity": {
+                  "entityId": 880700153,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩6",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54770,
+                    "y": 110060,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Hahaha, ich ärgere euch nur. Ich habe euch Loong-Brötchen vom Mondlichtmarkt mitgebracht. Esst sie, solange sie noch heiß sind, da schmecken sie am besten!",
+                "en": "...Hahaha, just kidding! I got you some Loong Buns from the Moonlit Fair. Eat them while they're hot, they're the best that way!",
+                "es": "... ¡Jajaja, era broma! Te he comprado Baozis de la Feria de la Luna. Cómetelos antes de que se enfríen, ¡así están más buenos!",
+                "fr": "...Hahaha, je rigole ! J'ai ramené du Pain de Loong du Marché de la lune. Il faut les manger chauds, ils sont meilleurs comme ça !",
+                "ja": "…ハハハ、冗談だよ。<ano=よいづきかい>宵月会</ano> で <ano=しょうろんぽう>小龍包</ano>をもらってきたぞ。熱いうちに食え。",
+                "ko": "...하하핫! 농담이야. 너희들 주려고 달맞이 야시장에서 용띠찐빵을 사 왔지. 자, 따뜻할 때 먹어",
+                "th": "...ฮ่าๆ ๆ ล้อเล่นน่า! ฉันเอาซาลาเปามังกรจากเทศกาลจันทร์พรายแสงมาฝาก กินตอนร้อนๆ นี่แหละอร่อยที่สุดเลย!",
+                "zh-Hans": "……哈哈哈哈，开玩笑的，我从宵月会给你们带了小龙包。要趁热吃哦。",
+                "zh-Hant": "……哈哈哈哈，開玩笑的，我從宵月會給你們帶了小龍包。 要趁熱吃喔。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wow! Loong-Brötchen! Danke, Yanwu!",
+                "en": "Wow! Loong Buns! Thank you, Yanwu!",
+                "es": "¡Uau! ¡Baozi! ¡Gracias, Yanwu!",
+                "fr": "Oh ! Pain de Loong ! Merci, Yanwu !",
+                "ja": "わぁ…<ano=しょうろんぽう>小龍包</ano>だ！ゲンブ兄ちゃんありがとう！",
+                "ko": "와아... 용띠찐빵이다! 언무형, 고마워!",
+                "th": "ว้าว! ซาลาเปามังกร! ขอบคุณนะ Yanwu!",
+                "zh-Hans": "哇啊……小龙包！谢谢彦武哥哥！",
+                "zh-Hant": "哇啊……小龍包！ 謝謝彥武哥哥！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700043,
+                "name": {
+                  "zh-Hans": "阿进"
+                },
+                "entity": {
+                  "entityId": 880700153,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩6",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54770,
+                    "y": 110060,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "D-darf ich auch zum Mondlichtmarkt gehen ...?",
+                "en": "C-can I go to the Moonlit Fair too...?",
+                "es": "¿Y-yo también puedo ir a la Feria de la Luna...?",
+                "fr": "J-je peux aussi aller au Marché de la lune... ?",
+                "ja": "ぼ、ぼくも<ano=よいづきかい>宵月会</ano>にいけるかな…",
+                "ko": "나, 나도 달맞이 야시장에 가면 안 돼...?",
+                "th": "ฉะ...ฉันไปงานเทศกาลจันทร์พรายแสงด้วยได้มั้ย...?",
+                "zh-Hans": "我、我也能去宵月会吗……",
+                "zh-Hant": "我、我也能去宵月會嗎……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700042,
+                "name": {
+                  "zh-Hans": "小乐"
+                },
+                "entity": {
+                  "entityId": 880700152,
+                  "mapId": 8,
+                  "blueprintType": "NPC001",
+                  "name": "TsEntity_121_001_皇龙小孩2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54830,
+                    "y": 110070,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich! Sag einfach Tante Direktorin Bescheid, dann darfst du gehen!",
+                "en": "Of course! Just let Auntie know and you can go!",
+                "es": "¡Por supuesto! ¡Pero antes tienes que avisar a la directora!",
+                "fr": "Bien sûr ! Il faut seulement que tu préviennes Tatie et tu pourras y aller !",
+                "ja": "もちろんだ。おばさんに言えば行けるさ！",
+                "ko": "가도 돼, 아주머니한테 말씀드리고 가자!",
+                "th": "ได้สิ! ไปบอกคุณป้าซะ แล้วก็ไปได้เลย!",
+                "zh-Hans": "当然没问题啦，跟阿姨说一下就能去！",
+                "zh-Hant": "當然沒問題啦，跟阿姨說一下就能去！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hurra!",
+                "en": "Hooray!",
+                "es": "¡Hurra!",
+                "fr": "Hourra !",
+                "ja": "やったぁ！",
+                "ko": "헤헤, 좋아!",
+                "th": "ไชโย!",
+                "zh-Hans": "耶，太好啦！",
+                "zh-Hant": "耶，太好啦！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700042,
+                "name": {
+                  "zh-Hans": "小乐"
+                },
+                "entity": {
+                  "entityId": 880700152,
+                  "mapId": 8,
+                  "blueprintType": "NPC001",
+                  "name": "TsEntity_121_001_皇龙小孩2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54830,
+                    "y": 110070,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich will auch mit! Los, Le! Wir müssen Tante finden!",
+                "en": "Count me in! Come on, Lele! Let's go find Auntie!",
+                "es": "¡Cuenta conmigo! ¡Vamos, Le! ¡Vamos a buscar a la directora!",
+                "fr": "Je viens aussi ! Viens, Lele ! Allons trouver Tatie !",
+                "ja": "じゃあぼくも行く！ガクちゃん、おばさんに言ってこよう！",
+                "ko": "나도, 나도 갈래! 소락, 아주머니한테 허락받으러 가자!",
+                "th": "งั้นฉันไปด้วย! มาเถอะ Lele! ไปหาคุณป้ากัน!",
+                "zh-Hans": "那我也要去！走，小乐！我们快去找阿姨吧！",
+                "zh-Hant": "那我也要去！ 走，小樂！ 我們快去找阿姨吧！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700043,
+                "name": {
+                  "zh-Hans": "阿进"
+                },
+                "entity": {
+                  "entityId": 880700153,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩6",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54770,
+                    "y": 110060,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Kinder laufen mit ihren Loong-Brötchen weg und spielen Fangen.",
+                "en": "The children run off with Loong Buns, playfully chasing each other.",
+                "es": "Los niños se fueron con los Baozis persiguiéndose los unos a los otros.",
+                "fr": "Les enfants partent en courant avec du Pain de Loong, tout en se pourchassant espièglement.",
+                "ja": "子供たちは<ano=しょうろんぽう>小龍包</ano>を持って、追いかけあいながら遠ざかって行く。",
+                "ko": "아이들이 용띠찐빵을 들고 앞다투어 달려갔다",
+                "th": "เด็กๆ ถือซาลาเปามังกรวิ่งไล่ตามกันไปอย่างสนุกสนาน",
+                "zh-Hans": "孩子们拿着小龙包，相互追逐着跑远了。",
+                "zh-Hant": "孩子們拿著小龍包，相互追逐著跑遠了。"
+              },
+              "id": 11
+            },
+            {
+              "text": {
+                "de": "Passt auf, Kinder! Guckt, wo ihr langlauft!",
+                "en": "Take it easy, kids! Watch your step!",
+                "es": "¡Id con cuidado! ¡No os tropecéis!",
+                "fr": "Du calme les enfants ! Attention où vous mettez les pieds !",
+                "ja": "気をつけろ、転ぶなよ！",
+                "ko": "넘어지지 않게 천천히 가!",
+                "th": "ค่อยๆ เดินนะเด็กๆ ระวังล้ม!",
+                "zh-Hans": "慢点，别摔倒了！",
+                "zh-Hant": "慢點，別摔倒了！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hallo, Yanwu.",
+                    "en": "Hello, Yanwu.",
+                    "es": "Hola, Yanwu.",
+                    "fr": "Bonjour, Yanwu.",
+                    "ja": "やあ、<ano=ゲンブ>彦武</ano>。",
+                    "ko": "안녕하세요, 언무",
+                    "th": "สวัสดี Yanwu",
+                    "zh-Hans": "你好，彦武。",
+                    "zh-Hant": "你好，彥武。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, {PlayerName}! Dich habe ich bei unserer letzten Schlacht gesehen!",
+                "en": "Oh hey, {PlayerName}! I remember seeing you during the last battle!",
+                "es": "¡Ah, {PlayerName}! ¡Recuerdo que te vi en la última batalla!",
+                "fr": "Oh salut, {PlayerName} ! Je me rappelle t'avoir {Male=vu;Female=vue}pendant la dernière bataille !",
+                "ja": "お…{PlayerName}！今度の作戦で、お前を見かけたぞ！",
+                "ko": "아... {PlayerName}! 저번 작전에서 뵌 적 있어요!",
+                "th": "อ้าว {PlayerName}! ฉันจำได้ว่าเห็นคุณตอนต่อสู้ครั้งก่อนนี่นา!",
+                "zh-Hans": "啊……{PlayerName}！我在那次作战中见过你！",
+                "zh-Hant": "啊……{PlayerName}！ 我在那次作戰中見過你！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was hat dich hierher verschlagen? Ich dachte, dass du auf dem Mondlichtmarkt wärst.",
+                "en": "What brings you here? Thought you'd be at the Moonlit Fair.",
+                "es": "¿Qué te trae por aquí? Me pensaba que estabas en la Feria de la Luna.",
+                "fr": "Qu'est-ce qui t'amène ici ? Je pensais que tu serais au Marché de la lune.",
+                "ja": "今日は<ano=よいづきかい>宵月会</ano>に行かないのか？",
+                "ko": "오늘 달맞이 야시장에 안 가는 건가요?",
+                "th": "วันนี้ไม่ได้ไปงานเทศกาลจันทร์พรายแสงเหรือ?",
+                "zh-Hans": "今天没去宵月会吗？",
+                "zh-Hant": "今天沒去宵月會嗎？"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Tatsächlich ...",
+                    "en": "Well, in fact…",
+                    "es": "A decir verdad...",
+                    "fr": "Eh bien, en fait...",
+                    "ja": "{Male=ああ。実は…;Female=ええ。実は…}",
+                    "ko": "네, 사실...",
+                    "th": "คือที่จริง...",
+                    "zh-Hans": "嗯，实际上……",
+                    "zh-Hant": "嗯，實際上……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du erklärst Yanwu den Grund für dein Erscheinen.",
+                "en": "You explain why you're here to Yanwu.",
+                "es": "Le explicas a Yanwu por qué estás aquí.",
+                "fr": "Vous expliquez à Yanwu pourquoi vous êtes là.",
+                "ja": "<ano=ゲンブ>彦武</ano>に自分が来た理由を説明する。",
+                "ko": "언무에게 이곳에 찾아온 이유를 설명했다",
+                "th": "คุณอธิบายเหตุผลที่มาที่นี่ให้ Yanwu ฟัง",
+                "zh-Hans": "你向彦武讲述了自己的来意。",
+                "zh-Hant": "你向彥武講述了自己的來意。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe. Das ist sehr aufmerksam von General Jiyan, aber das wäre nicht nötig gewesen. Mir geht es gut. Er macht sich zu viele Sorgen.",
+                "en": "I see. General Jiyan was thoughtful to send you, but there's no need for that. I'm doing great. He worries too much.",
+                "es": "Ya veo... Es todo un detalle por parte del general Jiyan enviarte, pero no me ha pasado nada. Supongo que estaba preocupado de más.",
+                "fr": "Je vois. C'est très attentionné de la part du Général Jiyan de t'envoyer ici, mais ce n'était pas nécessaire. Je vais très bien. Il s'inquiète trop.",
+                "ja": "…ハッ、なるほどな。まったく…<ano=キエン>忌炎</ano>将軍もずいぶん周到だな。けどな、俺はちっとも問題ないぜ。将軍が心配し過ぎなだけだろ。",
+                "ko": "...아, 그런 거였군요. 정말이지... 기염 장군께서는 다정하시네요. 하지만 전 괜찮아요. 괜한 걱정을 하신 것 같네요",
+                "th": "...ฮะ เป็นอย่างนี้นี่เอง... แม่ทัพ Jiyan คิดรอบคอบจริงๆ แต่ว่าฉันไม่มีอะไรหรอก เขาคงกังวลมากเกินไปหน่อย",
+                "zh-Hans": "……哈，原来是这样啊。真是的……忌炎将军想得也太周到了吧，不过，我一点事都没有。他大概是担心过头了。",
+                "zh-Hant": "……哈，原來是這樣啊。 真是的……忌炎將軍想得也太周到了吧，不過，我一點事都沒有。 他大概是擔心過頭了。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin in dem Waisenhaus hier um die Ecke aufgewachsen. Die Direktorin kümmert sich um uns, als wären wir ihre eigenen Kinder. Das Waisenhaus ist mein Zuhause geworden.",
+                "en": "I grew up in the orphanage nearby. Autie Director takes care of us like her own. The orphanage is my home now.",
+                "es": "Me crié en un orfanato cerca de aquí. La directora cuidaba de nosotros como si fuéramos sus propios hijos. El orfanato es como mi propia casa.",
+                "fr": "J'ai grandi dans l'orphelinat d'ici. La Responsable prend soin de nous comme si nous étions ses propres enfants. L'orphelinat, c'est ma maison maintenant.",
+                "ja": "俺はこの近くの養護施設で育ったんだ。院長のおばさんが、俺たちみたいな親を失くした子どもをよく世話してくれて、俺にはすぐ家族ができたんだ。",
+                "ko": "저는 이 근처에 있는 복지원에서 자랐어요. 원장 아주머니께서 저희처럼 부모를 잃은 아이들을 돌봐주고 계시죠. 제게 이곳은 집이나 다름없어요",
+                "th": "ฉันโตมาในบ้านเด็กกำพร้าแถวนี้ คุณป้าผู้อำนวยการเลี้ยงพวกเราเหมือนลูกตัวเองเลยนะ ฉันถือว่าบ้านนี้เป็นบ้านของฉันมาเป็นเวลานานแล้ว",
+                "zh-Hans": "我是在这附近的一所福利院中长大的，院长阿姨对我们这些失去父母的孩子关怀备至，我早就把这里当成家了。",
+                "zh-Hant": "我是在這附近的一所育幼院中長大的，院長阿姨對我們這些失去父母的孩子關懷備至，我早就把這裡當成家了。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin überhaupt nicht einsam. Ich bin hier bei meiner Familie.",
+                "en": "I'm not lonely at all. Look, my family's right here.",
+                "es": "No me siento solo en absoluto. Mira, mi familia está justo aquí.",
+                "fr": "Je ne suis pas seul du tout. Regarde, ma famille est là.",
+                "ja": "だから、心配ない。俺はもう家族と団らんしてるだろ？",
+                "ko": "그러니까 걱정하지 않으셔도 돼요. 가족들과 만났으니까요",
+                "th": "ฉะนั้นไม่ต้องกังวลนะ ฉันกลับมาอยู่กับครอบครัวแล้วนี่ ไม่ใช่เหรือ?",
+                "zh-Hans": "所以，不用担心。我这不是已经和家里人团聚了吗？",
+                "zh-Hant": "所以，不用擔心。 我這不是已經和家裡人團聚了嗎？"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Diese Kinder ...",
+                    "en": "Those kids…",
+                    "es": "Esos niños...",
+                    "fr": "Ces enfants…",
+                    "ja": "あの子たち…",
+                    "ko": "저 아이들은...",
+                    "th": "เด็กพวกนั้น...",
+                    "zh-Hans": "那些孩子……",
+                    "zh-Hant": "那些孩子……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sie sind alle Waisen, genau wie ich. Wenn ich Ausgang bekomme, besuche ich sie und quatsche ein bisschen mit der Direktorin.",
+                "en": "They're all orphans like me. Whenever I get leave, I stop by to catch up with them and chat with Auntie.",
+                "es": "Son huérfanos, igual que yo. Siempre que me dan vacaciones me paso por aquí, me pongo al día con ellos y charlo con la directora.",
+                "fr": "Ils sont tous des orphelins comme moi. Lorsque j'ai une permission, je passe les voir pour prendre de leurs nouvelles et papoter avec Tatie.",
+                "ja": "あぁ、そうだ。あの子らも孤児院の子だ。休暇の時はいつも会いに帰ってくるんだ。ついでに院長とも話をしたりな。",
+                "ko": "네, 맞아요. 저 아이들도 복지원의 아이들이에요. 휴가 때가 되면 항상 아이들을 보러 오죠. 온 김에 원장 아주머니와 이야기를 나누기도 하고요",
+                "th": "ใช่ ทุกคนเป็นเด็กกำพร้าเหมือนฉัน ทุกครั้งที่ได้ลาพัก ฉันก็จะแวะมาคุยเล่นกับพวกเขา แล้วก็คุยกับคุณป้า",
+                "zh-Hans": "嗯，没错。他们也是福利院的孩子。我休假的时候总是回来看他们，顺便陪院长阿姨说说话。",
+                "zh-Hant": "嗯，沒錯。 他們也是育幼院的孩子。 我休假的時候總是回來看他們，順便陪院長阿姨說說話。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Gedanke, dass ich da draußen an der Front gegen Monster kämpfe, um sie zu beschützen, verleiht meinem Leben einen Sinn.",
+                "en": "It gives me a sense of purpose, knowing I'm out there on the front lines fighting those monsters to protect them.",
+                "es": "Saber que estoy ahí fuera en el frente luchando contra esos monstruos para protegerles, le da un propósito a mi vida.",
+                "fr": "Je me sens utile quand je sais que je suis là, sur le front à combattre ces monstres pour les protéger.",
+                "ja": "前線で<ano=ざんぞう>残像</ano>と戦ってたのも、あいつらを守るためだって考えると、力が満ちてくるんだ。",
+                "ko": "소중한 사람들을 지키기 위해 전방에서 잔상과 싸우고 있다고 생각하면 절로 힘이 나요",
+                "th": "มันทำให้ฉันรู้สึกว่าชีวิตมีความหมาย เพราะรู้ว่าที่ฉันออกไปต่อสู้กับทาเซ็ตดิสคอร์ดที่แนวหน้า ก็เพื่อปกป้องพวกเขา",
+                "zh-Hans": "一想到自己在前线与残象战斗，是为了保护他们，我就充满了力量。",
+                "zh-Hant": "一想到自己在前線與殘象戰鬥，是為了保護他們，我就充滿了力量。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Brauchst du Hilfe?",
+                    "en": "Need any help?",
+                    "es": "¿Necesitas ayuda?",
+                    "fr": "Besoin d'aide ?",
+                    "ja": "何か手伝えることはある？",
+                    "ko": "제가 도와드릴 게 있나요?",
+                    "th": "ให้ช่วยอะไรมั้ย?",
+                    "zh-Hans": "那你有什么需要帮忙的吗？",
+                    "zh-Hant": "那你有什麼需要幫忙的嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hilfe? Ne, da fällt mir nichts ein. Vielleicht müssten die Wände des Waisenhauses mal wieder gemalt werden ...",
+                "en": "Help? Nah, nothing comes to mind. Maybe repainting the orphanage walls...",
+                "es": "¿Ayuda? No, no se me ocurre nada. Aunque quizás al muro del orfanato le vendría bien una capa de pintura...",
+                "fr": "D'aide ? Non, il n'y a rien qui me vienne à l'esprit. Peut-être que les murs de l'orphelinat pourraient être repeints...",
+                "ja": "手伝い…？ないな。いや、そうだ。孤児院の外壁を塗り直さなきゃいけなかったな…",
+                "ko": "도움이요...? 없을 것 같은데... 아, 맞다! 복지원의 외벽을 다시 칠해야 하는데...",
+                "th": "ช่วยเหรอ? ไม่มีนะ เอ้อ อาจจะต้องทาสีผนังบ้านเด็กกำพร้าใหม่แล้ว...",
+                "zh-Hans": "帮忙……？应该没有吧。哦，对了，好像福利院的外墙得重新粉刷一下了……",
+                "zh-Hant": "幫忙……？ 應該沒有吧。 哦，對了，好像育幼院的外牆得重新粉刷一下了……"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber lass mal, das kriege ich in einer Stunde alleine hin, oder schneller!",
+                "en": "But nevermind, I can knock that out in an hour, tops!",
+                "es": "Pero no te preocupes, ¡puedo ocuparme de eso en una hora como mucho!",
+                "fr": "Mais oublie, je peux faire ça en une heure, grand max !",
+                "ja": "だがこんなことで{PlayerName}に面倒をかけるのもな。1時間あれば俺が終わらせられる！",
+                "ko": "하지만 이런 일은 {PlayerName}이(가) 도와주지 않으셔도 돼요. 기껏해야 1시간이면 혼자서도 할 수 있으니까요!",
+                "th": "แต่เรื่องแบบนี้ไม่ต้องรบกวน {PlayerName} หรอก ฉันจัดการให้เสร็จได้ในหนึ่งชั่วโมงเอง!",
+                "zh-Hans": "不过这种事，就不必麻烦{PlayerName}了，我最多一小时就搞定了！",
+                "zh-Hant": "不過這種事，就不必麻煩{PlayerName}了，我最多一小時就搞定了！"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke für deinen Besuch, {PlayerName}. Das bedeutet mir sehr viel.",
+                "en": "Thanks for coming over to check on me, {PlayerName}! It means a ton.",
+                "es": "¡{PlayerName}, gracias por venir a comprobar como estoy! Significa mucho para mí.",
+                "fr": "Merci d'avoir pris de mes nouvelles, {PlayerName} ! Ça me touche énormément.",
+                "ja": "でもありがとうな、{PlayerName}！俺のためにわざわざ来てくれて。",
+                "ko": "그래도 정말 감사해요, {PlayerName}! 절 위해 여기까지 와주시다니",
+                "th": "ขอบคุณที่แวะมาดูฉันนะ {PlayerName}! ฉันดีใจมากจริงๆ",
+                "zh-Hans": "但还是非常感谢你，{PlayerName}！为了我特意跑了这么一趟。",
+                "zh-Hant": "但還是非常感謝你，{PlayerName}！ 為了我特意跑了這麼一趟。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So, ich muss jetzt los. Wir sehen uns!",
+                "en": "Alright, time for me to get cracking. See you around!",
+                "es": "Bueno, es hora de que me ponga manos a la obra. ¡Hasta la vista!",
+                "fr": "Allez, il faut que je m'y mette. À une prochaine fois !",
+                "ja": "よし。じゃあ働いてくるよ。{PlayerName}、また後でな！",
+                "ko": "그럼 전 이만 일 하러 가볼게요. 나중에 봐요, {PlayerName}!",
+                "th": "ทีนี้ก็ได้เวลาลงมือแล้ว ไว้เจอกันนะ! {PlayerName}!",
+                "zh-Hans": "好啦，我要去干活了，回头见，{PlayerName}！",
+                "zh-Hant": "好啦，我要去幹活了，回頭見，{PlayerName}！"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 700044,
+                "name": {
+                  "zh-Hans": "彦武"
+                },
+                "entity": {
+                  "entityId": 880700151,
+                  "mapId": 8,
+                  "blueprintType": "NPC300",
+                  "name": "TsEntity_157_035_夜归-空手",
+                  "areaId": 301,
+                  "position": {
+                    "x": -54810,
+                    "y": 109970,
+                    "z": 1620
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde den zweiten Soldaten",
+        "en": "Find the second soldier",
+        "es": "Encuentra al segundo soldado",
+        "fr": "Trouver le deuxième soldat",
+        "ja": "二人目の兵士を探す",
+        "ko": "두 번째 병사 찾기",
+        "th": "ตามหาทหารคนที่สอง",
+        "zh-Hans": "寻找第二名士兵",
+        "zh-Hant": "尋找第二名士兵"
+      },
+      "entities": [
+        {
+          "entityId": 880700157,
+          "mapId": 8,
+          "blueprintType": "TsEntity_154_夜归女（医疗袖章）",
+          "name": "TsEntity_154_夜归女（医疗袖章）",
+          "areaId": 501,
+          "position": {
+            "x": -64840,
+            "y": -53390,
+            "z": 32870
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1.2同行插曲支线",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "...",
+                "en": "…",
+                "es": "...",
+                "fr": "…",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "...",
+                    "en": "…",
+                    "es": "...",
+                    "fr": "…",
+                    "ja": "……",
+                    "ko": "...",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "... Hallo, {PlayerName}. Suchst du nach Bekannten?",
+                "en": "...Hello, {PlayerName}. Are you visiting someone you know?",
+                "es": "... Hola, {PlayerName}. ¿Vas a visitar a algún conocido?",
+                "fr": "...Bonjour, {PlayerName}. Tu rends visite à quelqu'un que tu connais ?",
+                "ja": "…こんにちは、{PlayerName}。あの…ここに眠っている方たちのことを知っていますか？",
+                "ko": "...안녕하세요, {PlayerName}. 저기... 여기 잠들어 있는 사람에 대해 아세요?",
+                "th": "...สวัสดี {PlayerName} ขอโทษนะ... ไม่ทราบว่าคุณรู้จักคนที่หลับใหลอยู่ที่นี่มั้ย?",
+                "zh-Hans": "……您好，{PlayerName}。请问……您认识这些安眠于此地的人吗？",
+                "zh-Hant": "……您好，{PlayerName}。 請問……您認識這些安眠於此地的人嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin wegen etwas anderem hier.",
+                    "en": "I am here for something else.",
+                    "es": "Estoy aquí por otro motivo.",
+                    "fr": "Je suis là pour autre chose.",
+                    "ja": "{Male=いや、お参りに来たんじゃないんだ。;Female=いいえ、お参りに来たんじゃないの。}",
+                    "ko": "아뇨, 조문하러 온 게 아니에요",
+                    "th": "ไม่ ฉันมาที่นี่ด้วยเหตุผลอื่น",
+                    "zh-Hans": "不，我不是来吊唁的。",
+                    "zh-Hant": "不，我不是來弔唁的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "... Nein, ich kenne hier niemanden.",
+                    "en": "...No, I don't know any of them.",
+                    "es": "... No, no conozco a nadie.",
+                    "fr": "...Non, je n'en connais aucun.",
+                    "ja": "{Male=…いや、知らないよ。;Female=いいえ。知らないわ。}",
+                    "ko": "...아뇨, 모르는 사람이에요",
+                    "th": "...เปล่าหรอก ฉันไม่รู้จักใครเลย",
+                    "zh-Hans": "……不，我不认识他们。",
+                    "zh-Hant": "……不，我不認識他們。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich verstehe ... die Soldaten in diesen Gräbern sind gefallen, bevor du nach Jinzhou gekommen bist. Du wirst sie nicht kennen.",
+                "en": "I see... These graves hold fallen soldiers from before your arrival in Jinzhou. You probably don't know them.",
+                "es": "Ya veo... Estas tumbas son de soldados que cayeron antes de que llegaras a Jinzhou. Probablemente no sepas quiénes son.",
+                "fr": "Je vois... Ces tombes sont celles des soldats tombés avant ton arrivée à Jinzhou. Tu ne les connais probablement pas.",
+                "ja": "そうだと思いました。ここに埋葬されている人はほとんど…あなたが<ano=こんしゅう>今州</ano>に来る前に、戦地で亡くなった兵士です。{PlayerName}が知る人はいないでしょう。",
+                "ko": "그런가요? 여기에 묻힌 사람들은 거의 다... 당신이 금주에 오기 전에 전장에서 사망한 병사인 것 같아요. 아마도 {PlayerName}이(가) 알고 있는 사람은 아닐 것 같네요",
+                "th": "อ๋อเหรอ... คงจะเป็นแบบนั้น ที่นี่เป็นหลุมศพของทหารที่เสียชีวิตในสนามรบก่อนที่คุณจะมาถึงจินโจว ก็ไม่น่าจะมีใครที่ {PlayerName} รู้จักหรอก",
+                "zh-Hans": "是吗。我想也是，这里埋葬的基本上都是……您来到今州前在战场上阵亡的士兵，应该不会有{PlayerName}所认识的人。",
+                "zh-Hant": "是嗎。 我想也是，這裡埋葬的基本上都是……您來到今州前在戰場上陣亡的士兵，應該不會有{PlayerName}所認識的人。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es sind alle Soldaten, die ihr Leben für Jinzhou gegeben haben.",
+                "en": "They're all soldiers who gave their lives in battles, protecting Jinzhou.",
+                "es": "Son soldados que dieron sus vidas luchando por proteger Jinzhou.",
+                "fr": "Ce sont tous des soldats qui ont donné leur vie au combat, pour protéger Jinzhou.",
+                "ja": "ここに埋葬されているのは、皆過去の戦役で戦死した兵士です。彼らは<ano=こんしゅう>今州</ano>を守るため、自分の命を捧げたのです。",
+                "ko": "여기 묻힌 사람 대부분이 전사한 병사들이에요. 금주를 지키기 위해 자신의 목숨을 바친 사람들이죠",
+                "th": "ที่นี่เป็นที่ฝังศพของทหารที่เสียชีวิตในสงครามหลายครั้ง พวกเขาทุ่มเทชีวิตเพื่อปกป้องจินโจว",
+                "zh-Hans": "这里埋葬的都是在历次战役中阵亡的士兵。他们为了保护今州，而付出了自己的生命。",
+                "zh-Hant": "這裡埋葬的都是在歷次戰役中陣亡的士兵。 他們為了保護今州，而付出了自己的生命。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dir fällt der Name auf dem Grab ins Auge, vor dem Ke Ni steht — es trägt den gleichen Familiennamen wie sie.",
+                "en": "The name on the grave marker in front of Ke Ni catches your eye—that surname is the same as hers.",
+                "es": "El nombre en la tumba que hay delante de Ke Ni te llama la atención... Su apellido es igual que el de ella.",
+                "fr": "Le nom sur la pierre tombale devant Ke Ni attire votre attention. Ce nom est le même que le sien.",
+                "ja": "コニーの前にある墓標に文字が書いてある。どうやらコニーと同じ姓のようだ。",
+                "ko": "가니 앞에 있는 묘비에 이름 하나가 적혀 있었다. 가니와 같은 성씨의 이름인 것 같았다",
+                "th": "ชื่อที่ป้ายหลุมศพตรงหน้า Keni สะดุดตาคุณ เพราะนามสกุลเดียวกันกับเธอ",
+                "zh-Hans": "柯妮面前的墓碑上写着一个名字，看起来似乎和柯妮有着同样的姓氏。",
+                "zh-Hant": "柯妮面前的墓碑上寫著一個名字，看起來似乎和柯妮有著同樣的姓氏。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wer ist das ...?",
+                    "en": "This is…",
+                    "es": "Esta es...",
+                    "fr": "C'est...",
+                    "ja": "これは…",
+                    "ko": "이건...",
+                    "th": "นี่คือ...",
+                    "zh-Hans": "这是……",
+                    "zh-Hant": "這是……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist das Grab meines Bruders. Er hat in der Nachhut gedient. Sein Team ist bei einer Transportmission ... in einen Hinterhalt geraten.",
+                "en": "It's my brother's grave. He served in the Rearguard. During a transport mission, his team... ran into an ambush.",
+                "es": "Es la tumba de mi hermano. Sirvió en la Retaguardia. Durante una misión de transporte, su equipo... se topó con una emboscada.",
+                "fr": "C'est la tombe de mon frère. Il était dans l'Arrière-garde. Pendant une mission de transport, son équipe... est tombée dans une embuscade.",
+                "ja": "私の兄です。兄は<ano=ふくは>伏波</ano>で従軍していました。兄と戦友たちはある輸送任務で…突然多くの<ano=ざんぞう>残像</ano>に遭遇しました。",
+                "ko": "우리 오빠예요. 야귀군 후방부대에서 복무했죠. 전우들과 함께 수송 임무를 수행하다가... 갑자기 쏟아져 나온 잔상들을 만났어요",
+                "th": "หลุมศพพี่ชายฉันเอง เขาเคยสังกัดหน่วยพิทักษ์คลื่น ระหว่างภารกิจขนส่ง หน่วยของเขา... โดนทาเซ็ตดิสคอร์ดโจมตี",
+                "zh-Hans": "我哥哥。他在伏波军中服役。他和同袍们在一次运输任务中……遭遇了突然出现的众多残象。",
+                "zh-Hant": "我哥哥。 他在伏波軍中服役。 他和同袍們在一次運輸任務中……被突然出現的眾多殘象襲擊。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie haben ihre Pflicht erfüllt. Sie haben menschliche Schutzschilde gebildet, um die Wagen vor den Monstern abzuschirmen.",
+                "en": "They fulfilled their duty, forming a human barricade to protect the carts from those monsters.",
+                "es": "Cumplieron con su deber y formaron una barricada humana para proteger a los carros de los monstruos.",
+                "fr": "Ils ont formé un barrage de leurs propres corps pour protéger les transports de ces monstres.",
+                "ja": "自身の職務を果たすため、彼らは自らの体で防衛線を張り<ano=ざんぞう>残像</ano>を防ぎ止め、輸送車がその場を離れるのを援護しました。",
+                "ko": "책임을 다하기 위해 병사들은 자신의 몸을 방패 삼아 방어선을 세워 잔상을 막았대요. 수송 차량이 지나갈 수 있도록 말이에요",
+                "th": "พวกเขาทำหน้าที่อย่างครบถ้วน ใช้ร่างกายตัวเองเป็นกำแพงมนุษย์ เพื่อปกป้องขบวนเกวียนให้พ้นจากทาเซ็ตดิสคอร์ด",
+                "zh-Hans": "为了履行自己的职责，他们靠用自己身躯所组成的防线，将残象挡了下来，掩护运输车离开。",
+                "zh-Hant": "為了履行自己的職責，他們用身軀組成防線，將殘象擋了下來，掩護運輸車離開。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als die Verstärkung endlich eintraf, war es schon zu spät. Keiner hat überlebt.",
+                "en": "By the time reinforcements came... it was too late. None of them survived.",
+                "es": "Para cuando llegaron los refuerzos... ya era demasiado tarde. Ninguno sobrevivió.",
+                "fr": "Lorsque les renforts sont arrivés... il était trop tard. Aucun d'entre eux n'a survécu.",
+                "ja": "援軍が到着した時には…もう遅かったのです。一人も救うことができませんでした。",
+                "ko": "지원 부대가 도착했을 땐... 이미 모든 것이 끝나있었죠. 그들은 아무도 구할 수 없었어요",
+                "th": "กว่ากำลังเสริมจะมาถึง... ก็สายไปแล้ว ไม่มีใครรอดชีวิตสักคน",
+                "zh-Hans": "当增援赶到时……一切已经晚了。他们并没能救回任何一个人。",
+                "zh-Hant": "當增援趕到時……一切已經晚了。 他們並沒能救回任何一個人。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sie waren Helden.",
+                    "en": "They were heroes.",
+                    "es": "Son héroes.",
+                    "fr": "C'étaient des héros.",
+                    "ja": "{Male=彼らは皆英雄だ。;Female=彼らは皆英雄ね。}",
+                    "ko": "그들 모두가 영웅이네요",
+                    "th": "พวกเขาคือวีรบุรุษ",
+                    "zh-Hans": "他们都是英雄。",
+                    "zh-Hant": "他們都是英雄。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke. Wenn er das von den Rettern Jinzhous gehört hätte, wäre er bestimmt froh gewesen.",
+                "en": "Thank you. I'm sure he'd be happy to hear that from Jinzhou's savior.",
+                "es": "Gracias. Estoy segura de que se alegraría de escuchar eso {Male=del salvador;Female=de la salvadora} de Jinzhou.",
+                "fr": "Merci. Je suis sûre qu'il serait heureux de l'entendre de la bouche {Male=du sauveur;Female=de la sauveuse} de Jinzhou.",
+                "ja": "ありがとう。<ano=こんしゅう>今州</ano>を救ってくれた人にそう言われると…きっと彼らの魂も慰められるでしょう。",
+                "ko": "고마워요. 금주를 구한 분이 이런 말을 해주시다니... 하늘에 있는 오빠의 영혼이 위안을 받았을 거예요",
+                "th": "ขอบคุณนะ ฉันมั่นใจว่าพี่ชายต้องดีใจแน่ ที่ได้ยินคำพูดนั้นจากผู้กอบกู้จินโจว",
+                "zh-Hans": "谢谢你。能被拯救今州之人这么说……想必他的在天之灵也会感到宽慰的。",
+                "zh-Hant": "謝謝你。 能被拯救今州之人這麼說……想必他的在天之靈也會感到寬慰的。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was bringt dich heute eigentlich hierher?",
+                "en": "By the way... What brought you here today?",
+                "es": "Por cierto... ¿Qué te trae hoy por aquí?",
+                "fr": "Au fait... Qu'est-ce qui t'amène ici aujourd'hui ?",
+                "ja": "それで、お参りに来たのではないのなら…どうしてここへ？",
+                "ko": "그런데 조문하러 온 게 아니라면... 무슨 일로 여기까지 오신 거죠?",
+                "th": "ว่าแต่... วันนี้คุณมาทำอะไรเหรอ?",
+                "zh-Hans": "那么，既然不是吊唁……又是什么事让你来到这里的呢？",
+                "zh-Hant": "那麼，既然不是弔唁……又是什麼事讓你來到這裡的呢？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du erklärst Ke Ni den Grund für dein Erscheinen.",
+                "en": "You explain why you're here to Ke Ni.",
+                "es": "Le explicas a Ke Ni por qué estás aquí.",
+                "fr": "Vous expliquez à Ke Ni pourquoi vous êtes là.",
+                "ja": "コニーに自分が来た理由を説明する。",
+                "ko": "가니에게 자신이 여기에 온 이유를 설명한다",
+                "th": "คุณอธิบายเหตุผลที่มาที่นี่ให้ Keni ฟัง",
+                "zh-Hans": "你向柯妮讲述了自己的来意。",
+                "zh-Hant": "你向柯妮講述了自己的來意。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, verstehe. Das klingt wirklich nach General Jiyan. Danke für das Angebot. Hmm, lass mich kurz nachdenken ...",
+                "en": "Ah, I see. That does sound like something General Jiyan would say. Thanks for offering to help. Hmm, let me think...",
+                "es": "Oh, ya veo. Suena a algo que diría el general Jiyan. Gracias por ofrecerte a ayudar. Mmm... Déjame pensar...",
+                "fr": "Ah, je vois. C'est typiquement ce que dirait le Général Jiyan. Merci de proposer ton aide. Hmm, laisse-moi réfléchir...",
+                "ja": "そうでしたか…フフ、たしかに<ano=キエン>忌炎</ano>将軍のやり方ね。手伝ってほしいことですか？ええと…",
+                "ko": "그렇군요... 아, 확실히 기염 장군답네요. 도움이 필요한 일이라? 어디 보자...",
+                "th": "อ๋อ เข้าใจแล้ว ฟังดูเป็นสไตล์ของแม่ทัพ Jiyan จริงๆ นั่นแหละ ขอบคุณนะที่เสนอตัวมาช่วย อืมม ขอคิดก่อน...",
+                "zh-Hans": "原来是这样……哈，的确像是忌炎将军的作风。需要帮忙的事吗？让我想想……",
+                "zh-Hant": "原來是這樣……哈，的確像是忌炎將軍的作風。 需要幫忙的事嗎？ 讓我想想……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Könntest du mir ein bisschen Zitronengras besorgen? Mein Bruder hat diesen Duft geliebt, obwohl er kein Fan von Blumen war.",
+                "en": "If you don't mind, could you fetch some Lemongrass for me? My brother loved its scent, despite not being a fan of flowers.",
+                "es": "¿Podrías ayudarme a conseguir un poco de Hierba de limón si no te importa? Mi hermano no era muy aficionado a las flores, pero le encantaba su aroma.",
+                "fr": "Si ça ne te dérange pas, pourrais-tu cueillir de la Citronnelle pour moi ? Mon frère adorait son odeur, même s'il n'était pas un fan des fleurs.",
+                "ja": "もしよろしければ、レモングラスを持ってきていただけますか？兄は食いしん坊で。お花は好まないのですが、レモングラスの香りだけは気に入っていたんです。",
+                "ko": "괜찮다면 라임그라스를 따다 주실래요? 훗, 오빠는 먹는 걸 엄청 좋아했어요. 꽃을 좋아하진 않았는데 라임그라스향을 유일하게 좋아했죠",
+                "th": "ถ้าไม่ลำบากเกินไป ช่วยเก็บตะไคร้มาให้ทีได้มั้ย? ฮะ พี่ชายฉันเป็นคนชอบกินของนะ เขาไม่ชอบดอกไม้เลย แต่ชอบกลิ่นของตะไคร้มากๆ เลย",
+                "zh-Hans": "如果可以的话，能帮我带点香柠草来吗？呵，我哥哥可是个吃货。他不喜欢什么花，唯独喜欢香柠草的味道。",
+                "zh-Hant": "如果可以的話，能幫我帶點香檸草來嗎？ 呵，我哥哥可是個吃貨。他不喜歡什麼花，唯獨喜歡香檸草的味道。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kein Problem.",
+                    "en": "No problem.",
+                    "es": "No hay problema.",
+                    "fr": "Pas de problème.",
+                    "ja": "分かった。",
+                    "ko": "알겠어요",
+                    "th": "ได้สิ มาเลย",
+                    "zh-Hans": "没问题。",
+                    "zh-Hant": "沒問題。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke, {PlayerName}.",
+                "en": "Thank you, {PlayerName}.",
+                "es": "Gracias, {PlayerName}.",
+                "fr": "Merci, {PlayerName}.",
+                "ja": "ありがとうございます。{PlayerName}さん。",
+                "ko": "고마워요, {PlayerName}",
+                "th": "ขอบคุณนะ {PlayerName}",
+                "zh-Hans": "谢谢你，{PlayerName}。",
+                "zh-Hant": "謝謝你，{PlayerName}。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gib das Zitronengras an Keni weiter",
+        "en": "Deliver the Lemongrass to Keni",
+        "es": "Entrega la Hierba de limón a Keni",
+        "fr": "Donner la citronnelle à Keni",
+        "ja": "レモングラスをコニーに渡す",
+        "ko": "가니에게 라임그라스 전달",
+        "th": "นำตะไคร้ไปส่งให้เคอนี",
+        "zh-Hans": "将香柠草交给柯妮",
+        "zh-Hant": "將香檸草交給柯妮"
+      },
+      "entities": [
+        {
+          "entityId": 880700157,
+          "mapId": 8,
+          "blueprintType": "TsEntity_154_夜归女（医疗袖章）",
+          "name": "TsEntity_154_夜归女（医疗袖章）",
+          "areaId": 501,
+          "position": {
+            "x": -64840,
+            "y": -53390,
+            "z": 32870
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1.2同行插曲支线",
+          "flowIndex": 4,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Danke! Riecht wie immer erfrischend.",
+                "en": "Thank you... It smells refreshing as always.",
+                "es": "Gracias... Tiene un olor tan refrescante como de costumbre.",
+                "fr": "Merci... Son odeur est toujours aussi rafraîchissante.",
+                "ja": "あぁ…本当に清々しい香り。",
+                "ko": "음... 정말 싱그러운 향이네요",
+                "th": "ขอบคุณนะ... กลิ่นสดชื่นเหมือนเดิมเลย",
+                "zh-Hans": "嗯……真是清新的味道。",
+                "zh-Hant": "嗯……真是清新的味道。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das erinnert mich an die Zeit, als meine Mutter noch am Leben war ... sie hat immer Zitronengras in ihren Fischsuppen getan. Ganz ehrlich, das war nicht die beste Suppe.",
+                "en": "It reminds me of when mom was alive... She always used Lemongrass in her fish soup. It wasn't the best, to be honest.",
+                "es": "Me recuerda a cuando mi madre aún vivía... Siempre le ponía Hierba de limón a la sopa de pescado. No estaba demasiado buena, para ser sincera.",
+                "fr": "Ça me rappelle quand maman était en vie... Elle mettait toujours de la Citronnelle dans sa soupe de poisson. Pour être honnête, ce n'était pas terrible.",
+                "ja": "フフ。母が生きていた頃を思い出しました…よくレモングラスで魚のスープを作ってくれたんです。でも実は…すごく不味かったんです。",
+                "ko": "훗, 저희 엄마가 아직 살아계셨을 때... 라임그라스로 매운탕을 끓여 주셨던 게 생각나네요. 솔직히 말해서... 그렇게 맛있진 않았지만요",
+                "th": "มันทำให้นึกถึงตอนที่แม่ของฉันยังมีชีวิตอยู่... แม่ชอบทำซุปปลาใส่ตะไคร้ มันไม่ได้อร่อยขนาดนั้นหรอก พูดตามตรง",
+                "zh-Hans": "哈，我想到我妈妈还在世的时候……经常用香柠草给我们炖鱼汤喝。说实话，那……真的不好喝。",
+                "zh-Hant": "哈，我想到我媽媽還在世的時候……經常用香檸草給我們燉魚湯喝。 說實話，那……真的不好喝。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Zitronengras und der Fisch haben zusammen einen komischen Geschmack erzeugt, den ich nicht so wirklich beschreiben kann.",
+                "en": "The lemon grass and fish created a weird taste that I couldn't quite put my finger on.",
+                "es": "La combinación de la Hierba de limón y el pescado creaba un sabor rarísimo e indescriptible.",
+                "fr": "La citronnelle et le poisson donnaient un goût bizarre que je n'arrivais pas à définir.",
+                "ja": "レモングラスの爽やかな香りと、魚の生臭さが混ざって、言葉にできない変な味だったんです。",
+                "ko": "라임그라스의 싱그러운 향과 생선의 비린내가 섞여서 말로 표현하기 어려울 만큼 끔찍한 맛이었거든요",
+                "th": "กลิ่นสดชื่นของตะไคร้ผสมกลิ่นคาวของปลามันรสชาติแปลกๆ ฉันเองก็อธิบายไม่ถูก",
+                "zh-Hans": "香柠草那清新的味道混上鱼肉的腥味，就变成了一种难以言喻的怪味。",
+                "zh-Hant": "香檸草那清新的味道混上魚肉的腥味，就變成了一種難以言喻的怪味。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber sie war sich sicher, dass uns das beim Wachsen hilft. Ich hatte das nicht ausgehalten und meine Portion meinem Bruder gegeben. Tja, er war wirklich groß geworden ...",
+                "en": "But she insisted it would make us taller. I couldn't handle it, so I'd pour mine into my brother's bowl. Well, he did grow really tall…",
+                "es": "Pero siempre nos decía que nos ayudaría a crecer. No podía soportar el sabor, así que echaba mi sopa en el cuenco de mi hermano. La verdad es que él sí que creció mucho...",
+                "fr": "Mais elle insistait, en disant que ça nous ferait grandir. Je n'arrivais pas à en manger, alors je mettais ma soupe dans le bol de mon frère. C'est vrai qu'il est devenu très grand…",
+                "ja": "母は、魚のスープをたくさん食べると背が伸びるって言いました。でも私は本当に苦手だったので、こっそり兄のお椀に入れてたんです。そうしたら、フフ、確かに兄は背が高くなりましたね…",
+                "ko": "엄마는 매운탕을 먹어야 키가 클 거라고 했어요. 하지만 너무 먹기 싫어서 오빠 그릇에 몰래 부어 버리곤 했는데... 결국 오빠 키가 부쩍 커졌죠",
+                "th": "แต่แม่ยืนยันว่ากินแล้วจะทำให้ตัวสูง ฉันกินไม่ไหว ก็เลยเทใส่ชามของพี่ชายแทน แล้วสุดท้ายพี่ก็ตัวสูงจริงๆ...",
+                "zh-Hans": "我妈妈说，多喝鱼汤能长高。但我实在是不爱喝，就把汤都偷偷倒进哥哥碗里。结果，呵，他确实长得很高……",
+                "zh-Hant": "我媽媽說，多喝魚湯能長高。 但我實在是不愛喝，就把湯都偷偷倒進哥哥碗裡。結果，呵，他確實長得很高……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wahrscheinlich hat er Zitronengras geliebt, weil ihn das an einfache, glückliche Zeiten erinnerte ...",
+                "en": "I guess he loved Lemongrass because it reminded him of simpler, happier times...",
+                "es": "Supongo que le gustaba la Hierba de limón porque le recordaba a tiempos más sencillos y felices...",
+                "fr": "Je crois qu'il aimait la Citronnelle parce que ça lui rappelait l'époque plus simple, plus heureuse...",
+                "ja": "時々思うんです。兄もレモングラスが好きじゃなかったのかもって。好きだったのは、あの平凡で幸福な日々だったのかもしれませんね。",
+                "ko": "이따금 그런 생각이 들기도 해요. 오빠가 라임그라스를 좋아한 게 아니라 그저 평온하고 행복한 그 시절을 좋아한 거라고요",
+                "th": "ฉันเดาว่าพี่เขาคงชอบตะไคร้ เพราะมันทำให้นึกถึงช่วงเวลาที่เรียบง่ายและมีความสุขในวันเก่าก่อน...",
+                "zh-Hans": "我有时候会觉得，也许我哥哥他并不是喜欢香柠草，而是喜欢那段平淡而幸福的日子吧。",
+                "zh-Hant": "我有時候會覺得，也許我哥哥他並不是喜歡香檸草，而是喜歡那段平淡而幸福的日子吧。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...",
+                "en": "…",
+                "es": "...",
+                "fr": "…",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Entschuldige, {PlayerName}. Ich bin in meinen Familiengeschichten abgedriftet ... Haha, jetzt fehlt mir plötzlich die Fischsuppe meiner Mutter!",
+                "en": "Sorry, {PlayerName}. I got carried away talking about my family... Haha, now I'm starting to miss my mom's fish soup.",
+                "es": "Lo siento, {PlayerName}, me he dejado llevar hablando de mi familia... Jaja, me están entrando ganas otra vez de probar la sopa de pescado de mi madre.",
+                "fr": "Désolée, {PlayerName}. Je me suis emballée en parlant de ma famille... Haha, maintenant, la soupe de poisson de ma mère me manque presque.",
+                "ja": "ごめんなさい、{PlayerName}さん。お構いなしに我が家の話をしてしまいました。フフ…今思い出しても、あのスープの味は本当に懐かしいわ。",
+                "ko": "미안해요, {PlayerName}. 제멋대로 집안 사정을 이야기해 버렸네요. 훗... 지금 생각하니 그 매운탕 맛이 정말 그리워요",
+                "th": "ขอโทษทีนะ {PlayerName} ฉันมัวแต่เล่าเรื่องที่บ้านซะยาวเลย ฮ่าๆ ทีนี้ฉันเริ่มคิดถึงซุปปลาฝีมือแม่ขึ้นมาแล้วสิ",
+                "zh-Hans": "抱歉，{PlayerName}，自顾自地说起我家里的事了。哈……现在想起来，那鱼汤的味道还真是令人怀念啊。",
+                "zh-Hant": "抱歉，{PlayerName}，自顧自地說起我家裡的事了。 哈……現在想起來，那魚湯的味道還真是令人懷念啊。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alles klar!",
+                "en": "Alright!",
+                "es": "¡Está bien!",
+                "fr": "Très bien !",
+                "ja": "よし！決めました。",
+                "ko": "좋아요! 결정했어요",
+                "th": "ไหนดูซิ!",
+                "zh-Hans": "好！决定了。",
+                "zh-Hant": "好！決定了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du mir schon so viel Zitronengras gebracht hast, koche ich mir im Urlaub diese Fischsuppe!",
+                "en": "Since you brought me so much Lemongrass, I'll make that fish soup during my leave!",
+                "es": "¡Como me has traído tanta Hierba de limón, voy a preparar la sopa de pescado durante mis vacaciones!",
+                "fr": "Puisque tu m'a apporté toutes ces Citronnelles, je vais préparer cette soupe de poisson pendant ma permission !",
+                "ja": "ちょうど{PlayerName}さんがこんなにレモングラスをくれましたし、休暇の間にあの魚スープを作ってみましょう！",
+                "ko": "마침 {PlayerName}이(가) 라임그라스를 잔뜩 가져다주셨으니 이번 휴가 때 매운탕을 한번 끓여봐야겠어요!",
+                "th": "ในเมื่อ {PlayerName} เอาตะไคร้มาให้ตั้งเยอะ ฉันเลยจะลองทำซุปปลาในช่วงวันหยุดดู!",
+                "zh-Hans": "正好{PlayerName}给我带了这么多香柠草，我也趁着假期试着做一下那道鱼汤吧！",
+                "zh-Hant": "正好{PlayerName}給我帶了這麼多香檸草，我也趁著假期試著做一下那道魚湯吧！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wahrscheinlich wird das noch ekliger schmecken, weil ich es alleine esse. Nun ja ...",
+                "en": "It'll probably taste worse since I'm eating alone though. Oh well...",
+                "es": "Probablemente sepa aún peor porque me la voy a tomar sola. En fin...",
+                "fr": "Elle sera probablement encore plus mauvaise puisque je la mangerai seule. Enfin...",
+                "ja": "一人で食べると…いつも余計に不味く感じますが、フフ…",
+                "ko": "혼자서 먹으면... 맛이 더 없을 것 같지만요...",
+                "th": "แต่รสชาติมันคงแย่กว่าเดิมแน่เลย ตั้งแต่ตอนที่ฉันต้องกินข้าวคนเดียว... เฮ้อ...",
+                "zh-Hans": "虽然一个人喝的话……总觉得会变得更难喝呢，哈……",
+                "zh-Hant": "雖然一個人喝的話……總覺得會變得更難喝呢，哈……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700045,
+                "name": {
+                  "zh-Hans": "柯妮"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde den dritten Soldaten",
+        "en": "Find the third soldier",
+        "es": "Encuentra al tercer soldado",
+        "fr": "Trouver le troisième soldat",
+        "ja": "三人目の兵士を探す",
+        "ko": "세 번째 병사 찾기",
+        "th": "ตามหาทหารคนที่สาม",
+        "zh-Hans": "寻找第三名士兵",
+        "zh-Hant": "尋找第三名士兵"
+      },
+      "entities": [
+        {
+          "entityId": 880700156,
+          "mapId": 8,
+          "blueprintType": "TsEntity_157_045_夜归",
+          "name": "TsEntity_157_045_夜归",
+          "areaId": 504,
+          "position": {
+            "x": -25320,
+            "y": -16680,
+            "z": 22557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1.2同行插曲支线",
+          "flowIndex": 4,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Bist du auch wegen der Sehenswürdigkeiten hier, {PlayerName}?",
+                "en": "You here for some sight-seeing too, {PlayerName}?",
+                "es": "{PlayerName}, ¿también has venido a disfrutar del paisaje?",
+                "fr": "Toi aussi, tu es là pour faire du tourisme, {PlayerName} ?",
+                "ja": "{PlayerName}、お前も景色を見に来たのか？",
+                "ko": "풍경을 감상하러 온 건가, {PlayerName}?",
+                "th": "มาเที่ยวชมวิวเหมือนกันเหรอ {PlayerName}?",
+                "zh-Hans": "你也是来看风景的吗，{PlayerName}？",
+                "zh-Hant": "你也是來看風景的嗎，{PlayerName}？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schon klar, bist du nicht. An solchen Tagen hat niemand so viel freie Zeit wie ich.",
+                "en": "Well, I know you're not. Ain't nobody got as much free time as me during days like this.",
+                "es": "Seguro que no. Nadie tiene tanto tiempo libre como yo en días como estos.",
+                "fr": "Je sais que ce n'est pas le cas. Personne d'autre que moi n'a autant de temps libre lors des journées comme celle-là.",
+                "ja": "ハハ、言わなくてもわかる。俺みたいに暇な奴はいないだろう。",
+                "ko": "훗, 말하지 않아도 돼. 그게 아닌 걸 알고 있으니까. 나처럼 한가한 사람도 없을 테니",
+                "th": "ฮ่า ก็รู้อยู่แหละว่าไม่ใช่ ไม่มีใครมีเวลาว่างมากเท่าฉันในวันแบบนี้หรอก",
+                "zh-Hans": "哈，不用说我也知道不是了。哪有人会和我一样闲啊。",
+                "zh-Hant": "哈，不用說我也知道不是了。 哪有人會和我一樣閑啊。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Dein Gesicht ... bist du verletzt?",
+                    "en": "Your face... Are you injured?",
+                    "es": "¿Qué te pasa en la cara...? ¿Te has hecho daño?",
+                    "fr": "Ton visage... Tu es blessé ?",
+                    "ja": "{Male=その顔…怪我したのかい？;Female=その顔…怪我したの？}",
+                    "ko": "얼굴... 부상을 당한 건가요?",
+                    "th": "หน้าเป็นอะไรน่ะ... บาดเจ็บเหรอ?",
+                    "zh-Hans": "你的脸……是受伤了吗？",
+                    "zh-Hant": "你的臉……是受傷了嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ach, keine Sorge. Ich habe mich vor ein paar Tagen gekratzt. Ist schon wieder geflickt.",
+                "en": "Oh, no worries. Just a scratch from a few days back. It's all patched up now.",
+                "es": "Oh, no te preocupes, solo es un rasguño que me hice hace unos días. Ya me lo vendaron.",
+                "fr": "Oh, ne t'inquiète pas. C'est juste une égratignure, elle date de quelques jours. Ce n'est rien.",
+                "ja": "なんでもない。数日前に<ano=ざんぞう>残像</ano>と戦ったときにな。不注意でつけたかすり傷だ。もう手当もした。",
+                "ko": "별거 아냐. 며칠 전에 잔상과 싸우다가 실수로 조금 긁힌 것뿐이야. 붕대로 단단히 감싸뒀지",
+                "th": "อ๋อ ไม่มีอะไรหรอก แค่รอยขีดข่วนจาการต่อสู้กับทาเซ็ตดิสคอร์ดเมื่อไม่กี่วันก่อน นี่ก็ทำแผลเรียบร้อยแล้ว",
+                "zh-Hans": "没事，前几天和残象战斗的时候，不小心被蹭破了点皮。已经包扎过了。",
+                "zh-Hant": "沒事，前幾天和殘象戰鬥的時候，不小心被蹭破了點皮。 已經包紮過了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du scheinst keine Freude an deinem Urlaub zu haben.",
+                    "en": "You don't seem to be enjoying your leave.",
+                    "es": "No parece que estés disfrutando de tus vacaciones.",
+                    "fr": "Tu n'as pas l'air d'apprécier ta permission.",
+                    "ja": "{Male=休暇中には見えないな。;Female=休暇中には見えないわね。}",
+                    "ko": "휴가를 보내는 것 같지 않네요",
+                    "th": "ดูคุณไม่ค่อยเหมือนสภาพคนลาหยุดเลย",
+                    "zh-Hans": "你这可不像是在休假啊。",
+                    "zh-Hant": "你這可不像是在休假啊。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Der Urlaub ... als Neuling würde ich mich freuen wie der Schneekönig.",
+                "en": "The leave... If I was a rookie, I'd be over the moon.",
+                "es": "Las vacaciones... Si fuera un recluta estaría como loco de contento.",
+                "fr": "La permission... Si j'étais un débutant, je serais ravi.",
+                "ja": "何？休暇か。俺が入隊したばかりのひよっこだったら、きっと喜んだだろうな。",
+                "ko": "으응? 쉬는 중이야. 갓 입대한 햇병아리였다면 좋아서 난리법석을 떨었겠지만",
+                "th": "ลาหยุดน่ะเหรอ... ถ้าตอนฉันเป็นทหารใหม่ คงดีใจที่สุดไปเลย",
+                "zh-Hans": "什么？休假啊。如果我是个刚入伍的小毛头，那我肯定高兴疯了。",
+                "zh-Hant": "什麼？ 休假啊。 如果我是個剛入伍的小毛頭，那我肯定高興瘋了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denk mal darüber nach. Urlaub, das bedeutet für die meisten Leute Essen, Freunde und Familienfeste.",
+                "en": "Think about it. Leave's all about food and friends and family reunions for most people, I bet.",
+                "es": "Si te paras a pensarlo, las vacaciones son para comer y reunirse con los amigos y la familia.",
+                "fr": "Pense-y. La permission, pour la plupart des gens, c'est pour manger, voir leurs amis et famille.",
+                "ja": "考えてみれば、普通の奴にとっての休暇は、家族団らんや、友達とうまいもんを食ったり遊びに行ったりすることだろ？",
+                "ko": "평범한 사람에게 휴가란 가족들과 함께 어울리거나 친구들과 만나서 맛있는 걸 먹으면서 노는 거지. 안 그런가?",
+                "th": "ลองคิดดูนะ สำหรับทั่วไปเวลาลาหยุดก็มีแต่เรื่องกลับบ้านเจอครอบครัว ไปกินข้าวไปเที่ยวกับเพื่อน ใช่มั้ยล่ะ",
+                "zh-Hans": "想想看，对于一般人来说，休假就代表和家人团圆，和朋友一起去吃好吃的，逛好玩的。对吧？",
+                "zh-Hant": "想想看，對於一般人來說，休假就代表和家人團圓，和朋友一起去吃好吃的，逛好玩的。 對吧？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja, das machen alle.",
+                    "en": "Yeah, that's what everyone does.",
+                    "es": "Sí, eso es lo que hace todo el mundo.",
+                    "fr": "Oui, c'est ce que tout le monde fait.",
+                    "ja": "{Male=みんなそうじゃないのか？;Female=みんなそうじゃないの？}",
+                    "ko": "다들 그런 거 아닌가요?",
+                    "th": "ใช่ ทุกคนต่างก็มีกิจกรรมแบบนั้น",
+                    "zh-Hans": "大家不都是这样吗？",
+                    "zh-Hant": "大家不都是這樣嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du kannst das doch auch.",
+                    "en": "You can go do all of that too.",
+                    "es": "Tú también puedes hacerlo.",
+                    "fr": "Toi aussi tu peux faire tout ça.",
+                    "ja": "あなたもそうしたらいい。",
+                    "ko": "당신도 그렇게 할 수 있잖아요",
+                    "th": "คุณเองทำอะไรแบบนั้นได้เหมือนกันนะ",
+                    "zh-Hans": "你也可以这样做。",
+                    "zh-Hant": "你也可以這樣做。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha, ALLE ...",
+                "en": "Haha, EVERYONE…",
+                "es": "Jaja, TODO EL MUNDO...",
+                "fr": "Haha, TOUT LE MONDE…",
+                "ja": "ああ。みんなそうすべきだ。ハハ、ハ…",
+                "ko": "그렇지, 다들 그런 거지. 하, 하, 하...",
+                "th": "ฮ่าๆ ทุกคนเป็นแบบนั้น เนอะ...",
+                "zh-Hans": "是啊，大家都得这样。哈、哈、哈……",
+                "zh-Hant": "是啊，大家都得這樣。 哈、哈、哈……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kann ich das, ja ...",
+                "en": "I can, you say... Huh.",
+                "es": "¿Que yo también puedo...? Oh.",
+                "fr": "Je peux, tu dis... Ha.",
+                "ja": "そうか。ハハ、やめておくよ。",
+                "ko": "그런 건가? 하, 역시 됐네",
+                "th": "เหรือ ฮ่า ช่างมันดีกว่า",
+                "zh-Hans": "是吗。哈，还是算了。",
+                "zh-Hant": "是嗎。 哈，還是算了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mein Dorf wurde vom Waveworn verschlungen, es ist einfach so im Boden versunken.",
+                "en": "My village got swallowed up by the Waveworn, sunk right into the ground.",
+                "es": "La Erosionda se tragó mi pueblo y se quedó hundido en la tierra.",
+                "fr": "Mon village a été englouti par l'Érosion, il s'est enfoncé dans le sol.",
+                "ja": "俺のいた村は、<ano=かいしょく>海蝕</ano>で全部地下に沈んだんだ。",
+                "ko": "내가 살고 있던 마을은 비명 이상으로 완전히 가라앉아버렸지",
+                "th": "หมู่บ้านฉันโดนคลื่นกัดกร่อนหายไปหมด จมดินไปเลย",
+                "zh-Hans": "我所在的村子可是在海蚀中整个沉到地底下去了。",
+                "zh-Hant": "我所在的村子可是在海蝕中整個沉到地底下去了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie ein Stein, der übers Wasser hüpft. Ein paar kleine Wellen und Zack, für immer verschwunden.",
+                "en": "Like a stone skippin' on water, a few ripples and poof, gone for good.",
+                "es": "Fue como una piedra rebotando sobre el agua. Hubo varias ondas y, de repente, puf, desapareció para siempre.",
+                "fr": "Comme une pierre qui fait des ricochets, quelques rebonds et pouf, parti pour toujours.",
+                "ja": "まるで、水切りして石ころが水に飲み込まれるみたいにな。小さな水しぶきが起こったあと、二度と見えなくなった。",
+                "ko": "물수제비를 뜰 때 물속에 던져지는 돌처럼 작은 물보라를 치더니 더는 볼 수 없게 됐지",
+                "th": "เหมือนก้อนหินกระทบผิวน้ำ เกิดระลอกคลื่นนิดหน่อย แล้วก็แว็บ หายวับไปตลอดกาล",
+                "zh-Hans": "就像打水漂的时候被扔进水里的石子，泛起来几个小小的水花，之后就再也看不见了。",
+                "zh-Hant": "就像打水漂的時候被扔進水裡的石子，泛起來幾個小小的水花，之後就再也看不見了。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Freunde, Familie, alles, was ich geliebt habe ... alles plötzlich weg.",
+                "en": "Friends, family, everything I ever loved... vanished in a blink.",
+                "es": "Mis amigos, mi familia y todo lo que amaba... desapareció en un instante.",
+                "fr": "Mes amis, ma famille, tout ce que j'ai jamais aimé... disparu en un instant.",
+                "ja": "友達とか家族とか、この世界が残した素晴らしい記憶はな、水しぶきみたくパチンと弾けてなくなっちまったのさ。",
+                "ko": "친구들... 가족들... 이 세상에 남겨진 아름다운 추억들까지 모두 물보라처럼 팟하고 사라져 버렸네",
+                "th": "เพื่อน ครอบครัว ทุกสิ่งที่ฉันรัก... หายไปในพริบตา",
+                "zh-Hans": "朋友啊，家人啊，对这个世界所剩下的那些美好的记忆啊，也像水花一样，啪的一下就没了。",
+                "zh-Hant": "朋友啊，家人啊，對這個世界所剩下的那些美好的記憶啊，也像水花一樣，啪的一下就沒了。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich wusste nicht, was ich tun sollte, aber ich wollte am Leben bleiben.",
+                "en": "Had no idea what to do, but I wanted to live.",
+                "es": "No tenía ni idea de lo que hacer, pero quería vivir.",
+                "fr": "Je ne savais pas quoi faire, mais je voulais vivre.",
+                "ja": "俺もどうしたらいいかわからなかったが、やはり生きたかったんだ。",
+                "ko": "내가 뭘 어떻게 해야 할지는 모르겠지만 그냥 살고 싶었어",
+                "th": "ก็ไม่รู้จะทำยังไงนะ แต่ฉันยังอยากมีชีวิตอยู่ต่อไป",
+                "zh-Hans": "我也不知道我该干什么，但我还是想活下去。",
+                "zh-Hant": "我也不知道我該幹什麼，但我還是想活下去。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und da kam mir der große General Jiyan",
+                "en": "Then along came Jiyan.",
+                "es": "Luego llegó el gran general Jiyan.",
+                "fr": "C'est alors que Jiyan est arrivé.",
+                "ja": "そんな時に、<ano=キエン>忌炎</ano>が俺を見つけたんだ。",
+                "ko": "바로 그때 기염이 날 찾아왔지",
+                "th": "จากนั้น Jiyan ก็เข้ามา",
+                "zh-Hans": "这时候，忌炎找到了我。",
+                "zh-Hant": "這時候，忌炎找到了我。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haha, weißt du, was dieser Trott ... ähem, General Jiyan hat tatsächlich versucht, mich zu rekrutieren, und er hat mich gefragt, ob ich gegen diese übrig gebliebenen Tacet-Dissonanzen kämpfen will, die Jinzhou bedrohen.",
+                "en": "Haha, you know what that fool... ahem, I mean General Jiyan did? He tried to recruit me! Asked if I wanted to help combat the Tacet Discords. Funny, isn't it?",
+                "es": "Jaja, ¿sabes lo que hizo aquel imbé... ejem, quiero decir el general Jiyan? ¡Intentó reclutarme! Me preguntó si quería ayudar a combatir las Disonancias Tácitas.",
+                "fr": "Haha, et tu sais ce que cet imbécile... heu, je veux dire, le Général Jiyan a fait ? Il a essayé de me recruter ! Il a dit que je pouvais éliminer les Tacets Discords avec eux ! C'est drôle, pas vrai ?",
+                "ja": "ハハハハ、あのマヌケは…ゴホン。<ano=キエン>忌炎</ano>将軍はなんと俺を勧誘したんだ。<ano=ざんぞう>残像</ano>にかたき討ちする機会をやるってな！笑えるだろ？",
+                "ko": "하하하, 그 바보는... 쿨럭, 쿨럭... 기염 장군은 뜻밖에도 날 영입하려 했지. 금주를 위협하는 잔상류에 맞서 싸울 것인지 물었거든",
+                "th": "ฮ่าๆ รู้มั้ยว่าเจ้าทึ่มนั่น... เอ้ย หมายถึงแม่ทัพ Jiyan มาชวนฉันเข้าหน่วย! มาถามว่าฉันอยากช่วยสู้กับการแพร่กระจายของทาเซ็ตดิสคอร์ดที่เป็นภัยคุกคามต่อจินโจวมั้ย?",
+                "zh-Hans": "哈哈哈哈，那个傻瓜……咳咳，忌炎将军居然想招揽我，他问我要不要去对抗那些威胁今州的残象潮。",
+                "zh-Hant": "哈哈哈哈，那個傻瓜……咳咳，忌炎將軍居然想招攬我，他問我要不要去對抗那些威脅今州的殘象潮。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Für mich gibt es keinen Unterschied zwischen den Tacet-Dissonanzen und Waveworn. Es sind einfach Naturkatastrophen, mit denen man nicht kommunizieren kann und die schwer aufzuhalten sind. Gegen sie? Wie kann sich ein Mensch gegen eine Naturkatastrophe wehren?",
+                "en": "As if that'll make a difference... Tacet Discords and the Waveworn stuff, those are natural disasters. They just happen. What can I even do about it?",
+                "es": "Como si eso marcara alguna diferencia... Las Disonancias Tácitas y la Erosionda, esos son desastres naturales. Simplemente ocurren. ¿Qué podría hacer yo al respecto?",
+                "fr": "Comme si ça pouvait faire une différence... Les Tacets Discords et l'Érosion, c'est des catastrophes naturelles. Elles arrivent - c'est tout. Que puis-je faire ?",
+                "ja": "俺にとってみれば、<ano=ざんぞうちょう>残像潮</ano> と <ano=かいしょく>海蝕</ano>は同じようなもんだ。どっちも話が通じないし、防ぎようのないただの天災だ。奴らに対抗だって？人が天災に対抗できるもんか。",
+                "ko": "나는 잔상류가 비명 이상처럼 교류할 수도 없고 막을 수도 없는 자연재해라고 생각해. 잔상류에 맞서 싸우다니! 사람이 어떻게 자연재해의 상대가 되겠어?",
+                "th": "สำหรับฉันแล้ว การแพร่กระจายของทาเซ็ตดิสคอร์ดกับคลื่นกัดกร่อนมันก็ไม่ต่างกันหรอก มันเป็นภัยธรรมชาติที่ไม่สามารถสื่อสารหรือหยุดยั้งได้ ต่อสู้กับมันเหรอ? มนุษย์จะไปต้านทานภัยธรรมชาติได้ยังไงกันล่ะ",
+                "zh-Hans": "对我来说，残象潮和海蚀没什么差别。都是没法沟通，也难以阻挡的天灾罢了。对抗它们？人要怎么才能抵抗得了天灾啊。",
+                "zh-Hant": "對我來說，殘象潮和海蝕沒什麼差別。 都是沒法溝通，也難以阻擋的天災罷了。 對抗它們？ 人要怎麼才能抵抗得了天災啊。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich habe trotzdem ja gesagt. Er hat das gut verkauft. Da dachte ich mir, dass ich lieber auf dem Schlachtfeld sterbe als in der Wildnis verhungere.",
+                "en": "But I said yes anyway. He made it sound real good. Figured dying on the battlefield beats starving in the wild.",
+                "es": "Aun así, dije que sí. Me lo vendió muy bien, y supuse que morir en el campo de batalla sería mejor que morirme de hambre en tierra de nadie.",
+                "fr": "Mais j'ai quand même accepté. Il m'a convaincu. Et je me suis dit que mourir sur un champ de bataille valait mieux que mourir de faim dans la nature.",
+                "ja": "しかし最終的には俺も同意した。将軍は話が上手くてな。<ano=こんしゅう>今州</ano>を守って戦場で死ぬ方が、外で飢え死にするよりは良さそうだろ。",
+                "ko": "하지만 난 결국 그의 제안을 받아들였네. 밖에서 굶어 죽는 것보다 금주를 지키다 명예롭게 죽는 게 더 값져 보였거든",
+                "th": "แต่แล้วฉันก็ตอบตกลง เขาพูดซะน่าฟังเลยนะ คิดว่ายังไงซะ ตายในสนามรบก็ยังดีกว่าอดตายในป่านี่",
+                "zh-Hans": "但我最后还是同意了。毕竟他说得那么好听，死在保卫今州的战场上，听起来也比在野外饿死强。",
+                "zh-Hant": "但我最後還是同意了。 畢竟他說得那麼好聽，死在保衛今州的戰場上，聽起來也比在野外餓死強。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut, jetzt weißt du alles. Meine Antwort dürfte klar sein.",
+                "en": "Alright, you've heard it all. You should know my answer now.",
+                "es": "Bueno, eso es todo. Ahora ya deberías conocer mi respuesta.",
+                "fr": "Voilà, c'est tout. Tu devrais connaître ma réponse maintenant.",
+                "ja": "よし。全部話してやったし、お前も俺がなんて答えるかわかっただろう。",
+                "ko": "자, 자네도 여기까지 들었으니 내 대답이 뭔지 알았을 테지",
+                "th": "นั่นแหละ เล่าไปหมดแล้ว คงพอจะรู้คำตอบของฉันแล้วสินะ",
+                "zh-Hans": "好啦，你既然都听到这了，那我想你也知道我的答案了。",
+                "zh-Hant": "好啦，你既然都聽到這了，那我想你也知道我的答案了。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Woher weiß ich, was du fragen wolltest? Jiyan fragt uns bei jedem Urlaub die gleiche verdammte Frage!",
+                "en": "How do I know what you're gonna ask? Well, Jiyan's been asking us the same darn question every leave!",
+                "es": "¿Cómo voy a saber lo que vas a preguntarme? ¡Jiyan nos hace la misma maldita pregunta cada vez que nos dan vacaciones!",
+                "fr": "Comment je sais ce que tu vas demander ? Eh bien, Jiyan nous pose la même fichue question à chaque permission !",
+                "ja": "お前が何を聞きたいかどうしてわかったかって？<ano=キエン>忌炎</ano>みたいなくどい奴は、休暇のたびに俺たち老いぼれに全く同じことを聞きにくるんだ。",
+                "ko": "자네가 궁금한 걸 내가 어떻게 알았는지 묻지 말게. 잔소리꾼 기염은 휴가를 줄 때마다 나이 지긋한 노병들에게 늘 똑같은 질문을 던지거든",
+                "th": "ฉันรู้ได้ไงน่ะว่าคุณจะมาถามอะไรบ้าง? ก็เพราะ Jiyan ถามคำถามโง่ๆ กับเราซ้ำๆ แบบนี้ทุกครั้งที่ลาหยุดไงล่ะ!",
+                "zh-Hans": "别问我是怎么知道你想问什么的，因为忌炎那个婆婆妈妈的家伙，每次休假都要来问我们几个老家伙一模一样的话。",
+                "zh-Hant": "別問我是怎麼知道你想問什麼的，因為忌炎那個婆婆媽媽的傢伙，每次休假都要來問我們幾個老傢伙一模一樣的話。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und meine Antwort bleibt gleich — danke, aber nein! Mir geht es alleine besser. Zumindest, solange es noch Tacet-Dissonanzen zum Kämpfen gibt. Damit meine Fäuste was zu tun haben.",
+                "en": "And my answer stays the same—thanks but no thanks! I'm good being alone. As long as there's still Tacet Discords to fight. Keeps my fists busy.",
+                "es": "Y mi respuesta es siempre la misma: ¡gracias, pero no! Estoy bien a solas. Mis puños seguirán ocupados mientras siga habiendo las Disonancias Tácitas.",
+                "fr": "Et ma réponse est toujours la même : merci, mais non merci ! Je suis bien tout seul, tant qu'il y a des Tacets Discords à combattre. Ça m'occupe les poings.",
+                "ja": "今年の答えも同じだ——必要ない！なんの助けもいるもんか。戦える<ano=ざんぞう>残像</ano>がいるなら、俺は拳を休めない。それで十分だ。",
+                "ko": "올해의 대답 역시 똑같다네—— 필요 없네! 난 도움 따위 전혀 필요 없어. 쓰러뜨릴 잔상이 있고, 내 주먹을 써 줄 일이 있으면 그걸로 충분하다네",
+                "th": "และคำตอบของฉันก็เหมือนเดิม คือขอบคุณ ฉันไม่ต้องการความช่วยเหลือใดๆ หรอก! ตราบใดที่ยังมีทาเซ็ตดิสคอร์ดให้สู้ กำปั้นฉันก็ยังมีอะไรให้ทำ",
+                "zh-Hans": "今年的答复也一样——不需要！我才不需要什么帮助呢，只要有残象打，别让我的拳头闲着，那就够了。",
+                "zh-Hant": "今年的答覆也一樣——不需要！ 我才不需要什麼幫助呢，只要有殘象打，別讓我的拳頭閑著，那就夠了。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das werde ich ihm ausrichten.",
+                    "en": "I will tell him that.",
+                    "es": "Le informaré al respecto.",
+                    "fr": "Je le lui dirai.",
+                    "ja": "{Male=忌炎将軍にそう伝えるよ。;Female=忌炎将軍にそう伝えるわ。}",
+                    "ko": "기염 장군에게 대답을 전해 드릴게요",
+                    "th": "ฉันจะตอบแม่ทัพ Jiyan ให้",
+                    "zh-Hans": "我会回复忌炎将军的。",
+                    "zh-Hant": "我會回覆忌炎將軍的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sicher, und jetzt geh. Oh, nimm das hier mit.",
+                "en": "Sure, now go. Oh, and take this with you.",
+                "es": "Sí, ve cuanto antes. Oh, y de paso llévate esto.",
+                "fr": "C'est ça, vas-y maintenant. Oh, et prends ça avec toi.",
+                "ja": "おうよ。さあもう行った行った。そうだ、ついでにこれを渡しといてくれ。",
+                "ko": "그래, 가보게나. 참, 가는 김에 이걸 가져다주게나",
+                "th": "เอาสิ งั้นไปเถอะ เอ้อ แล้วเอานี่ไปด้วย",
+                "zh-Hans": "嗯，去吧去吧。哦对了，顺便把这个给他。",
+                "zh-Hant": "嗯，去吧去吧。 哦對了，順便把這個給他。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jiyan hört irgendwie nie auf mit der Arbeit. Wenn er erstmal an etwas dran ist, vergisst er zu essen.",
+                "en": "Jiyan never seems to stop working. He keeps skipping meals once he gets busy.",
+                "es": "Jiyan parece que nunca para de trabajar. Cuando está ocupado, empieza a saltarse comidas.",
+                "fr": "On dirait que Jiyan ne s'arrête jamais de travailler. Et quand il est occupé, il saute des repas.",
+                "ja": "毎回みんなが休暇のときには、<ano=キエン>忌炎</ano>は休まない。忙しくなると飯を食うのも忘れちまうんだ。",
+                "ko": "다들 휴가를 가도 기염은 쉬지 않지. 바빠지기 시작하면 끼니를 거르기 일쑤고",
+                "th": "Jiyan ดูท่าจะทำงานไม่หยุดเลย พองานยุ่งทีไร เขาก็ชอบลืมกินอาหาร",
+                "zh-Hans": "每次大伙休假的时候，忌炎总是不休息，他一忙起来就又会忘了吃饭。",
+                "zh-Hant": "每次大夥休假的時候，忌炎總是不休息，他一忙起來就又會忘了吃飯。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich und die Jungs haben einen Eintopf aus allem gemacht, was wir in die Finger kriegen konnten. Er kann was davon abhaben.",
+                "en": "Me and the boys made this stew with what we've gathered. He can have some.",
+                "es": "Mis camaradas y yo preparamos este estofado con lo que reunimos. Dile que se tome un poco.",
+                "fr": "Les gars et moi on a préparé ce ragoût avec ce qu'on a pu ramasser. Il peut en avoir.",
+                "ja": "これは俺と他の休暇中の兄弟たちで狩ってきた動物の肉と山菜で作ったシチューだ。ついでに持って行ってやってくれ。",
+                "ko": "이건 나를 비롯해 휴가 나온 전우들이 사냥한 야생 고기와 채소로 만든 찜 요리라네. 이걸 가져다주게나",
+                "th": "นี่เป็นราตาตุยล์ที่ฉันทำกับพี่น้องที่ลาพักจากการล่าหรือเก็บผักป่า เอามาส่งให้เขาหน่อยนะ",
+                "zh-Hans": "这是我和几个休假的老兄弟用打来的野物和采的野菜做的炖菜，给他捎过去吧。",
+                "zh-Hant": "這是我和幾個休假的老兄弟用打來的野物和採的野菜做的燉菜，給他捎過去吧。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Riecht gut ...",
+                    "en": "It smells good…",
+                    "es": "Qué bien huele...",
+                    "fr": "Ça sent bon...",
+                    "ja": "{Male=すごくいい匂いだ…;Female=すごくいい匂いね…}",
+                    "ko": "먹음직스러운데요...",
+                    "th": "หอมดีจัง...",
+                    "zh-Hans": "闻起来还挺香的……",
+                    "zh-Hant": "聞起來還挺香的……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ne, nicht naschen! Na ja, vielleicht einen Happen, aber lass Jiyan was übrig, ja?",
+                "en": "Hey, no sneakin' bites! Well, maybe a nibble, but leave some for Jiyan, okay?",
+                "es": "¡Oye, no te lo comas tú! Bueno, puedes probar un poco, pero deja algo para Jiyan, ¿vale?",
+                "fr": "Hé, c'est pas pour toi ! Bon, d'accord, tu peux en avoir un tout petit peu, mais il faut en laisser pour Jiyan, d'accord ?",
+                "ja": "おい、盗み食いは許さんぞ！いや、こっそり少しだけならいい。全部食わなきゃいいさ。",
+                "ko": "함부로 넘보지 말라고! 뭐, 됐네. 다 먹어 치우는 게 아니라면 몰래 맛보는 것 정도야 괜찮겠지",
+                "th": "นี่ เฮ้ย! ห้ามแอบกินนะ! เอาล่ะ ถ้าอยากแอบกินนิดหน่อยก็ได้ แต่อย่ากินหมดนะ!",
+                "zh-Hans": "喂，你可不许偷吃啊！算了，你可以偷偷吃一点，别都吃光了就行。",
+                "zh-Hant": "喂，你可不許偷吃啊！ 算了，你可以偷偷吃一點，別都吃光了就行。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 700046,
+                "name": {
+                  "zh-Hans": "宁卫"
+                },
+                "entity": {
+                  "entityId": 880700156,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_157_045_夜归",
+                  "name": "TsEntity_157_045_夜归",
+                  "areaId": 504,
+                  "position": {
+                    "x": -25320,
+                    "y": -16680,
+                    "z": 22557
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Jiyan",
+        "en": "Talk to Jiyan",
+        "es": "Habla con Jiyan",
+        "fr": "Parler à Jiyan",
+        "ja": "忌炎と会話する",
+        "ko": "기염과 대화",
+        "th": "คุยกับ Jiyan",
+        "zh-Hans": "与忌炎交谈",
+        "zh-Hant": "與忌炎交談"
+      },
+      "entities": [
+        {
+          "entityId": 11000047,
+          "mapId": 8,
+          "blueprintType": "NPC0244",
+          "name": "TsEntity_0244_157_福生",
+          "areaId": 501,
+          "position": {
+            "x": -16252,
+            "y": -67672,
+            "z": 22357
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700158,
+          "mapId": 8,
+          "blueprintType": "Player014",
+          "name": "TsEntity_角色014_忌炎3",
+          "areaId": 501,
+          "position": {
+            "x": -16200,
+            "y": -67790,
+            "z": 22360
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -62
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700159,
+          "mapId": 8,
+          "blueprintType": "NPC266",
+          "name": "TsEntity_180_014_夜归-无携带_戴帽",
+          "areaId": 501,
+          "position": {
+            "x": -16120,
+            "y": -67870,
+            "z": 22360
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1.2同行插曲支线",
+          "flowIndex": 4,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Tacet-Dissonanz bleibt in den Norfall Barren unter Kontrolle. Wir sollten erwägen, unsere Außenposten weiter nach Norden zu verlegen.",
+                "en": "Tacet Discord remains contained to Norfall Barren. We should consider pushing our outpost positions further north.",
+                "es": "Las Disonancias Tácitas permanecen contenidas en los Baldíos de Norfall. Deberíamos plantearnos mover nuestros puestos de avanzada más hacia el norte.",
+                "fr": "Le Tacet Discord est circonscrit dans la Plaine de Nor-Chute. Nous devrions envisager de pousser nos positions d'avant-poste plus au nord.",
+                "ja": "俺の読みどおり…<ano=ざんぞう>残像</ano>の活動は現在<ano=ほくらくのはら>北落野原</ano>付近に限られている。<ano=ぜんしょう>前哨</ano>の位置を進めることを検討してもいいだろう。",
+                "ko": "내 추측대로... 잔상은 현재 북락 광야 주변에서만 활동하고 있으니 전초 기지의 위치를 변경해야 할 것 같다",
+                "th": "อย่างที่ฉันคาดไว้... กิจกรรมของทาเซ็ตดิสคอร์ดตอนนี้จำกัดอยู่แถวๆ ทุ่งร้างนอร์ฟอลล์ ดูเหมือนว่าเราสามารถพิจารณาเรื่องการย้ายสถานีเฝ้าระวังได้แล้ว",
+                "zh-Hans": "如我所料……残象的活动目前限于北落野附近，看来我们可以考虑推进前哨站的位置了。",
+                "zh-Hant": "如我所料……殘象的活動目前限於北落野附近，看來我們可以考慮推進前哨站的位置了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Stationiert neue Überwachungsposten in den Außenbezirken. So kriegen wir frühzeitige Warnungen und ausreichend Zeit, um uns auf zukünftige Ausbrüche vorzubereiten.",
+                "en": "Deploy new observation posts on the outskirts. This will give us early warnings and time to ready for future outbreaks.",
+                "es": "Tenemos que desplegar más puntos de observación en las afueras. Eso nos proporcionará una advertencia temprana y nos dará tiempo para prepararnos para brotes futuros.",
+                "fr": "Déployez de nouveaux postes d'observation en périphérie. Cela nous permettra d'avoir des alertes précoces et nous donnera du temps pour nous préparer contre les futures éruptions.",
+                "ja": "<ano=ほくらくのはら>北落野原</ano>の境に新たな観測所を設置する必要がある。今後<ano=ざんぞうちょう>残像潮</ano>が再発した場合に、早期に警戒し戦闘準備の期間を長くできるようにな。",
+                "ko": "북락 광야 변경에 새로운 관측소를 설치한다. 잔상류가 다시 생겨날 때 사전 경보를 울리면 전투 준비 시간을 조금이라도 더 확보할 수 있을 테니까",
+                "th": "เราต้องตั้งสถานีสังเกตการณ์ใหม่ที่ขอบเขตของทุ่งร้างนอร์ฟอลล์ เพื่อให้ในอนาคต เมื่อการแพร่กระจายของทาเซ็ตดิสคอร์ดเกิดขึ้นอีก เราจะได้รับการเตือนล่วงหน้าและมีเวลาพร้อมรับมือมากขึ้น",
+                "zh-Hans": "我们需要在北落野边陲设置新的观测所，以便在未来残象潮再度发生之时，我们将提前得到预警，拥有更长的备战时间。",
+                "zh-Hant": "我們需要在北落野邊陲設置新的觀測所，以便在未來殘象潮再度發生之時，我們將提前得到預警，擁有更長的備戰時間。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Verstanden!",
+                "en": "Roger that!",
+                "es": "¡Recibido!",
+                "fr": "Compris !",
+                "ja": "はッ！",
+                "ko": "알겠습니다!",
+                "th": "รับทราบ!",
+                "zh-Hans": "明白！",
+                "zh-Hant": "明白！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700047,
+                "name": {
+                  "zh-Hans": "传令兵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Bote salutiert und verschwindet eilig.",
+                "en": "The messenger salutes and hurries away.",
+                "es": "El mensajero hace un saludo militar y se va corriendo.",
+                "fr": "Le messager fait un salut et s'en va sans attendre.",
+                "ja": "伝令兵は礼をすると、すぐにせわしなくその場を離れた。",
+                "ko": "전령병이 경례한 뒤 잽싸게 자리를 떠났다",
+                "th": "ทหารผู้ส่งคำสั่งทำความเคารพ แล้วก็เดินจากไปอย่างเร่งรีบ",
+                "zh-Hans": "传令兵行了个军礼，随后脚步匆匆地离开了。",
+                "zh-Hant": "傳令兵行了個軍禮，隨後腳步匆匆地離開了。"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, was bringt dich hierher? Solltest du nicht in der Kommune Taoyuan sein?",
+                "en": "{PlayerName}, what brings you here? Aren't you supposed to be in Taoyuan Vale?",
+                "es": "{PlayerName}, ¿qué te trae por aquí? ¿No se supone que estabas en la Aldea Taoyuan?",
+                "fr": "{PlayerName}, qu'est-ce qui t'amène ici ? Tu n'étais pas {Male=supposé;Female=supposée} être à Ville Fleur-de-Pêche ?",
+                "ja": "{PlayerName}、どうしたんだ？お前は今…<ano=とうげんきょう>桃源郷</ano>にいるはずでは？",
+                "ko": "{PlayerName}, 여긴 어쩐 일이지? 지금은... 도원향에 있어야 할 텐데?",
+                "th": "{PlayerName} มาทำอะไรที่นี่ล่ะ? คุณต้องไปที่หมู่บ้านเถาหยวนไม่ใช่เหรอ?",
+                "zh-Hans": "{PlayerName}，你怎么来了？你现在不是应该……在桃源乡的吗？",
+                "zh-Hant": "{PlayerName}，你怎麼來了？ 你現在不是應該……在桃源鄉的嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bin gerade zurück von einem deiner Soldaten. Ich wollte noch schauen, wie es dir geht.",
+                    "en": "Came back from one of the soldiers you mentioned. Wanted to check on you too.",
+                    "es": "Acabo de ver a uno de los soldados de los que me hablaste. Quería que de paso viniera a echarte un ojo.",
+                    "fr": "Je reviens de la visite à l'un des soldats dont tu as parlé. Il voulait aussi savoir comment tu allais.",
+                    "ja": "さっきそこの兵士に会って、ついでにあなたに会いに来たんだ。",
+                    "ko": "말씀해 주신 병사들을 만나고 오는 길에 잠시 들렀어요",
+                    "th": "เพิ่งกลับจากไปเยี่ยมเหล่าทหารที่คุณพูดถึง เลยอยากแวะมาดูคุณด้วย",
+                    "zh-Hans": "我刚见过那些士兵，顺便来看看你。",
+                    "zh-Hant": "我剛見過那些士兵，順便來看看你。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstehe. Das müssen Ningwei und seine Bande gewesen sein.",
+                "en": "I see. It's got to be Ningwei and his crew.",
+                "es": "Ya veo... Seguro que se trata de Ningwei y sus camaradas.",
+                "fr": "Je vois. C'est forcément Ningwei et son équipe.",
+                "ja": "…わかった。<ano=ネイエイ>寧衛</ano>とベテランたちだろう。",
+                "ko": "...알겠군. 영위를 비롯한 노병들이겠지",
+                "th": "อ๋อเหรอ ต้องเป็น Ningwei กับพวกแน่เลย",
+                "zh-Hans": "……我知道了，一定是宁卫和那些老兵。",
+                "zh-Hant": "……我知道了，一定是寧衛和那些老兵。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe ihnen gesagt, dass sie ihren Urlaub genießen sollen ... aber sie bleiben immer in der Nähe des Lagers, selbst nach Jahren an der Front.",
+                "en": "I told them to make the most of their leave... But they won't stray far from camp, even after years on the front lines.",
+                "es": "Les dije que aprovecharan las vacaciones al máximo..., pero nunca se alejan mucho del campamento, ni siquiera tras años en el frente.",
+                "fr": "Je leur ai dit de bien profiter de leur permission... Mais ils refusent de trop s'éloigner du camp, même après avoir passé des années au front.",
+                "ja": "彼らは前線で長年奮戦している。明らかに最も休暇が必要だ。しかし休暇を強制しても、駐屯地からあまり遠くまで離れないだろうな。",
+                "ko": "전선에서 오랫동안 싸운 터라 가장 휴식이 필요한 사람들이야. 강제로 휴가 명령을 내렸는데도 부대에서 멀리 떨어지지 않으려 하더군",
+                "th": "ฉันบอกให้พวกเขาใช้เวลาลาหยุดให้เต็มที่... แต่พวกเขาไม่ยอมไปไกลจากค่าย ถึงจะอยู่แนวหน้ามาตั้งหลายปีแล้ว",
+                "zh-Hans": "明明他们已经在前线奋战多年，是最需要休息的。但就算我强令他们休假，他们也不会离军营太远。",
+                "zh-Hant": "明明他們已經在前線奮戰多年，是最需要休息的。 但就算我強令他們休假，他們也不會離軍營太遠。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Weil sie sich hier zu Hause fühlen.",
+                    "en": "Because they already consider it home.",
+                    "es": "Porque para ellos es su hogar.",
+                    "fr": "C'est parce que pour eux, c'est déjà la maison.",
+                    "ja": "{Male=彼らにとっては、こここそが家だからな。;Female=彼らにとっては、こここそが家だからね。}",
+                    "ko": "그분들에게 이곳이 바로 집이니까요",
+                    "th": "เพราะพวกเขามองว่าที่นี่คือบ้านไปแล้ว",
+                    "zh-Hans": "因为对他们而言，这里才是家。",
+                    "zh-Hant": "因為對他們而言，這裡才是家。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich verstehe jetzt auch, warum.",
+                    "en": "I can understand why now.",
+                    "es": "Ahora puedo entender por qué.",
+                    "fr": "Maintenant, je comprends pourquoi.",
+                    "ja": "{Male=俺も彼らの気持ちがわかる。;Female=私も彼らの気持ちがわかるわ。}",
+                    "ko": "어떤 심정인지 알 수 있어요",
+                    "th": "ตอนนี้ฉันพอเข้าใจความคิดของพวกเขาแล้ว",
+                    "zh-Hans": "我能够理解他们的想法。",
+                    "zh-Hant": "我能夠理解他們的想法。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah ... dann müssen sie dir viel erzählt haben, {PlayerName}.",
+                "en": "Ah... They must have told you a lot, {PlayerName}.",
+                "es": "Ah... {PlayerName}, parece que te han contado muchas cosas.",
+                "fr": "Ah... Ils ont dû te raconter beaucoup de choses, {PlayerName}.",
+                "ja": "そうか。{PlayerName}、どうやら彼らからいろいろと聞いたようだな。",
+                "ko": "그런가? {PlayerName} 자네에게 많은 이야기를 들려줬나 보군",
+                "th": "อืม... พวกเขาคงเล่าอะไรให้คุณฟังเยอะเลยสินะ {PlayerName}",
+                "zh-Hans": "是吗。看来他们对你讲了很多事，{PlayerName}。",
+                "zh-Hant": "是嗎。 看來他們對你講了很多事，{PlayerName}。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sie haben mir ein Geschenk mitgegeben.",
+                    "en": "They have a gift for you too.",
+                    "es": "Tenían un regalo para ti.",
+                    "fr": "Ils ont aussi un cadeau pour toi.",
+                    "ja": "あなたにプレゼントまでくれた。",
+                    "ko": "그분들이 당신을 위해서 선물을 준비했어요",
+                    "th": "พวกเขามีของฝากให้คุณด้วยนะ",
+                    "zh-Hans": "他们还给你准备了礼物哦。",
+                    "zh-Hant": "他們還給你準備了禮物喔。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ein Geschenk? Was ...",
+                "en": "A gift? Could it be...",
+                "es": "¿Un regalo? ¿Acaso es...?",
+                "fr": "Un cadeau ? Est-ce que c'est...",
+                "ja": "プレゼント？まさか…",
+                "ko": "선물이라니? 혹시...",
+                "th": "ของฝากเหรอ? อย่าบอกนะว่า...",
+                "zh-Hans": "礼物？不会是……",
+                "zh-Hant": "禮物？ 不會是……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du stellst Jiyan die Schüssel mit dem Eintopf hin.",
+                "en": "You set the bowl of stew in front of Jiyan.",
+                "es": "Pones el cuenco de estofado delante de Jiyan.",
+                "fr": "Vous posez le bol de ragoût devant Jiyan.",
+                "ja": "<ano=キエン>忌炎</ano>の前に大きな椀に盛られたシチューを置く。",
+                "ko": "가져온 찜 요리를 기염 앞에 내려놨다",
+                "th": "คุณวางชามราตาตุยล์ลงตรงหน้า Jiyan",
+                "zh-Hans": "你将一大碗炖菜放在忌炎面前。",
+                "zh-Hant": "你將一大碗燉菜放在忌炎面前。"
+              },
+              "id": 10
+            },
+            {
+              "text": {
+                "de": "Ha, wusste ich es doch. Das hat Ningwei gekocht, stimmt’s?",
+                "en": "Ha, knew it. Ningwei made it, right?",
+                "es": "¡Ja, lo sabía! Lo ha hecho Ningwei, ¿verdad?",
+                "fr": "Ha, je le savais. C'est Ningwei qui l'a préparé, n'est-ce pas ?",
+                "ja": "ハハ、すぐにわかった。<ano=ネイエイ>寧衛</ano>が俺にと持たせたんだろう。",
+                "ko": "아, 알겠네. 이건 영위가 전해 주라고 부탁한 거겠지",
+                "th": "ฮ่าๆ ว่าแล้วเชียว Ningwei เป็นคนทำแน่เลยใช่มั้ยเนี่ย?",
+                "zh-Hans": "哈，我就知道。一定是宁卫让你带给我的吧。",
+                "zh-Hant": "哈，我就知道。 一定是寧衛讓你帶給我的吧。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wahrscheinlich hat er erwähnt, wie ich ihn angeworben habe. Aber ich könnte wetten, dass er dir nicht die ganze Geschichte erzählt hat.",
+                "en": "He probably mentioned how I recruited him, but I bet he didn't tell you the whole story.",
+                "es": "Seguro que te habrá contado cómo le recluté, pero me apuesto a que no te ha contado toda la historia.",
+                "fr": "Il a probablement raconté comment je l'ai recruté, mais je parie qu'il ne t'a pas raconté toute l'histoire.",
+                "ja": "俺が<ano=ネイエイ>寧衛</ano>を勧誘したときの話を聞かされたんじゃないか？だが、きっと全部は話してないだろう。",
+                "ko": "내가 자신을 영입하려던 이야기를 들려주던가? 전부 다 이야기했을 것 같진 않지만",
+                "th": "เขาคงเล่าให้ฟังแล้วสินะ ว่าฉันชวนเขามาเข้าหน่วย แต่ฉันว่าคงเล่าไม่หมดหรอก",
+                "zh-Hans": "他是不是跟你讲了我招揽他的故事？但我想，他肯定没讲全。",
+                "zh-Hant": "他是不是跟你講了我招攬他的故事？ 但我想，他肯定沒講全。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Schieß los.",
+                    "en": "Go on.",
+                    "es": "Cuéntame más.",
+                    "fr": "J'écoute.",
+                    "ja": "じゃ聞かせて。",
+                    "ko": "자세히 들려주세요",
+                    "th": "เล่ามาสิ",
+                    "zh-Hans": "说来听听。",
+                    "zh-Hant": "說來聽聽。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich liebe Geschichten. Erzähl mir mehr.",
+                    "en": "I love stories. Tell me more.",
+                    "es": "Me encantan las historias. Cuéntame más.",
+                    "fr": "J'adore les histoires. Dis-m'en plus.",
+                    "ja": "{Male=話を聞くのは好きだ。;Female=話を聞くのは好きよ。}",
+                    "ko": "이야기 듣는 거 좋아해요",
+                    "th": "ฉันชอบฟังเรื่องเล่าที่สุดเลย",
+                    "zh-Hans": "我最爱听故事了。",
+                    "zh-Hant": "我最愛聽故事了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich war damals noch kein General und nur zum Dienst dorthin geschickt. Als ich zurück zur Nachhut-Verteidigungslinie kam, war es schon in der tiefen Nacht.",
+                "en": "I wasn't the general back then. Just another medic on duty, returning to base after dark.",
+                "es": "Por aquel entonces yo todavía no era general, tan solo otro médico de servicio que regresaba a la base en plena noche.",
+                "fr": "À l'époque, je n'étais pas encore général. Je n'étais qu'un simple médecin de garde de retour à la base à la nuit tombée.",
+                "ja": "あの時俺はまだ将軍じゃなかった。関内の巡察に派遣され、<ano=ふくは>伏波</ano>陣地に戻ると既に深夜だった。",
+                "ko": "그때의 난 장군 자리에 오르기 전이라서 변방에서 임무 수행하는 중이었어. 야귀군 후방부대로 복귀하려고 했을 땐 이미 한밤중이었지",
+                "th": "ตอนนั้นฉันยังไม่ได้เป็นแม่ทัพ ถูกส่งไปทำภารกิจในแผ่นดินภายใน ตอนเดินทางกลับจากหน่วยพิทักษ์คลื่นก็เป็นกลางคืนแล้ว",
+                "zh-Hans": "那时候我还不是将军，被派往关内执行任务，起程返回伏波阵时已是深夜。",
+                "zh-Hant": "那時候我還不是將軍，被派往關內執行任務，起程返回伏波陣時已是深夜。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kochte mir einen Eintopf und warf alles hinein, was ich hatte. Da traf ich Ningwei.",
+                "en": "Made a stew for myself with whatever I had. That's when I saw Ningwei wandering alone in the wilderness.",
+                "es": "Preparé un estofado con lo poco que tenía. Fue entonces cuando vi a Ningwei deambulando solo por la naturaleza salvaje.",
+                "fr": "Je me suis préparé un ragoût avec ce que j'avais sous la main. C'est alors que j'ai vu Ningwei errant seul dans la nature sauvage.",
+                "ja": "野宿して適当に食うものを探して料理したら、ちょうど<ano=ネイエイ>寧衛</ano>と出会った。",
+                "ko": "노숙하다가 허기가 져서 이것저것 적당히 넣고 쪘는데 바로 그때 영위를 만났지",
+                "th": "ฉันนอนข้างทางแล้วหาของกินมาแล้วทำราตาตุยล์สักหม้อ แล้วก็ได้เจอ Ningwei",
+                "zh-Hans": "我露宿时随便找了点吃的炖了一锅，就在这时，我遇到了宁卫。",
+                "zh-Hant": "我露宿時隨便找了點吃的燉了一鍋，就在這時，我遇到了寧衛。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er sagte, seine Heimatstadt sei vom Waveworn zerstört worden und er sei allein und wisse nicht, wohin er gehe.",
+                "en": "He lost everything in a Waveworn disaster. He was all alone, didn't know what to do.",
+                "es": "Perdió todo en un desastre de Erosionada. Estaba solo y no sabía qué hacer.",
+                "fr": "Il a tout perdu dans une catastrophe d'érosion. Il était tout seul, ne sachant pas quoi faire.",
+                "ja": "<ano=ネイエイ>寧衛</ano>は、自分は故郷を<ano=かいしょく>海蝕</ano>に滅ぼされ天涯孤独で、進むべき道がわからないと言った。",
+                "ko": "그는 자신의 고향이 비명 이상으로 파괴되었고 혼자서 어디로 가야 할지 모르겠다고 말했지",
+                "th": "เขาบอกว่าเขาเมืองบ้านเกิดพังทลายจากคลื่นกัดกร่อน เขาต้องอยู่คนเดียวและไม่รู้จะไปไหนต่อ",
+                "zh-Hans": "他说他的故乡毁于海蚀，他孤身一人，不知道自己该何去何从。",
+                "zh-Hant": "他說他的故鄉毀於海蝕，他孤身一人，不知道自己該何去何從。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich teilte den Eintopf mit ihm und hörte ihm zu, wie er viel darüber erzählte, was passiert war, seit er von zu Hause weggegangen war.",
+                "en": "I shared my stew and listened as he talked about his struggles. About what happened after his hometown was gone.",
+                "es": "Compartí mi estofado y lo escuché hablar sobre sus dificultades y lo que ocurrió después de que su ciudad natal desapareciera.",
+                "fr": "J'ai partagé mon ragoût alors qu'il a confié ses difficultés après la disparition de sa ville natale.",
+                "ja": "俺たちはシチューを分け合って、<ano=ネイエイ>寧衛</ano>から故郷を離れた後に起こったことをいろいろと聞いた。",
+                "ko": "그와 찜 요리를 나눠 먹으며 그가 고향을 떠난 후 일어난 일들을 들었지",
+                "th": "ฉันแบ่งราตาตุยล์ให้เขากิน ฟังเขาเล่าถึงเรื่องที่เกิดขึ้นหลังจากที่เขาทิ้งบ้านเกิด",
+                "zh-Hans": "我和他分享了炖菜，听他讲了很多他离开家乡后发生的事。",
+                "zh-Hant": "我和他分享了燉菜，聽他講了很多他離開家鄉後發生的事。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Seine Augen waren voller Verwirrung und Verzweiflung. Er wollte leben, aber er konnte keine Motivation finden, die ihn dabei unterstützte.",
+                "en": "His eyes were filled with hopelessness. He wanted to live, but couldn't find a reason to go on.",
+                "es": "Sus ojos estaban llenos de desesperanza. Quería vivir, pero no encontraba una razón para seguir adelante.",
+                "fr": "Ses yeux étaient emplis de désespoir. Il voulait vivre, mais ne trouvait pas de raison de continuer.",
+                "ja": "<ano=ネイエイ>寧衛</ano>の目は迷いと絶望に染まっていた。生きてはいきたいが、その気持ちを支える動機を見つけられずにいたんだ。",
+                "ko": "그의 눈에는 혼란과 절망으로 가득 차 있었지. 그는 살아가고 싶었지만, 살아갈 동력을 찾지 못했지",
+                "th": "แววตาเขานั้นเต็มไปด้วยความสับสนและความสิ้นหวัง เขาอยากมีชีวิตอยู่ต่อ แต่หาเหตุผลที่จะก้าวต่อไปไม่เจอ",
+                "zh-Hans": "他的眼里全是迷惘和绝望。他想要活下去，但却找不到支撑他这么做的动力。",
+                "zh-Hant": "他的眼裡全是迷惘和絕望。他想要活下去，但卻找不到支撐他這麼做的動力。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie ihr wisst, habe ich ihn später eingeladen, sich Mitternachtsranger anzuschließen.",
+                "en": "You already know what happened next. I asked if he'd want to enlist in the army. He said yes.",
+                "es": "Ya sabes lo que pasó después. Le pregunté si quería unirse a nosotros para defender Jinzhou, y aceptó.",
+                "fr": "Ensuite, tu sais ce qui s'est passé : je lui ai demandé s'il voulait se joindre à nous pour défendre Jinzhou, et il a accepté.",
+                "ja": "後は知ってのとおりだ。俺は<ano=ネイエイ>寧衛</ano>を<ano=よき>夜帰</ano>軍に誘った。",
+                "ko": "그 후의 일은 너도 알겠지만, 나는 그를 야귀군으로 영입했지",
+                "th": "แล้วคุณก็รู้แล้วว่า ฉันเชิญเขาเข้าร่วมมิดไนท์เรนเจอร์",
+                "zh-Hans": "后来你也知道了，我邀请他加入了夜归军。",
+                "zh-Hant": "後來你也知道了，我邀請他加入了夜歸軍。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danach kochte er immer einen ähnlichen Eintopf wie damals, wenn er im Urlaub war, und lieẞ ihn mir schicken. Ich glaube, er wollte sich damit revanchieren.",
+                "en": "After that, Ningwei often makes stews to share with me during his leaves. Maybe to repay me for the stew from that night.",
+                "es": "Después de aquello, Ningwei empezó a hacer estofados en sus vacaciones, y siempre compartía un poco conmigo. Tal vez para devolverme el estofado de esa noche.",
+                "fr": "Après ça, Ningwei s'est mis à préparer des ragoûts pendant ses permissions et il m'en donnait toujours une part. Peut-être pour me rembourser le plat de cette nuit-là.",
+                "ja": "それ以降、彼は休暇になるといつもあの時と同じようなシチューを作って、俺に渡すよう人に託すんだ。その時のことで、後ろめたいんだろう？",
+                "ko": "그 뒤로 휴가를 나갈 때마다 항상 그때 만든 찜 요리를 흉내 내서 내게 보내더군. 아마 그때 밥 한 끼의 신세를 갚으려고 하는 것 같네만?",
+                "th": "หลังจากนั้น Ningwei ก็ทำราตาตุยล์แบบนี้บ่อยๆ ในช่วงที่เขาลาหยุด แล้วให้คนส่งมาที่ฉัน ฉันคิดว่าเขาคงจะอยากตอบแทนละมั้ง",
+                "zh-Hans": "之后他就经常在放假的时候做和那时候差不多的炖菜，然后托人捎给我。我猜他是想还当初的那顿饭的人情吧。",
+                "zh-Hant": "之後他就經常在放假的時候做和那時候差不多的燉菜，然後托人捎給我。 我猜他是想還當初的那頓飯的人情吧。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Egal, wahrscheinlich will er nur mit seinen Kochkünsten angeben. Meine sind nicht so toll, und das ist noch geschmeichelt.",
+                "en": "...Nevermind, he's probably just showing off his cooking skills. Mine are lacking, to say the least.",
+                "es": "... Da igual, probablemente solo lo haga para alardear de sus habilidades culinarias. Las mías dejan que desear, por decirlo suavemente.",
+                "fr": "...Enfin, peut-être qu'il veut seulement frimer avec ses talents de cuisiner. Ils sont meilleurs que les miens et ce n'est pas peu de le dire.",
+                "ja": "…いや、たぶん自慢したいだけだな。彼の料理の腕は俺よりだいぶ上だからな。",
+                "ko": "...아니, 어쩌면 그저 자신의 요리 실력을 자랑하고 싶은 걸지도 모르겠군. 솔직히 나보단 요리 실력이 좋거든",
+                "th": "...ไม่หรอก เขาน่าจะทำแค่อยากอวดฝีมือในการทำอาหารที่ดีกว่าฉัน",
+                "zh-Hans": "……不，他可能只是为了炫耀而已吧。毕竟他做饭的手艺可比我强多了。",
+                "zh-Hant": "……不，他可能只是為了炫耀而已吧。畢竟他做飯的手藝可比我強多了。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Schöne Geschichte. Aber dein Eintopf wird kalt.",
+                    "en": "Nice story. Your stew is getting cold, though.",
+                    "es": "Qué buena historia. Pero se te está enfriando el estofado.",
+                    "fr": "C'est une belle histoire. Mais ton ragoût est en train de refroidir.",
+                    "ja": "{Male=いい話だった。けどシチューが冷めるぞ。;Female=いい話だった。けどシチューが冷めちゃう。}",
+                    "ko": "흥미로운 이야기였어요. 그런데 요리가 식을 것 같은데...",
+                    "th": "เรื่องเล่าก็น่ารักดี แต่ราตาตุยล์ของคุณเริ่มเย็นแล้วนะ",
+                    "zh-Hans": "好故事，但是炖菜要凉了。",
+                    "zh-Hant": "好故事，但是燉菜要涼了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "... Oh, danke für den Hinweis.",
+                "en": "...Ah, thanks for the reminder.",
+                "es": "... Ah, gracias por recordármelo.",
+                "fr": "...Ah, merci de me le rappeler.",
+                "ja": "…ハハ、そうだな。",
+                "ko": "...아, 그렇겠군",
+                "th": "...ฮะ จริงของคุณ",
+                "zh-Hans": "……哈，说得对。",
+                "zh-Hant": "……哈，說得對。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sollen wir zusammen essen, {PlayerName}? Du musst hungrig sein nach dem langen Weg.",
+                "en": "Shall we eat together, {PlayerName}? You must be hungry, having walked all the way here.",
+                "es": "{PlayerName}, ¿te apetece comer conmigo? Tendrás hambre después de haber venido andando hasta aquí.",
+                "fr": "Veux-tu manger avec moi, {PlayerName} ? Tu dois avoir faim après avoir marché jusqu'ici.",
+                "ja": "{PlayerName}、お前も一緒に食べよう。遠くまでご苦労だった。腹が減っているだろう。",
+                "ko": "{PlayerName}도 같이 들지? 먼 곳까지 다녀오느라 분명 배가 고플 테니",
+                "th": "มากินด้วยกันเถอะ {PlayerName} คุณคงเหนื่อยจากการวิ่งมานาน คงหิวแล้วล่ะ",
+                "zh-Hans": "你也来一起吃吧，{PlayerName}。辛苦你跑了这么远，你应该也饿了吧。",
+                "zh-Hant": "你也來一起吃吧，{PlayerName}。 辛苦你跑了這麼遠，你應該也餓了吧。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein bisschen schon ...",
+                    "en": "A little bit…",
+                    "es": "Un poco sí, la verdad...",
+                    "fr": "Un petit peu...",
+                    "ja": "たしかにちょっと…",
+                    "ko": "확실히 좀...",
+                    "th": "นิดหน่อย...",
+                    "zh-Hans": "确实有点……",
+                    "zh-Hant": "確實有點……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Freut mich sehr!",
+                    "en": "Don't mind if I do!",
+                    "es": "¡Entonces no me voy a cortar!",
+                    "fr": "Oui, volontiers !",
+                    "ja": "じゃあお言葉に甘えて！",
+                    "ko": "그럼 잘 먹겠습니다!",
+                    "th": "งั้นลุยเลยนะ!",
+                    "zh-Hans": "那我就不客气了！",
+                    "zh-Hant": "那我就不客氣了！"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zu „Schwimme, Gulpuff, Schwimme“",
+        "en": "Head to \"Swim, Gulpuff, Swim\"",
+        "es": "Dirígete a «Burbujín, ¡adelante!».",
+        "fr": "Aller au kiosque Nage de Gulboule",
+        "ja": "「魚水楽」の露店に向かう",
+        "ko": "「어수락(魚水樂)」 가게로 이동",
+        "th": "ไปที่ \"Gulpuff ว่ายหรรษา\"",
+        "zh-Hans": "前往「鱼水乐」摊位",
+        "zh-Hant": "前往「魚水樂」攤位"
+      },
+      "entities": [
+        {
+          "entityId": 125700007,
+          "mapId": 8,
+          "blueprintType": "NPC313",
+          "name": "TsEntity_157_002_皇龙老人2",
+          "areaId": 406,
+          "position": {
+            "x": -101620,
+            "y": 46299,
+            "z": 5218
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

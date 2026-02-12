@@ -1,0 +1,838 @@
+{
+  "id": 162700001,
+  "key": "2.1割草爬塔活动尾声任务",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Seelenruhe im Ozean",
+    "en": "Ocean Is a Soul's Rest",
+    "es": "El océano, refugio del alma",
+    "fr": "L'âme retourne à l'océan",
+    "ja": "大海原へと帰る魂",
+    "ko": "영혼은 바다로",
+    "th": "มหาสมุทรคือสถานที่ที่วิญญาณจะกลับมาพัก",
+    "zh-Hans": "灵魂归还汪洋",
+    "zh-Hant": "靈魂歸還汪洋"
+  },
+  "desc": {
+    "de": "Aus dem finsteren Nebel dringt die verführerische Stimme, die die verlorenen Seeleute in das verfluchte Land der Tacet-Dissonanzen treibt.",
+    "en": "The ominous sound drifting from the fog lures the lost seafarers, drawing them into the land of death where Tacet Discords run wild.",
+    "es": "El ominoso sonido que se desliza desde la niebla atrae a los marineros perdidos, llevándolos a la tierra de la muerte donde las Disonancias Tácitas corren desenfrenadas.",
+    "fr": "La voix inquiétante venante du brouillard attire les marins perdus, les entraînant dans le pays de la mort où les Tacets Discords attendent.",
+    "ja": "霧の中から聞こえる音は迷いし船乗りを引き寄せ、残像に覆われた死の国へと導いていく。",
+    "ko": "안개 속에서 들려오는 소리는 길 잃은 항해자들을 유혹하여 잔상이 가득한 죽음의 땅으로 이끈다",
+    "th": "เสียงลางร้ายที่แทรกมากับหมอกจะชักนำเหล่านักเดินเรือผู้หลงทางให้ก้าวเข้าสู่ดินแดนแห่งความตาย ซึ่งรายล้อมไปด้วยทาเซ็ตดิสคอร์ดที่คลุ้มคลั่ง",
+    "zh-Hans": "雾中传来的声音吸引着迷途的航者，却也将其引向覆满残象的死亡之国。",
+    "zh-Hant": "霧中傳來的聲音吸引著迷途的航者，卻也將其引向覆滿殘象的死亡之國。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Levito",
+        "en": "Talk to Levito",
+        "es": "Habla con Levito.",
+        "fr": "Parler à Levito",
+        "ja": "レヴィトと会話する",
+        "ko": "레비토와 대화하기",
+        "th": "คุยกับเลวิโต",
+        "zh-Hans": "和拉维特对话",
+        "zh-Hant": "與拉維特對話"
+      },
+      "entities": [
+        {
+          "entityId": 162700000,
+          "mapId": 8,
+          "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+          "name": "TsEntity_2_1割草爬塔_拉维特",
+          "areaId": 18,
+          "position": {
+            "x": 886760,
+            "y": 413830,
+            "z": -5
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_1_割草活动_引导对话",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}, willkommen zurück. Wie lief es da draußen?",
+                "en": "{PlayerName}, welcome back. How did it go out there?",
+                "es": "{PlayerName}, has vuelto. ¿Cómo te ha ido?",
+                "fr": "Ciao, {PlayerName}. Comment ça s'est passé là-bas ?",
+                "ja": "{PlayerName}……おかえり。海の様子はどうだった？",
+                "ko": "{PlayerName}... 어서 와, 바다 상황은 어때?",
+                "th": "{PlayerName} ยินดีต้อนรับกลับ ออกทะเลมาเป็นยังไงบ้าง?",
+                "zh-Hans": "{PlayerName}……欢迎回来。海域的情况如何？",
+                "zh-Hant": "{PlayerName}……歡迎回來。海域的情況如何？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Der Ort war von Tacet-Dissonanzen überrannt.",
+                    "en": "The place was overrun with Tacet Discords.",
+                    "es": "El lugar estaba lleno de Disonancias Tácitas.",
+                    "fr": "L'endroit était envahi par des Tacets Discords.",
+                    "ja": "潮のように残像が押し寄せていた。",
+                    "ko": "밀물처럼 쏟아지는 잔상들뿐이었어요",
+                    "th": "ที่นั่นมีแต่พวกทาเซ็ตดิสคอร์ดอยู่เต็มไปหมดเลย",
+                    "zh-Hans": "全是潮水一样涌来的残象。",
+                    "zh-Hant": "全是潮水一樣湧來的殘象。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also ist es schon …",
+                "en": "So it's already…",
+                "es": "Así que ya estaría...",
+                "fr": "Donc c'est déjà…",
+                "ja": "つまり、そこはもう……",
+                "ko": "그러니까, 그곳은 이미...",
+                "th": "งั้นก็แสดงว่า...",
+                "zh-Hans": "你是说，那里已经……",
+                "zh-Hant": "你是說，那裡已經……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich habe den Mann, den du erwähnt hast, nicht gesehen.",
+                    "en": "I didn't see the man you mentioned.",
+                    "es": "No vi a la persona que mencionaste.",
+                    "fr": "Je n'ai pas vu l'homme que tu as mentionné.",
+                    "ja": "あなたが言ってた人も見つけられなかった。",
+                    "ko": "말씀하신 분은 찾지 못했어요",
+                    "th": "ฉันไม่เห็นคนที่คุณพูดถึงเลย",
+                    "zh-Hans": "我也没有看到你说的那个人。",
+                    "zh-Hant": "我也沒有看到你說的那個人。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, verstehe ... Danke, dass du es versucht hast, {PlayerName}. Kannst du mir mehr darüber erzählen, was du gesehen hast?",
+                "en": "Ah, I see... Thank you for trying, {PlayerName}. Can you tell me more about what you saw?",
+                "es": "Ah, entiendo... Gracias por intentarlo, {PlayerName}. ¿Puedes contarme más sobre lo que viste?",
+                "fr": "Ah, je vois... Merci d'avoir essayé, {PlayerName}. Peux-tu me dire ce que tu as vu ?",
+                "ja": "そうか……いずれにせよ、助かったよ、{PlayerName}。海で見たこと、もっと詳しく聞かせてほしい。",
+                "ko": "그래... 아무튼, 도와줘서 고마워, {PlayerName}. 바다 상황에 대해 자세히 말해 줄래?",
+                "th": "อา เข้าใจละ... ขอบคุณที่พยายามนะ {PlayerName} ช่วยเล่าให้ฟังหน่อยได้มั้ยว่าคุณเห็นอะไรบ้าง?",
+                "zh-Hans": "是吗……不管怎么说，谢谢你的帮助，{PlayerName}。可以再为我详细说说你在海域中见到的景象吗？",
+                "zh-Hant": "是嗎……不管怎麼說，謝謝你的幫助，{PlayerName}。可以再為我詳細說說你在海域中見到的景象嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erzähle Levito, was du gesehen hast.",
+                "en": "You describe what you saw to Levito.",
+                "es": "Describes lo que viste a Levito.",
+                "fr": "Vous décrivez ce que vous avez vu à Levito.",
+                "ja": "海で見た光景をレヴィトに説明した。",
+                "ko": "바다에서 본 것들을 레비토에게 말해준다",
+                "th": "คุณเล่าเรื่องที่เห็นให้ Levito ฟัง",
+                "zh-Hans": "将海域中的景象描述给拉维特听。",
+                "zh-Hant": "將海域中的景象描述給拉維特聽。"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "Meersturm, endlose Gezeiten von TDs, entfernte Stimmen im Wind ... {PlayerName}, das erinnert mich an eine alte Geschichte, die ich als Kind gehört habe.",
+                "en": "Sea fog, never-ending tides of TDs, distant voices on the wind... {PlayerName}, it reminds me of an old story I heard as a child.",
+                "es": "Niebla marina, Disonancias Tácitas elevándose como mareas, voces distantes en el viento... {PlayerName}, me recuerda a una vieja historia que escuché cuando era niño.",
+                "fr": "Brume marine, marées infinies de TDs, voix lointaines portées par le vent... {PlayerName}, cela me rappelle une vieille histoire que j'ai entendue quand j'étais enfant.",
+                "ja": "海霧、潮のように押し寄せる残像、そして時折聞こえてくる微かな人の声……{PlayerName}、小さい頃にこんな言い伝えを聞いたことがあるんだ。",
+                "ko": "바다 안개, 밀물처럼 쏟아지는 잔상들, 그리고 멀리서 드문드문 들려오는 사람 목소리까지... {PlayerName}, 갑자기 어릴 적에 들었던 전설이 생각났어",
+                "th": "หมอกทะเล ทาเซ็ตดิสคอร์ดที่ถาโถมเข้ามาไม่หยุดหย่อน เสียงที่แว่วมาตามสายลม... {PlayerName} มันทำให้ผมนึกถึงเรื่องเล่าเก่าๆ ที่เคยได้ยินสมัยยังเป็นเด็ก",
+                "zh-Hans": "海雾，潮水般的残象，以及不时传来的渺远的人声……{PlayerName}，我突然想起了小时候曾听过的一个传说。",
+                "zh-Hant": "海霧，潮水般的殘象，以及不時傳來的渺遠的人聲……{PlayerName}，我突然想起了小時候曾聽過的一個傳說。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Seefahrer, müde und gebrochen nach dem Kampf gegen Stürme und endlose Wellen, werden von ihren Gedanken heimgesucht, die ihnen Streiche spielen. Wie ich bereits sagte, kann Einsamkeit zu etwas Unerträglichem werden.",
+                "en": "Sailors, weary and broken after battling storms and endless waves, find their minds playing tricks on them. As I said before, loneliness can evolve into something unbearable.",
+                "es": "Los marineros, cansados y destrozados después de luchar contra tormentas y olas interminables, ven sus mentes jugarles trucos. Como te dije antes, la soledad puede convertirse en algo insoportable.",
+                "fr": "Les marins, fatigués et brisés après avoir affronté les tempêtes et les vagues interminables, voient leurs esprits leur jouer des tours. Comme je l'ai dit avant, la solitude peut se transformer en quelque chose d'insupportable.",
+                "ja": "嵐と大海原を越え、疲れきった船員たち。前にも言ったように、長い旅路の中では、孤独感は何千倍にも増す。",
+                "ko": "거센 폭풍과 사나운 바다를 건넌 선원들은 이미 지칠 대로 지친 상태였지. 마치 내가 전에 말했던 것처럼, 긴 여정 속에서 고독은 눈덩이처럼 불어났어",
+                "th": "เหล่ากะลาสีที่อ่อนล้าและสิ้นเรี่ยวแรงหลังจากฝ่าฟันทั้งพายุและคลื่นลูกแล้วลูกเล่า เริ่มเห็นภาพขึ้นมาหลอกหลอน อย่างที่ฉันบอกไป ความเหงาอาจแปรเปลี่ยนเป็นสิ่งที่เกินจะทานทน",
+                "zh-Hans": "在远渡风暴和汪洋之后，船上的人们早已疲惫不堪，就像我之前说的那样——在漫长的旅途中，孤独被千万倍地放大。",
+                "zh-Hant": "在遠渡風暴和汪洋之後，船上的人們早已疲憊不堪，就像我之前說的那樣——在漫長的旅途中，孤獨被千萬倍地放大。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In diesen Momenten, wenn sich eine Tür vor ihnen auftut. Hell, warm und einladend. Selbst wenn sie direkt zum Tod führen würde, würden viele sich trotzdem dafür entscheiden, hindurchzugehen. Alles für einen Hauch von Glück, das sich so real anfühlt, dass sie dafür gerne alles aufgeben würden.",
+                "en": "In those moments, if a door appeared before them. Bright, warm, and inviting. Even if it led straight to death, many would still choose to walk through it. All for a glimpse of happiness that feels so real they'd gladly give everything for it.",
+                "es": "En esos momentos, si se abriera una puerta vibrante, llena de vida y alegría, aunque llevara directo a la muerte, muchos la cruzarían, atraídos por una fugaz ilusión de felicidad.",
+                "fr": "Dans ces moments-là, si une porte apparaissait devant eux. Une porte lumineuse, chaleureuse et accueillante. Même si elle menait directement à la mort, beaucoup choisiraient quand même de la franchir. Tout cela pour entrevoir un bonheur si réel qu'ils donneraient volontiers tout pour l'atteindre.",
+                "ja": "もしそんな時に、賑やかで満ち足りた、喧騒に満ちた世界への扉が現れたら、たとえその先が死であろうとも、多くの人はその中へ足を踏み入れ、一瞬の幸せな幻に酔いしれるだろう。",
+                "ko": "만약 그런 순간에 북적거리고, 행복하면서, 떠들썩한 곳으로 통하는 문이 나타난다면, 설령 그 문 뒤에 죽음이 기다리고 있을지언정 많은 사람들은 아주 잠깐의 행복한 환상을 만끽하기 위해 기꺼이 그 문으로 뛰어들 거야",
+                "th": "ในช่วงเวลานั้น ถ้าประตูบานหนึ่งปรากฏขึ้นตรงหน้าพวกเขา ประตูที่ส่องสว่าง อบอุ่นและน่าเชิญชวน แม้ว่าประตูบานนั้นจะพาดิ่งสู่ความตายแต่หลายคนก็ยังจะยอมก้าวเข้าไป ทั้งหมดนี้ก็เพื่อสัมผัสช่วงเวลาแห่งความสุขอันแสนสั้นซึ่งสมจริงเสียจนพวกเขายินดียอมแลกทุกสิ่งเพื่อให้ได้ลิ้มรสมัน",
+                "zh-Hans": "如果在这种时候，出现一扇通往热闹、圆满、喧嚣的大门，即便门后是死亡，许多人也会踏入其中，为那转瞬即逝的幸福幻象而甘之如饴。",
+                "zh-Hant": "如果在這種時候，出現一扇通往熱鬧、圓滿、喧囂的大門，即便門後是死亡，許多人也會踏入其中，為那轉瞬即逝的幸福幻象而甘之如飴。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein kleiner Preis für große Hoffnung. Diese Gewässer... sind eine Falle. Die TDs locken die Menschen hinein.",
+                    "en": "So these waters… is a trap. The TDs are luring people in.",
+                    "es": "Esta área del mar... es una trampa que las Disonancias Tácitas utilizan para atraer a quienes pasan por allí.",
+                    "fr": "Donc ces eaux... c'est un piège. Les Tacets Discords attirent les gens.",
+                    "ja": "{Male=この海は……残像が人を誘い込むための罠だったのか。;Female=この海は……残像が人を誘い込むための罠だったのね。}",
+                    "ko": "이 해역은... 잔상들이 지나가는 사람들을 끌어들이기 위한 함정이에요",
+                    "th": "ถ้างั้น น่านน้ำแถบนั้น... ก็เป็นกับดักที่พวกทาเซ็ตดิสคอร์ดใช้ล่อให้คนหลงเข้าไปสินะ",
+                    "zh-Hans": "这片海域……是残象用以吸引过路人的陷阱。",
+                    "zh-Hant": "這片海域……是殘象用以吸引過路人的陷阱。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist wie ein Köder, der ins Verderben führt. Und je länger diese Monster unkontrolliert bleiben, desto mehr Leben werden sie fordern.",
+                "en": "I believe so. And the longer those monsters are left unchecked, the more lives they'll claim.",
+                "es": "Creo que sí. Y mientras más tiempo dejen sin control a esas Disonancias Tácitas, más vidas reclamarán.",
+                "fr": "Je le crois aussi. Plus ces monstres seront laissés sans surveillance, plus ils feront de victimes.",
+                "ja": "ああ。つまり、その残像を定期的に片付けないと、この罠にはまり命を落とす人が増えていく。",
+                "ko": "그런 거 같아. 게다가, 만약 정기적으로 잔상을 소멸시키지 않으면, 함정에 빠져 목숨을 잃는 사람들이 점차 많아질 거야...",
+                "th": "ผมคิดว่างั้นนะ และยิ่งปล่อยให้ไม่มีใครจัดการสัตว์ประหลาดพวกนั้นนานเท่าไหร่ จำนวนผู้เสียชีวิตก็มีแต่จะยิ่งเพิ่มมากขึ้น",
+                "zh-Hans": "我想是这样。并且，现在看来，如果不定期对这些残象进行清剿，掉入这个陷阱、从而丧命的人会越来越多……",
+                "zh-Hant": "我想是這樣。並且，現在看來，如果不定期對這些殘象進行清剿，掉入這個陷阱、從而喪命的人會越來越多……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich möchte dich um einen weiteren Gefallen bitten, obwohl ich verstehe, dass du viele andere Aufgaben zu erledigen hast ...",
+                "en": "I'd like to ask another favor of you, though I understand you've got plenty of other tasks to tend to...",
+                "es": "Me gustaría pedirte que sigas ayudando con esto, pero sé que tienes muchas otras cosas que hacer...",
+                "fr": "J'aimerais te demander une autre faveur, bien que je comprenne que tu as déjà beaucoup d'autres tâches à accomplir...",
+                "ja": "本当は引き続きあなたに任せたいところだけど、{PlayerName}にもたくさんやるべきことがある。そうだろう？",
+                "ko": "마음 같아선 나도 이 일을 너한테 계속 부탁하고 싶지만, {PlayerName}도 다른 할 일이 많지?",
+                "th": "ผมมีเรื่องจะขอร้องคุณอีกเรื่อง แม้ผมจะเข้าใจดีว่าคุณมีงานให้ต้องทำอีกมาก...",
+                "zh-Hans": "虽然我很想将这件事继续托付给你，但我知道{PlayerName}也有许多自己要做的事，对吧？",
+                "zh-Hant": "雖然我很想將這件事繼續託付給你，但我知道{PlayerName}也有許多自己要做的事，對吧？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich habe wirklich viel zu tun.",
+                    "en": "I do have a lot going on.",
+                    "es": "Tengo bastante en mis manos.",
+                    "fr": "J'ai beaucoup de choses en cours.",
+                    "ja": "確かに忙しい。",
+                    "ko": "네, 맞아요",
+                    "th": "ฉันมีหลายเรื่องให้ต้องจัดการจริงๆ นั่นแหละ",
+                    "zh-Hans": "确实很忙。",
+                    "zh-Hant": "確實很忙。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Aber es ist nicht so, als könnte ich keine Zeit finden.",
+                    "en": "But it's not like I can't make time.",
+                    "es": "Pero no es como si no pudiera hacer espacio.",
+                    "fr": "Mais ce n'est pas comme si je ne pouvais pas trouver du temps.",
+                    "ja": "全く時間がないわけでもない。",
+                    "ko": "시간이야 짜내면 되죠",
+                    "th": "แต่ก็ใช่ว่าจะหาเวลาให้ไม่ได้นะ",
+                    "zh-Hans": "倒也不是完全挤不出时间。",
+                    "zh-Hant": "倒也不是完全擠不出時間。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich habe von deinem Ruf gehört, eine ziemlich beschäftigte Person zu sein. Fühl dich also nicht unter Druck gesetzt, die Aufgabe zu übernehmen. Komm gerne vorbei, wann immer du Zeit hast. Ich werde in der Zwischenzeit andere Wege finden, es zu bewältigen.",
+                "en": "I've learnt about your reputation of being quite a busy person. So don't feel pressured in taking on the task. Feel free to come by whenever you have the time to spare. I'll think of other ways to handle it in the meantime.",
+                "es": "He oído cuánto tienes en tu plato. Así que no sientas que tienes que dejar todo. Cuando puedas, ven. Mientras tanto, pensaré en otras formas de manejarlo.",
+                "fr": "J'ai entendu dire que tu as la réputation d'être une personne très occupée. Ne te mets pas la pression de prendre cette tâche. Passe quand tu as un moment. En attendant, je trouverai d'autres moyens de m'en occuper.",
+                "ja": "大丈夫だよ。元々そう聞いているから。残像の件については、ある程度気楽に、時間がある時にやってくれればいい。私も何か他の方法を考えてみよう。",
+                "ko": "그래, 네 도움을 필요로 하는 곳이 많다는 건 나도 소문으로 익히 들어서 잘 알고 있어. 그러니까 이 해역을 청소하는 일에 대해선 너무 부담 갖지 말고, 시간 날 때 와 줬으면 해. 나도 다른 방법을 생각해 볼 테니까",
+                "th": "ผมรู้มาว่าคุณมีชื่อเสียงและค่อนข้างงานยุ่ง เพราะงั้นไม่ต้องรู้สึกกดดันว่าจะต้องรับงานนี้นะ ถ้าคุณว่างเมื่อไหร่ก็แวะมาได้ตลอดเลย ระหว่างนั้นผมจะคิดหาทางอื่นในการจัดการเรื่องนี้เอง",
+                "zh-Hans": "我听说了，你有太多事情要忙。所以清剿海域这回事，你也不必当作太大的压力，什么时候空了来一趟就好，我也会再想想办法。",
+                "zh-Hant": "我聽說了，你有太多事情要忙。所以清剿海域這回事，你也不必當作太大的壓力，什麼時候空了來一趟就好，我也會再想想辦法。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn schon, denn schon ... Wer rastet, der rostet.",
+                "en": "That said... I do prefer that you make use of that time on some relaxation.",
+                "es": "Dicho esto... espero que también te estés cuidando.",
+                "fr": "Cela dit... je préfère que tu utilises ce temps pour te détendre un peu.",
+                "ja": "とは言え、その時間は休息に使ってほしい……",
+                "ko": "말만이라도 고마워. 그래도 정말로 시간이 생긴다면 그 시간은 너 자신을 위해 써 줬으면 좋겠어...",
+                "th": "แต่... ผมอยากให้คุณใช้เวลานั้นพักผ่อนสักหน่อยมากกว่านะ",
+                "zh-Hans": "话虽如此，如果能挤出时间，还是更希望你能多做点能让自己放松的事……",
+                "zh-Hant": "話雖如此，如果能擠出時間，還是更希望你能多做點能讓自己放鬆的事……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du mir jedoch eine Hand reichst, werde ich dafür sorgen, dass du angemessen belohnt wirst.",
+                "en": "However, if you do lend me a hand, I'll make sure you're rewarded properly.",
+                "es": "Cuando regreses, me aseguraré de que recibas una buena recompensa.",
+                "fr": "Cependant, si tu acceptes de m'aider, je te promets une récompense digne de ce nom.",
+                "ja": "それでも、もし来てくれるのなら、満足できるような報酬を準備しよう。",
+                "ko": "하지만 네가 와 준다면 난 최선을 다해서 네가 만족할 만한 답례를 준비해 두도록 할게",
+                "th": "แต่ถ้าคุณช่วยผม ผมจะตอบแทนคุณอย่างงามแน่นอน",
+                "zh-Hans": "但如果你能来，我会尽力去准备让你满意的谢礼。",
+                "zh-Hant": "但如果你能來，我會盡力去準備讓你滿意的謝禮。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast du eine Belohnung für mich geplant?",
+                    "en": "Are you planning on a reward for me?",
+                    "es": "¿Estás pensando en prepararme una recompensa?",
+                    "fr": "Prévois-tu une récompense pour moi ?",
+                    "ja": "{Male=報酬まで自分で準備するのか？;Female=報酬まで自分で準備するの？}",
+                    "ko": "답례까지 직접 준비해 주시는 건가요?",
+                    "th": "คุณจะมีรางวัลให้ฉันมั้ย?",
+                    "zh-Hans": "你还要亲自准备谢礼吗？",
+                    "zh-Hant": "你還要親自準備謝禮嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich, wenn das dein Wunsch ist. Ich möchte nicht, dass jemand anderes länger den Verlust der Hoffnung erleben muss.",
+                "en": "Of course, if that's what you hope for. I do not want anyone else to have to experience the loss of hope any longer.",
+                "es": "Por supuesto, si es lo que esperas. No quiero que nadie más experimente la pérdida de esperanza.",
+                "fr": "Bien sûr, si c'est ce que tu espères. Personne ne doit souffrir de la perte d'espoir.",
+                "ja": "もちろん。私は知っているんだ……希望がいかに貴重なものなのかを。希望が打ち砕かれる感覚を、他の人にも味わってほしくない。",
+                "ko": "당연하지. 나도... 희망이 얼마나 소중한 건지 잘 알고 있어. 다른 사람들은 희망이 산산조각나는 일을 경험하지 않았으면 좋겠어",
+                "th": "แน่นอน ถ้านั่นคือสิ่งที่คุณหวัง ฉันไม่ต้องการให้ใครต้องประสบกับการสูญสิ้นความหวังอีกต่อไป",
+                "zh-Hans": "当然，毕竟我知道……希望是多珍贵的东西。我不想也有别人体会到它破碎的感觉。",
+                "zh-Hant": "當然，畢竟我知道……希望是多珍貴的東西。我不想也有別人體會到它破碎的感覺。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "...",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "...",
+                    "ja": "……",
+                    "ko": "......",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mach dir keine Sorgen. Ich habe mich mit der Vorstellung abgefunden, dass er vor zehn Jahren gestorben ist. Vielleicht ist das doch nicht so schlecht.",
+                "en": "Don't worry. I've made my peace with the idea that he did die ten years ago. Maybe that's not such a bad thing after all.",
+                "es": "No pasa nada, ya he aceptado el hecho de que en realidad murió hace diez años. ¡Y quizás no sea un mal desenlace después de todo!",
+                "fr": "N'inquiète pas. Je me suis fait à l'idée qu'il est mort il y a dix ans. Peut-être que ce n'est pas si mal après tout.",
+                "ja": "大丈夫、私はもう「彼が10年前に死んだ」という結果を受け入れている。もしかしたら、これも悪くない結末だったのかもしれない。",
+                "ko": "괜찮아, 난 이미 그가 10년 전에 죽었다는 걸 받아들였어! 그것 또한 그대로 의미가 있는 거지",
+                "th": "ไม่ต้องห่วง ผมทำใจยอมรับแล้วว่าเขาตายไปตั้งแต่เมื่อสิบปีก่อน บางทีนั่นอาจเป็นเรื่องดีแล้วก็ได้",
+                "zh-Hans": "没关系，我已经接受了“他确实早在十年前死去”这个结果！这也未尝不是一个很好的结果。",
+                "zh-Hant": "沒關係，我已經接受了「他確實早在十年前死去」這個結果！這也未嘗不是一個很好的結果。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zehn Jahre sind für mich vergangen, aber für ihn? Er bleibt für immer jung. Ich finde, daran ist etwas Schönes – das ist die Art von Ende, die in ein Lied gehört.",
+                "en": "Ten years have passed for me, but for him? He'll stay forever young. I think there's something beautiful about that—it's the kind of ending that belongs in a song.",
+                "es": "Han pasado diez años para mí, pero para él... Él será joven para siempre. Creo que hay algo hermoso en eso: es el tipo de final que merece estar en una canción.",
+                "fr": "Dix ans ont passé pour moi, mais pour lui ? Il restera éternellement jeune. Je trouve cela magnifique — c'est le genre de fin qui mérite d'être dans une chanson.",
+                "ja": "何しろ10年経って私は成長しているのに、彼は全く変わっていなかった。これもまた、新しい曲に書き記すことができる、良い結末だと思う。",
+                "ko": "지난 10년 동안 난 많이 성장했지만, 그는 그 모습 그대로인 거지. 그러한 사실 또한 곡의 결말로 쓰일 가치가 있는 좋은 일이라고 생각해",
+                "th": "สำหรับผมน่ะเวลาผ่านไปตั้งสิบปีแล้ว แต่สำหรับเขาล่ะ? เขาจะเยาว์วัยตลอดไป ผมคิดว่าเรื่องนี้มีความงดงามอยู่นะ... เป็นตอนจบแบบที่ควรจะอยู่ในเพลงสักเพลงหนึ่ง",
+                "zh-Hans": "毕竟十年过去，我已经长大了，他却再没有过分毫苍老。我觉得这也是一个很好的，值得被写进新的乐曲中的结局。",
+                "zh-Hant": "畢竟十年過去，我已經長大了，他卻再沒有過分毫蒼老。我覺得這也是一個很好的，值得被寫進新的樂曲中的結局。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke, {PlayerName}. Ich überlasse den Rest deinen fähigen Händen.",
+                "en": "Thank you, {PlayerName}. I'll leave the rest in your capable hands.",
+                "es": "Gracias, {PlayerName}. A partir de ahora, te dejo esto en tus manos.",
+                "fr": "Merci, {PlayerName}. Je te laisse le reste entre tes mains.",
+                "ja": "ありがとう、{PlayerName}。あなたの手を煩わせることになるけど、お願いするよ。",
+                "ko": "고마워, {PlayerName}. 앞으로 잘 부탁해",
+                "th": "ขอบคุณนะ {PlayerName} ฝากที่เหลือให้คุณผู้มากความสามารถด้วยนะ",
+                "zh-Hans": "谢谢你，{PlayerName}。从今往后，这里就要劳烦你了。",
+                "zh-Hant": "謝謝你，{PlayerName}。從今以後，這裡就要勞煩你了。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 50102,
+                "name": {
+                  "zh-Hans": "拉维特"
+                },
+                "entity": {
+                  "entityId": 162700000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_拉古纳平民男4880118",
+                  "name": "TsEntity_2_1割草爬塔_拉维特",
+                  "areaId": 18,
+                  "position": {
+                    "x": 886760,
+                    "y": 413830,
+                    "z": -5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

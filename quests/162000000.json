@@ -1,0 +1,312 @@
+{
+  "id": 162000000,
+  "key": "3.1无尽宴会第一天接取任务",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Nachricht",
+    "en": "Message from Lollo Logistics",
+    "ja": "ブブメッセージ",
+    "ko": "무무 메시지",
+    "th": "ข้อความจากลอลโล่",
+    "zh-Hans": "呜呜来讯",
+    "zh-Hant": "嗚嗚來訊"
+  },
+  "desc": {
+    "de": "I.R.I.S. scheint etwas mit dir besprechen zu wollen. Schau mal kurz bei ihr vorbei.",
+    "en": "I.R.I.S. seems to need your help. Maybe you should go check on her.",
+    "ja": "I.R.I.S.はあなたに用があるようだ、話を聞いてあげよう。",
+    "ko": "I.R.I.S.를 찾아 얘기를 나눠보자, 당신을 찾고 있는 것 같으니",
+    "th": "ไปพูดคุยกับ I.R.I.S เถอะ ดูเหมือนเธอต้องการพบคุณ",
+    "zh-Hans": "去找I.R.I.S.聊聊天吧，她好像有事情要找你",
+    "zh-Hant": "去找I.R.I.S.聊聊天吧，她好像有事情要找你"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 29,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lies Lumis Nachricht.",
+        "ko": "루미의 메시지 확인하기",
+        "th": "เปิดอ่านข้อความของ Lumi",
+        "zh-Hans": "打开灯灯的飞讯",
+        "zh-Hant": "打開燈燈的飛訊"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 37,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schau mal bei I.R.I.S. vorbei.",
+        "ko": "I.R.I.S.를 찾아 대화하기",
+        "th": "ไปพูดคุยกับ I.R.I.S",
+        "zh-Hans": "去找I.R.I.S.聊聊",
+        "zh-Hant": "去找I.R.I.S.聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 152700001,
+          "mapId": 906,
+          "blueprintType": "branch3.0_152_NPCIRIS",
+          "name": "TsEntity_IRIS",
+          "areaId": 36170,
+          "position": {
+            "x": -63987,
+            "y": -537911,
+            "z": 36308
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -83
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_无尽宴会引导任务第一天_IRIS",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Meine Güte, {PlayerName}, ich hatte dich gerade gesucht.",
+                "ja": "あら、ちょうど{PlayerName}さんを探していたんですよ。",
+                "ko": "아, {PlayerName} 학생, 마침 학생을 찾고 있었어요",
+                "th": "อ๊ะ {PlayerName} ฉันกำลังหาคุณอยู่พอดี",
+                "zh-Hans": "啊呀，{PlayerName}同学，我正有事要找你呢。",
+                "zh-Hant": "啊呀，{PlayerName}同學，我正有事要找你呢。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe in letzter Zeit für alle Spamnachrichten aus dem Campus-Netzwerk gefiltert. Dir ist bestimmt aufgefallen, dass du nicht mehr die Betrugsversuche kriegst, die vorgeben, ein Hütendes zu sein und um fünfzig Shell-Kredite bitten, richtig?",
+                "ja": "実は、学生の皆さんのために、スパムのフィルタリングをしていたんです。実際、「私は歳主だ。今すぐ50シェルコインを送れ」……なんてメッセージ、一度も届いていませんよね～？",
+                "ko": "사실 학생들을 위해 아카데미내 단말기로 보내지는 스팸 메시지를 계속 걸러내고 있었거든요. 학생이라면 발견했겠죠. 자칭 수호신이라면서 50 클램 코인을 보내라고 하는 메시지를 받은 적은 없잖아요~",
+                "th": "จริงๆ แล้ว ฉันกำลังช่วยคัดแยกข้อความขยะจากเทอร์มินัลให้ทุกคนน่ะ คุณน่าจะสังเกตเห็นแล้วว่า คุณยังไม่เคยได้รับข้อความที่บอกคนอื่นไปทั่วว่าตัวเองเป็นเซนติเนล ต้องโอนเหรียญเชลล์ไปให้เขา 50 เหรียญ อะไรทำนองนี้น่ะ~",
+                "zh-Hans": "其实，我一直在帮同学们过滤校内终端的垃圾飞讯，你一定也发现了，你从没收到过那些自称岁主，要你给对方打五十贝币的飞讯吧~",
+                "zh-Hant": "其實，我一直在幫同學們過濾校內終端的垃圾飛訊，你一定也發現了，你從沒收到過那些自稱歲主，要你給對方打五十貝幣的飛訊吧~"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das haben wir also dir zu verdanken.",
+                    "ja": "{Male=なるほど、I.R.I.S.のおかげだったのか。;Female=なるほど、I.R.I.S.のおかげだったのね。}",
+                    "ko": "I.R.I.S. 덕분이었네요",
+                    "th": "ที่แท้เป็นเพราะ I.R.I.S. ช่วยไว้นี่เอง",
+                    "zh-Hans": "原来是I.R.I.S.的功劳。",
+                    "zh-Hant": "原來是I.R.I.S.的功勞。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Anfänglich war es eine gute Tat. Aber … durch den enormen Zufluss von Daten in meinen Prozessor, kam es zu einem kritischen Fehler mit Lollo-Logistik.",
+                "ja": "本来なら「お手柄」のはずだったのですが……情報量が多すぎたせいで、ブブ物流関連で大きなミスをしてしまいまして。",
+                "ko": "원래대로라면 당연히 도움을 준 일이지만... 대량의 정보가 프로세서로 유입되다 보니, 결국 무무물류 쪽에서 큰 차질이 생기고 말았어요",
+                "th": "จริงๆ เรื่องที่ช่วยก็ควรจะเกิดประโยชน์หรอกนะ แต่ว่า... พอฉันมีข้อมูลจำนวนมหาศาลเข้าสู่ระบบประมวลผล ก็ดันไปทำให้ลอลโล่โลจิสติกส์เกิดข้อมูลผิดพลาดมากมาย",
+                "zh-Hans": "原本当然是功劳一件，可是……我有这么庞大的信息进入处理器，终究还是在呜呜物流这里出现了巨大的差错。",
+                "zh-Hant": "原本當然是功勞一件，可是……我有這麼龐大的資訊進入處理器，終究還是在嗚嗚物流這裡出現了巨大的差錯。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aufgrund von Lollo-Logistiks kommerzieller Natur und ihrem hohen Nachrichtenvolumen, habe ich sie automatisch als Spam geblockt. Viele Studenten haben die Benachrichtigungen zu ihren Paketen verpasst …",
+                "ja": "ブブ物流から送られてくる大量のデータを、スパムと誤認して自動ブロックしてしまったんです。そのせいで、多くの学生さんが荷物を受け取れることができず……",
+                "ko": "무무물류의 상업적 속성과 방대한 정보 발송량을 고려해, 그들의 메시지가 자동으로 차단되게끔 했는데, 그 결과 많은 학생들이 택배 수령 알림을 받지 못했어요…",
+                "th": "เพราะคุณสมบัติการซื้อขายกับข้อมูลที่ส่งออกจำนวนมหาศาลของลอลโล่โลจิสติกส์ ทำให้ฉันไปบล็อกข้อความของพวกเขาโดยอัตโนมัติ ทำให้มีนักเรียนหลายคนไม่ได้รับพัสดุ...",
+                "zh-Hans": "基于呜呜物流的商业属性和庞大的信息发送量，我自动屏蔽了他们的飞讯，导致好多同学没有收到快件……",
+                "zh-Hant": "基於嗚嗚物流的商業屬性和龐大的訊息傳送量，我自動屏蔽了他們的飛訊，導致好多同學沒有收到快件……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe die goldene Regel vergessen: Du kannst alles auf dieser Welt löschen, lösche aber niemals die Lieferbenachrichtigung …",
+                "ja": "うっかりしていました。他のメッセージはともかく、物流の通知だけはブロックしてはいけませんでしたね……",
+                "ko": "세상의 모든 메시지를 삭제하더라도 무무물류 관련 메시지만은 절대 지워서는 안 된다는 걸 잊고 있었죠…",
+                "th": "ฉันลืมไปว่าเราจะลบข้อความอะไรจากใครก็ได้ ยกเว้นจากลอลโล่โลจิสติกส์...",
+                "zh-Hans": "我忘了，世间一切飞讯都可删，唯独物流飞讯不可删……",
+                "zh-Hant": "我忘了，世間一切飛訊都可刪，唯獨物流飛訊不可刪……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Zerbrich dir nicht den Kopf darüber, I.R.I.S.",
+                    "ja": "{Male=あんまり自分を責めるな、I.R.I.S.。;Female=あんまり自分を責めないで、I.R.I.S.。}",
+                    "ko": "자책하지 마세요, I.R.I.S.",
+                    "th": "อย่าโทษตัวเองเลย I.R.I.S.",
+                    "zh-Hans": "不要自责了，I.R.I.S.。",
+                    "zh-Hant": "不要自責了，I.R.I.S.。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, kein Grund zur Sorge. Ich würde nie Prozessorleistung für Emotionen wie Reue verschwenden. Wie auch immer, prüfe dein Terminal, Lumi scheint dir eine wichtige Nachricht geschickt zu haben.",
+                "ko": "아이고, 걱정하지 않으셔도 돼요. 전 이런 감정에 연산 자원을 낭비하지 않으니까요. 자, 어서 아카데미내 단말기를 확인해 보세요. 루미가 학생에게 아주 중요한 메시지를 보냈을 거예요",
+                "th": "แต่ว่าไม่ต้องห่วงนะ ฉันจะไม่เสียพลังประมวลผลไปกับเรื่องแบบนี้หรอก เอาล่ะ รีบตรวจสอบเทอร์มินัลสถาบันเถอะ เหมือนว่า Lumi จะส่งข้อความสำคัญให้คุณนะ",
+                "zh-Hans": "啊呀，倒也不必担心，我可不会在这种情绪上浪费算力。好啦，快查看一下校内终端吧，灯灯似乎给你发了条重要的消息哦。",
+                "zh-Hant": "啊呀，倒也不必擔心，我可不會在這種情緒上浪費算力。好啦，快查看一下校內終端吧，燈燈似乎給你發了條重要的消息喔。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit I.R.I.S.",
+        "ko": "I.R.I.S.와 대화하기",
+        "th": "พูดคุยกับ I.R.I.S",
+        "zh-Hans": "与I.R.I.S. 交流",
+        "zh-Hant": "與I.R.I.S. 交流"
+      },
+      "entities": [
+        {
+          "entityId": 152700001,
+          "mapId": 906,
+          "blueprintType": "branch3.0_152_NPCIRIS",
+          "name": "TsEntity_IRIS",
+          "areaId": 36170,
+          "position": {
+            "x": -63987,
+            "y": -537911,
+            "z": 36308
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -83
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_无尽宴会引导任务第一天_IRIS",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Während du das gelesen hast, habe ich mit etwas Rechenleistung deine aktuellen Bedürfnisse analysiert.",
+                "ja": "{PlayerName}さんがメッセージを読んでいる間に、少しリソースを割いて、あなたの「ニーズ」を分析してみました。",
+                "ko": "학생이 메시지를 읽는 동안, 약간의 연산 자원을 사용해서 요구사항을 분석해 봤어요",
+                "th": "ตอนที่คุณอ่านข้อความ ฉันได้ดึงพลังประมวลผลออกมานิดหน่อยเพื่อวิเคราะห์ความต้องการของคุณน่ะ",
+                "zh-Hans": "你读飞讯的时候，我拨了点算力分析了你的需求哦。",
+                "zh-Hant": "你讀飛訊的時候，我撥了點算力分析了你的需求喔。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast mich ertappt. Ich will rausgehen und Spaß haben.",
+                    "ja": "{Male=ああ、どこか遊びに行きたいんだ。;Female=ええ、どこか遊びに行きたいの。}",
+                    "ko": "맞아요, 놀러가고 싶어요",
+                    "th": "ถูกต้อง ฉันอยากไปเที่ยว",
+                    "zh-Hans": "是的，我想去玩。",
+                    "zh-Hant": "是的，我想去玩。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Meine Güte, danke für die Aufrichtigkeit, {PlayerName}. Erlaube mir in diesem Fall, deinen Zeitplan anzupassen. Lass uns sofort gehen.",
+                "ja": "あら、素直ですね。では、私が外出の手配をしておきましょう。今すぐにでも出発できますよ～！",
+                "ko": "어머, {PlayerName} 학생 아주 솔직하시네요. 그렇다면, 제가 일정을 짜드릴테니, 지금 바로 출발하시죠~",
+                "th": "{PlayerName} นี่ตรงไปตรงมาดีจัง ถ้างั้นให้ฉันวางแผนเดินทางให้คุณเอง ออกเดินทางตอนนี้เลย~",
+                "zh-Hans": "啊呀，{PlayerName}同学很坦诚呢，那么，就由我来为你安排出行，现在就出发吧~",
+                "zh-Hant": "啊呀，{PlayerName}同學很坦誠呢，那麼，就由我來為你安排出行，現在就出發吧~"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

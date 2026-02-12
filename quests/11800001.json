@@ -1,0 +1,782 @@
+{
+  "id": 11800001,
+  "key": "割草活动任务前置",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Alloy Schmelze",
+    "en": "Alloy Smelt",
+    "es": "Fundir aleación",
+    "fr": "Alliages spéciaux",
+    "ja": "試作合金",
+    "ko": "합금 샘플",
+    "th": "หลอมโลหะผสม",
+    "zh-Hans": "试冶合金",
+    "zh-Hant": "試冶合金"
+  },
+  "desc": {
+    "de": "Kürzlich ist ein mysteriöser Riss in der Mine aufgetaucht und der Erz-Händler, Shilang, ist von dieser Angelegenheit beunruhigt...",
+    "en": "Recently, a mysterious rift has appeared in the mine, and the ore merchant, Shilang is troubled by this matter...",
+    "es": "Recientemente, una misteriosa grieta ha aparecido en la mina, y el comerciante de minerales, Shilang, está preocupado por este asunto...",
+    "fr": "Dernièrement, une faille mystérieuse est apparue dans la mine, et le marchand de minerais, Shilang, s'en trouve préoccupé…",
+    "ja": "最近鉱山にできた謎の亀裂に、鉱石商人の石琅が悩まされていた……",
+    "ko": "최근 동굴에 신비한 균열이 생겨 광석 상인 석랑이 고민에 빠진 것 같습니다...",
+    "th": "เมื่อไม่นานนี้ เกิดรอยแยกลี้ลับขึ้นในเหมือง ผู้ค้าแร่ ฉือหลางเป็นกังวลเรื่องนี้...",
+    "zh-Hans": "最近在矿洞中出现一个神秘的裂隙，矿石商人石琅正被此事困扰着……",
+    "zh-Hant": "最近在礦洞中出現一個神秘的裂隙，礦石商人石琅正被此事困擾著……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Shilang",
+        "en": "Talk to Shilang",
+        "es": "Habla con Shilang",
+        "fr": "Parler à Shilang",
+        "ja": "石琅と話す",
+        "ko": "석랑과 대화",
+        "th": "คุยกับฉือหลาง",
+        "zh-Hans": "与石琅交谈",
+        "zh-Hant": "與石琅交談"
+      },
+      "entities": [
+        {
+          "entityId": 11800017,
+          "mapId": 8,
+          "blueprintType": "NPC0278",
+          "name": "TsEntity_0278_157_石琅2",
+          "areaId": 1203,
+          "position": {
+            "x": -49500,
+            "y": 170750,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_1.0割草活动",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hmm, ich frage mich, was in dieser Spalte ist... Und warum leuchtet meine Legierung...",
+                "en": "Hmm, I wonder what’s in that crevice... and why does my alloy glow...",
+                "es": "Hmm, me pregunto qué hay en esa grieta... Y por qué mi aleación brilla...",
+                "fr": "Eh, qu'est-ce qui se cache dans cette fissure... Pourquoi mon alliage brille-t-il...",
+                "ja": "あの亀裂に一体何が隠されているのか……僕の合金はなぜ光っているのか……",
+                "ko": "오, 저 균열에는 뭐가 숨어 있는... 내 합금은 또 왜 빛을 뿜어내는 걸까...",
+                "th": "อืม สงสัยจังว่าในรอยแยกนั่นมีอะไร... แล้วทำไมโลหะผสมของฉันถึงเรืองแสง...",
+                "zh-Hans": "诶，那个裂隙里到底藏着什么……我的合金又为什么会发光呢……",
+                "zh-Hant": "欸，那個裂隙裡到底藏著什麼……我的合金又為什麼會發光呢……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann es wirklich nicht herausfinden.",
+                "en": "I really can't seem to figure it out.",
+                "es": "Realmente no puedo entenderlo.",
+                "fr": "Je ne comprends pas, je ne comprends pas.",
+                "ja": "……わからん。",
+                "ko": "이해가 안 되네...",
+                "th": "ฉันคิดไม่ออกจริงๆ",
+                "zh-Hans": "想不明白，想不明白啊。",
+                "zh-Hant": "想不明白，想不明白啊。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Eine Spalte?",
+                    "en": "A crevice?",
+                    "es": "¿Una grieta?",
+                    "fr": "Une fissure ?",
+                    "ja": "亀裂？",
+                    "ko": "균열이요?",
+                    "th": "รอยแยกงั้นเหรอ",
+                    "zh-Hans": "裂隙？",
+                    "zh-Hant": "裂隙？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Was ist los?",
+                    "en": "What's going on?",
+                    "es": "¿Qué está pasando?",
+                    "fr": "Qu'est-ce qui s'est passé ?",
+                    "ja": "何かあった？",
+                    "ko": "무슨 일 있나요?",
+                    "th": "เกิดอะไรขึ้น",
+                    "zh-Hans": "发生什么事了?",
+                    "zh-Hant": "發生什麼事了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hä? Oh, sorry … hab ich dich mit meinem Selbstgeplapper gestört?",
+                "en": "Huh? Excuse me if I'm disturbing you by talking to myself.",
+                "es": "¿Eh? Disculpa si te molesto hablando solo.",
+                "fr": "Ah ? Désolé... Je t'ai dérangé avec mon monologue.",
+                "ja": "ゴホン、すまない、今のは単なる独り言だ。",
+                "ko": "아? 미안해요... 혼잣말이었는데...",
+                "th": "หา ขอโทษด้วยนะถ้าฉันจะรบกวนคุณด้วยการพูดกับตัวเองน่ะ",
+                "zh-Hans": "啊？不好意思……我自言自语打扰到你了。",
+                "zh-Hant": "啊？ 不好意思……我自言自語打擾到你了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine Spalte ist in der Mine unter der Erde aufgetaucht.",
+                "en": "A crevice appeared in the mine underground lately.",
+                "es": "Recientemente, apareció una grieta en la mina subterránea.",
+                "fr": "Récemment, une fissure est apparue dans une mine.",
+                "ja": "最近、鉱山の地下に亀裂ができたのだが……",
+                "ko": "최근 광산 지하에 균열이 생겼어요",
+                "th": "เมื่อเร็วๆ นี้มีรอยแยกปรากฏขึ้นในเหมืองใต้ดิน",
+                "zh-Hans": "最近在矿场地下的矿洞里，出现了一个裂隙。",
+                "zh-Hant": "最近在礦場地下的礦洞裡，出現了一個裂隙。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es sah so aus, als wäre es der Eingang zu einer instabilen Sonoro-Sphäre.",
+                "en": "From the looks of it, it seemed like an entrance to some unstable Sonoro Sphere.",
+                "es": "Por su aspecto, parecía la entrada a una inestable Esfera Sonora.",
+                "fr": "À en juger par son apparence, c'est probablement une entrée vers un champ Sonora instable.",
+                "ja": "どうやら、それが不安定なソノラの入り口になっているみたいなんだ。",
+                "ko": "모양을 보아하니, 아마도 불안정한 「음의 영역」의 입구일 거예요",
+                "th": "จากลักษณะแล้ว มันดูเหมือนทางเข้าไปยังมิติเสียงสะท้อนที่ไม่เสถียร",
+                "zh-Hans": "看那样子，应该是某个不稳定的声之领域的入口。",
+                "zh-Hant": "看那樣子，應該是某個不穩定的聲之領域的入口。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ist es gefährlich?",
+                    "en": "Is it dangerous?",
+                    "es": "¿Es peligroso?",
+                    "fr": "Est-ce dangereux ?",
+                    "ja": "危険なの？",
+                    "ko": "위험한가요?",
+                    "th": "มันอันตรายไหม",
+                    "zh-Hans": "它很危险吗？",
+                    "zh-Hant": "它很危險嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ist jemand verletzt worden?",
+                    "en": "Did anyone get hurt?",
+                    "es": "¿Alguien resultó herido?",
+                    "fr": "Quelqu'un a-t-il été blessé ?",
+                    "ja": "怪我人は出てない？",
+                    "ko": "다친 사람이라도 있나요?",
+                    "th": "มีใครได้รับบาดเจ็บบ้างไหม",
+                    "zh-Hans": "有人因此受伤吗？",
+                    "zh-Hant": "有人因此受傷嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist es nicht, obwohl...",
+                "en": "It isn't, though...",
+                "es": "No, en realidad...",
+                "fr": "Non, pas vraiment...",
+                "ja": "恐らく大丈夫。",
+                "ko": "그건 아니에요...",
+                "th": "แต่มันไม่ใช่...",
+                "zh-Hans": "那倒不是……",
+                "zh-Hant": "那倒不是……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nicht wirklich.",
+                "en": "Not really.",
+                "es": "No realmente.",
+                "fr": "Non, pas vraiment.",
+                "ja": "今のところ大丈夫だ。",
+                "ko": "아뇨, 다친 사람은 없어요",
+                "th": "ไม่มีอะไร",
+                "zh-Hans": "那倒没有。",
+                "zh-Hant": "那倒沒有。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings haben mir mehrere Bergarbeiter, die mit meinem Erzladen zusammenarbeiten, erzählt, dass sie aufgrund dieser Spalte Angst haben und in letzter Zeit nicht mehr in die Mine gehen wollen.",
+                "en": "However, several miners who work with my ore shop told me that with this crevice, they are afraid and unwilling to go down the mine recently.",
+                "es": "Sin embargo, varios mineros que trabajan en mi tienda de minerales me dijeron que, con esta grieta, tienen miedo y no quieren bajar a la mina recientemente.",
+                "fr": "Mais, quelques mineurs qui travaillent avec ma boutique de minéraux m'ont dit qu'à cause de cette fissure, ils n'osent plus entrer dans la mine.",
+                "ja": "ただ、それを見たここの作業員たちが、もう怖くて働けないと言い出した……",
+                "ko": "하지만, 제 광석 가게와 협력한 몇몇 광부들이 말하길, 균열이 생겨서 최근에 감히 동굴에 들어갈 엄두를 내지 못한다고 해요",
+                "th": "อย่างไรก็ตาม คนงานเหมืองหลายคนที่ทำงานกับร้านแร่ของฉันบอกฉันว่า รอยแยกเมื่อเร็วๆ นี้ทำให้พวกเขากลัวและไม่อยากจะลงไปในเหมือง",
+                "zh-Hans": "但是吧，几个和我的矿石店合作的矿工跟我说，有了这个裂隙，他们最近都不敢下矿洞了。",
+                "zh-Hant": "但是吧，幾個和我的礦石店合作的礦工跟我說，有了這個裂隙，他們最近都不敢下礦洞了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie können leicht andere Jobs finden, aber ohne ihre Lieferungen würde mein Laden bankrott gehen.",
+                "en": "They can easily find other jobs, but without their supply, my shop would go bankrupt.",
+                "es": "Ellos pueden encontrar fácilmente otros trabajos, pero sin su suministro, mi tienda quebraría.",
+                "fr": "Ils peuvent trouver d'autres travaux pour survivre, mais ma boutique de minéraux doit fermer sans leur approvisionnement.",
+                "ja": "彼らに生計を立てる方法はあれど、こっちは彼らがいなきゃ商売あがったりだ。",
+                "ko": "광부들은 다른 일을 찾아서 생계를 유지할 수 있지만, 제 광석 가게는 공급원이 없어져서, 생계를 유지하기 힘들어졌어요",
+                "th": "พวกเขาสามารถหางานอื่นทำได้อย่างง่ายดาย แต่ถ้าไม่มีเสบียงจากพวกเขา ร้านของฉันก็คงจะล้มละลาย",
+                "zh-Hans": "他们可以找些别的活干维生，但我的矿石店没了他们的货源，就只能喝西北风啊……",
+                "zh-Hant": "他們可以找些別的活幹維生，但我的礦石店沒了他們的貨源，就只能喝西北風啊……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kannst du nicht jemand anderen für deinen Vorrat finden?",
+                    "en": "Can't you find someone else for your stock?",
+                    "es": "¿No puedes encontrar a alguien más para tu stock?",
+                    "fr": "Ne peux-tu pas te fournir ailleurs ?",
+                    "ja": "他に仕入れ先は？",
+                    "ko": "다른 사람을 찾아서 공급받으면 안 되나요?",
+                    "th": "ท่านหาคนอื่นมาซื้อต่อท่านไม่ได้เหรอ",
+                    "zh-Hans": "不能找其他人进货吗？",
+                    "zh-Hant": "不能找其他人進貨嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe etwas Erz bei mir.",
+                    "en": "I have some ore with me.",
+                    "es": "Tengo algo de mineral conmigo.",
+                    "fr": "J'ai quelques minéraux sur moi.",
+                    "ja": "鉱石なら持ってる。",
+                    "ko": "저에게 광석이 조금 있어요",
+                    "th": "ฉันมีแร่บางส่วนอยู่กับฉัน",
+                    "zh-Hans": "我身上带了些矿石。",
+                    "zh-Hant": "我身上帶了些礦石。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist ein kleines Geschäft. Wenn ich in diesem Spiel bleiben will, muss ich einen Preiskampf führen.",
+                "en": "It's a small business. If I want to stay in this game, I have to fight a price war.",
+                "es": "Es un pequeño negocio. Si quiero mantenerme en este juego, tengo que luchar en una guerra de precios.",
+                "fr": "Avec mon petit commerce, je ne peux survivre qu'en faisant la guerre des prix.",
+                "ja": "うちみたいな零細企業が生き残ってるのは価格競争のおかげ……",
+                "ko": "저 같은 소자본 경영은 입에 풀칠을 하려면 가격 경쟁을 할 수밖에 없어요",
+                "th": "มันเป็นธุรกิจเล็กๆ ถ้าฉันอยากจะอยู่ในเกมนี้ต่อไป ฉันก็ต้องสู้สงครามราคา",
+                "zh-Hans": "我这种小本经营，要想糊口只能打价格战。",
+                "zh-Hant": "我這種小本經營，要想糊口只能打價格戰。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und wenn ich diese alten Lieferanten, die niedrigere Preise anbieten, verliere, kann ich einfach nicht mit diesen Monopolen wie der Huaipu Bergbaufirma konkurrieren...",
+                "en": "And if I lose these old suppliers who offer lower prices, I simply cannot compete with those monopolies like Huaipu Mining Firm...",
+                "es": "Y si pierdo a estos viejos proveedores que ofrecen precios más bajos, simplemente no puedo competir con esos monopolios como la Empresa Minera Huaipu...",
+                "fr": "Sans ces clients fidèles pour acheter à un prix préférentiel, je ne peux pas du tout concurrencer ces vieilles boutiques comme Huai Pu...",
+                "ja": "つまり、付き合いの長い取引相手じゃないと、<ano=かいぼく>懐璞</ano>鉱業に勝てるわけがない。",
+                "ko": "단골 공급원을 확보해 우대 가격으로 물건을 들여오지 않았다면, 저는 「화복 광석」 같은 붙박이 가게와 경쟁할 수 없었을 거예요",
+                "th": "และถ้าฉันเสียซัพพลายเออร์เก่าๆ ที่เสนอราคาที่ต่ำกว่าไป ฉันก็ไม่สามารถแข่งขันกับพวกบริษัทผูกขาดอย่างบริษัทเหมืองแร่หวยผู่ได้เลย...",
+                "zh-Hans": "不找这些老主顾用优惠价进货，我根本不可能竞争得过怀璞矿行这些老店……",
+                "zh-Hant": "不找這些老主顧用優惠價進貨，我根本不可能競爭得過懷璞礦行這些老店……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass mich sehen... nun, ich schätze deine Freundlichkeit, aber du hast nicht genug, um mich zu versorgen. Also behalte es für dich.",
+                "en": "Let me see... well, I appreciate your kindness, but you don't have enough to keep me stocked. So keep it for yourself.",
+                "es": "Déjame ver... bueno, agradezco tu amabilidad, pero no tienes suficiente para mantenerme abastecido. Así que quédatelo para ti.",
+                "fr": "Laisse-moi voir... Eh bien, j'apprécie ton geste, mais ces quelques minéraux ne suffiront pas pour maintenir mon commerce. Tu ferais mieux de les garder pour toi.",
+                "ja": "どれどれ……あー、いや、気持ちだけいただくとしよう……",
+                "ko": "어디 보자... 에휴, 호의만 받을게요. 그 물건만으로는 경영을 유지하기엔 충분하지 않아요. 가지고 계시다 본인을 위해 쓰세요",
+                "th": "ขอฉันดูหน่อย... เอ่อ ฉันซาบซึ้งในความมีน้ำใจของท่านนะ แต่ท่านเองก็ยังขาดแคลน ท่านจงเก็บไว้เองเถอะ",
+                "zh-Hans": "我看看……唉，你的好意我心领了，但你这点货根本不够我维持经营，你还是留着自己用吧。",
+                "zh-Hant": "我看看……唉，你的好意我心領了，但你這點貨根本不夠我維持經營，你還是留著自己用吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt müssen wir herausfinden, was in dieser Spalte ist...",
+                "en": "At this point, we have to figure out what’s inside the crevice...",
+                "es": "En este punto, tenemos que averiguar qué hay dentro de la grieta...",
+                "fr": "À ce stade, je dois comprendre la situation de cette fissure...",
+                "ja": "どうやら亀裂を調査する他に方法はないらしい。",
+                "ko": "일이 이미 이렇게 된 이상, 아무래도 저 균열을 알아봐야 할 것 같아요...",
+                "th": "ตอนนี้เราต้องรู้ให้ได้ว่า ภายในรอยแยกนั้นมีอะไรอยู่...",
+                "zh-Hans": "事到如今，还是得搞清楚那个裂隙的情况才行……",
+                "zh-Hant": "事到如今，還是得搞清楚那個裂隙的情况才行……"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Solange wir bestätigen können, dass es nicht gefährlich ist, kann ich die Bergarbeiter überzeugen, weiter mit mir zu arbeiten.",
+                "en": "As long as we confirm that it is not dangerous, I can convince the miners to keep working with me.",
+                "es": "Mientras confirmemos que no es peligroso, puedo convencer a los mineros para que sigan trabajando conmigo.",
+                "fr": "Tant que je peux confirmer qu'elle n'est pas dangereuse, je pourrai convaincre ces mineurs de continuer à travailler avec moi.",
+                "ja": "きっと危険がないことが確認できれば、作業員たちも説得できるだろう。",
+                "ko": "위험하지 않다는 것만 확인할 수 있다면, 광부들을 설득해서 계속 같이 일할 수 있을 거예요",
+                "th": "ตราบใดที่เราได้รับการยืนยันว่ามันไม่เป็นอันตราย ฉันสามารถโน้มน้าวคนงานเหมืองให้ทำงานกับฉันต่อไปได้",
+                "zh-Hans": "只要能确认它没有危险，我就能说服那些矿工继续跟我合作了。",
+                "zh-Hant": "只要能確認它沒有危險，我就能說服那些礦工繼續跟我合作了。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann dir helfen.",
+                    "en": "I can help you.",
+                    "es": "Puedo ayudarte.",
+                    "fr": "Je peux t'aider.",
+                    "ja": "手伝うよ。",
+                    "ko": "제가 도와줄게요",
+                    "th": "ฉันสามารถช่วยท่านได้",
+                    "zh-Hans": "我可以帮你。",
+                    "zh-Hant": "我可以幫你。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich kenne mich mit Sonoro-Sphären aus.",
+                    "en": "I am familiar with Sonoro Spheres.",
+                    "es": "Estoy familiarizado con las Esferas Sonoras.",
+                    "fr": "Je connais bien le domaine du son.",
+                    "ja": "ソノラには多少自信がある。",
+                    "ko": "전 음의 영역 분야에 대해 잘 알아요",
+                    "th": "ฉันคุ้นเคยกับมิติเสียงสะท้อน",
+                    "zh-Hans": "我对声之领域很熟。",
+                    "zh-Hant": "我對聲之領域很熟。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich kann nicht glauben, dass es jemanden gibt, der so freundlich ist wie du...",
+                "en": "I can't believe there is someone as friendly as you...",
+                "es": "No puedo creer que haya alguien tan amigable como tú...",
+                "fr": "Je ne m'attendais pas à ce qu'il y ait des gens comme toi qui aiment aider...",
+                "ja": "こんなご時世に、こんなお人好しがいるとは……",
+                "ko": "아직도 이렇게 남을 도우려는 사람이 있다니...",
+                "th": "ฉันไม่เชื่อว่าจะมีใครเป็นมิตรที่ดีเช่นเดียวกับท่าน...",
+                "zh-Hans": "竟然还有你这么乐于助人的人……",
+                "zh-Hant": "竟然還有你這麼樂於助人的人……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du die Situation in der Spalte bestätigen und mir helfen kannst, meinen Laden wieder in Gang zu bringen, werde ich dir sicherlich mit einer großen Geldsumme danken!",
+                "en": "If you can confirm the situation inside the crevice and help me get my shop back up and running, I'll be sure to thank you with a large sum of money!",
+                "es": "Si puedes confirmar la situación dentro de la grieta y ayudarme a poner mi tienda en marcha de nuevo, ¡seguro que te agradeceré con una gran suma de dinero!",
+                "fr": "Si tu peux confirmer la situation de cette fissure et aider ma boutique à reprendre ses activités, je te remercierai généreusement !",
+                "ja": "亀裂の状況が確認できて、店も元通りになったら、報酬を渡すよ。",
+                "ko": "만약 균열의 상황을 확인하고 제 가게의 경영이 재개될 수 있도록 도와주신다면, 제가 반드시 그에 마땅한 보답을 해드릴게요",
+                "th": "หากท่านสามารถยืนยันสถานการณ์ภายในรอยแยกและช่วยให้ร้านของฉันกลับมาดำเนินการได้อีกครั้ง ฉันจะตอบแทนท่านด้วยเงินก้อนโตอย่างแน่นอน!",
+                "zh-Hans": "如果你能确认那个裂隙的情况，帮我的小店恢复经营，我一定会重金感谢你的！",
+                "zh-Hant": "如果你能確認那個裂隙的情况，幫我的小店恢復經營，我一定會重金感謝你的！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es ist in Ordnung. Ich bin nicht wegen des Geldes hier.",
+                    "en": "It's okay. I didn't come here for the money.",
+                    "es": "Está bien. No vine aquí por el dinero.",
+                    "fr": "Ne vous inquiétez pas, je ne vous ai pas aidé pour l'argent.",
+                    "ja": "別にお金目当てじゃ……",
+                    "ko": "괜찮아요. 돈 때문이 아니에요",
+                    "th": "ไม่เป็นไร ฉันไม่ได้มาที่นี่เพื่อเงิน",
+                    "zh-Hans": "没事，我不是为了钱帮你的。",
+                    "zh-Hant": "沒事，我不是為了錢幫你的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Bitte zahle mir viel Geld.",
+                    "en": "Please pay me a lot of money.",
+                    "es": "Por favor, págame mucho dinero.",
+                    "fr": "S'il vous plaît, donnez-nous beaucoup d'argent.",
+                    "ja": "働いた分はしっかり頂戴する。",
+                    "ko": "많이 주셔야 해요",
+                    "th": "โปรดจ่ายเงินก้อนโตให้กับฉัน",
+                    "zh-Hans": "请务必给我重金。",
+                    "zh-Hant": "請務必給我重金。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du bist eine gute Person, aber der Ruf eines Geschäftsmannes steht auf dem Spiel. Da ich ein Versprechen gegeben habe, muss ich dir die Bezahlung geben.",
+                "en": "You're a good person, but a businessman's reputation is on the line. Since I made a promise, I have to give you the payment.",
+                "es": "Eres una buena persona, pero la reputación de un empresario está en juego. Como hice una promesa, tengo que darte el pago.",
+                "fr": "Tu es vraiment une personne généreuse. Mais comme je l'ai dit, je te le donnerai, c'est une question de crédibilité pour un commerçant.",
+                "ja": "正義感の強い奴だな。でも、商売人に二言は許されない。報酬は必ず用意する。",
+                "ko": "정말 감사해요. 이렇게 이타심 강한 사람이 있다니... 꼭 드릴게요. 이건 상인의 신용과 관련된 문제거든요",
+                "th": "ท่านเป็นคนดี แต่ชื่อเสียงของนักธุรกิจกำลังตกอยู่ในอันตราย ในเมื่อฉันสัญญาไว้แล้ว ฉันก็ต้องจ่ายเงินให้กับท่าน",
+                "zh-Hans": "少侠真是有大义之人。但我既然说了，就一定会给你，这事关商人的诚信问题。",
+                "zh-Hant": "少俠真是有大義之人。 但我既然說了，就一定會給你，這事關商人的誠信問題。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich, mein Wort ist mein Versprechen.",
+                "en": "Of course, my word is my bond.",
+                "es": "Por supuesto, mi palabra es mi promesa.",
+                "fr": "Bien sûr, une fois que j'ai dit quelque chose, je ne peux pas revenir en arrière.",
+                "ja": "もちろんだ。二言はない。",
+                "ko": "물론이죠, 저는 한번 뱉은 말은 주워 담지 않아요",
+                "th": "แน่นอนว่า คำพูดของฉันคือข้อผูกมัดของฉัน",
+                "zh-Hans": "当然，我一言既出，驷马难追。",
+                "zh-Hant": "當然，我一言既出，駟馬難追。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bevor du gehst, nimm bitte diese \"Probelegierung\" mit dir.",
+                "en": "Before you go, please bring this \"Sample Alloy\" with you.",
+                "es": "Antes de que te vayas, por favor, lleva contigo esta \"Aleación de Muestra\".",
+                "fr": "Avant que tu ne partes, tu peux prendre cet « Alliage exemplaire ».",
+                "ja": "それと、この「試作合金」を持っていくといい。",
+                "ko": "아 가시기 전에, 이 「합금 샘플」을 가지고 가세요",
+                "th": "ก่อนท่านจะไป โปรดนำ \"ตัวอย่างโลหะผสม\" นี้มาด้วย",
+                "zh-Hans": "在你过去之前，可以带上这个「试冶合金」。",
+                "zh-Hant": "在你過去之前，可以帶上這個「試冶合金」。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist das?",
+                    "en": "What's this?",
+                    "es": "¿Qué es esto?",
+                    "fr": "Qu'est-ce que c'est ?",
+                    "ja": "これは……？",
+                    "ko": "「합금 감지기」가 뭔가요?",
+                    "th": "นี่อะไรเหรอ",
+                    "zh-Hans": "这是什么？",
+                    "zh-Hant": "這是什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist eine Legierung, die ich selbst geschmolzen habe. Die Formel ist noch in Überprüfung...",
+                "en": "It's an alloy I smelted myself. The formula is still under review...",
+                "es": "Es una aleación que fundí yo mismo. La fórmula todavía está en revisión...",
+                "fr": "C'est un alliage que j'ai forgé moi-même, sa formule est encore en cours d'ajustement...",
+                "ja": "これは僕が製錬した合金。まだ調整中だけど。",
+                "ko": "이건 제가 직접 제련한 합금으로 만든 거예요. 아직 완벽하지는 않지만…",
+                "th": "มันเป็นโลหะผสมที่ฉันหลอมขึ้นเอง สูตรในการหลอมยังอยู่ระหว่างการพิจารณา...",
+                "zh-Hans": "这是我亲手冶炼的合金，它的配方目前还在调整中……",
+                "zh-Hant": "這是我親手冶煉的合金，它的配方現時還在調整中……"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber mein Ziel ist sehr klar: Ich werde das leistungsfähigste Legierungsmaterial der Welt herstellen!",
+                "en": "But my goal is very clear: I will make the best-performing alloy material in the world!",
+                "es": "Pero mi objetivo es muy claro: ¡Haré el material de aleación de mejor rendimiento en el mundo!",
+                "fr": "Mais mon objectif est clair, je veux créer le meilleur alliage du monde !",
+                "ja": "僕は最も優れた合金を生み出したいんだ！",
+                "ko": "저의 목표는 명확해요. 세계에서 가장 성능이 좋은 합금을 만들 거예요",
+                "th": "เป้าหมายของฉันเป็นสิ่งที่ชัดเจน: ฉันจะผลิตวัสดุโลหะผสมที่มีประสิทธิภาพดีที่สุดในโลก!",
+                "zh-Hans": "但我的目标很明确，我要做出世界上性能最好的合金材料！",
+                "zh-Hant": "但我的目標很明確，我要做出世界上效能最好的合金材料！"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zurück zum Punkt... Ich habe festgestellt, dass meine Legierung leuchtet, wenn sie sich der Spalte nähert.",
+                "en": "Back to the point... I found that my alloy glows when it gets close to the crevice.",
+                "es": "Volviendo al tema... descubrí que mi aleación brilla cuando se acerca a la grieta.",
+                "fr": "Pour revenir à notre sujet... J'ai remarqué que mon alliage brille quand il est près de cette fissure.",
+                "ja": "話を戻そう……この合金、あの亀裂に近づけると何故か光るんだ。",
+                "ko": "본론으로 돌아가서... 합금 감지기가 균열에 닿으면 빛이 난다는 걸 알게 됐어요",
+                "th": "กลับมาที่ประเด็นเดิม... ฉันพบว่าโลหะผสมของฉันเรืองแสงเมื่อเข้าใกล้รอยแยก",
+                "zh-Hans": "说回正题……我发现我的合金一靠近那个裂隙，就会发光。",
+                "zh-Hant": "說回正題……我發現我的合金一靠近那個裂隙，就會發光。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe nicht ganz, wie das funktioniert, aber ich habe das Gefühl, dass es dir helfen könnte.",
+                "en": "I don't quite understand how it works, but I have a hunch it might help you.",
+                "es": "No entiendo muy bien cómo funciona, pero tengo la corazonada de que podría ayudarte.",
+                "fr": "Je ne comprends pas encore le principe, mais j'ai le pressentiment qu'il pourrait t'aider.",
+                "ja": "原理はまだよくわからないが、何かの役に立つかもしれない。",
+                "ko": "그 원리는 아직 잘 이해하지 못했지만, 도움이 될 것 같다는 예감이 들어요",
+                "th": "ฉันไม่ค่อยเข้าใจว่ามันทำงานยังไง แต่ฉันคิดว่ามันอาจช่วยท่านได้",
+                "zh-Hans": "这其中的原理我还没太明白，但我有预感，它说不定可以帮上你的忙。",
+                "zh-Hant": "這其中的原理我還沒太明白，但我有預感，它說不定可以幫上你的忙。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Dann nehme ich es.",
+                    "en": "Then I'll take it.",
+                    "es": "Entonces la tomaré.",
+                    "fr": "Oui, j'en prendrai alors.",
+                    "ja": "わかった。ありがとう。",
+                    "ko": "알겠어요. 그럼 받을게요",
+                    "th": "ฉันจะรับมันเอาไว้",
+                    "zh-Hans": "好，那我就收下了。",
+                    "zh-Hant": "好，那我就收下了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Richtig. Mach weiter, ich warte auf deine guten Nachrichten!",
+                "en": "Right. Go on, then. I’ll wait for your good news!",
+                "es": "Correcto. Adelante, entonces. ¡Esperaré tus buenas noticias!",
+                "fr": "Oui, vas-y, j'attends de tes nouvelles !",
+                "ja": "ああ。朗報を待っているぞ。",
+                "ko": "네, 다녀오세요. 좋은 소식 기다리고 있을게요",
+                "th": "เอาล่ะ ไปกันต่อเถอะ ฉันจะรอฟังข่าวดีของท่านนะ!",
+                "zh-Hans": "嗯，去吧，我等你的好消息！",
+                "zh-Hant": "嗯，去吧，我等你的好消息！"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde den Riss und untersuche",
+        "en": "Find the rift and investigate",
+        "es": "Encuentra la grieta e investiga",
+        "fr": "Se rendre à la faille pour enquêter",
+        "ja": "亀裂を調べる",
+        "ko": "균열이 있는 곳으로 이동하고 조사하기",
+        "th": "ค้นหารอยแยกและตรวจสอบ",
+        "zh-Hans": "前往裂隙调查",
+        "zh-Hant": "前往裂隙調查"
+      },
+      "entities": [
+        {
+          "entityId": 11800017,
+          "mapId": 8,
+          "blueprintType": "NPC0278",
+          "name": "TsEntity_0278_157_石琅2",
+          "areaId": 1203,
+          "position": {
+            "x": -49500,
+            "y": 170750,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

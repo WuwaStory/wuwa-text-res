@@ -1,0 +1,1592 @@
+{
+  "id": 880900000,
+  "key": "转盘活动道引任务",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo-Kampagne, Start!",
+    "en": "Lollo Campaign, Start!",
+    "es": "¡Campaña Lollo, comienza!",
+    "fr": "Projet Loulou, commencez !",
+    "ja": "ブブ企画、スタート！",
+    "ko": "무무 기획 스타트!",
+    "th": "แคมเปญลอลโล่ เริ่มได้!",
+    "zh-Hans": "呜呜企划，启动！",
+    "zh-Hant": "嗚嗚企劃，啟動！"
+  },
+  "desc": {
+    "de": "Maji, Betriebsleiter bei Lollo-Logistik in Jinzhou, sucht Assistenten für sein neues Geschäftsvorhaben. Schaue bei Interesse vorbei.",
+    "en": "Maji, the head of operations at Lollo Logistics in Jinzhou, is seeking assistants for his new business venture. Swing by if you're interested.",
+    "es": "Maji, el jefe de operaciones en Logística Lollo en Jinzhou, está buscando asistentes para su nuevo emprendimiento. Pasa por allí si te interesa.",
+    "fr": "Maji, chef des opérations chez Loulou Logistique à Jinzhou, cherche des assistants pour sa nouvelle entreprise. Passez le voir si vous êtes intéressé.",
+    "ja": "ブブ物流今州支店の担当者・馬計が、新規事業の試験運用のためのアシスタントを募集しているようだ。時間があれば、行ってみよう。",
+    "ko": "금주 무무 물류점 관리원 마현이 자신의 창업 시범 기획을 위해 조수를 모집하고 있습니다. 시간나면 가서 확인해보세요",
+    "th": "Maji ผู้เป็นหัวหน้าของลอลโล่โลจิสติกส์ในจินโจวกำลังมองหาผู้ช่วยคนใหม่ให้กับธุรกิจเปิดใหม่ ลองแวะไปดูถ้าคุณสนใจ",
+    "zh-Hans": "今州呜呜物流点的管理员马计，正在为自己的创业试点企划招募助理，有时间的话去看看吧。",
+    "zh-Hant": "今州嗚嗚物流點的管理員馬計，正在為自己的創業實驗企劃招募助理，有時間的話去看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Maji von Lollo-Logistik nach seinen Anforderungen",
+        "en": "Ask Lollo Logistic's Maji about what he needs",
+        "es": "Pregunta a Maji de Logística Lollo sobre lo que necesita.",
+        "fr": "Demandez à Maji de Loulou Logistique ce dont il a besoin",
+        "ja": "ブブ物流の馬計に要件を聞く",
+        "ko": "무무 물류점의 마현을 찾아 수요 파악하기",
+        "th": "ถาม Maji จากลอลโล่โลจิสติกส์ว่าเขาต้องการอะไร",
+        "zh-Hans": "找呜呜物流点的马计了解需求",
+        "zh-Hant": "找嗚嗚物流點的馬計瞭解需求"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Verstehe, das ist eine Wachstumskurve, auf die Lollo-Logistik nicht genügend Ressourcen verwendet hat ...",
+                "en": "I see, this is a growth curve that Lollo Logistics has not spent enough bandwidth on...",
+                "es": "Ya veo. Se trata de una curva de crecimiento en la que Logística Lollo no se gastó suficiente ancho de banda...",
+                "fr": "Je vois, c'est une courbe de croissance sur laquelle Loulou Logistique n'a pas consacré assez de bande passante...",
+                "ja": "そういうことですね……ええ、これは間違いなく、ブブ物流が気づいていない戦略手法……。",
+                "ko": "(단말기 통신 중) 알겠습니다. 이건 확실히 무무물류에서는 한 번도 포커스를 맞춘 적이 없는 부분이긴 하네요...",
+                "th": "ผมเข้าใจแล้ว นี่คือสิ่งที่ช่วยให้ลอลโล่โลจิสติกส์เติบโตได้ แต่ไม่ได้ใส่ใจกับมันมากพอ...",
+                "zh-Hans": "（终端通话中）明白，这确实是呜呜物流没有聚焦过的打法……",
+                "zh-Hant": "（終端通話中）明白，這確實是嗚嗚物流沒有聚焦過的打法……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unser Marktansatz? Das ist ... das ist ...",
+                "en": "Our market approach? That's... that's...",
+                "es": "¿Nuestra estrategia de mercado? Es... Es...",
+                "fr": "Notre approche ? C'est - c'est…",
+                "ja": "トップダウンデザイン、でしょうか？",
+                "ko": "전반적인 기획이요?",
+                "th": "แนวทางการตลาดของเราเหรอ? นั่น... นั่น...",
+                "zh-Hans": "顶层设计？",
+                "zh-Hant": "頂層設計？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähm ... Lass mich nachdenken ... Ich meine, lass mich das für ein besseres Verständnis strukturieren!",
+                "en": "Umm... Lemme think... I mean, let me streamline this for better comprehension!",
+                "es": "Mmm... Déjame pensar... ¡Mejor dicho, déjame simplificarlo para que sea más fácil de entender!",
+                "fr": "Euh... Un moment, s'il vous plaît... non, je veux dire, laissez-moi le formuler mieux pour que vous compreniez.",
+                "ja": "待ってくださいよ……あれは確か……いや、違った、ひとまず頭の中を整理させてください……。",
+                "ko": "윽... 생각 좀 해볼게요... 아, 아니요. 정리만 좀 하면...",
+                "th": "อืม... ขอผมคิดก่อน... ผมหมายถึง ขอผมสรุปแบบสั้นๆ เพื่อที่จะได้เข้าใจง่ายขึ้น!",
+                "zh-Hans": "呃……我回忆一下……不、不是，我是说请容我梳理一下！",
+                "zh-Hant": "呃…… 我回憶一下…… 不、不是，我是說請容我梳理一下……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Flüstern) Ich habe gehört, ihr sucht einen Assistenten?",
+                    "en": "(Whisper) I heard you were looking for an assistant?",
+                    "es": "(Susurrando) He oído que estáis buscando un asistente.",
+                    "fr": "(Chuchotement) J'ai entendu dire que vous cherchiez un assistant ?",
+                    "ja": "（小声）アシスタント募集中って聞いたんだけど。",
+                    "ko": "(작은 목소리로) 조수를 뽑는다고 들었는데요?",
+                    "th": "(กระซิบ) ฉันได้ยินมาว่าคุณกำลังหาผู้ช่วยอยู่ใช่ไหม?",
+                    "zh-Hans": "（小声）听说你们在招聘助理？",
+                    "zh-Hant": "（小聲）聽說你們在招聘助理？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "(Flüstern) Ja. Danke, dass du vorbeigekommen bist. Einen Moment bitte. Entschuldigung.",
+                "en": "(Whisper) Yes, we are. Thank you for dropping by. Please wait a moment. I'm sorry.",
+                "es": "(Susurrando) Sí, así es. Gracias por pasarte por aquí. Espera un momento, por favor. Lo siento.",
+                "fr": "(Chuchotement) Oui, c'est le cas. Merci de votre visite. Veuillez patienter un instant. Merci !",
+                "ja": "（小声）そうそう！わざわざ来てくれてありがとう、ちょっと待っててね。",
+                "ko": "(작은 목소리로) 맞아요, 맞아요. 죄송하지만 잠시만 기다려 주세요. 감사합니다",
+                "th": "(กระซิบ) ใช่แล้ว ขอบคุณที่แวะมานะ รอสักครู่นะ ขออภัยด้วย",
+                "zh-Hans": "（小声）对的对的，劳烦你跑一趟，稍等一下哈，辛苦辛苦。",
+                "zh-Hant": "（小聲）對的對的，勞煩你跑一趟，稍等一下哈，辛苦辛苦。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Manager atmet tief durch.",
+                "en": "The manager takes a deep breath.",
+                "es": "El administrador respira profundamente.",
+                "fr": "Le gérant prend une grande respiration.",
+                "ja": "【馬計は深々と息を吸った】",
+                "ko": "[관리원이 한번 크게 숨을 들이마셨다]",
+                "th": "ผู้จัดการสูดหายใจเข้าลึกๆ",
+                "zh-Hans": "【管理员深吸了一口气】",
+                "zh-Hant": "【管理員深吸了一口氣】"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unser hochmoderner Marktansatz beinhaltet eine präzise Zuordnung der Ressourcen. Indem wir unsere Nutzer bis an die Grenze des Ereignishorizonts durch eine unvergleichliche Differenzierung bringen, sind wir bereit, das Branchenbild zu revolutionieren ...",
+                "en": "Our cutting-edge market approach entails a laser-focused allocation of resources. By propelling our users to the brink of the event horizon through unparalleled differentiation, we are poised to revolutionize the industry landscape...",
+                "es": "Nuestra estrategia de mercado vanguardista conlleva una distribución de recursos medida al milímetro. Estamos decididos a revolucionar el campo industrial al impulsar a nuestros usuarios al borde del horizonte de eventos mediante una diferenciación sin igual...",
+                "fr": "Notre stratégie de marketing consiste à allouer toutes nos ressources au marché de niche de la perception de l'utilisateur. Nous pousserons nos utilisateurs à l'horizon des événements avec une différenciation, nous sommes sur le point de révolutionner le paysage industriel...",
+                "ja": "我々の業務におけるトップダウンデザインは、ユーザー感度のセグメントに焦点を当て、差別化を図り、ディテールを充実させることで転換点を迎える──",
+                "ko": "저희의 이번 업무의 전반적인 기획은 사용자의 인식적 체험에 초점을 맞춰, 차별화와 세분화를 통해 화제를 끌어내서——",
+                "th": "แนวทางการตลาดที่ล้ำสมัยของเรามุ่งเน้นไปที่การจัดสรรทรัพยากรอย่างแม่นยำ โดยการผลักดันผู้ใช้ของเราให้เติบโตได้อย่างเต็มศักยภาพด้วยการสร้างความแตกต่างที่ไม่มีใครเทียบได้ เราพร้อมที่จะปฏิวัติฉากทัศน์ของอุตสาหกรรมนี้...",
+                "zh-Hans": "我们这项业务的顶层设计，是聚焦用户感知赛道，通过差异化和颗粒度达到引爆点——",
+                "zh-Hant": "我們這項業務的頂層設計，是聚焦用戶感知賽道，透過差異化和顆粒度達到引爆點——"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "W-Wenn wir voranschreiten, wird diese Initiative das Wissen der Nutzer erweitern und sie mit Lollos Geschäft in Einklang bringen, wodurch Synergien bei der Wertschöpfung optimiert werden!",
+                "en": "M-Moving ahead, this initiative will enhance user knowledge and align them with Lollo's business, optimizing value delivery synergies!",
+                "es": "¡C-con vistas al futuro, esta iniciativa aumentará el conocimiento de los usuarios y los alineará con el negocio de Lollo, lo que optimizará las sinergias de suministro de valor!",
+                "fr": "Aller, à l'avenir, cela éduquera nos utilisateurs et les familiarisera mieux avec l'entreprise de Loulou, créant encore plus de valeurs livrables !",
+                "ja": "ち……長期的な視点で考えれば、ブブ物流における業務のエコシステムのレイアウトを構築することで、付加価値を創造し続けることができるんです！",
+                "ko": "머... 멀리 본다면, 무무물류의 업무를 위해 산업의 생태적 배치를 촉진하고, 끊임없이 새로운 부가 가치를 창조해 내는 것입니다",
+                "th": "ต-ต่อไปในอนาคต โครงการริเริ่มนี้จะช่วยเพิ่มพูนความรู้ของผู้ใช้และปรับให้สอดคล้องกับธุรกิจของลอลโล่ เพื่อเพิ่มประสิทธิภาพในการส่งมอบคุณค่า!",
+                "zh-Hans": "长、长远来看，是在为呜呜物流提振产业生态布局，不断为客户创造新的交附价值！",
+                "zh-Hant": "長……. 長遠來看，是在為嗚嗚物流的業務提振產業的生態佈局，不斷創造新的交附價值！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja, ich bin Maji, Mitarbeiternummer 2404150. Ich arbeite seit drei Jahren beim Lollo-Logistikzentrum in Jinzhou.",
+                "en": "Yes, I am Maji, staff number 2404150. I have worked at the Jinzhou Lollo Logistics Station for three years.",
+                "es": "Sí, soy Maji. Mi número de empleado es 2404150. Llevo tres años trabajando en la Estación de Logística Lollo de Jinzhou.",
+                "fr": "Oui, je suis Maji, numéro de personnel 2404150. Je travaille à la station de logistique de Loulou à Jinzhou depuis trois ans.",
+                "ja": "はい、私は物流支店長の馬計と申します。社員番号2404150、勤務年数3年、ブブ物流今州支店に勤務しています。",
+                "ko": "저는 물류 관리원 마현이라고 합니다. 직원 번호 2404150, 3년 차 직원이고, 무무물류 금주 물류센터에서 근무하고 있습니다",
+                "th": "ใช่ครับ ผมชื่อ Maji เป็นพนักงานหมายเลข 2404150 ผมทำงานที่สถานีลอลโล่โลจิสติกส์ของจินโจวมาสามปีแล้ว",
+                "zh-Hans": "是，我是物流管理员马计，工号2404150，工龄3年，任职于呜呜今州物流站。",
+                "zh-Hant": "是，我是物流管理員馬計，工號2404150，工齡3年，任職於嗚嗚今州物流站。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein teuer aussehendes Magazin neben Maji mit dem Titel <i>Wie man wie ein echter Geschäftselite spricht</i> fällt dir auf ...",
+                "en": "Next to Maji, an expensive-looking magazine titled <i>How to Talk Like a Real Business Elite</i> catches your attention...",
+                "es": "Junto a Maji hay una revista con aspecto de ser muy cara que te llama la atención. Se titula <i>Cómo hablar como un pez gordo</i>...",
+                "fr": "À côté de Maji, un magazine au look cher intitulé <i>Comment parler comme un gourou de l'IdO</i> attire votre attention...",
+                "ja": "【馬計のそばに、『IoTビジネス用語指南』という冊子があるのに気付いた──】",
+                "ko": "[마현의 주변에 놓여 있는 하드커버 잡지 『사물인터넷 은어 가이드』가 당신의 눈길을 끌었다——]",
+                "th": "ข้างๆ Maji มีนิตยสารราคาแพงชื่อว่า <i>วิธีการพูดแบบนักธุรกิจชั้นนำตัวจริง</i> ดึงดูดความสนใจของคุณ...",
+                "zh-Hans": "【马计的身边，一本名为《物联网黑话指南》的精装杂志引起了你的注意——】",
+                "zh-Hant": "【馬計的身邊，一本名為《物聯網黑話指南》的精裝雜誌引起了你的注意——】"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Magazin scheint voll von abstrusen Begriffen und Schlagworten zu sein, wie LOD, Roadmapping, Schließen der Schleife, Produktmatrix und mehr.",
+                "en": "The magazine seems full of abstruse terms and buzzwords such as LOD, roadmapping, closing the loop, product matrix, and more.",
+                "es": "La revista parece estar repleta de términos complicados y expresiones rimbombantes como proactividad, hoja de ruta, matriz de producto y demás.",
+                "fr": "Le magazine semble rempli de termes et de phrases abstrus comme LOD, roadmapping, boucler la boucle, matrice de produits, et plus encore.",
+                "ja": "【ディテール、サプライチェーン、クローズドループシステム、インテグレーション戦略……書かれているのは、難解な用語ばかりだ】",
+                "ko": "[링크, 폐쇄루프 로직, 콤비네이션 블로... 책 속에는 이해하기 어려운 것들로 가득 차 있었다]",
+                "th": "นิตยสารฉบับนี้ดูเหมือนจะเต็มไปด้วยคำศัพท์เฉพาะทางและคำศัพท์ในอุตสาหกรรมที่เข้าใจยาก เช่น LOD การทำแผนที่เส้นทาง การปิดวงจร เมทริกซ์ผลิตภัณฑ์ และอื่นๆ อีกมากมาย",
+                "zh-Hans": "【颗粒度、链路、逻辑闭环、组合拳……册子里尽是一些艰涩的话术】",
+                "zh-Hant": "【顆粒度、鏈路、邏輯閉環、組合拳……册子裡盡是一些艱澀的話術】"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja ... Meinst du, ich kann jetzt am Inkubator-Projekt teilnehmen?",
+                "en": "Yes... You mean, I can participate in the Incubator Project now?",
+                "es": "Sí... ¿Quieres decir que ahora puedo participar en el Proyecto Incubador?",
+                "fr": "Oui... Vous voulez dire, j'ai été sélectionné pour le « Projet Start-up Loulou » ?",
+                "ja": "ええ……つまり、「ブブ起業企画」の候補に選ばれたということですね？",
+                "ko": "음... 그러니까, 제가 「무무 창업 기획」에 성공적으로 당선되었다는 말씀인가요?",
+                "th": "ใช่ครับ... คุณหมายถึงว่า ตอนนี้ผมสามารถเข้าร่วมโครงการบ่มเพาะทักษะได้แล้วใช่ไหมครับ?",
+                "zh-Hans": "嗯嗯……你是说，我成功入选了「呜呜创业企划」吗？",
+                "zh-Hant": "嗯嗯……你是說，我成功入選了「嗚嗚創業企劃」嗎？"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Super! Ich reiche meinen Plan in sieben Tagen ein. Vielen Dank!",
+                "en": "Great! I'll submit my pitch in seven days. Thank you!",
+                "es": "¡Genial! Voy a enviar mi propuesta en siete días. ¡Gracias!",
+                "fr": "Super ! Mon plan initial sera soumis dans sept jours. Merci !",
+                "ja": "承知しました！7日後に『起業テスト運用レポート』を提出します！ありがとうございます！",
+                "ko": "알겠습니다! 『창업 시범사업 보고서』는 7일 후에 제출하겠습니다! 정말 감사합니다!",
+                "th": "เยี่ยมเลย! ผมจะส่งข้อเสนอของผมไปให้ภายในเจ็ดวัน ขอบคุณครับ!",
+                "zh-Hans": "收到！《创业试点报告》七天后提交！万分感谢！",
+                "zh-Hant": "收到！ 《創業實驗報告》七天后提交！ 萬分感謝！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Maji legt auf.",
+                "en": "Maji hangs up the call.",
+                "es": "Maji cuelga la llamada.",
+                "fr": "Maji raccroche l'appel.",
+                "ja": "【馬計はデバイスでの通話を終えた】",
+                "ko": "[마현이 단말기 통신을 끊었다]",
+                "th": "แล้ว Maji ก็วางสาย",
+                "zh-Hans": "【马季挂断了终端通话】",
+                "zh-Hant": "【馬季掛斷了終端通話】"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hurra! Sie lassen mich teilnehmen!",
+                "en": "Hooray! They let me participate!",
+                "es": "¡Hurra! ¡Me van a dejar participar!",
+                "fr": "Hourra ! Ils m'ont laissé participer !",
+                "ja": "やった！私のテスト運用企画が候補に選ばれたぞ！",
+                "ko": "우와! 내 시범사업 기획이 당선됐다니!",
+                "th": "ไชโย! พวกเขาให้ผมเข้าร่วมด้วย!",
+                "zh-Hans": "好耶！我的创业试点计划成功入选了！",
+                "zh-Hant": "好耶！ 我的創業實驗計畫成功入選了！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich hab ganz vergessen, mich vorzustellen. Ich bin der neue Manager des Lollo-Logistikzentrums, Maji. Übrigens, man nennt mich auch Ma... M-Maggie! Klingt doch ziemlich cool und international, oder?",
+                "en": "Oh, I almost forgot to introduce myself. I'm the new manager of the Lollo Logistics Station, Maji. By the way, I also go by Ma... M-Maggie! Sounds pretty cool and international, right?",
+                "es": "Oh, casi me olvido de presentarme. Soy Maji, el nuevo administrador de la Estación de Logística Lollo. También puedes llamarme Ma... ¡M-Maggie! Suena muy guay e internacional, ¿eh?",
+                "fr": "Oh, j'ai presque oublié de me présenter. Je suis le nouveau manager de la station de logistique de Loulou, Maji. Au fait, on m'appelle aussi Ma... M-Maggie ! Ça sonne plutôt cool et international, non ?",
+                "ja": "おっと、自己紹介を忘れるところだった！私は今州ステーションの新任支店長馬計、あだ名で呼んでくれてもいいよ──\n私のあだ名は、ム……マ……マギー！",
+                "ko": "아, 제 소개가 늦었군요! 저는 금주 물류센터에 신규 부임한 관리원입니다. 이름은 마현이라고 해요. 닉네임으로 불러 주셔도 됩니다——\n닉네임은... 매기(Maggie)라고 해요!",
+                "th": "อ้อ เกือบลืมแนะนำตัวเลย ผมชื่อ Maji ผู้จัดการคนใหม่ของสถานีลอลโล่โลจิสติกส์ครับ แล้วก็ใช้ชื่อแม... แม-แม็กกี้ด้วย! ฟังดูเท่และเป็นสากลดีว่าไหม?",
+                "zh-Hans": "忘记自我介绍了！我是今州物流站的新任管理员，我叫马计，你也可以叫我的花名——呣……不对……咩……Maggie！",
+                "zh-Hant": "忘記自我介紹了！我是今州物流站的新任管理員，我叫馬計，你也可以叫我的花名——呣…… 不對…… 咩…… Maggie！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das war mein Bewerbungsgespräch für das „Lollo-Unternehmer-Inkubator-Projekt“. Puh, ich dachte schon, ich werde wieder abgelehnt.",
+                "en": "That was me doing the entrance interview for \"Lollo Entrepreneur Incubator Project\". Phew, thought I was getting rejected again.",
+                "es": "Lo de hace un momento era la entrevista de acceso del «Proyecto Incubador de Emprendedores de Lollo». Uff... Creía que me iban a volver a rechazar.",
+                "fr": "C'était moi qui passais l'entretien d'entrée pour le « Projet Start-up Loulou ». Ouf, j'ai cru que je sois rejeté à nouveau…",
+                "ja": "さっきは「ブブ起業企画」の業務面接だったんだ。ふぅ～、あやうく候補入りを逃すところだったよ。",
+                "ko": "좀 전은 「무무 창업 기획」의 업무 면접을 봤어요. 휴우, 떨어지는 줄 알았네요",
+                "th": "ผมกำลังรับการสัมภาษณ์เพื่อเข้าโครงการ \"โครงการบ่มเพาะทักษะผู้ประกอบการของลอลโล่\" โอย นึกว่าจะโดนปฏิเสธอีกรอบซะแล้ว",
+                "zh-Hans": "刚才是「呜呜创业企划」的业务面试。呼，差点以为自己要落选了。",
+                "zh-Hant": "剛才是「嗚嗚創業企劃」的業務面試。 呼，差點以為自己要落選了。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Über das Lollo-Unternehmer-Inkubator-Projekt ...",
+                    "en": "About the \"Lollo Entrepreneur Incubator Project...",
+                    "es": "Acerca del «Proyecto Incubador de Emprendedores de Lollo»...",
+                    "fr": "À propos du « Projet Start-up Loulou »...",
+                    "ja": "「ブブ起業企画」って？",
+                    "ko": "「무무 창업 기획」에 대해서?",
+                    "th": "เกี่ยวกับ \"โครงการบ่มเพาะทักษะผู้ประกอบการของลอลโล่...\"",
+                    "zh-Hans": "关于「呜呜创业企划」？",
+                    "zh-Hant": "關於「嗚嗚創業企劃」？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "<i>Wie man wie ein echter Geschäftselite spricht</i> ...",
+                    "en": "<i>How to Talk Like a Real Business Elite</i>...",
+                    "es": "Acerca de <i>Cómo hablar como un pez gordo</i>...",
+                    "fr": "À propos de <i>Comment parler comme un gourou de l'IdO</i>...",
+                    "ja": "『IoTビジネス用語指南』について……。",
+                    "ko": "《사물인터넷 은어 가이드》에 대해서...",
+                    "th": "<i>วิธีการพูดแบบนักธุรกิจชั้นนำตัวจริง</i>...",
+                    "zh-Hans": "关于《物联网黑话指南》……",
+                    "zh-Hant": "關於《物聯網黑話指南》……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "„Mache das Beste aus allem und jedem“ ist einer von Lollos Unternehmenswerten.",
+                "en": "\"Make the best of everything and everyone\" is one of Lollo's corporate values.",
+                "es": "«Aprovechar al máximo los recursos y el talento» es uno de los valores corporativos de Lollo.",
+                "fr": "« Profiter au maximum de tout et de tout le monde » est l'une des valeurs d'entreprise de Loulou.",
+                "ja": "「人はその才能を十分発揮し、物はその役目を十分発揮する」は、ブブ物流の社風のひとつでもあるんだ。",
+                "ko": "「물건은 그 나름의 쓰임이 있고, 사람도 그 나름의 쓰임이 있다」는 무무물류의 기업 문화 중 하나예요",
+                "th": "การ \"ใช้ประโยชน์จากทุกสิ่งและทุกคนให้เกิดประโยชน์สูงสุด\" เป็นหนึ่งในค่านิยมในองค์กรของลอลโล่",
+                "zh-Hans": "「物尽其用，人尽其才」是呜呜物流的企业文化之一。",
+                "zh-Hant": "「物盡其用，人盡其才」是嗚嗚物流的企業文化之一。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bei Lollo-Logistik ermutigen wir unsere Teammitglieder, Initiative zu ergreifen und durch das Lollo-Unternehmer-Inkubator-Projekt innovative Geschäftsideen zu entwickeln.",
+                "en": "At Lollo Logistics, our team members are empowered to take initiative and bring forth innovative business ventures through the Lollo Entrepreneur Incubator Project.",
+                "es": "En Logística Lollo animamos a los miembros de nuestro equipo a tomar la iniciativa y proponer ideas de negocio innovadoras mediante el Proyecto Incubador de Emprendedores de Lollo.",
+                "fr": "Chez Loulou Logistique, les employés sont encouragés à être proactifs, à proposer et à mettre en œuvre de nouvelles possibilités commerciales, c'est pourquoi le « Projet Start-up Loulou » a été initié.",
+                "ja": "うちの会社は、社員が気づいたクライアントの需要をもとに業務の新設や拡大を行っている。「ブブ起業企画」は、こうしてスタートしたんだよ。",
+                "ko": "저희 회사에서는 직원들이 자신이 관찰한 고객의 수요에 따라 새 업무를 확장하거나 시도하도록 격려하거든요. 「무무 창업 기획」은 그런 취지에서 시작됐어요",
+                "th": "ที่ลอลโล่โลจิสติกส์ สมาชิกในทีมของเราได้รับการส่งเสริมให้ริเริ่มและนำเสนอโครงการธุรกิจที่เป็นนวัตกรรมผ่านโครงการบ่มเพาะทักษะผู้ประกอบการของลอลโล่",
+                "zh-Hans": "我们公司鼓励员工根据自己所观察到的客户所需，进行新业务的扩展与尝试，「呜呜创业企划」应运而生。",
+                "zh-Hant": "我們公司鼓勵員工根據自己所觀察到的客戶所需，進行新業務的擴展與嘗試，「嗚嗚創業企劃」應運而生。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es bietet ausgewählten Kandidaten Zugang zu Unternehmensmitteln, um für eine Woche Pilotgeschäfte in unseren Einrichtungen zu starten.",
+                "en": "It offers selected candidates access to company funds to launch pilot businesses within our facilities for a week.",
+                "es": "Ofrece a los candidatos seleccionados acceso a los fondos de la compañía para lanzar negocios piloto dentro de nuestras instalaciones durante una semana.",
+                "fr": "Les candidats retenus ont accès à un fonds dédié de l'entreprise, et sont tenus de mener un projet pilote de leur proposition dans l'installation où ils travaillent.",
+                "ja": "候補として選ばれれば、ブブ物流の資金援助のもと、ステーションの一員として一週間業務のテスト運用が行える。",
+                "ko": "채택되면 무무물류에서 지원하는 자금을 받을 수 있고, 담당 중인 물류센터에서 일주일간 시범사업을 진행할 수 있죠",
+                "th": "โครงการนี้เปิดโอกาสให้ผู้สมัครที่ผ่านการคัดเลือกเข้าถึงเงินทุนของบริษัทเพื่อเปิดตัวธุรกิจนำร่องภายในสถานที่ของเราเป็นเวลาหนึ่งสัปดาห์",
+                "zh-Hans": "成功入选的话，就能得到呜呜物流提供的资金支持，并在负责的物流站内进行为期一周的业务试点。",
+                "zh-Hant": "成功入選的話，就能得到嗚嗚物流提供的資金支持，並在負責的物流站進行為期一周的業務試點。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In dieser Saison liegt der Fokus auf den unternehmerischen Ideen der Kuriere unter dem Motto „Beurteilung der Geschäftsschleife durch Benutzererfahrung“.",
+                "en": "This season, the focus is on couriers' entrepreneurial ideas under the theme \"Judging the Business Loop by User Experience.\"",
+                "es": "Esta temporada está centrada en ideas emprendedoras de los mensajeros con la temática «Juzgar el ciclo de negocio en base a la experiencia de usuario».",
+                "fr": "Cette saison, l'Incubateur se concentre sur les idées commerciales des coursiers, et le thème est « Examiner la Boucle Commerciale par l'Expérience des Utilisateurs ».",
+                "ja": "今季の「配達員起業計画」のお題は、「UX評価に基づくクローズドループ評価指標」なんだ。",
+                "ko": "이번 시즌 「배송원 창업 기획」의 제목은 '사용자의 체험을 업무 폐쇄루프 평가 기준으로 한다'예요",
+                "th": "ในฤดูกาลนี้ เราจะเน้นไปที่แนวคิดการเป็นผู้ประกอบการบริษัทขนส่งภายใต้ธีม \"การตัดสินวงจรธุรกิจด้วยประสบการณ์ของผู้ใช้\"",
+                "zh-Hans": "这一季「物流员创业企划」的命题是：“将用户的体验度量作为业务闭环的评判标准”。",
+                "zh-Hant": "這一季「物流員創業企劃」的命題是：「將用戶的體驗度量作為業務閉環的評判標準」。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kenne jedes Wort, aber zusammen ergeben sie keinen Sinn. Also hab ich nach ihrer Herkunft gesucht ...",
+                "en": "I know what every word means, but it makes zero sense when they're put together. So I digged for their origin...",
+                "es": "Sé lo que significa cada palabra, pero no tienen ningún sentido al ponerlas todas juntas, así que investigué de dónde salieron...",
+                "fr": "Je sais ce que chaque mot signifie, mais cela n'a aucun sens quand ils sont mis ensemble. Alors, j'ai cherché leur origine...",
+                "ja": "一つ一つの文字は知ってるんだけど、つながった途端一気に分かんなくなっちゃって、調べてたんだ──",
+                "ko": "이 문장의 글자는 다 알아보겠지만, 연결해 놓으면 무슨 뜻인지 모르겠어요. 그래서 출처를 찾아봤죠",
+                "th": "ผมเข้าใจความหมายของทุกคำในนี้ แต่พอเอามารวมกันมันกลับฟังไม่รู้เรื่องเลย ผมก็เลยต้องขุดหาที่มาของคำพวกนี้...",
+                "zh-Hans": "这句话的每个字我都认识，但是连在一起我却读不懂了，所以我去翻了翻出处——",
+                "zh-Hant": "這句話的每個字我都認識，但是連在一起我卻讀不懂了，我就去翻了翻出處——"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hast du schon von dem branchenberühmten <i>Wie man wie ein echter Geschäftselite spricht</i> gehört?",
+                "en": "Have you heard of the industry-famous <i>How to Talk Like a Real Business Elite</i>?",
+                "es": "¿Has oído hablar de <i>Cómo hablar como un pez gordo</i>? Es una revista famosísima en la industria.",
+                "fr": "Avez-vous entendu parler du célèbre dans l'industrie <i>Comment parler comme un gourou de l'IoT</i> ?",
+                "ja": "業界で噂の『IoTビジネス用語指南』って、知ってる？",
+                "ko": "업계 내에서 유명한 《사물인터넷 은어 가이드》에 대해서 들어보셨나요?",
+                "th": "คุณเคยได้ยินเกี่ยวกับหนังสือ<i>วิธีการพูดแบบนักธุรกิจชั้นนำตัวจริง</i>ที่มีชื่อเสียงในอุตสาหกรรมไหม",
+                "zh-Hans": "你听过业内闻名的《物联网黑话指南》吗？",
+                "zh-Hant": "你聽過業內聞名的《物聯網黑話指南》嗎？"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe einen Freund gebeten, mir dieses Buch zu besorgen und versucht herauszufinden, was dieses Thema wirklich bedeutet ...",
+                "en": "I asked a friend to get me this book and tried to find out what that theme really meant...",
+                "es": "Le pedí a un amigo que me la consiguiera para tratar de averiguar de qué trataba la temática de verdad...",
+                "fr": "J'ai demandé à un ami de m'apporter ce livre et j'ai essayé de comprendre ce que ce thème signifie vraiment...",
+                "ja": "わざわざ人に頼んで取り寄せた指南書なんだ、どんな内容なのか気になってさ。",
+                "ko": "제가 특별히 이 가이드 책을 얻어왔답니다. 도대체 무슨 뜻인지 찾아봐야겠어요",
+                "th": "ผมขอให้เพื่อนซื้อหนังสือเล่มนี้มาให้ และพยายามหาคำตอบว่าธีมของหนังสือเล่มนี้หมายถึงอะไร...",
+                "zh-Hans": "我特意托人淘来了这本指南，倒要看看究竟是怎么个意思。",
+                "zh-Hant": "我特意托人淘來了這本指南，倒要看看究竟是怎麼個意思。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Aber diese Fachbegriffe wirken einfach zu undurchsichtig.",
+                "en": "...But these jargons only feel too specious to make sense.",
+                "es": "... Pero la jerga me resulta demasiado liosa como para encontrarle sentido.",
+                "fr": "... Mais ces jargons ne semblent que trop spécieux pour être compréhensibles.",
+                "ja": "中の用語は、分かるようで分からないものばかり。この意味かと思えばそうでもないらしい、ほとんどそんな感じだよ。",
+                "ko": "이런 은어들은 이렇기도 하고, 저렇기도 하며, 맞기도 하고 틀리기도 해요. 그런 뜻이기도 하고 저런 뜻이기도 하고요",
+                "th": "...แต่ศัพท์แสงพวกนี้ดูเว่อร์มากจนไม่สมเหตุสมผล",
+                "zh-Hans": "这些黑话又这又那又似是而非的，好像是那么个意思，又好像不是那么个意思。",
+                "zh-Hant": "這些黑話又這又那又似是而非的，好像是那麼個意思，又好像不是那麼個意思。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lach mich nicht aus. Ich bin erst seit ein paar Tagen Manager. Ich kann nur üben und dabei lernen.",
+                "en": "Don't laugh at me. I've only been the manager for a few days. All I can do is practice while I learn.",
+                "es": "No te rías de mí, solo llevo unos días como administrador. No tengo más opción que aprender sobre la marcha.",
+                "fr": "Ne riez pas de moi. Je ne suis que le gérant depuis quelques jours. Tout ce que je peux faire, c'est de m'entraîner en apprenant.",
+                "ja": "笑わないでよ、物流ステーションの支店長になったばかりなんだから。現場で実践しながら覚えていくしかないんだ。",
+                "ko": "제가 못 알아본다고 비웃지 마세요. 저는 관리원이 된 지 얼마 되지 않아서요. 일하면서 배우는 중이니까요",
+                "th": "ห้ามหัวเราะเยาะผมนะ ผมเพิ่งขึ้นเป็นผู้จัดการได้ไม่กี่วันเอง อย่างเดียวที่ผมทำได้คือฝึกฝนและเรียนรู้ไปพร้อมๆ กัน",
+                "zh-Hans": "可别笑话我看不懂，我才刚当上物流站管理员没多久，只能现学现卖了。",
+                "zh-Hant": "可別笑話我看不懂，我才剛當上物流站管理員沒多久，只能現學現賣了。"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist dein Geschäftsplan?",
+                    "en": "What's your business proposal?",
+                    "es": "¿Cuál es tu propuesta de negocio?",
+                    "fr": "Quel est le plan ?",
+                    "ja": "あなたの起業企画って？",
+                    "ko": "당신의 창업 기획은 뭔가요?",
+                    "th": "แล้วข้อเสนอทางธุรกิจของคุณคืออะไร?",
+                    "zh-Hans": "你的创业企划是什么？",
+                    "zh-Hant": "你的創業企劃是什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Jetzt hatte ich schon einige Ideen ... Lollo-Hitman, Lollo-Reparatur, Lollo-Verfütterung, usw.",
+                "en": "Now, I did have quite a few ideas... Lollo Hitman, Lollo Fixit, Lollo Petter, etc.",
+                "es": "La verdad es que tenía bastantes ideas... Escoltas Lollo, Reparaciones Lollo, Mascotas Lollo...",
+                "fr": "J'ai eu pas mal d'idées... Loulou Hitman, Loulou Fixit, Loulou Petting, etc.",
+                "ja": "いろんな業務の提案を用意したんだ……ブブスピードファイター、ブブスピード修理、ブブ餌やり……。",
+                "ko": "저는 제법 많은 업무 기획을 준비해 뒀어요... 무무 해결사, 무무 수리, 무무 먹이 주기...",
+                "th": "ตอนนี้ผมมีไอเดียอยู่หลายอย่าง... ลอลโล่มือสังหาร ลอลโล่สารพัดช่าง ลอลโล่รับเลี้ยงสัตว์ ฯลฯ",
+                "zh-Hans": "我还真准备了不少业务试点……有呜呜快打、呜呜闪修、呜呜投喂……",
+                "zh-Hant": "我還真準備了不少業務方向…… 有嗚嗚快打、嗚嗚閃修、嗚嗚投餵……"
+              },
+              "id": 26,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, mein Favorit ist Lollo-Hitman.",
+                "en": "By the way, my favorite is Lollo Hitman.",
+                "es": "Por cierto, mi favorita es la de Matones Lollo.",
+                "fr": "Au fait, mon préféré est Loulou Hitman.",
+                "ja": "うーん、正直なところ、一番重視しているのはブブ代理サービスなんだよね……。",
+                "ko": "그중에서 제일 맘에 드는 건 사실 무무 해결사예요",
+                "th": "แต่ผมชอบลอลโล่มือสังหารมากที่สุดล่ะ",
+                "zh-Hans": "顺带一提，我最看好的其实是呜呜代打。",
+                "zh-Hant": "順帶一提，我最看好的其實是嗚嗚代打。"
+              },
+              "id": 27,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese spezialisierten Märkte entstehen aus den spezifischen Bedürfnissen und Herausforderungen, denen unsere Kunden täglich begegnen, nämlich ihren Schmerzpunkten.",
+                "en": "These specialized markets are born from the specific needs and challenges our customers face every day, namely, their pain points.",
+                "es": "Los mercados especializados surgen de las necesidades específicas y los desafíos a los que se enfrentan nuestros clientes a diario. Es decir, sus problemas.",
+                "fr": "Tous ces « marchés de niche » sont inspirés des points de Douleur de nos clients.",
+                "ja": "こういう「セグメント」、クライアントの「ペインポイント」をまとめたものなんだ。",
+                "ko": "이 「루트」들은 모두 고객들의 「불만 요소」에서 정리해 낸 거예요",
+                "th": "ตลาดเฉพาะทางเหล่านี้เกิดขึ้นจากความต้องการเฉพาะและความท้าทายที่ลูกค้าของเราเผชิญทุกวัน ซึ่งก็คือจุดปัญหาของพวกเขา",
+                "zh-Hans": "这些“赛道”，都总结自客户的“痛点”。",
+                "zh-Hant": "這些「賽道」，都總結自客戶的「痛點」。"
+              },
+              "id": 28,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Spezialisierte Märkte?",
+                    "en": "Specialized markets?",
+                    "es": "¿Mercados especializados?",
+                    "fr": "Des marchés de niche ?",
+                    "ja": "セグメント？",
+                    "ko": "루트요?",
+                    "th": "ตลาดเฉพาะทางงั้นเหรอ?",
+                    "zh-Hans": "赛道？",
+                    "zh-Hant": "賽道？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Schmerzpunkte?",
+                    "en": "Pain points?",
+                    "es": "¿Problemas?",
+                    "fr": "Des Points de Douleur ?",
+                    "ja": "ペインポイント？",
+                    "ko": "불만 요소요?",
+                    "th": "จุดปัญหาเหรอ?",
+                    "zh-Hans": "痛点？",
+                    "zh-Hant": "痛點？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "... Ich stecke zu tief in den Fachbegriffen. Du weißt, was ich meine.",
+                "en": "...I'm too deep into the jargon. You know what I mean.",
+                "es": "... La jerga me sale sin pensar, pero tú ya me entiendes.",
+                "fr": "... Je suis trop plongé dans le jargon. Vous voyez ce que je veux dire.",
+                "ja": "……慣れてしまって、すぐには言い換えられないんだよ。分かってくれれば大丈夫だから。",
+                "ko": "...전문 용어를 안쓰고는 말하기가 어렵네요. 뭐, 대강 알아들을 수 있기만 하면 되죠",
+                "th": "...ผมเล่นคำเยอะไปหน่อย คุณน่าจะเข้าใจสิ่งที่ผมอยากจะสื่อ",
+                "zh-Hans": "……我这嘴一时半会儿是改不回来了，你能听懂就行。",
+                "zh-Hant": "……我這嘴一時半會兒是改不回來了，你能聽懂就行。"
+              },
+              "id": 29,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Assistentenrolle, die ich suche, soll diese Geschäftsanforderungen analysieren und mir bei der Bewertung ihrer Umsetzbarkeit helfen.",
+                "en": "The assistant role I'm hiring for is all about handling these business requests, helping me figure out if they're actually doable.",
+                "es": "El puesto de asistente que ofrezco consiste en ocuparse de las peticiones de los negocios y ayudarme a comprobar si son factibles.",
+                "fr": "Maintenant, le but du poste d'assistant que je recrute est de remplir ces commandes commerciales afin que je puisse mieux évaluer leur faisabilité.",
+                "ja": "今はアシスタントを募集中なんだ。業務内容は、ブブ配達員として業務を体験しながら、業務が実現可能かどうか評価することだよ。",
+                "ko": "지금 조수를 뽑고 있어요. 담당 업무는 무무물류의 배송원으로서 업무를 체험하고, 제가 업무의 실행 가능성을 검토하는 것을 서포트해 주면 돼요",
+                "th": "ตำแหน่งผู้ช่วยที่ผมกำลังรับสมัครอยู่มีหน้าที่จัดการกับคำขอทางธุรกิจพวกนี้ และช่วยผมคิดว่าเราจะสามารถทำตามคำขอเหล่านี้ได้ไหม",
+                "zh-Hans": "我正在招募助理，职责就是以呜呜物流员的身份体验这些业务，协助我评估业务的可行性。",
+                "zh-Hant": "我正在招募助理，職責就是以嗚嗚物流員的身份體驗這些業務，協助我評估業務的可行性。"
+              },
+              "id": 30,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich weiß, dass du die perfekte Person für diesen Job bist, {PlayerName}. Was sagst du dazu?",
+                "en": "I know you'd be the perfect candidate for this job, {PlayerName}. What do you say?",
+                "es": "{PlayerName}, estoy convencido de que eres la persona ideal para este trabajo. ¿Qué me dices?",
+                "fr": "Je sais que vous seriez le candidat parfait pour ce poste, {PlayerName}. Ça vous intéresse ?",
+                "ja": "有能で多才な{PlayerName}、興味はあるかい？",
+                "ko": "만능 해결사 {PlayerName}. 관심 있으신가요?",
+                "th": "ผมรู้ว่าคุณเหมาะกับงานนี้ที่สุด {PlayerName} คุณจะว่ายังไง?",
+                "zh-Hans": "十项全能的{PlayerName}，您有兴趣参与吗？",
+                "zh-Hant": "十項全能的{PlayerName}，您有興趣參與嗎？"
+              },
+              "id": 31,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kommen wir zur Sache. Wie sieht’s mit der Bezahlung aus?",
+                    "en": "Let's cut to the chase. How's the pay?",
+                    "es": "Vamos al grano. ¿Qué hay del dinero?",
+                    "fr": "Passons aux choses sérieuses. Quel est le salaire ?",
+                    "ja": "先に報酬を教えてよ。",
+                    "ko": "보수에 대해서 이야기해 보시죠",
+                    "th": "เข้าเรื่องเลยดีกว่า ได้ค่าจ้างเท่าไหร่?",
+                    "zh-Hans": "不如聊聊报酬。",
+                    "zh-Hant": "不如聊聊報酬。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du erwartest doch nicht, dass ich umsonst arbeite, oder?",
+                    "en": "You are not expecting me to work for free, are you?",
+                    "es": "No pretenderás que trabaje gratis, ¿no?",
+                    "fr": "Vous ne vous attendez pas à ce que je travaille gratuitement, n'est-ce pas ?",
+                    "ja": "ブラック企業みたいに、こき使わないよね？",
+                    "ko": "저한테 불법 노동을 하라고 하는 건 아니겠죠?",
+                    "th": "คุณคงไม่ได้คิดจะให้ฉันทำงานให้ฟรีๆ ใช่ไหม?",
+                    "zh-Hans": "不会让我打黑工吧？",
+                    "zh-Hant": "不會讓我打黑工吧？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ein wettbewerbsfähiges Gehalt ist nur der Anfang.",
+                "en": "A competitive pay is only the first thing I offer.",
+                "es": "Una buena remuneración es solo el comienzo.",
+                "fr": "Un salaire compétitif n'est que la première chose que j'offre.",
+                "ja": "手厚い報酬を用意してるよ。",
+                "ko": "기본적으로 엄청난 수당이 준비되어 있어요",
+                "th": "เรามีค่าจ้างที่แข่งขันได้เป็นเพียงสิ่งแรกที่ผมเสนอให้คุณเท่านั้น",
+                "zh-Hans": "丰厚的津贴只是基础。",
+                "zh-Hant": "豐厚的津貼只是基礎。"
+              },
+              "id": 32,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Falls du es nicht weißt, Lollo-Logistik vergibt „Lollo-Briefmarken“ an Freunde, die dem Unternehmen geholfen haben.",
+                "en": "In case you don't know, Lollo Logistics provides \"Lollo Stamps\" for friends who have helped the company.",
+                "es": "Por si no lo sabes, Logística Lollo proporciona «Sellos Lollo» a los amigos que hayan ayudado a la compañía.",
+                "fr": "Au cas où vous ne le sauriez pas, Loulou Logistique offre des « Jetons Loulou » aux partenaires qui ont aidé la société.",
+                "ja": "知って得する豆知識！ブブ物流は、これまでお手伝いしてくれた仲間たちに「ブブコイン」を配布しているよ。",
+                "ko": "중요한 정보를 드리자면, 무무물류에서는 무무를 도와줬던 친구들에게 「무무 코인」을 제공하고 있어요",
+                "th": "เผื่อว่าคุณจะไม่รู้ ลอลโล่โลจิสติกส์มอบ \"เหรียญลอลโล่\" ให้กับเพื่อนๆ ที่ช่วยงานบริษัทด้วย",
+                "zh-Hans": "热知识，呜呜物流都会为帮助过呜呜的朋友们提供「呜呜邮币」。",
+                "zh-Hant": "熱知識，嗚嗚物流都會為幫助過嗚嗚的朋友們提供「嗚嗚郵幣」。"
+              },
+              "id": 33,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie können gegen Bargeld und andere Belohnungen eingetauscht werden. Na, was sagst du dazu?",
+                "en": "They can be redeemed for cash and other rewards. Now, what do you say?",
+                "es": "Se pueden canjear por dinero y otras recompensas. ¿Qué me dices?",
+                "fr": "Ils peuvent être échangés contre de l'argent et d'autres récompenses. Alors, qu'en dites-vous ?",
+                "ja": "「ブブコイン」は、ブブ物流の補助や手当と交換することができるんだ。さてさて、{PlayerName}のご意向はいかがかな？",
+                "ko": "「무무 코인」은 무무물류의 수당과 보상 교환에 사용돼요. {PlayerName}, 생각 있나요?",
+                "th": "\"เหรียญลอลโล่\" พวกนี้สามารถใช้แลกเป็นเงินสดและรางวัลอื่นๆ ได้ คราวนี้คุณจะว่ายังไง?",
+                "zh-Hans": "「呜呜邮币」可以用来兑换呜呜物流提供的津贴和奖励。{PlayerName}的意下如何？",
+                "zh-Hant": "「嗚嗚郵幣」可以用來兌換嗚嗚物流提供的津貼和獎勵。 {PlayerName}的意下如何？"
+              },
+              "id": 34,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar, ich freue mich auf die Zusammenarbeit.",
+                    "en": "Sure, I'm looking forward to work with you.",
+                    "es": "Está bien. Tengo muchas ganas de trabajar contigo.",
+                    "fr": "Avec plaisir. Appelez-moi Nomma !",
+                    "ja": "{Male=俺のあだ名は漂ちゃん、ビジネスパートナーになれて光栄です。;Female=私のあだ名は漂ちゃん、ビジネスパートナーになれて光栄です。}",
+                    "ko": "제 닉네임은 랑자에요. 잘 부탁해요",
+                    "th": "แน่นอน ฉันตั้งตารอจะร่วมงานกับคุณแล้วล่ะ",
+                    "zh-Hans": "我的花名是阿漂，合作愉快。",
+                    "zh-Hant": "我的花名是阿漂，合作愉快。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Gerne, Maggie!",
+                    "en": "Pleasure to be of service, Maggie!",
+                    "es": "¡Me alegra ser de utilidad, Maggie!",
+                    "fr": "Ravi de vous être utile, Maggie !",
+                    "ja": "マギーのためなら、喜んで！",
+                    "ko": "열심히 할게요!",
+                    "th": "ยินดีที่ได้รับใช้ แม็กกี้!",
+                    "zh-Hans": "乐意效劳，Maggie！",
+                    "zh-Hant": "樂意效勞，Maggie！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Gib mir etwas Zeit zum Nachdenken.",
+                    "en": "Give me some time to think.",
+                    "es": "Dame un tiempo para pensármelo.",
+                    "fr": "Donnez-moi un peu de temps pour réfléchir.",
+                    "ja": "ちょっと考えさせて。",
+                    "ko": "좀 더 생각해 볼게요",
+                    "th": "ขอเวลาฉันคิดสักหน่อย",
+                    "zh-Hans": "我再考虑考虑。",
+                    "zh-Hant": "我再考慮考慮。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

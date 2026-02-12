@@ -1,0 +1,247 @@
+{
+  "id": 133000005,
+  "key": "曲问趣答·二",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Eine Quest der Klugheit - II",
+    "en": "A Quest of Wits - II",
+    "es": "Una Prueba de Ingenio - II",
+    "fr": "Réponses aux questions étranges - II",
+    "ja": "曲問クイズ・その二",
+    "ko": "꿀잼 퀴즈 타임 · Ⅱ",
+    "th": "การแสวงหาปัญญา - II",
+    "zh-Hans": "曲问趣答·二",
+    "zh-Hant": "曲問趣答·二"
+  },
+  "desc": {
+    "de": "Du bist auf eine seltsame Person im Düsteren Wald gestoßen. Sie scheint seltsame Fragen für dich zu haben. Sei geduldig, beantworte ihre Fragen, und du könntest einige Belohnungen erhalten.",
+    "en": "You meet a strange dual in the Dim Forest. They seem to have peculiar questions for you. Answer their questions correctly, and you might receive some rewards.",
+    "es": "Has encontrado a una persona extraña en el Bosque Oscuro. Parece que tienen preguntas peculiares para ti. Sé paciente, responde a sus preguntas, y podrías recibir algunas recompensas.",
+    "fr": "Dans la forêt aveuglante, vous croisez un duo étrange qui vous pose des questions inhabituelles. Répondez correctement pour obtenir des récompenses.",
+    "ja": "光なき森で妙な人たちと出逢い、あなたに妙なクイズを出題した。平常心を保ち、そのクイズに答えすれば、何かご褒美が手に入れるかも……",
+    "ko": "암흑 밀림에서 만난 이상한 사람들이 이상한 질문을 합니다. 인내심을 가지고 그들의 질문에 대답하면 보상을 받을 수 있을지도 모릅니다...",
+    "th": "คุณได้พบกับคู่หูแปลกๆ ในป่าสลัว ดูเหมือนว่าพวกเขาจะมีคำถามแปลกๆ สำหรับคุณ ตอบคำถามของพวกเขาให้ถูกต้อง แล้วคุณอาจจะได้รับรางวัลบางอย่าง",
+    "zh-Hans": "在无光之森遇到了奇怪的人，他们有些奇怪的问题问你。保持耐心，回答他们的问题，也许能拿到奖励……",
+    "zh-Hant": "在無光之森遇到了奇怪的人，他們有些奇怪的問題問你。保持耐心，回答他們的問題，也許能拿到獎勵……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe das Quiz ab",
+        "en": "Complete the quiz",
+        "es": "Completa el cuestionario",
+        "fr": "Répondre aux questions",
+        "ja": "クイズを完了する",
+        "ko": "퀴즈 맞히기",
+        "th": "ทำบททดสอบให้เสร็จ",
+        "zh-Hans": "完成问答",
+        "zh-Hant": "完成問答"
+      },
+      "entities": [
+        {
+          "entityId": 133001035,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男11",
+          "areaId": 702,
+          "position": {
+            "x": -2980,
+            "y": 295291,
+            "z": 3869
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133002110,
+          "mapId": 8,
+          "blueprintType": "NPC232",
+          "name": "TsEntity_180_003_皇龙男6",
+          "areaId": 702,
+          "position": {
+            "x": -2929,
+            "y": 295303,
+            "z": 3870
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_无光之森洞穴POI",
+          "flowIndex": 3,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Quiz Nummer Zwei. Wen bittest du um Frieden?",
+                "en": "Quiz Number Two. Who do you ask for peace?",
+                "es": "Segunda pregunta. ¿A quién pides paz?",
+                "fr": "La deuxième question, qui cherchez-vous pour la paix ?",
+                "ja": "第2問、街の治安を守る組織と言えば？",
+                "ko": "재미있는 퀴즈 두 번째! 위험할 때는 어디를 찾아가면 될까요?",
+                "th": "คำถามข้อที่สอง คุณจะเรียกหาความสงบสุขได้จากที่ใด?",
+                "zh-Hans": "趣题第二问，求安寻谁问？",
+                "zh-Hant": "趣題第二問，求安尋誰問？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Patrouillenstation.",
+                    "en": "Patrol Station.",
+                    "es": "Estación de patrulla.",
+                    "fr": "Station de patrouille",
+                    "ja": "巡寧所。",
+                    "ko": "순찰소",
+                    "th": "สถานีลาดตระเวน",
+                    "zh-Hans": "巡宁所。",
+                    "zh-Hant": "巡寧所。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Akademie.",
+                    "en": "Academy.",
+                    "es": "Academia.",
+                    "fr": "Institut de recherche.",
+                    "ja": "研究院。",
+                    "ko": "연구원",
+                    "th": "สถาบัน",
+                    "zh-Hans": "研究院。",
+                    "zh-Hant": "研究院。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Quiz Nummer Zwei, antworte! Bitte die Patrouillenstation um Frieden.",
+                "en": "Quiz Number Two, answer! Ask Patrol Station for peace.",
+                "es": "¡Segunda pregunta, respuesta! Pide paz a la Estación de patrulla.",
+                "fr": "La deuxième réponse, la station protège la paix.",
+                "ja": "ご名答！街の問題は、巡寧所までお問い合わせください！",
+                "ko": "정답! 순찰소!",
+                "th": "เฉลยคำถามข้อที่สอง! ต้องไปเรียกหาความสงบสุขจากสถานีลาดตระเวน",
+                "zh-Hans": "妙答第二记，巡宁求安定。",
+                "zh-Hant": "妙答第二記，巡寧求安定。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm deine Belohnung und komm morgen zurück für mehr!",
+                "en": "Take your reward and come back for more tomorrow!",
+                "es": "¡Toma tu recompensa y vuelve mañana por más!",
+                "fr": "Prenez la récompense, la question sera posée demain !",
+                "ja": "本日は以上です！明日もよろしく！",
+                "ko": "보상 드립니다! 내일 또 오세요!",
+                "th": "รับรางวัลและกลับมาใหม่ในวันพรุ่งนี้นะ!",
+                "zh-Hans": "奖励请收下，明日复来题！",
+                "zh-Hant": "獎勵請收下，明日複來題！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schwierigkeiten tauchen auf. Rover ist verwirrt.",
+                "en": "Difficulties arise. Rover confused.",
+                "es": "Surgen dificultades. Errante confundido.",
+                "fr": "Si l'énigme est difficile, la réponse est incertaine.",
+                "ja": "残念！深く考えすぎですね。",
+                "ko": "땡! 아, 아쉽네요!",
+                "th": "อุปสรรคก่อตัว ผู้พเนจรสับสน",
+                "zh-Hans": "题有困难处，疑难解不清。",
+                "zh-Hant": "題有困難處，疑難解不清。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du es durchstehst, komm zurück und sei mein Gast!",
+                "en": "If you see it through, return and be my guest!",
+                "es": "¡Si lo superas, vuelve y serás mi invitado!",
+                "fr": "Si vous avez une idée, la réponse sera révélée demain !",
+                "ja": "明日もう一度挑戦してみてください！",
+                "ko": "내일 다시 도전 하세요!",
+                "th": "หากต้องการทำให้สำเร็จ ก็เชิญกลับมาลองดูใหม่!",
+                "zh-Hans": "若有巧思出，明日复解疑！",
+                "zh-Hant": "若有巧思出，明日複解疑！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

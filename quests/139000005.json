@@ -1,0 +1,93 @@
+{
+  "id": 139000005,
+  "key": "接取任务测试",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "es": "Texto de prueba",
+    "fr": "Texte de test",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "es": "Texto de prueba",
+    "fr": "Texte de test",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "es": "Texto de prueba",
+        "fr": "Texte de test",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 139000029,
+          "mapId": 102,
+          "blueprintType": "NPC0245",
+          "name": "TsEntity_0245_157_阿水2",
+          "areaId": 0,
+          "position": {
+            "x": 14070,
+            "y": 350,
+            "z": 40
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_1.0上交活动",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hast du schon mal von <i>Der Sol-2</i> gehört, {PlayerName}?",
+                "en": "Ever heard of <i>Second Coming of Solaris</i> before, {PlayerName}?",
+                "es": "¿Alguna vez has oído hablar de «Segunda venida de Solaris» antes, {PlayerName}?",
+                "fr": "{PlayerName}, avez-vous déjà entendu parler du « Sol-2 » ?",
+                "ja": "{PlayerName}さん。「第二ソラリス」って知っていますか？",
+                "ko": "방랑자, 혹시 「세컨드 솔라리스」라고 들어보셨나요?",
+                "th": "คุณเคยได้ยินเรื่อง<i>โซลาริสที่ 2</i>มาก่อนไหม {PlayerName}?",
+                "zh-Hans": "{PlayerName}，你听说过《第二索拉》吗？",
+                "zh-Hant": "{PlayerName}，你聽說過《第二索拉》嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

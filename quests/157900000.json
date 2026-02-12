@@ -1,0 +1,538 @@
+{
+  "id": 157900000,
+  "key": "2.0巡礼之梦1",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Traumparade: Teil 1",
+    "en": "Dream Patrol I",
+    "es": "Patrulla de sueño I",
+    "fr": "Tour de rêve - I",
+    "ja": "巡礼の夢・その一",
+    "ko": "순례의 꿈 · I",
+    "th": "ลาดตระเวนฝัน I",
+    "zh-Hans": "巡礼之梦·其一",
+    "zh-Hant": "巡禮之夢·其一"
+  },
+  "desc": {
+    "de": "Du erhältst eine Nachricht von der weißen Katze von Somnoire. Sprich mit ihr in der Stadt Ragunna.",
+    "en": "You received a message from the white cat of the Somnoire. Go talk to it in Ragunna City.",
+    "es": "Has recibido un mensaje del gato blanco de Somnolencia. Ve a hablar con él en la Ciudad de Raguna.",
+    "fr": "Vous avez reçu un message du chat blanc du Somnoire. Parlez avec lui à la ville de Ragunna.",
+    "ja": "心の集域にいた白猫からの知らせを受け取ったあなた。ラグーナ城に行って、話を聞いてみよう。",
+    "ko": "「마음의 영역」에 흰 고양이의 연락을 받았습니다. 라군나 성에 가서 대화를 나누어 보죠",
+    "th": "คุณได้รับข้อความจากแมวขาวแห่งแดนจิตนิมิต ไปคุยกับมันที่เมืองรากูนน่า",
+    "zh-Hans": "收到了来自心之集域的白猫的消息，去拉古那城找它聊聊吧。",
+    "zh-Hant": "收到了來自心之集域的白貓的訊息，去拉古那城找它聊聊吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rede mit der seltsamen weißen Katze in der Stadt Ragunna",
+        "en": "Talk to the strange white cat in Ragunna City.",
+        "es": "Habla con el extraño gato blanco en la Ciudad de Raguna.",
+        "fr": "Parler au chat blanc étrange à Ragunna",
+        "ja": "ラグーナ城で奇妙な白猫と話す",
+        "ko": "라군나 성에서 기이한 흰 고양이와 대화하기",
+        "th": "คุยกับแมวขาวประหลาดในเมืองรากูนน่า",
+        "zh-Hans": "在拉古那城和奇异的白猫谈谈",
+        "zh-Hant": "在拉古那城和奇異的白貓談談"
+      },
+      "entities": [
+        {
+          "entityId": 157900579,
+          "mapId": 8,
+          "blueprintType": "NPC1044",
+          "name": "TsEntity_肉鸽_灯灯猫",
+          "areaId": 1692,
+          "position": {
+            "x": 693330,
+            "y": 580920,
+            "z": 1060
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导任务_巡礼之梦",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, {PlayerName} ... Diese Stadt ist ziemlich eigenartig, miau. Um ehrlich zu sein, ist es mein erstes Mal in Ragunna.",
+                "en": "Hello, {PlayerName}... This city is quite peculiar, meow. To be honest, it's my first time in Ragunna.",
+                "es": "Hola, {PlayerName}... Esta ciudad es bastante peculiar, miau. Para ser honesto, es mi primera vez en Raguna.",
+                "fr": "Bonjour, {PlayerName}... Cette ville est assez particulière, miaou. Pour être honnête, c'est ma première visite à Ragunna.",
+                "ja": "こんにちは、{PlayerName}……この街は本当に不思議だニャー。実は、ラグーナに来るのは初めてなんだ。",
+                "ko": "안녕하세요, {PlayerName}... 이 도시는 참 신기하네요, 냥... 사실 라군나에는 처음 와보거든요",
+                "th": "สวัสดี {PlayerName}... เมืองนี้แปลกประหลาดจริงๆ เหมียว ต้องบอกตามตรงนะนี่เป็นครั้งแรกที่ฉันมาเยือนรากูนน่า",
+                "zh-Hans": "你好，{PlayerName}……这个城市真奇喵，其实，我还是第一次来拉古那。",
+                "zh-Hant": "你好，{PlayerName}……這個城市真奇喵，其實，我還是第一次來拉古那。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Miau?",
+                    "en": "Meow?",
+                    "es": "¿Miau?",
+                    "fr": "Miaou ?",
+                    "ja": "ニャー？",
+                    "ko": "냥?",
+                    "th": "เหมียว?",
+                    "zh-Hans": "喵？",
+                    "zh-Hant": "喵？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du bist eine Katze ...",
+                    "en": "You are a cat...",
+                    "es": "Eres un gato...",
+                    "fr": "Tu es un chat...",
+                    "ja": "{Male=ニャーを付けるようになったのか？;Female=ニャーを付けるようになったの？}",
+                    "ko": "안녕하세요, 고양이",
+                    "th": "คุณเป็นแมวนี่...",
+                    "zh-Hans": "居然是喵……",
+                    "zh-Hant": "居然是喵……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Äh ... egal. Der Grund, warum ich dich kontaktiert habe, {PlayerName}, ist, dass ich deine Frequenz von Ragunna aus wahrgenommen habe.",
+                "en": "Ahem... never mind. The reason I contacted you, {PlayerName}, is because I sensed your frequency coming from Ragunna.",
+                "es": "Ejem... no importa. La razón por la que te contacté, {PlayerName}, es porque sentí tu frecuencia proveniente de Raguna.",
+                "fr": "Euh... oublie ça. {PlayerName}, je t'ai {Male=contacté;Female=contactée} parce que j'ai détecté ta fréquence venant de Ragunna.",
+                "ja": "こほん……なんでもない……実は今回{PlayerName}に連絡したのは、ラグーナからあなたの周波数を感じたからなんだ。",
+                "ko": "흠... 그건 그렇고... 사실 이번에 {PlayerName}에게 연락한 건 당신이 라군나에서 전해온 주파수 때문이에요",
+                "th": "อะแฮ่ม... ช่างเถอะนะ {PlayerName} เหตุผลที่ฉันติดต่อคุณมาก็เป็นเพราะฉันสัมผัสได้ถึงความถี่ของคุณที่มาจากรากูนน่า",
+                "zh-Hans": "咳…没什么…其实这次联系{PlayerName}，是因为我感受到了{PlayerName}在拉古那传来的频率。",
+                "zh-Hant": "咳…沒什麼…其實這次聯繫{PlayerName}，是因為我感受到了{PlayerName}在拉古那傳來的頻率。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin bloß keine Katze! Ähm, lass uns das fürs Erste beiseite lassen. Der eigentliche Grund, warum ich dich kontaktiert habe, {PlayerName}, ist, dass ich deine Frequenz von Ragunna aus wahrgenommen habe.",
+                "en": "I am not a mere cat! Ahem, let's set that aside for now. The real reason I contacted you, {PlayerName}, is because I sensed your frequency coming from Ragunna.",
+                "es": "¡No soy un mero gato! Ejem, dejemos eso de lado por ahora. La verdadera razón por la que te contacté, {PlayerName}, es porque sentí tu frecuencia proveniente de Raguna.",
+                "fr": "Je ne suis pas qu'un simple chat! Euh, mettons ça de côté pour le moment. {PlayerName}, je t'ai {Male=contacté;Female=contactée} parce que j'ai détecté ta fréquence venant de Ragunna.",
+                "ja": "いや、私は猫じゃないぞ！こほん、それはさておき、今回{PlayerName}に連絡したのは、ラグーナからあなたの周波数を感じたからなんだ。",
+                "ko": "전 고양이가 아니에요! 흠... 그것보다, 사실 이번에 {PlayerName}에게 연락한 건 당신이 라군나에서 전해온 주파수 때문이에요",
+                "th": "ฉันไม่ได้เป็นแมวธรรมดานะ! อะแฮ่ม เรื่องนั้นช่างก่อนเถอะ {PlayerName} เหตุผลจริงๆ ที่ฉันติดต่อคุณมาก็เป็นเพราะฉันสัมผัสได้ถึงความถี่ของคุณที่มาจากรากูนน่า",
+                "zh-Hans": "吾辈可不是猫！咳，先不谈这个，其实这次联系{PlayerName}，是因为我感受到了{PlayerName}在拉古那传来的频率。",
+                "zh-Hant": "吾輩可不是貓！咳，先不談這個，其實這次聯繫{PlayerName}，是因為我感受到了{PlayerName}在拉古那傳來的頻率。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ursprünglich konnte ich den Jaulenden Sumpf nicht verlassen oder Träume aus anderen Regionen sammeln, wegen der Beschränkungen der Admin-Rechte und des Resonanznexus.",
+                "en": "Originally, I couldn't leave the Whining Aix's Mire or collect dreams from other regions due to restrictions placed upon admin privileges and the Resonance Nexus.",
+                "es": "Originalmente, no podía salir del Pantano de Aix ni recoger sueños de otras regiones debido a las restricciones impuestas sobre los privilegios de administración y el Nexo de resonancia.",
+                "fr": "À l'origine, je ne pouvais pas quitter la Tourbe piaulante ou collecter des rêves d'autres régions car mon autorisation de l'administrateur est limitée par le Nexus.",
+                "ja": "管理者権限と集域中枢の制限のせいで、怨鳥の沼から離れるのも、他の地域の人の夢を集めるのも難しかった。",
+                "ko": "원래는, 관리원 권한과 영역 중추의 제한 때문에 저는 울음새 늪을 떠나기가 어려웠고 다른 구역 사람들의 꿈을 수집할 수도 없었어요",
+                "th": "แต่เดิมฉันไม่สามารถออกมาจากหนองปักษาร่ำไห้หรือเก็บความฝันจากภูมิภาคอื่นๆ ได้เพราะข้อกำหนดที่กำหนดไว้สำหรับสิทธิ์ผู้ดูแลและเรโซแนนซ์เน็กซัส",
+                "zh-Hans": "原本由于管理员权限和集域中枢的限制，我很难离开怨鸟泽，也无法收集其他区域人们的梦境。",
+                "zh-Hant": "原本由於管理員權限和集域中樞的限制我很難離開怨鳥澤，也無法收集其他區域人們的夢境。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Besonders in Rinascita, das von einem Netzwerk unzähliger Knoten verhüllt wurde, was jede Verbindung unmöglich machte, bis vor kurzem, als einer seiner Knoten plötzlich verknüpft wurde.",
+                "en": "Especially in Rinascita, which has been veiled by a network of countless nodes, making any connection impossible... until just recently, when one of its nodes suddenly linked up.",
+                "es": "Especialmente en Rinascita, que ha estado velada por una red de innumerables nodos, haciendo cualquier conexión imposible... hasta hace poco, cuando uno de sus nodos se conectó de repente.",
+                "fr": "Rinascita a été voilée par un réseau de nombreux nœuds, rendant toute connexion impossible... Pourtant, l'un de ses nœuds s'est soudainement connecté.",
+                "ja": "特にリナシータはずっとたくさんのノードでできたネットワークに覆われていて、全く繋がらなかった……さっきまでね。そしてなぜか急にその中のとあるノードに繋がったんだ。",
+                "ko": "특히 리나시타는 이제껏 수많은 노드로 구성된 네트워크에 의해 가려져 있었다 보니, 연결이 전혀 안 됐어요. 하지만 방금 전에, 그중의 어느 한 노드가 갑자기 연결되었어요",
+                "th": "โดยเฉพาะที่รินาซิตาซึ่งปกคลุมด้วยเครือข่ายโหนดนับไม่ถ้วนจนทำให้แทบจะเชื่อมต่อไม่ได้... จนกระทั่งไม่นานมานี้ที่มีโหนดหนึ่งเชื่อมต่อขึ้นมาอย่างไม่คาดคิด",
+                "zh-Hans": "特别是黎那汐塔一直以来被许多节点构成的网所遮蔽，完全无法联结……直到刚刚，其中的某个节点忽然连通。",
+                "zh-Hant": "特別是黎那汐塔一直以來被許多節點構成的網所遮蔽，完全無法聯結……直到剛剛，其中的某個節點忽然連通。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sind diese speziellen Herausforderungen „die Knoten“?",
+                    "en": "Those special challenge nodes?",
+                    "es": "¿Aquellos desafíos especiales son nodos?",
+                    "fr": "Ces défis spéciaux sont-ils posés par les nœuds?",
+                    "ja": "あの特別なチャレンジが「ノード」？",
+                    "ko": "제가 했던 도전이 바로 「노드」인가요?",
+                    "th": "โหนดท้าทายพิเศษพวกนั้นน่ะเหรอ?",
+                    "zh-Hans": "那种特殊挑战就是“节点”？",
+                    "zh-Hant": "那種特殊挑戰就是「節點」？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Genau. Ich glaube, du hast unbeabsichtigt eine einzigartige Frequenz aufgenommen, {PlayerName}. Mit den Somnoire-Proben aus Ragunna konnte ich endlich eine Verbindung zu dir aufbauen.",
+                "en": "Exactly. I believe you've unintentionally picked up a unique frequency, {PlayerName}. With the Somnoire obtaining samples from Ragunna, I was finally able to connect with you.",
+                "es": "Exactamente. Creo que has captado accidentalmente una frecuencia única, {PlayerName}. Como Somnolencia obtuvo muestras de Raguna, finalmente pude conectarme contigo.",
+                "fr": "Exactement. Je pense que tu as involontairement capté une fréquence unique, {PlayerName}. Le Somnoire a obtenu des échantillons de Ragunna, j'ai donc enfin pu me connecter avec toi.",
+                "ja": "そう、多分{PlayerName}が知らない間に特別な周波数を集めたんじゃないかな？集域がラグーナエリアのデータサンプルを得たから、こうしてあなたと繋がることができたんだ。",
+                "ko": "네, 아마도 {PlayerName}이(가) 무의식중에 어떤 특수한 주파수를 수집한 거라고 생각해요. 영역이 라군나 구역의 샘플을 획득한 후에야 당신과 연락이 됐거든요",
+                "th": "ใช่แล้ว ฉันเชื่อว่าคุณคงจับความถี่พิเศษบางอย่างได้โดยไม่ตั้งใจน่ะ {PlayerName} เมื่อแดนจิตนิมิตเก็บตัวอย่างมาได้จากรากูนน่า ฉันก็เลยสามารถเชื่อมต่อกับคุณได้ในที่สุด",
+                "zh-Hans": "是的，我想应该是{PlayerName}无意中收集了某种特别的频率？集域获取了拉古那地区的样本，我才能和你建立联系。",
+                "zh-Hant": "是的，我想應該是{PlayerName}無意中收集了某種特別的頻率？集域獲取了拉古那地區的樣本，我才能和你建立聯繫。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Seit dem letzten Vorfall arbeite ich am Somnoire und bekomme es dazu, die Aufgabe der Traumsicherung wieder aufzunehmen.",
+                "en": "Ever since the last incident, I've been working on the Somnoire, getting it to resume the task of dream backup.",
+                "es": "Desde el último incidente, he estado trabajando en Somnolencia, logrando que reanude la tarea de respaldo de sueños.",
+                "fr": "Depuis le dernier incident, j'ai travaillé sur le Somnoire pour lui faire reprendre la tâche de sauvegarde des rêves.",
+                "ja": "前回の事件の後、私は集域が本来の使命を果たせるように、夢のバックアップを続けさせたいと思っていたけど。",
+                "ko": "저번 사건 이후로 저는 영역이 계속 원래의 사명을 수행하고 꿈의 백업 임무를 완수하기를 바라 왔어요",
+                "th": "ตั้งแต่เกิดเหตุการณ์ครั้งก่อน ฉันก็จัดการแดนจิตนิมิตเพื่อให้มันกลับมาทำหน้าที่สำรองความฝันอีกครั้ง",
+                "zh-Hans": "上次的事件以后，我一直想让集域履行它原本的使命，继续完成梦境备份的任务。",
+                "zh-Hant": "上次的事件以後，我一直想讓集域履行它原本的使命，繼續完成夢境備份的任務。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich bin völlig machtlos, wenn es um Ragunnas Träume geht. Deshalb möchte ich dich bitten, weiterhin diese Herausforderungen zu meistern, {PlayerName}.",
+                "en": "But I'm completely powerless when it comes to Ragunna's dreams. So, I'd like to ask you to keep completing those challenges, {PlayerName}.",
+                "es": "Pero soy completamente impotente cuando se trata de los sueños de Raguna. Así que me gustaría pedirte que sigas completando esos desafíos, {PlayerName}.",
+                "fr": "Mais je ne peux rien faire face aux rêves de Ragunna. J'aimerais donc te demander de continuer à relever ces défis, {PlayerName}.",
+                "ja": "でも、ラグーナの夢には手が出せなくて……だからあなたに、似たようなチャレンジを続けてほしいんだ。",
+                "ko": "하지만 라군나의 꿈은 어쩔 수가 없더군요. 그래서 {PlayerName}에게 이런 도전을 계속해 달라고 부탁하고 싶은 거예요",
+                "th": "แต่พอเป็นเรื่องความฝันของรากูนน่าแล้วฉันกลับทำอะไรไม่ได้เลย ฉันก็เลยอยากขอให้คุณทำการท้าทายเหล่านั้นให้สำเร็จต่อไปน่ะ {PlayerName}",
+                "zh-Hans": "可我对于拉古那的梦境实在是无能为力，所以我想拜托{PlayerName}继续完成类似的挑战。",
+                "zh-Hant": "但我對於拉古那的夢境實在是無能為力，所以我想拜託{PlayerName}繼續完成類似的挑戰。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die meisten Traumland-Knoten sollten von {PlayerName} direkt erreichbar sein. Einige davon sind spezielle TDs zum Verlinken des Somnoires, während die anderen zu den verschmutzten Traumland-Nexus gehören.",
+                "en": "Most of the Dreamscape Nodes should be directly accessible to you, {PlayerName}. Some are special Tacet Discords linked to the Somnoire, while others are corrupted Dreamscape Nexus.",
+                "es": "La mayoría de los nodos del sueño deberían ser directamente accesibles para ti, {PlayerName}. Algunos son Disonancias Tácitas especiales vinculadas a Somnolencia, mientras que otros son nexos de sueño corruptos.",
+                "fr": "La plupart des nœuds oniriques devraient être directement accessibles à toi, {PlayerName}. Certains sont des TDs spéciaux liés au Somnoire, tandis que d'autres sont des Pôles de rêve corrompus.",
+                "ja": "ほとんどのドリームノードには、{PlayerName}は直接触れられるはずだよ。中には集域と繋がる特殊な残像や、汚染されたドリームネクサスもある。",
+                "ko": "꿈의 노드 대부분은 {PlayerName}이(가) 직접 접촉할 수 있을 거예요. 그중 어떤 것은 영역을 연결하는 특수 잔상이고, 어떤 것은 오염된 꿈의 중추예요",
+                "th": "คุณน่าจะสามารถเข้าถึงจุดเชื่อมแดนฝันส่วนใหญ่ได้โดยตรงนะ {PlayerName} บางโหนดก็เป็นทาเซ็ตดิสคอร์ดพิเศษที่เชื่อมต่อกับแดนจิตนิมิต ในขณะที่บางส่วนเป็นเน็กซัสภาพแดนฝันที่ปนเปื้อน",
+                "zh-Hans": "大部分梦境节点{PlayerName}应该是可以直接触及的，其中有些是链接集域的特殊残象，有些则是被污染的梦境枢纽。",
+                "zh-Hant": "大部分夢境節點{PlayerName}應該是可以直接觸及的，其中有些是連結集域的特殊殘象，有些則是被汙染的夢境樞紐。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedoch scheinen die Knoten des Traumlandes in Traumland-Nexus am Ende des Büßers und auf Halbinsel Fagaceae von einer unbekannten Kraft verschleiert zu sein.",
+                "en": "However, in the Fagaceae Peninsula and the Penitent's End, the Dreamscape Nodes appear to be veiled by an unknown force.",
+                "es": "Sin embargo, en la península Fagaceae y el Fin del Penitente, los nodos del sueño parecen estar velados por una fuerza desconocida.",
+                "fr": "Pourtant, ceux au Trépas du pénitent et à la Péninsule des Fagacées sont bloqués par quelque chose.",
+                "ja": "だけど、ブナ半島やペニテントの吹き溜まりでは、ノードが何か不思議な力で遮られているみたい。",
+                "ko": "그런데 「미슬토 반도」와 「탄식 무덤의 섬」에서 꿈의 네트워크 노드가 어떠한 알 수 없는 힘에 의해 가려진 것 같아요",
+                "th": "แต่ในคาบสมุทรเฟอเกซีอีและปลายทางแห่งผู้สารภาพบาป โหนดภาพแดนฝันดูเหมือนจะถูกปกคลุมด้วยพลังบางอย่างที่ไม่อาจระบุได้",
+                "zh-Hans": "不过在槲生半岛和悲叹墓岛，梦境网络的节点似乎都被某种莫名的力量遮蔽了。",
+                "zh-Hant": "不過在槲生半島和悲嘆墓島，夢境網絡的節點似乎都被某種莫名的力量遮蔽了。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das klingt kompliziert ...",
+                    "en": "That sounds complicated...",
+                    "es": "Eso suena complicado...",
+                    "fr": "Ça a l'air compliqué...",
+                    "ja": "なんだか大変そうに聞こえる……",
+                    "ko": "일이 번거로워지겠군요...",
+                    "th": "ฟังดูซับซ้อนจังนะ...",
+                    "zh-Hans": "听起来好麻烦啊……",
+                    "zh-Hant": "聽起來好麻煩啊……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist wirklich ein Kopfschmerz, miau. Der Traumland-Nexus vom Ende des Büßers ist völlig in dicken, unheimlichen Nebel gehüllt, und einige der Knoten im Traumland-Nexus des Thessaleo Hügels sind von einer seltsamen Energie geschützt.",
+                "en": "It's truly a headache, meow. Penitent's End is completely shrouded in a thick, eerie fog, and some of the nodes in Thessaleo Fells are shielded by a strange energy.",
+                "es": "Es realmente un dolor de cabeza, miau. El Fin del Penitente está completamente envuelto en una niebla espesa y misteriosa, y algunos de los nodos en las Colinas Tesaleo están protegidos por una energía extraña.",
+                "fr": "C'est vraiment un mal de tête, miaou. Le Trépas du pénitent est complètement enveloppé dans un brouillard épais et sinistre, et certains des nœuds des Hautes Terres de Thessaleo sont protégés par une énergie étrange.",
+                "ja": "本当に困ったニャー。吹き溜まりは今、全域が得体の知れない霧に覆われていて、そして海嶺の一部ノードは特殊なエナジーが充満している。",
+                "ko": "정말 골치 아파요, 냥. 무덤의 섬 전역엔 지금 짙은 안개가 자욱한 상태이고, 해저 산맥의 일부 노드는 어떤 특수한 힘으로 덮여 있어요",
+                "th": "น่าปวดหัวจริงๆ เหมียว มีหมอกน่ากลัวหนาทึบปกคลุมปลายทางแห่งผู้สารภาพบาปจนมิด ส่วนบางโหนดในคาบสมุทรเฟอเกซีอีก็ได้รับการปกป้องด้วยพลังงานแปลกๆ",
+                "zh-Hans": "真是头疼喵，墓岛目前全域都被某种幽邃的雾气所笼罩，而槲生半岛的部分节点则被一些特殊力量覆盖了。",
+                "zh-Hant": "真是頭疼喵，墓島目前全域都被某種幽邃的霧氣所籠罩，而槲生半島的部分節點則被一些特殊力量覆蓋了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Um die Knoten des Traumlandes vollständig zu verbinden, müssen diese Hindernisse beseitigt werden. Erledige die Herausforderungen, und ich werde dich entsprechend belohnen, miau.",
+                "en": "To fully connect the Dreamscape Nodes, these obstructions must be removed. Complete the challenges, and I'll reward you accordingly, meow.",
+                "es": "Para conectar completamente los nodos del sueño, estos obstáculos deben ser eliminados. Completa los desafíos, y te recompensaré en consecuencia, miau.",
+                "fr": "Pour connecter totalement les nœuds oniriques, ces obstructions doivent être éliminées. Tu passe les défis et je te récompenserai, miaou.",
+                "ja": "まずはその原因を特定して解決しないと、ドリームノードと完全に繋がらないんだ……もし本当にチャレンジをクリアしてくれたら、ちゃんと報酬を出すニャー。",
+                "ko": "가려진 상태를 우선 해결하면 꿈의 노드가 완전히 연결될 수도 있을 거예요... 도전을 완료해 준다면 저도 그에 맞는 보수를 드릴게요, 냥",
+                "th": "เพื่อให้สามารถเชื่อมต่อกับจุดเชื่อมแดนฝันได้อย่างสมบูรณ์ เราจะต้องกำจัดสิ่งกีดขวางพวกนี้ออกไป ทำการท้าทายให้สำเร็จ แล้วฉันจะมอบรางวัลให้คุณนะ เหมียว",
+                "zh-Hans": "只有先解除这些遮蔽，梦境节点才有完全连通的可能……如果真的能完成这些挑战的话，我一定会提供相应的报酬喵。",
+                "zh-Hant": "只有先解除這些遮蔽，夢境節點才有完全連通的可能……如果真的能完成這些挑戰的話，我一定會提供相應的報酬喵。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Danke, ich werde es in Betracht ziehen.",
+                    "en": "I'll think about it.",
+                    "es": "Gracias, lo consideraré.",
+                    "fr": "Je vais y penser.",
+                    "ja": "考えておく。",
+                    "ko": "생각해 볼게요",
+                    "th": "ไว้จะลองคิดดูนะ",
+                    "zh-Hans": "我会考虑的。",
+                    "zh-Hant": "我會考慮的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also gut, dann markiere ich die Standorte. Ich zähle auf dich, {PlayerName}.",
+                "en": "Alright, then. I'll mark the locations. I'm counting on you, {PlayerName}.",
+                "es": "Muy bien, entonces. Marcaré las ubicaciones. Confío en ti, {PlayerName}.",
+                "fr": "D'accord, alors. Je vais marquer les emplacements. Je compte sur toi, {PlayerName}.",
+                "ja": "うんうん、とにかく、場所は私がマークしておくから、{PlayerName}、頼んだよ。",
+                "ko": "네네, 아무튼 위치는 표기해 드릴 테니 부탁 좀 드릴게요",
+                "th": "เอาล่ะ ถ้างั้นฉันจะทำเครื่องหมายตำแหน่งต่างๆ ไว้ให้ ฝากด้วยนะ {PlayerName}",
+                "zh-Hans": "嗯嗯，总之，位置我会帮你标记出来的，就拜托{PlayerName}了。",
+                "zh-Hant": "嗯嗯，總之，位置我會幫你標記出來的，就拜託{PlayerName}了。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ... Aus meinem Instinkt ist hinter den Knoten des Traumlandes mehr verborgen. {PlayerName}, achte darauf, nach Abschluss aller Knoten in einer Region wachsam zu bleiben, miau.",
+                "en": "But... something tells me there's more hidden behind the Dreamscape Nodes. {PlayerName}, make sure to stay vigilant after completing all the nodes in a region, meow.",
+                "es": "Pero... algo me dice que hay más escondido detrás de los nodos del sueño. {PlayerName}, asegúrate de mantenerte alerta después de completar todos los nodos en una región, miau.",
+                "fr": "Mais... quelque chose me dit qu'il y a plus caché derrière les nœuds du réseau de rêve. {PlayerName}, sois toujours {Male=prudent;Female=prudente}, même après avoir passé tous les défis d'une région, miaou.",
+                "ja": "でも……野生の勘なんだろうか、ドリームノードのネットワークの裏にまだ何かが潜んでいる気がするんだ。{PlayerName}、1つの地域のノードを全部クリアしたら、気を付けてニャー。",
+                "ko": "그런데... 꿈의 노드의 네트워크에 무언가가 숨겨져 있다는 예감이 계속 들어요. 한 구역의 모든 노드를 완료하면 반드시 각별히 주의하셔야 해요",
+                "th": "แต่... สัญชาตญาณบางอย่างบอกฉันว่ายังมีอะไรมากกว่านั้นซ่อนอยู่ในจุดเชื่อมแดนฝัน {PlayerName} พอท้าทายโหนดทั้งหมดในภูมิภาคนั้นหมดแล้วคุณก็ต้องระวังตัวด้วยล่ะ เหมียว",
+                "zh-Hans": "不过……直觉告诉我，在梦境节点的网络后似乎藏着什么东西。{PlayerName}完成一个地区的全部节点后一定要多加防范喵。",
+                "zh-Hant": "不過……直覺告訴我，在夢境節點的網絡後似乎藏著什麼東西。{PlayerName}完成一個地區的全部節點後一定要多加防範喵。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导任务_巡礼之梦",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wir sind endlich verbunden, {PlayerName}. Kannst du mich hören?",
+                "en": "We're finally connected, {PlayerName}. Can you hear me?",
+                "es": "Finalmente estamos conectados, {PlayerName}. ¿Me oyes?",
+                "fr": "Nous sommes enfin connectés, {PlayerName}. Tu me reçois ?",
+                "ja": "聞こえる？{PlayerName}、やっとあなたと繋がることができたよ。",
+                "ko": "들리나요? 드디어 {PlayerName}와(과) 연결이 되었군요",
+                "th": "ในที่สุดก็ติดต่อคุณได้แล้ว {PlayerName} ได้ยินฉันหรือเปล่า?",
+                "zh-Hans": "听得到么？{PlayerName}，终于能够和你建立联系了。",
+                "zh-Hant": "聽得到嗎？{PlayerName}，終於能夠和你建立聯繫了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Was ist dieses Gefühl ... ist es ... das Somnoire?)",
+                "en": "(What is this feeling... is it... the Somnoire?)",
+                "es": "(¿Qué es esta sensación... es... Somnolencia?)",
+                "fr": "(C'est quoi cette sensation... c'est... le Somnoire?)",
+                "ja": "（……この感覚……ここは心の集域？）",
+                "ko": "(이 느낌은... 뭐지...? 마음의 영역인가...?)",
+                "th": "(ความรู้สึกนี่มันอะไรกัน... นี่คือ... แดนจิตนิมิตงั้นเหรอ?)",
+                "zh-Hans": "（怎么回事……这种感觉是……心之集域？）",
+                "zh-Hant": "（怎麼回事……這種感覺是……心之集域？）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Sorge, ich bin es nur, die weiße Katze aus dem Somnoire. Ich versuche, dich in deinem Traum zu erreichen ...",
+                "en": "Don't worry, it's just me, the White Cat from the Somnoire. I'm reaching out to you in your dream...",
+                "es": "No te preocupes, soy yo, el gato blanco de Somnolencia. Estoy contactando contigo en tu sueño...",
+                "fr": "Ne t'inquiète pas, c'est juste moi, le chat blanc du Somnoire. Je te contacte dans ton rêve...",
+                "ja": "慌てないで、私だよ、集域にいた白猫。今、夢を通してあなたと話しているんだ……",
+                "ko": "놀라지 마세요, 저예요. 영역의 흰 고양이. 지금 꿈을 통해서 방랑자와 얘기하고 있는 거예요...",
+                "th": "ไม่ต้องกังวลไป นี่ฉันเอง แมวขาวจากแดนจิตนิมิต ฉันติดต่อหาคุณผ่านความฝันน่ะ...",
+                "zh-Hans": "不要紧张，是我，集域的那只白猫，我正在通过梦境和你对话……",
+                "zh-Hant": "不要緊張，是我，集域的那隻白貓，我正在透過夢境和你對話……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt Dinge, die man am besten persönlich bespricht. Könntest du, wenn du Zeit hast, nach Ragunna kommen? Ich hätte eine Bitte an dich. Miau ...",
+                "en": "There are things best discussed face-to-face. Could you come to Ragunna City if you have the time? I need a favor from you, meow...",
+                "es": "Hay cosas que es mejor discutir cara a cara. ¿Podrías venir a la Ciudad de Raguna si tienes tiempo? Necesito un favor tuyo, miau...",
+                "fr": "Il y a des choses qu'on préfère discuter face à face. Si tu as le temps, pourrais-tu venir à la Ville de Ragunna? J'ai besoin de ton aide, miaou...",
+                "ja": "直接会って話さないと分かりにくいこともあるから、もし時間があったら、ラグーナに来てくれないかな？お願いしたいことがあるんだニャー……",
+                "ko": "이번 일은 직접 만나서 얘기해야 할 것 같아요. 시간이 나면 라군나 성으로 와줄 수 있나요? 부탁드리고 싶은 일이 있어요, 냥...",
+                "th": "มีเรื่องบางเรื่องที่คุยกันตัวต่อตัวจะดีที่สุด คุณพอมีเวลามาที่เมืองรากูนน่ามั้ย? ฉันมีเรื่องอยากขอความช่วยเหลือจากคุณน่ะ เหมียว...",
+                "zh-Hans": "有些事情可能需要当面才能说清楚，有时间的话，能来一下拉古那城么？我有些事想拜托你喵……",
+                "zh-Hant": "有些事情可能需要當面才能說清楚，有時間的話，能來一下拉古那城嗎？我有些事想拜託你喵……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

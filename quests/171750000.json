@@ -1,0 +1,2594 @@
+{
+  "id": 171750000,
+  "key": "2.2巴别塔引导任务",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Virtuelle Krise",
+    "en": "Virtual Crisis",
+    "es": "Crisis virtual",
+    "fr": "Crise virtuelle",
+    "ja": "虚無領域のクライシス",
+    "ko": "허상의 위기",
+    "th": "วิกฤตเสมือนจริง",
+    "zh-Hans": "虚域危局",
+    "zh-Hant": "虛域危局"
+  },
+  "desc": {
+    "de": "Intermittierende Hilferufe sind aus der Hafenstadt Guixu zu hören. Sie klingen seltsam vertraut. Es ist am besten, nachzusehen, was dort passiert.",
+    "en": "Intermittent cries for help can be heard from the Port City of Guixu. They sound oddly familiar. It's best to go check out what's happening.",
+    "es": "Se oyen gritos de auxilio intermitentes desde la Ciudad Portuaria de Guixu. Suenan extrañamente familiares. Es mejor ir a ver qué está pasando.",
+    "fr": "Vous avez entendu un appel au secours à proximité du Port de la ville Guixu et il paraît que vous vous souvenez de cette voix...Allons vérifier ce qui s'est passé.",
+    "ja": "帰来の港の付近から、途切れ途切れの助けを求める声が聞こえてきた。どこか聞き覚えのある声だ……とにかく、何が起こっているのか確かめに行こう。",
+    "ko": "귀허항시 부근에서 이따금씩 들려오는 구조 요청 소리, 뭔가 익숙한 듯하다... 어쨌든 어떻게 된 일인지 알아보자",
+    "th": "มีเสียงร้องขอความช่วยเหลือเป็นระยะๆ จากเมืองท่ากุยซวี เสียงเหล่านั้นฟังดูคุ้นหูแปลกๆ ควรไปตรวจสอบดูว่าเกิดอะไรขึ้น",
+    "zh-Hans": "归墟港市附近传来了一阵断断续续的呼救声，声音让人似曾相识……总之，去看看怎么回事吧。",
+    "zh-Hant": "歸墟港市附近傳來了一陣斷斷續續的呼救聲，聲音似曾相識……總之，去看看怎麼回事吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 171750000,
+          "mapId": 8,
+          "blueprintType": "NPC420081",
+          "name": "TsEntity_库洛洛420084",
+          "areaId": 606,
+          "position": {
+            "x": -120243,
+            "y": 214596,
+            "z": 193
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 171750001,
+          "mapId": 8,
+          "blueprintType": "NPC420081",
+          "name": "TsEntity_库洛洛420085",
+          "areaId": 606,
+          "position": {
+            "x": -120242,
+            "y": 214589,
+            "z": 204
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_巴别塔",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Endlich taucht jemand auf! Mein Stimmmodul stand fast kurz davor, vor lauter Geschrei in die Luft zu gehen!",
+                "en": "Finally, someone shows up! My voicebox was about to explode from all the yelling I've been doing!",
+                "es": "Fiu. Ya era hora de que apareciera alguien. Mi dispositivo fonador estaba por sobrecalentarse por todos los gritos que estaba dando",
+                "fr": "Enfin quelqu'un ! J'allais détruire mes modules vocales à force de hurler !",
+                "ja": "やっと来テくれましたネ、発声ユニットが壊レルところデシタヨ。",
+                "ko": "드디어 누군가 왔네요. 발성부가 다 쉴 뻔했는데",
+                "th": "ในที่สุดก็มีคนมา! ตะโกนจนกล่องเสียงฉันจะระเบิดอยู่แล้วเนี่ย!",
+                "zh-Hans": "总算有人来了，我的发声单元都快喊哑了。",
+                "zh-Hant": "總算有人來了，我的發聲單元都快喊啞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Warte mal. Du bist {Male=ein Blütenträger;Female=eine Blütenträgerin}. Kannst du mich zur Reparatur zu den Schwarzen Küsten zurückbringen?",
+                "en": "...Hold on a sec. You're a Bloom Bearer. Can you bring me back to the Black Shores for repairs?",
+                "es": "Un segundo. Eres {Male=un Portador de Flor;Female=una Portadora de Flor}. ¿Puedes llevarme a Costa Negra para repararme?",
+                "fr": "... Une seconde. Tu es {Male=un porteur de fleur;Female=une porteuse de fleur}. Peux-tu me ramener au Littoral noir pour me réparer ?",
+                "ja": "……アナタは、花持ちデスカ？私をブラックショアまで送ってもらえマセンカ？",
+                "ko": "...잠시만요. 혹시... 흑화 집사 맞죠? 절 검은 해안으로 데려가 수리해 주실 수 있을까요?",
+                "th": "...เดี๋ยวนะ คุณคือผู้ครองผกานี่นา พาฉันกลับไปซ่อมที่แบล็กชอร์หน่อยได้มั้ย",
+                "zh-Hans": "……等下，你是一名执花？能带我回黑海岸检修吗？",
+                "zh-Hant": "……等一下，你是一名執花？能帶我回黑海岸檢修嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué pasó?",
+                    "fr": "Que s'est-il passé ?",
+                    "ja": "{Male=どうしたんだ？;Female=どうしたの？}",
+                    "ko": "어떻게 된 거죠?",
+                    "th": "เกิดอะไรขึ้น",
+                    "zh-Hans": "你怎么了？",
+                    "zh-Hant": "你怎麼了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mich hat ein Haufen TDs überfallen. Mit all meinen Schrauben und Muttern bin ich nur knapp davongekommen – aber ich glaube, mir ist dabei die Antriebswelle abgerissen!",
+                "en": "I got jumped by a bunch of TDs. Barely escaped with my nuts and bolts, but I think I did bust a drive shaft.",
+                "es": "Me sorprendió un grupo de Disonancias Tácitas Apenas escapé con mis tornillos, pero creo que averié un eje motor.",
+                "fr": "Je me suis fait attaquer par des Tacet Discords. J'ai failli y laisser mes boulons et mes écrous, mais je crois que j'ai abîmé un arbre de transmission.",
+                "ja": "さっき残像に襲われテ、何トカ逃げ出せたんデス。デモ、何かドライブシャフトに引っかかっタミタイデ……",
+                "ko": "방금 잔상에 습격당했어요. 도망치긴 했지만, 전동축이 돌아가지 않는 것 같네요",
+                "th": "โดนพวกทาเซ็ตดิสคอร์ดจู่โจมน่ะ หนีรอดหวุดหวิดแบบยังเหลือเศษน็อตกับโบลต์ แต่เหมือนเพลาขับจะพังไปแล้ว",
+                "zh-Hans": "我刚才被残象袭击了，虽然成功逃了出来，但传动轴好像卡住了。",
+                "zh-Hant": "我剛才被殘象襲擊了，雖然成功逃了出來，但傳動軸好像卡住了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lass mich kurz einen Blick darauf werfen.",
+                    "en": "Let me take a look at it.",
+                    "es": "Déjame echarle un vistazo.",
+                    "fr": "Je vais y jeter un œil.",
+                    "ja": "ちょっと見せて。",
+                    "ko": "제가 한 번 봐 드릴게요",
+                    "th": "ขอดูหน่อยสิ",
+                    "zh-Hans": "我先帮你看看。",
+                    "zh-Hant": "我先幫你看看。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich hatte schon mit Wächterkonstrukten zu tun.",
+                    "en": "I've worked on Sentry Constructs before.",
+                    "es": "Hasta el Constructo Guardia puedo arreglar.",
+                    "fr": "J'ai déjà travaillé sur ce genre de choses.",
+                    "ja": "{Male=実は俺、「ゼノコロッサス」も直せるんだ。;Female=実は私、「ゼノコロッサス」も直せるの。}",
+                    "ko": "사실 전 「이성(異性) 무장」도 수리할 수 있거든요",
+                    "th": "ฉันเคยซ่อมแซม Sentry Construct มาก่อน",
+                    "zh-Hans": "其实我连「异构武装」都会修。",
+                    "zh-Hant": "其實我連「異構武裝」都會修。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, aber bitte doch. Das sollte das sein, was meine „Beine“ verbindet.",
+                "en": "Oh, please do. It should be the one connecting my \"feet.\"",
+                "es": "Ah, por favor. Debería ser el que conecta mis «pies».",
+                "fr": "Oh, je t'en prie. Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "お願いシマス。恐らく「足」部分に問題ガあるかト。",
+                "ko": "부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "ช่วยหน่อยนะ น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "麻烦你了，问题应该就出在我的“脚”上。",
+                "zh-Hant": "麻煩你了，問題應該就出在我的「腳」上。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, wirklich? Könntest du dir das kurz anschauen? Das sollte das sein, was meine „Beine“ verbindet.",
+                "en": "Oh, really? You mind taking a look at it? It should be the one connecting my \"feet.\"",
+                "es": "Ah, ¿de veras? ¿Te importa echarle un vistazo? Debería ser el que conecta mis «pies».",
+                "fr": "Oh, vraiment ? Ça te dérange d'y jeter un œil ? Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "本当ニ？デハ助けてもらえマスカ、恐らく「足」部分に問題ガあるかト。",
+                "ko": "정말요? 그럼 부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "จริงเหรอ งั้นช่วยดูให้หน่อยได้มั้ย น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "真的？麻烦你帮我看看，问题应该就出在我的“脚”上。",
+                "zh-Hant": "真的？麻煩你幫我看看，問題應該就出在我的「腳」上。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gar nicht gut. Ich glaube, ich verliere sie langsam. Da unten fühlt sich alles taub an – als hätten meine Sensoren plötzlich Urlaub genommen!",
+                "en": "Not good. I think I'm starting to lose them. Everything feels numb down there...",
+                "es": "Creo que estoy empezando a perderlos. Siento todo adormecido...",
+                "fr": "C'est mauvais signe. Je crois que je commence à les perdre. Je suis tout engourdi en bas...",
+                "ja": "参っタ、足がダメかもしれナイ、もう感覚ガ……",
+                "ko": "어떡하죠. 발을 잃을 수도 있을 것 같네요. 아무런 감각이 없어요",
+                "th": "แย่แล้ว ฉันเริ่มไม่รู้สึกถึงมันแล้ว ทุกอย่างข้างล่างมันชาไปหมดเลย...",
+                "zh-Hans": "不好，我感觉我要失去它们了，那里已经失去知觉了……",
+                "zh-Hant": "不好，我感覺我要失去它們了，那裡已經失去知覺了……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Anstupsen.)",
+                    "en": "(Give it a poke.)",
+                    "es": "(Darle un toque).",
+                    "fr": "(Donner un petit coup.)",
+                    "ja": "（つっついてみる）",
+                    "ko": "(찔러본다)",
+                    "th": "(ลองจิ้มดู)",
+                    "zh-Hans": "（戳一戳）",
+                    "zh-Hant": "（戳一戳）"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Ein paar Mal darauf klopfen und abwarten, was passiert.)",
+                    "en": "(Knock it a few times and see what happens.)",
+                    "es": "(Golpearlo algunas veces y ver qué sucede).",
+                    "fr": "(Frapper plusieurs fois pour voir ce qu'il se passe.)",
+                    "ja": "（とりあえず叩いてみる）",
+                    "ko": "(우선 두들겨본다)",
+                    "th": "(เคาะสักสองสามครั้งแล้วรอดูอาการ)",
+                    "zh-Hans": "（先敲一敲试试）",
+                    "zh-Hant": "（先敲一敲試試）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was auch immer du da für einen Zaubertrick angewendet hast, der wirkt Wunder.\nNach ein paar Scheppern und Ächzen steht Kuroro langsam wieder auf seinen „Beinen“.",
+                "en": "Whatever magic trick you used seems to work wonders. \nAfter a few clanks and creaks, the KU-Roro slowly gets back to its \"feet.\"",
+                "es": "Parece que el truco de magia que usaste hizo maravillas.\nDespués de algunos ruidos y crujidos, el KU-Roro se pone lentamente de «pie».",
+                "fr": "Votre tour de magie semble faire des merveilles.\nAprès quelques cliquetis et grincements, le petit robot se dresse lentement sur ses « pieds ».",
+                "ja": "意外にも効果があったようだ――\nガタガタとパーツが動きだして、ロボットはゆっくりと浮きあがった。",
+                "ko": "그 행동이 의외로 효과가 있었다.\n삐걱삐걱 대는 소리가 끝나자, 눈앞의 쿠 · 로로가 천천히 떠올랐다",
+                "th": "ไม่รู้ว่าทำอะไรไปแต่มันได้ผล \nหลังจากส่งเสียงเอี๊ยดอ๊าดสักพัก KU-Roro ก็ใช้ \"เท้า\" ของมันยืนขึ้นมาได้อีกครั้ง",
+                "zh-Hans": "你的尝试起到了出人意料的效果——\n在一阵吱嘎吱嘎的声音过后，眼前的库洛洛缓缓地浮了起来。",
+                "zh-Hant": "你的嘗試起到了出人意料的效果——\n在一陣吱嘎吱嘎的聲音過後，眼前的庫洛洛緩緩地浮了起來。"
+              },
+              "id": 7
+            },
+            {
+              "text": {
+                "de": "Ku, ku. Alle Systeme stabil. Ich, KU-Crash, bin zurück und bereit loszulegen",
+                "en": "Ku, ku. All systems normal. I, KU-Cage, am back and ready to rock and roll!",
+                "es": "Ku, ku. Todos los sistemas normales. Yo, KU-Cage, estoy de regreso y a disposición para actuar.",
+                "fr": "Ku, ku. Systèmes opérationnels. Moi, KU-Cage, suis de retour et prêt à assurer !",
+                "ja": "クク、シグナルに接続。私――クリーズ、完全復活デス！",
+                "ko": "쿠쿠, 신호 완벽. 나 쿠 · 카기 부활!",
+                "th": "คุ คุ ทุกระบบทำงานปกติ KU-Cage ผู้นี้พร้อมที่จะลุยแล้ว!",
+                "zh-Hans": "库库，信号状态良好。我——库卡基完全复活了。",
+                "zh-Hant": "庫庫，信號狀態良好。我——庫卡基完全復活了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dankeschön! Du bist das, was man drüben in Huanglong einen Wunderheiler nennt.",
+                "en": "Thank you! You're what they call a miracle worker over in Huanglong.",
+                "es": "¡Gracias! Eres lo que en Huanglong llaman una persona milagrosa.",
+                "fr": "Merci ! À Huanglong, on appellerait ce que tu viens de faire un miracle.",
+                "ja": "大変感謝シマス。瑝瓏の言葉で言うト、大恩人、まさに「<ano=みょうしゅかいしゅん>妙手回春</ano>」デスネ。",
+                "ko": "정말 고마워요. 황룡의 말로 하자면, 은인이시여, 당신은 훌륭한 솜씨를 가진 의사님이시네요",
+                "th": "ขอบคุณมาก! ที่หวงหลงเค้าเรียกคนแบบคุณว่ามือปาฏิหาริย์เลยนะ",
+                "zh-Hans": "非常感谢。用瑝珑的话说，恩人，你真是妙手回春。",
+                "zh-Hant": "非常感謝。用瑝瓏的話說，恩人，你真是妙手回春。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "… Wie bist du hier gelandet?",
+                    "en": "...How did you end up here?",
+                    "es": "¿Cómo terminaste aquí?",
+                    "fr": "... Comment as-tu fini ici ?",
+                    "ja": "{Male=なぜクリーズがここに？;Female=どうしてクリーズがここに？}",
+                    "ko": "...왜 이곳에 계신 거죠?",
+                    "th": "...ทำไมถึงมาอยู่ที่นี่ได้",
+                    "zh-Hans": "……你怎么会出现在这？",
+                    "zh-Hant": "……你怎麼會出現在這？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich habe Umgebungsdaten für einen Kampfsimulator gesammelt, an dem wir drüben bei den Schwarzen Küsten arbeiten.",
+                "en": "I was gathering environmental data for a combat simulator we're working on over at the Black Shores.",
+                "es": "Estaba recopilando datos ambientales para el simulador de combate que estamos desarrollando en Costa Negra.",
+                "fr": "Je rassemblais des données environnementales pour un simulateur de combat sur lequel nous travaillons au Littoral noir.",
+                "ja": "実は、ブラックショアが開発中のシミュレーションプログラムのために、環境データを収集しているのデス。",
+                "ko": "사실, 전 검은 해안에서 개발 중인 훈련 프로그램을 위해 환경 데이터를 수집하고 있었어요",
+                "th": "ฉันกำลังรวบรวมข้อมูลสภาพแวดล้อมสำหรับเครื่องจำลองการต่อสู้ที่เรากำลังพัฒนาอยู่ที่แบล็กชอร์",
+                "zh-Hans": "其实，我在为黑海岸开发中的一个演练程序收集环境数据。",
+                "zh-Hant": "其實，我在為黑海岸開發中的一個演練程式收集環境數據。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er verwendet Daten aus ganz Solaris-3, <color=yellow>um Krisen zu simulieren, bei denen die Kampffähigkeiten der Teilnehmer unter extremen Bedingungen auf die Probe gestellt werden</color>.",
+                "en": "It uses data from all over Solaris-3, to <color=yellow>simulate Crisis Trials that put the combat capabilities of its participants to the test under extreme conditions</color>.",
+                "es": "Usa datos de todo Solaris-3, para <color=yellow>simular pruebas de crisis que ponen a prueba las habilidades de combate de sus participantes en condiciones extremas</color>.",
+                "fr": "Il utilise les données de Solaris-3 pour <color=yellow>simuler des épreuves de crise qui mettent les capacités de combat de ses participants à l'épreuve dans des conditions extrêmes</color>.",
+                "ja": "このプログラムは、ソラリスの各エリアデータと過去ログに基づキ、<color=yellow>「危機的状況」をシミュレートし、厳しい条件下デ挑戦者の実戦能力を検証することがデキマス</color>。",
+                "ko": "이 프로그램은 솔라리스 여러 곳의 데이터와 과거 사례를 분석해 <color=yellow>「위기 상황」을 시뮬레이션하는 방식이에요. 도전자는 가혹한 조건 속에서 실전 능력을 테스트할 수 있죠</color>",
+                "th": "มันจะใช้ข้อมูลจากทั่วทั้งโซลาริส-3 เพื่อ<color=yellow>จำลองบททดสอบวิกฤตที่ทดสอบความสามารถในการต่อสู้ของผู้เข้าร่วมท่ามกลางสภาวะสุดโหด</color>",
+                "zh-Hans": "它可以根据索拉里斯各地数据和过往案例<color=yellow>模拟出一些「危机情景」，从而检验挑战者在严苛条件下的实战能力</color>。",
+                "zh-Hant": "它可以根據索拉里斯各地數據和過往案例<color=yellow>模擬出一些「危機情景」，從而檢驗挑戰者在嚴苛條件下的實戰能力</color>。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Krisen? In welcher Form …?",
+                    "en": "Crisis Trials? As in…?",
+                    "es": "¿Pruebas de crisis?",
+                    "fr": "Des épreuves de crise ? Comme... ?",
+                    "ja": "{Male=どんな危機的状況なんだ？;Female=どんな危機的状況なの？}",
+                    "ko": "「위기 상황」은 어떤 걸 말하는 거죠?",
+                    "th": "บททดสอบวิกฤตเหรอ หมายถึง...?",
+                    "zh-Hans": "什么是危机情景？",
+                    "zh-Hant": "什麼是危機情景？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie die TD-Ausbrüche entlang der Grenze zu Jinzhou oder der Nebel, der das Ende des Büßers in Ragunna verschlang …",
+                "en": "Like the TD outbreaks along the Jinzhou borders, or the mist swallowing up Penitent's End in Ragunna...",
+                "es": "Como los brotes de Disonancias Tácitas a lo largo de la frontera de Jinzhou, o la niebla que devora Fin del Penitente en Raguna...",
+                "fr": "Comme les Éruptions de Tacet Discords aux frontières de Jinzhou, ou la brume qui enveloppe le Trépas du pénitent à Ragunna...",
+                "ja": "例エバ、今州の辺境地帯に残像潮が現れタリ、ラグーナの吹き溜まりが海霧に呑み込まれタリナド……",
+                "ko": "예를 들면, 금주 변경에 잔상류가 나타난다던가, 라군나의 무덤의 섬이 바다안개에 뒤덮였다거나...",
+                "th": "ก็เหมือนการบุกของทาเซ็ตดิสคอร์ดตามชายแดนของจินโจว หรือม่านหมอกที่กลืนกินปลายทางแห่งผู้สารภาพบาปในรากูนน่า...",
+                "zh-Hans": "比如今州的边境出现了残象潮，拉古那的那座墓岛被海雾淹没……",
+                "zh-Hant": "比如今州的邊境出現了殘象潮，拉古那的那座墓島被海霧淹沒……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "All dies sind selbstverständlich nur Simulationen und keine tatsächlichen Krisen. Kein Grund zur Sorge.",
+                "en": "Of course, these are all just simulations, not actual crises. No need to worry.",
+                "es": "Por supuesto que estas son solo simulaciones, no son crisis reales. No hay de qué preocuparse.",
+                "fr": "Bien sûr, ce ne sont que des simulations, pas de véritables crises. Inutile de s'inquiéter.",
+                "ja": "もちろん、シミュレーションですノデ、実際の危機ではアリマセン。",
+                "ko": "물론, 전부 실제 상황은 아니죠",
+                "th": "แน่นอนว่าทุกอย่างเป็นแค่การจำลอง ไม่ใช่วิกฤตของจริง ไม่ต้องกังวล",
+                "zh-Hans": "当然，那都是模拟的产物，并不是真实发生的危机。",
+                "zh-Hant": "當然，那都是模擬的產物，並不是真實發生的危機。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Den Teilnehmern steht es frei, <color=yellow>die Simulationen und den Schwierigkeitsgrad nach ihren Wünschen anzupassen</color>.",
+                "en": "Participants are free to <color=yellow>make adjustments to the simulations and customize the difficulty to suit their preferences</color>.",
+                "es": "Los participantes tienen la libertad de <color=yellow>modificar las simulaciones y personalizar la dificultad para que se adapte a sus preferencias</color>.",
+                "fr": "Les participants sont libres d'<color=yellow>apporter des ajustements aux simulations et d'adapter la difficulté selon leurs préférences</color>.",
+                "ja": "挑戦者は<color=yellow>プログラムで生成されたシミュレーション領域を調整して、実力に応じタ難易度をカスタマイズできマス</color>。",
+                "ko": "도전자는 <color=yellow>프로그램이 생성한 시뮬레이션 영역 난이도를 자신에 맞게 조정</color> 할 수 있죠",
+                "th": "ผู้เข้าร่วมสามารถ<color=yellow>ปรับแต่งการจำลองและเปลี่ยนระดับความยากให้เหมาะกับความต้องการ</color>ได้อย่างอิสระ",
+                "zh-Hans": "挑战者可以<color=yellow>对程序生成的模拟领域进行调整，定制适合自己的难度</color> 。",
+                "zh-Hant": "挑戰者可以<color=yellow>對程式生成的模擬領域進行調整，訂製適合自己的難度</color> 。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Für alle, die es etwas spannender mögen, gibt es eine <color=yellow>Auswahl an Stressmodulen, die den Schwierigkeitsgrad erhöhen und einen in extremste Szenarien versetzen</color>.",
+                "en": "For those looking to spice things up, there'll be a <color=yellow>selection of Stress Modules available to ramp up the difficulty and throw you in the most extreme scenarios imaginable</color>.",
+                "es": "Para aquellas personas que buscan un desafío, habrá una <color=yellow>selección de módulos de carga disponibles para aumentar la dificultad, que supondrá los escenarios más extremos imaginables</color>.",
+                "fr": "Pour ceux qui cherchent à pimenter les choses, une <color=yellow>sélection de Modules de chargement permettront d'augmenter la difficulté et de vous plonger dans les scénarios les plus extrêmes</color>.",
+                "ja": "極限まで極めたい挑戦者ナラ、<color=yellow>様々な「ペイロードモジュール」を装着シたママ、最高難易度に挑むことも可能デス</color>。",
+                "ko": "극한을 추구하는 도전자들은 <color=yellow>「고위험 모듈」을 장착해, 상황 난이도를 최고 수치</color>까지 올릴 수 있거든요",
+                "th": "หากต้องการความท้าทายเพิ่มเติม ก็จะมี<color=yellow>โมดูลความเครียดให้เลือกเพื่อใช้เพิ่มความยาก และพาคุณเข้าสู่สถานการณ์ที่ดุเดือดที่สุดเท่าที่จะเป็นไปได้</color>",
+                "zh-Hans": "对于追求极限的挑战者，他们可以<color=yellow>通过装配各种「负荷模组」，将这些情景的难度提升到前所未有的绝境</color>。",
+                "zh-Hant": "對於追求極限的挑戰者，他們可以<color=yellow>透過裝配各種「負荷模組」，將這些情景的難度提升到前所未有的絕境</color>。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alle gesammelten Kampfdaten werden als Referenzwerte für künftige Einsätze der Schwarzen Küsten im Rahmen der Krisenbewältigung dienen.",
+                "en": "All combat data collected will serve as benchmarks for future Black Shores field missions in crisis response.",
+                "es": "Todos los datos de combate obtenidos servirán como parámetros para futuras misiones de campo de la Costa Negra en respuesta a las crisis.",
+                "fr": "Les données de combat collectées serviront de référence pour répondre aux situations de crise des futures missions de terrain du Littoral noir.",
+                "ja": "プログラムは挑戦中のデータを記録シ、ブラックショアが将来ノ危機対応資料として使いマス。",
+                "ko": "프로그램 콘솔에서는 도전 과정에서 생긴 모든 데이터를 기록해, 앞으로 검은 해안의 위기 대응을 위한 외근 임무에 참고 자료로 사용되죠",
+                "th": "ข้อมูลการต่อสู้ทั้งหมดที่รวบรวมมาจะถูกใช้เป็นเกณฑ์สำหรับภารกิจภาคสนามของแบล็กชอร์ในการรับมือวิกฤตในอนาคต",
+                "zh-Hans": "程序后台将记录下挑战过程中所产生的数据，为黑海岸日后应对危机的外勤任务提供参考。",
+                "zh-Hant": "程式後台將記錄下挑戰過程中所產生的數據，為黑海岸日後應對危機的外勤任務提供參考。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin beeindruckt.",
+                    "en": "I'm sold.",
+                    "es": "Me convenciste.",
+                    "fr": "Vendu.",
+                    "ja": "{Male=俺もやってみたい。;Female=私もやってみたい。}",
+                    "ko": "저도 한번 해보고 싶네요",
+                    "th": "น่าสนใจนะ",
+                    "zh-Hans": "我也想试试。",
+                    "zh-Hant": "我也想試試。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Mal sehen, wie schwierig es wird.",
+                    "en": "Let's see how difficult it can be.",
+                    "es": "Veamos qué tan difícil puede ser.",
+                    "fr": "Voyons si c'est si difficile.",
+                    "ja": "どれほどの窮地なのか試させてもらうよ。",
+                    "ko": "얼마나 어려운지 궁금하네요",
+                    "th": "ขอลองหน่อยว่าจะยากสักแค่ไหน",
+                    "zh-Hans": "我倒要看看能有多难。",
+                    "zh-Hant": "我倒要看看有多難。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Als Sicherheitsmaßnahme steht diese Simulation nur bestimmten Blütenträgern und Beratern zur Verfügung, die die Kriterien erfüllen. Doch ich kann sofort eine Bewertung für dich durchführen.",
+                "en": "As a safety precaution, this simulation is only available to certain Bloom Bearers and Consultants who meet the criteria. But I can run an evaluation for you right now.",
+                "es": "Como medida de seguridad, esta simulación solo está disponible para ciertos Portadores de Flores y Consultores que cumplen con los criterios. Pero puedo hacer una evaluación por ti ahora mismo.",
+                "fr": "Par précaution, cette simulation n'est disponible qu'aux porteurs de fleur et consultants qui remplissent les conditions, mais je peux t'évaluer tout de suite.",
+                "ja": "安全を考慮シ、一部の実力アル花持ちや協力者にノミ開放されてイマス。参加希望ナラ登録してあげマスヨ。",
+                "ko": "안전상의 이유로, 현재는 기준에 부합되는 소수의 흑화 집사와 초청 멤버들만 대상으로 하고 있죠. 제가 참여할 수 있게 처리해 드릴게요",
+                "th": "เพื่อความปลอดภัย การจำลองนี้จะเปิดให้เฉพาะกับผู้ครองผกาและที่ปรึกษาที่ผ่านเกณฑ์เท่านั้น แต่ฉันประเมินผลให้คุณตอนนี้เลยก็ได้",
+                "zh-Hans": "出于安全性考虑，它目前只面向少数实力符合标准的执花和客卿。我可以替你处理一下。",
+                "zh-Hant": "出於安全性考慮，它目前只面向少數實力符合標準的執花和客卿。我可以替你處理一下。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… So, jetzt kannst du direkt von deinem Terminal aus auf die Simulationen zugreifen.",
+                "en": "...There, you can now access the simulator directly from your Terminal.",
+                "es": "Ya está, ya puedes acceder al simulador directamente desde tu terminal.",
+                "fr": "... Voilà, tu peux désormais accéder au simulateur directement depuis ta borne.",
+                "ja": "……これで、デバイスからテストに参加できるようになりマシタ。",
+                "ko": "...이제, 단말기를 통해 테스트에 참여하실 수 있어요",
+                "th": "...เรียบร้อย คุณสามารถเข้าสู่การจำลองโดยตรงจากเทอร์มินัลได้เลย",
+                "zh-Hans": "……现在，你可以直接通过终端参与测试了。",
+                "zh-Hant": "……現在，你可以直接透過終端參與測試了。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ging schnell.",
+                    "en": "That was quick.",
+                    "es": "Eso fue rápido.",
+                    "fr": "C'était rapide.",
+                    "ja": "{Male=速いな。;Female=速いね。}",
+                    "ko": "엄청 빠르네요?",
+                    "th": "แค่นั้นเองเหรอ",
+                    "zh-Hans": "这么快？",
+                    "zh-Hant": "這麼快？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, natürlich. Die Aufzeichnungen zeigen, dass du {Male=ein Elite-Blütenträger;Female=eine Elite-Blütenträgerin} der Schwarzen Küsten bist. Das war reine Formsache.",
+                "en": "Well, yes. Records show you are an elite Bloom Bearer of the Black Shores. It was an easy pass.",
+                "es": "Bueno, sí. Los registros indican que eres {Male=un Portador de Flor;Female=una Portadora de Flor} de élite de la Costa Negra. Aprobaste con facilidad.",
+                "fr": "Eh bien, oui. Les archives indiquent que tu fais partie des porteurs de fleur d'élite du Littoral noir. C'était du gâteau.",
+                "ja": "エエ。あなたはブラックショアのエリート花持ちトシテ、元々挑戦資格をクリアしているノデスヨ。",
+                "ko": "네, 당신은 검은 해안의 정예 흑화 집사니까요. 테스트 기준에 당연히 부합되죠",
+                "th": "ใช่แล้ว บันทึกระบุว่าคุณคือผู้ครองผการะดับอีลีทของแบล็กชอร์ แบบนี้ผ่านฉลุย",
+                "zh-Hans": "是的，因为你作为黑海岸的精英执花，本就达到了参与测试的标准。",
+                "zh-Hant": "是的，因為你作為黑海岸的精英執花，本就達到了參與測試的標準。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du kannst natürlich jederzeit eine Simulation durchführen, wenn du dazu bereit bist.",
+                "en": "Feel free to conduct a simulation whenever you're ready.",
+                "es": "Puedes ejecutar una simulación cuando quieras.",
+                "fr": "N'hésite pas à lancer une simulation quand tu le voudras.",
+                "ja": "ツマリ、もうイツでも挑戦開始デキマスヨ。",
+                "ko": "아무튼, 자유롭게 도전을 시작하세요",
+                "th": "คุณพร้อมเมื่อไรก็เริ่มการจำลองได้เลย",
+                "zh-Hans": "总之，请自由地开始挑战吧。",
+                "zh-Hant": "總之，請自由地開始挑戰吧。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_巴别塔",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo …? Ist hier jemand? Ich könnte etwas Hilfe gebrauchen …",
+                "en": "Hello...? Is anyone there? Need some help over here...",
+                "es": "¿Hola...? ¿Hay alguien ahí? Necesito ayuda aquí...",
+                "fr": "Bonjour... ? Il y a quelqu'un ? J'ai besoin d'aide...",
+                "ja": "ドナタカ……助ケテ……",
+                "ko": "거기 누구 있어요? 도와주세요...",
+                "th": "ฮัลโหล... มีใครอยู่มั้ย ต้องการความช่วยเหลือหน่อยน่ะ...",
+                "zh-Hans": "附近有人吗……帮帮忙……",
+                "zh-Hant": "附近有人嗎……幫幫忙……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ugh, ich hab keinen Empfang … Das ist schlecht. Bald sind die Batterien leer …",
+                "en": "Ugh, can't get a signal... This is bad. I'll run out of batteries soon...",
+                "es": "Agh, no recibo ninguna señal... Esto es malo. Me quedaré sin baterías pronto...",
+                "fr": "Argh, je n'ai pas de signal... Je n'aurai bientôt plus de batterie... Je suis dans le pétrin.",
+                "ja": "シグナル反応ナシ……このママじゃ、バッテリーがエンプティーに……",
+                "ko": "신호도 끊겼고... 조금 있으면 기기도 곧 꺼질 텐데...",
+                "th": "อึก ไม่มีสัญญาณเลย... แย่แล้ว แบตจะหมดแล้วด้วยสิ...",
+                "zh-Hans": "信号也断了……这样下去，机体很快就要没电了……",
+                "zh-Hant": "信號也斷了……這樣下去，機體很快就要沒電了……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_巴别塔",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Puh. Es wurde auch Zeit, dass jemand auftaucht. Mein Stimmbox überhitzt gleich von dem ganzen Geschrei.",
+                "en": "Finally, someone shows up! My voicebox was about to explode from all the yelling I've been doing!",
+                "es": "Fiu. Ya era hora de que apareciera alguien. Mi dispositivo fonador estaba por sobrecalentarse por todos los gritos que estaba dando",
+                "fr": "Pfiou. Il était temps que quelqu'un vienne. Ma boîte vocale est sur le point de surchauffer avec tous mes cris.",
+                "ja": "やっと来テくれましたネ、発声ユニットが壊レルところデシタヨ。",
+                "ko": "드디어 누군가 왔네요. 발성부가 다 쉴 뻔했는데",
+                "th": "ในที่สุดก็มีคนมา! ตะโกนจนกล่องเสียงฉันจะระเบิดอยู่แล้วเนี่ย!",
+                "zh-Hans": "总算有人来了，我的发声单元都快喊哑了。",
+                "zh-Hant": "總算有人來了，我的發聲單元都快喊啞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kannst du mir vielleicht helfen, jemanden von den Schwarzen Küsten zu finden?",
+                "en": "Do you think you can help me find someone from the Black Shores?",
+                "es": "¿Crees que puedes ayudarme a encontrar a alguien en la Costa Negra?",
+                "fr": "Tu penses pouvoir m'aider à trouver quelqu'un du Littoral noir ?",
+                "ja": "ブラックショアの人を呼んできてもらえマセンカ？",
+                "ko": "검은 해안 사람을 찾는 걸 도와주시겠어요?",
+                "th": "พอจะช่วยตามหาคนจากแบล็กชอร์ให้หน่อยได้มั้ย",
+                "zh-Hans": "你能帮我找来黑海岸的人吗？",
+                "zh-Hant": "你能幫我找來黑海岸的人嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué pasó?",
+                    "fr": "Que s'est-il passé ?",
+                    "ja": "{Male=どうしたんだ？;Female=どうしたの？}",
+                    "ko": "어떻게 된 거죠?",
+                    "th": "เกิดอะไรขึ้น",
+                    "zh-Hans": "你怎么了？",
+                    "zh-Hant": "你怎麼了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mich hat ein Haufen TDs überfallen. Bin nur knapp mit meinen Schrauben und Muttern davongekommen, aber ich glaube, ich habe mir dabei eine Antriebswelle gebrochen.",
+                "en": "I got jumped by a bunch of TDs. Barely escaped with my nuts and bolts, but I think I did bust a drive shaft.",
+                "es": "Me sorprendió un grupo de Disonancias Tácitas Apenas escapé con mis tornillos, pero creo que averié un eje motor.",
+                "fr": "Je me suis fait attaquer par des Tacet Discords. J'ai failli y laisser mes boulons et mes écrous, et je crois que j'ai abîmé un arbre de transmission par la même occasion.",
+                "ja": "さっき残像に襲われテ、何トカ逃げ出せたんデス。ところガ、何かガドライブシャフトに引っかかったミタイデ……",
+                "ko": "방금 잔상에 습격당했어요. 도망치긴 했지만, 전동축이 돌아가지 않는 것 같네요",
+                "th": "โดนพวกทาเซ็ตดิสคอร์ดจู่โจมน่ะ หนีรอดหวุดหวิดแบบยังเหลือเศษน็อตกับโบลต์ แต่เหมือนเพลาขับจะพังไปแล้ว",
+                "zh-Hans": "我刚才被残象袭击了，虽然成功逃了出来，但传动轴好像卡住了。",
+                "zh-Hant": "我剛才被殘象襲擊了，雖然成功逃了出來，但傳動軸好像卡住了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lass mich kurz einen Blick darauf werfen.",
+                    "en": "Let me take a look at it.",
+                    "es": "Déjame echarle un vistazo.",
+                    "fr": "Je vais y jeter un œil.",
+                    "ja": "ちょっと見せて。",
+                    "ko": "제가 한 번 봐 드릴게요",
+                    "th": "ขอดูหน่อยสิ",
+                    "zh-Hans": "我先帮你看看。",
+                    "zh-Hant": "我先幫你看看。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich hatte schon mit Wächterkonstrukten zu tun.",
+                    "en": "I've worked on Sentry Constructs before.",
+                    "es": "Hasta el Constructo Guardia puedo arreglar.",
+                    "fr": "J'ai déjà travaillé sur ce genre de choses.",
+                    "ja": "{Male=実は俺、「ゼノコロッサス」も直せるんだ。;Female=実は私、「ゼノコロッサス」も直せるの。}",
+                    "ko": "사실 전 「이성(異性) 무장」도 수리할 수 있거든요",
+                    "th": "ฉันเคยซ่อมแซม Sentry Construct มาก่อน",
+                    "zh-Hans": "其实我连「异构武装」都会修。",
+                    "zh-Hant": "其實我連「異構武裝」都會修。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, bitte doch. Das ist doch genau das Teil, das meine „Beine“ verbindet.",
+                "en": "Oh, please do. It should be the one connecting my \"feet.\"",
+                "es": "Ah, por favor. Debería ser el que conecta mis «pies».",
+                "fr": "Oh, je t'en prie. Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "お願いシマス。恐らく「足」部分に問題ガあるかト。",
+                "ko": "부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "ช่วยหน่อยนะ น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "麻烦你了，问题应该就出在我的“脚”上。",
+                "zh-Hant": "麻煩你了，問題應該就出在我的「腳」上。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, wirklich? Kannst du mal drüberschauen? Das muss doch das Teil sein, das meine „Beine“ zusammenhält.",
+                "en": "Oh, really? Do you mind taking a look at it? It should be the one connecting my \"feet.\"",
+                "es": "Ah, ¿de veras? ¿Te importa echarle un vistazo? Debería ser el que conecta mis «pies».",
+                "fr": "Oh, vraiment ? Ça te dérange d'y jeter un œil ? Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "本当ニ？デハ助けてもらえマスカ、恐らく「足」部分に問題ガあるかト。",
+                "ko": "정말요? 그럼 부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "จริงเหรอ พอจะช่วยดูให้หน่อยได้มั้ย น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "真的？麻烦你帮我看看，问题应该就出在我的“脚”上。",
+                "zh-Hant": "真的？麻煩你幫我看看，問題應該就出在我的「腳」上。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ohhh, ich glaube, ich verliere sie langsam. Da unten fühlt sich alles total taub an …",
+                "en": "Not good. I think I'm starting to lose them. Everything feels numb down there...",
+                "es": "Ah, creo que estoy empezando a perderlos. Siento todo adormecido...",
+                "fr": "Ohhh, je crois que je commence à les perdre. Je suis tout engourdi en bas...",
+                "ja": "参っタ、足がダメかもしれナイ、もう感覚ガ……",
+                "ko": "어떡하죠. 발을 잃을 수도 있을 것 같네요. 아무런 감각이 없어요",
+                "th": "แย่แล้ว ฉันเริ่มไม่รู้สึกถึงมันแล้ว ทุกอย่างข้างล่างมันชาไปหมดเลย...",
+                "zh-Hans": "不好，我感觉我要失去它们了，那里已经失去知觉了……",
+                "zh-Hant": "不好，我感覺我要失去它們了，那裡已經失去知覺了……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Anstupsen.)",
+                    "en": "(Give it a poke.)",
+                    "es": "(Darle un toque).",
+                    "fr": "(Donner un petit coup.)",
+                    "ja": "（つっついてみる）",
+                    "ko": "(찔러본다)",
+                    "th": "(ลองจิ้มดู)",
+                    "zh-Hans": "（戳一戳）",
+                    "zh-Hant": "（戳一戳）"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Ein paar Mal darauf klopfen und abwarten, was passiert.)",
+                    "en": "(Knock it a few times and see what happens.)",
+                    "es": "(Golpearlo algunas veces y ver qué sucede).",
+                    "fr": "(Frapper plusieurs fois pour voir ce qu'il se passe.)",
+                    "ja": "（とりあえず叩いてみる）",
+                    "ko": "(우선 두들겨본다)",
+                    "th": "(เคาะสักสองสามครั้งแล้วรอดูอาการ)",
+                    "zh-Hans": "（先敲一敲试试）",
+                    "zh-Hant": "（先敲一敲試試）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was auch immer für ein Zaubertrick das war – er hat wahre Wunder gewirkt! Nach ein paar Scheppern und Ächzen kommt Kuroro langsam wieder auf die „Beine“.",
+                "en": "Whatever magic trick you used seems to work wonders. \nAfter a few clanks and creaks, the KU-Roro slowly gets back to its \"feet.\"",
+                "es": "Parece que ese truco de magia que usaste hizo maravillas.\nDespués de algunos ruidos y crujidos, el KU-Roro se pone lentamente de «pie».",
+                "fr": "Votre tour de magie semble avoir fait des merveilles...\nAprès quelques cliquetis et grincements, le petit robot se dresse lentement sur ses « pieds ».",
+                "ja": "意外にも効果があったようだ――\nガタガタとパーツが動きだして、ロボットはゆっくりと浮きあがった。",
+                "ko": "그 행동이 의외로 효과가 있었다.\n삐걱삐걱 대는 소리가 끝나자, 눈앞의 쿠 · 로로가 천천히 떠올랐다",
+                "th": "ไม่รู้ว่าทำอะไรไปแต่มันได้ผล \nหลังจากส่งเสียงเอี๊ยดอ๊าดสักพัก KU-Roro ก็ใช้ \"เท้า\" ของมันยืนขึ้นมาได้อีกครั้ง",
+                "zh-Hans": "你的尝试起到了出人意料的效果——\n在一阵吱嘎吱嘎的声音过后，眼前的库洛洛缓缓地浮了起来。",
+                "zh-Hant": "你的嘗試起到了出人意料的效果——\n在一陣吱嘎吱嘎的聲音過後，眼前的庫洛洛緩緩地浮了起來。"
+              },
+              "id": 7
+            },
+            {
+              "text": {
+                "de": "Kuku. Alle Systeme stabil. Ich, KU-Crash, bin zurück und bereit loszulegen",
+                "en": "Ku, ku. All systems normal. I, KU-Cage, am back and ready to rock and roll!",
+                "es": "Kuku. Todos los sistemas normales. Yo, KU-Cage, estoy de regreso y a disposición para actuar.",
+                "fr": "Kuku. Systèmes opérationnels. Moi, KU-Cage, suis de retour et prêt à assurer !",
+                "ja": "クク、シグナルに接続。私――クリーズ、完全復活デス！",
+                "ko": "쿠쿠, 신호 완벽. 나 쿠 · 카기 부활!",
+                "th": "คุ คุ ทุกระบบทำงานปกติ KU-Cage ผู้นี้พร้อมที่จะลุยแล้ว!",
+                "zh-Hans": "库库，信号状态良好。我——库卡基完全复活了。",
+                "zh-Hant": "庫庫，信號狀態良好。我——庫卡基完全復活了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und das alles verdanke ich dir, {Male=meinem Retter;Female=meiner Retterin}. Das sind wohl die „Heilenden Hände“, wie sie drüben in Huanglong genannt werden, die ihre Arbeit tun.",
+                "en": "Thank you! You're what they call a miracle worker over in Huanglong.",
+                "es": "Y todo gracias a ti, mi salvación. Supongo que así trabajan las «Manos curadoras», como se las conoce en Huanglong.",
+                "fr": "Et c'est uniquement grâce à toi. J'imagine que c'était l'œuvre des « mains guérisseuses », comme on les appelle à Huanglong.",
+                "ja": "大変感謝シマス。瑝瓏の言葉で言うト、大恩人、まさに「<ano=みょうしゅかいしゅん>妙手回春</ano>」デスネ。",
+                "ko": "정말 고마워요. 황룡의 말로 하자면, 은인이시여, 당신은 훌륭한 솜씨를 가진 의사님이시네요",
+                "th": "ขอบคุณมาก! ที่หวงหลงเค้าเรียกคนแบบคุณว่ามือปาฏิหาริย์เลยนะ",
+                "zh-Hans": "非常感谢。用瑝珑的话说，恩人，你真是妙手回春。",
+                "zh-Hant": "非常感謝。用瑝瓏的話說，恩人，你真是妙手回春。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "… Wie bist du hier gelandet?",
+                    "en": "...How did you end up here?",
+                    "es": "¿Cómo terminaste aquí?",
+                    "fr": "... Comment as-tu fini ici ?",
+                    "ja": "{Male=なぜクリーズがここに？;Female=どうしてクリーズがここに？}",
+                    "ko": "...왜 이곳에 계신 거죠?",
+                    "th": "...ทำไมถึงมาอยู่ที่นี่ได้",
+                    "zh-Hans": "……你怎么会出现在这？",
+                    "zh-Hant": "……你怎麼會出現在這？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich war gerade dabei, Umgebungsdaten für einen Simulationsprojekt der Schwarzen Küsten zu sammeln.",
+                "en": "I was gathering environmental data for a combat simulator we're working on over at the Black Shores.",
+                "es": "Estaba tomando muestras de datos ambientales para un proyecto de simulación actualmente en desarrollo en la Costa Negra.",
+                "fr": "Je prélevais des échantillons de données environnementales pour un projet de simulation en cours de développement au Littoral noir.",
+                "ja": "実は、ブラックショアが開発中のシミュレーションプログラムのために、環境データを収集しているのデス。",
+                "ko": "사실 저는 검은 해안에서 개발 중인 시뮬레이션 훈련 프로젝트를 위해 환경 데이터를 수집하고 있어요",
+                "th": "ฉันกำลังรวบรวมข้อมูลสภาพแวดล้อมสำหรับเครื่องจำลองการต่อสู้ที่เรากำลังพัฒนาอยู่ที่แบล็กชอร์",
+                "zh-Hans": "其实，我在为黑海岸开发中的一个模拟演练项目收集环境数据。",
+                "zh-Hant": "其實，我在為黑海岸開發中的一個模擬演練專案收集環境數據。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Durch gesammelte Daten aus ganz Solaris-3 können <color=yellow>Krisenprüfungen simuliert werden, bei denen die Kampffähigkeiten der Teilnehmer unter extremen Bedingungen auf die Probe gestellt werden</color>.",
+                "en": "It uses data from all over Solaris-3, to <color=yellow>simulate Crisis Trials that put the combat capabilities of its participants to the test under extreme conditions</color>.",
+                "es": "Al analizar situaciones y datos recolectados a lo largo de Solaris-3, <color=yellow>simula pruebas de crisis que ponen a prueba las habilidades de combate de sus participantes en condiciones extremas</color>.",
+                "fr": "En analysant les données et instances rassemblées dans tout Solaris-3, <color=yellow>il simule des « épreuves de crise » qui mettent les capacités de combat de ses participants à l'épreuve dans des conditions extrêmes</color>.",
+                "ja": "このプログラムは、ソラリスの各エリアデータと過去ログに基づキ、<color=yellow>「危機的状況」をシミュレートし、厳しい条件下デ挑戦者の実戦能力を検証することがデキマス</color>。",
+                "ko": "이 프로그램은 솔라리스 여러 곳의 데이터와 과거 사례를 분석해 <color=yellow>「위기 상황」을 시뮬레이션하는 방식이에요. 도전자는 가혹한 조건 속에서 실전 능력을 테스트할 수 있죠</color>",
+                "th": "มันจะใช้ข้อมูลจากทั่วทั้งโซลาริส-3 เพื่อ<color=yellow>จำลองบททดสอบวิกฤตที่ทดสอบความสามารถในการต่อสู้ของผู้เข้าร่วมท่ามกลางสภาวะสุดโหด</color>",
+                "zh-Hans": "它可以根据索拉里斯各地数据和过往案例<color=yellow>模拟出一些「危机情景」，从而检验挑战者在严苛条件下的实战能力</color>。",
+                "zh-Hant": "它可以根據索拉里斯各地數據和過往案例<color=yellow>模擬出一些「危機情景」，從而檢驗挑戰者在嚴苛條件下的實戰能力</color>。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Krisen? In welcher Form …?",
+                    "en": "Crisis Trials? As in…?",
+                    "es": "¿Pruebas de crisis?",
+                    "fr": "Des épreuves de crise ? Comme... ?",
+                    "ja": "{Male=どんな危機的状況なんだ？;Female=どんな危機的状況なの？}",
+                    "ko": "「위기 상황」은 어떤 걸 말하는 거죠?",
+                    "th": "บททดสอบวิกฤตเหรอ หมายถึง...?",
+                    "zh-Hans": "什么是危机情景？",
+                    "zh-Hant": "什麼是危機情景？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie die TD-Ausbrüche entlang der Grenze zu Jinzhou oder der Nebel, der das Ende des Büßers in Ragunna verschlang …",
+                "en": "Like the TD outbreaks along the Jinzhou borders, or the mist swallowing up Penitent's End in Ragunna...",
+                "es": "Como los brotes de Disonancias Tácitas a lo largo de la frontera de Jinzhou, o la niebla que devora Fin del Penitente en Raguna...",
+                "fr": "Des événements comme les Éruptions de Tacet Discords qui se sont produites aux frontières de Jinzhou et la brume qui recouvre le Trépas du pénitent à Ragunna...",
+                "ja": "例エバ、今州の辺境地帯に残像潮が現れタリ、ラグーナの吹き溜まりが海霧に呑み込まれタリナド……",
+                "ko": "예를 들면, 금주 변경에 잔상류가 나타난다던가, 라군나의 무덤의 섬이 바다안개에 뒤덮였다거나...",
+                "th": "ก็เหมือนการบุกของทาเซ็ตดิสคอร์ดตามชายแดนของจินโจว หรือม่านหมอกที่กลืนกินปลายทางแห่งผู้สารภาพบาปในรากูนน่า...",
+                "zh-Hans": "比如今州的边境出现了残象潮，拉古那的那座墓岛被海雾淹没……",
+                "zh-Hant": "比如今州的邊境出現了殘象潮，拉古那的那座墓島被海霧淹沒……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "All dies sind selbstverständlich nur Simulationen und keine tatsächlichen Krisen. Kein Grund zur Sorge.",
+                "en": "Of course, these are all just simulations, not actual crises. No need to worry.",
+                "es": "Naturalmente, todos los entornos son simulaciones controladas y no reflejan ni representan ninguna crisis real.",
+                "fr": "Mais naturellement, tous les environnements sont des simulations contrôlées qui ne reflètent ou ne reproduisent aucune véritable crise.",
+                "ja": "もちろん、シミュレーションですノデ、実際の危機ではアリマセン。",
+                "ko": "물론, 전부 실제 상황은 아니죠",
+                "th": "แน่นอนว่าทุกอย่างเป็นแค่การจำลอง ไม่ใช่วิกฤตของจริง ไม่ต้องกังวล",
+                "zh-Hans": "当然，那都是模拟的产物，并不是真实发生的危机。",
+                "zh-Hant": "當然，那都是模擬的產物，並不是真實發生的危機。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Den Teilnehmern steht es frei, <color=yellow>die Simulationen und den Schwierigkeitsgrad nach ihren Wünschen anzupassen</color>.",
+                "en": "Participants are free to <color=yellow>make adjustments to the simulations and customize the difficulty to suit their preferences</color>.",
+                "es": "Los participantes tienen la libertad de <color=yellow>modificar las simulaciones a través de sistemas integrados y personalizar cada desafío a sus preferencias</color>.",
+                "fr": "Les participants sont libres d'<color=yellow>apporter des ajustements aux simulations via les systèmes intégrés et de personnaliser chaque défi selon leurs préférences</color>.",
+                "ja": "挑戦者は<color=yellow>プログラムで生成されたシミュレーション領域を調整して、実力に応じタ難易度をカスタマイズできマス</color>。",
+                "ko": "도전자는 <color=yellow>프로그램이 생성한 시뮬레이션 영역 난이도를 자신에 맞게 조정</color>할 수 있죠",
+                "th": "ผู้เข้าร่วมสามารถ<color=yellow>ปรับแต่งการจำลองและเปลี่ยนระดับความยากให้เหมาะกับความต้องการ</color>ได้อย่างอิสระ",
+                "zh-Hans": "挑战者也可以<color=yellow>对程序生成的模拟领域进行调整，定制适合自己的难度</color> 。",
+                "zh-Hant": "挑戰者也可以<color=yellow>對程式生成的模擬領域進行調整，訂製適合自己的難度</color> 。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Für alle, die es etwas spannender mögen, gibt es eine <color=yellow>Auswahl an Stressmodulen, die den Schwierigkeitsgrad erhöhen und einen in extremste Szenarien versetzen</color>.",
+                "en": "For those looking to spice things up, there'll be a <color=yellow>selection of Stress Modules available to ramp up the difficulty and throw you in the most extreme scenarios imaginable</color>.",
+                "es": "Para aquellas personas que buscan un reto, habrá una <color=yellow>selección de Módulos de carga disponibles que elevan la dificultad de la simulación a niveles más extremos</color>.",
+                "fr": "Quant aux participants cherchant à pimenter les choses, <color=yellow>une sélection de « Modules de chargement » sera disponible, permettant à la difficulté des environnements simulés d'atteindre de nouveaux sommets</color>.",
+                "ja": "極限まで極めたい挑戦者ナラ、<color=yellow>様々な「ペイロードモジュール」を装着シたママ、最高難易度に挑むことも可能デス</color>。",
+                "ko": "극한을 추구하는 도전자들은 <color=yellow>「고위험 모듈」을 장착해, 상황 난이도를 최고 수치</color>까지 올릴 수 있거든요",
+                "th": "หากต้องการความท้าทายเพิ่มเติม ก็จะมี<color=yellow>โมดูลความเครียดให้เลือกเพื่อใช้เพิ่มความยาก และพาคุณเข้าสู่สถานการณ์ที่ดุเดือดที่สุดเท่าที่จะเป็นไปได้</color>",
+                "zh-Hans": "对于追求极限的挑战者，他们可以<color=yellow>通过装配各种「负荷模组」，将这些情景的难度提升到前所未有的绝境</color>。",
+                "zh-Hant": "對於追求極限的挑戰者，他們可以<color=yellow>透過裝配各種「負荷模組」，將這些情景的難度提升到前所未有的絕境</color>。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alle gesammelten Kampfdaten werden als Referenzwerte für künftige Einsätze der Schwarzen Küsten im Rahmen der Krisenbewältigung dienen.",
+                "en": "All combat data collected will serve as benchmarks for future Black Shores field missions in crisis response.",
+                "es": "Todos los datos de combate obtenidos servirán como parámetros para futuras misiones de campo de la Costa Negra en respuesta a las crisis.",
+                "fr": "Les données de combat collectées serviront de référence pour répondre aux situations de crise des futures missions de terrain du Littoral noir.",
+                "ja": "プログラムは挑戦中のデータを記録シ、ブラックショアが将来ノ危機対応資料として使いマス。",
+                "ko": "프로그램 콘솔에서는 도전 과정에서 생긴 모든 데이터를 기록해, 앞으로 검은 해안의 위기 대응을 위한 외근에 참고 자료로 사용되죠",
+                "th": "ข้อมูลการต่อสู้ทั้งหมดที่รวบรวมมาจะถูกใช้เป็นเกณฑ์สำหรับภารกิจภาคสนามของแบล็กชอร์ในการรับมือวิกฤตในอนาคต",
+                "zh-Hans": "程序后台将记录下挑战过程中所产生的数据，为黑海岸日后应对危机的外勤行动提供参考。",
+                "zh-Hant": "程式後台將記錄下挑戰過程中所產生的數據，為黑海岸日後應對危機的外勤行動提供參考。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin beeindruckt.",
+                    "en": "I'm sold.",
+                    "es": "Me convenciste.",
+                    "fr": "Vendu.",
+                    "ja": "{Male=俺もやってみたい。;Female=私もやってみたい。}",
+                    "ko": "저도 한번 해보고 싶네요",
+                    "th": "น่าสนใจนะ",
+                    "zh-Hans": "我也想试试。",
+                    "zh-Hant": "我也想試試。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Mal sehen, wie schwierig es wird.",
+                    "en": "Let's see how difficult it can be.",
+                    "es": "Veamos qué tan difícil puede ser.",
+                    "fr": "Voyons si c'est si difficile.",
+                    "ja": "どれほどの窮地なのか試させてもらうよ。",
+                    "ko": "얼마나 어려운지 궁금하네요",
+                    "th": "ขอลองหน่อยว่าจะยากสักแค่ไหน",
+                    "zh-Hans": "我倒要看看能有多难。",
+                    "zh-Hant": "我倒要看看能有多難。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Als Sicherheitsmaßnahme steht diese Simulation nur bestimmten Blütenträgern und Beratern zur Verfügung, die die Kriterien erfüllen. Doch ich kann sofort eine Bewertung für dich durchführen.",
+                "en": "As a safety precaution, this simulation is only available to certain Bloom Bearers and Consultants who meet the criteria.",
+                "es": "Como medida de seguridad, esta simulación solo está disponible para ciertos Portadores de Flores y Consultores que cumplen con los criterios.",
+                "fr": "Par précaution, cette simulation n'est disponible qu'aux porteurs de fleur et consultants qui remplissent les conditions.",
+                "ja": "安全を考慮シ、一部の実力アル花持ちや協力者にノミ開放されてイマス。",
+                "ko": "안전상의 이유로, 현재는 기준에 부합되는 소수의 흑화 집사와 초청 멤버들만 대상으로 하고 있죠. 제가 참여할 수 있게 처리해 드릴게요",
+                "th": "เพื่อความปลอดภัย การจำลองนี้จะเปิดให้เฉพาะกับผู้ครองผกาและที่ปรึกษาที่ผ่านเกณฑ์เท่านั้น",
+                "zh-Hans": "出于安全性考虑，它目前只面向少数实力符合标准的执花和客卿。",
+                "zh-Hant": "出於安全性考慮，它目前只面向少數實力符合標準的執花和客卿。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… So, jetzt kannst du direkt von deinem Terminal aus auf die Simulationen zugreifen.",
+                "en": "...Hmm, it seems you are eligible to participate in the simulation.",
+                "es": "Mmm, los registros indican que cumples los requisitos para participar en la simulación.",
+                "fr": "Hmm... Les archives indiquent que tu es éligible pour participer à la simulation.",
+                "ja": "……オヤ？あなたハ既にテストに挑戦スル資格を持っているヨウデス。",
+                "ko": "...오, 프로그램 테스트에 이미 참여하실 수 있네요?",
+                "th": "...อืม ดูเหมือนคุณจะมีสิทธิ์เข้าร่วมการจำลองนะ",
+                "zh-Hans": "……咦，你已经可以参与程序的测试了？",
+                "zh-Hant": "……咦，你已經可以參與程式的測試了？"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ging schnell.",
+                    "en": "What do you mean?",
+                    "es": "¿A qué te refieres?",
+                    "fr": "C'est-à-dire ?",
+                    "ja": "どういうこと？",
+                    "ko": "어떻게 된 거죠?",
+                    "th": "Zani เกิดอะไรขึ้น?",
+                    "zh-Hans": "怎么回事？",
+                    "zh-Hant": "怎麼回事？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, natürlich. Die Aufzeichnungen zeigen, dass du {Male=ein Elite-Blütenträger;Female=eine Elite-Blütenträgerin} der Schwarzen Küsten bist. Das war reine Formsache.",
+                "en": "I'm not sure. It just shows that your application was approved by someone with high authorization.",
+                "es": "No lo sé. Solo dice que alguien con una autorización alta aprobó tu solicitud.",
+                "fr": "Je ne sais pas vraiment. Je vois simplement que ta candidature a été approuvée par quelqu'un de haut placé.",
+                "ja": "分かりマセン。バックグラウンドのヨリ高い権限があなたを承認したミタイデス。",
+                "ko": "저도 모르겠어요. 콘솔에서 더 높은 권한으로 당신의 테스트 신청을 승인했어요",
+                "th": "ฉันก็ไม่แน่ใจ มันระบุว่าคำขอของคุณได้รับการอนุมัติจากผู้มีอำนาจระดับสูง",
+                "zh-Hans": "我也不知道。似乎后台有更高的权限批准了关于你的测试申请。",
+                "zh-Hant": "我也不知道。似乎後台有更高的權限批准了關於你的測試申請。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du kannst natürlich jederzeit eine Simulation durchführen, wenn du dazu bereit bist.",
+                "en": "Feel free to conduct a simulation whenever you're ready.",
+                "es": "Puedes ejecutar una simulación cuando quieras.",
+                "fr": "N'hésite pas à lancer une simulation quand tu le voudras.",
+                "ja": "ツマリ、もうイツでも挑戦開始デキマスヨ。",
+                "ko": "아무튼, 자유롭게 도전을 시작하세요",
+                "th": "คุณพร้อมเมื่อไรก็เริ่มการจำลองได้เลย",
+                "zh-Hans": "总之，请自由地开始挑战吧。",
+                "zh-Hant": "總之，請自由地開始挑戰吧。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überprüfe, wie es Kuroro geht",
+        "en": "See how KU-Roro's doing",
+        "es": "Ve cómo está KU-Roro.",
+        "fr": "Examiner le KU-Roro",
+        "ja": "壊れたロボットの様子を見てみる",
+        "ko": "쿠 · 로로의 상황 확인하기",
+        "th": "ดูว่าเคยู-โรโร่เป็นอย่างไรบ้าง",
+        "zh-Hans": "查看库洛洛的情况",
+        "zh-Hant": "查看庫洛洛的情況"
+      },
+      "entities": [
+        {
+          "entityId": 171750000,
+          "mapId": 8,
+          "blueprintType": "NPC420081",
+          "name": "TsEntity_库洛洛420084",
+          "areaId": 606,
+          "position": {
+            "x": -120243,
+            "y": 214596,
+            "z": 193
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 171750001,
+          "mapId": 8,
+          "blueprintType": "NPC420081",
+          "name": "TsEntity_库洛洛420085",
+          "areaId": 606,
+          "position": {
+            "x": -120242,
+            "y": 214589,
+            "z": 204
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_巴别塔",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Endlich taucht jemand auf! Mein Stimmmodul stand fast kurz davor, vor lauter Geschrei in die Luft zu gehen!",
+                "en": "Finally, someone shows up! My voicebox was about to explode from all the yelling I've been doing!",
+                "es": "Fiu. Ya era hora de que apareciera alguien. Mi dispositivo fonador estaba por sobrecalentarse por todos los gritos que estaba dando",
+                "fr": "Enfin quelqu'un ! J'allais détruire mes modules vocales à force de hurler !",
+                "ja": "やっと来テくれましたネ、発声ユニットが壊レルところデシタヨ。",
+                "ko": "드디어 누군가 왔네요. 발성부가 다 쉴 뻔했는데",
+                "th": "ในที่สุดก็มีคนมา! ตะโกนจนกล่องเสียงฉันจะระเบิดอยู่แล้วเนี่ย!",
+                "zh-Hans": "总算有人来了，我的发声单元都快喊哑了。",
+                "zh-Hant": "總算有人來了，我的發聲單元都快喊啞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Warte mal. Du bist {Male=ein Blütenträger;Female=eine Blütenträgerin}. Kannst du mich zur Reparatur zu den Schwarzen Küsten zurückbringen?",
+                "en": "...Hold on a sec. You're a Bloom Bearer. Can you bring me back to the Black Shores for repairs?",
+                "es": "Un segundo. Eres {Male=un Portador de Flor;Female=una Portadora de Flor}. ¿Puedes llevarme a Costa Negra para repararme?",
+                "fr": "... Une seconde. Tu es {Male=un porteur de fleur;Female=une porteuse de fleur}. Peux-tu me ramener au Littoral noir pour me réparer ?",
+                "ja": "……アナタは、花持ちデスカ？私をブラックショアまで送ってもらえマセンカ？",
+                "ko": "...잠시만요. 혹시... 흑화 집사 맞죠? 절 검은 해안으로 데려가 수리해 주실 수 있을까요?",
+                "th": "...เดี๋ยวนะ คุณคือผู้ครองผกานี่นา พาฉันกลับไปซ่อมที่แบล็กชอร์หน่อยได้มั้ย",
+                "zh-Hans": "……等下，你是一名执花？能带我回黑海岸检修吗？",
+                "zh-Hant": "……等一下，你是一名執花？能帶我回黑海岸檢修嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué pasó?",
+                    "fr": "Que s'est-il passé ?",
+                    "ja": "{Male=どうしたんだ？;Female=どうしたの？}",
+                    "ko": "어떻게 된 거죠?",
+                    "th": "เกิดอะไรขึ้น",
+                    "zh-Hans": "你怎么了？",
+                    "zh-Hant": "你怎麼了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mich hat ein Haufen TDs überfallen. Mit all meinen Schrauben und Muttern bin ich nur knapp davongekommen – aber ich glaube, mir ist dabei die Antriebswelle abgerissen!",
+                "en": "I got jumped by a bunch of TDs. Barely escaped with my nuts and bolts, but I think I did bust a drive shaft.",
+                "es": "Me sorprendió un grupo de Disonancias Tácitas Apenas escapé con mis tornillos, pero creo que averié un eje motor.",
+                "fr": "Je me suis fait attaquer par des Tacet Discords. J'ai failli y laisser mes boulons et mes écrous, mais je crois que j'ai abîmé un arbre de transmission.",
+                "ja": "さっき残像に襲われテ、何トカ逃げ出せたんデス。デモ、何かドライブシャフトに引っかかっタミタイデ……",
+                "ko": "방금 잔상에 습격당했어요. 도망치긴 했지만, 전동축이 돌아가지 않는 것 같네요",
+                "th": "โดนพวกทาเซ็ตดิสคอร์ดจู่โจมน่ะ หนีรอดหวุดหวิดแบบยังเหลือเศษน็อตกับโบลต์ แต่เหมือนเพลาขับจะพังไปแล้ว",
+                "zh-Hans": "我刚才被残象袭击了，虽然成功逃了出来，但传动轴好像卡住了。",
+                "zh-Hant": "我剛才被殘象襲擊了，雖然成功逃了出來，但傳動軸好像卡住了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lass mich kurz einen Blick darauf werfen.",
+                    "en": "Let me take a look at it.",
+                    "es": "Déjame echarle un vistazo.",
+                    "fr": "Je vais y jeter un œil.",
+                    "ja": "ちょっと見せて。",
+                    "ko": "제가 한 번 봐 드릴게요",
+                    "th": "ขอดูหน่อยสิ",
+                    "zh-Hans": "我先帮你看看。",
+                    "zh-Hant": "我先幫你看看。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich hatte schon mit Wächterkonstrukten zu tun.",
+                    "en": "I've worked on Sentry Constructs before.",
+                    "es": "Hasta el Constructo Guardia puedo arreglar.",
+                    "fr": "J'ai déjà travaillé sur ce genre de choses.",
+                    "ja": "{Male=実は俺、「ゼノコロッサス」も直せるんだ。;Female=実は私、「ゼノコロッサス」も直せるの。}",
+                    "ko": "사실 전 「이성(異性) 무장」도 수리할 수 있거든요",
+                    "th": "ฉันเคยซ่อมแซม Sentry Construct มาก่อน",
+                    "zh-Hans": "其实我连「异构武装」都会修。",
+                    "zh-Hant": "其實我連「異構武裝」都會修。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, aber bitte doch. Das sollte das sein, was meine „Beine“ verbindet.",
+                "en": "Oh, please do. It should be the one connecting my \"feet.\"",
+                "es": "Ah, por favor. Debería ser el que conecta mis «pies».",
+                "fr": "Oh, je t'en prie. Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "お願いシマス。恐らく「足」部分に問題ガあるかト。",
+                "ko": "부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "ช่วยหน่อยนะ น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "麻烦你了，问题应该就出在我的“脚”上。",
+                "zh-Hant": "麻煩你了，問題應該就出在我的「腳」上。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, wirklich? Könntest du dir das kurz anschauen? Das sollte das sein, was meine „Beine“ verbindet.",
+                "en": "Oh, really? You mind taking a look at it? It should be the one connecting my \"feet.\"",
+                "es": "Ah, ¿de veras? ¿Te importa echarle un vistazo? Debería ser el que conecta mis «pies».",
+                "fr": "Oh, vraiment ? Ça te dérange d'y jeter un œil ? Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "本当ニ？デハ助けてもらえマスカ、恐らく「足」部分に問題ガあるかト。",
+                "ko": "정말요? 그럼 부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "จริงเหรอ งั้นช่วยดูให้หน่อยได้มั้ย น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "真的？麻烦你帮我看看，问题应该就出在我的“脚”上。",
+                "zh-Hant": "真的？麻煩你幫我看看，問題應該就出在我的「腳」上。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gar nicht gut. Ich glaube, ich verliere sie langsam. Da unten fühlt sich alles taub an – als hätten meine Sensoren plötzlich Urlaub genommen!",
+                "en": "Not good. I think I'm starting to lose them. Everything feels numb down there...",
+                "es": "Creo que estoy empezando a perderlos. Siento todo adormecido...",
+                "fr": "C'est mauvais signe. Je crois que je commence à les perdre. Je suis tout engourdi en bas...",
+                "ja": "参っタ、足がダメかもしれナイ、もう感覚ガ……",
+                "ko": "어떡하죠. 발을 잃을 수도 있을 것 같네요. 아무런 감각이 없어요",
+                "th": "แย่แล้ว ฉันเริ่มไม่รู้สึกถึงมันแล้ว ทุกอย่างข้างล่างมันชาไปหมดเลย...",
+                "zh-Hans": "不好，我感觉我要失去它们了，那里已经失去知觉了……",
+                "zh-Hant": "不好，我感覺我要失去它們了，那裡已經失去知覺了……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Anstupsen.)",
+                    "en": "(Give it a poke.)",
+                    "es": "(Darle un toque).",
+                    "fr": "(Donner un petit coup.)",
+                    "ja": "（つっついてみる）",
+                    "ko": "(찔러본다)",
+                    "th": "(ลองจิ้มดู)",
+                    "zh-Hans": "（戳一戳）",
+                    "zh-Hant": "（戳一戳）"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Ein paar Mal darauf klopfen und abwarten, was passiert.)",
+                    "en": "(Knock it a few times and see what happens.)",
+                    "es": "(Golpearlo algunas veces y ver qué sucede).",
+                    "fr": "(Frapper plusieurs fois pour voir ce qu'il se passe.)",
+                    "ja": "（とりあえず叩いてみる）",
+                    "ko": "(우선 두들겨본다)",
+                    "th": "(เคาะสักสองสามครั้งแล้วรอดูอาการ)",
+                    "zh-Hans": "（先敲一敲试试）",
+                    "zh-Hant": "（先敲一敲試試）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was auch immer du da für einen Zaubertrick angewendet hast, der wirkt Wunder.\nNach ein paar Scheppern und Ächzen steht Kuroro langsam wieder auf seinen „Beinen“.",
+                "en": "Whatever magic trick you used seems to work wonders. \nAfter a few clanks and creaks, the KU-Roro slowly gets back to its \"feet.\"",
+                "es": "Parece que el truco de magia que usaste hizo maravillas.\nDespués de algunos ruidos y crujidos, el KU-Roro se pone lentamente de «pie».",
+                "fr": "Votre tour de magie semble faire des merveilles.\nAprès quelques cliquetis et grincements, le petit robot se dresse lentement sur ses « pieds ».",
+                "ja": "意外にも効果があったようだ――\nガタガタとパーツが動きだして、ロボットはゆっくりと浮きあがった。",
+                "ko": "그 행동이 의외로 효과가 있었다.\n삐걱삐걱 대는 소리가 끝나자, 눈앞의 쿠 · 로로가 천천히 떠올랐다",
+                "th": "ไม่รู้ว่าทำอะไรไปแต่มันได้ผล \nหลังจากส่งเสียงเอี๊ยดอ๊าดสักพัก KU-Roro ก็ใช้ \"เท้า\" ของมันยืนขึ้นมาได้อีกครั้ง",
+                "zh-Hans": "你的尝试起到了出人意料的效果——\n在一阵吱嘎吱嘎的声音过后，眼前的库洛洛缓缓地浮了起来。",
+                "zh-Hant": "你的嘗試起到了出人意料的效果——\n在一陣吱嘎吱嘎的聲音過後，眼前的庫洛洛緩緩地浮了起來。"
+              },
+              "id": 7
+            },
+            {
+              "text": {
+                "de": "Ku, ku. Alle Systeme stabil. Ich, KU-Crash, bin zurück und bereit loszulegen",
+                "en": "Ku, ku. All systems normal. I, KU-Cage, am back and ready to rock and roll!",
+                "es": "Ku, ku. Todos los sistemas normales. Yo, KU-Cage, estoy de regreso y a disposición para actuar.",
+                "fr": "Ku, ku. Systèmes opérationnels. Moi, KU-Cage, suis de retour et prêt à assurer !",
+                "ja": "クク、シグナルに接続。私――クリーズ、完全復活デス！",
+                "ko": "쿠쿠, 신호 완벽. 나 쿠 · 카기 부활!",
+                "th": "คุ คุ ทุกระบบทำงานปกติ KU-Cage ผู้นี้พร้อมที่จะลุยแล้ว!",
+                "zh-Hans": "库库，信号状态良好。我——库卡基完全复活了。",
+                "zh-Hant": "庫庫，信號狀態良好。我——庫卡基完全復活了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dankeschön! Du bist das, was man drüben in Huanglong einen Wunderheiler nennt.",
+                "en": "Thank you! You're what they call a miracle worker over in Huanglong.",
+                "es": "¡Gracias! Eres lo que en Huanglong llaman una persona milagrosa.",
+                "fr": "Merci ! À Huanglong, on appellerait ce que tu viens de faire un miracle.",
+                "ja": "大変感謝シマス。瑝瓏の言葉で言うト、大恩人、まさに「<ano=みょうしゅかいしゅん>妙手回春</ano>」デスネ。",
+                "ko": "정말 고마워요. 황룡의 말로 하자면, 은인이시여, 당신은 훌륭한 솜씨를 가진 의사님이시네요",
+                "th": "ขอบคุณมาก! ที่หวงหลงเค้าเรียกคนแบบคุณว่ามือปาฏิหาริย์เลยนะ",
+                "zh-Hans": "非常感谢。用瑝珑的话说，恩人，你真是妙手回春。",
+                "zh-Hant": "非常感謝。用瑝瓏的話說，恩人，你真是妙手回春。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "… Wie bist du hier gelandet?",
+                    "en": "...How did you end up here?",
+                    "es": "¿Cómo terminaste aquí?",
+                    "fr": "... Comment as-tu fini ici ?",
+                    "ja": "{Male=なぜクリーズがここに？;Female=どうしてクリーズがここに？}",
+                    "ko": "...왜 이곳에 계신 거죠?",
+                    "th": "...ทำไมถึงมาอยู่ที่นี่ได้",
+                    "zh-Hans": "……你怎么会出现在这？",
+                    "zh-Hant": "……你怎麼會出現在這？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich habe Umgebungsdaten für einen Kampfsimulator gesammelt, an dem wir drüben bei den Schwarzen Küsten arbeiten.",
+                "en": "I was gathering environmental data for a combat simulator we're working on over at the Black Shores.",
+                "es": "Estaba recopilando datos ambientales para el simulador de combate que estamos desarrollando en Costa Negra.",
+                "fr": "Je rassemblais des données environnementales pour un simulateur de combat sur lequel nous travaillons au Littoral noir.",
+                "ja": "実は、ブラックショアが開発中のシミュレーションプログラムのために、環境データを収集しているのデス。",
+                "ko": "사실, 전 검은 해안에서 개발 중인 훈련 프로그램을 위해 환경 데이터를 수집하고 있었어요",
+                "th": "ฉันกำลังรวบรวมข้อมูลสภาพแวดล้อมสำหรับเครื่องจำลองการต่อสู้ที่เรากำลังพัฒนาอยู่ที่แบล็กชอร์",
+                "zh-Hans": "其实，我在为黑海岸开发中的一个演练程序收集环境数据。",
+                "zh-Hant": "其實，我在為黑海岸開發中的一個演練程式收集環境數據。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er verwendet Daten aus ganz Solaris-3, <color=yellow>um Krisen zu simulieren, bei denen die Kampffähigkeiten der Teilnehmer unter extremen Bedingungen auf die Probe gestellt werden</color>.",
+                "en": "It uses data from all over Solaris-3, to <color=yellow>simulate Crisis Trials that put the combat capabilities of its participants to the test under extreme conditions</color>.",
+                "es": "Usa datos de todo Solaris-3, para <color=yellow>simular pruebas de crisis que ponen a prueba las habilidades de combate de sus participantes en condiciones extremas</color>.",
+                "fr": "Il utilise les données de Solaris-3 pour <color=yellow>simuler des épreuves de crise qui mettent les capacités de combat de ses participants à l'épreuve dans des conditions extrêmes</color>.",
+                "ja": "このプログラムは、ソラリスの各エリアデータと過去ログに基づキ、<color=yellow>「危機的状況」をシミュレートし、厳しい条件下デ挑戦者の実戦能力を検証することがデキマス</color>。",
+                "ko": "이 프로그램은 솔라리스 여러 곳의 데이터와 과거 사례를 분석해 <color=yellow>「위기 상황」을 시뮬레이션하는 방식이에요. 도전자는 가혹한 조건 속에서 실전 능력을 테스트할 수 있죠</color>",
+                "th": "มันจะใช้ข้อมูลจากทั่วทั้งโซลาริส-3 เพื่อ<color=yellow>จำลองบททดสอบวิกฤตที่ทดสอบความสามารถในการต่อสู้ของผู้เข้าร่วมท่ามกลางสภาวะสุดโหด</color>",
+                "zh-Hans": "它可以根据索拉里斯各地数据和过往案例<color=yellow>模拟出一些「危机情景」，从而检验挑战者在严苛条件下的实战能力</color>。",
+                "zh-Hant": "它可以根據索拉里斯各地數據和過往案例<color=yellow>模擬出一些「危機情景」，從而檢驗挑戰者在嚴苛條件下的實戰能力</color>。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Krisen? In welcher Form …?",
+                    "en": "Crisis Trials? As in…?",
+                    "es": "¿Pruebas de crisis?",
+                    "fr": "Des épreuves de crise ? Comme... ?",
+                    "ja": "{Male=どんな危機的状況なんだ？;Female=どんな危機的状況なの？}",
+                    "ko": "「위기 상황」은 어떤 걸 말하는 거죠?",
+                    "th": "บททดสอบวิกฤตเหรอ หมายถึง...?",
+                    "zh-Hans": "什么是危机情景？",
+                    "zh-Hant": "什麼是危機情景？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie die TD-Ausbrüche entlang der Grenze zu Jinzhou oder der Nebel, der das Ende des Büßers in Ragunna verschlang …",
+                "en": "Like the TD outbreaks along the Jinzhou borders, or the mist swallowing up Penitent's End in Ragunna...",
+                "es": "Como los brotes de Disonancias Tácitas a lo largo de la frontera de Jinzhou, o la niebla que devora Fin del Penitente en Raguna...",
+                "fr": "Comme les Éruptions de Tacet Discords aux frontières de Jinzhou, ou la brume qui enveloppe le Trépas du pénitent à Ragunna...",
+                "ja": "例エバ、今州の辺境地帯に残像潮が現れタリ、ラグーナの吹き溜まりが海霧に呑み込まれタリナド……",
+                "ko": "예를 들면, 금주 변경에 잔상류가 나타난다던가, 라군나의 무덤의 섬이 바다안개에 뒤덮였다거나...",
+                "th": "ก็เหมือนการบุกของทาเซ็ตดิสคอร์ดตามชายแดนของจินโจว หรือม่านหมอกที่กลืนกินปลายทางแห่งผู้สารภาพบาปในรากูนน่า...",
+                "zh-Hans": "比如今州的边境出现了残象潮，拉古那的那座墓岛被海雾淹没……",
+                "zh-Hant": "比如今州的邊境出現了殘象潮，拉古那的那座墓島被海霧淹沒……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "All dies sind selbstverständlich nur Simulationen und keine tatsächlichen Krisen. Kein Grund zur Sorge.",
+                "en": "Of course, these are all just simulations, not actual crises. No need to worry.",
+                "es": "Por supuesto que estas son solo simulaciones, no son crisis reales. No hay de qué preocuparse.",
+                "fr": "Bien sûr, ce ne sont que des simulations, pas de véritables crises. Inutile de s'inquiéter.",
+                "ja": "もちろん、シミュレーションですノデ、実際の危機ではアリマセン。",
+                "ko": "물론, 전부 실제 상황은 아니죠",
+                "th": "แน่นอนว่าทุกอย่างเป็นแค่การจำลอง ไม่ใช่วิกฤตของจริง ไม่ต้องกังวล",
+                "zh-Hans": "当然，那都是模拟的产物，并不是真实发生的危机。",
+                "zh-Hant": "當然，那都是模擬的產物，並不是真實發生的危機。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Den Teilnehmern steht es frei, <color=yellow>die Simulationen und den Schwierigkeitsgrad nach ihren Wünschen anzupassen</color>.",
+                "en": "Participants are free to <color=yellow>make adjustments to the simulations and customize the difficulty to suit their preferences</color>.",
+                "es": "Los participantes tienen la libertad de <color=yellow>modificar las simulaciones y personalizar la dificultad para que se adapte a sus preferencias</color>.",
+                "fr": "Les participants sont libres d'<color=yellow>apporter des ajustements aux simulations et d'adapter la difficulté selon leurs préférences</color>.",
+                "ja": "挑戦者は<color=yellow>プログラムで生成されたシミュレーション領域を調整して、実力に応じタ難易度をカスタマイズできマス</color>。",
+                "ko": "도전자는 <color=yellow>프로그램이 생성한 시뮬레이션 영역 난이도를 자신에 맞게 조정</color> 할 수 있죠",
+                "th": "ผู้เข้าร่วมสามารถ<color=yellow>ปรับแต่งการจำลองและเปลี่ยนระดับความยากให้เหมาะกับความต้องการ</color>ได้อย่างอิสระ",
+                "zh-Hans": "挑战者可以<color=yellow>对程序生成的模拟领域进行调整，定制适合自己的难度</color> 。",
+                "zh-Hant": "挑戰者可以<color=yellow>對程式生成的模擬領域進行調整，訂製適合自己的難度</color> 。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Für alle, die es etwas spannender mögen, gibt es eine <color=yellow>Auswahl an Stressmodulen, die den Schwierigkeitsgrad erhöhen und einen in extremste Szenarien versetzen</color>.",
+                "en": "For those looking to spice things up, there'll be a <color=yellow>selection of Stress Modules available to ramp up the difficulty and throw you in the most extreme scenarios imaginable</color>.",
+                "es": "Para aquellas personas que buscan un desafío, habrá una <color=yellow>selección de módulos de carga disponibles para aumentar la dificultad, que supondrá los escenarios más extremos imaginables</color>.",
+                "fr": "Pour ceux qui cherchent à pimenter les choses, une <color=yellow>sélection de Modules de chargement permettront d'augmenter la difficulté et de vous plonger dans les scénarios les plus extrêmes</color>.",
+                "ja": "極限まで極めたい挑戦者ナラ、<color=yellow>様々な「ペイロードモジュール」を装着シたママ、最高難易度に挑むことも可能デス</color>。",
+                "ko": "극한을 추구하는 도전자들은 <color=yellow>「고위험 모듈」을 장착해, 상황 난이도를 최고 수치</color>까지 올릴 수 있거든요",
+                "th": "หากต้องการความท้าทายเพิ่มเติม ก็จะมี<color=yellow>โมดูลความเครียดให้เลือกเพื่อใช้เพิ่มความยาก และพาคุณเข้าสู่สถานการณ์ที่ดุเดือดที่สุดเท่าที่จะเป็นไปได้</color>",
+                "zh-Hans": "对于追求极限的挑战者，他们可以<color=yellow>通过装配各种「负荷模组」，将这些情景的难度提升到前所未有的绝境</color>。",
+                "zh-Hant": "對於追求極限的挑戰者，他們可以<color=yellow>透過裝配各種「負荷模組」，將這些情景的難度提升到前所未有的絕境</color>。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alle gesammelten Kampfdaten werden als Referenzwerte für künftige Einsätze der Schwarzen Küsten im Rahmen der Krisenbewältigung dienen.",
+                "en": "All combat data collected will serve as benchmarks for future Black Shores field missions in crisis response.",
+                "es": "Todos los datos de combate obtenidos servirán como parámetros para futuras misiones de campo de la Costa Negra en respuesta a las crisis.",
+                "fr": "Les données de combat collectées serviront de référence pour répondre aux situations de crise des futures missions de terrain du Littoral noir.",
+                "ja": "プログラムは挑戦中のデータを記録シ、ブラックショアが将来ノ危機対応資料として使いマス。",
+                "ko": "프로그램 콘솔에서는 도전 과정에서 생긴 모든 데이터를 기록해, 앞으로 검은 해안의 위기 대응을 위한 외근 임무에 참고 자료로 사용되죠",
+                "th": "ข้อมูลการต่อสู้ทั้งหมดที่รวบรวมมาจะถูกใช้เป็นเกณฑ์สำหรับภารกิจภาคสนามของแบล็กชอร์ในการรับมือวิกฤตในอนาคต",
+                "zh-Hans": "程序后台将记录下挑战过程中所产生的数据，为黑海岸日后应对危机的外勤任务提供参考。",
+                "zh-Hant": "程式後台將記錄下挑戰過程中所產生的數據，為黑海岸日後應對危機的外勤任務提供參考。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin beeindruckt.",
+                    "en": "I'm sold.",
+                    "es": "Me convenciste.",
+                    "fr": "Vendu.",
+                    "ja": "{Male=俺もやってみたい。;Female=私もやってみたい。}",
+                    "ko": "저도 한번 해보고 싶네요",
+                    "th": "น่าสนใจนะ",
+                    "zh-Hans": "我也想试试。",
+                    "zh-Hant": "我也想試試。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Mal sehen, wie schwierig es wird.",
+                    "en": "Let's see how difficult it can be.",
+                    "es": "Veamos qué tan difícil puede ser.",
+                    "fr": "Voyons si c'est si difficile.",
+                    "ja": "どれほどの窮地なのか試させてもらうよ。",
+                    "ko": "얼마나 어려운지 궁금하네요",
+                    "th": "ขอลองหน่อยว่าจะยากสักแค่ไหน",
+                    "zh-Hans": "我倒要看看能有多难。",
+                    "zh-Hant": "我倒要看看有多難。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Als Sicherheitsmaßnahme steht diese Simulation nur bestimmten Blütenträgern und Beratern zur Verfügung, die die Kriterien erfüllen. Doch ich kann sofort eine Bewertung für dich durchführen.",
+                "en": "As a safety precaution, this simulation is only available to certain Bloom Bearers and Consultants who meet the criteria. But I can run an evaluation for you right now.",
+                "es": "Como medida de seguridad, esta simulación solo está disponible para ciertos Portadores de Flores y Consultores que cumplen con los criterios. Pero puedo hacer una evaluación por ti ahora mismo.",
+                "fr": "Par précaution, cette simulation n'est disponible qu'aux porteurs de fleur et consultants qui remplissent les conditions, mais je peux t'évaluer tout de suite.",
+                "ja": "安全を考慮シ、一部の実力アル花持ちや協力者にノミ開放されてイマス。参加希望ナラ登録してあげマスヨ。",
+                "ko": "안전상의 이유로, 현재는 기준에 부합되는 소수의 흑화 집사와 초청 멤버들만 대상으로 하고 있죠. 제가 참여할 수 있게 처리해 드릴게요",
+                "th": "เพื่อความปลอดภัย การจำลองนี้จะเปิดให้เฉพาะกับผู้ครองผกาและที่ปรึกษาที่ผ่านเกณฑ์เท่านั้น แต่ฉันประเมินผลให้คุณตอนนี้เลยก็ได้",
+                "zh-Hans": "出于安全性考虑，它目前只面向少数实力符合标准的执花和客卿。我可以替你处理一下。",
+                "zh-Hant": "出於安全性考慮，它目前只面向少數實力符合標準的執花和客卿。我可以替你處理一下。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… So, jetzt kannst du direkt von deinem Terminal aus auf die Simulationen zugreifen.",
+                "en": "...There, you can now access the simulator directly from your Terminal.",
+                "es": "Ya está, ya puedes acceder al simulador directamente desde tu terminal.",
+                "fr": "... Voilà, tu peux désormais accéder au simulateur directement depuis ta borne.",
+                "ja": "……これで、デバイスからテストに参加できるようになりマシタ。",
+                "ko": "...이제, 단말기를 통해 테스트에 참여하실 수 있어요",
+                "th": "...เรียบร้อย คุณสามารถเข้าสู่การจำลองโดยตรงจากเทอร์มินัลได้เลย",
+                "zh-Hans": "……现在，你可以直接通过终端参与测试了。",
+                "zh-Hant": "……現在，你可以直接透過終端參與測試了。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ging schnell.",
+                    "en": "That was quick.",
+                    "es": "Eso fue rápido.",
+                    "fr": "C'était rapide.",
+                    "ja": "{Male=速いな。;Female=速いね。}",
+                    "ko": "엄청 빠르네요?",
+                    "th": "แค่นั้นเองเหรอ",
+                    "zh-Hans": "这么快？",
+                    "zh-Hant": "這麼快？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, natürlich. Die Aufzeichnungen zeigen, dass du {Male=ein Elite-Blütenträger;Female=eine Elite-Blütenträgerin} der Schwarzen Küsten bist. Das war reine Formsache.",
+                "en": "Well, yes. Records show you are an elite Bloom Bearer of the Black Shores. It was an easy pass.",
+                "es": "Bueno, sí. Los registros indican que eres {Male=un Portador de Flor;Female=una Portadora de Flor} de élite de la Costa Negra. Aprobaste con facilidad.",
+                "fr": "Eh bien, oui. Les archives indiquent que tu fais partie des porteurs de fleur d'élite du Littoral noir. C'était du gâteau.",
+                "ja": "エエ。あなたはブラックショアのエリート花持ちトシテ、元々挑戦資格をクリアしているノデスヨ。",
+                "ko": "네, 당신은 검은 해안의 정예 흑화 집사니까요. 테스트 기준에 당연히 부합되죠",
+                "th": "ใช่แล้ว บันทึกระบุว่าคุณคือผู้ครองผการะดับอีลีทของแบล็กชอร์ แบบนี้ผ่านฉลุย",
+                "zh-Hans": "是的，因为你作为黑海岸的精英执花，本就达到了参与测试的标准。",
+                "zh-Hant": "是的，因為你作為黑海岸的精英執花，本就達到了參與測試的標準。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du kannst natürlich jederzeit eine Simulation durchführen, wenn du dazu bereit bist.",
+                "en": "Feel free to conduct a simulation whenever you're ready.",
+                "es": "Puedes ejecutar una simulación cuando quieras.",
+                "fr": "N'hésite pas à lancer une simulation quand tu le voudras.",
+                "ja": "ツマリ、もうイツでも挑戦開始デキマスヨ。",
+                "ko": "아무튼, 자유롭게 도전을 시작하세요",
+                "th": "คุณพร้อมเมื่อไรก็เริ่มการจำลองได้เลย",
+                "zh-Hans": "总之，请自由地开始挑战吧。",
+                "zh-Hant": "總之，請自由地開始挑戰吧。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 5,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überprüfe, wie es Kuroro geht",
+        "en": "See how KU-Roro's doing",
+        "es": "Ve cómo está KU-Roro.",
+        "fr": "Examiner le KU-Roro",
+        "ja": "壊れたロボットの様子を見てみる",
+        "ko": "쿠 · 로로의 상황 확인하기",
+        "th": "ดูว่าเคยู-โรโร่เป็นอย่างไรบ้าง",
+        "zh-Hans": "查看库洛洛的情况",
+        "zh-Hant": "查看庫洛洛的情況"
+      },
+      "entities": [
+        {
+          "entityId": 171750000,
+          "mapId": 8,
+          "blueprintType": "NPC420081",
+          "name": "TsEntity_库洛洛420084",
+          "areaId": 606,
+          "position": {
+            "x": -120243,
+            "y": 214596,
+            "z": 193
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 171750001,
+          "mapId": 8,
+          "blueprintType": "NPC420081",
+          "name": "TsEntity_库洛洛420085",
+          "areaId": 606,
+          "position": {
+            "x": -120242,
+            "y": 214589,
+            "z": 204
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_巴别塔",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Puh. Es wurde auch Zeit, dass jemand auftaucht. Mein Stimmbox überhitzt gleich von dem ganzen Geschrei.",
+                "en": "Finally, someone shows up! My voicebox was about to explode from all the yelling I've been doing!",
+                "es": "Fiu. Ya era hora de que apareciera alguien. Mi dispositivo fonador estaba por sobrecalentarse por todos los gritos que estaba dando",
+                "fr": "Pfiou. Il était temps que quelqu'un vienne. Ma boîte vocale est sur le point de surchauffer avec tous mes cris.",
+                "ja": "やっと来テくれましたネ、発声ユニットが壊レルところデシタヨ。",
+                "ko": "드디어 누군가 왔네요. 발성부가 다 쉴 뻔했는데",
+                "th": "ในที่สุดก็มีคนมา! ตะโกนจนกล่องเสียงฉันจะระเบิดอยู่แล้วเนี่ย!",
+                "zh-Hans": "总算有人来了，我的发声单元都快喊哑了。",
+                "zh-Hant": "總算有人來了，我的發聲單元都快喊啞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kannst du mir vielleicht helfen, jemanden von den Schwarzen Küsten zu finden?",
+                "en": "Do you think you can help me find someone from the Black Shores?",
+                "es": "¿Crees que puedes ayudarme a encontrar a alguien en la Costa Negra?",
+                "fr": "Tu penses pouvoir m'aider à trouver quelqu'un du Littoral noir ?",
+                "ja": "ブラックショアの人を呼んできてもらえマセンカ？",
+                "ko": "검은 해안 사람을 찾는 걸 도와주시겠어요?",
+                "th": "พอจะช่วยตามหาคนจากแบล็กชอร์ให้หน่อยได้มั้ย",
+                "zh-Hans": "你能帮我找来黑海岸的人吗？",
+                "zh-Hant": "你能幫我找來黑海岸的人嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué pasó?",
+                    "fr": "Que s'est-il passé ?",
+                    "ja": "{Male=どうしたんだ？;Female=どうしたの？}",
+                    "ko": "어떻게 된 거죠?",
+                    "th": "เกิดอะไรขึ้น",
+                    "zh-Hans": "你怎么了？",
+                    "zh-Hant": "你怎麼了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mich hat ein Haufen TDs überfallen. Bin nur knapp mit meinen Schrauben und Muttern davongekommen, aber ich glaube, ich habe mir dabei eine Antriebswelle gebrochen.",
+                "en": "I got jumped by a bunch of TDs. Barely escaped with my nuts and bolts, but I think I did bust a drive shaft.",
+                "es": "Me sorprendió un grupo de Disonancias Tácitas Apenas escapé con mis tornillos, pero creo que averié un eje motor.",
+                "fr": "Je me suis fait attaquer par des Tacet Discords. J'ai failli y laisser mes boulons et mes écrous, et je crois que j'ai abîmé un arbre de transmission par la même occasion.",
+                "ja": "さっき残像に襲われテ、何トカ逃げ出せたんデス。ところガ、何かガドライブシャフトに引っかかったミタイデ……",
+                "ko": "방금 잔상에 습격당했어요. 도망치긴 했지만, 전동축이 돌아가지 않는 것 같네요",
+                "th": "โดนพวกทาเซ็ตดิสคอร์ดจู่โจมน่ะ หนีรอดหวุดหวิดแบบยังเหลือเศษน็อตกับโบลต์ แต่เหมือนเพลาขับจะพังไปแล้ว",
+                "zh-Hans": "我刚才被残象袭击了，虽然成功逃了出来，但传动轴好像卡住了。",
+                "zh-Hant": "我剛才被殘象襲擊了，雖然成功逃了出來，但傳動軸好像卡住了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lass mich kurz einen Blick darauf werfen.",
+                    "en": "Let me take a look at it.",
+                    "es": "Déjame echarle un vistazo.",
+                    "fr": "Je vais y jeter un œil.",
+                    "ja": "ちょっと見せて。",
+                    "ko": "제가 한 번 봐 드릴게요",
+                    "th": "ขอดูหน่อยสิ",
+                    "zh-Hans": "我先帮你看看。",
+                    "zh-Hant": "我先幫你看看。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich hatte schon mit Wächterkonstrukten zu tun.",
+                    "en": "I've worked on Sentry Constructs before.",
+                    "es": "Hasta el Constructo Guardia puedo arreglar.",
+                    "fr": "J'ai déjà travaillé sur ce genre de choses.",
+                    "ja": "{Male=実は俺、「ゼノコロッサス」も直せるんだ。;Female=実は私、「ゼノコロッサス」も直せるの。}",
+                    "ko": "사실 전 「이성(異性) 무장」도 수리할 수 있거든요",
+                    "th": "ฉันเคยซ่อมแซม Sentry Construct มาก่อน",
+                    "zh-Hans": "其实我连「异构武装」都会修。",
+                    "zh-Hant": "其實我連「異構武裝」都會修。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, bitte doch. Das ist doch genau das Teil, das meine „Beine“ verbindet.",
+                "en": "Oh, please do. It should be the one connecting my \"feet.\"",
+                "es": "Ah, por favor. Debería ser el que conecta mis «pies».",
+                "fr": "Oh, je t'en prie. Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "お願いシマス。恐らく「足」部分に問題ガあるかト。",
+                "ko": "부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "ช่วยหน่อยนะ น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "麻烦你了，问题应该就出在我的“脚”上。",
+                "zh-Hant": "麻煩你了，問題應該就出在我的「腳」上。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, wirklich? Kannst du mal drüberschauen? Das muss doch das Teil sein, das meine „Beine“ zusammenhält.",
+                "en": "Oh, really? Do you mind taking a look at it? It should be the one connecting my \"feet.\"",
+                "es": "Ah, ¿de veras? ¿Te importa echarle un vistazo? Debería ser el que conecta mis «pies».",
+                "fr": "Oh, vraiment ? Ça te dérange d'y jeter un œil ? Ça devrait être celui connecté à mes « pieds ».",
+                "ja": "本当ニ？デハ助けてもらえマスカ、恐らく「足」部分に問題ガあるかト。",
+                "ko": "정말요? 그럼 부탁드릴게요. 아마도 제 「발」에 문제가 생긴 것 같아요",
+                "th": "จริงเหรอ พอจะช่วยดูให้หน่อยได้มั้ย น่าจะเป็นตัวที่ต่อกับ \"เท้า\" ของฉันอยู่",
+                "zh-Hans": "真的？麻烦你帮我看看，问题应该就出在我的“脚”上。",
+                "zh-Hant": "真的？麻煩你幫我看看，問題應該就出在我的「腳」上。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ohhh, ich glaube, ich verliere sie langsam. Da unten fühlt sich alles total taub an …",
+                "en": "Not good. I think I'm starting to lose them. Everything feels numb down there...",
+                "es": "Ah, creo que estoy empezando a perderlos. Siento todo adormecido...",
+                "fr": "Ohhh, je crois que je commence à les perdre. Je suis tout engourdi en bas...",
+                "ja": "参っタ、足がダメかもしれナイ、もう感覚ガ……",
+                "ko": "어떡하죠. 발을 잃을 수도 있을 것 같네요. 아무런 감각이 없어요",
+                "th": "แย่แล้ว ฉันเริ่มไม่รู้สึกถึงมันแล้ว ทุกอย่างข้างล่างมันชาไปหมดเลย...",
+                "zh-Hans": "不好，我感觉我要失去它们了，那里已经失去知觉了……",
+                "zh-Hant": "不好，我感覺我要失去它們了，那裡已經失去知覺了……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750103,
+                "name": {
+                  "zh-Hans": "倒下的库洛洛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Anstupsen.)",
+                    "en": "(Give it a poke.)",
+                    "es": "(Darle un toque).",
+                    "fr": "(Donner un petit coup.)",
+                    "ja": "（つっついてみる）",
+                    "ko": "(찔러본다)",
+                    "th": "(ลองจิ้มดู)",
+                    "zh-Hans": "（戳一戳）",
+                    "zh-Hant": "（戳一戳）"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Ein paar Mal darauf klopfen und abwarten, was passiert.)",
+                    "en": "(Knock it a few times and see what happens.)",
+                    "es": "(Golpearlo algunas veces y ver qué sucede).",
+                    "fr": "(Frapper plusieurs fois pour voir ce qu'il se passe.)",
+                    "ja": "（とりあえず叩いてみる）",
+                    "ko": "(우선 두들겨본다)",
+                    "th": "(เคาะสักสองสามครั้งแล้วรอดูอาการ)",
+                    "zh-Hans": "（先敲一敲试试）",
+                    "zh-Hant": "（先敲一敲試試）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was auch immer für ein Zaubertrick das war – er hat wahre Wunder gewirkt! Nach ein paar Scheppern und Ächzen kommt Kuroro langsam wieder auf die „Beine“.",
+                "en": "Whatever magic trick you used seems to work wonders. \nAfter a few clanks and creaks, the KU-Roro slowly gets back to its \"feet.\"",
+                "es": "Parece que ese truco de magia que usaste hizo maravillas.\nDespués de algunos ruidos y crujidos, el KU-Roro se pone lentamente de «pie».",
+                "fr": "Votre tour de magie semble avoir fait des merveilles...\nAprès quelques cliquetis et grincements, le petit robot se dresse lentement sur ses « pieds ».",
+                "ja": "意外にも効果があったようだ――\nガタガタとパーツが動きだして、ロボットはゆっくりと浮きあがった。",
+                "ko": "그 행동이 의외로 효과가 있었다.\n삐걱삐걱 대는 소리가 끝나자, 눈앞의 쿠 · 로로가 천천히 떠올랐다",
+                "th": "ไม่รู้ว่าทำอะไรไปแต่มันได้ผล \nหลังจากส่งเสียงเอี๊ยดอ๊าดสักพัก KU-Roro ก็ใช้ \"เท้า\" ของมันยืนขึ้นมาได้อีกครั้ง",
+                "zh-Hans": "你的尝试起到了出人意料的效果——\n在一阵吱嘎吱嘎的声音过后，眼前的库洛洛缓缓地浮了起来。",
+                "zh-Hant": "你的嘗試起到了出人意料的效果——\n在一陣吱嘎吱嘎的聲音過後，眼前的庫洛洛緩緩地浮了起來。"
+              },
+              "id": 7
+            },
+            {
+              "text": {
+                "de": "Kuku. Alle Systeme stabil. Ich, KU-Crash, bin zurück und bereit loszulegen",
+                "en": "Ku, ku. All systems normal. I, KU-Cage, am back and ready to rock and roll!",
+                "es": "Kuku. Todos los sistemas normales. Yo, KU-Cage, estoy de regreso y a disposición para actuar.",
+                "fr": "Kuku. Systèmes opérationnels. Moi, KU-Cage, suis de retour et prêt à assurer !",
+                "ja": "クク、シグナルに接続。私――クリーズ、完全復活デス！",
+                "ko": "쿠쿠, 신호 완벽. 나 쿠 · 카기 부활!",
+                "th": "คุ คุ ทุกระบบทำงานปกติ KU-Cage ผู้นี้พร้อมที่จะลุยแล้ว!",
+                "zh-Hans": "库库，信号状态良好。我——库卡基完全复活了。",
+                "zh-Hant": "庫庫，信號狀態良好。我——庫卡基完全復活了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und das alles verdanke ich dir, {Male=meinem Retter;Female=meiner Retterin}. Das sind wohl die „Heilenden Hände“, wie sie drüben in Huanglong genannt werden, die ihre Arbeit tun.",
+                "en": "Thank you! You're what they call a miracle worker over in Huanglong.",
+                "es": "Y todo gracias a ti, mi salvación. Supongo que así trabajan las «Manos curadoras», como se las conoce en Huanglong.",
+                "fr": "Et c'est uniquement grâce à toi. J'imagine que c'était l'œuvre des « mains guérisseuses », comme on les appelle à Huanglong.",
+                "ja": "大変感謝シマス。瑝瓏の言葉で言うト、大恩人、まさに「<ano=みょうしゅかいしゅん>妙手回春</ano>」デスネ。",
+                "ko": "정말 고마워요. 황룡의 말로 하자면, 은인이시여, 당신은 훌륭한 솜씨를 가진 의사님이시네요",
+                "th": "ขอบคุณมาก! ที่หวงหลงเค้าเรียกคนแบบคุณว่ามือปาฏิหาริย์เลยนะ",
+                "zh-Hans": "非常感谢。用瑝珑的话说，恩人，你真是妙手回春。",
+                "zh-Hant": "非常感謝。用瑝瓏的話說，恩人，你真是妙手回春。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "… Wie bist du hier gelandet?",
+                    "en": "...How did you end up here?",
+                    "es": "¿Cómo terminaste aquí?",
+                    "fr": "... Comment as-tu fini ici ?",
+                    "ja": "{Male=なぜクリーズがここに？;Female=どうしてクリーズがここに？}",
+                    "ko": "...왜 이곳에 계신 거죠?",
+                    "th": "...ทำไมถึงมาอยู่ที่นี่ได้",
+                    "zh-Hans": "……你怎么会出现在这？",
+                    "zh-Hant": "……你怎麼會出現在這？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich war gerade dabei, Umgebungsdaten für einen Simulationsprojekt der Schwarzen Küsten zu sammeln.",
+                "en": "I was gathering environmental data for a combat simulator we're working on over at the Black Shores.",
+                "es": "Estaba tomando muestras de datos ambientales para un proyecto de simulación actualmente en desarrollo en la Costa Negra.",
+                "fr": "Je prélevais des échantillons de données environnementales pour un projet de simulation en cours de développement au Littoral noir.",
+                "ja": "実は、ブラックショアが開発中のシミュレーションプログラムのために、環境データを収集しているのデス。",
+                "ko": "사실 저는 검은 해안에서 개발 중인 시뮬레이션 훈련 프로젝트를 위해 환경 데이터를 수집하고 있어요",
+                "th": "ฉันกำลังรวบรวมข้อมูลสภาพแวดล้อมสำหรับเครื่องจำลองการต่อสู้ที่เรากำลังพัฒนาอยู่ที่แบล็กชอร์",
+                "zh-Hans": "其实，我在为黑海岸开发中的一个模拟演练项目收集环境数据。",
+                "zh-Hant": "其實，我在為黑海岸開發中的一個模擬演練專案收集環境數據。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Durch gesammelte Daten aus ganz Solaris-3 können <color=yellow>Krisenprüfungen simuliert werden, bei denen die Kampffähigkeiten der Teilnehmer unter extremen Bedingungen auf die Probe gestellt werden</color>.",
+                "en": "It uses data from all over Solaris-3, to <color=yellow>simulate Crisis Trials that put the combat capabilities of its participants to the test under extreme conditions</color>.",
+                "es": "Al analizar situaciones y datos recolectados a lo largo de Solaris-3, <color=yellow>simula pruebas de crisis que ponen a prueba las habilidades de combate de sus participantes en condiciones extremas</color>.",
+                "fr": "En analysant les données et instances rassemblées dans tout Solaris-3, <color=yellow>il simule des « épreuves de crise » qui mettent les capacités de combat de ses participants à l'épreuve dans des conditions extrêmes</color>.",
+                "ja": "このプログラムは、ソラリスの各エリアデータと過去ログに基づキ、<color=yellow>「危機的状況」をシミュレートし、厳しい条件下デ挑戦者の実戦能力を検証することがデキマス</color>。",
+                "ko": "이 프로그램은 솔라리스 여러 곳의 데이터와 과거 사례를 분석해 <color=yellow>「위기 상황」을 시뮬레이션하는 방식이에요. 도전자는 가혹한 조건 속에서 실전 능력을 테스트할 수 있죠</color>",
+                "th": "มันจะใช้ข้อมูลจากทั่วทั้งโซลาริส-3 เพื่อ<color=yellow>จำลองบททดสอบวิกฤตที่ทดสอบความสามารถในการต่อสู้ของผู้เข้าร่วมท่ามกลางสภาวะสุดโหด</color>",
+                "zh-Hans": "它可以根据索拉里斯各地数据和过往案例<color=yellow>模拟出一些「危机情景」，从而检验挑战者在严苛条件下的实战能力</color>。",
+                "zh-Hant": "它可以根據索拉里斯各地數據和過往案例<color=yellow>模擬出一些「危機情景」，從而檢驗挑戰者在嚴苛條件下的實戰能力</color>。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Krisen? In welcher Form …?",
+                    "en": "Crisis Trials? As in…?",
+                    "es": "¿Pruebas de crisis?",
+                    "fr": "Des épreuves de crise ? Comme... ?",
+                    "ja": "{Male=どんな危機的状況なんだ？;Female=どんな危機的状況なの？}",
+                    "ko": "「위기 상황」은 어떤 걸 말하는 거죠?",
+                    "th": "บททดสอบวิกฤตเหรอ หมายถึง...?",
+                    "zh-Hans": "什么是危机情景？",
+                    "zh-Hant": "什麼是危機情景？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie die TD-Ausbrüche entlang der Grenze zu Jinzhou oder der Nebel, der das Ende des Büßers in Ragunna verschlang …",
+                "en": "Like the TD outbreaks along the Jinzhou borders, or the mist swallowing up Penitent's End in Ragunna...",
+                "es": "Como los brotes de Disonancias Tácitas a lo largo de la frontera de Jinzhou, o la niebla que devora Fin del Penitente en Raguna...",
+                "fr": "Des événements comme les Éruptions de Tacet Discords qui se sont produites aux frontières de Jinzhou et la brume qui recouvre le Trépas du pénitent à Ragunna...",
+                "ja": "例エバ、今州の辺境地帯に残像潮が現れタリ、ラグーナの吹き溜まりが海霧に呑み込まれタリナド……",
+                "ko": "예를 들면, 금주 변경에 잔상류가 나타난다던가, 라군나의 무덤의 섬이 바다안개에 뒤덮였다거나...",
+                "th": "ก็เหมือนการบุกของทาเซ็ตดิสคอร์ดตามชายแดนของจินโจว หรือม่านหมอกที่กลืนกินปลายทางแห่งผู้สารภาพบาปในรากูนน่า...",
+                "zh-Hans": "比如今州的边境出现了残象潮，拉古那的那座墓岛被海雾淹没……",
+                "zh-Hant": "比如今州的邊境出現了殘象潮，拉古那的那座墓島被海霧淹沒……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "All dies sind selbstverständlich nur Simulationen und keine tatsächlichen Krisen. Kein Grund zur Sorge.",
+                "en": "Of course, these are all just simulations, not actual crises. No need to worry.",
+                "es": "Naturalmente, todos los entornos son simulaciones controladas y no reflejan ni representan ninguna crisis real.",
+                "fr": "Mais naturellement, tous les environnements sont des simulations contrôlées qui ne reflètent ou ne reproduisent aucune véritable crise.",
+                "ja": "もちろん、シミュレーションですノデ、実際の危機ではアリマセン。",
+                "ko": "물론, 전부 실제 상황은 아니죠",
+                "th": "แน่นอนว่าทุกอย่างเป็นแค่การจำลอง ไม่ใช่วิกฤตของจริง ไม่ต้องกังวล",
+                "zh-Hans": "当然，那都是模拟的产物，并不是真实发生的危机。",
+                "zh-Hant": "當然，那都是模擬的產物，並不是真實發生的危機。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Den Teilnehmern steht es frei, <color=yellow>die Simulationen und den Schwierigkeitsgrad nach ihren Wünschen anzupassen</color>.",
+                "en": "Participants are free to <color=yellow>make adjustments to the simulations and customize the difficulty to suit their preferences</color>.",
+                "es": "Los participantes tienen la libertad de <color=yellow>modificar las simulaciones a través de sistemas integrados y personalizar cada desafío a sus preferencias</color>.",
+                "fr": "Les participants sont libres d'<color=yellow>apporter des ajustements aux simulations via les systèmes intégrés et de personnaliser chaque défi selon leurs préférences</color>.",
+                "ja": "挑戦者は<color=yellow>プログラムで生成されたシミュレーション領域を調整して、実力に応じタ難易度をカスタマイズできマス</color>。",
+                "ko": "도전자는 <color=yellow>프로그램이 생성한 시뮬레이션 영역 난이도를 자신에 맞게 조정</color>할 수 있죠",
+                "th": "ผู้เข้าร่วมสามารถ<color=yellow>ปรับแต่งการจำลองและเปลี่ยนระดับความยากให้เหมาะกับความต้องการ</color>ได้อย่างอิสระ",
+                "zh-Hans": "挑战者也可以<color=yellow>对程序生成的模拟领域进行调整，定制适合自己的难度</color> 。",
+                "zh-Hant": "挑戰者也可以<color=yellow>對程式生成的模擬領域進行調整，訂製適合自己的難度</color> 。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Für alle, die es etwas spannender mögen, gibt es eine <color=yellow>Auswahl an Stressmodulen, die den Schwierigkeitsgrad erhöhen und einen in extremste Szenarien versetzen</color>.",
+                "en": "For those looking to spice things up, there'll be a <color=yellow>selection of Stress Modules available to ramp up the difficulty and throw you in the most extreme scenarios imaginable</color>.",
+                "es": "Para aquellas personas que buscan un reto, habrá una <color=yellow>selección de Módulos de carga disponibles que elevan la dificultad de la simulación a niveles más extremos</color>.",
+                "fr": "Quant aux participants cherchant à pimenter les choses, <color=yellow>une sélection de « Modules de chargement » sera disponible, permettant à la difficulté des environnements simulés d'atteindre de nouveaux sommets</color>.",
+                "ja": "極限まで極めたい挑戦者ナラ、<color=yellow>様々な「ペイロードモジュール」を装着シたママ、最高難易度に挑むことも可能デス</color>。",
+                "ko": "극한을 추구하는 도전자들은 <color=yellow>「고위험 모듈」을 장착해, 상황 난이도를 최고 수치</color>까지 올릴 수 있거든요",
+                "th": "หากต้องการความท้าทายเพิ่มเติม ก็จะมี<color=yellow>โมดูลความเครียดให้เลือกเพื่อใช้เพิ่มความยาก และพาคุณเข้าสู่สถานการณ์ที่ดุเดือดที่สุดเท่าที่จะเป็นไปได้</color>",
+                "zh-Hans": "对于追求极限的挑战者，他们可以<color=yellow>通过装配各种「负荷模组」，将这些情景的难度提升到前所未有的绝境</color>。",
+                "zh-Hant": "對於追求極限的挑戰者，他們可以<color=yellow>透過裝配各種「負荷模組」，將這些情景的難度提升到前所未有的絕境</color>。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alle gesammelten Kampfdaten werden als Referenzwerte für künftige Einsätze der Schwarzen Küsten im Rahmen der Krisenbewältigung dienen.",
+                "en": "All combat data collected will serve as benchmarks for future Black Shores field missions in crisis response.",
+                "es": "Todos los datos de combate obtenidos servirán como parámetros para futuras misiones de campo de la Costa Negra en respuesta a las crisis.",
+                "fr": "Les données de combat collectées serviront de référence pour répondre aux situations de crise des futures missions de terrain du Littoral noir.",
+                "ja": "プログラムは挑戦中のデータを記録シ、ブラックショアが将来ノ危機対応資料として使いマス。",
+                "ko": "프로그램 콘솔에서는 도전 과정에서 생긴 모든 데이터를 기록해, 앞으로 검은 해안의 위기 대응을 위한 외근에 참고 자료로 사용되죠",
+                "th": "ข้อมูลการต่อสู้ทั้งหมดที่รวบรวมมาจะถูกใช้เป็นเกณฑ์สำหรับภารกิจภาคสนามของแบล็กชอร์ในการรับมือวิกฤตในอนาคต",
+                "zh-Hans": "程序后台将记录下挑战过程中所产生的数据，为黑海岸日后应对危机的外勤行动提供参考。",
+                "zh-Hant": "程式後台將記錄下挑戰過程中所產生的數據，為黑海岸日後應對危機的外勤行動提供參考。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin beeindruckt.",
+                    "en": "I'm sold.",
+                    "es": "Me convenciste.",
+                    "fr": "Vendu.",
+                    "ja": "{Male=俺もやってみたい。;Female=私もやってみたい。}",
+                    "ko": "저도 한번 해보고 싶네요",
+                    "th": "น่าสนใจนะ",
+                    "zh-Hans": "我也想试试。",
+                    "zh-Hant": "我也想試試。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Mal sehen, wie schwierig es wird.",
+                    "en": "Let's see how difficult it can be.",
+                    "es": "Veamos qué tan difícil puede ser.",
+                    "fr": "Voyons si c'est si difficile.",
+                    "ja": "どれほどの窮地なのか試させてもらうよ。",
+                    "ko": "얼마나 어려운지 궁금하네요",
+                    "th": "ขอลองหน่อยว่าจะยากสักแค่ไหน",
+                    "zh-Hans": "我倒要看看能有多难。",
+                    "zh-Hant": "我倒要看看能有多難。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Als Sicherheitsmaßnahme steht diese Simulation nur bestimmten Blütenträgern und Beratern zur Verfügung, die die Kriterien erfüllen. Doch ich kann sofort eine Bewertung für dich durchführen.",
+                "en": "As a safety precaution, this simulation is only available to certain Bloom Bearers and Consultants who meet the criteria.",
+                "es": "Como medida de seguridad, esta simulación solo está disponible para ciertos Portadores de Flores y Consultores que cumplen con los criterios.",
+                "fr": "Par précaution, cette simulation n'est disponible qu'aux porteurs de fleur et consultants qui remplissent les conditions.",
+                "ja": "安全を考慮シ、一部の実力アル花持ちや協力者にノミ開放されてイマス。",
+                "ko": "안전상의 이유로, 현재는 기준에 부합되는 소수의 흑화 집사와 초청 멤버들만 대상으로 하고 있죠. 제가 참여할 수 있게 처리해 드릴게요",
+                "th": "เพื่อความปลอดภัย การจำลองนี้จะเปิดให้เฉพาะกับผู้ครองผกาและที่ปรึกษาที่ผ่านเกณฑ์เท่านั้น",
+                "zh-Hans": "出于安全性考虑，它目前只面向少数实力符合标准的执花和客卿。",
+                "zh-Hant": "出於安全性考慮，它目前只面向少數實力符合標準的執花和客卿。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… So, jetzt kannst du direkt von deinem Terminal aus auf die Simulationen zugreifen.",
+                "en": "...Hmm, it seems you are eligible to participate in the simulation.",
+                "es": "Mmm, los registros indican que cumples los requisitos para participar en la simulación.",
+                "fr": "Hmm... Les archives indiquent que tu es éligible pour participer à la simulation.",
+                "ja": "……オヤ？あなたハ既にテストに挑戦スル資格を持っているヨウデス。",
+                "ko": "...오, 프로그램 테스트에 이미 참여하실 수 있네요?",
+                "th": "...อืม ดูเหมือนคุณจะมีสิทธิ์เข้าร่วมการจำลองนะ",
+                "zh-Hans": "……咦，你已经可以参与程序的测试了？",
+                "zh-Hant": "……咦，你已經可以參與程式的測試了？"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ging schnell.",
+                    "en": "What do you mean?",
+                    "es": "¿A qué te refieres?",
+                    "fr": "C'est-à-dire ?",
+                    "ja": "どういうこと？",
+                    "ko": "어떻게 된 거죠?",
+                    "th": "Zani เกิดอะไรขึ้น?",
+                    "zh-Hans": "怎么回事？",
+                    "zh-Hant": "怎麼回事？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, natürlich. Die Aufzeichnungen zeigen, dass du {Male=ein Elite-Blütenträger;Female=eine Elite-Blütenträgerin} der Schwarzen Küsten bist. Das war reine Formsache.",
+                "en": "I'm not sure. It just shows that your application was approved by someone with high authorization.",
+                "es": "No lo sé. Solo dice que alguien con una autorización alta aprobó tu solicitud.",
+                "fr": "Je ne sais pas vraiment. Je vois simplement que ta candidature a été approuvée par quelqu'un de haut placé.",
+                "ja": "分かりマセン。バックグラウンドのヨリ高い権限があなたを承認したミタイデス。",
+                "ko": "저도 모르겠어요. 콘솔에서 더 높은 권한으로 당신의 테스트 신청을 승인했어요",
+                "th": "ฉันก็ไม่แน่ใจ มันระบุว่าคำขอของคุณได้รับการอนุมัติจากผู้มีอำนาจระดับสูง",
+                "zh-Hans": "我也不知道。似乎后台有更高的权限批准了关于你的测试申请。",
+                "zh-Hant": "我也不知道。似乎後台有更高的權限批准了關於你的測試申請。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du kannst natürlich jederzeit eine Simulation durchführen, wenn du dazu bereit bist.",
+                "en": "Feel free to conduct a simulation whenever you're ready.",
+                "es": "Puedes ejecutar una simulación cuando quieras.",
+                "fr": "N'hésite pas à lancer une simulation quand tu le voudras.",
+                "ja": "ツマリ、もうイツでも挑戦開始デキマスヨ。",
+                "ko": "아무튼, 자유롭게 도전을 시작하세요",
+                "th": "คุณพร้อมเมื่อไรก็เริ่มการจำลองได้เลย",
+                "zh-Hans": "总之，请自由地开始挑战吧。",
+                "zh-Hant": "總之，請自由地開始挑戰吧。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750104,
+                "name": {
+                  "zh-Hans": "库卡基"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 7,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_巴别塔",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo …? Ist hier jemand? Ich könnte etwas Hilfe gebrauchen …",
+                "en": "Hello...? Is anyone there? Need some help over here...",
+                "es": "¿Hola...? ¿Hay alguien ahí? Necesito ayuda aquí...",
+                "fr": "Bonjour... ? Il y a quelqu'un ? J'ai besoin d'aide...",
+                "ja": "ドナタカ……助ケテ……",
+                "ko": "거기 누구 있어요? 도와주세요...",
+                "th": "ฮัลโหล... มีใครอยู่มั้ย ต้องการความช่วยเหลือหน่อยน่ะ...",
+                "zh-Hans": "附近有人吗……帮帮忙……",
+                "zh-Hant": "附近有人嗎……幫幫忙……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ugh, ich hab keinen Empfang … Das ist schlecht. Bald sind die Batterien leer …",
+                "en": "Ugh, can't get a signal... This is bad. I'll run out of batteries soon...",
+                "es": "Agh, no recibo ninguna señal... Esto es malo. Me quedaré sin baterías pronto...",
+                "fr": "Argh, je n'ai pas de signal... Je n'aurai bientôt plus de batterie... Je suis dans le pétrin.",
+                "ja": "シグナル反応ナシ……このママじゃ、バッテリーがエンプティーに……",
+                "ko": "신호도 끊겼고... 조금 있으면 기기도 곧 꺼질 텐데...",
+                "th": "อึก ไม่มีสัญญาณเลย... แย่แล้ว แบตจะหมดแล้วด้วยสิ...",
+                "zh-Hans": "信号也断了……这样下去，机体很快就要没电了……",
+                "zh-Hant": "信號也斷了……這樣下去，機體很快就要沒電了……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 13,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_巴别塔",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo …? Ist hier jemand? Ich könnte etwas Hilfe gebrauchen …",
+                "en": "Hello...? Is anyone there? Need some help over here...",
+                "es": "¿Hola...? ¿Hay alguien ahí? Necesito ayuda aquí...",
+                "fr": "Bonjour... ? Il y a quelqu'un ? J'ai besoin d'aide...",
+                "ja": "ドナタカ……助ケテ……",
+                "ko": "거기 누구 있어요? 도와주세요...",
+                "th": "ฮัลโหล... มีใครอยู่มั้ย ต้องการความช่วยเหลือหน่อยน่ะ...",
+                "zh-Hans": "附近有人吗……帮帮忙……",
+                "zh-Hant": "附近有人嗎……幫幫忙……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ugh, ich hab keinen Empfang … Das ist schlecht. Bald sind die Batterien leer …",
+                "en": "Ugh, can't get a signal... This is bad. I'll run out of batteries soon...",
+                "es": "Agh, no recibo ninguna señal... Esto es malo. Me quedaré sin baterías pronto...",
+                "fr": "Argh, je n'ai pas de signal... Je n'aurai bientôt plus de batterie... Je suis dans le pétrin.",
+                "ja": "シグナル反応ナシ……このママじゃ、バッテリーがエンプティーに……",
+                "ko": "신호도 끊겼고... 조금 있으면 기기도 곧 꺼질 텐데...",
+                "th": "อึก ไม่มีสัญญาณเลย... แย่แล้ว แบตจะหมดแล้วด้วยสิ...",
+                "zh-Hans": "信号也断了……这样下去，机体很快就要没电了……",
+                "zh-Hant": "信號也斷了……這樣下去，機體很快就要沒電了……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

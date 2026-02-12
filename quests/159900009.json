@@ -1,0 +1,597 @@
+{
+  "id": 159900009,
+  "key": "漂泊骑士3碎石训练2",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Im Namen der Ritterlichkeit III",
+    "en": "In the Name of Chivalry III",
+    "es": "En nombre de la caballería III",
+    "fr": "Au nom du chevalier - III",
+    "ja": "騎士の名にかけて・三",
+    "ko": "기사의 이름으로 · III",
+    "th": "ในนามของความกล้าหาญ III",
+    "zh-Hans": "谨以骑士之名·三",
+    "zh-Hant": "謹以騎士之名·三"
+  },
+  "desc": {
+    "de": "Es ist Zeit, dein Versprechen gegenüber Faro einzulösen. Organisiere Trainingskurse für ihn.",
+    "en": "It's time to fulfill your promise to Faro. Set up a training session to get him started.",
+    "es": "Es hora de cumplir tu promesa a Faro. Organiza una sesión de entrenamiento para que empiece.",
+    "fr": "Il est temps de tenir votre promesse à Faro. Organisez une séance d'entraînement pour lui.",
+    "ja": "以前、ファーロに約束した指導が始まる。彼にいくつか訓練メニューを組んであげよう。",
+    "ko": "전에 페로의 훈련 지도를 시작하기로 약속했으니 훈련 과정을 준비해 보는 게 어떨까?",
+    "th": "ถึงเวลาทำตามคำสัญญาที่คุณให้ไว้กับ Faro เตรียมแผนการฝึกซ้อมเพื่อให้เขาได้เริ่ม",
+    "zh-Hans": "之前答应法罗的训练指导要开始了，给他安排点训练课程吧。",
+    "zh-Hant": "之前答應法羅的訓練指導要開始了，給他安排點訓練課程吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Zielgebiet",
+        "en": "Reach the designated area",
+        "es": "Llega a la zona designada.",
+        "fr": "Se rendre à l'emplacement indiqué",
+        "ja": "目標地点の付近に着く",
+        "ko": "근처 구역 도착하기",
+        "th": "เดินทางไปยังบริเวณที่กำหนด",
+        "zh-Hans": "到达附近区域",
+        "zh-Hant": "到達附近區域"
+      },
+      "entities": [
+        {
+          "entityId": 159900012,
+          "mapId": 8,
+          "blueprintType": "Gameplay537",
+          "name": "TsEntity_玩法_可破坏石块5",
+          "areaId": 20,
+          "position": {
+            "x": 747784,
+            "y": 606059,
+            "z": 5917
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 159900040,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM6_2",
+          "name": "TsEntity_157_法罗",
+          "areaId": 20,
+          "position": {
+            "x": 748359,
+            "y": 606094,
+            "z": 5860
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Faro",
+        "en": "Talk to Faro",
+        "es": "Habla con Faro.",
+        "fr": "Parler à Faro",
+        "ja": "ファーロと会話する",
+        "ko": "페로와 대화하기",
+        "th": "คุยกับ Faro",
+        "zh-Hans": "和法罗聊聊",
+        "zh-Hant": "和法羅聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 159900040,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM6_2",
+          "name": "TsEntity_157_法罗",
+          "areaId": 20,
+          "position": {
+            "x": 748359,
+            "y": 606094,
+            "z": 5860
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_漂泊骑士",
+          "flowIndex": 2,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Also, im heutigen Training geht es darum, Felsen zu zerschlagen? Ich erinnere mich daran, dass das ein Mitglied der Pioneer Association gesagt hat …",
+                "en": "So, today's training's about breaking rocks? I remember I once heard from a Pioneer Association member that…",
+                "es": "Entonces, ¿el entrenamiento de hoy consiste en partir rocas? Una vez escuché a alguien de la Asociación de Pioneros que decía algo así como...",
+                "fr": "Alors, l'entraînement du jour, c'est casser des rochers ? Je me souviens qu'une fois, j'ai entendu un membre de l'Association pionnière dire que...",
+                "ja": "今日の訓練は岩砕きですか？以前、先駆条約の人から聞いたことがあるんですけど……",
+                "ko": "오늘의 훈련과목은 바위 깨기인가? 예전에 선행 공약 멤버에게 들은 적이 있는데 말이야...",
+                "th": "วันนี้จะฝึกทุบหินกันเหรอครับ? ผมจำได้ว่าเคยได้ยินจากสมาชิกสมาคมผู้บุกเบิกว่า...",
+                "zh-Hans": "今天的训练科目是碎岩吗？我记得以前听先行公约的人说过……",
+                "zh-Hant": "今天的訓練科目是碎岩嗎？我記得以前聽先行公約的人說過……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Irgendwo außerhalb von Rinascita ist es wohl eine ziemlich beliebte Trainingsmethode, Felsen mit der Brust zu zerbrechen.",
+                "en": "Breaking rocks with your chest is quite popular somewhere outside of Rinascita.",
+                "es": "Que partir rocas a cabezazos es una actividad bastante popular en algún lugar lejos de Rinascita.",
+                "fr": "casser des rochers avec sa poitrine est assez populaire en dehors de Rinascita.",
+                "ja": "ある国では、胸で岩を砕くトレーニングが流行っているそうです。",
+                "ko": "리나시타 밖의 어딘가에서는 가슴에 얹은 바위를 깨는 훈련 방법이 유행하다고 들었어",
+                "th": "การทุบหินด้วยหน้าอกนี่เป็นที่นิยมนอกรินาซิตาอยู่ด้วยนะครับ",
+                "zh-Hans": "黎那汐塔外的某个地区，似乎流行着用胸膛把石头顶碎的锻炼方式啊。",
+                "zh-Hant": "黎那汐塔外的某個地區，似乎流行著用胸膛把石頭頂碎的鍛鍊方式啊。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube, das hast du vielleicht missverstanden.",
+                    "en": "I think you might have misunderstood.",
+                    "es": "Creo que no lo entendiste bien.",
+                    "fr": "Je crois que tu as mal compris.",
+                    "ja": "勘違いしているのでは？",
+                    "ko": "뭔가 오해하고 있는 것 같아요",
+                    "th": "นายคงเข้าใจผิดแล้วล่ะ",
+                    "zh-Hans": "你肯定有什么误解。",
+                    "zh-Hant": "你肯定有什麼誤解。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Na gut, dann probieren wir uns heute mal daran, Felsen mit der Brust zu zerbrechen.",
+                    "en": "Well then, today's training is \"breaking rocks with your chest.\"",
+                    "es": "Perfecto, entonces el entrenamiento de hoy es «romper rocas a cabezazos».",
+                    "fr": "Eh bien, l'entraînement d'aujourd'hui porte sur « casser des rochers avec sa poitrine. »",
+                    "ja": "やってみて。",
+                    "ko": "좋아요, 그럼 「가슴에 얹은 바위 깨기」를 시도해 보세요",
+                    "th": "ถ้างั้นวันนี้ก็ฝึก \"ทุบหินด้วยหน้าอก\" กันเลยสิ",
+                    "zh-Hans": "可以，你就来试试“胸口碎大石”吧。",
+                    "zh-Hant": "可以，你就來試試「胸口碎大石」吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha, du hast wohl recht. Für gewöhnliche Menschen ist so etwas unmöglich machbar!",
+                "en": "Haha, you're right. It's impossible for an ordinary person to do that!",
+                "es": "¡Ja, ja! Sí, seguro. ¡Para una persona común es imposible hacer eso!",
+                "fr": "Ha ha, vous avez raison. C'est impossible pour une personne ordinaire de faire ça !",
+                "ja": "あはは……考えてみたら、そんなこと普通の人にはできませんよね。",
+                "ko": "아하하... 생각해 보니까 일반인에게는 힘들겠지?",
+                "th": "ฮ่าๆ จริงด้วย มนุษย์ธรรมดาคงทำแบบนั้นไม่ได้หรอก!",
+                "zh-Hans": "啊哈哈……想想也是，这种事普通人根本做不到吧？",
+                "zh-Hant": "啊哈哈……想想也是，這種事普通人根本做不到吧？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was? Wirklich? Aber das klingt unmöglich!",
+                "en": "What? Really? But that sounds impossible!",
+                "es": "¿Qué? ¿En serio? ¡Pero eso parece imposible!",
+                "fr": "Quoi ? Vraiment ? Mais ça semble impossible !",
+                "ja": "え、本気ですか？そんなことできないですよ……",
+                "ko": "아, 설마 진심이야? 불가능한 일이 아닐까...?",
+                "th": "อะไรนะ? จริงเหรอครับ? แต่มันฟังดูไม่น่าเป็นไปได้นะ!",
+                "zh-Hans": "啊，来真的？这种事根本做不到吧……？",
+                "zh-Hant": "啊，來真的？這種事根本做不到吧……？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut, genug geplaudert. Heute konzentrieren wir uns einfach auf grundlegendes Krafttraining. Wir werden die Felsen mit unseren Waffen zerschlagen.",
+                "en": "Alright, chit-chat's over. Today, we simply focus on fundamental strength training. We'll be shattering the rocks with our weapons.",
+                "es": "Venga, se acabó la charla. Hoy nos centraremos en el entrenamiento básico de fuerza. Romperemos rocas con nuestras armas.",
+                "fr": "Bon, assez de bavardages. Aujourd'hui, nous nous concentrons sur l'entraînement de force fondamentale. Nous allons fracasser des rochers avec nos armes.",
+                "ja": "今日のメニューは基礎的な筋トレ。武器で岩を叩き割ってみて。",
+                "ko": "오늘은 그냥 무기로 바위를 깨는 기본적인 근력 훈련만 진행하죠",
+                "th": "เอาล่ะ เลิกคุยเล่นกันได้แล้ว วันนี้เราจะเน้นที่การฝึกพื้นฐานด้านกำลัง ใช้อาวุธของเราผ่าหิน",
+                "zh-Hans": "今天只是基础的力量训练，以武器击打的方式击碎岩石。",
+                "zh-Hant": "今天只是基礎的力量訓練，以武器擊打的方式擊碎岩石。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So, wie du an das Felsen-Schwert gekommen bist? Ich bin bereit. Wir können jederzeit anfangen!",
+                "en": "Just like how you got the Sword in the Rock? I'm ready. We can start any time!",
+                "es": "¿Igual que cuando sacaste la Espada de la Roca? Estoy listo. ¡Empecemos cuando quieras!",
+                "fr": "Comme vous avez fait pour le sabre dans le rocher ? Je suis prêt. On peut commencer à tout moment !",
+                "ja": "{PlayerName}さんが「岩に刺さった剣」を取り出した時みたいにですね？わかりました、いつでも始められます！",
+                "ko": "전에 「바위에 박힌 검」을 뽑아낸 것처럼? 난 준비가 됐으나, 언제든지 시작하자고!",
+                "th": "เหมือนตอนที่คุณดึงดาบในหินใช่มั้ยครับ? ผมพร้อมแล้ว จะเริ่มเมื่อไหร่ก็บอกได้เลย!",
+                "zh-Hans": "就像之前您取出「岩中剑」一样？我已经准备好了，随时可以开始！",
+                "zh-Hant": "就像之前您取出「岩中劍」一樣？我已經準備好了，隨時可以開始！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ganz langsam. Erst zeige ich dir, wie es funktioniert.",
+                    "en": "No rush. I'll show you how it's done first.",
+                    "es": "Ten paciencia. Primero te mostraré cómo se hace.",
+                    "fr": "Du calme. Je vais te montrer comment faire d'abord.",
+                    "ja": "{Male=まず俺がお手本を見せる。;Female=まず私がお手本を見せるよ。}",
+                    "ko": "조급해 하지 마요. 제가 한번 보여줄게요",
+                    "th": "ไม่ต้องรีบ เดี๋ยวฉันจะสาธิตให้ดูก่อน",
+                    "zh-Hans": "别急，我先做示范。",
+                    "zh-Hant": "別急，我先做示範。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstanden! Ich sehe dir zu und passe genau auf!",
+                "en": "Understood! I'll watch and learn carefully!",
+                "es": "¡Entendido! ¡Observaré y aprenderé con atención!",
+                "fr": "Compris ! Je vais observer attentivement et apprendre !",
+                "ja": "わかりました、しっかり見させていただきます。",
+                "ko": "알겠어. 집중해서 지켜볼게",
+                "th": "รับทราบ! ผมจะตั้งใจดูให้ดีและจำไว้ครับ!",
+                "zh-Hans": "明白，我会认真观摩的。",
+                "zh-Hant": "明白，我會認真觀摩的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Zerschlage die Felsen",
+        "en": "Break the rock",
+        "es": "Rompe la roca.",
+        "fr": "Briser le rocher",
+        "ja": "訓練用の岩を砕く",
+        "ko": "훈련 용 돌을 격파하기",
+        "th": "ทำลายก้อนหิน",
+        "zh-Hans": "击碎训练用的石头",
+        "zh-Hant": "擊碎訓練用的石頭"
+      },
+      "entities": [
+        {
+          "entityId": 159900012,
+          "mapId": 8,
+          "blueprintType": "Gameplay537",
+          "name": "TsEntity_玩法_可破坏石块5",
+          "areaId": 20,
+          "position": {
+            "x": 747784,
+            "y": 606059,
+            "z": 5917
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die TDs",
+        "en": "Defeat the TDs",
+        "es": "Derrota a las Disonancias Tácitas.",
+        "fr": "Éliminer les TDs",
+        "ja": "残像を倒す",
+        "ko": "나타나는 잔상 처치하기",
+        "th": "เอาชนะทาเซ็ตดิสคอร์ด",
+        "zh-Hans": "消灭冒出来的残象",
+        "zh-Hant": "消滅冒出來的殘象"
+      },
+      "entities": [
+        {
+          "entityId": 159900193,
+          "mapId": 8,
+          "blueprintType": "branch2.0_Monster187",
+          "name": "TsEntity_小怪_宝箱怪",
+          "areaId": 20,
+          "position": {
+            "x": 747806,
+            "y": 606060,
+            "z": 5958
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_漂泊骑士",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Was? Eine Tacet-Dissonanz im Felsen?!",
+                "en": "What? A Tacet Discord in the stone?!",
+                "es": "¿Qué? ¿Hay una Disonancia Tácita en la roca?",
+                "fr": "Quoi ? Un Tacet Discord dans la pierre ?!",
+                "ja": "岩の中に……残像が！？",
+                "ko": "바위 속에... 잔상이 숨겨져 있어?!",
+                "th": "อะไรน่ะ? มีทาเซ็ตดิสคอร์ดอยู่ในก้อนหินงั้นเหรอ?!",
+                "zh-Hans": "石头里……居然藏了残象？！",
+                "zh-Hant": "石頭裡……居然藏了殘象？！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Offenbar wird das heutige Krafttraining wohl doch zu einer echten Kampfstunde.",
+                "en": "Looks like today's strength training just turned into a real combat session.",
+                "es": "Parece que el entrenamiento de fuerza de hoy se ha convertido en una sesión de combate real.",
+                "fr": "On dirait que l'entraînement de force s'est transformé en une véritable session de combat.",
+                "ja": "{Male=……メニュー変更だ。;Female=……メニュー変更だね。}",
+                "ko": "...근력 훈련을 임시로 실전 훈련으로 바꿔야겠군요",
+                "th": "ดูเหมือนว่าการฝึกกำลังวันนี้จะกลายเป็นการต่อสู้จริงแล้วล่ะ",
+                "zh-Hans": "……看来力量训练要临时改为实战练习了。",
+                "zh-Hant": "……看來力量訓練要臨時改為實戰練習了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_2_0_每日_漂泊骑士",
+          "flowIndex": 2,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Tut mir leid, ich hab’s schon wieder vermasselt. Ich war überhaupt keine Hilfe und du musstest mich schon wieder beschützen …",
+                "en": "Sorry, I messed up again. I didn't help at all and just had you protect me once more…",
+                "es": "Lo siento, la he vuelto a liar. No hice más que pedir que me protegieras, pero no te ayudé en nada...",
+                "fr": "Désolé, j'ai encore foiré. Je n'ai rien pu faire et je vous ai laissé me protéger une fois de plus...",
+                "ja": "足を引っ張ってしまいました、ごめんなさい。役に立つどころか、また助けられてしまうなんて……",
+                "ko": "미안해... 또 폐만 끼쳤네. 도움이 되지 못한 것도 모자라, 심지어 짐이 되어 버리다니...",
+                "th": "ขอโทษนะ ผมพลาดอีกแล้ว คราวนี้ไม่ได้ช่วยอะไรเลย แถมยังต้องให้คุณคอยปกป้องอีกแล้ว...",
+                "zh-Hans": "抱歉……是我拖您后腿了，非但没帮上什么忙，还需要您保护我。",
+                "zh-Hant": "抱歉……是我扯您後腿了，非但沒幫上什麼忙，還需要您保護我。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Geht es dir gut?",
+                    "en": "Are you alright?",
+                    "es": "¿Estás bien?",
+                    "fr": "Tu vas bien ?",
+                    "ja": "大丈夫？",
+                    "ko": "괜찮아요?",
+                    "th": "เป็นอะไรรึเปล่า?",
+                    "zh-Hans": "你还好吧？",
+                    "zh-Hant": "你還好吧？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, nur ein paar Schrammen. Nach einer Ruhepause ist alles wieder gut.",
+                "en": "Yeah, just a few bruises. A good rest will heal them.",
+                "es": "Sí, solo algunos moretones. Con un buen descanso, desaparecerán.",
+                "fr": "Ouais, juste quelques contusions. Un bon repos les guérira.",
+                "ja": "はい！ちょっと当たっただけなので、休めば治ります。",
+                "ko": "괜찮아! 그냥 몸에 한 두대 맞았을 뿐이야. 좀 쉬면 괜찮아질 거야",
+                "th": "ไม่หรอก แค่ฟกช้ำเล็กน้อย พักผ่อนสักหน่อยก็คงหายแล้ว",
+                "zh-Hans": "没事！只是身上挨了一两下，休息下就好了。",
+                "zh-Hant": "沒事！只是身上挨了一兩下，休息一下就好了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss weiterüben. Ich konnte nicht mal deine Kampfbewegungen erkennen!",
+                "en": "I need to practice more. I couldn't even catch your moves!",
+                "es": "Tengo que practicar más. ¡Ni siquiera pude captar tus movimientos!",
+                "fr": "Je dois m'entraîner plus. Je n'ai même pas pu suivre vos mouvements !",
+                "ja": "練習不足ですね……動きもまだまだだし、{PlayerName}さんの速度に目も追いつきませんでした。",
+                "ko": "아직 수행이 부족한 거지 뭐... 그나저나 당신의 움직임은 너무 빨라서 눈으로도 따라잡을 수 없을 정도야!",
+                "th": "ผมต้องฝึกมากขึ้นแล้วล่ะ ตามการเคลื่อนไหวของคุณยังไม่ทันเลย!",
+                "zh-Hans": "我还是练习得不够到位啊……别说动作了，就连眼睛都跟不上您的速度。",
+                "zh-Hant": "我還是練習得不夠到位啊……別說動作了，就連眼睛都跟不上您的速度。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "So geht es Anfängern oft.",
+                    "en": "That happens a lot for beginners.",
+                    "es": "Esto les pasa mucho a los principiantes.",
+                    "fr": "Ça arrive souvent aux débutants.",
+                    "ja": "初心者なら当然。",
+                    "ko": "초보자에게는 당연한 일이에요",
+                    "th": "มือใหม่ก็แบบนี้แหละ",
+                    "zh-Hans": "对初学者来说很正常。",
+                    "zh-Hant": "對初學者來說很正常。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das ist, weil ich so stark bin.",
+                    "en": "It's because I'm strong.",
+                    "es": "Es porque soy fuerte.",
+                    "fr": "C'est parce que j'ai de la bouteille.",
+                    "ja": "こっちが強すぎるだけ。",
+                    "ko": "제가 너무 강한 거예요, 걱정 마세요",
+                    "th": "เพราะฉันแข็งแกร่งไงล่ะ",
+                    "zh-Hans": "只是因为我太强了。",
+                    "zh-Hant": "只是因為我太強了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gib mir noch ein bisschen Zeit, dann beweise ich dir, dass ich besser werde!",
+                "en": "Just give me a little more time, and I'll prove myself to you!",
+                "es": "¡Dame un poco más de tiempo y te demostraré lo que valgo!",
+                "fr": "Donnez-moi un peu plus de temps, et je vous prouverai ma valeur !",
+                "ja": "もう少し時間をください。もっと強くなるので。",
+                "ko": "조금만 기다려 줘. 발전하는 모습을 꼭 보여줄게!",
+                "th": "ขอเวลาอีกสักหน่อย ผมจะพิสูจน์ให้คุณเห็นเอง!",
+                "zh-Hans": "请再给我一点时间，我会让您看到进步的。",
+                "zh-Hant": "請再給我一點時間，我會讓您看到進步的。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "id": 159900002,
+  "key": "漂泊骑士3碎石训练1",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Im Namen der Ritterlichkeit III",
+    "en": "In the Name of Chivalry III",
+    "es": "En nombre de la caballería III",
+    "fr": "Au nom du chevalier - III",
+    "ja": "騎士の名にかけて・三",
+    "ko": "기사의 이름으로 · III",
+    "th": "ในนามของความกล้าหาญ III",
+    "zh-Hans": "谨以骑士之名·三",
+    "zh-Hant": "謹以騎士之名·三"
+  },
+  "desc": {
+    "de": "Es ist Zeit, dein Versprechen gegenüber Faro einzulösen. Organisiere Trainingskurse für ihn.",
+    "en": "It's time to fulfill your promise to Faro. Set up a training session to get him started.",
+    "es": "Es hora de cumplir tu promesa a Faro. Organiza una sesión de entrenamiento para que empiece.",
+    "fr": "Il est temps de tenir votre promesse à Faro. Organisez une séance d'entraînement pour lui.",
+    "ja": "以前、ファーロに約束した指導が始まる。彼にいくつか訓練メニューを組んであげよう。",
+    "ko": "전에 페로의 훈련 지도를 시작하기로 약속했으니 훈련 과정을 준비해 보는 게 어떨까?",
+    "th": "ถึงเวลาทำตามคำสัญญาที่คุณให้ไว้กับ Faro เตรียมแผนการฝึกซ้อมเพื่อให้เขาได้เริ่ม",
+    "zh-Hans": "之前答应法罗的训练指导要开始了，给他安排点训练课程吧。",
+    "zh-Hant": "之前答應法羅的訓練指導要開始了，給他安排點訓練課程吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Zielgebiet",
+        "en": "Reach the designated area",
+        "es": "Llega al área designada.",
+        "fr": "Se rendre à l'emplacement indiqué",
+        "ja": "目標地点の付近に着く",
+        "ko": "근처 구역 도착하기",
+        "th": "เดินทางไปยังบริเวณที่กำหนด",
+        "zh-Hans": "到达附近区域",
+        "zh-Hant": "到達附近區域"
+      },
+      "entities": [
+        {
+          "entityId": 159900007,
+          "mapId": 8,
+          "blueprintType": "Gameplay537",
+          "name": "TsEntity_玩法_可破坏石块4",
+          "areaId": 20,
+          "position": {
+            "x": 747771,
+            "y": 606050,
+            "z": 5921
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 159900039,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM6_2",
+          "name": "TsEntity_157_法罗",
+          "areaId": 20,
+          "position": {
+            "x": 748359,
+            "y": 606094,
+            "z": 5860
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Faro",
+        "en": "Talk to Faro",
+        "es": "Habla con Faro.",
+        "fr": "Parler à Faro",
+        "ja": "ファーロと会話する",
+        "ko": "페로와 대화하기",
+        "th": "คุยกับ Faro",
+        "zh-Hans": "和法罗聊聊",
+        "zh-Hant": "和法羅聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 159900039,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM6_2",
+          "name": "TsEntity_157_法罗",
+          "areaId": 20,
+          "position": {
+            "x": 748359,
+            "y": 606094,
+            "z": 5860
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_漂泊骑士",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Also, im heutigen Training geht es darum, Felsen zu zerschlagen? Ich erinnere mich daran, dass das ein Mitglied der Pioneer Association gesagt hat …",
+                "en": "So, today's training's about breaking rocks? I remember I once heard from a Pioneer Association member that…",
+                "es": "Entonces, ¿el entrenamiento de hoy consiste en partir rocas? Una vez escuché a alguien de la Asociación de Pioneros que decía algo así como...",
+                "fr": "Alors, l'entraînement du jour, c'est casser des rochers ? Je me souviens qu'une fois, j'ai entendu un membre de l'Association pionnière dire que...",
+                "ja": "今日の訓練は岩砕きですか？以前、先駆条約の人から聞いたことがあるんですけど……",
+                "ko": "오늘의 훈련과목은 바위 깨기인가? 예전에 선행 공약 멤버에게 들은 적이 있는데 말이야...",
+                "th": "วันนี้จะฝึกทุบหินกันเหรอครับ? ผมจำได้ว่าเคยได้ยินจากสมาชิกสมาคมผู้บุกเบิกว่า...",
+                "zh-Hans": "今天的训练科目是碎岩吗？我记得以前听先行公约的人说过……",
+                "zh-Hant": "今天的訓練科目是碎岩嗎？我記得以前聽先行公約的人說過……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Irgendwo außerhalb von Rinascita ist es wohl eine ziemlich beliebte Trainingsmethode, Felsen mit der Brust zu zerbrechen.",
+                "en": "Breaking rocks with your chest is quite popular somewhere outside of Rinascita.",
+                "es": "Que partir rocas a cabezazos es una actividad bastante popular en algún lugar lejos de Rinascita.",
+                "fr": "casser des rochers avec sa poitrine est assez populaire en dehors de Rinascita.",
+                "ja": "ある国では、胸で岩を砕くトレーニングが流行っているそうです。",
+                "ko": "리나시타 밖의 어딘가에서는 가슴에 얹은 바위를 깨는 훈련 방법이 유행하다고 들었어",
+                "th": "การทุบหินด้วยหน้าอกนี่เป็นที่นิยมนอกรินาซิตาอยู่ด้วยนะครับ",
+                "zh-Hans": "黎那汐塔外的某个地区，似乎流行着用胸膛把石头顶碎的锻炼方式啊。",
+                "zh-Hant": "黎那汐塔外的某個地區，似乎流行著用胸膛把石頭頂碎的鍛鍊方式啊。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube, das hast du vielleicht missverstanden.",
+                    "en": "I think you might have misunderstood.",
+                    "es": "Creo que no lo entendiste bien.",
+                    "fr": "Je crois que tu as mal compris.",
+                    "ja": "勘違いしているのでは？",
+                    "ko": "뭔가 오해하고 있는 것 같아요",
+                    "th": "นายคงเข้าใจผิดแล้วล่ะ",
+                    "zh-Hans": "你肯定有什么误解。",
+                    "zh-Hant": "你肯定有什麼誤解。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Na gut, dann probieren wir uns heute mal daran, Felsen mit der Brust zu zerbrechen.",
+                    "en": "Well then, today's training is \"breaking rocks with your chest.\"",
+                    "es": "Perfecto, entonces el entrenamiento de hoy es «romper rocas a cabezazos».",
+                    "fr": "Eh bien, l'entraînement d'aujourd'hui porte sur « casser des rochers avec sa poitrine. »",
+                    "ja": "やってみて。",
+                    "ko": "좋아요, 그럼 「가슴에 얹은 바위 깨기」를 시도해 보세요",
+                    "th": "ถ้างั้นวันนี้ก็ฝึก \"ทุบหินด้วยหน้าอก\" กันเลยสิ",
+                    "zh-Hans": "可以，你就来试试“胸口碎大石”吧。",
+                    "zh-Hant": "可以，你就來試試「胸口碎大石」吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha, du hast wohl recht. Für gewöhnliche Menschen ist so etwas unmöglich machbar!",
+                "en": "Haha, you're right. It's impossible for an ordinary person to do that!",
+                "es": "¡Ja, ja! Sí, seguro. ¡Para una persona común es imposible hacer eso!",
+                "fr": "Ha ha, vous avez raison. C'est impossible pour une personne ordinaire de faire ça !",
+                "ja": "あはは……考えてみたら、そんなこと普通の人にはできませんよね。",
+                "ko": "아하하... 생각해 보니까 일반인에게는 힘들겠지?",
+                "th": "ฮ่าๆ จริงด้วย มนุษย์ธรรมดาคงทำแบบนั้นไม่ได้หรอก!",
+                "zh-Hans": "啊哈哈……想想也是，这种事普通人根本做不到吧？",
+                "zh-Hant": "啊哈哈……想想也是，這種事普通人根本做不到吧？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was? Wirklich? Aber das klingt unmöglich!",
+                "en": "What? Really? But that sounds impossible!",
+                "es": "¿Qué? ¿En serio? ¡Pero eso parece imposible!",
+                "fr": "Quoi ? Vraiment ? Mais ça semble impossible !",
+                "ja": "え、本気ですか？そんなことできないですよ……",
+                "ko": "아, 설마 진심이야? 불가능한 일이 아닐까...?",
+                "th": "อะไรนะ? จริงเหรอครับ? แต่มันฟังดูไม่น่าเป็นไปได้นะ!",
+                "zh-Hans": "啊，来真的？这种事根本做不到吧……？",
+                "zh-Hant": "啊，來真的？這種事根本做不到吧……？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut, genug geplaudert. Heute konzentrieren wir uns einfach auf grundlegendes Krafttraining. Wir werden die Felsen mit unseren Waffen zerschlagen.",
+                "en": "Alright, chit-chat's over. Today, we simply focus on fundamental strength training. We'll be shattering the rocks with our weapons.",
+                "es": "Venga, se acabó la charla. Hoy nos centraremos en el entrenamiento básico de fuerza. Romperemos rocas con nuestras armas.",
+                "fr": "Bon, assez de bavardages. Aujourd'hui, nous nous concentrons sur l'entraînement de force fondamentale. Nous allons fracasser des rochers avec nos armes.",
+                "ja": "今日のメニューは基礎的な筋トレ。武器で岩を叩き割ってみて。",
+                "ko": "오늘은 그냥 무기로 바위를 깨는 기본적인 근력 훈련만 진행하죠",
+                "th": "เอาล่ะ เลิกคุยเล่นกันได้แล้ว วันนี้เราจะเน้นที่การฝึกพื้นฐานด้านกำลัง ใช้อาวุธของเราผ่าหิน",
+                "zh-Hans": "今天只是基础的力量训练，以武器击打的方式击碎岩石。",
+                "zh-Hant": "今天只是基礎的力量訓練，以武器擊打的方式擊碎岩石。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So, wie du an das Felsen-Schwert gekommen bist? Ich bin bereit. Wir können jederzeit anfangen!",
+                "en": "Just like how you got the Sword in the Rock? I'm ready. We can start any time!",
+                "es": "¿Igual que cuando sacaste la Espada de la Roca? Estoy listo. ¡Empecemos cuando quieras!",
+                "fr": "Comme vous avez fait pour le sabre dans le rocher ? Je suis prêt. On peut commencer à tout moment !",
+                "ja": "{PlayerName}さんが「岩に刺さった剣」を取り出した時みたいにですね？わかりました、いつでも始められます！",
+                "ko": "전에 「바위에 박힌 검」을 뽑아낸 것처럼? 난 준비가 됐으나, 언제든지 시작하자고!",
+                "th": "เหมือนตอนที่คุณดึงดาบในหินใช่มั้ยครับ? ผมพร้อมแล้ว จะเริ่มเมื่อไหร่ก็บอกได้เลย!",
+                "zh-Hans": "就像之前您取出「岩中剑」一样？我已经准备好了，随时可以开始！",
+                "zh-Hant": "就像之前您取出「岩中劍」一樣？我已經準備好了，隨時可以開始！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ganz langsam. Erst zeige ich dir, wie es funktioniert.",
+                    "en": "No rush. I'll show you how it's done first.",
+                    "es": "Ten paciencia. Primero te mostraré cómo se hace.",
+                    "fr": "Du calme. Je vais te montrer comment faire d'abord.",
+                    "ja": "{Male=まず俺がお手本を見せる。;Female=まず私がお手本を見せるよ。}",
+                    "ko": "조급해 하지 마요. 제가 한번 보여줄게요",
+                    "th": "ไม่ต้องรีบ เดี๋ยวฉันจะสาธิตให้ดูก่อน",
+                    "zh-Hans": "别急，我先做示范。",
+                    "zh-Hant": "別急，我先做示範。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstanden! Ich sehe dir zu und passe genau auf!",
+                "en": "Understood! I'll watch and learn carefully!",
+                "es": "¡Entendido! ¡Observaré y aprenderé con atención!",
+                "fr": "Compris ! Je vais observer attentivement et apprendre !",
+                "ja": "わかりました、しっかり見させていただきます。",
+                "ko": "알겠어. 집중해서 지켜볼게",
+                "th": "รับทราบ! ผมจะตั้งใจดูให้ดีและจำไว้ครับ!",
+                "zh-Hans": "明白，我会认真观摩的。",
+                "zh-Hant": "明白，我會認真觀摩的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Zerschlage die Felsen",
+        "en": "Break the rock",
+        "es": "Rompe la roca.",
+        "fr": "Briser le rocher",
+        "ja": "訓練用の岩を砕く",
+        "ko": "훈련 용 돌을 격파하기",
+        "th": "ทำลายก้อนหิน",
+        "zh-Hans": "击碎训练用的石头",
+        "zh-Hant": "擊碎訓練用的石頭"
+      },
+      "entities": [
+        {
+          "entityId": 159900007,
+          "mapId": 8,
+          "blueprintType": "Gameplay537",
+          "name": "TsEntity_玩法_可破坏石块4",
+          "areaId": 20,
+          "position": {
+            "x": 747771,
+            "y": 606050,
+            "z": 5921
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Faro",
+        "en": "Talk to Faro",
+        "es": "Habla con Faro.",
+        "fr": "Parler à Faro",
+        "ja": "ファーロと会話する",
+        "ko": "페로와 대화하기",
+        "th": "คุยกับ Faro",
+        "zh-Hans": "和法罗聊聊",
+        "zh-Hant": "和法羅聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 159900039,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM6_2",
+          "name": "TsEntity_157_法罗",
+          "areaId": 20,
+          "position": {
+            "x": 748359,
+            "y": 606094,
+            "z": 5860
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_漂泊骑士",
+          "flowIndex": 2,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Wow! Was für eine perfekte Demonstration! Ein so stabiler Felsen ist einfach wie ein Knusperkeks unter deinem Schwert zerbröselt!",
+                "en": "Wow! That was so smooth! A solid rock like this crumbled like a crispy cookie under your strike!",
+                "es": "¡Vaya! ¡Eso ha sido alucinante! ¡Partiste una roca tan sólida como esta como si fuera una galleta!",
+                "fr": "Ouah ! C'était tellement fluide ! Un rocher solide comme celui-ci s'est brisé comme un biscuit croustillant d'un seul coup !",
+                "ja": "流れるような完璧な動き！あんなに硬い岩が{PlayerName}さんの前ではクッキーみたいです。",
+                "ko": "정말 완벽하고 매끄러운 동작이야! 저렇게 튼튼한 바위가... 당신의 타격에 과자 부스러기처럼 부서져 버렸네!",
+                "th": "ว้าว! สมบูรณ์แบบ! ก้อนหินแข็งๆ แบบนี้ โดนคุณโจมตีซะแตกละเอียดเหมือนคุกกี้กรอบๆ เลย!",
+                "zh-Hans": "真是完美而流畅的动作！明明是那么坚固的岩石……它在您的击打下就和脆饼一样松脆。",
+                "zh-Hant": "真是完美而流暢的動作！明明是那麼堅固的岩石……它在您的擊打下就和脆餅一樣鬆脆。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Jetzt du.",
+                    "en": "Go practice.",
+                    "es": "Ve a practicar.",
+                    "fr": "Va t'entraîner.",
+                    "ja": "ちゃんと学んで、ちゃんと練習するように。",
+                    "ko": "열심히 배우고 연습해야 될 거예요",
+                    "th": "ไปฝึกต่อเถอะ",
+                    "zh-Hans": "好好学，好好练。",
+                    "zh-Hant": "好好學，好好練。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Jetzt will ich einen Keks.",
+                    "en": "Now you're making me hungry.",
+                    "es": "Me estás dando hambre.",
+                    "fr": "Tu m'as donné faim.",
+                    "ja": "クッキー食べたくなってきた。",
+                    "ko": "듣고 있으니 갑자기 배고프네요",
+                    "th": "พูดแบบนั้นทำฉันหิวเลย",
+                    "zh-Hans": "给我听饿了。",
+                    "zh-Hant": "給我聽餓了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstanden! Ich werde fleißig arbeiten und ein Meister im Felszerbrechen werden!",
+                "en": "Understood! I'll work hard and become a master of rock breaking!",
+                "es": "¡Entendido! ¡Trabajaré duro y me convertiré en un maestro en partir rocas!",
+                "fr": "Compris ! Je vais travailler dur et devenir un maître du cassage de roche !",
+                "ja": "はい！岩砕きマスターを目指して練習します。",
+                "ko": "알겠어! 바위 깨기 마스터를 목표로 연습해야겠어!",
+                "th": "รับทราบ! ผมจะขยันฝึก จนกลายเป็นปรมาจารย์แห่งการทำลายหินให้ได้!",
+                "zh-Hans": "明白！我将以成为碎岩大师为目标而练习。",
+                "zh-Hant": "明白！我將以成為碎岩大師為目標而練習。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haha, nach deiner Vorstellung werde ich fleißig arbeiten und ein Meister im Felszerbrechen werden!",
+                "en": "Haha, after seeing your moves, I'll work hard and become a master of rock breaking!",
+                "es": "¡Ja, ja! Después de ver tus movimientos, ¡trabajaré duro y me convertiré en un maestro en partir rocas!",
+                "fr": "Ha ha, après avoir vu vos mouvements, je vais travailler dur et devenir un maître du cassage de roche !",
+                "ja": "あはは、{PlayerName}さんのご指導のもと、岩砕きマスターを目指して練習します。",
+                "ko": "아하하, 당신의 시범을 계기로 바위 깨기 마스터를 목표로 해야겠어!",
+                "th": "ฮ่าๆ พอได้เห็นท่าทางคุณแล้ว ผมยิ่งอยากจะฝึกหนักขึ้น เพื่อกลายเป็นปรมาจารย์แห่งการทำลายหินจริงๆ!",
+                "zh-Hans": "啊哈哈，有了您的示范，我将以成为碎岩大师为目标而练习。",
+                "zh-Hant": "啊哈哈，有了您的示範，我將以成為碎岩大師為目標而練習。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900106,
+                "name": {
+                  "zh-Hans": "法罗"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "… Ich dachte, du wolltest ein Ritter werden?",
+                    "en": "...I recall you wanted to be a knight, right?",
+                    "es": "... Dijiste que querías ser caballero, ¿no?",
+                    "fr": "... Je me souviens que tu voulais devenir chevalier, non ?",
+                    "ja": "……それはもう騎士じゃないのでは？",
+                    "ko": "...그건 기사와는 좀 다르지 않나요?",
+                    "th": "...ฉันจำได้ว่าเป้าหมายนายคืออยากเป็นอัศวินใช่มั้ย?",
+                    "zh-Hans": "……那已经不是骑士了吧？",
+                    "zh-Hant": "……那已經不是騎士了吧？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Unter deiner Anleitung hat Faro seine vollste Stärke erreicht …",
+                "en": "Under your guidance, Faro has fully trained his strength…",
+                "es": "Siguiendo tus consejos, Faro ha entrenado muchísimo su fuerza...",
+                "fr": "Sous votre direction, Faro s'est grandement renforcé...",
+                "ja": "ファーロに筋トレの指導を行った……",
+                "ko": "당신의 지도 아래, 페로는 충분한 근력 훈련을 받았다...",
+                "th": "ภายใต้การชี้แนะของคุณ Faro ก็ได้ฝึกฝนกำลังจนแข็งแกร่งเต็มที่...",
+                "zh-Hans": "在你的指导下，法罗进行了充分的力量训练……",
+                "zh-Hant": "在你的指導下，法羅進行了充分的力量訓練……"
+              },
+              "id": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

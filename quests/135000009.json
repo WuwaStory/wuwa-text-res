@@ -1,0 +1,2560 @@
+{
+  "id": 135000009,
+  "key": "沉没的历史",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Verlorene Geschichte",
+    "en": "Lost History",
+    "es": "Historia Perdida",
+    "fr": "L'histoire engloutie",
+    "ja": "埋もれた歴史",
+    "ko": "침몰한 역사",
+    "th": "ประวัติศาสตร์ที่สาบสูญ",
+    "zh-Hans": "沉没的历史",
+    "zh-Hant": "沉沒的歷史"
+  },
+  "desc": {
+    "de": "Finde fünf Leuchttürme in Huanglong, sammle Informationen und hilf dem Historiker, die Wahrheit zu finden",
+    "en": "Locate five lighthouses in Huanglong, collect information, and help the historian to uncover the truth",
+    "es": "Encuentra cinco faros en Huanglong, recoge información, y ayuda al historiador a encontrar la verdad.",
+    "fr": "Cherchez les cinq phares dans le Territoire de Huanlong, collectez les informations pour aider l'historien à rétablir la vérité",
+    "ja": "瑝瓏にある五つの灯台を探し、情報を入手し、歴史学者に真相の究明を手伝う",
+    "ko": "황룡 경내 등대 5개 찾아 정보를 수집하고 역사학자를 도와 진실을 찾을 수 있도록 도와주세요",
+    "th": "ค้นหาประภาคารห้าแห่งในหวงหลง รวบรวมข้อมูล และช่วยนักประวัติศาสตร์เปิดเผยความจริง",
+    "zh-Hans": "寻找瑝珑境内的五座灯塔，收集信息，帮助历史学家还原真相",
+    "zh-Hant": "尋找瑝瓏境內的五座燈塔，收集資訊，説明歷史學家還原真相"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 135002116,
+          "mapId": 8,
+          "blueprintType": "NPC251",
+          "name": "TsEntity_157_011_皇龙研究员男6",
+          "areaId": 301,
+          "position": {
+            "x": -31746,
+            "y": 99364,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 158
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo? Kann mich jemand hören?",
+                "en": "Hello? Can anyone hear me?",
+                "es": "¿Hola? ¿Puede alguien oírme?",
+                "fr": "Allo ? Vous m'entendez ?",
+                "ja": "もしもし？聞こえていますか？",
+                "ko": "여보세요? 들리시나요?",
+                "th": "ฮัลโหล มีใครได้ยินฉันบ้าง",
+                "zh-Hans": "喂？能听到吗？",
+                "zh-Hant": "喂？能聽到嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wer ist das?",
+                    "en": "Who is this?",
+                    "es": "¿Quién es este?",
+                    "fr": "Qui est-ce ?",
+                    "ja": "誰？",
+                    "ko": "누구시죠?",
+                    "th": "ใครน่ะ",
+                    "zh-Hans": "你是谁？",
+                    "zh-Hant": "你是誰？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Eine Verbindung? Hervorragend!",
+                "en": "A connection? Outstanding!",
+                "es": "¿Una conexión? ¡Impresionante!",
+                "fr": "Vous êtes connecté ?! C'est inattendu !",
+                "ja": "繋がった！？これは予想外ですよ！",
+                "ko": "진짜 연결됐네요!? 너무 신기해요!",
+                "th": "เชื่อมต่อแล้วเหรอ เยี่ยมไปเลย!",
+                "zh-Hans": "真的接通了！？这也太神奇了！",
+                "zh-Hant": "真的接通了！？這也太神奇了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin ein Historiker der Kaiserlichen Akademie von Jinzhou. Derzeit führe ich eine Studie über diese alten Leuchttürme durch, die über ganz Jinzhou verstreut sind. In ihnen müssen viele faszinierende Geschichten gespeichert sein.",
+                "en": "I'm a historian of the Jinzhou Imperial Academy. I am currently conducting a study on these old lighthouses scattered all over Jinzhou. There must be many fascinating stories stored inside them.",
+                "es": "Soy un historiador de la Academia Imperial de Jinzhou. Actualmente estoy realizando un estudio sobre estos antiguos faros esparcidos por todo Jinzhou. Deben de haber muchas historias fascinantes almacenadas en ellos.",
+                "fr": "Je suis un historien de l'Université Impérial de Jinzhou. Je suis à la recherche de phares dispersés de cette région. Je suis sûr qu'il y a des histoires intéressantes cachées.",
+                "ja": "私は、今州太学の歴史学者です。今は今州の各地に点在している灯台と、そこに隠された歴史を探しています。",
+                "ko": "저는 금주 학교의 역사학자예요, 지금 금주 각지에 분포되어 있는 낡은 등대를 연구하고 있어요. 분명 재미있는 이야기가 많이 남아 있을 거예요",
+                "th": "ฉันคือนักประวัติศาสตร์จากวิทยาลัยแห่งจินโจว ตอนนี้ฉันทำวิจัยเกี่ยวกับประภาคารเก่าแก่ที่กระจายตัวไปทั่วจินโจวอยู่ มันต้องมีเรื่องราวที่น่าสนใจถูกซ่อนเอาไว้ในที่เหล่านั้นแน่",
+                "zh-Hans": "我是今州太学的一名历史学家，我正在研究分布在今州各地的这些破旧灯塔，里面肯定有不少有趣的故事。",
+                "zh-Hant": "我是今州太學的一名歷史學家，我正在研究分佈在今州各地的這些破舊燈塔，裡面肯定有不少有趣的故事。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bisher war ich jedoch erfolglos, die Informationen in den Konsolen der Leuchttürme zu entschlüsseln... Allerdings habe ich entdeckt, dass die Konsole ein bestimmtes Alarmsignal aussendet, wenn ihr System gestört wird.",
+                "en": "Yet I have been unsuccessful in deciphering the information inside the lighthouses' consoles... However, I did manage to discover that the console will send out a certain alarm signal when its system is being interfered with.",
+                "es": "Sin embargo, no he tenido éxito en descifrar la información dentro de las terminales del faro... Sin embargo, logré descubrir que la terminal enviará una cierta señal de alarma cuando su sistema esté siendo interferido.",
+                "fr": "Mais je n'ai jamais réussi à extraire des informations de l'équipement du phare. Il semble qu'il y a un système d'alerte unique lorsqu'il est piraté.",
+                "ja": "しかし、灯台の設備から情報を抜き出すのに難航していまして……ハッキングを感知すると独自のシステムで警告を発するようなんです。",
+                "ko": "다만, 제가 계속 등대 단말기 안에 있는 정보를 못 풀어서... 그래서 등대 단말기가 연결되었을 때 특정 주파수 단계의 경보 신호를 보내는 것을 조사했어요",
+                "th": "แต่ว่าฉันไม่สามารถถอดรหัสข้อความจากแผงควบคุมของประภาคารได้... แต่ก็ค้นพบเรื่องที่ว่าแผงควบคุมจะส่งสัญญาเตือนบางอย่างออกมาเมื่อระบบของมันถูกรบกวน",
+                "zh-Hans": "但一直都没能解开灯塔终端里面的信息……但我调查到了灯塔终端被骇入时候就会发出特定波段的报警讯号。",
+                "zh-Hant": "但一直都沒能解開燈塔終端裡面的資訊……但我調查到了燈塔終端被駭入時候就會發出特定波段的報警訊號。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe versehentlich eine Verbindung zu deinem Pangu-Terminal hergestellt, während ich diese Signale untersuchte. Es scheint, dass die ID deines Terminals mir als Eindringlingsalarm übermittelt wurde.",
+                "en": "I accidentally connected to your Pangu Terminal while I was investigating these signals. It appears that your Terminal's ID was transmitted to me as an intruder alert.",
+                "es": "Accidentalmente me conecté a tu Terminal Pangu mientras investigaba estas señales. Parece que la ID de tu Terminal me fue transmitida como una alerta de intruso.",
+                "fr": "Je suis en train d'enquêter sur cette alerte. A ma grande surprise, je suis connecté à votre appareil ! Il semble que votre appareil ait transféré un code de caractéristiques unique à mon appareil par erreur.",
+                "ja": "さっきはその警告を調査している最中に、偶然あなたのデバイスと繋がりました。あなたのデバイスの特徴コードが誤作動でこちらまで転送されたようですね。",
+                "ko": "방금 이 신호들을 조사할 때 뜻밖에도 당신의 단말기와 연결됐어요. 아마 그쪽 단말기 번호를 침입자로 인식하고 저에게 메시지가 발송된 것 같아요",
+                "th": "ในขณะที่ฉันกำลังตรวจสอบสัญญาพวกนั้น ฉันก็เชื่อมต่อกับเทอร์มินัลผานกู่ของคุณโดยบังเอิญ ดูเหมือนว่าไอดีเทอร์มินัลของคุณจะถูกส่งมาหาฉันผ่านการแจ้งเตือนผู้บุกรุก",
+                "zh-Hans": "刚才我在调查这些讯号的时候意外连接上了你的盘古终端，似乎是把你的终端编号作为入侵者讯息发送给我了。",
+                "zh-Hant": "剛才我在調查這些訊號的時候以外連接上了你的盤古終端，似乎是把你的終端編號作為入侵者訊息發送給我了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du rufst mich an, weil...?",
+                    "en": "You're calling me, because...?",
+                    "es": "¿Me estás llamando, porque...?",
+                    "fr": "Vous avez besoin de quelque chose ?",
+                    "ja": "{Male=何のために俺に連絡を？;Female=何のために私に連絡を？}",
+                    "ko": "무슨 일로 절 찾은 거죠?",
+                    "th": "แล้วคุณติดต่อฉันมาทำไม...",
+                    "zh-Hans": "你找我有什么事吗？",
+                    "zh-Hant": "你找我有什麼事嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ahh, ja. Ich möchte wirklich die Geschichten, die diese Leuchttürme umgeben, im Detail kennen. Wenn du Zeit hast, komm mich in der Stadt Jinzhou besuchen, und wir besprechen es persönlich.",
+                "en": "Ahh, yes. I really wish to know the stories surrounding these lighthouses in detail. Do come find me in Jinzhou city when you have the time, and we'll discuss it in person.",
+                "es": "Ah, sí. Realmente deseo conocer en detalle las historias que rodean estos faros. Ven a encontrarme en la ciudad de Jinzhou cuando tengas tiempo, y lo discutiremos en persona.",
+                "fr": "En fait, je suis intéressé par les informations de l'équipement du phare. C'est une longue histoire... Si vous avez du temps, venez me rendre visite à Imazhou.",
+                "ja": "私は灯台で何が起きたのか知りたいのです。話せば長くなります。時間のある時に、今州でお話ししましょう。",
+                "ko": "무슨 일이냐면요. 등대에서 일어난 이야기가 너무 궁금해요. 시간이 되시면 금주에 오셔서 절 찾아주실 수 있나요? 그때 다시 자세히 말씀드릴게요",
+                "th": "อ๋อ ใช่ๆ ฉันอยากจะรู้เรื่องราวเกี่ยวกับประภาคารพวกนั้นอย่างละเอียดเลยน่ะสิ เพราะงั้นถ้าคุณมีเวลา ช่วยแวะมาหาฉันที่เมืองจินโจวหน่อยนะ แล้วเราค่อยคุยกันอีกที",
+                "zh-Hans": "是这样的，我很想知道灯塔里发生的故事，你有空的话就来今州找我吧，到时候再详谈。",
+                "zh-Hant": "是這樣的，我很想知道燈塔裡發生的故事，你有空的話就來今州找我吧，到時候再詳談。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 36,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 29,
+      "parentId": 9,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 30,
+      "parentId": 9,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 19,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 19,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 20,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe nach Jinzhou, um den Historiker zu finden",
+        "en": "Head to Jinzhou to find the historian",
+        "es": "Dirígete a Jinzhou para encontrar al historiador",
+        "fr": "Allez à Jinzhou pour trouver l'historien",
+        "ja": "今州で歴史学者を探す",
+        "ko": "금주로 이동하여 역사학자 찾기",
+        "th": "มุ่งหน้าไปจินโจวเพื่อตามหานักประวัติศาสตร์",
+        "zh-Hans": "前往今州寻找历史学家",
+        "zh-Hant": "前往今州尋找歷史學家"
+      },
+      "entities": [
+        {
+          "entityId": 135002116,
+          "mapId": 8,
+          "blueprintType": "NPC251",
+          "name": "TsEntity_157_011_皇龙研究员男6",
+          "areaId": 301,
+          "position": {
+            "x": -31746,
+            "y": 99364,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 158
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002579,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录31",
+          "areaId": 301,
+          "position": {
+            "x": -31838,
+            "y": 99702,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, hallo! Du musst {Male=derjenige sein, der;Female=diejenige sein, die} die Geheimnisse der Leuchttürme gelöst hat.",
+                "en": "Hello, hello! You must be the one who solved the mysteries of the lighthouses.",
+                "es": "¡Hola, hola! Debes ser el que resolvió los misterios de los faros.",
+                "fr": "Bonjour, bonjour ! Tu es la personne qui s'occupe du phare ?",
+                "ja": "どうもどうも！あなたは灯台の時の人ですか？",
+                "ko": "안녕하세요! 그쪽이 등대 단말기를 찾고 해제한 사람 맞죠?",
+                "th": "สวัสดี สวัสดี! คุณคือคนที่แก้ไขปริศนาของประภาคารได้สินะ",
+                "zh-Hans": "你好你好！你就是找到并解开了灯塔终端的人吗？",
+                "zh-Hant": "你好你好！你就是找到並解開了燈塔終端的人嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das bin ich.",
+                    "en": "That's me.",
+                    "es": "Ese soy yo.",
+                    "fr": "C'est vrai.",
+                    "ja": "そうだね。",
+                    "ko": "네, 맞아요",
+                    "th": "ฉันเองแหละ",
+                    "zh-Hans": "是的。",
+                    "zh-Hant": "是的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Bitte beschreibe mir deine Entdeckungen in den Konsolen. Ich bin wirklich fasziniert.",
+                "en": "Please, describe to me your findings within the consoles. I am truly intrigued.",
+                "es": "Por favor, descríbeme tus hallazgos en las consolas. Estoy realmente intrigado.",
+                "fr": "Pourriez-vous me dire ce que vous avez trouvé dans l'équipement du phare ? Je suis vraiment curieux de le savoir !",
+                "ja": "よろしければ、灯台の設備から何を見つけたのか、教えていただけませんか？本っ当に、どうしても知りたいんです！",
+                "ko": "등대 단말기에서 무엇을 찾았는지 알려주실 수 있나요? 저 정말 알고 싶어요",
+                "th": "ได้โปรดเถอะ ช่วยเล่าทีว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง ฉันล่ะอยากรู้สุดๆ ไปเลย",
+                "zh-Hans": "能不能请你告诉我在灯塔的终端里你找到了什么呢？我真的非常想知道。",
+                "zh-Hant": "能不能請你告訴我在燈塔的終端裡你找到了什麼呢？我真的非常想知道。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast dem Historiker alles erzählt, was du in den Konsolen gefunden hast.",
+                "en": "You tell the historian about what you found inside the consoles.",
+                "es": "Le contaste al historiador todo lo que encontraste dentro de las consolas.",
+                "fr": "(Partager les informations trouvées dans l'équipement du phare.)",
+                "ja": "（灯台の設備から見つけた全ての情報を伝えた）",
+                "ko": "이미 찾은 등대 단말기에서 발견한 모든 정보를 그에게 알려준다",
+                "th": "คุณเล่าให้นักประวัติศาสตร์ผู้นั้นฟังว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง",
+                "zh-Hans": "将从已经找到的灯塔终端里发现的全部信息告诉他。",
+                "zh-Hant": "將從已經找到的燈塔終端裡發現的全部資訊告訴他。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Hmm... Ich hätte nicht erwartet, dass solche Geschichten passiert sind...",
+                "en": "Hmm... I didn't expect such stories to have occurred.",
+                "es": "Hmm... No esperaba que ocurrieran tales historias...",
+                "fr": "Hmm, hmm. Il y a cette histoire...",
+                "ja": "……そんな話があったとは……",
+                "ko": "음... 이런 이야기가 있었군요...",
+                "th": "หืมม... ไม่คิดเลยว่าจะมีเรื่องราวแบบนั้นเกิดขึ้นด้วย",
+                "zh-Hans": "嗯……原来还发生过这样的故事……",
+                "zh-Hant": "嗯……原來還發生過這樣的故事……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was war das endgültige Ziel des \"Stachelrochen\"? Eine Frage, die wirklich das Interesse weckt... Es scheint, dass dies ein wunderbares Forschungsthema wäre.",
+                "en": "What was the final destination of the \"Stingray\"? A question that would truly arouse one's interest... It feels that this would make a wonderful research topic.",
+                "es": "¿Cuál fue el destino final del \"Mantarraya\"? Una pregunta que realmente despertaría el interés de uno... Siento que esto haría un maravilloso tema de investigación.",
+                "fr": "Où est allé le « Manta » ? C'est intéressant. Cela pourrait être un bon sujet.",
+                "ja": "それに、当の「マンタ」号はどこに行ったのか、興味深いですね。いい課題になりそうです。",
+                "ko": "이 「데블 피쉬호」가 마지막에 어디로 갔는지 궁금하네요... 좋은 연구과제가 될 것 같아요",
+                "th": "แล้วจุดหมายปลายทางสุดท้ายของ \"เรือกระเบน\" อยู่ที่ไหนกัน มันเป็นคำถามที่น่าสนใจมากจริงๆ... ฉันคิดว่ามันน่าจะเป็นหัวข้อวิจัยที่เจ๋งมากๆ แน่",
+                "zh-Hans": "这艘“魔鬼鱼号”在最后到底去了哪里，真是令人相当感兴趣啊……感觉会是一个不错的研究课题。",
+                "zh-Hant": "這艘「魔鬼魚號」在最後到底去了哪裡，真是令人相當感興趣啊……感覺會是一個不錯的研究課題。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach dem Studium der historischen Aufzeichnungen habe ich erfahren, dass es insgesamt fünf dieser identischen Leuchttürme in Jinzhou gibt.",
+                "en": "Having studied the historical records, I have learned that there are five of these identical lighthouses within Jinzhou in total.",
+                "es": "Habiendo estudiado los registros históricos, he aprendido que hay un total de cinco de estos faros idénticos dentro de Jinzhou.",
+                "fr": "J'ai fait une petite recherche, et il devrait y avoir un total de cinq phares similaires.",
+                "ja": "軽く探してみましたが、似たような灯台は合計五つあるはずです。",
+                "ko": "과거의 역사적 기록을 보면 비슷한 등대가 금주에 모두 다섯 개가 있어요",
+                "th": "การศึกษาบันทึกทางประวัติศาสตร์พวกนี้ทำให้ฉันค้นพบว่า ในจินโจวมีประภาคารที่เหมือนกันอยู่ถึงห้าแห่งด้วยกัน",
+                "zh-Hans": "我看过去的历史记录，类似的灯塔在今州一共有五座。",
+                "zh-Hant": "我看過去的歷史記錄，類似的燈塔在今州一共有五座。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn man die Aufzeichnungen aus allen Konsolen der Leuchttürme erhält, könnte man vielleicht den Aufenthaltsort des \"Stachelrochen\" herausfinden.",
+                "en": "Obtaining the records from all of the lighthouses' consoles may just reveal the whereabouts of the \"Stingray.\"",
+                "es": "Obtener los registros de todas las consolas de los faros podría revelar el paradero del \"Mantarraya\".",
+                "fr": "Si vous collectez des informations de ces phares, le sort du « Manta » deviendra clair.",
+                "ja": "これらの灯台から情報を集めたら、「マンタ」号の迎えた結末も明らかになりますね。",
+                "ko": "만약 모든 등대의 최종 기록을 얻을 수 있다면, 분명 「데블 피쉬호」의 행방을 찾을 수 있을 거예요",
+                "th": "ถ้าเราได้บันทึกจากแผงควบคุมของประภาคารทุกแห่งมา มันอาจจะบอกเราได้ว่า \"เรือกระเบน\" อยู่ที่ไหนก็ได้นะ",
+                "zh-Hans": "如果能够获得全部灯塔的终端记录，或许就能找到这艘魔鬼鱼号的下落。",
+                "zh-Hant": "如果能夠獲得全部燈塔的終端記錄，或許就能找到這艘魔鬼魚號的下落。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Könnte ich dich bitten, die Aufzeichnungen der verbleibenden Leuchttürme zu finden? Du wirst großzügig belohnt!",
+                "en": "Can you ask you to find the records of the remaining lighthouses? I'll prepare gifts in return for your troubles!",
+                "es": "¿Podría pedirte un favor de encontrar los registros de los faros restantes? ¡Serás grandemente recompensado!",
+                "fr": "Pourriez-vous chercher les autres phares ? Il y aura une récompense !",
+                "ja": "他の灯台を探してみてくれませんか？報酬も出しますので！",
+                "ko": "혹시 다른 등대 단말기의 기록을 찾아달라고 부탁하면 실례가 될까요? 제가 사례금은 충분히 준비할게요",
+                "th": "อยากให้คุณช่วยตามหาบันทึกจากประภาคารที่เหลืออยู่มาให้หน่อยได้ไหม ฉันมีค่าเหนื่อยให้ด้วยนะ!",
+                "zh-Hans": "能拜托你去找一下其他的灯塔终端的记录吗？我会准备不错的谢礼哦！",
+                "zh-Hant": "能拜託你去找一下其他的燈塔終端的記錄嗎？我會準備不錯的謝禮哦！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kein Problem, ich kümmere mich darum.",
+                    "en": "Not a problem, leave it to me.",
+                    "es": "No hay problema, déjamelo a mí.",
+                    "fr": "Oui. Laisse-moi faire.",
+                    "ja": "{Male=任せろ。;Female=任せて。}",
+                    "ko": "문제없어요. 제게 맡기시죠",
+                    "th": "ไม่มีปัญหา ไว้ใจได้เลย",
+                    "zh-Hans": "没问题，交给我吧。",
+                    "zh-Hant": "沒問題，交給我吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ist egal. Ich bin nur wegen des Geschichtsteils hier.",
+                    "en": "Doesn't matter. I'm just here for the history part.",
+                    "es": "No importa. Solo estoy aquí por la parte de la historia.",
+                    "fr": "Cela m'intéresse aussi.",
+                    "ja": "こっちも興味が湧いてきた。",
+                    "ko": "문제없어요. 저도 역사에 관심이 있거든요",
+                    "th": "ไม่ต้องหรอก ฉันมาเพราะสนใจเรื่องประวัติศาสตร์เฉยๆ",
+                    "zh-Hans": "无所谓，主要是对历史感兴趣。",
+                    "zh-Hant": "無所謂，主要是對歷史感興趣。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha. Dann werde ich dir die Aufgabe anvertrauen!",
+                "en": "Haha. Then I shall entrust the task to you!",
+                "es": "Jaja. ¡Entonces confiaré la tarea a ti!",
+                "fr": "Ha ha ! Alors, c'est à toi !",
+                "ja": "ははっ！では、頼みましたよ！",
+                "ko": "하하, 그럼 잘 부탁해요!",
+                "th": "ฮ่าๆ งั้นฉันของฝากงานนี้ด้วยนะ!",
+                "zh-Hans": "哈哈，那就拜托你了！",
+                "zh-Hant": "哈哈，那就拜託你了！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie ist es gelaufen? Hast du etwas gefunden?",
+                "en": "How did it go? Did you find anything?",
+                "es": "¿Cómo fue? ¿Encontraste algo?",
+                "fr": "Quoi, vous avez trouvé d'autres phares ?",
+                "ja": "どうです？他の灯台を見つけましたか？",
+                "ko": "어때요? 다른 등대를 찾을 수 있을 것 같나요?",
+                "th": "เป็นยังไงบ้าง เจออะไรบ้างไหม",
+                "zh-Hans": "怎么样，能找到其他的灯塔吗？",
+                "zh-Hant": "怎麼樣，能找到其他的燈塔嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm bitte zu mir zurück, nachdem du alle fünf Leuchttürme gefunden hast. Ich warte auf deine erfolgreiche Rückkehr!",
+                "en": "Do come back to me after you have found all five lighthouses. I await your successful return!",
+                "es": "Vuelve a mí después de que hayas encontrado todos los cinco faros. ¡Espero tu regreso exitoso!",
+                "fr": "Si vous trouvez les cinq phares, dites-le-moi. Je vous en prie !",
+                "ja": "五つの灯台全てを見つけましたら、私に教えてください。頼みましたよ！",
+                "ko": "5개를 다 찾으면 다시 돌아와서 알려주셔야 해요. 파이팅!",
+                "th": "เจอประภาคารอีกห้าแห่งที่เหลือแล้วอย่าลืมกลับมาหาฉันด้วยนะ ฉันจะตั้งตารอการกลับมาของคุณนะ!",
+                "zh-Hans": "找到全部5个之后，记得再次回来告诉我，加油！",
+                "zh-Hant": "找到全部5個之後，記得再次回來告訴我，加油！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 20,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 37,
+      "parentId": 20,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 22,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 35,
+      "parentId": 21,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 24,
+      "parentId": 23,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 26,
+      "parentId": 23,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 24,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe nach Jinzhou, um den Historiker zu finden",
+        "en": "Head to Jinzhou to find the historian",
+        "es": "Dirígete a Jinzhou para encontrar al historiador",
+        "fr": "Allez à Jinzhou pour trouver l'historien",
+        "ja": "今州で歴史学者を探す",
+        "ko": "금주로 이동하여 역사학자 찾기",
+        "th": "มุ่งหน้าไปจินโจวเพื่อตามหานักประวัติศาสตร์",
+        "zh-Hans": "前往今州寻找历史学家",
+        "zh-Hant": "前往今州尋找歷史學家"
+      },
+      "entities": [
+        {
+          "entityId": 135002116,
+          "mapId": 8,
+          "blueprintType": "NPC251",
+          "name": "TsEntity_157_011_皇龙研究员男6",
+          "areaId": 301,
+          "position": {
+            "x": -31746,
+            "y": 99364,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 158
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002127,
+          "mapId": 8,
+          "blueprintType": "Treasure009",
+          "name": "TsEntity_豪华物资箱_玩法刷新4",
+          "areaId": 301,
+          "position": {
+            "x": -31654,
+            "y": 99735,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 93
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, hallo! Du musst die Person sein, die die Geheimnisse der Leuchttürme gelöst hat.",
+                "en": "Hello, hello! You must be the one who solved the mysteries of the lighthouses.",
+                "es": "¡Hola, hola! Debes ser el que resolvió los misterios de los faros.",
+                "fr": "Bonjour ! Tu es la personne qui a résolu l'énigme du phare ?",
+                "ja": "どうもどうも！あなたは灯台の時の人ですか？",
+                "ko": "안녕하세요! 그쪽이 등대 단말기를 찾고 해제한 사람 맞죠?",
+                "th": "สวัสดี สวัสดี! คุณคือคนที่แก้ไขปริศนาของประภาคารได้สินะ",
+                "zh-Hans": "你好你好！你就是找到并解开了灯塔终端的人吗？",
+                "zh-Hant": "你好你好！你就是找到並解開了燈塔終端的人嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja.",
+                    "en": "Yes.",
+                    "es": "Sí.",
+                    "fr": "C'est vrai.",
+                    "ja": "そうだね。",
+                    "ko": "네, 맞아요",
+                    "th": "ใช่แล้ว",
+                    "zh-Hans": "是的。",
+                    "zh-Hant": "是的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Bitte, beschreibe mir, was du in den Konsolen gefunden hast. Ich bin wirklich fasziniert.",
+                "en": "Please, describe to me your findings within the consoles. I am truly intrigued.",
+                "es": "Por favor, descríbeme tus hallazgos dentro de las consolas. Estoy realmente intrigado.",
+                "fr": "Si possible, peux-tu me dire ce que tu as trouvé dans le phare ? Je veux vraiment le savoir !",
+                "ja": "よろしければ、灯台の設備から何を見つけたのか、教えていただけませんか？本っ当に、どうしても知りたいんです！",
+                "ko": "등대 단말기에서 무엇을 찾았는지 알려주실 수 있나요? 저 정말 알고 싶어요",
+                "th": "ได้โปรดเถอะ ช่วยเล่าทีว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง ฉันล่ะอยากรู้สุดๆ ไปเลย",
+                "zh-Hans": "能不能请你告诉我在灯塔的终端里你找到了什么呢？我真的非常想知道。",
+                "zh-Hant": "能不能請你告訴我在燈塔的終端裡你找到了什麼呢？我真的非常想知道。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast dem Historiker erzählt, was du in den Konsolen gefunden hast.",
+                "en": "You tell the historian what you found inside the consoles.",
+                "es": "Le contaste al historiador lo que encontraste dentro de las consolas.",
+                "fr": "(Partager les informations trouvées.)",
+                "ja": "（灯台の設備から見つけた全ての情報を伝えた）",
+                "ko": "이미 찾은 등대 단말기에서 발견한 모든 정보를 그에게 알려준다",
+                "th": "คุณเล่าให้นักประวัติศาสตร์ผู้นั้นฟังว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง",
+                "zh-Hans": "将从已经找到的灯塔终端里发现的全部信息告诉他。",
+                "zh-Hant": "將從已經找到的燈塔終端裡發現的全部資訊告訴他。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Wie kann das sein?! Du hast es geschafft, Informationen von allen fünf Leuchtturmkonsolen zu finden, sagst du...!",
+                "en": "How could this be?! You managed to find information from all five lighthouse consoles you say...!",
+                "es": "¿¡Cómo podría ser esto!? ¡Lograste encontrar información de todas las consolas de los cinco faros, dices...!",
+                "fr": "Quoi ! Vous avez rassemblé toutes les informations des cinq phares... !",
+                "ja": "なにっ！五つの灯台全ての情報を集めたですと……！",
+                "ko": "네!? 5개의 등대 터미널에 대한 정보를 모두 찾으셨다고요...?",
+                "th": "เป็นไปได้ยังไงกัน! คุณบอกว่าคุณได้ข้อมูลจากแผงควบคุมในประภาคารทั้งหาแห่งมาแล้วเหรอ...!",
+                "zh-Hans": "什么！？你已经找到全部5个灯塔终端的信息了吗……！",
+                "zh-Hant": "什麼！？你已經找到全部5個燈塔終端的資訊了嗎……！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deine Leidenschaft für Geschichte ist viel größer als die meiner eigenen Schüler. Das bringt mir Tränen in die Augen.",
+                "en": "Your passion for history is much greater than that of my own pupils. This brings tears to my eyes.",
+                "es": "Tu pasión por la historia es mucho mayor que la de mis propios alumnos. Esto me trae lágrimas a los ojos.",
+                "fr": "Face à cette passion pour l'histoire, plus que n'importe lequel de mes élèves... Je suis ému !",
+                "ja": "私が知るどの生徒よりも、強い歴史への愛と情熱を、あなたはお持ちです……涙が！溢れ出る！",
+                "ko": "역사에 대한 열정이 제 학생들 보다 높을 줄이야... 감격에 눈물이 날 지경이에요",
+                "th": "ความหลงใหลในประวัติศาสตร์ของคุณอาจจะมากกว่าลูกศิษย์ของฉันด้วยซ้ำ น้ำตาจะไหลเลย",
+                "zh-Hans": "你对历史的热爱真是比我的学生要高多了，我眼泪都要掉下来了。",
+                "zh-Hant": "你對歷史的熱愛真是比我的學生要高多了，我眼淚都要掉下來了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Können wir jetzt den Standort des Stachelrochens finden?",
+                    "en": "Are we now able to find the location of the Stingray?",
+                    "es": "¿Ahora podemos encontrar la ubicación de la Mantarraya?",
+                    "fr": "Pouvons-nous trouver le « Manta » avec ça ?",
+                    "ja": "これで「マンタ」号を探せる？",
+                    "ko": "「데블 피쉬호」의 위치를 찾을 수 있을까요?",
+                    "th": "เราสามารถหาตำแหน่งของเรือกระเบนได้แล้วเหรอ",
+                    "zh-Hans": "能找到魔鬼鱼号的所在吗？",
+                    "zh-Hant": "能找到魔鬼魚號的所在嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich sind diese Informationen mehr als ausreichend, um den Aufenthaltsort des Stachelrochens zu berechnen. Aber es gibt etwas Seltsames daran...",
+                "en": "Of course, this information is more than adequate for me to calculate the Stingray's whereabouts. But there is something strange about this...",
+                "es": "Por supuesto, esta información es más que adecuada para que yo pueda calcular el paradero de la Mantarraya. Pero hay algo extraño en esto...",
+                "fr": "Oui, c'est suffisant. Mais, c'est assez...",
+                "ja": "はい、十分です。しかし、これは……",
+                "ko": "네, 이 정보들이라면 제가 「데블 피쉬호」의 행방을 짐작하기에는 충분해요. 하지만 뭔가 좀 이상해요...",
+                "th": "แน่นอน ข้อมูลพวกนี้มากพอให้ฉันคำนวณตำแหน่งของเรือกระเบนได้แล้วล่ะ แต่ว่ามันมีบางอย่างผิดปกติอยู่...",
+                "zh-Hans": "可以，这些信息足够我推算出魔鬼鱼号的下落了，但是有点奇怪……",
+                "zh-Hant": "可以，這些資訊足夠我推算出魔鬼魚號的下落了，但是有點奇怪……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist es? Du kannst es nicht finden?",
+                    "en": "What is it? You can't find it?",
+                    "es": "¿Qué es? ¿No puedes encontrarlo?",
+                    "fr": "Quoi, vous ne l'avez pas trouvé ?",
+                    "ja": "まだ探せなさそう？",
+                    "ko": "무슨 일이죠? 설마 못 찾는 건가요?",
+                    "th": "อะไรเหรอ คุณหามันไม่เจองั้นเหรอ",
+                    "zh-Hans": "发生什么了吗？找不到吗？",
+                    "zh-Hant": "發生什麼了嗎？找不到嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein. Es ist nur so, dass es nicht mehr wert ist, danach zu suchen.",
+                "en": "No. It's just that it is not worth searching for it anymore.",
+                "es": "No. Es solo que ya no vale la pena buscarlo.",
+                "fr": "Non. Pour être précis, « ce n'est pas nécessaire ».",
+                "ja": "……正確に言うと「その必要はありません」。",
+                "ko": "아니요, 굳이 찾아갈 필요가 없을 것 같아요",
+                "th": "ไม่ใช่หรอก แค่ว่าการตามหามันอาจจะไม่คุ้มแล้วน่ะสิ",
+                "zh-Hans": "不是的，是没有必要去找了。",
+                "zh-Hant": "不是的，是沒有必要去找了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Anhand dieser Koordinaten kann ich mit Sicherheit sagen, dass dieser Stachelrochen dasselbe Schiff ist, das wir vor einigen Jahren in der Nähe des Hafens des Jaulenden Sumpfes geborgen haben.",
+                "en": "According to those coordinates, I can say with confidence that this Stingray is the same ship that we salvaged near the harbor of the Whining Aix's Mire a few years prior.",
+                "es": "Según esas coordenadas, puedo decir con confianza que esta Mantarraya es el mismo barco que rescatamos cerca del puerto del Pantano de Aix hace unos años.",
+                "fr": "En comparant les coordonnées... Ce « Manta » est sans aucun doute le navire coulé que nous avons trouvé près de la Tourbe piaulante. Il y a quelques années.",
+                "ja": "一連の座標と照らし合わせると……この「マンタ」号は、数年前怨鳥の沼で引き揚げられた沈没船に間違いないでしょう。",
+                "ko": "그 좌표 정보에 따르면, 전 이 「데블 피쉬호」가 수년 전 울음새 늪 지역의 항구 근처에서 인양된 침몰선이라고 확신할 수 있어요",
+                "th": "อิงจากพิกัดเหล่านี้ ฉันมั่นใจว่าเรือกระเบนคือเรือลำเดียวกันกับลำที่เรากู้ซากมาได้แถวท่าเรือของหนองปักษาร่ำไห้เมื่อสองสามปีก่อนหน้านี้น่ะ",
+                "zh-Hans": "根据那些坐标信息，我可以确定这艘魔鬼鱼号，就是数年前我们在怨鸟泽地区港口附近打捞到的一艘沉船。",
+                "zh-Hant": "根據那些座標資訊，我可以確定這艘魔鬼魚號，就是數年前我們在怨鳥澤地區港口附近打撈到的一艘沉船。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Wrack fanden wir einige der Logbücher der Besatzung, obwohl sie in Stücke gebrochen waren, gelang es uns dennoch, sie mit den Geschichten in den Konsolen zu verknüpfen.",
+                "en": "Inside the wreckage, we found some of the crew's logs, although broken into pieces, we still managed to link them with the stories found in the consoles.",
+                "es": "Dentro de los escombros, encontramos algunos de los registros de la tripulación, aunque estaban rotos en pedazos, aún logramos vincularlos con las historias encontradas en las consolas.",
+                "fr": "Il y a des traces de la vie des marins à l'intérieur, et d'après ce que je vois... Cela correspond à l'information que vous avez fournie.",
+                "ja": "中に船員たちの痕跡が一部残されており……あなたが提供した情報とも概ね一致します。",
+                "ko": "침몰한 배 위에서 저희는 일부 선원들의 생활 기록을 발견했어요. 비록 산산조각이 나긴 했지만, 기본적으로 등대 끝에서 발견된 이야기와 연결되고 있어요",
+                "th": "ในซากเรือลำนั้น เราพบบันทึกของลูกเรือที่โดนฉีกเป็นชิ้นๆ แต่ก็เอามาปะติดปะต่อกับเรื่องราวที่เจอในแผงควบคุมได้",
+                "zh-Hans": "在沉船上面我们发现了一些船员的生活记录，虽然很破碎，但基本上能够和灯塔终端里发现的故事联系上。",
+                "zh-Hant": "在沉船上面我們發現了一些船員的生活記錄，雖然很破碎，但基本上能夠和燈塔終端裡發現的故事聯繫上。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also waren Moak und seine Besatzung alle sicher?",
+                    "en": "So were Moak and his crew all safe?",
+                    "es": "¿Estaban Moak y su tripulación a salvo?",
+                    "fr": "Et Mock et les autres ?",
+                    "ja": "じゃあ、モックたちは？",
+                    "ko": "모크와 다른 사람들은 모두 무사한가요?",
+                    "th": "สรุปแล้วโมคกับลูกเรือทุกคนปลอดภัยดีใช่ไหม",
+                    "zh-Hans": "所以莫克他们都平安无事吗？",
+                    "zh-Hant": "所以莫克他們都平安無事嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Leider haben wir auch sechs Körper darin entdeckt... Basierend auf den Informationen, die wir haben, gehören sie zu Moak und seinen Besatzungsmitgliedern.",
+                "en": "Unfortunately, we also discovered six bodies inside... Based on the information we have, they belong to Moak and his crew members.",
+                "es": "Desafortunadamente, también descubrimos seis cuerpos en el interior... Según la información que tenemos, pertenecen a Moak y a los miembros de su tripulación.",
+                "fr": "Malheureusement... Six corps ont été trouvés avec le navire. C'est sans doute Mock et « les marins ».",
+                "ja": "残念ながら……船と一緒に、六つの遺体が発見されました。モックと「船員たち」と考えてほぼ間違いないでしょうね。",
+                "ko": "유감스럽네요... 저희가 침몰선에서 여섯 구의 시신을 찾았는데... 현재 정보로 볼 때, 그들이 바로 모크와 그의 선원들 같아요",
+                "th": "น่าเสียดายที่พวกเราเจอร่างหกร่างด้านใน... จากข้อมูลที่เรามีอยู่ ร่างพวกนั้นคือโมคกับลูกเรือของเขา",
+                "zh-Hans": "很遗憾，我们在这艘沉船上找到了6具遗体……按照现在的信息来看，它们就是莫克和他的那些船员们。",
+                "zh-Hant": "很遺憾，我們在這艘沉船上找到了6具遺體……按照現在的資訊來看，它們就是莫克和他的那些船員們。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie konnte das passieren?",
+                    "en": "How could this be?",
+                    "es": "¿Cómo pudo suceder esto?",
+                    "fr": "C'est pas vrai !",
+                    "ja": "そんな！",
+                    "ko": "어떻게 그럴 수 있죠?",
+                    "th": "เป็นไปได้ยังไง",
+                    "zh-Hans": "怎么会这样？？",
+                    "zh-Hant": "怎麼會這樣？？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Weitere Untersuchungen ergaben, dass die Todesfälle der anderen fünf Mitglieder noch weiter zurückliegen als die Zeit, als Moak seine erste Aufnahme im Leuchtturm machte.",
+                "en": "Further investigations found that the deaths of the other five members date back even further than the time when Moak made his first recording in the lighthouse.",
+                "es": "Investigaciones posteriores encontraron que las muertes de los otros cinco miembros datan de incluso antes de que Moak hiciera su primera grabación en el faro.",
+                "fr": "Ce n'est pas tout. L'heure de la mort des cinq autres a été établie bien avant que Mock n'ait téléchargé l'enregistrement dans le phare.",
+                "ja": "それだけではありません。検査の結果、他の五人の死亡時間は、モックが最初に灯台で録音をアップロードした時点より遥かに早いと判明しました。",
+                "ko": "저희가 조사한 바로는 다른 다섯 구의 시신 사망 시점은 모크가 처음 등대에 기록한 시간보다 훨씬 앞서 있었어요",
+                "th": "จากการที่เราตรวจสอบเพิ่มเติม เราพบว่าร่างอื่นอีกห้าร่างนั้นตายมานานมากแล้ว ก่อนที่จะโมคจะเริ่มบันทึกเสียงครั้งแรกในประภาคารด้วยซ้ำ",
+                "zh-Hans": "我们调查发现，其他5具遗体的去世时间，甚至比莫克第一次记录在灯塔的时间还要更早。",
+                "zh-Hant": "我們調查發現，其他5具遺體的去世時間，甚至比莫克第一次記錄在燈塔的時間還要更早。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit anderen Worten, Moak war die ganze Zeit allein auf See unterwegs, und seine Crewmitglieder waren schon lange den TDs zum Opfer gefallen...",
+                "en": "In other words, Moak had been sailing on the sea alone all this time, and his crew members had long since fallen victim to the TDs...",
+                "es": "En otras palabras, Moak había estado navegando en el mar solo todo este tiempo, y los miembros de su tripulación ya habían caído víctimas de las DT...",
+                "fr": "En d'autres termes. Il a probablement voyagé seul. « Les marins » sont depuis longtemps...",
+                "ja": "つまり……彼は一人で船旅をしていたのでしょう。きっと「船員たち」はとっくに……",
+                "ko": "즉, 모크는 처음부터 끝까지 혼자서 바다를 항해했고, 그의 선원들은 사실 오래전에 잔상에게...",
+                "th": "หรือก็คือโมคนั้นแล่นเรืออยู่คนเดียวมาโดยตลอด และลูกเรือของเขาก็ตกเป็นเหยื่อของทาเซ็ตดิสคอร์ดมาตั้งแต่ต้น...",
+                "zh-Hans": "也就是说，莫克自始至终都是一个人航行在大海之上，他的船员其实早就被残象……",
+                "zh-Hant": "也就是說，莫克自始至終都是一個人航行在大海之上，他的船員其實早就被殘象……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit solchen Verlusten konfrontiert, weigerte sich Moak, ein solches Ende zu akzeptieren. Also verfiel er in eine Fantasie, dass er und seine Crewmitglieder alle nacheinander die Leuchttürme fanden, ihre eigenen Häuser fanden und den Stachelrochen sicher verließen.",
+                "en": "Experiencing such losses, Moak refused to accept such an ending. So he fell into a fantasy, that he and his crew members all found the lighthouses one by one, found their own homes, and left the Stingray safely.",
+                "es": "Experimentando tales pérdidas, Moak se negó a aceptar tal final. Así que cayó en una fantasía, que él y los miembros de su tripulación encontraron los faros uno por uno, encontraron sus propios hogares, y dejaron la Mantarraya a salvo.",
+                "fr": "Mock a probablement eu des hallucinations. Il ne peut pas accepter cette fin, donc tout le monde a trouvé le phare et est descendu du « Manta » en toute sécurité...",
+                "ja": "モックは受け入れられない結末のせいで幻覚を見たのです。皆灯台と居場所を見つけ、無事に「マンタ」から降りたという幻覚を……",
+                "ko": "모크는 이런 결말을 받아들이지 못했을 거고 그로 인해 환상이 생겨나며, 선원들은 등대를 찾아 귀착점을 찾아 무사히 「데블 피쉬호」를 떠난 거예요",
+                "th": "พอเจอการสูญเสียมากขนาดนั้น โมคคงไม่อยากจะยอมรับจุดจบแบบนั้น เขาจึงจินตนาการว่าตัวเองและลูกเรือเจอประภาคารไปเรื่อยๆ แต่ละคนไดเจอบ้านของตัวเอง และลงจากเรือกระเบนไปได้อย่างปลอดภัย",
+                "zh-Hans": "莫克接受不了这样的结局，于是产生了幻想，船员们都找到了灯塔，找到了归宿，平安地离开了魔鬼鱼号。",
+                "zh-Hant": "莫克接受不了這樣的結局，於是產生了幻想，船員們都找到了燈塔，找到了歸宿，平安地離開了魔鬼魚號。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Am Ende war nur er selbst derjenige, der die Reise vollendete und für immer auf dem Meeresgrund mit dem Stachelrochen lag.",
+                "en": "In the end, only he himself completed the voyage and forever laid in that seabed with the Stingray.",
+                "es": "Al final, solo él mismo completó el viaje y se quedó para siempre en ese lecho marino con la Mantarraya.",
+                "fr": "En fin de compte... Il a coulé avec le navire à la fin de son voyage en solitaire.",
+                "ja": "そして……一人旅の最後に、船と一緒に海へ沈んだ……",
+                "ko": "마지막 남은 것은 그 혼자의 마지막 여행... 즉, 「데블 피쉬호」와 함께 영원히 그 해저에 가라앉은 거죠",
+                "th": "ในท้ายที่สุดก็มีเพียงเขาที่ล่องเรือจนจบ และได้หลับใหลอยู่ที่ก้นทะเลพร้อมกับเรือกระเบนตลอดไป",
+                "zh-Hans": "最后只剩下他自己旅行到了最后，与魔鬼鱼号一起永远沉没在那片海底。",
+                "zh-Hant": "最後只剩下他自己旅行到了最後，與魔鬼魚號一起永遠沉沒在那片海底。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bist du sicher, dass das wirklich passiert ist...?",
+                    "en": "Are you sure this is what truly happened...?",
+                    "es": "¿Estás seguro de que esto es lo que realmente sucedió...?",
+                    "fr": "C'est la vérité...",
+                    "ja": "これが真実……",
+                    "ko": "이게 진실인가요...?",
+                    "th": "นั่นคือเรื่องที่เกิดขึ้นจริงๆ เหรอ...",
+                    "zh-Hans": "这就是真相吗……",
+                    "zh-Hant": "這就是真相嗎……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich kann keine Garantien geben, da dies nur meine eigenen Spekulationen sind. Doch vergessene Geschichten zu entfalten, das ist es, was die Geschichte faszinierend macht.",
+                "en": "I cannot make any guarantees, as these are just my own speculations. Yet, unfolding forgotten stories, is what makes history fascinating.",
+                "es": "No puedo dar ninguna garantía, ya que estas son solo mis propias especulaciones. Sin embargo, desentrañar historias olvidadas, es lo que hace que la historia sea fascinante.",
+                "fr": "En effet, je ne peux pas le garantir... C'est juste une supposition. Cependant, révéler une histoire cachée à sa manière est une grande joie pour un chercheur d'histoire.",
+                "ja": "……これもあくまで、推測にすぎません。しかし、そうやって隠された物語を明らかにするのは、歴史の探求者にとって無上の喜びですね。",
+                "ko": "장담할 수 없어요. 어쩌면 이 모든 것이 제 추측일 수도 있고요. 하지만 먼지가 쌓인 이야기를 다시 여는 것, 그것이 바로 역사의 매혹적인 부분이겠죠",
+                "th": "ฉันก็ไม่สามารถยืนยันได้หรอก มันก็แค่ข้อสันนิษฐานของฉันเท่านั้น แต่การคลี่คลายเรื่องราวที่คนหลงลืมไปนี่ล่ะคือสิ่งที่ทำให้ประวัติศาสตร์มันน่าสนใจเอามากๆ",
+                "zh-Hans": "我也不敢保证，或许这些都只是我的猜测，但再次打开被尘封的故事，这就是历史令人着迷的地方。",
+                "zh-Hant": "我也不敢保證，或許這些都只是我的猜測，但再次打開被塵封的故事，這就是歷史令人著迷的地方。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie dem auch sei, ich bin dir sehr dankbar, dass du es mir erlaubt hast, die ganze Geschichte in ihrer Gesamtheit zu erleben. Du hast dir diese Belohnungen für deine Leidenschaft für die Geschichte verdient.",
+                "en": "Regardless, I'm really grateful for letting me see the whole story. Your passion for history truly deserves these rewards.",
+                "es": "En cualquier caso, estoy muy agradecido contigo por permitirme presenciar la historia completa en su totalidad. Te mereces estas recompensas por tu pasión por la historia.",
+                "fr": "Quoi qu'il en soit... Grâce à vous, j'ai pu comprendre toute l'histoire. C'est la récompense que vous, qui aimez l'histoire, devriez recevoir !",
+                "ja": "何にしても……あなたのお陰で事件の全貌を掴めました。これは、歴史を愛するあなたに相応しい報酬です！",
+                "ko": "결과가 어찌 되었든 사건의 전부를 저에게 보여주셔서 감사해요. 이건 역사를 사랑하는 방랑자가 마땅히 받아야 할 보수예요",
+                "th": "แต่ยังไงฉันก็ขอขอบคุณที่คุณทำให้ฉันได้รู้เรื่องราวทั้งหมดนี้ด้วย ความหลงใหลในประวัติศาสตร์ของคุณนี่ควรได้รับรางวัลตอบแทนนะ",
+                "zh-Hans": "不管怎么样，我都非常感谢你让我看到了事件的全部，这是热爱历史的你应得的报酬。",
+                "zh-Hant": "不管怎麼樣，我都非常感謝你讓我看到了事件的全部，這是熱愛歷史的你應得的報酬。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "parentId": 26,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe nach Jinzhou, um den Historiker zu finden",
+        "en": "Head to Jinzhou to find the historian",
+        "es": "Dirígete a Jinzhou para encontrar al historiador",
+        "fr": "Allez à Jinzhou pour trouver l'historien",
+        "ja": "今州で歴史学者を探す",
+        "ko": "금주로 이동하여 역사학자 찾기",
+        "th": "มุ่งหน้าไปจินโจวเพื่อตามหานักประวัติศาสตร์",
+        "zh-Hans": "前往今州寻找历史学家",
+        "zh-Hant": "前往今州尋找歷史學家"
+      },
+      "entities": [
+        {
+          "entityId": 135002116,
+          "mapId": 8,
+          "blueprintType": "NPC251",
+          "name": "TsEntity_157_011_皇龙研究员男6",
+          "areaId": 301,
+          "position": {
+            "x": -31746,
+            "y": 99364,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 158
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002127,
+          "mapId": 8,
+          "blueprintType": "Treasure009",
+          "name": "TsEntity_豪华物资箱_玩法刷新4",
+          "areaId": 301,
+          "position": {
+            "x": -31654,
+            "y": 99735,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 93
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Grüße, Rover. Hast du die verbleibenden Leuchttürme gefunden?",
+                "en": "Greetings, Rover. Did you find the remaining lighthouses?",
+                "es": "Saludos, Errante. ¿Encontraste los faros restantes?",
+                "fr": "Bonjour. Avez-vous trouvé d'autres phares ?",
+                "ja": "こんにちは。他の灯台を見つけましたか？",
+                "ko": "방랑자, 안녕하세요, 다른 등대는 찾으셨나요?",
+                "th": "สวัสดีผู้พเนจร เจอประภาคารที่เหลือหรือยัง",
+                "zh-Hans": "漂泊者你好啊，有找到其他灯塔吗？",
+                "zh-Hant": "漂泊者你好啊，有找到其他燈塔嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast dem Historiker erzählt, was du in den Konsolen gefunden hast.",
+                "en": "You tell the historian what you found inside the consoles.",
+                "es": "Le contaste al historiador lo que encontraste dentro de las consolas.",
+                "fr": "(J'ai transmis toutes les informations trouvées dans le phare.)",
+                "ja": "（灯台の設備から見つけた全ての情報を伝えた）",
+                "ko": "이미 찾은 등대 단말기에서 발견한 모든 정보를 그에게 알려준다",
+                "th": "คุณเล่าให้นักประวัติศาสตร์ผู้นั้นฟังว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง",
+                "zh-Hans": "将从已经找到的灯塔终端里发现的全部信息告诉他。",
+                "zh-Hant": "將從已經找到的燈塔終端裡發現的全部資訊告訴他。"
+              },
+              "id": 2
+            },
+            {
+              "text": {
+                "de": "Ist das so? Du hast es geschafft, Informationen von allen fünf Leuchtturmkonsolen zu finden, sagst du...!",
+                "en": "Is that so? You managed to find information from all five lighthouse consoles you say...!",
+                "es": "¿Es eso cierto? ¿Lograste encontrar información de todas las cinco consolas de los faros, dices...!",
+                "fr": "Vous avez rassemblé toutes les informations des cinq phares... !",
+                "ja": "五つの灯台全ての情報を集めたですと……！",
+                "ko": "이미 5개의 등대 터미널에 대한 정보를 모두 찾으셨다고요...?",
+                "th": "งั้นเหรอ คุณบอกว่าคุณได้ข้อมูลจากแผงควบคุมในประภาคารทั้งหาแห่งมาแล้วเหรอ...!",
+                "zh-Hans": "你已经找到全部5个灯塔终端的信息了吗……！",
+                "zh-Hant": "你已經找到全部5個燈塔終端的資訊了嗎……！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deine Leidenschaft für Geschichte ist viel größer als die meiner eigenen Schüler. Das bringt mir Tränen in die Augen.",
+                "en": "Your passion for history is much greater than that of my own pupils. This brings tears to my eyes.",
+                "es": "Tu pasión por la historia es mucho mayor que la de mis propios alumnos. Esto me trae lágrimas a los ojos.",
+                "fr": "Face à cette passion pour l'histoire, plus que n'importe lequel de mes élèves... Je suis ému !",
+                "ja": "私が知るどの生徒よりも、強い歴史への愛と情熱を、あなたはお持ちです……涙が！溢れ出る！",
+                "ko": "역사에 대한 열정이 제 학생들 보다 높을 줄이야... 감격에 눈물이 날 지경이에요",
+                "th": "ความหลงใหลในประวัติศาสตร์ของคุณอาจจะมากกว่าลูกศิษย์ของฉันด้วยซ้ำ น้ำตาจะไหลเลย",
+                "zh-Hans": "你对历史的热爱真是比我的学生要高多了，我眼泪都要掉下来了。",
+                "zh-Hant": "你對歷史的熱愛真是比我的學生要高多了，我眼淚都要掉下來了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Können wir jetzt den Standort des Stachelrochens finden?",
+                    "en": "Are we now able to find the location of the Stingray?",
+                    "es": "¿Ahora podemos encontrar la ubicación de la Mantarraya?",
+                    "fr": "Pouvons-nous chercher le « Manta » avec ça ?",
+                    "ja": "これで「マンタ」号を探せる？",
+                    "ko": "「데블 피쉬호」의 위치를 찾을 수 있을까요?",
+                    "th": "เราสามารถหาตำแหน่งของเรือกระเบนได้แล้วเหรอ",
+                    "zh-Hans": "能找到魔鬼鱼号的所在吗？",
+                    "zh-Hant": "能找到魔鬼魚號的所在嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich, diese Informationen sind mehr als ausreichend, um den Aufenthaltsort des Stachelrochens zu berechnen. Aber es gibt etwas Seltsames daran...",
+                "en": "Of course, this information is more than adequate for me to calculate the Stingray's whereabouts. But there is something strange about this...",
+                "es": "Por supuesto, esta información es más que adecuada para que yo pueda calcular la ubicación de la Mantarraya. Pero hay algo extraño en esto...",
+                "fr": "Ah, c'est suffisant. Mais c'est assez...",
+                "ja": "はい、十分です。しかし、これは……",
+                "ko": "네, 이 정보들이라면 제가 「데블 피쉬호」의 행방을 짐작하기에는 충분해요. 하지만 뭔가 좀 이상해요...",
+                "th": "แน่นอน ข้อมูลพวกนี้มากพอให้ฉันคำนวณตำแหน่งของเรือกระเบนได้แล้วล่ะ แต่ว่ามันมีบางอย่างผิดปกติอยู่...",
+                "zh-Hans": "可以，这些信息足够我推算出魔鬼鱼号的下落了，但是有点奇怪……",
+                "zh-Hant": "可以，這些資訊足夠我推算出魔鬼魚號的下落了，但是有點奇怪……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist es? Du kannst es nicht finden?",
+                    "en": "What is it? You can't find it?",
+                    "es": "¿Qué es? ¿No puedes encontrarlo?",
+                    "fr": "Alors, vous ne l'avez pas trouvé ?",
+                    "ja": "まだ探せなさそう？",
+                    "ko": "무슨 일이죠? 설마 못 찾는 건가요?",
+                    "th": "อะไรเหรอ คุณหามันไม่เจองั้นเหรอ",
+                    "zh-Hans": "发生什么了吗？找不到吗？",
+                    "zh-Hant": "發生什麼了嗎？找不到嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein. Es ist nur so, dass es nicht mehr wert ist, danach zu suchen.",
+                "en": "No. It's just that it is not worth searching for it anymore.",
+                "es": "No. Es solo que ya no vale la pena buscarlo.",
+                "fr": "Non. Pour être précis, « ce n'est pas nécessaire ».",
+                "ja": "……正確に言うと「その必要はありません」。",
+                "ko": "아니요, 굳이 찾아갈 필요가 없을 것 같아요",
+                "th": "ไม่ใช่หรอก แค่ว่าการตามหามันอาจจะไม่คุ้มแล้วน่ะสิ",
+                "zh-Hans": "不是的，是没有必要去找了。",
+                "zh-Hant": "不是的，是沒有必要去找了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gemäß diesen Koordinaten kann ich mit Sicherheit sagen, dass dieser Stachelrochen dasselbe Schiff ist, das wir vor einigen Jahren in der Nähe des Hafens des Jaulenden Sumpfes geborgen haben.",
+                "en": "According to those coordinates, I can say with confidence that this Stingray is the same ship that we salvaged near the harbor of the Whining Aix's Mire a few years prior.",
+                "es": "Según esas coordenadas, puedo decir con confianza que esta Mantarraya es el mismo barco que rescatamos cerca del puerto del Pantano de Aix hace unos años.",
+                "fr": "En comparant les coordonnées... Ce « Manta » est sans aucun doute le navire coulé que nous avons trouvé près de la Tourbe piaulante. Il y a quelques années.",
+                "ja": "一連の座標と照らし合わせると……この「マンタ」号は、数年前怨鳥の沼で引き揚げられた沈没船に間違いないでしょう。",
+                "ko": "그 좌표 정보에 따르면, 전 이 「데블 피쉬호」가 수년 전 울음새 늪 지역의 항구 근처에서 인양된 침몰선이라고 확신할 수 있어요",
+                "th": "อิงจากพิกัดเหล่านี้ ฉันมั่นใจว่าเรือกระเบนคือเรือลำเดียวกันกับลำที่เรากู้ซากมาได้แถวท่าเรือของหนองปักษาร่ำไห้เมื่อสองสามปีก่อนหน้านี้น่ะ",
+                "zh-Hans": "根据那些坐标信息，我可以确定这艘魔鬼鱼号，就是数年前我们在怨鸟泽地区港口附近打捞到的一艘沉船。",
+                "zh-Hant": "根據那些座標資訊，我可以確定這艘魔鬼魚號，就是數年前我們在怨鳥澤地區港口附近打撈到的一艘沉船。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Wrack fanden wir einige der Logbücher der Besatzung, obwohl in Stücke gebrochen, konnten wir sie dennoch mit den Geschichten in den Konsolen verknüpfen.",
+                "en": "Inside the wreckage, we found some of the crew's logs, although broken into pieces, we still managed to link them with the stories found in the consoles.",
+                "es": "Dentro de los restos, encontramos algunos de los registros de la tripulación, aunque rotos en pedazos, aún logramos vincularlos con las historias encontradas en las consolas.",
+                "fr": "Il y a des traces de la vie des marins à l'intérieur, et d'après ce que je vois... Cela correspond à l'information que vous avez fournie.",
+                "ja": "中に船員たちの痕跡が一部残されており……あなたが提供した情報とも概ね一致します。",
+                "ko": "침몰한 배 위에서 저희는 일부 선원들의 생활 기록을 발견했어요. 비록 산산조각이 나긴 했지만, 기본적으로 등대 끝에서 발견된 이야기와 연결되고 있어요",
+                "th": "ในซากเรือลำนั้น เราพบบันทึกของลูกเรือที่โดนฉีกเป็นชิ้นๆ แต่ก็เอามาปะติดปะต่อกับเรื่องราวที่เจอในแผงควบคุมได้",
+                "zh-Hans": "在沉船上面我们发现了一些船员的生活记录，虽然很破碎，但基本上能够和灯塔终端里发现的故事联系上。",
+                "zh-Hant": "在沉船上面我們發現了一些船員的生活記錄，雖然很破碎，但基本上能夠和燈塔終端裡發現的故事聯繫上。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also waren Moak und seine Besatzung alle sicher?",
+                    "en": "So were Moak and his crew all safe?",
+                    "es": "¿Entonces Moak y su tripulación estaban todos a salvo?",
+                    "fr": "Et qu'en est-il de Mock et des autres ?",
+                    "ja": "じゃあ、モックたちは？",
+                    "ko": "모크와 다른 사람들은 모두 무사한가요?",
+                    "th": "สรุปแล้วโมคกับลูกเรือทุกคนปลอดภัยดีใช่ไหม",
+                    "zh-Hans": "所以莫克他们都平安无事吗？",
+                    "zh-Hant": "所以莫克他們都平安無事嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Leider haben wir auch sechs Körper im Inneren entdeckt... Basierend auf den Informationen, die wir haben, gehören sie zu Moak und seinen Besatzungsmitgliedern.",
+                "en": "Unfortunately, we also discovered six bodies inside... Based on the information we have, they belong to Moak and his crew members.",
+                "es": "Desafortunadamente, también descubrimos seis cuerpos dentro... Basándonos en la información que tenemos, pertenecen a Moak y a los miembros de su tripulación.",
+                "fr": "Malheureusement... Six corps ont été trouvés avec le navire. C'est sans doute Mock et « les marins ».",
+                "ja": "残念ながら……船と一緒に、六つの遺体が発見されました。モックと「船員たち」と考えてほぼ間違いないでしょうね。",
+                "ko": "유감스럽네요... 저희가 침몰선에서 여섯 구의 시신을 찾았는데... 현재 정보로 볼 때, 그들이 바로 모크와 그의 선원들 같아요",
+                "th": "น่าเสียดายที่พวกเราเจอร่างหกร่างด้านใน... จากข้อมูลที่เรามีอยู่ ร่างพวกนั้นคือโมคกับลูกเรือของเขา",
+                "zh-Hans": "很遗憾，我们在这艘沉船上找到了6具遗体……按照现在的信息来看，它们就是莫克和他的那些船员们。",
+                "zh-Hant": "很遺憾，我們在這艘沉船上找到了6具遺體……按照現在的資訊來看，它們就是莫克和他的那些船員們。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie konnte das passieren?",
+                    "en": "How could this be?",
+                    "es": "¿Cómo podría ser esto?",
+                    "fr": "Quoi !",
+                    "ja": "そんな！",
+                    "ko": "어떻게 그럴 수 있죠?",
+                    "th": "เป็นไปได้ยังไง",
+                    "zh-Hans": "怎么会这样？？",
+                    "zh-Hant": "怎麼會這樣？？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Weitere Untersuchungen ergaben, dass der Tod der anderen fünf Mitglieder noch weiter zurückliegt als die Zeit, als Moak seine erste Aufnahme im Leuchtturm machte.",
+                "en": "Further investigations found that the deaths of the other five members date back even further than the time when Moak made his first recording in the lighthouse.",
+                "es": "Investigaciones posteriores encontraron que las muertes de los otros cinco miembros se remontan aún más que el momento en que Moak hizo su primera grabación en el faro.",
+                "fr": "Ce n'est pas tout. L'heure de la mort des cinq autres a été établie bien avant que Mock n'ait téléchargé l'enregistrement dans le phare.",
+                "ja": "それだけではありません。検査の結果、他の五人の死亡時間は、モックが最初に灯台で録音をアップロードした時点より遥かに早いと判明しました。",
+                "ko": "저희가 조사한 바로는 다른 다섯 구의 시신 사망 시점은 모크가 처음 등대에 기록한 시간보다 훨씬 앞서 있었어요",
+                "th": "จากการที่เราตรวจสอบเพิ่มเติม เราพบว่าร่างอื่นอีกห้าร่างนั้นตายมานานมากแล้ว ก่อนที่จะโมคจะเริ่มบันทึกเสียงครั้งแรกในประภาคารด้วยซ้ำ",
+                "zh-Hans": "我们调查发现，其他5具遗体的去世时间，甚至比莫克第一次记录在灯塔的时间还要更早。",
+                "zh-Hant": "我們調查發現，其他5具遺體的去世時間，甚至比莫克第一次記錄在燈塔的時間還要更早。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit anderen Worten, Moak war die ganze Zeit allein auf See unterwegs, und seine Besatzungsmitglieder waren schon lange den TDs zum Opfer gefallen...",
+                "en": "In other words, Moak had been sailing on the sea alone all this time, and his crew members had long since fallen victim to the TDs...",
+                "es": "En otras palabras, Moak había estado navegando en el mar solo todo este tiempo, y sus miembros de la tripulación habían caído víctimas de las DT hace mucho tiempo...",
+                "fr": "En d'autres termes. Il a probablement voyagé seul. « Les marins » sont depuis longtemps...",
+                "ja": "つまり……彼は一人で船旅をしていたのでしょう。きっと「船員たち」はとっくに……",
+                "ko": "즉, 모크는 처음부터 끝까지 혼자서 바다를 항해했고, 그의 선원들은 사실 오래전에 잔상에게...",
+                "th": "หรือก็คือโมคนั้นแล่นเรืออยู่คนเดียวมาโดยตลอด และลูกเรือของเขาก็ตกเป็นเหยื่อของทาเซ็ตดิสคอร์ดมาตั้งแต่ต้น...",
+                "zh-Hans": "也就是说，莫克自始至终都是一个人航行在大海之上，他的船员其实早就被残象……",
+                "zh-Hant": "也就是說，莫克自始至終都是一個人航行在大海之上，他的船員其實早就被殘象……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach solchen Verlusten konnte Moak ein solches Ende nicht akzeptieren. Also verfiel er in eine Fantasie, in der er und seine Crewmitglieder nacheinander alle Leuchttürme fanden, ihre eigenen Häuser fanden und den Stachelrochen sicher verließen.",
+                "en": "Experiencing such losses, Moak refused to accept such an ending. So he fell into a fantasy, that he and his crew members all found the lighthouses one by one, found their own homes, and left the Stingray safely.",
+                "es": "Tras sufrir tales pérdidas, Moak se negó a aceptar tal final. Así que se sumergió en una fantasía, en la que él y su tripulación encontraban los faros uno a uno, encontraban sus propios hogares y abandonaban la Mantarraya a salvo.",
+                "fr": "Mock a probablement eu des hallucinations. Il ne peut pas accepter cette fin, donc tout le monde a trouvé le phare et est descendu du « Manta » en toute sécurité...",
+                "ja": "モックは受け入れられない結末のせいで幻覚を見たのです。皆灯台と居場所を見つけ、無事に「マンタ」から降りたという幻覚を……",
+                "ko": "모크는 이런 결말을 받아들이지 못했을 거고 그로 인해 환상이 생겨나며, 선원들은 등대를 찾아 귀착점을 찾아 무사히 「데블 피쉬호」를 떠난 거예요",
+                "th": "พอเจอการสูญเสียมากขนาดนั้น โมคคงไม่อยากจะยอมรับจุดจบแบบนั้น เขาจึงจินตนาการว่าตัวเองและลูกเรือเจอประภาคารไปเรื่อยๆ แต่ละคนไดเจอบ้านของตัวเอง และลงจากเรือกระเบนไปได้อย่างปลอดภัย",
+                "zh-Hans": "莫克接受不了这样的结局，于是产生了幻想，船员们都找到了灯塔，找到了归宿，平安地离开了魔鬼鱼号。",
+                "zh-Hant": "莫克接受不了這樣的結局，於是產生了幻想，船員們都找到了燈塔，找到了歸宿，平安地離開了魔鬼魚號。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Am Ende war er der Einzige, der die Reise beendete und für immer auf dem Meeresgrund mit dem Stachelrochen lag.",
+                "en": "In the end, only he himself completed the voyage and forever laid in that seabed with the Stingray.",
+                "es": "Al final, solo él mismo completó el viaje y se quedó para siempre en ese lecho marino con la Mantarraya.",
+                "fr": "En fin de compte... Il a coulé avec le navire à la fin de son voyage en solitaire.",
+                "ja": "そして……一人旅の最後に、船と一緒に海へ沈んだ……",
+                "ko": "마지막 남은 것은 그 혼자의 마지막 여행... 즉, 「데블 피쉬호」와 함께 영원히 그 해저에 가라앉은 거죠",
+                "th": "ในท้ายที่สุดก็มีเพียงเขาที่ล่องเรือจนจบ และได้หลับใหลอยู่ที่ก้นทะเลพร้อมกับเรือกระเบนตลอดไป",
+                "zh-Hans": "最后只剩下他自己旅行到了最后，与魔鬼鱼号一起永远沉没在那片海底。",
+                "zh-Hant": "最後只剩下他自己旅行到了最後，與魔鬼魚號一起永遠沉沒在那片海底。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bist du sicher, dass das wirklich passiert ist...?",
+                    "en": "Are you sure this is what truly happened...?",
+                    "es": "¿Estás seguro de que esto es realmente lo que sucedió...?",
+                    "fr": "Est-ce la vérité...",
+                    "ja": "これが真実……",
+                    "ko": "이게 진실인가요...?",
+                    "th": "นั่นคือเรื่องที่เกิดขึ้นจริงๆ เหรอ...",
+                    "zh-Hans": "这就是真相吗……",
+                    "zh-Hant": "這就是真相嗎……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich kann keine Garantien geben, da das nur meine eigenen Vermutungen sind. Doch das Aufdecken vergessener Geschichten, das ist es, was die Geschichte faszinierend macht.",
+                "en": "I cannot make any guarantees, as these are just my own speculations. Yet, unfolding forgotten stories, is what makes history fascinating.",
+                "es": "No puedo dar ninguna garantía, ya que estas son solo mis propias especulaciones. Sin embargo, desentrañar historias olvidadas es lo que hace que la historia sea fascinante.",
+                "fr": "En effet, je ne peux pas le garantir... C'est juste une supposition. Cependant, révéler une histoire cachée à sa manière est une grande joie pour un chercheur d'histoire.",
+                "ja": "……これもあくまで、推測にすぎません。しかし、そうやって隠された物語を明らかにするのは、歴史の探求者にとって無上の喜びですね。",
+                "ko": "장담할 수 없어요. 어쩌면 이 모든 것이 제 추측일 수도 있고요. 하지만 먼지가 쌓인 이야기를 다시 여는 것, 그것이 바로 역사의 매혹적인 부분이겠죠",
+                "th": "ฉันก็ไม่สามารถยืนยันได้หรอก มันก็แค่ข้อสันนิษฐานของฉันเท่านั้น แต่การคลี่คลายเรื่องราวที่คนหลงลืมไปนี่ล่ะคือสิ่งที่ทำให้ประวัติศาสตร์มันน่าสนใจเอามากๆ",
+                "zh-Hans": "我也不敢保证，或许这些都只是我的猜测，但再次打开被尘封的故事，这就是历史令人着迷的地方。",
+                "zh-Hant": "我也不敢保證，或許這些都只是我的猜測，但再次打開被塵封的故事，這就是歷史令人著迷的地方。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In jedem Fall bin ich dir sehr dankbar, dass du es mir erlaubt hast, die gesamte Geschichte in ihrer Gesamtheit zu beobachten. Du hast dir diese Belohnungen für deine Leidenschaft für die Geschichte verdient.",
+                "en": "Regardless, I'm really grateful for letting me see the whole story. Your passion for history truly deserves these rewards.",
+                "es": "En cualquier caso, estoy muy agradecido contigo por permitirme presenciar la historia completa en su totalidad. Mereces estas recompensas por tu pasión por la historia.",
+                "fr": "Quoi qu'il en soit... Grâce à vous, j'ai pu comprendre toute l'histoire. C'est la récompense que vous, qui aimez l'histoire, devriez recevoir !",
+                "ja": "何にしても……あなたのお陰で事件の全貌を掴めました。これは、歴史を愛するあなたに相応しい報酬です！",
+                "ko": "결과가 어찌 되었든 사건의 전부를 저에게 보여주셔서 감사해요. 이건 역사를 사랑하는 방랑자가 마땅히 받아야 할 보수예요",
+                "th": "แต่ยังไงฉันก็ขอขอบคุณที่คุณทำให้ฉันได้รู้เรื่องราวทั้งหมดนี้ด้วย ความหลงใหลในประวัติศาสตร์ของคุณนี่ควรได้รับรางวัลตอบแทนนะ",
+                "zh-Hans": "不管怎么样，我都非常感谢你让我看到了事件的全部，这是热爱历史的你应得的报酬。",
+                "zh-Hant": "不管怎麼樣，我都非常感謝你讓我看到了事件的全部，這是熱愛歷史的你應得的報酬。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "parentId": 29,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 23,
+      "parentId": 29,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 135002116,
+          "mapId": 8,
+          "blueprintType": "NPC251",
+          "name": "TsEntity_157_011_皇龙研究员男6",
+          "areaId": 301,
+          "position": {
+            "x": -31746,
+            "y": 99364,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 158
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002127,
+          "mapId": 8,
+          "blueprintType": "Treasure009",
+          "name": "TsEntity_豪华物资箱_玩法刷新4",
+          "areaId": 301,
+          "position": {
+            "x": -31654,
+            "y": 99735,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 93
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002579,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录31",
+          "areaId": 301,
+          "position": {
+            "x": -31838,
+            "y": 99702,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, hallo! Du musst die Person sein, die die Geheimnisse der Leuchttürme gelöst hat.",
+                "en": "Hello, hello! You must be the one who solved the mysteries of the lighthouses.",
+                "es": "¡Hola, hola! Debes ser el que resolvió los misterios de los faros.",
+                "fr": "Bonjour ! Tu es la personne qui a résolu l'énigme du phare ?",
+                "ja": "どうもどうも！あなたは灯台の時の人ですか？",
+                "ko": "안녕하세요! 그쪽이 등대 단말기를 찾고 해제한 사람 맞죠?",
+                "th": "สวัสดี สวัสดี! คุณคือคนที่แก้ไขปริศนาของประภาคารได้สินะ",
+                "zh-Hans": "你好你好！你就是找到并解开了灯塔终端的人吗？",
+                "zh-Hant": "你好你好！你就是找到並解開了燈塔終端的人嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja.",
+                    "en": "Yes.",
+                    "es": "Sí.",
+                    "fr": "C'est vrai.",
+                    "ja": "そうだね。",
+                    "ko": "네, 맞아요",
+                    "th": "ใช่แล้ว",
+                    "zh-Hans": "是的。",
+                    "zh-Hant": "是的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Bitte, beschreibe mir, was du in den Konsolen gefunden hast. Ich bin wirklich fasziniert.",
+                "en": "Please, describe to me your findings within the consoles. I am truly intrigued.",
+                "es": "Por favor, descríbeme tus hallazgos dentro de las consolas. Estoy realmente intrigado.",
+                "fr": "Si possible, peux-tu me dire ce que tu as trouvé dans le phare ? Je veux vraiment le savoir !",
+                "ja": "よろしければ、灯台の設備から何を見つけたのか、教えていただけませんか？本っ当に、どうしても知りたいんです！",
+                "ko": "등대 단말기에서 무엇을 찾았는지 알려주실 수 있나요? 저 정말 알고 싶어요",
+                "th": "ได้โปรดเถอะ ช่วยเล่าทีว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง ฉันล่ะอยากรู้สุดๆ ไปเลย",
+                "zh-Hans": "能不能请你告诉我在灯塔的终端里你找到了什么呢？我真的非常想知道。",
+                "zh-Hant": "能不能請你告訴我在燈塔的終端裡你找到了什麼呢？我真的非常想知道。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast dem Historiker erzählt, was du in den Konsolen gefunden hast.",
+                "en": "You tell the historian what you found inside the consoles.",
+                "es": "Le contaste al historiador lo que encontraste dentro de las consolas.",
+                "fr": "(Partager les informations trouvées.)",
+                "ja": "（灯台の設備から見つけた全ての情報を伝えた）",
+                "ko": "이미 찾은 등대 단말기에서 발견한 모든 정보를 그에게 알려준다",
+                "th": "คุณเล่าให้นักประวัติศาสตร์ผู้นั้นฟังว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง",
+                "zh-Hans": "将从已经找到的灯塔终端里发现的全部信息告诉他。",
+                "zh-Hant": "將從已經找到的燈塔終端裡發現的全部資訊告訴他。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Wie kann das sein?! Du hast es geschafft, Informationen von allen fünf Leuchtturmkonsolen zu finden, sagst du...!",
+                "en": "How could this be?! You managed to find information from all five lighthouse consoles you say...!",
+                "es": "¿¡Cómo podría ser esto!? ¡Lograste encontrar información de todas las consolas de los cinco faros, dices...!",
+                "fr": "Quoi ! Vous avez rassemblé toutes les informations des cinq phares... !",
+                "ja": "なにっ！五つの灯台全ての情報を集めたですと……！",
+                "ko": "네!? 5개의 등대 터미널에 대한 정보를 모두 찾으셨다고요...?",
+                "th": "เป็นไปได้ยังไงกัน! คุณบอกว่าคุณได้ข้อมูลจากแผงควบคุมในประภาคารทั้งหาแห่งมาแล้วเหรอ...!",
+                "zh-Hans": "什么！？你已经找到全部5个灯塔终端的信息了吗……！",
+                "zh-Hant": "什麼！？你已經找到全部5個燈塔終端的資訊了嗎……！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deine Leidenschaft für Geschichte ist viel größer als die meiner eigenen Schüler. Das bringt mir Tränen in die Augen.",
+                "en": "Your passion for history is much greater than that of my own pupils. This brings tears to my eyes.",
+                "es": "Tu pasión por la historia es mucho mayor que la de mis propios alumnos. Esto me trae lágrimas a los ojos.",
+                "fr": "Face à cette passion pour l'histoire, plus que n'importe lequel de mes élèves... Je suis ému !",
+                "ja": "私が知るどの生徒よりも、強い歴史への愛と情熱を、あなたはお持ちです……涙が！溢れ出る！",
+                "ko": "역사에 대한 열정이 제 학생들 보다 높을 줄이야... 감격에 눈물이 날 지경이에요",
+                "th": "ความหลงใหลในประวัติศาสตร์ของคุณอาจจะมากกว่าลูกศิษย์ของฉันด้วยซ้ำ น้ำตาจะไหลเลย",
+                "zh-Hans": "你对历史的热爱真是比我的学生要高多了，我眼泪都要掉下来了。",
+                "zh-Hant": "你對歷史的熱愛真是比我的學生要高多了，我眼淚都要掉下來了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Können wir jetzt den Standort des Stachelrochens finden?",
+                    "en": "Are we now able to find the location of the Stingray?",
+                    "es": "¿Ahora podemos encontrar la ubicación de la Mantarraya?",
+                    "fr": "Pouvons-nous trouver le « Manta » avec ça ?",
+                    "ja": "これで「マンタ」号を探せる？",
+                    "ko": "「데블 피쉬호」의 위치를 찾을 수 있을까요?",
+                    "th": "เราสามารถหาตำแหน่งของเรือกระเบนได้แล้วเหรอ",
+                    "zh-Hans": "能找到魔鬼鱼号的所在吗？",
+                    "zh-Hant": "能找到魔鬼魚號的所在嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich sind diese Informationen mehr als ausreichend, um den Aufenthaltsort des Stachelrochens zu berechnen. Aber es gibt etwas Seltsames daran...",
+                "en": "Of course, this information is more than adequate for me to calculate the Stingray's whereabouts. But there is something strange about this...",
+                "es": "Por supuesto, esta información es más que adecuada para que yo pueda calcular el paradero de la Mantarraya. Pero hay algo extraño en esto...",
+                "fr": "Oui, c'est suffisant. Mais, c'est assez...",
+                "ja": "はい、十分です。しかし、これは……",
+                "ko": "네, 이 정보들이라면 제가 「데블 피쉬호」의 행방을 짐작하기에는 충분해요. 하지만 뭔가 좀 이상해요...",
+                "th": "แน่นอน ข้อมูลพวกนี้มากพอให้ฉันคำนวณตำแหน่งของเรือกระเบนได้แล้วล่ะ แต่ว่ามันมีบางอย่างผิดปกติอยู่...",
+                "zh-Hans": "可以，这些信息足够我推算出魔鬼鱼号的下落了，但是有点奇怪……",
+                "zh-Hant": "可以，這些資訊足夠我推算出魔鬼魚號的下落了，但是有點奇怪……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist es? Du kannst es nicht finden?",
+                    "en": "What is it? You can't find it?",
+                    "es": "¿Qué es? ¿No puedes encontrarlo?",
+                    "fr": "Quoi, vous ne l'avez pas trouvé ?",
+                    "ja": "まだ探せなさそう？",
+                    "ko": "무슨 일이죠? 설마 못 찾는 건가요?",
+                    "th": "อะไรเหรอ คุณหามันไม่เจองั้นเหรอ",
+                    "zh-Hans": "发生什么了吗？找不到吗？",
+                    "zh-Hant": "發生什麼了嗎？找不到嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein. Es ist nur so, dass es nicht mehr wert ist, danach zu suchen.",
+                "en": "No. It's just that it is not worth searching for it anymore.",
+                "es": "No. Es solo que ya no vale la pena buscarlo.",
+                "fr": "Non. Pour être précis, « ce n'est pas nécessaire ».",
+                "ja": "……正確に言うと「その必要はありません」。",
+                "ko": "아니요, 굳이 찾아갈 필요가 없을 것 같아요",
+                "th": "ไม่ใช่หรอก แค่ว่าการตามหามันอาจจะไม่คุ้มแล้วน่ะสิ",
+                "zh-Hans": "不是的，是没有必要去找了。",
+                "zh-Hant": "不是的，是沒有必要去找了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Anhand dieser Koordinaten kann ich mit Sicherheit sagen, dass dieser Stachelrochen dasselbe Schiff ist, das wir vor einigen Jahren in der Nähe des Hafens des Jaulenden Sumpfes geborgen haben.",
+                "en": "According to those coordinates, I can say with confidence that this Stingray is the same ship that we salvaged near the harbor of the Whining Aix's Mire a few years prior.",
+                "es": "Según esas coordenadas, puedo decir con confianza que esta Mantarraya es el mismo barco que rescatamos cerca del puerto del Pantano de Aix hace unos años.",
+                "fr": "En comparant les coordonnées... Ce « Manta » est sans aucun doute le navire coulé que nous avons trouvé près de la Tourbe piaulante. Il y a quelques années.",
+                "ja": "一連の座標と照らし合わせると……この「マンタ」号は、数年前怨鳥の沼で引き揚げられた沈没船に間違いないでしょう。",
+                "ko": "그 좌표 정보에 따르면, 전 이 「데블 피쉬호」가 수년 전 울음새 늪 지역의 항구 근처에서 인양된 침몰선이라고 확신할 수 있어요",
+                "th": "อิงจากพิกัดเหล่านี้ ฉันมั่นใจว่าเรือกระเบนคือเรือลำเดียวกันกับลำที่เรากู้ซากมาได้แถวท่าเรือของหนองปักษาร่ำไห้เมื่อสองสามปีก่อนหน้านี้น่ะ",
+                "zh-Hans": "根据那些坐标信息，我可以确定这艘魔鬼鱼号，就是数年前我们在怨鸟泽地区港口附近打捞到的一艘沉船。",
+                "zh-Hant": "根據那些座標資訊，我可以確定這艘魔鬼魚號，就是數年前我們在怨鳥澤地區港口附近打撈到的一艘沉船。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Wrack fanden wir einige der Logbücher der Besatzung, obwohl sie in Stücke gebrochen waren, gelang es uns dennoch, sie mit den Geschichten in den Konsolen zu verknüpfen.",
+                "en": "Inside the wreckage, we found some of the crew's logs, although broken into pieces, we still managed to link them with the stories found in the consoles.",
+                "es": "Dentro de los escombros, encontramos algunos de los registros de la tripulación, aunque estaban rotos en pedazos, aún logramos vincularlos con las historias encontradas en las consolas.",
+                "fr": "Il y a des traces de la vie des marins à l'intérieur, et d'après ce que je vois... Cela correspond à l'information que vous avez fournie.",
+                "ja": "中に船員たちの痕跡が一部残されており……あなたが提供した情報とも概ね一致します。",
+                "ko": "침몰한 배 위에서 저희는 일부 선원들의 생활 기록을 발견했어요. 비록 산산조각이 나긴 했지만, 기본적으로 등대 끝에서 발견된 이야기와 연결되고 있어요",
+                "th": "ในซากเรือลำนั้น เราพบบันทึกของลูกเรือที่โดนฉีกเป็นชิ้นๆ แต่ก็เอามาปะติดปะต่อกับเรื่องราวที่เจอในแผงควบคุมได้",
+                "zh-Hans": "在沉船上面我们发现了一些船员的生活记录，虽然很破碎，但基本上能够和灯塔终端里发现的故事联系上。",
+                "zh-Hant": "在沉船上面我們發現了一些船員的生活記錄，雖然很破碎，但基本上能夠和燈塔終端裡發現的故事聯繫上。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also waren Moak und seine Besatzung alle sicher?",
+                    "en": "So were Moak and his crew all safe?",
+                    "es": "¿Estaban Moak y su tripulación a salvo?",
+                    "fr": "Et Mock et les autres ?",
+                    "ja": "じゃあ、モックたちは？",
+                    "ko": "모크와 다른 사람들은 모두 무사한가요?",
+                    "th": "สรุปแล้วโมคกับลูกเรือทุกคนปลอดภัยดีใช่ไหม",
+                    "zh-Hans": "所以莫克他们都平安无事吗？",
+                    "zh-Hant": "所以莫克他們都平安無事嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Leider haben wir auch sechs Körper darin entdeckt... Basierend auf den Informationen, die wir haben, gehören sie zu Moak und seinen Besatzungsmitgliedern.",
+                "en": "Unfortunately, we also discovered six bodies inside... Based on the information we have, they belong to Moak and his crew members.",
+                "es": "Desafortunadamente, también descubrimos seis cuerpos en el interior... Según la información que tenemos, pertenecen a Moak y a los miembros de su tripulación.",
+                "fr": "Malheureusement... Six corps ont été trouvés avec le navire. C'est sans doute Mock et « les marins ».",
+                "ja": "残念ながら……船と一緒に、六つの遺体が発見されました。モックと「船員たち」と考えてほぼ間違いないでしょうね。",
+                "ko": "유감스럽네요... 저희가 침몰선에서 여섯 구의 시신을 찾았는데... 현재 정보로 볼 때, 그들이 바로 모크와 그의 선원들 같아요",
+                "th": "น่าเสียดายที่พวกเราเจอร่างหกร่างด้านใน... จากข้อมูลที่เรามีอยู่ ร่างพวกนั้นคือโมคกับลูกเรือของเขา",
+                "zh-Hans": "很遗憾，我们在这艘沉船上找到了6具遗体……按照现在的信息来看，它们就是莫克和他的那些船员们。",
+                "zh-Hant": "很遺憾，我們在這艘沉船上找到了6具遺體……按照現在的資訊來看，它們就是莫克和他的那些船員們。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie konnte das passieren?",
+                    "en": "How could this be?",
+                    "es": "¿Cómo pudo suceder esto?",
+                    "fr": "C'est pas vrai !",
+                    "ja": "そんな！",
+                    "ko": "어떻게 그럴 수 있죠?",
+                    "th": "เป็นไปได้ยังไง",
+                    "zh-Hans": "怎么会这样？？",
+                    "zh-Hant": "怎麼會這樣？？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Weitere Untersuchungen ergaben, dass die Todesfälle der anderen fünf Mitglieder noch weiter zurückliegen als die Zeit, als Moak seine erste Aufnahme im Leuchtturm machte.",
+                "en": "Further investigations found that the deaths of the other five members date back even further than the time when Moak made his first recording in the lighthouse.",
+                "es": "Investigaciones posteriores encontraron que las muertes de los otros cinco miembros datan de incluso antes de que Moak hiciera su primera grabación en el faro.",
+                "fr": "Ce n'est pas tout. L'heure de la mort des cinq autres a été établie bien avant que Mock n'ait téléchargé l'enregistrement dans le phare.",
+                "ja": "それだけではありません。検査の結果、他の五人の死亡時間は、モックが最初に灯台で録音をアップロードした時点より遥かに早いと判明しました。",
+                "ko": "저희가 조사한 바로는 다른 다섯 구의 시신 사망 시점은 모크가 처음 등대에 기록한 시간보다 훨씬 앞서 있었어요",
+                "th": "จากการที่เราตรวจสอบเพิ่มเติม เราพบว่าร่างอื่นอีกห้าร่างนั้นตายมานานมากแล้ว ก่อนที่จะโมคจะเริ่มบันทึกเสียงครั้งแรกในประภาคารด้วยซ้ำ",
+                "zh-Hans": "我们调查发现，其他5具遗体的去世时间，甚至比莫克第一次记录在灯塔的时间还要更早。",
+                "zh-Hant": "我們調查發現，其他5具遺體的去世時間，甚至比莫克第一次記錄在燈塔的時間還要更早。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit anderen Worten, Moak war die ganze Zeit allein auf See unterwegs, und seine Crewmitglieder waren schon lange den TDs zum Opfer gefallen...",
+                "en": "In other words, Moak had been sailing on the sea alone all this time, and his crew members had long since fallen victim to the TDs...",
+                "es": "En otras palabras, Moak había estado navegando en el mar solo todo este tiempo, y los miembros de su tripulación ya habían caído víctimas de las DT...",
+                "fr": "En d'autres termes. Il a probablement voyagé seul. « Les marins » sont depuis longtemps...",
+                "ja": "つまり……彼は一人で船旅をしていたのでしょう。きっと「船員たち」はとっくに……",
+                "ko": "즉, 모크는 처음부터 끝까지 혼자서 바다를 항해했고, 그의 선원들은 사실 오래전에 잔상에게...",
+                "th": "หรือก็คือโมคนั้นแล่นเรืออยู่คนเดียวมาโดยตลอด และลูกเรือของเขาก็ตกเป็นเหยื่อของทาเซ็ตดิสคอร์ดมาตั้งแต่ต้น...",
+                "zh-Hans": "也就是说，莫克自始至终都是一个人航行在大海之上，他的船员其实早就被残象……",
+                "zh-Hant": "也就是說，莫克自始至終都是一個人航行在大海之上，他的船員其實早就被殘象……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit solchen Verlusten konfrontiert, weigerte sich Moak, ein solches Ende zu akzeptieren. Also verfiel er in eine Fantasie, dass er und seine Crewmitglieder alle nacheinander die Leuchttürme fanden, ihre eigenen Häuser fanden und den Stachelrochen sicher verließen.",
+                "en": "Experiencing such losses, Moak refused to accept such an ending. So he fell into a fantasy, that he and his crew members all found the lighthouses one by one, found their own homes, and left the Stingray safely.",
+                "es": "Experimentando tales pérdidas, Moak se negó a aceptar tal final. Así que cayó en una fantasía, que él y los miembros de su tripulación encontraron los faros uno por uno, encontraron sus propios hogares, y dejaron la Mantarraya a salvo.",
+                "fr": "Mock a probablement eu des hallucinations. Il ne peut pas accepter cette fin, donc tout le monde a trouvé le phare et est descendu du « Manta » en toute sécurité...",
+                "ja": "モックは受け入れられない結末のせいで幻覚を見たのです。皆灯台と居場所を見つけ、無事に「マンタ」から降りたという幻覚を……",
+                "ko": "모크는 이런 결말을 받아들이지 못했을 거고 그로 인해 환상이 생겨나며, 선원들은 등대를 찾아 귀착점을 찾아 무사히 「데블 피쉬호」를 떠난 거예요",
+                "th": "พอเจอการสูญเสียมากขนาดนั้น โมคคงไม่อยากจะยอมรับจุดจบแบบนั้น เขาจึงจินตนาการว่าตัวเองและลูกเรือเจอประภาคารไปเรื่อยๆ แต่ละคนไดเจอบ้านของตัวเอง และลงจากเรือกระเบนไปได้อย่างปลอดภัย",
+                "zh-Hans": "莫克接受不了这样的结局，于是产生了幻想，船员们都找到了灯塔，找到了归宿，平安地离开了魔鬼鱼号。",
+                "zh-Hant": "莫克接受不了這樣的結局，於是產生了幻想，船員們都找到了燈塔，找到了歸宿，平安地離開了魔鬼魚號。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Am Ende war nur er selbst derjenige, der die Reise vollendete und für immer auf dem Meeresgrund mit dem Stachelrochen lag.",
+                "en": "In the end, only he himself completed the voyage and forever laid in that seabed with the Stingray.",
+                "es": "Al final, solo él mismo completó el viaje y se quedó para siempre en ese lecho marino con la Mantarraya.",
+                "fr": "En fin de compte... Il a coulé avec le navire à la fin de son voyage en solitaire.",
+                "ja": "そして……一人旅の最後に、船と一緒に海へ沈んだ……",
+                "ko": "마지막 남은 것은 그 혼자의 마지막 여행... 즉, 「데블 피쉬호」와 함께 영원히 그 해저에 가라앉은 거죠",
+                "th": "ในท้ายที่สุดก็มีเพียงเขาที่ล่องเรือจนจบ และได้หลับใหลอยู่ที่ก้นทะเลพร้อมกับเรือกระเบนตลอดไป",
+                "zh-Hans": "最后只剩下他自己旅行到了最后，与魔鬼鱼号一起永远沉没在那片海底。",
+                "zh-Hant": "最後只剩下他自己旅行到了最後，與魔鬼魚號一起永遠沉沒在那片海底。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bist du sicher, dass das wirklich passiert ist...?",
+                    "en": "Are you sure this is what truly happened...?",
+                    "es": "¿Estás seguro de que esto es lo que realmente sucedió...?",
+                    "fr": "C'est la vérité...",
+                    "ja": "これが真実……",
+                    "ko": "이게 진실인가요...?",
+                    "th": "นั่นคือเรื่องที่เกิดขึ้นจริงๆ เหรอ...",
+                    "zh-Hans": "这就是真相吗……",
+                    "zh-Hant": "這就是真相嗎……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich kann keine Garantien geben, da dies nur meine eigenen Spekulationen sind. Doch vergessene Geschichten zu entfalten, das ist es, was die Geschichte faszinierend macht.",
+                "en": "I cannot make any guarantees, as these are just my own speculations. Yet, unfolding forgotten stories, is what makes history fascinating.",
+                "es": "No puedo dar ninguna garantía, ya que estas son solo mis propias especulaciones. Sin embargo, desentrañar historias olvidadas, es lo que hace que la historia sea fascinante.",
+                "fr": "En effet, je ne peux pas le garantir... C'est juste une supposition. Cependant, révéler une histoire cachée à sa manière est une grande joie pour un chercheur d'histoire.",
+                "ja": "……これもあくまで、推測にすぎません。しかし、そうやって隠された物語を明らかにするのは、歴史の探求者にとって無上の喜びですね。",
+                "ko": "장담할 수 없어요. 어쩌면 이 모든 것이 제 추측일 수도 있고요. 하지만 먼지가 쌓인 이야기를 다시 여는 것, 그것이 바로 역사의 매혹적인 부분이겠죠",
+                "th": "ฉันก็ไม่สามารถยืนยันได้หรอก มันก็แค่ข้อสันนิษฐานของฉันเท่านั้น แต่การคลี่คลายเรื่องราวที่คนหลงลืมไปนี่ล่ะคือสิ่งที่ทำให้ประวัติศาสตร์มันน่าสนใจเอามากๆ",
+                "zh-Hans": "我也不敢保证，或许这些都只是我的猜测，但再次打开被尘封的故事，这就是历史令人着迷的地方。",
+                "zh-Hant": "我也不敢保證，或許這些都只是我的猜測，但再次打開被塵封的故事，這就是歷史令人著迷的地方。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie dem auch sei, ich bin dir sehr dankbar, dass du es mir erlaubt hast, die ganze Geschichte in ihrer Gesamtheit zu erleben. Du hast dir diese Belohnungen für deine Leidenschaft für die Geschichte verdient.",
+                "en": "Regardless, I'm really grateful for letting me see the whole story. Your passion for history truly deserves these rewards.",
+                "es": "En cualquier caso, estoy muy agradecido contigo por permitirme presenciar la historia completa en su totalidad. Te mereces estas recompensas por tu pasión por la historia.",
+                "fr": "Quoi qu'il en soit... Grâce à vous, j'ai pu comprendre toute l'histoire. C'est la récompense que vous, qui aimez l'histoire, devriez recevoir !",
+                "ja": "何にしても……あなたのお陰で事件の全貌を掴めました。これは、歴史を愛するあなたに相応しい報酬です！",
+                "ko": "결과가 어찌 되었든 사건의 전부를 저에게 보여주셔서 감사해요. 이건 역사를 사랑하는 방랑자가 마땅히 받아야 할 보수예요",
+                "th": "แต่ยังไงฉันก็ขอขอบคุณที่คุณทำให้ฉันได้รู้เรื่องราวทั้งหมดนี้ด้วย ความหลงใหลในประวัติศาสตร์ของคุณนี่ควรได้รับรางวัลตอบแทนนะ",
+                "zh-Hans": "不管怎么样，我都非常感谢你让我看到了事件的全部，这是热爱历史的你应得的报酬。",
+                "zh-Hant": "不管怎麼樣，我都非常感謝你讓我看到了事件的全部，這是熱愛歷史的你應得的報酬。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Grüße, Rover. Hast du die verbleibenden Leuchttürme gefunden?",
+                "en": "Greetings, Rover. Did you find the remaining lighthouses?",
+                "es": "Saludos, Errante. ¿Encontraste los faros restantes?",
+                "fr": "Bonjour. Avez-vous trouvé d'autres phares ?",
+                "ja": "こんにちは。他の灯台を見つけましたか？",
+                "ko": "방랑자, 안녕하세요, 다른 등대는 찾으셨나요?",
+                "th": "สวัสดีผู้พเนจร เจอประภาคารที่เหลือหรือยัง",
+                "zh-Hans": "漂泊者你好啊，有找到其他灯塔吗？",
+                "zh-Hant": "漂泊者你好啊，有找到其他燈塔嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast dem Historiker erzählt, was du in den Konsolen gefunden hast.",
+                "en": "You tell the historian what you found inside the consoles.",
+                "es": "Le contaste al historiador lo que encontraste dentro de las consolas.",
+                "fr": "(J'ai transmis toutes les informations trouvées dans le phare.)",
+                "ja": "（灯台の設備から見つけた全ての情報を伝えた）",
+                "ko": "이미 찾은 등대 단말기에서 발견한 모든 정보를 그에게 알려준다",
+                "th": "คุณเล่าให้นักประวัติศาสตร์ผู้นั้นฟังว่าเจออะไรในแผงควบคุมพวกนั้นบ้าง",
+                "zh-Hans": "将从已经找到的灯塔终端里发现的全部信息告诉他。",
+                "zh-Hant": "將從已經找到的燈塔終端裡發現的全部資訊告訴他。"
+              },
+              "id": 2
+            },
+            {
+              "text": {
+                "de": "Ist das so? Du hast es geschafft, Informationen von allen fünf Leuchtturmkonsolen zu finden, sagst du...!",
+                "en": "Is that so? You managed to find information from all five lighthouse consoles you say...!",
+                "es": "¿Es eso cierto? ¿Lograste encontrar información de todas las cinco consolas de los faros, dices...!",
+                "fr": "Vous avez rassemblé toutes les informations des cinq phares... !",
+                "ja": "五つの灯台全ての情報を集めたですと……！",
+                "ko": "이미 5개의 등대 터미널에 대한 정보를 모두 찾으셨다고요...?",
+                "th": "งั้นเหรอ คุณบอกว่าคุณได้ข้อมูลจากแผงควบคุมในประภาคารทั้งหาแห่งมาแล้วเหรอ...!",
+                "zh-Hans": "你已经找到全部5个灯塔终端的信息了吗……！",
+                "zh-Hant": "你已經找到全部5個燈塔終端的資訊了嗎……！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deine Leidenschaft für Geschichte ist viel größer als die meiner eigenen Schüler. Das bringt mir Tränen in die Augen.",
+                "en": "Your passion for history is much greater than that of my own pupils. This brings tears to my eyes.",
+                "es": "Tu pasión por la historia es mucho mayor que la de mis propios alumnos. Esto me trae lágrimas a los ojos.",
+                "fr": "Face à cette passion pour l'histoire, plus que n'importe lequel de mes élèves... Je suis ému !",
+                "ja": "私が知るどの生徒よりも、強い歴史への愛と情熱を、あなたはお持ちです……涙が！溢れ出る！",
+                "ko": "역사에 대한 열정이 제 학생들 보다 높을 줄이야... 감격에 눈물이 날 지경이에요",
+                "th": "ความหลงใหลในประวัติศาสตร์ของคุณอาจจะมากกว่าลูกศิษย์ของฉันด้วยซ้ำ น้ำตาจะไหลเลย",
+                "zh-Hans": "你对历史的热爱真是比我的学生要高多了，我眼泪都要掉下来了。",
+                "zh-Hant": "你對歷史的熱愛真是比我的學生要高多了，我眼淚都要掉下來了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Können wir jetzt den Standort des Stachelrochens finden?",
+                    "en": "Are we now able to find the location of the Stingray?",
+                    "es": "¿Ahora podemos encontrar la ubicación de la Mantarraya?",
+                    "fr": "Pouvons-nous chercher le « Manta » avec ça ?",
+                    "ja": "これで「マンタ」号を探せる？",
+                    "ko": "「데블 피쉬호」의 위치를 찾을 수 있을까요?",
+                    "th": "เราสามารถหาตำแหน่งของเรือกระเบนได้แล้วเหรอ",
+                    "zh-Hans": "能找到魔鬼鱼号的所在吗？",
+                    "zh-Hant": "能找到魔鬼魚號的所在嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich, diese Informationen sind mehr als ausreichend, um den Aufenthaltsort des Stachelrochens zu berechnen. Aber es gibt etwas Seltsames daran...",
+                "en": "Of course, this information is more than adequate for me to calculate the Stingray's whereabouts. But there is something strange about this...",
+                "es": "Por supuesto, esta información es más que adecuada para que yo pueda calcular la ubicación de la Mantarraya. Pero hay algo extraño en esto...",
+                "fr": "Ah, c'est suffisant. Mais c'est assez...",
+                "ja": "はい、十分です。しかし、これは……",
+                "ko": "네, 이 정보들이라면 제가 「데블 피쉬호」의 행방을 짐작하기에는 충분해요. 하지만 뭔가 좀 이상해요...",
+                "th": "แน่นอน ข้อมูลพวกนี้มากพอให้ฉันคำนวณตำแหน่งของเรือกระเบนได้แล้วล่ะ แต่ว่ามันมีบางอย่างผิดปกติอยู่...",
+                "zh-Hans": "可以，这些信息足够我推算出魔鬼鱼号的下落了，但是有点奇怪……",
+                "zh-Hant": "可以，這些資訊足夠我推算出魔鬼魚號的下落了，但是有點奇怪……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist es? Du kannst es nicht finden?",
+                    "en": "What is it? You can't find it?",
+                    "es": "¿Qué es? ¿No puedes encontrarlo?",
+                    "fr": "Alors, vous ne l'avez pas trouvé ?",
+                    "ja": "まだ探せなさそう？",
+                    "ko": "무슨 일이죠? 설마 못 찾는 건가요?",
+                    "th": "อะไรเหรอ คุณหามันไม่เจองั้นเหรอ",
+                    "zh-Hans": "发生什么了吗？找不到吗？",
+                    "zh-Hant": "發生什麼了嗎？找不到嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein. Es ist nur so, dass es nicht mehr wert ist, danach zu suchen.",
+                "en": "No. It's just that it is not worth searching for it anymore.",
+                "es": "No. Es solo que ya no vale la pena buscarlo.",
+                "fr": "Non. Pour être précis, « ce n'est pas nécessaire ».",
+                "ja": "……正確に言うと「その必要はありません」。",
+                "ko": "아니요, 굳이 찾아갈 필요가 없을 것 같아요",
+                "th": "ไม่ใช่หรอก แค่ว่าการตามหามันอาจจะไม่คุ้มแล้วน่ะสิ",
+                "zh-Hans": "不是的，是没有必要去找了。",
+                "zh-Hant": "不是的，是沒有必要去找了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gemäß diesen Koordinaten kann ich mit Sicherheit sagen, dass dieser Stachelrochen dasselbe Schiff ist, das wir vor einigen Jahren in der Nähe des Hafens des Jaulenden Sumpfes geborgen haben.",
+                "en": "According to those coordinates, I can say with confidence that this Stingray is the same ship that we salvaged near the harbor of the Whining Aix's Mire a few years prior.",
+                "es": "Según esas coordenadas, puedo decir con confianza que esta Mantarraya es el mismo barco que rescatamos cerca del puerto del Pantano de Aix hace unos años.",
+                "fr": "En comparant les coordonnées... Ce « Manta » est sans aucun doute le navire coulé que nous avons trouvé près de la Tourbe piaulante. Il y a quelques années.",
+                "ja": "一連の座標と照らし合わせると……この「マンタ」号は、数年前怨鳥の沼で引き揚げられた沈没船に間違いないでしょう。",
+                "ko": "그 좌표 정보에 따르면, 전 이 「데블 피쉬호」가 수년 전 울음새 늪 지역의 항구 근처에서 인양된 침몰선이라고 확신할 수 있어요",
+                "th": "อิงจากพิกัดเหล่านี้ ฉันมั่นใจว่าเรือกระเบนคือเรือลำเดียวกันกับลำที่เรากู้ซากมาได้แถวท่าเรือของหนองปักษาร่ำไห้เมื่อสองสามปีก่อนหน้านี้น่ะ",
+                "zh-Hans": "根据那些坐标信息，我可以确定这艘魔鬼鱼号，就是数年前我们在怨鸟泽地区港口附近打捞到的一艘沉船。",
+                "zh-Hant": "根據那些座標資訊，我可以確定這艘魔鬼魚號，就是數年前我們在怨鳥澤地區港口附近打撈到的一艘沉船。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Wrack fanden wir einige der Logbücher der Besatzung, obwohl in Stücke gebrochen, konnten wir sie dennoch mit den Geschichten in den Konsolen verknüpfen.",
+                "en": "Inside the wreckage, we found some of the crew's logs, although broken into pieces, we still managed to link them with the stories found in the consoles.",
+                "es": "Dentro de los restos, encontramos algunos de los registros de la tripulación, aunque rotos en pedazos, aún logramos vincularlos con las historias encontradas en las consolas.",
+                "fr": "Il y a des traces de la vie des marins à l'intérieur, et d'après ce que je vois... Cela correspond à l'information que vous avez fournie.",
+                "ja": "中に船員たちの痕跡が一部残されており……あなたが提供した情報とも概ね一致します。",
+                "ko": "침몰한 배 위에서 저희는 일부 선원들의 생활 기록을 발견했어요. 비록 산산조각이 나긴 했지만, 기본적으로 등대 끝에서 발견된 이야기와 연결되고 있어요",
+                "th": "ในซากเรือลำนั้น เราพบบันทึกของลูกเรือที่โดนฉีกเป็นชิ้นๆ แต่ก็เอามาปะติดปะต่อกับเรื่องราวที่เจอในแผงควบคุมได้",
+                "zh-Hans": "在沉船上面我们发现了一些船员的生活记录，虽然很破碎，但基本上能够和灯塔终端里发现的故事联系上。",
+                "zh-Hant": "在沉船上面我們發現了一些船員的生活記錄，雖然很破碎，但基本上能夠和燈塔終端裡發現的故事聯繫上。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also waren Moak und seine Besatzung alle sicher?",
+                    "en": "So were Moak and his crew all safe?",
+                    "es": "¿Entonces Moak y su tripulación estaban todos a salvo?",
+                    "fr": "Et qu'en est-il de Mock et des autres ?",
+                    "ja": "じゃあ、モックたちは？",
+                    "ko": "모크와 다른 사람들은 모두 무사한가요?",
+                    "th": "สรุปแล้วโมคกับลูกเรือทุกคนปลอดภัยดีใช่ไหม",
+                    "zh-Hans": "所以莫克他们都平安无事吗？",
+                    "zh-Hant": "所以莫克他們都平安無事嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Leider haben wir auch sechs Körper im Inneren entdeckt... Basierend auf den Informationen, die wir haben, gehören sie zu Moak und seinen Besatzungsmitgliedern.",
+                "en": "Unfortunately, we also discovered six bodies inside... Based on the information we have, they belong to Moak and his crew members.",
+                "es": "Desafortunadamente, también descubrimos seis cuerpos dentro... Basándonos en la información que tenemos, pertenecen a Moak y a los miembros de su tripulación.",
+                "fr": "Malheureusement... Six corps ont été trouvés avec le navire. C'est sans doute Mock et « les marins ».",
+                "ja": "残念ながら……船と一緒に、六つの遺体が発見されました。モックと「船員たち」と考えてほぼ間違いないでしょうね。",
+                "ko": "유감스럽네요... 저희가 침몰선에서 여섯 구의 시신을 찾았는데... 현재 정보로 볼 때, 그들이 바로 모크와 그의 선원들 같아요",
+                "th": "น่าเสียดายที่พวกเราเจอร่างหกร่างด้านใน... จากข้อมูลที่เรามีอยู่ ร่างพวกนั้นคือโมคกับลูกเรือของเขา",
+                "zh-Hans": "很遗憾，我们在这艘沉船上找到了6具遗体……按照现在的信息来看，它们就是莫克和他的那些船员们。",
+                "zh-Hant": "很遺憾，我們在這艘沉船上找到了6具遺體……按照現在的資訊來看，它們就是莫克和他的那些船員們。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie konnte das passieren?",
+                    "en": "How could this be?",
+                    "es": "¿Cómo podría ser esto?",
+                    "fr": "Quoi !",
+                    "ja": "そんな！",
+                    "ko": "어떻게 그럴 수 있죠?",
+                    "th": "เป็นไปได้ยังไง",
+                    "zh-Hans": "怎么会这样？？",
+                    "zh-Hant": "怎麼會這樣？？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Weitere Untersuchungen ergaben, dass der Tod der anderen fünf Mitglieder noch weiter zurückliegt als die Zeit, als Moak seine erste Aufnahme im Leuchtturm machte.",
+                "en": "Further investigations found that the deaths of the other five members date back even further than the time when Moak made his first recording in the lighthouse.",
+                "es": "Investigaciones posteriores encontraron que las muertes de los otros cinco miembros se remontan aún más que el momento en que Moak hizo su primera grabación en el faro.",
+                "fr": "Ce n'est pas tout. L'heure de la mort des cinq autres a été établie bien avant que Mock n'ait téléchargé l'enregistrement dans le phare.",
+                "ja": "それだけではありません。検査の結果、他の五人の死亡時間は、モックが最初に灯台で録音をアップロードした時点より遥かに早いと判明しました。",
+                "ko": "저희가 조사한 바로는 다른 다섯 구의 시신 사망 시점은 모크가 처음 등대에 기록한 시간보다 훨씬 앞서 있었어요",
+                "th": "จากการที่เราตรวจสอบเพิ่มเติม เราพบว่าร่างอื่นอีกห้าร่างนั้นตายมานานมากแล้ว ก่อนที่จะโมคจะเริ่มบันทึกเสียงครั้งแรกในประภาคารด้วยซ้ำ",
+                "zh-Hans": "我们调查发现，其他5具遗体的去世时间，甚至比莫克第一次记录在灯塔的时间还要更早。",
+                "zh-Hant": "我們調查發現，其他5具遺體的去世時間，甚至比莫克第一次記錄在燈塔的時間還要更早。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit anderen Worten, Moak war die ganze Zeit allein auf See unterwegs, und seine Besatzungsmitglieder waren schon lange den TDs zum Opfer gefallen...",
+                "en": "In other words, Moak had been sailing on the sea alone all this time, and his crew members had long since fallen victim to the TDs...",
+                "es": "En otras palabras, Moak había estado navegando en el mar solo todo este tiempo, y sus miembros de la tripulación habían caído víctimas de las DT hace mucho tiempo...",
+                "fr": "En d'autres termes. Il a probablement voyagé seul. « Les marins » sont depuis longtemps...",
+                "ja": "つまり……彼は一人で船旅をしていたのでしょう。きっと「船員たち」はとっくに……",
+                "ko": "즉, 모크는 처음부터 끝까지 혼자서 바다를 항해했고, 그의 선원들은 사실 오래전에 잔상에게...",
+                "th": "หรือก็คือโมคนั้นแล่นเรืออยู่คนเดียวมาโดยตลอด และลูกเรือของเขาก็ตกเป็นเหยื่อของทาเซ็ตดิสคอร์ดมาตั้งแต่ต้น...",
+                "zh-Hans": "也就是说，莫克自始至终都是一个人航行在大海之上，他的船员其实早就被残象……",
+                "zh-Hant": "也就是說，莫克自始至終都是一個人航行在大海之上，他的船員其實早就被殘象……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach solchen Verlusten konnte Moak ein solches Ende nicht akzeptieren. Also verfiel er in eine Fantasie, in der er und seine Crewmitglieder nacheinander alle Leuchttürme fanden, ihre eigenen Häuser fanden und den Stachelrochen sicher verließen.",
+                "en": "Experiencing such losses, Moak refused to accept such an ending. So he fell into a fantasy, that he and his crew members all found the lighthouses one by one, found their own homes, and left the Stingray safely.",
+                "es": "Tras sufrir tales pérdidas, Moak se negó a aceptar tal final. Así que se sumergió en una fantasía, en la que él y su tripulación encontraban los faros uno a uno, encontraban sus propios hogares y abandonaban la Mantarraya a salvo.",
+                "fr": "Mock a probablement eu des hallucinations. Il ne peut pas accepter cette fin, donc tout le monde a trouvé le phare et est descendu du « Manta » en toute sécurité...",
+                "ja": "モックは受け入れられない結末のせいで幻覚を見たのです。皆灯台と居場所を見つけ、無事に「マンタ」から降りたという幻覚を……",
+                "ko": "모크는 이런 결말을 받아들이지 못했을 거고 그로 인해 환상이 생겨나며, 선원들은 등대를 찾아 귀착점을 찾아 무사히 「데블 피쉬호」를 떠난 거예요",
+                "th": "พอเจอการสูญเสียมากขนาดนั้น โมคคงไม่อยากจะยอมรับจุดจบแบบนั้น เขาจึงจินตนาการว่าตัวเองและลูกเรือเจอประภาคารไปเรื่อยๆ แต่ละคนไดเจอบ้านของตัวเอง และลงจากเรือกระเบนไปได้อย่างปลอดภัย",
+                "zh-Hans": "莫克接受不了这样的结局，于是产生了幻想，船员们都找到了灯塔，找到了归宿，平安地离开了魔鬼鱼号。",
+                "zh-Hant": "莫克接受不了這樣的結局，於是產生了幻想，船員們都找到了燈塔，找到了歸宿，平安地離開了魔鬼魚號。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Am Ende war er der Einzige, der die Reise beendete und für immer auf dem Meeresgrund mit dem Stachelrochen lag.",
+                "en": "In the end, only he himself completed the voyage and forever laid in that seabed with the Stingray.",
+                "es": "Al final, solo él mismo completó el viaje y se quedó para siempre en ese lecho marino con la Mantarraya.",
+                "fr": "En fin de compte... Il a coulé avec le navire à la fin de son voyage en solitaire.",
+                "ja": "そして……一人旅の最後に、船と一緒に海へ沈んだ……",
+                "ko": "마지막 남은 것은 그 혼자의 마지막 여행... 즉, 「데블 피쉬호」와 함께 영원히 그 해저에 가라앉은 거죠",
+                "th": "ในท้ายที่สุดก็มีเพียงเขาที่ล่องเรือจนจบ และได้หลับใหลอยู่ที่ก้นทะเลพร้อมกับเรือกระเบนตลอดไป",
+                "zh-Hans": "最后只剩下他自己旅行到了最后，与魔鬼鱼号一起永远沉没在那片海底。",
+                "zh-Hant": "最後只剩下他自己旅行到了最後，與魔鬼魚號一起永遠沉沒在那片海底。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bist du sicher, dass das wirklich passiert ist...?",
+                    "en": "Are you sure this is what truly happened...?",
+                    "es": "¿Estás seguro de que esto es realmente lo que sucedió...?",
+                    "fr": "Est-ce la vérité...",
+                    "ja": "これが真実……",
+                    "ko": "이게 진실인가요...?",
+                    "th": "นั่นคือเรื่องที่เกิดขึ้นจริงๆ เหรอ...",
+                    "zh-Hans": "这就是真相吗……",
+                    "zh-Hant": "這就是真相嗎……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich kann keine Garantien geben, da das nur meine eigenen Vermutungen sind. Doch das Aufdecken vergessener Geschichten, das ist es, was die Geschichte faszinierend macht.",
+                "en": "I cannot make any guarantees, as these are just my own speculations. Yet, unfolding forgotten stories, is what makes history fascinating.",
+                "es": "No puedo dar ninguna garantía, ya que estas son solo mis propias especulaciones. Sin embargo, desentrañar historias olvidadas es lo que hace que la historia sea fascinante.",
+                "fr": "En effet, je ne peux pas le garantir... C'est juste une supposition. Cependant, révéler une histoire cachée à sa manière est une grande joie pour un chercheur d'histoire.",
+                "ja": "……これもあくまで、推測にすぎません。しかし、そうやって隠された物語を明らかにするのは、歴史の探求者にとって無上の喜びですね。",
+                "ko": "장담할 수 없어요. 어쩌면 이 모든 것이 제 추측일 수도 있고요. 하지만 먼지가 쌓인 이야기를 다시 여는 것, 그것이 바로 역사의 매혹적인 부분이겠죠",
+                "th": "ฉันก็ไม่สามารถยืนยันได้หรอก มันก็แค่ข้อสันนิษฐานของฉันเท่านั้น แต่การคลี่คลายเรื่องราวที่คนหลงลืมไปนี่ล่ะคือสิ่งที่ทำให้ประวัติศาสตร์มันน่าสนใจเอามากๆ",
+                "zh-Hans": "我也不敢保证，或许这些都只是我的猜测，但再次打开被尘封的故事，这就是历史令人着迷的地方。",
+                "zh-Hant": "我也不敢保證，或許這些都只是我的猜測，但再次打開被塵封的故事，這就是歷史令人著迷的地方。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In jedem Fall bin ich dir sehr dankbar, dass du es mir erlaubt hast, die gesamte Geschichte in ihrer Gesamtheit zu beobachten. Du hast dir diese Belohnungen für deine Leidenschaft für die Geschichte verdient.",
+                "en": "Regardless, I'm really grateful for letting me see the whole story. Your passion for history truly deserves these rewards.",
+                "es": "En cualquier caso, estoy muy agradecido contigo por permitirme presenciar la historia completa en su totalidad. Mereces estas recompensas por tu pasión por la historia.",
+                "fr": "Quoi qu'il en soit... Grâce à vous, j'ai pu comprendre toute l'histoire. C'est la récompense que vous, qui aimez l'histoire, devriez recevoir !",
+                "ja": "何にしても……あなたのお陰で事件の全貌を掴めました。これは、歴史を愛するあなたに相応しい報酬です！",
+                "ko": "결과가 어찌 되었든 사건의 전부를 저에게 보여주셔서 감사해요. 이건 역사를 사랑하는 방랑자가 마땅히 받아야 할 보수예요",
+                "th": "แต่ยังไงฉันก็ขอขอบคุณที่คุณทำให้ฉันได้รู้เรื่องราวทั้งหมดนี้ด้วย ความหลงใหลในประวัติศาสตร์ของคุณนี่ควรได้รับรางวัลตอบแทนนะ",
+                "zh-Hans": "不管怎么样，我都非常感谢你让我看到了事件的全部，这是热爱历史的你应得的报酬。",
+                "zh-Hant": "不管怎麼樣，我都非常感謝你讓我看到了事件的全部，這是熱愛歷史的你應得的報酬。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "parentId": 30,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 31,
+      "type": "Action",
+      "dialogs": []
+    },
+    {
+      "id": 33,
+      "parentId": 31,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 34,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002579,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录31",
+          "areaId": 301,
+          "position": {
+            "x": -31838,
+            "y": 99702,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 6,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo Rover, erinnerst du dich noch an mich? Ich bin ein Historiker der Kaiserlichen Akademie.",
+                "en": "Hello Rover, do you still remember me? I'm a historian from the Imperial Academy.",
+                "es": "Hola Errante, ¿aún me recuerdas? Soy un historiador de la Academia Imperial.",
+                "fr": "Allo ? Vous vous souvenez ? Oui, je suis l'historien de l'affaire du phare.",
+                "ja": "もしもし？覚えていますか？はい、灯台について調べていた歴史学者です。",
+                "ko": "여보세요? 방랑자 저를 아직 기억하시나요? 저 그 연구원의 역사학자예요",
+                "th": "สวัสดีผู้พเนจร ยังจำกันได้ไหม นักประวัติศาสตร์จากสถาบันหลวงไงล่ะ",
+                "zh-Hans": "喂喂？漂泊者你还记得吗？我是研究院那位历史学家。",
+                "zh-Hant": "喂喂？漂泊者你還記得嗎？我是研究院那位歷史學家。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es scheint, du hast alle fünf Leuchttürme aktiviert. Ich bin sicher, du hast eine Menge über den Teufelsfisch gelernt.",
+                "en": "It appears you have activated all five lighthouses. I'm sure you must have learned a great deal about the Stingray.",
+                "es": "Parece que has activado los cinco faros. Estoy seguro de que debes haber aprendido mucho sobre la Mantarraya.",
+                "fr": "J'ai confirmé que les cinq phares sont tous de nouveau opérationnels. Nous avons maintenant toutes les informations sur le « Manta » !",
+                "ja": "五つの灯台全ての再稼働を確認しました。これで「マンタ」号に関する情報も、全て手に入れたことになりますね！",
+                "ko": "저는 방금 방랑자가 5개의 등대를 모두 활성화했다는 걸 발견했어요. 분명 「데블 피쉬호」에 대한 모든 정보를 획득하셨겠죠?",
+                "th": "ดูเหมือนว่าคุณจะเปิดการทำงานของประภาคารทั้งห้าแห่งได้แล้วสินะ คงจะรู้อะไรหลายๆ อย่างเกี่ยวกับเรือกระเบนแล้ว",
+                "zh-Hans": "我刚刚发现你已经激活了全部5座灯塔，想必已经了解魔鬼鱼号的全部信息了吧？",
+                "zh-Hant": "我剛剛發現你已經啟動了全部5座燈塔，想必已經了解魔鬼魚號的全部資訊了吧？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte, komm zurück in die Stadt und erzähl mir alles, wenn du Zeit hast.",
+                "en": "Please, come back to the city and tell me all about them when you have the time to spare.",
+                "es": "Por favor, vuelve a la ciudad y cuéntame todo sobre ellos cuando tengas tiempo.",
+                "fr": "J'aimerais que vous me racontiez l'histoire quand vous reviendrez à Jinzhou !",
+                "ja": "今度、今州に帰って来た時、その顛末を教えてください！",
+                "ko": "시간이 날 때 금주에 오시면 저에게 꼭 알려주셔야 해요!",
+                "th": "ถ้าพอจะมีเวลาว่าง ช่วยกลับเมืองมาเล่าเรื่องทั้งหมดให้ฉันฟังด้วยนะ",
+                "zh-Hans": "有空的话记得回来今州一趟，把全部的信息告诉我吧。",
+                "zh-Hant": "有空的話記得回來今州一趟，把全部的資訊告訴我吧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht können wir dieses Mal endlich dieses unbekannte Stück Geschichte lösen!",
+                "en": "Maybe this time, we can finally solve this unknown piece of history!",
+                "es": "¡Quizás esta vez, finalmente podamos resolver esta pieza desconocida de la historia!",
+                "fr": "Peut-être on peut résoudre le mystère caché derrière cette histoire !",
+                "ja": "ひょっとしたら、この歴史の裏に隠された謎を解けるかもしれませんよ！",
+                "ko": "어쩌면 우리는 이 알려지지 않은 역사를 정말로 풀 수 있을지도 몰라요!",
+                "th": "ไม่แน่ว่าครั้งนี้เราอาจไขปริศนาประวัติศาสตร์ที่ยังไม่ถูกเปิดเผยได้เสียที!",
+                "zh-Hans": "说不定我们真的能解开这段不为人知的历史呢！",
+                "zh-Hant": "說不定我們真的能解開這段不為人知的歷史呢！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 920,
+                "name": {
+                  "zh-Hans": "历史学家"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

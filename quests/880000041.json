@@ -1,0 +1,577 @@
+{
+  "id": 880000041,
+  "key": "短支线2整点鱼条",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Ein paar Fische fangen",
+    "en": "Go Get Some Fish",
+    "es": "A por los pescados",
+    "fr": "Chasser les poissons",
+    "ja": "魚スティックの時間",
+    "ko": "Go Get Some Fish",
+    "th": "ไปตกปลาสักตัว",
+    "zh-Hans": "整点鱼条",
+    "zh-Hant": "整點魚條"
+  },
+  "desc": {
+    "de": "Auf zum großen Fang!",
+    "en": "It's fish-hunting time!",
+    "es": "¡Vamos a pescar algo!",
+    "fr": "Il est temps de chasser les poissons !",
+    "ja": "さあ、海へ魚スティックを調達しに行こう！",
+    "ko": "이제 바다로 가서 생선 좀 건져올 때가 됐구만!",
+    "th": "ได้เวลาตามล่าหาปลาแล้ว!",
+    "zh-Hans": "是时候去海里整点鱼条了！",
+    "zh-Hant": "是時候去海裡整點魚條了！"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gib Marco den Fisch",
+        "en": "Give the fish to Marco",
+        "es": "Dale el pez a Marco.",
+        "fr": "Donner le poisson à Marco",
+        "ja": "魚肉をマルコに渡す",
+        "ko": "생선 살코기를 마르코에게 제출하기",
+        "th": "มอบปลาให้มาร์โก",
+        "zh-Hans": "将鱼肉交给马尔科",
+        "zh-Hant": "將魚肉交給馬爾科"
+      },
+      "entities": [
+        {
+          "entityId": 880000226,
+          "mapId": 8,
+          "blueprintType": "branch2.1_活动主线_DA_MaleM8_2",
+          "name": "TsEntity_157_2_1船工马尔科",
+          "areaId": 28002,
+          "position": {
+            "x": 727490,
+            "y": 352750,
+            "z": 838
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880000227,
+          "mapId": 8,
+          "blueprintType": "Animal008",
+          "name": "TsEntity_短支线2码头的猫于连",
+          "areaId": 28002,
+          "position": {
+            "x": 727600,
+            "y": 352750,
+            "z": 933
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.1航海活动短支线",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun? Hast du Fisch gefangen?",
+                "en": "Well? Did you catch any fish?",
+                "es": "¿Y bien? ¿Has pescado algo?",
+                "fr": "Alors ? Ça a mordu ?",
+                "ja": "どう？魚スティックを持ってきたのか？",
+                "ko": "어때? 생선은 구했어?",
+                "th": "แล้ว... คุณจับปลาได้มั้ย?",
+                "zh-Hans": "怎么样？你带来鱼条了吗？",
+                "zh-Hant": "怎麼樣？你帶來魚條了嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100043,
+                "name": {
+                  "zh-Hans": "马尔科"
+                },
+                "entity": {
+                  "entityId": 880000226,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动主线_DA_MaleM8_2",
+                  "name": "TsEntity_157_2_1船工马尔科",
+                  "areaId": 28002,
+                  "position": {
+                    "x": 727490,
+                    "y": 352750,
+                    "z": 838
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hier.",
+                    "en": "Here you go.",
+                    "es": "Aquí tienes.",
+                    "fr": "Voilà.",
+                    "ja": "これあげる。",
+                    "ko": "여기요",
+                    "th": "เอาไปสิ",
+                    "zh-Hans": "给你鱼。",
+                    "zh-Hant": "給你魚。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, vielen Dank, ich versuche es sofort! Oh, Julien. Komm her, Julien. Hol deinen Fisch.",
+                "en": "Oh, thank you, I'll give it a try right now! Oh, Julien. Come here, Julien. Come get your fishy.",
+                "es": "¡Oh, gracias! ¡Vamos a probar! ¡Julien! ¡Julien! ¡Ven aquí, Julien! ¡Toma tu pescado!",
+                "fr": "Oh, merci, je vais essayer tout de suite ! Julien. Viens ici, Julien. Viens chercher ton petit poisson.",
+                "ja": "ありがとう、さっそく試してみるよ！ジュリアン、ほら、君が大好きな魚スティックだよ。",
+                "ko": "고마워, 한번 해볼게! 줄리엔, 착하지? 네가 제일 좋아하는 생선이 왔어",
+                "th": "โอ้ ขอบคุณมาก เดี๋ยวฉันจะลองให้ดูนะ! โอ้ Julien มานี่สิ Julien มารับปลาของแกไปสิ",
+                "zh-Hans": "谢谢你，我这就试试看！于连于连，乖于连，你的鱼条来啦。",
+                "zh-Hant": "謝謝你，我這就試試看！于連于連，乖于連，你的魚條來啦。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100043,
+                "name": {
+                  "zh-Hans": "马尔科"
+                },
+                "entity": {
+                  "entityId": 880000226,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动主线_DA_MaleM8_2",
+                  "name": "TsEntity_157_2_1船工马尔科",
+                  "areaId": 28002,
+                  "position": {
+                    "x": 727490,
+                    "y": 352750,
+                    "z": 838
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Miau!!",
+                "en": "Meow!!",
+                "es": "¡*Miau*!",
+                "fr": "Miaou !!!",
+                "ja": "ニャー！！",
+                "ko": "야옹!!",
+                "th": "เมี้ยว!",
+                "zh-Hans": "喵！！",
+                "zh-Hant": "喵！！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100044,
+                "name": {
+                  "zh-Hans": "于连"
+                },
+                "entity": {
+                  "entityId": 880000227,
+                  "mapId": 8,
+                  "blueprintType": "Animal008",
+                  "name": "TsEntity_短支线2码头的猫于连",
+                  "areaId": 28002,
+                  "position": {
+                    "x": 727600,
+                    "y": 352750,
+                    "z": 933
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Julien nimmt den Fisch freudig an, verschlingt ihn in Sekunden und lässt nichts zurück als Gräten. Dann schmiegt er sich dankbar an dich.",
+                "en": "Julien happily takes the fish and devours it in seconds, leaving nothing but bones. He then rubs himself against your hand to show his gratitude.",
+                "es": "Julien toma felizmente el pescado y lo devora en segundos, sin dejar nada más que espinas. Luego se frota contra tu mano para mostrarte su gratitud.",
+                "fr": "Julien prend joyeusement le poisson et le dévore en quelques secondes, ne laissant que les arêtes. Il se frotte ensuite contre votre main pour vous montrer sa gratitude.",
+                "ja": "ジュリアンは嬉しそうに魚スティックを受け取り、あっという間に平らげた。その後、ジュリアンは感謝の気持ちを表すかのように手に摺り寄せてきた。",
+                "ko": "줄리엔은 생선을 받자 신나하며 순식간에 먹어치우고는, 당신의 손에 얼굴을 비비며 감사 표시를 한다",
+                "th": "Julien รับปลาไปอย่างมีความสุขและกินหมดในเวลาไม่กี่วินาทีจนเหลือเพียงก้าง จากนั้นก็ถูตัวกับมือของคุณเพื่อแสดงความขอบคุณ",
+                "zh-Hans": "你看到于连开心地接过鱼条，没一会儿就吃得干干净净。而后，于连过来蹭蹭你的手表示感谢。",
+                "zh-Hant": "你看到于連開心地接過魚條，很快吃得乾乾淨淨。而後，于連過來蹭蹭你的手表示感謝。"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "Oh, hast du gesehen, wie er das Ding verschlungen hat?",
+                "en": "Oh, did you see the way he was munching at that thing?",
+                "es": "¡Vaya! ¿Viste cómo devoró esa cosa?",
+                "fr": "Ouah, tu as vu comment il s'est enfilé ce truc ?",
+                "ja": "おお、これは……すごく美味しそうに食べてるな！",
+                "ko": "세상에... 엄청 잘 먹잖아!",
+                "th": "โอ้ คุณเห็นวิธีที่เขากินมั้ย?",
+                "zh-Hans": "天哪，噢……他吃得好开心！",
+                "zh-Hant": "天吶……他吃得好開心！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100043,
+                "name": {
+                  "zh-Hans": "马尔科"
+                },
+                "entity": {
+                  "entityId": 880000226,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动主线_DA_MaleM8_2",
+                  "name": "TsEntity_157_2_1船工马尔科",
+                  "areaId": 28002,
+                  "position": {
+                    "x": 727490,
+                    "y": 352750,
+                    "z": 838
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kann keine Leckerei ablehnen.",
+                    "en": "Can't say no to a snack.",
+                    "es": "No puede decir que no a un buen bocado.",
+                    "fr": "Impossible de résister à un en-cas.",
+                    "ja": "{Male=魚スティックだもんな。;Female=魚スティックだもんね。}",
+                    "ko": "생선이니까요",
+                    "th": "ไม่มีทางปฏิเสธของว่างได้หรอก",
+                    "zh-Hans": "毕竟是鱼条。",
+                    "zh-Hant": "畢竟是魚條。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es ist eben sein Kronjuwel.",
+                    "en": "It's their crown jewel, after all.",
+                    "es": "Es su joya de la corona, después de todo.",
+                    "fr": "C'est le joyau de leur vie, après tout.",
+                    "ja": "{Male=猫の誇りだもんな。;Female=猫の誇りだもんね。}",
+                    "ko": "고양이에겐 최고의 상과 같으니까요",
+                    "th": "ปลาคือมงกุฎล้ำค่าแห่งชีวิตของพวกเขานี่นะ",
+                    "zh-Hans": "毕竟是猫之荣耀。",
+                    "zh-Hant": "畢竟是貓之榮耀。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, ja! Vielen Dank! Dank dir hab ich Juliens katerhaften Ambitionen erkannt!",
+                "en": "Yes, yes! Thank you so much. You helped me realize Julien's real feline aspiration!",
+                "es": "¡Sí, sí! Muchas gracias. ¡Me ayudaste a cumplir el auténtico sino felino de Julien!",
+                "fr": "Oh que oui ! Merci beaucoup. Tu m'as aidé à me rendre compte de la véritable aspiration féline de Julien !",
+                "ja": "そうか、そうか！ありがとう、君のおかげでジュリアンの猫生設計が分かったよ！",
+                "ko": "역시 그런 거였어! 줄리엔의 진정한 냥생의 야망을 알려줘서 고마워!",
+                "th": "ใช่ ใช่! ขอบคุณมาก คุณทำให้ฉันรู้ว่าความปรารถนาแท้จริงของ Julien ฐานะแมวคืออะไร!",
+                "zh-Hans": "是的，是的！谢谢你，你让我知道了于连的猫生志向！",
+                "zh-Hant": "是的，是的！謝謝你，你讓我知道了于連的貓生志向！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100043,
+                "name": {
+                  "zh-Hans": "马尔科"
+                },
+                "entity": {
+                  "entityId": 880000226,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动主线_DA_MaleM8_2",
+                  "name": "TsEntity_157_2_1船工马尔科",
+                  "areaId": 28002,
+                  "position": {
+                    "x": 727490,
+                    "y": 352750,
+                    "z": 838
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier. Hast du dir verdient!",
+                "en": "Here. You earned these!",
+                "es": "Toma. ¡Te lo has ganado!",
+                "fr": "Voilà, tu les as bien mérités !",
+                "ja": "ありがとう。これが報酬だ！",
+                "ko": "자, 여기 보수야!",
+                "th": "เอาไปสิ คุณสมควรได้รับสิ่งนี้!",
+                "zh-Hans": "给，这些是你的报酬！",
+                "zh-Hant": "給，這些是你的報酬！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 100043,
+                "name": {
+                  "zh-Hans": "马尔科"
+                },
+                "entity": {
+                  "entityId": 880000226,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动主线_DA_MaleM8_2",
+                  "name": "TsEntity_157_2_1船工马尔科",
+                  "areaId": 28002,
+                  "position": {
+                    "x": 727490,
+                    "y": 352750,
+                    "z": 838
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Miau, miau!",
+                "en": "Meow, meow!",
+                "es": "¡*Miau, miau*!",
+                "fr": "Miaou, miaou !",
+                "ja": "ニャーニャー！",
+                "ko": "야옹야옹!",
+                "th": "เมี้ยว เมี้ยว!",
+                "zh-Hans": "喵喵！",
+                "zh-Hant": "喵喵！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 100044,
+                "name": {
+                  "zh-Hans": "于连"
+                },
+                "entity": {
+                  "entityId": 880000227,
+                  "mapId": 8,
+                  "blueprintType": "Animal008",
+                  "name": "TsEntity_短支线2码头的猫于连",
+                  "areaId": 28002,
+                  "position": {
+                    "x": 727600,
+                    "y": 352750,
+                    "z": 933
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 30,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 64,
+      "parentId": 31,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 65,
+      "parentId": 64,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 66,
+      "parentId": 65,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Planck, um seinen Auftrag zu erfüllen",
+        "en": "Talk to Planck, then go out fishing and complete his request",
+        "es": "Habla con Planck, pesca y completa el encargo.",
+        "fr": "Parler à Planck et compléter la demande",
+        "ja": "プランクと会話し、漁船を操縦して依頼をクリア",
+        "ko": "플랑크와 대화 후, 어선을 조종하고 의뢰를 완료하기",
+        "th": "พูดคุยกับแพลงค์ แล้วออกไปตกปลาเพื่อทำคำขอของเขาให้สำเร็จ",
+        "zh-Hans": "和普朗克交谈，驾驶渔船并完成委托",
+        "zh-Hant": "和普朗克交談，駕駛漁船並完成委託"
+      },
+      "entities": [
+        {
+          "entityId": 880700312,
+          "mapId": 8,
+          "blueprintType": "branch2.1_章鱼商人普朗克NPC",
+          "name": "TsEntity_岛2章鱼商人普朗克",
+          "areaId": 28002,
+          "position": {
+            "x": 727777,
+            "y": 353448,
+            "z": 400
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 67,
+      "parentId": 65,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 68,
+      "parentId": 67,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 70,
+      "parentId": 67,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 69,
+      "parentId": 68,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 71,
+      "parentId": 70,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 72,
+      "parentId": 70,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

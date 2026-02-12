@@ -1,0 +1,4665 @@
+{
+  "id": 142000003,
+  "key": "一触即炸",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Achtung! Explosiv!",
+    "en": "Danger! Explosive!",
+    "es": "¡Peligro! ¡Explosivo!",
+    "fr": "Prêt à exploser",
+    "ja": "一触即発",
+    "ko": "일촉즉발",
+    "th": "อันตราย! ระเบิด!",
+    "zh-Hans": "一触即炸",
+    "zh-Hant": "一觸即炸"
+  },
+  "desc": {
+    "de": "Am Hang ist Exil Yongli von Explosivladungen umgeben. Aufgrund deines Impulses sind alle Explosivladungen um ihn herum detoniert. Geh und hör dir an, was er zu sagen hat.",
+    "en": "On the hillside, Exile Yongli is surrounded by Explosive Charges. You detonated all of the charges out of impulse. Go listen to what he has to say.",
+    "es": "En la ladera, el Exiliado Yongli está rodeado de Cargas explosivas. Debido a tu impulso, todas las Cargas explosivas a su alrededor han detonado. Ve y escucha lo que tiene que decir.",
+    "fr": "Sur la colline, l'Exilé Yongli est entouré de Fruits bombants. Vous avez détoné toutes les charges sur un coup de tête. Allez écouter ce qu'il a à dire.",
+    "ja": "丘にいる追放者永励の隣には爆薬苞がいっぱい積み重ねてある。あなたの一時の好奇心により、その爆薬苞は全部爆発してしまった。彼の言いたいことを聞きに行こう。",
+    "ko": "산비탈에 있는 추방자 영려의 주변에는 봉오리 폭탄이 가득 쌓여 있습니다.  당신의 순간적인 충동 때문에 그의 주변에 있는 봉오리 폭탄이 모두 폭발했습니다. 가서 그가 하려는 말이 무엇인지 들어보세요",
+    "th": "Yongli ผู้ถูกเนรเทศถูกล้อมรอบไปด้วยประจุระเบิดบนเนินเขา ซึ่งคุณได้จุดระเบิดทั้งหมดด้วยความหุนหันพลันแล่น ไปฟังสิ่งที่เขาจะพูดกันเถอะ",
+    "zh-Hans": "山坡上的流放者永励身边堆满了炸药苞。因为你的一时冲动，他周围的炸药苞全爆炸了，去听听他想说什么吧。",
+    "zh-Hant": "山坡上的流放者永勵身邊堆滿了炸藥苞。因為你的一時衝動，他周圍的炸藥苞全爆炸了，去聽聽他想說什麼吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Exil Yongli",
+        "en": "Talk to Exile Yongli",
+        "es": "Habla con el Exiliado Yongli",
+        "fr": "Parler avec l'exilé, Yongli",
+        "ja": "追放者の永励と話す",
+        "ko": "추방자 영려와 대화",
+        "th": "คุยกับ Yongli ผู้ถูกเนรเทศ",
+        "zh-Hans": "和流放者永励交谈",
+        "zh-Hant": "和流放者永勵交談"
+      },
+      "entities": [
+        {
+          "entityId": 142001272,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男11",
+          "areaId": 705,
+          "position": {
+            "x": -67686,
+            "y": 284899,
+            "z": 7590
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -143
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001404,
+          "mapId": 8,
+          "blueprintType": "Gameplay539",
+          "name": "TsEntity_玩法_裂纹岩壁_攻击破坏_大型",
+          "areaId": 705,
+          "position": {
+            "x": -67555,
+            "y": 285549,
+            "z": 5016
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001405,
+          "mapId": 8,
+          "blueprintType": "Gameplay539",
+          "name": "TsEntity_玩法_裂纹岩壁_攻击破坏_大型2",
+          "areaId": 705,
+          "position": {
+            "x": -67555,
+            "y": 285549,
+            "z": 5016
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 10,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Explosivladungen, die ich vorher hatte, wurden alle von den anderen Lagern gestohlen. Ich habe es endlich geschafft, diese zu sammeln, und jetzt...",
+                "en": "The Explosive Charges I had before all got stolen by the other camps. I finally managed to collect these, and now...",
+                "es": "Las Cargas explosivas que tenía antes fueron robadas por los otros campamentos. Finalmente logré recolectar estas, y ahora...",
+                "fr": "Mes Fruits bombants sont arrachés par d'autres camps, il a fallu beaucoup d'efforts pour en rassembler autant, et...",
+                "ja": "一度他の奴に奪われたから、頑張ってまた集めたのに……",
+                "ko": "이전에 모은 봉오리 폭탄을 모두 다른 캠프 사람들에게 빼앗기고, 간신히 다시 이렇게 많이 모았는데, 또...",
+                "th": "ประจุระเบิดที่ฉันมีก่อนหน้านี้ก็โดนพวกค่ายอื่นขโมยไปหมด ฉันเพิ่งจะรวบรวมชุดนี้มาได้แท้ๆ แล้วตอนนี้...",
+                "zh-Hans": "之前的炸药苞全被其他营地的人抢走了，好不容易又收集到这么多，又……",
+                "zh-Hant": "之前的炸藥苞全被其他營地的人搶走了，好不容易又收集到這麼多，又……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mein zukünftiges Leben hing von diesen dreißig Explosivladungen ab!",
+                "en": "My future life depended on those thirty Explosive Charges!",
+                "es": "¡Mi vida futura dependía de esas treinta Cargas explosivas!",
+                "fr": "Je compte sur ces trente fruits pour ma vie future !",
+                "ja": "俺の未来は！あの30個の爆薬苞にかかってるんだよ！",
+                "ko": "이 30개의 봉오리 폭탄에 제 남은 미래를 모두 걸었다고요!!",
+                "th": "อนาคตของฉันขึ้นอยู่กับประจุระเบิดสามสิบลูกนั่นเลยนะ!",
+                "zh-Hans": "我未来的生活可全指望这三十个炸药苞了啊！",
+                "zh-Hant": "我未來的生活可全指望這三十個炸藥苞了啊！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*Seufz* Vergiss es, ich könnte es genauso gut einfach hinnehmen. Es ist ja nicht so, als hätte ich Stunden damit verbracht, sie zu sammeln oder so.",
+                "en": "*sigh* Forget it, I might as well just suck it up. It's not like I spent hours collecting them or anything.",
+                "es": "*suspiro* Olvídalo, es mejor que me lo trague. No es que haya pasado horas recolectándolas o algo así.",
+                "fr": "Ah, laissez tomber. Tous les efforts déployés depuis si longtemps ont été vains, c'est ma malchance.",
+                "ja": "かぁ——！今までの努力が全部パーだ……ついてねぇ……",
+                "ko": "에휴, 됐어요. 이렇게 오랜 노력이 모두 헛수고가 되다니, 제 팔자가 이런 팔자인가 보죠",
+                "th": "*ถอนหายใจ* ช่างมันเถอะ ฉันคงต้องทนรับสภาพไป ก็ไม่ใช่ว่าฉันต้องใช้เวลาเป็นชั่วโมงๆ เพื่อรวบรวมมันมาหรอกนะ",
+                "zh-Hans": "哎，算了，这么长时间以来的努力全白费了，算我倒霉。",
+                "zh-Hant": "哎，算了，這麼長時間以來的努力全白費了，算我倒楣。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum hast du sie gesammelt?",
+                    "en": "Why were you collecting them?",
+                    "es": "¿Por qué las estabas recolectando?",
+                    "fr": "Mais pourquoi ?",
+                    "ja": "何故こんなものを集めてる？",
+                    "ko": "왜 이 봉오리 폭탄들을 수집한 거죠?",
+                    "th": "แล้วคุณรวบรวมมันมาทำไมล่ะ?",
+                    "zh-Hans": "你为什么收集这个？",
+                    "zh-Hant": "你為什麼收集這個？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mit Explosivladungen können meine Kumpels und ich diese Felsformation unter dem Hügel sprengen.",
+                "en": "With Explosive Charges, my buddies and I can blast open that rock formation under the hill.",
+                "es": "Con las Cargas explosivas, mis amigos y yo podemos volar esa formación rocosa bajo la colina.",
+                "fr": "Avec cela, mes camarades et moi peuvent détruire les roches sous le flanc de la colline.",
+                "ja": "爆発で下の岩を破壊するつもりだったんだ……",
+                "ko": "이것들이 있어야 저와 동료들이 언덕 아래에 있는 바위를 폭파시킬 수 있어요",
+                "th": "ฉันกับพรรคพวกจะใช้ประจุระเบิดเพื่อระเบิดชั้นหินใต้เนินเขานั่นให้เปิดออกได้",
+                "zh-Hans": "有了这些我和同伴们才能炸开山坡下面那片岩层。",
+                "zh-Hant": "有了這些我和同伴們才能炸開山坡下面那片岩層。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die darin enthaltenen Mineralien sollten ausreichen, um meine Arztrechnungen in der Stadt zu bezahlen...",
+                "en": "The minerals inside should be enough to pay for my medical bills in the city...",
+                "es": "Los minerales en su interior deberían ser suficientes para pagar mis facturas médicas en la ciudad...",
+                "fr": "Les minéraux là-bas devraient suffire à mon traitement en ville…",
+                "ja": "採れた鉱石を売れば病気を治す金になるかもしれな……",
+                "ko": "암반 안의 미네랄이 있으면 제가 치료를 받기에 충분할 거예요...",
+                "th": "แร่ธาตุข้างในน่าจะเพียงพอสำหรับจ่ายค่ารักษาพยาบาลของฉันในเมืองได้...",
+                "zh-Hans": "岩层里的矿产应该足够我进城治疗了……",
+                "zh-Hant": "岩層裡的礦產應該足夠我進城治療了……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah! Ich habe zu viel gesagt... Warum habe ich dir das überhaupt erzählt?!",
+                "en": "Ah! I've said too much... Why did I even tell you that?!",
+                "es": "¡Ah! He dicho demasiado... ¿Por qué incluso te conté eso?!",
+                "fr": "Ah ! Je l'ai laissé échapper... Pourquoi, pourquoi devrais-je te le dire !",
+                "ja": "って！こんな事お前に言ってどうする！",
+                "ko": "아! 말실수... 제, 제가 왜 당신에게 이런 걸 말해줘야 하죠?",
+                "th": "อ๊ะ! ฉันพูดมากเกินไปแล้ว... ทำไมฉันถึงไปบอกเรื่องนั้นกับแกด้วยล่ะ!",
+                "zh-Hans": "啊！说漏嘴了……我、我为什么要告诉你啊！",
+                "zh-Hant": "啊！說漏嘴了……我、我為什麼要告訴你啊！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie wäre es, wenn ich einige für dich sammeln würde?",
+                    "en": "How about I go collect some for you?",
+                    "es": "¿Qué tal si recojo algunas para ti?",
+                    "fr": "Je vous aiderai.",
+                    "ja": "{Male=俺が手伝う。;Female=私が手伝う。}",
+                    "ko": "제가 채집을 도와줄게요",
+                    "th": "ฉันจะไปรวบรวมระเบิดมาให้ เอาไหม?",
+                    "zh-Hans": "我帮你采集回来。",
+                    "zh-Hant": "我幫你採集回來。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eines Tages wirst du genug haben.",
+                    "en": "You'll get enough one day.",
+                    "es": "Algún día tendrás suficientes.",
+                    "fr": "Un autre jours, tu peux récupérer d'autres fruits bombants...",
+                    "ja": "{Male=集まるといいな。;Female=集まるといいね。}",
+                    "ko": "언젠가는 모을 수 있을 거예요",
+                    "th": "สักวันคุณก็คงจะรวบรวมได้ครบเอง",
+                    "zh-Hans": "总有一天会集齐的。",
+                    "zh-Hant": "總有一天會集齊的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "W-wirklich? Das ist großartig! Danke!",
+                "en": "R-really? That's great! Thank you!",
+                "es": "¿D-de verdad? ¡Eso es genial! ¡Gracias!",
+                "fr": "V...vraiment ?! Très bien ! Merci beaucoup !",
+                "ja": "ほ、本当か！恩に着るぜ！",
+                "ko": "진, 진짜요? 정말이죠? 감사해요!",
+                "th": "จะ จริงหรือ? เยี่ยมไปเลย! ขอบใจนะ!",
+                "zh-Hans": "真、真的吗？！太好了！谢谢你！",
+                "zh-Hant": "真、真的嗎？！太好了！謝謝你！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass mich dir zuerst einen Überblick geben.",
+                "en": "Here's some heads up for you.",
+                "es": "Permíteme darte algunas advertencias primero.",
+                "fr": "Je vais d'abord te donner quelques précautions.",
+                "ja": "最初に注意事項を伝えておこう。",
+                "ko": "우선 주의사항부터 알려줄게요",
+                "th": "ฉันมีอะไรจะเตือนคุณไว้หน่อย",
+                "zh-Hans": "我先告诉你一些注意事项吧。",
+                "zh-Hant": "我先告訴你一些注意事項吧。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frisch aufgelesene Explosivladungen neigen dazu, sehr instabil zu sein. Selbst die geringste Vibration oder Temperaturänderung kann sie zur Explosion bringen.",
+                "en": "Explosive Charges that are freshly picked tend to be very unstable. Even the slightest amount of vibration or change in temperature can cause them to explode.",
+                "es": "Las Cargas explosivas que se recogen recientemente tienden a ser muy inestables. Incluso la cantidad más mínima de vibración o cambio de temperatura puede hacer que exploten.",
+                "fr": "Les fruits explosifs fraîchement récupérés sont très instables. La moindre vibration ou variation de chaleur peut la faire exploser.",
+                "ja": "取れたての爆薬苞は、とにかく不安定。衝撃にも、温度の変化にも弱く、すぐ爆発する。",
+                "ko": "방금 따온 봉오리 폭탄은 매우 불안정하여 약간의 진동이나 열 변화로도 폭발할 수 있어요",
+                "th": "ประจุระเบิดที่เพิ่งเก็บมาใหม่ๆ มักจะไม่ค่อยเสถียร การสั่นสะเทือนเพียงเล็กน้อยหรืออุณหภูมิที่เปลี่ยนแปลงก็สามารถทำให้มันระเบิดได้แล้ว",
+                "zh-Hans": "刚采摘下来的炸药苞非常不稳定，一点轻微的震动或者热度变化都有可能引爆。",
+                "zh-Hant": "剛採摘下來的炸藥苞非常不穩定，一點輕微的震動或者熱度變化都有可能引爆。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich und meine Kumpels haben einen Haufen Arbeit aufgewendet, um die, die wir zuvor hatten, zu verarbeiten und zu stabilisieren.",
+                "en": "Me and my buddies went through a ton of effort processing and stabilizing those we had earlier.",
+                "es": "Mis amigos y yo hicimos un gran esfuerzo para procesar y estabilizar las que teníamos antes.",
+                "fr": "Nous avons travaillé dur pour préparer les Fruits bombants...",
+                "ja": "前のは仲間と一緒に苦労して、ようやく拵えた爆薬苞なんだ。",
+                "ko": "전에도 제 동료들과 봉오리 폭탄을 간신히 옮겨왔는데...",
+                "th": "ฉันกับพรรคพวกต้องใช้ความพยายามอย่างมากในการแปรรูป และทำให้ระเบิดที่เรามีก่อนหน้านี้มีความเสถียร",
+                "zh-Hans": "之前那些可是我和同伴费了好大的劲儿才做好预处理的炸药苞。",
+                "zh-Hant": "之前那些可是我和同伴費了好大的勁兒才做好預處理的炸藥苞。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du sie jetzt aufsammeln gehst, wirst du definitiv nicht rechtzeitig fertig.",
+                "en": "You definitely won't make it in time if you go pick them up now.",
+                "es": "Definitivamente no llegarás a tiempo si vas a recogerlas ahora.",
+                "fr": "Tu n'a donc pas de temps de récupérer les nouveaux fruits maintenant.",
+                "ja": "今すぐ新鮮ものを取るなんて、とても間に合わねぇ。",
+                "ko": "지금 신선한 것을 따러 가기에는 시간이 부족해요",
+                "th": "หากคุณไปเก็บมาตอนนี้ มันคงจะไม่ทันการแน่",
+                "zh-Hans": "你现在去采摘新鲜的，肯定来不及了。",
+                "zh-Hant": "你現在去採摘新鮮的，肯定來不及了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings sollten die Exil-Lager in der Nähe jede Menge Ladungen auf Lager haben, einige davon könnten sogar unsere sein.",
+                "en": "However, the Exile camps nearby should have plenty of charges stocked up, some of them might even be ours.",
+                "es": "Sin embargo, los campamentos de los Exiliados cercanos deberían tener muchas cargas almacenadas, algunas de ellas incluso podrían ser nuestras.",
+                "fr": "Mais les camps des exilés à proximité devraient avoir beaucoup de Fruits bombants comme ils ont volé les nôtres.",
+                "ja": "しかし、周りの追放者拠点に備蓄があるはずだ。その中に、俺らから奪ったものがある……",
+                "ko": "아, 주변의 추방자 캠프에는 많은 봉오리 폭탄이 쌓여 있을 거예요. 일부는 저희에게서 뺏어간 거예요",
+                "th": "แต่ว่าพวกค่ายผู้ถูกเนรเทศแถวๆ นี้น่าจะมีระเบิดตุนไว้เพียบเลย บางส่วนอาจจะเป็นของพวกเราด้วยซ้ำ",
+                "zh-Hans": "不过周围的流放者营地，应该也囤积了不少炸药苞，有一些就是从我们手里抢走的。",
+                "zh-Hant": "不過周圍的流放者營地，應該也囤積了不少炸藥苞，有一些就是從我們手裡搶走的。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du könntest dein Glück in diesen Lagern versuchen.",
+                "en": "You can try out your luck around those camps.",
+                "es": "Puedes probar suerte en esos campamentos.",
+                "fr": "Tu peux tenter la chance à proximité.",
+                "ja": "そこに行って、確かめてみるといい。",
+                "ko": "추방자 캠프 근처에 가보고, 나머진 운에 맡겨야죠",
+                "th": "คุณไปลองเสี่ยงดวงแถวๆ ค่ายพวกนั้นดูได้นะ",
+                "zh-Hans": "可以去那附近碰碰运气。",
+                "zh-Hant": "可以去那附近碰碰運氣。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Leichter gesagt als getan. Dreißig Explosivladungen! Wo zur Hölle soll ich die alle herkriegen...",
+                "en": "Easy for you to say. Thirty Explosive Charges! Where in hell am I supposed to get all of 'em...",
+                "es": "Fácil para ti decirlo. ¡Treinta Cargas explosivas! ¿Dónde diablos se supone que debo conseguir todas ellas...",
+                "fr": "Mais trente fruits bombants ! Quand...!",
+                "ja": "簡単に言うな！三十個だぞ！一体どんだけ時間を取らせる気だ……",
+                "ko": "말을 너무 쉽게 하시네요. 자그마치 30개의 봉오리 폭탄이라고요. 다시 채집해도 언제 다 모을지 모른다고요",
+                "th": "แกก็พูดง่ายนี่ ประจุระเบิดตั้งสามสิบลูกนะ! แล้วฉันจะไปหาทั้งหมดนั่นมาจากที่ไหนกัน...",
+                "zh-Hans": "你说得轻巧，三十个炸药苞！到底什么时候能集齐啊……",
+                "zh-Hant": "你說得輕巧，三十個炸藥苞！到底什麼時候能集齊啊……"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die angreifenden Exilanten",
+        "en": "Defeat the attacking Exiles",
+        "es": "Derrota a los Exiliados",
+        "fr": "Battre les exilés qui attaquent",
+        "ja": "追放者を倒す",
+        "ko": "급습하는 추방자 격파하기",
+        "th": "พิชิตผู้ถูกเนรเทศที่เข้ามาโจมตี",
+        "zh-Hans": "打倒来袭的流放者",
+        "zh-Hant": "打倒來襲的流放者"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 16,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 49,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Exil Yongli",
+        "en": "Talk to Exile Yongli",
+        "es": "Habla con el Exiliado Yongli",
+        "fr": "Parler avec l'exilé, Yongli",
+        "ja": "追放者永励と話す",
+        "ko": "추방자 영려와 대화",
+        "th": "คุยกับ Yongli ผู้ถูกเนรเทศ",
+        "zh-Hans": "和流放者永励交谈",
+        "zh-Hant": "和流放者永勵交談"
+      },
+      "entities": [
+        {
+          "entityId": 142003075,
+          "mapId": 8,
+          "blueprintType": "Treasure016",
+          "name": "TsEntity_豪华物资箱_程序封锁3",
+          "areaId": 705,
+          "position": {
+            "x": -67392,
+            "y": 285692,
+            "z": 5105
+          },
+          "rotation": {
+            "x": 0,
+            "y": -2,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003080,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男9",
+          "areaId": 705,
+          "position": {
+            "x": -66605,
+            "y": 287320,
+            "z": 4947
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 29
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003081,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男15",
+          "areaId": 705,
+          "position": {
+            "x": -66587,
+            "y": 287143,
+            "z": 4951
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003082,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女9",
+          "areaId": 705,
+          "position": {
+            "x": -66741,
+            "y": 287376,
+            "z": 4950
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 5,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Puh. Gut, dass wir dich auf unserer Seite hatten, sonst wären sie schon wieder damit durchgekommen...",
+                "en": "Phew. Good thing we had you on our side, or else they would've gotten away with it again...",
+                "es": "Uf. Menos mal que estabas de nuestro lado, de lo contrario, se habrían salido con la suya de nuevo...",
+                "fr": "Grâce à vous, ils n'ont pas réussi...",
+                "ja": "お前のお陰で無事に済んだ……",
+                "ko": "다 방랑자 덕분이에요",
+                "th": "เฮ้อ โชคดีที่คุณอยู่ฝ่ายเรา ไม่อย่างนั้นพวกมันคงจะหนีรอดไปได้อีก...",
+                "zh-Hans": "多亏有你在才没让那些人得逞……",
+                "zh-Hant": "多虧有你在才沒讓那些人得逞……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier ist dein Anteil an den Mineralien. Wir halten unser Wort!",
+                "en": "Here's your cut of the minerals. We keep our word!",
+                "es": "Aquí tienes tu parte de los minerales. ¡Cumplimos con nuestra palabra!",
+                "fr": "J'ai déjà promis de partager avec vous une partie des minéraux. Vous avez ma parole !",
+                "ja": "約束通り、報酬を分けてやる！",
+                "ko": "전에 약속했던 대로 광물을 나눠 줄게요. 저는 약속을 어기지 않아요",
+                "th": "นี่ส่วนแบ่งแร่ธาตุของคุณ พวกเรารักษาสัญญานะ!",
+                "zh-Hans": "之前说好矿产分你一份，我不会食言的！",
+                "zh-Hant": "之前說好礦產分你一份，我不會食言的！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und diese Kiste, die wir aus den Felsen gesprengt haben... Nimm sie auch mit! Ohne dich hätten wir diese Mineralien gar nicht erst gehabt!",
+                "en": "And this box we blew out of the rocks... Take it with you as well! We wouldn't have had these minerals without you to begin with!",
+                "es": "Y esta caja que volamos de las rocas... ¡Llévatela también! ¡No habríamos tenido estos minerales sin ti para empezar!",
+                "fr": "Je ne m'attendais pas à faire exploser accidentellement une boîte... C'est aussi la vôtre ! Après tout, sans vous, nous ne pourrions pas obtenir les minéraux.",
+                "ja": "ついでに、この妙な箱もあげよう。何せ、お前の助けがなければ、鉱石はあいつらに盗られてたからな。",
+                "ko": "폭발해서 상자 하나가 나올 줄은 몰랐지만요... 그것도 당신에게 줄게요! 어쨌든 당신이 아니었다면, 저희의 힘만으로는 이 광산들을 지킬 수 없었을 테니까요",
+                "th": "และกล่องนี่ที่เราเจอตอนระเบิดหิน... เอาไปด้วยสิ! แรกเริ่มเดิมทีถ้าไม่มีคุณ พวกเราก็คงไม่ได้แร่ธาตุพวกนี้มาหรอก!",
+                "zh-Hans": "只是没想到还意外炸出来一个箱子……它也归你了！毕竟要不是你，我们现在手里这些矿也保不住。",
+                "zh-Hant": "只是沒想到還意外炸出來一個箱子……它也歸你了！畢竟要不是你，我們現在手裡這些礦也保不住。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schön, dass du dich entschieden hast, heute zu helfen. Jetzt, mit diesen Mineralien, kann ich endlich...",
+                "en": "Glad you decided to help out today. Now with these minerals, I can finally...",
+                "es": "Me alegra que decidieras ayudar hoy. Ahora con estos minerales, finalmente puedo...",
+                "fr": "Merci pour votre aide, avec ces trucs, je pourrais...",
+                "ja": "とにかく、ありがとう。これくらいあれば、俺の病気も……",
+                "ko": "도와주셔서 감사해요. 이 광물만 있으면 전...",
+                "th": "ดีใจที่วันนี้คุณตัดสินใจมาช่วยเรานะ พอมีแร่ธาตุพวกนี้แล้ว ในที่สุดฉันก็สามารถ...",
+                "zh-Hans": "谢谢你的帮忙，有了这份矿藏，说不定我能……",
+                "zh-Hant": "謝謝你的幫忙，有了這份礦藏，說不定我能……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*Seufz* Es ist zu früh, um sicher zu sein. Will es nicht verschreien. Bis wir uns wiedersehen!",
+                "en": "*sigh* It's too early to say for sure. Don't wanna jinx it. Until we meet again!",
+                "es": "*suspiro* Es demasiado pronto para decirlo con seguridad. No quiero gafarlo. ¡Hasta que nos volvamos a ver!",
+                "fr": "Bon, je ne dirai rien d'incertain pour ne pas gâcher l'ambiance. Nous nous reverrons ! Au revoir !",
+                "ja": "いや、くだらねぇ話はもういい。縁があれば、また会おうぜ！",
+                "ko": "에이, 확실치 않은 일로 흥을 깰 뻔했네요. 인연이 있으면 다시 만나요!",
+                "th": "*ถอนหายใจ* ยังเร็วเกินไปที่จะพูดได้ ฉันไม่อยากจะพูดไปก่อนให้เป็นลางน่ะ ไว้เจอกันใหม่นะ!",
+                "zh-Hans": "唉，没法确定的事，就不说出来扫兴了。咱们有缘再见吧！",
+                "zh-Hant": "唉，沒法確定的事，就不說出來掃興了。咱們有緣再見吧！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 142001272,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男11",
+          "areaId": 705,
+          "position": {
+            "x": -67686,
+            "y": 284899,
+            "z": 7590
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -143
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 10,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "*Seufz* Vergiss es, ich kann es auch einfach hinnehmen. Es ist nicht so, als hätte ich Stunden damit verbracht, sie zu sammeln oder so.",
+                "en": "*sigh* Forget it, I might as well just suck it up. It's not like I spent hours collecting them or anything.",
+                "es": "*suspiro* Olvídalo, es mejor que lo asuma. No es como si hubiera pasado horas recolectándolas o algo.",
+                "fr": "Tous les efforts déployés depuis si longtemps ont été vains, quand pourrai-je trouver trente Fruits bombants...",
+                "ja": "これまでの努力が全部パーだ。三十個……いつになったら集めきれる……",
+                "ko": "이렇게 오랜 노력이 모두 허사가 되다니, 30개의 봉오리 폭탄을 또 언제 모을 수 있으려나…",
+                "th": "*ถอนหายใจ* ช่างมันเถอะ ฉันคงต้องทนรับสภาพไป ก็ไม่ใช่ว่าฉันต้องใช้เวลาเป็นชั่วโมงๆ เพื่อรวบรวมมันมาหรอกนะ",
+                "zh-Hans": "这么长时间以来的努力全白费了，三十个炸药苞得什么时候能集齐啊……",
+                "zh-Hant": "這麼長時間以來的努力全白費了，三十個炸藥苞得什麼時候能集齊啊……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Willst du mir helfen, einige Explosivladungen zu besorgen? Es ist nicht viel, nur dreißig sollten reichen.",
+                "en": "You wanna help me get some Explosive Charges? Ain't much, only thirty will do.",
+                "es": "¿Quieres ayudarme a conseguir algunas Cargas explosivas? No es mucho, solo treinta serán suficientes.",
+                "fr": "Pouvez-vous m'aider à récupérer des Fruits bombants ? Trente suffisent.",
+                "ja": "なあ、爆薬苞を集めてくれないか？なに、三十個だけでいいさ。",
+                "ko": "봉오리 폭탄을 모으는 것 좀 도와줄 수 있나요? 수량도 많지 않아요. 딱 30개면 충분해요",
+                "th": "คุณอยากช่วยฉันรวบรวมประจุระเบิดเหรอ? ก็ไม่เยอะเท่าไรหรอก แค่สามสิบลูกเอง",
+                "zh-Hans": "你能帮我收集炸药苞吗？数量也不多，三十个就足够了。",
+                "zh-Hant": "你能幫我收集炸藥苞嗎？數量也不多，三十個就足夠了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich werde sie für dich holen.",
+                    "en": "I'll go get them for you.",
+                    "es": "Las conseguiré para ti.",
+                    "fr": "Je vous aiderai.",
+                    "ja": "手伝うよ。",
+                    "ko": "제가 채집을 도와줄게요",
+                    "th": "ฉันจะไปเก็บมาให้เอง",
+                    "zh-Hans": "我帮你采集。",
+                    "zh-Hant": "我幫你採集。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eines Tages wirst du genug haben.",
+                    "en": "You'll get enough one day.",
+                    "es": "Algún día tendrás suficiente.",
+                    "fr": "Un autre jours, tu peux récupérer d'autres fruits bombants...",
+                    "ja": "{Male=集まるといいな。;Female=集まるといいね。}",
+                    "ko": "언젠가는 모을 수 있을 거예요",
+                    "th": "สักวันคุณก็คงจะรวบรวมได้ครบเอง",
+                    "zh-Hans": "总有一天会集齐的。",
+                    "zh-Hant": "總有一天會集齊的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Super! Das ist wunderbar.",
+                "en": "Awesome! That's wonderful.",
+                "es": "¡Genial! Eso es maravilloso.",
+                "fr": "Très bien ! Merci beaucoup !",
+                "ja": "よっしゃ！そう来なくっちゃ！",
+                "ko": "감사해요. 정말 감사해요",
+                "th": "เยี่ยมมาก! ยอดเยี่ยมไปเลย",
+                "zh-Hans": "太好了！谢谢你！",
+                "zh-Hant": "太好了！謝謝你！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass mich dich zuerst warnen.",
+                "en": "Let me give some heads up first.",
+                "es": "Permíteme darte algunas indicaciones primero.",
+                "fr": "Je vais d'abord te donner quelques précautions.",
+                "ja": "最初に注意事項を伝えておこう。",
+                "ko": "우선 주의사항부터 알려줄게요",
+                "th": "ฉันขอเตือนอะไรคุณไว้อย่างหนึ่งนะ",
+                "zh-Hans": "我先告诉你一些注意事项吧。",
+                "zh-Hant": "我先告訴你一些注意事項吧。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frisch gepflückte Explosivladungen neigen dazu, sehr instabil zu sein. Selbst die geringste Vibration oder Temperaturänderung kann sie zur Explosion bringen.",
+                "en": "Explosive Charges that are freshly picked tend to be very unstable. Even the slightest amount of vibration or change in temperature can cause them to explode.",
+                "es": "Las Cargas explosivas que se recogen recientemente tienden a ser muy inestables. Incluso la cantidad más mínima de vibración o cambio de temperatura puede hacer que exploten.",
+                "fr": "Les fruits explosifs fraîchement récupérés sont très instables. La moindre vibration ou variation de chaleur peut la faire exploser.",
+                "ja": "取れたての爆薬苞は、とにかく不安定。衝撃にも、温度の変化にも弱く、すぐ爆発する。",
+                "ko": "방금 따온 봉오리 폭탄은 매우 불안정하여 약간의 진동이나 열 변화로도 폭발할 수 있어요",
+                "th": "ประจุระเบิดที่เพิ่งเก็บมาใหม่ๆ มักจะไม่ค่อยเสถียร การสั่นสะเทือนเพียงเล็กน้อยหรืออุณหภูมิที่เปลี่ยนแปลงก็สามารถทำให้มันระเบิดได้แล้ว",
+                "zh-Hans": "刚采摘下来的炸药苞非常不稳定，一点轻微的震动或者热度变化都有可能引爆。",
+                "zh-Hant": "剛採摘下來的炸藥苞非常不穩定，一點輕微的震動或者熱度變化都有可能引爆。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich und meine Kumpels haben viel Mühe aufgewendet, um die, die wir früher hatten, zu verarbeiten und zu stabilisieren.",
+                "en": "Me and my buddies went through a ton of effort processing and stabilizing those we had earlier.",
+                "es": "Mis amigos y yo nos esforzamos mucho en procesar y estabilizar las que teníamos antes.",
+                "fr": "Nous avons travaillé dur pour préparer les Fruits bombants...",
+                "ja": "前のは仲間と一緒に苦労してようやく拵えた爆薬苞なんだ。",
+                "ko": "전에도 제 동료들과 봉오리 폭탄을 간신히 옮겨왔는데...",
+                "th": "ฉันกับพรรคพวกต้องใช้ความพยายามอย่างมากในการแปรรูป และทำให้ระเบิดที่เรามีก่อนหน้านี้มีความเสถียร",
+                "zh-Hans": "之前那些可是我和同伴费了好大的劲儿才做好预处理的炸药苞。",
+                "zh-Hant": "之前那些可是我和同伴費了好大的勁兒才做好預處理的炸藥苞。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du wirst es definitiv nicht rechtzeitig schaffen, wenn du sie jetzt holen gehst.",
+                "en": "You definitely won't make it in time if you go pick them up now.",
+                "es": "Definitivamente no llegarás a tiempo si vas a recogerlas ahora.",
+                "fr": "Tu n'a donc pas de temps de récupérer les nouveaux fruits maintenant.",
+                "ja": "今すぐ新鮮ものを取るなんて、とても間に合わねぇ。",
+                "ko": "지금 신선한 것을 따러 가기에는 시간이 부족해요",
+                "th": "หากคุณไปเก็บมาตอนนี้ มันคงจะไม่ทันการแน่",
+                "zh-Hans": "你现在去采摘新鲜的，肯定来不及了。",
+                "zh-Hant": "你現在去採摘新鮮的，肯定來不及了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Exil-Lager in der Nähe sollten jedoch genug Ladungen auf Lager haben, einige davon könnten sogar unsere sein.",
+                "en": "However, the Exile camps nearby should have plenty of charges stocked up, some of them might even be ours.",
+                "es": "Sin embargo, los campamentos de los Exiliados cercanos deberían tener muchas cargas almacenadas, algunas de ellas incluso podrían ser nuestras.",
+                "fr": "Mais les camps des exilés à proximité devraient avoir beaucoup de Fruits bombants comme ils ont volé les nôtres.",
+                "ja": "しかし、周りの追放者拠点に備蓄があるはずだ。\n その中に、俺らから奪ったものがある……",
+                "ko": "아, 주변의 추방자 캠프에는 많은 봉오리 폭탄이 쌓여 있을 거예요. 일부는 저희에게서 뺏어간 거예요",
+                "th": "แต่ว่าพวกค่ายผู้ถูกเนรเทศแถวๆ นี้น่าจะมีระเบิดตุนไว้เพียบเลย บางส่วนอาจจะเป็นของพวกเราด้วยซ้ำ",
+                "zh-Hans": "不过周围的流放者营地，应该也囤积了不少炸药苞，有一些就是从我们手里抢走的。",
+                "zh-Hant": "不過周圍的流放者營地，應該也囤積了不少炸藥苞，有一些就是從我們手裡搶走的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du könntest dein Glück in diesen Lagern versuchen.",
+                "en": "You can try out your luck around those camps.",
+                "es": "Puedes probar suerte en esos campamentos.",
+                "fr": "Tu peux tenter la chance à proximité.",
+                "ja": "そこに行って、確かめてみるといい。",
+                "ko": "추방자 캠프 근처에 가보고, 나머진 운에 맡겨야죠",
+                "th": "คุณไปลองเสี่ยงดวงแถวๆ ค่ายพวกนั้นดูได้นะ",
+                "zh-Hans": "可以去那附近碰碰运气。",
+                "zh-Hant": "可以去那附近碰碰運氣。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wo zum Teufel soll ich die alle herkriegen...",
+                "en": "Where in hell am I supposed to get all of 'em...",
+                "es": "¿Dónde diablos se supone que debo conseguir todas ellas...",
+                "fr": "Quand pourrai-je les rassembler tous...",
+                "ja": "はあ……いつになったら集まるんだ……",
+                "ko": "그걸 도대체 어느 시간에 다 모으겠어요....",
+                "th": "ฉันจะไปหาทั้งหมดนั่นมาจากที่ไหนกัน...",
+                "zh-Hans": "到底什么时候能集齐啊……",
+                "zh-Hant": "到底什麼時候能集齊啊……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 60,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Spreng die Felswand",
+        "en": "Blast the Rock Wall",
+        "es": "Haz explotar la Pared de Roca",
+        "fr": "Faire exploser le mur de roche",
+        "ja": "岩壁を爆破する",
+        "ko": "암벽 폭파",
+        "th": "ระเบิดกำแพงหิน",
+        "zh-Hans": "炸碎岩壁",
+        "zh-Hant": "炸碎岩壁"
+      },
+      "entities": [
+        {
+          "entityId": 142001174,
+          "mapId": 8,
+          "blueprintType": "Collect504",
+          "name": "TsEntity_矿物504_植珀36",
+          "areaId": 705,
+          "position": {
+            "x": -67141,
+            "y": 285645,
+            "z": 5100
+          },
+          "rotation": {
+            "x": 16,
+            "y": 0,
+            "z": -39
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001175,
+          "mapId": 8,
+          "blueprintType": "Collect504",
+          "name": "TsEntity_矿物504_植珀37",
+          "areaId": 705,
+          "position": {
+            "x": -67950,
+            "y": 285685,
+            "z": 5172
+          },
+          "rotation": {
+            "x": 9,
+            "y": -13,
+            "z": -36
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001176,
+          "mapId": 8,
+          "blueprintType": "Collect504",
+          "name": "TsEntity_矿物504_植珀38",
+          "areaId": 705,
+          "position": {
+            "x": -67395,
+            "y": 285253,
+            "z": 5229
+          },
+          "rotation": {
+            "x": -14,
+            "y": -1,
+            "z": -120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001263,
+          "mapId": 8,
+          "blueprintType": "Collect504",
+          "name": "TsEntity_矿物504_植珀74",
+          "areaId": 705,
+          "position": {
+            "x": -67659,
+            "y": 285404,
+            "z": 5167
+          },
+          "rotation": {
+            "x": 7,
+            "y": -14,
+            "z": 23
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001264,
+          "mapId": 8,
+          "blueprintType": "Collect504",
+          "name": "TsEntity_矿物504_植珀75",
+          "areaId": 705,
+          "position": {
+            "x": -67336,
+            "y": 285383,
+            "z": 5222
+          },
+          "rotation": {
+            "x": 4,
+            "y": -1,
+            "z": -13
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001274,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女7",
+          "areaId": 705,
+          "position": {
+            "x": -66812,
+            "y": 287324,
+            "z": 4956
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -82
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001275,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男13",
+          "areaId": 705,
+          "position": {
+            "x": -66686,
+            "y": 287198,
+            "z": 4953
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -125
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001276,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男14",
+          "areaId": 705,
+          "position": {
+            "x": -66524,
+            "y": 287174,
+            "z": 4944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -166
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001309,
+          "mapId": 8,
+          "blueprintType": "SceneObj008",
+          "name": "TsEntity_破碎物008_木栅栏16",
+          "areaId": 705,
+          "position": {
+            "x": -67348,
+            "y": 285940,
+            "z": 5099
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -15
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001310,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器15",
+          "areaId": 705,
+          "position": {
+            "x": -67408,
+            "y": 285895,
+            "z": 5202
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001405,
+          "mapId": 8,
+          "blueprintType": "Gameplay539",
+          "name": "TsEntity_玩法_裂纹岩壁_攻击破坏_大型2",
+          "areaId": 705,
+          "position": {
+            "x": -67555,
+            "y": 285549,
+            "z": 5016
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003075,
+          "mapId": 8,
+          "blueprintType": "Treasure016",
+          "name": "TsEntity_豪华物资箱_程序封锁3",
+          "areaId": 705,
+          "position": {
+            "x": -67392,
+            "y": 285692,
+            "z": 5105
+          },
+          "rotation": {
+            "x": 0,
+            "y": -2,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003076,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领4",
+          "areaId": 705,
+          "position": {
+            "x": -65774,
+            "y": 287861,
+            "z": 4587
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -151
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003077,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女8",
+          "areaId": 705,
+          "position": {
+            "x": -65795,
+            "y": 288128,
+            "z": 4567
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -116
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003078,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男5",
+          "areaId": 705,
+          "position": {
+            "x": -65589,
+            "y": 287707,
+            "z": 4593
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -174
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003079,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男8",
+          "areaId": 705,
+          "position": {
+            "x": -65588,
+            "y": 287405,
+            "z": 4614
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -174
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003080,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男9",
+          "areaId": 705,
+          "position": {
+            "x": -66605,
+            "y": 287320,
+            "z": 4947
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 29
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003081,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男15",
+          "areaId": 705,
+          "position": {
+            "x": -66587,
+            "y": 287143,
+            "z": 4951
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142003082,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女9",
+          "areaId": 705,
+          "position": {
+            "x": -66741,
+            "y": 287376,
+            "z": 4950
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Na, na, na. Was haben wir denn hier? Sieht so aus, als wären wir gerade rechtzeitig hier. Die Mineralien sind zum Greifen nahe.",
+                "en": "Well, well, well. What do we have here? Looks like we got here just in time. The minerals are open for the taking.",
+                "es": "Vaya, vaya, vaya. ¿Qué tenemos aquí? Parece que llegamos justo a tiempo. Los minerales están disponibles para la toma.",
+                "fr": "Haha, il vaut mieux avoir de la chance que d'être en avance, ils ont déjà détruit les roches et trouvé les minéraux.",
+                "ja": "はははっ！いいタイミングじゃねぇか。岩を爆発させて、鉱床も見つけてくれた！",
+                "ko": "하하, 일찍 오는 것보다 때를 맞춰 오는 게 훨씬 낫다니까. 보아하니 네 녀석들이 이미 암반을 폭파하고 광물을 찾아낸 것 같구나",
+                "th": "แหมๆ ดูสิว่าเราเจออะไรที่นี่เนี่ย ดูเหมือนว่าเราจะมาได้จังหวะพอดีเลยนะ แร่ธาตุพวกนี้พร้อมให้ขุดแล้ว",
+                "zh-Hans": "哈哈，来得早不如来得巧，他们已经炸开岩层，找到矿藏了。",
+                "zh-Hant": "哈哈，來得早不如來得巧，他們已經炸開岩層，找到礦藏了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 133,
+                "name": {
+                  "en": "Exile Leader",
+                  "ja": "追放者リーダー",
+                  "zh-Hans": "流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir sind dir dankbar, dass du die Felsen für uns gesprengt hast.",
+                "en": "We appreciate you for blowing up the rocks for us.",
+                "es": "Te agradecemos por volar las rocas para nosotros.",
+                "fr": "Cela nous a épargné beaucoup de travail.",
+                "ja": "俺らも手前が省けたってもんだ！",
+                "ko": "덕분에 힘을 아끼는 데 도움이 되었으니 감사의 말이라도 해야 하나?",
+                "th": "ขอบใจพวกแกมากที่ช่วยระเบิดหินให้พวกเรา",
+                "zh-Hans": "倒是帮咱们省功夫了。",
+                "zh-Hant": "倒是幫咱們省功夫了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 133,
+                "name": {
+                  "en": "Exile Leader",
+                  "ja": "追放者リーダー",
+                  "zh-Hans": "流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, nein, das tust du nicht! Du hast unsere Explosivladungen mitgenommen, wir lassen dich nicht...",
+                "en": "Oh, no you don't! You got away with our Explosive Charges, we're not letting you...",
+                "es": "¡Oh, no lo harás! Te escapaste con nuestras <color=Highlight>Cargas explosivas</color>, no te dejaremos...",
+                "fr": "Tu as déjà volé nos Fruits bombants ! et maintenant, tu es de nouveau là…",
+                "ja": "またお前か！何度も何度も……一体どういうつもりだ！",
+                "ko": "뻔뻔하군요! 전에도 저희의 봉오리 폭탄을 빼앗아 가놓고, 지금 또...",
+                "th": "โอ้ ไม่ได้หรอก! แกเอาประจุระเบิดของพวกฉันไปแล้ว พวกฉันไม่ปล่อยให้แกไปแน่...",
+                "zh-Hans": "你怎么这么不要脸！之前抢了我们的炸药苞，现在又来……",
+                "zh-Hant": "你怎麼這麼不要臉！之前搶了我們的炸藥苞，現在又來……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Halt einfach die Klappe. In dieser Zeit gilt das Recht des Stärkeren. Schnappt sie euch!",
+                "en": "Just shut yer trap. In this day and age, winner takes all. Get 'em!",
+                "es": "Solo cierra el pico. En estos tiempos, el que gana se lo lleva todo. ¡A por ellos!",
+                "fr": "Celui qui prend le premier est le propriétaire ! Allons-y !",
+                "ja": "何をごちゃごちゃ言ってやがる。このご時世、手に入れたモン勝ちなんだよ。いくぞ！",
+                "ko": "그게 무슨 말도 안 되는 소리지? 이 세상은 뺏는 사람이 주인이란다. 형제들이여 가라!",
+                "th": "หุบปากไปเลย สมัยนี้แล้ว ผู้ชนะย่อมได้ทุกสิ่ง จัดการพวกมัน!",
+                "zh-Hans": "废什么话，这个世道，谁抢到就是谁的，兄弟们上！",
+                "zh-Hant": "廢什麼話，這個世道，誰搶到就是誰的，兄弟們上！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 133,
+                "name": {
+                  "en": "Exile Leader",
+                  "ja": "追放者リーダー",
+                  "zh-Hans": "流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "parentId": 11,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 24,
+      "parentId": 16,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 16,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sammle Explosivladungen im Exil-Lager",
+        "en": "Collect Explosive Charges in the Exiles camp",
+        "es": "Recoge las Cargas explosivas en el campamento de los Exiliados",
+        "fr": "Collecter des Fruits bombants dans le camp",
+        "ja": "追放者拠点に爆薬苞を集める",
+        "ko": "추방자 캠프에서 봉오리 폭탄 수집하기",
+        "th": "เก็บประจุระเบิดในค่ายผู้ถูกเนรเทศ",
+        "zh-Hans": "在流放者营地里收集炸药苞",
+        "zh-Hant": "在流放者營地裡收集炸藥苞"
+      },
+      "entities": [
+        {
+          "entityId": 142001272,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男11",
+          "areaId": 705,
+          "position": {
+            "x": -67686,
+            "y": 284899,
+            "z": 7590
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -143
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Naja, das ist die Quintessenz. Gibt es noch etwas, das du wissen möchtest?",
+                "en": "Well, that's the gist of it. Anything else you wanna know?",
+                "es": "Bueno, eso es en esencia. ¿Hay algo más que quieras saber?",
+                "fr": "D'autres questions ?",
+                "ja": "他に何か聞きたいことは？",
+                "ko": "더 물어보고 싶은 게 있나요?",
+                "th": "อืม เรื่องราวก็มีอยู่เท่านี้ มีอะไรที่คุณอยากจะรู้อีกไหม?",
+                "zh-Hans": "你还有什么想问的嘛？",
+                "zh-Hant": "你還有什麼想問的嘛？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wo kann ich Explosivladungen finden?",
+                    "en": "Where can I find Explosive Charges?",
+                    "es": "¿Dónde puedo encontrar Cargas explosivas?",
+                    "fr": "Où puis-je trouver des Fruits bombants ?",
+                    "ja": "爆薬苞はどこで取れる？",
+                    "ko": "어디서 봉오리 폭탄을 채집할 수 있죠?",
+                    "th": "ฉันจะหาประจุระเบิดได้จากที่ไหน?",
+                    "zh-Hans": "哪里能采集到炸药苞？",
+                    "zh-Hant": "哪里能採集到炸藥苞？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe nichts zu fragen.",
+                    "en": "I don't have anything to ask.",
+                    "es": "No tengo nada que preguntar.",
+                    "fr": "Je n'ai plus de questions.",
+                    "ja": "特にない。",
+                    "ko": "아뇨, 더 궁금한 게 없어요",
+                    "th": "ฉันไม่มีอะไรจะถามแล้ว",
+                    "zh-Hans": "没有更多想问的了。",
+                    "zh-Hant": "沒有更多想問的了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Die Exil-Lager in der Nähe sollten genügend Ladungen auf Lager haben. Du kannst dort dein Glück versuchen.",
+                "en": "The Exile camps nearby should have plenty of charges stocked up. You can try out your luck there.",
+                "es": "Los campamentos de los Exiliados cercanos deberían tener muchas cargas almacenadas. Puedes probar suerte allí.",
+                "fr": "Il devrait y avoir beaucoup de Fruits bombants dans les camps des Exiles, tu peux tenter la chance.",
+                "ja": "周りの追放者拠点に備蓄があるはずだ。そこに行って、確かめてみるといい。",
+                "ko": "주변의 추방자 캠프에 봉오리 폭탄이 많이 쌓여 있을 거예요. 그 부근에 가서 운에 맡기는 수밖에요",
+                "th": "พวกค่ายผู้ถูกเนรเทศแถวๆ นี้น่าจะมีระเบิดตุนไว้เพียบเลย คุณลองไปเสี่ยงดวงแถวๆ ค่ายพวกนั้นดูได้",
+                "zh-Hans": "周围的流放者营地里应该囤积了不少炸药苞，可以去那附近碰碰运气。",
+                "zh-Hant": "周圍的流放者營地裡應該囤積了不少炸藥苞，可以去那附近碰碰運氣。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich überlasse es dir dann!",
+                "en": "I'll leave you to it then!",
+                "es": "¡Te dejo entonces!",
+                "fr": "Je compte sur toi !",
+                "ja": "そんじゃ、頼んだぞ！",
+                "ko": "그럼 부탁드려요",
+                "th": "ฉันฝากด้วยนะ!",
+                "zh-Hans": "那就拜托你啦！",
+                "zh-Hant": "那就拜託你啦！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "parentId": 24,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 142001363,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开23",
+          "areaId": 705,
+          "position": {
+            "x": -91019,
+            "y": 279598,
+            "z": 3530
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001364,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开34",
+          "areaId": 705,
+          "position": {
+            "x": -91021,
+            "y": 279694,
+            "z": 3538
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 77
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001365,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开35",
+          "areaId": 705,
+          "position": {
+            "x": -91017,
+            "y": 279696,
+            "z": 3615
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004201,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果19",
+          "areaId": 705,
+          "position": {
+            "x": -91134,
+            "y": 279678,
+            "z": 3520
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -85
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004202,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果20",
+          "areaId": 705,
+          "position": {
+            "x": -91021,
+            "y": 279580,
+            "z": 3605
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142006739,
+          "mapId": 8,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_地面用必要触发交互7",
+          "areaId": 705,
+          "position": {
+            "x": -91099,
+            "y": 279644,
+            "z": 3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 24,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 142001350,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开",
+          "areaId": 705,
+          "position": {
+            "x": -91418,
+            "y": 277926,
+            "z": 3415
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -49
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001351,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开6",
+          "areaId": 705,
+          "position": {
+            "x": -91331,
+            "y": 277978,
+            "z": 3432
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -79
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001352,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开7",
+          "areaId": 705,
+          "position": {
+            "x": -91416,
+            "y": 277909,
+            "z": 3494
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -164
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004203,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果21",
+          "areaId": 705,
+          "position": {
+            "x": -91493,
+            "y": 277919,
+            "z": 3415
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 17
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004204,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果22",
+          "areaId": 705,
+          "position": {
+            "x": -91365,
+            "y": 277985,
+            "z": 3510
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142006738,
+          "mapId": 8,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_地面用必要触发交互6",
+          "areaId": 705,
+          "position": {
+            "x": -91410,
+            "y": 278004,
+            "z": 3429
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 24,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 142003073,
+          "mapId": 8,
+          "blueprintType": "Quest030",
+          "name": "TsEntity_任务_信息触板4",
+          "areaId": 705,
+          "position": {
+            "x": -91046,
+            "y": 278700,
+            "z": 3524
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 47
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142006737,
+          "mapId": 8,
+          "blueprintType": "Quest097",
+          "name": "TsEntity_黄光点_桌面用必要触发交互3",
+          "areaId": 705,
+          "position": {
+            "x": -91047,
+            "y": 278698,
+            "z": 3532
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ähh... C-Chef... Ich habe unsere Vorräte überprüft, und es fehlen einige der Explosivladungen, die wir vor ein paar Tagen geholt haben. So um die zehn...",
+                "en": "Uhh... B-Boss... I was going over our supplies, and we're missing some of the Explosive Charges we hauled a couple of days ago. Like ten or so...",
+                "es": "Ehh... J-Jefe... Estaba revisando nuestras provisiones, y nos faltan algunas de las Cargas explosivas que transportamos hace un par de días. Como diez o algo así...",
+                "fr": "Patron... Patron... En vérifiant les fournitures, j'ai découvert qu'une dizaine Fruits bombants que nous avons volés l'autre jour... avaient disparu...",
+                "ja": "ボ、ボス！物資を確認してたら……前が奪った爆薬苞が、10個ぐらい無くなったって報告が……",
+                "ko": "두... 두목... 이틀 전에 빼앗은 봉오리 폭탄이 10개 이상이 부족해요...",
+                "th": "เอ่อ... ล-ลูกพี่... ฉันกำลังตรวจสอบเสบียงของเรา แล้วพบว่าประจุระเบิดที่เราขนมาเมื่อสองสามวันก่อนหายไปจำนวนหนึ่ง... ประมาณสิบกว่าลูกได้...",
+                "zh-Hans": "老……老大……清点物资的时候，发现前两天抢来的那批炸药苞，少了十多个……",
+                "zh-Hant": "老……老大……清點物資的時候，發現前兩天搶來的那批炸藥苞，少了十多個……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1085,
+                "name": {
+                  "zh-Hans": "流放者物资管理员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du sagst wie viele??!! Willst du, dass ich dich um die Ecke bringe? Du hattest nur eine Aufgabe!",
+                "en": "You say how many??!! Are you trying to make me end you? You had one job!",
+                "es": "¡¡¿¿Cuántas??!! ¿Estás tratando de hacer que te acabe? ¡Tenías un trabajo!",
+                "fr": "Combien ? !! Comment les as-tu surveillés ?",
+                "ja": "はあ！？！そんなに！？おめぇ、倉庫番だろ！どういうつもりだぁ！？",
+                "ko": "몇 개?!! 죽고 싶은 거야? 관리를 어떻게 하는 거야!!",
+                "th": "แกบอกว่าหายไปกี่ลูกนะ??!! แกอยากให้ฉันกำจัดแกทิ้งรึไง? แกมีหน้าที่เดียวเองนะ!",
+                "zh-Hans": "多少？！！你命不要了？怎么看管的？",
+                "zh-Hant": "多少？！！你命不要了？怎麼看管的？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 133,
+                "name": {
+                  "en": "Exile Leader",
+                  "ja": "追放者リーダー",
+                  "zh-Hans": "流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warte! Boss!! I-Ich... Ich habe denjenigen aufgespürt, der es getan hat!",
+                "en": "Wait! Boss!! I-I... I tracked down the one who did it!",
+                "es": "¡Espera! ¡Jefe! Yo... ¡Yo encontré al que lo hizo!",
+                "fr": "Patron ! Mais, mais, j'ai, j'ai trouvé où ils sont allés !",
+                "ja": "しっ……しかし、ボス！目星ならついてる！",
+                "ko": "두목, 잠시만요... 그래도 그 행방을 찾았으니 목숨만은 살려주세요",
+                "th": "เดี๋ยวก่อน! ลูกพี่!! ฉะ ฉัน... ฉันสืบเจอตัวคนที่ทำแล้ว!",
+                "zh-Hans": "老大！！但，但是，我，我调查到去向了！",
+                "zh-Hant": "老大！！但，但是，我，我調查到去向了！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1085,
+                "name": {
+                  "zh-Hans": "流放者物资管理员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es war dieser kleine Rotzlöffel <color=Highlight>Afeng</color>!",
+                "en": "It was that little brat <color=Highlight>Feng</color>!",
+                "es": "¡Fue ese pequeño mocoso <color=Highlight>Feng</color>!",
+                "fr": "C'est cet enfant stupide, <color=Highlight>Feng</color>, qui les a volés !",
+                "ja": "<color=Highlight>鋒</color>の奴が盗んだんだ！",
+                "ko": "<color=Highlight>열매</color>, 그 바보 녀석이 훔쳐 갔어요",
+                "th": "เป็นเจ้าเด็กบ้า <color=Highlight>Feng</color> นั่น!",
+                "zh-Hans": "是<color=Highlight>阿锋</color>那个傻小子偷走的！",
+                "zh-Hant": "是<color=Highlight>阿鋒</color>那個傻小子偷走的！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1085,
+                "name": {
+                  "zh-Hans": "流放者物资管理员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Jungs haben mir erzählt, dass der Kleine ständig von irgendeiner seltenen Kochzutat gefaselt hat, seit er diese Sprengladungen gesehen hat. Er meinte, er wollte damit kochen oder so...",
+                "en": "The guys told me the kid's been mumbling about some rare cooking ingredient, ever since he laid eyes on those charges. Said he wanted to cook with them or something...",
+                "es": "Los chicos me dijeron que el chiquillo ha estado murmurando sobre algún ingrediente de cocina raro, desde que puso los ojos en esas cargas. Dijo que quería cocinar con ellas o algo así...",
+                "fr": "Ils ont dit que le gamin n'arrêtait pas de parler des Fruits bombants depuis qu'il les avait vues... il parle des ingrédients rares et des plats délicieux...",
+                "ja": "どうやら、前々から爆薬苞に目ぇ付けてて、何か「美食の素材」やら「料理方法」やらブツブツ言ってたって……",
+                "ko": "그 녀석이 지난번에 봉오리 폭탄을 본 이후로, 뭐 희귀한 음식 재료, 어떤 음식을 만들 수 있을까...라고 말했데요",
+                "th": "พี่น้องของเราบอกว่าเจ้าเด็กนั่นเอาแต่พึมพำเรื่องวัตถุดิบทำอาหารหายากอะไรสักอย่าง ตั้งแต่ที่มันเห็นระเบิดพวกนั้น มันก็บอกว่าอยากจะเอามันไปทำอาหารหรืออะไรทำนองนั้นน่ะ...",
+                "zh-Hans": "他们说那小子自从上次看到炸药苞，就总是念叨着，什么稀有的美食材料，可以做什么什么菜……",
+                "zh-Hant": "他們說那小子自從上次看到炸藥苞，就總是念叨著，什麼稀有的美食材料，可以做什麼什麼菜……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1085,
+                "name": {
+                  "zh-Hans": "流放者物资管理员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie haben ihn zuletzt gesehen, wie er auf diese Koordinaten zusteuerte!",
+                "en": "They last saw him heading towards these coordinates!",
+                "es": "Lo vieron por última vez dirigiéndose hacia estas coordenadas!",
+                "fr": "Quelqu'un l'a vu se rendre à cette place !",
+                "ja": "つまり、きっとこの座標にいる！",
+                "ko": "여기 좌표요, 열매 녀석이 이곳으로 가는 걸 본 사람이 있어요",
+                "th": "ล่าสุดพวกเขาเห็นเจ้านั่นกำลังมุ่งหน้าไปยังพิกัดนี้!",
+                "zh-Hans": "已经有人看到他往这个坐标的位置去了！",
+                "zh-Hant": "已經有人看到他往這個座標的位置去了！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1085,
+                "name": {
+                  "zh-Hans": "流放者物资管理员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du Idiot! Hast du irgendeine Ahnung, wie viel Geld diese Sprengladungen uns einbringen könnten? Mach dich auf die Suche! JETZT!",
+                "en": "You idiot! Does that tiny brain of yours have any idea how much money those charges can make us? Get after them! NOW!",
+                "es": "¡Idiota! ¿Ese cerebro diminuto tuyo tiene alguna idea de cuánto dinero esas cargas pueden hacernos ganar? ¡Ve tras ellas! ¡AHORA!",
+                "fr": "Salaud ! Connaissez toi combien d'argent ces charges explosives peuvent nous rapporter ? Allez les récupérer maintenant !",
+                "ja": "ばか野郎！それを盗られるなんて大損だ！さっさと探せ！",
+                "ko": "이 망할 녀석! 이 봉오리 폭탄이면 돈을 얼마나 벌 수 있는지 알아? 몰라! 빨리 나가서 찾아오지 못해!!",
+                "th": "เจ้าโง่! สมองเล็กๆ ของแกเคยคิดบ้างไหมว่าระเบิดพวกนั้นจะทำเงินให้เราได้เท่าไหร่? ตามมันไป! เดี๋ยวนี้!",
+                "zh-Hans": "混账！知道这些炸药苞能给咱们挣多少钱吗！还不快去找回来！！",
+                "zh-Hant": "混賬！知道這些炸藥苞能給咱們掙多少錢嗎！還不快去找回來！！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 133,
+                "name": {
+                  "en": "Exile Leader",
+                  "ja": "追放者リーダー",
+                  "zh-Hans": "流放者首领"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 6,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Es scheint, dass dieser <color=Highlight>Afeng</color> viele Explosivladungen bei sich hat.",
+                "en": "Sounds like that <color=Highlight>Feng</color> has a lot of Explosive Charges on him.",
+                "es": "Parece que ese <color=Highlight>Feng</color> tiene muchas Cargas explosivas encima.",
+                "fr": "Cette personne qui s'apelle <color=Highlight>Feng</color> semble avoir beaucoup de Fruits bombants...",
+                "ja": "（<color=Highlight>鋒</color>という人が大量の爆薬苞を保有しているようだ）",
+                "ko": "<color=Highlight>열매</color>라는 사람의 손에 많은 봉오리 폭탄이 있는 것 같은데",
+                "th": "ฟังดูเหมือนว่าเจ้า <color=Highlight>Feng</color> นั่นจะมีประจุระเบิดอยู่กับตัวเยอะเลย",
+                "zh-Hans": "这个叫<color=Highlight>阿锋</color>的人手里似乎有许多炸药苞。",
+                "zh-Hant": "這個叫<color=Highlight>阿鋒</color>的人手裡似乎有許多炸藥苞。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die hier im Lager scheinen für Yongli nicht ganz auszureichen. Ich sollte <color=Highlight>Afeng</color> aufsuchen, sobald ich hier fertig bin.",
+                "en": "The ones in this camp don't seem quite enough for Yongli. I should go find <color=Highlight>Feng</color> once I'm done here.",
+                "es": "Las que hay en este campamento no parecen ser suficientes para Yongli. Debería ir a buscar a <color=Highlight>Feng</color> una vez que termine aquí.",
+                "fr": "Les Fruits bombants dans le camp n'est clairement pas suffisant pour donner à Yong Li. Il faut collecter ceux-ci et chercher<color=Highlight>Feng</color>.",
+                "ja": "（恐らく拠点にあるだけでは足りない。どうやら、この<color=Highlight>鋒</color>を訪ねる必要がある）",
+                "ko": "캠프에 있는 봉오리 폭탄만으로는 영려가 요구한 수량에 못 미치니 우선 이곳의 봉오리 폭탄을 모두 챙기고 좌표 정보를 따라 <color=Highlight>열매</color>를 찾아가서 물어보자",
+                "th": "ส่วนระเบิดที่อยู่ในค่ายนี้ดูเหมือนจะไม่พอให้ Yongli ลี่แฮะ พอเสร็จธุระที่นี่แล้ว ฉันควรจะไปตามหา<color=Highlight>Feng</color>ดูนะ",
+                "zh-Hans": "营地里的炸药苞数量明显不足以交给永励，收集完这里的，根据坐标信息去找<color=Highlight>阿锋</color>问问看吧。",
+                "zh-Hant": "營地裡的炸藥苞數量明顯不足以交給永勵，收集完這裡的，根據座標資訊去找<color=Highlight>阿鋒</color>問問看吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Exil Feng",
+        "en": "Talk to Exile Feng",
+        "es": "Habla con el Exiliado Feng",
+        "fr": "Collecter les sacs d'explosifs restants de Feng",
+        "ja": "追放者の鋒と話す",
+        "ko": "추방자 열매와 대화",
+        "th": "คุยกับ Feng ผู้ถูกเนรเทศ",
+        "zh-Hans": "和流放者阿锋交谈",
+        "zh-Hant": "和流放者阿鋒交談"
+      },
+      "entities": [
+        {
+          "entityId": 142001338,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男17",
+          "areaId": 705,
+          "position": {
+            "x": -97221,
+            "y": 304051,
+            "z": 3627
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -111
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001369,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开41",
+          "areaId": 705,
+          "position": {
+            "x": -97641,
+            "y": 303752,
+            "z": 3681
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001370,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开42",
+          "areaId": 705,
+          "position": {
+            "x": -97735,
+            "y": 303772,
+            "z": 3681
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 67
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001371,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开43",
+          "areaId": 705,
+          "position": {
+            "x": -97690,
+            "y": 303756,
+            "z": 3763
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 76
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001372,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开44",
+          "areaId": 705,
+          "position": {
+            "x": -97815,
+            "y": 303792,
+            "z": 3681
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -23
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Woher kommst du? Du... Du bist hierher gekommen wegen des Aromas, nicht wahr?",
+                "en": "Where did you come from? You... You got here because of the aroma, didn't you?",
+                "es": "¿De dónde vienes? Tú... ¿Llegaste aquí por el aroma, no es así?",
+                "fr": "Un passant ? Avez-vous été... attiré par l'odeur qui flottait dans l'air ?",
+                "ja": "旅の者か？あんたも、この匂いに釣られて来たのか？",
+                "ko": "당신은... 공기 중의 향기에 이끌려 온 건가요?",
+                "th": "คุณมาจากที่ไหนกัน? คุณ... คุณมาที่นี่เพราะได้กลิ่นหอมใช่ไหม?",
+                "zh-Hans": "过路人？你……是被空气中的香气吸引来的？",
+                "zh-Hant": "過路人？你……是被空氣中的香氣吸引來的？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Aroma?",
+                    "en": "Aroma?",
+                    "es": "¿Aroma?",
+                    "fr": "Odeur ?",
+                    "ja": "匂い？",
+                    "ko": "어떤 향기요?",
+                    "th": "กลิ่นหอมเหรอ?",
+                    "zh-Hans": "什么的香气？",
+                    "zh-Hant": "什麼的香氣？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin hier wegen der Explosivladungen.",
+                    "en": "I came here for the Explosive Charges.",
+                    "es": "Vine aquí por las Cargas explosivas.",
+                    "fr": "Je suis ici pour les Fruits bombants.",
+                    "ja": "爆薬苞を取りに来た。",
+                    "ko": "봉오리 폭탄을 가지러 왔어요",
+                    "th": "ฉันมาที่นี่เพื่อเอาประจุระเบิด",
+                    "zh-Hans": "我是来要炸药苞的。",
+                    "zh-Hant": "我是來要炸藥苞的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist ein neues Rezept, das ich gerade erfunden habe, bei dem Explosivladungen eine der Zutaten sind - Bombastisch.",
+                "en": "It's a new recipe I just came up with, using Explosive Charges as one of the ingredients — Bomblicious.",
+                "es": "Es una nueva receta que acabo de inventar, usando Cargas explosivas como uno de los ingredientes — Bombazo.",
+                "fr": "Mon nouveau plat, dont l'ingrédient est le Fruit bombant, est « Bomblicieux ».",
+                "ja": "俺の新作料理、爆薬苞を使った……「バンバン花火」！",
+                "ko": "제가 개발한 새로운 요리예요. 봉오리 폭탄을 사용해서 만든 펑펑 폭발죽이에요",
+                "th": "มันเป็นสูตรอาหารใหม่ที่ฉันเพิ่งคิดค้นขึ้นมา โดยใช้ประจุระเบิดเป็นหนึ่งในวัตถุดิบ เรียกว่าระเบิดตูมตาม",
+                "zh-Hans": "我研制的新菜，用炸药苞作为食材做出的——砰砰炮仗。",
+                "zh-Hant": "我研製的新菜，用炸藥苞作為食材做出的——砰砰炮仗。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und ich weiß, was du denkst. Explosivladungen zum Kochen sind nicht gerade die beliebteste Wahl, vor allem wegen der zusätzlichen Risiken.",
+                "en": "And I know what you're thinking. Explosive Charges for cooking aren't the most popular choice, especially with the added risks.",
+                "es": "Y sé lo que estás pensando. Las Cargas explosivas para cocinar no son la opción más popular, especialmente con los riesgos añadidos.",
+                "fr": "Ne soyez pas surpris. Le Fruit bombant n'est pas un ingrédient courant et comporte un certain risque.",
+                "ja": "ああ、待ってくれ。食材として使うには危険だってことは承知している……",
+                "ko": "놀라지 마세요. 봉오리 폭탄이 식재료로 흔하지는 않고 어느 정도 위험성을 가지고 있지만",
+                "th": "และฉันรู้ว่าคุณกำลังคิดอะไรอยู่ การใช้ประจุระเบิดทำอาหารไม่ใช่ตัวเลือกที่ได้รับความนิยมนักหรอกนะ ยิ่งเมื่อคำนึงถึงความเสี่ยงที่เพิ่มเข้ามาแล้ว",
+                "zh-Hans": "别惊讶，虽然炸药苞作为食材并不常见，而且带有一定的危险性。",
+                "zh-Hant": "別驚訝，雖然炸藥苞作為食材並不常見，而且帶有一定的危險性。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn du die Eigenschaften der verschiedenen Zutaten richtig mit ihnen kombinierst, erwartet dich der Genuss deines Lebens.",
+                "en": "But by correctly combining the properties of different ingredients with it, you'll be in for a treat of your lifetime.",
+                "es": "Pero al combinar correctamente las propiedades de diferentes ingredientes con ella, te espera una delicia de tu vida.",
+                "fr": "Mais si l'on harmonise bien, l'associe à d'autres ingrédients, on peut obtenir un plat stimulant...",
+                "ja": "それでも細心の注意を払い、他の食材とうまく調理すれば……刺激的な、最高の美食となる。",
+                "ko": "다른 재료와 잘 조합하면 안전하면서도 짜릿한 최고의 음식을 만들 수 있어요",
+                "th": "แต่การผสมผสานคุณสมบัติของวัตถุดิบต่างๆ กับมันอย่างถูกต้อง จะทำให้คุณได้ลิ้มรสชาติอาหารที่เลิศรสที่สุดในชีวิตเลยล่ะ",
+                "zh-Hans": "不过如果搭配好属性，配合其他效果的食材，就能做出刺激的绝顶美食。",
+                "zh-Hant": "不過如果搭配好屬性，配合其他效果的食材，就能做出刺激的絕頂美食。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mir fehlen noch ein paar wichtige Zutaten. Glaubst du, du könntest mir helfen, einige zu besorgen?",
+                "en": "I'm still missing a few key ingredients. Do you think you can help me get some?",
+                "es": "Todavía me faltan algunos ingredientes clave. ¿Crees que puedes ayudarme a conseguir algunos?",
+                "fr": "Cependant, il manque à ce plat quelques ingrédients clés. Pouvez-vous m'aider à les récupérer ?",
+                "ja": "と言っても、肝心な食材はこれから集めるんだけどな。なあ、手伝ってくれないか？",
+                "ko": "다만, 지금은 요리의 몇 가지 핵심 재료가 부족한 상태예요. 재료의 수집을 좀 도와주실래요?",
+                "th": "ฉันยังขาดวัตถุดิบสำคัญอยู่อีกสองสามอย่าง คุณคิดว่าจะช่วยหามาได้หรือไม่?",
+                "zh-Hans": "不过，现在这道菜还差几样关键食材，你能帮我收集食材吗？",
+                "zh-Hant": "不過，現在這道菜還差幾樣關鍵食材，你能幫我收集食材嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sicher. Aber ich möchte etwas im Gegenzug.",
+                    "en": "Sure. But I want something in return.",
+                    "es": "Claro. Pero quiero algo a cambio.",
+                    "fr": "Oui, mais je vais échanger quelque chose avec vous.",
+                    "ja": "いいけど、条件がある。",
+                    "ko": "가능해요. 단, 조건이 있어요",
+                    "th": "ได้สิ แต่ฉันต้องการสิ่งตอบแทนอะไรบ้าง",
+                    "zh-Hans": "可以，但我有条件。",
+                    "zh-Hant": "可以，但我有條件。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was ist das?",
+                "en": "What is it?",
+                "es": "¿Qué es?",
+                "fr": "De quoi vous voulez ?",
+                "ja": "何の条件？",
+                "ko": "어떤 조건이죠?",
+                "th": "ต้องการอะไรล่ะ?",
+                "zh-Hans": "什么条件？",
+                "zh-Hant": "什麼條件？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich möchte zehn Explosivladungen.",
+                    "en": "I want ten Explosive Charges.",
+                    "es": "Quiero diez Cargas explosivas.",
+                    "fr": "Donnez-moi dix Fruits bombants.",
+                    "ja": "爆薬苞を10個くらいくれ。",
+                    "ko": "봉오리 폭탄 열 개만 주세요",
+                    "th": "ฉันต้องการประจุระเบิดสิบลูก",
+                    "zh-Hans": "给我十个炸药苞。",
+                    "zh-Hant": "給我十個炸藥苞。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie wusstest du, dass ich so viele Ladungen habe...? Ach, egal...",
+                "en": "How did you know I had so many charges...? Ugh. Never mind...",
+                "es": "¿Cómo sabías que tenía tantas cargas...? Ugh. No importa...",
+                "fr": "Comment savez-vous que j'ai des fruits ? Euh, laisse tomber...",
+                "ja": "どこからそんな話を聞いたんだ……？別にいいけど……",
+                "ko": "저한테 봉오리 폭탄이 있는 걸 어떻게 아셨나요? 뭐… 상관없어요",
+                "th": "คุณรู้ได้อย่างไรว่าฉันมีระเบิดมากมายขนาดนั้น...? เอ่อ ช่างมันเถอะ...",
+                "zh-Hans": "你怎么知道我这有炸药苞？呃，算了……",
+                "zh-Hant": "你怎麼知道我這有炸藥苞？呃，算了……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Besorg mir den Rest meiner Zutaten, ich vervollständige mein Rezept, und der Rest der Explosivladungen gehört dir.",
+                "en": "You get me the rest of my ingredients, I complete my recipe, and the rest of the Explosive Charges are all yours.",
+                "es": "Consígueme el resto de mis ingredientes, completo mi receta, y el resto de las Cargas explosivas serán todas tuyas.",
+                "fr": "Lorsque vous m'aurez aidé à collecter les ingrédients et que mon nouveau plat aura été développé avec succès, je vous donnerai les Fruits bombants restants.",
+                "ja": "食材を集め、料理開発が成功すれば、ここにある全ての爆薬苞をあげよう。",
+                "ko": "식재료를 찾아주고, 제가 새로운 요리에 성공하면 제가 가지고 있는 남은 봉오리 폭탄을 모두 드릴게요",
+                "th": "คุณไปหาวัตถุดิบที่เหลือมา ฉันทำอาหารตามสูตรของฉันให้เสร็จ แล้วประจุระเบิดที่เหลือคุณก็เอาไปให้หมด",
+                "zh-Hans": "等你帮我找齐食材，我的新菜研发成功的话，我这里剩下的炸药苞都送你。",
+                "zh-Hant": "等你幫我找齊食材，我的新菜研發成功的話，我這裡剩下的炸藥苞都送你。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe mein Leben riskiert, um diese zu bekommen, kann sie nicht verschwenden.",
+                "en": "I risked my life getting these out, can't let them go to waste.",
+                "es": "Arriesgué mi vida para conseguir estas, no puedo dejar que se desperdicien.",
+                "fr": "J'ai risqué ma vie de voler ces fruits ! Ils ne peuvent être gaspillées.",
+                "ja": "命がけで盗んだものを、無駄遣いするつもりはないからね。",
+                "ko": "목숨을 걸고 훔친 물건이라 절대 낭비할 수 없어요",
+                "th": "ฉันเสี่ยงชีวิตเพื่อให้ได้พวกมันมา จะปล่อยให้มันสูญเปล่าไม่ได้",
+                "zh-Hans": "冒着生命危险偷出来的东西，可不能浪费掉。",
+                "zh-Hant": "冒著生命危險偷出來的東西，可不能浪費掉。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zurück zur Jagd. Ich brauche immer noch <color=Highlight>Chromeschalen, Perillas und Düsterschlamme. Drei von jedem.</color> Denkst du, du kannst sie für mich bekommen?",
+                "en": "Back to the chase. I still need <color=Highlight>Chromeshells, Perillas, and Gloom Sloughs. Three of each.</color> You think you can get them for me?",
+                "es": "De vuelta a la caza. Todavía necesito <color=Highlight>Caparazones de cromo, Perillas y Pantanos sombríos. Tres de cada uno.</color> ¿Crees que puedes conseguirlos para mí?",
+                "fr": "Pour en revenir au sujet, j'ai besoin de <color=Highlight>trois Coquilles radieuses, trois portions de Perilla, et trois pièces d'Exuvies de cigale bleu</color>, pouvez-vous les trouver ?",
+                "ja": "話を戻そう。今は<color=Highlight>錦色貝3つ、香蘇3本、隠火蛻3つ</color>が欲しい、集めてきてくれないか？",
+                "ko": "본론으로 돌아가서 <color=Highlight>비단 조개, 자소엽, 형광 선퇴</color> 각각 3개가 더 필요해요. 찾을 수 있겠어요?",
+                "th": "กลับเข้าเรื่องกันดีกว่า ฉันยังต้องการ<color=Highlight>หอยเปลือกมุก งาขี้ม่อน และคราบเงาเพลิงอย่างละสามชิ้น</color> คุณคิดว่าจะหามาให้ฉันได้ไหม?",
+                "zh-Hans": "言归正传，我还需要<color=Highlight>三个锦色贝、三个香苏、三只隐火蜕</color>，你能找到吗？",
+                "zh-Hant": "言歸正傳，我還需要<color=Highlight>三個錦色貝、三個香蘇、三只隱火蛻</color>，你能找到嗎？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Abgemacht.",
+                    "en": "Deal.",
+                    "es": "Trato hecho.",
+                    "fr": "D'accord, marché conclu.",
+                    "ja": "{Male=いいよ、任せてくれ。;Female=いいよ、任せて。}",
+                    "ko": "금방 찾아올게요",
+                    "th": "ตกลงตามนี้",
+                    "zh-Hans": "好，成交。",
+                    "zh-Hant": "好，成交。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das ist viel Arbeit. Ich denke, ich werde passen.",
+                    "en": "That's a lot of work. I think I'll pass.",
+                    "es": "Es mucho trabajo. Creo que pasaré.",
+                    "fr": "Quel ennui, oubliez-le.",
+                    "ja": "面倒くさいからやめておく。",
+                    "ko": "귀찮네요. 필요 없어요",
+                    "th": "นี่มันหลายอย่างเลยนะเนี่ย ขอผ่านดีกว่า",
+                    "zh-Hans": "好麻烦，算了。",
+                    "zh-Hant": "好麻煩，算了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "In Ordnung. Ich werde hier sein.",
+                "en": "All right. I'll be right here.",
+                "es": "De acuerdo. Te espero aquí.",
+                "fr": "D'accord, j'attends votre retour.",
+                "ja": "面倒……また今度にしよう。",
+                "ko": "그럼, 돌아오기를 기다리고 있을게요",
+                "th": "ก็ได้ ฉันจะรออยู่ที่นี่แหละ",
+                "zh-Hans": "好，我等你回来。",
+                "zh-Hant": "好，我等你回來。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay dann.",
+                "en": "Okay then.",
+                "es": "De acuerdo entonces.",
+                "fr": "D'accord.",
+                "ja": "そうか。",
+                "ko": "알겠어요",
+                "th": "ถ้าอย่างนั้นก็ได้",
+                "zh-Hans": "好吧。",
+                "zh-Hant": "好吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "parentId": 29,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 142001338,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男17",
+          "areaId": 705,
+          "position": {
+            "x": -97221,
+            "y": 304051,
+            "z": 3627
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -111
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 7,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun? Haben wir einen Deal?",
+                "en": "Well? Do we have a deal?",
+                "es": "¿Entonces? ¿Tenemos un trato?",
+                "fr": "Comment ça va, vous avez pris la décision ?",
+                "ja": "どう？考え直してくれた？",
+                "ko": "어때요, 생각은 다 하셨나요?",
+                "th": "ว่าอย่างไร? เราตกลงกันได้หรือยัง?",
+                "zh-Hans": "怎么样，想好没有？",
+                "zh-Hant": "怎麼樣，想好沒有？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Besorg mir <color=Highlight>Chromeschalen, Perillas und Düsterschlamme, drei von jedem,</color> und ich werde dir einige meiner Explosivladungen überlassen.",
+                "en": "Get me <color=Highlight>Chromeshells, Perillas, and Gloom Sloughs, three of each,</color> and I'll spare some of my Explosive Charges for you.",
+                "es": "Consígueme <color=Highlight>Caparazones de cromo, Perillas y Pantanos sombríos, tres de cada uno,</color> y te dejaré algunas de mis Cargas explosivas.",
+                "fr": "Apportez-moi <color=Highlight>trois Coquilles radieuses, trois Perilla, trois Exuvies de cigale bleu</color>. Je vous donnerai des explosifs en surplus.",
+                "ja": "<color=Highlight>錦色貝3つ、香蘇3本、隠火蛻3つ</color>を集めてきてくれれば、残りの爆薬苞を全て渡そう。",
+                "ko": "<color=Highlight>비단 조개, 자소엽, 형광 선퇴</color>을 각각 3개씩만 모아다 주면 여분의 봉오리 폭탄을 드릴게요",
+                "th": "ไปหา<color=Highlight>หอยเปลือกมุก งาขี้ม่อน และคราบเงาเพลิงอย่างละสามชิ้น</color> แล้วฉันจะแบ่งประจุระเบิดของฉันให้คุณ",
+                "zh-Hans": "收集<color=Highlight>三个锦色贝、三个香苏、三只隐火蜕</color>给我，我就给你多余的炸药苞。",
+                "zh-Hant": "收集<color=Highlight>三個錦色貝、三個香蘇、三只隱火蛻</color>給我，我就給你多餘的炸藥苞。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wofür brauchst du diese Zutaten?",
+                    "en": "What do you need these ingredients for?",
+                    "es": "¿Para qué necesitas estos ingredientes?",
+                    "fr": "Pourquoi vous avez besoin de tout ça ?",
+                    "ja": "なんで必要なの？",
+                    "ko": "왜 이런 것들이 필요하죠?",
+                    "th": "คุณต้องการวัตถุดิบเหล่านี้ไปทำอะไร?",
+                    "zh-Hans": "为什么需要这些？",
+                    "zh-Hant": "為什麼需要這些？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Abgemacht.",
+                    "en": "Deal.",
+                    "es": "Trato hecho.",
+                    "fr": "Je vais les récupérer.",
+                    "ja": "手伝ってやろう。",
+                    "ko": "제가 찾아다 줄게요",
+                    "th": "ตกลงตามนี้",
+                    "zh-Hans": "我帮你找。",
+                    "zh-Hant": "我幫你找。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das ist viel Arbeit. Ich glaube, ich verzichte.",
+                    "en": "That's a lot of work. I think I'll pass.",
+                    "es": "Es mucho trabajo. Creo que pasaré.",
+                    "fr": "C'est trop compliqué. Laisser tomber.",
+                    "ja": "面倒……やっぱり今度にしよう。",
+                    "ko": "귀찮네요. 필요 없어요",
+                    "th": "นี่มันหลายอย่างเลยนะเนี่ย ขอผ่านดีกว่า",
+                    "zh-Hans": "好麻烦，算了。",
+                    "zh-Hant": "好麻煩，算了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Chromeschalen dienen zur Ausbalancierung der Hitze-Eigenschaften der Explosivladung.",
+                "en": "Chromeshells are for balancing out the Explosive Charge's heat properties.",
+                "es": "Los Caparazones de cromo son para equilibrar las propiedades de calor de la Carga explosiva.",
+                "fr": "Les Coquilles radieuses sont utilisées pour neutraliser les propriétés thermiques des explosifs.",
+                "ja": "錦色貝は爆薬苞の熱量を中和させ……",
+                "ko": "비단 조개는 봉오리 폭탄의 열적 특성을 중화시키는 데 사용돼요",
+                "th": "หอยเปลือกมุกเอาไว้ปรับสมดุลคุณสมบัติด้านความร้อนของประจุระเบิด",
+                "zh-Hans": "锦色贝用来中和炸药苞的热气属性。",
+                "zh-Hant": "錦色貝用來中和炸藥苞的熱氣屬性。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Perillas werden zur Geschmacksverstärkung verwendet.",
+                "en": "Perillas are used for enhancing flavors.",
+                "es": "Las Perillas se utilizan para realzar sabores.",
+                "fr": "Les Perillas ajoutent de la saveur et de l'arôme.",
+                "ja": "香蘇は味と匂いを与え……",
+                "ko": "자소엽은 향을 돋우어 맛을 내는 데 사용돼요",
+                "th": "งาขี้ม่อนใช้สำหรับเพิ่มรสชาติ",
+                "zh-Hans": "香苏用来增香提味。",
+                "zh-Hant": "香蘇用來增香提味。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und Düsterschlamme zur Eindämmung explosiver Reaktionen.",
+                "en": "And Gloom Sloughs for containing any explosive reactions.",
+                "es": "Y los Pantanos sombríos para contener cualquier reacción explosiva.",
+                "fr": "Les exuvies de cigale bleu sont utilisées pour contrôler les propriétés explosives des explosifs.",
+                "ja": "そして、隠火蛻は爆発の規模を抑える。",
+                "ko": "형광 선퇴는 봉오리 폭탄의 폭발 속성을 제어하기 위한 거예요",
+                "th": "และคราบเงาเพลิงเอาไว้ใช้ควบคุมปฏิกิริยาการระเบิด",
+                "zh-Hans": "隐火蜕是为了控制炸药苞的爆炸属性。",
+                "zh-Hant": "隱火蛻是為了控制炸藥苞的爆炸屬性。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alle drei Zutaten findest du im Düsteren Wald.",
+                "en": "You'll find all three ingredients in the Dim Forest.",
+                "es": "Encontrarás los tres ingredientes en el Bosque Oscuro.",
+                "fr": "Vous pouvez les trouver dans la Forêt aveuglantes.",
+                "ja": "これらは全部、光なき森で見つけられるよ。",
+                "ko": "이것들은 모두 암흑 밀림에서 찾을 수 있어요",
+                "th": "คุณจะพบวัตถุดิบทั้งสามอย่างได้ในป่าสลัว",
+                "zh-Hans": "这些都能在无光之森找到。",
+                "zh-Hant": "這些都能在無光之森找到。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann mal los. Ich warte hier.",
+                "en": "Off you go then. I'll be right here.",
+                "es": "Entonces, vete. Aquí te espero.",
+                "fr": "Apportez-moi ces trucs. J'attends ici.",
+                "ja": "じゃあ、頼んだ。俺はここで待ってる。",
+                "ko": "결정되면 출발하세요. 전 여기서 기다릴게요",
+                "th": "ถ้าเช่นนั้นก็ไปได้แล้ว ฉันจะรออยู่ตรงนี้แหละ",
+                "zh-Hans": "决定好了就出发吧，我在这里等你。",
+                "zh-Hant": "決定好了就出發吧，我在這裡等你。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann mal los. Ich warte hier.",
+                "en": "Off you go then. I'll be right here.",
+                "es": "Vete entonces. Yo estaré aquí.",
+                "fr": "Apportez-moi ces trucs. J'attends ici.",
+                "ja": "じゃあ、頼んだ。俺はここで待ってる。",
+                "ko": "결정되면 출발하세요. 전 여기서 기다릴게요",
+                "th": "ถ้าเช่นนั้นก็ไปได้แล้ว ฉันจะรออยู่ตรงนี้แหละ",
+                "zh-Hans": "决定好了就出发吧，我在这里等你。",
+                "zh-Hant": "決定好了就出發吧，我在這裡等你。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay dann.",
+                "en": "Okay then.",
+                "es": "De acuerdo entonces.",
+                "fr": "D'accord.",
+                "ja": "そうか。",
+                "ko": "알겠어요",
+                "th": "ถ้าอย่างนั้นก็ได้",
+                "zh-Hans": "好吧。",
+                "zh-Hant": "好吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sammle Zutaten und liefere sie an Feng",
+        "en": "Collect ingredients and deliver them to Feng",
+        "es": "Recoge los ingredientes y entrégaselos a Feng",
+        "fr": "Collecter des ingrédients pour Feng",
+        "ja": "食材を集め、鋒に渡す",
+        "ko": "식재료를 수집하여 열매에게 전달",
+        "th": "รวบรวมวัตถุดิบ และมอบให้ Feng",
+        "zh-Hans": "收集食材交给阿锋",
+        "zh-Hant": "收集食材交給阿鋒"
+      },
+      "entities": [
+        {
+          "entityId": 142001338,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男17",
+          "areaId": 705,
+          "position": {
+            "x": -97221,
+            "y": 304051,
+            "z": 3627
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -111
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 8,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Sehr gut. Hätte nicht erwartet, dass du sie so schnell findest.",
+                "en": "Very nice. Didn't expect you to them this fast.",
+                "es": "Muy bien. No esperaba que los trajeras tan rápido.",
+                "fr": "Bien. Je n'imagine que vous pouvez trouver ces matériaux aussi rapidement.",
+                "ja": "さすがだ。短期間で全部揃うとは。",
+                "ko": "오, 이렇게 빨리 재료들을 찾아올 줄은 몰랐어요",
+                "th": "เยี่ยมเลย ไม่คิดว่าคุณจะหามาได้เร็วขนาดนี้",
+                "zh-Hans": "不错，没想到你能这么快就找齐这些材料。",
+                "zh-Hant": "不錯，沒想到你能這麼快就找齊這些材料。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt ist es Zeit für die Magie. Warte einfach.",
+                "en": "Now, time for the magic to happen. Just wait.",
+                "es": "Ahora, es hora de que la magia suceda. Solo espera.",
+                "fr": "Je vais commencer. Regardez bien.",
+                "ja": "ここからは俺の出番だ。見てろよ！",
+                "ko": "우선 바로 시작할 테니, 구경하세요",
+                "th": "เอาล่ะ ถึงเวลาที่เวทมนตร์จะบังเกิดแล้ว คอยดูเถิด",
+                "zh-Hans": "我这就开始，瞧着吧。",
+                "zh-Hant": "我這就開始，瞧著吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Betrachte diesen Tag als deinen Glückstag, mein Freund. Nicht viele Menschen haben die Gelegenheit, so eine Delikatesse zu probieren, weißt du.",
+                "en": "Consider this your lucky day, my friend. Not many people have the opportunity to taste such delicacy you know.",
+                "es": "Considera este tu día de suerte, amigo. No muchas personas tienen la oportunidad de probar tal delicia, ya sabes.",
+                "fr": "Vous avez de la chance. Vous pouvez goûter la gastronomie comme ça !",
+                "ja": "あんた、運がいいね。これほどの絶品を口にする機会なんて滅多にない。",
+                "ko": "이런 수준 높은 음식을 맛보실 수 있다니 오늘 운이 좋으신가 보네요",
+                "th": "นี่ถือว่าเป็นวันโชคดีของคุณแล้วสหาย มีคนไม่มากนักหรอกนะที่มีโอกาสได้ลิ้มรสอาหารอันโอชะเช่นนี้",
+                "zh-Hans": "今天算你运气好，能亲口品尝到这种等级的美食。",
+                "zh-Hant": "今天算你運氣好，能親口品嚐到這種等級的美食。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Los, probier mal. Nimm einen Bissen.",
+                "en": "Go ahead. Take a mouthful.",
+                "es": "Adelante. Toma un bocado.",
+                "fr": "Essayez-le.",
+                "ja": "さあ、食ってみろ。",
+                "ko": "드셔보세요",
+                "th": "เอาเลย ลองชิมสักคำสิ",
+                "zh-Hans": "尝尝吧。",
+                "zh-Hant": "嚐嚐吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Soll es... so brennen...?",
+                    "en": "Is it... supposed to be in flames like that...?",
+                    "es": "¿Se supone que... debe estar en llamas así...?",
+                    "fr": "Le plat... est en feu...",
+                    "ja": "……真っ赤に燃えている！？",
+                    "ko": "음식에서... 불이 나요",
+                    "th": "มัน... ควรจะมีไฟลุกแบบนั้นด้วยหรือ...?",
+                    "zh-Hans": "食物……在着火……",
+                    "zh-Hant": "食物……在著火……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Genau. Das ist das Zeichen, dass du das authentische \"Bombastische\" probierst.",
+                "en": "Exactly. That's when you know you're having authentic \"Bomblicious.\"",
+                "es": "Exactamente. Eso es cuando sabes que estás probando un auténtico “Bombazo”.",
+                "fr": "C'est la caractéristique de « Bomblicieiux ».",
+                "ja": "何を驚く。これこそ「バンバン花火」の特徴だ。",
+                "ko": "별것 아닌 일에 그렇게 놀라지 않아도 돼요. 이게 바로 「펑펑 폭발죽」의 특색이에요",
+                "th": "ถูกต้อง นั่นแหละคุณถึงจะรู้ว่ากำลังจะได้กิน \"ระเบิดตูมตาม\" ของแท้",
+                "zh-Hans": "大惊小怪，这是“砰砰炮仗”的特色。",
+                "zh-Hant": "大驚小怪，這是「砰砰炮仗」的特色。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube, ich verzichte.",
+                    "en": "I think I'll pass.",
+                    "es": "Creo que pasaré.",
+                    "fr": "Non, merci.",
+                    "ja": "遠慮しとく……",
+                    "ko": "안 먹을래요",
+                    "th": "ฉันว่าฉันขอผ่านดีกว่า",
+                    "zh-Hans": "还是算了。",
+                    "zh-Hant": "還是算了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Okay. Nur ein Bissen.",
+                    "en": "Okay. Just one bite.",
+                    "es": "Vale. Solo un bocado.",
+                    "fr": "Goûter un peu.",
+                    "ja": "一口だけなら……",
+                    "ko": "한 입만 먹을게요",
+                    "th": "ก็ได้ แค่คำเดียวนะ",
+                    "zh-Hans": "就尝一口。",
+                    "zh-Hant": "就嚐一口。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie du willst. Dann genieße ich es eben ganz für mich alleine.",
+                "en": "Suit yourself. I'll enjoy it all to myself then.",
+                "es": "Como quieras. Lo disfrutaré todo para mí entonces.",
+                "fr": "Très bien, je vais profiter de ce festin tout seul.",
+                "ja": "いいだろう。なら、俺がいただくまでだ。",
+                "ko": "흠, 알겠어요. 그럼 저 혼자 이 행복을 즐겨야죠",
+                "th": "ตามใจคุณ ถ้าอย่างนั้นฉันจะกินมันทั้งหมดคนเดียวเอง",
+                "zh-Hans": "行吧，那这份大餐我就自己独享了。",
+                "zh-Hant": "行吧，那這份大餐我就自己獨享了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mmmhmm... Das Aroma... Die wunderbare Textur... Ohhh...",
+                "en": "Mmmhmm... The aroma... The wonderful texture... Ohhh...",
+                "es": "Mmmhmm... El aroma... La maravillosa textura... Ohhh...",
+                "fr": "Hmm... cet arôme... ce goût merveilleux...",
+                "ja": "ふむ……この香り……この繊細な舌触り……",
+                "ko": "음... 이 향기가... 이 미묘한 식감이...",
+                "th": "อืมมม... กลิ่นหอมนี้... เนื้อสัมผัสอันยอดเยี่ยม... โอ้โห...",
+                "zh-Hans": "嗯……这香气……这美妙的口感……",
+                "zh-Hant": "嗯……這香氣……這美妙的口感……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na? Was denkst du?",
+                "en": "Well? What do you think?",
+                "es": "¿Y bien? ¿Qué te parece?",
+                "fr": "Magnifique, non ?",
+                "ja": "味は？",
+                "ko": "맛이 어때요?",
+                "th": "เป็นไงล่ะ? รสชาติเป็นอย่างไร?",
+                "zh-Hans": "味道怎么样？",
+                "zh-Hant": "味道怎麼樣？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es ist anders als alles, was ich je zuvor probiert habe.",
+                    "en": "It's unlike anything I've ever tasted before.",
+                    "es": "No es como nada que haya probado antes.",
+                    "fr": "C'est un goût que je n'ai jamais connu auparavant.",
+                    "ja": "初体験の味。",
+                    "ko": "처음 먹어보는 맛이에요",
+                    "th": "มันไม่เหมือนอะไรที่ฉันเคยลิ้มรสมาก่อนเลย",
+                    "zh-Hans": "是从没吃到过的味道。",
+                    "zh-Hant": "是從沒吃到過的味道。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich wusste es. Niemand kann dem aufstachelnden Gefühl widerstehen.",
+                "en": "I knew it. No one can resist the spurring sensation.",
+                "es": "Lo sabía. Nadie puede resistir la sensación de estímulo.",
+                "fr": "Je le savais, personne ne peut résister à ce goût excitant.",
+                "ja": "だろうな。こんな刺激的な味、他にない！",
+                "ko": "그럴 줄 알았어요. 아무도 이 짜릿한 맛을 거부할 수 없죠",
+                "th": "ฉันรู้อยู่แล้ว ไม่มีใครสามารถต้านทานความรู้สึกอันเร้าใจนี้ได้หรอก",
+                "zh-Hans": "我就知道，没有人能拒绝这种刺激的美味。",
+                "zh-Hant": "我就知道，沒有人能拒絕這種刺激的美味。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Huh? Warte, deine Nase... Du hast Rauch, der aus deiner Nase kommt...",
+                "en": "Huh? Wait, your nose... You have smoke coming out of your nose...",
+                "es": "¿Eh? Espera, tu nariz... Tienes humo saliendo de tu nariz...",
+                "fr": "Attendez, vos narines fument...",
+                "ja": "待て。あんたの鼻から煙が……",
+                "ko": "아, 잠깐만요. 콧구멍에서 연기가 나네요...",
+                "th": "หืม? เดี๋ยว จมูกของคุณ... มีควันออกมาจากจมูกคุณแน่ะ...",
+                "zh-Hans": "诶等等，你的鼻孔在冒烟……",
+                "zh-Hant": "欸等等，你的鼻孔在冒煙……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja... Das sind die Explosivladungen, die ihre Arbeit tun. Ich kann mit Sicherheit sagen, dass das neue Rezept ein Erfolg ist.",
+                "en": "Yes... That's the Explosive Charges doing their work. I can confidently say the new recipe is a success.",
+                "es": "Sí... Eso es la Carga explosiva haciendo su trabajo. Puedo decir con confianza que la nueva receta es un éxito.",
+                "fr": "Génial, c'est la force du Fruit bombant. Mon nouveau plat développé aujourd'hui est un succès.",
+                "ja": "それにしても、さすが爆薬苞だ。今日の新作研究も捗った！",
+                "ko": "역시 봉오리 폭탄이네요. 오늘의 새로운 요리 연구 개발도 성공적이네요",
+                "th": "ใช่... ประจุระเบิดกำลังทำงานของมันอยู่ ฉันพูดได้อย่างมั่นใจเลยว่า สูตรอาหารใหม่นี้ประสบความสำเร็จ",
+                "zh-Hans": "嗯……不愧是炸药苞，今天的新菜研发也非常成功。",
+                "zh-Hant": "嗯……不愧是炸藥苞，今天的新菜研發也非常成功。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses Rezept wäre ohne dich nicht zustande gekommen. Wie versprochen, sind der Rest meiner Explosivladungen deine.",
+                "en": "This recipe wouldn't have happened without you. As promised, the rest of my Explosive Charges are yours.",
+                "es": "Esta receta no habría sido posible sin ti. Como prometí, el resto de mis <color=Highlight>Cargas explosivas</color> son tuyas.",
+                "fr": "Vous avez beaucoup contribué à la naissance de ce plat, comme nous l'avons convenu, vous pouvez prendre les Fruits bombants.",
+                "ja": "あんたなくして、この料理は生まれなかった。残りの爆薬苞は持っていってくれ。",
+                "ko": "이 음식이 순조롭게 탄생한 건 모두 당신 덕분이니 남은 봉오리 폭탄은 약속대로 모두 가져가세요",
+                "th": "สูตรอาหารนี้คงจะเกิดขึ้นมาไม่ได้หากไม่มีคุณ ตามสัญญานะ ประจุระเบิดที่เหลือทั้งหมดเป็นของคุณ",
+                "zh-Hans": "这道菜能顺利诞生你功不可没，剩下的炸药苞，就按我们说好的，你全都拿走吧。",
+                "zh-Hant": "這道菜能順利誕生你功不可沒，剩下的炸藥苞，就按我們說好的，你全都拿走吧。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sammle die restlichen Explosivladungen von Feng",
+        "en": "Collect the remaining Explosive Charges from Feng",
+        "es": "Recoge el resto de las Cargas explosivas de Feng",
+        "fr": "Récupérez les Fruit bombant restants",
+        "ja": "鋒が使い残した爆薬苞を集める",
+        "ko": "열매의 남은 봉오리 폭탄 수집",
+        "th": "เก็บประจุระเบิดที่เหลือจาก Feng",
+        "zh-Hans": "收集阿锋剩余的炸药苞",
+        "zh-Hant": "收集阿鋒剩餘的炸藥苞"
+      },
+      "entities": [
+        {
+          "entityId": 142001369,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开41",
+          "areaId": 705,
+          "position": {
+            "x": -97641,
+            "y": 303752,
+            "z": 3681
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001370,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开42",
+          "areaId": 705,
+          "position": {
+            "x": -97735,
+            "y": 303772,
+            "z": 3681
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 67
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001371,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开43",
+          "areaId": 705,
+          "position": {
+            "x": -97690,
+            "y": 303756,
+            "z": 3763
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 76
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001372,
+          "mapId": 8,
+          "blueprintType": "Treasure017",
+          "name": "TsEntity_散落的物资箱_初始可开44",
+          "areaId": 705,
+          "position": {
+            "x": -97815,
+            "y": 303792,
+            "z": 3681
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -23
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001376,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点19",
+          "areaId": 705,
+          "position": {
+            "x": -97691,
+            "y": 303753,
+            "z": 3845
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 44,
+      "parentId": 32,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 46,
+      "parentId": 32,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 45,
+      "parentId": 44,
+      "type": "Action",
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 46,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich erneut mit Exil Feng",
+        "en": "Talk to Exile Feng again",
+        "es": "Habla con el Exiliado Feng de nuevo",
+        "fr": "Parler à nouveau avec l'exilé, Feng",
+        "ja": "もう一度追放者の鋒と話す",
+        "ko": "추방자 열매와 재대화",
+        "th": "คุยกับ Feng ผู้ถูกเนรเทศอีกครั้ง",
+        "zh-Hans": "和流放者阿锋再次交谈",
+        "zh-Hant": "和流放者阿鋒再次交談"
+      },
+      "entities": [
+        {
+          "entityId": 142001338,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男17",
+          "areaId": 705,
+          "position": {
+            "x": -97221,
+            "y": 304051,
+            "z": 3627
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -111
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 7,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun? Haben wir einen Deal?",
+                "en": "Well? Do we have a deal?",
+                "es": "¿Entonces? ¿Tenemos un trato?",
+                "fr": "Comment ça va, vous avez pris la décision ?",
+                "ja": "どう？考え直してくれた？",
+                "ko": "어때요, 생각은 다 하셨나요?",
+                "th": "ว่าอย่างไร? เราตกลงกันได้หรือยัง?",
+                "zh-Hans": "怎么样，想好没有？",
+                "zh-Hant": "怎麼樣，想好沒有？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Besorg mir <color=Highlight>Chromeschalen, Perillas und Düsterschlamme, drei von jedem,</color> und ich werde dir einige meiner Explosivladungen überlassen.",
+                "en": "Get me <color=Highlight>Chromeshells, Perillas, and Gloom Sloughs, three of each,</color> and I'll spare some of my Explosive Charges for you.",
+                "es": "Consígueme <color=Highlight>Caparazones de cromo, Perillas y Pantanos sombríos, tres de cada uno,</color> y te dejaré algunas de mis Cargas explosivas.",
+                "fr": "Apportez-moi <color=Highlight>trois Coquilles radieuses, trois Perilla, trois Exuvies de cigale bleu</color>. Je vous donnerai des explosifs en surplus.",
+                "ja": "<color=Highlight>錦色貝3つ、香蘇3本、隠火蛻3つ</color>を集めてきてくれれば、残りの爆薬苞を全て渡そう。",
+                "ko": "<color=Highlight>비단 조개, 자소엽, 형광 선퇴</color>을 각각 3개씩만 모아다 주면 여분의 봉오리 폭탄을 드릴게요",
+                "th": "ไปหา<color=Highlight>หอยเปลือกมุก งาขี้ม่อน และคราบเงาเพลิงอย่างละสามชิ้น</color> แล้วฉันจะแบ่งประจุระเบิดของฉันให้คุณ",
+                "zh-Hans": "收集<color=Highlight>三个锦色贝、三个香苏、三只隐火蜕</color>给我，我就给你多余的炸药苞。",
+                "zh-Hant": "收集<color=Highlight>三個錦色貝、三個香蘇、三只隱火蛻</color>給我，我就給你多餘的炸藥苞。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wofür brauchst du diese Zutaten?",
+                    "en": "What do you need these ingredients for?",
+                    "es": "¿Para qué necesitas estos ingredientes?",
+                    "fr": "Pourquoi vous avez besoin de tout ça ?",
+                    "ja": "なんで必要なの？",
+                    "ko": "왜 이런 것들이 필요하죠?",
+                    "th": "คุณต้องการวัตถุดิบเหล่านี้ไปทำอะไร?",
+                    "zh-Hans": "为什么需要这些？",
+                    "zh-Hant": "為什麼需要這些？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Abgemacht.",
+                    "en": "Deal.",
+                    "es": "Trato hecho.",
+                    "fr": "Je vais les récupérer.",
+                    "ja": "手伝ってやろう。",
+                    "ko": "제가 찾아다 줄게요",
+                    "th": "ตกลงตามนี้",
+                    "zh-Hans": "我帮你找。",
+                    "zh-Hant": "我幫你找。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das ist viel Arbeit. Ich glaube, ich verzichte.",
+                    "en": "That's a lot of work. I think I'll pass.",
+                    "es": "Es mucho trabajo. Creo que pasaré.",
+                    "fr": "C'est trop compliqué. Laisser tomber.",
+                    "ja": "面倒……やっぱり今度にしよう。",
+                    "ko": "귀찮네요. 필요 없어요",
+                    "th": "นี่มันหลายอย่างเลยนะเนี่ย ขอผ่านดีกว่า",
+                    "zh-Hans": "好麻烦，算了。",
+                    "zh-Hant": "好麻煩，算了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Chromeschalen dienen zur Ausbalancierung der Hitze-Eigenschaften der Explosivladung.",
+                "en": "Chromeshells are for balancing out the Explosive Charge's heat properties.",
+                "es": "Los Caparazones de cromo son para equilibrar las propiedades de calor de la Carga explosiva.",
+                "fr": "Les Coquilles radieuses sont utilisées pour neutraliser les propriétés thermiques des explosifs.",
+                "ja": "錦色貝は爆薬苞の熱量を中和させ……",
+                "ko": "비단 조개는 봉오리 폭탄의 열적 특성을 중화시키는 데 사용돼요",
+                "th": "หอยเปลือกมุกเอาไว้ปรับสมดุลคุณสมบัติด้านความร้อนของประจุระเบิด",
+                "zh-Hans": "锦色贝用来中和炸药苞的热气属性。",
+                "zh-Hant": "錦色貝用來中和炸藥苞的熱氣屬性。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Perillas werden zur Geschmacksverstärkung verwendet.",
+                "en": "Perillas are used for enhancing flavors.",
+                "es": "Las Perillas se utilizan para realzar sabores.",
+                "fr": "Les Perillas ajoutent de la saveur et de l'arôme.",
+                "ja": "香蘇は味と匂いを与え……",
+                "ko": "자소엽은 향을 돋우어 맛을 내는 데 사용돼요",
+                "th": "งาขี้ม่อนใช้สำหรับเพิ่มรสชาติ",
+                "zh-Hans": "香苏用来增香提味。",
+                "zh-Hant": "香蘇用來增香提味。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und Düsterschlamme zur Eindämmung explosiver Reaktionen.",
+                "en": "And Gloom Sloughs for containing any explosive reactions.",
+                "es": "Y los Pantanos sombríos para contener cualquier reacción explosiva.",
+                "fr": "Les exuvies de cigale bleu sont utilisées pour contrôler les propriétés explosives des explosifs.",
+                "ja": "そして、隠火蛻は爆発の規模を抑える。",
+                "ko": "형광 선퇴는 봉오리 폭탄의 폭발 속성을 제어하기 위한 거예요",
+                "th": "และคราบเงาเพลิงเอาไว้ใช้ควบคุมปฏิกิริยาการระเบิด",
+                "zh-Hans": "隐火蜕是为了控制炸药苞的爆炸属性。",
+                "zh-Hant": "隱火蛻是為了控制炸藥苞的爆炸屬性。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alle drei Zutaten findest du im Düsteren Wald.",
+                "en": "You'll find all three ingredients in the Dim Forest.",
+                "es": "Encontrarás los tres ingredientes en el Bosque Oscuro.",
+                "fr": "Vous pouvez les trouver dans la Forêt aveuglantes.",
+                "ja": "これらは全部、光なき森で見つけられるよ。",
+                "ko": "이것들은 모두 암흑 밀림에서 찾을 수 있어요",
+                "th": "คุณจะพบวัตถุดิบทั้งสามอย่างได้ในป่าสลัว",
+                "zh-Hans": "这些都能在无光之森找到。",
+                "zh-Hant": "這些都能在無光之森找到。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann mal los. Ich warte hier.",
+                "en": "Off you go then. I'll be right here.",
+                "es": "Entonces, vete. Aquí te espero.",
+                "fr": "Apportez-moi ces trucs. J'attends ici.",
+                "ja": "じゃあ、頼んだ。俺はここで待ってる。",
+                "ko": "결정되면 출발하세요. 전 여기서 기다릴게요",
+                "th": "ถ้าเช่นนั้นก็ไปได้แล้ว ฉันจะรออยู่ตรงนี้แหละ",
+                "zh-Hans": "决定好了就出发吧，我在这里等你。",
+                "zh-Hant": "決定好了就出發吧，我在這裡等你。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann mal los. Ich warte hier.",
+                "en": "Off you go then. I'll be right here.",
+                "es": "Vete entonces. Yo estaré aquí.",
+                "fr": "Apportez-moi ces trucs. J'attends ici.",
+                "ja": "じゃあ、頼んだ。俺はここで待ってる。",
+                "ko": "결정되면 출발하세요. 전 여기서 기다릴게요",
+                "th": "ถ้าเช่นนั้นก็ไปได้แล้ว ฉันจะรออยู่ตรงนี้แหละ",
+                "zh-Hans": "决定好了就出发吧，我在这里等你。",
+                "zh-Hant": "決定好了就出發吧，我在這裡等你。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay dann.",
+                "en": "Okay then.",
+                "es": "De acuerdo entonces.",
+                "fr": "D'accord.",
+                "ja": "そうか。",
+                "ko": "알겠어요",
+                "th": "ถ้าอย่างนั้นก็ได้",
+                "zh-Hans": "好吧。",
+                "zh-Hant": "好吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 48,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Exil Yongli (optional)",
+        "en": "Talk to Exile Yongli (optional)",
+        "es": "Habla con el Exiliado Yongli (opcional)",
+        "fr": "Parler avec l'exilé, Yongli (optionnel)",
+        "ja": "追放者の永励と話す（選択可）",
+        "ko": "추방자 영려와 대화 (옵션)",
+        "th": "คุยกับ Yongli ผู้ถูกเนรเทศ (ไม่บังคับ)",
+        "zh-Hans": "和流放者永励交谈（可选）",
+        "zh-Hant": "和流放者永勵交談（可選）"
+      },
+      "entities": [
+        {
+          "entityId": 142001274,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女7",
+          "areaId": 705,
+          "position": {
+            "x": -66812,
+            "y": 287324,
+            "z": 4956
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -82
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001275,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男13",
+          "areaId": 705,
+          "position": {
+            "x": -66686,
+            "y": 287198,
+            "z": 4953
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -125
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001276,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男14",
+          "areaId": 705,
+          "position": {
+            "x": -66524,
+            "y": 287174,
+            "z": 4944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -166
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001291,
+          "mapId": 8,
+          "blueprintType": "SceneObj002",
+          "name": "TsEntity_破碎物002_木箱中11",
+          "areaId": 705,
+          "position": {
+            "x": -67652,
+            "y": 286203,
+            "z": 5094
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -66
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001294,
+          "mapId": 8,
+          "blueprintType": "SceneObj002",
+          "name": "TsEntity_破碎物002_木箱中13",
+          "areaId": 705,
+          "position": {
+            "x": -67049,
+            "y": 285936,
+            "z": 5109
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 165
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001309,
+          "mapId": 8,
+          "blueprintType": "SceneObj008",
+          "name": "TsEntity_破碎物008_木栅栏16",
+          "areaId": 705,
+          "position": {
+            "x": -67348,
+            "y": 285940,
+            "z": 5099
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -15
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001310,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器15",
+          "areaId": 705,
+          "position": {
+            "x": -67408,
+            "y": 285895,
+            "z": 5202
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004196,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果14",
+          "areaId": 705,
+          "position": {
+            "x": -67582,
+            "y": 286170,
+            "z": 5178
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004197,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果15",
+          "areaId": 705,
+          "position": {
+            "x": -67766,
+            "y": 286277,
+            "z": 5091
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004198,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果16",
+          "areaId": 705,
+          "position": {
+            "x": -67125,
+            "y": 285915,
+            "z": 5191
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004199,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果17",
+          "areaId": 705,
+          "position": {
+            "x": -66923,
+            "y": 285979,
+            "z": 5109
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -53
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004200,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果18",
+          "areaId": 705,
+          "position": {
+            "x": -67463,
+            "y": 286001,
+            "z": 5101
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -72
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Haha. Willst du die Ehre haben?",
+                "en": "Haha. Do you want to do the honors?",
+                "es": "Jaja, ¿quieres probar a detonar esto?",
+                "fr": "Haha, vous voulez essayer de le faire exploser ?",
+                "ja": "ははっ！お前もやりたいのか。",
+                "ko": "하하, 한 번 터트려 보실래요?",
+                "th": "ฮ่าๆ คุณจะรับเกียรตินี้ไหม?",
+                "zh-Hans": "哈哈，你要试试引爆吗？",
+                "zh-Hant": "哈哈，你要試試引爆嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du sahst so aus, als ob du dich mit Sprengstoff gut auskennst.",
+                "en": "You looked like you knew your explosives well back there.",
+                "es": "Parecía que conocías bien tus explosivos allí.",
+                "fr": "Vous êtes un pro en détonation. Je sais bien, vous êtes expérimenté.",
+                "ja": "さっきの動きを見るに、中々のやり手だ。",
+                "ko": "첫 만남 때 보니 폭발하는데 엄청 능숙하던데요",
+                "th": "ดูเหมือนคุณจะรู้จักระเบิดดีทีเดียวนะ",
+                "zh-Hans": "看你之前那一下，是个引爆的高手啊。",
+                "zh-Hant": "看你之前那一下，是個引爆的高手啊。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "parentId": 50,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 53,
+      "parentId": 50,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 55,
+      "parentId": 51,
+      "type": "Action",
+      "dialogs": []
+    },
+    {
+      "id": 56,
+      "parentId": 53,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich erneut mit Exil Yongli",
+        "en": "Talk to Exile Yongli again",
+        "es": "Habla con el Exiliado Yongli de nuevo",
+        "fr": "Parler à nouveau avec l'exilé, Yongli",
+        "ja": "もう一度追放者の永励と話す",
+        "ko": "추방자 영려와 다시 대화",
+        "th": "คุยกับ Yongli ผู้ถูกเนรเทศอีกครั้ง",
+        "zh-Hans": "和流放者永励再次交谈",
+        "zh-Hant": "和流放者永勵再次交談"
+      },
+      "entities": [
+        {
+          "entityId": 142001272,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男11",
+          "areaId": 705,
+          "position": {
+            "x": -67686,
+            "y": 284899,
+            "z": 7590
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -143
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 10,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "*Seufz* Vergiss es, ich kann es auch einfach hinnehmen. Es ist nicht so, als hätte ich Stunden damit verbracht, sie zu sammeln oder so.",
+                "en": "*sigh* Forget it, I might as well just suck it up. It's not like I spent hours collecting them or anything.",
+                "es": "*suspiro* Olvídalo, es mejor que lo asuma. No es como si hubiera pasado horas recolectándolas o algo.",
+                "fr": "Tous les efforts déployés depuis si longtemps ont été vains, quand pourrai-je trouver trente Fruits bombants...",
+                "ja": "これまでの努力が全部パーだ。三十個……いつになったら集めきれる……",
+                "ko": "이렇게 오랜 노력이 모두 허사가 되다니, 30개의 봉오리 폭탄을 또 언제 모을 수 있으려나…",
+                "th": "*ถอนหายใจ* ช่างมันเถอะ ฉันคงต้องทนรับสภาพไป ก็ไม่ใช่ว่าฉันต้องใช้เวลาเป็นชั่วโมงๆ เพื่อรวบรวมมันมาหรอกนะ",
+                "zh-Hans": "这么长时间以来的努力全白费了，三十个炸药苞得什么时候能集齐啊……",
+                "zh-Hant": "這麼長時間以來的努力全白費了，三十個炸藥苞得什麼時候能集齊啊……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Willst du mir helfen, einige Explosivladungen zu besorgen? Es ist nicht viel, nur dreißig sollten reichen.",
+                "en": "You wanna help me get some Explosive Charges? Ain't much, only thirty will do.",
+                "es": "¿Quieres ayudarme a conseguir algunas Cargas explosivas? No es mucho, solo treinta serán suficientes.",
+                "fr": "Pouvez-vous m'aider à récupérer des Fruits bombants ? Trente suffisent.",
+                "ja": "なあ、爆薬苞を集めてくれないか？なに、三十個だけでいいさ。",
+                "ko": "봉오리 폭탄을 모으는 것 좀 도와줄 수 있나요? 수량도 많지 않아요. 딱 30개면 충분해요",
+                "th": "คุณอยากช่วยฉันรวบรวมประจุระเบิดเหรอ? ก็ไม่เยอะเท่าไรหรอก แค่สามสิบลูกเอง",
+                "zh-Hans": "你能帮我收集炸药苞吗？数量也不多，三十个就足够了。",
+                "zh-Hant": "你能幫我收集炸藥苞嗎？數量也不多，三十個就足夠了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich werde sie für dich holen.",
+                    "en": "I'll go get them for you.",
+                    "es": "Las conseguiré para ti.",
+                    "fr": "Je vous aiderai.",
+                    "ja": "手伝うよ。",
+                    "ko": "제가 채집을 도와줄게요",
+                    "th": "ฉันจะไปเก็บมาให้เอง",
+                    "zh-Hans": "我帮你采集。",
+                    "zh-Hant": "我幫你採集。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eines Tages wirst du genug haben.",
+                    "en": "You'll get enough one day.",
+                    "es": "Algún día tendrás suficiente.",
+                    "fr": "Un autre jours, tu peux récupérer d'autres fruits bombants...",
+                    "ja": "{Male=集まるといいな。;Female=集まるといいね。}",
+                    "ko": "언젠가는 모을 수 있을 거예요",
+                    "th": "สักวันคุณก็คงจะรวบรวมได้ครบเอง",
+                    "zh-Hans": "总有一天会集齐的。",
+                    "zh-Hant": "總有一天會集齊的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Super! Das ist wunderbar.",
+                "en": "Awesome! That's wonderful.",
+                "es": "¡Genial! Eso es maravilloso.",
+                "fr": "Très bien ! Merci beaucoup !",
+                "ja": "よっしゃ！そう来なくっちゃ！",
+                "ko": "감사해요. 정말 감사해요",
+                "th": "เยี่ยมมาก! ยอดเยี่ยมไปเลย",
+                "zh-Hans": "太好了！谢谢你！",
+                "zh-Hant": "太好了！謝謝你！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass mich dich zuerst warnen.",
+                "en": "Let me give some heads up first.",
+                "es": "Permíteme darte algunas indicaciones primero.",
+                "fr": "Je vais d'abord te donner quelques précautions.",
+                "ja": "最初に注意事項を伝えておこう。",
+                "ko": "우선 주의사항부터 알려줄게요",
+                "th": "ฉันขอเตือนอะไรคุณไว้อย่างหนึ่งนะ",
+                "zh-Hans": "我先告诉你一些注意事项吧。",
+                "zh-Hant": "我先告訴你一些注意事項吧。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frisch gepflückte Explosivladungen neigen dazu, sehr instabil zu sein. Selbst die geringste Vibration oder Temperaturänderung kann sie zur Explosion bringen.",
+                "en": "Explosive Charges that are freshly picked tend to be very unstable. Even the slightest amount of vibration or change in temperature can cause them to explode.",
+                "es": "Las Cargas explosivas que se recogen recientemente tienden a ser muy inestables. Incluso la cantidad más mínima de vibración o cambio de temperatura puede hacer que exploten.",
+                "fr": "Les fruits explosifs fraîchement récupérés sont très instables. La moindre vibration ou variation de chaleur peut la faire exploser.",
+                "ja": "取れたての爆薬苞は、とにかく不安定。衝撃にも、温度の変化にも弱く、すぐ爆発する。",
+                "ko": "방금 따온 봉오리 폭탄은 매우 불안정하여 약간의 진동이나 열 변화로도 폭발할 수 있어요",
+                "th": "ประจุระเบิดที่เพิ่งเก็บมาใหม่ๆ มักจะไม่ค่อยเสถียร การสั่นสะเทือนเพียงเล็กน้อยหรืออุณหภูมิที่เปลี่ยนแปลงก็สามารถทำให้มันระเบิดได้แล้ว",
+                "zh-Hans": "刚采摘下来的炸药苞非常不稳定，一点轻微的震动或者热度变化都有可能引爆。",
+                "zh-Hant": "剛採摘下來的炸藥苞非常不穩定，一點輕微的震動或者熱度變化都有可能引爆。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich und meine Kumpels haben viel Mühe aufgewendet, um die, die wir früher hatten, zu verarbeiten und zu stabilisieren.",
+                "en": "Me and my buddies went through a ton of effort processing and stabilizing those we had earlier.",
+                "es": "Mis amigos y yo nos esforzamos mucho en procesar y estabilizar las que teníamos antes.",
+                "fr": "Nous avons travaillé dur pour préparer les Fruits bombants...",
+                "ja": "前のは仲間と一緒に苦労してようやく拵えた爆薬苞なんだ。",
+                "ko": "전에도 제 동료들과 봉오리 폭탄을 간신히 옮겨왔는데...",
+                "th": "ฉันกับพรรคพวกต้องใช้ความพยายามอย่างมากในการแปรรูป และทำให้ระเบิดที่เรามีก่อนหน้านี้มีความเสถียร",
+                "zh-Hans": "之前那些可是我和同伴费了好大的劲儿才做好预处理的炸药苞。",
+                "zh-Hant": "之前那些可是我和同伴費了好大的勁兒才做好預處理的炸藥苞。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du wirst es definitiv nicht rechtzeitig schaffen, wenn du sie jetzt holen gehst.",
+                "en": "You definitely won't make it in time if you go pick them up now.",
+                "es": "Definitivamente no llegarás a tiempo si vas a recogerlas ahora.",
+                "fr": "Tu n'a donc pas de temps de récupérer les nouveaux fruits maintenant.",
+                "ja": "今すぐ新鮮ものを取るなんて、とても間に合わねぇ。",
+                "ko": "지금 신선한 것을 따러 가기에는 시간이 부족해요",
+                "th": "หากคุณไปเก็บมาตอนนี้ มันคงจะไม่ทันการแน่",
+                "zh-Hans": "你现在去采摘新鲜的，肯定来不及了。",
+                "zh-Hant": "你現在去採摘新鮮的，肯定來不及了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Exil-Lager in der Nähe sollten jedoch genug Ladungen auf Lager haben, einige davon könnten sogar unsere sein.",
+                "en": "However, the Exile camps nearby should have plenty of charges stocked up, some of them might even be ours.",
+                "es": "Sin embargo, los campamentos de los Exiliados cercanos deberían tener muchas cargas almacenadas, algunas de ellas incluso podrían ser nuestras.",
+                "fr": "Mais les camps des exilés à proximité devraient avoir beaucoup de Fruits bombants comme ils ont volé les nôtres.",
+                "ja": "しかし、周りの追放者拠点に備蓄があるはずだ。\n その中に、俺らから奪ったものがある……",
+                "ko": "아, 주변의 추방자 캠프에는 많은 봉오리 폭탄이 쌓여 있을 거예요. 일부는 저희에게서 뺏어간 거예요",
+                "th": "แต่ว่าพวกค่ายผู้ถูกเนรเทศแถวๆ นี้น่าจะมีระเบิดตุนไว้เพียบเลย บางส่วนอาจจะเป็นของพวกเราด้วยซ้ำ",
+                "zh-Hans": "不过周围的流放者营地，应该也囤积了不少炸药苞，有一些就是从我们手里抢走的。",
+                "zh-Hant": "不過周圍的流放者營地，應該也囤積了不少炸藥苞，有一些就是從我們手裡搶走的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du könntest dein Glück in diesen Lagern versuchen.",
+                "en": "You can try out your luck around those camps.",
+                "es": "Puedes probar suerte en esos campamentos.",
+                "fr": "Tu peux tenter la chance à proximité.",
+                "ja": "そこに行って、確かめてみるといい。",
+                "ko": "추방자 캠프 근처에 가보고, 나머진 운에 맡겨야죠",
+                "th": "คุณไปลองเสี่ยงดวงแถวๆ ค่ายพวกนั้นดูได้นะ",
+                "zh-Hans": "可以去那附近碰碰运气。",
+                "zh-Hant": "可以去那附近碰碰運氣。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wo zum Teufel soll ich die alle herkriegen...",
+                "en": "Where in hell am I supposed to get all of 'em...",
+                "es": "¿Dónde diablos se supone que debo conseguir todas ellas...",
+                "fr": "Quand pourrai-je les rassembler tous...",
+                "ja": "はあ……いつになったら集まるんだ……",
+                "ko": "그걸 도대체 어느 시간에 다 모으겠어요....",
+                "th": "ฉันจะไปหาทั้งหมดนั่นมาจากที่ไหนกัน...",
+                "zh-Hans": "到底什么时候能集齐啊……",
+                "zh-Hant": "到底什麼時候能集齊啊……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "parentId": 57,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 58,
+      "parentId": 57,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 59,
+      "parentId": 58,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 142004205,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果23",
+          "areaId": 705,
+          "position": {
+            "x": -97062,
+            "y": 304161,
+            "z": 3687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 9,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hey. Finger weg von meinen wertvollen Zutaten!",
+                "en": "Hey. No touching my precious ingredients!",
+                "es": "Oye. ¡No toques mis preciados ingredientes!",
+                "fr": "Ne touchez pas à mes précieux ingrédients !",
+                "ja": "おい！俺の大事な食材だぞ！",
+                "ko": "당신 뭐예요! 내 소중한 식재료를 함부로 건들지 마세요!",
+                "th": "เฮ้ อย่าแตะต้องส่วนผสมอันล้ำค่าของฉันนะ!",
+                "zh-Hans": "喂，不要乱动我宝贵的食材！",
+                "zh-Hant": "喂，不要亂動我寶貴的食材！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 913,
+                "name": {
+                  "zh-Hans": "阿锋"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 60,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Liefere die Explosivladungen",
+        "en": "Deliver Explosive Charges",
+        "es": "Entrega las Cargas explosivas",
+        "fr": "Donner les Fruits bombants",
+        "ja": "爆薬苞を提出する",
+        "ko": "봉오리 폭탄 제출",
+        "th": "นำประจุระเบิดไปส่ง",
+        "zh-Hans": "交付炸药苞",
+        "zh-Hant": "交付炸藥苞"
+      },
+      "entities": [
+        {
+          "entityId": 142001266,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男12",
+          "areaId": 705,
+          "position": {
+            "x": -67188,
+            "y": 286447,
+            "z": 5102
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -168
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001267,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女5",
+          "areaId": 705,
+          "position": {
+            "x": -66971,
+            "y": 286291,
+            "z": 5105
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001272,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男11",
+          "areaId": 705,
+          "position": {
+            "x": -67686,
+            "y": 284899,
+            "z": 7590
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -143
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001338,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男17",
+          "areaId": 705,
+          "position": {
+            "x": -97221,
+            "y": 304051,
+            "z": 3627
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -111
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142004205,
+          "mapId": 8,
+          "blueprintType": "Gameplay556",
+          "name": "TsEntity_玩法_不可控物_爆炸果23",
+          "areaId": 705,
+          "position": {
+            "x": -97062,
+            "y": 304161,
+            "z": 3687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_玩法_一触即炸",
+          "flowIndex": 3,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Wow. Ich kann nicht glauben, dass du wirklich mit dreißig von ihnen zurückgekommen bist!",
+                "en": "Wow. I can't believe you really came back with thirty of them!",
+                "es": "Vaya. No puedo creer que realmente volviste con treinta de ellas.",
+                "fr": "Vous avez vraiment trente Fruits bombants ?! Oui, c'est exact...",
+                "ja": "本当か？！30個も……",
+                "ko": "정말 30개의 봉오리 폭탄을 다 모은 건가요? 아, 정말 다 모았네요...",
+                "th": "ว้าว ไม่อยากจะเชื่อเลยว่าคุณจะกลับมาพร้อมกับประจุระเบิดสามสิบลูกจริงๆ!",
+                "zh-Hans": "你真的拿到了三十个炸药苞？！居然一个不少……",
+                "zh-Hant": "你真的拿到了三十個炸藥苞？！居然一個不少……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Großartig. Jetzt können wir unsere Pläne gemäß dem Zeitplan fortsetzen.",
+                "en": "Great. Now we can proceed with our plans according to schedule.",
+                "es": "Genial. Ahora podemos seguir con nuestros planes de acuerdo con el horario.",
+                "fr": "Super, notre plan ne sera pas retardé.",
+                "ja": "良かった……これで計画通りに進められる！",
+                "ko": "잘 됐네요. 이러면 저희의 계획은 지연되지 않을 거예요",
+                "th": "เยี่ยมเลย ทีนี้เราก็สามารถดำเนินแผนการของเราได้ตามกำหนดแล้ว",
+                "zh-Hans": "太好了，这下我们的计划不会被推迟了。",
+                "zh-Hant": "太好了，這下我們的計畫不會被推遲了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sag, du musst ein paar eigene Tricks haben, wenn du es geschafft hast, diese Ladungen so schnell zu bekommen. Warum schließt du dich uns nicht bei unserem Plan an?",
+                "en": "Say, you must've got a few tricks of your own if you managed to get those charges so fast. Why do you join us in our plan?",
+                "es": "Dime, debes tener algunos trucos propios si lograste conseguir esas cargas tan rápido. ¿Por qué no te unes a nosotros en el plan?",
+                "fr": "D'ailleurs, vous êtes capable de trouver autant de Fruits bombants aussi rapidement, vous être brillant ! Pourquoi ne pas joindre à notre plan ?",
+                "ja": "そうだ！こうも早く集めたんなら、腕が立つに決まってる！なぁ、俺たちを手伝ってくれないか！",
+                "ko": "참, 이렇게 많은 봉오리 폭탄을 이 짧은 시간에 모았다는 건 분명 능력이 뛰어나단 걸 거예요. 차라리 저희의 계획에 합류하는 게 어때요?",
+                "th": "นี่ คุณคงจะมีฝีมืออยู่บ้างสินะถึงได้หาระเบิดมาได้เร็วขนาดนี้ สนใจมาเข้าร่วมแผนการกับพวกเราไหม?",
+                "zh-Hans": "对了！你能这么快收集到这么多炸药苞，一定也有些本事，不如你加入我们的计划吧！",
+                "zh-Hant": "對了！你能這麼快收集到這麼多炸藥苞，一定也有些本事，不如你加入我們的計畫吧！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn wir es nicht schaffen, bevor es Nacht wird, werden die anderen Lager definitiv versuchen, die Mineralien zu ergreifen. Wir könnten die zusätzliche Hand zur Bewachung der Bergbaustätte gebrauchen.",
+                "en": "If we can't get it done before nighttime, the other camps will definitely try to come seize the minerals. We could use the extra hand guarding the mining site.",
+                "es": "Si no podemos terminarlo antes de la noche, los otros campamentos definitivamente intentarán venir a apoderarse de los minerales. Podríamos usar la mano extra para proteger el sitio de la mina.",
+                "fr": "Nous seuls ne pouvons pas défendre la mine. Si nous ne pouvons pas l'exploiter ce soir, elle sera certainement prise par d'autres camps.",
+                "ja": "戦力のない俺たちはあの鉱床を守り通せない。今晩中に全部掘り出せないと、他の追放者に奪われちまう。",
+                "ko": "저희가 사람도 적고 힘도 약해서 그 광물을 지킬 수가 없어요. 만약 오늘 밤 안에 파내지 못하면 다른 캠프에 빼앗길 거예요",
+                "th": "ถ้าเราทำไม่เสร็จก่อนค่ำ พวกค่ายอื่นจะต้องพยายามมาแย่งชิงแร่ธาตุไปแน่ เราอยากจะขอให้คุณมาช่วยเฝ้าแหล่งขุดเหมืองให้หน่อย",
+                "zh-Hans": "我们人少力薄，是守不住那片矿产的，如果今晚不能挖出来，肯定会被别的营地抢走的。",
+                "zh-Hant": "我們人少力薄，是守不住那片礦產的，如果今晚不能挖出來，肯定會被別的營地搶走的。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hilfst uns, die Mineralien zu bewachen, und wir geben dir einen Teil des Schnitts. Wie klingt das?",
+                "en": "You help us guard the minerals, and we give you part of the cut. How does that sound?",
+                "es": "Nos ayudas a proteger los minerales, y te damos parte de la ganancia. ¿Qué te parece?",
+                "fr": "Si vous nous aidez à défendre la mine, nous partagerons une partie avec vous, c'est bon ?",
+                "ja": "鉱床を守ってくれれば、掘り出したもんも分けてやる！どうだ！？",
+                "ko": "저희를 도와 광물을 지켜주신다면, 그때는 저희가 한몫 챙겨서 나눠줄게요",
+                "th": "คุณช่วยเราเฝ้าแร่ธาตุ แล้วเราจะแบ่งส่วนแบ่งให้ ฟังดูเป็นอย่างไรล่ะ?",
+                "zh-Hans": "你帮我们守住矿产，到时候我们也分你一份怎么样？",
+                "zh-Hant": "你幫我們守住礦產，到時候我們也分你一份怎麼樣？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt gut für mich.",
+                    "en": "Sounds good to me.",
+                    "es": "Me parece bien.",
+                    "fr": "Bien sûr.",
+                    "ja": "乗った。",
+                    "ko": "알겠어요",
+                    "th": "ฟังดูดีนะ",
+                    "zh-Hans": "可以。",
+                    "zh-Hant": "可以。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Perfekt. Ich muss die Explosivladung für meine Kumpels aufteilen. Willst du mitkommen?",
+                "en": "Perfect. I need to split the Explosive Charge for my buddies. Wanna come with me?",
+                "es": "Perfecto. Necesito dividir la <color=Highlight>Carga explosiva</color> para mis amigos. ¿Quieres venir conmigo?",
+                "fr": "Très bien, je vais leur livrer ces Fruits bombants ! Voulez-vous venir avec moi ?",
+                "ja": "よし！爆薬苞をすぐ下の連中に渡さなきゃ。お前も一緒に来ないか？",
+                "ko": "잘 됐네요. 우선 봉오리 폭탄을 그들에게 보내려고 하는데, 함께 갈래요?",
+                "th": "เยี่ยมมาก ฉันต้องไปแบ่งประจุระเบิดให้พรรคพวกก่อน อยากจะมาด้วยกันไหม?",
+                "zh-Hans": "太好了，我现在要把这批炸药苞送下去给他们，你要跟我一起去看看吗？",
+                "zh-Hant": "太好了，我現在要把這批炸藥苞送下去給他們，你要跟我一起去看看嗎？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du willst das Feuerwerk nicht verpassen!",
+                "en": "You don't wanna miss the fireworks!",
+                "es": "¡No querrás perderte los fuegos artificiales!",
+                "fr": "L'effet de la détonation de tous les Fruits bombants en même temps sera spectaculaire !",
+                "ja": "一気に爆発させる光景は、中々痺れるぜ！",
+                "ko": "모든 봉오리 폭탄이 함께 폭발하는 모습은, 엄청 장관하거든요",
+                "th": "คุณไม่อยากพลาดชมดอกไม้ไฟหรอกน่า!",
+                "zh-Hans": "所有炸药苞一起引爆的效果，还是很壮观的！",
+                "zh-Hant": "所有炸藥苞一起引爆的效果，還是很壯觀的！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 916,
+                "name": {
+                  "zh-Hans": "永励"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

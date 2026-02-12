@@ -1,0 +1,4640 @@
+{
+  "id": 880000025,
+  "key": "第三阶段必要委托",
+  "type": "main",
+  "typeId": 1,
+  "name": {
+    "de": "Festivalvorbereitungen: III",
+    "en": "Festival Preparations III",
+    "es": "Deseos lunares III: Preparación",
+    "fr": "Préparations de la Fête : II",
+    "ja": "月下の願いその三・準備",
+    "ko": "월하 기원 III · 준비",
+    "th": "เตรียมงานเทศกาล III",
+    "zh-Hans": "月下祈愿其三·筹备",
+    "zh-Hant": "月下祈願其三·籌備"
+  },
+  "desc": {
+    "de": "Beginne mit den Vorbereitungen für das zweite Festival in der Kommune Taoyuan",
+    "en": "Begin the second-stage festival preparation at Taoyuan Vale",
+    "es": "En Aldea Taoyuan, comienza la segunda fase de la preparación festiva.",
+    "fr": "Commencer la deuxième phase des préparatifs de la Fête dans la Ville Fleur-de-Pêche.",
+    "ja": "桃源郷で祭り準備の第二段階を始めよう。",
+    "ko": "도원향에서 축제 준비의 두 번째 단계를 시작하세요",
+    "th": "เริ่มการเตรียมงานเทศกาลช่วงที่สองที่หมู่บ้านเถาหยวน",
+    "zh-Hans": "在桃源乡，开始第二阶段的节日筹备活动吧。",
+    "zh-Hant": "在桃源鄉，開始第二階段的節日籌備活動吧。"
+  },
+  "chapter": {
+    "id": 1,
+    "name": {
+      "de": "Aufstieg von Jinzhou",
+      "en": "Jinzhou Rising",
+      "es": "Jinzhou, cada vez mejor",
+      "fr": "Le jeune visiteur à Jinzhou",
+      "ja": "今州の来訪者",
+      "ko": "과거보다 더욱 빛나는 금주",
+      "th": "จินโจวรุ่งเรืองพ้นกาลเก่า",
+      "zh-Hans": "但觉今州胜旧州",
+      "zh-Hant": "但覺今州勝舊州"
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 20,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 22,
+      "parentId": 20,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rette das eingeklemmte Kind",
+        "en": "Save the trapped child",
+        "es": "Rescata a los niños atrapados",
+        "fr": "Sauver l'enfant piégé",
+        "ja": "子供を救出",
+        "ko": "갇힌 아이 구출",
+        "th": "ช่วยเด็กที่ติดอยู่",
+        "zh-Hans": "解救被困的小孩",
+        "zh-Hant": "解救被困的小孩"
+      },
+      "entities": [
+        {
+          "entityId": 880700284,
+          "mapId": 8,
+          "blueprintType": "NPC311",
+          "name": "TsEntity_121_013_皇龙小孩",
+          "areaId": 405,
+          "position": {
+            "x": -90060,
+            "y": 80320,
+            "z": 4380
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die Tacet-Dissonanzen",
+        "en": "Defeat the Tacet Discords",
+        "es": "Derrota a las DT.",
+        "fr": "Vaincre les Tacets Discords",
+        "ja": "残像を倒す",
+        "ko": "잔상 처치",
+        "th": "เอาชนะทาเซ็ตดิสคอร์ด",
+        "zh-Hans": "击败残象",
+        "zh-Hant": "擊敗殘象"
+      },
+      "entities": [
+        {
+          "entityId": 880000101,
+          "mapId": 8,
+          "blueprintType": "NPC1052",
+          "name": "TsEntity_NPC1051_机器人相里",
+          "areaId": 405,
+          "position": {
+            "x": -91460,
+            "y": 81810,
+            "z": 3870
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700284,
+          "mapId": 8,
+          "blueprintType": "NPC311",
+          "name": "TsEntity_121_013_皇龙小孩",
+          "areaId": 405,
+          "position": {
+            "x": -90060,
+            "y": 80320,
+            "z": 4380
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.2追月节主线明线",
+          "flowIndex": 10,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "... Wow, das war der Hammer! Wie hast du das gemacht? Das musst du mir beibringen!",
+                "en": "...Whoa, that was rad! How did you do that? You gotta teach me!",
+                "es": "¡Hala, eso es alucinante! ¿Cómo lo has hecho? ¡Enséñame, porfi!",
+                "fr": "Ouah, c'était génial ! Comment t'as fait ça ? Il faut que tu m'apprennes !",
+                "ja": "……ふぅ、さっきのすごかったよ！{Male=お兄ちゃん;Female=お姉ちゃん}、あの技、僕にも教えてくれない？",
+                "ko": "우와, {Male=형;Female=누나}! 진짜 대박이었어요! 저도 가르쳐주시면 안 돼요?",
+                "th": "...โห เท่มาก! ทำได้ไงเนี่ย? {Male=พี่ชาย;Female=พี่สาว} สอนฉันบ้างได้ป่าว!",
+                "zh-Hans": "……呼，刚刚那一招好厉害！{Male=大哥哥;Female=大姐姐}可以教教我吗？",
+                "zh-Hant": "……呼，剛剛那一招好厲害！{Male=大哥哥;Female=大姐姐}可以教教我嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähm ... Danke, dass du mich gerettet hast, {Male=mein Herr;Female=meine Dame}.",
+                "en": "Um... Thanks for saving me, {Male=mister;Female=miss}.",
+                "es": "Um... Gracias por salvarme.",
+                "fr": "Hum... Merci de m'avoir sauvé, {Male=monsieur;Female=madame}.",
+                "ja": "えっと……ありがとう、{Male=お兄ちゃん;Female=お姉ちゃん}。",
+                "ko": "맞다... 고맙습니다, {Male=형;Female=누나}",
+                "th": "เอ่อ... ขอบคุณมากนะ {Male=พี่ชาย;Female=พี่สาว} ที่ช่วยชีวิตฉันไว้",
+                "zh-Hans": "唔……谢谢{Male=大哥哥;Female=大姐姐}。",
+                "zh-Hant": "唔……謝謝{Male=大哥哥;Female=大姐姐}。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum bist du ganz allein hier draußen?",
+                    "en": "Why are you out here all alone?",
+                    "es": "¿Por qué estás aquí solo?",
+                    "fr": "Que fais-tu seul ici ?",
+                    "ja": "{Male=こんなところで何をしているんだ？;Female=こんなところで何をしているの？}",
+                    "ko": "혼자 여기서 뭘 하는 건가요?",
+                    "th": "มาทำอะไรที่นี่คนเดียวล่ะ?",
+                    "zh-Hans": "你一个人在这里做什么？",
+                    "zh-Hant": "你一個人在這裡做什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ... das ... ist ein Geheimnis ...",
+                "en": "I... I... It's a secret...",
+                "es": "Yo... Yo... Es un secreto...",
+                "fr": "Je... Je... C'est un secret...",
+                "ja": "えっと……その……それは言えない……",
+                "ko": "그... 그게... 사실 비밀인데...",
+                "th": "ฉะ...ฉัน... เป็นความลับน่ะ...",
+                "zh-Hans": "我……我……这是秘密……",
+                "zh-Hant": "我……我……這是秘密……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Naja, du hast mich gerade vor der TD gerettet, also ...",
+                "en": "Well, you did just save me from that TD so...",
+                "es": "Bueno, acabas de salvarme de esa DT, así que...",
+                "fr": "Eh bien, tu viens de me sauver de ce TD, alors...",
+                "ja": "でも、{Male=お兄ちゃん;Female=お姉ちゃん}、助けてくれたから……",
+                "ko": "그래도 절 구해주셨으니까...",
+                "th": "แต่ {Male=พี่ชาย;Female=พี่สาว} ก็เพิ่งช่วยฉันจากทาเซ็ตดิสคอร์ดเมื่อกี้เอง งั้น...",
+                "zh-Hans": "但{Male=大哥哥;Female=大姐姐}救了我诶……",
+                "zh-Hant": "但{Male=大哥哥;Female=大姐姐}救了我欸……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay, gut. Du darfst der einzige Erwachsene sein, dem ich das erzähle.",
+                "en": "All right. You can be the only grown-up that I tell.",
+                "es": "Está bien. Serás {Male=el único adulto al;Female=la única adulta a la} que se lo diga.",
+                "fr": "D'accord. Tu peux être {Male=le seul;Female=la seule} adulte à qui je le dirai.",
+                "ja": "……じゃあ特別に……{Male=お兄ちゃん;Female=お姉ちゃん}にだけ教えてあげる。",
+                "ko": "음... 그럼 좋아요. {Male=형;Female=누나}만 알고 있어야 돼요!",
+                "th": "ก็ได้ {Male=พี่ชาย;Female=พี่สาว} จะเป็นผู้ใหญ่คนเดียวที่ฉันยอมเล่าให้ฟัง",
+                "zh-Hans": "……嗯……那好吧，我就只讲给{Male=大哥哥;Female=大姐姐}你一个大人听哦。",
+                "zh-Hant": "……嗯……那好吧，我就只講給{Male=大哥哥;Female=大姐姐}你一個大人聽喔。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähem! Ich, Mahn, werde gleich meine Kraft wecken!",
+                "en": "Ahem! I, Mahn, am about to awaken my Forte!",
+                "es": "¡Ejem! ¡Yo, Mahn, estoy a punto de despertar mi Forte!",
+                "fr": "Ahem ! Moi, Mahn, je suis sur le point de réveiller mon Forte !",
+                "ja": "コホンッ！この僕、まーちゃんは、今まさに、共鳴の力が覚醒しようとしているんだ！",
+                "ko": "흠흠! 사실, 전 공명의 힘을 각성시키는 중이에요!",
+                "th": "อะแฮ่ม! ฉันชื่อ Mahn กำลังจะปลุกพลังเรโซแนนซ์ของตัวเองให้ตื่นขึ้น!",
+                "zh-Hans": "咳咳！我，小满，共鸣力量，正在觉醒！",
+                "zh-Hant": "咳咳！ 我，小滿，共鳴力量，正在覺醒！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Deine Kraft?",
+                    "en": "Your Forte?",
+                    "es": "¿Tu Forte?",
+                    "fr": "Ton Forte ?",
+                    "ja": "{Male=どうして共鳴の力だって分かるんだ？;Female=どうして共鳴の力だって分かるの？}",
+                    "ko": "어째서 공명의 힘이죠?",
+                    "th": "พลังเรโซแนนซ์?",
+                    "zh-Hans": "为什么是共鸣力量？",
+                    "zh-Hant": "為什麼是共鳴力量？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Na ja, du weißt schon. In den Heldenstücken ist jeder große Held ein Resonator mit einer eigenen supercoolen Spezialkraft.",
+                "en": "Well, you know. In the Hero Plays, every great hero is a Resonator with their own unique, super cool Forte.",
+                "es": "Bueno, ya sabes. En Drama de Héroe, cada gran héroe es un resonador y tiene su propio Forte alucinante.",
+                "fr": "Oui, tu sais. Dans les comédies héroïques, chaque grand héros est un résonateur doté d'un Forte unique et super cool.",
+                "ja": "ヒーローショーに出てくるヒーローは、みーんな共鳴の力を使える共鳴者だからね。",
+                "ko": "영웅극에 나오는 대영웅들은, 거의 다 공명의 힘을 쓸 수 있는 공명자들이잖아요",
+                "th": "คือว่าอย่างงี้ ในบทละครวีรชนเนี่ย ฮีโร่ผู้ยิ่งใหญ่ทุกคนจะเป็นเรโซเนเตอร์ที่มีพลังเรโซแนนซ์สุดเจ๋งอันเป็นเอกลักษณ์",
+                "zh-Hans": "英雄戏里的大英雄，许多不都是能用出超绝无敌共鸣力量的共鸣者嘛。",
+                "zh-Hant": "英雄戲裡的大英雄，許多不都是能用出超絕無敵共鳴力量的共鳴者嘛。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Manche werden damit geboren, andere müssen allein in ferne Berge und geheime Höhlen reisen, um zu trainieren.",
+                "en": "Some of them are born with it, and some have to journey to distant mountains and secret caves to train all alone.",
+                "es": "Algunos nacen con él y otros viajan a tierras lejanas y cuevas secretas para entrenar solos.",
+                "fr": "Certains sont nés avec, d'autres ont dû se rendre dans des montagnes lointaines et des grottes secrètes pour s'entraîner seuls.",
+                "ja": "生まれた瞬間から共鳴者のヒーローもいるし、人里離れた洞窟で修行をして共鳴者になったヒーローもいるんだ。",
+                "ko": "연극 속에 나오는 영웅들은 태어날 때부터 공명자예요. 동굴에 가서 혼자 수련하기도 하고요",
+                "th": "บางคนก็มีมาตั้งแต่เกิด และบางคนต้องออกเดินทางไปยังภูเขาที่ห่างไกลหรือตามถ้ำลับเพื่อฝึกฝนตามลำพัง",
+                "zh-Hans": "我看戏里说，他们有的一生出来就是共鸣者，有的就需要跑到好偏好偏的山洞里，一个人闭关修炼。",
+                "zh-Hant": "我看戲裡說，他們有的一生出來就是共鳴者，有的就需要跑到好偏好偏的山洞裡，一個人閉關修煉。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und dann – „Nach jahrelangem Training erscheint endlich ein Tacet-Zeichen. Und die Kraft erwacht.“ Hehe, das ist meine Lieblingsstelle!",
+                "en": "And then—\"After years of training, a Tacet Mark finally appears. Forte awaken.\" Hehe, that's my favorite part!",
+                "es": "Y luego... «Tras años de entrenamiento, su Marca Tácita hace acto de presencia. ¡Su Forte despierta!» ¡Jo, jo! ¡Esa es mi parte favorita!",
+                "fr": "Et puis... « Après des années d'entraînement, une marque taciturne apparaît enfin - un Forte s'éveille. » C'est ma partie préférée !",
+                "ja": "そして……「しばらく時が経ち、音痕が現れ共鳴の力が覚醒する」――えへへ、僕、こういうストーリー大好き！",
+                "ko": "그러다가... 「시간이 흘러 성흔이 생기고 공명의 힘이 각성!」 헤헤, 제가 제일 좋아하는 얘기예요",
+                "th": "และต่อมา หลังจากที่ฝึกหนักมาหลายปี ในที่สุดเครื่องหมายทาเซ็ตก็ปรากฏขึ้น พลังเรโซแนนซ์ได้ตื่นขึ้นแล้ว ฮิๆ ฉันชอบตอนนี้ที่สุดเลย!",
+                "zh-Hans": "然后——“一段时间过后，声痕出现，共鸣力量觉醒”。嘿嘿，这是我最喜欢的剧情！",
+                "zh-Hant": "然後——「一段時間過後，聲痕出現，共鳴力量覺醒」。 嘿嘿，這是我最喜歡的劇情！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Genau deshalb habe ich immer viel Gemüse gegessen und bin früh ins Bett gegangen. Ich will den ganzen Tag in dieser geheimen Basis trainieren können.",
+                "en": "That's why I've been eating all my veggies and going to bed early lately. I want to be ready to spend the whole day at this secret base training.",
+                "es": "Por eso me como todas las verduras y voy a la cama temprano. Quiero estar listo para pasar todo el día entrenando en esta base secreta.",
+                "fr": "C'est pour ça que j'ai mangé tous mes légumes et que je me suis couché tôt ces derniers temps. Je veux être prêt à passer toute la journée dans cette base secrète à m'entraîner.",
+                "ja": "だから最近は、たくさんご飯食べて、たくさん寝て、秘密基地にこもって――",
+                "ko": "그래서 요 며칠 동안 밥도 잘 먹고 잠도 잘 자고, 그리고 이 비밀 아지트에 와서 하루 종일 지내고 있어요",
+                "th": "เพราะงั้นช่วงนี้ฉันถึงได้กินให้อิ่มนอนให้พอ ฉันอยากเตรียมตัวให้พร้อมที่จะไปฝึกซ้อมทั้งวันที่ฐานลับแห่งนี้",
+                "zh-Hans": "所以这几天我吃好饭、睡好觉，就会跑到这个秘密基地里待上一整天。",
+                "zh-Hant": "所以這幾天我吃好飯、睡好覺，就會跑到這個秘密基地裡待上一整天。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich versuche, jede Bewegung zu üben, die ich mir aus den Spielen gemerkt habe. Ich hoffe, dass meine Kraft bald erwacht. Ich habe so viel geübt, da habe ich es nicht mal geschafft, mir Heldenstück anzusehen.",
+                "en": "I try to practice every move I can think of from the plays, hoping my Forte will awaken soon. I've been so busy, I haven't even watched any Hero Plays lately.",
+                "es": "Practico todos los movimientos de los héroes que veo para que mi Forte despierte pronto. Aunque entreno tanto que hace días que no veo capítulos de Drama de Héroe.",
+                "fr": "J'essaie de répéter tous les mouvements qui me viennent à l'esprit dans les comédies, en espérant que mon Forte se réveillera bientôt. J'ai été tellement occupé que je n'ai même pas regardé de comédie héroïque ces derniers temps.",
+                "ja": "そうやってヒーローがやってた修行をしてるんだ。僕の中に眠る共鳴の力のためにね。大好きなヒーローショーも頑張って我慢してるんだから。",
+                "ko": "머릿속에 떠오르는 영웅들의 모습을 따라 공부하면서 제 공명 능력이 깨어날 때까지 기다릴 거예요. 영웅극 보러 갈 시간도 없다니까요",
+                "th": "ฉันพยายามฝึกท่าต่อสู้จากบทละครทุกแบบที่นึกออก หวังว่าพลังเรโซแนนซ์ของฉันจะตื่นขึ้นในไม่ช้า ช่วงนี้ฉันยุ่งมากจนไม่ได้ดูละครวีรชนเลยด้วยซ้ำ",
+                "zh-Hans": "跟着脑子里能记起来的英雄们的样子学练功，等待唤醒我沉睡的共鸣能力。都没时间去看英雄戏了呢。",
+                "zh-Hant": "跟著腦子裡能記起來的英雄們的樣子學練功，等待喚醒我沉睡的共鳴能力。 都沒時間去看英雄戲了呢。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Und ist deine Kraft jetzt schon erwacht?",
+                    "en": "So, has your Forte awakened yet?",
+                    "es": "Entonces, ¿ya has despertado tu Forte?",
+                    "fr": "Alors, ton Forte s'est-il réveillé ?",
+                    "ja": "{Male=共鳴の力は覚醒したのか？;Female=共鳴の力は覚醒したの？}",
+                    "ko": "그럼 공명의 힘은 각성했나요?",
+                    "th": "แล้วพลังเรโซแนนซ์ของหนูตื่นรึยังล่ะ?",
+                    "zh-Hans": "那你的共鸣力量觉醒了吗？",
+                    "zh-Hant": "那你的共鳴力量覺醒了嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Äh ... nicht wirklich ...",
+                "en": "Um... Not really...",
+                "es": "Bueno... Aún no...",
+                "fr": "Hum... Pas vraiment...",
+                "ja": "うっ……それは、まだだけど……",
+                "ko": "어... 아뇨...",
+                "th": "เอ่อ... ยังหรอกครับ...",
+                "zh-Hans": "唔……没有……",
+                "zh-Hant": "唔……沒有……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich habe mir einen neuen Plan ausgedacht. Weißt du, wie Flammenwächterin stärker wird, wenn er in größere Gefahr kommt? Das nennt man einen „Kraft-Schub“!",
+                "en": "But I've come up with a new plan. You know how Flame Ranger gets stronger the more danger he's in? They call it a \"Forte Boost\"!",
+                "es": "Pero tengo otra idea. ¿Sabes que Ranger de Llamas se hace más fuerte cuanto más peligro corre? ¡Lo llaman «Explosión del Forte»!",
+                "fr": "Mais j'ai trouvé un nouveau plan. Tu sais que le Gardien du feu devient de plus en plus fort à mesure qu'il se met en danger ? C'est ce qu'on appelle un « Forte Booster » !",
+                "ja": "でも、<ano=きょうめいへんい>共鳴変異</ano>っていうのがあってね、フレイムマンは危険が迫った時に最強の共鳴の力を使えるようになるんだ！",
+                "ko": "그래도 새로운 방법을 생각해 냈어요. 불꽃 영웅은 항상 제일 위험한 순간에 제일 강한 공명의 힘을 발휘하거든요. 이름하여 공명 돌변!",
+                "th": "แต่ฉันคิดแผนใหม่ออกแล้ว คุณก็รู้ใช่มั้ยว่าเฟลมเรนเจอร์จะยิ่งแข็งแกร่งขึ้นเมื่อเผชิญกับอันตรายมากขึ้น? แบบนั้นเขาเรียกกันว่า บูสต์พลังเรโซแนนซ์!",
+                "zh-Hans": "不过我想好了一个新办法，炽焰游侠总是在最危险的时候才能使出最强的共鸣力，这叫共鸣突变！",
+                "zh-Hant": "不過我想好了一個新辦法，熾焰游俠總是在最危險的時候才能使出最強的共鳴力，這叫共鳴突變！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also habe ich mir gedacht, dass ich mir ein gruseliges Monster suche und versuche, es zu bekämpfen.",
+                "en": "So I thought, why not find a scary monster and try to fight it?",
+                "es": "Pues pensé, ¿y si busco un monstruo aterrador y me peleo con él?",
+                "fr": "Alors je me suis dit, pourquoi ne pas trouver un monstre effrayant et essayer de le combattre ?",
+                "ja": "それなら、僕だって一番怖い敵と戦えば力が覚醒するはず。",
+                "ko": "그러니까, 저도 가장 무서운 적을 찾아서 한바탕 싸우면 되는 거죠",
+                "th": "ฉันเลยคิดว่า ทำไมไม่ลองหามอนสเตอร์น่ากลัวๆ มาสู้ดูล่ะ?",
+                "zh-Hans": "那我找到那个最可怕的敌人，和他战斗一场不就好了嘛。",
+                "zh-Hant": "那我找到那個最可怕的敵人，和他戰鬥一場不就好了嘛。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also die Tacet-Dissonanz gerade eben ...",
+                    "en": "So that Tacet Discord just now...",
+                    "es": "Así que esa Disonancia Tácita de antes...",
+                    "fr": "Alors, le Tacet Discord de tout à l'heure...",
+                    "ja": "じゃあ、あの<ano=ざんぞう>残像</ano>は……",
+                    "ko": "그럼 아까 그 잔상들이...",
+                    "th": "แล้วทาเซ็ตดิสคอร์ดเมื่อกี้...",
+                    "zh-Hans": "那些残象……",
+                    "zh-Hant": "那些殘象……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Äh ... das war ein Versehen ... ich habe keine Ahnung, wo das herkam ...",
+                "en": "Uh... That was an accident... I've no idea where it came from...",
+                "es": "Esto... fue un accidente... No tengo ni idea de dónde vino...",
+                "fr": "Euh... C'était un accident... Je ne sais pas du tout d'où ça vient...",
+                "ja": "えっと……あれは想定外っていうか……僕もあの<ano=ざんぞう>残像</ano>がどこから出てきたのか分からない……",
+                "ko": "아... 그건 저도 모르는 일이에요... 그 괴물들이 어디서 나왔는지는 저도 몰라요...",
+                "th": "เอ่อ... นั่นมันบังเอิญน่ะครับ... ฉันไม่รู้ด้วยซ้ำว่ามันมาจากไหน...",
+                "zh-Hans": "呃……那是个意外啦……也不知道那些怪物从哪里冒出来的……",
+                "zh-Hant": "呃……那是個意外啦……也不知道那些怪物從哪裡冒出來的……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich ein großer Held sein will, muss ich einen Feind finden, der noch stärker ist als eine TD.",
+                "en": "If I'm gonna a great hero, I have to find an enemy that's even stronger than a TD.",
+                "es": "Pero para ser un gran héroe necesito un enemigo aún más fuerte que una DT.",
+                "fr": "Si je veux devenir un grand héros, je dois trouver un ennemi encore plus fort qu'un TD.",
+                "ja": "でも、すごいヒーローになるためには、<ano=ざんぞう>残像</ano>よりも強い相手と戦わないと。",
+                "ko": "제가 영웅이 되려면 잔상보다도 더 강한 녀석을 찾아야 돼요",
+                "th": "ถ้าฉันจะเป็นฮีโร่ผู้ยิ่งใหญ่ให้ได้ ฉันก็ต้องหาศัตรูที่แข็งแกร่งกว่าทาเซ็ตดิสคอร์ดให้เจอ",
+                "zh-Hans": "我要做大英雄，肯定要找比残象更强大的对手才行。",
+                "zh-Hant": "我要做大英雄，肯定要找比殘象更強大的對手才行。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist wirklich sehr gefährlich.",
+                    "en": "That's too dangerous.",
+                    "es": "Es demasiado peligroso.",
+                    "fr": "C'est trop dangereux.",
+                    "ja": "危ないからダメ。",
+                    "ko": "그건 너무 위험해요",
+                    "th": "แบบนั้นมันอันตรายเกินไป",
+                    "zh-Hans": "这样太危险了。",
+                    "zh-Hant": "這樣太危險了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Aber ... aber ...",
+                "en": "But... but...",
+                "es": "Pero, pero...",
+                "fr": "Mais... Mais...",
+                "ja": "でも……でも……",
+                "ko": "그건... 그치만...",
+                "th": "แต่ว่า... แต่ว่า...",
+                "zh-Hans": "可是……可是……",
+                "zh-Hant": "可是……可是……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann sage du mir, was soll ich mit meiner erwachten Kraft anstellen?",
+                "en": "Then, you tell me. What should I do to awaken my Forte?",
+                "es": "Bueno, pues tú dirás. ¿Qué hago para despertar mi Forte?",
+                "fr": "Alors, à toi de me le dire. Que dois-je faire pour réveiller mon Forte ?",
+                "ja": "それじゃあ、{Male=お兄ちゃん;Female=お姉ちゃん}はどうすれば共鳴の力が覚醒すると思う？",
+                "ko": "그럼, {Male=형;Female=누나}, 어떻게 하면 공명의 힘을 깨울 수 있어요?",
+                "th": "ถ้างั้นบอกฉันมาสิ ฉันควรทำยังไงถึงจะปลุกพลังเรโซแนนซ์ของตัวเองขึ้นมาได้?",
+                "zh-Hans": "那{Male=大哥哥;Female=大姐姐}你说，怎么才能唤醒共鸣力量呢？",
+                "zh-Hant": "那{Male=大哥哥;Female=大姐姐}你說，怎麼才能喚醒共鳴力量呢？"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ist es denn so wichtig für dich, eine Kraft zu haben?",
+                    "en": "Having a Forte is really so important to you?",
+                    "es": "¿Tener un Forte es realmente tan importante para ti?",
+                    "fr": "Avoir un Forte est vraiment si important pour toi ?",
+                    "ja": "{Male=共鳴の力はそんなに大事なのか？;Female=共鳴力はそんなに大事なの？}",
+                    "ko": "공명의 힘이 그렇게 중요한가요?",
+                    "th": "การมีพลังเรโซแนนซ์มันสำคัญกับหนูมากขนาดนั้นเลยเหรอ?",
+                    "zh-Hans": "共鸣力量有那么重要吗？",
+                    "zh-Hant": "共鳴力量有那麼重要嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, unbedingt! Alle Helden in den Stücken sind Resonatoren mit einer bestimmten Kraft.",
+                "en": "Absolutely, it's a must! Every hero in the plays is a Resonator with a Forte.",
+                "es": "¡Claro, es lo más! Cada héroe de las historias es un resonador con su Forte.",
+                "fr": "Absolument, c'est indispensable ! Tous les héros des comédies sont des résonateurs dotés d'un Forte.",
+                "ja": "そりゃそうだよ。共鳴の力がないとヒーローにはなれない。ヒーローは共鳴者だって決まってるんだから。",
+                "ko": "당연하죠. 공명의 힘이 있어야 영웅이 될 수 있으니까요. 영웅극만 봐도, 대영웅들은 다 공명자인걸요",
+                "th": "แน่นอนสิครับ ของมันต้องมี! ฮีโร่ทุกคนในละครก็เป็นเรโซเนเตอร์ที่มีพลังเรโซแนนซ์กันทั้งนั้น",
+                "zh-Hans": "当然重要啦，有共鸣力才能做英雄，英雄戏里不都是这样演的嘛，没有一个大英雄不是共鸣者来着。",
+                "zh-Hant": "當然重要啦，有共鳴力才能做英雄，英雄戲裡不都是這樣演的嘛，沒有一個大英雄不是共鳴者來著。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich ein Held werde, kann ich alle meine Freunde beschützen. Dann braucht keiner von uns je wieder Angst zu haben.",
+                "en": "Becoming a hero means I can protect all my friends. None of us will ever need to be scared again.",
+                "es": "Si me hago un héroe, podré proteger a todos mis amigos. Nadie volverá a tener miedo.",
+                "fr": "En devenant un héros, je peux protéger tous mes amis. Aucun d'entre nous n'aura plus jamais besoin d'avoir peur.",
+                "ja": "ヒーローになったら、ちゃんと仲間を守れるようになる。何も怖くなくなるんだ。",
+                "ko": "영웅이 되면 동생도 지킬 수 있고, 무서워할 것도 없다고요",
+                "th": "ถ้าได้เป็นฮีโร่ ฉันก็ปกป้องเพื่อนๆ แล้วก็จะไม่มีใครต้องหวาดกลัวอีกต่อไป",
+                "zh-Hans": "当了大英雄，我就能好好罩着我的小弟，什么都不怕了。",
+                "zh-Hant": "當了大英雄，我就能好好罩著我的小弟，什麼都不怕了。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und überhaupt ... ein Held zu sein ist einfach das Coolste. Jedes Mal, wenn wir Heldenstücke anschauen, jubeln alle meine Freunde wie verrückt für die Flammenwächterin. Ich will nicht der langweilige Gehilfe sein, auf keinen Fall.",
+                "en": "Besides... being a hero is just the coolest. Every Hero Play, all my friends cheer like crazy for Flame Ranger. I don't plan on being the lame sidekick, no way.",
+                "es": "Además... ser un héroe es lo mejor. Mis amigos se ponen como locos cuando sale Ranger de Llamas en Drama de Héroe. No quiero ser el debilucho de su compañero, ¡no señor!",
+                "fr": "Et puis... être un héros, c'est vraiment cool. À chaque comédie héroïque, tous mes amis applaudissent à tout rompre le Gardien du feu. Je n'ai pas l'intention de jouer le rôle de l'acolyte naze, hors de question.",
+                "ja": "それに……ヒーローってカッコイイじゃん。ヒーローショーだと、みんなフレイムマンばっかり褒めるしさ。だから、ヒーローのただの仲間で終わりたくないんだ。",
+                "ko": "게다가... 영웅이 얼마나 멋있는데요. 애들은 다 불꽃 영웅 얘기밖에 안 해요. 저는 평범한 파트너 같은 건 안 하고 싶어요",
+                "th": "อีกอย่าง... การเป็นฮีโร่มันเท่ที่สุดเลย ทุกครั้งที่มีละครวีรชน เพื่อนๆ ของฉันตะโกนเชียร์เฟลมเรนเจอร์กันลั่น ฉันไม่ยอมเป็นผู้ช่วยเฉิ่มๆ หรอกนะ ไม่มีทางเลย",
+                "zh-Hans": "再说……大英雄，多威风，每次英雄戏，小伙伴们都只会夸奖炽焰游侠呢。我才不要当一个普普通通的游侠伙伴。",
+                "zh-Hant": "再說……大英雄，多威風，每次英雄戲，小夥伴們都只會誇獎熾焰游俠呢。 我才不要當一個普普通通的游俠夥伴。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Aber du brauchst eigentlich gar keine spezielle Kraft, um ein Held zu sein.",
+                    "en": "You don't need a Forte to be a hero.",
+                    "es": "Pero no necesitas un Forte para ser un héroe.",
+                    "fr": "Tu n'as pas besoin d'un Forte pour être un héros.",
+                    "ja": "共鳴の力がなくてもヒーローにはなれる。",
+                    "ko": "꼭 공명의 힘을 얻어야만 영웅이 될 수 있는 건 아니에요",
+                    "th": "หนูไม่จำเป็นต้องมีพลังเรโซแนนซ์ก็เป็นฮีโร่ได้นะ",
+                    "zh-Hans": "不是只有获得共鸣力量才能当英雄。",
+                    "zh-Hant": "不是只有獲得共鳴力量才能當英雄。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wenn du so viel darüber weißt ... Dann sage mir, was ich tun soll. Sag es mir, sag es mir!",
+                "en": "If you know so much about it... Then what should I do? Tell me, tell me!",
+                "es": "Ya que sabes tanto... ¿Qué hago? ¡Venga, dímelo!",
+                "fr": "Si tu en sais autant à ce sujet... Alors que dois-je faire ? Dis-moi, dis-moi !",
+                "ja": "え……どうやって？{Male=お兄ちゃん;Female=お姉ちゃん}、早く教えて。",
+                "ko": "그럼... 어떻게 해야 돼요? 알려 주세요, {Male=형;Female=누나}",
+                "th": "แล้วฉันควรทำยังไงดี {Male=พี่ชาย;Female=พี่สาว} บอกมาหน่อยเถอะ? บอกมาเลย บอกมา!",
+                "zh-Hans": "那……我该怎样做呀，{Male=大哥哥;Female=大姐姐}快和我讲讲嘛。",
+                "zh-Hant": "那……我該怎樣做呀，{Male=大哥哥;Female=大姐姐}快和我講講嘛。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du musst mehr trainieren.",
+                    "en": "Exercise more.",
+                    "es": "Haz más ejercicio.",
+                    "fr": "Faire plus d'exercice.",
+                    "ja": "たくさん運動すること。",
+                    "ko": "운동을 많이 하세요",
+                    "th": "ออกกำลังกายเยอะๆ",
+                    "zh-Hans": "多运动。",
+                    "zh-Hant": "多運動。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Dich immer ordentlich ausruhen.",
+                    "en": "Get plenty of rest.",
+                    "es": "Descansa mucho.",
+                    "fr": "Bien se reposer.",
+                    "ja": "たくさん寝ること。",
+                    "ko": "많이 쉬세요",
+                    "th": "พักผ่อนให้เพียงพอ",
+                    "zh-Hans": "多休息。",
+                    "zh-Hant": "多休息。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Stets dein Gemüse essen.",
+                    "en": "Eat your vegetables.",
+                    "es": "Come más verduras.",
+                    "fr": "Manger des légumes.",
+                    "ja": "たくさん野菜を食べること。",
+                    "ko": "채소를 많이 드세요",
+                    "th": "กินผักด้วย",
+                    "zh-Hans": "多吃蔬菜。",
+                    "zh-Hant": "多吃蔬菜。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ach. Du klingst wie meine Mama. Hör auf, mich wie ein kleines Kind zu behandeln.",
+                "en": "Ugh. You sound like my mom. Come on, don't treat me like I'm just some kid.",
+                "es": "Puaj. Hablas como mamá. Va, que no soy un crío.",
+                "fr": "Pff. Tu parles comme ma mère. Non, ne me prends pas comme un gamin quelconque.",
+                "ja": "え？それ、お母さんがいつも言ってることと同じじゃん。{Male=お兄ちゃん;Female=お姉ちゃん}、もっと真剣に答えてよ。",
+                "ko": "아? 에이, 우리 엄마랑 말이 똑같잖아요. {Male=형;Female=누나}, 장난치지 말고요. 저도 이제 알 건 다 안다고요",
+                "th": "เฮ้อ พูดเหมือนแม่ฉันเป๊ะเลย อะไรเนี่ย อย่าทำเหมือนฉันเป็นเด็กน้อยนะ",
+                "zh-Hans": "嗯？老妈也经常说这样的话，{Male=大哥哥;Female=大姐姐}认真一点呐，我可不是什么都不懂的小孩子了。",
+                "zh-Hant": "嗯？ 老媽也經常說這樣的話，{Male=大哥哥;Female=大姐姐}認真一點呐，我可不是什麼都不懂的小孩子了。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kenne ... ein paar Krieger. Die wissen genau, was es heißt, ein Held zu sein.",
+                "en": "I do know... a few warriors. They know firsthand what it means to be a hero.",
+                "es": "Conozco a... algunos guerreros que saben de primera mano lo que significa ser un héroe.",
+                "fr": "Je connais... quelques guerriers. Ils savent par expérience ce que signifie être un héros.",
+                "ja": "ヒーローなら、何人か心当たりがある……彼らなら、何か知ってるかも。",
+                "ko": "제가 아는 사람들 중에... 영웅들이 좀 있어요. 아마 그 사람들이 방법을 알고 있을 거예요",
+                "th": "ฉันเองก็... พอรู้จักนักรบอยู่บ้าง พวกเขามีประสบการณ์ตรงเลยว่าการเป็นฮีโร่มันหมายความว่ายังไง",
+                "zh-Hans": "我认识一些……英雄，他们应该知道成为英雄的方法。",
+                "zh-Hant": "我認識一些……英雄，他們應該知道成為英雄的方法。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie wäre es, wenn ich dir ein paar ihrer Abenteuer und Heldentaten aufschreibe? Echte Helden, echte Geschichten ... das könnte dir ein paar Ideen geben.",
+                "en": "What if I write down some of their quests and daring feats for you? Real heroes, real stories... it might give you some ideas.",
+                "es": "¿Y si te escribo algunas de sus andanzas más valientes? Héroes reales, historias reales... quizás te dé algunas ideas.",
+                "fr": "Et si j'écrivais pour toi quelques-unes de leurs quêtes et de leurs exploits ? De vrais héros, de vraies histoires... Ça pourrait te donner des idées.",
+                "ja": "彼らの暮らしぶりや冒険の話を記録して、見せてあげるよ。実際のお手本を見れば、少しは参考になるかもしれない。",
+                "ko": "제가 그 사람들의 생활이나 모험을 잘 기록했다가 알려줄게요. 현실적인 쪽이 더 참고가 될 테니까요",
+                "th": "ถ้าฉันเขียนบันทึกภารกิจและวีรกรรมกล้าหาญของพวกเขาให้หนูอ่านล่ะ? ฮีโร่ตัวจริง เรื่องราวจริงๆ... หนูอาจพอเห็นภาพมากขึ้นก็ได้",
+                "zh-Hans": "也许，我可以记录一些他们的生活或者冒险，再拿给小满看。现实中的例子，可能更有参考价值吧。",
+                "zh-Hant": "也許，我可以記錄一些他們的生活或者冒險，再拿給小滿看。 現實中的例子，可能更有參考價值吧。"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wow, ernsthaft?! Sind die denn noch genialer als die Helden in den Theaterstücken?",
+                "en": "Wow, really?! Are they even more awesome than the heroes in the plays??",
+                "es": "¡Vaya, ¿en serio?! ¿Son tan guays como los héroes de los capítulos?",
+                "fr": "Ouah, vraiment ?! Est-ce qu'ils sont encore plus super que les héros des comédies ?",
+                "ja": "わぁ、いいの！？それって、ヒーローショーよりもすごいんじゃない！？",
+                "ko": "와, 진짜요? 영웅극보다 더 멋있겠다!",
+                "th": "ว้าว จริงเหรอ?! พวกเขาเจ๋งยิ่งกว่าฮีโร่ในละครอีกเหรอ?",
+                "zh-Hans": "哇，真的吗！会比英雄戏还要精彩吗？",
+                "zh-Hant": "哇，真的嗎！ 會比英雄戲還要精彩嗎？"
+              },
+              "id": 26,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wann zeigst du mir diese Geschichten? Ich will sie auch Lee und Momo zeigen.",
+                "en": "When will you show me these stories? I want Li and Momo to see 'em too.",
+                "es": "¿Y cuánto tardarás? Se las quiero enseñar a Lee y a Momo.",
+                "fr": "Quand tu vas me raconter ces histoires ? J'ai hâte de les dire à Lee et Momo aussi.",
+                "ja": "えっと……{Male=お兄ちゃん;Female=お姉ちゃん}、そのヒーローたちのお話しは、いつ聞かせてくれるの？れいちゃんとすみちゃんにも聞かせてあげたいんだ。",
+                "ko": "음... 그럼... {Male=형;Female=누나}, 그 얘긴 언제 들려주실 거예요? 소배랑 한묵도 같이 데려가려고요",
+                "th": "แล้วคุณจะเอาเรื่องราวที่ว่านี้ให้ฉันอ่านเมื่อไหร่? ฉันอยากให้ Li กับ Momo ได้อ่านด้วย",
+                "zh-Hans": "唔……那{Male=大哥哥;Female=大姐姐}准备什么时候把英雄的故事带给我呀，我要拉上小黎、小墨一起来。",
+                "zh-Hant": "唔……那{Male=大哥哥;Female=大姐姐}準備什麼時候把英雄的故事帶給我呀，我要拉上小黎、小墨一起來。"
+              },
+              "id": 27,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zeit. Ort. Anmeldung des Events. Der Mondlichtmarkt.",
+                "en": "Time. Location. Event notification. The Moonlit Fair.",
+                "es": "Hora. Ubicación. Notificación de evento. La Feria de la Luna.",
+                "fr": "Heure. Lieu. Notification de l'événement. Le marché de la lune.",
+                "ja": "時間と場所の設定――<ano=よいづきかい>宵月会</ano>をおすすめします。",
+                "ko": "시간, 장소, 힌트, 달맞이 야시장",
+                "th": "เวลา สถานที่ การแจ้งเตือนกิจกรรม เทศกาลจันทร์พรายแสง",
+                "zh-Hans": "时间，地点，提示，宵月会。",
+                "zh-Hant": "時間，地點，提示，宵月會。"
+              },
+              "id": 28,
+              "speaker": {
+                "id": 1367,
+                "name": {
+                  "zh-Hans": "相里"
+                },
+                "entity": {
+                  "entityId": 880000101,
+                  "mapId": 8,
+                  "blueprintType": "NPC1052",
+                  "name": "TsEntity_NPC1051_机器人相里",
+                  "areaId": 405,
+                  "position": {
+                    "x": -91460,
+                    "y": 81810,
+                    "z": 3870
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Der Mondlichtmarkt, in der Mitte des Festivals? Das wäre die perfekte Attraktion für die Kinder in Jinzhou.)",
+                "en": "(The Moonlit Fair, right in the middle of the festival? It would be the perfect draw for the children in Jinzhou.)",
+                "es": "(¿La Feria de la Luna, justo en medio del festival? Sería el momento perfecto para los niños de Jinzhou).",
+                "fr": "(Le marché de la lune, en plein milieu de la fête ? Ce serait une attraction parfaite pour les enfants de Jinzhou.)",
+                "ja": "（<ano=げっついさい>月追祭</ano>当日に開催される<ano=よいづきかい>宵月会</ano>。こんな一大イベントなら、{Male=子どもたちもきっとみんな聞きに来るはずだ）;Female=子どもたちもきっとみんな聞きに来るはず）}",
+                "ko": "(달맞이 축제 당일 달맞이 야시장? 이런 큰 행사라면 금주 아이들도 놓치지 않겠지）",
+                "th": "(เทศกาลจันทร์พรายแสง กลางงานรื่นเริงเลยเนี่ยนะ? คงเป็นจุดดึงดูดที่เหมาะมากสำหรับเด็กๆ ในจินโจว)",
+                "zh-Hans": "（追月节当天宵月会吗？这样重大的活动，今州的孩子们应该都不会错过的。）",
+                "zh-Hant": "（追月節當天宵月會嗎？這樣重大的活動，今州的孩子們應該都不會錯過的。）"
+              },
+              "id": 29,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Zum Glück habe ich noch etwas Zeit, um alles für Mahns Wunsch zu erledigen, bevor es losgeht.)",
+                "en": "(Thankfully, I've still got some time to get everything ready for Mahn's wish before it starts.)",
+                "es": "(Afortunadamente, todavía tengo algo de tiempo para prepararlo todo para el deseo de Mahn antes de que llegue la hora).",
+                "fr": "(Heureusement, j'ai encore le temps de tout préparer pour le vœu de Mahn avant qu'il ne commence.)",
+                "ja": "（それに、<ano=げっついさい>月追祭</ano>まであと数日ある。{Male=その間にまーちゃんの願いを叶える準備ができるな）;Female=その間にまーちゃんの願いを叶える準備ができるかも）}",
+                "ko": "(게다가 달맞이 축제까지 며칠 남았으니, 지만의 소원을 준비할 시간도 있고）",
+                "th": "(โชคดีที่ฉันยังมีเวลาเตรียมทุกอย่างให้พร้อมสำหรับความปรารถนาของ Mahn ก่อนที่มันจะเริ่มขึ้น)",
+                "zh-Hans": "（而且距离追月节还有几天，我有些时间可以为小满的心愿做筹备。）",
+                "zh-Hant": "（而且距離追月節還有幾天，我有些時間可以為小滿的心願做籌備。）"
+              },
+              "id": 30,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie wäre es damit? Der Mondlichtmarkt, am Tag des Mondjagdfestivals. Ich werde die Geschichten dabei haben. Indianerehrenwort.",
+                "en": "How about this? The Moonlit Fair, on the day of the Moon-Chasing Festival. I'll have the stories with me. Pinky promise.",
+                "es": "A ver qué te parece. En la Feria de la Luna, el día del Festival de la Caza de la Luna, llevaré las historias conmigo. Promesa de la buena.",
+                "fr": "Que dirais-tu de ça ? Le marché de la lune, le jour de la Fête de Chasser la lune, je ramènerai les histoires avec moi. Promesse du petit doigt.",
+                "ja": "じゃあ、<ano=げっついさい>月追祭</ano>当日の<ano=よいづきかい>宵月会</ano>はどう？それまでに、色んな話を記録してくるよ。",
+                "ko": "그럼 달맞이 축제 당일 달맞이 야시장 어때요? 약속대로 녹음한 이야기를 가져올게요",
+                "th": "เอางี้ดีมั้ย? ที่งานเทศกาลจันทร์พรายแสง ในวันเทศกาลล่าจันทรา ฉันจะเอาเรื่องเล่าที่ว่านั้นมาด้วย เกี่ยวก้อยสัญญาเลย",
+                "zh-Hans": "那就追月节那天的宵月会怎么样？我会按照约定，把录好的故事带过来的。",
+                "zh-Hant": "那就追月節那天的宵月會怎麼樣？ 我會按照約定，把錄好的故事帶過來的。"
+              },
+              "id": 31,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "JA!! Ich zähl auf dein Indianerehrenwort!",
+                "en": "YES!! It's a pinky promise, then!",
+                "es": "¡¡SÍ!! ¡Lo prometido es deuda!",
+                "fr": "D'ACCORD !! C'est une promesse du petit doigt !",
+                "ja": "うん、約束だよ。絶対だからね。",
+                "ko": "알겠어요. 그럼 손가락 걸고 약속하는 거예요. 나중에 딴소리 하기 없기",
+                "th": "ไชโย!! งั้นถือว่าเกี่ยวก้อยสัญญาแล้วนะ!",
+                "zh-Hans": "好哦，那拉钩盖章，不许反悔。",
+                "zh-Hant": "好喔，那打勾勾，不許反悔。"
+              },
+              "id": 32,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann es kaum abwarten, wir sehen uns dort!",
+                "en": "Can't wait to see you there!",
+                "es": "¡Tengo tanas ganas!",
+                "fr": "J'ai hâte de te voir là-bas !",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}、また<ano=よいづきかい>宵月会</ano>で会おうね！",
+                "ko": "달맞이 야시장에서 봐요, {Male=형;Female=누나}!",
+                "th": "อยากเจอ {Male=พี่ชาย;Female=พี่สาว} ที่นั่นเร็วๆ จังเลย!",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}我们宵月会见！",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}我們宵月會見！"
+              },
+              "id": 33,
+              "speaker": {
+                "id": 1373,
+                "name": {
+                  "zh-Hans": "小满"
+                },
+                "entity": {
+                  "entityId": 880700284,
+                  "mapId": 8,
+                  "blueprintType": "NPC311",
+                  "name": "TsEntity_121_013_皇龙小孩",
+                  "areaId": 405,
+                  "position": {
+                    "x": -90060,
+                    "y": 80320,
+                    "z": 4380
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 60
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "parentId": 21,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 27,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe auf den Tumult zu",
+        "en": "Follow the noise",
+        "es": "Ve hacia el ruido",
+        "fr": "Trouver la source du bruit",
+        "ja": "騒ぎの元に向かう",
+        "ko": "떠들썩한 곳으로 이동",
+        "th": "ตามเสียงนั้นไป",
+        "zh-Hans": "前往吵闹声处",
+        "zh-Hant": "前往吵鬧聲處"
+      },
+      "entities": [
+        {
+          "entityId": 880000050,
+          "mapId": 8,
+          "blueprintType": "NPC262",
+          "name": "TsEntity_121_004_皇龙小孩4",
+          "areaId": 406,
+          "position": {
+            "x": -94780,
+            "y": 53470,
+            "z": 6030
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880000100,
+          "mapId": 8,
+          "blueprintType": "NPC0322",
+          "name": "TsEntity_0322_121_小墨3",
+          "areaId": 406,
+          "position": {
+            "x": -94720,
+            "y": 53400,
+            "z": 6050
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880000103,
+          "mapId": 8,
+          "blueprintType": "Gameplay540",
+          "name": "TsEntity_通用不可见交互物",
+          "areaId": 406,
+          "position": {
+            "x": -94720,
+            "y": 53450,
+            "z": 6100
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700179,
+          "mapId": 8,
+          "blueprintType": "NPC1052",
+          "name": "TsEntity_NPC1051_机器人相里4",
+          "areaId": 406,
+          "position": {
+            "x": -94620,
+            "y": 53410,
+            "z": 6080
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.2追月节主线明线",
+          "flowIndex": 10,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Grmpf, das schon wieder ... Dieser alte Lappen geht mir so auf die Nerven ...",
+                "en": "Ugh, this again... I'm so over this cheesy old play...",
+                "es": "Bah, otra vez... Estoy cansado de esta historia tan sosa...",
+                "fr": "Pff, encore une fois... J'en ai assez de ce vieux jeu ringard...",
+                "ja": "またそれ……？そんな古くさいストーリー、もう飽きたって……",
+                "ko": "또 이거야... 이제 식상해... 너무 질려...",
+                "th": "เฮ้อ นี่อีกแล้วเหรอ... ฉันเบื่อบทละครเก่าๆ เชยๆ แบบนี้เต็มทนแล้วเนี่ย...",
+                "zh-Hans": "怎么还是这个啊……老掉牙的剧目，看都看腻了……",
+                "zh-Hant": "怎麼還是這個啊……老掉牙的劇目，看都看膩了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt viel bessere ... Na los, überleg dir was anderes. Was ist denn mit „Regenbogenspiegel“? Ich bin die Flammenwächterin, und du sein Gefährte, der von Monstern gefangen gehalten wird!",
+                "en": "There are way better ones... Come on, switch it up! What about \"Rainbow Mirror\"? I'll be Flame Ranger, you be his sidekick being controlled by the monsters!",
+                "es": "Las hay mucho mejores... ¡Vamos a hacer otra! ¿Qué tal «Espejo de Arcoíris»? ¡Yo soy Ranger de Llamas y tú su compañero, que le controlan los monstruos!",
+                "fr": "Il y en a de bien meilleurs... Allez, changeons de registre ! Pourquoi pas « Miroir arc-en-ciel » ? Je serai le Gardien du feu, tu seras son acolyte contrôlé par les monstres !",
+                "ja": "ヒーローショーって色々あるんだからさ……今日は違うのにしよう。「虹の魔境」とかは？俺がフレイムマンで、お前は<ano=ざんぞう>残像</ano>に操られるフレイムマンの仲間な。",
+                "ko": "영웅극이 얼마나 많은데... 그냥 내가 하자는 걸로 하자니까! 오늘은 「마법의 무지개 거울」 하자! 난 불꽃 영웅 하고, 넌 잔상한테 조종당하는 영웅 파트너 하면 되겠다!",
+                "th": "ที่ดีๆ กว่านี้มีอีกตั้งเยอะ... เปลี่ยนบทกันหน่อยสิน่า! ลอง กระจกสายรุ้ง ดูมั้ย? ฉันจะเป็นเฟลมเรนเจอร์เอง ส่วนนายก็เป็นผู้ช่วยที่โดนมอนสเตอร์ควบคุม!",
+                "zh-Hans": "那么多英雄戏……不如听我的，今天换一个，我们来演《彩虹魔镜》。我是炽焰游侠，你是被残象控制的游侠伙伴。",
+                "zh-Hant": "那麼多英雄戲……不如聽我的，今天換一個，我們來演《彩虹魔鏡》。 我是熾焰游俠，你是被殘象控制的游俠夥伴。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Auf gar keinen Fall ... Warum muss ich immer der Versager sein, der vermöbelt wird? Ich will auch mal der Gute sein.",
+                "en": "No way... Why do I always have to be the one getting beat up? I don't wanna play the bad guy.",
+                "es": "¡Paso! ¿Por qué soy siempre yo al que le dan de palos? No quiero hacer de malo.",
+                "fr": "Pas question... Pourquoi dois-je toujours être celui qui se fait battre ? Je ne veux pas jouer le méchant.",
+                "ja": "やだよ……どうしていつもぼくがやられる役なの？悪役なんてやりたくない。",
+                "ko": "싫어... 왜 맨날 내가 맞아야 되는데... 이젠 악당 안 할래",
+                "th": "เรื่องอะไร... ทำไมฉันต้องเป็นคนโดนอัดน่วมอยู่เรื่อยเลย? ฉันไม่อยากเล่นเป็นตัวร้ายหรอก",
+                "zh-Hans": "不要……为什么每次都是我挨打，我才不要做坏蛋。",
+                "zh-Hant": "不要……為什麼每次都是我挨打，我才不要做壞蛋。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben uns das Rangerehrenwort gegeben, schon vergessen?! Wenn ich nicht die Flammenwächterin sein kann, spiele ich nicht mit dir.",
+                "en": "We pinky-sweared last time, remember?! If I don't get to play as Flame Ranger, I'm not playing with you anymore.",
+                "es": "La última vez me lo prometiste, ¿te acuerdas? Si no puedo hacer de Ranger de Llamas, no juego más contigo.",
+                "fr": "On a juré avec le petit doigt, la dernière fois, tu te souviens ?! Si je ne peux pas jouer le rôle du Gardien du feu, je ne jouerai plus avec toi.",
+                "ja": "それにこの前約束したじゃん。ぼくがフレイムマンじゃなきゃ、一緒に遊ばないって。",
+                "ko": "게다가 저번에 손가락까지 걸고 약속했잖아. 이번에도 불꽃 영웅 못 하면, 너랑 안 놀아",
+                "th": "เราเกี่ยวก้อยสาบานกันแล้วนะ จำได้มั้ย?! ถ้าฉันไม่ได้เป็นเฟลมเรนเจอร์ ฉันไม่เล่นด้วยแล้วนะ",
+                "zh-Hans": "而且上次拉钩盖章说好的，不让我当炽焰游侠的话，不陪你玩了。",
+                "zh-Hant": "而且上次打勾勾說好的，不讓我當熾焰游俠的話，不陪你玩了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut, na gut. Ich überlege ...",
+                "en": "All right, all right. Let me think...",
+                "es": "Vale, vale. Vamos a ver...",
+                "fr": "D'accord, d'accord. Laisse-moi réfléchir...",
+                "ja": "分かったよ。じゃあ、違うのにしよう……",
+                "ko": "아... 알겠어... 어디 보자...",
+                "th": "ก็ได้ๆ ขอคิดก่อนนะ...",
+                "zh-Hans": "别嘛别嘛，我再想想……",
+                "zh-Hant": "別嘛別嘛，我再想想……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann spielen wir „Tiefsee-Rettung“. Du kannst die Flammenwächterin sein und ich der Gefährte.",
+                "en": "Then let's do \"Deep Sea Rescue.\" You can be Flame Ranger, and I'll be the sidekick.",
+                "es": "Pues vamos a hacer «Rescate en aguas profundas». Tú eres Ranger de Llamas y yo tu compañero.",
+                "fr": "Alors faisons « Sauvetage en mer ». Tu seras le Gardien du feu, et je serai l'acolyte.",
+                "ja": "うーん、「海の底の一大事」は？お前がフレイムマンで、俺がフレイムマンの仲間。",
+                "ko": "그럼 『심해 응급처치』는 어때? 네가 불꽃 영웅 해. 파트너는 내가 해 줄게",
+                "th": "งั้นมาเล่น กู้ชีพทะเลลึก ก็แล้วกัน นายเป็นเฟลมเรนเจอร์ แล้วฉันจะเป็นผู้ช่วยเอง",
+                "zh-Hans": "那我们换成《深海急救》？你是炽焰游侠，我是游侠伙伴。",
+                "zh-Hant": "那我們換成《深海急救》？ 你是熾焰游俠，我是游俠夥伴。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kannst du damit leben?",
+                "en": "That good enough for you?",
+                "es": "¿Te parece mejor?",
+                "fr": "Cela te convient ?",
+                "ja": "これで文句はないだろ。",
+                "ko": "이러면 공평하지?",
+                "th": "แบบนี้พอใจหรือยัง?",
+                "zh-Hans": "这样够公平了吧。",
+                "zh-Hant": "這樣夠公平了吧。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Oh, ich verstehe, was du vorhast, Momo ... du willst mich wieder für dumm verkaufen ... In „Tiefsee-Rettung“ geht die Flammenwächterin dem Bösewicht in die Falle und wird selber gleich zu Beginn vermöbelt!",
+                "en": "...Oh, I see what you're up to, Momo... trying to trick me again... In \"Deep Sea Rescue,\" the Flame Ranger falls into the villain's trap and gets beat up at the start!",
+                "es": "... ¡Momo, ya me estás intentando engañar otra vez! Al principio de «Rescate en aguas profundas», Ranger de Llamas cae en la trampa del malo y le dan una paliza.",
+                "fr": "...Oh, je vois ce que tu fais, Momo... tu essaies encore de me piéger... Dans « Sauvetage en mer », le Gardien du feu tombe dans le piège du méchant et se fait tabasser dès le début !",
+                "ja": "……すみちゃん、ヤダ。またぼくを騙そうとしてる……「海の底の一大事」は最初からフレイムマンが敵の罠にハマって、すごくカッコ悪いやつじゃん。",
+                "ko": "공평하기는, 또 나 속이려는 거지? 내가 모를 줄 알고? 『심해 응급처치』는 처음에 불꽃 영웅이 악당의 함정에 빠져서 지는 내용이잖아",
+                "th": "...อ๋อ ฉันรู้ทันนายแล้วนะ Momo... จะมาหลอกฉันอีกแล้วสินะ... ใน กู้ชีพทะเลลึก เฟลมเรนเจอร์ตกหลุมพรางของวายร้ายแล้วก็โดนอัดตั้งแต่ต้นเรื่องนี่นา!",
+                "zh-Hans": "……坏小墨，又想骗我……我记得清清楚楚，《深海急救》里炽焰游侠中了坏人的陷阱，一开始输得好惨。",
+                "zh-Hant": "……壞小墨，又想騙我……我記得清清楚楚，《深海急救》裡熾焰游俠中了壞人的陷阱，一開始輸得好慘。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also bekomme wieder ich auf den Deckel.",
+                "en": "So I'll still be the one getting whacked.",
+                "es": "¡Y otra vez me toca a mí que me peguen!",
+                "fr": "C'est donc toujours moi qui me fais rouer des coups.",
+                "ja": "それに、結局またぼくがやられることになるし。",
+                "ko": "그럼 난 또 맞는 역할이고",
+                "th": "แปลว่าฉันก็เป็นคนที่โดนตื้บอยู่ดี",
+                "zh-Hans": "所以还不是我要挨打嘛。",
+                "zh-Hant": "所以還不是我要挨打嘛。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Hmpf. Das sage ich Mahn, wenn du das wieder versuchst. Wenn er zurückkommt, wirst du seine Faust schmecken.",
+                "en": "...Hmph. I'm gonna tell Mahn if you keep doing this. Wait till he comes back, he'll give you a knuckle sandwich.",
+                "es": "... No quiero. Como sigas con esas, se lo diré a Mahn y te va a dar de tortas hasta que le duela la mano.",
+                "fr": "Hmph... Je vais le dire à Mahn si tu continues à faire ça. Quand il reviendra, attends qu'il te donne une bonne leçon.",
+                "ja": "……ふんっ、そうやってぼくをイジメるなら、リーダーのまーちゃんに言っちゃうもんね。",
+                "ko": "칫... 자꾸 이렇게 괴롭히면, 지만 대장한테 혼내달라고 이를 거야",
+                "th": "...ฮึ่ม เดี๋ยวฉันฟ้อง Mahn แน่ถ้าแกยังทำแบบนี้อีก รอให้เขากลับมาก่อนเถอะ เดี๋ยวแกโดนสวบแน่!",
+                "zh-Hans": "……哼，你再这样欺负我，等小满老大回来，我要让他好好地训训你。",
+                "zh-Hant": "……哼，你再這樣欺負我，等小滿老大回來，我要讓他好好地訓訓你。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Pah, du denkst, wenn du mich bei Mahn verpetzt, hilft dir das? Solange er da ist, kannst du eh nie eine richtige Flammenwächterin werden!",
+                "en": "Pfft, you think telling Mahn's gonna help you? With him around, you'll never get the chance to be Flame Ranger!",
+                "es": "Ya, claro, ¿crees que decírselo a Mahn te servirá de algo? ¡Cuando está él, nunca te deja hacer de Ranger de Llamas!",
+                "fr": "Pfft, tu crois vraiment que Mahn va t'aider ? Avec lui, tu n'auras jamais la chance d'être le Gardien du feu !",
+                "ja": "まーちゃんに言ったってムダだよ。むしろ、まーちゃんがいたら、お前なんか絶対フレイムマンになれないよ。",
+                "ko": "헹, 어디 일러 봐. 대장이 있으면 넌 불꽃 영웅은 아예 꿈도 못 꿀걸?",
+                "th": "เฮอะ แกคิดว่าบอก Mahn แล้วจะช่วยได้เหรอ? ถ้า Mahn อยู่ด้วย แกไม่มีโอกาสได้เป็นเฟลมเรนเจอร์หรอก!",
+                "zh-Hans": "呿，你向小满告状也没用，有小满在，你才没机会当炽焰游侠呢。",
+                "zh-Hant": "你向小滿告狀也沒用，有小滿在，你才沒機會當熾焰游俠呢。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenigstens wirst du mich dann nicht die ganze Zeit verhauen!",
+                "en": "At least I won't get beat up by you all the time!",
+                "es": "¡Bueno, pero al menos no saldré perdiendo todo el rato!",
+                "fr": "Au moins, je ne me ferai plus tabasser par toi tout le temps !",
+                "ja": "そ、それでも、叩かれる役にはならないもん！",
+                "ko": "적어도 너한테 맨날 맞지는 않겠지!",
+                "th": "อย่างน้อยฉันก็จะไม่โดนแกตื้บตลอดเวลา!",
+                "zh-Hans": "至、至少不会总是被你打！",
+                "zh-Hant": "至、至少不會總是被你打！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kennt hier jemand Mahn?",
+                    "en": "Do any of you know Mahn?",
+                    "es": "¿Alguno de vosotros conoce a Mahn?",
+                    "fr": "Est-ce que l'un d'entre vous connaît Mahn ?",
+                    "ja": "あなたたち、まーちゃんを知ってるの？",
+                    "ko": "혹시 지만을 아세요?",
+                    "th": "นี่มีใครรู้จัก Mahn บ้างมั้ย?",
+                    "zh-Hans": "你们，认识小满吗？",
+                    "zh-Hant": "你們，認識小滿嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hey. Wo kommt plötzlich {Male=dieser;Female=diese} komische Erwachsene mit dem fliegenden Häschen her ...?",
+                "en": "Hey. Where did this weird grown-up with a flying bunny come from...?",
+                "es": "¡Ostras! ¿De dónde ha salido {Male=este tío tan raro;Female=esta tía tan rara} con su conejito volador?",
+                "fr": "Hé, d'où vient ce type bizarre avec un lapin volant ?",
+                "ja": "ん？変な人と、空飛ぶうさぎだ……",
+                "ko": "어? 이상한 어른이랑... 하늘을 나는 토끼다...",
+                "th": "เฮ้ย ผู้ใหญ่ท่าทางแปลกๆ ที่มีกระต่ายบินได้นั่นมาจากไหน...?",
+                "zh-Hans": "咦？奇怪的大人，和一只会飞的兔子……",
+                "zh-Hant": "咦？ 奇怪的大人，和一隻會飛的兔子……"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mahn ist nicht da, und ich bin der Anführer! Spielst du mit uns? Okay, dann kannst du ein Monster sein!",
+                "en": "Mahn's not here, I'm in charge! Wanna play with us? Okay, then you can be a monster!",
+                "es": "Mahn no está, ¡ahora mando yo! ¿Jugáis? ¡Podéis ser los monstruos!",
+                "fr": "Mahn n'est pas là, c'est moi qui commande ! Tu veux jouer avec nous ? D'accord, alors tu peux être un monstre !",
+                "ja": "まーちゃんがいない時は、この俺がリーダーだからな！お前も一緒に遊びたいのか？じゃあお前<ano=ざんぞう>残像</ano>の役な。",
+                "ko": "지만 대장은 없고, 한묵 대장은 있어요! 저희랑 같이 놀래요? 그럼 잔상 시켜 드릴게요",
+                "th": "นี่ลูกพี่ Mahn ไม่อยู่ ฉันเป็นลูกพี่เฟ้ย! อยากเล่นกับพวกเราใช่มั้ย? ได้สิ ถ้างั้นก็เป็นมอนสเตอร์ไปเลย!",
+                "zh-Hans": "小满老大不在，现在是小墨老大！你要和我们一起玩？好吧好吧，那你们演残象好了。",
+                "zh-Hant": "小滿老大不在，現在是小墨老大！ 你要和我們一起玩？ 好吧好吧，那你們演殘象好了。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erfasst. Neuer Name: „Häschen“.",
+                "en": "Detected new name entry: \"Bunny.\"",
+                "es": "Nueva entrada de nombre detectada: «Conejito.»",
+                "fr": "Détection d'un nouveau nom : « Lapin. »",
+                "ja": "新たな名称を認識――「うさぎ」を呼び名に追加しました。",
+                "ko": "신규 이름 식별. 토끼",
+                "th": "ตรวจพบชื่อรายการใหม่: บันนี่",
+                "zh-Hans": "识别到新添加名称，兔子。",
+                "zh-Hant": "識別到新添加名稱，兔子。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1367,
+                "name": {
+                  "zh-Hans": "相里"
+                },
+                "entity": {
+                  "entityId": 880700179,
+                  "mapId": 8,
+                  "blueprintType": "NPC1052",
+                  "name": "TsEntity_NPC1051_机器人相里4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94620,
+                    "y": 53410,
+                    "z": 6080
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Verarbeitungsgeschwindigkeit erhöht auf 150 %. Verarbeitungstemperatur: 90 °C, 91 °C, 92 °C …",
+                "en": "Processing speed increased to 150%. Processor temperature: 90℃, 91℃, 92℃...",
+                "es": "Incrementando velocidad de procesamiento al 150 %. Temperatura del procesador: 90 ℃, 91 ℃, 92 ℃...",
+                "fr": "Vitesse de traitement augmentée à 150 %. Température du processeur : 90℃, 91℃, 92℃...",
+                "ja": "演算速度が150%に上昇。CPU温度90℃、91℃、92℃……",
+                "ko": "연산 속도를 150%로 높입니다. 프로세서 온도 90℃, 91℃, 92℃...",
+                "th": "ความเร็วในการประมวลผลเพิ่มขึ้นเป็น 150% อุณหภูมิโปรเซสเซอร์: 90℃, 91℃, 92%...",
+                "zh-Hans": "运算速度提升至150%，处理器温度90℃、91℃、92℃……",
+                "zh-Hant": "運算速度提升至150%，處理器溫度90℃、91℃、92℃……"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1367,
+                "name": {
+                  "zh-Hans": "相里"
+                },
+                "entity": {
+                  "entityId": 880700179,
+                  "mapId": 8,
+                  "blueprintType": "NPC1052",
+                  "name": "TsEntity_NPC1051_机器人相里4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94620,
+                    "y": 53410,
+                    "z": 6080
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wir sind nicht hier, um zu spielen.",
+                    "en": "We're not here to play games.",
+                    "es": "No hemos venido a jugar.",
+                    "fr": "Nous ne sommes pas là pour jouer.",
+                    "ja": "{Male=お兄さんは遊びに来たわけじゃないんだ。;Female=お姉さんは遊びに来たわけじゃないの。}",
+                    "ko": "저희는 역할 놀이를 하러 온 게 아니에요",
+                    "th": "นี่พวกเราไม่ได้มาเล่นๆ",
+                    "zh-Hans": "我们不是来玩扮演游戏的。",
+                    "zh-Hant": "我們不是來玩扮演遊戲的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah!!! Er ... er explodiert gleich ...!",
+                "en": "Ah!!! It's... it's gonna blow...!",
+                "es": "¡¡¡Aaah!!! ¡Va a explotar!",
+                "fr": "Ah !!! Il... Il va exploser !",
+                "ja": "わぁぁぁ！！！このうさぎ怖いぃぃぃ……",
+                "ko": "으악! 무서운 토끼다...",
+                "th": "อ๊าก!!!... กระต่ายน่ากลัวมาก...!",
+                "zh-Hans": "哇啊！！！好可怕的兔子……",
+                "zh-Hant": "哇啊！！！ 好可怕的兔子……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ähm ... Xiangli Yao? Bist du da?",
+                    "en": "Um... Xiangli Yao? You there?",
+                    "es": "Esto... ¿Xiangli Yao? ¿Estás aquí?",
+                    "fr": "Hum... Xiangli Yao ? Tu es là ?",
+                    "ja": "{Male=まずい……相里？そこにいるか？;Female=大変……相里？そこにいる？}",
+                    "ko": "어... 상리요? 계시나요?",
+                    "th": "เอ่อ... Xiangli Yao? อยู่มั้ย?",
+                    "zh-Hans": "呃……相里要？在吗？",
+                    "zh-Hant": "呃……相里要？ 在嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich bin da, machen dir keine Sorgen. Ich überschreibe Xiang-LEEs Prozessor. Moment, bitte.",
+                "en": "I'm here, don't worry. I'm overriding Xiang-LEE's processor. One moment, please.",
+                "es": "Estoy, no te preocupes. Deja que anule el proceso de Xiang-LEE. Un momento, por favor.",
+                "fr": "Je suis là, t'inquiète. Je neutralise le processeur de Xiang-LEE. Un moment, s'il te plaît.",
+                "ja": "いるよ。ソウリのCPUの温度が上がらないようにプログラミングした。もう大丈夫。",
+                "ko": "네. 걱정 마세요. 상리의 프로세서에 지속적인 과열을 억제하는 프로그램을 입력해 놨으니까, 곧 괜찮아질 거예요",
+                "th": "ฉันอยู่นี่ ไม่ต้องห่วง ฉันจะเข้าควบคุมหน่วยประมวลผลของ Xiang-LEE เอง รอสักครู่นะ",
+                "zh-Hans": "我在，别担心。抑制相里处理器继续升温的程式已经写入了，马上就好。",
+                "zh-Hant": "我在，別擔心。 抑制相里處理器繼續升溫的程式已經寫入了，馬上就好。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Aufgenommen. Neuer Eintrag für Name „Häschen“.",
+                "en": "...Recorded. New name entry, \"Bunny.\"",
+                "es": "... Registrada. Nueva entrada de nombre, «Conejito».",
+                "fr": "Enregistré. Nouveau nom : « Lapin ».",
+                "ja": "……新たな名称、「うさぎ」を記録しました。",
+                "ko": "새 이름... 「토끼」, 입력 완료",
+                "th": "...บันทึกแล้ว ชื่อรายการใหม่ บันนี่",
+                "zh-Hans": "……新名称，“兔子”已录入。",
+                "zh-Hant": "……新名稱，「兔子」已錄入。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 1367,
+                "name": {
+                  "zh-Hans": "相里"
+                },
+                "entity": {
+                  "entityId": 880700179,
+                  "mapId": 8,
+                  "blueprintType": "NPC1052",
+                  "name": "TsEntity_NPC1051_机器人相里4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94620,
+                    "y": 53410,
+                    "z": 6080
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Puh. Da habe ich mir beinahe in die Hose gemacht ...",
+                "en": "Phew. I almost wet my pants...",
+                "es": "Uf. Casi me lo hago encima...",
+                "fr": "Ouf. J'ai failli faire pipi dans ma culotte...",
+                "ja": "ふぅ、び、びっくりした……",
+                "ko": "휴, 까, 깜짝 놀랐네...",
+                "th": "ค่อยยังชั่ว เล่นซะเกือบฉี่ราด...",
+                "zh-Hans": "呼，吓、吓我一大跳……",
+                "zh-Hant": "呼，嚇、嚇我一大跳……"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also ... du suchst Mahn, richtig?",
+                "en": "So... You're looking for Mahn, huh?",
+                "es": "Entonces... Estáis buscando a Mahn, ¿no?",
+                "fr": "Alors... Tu cherches Mahn, hein ?",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}、まーちゃんに会いに来たの？",
+                "ko": "{Male=형;Female=누나}, 지만 대장을 찾으러 온 거예요?",
+                "th": "งั้น... {Male=พี่ชาย;Female=พี่สาว}กำลังตามหา Mahn ใช่มั้ย?",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}，你是来找小满老大的吗？",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}，你是來找小滿老大的嗎？"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er ist gerade nicht da, aber wenn es wichtig ist, kannst du es auch mir sagen, dann gebe ich es an ihn weiter, Wort für Wort.",
+                "en": "He's not here right now, but if it's important, you can tell me, and I'll pass it on to him, word for word.",
+                "es": "Ahora mismo no está, pero si tienes un mensaje, dímelo a mí y yo se lo transmitiré, palabra por palabra.",
+                "fr": "Il n'est pas là pour l'instant, mais si c'est important, tu peux me le dire, et je lui transmettrai.",
+                "ja": "まーちゃん、今いないんだ。用事があるならなんでもぼくに言って。そっくりそのまま、リーダーのまーちゃんに言っておくからさ。",
+                "ko": "대장은 여기 없는데... 중요한 일이 있으면 저한테 대신 말해주세요. 제가 한 글자도 안 빼먹고 전해 줄 테니까",
+                "th": "ตอนนี้เขาไม่อยู่หรอก แต่ถ้าเป็นเรื่องสำคัญ บอกฉันมาก็ได้ แล้วฉันจะส่งข่าวต่อไปให้เขาแบบคำต่อคำเลย",
+                "zh-Hans": "他不在这里哦，不过有重要的事情{Male=大哥哥;Female=大姐姐}可以放心和我说，我会一个字都不漏地转告给老大的。",
+                "zh-Hant": "他不在這裡喔，不過有重要的事情{Male=大哥哥;Female=大姐姐}可以放心和我說，我會一個字都不漏地轉告給老大的。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach was. Lee spielt wieder den Angeber.",
+                "en": "Pfft. Li's being a show-off again.",
+                "es": "Pfff. Lee, mira que eres fanfarrón.",
+                "fr": "Pfft. Lee fait encore le malin.",
+                "ja": "あっ、れいちゃんまた嘘ついてる。",
+                "ko": "쳇, 또 뻥 치고 있어",
+                "th": "เชอะ Li นี่ขี้อวดอีกแล้ว",
+                "zh-Hans": "嘁，小黎又在吹牛了。",
+                "zh-Hant": "嘁，小黎又在吹牛了。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben Mahn schon seit Tagen nicht mehr gesehen. Du wirst ihm gar nichts sagen können.",
+                "en": "We haven't seen Mahn for days. No way you can tell him anything.",
+                "es": "Hace días que no vemos a Mahn. Es imposible que le digamos nada.",
+                "fr": "On n'a pas vu Mahn depuis des jours. Impossible de lui dire quoi que ce soit.",
+                "ja": "まーちゃん、ずっといないんだから、伝言なんてできないだろ。",
+                "ko": "며칠 동안 본 적도 없는데, 말을 어떻게 해 주냐?",
+                "th": "เราไม่เห็นหน้า Mahn มาหลายวันแล้ว แกจะไปบอกเขาได้ไง",
+                "zh-Hans": "我们明明都好几天没见到小满了，根本转告不了嘛。",
+                "zh-Hant": "我們明明都好幾天沒見到小滿了，根本轉告不了嘛。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das stimmt nicht! Morgen spielen wir eines seiner Lieblingsstücke, er wird auf jeden Fall auftauchen!",
+                "en": "Not true! We're doing one of his favorite plays tomorrow, he'll definitely show up!",
+                "es": "¡No es verdad! Mañana haremos una de sus historias favoritas. ¡Seguro que viene!",
+                "fr": "Ce n'est pas vrai ! Nous jouons une de ses comédies préférées demain, il viendra certainement !",
+                "ja": "そんなことないもん！明日はまーちゃんが一番好きなヒーローショーの日だから、絶対に来るもん！",
+                "ko": "뻥 아니거든! 내일은 대장이 제일 좋아하는 영웅극 하는 날이니까, 꼭 올 거야!",
+                "th": "ไม่นะ! ฉันไม่ได้โม้ พรุ่งนี้มีละครวีรชนที่ลูกพี่ชอบ เขามาอยู่แล้ว!",
+                "zh-Hans": "不会的！我才没有吹牛呢。明天有老大最喜欢的英雄戏，他肯定会来的！",
+                "zh-Hant": "不會的！ 我才沒有吹牛呢。 明天有老大最喜歡的英雄戲，他肯定會來的！"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben gestern und vorgestern auch ein Stück aufgeführt. Soweit ich mich richtig erinnere, war er nicht da. Wo war er denn?",
+                "en": "We did a play yesterday and one before that. Hmph, I don't remember him showing up. Where was he?",
+                "es": "Hicimos una ayer y otra el día de antes y no recuerdo verle en ninguna. ¿Dónde estaba?",
+                "fr": "On a joué une pièce hier et une autre avant. Hmph, je ne me souviens pas qu'il soit venu. Où était-il ?",
+                "ja": "昨日だって、その昨日だってヒーローショーはやってたけど、まーちゃん来なかったじゃんか。",
+                "ko": "영웅극은 어제도 했잖아. 그저께도 했고. 근데 코빼기도 안 보였는데",
+                "th": "เมื่อวานมีละครวีรชน วันก่อนหน้าก็มี ก็ไม่เห็นเขาจะโผล่มานี่",
+                "zh-Hans": "昨天有英雄戏，昨天的昨天也有，小满人呢？完全看不到哦。",
+                "zh-Hant": "昨天有英雄戲，昨天的昨天也有，小滿人呢？ 完全看不到喔。"
+              },
+              "id": 26,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...",
+                "en": "...",
+                "es": "...",
+                "fr": "...",
+                "ja": "……",
+                "ko": "......",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 27,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach! Du hast nicht recht, Momo!",
+                "en": "Ugh! You suck, Momo!",
+                "es": "¡Bah! ¡Momo, eres tonto!",
+                "fr": "Pff ! Tu es nul, Momo !",
+                "ja": "すみちゃんのバカ、あっち行って！",
+                "ko": "시끄러워, 넌 저리 가!",
+                "th": "อึก! แกนี่กวนประสาทชะมัด!",
+                "zh-Hans": "臭小墨，你走开啦！",
+                "zh-Hant": "臭小墨，你走開啦！"
+              },
+              "id": 28,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hehehe!",
+                "en": "Hee hee hee!",
+                "es": "¡Ji, ji, ji!",
+                "fr": "Hi hi hi !",
+                "ja": "べーっだ！",
+                "ko": "에베베베!",
+                "th": "แบร้ๆ ๆ!",
+                "zh-Hans": "略略略！",
+                "zh-Hant": "略略略！"
+              },
+              "id": 29,
+              "speaker": {
+                "id": 800052,
+                "name": {
+                  "zh-Hans": "小墨"
+                },
+                "entity": {
+                  "entityId": 880000100,
+                  "mapId": 8,
+                  "blueprintType": "NPC0322",
+                  "name": "TsEntity_0322_121_小墨3",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94720,
+                    "y": 53400,
+                    "z": 6050
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 30,
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast du eine Idee, wo ich Mahn finden könnte?",
+                    "en": "Any ideas where I can find Mahn?",
+                    "es": "¿Sabes dónde podría encontrar a Mahn o no?",
+                    "fr": "Vous avez une idée de l'endroit où je peux trouver Mahn ?",
+                    "ja": "まーちゃんは普段どこにいるの？",
+                    "ko": "지만은 평소에 주로 어딜 가나요?",
+                    "th": "พอรู้บ้างมั้ยว่าฉันจะตามหา Mahn ได้ที่ไหน?",
+                    "zh-Hans": "小满平常都喜欢去哪里？",
+                    "zh-Hant": "小滿平常都喜歡去哪裡？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Tja ... normalerweise spielen wir zusammen in der Stadt oder sehen uns Heldenstücke im Theater an. Ach ja ... und wir haben eine geheime Basis.",
+                "en": "Well... We usually play together in the city or watch Hero Plays at the theater. Oh... and we have a secret base.",
+                "es": "Bueno... Normalmente jugamos juntos en la ciudad o vemos Drama de Héroe en el teatro. Ah... y tenemos una base secreta.",
+                "fr": "Eh bien... D'habitude, nous jouons ensemble en ville ou nous regardons des comédies héroïques au théâtre. Oh... et nous avons une base secrète.",
+                "ja": "えっと……まーちゃんはぼくたちと一緒に町の中で遊んでるか、ヒーローショーを見に行ってるか、あとは……秘密基地に行ってるよ。",
+                "ko": "음... 시내요. 저희랑 노는 걸 좋아하거든요. 그리고 극장에 가서 영웅극 보는 것도 좋아해요. 또... 비밀 아지트에 갈 때도 있고요",
+                "th": "คือ... ปกติเราชอบเล่นด้วยกันในเมือง หรือไปดูละครวีรชนที่โรงละคร อ๋อ... แล้วก็มีฐานทัพลับด้วย",
+                "zh-Hans": "嗯……老大喜欢和我们一起在城里玩、去剧场看英雄戏，还有就是……到秘密基地里去。",
+                "zh-Hant": "嗯……老大喜歡和我們一起在城裡玩、去劇場看英雄戲，還有就是……到秘密基地裡去。"
+              },
+              "id": 31,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erfasst. Schlüsselwort: Geheime Basis.",
+                "en": "Detected. Keyword: Secret base.",
+                "es": "Detectado. Palabra clave: Base secreta.",
+                "fr": "Détecté. Mot-clé : base secrète.",
+                "ja": "キーワード検出――「秘密基地」。",
+                "ko": "키워드가 감지되었습니다. 비밀 아지트",
+                "th": "ตรวจพบ คำสำคัญ: ฐานทัพลับ",
+                "zh-Hans": "检测到关键词。秘密基地。",
+                "zh-Hant": "檢測到關鍵詞。秘密基地。"
+              },
+              "id": 32,
+              "speaker": {
+                "id": 1367,
+                "name": {
+                  "zh-Hans": "相里"
+                },
+                "entity": {
+                  "entityId": 880700179,
+                  "mapId": 8,
+                  "blueprintType": "NPC1052",
+                  "name": "TsEntity_NPC1051_机器人相里4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94620,
+                    "y": 53410,
+                    "z": 6080
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kannst du mir sagen, wo diese Basis ist?",
+                    "en": "Can you tell me where it is?",
+                    "es": "¿Puedes decirme dónde está?",
+                    "fr": "Peux-tu me dire où elle se trouve ?",
+                    "ja": "{Male=秘密基地はどこにある？;Female=秘密基地は、どこにあるの？}",
+                    "ko": "비밀 아지트는 어디에 있나요?",
+                    "th": "บอกได้มั้ยว่ามันอยู่ที่ไหน?",
+                    "zh-Hans": "秘密基地，那是哪里？",
+                    "zh-Hant": "秘密基地，那是哪裡？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Meinst du, er könnte da sein?",
+                    "en": "Do you think he'll be there?",
+                    "es": "¿Crees que estará allí?",
+                    "fr": "Penses-tu qu'il sera là ?",
+                    "ja": "{Male=まーちゃんは、秘密基地にいるのか？;Female=まーちゃんは、秘密基地にいるの？}",
+                    "ko": "지만은 비밀 아지트에 있을까요?",
+                    "th": "คิดว่าเขาจะอยู่ที่นั่นเหรอ?",
+                    "zh-Hans": "小满会在秘密基地吗？",
+                    "zh-Hant": "小滿會在秘密基地嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hm ... Mahn meinte, das ist streng geheim und wir dürfen das auf keinen Fall verraten.",
+                "en": "Hmm... Mahn says it's top secret, and we can't tell anyone.",
+                "es": "Mmmh... Mahn dice que es alto secreto y que no podemos contárselo a nadie.",
+                "fr": "Hmm... Mahn dit que c'est top secret et qu'on ne peut le dire à personne.",
+                "ja": "……えっと……まーちゃんが、秘密基地のことは絶対に秘密だって。場所とか言っちゃダメだって言ってたから……",
+                "ko": "음... 그건 일급비밀이라서 절대로 말하지 말랬는데...",
+                "th": "หืมม... Mahn บอกว่าเป็นความลับสุดยอด และห้ามเราบอกคนอื่นนะ",
+                "zh-Hans": "……嗯……老大说秘密基地要绝对保密，不可以把位置讲出去的……",
+                "zh-Hant": "……嗯……老大說秘密基地要絕對保密，不可以把位置講出去的……"
+              },
+              "id": 33,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hm ... vielleicht. Bist du auf der Suche nach ihm?",
+                "en": "Hmm... Maybe. Are you going to go look for him?",
+                "es": "Mmmh... Tal vez. ¿Vas a ir a buscarle?",
+                "fr": "Hmm... Peut-être. Tu vas aller le chercher ?",
+                "ja": "……えっと……たぶん、いると思うよ。{Male=お兄ちゃん;Female=お姉ちゃん}、まーちゃんを探しに行くの？",
+                "ko": "음... 그럴 수도 있고요. 근데 {Male=형;Female=누나}, 비밀 아지트로 가시려고요?",
+                "th": "หืมม... ก็อาจจะ {Male=พี่ชาย;Female=พี่สาว} จะไปตามหาเขาเหรอ?",
+                "zh-Hans": "……嗯……有可能吧，{Male=大哥哥;Female=大姐姐}要去那里找老大吗？",
+                "zh-Hant": "……嗯……有可能吧，{Male=大哥哥;Female=大姐姐}要去那裡找老大嗎？"
+              },
+              "id": 34,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber Mahn hat gesagt, das ist streng geheim und wir dürfen das auf keinen Fall verraten.",
+                "en": "But Mahn says it's top secret, and we can't tell anyone.",
+                "es": "Pero Mahn dice que es alto secreto y que no podemos contárselo a nadie.",
+                "fr": "Mais Mahn dit que c'est top secret, et qu'on ne peut le dire à personne.",
+                "ja": "でもまーちゃんが、秘密基地のことは絶対に秘密だって、場所とか言っちゃダメだって言ってたから……",
+                "ko": "그건 일급비밀이라서 절대로 말하지 말랬는데...",
+                "th": "แต่ Mahn บอกว่าเป็นความลับสุดยอด และห้ามเราบอกคนอื่นนะ",
+                "zh-Hans": "但老大说秘密基地要绝对保密，不可以把位置讲出去的……",
+                "zh-Hant": "但老大說秘密基地要絕對保密，不可以把位置講出去的……"
+              },
+              "id": 35,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 43,
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin hier, um ihm zu helfen, ein ganz besonderer Held zu werden.",
+                    "en": "I'm here to help him become a great hero.",
+                    "es": "He venido para ayudarle a convertirse en un gran héroe.",
+                    "fr": "Je suis ici pour l'aider à devenir un grand héros.",
+                    "ja": "{Male=俺はあなたたちのリーダーをヒーローにするために来たんだ。;Female=私はあなたたちのリーダーをヒーローにするために来たの。}",
+                    "ko": "저는 여러분의 대장을 영웅으로 만들기 위해 온 거예요",
+                    "th": "ฉันมาที่นี่เพื่อช่วยให้เขาได้เป็นฮีโร่ผู้ยิ่งใหญ่",
+                    "zh-Hans": "我是来帮助你们老大当大英雄的。",
+                    "zh-Hant": "我是來幫助你們老大當大英雄的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was?! Wirklich?!",
+                "en": "What?! Really?!",
+                "es": "¡¿Qué?! ¡¿De veras?!",
+                "fr": "Quoi ?! Vraiment ?!",
+                "ja": "わぁ！本当に？",
+                "ko": "우와! 진짜요?",
+                "th": "หา?! จริงเหรอ?!",
+                "zh-Hans": "啊！真的嘛！",
+                "zh-Hant": "啊！ 真的嘛！"
+              },
+              "id": 44,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hm ... Er hat schon mal erzählt, dass diese Flammenkraft in ihm schlummert und dass er bald ein großer Held sein wird, genau wie die Flammenwächterin.",
+                "en": "Um... He did mention before that there's this Flame power growing inside of him, and he's about to become a great hero just like Flame Ranger.",
+                "es": "Esto... Dijo que le está creciendo un poder de Llama dentro y que va a ser un gran héroe, como Ranger de Llamas.",
+                "fr": "Hum... Il a déjà dit que le pouvoir de la flamme grandissait en lui, et qu'il était sur le point de devenir un grand héros comme le Gardien du feu.",
+                "ja": "そう言えば……確かに、体の中の炎の力が覚醒しそうだって、まーちゃんが言ってたかも。もうすぐ、フレイムマンみたいなヒーローになるんだって。",
+                "ko": "아...! 대장이 그랬거든요, 자기 몸 안의 불꽃의 힘이 각성할 것 같다고... 그래서 곧 불꽃 영웅처럼 대영웅이 될 거래요",
+                "th": "เอ่อ... เขาเคยพูดไว้ก่อนหน้านี้ว่ามีพลังเปลวไฟเกิดขึ้นข้างในตัวเขา และเขาก็กำลังจะได้เป็นฮีโร่เหมือนกับเฟลมเรนเจอร์",
+                "zh-Hans": "唔……老大确实讲过，他身体里的炽焰力量快要觉醒了，马上就能和炽焰游侠一样，是大英雄了。",
+                "zh-Hant": "唔……老大確實講過，他身體裡的熾焰力量快要覺醒了，馬上就能和熾焰游俠一樣，是大英雄了。"
+              },
+              "id": 37,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Naja ... ich meine, du scheinst kein Böser zu sein, also ...",
+                "en": "Well... I guess you don't look like a bad person, so...",
+                "es": "Bueno... No pareces de los malos, así que...",
+                "fr": "Eh bien... Tu n'a pas l'air d'une mauvaise personne, alors...",
+                "ja": "……{Male=お兄ちゃん;Female=お姉ちゃん}は悪い人に見えないし、それなら……",
+                "ko": "내가 볼때... {Male=형;Female=누나}은(는) 딱히 나쁜 사람 같진 않으니까...",
+                "th": "งั้น... ฉันว่าดูแล้ว {Male=พี่ชาย;Female=พี่สาว} ก็ไม่ใช่คนเลวหรอกนะ...",
+                "zh-Hans": "……我看……{Male=大哥哥;Female=大姐姐}也不像是坏人，这样的话……",
+                "zh-Hant": "……我看……{Male=大哥哥;Female=大姐姐}也不像是壞人，這樣的話……"
+              },
+              "id": 38,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Xiaoli beugt sich dicht an dein Ohr und flüstert dir den Standort der geheimen Basis zu.",
+                "en": "Li leans close to your ear and whispers the location of the secret base to you.",
+                "es": "Lee se inclina cerca de tu oído y te susurra la ubicación de la base secreta.",
+                "fr": "Lee se penche près de votre oreille et vous chuchote l'emplacement de la base secrète.",
+                "ja": "れいちゃんは、あなたの耳元に近づき、小声で秘密基地の場所を教えてくれた。",
+                "ko": "소배가 귀에 대고 작은 소리로 아지트의 위치를 알려주었다",
+                "th": "Li เอียงตัวเข้ามาใกล้หูคุณ แล้วกระซิบบอกที่ตั้งฐานทัพลับให้",
+                "zh-Hans": "小黎凑到你的耳边，小声地将秘密基地的地点告诉给了你。",
+                "zh-Hant": "小黎湊到你的耳邊，小聲地將秘密基地的地點告訴給了你。"
+              },
+              "id": 39
+            },
+            {
+              "text": {},
+              "id": 40,
+              "options": [
+                {
+                  "text": {
+                    "de": "Vielen Dank.",
+                    "en": "Appreciate it.",
+                    "es": "Te lo agradezco.",
+                    "fr": "Merci.",
+                    "ja": "ありがとう。",
+                    "ko": "고마워요",
+                    "th": "ขอบคุณมากเลย",
+                    "zh-Hans": "谢谢你。",
+                    "zh-Hant": "謝謝你。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Okay, ich habe es.",
+                    "en": "Okay, got it.",
+                    "es": "Vale, lo tengo.",
+                    "fr": "D'accord, je vois.",
+                    "ja": "場所が分かって良かった。",
+                    "ko": "네, 알겠어요",
+                    "th": "โอเค เข้าใจแล้ว",
+                    "zh-Hans": "好，我知道了。",
+                    "zh-Hant": "好，我知道了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ach so ... wenn du ihn findest, sag ihm bitte nicht, dass ich dir von der geheimen Basis erzählt habe.",
+                "en": "Err... If you do find him, please don't tell him I told you about the secret base.",
+                "es": "Esto... Si le encuentras, no le cuentes que yo te dije lo de la base secreta.",
+                "fr": "Euh... Si vous le trouvez, ne lui dites pas que c'est moi qui vous ai indiqué la base.",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}、まーちゃんには絶対にぼくが秘密基地のことを教えたって言わないでね。",
+                "ko": "대장한테는 절대 제가 알려줬다고 말하지 마세요!",
+                "th": "เอ่อ... {Male=พี่ชาย;Female=พี่สาว} ถ้าเจอตัวเขาแล้ว ขอร้องเลยนะว่าอย่าไปบอกเขาว่าฉันเป็นคนเล่าเรื่องฐานทัพลับนั่นให้ฟัง",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}，你见到小满老大之后，千万别和他说秘密基地的事是我说的。",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}，你見到小滿老大之後，千萬別和他說秘密基地的事是我說的。"
+              },
+              "id": 41,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, oh! Und denk dran, ihm zu sagen, dass er zurückkommen soll, um wieder mit uns zu spielen.",
+                "en": "Oh, oh! And remember to tell him to come back and play with us soon.",
+                "es": "¡Oh, oh...! Y dile que vuelva pronto a jugar con nosotros.",
+                "fr": "Et n'oubliez pas de lui dire de revenir bientôt jouer avec nous.",
+                "ja": "それからそれから、早く戻ってきて一緒に遊ぼうって伝えて。",
+                "ko": "그리고, 그리고... 빨리 와서 저희랑 놀자고도 말해주세요!",
+                "th": "เอ้อๆ! แล้วก็อย่าลืมบอกเขาให้รีบกลับมาเล่นกับพวกเราด้วยล่ะ",
+                "zh-Hans": "还有还有，记得要让他快点回来找我们玩哦。",
+                "zh-Hant": "還有還有，記得要讓他快點回來找我們玩喔。"
+              },
+              "id": 42,
+              "speaker": {
+                "id": 1374,
+                "name": {
+                  "zh-Hans": "小黎"
+                },
+                "entity": {
+                  "entityId": 880000050,
+                  "mapId": 8,
+                  "blueprintType": "NPC262",
+                  "name": "TsEntity_121_004_皇龙小孩4",
+                  "areaId": 406,
+                  "position": {
+                    "x": -94780,
+                    "y": 53470,
+                    "z": 6030
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 27,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche mit dem Sensor-Modul nach Hinweisen",
+        "en": "Search for clues with the Sensor Module",
+        "es": "Utiliza la Utilidad: Sensor para buscar pistas",
+        "fr": "Chercher des indices avec le Senseur",
+        "ja": "「探索モジュール」のスキャン機能で手がかりを探す",
+        "ko": "「탐색 도구」의 스캔을 사용하여 단서 찾기",
+        "th": "ค้นหาเบาะแสด้วยโมดูลเซนเซอร์",
+        "zh-Hans": "使用「探索工具」的感知模块搜寻线索",
+        "zh-Hant": "使用「探索工具」的感知模組搜尋線索"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.2追月节主线明线",
+          "flowIndex": 10,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Nimm das! Flammenschlag ...!",
+                "en": "Take this! Flame Punch...!",
+                "es": "¡Toma esto! ¡Golpe de llamas...!",
+                "fr": "Prends ça ! Coup de poing enflammé !",
+                "ja": "ぼ、僕のフレイムパンチを見せてやる……",
+                "ko": "받, 받아라... 불꽃 펀치...",
+                "th": "รับนี่ไป! หมัดเพลิง...!",
+                "zh-Hans": "看、看我的炽焰拳……",
+                "zh-Hant": "看、看我的熾焰拳……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 849,
+                "name": {
+                  "zh-Hans": "？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ehh ...! Lass mich in Ruhe!",
+                "en": "Eek...! Get away from me!",
+                "es": "¡Aaah...! ¡Alejaos de mí!",
+                "fr": "Ah ! Laisse-moi tranquille !",
+                "ja": "うわぁぁ……く、来るな！",
+                "ko": "으악... 오, 오... 오지마!",
+                "th": "เอ๊ย...! ถอยไปนะ!",
+                "zh-Hans": "呜哇……别、别过来！",
+                "zh-Hant": "嗚哇……別、別過來！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 849,
+                "name": {
+                  "zh-Hans": "？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine Kinderstimme. Da drüben!",
+                "en": "A child's voice. Over there!",
+                "es": "Es la voz de un niño. ¡Allí!",
+                "fr": "Une voix d'enfant. Là-bas !",
+                "ja": "子どもの声……あっちから聞こえる！",
+                "ko": "어린아이 목소리... 저쪽이야!",
+                "th": "เสียงเด็กนี่ ตรงนั้นไง!",
+                "zh-Hans": "是小孩子的声音，在那边！",
+                "zh-Hant": "是小孩子的聲音，在那邊！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "parentId": 27,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zur Geheimbasis",
+        "en": "Go to the secret base",
+        "es": "Ve hacia la base secreta",
+        "fr": "Aller à la base secrète",
+        "ja": "秘密基地に向かう",
+        "ko": "비밀 아지트로 이동",
+        "th": "ไปที่ฐานทัพลับ",
+        "zh-Hans": "前往秘密基地",
+        "zh-Hant": "前往秘密基地"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 27,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Xiangli Yao",
+        "en": "Talk to Xiangli Yao",
+        "es": "Habla con Xiangli Yao",
+        "fr": "Parler à Xiangli Yao",
+        "ja": "相里要と会話する",
+        "ko": "상리요와 대화",
+        "th": "คุยกับ Xiangli Yao",
+        "zh-Hans": "与相里要交谈",
+        "zh-Hant": "與相里要交談"
+      },
+      "entities": [
+        {
+          "entityId": 880000037,
+          "mapId": 8,
+          "blueprintType": "Player024",
+          "name": "TsEntity_角色024_相里要3",
+          "areaId": 406,
+          "position": {
+            "x": -92180,
+            "y": 53140,
+            "z": 7195
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.2追月节主线明线",
+          "flowIndex": 18,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich habe den Wunsch des Jungen zufällig wahrgenommen.",
+                "en": "I happened to catch the boy's wish.",
+                "es": "Por casualidad capté el deseo del niño.",
+                "fr": "J'ai entendu le vœu de ce garçon.",
+                "ja": "僕も聞いていたよ。あの子の願い。",
+                "ko": "그 아이의 소원은 저도 들었어요",
+                "th": "ฉันบังเอิญได้ยินความปรารถนาของเด็กคนนั้นเข้า",
+                "zh-Hans": "那孩子的愿望，我都听到了。",
+                "zh-Hant": "那孩子的願望，我都聽到了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er strebt nach Heldenhaftigkeit, eine spirituelle Größe, die selbst einen erwachsenen Mann wie mich in Demut versetzt.",
+                "en": "He aspires to heroism, a feat of spirit that humbles even a grown man like myself.",
+                "es": "Aspira a convertirse en héroe, y su compromiso es mayor de lo que yo haya conocido jamás.",
+                "fr": "Il aspire à l'héroïsme, un exploit qui rend humble même un adulte comme moi.",
+                "ja": "ヒーローになりたい、か……大人も見習うべき誠実な願いだね。",
+                "ko": "영웅이 되겠다고 했죠? 나이는 어리지만 각오나 열정만큼은 어른인 저도 본받아야겠네요",
+                "th": "เขาปรารถนาที่จะได้เป็นฮีโร่ นั่นคือจิตใจอันกล้าหาญที่ผู้ใหญ่อย่างฉันยังต้องยกย่อง",
+                "zh-Hans": "成为英雄吗？虽然是小孩子，可有着这般觉悟与志气，就连我这样的大人都会自觉不如。",
+                "zh-Hant": "成為英雄嗎？ 雖然是小孩子，可有著這般覺悟與志氣，就連我這樣的大人都會自覺不如。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sein Wunsch stammt aus echter Tapferkeit und Ehrlichkeit ...",
+                "en": "His wish comes from a place of real valor and sincerity...",
+                "es": "Su anhelo proviene de un lugar de verdadero coraje y sinceridad...",
+                "fr": "Son vœu vient de son véritable courage et de sa sincérité...",
+                "ja": "それに、子供ならではの激しくて純粋な願いだ。",
+                "ko": "순수한 마음을 가지고 있기 때문에, 마음속에 품은 소원도 더 뜨겁고 진실된 거겠죠...",
+                "th": "ความปรารถนาของเขามาจากความกล้าหาญและความจริงใจอย่างแท้จริง...",
+                "zh-Hans": "因为葆有一颗赤诚的心，所以心中祈愿也往往更为炽烈、纯粹……",
+                "zh-Hant": "因為保有一顆赤誠的心，所以心中祈願也往往更為熾烈、純粹……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings möchte er ein Held werden, indem er seine Kraft erweckt ...",
+                "en": "However, he wishes to become a hero by awakening his Forte...",
+                "es": "Sin embargo, para hacerse un héroe, quiere despertar su Forte...",
+                "fr": "Cependant, il souhaite devenir un héros en éveillant son Forte...",
+                "ja": "だけど、共鳴の力を持つことでヒーローになりたいだなんて……",
+                "ko": "하지만 공명의 힘을 얻어서 진정한 영웅이 된다라...",
+                "th": "อย่างไรก็ตาม เขาอยากได้เป็นฮีโร่ด้วยการปลุกพลังเรโซแนนซ์ของเขาให้ตื่นขึ้น...",
+                "zh-Hans": "不过如果是希望通过获得共鸣力量来当上真正的英雄的话……",
+                "zh-Hant": "不過如果是希望透過獲得共鳴力量來當上真正的英雄的話……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Erwachen einer Kraft ist ein kompliziertes Unterfangen, und die Unterschiede zwischen einem Resonator und den Fähigkeiten eines normalen Menschen sind beträchtlich. In unserem jetzigen Zeitraum ...",
+                "en": "Awakening a Forte is an intricate process, and the disparity between a Resonator and an ordinary person's abilities is significant. In our current timeframe...",
+                "es": "Despertar un Forte es un proceso complejo y la disparidad entre las capacidades de un resonador y las de una persona corriente es significativa. En nuestro marco temporal actual...",
+                "fr": "L'éveil d'un Forte est un processus complexe, et l'écart entre les capacités d'un résonateur et celles d'une personne ordinaire est énorme. À notre époque...",
+                "ja": "共鳴者が生まれる条件は、とても複雑なんだ。ほんのわずかな時間で、普通の人間と共鳴者を隔てる壁を越えるのは……",
+                "ko": "공명자의 탄생 조건은 아주 복잡해요. 단시간 내에 일반인과 공명자 사이의 벽을 넘어서는 일은...",
+                "th": "การปลุกพลังเรโซแนนซ์เป็นกระบวนการที่ซับซ้อน และช่องว่างระหว่างความสามารถของเรโซเนเตอร์กับของคนธรรมดาก็มากพอสมควร ภายในกรอบเวลาที่เรามีตอนนี้...",
+                "zh-Hans": "共鸣者的诞生条件极其复杂，想要在短时间内突破普通人与共鸣者间的壁垒……",
+                "zh-Hant": "共鳴者的誕生條件極其複雜，想要在短時間內突破普通人與共鳴者間的壁壘……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss gestehen, dass die derzeitige Forschung der Akademie in diesem Bereich eher dürftig ist.",
+                "en": "I must confess, the Academy's current research in this domain is rather limited.",
+                "es": "Debo confesar que el avance de las investigaciones de la Academia en este ámbito es bastante limitado.",
+                "fr": "Je dois avouer que les recherches actuelles de l'Académie dans ce domaine sont plutôt limitées.",
+                "ja": "研究院の力をもってしても、まだまだ実現が難しい。",
+                "ko": "이 분야에 대해서는, 연구원에서도 많이 연구된 바가 없어요",
+                "th": "ฉันต้องยอมรับว่า สถาบันยังมีงานวิจัยด้านนี้ค่อนข้างจำกัด",
+                "zh-Hans": "不得不承认，研究院当前对于这方面的研究也颇为有限。",
+                "zh-Hant": "不得不承認，研究院當前對於這方面的研究也頗為有限。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn wir die Sache aus diesem Blickwinkel angehen, werde ich dem Jungen wohl nicht weiterhelfen können ... Zumindest nicht, bevor der Mondlichtmarkt stattfindet.",
+                "en": "If we are to approach it from this angle, I'm afraid I may not be able to help the boy much... At least before the Moonlit Fair arrives.",
+                "es": "Si vamos a abordarlo desde este ángulo, me temo que no podré ayudar mucho al chico... Al menos antes de que llegue la Feria de la Luna.",
+                "fr": "Si nous abordons la question sous cet angle, je crains de ne pas pouvoir aider beaucoup le garçon... Du moins avant l'arrivée du marché de la lune.",
+                "ja": "それでも願いを叶えてあげようと言うのなら……悪いけど、僕にできることはないかもしれない。",
+                "ko": "이런 관점에서 접근하면... 적어도 달맞이 야시장이 열리기 전까지... 그 아이에게 도움을 줄 수 있는 게 많지는 않겠네요",
+                "th": "ถ้าเราจะอาศัยแง่มุมนี้ เกรงว่าฉันคงช่วยเด็กคนนั้นได้ไม่มาก... อย่างน้อยก็จนกว่าที่เทศกาลจันทร์พรายแสงจะมาถึง",
+                "zh-Hans": "若要从这个角度入手，起码在宵月会之前……我可能帮不了那孩子太多。",
+                "zh-Hant": "若要從這個角度入手，起碼在宵月會之前……我可能幫不了那孩子太多。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Man braucht keine spezielle Kraft, um ein Held zu sein.",
+                    "en": "You don't need a Forte to become a hero.",
+                    "es": "No te hace falta un Forte para convertirte en héroe.",
+                    "fr": "Il n'est pas nécessaire d'avoir un Forte pour devenir un héros.",
+                    "ja": "共鳴の力は、ヒーローに必要な条件じゃないかもしれない。",
+                    "ko": "공명의 힘이 영웅의 필수 조건이 아닐지도 몰라요",
+                    "th": "คนเราไม่จำเป็นต้องมีพลังเรโซแนนซ์ก็เป็นฮีโร่ได้",
+                    "zh-Hans": "共鸣能力也许不是英雄的必要条件。",
+                    "zh-Hant": "共鳴能力也許不是英雄的必要條件。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "... Da stimme ich zu.",
+                "en": "...I concur.",
+                "es": "... Estoy de acuerdo.",
+                "fr": "Je suis d'accord.",
+                "ja": "……確かにそうだね。",
+                "ko": "일리가 있는 말이네요",
+                "th": "...ฉันเห็นด้วย",
+                "zh-Hans": "……你说的的确没错。",
+                "zh-Hant": "……你說的的確沒錯。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich an ein paar Szenen aus den Heldenstücken zurückdenke ... hat sich Flammenwächterin nicht nur auf seine Kraft und Fähigkeiten beschränkt, um seine Heldentaten zu vollbringen.",
+                "en": "Thinking back on a few scenes from the Hero Plays... Flame Ranger did not rely solely on his Forte and abilities to achieve his heroic feats.",
+                "es": "Pensando en algunas escenas de Drama de Héroe... Ranger de Llamas no dependía únicamente de su Forte y habilidades para lograr sus heroicas hazañas.",
+                "fr": "En repensant à certaines scènes des comédies héroïques... Le Gardien du feu n'a pas compté uniquement sur son Forte et ses capacités pour accomplir ses exploits héroïques.",
+                "ja": "ヒーローショーはあまり見たことないけど……きっとフレイムマンだって、共鳴の力だけでみんなを助けている訳ではないはずだ。",
+                "ko": "영웅극을 많이 본 건 아니지만... 불꽃 영웅의 영웅적인 행동은 공명의 힘으로만 이루어진 건 아니에요",
+                "th": "ถ้านึกย้อนไปถึงบางฉากในละครวีรชน... เฟลมเรนเจอร์ไม่ได้พึ่งแค่พลังเรโซแนนซ์ และความสามารถของตัวเองในการสร้างวีรกรรมเท่านั้น",
+                "zh-Hans": "想起我看的为数不多的英雄戏里的情节……炽焰游侠的英雄之举，不仅仅是靠着共鸣力量达成的。",
+                "zh-Hant": "想起我看的為數不多的英雄戲裡的情節……熾焰游俠的英雄之舉，不僅僅是靠著共鳴力量達成的。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mut, Ausdauer und die Rückendeckung durch seine Gefährten waren allesamt unverzichtbar.",
+                "en": "Courage, perseverance, and support from his companions were all indispensable elements.",
+                "es": "El coraje, la perseverancia y el apoyo de sus compañeros también eran elementos indispensables.",
+                "fr": "Le courage, la détermination et le soutien de ses compagnons étaient des éléments indispensables.",
+                "ja": "勇気、不屈の心、それから互いに信頼し合い、支え合うことができる貴重な仲間――どれもが不可欠。",
+                "ko": "용기, 끈기, 의리, 서로 의지할 수 있는 파트너. 이런 것들이 중요한 거죠",
+                "th": "ความกล้าหาญ ความพากเพียร และแรงสนับสนุนจากมิตรสหาย ล้วนเป็นองค์ประกอบที่ขาดไม่ได้",
+                "zh-Hans": "勇气、毅力，还有不可多得、相互信任又相互扶持的同伴，这些要素缺一不可。",
+                "zh-Hant": "勇氣、毅力，還有不可多得、相互信任又相互扶持的同伴，這些要素缺一不可。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dein Vorschlag, ein reales Vorbild zu finden, das dem Jungen eine realistischere Vorstellung von Heldenhaftigkeit zeigt, ist in der Tat ein sinnvoller Ansatz.",
+                "en": "Your idea of finding a real-life role model to show the boy a more grounded version of heroism... is indeed a viable approach.",
+                "es": "Tu idea de encontrar un modelo a seguir en la vida real que le enseñe una versión más verosímil del heroísmo... es de hecho un enfoque viable.",
+                "fr": "Ton idée de trouver un modèle réel pour montrer au garçon une version plus terre à terre de l'héroïsme... est en effet une approche viable.",
+                "ja": "生きたお手本として、本当のヒーローを見せてあげる……とても素晴らしいアイデアだね。",
+                "ko": "거기에 현실의 롤모델을 찾고, 진짜 영웅에 대해 알려준다는 건... 확실히 효과적인 방법이네요",
+                "th": "แนวคิดของคุณที่ว่าจะหาต้นแบบในชีวิตจริง เพื่อให้เด็กคนนี้ได้เห็นความเป็นฮีโร่แบบติดดินขึ้นมาบ้าง... เป็นแนวทางที่ใช้ได้อยู่นะ",
+                "zh-Hans": "而你想要寻找一个现实中的榜样，让那孩子了解更为真实的英雄……确实是个可行的做法。",
+                "zh-Hant": "而你想要尋找一個現實中的榜樣，讓那孩子了解更為真實的英雄……確實是個可行的做法。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hast du dich schon entschieden, wer dieser Held sein soll?",
+                "en": "So, have you decided who this hero should be?",
+                "es": "Entonces, ¿ya has decidido quién debería ser este héroe?",
+                "fr": "Alors, tu as décidé qui devait être ce héros ?",
+                "ja": "それで、君は「誰」が本当のヒーローに相応しいと思う？",
+                "ko": "그럼, 이 영웅 이야기의 주인공을 누구로 정할지는 생각해 보셨나요?",
+                "th": "แล้วคุณตัดสินใจหรือยังล่ะว่าฮีโร่คนนั้นควรเป็นใคร?",
+                "zh-Hans": "那么，你想好这个英雄故事的主角，是谁了吗？",
+                "zh-Hant": "那麼，你想好這個英雄故事的主角，是誰了嗎？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Jinhsi?",
+                    "en": "Jinhsi?",
+                    "es": "¿Jinhsi?",
+                    "fr": "Jinhsi ?",
+                    "ja": "<ano=コンシ>今汐</ano>。",
+                    "ko": "금희?",
+                    "th": "Jinhsi เหรอ?",
+                    "zh-Hans": "今汐？",
+                    "zh-Hant": "今汐？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Jiyan?",
+                    "en": "Jiyan?",
+                    "es": "¿Jiyan?",
+                    "fr": "Jiyan ?",
+                    "ja": "<ano=キエン>忌炎</ano>。",
+                    "ko": "기염?",
+                    "th": "Jiyan เหรอ?",
+                    "zh-Hans": "忌炎？",
+                    "zh-Hant": "忌炎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Irgendwelche Empfehlungen?",
+                    "en": "Any suggestions?",
+                    "es": "¿Alguna sugerencia?",
+                    "fr": "Des suggestions ?",
+                    "ja": "<ano=ソウリヨウ>相里要</ano>は誰が良いと思う？",
+                    "ko": "누가 적당할 것 같아요?",
+                    "th": "มีแนะนำบ้างมั้ย?",
+                    "zh-Hans": "相里要觉得应该是谁呢？",
+                    "zh-Hant": "相里要覺得應該是誰呢？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ein guter Vorschlag. Ich habe die Magistratin von Jinzhou immer bewundert.",
+                "en": "A fine suggestion. I have always admired the Magistrate of Jinzhou.",
+                "es": "Una buena sugerencia. Siempre he admirado a la Magistrada de Jinzhou.",
+                "fr": "Une bonne suggestion. J'ai toujours admiré la Magistrate de Jinzhou.",
+                "ja": "悪くないね。<ano=れいいん>令尹</ano>は僕がずっと尊敬してきた人の一人なんだ。",
+                "ko": "좋은 생각이네요. 영윤 대인은 제가 살면서 가장 존경해 온 사람 중 하나거든요",
+                "th": "เป็นคำแนะนำที่ดี ฉันชื่นชมเจ้าเมืองจินโจวมานานแล้ว",
+                "zh-Hans": "很不错的提议，令尹也是我一直以来最为敬佩的人之一。",
+                "zh-Hant": "很不錯的提議，令尹也是我一直以來最為敬佩的人之一。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings müsste jede Aufzeichnung innerhalb des Rathauses vorher genehmigt werden. Mit dem bevorstehenden Mondlichtmarkt wird die Zeit wohl nicht reichen.",
+                "en": "However, any form of recording within the City Hall would require prior clearance. With the Moonlit Fair on the horizon, time may not allow it.",
+                "es": "Sin embargo, necesitaremos autorización para grabar dentro del Ayuntamiento. Con la Feria de la Luna en el horizonte, puede que el tiempo no lo permita.",
+                "fr": "Cependant, toute forme d'enregistrement à l'intérieur de l'Hôtel de ville nécessiterait une autorisation préalable. Avec le Marché de la lune qui se profile à l'horizon, et on as très peu de temps.",
+                "ja": "だけど、<ano=へんてい>辺庭</ano>が関わってくるとなると、事前に許可を取らないといけないね……<ano=よいづきかい>宵月会</ano>までそれほど時間もないし、間に合わないかも。",
+                "ko": "하지만 변정과 관련된 영상은 정치적 기밀 사항에 저촉될 수 있기 때문에 미리 허가를 받아야 돼요... 달맞이 야시장 개최까지는 남은 시간이 얼마 없어서 힘들 것 같네요",
+                "th": "แต่การบันทึกภาพและเสียงทุกรูปแบบภายในที่ว่าการเมืองต้องขออนุญาตล่วงหน้า ยิ่งใกล้เทศกาลจันทร์พรายแสงแบบนี้ เวลาอาจไม่เพียงพอ",
+                "zh-Hans": "但关系到边庭，录制影像可能会涉及政密，我们需要事先拿到许可……宵月会快到了，时间上恐怕不允许。",
+                "zh-Hant": "但關係到邊庭，錄製影像可能會涉及政密，我們需要事先拿到許可……宵月會快到了，時間上恐怕不允許。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Tatsächlich ist die Person, die mir vorschwebt, der Inbegriff von Mut, Ausdauer und Führungsstärke, mit unerschütterlichen Gefährten, die {Male=ihm;Female=ihr} zur Seite stehen und selbst im Angesicht übermächtiger Feinde nicht nachgeben ...",
+                "en": "...Actually, the person I have in mind embodies courage, perseverance, and leadership, with steadfast companions who would stand by {Male=him;Female=her}, never backing down even in the face of powerful enemies...",
+                "es": "... En realidad, la persona que tengo en mente encarna el coraje, la perseverancia y el liderazgo, con compañeros leales que {Male=lo;Female=la} apoyarían y nunca se rendirían, incluso frente a enemigos poderosos.",
+                "fr": "En fait, la personne à laquelle je pense incarne le courage, la détermination et le leadership, avec des compagnons inébranlables qui se tiennent aux côtés {Male=de lui;Female=d'elle}, sans jamais reculer, même face à de puissants ennemis...",
+                "ja": "……勇気も不屈の心も、責任感もあるし、肩を並べて戦う仲間もいる。強敵が立ちはだかろうと、決して退くことはない……",
+                "ko": "용기... 끈기... 책임감... 함께 싸우는 파트너... 강적을 눈앞에 두고도 절대 물러서지 않는 사람...",
+                "th": "...มีความกล้าหาญ ความพากเพียร และความเป็นผู้นำ ทั้งยังมีสหายที่ยืนหยัดเคียงข้าง แม้ต้องเผชิญศัตรูที่แข็งแกร่งก็ไม่ถอย...",
+                "zh-Hans": "……有勇气、有毅力、有担当、也有并肩作战的伙伴，即使强敌当前也绝无半分退让……",
+                "zh-Hant": "……有勇氣、有毅力、有擔當、也有並肩作戰的夥伴，即使強敵當前也絕無半分退讓……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da brauchst du nicht lange zu suchen, {PlayerName}. Du bist genau die richtige Besetzung.",
+                "en": "There's no need to look far, {PlayerName}. You are the most suitable candidate.",
+                "es": "No hay necesidad de buscar muy lejos, {PlayerName}. Tú eres {Male=el candidato más adecuado;Female=la candidata más adecuada}.",
+                "fr": "Inutile de chercher bien loin, {PlayerName}. Tu es {Male=le candidat idéal;Female=la candidate idéale}.",
+                "ja": "{PlayerName}。僕は君が一番の適任者だと思うよ。",
+                "ko": "굳이 멀리까지 갈 필요도 없어요. {PlayerName}이(가) 가장 적임자니까요",
+                "th": "ไม่ต้องไปหาที่ไหนไกลเลย {PlayerName} คุณนั่นแหละคือตัวเลือกที่เหมาะสมที่สุด",
+                "zh-Hans": "{PlayerName}，我想，不必舍近求远，你就是那个最为合适的人选。",
+                "zh-Hant": "{PlayerName}，我想，不必捨近求遠，你就是那個最為合適的人選。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein guter Vorschlag. Ich habe General Jiyan immer bewundert.",
+                "en": "A fine suggestion. I have always admired General Jiyan.",
+                "es": "Una buena sugerencia. Siempre he admirado al general Jiyan.",
+                "fr": "C'est une bonne suggestion. J'ai toujours admiré le général Jiyan.",
+                "ja": "悪くないね。<ano=キエン>忌炎</ano>将軍は僕がずっと尊敬してきた人の一人なんだ。",
+                "ko": "좋은 생각이네요. 기염 장군도 제가 지금까지 가장 존경하는 분 중 한 분이니까요",
+                "th": "เป็นคำแนะนำที่ดี ฉันชื่นชมแม่ทัพ Jiyan มานานแล้ว...",
+                "zh-Hans": "很不错的提议，忌炎将军也是我一直以来最为敬佩的人之一。",
+                "zh-Hant": "很不錯的提議，忌炎將軍也是我一直以來最為敬佩的人之一。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings müsste jede Aufzeichnung, bei denen die Mitternachtsranger dabei ist, vorher genehmigt werden. Mit dem bevorstehenden Mondlichtmarkt wird die Zeit wohl nicht reichen.",
+                "en": "However, any form of recording involving the Midnight Rangers would require prior clearance. With the Moonlit Fair on the horizon, time may not allow it.",
+                "es": "Sin embargo, necesitaremos autorización previa y por escrito para grabar a los Rangers de Medianoche. Con la Feria de la Luna en el horizonte, puede que el tiempo no lo permita.",
+                "fr": "Cependant, toute forme d'enregistrement impliquant les Gardiens de minuit nécessiterait une autorisation préalable. Avec le marché de la lune qui se profile à l'horizon, on n'as pas assez de temps.",
+                "ja": "だけど、<ano=よき>夜帰</ano>軍が関わってくるとなると、事前に許可を取らないと……<ano=よいづきかい>宵月会</ano>までそれほど時間もないし、間に合わないかも。",
+                "ko": "하지만 야귀군과 관련된 영상은 군사기밀에 저촉될 수 있기 때문에 미리 허가를 받아야 돼요... 달맞이 야시장 개최까지는 남은 시간이 얼마 없어서 힘들 것 같네요",
+                "th": "แต่การบันทึกภาพและเสียงทุกรูปที่เกี่ยวข้องกับมิดไนท์เรนเจอร์ต้องขออนุญาตล่วงหน้า ยิ่งใกล้เทศกาลจันทร์พรายแสงแบบนี้ เวลาอาจไม่เพียงพอ",
+                "zh-Hans": "但关系到夜归军，录制影像可能会涉及军事机密，我们需要事先拿到许可……宵月会快到了，时间上恐怕不允许。",
+                "zh-Hant": "但關係到夜歸軍，錄製影像可能會涉及軍事機密，我們需要事先拿到許可……宵月會快到了，時間上恐怕不允許。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Tatsächlich ist die Person, die mir vorschwebt, der Inbegriff von Mut, Ausdauer und Führungsstärke, mit unerschütterlichen Gefährten, die {Male=ihm;Female=ihr} zur Seite stehen und selbst im Angesicht übermächtiger Feinde nicht nachgeben ...",
+                "en": "...Actually, the person I have in mind embodies courage, perseverance, and leadership, with steadfast companions who would stand by {Male=him;Female=her}, never backing down even in the face of powerful enemies...",
+                "es": "... En realidad, la persona que tengo en mente encarna el coraje, la perseverancia y el liderazgo, con compañeros decididos que le apoyarán, sin dar un paso atrás, incluso frente a poderosos enemigos...",
+                "fr": "En fait, la personne à laquelle je pense incarne le courage, la détermination et le leadership, avec des compagnons inébranlables qui se tiennent aux côtés {Male=de lui;Female=d'elle}, sans jamais reculer, même face à de puissants ennemis...",
+                "ja": "……勇気も不屈の心も、責任感もあるし、肩を並べて戦う仲間もいる。強敵が立ちはだかろうと、決して退くことはない……",
+                "ko": "용기... 끈기... 책임감... 함께 싸우는 파트너... 강적을 눈앞에 두고도 절대 물러서지 않는 사람...",
+                "th": "...มีความกล้าหาญ ความพากเพียร และความเป็นผู้นำ ทั้งยังมีสหายที่ยืนหยัดเคียงข้าง แม้ต้องเผชิญศัตรูที่แข็งแกร่งก็ไม่ถอย...",
+                "zh-Hans": "……有勇气、有毅力、有担当、也有并肩作战的伙伴，即使强敌当前也绝无半分退让……",
+                "zh-Hant": "……有勇氣、有毅力、有擔當、也有並肩作戰的夥伴，即使強敵當前也絕無半分退讓……"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da brauchst du nicht lange zu suchen, {PlayerName}. Du bist genau die richtige Besetzung.",
+                "en": "There's no need to look far, {PlayerName}. You are the most suitable candidate.",
+                "es": "No hay necesidad de buscar muy lejos, {PlayerName}. Tú eres {Male=el candidato más adecuado;Female=la candidata más adecuada}.",
+                "fr": "Inutile de chercher bien loin, {PlayerName}. Tu es {Male=le candidat idéal;Female=la candidate idéale}.",
+                "ja": "{PlayerName}。僕は君が一番の適任者だと思うよ。",
+                "ko": "굳이 멀리까지 갈 필요도 없어요. {PlayerName}이(가) 가장 적임자니까요",
+                "th": "ไม่ต้องไปหาที่ไหนไกลเลย {PlayerName} คุณนั่นแหละคือตัวเลือกที่เหมาะสมที่สุด",
+                "zh-Hans": "{PlayerName}，我想，不必舍近求远，你就是那个最为合适的人选。",
+                "zh-Hant": "{PlayerName}，我想，不必捨近求遠，你就是那個最為合適的人選。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Tatsächlich ist die Person, die mir vorschwebt, der Inbegriff von Mut, Ausdauer und Führungsstärke, mit unerschütterlichen Gefährten, die {Male=ihm;Female=ihr} zur Seite stehen und selbst im Angesicht übermächtiger Feinde nicht nachgeben ...",
+                "en": "...Actually, the person I have in mind embodies courage, perseverance, and leadership, with steadfast companions who would stand by {Male=him;Female=her}, never backing down even in the face of powerful enemies...",
+                "es": "... En realidad, la persona que tengo en mente encarna el coraje, la perseverancia y el liderazgo, con compañeros decididos que le apoyarán, sin dar un paso atrás, incluso frente a poderosos enemigos...",
+                "fr": "En fait, la personne à laquelle je pense incarne le courage, la détermination et le leadership, avec des compagnons inébranlables qui se tiennent aux côtés {Male=de lui;Female=d'elle}, sans jamais reculer, même face à de puissants ennemis...",
+                "ja": "……勇気も不屈の心も、責任感もあるし、肩を並べて戦う仲間もいる。強敵が立ちはだかろうと、決して退くことはない……",
+                "ko": "용기... 끈기... 책임감... 함께 싸우는 파트너... 강적을 눈앞에 두고도 절대 물러서지 않는 사람...",
+                "th": "...มีความกล้าหาญ ความพากเพียร และความเป็นผู้นำ ทั้งยังมีสหายที่ยืนหยัดเคียงข้าง แม้ต้องเผชิญศัตรูที่แข็งแกร่งก็ไม่ถอย...",
+                "zh-Hans": "……有勇气、有毅力、有担当、也有并肩作战的伙伴，即使强敌当前也绝无半分退让……",
+                "zh-Hant": "……有勇氣、有毅力、有擔當、也有並肩作戰的夥伴，即使強敵當前也絕無半分退讓……"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da brauchst du nicht lange zu suchen, {PlayerName}. Du bist genau die richtige Besetzung.",
+                "en": "There's no need to look far, {PlayerName}. You are the most suitable candidate.",
+                "es": "No hay necesidad de buscar muy lejos, {PlayerName}. Tú eres {Male=el candidato más adecuado;Female=la candidata más adecuada}.",
+                "fr": "Inutile de chercher bien loin, {PlayerName}. Tu es {Male=le candidat idéal;Female=la candidate idéale}.",
+                "ja": "{PlayerName}。僕は君が一番の適任者だと思うよ。",
+                "ko": "{PlayerName}이(가) 가장 적임자라고 생각해요",
+                "th": "ไม่ต้องไปหาที่ไหนไกลเลย {PlayerName} คุณนั่นแหละคือตัวเลือกที่เหมาะสมที่สุด",
+                "zh-Hans": "{PlayerName}，我想，你就是那个最为合适的人选。",
+                "zh-Hant": "{PlayerName}，我想，你就是那個最為合適的人選。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 29,
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich?",
+                    "en": "Me?",
+                    "es": "¿Yo?",
+                    "fr": "Moi ?",
+                    "ja": "{Male=俺？;Female=私？}",
+                    "ko": "저요?",
+                    "th": "ฉันเหรอ?",
+                    "zh-Hans": "我？",
+                    "zh-Hant": "我？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin kein Vorbild.",
+                    "en": "I'm no role model.",
+                    "es": "No soy ningún modelo a seguir.",
+                    "fr": "Je ne suis pas un bon exemple.",
+                    "ja": "何かを教えられるほど大した経験はないけど……",
+                    "ko": "저는 누군가를 지도한 경험이 없어요",
+                    "th": "ฉันไม่ใช่บุคคลต้นแบบอะไรหรอกนะ",
+                    "zh-Hans": "我没啥引导经验。",
+                    "zh-Hant": "我沒啥引導經驗。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Allein deine Taten zur Sicherung von Jinzhou haben dir den Titel {Male=eines wahren Helden;Female=einer wahren Heldin} eingebracht.",
+                "en": "Your actions alone in saving Jinzhou have earned you the title of hero.",
+                "es": "Simplemente tus acciones para salvar Jinzhou ya te han valido el título de {Male=héroe;Female=heroína}.",
+                "fr": "Ta seule action pour sauver la ville de Jinzhou t'a valu le titre de héros.",
+                "ja": "<ano=こんしゅう>今州</ano>を救ったことだけでも、ヒーローだと名乗るには十分だと思うけどね。",
+                "ko": "금주를 구한 것만으로도 영웅이라 불릴 자격은 충분한걸요",
+                "th": "แค่สิ่งที่คุณทำเพื่อกอบกู้จินโจว ก็เพียงพอให้คุณคู่ควรกับคำว่าฮีโร่แล้ว",
+                "zh-Hans": "仅是拯救今州这一件事，就足以担得起英雄之誉。",
+                "zh-Hant": "僅是拯救今州這一件事，就足以擔得起英雄之譽。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein wahrer Held definiert sich nicht durch große Worte, sondern durch Taten.",
+                "en": "A true hero is defined not by grand gestures but by their actions.",
+                "es": "Un verdadero héroe no se define por sus grandes hazañas, sino por sus gestos.",
+                "fr": "Un véritable héros ne se définit pas par de grands gestes, mais par ses actions.",
+                "ja": "それに、意図的に何かを教える必要はない。本物のヒーローは、わざとらしく演技をしなくていいんだ。",
+                "ko": "그 아이를 대할 때, 일부러 꾸며내실 필요도 없어요. 진정한 영웅은 연기할 필요가 없으니까요",
+                "th": "ฮีโร่ที่แท้จริงไม่ได้ตัดสินกันที่กิริยาท่าทางอันสวยหรู แต่อยู่ที่การกระทำ",
+                "zh-Hans": "并且对待那孩子，你也不必刻意引导，毕竟真正的英雄无需扮演。",
+                "zh-Hant": "並且對待那孩子，你也不必刻意引導，畢竟真正的英雄無需扮演。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Schlüssel ist Glaubwürdigkeit. Erzähle einfach von deinem täglichen Leben und lass dein wahres Ich durchscheinen.",
+                "en": "Authenticity is key. Just chronicle your daily life, and let your true self shine through.",
+                "es": "La autenticidad es fundamental. Solo tienes que hacer una crónica de tu vida cotidiana y dejar que tu verdadero yo salga a la luz.",
+                "fr": "L'authenticité est la clé. Il suffit de faire la chronique de ta vie quotidienne et de laisser transparaître ta vraie personnalité.",
+                "ja": "君自身が言ったように、日常を記録して、君の普段の姿を見せればいいと思うよ。",
+                "ko": "말씀하신 것처럼 일상생활을 녹화해서, 가장 진정성 있는 모습을 보여주기만 하면 될 거예요",
+                "th": "เหมือนที่คุณบอกนั่นแหละ แค่บันทึกเรื่องราวในแต่ละวัน และแสดงตัวตนที่แท้จริงที่สุดของคุณก็พอแล้ว",
+                "zh-Hans": "就像你说的，记录日常、展现你最为真切的一面就好。",
+                "zh-Hant": "就像你說的，記錄日常、展現你最為真切的一面就好。"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Na dann.",
+                    "en": "All right.",
+                    "es": "Está bien.",
+                    "fr": "D'accord.",
+                    "ja": "分かった。",
+                    "ko": "알겠어요",
+                    "th": "ตกลง",
+                    "zh-Hans": "我明白了。",
+                    "zh-Hant": "我明白了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich probiere es aus.",
+                    "en": "I'll give it a try.",
+                    "es": "Lo intentaré.",
+                    "fr": "Je vais essayer.",
+                    "ja": "やってみる。",
+                    "ko": "그럼 해볼게요",
+                    "th": "ฉันจะลองดู",
+                    "zh-Hans": "那我试试。",
+                    "zh-Hant": "那我試試。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das Pangu-Terminal kann deine täglichen Aufgaben aufzeichnen. Doch bevor du damit loslegst, nehme ich noch einige Verbesserungen vor, damit du zusätzliche Hilfe erhältst.",
+                "en": "The Pangu Terminal can record your daily activities. Before you begin I'll make some enhancements to provide you with additional assistance.",
+                "es": "La Terminal Pangu puede registrar tus actividades diarias. Antes de comenzar, efectuaré algunas mejoras para ofrecerte asistencia adicional.",
+                "fr": "La Borne Pangu peut enregistrer tes activités quotidiennes. Avant de commencer, je vais apporter quelques améliorations pour te fournir une assistance supplémentaire.",
+                "ja": "普段の生活風景を記録できるよう、デバイスを調整しておくね。",
+                "ko": "단말기를 쓰면 당신의 일상생활을 녹화할 수 있어요. 장비는 제가 미리 조절해 드리겠습니다. 도움이 되길 바랄게요",
+                "th": "เทอร์มินัลผานกู่สามารถบันทึกกิจกรรมประจำวันของคุณได้ ก่อนที่จะเริ่มต้น ฉันจะปรับแต่งอะไรนิดหน่อยเพื่อคอยช่วยเหลือคุณเพิ่มเติม",
+                "zh-Hans": "盘古终端可以摄录下你平日生活的影像，我会事先把设备调试好，希望能帮到你。",
+                "zh-Hant": "盤古終端可以攝錄下你平日生活的影像，我會事先把設備調試好，希望能幫到你。"
+              },
+              "id": 26,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke für deine harte Arbeit bisher, {PlayerName}. Die Analyse des vierten Wunsches wird einige Zeit in Anspruch nehmen. Ich melde mich bei dir, wenn sie abgeschlossen ist.",
+                "en": "Thank you for your hard work so far, {PlayerName}. It will take some time to analyze the fourth wish. I'll contact you after it is complete.",
+                "es": "Gracias por tu arduo trabajo hasta ahora, {PlayerName}. Tomará algún tiempo analizar el cuarto deseo. Me pondré en contacto contigo cuando haya terminado.",
+                "fr": "Merci pour ton travail acharné jusqu'à présent, {PlayerName}. L'analyse du quatrième vœu prendra un certain temps. Je te contacterai une fois l'analyse terminée.",
+                "ja": "それじゃあ、頼んだよ。4つ目の願いの解析にはもう少し時間がかかりそうなんだ。解析が終わり次第また連絡するよ。",
+                "ko": "그동안 고생 많으셨어요. 네 번째 소원지는 해독하는 데 시간이 좀 걸려서, 끝나는 대로 최대한 빨리 연락드릴게요",
+                "th": "ขอบคุณสำหรับความทุ่มเทในช่วงที่ผ่านมานะ การวิเคราะห์ความปรารถนาลำดับที่สี่ต้องใช้เวลาสักหน่อย ฉันจะติดต่อเมื่อเสร็จเรียบร้อยแล้ว",
+                "zh-Hans": "这段时间也辛苦你了。第四封心愿纸的解析需要些时间，解析完成后我会尽快联系你。",
+                "zh-Hant": "這段時間也辛苦你了。 第四封心願紙的解析需要些時間，解析完成後我會儘快聯繫你。"
+              },
+              "id": 27,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Mondlichtmarkt rückt näher ... Ich hoffe, dass alle Wünsche in der Mondbaumhütte bald in Erfüllung gehen werden.",
+                "en": "The Moonlit Fair is approaching... I hope that all the wishes in the Moontree Lodge will soon come true.",
+                "es": "Se acerca la Feria de la Luna... Espero que todos los deseos del Cobijo del Árbol se hagan pronto realidad.",
+                "fr": "Le marché de la lune approche... J'espère que tous les vœux de la Loge de l'Arbre-lune se réaliseront bientôt.",
+                "ja": "もうすぐ<ano=よいづきかい>宵月会</ano> …… <ano=つきのきや>月樹屋</ano>に届けられた願いが、すべて叶うといいな。",
+                "ko": "달맞이 야시장도 점점 가까워지네요... 달나무집의 아름다운 소망들이 모두 이뤄지면 좋겠어요",
+                "th": "เทศกาลจันทร์พรายแสงใกล้เข้ามาแล้ว... ฉันหวังว่าความปรารถนาทั้งหมดในโพรงต้นจันทราจะเป็นจริงในไม่ช้า",
+                "zh-Hans": "宵月会将近……但愿月树屋里那些美好的愿望都能得以实现。",
+                "zh-Hant": "宵月會將近……但願月樹屋裡那些美好的願望都能得以實現。"
+              },
+              "id": 28,
+              "speaker": {
+                "id": 1346,
+                "name": {
+                  "zh-Hans": "相里要"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "parentId": 27,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 26,
+      "parentId": 27,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.2追月节主线明线",
+          "flowIndex": 10,
+          "stateId": 10,
+          "talks": [
+            {
+              "text": {
+                "de": "Der dritte Wunsch ... Lass mal sehen, was dort geschrieben steht.",
+                "en": "The third wish... Let's see what's written this time.",
+                "es": "El tercer deseo... Veamos qué pone.",
+                "fr": "Le troisième vœu... Voyons ce qui est écrit cette fois-ci.",
+                "ja": "3つ目のお願いか……どれどれ。",
+                "ko": "세 번째 소원지는... 제가 한 번 볼게요",
+                "th": "ความปรารถนาที่สาม... มาดูกันซิว่าคราวนี้เขียนว่าอะไร",
+                "zh-Hans": "第三张心愿纸……我来看看。",
+                "zh-Hant": "第三張心願紙……我來看看。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_V1.2追月节主线明线",
+          "flowIndex": 32,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Während du über den Wunsch des Helden nachdenkst, hörst du das ferne Geräusch von Kindern, die über das Helden-Spiel streiten. Vielleicht...",
+                "en": "As you ponder the hero's wish, you hear the distant noise of children arguing about the Hero Play. Maybe they…",
+                "es": "A medida que piensas en el deseo del héroe, oyes el ruido lejano de los niños discutiendo sobre el Drama de Héroe. Tal vez ellos...",
+                "fr": "Alors que vous pensez au vœu du héros, vous entendez les cris d'enfants qui se disputent à propos de la comédie héroïque. Peut-être, ils…",
+                "ja": "「ヒーロー」についての願いごとのことを考えていると、近くから子どもの騒ぎ声が聞こえてきた。ヒーローショーのことで言い争っているようだ。もしかしてこの子どもたちは……",
+                "ko": "「영웅」에 대한 소원을 생각할 때, 멀지 않은 곳에서 어린아이들이 떠드는 소리가 들려왔다. 그들은 영웅극을 토론하고 있는 것 같았다. 어쩌면 그들이...",
+                "th": "ขณะที่คุณครุ่นคิดถึงคำปรารถนาของฮีโร่ผู้นั้น คุณก็ได้ยินเสียงเด็กๆ ที่กำลังเถียงกันเรื่องบทละครวีรชนดังแว่วมาแต่ไกล พวกเขาอาจ...",
+                "zh-Hans": "在你思考关于“英雄”的心愿时，你听见了不远处传来了小孩子的吵闹声，似乎在争论着英雄戏，也许他们……",
+                "zh-Hant": "在你思考關於「英雄」的心願時，你聽見了不遠處傳來了小孩子的吵鬧聲，似乎在爭論著英雄戲，也許他們……"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "parentId": 28,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880700228,
+          "mapId": 8,
+          "blueprintType": "Gameplay540",
+          "name": "TsEntity_通用不可见交互物8",
+          "areaId": 406,
+          "position": {
+            "x": -92060,
+            "y": 53640,
+            "z": 7290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 35,
+      "parentId": 28,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 36,
+      "parentId": 28,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 37,
+      "parentId": 28,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 38,
+      "parentId": 28,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 31,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 28,
+      "parentId": 31,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 34,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Zum „Wunschstand“ gehen und die Vorbereitungen für Mondjagd-Festival fortsetzen",
+        "en": "Head to the \"Wishing Stall\" and continue the preparations",
+        "es": "Dirígete al Puesto de deseos y sigue preparando el Festival de la Caza de la Luna",
+        "fr": "Se rendre au kiosque de vœux et continuer les préparatifs",
+        "ja": "「祈願所」で月追祭の準備を続ける",
+        "ko": "「기원 가게」로 이동하여 계속 달맞이 축제 준비하기",
+        "th": "ไปที่ \"ซุ้มปรารถนา\" และเตรียมงานต่อไป",
+        "zh-Hans": "前往「祈愿摊」，继续筹备追月节",
+        "zh-Hant": "前往「祈願攤」，繼續籌備追月節"
+      },
+      "entities": [
+        {
+          "entityId": 880700139,
+          "mapId": 8,
+          "blueprintType": "NPC1051",
+          "name": "TsEntity_NPC1051_机器人小帕4",
+          "areaId": 406,
+          "position": {
+            "x": -91980,
+            "y": 53250,
+            "z": 7190
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700228,
+          "mapId": 8,
+          "blueprintType": "Gameplay540",
+          "name": "TsEntity_通用不可见交互物8",
+          "areaId": 406,
+          "position": {
+            "x": -92060,
+            "y": 53640,
+            "z": 7290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 49,
+      "parentId": 31,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 39,
+      "parentId": 38,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 40,
+      "parentId": 39,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 43,
+      "parentId": 39,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 46,
+      "parentId": 39,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 41,
+      "parentId": 40,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 42,
+      "parentId": 40,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 44,
+      "parentId": 43,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 45,
+      "parentId": 43,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 46,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 48,
+      "parentId": 46,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 49,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Dekodiere den dritten Wunschzettel mit Patty",
+        "en": "Decode the third Wish Tag with Patty",
+        "es": "Resuelve el tercer deseo junto a Patty",
+        "fr": "Exaucer le troisième vœu avec Patty",
+        "ja": "ハクと一緒に三つ目の願いを叶える",
+        "ko": "아스칼과 함께 세 번째 소원 풀기",
+        "th": "ถอดรหัสป้ายปรารถนาป้ายที่สามกับแพตตี้",
+        "zh-Hans": "和小帕一起解开第三个心愿",
+        "zh-Hant": "和小帕一起解開第三個心願"
+      },
+      "entities": [
+        {
+          "entityId": 880700139,
+          "mapId": 8,
+          "blueprintType": "NPC1051",
+          "name": "TsEntity_NPC1051_机器人小帕4",
+          "areaId": 406,
+          "position": {
+            "x": -91980,
+            "y": 53250,
+            "z": 7190
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 32,
+      "parentId": 49,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

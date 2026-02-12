@@ -1,0 +1,1766 @@
+{
+  "id": 135000007,
+  "key": "无名湾灯塔",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Repariere den Leuchtturm an der namenlosen Bucht",
+    "en": "Repair the Lighthouse at the Wuming Bay",
+    "es": "Reparar el faro en la Bahía Wuming",
+    "fr": "Réparer le phare de la la Baie Wuming",
+    "ja": "無明の湾岸の灯台を修復",
+    "ko": "어둠의 만 등대 복구하기",
+    "th": "ซ่อมแซมประภาคารที่อ่าวอันธการ",
+    "zh-Hans": "修复位于无明湾灯塔",
+    "zh-Hant": "修復位於無明灣的燈塔"
+  },
+  "desc": {
+    "de": "Der Leuchtturm an der Bucht Wuming hat seinen Betrieb eingestellt. Versuche, ihn wieder in Betrieb zu setzen!",
+    "en": "The lighthouse at the Wuming Bay has lost power. Try to restore its power!",
+    "es": "El faro en la Bahía Wuming ha perdido energía. ¡Intenta restaurar su funcionamiento!",
+    "fr": "Le phare situé dans la Baie Wuming a perdu son alimentation, essayez de le remettre en marche !",
+    "ja": "無明の湾岸にある灯台が電力供給を失った、灯台の再稼働させよう！",
+    "ko": "어둠의 만의 등대가 전력을 잃었습니다. 등대를 다시 작동시켜 보세요!",
+    "th": "ประภาคารที่อ่าวอันธการสูญเสียพลังงานไป ลองกู้คืนพลังงานเลยสิ!",
+    "zh-Hans": "位于无明湾的灯塔失去了供电，尝试使灯塔恢复运转吧！",
+    "zh-Hant": "位於無明灣的燈塔失去了供電，嘗試使燈塔恢復運轉吧！"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002031,
+          "mapId": 8,
+          "blueprintType": "NPC296",
+          "name": "TsEntity_157_031_市民男11",
+          "areaId": 8,
+          "position": {
+            "x": 19678,
+            "y": 163527,
+            "z": 358
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 161
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002032,
+          "mapId": 8,
+          "blueprintType": "Gameplay143",
+          "name": "TsEntity_玩法_控物_电池高压底座4",
+          "areaId": 8,
+          "position": {
+            "x": 19187,
+            "y": 163011,
+            "z": 495
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 76
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002050,
+          "mapId": 8,
+          "blueprintType": "Gameplay014",
+          "name": "TsEntity_玩法_控物_电池",
+          "areaId": 8,
+          "position": {
+            "x": 19030,
+            "y": 163418,
+            "z": 340
+          },
+          "rotation": {
+            "x": 98,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002106,
+          "mapId": 8,
+          "blueprintType": "Gameplay006",
+          "name": "TsEntity_玩法_定点钩锁",
+          "areaId": 8,
+          "position": {
+            "x": 8583,
+            "y": 163417,
+            "z": 2867
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Es ist einfach unmöglich, dass ich alle <color=Highlight>Pylone</color> aktivieren kann, die zum Leuchtturm führen, in so kurzer Zeit...",
+                "en": "There's just no way I can activate all the <color=Highlight>pylons</color> leading up to the lighthouse within such a short time period...",
+                "es": "Simplemente no hay forma de que pueda activar todos los <color=Highlight>postes</color> que conducen al faro en un período de tiempo tan corto...",
+                "fr": "Il est trop difficile pour moi d'activer tous les <color=Highlight>poteaux d'alimentation</color> dans le temps et d'atteindre le phare...",
+                "ja": "時間内に全ての<color=Highlight>給電柱</color>を起動させ灯台まで辿り着くなんて……僕には難しすぎる……",
+                "ko": "<color=Highlight>전력 공급 기둥</color>를 모두 치면서 언덕 위의 등대로 뛰어가는 건 저에게 너무 어려운 일이에요...",
+                "th": "ฉันไม่มีทางเปิดใช้งาน<color=Highlight>เสาไฟพลังแรงสูง</color>ที่ตั้งเรียงรายกันไปถึงประภาคารทั้งหมดได้ในเวลาสั้นๆ แบบนั้นหรอก...",
+                "zh-Hans": "要在限时内一边击打全部的<color=Highlight>供电桩</color>，一边跑到山坡上的灯塔，这对我来说太难了……",
+                "zh-Hant": "要在限時內一邊擊打全部的<color=Highlight>供電樁</color>，一邊跑到山坡上的燈塔，這對我來說太難了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1294,
+                "name": {
+                  "zh-Hans": "天工基建科成员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "Sequence",
+      "entities": [
+        {
+          "entityId": 135002026,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型4",
+          "areaId": 8,
+          "position": {
+            "x": 18625,
+            "y": 162613,
+            "z": 401
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002027,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型5",
+          "areaId": 8,
+          "position": {
+            "x": 14665,
+            "y": 160390,
+            "z": 1077
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002028,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型6",
+          "areaId": 8,
+          "position": {
+            "x": 11628,
+            "y": 164887,
+            "z": 2411
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002029,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型13",
+          "areaId": 8,
+          "position": {
+            "x": 8332,
+            "y": 163286,
+            "z": 2820
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002030,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型14",
+          "areaId": 8,
+          "position": {
+            "x": 7625,
+            "y": 166083,
+            "z": 3580
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002032,
+          "mapId": 8,
+          "blueprintType": "Gameplay143",
+          "name": "TsEntity_玩法_控物_电池高压底座4",
+          "areaId": 8,
+          "position": {
+            "x": 19187,
+            "y": 163011,
+            "z": 495
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 76
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002580,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录14",
+          "areaId": 8,
+          "position": {
+            "x": 7295,
+            "y": 166212,
+            "z": 4407
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Hacke in das Leuchtturm-Terminalsystem ein",
+        "en": "Hack into the lighthouse terminal system",
+        "es": "Hackear el sistema de la terminal del faro",
+        "fr": "Pirater le système terminal du phare",
+        "ja": "灯台システムにハッキング",
+        "ko": "등대 단말 시스템 연결하기",
+        "th": "แฮ็กเข้าระบบเทอร์มินัลของประภาคาร",
+        "zh-Hans": "骇入灯塔终端系统",
+        "zh-Hant": "駭入燈塔終端系統"
+      },
+      "entities": [
+        {
+          "entityId": 135002045,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线",
+          "areaId": 8,
+          "position": {
+            "x": 18828,
+            "y": 163290,
+            "z": 343
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002046,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线2",
+          "areaId": 8,
+          "position": {
+            "x": 17971,
+            "y": 162232,
+            "z": 431
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002047,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线3",
+          "areaId": 8,
+          "position": {
+            "x": 14092,
+            "y": 161284,
+            "z": 1245
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002048,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线4",
+          "areaId": 8,
+          "position": {
+            "x": 11506,
+            "y": 164499,
+            "z": 2410
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002049,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线5",
+          "areaId": 8,
+          "position": {
+            "x": 8554,
+            "y": 163618,
+            "z": 2829
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002051,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端",
+          "areaId": 8,
+          "position": {
+            "x": 7229,
+            "y": 166249,
+            "z": 4478
+          },
+          "rotation": {
+            "x": -4,
+            "y": 12,
+            "z": -17
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002052,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点2",
+          "areaId": 8,
+          "position": {
+            "x": 9312,
+            "y": 165741,
+            "z": 3138
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002054,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线6",
+          "areaId": 8,
+          "position": {
+            "x": 7773,
+            "y": 165831,
+            "z": 3516
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 2,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Überprüfung der Schiffregistrierung>>>>> Extrahieren des neuesten Logbucheintrags - Abgeschlossen",
+                "en": "Verifying Ship Registration>>>>> Extracting latest log entry—Complete",
+                "es": "Verificando Registro de Nave>>>>> Extrayendo la última entrada del registro — Completo",
+                "fr": "Informations d'enregistrement du navire, chargement>>>>>Comparaison du fichier d'enregistrement en cours - Comparaison terminée",
+                "ja": "船舶登録情報、読み込み中>>>>>録音ファイル照合中——照合完了",
+                "ko": "선박 정보 읽는 중>>>최근 기록정보 호출--완료",
+                "th": "กำลังตรวจสอบทะเบียนเรือ>>>>> กำลังดึงบันทึกล่าสุด—เสร็จสิ้น",
+                "zh-Hans": "登录船舶信息读取中>>>>>调用最近期记录信息——已完成",
+                "zh-Hant": "登錄船舶信息讀取中>>>>>調用最近期記錄信息——已完成"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1295,
+                "name": {
+                  "zh-Hans": "灯塔终端"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schiffsregistrierung [NUS8910]>>>>> Start der Sprachaufnahme",
+                "en": "Ship Registration [NUS8910]>>>>> Initiating voice recording",
+                "es": "Registro de Nave [NUS8910]>>>>> Iniciando grabación de voz",
+                "fr": "Numéro d'enregistrement du navire « NUS8910 »>>>>>Début de la lecture de l'enregistrement",
+                "ja": "船舶登録ナンバー「NUS8910」>>>>>録音再生開始",
+                "ko": "선박등록번호 [NUS8910]>>>>녹음기록이 곧 방송됩니다",
+                "th": "ทะเบียนเรือ [NUS8910]>>>>> เริ่มการบันทึกเสียง",
+                "zh-Hans": "船舶登录编号[NUS8910]>>>>>即将播放录音记录",
+                "zh-Hant": "船舶登錄編號[NUS8910]>>>>>即將播放錄音記錄"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1295,
+                "name": {
+                  "zh-Hans": "灯塔终端"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier spricht der Stachelrochen... Stellvertretender Kapitän Moak spricht...",
+                "en": "Stingray here... Acting Captain Moak recording...",
+                "es": "Aquí Mantarraya... Grabación del Capitán interino Moak...",
+                "fr": "Ici, « Manta »... Je suis le capitaine par intérim, Mock.",
+                "ja": "こちら、「マンタ」……俺は代理キャプテン、モックだ。",
+                "ko": "여기는 데블피쉬... 선장 대행 모크입니다...",
+                "th": "นี่คือเรือกระเบน... รักษาการกัปตันโมคกำลังพูด...",
+                "zh-Hans": "这里是魔鬼鱼号……我是代理船长莫克……",
+                "zh-Hant": "這裡是魔鬼魚號……我是代理船長莫克……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich sage Kapitän, aber ich bin eigentlich der Einzige, der noch auf diesem Schiff ist. Heute Morgen hat auch Espey, mein letzter Begleiter, den Stachelrochen unbemerkt verlassen.",
+                "en": "I say Captain, but I'm actually the only one left on this ship. This morning, Espey, my last companion, also quietly left the Stingray unnoticed.",
+                "es": "Digo Capitán, pero en realidad soy el único que queda en esta nave. Esta mañana, Espey, mi último compañero, también abandonó la Mantarraya sin que nadie se diera cuenta.",
+                "fr": "Même si je suis le capitaine, je suis le seul à bord. Ce matin, le dernier de mes camarades, Espei, a quitté le navire.",
+                "ja": "キャプテンと言っても、船には俺だけ。今朝、最後の仲間エスペイも船から降りた。",
+                "ko": "선장이라고는 하지만 사실은 저만 남은 상태고, 오늘 아침 제 마지막 동반자인 애사비도 슬그머니 데블호를 떠났습니다",
+                "th": "ถึงจะบอกว่าเป็นกัปตัน แต่ก็เป็นคนเดียวที่เหลืออยู่บนเรือลำนี้แล้วละนะ เช้าวันนี้ เอสเพย์ เพื่อนร่วมทางคนสุดท้ายของฉัน ได้หายตัวไปจากเรือกระเบนโดยไม่มีใครเห็นเลย",
+                "zh-Hans": "说是船长，但其实也只剩下我一个了，在今天早上，我最后一个同伴艾斯比也悄悄离开了魔鬼鱼号。",
+                "zh-Hant": "說是船長，但其實也只剩下我一個了，在今天早上，我最後一個同伴艾斯比也悄悄離開了魔鬼魚號。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es war bereits spät am Abend, als wir gestern diesen Leuchtturm auf dem Berg fanden, also näherten wir uns und bereiteten uns darauf vor, nach dem Morgengrauen an Land zu gehen und den Ort zu erkunden, wie wir es in der Vergangenheit getan haben.",
+                "en": "It was already late evening when we found this lighthouse on the mountain yesterday, so we made an approach and prepared to go on land and check the place out after dawn, as we have done in the past.",
+                "es": "Ya era tarde en la noche cuando encontramos este faro en la montaña ayer, así que nos acercamos y nos preparamos para desembarcar y revisar el lugar después del amanecer, como hemos hecho en el pasado.",
+                "fr": "Nous avons trouvé ce phare la nuit dernière. Nous avons donc décidé de mouiller ici, et de vérifier la situation à l'aube...",
+                "ja": "昨日の夜にこの灯台を見つけた。そこで俺たちはここに停泊し、日が昇ったらまた状況確認を行うつもりだった……",
+                "ko": "어젯밤 우리는 이 산맥에 있는 등대를 발견하였고, 날이 밝으면 이전과 같이 로그인해서 기록을 남기려 준비를 했습니다",
+                "th": "เมื่อวานช่วงค่ำ เราพบประภาคารบนภูเขาแห่งนี้เข้า เราจึงมุ่งหน้าเข้าไป เตรียมตัวจะลงไปดูว่ามีอะไรอยู่บนฝั่งหลังรุ่งสางเหมือนอย่างที่เคยทำกันมา",
+                "zh-Hans": "昨天夜里我们发现了这个山脉上的灯塔，于是便靠近了过来准备天亮之后和之前那样登录查看和留下记录。",
+                "zh-Hant": "昨天夜裡我們發現了這個山脈上的燈塔，於是便靠近了過來準備天亮之後和之前那樣登入查看和留下記錄。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es war nicht vor dem Morgengrauen, dass ich feststellte, dass Espey bereits verschwunden war... Ich dachte, dass er mit allen verbleibenden Vorräten geflohen war.",
+                "en": "It wasn't until dawn that I found Espey had already gone missing... I'd thought that he had escaped with all the remaining supplies.",
+                "es": "No fue hasta el amanecer que descubrí que Espey ya había desaparecido... Pensé que se había escapado con todos los suministros restantes.",
+                "fr": "Mais à l'aube, Espei n'était plus là. Au début, je pensais qu'il avait volé des provisions et s'était enfui...",
+                "ja": "だが、朝、エスペイがいなかった。最初は「物資を盗んで逃げ出したんだろう」と思ったが……",
+                "ko": "날이 밝을 때까지 기다린 후에야 애사비가 실종되었다는 것을 알게 되었습니다... 전 그가 남은 물자를 훔쳐 달아난 줄 알았습니다",
+                "th": "แต่ยังไม่ทันเช้า ฉันก็พบว่าเอสเพย์หายตัวไปแล้ว... ตอนแรกฉันคิดว่าเขาคงหนีไปพร้อมกับเสบียงที่เหลืออยู่",
+                "zh-Hans": "但是等到天亮之后，我才发现艾斯比他失踪了……我原本以为他是偷走了仅剩的物资逃跑了。",
+                "zh-Hant": "但是等到天亮之後，我才發現艾斯比他失蹤了……我原本以為他是偷走了僅剩的物資逃跑了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich wurde schnell von meinen eigenen Verdächtigungen beschämt - Die Vorräte waren unberührt. Espey hat sie alle für mich zurückgelassen.",
+                "en": "But I was quickly put to shame by my own suspicions—the supplies were untouched. Espey left them all for me.",
+                "es": "Pero rápidamente me avergoncé de mis propias sospechas - Los suministros estaban intactos. Espey los dejó todos para mí.",
+                "fr": "Mais en vérifiant, il avait laissé sa part. Ce gars... il est parti sans prendre ses provisions.",
+                "ja": "いざ整理してみれば、ちゃんと二人分残っていた。あいつは……自分の物資を残して離れたんだ。",
+                "ko": "하지만 그는 물자를 조금도 가져가지 않고, 모두 저에게 남겨 주었습니다. 전 그 순간 그를 의심한 저에게 수치심을 느꼈습니다",
+                "th": "แต่ก็ต้องรู้สึกละอายใจนักที่คิดสงสัยไปแบบนั้น ไม่มีใครแตะต้องเสบียงเลย เอสเพย์ทิ้งของทั้งหมดไว้ให้ฉัน",
+                "zh-Hans": "但我很快就为我自己的怀疑而感到羞耻——他一点物资都没有拿走，全部留给了我。",
+                "zh-Hant": "但我很快就為我自己的懷疑而感到羞恥——他一點物資都沒有拿走，全部留給了我。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er wusste genau, dass die verbleibenden Vorräte nicht ausreichten, um zwei Personen auf See zu unterstützen, also hat er die letzten Hoffnungen auf Leben für mich zurückgelassen und ist an Land gegangen, um nach Überleben zu suchen.",
+                "en": "He knew fully well that the remaining supplies weren't enough to support two people on sea, so he left the last hopes of life to me and went ashore to seek for survival.",
+                "es": "Sabía perfectamente que los suministros restantes no eran suficientes para sostener a dos personas en el mar, así que me dejó las últimas esperanzas de vida y se fue a la costa en busca de supervivencia.",
+                "fr": "Il a dû penser qu'il n'y avait pas assez pour nous deux pour traverser la mer...Il a décidé de me laisser l'espoir et de se lancer dans la mort.",
+                "ja": "確かに、残った分だけじゃ二人で海は越えられない。あいつ、俺に希望を託し、自ら死地に挑むつもりか……",
+                "ko": "그는 남은 물자로 두 사람이 바다를 표류하기에는 충분하지 않다는 것을 알고 삶의 희망을 모두 저에게 남겨두고, 스스로는 힘들게 뭍에 올라가 힘들게 사는 것을 택했습니다",
+                "th": "เขารู้ดีว่าเสบียงที่เหลืออยู่ไม่พอจะต่อชีวิตคนสองคนกลางทะเลได้ ดังนั้นเขาจึงทิ้งความหวังสุดท้ายไว้ให้ฉัน และลงจากเรือไปหาทางรอดเอาเอง",
+                "zh-Hans": "他明知道剩下的物资不足以支持两个人在海上漂泊，于是把生的希望全部留给我，自己上岸去艰难求生。",
+                "zh-Hant": "他明知道剩下的物資不足以支持兩個人在海上漂泊，於是把生的希望全部留給我，自己上岸去艱難求生。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was für ein Idiot... Selbst wenn wir beide auf See sterben würden, würde ich nie daran denken, meine Crew zu verlassen.",
+                "en": "What an idiot... Even if we both were to die at sea, I would never have the thought of abandoning my crew.",
+                "es": "Qué idiota... Incluso si ambos íbamos a morir en el mar, nunca se me pasaría por la cabeza abandonar a mi tripulación.",
+                "fr": "Quel idiot. Même si nous finissons par couler... Je n'ai pas l'intention d'abandonner mes camarades. Jamais.",
+                "ja": "バカなやつだ。俺は例え海に沈もうとも……仲間を捨てる気はない。",
+                "ko": "그는 정말 바보 같습니다... 둘 다 바다에서 죽는다 해도, 저는 제 선원을 버릴 생각은 없었습니다",
+                "th": "บ้าเสียจริง... ถึงพวกเราต้องตายกันกลางทะเลทั้งคู่ ฉันก็ไม่คิดทอดทิ้งลูกเรือของตัวเองหรอกนะ",
+                "zh-Hans": "他实在是太傻了……就算我们两个都死在海上，我也没有想过抛弃我的船员。",
+                "zh-Hant": "他實在是太傻了……就算我們兩個都死在海上，我也沒有想過拋棄我的船員。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also habe ich einige Vorräte an diesen Koordinaten hinterlassen, in der Hoffnung, dass sie ihm nützlich sein würden... Von hier an wird dies die letzte Reise für mich und den Stachelrochen sein.",
+                "en": "So I left some supplies at these coordinates, hoping that they would be useful to him... From here on out, this will be the final voyage for me and the Stingray.",
+                "es": "Así que dejé algunos suministros en estas coordenadas, con la esperanza de que le fueran útiles... A partir de ahora, este será el último viaje para mí y la Mantarraya.",
+                "fr": "J'ai laissé sa part à la coordonnée. A partir de maintenant... c'est la dernière évasion pour moi et <ano=\"Manta\">elle</ano>.",
+                "ja": "この座標に彼の分の物資を残した。ここからは……俺と<ano=「マンタ」>彼女</ano>の、最後の逃避行……",
+                "ko": "그래서 저는 일부 물자를 좌표의 위치에 남겨 놓았습니다. 그가 발견하고 쓸 수 있기를 바라며... 이제부터는 저와 데블 피쉬호의 마지막 항해입니다",
+                "th": "ดังนั้นฉันจึงทิ้งเสบียงส่วนหนึ่งไว้ที่พิกัดนี้ และหวังว่ามันจะเป็นประโยชน์กับเขาบ้าง... จากนี้ไปจะเป็นการล่องเรือครั้งสุดท้ายของฉันกับเรือกระเบนแล้ว",
+                "zh-Hans": "于是我把部分物资留在了坐标的位置，希望他能够用上……从这里开始，就是我和魔鬼鱼号最后的航行了。",
+                "zh-Hant": "於是我把部分物資留在了座標的位置，希望他能夠用上……從這裡開始，就是我和魔鬼魚號最後的航行了。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 2,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "(Ein Satz von <color=Highlight>Koordinaten</color> erschien auf dem Bildschirm nach der Aufnahme.)",
+                "en": "(A set of <color=Highlight>coordinates</color> appeared on-screen after the recording.)",
+                "es": "(Un conjunto de <color=Highlight>coordenadas</color> apareció en la pantalla después de la grabación.)",
+                "fr": "(L'enregistrement se termine par la fourniture d'une <color=Highlight>coordonnée</color>.)",
+                "ja": "（録音の最後に<color=Highlight>座標</color>が残されていた）",
+                "ko": "(기록된 정보의 마지막에서 <color=Highlight>좌표</color>가 발견되었다)",
+                "th": "(มีชุด<color=Highlight>พิกัด</color>ปรากฏขึ้นบนหน้าจอหลังจากบันทึกเสียงจบลง)",
+                "zh-Hans": "（在记录信息的最后发现了一个<color=Highlight>坐标</color>。）",
+                "zh-Hant": "（在記錄信息的最後發現了一個<color=Highlight>座標</color>。）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Ich sollte diese Koordinaten überprüfen und sehen, was ich finden kann.)",
+                "en": "(I should check out these coordinates I see what I can find.)",
+                "es": "(Debería revisar estas coordenadas y ver qué puedo encontrar.)",
+                "fr": "(Il se peut qu'il y ait quelque chose à trouver là-bas.)",
+                "ja": "（そこに行けば何か見つかるかも）",
+                "ko": "(가서 확인해 보면 무언가 발견할 수 있을 것 같다)",
+                "th": "(ฉันควรไปตรวจสอบพิกัดนี้ดูว่าจะเจออะไรบ้าง)",
+                "zh-Hans": "（去查看一下，可能会有什么发现。）",
+                "zh-Hant": "（去查看一下，可能會有什麼發現。）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 2,
+          "stateId": 8,
+          "talks": [
+            {
+              "text": {
+                "de": "(Geschafft. Das sollte die Stromversorgung des Leuchtturms wiederherstellen.)",
+                "en": "(Made it. That should restore the lighthouse's power.)",
+                "es": "(Lo logré. Eso debería restaurar la energía del faro.)",
+                "fr": "(J'ai réussi... l'alimentation devrait être terminée maintenant.)",
+                "ja": "（できた……これで給電は済んだはず）",
+                "ko": "(드디어 제시간에 도착했다. 이제 등대의 전력 공급도 재개되었을 것이다)",
+                "th": "(เรียบร้อย พลังงานของประภาคารน่าจะกลับมาแล้วนะ)",
+                "zh-Hans": "（终于赶上了，这下灯塔的供电应该恢复了。）",
+                "zh-Hant": "（終於趕上了，這下燈塔的供電應該恢復了。）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Geh zurück zum Leuchtturm und <color=Highlight>hack</color> in die Konsole.)",
+                "en": "(Head back to the lighthouse and <color=Highlight>hack</color> into the console.)",
+                "es": "(Regresa al faro y <color=Highlight>hackea</color> la terminal.)",
+                "fr": "(Je vais essayer de <color=Highlight>pirater</color> le phare à nouveau.)",
+                "ja": "（灯台に登り<color=Highlight>ハッキング</color>してみよう）",
+                "ko": "(등대에 올라 <color=Highlight>연결</color>을 해보자)",
+                "th": "(กลับไปที่ประภาคารและ<color=Highlight>แฮ็ก</color>แผงควบคุม)",
+                "zh-Hans": "（登上灯塔尝试<color=Highlight>骇入</color>吧。）",
+                "zh-Hant": "（登上燈塔嘗試<color=Highlight>駭入</color>吧。）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche nach Schätzen",
+        "en": "Search for treasures",
+        "es": "Busca tesoros",
+        "fr": "Cherchez le trésor",
+        "ja": "宝を探す",
+        "ko": "보물찾기",
+        "th": "ค้นหาสมบัติ",
+        "zh-Hans": "寻找宝藏",
+        "zh-Hant": "尋找寶藏"
+      },
+      "entities": [
+        {
+          "entityId": 135002052,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点2",
+          "areaId": 8,
+          "position": {
+            "x": 9312,
+            "y": 165741,
+            "z": 3138
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002053,
+          "mapId": 8,
+          "blueprintType": "Treasure006",
+          "name": "TsEntity_标准物资箱_玩法刷新3",
+          "areaId": 8,
+          "position": {
+            "x": 9429,
+            "y": 165734,
+            "z": 3117
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 87
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Platziere die Batterie in der Basis, um den Puls zu starten",
+        "en": "Place the battery in the base to launch the pulse",
+        "es": "Coloca la batería en la base para lanzar el pulso",
+        "fr": "Placez la batterie dans la base pour lancer l'impulsion",
+        "ja": "パルス発射のため、バッテリーを台座に入れてください",
+        "ko": "배터리를 받침대에 넣어 펄스 발사하기",
+        "th": "วางแบตเตอรี่ลงบนฐานเพื่อปล่อยคลื่นพลัง",
+        "zh-Hans": "把电池放入底座以发射脉冲",
+        "zh-Hant": "把電池放入底座以發射脈衝"
+      },
+      "entities": [
+        {
+          "entityId": 135002026,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型4",
+          "areaId": 8,
+          "position": {
+            "x": 18625,
+            "y": 162613,
+            "z": 401
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002032,
+          "mapId": 8,
+          "blueprintType": "Gameplay143",
+          "name": "TsEntity_玩法_控物_电池高压底座4",
+          "areaId": 8,
+          "position": {
+            "x": 19187,
+            "y": 163011,
+            "z": 495
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 76
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002045,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线",
+          "areaId": 8,
+          "position": {
+            "x": 18828,
+            "y": 163290,
+            "z": 343
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002046,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线2",
+          "areaId": 8,
+          "position": {
+            "x": 17971,
+            "y": 162232,
+            "z": 431
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002047,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线3",
+          "areaId": 8,
+          "position": {
+            "x": 14092,
+            "y": 161284,
+            "z": 1245
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002048,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线4",
+          "areaId": 8,
+          "position": {
+            "x": 11506,
+            "y": 164499,
+            "z": 2410
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002049,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线5",
+          "areaId": 8,
+          "position": {
+            "x": 8554,
+            "y": 163618,
+            "z": 2829
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002054,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线6",
+          "areaId": 8,
+          "position": {
+            "x": 7773,
+            "y": 165831,
+            "z": 3516
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002580,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录14",
+          "areaId": 8,
+          "position": {
+            "x": 7295,
+            "y": 166212,
+            "z": 4407
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 8,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 8,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 8,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "QuestFailed",
+      "entities": [
+        {
+          "entityId": 135002045,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线",
+          "areaId": 8,
+          "position": {
+            "x": 18828,
+            "y": 163290,
+            "z": 343
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002046,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线2",
+          "areaId": 8,
+          "position": {
+            "x": 17971,
+            "y": 162232,
+            "z": 431
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002047,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线3",
+          "areaId": 8,
+          "position": {
+            "x": 14092,
+            "y": 161284,
+            "z": 1245
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002048,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线4",
+          "areaId": 8,
+          "position": {
+            "x": 11506,
+            "y": 164499,
+            "z": 2410
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002049,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线5",
+          "areaId": 8,
+          "position": {
+            "x": 8554,
+            "y": 163618,
+            "z": 2829
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002054,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线6",
+          "areaId": 8,
+          "position": {
+            "x": 7773,
+            "y": 165831,
+            "z": 3516
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "H-Hallo? Rover, kannst du mich hören?",
+                "en": "H-Hello? Rover, can you hear me?",
+                "es": "¿H-Hola? ¿Errante, puedes oírme?",
+                "fr": "Allo ? Tu m'entends ?",
+                "ja": "もしも～し。聞こえるか？",
+                "ko": "방랑자 들리나요?",
+                "th": "ฮะ ฮัลโหล ผู้พเนจร คุณได้ยินฉันไหม",
+                "zh-Hans": "喂~喂，漂泊者听到吗？",
+                "zh-Hant": "喂~喂，漂泊者聽到嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1294,
+                "name": {
+                  "zh-Hans": "天工基建科成员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der elektromagnetische Impuls ist gerade ausgegangen... Ich nehme an, du hast es nicht rechtzeitig geschafft. Du solltest für einen weiteren Versuch zurückkommen.",
+                "en": "The electromagnetic pulse just went out... I guess you didn't make it in time. You should come back for another run.",
+                "es": "El pulso electromagnético acaba de salir... Supongo que no llegaste a tiempo. Deberías volver para otra carrera.",
+                "fr": "L'alimentation par impulsions a été interrompue... Il semble que ça ne marche pas cette fois. Peux-tu revenir ?",
+                "ja": "パルス給電が途絶えた……今回はダメみたいだね。一度戻って来てくれ。",
+                "ko": "전자 펄스가 끊겼어요... 배터리가 부족한가 봐요. 우선 돌아오세요",
+                "th": "คลื่นแม่เหล็กไฟฟ้าดับหมดแล้ว... ฉันว่าคุณคงทำไม่ทันเวลา คุณควรกลับมาลองใหม่อีกรอบนะ",
+                "zh-Hans": "电磁脉冲中断了……看来还是没赶上，还是先回来吧。",
+                "zh-Hant": "電磁脈衝中斷了……看來還是沒趕上，還是先回來吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1294,
+                "name": {
+                  "zh-Hans": "天工基建科成员"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 2,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Es stellt sich als ein bisschen schwieriger heraus als erwartet, nicht wahr? Möchtest du es noch einmal versuchen, Rover?",
+                "en": "It's proving to be a bit harder than expected, huh? Want to give it another go, Rover?",
+                "es": "Está resultando ser un poco más difícil de lo esperado, ¿eh? ¿Quieres intentarlo de nuevo, Errante?",
+                "fr": "C'est difficile, n'est-ce pas ? Tu veux essayer à nouveau ?",
+                "ja": "やっぱり難しいよね？そうよだね～もう一度試してみる？",
+                "ko": "역시 좀 어렵네요. 방랑자 다시 시도해 보시겠어요?",
+                "th": "ดูเหมือนจะยากกว่าที่คิดไว้สินะ จะลองอีกรอบไหมผู้พเนจร",
+                "zh-Hans": "果然还是有点困难啊，漂泊者要不要再尝试一次？",
+                "zh-Hant": "果然還是有點困難啊，漂泊者要不要再嘗試一次？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1294,
+                "name": {
+                  "zh-Hans": "天工基建科成员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Installiere einfach die <color=Highlight>Stromversorgungseinheit</color> neu und der elektromagnetische Impuls wird seinen Countdown starten.",
+                "en": "Just reinstall the <color=Highlight>power unit</color> and the electromagnetic pulse will start its count down.",
+                "es": "Solo reinstala la <color=Highlight>unidad de energía</color> y el pulso electromagnético comenzará su cuenta regresiva.",
+                "fr": "Si tu peux assembler correctement la <color=Highlight>batterie</color>, l'impulsion sera à nouveau émise.",
+                "ja": "<color=Highlight>バッテリー</color>を取り付けたら、パルスは再度発射される。",
+                "ko": "<color=Highlight>배터리</color>를 다시 설치하면 전자 펄스가 타이머를 시작할 거예요",
+                "th": "แค่ติดตั้ง<color=Highlight>เครื่องต้นกำลัง</color>ใหม่ แล้วคลื่นแม่เหล็กไฟฟ้าจะเริ่มนับถอยหลัง",
+                "zh-Hans": "只要再次把<color=Highlight>电池</color>安装好，电磁脉冲就会开始计时。",
+                "zh-Hant": "只要再次把<color=Highlight>電池</color>安裝好，電磁脈衝就會開始計時。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1294,
+                "name": {
+                  "zh-Hans": "天工基建科成员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Versuch dieses Mal, ein bisschen schneller zu sein. Ich zähle auf dich, Rover!",
+                "en": "Try to pick up the pace a notch this time. I'm counting on you, Rover!",
+                "es": "Intenta acelerar el ritmo un poco esta vez. Cuento contigo, ¡Errante!",
+                "fr": "Je suis sûr que tu peux le faire plus vite cette fois ! Je compte sur toi !",
+                "ja": "次はもっと速くなる！じゃ、頼んだぞ！",
+                "ko": "이번에는 좀 더 빨리해야 할 것 같아요. 방랑자만 믿을게요",
+                "th": "ครั้งนี้พยายามทำให้เร็วกว่าเดิมหน่อยล่ะ ฝากด้วยนะผู้พเนจร!",
+                "zh-Hans": "这次感觉要更快一点才行，全指望你了啊漂泊者！",
+                "zh-Hant": "這次感覺要更快一點才行，全指望你了啊漂泊者！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1294,
+                "name": {
+                  "zh-Hans": "天工基建科成员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002026,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型4",
+          "areaId": 8,
+          "position": {
+            "x": 18625,
+            "y": 162613,
+            "z": 401
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002027,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型5",
+          "areaId": 8,
+          "position": {
+            "x": 14665,
+            "y": 160390,
+            "z": 1077
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002046,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线2",
+          "areaId": 8,
+          "position": {
+            "x": 17971,
+            "y": 162232,
+            "z": 431
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002027,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型5",
+          "areaId": 8,
+          "position": {
+            "x": 14665,
+            "y": 160390,
+            "z": 1077
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002028,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型6",
+          "areaId": 8,
+          "position": {
+            "x": 11628,
+            "y": 164887,
+            "z": 2411
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002047,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线3",
+          "areaId": 8,
+          "position": {
+            "x": 14092,
+            "y": 161284,
+            "z": 1245
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002028,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型6",
+          "areaId": 8,
+          "position": {
+            "x": 11628,
+            "y": 164887,
+            "z": 2411
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002029,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型13",
+          "areaId": 8,
+          "position": {
+            "x": 8332,
+            "y": 163286,
+            "z": 2820
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002048,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线4",
+          "areaId": 8,
+          "position": {
+            "x": 11506,
+            "y": 164499,
+            "z": 2410
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002029,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型13",
+          "areaId": 8,
+          "position": {
+            "x": 8332,
+            "y": 163286,
+            "z": 2820
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002030,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型14",
+          "areaId": 8,
+          "position": {
+            "x": 7625,
+            "y": 166083,
+            "z": 3580
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002049,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线5",
+          "areaId": 8,
+          "position": {
+            "x": 8554,
+            "y": 163618,
+            "z": 2829
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 16,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002030,
+          "mapId": 8,
+          "blueprintType": "Gameplay050",
+          "name": "TsEntity_玩法_打击机关_状态型14",
+          "areaId": 8,
+          "position": {
+            "x": 7625,
+            "y": 166083,
+            "z": 3580
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002051,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端",
+          "areaId": 8,
+          "position": {
+            "x": 7229,
+            "y": 166249,
+            "z": 4478
+          },
+          "rotation": {
+            "x": -4,
+            "y": 12,
+            "z": -17
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002054,
+          "mapId": 8,
+          "blueprintType": "Gameplay312",
+          "name": "TsEntity_玩法_屏障连接线6",
+          "areaId": 8,
+          "position": {
+            "x": 7773,
+            "y": 165831,
+            "z": 3516
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 19,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

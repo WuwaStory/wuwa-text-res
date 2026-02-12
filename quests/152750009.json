@@ -1,0 +1,436 @@
+{
+  "id": 152750009,
+  "key": "1.3转盘活动第三天（连电路）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo-Kampagne: Navigation III",
+    "en": "Lollo Campaign: Navigation III",
+    "es": "Campaña Lollo: Navegación III",
+    "fr": "Projet Loulou : Navigation III",
+    "ja": "ブブナビ企画・三",
+    "ko": "무무 내비게이션 기획 · Ⅲ",
+    "th": "แคมเปญลอลโล่: การนำทาง 3",
+    "zh-Hans": "呜呜导航企划·三",
+    "zh-Hant": "嗚嗚導航企劃·三"
+  },
+  "desc": {
+    "de": "Am dritten Tag der Kampagne kam es zu einem unerwarteten Systemabsturz der Lollo-Navigationen. Maji benötigt deine Hilfe, um das Problem zu lösen.",
+    "en": "On Day 3 of the Campaign, Lollo Navigator suffered an unexpected system crash. Maji needs your help to resolve the issue.",
+    "es": "El día 3 de la Campaña, la Navegación Lollo sufrió un inesperado fallo del sistema. Maji necesita tu ayuda para resolver el problema.",
+    "fr": "Le Jour 3 du projets, le « Navigateur Loulou » a eu un crash système inattendu. Maji a besoin de votre aide pour résoudre le problème.",
+    "ja": "企画の三日目。ブブナビにシステムの不具合が起こったそうだ。馬計を助けよう！",
+    "ko": "셋째 날 기획에서 무무 내비게이션의 시스템이 다운되었습니다. 마현은 당신의 도움이 필요한 것 같습니다",
+    "th": "ในวันที่ 3 ของแคมเปญ ผู้นำทางลอลโล่พบปัญหาระบบล่มโดยไม่คาดคิด Maji ต้องการให้คุณช่วยแก้ไขปัญหานี้",
+    "zh-Hans": "第三天企划时，呜呜导航意外遭遇了系统崩溃，马计似乎需要你的帮忙。",
+    "zh-Hant": "第三天企劃時，嗚嗚導航意外遭遇了系統崩潰，馬計似乎需要你的幫忙。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Unterhalte dich mit Maji über die heutigen Geschäfte",
+        "en": "Chat with Maji about today's business",
+        "es": "Habla con Maji sobre los asuntos del día.",
+        "fr": "Discuter des affaires du jour avec Maji",
+        "ja": "馬計と今日の企画について話し合う",
+        "ko": "마현과 오늘의 기획 내용을 논의하기",
+        "th": "คุยเรื่องงานวันนี้กับ Maji",
+        "zh-Hans": "与马计讨论今日的企划内容",
+        "zh-Hant": "與馬計討論今日的企劃內容"
+      },
+      "entities": [
+        {
+          "entityId": 152750032,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理3",
+          "areaId": 301,
+          "position": {
+            "x": -42456,
+            "y": 89517,
+            "z": 432
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750060,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端",
+          "areaId": 301,
+          "position": {
+            "x": -42477,
+            "y": 89534,
+            "z": 319
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du kommst gerade rechtzeitig, {PlayerName}. Ich habe keine Zeit für weitschweifige Erklärungen. Schnell, verbinde dich mit dem Lollo-Navigator.",
+                "en": "You come just in time, {PlayerName}. No time to explain. Quick, I need you to connect to \"Lollo Navigator.\"",
+                "es": "Tan puntual como siempre, {PlayerName}. No hay tiempo para explicaciones. Rápido, necesito que te conectes a la «Navegación Lollo».",
+                "fr": "Tu arrives à point nommé, {PlayerName}. Je n'ai pas le temps de t'expliquer, mais connecte-toi au navigateur Loulou, vite.",
+                "ja": "{PlayerName}、ちょうど良い所に来てくれたね。説明は後だ、早く「ブブナビ」に接続してくれ。",
+                "ko": "{PlayerName}, 마침 잘 오셨어요. 지금 설명할 시간이 없어요. 어서 「무무 내비게이션」의 프로그램을 가동해 주세요",
+                "th": "คุณมาได้ทันเวลาพอดีเลย {PlayerName} ไม่มีเวลาอธิบายแล้ว เร็วเข้า ฉันอยากให้คุณเชื่อมต่อกับ \"ผู้นำทางลอลโล่\"",
+                "zh-Hans": "{PlayerName}，你来得正好，我来不及解释了，快帮忙接入「呜呜导航」的程序。",
+                "zh-Hant": "{PlayerName}，你來得正好，我來不及解釋了，快幫忙接入「嗚嗚導航」的程式。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In den letzten Tagen wurde er mit so vielen Daten bombardiert, dass das System überfordert ist, und jetzt sind einige der Daten korrumpiert.",
+                "en": "It's been crammed with too much data lately, and the system can't handle it, so some of the data's being corrupted.",
+                "es": "Se ha sobrecargado de datos estos últimos días y el sistema no puede manejarlos todos, por lo que algunos se están corrompiendo.",
+                "fr": "Depuis quelques jours, on reçoit trop de données. Le système n'arrive pas à les traiter et elles sont donc corrompues.",
+                "ja": "「ブブナビ」は最近、アクセス数が急増したせいで、データが混在してしまっているんだ。",
+                "ko": "최근 「무무 내비게이션」이 기록한 데이터가 너무 많아 시스템이 일시적으로 처리가 불가능한 탓에 데이터 오류가 발생했어요",
+                "th": "ช่วงนี้มีปริมาณข้อมูลแน่นเกินไป ระบบก็เลยจัดการไม่ไหว ส่งผลให้ข้อมูลบางส่วนเสียหาย",
+                "zh-Hans": "「呜呜导航」最近记录的数据太多，系统一时处理不过来，导致出现了数据混流。",
+                "zh-Hant": "「嗚嗚導航」最近記錄的數據太多，系統一時處理不過來，導致出現了數據混流。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn das System jetzt abstürzen und den Benutzern fehlerhafte Informationen schicken würde, dann säßen wir ziemlich in der Patsche.",
+                "en": "If this thing crashes and sends out wrong information to the users, we'd be in a world of trouble.",
+                "es": "Si esta cosa falla y envía información errónea a los usuarios, estaremos en un gran problema.",
+                "fr": "Si ça plante et que ça envoie des informations erronées aux utilisateurs, on est dans un pétrin pas possible.",
+                "ja": "アプリがクラッシュして、間違った情報を送ってしまったら大変なことになる。",
+                "ko": "프로그램 다운으로 사용자에게 잘못된 메시지가 전달되면 안 돼요",
+                "th": "ถ้าระบบเกิดล่มและส่งข้อมูลผิดๆ ไปให้กับผู้ใช้ งานนี้เราจะซวยกันหมดแน่ๆ",
+                "zh-Hans": "若是程序崩溃，为用户传递出错误的信息那可糟了。",
+                "zh-Hant": "若是程式崩潰，向用戶傳遞出錯誤的資訊那可糟了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Stelle das Programm wieder her",
+        "en": "Restore the program",
+        "es": "Restaura el programa.",
+        "fr": "Restaurez le programme",
+        "ja": "アプリを直す",
+        "ko": "프로그램 복구하기",
+        "th": "กู้คืนโปรแกรม",
+        "zh-Hans": "修复程序",
+        "zh-Hant": "修復程式"
+      },
+      "entities": [
+        {
+          "entityId": 152750032,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理3",
+          "areaId": 301,
+          "position": {
+            "x": -42456,
+            "y": 89517,
+            "z": 432
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750060,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端",
+          "areaId": 301,
+          "position": {
+            "x": -42477,
+            "y": 89534,
+            "z": 319
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 3,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Gott sei Dank, geschafft. Dank deiner Hilfe ist der Lollo-Navigator nicht abgestürzt.",
+                "en": "Phew. Close one. \"Lollo Navigator\" would've gone haywire if you hadn't given us a hand.",
+                "es": "Uf. Estuvo cerca. A la «Navegación Lollo» se le habría ido la pinza si no nos hubieras echado una mano.",
+                "fr": "Pfiou, on n'est pas passé loin de la catastrophe. Sans toi, le navigateur Loulou aurait pu perdre les pédales.",
+                "ja": "ふー。なんとか間に合ったね。お陰様でアプリはクラッシュすることなく、正常に動いてくれているよ。",
+                "ko": "후, 아슬아슬했네요. 다행히 방랑자님의 도움으로 인해 프로그램이 다운되지 않았어요",
+                "th": "ฟู่ว เกือบไปแล้ว \"ผู้นำทางลอลโล่\" คงจะทำงานรวนแน่ๆ ถ้าไม่ได้คุณช่วยไว้",
+                "zh-Hans": "呼，赶上了，多亏有你帮忙，才让程序没有崩溃。",
+                "zh-Hant": "呼，趕上了，多虧有你幫忙，才沒有讓程式崩潰。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses Problem hat uns aber ein Manko des Programms offengelegt ... Seine Speicherkapazität für Karteninformationen ist sehr begrenzt. Gut, dass wir das noch gemerkt haben, oder?",
+                "en": "This little crisis exposed a bit of a problem in the program... It's got a limited capacity for storing map information. Well, better late than never, right?",
+                "es": "Este pequeño trastorno ha expuesto un problemilla con el programa... y es que su capacidad de almacenar información de los mapas es bastante limitada. Bueno, más vale tarde que nunca, ¿no?",
+                "fr": "Cette petite crise m'a fait comprendre que la capacité de stockage du programme pour les données de carte n'est pas suffisante. Mieux vaut tard que jamais, pas vrai ?",
+                "ja": "だけど今回もなかなか貴重な経験になったよ。このアプリのデータ容量はまだ足りていないみたいだし。問題点は早期に見つけて解決しなきゃだしね。",
+                "ko": "하지만 이번 문제로... 지도에 담을 수 있는 정보가 제한되어 있다는 것을 알 수 있죠. 문제를 일찍 발견해서 일찍 해결할 수 있어서 다행이에요",
+                "th": "วิกฤตย่อมๆ ครั้งนี้ เผยให้เราเห็นถึงปัญหาเล็กน้อยภายในโปรแกรม... มันมีความจุที่จำกัดในการจัดเก็บข้อมูลแผนที่ แต่ก็นะ รู้ตัวช้าก็ยังดีกว่าไม่รู้เลย จริงไหม?",
+                "zh-Hans": "不过这次暴露的问题……也揭示了地图所承载的信息有限，早发现问题也能早解决。",
+                "zh-Hant": "不過這次暴露的問題……也揭示了地圖所承載的資訊有限，早發現問題也能早解決。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich hätte das nie ohne dich geschafft, {PlayerName}. Du kannst ruhig erstmal Feierabend machen. Ich muss mich hier noch ein bisschen ransetzen.",
+                "en": "Couldn't have done it without you, {PlayerName}. How about we call it a day? I need to go sort this thing out, pronto.",
+                "es": "{PlayerName}, no podríamos haberlo conseguido sin ti. ¿Qué tal si damos el día por zanjado? Tengo que pensar cómo arreglar esto, rápido.",
+                "fr": "Je ne m'en serais jamais sorti sans toi, {PlayerName}. Détends-toi, pas de boulot aujourd'hui. Il faut que je règle ce problème rapidement.",
+                "ja": "ありがとう、{PlayerName}。今からこの問題を何とかしなければならないから、今日のテストはこれで大丈夫だよ。",
+                "ko": "고마워요, {PlayerName}. 오늘은 기능 체험을 잠시 중단하죠. 제가 먼저 해결 방법을 생각해 볼게요",
+                "th": "งานนี้เราคงลำบากแย่ถ้าไม่มีคุณ {PlayerName} วันนี้เราพอเท่านี้ก่อนดีไหม? ฉันต้องไปจัดการทุกอย่างให้เรียบร้อยเดี๋ยวนี้แล้ว",
+                "zh-Hans": "谢谢你了，{PlayerName}，今天就暂停体验功能吧，我先去想想办法解决这个问题。",
+                "zh-Hant": "謝謝你了，{PlayerName}，今天就暫停體驗功能吧，我先去想想辦法解決這個問題。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

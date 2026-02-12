@@ -1,0 +1,117 @@
+{
+  "id": 189700004,
+  "key": "打劫时间点判断+短信发放",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "de": "Erhalte die WavesLine-Nachricht über die Angriffe der Ausgestoßenen.",
+    "en": "Receive the WavesLine message about the Outcast attacks",
+    "es": "Recibe el mensaje de WavesLine sobre los ataques de los Proscritos.",
+    "fr": "Recevoir le message concernant l'attaque des parias",
+    "ja": "流れ者の襲撃に関するメッセージを読む",
+    "ko": "유랑민 습격 관련 메시지 받기",
+    "th": "รับข้อความที่เกี่ยวกับการโจมตีของผู้ลี้ภัย",
+    "zh-Hans": "接收流民袭击相关飞讯",
+    "zh-Hant": "接收流民襲擊相關飛訊"
+  },
+  "desc": {
+    "de": "Die beteiligten Ausgestoßenen wurden an das Spacetrek-Kollektiv übergeben. Es könnten bald neue Details kommen …",
+    "en": "The Outcasts involved have been handed over to the Spacetrek Collective. There may be new updates soon…",
+    "es": "Los Proscritos implicados han sido entregados a la Unión Intergaláctica. Puede que haya nuevas actualizaciones pronto...",
+    "fr": "Les parias ont été transférés au Collectif Trek-spatial. Vous recevrez peut-être des nouvelles très bientôt...",
+    "ja": "事件に関与した流れ者はスペーストレック・コレクティブに移送された。近いうちに何らかの進展があるかもしれない。",
+    "ko": "사건 관련 유랑민은 이미 스페이스트렉 콜렉티브에 인계되었으며, 빠른 시일 내에 새로운 소식이 있을 수도 있다",
+    "th": "ผู้ลี้ภัยที่เกี่ยวข้องได้ถูกส่งมอบให้แก่สหพันธ์สเปซเทรคแล้ว อาจมีข่าวสารใหม่เพิ่มเติมในเร็วๆ นี้...",
+    "zh-Hans": "涉事流民已经移交给了深空联合，近期或许会有新的消息……",
+    "zh-Hant": "涉事流民已經移交給了深空聯合，近期或許會有新的消息……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 189700022,
+          "mapId": 906,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_地面用必要触发交互",
+          "areaId": 36105,
+          "position": {
+            "x": -93857,
+            "y": -763525,
+            "z": 18984
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Action",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "dnt/回到学院"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 8,
+      "type": "Action",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,4029 @@
+{
+  "id": 136000000,
+  "key": "观测基地任务线",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lagerüberfall",
+    "en": "Camp Raid",
+    "es": "Incursión al campamento",
+    "fr": "Le raid",
+    "ja": "拠点急襲",
+    "ko": "캠프 급습",
+    "th": "บุกทะลวงตีค่าย",
+    "zh-Hans": "营地突袭",
+    "zh-Hant": "營地突襲"
+  },
+  "desc": {
+    "de": "Vorreiter Cunren rekrutiert neue Mitglieder für einen Plan, das Beobachtungslager auf dem Gipfel in der Geisterschlucht zu überfallen. Es scheint jedoch, dass der Vorreiter nur mit der Aufklärung beauftragt wurde. Warum handelt Cunren auf eigene Faust?",
+    "en": "Outrider Cunren is recruiting new members for a plan to raid the observation camp at the mountaintop in the Gorges of Spirits. However, it seems that the Outriders were only assigned a reconnaissance mission. Why is Cunren acting on his own?",
+    "es": "El Outrider Cunren está reclutando nuevos miembros para un plan de incursión al campamento de observación en la cima de la montaña en el Valle de Almas. Sin embargo, parece que la misión asignada al Outrider es solo de reconocimiento. ¿Por qué Cunren está actuando por su cuenta?",
+    "fr": "Cunren, un éclaireur recrute de nouveaux membres pour un plan visant à attaquer le camp d'observation situé au sommet de la montagne, dans la Yunling-la-Vallée. Pourtant, il semble que les éclaireurs n'aient reçu qu'une mission de reconnaissance. Pourquoi Cunren agit-il de son propre chef ?",
+    "ja": "踏白の隊員・存刃が人を集め、雲陵谷の頂上にある拠点の襲撃を目論んでいるようだ。しかし、踏白小隊が受けた命令はあくまで偵察のはず、どうして彼は……",
+    "ko": "「야귀군 행정부대」 대원인 창현은 운릉 협곡 정상에 위치한 관측 캠프를 급습하기 위해 인원을 모집하고 있습니다. 하지만 받은 임무는 정찰일 뿐인데 창현은 왜 무단으로 행동하려는 걸까요?",
+    "th": "ฉุนเริ่นแห่งเอาต์ไรเดอร์กำลังรับสมัครสมาชิกใหม่เพื่อเข้าร่วมแผนการบุกค่ายสังเกตการณ์บนยอดเขาในหุบเขาแห่งวิญญาณ ทว่าดูเหมือนพวกเอาต์ไรเดอร์ได้รับมอบหมายให้ทำภารกิจลาดตระเวนเท่านั้น ทำไมฉุนเริ่นถึงทำอะไรโดยพลการกันนะ",
+    "zh-Hans": "踏白队员存刃正在招纳人手，计划突袭云陵谷山顶的观测营地。但是踏白小队接到的任务似乎只是侦察而已，他为什么要擅自行动呢？",
+    "zh-Hant": "踏白隊員存刃正在招納人手，計劃突襲雲陵谷山頂的觀測營地。但是踏白小隊接到的任務似乎只是偵察而已，他為什麼要擅自行動呢？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum provisorischen Lager auf halber Höhe des Berges",
+        "en": "Head to the makeshift camp halfway up the mountain",
+        "es": "Dirígete al campamento temporal a mitad de la montaña",
+        "fr": "Aller au campement temporaire sur le flanc de la montagne",
+        "ja": "山の中腹にある臨時拠点へ向う",
+        "ko": "산허리에 위치한 임시 캠프로 이동",
+        "th": "มุ่งหน้าไปยังค่ายชั่วคราวกลางภูเขา",
+        "zh-Hans": "前往山腰的临时营地",
+        "zh-Hant": "前往山腰的臨時營地"
+      },
+      "entities": [
+        {
+          "entityId": 136001678,
+          "mapId": 8,
+          "blueprintType": "NPC302",
+          "name": "TsEntity_157_037_夜归带帽-佩剑",
+          "areaId": 204,
+          "position": {
+            "x": -126113,
+            "y": 47097,
+            "z": 13426
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -179
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001679,
+          "mapId": 8,
+          "blueprintType": "NPC223",
+          "name": "TsEntity_170_013_夜归女-携枪4",
+          "areaId": 204,
+          "position": {
+            "x": -126214,
+            "y": 47094,
+            "z": 13426
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 23,
+          "talks": [
+            {
+              "text": {
+                "de": "Das sind nur eine Menge Exilanten. Wir müssen keine Angst vor ihnen haben!",
+                "en": "A bunch of Exiles? What's there to fear?",
+                "es": "Solo es un montón de Exiliados. ¡No necesitamos tenerles miedo!",
+                "fr": "Ce ne sont que des Exilés. Nous n'avons pas besoin d'avoir peur d'eux !",
+                "ja": "何で俺たちが追放者相手にコソコソしなくちゃいけないんだ！",
+                "ko": "보잘것없는 추방자 무리인데, 우리가 굳이 숨어 있을 필요가 있을까?",
+                "th": "พวกผู้ถูกเนรเทศเหรอ? ทำไมต้องกลัวล่ะ?",
+                "zh-Hans": "区区一群流放者，哪用得着我们东躲西藏？",
+                "zh-Hant": "區區一群流放者，哪用得著我們東躲西藏？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir sind aufgefordert, zu ermitteln. Drängt nicht.",
+                "en": "We've been told to investigate. Don't rush in.",
+                "es": "Nos han pedido que investiguemos. No te precipites.",
+                "fr": "On nous a demandé d'enquêter. Ne vous précipitez pas.",
+                "ja": "戦えなんて命令、受けてないからよ。変な真似しないで。",
+                "ko": "우리가 받은 명령은 조사일 뿐이니 충동적으로 행동하지 마",
+                "th": "ภารกิจของพวกเราคือตรวจสอบ อย่าวู่วาม",
+                "zh-Hans": "我们收到的命令只是调查，你可不要冲动啊。",
+                "zh-Hant": "我們收到的命令只是調查，你可不要衝動啊。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich sage, wir stürmen einfach rein und schlagen sie alle.",
+                "en": "I say we storm in, and take 'em down. All of 'em.",
+                "es": "Yo digo que simplemente entremos a la fuerza y los derrotemos a todos.",
+                "fr": "Je dis qu'on devrait simplement foncer à l'intérieur et les battre tous.",
+                "ja": "いいや、ここは拠点にいる連中を一気に叩こう！",
+                "ko": "그냥 바로 뛰어들어 때려눕히는 게 어때?",
+                "th": "ฉันว่าเราบุกเข้าไปเลย จัดการพวกมันให้ราบคาบ",
+                "zh-Hans": "我们直接冲进去，打他们个片甲不留。",
+                "zh-Hant": "我們直接沖進去，打他們個片甲不留。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du bist nicht mehr ganz dicht! Ich komme nicht mit dir!",
+                "en": "H-Have you lost your mind? I'm not going with you!",
+                "es": "¡Estás fuera de tus cabales! ¡No voy a ir contigo!",
+                "fr": "A-Avez-vous perdu la tête ? Je ne viens pas avec vous !",
+                "ja": "あんたね……血迷った？やりたいなら勝手にして。私は遠慮する。",
+                "ko": "정신 나갔어? 갈 거면 너 혼자 가, 나까지 끌어들이지 말라고!",
+                "th": "บะ-บ้าไปแล้วรึไง ฉันไม่ไปกับคุณหรอกนะ",
+                "zh-Hans": "你......你疯了吧！要去你自己去，可别扯上我！",
+                "zh-Hant": "你…… 你瘋了吧！ 要去你自己去，可別扯上我！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Lingdi nach der Situation",
+        "en": "Ask Lingdi about the situation",
+        "es": "Pregunta a Lingdi sobre la situación",
+        "fr": "Parler à Lingdi pour obtenir des informations",
+        "ja": "聆笛に状況を聞く",
+        "ko": "민지에게 상황 물어보기",
+        "th": "ถามหลิงตี๋เกี่ยวกับสถานการณ์",
+        "zh-Hans": "向聆笛询问情况",
+        "zh-Hant": "向聆笛詢問情況"
+      },
+      "entities": [
+        {
+          "entityId": 136001926,
+          "mapId": 8,
+          "blueprintType": "NPC249",
+          "name": "TsEntity_170_014_夜归女-无携带_戴帽",
+          "areaId": 204,
+          "position": {
+            "x": -131596,
+            "y": 43028,
+            "z": 15462
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002129,
+          "mapId": 8,
+          "blueprintType": "NPC223",
+          "name": "TsEntity_170_013_夜归女-携枪5",
+          "areaId": 204,
+          "position": {
+            "x": -126732,
+            "y": 47098,
+            "z": 13426
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 176
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002130,
+          "mapId": 8,
+          "blueprintType": "NPC230",
+          "name": "TsEntity_180_002_皇龙男1",
+          "areaId": 204,
+          "position": {
+            "x": -131532,
+            "y": 42912,
+            "z": 15464
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 86
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ah, du bist hier! Storing the blade hat bereits Leute angeführt, um das Lager anzugreifen, aber...",
+                "en": "Ah, you're here! Cunren has already led an attack on the camp, but...",
+                "es": "Ah, ¡estás aquí! Guardar la espada ya ha llevado a la gente a atacar el campamento, pero...",
+                "fr": "Ah, tu es là ! Cunren a déjà mené l'attaque, mais...",
+                "ja": "あ、ちょうどいいところに！存刃が他の人と一緒に拠点へ攻め込んだんだけど……",
+                "ko": "아, 오셨군요. 창현이 이미 사람을 데리고 진영으로 쳐들어갔어요. 그런데...",
+                "th": "เอ้า คุณมาพอดี! Cunren นำการบุกโจมตีค่ายไปแล้ว แต่...",
+                "zh-Hans": "啊，你来了！存刃他已经带人攻进营地里了，只是……",
+                "zh-Hant": "啊，你來了！存刃他已經帶人攻進營地裡了，只是……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002129,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪5",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126732,
+                    "y": 47098,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 176
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nur was?",
+                    "en": "Just what?",
+                    "es": "¿Cómo que solo un rasguño?",
+                    "fr": "Mais quoi ?",
+                    "ja": "けど……？",
+                    "ko": "그런데요?",
+                    "th": "แต่อะไร?",
+                    "zh-Hans": "只是什么？",
+                    "zh-Hant": "只是什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sie scheinen in den internen Konflikt der Exilanten verwickelt zu sein, und es gibt schon eine Weile keine Nachrichten mehr von ihnen.",
+                "en": "Looks like they got tangled up in the Exiles' infighting. Haven't heard from them in a while.",
+                "es": "Parece que se han visto envueltos en el conflicto interno de los Exiliados, y no hemos tenido noticias de ellos en un tiempo.",
+                "fr": "Ils semblent pris dans le conflit interne des Exilés. On n'a pas de nouvelles pour un moment...",
+                "ja": "追放者の内部抗争に巻き込まれたせいか、連絡が途絶えちゃった……",
+                "ko": "추방자 내의 패거리 싸움에 휘말린 듯 한동안 소식이 없어요",
+                "th": "ดูเหมือนพวกเขาไปพัวพันกับเรื่องภายในของพวกผู้ถูกเนรเทศ ไม่ได้ข่าวจากพวกเขามาสักพักแล้ว",
+                "zh-Hans": "他们好像被卷进了流放者的帮派内斗里，已经好一会儿没有消息传回来了。",
+                "zh-Hant": "他們好像被捲進了流放者的幫派內鬥裡，已經好一會兒沒有消息傳回來了。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002129,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪5",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126732,
+                    "y": 47098,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 176
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Kapitän ist noch nicht zurückgekommen, ich weiß wirklich nicht, was ich tun soll...",
+                "en": "The captain's still not back... I've got no idea what to do.",
+                "es": "El capitán aún no ha regresado, realmente no sé qué hacer...",
+                "fr": "Le capitaine n'est pas encore revenu, je ne sais vraiment pas quoi faire...",
+                "ja": "今は隊長も不在だから……どうしたらいいかわからなくて……",
+                "ko": "지금 대장님께서 자리에 없으셔서 어떻게 해야 할지 모르겠어요...",
+                "th": "หัวหน้ายังไม่กลับมา... ฉันไม่รู้จะทำอย่างไรดี",
+                "zh-Hans": "现在队长还没回来，我真不知道怎么办才好……",
+                "zh-Hant": "現在隊長還沒回來，我真不知道怎麼辦才好……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002129,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪5",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126732,
+                    "y": 47098,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 176
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 7,
+              "options": [
+                {
+                  "text": {
+                    "de": "Sieht so aus, als wäre es an der Zeit, dass ich auf die Bühne komme.",
+                    "en": "It's time for me to step up.",
+                    "es": "Parece que es mi turno de subir al escenario.",
+                    "fr": "Bon, je vais vous aider.",
+                    "ja": "{Male=俺の出番だ。;Female=私の出番ね。}",
+                    "ko": "제가 나설 차례인 것 같네요",
+                    "th": "ถึงเวลาที่ฉันต้องออกโรงแล้ว",
+                    "zh-Hans": "看来该我出场了。",
+                    "zh-Hant": "看來該我出場了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Willst du hinaufgehen und ihnen helfen? Aber diese Exilanten ...",
+                "en": "You gonna head up there to help? But those Exiles...",
+                "es": "¿Quieres subir y ayudarles? Pero esos Exiliados...",
+                "fr": "Vraiment ? Mais ces Exilés...",
+                "ja": "行くの？でも追放者たちが……",
+                "ko": "가서 그들을 도울 건가요? 그렇지만 캠프 안의 추방자들이...",
+                "th": "คุณจะตามไปช่วยที่นั่นเหรอ? แต่พวกผู้ถูกเนรเทศ...",
+                "zh-Hans": "你要上去帮他们吗？可是那些流放者……",
+                "zh-Hant": "你要上去幫他們嗎？可是那些流放者……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002129,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪5",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126732,
+                    "y": 47098,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 176
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Keine Sorge, ich bin stark.",
+                    "en": "Don't worry, I'm strong.",
+                    "es": "No te preocupes, soy fuerte.",
+                    "fr": "Ne t'inquiète pas. Comptez sur moi.",
+                    "ja": "{Male=俺、強いから。;Female=私、強いから。}",
+                    "ko": "걱정 마세요. 저는 강해요",
+                    "th": "ไม่ต้องห่วง ฉันแข็งแกร่ง",
+                    "zh-Hans": "放心吧，我很强的。",
+                    "zh-Hant": "放心吧，我很強的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hmm... du scheinst zuverlässiger zu sein als Storing Blade, ich glaube an dich.",
+                "en": "Hmm... you do seem more reliable than Cunren, I believe in you.",
+                "es": "Hmm... pareces más confiable que Storing Blade, confío en ti.",
+                "fr": "Hmm... ouais. Tu sembles plus fiable que Cunren. Je compte sur toi.",
+                "ja": "うん……存刃よりは強そう。信じるよ。",
+                "ko": "음... 확실히 창현보다는 훨씬 더 믿음직해 보이네요. 전 당신을 믿어요",
+                "th": "อืม... คุณดูน่าเชื่อถือมากกว่า Cunren ฉันเชื่อในตัวคุณ",
+                "zh-Hans": "嗯……你看起来的确比存刃靠谱多了，我相信你。",
+                "zh-Hant": "嗯……你看起來的確比存刃靠譜多了，我相信你。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002129,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪5",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126732,
+                    "y": 47098,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 176
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Geh den Weg hinauf und du wirst das Lager sehen. Es sollten andere Teammitglieder vor dem Lagertor sein, sie werden dir mehr Informationen geben.",
+                "en": "Follow the path and you'll hit the camp. Some of our crew should be out front. You ask them for the details.",
+                "es": "Sube el camino y verás el campamento. Debería haber otros miembros del equipo fuera de la puerta del campamento, ellos te darán más información.",
+                "fr": "Suivez le chemin et tu trouves le camp. Il devrait y avoir d'autres membres de l'équipe à l'extérieur de la porte, ils vous donneront plus d'informations.",
+                "ja": "あの小道を登っていくと、拠点が見える。詳しい説明はそこにいる他の隊員に聞いて。",
+                "ko": "오솔길을 따라 올라가면 캠프가 나오고 캠프 문밖에 다른 소대원들이 있을 거예요. 그들이 더 많은 정보를 알려줄 거예요",
+                "th": "ไปตามเส้นทางจะเจอค่าย สมาชิกบางคนในหน่วยคงคลุกวงในแล้ว คุณสอบถามรายละเอียดจากพวกเขาก็แล้วกัน",
+                "zh-Hans": "沿着小路向上走就能看到营地，营地门外应该还有其他的小队成员，他们会告诉你更多信息。",
+                "zh-Hant": "沿著小路向上走就能看到營地，營地門外應該還有其他的小隊成員，他們會告訴你更多資訊。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002129,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪5",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126732,
+                    "y": 47098,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 176
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn der Kapitän zurückkommt, werde ich mit ihm zu dir kommen und dich unterstützen! Bitte, ich zähle auf dich!",
+                "en": "When the captain's back, I'll come with him to back you up. I'm counting on you.",
+                "es": "¡Cuando el capitán regrese, vendré a apoyarte con él! Por favor, ¡cuento contigo!",
+                "fr": "Quand le capitaine reviendra, je te retrouve avec lui ! S'il te plaît !",
+                "ja": "隊長が戻ったら彼と増援するから、お願い！",
+                "ko": "대장이 돌아오면, 제가 대장과 함께 지원을 하러 갈게요. 부탁드려요",
+                "th": "เมื่อหัวหน้ากลับมา ฉันกับเขาจะตามไปช่วยคุณ ฝากด้วยนะ",
+                "zh-Hans": "等队长回来了，我就和他一起来支援你！拜托你了！",
+                "zh-Hant": "等隊長回來了，我就和他一起來支援你！拜託你了！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002129,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪5",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126732,
+                    "y": 47098,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 176
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage die beiden Teammitglieder, was passiert ist",
+        "en": "Inquire the team members about what happened",
+        "es": "Pregunta a los dos miembros del equipo sobre lo que sucedió",
+        "fr": "Parler aux deux membres de l'équipe pour comprendre la situation",
+        "ja": "隊員に話を聞く",
+        "ko": "두 대원에게 무슨 일이 일어났는지 물어보기",
+        "th": "สอบถามสมาชิกในทีมว่าเกิดอะไรขึ้น",
+        "zh-Hans": "向两位队员了解发生了什么",
+        "zh-Hant": "向兩位隊員了解發生了什麼"
+      },
+      "entities": [
+        {
+          "entityId": 136001678,
+          "mapId": 8,
+          "blueprintType": "NPC302",
+          "name": "TsEntity_157_037_夜归带帽-佩剑",
+          "areaId": 204,
+          "position": {
+            "x": -126113,
+            "y": 47097,
+            "z": 13426
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -179
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001679,
+          "mapId": 8,
+          "blueprintType": "NPC223",
+          "name": "TsEntity_170_013_夜归女-携枪4",
+          "areaId": 204,
+          "position": {
+            "x": -126214,
+            "y": 47094,
+            "z": 13426
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Dieses kleine Lager, mit nur ein paar Teammitgliedern, wir können es heute einnehmen.",
+                "en": "We can take that camp down today with just a few soldiers.",
+                "es": "Este pequeño campamento, con solo unos pocos compañeros, podemos derribarlo hoy.",
+                "fr": "Ce camp de la taille d'une paume. Je le prends aujourd'hui avec deux ou trois de mes camarades.",
+                "ja": "こんな拠点、2、3人いれば簡単に落とせるって。",
+                "ko": "이런 손바닥만한 캠프는 내가 팀원 두세 명만 불러도 오늘 안에 정복할 수 있어",
+                "th": "ใช้ทหารเพียงไม่กี่คน เราก็ยึดค่ายนั้นได้ในวันนี้",
+                "zh-Hans": "这巴掌大个营地，我叫上两三个队员，今天就能拿下。",
+                "zh-Hant": "這巴掌大個營地，我叫上兩三個隊員，今天就能拿下。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wir sind nur zur Aufklärung hier...",
+                "en": "But we're just here for reconnaissance...",
+                "es": "Pero solo estamos aquí para el reconocimiento...",
+                "fr": "Mais nous sommes juste venus pour jeter un coup d'œil ...",
+                "ja": "でも、私たちが受けた指示は偵察だけだから……",
+                "ko": "우리는 그냥 정찰만 하러 온...",
+                "th": "แต่เรามาที่นี่เพื่อสอดแนมเท่านั้น...",
+                "zh-Hans": "可是我们只是来侦察的……",
+                "zh-Hant": "可是我們只是來偵察的……"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136001679,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪4",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126214,
+                    "y": 47094,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es sind nur eine Gruppe von Dieben drinnen, wovor hast du Angst? Sie haben dieses Lager besetzt, was die Beobachtung der Frontlinie durch die Mitternachtsranger ernsthaft beeinträchtigt hat!",
+                "en": "Just a pack of thieves inside. What's there to fear? They're getting in the way of our scouts' ability to watch the frontlines!",
+                "es": "Solo es un grupo de ladrones adentro, ¿de qué tienes miedo? Han ocupado este campamento, lo que ha afectado seriamente la observación de la situación de la línea de frente de los Rangers de Medianoche!",
+                "fr": "Ce ne sont que des voleurs, de quoi as-tu peur ? Ils occupent ce camp, ce qui nous empêche d'observer la situation à la frontière !",
+                "ja": "追放者ごときにビビってんの？それに、追放者の拠点があること自体、偵察の妨げじゃないか！",
+                "ko": "안에 있는 것들은 그냥 도둑 무리일 뿐인데, 도대체 뭘 그렇게 두려워하는거야? 저들이 이 캠프를 점령하는 바람에 야귀군의 전선 상황 관측에 심각한 영향을 미치고 있단 말이야",
+                "th": "ข้างในนั้นมีแค่หัวขโมยกลุ่มหนึ่ง มีอะไรต้องกลัว? พวกมันเป็นอุปสรรคต่อความสามารถของหน่วยสอดแนมในการเฝ้าระวังแนวหน้า!",
+                "zh-Hans": "里面不过是一群贼而已，你怕什么？他们霸占着这个营地，已经严重影响了夜归对前线情况的观测！",
+                "zh-Hant": "裡面不過是一群賊而已，你怕什麼？他們霸佔著這個營地，已經嚴重影響了夜歸對前線情況的觀測！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Kapitän hat gesagt, wir können nicht auf eigene Faust handeln, und diejenigen, die die Regeln verletzen, werden streng bestraft... Wenn er das herausfindet, kann ich es mir nicht einmal vorstellen.",
+                "en": "The captain's orders were clear. No unsanctioned ops. Violators won't get away scot free. If he finds out, I don't even want to imagine...",
+                "es": "El capitán dijo que no podemos actuar por nuestra cuenta, y aquellos que violen las reglas serán severamente castigados... Si se entera de esto, no puedo ni imaginarlo.",
+                "fr": "Le capitaine a dit que nous ne pouvons pas agir de sans sa commande ! La peine pour la désobéissance est lourde… je n'ose même pas y penser.",
+                "ja": "勝手なことしたら隊長に罰せられるって……それぐらいわかってよ……",
+                "ko": "대장이 마음대로 행동하지 말라고 한 말 못 들었어? 명령 위반자는 엄벌에 처할 거야. 만약 이 일을 대장이 알게 된다면, 생각하기도 싫어",
+                "th": "หัวหน้าสั่งไว้ชัดเจน ห้ามปฏิบัตินอกคำสั่ง ผู้ฝ่าฝืนไม่มีทางลอยนวล ถ้าเขารู้ขึ้นมาล่ะก็ ฉันไม่อยากคิดเลย...",
+                "zh-Hans": "队长说过，不可以擅自行事，违者重罚……这事要是让他知道了，我想都不敢想。",
+                "zh-Hant": "隊長說過，不可以擅自行事，違者重罰……這事要是讓他知道了，我想都不敢想。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136001679,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪4",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126214,
+                    "y": 47094,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wissen was? Er wird nur wissen, dass wir einen großen Sieg errungen haben und wird uns sehr loben.",
+                "en": "If he finds out what? He'll only hear of our victory and heap praise upon us.",
+                "es": "¿Sabes qué? Solo sabrá que hemos ganado una gran victoria y nos elogiará enormemente.",
+                "fr": "Quoi ? Il ne saura que nous sommes revenus victorieux. Il nous félicitera.",
+                "ja": "戦果を上げた戦士に、罰だなんてありえない！むしろ褒賞をくれるはずだ。",
+                "ko": "뭘 안다는 거야? 대장은 우리가 대승을 거두고 돌아왔다는 것만 알게 될 거야. 그리고 우리를 크게 표창할 거라고",
+                "th": "ถ้าเขารู้อะไร เขาจะได้ข่าวชัยชนะ แล้วก็ชมเชยพวกเรายกใหญ่ไง",
+                "zh-Hans": "知道什么？他只会知道我们大胜而归，对我们大加表彰。",
+                "zh-Hant": "知道什麼？他只會知道我們大勝而歸，對我們大加表彰。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 20,
+              "options": [
+                {
+                  "text": {
+                    "de": "Wovon redest du?",
+                    "en": "What are you talking about?",
+                    "es": "¿De qué estás hablando?",
+                    "fr": "De quoi parlez-vous ?",
+                    "ja": "なに話してるの？",
+                    "ko": "무슨 이야기를 하고 있나요?",
+                    "th": "คุณพูดเรื่องอะไรน่ะ",
+                    "zh-Hans": "你们在说什么？",
+                    "zh-Hant": "你們在說什麼？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Welche Auszeichnung?",
+                    "en": "What commendation?",
+                    "es": "¿Qué elogio?",
+                    "fr": "Félicitation ?",
+                    "ja": "褒賞？",
+                    "ko": "무슨 표창이요?",
+                    "th": "ชมเชยอะไรกัน?",
+                    "zh-Hans": "表彰什么？",
+                    "zh-Hant": "表彰什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wow! Die Exilanten sind hier, fangt mich nicht ...",
+                "en": "Ah! It's an Exile, p-please, leave me be...",
+                "es": "¡Vaya! Los exiliados están aquí, ¡no me atrapen...",
+                "fr": "Ouah ! Exilé ! Non, ne me capturez pas...",
+                "ja": "うわあ、追放者だ！お願いします、勘弁してください……",
+                "ko": "아씨, 추방자가 왔잖아. 아, 놔보라고...",
+                "th": "นั่น! ผู้ถูกเนรเทศ ดะ...ได้โปรด ปล่อยฉันไปเถอะ...",
+                "zh-Hans": "呜哇！流放者来了，别抓我……",
+                "zh-Hant": "嗚哇！流放者來了，別抓我……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136001679,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪4",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126214,
+                    "y": 47094,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Welche Exilanten ... schau dir mal {TA}s Kleidung an, sieht sie aus wie die von diesen Dieben?",
+                "en": "What Exile... Look at {Male=his;Female=her} attire, does that scream thief to you?",
+                "es": "¿Qué exiliados...? Echa un vistazo más de cerca a {Male=su;Female=su} vestimenta, ¿se parece a la de esos ladrones?",
+                "fr": "Regarde bien. Ressemble-t-{Male=il;Female=elle} à ces voleurs ? {Male=Exilé;Female=Exilée} ?",
+                "ja": "いや、どう見たって違うだろ……",
+                "ko": "무슨 추방자야... 잘 봐, {Male=그;Female=그녀}의 옷차림이 어디를 봐서 도둑 차림이라는거야",
+                "th": "ผู้ถูกเนรเทศที่ไหนกัน... ดูเสื้อผ้า{Male=เขา;Female=เธอ}สิ คุณว่าดูเหมือนโจรหรือไง?",
+                "zh-Hans": "什么流放者……你仔细看看{TA}这打扮哪里像那群盗贼了。",
+                "zh-Hant": "什麼流放者……你仔細看看{TA}這打扮哪裡像那群盜賊了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann, was bist du?",
+                "en": "Then... what are you?",
+                "es": "Entonces, ¿qué eres tú?",
+                "fr": "Alors, qui es-tu ?",
+                "ja": "じゃあ、あなたは何者？",
+                "ko": "그, 그럼 당신은 누구죠?",
+                "th": "แล้ว... คุณเป็นใคร?",
+                "zh-Hans": "那，那你是什么人？",
+                "zh-Hant": "那，那你是什麼人？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136001679,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪4",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126214,
+                    "y": 47094,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin nur zufällig vorbeigekommen.",
+                    "en": "I was just passing through.",
+                    "es": "Solo estaba de paso.",
+                    "fr": "Je passais par là.",
+                    "ja": "たまたま近くを通った。",
+                    "ko": "지나가던 길이에요",
+                    "th": "ฉันแค่ผ่านมาเท่านั้น",
+                    "zh-Hans": "我路过的。",
+                    "zh-Hant": "我路過的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin hier, um mich euch anzuschließen.",
+                    "en": "I'm here to join you.",
+                    "es": "Estoy aquí para unirme a vosotros.",
+                    "fr": "Je suis venu pour vous rejoindre.",
+                    "ja": "{Male=面白そう。俺も一緒にやりたい。;Female=面白そう。私も一緒にやりたい。}",
+                    "ko": "당신들과 합류하러 왔어요",
+                    "th": "ฉันมาร่วมทางกับคุณ",
+                    "zh-Hans": "我是来加入你们的。",
+                    "zh-Hant": "我是來加入你們的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nur auf der Durchreise? Es ist ziemlich selten, in diese Wildnis zu kommen... aber das ist eine gute Gelegenheit, ich brauche etwas Hilfe.",
+                "en": "Just passing through? Not many wander these hills... but it's good timing. I'm in need of some help.",
+                "es": "¿Solo de paso? Es bastante raro venir a este desierto... pero es un buen momento, necesito un poco de ayuda.",
+                "fr": "De passage ? Dans ces montagnes ? Mais merci. Bienvenu. J'ai besoin de toi.",
+                "ja": "たまたまって……こんな山奥に？でもちょうどよかった。今、人手が必要なんだ。",
+                "ko": "길을 지나가다? 이런 황량한 산과 들에서 돌아다니다니 신선하긴 하네요... 아, 그보다 마침 일손이 부족했는데, 잘 왔어요",
+                "th": "แค่ผ่านมาเหรอ? เนินเขาพวกนี้ไม่ค่อยมีใครผ่านนี่นา... แต่มาได้จังหวะพอดี ฉันกำลังต้องการความช่วยเหลือ",
+                "zh-Hans": "路过？跑到这荒山野岭来还真是新鲜……但来得正好，我正缺人手。",
+                "zh-Hant": "路過？跑到這荒山野嶺來還真是新鮮……但來得正好，我正缺人手。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gute Beobachtung, ich bin eine Person, die Großes leistet! Da du das gesagt hast, lass mich mich dir vorstellen.",
+                "en": "Sharp eyes, I like that. I'm a man of action. You seem like the capable sort, so let me introduce myself.",
+                "es": "Buena observación, ¡soy una persona que hace grandes cosas! Ya que lo mencionas, permíteme presentarme.",
+                "fr": "Génial, merci, tu es extraordinaire ! Puisque tu le dis, je vais expliquer.",
+                "ja": "お前、なかなか見る目があるじゃないか！ならば俺たちも自己紹介しよう。",
+                "ko": "눈치가 좋으신 걸 보니, 큰일을 하는 사람이군요. 이렇게까지 말씀하시니 우선 제 소개부터 드릴게요",
+                "th": "ตาแหลมดี ฉันชอบ ฉันคนจริงทำจริง คุณดูมีฝีมือนี่ ขอฉันแนะนำตัวเองนะ",
+                "zh-Hans": "好眼力，是干大事的人！既然你都这么说了，我就跟你介绍介绍。",
+                "zh-Hant": "好眼力，是幹大事的人！既然你都這麼說了，我就跟你介紹介紹。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir sind ein vorübergehendes Team namens Vorreiter-Trupp. Ich bin Storing the Blade, und sie ist Lingdi. Wir sind heute hier, um die Situation in diesem Lager zu untersuchen.",
+                "en": "We're a makeshift team, Outrider Squad. I'm Cunren, and this is Lingdi. We came to scout out the camp.",
+                "es": "Somos un equipo temporal llamado Escuadrón Outrider. Yo soy Storing the Blade, y ella es Lingdi. Hoy vinimos a investigar la situación de este campamento.",
+                "fr": "Nous sommes une équipe d'éclaireurs temporairement, je m'appelle Cunren, elle s'appelle Lingdi. Nous sommes venus pour effectuer une opération spéciale de reconnaissance.",
+                "ja": "俺たちは、拠点の偵察任務のために結成された踏白小隊。俺は存刃で、こいつは聆笛だ。",
+                "ko": "저희는 임시로 조직된 행정부대예요. 저는 창현이라 하고, 그녀는 민지라고 해요. 저희는 오늘 이 캠프의 상황을 정찰하러 왔어요",
+                "th": "พวกเราเป็นทีมเฉพาะกิจ หน่วยเอาต์ไรเดอร์ ฉันชื่อ Cunren และนี่ Lingdi พวกเรามาสอดแนมค่าย",
+                "zh-Hans": "我们是临时组成的踏白小队，我叫存刃，她叫聆笛，今天来侦察这个营地的情况。",
+                "zh-Hant": "我們是臨時組成的踏白小隊，我叫存刃，她叫聆笛，今天來偵察這個營地的情況。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich habe die Situation drinnen schon herausgefunden. Es ist nur eine Gruppe von Exilanten, also bin ich bereit, den Angriff zu starten!",
+                "en": "But I've already figured out the situation. It's just a group of Exiles, so I'm launching the first attack!",
+                "es": "¡Pero ya he descubierto la situación! Solo es un grupo de exiliados, ¡así que estoy listo para lanzar el ataque primero!",
+                "fr": "Mais j'ai déjà une idée ! Ce ne sont que des exilés, donc je prévois de lancer l'attaque !",
+                "ja": "で、偵察したところ、あの拠点には追放者しかいないことがわかった。先手を取れば簡単にやっつけられる。",
+                "ko": "하지만 캠프 안의 상황은 제가 이미 파악을 끝낸 상태에요. 안에는 추방자들뿐이에요. 그래서 제가 먼저 공격을 펼치려고 해요",
+                "th": "แต่ฉันประเมินสถานการณ์แล้ว มีแค่พวกผู้ถูกเนรเทศกลุ่มเดียว ฉันจะชิงโจมตีก่อน!",
+                "zh-Hans": "但里面的情况我已经摸清楚了，不过是一群流放者而已，所以我准备率先发起攻势！",
+                "zh-Hant": "但裡面的情況我已經摸清楚了，不過是一群流放者而已，所以我準備率先發起攻勢！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, was denkst du? Möchtest du dich uns anschließen und gemeinsam zu den Mitternachtsrangern beitragen?",
+                "en": "So, what's it gonna be? You in? Let's fight for the Midnight Rangers.",
+                "es": "Entonces, ¿qué opinas? ¿Quieres unirte a nosotros y contribuir a los Rangers de Medianoche?",
+                "fr": "Alors, tu veux nous rejoindre et contribuer aux Gardiens de minuit ?",
+                "ja": "どうだ？一緒に行動してくれないか？",
+                "ko": "저희와 합류해서 함께 야귀에 공헌하는 게 어때요?",
+                "th": "ว่าไงล่ะ จะเอาด้วยหรือเปล่า? มาสู้เพื่อหน่วยมิดไนต์เรนเจอร์ด้วยกัน",
+                "zh-Hans": "怎么样，要不要加入我们，一起为夜归做出贡献？",
+                "zh-Hant": "怎麼樣，要不要加入我們，一起為夜歸做出貢獻？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich will nicht vom Kapitän angeschrien werden, lass mich aus dem Spiel...",
+                "en": "I don't want the captain giving me a tongue lashing. Don't drag me into this...",
+                "es": "No quiero que el capitán me regañe, no me involucres...",
+                "fr": "Non. Je ne veux pas me faire gronder par le capitaine...",
+                "ja": "私は隊長に叱られたくないから、遠慮しとく……",
+                "ko": "난 대장님께 혼나고 싶지 않으니, 끌어들이지 마...",
+                "th": "ฉันไม่อยากโดนหัวหน้าตะคอก อย่าดึงฉันไปเอี่ยวเรื่องนี้...",
+                "zh-Hans": "我不想被队长骂，别扯上我……",
+                "zh-Hant": "我不想被隊長罵，別扯上我……"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136001679,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪4",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126214,
+                    "y": 47094,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Muss ich nicht erst euren Kapitän fragen?",
+                    "en": "Don't I need to ask your captain?",
+                    "es": "¿No necesito preguntarle a tu capitán?",
+                    "fr": "Ne devrais-tu pas demander à ton chef d'abord ?",
+                    "ja": "隊長に許可取らなくていいの？",
+                    "ko": "대장에게 안 물어봐도 되나요?",
+                    "th": "ฉันน่าจะต้องถามหัวหน้าคุณนะ",
+                    "zh-Hans": "不用问一下你的队长吗？",
+                    "zh-Hant": "不用問一下你的隊長嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich werde darüber nachdenken.",
+                    "en": "I'll think it over.",
+                    "es": "Lo pensaré.",
+                    "fr": "Je vais y réfléchir.",
+                    "ja": "もうちょっと考えさせて。",
+                    "ko": "조금 더 생각해 볼게요",
+                    "th": "ฉันจะคิดดู",
+                    "zh-Hans": "我再考虑一下。",
+                    "zh-Hant": "我再考慮一下。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Warum fragst du? Wir könnten dieses Lager im Voraus zurückerobern und ihm eine Überraschung bereiten, wäre das nicht besser?",
+                "en": "Why bother asking? We hit the camp early, give him a surprise. What's better than that?",
+                "es": "¿Por qué preguntas? Podemos recuperar este campamento de antemano y darle una sorpresa, ¿no es eso mejor?",
+                "fr": "Quoi ? Si nous reprenons ce camp en avance, ne serait-ce pas une bonne surprise pour lui ?",
+                "ja": "必要ないに決まってるだろう？それと、サプライズがあれば喜ぶに違いない。",
+                "ko": "뭘 물어보죠? 저희가 미리 캠프를 수복해서 대장에게 놀라움을 주는 것이 더 좋지 않을까요?",
+                "th": "จะถามทำไม? เรารีบตีค่ายให้แตก เซอร์ไพรส์หัวหน้า แบบนี้ไม่ดีตรงไหน?",
+                "zh-Hans": "问什么？我们提前把这个营地收复了，给他一个惊喜不是更好？",
+                "zh-Hant": "問什麼？我們提前把這個營地收復了，給他一個驚喜不是更好？"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Überlegst du es dir? Unentschlossenheit ist auf dem Schlachtfeld ein großes Tabu!",
+                "en": "Think it over? Hesitation is death on the battlefield!",
+                "es": "¿Lo considerarás? ¡La indecisión es un gran tabú en el campo de batalla!",
+                "fr": "Tu veux y réfléchir ? L'indécision est le pire pour la bataille !",
+                "ja": "考え？戦場で躊躇は禁物なんだぞ！",
+                "ko": "고민이요? 우유부단함은 전장에서 금기에요",
+                "th": "คิดดูงั้นเหรอ? ความลังเลนำมาซึ่งมรณะในสมรภูมิ!",
+                "zh-Hans": "考虑一下？优柔寡断是战场上的大忌！",
+                "zh-Hant": "考慮一下？優柔寡斷是戰場上的大忌！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vergiss es, ihr beiden seid so zögerlich, auf euch ist überhaupt nicht zu verlassen.",
+                "en": "Forget it. You two are too hesitant. I can't rely on you.",
+                "es": "Olvidenlo, ustedes dos están tan indecisos, no se puede confiar en ustedes en absoluto.",
+                "fr": "Oh, laisse tomber. Vous deux, vous hésitez, je ne peux pas compter sur vous.",
+                "ja": "まあいっか。どうせお前らは頼りにならないし。",
+                "ko": "아, 됐어요. 둘 다 망설이기만 하니 도저히 믿을 수가 없네요",
+                "th": "ช่างเถอะ คุณทั้งสองลังเลเกินไป ฉันพึ่งอะไรไม่ได้",
+                "zh-Hans": "唉算了算了，你们俩犹犹豫豫的，根本靠不住。",
+                "zh-Hant": "唉算了算了，你們倆猶猶豫豫的，根本靠不住。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich werde das Team zur geplanten Zeit zum Angriff auf das Lager führen, ihr wartet einfach auf meine triumphale Rückkehr.",
+                "en": "I'll lead the charge at the set time. You just sit tight and wait for my victory lap.",
+                "es": "Lideraré el equipo para atacar el campamento a la hora planeada, solo esperen mi regreso triunfal.",
+                "fr": "Je vais mener l'attaque à l'heure prévue, vous n'avez qu'à attendre mon retour triomphal.",
+                "ja": "俺は計画通りに行動するから、ここで俺の帰還を待ってりゃいいさ。",
+                "ko": "제가 계획한 시간에 사람들을 데리고 캠프로 쳐들어갈 테니, 두 사람은 제가 이기고 돌아오길 기다리세요",
+                "th": "ฉันจะนำการโจมตีตามเวลาที่กำหนด คุณแค่รอฟังข่าวชัยชนะของฉันเฉยๆ ก็พอ",
+                "zh-Hans": "我会按计划的时间带人攻进营地，你们就等着我凯旋吧。",
+                "zh-Hant": "我會按計畫的時間帶人攻進營地，你們就等著我凱旋吧。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sei nicht impulsiv...",
+                "en": "Don't be so impulsive...",
+                "es": "No seas impulsivo...",
+                "fr": "Ne sois pas impulsif...",
+                "ja": "もう、落ち着いてって……",
+                "ko": "충동적으로 행동하지 마...",
+                "th": "อย่าหุนหันนักเลย...",
+                "zh-Hans": "你不要冲动啊……",
+                "zh-Hant": "你不要衝動啊……"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136001679,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪4",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126214,
+                    "y": 47094,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut, na gut, schau dir das an, so feige. Du wirst es bereuen, heute nicht mit mir mitgekommen zu sein, wenn du siehst, dass ich ein offizielles Mitglied der Mitternachtsranger werde!",
+                "en": "Look at you, all scared. You'll regret not joining when you see me become a full-fledged Midnight Ranger.",
+                "es": "Vaya, vaya, mírate, tan cobarde. ¡Hoy te arrepentirás de no haberme acompañado cuando me veas convertirme en un miembro oficial de los Rangers de Medianoche!",
+                "fr": "D'accord, d'accord, regarde ton air effrayé. Quand je deviendrai un vrai membre des Gardiens de minuit, tu regretteras de ne pas m'avoir rejoint aujourd'hui !",
+                "ja": "へいへい、その顔、本当に見てられないな。俺が正規メンバーになったら、今日のことを後悔するがいい。",
+                "ko": "됐어, 지금 네가 겁먹은 꼴 좀 봐. 내가 야귀군의 정식 멤버가 된 것을 보고 오늘 나와 함께하지 않은걸 후회나 하지 마",
+                "th": "คุณนั่นแหละ กลัวไปหมด แล้วจะเสียใจที่ไม่เอาด้วย ตอนที่เห็นฉันยืดอกเป็นหน่วยมิดไนต์เรนเจอร์เต็มตัว",
+                "zh-Hans": "行了行了，瞧你那怂样。等你看我成了夜归的正式成员，就会后悔今天没加入我！",
+                "zh-Hant": "行了行了，瞧你那慫樣。等你看我成了夜歸的正式成員，就會後悔今天沒加入我！"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136001678,
+                  "mapId": 8,
+                  "blueprintType": "NPC302",
+                  "name": "TsEntity_157_037_夜归带帽-佩剑",
+                  "areaId": 204,
+                  "position": {
+                    "x": -126113,
+                    "y": 47097,
+                    "z": 13426
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -179
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Cunren",
+        "en": "Talk to Cunren",
+        "es": "Habla con Cunren",
+        "fr": "Parler à Cunren",
+        "ja": "存刃と会話する",
+        "ko": "창현과 대화",
+        "th": "คุยกับฉุนเริ่น",
+        "zh-Hans": "与存刃对话",
+        "zh-Hant": "與存刃對話"
+      },
+      "entities": [
+        {
+          "entityId": 136001694,
+          "mapId": 8,
+          "blueprintType": "Treasure009",
+          "name": "TsEntity_豪华物资箱_玩法刷新2",
+          "areaId": 204,
+          "position": {
+            "x": -131528,
+            "y": 51404,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001695,
+          "mapId": 8,
+          "blueprintType": "NPC246",
+          "name": "TsEntity_170_011_夜归女-佩剑_戴帽",
+          "areaId": 204,
+          "position": {
+            "x": -131946,
+            "y": 51234,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -57
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001696,
+          "mapId": 8,
+          "blueprintType": "NPC222",
+          "name": "TsEntity_170_012_夜归女-医疗2",
+          "areaId": 204,
+          "position": {
+            "x": -131019,
+            "y": 49737,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001697,
+          "mapId": 8,
+          "blueprintType": "NPC221",
+          "name": "TsEntity_170_011_夜归女-佩剑3",
+          "areaId": 204,
+          "position": {
+            "x": -131462,
+            "y": 51675,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001700,
+          "mapId": 8,
+          "blueprintType": "Gameplay027",
+          "name": "TsEntity_玩法_通用_机关门_网格_单面",
+          "areaId": 204,
+          "position": {
+            "x": -136695,
+            "y": 50646,
+            "z": 16954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001702,
+          "mapId": 8,
+          "blueprintType": "Gameplay014",
+          "name": "TsEntity_玩法_控物_电池",
+          "areaId": 204,
+          "position": {
+            "x": -136789,
+            "y": 50275,
+            "z": 16967
+          },
+          "rotation": {
+            "x": -90,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001706,
+          "mapId": 8,
+          "blueprintType": "Gameplay143",
+          "name": "TsEntity_玩法_控物_电池高压底座",
+          "areaId": 204,
+          "position": {
+            "x": -136329,
+            "y": 50312,
+            "z": 17160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001750,
+          "mapId": 8,
+          "blueprintType": "Gameplay027",
+          "name": "TsEntity_玩法_通用_机关门_网格_单面2",
+          "areaId": 204,
+          "position": {
+            "x": -130010,
+            "y": 52800,
+            "z": 16730
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001751,
+          "mapId": 8,
+          "blueprintType": "Gameplay015",
+          "name": "TsEntity_玩法_控物_电池低压底座",
+          "areaId": 204,
+          "position": {
+            "x": -130305,
+            "y": 53188,
+            "z": 16937
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001802,
+          "mapId": 8,
+          "blueprintType": "Gameplay014",
+          "name": "TsEntity_玩法_控物_电池2",
+          "areaId": 204,
+          "position": {
+            "x": -130857,
+            "y": 52758,
+            "z": 16742
+          },
+          "rotation": {
+            "x": -90,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001813,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器3",
+          "areaId": 204,
+          "position": {
+            "x": -132409,
+            "y": 49918,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001899,
+          "mapId": 8,
+          "blueprintType": "NPC224",
+          "name": "TsEntity_170_014_夜归女-无携带2",
+          "areaId": 204,
+          "position": {
+            "x": -132344,
+            "y": 47206,
+            "z": 16114
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -176
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001926,
+          "mapId": 8,
+          "blueprintType": "NPC249",
+          "name": "TsEntity_170_014_夜归女-无携带_戴帽",
+          "areaId": 204,
+          "position": {
+            "x": -131596,
+            "y": 43028,
+            "z": 15462
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002129,
+          "mapId": 8,
+          "blueprintType": "NPC223",
+          "name": "TsEntity_170_013_夜归女-携枪5",
+          "areaId": 204,
+          "position": {
+            "x": -126732,
+            "y": 47098,
+            "z": 13426
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 176
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002130,
+          "mapId": 8,
+          "blueprintType": "NPC230",
+          "name": "TsEntity_180_002_皇龙男1",
+          "areaId": 204,
+          "position": {
+            "x": -131532,
+            "y": 42912,
+            "z": 15464
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 86
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002133,
+          "mapId": 8,
+          "blueprintType": "NPC223",
+          "name": "TsEntity_170_013_夜归女-携枪6",
+          "areaId": 204,
+          "position": {
+            "x": -131098,
+            "y": 51098,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002871,
+          "mapId": 8,
+          "blueprintType": "NPC305",
+          "name": "TsEntity_157_040_夜归带帽-无携带",
+          "areaId": 204,
+          "position": {
+            "x": -131209,
+            "y": 51203,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -107
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136700010,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器13",
+          "areaId": 204,
+          "position": {
+            "x": -130639,
+            "y": 52559,
+            "z": 16736
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Endlich gewonnen. Diese schlauen Exilanten ...",
+                "en": "It's finally finished. These cunning Exiles...",
+                "es": "Finalmente ganamos. Estos exiliados astutos...",
+                "fr": "Nous avons enfin gagné. Ces exilés rusés...",
+                "ja": "ふー、やっと勝てた。あのずる賢い連中め……",
+                "ko": "드디어 이겼네. 이 교활한 추방자들...",
+                "th": "ในที่สุดก็ยุติลง พวกผู้ถูกเนรเทศเจ้าเล่ห์...",
+                "zh-Hans": "终于赢下来了。这群狡猾的流放者……",
+                "zh-Hant": "終於贏下來了。這群狡猾的流放者……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Puh, zum Glück ist nichts schief gelaufen.",
+                "en": "Phew... guess we dodged a bullet there.",
+                "es": "Uf, afortunadamente nada salió mal.",
+                "fr": "Ouf, heureusement, rien de grave...",
+                "ja": "はあ、大事に至らなくてよかったよ……",
+                "ko": "휴, 별문제 없이 잘 끝나서 다행이야",
+                "th": "เฮ้อ... พวกเรารอดดงกระสุนมาได้",
+                "zh-Hans": "呼，还好没出什么差池。",
+                "zh-Hant": "呼，還好沒出什麼差池。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gibt es irgendwelche Beute?",
+                "en": "Got any spoils?",
+                "es": "¿Hay despojos?",
+                "fr": "Des butins ?",
+                "ja": "戦利品はある？",
+                "ko": "전리품이라도 있나요?",
+                "th": "ได้อะไรติดมือบ้างไหม?",
+                "zh-Hans": "有没有什么战利品？",
+                "zh-Hant": "有沒有什麼戰利品？"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich gibt es das!",
+                "en": "Of course there is!",
+                "es": "¡Por supuesto que lo hay!",
+                "fr": "Bien sûr qu'il y en a !",
+                "ja": "もちろん！",
+                "ko": "물론이죠",
+                "th": "แน่นอนอยู่แล้ว!",
+                "zh-Hans": "当然有！",
+                "zh-Hant": "當然有！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke, du hast in dieser Schlacht eine entscheidende Rolle gespielt.",
+                "en": "Thank you, that fight might've ended differently without you.",
+                "es": "Gracias, jugaste un papel crucial en esta batalla.",
+                "fr": "Merci, tu as joué un rôle crucial dans cette bataille.",
+                "ja": "ありがとう。勝てたのはあなたのおかげよ。",
+                "ko": "감사해요, 이번 전투에서 당신의 공이 컸어요",
+                "th": "ขอบคุณ หากไม่มีคุณ การต่อสู้อาจไม่จบแบบนี้",
+                "zh-Hans": "谢谢你，这场战斗你功不可没。",
+                "zh-Hant": "謝謝你，這場戰鬥你功不可沒。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Solltest du mich nicht dafür loben, dass ich diesmal die Initiative ergriffen habe?",
+                "en": "Shouldn't you praise me for taking the initiative?",
+                "es": "¿No deberías elogiarme por tomar la iniciativa esta vez?",
+                "fr": "Pourquoi ne pas me féliciter d'avoir pris l'initiative ?",
+                "ja": "敵陣に切り込んだ一番槍の俺には？",
+                "ko": "먼저 출격한 나를 칭찬해야 하지 않을까?",
+                "th": "จะไม่ชมความคิดริเริ่มของฉันหน่อยเหรอ?",
+                "zh-Hans": "难道不应该夸夸率先出击的我吗？",
+                "zh-Hant": "難道不應該誇誇率先出擊的我嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn {TA} dich nicht gerettet hätte, wärst du jetzt vielleicht auch in einem Käfig eingesperrt.",
+                "en": "If it weren't for {Male=his;Female=her} help, you might also be locked up right now.",
+                "es": "Si no fuera por la ayuda de {Male=su;Female=su}, es posible que también estuvieras encerrado en una jaula ahora.",
+                "fr": "C'est grâce à {Male=lui;Female=elle}! Sinon, tu es aussi enfermé !",
+                "ja": "この人が助けてくれなかったら、あんたは今も檻の中だよ！",
+                "ko": "이번에 {Male=그;Female=그녀}가 도와주지 않았더라면, 넌 아직도 감옥에 갇혀 있었을지도 몰라",
+                "th": "ถ้าไม่ได้{Male=เขา;Female=เธอ}ช่วย ตอนนี้คุณอาจจะยังถูกพันธนาการอยู่ก็ได้",
+                "zh-Hans": "这次要不是{TA}出手相救，现在你也被关在笼子里都说不定。",
+                "zh-Hant": "這次要不是{TA}出手相救，現在你也被關在籠子裡都說不定。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Kapitän hat das bereits an Jinzhou gemeldet...",
+                "en": "The captain has already reported this to Jinzhou...",
+                "es": "El capitán ya ha informado de esto a Jinzhou...",
+                "fr": "Le capitaine l'a déjà signalé à Jinzhou...",
+                "ja": "それと、隊長がこの件を報告するために今州に帰ったよ。",
+                "ko": "대장님이 이미 금주로 돌아가서 이 일을 보고했어...",
+                "th": "หัวหน้ารายงานเรื่องนี้ไปที่จินโจวแล้ว...",
+                "zh-Hans": "队长已经回今州报告这件事了……",
+                "zh-Hant": "隊長已經回今州報告這件事了……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Meine herausragenden Kampffähigkeiten gemeldet?",
+                "en": "Reported my outstanding combat performance?",
+                "es": "¿Informar de mis destacadas habilidades marciales?",
+                "fr": "Signaler mes excellentes compétences ?",
+                "ja": "報告？何を報告するんだ？俺の武勇伝？",
+                "ko": "나의 공로도 보고되는 걸까?",
+                "th": "รายงานผลงานการต่อสู้เยี่ยมยอดของฉันใช่ไหม?",
+                "zh-Hans": "报告我的孔武有力？",
+                "zh-Hant": "報告我的孔武有力？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deine Nachlässigkeit gemeldet.",
+                "en": "Reported your negligence.",
+                "es": "Informar de tu negligencia.",
+                "fr": "Signalez ta négligence.",
+                "ja": "あんたの職務放棄を！",
+                "ko": "너의 직무유기를 보고한 거야",
+                "th": "รายงานการฝ่าฝืนคำสั่งของคุณ",
+                "zh-Hans": "是报告你的失职。",
+                "zh-Hant": "是報告你的失職。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was?! Ich dachte daran, nach dieser großartigen Leistung offiziell den Mitternachtsrangern beizutreten...",
+                "en": "What?! I thought doing this would be my ticket into the Midnight Rangers...",
+                "es": "¿¡Qué?! Estaba pensando en unirme oficialmente a los Rangers de Medianoche después de este gran logro...",
+                "fr": "Quoi ? ! Je pensais à devenir officiellement un gardien ...",
+                "ja": "え！？戦果を上げて、夜帰の正規の隊員になろうとしてたのに……",
+                "ko": "뭐?! 이번에 큰 공을 세워서 정식으로 야귀에 들어가야 하는데...",
+                "th": "อะไรกัน?! ฉันนึกว่าทำแบบนี้แล้วจะได้เข้าหน่วยมิดไนต์เรนเจอร์...",
+                "zh-Hans": "什么？！我还寻思着这次立下大功后正式加入夜归……",
+                "zh-Hant": "什麼？！我還尋思著這次立下大功後正式加入夜歸……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vergiss das offizielle Beitreten zu den Mitternachtsrangern, es ist sogar fraglich, ob du weiterhin im temporären Team der Vorreiter bleiben kannst.",
+                "en": "Forget a promotion into the Rangers. You'll be lucky to even stay in the Outriders.",
+                "es": "Olvida unirte oficialmente a los Rangers de Medianoche, incluso es una pregunta si puedes continuar en el equipo temporal de los Outrider.",
+                "fr": "Oubliez l'idée de rejoindre officiellement les Gardiens de minuit. La question se pose même de savoir si tu peux continuer à faire partie de l'équipe temporaire.",
+                "ja": "もう正規どころか、踏白にいられるかどうかさえ怪しい。",
+                "ko": "정식으로 야귀에 들어가는 건 고사하고, 행정부대 임시 소대에 계속 머무를 수 있는지 없는지가 문제겠지",
+                "th": "อย่าหวังเลื่อนขั้นเข้าหน่วยมิดไนต์เรนเจอร์เลย แค่ยังได้อยู่หน่วยเอาต์ไรเดอร์ต่อไปก็ถือว่าโชคดีแล้ว",
+                "zh-Hans": "别说正式加入夜归了，你能不能继续留在踏白的临时小队都成问题。",
+                "zh-Hant": "別說正式加入夜歸了，你能不能繼續留在踏白的臨時小隊都成問題。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das, das kann nicht sein! Lingdi, kannst du mir helfen, beim Kapitän zu intervenieren?",
+                "en": "This... this can't be! Lingdi, can you help me plead with the captain?",
+                "es": "¡Esto, esto no puede ser! Lingdi, ¿puedes ayudarme a suplicar al capitán?",
+                "fr": "Ce n'est pas possible ! Lingdi, s'il te plaît, aidez-moi à plaider !",
+                "ja": "そ、そんな！聆笛、隊長に頼んでくれる？お願いします！",
+                "ko": "아, 이건 아니잖아! 민지야, 대장님께 부탁 좀 해주면 안 될까?",
+                "th": "นี่... นี่มันอะไรกัน! Lingdi คุณช่วยขอร้องหัวหน้าให้ฉันได้ไหม?",
+                "zh-Hans": "这，这可不行！聆笛，你帮我跟队长求求情好不好？",
+                "zh-Hant": "這，這可不行！聆笛，你幫我跟隊長求求情好不好？"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du... Bevor du das nächste Mal auf eigene Faust handelst, denkst du bitte an die Konsequenzen, okay?",
+                "en": "You...The next time you rush in, think first, okay？",
+                "es": "Tú... Antes de actuar por tu cuenta la próxima vez, piensa en las consecuencias, ¿vale?",
+                "fr": "Toi... Avant d'agir seul la prochaine fois, pense aux conséquences, d'accord ?",
+                "ja": "あんたね……こうなることぐらいわかってたでしょ？",
+                "ko": "그러니까... 다음번에는 제멋대로 행동하기 전에, 결과를 생각해 보면 안 될까?",
+                "th": "นี่คุณ... ครั้งต่อไปที่จะบุกตะลุย คิดให้ดีก่อนนะ ตกลงไหม?",
+                "zh-Hans": "你……你下次擅自行动前，先想想后果行不行？",
+                "zh-Hant": "你……你下次擅自行動前，先想想後果行不行？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte, Lingdi, ich kann nicht nicht den Mitternachtsrangern beitreten. Die Zukunft der Mitternachtsranger kann nicht ohne mich sein!",
+                "en": "Please, Lingdi! I have to join the Midnight Rangers. The future of the Midnight Rangers can't be without me!",
+                "es": "Por favor, Lingdi, no puedo no unirme a los Rangers de Medianoche. ¡El futuro de los Rangers de Medianoche no puede estar sin mí!",
+                "fr": "Je t'en supplie, Lingdi, je ne peux pas ne pas rejoindre les Gardiens de minuit. On ne peut pas se passer de moi !",
+                "ja": "お願い！聆笛、夜帰に俺がいない未来が想像できないんだ！",
+                "ko": "제발, 민지야... 부탁이야. 난 야귀에 반드시 들어가야 해. 야귀의 미래에는 반드시 내가 있어야 한다니까!",
+                "th": "ได้โปรดเถอะ Lingdi! ฉันอยากเข้าหน่วยมิดไนต์เรนเจอร์ อนาคตของหน่วยต้องมีฉัน!",
+                "zh-Hans": "求你了聆笛，我不能不加入夜归，夜归的未来不能没有我啊！",
+                "zh-Hant": "求你了聆笛，我不能不加入夜歸，夜歸的未來不能沒有我啊！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In Ordnung, in Ordnung... Ich kann es versuchen, aber du kennst das Temperament des Kapitäns. Du musst dich auch daran erinnern, dich danach aufrichtig bei ihm zu entschuldigen.",
+                "en": "Fine, I'll give it a shot... but you know the captain. Afterward, you'd better make sure you apologize. On your hands and knees, if need be.",
+                "es": "Está bien, está bien... puedo intentarlo, pero ya conoces el temperamento del capitán. También tienes que recordar pedirle disculpas sinceramente después.",
+                "fr": "D'accord, d'accord… Je peux essayer, mais tu connais notre chef. Tu devras t'excuser sincèrement auprès de lui plus tard.",
+                "ja": "わかったよ……私もやれることはやってみるけど、相手はあの隊長だからな……ちゃんと自分でも謝ってよ。",
+                "ko": "아, 알겠어... 해 볼 수는 있지만 대장님의 성격은 너도 알고 있잖아. 나중에 찾아가서 진심으로 사과하는 거 잊지 말고!",
+                "th": "ก็ได้ ฉันจะลองดู... แต่คุณก็รู้จักหัวหน้าดี คุณควรขอโทษอย่างจริงใจ คุกเข่าหมอบคำนับไปเลยน่าจะดี",
+                "zh-Hans": "行了行了……我可以试试，但队长的脾气你也知道。你之后自己也要记得诚恳地跟他道歉。",
+                "zh-Hant": "行了行了……我可以試試，但隊長的脾氣你也知道。你之後自己也要記得誠懇地跟他道歉。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke, Lingdi! Wenn ich ein offizielles Mitglied werde, werde ich dich zu einem großen Essen einladen.",
+                "en": "Thank you, Lingdi! When I become an official member, I'll owe you a feast.",
+                "es": "¡Gracias, Lingdi! Cuando me convierta en un miembro oficial, te invitaré a una gran comida.",
+                "fr": "Merci Lingdi ! Quand je deviendrai un membre officiel, je t'inviterai à un grand repas.",
+                "ja": "あ、ありがとう、聆笛！、夜帰の正規の隊員になったら高級料理を奢るよ！",
+                "ko": "고마워, 민지. 내가 정식 대원이 되면 꼭 밥 한 끼 사줄게",
+                "th": "ขอบคุณ Lingdi! เมื่อฉันได้เป็นสมาชิกในหน่วย จะเลี้ยงคุณมื้อใหญ่",
+                "zh-Hans": "谢谢你聆笛！等我成为了正式队员，一定请你吃大餐。",
+                "zh-Hant": "謝謝你聆笛！等我成為了正式隊員，一定請你吃大餐。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass uns das später besprechen. Halte dich einfach für den Moment zurück...",
+                "en": "Let's talk about that later. For now, just keep your head down.",
+                "es": "Hablemos de eso más tarde. Solo mantente bajo por ahora...",
+                "fr": "On verra pour ça, pour le moment, reste tranquille...",
+                "ja": "そういうことは、なってから言えっての。これからはホントに気を付けてよね！",
+                "ko": "그런 얘긴 나중에 하고, 우선은 근신하면서 조용히 지내...",
+                "th": "เรื่องนั้นค่อยว่ากัน ตอนนี้ทำตัวให้ดีๆ ล่ะ",
+                "zh-Hans": "那种事再说吧，这段时间你消停点就行……",
+                "zh-Hant": "那種事再說吧，這段時間你消停點就行……"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Sorge, ich werde ohne die Befehle des Kapitäns nirgendwo hingehen.",
+                "en": "Relax, I won't move without the captain's word.",
+                "es": "No te preocupes, no iré a ningún lugar sin las órdenes del capitán.",
+                "fr": "Oui, oui. Je ne vais nulle part sans les ordres du chef.",
+                "ja": "安心しろ！これからは隊長の命令は絶対に守る！",
+                "ko": "걱정 마, 대장님 명령 없이는 절대 아무 데도 가지 않을 거야",
+                "th": "รู้น่า ฉันจะไม่ทำนอกคำสั่งหัวหน้า",
+                "zh-Hans": "放心吧，没有队长的命令我哪儿也不去。",
+                "zh-Hant": "放心吧，沒有隊長的命令我哪兒也不去。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1020,
+                "name": {
+                  "zh-Hans": "存刃"
+                },
+                "entity": {
+                  "entityId": 136002871,
+                  "mapId": 8,
+                  "blueprintType": "NPC305",
+                  "name": "TsEntity_157_040_夜归带帽-无携带",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131209,
+                    "y": 51203,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -107
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Entschuldigung für die Unannehmlichkeiten. Der Kapitän hat uns gebeten, diese Beute an dich zu übergeben, in der Hoffnung, dass es hilfreich sein wird.",
+                "en": "Sorry to bother you. The captain sent these spoils for you. Said he hopes they help.",
+                "es": "Lo siento por las molestias. El capitán nos pidió que te entregáramos estos despojos, con la esperanza de que te sean útiles.",
+                "fr": "Merci beaucoup, Nomade. Le chef nous a demandé de te donner ces trucs. Je souhaite qu'ils soient utiles pour toi.",
+                "ja": "お見苦しいところをお見せして申し訳ない。これは隊長からもらった報酬だよ。ぜひ受け取ってほしいな！",
+                "ko": "어휴, 입만 살아가지고... 아, 대장님께서 이 전리품들을 모두 드리라고 했어요. 별거 아니지만 도움이 되었으면 좋겠어요",
+                "th": "ขออภัยที่รบกวน รางวัลพวกนี้มาจากหัวหน้าให้คุณ เขาหวังว่าจะถูกใจนะ",
+                "zh-Hans": "让你看笑话了。队长让我们把这些战利品交给你，希望对你有所帮助。",
+                "zh-Hant": "讓你看笑話了。隊長讓我們把這些戰利品交給你，希望對你有所幫助。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1019,
+                "name": {
+                  "zh-Hans": "聆笛"
+                },
+                "entity": {
+                  "entityId": 136002133,
+                  "mapId": 8,
+                  "blueprintType": "NPC223",
+                  "name": "TsEntity_170_013_夜归女-携枪6",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131098,
+                    "y": 51098,
+                    "z": 16390
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Beobachtungslager",
+        "en": "Head to the observation camp",
+        "es": "Dirígete al campamento de observación",
+        "fr": "Aller au campement d'observation",
+        "ja": "拠点に向う",
+        "ko": "관측 캠프로 이동",
+        "th": "มุ่งหน้าไปยังค่ายสังเกตการณ์",
+        "zh-Hans": "前往观测营地",
+        "zh-Hant": "前往觀測營地"
+      },
+      "entities": [
+        {
+          "entityId": 136001698,
+          "mapId": 8,
+          "blueprintType": "NPC299",
+          "name": "TsEntity_157_034_夜归-医疗",
+          "areaId": 204,
+          "position": {
+            "x": -130030,
+            "y": 53068,
+            "z": 16728
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -85
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001700,
+          "mapId": 8,
+          "blueprintType": "Gameplay027",
+          "name": "TsEntity_玩法_通用_机关门_网格_单面",
+          "areaId": 204,
+          "position": {
+            "x": -136695,
+            "y": 50646,
+            "z": 16954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001702,
+          "mapId": 8,
+          "blueprintType": "Gameplay014",
+          "name": "TsEntity_玩法_控物_电池",
+          "areaId": 204,
+          "position": {
+            "x": -136789,
+            "y": 50275,
+            "z": 16967
+          },
+          "rotation": {
+            "x": -90,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001706,
+          "mapId": 8,
+          "blueprintType": "Gameplay143",
+          "name": "TsEntity_玩法_控物_电池高压底座",
+          "areaId": 204,
+          "position": {
+            "x": -136329,
+            "y": 50312,
+            "z": 17160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001750,
+          "mapId": 8,
+          "blueprintType": "Gameplay027",
+          "name": "TsEntity_玩法_通用_机关门_网格_单面2",
+          "areaId": 204,
+          "position": {
+            "x": -130010,
+            "y": 52800,
+            "z": 16730
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001751,
+          "mapId": 8,
+          "blueprintType": "Gameplay015",
+          "name": "TsEntity_玩法_控物_电池低压底座",
+          "areaId": 204,
+          "position": {
+            "x": -130305,
+            "y": 53188,
+            "z": 16937
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001802,
+          "mapId": 8,
+          "blueprintType": "Gameplay014",
+          "name": "TsEntity_玩法_控物_电池2",
+          "areaId": 204,
+          "position": {
+            "x": -130857,
+            "y": 52758,
+            "z": 16742
+          },
+          "rotation": {
+            "x": -90,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001813,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器3",
+          "areaId": 204,
+          "position": {
+            "x": -132409,
+            "y": 49918,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001814,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器",
+          "areaId": 204,
+          "position": {
+            "x": -132128,
+            "y": 49744,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001898,
+          "mapId": 8,
+          "blueprintType": "NPC224",
+          "name": "TsEntity_170_014_夜归女-无携带",
+          "areaId": 204,
+          "position": {
+            "x": -132366,
+            "y": 47215,
+            "z": 16114
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -157
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001900,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器8",
+          "areaId": 204,
+          "position": {
+            "x": -137039,
+            "y": 53448,
+            "z": 17478
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001926,
+          "mapId": 8,
+          "blueprintType": "NPC249",
+          "name": "TsEntity_170_014_夜归女-无携带_戴帽",
+          "areaId": 204,
+          "position": {
+            "x": -131596,
+            "y": 43028,
+            "z": 15462
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002131,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女",
+          "areaId": 204,
+          "position": {
+            "x": -136425,
+            "y": 50649,
+            "z": 16954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -178
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002135,
+          "mapId": 8,
+          "blueprintType": "Monster055",
+          "name": "TsEntity_精英_流放者首领",
+          "areaId": 204,
+          "position": {
+            "x": -130827,
+            "y": 50036,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002136,
+          "mapId": 8,
+          "blueprintType": "Monster027",
+          "name": "TsEntity_小怪_流放者女电锯",
+          "areaId": 204,
+          "position": {
+            "x": -132089,
+            "y": 49525,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -97
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002137,
+          "mapId": 8,
+          "blueprintType": "Monster020",
+          "name": "TsEntity_小怪_流放者男撬棍3",
+          "areaId": 204,
+          "position": {
+            "x": -131524,
+            "y": 51421,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 89
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002138,
+          "mapId": 8,
+          "blueprintType": "Monster024",
+          "name": "TsEntity_小怪_流放者男狙击枪",
+          "areaId": 204,
+          "position": {
+            "x": -132377,
+            "y": 50596,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002139,
+          "mapId": 8,
+          "blueprintType": "Monster025",
+          "name": "TsEntity_小怪_流放者女撬棍",
+          "areaId": 204,
+          "position": {
+            "x": -132279,
+            "y": 50613,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002480,
+          "mapId": 8,
+          "blueprintType": "Gameplay109",
+          "name": "TsEntity_特殊_组刷新器32",
+          "areaId": 204,
+          "position": {
+            "x": -132483,
+            "y": 50713,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002481,
+          "mapId": 8,
+          "blueprintType": "Monster026",
+          "name": "TsEntity_小怪_流放者女喷火器",
+          "areaId": 204,
+          "position": {
+            "x": -136095,
+            "y": 52875,
+            "z": 17304
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -166
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002482,
+          "mapId": 8,
+          "blueprintType": "Monster024",
+          "name": "TsEntity_小怪_流放者男狙击枪4",
+          "areaId": 204,
+          "position": {
+            "x": -136297,
+            "y": 52978,
+            "z": 17304
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002483,
+          "mapId": 8,
+          "blueprintType": "Monster027",
+          "name": "TsEntity_小怪_流放者女电锯8",
+          "areaId": 204,
+          "position": {
+            "x": -136314,
+            "y": 52777,
+            "z": 17304
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136801832,
+          "mapId": 8,
+          "blueprintType": "Gameplay299",
+          "name": "TsEntity_音频_多点声源",
+          "areaId": 204,
+          "position": {
+            "x": -131910,
+            "y": 50420,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 9,
+          "talks": [
+            {
+              "text": {},
+              "id": 0,
+              "options": [
+                {
+                  "text": {
+                    "de": "Geht es ihm gut?",
+                    "en": "Is he alright?",
+                    "es": "¿Está bien?",
+                    "fr": "Est-ce qu'il va bien ?",
+                    "ja": "彼の状況はどう？",
+                    "ko": "그는 괜찮나요?",
+                    "th": "เขาเป็นไรไหม?",
+                    "zh-Hans": "他还好吗？",
+                    "zh-Hant": "他還好嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist nur eine kleine Schramme, ich desinfiziere sie für ihn. Halte durch!",
+                "en": "It's just a scratch. I'm cleaning it up. Tough it out!",
+                "es": "Es solo un pequeño rasguño, estoy desinfectándolo. ¡Aguanta un poco!",
+                "fr": "Alors, ce n'est pas grave ! Je suis en train de la désinfecter. Tiens bon !",
+                "ja": "ただの掠り傷……ほら、消毒するから我慢しなさい！",
+                "ko": "약간의 찰과상일 뿐이에요. 지금 소독하고 있어요. 아, 좀 참아!",
+                "th": "แค่รอยขีดข่วนเอง ฉันกำลังล้างแผล อดทนหน่อย!",
+                "zh-Hans": "一点点擦伤而已，我正在给他消毒。你忍着点！",
+                "zh-Hant": "一點點擦傷而已，我正在給他消毒。你忍著點！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1022,
+                "name": {
+                  "zh-Hans": "后勤队员"
+                },
+                "entity": {
+                  "entityId": 136001926,
+                  "mapId": 8,
+                  "blueprintType": "NPC249",
+                  "name": "TsEntity_170_014_夜归女-无携带_戴帽",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131596,
+                    "y": 43028,
+                    "z": 15462
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -51
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Onkel... Tante! Bitte sammelt die Kräuter ab jetzt selbst... Es ist zu schmerzhaft, Onkel!!!",
+                "en": "Oh, Uncle... Auntie! Next time, pick your own herbs! AGH—!",
+                "es": "¡Tío... Tía! Por favor, de ahora en adelante recojan las hierbas ustedes mismos... ¡Es demasiado doloroso, Tío!!!",
+                "fr": "Oncle... Tante ! S'il vous plaît, faites la cueillette vous-mêmes à partir de maintenant... C'est trop douloureux !! Mamamia !",
+                "ja": "ぐっ……うあああ……！これから薬草集めはあんたら自分でやれよ！あイタタタ！",
+                "ko": "삼촌... 이모오오! 앞으로 약초 따는 일은 직접 하세요... 너무 아파요, 삼초온!!!",
+                "th": "โอย คุณน้า... คุณอา! ครั้งหน้า ไปเก็บสมุนไพรเองนะ! โอ๊ย!",
+                "zh-Hans": "叔啊……姨啊！以后采药这种事你们就自己来吧……太痛了，叔啊！！！",
+                "zh-Hant": "叔啊……姨啊！以後採藥這種事你們就自己來吧……太痛了，叔啊！！！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1021,
+                "name": {
+                  "zh-Hans": "受伤的路人"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 3,
+              "options": [
+                {
+                  "text": {
+                    "de": "Wurde er von den Exilanten angegriffen?",
+                    "en": "Was he attacked by the Exiles?",
+                    "es": "¿Fue atacado por los Exiliados?",
+                    "fr": "On est attaqué par les Exilés ?",
+                    "ja": "追放者の仕業？",
+                    "ko": "추방자에게 공격당한 건가요?",
+                    "th": "เขาถูกพวกผู้ถูกเนรเทศทำร้ายเหรอ?",
+                    "zh-Hans": "他被流放者攻击了吗？",
+                    "zh-Hant": "他被流放者攻擊了嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Er ist ein Bewohner des Dorfes am Fuße des Berges. Er hat sich nur an einem Ast gekratzt, während er Kräuter sammelte... Er hat einfach zu viel Angst vor Schmerzen.",
+                "en": "He's from the village at the foot of the mountain. Scratched himself on a branch while in the fields, that's all... The boy is dramatic.",
+                "es": "Él es un residente del pueblo al pie de la montaña. Solo se rasguñó con una rama mientras recogía hierbas... Simplemente le tiene demasiado miedo al dolor.",
+                "fr": "Il habite le village situé au pied de la montagne. Il vient de se faire égratigner par une branche alors qu'il cueillait des herbes... Il exagère.",
+                "ja": "この人は山の麓の村の住民で、薬草を集めてる時に、ちょっと枝が刺さったんだって。痛がり屋なだけなの。",
+                "ko": "이 분은 이 산 아랫마을의 주민인데, 약초를 캐다가 나뭇가지에 긁혔을 뿐이에요... 근데 이렇게 아프다고...",
+                "th": "เขามาจากหมู่บ้านที่เชิงเขา โดนกิ่งไม้ถากเอาตอนอยู่ในป่า แค่นั้นเอง... เด็กนี่โวยวายเกินเหตุ",
+                "zh-Hans": "他是这个山下村子的住民，采药时被树枝划伤了而已……他就是太怕疼了。",
+                "zh-Hant": "他是這個山下村子的住民，採藥時被樹枝劃傷了而已……他就是太怕疼了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1022,
+                "name": {
+                  "zh-Hans": "后勤队员"
+                },
+                "entity": {
+                  "entityId": 136001926,
+                  "mapId": 8,
+                  "blueprintType": "NPC249",
+                  "name": "TsEntity_170_014_夜归女-无携带_戴帽",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131596,
+                    "y": 43028,
+                    "z": 15462
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -51
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Lager ist in die Richtung, ich bin hier. Hör auf zu schreien, ich habe es schon verbunden!",
+                "en": "The camp's that way. I'll stay behind. Yes, yes, stop screaming! It's already bandaged!",
+                "es": "El campamento está en esa dirección, estoy aquí. ¡Deja de gritar, ya lo he vendado!",
+                "fr": "Le camp est dans cette direction. Tout va bien ici. Arrête de crier, j'ai déjà fait le pansement !",
+                "ja": "拠点はそっちにあるよ……もう、騒がさないでよ、処置は終わってるから！",
+                "ko": "캠프는 바로 저 방향이에요. 여기는 제가 처리할게요. 아, 소리 좀 그만 지르세요. 거의 다 됐어요",
+                "th": "ค่ายอยู่ทางนั้น ฉันจะรั้งอยู่ที่นี่ก่อน เออ เออ หยุดร้องเสียที! ปิดแผลให้แล้ว!",
+                "zh-Hans": "营地就在那个方向，这里有我就行。你别叫嚷了，已经包扎完了！",
+                "zh-Hant": "營地就在那個方向，這裡有我就行。你別叫嚷了，已經包紮完了！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1022,
+                "name": {
+                  "zh-Hans": "后勤队员"
+                },
+                "entity": {
+                  "entityId": 136001926,
+                  "mapId": 8,
+                  "blueprintType": "NPC249",
+                  "name": "TsEntity_170_014_夜归女-无携带_戴帽",
+                  "areaId": 204,
+                  "position": {
+                    "x": -131596,
+                    "y": 43028,
+                    "z": 15462
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -51
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Onkel... Tante!",
+                "en": "Uncle... Auntie!",
+                "es": "Tío... ¡Tía!",
+                "fr": "Oncle... Tante !",
+                "ja": "ぐあああ……おかあさん……おとうさん！",
+                "ko": "삼촌... 이모!!",
+                "th": "คุณน้า... คุณอา!",
+                "zh-Hans": "舅啊……婶啊！",
+                "zh-Hant": "舅啊……嬸啊！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1021,
+                "name": {
+                  "zh-Hans": "受伤的路人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 36,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Warte bis 12:00 Uhr",
+        "en": "Wait until 12:00 PM",
+        "es": "Espera hasta las 12:00.",
+        "fr": "Attendre jusqu'à midi",
+        "ja": "昼12時まで待つ",
+        "ko": "낮 12시까지 기다리기",
+        "th": "รอจนถึง 12:00 น.",
+        "zh-Hans": "等到中午12点",
+        "zh-Hant": "等到中午12點"
+      },
+      "entities": [
+        {
+          "entityId": 136002129,
+          "mapId": 8,
+          "blueprintType": "NPC223",
+          "name": "TsEntity_170_013_夜归女-携枪5",
+          "areaId": 204,
+          "position": {
+            "x": -126732,
+            "y": 47098,
+            "z": 13426
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 176
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 37,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 41,
+      "parentId": 1,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 136801832,
+          "mapId": 8,
+          "blueprintType": "Gameplay299",
+          "name": "TsEntity_音频_多点声源",
+          "areaId": 204,
+          "position": {
+            "x": -131910,
+            "y": 50420,
+            "z": 16390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 34,
+      "parentId": 33,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 35,
+      "parentId": 33,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 38,
+      "parentId": 37,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 136001898,
+          "mapId": 8,
+          "blueprintType": "NPC224",
+          "name": "TsEntity_170_014_夜归女-无携带",
+          "areaId": 204,
+          "position": {
+            "x": -132366,
+            "y": 47215,
+            "z": 16114
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -157
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001899,
+          "mapId": 8,
+          "blueprintType": "NPC224",
+          "name": "TsEntity_170_014_夜归女-无携带2",
+          "areaId": 204,
+          "position": {
+            "x": -132344,
+            "y": 47206,
+            "z": 16114
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -176
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 10,
+          "talks": [
+            {
+              "text": {
+                "de": "Danke... es scheint, dass einige meiner Brüder gefangen genommen wurden! Ich möchte wirklich weiterhin Seite an Seite mit ihnen kämpfen...",
+                "en": "Thank you... it seems that some of my brothers have been captured! I'd give anything to fight alongside them again...",
+                "es": "Gracias... parece que algunos de mis hermanos han sido capturados! Realmente quiero seguir luchando a su lado...",
+                "fr": "Merci... mes camarades sont enfermés ! Je veux les aider...",
+                "ja": "ありがとう……けど、仲間の一部が連中に拘束された！私も一緒に戦いたいところだが……",
+                "ko": "아, 감사해요... 제 형제들 중 일부가 갇혀 있는 것 같아요. 저도 그들과 함께 싸우고 싶지만...",
+                "th": "ขอบคุณ... ดูเหมือนพี่น้องฉันบางคนจะถูกจับตัวไป! ฉันยอมทำทุกอย่างเพื่อให้ได้ร่วมสู้กับพวกเขาอีก...",
+                "zh-Hans": "谢谢你……我的兄弟们好像有的被关起来了！我也好想，跟他们继续并肩作战……",
+                "zh-Hant": "謝謝你……我的兄弟們好像有的被關起來了！我也好想，跟他們繼續並肩作戰……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1023,
+                "name": {
+                  "zh-Hans": "不甘的队员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "parentId": 37,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 136001698,
+          "mapId": 8,
+          "blueprintType": "NPC299",
+          "name": "TsEntity_157_034_夜归-医疗",
+          "areaId": 204,
+          "position": {
+            "x": -130030,
+            "y": 53068,
+            "z": 16728
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -85
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136700009,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器11",
+          "areaId": 204,
+          "position": {
+            "x": -131012,
+            "y": 52274,
+            "z": 16755
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136700010,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器13",
+          "areaId": 204,
+          "position": {
+            "x": -130639,
+            "y": 52559,
+            "z": 16736
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 16,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich, Schwarzer Zyklon, bin zurück! Exilanten, zittert!",
+                "en": "I, Black Cyclone, have returned! Exiles, tremble!",
+                "es": "¡Yo, el Ciclón Negro, he regresado! ¡Exiliados, temblad!",
+                "fr": "Moi, Black Cyclone, je suis de retour ! Exilés, tremblez !",
+                "ja": "この「黒き旋風」の帰還だ！追放者よ、震えるがいい！",
+                "ko": "검은 회오리 바람이 돌아왔다! 추방자들아, 덤벼라!",
+                "th": "ฉัน กาฬวายุ กลับมาแล้ว! ยอมสยบเสีย พวกผู้ถูกเนรเทศ!",
+                "zh-Hans": "我黑旋风回来了！流放者们，颤抖吧！",
+                "zh-Hant": "我黑旋風回來了！流放者們，顫抖吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1025,
+                "name": {
+                  "zh-Hans": "愤怒的队员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "parentId": 37,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 136001743,
+          "mapId": 8,
+          "blueprintType": "Monster023",
+          "name": "TsEntity_小怪_流放者男电刃6",
+          "areaId": 204,
+          "position": {
+            "x": -136970,
+            "y": 50880,
+            "z": 16950
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136001744,
+          "mapId": 8,
+          "blueprintType": "Monster021",
+          "name": "TsEntity_小怪_流放者男喷火器12",
+          "areaId": 204,
+          "position": {
+            "x": -137010,
+            "y": 50570,
+            "z": 16950
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002131,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女",
+          "areaId": 204,
+          "position": {
+            "x": -136425,
+            "y": 50649,
+            "z": 16954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -178
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 136002579,
+          "mapId": 8,
+          "blueprintType": "Monster028",
+          "name": "TsEntity_小怪_流放者女电刃2",
+          "areaId": 204,
+          "position": {
+            "x": -136812,
+            "y": 50622,
+            "z": 16954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -136
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_云陵谷_观测基地_二级POI任务",
+          "flowIndex": 1,
+          "stateId": 18,
+          "talks": [
+            {
+              "text": {
+                "de": "Endlich gerettet! Ihr Idioten, wie könnt ihr eure eigenen Leute einsperren!",
+                "en": "Finally rescued! You idiots, how did you end up locking up your own?",
+                "es": "¡Finalmente rescatado! Idiotas, ¿cómo pueden encerrar a su propia gente!",
+                "fr": "Enfin ! Ces idiots qui enferment ses propres gens !",
+                "ja": "ようやく助かった。あのバカども、仲間まで拘束しやがって！",
+                "ko": "아, 드디어 살았네, 야 이 바보들아, 어떻게 자기편까지 가두는거야!",
+                "th": "ช่วยออกมาจนได้! บ้องตื้นเอ๊ย ปิดขังตัวเองไปได้ไงเนี่ย?",
+                "zh-Hans": "终于得救了！你们这群蠢货，怎么连自己人也关！",
+                "zh-Hant": "終於得救了！你們這群蠢貨，怎麼連自己人也關！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1024,
+                "name": {
+                  "zh-Hans": "不安的流放者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

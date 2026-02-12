@@ -1,0 +1,102 @@
+{
+  "id": 158700000,
+  "key": "（隐藏UI不显示）BossRush3活动初始化任务",
+  "type": "branch",
+  "typeId": 11,
+  "name": {},
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 158700000,
+          "mapId": 8,
+          "blueprintType": "branch2.1_Event_BossRushBase_Hecate",
+          "name": "TsEntity_玩法_2_1_BossRush地台",
+          "areaId": 301,
+          "position": {
+            "x": -33884,
+            "y": 97799,
+            "z": 1887
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 158700001,
+          "mapId": 8,
+          "blueprintType": "Quest129",
+          "name": "TsEntity_任务_公告板_BOSSRush3装饰",
+          "areaId": 301,
+          "position": {
+            "x": -33910,
+            "y": 97574,
+            "z": 1890
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -135
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 158700002,
+          "mapId": 8,
+          "blueprintType": "Gameplay333",
+          "name": "TsEntity_副本_世界副本入口_无模型bossrush3",
+          "areaId": 301,
+          "position": {
+            "x": -33878,
+            "y": 97804,
+            "z": 1940
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -27
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

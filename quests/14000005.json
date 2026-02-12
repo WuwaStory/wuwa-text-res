@@ -1,0 +1,84 @@
+{
+  "id": 14000005,
+  "key": "试用角色",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 7,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 14000042,
+          "mapId": 100,
+          "blueprintType": "NPC214",
+          "name": "TsEntity_154_004_开拓者女",
+          "areaId": 0,
+          "position": {
+            "x": -84668,
+            "y": -49229,
+            "z": 15
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 7,
+      "type": "ParallelSelect",
+      "dialogs": []
+    }
+  ]
+}

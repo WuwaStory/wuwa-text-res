@@ -1,0 +1,605 @@
+{
+  "id": 157850000,
+  "key": "染秽之梦",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Traumkontagion",
+    "en": "Dream Contagion",
+    "es": "Sueño corrompido",
+    "fr": "Rêve corrompu",
+    "ja": "汚された夢",
+    "ko": "타락의 꿈",
+    "th": "ฝันระบาด",
+    "zh-Hans": "染秽之梦",
+    "zh-Hant": "染穢之夢"
+  },
+  "desc": {
+    "de": "Schließe die Herausforderung ab und besiege den Albtraum im Traumknoten.",
+    "en": "Complete the challenge and defeat the Nightmare hidden within the Dreamscape Node.",
+    "es": "Completa el desafío y derrota la Pesadilla oculta dentro del nodo del sueño.",
+    "fr": "Relever les défis du « Tour de rêve » et vaincre les cauchemars aux Nœuds oniriques.",
+    "ja": "挑戦をクリアし、ドリームノードの後ろに隠れた悪夢を倒す",
+    "ko": "도전을 완료하고, 꿈의 노드에 숨은 악몽을 격파하세요",
+    "th": "ทำการท้าทายให้สำเร็จ และเอาชนะฝันร้ายที่ซ่อนอยู่ในโหนดภาพแดนฝัน",
+    "zh-Hans": "完成挑战，击败隐藏在梦境节点后的梦魇。",
+    "zh-Hant": "完成挑戰，擊敗隱藏在夢境節點後的夢魘。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_染秽之梦",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, {PlayerName}. Kannst du mich hören?",
+                "en": "{PlayerName}. Can you hear me?",
+                "es": "¿Me oyes, {PlayerName}?",
+                "fr": "{PlayerName}. Tu m'entends ?",
+                "ja": "{PlayerName}、聞こえるか？",
+                "ko": "{PlayerName}, 들리시나요?",
+                "th": "{PlayerName} ได้ยินหรือไม่?",
+                "zh-Hans": "{PlayerName}，听得到么？",
+                "zh-Hant": "{PlayerName}，聽得到嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben erfahren, dass der Albtraum der Tacet-Dissonanz in Septimont beseitigt wurde – und das durch deine Hand. Sehr beeindruckend.",
+                "en": "I've just received confirmation that some of the Nightmare Tacet Discords that appeared in Septimont have been eliminated—under your blade as usual. Wonderfully done.",
+                "es": "Acabamos de confirmar que la Disonancia Tácita de Pesadilla que apareció en Septimont fue eliminada. Sabía que habías sido tú. Buen trabajo.",
+                "fr": "Je viens de recevoir la confirmation que la Discordance Taciturne de Cauchemar apparue à Septimont a été éliminée,  \net ce, grâce à ta lame. Beau travail.",
+                "ja": "セブン・ヒルズに現れたナイトメア残像の消滅を確認した。やはり、あなたがやってくれたんだな、ありがとう。",
+                "ko": "방금 일곱 언덕 지역에 나타난 악몽 잔상이 사라진 걸 확인했어요. 역시 당신이 해결하셨군요. 정말 수고하셨습니다",
+                "th": "ผมเพิ่งได้รับการยืนยันว่า Nightmare Tacet Discord จำนวนหนึ่งที่ปรากฏตัวขึ้นในเซปติมอนต์ถูกกำจัดไปแล้ว... ด้วยคมดาบของคุณเช่นเคย ทำได้ดีมาก",
+                "zh-Hans": "我们刚刚确认到出现在七丘地区的梦魇残象被消灭了，果然是你又出手了，辛苦了。",
+                "zh-Hant": "我們剛剛確認到出現在七丘地區的夢魘殘象被消滅了，果然是你又出手了，辛苦了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Vergnügen.",
+                    "en": "Just a walk in the park.",
+                    "es": "Nada del otro mundo.",
+                    "fr": "C'était un plaisir.",
+                    "ja": "大したことじゃない。",
+                    "ko": "별거 아니에요",
+                    "th": "ก็เหมือนเดินไปปากซอยน่ะ",
+                    "zh-Hans": "举手之劳罢了。",
+                    "zh-Hant": "舉手之勞罷了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Einfach ein freundlicher Tourist, der gerade vorbeigekommen ist.",
+                    "en": "Just a friendly tourist who happened to pass by.",
+                    "es": "Solo era {Male=un turista curioso;Female=una turista curiosa} con ganas de ayudar.",
+                    "fr": "Juste un touriste amical qui passait par là.",
+                    "ja": "観光客として通りがかっただけ。",
+                    "ko": "그냥 지나가는 김에 처리했어요",
+                    "th": "แค่นักท่องเที่ยวใจดีที่บังเอิญผ่านมาน่ะ",
+                    "zh-Hans": "只是路过的热心游客。",
+                    "zh-Hant": "只是路過的熱心遊客。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was du gemacht hast, hat uns wirklich überrascht. Tatsache ist, dass wir etwas Einzigartiges aus den Träumen in Septimont entdeckt haben.",
+                "en": "That walk you had certainly gave us a surprise. As a matter of fact, we've managed to discover something unique from the Septimont Dreamscape Sample.",
+                "es": "Pues ese pequeño favor nos trajo una gran sorpresa... Hemos encontrado algo inusual en las muestras de sueño de Septimont.",
+                "fr": "Cette marche que vous avez effectuée nous a certainement surpris. En fait, nous avons réussi à découvrir quelque chose d'unique dans l'échantillon du Septimont Dreamscape.",
+                "ja": "それでも、私たちに意外な収穫をもたらしてくれた......実は、セブン・ヒルズのドリームサンプルの中で、ある特別なものを発見したんだ。",
+                "ko": "그 별거 아닌 행동이 저희에게 큰 놀라움을 안겨줬어요... 사실, 일곱 언덕의 꿈의 샘플에서 특이한 게 발견되었거든요",
+                "th": "เป็นรอยทางที่ทำเอาเราประหลาดใจทีเดียว เพราะอันที่จริงแล้ว เราพบอะไรบางอย่างที่ต่างจากตัวอย่างภาพแดนฝันในเซปติมอนต์อย่างสิ้นเชิง",
+                "zh-Hans": "你的举手之劳倒是送了我们一个惊喜……事实上，我们在七丘的梦境样本中发现了一些特别的东西。",
+                "zh-Hant": "你的舉手之勞倒是送了我們一個驚喜……事實上，我們在七丘的夢境樣本中發現了一些特別的東西。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ob es nun reiner Zufall oder das Werk des Schicksals ist, bleibt eine Frage. Tatsache ist, dass wir etwas Einzigartiges aus den Träumen in Septimont entdeckt haben.",
+                "en": "Whether it's purely by chance or a work a fate is something worth pondering. As a matter of fact, we've managed to discover something unique from the Septimont Dreamscape Sample.",
+                "es": "No sabemos si fue pura coincidencia o cosa del destino. En cualquier caso, gracias por tu ayuda… como te decía, las muestras de Septimont tienen algo fuera de lo común.",
+                "fr": "Que ce soit purement par hasard ou l'œuvre du destin, cela vaut la peine d'y réfléchir. En fait, nous avons réussi à découvrir quelque chose d'unique dans l'échantillon du Septimont Dreamscape.",
+                "ja": "偶然か、それとも運命か......とにかく、あなたの協力に感謝している。実は、セブン・ヒルズのドリームサンプルの中で、ある特別なものを発見したんだ。",
+                "ko": "우연이랄까, 아니면 운명이랄까... 어쨌든 당신의 도움에 정말 감사드려요... 사실, 일곱 언덕의 꿈의 샘플에서 특이한 게 발견되었거든요",
+                "th": "ไม่ว่าจะโดยบังเอิญแท้ๆ หรือชะตานำพาก็ล้วนคู่ควรแก่การพิจารณา เพราะอันที่จริงแล้ว เราพบอะไรบางอย่างที่ต่างจากตัวอย่างภาพแดนฝันในเซปติมอนต์อย่างสิ้นเชิง",
+                "zh-Hans": "该说是意外还是命运呢，总之，非常感谢你的协助……事实上，我们在七丘的梦境样本中发现了一些特别的东西。",
+                "zh-Hant": "該說是意外還是命運呢，總之，非常感謝你的協助……事實上，我們在七丘的夢境樣本中發現了一些特別的東西。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin mir sicher, dass du dich noch an die Einladung zum Somnoire-Filmfestival erinnerst, oder?",
+                "en": "I'm sure you still have memories of that invitation you received to the Somnoire Film Festival, yes?",
+                "es": "¿Recuerdas aquella invitación que recibiste para el festival de cine en la Somnolencia?",
+                "fr": "Je suis sûr que vous avez encore des souvenirs de l'invitation que vous avez reçue pour le Festival du Film Somnoire, n'est-ce pas ?",
+                "ja": "前回もらった心の集域映画祭の招待状を覚えているか？",
+                "ko": "혹시 지난번에 마음의 영역에서 온 그 영화제 초대장을 기억하시나요?",
+                "th": "ผมแน่ใจว่าคำเชิญให้ไปยังเทศกาลภาพยนตร์แดนจิตนิมิตที่คุณได้รับนั้นยังอยู่ในความทรงจำ ใช่หรือไม่?",
+                "zh-Hans": "你还记得上一次那张来自心之集域的电影节邀请函么？",
+                "zh-Hant": "你還記得上一次那張來自心之集域的電影節邀請函嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja.",
+                    "en": "I do.",
+                    "es": "Sí, claro.",
+                    "fr": "Oui.",
+                    "ja": "覚えている。",
+                    "ko": "당연하죠",
+                    "th": "จำได้สิ",
+                    "zh-Hans": "记得。",
+                    "zh-Hant": "記得。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nicht wirklich.",
+                    "en": "Not really.",
+                    "es": "La verdad, no mucho.",
+                    "fr": "Pas vraiment.",
+                    "ja": "覚えていない。",
+                    "ko": "기억이 잘 안나요",
+                    "th": "ไม่แน่ใจนะ",
+                    "zh-Hans": "没什么印象了。",
+                    "zh-Hant": "沒什麼印象了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Okay, das macht die Sache umso einfacher. Es beschäftigt uns schon, seitdem wir die Einladung erhalten haben. Immerhin ist die Tiefwasserzone ein Ort, in den wir noch nie einen Blick werfen konnten.",
+                "en": "Well, then that'll make explaining all the easier. It has been troubling us ever since we first learned of the invitation's existence. After all, the Deep Water Zone has always been a realm we've yet to peer into its secrets.",
+                "es": "Bueno, si lo recuerdas, será más fácil explicarlo. Esa invitación nos ha tenido intrigados estos días. La zona de aguas profundas siempre ha sido un lugar difícil de rastrear.",
+                "fr": "Eh bien, cela rendra l'explication beaucoup plus facile.  \nCela nous a préoccupés depuis que nous avons appris l'existence de l'invitation.  \nAprès tout, la Zone des Eaux Profondes a toujours été un domaine dont nous n'avons pas encore perçu les secrets.",
+                "ja": "覚えてくれていて助かる。ここ数日、あの招待状のことでずっと悩んでいたんだ。何せ深海層は、私たちが探知できない特殊な夢境だからな。",
+                "ko": "잘 됐네요, 그럼 설명도 쉬워지네요. 사실 그 초대장 문제는 요즘 저희를 굉장히 힘들게 했거든요. 왜냐하면 심해 구역은 우리도 접근할 수 없는 특이한 꿈의 공간이니까요",
+                "th": "เอาล่ะ แบบนั้นก็จะทำให้อธิบายทุกอย่างได้ง่ายขึ้น มันเป็นเรื่องที่กวนใจพวกเรามานับแต่รู้ว่ามีคำเชิญที่ว่านั่นแล้ว แต่ท้ายที่สุด เขตน้ำลึกก็เป็นดินแดนที่เรายังไม่เคยเห็นความลับของที่นั่นมาก่อน",
+                "zh-Hans": "嗯，如果你还记得就方便解释了。那封邀请函的事这些天一直困扰着我们，毕竟，深水区是我们一直以来都无法探知的独特梦境。",
+                "zh-Hant": "嗯，如果你還記得就方便解釋了。那封邀請函的事這些天一直困擾著我們，畢竟，深水區是我們一直以來都無法探知的獨特夢境。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Datenproben aus Septimont zeigen eine ähnliche Frequenz. Wir nehmen an, dass die Einladung auf diesem Weg zu dir gelang, nachdem sie die Tiefwasserzone durchquert hat und die einzigartigen Frequenzsignaturen genutzt wurden.",
+                "en": "Data samples collected from Septimont reveal a similar frequency. We reckon this was how the invitation made its way to you after traversing the Deep Water Zone through utilizing the frequency's unique signatures.",
+                "es": "En las muestras de Septimont detectamos una frecuencia parecida. Quizá fue esa energía especial la que permitió a la invitación atravesar el bloqueo de aguas profundas y llegar hasta ti.",
+                "fr": "Les échantillons de données collectés depuis Septimont révèlent une fréquence similaire. Nous pensons que c'est ainsi que l'invitation vous est parvenue après avoir traversé la Zone des Eaux Profondes en utilisant les signatures uniques de cette fréquence.",
+                "ja": "セブン・ヒルズのデータサンプルで似たような周波数を見つけた。あの時招待状が深海層の封鎖を突破して、あなたのところに届いたのも、この周波数が持つ特殊な力が原因かもしれない。",
+                "ko": "저희가 일곱 언덕의 데이터 샘플에서 비슷한 주파수를 발견했어요. 아마 그때 초대장이 심해 구역의 봉인을 뚫고 당신에게 온 것도 이 특수한 주파수의 힘 때문인 것 같아요",
+                "th": "ตัวอย่างข้อมูลที่เก็บได้จากเซปติมอนต์เผยให้เห็นความถี่เดียวกัน เราเชื่อว่าคำเชิญนั่นมาถึงคุณได้ก็ด้วยวิธีนี้ มันเดินทางผ่านเขตน้ำลึกโดยใช้เอกลักษณ์เฉพาะตัวของความถี่นั่น",
+                "zh-Hans": "我们在七丘的数据样本中找到了一种相似的频率，也许，当时那封邀请函正是由于这种频率的特殊力量，才能穿越深水区的封锁来到你手中的。",
+                "zh-Hant": "我們在七丘的數據樣本中找到了一種相似的頻率，也許，當時那封邀請函正是由於這種頻率的特殊力量，才能穿越深水區的封鎖來到你手中的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Sorge. Kurz gesagt, wir konnten ein grobes Bild davon bekommen, warum in den Tiefen der Somnoire plötzlich so viel los war.",
+                "en": "Worry not. Long story short, we managed to form a general idea of the reason behind the sudden burst in activity of the Somnoire's depths.",
+                "es": "No pasa nada si no lo recuerdas. En resumen, creemos haber descubierto por qué las profundidades de la Somnolencia se han vuelto tan activas.",
+                "fr": "Ne vous inquiétez pas. En résumé, nous avons réussi à avoir une idée générale de la raison derrière l'augmentation soudaine de l'activité dans les profondeurs du Somnoire.",
+                "ja": "それでも問題ない。簡潔に言うと、心の集域の深層夢境がなぜ突然活発になったのか、原因が概ね分かったんだ。",
+                "ko": "기억이 안 나셔도 괜찮아요. 결론부터 말씀드리면 저희가 마음의 영역 심층의 꿈이 갑자기 활성화된 원인을 대략 추측해냈거든요",
+                "th": "แต่ไม่ต้องห่วงไป พูดแบบรวบรัดก็คือ เราสร้างแนวคิดทั่วไปเกี่ยวกับเหตุผลเบื้องหลังเรื่องการที่อยู่ดีๆ กิจกรรมในแดนจิตนิมิตก็คึกคักขึ้นมา",
+                "zh-Hans": "不记得也没关系，简单来说，就是我们大概猜到了心之集域中的深层梦境突然变得活跃的原因。",
+                "zh-Hant": "不記得也沒關係，簡單來說，就是我們大概猜到了心之集域中的深層夢境突然變得活躍的原因。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings haben wir noch nicht genügend Proben, um unsere Hypothese zu untermauern. Falls es dir nichts ausmacht, würden wir dich bitten, auch die verbleibenden Tacet-Dissonanzen zu beschaffen.",
+                "en": "However, we still lack sufficient samples to verify our hypothesis. If you don't mind, we'd like to have you take out the remaining Nightmare Tacet Discords.",
+                "es": "Pero aún no tenemos suficientes datos para confirmarlo. Si te es posible, ¿podrías encargarte de algunas Disonancias Tácitas de Pesadilla más?",
+                "fr": "Cependant, il nous manque encore suffisamment d'échantillons pour vérifier notre hypothèse.  \nSi cela ne vous dérange pas, nous aimerions que vous retiriez les Discordes taciturnes restantes du Cauchemar.",
+                "ja": "しかし、私たちの推測を検証するにはサンプルが足りない。もしよければ、他のナイトメア残像も片付けてくれないか？",
+                "ko": "하지만 아직 샘플이 부족해서 그 추측을 검증할 수 없어요. 괜찮으시다면, 다른 악몽 잔상도 처리해 주실 수 있나요?",
+                "th": "อย่างไรก็ตาม เรามีตัวอย่างไม่เพียงพอจะพิสูจน์สมมติฐานที่ว่านี้ หากคุณไม่ว่าอะไร เราอยากให้คุณช่วยจัดการกับ Nightmare Tacet Discord ให้หน่อย",
+                "zh-Hans": "不过目前样本的数量还不足以验证我们的猜测，如果方便的话，请你再帮忙解决掉其他几个梦魇残象吧。",
+                "zh-Hant": "不過目前樣本的數量還不足以驗證我們的猜測，如果方便的話，請你再幫忙解決掉其他幾個夢魘殘象吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Koordinaten wurden an dein Terminal übermittelt. Wie immer wirst du für deinen Einsatz belohnt. Wir schätzen deine Unterstützung, {PlayerName}.",
+                "en": "Their coordinates have been sent to your Terminal. Per usual, you will be rewarded for your hard work. We appreciate your aid, {PlayerName}.",
+                "es": "Te envié las ubicaciones. Una vez que las elimines, tendremos una recompensa esperándote. Gracias por tu esfuerzo, {PlayerName}.",
+                "fr": "Leurs coordonnées ont été envoyées à votre Borne. Comme d'habitude, vous serez récompensé pour votre travail acharné. Nous apprécions votre aide, {PlayerName}.",
+                "ja": "そいつらの位置を送った。終わったら、こちらも相応の報酬を用意する。頼んだぞ、{PlayerName}。",
+                "ko": "그 잔상들의 위치를 보내드렸어요. 일이 다 끝나면 그에 상응하는 보상도 드릴게요. 그럼 잘 부탁드립니다, {PlayerName}",
+                "th": "เราส่งพิกัดของพวกมันไปให้ทางเทอร์มินัลของคุณแล้ว และเช่นเคย คุณจะได้รับรางวัลสำหรับการลงทุนลงแรง เราซาบซึ้งในความช่วยเหลือของคุณยิ่งนัก {PlayerName}",
+                "zh-Hans": "我将它们的位置发送给你了，事成之后，我们也会准备相应的奖励。辛苦你了，{PlayerName}。",
+                "zh-Hant": "我將它們的位置發送給你了，事成之後，我們也會準備相應的獎勵。辛苦你了，{PlayerName}。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "schließe alle Traumkontagion-Herausforderungen in Septimont ab.",
+        "en": "Complete all Dream Contagion challenges in Septimont",
+        "es": "Completa todos los desafíos de Sueño corrompido en Septimont.",
+        "fr": "Relever tous les défis du « Rêve corrompu » au Septimont",
+        "ja": "セブン・ヒルズ各地の「汚された夢」挑戦をクリア",
+        "ko": "일곱 언덕 각지의 타락의 꿈 도전 완료",
+        "th": "พิชิตความท้าทายฝันระบาดในเซปติมอนต์ทั้งหมด",
+        "zh-Hans": "完成七丘各地的染秽之梦挑战",
+        "zh-Hant": "完成七丘各地的染穢之夢挑戰"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_染秽之梦",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wir haben alle Proben gesammelt, {PlayerName}. Gut gemacht.",
+                "en": "We've confirmed and gathered all Dreamscape Samples, {PlayerName}. Well done.",
+                "es": "{PlayerName}, ya tenemos todas las muestras necesarias. Buen trabajo.",
+                "fr": "Nous avons confirmé et rassemblé tous les échantillons de Paysage de Rêve, {PlayerName}. Bien joué.",
+                "ja": "{PlayerName}、ドリームサンプルを全て確認できた。よくやった。",
+                "ko": "{PlayerName}, 모든 꿈의 샘플을 확인했어요. 수고 많으셨습니다",
+                "th": "เรายืนยันและรวบรวมตัวอย่างภาพแดนฝันทั้งหมดมาแล้ว {PlayerName} เยี่ยมมาก",
+                "zh-Hans": "{PlayerName}，这边已经确认到全部的梦境样本了。辛苦你了。",
+                "zh-Hant": "{PlayerName}，這邊已經確認到全部的夢境樣本了。辛苦你了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was hast du gefunden?",
+                    "en": "What did you find?",
+                    "es": "¿Y qué han revelado?",
+                    "fr": "Qu'as-tu trouvé ?",
+                    "ja": "結果は？",
+                    "ko": "결과는 어떻게 되나요?",
+                    "th": "แล้วเจออะไรล่ะ?",
+                    "zh-Hans": "结果如何？",
+                    "zh-Hant": "結果如何？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich hol mir meine Belohnung.",
+                    "en": "I'll be taking my rewards.",
+                    "es": "He venido a por mi recompensa.",
+                    "fr": "Je vais prendre mes récompenses.",
+                    "ja": "報酬は？",
+                    "ko": "제 보상은요?",
+                    "th": "งั้นก็ขอรับรางวัลละนะ",
+                    "zh-Hans": "我的奖励呢？",
+                    "zh-Hant": "我的獎勵呢？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Tut mir leid, {PlayerName}. Die Sache ist komplizierter, als wir dachten. Miau! Wir haben sogar das Kino aus dem letzten Mal in diesen Proben gefunden.",
+                "en": "Hate to break to you, {PlayerName}. Things are more complicated than we thought. Meow! We even found that cinema from last time in these samples.",
+                "es": "La verdad, {PlayerName}, no esperábamos que esto se complicara tanto, ¡miau! En las nuevas muestras encontramos rastros del cine de la última vez...",
+                "fr": "Désolé de te l'annoncer, {PlayerName}. Les choses sont plus compliquées que prévu. Miaou ! Nous avons même retrouvé le cinéma de la dernière fois dans ces échantillons.",
+                "ja": "{PlayerName}、正直に言うと、状況は思ってたよりずっと複雑だニャー！今回サンプルで発見したのは、前に映画館で出た——",
+                "ko": "{PlayerName}, 사실을 말씀드리자면... 생각보다 훨씬 복잡한 상황이에요, 야옹! 이번에 얻은 새 샘플에서 영화관에 나타났던 그——",
+                "th": "ไม่อยากทำให้คุณผิดหวังเลย {PlayerName} เรื่องราวมันซับซ้อนกว่าที่เราคิด เมี้ยว! เราพบกระทั่งว่า ภาพยนตร์จากคราวที่แล้วก็อยู่ในตัวอย่างพวกนี้ด้วย",
+                "zh-Hans": "{PlayerName}，实不相瞒，只是没想到情况要比想象中还要复杂得多喵！我们在这一期的新样本中发现了之前出现在电影院——",
+                "zh-Hant": "{PlayerName}，實不相瞞，只是沒想到情況要比想像中還要複雜得多喵！我們在這一期的新樣本中發現了之前出現在電影院——"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Sorge, du bekommst deine Belohnung – versprochen. Miau! Weißt du was, {PlayerName}? Wir haben in diesen Proben das Kino vom letzten Mal gefunden.",
+                "en": "Don't worry, you'll get your rewards. We promise. Meow! Guess what, {PlayerName}? We found that cinema from last time in these samples.",
+                "es": "Tu recompensa llegará en breve, ¡miau! {PlayerName}, ¿sabes qué? ¡En esta tanda de muestras apareció de nuevo el cine de la vez pasada!",
+                "fr": "T'en fais pas, tu auras ta récompense. Promis. Miaou !  \nDevine quoi, {PlayerName} ? On a retrouvé le cinéma de la dernière fois dans ces échantillons.",
+                "ja": "報酬は後で届けるニャー。約束は破ったりしない！{PlayerName}、知っているか？今回のサンプルで発見したのは、前に映画館で出た——",
+                "ko": "곧 보상을 보내드릴게요, 야옹! 약속은 꼭 지킬게요! 그런데 {PlayerName}도 모르시죠? 이번에 얻은 새 샘플에서 영화관에 나타났던 그——",
+                "th": "แต่ไม่ต้องห่วง คุณจะได้รางวัลไป เราสัญญา เมี้ยว! รู้อะไรมั้ย {PlayerName}? เราพบว่าภาพยนตร์จากคราวที่แล้วอยู่ในตัวอย่างพวกนี้ด้วย",
+                "zh-Hans": "奖励稍后就会发给你的喵，我们绝不食言！{PlayerName}你知道吗，我们在这一期的新样本中发现了之前出现在电影院的——",
+                "zh-Hant": "獎勵稍後就會發給你的喵，我們絕不食言！{PlayerName}你知道嗎，我們在這一期的新樣本中發現了之前出現在電影院的——"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Stör mich nicht. Ich bin derjenige, der die Berichte abgibt!",
+                "en": "Do not interrupt. I am the one in charge of reporting!",
+                "es": "¡No interrumpas! ¡El informe lo doy yo!",
+                "fr": "N'interrompez pas. C'est moi qui fais le rapport !",
+                "ja": "口を挟むな。進捗報告は私の仕事だろう！",
+                "ko": "그만 닥치세요! 제가 보고하고 있잖아요!",
+                "th": "อย่าขัดจังหวะสิ ฉันคือคนที่รับหน้าที่รายงานอยู่นะ!",
+                "zh-Hans": "你别插话，汇报工作的人是我！",
+                "zh-Hant": "你別插話，匯報工作的人是我！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...Miau.",
+                "en": "...Meow.",
+                "es": "...Miau.",
+                "fr": "...Miaou.",
+                "ja": "......ニャー。",
+                "ko": "...야옹",
+                "th": "...เมี้ยว",
+                "zh-Hans": "……喵。",
+                "zh-Hant": "……喵。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kurz gefasst: Die Tacet-Dissonanz-Albträume von Septimont senden eine Frequenz aus, die die Verbindung zum Tiefen erneut herstellen kann,ähnlich dem Moment, als die Einladung gesendet wurde.",
+                "en": "I'll keep it brief. Nightmare Tacet Discords of Septimont carry a unique frequency which can restore connection with the Deep Water Zone, similar to the moment when the invitation was sent.",
+                "es": "En resumen: las Disonancias Tácitas que aparecieron en Septimont emiten una frecuencia peculiar, muy parecida a la que permitió que se restableciera el enlace con la zona de aguas profundas y se enviara aquella invitación.",
+                "fr": "Je vais faire court. Les Discordances taciturnes cauchemardesques de Septimont émettent une fréquence unique.  \nElle peut rétablir la connexion avec les Profondeurs, comme lors de l'envoi de l'invitation.",
+                "ja": "手短に言うと、セブン・ヒルズに現れたナイトメア残像は特殊な周波数を纏っている。以前深海層との繋がりが回復した時に届いた招待状には、それと似たものがあったんだ。",
+                "ko": "짧게 말씀드리자면, 일곱 언덕의 악몽 잔상들에 특이한 주파수가 묻어 있었어요. 이 주파수는 예전에 심해 구역이 다시 연결되어 초대장을 보낼 때 나왔던 것과 비슷하네요",
+                "th": "ผมจะพูดแบบรวบรัดนะ Nightmare Tacet Discord ของเซปติมอนต์มีความถี่เฉพาะตัวที่ฟื้นฟูการเชื่อมต่อกับเขตน้ำลึกได้ เหมือนเมื่อตอนที่คำเชิญส่งมา",
+                "zh-Hans": "长话短说，七丘地区的梦魇残象身上带有着一种独特的频率，这种频率与之前深水层恢复连接，寄出邀请函时的那一刻有相似之处。",
+                "zh-Hant": "長話短說，七丘地區的夢魘殘象身上帶有著一種獨特的頻率，這種頻率與之前深水層恢復連接，寄出邀請函時的那一刻有相似之處。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine Sache ist sicher: Die unterbrochene Verbindung von Rinascitas Somnoire hat etwas damit zu tun.",
+                "en": "One thing is certain that the severed connection of Rinascita's Somnoire has something to do with it.",
+                "es": "Lo que sí sabemos con certeza es que esa frecuencia está relacionada con la desconexión de la Somnolencia en Rinascita.",
+                "fr": "Une chose est certaine, la connexion coupée du Somnoire de Rinascita y est liée.",
+                "ja": "今のところ確かなのは、ずっとリナシータの心の集域に繋がらなかった原因が、この周波数にあるということだけ。",
+                "ko": "지금 확실한 건, 리나시타의 마음의 영역이 연결되지 못한 이유가 이러한 주파수와 관련 있다는 거예요",
+                "th": "อย่างหนึ่งที่แน่ใจได้คือ การเชื่อมต่อกับจิตนิมิตของรินาซิตาที่ขาดหายไปเกี่ยวข้องกับเรื่องนี้",
+                "zh-Hans": "目前可以确定的是，黎那汐塔的心之集域一直以来无法连接的原因就和这种频率相关。",
+                "zh-Hant": "目前可以確定的是，黎那汐塔的心之集域一直以來無法連接的原因就和這種頻率相關。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis jetzt sind wir jedoch nicht in der Lage, die Quelle der Frequenzen zu finden.",
+                "en": "Yet, so far, we are unable to identify the frequency's origin.",
+                "es": "Aunque aún no tenemos claro de dónde proviene esa energía.",
+                "fr": "Cependant, jusqu'à présent, nous ne parvenons pas à identifier l'origine de la fréquence.",
+                "ja": "この力がどこから来たかはまだ定かではない。",
+                "ko": "하지만 이 힘이 어디서 온 건진 아직 모르겠어요",
+                "th": "แต่ถึงอย่างนั้น จนป่านนี้ เราก็ยังระบุแหล่งกำเนิดของความถี่นั่นไม่ได้",
+                "zh-Hans": "但，这种力量究竟从何而来目前仍无法确定。",
+                "zh-Hant": "但，這種力量究竟從何而來目前仍無法確定。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unsere Theorie ist, dass die Dunkle Flut dahinterstecken könnte! In den Proben finden sich überall Spuren der Dunklen Flut!",
+                "en": "Our theory is that the Dark Tide might be the reason behind it! The Nightmare samples we collected has signs of Dark Tide all over!",
+                "es": "¡Creemos que podría tener que ver con la llamada Marea Oscura, miau! ¡Algunas muestras oníricas muestran señales de Pesadillas relacionadas con ella!",
+                "fr": "Notre théorie est que la Marée Noire pourrait en être la cause ! Les échantillons de Cauchemar que nous avons collectés montrent des signes de Marée Noire partout !",
+                "ja": "あの黒潮という災害に関わっているんじゃないかと、私たちは推測してるニャー！集めた悪夢のサンプルにも黒潮関連の悪夢があったし！",
+                "ko": "아마 <ano=검은 파도>흑조(黑潮)</ano>라는 재앙 때문일 거예요, 야옹! 악몽 샘플에서도 <ano=검은 파도>흑조(黑潮)</ano>의 악몽에 대한 언급이 나왔거든요!",
+                "th": "ทฤษฎีของเราก็คือ คลื่นทมิฬอาจอยู่เบื้องหลังเรื่องนี้! ตัวอย่างฝันร้ายที่เราเก็บมามีร่องรอยของคลื่นทมิฬเต็มไปหมดเลย!",
+                "zh-Hans": "我们推测这和那个名为黑潮的灾害有关喵！收集的梦魇的样本中就有提到了黑潮的噩梦！",
+                "zh-Hant": "我們推測這和那個名為黑潮的災害有關喵！收集的夢魘的樣本中就有提到了黑潮的噩夢！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie oft muss ich dir noch sagen, dass *ich* den Bericht schreibe! Behalt deine verrückten Fantasien für dich!",
+                "en": "How many times do I have to tell you I'm the one making the report! Keep those unreasonable imaginations to yourself!",
+                "es": "¡Te dije que el informe lo doy yo! ¡No sueltes teorías sin pruebas!",
+                "fr": "Combien de fois faut-il que je te dise que c'est moi qui fais le rapport !  \nGarde tes idées absurdes pour toi !",
+                "ja": "だから、報告は私の役目だと言っているだろう！根拠もない推測を口にするな！",
+                "ko": "제가 보고하고 있다니까요! 근거 없는 추측은 그만하세요!",
+                "th": "ต้องให้บอกกี่ครั้งนะว่าฉันคือคนที่ทำรายงาน! เจ้าจินตนาการไร้สาระพวกนั้นน่ะเก็บไว้กับตัวเลย!",
+                "zh-Hans": "都说了现在是我在汇报工作！没有根据的猜测不要乱讲！",
+                "zh-Hant": "都說了現在是我在匯報工作！沒有根據的猜測不要亂講！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun gut. Die Situation innerhalb der Tiefe bleibt unklar, aber es steht außer Frage, dass sowohl die Somnoire als auch die Rinascita weiterhin unter dem Einfluss dieser Frequenz Opfer fallen werden.",
+                "en": "Well, then. The situation within the Deep remains unclear, but there is no doubt that the Somnoire and Rinascita will continue to fall victim under this frequency's influence.",
+                "es": "En fin. Aún no tenemos información concreta sobre las aguas profundas, pero está claro que tanto la Somnolencia como Rinascita podrían seguir viéndose afectadas por esta frecuencia.",
+                "fr": "Très bien. La situation dans les Profondeurs reste floue,  \nmais il ne fait aucun doute que la Somnoire et la Rinascita continueront de succomber à l'influence de cette fréquence.",
+                "ja": "とにかく、集域の深海層の状況はまだ把握していないが、この周波数が集域とリナシータにさらなる影響を及ぼす可能性は十分にある。",
+                "ko": "어쨌든, 마음의 영역의 심해 구역이 어떤 상태인진 몰라도, 마음의 영역과 리나시타는 분명 이러한 주파수의 영향을 더 받을 가능성이 있어요",
+                "th": "เอาล่ะ สถานการณ์ในน้ำลึกนั้นไม่ชัดเจน แต่ไม่ต้องสงสัยเลยว่าจิตนิมิตกับรินาซิตาจะตกเป็นเหยื่อภายใต้อิทธิพลของความถี่นี้ต่อไป",
+                "zh-Hans": "总之，虽然我们还不知道集域深水层的情况，但是毫无疑问，集域和黎那汐塔都有可能会受到这种频率的进一步影响。",
+                "zh-Hant": "總之，雖然我們還不知道集域深水層的情況，但是毫無疑問，集域和黎那汐塔都有可能會受到這種頻率的進一步影響。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Achte während deiner Reisen in die verschiedenen Regionen von Rinascita auf Albträume, {PlayerName}.",
+                "en": "Be sure to keep an eye out for any Nightmare Tacet Discords you may come across during your travels to other regions of Rinascita, {PlayerName}.",
+                "es": "Si piensas explorar otras zonas de Rinascita, {PlayerName}, por favor, mantente alerta ante cualquier Disonancia Tácita de Pesadilla.",
+                "fr": "Reste bien à l'affût des Discordances taciturnes cauchemardesques durant tes voyages à travers Rinascita, {PlayerName}.",
+                "ja": "もし{PlayerName}がリナシータ以外の地域に向かうのなら、そこのナイトメア残像にも注意してほしい。",
+                "ko": "{PlayerName}, 만약에 리나시타의 다른 지역으로 가신다면 부디 악몽 잔상을 조심하세요",
+                "th": "อย่าลืมคอยจับตามอง Nightmare Tacet Discord ที่อาจเจอระหว่างเดินทางไปยังรินาซิตาด้วย {PlayerName}",
+                "zh-Hans": "如果{PlayerName}要前往黎那汐塔的其他地区，也请务必留心其中的梦魇残象。",
+                "zh-Hant": "如果{PlayerName}要前往黎那汐塔的其他地區，也請務必留心其中的夢魘殘象。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1089 @@
+{
+  "id": 122000011,
+  "key": "金库POI任务_后日谈",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Sanft fallende Blätter",
+    "en": "Silent as a Falling Leaf",
+    "es": "Silencioso como una hoja que cae",
+    "fr": "Silencieux comme une feuille qui tombe",
+    "ja": "無音で落ちる葉々",
+    "ko": "소리없이 떨어진 낙엽",
+    "th": "เงียบงันเมื่อใบไม้ร่วง",
+    "zh-Hans": "叶落无声",
+    "zh-Hant": "葉落無聲"
+  },
+  "desc": {
+    "de": "Der Vorfall endet damit, dass Zani Carlotta Bericht erstattet, während Phoebe in Gedanken versunken scheint. Wenn du neugierig bist, folge dem Hinweis der Statue auf dem Tresor-Erdgeschoss, um den letzten \"Geheimvorrat\" zu entdecken.",
+    "en": "The incident concludes with Zani reporting to Carlotta, while Phoebe appears lost in thought. If intrigued, follow the statue's guidance on the upper tier of the vault to uncover the final \"secret cache.\"",
+    "es": "El incidente llega a su fin, Zani informa a Carlotta sobre la situación, mientras Phoebe parece estar pensando en algo. Si tienes interés, también puedes ir al «lugar de tesoros» señalado por la estatua en el nivel superior de la bóveda para echar un vistazo.",
+    "fr": "L'incident est réglé et Zani a rapporté cette nouvelle à Carlotta, tandis que Phoebe semble perdue dans ses pensées.\nSi vous êtes {Male=intrigué;Female=intriguée}, suivez les indications de la statue au niveau supérieur de la Chambre forte pour découvrir la dernière « Cache secrète ».",
+    "ja": "事件は一段落し、ザンニーはカルロッタに状況を報告した。フィービーにも「自分なりの考え事」があるようだ。\n興味があれば、金庫上層の彫像が示した「宝の在り処」に向かい調べてみよう。",
+    "ko": "사건은 일단락되었고, 젠니는 카를로타에게 상황을 보고 하였으며, 페비도「자신이 생각하고 싶은 일」이 있어 보인다.\n 만약 당신도 흥미가 있다면, 금고 위층 조각상이 마지막으로 가리키는 「보물 지점」으로 가보기를 바란다",
+    "th": "เหตุการณ์จบลงโดยซานิไปรายงานสถานการณ์กับ Carlotta ส่วนฟีบีก็ดูจมอยู่กับความคิด ถ้าคุณสนใจก็ให้ทำตามคำแนะนำของรูปปั้นที่ชั้นบนของห้องนิรภัยเพื่อค้นหา \"ที่ซ่อนลับ\" แห่งสุดท้ายสิ",
+    "zh-Hans": "事件告一段落，赞妮向珂莱塔报告了情况，菲比似乎也有“自己想思考的事”。\n如果你有兴趣，也可以前往金库上层雕像最后指向的“宝藏地点”看一看。",
+    "zh-Hant": "事件告一段落，贊妮向珂萊塔報告了情況，菲比似乎也有「自己想思考的事」。\n如果你有興趣，也可以前往金庫上層雕像最後指向的「寶藏地點」看一看。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 4,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 122700833,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录",
+          "areaId": 3116,
+          "position": {
+            "x": 938341,
+            "y": 596374,
+            "z": 2060
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 4,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 10,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 122007901,
+          "mapId": 8,
+          "blueprintType": "Player1",
+          "name": "TsEntity_角色032_菲比",
+          "areaId": 3116,
+          "position": {
+            "x": 947135,
+            "y": 592777,
+            "z": 6340
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 122700841,
+          "mapId": 8,
+          "blueprintType": "Quest070",
+          "name": "TsEntity_任务_带状态的空实体",
+          "areaId": 3116,
+          "position": {
+            "x": 947135,
+            "y": 592777,
+            "z": 6430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 15
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_1_世界_埃弗拉德金库_POI任务",
+          "flowIndex": 50,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "…",
+                "en": "...",
+                "es": "...",
+                "fr": "...",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Betest du etwa?",
+                    "en": "Are you praying for them?",
+                    "es": "¿Estás rezando por ellos?",
+                    "fr": "Tu pries pour eux ?",
+                    "ja": "{Male=お祈りしていたのか？;Female=お祈りしていたの？}",
+                    "ko": "기도하는 건가요?",
+                    "th": "กำลังสวดภาวนาให้พวกเขาอยู่เหรอ?",
+                    "zh-Hans": "是在祈祷吗？",
+                    "zh-Hant": "是在祈禱嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein … nicht wirklich. Ich verabschiede mich nur.",
+                "en": "No... not really. Just bidding them farewell.",
+                "es": "No exactamente. Simplemente me despido.",
+                "fr": "Non... pas vraiment. Je leur fais juste mes adieux.",
+                "ja": "……いえ、お祈りとは言えないかもしれません。ただ、見送っていただけです。",
+                "ko": "...아니, 기도는 아니고 그냥 그분들이 떠나가는 것을 지켜보고 있어",
+                "th": "เปล่า... ก็ไม่เชิงน่ะ แค่บอกลาพวกเขาเฉยๆ",
+                "zh-Hans": "嗯……不，不算是祈祷，只是在目送他们的离开。",
+                "zh-Hant": "嗯……不，不算是祈禱，只是在目送他們的離開。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Entschlossene Seelen müssen nicht geleitet werden. Ich will einfach die Zukunft verstehen, den Weg, der bereitet ist.",
+                "en": "A resolute soul needs no guidance. I simply want to understand the future they've paved the road for.",
+                "es": "Un alma decidida no necesita guía. Solo quiero entender el futuro para el que han pavimentado el camino.",
+                "fr": "Une âme résolue n'a pas besoin d'être guidée. Je veux simplement comprendre l'avenir qu'ils ont tracé.",
+                "ja": "彼らのような強い魂に、導きなど不要ですから。私は彼らの向かう未来を知りたかっただけです。",
+                "ko": "그분들의 영혼은 충분히 강인하니까, 인도자는 필요하지 않아. 단지 그분들의 발걸음이 어떤 미래를 향하고 있는지 보고 싶을 뿐이야",
+                "th": "จิตวิญญาณที่แน่วแน่ไม่ต้องการการชี้นำหรอก ฉันแค่อยากเข้าใจอนาคตที่พวกเขาปูทางไว้ก็เท่านั้น",
+                "zh-Hans": "他们那样坚定的灵魂，不需旁人来指引道路，我只是想要看清他们的脚步究竟在迈向怎样的未来。",
+                "zh-Hant": "他們那樣堅定的靈魂，不需要旁人來指引道路，我只是想要看清他們的腳步究竟在邁向怎樣的未來。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "…",
+                "en": "...",
+                "es": "...",
+                "fr": "...",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Phoebe",
+        "en": "Talk to Phoebe",
+        "es": "Habla con Phoebe.",
+        "fr": "Parler à Phoebe",
+        "ja": "フィービーと会話する",
+        "ko": "페비와 대화하기",
+        "th": "คุยกับ Phoebe",
+        "zh-Hans": "和菲比对话",
+        "zh-Hant": "和菲比對話"
+      },
+      "entities": [
+        {
+          "entityId": 122007901,
+          "mapId": 8,
+          "blueprintType": "Player1",
+          "name": "TsEntity_角色032_菲比",
+          "areaId": 3116,
+          "position": {
+            "x": 947135,
+            "y": 592777,
+            "z": 6340
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 122700841,
+          "mapId": 8,
+          "blueprintType": "Quest070",
+          "name": "TsEntity_任务_带状态的空实体",
+          "areaId": 3116,
+          "position": {
+            "x": 947135,
+            "y": 592777,
+            "z": 6430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 15
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_1_世界_埃弗拉德金库_POI任务",
+          "flowIndex": 50,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "…",
+                "en": "...",
+                "es": "...",
+                "fr": "...",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Betest du etwa?",
+                    "en": "Are you praying for them?",
+                    "es": "¿Estás rezando por ellos?",
+                    "fr": "Tu pries pour eux ?",
+                    "ja": "{Male=お祈りしていたのか？;Female=お祈りしていたの？}",
+                    "ko": "기도하는 건가요?",
+                    "th": "กำลังสวดภาวนาให้พวกเขาอยู่เหรอ?",
+                    "zh-Hans": "是在祈祷吗？",
+                    "zh-Hant": "是在祈禱嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein … nicht wirklich. Ich verabschiede mich nur.",
+                "en": "No... not really. Just bidding them farewell.",
+                "es": "No exactamente. Simplemente me despido.",
+                "fr": "Non... pas vraiment. Je leur fais juste mes adieux.",
+                "ja": "……いえ、お祈りとは言えないかもしれません。ただ、見送っていただけです。",
+                "ko": "...아니, 기도는 아니고 그냥 그분들이 떠나가는 것을 지켜보고 있어",
+                "th": "เปล่า... ก็ไม่เชิงน่ะ แค่บอกลาพวกเขาเฉยๆ",
+                "zh-Hans": "嗯……不，不算是祈祷，只是在目送他们的离开。",
+                "zh-Hant": "嗯……不，不算是祈禱，只是在目送他們的離開。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Entschlossene Seelen müssen nicht geleitet werden. Ich will einfach die Zukunft verstehen, den Weg, der bereitet ist.",
+                "en": "A resolute soul needs no guidance. I simply want to understand the future they've paved the road for.",
+                "es": "Un alma decidida no necesita guía. Solo quiero entender el futuro para el que han pavimentado el camino.",
+                "fr": "Une âme résolue n'a pas besoin d'être guidée. Je veux simplement comprendre l'avenir qu'ils ont tracé.",
+                "ja": "彼らのような強い魂に、導きなど不要ですから。私は彼らの向かう未来を知りたかっただけです。",
+                "ko": "그분들의 영혼은 충분히 강인하니까, 인도자는 필요하지 않아. 단지 그분들의 발걸음이 어떤 미래를 향하고 있는지 보고 싶을 뿐이야",
+                "th": "จิตวิญญาณที่แน่วแน่ไม่ต้องการการชี้นำหรอก ฉันแค่อยากเข้าใจอนาคตที่พวกเขาปูทางไว้ก็เท่านั้น",
+                "zh-Hans": "他们那样坚定的灵魂，不需旁人来指引道路，我只是想要看清他们的脚步究竟在迈向怎样的未来。",
+                "zh-Hant": "他們那樣堅定的靈魂，不需要旁人來指引道路，我只是想要看清他們的腳步究竟在邁向怎樣的未來。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "…",
+                "en": "...",
+                "es": "...",
+                "fr": "...",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1475,
+                "name": {
+                  "zh-Hans": "菲比"
+                },
+                "entity": {
+                  "entityId": 122007901,
+                  "mapId": 8,
+                  "blueprintType": "Player1",
+                  "name": "TsEntity_角色032_菲比",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947135,
+                    "y": 592777,
+                    "z": 6340
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 11,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 12,
+      "type": "QuestFailed",
+      "entities": [
+        {
+          "entityId": 122007901,
+          "mapId": 8,
+          "blueprintType": "Player1",
+          "name": "TsEntity_角色032_菲比",
+          "areaId": 3116,
+          "position": {
+            "x": 947135,
+            "y": 592777,
+            "z": 6340
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 12,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 14,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 14,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 15,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 17,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Warte bis zur Tageszeit (09:00–15:00)",
+        "en": "Wait until daytime (09:00~15:00)",
+        "es": "Espera hasta el día. (09:00~15:00)",
+        "fr": "Attendre jusqu'au jour (9h à 15h)",
+        "ja": "昼（09:00~15:00）まで待つ",
+        "ko": "낮 (09:00 - 15:00)까지 기다리기",
+        "th": "รอจนกว่าจะถึงช่วงกลางวัน (09:00~15:00)",
+        "zh-Hans": "等待到白天（09:00~15:00）",
+        "zh-Hant": "等待到白天（09:00~15:00）"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 17,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Zani",
+        "en": "Talk to Zani",
+        "es": "Habla con Zani.",
+        "fr": "Parler à Zani",
+        "ja": "ザンニーと会話する",
+        "ko": "젠니와 대화하기",
+        "th": "คุยกับ Zani",
+        "zh-Hans": "和赞妮对话",
+        "zh-Hant": "和贊妮對話"
+      },
+      "entities": [
+        {
+          "entityId": 122007899,
+          "mapId": 8,
+          "blueprintType": "branch2.0_Player033",
+          "name": "TsEntity_角色033_赞妮2",
+          "areaId": 3116,
+          "position": {
+            "x": 947646,
+            "y": 596999,
+            "z": 5583
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 122007900,
+          "mapId": 8,
+          "blueprintType": "branch2.1_NPC_AiXu",
+          "name": "TsEntity_157_001_艾许",
+          "areaId": 3116,
+          "position": {
+            "x": 947555,
+            "y": 596881,
+            "z": 5586
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_1_世界_埃弗拉德金库_POI任务",
+          "flowIndex": 49,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "… Der Geheimvorrat … Das ist also … Großvaters wahrer Wunsch …",
+                "en": "The secret cache... So this is it... Grandpa's true wish...",
+                "es": "... El alijo secreto... Así que es esto... El verdadero deseo del abuelo...",
+                "fr": "... Le trésor caché... Alors c'est ça... Le véritable souhait de grand-père...",
+                "ja": "そうだったのか、じいちゃんが言ってた宝は……",
+                "ko": "...그렇군요... 「비장」... 할아버지의 진짜 뜻은...",
+                "th": "ที่ซ่อนลับ... นี่สินะ... ความปรารถนาที่แท้จริงของคุณปู่...",
+                "zh-Hans": "……原来是这样……秘藏……爷爷的真正意思……",
+                "zh-Hant": "……原來是這樣……秘藏……爺爺的真正意思……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100032,
+                "name": {
+                  "zh-Hans": "艾许"
+                },
+                "entity": {
+                  "entityId": 122007900,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_NPC_AiXu",
+                  "name": "TsEntity_157_001_艾许",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947555,
+                    "y": 596881,
+                    "z": 5586
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also hast du diesen Ort auch gefunden, {PlayerName}.",
+                "en": "So, you managed to find this place, {PlayerName}.",
+                "es": "Tú también has encontrado este lugar, {PlayerName}.",
+                "fr": "Alors tu as aussi trouvé cet endroit, {PlayerName}.",
+                "ja": "こうも早く再会するとはな、{PlayerName}。",
+                "ko": "이렇게 빨리 다시 만날 줄은 몰랐네요, {PlayerName}",
+                "th": "คุณหาที่นี่เจอจนได้นะ {PlayerName}",
+                "zh-Hans": "没想到这么快就能再见，{PlayerName}。",
+                "zh-Hant": "沒想到這麼快就能再見，{PlayerName}。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1477,
+                "name": {
+                  "zh-Hans": "赞妮"
+                },
+                "entity": {
+                  "entityId": 122007899,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_Player033",
+                  "name": "TsEntity_角色033_赞妮2",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947646,
+                    "y": 596999,
+                    "z": 5583
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir mussten alle Dokumente über den alten Ash und den Tresor durchkämmen, bevor wir ihn gefunden haben.",
+                "en": "We sifted through all the documents on old Ash and the vault before finally locating it.",
+                "es": "Revisamos todos los documentos sobre el viejo Ash y la bóveda antes de poder hallarlo.",
+                "fr": "Nous avons passé au crible tous les documents sur le vieux Ash et la chambre forte avant de finalement le localiser.",
+                "ja": "アッシュに関する金庫の資料を調べて、「宝」を見つけた。",
+                "ko": "애쉬 선생에 대한 모든 자료와 금고에 남아 있는 문서를 조사한 결과, 마침내 「비장」을 찾아냈어요",
+                "th": "เราค้นเอกสารทั้งหมดเกี่ยวกับแอชผู้เฒ่าและห้องนิรภัย จนสุดท้ายก็เจอมันในที่สุด",
+                "zh-Hans": "我们查了所有关于艾许老先生的资料，翻遍金库内留下的文书，最后才找到这个“秘藏”。",
+                "zh-Hant": "我們查了所有關於艾許老先生的資料，翻遍金庫內留下的文書，最後才找到這個「秘藏」。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1477,
+                "name": {
+                  "zh-Hans": "赞妮"
+                },
+                "entity": {
+                  "entityId": 122007899,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_Player033",
+                  "name": "TsEntity_角色033_赞妮2",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947646,
+                    "y": 596999,
+                    "z": 5583
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier ist er. Dieser Baum – der, dessen „grüne Blätter sich rot färben“.",
+                "en": "Here it is. This tree—the one where \"the green leaves turn red.\"",
+                "es": "Aquí está. Este árbol, aquel cuyas «hojas verdes se vuelven rojas».",
+                "fr": "La voici. Cet arbre... Celui dont « les feuilles vertes deviennent rouges. »",
+                "ja": "ほら、すぐそこのアレ……日記に「葉の色が緑から赤に変化する」と書かれていた木だ。",
+                "ko": "자, 눈앞의 이 장소가 단서들이 가리키는 「푸른 잎이 붉게 변한」 곳, 즉 이 나무예요",
+                "th": "นี่ไงต้นไม้ต้นนี้... ต้นที่ \"ใบไม้สีเขียวเปลี่ยนเป็นสีแดง\"",
+                "zh-Hans": "喏，就是眼前这片地方，他们所指的“绿叶变红”的地方，就是这棵树。",
+                "zh-Hant": "喏，就是眼前這片地方，他們所指的「綠葉變紅」的地方，就是這棵樹。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1477,
+                "name": {
+                  "zh-Hans": "赞妮"
+                },
+                "entity": {
+                  "entityId": 122007899,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_Player033",
+                  "name": "TsEntity_角色033_赞妮2",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947646,
+                    "y": 596999,
+                    "z": 5583
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als die Verfolgten den Tresor betraten, nahmen sie für eine Hintergrundprüfung den Aufzug zu den oberen Ebenen, bevor sie weitergingen.",
+                "en": "When the persecuted entered the vault, they would take the elevator to the upper levels for a background check before continuing.",
+                "es": "Cuando los perseguidos entraban en la bóveda, cogían el ascensor hasta los niveles superiores para dar sus datos antes de encerrarse para siempre.",
+                "fr": "Lorsque les persécutés entraient dans la chambre forte, ils prenaient l'ascenseur jusqu'aux niveaux supérieurs pour un contrôle de sécurité avant de continuer.",
+                "ja": "金庫で暮らしていた人は、エレベーターに乗って検査を受けてから下の階に降りていった。",
+                "ko": "당시 금고로 피난 온 사람들은 모두 위층으로 직행하는 엘리베이터를 타고 조사를 받은 뒤에, 다시 아래층으로 내려갔어요",
+                "th": "ผู้ที่ถูกกดขี่ได้เข้าไปในห้องนิรภัยในตอนนั้น พวกเขาจะต้องขึ้นลิฟต์ไปยังชั้นบนเพื่อรับการตรวจสอบประวัติก่อนจะดำเนินการต่อ",
+                "zh-Hans": "当年进入金库避难的人，都要乘坐直通上层的电梯接受调查记录，再直达最下层。",
+                "zh-Hant": "當年進入金庫避難的人，都要乘坐直通上層的電梯接受調查記錄，再直達最下層。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1477,
+                "name": {
+                  "zh-Hans": "赞妮"
+                },
+                "entity": {
+                  "entityId": 122007899,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_Player033",
+                  "name": "TsEntity_角色033_赞妮2",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947646,
+                    "y": 596999,
+                    "z": 5583
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Für sie war der Baum auf der Insel der letzte Blick auf das, was man als „Natur“ bezeichnen könnte.",
+                "en": "For them, the last glimpse of what could be called \"scenery\" was just this tree on the island.",
+                "es": "Para ellos, la última visión de lo que podría ser el mundo exterior era simplemente este árbol en la isla.",
+                "fr": "Pour eux, la dernière lueur de ce qu'on pouvait appeler « paysage » n'était que cet arbre sur l'île.",
+                "ja": "彼らの目に映る景色は、あの木だけだった。",
+                "ko": "그들의 관점에서 볼 때, 마지막으로 보이는 「경치」라고 할 수 있는 건 오직 이 섬에 있는 이 나무뿐이죠",
+                "th": "สำหรับพวกเขาแล้ว ภาพสุดท้ายของสิ่งที่เรียกว่า \"ทิวทัศน์\" ก็คือต้นไม้บนเกาะแห่งนี้นี่แหละ",
+                "zh-Hans": "从他们的视角来看，大多数人见到的最后一抹可以被称为“景色”的东西，就只有这岛上的这棵树而已。",
+                "zh-Hant": "從他們的視角來看，大多數人見到的最後一抹可以被稱為「景色」的東西，就只有島上的這棵樹而已。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1477,
+                "name": {
+                  "zh-Hans": "赞妮"
+                },
+                "entity": {
+                  "entityId": 122007899,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_Player033",
+                  "name": "TsEntity_角色033_赞妮2",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947646,
+                    "y": 596999,
+                    "z": 5583
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Doch dieser Baum, genährt von dürrem Boden und stillem Wasser, hätte sich niemals rot färben dürfen.",
+                "en": "But this tree, fed by barren soil and still waters should never have been able to turn red.",
+                "es": "Pero por qué se tornarían rojas sus hojas, es todo un misterio.",
+                "fr": "Mais cet arbre, nourri par un sol stérile et des eaux calmes, n'aurait jamais dû pouvoir devenir rouge.",
+                "ja": "今となっては、この木も色々な影響を受けて赤になることはなくなってしまったけどね。",
+                "ko": "하지만 이 나무는 물과 토양 때문에, 붉게 변하는 건 불가능한데...",
+                "th": "แต่ต้นไม้ต้นนี้ได้รับการหล่อเลี้ยงจากดินแห้งแล้งและน้ำที่ไหลนิ่ง มันไม่น่าจะเปลี่ยนเป็นสีแดงได้",
+                "zh-Hans": "不过，这树受水土影响，按道理应该永远也没法变红了。",
+                "zh-Hant": "不過，這樹受水土影響，按道理應該永遠也沒辦法變紅了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1477,
+                "name": {
+                  "zh-Hans": "赞妮"
+                },
+                "entity": {
+                  "entityId": 122007899,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_Player033",
+                  "name": "TsEntity_角色033_赞妮2",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947646,
+                    "y": 596999,
+                    "z": 5583
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens führt der Orden noch immer nichts Gutes im Schilde. Das Relikt, das die junge Akolythin mit sich trug, war eine Bombe. Sie reagierte auf die Widerhalle hier im Tresor … Ha, scheint, als müsste ich die Sache selber untersuchen. Wenn es so weitergeht, gehe ich nie in den Ruhestand.",
+                "en": "By the way, the Order is still up to no good. That relic the young Acolyte brought was a bomb. It reacted to the Reverberations here in the vault... Ha, looks like I'll have to investigate the matter myself. If this keeps up, I might never retire.",
+                "es": "Por cierto, la Orden sigue tramando cosas horribles. Aquella reliquia que trajo la acólita era una bomba que reaccionó a las Reverberaciones de la bóveda... ¡Ja! Seguro que me toca a mí investigar el asunto. Si esto sigue así, no me voy a poder jubilar en la vida.",
+                "fr": "Au fait, l'Ordre ne fait toujours rien de bon. Cette relique que la jeune acolyte a apportée était une bombe. Elle a réagi à la Réverbération dans la chambre forte... Ha, on dirait que je vais devoir enquêter moi-même sur cette affaire. Si ça continue, je ne prendrai peut-être jamais ma retraite.",
+                "ja": "そういえば、教団は何か企んでいたみたいだ。侍祭さんが持っていた収蔵品の正体は、残響に反応する爆弾。これから私は、その調査に向かうところだよ。はぁ、このままじゃ定年より先に過労死するかもね。",
+                "ko": "참, 수도회 쪽은 역시 여전했어요. 성직자 아가씨를 통해 보낸 물건은 사실 잔향에 반응하는 폭탄이더라고요... 하, 이번 조사도 제가 맡게 될 것 같은데, 이러다가 살아서 퇴직할 수 있기는 한 건지 모르겠네요",
+                "th": "จริงสิ ภาคียังทำเรื่องไม่ดีอยู่ วัตถุศักดิ์สิทธิ์ที่นักบวชหนุ่มนำมาคือระเบิด และมันตอบสนองต่อเสียงกังวานในห้องนิรภัยนี้... ฮ่า ดูท่าฉันคงต้องตรวจสอบเรื่องนี้ด้วยตัวเองแล้วล่ะ ขืนเป็นแบบนี้ต่อไป ฉันคงไม่ได้เกษียณกันพอดี",
+                "zh-Hans": "对了，修会那边还是不老实，让教士小姐带来的东西，其实是一颗会对残响起反应的炸弹……哈，调查的活儿估计又要按在我身上，再这样下去不知道能不能熬到退休。",
+                "zh-Hant": "對了，修會那邊還是不老實，讓教士小姐帶來的東西其實是一顆會對殘響起反應的炸彈……哈，調查的工作估計又要按在我身上，再這樣下去不知道能不能熬到退休。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1477,
+                "name": {
+                  "zh-Hans": "赞妮"
+                },
+                "entity": {
+                  "entityId": 122007899,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_Player033",
+                  "name": "TsEntity_角色033_赞妮2",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 947646,
+                    "y": 596999,
+                    "z": 5583
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

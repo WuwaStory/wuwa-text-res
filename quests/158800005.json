@@ -1,0 +1,748 @@
+{
+  "id": 158800005,
+  "key": "BossRush2引导",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Taktische Simulacra: Fortsetzung",
+    "en": "Tactical Simulacra: Rerun",
+    "es": "Simulacro táctico: Reedición",
+    "fr": "Analogue tactique II",
+    "ja": "強音シミュ・続",
+    "ko": "모킹 전략 · Ⅱ",
+    "th": "ซิมูลาครายุทธวิธี: รีรัน",
+    "zh-Hans": "仿声战略·续",
+    "zh-Hant": "仿聲戰略·續"
+  },
+  "desc": {
+    "de": "Die Akademie stellt Freiwillige für ihre Forschungsprojekte erneut ein. Sprich mit Hongjing, um mehr zu erfahren.",
+    "en": "The Academy is recruiting volunteers for another experiment. Find Hongjing to learn more.",
+    "es": "La Academia está reclutando voluntarios para otro experimento. Busca a Hongjing para saber más.",
+    "fr": "L'Institut recrute à nouveau des volontaires pour ses projets expérimentaux... Parler avec Hongjing pour en savoir plus.",
+    "ja": "研究所の実験プロジェクトがまたボランティアを募集しているようだ……虹敬に詳細を聞いてみよう。",
+    "ko": "연구원의 실험 프로젝트에서 또 지원자를 모집하고 있습니다... 홍경을 찾아가서 상황을 알아보세요",
+    "th": "สถาบันกำลังรับอาสาสมัครสำหรับการทดลองอีกครั้ง ไปถามได้จากหงจิ่ง",
+    "zh-Hans": "研究院的实验项目又在招揽志愿者了……去找虹敬了解一下情况吧？",
+    "zh-Hant": "研究院的實驗專案又在招攬志願者了……去找虹敬了解一下情況吧？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Hongjing",
+        "en": "Talk to Hongjing",
+        "es": "Habla con Hongjing.",
+        "fr": "Parler avec Hongjing",
+        "ja": "虹敬と会話する",
+        "ko": "홍경과 대화하기",
+        "th": "คุยกับหงจิ่ง",
+        "zh-Hans": "和虹敬对话",
+        "zh-Hant": "和虹敬對話"
+      },
+      "entities": [
+        {
+          "entityId": 158800039,
+          "mapId": 8,
+          "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+          "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+          "areaId": 301,
+          "position": {
+            "x": -34251,
+            "y": 97459,
+            "z": 1890
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_4_BossRush2引导任务剧情",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Verzeihung. {PlayerName}. Nur einen Moment bitte.",
+                "en": "Excuse me, {PlayerName}. A moment of your time, please.",
+                "es": "Disculpa, {PlayerName}. ¿Tienes un momentito?",
+                "fr": "Excuse-moi, {PlayerName}. Aurais-tu une minute à m'accorder ?",
+                "ja": "{PlayerName}、ちょっといいか？",
+                "ko": "{PlayerName}. 실례합니다",
+                "th": "ขอโทษนะ {PlayerName} ขอรบกวนเวลาหน่อย",
+                "zh-Hans": "{PlayerName}，打扰你一下。",
+                "zh-Hant": "{PlayerName}，打擾一下。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir starten eine neue Testphase für das Forschungsprojekt, an dem du letztes Mal teilgenommen hast. Hättest du Interesse, wieder mitzumachen?",
+                "en": "We're running a new testing phase for the research project you previously participated. Are you interested in joining us again?",
+                "es": "Estamos comenzando una nueva fase de pruebas para el proyecto de investigación en el que participaste. ¿Te gustaría unirte nuevamente?",
+                "fr": "On est sur une nouvelle phase test d'un projet de recherche à laquelle tu avais déjà participé. Ça te dirait d'y prendre part à nouveau ?",
+                "ja": "前回参加してもらった実験について、最近新しいテストを始めたんだが、また参加するつもりはあるか？",
+                "ko": "지난번에 참가하셨던 실험 프로젝트에서 최근 새로운 테스트가 시작되었는데, 혹시 관심이 있으신가요?",
+                "th": "เรากำลังทำการทดลองรอบใหม่ของโครงการวิจัยที่คุณเคยเข้าร่วมมาก่อน คุณสนใจเข้าร่วมอีกครั้งไหม?",
+                "zh-Hans": "之前你参加过的一项实验项目，最近开始了新一期的测试，不知道你是否感兴趣？",
+                "zh-Hant": "之前你參加過的一個實驗專案，最近開始了新一期的測試，不知道你是否感興趣？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin schon gespannt.",
+                    "en": "I'm interested.",
+                    "es": "Me interesa.",
+                    "fr": "Oui, je veux bien.",
+                    "ja": "あるよ。",
+                    "ko": "네, 관심 있어요",
+                    "th": "ฉันสนใจ",
+                    "zh-Hans": "有兴趣。",
+                    "zh-Hant": "有興趣。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Schon wieder?",
+                    "en": "I'm not interested.",
+                    "es": "No me interesa.",
+                    "fr": "Non, merci.",
+                    "ja": "{Male=ないな。;Female=ないね。}",
+                    "ko": "아니요, 관심 없어요",
+                    "th": "ฉันไม่สนใจ",
+                    "zh-Hans": "没兴趣。",
+                    "zh-Hant": "沒興趣。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gut. Erlaub mir bitte, unsere Forschung nochmals vorzustellen.",
+                "en": "Great. Allow me to introduce our research once more.",
+                "es": "Genial. Permíteme presentar nuestra investigación una vez más.",
+                "fr": "Super ! Je t'explique à nouveau le but du projet.",
+                "ja": "ありがとう。それじゃあ、内容について説明しよう。",
+                "ko": "잘 됐네요. 프로젝트 내용을 다시 한번 소개해 드릴게요",
+                "th": "ดีเลย ฉันขอแนะนำงานวิจัยของเราอีกครั้ง",
+                "zh-Hans": "太好了，我再跟你介绍一下项目的内容吧。",
+                "zh-Hant": "太好了，我再跟你介紹一下專案的情況吧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du musst nicht sofort ablehnen. Lass mich unsere Forschung noch einmal vorstellen.",
+                "en": "No need to decline just yet. Allow me to introduce our research once more.",
+                "es": "No es necesario rechazar aún. Permíteme presentarte nuestra investigación nuevamente.",
+                "fr": "Attends avant de refuser. Je vais te réexpliquer en quoi consistent nos recherches.",
+                "ja": "ひとまず、話だけでも聞いてくれ。",
+                "ko": "제가 프로젝트의 상황을 다시 소개해 드릴 테니 한 번만 더 들어봐 주시겠어요?",
+                "th": "อย่าเพิ่งรีบปฏิเสธ ให้ฉันแนะนำงานวิจัยของเราอีกครั้งนะ",
+                "zh-Hans": "不用急着拒绝，我再给你介绍一下项目的情况吧。",
+                "zh-Hant": "不用急著拒絕，我再給你介紹一下專案的情況吧。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast bestimmt die Simulation von Instruktor Yhan erlebt, oder?",
+                "en": "I'm sure you have experience with Instructor Yhan's simulated training grounds.",
+                "es": "Estoy seguro de que tienes experiencia con los campos de entrenamiento simulados del Instructor Yhan.",
+                "fr": "Tu connais le terrain des simulations d'entraînement de Maître Yhan, n'est-ce pas ?",
+                "ja": "これまでに厳彦さんのところで、仮想訓練に参加したことはあるか？",
+                "ko": "엄언 형님의 시뮬레이션 영역에서 진행되는 훈련에 참여하신 적 있죠?",
+                "th": "ฉันแน่ใจว่าคุณเคยมีประสบการณ์ในสนามฝึกจำลองของครูฝึกเหยียนมาแล้ว",
+                "zh-Hans": "你想必在严彦大哥那里的模拟领域参与过训练吧？",
+                "zh-Hant": "你想必在嚴彥大哥那裡的模擬領域參與過訓練吧？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist der Ort, an dem die Krieger trainieren, indem sie gegen Hologramme der Feinde kämpfen, um ihre Kampffähigkeiten zu verbessern.",
+                "en": "It's where our warriors go to train against holograms of enemies and improve their combat skills.",
+                "es": "Es donde nuestros guerreros van a entrenar contra hologramas de enemigos y mejorar sus habilidades de combate.",
+                "fr": "C'est là-bas que nos soldats s'entraînent contre des hologrammes pour améliorer leurs compétences en combat.",
+                "ja": "戦士たちは仮想空間の中で作られた敵と戦闘訓練をするんだ。そこで戦闘技術を鍛えることができる。",
+                "ko": "전사들은 시뮬레이션 영역에 들어가 그 속에서 나타나는 적을 쓰러뜨리는 것을 통해 자신의 전투 기술을 훈련해요",
+                "th": "ที่นั่นเป็นสถานที่ที่นักรบของเราฝึกต่อสู้กับโฮโลแกรมของศัตรูและพัฒนาทักษะการต่อสู้ของพวกเขา",
+                "zh-Hans": "战士们进入模拟领域，击败其中出现的敌人，以此训练自己的战斗技巧。",
+                "zh-Hant": "戰士們進入模擬領域，擊敗其中出現的敵人，以此訓練自己的戰鬥技巧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zuletzt hat die Akademie versucht, mit einer ausgeklügelten „Projektions-Technologie“ noch stärkere Gegner zu simulieren.",
+                "en": "A while back, the Academy began testing an improved \"projection\" technology to simulate even stronger enemies.",
+                "es": "Hace un tiempo, la Academia comenzó a probar una tecnología de \"proyección\" mejorada para simular enemigos aún más fuertes.",
+                "fr": "Il y a quelque temps, l'Académie a commencé à tester une technologie d' « hologramme » amélioré pour simuler des ennemis plus puissants.",
+                "ja": "近頃、研究院では新たに「投影」技術というものの実用化に力を入れている。これを使えば仮想空間にさらに強い敵を生み出すことができるんだ。",
+                "ko": "얼마 전, 연구원에서는 더 강력한 적을 만들어내기 위해 새로운 「투영」 기술을 사용하기 시작했어요",
+                "th": "เมื่อไม่นานมานี้ สถาบันได้เริ่มทดลองใช้เทคโนโลยี \"ภาพฉาย\" รูปแบบใหม่ เพื่อจำลองศัตรูที่แข็งแกร่งขึ้น",
+                "zh-Hans": "一段时间以前，研究院开始尝试使用一种全新的“投影”技术，模拟出更加强大的敌人。",
+                "zh-Hant": "一段時間以前，研究院開始嘗試使用一種全新的「投影」技術，模擬出更加強大的敵人。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn sich die Technologie als wirksam erweist, können wir unseren Soldaten eine umfassendere Ausbildung bieten. Das bedeutet bessere Ergebnisse für ihre gesamten Bedürfnisse.",
+                "en": "If the technology is proven effective, we can provide more comprehensive training for our soldiers. This means better results for their overall needs.",
+                "es": "Si la tecnología resulta efectiva, podremos ofrecer un entrenamiento más completo a nuestros soldados, mejorando así sus resultados generales.",
+                "fr": "Si la technologie est efficace, nous pourrons fournir des entraînements plus complets à nos soldats et améliorer leur niveau de façon globale.",
+                "ja": "この技術が実際に投入されれば、仮想訓練の内容もこれまで以上に充実したものになると思う。訓練の効果も格段に上がるはずだ。",
+                "ko": "이 기술이 구현된다면 향후 시뮬레이션 영역에서의 훈련이 더욱 다양해질 뿐만 아니라, 훈련 효과 또한 크게 향상될 수 있죠",
+                "th": "หากเทคโนโลยีนี้มีประสิทธิภาพ เราก็จะสามารถฝึกฝนทหารของเราได้ครอบคลุมมากขึ้น ซึ่งหมายถึงผลลัพธ์ที่ดีกว่าในภาพรวม",
+                "zh-Hans": "如果这项技术能够落地，往后模拟领域中的训练就能更加丰富，极大地提高训练的效果。",
+                "zh-Hant": "如果這項技術能夠落地，往後模擬領域中的訓練就能更加豐富，極大地提高訓練的效果。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben bedeutende technische Durchbrüche seit dem letzten Test erzielt, aber viele kleine Details müssen noch ausgearbeitet werden.",
+                "en": "We managed to make significant technical breakthroughs from the previous test, but many minute details still need ironing out.",
+                "es": "Logramos realizar avances técnicos significativos desde la prueba anterior, pero aún hay muchos detalles pequeños que necesitan pulirse.",
+                "fr": "On a réussi à faire d'incroyables progrès techniques depuis le dernier test, mais il reste encore beaucoup de petits détails à régler.",
+                "ja": "でも「投影」技術はまだテスト中だから、細かいところを色々と改善しないといけない。",
+                "ko": "저번 실험 결과를 바탕으로 연구원의 시뮬레이션 기술에 큰 돌파구가 마련되긴 했지만, 개선이 필요한 기술적 세부 사항이 여전히 많은 상황이에요",
+                "th": "เราประสบความสำเร็จอย่างมากจากการทดลองครั้งก่อน แต่ยังมีรายละเอียดเล็กๆ น้อยๆ อีกมากที่ต้องปรับปรุง",
+                "zh-Hans": "基于上次的实验成果，研究院的模拟技术已经有了很大突破，但仍有许多技术细节需要完善。",
+                "zh-Hant": "基於上次的實驗成果，研究院的模擬技術已經有了很大突破，但仍有許多技術細節需要完善。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wärst du bereit, es für uns zu testen und uns erneut bei unserer Forschung zu helfen?",
+                "en": "Would you be willing to test it out for us and help with our research again?",
+                "es": "¿Te gustaría probarlo de nuevo y ayudarnos con nuestra investigación?",
+                "fr": "Accepterais-tu de le tester à nouveau, pour nous aider dans nos recherches ?",
+                "ja": "だからあなたにもう一度テストに参加してもらいたいんだ。お願いできないかな？",
+                "ko": "다시 한번 테스터가 되어 프로젝트의 연구를 도와주시면 안될까요?",
+                "th": "คุณยินดีที่จะช่วยเราทดลอง และช่วยงานวิจัยของเราอีกครั้งไหม?",
+                "zh-Hans": "你愿意再次成为测试者，来帮助项目的研究吗？",
+                "zh-Hant": "你願意再次成為測試者，來幫助專案的研究嗎？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Verlass dich auf mich.",
+                    "en": "Leave it to me.",
+                    "es": "Cuenta conmigo.",
+                    "fr": "Je m'en occupe.",
+                    "ja": "任せて。",
+                    "ko": "제게 맡겨 주세요",
+                    "th": "เชื่อมือฉันได้เลย",
+                    "zh-Hans": "交给我吧。",
+                    "zh-Hant": "交給我吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Was werde ich dafür bezahlt bekommen?",
+                    "en": "What am I getting paid?",
+                    "es": "¿Y la recompensa?",
+                    "fr": "Y a-t-il des récompenses ?",
+                    "ja": "今回の報酬は？",
+                    "ko": "이번 보수는 얼마죠?",
+                    "th": "ฉันจะได้ค่าตอบแทนอะไรบ้าง?",
+                    "zh-Hans": "这次报酬多少？",
+                    "zh-Hant": "這次報酬多少？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Gibt es Vorteile für langjährige Kunden?",
+                    "en": "Any longtime client benefits?",
+                    "es": "¿Hay beneficios para clientes antiguos?",
+                    "fr": "Y a-t-il des bonus pour les clients de longue date ?",
+                    "ja": "何か特別報酬はない？",
+                    "ko": "단골 이용자 혜택은 없나요?",
+                    "th": "มีสิทธิพิเศษของผู้ช่วยเก่าไหม?",
+                    "zh-Hans": "有没有什么老用户福利？",
+                    "zh-Hant": "有沒有什麼老用戶福利？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich wusste, dass ich auf dich zählen kann.",
+                "en": "I knew I could count on you.",
+                "es": "Sabía que podía contar contigo.",
+                "fr": "Je savais que je pouvais compter sur toi !",
+                "ja": "そう来なくちゃな。",
+                "ko": "역시 물어보길 잘 한 것 같네요",
+                "th": "ฉันรู้ว่าฉันไว้ใจคุณได้",
+                "zh-Hans": "我果然没问错人。",
+                "zh-Hant": "我果然沒問錯人。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Zugang zur Simulation befindet sich direkt neben mir. Viel Glück dabei.",
+                "en": "The access to the simulation is right beside me. Best of luck to you.",
+                "es": "El acceso a la simulación está justo a mi lado. ¡Mucha suerte!",
+                "fr": "L'accès à la simulation se trouve juste à côté de moi. Bonne chance !",
+                "ja": "今回の実験の仮想訓練の入口は俺の隣にある、健闘を祈ってるよ。",
+                "ko": "제 옆에 있는 것이 이번 실험 프로젝트의 시뮬레이션 영역 입구에요. 그럼 잘 부탁드려요",
+                "th": "ทางเข้าสนามจำลองอยู่ข้างๆ ฉันนี้เอง ขอให้โชคดีนะ",
+                "zh-Hans": "在我旁边的就是这次实验项目的模拟领域入口，祝你测试顺利。",
+                "zh-Hant": "在我旁邊的就是這次實驗專案的模擬領域入口，祝你測試順利。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sei versichert, da du unser Top-Teilnehmer bei den vorherigen Tests warst, werden deine Bemühungen mit den besten Ressourcen unterstützt, die die Akademie zu bieten hat.",
+                "en": "Rest assured, having been our top participant in the previous testing, your efforts will be supported by the best resources the Academy has to offer.",
+                "es": "Ten la certeza de que, como {Male=nuestro;Female=nuestra} mejor participante en la prueba anterior, tus esfuerzos contarán con los mejores recursos que la Academia puede ofrecer.",
+                "fr": "Ne t'en fais pas, tu étais {Male=le meilleur candidat;Female=la meilleure candidate} lors du précédent test. L'Académie t'offrira ses meilleures ressources pour récompenser tes efforts.",
+                "ja": "それなら安心してくれ。前回のテスターの中で、あなたは一番優秀だったんだから、研究院はできる限りの協力をするはずだ。",
+                "ko": "그건 걱정하실 필요 없어요. 연구원에서는 지난 실험에서 가장 우수한 지원자인 당신에게 최고의 지원을 아끼지 않을 테니까요",
+                "th": "ไม่ต้องกังวลเลย ในฐานะที่คุณเป็นผู้มีส่วนร่วมระดับแนวหน้าของการทดลองครั้งก่อน ความพยายามของคุณจะได้รับการสนับสนุนด้วยทรัพยากรที่ดีที่สุดของสถาบัน",
+                "zh-Hans": "这个你可以放心。你是上一期实验中最优秀的志愿者，研究院一定会提供最好的支持。",
+                "zh-Hant": "這個你可以放心。你是上一期實驗中最優秀的志願者，研究院一定會提供最好的支持。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Zugang zur Simulation ist direkt neben mir. Glaub mir, die Belohnungen werden dich nicht enttäuschen.",
+                "en": "The access to the simulation is right beside me. Trust me, the rewards will not disappoint.",
+                "es": "El acceso a la simulación está justo a mi lado. Confía en mí, las recompensas no te decepcionarán.",
+                "fr": "L'accès à la simulation se trouve juste à côté de moi. Fais-moi confiance, ta récompense en vaudra la peine.",
+                "ja": "今回の実験の仮想訓練の入口は俺の隣にある、見返りはたんまりあるから、頑張れよ。",
+                "ko": "제 옆에 있는 것이 이번 실험 프로젝트의 시뮬레이션 영역 입구에요. 저를 믿어 주세요. 보상은 섭섭지 않을 테니까요",
+                "th": "ทางเข้าสนามจำลองอยู่ข้างๆ ฉันนี้เอง เชื่อเถอะ รางวัลนั้นไม่ทำให้ผิดหวังแน่นอน",
+                "zh-Hans": "在我旁边的就是这次实验项目的模拟领域入口，相信我，回报不会让你失望的。",
+                "zh-Hant": "在我旁邊的就是這次實驗專案的模擬領域入口，相信我，報酬不會讓你失望的。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 800091,
+                "name": {
+                  "zh-Hans": "虹敬"
+                },
+                "entity": {
+                  "entityId": 158800039,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "name": "TsEntity_虹敬（4880022——BOSSRush2）",
+                  "areaId": 301,
+                  "position": {
+                    "x": -34251,
+                    "y": 97459,
+                    "z": 1890
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

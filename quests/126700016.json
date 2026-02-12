@@ -1,0 +1,280 @@
+{
+  "id": 126700016,
+  "key": "倾听动物之声·鸟语翻译",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lauschen auf die Worte der Tiere: Übersetzung der Vogelsprache",
+    "en": "Listen to Animals' Words: Translation of Bird's Language",
+    "es": "Escuchar las palabras de los animales: Traducción del lenguaje de los pájaros",
+    "fr": "Écouter la voix des animaux : Oiseau",
+    "ja": "動物の声を聞こう・鳥語通訳",
+    "ko": "동물의 소리 듣기·새 언어 번역",
+    "th": "รับฟังคำพูดสัตว์: คำแปลภาษานก",
+    "zh-Hans": "倾听动物之声·鸟语翻译",
+    "zh-Hant": "傾聽動物之聲·鳥語翻譯"
+  },
+  "desc": {
+    "de": "Du triffst Xuanyin wieder. Dieses Mal versucht sie, mit einem Grauen Haubentaucher zu sprechen...",
+    "en": "You meet Xuanyin again. This time, she is trying to talk to a Gray Crested Gull...",
+    "es": "Te encuentras con Xuanyin de nuevo. Esta vez, está intentando hablar con una Gaviota de cresta gris...",
+    "fr": "Vous rencontrez à nouveau Xuanyin qui essaie de parler à une mouette grise...",
+    "ja": "再び懸音と出会った。彼女は灰冠に話しかけているようだ……",
+    "ko": "다시 한번 현음과 마주쳤습니다. 그녀가 회색머리갈매기와 대화를 하려고 합니다...",
+    "th": "คุณพบ Xuanyin อีก ครั้งนี้เธอพยายามคุยกับนกนางนวลหัวเทา",
+    "zh-Hans": "你又见到了悬音，她在尝试和灰冠鸥对话……",
+    "zh-Hant": "你又見到了懸音，她在嘗試和灰冠鷗對話……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe eine Sternenflocke an Xuanyin",
+        "en": "Deliver a Star Flake to Xuanyin",
+        "es": "Entrega una Escama de Estrella a Xuanyin",
+        "fr": "Donner les Frites étoilées à Xuanyin",
+        "ja": "星ナゲットを懸音に渡す",
+        "ko": "현음에게 별튀김 전달하기",
+        "th": "ส่งมอบสตาร์เฟลกส์ให้ Xuanyin",
+        "zh-Hans": "将一份星星酥给悬音",
+        "zh-Hant": "將一份星星酥給懸音"
+      },
+      "entities": [
+        {
+          "entityId": 126000168,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "倾听动物之声_恶霸鸥_悬音",
+          "areaId": 1002,
+          "position": {
+            "x": 55641,
+            "y": 241920,
+            "z": 200
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_世界事件_倾听动物之声_恶霸鸥",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein Grauer Haubentaucher hat dir überraschend Sternenflocken weggeschnappt und ist weggeflogen, schwebt über deinem Kopf und macht sich über dich lustig.",
+                "en": "A Gray Crested Gull grabs the Star Flakes from you by surprise and flies away, hovering above your head and mocking you.",
+                "es": "Una Gaviota de cresta gris te quitó los Copos de estrellas por sorpresa y voló lejos, sobrevolando tu cabeza y burlándose de ti.",
+                "fr": "Une mouette grise vous a pris par surprise des Frites étoilées et s'est envolée, planant au-dessus de vos têtes et se moquant de vous.",
+                "ja": "【灰冠は星ナゲットを奪い、挑発するようにあなたたちの頭上でグルグル回っている】",
+                "ko": "[방심한 사이 회색머리갈매기가 별튀김을 물고 도망간 뒤, 머리 위를 맴돌며 도발한다]",
+                "th": "นกนางนวลหัวเทาตัวหนึ่งมาฉวยสตาร์เฟลกส์ไปจากคุณโดยไม่รู้ตัวแล้วบินหนีไป มันร่อนอยู่เหนือศีรษะและล้อเลียนคุณ",
+                "zh-Hans": "【灰冠鸥趁你们不备抢走了星星酥，扬长而去，在你们的头顶挑衅地盘旋。】",
+                "zh-Hant": "【灰冠鷗趁你們不備搶走了星星酥，揚長而去，在你們的頭頂挑釁地盤旋。】"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Machen sie sich über uns lustig?",
+                "en": "Are they mocking us?",
+                "es": "¿Nos están burlando?",
+                "fr": "Se moquent-elle de nous ?",
+                "ja": "嘲笑うかのような鳴き声ですね……。",
+                "ko": "울음소리가 마치 비웃는 것처럼 들려요...",
+                "th": "พวกมันล้อเลียนเราเหรอ?",
+                "zh-Hans": "它们的叫声听起来好像嘲笑……",
+                "zh-Hant": "它們的叫聲聽起來好像嘲笑……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Laut den Informationen, die ich nachgeschaut habe, sind neben Sternenflocken auch andere frittierte Lebensmittel sehr attraktiv für sie.",
+                "en": "According to the information I've looked up, aside from Star Flakes, other fried foods are also very appealing to them.",
+                "es": "Según la información que he buscado, aparte de los Copos de estrellas, otros alimentos fritos también son muy atractivos para ellas.",
+                "fr": "On dit qu'outre les Frites étoilées, d'autres aliments frits leur plaisent également beaucoup.",
+                "ja": "資料によると、星ナゲット以外に、他の揚げ物も大好物らしいです。",
+                "ko": "제가 찾은 자료에 따르면, 회색머리갈매기는 별튀김 외에 다른 튀김 음식도 좋아해요",
+                "th": "ตามข้อมูลที่ฉันค้นมา นอกจากสตาร์เฟลกส์แล้ว นกพวกนี้ยังชอบอาหารทอดอื่นๆ ด้วย",
+                "zh-Hans": "根据我查阅的资料来看，除了星星酥，其他的油炸食物也对灰冠鸥有非同寻常的吸引力。",
+                "zh-Hant": "根據我查閱的資料來看，除了星星酥，其他的油炸食物也對灰冠鷗有非同尋常的吸引力。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da die Grauen Haubentaucher es genießen, anderen das Essen zu stehlen, sind sie auch als \"Piratenmöwen\" bekannt.",
+                "en": "As the Gray Crested Gulls enjoy stealing others' food, they are also known as \"Pirate Gulls\".",
+                "es": "Como a las Gaviotas de cresta gris les gusta robar la comida de otros, también son conocidas como \"Gaviotas Piratas\".",
+                "fr": "Comme elles aiment voler, elles sont également connues sous le nom de « Mouettes pirates ».",
+                "ja": "灰冠はこの強盗みたいな習性から、「海賊カモメ」とも呼ばれています。",
+                "ko": "저 새들이 하는 짓이 꼭 강도짓 같아서 「해적 갈매기」 라고도 불려요",
+                "th": "เนื่องจากนกนางนวลหัวเทาชอบขโมยอาหาร จึงมีชื่อเรียกอีกชื่อหนึ่งว่า \"นกนางนวลโจรสลัด\"",
+                "zh-Hans": "这和它们的强盗作风一样，所以它们也被叫做「海贼鸥」。",
+                "zh-Hant": "這和它們的強盜作風一樣，所以它們也被叫做「海賊鷗」。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist interessant.",
+                    "en": "That's interesting.",
+                    "es": "Eso es interesante.",
+                    "fr": "C'est intéressant.",
+                    "ja": "そうなんだ？",
+                    "ko": "역사 기록이 있나요?",
+                    "th": "น่าสนใจ",
+                    "zh-Hans": "有历史记载吗？",
+                    "zh-Hant": "有歷史記載嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Sie werden häufig in der Nähe von \"Kais\" und Orten, an denen Pommes frites verkauft werden, gesichtet.",
+                "en": "Yes. They are frequently spotted around \"wharves\" and places where potato fries are sold.",
+                "es": "Sí. Se les ve a menudo alrededor de \"muelles\" y lugares donde se venden patatas fritas.",
+                "fr": "Oui. Le mot « quais » apparaît fréquemment, et le mot « donner » aussi... Et il semble qu'elles parlent également des langues étrangères.",
+                "ja": "はい、主に「港」や「フライドポテト」といったことと関係しているみたいですよ。",
+                "ko": "꽤 많은데, 기록에서 가장 많이 언급된 단어는 「부두」와 「정각」이라는 방언이에요",
+                "th": "ใช่ นกพวกนี้มักโผล่มาให้เห็นแถว \"ท่าเรือ\" และสถานที่ที่มีมันฝรั่งทอดขาย",
+                "zh-Hans": "还挺多，记载中提及最多的关键字有「码头」，和某种方言「整点」。",
+                "zh-Hant": "還挺多，記載中提及最多的關鍵字有「碼頭」，和某種方言「整點」。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gib her! *unverständlicher Text*",
+                "en": "Gimme! *garbled text*",
+                "es": "¡Dame! *texto ininteligible*",
+                "fr": "Gibbbbbbbbb mir!!!! Gimmmmmmeeeee !  给给！*texte barbouillé*",
+                "ja": "く！く！く！くれくれくれ！*文字化け*",
+                "ko": "딱... 딱딱딱!! *오류*",
+                "th": "ขอหน่อย! *ข้อความอ่านไม่รู้เรื่อง*",
+                "zh-Hans": "整……整整整整整整点！！*乱码*",
+                "zh-Hant": "整……整整整整整整點！！*亂碼*"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 362,
+                "name": {
+                  "zh-Hans": "灰冠鸥（翻译）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warum friert das Modul ein? Ich sollte es für den Moment deinstallieren. Es scheint, als gäbe es keinen Speicherplatz auf deinem Pangu-Terminal.",
+                "en": "Why is the module freezing? I'd better uninstall it for now. Seems like there is no storage on your Pangu Terminal.",
+                "es": "¿Por qué se está congelando el módulo? Será mejor que lo desinstale por ahora. Parece que no hay almacenamiento en tu Terminal Pangu.",
+                "fr": "Pourquoi le module se bloque-t-il ? Je ferais mieux de le désinstaller pour l'instant.",
+                "ja": "モジュールが反応しません！デバイスの容量が足りないみたいですね。一旦外しましょう！",
+                "ko": "모듈이 왜 아직도 버벅이는거지... 빨리 모듈을 제거하세요. 저장해야 할 것 같아요",
+                "th": "ทำไมโมดูลถึงหยุดทำงานนะ? ฉันถอนการติดตั้งเสียตอนนี้ดีกว่า ดูเหมือนเทอร์มินัลผานกู่ของคุณจะไม่มีที่จัดเก็บข้อมูลแล้ว",
+                "zh-Hans": "模块怎么还卡机了！赶紧把模块卸载吧，盘古终端缓存告急了。",
+                "zh-Hant": "模組怎麼還卡機了！趕緊把模組卸載吧，盤古終端緩存告急了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Xuanyin hat das Vogelsprachen-Übersetzungsmodul von deinem Pangu-Terminal deinstalliert und die zugehörigen Daten übertragen.",
+                "en": "Xuanyin uninstalls the Bird Language Translation Module from your Pangu Terminal and transmits the related data back to her.",
+                "es": "Xuanyin desinstaló el Módulo de Traducción de Lenguaje de Pájaros de tu Terminal Pangu y transmitió los datos relacionados.",
+                "fr": "Xuanyin a désinstallé le module et a transmis les données.",
+                "ja": "【懸音はあなたのデバイスから鳥語翻訳モジュールを外し、データを記録した】",
+                "ko": "[현음이 단말기에서 새 언어 번역 모듈을 제거하고 관련 데이터를 전송한다]",
+                "th": "Xuanyin ถอนการติดตั้งโมดูลแปลภาษานกออกจากเทอร์มินัลผานกู่ของคุณ และส่งข้อมูลที่เกี่ยวข้องกลับไปให้ตัวเอง",
+                "zh-Hans": "【悬音将鸟语翻译模块从你的盘古终端上卸载，并回传了相关数据。】",
+                "zh-Hant": "【懸音將鳥語翻譯模塊從你的盤古終端上卸載，並回傳了相關數據。】"
+              },
+              "id": 8
+            },
+            {
+              "text": {
+                "de": "Hatschi, hatschi, ich muss schnell zurück und mich aufwärmen. Bis zum nächsten Mal.",
+                "en": "Ah-choo, ah-choo, I need to hurry back and warm myself up. See you next time.",
+                "es": "¡Achís, achís, necesito apresurarme a volver y calentarme! Nos vemos la próxima vez.",
+                "fr": "Atchoum, atchoum...! Hélas, je dois me dépêcher de rentrer et de me réchauffer. A la prochaine fois.",
+                "ja": "っくしゅ、っくしゅ！……早く帰って温まらないと。今回はここまでにしましょう。",
+                "ko": "에취, 에취, 너무 춥네요. 빨리 돌아가야겠어요. 다음에 또 봐요",
+                "th": "ฮัดชิ่ว ฮัดชิ่ว ฉันต้องรีบกลับไปทำตัวให้อบอุ่นซะแล้ว ค่อยพบกันใหม่คราวหน้านะ",
+                "zh-Hans": "阿嚏，阿嚏，我得赶紧回去暖和暖和，下次再见了。",
+                "zh-Hant": "阿嚏，阿嚏，我得趕緊回去暖和暖和，下次再見了。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

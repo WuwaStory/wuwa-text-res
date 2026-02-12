@@ -1,0 +1,1788 @@
+{
+  "id": 310000041,
+  "key": "爬塔",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Allein in der Tiefe",
+    "en": "Alone in the Abyss",
+    "es": "Solo en el abismo",
+    "fr": "Le franc-tireur",
+    "ja": "深塔へ赴く",
+    "ko": "심연에서의 독행",
+    "th": "โดดเดี่ยวในห้วงนรก",
+    "zh-Hans": "独行深渊",
+    "zh-Hant": "獨行深淵"
+  },
+  "desc": {
+    "de": "Du erhältst eine dringende Nachricht von der Huaxu-Akademie, die dringende Unterstützung benötigt. Gehe zum angegebenen Ort, um mehr Informationen zu erhalten.",
+    "en": "You receive an urgent message from Huaxu Academy for emergency support. Head to the designated location for more information.",
+    "es": "Recibes un mensaje urgente de la Academia Huaxu para apoyo de emergencia. Dirígete a la ubicación designada para más información.",
+    "fr": "Vous recevez un message urgent de l'Académie de Huaxu demandant un soutien d'urgence. Rendez-vous sur le lieu indiqué pour en savoir plus.",
+    "ja": "華胥研究院からの緊急連絡があった。指定座標に行き、状況を調べよう。",
+    "ko": "화서연구원에서 긴급 지원 통신이 수신되었습니다. 통신에 표시된 주소로 찾아가 상황을 확인하세요",
+    "th": "คุณได้รับข้อความขอความช่วยเหลือด่วนจากสถาบันหัวซวี ไปยังตำแหน่งที่ระบุเพื่อรับข้อมูลเพิ่มเติม",
+    "zh-Hans": "收到了来自华胥研究所的紧急情况支援通讯，前往通讯中标注的地址查看情况。",
+    "zh-Hant": "收到了來自華胥研究所的緊急情况支援通訊，前往通訊中標注的地址查看情况。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zu dem angegebenen Ort",
+        "en": "Head to the designated location",
+        "es": "Dirígete a la ubicación designada",
+        "fr": "Se rendre au lieu mentionné par l'appel",
+        "ja": "指定座標に向かう",
+        "ko": "통신 중의 좌표로 이동",
+        "th": "ไปยังตำแหน่งที่กำหนด",
+        "zh-Hans": "前往通讯中标注的坐标",
+        "zh-Hant": "前往通訊中標注的座標"
+      },
+      "entities": [
+        {
+          "entityId": 11800040,
+          "mapId": 8,
+          "blueprintType": "SimpleNPC-154女_150",
+          "name": "SimpleNPC_154女_175",
+          "areaId": 1301,
+          "position": {
+            "x": 25930,
+            "y": 79060,
+            "z": 115
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109003466,
+          "mapId": 8,
+          "blueprintType": "Teleport003",
+          "name": "TsEntity_传送_华表中",
+          "areaId": 1301,
+          "position": {
+            "x": 27930,
+            "y": 78720,
+            "z": 76
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 3
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000660,
+          "mapId": 8,
+          "blueprintType": "Player005",
+          "name": "TsEntity_角色005_散华",
+          "areaId": 1301,
+          "position": {
+            "x": 25830,
+            "y": 79050,
+            "z": 115
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_中曲台地支线",
+          "flowIndex": 31,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ja, meine Dame, alles ist erledigt. Mach dir keine Sorgen.",
+                "en": "Yes, my lady. Everything has been taken care of. Don't worry.",
+                "es": "Sí, mi señora, todo ha sido atendido. No te preocupes.",
+                "fr": "Oui, tout est fait, ne vous inquiétez pas.",
+                "ja": "はい、既に解決しました。ご安心ください。",
+                "ko": "네, 이제 끝났으니 안심하십시오",
+                "th": "ขอรับ ท่านหญิง ทุกอย่างเรียบร้อยแล้ว ไม่ต้องกังวล",
+                "zh-Hans": "嗯，事情已经办完了，放心。",
+                "zh-Hant": "嗯，事情已經辦完了，放心。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 942,
+                "name": {
+                  "zh-Hans": "散华（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir sind auf eine unerwartete Situation gestoßen... Ja... Sie haben uns eine Nachricht geschickt, und ich war zufällig in der Nähe.",
+                "en": "We ran into an unexpected situation... Yes… They sent us a message, and I happened to be in the vicinity.",
+                "es": "Nos encontramos con una situación inesperada... Sí... Nos enviaron un mensaje, y yo estaba cerca.",
+                "fr": "J'ai reçu un message. Il y a une situation soudaine ici, et voilà, on me cherche.",
+                "ja": "少し予期せぬな事態が……はい……メールが届きました。ちょうど、近くにいましたので……",
+                "ko": "여기 돌발 상황이 발생했습니다... 네, 메일 받았습니다. 저도 마침 근처에 있어서...",
+                "th": "เราเจอกับสถานการณ์ที่ไม่คาดคิด... ขอรับ... พวกเขาส่งข้อความมาหาเรา และข้าบังเอิญอยู่ใกล้ๆ พอดี",
+                "zh-Hans": "这边遇到点突发状况……嗯……收到了邮件，我刚好在附近。",
+                "zh-Hant": "這邊遇到點突發狀況……嗯……收到了郵件，我剛好在附近。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 942,
+                "name": {
+                  "zh-Hans": "散华（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss diesen Forscher zum <b>Turm</b> begleiten. Ich komme bald zurück.",
+                "en": "I need to escort this researcher to <b>the Tower</b>. I'll be back shortly.",
+                "es": "Necesito escoltar a este investigador a <b>la Torre</b>. Volveré en breve.",
+                "fr": "Je vais d'abord renvoyer le chercheur dans le « Royaume », je reviendrai plus tard.",
+                "ja": "博士を「逆境深塔」へ送り返します。帰りは少し遅くなるかもしれません。",
+                "ko": "일단 연구원부터 「심연」으로 호송 후, 나중에 돌아갈게요",
+                "th": "ฉันต้องคุ้มกันนักวิจัยคนนี้ไปที่<b>หอคอย</b> เดี๋ยวฉันกลับมานะ",
+                "zh-Hans": "我先把研究员送回「深渊」，稍晚些回去。",
+                "zh-Hant": "我先把研究員送回「深淵」，稍晚些回去。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 942,
+                "name": {
+                  "zh-Hans": "散华（通讯中）"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Treffen mit Sanhua",
+        "en": "Meet up with Sanhua",
+        "es": "Reúnete con Sanhua",
+        "fr": "Retrouver Sanhua",
+        "ja": "散華と合流する",
+        "ko": "산화와 합류",
+        "th": "พบกับ Sanhua",
+        "zh-Hans": "与散华汇合",
+        "zh-Hant": "與散華匯合"
+      },
+      "entities": [
+        {
+          "entityId": 310000663,
+          "mapId": 8,
+          "blueprintType": "Player005",
+          "name": "TsEntity_角色005_散华2",
+          "areaId": 1301,
+          "position": {
+            "x": 43130,
+            "y": 83630,
+            "z": 490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_中曲台地支线",
+          "flowIndex": 32,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hey, was ist passiert? Wie hast du dich verletzt?",
+                "en": "Hey, what happened? How did you get injured?",
+                "es": "Uy, ¿qué pasó? ¿Cómo te has lesionado?",
+                "fr": "Aïe ! Qu'est-ce qui s'est passé, comment vous êtes-vous blessé !",
+                "ja": "ど、どうしたんですか、その怪我は！？",
+                "ko": "아이고! 이게 웬일이야! 어쩌다 다쳤어요?",
+                "th": "นี่ เกิดอะไรขึ้น คุณบาดเจ็บได้อย่างไร",
+                "zh-Hans": "哎呦！这是怎么回事，怎么受伤了！",
+                "zh-Hant": "哎呦！這是怎麼回事，怎麼受傷了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 859,
+                "name": {
+                  "zh-Hans": "年轻的士兵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kannst du es glauben? Ich war gerade dabei, meine routinemäßige Probenentnahme durchzuführen, und plötzlich sprang ein Heuler-Typ TD aus dem Nichts auf mich zu! Was für ein glücklicher Zufall!",
+                "en": "Can you believe it? I was just doing my routine specimen collection, and a Howler-type TD just pounced at me out of nowhere! What a lucky encounter!",
+                "es": "¿Puedes creerlo? Solo estaba haciendo mi recolección de muestras de rutina y, de repente, me atacó una DT del tipo Aullido. ¡Menuda sorpresa tan afortunada!",
+                "fr": "Je suis chanceux aujourd'hui ! Je suis tombé sur un mutant spécial du Hurleur lors d'une collecte régulière !",
+                "ja": "今日はツイてるぜ！いつもの採集活動で、叫び種の特殊変異体を発見したんだ。",
+                "ko": "오늘 운이 굉장히 좋네요! 일상 생화학 채집을 하다가 포효종의 특수 변종을 만나다니!",
+                "th": "ฉันไม่อยากจะเชื่อเลย ฉันก็แค่กำลังเก็บตัวอย่างตามปกติ แล้วทาเซ็ตดิสคอร์ดประเภทฮาวเลอร์ก็กระโจนเข้ามาหาฉันจากที่ไหนก็ไม่รู้! ช่างเป็นการเผชิญหน้าที่โชคที่ดีอะไรอย่างนี้!",
+                "zh-Hans": "今天运气好！普通的日常生化采集，竟然让我碰上了啸叫种的特殊变异体！",
+                "zh-Hant": "今天運氣好！普通的日常生化採集，竟然讓我碰上了嘯叫種的特殊變異體！"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du denkst, es ist ein Glück, verletzt zu werden?",
+                    "en": "You think getting injured is lucky?",
+                    "es": "¿Crees que te hayas lesionado es afortunado?",
+                    "fr": "Vous êtes blessé et c'est de la « chance » ?",
+                    "ja": "怪我したのに？",
+                    "ko": "다쳤는데도 운이 좋다고요?",
+                    "th": "คุณคิดว่าที่ได้รับบาดเจ็บนี่เรียกว่าโชคดีงั้นรึ",
+                    "zh-Hans": "受伤了还是运气好啊？",
+                    "zh-Hant": "受傷了還是運氣好啊？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun, es tat nicht so weh. Viel wichtiger ist, es war eine nicht identifizierte spezielle Variante! Diese Entdeckung wird sicherlich unsere Datenbank bereichern.",
+                "en": "Well, it didn't hurt that much. More importantly, it was an unidentified special variant! This discovery will surely enrich our database.",
+                "es": "Bueno, no me dolió tanto. Y lo más importante, ¡era una variante especial no identificada! Este descubrimiento sin duda enriquecerá nuestra base de datos.",
+                "fr": "C'est un type qui n'a pas été observé auparavant ! Il peut enrichir notre base de données.",
+                "ja": "あれは、今まで確認されていないタイプだ。これで我々のデータベースがさらに充実する。",
+                "ko": "당연하죠! 지금까지 발견되지 않은 변종인데! 이런 변종 데이터를 수집하면 저희 데이터베이스도 더욱 풍부해지거든요!",
+                "th": "อ่า มันไม่ได้เจ็บเท่าไหร่ ที่สำคัญกว่านั้น มันเป็นสายพันธุ์พิเศษที่ยังไม่เคยถูกระบุมาก่อน! การค้นพบครั้งนี้จะทำให้ฐานข้อมูลของเราสมบูรณ์ยิ่งขึ้นอย่างแน่นอน",
+                "zh-Hans": "这可是之前未被观测到的类型！又能丰富我们的底层数据库了。",
+                "zh-Hant": "這可是之前未被觀測到的類型！又能豐富我們的底層資料庫了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Meine kleine Verletzung heute könnte in der Zukunft unzählige Leben retten!",
+                "en": "My little injury today might save countless lives in the future!",
+                "es": "¡Mi pequeña lesión de hoy podría salvar innumerables vidas en el futuro!",
+                "fr": "Une petite blessure aujourd'hui pourrait sauver la vie de nombreux à l'avenir !",
+                "ja": "それに、こんなかすり傷、この発見が多くの兵士の命を救うと考えれば安いものさ。",
+                "ko": "오늘 작은 부상을 입었지만, 이 새로운 변종의 데이터를 파악하면 나중에 많은 병사들의 생명을 구할 수 있을지도 몰라요!",
+                "th": "การบาดเจ็บเล็กน้อยของฉันในวันนี้อาจช่วยชีวิตคนนับไม่ถ้วนได้ในอนาคต!",
+                "zh-Hans": "今天受点小伤，说不定之后能拯救好多士兵的性命呢！",
+                "zh-Hant": "今天受點小傷，說不定之後能拯救好多士兵的性命呢！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie du sehen kannst, ist das Turmprojekt, formell bekannt als Turm der Widrigkeiten, ein künstliches Fata Morgana-Simulationstraining, das wir derzeit in Huanglong entwickeln.",
+                "en": "As you can see, the Tower Project, formally known as the Tower of Adversity, is an artificial Sonoro Sphere program in development dedicated to combat simulation.",
+                "es": "Como puedes ver, el Proyecto de la Torre, formalmente conocido como la Torre de la Adversidad, es un campo de entrenamiento de simulación de espejismo artificial que actualmente estamos desarrollando en Huanglong.",
+                "fr": "Comme vous pouvez le voir. Ce projet, officiellement nommé la Tour éprouvante, est un projet de calcul de combat de mirage artificiel de Huanglong.",
+                "ja": "これが「逆境深塔」プロジェクト、瑝瓏が現在開発中の人工シミュレーション戦力演算プロジェクトよ。",
+                "ko": "보시다시피 「심연 프로젝트」의 정식 명칭은 「역경의 탑」으로, 현재 황룡에서 개발 중인 인공 신기루 전투력 계산 프로젝트예요",
+                "th": "อย่างที่คุณเห็น โครงการหอคอย หรือที่รู้จักกันอย่างเป็นทางการว่าหอคอยห้วงวิบาก เป็นโครงการมิติเสียงสะท้อนเทียมที่กำลังอยู่ระหว่างการพัฒนา ซึ่งพัฒนาขึ้นมาสำหรับการจำลองการต่อสู้โดยเฉพาะ",
+                "zh-Hans": "如您所见，「深渊项目」，正式名称逆境深塔，是瑝珑正在开发中的人工蜃境战力演算项目。",
+                "zh-Hant": "如您所見，「深淵專案」，正式名稱逆境深塔，是瑝瓏正在開發中的人工蜃境戰力演算項目。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Künstlich... was?",
+                    "en": "Artificial… what?",
+                    "es": "¿Artificial... qué?",
+                    "fr": "...C'est compliqué.",
+                    "ja": "なんだか難しい。",
+                    "ko": "정말 복잡한 프로젝트 명이네요",
+                    "th": "อะไร... เทียมนะ",
+                    "zh-Hans": "好复杂的名词。",
+                    "zh-Hant": "好複雜的名詞。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Einfach ausgedrückt, es ist eine von Menschen gemachte Sonora-Sphäre.",
+                "en": "Simply put, it's a man-made Sonoro Sphere.",
+                "es": "En pocas palabras, es una Esfera Sonora hecha por el hombre.",
+                "fr": "En un mot, c'est un champ Sonora artificiel.",
+                "ja": "簡単に言うと、人工の音場ってこと。",
+                "ko": "간단히 설명하자면, 인공 신기루는 인공적인 음의 영역이에요",
+                "th": "พูดง่ายๆ ก็คือ มิติเสียงสะท้อนที่มนุษย์สร้างขึ้นนั่นแหละ",
+                "zh-Hans": "简单理解，人工蜃境就是一处人造的声之领域。",
+                "zh-Hant": "簡單理解，人工蜃境就是一處人造的聲之領域。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben eine große, von der Akademie der Gelehrten hinterlassene, Versuchsstätte renoviert, um diesen Ort zu bauen.",
+                "en": "We renovated a large experimental site left behind by the Court of Savantae to build this place.",
+                "es": "Renovamos un gran sitio experimental dejado por la Corte de Jiting para construir este lugar.",
+                "fr": "L'Académie de Huaxu transforme un grand site de recherche de la Cour Savantae pour élaborer ce projet.",
+                "ja": "華胥研究院が、稷廷の大規模実験場跡地を改築したんだ。",
+                "ko": "저희 화서연구원이 직정의 대형 실험장 유적지를 개조해 만들어낸 거예요",
+                "th": "เราได้ปรับปรุงพื้นที่ทดลองขนาดใหญ่ที่สภาซาวานเทย์ทิ้งไว้เพื่อสร้างสถานที่แห่งนี้",
+                "zh-Hans": "是咱们华胥研究院由稷廷一处大型实验场遗址改建改造而来的。",
+                "zh-Hant": "是咱們華胥研究院由稷廷一處大型實驗場遺址改建改造而來的。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dies ist ein surrealer Raum, der durch unsere Intervention spezifische Informationen aus einer bestimmten Zeit und Situation aufzeichnen kann.",
+                "en": "This is a surreal space that can record specific information from a specific time and situation through our intervention.",
+                "es": "Este es un espacio surrealista que puede registrar información específica de un tiempo y situación específicos a través de nuestra intervención.",
+                "fr": "C'est un espace surréel. Nous pouvons intervenir et enregistrer des informations spécifiques de temps, d'espace et de situations spécifiques.",
+                "ja": "内部は超現実空間になっていて、人為的な干渉を行える。仮に問題が発生したとしても、データを素早く収集し、分析できるんだ。",
+                "ko": "이곳은 초현실적인 공간으로 인위적인 개입을 통해 특정 시간과 공간, 그리고 특정 상황에 대한 특정 정보를 기록할 수 있어요",
+                "th": "นี่คือพื้นที่เหนือจริงที่สามารถบันทึกข้อมูลเฉพาะจากเวลา และสถานการณ์ที่เฉพาะเจาะจงผ่านการแทรกแซงของเราได้",
+                "zh-Hans": "这里是超现实的空间，可以经由我们人为干预，记录特定时空、特定情境的特定信息。",
+                "zh-Hant": "這裡是超現實的空間，可以經由我們人為干預，記錄特定時空、特定情境的特定資訊。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Über die Akademie der Gelehrten... Es gibt viele Informationen, die wir dir mitteilen müssen. Wir werden es zu einem späteren Zeitpunkt besprechen.",
+                "en": "Regarding the Court of Savantae... There is a lot of information we need you to know. We shall discuss it at a later time.",
+                "es": "En cuanto a la Corte de Jiting... Hay mucha información que necesitamos que conozcas. Lo discutiremos en otro momento.",
+                "fr": "Concernant l'organisation... il y a beaucoup de choses à parler avec vous, mais réservons ces choses pour la prochaine fois.",
+                "ja": "稷廷という組織については、いつかあなたに教えなければいけないわね……",
+                "ko": "직정이라는 조직에 대해서… 설명해야 할 것도 많으니 다음에 기회가 되면 말씀드릴게요",
+                "th": "ในส่วนของสภาซาวานเทย์... มีข้อมูลมากมายที่เราอยากแจ้งให้เจ้าทราบ ซึ่งเราจะหารือกันในภายหลัง",
+                "zh-Hans": "关于稷廷这个组织……也有很多需要跟您同步的事情，下次有机会再说好了。",
+                "zh-Hant": "關於稷廷這個組織……也有很多需要跟您同步的事情，下次有機會再說好了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In dieser simulierten Umgebung können Gegner aus den Erinnerungen des Subjekts materialisieren.",
+                "en": "Within this simulated environment, adversaries can materialize from the subject's recollections.",
+                "es": "Dentro de este entorno simulado, los adversarios pueden materializarse a partir de los recuerdos del sujeto.",
+                "fr": "Bref, dans ce champ, les ennemis dans la mémoire peuvent être matérialisés.",
+                "ja": "この空間では、被験者の認知や記憶から、敵を具現化する。",
+                "ko": "아무튼, 인공 신기루 속에서 피험자의 인식을 바탕으로 피험자의 머릿속에 있는 적의 이미지를 현실화할 수 있어요",
+                "th": "ศัตรูสามารถปรากฏตัวขึ้นมาภายในสภาพแวดล้อมจำลองนี้จากความทรงจำของต้นแบบได้",
+                "zh-Hans": "总之，在人工蜃境之中，经由受试者的认知，可以将记忆中的敌人具现化。",
+                "zh-Hant": "總之，在人工蜃境之中，經由受試者的認知，可以將記憶中的敵人具現化。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Je tiefer du eintauchst, desto härtere Gegner werden auftauchen, aufgrund der Unterschiede im Energieverteilungsmuster.",
+                "en": "As you delve deeper, tougher opponents will emerge, because of the difference in energy distribution pattern.",
+                "es": "A medida que te adentras más, surgirán oponentes más duros, debido a la diferencia en el patrón de distribución de energía.",
+                "fr": "Plus vous allez en profondeur, les ennemis plus puissants peuvent être matérialisés, selon la mémoire du participant.",
+                "ja": "その敵はエナジーフィールド分布の関係で、下層に行くほど、より強力になるんだ。",
+                "ko": "동시에 에너지 필드의 분포에 따라 하층일수록 피험자의 힘을 바탕으로 더욱 강력한 적을 현실화할 수 있어요",
+                "th": "เมื่อคุณตะลุยลึกเข้าไปเรื่อยๆ ศัตรูที่แข็งแกร่งกว่าก็จะปรากฏตัวขึ้น อันเนื่องมาจากความแตกต่างในรูปแบบการกระจายพลังงาน",
+                "zh-Hans": "同时根据能量场的分布，越到底层，越能通过受试者的力量具现出更强力量的敌人。",
+                "zh-Hant": "同時根據能量場的分佈，越到底層，越能通過受試者的力量具現出更強力量的敵人。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unser geschätzter Magistrat beabsichtigt, diese Technologie in die militärische Ausbildung zu integrieren, um ein authentischeres Erlebnis zu bieten.",
+                "en": "Our esteemed Magistrate intends to integrate this technology into military training for a more authentic experience.",
+                "es": "Nuestra estimada Magistrada tiene la intención de integrar esta tecnología en el entrenamiento militar para una experiencia más auténtica.",
+                "fr": "L'idée de Mme Magistrate est que, une fois cette technologie est prêt, elle peut être utilisée pour l'entraînement quotidien de l'armée pour que l'entraînement soit plus efficace.",
+                "ja": "令尹様は将来的に、この技術を用いたより実践的な対戦演習を、軍の訓練に投入するおつもりよ。",
+                "ko": "영윤 대인은 이 기술이 성숙되면 군대의 일상적 훈련에 사용되어 훈련의 현실성을 높일 수 있다고 생각해요",
+                "th": "ท่านเจ้าเมืองที่น่านับถือของเราตั้งใจที่จะนำเทคโนโลยีนี้มาใช้ในการฝึกทหารเพื่อช่วยให้พวกเขาได้สัมผัสกับประสบการณ์ที่สมจริงยิ่งขึ้น",
+                "zh-Hans": "令尹的想法是，等这项技术成熟之后，可以用于军队的日常训练，提高军方对敌演习的真实性。",
+                "zh-Hant": "令尹的想法是，等這項技術成熟之後，可以用於軍隊的日常訓練，提高軍方對敵演習的真實性。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dies könnte potenziell die Verluste in realen Kampfszenarien reduzieren.",
+                "en": "This could potentially reduce casualties during real-life combat scenarios.",
+                "es": "Esto podría reducir potencialmente las bajas durante escenarios de combate en la vida real.",
+                "fr": "Peut-être, elle peut réduire considérablement les pertes.",
+                "ja": "そうすれば、死傷者を大幅に減らすことができるかもしれない。",
+                "ko": "어쩌면 인명 피해를 크게 줄일 수 있을지도 몰라요",
+                "th": "ซึ่งอาจช่วยลดจำนวนผู้เสียชีวิตระหว่างการต่อสู้จริงได้",
+                "zh-Hans": "说不定，可以大大减少人员伤亡。",
+                "zh-Hant": "說不定，可以大大減少人員傷亡。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, wärst du bereit, an unseren vorläufigen Tests teilzunehmen?",
+                "en": "{PlayerName}, would you be willing to participate in our preliminary tests?",
+                "es": "{PlayerName}, ¿estarías {Male=dispuesto;Female=dispuesta} a participar en nuestras pruebas preliminares?",
+                "fr": "Donc, {PlayerName}, j'aimerais savoir si vous êtes prêt à participer à l'expérimentation préliminaire du projet.",
+                "ja": "{PlayerName}、「逆境深塔」プロジェクトの初期実験に参加する気はある？",
+                "ko": "방랑자, 「심연 프로젝트」의 예비 실험에 참여해보시겠어요?",
+                "th": "{PlayerName} คุณอยากเข้าร่วมการทดสอบเบื้องต้นของเราไหม",
+                "zh-Hans": "{PlayerName}，不知道您愿不愿意，参与「深渊项目」的前期实验？",
+                "zh-Hant": "{PlayerName}，不知道您願不願意，參與「深淵專案」的前期實驗？"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar, warum nicht?",
+                    "en": "Sure, why not?",
+                    "es": "Por supuesto, ¿por qué no?",
+                    "fr": "Bien sûr.",
+                    "ja": "いいよ。",
+                    "ko": "네, 의향이 있어요",
+                    "th": "ได้สิ ทำไมจะไม่ได้",
+                    "zh-Hans": "可以啊。",
+                    "zh-Hant": "可以啊。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Warum ich?",
+                    "en": "Why me?",
+                    "es": "¿Por qué yo?",
+                    "fr": "Pourquoi moi ?",
+                    "ja": "{Male=どうして俺？;Female=どうして私？}",
+                    "ko": "왜 저를 선택했어요?",
+                    "th": "ทำไมต้องเป็นฉัน",
+                    "zh-Hans": "为什么选择我？",
+                    "zh-Hant": "為什麼選擇我？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke.",
+                "en": "Thank you.",
+                "es": "Gracias.",
+                "fr": "Merci pour votre aide.",
+                "ja": "協力感謝する。",
+                "ko": "정말 감사해요",
+                "th": "ขอบคุณ",
+                "zh-Hans": "感谢您的帮助。",
+                "zh-Hant": "感謝您的幫助。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie ich bereits erwähnt habe, basieren die Feinde in der Simulation auf den Erinnerungen des Testers und ihre Stärke hängt von ihrer Wahrnehmung ab.",
+                "en": "As I mentioned, enemies in the simulation are based on the tester's memories and their strength depends on their perception.",
+                "es": "Como mencioné, los enemigos en la simulación se basan en los recuerdos del probador y su fuerza depende de su percepción.",
+                "fr": "Comme je l'ai mentionné, les ennemis dans la tour sont influencés par les mémoires du participant.",
+                "ja": "さっき言った通り、具現化した敵は、被験者の認知や記憶に由来する。",
+                "ko": "방금 말씀드린 것처럼 심연에서 나타나는 적들은 피험자의 주관적인 기억을 바탕으로 실현된 거예요",
+                "th": "อย่างที่ฉันได้กล่าวไป ศัตรูในการจำลองจะขึ้นอยู่กับความทรงจำของผู้ทดสอบ และความแข็งแกร่งของพวกมันจะขึ้นอยู่กับการรับรู้ของพวกเขา",
+                "zh-Hans": "就像刚才说的，塔内幻化出的敌人，会受到受试者主观记忆的影响。",
+                "zh-Hant": "就像剛才說的，塔內幻化出的敵人，會受到受試者主觀記憶的影響"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zum Beispiel, wenn ich hineingehen würde, könnte meine Angst vor Tacet-Dissonanzen dazu führen, dass ich sie mir stärker vorstelle, als sie tatsächlich sind, was die Genauigkeit der Daten beeinträchtigen würde.",
+                "en": "For example, if I were to enter, my fear of Tacet Discords might cause me to imagine them as stronger than they actually are, which would impact the accuracy of data.",
+                "es": "Por ejemplo, si yo entrara, mi miedo a las Disonancias Tácitas podría hacerme imaginarlas más fuertes de lo que realmente son, lo que afectaría la precisión de los datos.",
+                "fr": "Par exemple, si je devais y aller directement, à cause de la peur, il est possible qu'on ait un ennemi beaucoup plus terrifiant. Cela affecterait la précision des données.",
+                "ja": "私の場合、内心の恐怖のせいで、極端に強力な敵が具現化してしまい、データの正確性に影響を与えてしまう。",
+                "ko": "예를 들어 제가 들어가면 내면의 두려움 때문에 객관적인 실체보다 더 무서운 적을 현실화하여 데이터의 정확성에 영향을 미칠 수 있어요",
+                "th": "ตัวอย่างเช่น หากฉันเข้าไป ความกลัวที่ฉันมีต่อทาเซ็ตดิสคอร์ดอาจทำให้ฉันจินตนาการว่าพวกมันแข็งแกร่งกว่าความเป็นจริง ซึ่งจะส่งผลต่อความแม่นยำของข้อมูล",
+                "zh-Hans": "比如说我，如果直接进去，由于内心的恐惧，可能会幻化出比客观实体更可怕的敌人，从而影响数据的准确性。",
+                "zh-Hant": "比如說我，如果直接進去，由於內心的恐懼，可能會幻化出比客觀實體更可怕的敵人，從而影響數據的準確性。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deshalb verlassen wir uns auf Tester wie dich und Lady Sanhua, die sowohl geistige als auch körperliche Stärke besitzen, um realistische Daten für unsere Forschung zu liefern.",
+                "en": "This is why we rely on testers like you and Lady Sanhua, who possess both mental and physical fortitude, to provide realistic data for our research.",
+                "es": "Por eso dependemos de probadores como tú y la Señorita Sanhua, que poseen tanto fortaleza mental como física, para proporcionar datos realistas para nuestra investigación.",
+                "fr": "C'est pourquoi nous avons besoin des participants comme vous ou Mme Sanhua, qui ne perdent pas le sang-froid, pour avoir les données réelles autant que possible.",
+                "ja": "つまり、正確なデータを取るためには、あなたや散華さんのような、心身ともに強い被験者が必要なんだ。",
+                "ko": "그래서 저희는 방랑자나 산화처럼 강한 마음과 실력을 가진 피험자가 필요해요. 이렇게 해야만 더 정확한 데이터를 수집할 수 있거든요",
+                "th": "นี่คือเหตุผลที่เราต้องพึ่งพาผู้ทดสอบ เฉกเช่น คุณและท่าน Sanhua ผู้ที่มีความแข็งแกร่งทั้งทางร่างกายและจิตใจ เพื่อให้ข้อมูลที่สมจริงแก่การวิจัยของเรา",
+                "zh-Hans": "所以我们需要像您或者散华这样，内心与实力同样强大的受试者，尽可能还原实际数据。",
+                "zh-Hant": "所以我們需要像您或者散華這樣，內心與實力同樣強大的受試者，盡可能還原實際數據。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Daten, die wir aus Lady Sanhuas vergangenem simulierten Kampf gegen eine Eliteklasse der Ruhe gesammelt haben, haben uns in unserem jüngsten Kampf sehr geholfen.",
+                "en": "The data we gathered from Lady Sanhua's past simulated battle against an Elite Class Tranquilite greatly aided us in our recent fight.",
+                "es": "Los datos que recopilamos de la pasada batalla simulada de la Señorita Sanhua contra una Tranquilidad de Clase de élite nos ayudaron enormemente en nuestra reciente lucha.",
+                "fr": "Précédemment, nous avons récupéré les données très intéressantes grâce à l'expérience de Mme Sanhua, qui a éliminé avec un TD Tranquilite dangereux. Ces données nous aident beaucoup dans les combats récents.",
+                "ja": "それに散華さんは前回、巨浪級のしじま種との実戦実験に参加してくれて、それが今回の野外探索戦で大いに役立ったって実績もある。",
+                "ko": "저번에 산화가 참여한 거랑급 침묵종에 대한 실전 실험도 이번 야외 탐색 전투에 많은 도움이 되었어요",
+                "th": "ข้อมูลที่เรารวบรวมได้จากการต่อสู้จำลองครั้งก่อนของท่าน Sanhua กับแทรนควิไลต์ ระดับอีลีทก็ช่วยเหลือเราได้มากในการต่อสู้ครั้งล่าสุดของเรา",
+                "zh-Hans": "散华上次参与的对精英级静默种的实战实验，就在我们这次野外探索战役中帮上了大忙。",
+                "zh-Hant": "散華上次參與的對精英級靜默種的實戰實驗，就在我們這次野外探索戰役中幫上了大忙。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Frau Magistratin schätzt dieses Projekt sehr. Wie wir besprochen haben, stehen die Leben unserer Soldaten auf dem Spiel.",
+                "en": "Madam Magistrate values this project greatly. As we discussed, our soldiers' lives are at stake.",
+                "es": "La Señora Magistrada valora mucho este proyecto. Como discutimos, las vidas de nuestros soldados están en juego.",
+                "fr": "Mme la Magistrate a dit que ce projet est important parce qu'il peut sauver beaucoup de monde.",
+                "ja": "令尹様は戦士たちの命のため、このプロジェクトに注力されている。",
+                "ko": "영윤 대인은 이 프로젝트를 매우 중요시하고 있어요. 프로젝트가 성공적으로 구축되면 수많은 병사들의 생명을 구할 수 있을지도 몰라요",
+                "th": "ท่านเจ้าเมืองให้ความสำคัญกับโครงการนี้อย่างมาก ดังที่เราได้หารือกันไปแล้วว่า ชีวิตทหารของเราแขวนอยู่บนเส้นด้าย",
+                "zh-Hans": "令尹大人非常看重这个项目。项目如果可以搭建成功， 或许可以拯救无数将士的生命。",
+                "zh-Hant": "令尹大人非常看重這個專案。專案如果可以搭建成功， 或許可以拯救無數將士的生命。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe Vertrauen, dass du sie nicht enttäuschen wirst, wenn du mit dieser Aufgabe betraut wirst.",
+                "en": "I have faith that you will not disappoint her if entrusted with this task.",
+                "es": "Tengo fe en que no la decepcionarás si te confían esta tarea.",
+                "fr": "Si c'est vous, je pense, vous ne la laisserez certainement pas tomber.",
+                "ja": "だから、あなたも令尹様の期待に応えてほしい。",
+                "ko": "방랑자라면, 영윤 대인을 실망시키지 않을 것이라고 생각해요",
+                "th": "ฉันเชื่อว่า หากคุณได้ทำภารกิจนี้แล้ว คุณจะไม่ทำให้นางผิดหวัง",
+                "zh-Hans": "如果是您的话，我想，一定不会让她失望的。",
+                "zh-Hant": "如果是您的話，我想，一定不會讓她失望的。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lass uns anfangen.",
+                    "en": "Let's get started.",
+                    "es": "Bueno, empecemos.",
+                    "fr": "Commençons.",
+                    "ja": "じゃあ、始めよう。",
+                    "ko": "그럼 시작해 볼까요?",
+                    "th": "มาเริ่มกันเลย",
+                    "zh-Hans": "那就开始吧。",
+                    "zh-Hant": "那就開始吧。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe den Test einmal ab",
+        "en": "Complete the test once",
+        "es": "Completa la prueba una vez",
+        "fr": "Terminer un test",
+        "ja": "実験プロジェクトを1回完了する",
+        "ko": "실험 1회 완료하기",
+        "th": "ผ่านการทดสอบหนึ่งครั้ง",
+        "zh-Hans": "完成一次实验项目",
+        "zh-Hant": "完成一次實驗項目"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Kehre zu Sanhua zurück",
+        "en": "Reply to Sanhua",
+        "es": "Regresa con Sanhua",
+        "fr": "Répondre à Sanhua",
+        "ja": "散華に報告する",
+        "ko": "산화 찾아가기",
+        "th": "ตอบกลับ Sanhua",
+        "zh-Hans": "回复散华",
+        "zh-Hant": "回覆散華"
+      },
+      "entities": [
+        {
+          "entityId": 11800002,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "TsEntity_154_010_皇龙研究员女2",
+          "areaId": 1301,
+          "position": {
+            "x": 43030,
+            "y": 83660,
+            "z": 466
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000663,
+          "mapId": 8,
+          "blueprintType": "Player005",
+          "name": "TsEntity_角色005_散华2",
+          "areaId": 1301,
+          "position": {
+            "x": 43130,
+            "y": 83630,
+            "z": 490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000664,
+          "mapId": 8,
+          "blueprintType": "NPC299",
+          "name": "TsEntity_157_034_夜归-医疗3",
+          "areaId": 1301,
+          "position": {
+            "x": 43184,
+            "y": 83535,
+            "z": 492
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_中曲台地支线",
+          "flowIndex": 33,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Fantastisch! Absolut fantastisch!",
+                "en": "Fantastic! Absolutely fantastic!",
+                "es": "¡Fantástico! ¡Absolutamente fantástico!",
+                "fr": "Super ! Super !",
+                "ja": "素晴らしい……何て素晴らしいんだ！",
+                "ko": "정말 대단해요!",
+                "th": "ยอดเยี่ยม! ยอดเยี่ยมที่สุด!",
+                "zh-Hans": "太好了！太好了！",
+                "zh-Hant": "太好了！太好了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das sind einige super wertvolle und seltene Daten! Was für ein außergewöhnlicher Kampf!",
+                "en": "That's some super valuable and rare data! What an extraordinary battle!",
+                "es": "¡Eso son datos super valiosos y raros! ¡Qué batalla tan extraordinaria!",
+                "fr": "Des données de combat très passionnantes, des enregistrements très rares !",
+                "ja": "これほど稀少な戦闘データが取れるなんて……！",
+                "ko": "아주 멋진 전투 데이터예요!",
+                "th": "นั่นเป็นข้อมูลที่มีค่าและหายากมาก! ช่างเป็นการต่อสู้ที่ไม่ธรรมดาจริงๆ!",
+                "zh-Hans": "非常精彩的战斗数据，非常少见的记录！",
+                "zh-Hant": "非常精彩的戰鬥數據，非常少見的記錄！"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss das beschleunigen, mit dem Forschungsteam zusammenarbeiten und mit der Kontrollgruppe B bestätigen...",
+                "en": "I need to expedite this, collaborate with the research team, and confirm with Control Group B...",
+                "es": "Necesito acelerar esto, colaborar con el equipo de investigación y confirmar con el Grupo de Control B...",
+                "fr": "Je dois les envoyer le plus vite possible, contacter le groupe d'expérience, et le groupe de contrôle...",
+                "ja": "早くデータのアップロードを、それと実験チームに連絡を……そうだ、対照実験担当のBチームにも……",
+                "ko": "빨리 올리고 실험팀에 연락해야지! 아 참! 대조 B팀도...",
+                "th": "ฉันต้องเร่งดำเนินการเรื่องนี้ ทำงานร่วมกับทีมวิจัย และยืนยันกับกลุ่มควบคุม B...",
+                "zh-Hans": "要赶紧上载才行，联系实验小组，还有对照B组……",
+                "zh-Hant": "要趕緊上載才行，聯繫實驗小組，還有對照B組……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähem...",
+                "en": "Ahem...",
+                "es": "Ejem...",
+                "fr": "Hé...",
+                "ja": "コホン……",
+                "ko": "크흠...",
+                "th": "อะแฮ่ม",
+                "zh-Hans": "咳……",
+                "zh-Hant": "咳……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich habe fast vergessen.",
+                "en": "Oh, I almost forgot.",
+                "es": "Oh, casi lo olvido.",
+                "fr": "Oh, c'est vrai, c'est vrai, j'ai presque oublié.",
+                "ja": "ああ、そうだ、忘れるところだった。",
+                "ko": "아 맞다! 깜빡할 뻔했네요",
+                "th": "โอ้ ฉันเกือบลืมไป",
+                "zh-Hans": "哦对了对了，差点忘了。",
+                "zh-Hant": "哦對了對了，差點忘了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da es unser Prioritätsprojekt ist, erhalten Forscher wie ich einige Subventionen.",
+                "en": "As it's our priority project, researchers like me do get some subsidies.",
+                "es": "Como es nuestro proyecto prioritario, los investigadores como yo recibimos algunas subvenciones.",
+                "fr": "Après tout, comme il s'agit d'un projet important, nous avons du moins un peu d'aide financière...",
+                "ja": "これは力を入れてるプロジェクトだから、補助もあるんだ。",
+                "ko": "어쨌든 핵심 프로젝트이기 때문에 기본적인 프로젝트 보조금도 있어요",
+                "th": "เนื่องจากนี่เป็นโครงการสำคัญของเรา นักวิจัยอย่างฉันจึงได้รับเงินสนับสนุนบ้าง",
+                "zh-Hans": "毕竟是重点项目，还是有一些基本的项目补助的。",
+                "zh-Hant": "畢竟是重點專案，還是有一些基本的專案補助的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl nicht bedeutend, bitte betrachten Sie sie als Entschädigung für Ihre Bemühungen.",
+                "en": "While not significant, please kindly consider them as compensation for your efforts.",
+                "es": "Aunque no son significativas, por favor, considerarlas como una compensación por tus esfuerzos.",
+                "fr": "Ce sont des petites choses, acceptez-les comme un remerciement pour votre travail !",
+                "ja": "些細なものだけど、協力してくれたお礼として受け取ってくれ。",
+                "ko": "변변치 않은 물건들이지만, 방랑자에게 감사의 마음을 전하는 작은 선물이라고 생각해주세요",
+                "th": "แม้จะไม่มากนัก แต่ขอให้คุณโปรดรับเงินไว้เป็นค่าตอบแทนสำหรับความพยายามของคุณด้วย",
+                "zh-Hans": "虽然只是一些不起眼的小东西，但就当感谢您的辛劳吧！",
+                "zh-Hant": "雖然只是一些不起眼的小東西，但就當感謝您的辛勞吧！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sollten Sie etwas Freizeit haben, würden wir Ihre Teilnahme an unseren zukünftigen Experimenten sehr schätzen! Ihr Beitrag ist unschätzbar für uns!",
+                "en": "Should you have some spare time, we would greatly appreciate your participation in our future experiments! Your contribution is invaluable to us!",
+                "es": "Si tienes algo de tiempo libre, ¡apreciaríamos enormemente tu participación en nuestros futuros experimentos! ¡Tu contribución es invaluable para nosotros!",
+                "fr": "La prochaine fois que vous aurez le temps, n'hésitez pas à venir nous aider ! Nous avons vraiment besoin de votre soutien !",
+                "ja": "時間があったら、また来てほしい！あなたの協力はこれ以上なく有益なものだ！",
+                "ko": "앞으로도 방랑자가 원하시면 언제든지 오셔서 실험에 참여하실 수 있어요! 저희는 방랑자의 지원이 매우 필요해요!",
+                "th": "หากคุณพอมีเวลาว่าง เราจะขอบคุณเป็นอย่างยิ่ง หากคุณจะมาเข้าร่วมการทดลองในอนาคตของเรา! การมีส่วนร่วมของคุณมีค่าอย่างยิ่งสำหรับเรา!",
+                "zh-Hans": "下次有时间的时候，请务必再来帮忙！我们非常需要您的支持！",
+                "zh-Hant": "下次有時間的時候，請務必再來幫忙！我們非常需要您的支持！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1279,
+                "name": {
+                  "zh-Hans": "研究员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Sanhua",
+        "en": "Talk to Sanhua",
+        "es": "Habla con Sanhua",
+        "fr": "Parler à Sanhua",
+        "ja": "散華と話す",
+        "ko": "산화와 대화",
+        "th": "คุยกับ Sanhua",
+        "zh-Hans": "与散华交谈",
+        "zh-Hant": "與散華交談"
+      },
+      "entities": [
+        {
+          "entityId": 11800002,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "TsEntity_154_010_皇龙研究员女2",
+          "areaId": 1301,
+          "position": {
+            "x": 43030,
+            "y": 83660,
+            "z": 466
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000660,
+          "mapId": 8,
+          "blueprintType": "Player005",
+          "name": "TsEntity_角色005_散华",
+          "areaId": 1301,
+          "position": {
+            "x": 25830,
+            "y": 79050,
+            "z": 115
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000663,
+          "mapId": 8,
+          "blueprintType": "Player005",
+          "name": "TsEntity_角色005_散华2",
+          "areaId": 1301,
+          "position": {
+            "x": 43130,
+            "y": 83630,
+            "z": 490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000664,
+          "mapId": 8,
+          "blueprintType": "NPC299",
+          "name": "TsEntity_157_034_夜归-医疗3",
+          "areaId": 1301,
+          "position": {
+            "x": 43184,
+            "y": 83535,
+            "z": 492
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_中曲台地支线",
+          "flowIndex": 31,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Rover?",
+                "en": "Rover?",
+                "es": "¿Errante?",
+                "fr": "Nomade ?",
+                "ja": "漂泊者？",
+                "ko": "방랑자?",
+                "th": "ผู้พเนจรรึเปล่า",
+                "zh-Hans": "漂泊者？",
+                "zh-Hant": "漂泊者？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe der Frau Magistratin bei bestimmten Angelegenheiten geholfen und da ich zufällig in der Nähe war, bin ich etwas vor dir angekommen.",
+                "en": "I was assisting Madam Magistrate with certain matters, and as I happened to be close to that place, I arrived slightly ahead of you.",
+                "es": "Estaba ayudando a la señora Magistrada con ciertos asuntos, y como estaba cerca de ese lugar, llegué un poco antes que tú.",
+                "fr": "Je suis ici pour le travail confié par Mme la Magistrate, et je viens de trouver ce chercheur blessé.",
+                "ja": "令尹様からの任務で、偶然この辺りにいたから、私が事に当たったの。",
+                "ko": "전 영윤 대인의 임무로 이 근처에 왔거든요. 그런데 마침 부상당한 연구원을 만났어요",
+                "th": "ฉันกำลังช่วยงานท่านเจ้าเมืองอยู่ และฉันอยู่ใกล้กับที่นั่นพอดี ฉันก็เลยมาถึงก่อนคุณเล็กน้อย",
+                "zh-Hans": "我帮令尹处理一些琐事，就在附近，刚好碰到这位受伤的研究员。",
+                "zh-Hant": "我幫令尹處理一些瑣事，就在附近，剛好碰到這位受傷的研究員。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe das Problem gelöst.",
+                "en": "I've resolved the issue.",
+                "es": "He resuelto el problema.",
+                "fr": "La situation est résolue.",
+                "ja": "もう解決した？",
+                "ko": "하지만 이미 해결됐어요",
+                "th": "ฉันจัดการปัญหาเรียบร้อยแล้ว",
+                "zh-Hans": "事情已经解决了。",
+                "zh-Hant": "事情已經解決了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Da das bereits erledigt ist, werde ich zurückkehren.",
+                    "en": "Since it's already been dealt with, I'll be heading back.",
+                    "es": "Como ya se ha resuelto, me voy a volver.",
+                    "fr": "Puisque c'est déjà résolu, je vais y aller.",
+                    "ja": "じゃあ、またね。",
+                    "ko": "해결되었으니 이만 가볼게요",
+                    "th": "ในเมื่อจัดการเสร็จเรียบร้อยแล้ว ฉันก็จะกลับละ",
+                    "zh-Hans": "既然已经解决了，那我就先走了。",
+                    "zh-Hant": "既然已經解決了，那我就先走了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Gibt es noch etwas, bei dem ich Ihnen helfen kann?",
+                    "en": "Is there anything else I can help you with?",
+                    "es": "¿Hay algo más en lo que te pueda ayudar?",
+                    "fr": "Avez-vous besoin d'une autre aide ?",
+                    "ja": "他に手伝って欲しいことある？",
+                    "ko": "다른 도움이 필요한가요?",
+                    "th": "มีอะไรให้ฉันช่วยอีกไหม",
+                    "zh-Hans": "还需要其他帮助吗？",
+                    "zh-Hant": "還需要其他幫助嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, das gibt es.",
+                "en": "Yes, there is.",
+                "es": "Sí, lo hay.",
+                "fr": "Un moment, s'il vous plaît.",
+                "ja": "少しいい？",
+                "ko": "잠시만 기다려 주세요",
+                "th": "ใช่ มีอยู่",
+                "zh-Hans": "烦请留步。",
+                "zh-Hant": "煩請留步。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eigentlich…",
+                "en": "Actually…",
+                "es": "De hecho…",
+                "fr": "En effet...",
+                "ja": "ちょっと厄介事が……",
+                "ko": "네, 사실 한 가지 있는데...",
+                "th": "อันที่จริง...",
+                "zh-Hans": "确实有一件事……",
+                "zh-Hant": "確實有一件事……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Frau Magistratin hat mich beauftragt, ein vertrauliches Projekt zu besprechen. Würde es dir etwas ausmachen, wenn ich es jetzt anspreche, da wir hier sind?",
+                "en": "I was instructed by Madam Magistrate to discuss a confidential project. Would you mind if I ask about it now, since we're here?",
+                "es": "La señora Magistrada me instruyó para discutir un proyecto confidencial. ¿Te importaría si lo discutimos ahora, ya que estamos aquí?",
+                "fr": "Mme la Magistrate m'a dit qu'elle aime trouver une occasion de vous demander vos intentions.",
+                "ja": "令尹様から、あなたに聞くよう言われていることがあるの。",
+                "ko": "영윤 대인께서 일찍이 저에게 기회를 봐서 방랑자의 생각을 물어보라고 하셨는데, 마침 잘 됐네요",
+                "th": "ฉันได้รับคำสั่งจากท่านเจ้าเมืองให้มาหารือเกี่ยวกับโครงการลับ ในเมื่อเราอยู่ที่นี่กันแล้ว คุณจะว่าอะไรไหม หากฉันจะขอถามเรื่องนี้เลย",
+                "zh-Hans": "其实令尹早先便交代过我，让我找个机会，询问一下您的意愿。这次确实赶巧了。",
+                "zh-Hant": "其實令尹早先便交代過我，讓我找個機會，詢問一下您的意願。這次確實趕巧了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl das Projekt noch vertraulich ist, könnten Sie, wenn Sie interessiert sind, mit der Genehmigung der Frau Magistratin teilnehmen. Sind Sie interessiert?",
+                "en": "While the project is still confidential, if you are interested to join, it can be arranged with Madam Magistrate's authorization. Are you interested?",
+                "es": "Aunque el proyecto sigue siendo confidencial, si te interesa unirte, podemos organizarlo con la autorización de la señora Magistrada. ¿Te interesa?",
+                "fr": "Il y a un projet « Confidentiel ». Vous pouvez y participer avec l'autorisation spéciale de Mme la Magistrate. J'aimerais savoir si vous êtes intéressé.",
+                "ja": "令尹様があなたに、ある【機密】のプロジェクトの開示許可を与えてくださった。興味はある？",
+                "ko": "보안 등급이 「기밀」인 프로젝트가 있는데, 영윤 대인의 특별 허가 하에 방랑자에게는 공개할 수 있어요. 혹시 관심이 있으신가요?",
+                "th": "แม้ว่าโครงการจะยังเป็นความลับอยู่ แต่ถ้าคุณสนใจจะเข้าร่วม ฉันก็สามารถไปขอให้ท่านเจ้าเมืองอนุญาตให้ได้ คุณสนใจไหม",
+                "zh-Hans": "有一个保密等级为“机密”的项目，在令尹的特殊许可下，可以向您开放，不知道您有没有兴趣？",
+                "zh-Hant": "有一個保密等級為「機密」的專案，在令尹的特殊許可下，可以向您開放，不知道您有沒有興趣？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vertraulich?",
+                    "en": "Confidential?",
+                    "es": "¿Confidencial?",
+                    "fr": "Confidentiel ?",
+                    "ja": "機密？",
+                    "ko": "기밀?",
+                    "th": "โครงการลับงั้นเหรอ",
+                    "zh-Hans": "机密？",
+                    "zh-Hant": "機密？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Genehmigung?",
+                    "en": "Authorization?",
+                    "es": "¿Autorización?",
+                    "fr": "Autorisation spéciale ?",
+                    "ja": "許可？",
+                    "ko": "특별한 허가?",
+                    "th": "การอนุญาตอะไรกัน",
+                    "zh-Hans": "特殊许可？",
+                    "zh-Hant": "特殊許可？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich begleite derzeit diesen verletzten Forscher zu diesem Ort.",
+                "en": "I am currently escorting this injured researcher to that place.",
+                "es": "Actualmente estoy escoltando a este investigador herido a ese lugar.",
+                "fr": "Je m'apprête à ramener ce chercheur blessé.",
+                "ja": "そう。でも、今は怪我人の保護が先ね。",
+                "ko": "네, 마침 이분도 돌려보내야 해서...",
+                "th": "ตอนนี้ฉันกำลังคุ้มกันนักวิจัยที่บาดเจ็บคนนี้ไปที่นั่น",
+                "zh-Hans": "正好我要送这位受伤的研究员回去。",
+                "zh-Hant": "正好我要送這位受傷的研究員回去。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn Sie einen Moment Zeit hätten, könnten Sie vielleicht mitkommen? Eine Erklärung vor Ort könnte effizienter sein.",
+                "en": "If you could spare a moment, would you mind coming along? Explaining on-site might be more efficient.",
+                "es": "Si pudieras dedicar un momento, ¿te importaría venir conmigo? Explicar en el lugar podría ser más eficiente.",
+                "fr": "Si vous avez du temps, pourriez-vous venir avec moi ? Il semble plus intuitif d'expliquer sur place.",
+                "ja": "一緒にどう？現場で説明した方が早いから。",
+                "ko": "시간 여유가 있으시다면 저와 함께 가실 수 있나요? 제가 보기에 직접 설명하면 더 이해가 빠를 것 같아요",
+                "th": "หากคุณพอจะมีเวลาว่าง ฉันอยากจะขอรบกวนให้คุณไปกับฉันหน่อยได้ไหม ไปอธิบายที่หน้างานน่าจะเข้าใจได้ง่ายกว่า",
+                "zh-Hans": "如果您的时间充裕的话，不知道可否跟我同去？现场说明，似乎更直观一些。",
+                "zh-Hant": "如果您的時間充裕的話，不知道可否跟我同去？現場說明，似乎更直觀一些。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar, dann gehen wir zusammen.",
+                    "en": "Sure, let's go together then.",
+                    "es": "Claro, vamos juntos entonces.",
+                    "fr": "D'accord, allons-y ensemble.",
+                    "ja": "わかった。",
+                    "ko": "좋아요, 그럼 같이 가시죠",
+                    "th": "ได้สิ งั้นก็ไปกันเลย",
+                    "zh-Hans": "好，那就一起去吧。",
+                    "zh-Hant": "好，那就一起去吧。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 11800002,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "TsEntity_154_010_皇龙研究员女2",
+          "areaId": 1301,
+          "position": {
+            "x": 43030,
+            "y": 83660,
+            "z": 466
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000660,
+          "mapId": 8,
+          "blueprintType": "Player005",
+          "name": "TsEntity_角色005_散华",
+          "areaId": 1301,
+          "position": {
+            "x": 25830,
+            "y": 79050,
+            "z": 115
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000663,
+          "mapId": 8,
+          "blueprintType": "Player005",
+          "name": "TsEntity_角色005_散华2",
+          "areaId": 1301,
+          "position": {
+            "x": 43130,
+            "y": 83630,
+            "z": 490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 310000664,
+          "mapId": 8,
+          "blueprintType": "NPC299",
+          "name": "TsEntity_157_034_夜归-医疗3",
+          "areaId": 1301,
+          "position": {
+            "x": 43184,
+            "y": 83535,
+            "z": 492
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_中曲台地支线",
+          "flowIndex": 31,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Rover?",
+                "en": "Rover?",
+                "es": "¿Errante?",
+                "fr": "Nomade ?",
+                "ja": "漂泊者？",
+                "ko": "방랑자?",
+                "th": "ผู้พเนจรรึเปล่า",
+                "zh-Hans": "漂泊者？",
+                "zh-Hant": "漂泊者？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe der Frau Magistratin bei bestimmten Angelegenheiten geholfen und da ich zufällig in der Nähe war, bin ich etwas vor dir angekommen.",
+                "en": "I was assisting Madam Magistrate with certain matters, and as I happened to be close to that place, I arrived slightly ahead of you.",
+                "es": "Estaba ayudando a la señora Magistrada con ciertos asuntos, y como estaba cerca de ese lugar, llegué un poco antes que tú.",
+                "fr": "Je suis ici pour le travail confié par Mme la Magistrate, et je viens de trouver ce chercheur blessé.",
+                "ja": "令尹様からの任務で、偶然この辺りにいたから、私が事に当たったの。",
+                "ko": "전 영윤 대인의 임무로 이 근처에 왔거든요. 그런데 마침 부상당한 연구원을 만났어요",
+                "th": "ฉันกำลังช่วยงานท่านเจ้าเมืองอยู่ และฉันอยู่ใกล้กับที่นั่นพอดี ฉันก็เลยมาถึงก่อนคุณเล็กน้อย",
+                "zh-Hans": "我帮令尹处理一些琐事，就在附近，刚好碰到这位受伤的研究员。",
+                "zh-Hant": "我幫令尹處理一些瑣事，就在附近，剛好碰到這位受傷的研究員。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe das Problem gelöst.",
+                "en": "I've resolved the issue.",
+                "es": "He resuelto el problema.",
+                "fr": "La situation est résolue.",
+                "ja": "もう解決した？",
+                "ko": "하지만 이미 해결됐어요",
+                "th": "ฉันจัดการปัญหาเรียบร้อยแล้ว",
+                "zh-Hans": "事情已经解决了。",
+                "zh-Hant": "事情已經解決了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Da das bereits erledigt ist, werde ich zurückkehren.",
+                    "en": "Since it's already been dealt with, I'll be heading back.",
+                    "es": "Como ya se ha resuelto, me voy a volver.",
+                    "fr": "Puisque c'est déjà résolu, je vais y aller.",
+                    "ja": "じゃあ、またね。",
+                    "ko": "해결되었으니 이만 가볼게요",
+                    "th": "ในเมื่อจัดการเสร็จเรียบร้อยแล้ว ฉันก็จะกลับละ",
+                    "zh-Hans": "既然已经解决了，那我就先走了。",
+                    "zh-Hant": "既然已經解決了，那我就先走了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Gibt es noch etwas, bei dem ich Ihnen helfen kann?",
+                    "en": "Is there anything else I can help you with?",
+                    "es": "¿Hay algo más en lo que te pueda ayudar?",
+                    "fr": "Avez-vous besoin d'une autre aide ?",
+                    "ja": "他に手伝って欲しいことある？",
+                    "ko": "다른 도움이 필요한가요?",
+                    "th": "มีอะไรให้ฉันช่วยอีกไหม",
+                    "zh-Hans": "还需要其他帮助吗？",
+                    "zh-Hant": "還需要其他幫助嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, das gibt es.",
+                "en": "Yes, there is.",
+                "es": "Sí, lo hay.",
+                "fr": "Un moment, s'il vous plaît.",
+                "ja": "少しいい？",
+                "ko": "잠시만 기다려 주세요",
+                "th": "ใช่ มีอยู่",
+                "zh-Hans": "烦请留步。",
+                "zh-Hant": "煩請留步。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eigentlich…",
+                "en": "Actually…",
+                "es": "De hecho…",
+                "fr": "En effet...",
+                "ja": "ちょっと厄介事が……",
+                "ko": "네, 사실 한 가지 있는데...",
+                "th": "อันที่จริง...",
+                "zh-Hans": "确实有一件事……",
+                "zh-Hant": "確實有一件事……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Frau Magistratin hat mich beauftragt, ein vertrauliches Projekt zu besprechen. Würde es dir etwas ausmachen, wenn ich es jetzt anspreche, da wir hier sind?",
+                "en": "I was instructed by Madam Magistrate to discuss a confidential project. Would you mind if I ask about it now, since we're here?",
+                "es": "La señora Magistrada me instruyó para discutir un proyecto confidencial. ¿Te importaría si lo discutimos ahora, ya que estamos aquí?",
+                "fr": "Mme la Magistrate m'a dit qu'elle aime trouver une occasion de vous demander vos intentions.",
+                "ja": "令尹様から、あなたに聞くよう言われていることがあるの。",
+                "ko": "영윤 대인께서 일찍이 저에게 기회를 봐서 방랑자의 생각을 물어보라고 하셨는데, 마침 잘 됐네요",
+                "th": "ฉันได้รับคำสั่งจากท่านเจ้าเมืองให้มาหารือเกี่ยวกับโครงการลับ ในเมื่อเราอยู่ที่นี่กันแล้ว คุณจะว่าอะไรไหม หากฉันจะขอถามเรื่องนี้เลย",
+                "zh-Hans": "其实令尹早先便交代过我，让我找个机会，询问一下您的意愿。这次确实赶巧了。",
+                "zh-Hant": "其實令尹早先便交代過我，讓我找個機會，詢問一下您的意願。這次確實趕巧了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl das Projekt noch vertraulich ist, könnten Sie, wenn Sie interessiert sind, mit der Genehmigung der Frau Magistratin teilnehmen. Sind Sie interessiert?",
+                "en": "While the project is still confidential, if you are interested to join, it can be arranged with Madam Magistrate's authorization. Are you interested?",
+                "es": "Aunque el proyecto sigue siendo confidencial, si te interesa unirte, podemos organizarlo con la autorización de la señora Magistrada. ¿Te interesa?",
+                "fr": "Il y a un projet « Confidentiel ». Vous pouvez y participer avec l'autorisation spéciale de Mme la Magistrate. J'aimerais savoir si vous êtes intéressé.",
+                "ja": "令尹様があなたに、ある【機密】のプロジェクトの開示許可を与えてくださった。興味はある？",
+                "ko": "보안 등급이 「기밀」인 프로젝트가 있는데, 영윤 대인의 특별 허가 하에 방랑자에게는 공개할 수 있어요. 혹시 관심이 있으신가요?",
+                "th": "แม้ว่าโครงการจะยังเป็นความลับอยู่ แต่ถ้าคุณสนใจจะเข้าร่วม ฉันก็สามารถไปขอให้ท่านเจ้าเมืองอนุญาตให้ได้ คุณสนใจไหม",
+                "zh-Hans": "有一个保密等级为“机密”的项目，在令尹的特殊许可下，可以向您开放，不知道您有没有兴趣？",
+                "zh-Hant": "有一個保密等級為「機密」的專案，在令尹的特殊許可下，可以向您開放，不知道您有沒有興趣？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vertraulich?",
+                    "en": "Confidential?",
+                    "es": "¿Confidencial?",
+                    "fr": "Confidentiel ?",
+                    "ja": "機密？",
+                    "ko": "기밀?",
+                    "th": "โครงการลับงั้นเหรอ",
+                    "zh-Hans": "机密？",
+                    "zh-Hant": "機密？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Genehmigung?",
+                    "en": "Authorization?",
+                    "es": "¿Autorización?",
+                    "fr": "Autorisation spéciale ?",
+                    "ja": "許可？",
+                    "ko": "특별한 허가?",
+                    "th": "การอนุญาตอะไรกัน",
+                    "zh-Hans": "特殊许可？",
+                    "zh-Hant": "特殊許可？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich begleite derzeit diesen verletzten Forscher zu diesem Ort.",
+                "en": "I am currently escorting this injured researcher to that place.",
+                "es": "Actualmente estoy escoltando a este investigador herido a ese lugar.",
+                "fr": "Je m'apprête à ramener ce chercheur blessé.",
+                "ja": "そう。でも、今は怪我人の保護が先ね。",
+                "ko": "네, 마침 이분도 돌려보내야 해서...",
+                "th": "ตอนนี้ฉันกำลังคุ้มกันนักวิจัยที่บาดเจ็บคนนี้ไปที่นั่น",
+                "zh-Hans": "正好我要送这位受伤的研究员回去。",
+                "zh-Hant": "正好我要送這位受傷的研究員回去。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn Sie einen Moment Zeit hätten, könnten Sie vielleicht mitkommen? Eine Erklärung vor Ort könnte effizienter sein.",
+                "en": "If you could spare a moment, would you mind coming along? Explaining on-site might be more efficient.",
+                "es": "Si pudieras dedicar un momento, ¿te importaría venir conmigo? Explicar en el lugar podría ser más eficiente.",
+                "fr": "Si vous avez du temps, pourriez-vous venir avec moi ? Il semble plus intuitif d'expliquer sur place.",
+                "ja": "一緒にどう？現場で説明した方が早いから。",
+                "ko": "시간 여유가 있으시다면 저와 함께 가실 수 있나요? 제가 보기에 직접 설명하면 더 이해가 빠를 것 같아요",
+                "th": "หากคุณพอจะมีเวลาว่าง ฉันอยากจะขอรบกวนให้คุณไปกับฉันหน่อยได้ไหม ไปอธิบายที่หน้างานน่าจะเข้าใจได้ง่ายกว่า",
+                "zh-Hans": "如果您的时间充裕的话，不知道可否跟我同去？现场说明，似乎更直观一些。",
+                "zh-Hant": "如果您的時間充裕的話，不知道可否跟我同去？現場說明，似乎更直觀一些。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 93,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "散华"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar, dann gehen wir zusammen.",
+                    "en": "Sure, let's go together then.",
+                    "es": "Claro, vamos juntos entonces.",
+                    "fr": "D'accord, allons-y ensemble.",
+                    "ja": "わかった。",
+                    "ko": "좋아요, 그럼 같이 가시죠",
+                    "th": "ได้สิ งั้นก็ไปกันเลย",
+                    "zh-Hans": "好，那就一起去吧。",
+                    "zh-Hant": "好，那就一起去吧。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

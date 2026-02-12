@@ -1,0 +1,2200 @@
+{
+  "id": 142000001,
+  "key": "射击派对",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Schießparty",
+    "en": "Shooting Party",
+    "es": "Fiesta de tiro",
+    "fr": "Fête de tir",
+    "ja": "射撃パーティー",
+    "ko": "사격 파티",
+    "th": "งานปาร์ตี้ยิงเป้า",
+    "zh-Hans": "射击派对",
+    "zh-Hant": "射擊派對"
+  },
+  "desc": {
+    "de": "Du hast eine Einladung zu einer eigenartigen Schießparty erhalten, die anscheinend mit den beschädigten Robotern in Settle Range zu tun hat. Schau es dir an.",
+    "en": "You've received an invitation to a peculiar shooting party, seemingly related to the damaged robot in Settle Range. Go check it out.",
+    "es": "Has recibido una invitación a una peculiar fiesta de tiro, aparentemente relacionada con los robots dañados en la Cordillera de Asentamiento. Ve a echar un vistazo.",
+    "fr": "Vous avez reçu une étrange invitation à une Fête de tir, apparemment liée au robot endommagé au Pic de Résoudre. Allez vérifier sur place.",
+    "ja": "射撃パーティーの情報が記されたチラシを貰った。どうやら落着嶺のあの壊れたロボットと関係しているようだ。参加してついに調べてみよう。",
+    "ko": "수상한 사격 파티의 전단지를 받았는데 낙정령에 있는 파손된 로봇과 관련이 있는 것 같습니다. 사격 파티에 참가해보세요",
+    "th": "คุณได้รับคำเชิญเข้าร่วมงานปาร์ตี้ยิงเป้าสุดแปลก ซึ่งดูเหมือนจะเกี่ยวข้องกับหุ่นยนต์ที่เสียหายในแนวเขาตั้งรกราก ไปดูเลยสิ",
+    "zh-Hans": "你收到了一个奇怪的射击派对的邀请，这似乎和落定岭上损坏的机器人有关，参加看看吧。",
+    "zh-Hant": "你收到了一個奇怪的射擊派對的邀請，這似乎和落定嶺上損壞的機器人有關，參加看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Startort der Schießparty.",
+        "en": "Head to the shooting party's starting location.",
+        "es": "Dirígete a la ubicación de inicio de la fiesta de tiro.",
+        "fr": "Se rendre au terrain de la Fête de tir",
+        "ja": "射撃パーティーの開催場所に向う",
+        "ko": "사격 파티가 여는 곳으로 이동하기",
+        "th": "มุ่งหน้าไปยังจุดเริ่มต้นของงานปาร์ตี้ยิงเป้า",
+        "zh-Hans": "前往射击派对开始地点",
+        "zh-Hant": "前往射擊派對開始地點"
+      },
+      "entities": [
+        {
+          "entityId": 142800679,
+          "mapId": 8,
+          "blueprintType": "SceneObj201",
+          "name": "TsEntity_场景交互_单人靠背椅",
+          "areaId": 6,
+          "position": {
+            "x": -102155,
+            "y": 252603,
+            "z": 6559
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 85
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Exilführer, der die Schießparty organisiert.",
+        "en": "Talk to the Exile leader organizing the shooting party",
+        "es": "Habla con el líder de los Exiliados que organiza la fiesta de tiro.",
+        "fr": "Parler au chef des Exilés qui organise la Fête de tir",
+        "ja": "追放者リーダーと会話する",
+        "ko": "사격 파티를 조직한 추방자 두목과 대화",
+        "th": "คุยกับผู้นำที่ถูกเนรเทศที่จัดงานปาร์ตี้ยิงเป้า",
+        "zh-Hans": "和组织射击派对的流放者首领谈谈",
+        "zh-Hant": "和組織射擊派對的流放者首領談談"
+      },
+      "entities": [
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Hey, wir veranstalten gerade ein großes Schießturnier und eine Party. Komm vorbei und mach mit, wenn du Spaß haben willst!",
+                "en": "Hey, we're running a major shooting tournament and party right now. Come over and join us if you want in on the fun!",
+                "es": "Oye, estamos organizando un gran torneo de tiro y fiesta en este momento. Ven y únete a nosotros si quieres unirte a la diversión.",
+                "fr": "Salut ! la super grande fête de la prise de vue est ici, venez nous rejoindre si vous êtes intéressés !",
+                "ja": "さあ、ビッグな射撃パーティーはここにしかない。今のうちにエントリーしとけよ！",
+                "ko": "자자, 사격파티! 보상이 풍부한 사격파티! 참석할거면 빨리오라고!",
+                "th": "เฮ้ย เราจัดปาร์ตี้กับทัวร์นาเมนต์แข่งยิงเป้าครั้งใหญ่อยู่ อยากสนุกก็มาจอยกันได้!",
+                "zh-Hans": "哟吼，超大的射击派对就在这里，要参加的就快点来！",
+                "zh-Hant": "喲吼，超大的射擊派對就在這裡，要參加的就快點來！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Woher du kommst, was du beruflich machst. Es ist egal. Wenn du glaubst, dass du einen guten Abzugfinger hast, kannst du dich anmelden!",
+                "en": "Where you come from, what you do for a living. It don't matter. If you think you have a good trigger finger, you can sign up!",
+                "es": "De dónde vienes, a qué te dedicas. No importa. Si crees que tienes un buen dedo en el gatillo, ¡puedes inscribirte!",
+                "fr": "Si vous pensez avoir un don pour le tir, vous pouvez vous inscrire !",
+                "ja": "出自は問わない。射撃術だけで物を言う正真正銘の大勝負！",
+                "ko": "신분과 상관없이 자신의 사격 솜씨가 좋다고 생각되면 참가할 수 있지!",
+                "th": "จะมาจากไหนหรือทำอาชีพอะไรก็ไม่สำคัญ ถ้าคิดว่าเป็นสิงห์แม่นปืนก็สมัครได้เลย!",
+                "zh-Hans": "不论你身份背景如何，只要觉得自己枪法不错，就能参加！",
+                "zh-Hant": "不論你身份背景如何，只要覺得自己槍法不錯，就能參加！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt drei Herausforderungen, für jede Herausforderung, die du schaffst, gibt's schicke Preise. Echt einfach!",
+                "en": "There are three challenges, you'll get yourself some nifty prizes for every challenge you beat. Real simple!",
+                "es": "Hay tres desafíos, te llevarás algunos premios útiles por cada desafío que superes. ¡Muy simple!",
+                "fr": "Nous avons préparé trois défis, si vous les réussissez, vous pourrez obtenir le prix !",
+                "ja": "挑戦は、3回。全部クリアすれば、大賞ゲット！",
+                "ko": "세 번의 도전을 준비했는데 통과만 하면 보상을 받을 수 있어!",
+                "th": "การแข่งนี้มีด้วยกันสามด่านท้าดวล แต่ละด่านจะมีรางวัลแจ่มๆ ให้ผู้ชนะ ง่ายๆ แค่นั้นแหละ!",
+                "zh-Hans": "我们准备了三次挑战，只要通过就能得奖！",
+                "zh-Hant": "我們準備了三次挑戰，只要通過就能得獎！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und der Hauptpreis ist genau hier in dieser Box neben mir!",
+                "en": "And the grand prize is right here inside this box next to me!",
+                "es": "¡Y el gran premio está justo aquí dentro de esta caja a mi lado!",
+                "fr": "Et le dernier prix est ici, dans la boîte à côté de moi !",
+                "ja": "そして最終大賞は、この箱の中に！",
+                "ko": "최종 대상 상품은 바로 내 옆에 있는 상자 안에!",
+                "th": "ส่วนรางวัลใหญ่ก็อยู่ในกล่องข้างฉันนี่แหละ!",
+                "zh-Hans": "而最终的大奖——就在我身边的箱子里！",
+                "zh-Hant": "而最終的大獎——就在我身邊的箱子裡！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Drei Herausforderungen. Schaffst du alle, gehört alles hier dir!",
+                "en": "Three challenges. Get through all of them, and everything here will be all yours!",
+                "es": "Tres desafíos. Supera todos ellos, ¡y todo aquí será todo tuyo!",
+                "fr": "Si vous relevez les trois défis, tout ce qui se trouve ici est à vous !",
+                "ja": "すべての挑戦をクリアできたら、もう君のものになる！",
+                "ko": "세 번의 도전만 완수하면 이곳의 물건은 모두 당신 것!",
+                "th": "ด่านท้าดวลสามด่าน ผ่านทุกด่านก็รับรางวัลทั้งหมดไปหมดเลย!",
+                "zh-Hans": "只要完成三次挑战，这里的东西就都归你！",
+                "zh-Hant": "只要完成三次挑戰，這裡的東西就都歸你！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na, was sagst du, willst du's versuchen?",
+                "en": "Whaddya say, wanna give her a spin?",
+                "es": "¿Qué dices, quieres darle una vuelta?",
+                "fr": "Et si vous veniez l'essayer ?",
+                "ja": "早くエントリーしようか！",
+                "ko": "어때? 끌리지 않아? 어서 와서 도전해봐!",
+                "th": "ว่าไง จะลองหน่อยไหม?",
+                "zh-Hans": "怎么样，快来试试吧！",
+                "zh-Hant": "怎麼樣，快來試試吧！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Hehe, genau, komm zu Papa...)",
+                "en": "(Hehe, that's it, come to papa...)",
+                "es": "(Jeje, eso es, ven a papa...)",
+                "fr": "(Hmm, tant que je peux encourager les gens à participer...)",
+                "ja": "（ふんふん、カモたちが集まってきやがる……順調だ）",
+                "ko": "(좋았어, 일단 참가하게 해야지, 그럼...)",
+                "th": "(ฮี่ๆ นั่นแหละ มาหาปะป๊าสิ...)",
+                "zh-Hans": "（哼哼，只要能骗到人参加……）",
+                "zh-Hant": "（哼哼，只要能騙到人參加……）"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie bitte?",
+                    "en": "Come again?",
+                    "es": "¿Cómo dices?",
+                    "fr": "Qu'avez-vous dit ?",
+                    "ja": "何ぶつぶつ言ってんの？",
+                    "ko": "뭐라고요?",
+                    "th": "อะไรนะ?",
+                    "zh-Hans": "你说什么？",
+                    "zh-Hant": "你說什麼？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich denke, meine Schießfähigkeiten sind auf der Spitze.",
+                    "en": "I think my shooting skills are up to par.",
+                    "es": "Creo que mis habilidades de tiro están a la altura.",
+                    "fr": "Je pense que je suis un bon tireur.",
+                    "ja": "射撃術なら、自信がある。",
+                    "ko": "저는 제 사격 솜씨가 좋다고 생각해요",
+                    "th": "ฉันว่าฉันมีฝีมือด้านยิงปืนพอตัวนะ",
+                    "zh-Hans": "我觉得我枪法不错。",
+                    "zh-Hant": "我覺得我槍法不錯。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "N-nichts, es war nichts! Wie ich sagte, du meldest dich an, und alle Preise sind dein!",
+                "en": "N-nothing, it was nothing! Like I said, you sign up, and all the prizes are yours!",
+                "es": "¡N-nada, no fue nada! Como dije, te inscribes, ¡y todos los premios son tuyos!",
+                "fr": "Quoi, qu'est-ce que j'ai dit ? J'ai dit que si vous adhérez, toutes les récompenses peuvent être les vôtres !",
+                "ja": "な、何てもない。参加さえすれば、大賞なんて容易いもんだってだけさ。",
+                "ko": "아, 아닐세! 난 그저 참가만 하면 이곳의 상은 모두 가져갈 수 있다고 말했네!",
+                "th": "ปะ...เปล่า ไม่มีอะไร! อย่างที่บอกนั่นแหละ สมัครได้เลย แล้วก็รับรางวัลทั้งหมดไป!",
+                "zh-Hans": "没什么，我说什么了！我说，只要你参加，这里的奖励就都能归你！",
+                "zh-Hant": "沒什麼，我說什麼了！我說，只要你參加，這裡的獎勵就都能歸你！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Super! Ich wusste, du hast es drauf. Hier entlang, die Preise warten!",
+                "en": "Sweet! I knew you had it in you. Right this way, the prizes await!",
+                "es": "¡Genial! Sabía que lo tenías en ti. Por aquí, ¡los premios te esperan!",
+                "fr": "Hé, je vois bien que vous êtes un génie ! Rejoignez-nous et vous aurez droit à toutes les récompenses !",
+                "ja": "おお、見りゃわかる。君は天才だ。はやく参加しろよ。摘むだけで大賞をゲットできるんだぜ！",
+                "ko": "오, 역시! 자, 빨리 참가하게! 이곳의 상이 모두 자네의 것이 될 수 있네!",
+                "th": "หวานเจี๊ยบ! กะแล้วต้องสนใจ มาทางนี้สิ ของรางวัลรออยู่!",
+                "zh-Hans": "嘿，我一看就知道你是个奇才！快参加吧，这里的奖励都能归你！",
+                "zh-Hant": "嘿，我一看就知道你是個奇才！快參加吧，這裡的獎勵都能歸你！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und du hast Glück, wir bieten gerade einen Rabatt von 20% an, wenn du dich jetzt anmeldest! Das macht insgesamt ... 500 Shell-Kredite für die Anmeldegebühr!",
+                "en": "And you're in luck, we happen to be offering a 20% discount if you join now! Which comes down to a total of... 500 Credits for the sign-up fee!",
+                "es": "Y tienes suerte, ¡estamos ofreciendo un descuento del 20% si te unes ahora! Lo que se reduce a un total de... ¡500 Monedas Caparazón por la cuota de inscripción!",
+                "fr": "Inscrivez-vous maintenant et je vous offre une réduction de 20 % ! Soit un total de... 500 crédits pour le droit d'entrée !",
+                "ja": "そうだ、入場料は2割引にしてやろうじゃないか！合計……500！",
+                "ko": "지금 참가하면 20% 할인! 입장료 단돈 500 클램 코인!",
+                "th": "โชคดีมากเลย เรามีส่วนลด 20% พอดีถ้าเข้าร่วมตอนนี้! ค่าสมัครลดแล้วเหลือเพียง... 500 เหรียญเท่านั้น!",
+                "zh-Hans": "现在参加我还能给你打个八折！一共……五百钱的入场费！",
+                "zh-Hant": "現在參加我還能給你打個八折！一共……五百錢的入場費！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du verlangst viel zu viel.",
+                    "en": "You're asking way too much.",
+                    "es": "Estás pidiendo demasiado.",
+                    "fr": "C'est trop cher.",
+                    "ja": "高すぎ。",
+                    "ko": "너무 비싸요",
+                    "th": "เรียกเยอะไปแล้วนะ",
+                    "zh-Hans": "太贵了。",
+                    "zh-Hant": "太貴了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hey, es sind nur 500 Shell-Kredite. Und du siehst aus, als hättest du mehr als genug übrig. Gib es einfach her!",
+                "en": "Hey, it's only 500 Credits. And you look like you've got more than enough to spare. Just fork it over!",
+                "es": "Oye, son solo 500 Monedas Caparazón. Y parece que tienes más que suficiente para gastar. ¡Dáselos!",
+                "fr": "Hé, ce n'est que 500 crédits. Et vous avez l'air d'en avoir largement assez. Allez-y, donnez tout  !",
+                "ja": "500って相当に破格だぞ。文句はあるまい？",
+                "ko": "500 클램 코인이면 엄청 싼 거네. 자자, 빨리 한 번 해보게",
+                "th": "เฮ้ย แค่ 500 เหรียญเองน่า แถมแกดูท่าทางจะเหลือกินเหลือใช้ด้วยนี่หว่า เอาเงินมาได้แล้ว!",
+                "zh-Hans": "就五百钱，看你面相生金，就拿来吧！",
+                "zh-Hant": "就五百錢，看你面相生金，就拿來吧！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 36,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 37,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 38,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Warte auf den Beginn der Schießparty.",
+        "en": "Wait for the shooting party to begin.",
+        "es": "Espera a que comience la fiesta de tiro.",
+        "fr": "Attendre le début de la Fête de tir",
+        "ja": "射撃パーティーの開催を待つ",
+        "ko": "사격 파티가 시작될 때까지 기다리기",
+        "th": "รอให้ปาร์ตี้ยิงเป้าเริ่มขึ้น",
+        "zh-Hans": "等待射击派对开始",
+        "zh-Hant": "等待射擊派對開始"
+      },
+      "entities": [
+        {
+          "entityId": 142000109,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男2",
+          "areaId": 6,
+          "position": {
+            "x": -104247,
+            "y": 251585,
+            "z": 6597
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -3
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000110,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女4",
+          "areaId": 6,
+          "position": {
+            "x": -103407,
+            "y": 252310,
+            "z": 6559
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000111,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男3",
+          "areaId": 6,
+          "position": {
+            "x": -103818,
+            "y": 252252,
+            "z": 6560
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000112,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男4",
+          "areaId": 6,
+          "position": {
+            "x": -102484,
+            "y": 252869,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000114,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女6",
+          "areaId": 0,
+          "position": {
+            "x": -102280,
+            "y": 253662,
+            "z": 6543
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -45
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001273,
+          "mapId": 8,
+          "blueprintType": "Treasure009",
+          "name": "TsEntity_豪华物资箱_玩法刷新3",
+          "areaId": 6,
+          "position": {
+            "x": -103465,
+            "y": 253026,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -133
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142800679,
+          "mapId": 8,
+          "blueprintType": "SceneObj201",
+          "name": "TsEntity_场景交互_单人靠背椅",
+          "areaId": 6,
+          "position": {
+            "x": -102155,
+            "y": 252603,
+            "z": 6559
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 85
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 5,
+          "stateId": 8,
+          "talks": [
+            {
+              "text": {
+                "de": "Hey! Was machst du da! Das ist der Hauptpreis für unsere Schießparty! Wenn du ihn willst, dann verdien ihn dir selbst!",
+                "en": "Hey! What are you doing! That's the grand prize for our shooting party! If you want it, earn it yourself!",
+                "es": "¡Oye! ¡¿Qué estás haciendo?! ¡Ese es el gran premio de nuestra fiesta de tiro! ¡Si lo quieres, gánatelo por tu cuenta!",
+                "fr": "Hé ! Qu'est-ce que tu fais ? C'est le grand prix de notre fête du tir ! Si tu le veux, gagne-le toi-même !",
+                "ja": "おい！何しとる！ありゃ射撃パーティーの大賞だぁ！欲しいならてめえで稼げ！",
+                "ko": "이봐! 너 뭐하는 거야! 그건 우리 사격 파티의 대상이라고! 원한다면 직접 벌어!",
+                "th": "เฮ้ย! จะทำอะไรน่ะ! นั่นรางวัลใหญ่ในงานปาร์ตี้ยิงเป้าของเราเลยนะ! อยากได้ก็แข่งให้ชนะสิ!",
+                "zh-Hans": "喂！你干嘛！那可是我们射击派对的大奖！想要就自己赚啊！",
+                "zh-Hant": "喂！你幹嘛！那可是我們射擊派對的大獎！想要就自己賺啊！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 915,
+                "name": {
+                  "zh-Hans": "狡猾的流放者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem schlauen Exilführer.",
+        "en": "Talk to the cunning Exile leader",
+        "es": "Habla con el astuto líder de los Exiliados.",
+        "fr": "Parler au rusé chef des Exilés",
+        "ja": "狡猾な追放者リーダーと会話する",
+        "ko": "교활한 추방자 두목과 대화",
+        "th": "คุยกับผู้นำที่ถูกเนรเทศเจ้าเล่ห์",
+        "zh-Hans": "和狡猾的流放者首领谈谈",
+        "zh-Hant": "和狡猾的流放者首領談談"
+      },
+      "entities": [
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Was für ein Schuss. Du denkst doch nicht daran, hier aufzuhören, oder?",
+                "en": "What a shot. You're not thinking of just stopping here, are you?",
+                "es": "Vaya disparo. ¿No estás pensando en parar aquí, verdad?",
+                "fr": "Avec vos compétences, vous ne vous arrêterez pas là, n'est-ce pas ?",
+                "ja": "君のような腕の持ち主は、きっとこの程度のもんじゃない！",
+                "ko": "자네 정도의 실력으로 여기서 포기하진 않겠지?",
+                "th": "ยิงแม่นอะไรเบอร์นั้น คงไม่คิดจะพอแค่นี้ใช่ไหม?",
+                "zh-Hans": "像你这样的身手，一定不会止步于此吧！",
+                "zh-Hant": "像你這樣的身手，一定不會止步於此吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie sieht's aus, bereit für Herausforderung Nummer 2?",
+                "en": "How about it, ready for challenge No. 2?",
+                "es": "¿Qué te parece, listo para el desafío n.º 2?",
+                "fr": "Commencez dès maintenant le défi du deuxième niveau !",
+                "ja": "どうよ。今から第二関門に挑戦してみるがいい！",
+                "ko": "어때? 두 번째 도전을 시작하는게?",
+                "th": "แล้วพร้อมลุยด่านท้าดวลหมายเลขสองหรือยังล่ะ?",
+                "zh-Hans": "怎么样，现在就开始第二关挑战吧！",
+                "zh-Hant": "怎麼樣，現在就開始第二關挑戰吧！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du noch zwei weitere Herausforderungen meisterst, wird der großartige Preis mit dir nach Hause gehen!",
+                "en": "You get through two more challenges, and that magnificent prize will be coming home with you!",
+                "es": "¡Supera dos desafíos más, y ese magnífico premio se irá a casa contigo!",
+                "fr": "Il ne reste plus que deux niveaux à terminer, et le magnifique grand prix est à vous !",
+                "ja": "あと挑戦が2つで、大賞は君がいただくのだ！",
+                "ko": "두 번만 더 성공하면 대상은 자네 것이네!",
+                "th": "ผ่านด่านท้าดวลอีกสองด่านก็เอารางวัลใหญ่อันนี้กลับบ้านไปด้วยได้เลย!",
+                "zh-Hans": "只要再通过两关，这精美大奖就是你的了！",
+                "zh-Hant": "只要再通過兩關，這精美大獎就是你的了！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese zweite Herausforderung ist eher für die Profis gedacht. Du bekommst zwei Runden mit Zielen.",
+                "en": "This second challenge is designed more for the pros. You get two rounds of targets.",
+                "es": "Este segundo desafío está diseñado más para los profesionales. Tienes dos rondas de objetivos.",
+                "fr": "Ce deuxième niveau est conçu pour les professionnels, avec deux séries de tir sur cible.",
+                "ja": "第2の挑戦はベテランのためのものだ。標的は2ラウンドある。",
+                "ko": "두 번째 도전은 베테랑을 위한 것으로 2 라운드까지 있네",
+                "th": "ด่านท้าดวลที่สองนี้ออกแบบมาให้มือโปร จะมีเป้าโผล่มาสองรอบ",
+                "zh-Hans": "这第二关可是为老手准备的，有两轮射击靶。",
+                "zh-Hant": "這第二關可是為老手準備的，有兩輪射擊靶。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was die Anmeldegebühr betrifft, hehe... Ich gebe dir noch einen Rabatt. Nur 1.000 Shell-Kredite!",
+                "en": "As for the sign-up fee, hehe... I'll give you another discount. Only 1,000 Credits!",
+                "es": "En cuanto a la cuota de inscripción, jeje... te daré otro descuento. ¡Solo 1,000 Monedas Caparazón!",
+                "fr": "Quant aux frais d'inscription, hehe... je vous offre une autre réduction. Seulement 1 000 crédits coquilles !",
+                "ja": "入場料は、ゴホン、そうだな……今回も特別に、1000にしてやろうじゃないか。",
+                "ko": "입장료는 뭐, 하하... 할인을 해주도록 하지! 1000 클램 코인만 주게!",
+                "th": "ส่วนค่าสมัครก็ ฮิๆ... ลดให้อีกก็ได้ เหลือแค่ 1,000 เหรียญเท่านั้น!",
+                "zh-Hans": "这入场费嘛，嘿嘿……再给你打个折好了，只需要一千钱！",
+                "zh-Hant": "這入場費嘛，嘿嘿……再給你打個折好了，只需要一千錢！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nennst du das einen Rabatt?",
+                    "en": "Do you call that a discount?",
+                    "es": "¿Llamas a eso un descuento?",
+                    "fr": "Ce n'est pas une réduction du tout !",
+                    "ja": "定価より高いでは？",
+                    "ko": "이걸 할인이라고 할 수 있나요?",
+                    "th": "นี่เรียกว่าลดแล้วเหรอ?",
+                    "zh-Hans": "这是十几折了吧。",
+                    "zh-Hant": "這是十幾折了吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was meinst du? Ich halte mein Wort, 1.000 Shell-Kredite, her damit!",
+                "en": "What do you mean? I'm a man of my word, 1000 Credits, hand it over!",
+                "es": "¿Qué quieres decir? Soy un hombre de palabra, 1,000 Monedas Caparazón, ¡entrégalas!",
+                "fr": "Que voulez-vous dire ? Je suis un homme de parole. Mille crédits de coquillages, remettez-les-moi !",
+                "ja": "何の話！二言はない。はやく出せよ、1000だ。",
+                "ko": "당연하지! 그것도 엄청 싸게 해준 거네. 도전하고 싶으면 빨리 돈부터 내놓게!",
+                "th": "หมายความว่าไง? ฉันรักษาคำพูดน่า 1,000 เหรียญ เอามาได้แล้ว!",
+                "zh-Hans": "哪有啊！我可是说话算话的，一千钱，快交上来吧！",
+                "zh-Hant": "哪有啊！我可是說話算話的，一千錢，快交上來吧！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem schlauen Exilführer.",
+        "en": "Talk to the cunning Exile leader",
+        "es": "Habla con el astuto líder de los Exiliados.",
+        "fr": "Parler au chef rusé des Exilés",
+        "ja": "狡猾な追放者リーダーと会話する",
+        "ko": "교활한 추방자 두목과 대화",
+        "th": "คุยกับผู้นำที่ถูกเนรเทศเจ้าเล่ห์",
+        "zh-Hans": "和狡猾的流放者首领谈谈",
+        "zh-Hant": "和狡猾的流放者首領談談"
+      },
+      "entities": [
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun, die ultimative Herausforderung, ist einer Meisterin wie dir würdig. Nimmst du diese Herausforderung an?",
+                "en": "Now, the ultimate challenge, is worthy of a master such as yourself. Do you accept this challenge?",
+                "es": "Ahora, el desafío final, es digno de un maestro como tú. ¿Aceptas este desafío?",
+                "fr": "Nous avons également préparé le défi ultime pour un pro comme vous, alors venez le relever !",
+                "ja": "あなたみたいなプロ中のプロに用意した最後の挑戦、どうよ。やらずにはいられないだろ？",
+                "ko": "자네 같은 고수를 위해 최고 난이도의 도전을 준비해놨네! 어때? 한번 도전해보겠나?",
+                "th": "เอาละ ด่านท้าดวลสุดท้าย คู่ควรกับยอดฝีมืออย่างคุณนะ กล้ารับคำท้าไหมล่ะ?",
+                "zh-Hans": "我们还为你这样的高手准备了终极挑战，怎么样，来试试吧！",
+                "zh-Hant": "我們還為你這樣的高手準備了終極挑戰，怎麼樣，來試試吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese letzte Herausforderung besteht aus drei Runden mit Zielen. Wenn du es durch alle schaffst, ist der Hauptpreis zum Greifen nah!",
+                "en": "This final challenge is made up of three rounds worth of targets. You get through all of it, and the grand prize is yours for the taking!",
+                "es": "Este desafío final consta de tres rondas de objetivos. Si superas todo, ¡el gran premio es tuyo!",
+                "fr": "Ce défi ultime consiste en trois séries de tirs sur des cibles. Si vous réussissez, le grand prix est à vous !",
+                "ja": "最終挑戦では、標的は3ラウンドある。クリアできたら、大賞をもらえる。簡単だろ？",
+                "ko": "최종 도전은 총 3 라운드가 있네! 도전에 성공하면 대상은 자네의 것이네!",
+                "th": "ด่านท้าดวลสุดท้ายจะมีเป้าโผล่มาทั้งหมดสามรอบ ผ่านหมดก็รับรางวัลใหญ่ไปได้เลย!",
+                "zh-Hans": "这最终挑战总共有三波射击靶，只要挑战成功，大奖就是你的了！",
+                "zh-Hant": "這最終挑戰總共有三波射擊靶，只要挑戰成功，大獎就是你的了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit einer Herausforderungsgebühr von nur 2.000 Shell-Krediten! Es ist alles oder nichts! Na, hast du das Zeug dazu?",
+                "en": "With a challenge fee of as little as 2,000 Credits! It's make it or break it! Well? Do you have what it takes?",
+                "es": "¡Con una tarifa de desafío de tan solo 2,000 Monedas Caparazón! ¡Es todo o nada! ¿Tienes lo que se necesita?",
+                "fr": "Les frais d'inscription ne s'élèvent qu'à deux mille crédits coquilles ! Alors, avez-vous le courage de relever le défi ?",
+                "ja": "入場料はなんと2000だけ！二度と来ないチャンスだ！どうだ。その度胸はあるのか？",
+                "ko": "참가비는 2000 클램 코인이네! 기회는 올 때 잡아야 성공하지! 어떤가? 자넨 도전할 배짱을 가지고 있나?",
+                "th": "ค่าสมัครท้าดวลแค่ 2,000 เหรียญเท่านั้น! จะปังหรือจะพังกันนะ! ว่าไง? คิดว่าเจ๋งพอมั้ยไหม?",
+                "zh-Hans": "参加费只要两千钱！机不可失，时不再来！怎么样，你有胆量挑战吗？",
+                "zh-Hant": "參加費只要兩千錢！機不可失，時不再來！怎麼樣，你有膽量挑戰嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wirst du nicht auftreten?",
+                    "en": "Tired of the acting already?",
+                    "es": "¿No vas a actuar?",
+                    "fr": "C'est presqu'une anarque.",
+                    "ja": "もう芝居はやめたの？",
+                    "ko": "이제 대놓고 바가지를 씌우네요?",
+                    "th": "เบื่อจะเล่นละครแล้วงั้นเหรอ?",
+                    "zh-Hans": "演都不演了？",
+                    "zh-Hant": "演都不演了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Auftreten? Was meinst du, das Leben ist eine Bühne, du kannst nicht einfach irgendwas sagen! Los, es sind nur zweitausend SHC, und du kannst den Hauptpreis mit nach Hause nehmen!",
+                "en": "Acting? What acting? I'm a man of my word! Come on, then. 2,000 Credits doesn't hurt, it's the ultimate prize we're talking about here!",
+                "es": "¿Actuar? ¿Qué quieres decir, la vida es un escenario, no puedes decir cualquier cosa! Vamos, son solo 2,000 Monedas Caparazón, ¡y puedes llevarte el gran premio a casa!",
+                "fr": "Jouer ? Que voulez-vous dire ? Soyons aimable, pote ! Allez, c'est seulement deux mille crédits coquilles, le grand prix est à vous !",
+                "ja": "し、芝居？何の話？誹謗中傷はだめだぞ！さあこい。たかが2000の入場料に、君の王道は阻まれることはなかろう？",
+                "ko": "바가지? 바가지라니! 그리 함부로 말하지 말게! 겨우 2000 클램 코인으로 대상을 가져 갈 수 있는 기회를 주는 것에 감사는 못할망정!",
+                "th": "เล่นละคร? ละครอะไรกัน? ฉันพูดคำไหนคำนั้น! ไม่เอาน่า 2,000 เหรียญไม่ได้แพงขนาดนั้นหรอก รางวัลใหญ่มารออยู่ตรงหน้าแล้วนะ!",
+                "zh-Hans": "演？什么演，这人生如戏，你可不能乱说！来吧，也才两千钱而已，就能带回大奖！",
+                "zh-Hant": "演？什麼演，這人生如戲，你可不能亂說！來吧，也才兩千錢而已，就能帶回大獎！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe die Anfänger-Herausforderung ab.",
+        "en": "Complete the Novice Challenge",
+        "es": "Completa el Desafío de Novatos.",
+        "fr": "Relever le défi pour les débutants",
+        "ja": "初心者挑戦を完了する",
+        "ko": "초급 도전 완료하기",
+        "th": "ทำการท้าทายระดับมือใหม่ให้สำเร็จ",
+        "zh-Hans": "完成初级挑战",
+        "zh-Hant": "完成初級挑戰"
+      },
+      "entities": [
+        {
+          "entityId": 142000101,
+          "mapId": 8,
+          "blueprintType": "Gameplay055",
+          "name": "TsEntity_玩法_射击靶底座13",
+          "areaId": 6,
+          "position": {
+            "x": -102684,
+            "y": 252942,
+            "z": 6569
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -5
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 1,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Beeindruckend. Das ging ja schnell!",
+                "en": "Impressive. That was a quick one!",
+                "es": "Impresionante. ¡Eso ha sido rápido!",
+                "fr": "Impressionnant !",
+                "ja": "ほう。想像以上だこれは。速攻でクリアできたじゃないか。",
+                "ko": "대단하군, 두세 번 만에 성공하다니...!",
+                "th": "เยี่ยม เร็วมากเลย!",
+                "zh-Hans": "真厉害，三两下就解决了！",
+                "zh-Hant": "真厲害，三兩下就解決了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm und hol dir deine Preise!",
+                "en": "Come fetch your prizes!",
+                "es": "¡Ven a buscar tus premios!",
+                "fr": "Venez récupérer votre prix !",
+                "ja": "さあ、賞品を受け取りたまえ！",
+                "ko": "상품을 받으러 오게!",
+                "th": "มาเอารางวัลไปได้!",
+                "zh-Hans": "来领你赢得的奖品吧！",
+                "zh-Hant": "來領你贏得的獎品吧！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe die Mittelstufen-Herausforderung ab.",
+        "en": "Complete the Intermediate Challenge",
+        "es": "Completa el Desafío Intermedio.",
+        "fr": "Relever le défi pour les intermédiaires",
+        "ja": "中級者挑戦を完了する",
+        "ko": "중급 도전 완료하기",
+        "th": "ทำการท้าทายระดับกลางให้สำเร็จ",
+        "zh-Hans": "完成中级挑战",
+        "zh-Hant": "完成中級挑戰"
+      },
+      "entities": [
+        {
+          "entityId": 142000063,
+          "mapId": 8,
+          "blueprintType": "Gameplay055",
+          "name": "TsEntity_玩法_射击靶底座11",
+          "areaId": 6,
+          "position": {
+            "x": -102684,
+            "y": 252942,
+            "z": 6569
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -5
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Drücken, atmen und schießen! Du hast Talent!",
+                "en": "Squeeze, breathe, and shoot! You've got talent!",
+                "es": "¡Aprieta, respira y dispara! ¡Tienes talento!",
+                "fr": "Serrez, respirez et tirez ! Vous avez du talent !",
+                "ja": "バラを撃ち抜いて、太陽を射るほど素晴らしい腕前だね。",
+                "ko": "와우! 솜씨가 장난 아니군!",
+                "th": "จับแน่นๆ สูดหายใจ แล้วก็ยิง! คุณเก่งอยู่แล้ว!",
+                "zh-Hans": "枪杀玫瑰，亲吻太阳！这真是好身手啊！",
+                "zh-Hant": "槍殺玫瑰，親吻太陽！這真是好身手啊！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm, komm. Deine Preise.",
+                "en": "Come, come. Your prizes.",
+                "es": "Ven, ven. Tus premios.",
+                "fr": "Allez, c'est votre prix.",
+                "ja": "さあ、賞品だ。",
+                "ko": "자자자, 보상 받아가게",
+                "th": "มาๆ รางวัลของคุณ",
+                "zh-Hans": "来来来，这是你的奖品。",
+                "zh-Hant": "來來來，這是你的獎品。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn du wirklich den ultimativen Preis willst, musst du noch eine Schippe drauflegen!",
+                "en": "But if you really want the ultimate prize, you better step it up a notch!",
+                "es": "¡Pero si de verdad quieres el premio final, más te vale esforzarte un poco más!",
+                "fr": "Mais pour obtenir le grand prix ultime, ce niveau de compétence ne suffit pas !",
+                "ja": "だが、大賞をもらうには、これだけはまだまだ足りない！",
+                "ko": "다만, 대상을 받기에는 수준이 조금 부족해 보이는군!",
+                "th": "แต่ถ้าอยากได้รางวัลใหญ่จริงๆ ล่ะก็ ต้องโชว์ฝีมืออีกหน่อย!",
+                "zh-Hans": "但要想拿到终极大奖，这点水平还不够！",
+                "zh-Hant": "但要想拿到終極大獎，這點水準還不夠！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir hatten schon viele Teilnehmer mit anständigem Talent, aber alle haben es nicht geschafft, die letzte Herausforderung zu meistern!",
+                "en": "We've had plenty of contestants with decent talent before, but all of them failed to beat the last challenge!",
+                "es": "¡Hemos tenido muchos concursantes con talento decente antes, pero todos ellos fallaron en el último desafío!",
+                "fr": "Nous avons de nombreux candidats compétents, mais ils ont échoué au dernier niveau !",
+                "ja": "前には腕のいいやつがたくさん試したが、全部最後の難関に退けられた。",
+                "ko": "그동안 뛰어난 선수들이 많았지만 모두 마지막 단계에서 패배했지!",
+                "th": "ก่อนนี้มีผู้ท้าชิงฝีมือดีมากมาย แต่ยังไม่มีใครผ่านด่านสุดท้ายนี้ได้!",
+                "zh-Hans": "之前我们也有很多好身手的选手，但都败在了最后一关！",
+                "zh-Hant": "之前我們也有很多好身手的選手，但都敗在了最後一關！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was sagst du? Wenn du die letzte Herausforderung angehen willst, komm und finde mich!",
+                "en": "What do you say? If you want to have a go at the final challenge, come find me!",
+                "es": "¿Qué dices? Si quieres intentar el desafío final, ¡ven a buscarme!",
+                "fr": "Si vous voulez participer au niveau final, venez me voir !",
+                "ja": "どうだ。それでも尚、やりたいのであれば、こっちにこい。",
+                "ko": "어때? 마지막 단계에 도전해 보고 싶다면 날 찾아오게!",
+                "th": "ว่าไงล่ะ? ถ้าอยากลองฝ่าด่านสุดท้ายก็มาหาฉันได้!",
+                "zh-Hans": "怎么样？要想参加最后一关的话，就来找我吧！",
+                "zh-Hant": "怎麼樣？要想參加最後一關的話，就來找我吧！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe die Fortgeschrittenen-Herausforderung ab.",
+        "en": "Complete the Advanced Challenge",
+        "es": "Completa el Desafío Avanzado.",
+        "fr": "Relever le défi pour les experts",
+        "ja": "上級者挑戦を完了する",
+        "ko": "고급 도전 완료하기",
+        "th": "ทำการท้าทายระดับสูงให้สำเร็จ",
+        "zh-Hans": "完成高级挑战",
+        "zh-Hant": "完成高級挑戰"
+      },
+      "entities": [
+        {
+          "entityId": 142000094,
+          "mapId": 8,
+          "blueprintType": "Gameplay055",
+          "name": "TsEntity_玩法_射击靶底座12",
+          "areaId": 6,
+          "position": {
+            "x": -102684,
+            "y": 252942,
+            "z": 6569
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -5
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000404,
+          "mapId": 8,
+          "blueprintType": "Gameplay100",
+          "name": "TsEntity_特殊_机关组5",
+          "areaId": 6,
+          "position": {
+            "x": -102763,
+            "y": 252663,
+            "z": 6582
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Nimm an der Anfänger-Herausforderung teil.",
+        "en": "Participate in the Novice Challenge",
+        "es": "Participa en el Desafío de Novatos.",
+        "fr": "Participer au défi pour les débutants",
+        "ja": "初心者挑戦を始める",
+        "ko": "초급 도전 참여하기",
+        "th": "เข้าร่วมการท้าทายระดับมือใหม่",
+        "zh-Hans": "参加初级挑战",
+        "zh-Hant": "參加初級挑戰"
+      },
+      "entities": [
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 1,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Hehe, saftig... Geld, Geld, Geld!",
+                "en": "Hehe, juicy... Money, money, money!",
+                "es": "Jeje, suculento... Dinero, dinero, dinero!",
+                "fr": "Hehe, ces crédits... Je vais faire des bénéfices cette fois-ci !",
+                "ja": "へへ、本物の金だ……こりゃ儲かるぜ！",
+                "ko": "헤헤, 이렇게나 많이 벌다니...",
+                "th": "ฮี่ๆ หวานเจี๊ยบ... เงินจ๋า เงินๆ!",
+                "zh-Hans": "嘿嘿，这钱够量……这下可赚了！",
+                "zh-Hant": "嘿嘿，這錢夠量……這下可賺了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Ziele sind bereit, wenn du es bist!",
+                "en": "The targets are ready when you are!",
+                "es": "¡Los objetivos están listos cuando tú lo estés!",
+                "fr": "Les cibles sont prêtes quand vous l'êtes !",
+                "ja": "標的の用意ができた、さあ、こい！",
+                "ko": "과녁은 준비됐네, 자 오게!",
+                "th": "พร้อมเมื่อไหร่ก็เตรียมเป้ารอเมื่อนั้น!",
+                "zh-Hans": "靶子准备好了，来吧！",
+                "zh-Hant": "靶子準備好了，來吧！"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denk dran, Schüsse über die ausgemusterten Autos hinaus zählen als sofortige Disqualifikation!",
+                "en": "Remember, shooting beyond those scrapped cars counts as instant elimination!",
+                "es": "¡Recuerda, disparar más allá de esos coches desechados cuenta como eliminación instantánea!",
+                "fr": "N'oubliez pas que tirer au-delà de ces épaves de voitures équivaut à une élimination instantanée !",
+                "ja": "廃車が囲んだ範囲を超えないように撃ってくれよ。超えたらルール破りでアウト！",
+                "ko": "사격할 때 폐차의 위치를 넘지 말게! 넘으면 규칙 위반이네!",
+                "th": "จำไว้ว่าถ้ายิงเลยซากรถนั่นถือว่าตกรอบทันที!",
+                "zh-Hans": "记得射击时不要超越报废车辆的位置，超过了就算违规！",
+                "zh-Hant": "記得射擊時不要超越報廢車輛的位置，超過了就算違規！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Nimm an der Mittelstufen-Herausforderung teil.",
+        "en": "Participate in the Intermediate Challenge",
+        "es": "Participa en el Desafío Intermedio.",
+        "fr": "Participer au défi pour les intermédiaires",
+        "ja": "中級者挑戦を始める",
+        "ko": "중급 도전 참여하기",
+        "th": "เข้าร่วมการท้าทายระดับกลาง",
+        "zh-Hans": "参加中级挑战",
+        "zh-Hant": "參加中級挑戰"
+      },
+      "entities": [
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 2,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich liebe Trottel... Kunden wie dich!",
+                "en": "I just love chumps... I mean, gracious customers like you!",
+                "es": "Me encantan los tontos... quiero decir, los amables clientes como tú!",
+                "fr": "J'adore les clients généreux !",
+                "ja": "気前のいいカモ……じゃなくて、客が大好き！",
+                "ko": "역시 통 큰 놈이... 아니 고객님이군!",
+                "th": "ฉันชอบพวกหลอกง่าย... เอ่อ ฉันหมายถึงคุณลูกค้าแสนดีอย่างคุณ!",
+                "zh-Hans": "我最喜欢出手大方的冤……顾客啦！",
+                "zh-Hant": "我最喜歡出手大方的冤……顧客啦！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tritt heran! Die Ziele sind alle aufgestellt!",
+                "en": "Step right up! The targets are all set up!",
+                "es": "¡Adelante! ¡Los objetivos están todos preparados!",
+                "fr": "Allez, les cibles sont là !",
+                "ja": "さあ、標的の準備も完了だ！",
+                "ko": "자자자, 과녁 준비가 완료됐네!",
+                "th": "ก้าวออกมาเลย! เป้าพร้อมแล้ว!",
+                "zh-Hans": "来来来，靶子也准备完了！",
+                "zh-Hant": "來來來，靶子也準備完了！"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denk dran, Schießen über die ausgemusterten Autos hinweg zählt als sofortige Disqualifikation!",
+                "en": "Remember, shooting beyond those scrapped cars counts as instant elimination!",
+                "es": "¡Recuerda, disparar más allá de esos coches desechados cuenta como eliminación instantánea!",
+                "fr": "N'oubliez pas que tirer au-delà de ces épaves de voitures équivaut à une élimination instantanée !",
+                "ja": "廃車が囲んだ範囲を超えないように撃ってくれよ。超えたらルール破りでアウト！",
+                "ko": "사격할 때 폐차의 위치를 넘지 말게! 넘으면 규칙 위반이네!",
+                "th": "จำไว้ว่าถ้ายิงเลยซากรถนั่นถือว่าตกรอบทันที!",
+                "zh-Hans": "记得射击时不要超越报废车辆的位置，超过了就算违规！",
+                "zh-Hant": "記得射擊時不要超越報廢車輛的位置，超過了就算違規！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "parentId": 35,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Nimm an der Fortgeschrittenen-Herausforderung teil.",
+        "en": "Participate in the Advanced Challenge",
+        "es": "Participa en el Desafío Avanzado.",
+        "fr": "Participer au défi pour les experts",
+        "ja": "上級者挑戦を始める",
+        "ko": "고급 도전 참여하기",
+        "th": "เข้าร่วมการท้าทายระดับสูง",
+        "zh-Hans": "参加高级挑战",
+        "zh-Hant": "參加高級挑戰"
+      },
+      "entities": [
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 3,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Okay, okay, so viel Geld, ich habe dieses Mal einen riesigen Fang gemacht.",
+                "en": "Okay, okay, so much SHC, I made a fortune this time.",
+                "es": "Vale, vale, tantas Monedas, esta vez me he hecho de oro.",
+                "fr": "D'accord, d'accord, tant de crédit... j'ai fait fortune cette fois-ci.",
+                "ja": "よっしゃー！まさかこれだけ搾り取れたとは……",
+                "ko": "좋아! 아주 좋아! 이번에도 많이 벌었어!",
+                "th": "โอเคๆ คราวนี้ได้เงินไปเยอะเลย",
+                "zh-Hans": "好好好，这么多钱，这回赚大了。",
+                "zh-Hant": "好好好，這麼多錢，這回賺大了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Räusper! Alles klar. Die Bühne gehört ganz dir!",
+                "en": "Ahem! All right. The stage is all yours!",
+                "es": "¡Ejem! Muy bien. ¡El escenario es todo tuyo!",
+                "fr": "Très bien ! Voici les cibles !",
+                "ja": "ゴホン！どうかね、標的はもう用意されたよ。",
+                "ko": "하하, 자, 과녁 준비가 완료됐네!",
+                "th": "อะแฮ่ม! ก็ได้ ฉันยกเวทีนี้ให้!",
+                "zh-Hans": "咳哼！好了，靶子已经准备好了。",
+                "zh-Hant": "咳哼！好了，靶子已經準備好了。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die alte Regel, überschreite nicht die Position des verschrotteten Fahrzeugs beim Schießen, wenn du überschreitest, giltst du als Regelverstoß!",
+                "en": "Same deal as before. Shooting beyond those scrapped cars counts as instant elimination!",
+                "es": "Lo mismo que antes. ¡Disparar más allá de esos coches desechados cuenta como eliminación instantánea!",
+                "fr": "La règle n'a pas changé ! Tirer au-delà de ces épaves entraîne une élimination immédiate !",
+                "ja": "前と同じ、廃車が囲んだ範囲を超えないように撃ってくれよ。超えたらルール破りでアウト！",
+                "ko": "늘 하던대로, 사격할 때 폐차의 위치를 넘지 말게! 넘으면 규칙 위반이네!",
+                "th": "กติกาเหมือนเดิม ถ้ายิงเลยซากรถนั่นถือว่าตกรอบทันที!",
+                "zh-Hans": "老规矩，射击时不要超越报废车辆的位置，超过了可就算你违规了！",
+                "zh-Hant": "老規矩，射擊時不要超越報廢車輛的位置，超過了可就算你違規了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "parentId": 36,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Stelle dich dem Exilführer",
+        "en": "Confront the Exile leader",
+        "es": "Enfrenta al líder de los Exiliados.",
+        "fr": "Affronter le chef des Exilés",
+        "ja": "追放者リーダーを問いただす",
+        "ko": "추방자 두목에게 묻기",
+        "th": "เผชิญหน้ากับผู้นำที่ถูกเนรเทศ",
+        "zh-Hans": "质问流放者首领",
+        "zh-Hant": "質問流放者首領"
+      },
+      "entities": [
+        {
+          "entityId": 142000109,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男2",
+          "areaId": 6,
+          "position": {
+            "x": -104247,
+            "y": 251585,
+            "z": 6597
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -3
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000110,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女4",
+          "areaId": 6,
+          "position": {
+            "x": -103407,
+            "y": 252310,
+            "z": 6559
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000111,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男3",
+          "areaId": 6,
+          "position": {
+            "x": -103818,
+            "y": 252252,
+            "z": 6560
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000112,
+          "mapId": 8,
+          "blueprintType": "NPC201",
+          "name": "TsEntity_NPC_流放者男4",
+          "areaId": 6,
+          "position": {
+            "x": -102484,
+            "y": 252869,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000114,
+          "mapId": 8,
+          "blueprintType": "NPC202",
+          "name": "TsEntity_NPC_流放者女6",
+          "areaId": 0,
+          "position": {
+            "x": -102280,
+            "y": 253662,
+            "z": 6543
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -45
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000122,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领3",
+          "areaId": 6,
+          "position": {
+            "x": -103613,
+            "y": 252704,
+            "z": 6557
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000405,
+          "mapId": 8,
+          "blueprintType": "Monster021",
+          "name": "TsEntity_小怪_流放者男喷火器",
+          "areaId": 6,
+          "position": {
+            "x": -102923,
+            "y": 252281,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000406,
+          "mapId": 8,
+          "blueprintType": "Monster029",
+          "name": "TsEntity_小怪_流放者女狙击枪",
+          "areaId": 6,
+          "position": {
+            "x": -103379,
+            "y": 252094,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000407,
+          "mapId": 8,
+          "blueprintType": "Monster027",
+          "name": "TsEntity_小怪_流放者女电锯2",
+          "areaId": 6,
+          "position": {
+            "x": -103074,
+            "y": 252984,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000408,
+          "mapId": 8,
+          "blueprintType": "Monster020",
+          "name": "TsEntity_小怪_流放者男撬棍3",
+          "areaId": 6,
+          "position": {
+            "x": -102858,
+            "y": 252631,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000409,
+          "mapId": 8,
+          "blueprintType": "Monster024",
+          "name": "TsEntity_小怪_流放者男狙击枪2",
+          "areaId": 6,
+          "position": {
+            "x": -103254,
+            "y": 251789,
+            "z": 6546
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000410,
+          "mapId": 8,
+          "blueprintType": "Monster055",
+          "name": "TsEntity_精英_流放者首领",
+          "areaId": 6,
+          "position": {
+            "x": -103614,
+            "y": 252714,
+            "z": 6558
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142001273,
+          "mapId": 8,
+          "blueprintType": "Treasure009",
+          "name": "TsEntity_豪华物资箱_玩法刷新3",
+          "areaId": 6,
+          "position": {
+            "x": -103465,
+            "y": 253026,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -133
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_射击派对",
+          "flowIndex": 3,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Was, du hast ein Problem oder so?",
+                "en": "What, you got a problem or something?",
+                "es": "¿Qué, tienes algún problema o algo?",
+                "fr": "Qu'est-ce qui ne va pas, vous avez un problème ?",
+                "ja": "どうかした？まさか不満でも？",
+                "ko": "뭔가? 무슨 불만이라도 있나?",
+                "th": "อะไร มีปัญหาอะไรหรือไง?",
+                "zh-Hans": "怎么了，你有什么不满的吗？",
+                "zh-Hant": "怎麼了，你有什麼不滿的嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine Niederlage ist eine Niederlage. Regeln sind Regeln!",
+                "en": "A loss is a loss. Rules are rules!",
+                "es": "Una pérdida es una pérdida. ¡Las reglas son reglas!",
+                "fr": "Vous avez perdu, je n'ai enfreint aucune règle !",
+                "ja": "お前の負けなんだ、俺はゴト行為なんかしてないぞ！",
+                "ko": "진거는 진거네! 난 규칙을 어기지 않았네!",
+                "th": "แพ้ก็คือแพ้สิ กฎต้องเป็นกฎ!",
+                "zh-Hans": "输了就是输了，我可没有违反规则！",
+                "zh-Hant": "輸了就是輸了，我可沒有違反規則！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Die Regeln wurden von dir gemacht.",
+                    "en": "The rules were made by you.",
+                    "es": "Las reglas fueron hechas por ti.",
+                    "fr": "Parce que c'est vous qui avez établi les règles.",
+                    "ja": "ルールはあんたが作ったから。",
+                    "ko": "규칙을 만든 자는 당신이니까요",
+                    "th": "กฎที่แกตั้งเองมากกว่า",
+                    "zh-Hans": "因为规则是你制定的。",
+                    "zh-Hant": "因為規則是你制定的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das Ganze ist ein Betrug.",
+                    "en": "That whole thing is a scam.",
+                    "es": "Todo eso es una estafa.",
+                    "fr": "C'est une anarque !",
+                    "ja": "これは詐欺だ。",
+                    "ko": "이건 사기예요",
+                    "th": "การแข่งเมื่อกี้มันหลอกลวงทั้งเพ",
+                    "zh-Hans": "这就是个骗局。",
+                    "zh-Hant": "這就是個騙局。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hmph, na und? Ich hatte von Anfang an nicht vor, dass einer von euch Trottel gewinnt.",
+                "en": "Hmph, so what? I didn't plan for any of you suckers to win to begin with.",
+                "es": "Hmph, ¿y qué? No planeé que ninguno de ustedes ganara desde el principio.",
+                "fr": "Et alors ? Dès le début, je n'avais pas l'intention de laisser quelqu'un passer l'épreuve finale.",
+                "ja": "ふん、それがどうした！最初から、クリアさせる気なんてない。",
+                "ko": "흥, 그게 뭐! 처음부터 최종 도전을 통과시킬 생각 따윈 하지 않았어!",
+                "th": "ฮึ่ม แล้วไง? ฉันไม่คิดจะให้พวกฝีมือห่วยแบบแกชนะแต่แรกแล้ว",
+                "zh-Hans": "哼，那又怎么样！从最开始，我就没想让人通过最终挑战。",
+                "zh-Hant": "哼，那又怎麼樣！從最開始，我就沒想讓人通過最終挑戰。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist mein Revier! Was ich sage, gilt. Oh, du willst nicht wissen, was mit diesem Möchtegern-Betreiber oder was auch immer er war, passiert ist, als er das letzte Mal gegen mich angetreten ist...",
+                "en": "This is my turf! Whatever I say goes. Oh, you don't wanna know what happened to that wannabe operator or whatever he was, when he tried to come up against me last time...",
+                "es": "¡Este es mi territorio! Lo que yo diga, va. Oh, no querrás saber qué le pasó a ese aspirante a operador o lo que fuera, cuando intentó enfrentarme la última vez...",
+                "fr": "C'est mon territoire ! Je fais ce que je veux, il y avait un conducteur qui ne savait pas mieux, et le résultat... hmph.",
+                "ja": "ここは俺の縄張りだぞ！俺がルールを定める。そういえば、前にも空気の読めないパイロットが来たな。ま、無様なオチとなったけど。",
+                "ko": "여긴 내 구역이야! 그 전에도 하늘 높은 줄 모르는 운전사가 와서, 결국엔... 흥!",
+                "th": "นี่มันถิ่นฉัน! พูดอะไรก็ต้องเป็นตามนั้นสิ โอ้ คงไม่อยากรู้หรอกนะว่าเกิดอะไรขึ้นกับพลขับวันนาบีคนนั้น หรือจะเป็นใครก็ช่าง ตอนที่มันพยายามจะหือกับฉันคราวก่อน...",
+                "zh-Hans": "这里可是我的地盘！我想怎样就怎样，之前也有个不知好歹的什么驾驶员过来，结果……哼哼。",
+                "zh-Hant": "這裡可是我的地盤！我想怎樣就怎樣，之前也有個不知好歹的什麼駕駛員過來，結果……哼哼。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das wirst du nicht ungestraft davonkommen.",
+                    "en": "You won't get away with this.",
+                    "es": "No te saldrás con la tuya.",
+                    "fr": "Vous êtes allé trop loin.",
+                    "ja": "ひどくない？",
+                    "ko": "너무하네요",
+                    "th": "แกหนีไม่รอดแน่",
+                    "zh-Hans": "你太过分了。",
+                    "zh-Hant": "你太過分了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du wirst untergehen!",
+                    "en": "You're going down!",
+                    "es": "¡Vas a caer!",
+                    "fr": "Rendez-moi les crédits !",
+                    "ja": "悪あがきだな。醜いぞ。",
+                    "ko": "순순히 당하고만 있지 않을 거예요",
+                    "th": "แกต้องโดนแล้ว!",
+                    "zh-Hans": "束手就擒吧！",
+                    "zh-Hant": "束手就擒吧！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Heh. Hast du eine Ahnung, wer ich bin? Lasst uns sie verprügeln, Jungs!",
+                "en": "Heh. You got any idea who I am? Let's beat 'em up, fellas!",
+                "es": "Je. ¿Tienes alguna idea de quién soy? ¡Vamos a darles una paliza, chicos!",
+                "fr": "Hé, c'est drôle, vous ne savez pas qui je suis ! Prenez vos armes, allons-y !",
+                "ja": "へい、笑わせるな。あいつをやっつけろ！",
+                "ko": "후훗, 웃기는 녀석이군! 아직 내가 누군지 모르구나? 애들아, 가서 손 좀 봐줘라!",
+                "th": "เหอะ รู้ไหมว่าฉันเป็นใคร? เล่นงานมันเลย พรรคพวก!",
+                "zh-Hans": "嘿，好笑，也不看看我是谁！小的们，抄家伙，我们上！",
+                "zh-Hant": "嘿，好笑，也不看看我是誰！小的們，抄傢伙，我們上！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 908,
+                "name": {
+                  "zh-Hans": "狡猾的流放者首领"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "parentId": 36,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die Exilanten im Lager",
+        "en": "Defeat the Exiles in the camp",
+        "es": "Derrota a los Exiliados en el campamento.",
+        "fr": "Vaincre les exilés",
+        "ja": "追放者を倒す",
+        "ko": "캠프 안의 추방자 격파하기",
+        "th": "พิชิตผู้ถูกเนรเทศในค่าย",
+        "zh-Hans": "打倒营地里的流放者",
+        "zh-Hant": "打倒營地裡的流放者"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 30,
+      "parentId": 37,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Fordere deine Belohnungen ein",
+        "en": "Claim your rewards",
+        "es": "Reclama tus recompensas.",
+        "fr": "Obtenir les récompenses",
+        "ja": "賞品を受け取る",
+        "ko": "보상을 수령하세요",
+        "th": "รับรางวัลของคุณ",
+        "zh-Hans": "领取属于你的奖品",
+        "zh-Hant": "領取屬於你的獎品"
+      },
+      "entities": [
+        {
+          "entityId": 142001273,
+          "mapId": 8,
+          "blueprintType": "Treasure009",
+          "name": "TsEntity_豪华物资箱_玩法刷新3",
+          "areaId": 6,
+          "position": {
+            "x": -103465,
+            "y": 253026,
+            "z": 6561
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -133
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142800679,
+          "mapId": 8,
+          "blueprintType": "SceneObj201",
+          "name": "TsEntity_场景交互_单人靠背椅",
+          "areaId": 6,
+          "position": {
+            "x": -102155,
+            "y": 252603,
+            "z": 6559
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 85
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界任务_修理机器人",
+          "flowIndex": 5,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Das scheinen alle gestohlenen Waren zu sein. Hmm, ein Motor...? Die Person, der dieser gehört, muss hier irgendwo sein.",
+                "en": "These seem like all the goods they've stolen. Hmm, a motor...? The person who this belongs to must be around here somewhere.",
+                "es": "Parecen ser todas las cosas que han robado. Hmm, un motor...? La persona a la que pertenece debe estar por aquí en algún lugar.",
+                "fr": "Ce sont tous des biens volés lors de leur pillage. Ce moteur... ? La personne qui l'a perdu doit être dans les parages. Cherchons-le.",
+                "ja": "連中が略奪したものか。このエンジン……？なくしたものが近くにあるかもしれない。探してみよう。",
+                "ko": "이건 모두 그들이 약탈한 장물... 이 엔진은...? 분실하신 분이 근처에 있을 수도 있으니 찾아보자",
+                "th": "ของพวกนี้ดูเหมือนขโมยมาทั้งหมด... หืมม มอเตอร์...? เจ้าของคงจะอยู่ไม่ไกลจากแถวนี้",
+                "zh-Hans": "这都是他们洗劫的赃物了。这个发动机……？丢失它的人可能在附近，找找看好了。",
+                "zh-Hant": "這都是他們洗劫的贓物了。這個發動機……？丟失它的人可能在附近，找找看好了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_世界任务_修理机器人",
+          "flowIndex": 5,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Das scheinen alle gestohlenen Waren zu sein... Dieser Motor muss der sein, der für den Roboter verwendet wird.",
+                "en": "These seem like all the goods they've stolen... This motor must be the one used on the robot.",
+                "es": "Parecen ser todas las cosas que han robado... Este motor debe ser el que se usa en el robot.",
+                "fr": "Ce sont tous des choses volées... Ce moteur devrait être celui du petit robot.",
+                "ja": "連中が略奪したものか。このエンジン……？あのロボットのものか。",
+                "ko": "이건 모두 그들이 약탈한 장물... 이 엔진은 아마 그 로봇꺼겠지",
+                "th": "ของพวกนี้ดูเหมือนขโมยมาทั้งหมด... มอเตอร์นี่ก็น่าจะเป็นตัวที่เคยใช้กับหุ่นยนต์ตัวนั้น",
+                "zh-Hans": "这都是他们洗劫的赃物……这个发动机应该就是那个小机器人用的吧。",
+                "zh-Hant": "這都是他們洗劫的贓物……這個發動機應該就是那個小機器人用的吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

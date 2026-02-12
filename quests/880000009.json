@@ -1,0 +1,1896 @@
+{
+  "id": 880000009,
+  "key": "收集任务第六天",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geheimes Silber.",
+    "en": "Mithril",
+    "es": "Mithril.",
+    "fr": "Mithril",
+    "ja": "ミスリル",
+    "ko": "월광석",
+    "th": "มิธริล",
+    "zh-Hans": "秘银",
+    "zh-Hant": "秘銀"
+  },
+  "desc": {
+    "de": "Magi versucht, dich zu kontaktieren, und es scheint mit dem großangelegten Projekt namens Der Sol-2 zusammenzuhängen, das die Pioneer Convention in letzter Zeit geplant hat ......",
+    "en": "Maqi is trying to contact you, and it appears to be related to the Pioneer Association's ambitious project, \"Second Coming of Solaris\"...",
+    "es": "Maqi está intentando ponerse en contacto contigo. Parece que tiene que ver con el ambicioso proyecto «Segunda venida de Solaris», que la Asociación de Pioneros ha estado planeando últimamente...",
+    "fr": "Maqi tente de vous joindre. Il semblerait que ce soit en lien avec le projet ambitieux de l'Association Pionnière : le Sol-2…",
+    "ja": "馬琪からの連絡があったようだ。それが先駆条約が最近取り掛かっている「第二ソラリス」という大型プロジェクトに関わるみたい……",
+    "ko": "마치가 연락을 시도하고 있습니다. 이는 최근 선행공약이 기획한 「세컨드 솔라리스」라는 대형 프로젝트와 관련이 있는 것 같습니다...",
+    "th": "หม่าฉีพยายามติดต่อคุณ ดูเหมือนจะเกี่ยวข้องกับโครงการที่สมาคมผู้บุกเบิกมุ่งหวัง \"ดาวโซลาริสดวงที่สอง\"...",
+    "zh-Hans": "马琪正在尝试联络你，而这似乎与先行公约最近筹划的名为《第二索拉》的大型项目有关……",
+    "zh-Hant": "馬琪正在嘗試聯絡你，而這似乎與先行公約最近籌劃的名為《第二索拉》的大型專案有關……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 40,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maggie, um mehr über das heutige Spielszenario zu erfahren.",
+        "en": "Talk to Maqi to find out about today's game scenario.",
+        "es": "Habla con Maqi para averiguar sobre el escenario del juego de hoy.",
+        "fr": "Contacter Maqi pour en savoir plus sur le scénario du jour",
+        "ja": "今日作るゲームのシーンについて馬琪に聞く",
+        "ko": "마치를 찾아 오늘 만들 맵에 대해 묻기",
+        "th": "คุยกับหม่าฉีเพื่อทำความเข้าใจสถานการณ์เกมของวันนี้",
+        "zh-Hans": "找马琪了解今天要制作的游戏场景",
+        "zh-Hant": "找馬琪了解今天要製作的遊戲場景"
+      },
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880000000,
+          "mapId": 8,
+          "blueprintType": "NPC0251",
+          "name": "TsEntity_0251_157_扶岩3",
+          "areaId": 301,
+          "position": {
+            "x": -43640,
+            "y": 112640,
+            "z": 1490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Lass mich unseren Job heute erklären.",
+                "en": "Let me explain our job today.",
+                "es": "Permíteme explicar nuestro trabajo de hoy.",
+                "fr": "La scène de jeu à produire aujourd'hui est comme ça...",
+                "ja": "今日お願いしたいシーンはここ……",
+                "ko": "오늘 제작할 맵은 이러해요...",
+                "th": "ให้ฉันอธิบายงานของเราในวันนี้ก่อนนะ",
+                "zh-Hans": "今天要制作的游戏场景是这样的……",
+                "zh-Hant": "今天要製作的遊戲場景是這樣的……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In diesem Kapitel, haben sie sich bis in den Norden vorgewagt und den Mt. Moore erreicht, bereit, den endgültigen Feind zu treffen.",
+                "en": "In this chapter, they ventured all the way to the North and reached Mt. Moore, preparing to meet the final enemy.",
+                "es": "En este capítulo, se aventuraron hasta el norte y llegaron al monte Moore, preparándose para encontrarse con el enemigo final.",
+                "fr": "Dans ce chapitre, le protagoniste arrive enfin dans les montagnes de Mole, au nord du pays, et se prépare à affronter son dernier ennemi.",
+                "ja": "主人公が北部のモール山脈に辿り着く場面です。いよいよ最終決戦も目前ですね。",
+                "ko": "이 장에서 주인공은 마침내 북쪽의 모어 산맥에 도착하여 최후의 강적을 마주하게 돼요",
+                "th": "ในบทนี้ พวกเขาเดินทางไกลขึ้นไปทางเหนือจนถึงภูเขามัวร์ เพื่อเตรียมพร้อมที่จะเผชิญหน้ากับศัตรูตนสุดท้าย",
+                "zh-Hans": "在这一章，主角终于到达北部的莫尔山脉，准备直面最终的强敌。",
+                "zh-Hant": "在這一章，主角終於到達北部的莫爾山脈，準備直面最終的強敵。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bevor ihr Feind auftauchte, hatte die Luft des Mt. Moore den Protagonisten bis auf die Knochen gekühlt.",
+                "en": "Before their enemy showed up, the air of Mt. Moore had already chilled the protagonist to the bone.",
+                "es": "Antes de que su enemigo apareciera, el aire del monte Moore ya había enfriado al protagonista hasta los huesos.",
+                "fr": "Bien que l'ennemi ne soit pas encore apparu à ce moment-là, l'environnement des Monts Mole lui-même a surpris les protagonistes.",
+                "ja": "まだここで敵は現れませんが、この山脈自体がとても恐ろしい場所でした。",
+                "ko": "그때는 적이 나타나기 전이었지만, 모어 산맥 자체의 환경만으로도 주인공 일행은 간담이 서늘해졌어요",
+                "th": "ก่อนที่ศัตรูของพวกเขาจะปรากฏตัว อากาศบนภูเขามัวร์ก็หนาวเย็นไปจนถึงกระดูกของตัวเอก",
+                "zh-Hans": "那时虽然敌人还没有现身，但莫尔山脉本身的环境就已经让主角一行人心惊胆战。",
+                "zh-Hant": "那時雖然敵人還沒有現身，但莫爾山脈本身的環境就已經讓主角一行人心驚膽戰。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es heißt: \"...Verdeckt das Mondlicht, machten die <color=highlight>schwarzen Wolken</color> sogar das <color=highlight>Mithril</color> auf den Hügeln seinen Glanz verlieren...\"",
+                "en": "It goes: \"...Obscuring the moonlight, <color=highlight>black clouds</color> even made the <color=highlight>Mithril</color> on the hills lose its sheen...\"",
+                "es": "Dice: \"...Oscureciendo la luz de la luna, las <color=highlight>nubes negras</color> incluso hicieron que el <color=highlight>Mithril</color> en las colinas perdiera su brillo...\"",
+                "fr": "Le texte original dit : « …Le <color=highlight>nuage noir</color> non seulement a caché la lune, mais a même rendu l'<color=highlight>Mithril</color> de la montagne terne… »",
+                "ja": "原作では「<color=highlight>黒い雲</color>は月光を遮った。大地を力強く突き破る<color=highlight>ミスリル</color>も、幾分くすんだように見える……」",
+                "ko": "원작에는 「... <color=highlight>검은 구름</color>이 달빛을 가릴 뿐만 아니라 산속의 <color=highlight>월광석</color>까지 어둡게 보이게 하는...」",
+                "th": "ใจความระบุว่า \"... <color=highlight>เมฆาทมิฬ</color> บดบังแสงจันทรา และทำให้<color=highlight>มิธริล</color>บนเนินเขาสูญสิ้นประกาย...\"",
+                "zh-Hans": "原著里写道“……那<color=highlight>乌云</color>不仅遮蔽了月光，甚至让山间的<color=highlight>秘银</color>也显得黯淡……”",
+                "zh-Hant": "原著裡寫道「……那<color=highlight>烏雲</color>不僅遮蔽了月光，甚至讓山間的<color=highlight>秘銀</color>也顯得黯淡……」"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"Alles schien zu fließen, füllte meine Lungen wie kondensierte Tinte. Mit jedem Atemzug wurde ich weiter in die Dunkelheit gezogen.\"",
+                "en": "\"Everything seemed to be flowing, filling my lungs like condensed ink. As I took my breaths, I was dragged into darkness further.\"",
+                "es": "\"Todo parecía estar fluyendo, llenando mis pulmones como tinta condensada. A medida que respiraba, me arrastraba más en la oscuridad.\"",
+                "fr": "»Tout autour de moi est noir, comme si je nageais dans l'encre, mes poumons remplis de noirceur, chaque respiration me fait me sentir comme si je me faisais engloutir par l'obscurité… »",
+                "ja": "「俺は水のような暗闇を搔き分けて進み、墨のように淀む空気を吸い込む。呼吸の度に、体が闇に沈む気分だ……」",
+                "ko": "「온몸에 시커먼 무언가가 흐르는 듯하고, 폐는 먹물에 잠긴 듯, 숨을 쉴 때마다 어둠이 나 자신을 한 스푼씩 삼켜버리는...」",
+                "th": "\"ทุกสิ่งดูเหมือนจะไหลเวียน เติมเต็มปอดของข้าดุจหมึกข้น ทันทีที่ข้าหายใจ ข้าก็ถูกลากดิ่งสู่ความมืดมิดยิ่งขึ้น\"",
+                "zh-Hans": "“周身漆黑的一切仿佛在流淌，我的肺如同被墨浸满，每呼吸一次，自己便被黑暗吞噬一分……”",
+                "zh-Hant": "「周身漆黑的一切仿佛在流淌，我的肺如同被墨浸滿，每呼吸一次，自己便被黑暗吞噬一分……」"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieser Teil hört nie auf, mich mit dem heulenden Gefühl der Verzweiflung zu beeindrucken, auch nach all meinen wiederholten Lesungen.",
+                "en": "This part can never cease to impress me with the howling sense of despair, even after all of my repeated readings.",
+                "es": "Esta parte nunca deja de impresionarme con el aullido de la desesperación, incluso después de todas mis lecturas repetidas.",
+                "fr": "Même si je l'ai lu de nombreuses fois, chaque fois que je lis ce passage, je ressens le désespoir du protagoniste.",
+                "ja": "ここ、何度も読み返しましたが、その度に強烈な絶望を感じます。",
+                "ko": "여러 번 봤지만 그때마다 주인공의 절망이 느껴져요",
+                "th": "ไม่ว่าจะอ่านซ้ำกี่ครั้ง ความรู้สึกสิ้นหวังในใจความส่วนนี้ก็ยังคงสร้างความประทับใจให้ฉันได้เสมอ",
+                "zh-Hans": "虽然已经看过很多遍了，但每次读到这段时，我还是能感受到主角当时的绝望。",
+                "zh-Hant": "雖然已經看過很多遍了，但每次讀到這段時，我還是能感受到主角當時的絕望。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann nicht anders, als mich zu fragen, was eine solche sensationelle Szene verursachen würde? Und dieses Mithril... wie sieht es aus?",
+                "en": "I can't help but wonder, what would induce such a sensational scene? And this Mithrill... what does it look like?",
+                "es": "No puedo evitar preguntarme, ¿qué induciría una escena tan sensacional? ¿Y este Mithril... cómo se ve?",
+                "fr": "Quel genre d'environnement peut provoquer de telles émotions intenses…Quel genre de minéral est le Mithril mentionné dans le livre ?",
+                "ja": "人はどのような状況に置かれれば、この激しい感情を抱くのでしょうか……それに、文章に出た「ミスリル」とは一体……？",
+                "ko": "과연 어떤 환경이었기에 이런 강렬한 감정을 느끼게 했을까요? ...책에 나오는 월광석은 어떤 광물일까요?",
+                "th": "ฉันอดสงสัยไม่ได้ว่า อะไรกันนะที่จะสร้างฉากที่น่าตื่นเต้นเช่นนี้ขึ้นมาได้ แล้วมิธริลนี่... มีหน้าตาเป็นอย่างไรกันนะ?",
+                "zh-Hans": "究竟是怎样的环境，才能让人产生这样强烈的情感呢……书里提到的秘银又是怎样的矿物？",
+                "zh-Hant": "究竟是怎樣的環境，才能讓人產生這樣强烈的情感呢……書裡提到的秘銀又是怎樣的礦物？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wir brauchen eine Referenz dafür.",
+                    "en": "We need a reference for this.",
+                    "es": "Necesitamos una referencia para esto.",
+                    "fr": "Peut-être que je devrais trouver une référence à ce minéral.",
+                    "ja": "確かに参考資料が必要だ。",
+                    "ko": "광물에 대한 자료를 찾아봐야겠어요",
+                    "th": "เราต้องการของอ้างอิงสำหรับสิ่งนี้",
+                    "zh-Hans": "也许该找到这种矿物的参考。",
+                    "zh-Hant": "也許該找到這種礦物的參考。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es heißt, es leuchtet hell wie der Mond.",
+                    "en": "It says it shines bright like the moon.",
+                    "es": "Dice que brilla intensamente como la luna.",
+                    "fr": "C'est aussi lumineux que le clair de lune.",
+                    "ja": "月のような光沢を持つ鉱物……",
+                    "ko": "그것은 달빛만큼 밝아요",
+                    "th": "ในเรื่องบอกว่ามันส่องประกายสว่างไสวดุจดวงจันทร์",
+                    "zh-Hans": "它和月光一样明亮。",
+                    "zh-Hant": "它和月光一樣明亮。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Tatsächlich. Die schwarzen Wolken hatten eine überwältigende Präsenz, da sie das Leuchten des Mondes und der Mineralien verschluckt hatten.",
+                "en": "Indeed. The black clouds had an overwhelming presence as they had swallowed the glow of the moon and minerals.",
+                "es": "En efecto. Las nubes negras tenían una presencia abrumadora ya que habían engullido el brillo de la luna y los minerales.",
+                "fr": "En effet…Le nuage noir de Monts. Mole a non seulement caché la lune, mais a même éclipsé l'éclat de ce minéral.",
+                "ja": "……月はおろか、この鉱物の光さえも抑えるモール山脈の黒い雲……",
+                "ko": "확실히... 모어 산맥의 검은 구름은 달뿐만 아니라 이 광물의 눈부심까지도 가린다고 했어요",
+                "th": "ใช่แล้ว เมฆดำนั่นปกคลุมไปทั่ว ราวกับว่ามันได้กลืนกินแสงนวลของดวงจันทร์และแร่ธาตุไปจนหมดสิ้น",
+                "zh-Hans": "的确……莫尔山脉的乌云不仅遮蔽了月亮，而且连这种矿石的耀眼光芒也能掩盖。",
+                "zh-Hant": "的確……莫爾山脈的烏雲不僅遮蔽了月亮，而且連這種礦石的耀眼光芒也能掩蓋。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Proben von Mithrill werden das mentale Bild dieses Kapitels verbessern, glaube ich.",
+                "en": "Samples of Mithrill will help improve the mental image of this chapter, I believe.",
+                "es": "Las muestras de Mitrilo ayudarán a mejorar la imagen mental de este capítulo, creo.",
+                "fr": "Si je pouvais trouver ce minéral étrange, ce serait très intéressant.",
+                "ja": "つまり、より没入感を高めるためには、この鉱物を上手く表現する必要があるでしょう。",
+                "ko": "이런 기이한 광물을 찾을 수 있다면, 몰입감이 확 생길 것 같아요",
+                "th": "ฉันเชื่อว่าตัวอย่างมิธริลจะช่วยให้เห็นภาพของบทนี้ได้ชัดเจนขึ้น",
+                "zh-Hans": "如果能找到这种奇异的矿物的话，就会很有画面感了。",
+                "zh-Hant": "如果能找到這種奇異的礦物的話，就會很有畫面感了。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du zufällig auf einige Proben stößt, komm gerne vorbei.",
+                "en": "If you happen to come across some samples, feel free to drop by.",
+                "es": "Si te encuentras con algunas muestras, no dudes en pasar.",
+                "fr": "{PlayerName}, si vous avez quelque chose comme Mithril, vous pouvez me donner à tout moment.",
+                "ja": "{PlayerName}さん、お願いします！この類の物を見つけたら、私のところに持ってきてください。",
+                "ko": "부탁드려요. 혹시라도 월광석과 같은 물건을 찾으면 언제든지 와서 제출해주세요",
+                "th": "ถ้าคุณบังเอิญเจอตัวอย่างเข้า ก็แวะมาหาฉันได้เลยนะ",
+                "zh-Hans": "拜托你了，{PlayerName}，如果有找到类似秘银的物品的话，可以随时过来交给我。",
+                "zh-Hant": "拜託你了，{PlayerName}，如果有找到類似秘銀的物品的話，可以隨時過來交給我。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "parentId": 15,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 86,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 98,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 83,
+      "parentId": 82,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880000000,
+          "mapId": 8,
+          "blueprintType": "NPC0251",
+          "name": "TsEntity_0251_157_扶岩3",
+          "areaId": 301,
+          "position": {
+            "x": -43640,
+            "y": 112640,
+            "z": 1490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 7,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Wow. Dieses Mineral passt sicherlich zur Beschreibung des Mirthril. Ich werde es sofort an das Entwicklerteam weitergeben!",
+                "en": "Wow. This mineral surely fits the depiction of the Mirthril. I'll hand it over to the dev team right now!",
+                "es": "Vaya. Este mineral encaja perfectamente con la descripción del Mirthril. ¡Lo entregaré al equipo de desarrollo ahora mismo!",
+                "fr": "Ceci... ressemble vraiment au Mithril dans le livre. Je vais le donner aux développeurs tout de suite !",
+                "ja": "これは……確かにミスリルと似ています。早速開発スタッフに渡しましょう！",
+                "ko": "이거... 확실히 책 속의 월광석과 비슷해요. 지금 바로 개발자에게 전달할게요!",
+                "th": "ว้าว แร่ชนิดนี้ตรงกับคำบรรยายของมิธริลไม่ผิดเพี้ยน ฉันจะนำไปส่งให้ทีมพัฒนาเดี๋ยวนี้เลย!",
+                "zh-Hans": "这个……的确很像书中的秘银。我现在就把这个交给开发人员！",
+                "zh-Hant": "這個……的確很像書中的秘銀。 我現在就把這個交給開發人員！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn die schwarzen Wolken den Mond verhüllen... Das ist der perfekte Auslöser!",
+                "en": "When the black clouds veil the moon... This is the perfect trigger!",
+                "es": "Cuando las nubes negras velan la luna... ¡Este es el desencadenante perfecto!",
+                "fr": "Avec cela, tout le monde pourra imaginer la scène de l'obscurité lunaire dans le roman !",
+                "ja": "これがあれば、黒い雲に覆われた山脈もバッチリですね！",
+                "ko": "이것만 있으면 소설 속의 검은 구름이 달을 가리는 장면을 상상할 수 있을 거예요",
+                "th": "เมฆาทมิฬบดบังแสงจันทรา... นี่แหละคือตัวจุดประกายที่สมบูรณ์แบบ!",
+                "zh-Hans": "相信有了它，大家就可以能够想象出小说里黑云蔽月的场景了！",
+                "zh-Hant": "相信有了它，大家就可以能夠想像出小說裡黑雲蔽月的場景了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einige Zeit verging, während Maqi weg war, um den Gegenstand zu übergeben...",
+                "en": "Some time passed while Maqi was away to hand over the item...",
+                "es": "Pasó un tiempo mientras Maqi se ausentó para entregar el artículo...",
+                "fr": "Après que Maqi a envoyé l'objet au développeur, un peu de temps a passé...",
+                "ja": "馬琪が品を開発スタッフに渡した。しばらくして……",
+                "ko": "마치가 개발자에게 물건을 건네준 후, 시간이 좀 지나서...",
+                "th": "เวลาผ่านไปครู่หนึ่งขณะที่ Maqi กำลังนำของไปส่งมอบ...",
+                "zh-Hans": "马琪将物品送给开发人员后，又过了一段时间……",
+                "zh-Hant": "馬琪將物品送給開發人員後，又過了一段時間……"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Danke. Damit ist die Arbeit für heute erledigt!",
+                "en": "Thank you. That wraps up today's work!",
+                "es": "Gracias. ¡Eso concluye el trabajo de hoy!",
+                "fr": "Grâce à vous, la production de la scène d'aujourd'hui s'est bien passée.",
+                "ja": "おかげさまで、今日のシーンの制作が無事完了しました！",
+                "ko": "덕분에 오늘 장면 제작은 잘 끝났어요",
+                "th": "ขอบคุณนะ งานของวันนี้ก็เสร็จสิ้นเพียงเท่านี้!",
+                "zh-Hans": "多亏了你，今天的场景制作顺利完成了。",
+                "zh-Hant": "多虧了你，今天的場景製作順利完成了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis morgen, {PlayerName}.",
+                "en": "See you tomorrow, {PlayerName}.",
+                "es": "Hasta mañana, {PlayerName}.",
+                "fr": "Je compte sur vous demain, {PlayerName}.",
+                "ja": "それでは、明日もよろしくお願いします！{PlayerName}さん！",
+                "ko": "내일도 잘 부탁해요",
+                "th": "ไว้เจอกันใหม่พรุ่งนี้นะ {PlayerName}",
+                "zh-Hans": "明天也拜托你了，{PlayerName}。",
+                "zh-Hant": "明天也拜託你了，{PlayerName}。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "parentId": 82,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 87,
+      "parentId": 86,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 113,
+      "parentId": 87,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 91,
+      "parentId": 89,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 9,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun, vielleicht solltest du den Besitzer des Huaipu Bergbauunternehmens fragen. Er ist ein kenntnisreicher Mineralienexperte.",
+                "en": "Well, maybe you should ask the owner of Huaipu Mining Firm. He is a knowledgeable mineral expert.",
+                "es": "Bueno, tal vez deberías preguntarle al dueño de la Empresa Minera Huaipu. Es un experto en minerales con mucho conocimiento.",
+                "fr": "En parlant de minéraux, Fuyan, le chef de la boutique minérale Huaipu, est l'un des meilleurs connaisseurs de minéraux dans la ville de Jinzhou.",
+                "ja": "んー……鉱石といえば、「懐璞鉱業（かいぼくこうぎょう）」の店主・扶岩（ふがん）は今州で有名な鉱石マニアですね。",
+                "ko": "음... 광물이라면 「화복 광석」 의 사장인 부용이 금주에서 손꼽히는 광석 마스터에요",
+                "th": "อืม คุณน่าจะลองไปถามเจ้าของบริษัทเหมืองหวยผู่ดู เขาเป็นผู้เชี่ยวชาญด้านแร่ธาตุที่มีความรู้กว้างขวาง",
+                "zh-Hans": "嗯……说到矿石的话，怀璞矿行的掌柜扶岩是今州数一数二的矿石通。",
+                "zh-Hant": "嗯……說到礦石的話，懷璞礦行的掌櫃扶岩是今州數一數二的礦石通。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da es um das Mithril geht, schlage ich vor, du fragst ihn um Rat.",
+                "en": "Since it's about the Mithril, I suggest you go ask for his advice.",
+                "es": "Como se trata del Mitrilo, te sugiero que vayas a pedirle su consejo.",
+                "fr": "Pourquoi ne pas lui demander son opinion concernant le Mithril ?",
+                "ja": "どうやらミスリルも鉱物の一種のようですので、彼に聞いてみてはどうですか？",
+                "ko": "월광석 문제는, 그에게 물어보는 게 좋겠어요",
+                "th": "ในเมื่อมันเกี่ยวกับมิธริล ฉันขอแนะนำให้คุณไปขอคำแนะนำจากเขา",
+                "zh-Hans": "秘银的问题，不如去问问他的想法？",
+                "zh-Hant": "秘銀的問題，不如去問問他的想法？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "parentId": 89,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 93,
+      "parentId": 89,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880000000,
+          "mapId": 8,
+          "blueprintType": "NPC0251",
+          "name": "TsEntity_0251_157_扶岩3",
+          "areaId": 301,
+          "position": {
+            "x": -43640,
+            "y": 112640,
+            "z": 1490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 7,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "<i>Der Sol-2</i>? Ich könnte wenig Interesse für diese leichten Lektüren von euch jungen Leuten aufbringen...",
+                "en": "<i>Second Coming of Solaris</i>? I could spare little interest for these casual reads of you youngsters...",
+                "es": "¿«Segunda venida de Solaris»? Podría tener poco interés en estas lecturas casuales de los jóvenes...",
+                "fr": "« Le SOL-2 » ? Je ne suis pas très intéressé par les livres que les jeunes lisent...",
+                "ja": "「第二ソラリス」？若者の読む本に興味はさほどないが……",
+                "ko": "「세컨드 솔라리스」? 젊은이들이 보는 잡서는 흥미가 없어요...",
+                "th": "<i>โซลาริสที่ 2</i>เหรอ? ฉันไม่ค่อยจะสนใจหนังสืออ่านเล่นของพวกคนหนุ่มสาวเท่าไหร่...",
+                "zh-Hans": "《第二索拉》？年轻人看的杂书我是没什么兴趣……",
+                "zh-Hant": "《第二索拉》？ 年輕人看的雜書我是沒什麼興趣……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...obwohl ich eine Sache über dieses Mithril weiß.",
+                "en": "...though I do know a thing about this Mithril.",
+                "es": "...aunque sí sé una cosa sobre este Mitrilo.",
+                "fr": "Cependant, ce matériel que vous avez mentionné est certainement intéressant.",
+                "ja": "この「みすりる」というのは実に面白い。",
+                "ko": "하지만 언급한 월광석은 정말 흥미롭네요",
+                "th": "...แต่ฉันก็พอจะรู้เรื่องเกี่ยวกับมิธริลนี่อยู่บ้าง",
+                "zh-Hans": "但是你提到的这个秘银，倒是确实有趣。",
+                "zh-Hant": "但是你提到的這個秘銀，倒是確實有趣。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein durchscheinendes Mineral namens Lampylumen würde einen azurblauen Glanz erzeugen, der es im Dunkeln noch heller macht.",
+                "en": "A translucent mineral called Lampylumen would produce an azure shine that makes it even brighter in the dark.",
+                "es": "Un mineral translúcido llamado Lampilumen produciría un brillo azur que lo hace aún más brillante en la oscuridad.",
+                "fr": "Il y a un minéral appelé « Lampylumen », qui est tout bleu, a une texture transparente, et brille certainement dans l'obscurité.",
+                "ja": "「輝光石」と言う鉱石がある。透明な青色をしていて、暗い場所でなら確かに光を放っているように見えるだろう。",
+                "ko": "반디석이라는 광물이 있는데 전체가 파란색이고 질감이 투명해서 어두운 환경에서도 밝게 빛나죠",
+                "th": "มีแร่โปร่งแสงชนิดหนึ่งเรียกว่าแลมป์พิลูเมน ซึ่งจะให้ประกายสีฟ้าคราม ทำให้มันส่องสว่างยิ่งขึ้นในความมืด",
+                "zh-Hans": "有一种名叫辉萤石的矿物，通体呈现蓝色，质地透明，在黑暗的环境里，的确会让人觉得光辉夺目。",
+                "zh-Hant": "有一種名叫輝螢石的礦物，通體呈現藍色，質地透明，在黑暗的環境裡，的確會讓人覺得光輝奪目。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich nehme an, das Mithril stammt wahrscheinlich vom Lampylumen.",
+                "en": "I'm assuming the Mithril probably originates from the Lampylumen.",
+                "es": "Supongo que el Mitrilo probablemente proviene del Lampilumen.",
+                "fr": "Je me demande s'il pense à Lampylumen quand il écrit ce livre.",
+                "ja": "その「みすりる」とやらも、それを参考にして書かれたに違いない。",
+                "ko": "이 월광석은 아마 반디석을 참고해서 쓴 것 같아요",
+                "th": "ฉันสันนิษฐานว่ามิธริลนั่นน่าจะมีต้นกำเนิดมาจากแลมป์พิลูเมน",
+                "zh-Hans": "这个秘银，想必是参考了辉萤石才写出来的。",
+                "zh-Hant": "這個秘銀，想必是參考了輝螢石才寫出來的。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast seinen Schreiber, Karl, erwähnt, oder? Ich würde gerne ein kleines Gespräch mit einem Mineralienexperten wie ihm führen.",
+                "en": "You've mentioned its writer, Karl, right? I would like to have a little chat with a mineral expert like him.",
+                "es": "¿Has mencionado a su escritor, Karl, verdad? Me gustaría tener una pequeña charla con un experto en minerales como él.",
+                "fr": "Je ne pensais pas que cet auteur, Carl, connaissait si bien les minéraux. Je voudrais le connaître.",
+                "ja": "この「かーる」という者、鉱石に詳しいのかね？そうであれば、是非一度会ってみたいものだ。",
+                "ko": "카를이라는 이 작가가 광석을 이렇게 잘 알 줄은 몰랐네요. 저도 그와 대화를 해보고 싶네요",
+                "th": "เธอบอกว่าผู้เขียนเรื่องนี้ชื่อ Karl ใช่ไหม? ฉันอยากจะคุยกับผู้เชี่ยวชาญด้านแร่ธาตุอย่างเขาสักหน่อย",
+                "zh-Hans": "这个叫做卡尔的作家，没想到也如此了解矿石？真想和他认识认识。",
+                "zh-Hant": "這個叫做卡爾的作家，沒想到也如此了解礦石？ 真想和他認識認識。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich weiß nicht, ob das möglich ist.",
+                    "en": "I don't know if it's possible.",
+                    "es": "No sé si es posible.",
+                    "fr": "Cela pourrait être un peu difficile.",
+                    "ja": "それはちょっと無理かも。",
+                    "ko": "조금 어려울 것 같아요",
+                    "th": "ฉันก็ไม่รู้ว่าจะเป็นไปได้ไหม",
+                    "zh-Hans": "这可能有点难度。",
+                    "zh-Hant": "這可能有點難度。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Er ist jetzt weit draußen in der Neuen Föderation.",
+                    "en": "He is out far in the New Federation now.",
+                    "es": "Ahora está lejos en la Nueva Federación.",
+                    "fr": "Il s'habite à la Fédération Nouvelle.",
+                    "ja": "この人はネオユニオン人だ。",
+                    "ko": "그는 신 연방 사람이에요",
+                    "th": "ตอนนี้เขาอยู่ที่สหพันธรัฐใหม่",
+                    "zh-Hans": "他是新联邦人。",
+                    "zh-Hant": "他是新聯邦人。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "*seufz* Was für eine Schande... Wenn man älter wird, merkt man, wie schwer es ist, jemanden zu treffen, der die gleiche Leidenschaft teilt.",
+                "en": "*sigh* What a shame... As you get older, you'd realize how hard it is to meet someone who shares your passion.",
+                "es": "*suspiro* Qué pena... A medida que envejeces, te das cuenta de lo difícil que es encontrar a alguien que comparta tu pasión.",
+                "fr": "Ah, c'est dommage... Vous le comprendrez en vieillissant, il est difficile de trouver un ami de cœur.",
+                "ja": "はぁ……残念だ。お前もそのうちわかるだろう……友と呼べる者の珍しさを……",
+                "ko": "흠, 아깝네요... 나이가 들면 알게 될 거예요. 평생 지인을 찾기가 얼마나 어려운지요",
+                "th": "*ถอนหายใจ* น่าเสียดายจริง... พอเธอแก่ตัวลง ก็จะรู้เองว่ามันยากแค่ไหนที่จะได้พบใครสักคนที่มีความหลงใหลในเรื่องเดียวกัน",
+                "zh-Hans": "唉，可惜可惜……等你年纪大了就会知道了，人这一生，知音难觅啊。",
+                "zh-Hant": "唉，可惜可惜……等你年紀大了就會知道了，人這一生，知音難覓啊。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast du zufällig ein paar Lampylumen zur Verfügung?",
+                    "en": "Anyway, do you have some Lampylumens available?",
+                    "es": "De todos modos, ¿tienes algunos Lampilumen disponibles?",
+                    "fr": "Y a-t-il de la Lampylumen dans la boutique ?",
+                    "ja": "店に輝光石はある？",
+                    "ko": "가게에 블루수정원석이 있나요?",
+                    "th": "ว่าแต่ คุณพอจะมีแลมป์พิลูเมนอยู่บ้างไหม?",
+                    "zh-Hans": "店里现在有辉萤矿吗？",
+                    "zh-Hant": "店裡現在有輝螢礦嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was für ein Zufall. Ich habe zufällig ein Lampylumen-Überbleibsel vom vorherigen Gast aufbewahrt.",
+                "en": "What a coincidence. I happen to keep a Lampylumen remnant left by the previous guest.",
+                "es": "Qué coincidencia. Resulta que guardo un remanente de Lampilumen que dejó el huésped anterior.",
+                "fr": "Ne le dites pas, il y a vraiment des déchets de Lampylumen dans la boutique aujourd'hui...",
+                "ja": "ちょうど今日加工した時に出た余りがあるが……",
+                "ko": "오늘 가게에 손님이 가공하고 남은 반디석 폐기물이 있는데...",
+                "th": "ช่างบังเอิญจริง ฉันมีเศษแลมป์พิลูเมนที่แขกคนก่อนทิ้งเอาไว้อยู่พอดีเลย",
+                "zh-Hans": "你别说，今天店里还真有一块客人加工后剩下的辉萤石废料……",
+                "zh-Hant": "你別說，今天店裡還真有一塊客人加工後剩下的輝螢石廢料……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hervorragend!",
+                    "en": "Brilliant!",
+                    "es": "¡Brillante!",
+                    "fr": "C'est bien !",
+                    "ja": "よかった！",
+                    "ko": "정말요?",
+                    "th": "เยี่ยมเลย!",
+                    "zh-Hans": "太好了！",
+                    "zh-Hant": "太好了！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Darf ich es haben?",
+                    "en": "May I have it?",
+                    "es": "¿Puedo tenerlo?",
+                    "fr": "Pouvez-vous me le donner ?",
+                    "ja": "譲ってもらえないだろうか？",
+                    "ko": "저한테 주실 수 있나요?",
+                    "th": "ฉันขอได้ไหม?",
+                    "zh-Hans": "可以给我吗？",
+                    "zh-Hant": "可以給我嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das Lampylumen ist ein spezielles Mineral, das nur in den Höhlen der Panyan-Berge zu finden ist.",
+                "en": "The Lampylumen is a specialty mineral only found in the caves of the Panyan mountains.",
+                "es": "El Lampilumen es un mineral especial que solo se encuentra en las cuevas de las montañas de Panyan.",
+                "fr": "Celui-ci est généralement difficile de trouver.",
+                "ja": "この輝光石は一部の洞窟でしか採れない物で、それなりに希少なんだが……",
+                "ko": "이 반디석은 반암 산맥의 동굴에서 생산돼요. 평소에는 정말 구하기가 어렵죠",
+                "th": "แลมป์พิลูเมนเป็นแร่พิเศษที่พบได้เฉพาะในถ้ำบนเทือกเขาพานเหยียนเท่านั้น",
+                "zh-Hans": "这辉萤石产自磐岩山脉的矿洞里，平常确实是不好寻得。",
+                "zh-Hant": "這輝螢石產自磐岩山脈的礦洞裡，平常確實是不好尋得。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn es dir nützlich ist, werde ich es nicht zurückhalten.",
+                "en": "But if it's useful to you, I'll not reserve it.",
+                "es": "Pero si te es útil, no lo reservaré.",
+                "fr": "Comme vous êtes aussi un visiteur, je vous la donnerai si vous en avez besoin.",
+                "ja": "……いや、あなたもここの客人だ。必要なら特別に譲ってやろう。",
+                "ko": "그래도 금주의 손님이니, 필요로 하는 만큼만 제가 나눠줄게요",
+                "th": "แต่ถ้ามันมีประโยชน์กับเธอ ฉันก็จะไม่เก็บไว้เอง",
+                "zh-Hans": "你也是我们今州的客人，既然是你的需要，我就送给你吧。",
+                "zh-Hant": "你也是我們今州的客人，既然是你的需要，我就送給你吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vielen Dank, Herr Besitzer!",
+                    "en": "Thank you, Mr. Owner!",
+                    "es": "¡Gracias, señor dueño!",
+                    "fr": "Merci !",
+                    "ja": "ありがとう！",
+                    "ko": "감사해요!",
+                    "th": "ขอบคุณมาก คุณเจ้าของเหมือง!",
+                    "zh-Hans": "谢谢掌柜！",
+                    "zh-Hant": "謝謝掌櫃！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gern geschehen, hehe! Geschäft ist eine Frage der Ehrlichkeit und ich möchte eine gute Beziehung zu meinen Kunden pflegen.",
+                "en": "You're welcome, hehe! Business is all about honesty and I'd like to maintain a good relationship with my customers.",
+                "es": "¡De nada, jeje! Los negocios se basan en la honestidad y me gustaría mantener una buena relación con mis clientes.",
+                "fr": "Haha, vous n'avez pas besoin d'être timide. L'honnêteté est importante dans le commerce, et il est essentiel de construire de bonnes relations avec les clients.",
+                "ja": "ははっ！なに、気にするな。商売に誠実は必要だ。客人と良い関係を築くのもその一環と言えよう。",
+                "ko": "하하, 별말씀을! 손님에게 정성을 쏟고 최선을 다하는 건 장사꾼의 기본자세죠",
+                "th": "ด้วยความยินดี ฮิฮิ! ความซื่อสัตย์เป็นสิ่งสำคัญที่สุดสำหรับธุรกิจ และฉันก็อยากจะรักษาความสัมพันธ์อันดีกับลูกค้าไว้",
+                "zh-Hans": "哈哈，不用客气。做生意讲究以诚相待，和客人建立良好关系也是开店必不可少的一环。",
+                "zh-Hant": "哈哈，不用客氣。 做生意講究以誠相待，和客人建立良好關係也是開店必不可少的一環。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denken Sie daran, das nächste Mal vorbeizukommen! Das Huaipu Bergbauunternehmen hat das beste Mineralsalz und Petrolatum.",
+                "en": "Do remember to come over next time! Huaipu Mining Firm has the best mineral salt and petrolatum.",
+                "es": "¡Recuerda venir la próxima vez! La Empresa Minera Huaipu tiene la mejor sal mineral y petrolato.",
+                "fr": "Même si vous avez du temps libre, venez souvent dans notre magasin. La qualité de nos minéraux est absolument excellente.",
+                "ja": "代わりに、暇な時はここに来るといい。うちの岩塩とワセリンはどれも一級品だ。",
+                "ko": "앞으로도 시간이 되면 저희 화복 광석에 놀려오세요. 이곳의 미네랄 소금과 광물 오일의 품질은 단연 최고거든요",
+                "th": "คราวหน้าอย่าลืมแวะมาอีกนะ! บริษัทเหมืองหวยผู่มีแร่เกลือและปิโตรลาทัมที่ดีที่สุด",
+                "zh-Hans": "以后你有空也可以多来我们怀璞矿行逛逛，我们这的矿盐矿脂质量绝对上乘。",
+                "zh-Hant": "以後你有空也可以多來我們懷璞礦行逛逛，我們這的礦鹽礦脂質量絕對上乘。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm es. Ich weiß, dass du heute einen vollen Terminkalender hast.",
+                "en": "Take it. I know you have a busy schedule today.",
+                "es": "Tómalo. Sé que tienes una agenda ocupada hoy.",
+                "fr": "Je ne vais pas vous retenir aujourd'hui, prenez cette Lampylumen.",
+                "ja": "今日はこれくらいにしておこう。ほら、この輝光石を持っていくといい。",
+                "ko": "더 이상 시간을 뺏으면 안 될 것 같네요. 이 반디석을 가져가세요",
+                "th": "รับไปสิ ฉันรู้ว่าวันนี้เธอค่อนข้างยุ่ง",
+                "zh-Hans": "今天我就不多留你了，这块辉萤石你拿去吧。",
+                "zh-Hant": "今天我就不多留你了，這塊輝螢石你拿去吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "parentId": 98,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 121,
+      "parentId": 99,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880000000,
+          "mapId": 8,
+          "blueprintType": "NPC0251",
+          "name": "TsEntity_0251_157_扶岩3",
+          "areaId": 301,
+          "position": {
+            "x": -43640,
+            "y": 112640,
+            "z": 1490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 9,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun, vielleicht solltest du den Besitzer des Huaipu Bergbauunternehmens fragen. Er ist ein kenntnisreicher Mineralienexperte.",
+                "en": "Well, maybe you should ask the owner of Huaipu Mining Firm. He is a knowledgeable mineral expert.",
+                "es": "Bueno, tal vez deberías preguntarle al dueño de la Empresa Minera Huaipu. Es un experto en minerales con mucho conocimiento.",
+                "fr": "En parlant de minéraux, Fuyan, le chef de la boutique minérale Huaipu, est l'un des meilleurs connaisseurs de minéraux dans la ville de Jinzhou.",
+                "ja": "んー……鉱石といえば、「懐璞鉱業（かいぼくこうぎょう）」の店主・扶岩（ふがん）は今州で有名な鉱石マニアですね。",
+                "ko": "음... 광물이라면 「화복 광석」 의 사장인 부용이 금주에서 손꼽히는 광석 마스터에요",
+                "th": "อืม คุณน่าจะลองไปถามเจ้าของบริษัทเหมืองหวยผู่ดู เขาเป็นผู้เชี่ยวชาญด้านแร่ธาตุที่มีความรู้กว้างขวาง",
+                "zh-Hans": "嗯……说到矿石的话，怀璞矿行的掌柜扶岩是今州数一数二的矿石通。",
+                "zh-Hant": "嗯……說到礦石的話，懷璞礦行的掌櫃扶岩是今州數一數二的礦石通。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da es um das Mithril geht, schlage ich vor, du fragst ihn um Rat.",
+                "en": "Since it's about the Mithril, I suggest you go ask for his advice.",
+                "es": "Como se trata del Mitrilo, te sugiero que vayas a pedirle su consejo.",
+                "fr": "Pourquoi ne pas lui demander son opinion concernant le Mithril ?",
+                "ja": "どうやらミスリルも鉱物の一種のようですので、彼に聞いてみてはどうですか？",
+                "ko": "월광석 문제는, 그에게 물어보는 게 좋겠어요",
+                "th": "ในเมื่อมันเกี่ยวกับมิธริล ฉันขอแนะนำให้คุณไปขอคำแนะนำจากเขา",
+                "zh-Hans": "秘银的问题，不如去问问他的想法？",
+                "zh-Hant": "秘銀的問題，不如去問問他的想法？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 7,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "<i>Der Sol-2</i>? Ich könnte wenig Interesse für diese leichten Lektüren von euch jungen Leuten aufbringen...",
+                "en": "<i>Second Coming of Solaris</i>? I could spare little interest for these casual reads of you youngsters...",
+                "es": "¿«Segunda venida de Solaris»? Podría tener poco interés en estas lecturas casuales de los jóvenes...",
+                "fr": "« Le SOL-2 » ? Je ne suis pas très intéressé par les livres que les jeunes lisent...",
+                "ja": "「第二ソラリス」？若者の読む本に興味はさほどないが……",
+                "ko": "「세컨드 솔라리스」? 젊은이들이 보는 잡서는 흥미가 없어요...",
+                "th": "<i>โซลาริสที่ 2</i>เหรอ? ฉันไม่ค่อยจะสนใจหนังสืออ่านเล่นของพวกคนหนุ่มสาวเท่าไหร่...",
+                "zh-Hans": "《第二索拉》？年轻人看的杂书我是没什么兴趣……",
+                "zh-Hant": "《第二索拉》？ 年輕人看的雜書我是沒什麼興趣……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...obwohl ich eine Sache über dieses Mithril weiß.",
+                "en": "...though I do know a thing about this Mithril.",
+                "es": "...aunque sí sé una cosa sobre este Mitrilo.",
+                "fr": "Cependant, ce matériel que vous avez mentionné est certainement intéressant.",
+                "ja": "この「みすりる」というのは実に面白い。",
+                "ko": "하지만 언급한 월광석은 정말 흥미롭네요",
+                "th": "...แต่ฉันก็พอจะรู้เรื่องเกี่ยวกับมิธริลนี่อยู่บ้าง",
+                "zh-Hans": "但是你提到的这个秘银，倒是确实有趣。",
+                "zh-Hant": "但是你提到的這個秘銀，倒是確實有趣。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein durchscheinendes Mineral namens Lampylumen würde einen azurblauen Glanz erzeugen, der es im Dunkeln noch heller macht.",
+                "en": "A translucent mineral called Lampylumen would produce an azure shine that makes it even brighter in the dark.",
+                "es": "Un mineral translúcido llamado Lampilumen produciría un brillo azur que lo hace aún más brillante en la oscuridad.",
+                "fr": "Il y a un minéral appelé « Lampylumen », qui est tout bleu, a une texture transparente, et brille certainement dans l'obscurité.",
+                "ja": "「輝光石」と言う鉱石がある。透明な青色をしていて、暗い場所でなら確かに光を放っているように見えるだろう。",
+                "ko": "반디석이라는 광물이 있는데 전체가 파란색이고 질감이 투명해서 어두운 환경에서도 밝게 빛나죠",
+                "th": "มีแร่โปร่งแสงชนิดหนึ่งเรียกว่าแลมป์พิลูเมน ซึ่งจะให้ประกายสีฟ้าคราม ทำให้มันส่องสว่างยิ่งขึ้นในความมืด",
+                "zh-Hans": "有一种名叫辉萤石的矿物，通体呈现蓝色，质地透明，在黑暗的环境里，的确会让人觉得光辉夺目。",
+                "zh-Hant": "有一種名叫輝螢石的礦物，通體呈現藍色，質地透明，在黑暗的環境裡，的確會讓人覺得光輝奪目。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich nehme an, das Mithril stammt wahrscheinlich vom Lampylumen.",
+                "en": "I'm assuming the Mithril probably originates from the Lampylumen.",
+                "es": "Supongo que el Mitrilo probablemente proviene del Lampilumen.",
+                "fr": "Je me demande s'il pense à Lampylumen quand il écrit ce livre.",
+                "ja": "その「みすりる」とやらも、それを参考にして書かれたに違いない。",
+                "ko": "이 월광석은 아마 반디석을 참고해서 쓴 것 같아요",
+                "th": "ฉันสันนิษฐานว่ามิธริลนั่นน่าจะมีต้นกำเนิดมาจากแลมป์พิลูเมน",
+                "zh-Hans": "这个秘银，想必是参考了辉萤石才写出来的。",
+                "zh-Hant": "這個秘銀，想必是參考了輝螢石才寫出來的。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast seinen Schreiber, Karl, erwähnt, oder? Ich würde gerne ein kleines Gespräch mit einem Mineralienexperten wie ihm führen.",
+                "en": "You've mentioned its writer, Karl, right? I would like to have a little chat with a mineral expert like him.",
+                "es": "¿Has mencionado a su escritor, Karl, verdad? Me gustaría tener una pequeña charla con un experto en minerales como él.",
+                "fr": "Je ne pensais pas que cet auteur, Carl, connaissait si bien les minéraux. Je voudrais le connaître.",
+                "ja": "この「かーる」という者、鉱石に詳しいのかね？そうであれば、是非一度会ってみたいものだ。",
+                "ko": "카를이라는 이 작가가 광석을 이렇게 잘 알 줄은 몰랐네요. 저도 그와 대화를 해보고 싶네요",
+                "th": "เธอบอกว่าผู้เขียนเรื่องนี้ชื่อ Karl ใช่ไหม? ฉันอยากจะคุยกับผู้เชี่ยวชาญด้านแร่ธาตุอย่างเขาสักหน่อย",
+                "zh-Hans": "这个叫做卡尔的作家，没想到也如此了解矿石？真想和他认识认识。",
+                "zh-Hant": "這個叫做卡爾的作家，沒想到也如此了解礦石？ 真想和他認識認識。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich weiß nicht, ob das möglich ist.",
+                    "en": "I don't know if it's possible.",
+                    "es": "No sé si es posible.",
+                    "fr": "Cela pourrait être un peu difficile.",
+                    "ja": "それはちょっと無理かも。",
+                    "ko": "조금 어려울 것 같아요",
+                    "th": "ฉันก็ไม่รู้ว่าจะเป็นไปได้ไหม",
+                    "zh-Hans": "这可能有点难度。",
+                    "zh-Hant": "這可能有點難度。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Er ist jetzt weit draußen in der Neuen Föderation.",
+                    "en": "He is out far in the New Federation now.",
+                    "es": "Ahora está lejos en la Nueva Federación.",
+                    "fr": "Il s'habite à la Fédération Nouvelle.",
+                    "ja": "この人はネオユニオン人だ。",
+                    "ko": "그는 신 연방 사람이에요",
+                    "th": "ตอนนี้เขาอยู่ที่สหพันธรัฐใหม่",
+                    "zh-Hans": "他是新联邦人。",
+                    "zh-Hant": "他是新聯邦人。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "*seufz* Was für eine Schande... Wenn man älter wird, merkt man, wie schwer es ist, jemanden zu treffen, der die gleiche Leidenschaft teilt.",
+                "en": "*sigh* What a shame... As you get older, you'd realize how hard it is to meet someone who shares your passion.",
+                "es": "*suspiro* Qué pena... A medida que envejeces, te das cuenta de lo difícil que es encontrar a alguien que comparta tu pasión.",
+                "fr": "Ah, c'est dommage... Vous le comprendrez en vieillissant, il est difficile de trouver un ami de cœur.",
+                "ja": "はぁ……残念だ。お前もそのうちわかるだろう……友と呼べる者の珍しさを……",
+                "ko": "흠, 아깝네요... 나이가 들면 알게 될 거예요. 평생 지인을 찾기가 얼마나 어려운지요",
+                "th": "*ถอนหายใจ* น่าเสียดายจริง... พอเธอแก่ตัวลง ก็จะรู้เองว่ามันยากแค่ไหนที่จะได้พบใครสักคนที่มีความหลงใหลในเรื่องเดียวกัน",
+                "zh-Hans": "唉，可惜可惜……等你年纪大了就会知道了，人这一生，知音难觅啊。",
+                "zh-Hant": "唉，可惜可惜……等你年紀大了就會知道了，人這一生，知音難覓啊。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast du zufällig ein paar Lampylumen zur Verfügung?",
+                    "en": "Anyway, do you have some Lampylumens available?",
+                    "es": "De todos modos, ¿tienes algunos Lampilumen disponibles?",
+                    "fr": "Y a-t-il de la Lampylumen dans la boutique ?",
+                    "ja": "店に輝光石はある？",
+                    "ko": "가게에 블루수정원석이 있나요?",
+                    "th": "ว่าแต่ คุณพอจะมีแลมป์พิลูเมนอยู่บ้างไหม?",
+                    "zh-Hans": "店里现在有辉萤矿吗？",
+                    "zh-Hant": "店裡現在有輝螢礦嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was für ein Zufall. Ich habe zufällig ein Lampylumen-Überbleibsel vom vorherigen Gast aufbewahrt.",
+                "en": "What a coincidence. I happen to keep a Lampylumen remnant left by the previous guest.",
+                "es": "Qué coincidencia. Resulta que guardo un remanente de Lampilumen que dejó el huésped anterior.",
+                "fr": "Ne le dites pas, il y a vraiment des déchets de Lampylumen dans la boutique aujourd'hui...",
+                "ja": "ちょうど今日加工した時に出た余りがあるが……",
+                "ko": "오늘 가게에 손님이 가공하고 남은 반디석 폐기물이 있는데...",
+                "th": "ช่างบังเอิญจริง ฉันมีเศษแลมป์พิลูเมนที่แขกคนก่อนทิ้งเอาไว้อยู่พอดีเลย",
+                "zh-Hans": "你别说，今天店里还真有一块客人加工后剩下的辉萤石废料……",
+                "zh-Hant": "你別說，今天店裡還真有一塊客人加工後剩下的輝螢石廢料……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hervorragend!",
+                    "en": "Brilliant!",
+                    "es": "¡Brillante!",
+                    "fr": "C'est bien !",
+                    "ja": "よかった！",
+                    "ko": "정말요?",
+                    "th": "เยี่ยมเลย!",
+                    "zh-Hans": "太好了！",
+                    "zh-Hant": "太好了！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Darf ich es haben?",
+                    "en": "May I have it?",
+                    "es": "¿Puedo tenerlo?",
+                    "fr": "Pouvez-vous me le donner ?",
+                    "ja": "譲ってもらえないだろうか？",
+                    "ko": "저한테 주실 수 있나요?",
+                    "th": "ฉันขอได้ไหม?",
+                    "zh-Hans": "可以给我吗？",
+                    "zh-Hant": "可以給我嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das Lampylumen ist ein spezielles Mineral, das nur in den Höhlen der Panyan-Berge zu finden ist.",
+                "en": "The Lampylumen is a specialty mineral only found in the caves of the Panyan mountains.",
+                "es": "El Lampilumen es un mineral especial que solo se encuentra en las cuevas de las montañas de Panyan.",
+                "fr": "Celui-ci est généralement difficile de trouver.",
+                "ja": "この輝光石は一部の洞窟でしか採れない物で、それなりに希少なんだが……",
+                "ko": "이 반디석은 반암 산맥의 동굴에서 생산돼요. 평소에는 정말 구하기가 어렵죠",
+                "th": "แลมป์พิลูเมนเป็นแร่พิเศษที่พบได้เฉพาะในถ้ำบนเทือกเขาพานเหยียนเท่านั้น",
+                "zh-Hans": "这辉萤石产自磐岩山脉的矿洞里，平常确实是不好寻得。",
+                "zh-Hant": "這輝螢石產自磐岩山脈的礦洞裡，平常確實是不好尋得。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn es dir nützlich ist, werde ich es nicht zurückhalten.",
+                "en": "But if it's useful to you, I'll not reserve it.",
+                "es": "Pero si te es útil, no lo reservaré.",
+                "fr": "Comme vous êtes aussi un visiteur, je vous la donnerai si vous en avez besoin.",
+                "ja": "……いや、あなたもここの客人だ。必要なら特別に譲ってやろう。",
+                "ko": "그래도 금주의 손님이니, 필요로 하는 만큼만 제가 나눠줄게요",
+                "th": "แต่ถ้ามันมีประโยชน์กับเธอ ฉันก็จะไม่เก็บไว้เอง",
+                "zh-Hans": "你也是我们今州的客人，既然是你的需要，我就送给你吧。",
+                "zh-Hant": "你也是我們今州的客人，既然是你的需要，我就送給你吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vielen Dank, Herr Besitzer!",
+                    "en": "Thank you, Mr. Owner!",
+                    "es": "¡Gracias, señor dueño!",
+                    "fr": "Merci !",
+                    "ja": "ありがとう！",
+                    "ko": "감사해요!",
+                    "th": "ขอบคุณมาก คุณเจ้าของเหมือง!",
+                    "zh-Hans": "谢谢掌柜！",
+                    "zh-Hant": "謝謝掌櫃！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gern geschehen, hehe! Geschäft ist eine Frage der Ehrlichkeit und ich möchte eine gute Beziehung zu meinen Kunden pflegen.",
+                "en": "You're welcome, hehe! Business is all about honesty and I'd like to maintain a good relationship with my customers.",
+                "es": "¡De nada, jeje! Los negocios se basan en la honestidad y me gustaría mantener una buena relación con mis clientes.",
+                "fr": "Haha, vous n'avez pas besoin d'être timide. L'honnêteté est importante dans le commerce, et il est essentiel de construire de bonnes relations avec les clients.",
+                "ja": "ははっ！なに、気にするな。商売に誠実は必要だ。客人と良い関係を築くのもその一環と言えよう。",
+                "ko": "하하, 별말씀을! 손님에게 정성을 쏟고 최선을 다하는 건 장사꾼의 기본자세죠",
+                "th": "ด้วยความยินดี ฮิฮิ! ความซื่อสัตย์เป็นสิ่งสำคัญที่สุดสำหรับธุรกิจ และฉันก็อยากจะรักษาความสัมพันธ์อันดีกับลูกค้าไว้",
+                "zh-Hans": "哈哈，不用客气。做生意讲究以诚相待，和客人建立良好关系也是开店必不可少的一环。",
+                "zh-Hant": "哈哈，不用客氣。 做生意講究以誠相待，和客人建立良好關係也是開店必不可少的一環。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denken Sie daran, das nächste Mal vorbeizukommen! Das Huaipu Bergbauunternehmen hat das beste Mineralsalz und Petrolatum.",
+                "en": "Do remember to come over next time! Huaipu Mining Firm has the best mineral salt and petrolatum.",
+                "es": "¡Recuerda venir la próxima vez! La Empresa Minera Huaipu tiene la mejor sal mineral y petrolato.",
+                "fr": "Même si vous avez du temps libre, venez souvent dans notre magasin. La qualité de nos minéraux est absolument excellente.",
+                "ja": "代わりに、暇な時はここに来るといい。うちの岩塩とワセリンはどれも一級品だ。",
+                "ko": "앞으로도 시간이 되면 저희 화복 광석에 놀려오세요. 이곳의 미네랄 소금과 광물 오일의 품질은 단연 최고거든요",
+                "th": "คราวหน้าอย่าลืมแวะมาอีกนะ! บริษัทเหมืองหวยผู่มีแร่เกลือและปิโตรลาทัมที่ดีที่สุด",
+                "zh-Hans": "以后你有空也可以多来我们怀璞矿行逛逛，我们这的矿盐矿脂质量绝对上乘。",
+                "zh-Hant": "以後你有空也可以多來我們懷璞礦行逛逛，我們這的礦鹽礦脂質量絕對上乘。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm es. Ich weiß, dass du heute einen vollen Terminkalender hast.",
+                "en": "Take it. I know you have a busy schedule today.",
+                "es": "Tómalo. Sé que tienes una agenda ocupada hoy.",
+                "fr": "Je ne vais pas vous retenir aujourd'hui, prenez cette Lampylumen.",
+                "ja": "今日はこれくらいにしておこう。ほら、この輝光石を持っていくといい。",
+                "ko": "더 이상 시간을 뺏으면 안 될 것 같네요. 이 반디석을 가져가세요",
+                "th": "รับไปสิ ฉันรู้ว่าวันนี้เธอค่อนข้างยุ่ง",
+                "zh-Hans": "今天我就不多留你了，这块辉萤石你拿去吧。",
+                "zh-Hant": "今天我就不多留你了，這塊輝螢石你拿去吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "parentId": 113,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 114,
+      "parentId": 113,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880000000,
+          "mapId": 8,
+          "blueprintType": "NPC0251",
+          "name": "TsEntity_0251_157_扶岩3",
+          "areaId": 301,
+          "position": {
+            "x": -43640,
+            "y": 112640,
+            "z": 1490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 116,
+      "parentId": 115,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 9,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun, vielleicht solltest du den Besitzer des Huaipu Bergbauunternehmens fragen. Er ist ein kenntnisreicher Mineralienexperte.",
+                "en": "Well, maybe you should ask the owner of Huaipu Mining Firm. He is a knowledgeable mineral expert.",
+                "es": "Bueno, tal vez deberías preguntarle al dueño de la Empresa Minera Huaipu. Es un experto en minerales con mucho conocimiento.",
+                "fr": "En parlant de minéraux, Fuyan, le chef de la boutique minérale Huaipu, est l'un des meilleurs connaisseurs de minéraux dans la ville de Jinzhou.",
+                "ja": "んー……鉱石といえば、「懐璞鉱業（かいぼくこうぎょう）」の店主・扶岩（ふがん）は今州で有名な鉱石マニアですね。",
+                "ko": "음... 광물이라면 「화복 광석」 의 사장인 부용이 금주에서 손꼽히는 광석 마스터에요",
+                "th": "อืม คุณน่าจะลองไปถามเจ้าของบริษัทเหมืองหวยผู่ดู เขาเป็นผู้เชี่ยวชาญด้านแร่ธาตุที่มีความรู้กว้างขวาง",
+                "zh-Hans": "嗯……说到矿石的话，怀璞矿行的掌柜扶岩是今州数一数二的矿石通。",
+                "zh-Hant": "嗯……說到礦石的話，懷璞礦行的掌櫃扶岩是今州數一數二的礦石通。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da es um das Mithril geht, schlage ich vor, du fragst ihn um Rat.",
+                "en": "Since it's about the Mithril, I suggest you go ask for his advice.",
+                "es": "Como se trata del Mitrilo, te sugiero que vayas a pedirle su consejo.",
+                "fr": "Pourquoi ne pas lui demander son opinion concernant le Mithril ?",
+                "ja": "どうやらミスリルも鉱物の一種のようですので、彼に聞いてみてはどうですか？",
+                "ko": "월광석 문제는, 그에게 물어보는 게 좋겠어요",
+                "th": "ในเมื่อมันเกี่ยวกับมิธริล ฉันขอแนะนำให้คุณไปขอคำแนะนำจากเขา",
+                "zh-Hans": "秘银的问题，不如去问问他的想法？",
+                "zh-Hant": "秘銀的問題，不如去問問他的想法？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "parentId": 115,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 119,
+      "parentId": 115,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880000000,
+          "mapId": 8,
+          "blueprintType": "NPC0251",
+          "name": "TsEntity_0251_157_扶岩3",
+          "areaId": 301,
+          "position": {
+            "x": -43640,
+            "y": 112640,
+            "z": 1490
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 7,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "<i>Der Sol-2</i>? Ich könnte wenig Interesse für diese leichten Lektüren von euch jungen Leuten aufbringen...",
+                "en": "<i>Second Coming of Solaris</i>? I could spare little interest for these casual reads of you youngsters...",
+                "es": "¿«Segunda venida de Solaris»? Podría tener poco interés en estas lecturas casuales de los jóvenes...",
+                "fr": "« Le SOL-2 » ? Je ne suis pas très intéressé par les livres que les jeunes lisent...",
+                "ja": "「第二ソラリス」？若者の読む本に興味はさほどないが……",
+                "ko": "「세컨드 솔라리스」? 젊은이들이 보는 잡서는 흥미가 없어요...",
+                "th": "<i>โซลาริสที่ 2</i>เหรอ? ฉันไม่ค่อยจะสนใจหนังสืออ่านเล่นของพวกคนหนุ่มสาวเท่าไหร่...",
+                "zh-Hans": "《第二索拉》？年轻人看的杂书我是没什么兴趣……",
+                "zh-Hant": "《第二索拉》？ 年輕人看的雜書我是沒什麼興趣……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...obwohl ich eine Sache über dieses Mithril weiß.",
+                "en": "...though I do know a thing about this Mithril.",
+                "es": "...aunque sí sé una cosa sobre este Mitrilo.",
+                "fr": "Cependant, ce matériel que vous avez mentionné est certainement intéressant.",
+                "ja": "この「みすりる」というのは実に面白い。",
+                "ko": "하지만 언급한 월광석은 정말 흥미롭네요",
+                "th": "...แต่ฉันก็พอจะรู้เรื่องเกี่ยวกับมิธริลนี่อยู่บ้าง",
+                "zh-Hans": "但是你提到的这个秘银，倒是确实有趣。",
+                "zh-Hant": "但是你提到的這個秘銀，倒是確實有趣。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein durchscheinendes Mineral namens Lampylumen würde einen azurblauen Glanz erzeugen, der es im Dunkeln noch heller macht.",
+                "en": "A translucent mineral called Lampylumen would produce an azure shine that makes it even brighter in the dark.",
+                "es": "Un mineral translúcido llamado Lampilumen produciría un brillo azur que lo hace aún más brillante en la oscuridad.",
+                "fr": "Il y a un minéral appelé « Lampylumen », qui est tout bleu, a une texture transparente, et brille certainement dans l'obscurité.",
+                "ja": "「輝光石」と言う鉱石がある。透明な青色をしていて、暗い場所でなら確かに光を放っているように見えるだろう。",
+                "ko": "반디석이라는 광물이 있는데 전체가 파란색이고 질감이 투명해서 어두운 환경에서도 밝게 빛나죠",
+                "th": "มีแร่โปร่งแสงชนิดหนึ่งเรียกว่าแลมป์พิลูเมน ซึ่งจะให้ประกายสีฟ้าคราม ทำให้มันส่องสว่างยิ่งขึ้นในความมืด",
+                "zh-Hans": "有一种名叫辉萤石的矿物，通体呈现蓝色，质地透明，在黑暗的环境里，的确会让人觉得光辉夺目。",
+                "zh-Hant": "有一種名叫輝螢石的礦物，通體呈現藍色，質地透明，在黑暗的環境裡，的確會讓人覺得光輝奪目。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich nehme an, das Mithril stammt wahrscheinlich vom Lampylumen.",
+                "en": "I'm assuming the Mithril probably originates from the Lampylumen.",
+                "es": "Supongo que el Mitrilo probablemente proviene del Lampilumen.",
+                "fr": "Je me demande s'il pense à Lampylumen quand il écrit ce livre.",
+                "ja": "その「みすりる」とやらも、それを参考にして書かれたに違いない。",
+                "ko": "이 월광석은 아마 반디석을 참고해서 쓴 것 같아요",
+                "th": "ฉันสันนิษฐานว่ามิธริลนั่นน่าจะมีต้นกำเนิดมาจากแลมป์พิลูเมน",
+                "zh-Hans": "这个秘银，想必是参考了辉萤石才写出来的。",
+                "zh-Hant": "這個秘銀，想必是參考了輝螢石才寫出來的。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast seinen Schreiber, Karl, erwähnt, oder? Ich würde gerne ein kleines Gespräch mit einem Mineralienexperten wie ihm führen.",
+                "en": "You've mentioned its writer, Karl, right? I would like to have a little chat with a mineral expert like him.",
+                "es": "¿Has mencionado a su escritor, Karl, verdad? Me gustaría tener una pequeña charla con un experto en minerales como él.",
+                "fr": "Je ne pensais pas que cet auteur, Carl, connaissait si bien les minéraux. Je voudrais le connaître.",
+                "ja": "この「かーる」という者、鉱石に詳しいのかね？そうであれば、是非一度会ってみたいものだ。",
+                "ko": "카를이라는 이 작가가 광석을 이렇게 잘 알 줄은 몰랐네요. 저도 그와 대화를 해보고 싶네요",
+                "th": "เธอบอกว่าผู้เขียนเรื่องนี้ชื่อ Karl ใช่ไหม? ฉันอยากจะคุยกับผู้เชี่ยวชาญด้านแร่ธาตุอย่างเขาสักหน่อย",
+                "zh-Hans": "这个叫做卡尔的作家，没想到也如此了解矿石？真想和他认识认识。",
+                "zh-Hant": "這個叫做卡爾的作家，沒想到也如此了解礦石？ 真想和他認識認識。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich weiß nicht, ob das möglich ist.",
+                    "en": "I don't know if it's possible.",
+                    "es": "No sé si es posible.",
+                    "fr": "Cela pourrait être un peu difficile.",
+                    "ja": "それはちょっと無理かも。",
+                    "ko": "조금 어려울 것 같아요",
+                    "th": "ฉันก็ไม่รู้ว่าจะเป็นไปได้ไหม",
+                    "zh-Hans": "这可能有点难度。",
+                    "zh-Hant": "這可能有點難度。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Er ist jetzt weit draußen in der Neuen Föderation.",
+                    "en": "He is out far in the New Federation now.",
+                    "es": "Ahora está lejos en la Nueva Federación.",
+                    "fr": "Il s'habite à la Fédération Nouvelle.",
+                    "ja": "この人はネオユニオン人だ。",
+                    "ko": "그는 신 연방 사람이에요",
+                    "th": "ตอนนี้เขาอยู่ที่สหพันธรัฐใหม่",
+                    "zh-Hans": "他是新联邦人。",
+                    "zh-Hant": "他是新聯邦人。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "*seufz* Was für eine Schande... Wenn man älter wird, merkt man, wie schwer es ist, jemanden zu treffen, der die gleiche Leidenschaft teilt.",
+                "en": "*sigh* What a shame... As you get older, you'd realize how hard it is to meet someone who shares your passion.",
+                "es": "*suspiro* Qué pena... A medida que envejeces, te das cuenta de lo difícil que es encontrar a alguien que comparta tu pasión.",
+                "fr": "Ah, c'est dommage... Vous le comprendrez en vieillissant, il est difficile de trouver un ami de cœur.",
+                "ja": "はぁ……残念だ。お前もそのうちわかるだろう……友と呼べる者の珍しさを……",
+                "ko": "흠, 아깝네요... 나이가 들면 알게 될 거예요. 평생 지인을 찾기가 얼마나 어려운지요",
+                "th": "*ถอนหายใจ* น่าเสียดายจริง... พอเธอแก่ตัวลง ก็จะรู้เองว่ามันยากแค่ไหนที่จะได้พบใครสักคนที่มีความหลงใหลในเรื่องเดียวกัน",
+                "zh-Hans": "唉，可惜可惜……等你年纪大了就会知道了，人这一生，知音难觅啊。",
+                "zh-Hant": "唉，可惜可惜……等你年紀大了就會知道了，人這一生，知音難覓啊。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast du zufällig ein paar Lampylumen zur Verfügung?",
+                    "en": "Anyway, do you have some Lampylumens available?",
+                    "es": "De todos modos, ¿tienes algunos Lampilumen disponibles?",
+                    "fr": "Y a-t-il de la Lampylumen dans la boutique ?",
+                    "ja": "店に輝光石はある？",
+                    "ko": "가게에 블루수정원석이 있나요?",
+                    "th": "ว่าแต่ คุณพอจะมีแลมป์พิลูเมนอยู่บ้างไหม?",
+                    "zh-Hans": "店里现在有辉萤矿吗？",
+                    "zh-Hant": "店裡現在有輝螢礦嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was für ein Zufall. Ich habe zufällig ein Lampylumen-Überbleibsel vom vorherigen Gast aufbewahrt.",
+                "en": "What a coincidence. I happen to keep a Lampylumen remnant left by the previous guest.",
+                "es": "Qué coincidencia. Resulta que guardo un remanente de Lampilumen que dejó el huésped anterior.",
+                "fr": "Ne le dites pas, il y a vraiment des déchets de Lampylumen dans la boutique aujourd'hui...",
+                "ja": "ちょうど今日加工した時に出た余りがあるが……",
+                "ko": "오늘 가게에 손님이 가공하고 남은 반디석 폐기물이 있는데...",
+                "th": "ช่างบังเอิญจริง ฉันมีเศษแลมป์พิลูเมนที่แขกคนก่อนทิ้งเอาไว้อยู่พอดีเลย",
+                "zh-Hans": "你别说，今天店里还真有一块客人加工后剩下的辉萤石废料……",
+                "zh-Hant": "你別說，今天店裡還真有一塊客人加工後剩下的輝螢石廢料……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hervorragend!",
+                    "en": "Brilliant!",
+                    "es": "¡Brillante!",
+                    "fr": "C'est bien !",
+                    "ja": "よかった！",
+                    "ko": "정말요?",
+                    "th": "เยี่ยมเลย!",
+                    "zh-Hans": "太好了！",
+                    "zh-Hant": "太好了！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Darf ich es haben?",
+                    "en": "May I have it?",
+                    "es": "¿Puedo tenerlo?",
+                    "fr": "Pouvez-vous me le donner ?",
+                    "ja": "譲ってもらえないだろうか？",
+                    "ko": "저한테 주실 수 있나요?",
+                    "th": "ฉันขอได้ไหม?",
+                    "zh-Hans": "可以给我吗？",
+                    "zh-Hant": "可以給我嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das Lampylumen ist ein spezielles Mineral, das nur in den Höhlen der Panyan-Berge zu finden ist.",
+                "en": "The Lampylumen is a specialty mineral only found in the caves of the Panyan mountains.",
+                "es": "El Lampilumen es un mineral especial que solo se encuentra en las cuevas de las montañas de Panyan.",
+                "fr": "Celui-ci est généralement difficile de trouver.",
+                "ja": "この輝光石は一部の洞窟でしか採れない物で、それなりに希少なんだが……",
+                "ko": "이 반디석은 반암 산맥의 동굴에서 생산돼요. 평소에는 정말 구하기가 어렵죠",
+                "th": "แลมป์พิลูเมนเป็นแร่พิเศษที่พบได้เฉพาะในถ้ำบนเทือกเขาพานเหยียนเท่านั้น",
+                "zh-Hans": "这辉萤石产自磐岩山脉的矿洞里，平常确实是不好寻得。",
+                "zh-Hant": "這輝螢石產自磐岩山脈的礦洞裡，平常確實是不好尋得。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn es dir nützlich ist, werde ich es nicht zurückhalten.",
+                "en": "But if it's useful to you, I'll not reserve it.",
+                "es": "Pero si te es útil, no lo reservaré.",
+                "fr": "Comme vous êtes aussi un visiteur, je vous la donnerai si vous en avez besoin.",
+                "ja": "……いや、あなたもここの客人だ。必要なら特別に譲ってやろう。",
+                "ko": "그래도 금주의 손님이니, 필요로 하는 만큼만 제가 나눠줄게요",
+                "th": "แต่ถ้ามันมีประโยชน์กับเธอ ฉันก็จะไม่เก็บไว้เอง",
+                "zh-Hans": "你也是我们今州的客人，既然是你的需要，我就送给你吧。",
+                "zh-Hant": "你也是我們今州的客人，既然是你的需要，我就送給你吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vielen Dank, Herr Besitzer!",
+                    "en": "Thank you, Mr. Owner!",
+                    "es": "¡Gracias, señor dueño!",
+                    "fr": "Merci !",
+                    "ja": "ありがとう！",
+                    "ko": "감사해요!",
+                    "th": "ขอบคุณมาก คุณเจ้าของเหมือง!",
+                    "zh-Hans": "谢谢掌柜！",
+                    "zh-Hant": "謝謝掌櫃！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gern geschehen, hehe! Geschäft ist eine Frage der Ehrlichkeit und ich möchte eine gute Beziehung zu meinen Kunden pflegen.",
+                "en": "You're welcome, hehe! Business is all about honesty and I'd like to maintain a good relationship with my customers.",
+                "es": "¡De nada, jeje! Los negocios se basan en la honestidad y me gustaría mantener una buena relación con mis clientes.",
+                "fr": "Haha, vous n'avez pas besoin d'être timide. L'honnêteté est importante dans le commerce, et il est essentiel de construire de bonnes relations avec les clients.",
+                "ja": "ははっ！なに、気にするな。商売に誠実は必要だ。客人と良い関係を築くのもその一環と言えよう。",
+                "ko": "하하, 별말씀을! 손님에게 정성을 쏟고 최선을 다하는 건 장사꾼의 기본자세죠",
+                "th": "ด้วยความยินดี ฮิฮิ! ความซื่อสัตย์เป็นสิ่งสำคัญที่สุดสำหรับธุรกิจ และฉันก็อยากจะรักษาความสัมพันธ์อันดีกับลูกค้าไว้",
+                "zh-Hans": "哈哈，不用客气。做生意讲究以诚相待，和客人建立良好关系也是开店必不可少的一环。",
+                "zh-Hant": "哈哈，不用客氣。 做生意講究以誠相待，和客人建立良好關係也是開店必不可少的一環。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denken Sie daran, das nächste Mal vorbeizukommen! Das Huaipu Bergbauunternehmen hat das beste Mineralsalz und Petrolatum.",
+                "en": "Do remember to come over next time! Huaipu Mining Firm has the best mineral salt and petrolatum.",
+                "es": "¡Recuerda venir la próxima vez! La Empresa Minera Huaipu tiene la mejor sal mineral y petrolato.",
+                "fr": "Même si vous avez du temps libre, venez souvent dans notre magasin. La qualité de nos minéraux est absolument excellente.",
+                "ja": "代わりに、暇な時はここに来るといい。うちの岩塩とワセリンはどれも一級品だ。",
+                "ko": "앞으로도 시간이 되면 저희 화복 광석에 놀려오세요. 이곳의 미네랄 소금과 광물 오일의 품질은 단연 최고거든요",
+                "th": "คราวหน้าอย่าลืมแวะมาอีกนะ! บริษัทเหมืองหวยผู่มีแร่เกลือและปิโตรลาทัมที่ดีที่สุด",
+                "zh-Hans": "以后你有空也可以多来我们怀璞矿行逛逛，我们这的矿盐矿脂质量绝对上乘。",
+                "zh-Hant": "以後你有空也可以多來我們懷璞礦行逛逛，我們這的礦鹽礦脂質量絕對上乘。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm es. Ich weiß, dass du heute einen vollen Terminkalender hast.",
+                "en": "Take it. I know you have a busy schedule today.",
+                "es": "Tómalo. Sé que tienes una agenda ocupada hoy.",
+                "fr": "Je ne vais pas vous retenir aujourd'hui, prenez cette Lampylumen.",
+                "ja": "今日はこれくらいにしておこう。ほら、この輝光石を持っていくといい。",
+                "ko": "더 이상 시간을 뺏으면 안 될 것 같네요. 이 반디석을 가져가세요",
+                "th": "รับไปสิ ฉันรู้ว่าวันนี้เธอค่อนข้างยุ่ง",
+                "zh-Hans": "今天我就不多留你了，这块辉萤石你拿去吧。",
+                "zh-Hant": "今天我就不多留你了，這塊輝螢石你拿去吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 783,
+                "name": {
+                  "zh-Hans": "扶岩"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "parentId": 121,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 115,
+      "parentId": 121,
+      "type": "Sequence",
+      "dialogs": []
+    }
+  ]
+}

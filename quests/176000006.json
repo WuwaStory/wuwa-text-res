@@ -1,0 +1,2367 @@
+{
+  "id": 176000006,
+  "key": "基建任务_三阶段",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Spacetrek-Observatorium: Plattformphase",
+    "en": "Spacetrek Observatory: Platform Phase",
+    "es": "Observatorio Intergaláctico: Fase de plataforma",
+    "fr": "Observatoire Trek-spatial : Phase de Plateforme",
+    "ja": "スペーストレック観測台：プロジェクト・プラットフォーム",
+    "ko": "스페이스트렉 관측대: 플랫폼 프로세스",
+    "th": "ศูนย์สังเกตการณ์สเปซเทรค: งานแพลตฟอร์ม",
+    "zh-Hans": "深空测界台：悬台工程",
+    "zh-Hant": "深空測界台：懸台工程"
+  },
+  "desc": {
+    "de": "Die Grundplatte des Observatoriums ist bereits ausgefahren, und Dhalifas Zustand verbessert sich zunehmend. Als Nächstes steht die Rekonstruktion der Schwerbeplattform an …",
+    "en": "With the baseplates already fully expanded and Dhalifa's physical condition improving, the next step is to build the Suspension Platform.",
+    "es": "Con las placas base ya completamente expandidas y la condición física de Dhalifa mejorando, el siguiente paso es construir la plataforma de suspensión.",
+    "fr": "Avec les plaques de base déjà entièrement étendues et l'état physique de Dhalifa qui s'améliore, l'étape suivante consiste à construire la Plateforme de Suspension.",
+    "ja": "スペーストレック観測台の基板は既に展開され、ディリファの体調も徐々に回復している。次に再建するのは浮遊プラットフォームだ……",
+    "ko": "스페이스트렉 관측대의 베이스 플레이트가 펼쳐지고 달리파의 몸 상태도 점차 좋아지고 있다. 다음에 재건해야 할 건 공중 플랫폼이다...",
+    "th": "แผ่นฐานของศูนย์สังเกตการณ์สเปซเทรคได้ถูกขยายออกแล้ว สภาพร่างกายของ Dhalifa ก็เริ่มดีขึ้น ขั้นตอนต่อไปคือการสร้างแพลตฟอร์มกลางอากาศ...",
+    "zh-Hans": "深空测界台的基板已经展开，德莉珐的身体状态也逐渐好转，下一步要重建的是浮空悬台……",
+    "zh-Hant": "深空測界台的基板已經展開，德莉琺的身體狀態也逐漸好轉，下一步要重建的是浮空懸台……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Rakosan",
+        "en": "Talk to Rakosan",
+        "es": "Habla con Rakosan.",
+        "fr": "Parler à Rakosan",
+        "ja": "ラコーサと会話する",
+        "ko": "라코산과 대화하기",
+        "th": "คุยกับ Rakosan",
+        "zh-Hans": "与拉科萨对话",
+        "zh-Hant": "與拉科薩對話"
+      },
+      "entities": [
+        {
+          "entityId": 169000198,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+          "areaId": 36134,
+          "position": {
+            "x": 84126,
+            "y": -502286,
+            "z": 48600
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169000199,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC德莉珐",
+          "name": "TsEntity_德莉珐",
+          "areaId": 36134,
+          "position": {
+            "x": 83907,
+            "y": -502339,
+            "z": 48600
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 15
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700062,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC_System2",
+          "name": "TsEntity_BINGO17",
+          "areaId": 36134,
+          "position": {
+            "x": 83919,
+            "y": -502258,
+            "z": 48600
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -3
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_天文台主线任务",
+          "flowIndex": 5,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Dank {PlayerName} konnten wir die Materialien für die Schwebeplattform in Rekordzeit zusammentragen!",
+                "en": "Thanks to {PlayerName}, we gathered all the materials for the Suspension Platform in record time!",
+                "es": "¡Gracias a {PlayerName}, hemos reunido todos los materiales para la plataforma de suspensión en tiempo récord!",
+                "fr": "Grâce à {PlayerName}, nous avons collecté tous les matériaux nécessaires à la plateforme de suspension en un temps record !",
+                "ja": "{PlayerName}のおかげで、プラットフォームに必要な物資がこんなに早く揃ったぞ！",
+                "ko": "{PlayerName}(이)가 계셔서 다행이에요. 플랫폼 프로세스에 필요한 물자가 모두 이렇게 빠르게 도착하다니!",
+                "th": "เรารวบรวมวัสดุทั้งหมดที่ใช้ทำแพลตฟอร์มลอยตัวเร็วแบบทำสถิติใหม่ได้ก็เพราะ {PlayerName} เลยนะ!",
+                "zh-Hans": "多亏有{PlayerName}，悬台工程需要的物资这么快就调配齐全了！",
+                "zh-Hant": "多虧有{PlayerName}，懸台工程需要的物資這麼快就調配齊全了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100157,
+                "name": {
+                  "zh-Hans": "拉科萨"
+                },
+                "entity": {
+                  "entityId": 169000198,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 84126,
+                    "y": -502286,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Willkommen zurück, {PlayerName}. Wir sind bereit.",
+                "en": "Welcome back, {PlayerName}. We're ready.",
+                "es": "{Male=Bienvenido;Female=Bienvenida} de nuevo, {PlayerName}. Estamos listos.",
+                "fr": "Te revoilà. Nous sommes prêts.",
+                "ja": "おかえり、{PlayerName}。準備はできている。",
+                "ko": "돌아온 걸 환영해요. {PlayerName}. 준비됐어요",
+                "th": "กลับมาแล้วเหรอ {PlayerName} พวกเราพร้อมแล้ว",
+                "zh-Hans": "欢迎回来。{PlayerName}。我们准备好了。",
+                "zh-Hant": "歡迎回來。{PlayerName}。我們準備好了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 169000199,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83907,
+                    "y": -502339,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 15
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Willkommen zurück, {PlayerName}. Die Vorräte strömen nur so herein, und Rakosan hat das Kollektiv gebeten, mehr Helferroboter zu schicken. Es ist lange her, dass hier so viel los war“, sagt Dhalifa.",
+                "en": "\"Welcome back, {PlayerName}. Supplies have been pouring in, and Rakosan has asked the Collective to send over more helper robots. It's been ages since this place felt so alive,\" says Dhalifa!",
+                "es": "Dhalifa dice: «{Male=Bienvenido;Female=Bienvenida} de nuevo, {PlayerName}. Los suministros han estado llegando en abundancia y Rakosan pidió a la Unión que enviara más robots ayudantes. Hace mucho que este lugar no estaba tan vivo».",
+                "fr": "« Bon retour parmi nous, {PlayerName}. Grâce au réseau, les fournitures affluent, et Rakosan a demandé au collectif d'envoyer d'autres robots assistants. Ça faisait longtemps que l'observatoire n'avait pas été aussi animé », dit Dhalifa !",
+                "ja": "おかえりなさい、{PlayerName}さん。このところ、物資が途切れることなく道を通って運ばれてきていて、ラコーサさんも、再建を手伝うためにコレクティブからさらに多くのロボットを呼ぶことができました。こんなに賑やかなのは、久しぶりです。と、ディリファは申しております！",
+                "ko": "돌아오신 걸 환영해요, {PlayerName}. 요즘 물자가 도로망을 따라 끝없이 도착하고 있어요. 라코산도 덕분에 콜렉티브에서 더 많은 로봇을 동원해서 재건을 돕고 있어요. 이렇게 시끌벅적한 건 오랜만이에요. 라고 달리파가 말합니다!",
+                "th": "\"กลับมาแล้วเหรอ {PlayerName} เสบียงอุปกรณ์หลั่งไหลกันเข้ามาเยอะแยะเลย ส่วนทาง Rakosan ก็ขอให้ศูนย์ฯ ส่งหุ่นยนต์ช่วยเหลือมาเพิ่ม นานมากแล้วนะที่สถานที่แห่งนี้ไม่ได้คึกคักขนาดนี้\" Dhalifa พูดไว้อย่างนั้น",
+                "zh-Hans": "欢迎回来，{PlayerName}，这段时间里物资源源不断地沿着路网抵达，拉科萨也得以从深空联合调来更多机器人辅助重建，好久没这么热闹了。德莉珐如是说！",
+                "zh-Hant": "歡迎回來，{PlayerName}，這段時間裡物資源源不斷地沿著路網抵達，拉科薩也得以從深空聯合調來更多機器人輔助重建，好久沒這麼熱鬧了。德莉琺如是說！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700062,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO17",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83919,
+                    "y": -502258,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -3
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So ist es! Die Schwebeplattform ist fertig. Jetzt müssen wir sie nur noch aktivieren. Bist du bereit?",
+                "en": "That's right! The Suspension Platform has been built. All that's left is to activate it. Are you ready?",
+                "es": "¡Así es! La Plataforma de Suspensión ya está completada. Solo falta activarla. ¿Estás {Male=listo;Female=lista}?",
+                "fr": "Tout à fait ! La plateforme de suspension est construite, et il ne reste plus qu'à l'activer. Tu es {Male=prêt;Female=prête} ?",
+                "ja": "その通りだ。浮遊プラットフォームの完成は実に順調だった。残すはプロジェクトの起動、ただ一つ。準備はいいか！",
+                "ko": "맞아요. 이제 플랫폼 프로세스가 별 탈 없이 마무리되는 것만 남았어요. 준비됐나요?",
+                "th": "ถูกต้องเลย! แพลตฟอร์มลอยตัวสร้างเสร็จแล้ว ที่เหลือก็แค่เปิดใช้งาน คุณพร้อมรึยัง?",
+                "zh-Hans": "没错，悬台工程完成得十分顺利，就差启动工程这一步了，准备好了吗！",
+                "zh-Hant": "沒錯，懸台工程完成得十分順利，就差啟動工程這一步了，準備好了嗎！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100157,
+                "name": {
+                  "zh-Hans": "拉科萨"
+                },
+                "entity": {
+                  "entityId": 169000198,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 84126,
+                    "y": -502286,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Legen wir los!",
+                    "en": "Let's do it!",
+                    "es": "¡Hagámoslo!",
+                    "fr": "Allons-y !",
+                    "ja": "プロジェクト・プラットフォームの最終作業に入ろう！",
+                    "ko": "플랫폼 프로세스 시작!",
+                    "th": "งั้นก็เปิดได้เลย!",
+                    "zh-Hans": "启动悬台工程吧！",
+                    "zh-Hant": "啟動懸台工程吧！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Meine Damen und Herren, ich präsentiere … die Schwebeplattform!",
+                "en": "Ladies and gentlemen, I present to you... the Suspension Platform!",
+                "es": "¡Damas y caballeros, les presento... la plataforma de suspensión!",
+                "fr": "Mesdames et messieurs, je vous présente… la plateforme de suspension !",
+                "ja": "それでは、浮遊プラットフォームのお披露目だ！",
+                "ko": "플랫폼 프로세스, 감동적인 첫 등장!",
+                "th": "ท่านสุภาพบุรุษและสุภาพสตรี ฉันขอนำเสนอ... แพลตฟอร์มลอยตัว!",
+                "zh-Hans": "悬台工程，震撼登场！",
+                "zh-Hant": "懸台工程，震撼登場！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100157,
+                "name": {
+                  "zh-Hans": "拉科萨"
+                },
+                "entity": {
+                  "entityId": 169000198,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 84126,
+                    "y": -502286,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "…",
+                "en": "...",
+                "es": "...",
+                "fr": "…",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 169000199,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83907,
+                    "y": -502339,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 15
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dhalifa ist sprachlos!",
+                "en": "Dhalifa is speechless!",
+                "es": "¡Dhalifa se ha quedado sin palabras!",
+                "fr": "Dhalifa en reste bouche bée !",
+                "ja": "……と、ディリファは申しております！",
+                "ko": "... 라고 달리파가 말합니다!",
+                "th": "\"...\" Dhalifa พูดไว้อย่างนั้น",
+                "zh-Hans": "……德莉珐如是说！",
+                "zh-Hant": "……德莉琺如是說！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700062,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO17",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83919,
+                    "y": -502258,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -3
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "W-Was?! Wie?! War es der Bauplan? Die Drehachse? Die Leiterplatte?! Unmöglich … Wir haben alles hundertmal überprüft!",
+                "en": "Wh-what?! How?! Was it the blueprint? The rotation axis? The circuit board?! No way... we checked everything a million times!",
+                "es": "¡¿Q-qué?! ¡¿Cómo?! ¿Ha sido el plano? ¿El eje de rotación? ¿¡La placa de circuito?! No puede ser... ¡pero si lo revisamos todo un millón de veces!",
+                "fr": "Quoi ? Pourquoi ? Les plans ? L'axe de rotation ? Le circuit imprimé ? Non… On a tout vérifié un million de fois !",
+                "ja": "ど、どういうことだ。設計図？回転ハブ？回路盤か？い、いや、ありえない。どれも数え切れないほどチェックしたんだ。",
+                "ko": "어, 어떻게 된 거지? 설계도인가? 회전 허브? 아니면 회로 기판? 그, 그럴 리가. 분명히 몇 번이고 검사했는데",
+                "th": "อะ อะไรกัน?! ได้ไงเนี่ย?! เป็นที่พิมพ์เขียว? แกนหมุน? แผงวงจร?! ไม่มีทาง... เราตรวจสอบดูทุกอย่างแทบจะเป็นล้านรอบแล้วนะ!",
+                "zh-Hans": "怎、怎么回事，难道是蓝图？旋转枢纽？电路盘？不、不可能，这些都检查过无数遍了。",
+                "zh-Hant": "怎、怎麼回事，難道是藍圖？旋轉樞紐？電路盤？不、不可能，這些都檢查過無數遍了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 100157,
+                "name": {
+                  "zh-Hans": "拉科萨"
+                },
+                "entity": {
+                  "entityId": 169000198,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 84126,
+                    "y": -502286,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Panik. Diagnose durchführen.",
+                "en": "Don't panic. Run diagnostics.",
+                "es": "Que no cunda el pánico. Ejecuta un diagnóstico.",
+                "fr": "Pas de panique. Lance un diagnostic.",
+                "ja": "落ち着いて。診断プログラムを実行する。",
+                "ko": "진정해. 진단 프로그램 실시",
+                "th": "อย่าเพิ่งตกใจไป สั่งรันตัววินิจฉัยดูก่อน",
+                "zh-Hans": "别紧张。运行诊断程序。",
+                "zh-Hant": "別緊張。運行診斷程式。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 169000199,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83907,
+                    "y": -502339,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 15
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Bitte beruhige dich, Rakosan. Wir haben alles perfekt vorbereitet. Das ist kein technischer Fehler. Es muss etwas anderes sein. Lass Talkie sich mit dem Terminal verbinden und eine vollständige Diagnose durchführen“, sagt Dhalifa.",
+                "en": "\"Please calm down, Rakosan. Our preparation was flawless. This isn't an engineering failure. Something else must have happened. Just let Talkie connect to the Terminal and run a full diagnostic,\" says Dhalifa!",
+                "es": "Dhalifa dice: «Por favor, cálmate, Rakosan. La ejecución ha sido impecable. Esto no es un error de ingeniería. Debe haber pasado algo más. Deja que Talkie se conecte a la terminal y ejecute un diagnóstico completo».",
+                "fr": "« Du calme, Rakosan. Notre préparation était parfaite. Ce n'est pas un problème de conception. Il a dû se passer quelque chose. Laisse Parlote se connecter à la Borne et lancer un diagnostic complet », dit Dhalifa !",
+                "ja": "ラコーサさん、落ち着いてください。私たちは万全の準備を整えました。プロジェクトそのものに問題があるはずはありません。おそらく何か突発的なトラブルが起きたのでしょう。クドクドをデバイスに接続させ、診断プログラムを実行しましょう。と、ディリファは申しております！",
+                "ko": "라코산, 진정하세요. 이미 만반의 준비를 했어요. 공사 자체의 문제가 아닌 돌발 상황일 거예요. 어쩌구저쩌구로 단말기에 접근해서 진단 프로그램을 실시해 보죠. 라고 달리파가 말합니다!",
+                "th": "\"ใจเย็นก่อนนะ Rakosan การเตรียมงานของเราถูกต้องไร้ที่ติ ไม่ใช่ความผิดพลาดทางวิศวกรรม น่าจะมีบางอย่างเกิดขึ้น ลองให้ทอล์คกี้เชื่อมต่อกับเทอร์มินัลแล้วสั่งรันการวินิจฉัยเต็มรูปแบบดู\" Dhalifa พูดไว้อย่างนั้น",
+                "zh-Hans": "拉科萨，不用紧张，我们做好了万全准备，不会是工程本身的问题，一定是有什么突发事件，让唠叨叨接入终端，运行诊断程序吧。德莉珐如是说！",
+                "zh-Hant": "拉科薩，不用緊張，我們做好了萬全準備，不會是工程本身的問題，一定是有什麼突發事件，讓嘮叨叨接入終端，運行診斷程式吧。德莉琺如是說！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700062,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO17",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83919,
+                    "y": -502258,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -3
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich wünschte, ich wäre so zuversichtlich wie du … Ich bin nur – nur ein durchschnittlicher –",
+                "en": "I wish I had your confidence… I'm just—just an ordinary—",
+                "es": "Ojalá tuviera tu confianza... Solo soy... una persona normal y corriente.",
+                "fr": "J'aimerais en être aussi sûr que toi… Je ne suis qu'un simple…",
+                "ja": "俺には君のような自信はない。俺はただの……ただの——",
+                "ko": "나는 그런 자신감이 없어. 나는 그냥... 그저...",
+                "th": "ฉันอยากจะมีความมั่นใจแบบคุณบ้าง... ฉันก็แค่...แค่คนธรรมดา...",
+                "zh-Hans": "我没有你这种自信，我只是一个……我只是——",
+                "zh-Hant": "我沒有你這種自信，我只是一個……我只是——"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 100157,
+                "name": {
+                  "zh-Hans": "拉科萨"
+                },
+                "entity": {
+                  "entityId": 169000198,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 84126,
+                    "y": -502286,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Fehler! Fehler! Ungewöhnliche Schäden im gesamten Observatorium festgestellt. Ursache: SABOTAGE. Ich wiederhole: SABOTAGE.",
+                "en": "Error! Error! Abnormal damage detected across the Observatory. Cause assessment: SABOTAGE. Repeat—SABOTAGE.",
+                "es": "¡Error! ¡Error! Fallo anormal detectado en todo el Observatorio. Evaluación de causa: SABOTAJE. Repito... SABOTAJE.",
+                "fr": "Erreur ! Erreur ! Dégâts anormaux détectés dans l'observatoire. Évaluation de la cause : SABOTAGE. Je répète : SABOTAGE.",
+                "ja": "異常、検知。異常、検知！観測台に多数の異常な損傷を確認。推測、何者かによる破壊。推測、何者かによる破壊。",
+                "ko": "이상 발견! 이상 발견! 스페이스트렉 관측대에 손상이 감지됩니다. 인위적인 파손으로 추측, 인위적인 파손으로 추측",
+                "th": "พบข้อผิดพลาด! พบข้อผิดพลาด! ตรวจพบความเสียหายผิดปกติทั่วทั้งศูนย์สังเกตการณ์สเปซเทรค ประเมินสาเหตุ: การก่อวินาศกรรม ขอย้ำ มีการก่อวินาศกรรม",
+                "zh-Hans": "发现异常，发现异常！深空测界台出现多处异常损坏，推测：人为破坏，推测：人为破坏。",
+                "zh-Hant": "發現異常，發現異常！深空測界台出現多處異常損壞，推測：人為破壞，推測：人為破壞。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700062,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO17",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83919,
+                    "y": -502258,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -3
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Zeig mir die neuesten Schäden, Talkie.",
+                    "en": "Show me the most recent damage, Talkie.",
+                    "es": "Muéstrame el último fallo, Talkie.",
+                    "fr": "Montre-moi les dégâts récents, Parlote.",
+                    "ja": "{Male=クドクド、損傷したところへ案内してくれ。;Female=クドクド、損傷したところへ案内して。}",
+                    "ko": "어쩌구저쩌구, 저를 가장 최근 파손 지점으로 데려다줘요",
+                    "th": "ขอดูความเสียหายล่าสุดหน่อย Talkie",
+                    "zh-Hans": "唠叨叨，带我去最新的损坏点。",
+                    "zh-Hant": "嘮叨叨，帶我去最新的損壞點。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Befehl bestätigt. Befehl bestätigt.",
+                "en": "Command accepted. Command accepted.",
+                "es": "Comando aceptado. Comando aceptado.",
+                "fr": "Ordre accepté. Ordre accepté.",
+                "ja": "コマンド受信。コマンド受信。",
+                "ko": "명령 확인, 명령 확인",
+                "th": "รับคำสั่ง รับคำสั่ง",
+                "zh-Hans": "收到指令，收到指令。",
+                "zh-Hant": "收到指令，收到指令。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700062,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO17",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 83919,
+                    "y": -502258,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -3
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Rakosan und ich überprüfen die anderen Bereiche. Sei vorsichtig, {PlayerName}.",
+                "en": "I-I'll check the other areas with Dhalifa. Be careful, {PlayerName}.",
+                "es": "Yo re-revisaré las demás áreas con Rakosan. Ten cuidado, {PlayerName}.",
+                "fr": "Je vais aller jeter un œil aux autres zones avec Dhalifa. Prudence, {PlayerName}.",
+                "ja": "そ、それじゃあ、俺とディリファは別の場所を見てくるよ。気をつけてくれ、{PlayerName}。",
+                "ko": "그, 그럼 저는 달리파와 다른 곳에 가서 좀 살펴볼게요. 조심하세요, {PlayerName}",
+                "th": "ฉะ ฉันจะตรวจสอบบริเวณอื่นดูกับ Rakosan ระวังตัวด้วยนะ {PlayerName}",
+                "zh-Hans": "那、那我和德莉珐去别的地方看看，注意安全，{PlayerName}。",
+                "zh-Hant": "那、那我和德莉琺去別的地方看看，注意安全，{PlayerName}。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 100157,
+                "name": {
+                  "zh-Hans": "拉科萨"
+                },
+                "entity": {
+                  "entityId": 169000198,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 84126,
+                    "y": -502286,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, nimm diese Geospinne mit. Ihr Scansystem könnte sich als nützlich erweisen.",
+                "en": "Oh, take this Geospider. Its scanning system might come in handy.",
+                "es": "Oh, toma esta Georaña. Su sistema de escaneo podría resultarte útil.",
+                "fr": "Tiens, prends cette Araignée de la Terre S4. Son scanner te sera utile.",
+                "ja": "そうだ。このイワグモを連れて行け。そのスキャン機能が役に立つだろう。",
+                "ko": "맞다! 바위 거미를 데려가세요. 스캔 기능이 필요할 거예요",
+                "th": "อ้อ เอาจีโอสไปเดอร์นี่ไปด้วยนะ ระบบการสแกนของมันน่าจะพอเป็นประโยชน์บ้าง",
+                "zh-Hans": "对了，带上这只岩蛛，你会需要它的扫描功能的。",
+                "zh-Hant": "對了，帶上這隻岩蛛，你會需要它的掃描功能的。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 100157,
+                "name": {
+                  "zh-Hans": "拉科萨"
+                },
+                "entity": {
+                  "entityId": 169000198,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 84126,
+                    "y": -502286,
+                    "z": 48600
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_3_0_一级POI_天文台主线任务",
+          "flowIndex": 5,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Dank {PlayerName} konnten wir die Materialien für die Schwebeplattform in Rekordzeit zusammentragen!",
+                "en": "Thanks to {PlayerName}, we gathered all the materials for the Suspension Platform in record time!",
+                "es": "¡Gracias a {PlayerName}, hemos reunido todos los materiales para la plataforma de suspensión en tiempo récord!",
+                "fr": "Grâce à {PlayerName}, nous avons collecté tous les matériaux nécessaires à la plateforme de suspension en un temps record !",
+                "ja": "{PlayerName}のおかげで、プラットフォームに必要な物資がこんなに早く揃ったぞ！",
+                "ko": "{PlayerName}(이)가 계셔서 다행이에요. 플랫폼 프로세스에 필요한 물자가 모두 이렇게 빠르게 도착하다니!",
+                "th": "เรารวบรวมวัสดุทั้งหมดที่ใช้ทำแพลตฟอร์มลอยตัวเร็วแบบทำสถิติใหม่ได้ก็เพราะ {PlayerName} เลยนะ!",
+                "zh-Hans": "多亏有{PlayerName}，悬台工程需要的物资这么快就调配齐全了！",
+                "zh-Hant": "多虧有{PlayerName}，懸台工程需要的物資這麼快就調配齊全了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Willkommen zurück, {PlayerName}. Wir sind bereit.",
+                "en": "Welcome back, {PlayerName}. We're ready.",
+                "es": "{Male=Bienvenido;Female=Bienvenida} de nuevo, {PlayerName}. Estamos listos.",
+                "fr": "Te revoilà. Nous sommes prêts.",
+                "ja": "おかえり、{PlayerName}。準備はできている。",
+                "ko": "돌아온 걸 환영해요. {PlayerName}. 준비됐어요",
+                "th": "กลับมาแล้วเหรอ {PlayerName} พวกเราพร้อมแล้ว",
+                "zh-Hans": "欢迎回来。{PlayerName}。我们准备好了。",
+                "zh-Hant": "歡迎回來。{PlayerName}。我們準備好了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Spacetrek-Observatorium",
+        "en": "Head to the Spacetrek Observatory",
+        "es": "Dirígete al Observatorio Intergaláctico.",
+        "fr": "Se rendre à l'Observatoire Trek-spatial",
+        "ja": "スペーストレック観測台へ向かう",
+        "ko": "스페이스트렉 관측대로 이동하기",
+        "th": "ไปยังศูนย์สังเกตการณ์สเปซเทรค",
+        "zh-Hans": "前往深空测界台",
+        "zh-Hant": "前往深空測界台"
+      },
+      "entities": [
+        {
+          "entityId": 169000198,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_6",
+          "areaId": 36134,
+          "position": {
+            "x": 84126,
+            "y": -502286,
+            "z": 48600
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169000199,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC德莉珐",
+          "name": "TsEntity_德莉珐",
+          "areaId": 36134,
+          "position": {
+            "x": 83907,
+            "y": -502339,
+            "z": 48600
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 15
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700062,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC_System2",
+          "name": "TsEntity_BINGO17",
+          "areaId": 36134,
+          "position": {
+            "x": 83919,
+            "y": -502258,
+            "z": 48600
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -3
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde die Schadensstellen.",
+        "en": "Locate the damage",
+        "es": "Localizar las partes dañadas.",
+        "fr": "Repérer les dégradations",
+        "ja": "損傷箇所を探す",
+        "ko": "파손된 곳 찾기",
+        "th": "ค้นหาจุดที่เสียหาย",
+        "zh-Hans": "寻找损坏处",
+        "zh-Hant": "尋找損壞處"
+      },
+      "entities": [
+        {
+          "entityId": 169000212,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+          "areaId": 36112,
+          "position": {
+            "x": 101960,
+            "y": -546820,
+            "z": 43184
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 77
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700012,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC_System2",
+          "name": "TsEntity_BINGO",
+          "areaId": 36112,
+          "position": {
+            "x": 101925,
+            "y": -546591,
+            "z": 43187
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700013,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC德莉珐",
+          "name": "TsEntity_德莉珐",
+          "areaId": 36112,
+          "position": {
+            "x": 102023,
+            "y": -546586,
+            "z": 43187
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 169000212,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+          "areaId": 36112,
+          "position": {
+            "x": 101960,
+            "y": -546820,
+            "z": 43184
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 77
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700062,
+          "mapId": 906,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录_设备1",
+          "areaId": 36134,
+          "position": {
+            "x": 79354,
+            "y": -501636,
+            "z": 48350
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700204,
+          "mapId": 906,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_设备2_tupo2",
+          "areaId": 36134,
+          "position": {
+            "x": 74215,
+            "y": -513798,
+            "z": 46992
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700205,
+          "mapId": 906,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_设备2_tupo1",
+          "areaId": 36134,
+          "position": {
+            "x": 74215,
+            "y": -513798,
+            "z": 47106
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700206,
+          "mapId": 906,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录_电线显隐",
+          "areaId": 36134,
+          "position": {
+            "x": 70783,
+            "y": -508576,
+            "z": 47642
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700012,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC_System2",
+          "name": "TsEntity_BINGO",
+          "areaId": 36112,
+          "position": {
+            "x": 101925,
+            "y": -546591,
+            "z": 43187
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700013,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC德莉珐",
+          "name": "TsEntity_德莉珐",
+          "areaId": 36112,
+          "position": {
+            "x": 102023,
+            "y": -546586,
+            "z": 43187
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_天文台主线任务",
+          "flowIndex": 12,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Sephira. Die Roya. Der Exoschwarm. Unsere Architektur und Kultur … müssen geschützt werden.",
+                "en": "Sephira. The Roya. The Exoswarm. Our architecture and culture… must be protected.",
+                "es": "Sephira. Los royas. El Exoenjambre. Nuestra arquitectura y cultura... deben ser protegidas.",
+                "fr": "Séphira… Les Royans… l'Exonuée… Notre architecture, notre culture… doivent être protégées.",
+                "ja": "サープ。ロイ人。エクソスウォーム。建物。文化。守る必要がある。",
+                "ko": "세피라. 로야인. 엑소스웜. 건축. 문화. 보호해야 해요",
+                "th": "Sephira ชาวโรญา Exoswarm สถาปัตยกรรมและวัฒนธรรมของเรา... ต้องปกป้องไว้",
+                "zh-Hans": "瑟普。罗伊人。隧群。建筑。文化。需要保护。",
+                "zh-Hant": "瑟普。羅伊人。隧群。建築。文化。需要保護。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700013,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 102023,
+                    "y": -546586,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sephira, ich –",
+                "en": "Sephira, I—",
+                "es": "Dhalifa dice: «Sephira, yo»...",
+                "fr": "Sephira, je…",
+                "ja": "サープ、私——",
+                "ko": "세피라, 나는...",
+                "th": "Sephira ฉัน...",
+                "zh-Hans": "瑟普，我——",
+                "zh-Hant": "瑟普，我——"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700012,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 101925,
+                    "y": -546591,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -88
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dhalifa stupst Talkie sanft an und signalisiert ihm, dass sie selbst sprechen wird.",
+                "en": "Dhalifa gently pats Talkie, signaling she'll speak for herself.",
+                "es": "Dhalifa acaricia suavemente a Talkie, indicando que hablará por sí misma.",
+                "fr": "Dhalifa tapote doucement Parlote, indiquant qu'elle va prendre la parole elle-même.",
+                "ja": "ディリファはクドクドに触れ、通訳する必要はないと伝えた。",
+                "ko": "달리파가 어쩌구저쩌구를 툭 건드렸다. 자신의 말을 전하지 않아도 된다는 뜻이었다",
+                "th": "Dhalifa เอามือแตะ Talkie เบาๆ ส่งสัญญาณว่าเธอจะเป็นคนพูดเอง",
+                "zh-Hans": "德莉珐触碰唠叨叨，告诉它不需要转译自己的话。",
+                "zh-Hant": "德莉琺觸碰嘮叨叨，告訴它不需要轉譯自己的話。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Leerensturm … löscht aus. Verschlingt. Alles … weg.",
+                "en": "The Void Storm… erases. Devours. Everything... gone.",
+                "es": "La Tormenta de Vacío... borra. Devora. Todo... desaparecido.",
+                "fr": "La tempête de néant… efface tout. Dévore tout. Tout disparaît.",
+                "ja": "ヴォイドストーム。消し去る。呑み込む。全てがなくなる。",
+                "ko": "보이드 스톰. 지워. 삼켜. 모든 것이 없어져",
+                "th": "พายุสุญตา... ลบล้าง กลืนกิน ทุกสิ่ง... หายไป",
+                "zh-Hans": "虚质磁暴。抹消。吞噬。一切不复存在。",
+                "zh-Hant": "虛質磁暴。抹消。吞噬。一切不復存在。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700013,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 102023,
+                    "y": -546586,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Spacetrek-Observatorium … beobachtet. Zeichnet auf. Unsere Geschichte. Lahai-Roi … bleibt in Erinnerung.",
+                "en": "Spacetrek Observatory... surveys. Records. Our history. The land of Lahai-Roi... remembered.",
+                "es": "Observatorio Intergaláctico... Vigila. Registra. Nuestra historia. La tierra de Lahai-Roi... recordada.",
+                "fr": "Les recherches de l'Observatoire Trek-spatial… les registres… notre histoire… Lahai-Roi… Tout doit être préservé.",
+                "ja": "観測台。測定する。書き写す。記録する。私たちの歴史。ラハイロイの記憶が残される。",
+                "ko": "스페이스트렉 관측대. 측량, 전사, 기록. 우리의 역사. 라하이 로이의 땅. 기억해",
+                "th": "ศูนย์สังเกตการณ์สเปซเทรค... สำรวจ บันทึก ประวัตศาสตร์ของเรา ดินแดนแห่งลาไฮรอย... เป็นที่จดจำ",
+                "zh-Hans": "深空测界台。测绘。转写。记录。我们的历史。拉海洛的大地。被记忆。",
+                "zh-Hant": "深空測界台。測繪。轉寫。記錄。我們的歷史。拉海洛的大地。被記憶。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700013,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 102023,
+                    "y": -546586,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gefahren. Ich … leiste Beitrag.",
+                "en": "Face. Danger. I... make contribution.",
+                "es": "Enfrentarme al peligro. Yo... contribuyo.",
+                "fr": "Affronter. Le danger. Je… dois participer.",
+                "ja": "向き合う。危機。私、力になりたい。",
+                "ko": "위기. 직면. 기여하고 싶어",
+                "th": "เผชิญหน้า อันตราย ฉัน... ช่วยทำประโยชน์",
+                "zh-Hans": "面对。危机。我想做出贡献。",
+                "zh-Hant": "面對。危機。我想做出貢獻。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700013,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 102023,
+                    "y": -546586,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bleibe … im Observatorium. Wache über … euch. Über alle. Über Lahai-Roi.",
+                "en": "I stay... in Observatory. Watch over... you. Everyone. Lahai-Roi.",
+                "es": "Me quedo... en el Observatorio. Vigilo... a ti. A todos. Lahai-Roi.",
+                "fr": "Je reste… dans l'observatoire. Je… veille sur toi. Tout le monde. Lahai-Roi.",
+                "ja": "私は、離れていない……私は観測台にいる。見つめてる……あなたを。みんなを。ラハイロイを……",
+                "ko": "떠나지 않아... 스페이스트렉 관측대에 있어. 너, 모두, 라하이 로이... 보고 있어",
+                "th": "ฉันอยู่... ในศูนย์สังเกตการณ์สเปซเทรค เฝ้าระวัง... คุณ ทุกคน ลาไฮรอย",
+                "zh-Hans": "我没有离开……我在深空测界台。注视……你。大家。拉海洛……",
+                "zh-Hant": "我沒有離開……我在深空測界台。注視……你。大家。拉海洛……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700013,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 102023,
+                    "y": -546586,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber hast du keine Angst?! Der Kampf ist aussichtslos! Warum musst ausgerechnet du das tun?!",
+                "en": "But aren't you scared?! It's an impossible fight! Why does it have to be you?!",
+                "es": "¡¿Pero no tienes miedo?! ¡Es una lucha imposible! ¡¿Por qué tienes que ser tú?!",
+                "fr": "Mais n'as-tu pas peur ?! C'est un combat impossible ! Pourquoi toi ?!",
+                "ja": "でも、怖くないの？あんな相手、ほとんど勝ち目なんてないのよ。あまりにも巨大すぎる。どうして、あなたが向き合わなくちゃいけないの！",
+                "ko": "하지만 무섭지 않아? 이길 가능성이 거의 없는 상대야. 너무 크다고. 왜 네가 맞서야 하는 건데!",
+                "th": "แต่คุณไม่กลัวเหรอ? ยังไงก็ไม่มีทางสู้ได้! ทำไมต้องเป็นคุณด้วยล่ะ?!",
+                "zh-Hans": "可是你不害怕吗？那可是一种几乎无法战胜的危机，它太巨大了，为什么要你去面对！",
+                "zh-Hant": "可是你不害怕嗎？那可是一種幾乎無法戰勝的危機，它太巨大了，為什麼要你去面對！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 100159,
+                "name": {
+                  "zh-Hans": "瑟普"
+                },
+                "entity": {
+                  "entityId": 169000212,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 101960,
+                    "y": -546820,
+                    "z": 43184
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 77
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Angst. Unser Volk … Lahai-Roi … verschwindet. Davor … Angst.",
+                "en": "Not afraid. Our people… Lahai-Roi… disappearing. That... I'm afraid.",
+                "es": "No miedo. Nuestra gente... Lahai-Roi... desaparece. De eso... tengo miedo.",
+                "fr": "Pas peur. Notre peuple… Lahai-Roi… disparaître. De ça, j'ai peur.",
+                "ja": "怖くない……ロイ人が……ラハイロイが消える方が、私はもっと恐ろしい。",
+                "ko": "안 무서워... 로야인... 라하이 로이 없어져, 더 무서워",
+                "th": "ไม่กลัว คนของเรา... ลาไฮรอย... หายไป นั่นแหละ... ที่ฉันกลัว",
+                "zh-Hans": "我不害怕……罗伊人……拉海洛的消亡，我更害怕。",
+                "zh-Hant": "我不害怕……羅伊人……拉海洛的消亡，我更害怕。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700013,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 102023,
+                    "y": -546586,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warnung! Warnung! Vitalwerte instabil! Dhalifa braucht Ruhe! Lass mich übersetzen! Lass mich übersetzen!",
+                "en": "Warning! Warning! Vital signs unstable! Dhalifa needs rest! Let me translate! Let me translate!",
+                "es": "¡Atención! ¡Atención! ¡Signos vitales inestables! ¡Dhalifa necesita descansar! ¡Déjame traducir! ¡Déjame traducir!",
+                "fr": "Attention ! Attention ! Signes vitaux instables ! Dhalifa a besoin de repos ! Laissez-moi interpréter ! Laissez-moi interpréter !",
+                "ja": "ディリファ！体調が急変しています！休憩が必要です！ボクが通訳します！ボクが通訳します！",
+                "ko": "달리파! 신체 불안정! 신체 불안정! 쉬어야 합니다! 제가 통역합니다! 제가 통역합니다!",
+                "th": "แจ้งเตือน! แจ้งเตือน! สัญญาณชีพไม่คงที่! Dhalifa ต้องพัก! ให้ฉันแปล! ให้ฉันแปล!",
+                "zh-Hans": "德莉珐！体征波动！体征波动！需要休息！我来转译！我来转译！",
+                "zh-Hant": "德莉琺！體征波動！體征波動！需要休息！我來轉譯！我來轉譯！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700012,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 101925,
+                    "y": -546591,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -88
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sephira, verstehst du jetzt, warum Dhalifa so entschlossen ist?",
+                    "en": "Sephira, do you see Dhalifa's determination now?",
+                    "es": "Sephira, ¿entiendes ahora la determinación de Dhalifa?",
+                    "fr": "Sephira, tu vois la détermination de Dhalifa maintenant ?",
+                    "ja": "{Male=サープ、ディリファの決意を理解できてるんじゃないのか？;Female=サープ、ディリファの決意を理解できてるんじゃないの？}",
+                    "ko": "세피라, 달리파의 결심을 이해하겠어요?",
+                    "th": "Sephira คุณเห็นความมุ่งมั่นของ Dhalifa แล้วรึยัง?",
+                    "zh-Hans": "瑟普，你能理解德莉珐的决心吗？",
+                    "zh-Hant": "瑟普，你能理解德莉琺的決心嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "… Ich habe es immer verstanden. Jeder Roya weiß, wie furchterregend der Leerensturm ist. Und ich weiß besser als jeder andere, wie hart Dhalifa und das Spacetrek-Kollektiv dagegen gekämpft haben.",
+                "en": "…I know. I've always known. Every Roya knows how terrifying the Void Storm is. And I know better than anyone how hard Dhalifa and the Spacetrek Collective have fought against it.",
+                "es": "Sephira, ¿entiendes ahora la determinación de Dhalifa?",
+                "fr": "Oui… Je l'ai toujours vue. Les Royans savent à quel point la tempête de néant peut être terrifiante. Je sais mieux que quiconque à quel point Dhalifa et le Collectif Trek-spatial l'ont affrontée.",
+                "ja": "本当は……ずっとわかっていた。ロイ人として、ヴォイドストームの恐ろしさを知らないわけがない。ディリファとコレクティブが、それに抗うために戦っていることも知ってた。",
+                "ko": "그게... 사실 알고 있었어요. 로야인이 보이드 스톰의 무서움을 어떻게 모르겠어요. 달리파와 콜렉티브가 보이드 스톰에 맞서기 위해 노력한다는 것도 알아요",
+                "th": "...รู้แล้วล่ะ รู้มาตลอดด้วย ชาวโรญาทุกคนรู้ดีว่าพายุสุญตาน่ากลัวขนาดไหน แล้วฉันก็รู้ดีกว่าใครว่า Dhalifa กับศูนย์นักท่องอวกาศต้องฝ่าฝันมายากลำบากขนาดไหน",
+                "zh-Hans": "这……其实我一直都明白，身为罗伊人，怎么会不了解虚质磁暴的可怕，也知道德莉珐和深空联合在为了对抗它而奋斗。",
+                "zh-Hant": "這……其實我一直都明白，身為羅伊人，怎麼會不了解虛質磁暴的可怕，也知道德莉琺和深空聯合在為了對抗它而奮鬥。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 100159,
+                "name": {
+                  "zh-Hans": "瑟普"
+                },
+                "entity": {
+                  "entityId": 169000212,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 101960,
+                    "y": -546820,
+                    "z": 43184
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 77
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich weiß auch, dass ihr aus Selbstlosigkeit handelt, aber ich bin nicht wie ihr. Ich will nur meine beste Freundin beschützen.",
+                "en": "I know what you're doing is for the greater good, but I'm not like you two. I just want to keep my best friend safe.",
+                "es": "Sé que lo haces por el bien común, pero yo no soy como {Male=vosotros;Female=vosotras} dos. Solo quiero mantener a salvo a mi mejor amiga.",
+                "fr": "Je sais que vous agissez pour le bien de tous, mais je ne suis pas comme vous. Je veux juste que mon amie ne soit plus en danger.",
+                "ja": "でもね、{PlayerName}。あなたもディリファも、もっとたくさんの人を守りたいんでしょう？でも私は、そんな大義よりも、ただ……一番大切な友達を守りたいだけなの。",
+                "ko": "{PlayerName}(와)과 달리파는 모두 더 많은 사람들을 보호하고 싶어 하죠. 하지만 저는 그렇게 멀리 볼 줄 몰라요. 저는 제가 가장 아끼는 친구를 보호하고 싶을 뿐이에요",
+                "th": "ฉันรู้ว่าที่เธอทำมันเพื่อประโยชน์ที่ยิ่งใหญ่ แต่ฉันไม่เหมือนพวกคุณสองคน ฉันแค่อยากให้เพื่อนที่สนิทที่สุดของฉันปลอดภัย",
+                "zh-Hans": "但是，{PlayerName}，你和德莉珐都想保护更多人，但我没有这样的远见，我只是想保护我最好的朋友。",
+                "zh-Hant": "但是，{PlayerName}，你和德莉琺都想保護更多人，但我沒有這樣的遠見，我只是想保護我最好的朋友。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 100159,
+                "name": {
+                  "zh-Hans": "瑟普"
+                },
+                "entity": {
+                  "entityId": 169000212,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 101960,
+                    "y": -546820,
+                    "z": 43184
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 77
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du kannst Dhalifa nicht beschützen, indem du ihre Arbeit sabotierst.",
+                    "en": "You can't protect Dhalifa by sabotaging her work.",
+                    "es": "No puedes proteger a Dhalifa saboteando su trabajo.",
+                    "fr": "Tu ne protégeras pas Dhalifa en sabotant son travail.",
+                    "ja": "ディリファを守ることは、再建を妨害することとは違う。",
+                    "ko": "공사를 망치는 것으로 달리파를 보호할 수는 없어요",
+                    "th": "การปกป้อง Dhalifa ไม่ควรต้องแลกมากับการทำลายงานสร้าง",
+                    "zh-Hans": "保护德莉珐不能建立在破坏工程之上。",
+                    "zh-Hant": "保護德莉琺不能建立在破壞工程之上。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es tut mir leid. Ich weiß, wie viel Arbeit ihr in dieses Projekt gesteckt habt. Ich weiß, ich hätte das nicht tun sollen. Aber –",
+                "en": "I truly am sorry. I understand how much effort has gone into this. I know I shouldn't have done it. But—",
+                "es": "Lo siento mucho, de verdad. Sé la cantidad de esfuerzo que se ha invertido aquí. Sé que no debería haberlo hecho. Pero...",
+                "fr": "Je suis sincèrement désolée. Je réalise tous les efforts que vous avez faits. Je sais que je n'aurais pas dû faire ça, mais…",
+                "ja": "ごめんなさい。再建プロジェクトが大変なのはわかってる。邪魔すべきじゃないのも。でも——",
+                "ko": "죄송합니다. 재건 프로세스가 어려운 일이라는 건 알아요. 엉망으로 만들어서는 안 됐어요. 하지만...",
+                "th": "ฉันขอโทษจริงๆ ฉันเข้าใจว่าต้องลงทุนลงแรงพยายามขนาดไหน ฉันรู้ว่าไม่ควรทำเลย แต่...",
+                "zh-Hans": "抱歉，我知道重建工程很辛苦，不应该添乱，但——",
+                "zh-Hant": "抱歉，我知道重建工程很辛苦，不應該添亂，但——"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 100159,
+                "name": {
+                  "zh-Hans": "瑟普"
+                },
+                "entity": {
+                  "entityId": 169000212,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 101960,
+                    "y": -546820,
+                    "z": 43184
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 77
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was Dhalifa jetzt braucht, ist deine Hilfe.",
+                    "en": "What Dhalifa needs now is your help.",
+                    "es": "Lo que Dhalifa necesita ahora es tu ayuda.",
+                    "fr": "Ce dont Dhalifa a besoin maintenant, c'est de ton aide.",
+                    "ja": "{Male=ディリファが今必要としているのは、あなたの助けだ。;Female=ディリファが今必要としているのは、あなたの助けよ。}",
+                    "ko": "지금 달리파에게 필요한 건 당신의 도움이에요",
+                    "th": "ตอนนี้สิ่งที่ Dhalifa ต้องการคือความช่วยเหลือจากคุณ",
+                    "zh-Hans": "德莉珐现在需要的，是你的帮助。",
+                    "zh-Hant": "德莉琺現在需要的，是你的幫助。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sephira. Hilf mir. Deine Wiedergutmachung. Du wirst es verstehen … irgendwann.",
+                "en": "Sephira. Help me. Your atonement. You'll understand… eventually.",
+                "es": "Sephira. Ayúdame. Tu redención. Entenderás... al final.",
+                "fr": "Sephira. Aide-moi. Rachète-toi. Tu comprendras… un jour.",
+                "ja": "サープ。私を助けて。それがあなたの償い。最後に。あなたは理解する。",
+                "ko": "세피라. 도와줘. 잘못을 갚아. 결국, 이해할 거야",
+                "th": "Sephira ช่วยฉันด้วย การชดเชยจากคุณ ฉันจะเข้าใจเอง...",
+                "zh-Hans": "瑟普。来帮助我。这是你的赎罪。最后。你会理解。",
+                "zh-Hant": "瑟普。來幫助我。這是你的贖罪。最後。你會理解。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700013,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 102023,
+                    "y": -546586,
+                    "z": 43187
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Ich weiß nicht. Aber ich sollte die Verantwortung für mein impulsives Handeln übernehmen. Und wenn Dhalifa mich darum bittet … Okay. Bitte, lass mich beim Wiederaufbau helfen.",
+                "en": "…I don't know. But I should take responsibility for my impulsive actions. And if Dhalifa's asking... then yes. Please, let me help with the reconstruction.",
+                "es": "... No lo sé. Pero debería asumir la responsabilidad de mis acciones. Y si Dhalifa lo pide... entonces sí. Ayudaré con la reconstrucción.",
+                "fr": "Je ne sais pas… mais je dois assumer ce que j'ai fait. Et si c'est Dhalifa qui me le demande… alors oui. J'aiderai à la reconstruction.",
+                "ja": "どうかしら……でも、私が一時的な感情で犯した過ちに責任を取るべきなのは確かね。それに、もしディリファの頼みなら、私は受け入れる。私に再建を手伝わせて。",
+                "ko": "나는 잘 몰라... 하지만 순간의 충동으로 저지른 잘못에 대해 책임져야 한다는 건 알아. 달리파가 도와달라고 하는 거라면, 나도 도울게. 재건을 돕게 해줘",
+                "th": "...ฉันไม่รู้เหมือนกัน แต่ฉันควรรับผิดชอบต่อการกระทำที่ไม่ทันยั้งคิดนี้ แล้วถ้า Dhalifa เป็นคนขอ... งั้นก็ได้ ได้โปรดให้ฉันช่วยงานบูรณะก่อสร้างใหม่นี้ด้วย",
+                "zh-Hans": "我不知道……但是我确实该为一时冲动犯的错误负责，而且如果是德莉珐的请求我会接受的，请让我来协助重建。",
+                "zh-Hant": "我不知道……但是我確實該為一時衝動犯的錯誤負責，而且如果是德莉琺的請求我會接受的，請讓我來協助重建。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 100159,
+                "name": {
+                  "zh-Hans": "瑟普"
+                },
+                "entity": {
+                  "entityId": 169000212,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 101960,
+                    "y": -546820,
+                    "z": 43184
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 77
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 169700098,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Gameplay_3_0/XueYuan1",
+          "name": "TsEntity_机关_电梯_3_0",
+          "areaId": 36134,
+          "position": {
+            "x": 86683,
+            "y": -499079,
+            "z": 48681
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700185,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Treasure_3_5",
+          "name": "TsEntity_3_0_涡纹物资箱_突破2",
+          "areaId": 36134,
+          "position": {
+            "x": 86116,
+            "y": -507600,
+            "z": 62929
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700212,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Gameplay_3_0/Common3",
+          "name": "TsEntity_玩法_通用终端_3_1",
+          "areaId": 36134,
+          "position": {
+            "x": 85681,
+            "y": -499455,
+            "z": 48675
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 134
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700213,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Gameplay_3_0/Common3",
+          "name": "TsEntity_玩法_通用终端_3_2",
+          "areaId": 36134,
+          "position": {
+            "x": 85774,
+            "y": -499427,
+            "z": 62980
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 144
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700009,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC德莉珐",
+          "name": "TsEntity_德莉珐",
+          "areaId": 36134,
+          "position": {
+            "x": 85913,
+            "y": -507256,
+            "z": 62906
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -96
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700065,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC_System2",
+          "name": "TsEntity_BINGO20",
+          "areaId": 36134,
+          "position": {
+            "x": 85814,
+            "y": -507312,
+            "z": 62910
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -75
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_天文台主线任务",
+          "flowIndex": 5,
+          "stateId": 11,
+          "talks": [
+            {
+              "text": {
+                "de": "Diese Aussicht. Verdanken wir dir.",
+                "en": "Look at this view. All thanks to you.",
+                "es": "Mira esta vista. Todo gracias a ti.",
+                "fr": "Quelle vue… Tout ça grâce à toi.",
+                "ja": "この景色。あなたのおかげ。",
+                "ko": "공중 플랫폼 위의 풍경. 당신 있어서 고마워요",
+                "th": "ดูวิวนี้สิ ทั้งหมดเป็นผลงานของคุณเลยนะ",
+                "zh-Hans": "悬台上的风景。感谢有你。",
+                "zh-Hant": "懸台上的風景。感謝有你。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700009,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 85913,
+                    "y": -507256,
+                    "z": 62906
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -96
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Früher kamen die Forscher vom Observatorium oft nach der Arbeit hierher, um den Wind zu spüren. Sie tranken ein warmes Getränk und bewunderten die Rumpfebenen. Dank dir können wir diese Aussicht wieder genießen“, sagt Dhalifa.",
+                "en": "\"The researchers at the Observatory used to come here after work, just to feel the wind. They'd sip on a warm drink and admire the Etching Plains. Thanks to you, we can see this sight again,\" says Dhalifa!",
+                "es": "Dhalifa dice: «Los investigadores del Observatorio solían venir aquí después del trabajo, solo para sentir el viento. Bebían algo caliente y admiraban las Llanuras del Grabado. Gracias a ti, podemos disfrutar de esta vista otra vez».",
+                "fr": "« Autrefois, les chercheurs de l'observatoire venaient ici après le travail pour sentir le vent, se réchauffer avec une boisson chaude et admirer les Plaines gravées. Grâce à toi, on peut de nouveau profiter de cette vue », dit Dhalifa !",
+                "ja": "昔、スペーストレック観測台の研究員たちは、仕事の合間にここで風に吹かれながら温かい飲み物を飲み、エッチングの平原の絶景を眺めるのが好きでした。ありがとう、こうして私たちにもう一度こんな景色を見せてくれて……と、ディリファが申しております！",
+                "ko": "과거 스페이스트렉 관측대의 연구원들은 쉬는 시간에 이곳에 자주 왔어요. 바람을 쐬면서 따뜻한 음료를 마시고, 에칭 평원의 절경을 감상했어요. 다시 한번 이곳의 풍경을 볼 수 있게 해 줘서 감사해요. 라고 달리파가 말합니다!",
+                "th": "\"นักวิจัยที่ศูนย์สังเกตการณ์สเปซเทรคเคยมาที่นี่หลังเลิกงาน แค่มาตากลมชมวิว แล้วก็จิบเครื่องดื่มอุ่นๆ ชื่นชมวิวของที่ราบรอยสลัก ก็เพราะคุณนี่แหละ เราเลยได้เห็นวิวนี้อีกครั้ง\" Dhalifa พูดไว้อย่างนั้น",
+                "zh-Hans": "过去深空测界台的研究员们在工作之余喜欢来这里，吹着风，喝着热饮，眺望蚀刻平原的绝景，谢谢你让我们能再一次看到这样的景色。德莉珐如是说！",
+                "zh-Hant": "過去深空測界台的研究員們在工作之餘喜歡來這裡，吹著風，喝著熱飲，眺望蝕刻平原的絕景，謝謝你讓我們能再一次看到這樣的景色。德莉琺如是說！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700065,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO20",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 85814,
+                    "y": -507312,
+                    "z": 62910
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine Phase noch. Die schwierigste. Aber … nicht besorgt.",
+                "en": "One last phase, and the toughest one. But... not worried.",
+                "es": "Una última fase, y la más difícil. Pero... no preocupada.",
+                "fr": "Il reste une phase, et pas des moindres. Mais… pas d'inquiétude.",
+                "ja": "最後の。そして一番難しい。でも、私は心配していない。",
+                "ko": "마지막. 가장 어려운 것. 하지만 걱정 안 해요",
+                "th": "ช่วงสุดท้าย และเป็นช่วงที่ยากที่สุด แต่... ไม่ต้องห่วง",
+                "zh-Hans": "最后的。也是最难的。但我并不担心。",
+                "zh-Hant": "最後的。也是最難的。但我並不擔心。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700009,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 85913,
+                    "y": -507256,
+                    "z": 62906
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -96
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Im letzten Schritt müssen wir das Hauptgebäude des Observatoriums wiederaufbauen. Das ist der komplizierteste Teil und erfordert die meisten Ressourcen, aber mit dir und den vielen helfenden Händen hier bin ich zuversichtlich“, sagt Dhalifa.",
+                "en": "\"The final step is rebuilding the Observatory's main structure. It's the most complex part and needs the most resources, but with you and so many helping hands here, I feel confident,\" says Dhalifa!",
+                "es": "Dhalifa dice: «El paso final es reconstruir la estructura principal del Observatorio. Es la parte más compleja y que más recursos necesita, pero contigo y tantas manos ayudando aquí, sé que podremos».",
+                "fr": "« La dernière étape consiste à reconstruire la structure principale de l'observatoire. C'est la partie la plus délicate qui nécessite le plus de ressources. Mais grâce à toi et tous les autres, j'ai confiance », dit Dhalifa !",
+                "ja": "最後に再建するのは、観測台の本体です。作業は最も複雑で、必要な物資も最も多い。ですが、あなたがいる。そして今は、以前よりも多くの助けもある。私はとても心強く感じています……と、ディリファが申しております！",
+                "ko": "마지막으로 스페이스트렉 관측대의 본체를 재건해야 해요. 가장 복잡한 기술을 사용하고, 가장 많은 물자가 필요해요. 하지만 당신이 있기에, 그리고 이전보다 더 많은 도움을 받을 수 있어서 다행이에요. 라고 달리파가 말합니다!",
+                "th": "\"ขั้นตอนสุดท้ายคือการบูรณะทำโครงสร้างหลักของศูนย์สังเกตการณ์สเปซเทรคขึ้นมาใหม่ เป็นชิ้นส่วนที่ซับซ้อนที่สุดและต้องใช้ทรัพยากรมากที่สุดด้วย แต่พอได้คุณและอีกหลายคนมาช่วย ฉันก็รู้สึกมั่นใจว่าทำได้\" Dhalifa พูดไว้อย่างนั้น",
+                "zh-Hans": "最后要重建的是深空测界台的主体，技术最复杂，需要的物资也最多，但有你在，还有如今比以往更多的助力，我很安心。德莉珐如是说！",
+                "zh-Hant": "最後要重建的是深空測界台的主體，技術最複雜，需要的物資也最多，但有你在，還有如今比以往更多的助力，我很安心。德莉琺如是說！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700065,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO20",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 85814,
+                    "y": -507312,
+                    "z": 62910
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ruh dich aus. Spür den Wind.",
+                "en": "Take a rest. Feel the breeze.",
+                "es": "Descansa. Siente la brisa.",
+                "fr": "Fais une pause. Sens la brise.",
+                "ja": "少し休む。風に当たる。",
+                "ko": "쉬어요. 바람 쐐요",
+                "th": "พักผ่อน สัมผัสสายลม",
+                "zh-Hans": "休息一会。吹吹风。",
+                "zh-Hant": "休息一會。吹吹風。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100158,
+                "name": {
+                  "zh-Hans": "德莉珐"
+                },
+                "entity": {
+                  "entityId": 176700009,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC德莉珐",
+                  "name": "TsEntity_德莉珐",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 85913,
+                    "y": -507256,
+                    "z": 62906
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -96
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Keine Eile, {PlayerName}. Ruh dich ein bisschen hier aus. Du hast dir diese Aussicht verdient“, sagt Dhalifa.",
+                "en": "\"No need to hurry, {PlayerName}. Rest here for a while. This view belongs to you too,\" says Dhalifa!",
+                "es": "Dhalifa dice: «No hay prisa, {PlayerName}. Descansa aquí un rato. Esta vista también es tuya».",
+                "fr": "« Rien ne presse, {PlayerName}. Souffle un peu. Cette vue est aussi pour toi », dit Dhalifa !",
+                "ja": "{PlayerName}、急いで出発せず、ここで少し休んでください。これもあなたのための絶景ですから。……って、デリファが言ってたよ！",
+                "ko": "{PlayerName}, 서둘러 출발하지 말고 잠시 쉬었다 가세요. 이 풍경은 당신의 것이기도 하니까요. 라고 달리파가 말합니다!",
+                "th": "\"ไม่ต้องรีบนะ {PlayerName} พักที่นี่สักครู่ก่อนก็ได้ วิวนี้เป็นของคุณเหมือนกัน\" Dhalifa พูดไว้อย่างนั้น",
+                "zh-Hans": "{PlayerName}，不用急着出发，在这里休息一会吧，这也是属于你的绝景。德莉珐如是说！",
+                "zh-Hant": "{PlayerName}，不用急著出發，在這裡休息一會吧，這也是屬於你的絕景。德莉琺如是說！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100155,
+                "name": {
+                  "zh-Hans": "唠叨叨"
+                },
+                "entity": {
+                  "entityId": 176700065,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_176_NPC_System2",
+                  "name": "TsEntity_BINGO20",
+                  "areaId": 36134,
+                  "position": {
+                    "x": 85814,
+                    "y": -507312,
+                    "z": 62910
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 169000212,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YZMMZ1_2",
+          "areaId": 36112,
+          "position": {
+            "x": 101960,
+            "y": -546820,
+            "z": 43184
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 77
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700012,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC_System2",
+          "name": "TsEntity_BINGO",
+          "areaId": 36112,
+          "position": {
+            "x": 101925,
+            "y": -546591,
+            "z": 43187
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176700013,
+          "mapId": 906,
+          "blueprintType": "branch3.0_176_NPC德莉珐",
+          "name": "TsEntity_德莉珐",
+          "areaId": 36112,
+          "position": {
+            "x": 102023,
+            "y": -546586,
+            "z": 43187
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sieh dir die Nachrichten von Rakosan an.",
+        "en": "Read Rakosan's WavesLine message",
+        "es": "Lee el WavesLine de Rakosan.",
+        "fr": "Vérifier le message de Rakosan",
+        "ja": "ラコーサからのメッセージを確認する",
+        "ko": "라코산의 메시지 확인하기",
+        "th": "ดูข้อความที่ Rakosan ส่งมา",
+        "zh-Hans": "查看拉科萨发来的飞讯",
+        "zh-Hant": "查看拉科薩發來的飛訊"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Warte, bis die Vorbereitungsarbeiten abgeschlossen sind.",
+        "en": "Wait for the Spacetrek Observatory to be ready",
+        "es": "Espera a que el Observatorio Intergaláctico esté listo.",
+        "fr": "Attendre que l'Observatoire Trek-spatial soit prêt",
+        "ja": "スペーストレック観測台の稼働準備が完了するまで待つ",
+        "ko": "스페이스트렉 관측대가 준비될 때까지 기다리기",
+        "th": "รอให้ศูนย์สังเกตการณ์สเปซเทรคเตรียมพร้อม",
+        "zh-Hans": "等待深空测界台准备就绪",
+        "zh-Hant": "等待深空測界台準備就緒"
+      },
+      "entities": [
+        {
+          "entityId": 169700206,
+          "mapId": 906,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录_电线显隐",
+          "areaId": 36134,
+          "position": {
+            "x": 70783,
+            "y": -508576,
+            "z": 47642
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

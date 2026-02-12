@@ -1,0 +1,166 @@
+{
+  "id": 189700005,
+  "key": "流民营地发现货物",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "zh-Hans": "dnt/流民营地发现货物"
+  },
+  "desc": {
+    "zh-Hans": "dnt/任务描述"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 189700021,
+          "mapId": 906,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_地面用必要触发交互",
+          "areaId": 36105,
+          "position": {
+            "x": -86562,
+            "y": -763799,
+            "z": 19537
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189702121,
+          "mapId": 906,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录",
+          "areaId": 36105,
+          "position": {
+            "x": -86633,
+            "y": -763971,
+            "z": 19487
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_车站3_丢失的货物",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Diese Frachtkisten …",
+                "en": "These boxes...",
+                "es": "Estos paquetes de carga...",
+                "fr": "Ces marchandises…",
+                "ja": "この箱……",
+                "ko": "이 화물 상자는...",
+                "th": "กล่องสินค้าพวกนี้...",
+                "zh-Hans": "这些货箱……",
+                "zh-Hant": "這些貨箱……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Die Versandetiketten sind unversehrt. Darauf ist der Name „Lollo-Logistik“ zu lesen.)",
+                "en": "(The shipping label is still intact. It says, \"Lollo Logistics.\")",
+                "es": "Las etiquetas de envío están intactas. En ellas puede leerse: «Logística Lollo».",
+                "fr": "(Leur étiquetage de livraison est encore intact… On peut lire « Loulou logistique ».)",
+                "ja": "（……配送のシールがまだ残っている。ブブ物流の荷物だ。）",
+                "ko": "(... 운송 라벨도 그대로고 「무무물류」라고 쓰여 있네)",
+                "th": "(...ป้ายขนส่งยังติดอยู่ เขียนว่า \"ลอลโล่โลจิสติกส์\")",
+                "zh-Hans": "（……运输标签还在，上面写着“呜呜物流”。）",
+                "zh-Hant": "（……運輸標籤還在，上面寫著「嗚嗚物流」。）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Sieht nach der gestohlenen Fracht aus … L0327 … Wahrscheinlich mehr Waren, die die Ausgestoßenen auf dem Schwarzmarkt versteigern wollten.)",
+                "en": "(This looks stolen... L0327... Probably stuff the Outcasts planned to auction off on the black market.)",
+                "es": "(Por lo que parece, es la carga robada... L0327... Probablemente más mercancía que los Proscritos iban a subastar en el mercado negro).",
+                "fr": "(Apparemment, il s'agit des marchandises volées… L0327… Sûrement d'autres articles que les parias comptaient vendre aux enchères au marché noir.)",
+                "ja": "{Male=（どうやら奪われた荷物らしい。番号は L0327……あいつらが売ろうとしてたものだな。）;Female=（どうやら奪われた荷物みたい。番号は L0327……あいつらが売ろうとしてたものだね。）}",
+                "ko": "(보아하니 빼앗긴 물건인 것 같네... L0327... 이것도 그 유랑민 무리가 암시장에서 경매하려던 물품일 거야)",
+                "th": "(ดูท่าจะเป็นของที่ถูกปล้นมา... หมายเลข L0327... คงเป็นสินค้าที่พวกผู้ลี้ภัยจะเอาไปขายในตลาดมืด)",
+                "zh-Hans": "（看样子，是被劫下来的货物……编号L0327……估计这也是那群流民在黑市上的拍品。）",
+                "zh-Hant": "（看樣子，是被劫下來的貨物……編號L0327……估計這也是那群流民在黑市上的拍品。）"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Ich sollte die Kisten zurück zu Lollo-Logistik bringen. Vielleicht können sie die Herkunft der Fracht herausfinden.)",
+                "en": "(I should bring them back to Lollo Logistics. Maybe they know who the sender is.)",
+                "es": "(Debería llevar esto de vuelta a Logística Lollo. Quizás puedan rastrear el origen de la carga).",
+                "fr": "(Je devrais les rapporter à Loulou logistique. Avec un peu de chance, ils pourront déterminer d'où elles proviennent.)",
+                "ja": "（ひとまずブブ物流の配達員に届けよう。もとの持ち主が分かるかもしれない。）",
+                "ko": "(우선 무무물류 사람한테 갖다 줘야겠어. 어디서 보낸 택배인지도 알 수 있으니)",
+                "th": "(เอากลับไปส่งให้คนของลอลโล่โลจิสติกส์ก่อนดีกว่า บางทีอาจจะตรวจสอบเจอแหล่งที่มาของพัสดุได้)",
+                "zh-Hans": "（先带回去交给呜呜物流的人吧，说不定能查到包裹的来源。）",
+                "zh-Hant": "（先帶回去交給嗚嗚物流的人吧，說不定能查到包裹的來源。）"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

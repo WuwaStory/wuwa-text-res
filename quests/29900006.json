@@ -1,0 +1,108 @@
+{
+  "id": 29900006,
+  "key": "测试秋水冒泡AI",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 29900012,
+          "mapId": 100,
+          "blueprintType": "NPC_HeiHaiAn_商人",
+          "name": "TsEntity_库洛洛商人420084",
+          "areaId": 0,
+          "position": {
+            "x": -31900,
+            "y": -11890,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 29900013,
+          "mapId": 100,
+          "blueprintType": "Player013",
+          "name": "TsEntity_角色013_秋水",
+          "areaId": 0,
+          "position": {
+            "x": -31840,
+            "y": -11730,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 5,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 7,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,2834 @@
+{
+  "id": 125000122,
+  "key": "1.1主线_朝觐之路",
+  "type": "main",
+  "typeId": 1,
+  "name": {
+    "de": "Pilgerweg",
+    "en": "Road of Pilgrimage",
+    "es": "Camino de peregrinación",
+    "fr": "Route du Pèlerinage",
+    "ja": "謁見の道",
+    "ko": "순례의 길",
+    "th": "เส้นทางแห่งการแสวงบุญ",
+    "zh-Hans": "朝觐之路",
+    "zh-Hant": "朝覲之路"
+  },
+  "desc": {
+    "de": "Die schlafende Gottheit wartet still auf den Pilger. Sie werden Wahrheit von Falschheit unterscheiden.",
+    "en": "The hibernating deity silently awaits the pilgrims' arrival. To distinguish truth from lies, seek answers from this divine being.",
+    "es": "El dios hibernando espera silenciosamente a que llegue el peregrino. Distinguirán la verdad de la falsedad.",
+    "fr": "La divinité dormante attend silencieusement - c'est le moment d'affronter l'être suprême pour découvrir la vérité.",
+    "ja": "眠る神は謁見者を静かに待っている。真実も偽りも、現実も虚構も、神前で確認するしか、他の術はない。",
+    "ko": "잠자는 신은 조용히 알현자를 기다리고 있습니다. 진실도 거짓도, 현실도 허위도 모두 신 앞에서 확인하세요",
+    "th": "เทพที่กำลังจำศีลรอการมาถึงของผู้แสวงบุญอยู่เงียบๆ เพื่อแยกเรื่องจริงออกจากเรื่องเท็จ จงหาคำตอบจากตัวตนอันศักดิ์สิทธิ์",
+    "zh-Hans": "沉眠的神祇静默地等候着谒见者的到来。真与假、虚与实，请至神明面前一一求证。",
+    "zh-Hant": "沉眠的神祇靜默地等候著謁見者的到來。 真與假、虛與實，請至神明面前一一求證。"
+  },
+  "chapter": {
+    "id": 1,
+    "name": {
+      "de": "Aufstieg von Jinzhou",
+      "en": "Jinzhou Rising",
+      "es": "Jinzhou, cada vez mejor",
+      "fr": "Le jeune visiteur à Jinzhou",
+      "ja": "今州の来訪者",
+      "ko": "과거보다 더욱 빛나는 금주",
+      "th": "จินโจวรุ่งเรืองพ้นกาลเก่า",
+      "zh-Hans": "但觉今州胜旧州",
+      "zh-Hant": "但覺今州勝舊州"
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 85,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Hole den Cipher Schlüssel ab",
+        "en": "Retrieve the Cipher Key",
+        "es": "Obtener la Llave Cifrada.",
+        "fr": "Récupérer la Clé cryptage",
+        "ja": "心核を入手",
+        "ko": "심핵 획득",
+        "th": "รับกุญแจแปรรหัส",
+        "zh-Hans": "获取心核",
+        "zh-Hant": "獲取心核"
+      },
+      "entities": [
+        {
+          "entityId": 125900067,
+          "mapId": 8,
+          "blueprintType": "Quest001",
+          "name": "岩壁遗迹_取心核",
+          "areaId": 1601,
+          "position": {
+            "x": 223680,
+            "y": 349899,
+            "z": -7052
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 3,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}, pass gut auf den Chiffrierschlüssel auf.",
+                "en": "{PlayerName}, take good care of the Cipher Key.",
+                "es": "{PlayerName}, cuida bien de la Llave Cifrada.",
+                "fr": "{PlayerName}, gardez bien la Clé cryptage.",
+                "ja": "{PlayerName}、<ano=しんかく>心核</ano>はあなたに預けよう。",
+                "ko": "{PlayerName}, 심핵을 잘 살펴보세요",
+                "th": "{PlayerName} ดูแลกุญแจแปรรหัสให้ดีนะ",
+                "zh-Hans": "{PlayerName}，可要好好看着心核哦。",
+                "zh-Hant": "{PlayerName}，可要好好看著心核喔。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich überlasse den Rest dir und Jinhsi.",
+                "en": "I'm leaving the rest to you and Jinhsi.",
+                "es": "Os dejo el resto a ti y a Jinhsi.",
+                "fr": "Je laisse le reste à toi et à Jinhsi.",
+                "ja": "この先は、あなたと<ano=コンシ>今汐</ano>だけで行って。",
+                "ko": "앞으로의 길은 방랑자와 영윤에게 맡길게요",
+                "th": "ที่เหลือฝากคุณกับ Jinhsi ด้วย",
+                "zh-Hans": "这之后的路，便交予你与今汐了。",
+                "zh-Hant": "這之後的路，便交予你與今汐了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist mit dir?",
+                    "en": "What about you?",
+                    "es": "¿Y tú?",
+                    "fr": "Et toi ?",
+                    "ja": "あなたは？",
+                    "ko": "그럼 장리는요?",
+                    "th": "แล้วคุณล่ะ?",
+                    "zh-Hans": "那你呢？",
+                    "zh-Hant": "那你呢？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Bitte vergiss nicht: Ich bin dein „Wegfinder“. Ich bin mit dir in die Berge gegangen, um sicherzustellen, dass du Jinhsi triffst.",
+                "en": "Please don't forget: I am your Wayfinder. I journeyed with you into the mountains to ensure you meet up with Jinhsi.",
+                "es": "Por favor, no lo olvides: soy tu Guía de caminos. Viajé contigo a las montañas para asegurarme de que te encuentres con Jinhsi.",
+                "fr": "N'oubliez pas - je suis ton Guide. Je t'ai accompagné pour assurer ta rencontre avec Jinhsi au Mont Firmament.",
+                "ja": "忘れたの？妾は「案内人」。船を漕ぎ、山に入り、あなたを<ano=コンシ>今汐</ano>の元へ送り届け……",
+                "ko": "잊으셨나요? 전 방랑자의 「안내인」이에요. 같이 한배를 타고 승소산에, 그리고 영윤에게 데려다주는 사람이죠",
+                "th": "อย่าลืมสิ ฉันเป็นผู้ชี้ทางของคุณนะ ฉันเข้ามาในหุบเขากับคุณ ก็เพื่อให้คุณได้พบกับ Jinhsi",
+                "zh-Hans": "别忘了，我是你的“引路人”——我与你同乘一船，伴你入山，将你送至今汐面前……",
+                "zh-Hant": "別忘了，我是你的「引路人」——我與你同乘一船，伴你入山，將你送至今汐面前……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ab diesem Punkt werde ich mich auf euch beide verlassen, um das Hütende zu konfrontieren.",
+                "en": "From this point onward, I will be counting on you both to go and confront the Sentinel.",
+                "es": "A partir de este punto, contaré con {Male=vosotros;Female=vosotras} dos para ir y enfrentar a la Centinela.",
+                "fr": "À partir de ce point, je compte sur vous deux pour aller affronter la Sentinelle.",
+                "ja": "そして、あなたと<ano=コンシ>今汐</ano>に<ano=さいしゅ>歳主</ano>との対面を果たしてもらう……",
+                "ko": "여기서부터는 두 사람이 함께 「용의 별자리」에게 가야 돼요",
+                "th": "ทางข้างหน้าจากนี้ไป ฉันฝากให้คุณทั้งสองไปเผชิญหน้ากับเซนติเนล",
+                "zh-Hans": "自此地往后，便是你与今汐一起，去往「角」的身前。",
+                "zh-Hant": "自此地往後，便是你與今汐一起，去往「角」的身前。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist alles, was ich für dich tun kann.",
+                "en": "This is all I can do for you.",
+                "es": "Esto es todo lo que puedo hacer por ti.",
+                "fr": "C'est tout ce que je peux faire pour vous.",
+                "ja": "この局面を作ることが、妾のしてやれる全て。",
+                "ko": "제가 할 수 있는 일은 이번 대국을 성사시키는 것",
+                "th": "ฉันช่วยคุณได้เท่านี้แหละ",
+                "zh-Hans": "促成这一局，即是我能做的所有。",
+                "zh-Hant": "促成這一局，即是我能做的所有。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin hier, um zu führen, nicht einzugreifen. Der Weg ist deine Wahl.",
+                "en": "I'm here to guide, not intervene. The path is yours to choose.",
+                "es": "Estoy aquí para guiar, no para intervenir. El camino es tuyo para elegir.",
+                "fr": "Je suis ici pour guider, pas pour intervenir. Le chemin est à vous de choisir.",
+                "ja": "案内は干渉ではない。どんな結末が訪れようとも、それはあなたの決めること。",
+                "ko": "간섭이 아닌 그저 안내자일 뿐... 결말이 어디로 갈지는 방랑자의 결정에 달렸어요",
+                "th": "ฉันมาเพื่อนำทาง ไม่ใช่แทรกแซง เส้นทางนี้ขึ้นอยู่กับคุณที่จะตัดสินใจ",
+                "zh-Hans": "引路，而非干涉。结局终会走向何处，还需由你来决定。",
+                "zh-Hant": "引路，而非干涉。 結局終會走向何處，還需由你來決定。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ganz zu schweigen von ... die Fractsidus haben uns ununterbrochen belästigt.",
+                "en": "Not to mention... the Fractsidus has been pestering us non-stop.",
+                "es": "Sin mencionar... los Fractsidus nos han estado atacando sin cesar.",
+                "fr": "Sans parler de... les Fractsidus nous harcèlent continuellement.",
+                "ja": "あと……<ano=フラクトシデス>残星組織</ano>の下っ端がしつこいでしょ？",
+                "ko": "게다가 잔성회가 계속 달라붙어서 거추장스럽기도 하고요",
+                "th": "ยิ่งไปกว่านั้น... แฟรกต์ซิดัสคอยรังควานเราไม่หยุดหย่อน",
+                "zh-Hans": "更何况残星会这一路上纠缠不休，碍手碍脚。",
+                "zh-Hant": "更何况殘星會這一路上糾纏不休，礙手礙腳。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du brauchst jemanden, um sie auf Abstand zu halten.",
+                "en": "You'll need someone to keep them at bay.",
+                "es": "Necesitarás a alguien que los mantenga a raya.",
+                "fr": "Vous aurez besoin de quelqu'un pour les écarter.",
+                "ja": "道を綺麗に保つのも仕事、というわけよ。",
+                "ko": "두 사람이 수호신을 만나러 가는 길은 깨끗해야 하니까요",
+                "th": "ต้องมีคนคอยกันพวกมันไว้",
+                "zh-Hans": "你与今汐去见岁主的路，还是干净些好。",
+                "zh-Hant": "你與今汐去見歲主的路，還是乾淨些好。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Die Fractsidus sind hier für mich.",
+                    "en": "The Fractsidus are here for me.",
+                    "es": "Los Fractsidus están aquí por mí.",
+                    "fr": "Les Fractsidus sont ici pour moi.",
+                    "ja": "尾行されたのも、{Male=俺のせい……;Female=私のせい……}",
+                    "ko": "그들이 계속 따라온 건 저 때문이에요",
+                    "th": "พวกแฟรกต์ซิดัสมาก็เพราะฉัน",
+                    "zh-Hans": "他们跟了一路，是因为我。",
+                    "zh-Hant": "他們跟了一路，是因為我。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, sie haben dich ständig im Auge und sind an jedem deiner Schritte interessiert. Sie können scheinbar nie die Augen von dir lassen.",
+                "en": "Yes, they've been constantly watching you, interested in your every move. They can never seem to take their eyes off of you.",
+                "es": "Sí, han estado constantemente observándote, interesados en cada movimiento tuyo. Parece que nunca pueden quitarte los ojos de encima.",
+                "fr": "Oui, ils t'observent constamment et ils sont intéressés par le moindre de tes gestes. Ses yeux te collent.",
+                "ja": "その通り。あなたこそ、<ano=フラクトシデス>残星組織</ano>の真の狙い。どこで何をしていても、奴らの監視から逃れることはできない。",
+                "ko": "맞아요. 제가 말씀드렸듯이 잔성회가 가장 관심 있는 사람은 방랑자예요. 방랑자가 어디를 가든, 무엇을 하든, 모든 일거수일투족이 그들에게 감시될 거예요",
+                "th": "ใช่แล้ว พวกนั้นเฝ้ามองคุณอยู่ตลอด มันสนใจทุกการเคลื่อนไหวของคุณ จนเหมือนละสายตาจากคุณไม่ได้เลย",
+                "zh-Hans": "不错，我与你提起过，残星会最是对你感兴趣。无论你去哪里、做什么，你的一举一动都逃不过他们的监视。",
+                "zh-Hant": "不錯，我與你提起過，殘星會最是對你感興趣。 無論你去哪裡、做什麼，你的一舉一動都逃不過他們的監視。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Auf jeden Fall bitte mach ohne mich weiter. Was mich betrifft ...",
+                "en": "By all means, please carry on without me. As for myself...",
+                "es": "Por supuesto, continúa sin mí. En cuanto a mí...",
+                "fr": "De toute façon, continuez sans moi, s'il vous plaît. Quant à moi...",
+                "ja": "とにかく。今の<ano=じょうしょうさん>乗霄山</ano>には、あなたが必要だ。ならば妾も……",
+                "ko": "어쨌든, 승소산에는 방랑자가 필요해요. 저는...",
+                "th": "ยังไงก็ตาม โปรดไปต่อโดยไม่มีฉันเถอะนะ ส่วนตัวฉันเอง...",
+                "zh-Hans": "总之，乘霄山这一遭缺你不可，而我——",
+                "zh-Hant": "總之，乘霄山這一遭缺你不可，而我——"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe einen passenderen Ort, um meine Beiträge zu leisten.",
+                "en": "I have a more fitting location to make my contributions from.",
+                "es": "Tengo un lugar más adecuado desde donde hacer mis contribuciones.",
+                "fr": "Je me place dans une position qui me permet d'apporter ma contribution.",
+                "ja": "この盤の、相応しい場所へと赴こう。",
+                "ko": "이 바둑판에서 가장 적합한 곳에 머물러야 하고요",
+                "th": "ก็ควรจะอยู่ในตำแหน่งที่เหมาะสม เพื่อให้การช่วยเหลือจากตรงนั้น",
+                "zh-Hans": "应该停留在这盘棋上，最合适的位置。",
+                "zh-Hant": "應該停留在這盤棋上，最合適的位置。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, „wenn man vom Teufel spricht“ ...",
+                "en": "Oh, \"speak of the devils\"...",
+                "es": "Oh, \"hablando del rey de Roma\"...",
+                "fr": "Oh, « quand on parle du loup… »",
+                "ja": "あら、言ったそばから……",
+                "ko": "아아, 빨리도 왔네요",
+                "th": "โอ้ พูดถึงก็มาเลย...",
+                "zh-Hans": "啊呀，人这就来了。",
+                "zh-Hant": "啊呀，人這就來了。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 125001187,
+          "mapId": 8,
+          "blueprintType": "Monster086",
+          "name": "虹镇_残星会怪物7",
+          "areaId": 1613,
+          "position": {
+            "x": 234576,
+            "y": 308439,
+            "z": -5593
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 114
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001188,
+          "mapId": 8,
+          "blueprintType": "Monster072",
+          "name": "虹镇_残星会怪物6",
+          "areaId": 1613,
+          "position": {
+            "x": 234526,
+            "y": 305480,
+            "z": -5261
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 174
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001189,
+          "mapId": 8,
+          "blueprintType": "Monster072",
+          "name": "虹镇_残星会怪物12",
+          "areaId": 1613,
+          "position": {
+            "x": 236843,
+            "y": 319282,
+            "z": -6290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 95
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001190,
+          "mapId": 8,
+          "blueprintType": "Monster087",
+          "name": "虹镇_残星会怪物8",
+          "areaId": 1613,
+          "position": {
+            "x": 237763,
+            "y": 310123,
+            "z": -5938
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 108
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001191,
+          "mapId": 8,
+          "blueprintType": "Monster072",
+          "name": "虹镇_残星会怪物10",
+          "areaId": 1613,
+          "position": {
+            "x": 241815,
+            "y": 310276,
+            "z": -5449
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001192,
+          "mapId": 8,
+          "blueprintType": "Monster087",
+          "name": "虹镇_残星会怪物9",
+          "areaId": 1613,
+          "position": {
+            "x": 238707,
+            "y": 312096,
+            "z": -5938
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -134
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900014,
+          "mapId": 8,
+          "blueprintType": "Monster087",
+          "name": "虹镇_残星会怪物4",
+          "areaId": 1613,
+          "position": {
+            "x": 234239,
+            "y": 307397,
+            "z": -5468
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 163
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900015,
+          "mapId": 8,
+          "blueprintType": "Monster072",
+          "name": "虹镇_残星会怪物3",
+          "areaId": 1613,
+          "position": {
+            "x": 233664,
+            "y": 299630,
+            "z": -4978
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900016,
+          "mapId": 8,
+          "blueprintType": "Monster087",
+          "name": "虹镇_残星会怪物5",
+          "areaId": 1613,
+          "position": {
+            "x": 230770,
+            "y": 306640,
+            "z": -5261
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900026,
+          "mapId": 8,
+          "blueprintType": "Monster072",
+          "name": "虹镇_残星会巡逻1",
+          "areaId": 1613,
+          "position": {
+            "x": 230339,
+            "y": 304605,
+            "z": -5276
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900028,
+          "mapId": 8,
+          "blueprintType": "Monster069",
+          "name": "虹镇_残星会巡逻2",
+          "areaId": 1613,
+          "position": {
+            "x": 233450,
+            "y": 305990,
+            "z": -5280
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900030,
+          "mapId": 8,
+          "blueprintType": "Monster069",
+          "name": "虹镇_残星会怪物1",
+          "areaId": 1613,
+          "position": {
+            "x": 233900,
+            "y": 301910,
+            "z": -4980
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900031,
+          "mapId": 8,
+          "blueprintType": "Monster087",
+          "name": "虹镇_残星会巡逻3",
+          "areaId": 1613,
+          "position": {
+            "x": 231750,
+            "y": 301785,
+            "z": -4980
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900033,
+          "mapId": 8,
+          "blueprintType": "Monster086",
+          "name": "虹镇_残星会怪物2",
+          "areaId": 1613,
+          "position": {
+            "x": 233433,
+            "y": 304826,
+            "z": -5261
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 132
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900036,
+          "mapId": 8,
+          "blueprintType": "Monster069",
+          "name": "虹镇_残星会巡逻5",
+          "areaId": 1613,
+          "position": {
+            "x": 239666,
+            "y": 310815,
+            "z": -5958
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 162
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900038,
+          "mapId": 8,
+          "blueprintType": "Monster087",
+          "name": "虹镇_残星会巡逻6",
+          "areaId": 1613,
+          "position": {
+            "x": 236238,
+            "y": 318703,
+            "z": -6290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -73
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900040,
+          "mapId": 8,
+          "blueprintType": "Monster086",
+          "name": "虹镇_残星会怪物11",
+          "areaId": 1613,
+          "position": {
+            "x": 236330,
+            "y": 315974,
+            "z": -6290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 127
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 3,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie unhöflich. So begrüßen wir hier keine Leute.",
+                "en": "How rude. This is not how we greet people here.",
+                "es": "Qué descortés. Así no es como saludamos a la gente aquí.",
+                "fr": "Quelle impertinence. Ce n'est pas la bonne manière de saluer.",
+                "ja": "挨拶としては……少し失礼だよね？",
+                "ko": "이런 식으로 인사를 하는 건 예의가 아니죠",
+                "th": "หยาบคาย คนที่นี่เขาไม่ทักทายกันแบบนี้นะ",
+                "zh-Hans": "用这种方式打招呼，可有些不礼貌呢。",
+                "zh-Hant": "用這種方式打招呼，可有些不禮貌呢。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass mich die richtige Etikette demonstrieren.",
+                "en": "Allow me to demonstrate the proper etiquette.",
+                "es": "Permíteme demostrar la etiqueta adecuada.",
+                "fr": "Alors, je me permets de vous montrer la bienséance.",
+                "ja": "ここは一つ教えてやろう……<ano=こうりゅう>瑝瓏</ano>の礼節を！",
+                "ko": "아니면 황룡의 예법을 가르쳐 드려야 하나요?",
+                "th": "ฉันขอสอนมารยาทผู้ดีสักหน่อยเถอะ",
+                "zh-Hans": "不如由我来教教你们瑝珑的礼数。",
+                "zh-Hant": "不如由我來教教你們瑝瓏的禮數。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 999,
+                "name": {
+                  "zh-Hans": "长离"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 3,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Xinyi legt den Chiffrierschlüssel in die Schlüsselschmiede.",
+                "en": "Xinyi places the Cipher Key onto the Keyforge.",
+                "es": "Xinyi colocó la Llave Cifrada en la Forja de Llaves.",
+                "fr": "Xinyi a placé la Clé cryptage sur le Forgeur de la clé.",
+                "ja": "<ano=シンイ>辛夷</ano> が <ano=しんかく>心核</ano>を制御中枢の制御装置の上に置いた。",
+                "ko": "신이가 제어 중추에 다가가, 가지고 있는 「심핵」을 제어 중추 위에 놓았다",
+                "th": "Xinyi วางกุญแจแปรรหัสลงบนเครื่องควบคุมหลัก",
+                "zh-Hans": "辛夷携心核来到控制机枢近旁，并将心核置于机枢之上。",
+                "zh-Hant": "辛夷攜心核來到控制機樞近旁，並將心核置於機樞之上。"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Die Kammer Mianloong ist jetzt offen. Ihr könnt hineingehen.",
+                "en": "The Mianloong Chamber is open now. You can proceed inside.",
+                "es": "La Cámara Mianloong está abierta ahora. Puedes proceder a entrar.",
+                "fr": "La Chambre Mianlong est maintenant ouverte. Vous pouvez y entrer.",
+                "ja": "<ano=りゅうみんてい>龍眠庭</ano>は開かれました。",
+                "ko": "「용의 안식처」가 열렸으니 출발하실 때입니다",
+                "th": "ทางเข้าโถงมังกรนิทราเปิดแล้ว ตอนนี้ก็เข้าไปข้างในได้",
+                "zh-Hans": "眠龙庭既开，是该启程的时候了。",
+                "zh-Hant": "眠龍庭既開，是該啟程的時候了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bevor ihr geht, gibt es etwas Wichtiges, das ich euch sagen muss.",
+                "en": "Before you go, there's something important I need to tell you.",
+                "es": "Antes de que os vayáis, hay algo importante que necesito deciros.",
+                "fr": "Avant de partir, il y a quelque chose d'important que je voulais vous dire.",
+                "ja": "ですが、ここを発つ前に、大事な話があります。",
+                "ko": "다만 그 전에... 미리 알려드려야 할 중요한 일이 있어요",
+                "th": "ก่อนคุณจะไป ฉันมีเรื่องสำคัญจะบอก",
+                "zh-Hans": "不过在二位出发前，我还有一要事相告。",
+                "zh-Hant": "不過在二位出發前，我還有一要事相告。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie die Fractsidus euer Hütende gefangen genommen haben?",
+                    "en": "About how the Fractsidus imprisoned your Sentinel?",
+                    "es": "¿Sobre cómo los Fractsidus encarcelaron a la Centinela?",
+                    "fr": "- À propos de comment les Fractsidus ont emprisonné la Sentinelle ?",
+                    "ja": "残星組織が歳主を監禁した方法？",
+                    "ko": "잔성회가 수호신을 가둔 일에 대해서인가요?",
+                    "th": "เรื่องที่ว่าแฟรกต์ซิดัสขังเซนติเนลไว้ยังไงน่ะเหรอ?",
+                    "zh-Hans": "关于残星会囚禁岁主的事？",
+                    "zh-Hant": "關於殘星會囚禁歲主的事？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Changli hatte recht. Sie haben die Forschung  vom Gremium der Savantae genutzt, um unser Hütende in seiner Ruhekammer einzufangen.",
+                "en": "Changli was right. They used the Court of Savantae's research to trap our Sentinel in its resting chamber.",
+                "es": "Changli tenía razón. Usaron la investigación de la Corte Jiting para atrapar a nuestra Centinela en su cámara de descanso.",
+                "fr": "Changli avait raison. Ils ont utilisé les inventions de la Cour de Savantae pour piéger notre Sentinelle dans sa chambre de repos.",
+                "ja": "はい。<ano=チョウリ>長離</ano>の予想通り、<ano=フラクトシデス>残星組織</ano> は <ano=しょくてい>稷廷</ano>の研究を利用し、<ano=さいしゅ>歳主</ano>を休眠地に閉じ込めたようです。",
+                "ko": "네. 장리의 예상대로 잔성회는 직정의 연구를 이용해 수호신을 「용의 안식처」에 가뒀습니다",
+                "th": "Changli พูดถูก พวกมันใช้งานวิจัยของสภาซาวานเทย์ ขังเซนติเนลไว้ในที่พักของเขา",
+                "zh-Hans": "不错。正如长离所料，残星会的确是借稷廷的研究，将岁主束缚在了休眠地。",
+                "zh-Hant": "不錯。 正如長離所料，殘星會的確是借稷廷的研究，將歲主束縛在了休眠地。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie haben sie das gemacht?",
+                    "en": "How did they do it?",
+                    "es": "¿Cómo lo hicieron?",
+                    "fr": "Mais comment ?",
+                    "ja": "どうやって？",
+                    "ko": "어떻게 한 거죠?",
+                    "th": "ด้วยวิธีการไหน?",
+                    "zh-Hans": "他们是怎么做到的？",
+                    "zh-Hant": "他們是怎麼做到的？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sie haben die Chronosorter benutzt.",
+                "en": "They used the Chronosorters.",
+                "es": "Usaron los Cronoclasificadores.",
+                "fr": "Ils ont utilisé les Chrono-trieurs.",
+                "ja": "「<ano=そりゅうき>遡流器</ano>」を用いたのです。",
+                "ko": "「역류계」를 통해서요",
+                "th": "พวกมันใช้เครื่องทวนเวลา",
+                "zh-Hans": "是「溯流仪」。",
+                "zh-Hant": "是「溯流儀」。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der gefangene Handwerker hat verraten, dass die Fractsidus ein Todeskommando geschickt haben, um den Berg Firmament zu überfallen. Sie hatten einen zweigleisigen Plan …",
+                "en": "Our captured Artificer revealed that the Fractsidus sent a death squad to invade Mt. Firmament. They had a two-fold plan…",
+                "es": "Nuestro Artífice capturado reveló que los Fractsidus enviaron un escuadrón de la muerte para invadir el Monte Firmamento. Tenían un plan de dos partes…",
+                "fr": "Un artisan capturé a révélé que les Fractsidus ont envoyé une escadron de la mort pour envahir le Mont Firmament. Ils ont élaboré un plan à deux volets…",
+                "ja": "捕虜を問い詰めた結果、<ano=フラクトシデス>残星組織</ano>が手先を<ano=じょうしょうさん>乗霄山</ano>に送り込んでいたことが判明しました。",
+                "ko": "저희가 잡은 사이보그 포로의 말에 따르면, 잔성회는 먼저 일부 인원만 승소산에 침입시켰다고 해요. 이는 일석이조의 결과를 가져왔죠",
+                "th": "มนุษย์ดัดแปลงที่เราจับกุมมาสารภาพว่า แฟรกต์ซิดัสส่งหน่วยสังหารมาบุกภูผาสวรรค์ มันวางแผนซ้อนแผน...",
+                "zh-Hans": "照我们俘虏的造匠交代，残星会先是派遣了一批死卒入侵乘霄山，此举意在一箭双雕。",
+                "zh-Hant": "照我們俘虜的造匠交代，殘星會先是派遣了一批死卒入侵乘霄山，此舉意在一箭雙雕。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erstens, den Chronosorter in der Kammer Mianloong zu platzieren, während er noch in Betrieb war; und zweitens, das Hütende zurück zum Berg Firmament zu locken.",
+                "en": "First, to place the Chronosorter in the Mianloong Chamber while it was still operational; and second, to lure the Sentinel back to Mt. Firmament.",
+                "es": "Primero, colocar el Cronoclasificador en la Cámara Mianloong mientras aún estaba operativo; y segundo, atraer a la Centinela de vuelta al Monte Firmamento.",
+                "fr": "D'une part, c'est pour placer le Chrono-trieur dans la Chambre Mianlong quand qu'il fonctionnait ; d'autre part, c'est pour faire piéger la Sentinelle au Mont Firmament.",
+                "ja": "その目的は、既に起動した「<ano=そりゅうき>遡流器</ano>」を<ano=りゅうみんてい>龍眠庭</ano>に設置する機会を得るため。それと、<ano=じょうしょうさん>乗霄山</ano>に戻って来る<ano=さいしゅ>歳主</ano>と接触するため。",
+                "ko": "기회를 틈타 가동 중인 「역류계」를 「용의 안식처」에 놓을 수 있었던 데다가, 눈앞까지 닥쳐온 적에 몰려 수호신이 어쩔 수 없이 승소산으로 돌아와야 했으니까요",
+                "th": "ขั้นแรกคือวางเครื่องทวนเวลาในโถงมังกรนิทรา ตอนที่ยังทำงานได้ตามปกติ และขั้นที่สอง คือล่อให้เซนติเนลกลับไปที่ภูผาสวรรค์",
+                "zh-Hans": "一来，这伙贼人可以趁机将运行中的「溯流仪」置于眠龙庭；二来，外敌当前，岁主不得不返回乘霄山。",
+                "zh-Hant": "一來，這夥賊人可以趁機將運行中的「溯流儀」置於眠龍庭； 二來，外敵當前，歲主不得不返回乘霄山。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl ihr Todeskommando keine Chance gegen das Hütende hatte, brachte es ihn dazu, seine mächtige Resonanzfähigkeit einzusetzen, die dann mit der Energie des Chronosorters kollidierte. Das schadete letztlich ihm selbst.",
+                "en": "Although their death squad was no match for the Sentinel, by forcing its hand, the powerful Resonance Ability of the Sentinel would clash with the energy of the Chronosorter. This would ultimately cause harm to itself.",
+                "es": "Aunque su escuadrón de la muerte no es capaz de enfrentarse a la Centinela, al forzar su mano, la capacidad de resonancia de la Centinela chocaría con la energía del Cronoclasificador. Esto finalmente le causaría daño.",
+                "fr": "Bien que leur escadron ne soit rien pour la Sentinelle, en la forçant à agir, le pouvoir de résonance de la Sentinelle qui est très puissant entrerait en collision avec l'énergie du Chrono-trieur. Cela finirait par lui causer du tort.",
+                "ja": "もちろん、奴ら如きに<ano=さいしゅ>歳主</ano>は倒せません。ですが、少しでも<ano=さいしゅ>歳主</ano>が力を使えば、その共鳴能力は「<ano=そりゅうき>遡流器</ano>」とぶつかり合い、逆に自身を傷つけてしまいます。",
+                "ko": "비록 수호신의 적수는 되지 못했지만, 수호신을 유인하기만 하면, 수호신의 공명 능력과 「역류계」의 에너지가 충돌해 치명상을 입힐 수 있거든요",
+                "th": "ถึงหน่วยสังหารจะไม่ใช่คู่ต่อสู้ของเซนติเนล แต่การบังคับให้เซนติเนลใช้พลังเรโซแนนซ์อันทรงพลัง ปะทะกับพลังงานจากเครื่องทวนเวลา นั่นเท่ากับการทำร้ายตัวเองอย่างรุนแรง",
+                "zh-Hans": "尽管那批死卒绝不是岁主的对手，但只需引诱岁主出招，祂的共鸣能力便会与「溯流仪」的能量冲撞，反伤自身。",
+                "zh-Hant": "儘管那批死卒絕不是歲主的對手，但只需引誘歲主出招，祂的共鳴能力便會與「溯流儀」的能量衝撞，反傷自身。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Würde das wirklich einen Unterschied machen?",
+                    "en": "Would that really make any difference?",
+                    "es": "¿Eso realmente haría alguna diferencia?",
+                    "fr": "Et c'est tout ?",
+                    "ja": "それで歳主を捕らえられる？",
+                    "ko": "그러면 수호신을 가둘 수 있나요?",
+                    "th": "แค่นี้ก็ขังเซนติเนลได้แล้วเหรอ?",
+                    "zh-Hans": "这样就能困住岁主了吗？",
+                    "zh-Hant": "這樣就能困住歲主了嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wie konnten einige Chronosorter das Hütende einfangen?",
+                    "en": "How could some Chronosorters trap the Sentinel?",
+                    "es": "¿Cómo podrían unos Cronoclasificadores atrapar a la Centinela?",
+                    "fr": "Comment les Chrono-trieurs pourraient-ils piéger la Sentinelle ?",
+                    "ja": "「遡流器」が歳主を傷つけた？",
+                    "ko": "「역류계」가 어떻게 수호신의 적수가 될 수 있죠?",
+                    "th": "เครื่องทวนเวลาขังเซนติเนลไว้ได้ยังไง?",
+                    "zh-Hans": "「溯流仪」如何会是岁主的对手？",
+                    "zh-Hant": "「溯流儀」如何會是歲主的對手？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was, wenn die Fractsidus diese Chronosorter modifiziert hätten?",
+                "en": "What if the Fractsidus modified those Chronosorters?",
+                "es": "¿Y si los Fractsidus modificaran esos Cronoclasificadores?",
+                "fr": "Et si les Fractsidus modifiaient ces Chrono-trieurs ?",
+                "ja": "奴らに改造された「<ano=そりゅうき>遡流器</ano>」であれば話は別……",
+                "ko": "잔성회가 특수 개조를 거쳐 만든 「역류계」라면 가능하죠",
+                "th": "แล้วถ้าแฟรกต์ซิดัสดัดแปลงเครื่องทวนเวลาล่ะ?",
+                "zh-Hans": "假如是经过残星会特殊改制的「溯流仪」呢？",
+                "zh-Hant": "假如是經過殘星會特殊改製的「溯流儀」呢？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine ganze Menge von ihnen, an ihre Grenzen gebracht, arbeiteten zusammen, um einen gewaltigen Schlag auszuführen.",
+                "en": "A whole bunch of them, pushed to their limits, all working together to deliver one massive blow.",
+                "es": "Un montón de ellos, llevados a sus límites, todos trabajando juntos para dar un golpe masivo.",
+                "fr": "De nombreux appareils, poussés à leurs limites - tous collaborent pour lancer un coup massif.",
+                "ja": "大量の「<ano=そりゅうき>遡流器</ano>」から放たれた限界以上の一撃によって、<ano=さいしゅ>歳主</ano>は傷を負いました。",
+                "ko": "대량의 에너지를 초과한 「역류계」의 위력을 이용해서 일격에 끝내려 했을 거예요",
+                "th": "ทุกเครื่องทำงานจนถึงขีดจำกัดพร้อมกัน เพื่อที่จะโจมตีครั้งใหญ่ทีเดียว",
+                "zh-Hans": "大量超载的「溯流仪」，发挥出远超自身限度的威力，但求一击。",
+                "zh-Hant": "大量超載的「溯流儀」，發揮出遠超自身限度的威力，但求一擊。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber selbst das war nicht genug, um das Hütende zu besiegen.",
+                "en": "But not even that was enough to take down the Sentinel.",
+                "es": "Pero ni siquiera eso fue suficiente para derribar a la Centinela.",
+                "fr": "Pourtant, même cela n'a pas suffi à ôter les forces de la Sentinelle.",
+                "ja": "もちろん、<ano=さいしゅ>歳主</ano>を苦しめたのはこれだけではありません。",
+                "ko": "물론 수호신을 견제하기에는 역부족이었지만요",
+                "th": "แต่นั่นก็ยังไม่พอที่จะโค่นล้มเซนติเนลได้",
+                "zh-Hans": "当然，这些还远不足以牵制岁主。",
+                "zh-Hant": "當然，這些還遠不足以牽制歲主。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach dem ersten Treffer haben sie modifizierte Fackelwappen in der Kammer Mianloong aufgestellt, um ein spezielles Kraftfeld zusammen mit den Chronosortern zu bilden.",
+                "en": "After the first hit, they set up modified Flare Crests in the Mianloong Chamber to form a special force field along with those Chronosorters.",
+                "es": "Después del primer golpe, instalaron Crestas de Llamaradas modificadas en la Cámara Mianloong para formar un campo de fuerza especial junto con esos Cronoclasificadores.",
+                "fr": "Après le premier coup, ils ont installé des Signes du feu modifiés dans la Chambre Mianlong pour former un champ de force spécial avec les Chrono-trieurs.",
+                "ja": "奴らは「<ano=そりゅうき>遡流器</ano>」と「<ano=ようもん>曜紋</ano>」を用いて、<ano=りゅうみんてい>龍眠庭</ano>の中に<ano=さいしゅ>歳主</ano>の回復を阻害する力場を形成させたのです。",
+                "ko": "수호신에게 상처를 입힌 후, 「역류계」와 함께 특별히 제작되어 배치된 「빛의 무늬」가 「용의 안식처」 내에 특수한 에너지 필드를 형성했어요",
+                "th": "หลังจากการโจมตีครั้งแรก พวกมันติดตั้งตราโชติช่วงที่ดัดแปลงแล้ว ไว้ในโถงมังกรนิทรา สร้างสนามพลังพิเศษควบคู่กับเครื่องทวนเวลา",
+                "zh-Hans": "折伤岁主后，与「溯流仪」一同提前布置好的特制「曜纹」在眠龙庭内形成了一种特殊力场。",
+                "zh-Hant": "折傷歲主後，與「溯流儀」一同提前佈置好的特製「曜紋」在眠龍庭內形成了一種特殊力場。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es hielt das Hütende davon ab, seine Energie nachzufüllen, und schränkte schließlich seine Bewegung und Wahrnehmung ein.",
+                "en": "It prevented the Sentinel from replenishing energy and eventually restricted its movement and perception.",
+                "es": "Esto impidió que la Centinela recobrara su energía y finalmente limitó su movimiento y percepción.",
+                "fr": "Cela a empêché la Sentinelle de restaurer son énergie et a fini par restreindre son mouvement et sa perception.",
+                "ja": "その力場のせいで<ano=さいしゅ>歳主</ano>は段々と力を失い、遂にあらゆる行動が制限されるようになってしまいました。",
+                "ko": "이 에너지 필드로 인해 수호신은 「용의 안식처」를 통해 에너지를 보충할 수 없었고, 결국 수호신의 행동과 감응에 제한을 일으켰죠",
+                "th": "มันขัดขวางเซนติเนลไม่ให้ฟื้นฟูพลังงาน และสุดท้ายก็จำกัดการเคลื่อนไหวและการรับรู้ของเขา",
+                "zh-Hans": "正是这一力场，致使岁主无法借助眠龙庭来补充能量，最终限制了岁主的行动与感应。",
+                "zh-Hant": "正是這一力場，致使歲主無法借助眠龍庭來補充能量，最終限制了歲主的行動與感應。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also ... Wir müssen zuerst das Hütende aus diesem Kraftfeld befreien.",
+                "en": "So... We must free the Sentinel from that force field first.",
+                "es": "Entonces... Debemos liberar a la Centinela de ese campo de fuerza primero.",
+                "fr": "Alors... Nous devons d'abord libérer la Sentinelle de ce champ de force.",
+                "ja": "つまり、まず力場の影響を除き……",
+                "ko": "그 말은, 저희가 먼저 수호신을 필드에서 벗어나게 해야 한다는 건가요...?",
+                "th": "ถ้างั้น... เราก็ต้องช่วยเซนติเนลออกมาจากสนามพลังก่อน",
+                "zh-Hans": "也就是，我们要先设法让岁主摆脱力场……",
+                "zh-Hant": "也就是，我們要先設法讓歲主擺脫力場……"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Diese Aufgabe ist komplizierter, als sie klingt.",
+                "en": "...It would be a task more complicated than it sounds.",
+                "es": "... Es una tarea más complicada de lo que suena.",
+                "fr": "...Ce serait une tâche plus compliquée qu'il n'y paraît.",
+                "ja": "……他にも問題はあります。",
+                "ko": "간단해 보이는 일이지만, 사실은 그렇지 않아요",
+                "th": "...เป็นเรื่องที่พูดง่ายแต่ทำยากนะ",
+                "zh-Hans": "……此事看似简单，实则不然。",
+                "zh-Hant": "……此事看似簡單，實則不然。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Leute von Hongzhen leben schon seit Generationen mit dem Hütenden. Wir können normalerweise erkennen, ob es ihm gut geht oder nicht.",
+                "en": "The people of Hongzhen have lived with the Sentinel for generations. We can usually tell if it's in good shape or not.",
+                "es": "La gente de Villarcoíris ha vivido con la Centinela durante generaciones. Normalmente podemos decir si está en buen estado o no.",
+                "fr": "Les résidents de Hongzhen ont vécu avec la Sentinelle pendant des générations. La plupart du temps, nous sommes au courant de son état.",
+                "ja": "<ano=こうちん>虹鎮</ano>の民は<ano=さいしゅ>歳主</ano>と日々を共にしてきました。だから、<ano=さいしゅ>歳主</ano>の状態を多少なりとも感じることができます。",
+                "ko": "홍진 마을 사람들과 수호신은 늘 함께 지냈어요. 수호신의 상태가 좋은지 나쁜지... 정확하지는 않더라도 어느 정도 갈피는 잡을 수 있었죠",
+                "th": "ชาวหงเจิ้นใช้ชีวิตร่วมกับเซนติเนลมาหลายชั่วอายุคน พวกเราดูออกว่าเขามีอาการปกติหรือไม่",
+                "zh-Hans": "虹镇人与岁主朝夕共处，岁主的近况好或不好，虹镇人即便不知全貌，也多少能瞧出些眉目。",
+                "zh-Hant": "虹鎮人與歲主朝夕共處，歲主的近况好或不好，虹鎮人即便不知全貌，也多少能瞧出些眉目。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber jetzt wollen die Fractsidus das Hütende einfangen ... Sie werden nicht einfach am Berg Firmament haltmachen. Frau Magistratin, ich bin mir sicher, Sie sind nicht nur wegen des Hütenden hier ...",
+                "en": "But now, the Fractsidus want to capture the Sentinel... They won't just stop at Mt. Firmament. Madam Magistrate, I'm sure you didn't come here just for the Sentinel...",
+                "es": "Pero ahora, los Fractsidus quieren capturar a la Centinela... No se detendrán solo en el Monte Firmamento. Señora Magistrada, sé que no viniste aquí solo por la Centinela...",
+                "fr": "Mais maintenant, comme les Fractsidus ont tendu un piège à la Sentinelle... Ils ne s'arrêteront pas qu'au Mont Firmament. Madame la Magistrate, je suis certaine que vous n'êtes pas venue ici que pour la Sentinelle...",
+                "ja": "そんな<ano=さいしゅ>歳主</ano>に手を出した奴らの計画が、<ano=じょうしょうさん>乗霄山</ano>だけに留まるとは考えにくい……2人がここへ来たのも、何か訳があってのことではないのですか？",
+                "ko": "잔성회가 수호신을 노린 이상 승소산만 노리진 않을 거예요. 영윤 대인이 이번에 승소산에 온 것도 단지 눈앞의 일을 해결하기 위해서만은 아니겠죠...",
+                "th": "แต่ตอนนี้ แฟรกต์ซิดัสต้องการกักขังเซนติเนล... พวกมันไม่หยุดแค่ที่ภูผาสวรรค์แน่ ท่านเจ้าเมือง ฉันเชื่อว่าคุณคงไม่ได้มาที่นี่เพียงเพราะเรื่องเซนติเนล...",
+                "zh-Hans": "残星会既然意在岁主，就不可能只觊觎乘霄山这方寸之地。令尹此番来乘霄山，应当不只为解决眼前事吧……",
+                "zh-Hant": "殘星會既然意在歲主，就不可能只覬覦乘霄山這方寸之地。 令尹此番來乘霄山，應當不只為解決眼前事吧……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte erzählen Sie uns, was Sie wissen, Frau Magistratin.",
+                "en": "Please tell us what you know, Madam Magistrate.",
+                "es": "Por favor, cuéntanos lo que sabes, Señora Magistrada.",
+                "fr": "Veuillez nous dire ce que vous savez, Madame la Magistrate.",
+                "ja": "<ano=こうちん>虹鎮</ano>の民のため……全てを教えてください。",
+                "ko": "저와 홍진 마을 사람들은, 영윤의 솔직한 의도와 계획을 듣고 싶군요",
+                "th": "ได้โปรดชี้แนะพวกเราด้วยเถอะ ท่านเจ้าเมือง",
+                "zh-Hans": "我与虹镇人，希望令尹能与我们交个底。",
+                "zh-Hant": "我與虹鎮人，希望令尹能與我們交個底。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja, ich werde dir alles erzählen.",
+                "en": "Yes, I will tell you everything.",
+                "es": "Sí, te lo contaré todo.",
+                "fr": "Oui, je vais tout vous dire.",
+                "ja": "はい。全てを、伝えましょう。",
+                "ko": "좋아요. 빠짐없이 모두 말할게요",
+                "th": "ได้ ฉันจะบอกคุณทุกอย่างเลย",
+                "zh-Hans": "好，今汐言无不尽。",
+                "zh-Hant": "好，今汐言無不盡。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jinhsi hat Xinyi über ihre Entdeckungen am Pass des Wahrheitssuchers und ihre Theorie über die Situation informiert. Dann teilte sie ihre aktuellen Pläne mit ihr.",
+                "en": "Jinhsi updates Xinyi on her findings at Truthseeker's Pass and shares her theory about the situation. She then outlines her current plans.",
+                "es": "Jinhsi le informó a Xinyi sobre sus descubrimientos en el Paso de la Verdad y su teoría sobre la situación. Luego compartió sus planes con ella.",
+                "fr": "Jinhsi a informé Xinyi de ses découvertes au Passage veritas et de sa théorie sur la situation. Elle a ensuite partagé ses plans avec elle.",
+                "ja": "<ano=コンシ>今汐</ano>が<ano=こうてんぜき>叩天関</ano>で知ったこと、そして、自分の予想と決断を辛夷に教えた。",
+                "ko": "금희가 고천관에서 발견한 일과 자신의 추측과 결정에 대해 신이에게 이야기한다",
+                "th": "Jinhsi บอกข้อมูลที่เธอพบในด่านคำนับสวรรค์ให้ Xinyi ฟัง และเล่าทฤษฎีที่เธอคิดเกี่ยวกับสถานการณ์ที่เกิดขึ้น จากนั้นก็อธิบายแผนการที่เธอมีในขณะนี้",
+                "zh-Hans": "今汐将在叩天关的发现、以及自己的猜测与决定告知辛夷。",
+                "zh-Hant": "今汐將在叩天關的發現、以及自己的猜測與決定告知辛夷。"
+              },
+              "id": 20
+            },
+            {
+              "text": {
+                "de": "Also ist das Hütende tatsächlich verletzt und es wird immer schlimmer ... Die Fractsidus griffen an, während er noch nicht geheilt war. Ihre Pläne sind wie immer hinterhältig.",
+                "en": "So the Sentinel is actually injured, and it's been getting worse... The Fractsidus attacked while it hasn't healed yet. Their plans are devious as always.",
+                "es": "Así que la Centinela está realmente herida, y ha estado empeorando... Los Fractsidus atacaron mientras aún no se había curado. Sus planes son siempre astutos.",
+                "fr": "Donc, la Sentinelle est blessée et ça s'aggrave... Les Fractsidus ont attaqué avant qu'elle ne soit guérie. Comme toujours, ils ont un plan maléfique.",
+                "ja": "<ano=さいしゅ>歳主</ano>は元々酷い傷を負っていた……？そこを<ano=フラクトシデス>残星組織</ano>は狙ったのですね……",
+                "ko": "수호신께서 다치셨고, 사태는 이미 여기까지 커졌죠... 치명상이 낫지 않은 상태에서 또 상처를 입었으니, 잔성회의 계략은 저희에게 치명타를 날린 거나 다름없어요...",
+                "th": "ที่แท้เซนติเนลก็ได้รับบาดเจ็บและอาการแย่ลงเรื่อยๆ... พวกแฟรกต์ซิดัสโจมตีตอนที่เขายังไม่หายดี แผนการของพวกมันเจ้าเล่ห์เหมือนเดิมเลย",
+                "zh-Hans": "岁主竟有伤在身，而且已经严重到了这种地步……旧疾未愈又添新伤，残星会这一计，几乎直击了命门……",
+                "zh-Hant": "歲主竟有傷在身，而且已經嚴重到了這種地步……舊疾未愈又添新傷，殘星會這一計，幾乎直擊了命門……"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frau Magistratin, Sie haben diesen Plan bereits so weit ausgearbeitet.",
+                "en": "Madam Magistrate, you've already laid out this plan so far.",
+                "es": "Señora Magistrada, ya has llevado adelante este plan hasta ahora.",
+                "fr": "Mais Mme la Magistrate, et vous avez préparé un plan pour tout cela.",
+                "ja": "それに……あなたがそんな事まで考えていたとは……",
+                "ko": "영윤 대인... 여기까지 생각하고 있었군요...",
+                "th": "ท่านเจ้าเมือง คุณวางแผนออกมาได้ขนาดนี้แล้ว",
+                "zh-Hans": "而令尹你……居然想到了这一步……",
+                "zh-Hant": "而令尹你……居然想到了這一步……"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist immer eine Herausforderung, die Absichten des Hütenden zu entschlüsseln, aber damals gab es viele Theorien darüber im Rathaus. Ich konnte nicht begreifen, warum es so große Anstrengungen unternommen hat, dich vom Berg Firmament zu holen und dich innerhalb unserer Mauern großzuziehen.",
+                "en": "It's always a challenge to decipher the Sentinel's intentions, but there were many theories about it in City Hall at the time. I couldn't fathom why it went through such great lengths to retrieve you from Mt. Firmament and raise you within our walls.",
+                "es": "Siempre es un desafío descifrar las intenciones de la Centinela, pero había muchas teorías al respecto en el Ayuntamiento en aquel momento. No podía entender por qué hizo tantos esfuerzos para sacarte del Monte Firmamento y criarte dentro de nuestros muros.",
+                "fr": "Il est toujours difficile de déchiffrer les intentions de la Sentinelle. A l'époque, de nombreuses théories répandent dans l'Hôtel de la ville. Je n'arrivais pas à comprendre pourquoi elle avait fait tant d'efforts pour vous faire quitter le Mont Firmament et vous élever à l'intérieur de nos murs.",
+                "ja": "確かに<ano=さいしゅ>歳主</ano>は人智を超えた存在です。でも、あなたを<ano=じょうしょうさん>乗霄山</ano>から<ano=へんてい>辺庭</ano>に送った理由は、私を含め誰もが理解できませんでした。",
+                "ko": "수호신의 마음은 헤아리기 어렵긴 하지만, 과거 수호신이 왜 어린 영윤 대인을 승소산에서 데려와 저희에게 키우도록 했는지, 변정 내에서 여러 추측이 무성했습니다",
+                "th": "การตีความเจตนาของเซนติเนลเป็นเรื่องที่ทำได้ยาก ตอนนั้นที่ว่าการเมืองก็มีหลายทฤษฎีเกี่ยวกับเขา ฉันไม่เข้าใจเลยว่าทำไมเขาต้องพยายามขนาดนั้น ที่จะพาคุณมาจากภูผาสวรรค์ และนำมาเลี้ยงดูในเมืองของเรา",
+                "zh-Hans": "岁主心意难测，但当年边庭内对此却也多有猜测。不然，我实在想不通，岁主为何要煞费苦心将你从乘霄山带回边庭抚养。",
+                "zh-Hant": "歲主心意難測，但當年邊庭內對此卻也多有猜測。 不然，我實在想不通，歲主為何要煞費苦心將你從乘霄山帶回邊庭撫養。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber jetzt, wo ich darüber nachdenke, hat das Hütende vielleicht in dir das Potenzial gesehen, eines Tages das Zeitprogramm wiederherzustellen und das Überleben der Bewohner von Jinzhou zu sichern.",
+                "en": "But now that I reflect on it, perhaps the Sentinel saw in you the potential to one day restore the Temporal Program and ensure the survival of Jinzhou's inhabitants.",
+                "es": "Pero ahora que lo reflexiono, quizás la Centinela vio en ti el potencial para algún día restaurar el Programa Temporal y asegurar la supervivencia de los habitantes de Jinzhou.",
+                "fr": "En y réfléchissant maintenant, peut-être que la Sentinelle voyait en vous le potentiel de restaurer un jour la Formule du temps et d'assurer la survie des habitants de Jinzhou.",
+                "ja": "今考えてみれば……あなたを継承者として選んだのは、いずれ時の秘法を修復し、<ano=こんしゅう>今州</ano>を存続させるためだったからなのでしょう。",
+                "ko": "지금 생각해 보니, 그분이 영윤 대인을 후계자로 선택한 이유는 언젠가 시간 제어법을 바로잡고 금주의 문명이 오래 이어지길 바라셨기 때문이었군요",
+                "th": "แต่พอลองคิดดูอีกที เซนติเนลอาจจะเห็นศักยภาพในตัวคุณ ว่าสักวันหนึ่งคุณจะได้รับโปรแกรมแห่งกาลเวลากลับคืนมา และพาให้ชาวจินโจวมีชีวิตอยู่รอดปลอดภัย",
+                "zh-Hans": "现在想来，祂之所以选定你为继承人，正是为了有朝一日能补全时序之法，保今州文明存续。",
+                "zh-Hant": "現在想來，祂之所以選定你為繼承人，正是為了有朝一日能補全時序之法，保今州文明存續。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich hätte nur nie gedacht ... dass du bereit sein würdest, diese Prophezeiung zu erfüllen ...",
+                "en": "I just never thought.. You'd be willing to follow through with that prophecy…",
+                "es": "Pero nunca pensé... que estarías dispuesta a seguir con esa profecía...",
+                "fr": "Mais je n'aurais jamais pensé... que vous seriez prête à suivre son oracle…",
+                "ja": "ただ、私は予想外でした……あなたがその予言を受け入れるなんて……",
+                "ko": "하지만... 당신이 그 예언을 기꺼이 따르리라고는 미처 생각하지 못했습니다...",
+                "th": "ฉันไม่เคยนึกเลยว่า... คุณจะยอมทำตามคำพยากรณ์นั้นจริงๆ...",
+                "zh-Hans": "只是我没想到……你竟愿遵从那则预言......",
+                "zh-Hant": "只是我沒想到……你竟願遵從那則預言……"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier auf diesem Berg habe ich das Hütende zum ersten Mal getroffen.",
+                "en": "It was here on this very mountain that I first encountered the Sentinel.",
+                "es": "Fue aquí en esta misma montaña donde encontré por primera vez a la Centinela.",
+                "fr": "C'est ici, sur cette montagne, que j'ai rencontré la Sentinelle pour la première fois.",
+                "ja": "<ano=さいしゅ>歳主</ano>と初めて対面したのも、確か<ano=じょうしょうさん>乗霄山</ano>ですね。",
+                "ko": "저와 수호신이 처음 만난 곳은 아마 승소산이였을 거예요",
+                "th": "ฉันพบกับเซนติเนลครั้งแรกก็ที่ภูเขาแห่งนี้นี่แหละ",
+                "zh-Hans": "我与岁主第一次见面，应当就是在乘霄山吧。",
+                "zh-Hant": "我與歲主第一次見面，應當就是在乘霄山吧。"
+              },
+              "id": 26,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Damals war ich zu jung, um mich an irgendetwas zu erinnern. Selbst das Bild vom Berg Firmament ist mir entfallen.",
+                "en": "Back then, I was too young to remember anything. Even the image of Mt. Firmament has slipped from my mind.",
+                "es": "En aquel entonces, era demasiado joven para recordar algo. Incluso la imagen del Monte Firmamento ha desaparecido de mi mente.",
+                "fr": "À l'époque, j'étais trop petite pour rappeler ce qui s'est passé. Même l'image du Mont Firmament a glissé de mon esprit.",
+                "ja": "あの頃の余は幼くて……何も覚えていません。",
+                "ko": "저는 그때 너무 어렸으니까... 기억나는 건 아무것도 없어요. 심지어 승소산의 모습조차 잊어버렸고요",
+                "th": "ตอนนั้นฉันยังเด็กมากจนจำอะไรไม่ได้ แม้แต่ภาพของภูผาสวรรค์ ฉันยังจำไม่ได้เลยด้วยซ้ำ",
+                "zh-Hans": "可惜我那时太小了……什么也记不得，甚至连乘霄山的模样都忘记了。",
+                "zh-Hant": "可惜我那時太小了……什麼也記不得，甚至連乘霄山的模樣都忘記了。"
+              },
+              "id": 27,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber dieses Mal ... Sobald ich am Fuße vom Berg Firmament stand, hat mich eine Woge der Wiedererkennung durchströmt. Lange vergrabene Erinnerungen tauchten plötzlich mit erstaunlicher Klarheit wieder auf.",
+                "en": "But this time... As soon as I stood at the base of Mt. Firmament, I felt a wave of recognition wash over me. Memories long buried resurfaced with sudden clarity.",
+                "es": "Pero esta vez... Tan pronto como me situé al pie del Monte Firmamento, sentí una oleada de reconocimiento recorriendo mi ser. Recuerdos largamente enterrados emergieron con una claridad repentina.",
+                "fr": "Mais cette fois... Dès que je me suis tenue au pied du Mont Firmament, j'ai ressenti une sorte d'éclaircissement qui m'illumine. Des souvenirs longtemps enfouis ont ressurgi avec une clarté soudaine.",
+                "ja": "けれど、こうして<ano=じょうしょうさん>乗霄山</ano>に帰ってみれば……目に映る全てが、懐かしく感じます。灰が被った記憶が、一瞬で呼び覚まされたような気分です。",
+                "ko": "하지만 이번에 승소산에 오니까 주변이 모두 익숙하다고 느껴졌어요. 기억 한켠에 묻혀 있던 추억이 한꺼번에 떠올랐죠",
+                "th": "แต่ครั้งนี้... เมื่อฉันมายืนอยู่ที่เชิงเขาภูผาสวรรค์ ความรู้สึกคุ้นเคยก็ถาโถมเข้ามา ความทรงจำที่ฝังไว้เนิ่นนานกลับชัดเจนขึ้นมาทันที",
+                "zh-Hans": "但我这次来乘霄山，却觉得周围的一切都那么熟悉。好像被埋藏在记忆深处的回忆，一下子涌了上来。",
+                "zh-Hant": "但我這次來乘霄山，卻覺得周圍的一切都那麼熟悉。 好像被埋藏在記憶深處的回憶，一下子湧了上來。"
+              },
+              "id": 28,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lady Xinyi ... Mein Leben, mein alles ist seit meiner Geburt mit unserem Hütenden verbunden.",
+                "en": "Lady Xinyi... I was born with my life, my everything connected to our Sentinel.",
+                "es": "Señora Xinyi... Nací con mi vida, mi todo, conectado a nuestra Centinela.",
+                "fr": "Madame Xinyi... Dès ma naissance, ma vie, mon tout est lié à notre Sentinelle.",
+                "ja": "<ano=シンイ>辛夷</ano>様。余は、生まれた時から<ano=さいしゅ>歳主</ano>と命を共にしました。",
+                "ko": "신이 대인, 제가 태어났을 때부터 저는 수호신의 생명과 연결되어 있었어요",
+                "th": "ท่าน Xinyi... ชีวิตของฉันที่เกิดมานี้ ทุกสิ่งมีความเกี่ยวโยงกับเซนติเนลของเรา",
+                "zh-Hans": "辛夷大人，自我诞生之时，我就与岁主命蒂相连。",
+                "zh-Hant": "辛夷大人，自我誕生之時，我就與歲主命蒂相連。"
+              },
+              "id": 29,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber meine Pflicht als sein Designierter Resonator ist nicht der einzige Grund für meine Entscheidung.",
+                "en": "But my duty as its Appointed Resonator is not the only reason for my decision.",
+                "es": "Pero mi deber como su Resonadora Designada no es la única razón de mi decisión.",
+                "fr": "Mais mon devoir en tant que résonatrice désignée n'est pas la seule raison de ma décision.",
+                "ja": "しかし……余の決断は「<ano=さいしゅ>歳主</ano>共鳴者」として下したのではありません。",
+                "ko": "제 선택은 「수호신의 공명자」라는 신분에서 나온 게 아니에요",
+                "th": "แต่หน้าที่ในฐานะเรโซเนเตอร์ที่ได้รับมอบหมาย ไม่ได้เป็นสาเหตุเดียวที่ทำให้ฉันตัดสินใจ",
+                "zh-Hans": "但我的选择，却并不是出于“岁主共鸣者”这个身份。",
+                "zh-Hant": "但我的選擇，卻並不是出於「歲主共鳴者」這個身份。"
+              },
+              "id": 30,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Ich folge dem Herzen meines jüngeren Selbst, bevor ich Jinhsi wurde: Das Mädchen, das früher vor Freude lachte, als sie den Schnee vom Berg Firmament auf ihrem Gesicht spürte.",
+                "en": "...I'm following the heart of my younger self before I became Jinhsi: The girl who used to laugh with pure joy as she felt the snow from Mt. Firmament on her face.",
+                "es": "... Estoy siguiendo el corazón de mi yo más joven antes de convertirme en Jinhsi: La niña que solía reír con pura alegría al sentir la nieve del Monte Firmamento en su rostro.",
+                "fr": "... Je suis le cœur de ma jeune moi avant que je ne devienne Jinhsi. Celui de la fille qui riait de joie en sentant la neige du Mont Firmament tombe sur son visage.",
+                "ja": "それは「<ano=シ>汐</ano>」の願い。あの時の<ano=じょうしょうさん>乗霄山</ano>の雪で心躍った「私」の心からの願いです。",
+                "ko": "그건 저 금희의 소원, 승소산의 눈꽃이 뺨에 내려오면 기뻐서 입을 다물지 못하던 어린아이의 마음에서 나온 거예요",
+                "th": "...ฉันกำลังทำตามหัวใจตัวเองในวัยเด็ก ก่อนจะกลายมาเป็น Jinhsi... เด็กหญิงที่เคยหัวเราะอย่างสดใสและบริสุทธิ์ เมื่อหิมะจากภูผาสวรรค์สัมผัสใบหน้าของเธอ",
+                "zh-Hans": "……那是出于汐的心愿，是出于乘霄山的雪落到脸颊上就会开心得合不拢嘴的小孩子的内心。",
+                "zh-Hant": "……那是出於汐的心願，是出於乘霄山的雪落到臉頰上就會開心得合不攏嘴的小孩子的內心。"
+              },
+              "id": 31,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin ein Samen, geboren auf dem Berg Firmament, vom Wind in jede Ecke von Jinzhou getragen. Aber jetzt bin ich an meinen Ursprungsort zurückgekehrt.",
+                "en": "I am a seed, born on Mt. Firmament, carried by the wind to every corner of Jinzhou. But now, I have returned to my place of origin.",
+                "es": "Soy una semilla, nacida en el Monte Firmamento, llevada por el viento a cada rincón de Jinzhou. Pero ahora, he regresado a mi lugar de origen.",
+                "fr": "Je suis une graine, née au Mont Firmament, portée par le vent à chaque coin de Jinzhou. Mais maintenant, je suis revenue à mon pays natal.",
+                "ja": "<ano=じょうしょうさん>乗霄山</ano>に産み落とされた小さな種が、あちこちへと流され……ようやく最初の場所に着いた……",
+                "ko": "승소산에서 「탄생」한 작은 씨앗이, 바다를 건너 바람과 함께 금주 곳곳을 누비다 이제야 다시 원점으로 돌아온 거예요",
+                "th": "ฉันคือเมล็ดพันธุ์ที่มีต้นกำเนิดจากภูผาสวรรค์ ถูกลมพัดพาไปยังทุกทั่วมุมของจินโจว แต่ตอนนี้ ฉันได้กลับมาสู่ต้นกำเนิดของตัวเองแล้ว",
+                "zh-Hans": "我这粒“诞生”在乘霄山的小小种子，飘洋过海随风去到了今州各处，如今，又回到了起点。",
+                "zh-Hant": "我這粒「誕生」在乘霄山的小小種子，飄洋過海隨風去到了今州各處，如今，又回到了起點。"
+              },
+              "id": 32,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist Zeit für mich, Wurzeln zu schlagen und zu etwas Größerem zu werden ...",
+                "en": "It's time for me to take root and grow into something greater...",
+                "es": "Es hora de echar raíces y crecer hasta convertirme en algo más grande...",
+                "fr": "Il est temps pour moi de prendre racine et de grandir…",
+                "ja": "……芽生えの時が来たのです。",
+                "ko": "이제 이 씨앗이 뿌리를 내리고 싹을 틔울 때가 된 것뿐이죠...",
+                "th": "ถึงเวลาแล้วที่ฉันจะหยั่งรากลงและเจริญงอกงาม...",
+                "zh-Hans": "是时候让这粒种子生根发芽了……",
+                "zh-Hant": "是時候讓這粒種子生根發芽了……"
+              },
+              "id": 33,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*seufz* egal, was passiert oder welche Entscheidungen du triffst, denk immer daran: Die Leute von Hongzhen werden immer hinter dir stehen.",
+                "en": "Sigh... No matter what happens or what choices you make, please remember: the people of Hongzhen will always have your back.",
+                "es": "... No importa lo que suceda o qué elecciones tomes, por favor recuerda: la gente de Villarcoíris siempre te apoyará.",
+                "fr": "Ben... Peu importe ce qui arrive ou les choix que vous faites, souvenez-vous : les gens de Hongzhen seront toujours à vos côtés.",
+                "ja": "忘れないでください。あなたがどのような選択をし、どのような結末を迎えようとも、私も<ano=こうちん>虹鎮</ano>の民もあなたの味方です。",
+                "ko": "알겠습니다. 마지막 결과가 어떻든, 대인이 어떤 선택을 하든, 홍진 마을과 홍진 마을의 모든 사람들은 항상 대인과 함께 있다는 것만 알아주셨으면 좋겠어요",
+                "th": "เฮ้อ... ไม่ว่าจะเกิดอะไรขึ้น หรือคุณจะตัดสินใจอย่างไร โปรดจำไว้ว่า ผู้คนในหงเจิ้น จะอยู่เคียงข้างคุณเสมอ",
+                "zh-Hans": "罢了，无论最后是何种结果，你又做何抉择，我需要你明白，虹镇还有虹镇的百姓，始终与你站在一起。",
+                "zh-Hant": "罷了，無論最後是何種結果，你又做何抉擇，我需要你明白，虹鎮還有虹鎮的百姓，始終與你站在一起。"
+              },
+              "id": 34,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Berg Firmament stagniert seit Ewigkeiten. Vielleicht brauchen wir einen plötzlichen Blitzschlag, um den Nebel der Ungewissheit zu durchbrechen, der schon viel zu lange über uns hing.",
+                "en": "Mt. Firmament has been stagnant for eternity. Perhaps a sudden crack of lightning is what we need to break through the fog of uncertainty that has lingered over us for far too long.",
+                "es": "El Monte Firmamento ha permanecido estancado por la eternidad. Quizás un repentino golpe de rayo es lo que necesitamos para romper la niebla de la incertidumbre que nos ha envuelto durante mucho tiempo.",
+                "fr": "Le Mont Firmament stagne pour l'éternité. Peut-être qu'un soudain éclair est ce dont nous avons besoin pour percer le brouillard d'incertitude, qui nous a enveloppé depuis longtemps.",
+                "ja": "確かに、この<ano=じょうしょうさん>乗霄山</ano>には変化が無さ過ぎました……立ち込める霧を払うには、天をも貫く雷が必要なのかもしれません。",
+                "ko": "승소산은 오랜 세월 동안 멈춰 있었어요... 어쩌면, 우리가 이 상황을 헤쳐 나가기 위해서는 하늘을 뒤흔들 천둥이 필요할지도 모르겠군요",
+                "th": "ภูผาสวรรค์นิ่งสงบอยู่ชั่วนิรันดร์ เราอาจต้องการสายฟ้าที่ผ่าลงกะทันหัน เพื่อทะลวงม่านหมอกแห่งความไม่แน่นอนที่ปกคลุมเรามานานเกินไปแล้ว",
+                "zh-Hans": "乘霄山已经太久没有过变化了……或许，我们真的需要一道贯天长雷，来拨开乘霄山这漫天云雾。",
+                "zh-Hant": "乘霄山已經太久沒有過變化了……或許，我們真的需要一道貫天長雷，來撥開乘霄山這漫天雲霧。"
+              },
+              "id": 35,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verlasse die Kammer",
+        "en": "Leave the Chamber",
+        "es": "Abandona la cámara.",
+        "fr": "Quitter la chambre",
+        "ja": "密室を出る",
+        "ko": "밀실 나가기",
+        "th": "ออกจากโถง",
+        "zh-Hans": "离开密室",
+        "zh-Hant": "離開密室"
+      },
+      "entities": [
+        {
+          "entityId": 125001311,
+          "mapId": 8,
+          "blueprintType": "Quest001",
+          "name": "虹镇_地下室出口（常驻）",
+          "areaId": 1613,
+          "position": {
+            "x": 236569,
+            "y": 301522,
+            "z": -7910
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900064,
+          "mapId": 8,
+          "blueprintType": "NPC400322",
+          "name": "虹镇_辛夷3",
+          "areaId": 1613,
+          "position": {
+            "x": 238154,
+            "y": 303791,
+            "z": -8146
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 168
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 4,
+          "stateId": 8,
+          "talks": [
+            {
+              "text": {
+                "de": "Sobald du durch Hongzhen gegangen bist, halte Ausschau nach einer Höhle an der nördlichen Klippe. Die führt dich zu einer Abkürzung zur Kammer Mianloong.",
+                "en": "Once you pass through Hongzhen, keep your eyes open for a cave on the northern cliff. That will lead you to a shortcut towards Mianloong Chamber.",
+                "es": "Una vez que pases por Villarcoíris, mantén los ojos abiertos para ver una cueva en el acantilado del norte. Te llevará a un atajo hacia la Cámara Mianloong.",
+                "fr": "Une fois que vous aurez traversé Hongzhen, gardez les yeux ouverts pour trouver une grotte sur la falaise nord. Cela vous mènera à un raccourci vers la Chambre Mianlong.",
+                "ja": "<ano=こうちん>虹鎮</ano>を出て北へ行くと、<ano=りゅうみんてい>龍眠庭</ano>への抜け道となる洞窟があります。",
+                "ko": "홍진 마을을 지나 북쪽 절벽으로 가면 동굴이 있어요. 그곳이 바로 「용의 안식처」로 가는 지름길이에요",
+                "th": "เมื่อคุณผ่านหงเจิ้นไปแล้ว จงมองหาถ้ำที่หน้าผาทางทิศเหนือ มันจะนำคุณไปยังทางลัดเข้าสู่โถงมังกรนิทรา",
+                "zh-Hans": "穿过虹镇，北面的山崖上有一处洞窟，那是通向眠龙庭的捷径。",
+                "zh-Hant": "穿過虹鎮，北面的山崖上有一處洞窟，那是通向眠龍庭的捷徑。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Ort befindet sich direkt unter der ikonischen, Loong-förmigen Klippe vom Berg Firmament. Ich wünsche euch beiden viel Glück.",
+                "en": "The place is directly under Mt. Firmament's iconic Loong-shaped cliff. I wish you two the best of luck.",
+                "es": "El lugar está directamente bajo el icónico acantilado en forma de Loong del Monte Firmamento. Les deseo la mejor de las suertes.",
+                "fr": "Elle se situe exactement sous la falaise en forme de <ano=dragon>Loong</ano>, emblématique du Mont Firmament. Bonne chance à vous deux.",
+                "ja": "<ano=りゅうみんてい>龍眠庭</ano>の場所は、龍を象った柱の真下です。2人とも、くれぐれも気を付けて。",
+                "ko": "「용의 안식처」는 승소산 용 모양의 산기둥 아래쪽에 있어요. 두 사람의 여정이 순조롭기를 빌겠습니다",
+                "th": "ที่นั่นอยู่ข้างใต้หน้าผารูปมังกรที่เป็นสัญลักษณ์ของภูผาสวรรค์พอดี ขอให้พวกคุณโชคดีนะ",
+                "zh-Hans": "眠龙庭就在乘霄山龙形山柱的下方。愿二位此行，诸事顺遂。",
+                "zh-Hant": "眠龍庭就在乘霄山龍形山柱的下方。 願二位此行，諸事順遂。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 558,
+                "name": {
+                  "zh-Hans": "辛夷"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zur Zentralkammer",
+        "en": "Head to the Central Chamber",
+        "es": "Dirígete a la Cámara Central.",
+        "fr": "Se rendre à la Chambre centrale",
+        "ja": "中枢石室に向かう",
+        "ko": "중추 지하실로 이동",
+        "th": "ไปที่โถงกลาง",
+        "zh-Hans": "前往中枢窟室",
+        "zh-Hant": "前往中樞窟室"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 3,
+          "stateId": 11,
+          "talks": [
+            {
+              "text": {
+                "de": "Der Chiffrierschlüssel ...",
+                "en": "The Cipher Key...",
+                "es": "La Llave Cifrada...",
+                "fr": "La Clé cryptage...",
+                "ja": "これが、<ano=しんかく>心核</ano>……",
+                "ko": "심핵이에요...",
+                "th": "กุญแจแปรรหัส...",
+                "zh-Hans": "是心核……",
+                "zh-Hant": "是心核……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zum Zentralen Saal",
+        "en": "Head to the Central Chamber",
+        "es": "Dirígete a la Cámara Central.",
+        "fr": "Se rendre à la Chambre centrale",
+        "ja": "中枢石室に向かう",
+        "ko": "중추 지하실로 이동",
+        "th": "ไปที่โถงกลาง",
+        "zh-Hans": "前往中枢窟室",
+        "zh-Hant": "前往中樞窟室"
+      },
+      "entities": [
+        {
+          "entityId": 125001248,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "虹镇_后门控制器",
+          "areaId": 1613,
+          "position": {
+            "x": 228766,
+            "y": 309271,
+            "z": -8244
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900048,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "岩壁遗迹_心核控制器",
+          "areaId": 1601,
+          "position": {
+            "x": 222953,
+            "y": 349678,
+            "z": -7130
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900069,
+          "mapId": 8,
+          "blueprintType": "Gameplay329",
+          "name": "虹镇_瀑布空气墙",
+          "areaId": 1613,
+          "position": {
+            "x": 238040,
+            "y": 303890,
+            "z": -5310
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 118,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zum Zentralen Saal",
+        "en": "Head to the Central Chamber",
+        "es": "Dirígete a la Cámara Central.",
+        "fr": "Se rendre à la Chambre centrale",
+        "ja": "中枢石室に向かう",
+        "ko": "중추 지하실로 이동",
+        "th": "ไปที่โถงกลาง",
+        "zh-Hans": "前往中枢窟室",
+        "zh-Hant": "前往中樞窟室"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 122,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Kehre nach Hongzhen zurück",
+        "en": "Return to Hongzhen",
+        "es": "Regresa a Villarcoíris.",
+        "fr": "Revenir à Hongzhen",
+        "ja": "虹鎮に戻る",
+        "ko": "홍진 마을로 돌아가기",
+        "th": "กลับไปยังหงเจิ้น",
+        "zh-Hans": "返回虹镇",
+        "zh-Hant": "返回虹鎮"
+      },
+      "entities": [
+        {
+          "entityId": 125900105,
+          "mapId": 8,
+          "blueprintType": "TsEntity_157_0350_秉戈",
+          "name": "虹镇_秉戈2",
+          "areaId": 1613,
+          "position": {
+            "x": 227535,
+            "y": 309707,
+            "z": -8244
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 116
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 3,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Changli ...",
+                "en": "Changli...",
+                "es": "Changli...",
+                "fr": "Changli...",
+                "ja": "<ano=チョウリ>長離</ano>は……",
+                "ko": "장리는...",
+                "th": "Changli...",
+                "zh-Hans": "长离她……",
+                "zh-Hant": "長離她……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese Handwerker sind kein Grund zur Sorge. {PlayerName}, mach dir keine Sorgen. Changli hat ihre Pläne.",
+                "en": "Those Artificers are nothing to worry about. {PlayerName}, don't worry. Changli has her plans.",
+                "es": "Esos artífices no son de preocuparse. {PlayerName}, no te preocupes. Changli tiene sus planes.",
+                "fr": "Ces Artisans ne sont pas un problème. {PlayerName}, ne t'inquiète pas. Changli a ses plans.",
+                "ja": "大した相手ではありません。先生のことだから……勝算があるはず……",
+                "ko": "사이보그는 두려워할 대상이 못돼요. 그러니 걱정 마세요. 장리 선생은 다 계획이 있을 테니까",
+                "th": "มนุษย์ดัดแปลงพวกนั้นไม่เป็นปัญหาหรอก ไม่ต้องกังวลนะ {PlayerName} Changli วางแผนไว้หมดแล้ว",
+                "zh-Hans": "那些造匠不足为惧，{PlayerName}不必担忧，老师这么做定有她的打算。",
+                "zh-Hant": "那些造匠不足為懼，{PlayerName}不必擔憂，老師這麼做定有她的打算。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich glaube nicht, dass wir auf dem Weg noch auf weitere Hinterhalte stoßen werden.",
+                "en": "I don't believe we will run into more ambushes on the way.",
+                "es": "No creo que nos encontremos con más emboscadas en el camino.",
+                "fr": "Je suis certaine que nous ne rencontrerons plus d'embuscades à partir du moment.",
+                "ja": "ここから先は、奴らに襲られることもないでしょう。",
+                "ko": "앞으로 남은 여정 동안, 방해하는 사람은 없을 거예요",
+                "th": "ฉันไม่คิดว่าเราจะโดนซุ่มโจมตีระหว่างทางอีกหรอก",
+                "zh-Hans": "想必在接下来的路程中，不会再有伏寇阻扰。",
+                "zh-Hant": "想必在接下來的路程中，不會再有伏寇阻擾。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 3,
+          "stateId": 10,
+          "talks": [
+            {
+              "text": {
+                "de": "Es ist Frau Magistratin! Sie ist zurück!",
+                "en": "It's Madam Magistrate! She's back!",
+                "es": "¡Es la Señora Magistrada! ¡Ha vuelto!",
+                "fr": "C'est Mme la Magistrate ! Elle est de retour !",
+                "ja": "<ano=こんれいいん>今令尹</ano>様です！<ano=こんれいいん>今令尹</ano>様がお戻りになられました！",
+                "ko": "영윤 대인이에요! 영윤 대인이 돌아오셨어요!",
+                "th": "นั่นท่านเจ้าเมือง! เธอกลับมาแล้ว!",
+                "zh-Hans": "是今令尹，今令尹他们回来了！",
+                "zh-Hant": "是今令尹，今令尹他們回來了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1343,
+                "name": {
+                  "zh-Hans": "秉戈"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss Lady Xinyi Bescheid sagen!",
+                "en": "I must go tell Lady Xinyi!",
+                "es": "¡Debo ir a decirle a la Señora Xinyi!",
+                "fr": "Je vais le dire à Mme Xinyi !",
+                "ja": "すぐ<ano=シンイ>辛夷</ano>様に報告します！",
+                "ko": "가서 신이 대인께 전달하겠습니다!",
+                "th": "ต้องรีบไปบอกท่าน Xinyi!",
+                "zh-Hans": "我去告诉辛夷大人！",
+                "zh-Hant": "我去告訴辛夷大人！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1343,
+                "name": {
+                  "zh-Hans": "秉戈"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "parentId": 2,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 52,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Mianloong-Kammer",
+        "en": "Head to Mianloong Chamber",
+        "es": "Dirígete a la Cámara Mianloong.",
+        "fr": "Se rendre à la Chambre Mianlong",
+        "ja": "龍眠庭に向かう",
+        "ko": "용의 안식처로 이동하세요",
+        "th": "ไปยังโถงมังกรนิทรา",
+        "zh-Hans": "前往眠龙庭",
+        "zh-Hant": "前往眠龍庭"
+      },
+      "entities": [
+        {
+          "entityId": 125001308,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "虹镇_经象圜阵摆放（任务）",
+          "areaId": 1613,
+          "position": {
+            "x": 236476,
+            "y": 304417,
+            "z": -5208
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900115,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "虹镇_经象圜阵摆放（场景）",
+          "areaId": 1613,
+          "position": {
+            "x": 236476,
+            "y": 304267,
+            "z": -5208
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 4,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Jinhsi, bisher ist alles über das Hütende nur unsere Vermutungen.",
+                "en": "Jinhsi, so far, everything we know about the Sentinel is still just speculation.",
+                "es": "Jinhsi, hasta ahora, todo sobre la Centinela sigue siendo solo nuestra especulación.",
+                "fr": "Jinhsi, pour le moment, tout ce que nous savons à propos de la Sentinelle n'est que pure spéculation.",
+                "ja": "<ano=コンシ>今汐</ano>。これまでの<ano=さいしゅ>歳主</ano>に関する情報は、ただの推論に過ぎない。",
+                "ko": "금희, 지금까지 수호신에 관한 일은 모두 저희의 추론일 뿐이에요",
+                "th": "Jinhsi ทุกอย่างที่เรารู้เกี่ยวกับเซนติเนล ยังเป็นแค่การคาดเดานะ",
+                "zh-Hans": "今汐，到目前为止，关于岁主的事，都还只是我们的推论。",
+                "zh-Hant": "今汐，到目前為止，關於歲主的事，都還只是我們的推論。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast recht. Aber meine schwindende Resonanzfähigkeit und meine Verbindung zum Hütenden lassen mir keine andere Wahl, als diese Theorien zu erforschen ...",
+                "en": "You are right. But my weakening Resonance Ability and my connection to the Sentinel leave me no choice but to explore these theories...",
+                "es": "Tienes razón. Pero mi debilitada habilidad de resonancia y mi conexión con la Centinela no me dejan más opción que explorar estas teorías...",
+                "fr": "Tu as raison. Mais mon pouvoir de résonance et ma connexion avec la Sentinelle qui s'affaiblissent ne me laissent aucune option que d'explorer ces théories…",
+                "ja": "その通りです。でも、余と<ano=さいしゅ>歳主</ano>の繋がりも、失いつつある共鳴能力も、確かな証拠……",
+                "ko": "방랑자의 말이 맞아요. 하지만 저와 수호신 사이의 감응, 그리고 끊임없이 흐르는 공명 능력에는 추론을 넘어선 뭔가가 있어요...",
+                "th": "คุณพูดถูก แต่พลังเรโซแนนซ์ของฉันที่อ่อนแอลง และสายสัมพันธ์ของฉันกับเซนติเนล ทำให้ฉันไม่มีทางเลือกอื่น นอกจากต้องสำรวจไปตามทฤษฎี...",
+                "zh-Hans": "你说的没错。可我与岁主间的感应，还有不断流逝的共鸣能力，容不得我不去相信……",
+                "zh-Hant": "你說的沒錯。 可我與歲主間的感應，還有不斷流逝的共鳴能力，容不得我不去相信……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ob es Fakt oder Fiktion ist, Wahrheit oder Lüge ...",
+                "en": "Whether it's fact or fiction, truth or a lie...",
+                "es": "Ya sea un hecho o una ficción, verdad o mentira...",
+                "fr": "Que ce soit un fait ou une fiction, une vérité ou un mensonge...",
+                "ja": "嘘も実も……",
+                "ko": "진짜든 가짜든, 맞든 틀리든...",
+                "th": "ไม่ว่ามันจะเป็นข้อเท็จจริง หรือเรื่องแต่ง ความจริง หรือความเท็จ...",
+                "zh-Hans": "不管是真是假，是虚是实……",
+                "zh-Hant": "不管是真是假，是虛是實……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss mich dem Hütenden stellen und es selbst sehen.",
+                "en": "I have to confront the Sentinel and see for myself.",
+                "es": "Tengo que enfrentarme a la Centinela y verlo por mí misma.",
+                "fr": "Je dois affronter la Sentinelle et témoigner de mes propres yeux.",
+                "ja": "余は、<ano=さいしゅ>歳主</ano>に聞かなければいけません。",
+                "ko": "수호신 앞에 가서 직접 확인하겠어요",
+                "th": "ฉันต้องเผชิญหน้ากับเซนติเนล และดูด้วยตาตัวเอง",
+                "zh-Hans": "我都会到岁主面前一一求证。",
+                "zh-Hant": "我都會到歲主面前一一求證。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zur Mianloong Kammer",
+        "en": "Head to Mianloong Chamber",
+        "es": "Dirígete a la Cámara Mianloong.",
+        "fr": "Se rendre à la Chambre Mianlong",
+        "ja": "龍眠庭に向かう",
+        "ko": "용의 안식처로 이동하세요",
+        "th": "ไปยังโถงมังกรนิทรา",
+        "zh-Hans": "前往眠龙庭",
+        "zh-Hant": "前往眠龍庭"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 54,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zur Mianloong Kammer",
+        "en": "Head to Mianloong Chamber",
+        "es": "Dirígete a la Cámara Mianloong.",
+        "fr": "Se rendre à la Chambre Mianlong",
+        "ja": "龍眠庭に向かう",
+        "ko": "용의 안식처로 이동하세요",
+        "th": "ไปยังห้โถงมังกรนิทรา",
+        "zh-Hans": "前往眠龙庭",
+        "zh-Hant": "前往眠龍庭"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 55,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Mianloong-Kammer",
+        "en": "Head to Mianloong Chamber",
+        "es": "Dirígete a la Cámara Mianloong.",
+        "fr": "Se rendre à la Chambre Mianlong",
+        "ja": "龍眠庭に向かう",
+        "ko": "용의 안식처로 이동하세요",
+        "th": "ไปยังโถงมังกรนิทรา",
+        "zh-Hans": "前往眠龙庭",
+        "zh-Hant": "前往眠龍庭"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 4,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Kammer Mianloong sollte tief in der Höhle sein.",
+                "en": "The Mianloong Chamber should be deep in the cave.",
+                "es": "La Cámara Mianloong debería estar en lo profundo de la cueva.",
+                "fr": "La Chambre Mianlong devrait être au fond de la grotte.",
+                "ja": "<ano=りゅうみんてい>龍眠庭</ano>はこの洞窟の深部にあるはず。",
+                "ko": "「용의 안식처」는 동굴 깊숙한 곳에 있을 거예요",
+                "th": "โถงมังกรนิทราน่าจะอยู่ลึกเข้าไปในถ้ำ",
+                "zh-Hans": "眠龙庭应该就在洞窟深处。",
+                "zh-Hant": "眠龍庭應該就在洞窟深處。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Los geht’s.",
+                "en": "Let's go.",
+                "es": "Vamos.",
+                "fr": "Allons-y.",
+                "ja": "一緒に進みましょう。",
+                "ko": "같이 들어가 봐요",
+                "th": "ไปกันเลย",
+                "zh-Hans": "一起进去吧。",
+                "zh-Hant": "一起進去吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zur Mianloong Kammer",
+        "en": "Head to Mianloong Chamber",
+        "es": "Dirígete a la Cámara Mianloong.",
+        "fr": "Se rendre à la Chambre Mianlong",
+        "ja": "龍眠庭に向かう",
+        "ko": "용의 안식처로 이동하세요",
+        "th": "ไปยังโถงมังกรนิทรา",
+        "zh-Hans": "前往眠龙庭",
+        "zh-Hant": "前往眠龍庭"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 58,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe weiter",
+        "en": "Continue onward",
+        "es": "Continúa",
+        "fr": "Continuer à avancer",
+        "ja": "前に進む",
+        "ko": "계속 전진하기",
+        "th": "เดินหน้าต่อไป",
+        "zh-Hans": "继续前进",
+        "zh-Hant": "繼續前進"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 59,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe weiter",
+        "en": "Continue onward",
+        "es": "Continúa",
+        "fr": "Continuer à avancer",
+        "ja": "前に進む",
+        "ko": "계속 전진하기",
+        "th": "เดินหน้าต่อไป",
+        "zh-Hans": "继续前进",
+        "zh-Hant": "繼續前進"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 60,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe weiter",
+        "en": "Continue onward",
+        "es": "Continúa",
+        "fr": "Continuer à avancer",
+        "ja": "前に進む",
+        "ko": "계속 전진하기",
+        "th": "เดินหน้าต่อไป",
+        "zh-Hans": "继续前进",
+        "zh-Hant": "繼續前進"
+      },
+      "entities": [
+        {
+          "entityId": 125900266,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "眠龙庭_封印控制器",
+          "areaId": 1642,
+          "position": {
+            "x": 273306,
+            "y": 293696,
+            "z": -12824
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 61,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Untersuche die Hibernationskapsel",
+        "en": "Inspect the Hibernation Pod",
+        "es": "Inspecciona la cápsula de hibernación.",
+        "fr": "Inspecter le Pod de sommeil",
+        "ja": "装置を調べる",
+        "ko": "용의 안식처 확인하기",
+        "th": "ตรวจสอบรังจำศีล",
+        "zh-Hans": "查看眠龙庭舱体",
+        "zh-Hant": "查看眠龍庭艙體"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 62,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich kann die Präsenz des Hütenden spüren, aber er antwortet nicht ...",
+                "en": "I can feel the Sentinel's presence inside, but it's not responding...",
+                "es": "Puedo sentir la presencia de la Centinela en el interior, pero no responde...",
+                "fr": "Je peux sentir la présence de la Sentinelle à l'intérieur de la chambre, mais elle ne répond pas...",
+                "ja": "<ano=さいしゅ>歳主</ano>がここにいるのは確かですが……返事は聞こえませんね。",
+                "ko": "수호신이 여기 계신 것이 느껴져요... 그런데 응답은 들리지 않네요",
+                "th": "ฉันสัมผัสได้ถึงเซนติเนลด้านใน แต่เขาไม่ตอบกลับมาเลย...",
+                "zh-Hans": "我能感受到岁主就在此处……但我听不到祂的回应。",
+                "zh-Hant": "我能感受到歲主就在此處……但我聽不到祂的回應。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "parentId": 85,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 4,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "...",
+                "en": "...",
+                "es": "...",
+                "fr": "...",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Das muss die Kammer Mianloong sein.",
+                "en": "...This must be the Mianloong Chamber.",
+                "es": "... Esta debe ser la Cámara Mianloong.",
+                "fr": "...Cela doit être la Chambre Mianlong.",
+                "ja": "ここが……<ano=りゅうみんてい>龍眠庭</ano>。",
+                "ko": "이곳이 「용의 안식처」예요",
+                "th": "...นี่คงเป็นโถงมังกรนิทรา",
+                "zh-Hans": "……这里就是眠龙庭。",
+                "zh-Hant": "……這裡就是眠龍庭。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir sollten jetzt dem Hütenden helfen, sich von den Fesseln des Fackelwappens zu befreien.",
+                "en": "We should now help the Sentinel break free from the Flare Crest's binds.",
+                "es": "Ahora deberíamos ayudar a la Centinela a liberarse de los lazos de la Cresta de Llamarada.",
+                "fr": "Nous devrions aider la Sentinelle à se libérer des restrictions imposées par les Signes du feu.",
+                "ja": "まずは、「<ano=ようもん>曜紋</ano>」による拘束を解除しないと。",
+                "ko": "계획한 대로, 수호신이 「빛의 무늬」가 만들어낸 에너지 필드를 벗어날 수 있도록 도와야 돼요",
+                "th": "ตอนนี้เราควรช่วยปล่อยเซนติเนลออกจากพันธนาการของตราโชติช่วงก่อน",
+                "zh-Hans": "按照计划，我们要设法帮助岁主摆脱「曜纹」造成的力场。",
+                "zh-Hant": "按照計劃，我們要設法幫助歲主擺脫「曜紋」造成的力場。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Die Wasseroberfläche bewegt sich überhaupt nicht.",
+                    "en": "The water surface isn't moving at all.",
+                    "es": "La superficie del agua no se mueve en absoluto.",
+                    "fr": "La surface de l'eau ne bouge pas du tout.",
+                    "ja": "この水は……止まったみたい。",
+                    "ko": "이 물은 마치 정지된 것 같아요",
+                    "th": "ผิวน้ำไม่ขยับแม้แต่นิดเลย",
+                    "zh-Hans": "这水，像是被定住了。",
+                    "zh-Hant": "這水，像是被定住了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Die Chronosorter in der Nähe haben möglicherweise dieses Gewässer in der Zeit eingefroren, oder es könnte durch die Zeitstörungen hier verursacht worden sein.",
+                "en": "Chronosorters nearby may have frozen this body of water in time, or it could've been caused by the Temporal Disruptions here.",
+                "es": "Los Cronoclasificadores cercanos pueden haber congelado este cuerpo de agua en el tiempo, o podría ser causado por las Interrupciones Temporales aquí.",
+                "fr": "Les Chrono-trieurs à proximité ont probablement figé cette étendue d'eau dans le temps. Ou cela pourrait être dû aux Perturbations temporelles.",
+                "ja": "近くの「<ano=そりゅうき>遡流器</ano>」が水を止めた……もしくは、時間の乱れによる異常……",
+                "ko": "아마도 근처의 「역류계」나, 승소산의 뒤틀린 시간 때문에 정체되었을 거예요",
+                "th": "เครื่องทวนเวลาแถวๆ นี้อาจทำให้ผิวน้ำหยุดนิ่ง หรืออาจจะเกิดจากความปั่นป่วนแห่งกาลเวลาก็ได้",
+                "zh-Hans": "也许是附近的「溯流仪」凝滞了潭水，又或者这样的景象是乘霄山的时间乱流所致。",
+                "zh-Hant": "也許是附近的「溯流儀」凝滯了潭水，又或者這樣的景象是乘霄山的時間亂流所致。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, wir können es zu unserem Vorteil nutzen ... Wir können jetzt über das Wasser laufen.",
+                "en": "Either way, we can use it to our advantage... We can walk over the water now.",
+                "es": "De cualquier manera, podemos usarlo a nuestro favor... Ahora podemos caminar sobre el agua.",
+                "fr": "De toute façon, nous pouvons l'utiliser à notre avantage... Nous pouvons littéralement « marcher sur l'eau ».",
+                "ja": "どちらにせよ、これで水面の上を歩けそうですね。",
+                "ko": "중요한 건, 이 연못의 물을 지름길 삼아 수면 위를 걸어갈 수 있다는 거죠",
+                "th": "ไม่ว่าจะเกิดขึ้นจากอะไร ยังไงเราก็ใช้ประโยชน์จากมันได้... ตอนนี้เราเดินบนน้ำได้แล้ว",
+                "zh-Hans": "重要的是——我们可以以这片潭水为捷径，从水面上走过去。",
+                "zh-Hant": "重要的是——我們可以以這片潭水為捷徑，從水面上走過去。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Wir sind zu weit weg, um zu sehen, was drinnen vor sich geht.",
+                "en": "...We are too far away to see what's going on inside.",
+                "es": "... Estamos demasiado lejos para ver lo que está pasando adentro.",
+                "fr": "…On est trop loin pour savoir ce qui se passe à l'intérieur.",
+                "ja": "……ここからだと遠すぎて見えません。",
+                "ko": "여기는 너무 멀어서 상황이 잘 보이지 않아요",
+                "th": "...พวกเราอยู่ไกลเกินกว่าจะมองเห็นข้างในนั้น",
+                "zh-Hans": "……这里太远了，看不清状况。",
+                "zh-Hant": "……這裡太遠了，看不清狀況。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, lass uns gehen. Ich brauche noch mehr Informationen, um zu entscheiden, was wir als Nächstes tun sollten.",
+                "en": "{PlayerName}, let's go. I still need more information to determine what we should do next.",
+                "es": "{PlayerName}, vamos. Todavía necesito más información para determinar qué deberíamos hacer a continuación.",
+                "fr": "{PlayerName}, allons-y. J'ai encore besoin de plus d'informations pour déterminer ce que nous ferons après.",
+                "ja": "{PlayerName}、向こうへ行きましょう。次の一手を決めるには、もっと情報が必要です。",
+                "ko": "{PlayerName}, 우선 건너편으로 가죠. 정보를 파악해야만 다음에 무엇을 할지 판단할 수 있으니까요",
+                "th": "{PlayerName} ไปกันเถอะ ฉันยังต้องการข้อมูลเพิ่ม เพื่อจะตัดสินใจว่าเราควรทำอะไรต่อ",
+                "zh-Hans": "{PlayerName}，我们到对面去吧。我需要更多信息，才好判断我们下一步该做些什么。",
+                "zh-Hant": "{PlayerName}，我們到對面去吧。 我需要更多資訊，才好判斷我們下一步該做些什麼。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 186,
+                "name": {
+                  "en": "San'hua",
+                  "ja": "散華",
+                  "zh-Hans": "今汐"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "parentId": 135,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 138,
+      "parentId": 135,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 143,
+      "parentId": 136,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 132,
+      "parentId": 138,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Betritt die Kammer",
+        "en": "Enter the Secret Chamber",
+        "es": "Entra a la cámara",
+        "fr": "Entrer dans la chambre de l'abri",
+        "ja": "密室に入る",
+        "ko": "밀실로 진입하세요",
+        "th": "เข้าไปในโถงลับ",
+        "zh-Hans": "进入密室",
+        "zh-Hant": "進入密室"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 137,
+      "parentId": 143,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 125900105,
+          "mapId": 8,
+          "blueprintType": "TsEntity_157_0350_秉戈",
+          "name": "虹镇_秉戈2",
+          "areaId": 1613,
+          "position": {
+            "x": 227535,
+            "y": 309707,
+            "z": -8244
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 116
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 145,
+      "parentId": 143,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 125900105,
+          "mapId": 8,
+          "blueprintType": "TsEntity_157_0350_秉戈",
+          "name": "虹镇_秉戈2",
+          "areaId": 1613,
+          "position": {
+            "x": 227535,
+            "y": 309707,
+            "z": -8244
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 116
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900270,
+          "mapId": 8,
+          "blueprintType": "SimpleNPC491066",
+          "name": "虹镇_生态_成女",
+          "areaId": 1613,
+          "position": {
+            "x": 235221,
+            "y": 304173,
+            "z": -8153
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 136
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125900271,
+          "mapId": 8,
+          "blueprintType": "SimpleNPC492111",
+          "name": "虹镇_生态_成男",
+          "areaId": 1613,
+          "position": {
+            "x": 235478,
+            "y": 304599,
+            "z": -8153
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -147
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 12,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Lady Xinyi, die Magistratin ist zurückgekehrt.",
+                "en": "Lady Xinyi, Madam Magistrate has returned.",
+                "es": "Señora Xinyi, la señora Magistrada ha regresado.",
+                "fr": "Mme Xinyi, Madame la Magistrate est de retour.",
+                "ja": "辛夷様、令尹様がお戻りになりました。",
+                "ko": "신이 대인, 영윤 대인 돌아왔어요",
+                "th": "ท่าน Xinyi ท่านเจ้าเมืองกลับมาแล้วครับ",
+                "zh-Hans": "辛夷大人，令尹回来了。",
+                "zh-Hant": "辛夷大人，令尹回來了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 12,
+          "stateId": 9,
+          "talks": [
+            {
+              "text": {
+                "de": "Es ist mir eine Ehre, in Ihrer Anwesenheit zu sein, Magistrat Jinhsi.",
+                "en": "Honored to be in your presence, Magistrate Jinhsi.",
+                "es": "Es un honor estar en tu presencia, Magistrada Jinhsi.",
+                "fr": "Honorée d'être en votre présence, Magistrate Jinhsi.",
+                "ja": "令尹様。",
+                "ko": "영윤 대인",
+                "th": "เป็นเกียรติอย่างยิ่งที่ได้พบท่าน เจ้าเมือง Jinhsi",
+                "zh-Hans": "令尹大人。",
+                "zh-Hant": "令尹大人。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_1_1_乘宵山主线",
+          "flowIndex": 12,
+          "stateId": 8,
+          "talks": [
+            {
+              "text": {
+                "de": "Grüße, Frau Magistrat.",
+                "en": "Greetings, Madam Magistrate.",
+                "es": "Saludos, Señora Magistrada.",
+                "fr": "Salutations, Madame.",
+                "ja": "令尹。",
+                "ko": "영윤",
+                "th": "คารวะ ท่านเจ้าเมือง",
+                "zh-Hans": "令尹。",
+                "zh-Hant": "令尹。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

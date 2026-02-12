@@ -1,0 +1,151 @@
+{
+  "id": 106800005,
+  "key": "荒石高地",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Hochland Desorock",
+    "en": "Tales of the Past and Present: Desorock Highland",
+    "es": "Crónicas de antaño y hoy: Tierras altas de Desoroca",
+    "fr": "Histoires du passé : Hauts des roches",
+    "ja": "古今幾多の物語・石崩れの高地",
+    "ko": "고대의 이야기·잡석 고지",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: ที่ราบสูงเดโซร็อก",
+    "zh-Hans": "古今多少故事·荒石高地",
+    "zh-Hant": "古今多少故事·荒石高地"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese Datenchips. Bring sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these Data Chips. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estos Chips de Datos. Ve y entrégaselos.",
+    "fr": "Le conteur de Jinzhou cherche des puces de données abandonnées. Donnez-lui ceux que vous avez collectés dans la Plaine de Nor-Chute.",
+    "ja": "今州城の講談師は古い書籍の残巻に興味があるようなので、石崩れの高地で集めた古い書籍の残巻を彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼이 낡은 서적 잔권에 관심이 많은 것 같으니 잡석 고지에서 수집한 서적 잔본을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมชิปข้อมูลเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧书残卷很感兴趣，把这些于荒石高地收集到的旧书残卷交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊書殘卷很感興趣，把這些於荒石高地收集到的舊書殘卷交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler die „Zerrissenen Seiten aus dem Hochland Desorock“",
+        "en": "Deliver \"Torn Pages from Desorock Highland\" to the Storyteller",
+        "es": "Entrega las \"Páginas Desgarradas de las Tierras altas de Desoroca\" al Narrador",
+        "fr": "Donner le Fragment du livre des Hauts des roches au conteur",
+        "ja": "「石崩れの高地の書籍の残巻」を講談師に渡す",
+        "ko": "「잡석 고지 낡은 서적 잔본」을 이야기꾼에게 제출",
+        "th": "ส่ง \"หน้ากระดาษที่ฉีกขาดจากที่ราบสูงเดโซร็อก\" ให้นักเล่าเรื่อง",
+        "zh-Hans": "将「荒石高地书籍残卷」交给说书人",
+        "zh-Hant": "將「荒石高地書籍殘卷」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh... Das müssen Briefe zwischen einem tapferen Soldaten und seiner Familie sein.",
+                "en": "Oh... They must be letters between a brave soldier and his family.",
+                "es": "Oh... Deben ser cartas entre un valiente soldado y su familia.",
+                "fr": "Il s'agit probablement de lettres de famille écrites à un guerrier.",
+                "ja": "これは、ある兵士に宛てた家書のはず。",
+                "ko": "어느 전사의 가족 편지가 적혀 있네요",
+                "th": "อ้อ... คงเป็นจดหมายที่ทหารกล้าและครอบครัวเขียนหากัน",
+                "zh-Hans": "这里应该都是写给某个战士的家书。",
+                "zh-Hant": "這裡應該都是寫給某個戰士的家書。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Düsternis lauert in den Himmeln, ein Szenario infernaler Verwüstung...",
+                "en": "Gloom lurks upon the skies, a scene of infernal carnage...",
+                "es": "La penumbra se cierne sobre los cielos, una escena de carnicería infernal...",
+                "fr": "Le nuage noir détruit la ville, le sable rouge enterre les loyaux...",
+                "ja": "黒雲が城を襲い、赤砂が忠誠の骨を埋める……",
+                "ko": "검은 구름이 성을 덮치고, 붉은 모래가 영웅들의 뼈를 묻으니...",
+                "th": "ความมืดแผ่คลุมนภา ภาพการสังหารผลาญชีวิต...",
+                "zh-Hans": "黑云摧连城，赤沙埋忠骨……",
+                "zh-Hant": "黑雲摧連城，赤沙埋忠骨……"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich entschuldige mich für die plötzliche Pause. Es erinnert mich an eine epische Schlacht in der Vergangenheit. Ich werde eine Zeit finden, um diese Geschichte mit dir zu teilen.",
+                "en": "I'm sorry for the sudden pause. It reminds me of an epic battle in the past. I shall pick a time to share this story with you.",
+                "es": "Lamento la pausa repentina. Me recuerda una batalla épica en el pasado. Debería escoger un momento para compartir esta historia contigo.",
+                "fr": "Excusez-moi. Cela me rappelle le passé. Quand le moment sera venu, je te raconterai la guerre que Huanglong a vécue.",
+                "ja": "すまない、昔のことを思い出した。いつか、過去に瑝瓏で起こった戦争について話そう。",
+                "ko": "미안해요... 옛일이 자꾸 생각나네요. 언젠가 시간이 되면 황룡이 겪었던 그 전쟁에 대해 이야기해 줄게요",
+                "th": "ขอโทษที่จู่ๆ ก็เงียบไป เห็นแล้วนึกถึงมหาสงครามในอดีตน่ะ ไว้ฉันจะหาเวลามาเล่าเรื่องนี้ให้ฟัง",
+                "zh-Hans": "抱歉，这让我想到些往事。等什么时候，我给你讲讲过去瑝珑经历的那场战争吧。",
+                "zh-Hant": "抱歉，這讓我想到些往事。 等什麼時候，我給你講講過去瑝瓏經歷的那場戰爭吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

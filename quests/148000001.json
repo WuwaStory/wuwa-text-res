@@ -1,0 +1,897 @@
+{
+  "id": 148000001,
+  "key": "当色彩消失",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Wenn die Farben verblassen",
+    "en": "When Colors Fade",
+    "es": "Cuando los colores se desvanecen",
+    "fr": "Quand les couleurs se fanent",
+    "ja": "彩りのない世界",
+    "ko": "색이 바래면",
+    "th": "เมื่อสีสันจางหายไป",
+    "zh-Hans": "当色彩消逝",
+    "zh-Hant": "當色彩消逝"
+  },
+  "desc": {
+    "de": "Ein leuchtendes Gemälde, das in der Wildnis steht, eine Landschaft, der die Farben entzogen wurden, und eine mysteriöse sowie verdächtige Kommunikation … Es ist unklar, welche Absichten die andere Seite der Kommunikation hat. Wenn du Zeit hast, besuche die Gemeinde Egla und sprich mit ihr.",
+    "en": "A vibrant painting in the wild, a landscape drained of its colors, and a mysterious, suspicious communication...\nWhat is the true intent behind the caller? Head to Egla Town and speak with her to uncover the truth.",
+    "es": "Un cuadro vibrante en la naturaleza, un paisaje despojado de sus colores y una llamada misteriosa y sospechosa...\n\n¿Cuál es la verdadera intención detrás de la llamada? Dirígete al pueblo de Egla para descubrir la verdad.",
+    "fr": "Un tableau de couleur vive, un paysage sans couleur et un message mystérieux... Visitez la ville d'Egla pour trouver ce qui s'est passé.",
+    "ja": "野に佇んでいる鮮やかな絵画、彩りを奪われた風景、そして突如届いた謎の通信……通信の向こうの人の意図はまだ分からない。暇があったら、エグラの町に話を聞きに行ってみよう。",
+    "ko": "야외에 있는 밝은 그림들, 색깔을 잃은 풍경들, 그리고 신비롭고 의심스러운 통신... 단말기 너머 그 사람이 무슨 의도인지 모르겠는데, 시간이 있으면 에글라 타운에 가서 그 사람과 대화를 나누세요",
+    "th": "ภาพวาดที่ดูมีชีวิตชีวาในป่า ทิวทัศน์ที่ปราศจากสี และการสื่อสารลึกลับอันน่าสงสัย...\nเจตนาที่แท้จริงของผู้โทรคืออะไร? มุ่งหน้าไปที่เมืองเอ็กลาและพูดคุยกับเธอเพื่อเปิดเผยความจริง",
+    "zh-Hans": "矗立在野外的鲜艳画作，被夺走色彩的风景，还有一通神秘且可疑的通讯……不知道通讯的另一头是什么意图，有空的话就去埃格拉小镇找对方聊聊吧。",
+    "zh-Hant": "矗立在野外的鮮艷畫作，被奪走色彩的風景，還有一通神秘且可疑的通訊……不知道通訊的另一端有什麼意圖，有空的話就去埃格拉小鎮找對方聊聊吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 6,
+      "type": "Action",
+      "dialogs": [
+        {
+          "flowId": "剧情_生命点商人NPC",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "(Ein fremder Anruf ... Wer kann das sein?)",
+                "en": "(A call from an unknown contact... What could it be?)",
+                "es": "(Una llamada de un contacto desconocido... ¿Qué ha pasado?)",
+                "fr": "(Un appel d'un contact inconnu... De quoi pourrait-il s'agir ?)",
+                "ja": "（知らない人からの通信……何があった？）",
+                "ko": "(모르는 곳에서 온 통신인데... 무슨 일이지?)",
+                "th": "(สายเรียกเข้าจากผู้ติดต่อที่ไม่รู้จัก... เป็นใครกันนะ?)",
+                "zh-Hans": "（是陌生人发来的通讯……发生什么事了？）",
+                "zh-Hant": "（是陌生人發來的通訊……發生什麼事了？）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hallo, hallo, ist das {PlayerName}? Diese Adresse sollte doch stimmen …",
+                "en": "Hey, is it {PlayerName}? I hope I've finally reached the right person...",
+                "es": "¡Hola, ¿es {PlayerName}? No me habré equivocado de dirección, ¿verdad",
+                "fr": "Salut, c'est bien {PlayerName} ? J'espère que j'ai enfin contacté la bonne personne...",
+                "ja": "もしもし、{PlayerName}さん？この連絡先間違ってるのかな……",
+                "ko": "여보세요, {PlayerName} 맞죠? 이번엔 틀림없겠지...",
+                "th": "สวัสดี นี่ {PlayerName} ใช่มั้ย? หวังว่าในที่สุดฉันจะโทรหาถูกคนนะ...",
+                "zh-Hans": "喂喂，是{PlayerName}吗？这个地址总不会错了吧……",
+                "zh-Hant": "喂喂，是{PlayerName}嗎？這個地址總不會錯了吧……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50092,
+                "name": {
+                  "zh-Hans": "？？？（通讯中）"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin's. Wer bist du?",
+                    "en": "Yes, speaking. And you are?",
+                    "es": "Sí soy yo. ¿Quién eres?",
+                    "fr": "Je suis là. Qui es-tu ?",
+                    "ja": "そうだけど、あなたは？",
+                    "ko": "맞아요, 근데 누구세요?",
+                    "th": "ใช่แล้ว ฉันเอง แล้วคุณคือ?",
+                    "zh-Hans": "我是，你是谁？",
+                    "zh-Hant": "我是，你是誰？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eine Telefonwerbung?",
+                    "en": "I'm not interested in your product, thank you.",
+                    "es": "Hoy no es mi día de compras, gracias.",
+                    "fr": "Ton produit ne m'intéresse pas, merci.",
+                    "ja": "通信販売ならお断りさせてもらうよ。",
+                    "ko": "누군지는 몰라도 안 삽니다",
+                    "th": "ฉันไม่สนใจสินค้าของคุณหรอก ขอบคุณ",
+                    "zh-Hans": "不购物，谢谢。",
+                    "zh-Hant": "不購物，謝謝。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hallo, ich bin Vita und führe in Egla ein kleines Geschäft.",
+                "en": "Hello, I'm Vida, running a modest business in Egla Town.",
+                "es": "Hola, soy Vida, llevo un modesto negocio en el pueblo de Egla.",
+                "fr": "Bonjour, je suis Vida, je gère une petite entreprise à la ville d'Egla.",
+                "ja": "失礼、私はビダ、エグラの町でちょっとした商売をしている商売人さ。",
+                "ko": "실례합니다, 저는 에글라 타운에서 작은 장사를 하고 있는 베다라고 해요",
+                "th": "สวัสดี ฉันวิดา ทำธุรกิจเล็กๆ ในเมืองเอ็กลา",
+                "zh-Hans": "打扰了，我是薇达，在埃格拉小镇做点小本生意。",
+                "zh-Hant": "打擾了，我是薇達，在埃格拉小鎮做點小本生意。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50092,
+                "name": {
+                  "zh-Hans": "？？？（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Sorge, ich verkaufe nichts. Ich führe ein kleines Geschäft in der Gemeinde Egla. Du kannst mich einfach Vita nennen.",
+                "en": "Oh, don't worry. I don't do cold calls. I run a small business here in Egla Town. Just call me Vida.",
+                "es": "Ah, no te preocupes. No es para esto. Tengo un pequeño negocio aquí en el Pueblo de Egla. Me llamo Vida.",
+                "fr": "Oh, t'inquiète pas. Je ne fais pas de prospection téléphonique. J'ai une petite entreprise ici à la ville d'Egla. Appelle-moi simplement Vida.",
+                "ja": "違うよ、私はそんなことしないから。私はエグラの町でちょっとした商売をしている商売人のビダ。",
+                "ko": "아, 잠시만요, 물건을 파려는 건 아니구요... 전 에글라 타운에서 작은 장사를 하고 있는 베다라고 해요",
+                "th": "โอ้ ไม่ต้องกังวล ฉันไม่ได้โทรมาเพื่อขายของหรอก ฉันทำธุรกิจเล็กๆ ที่นี่ในเมืองเอ็กลา เรียกฉันว่าวิดาก็ได้",
+                "zh-Hans": "啊，别怕，我从不通讯带货。我在埃格拉小镇做点小本生意，叫我薇达就可以。",
+                "zh-Hant": "啊，別怕，我從不通訊帶貨。我在埃格拉小鎮做點小本生意，叫我薇達就可以。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50092,
+                "name": {
+                  "zh-Hans": "？？？（通讯中）"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du kommst mir bekannt vor.",
+                    "en": "I've seen you before, haven't I?",
+                    "es": "¿Te he visto antes, verdad?",
+                    "fr": "Je t'ai déjà vue, n'est-ce pas ?",
+                    "ja": "どこかで会ったような……",
+                    "ko": "본 적이 있는 것 같아요",
+                    "th": "ฉันเคยเจอคุณมาก่อนใช่มั้ย?",
+                    "zh-Hans": "我好像见过你。",
+                    "zh-Hant": "我好像見過你。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wie kann ich behilflich sein?",
+                    "en": "What can I do for you?",
+                    "es": "¿En qué puedo ayudarte?",
+                    "fr": "Que puis-je faire pour toi ?",
+                    "ja": "何か用？",
+                    "ko": "저를 왜 찾는 거죠?",
+                    "th": "มีอะไรให้ฉันช่วยมั้ย?",
+                    "zh-Hans": "找我什么事？",
+                    "zh-Hant": "找我什麼事？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du hast vielleicht auch bemerkt, dass entlang der Straße an manchen Stellen lebendige Gemälde stehen, während die Umgebung von grauem Dunst umhüllt ist?",
+                "en": "Have you come across these paintings of vibrant colors standing in a dreary field in the wild?",
+                "es": "¿Has notado cómo algunas áreas en el camino presentan obras de arte vibrantes en medio de un mar de monotonía?",
+                "fr": "Avez-vous remarqué comment certaines zones en chemin présentent des peintures aux couleurs vives se dressant dans un champ morne en pleine nature ?",
+                "ja": "気付いてると思うけど、そこら辺に鮮やかな絵画と、周りが灰色になっているところがあるでしょ？",
+                "ko": "혹시 길에서 발견한 밝은 그림들 주변이 온통 뿌옇게 된 것을 보신 적이 있나요?",
+                "th": "คุณเคยเจอภาพวาดที่มีสีสันสดใสตั้งอยู่ในทุ่งนาที่ดูหดหู่บ้างมั้ย?",
+                "zh-Hans": "不知道你有没有留意，路上是不是有些地方矗立着鲜艳的画作，周围却是灰蒙蒙的一片？",
+                "zh-Hant": "不知道你有沒有留意，路上是不是有些地方矗立著鮮艷的畫作，周圍卻是灰濛濛的一片？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50090,
+                "name": {
+                  "zh-Hans": "薇达（通讯中）"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Als hätten sie ihre Farben verloren?",
+                    "en": "As if the world around it has lost its color?",
+                    "es": "¿Como si el mundo a su alrededor hubiera perdido su color?",
+                    "fr": "Comme si le monde autour d'elles avait perdu sa couleur ?",
+                    "ja": "色が褪せているような？",
+                    "ko": "색깔을 잃은 듯한 것 말이죠?",
+                    "th": "ราวกับว่าโลกรอบๆ ตัวมันได้สูญเสียสีสันไป?",
+                    "zh-Hans": "就像丢掉了颜色？",
+                    "zh-Hant": "就像丟掉了顏色？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Als hätten sie ihre Vitalität verloren?",
+                    "en": "As if the world around it has lost its vitality?",
+                    "es": "¿Como si el mundo a su alrededor hubiera perdido su vitalidad?",
+                    "fr": "Comme si le monde autour d'elles avait perdu sa vitalité ?",
+                    "ja": "生命力が失われているような？",
+                    "ko": "생명력을 잃은 듯한 것 말이죠?",
+                    "th": "ราวกับว่าโลกรอบๆ ตัวมันได้สูญเสียความมีชีวิตชีวาไป?",
+                    "zh-Hans": "就像失去了生命力？",
+                    "zh-Hant": "就像失去了生命力？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Genau. Du hast sie bereits gesehen. Die Pioneer Association bezeichnet solche Tacet-Dissonanzen als „Farbenfressende Gemälde“. Die von ihnen beeinträchtigten Gebiete sind „Verblasste Felder“.",
+                "en": "Sure, it seems you've encountered them already. The Pioneer Association refers to those Tacet Discords as \"Overflowing Palettes,\" and the areas they affect are known as \"Faded Zones.\"",
+                "es": "Sí, parece que ya te has encontrado con ellas. La Asociación de Pioneros se refiere a esas Disonancias Tácitas como Paleta desbordante, y las áreas que afectan se conocen como zonas descoloridas.",
+                "fr": "Bien sûr, il semble que vous les ayez déjà rencontrés. L'Association des Pionniers appelle ces TDs des « Blocs couleurs » et les zones qu'ils affectent sont connues sous le nom de « Zones Fanées ».",
+                "ja": "ええ、見たことがあるようね。先駆条約の人たちはあの残像を「彩魔絵」と呼んでるの。そして、その影響を受けているエリアのことを「フェイデッドゾーン」と呼んでるらしいの。",
+                "ko": "네, 벌써 본 모양이군요. 선행 공약의 사람들은 그런 잔상을 「다채화」라고 부르고, 그들의 영향을 받은 구역은 「퇴색 구역」이라고 해요",
+                "th": "แน่นอน ดูเหมือนว่าคุณเคยเจอภาพวาดพวกนั้นแล้วนะ สมาคมผู้บุกเบิกเรียกทาเซ็ตดิสคอร์ดพวกนั้นว่า \"พาเลตสีสันเหลือล้น\" และเรียกพื้นที่ที่ได้รับผลกระทบว่า \"เขตซีดจาง\"",
+                "zh-Hans": "对，看来你已经见过了。先行公约的人管那些残象叫“溢彩画”，它们影响下的区域则是“褪色区”。",
+                "zh-Hant": "對，看來你已經見過了。先行公約的人管那些殘象叫「溢彩畫」，它們影響下的區域則是「褪色區」。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50090,
+                "name": {
+                  "zh-Hans": "薇达（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Heimlich haben sich solche Phänomene in allen Gegenden von Rinascita ausgebreitet. Normale Menschen können jedoch nichts dagegen tun …",
+                "en": "Such strange phenomena have quietly spread throughout Rinascita, leaving ordinary people completely helpless…",
+                "es": "Tales fenómenos extraños se han extendido silenciosamente por toda Rinascita, dejando a la gente común completamente desamparada…",
+                "fr": "De tels phénomènes étranges se sont discrètement répandus à travers Rinascita, laissant les gens ordinaires complètement impuissants…",
+                "ja": "いつの間にか、そのおかしな残像がリナシータの各地に出現するようになったの。一般人じゃとても手に負えない……",
+                "ko": "이런 괴이한 현상이 어느새 리나시타 각 지역에 널리 퍼지게 되었지만, 보통 사람들은 이런 상황에 대해 할 수 있는 일이 없어 문제예요...",
+                "th": "ปรากฏการณ์แปลกประหลาดนั่นได้แพร่กระจายไปทั่วรินาซิตาอย่างเงียบๆ ทำให้คนทั่วไปทำอะไรไม่ได้เลย...",
+                "zh-Hans": "不知不觉，这样的怪异现象就遍布在黎那汐塔的各个地区了，但普通人对此根本束手无策……",
+                "zh-Hant": "不知不覺，這樣的怪異現象就遍布在黎那汐塔的各個地區了，但普通人對此根本束手無策……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50090,
+                "name": {
+                  "zh-Hans": "薇达（通讯中）"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gerade habe ich eines repariert.",
+                    "en": "I've just restored a spot.",
+                    "es": "Acabo de restaurar un lugar.",
+                    "fr": "Je viens juste d'en restaurer une.",
+                    "ja": "さっき一箇所修復した。",
+                    "ko": "제가 방금 한곳을 복구해놨어요",
+                    "th": "ฉันเพิ่งจะฟื้นฟูได้ที่นึง",
+                    "zh-Hans": "我刚修复了一处。",
+                    "zh-Hant": "我剛修復了一處。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wirklich? Dann habe ich {Male=den Richtigen;Female=die Richtige} gefunden.",
+                "en": "Wait... you did? I knew you were the right person to talk to.",
+                "es": "Espera... ¿lo hiciste? Sabía que eras la persona adecuada para esto.",
+                "fr": "Attends... tu l'as fait ? Je savais que tu étais la bonne personne à qui parler.",
+                "ja": "えっ……本当？さすが、助かったわ。",
+                "ko": "진짜요? 역시 제가 이번엔 제대로 찾아왔군요",
+                "th": "เดี๋ยว... คุณเป็นคนทำงั้นเหรอ? ว่าแล้วเชียวว่าฉันคุยถูกคนแล้ว",
+                "zh-Hans": "诶……真的？不愧是你，这下找对人了。",
+                "zh-Hant": "欸……真的？不愧是你，這下找對人了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50090,
+                "name": {
+                  "zh-Hans": "薇达（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm bei mir vorbei, wenn du Zeit hast. Ich wollte mal etwas mit dir besprechen.",
+                "en": "Please find me in Egla Town when you have a moment. I have a favor to ask of you and we can discuss the details when we meet.",
+                "es": "Por favor, ven al Pueblo de Egla cuando puedas. Tengo un favor que pedirte y podemos discutir los detalles cuando nos encontremos.",
+                "fr": "Viens me trouver à la ville d'Egla quand tu auras un moment. J'ai une faveur à te demander et nous pourrons en discuter les détails quand nous nous verrons.",
+                "ja": "暇があったらエグラの町に来て、ちょっと相談したいことがあるから。",
+                "ko": "시간 나시면 에글라 타운으로 와서 절 찾아주시겠어요? 상의하고 싶은 일이 있어요",
+                "th": "ช่วยมาหาฉันที่เมืองเอ็กลาเมื่อคุณว่างนะ ฉันมีเรื่องจะขอให้คุณช่วยแล้วเราค่อยคุยรายละเอียดกันตอนที่เจอกัน",
+                "zh-Hans": "有空的话就来埃格拉小镇找我吧，有事想和你商量。",
+                "zh-Hant": "有空的話就來埃格拉小鎮找我吧，有事想和你商量。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50090,
+                "name": {
+                  "zh-Hans": "薇达（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(... Sie hat den Anruf aufgelegt)",
+                "en": "(The call has ended.)",
+                "es": "(La llamada ha terminado.)",
+                "fr": "(L'appel est terminé.)",
+                "ja": "（……通信が切れた。）",
+                "ko": "(...통신을 끊었네)",
+                "th": "(การโทรสิ้นสุดแล้ว)",
+                "zh-Hans": "（……通讯挂断了。）",
+                "zh-Hant": "（……通訊掛斷了。）"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haah*. Gerade aufgewacht und schon höre ich euch reden ...",
+                "en": "Yawn—Just woke up and already hear you guys chatting...",
+                "es": "*Bostezo*—Acabo de despertarme y ya estás charlando con alguien…",
+                "fr": "AHOU— je viens de me réveiller et je vous entends déjà bavarder...",
+                "ja": "ハフ――なにやら話してたみたいだな……",
+                "ko": "하암—— 뭐야, 무슨 얘기 하고 있었어?",
+                "th": "หาว... เพิ่งตื่นก็มาได้ยินพวกคุณคุยกันแล้ว...",
+                "zh-Hans": "哈唔——刚醒就听到你们在聊天……",
+                "zh-Hant": "哈唔——剛醒就聽到你們在聊天……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Moment. Sie ist verdächtig. Woher kriegte sie den Kontakt zu dir?",
+                "en": "Wait a minute, this person seems suspicious. How does she know your contact details?",
+                "es": "Espera un minuto, esta persona parece sospechosa. ¿Cómo sabe tu dirección de comunicación?",
+                "fr": "Attends, cette personne semble suspecte. Comment connaît-elle tes coordonnées ?",
+                "ja": "おい待て、この人怪しいぞ、何でお前の連絡先を知ってるんだ？",
+                "ko": "잠깐, 이 사람 좀 수상한데... 네 통신 주소는 어떻게 안 걸까?",
+                "th": "เดี๋ยวนะ คนๆ นี้ดูน่าสงสัยนะ เธอรู้เบอร์ติดต่อของคุณได้ยังไง?",
+                "zh-Hans": "等下，这个人有点可疑，她怎么知道你的通讯地址？",
+                "zh-Hant": "等一下，這個人有點可疑，她怎麼知道你的通訊地址？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Mal sehen, was sie im Schilde führt.",
+                    "en": "We'll find out.",
+                    "es": "Lo averiguaremos.",
+                    "fr": "On va le découvrir.",
+                    "ja": "会ってみれば分かる。",
+                    "ko": "가서 만나보면 알게 되겠지",
+                    "th": "เราจะสืบให้รู้เรื่อง",
+                    "zh-Hans": "去见见就知道了。",
+                    "zh-Hant": "去見見就知道了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin selbst Rover.",
+                    "en": "For I'm the famous Rover!",
+                    "es": "Porque soy {Male=el famoso Errante;Female=la famosa Errante}.",
+                    "fr": "Car je suis {Male=le fameux;Female=la fameuse} Nomade !",
+                    "ja": "{Male=俺は有名だからな。;Female=私は有名だから。}",
+                    "ko": "난 유명하니까 알게 된 게 아닐까?",
+                    "th": "เพราะฉันคือผู้พเนจรที่โด่งดังยังไงล่ะ!",
+                    "zh-Hans": "因为我是大名鼎鼎的漂泊者。",
+                    "zh-Hant": "因為我是大名鼎鼎的漂泊者。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "parentId": 6,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 30,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Vita in der Gemeinde Egla",
+        "en": "Find Merchant Vida in Egla Town",
+        "es": "Encuentra a Vida, la mercadera en Egla.",
+        "fr": "Trouver Vida à la ville d'Egla",
+        "ja": "エグラの町で商人ビダを見つける",
+        "ko": "에글라 타운에서 상인 베다 찾기",
+        "th": "ตามหาแม่ค้าวิดาในเมืองเอ็กลา",
+        "zh-Hans": "在埃格拉小镇找到商人薇达",
+        "zh-Hant": "在埃格拉小鎮找到商人薇達"
+      },
+      "entities": [
+        {
+          "entityId": 148900210,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC生命点商人薇达",
+          "name": "TsEntity_157_生命点商人薇达",
+          "areaId": 2004,
+          "position": {
+            "x": 780504,
+            "y": 628162,
+            "z": 6206
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_生命点商人NPC",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ah ... Endlich bist du da. Ich hätte gedacht, du würdest nicht mehr kommen.",
+                "en": "You're here at last! I was just wondering how much longer I'd have to wait.",
+                "es": "¡Por fin llegaste! Me estaba preguntando cuánto más tendría que esperar.",
+                "fr": "Te voilà enfin ! Je me demandais combien de temps je devrais encore attendre.",
+                "ja": "来てくれたのね。待ってたわ。",
+                "ko": "아, 오셨군요. 언제쯤 오시려나 싶었어요",
+                "th": "ในที่สุดคุณก็มาแล้ว! ฉันกำลังสงสัยอยู่เลยว่าต้องรอนานแค่ไหน",
+                "zh-Hans": "啊，你来了，我刚在想还要等多久呢。",
+                "zh-Hant": "啊，你來了，我剛在想還要等多久呢。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum so eine unerwartete Kontaktaufnahme?",
+                    "en": "Why did you suddenly reach out to me?",
+                    "es": "¿Por qué te pusiste en contacto conmigo de repente?",
+                    "fr": "Pourquoi m'as-tu {Male=contacté;Female=contactée} soudainement ?",
+                    "ja": "{Male=なぜ連絡してきたんだ？;Female=どうして連絡してきたの？}",
+                    "ko": "왜 갑자기 제게 연락을 한 거죠?",
+                    "th": "ทำไมจู่ๆ คุณถึงติดต่อฉันมาล่ะ?",
+                    "zh-Hans": "为什么突然联系我？",
+                    "zh-Hant": "為什麼突然聯絡我？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Denn ... „Auf eine Welt voller Wunder und Entdeckungen! “",
+                "en": "Because... 'Here's to a world of discoveries and wonders.'",
+                "es": "Por... Por un mundo de descubrimientos y maravillas.",
+                "fr": "Parce que... « Que le monde s'ouvre devant vous ».",
+                "ja": "それは……「世界はあなたのために開かれる」だから。",
+                "ko": "그건... 「행복한 일만 가득하시길」",
+                "th": "เพราะว่า... 'แด่โลกแห่งการค้นพบและสิ่งอัศจรรย์'",
+                "zh-Hans": "因为……“愿世界在你眼前展开”。",
+                "zh-Hant": "因為……「願世界在你眼前展開」。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es kommt mir irgendwie bekannt vor.. Ist das nicht die Parole der Pioneer Association?",
+                "en": "Hmm, sounds familiar. Isn't that the slogan of the Pioneer Association?",
+                "es": "Hmm, eso me suena. ¿No es el lema de la Asociación de Pioneros?",
+                "fr": "Hmm, ça me rappelle quelque chose. N'est-ce pas le slogan de l'Association pionnière ?",
+                "ja": "それ……先駆条約のスローガンでは？",
+                "ko": "음, 어디서 들어 봤는데. 그거 선행 공약의 구호 아니야?",
+                "th": "หืม ฟังดูคุ้นๆ นะ นั่นคือสโลแกนของสมาคมผู้บุกเบิกไม่ใช่เหรอ?",
+                "zh-Hans": "唔，好耳熟，这不是先行公约的口号吗？",
+                "zh-Hant": "唔，好耳熟，這不是先行公約的口號嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bist du von der Pioneer Association?",
+                    "en": "Are you with the Pioneer Association?",
+                    "es": "¿Perteneces a la Asociación de Pioneros?",
+                    "fr": "Fais-tu partie de l'Association pionnière ?",
+                    "ja": "あなたは先駆条約の人？",
+                    "ko": "선행 공약 사람인가요?",
+                    "th": "คุณอยู่กับสมาคมผู้บุกเบิกเหรอ?",
+                    "zh-Hans": "你是先行公约的人？",
+                    "zh-Hant": "你是先行公約的人？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich war. Früher als reisende Händlerin habe ich nebenbei eine Zeit lang als Vertragsfotografin für sie gearbeitet. Auf den Handelsrouten habe ich Landschaften fotografiert und damit etwas Reisegeld verdient.",
+                "en": "I used to be. Back when I was a traveling merchant, I also worked briefly as a contract photographer for the Pioneer Association, capturing landscapes along the trade routes to earn some travel expenses.",
+                "es": "Antes sí. Cuando era comerciante itinerante, también trabajé brevemente como fotógrafa contratada por la Asociación de Pioneros, capturando paisajes a lo largo de las rutas comerciales para ganar algunos gastos de viaje.",
+                "fr": "Je l'étais. Quand j'étais marchand itinérant, j'ai aussi travaillé brièvement comme photographe contractuel pour l'Association pionnière, capturant les paysages le long des routes commerciales pour gagner un peu d'argent.",
+                "ja": "昔はね。旅商人をしていた頃、ついでに先駆条約のために写真撮影の仕事もしてたの。旅の交通費にもなるんだからね。",
+                "ko": "네, 하지만 이미 지난 일이에요. 이전에 제가 여행 상인이었을 때 선행 공약에서 사진작가로 잠시 일했던 적이 있거든요. 장사하면서 풍경을 찍으며 여비도 벌 수 있었죠",
+                "th": "ฉันเคยอยู่น่ะ ในตอนที่ฉันเป็นแม่ค้าเร่ ฉันเคยทำงานเป็นช่างภาพตามสัญญาให้กับสมาคมผู้บุกเบิกช่วงสั้นๆ ถ่ายภาพทิวทัศน์ตามเส้นทางการค้าเพื่อหาค่าใช้จ่ายในการเดินทาง",
+                "zh-Hans": "曾经是。我以前还是旅行商人的时候顺带在先行公约做过一阵签约摄影师，跑商路上拍拍风景还能赚些路费。",
+                "zh-Hant": "曾經是。我以前還是旅行商人的時候順便在先行公約做過一陣簽約攝影師，跑商路上拍拍風景還能賺些路費。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und nun ja ... Diese Gemälde haben Farben geplündert. Es wurde immer schwerer, ein gutes Foto zu bekommen. So habe ich mich entschieden, mein eigenes Geschäft zu betreiben.",
+                "en": "Now... as you can see, those strange phenomena have drained the color from many places, making it harder to capture great photos. I've settled down and opened my own shop, so I haven't renewed my contract.",
+                "es": "Ahora... como puedes ver, esos fenómenos extraños han drenado el color de muchos lugares, lo que hace más difícil capturar buenas fotos. Me he establecido y he abierto mi propia tienda, así que no renové mi contrato.",
+                "fr": "Maintenant... comme tu peux le voir, ces étranges phénomènes ont drainé les couleurs de nombreux endroits, rendant plus difficile la prise de belles photos. Je me suis installée et j'ai ouvert ma propre boutique, donc je n'ai pas renouvelé mon contrat.",
+                "ja": "今は……見ての通り、あの絵の残像に多くの地域が色を奪われて、いい写真は撮れなくなってしまったわ。だから、私もここで腰をおろして自分の店を立て、先駆条約と解約したの。",
+                "ko": "지금은... 보시다시피 그 이상한 그림들이 수많은 곳의 색채를 앗아가 사진 촬영도 점점 어려워졌어요... 그리고 저도 이곳에 정착해 제 가게도 생겨 선행 공약의 사진작가도 그만두게 되었죠",
+                "th": "แต่ตอนนี้... อย่างที่คุณเห็น ปรากฏการณ์แปลกๆ พวกนั้นได้ดูดสีสันไปจากหลายๆ ที่ทำให้การถ่ายภาพสวยๆ ยากขึ้น ฉันเลยลงหลักปักฐานและเปิดร้านของตัวเองแล้วและก็ไม่ได้ต่อสัญญา",
+                "zh-Hans": "现在嘛……你也看到了，那些怪画夺走了不少地方的色彩，想拍出好照片越来越难。我也安顿下来，有了自己的店面，就没再续约了。",
+                "zh-Hant": "現在嘛……你也看到了，那些怪畫奪走了不少地方的色彩，想拍出好照片越來越難。我也安頓下來，有了自己的店面，就沒再續約了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber in meinem Herzen leben die noch nicht verblassten Landschaften weiter.",
+                "en": "But deep down, I am still unable to move past the faded landscapes.",
+                "es": "Pero en el fondo, todavía no puedo superar los paisajes descoloridos.",
+                "fr": "Mais au fond de moi, je suis toujours incapable de dépasser ces paysages fanés.",
+                "ja": "ただ心の中では……今もあの色褪せた風景が気がかりだわ。",
+                "ko": "하지만 제 마음속엔... 아직도 그 퇴색된 풍경들이 생각나요",
+                "th": "แต่ลึกๆ แล้วฉันก็ยังคงทำใจไม่ได้กับทิวทัศน์ที่สีซีดจางไปพวกนั้น",
+                "zh-Hans": "但我心里……倒仍惦记着那些褪色的风景。",
+                "zh-Hant": "但我心裡……倒仍惦記著那些褪色的風景。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Deshalb hast du mich also angerufen?",
+                    "en": "Do you want me to restore those areas?",
+                    "es": "¿Quieres que restaure esas áreas?",
+                    "fr": "Tu veux que je restaure ces zones ?",
+                    "ja": "{Male=色褪せたところを修復してほしいのか？;Female=色褪せたところを修復してほしいの？}",
+                    "ko": "그 구역들을 복구해 주길 원하는 거군요?",
+                    "th": "คุณอยากให้ฉันฟื้นฟูพื้นที่พวกนั้นใช่มั้ย?",
+                    "zh-Hans": "你想让我修复那些区域？",
+                    "zh-Hant": "你想讓我修復那些區域？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mit klugen Köpfen zu sprechen macht alles einfacher. Genau aus diesem Grund habe ich mir deine Kontaktadresse von einem ehemaligen Kollegen besorgt. Du willst doch nicht, dass die Landschaften, die du einst bereist hast, in trostlose Flecken verfallen, oder?",
+                "en": "Always feels like a breeze to chat with a sharp mind like yours. That is exactly why I got your contact from a former colleague. After all, no one wants the places in their memories to be covered in dull patches, right?",
+                "es": "Siempre es un placer charlar con una mente aguda como la tuya. Por eso conseguí tu contacto de un antiguo colega. En fin, nadie quiere que los lugares en sus recuerdos estén cubiertos de manchas opacas, ¿verdad?",
+                "fr": "C'est toujours un plaisir de discuter avec un esprit vif comme le tien. C'est exactement pour ça que j'ai obtenu ton contact auprès d'un ancien collègue. Après tout, personne ne veut que les lieux de ses souvenirs soient couverts de taches ternes, n'est-ce pas ?",
+                "ja": "さすがは漂泊者。元同僚からあなたの連絡先を聞いてきたのは、正にそれが理由。あんなに美しかったところが今じゃこの有り様だなんて、誰も望まないでしょ？",
+                "ko": "역시 바로 알아차리셨군요. 그래서 이전 동료에게 당신의 통신 주소를 물어봤던 거였어요. 아름다운 풍경이 퇴색되는 걸 원하는 사람은 없을 테니까요...",
+                "th": "การได้คุยกับคนที่ฉลาดเฉียบแหลมแบบคุณมันรู้สึกดีจริงๆ นั่นเป็นเหตุผลที่ฉันขอเบอร์ติดต่อของคุณมาจากอดีตเพื่อนร่วมงาน เพราะท้ายที่สุดแล้วก็ไม่มีใครอยากให้สถานที่ในความทรงจำของตัวเองถูกปกคลุมไปด้วยความหม่นหมองใช่มั้ยล่ะ?",
+                "zh-Hans": "和聪明人聊就是省事，这就是我向前同事要来你通讯地址的原因。应该没人希望曾游历的景点打满灰溜溜的补丁吧？",
+                "zh-Hant": "和聰明人聊就是省事，這就是我向前同事要來你通訊地址的原因。應該沒人希望曾遊歷的景點打滿灰溜溜的補丁吧？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn sie nur noch in Bildern existieren würden ... wäre das nicht schade?",
+                "en": "If we can only see those familiar landscapes in photos from now on... it's a depressing thought, isn't it?",
+                "es": "Si solo podemos ver esos paisajes familiares en fotos a partir de ahora... Es triste, ¿no?",
+                "fr": "Si on ne peut plus voir ces paysages familiers que sur des photos... c'est une pensée déprimante, n'est-ce pas ?",
+                "ja": "写真でしかあの風景が見られないと思うと……機嫌が悪くなってしまうわ。",
+                "ko": "익숙하던 풍경을 이제는 사진으로만 볼 수 있다면... 생각만 해도 슬프잖아요, 그렇지 않나요?",
+                "th": "ถ้าต่อจากนี้เราจะได้เห็นทิวทัศน์ที่คุ้นเคยแค่ในรูปถ่าย... มันคงเป็นความคิดที่น่าหดหู่ใช่มั้ยล่ะ?",
+                "zh-Hans": "如果以后只能在照片里见到那些熟悉的景色了……想想就很坏心情，不是吗？",
+                "zh-Hant": "如果以後只能在照片裡見到那些熟悉的景色了……想想就很壞心情，不是嗎？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Na kommen wir zuerst zum Preis",
+                    "en": "Let's talk terms first.",
+                    "es": "Hablemos de los términos primero.",
+                    "fr": "Parlons d'abord des conditions.",
+                    "ja": "{Male=報酬次第だな。;Female=報酬次第だね。}",
+                    "ko": "그럼 조건부터 얘기해 보죠",
+                    "th": "เรามาคุยเรื่องเงื่อนไขกันก่อนดีกว่า",
+                    "zh-Hans": "那就先谈谈条件吧。",
+                    "zh-Hant": "那就先談談條件吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Von nichts kommt nichts.",
+                    "en": "How about a little something to sweeten the deal?",
+                    "es": "Un favor con favor se paga.",
+                    "fr": "Et si on ajoutait un petit quelque chose pour rendre l'affaire plus intéressante ?",
+                    "ja": "{Male=報酬はもらえるよな。;Female=報酬はもらえるよね。}",
+                    "ko": "일에 걸맞는 보수가 필요해요",
+                    "th": "เรามาเพิ่มอะไรเล็กน้อยให้ข้อตกลงน่าสนใจขึ้นดีมั้ย?",
+                    "zh-Hans": "来点好处费。",
+                    "zh-Hant": "來點好處費。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich wird deine Hilfe nicht umsonst sein. Die Verblassten Felder bergen oft reichhaltige Bodenschätze und Ressourcen, doch unter dem Einfluss der Farbenfressenden Gemälde sind sie völlig unbrauchbar für den menschlichen Nutzen.",
+                "en": "Certainly, I wouldn't expect you to help for free. The Faded Zones often hold abundant mineral deposits and resources. But they can't be accessed due to the influence of the Overflowing Palettes.",
+                "es": "Por supuesto, no esperaría que ayudes gratis. Las zonas desvanecidas a menudo contienen abundantes depósitos minerales y recursos. Pero no se pueden acceder debido a la influencia de la Paleta desbordante.",
+                "fr": "Bien sûr, je ne m'attends pas à ce que tu aides gratuitement. Les Zones Fanées contiennent souvent d'abondants gisements de minéraux et de ressources. Mais ils sont inaccessibles à cause de l'influence des Blocs couleurs.",
+                "ja": "もちろん、ただでとは言わないわ。フェイデッドゾーンには豊富な鉱石と産物があるけど、彩魔絵の影響で、使い物にならなくなってしまったの。",
+                "ko": "물론이죠. 퇴색 구역엔 보통 풍부한 지하자원과 물건들이 있어요. 하지만 다채화로 인해 사용할 수가 없었죠",
+                "th": "ได้สิ ฉันไม่คาดหวังให้คุณช่วยฟรีๆ หรอก เขตซีดจางมักจะมีแร่ธาตุและทรัพยากรมากมายแต่ไม่สามารถเข้าไปเอาได้เพราะอิทธิพลของพาเลตสีสันเหลือล้นนั่น",
+                "zh-Hans": "当然不会让你白帮忙。褪色区往往有丰富的矿藏和物产，但它们在溢彩画的影响下，根本无法为人所用。",
+                "zh-Hant": "當然不會讓你白幫忙。褪色區往往有豐富的礦藏和物產，但它們在溢彩畫的影響下，根本無法為人所用。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach der Reparatur kehren die Farben zurück und die Ressourcen werden ebenfalls wieder normal. Du kannst sie mal sammeln und ich tausche sie gegen eher seltene Artikel ein.",
+                "en": "Restoring the zones will not only bring back the colors but also the resources. You can trade them with me for some... rare items on the market.",
+                "es": "Restaurar las zonas no solo devolverá los colores, sino que los recursos también volverán a la normalidad. Puedes intercambiarlos conmigo por algunos artículos raros en el mercado.",
+                "fr": "Restaurer les zones ramènera non seulement les couleurs, mais aussi les ressources. Tu pourras les échanger avec moi contre... des objets rares sur le marché.",
+                "ja": "そのエリアを修復できたら、色が戻るだけじゃなくて、資源もまた使えるようになる。そしてそれと私が持ってる……珍しい物と交換するといいよ。",
+                "ko": "구역 복구를 완료한다면 색채가 다시 돌아올 뿐 아니라, 그 자원들도 사용할 수 있게 될 거예요. 그것들로 제 가게에서... 비교적 희귀한 상품들을 교환할 수 있어요",
+                "th": "การฟื้นฟูเขตเหล่านั้นไม่เพียงแต่จะได้สีสันกลับมาแต่ยังรวมถึงทรัพยากรด้วย คุณสามารถนำมันมาแลกเป็นของหายากในตลาด... กับฉันได้นะ",
+                "zh-Hans": "修复区域之后，不仅色彩会回归，那些资源也将恢复正常。你可以用它们在我这交换一些……市面上比较少见的商品。",
+                "zh-Hant": "修復區域之後，不僅色彩會回歸，那些資源也將恢復正常。你可以用它們在我這交換一些……市面上比較少見的商品。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist also dein Ziel ...",
+                "en": "Sounds like this is her true intention...",
+                "es": "Suena como si esta fuera su verdadera intención...",
+                "fr": "On dirait que c'est sa véritable intention...",
+                "ja": "何だか、それが彼女の真の目的のように感じるけど……",
+                "ko": "듣고 있자니, 이게 진정한 목적 같은데...",
+                "th": "ดูเหมือนว่านี่คือเจตนาที่แท้จริงของเธอสินะ...",
+                "zh-Hans": "怎么听起来，这才是她真正的目的……",
+                "zh-Hant": "怎麼聽起來，這才是她真正的目的……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Davon leben wir Händler. Und wie ist deine Meinung? Diese Artikel und Angebote sind doch exklusiv für Handelspartner.",
+                "en": "As a merchant, it's my fundamental skill. So, what do you think? Those goods and offers are exclusively for partners.",
+                "es": "Como comerciante, es mi habilidad fundamental. Entonces, ¿qué piensas? Esos bienes y ofertas son exclusivamente para socios.",
+                "fr": "En tant que marchande, c'est mon talent naturel. Alors, t'en dis quoi ? Ces marchandises et ces offres sont exclusivement réservées aux partenaires.",
+                "ja": "私は商人だからね。どう？うちの商品も価格もお得意様専用のものなのよ。",
+                "ko": "이런 건 상인의 기본 소양이니까요. 어떤가요? 이 상품과 견적은 협력 파트너에게만 제공하는 거예요",
+                "th": "ในฐานะแม่ค้านี่คือทักษะพื้นฐานของฉันน่ะ คุณคิดว่าไงล่ะ? ของพวกนั้นกับข้อเสนอมีให้เฉพาะกับคู่ค้าเท่านั้นนะ",
+                "zh-Hans": "这可是商人的基本素养。怎么样？那些商品和报价都是只为合作伙伴准备的。",
+                "zh-Hant": "這可是商人的基本素養。怎麼樣？那些商品和報價都是只為合作夥伴準備的。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also abgemacht!",
+                    "en": "Understood, let's seal the deal.",
+                    "es": "Ya veo, trato hecho.",
+                    "fr": "Compris, concluons l'accord.",
+                    "ja": "{Male=では、取引成立だな。;Female=では、取引成立。}",
+                    "ko": "좋아요",
+                    "th": "เข้าใจแล้ว ตกลงตามนี้",
+                    "zh-Hans": "那么，成交。",
+                    "zh-Hant": "那麼，成交。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wirf mal einen Blick auf das Regal und wähle halt aus, was du brauchst.",
+                "en": "Alright, take a look at what's on the shelves. The resources are just what you need right now.",
+                "es": "De acuerdo, echa un vistazo a lo que hay en los estantes. Tus recursos son justo lo que necesitas ahora.",
+                "fr": "Très bien, jette un œil à ce qu'il y a sur les étagères. Les ressources sont exactement ce dont tu as besoin en ce moment.",
+                "ja": "ええ、好きに見ていいよ、手元にある資源、ちょうど役に立つから。",
+                "ko": "일단 진열대의 상품을 한번 확인해 보세요. 지금 가지고 있는 자원들을 마침 쓸 수 있을 것 같네요",
+                "th": "ตกลง ลองดูของที่อยู่บนชั้นวางได้เลย ทรัพยากรน่ะใช่ที่คุณต้องการพอดีเลยนะ",
+                "zh-Hans": "嗯，看看货架上有什么吧，你手头的资源正好可以用上了。",
+                "zh-Hant": "嗯，看看貨架上有什麼吧，你手頭的資源正好可以用上了。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe den Handel ab und spricht mit Vita",
+        "en": "Talk to Vida after the transaction is settled",
+        "es": "Habla con Vida después de que se complete la transacción.",
+        "fr": "Parler avec Vida après que le marché est conclu",
+        "ja": "取引完了後、もう一度ビダと話す",
+        "ko": "거래 완료 후 베다와 대화하기",
+        "th": "คุยกับวิดาหลังจากตกลงทำรายการได้สำเร็จ",
+        "zh-Hans": "完成交易后再和薇达聊聊",
+        "zh-Hant": "完成交易後再和薇達聊聊"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_生命点商人NPC",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Vielen Dank. Ab sofort sind wir langfristige Handelspartner.",
+                "en": "Thank you for your patronage. From now on, we're long-term business partners.",
+                "es": "Muchas gracias. A partir de ahora, somos socios comerciales a largo plazo.",
+                "fr": "Merci pour ton achat. Désormais, nous sommes partenaires d'affaires à long terme.",
+                "ja": "まいどあり！これから私たちはビジネスパートナーだね。",
+                "ko": "감사합니다. 이제부터 저희는 장기적 협력관계의 사업 파트너예요!",
+                "th": "ขอบคุณที่อุดหนุน จากนี้ไปเราจะเป็นคู่ค้าทางธุรกิจระยะยาวกันนะ",
+                "zh-Hans": "谢谢惠顾。从今往后，我们就是长期合作的商业伙伴了。",
+                "zh-Hant": "謝謝惠顧。從今以後，我們就是長期合作的商業夥伴了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und ja! Lass uns die Farben zurückgewinnen!",
+                "en": "Let's work together to reclaim the natural colors of our world!",
+                "es": "¡Trabajemos juntos para reclamar los colores naturales de nuestro mundo!",
+                "fr": "Travaillons ensemble pour récupérer les couleurs naturelles de notre monde !",
+                "ja": "それじゃあ、自然の色を取り戻すために、一緒に頑張ろう。",
+                "ko": "그럼, 자연의 색채를 되돌리는 일에 함께 노력해 보죠",
+                "th": "มาร่วมมือกันทวงคืนสีสันของธรรมชาติให้กับโลกของเรากันเถอะ!",
+                "zh-Hans": "那么，一起为夺回自然的色彩而努力吧。",
+                "zh-Hant": "那麼，一起為奪回自然的色彩而努力吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50091,
+                "name": {
+                  "zh-Hans": "薇达"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

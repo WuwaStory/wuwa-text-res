@@ -1,0 +1,151 @@
+{
+  "id": 106800000,
+  "key": "归墟港市",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Hafenstadt Guixu",
+    "en": "Tales of the Past and Present: Port City of Guixu",
+    "es": "Crónicas de antaño y hoy: Ciudad Portuaria de Guixu",
+    "fr": "Histoires du passé : Guixu",
+    "ja": "古今幾多の物語・帰来の港",
+    "ko": "고대의 이야기·귀허항시",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: เมืองท่ากุยซวี",
+    "zh-Hans": "古今多少故事·归墟港市",
+    "zh-Hant": "古今多少故事·歸墟港市"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese zerrissenen Seiten. Geh und bring sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these torn pages. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estas páginas rasgadas. Ve y entrégalas a él.",
+    "fr": "Le conteur de Jinzhou cherche des fragments de vieux livres. Donnez-lui ceux que vous avez collectés au Port de la ville Guixu.",
+    "ja": "今州城の講談師は古い書籍の残巻に興味があるようなので、帰来の港で集めた古い書籍の残巻を彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼이 낡은 서적 잔본에 관심이 많은 것 같으니 귀허항시에서 수집한 낡은 서적 잔본을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมหน้ากระดาษที่ฉีกขาดเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧书残卷很感兴趣，把这些于归墟港市收集到的旧书残卷交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊書殘卷很感興趣，把這些於歸墟港市收集到的舊書殘卷交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler die „Zerrissene Seiten aus der Hafenstadt Guixu“",
+        "en": "Deliver \"Torn Pages from Port City of Guixu\" to the Storyteller",
+        "es": "Entrega las \"Páginas Rasgadas de la Ciudad Portuaria de Guixu\" al Narrador",
+        "fr": "Donner le « Fragment du livre du Port de la ville de Guixu » au conteur",
+        "ja": "「帰来の港の書籍の残巻」を講談師に渡す",
+        "ko": "귀허항시 서적 잔본을 이야기꾼에게 전달",
+        "th": "นำ \"หน้ากระดาษที่ฉีกขาดจากเมืองท่ากุยซวี\" ไปมอบให้กับนักเล่าเรื่อง",
+        "zh-Hans": "将「归墟港市书籍残卷」交给说书人",
+        "zh-Hant": "將「歸墟港市書籍殘卷」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich verstehe, ich verstehe. Dieser Himmelzug in der Hafenstadt Guixu scheint das Relikt einer Geschichte zu sein.",
+                "en": "I see, I see. That sky train in Port City of Guixu seems to be the relic of a story.",
+                "es": "Entiendo, entiendo. Ese tren del cielo en la Ciudad portuaria de Guixu parece ser la reliquia de una historia.",
+                "fr": "Donc, ce train aérien du Port de Guixu a une histoire si intéressante !",
+                "ja": "なるほど、なるほど、帰来の港の空中列車で、こんなに面白い話があるとは！",
+                "ko": "그렇군요. 귀허항시의 하늘의 열차라... 이런 재미있는 이야기가 있다니!",
+                "th": "อย่างนี้นี่เอง รถไฟลอยฟ้าในเมืองท่ากุยซวีดูจะเป็นโบราณวัตถุที่มีเรื่องราว",
+                "zh-Hans": "原来如此，原来如此，那归墟港市空中的列车，还有这样一段有趣的故事！",
+                "zh-Hant": "原來如此，原來如此，那歸墟港市空中的列車，還有這樣一段有趣的故事！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Umkehrender Regen und marschierender Zug... Wenn jemand sich dafür interessiert, solch ein Ereignis zu erfragen...",
+                "en": "Reversing rain and marching train... If someone cares to inquire about such an event...",
+                "es": "Lluvia en reversa y tren en marcha... Si alguien se preocupa por preguntar sobre tal evento...",
+                "fr": "La pluie remonte, et le train continue de rouler... Si quelqu'un demande où les pensées de ceci commencent...",
+                "ja": "逆流する雨は止まず、前進する列車は止まらない。その思いの経緯を誰かに聞かれたら……",
+                "ko": "빗물은 역행하고, 열차의 행진은 멈추지 않는다. 그 속에 담긴 그리움은 어디서부터 시작하였냐고 누군가 묻는다면...",
+                "th": "ฝนตกขึ้นฟ้ากับขบวนรถไฟมุ่งหน้า... ถ้ามีใครใคร่ถามเกี่ยวกับเหตุการณ์ที่ว่านี้...",
+                "zh-Hans": "雨水逆流不停，列车行进不止。若有人问起这其中的思念从何说起……",
+                "zh-Hant": "雨水逆流不停，列車行進不止。 若有人問起這其中的思念從何說起……"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Man könnte sagen, dass der Aprilregen diese Fragen beantworten wird.",
+                "en": "You could say that the April shower will answer those questions.",
+                "es": "Podrías decir que la lluvia de abril responderá a esas preguntas.",
+                "fr": "Toutes les réponses sont dans cette pluie d'avril... Très bien, très bien !",
+                "ja": "答えはこの四月の大雨の中にある。素晴らしい、実に素晴らしい！",
+                "ko": "그것은 모두 4월의 큰 비 속에서 온 거라 말할 수 있죠. 아주 좋군요!",
+                "th": "บอกได้ว่าฝนเดือนเมษายนจะไขข้อสงสัยให้กระจ่างเอง",
+                "zh-Hans": "那可回，都在这场四月的大雨之中，甚好、甚好！",
+                "zh-Hant": "那可回，都在這場四月的大雨之中，甚好、甚好！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

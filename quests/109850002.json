@@ -1,0 +1,994 @@
+{
+  "id": 109850002,
+  "key": "龙骨",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Betritt den Weg zum Drachen",
+    "en": "Walk the Path of the Dragon",
+    "es": "Camino del dragón",
+    "fr": "Vers le chemin du dragon",
+    "ja": "古竜の道へ",
+    "ko": "고룡으로 가는 길",
+    "th": "เดินบนเส้นทางแห่งมังกร",
+    "zh-Hans": "踏上古龙之道",
+    "zh-Hant": "踏上古龍之道"
+  },
+  "desc": {
+    "de": "Jocaresa hat dich gebeten, Relikt-Energie-Kristalle von den Drachenknochen zu sammeln. Sie meint, das könnte dir die Macht eines uralten Drachen verleihen.",
+    "en": "Jocaresa asked for your help collecting Remnant Energy crystals from the dragon bones. She claims this could grant you the power of an ancient dragon.",
+    "es": "Jocaresa te pidió ayuda para recolectar cristales de Energía Remanente de los huesos de dragón. Ella afirma que esto podría otorgarte el poder de un dragón antiguo.",
+    "fr": "Jocaresa vous demande de collecter les cristaux d'énergie vestigiale sur les os du dragon. Selon elle, c'est ainsi que l'on peut obtenir son pouvoir...",
+    "ja": "竜骨の反響エナジー結晶を集めるようジョカレーサに頼まれた。彼女曰く、こうすれば古竜の力を手に入れられるらしいが......",
+    "ko": "조카레사가 당신에게 용뼈의 울림 에너지 결정 수집을 의뢰하였다. 그녀의 얘기에 따르면 그것만 모으면 고룡의 힘을 얻을 수 있다고 하는데...",
+    "th": "โจคาเรซาขอให้คุณช่วยรวบรวมคริสตัลพลังงานเศษเสี้ยวความถี่จากกระดูกมังกร โดยอ้างว่าสิ่งนี้จะมอบพลังมังกรโบราณให้กับคุณได้",
+    "zh-Hans": "卓卡蕾萨委托你帮忙收集龙骨上的回音能量结晶，据她所说，只要这样就能够获得古龙的力量？",
+    "zh-Hant": "卓卡蕾薩委託你幫忙收集龍骨上的回音能量結晶，據她所說，只要這樣就能夠獲得古龍的力量？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Jocaresa",
+        "en": "Talk to Jocaresa after completion",
+        "es": "Habla con Jocaresa después de completar la misión.",
+        "fr": "Parler à Jocaresa après que tout est fait",
+        "ja": "ジョカレーサと会話する",
+        "ko": "완료 후 조카레사와 대화",
+        "th": "คุยกับโจคาเรซาหลังทำสำเร็จ",
+        "zh-Hans": "完成后与卓卡蕾萨对话",
+        "zh-Hant": "完成後與卓卡蕾薩對話"
+      },
+      "entities": [
+        {
+          "entityId": 109850127,
+          "mapId": 8,
+          "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+          "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+          "areaId": 33003,
+          "position": {
+            "x": 1124334,
+            "y": 1171214,
+            "z": 18011
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -27
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850218,
+          "mapId": 8,
+          "blueprintType": "Gameplay008",
+          "name": "TsEntity_玩法_风筝声骸钩锁2",
+          "areaId": 33003,
+          "position": {
+            "x": 1125456,
+            "y": 1169893,
+            "z": 18390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850306,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录4",
+          "areaId": 33003,
+          "position": {
+            "x": 1124337,
+            "y": 1171063,
+            "z": 18011
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_彩蛋NPC对话+包装",
+          "flowIndex": 1,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh ... Wie kann das sein? Ich spüre nichts von der Flamme des Meisters ...",
+                "en": "Oh... How can this be? I am unable to sense anything from the Master's flame...",
+                "es": "Oh... pero ¿cómo puede ser? No siento la llama del Maestro...",
+                "fr": "Oh... Comment est-ce possible ? Je ne ressens rien de la flamme du Maître...",
+                "ja": "ど……どうしてこうなったの？我が主の炎から何も感じられないなんて……",
+                "ko": "이... 어떻게 이럴 수가, 내가 신의 화염 속에서 아무것도 느끼지 못하다니...",
+                "th": "โอ้... เป็นไปได้ยังไงกัน ทำไมฉันถึงสัมผัสอะไรจากเปลวเพลิงขององค์มหาเทพไม่ได้เลย...",
+                "zh-Hans": "这……怎么会这样，我怎么会从吾主的火焰中感受不到任何东西……",
+                "zh-Hant": "這……怎麼會這樣，我怎麼會從吾主的火焰中感受不到任何東西……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{Male=Reisender;Female=Reisende} aus der Ferne, siehst du etwas in den Flammen, die du entfacht hast?",
+                "en": "Visitor from afar, what visions have you gathered from the flames you kindled?",
+                "es": "Visitante de tierras lejanas, ¿ves algo en las llamas que has encendido?",
+                "fr": "{Male=Visiteur venu;Female=Visiteurse venue} de loin, vois-tu quelque chose dans les flammes que tu as allumées ?",
+                "ja": "異国から来た者よ。あなたはこの燃え上がる炎の中で何かを見たか？",
+                "ko": "이방인이여, 당신은 타오르는 불길 속에서 무엇을 보았죠?",
+                "th": "ผู้มาเยือนจากแดนไกล คุณเห็นนิมิตใดในเปลวเพลิงที่ลุกโชนขึ้นมาบ้างมั้ย",
+                "zh-Hans": "来自异乡之人啊，您可曾从燃起的火焰中看见什么？",
+                "zh-Hant": "來自異鄉之人啊，您可曾從燃起的火焰中看見什麼？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich sehe nichts ...",
+                    "en": "I didn't see anything...",
+                    "es": "No veo nada de nada...",
+                    "fr": "Je n'ai rien vu...",
+                    "ja": "何も……",
+                    "ko": "아무것도 안 보였는데요...",
+                    "th": "ฉันไม่เห็นอะไรเลย...",
+                    "zh-Hans": "什么都没看见……",
+                    "zh-Hant": "什麼都沒看見……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ein Drache mit flammenden Flügeln, der den Boden zerreißt?",
+                    "en": "A dragon with burning wings ripping the earth apart?",
+                    "es": "¿Un dragón con alas llameantes partiendo la tierra?",
+                    "fr": "Un dragon aux ailes enflammées déchirant la terre ?",
+                    "ja": "燃える翼で大地を引き裂く巨竜？",
+                    "ko": "불타는 두 날개로 대지를 찢는 거대한 용?",
+                    "th": "มังกรปีกเพลิงที่กำลังฉีกกระชากผืนดินเหรอ",
+                    "zh-Hans": "燃烧双翼撕裂大地的巨龙？",
+                    "zh-Hant": "燃燒雙翼撕裂大地的巨龍？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ein Riese, der Blitze schleudert, um einen Drachen zu erschlagen?",
+                    "en": "A giant hurling lightning bolts to slay a dragon?",
+                    "es": "¿Un gigante lanzando rayos para acabar con un dragón?",
+                    "fr": "Un géant lançant des éclairs pour tuer un dragon ?",
+                    "ja": "雷を手にして古竜を倒した巨人？",
+                    "ko": "천둥 번개를 들고 고룡을 격추시킨 거인?",
+                    "th": "ยักษ์ที่ฟาดสายฟ้าเพื่อสังหารมังกรเหรอ",
+                    "zh-Hans": "手持雷电击落古龙的巨人？",
+                    "zh-Hant": "手持雷電擊落古龍的巨人？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du ... Musst du so direkt sein? Wenn nicht einmal ein Resonator wie du irgendeine Art von Kraft spürt, dann ...",
+                "en": "You... Do you have to be so blunt? If even a Resonator like you were unable to feel any powers...",
+                "es": "Tú... ¿Hace falta ser tan {Male=franco;Female=franca}? Si un resonador como tú no siente ningún poder...",
+                "fr": "Toi... Comment oses-tu être si {Male=brutal;Female=brutale} ? Si même {Male=un résonateur;Female=une résonatrice} comme toi ne ressent aucun pouvoir...",
+                "ja": "うぅ……もう少しやんわりとした言い方をしてくれたっていいじゃない……あなたのような共鳴者でも何の力も感じなかったなんて……",
+                "ko": "당신... 좀 덜 직설적으로 말 할 순 없나요... 당신 같은 공명자도 어떠한 힘도 느끼지 못했다니...",
+                "th": "คุณ... จำเป็นต้องพูดจาขวานผ่าซากขนาดนี้เลยเหรอ ถ้าแม้แต่เรโซเนเตอร์อย่างคุณยังไม่รู้สึกถึงพลังใดๆ ได้...",
+                "zh-Hans": "您……您就不能说点委婉的么……连您这样的共鸣者都感受不到任何力量……",
+                "zh-Hant": "您……您就不能說點委婉的嗎……連您這樣的共鳴者都感受不到任何力量……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Erde aufreißen? Das klingt wie ein Ungeheuer, das nur Zerstörung bringt! Moment, ist das nicht das, was in dieser neuen Fernsehserie passiert?",
+                "en": "Ripping the earth apart... It sounds like a beast that brings nothing but destruction! Wait, it's just like that new TV series, isn't it?",
+                "es": "Partiendo la tierra... ¡Suena como una bestia que solo trae destrucción! Espera, ¿no es justo como esa nueva serie de televisión?",
+                "fr": "Déchirer le sol... On dirait une bête qui n'apporte que destruction ! Attends, n'est-ce pas exactement comme dans la nouvelle série télé ?",
+                "ja": "大地を引き裂く……それだと破滅をもたらす怪物のようね。ちょっと待って、それって最近人気の連続ドラマのことじゃ……",
+                "ko": "대지를 찢는... 듣자니 파멸을 가져오는 괴물 같네요. 잠시만요, 요즘 인기있는 그 연극 시리즈 아닌가요?",
+                "th": "ฉีกกระชากผืนดิน... ฟังดูเหมือนอสูรที่ไม่ได้นำพาสิ่งใดมานอกจากความพินาศ! เดี๋ยวสิ นี่มันละครทีวีที่กำลังดังอยู่ช่วงนี้เลยนี่นา?",
+                "zh-Hans": "撕裂大地……听起来完全就是带来毁灭的怪物啊，等下，这不是那个最近很火的连载戏剧么？",
+                "zh-Hant": "撕裂大地……聽起來完全就是帶來毀滅的怪物啊，等一下，這不是那個最近很紅的連載戲劇嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Blitze schleudern? Moment, ist das nicht genauso wie in diesem Mythos aus einem fernen Land?",
+                "en": "Hurling lightning bolts... Wait, isn't this from that classic foreign mythology?",
+                "es": "Lanzando rayos... Espera, ¿no es como en la mitología extranjera?",
+                "fr": "Lancer des éclairs... Attends, n'est-ce pas exactement comme dans cette mythologie étrangère ?",
+                "ja": "雷を手に……ちょっと待って。それって海外で有名なあの……",
+                "ko": "손에 천둥번개를 들고... 잠깐, 이건 외국의 그 전설 아닌가요?",
+                "th": "ฟาดสายฟ้า... เดี๋ยวสิ นี่มันมาจากเทพนิยายคลาสสิกของต่างแดนไม่ใช่หรือ",
+                "zh-Hans": "手持雷电……等下，这不是来自海外的那个经典传说么？",
+                "zh-Hant": "手持雷電……等一下，這不是來自海外的那個經典傳說嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es sind bereits so viele Jahre vergangen. Seine Frequenz ist längst verschwunden ...",
+                "en": "After all these years, there's barely any frequency left...",
+                "es": "Han pasado tantos años. Su frecuencia se desvaneció hace mucho...",
+                "fr": "Tant d'années se sont écoulées, sa fréquence a disparu depuis longtemps...",
+                "ja": "{Male=何年も経ってるんだ、もう周波数は残ってない……;Female=何年も経ってるんだから、もう周波数は残ってない……}",
+                "ko": "세월이 많이 흘러서 주파수가 별로 남아있지 않을 거예요...",
+                "th": "เวลาผ่านไปขนาดนี้แล้ว คงแทบไม่มีคลื่นความถี่เหลืออยู่แล้วล่ะ...",
+                "zh-Hans": "过了这么多年，早就没什么频率留下了……",
+                "zh-Hant": "過了這麼多年，早就沒什麼頻率留下了……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber Er schlummert hier schon seit Urzeiten, sogar vor der Gründung von Septimont gab es ihn! Im antiken Septimont nutzte man diesen Ort für Prüfungen, und die Helden aus den Legenden wandelten hier einst ...",
+                "en": "But They have slumbered here since before the founding of Septimont! In ancient Septimont, this place was known as the trial grounds, where the noble deeds of legendary heroes were written throughout history...",
+                "es": "¡Pero ha descansado aquí desde antes de fundarse Septimont! En la antigüedad, este lugar se conocía como Campos de Prueba, donde los héroes legendarios dejaron su huella en la historia...",
+                "fr": "Mais il dort ici depuis avant la création de Septimont ! Dans le Septimont de l'antiquité, cet endroit était connu sous le nom de Terrain des épreuves, où les héros légendaires ont marqué l'histoire...",
+                "ja": "でも、主はセブン・ヒルズが建てられる前からここに眠っているの。かつてのセブン・ヒルズでは、ここは人々から試練の地と呼ばれ、伝説の英雄たちもここに功績を残しているのよ……",
+                "ko": "하지만 신은 일곱 언덕이 생기기 전부터 이곳에 잠들었어요. 예전 일곱 언덕 사람들은 이곳을 시련의 땅이라고 불렀고, 전설의 영웅들도 모두 이곳에 발자취를 남겼죠...",
+                "th": "แต่ท่านผู้ยิ่งใหญ่หลับใหลอยู่ที่นี่มาตั้งแต่ก่อนการก่อตั้งเซปติมอนต์อีกนะ! ในเซปติมอนต์ยุคโบราณ สถานที่แห่งนี้เป็นที่รู้จักในนามดินแดนแห่งการทดสอบ สถานที่ซึ่งเหล่าผู้กล้าในตำนานได้จารึกวีรกรรมของตนไว้ในหน้าประวัติศาสตร์...",
+                "zh-Hans": "可祂从七丘建立前就长眠于此了啊，在古老的七丘，这里被人们称作试炼之地，传说中的英雄们也都在此留下过事迹……",
+                "zh-Hant": "但祂從七丘建立前就長眠於此了啊，在古老的七丘，這裡被人們稱作試煉之地，傳說中的英雄們也都在此留下過事跡……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warum hätten sich die Krieger von Septimont hier versammeln sollen, wenn nicht, um die Macht des Drachen aufzunehmen?",
+                "en": "Why would countless warriors of Septimont come all this way if not to inherit the dragon's powers?",
+                "es": "¿Por qué vendrán aquí los guerreros de Septimont si no es para heredar el poder del dragón?",
+                "fr": "Pourquoi tous les guerriers de Septimont afflueraient-ils ici si ce n'est pas pour hériter du pouvoir du dragon ?",
+                "ja": "もし巨竜の力が残ってなければ、セブン・ヒルズの英雄たちはどうして次々とここにやって来るのかしら。",
+                "ko": "만약 거대한 용이 힘을 물려주지 않았다면, 일곱 언덕의 그 용사들이 어찌 줄지어 희생을 무릅쓰고 이곳에 왔겠어요?",
+                "th": "ถ้าไม่ใช่เพื่อสืบทอดพลังของมังกรแล้วละก็ เหล่านักรบผู้กล้าหาญของเซปติมอนต์คนแล้วคนเล่าจะพากันมาไกลถึงที่นี่ทำไมกันล่ะ",
+                "zh-Hans": "如果不是巨龙将力量传承了下去，七丘的那些勇士又怎会前赴后继地来到这里？",
+                "zh-Hant": "如果不是巨龍將力量傳承了下去，七丘的那些勇士又怎會前赴後繼地來到這裡？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe das alles nicht ...",
+                "en": "I fail to understand...",
+                "es": "No lo entiendo...",
+                "fr": "Je ne comprends pas...",
+                "ja": "わからないわ……",
+                "ko": "전 이해가 안 돼요...",
+                "th": "ฉันไม่เข้าใจเลย...",
+                "zh-Hans": "我想不明白……",
+                "zh-Hant": "我想不明白……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                },
+                "entity": {
+                  "entityId": 109850127,
+                  "mapId": 8,
+                  "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+                  "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+                  "areaId": 33003,
+                  "position": {
+                    "x": 1124334,
+                    "y": 1171214,
+                    "z": 18011
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -27
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 109850218,
+          "mapId": 8,
+          "blueprintType": "Gameplay008",
+          "name": "TsEntity_玩法_风筝声骸钩锁2",
+          "areaId": 33003,
+          "position": {
+            "x": 1125456,
+            "y": 1169893,
+            "z": 18390
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850220,
+          "mapId": 8,
+          "blueprintType": "Monster_Branch2.4_005",
+          "name": "TsEntity_小怪_幼冰翼龙_新版4",
+          "areaId": 33003,
+          "position": {
+            "x": 1143114,
+            "y": 1170395,
+            "z": 20348
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850221,
+          "mapId": 8,
+          "blueprintType": "Monster_Branch2.4_004",
+          "name": "TsEntity_小怪_幼暗翼龙",
+          "areaId": 33003,
+          "position": {
+            "x": 1142746,
+            "y": 1169736,
+            "z": 20483
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850222,
+          "mapId": 8,
+          "blueprintType": "Monster_Branch2.4_007",
+          "name": "TsEntity_小怪_幼雷翼龙_新版5",
+          "areaId": 33003,
+          "position": {
+            "x": 1137960,
+            "y": 1170049,
+            "z": 21132
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850223,
+          "mapId": 8,
+          "blueprintType": "Monster_Branch2.4_005",
+          "name": "TsEntity_小怪_幼冰翼龙_新版6",
+          "areaId": 33003,
+          "position": {
+            "x": 1138176,
+            "y": 1170529,
+            "z": 21169
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -77
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850224,
+          "mapId": 8,
+          "blueprintType": "Monster_Branch2.4_004",
+          "name": "TsEntity_小怪_幼暗翼龙7",
+          "areaId": 33003,
+          "position": {
+            "x": 1138580,
+            "y": 1170672,
+            "z": 21076
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -136
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109850225,
+          "mapId": 8,
+          "blueprintType": "Monster_Branch2.4_007",
+          "name": "TsEntity_小怪_幼雷翼龙_新版6",
+          "areaId": 33003,
+          "position": {
+            "x": 1145315,
+            "y": 1170919,
+            "z": 18617
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 166851192,
+          "mapId": 8,
+          "blueprintType": "Gameplay008",
+          "name": "TsEntity_玩法_风筝声骸钩锁10",
+          "areaId": 33003,
+          "position": {
+            "x": 1126213,
+            "y": 1167529,
+            "z": 18903
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 77
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 4,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 5,
+      "type": "Repeater",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109850127,
+          "mapId": 8,
+          "blueprintType": "branch2.4_109_NPCFemaleM/JDS1_7",
+          "name": "TsEntity_B2_4_七丘_卓卡蕾萨",
+          "areaId": 33003,
+          "position": {
+            "x": 1124334,
+            "y": 1171214,
+            "z": 18011
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -27
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_彩蛋NPC对话+包装",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie auch immer ... Mein Meister mag zwar tot sein, aber in Seinem Leichnam ruht noch immer Seine Kraft ...",
+                "en": "Well, I digress... Though my Master is no longer with us, Their powers live on within Their remains...",
+                "es": "Bueno, en fin... aunque mi Maestro esté muerto, Su cadáver aún conserva Su poder...",
+                "fr": "Eh bien, en tout cas, même si mon Maître est mort, son corps conserve toujours ce pouvoir...",
+                "ja": "コホン、とにかく、我が主はすでに亡くなっているけれど、その力はまだ残骸の中に残っているはず……",
+                "ko": "콜록, 아무튼 신은 고인이 되었지만, 그의 힘은 아직 그 유해 속에 남아 있어요...",
+                "th": "เอ่อ ข้านอกเรื่องไปหน่อย... เอาเป็นว่า ถึงองค์มหาเทพจะไม่ได้อยู่กับเราแล้ว แต่พลังของท่านยังคงสถิตอยู่ในร่าง...",
+                "zh-Hans": "咳，总之，吾主虽然已经作古，但祂的力量一定还留存于残躯之中……",
+                "zh-Hant": "咳，總之，吾主雖然已經作古，但祂的力量一定還留存於殘軀之中……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich die Relikt-Energie aus Seinem Körper hierher bringen könnte, dann würde ich Seine Macht mit Freuden mit dir teilen.",
+                "en": "Locate and bring me the Remnant Energy from Their remains, and I will gladly share Their power with you.",
+                "es": "Si pudiera traer la Energía Remanente de Su cuerpo hasta aquí, con gusto compartiría Su poder contigo.",
+                "fr": "Si je pouvais apporter l'énergie vestigiale de son corps, je partagerais volontiers son pouvoir avec toi.",
+                "ja": "もし残骸に残っている反響エナジーをここに持ってこれたら、あなたと我が主の力を分かち合ってもいいわ。",
+                "ko": "만약 그 유해 속의 울림 에너지를 이곳으로 가져오게 된다면, 당신에게 신의 힘을 공유해줄게요",
+                "th": "จงตามหาและนำพลังงานเศษเสี้ยวความถี่จากร่างท่านผู้ยิ่งใหญ่มาให้ข้า แล้วข้ายินดีจะแบ่งปันพลังขององค์มหาเทพให้กับคุณ",
+                "zh-Hans": "如果能把残躯上的回音能量带到这里，我愿与你共享吾主的力量。",
+                "zh-Hant": "如果能把殘軀上的回音能量帶到這裡，我願與你共享吾主的力量。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 850323,
+                "name": {
+                  "zh-Hans": "卓卡蕾萨"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_彩蛋NPC对话+包装",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Irgendwo lodern die Flammen noch heller ...",
+                "en": "Somewhere, the flames begin to burn stronger...",
+                "es": "En alguna parte, las llamas arden más intensamente...",
+                "fr": "Quelque part, les flammes brillent plus intensément...",
+                "ja": "どこかで燃えている火がより激しさを増した……",
+                "ko": "어딘가에서 불이 점점 더 강하게 타오르고 있어...",
+                "th": "ณ ที่แห่งหนึ่ง เปลวเพลิงโหมแรงขึ้น...",
+                "zh-Hans": "某处的火燃烧得更旺了……",
+                "zh-Hant": "某處的火燃燒得更旺了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_彩蛋NPC对话+包装",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Irgendwo lodern die Flammen noch heller ...",
+                "en": "Somewhere, the flames begin to burn stronger...",
+                "es": "En alguna parte, las llamas arden más intensamente...",
+                "fr": "Quelque part, les flammes brillent plus intensément...",
+                "ja": "どこかで燃えている火がより激しさを増した……",
+                "ko": "어딘가에서 불이 점점 더 강하게 타오르고 있어...",
+                "th": "ณ ที่แห่งหนึ่ง เปลวเพลิงโหมแรงขึ้น...",
+                "zh-Hans": "某处的火燃烧得更旺了……",
+                "zh-Hant": "某處的火燃燒得更旺了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_彩蛋NPC对话+包装",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Irgendwo lodern die Flammen noch heller ...",
+                "en": "Somewhere, the flames begin to burn stronger...",
+                "es": "En alguna parte, las llamas arden más intensamente...",
+                "fr": "Quelque part, les flammes brillent plus intensément...",
+                "ja": "どこかで燃えている火がより激しさを増した……",
+                "ko": "어딘가에서 불이 점점 더 강하게 타오르고 있어...",
+                "th": "ณ ที่แห่งหนึ่ง เปลวเพลิงโหมแรงขึ้น...",
+                "zh-Hans": "某处的火燃烧得更旺了……",
+                "zh-Hant": "某處的火燃燒得更旺了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_彩蛋NPC对话+包装",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Irgendwo lodern die Flammen noch heller ...",
+                "en": "Somewhere, the flames begin to burn stronger...",
+                "es": "En alguna parte, las llamas arden más intensamente...",
+                "fr": "Quelque part, les flammes brillent plus intensément...",
+                "ja": "どこかで燃えている火がより激しさを増した……",
+                "ko": "어딘가에서 불이 점점 더 강하게 타오르고 있어...",
+                "th": "ณ ที่แห่งหนึ่ง เปลวเพลิงโหมแรงขึ้น...",
+                "zh-Hans": "某处的火燃烧得更旺了……",
+                "zh-Hant": "某處的火燃燒得更旺了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_支线_彩蛋NPC对话+包装",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Irgendwo lodern die Flammen noch heller ...",
+                "en": "Somewhere, the flames begin to burn stronger...",
+                "es": "En alguna parte, las llamas arden más intensamente...",
+                "fr": "Quelque part, les flammes brillent plus intensément...",
+                "ja": "どこかで燃えている火がより激しさを増した……",
+                "ko": "어딘가에서 불이 점점 더 강하게 타오르고 있어...",
+                "th": "ณ ที่แห่งหนึ่ง เปลวเพลิงโหมแรงขึ้น...",
+                "zh-Hans": "某处的火燃烧得更旺了……",
+                "zh-Hant": "某處的火燃燒得更旺了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

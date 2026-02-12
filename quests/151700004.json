@@ -1,0 +1,285 @@
+{
+  "id": 151700004,
+  "key": "摩托教学任务",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Fahrzeug-Training",
+    "en": "Vehicle Driving Tutorial",
+    "es": "Tutorial de conducción de vehículos",
+    "fr": "Tutoriel de conduite",
+    "ja": "乗り物の運転チュートリアル",
+    "ko": "탑승 장비 운전 튜토리얼",
+    "th": "บทฝึกสอนขับขี่ยานพาหนะ",
+    "zh-Hans": "载具驾驶教学",
+    "zh-Hant": "運具駕駛教學"
+  },
+  "desc": {
+    "de": "Du hast ein Fahrzeug erhalten. Bitte folge den Anweisungen von WavesLine und gehe zum Trainings-Terminal, um das Fahrzeugfahrtraining abzuschließen.",
+    "en": "You've obtained a vehicle. Please follow the WavesLine instructions and go to the Training Terminal to complete vehicle driving tutorial.",
+    "es": "Has conseguido un vehículo. Por favor, sigue las instrucciones de WavesLine y dirígete a la Terminal de Entrenamiento de Vehículos para completar el tutorial de conducción del vehículo.",
+    "fr": "Vous avez obtenu un véhicule. Suivez les instructions du Canal de Marée jusqu'à la Borne d'entraînement pour terminer le tutoriel.",
+    "ja": "あなたは無事に乗り物を受け取った。メッセージの指示に従い、チュートリアル用デバイスで使い方を学ぼう。",
+    "ko": "탑승 장비를 획득했습니다. 메시지의 안내에 따라 튜토리얼 단말기로 가서 탑승 장비 운전 튜토리얼을 완료하세요",
+    "th": "คุณได้รับยานพาหนะแล้ว ตามคำแนะนำในข้อความไปยังเทอร์มินัลบทฝึกสอนเพื่อสำเร็จบทฝึกสอนขับยานพาหนะ",
+    "zh-Hans": "你已经获得了载具，根据飞讯的指引，去教学终端完成载具驾驶教学吧。",
+    "zh-Hant": "你已經獲得了運具，根據飛訊的指引，去教學終端完成運具駕駛教學吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "entities": [
+        {
+          "entityId": 151700767,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Gameplay_3_0/Common3",
+          "name": "TsEntity_玩法_通用终端_3_0-摩托教学",
+          "areaId": 36129,
+          "position": {
+            "x": -121620,
+            "y": -614750,
+            "z": 40021
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 106
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "dialogs": []
+    },
+    {
+      "id": 29,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 40,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erreiche den angegebenen Ort.",
+        "en": "Reach the designated point",
+        "es": "Alcanza el punto designado.",
+        "fr": "Rendez-vous au point indiqué pour continuer",
+        "ja": "目標地点に向かう",
+        "ko": "지정된 위치에 도달하여 진행하기",
+        "th": "ไปยังตำแหน่งที่กำหนดเพื่อดำเนินการ",
+        "zh-Hans": "到达指定位置进行",
+        "zh-Hant": "到達指定位置進行"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 42,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 12,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 12,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 13,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lies die WavesLine-Nachricht der Sternenfackel-Akademie",
+        "en": "Read the WavesLine message from Startorch Academy",
+        "es": "Lee el mensaje en WavesLine de la Academia Fuegostelar.",
+        "fr": "Lire le message de l'Académie Brandétoile via le Canal de Marée",
+        "ja": "スタートーチ学園からのメッセージを読む",
+        "ko": "스타토치 아카데미에서 보낸 메시지 확인하기",
+        "th": "อ่านข้อความจากสถาบันสตาร์ทอร์ช",
+        "zh-Hans": "阅读星炬学院发送的飞讯",
+        "zh-Hant": "閱讀星炬學院發送的飛訊"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 15,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lies die WavesLine-Nachricht der Sternenfackel-Akademie",
+        "en": "Read the WavesLine message from Startorch Academy",
+        "es": "Lee el mensaje en WavesLine de la Academia Fuegostelar.",
+        "fr": "Lire le message de l'Académie Brandétoile via le Canal de Marée",
+        "ja": "スタートーチ学園からのメッセージを読む",
+        "ko": "스타토치 아카데미에서 보낸 메시지 확인하기",
+        "th": "อ่านข้อความจากสถาบันสตาร์ทอร์ช",
+        "zh-Hans": "阅读星炬学院发送的飞讯",
+        "zh-Hant": "閱讀星炬學院發送的飛訊"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 30,
+      "parentId": 29,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 43,
+      "parentId": 29,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 30,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 30,
+      "type": "QuestFailed",
+      "entities": [
+        {
+          "entityId": 151700767,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Gameplay_3_0/Common3",
+          "name": "TsEntity_玩法_通用终端_3_0-摩托教学",
+          "areaId": 36129,
+          "position": {
+            "x": -121620,
+            "y": -614750,
+            "z": 40021
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 106
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 32,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 33,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 44,
+      "parentId": 43,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 46,
+      "parentId": 43,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 48,
+      "parentId": 43,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 45,
+      "parentId": 44,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 151700767,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Gameplay_3_0/Common3",
+          "name": "TsEntity_玩法_通用终端_3_0-摩托教学",
+          "areaId": 36129,
+          "position": {
+            "x": -121620,
+            "y": -614750,
+            "z": 40021
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 106
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 49,
+      "parentId": 48,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 50,
+      "parentId": 49,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 51,
+      "parentId": 50,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 52,
+      "parentId": 50,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

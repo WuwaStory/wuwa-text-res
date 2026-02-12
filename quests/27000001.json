@@ -1,0 +1,110 @@
+{
+  "id": 27000001,
+  "key": "多人C级演出",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 27000013,
+          "mapId": 32,
+          "blueprintType": "NPC004",
+          "name": "TsEntity_154_002_商人女7",
+          "areaId": 0,
+          "position": {
+            "x": 220,
+            "y": -1260,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 11,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Sag etwas 111",
+                "es": "Diga algo 111",
+                "zh-Hans": "说点什么吧111"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sag etwas 222",
+                "es": "Diga algo 222",
+                "zh-Hans": "说点什么吧222"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sag etwas 333",
+                "es": "Diga algo 333",
+                "zh-Hans": "说点什么吧333"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 142,
+                "name": {
+                  "zh-Hans": "3号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

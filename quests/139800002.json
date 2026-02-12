@@ -1,0 +1,576 @@
+{
+  "id": 139800002,
+  "key": "1.4割草爬塔活动",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Krieger-Schlachtfeld der Überfallbewegung",
+    "en": "Pincer Maneuver Warriors",
+    "es": "Guerreros con movimientos de pinza",
+    "fr": "Combattants du double-enveloppement",
+    "ja": "挟撃作戦無双版",
+    "ko": "시간차 협공 무쌍 버전",
+    "th": "นักรบตีโอบ",
+    "zh-Hans": "钳形激战无双版",
+    "zh-Hant": "鉗形激戰無雙版"
+  },
+  "desc": {
+    "de": "Kürzlich hat sich auf dem Huaxu-Forum ein Simulationsprogramm unbekannter Herkunft verbreitet. Die Forscherin Lizhu, eine aktive Nutzerin, scheint ihre eigene Perspektive auf dieses faszinierende Programm zu haben …",
+    "en": "A mysterious combat simulation program has gone viral on the Academy's Huaxu Hive. Researcher Lizhu, an active user, seems to have insights on this intriguing program...",
+    "es": "Un misterioso programa de simulación de combate se ha vuelto viral en el foro de Huaxu de la Academia. La investigadora Lizhu, una usuaria activa, parece tener su propia perspectiva sobre este intrigante programa…",
+    "fr": "Un mystérieux programme de simulation de combat fait le buzz sur le forum de l'Académie de Huaxu. Il paraît que Lizhu, chercheuse et membre actif du forum, a sa propre vision de ce programme intéressant…",
+    "ja": "最近、華胥研究院内部の今涯掲示板で、出所不明の戦闘シミュレーションプログラムが流行している。掲示板の古参である研究員のリシュは、これについて何か言いたいことがあるようだ……",
+    "ko": "최근, 화서연구원 내부의 오늘 포럼에 알 수 없는 시뮬레이션 전투 프로그램이 유행하고 있습니다. 연구원 려주는 전문 포럼가로서 할 말이 있는 것 같습니다...",
+    "th": "โปรแกรมจำลองการต่อสู้ลึกลับกลายเป็นไวรัลที่ฟอรัมหัวซวีของสถาบัน นักวิจัย Lizhu ซึ่งเป็นผู้ใช้ขาประจำดูเหมือนจะมีข้อมูลเชิงลึกเกี่ยวกับโปรแกรมที่แปลกประหลาดนี้...",
+    "zh-Hans": "近期，华胥研究院内部的今涯论坛上流行着一个来路不明的模拟战斗程序。研究员骊珠作为资深论坛人士，似乎对此有话要说……",
+    "zh-Hant": "近期，華胥研究院內部的今涯論壇上流行著一個來路不明的模擬戰鬥程式。研究員驪珠作為資深論壇人士，似乎對此有話要說……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Spricht mit Lizhu",
+        "en": "Talk to Lizhu",
+        "es": "Habla con Lizhu.",
+        "fr": "Parler à Lizhu",
+        "ja": "リシュと会話する",
+        "ko": "려주와 대화하기",
+        "th": "คุยกับ Lizhu",
+        "zh-Hans": "与骊珠交谈",
+        "zh-Hant": "與驪珠交談"
+      },
+      "entities": [
+        {
+          "entityId": 139800015,
+          "mapId": 2502,
+          "blueprintType": "NPC0150",
+          "name": "TsEntity_0150_170_骊珠5",
+          "areaId": 0,
+          "position": {
+            "x": -762,
+            "y": -217,
+            "z": 4
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 140000015,
+          "mapId": 2502,
+          "blueprintType": "NPC0150",
+          "name": "TsEntity_0150_170_骊珠3",
+          "areaId": 0,
+          "position": {
+            "x": -762,
+            "y": -203,
+            "z": 4
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 140000024,
+          "mapId": 2502,
+          "blueprintType": "NPC0150",
+          "name": "TsEntity_0150_170_骊珠4",
+          "areaId": 0,
+          "position": {
+            "x": -627,
+            "y": 1140,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_割草爬塔活动引导",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Komm schon, Lizhu! Die Deadline für das Projekt steht an. Du kannst nicht weiter so herumtrödeln.",
+                "en": "Come on, Lizhu! The project deadline's coming up—you can't keep loafing around like this.",
+                "es": "¡Vamos, Lizhu! Se acerca la fecha de entrega del proyecto... no puedes seguir siendo una haragana.",
+                "fr": "Allez, Lizhu ! Tu dois bientôt rendre ce projet... Arrête de traîner.",
+                "ja": "リシュよ、もうこれ以上はダメだ！このままじゃ、本当に論文が書き終わらなくなる……",
+                "ko": "려주야 려주, 왜 이렇게 게으른 거야! 과제도 이제 곧 끝나는데, 더 이상 미루지는 말자...",
+                "th": "เถอะน่า Lizhu! ใกล้จะถึงเดดไลน์ของโปรเจกต์ใหญ่แล้วนะ จะเอาแต่นั่งเหม่อลอยแบบนี้ต่อไปไม่ได้นะ",
+                "zh-Hans": "骊珠啊骊珠，你怎么能如此懈怠！课题快收尾了，不能再拖延下去了……",
+                "zh-Hant": "驪珠啊驪珠，你怎麼能如此懈怠！課題快收尾了，不能再拖延下去了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ist etwas passiert?",
+                    "en": "Did something happen?",
+                    "es": "¿Sucedió algo?",
+                    "fr": "Quelque chose ne va pas ?",
+                    "ja": "{Male=何かあったのか？;Female=何かあったの？}",
+                    "ko": "무슨 일이에요?",
+                    "th": "เกิดอะไรขึ้นเหรอ?",
+                    "zh-Hans": "发生什么事了？",
+                    "zh-Hant": "發生什麼事了？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wieder am Faulenzen?",
+                    "en": "Slacking off again?",
+                    "es": "¿Otra vez está holgazaneando?",
+                    "fr": "Encore en train de rêvasser ?",
+                    "ja": "{Male=またサボってるな。;Female=またサボってるね。}",
+                    "ko": "또 농땡이치고 있는 거예요?",
+                    "th": "แอบอู้อีกแล้วเหรอ?",
+                    "zh-Hans": "又在摸鱼吗？",
+                    "zh-Hant": "又在摸魚嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh! Hey, {PlayerName}. Du kommst gerade rechtzeitig.",
+                "en": "Oh, hi {PlayerName}. You're here just in time.",
+                "es": "Ah, hola, {PlayerName}. Llegaste justo.",
+                "fr": "Oh, salut, {PlayerName}. Tu arrives juste à temps.",
+                "ja": "あっ、{PlayerName}さん、ちょうどいいところに……",
+                "ko": "아, {PlayerName}. 마침 잘 왔어요",
+                "th": "โอ๊ะ สวัสดี {PlayerName} มาได้เวลาพอดีเลย",
+                "zh-Hans": "啊，{PlayerName}，你来得正是时候。",
+                "zh-Hant": "啊，{PlayerName}，你來得正是時候。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unsinn! Ich sammle schon den ganzen Tag lang Daten, also verdiene ich doch wohl eine klitzekleine Pause.",
+                "en": "Nonsense! I've been collecting data all day, so I think I deserve a tiny little break.",
+                "es": "¡No digas tonterías! Estuve recopilando datos todo el día, creo que me merezco un descansito.",
+                "fr": "N'importe quoi ! J'ai passé la journée à collecter des données, alors j'ai bien le droit de faire une petite pause.",
+                "ja": "サボってませんよ！今日はちゃんとデータ処理も終わってます。ちょっと休んでるだけ、本当にちょっとだけ！",
+                "ko": "무슨 소리세요! 오늘은 데이터 실험하고 있는걸요. 그냥 잠깐, 아주 잠깐 쉬고 있었을 뿐이에요!",
+                "th": "ใช่ที่ไหนล่ะ! ฉันเก็บข้อมูลมาทั้งวันแล้ว เลยคิดว่าควรจะพักสักหน่อยน่ะ",
+                "zh-Hans": "哪有！今天我可是好好地在跑数据，只放松了一会儿，真的只有一小会儿！",
+                "zh-Hant": "哪有！今天我可是好好地在跑數據，只放鬆了一會兒，真的只有一小會兒！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also … Hast du schonmal vom Krieger-Schlachtfeld der Überfallbewegung gehört?",
+                "en": "Now… have you heard of Pincer Maneuver Warriors?",
+                "es": "¿Escuchaste hablar sobre los guerreros con movimientos de pinza?",
+                "fr": "Bon... As-tu entendu parler de Combattants du double-enveloppement ?",
+                "ja": "それで、いきなりなのですが……「挟撃作戦無双版」って聞いたことありますか？",
+                "ko": "좀 갑작스럽기는 하지만... 혹시 「시간차 협공 무쌍 버전」을 들어본 적 있나요?",
+                "th": "เอาล่ะ... คุณได้ยินเรื่องนักรบตีโอบบ้างไหม?",
+                "zh-Hans": "虽然这么说有点唐突……呃，你听说过「钳形激战无双版」吗？",
+                "zh-Hant": "雖然這麼說有點唐突……呃，你聽說過「鉗形激戰無雙版」嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überfallbewe… was?",
+                    "en": "Pincer what?",
+                    "es": "¿Movimientos de qué?",
+                    "fr": "Les Combattants quoi ?",
+                    "ja": "何無双……？",
+                    "ko": "시간차 협공 무쌍 버전이요?",
+                    "th": "นักรบไรนะ?",
+                    "zh-Hans": "什么无双版？",
+                    "zh-Hant": "什麼無雙版？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Klingt komisch.",
+                    "en": "Sounds weird.",
+                    "es": "Qué extraño.",
+                    "fr": "C'est un nom étrange.",
+                    "ja": "{Male=変わった名前だな。;Female=変わった名前だね。}",
+                    "ko": "이상한 이름이네요",
+                    "th": "ฟังดูแปลกจัง",
+                    "zh-Hans": "好怪的名字。",
+                    "zh-Hant": "好怪的名字。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es handelt sich um ein Simulationsprogramm, das im Huaxu-Forum viral gegangen ist. Es simuliert Kampfszenarien unter Verwendung der Daten von digitalen Entitäten und Tacet-Dissonanzen.",
+                "en": "It's a simulation program that's gone viral on the Huaxu Hive. It simulates combat scenarios using data from digital entities and Tacet Discords.",
+                "es": "Es un simulador que se hizo viral en el foro Huaxu. Simula escenarios de combate con datos de entidades digitales y disonancias tácitas.",
+                "fr": "C'est un programme de simulation qui est devenu viral sur le Forum Popcorn Huaxu. Il simule des scénarios de combat grâce aux données d'entités digitales et de TDs.",
+                "ja": "最近、今涯掲示板で流行っているシミュレーションプログラムです。残像のデータと戦闘を行い、実戦をシミュレーションすることができるんですよ。",
+                "ko": "최근 「오늘 포럼」에 유행하고 있는 시뮬레이션 프로그램으로, 실전 환경을 시뮬레이션하여 데이터 실체와 잔상 데이터 등으로 대전할 수 있어요",
+                "th": "มันเป็นโปรแกรมจำลองสถานการณ์ที่กำลังเป็นไวรัลในฟอรัมหัวซวี สามารถจำลองสถานการณ์การต่อสู้ โดยใช้ข้อมูลจากเอนทิตีดิจิทัลและทาเซ็ตดิสคอร์ด",
+                "zh-Hans": "那是近期在今涯论坛上流行的一个模拟程序，可以用数据体和残象数据之类的进行战斗，模拟实战环境。",
+                "zh-Hant": "那是近期在今涯論壇上流行的一個模擬程式，可以用數據體和殘象數據之類的進行戰鬥，模擬實戰環境。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du steuerst zwei Teams, die ein „Zangenmanöver“ durchführen und in begrenzter Zeit endlose Wellen von Gegnern niederschlagen!",
+                "en": "You control two teams to perform a \"pincer maneuver\" and fight off endless waves of enemies in a limited time.",
+                "es": "Controlas dos equipos que realizan un “movimiento de pinza” y luchan contra infinitas oleadas de enemigos en un período de tiempo limitado.",
+                "fr": "Tu contrôles deux équipes afin de réaliser un « double-enveloppement » pour affronter des vagues d'ennemis dans un temps limité.",
+                "ja": "……つまり、二つのチームが「空間挟撃戦術」を使って、制限時間内にできるだけ多くの敵を倒す！……というものです！",
+                "ko": "두 개의 시뮬레이션 파티로 「공간 협공 전술」을 펼치며 제한된 시간 내에 끊임없이 쏟아지는 적군을 대항하는 거죠!",
+                "th": "คุณจะต้องควบคุมสองทีมเพื่อ \"ตีโอบ\" และต่อสู้กับศัตรูจำนวนมากมายในช่วงเวลาจำกัด",
+                "zh-Hans": "……用两支模拟小队施展“空间钳形战术”，在有限时间里对抗无穷无尽的敌潮！",
+                "zh-Hant": "……用兩支模擬小隊施展「空間鉗形戰術」，在有限時間裡對抗無窮無盡的敵潮！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ist das Werbung?",
+                    "en": "Is this an ad?",
+                    "es": "¿Acaso esto es un anuncio?",
+                    "fr": "C'est une pub ?",
+                    "ja": "それ宣伝？",
+                    "ko": "홍보 멘트인가요?",
+                    "th": "นี่เป็นการโฆษณารึเปล่า?",
+                    "zh-Hans": "这是宣传语吗？",
+                    "zh-Hant": "這是宣傳語嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Für Werbung klingt das etwas unbeholfen.",
+                    "en": "It's a bit awkward for an ad.",
+                    "es": "Para ser un anuncio, es poco orgánico.",
+                    "fr": "Un peu étrange comme pub.",
+                    "ja": "広告にしてはちょっと下手。",
+                    "ko": "홍보인 게 너무 티 나요",
+                    "th": "โฆษณาดูจะแปลกๆ ไปหน่อยนะ",
+                    "zh-Hans": "广告打得有点硬。",
+                    "zh-Hant": "廣告打得有點硬。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das hat der anonyme Uploader jedenfalls gepostet. Ich weiß, dass Werbung für Spiele oft irgendwie lügt, aber hier war ich neugierig. Also habe ich es nach der Arbeit ausprobiert.",
+                "en": "Anyway, that's what the anonymous uploader posted. I know, a lot of the game ads are kind of fake, but this one intrigued me. So I gave it a try after work.",
+                "es": "Bueno, eso es lo que dijo quien lo publicó, alguien anónimo. Ya sé que muchos anuncios de juego son falsos, pero este me intrigó. Lo probaré cuando termine de trabajar.",
+                "fr": "Bref. C'est ce qu'a publié un anonyme. Je sais que beaucoup de pubs pour les jeux sont fausses, mais celle-ci m'a intrigué. Alors, j'ai essayé après le travail.",
+                "ja": "プログラムをアップロードした匿名さんが、掲示板で書いた説明ですよ。まあ、こういうのって大抵大げさですよね。私は気になって、少しやってみたのですが……",
+                "ko": "익명의 사용자가 게시글에 쓴 내용이에요. 아는 사람은 다 알겠지만, 이런 건 보통 오버해서 쓴 거죠. 그래서 궁금해서 쉴 때 한 번 체험해 봤는데...",
+                "th": "เอาเถอะ นั่นเป็นสิ่งที่ผู้อัปโหลดนิรนามโพสต์ไว้น่ะ ฉันรู้ว่าโฆษณาในเกมส่วนใหญ่ดูจะเป็นของปลอม แต่ฉันสนใจอันนี้นะ",
+                "zh-Hans": "是那个匿名上传者在帖子里写的简介，懂的都懂，这种往往是夸大其词。我很好奇，就在研究之余体验了下……",
+                "zh-Hant": "是那個匿名上傳者在帖子裡寫的簡介，懂的都懂，這種往往是誇大其詞。我很好奇，就在研究之餘體驗了下……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Anscheinend basiert es auf einem taktischen Simulationsprojekt, das von der Akademie und den Schwarzen Küsten gemeinsam entwickelt wurde. Sie haben ein paar lustige kleine Features hinzugefügt, die es überraschend entspannend machen.",
+                "en": "Apparently, it's based on a tactical simulation project co-developed by the Academy and the Black Shores. They added some fun little features that make it surprisingly relaxing.",
+                "es": "Aparentemente, está basado en un proyecto de simulación táctica codesarrollado por la academia y Costa Negra. Le incorporaron algunas funciones divertidas y ahora es relajante, increíble.",
+                "fr": "Apparemment, c'est basé sur un projet de simulation stratégique codéveloppé par l'Académie et le Littoral noir. Ils ont ajouté quelques petites fonctionnalités amusantes qui le rendent étonnement relaxant.",
+                "ja": "どうやら、研究院とブラックショアが昔共同開発した戦術演算を参考にしたものみたいです。それに、独自の要素もあって結構楽しかったですよ。",
+                "ko": "전에 연구원과 검은 해안이 합작하여 개발한 전술적 추론 프로그램을 참고했더라고요. 하지만 재미 요소가 많이 추가돼서 확실히 스트레스가 풀려요",
+                "th": "ก็เลยลองเล่นดูหลังเลิกงาน ดูเหมือนว่าจะอิงจากโปรเจกต์จำลองกลยุทธ์ ที่ทางสถาบันและแบล็กชอร์พัฒนาร่วมกัน พวกเขาเพิ่มฟีเจอร์สนกๆ เข้ามาหลายอย่าง ทำให้รู้สึกผ่อนคลายอย่างประหลาดใจเลย",
+                "zh-Hans": "看得出来参考的是以前研究院和黑海岸合作开发的战术推演项目，但多了一些趣味性改动，很让人减压。",
+                "zh-Hant": "看得出來參考的是以前研究院和黑海岸合作開發的戰術推演專案，但多了一些趣味性改動，很紓壓。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deshalb habe ich vielleicht ein BISSCHEN Freizeit von meinen Forschungsarbeiten genommen, um es zu spielen. Das kann mir keiner übel nehmen.",
+                "en": "That's why I may have squeezed in A LITTLE free time from my research to play it. Can't blame me for this.",
+                "es": "Es por eso que quizás haya usado UN POQUITO de mi tiempo libre durante la investigación para jugarlo. No pueden juzgarme.",
+                "fr": "Et donc, il se peut que j'aie réussi à trouver un tout petit peu de temps pendant mes recherches pour y jouer... Pas de quoi fouetter un chat.",
+                "ja": "仕事の合間を縫ってちょっとやっただけなのですが、「少しだけ」時間を取られてしまって……",
+                "ko": "휴, 잠깐 짬을 내서 한 거라 저도 모르게 시간 「좀 많이」 걸렸네요",
+                "th": "ก็เพราะแบบนี้แหละ ฉันเลยแอบเจียดเวลาว่างจากงานวิจัยมาเล่นเกมนิดหน่อย อย่าโทษฉันเลยนะ",
+                "zh-Hans": "哎，我也是忙里偷闲，不知不觉就在上面花了\"少许\"时间。",
+                "zh-Hant": "哎，我也是忙裡偷閒，不知不覺就在上面花了「少許」時間。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also wieder am Faulenzen.",
+                    "en": "So, you're slacking off again.",
+                    "es": "Entonces estabas holgazaneando de nuevo.",
+                    "fr": "Donc, tu es encore en train de rêvasser.",
+                    "ja": "やっぱりサボってる。",
+                    "ko": "농땡이친 거 맞네요",
+                    "th": "แสดงว่าคุณแอบอู้อีกแล้วเหรอ",
+                    "zh-Hans": "这下摸鱼坐实了。",
+                    "zh-Hant": "這下摸魚坐實了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein, bin ich nicht! Und sag das meinem Mentor nicht, sonst bekomme ich Ärger.",
+                "en": "No, I'm not! Don’t tell my mentor or I'll be in trouble.",
+                "es": "¡Claro que no! No le digas a mi mentor o me meteré en problemas.",
+                "fr": "Non, non ! Ne le dis pas à mon mentor, sinon je vais avoir des ennuis.",
+                "ja": "もうこれ以上はやりません。さすがに先生に怒られそう……",
+                "ko": "이젠 안 할 거예요. 안 그럼 멘토가 또 찾아오시겠어요",
+                "th": "ไม่นะ ฉันเปล่าสักหน่อย! อย่าบอกอาจารย์ของฉันนะ ไม่งั้นฉันเดือดร้อนแน่เลย",
+                "zh-Hans": "不摸了，彻底不摸了，导师知道了又该找我谈话了。",
+                "zh-Hant": "不摸了，徹底不摸了，導師知道了又該找我談話了。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da du jetzt hier bist, vertraue ich dir meinen Account für das Huaxu-Forum an, damit ich fokussiert bleiben kann.",
+                "en": "Since you're here, I'm trusting you with my Huaxu Hive account so I can stay focused.",
+                "es": "Ya que estás aquí, te daré mi cuenta del foro Huaxu, así me puedo concentrar.",
+                "fr": "Puisque tu es là, je te confie mon compte du forum. Comme ça, je ne me déconcentre plus.",
+                "ja": "そうだ、{PlayerName}さん、私のアカウントを預かってくれませんか？",
+                "ko": "지금은 방랑자가 있어서 제 포럼 계정을 좀 맡길게요. 아니면 자꾸 볼 것 같아서요",
+                "th": "ในเมื่อคุณอยู่ที่นี่แล้ว ฉันขอฝากบัญชีฟอรัมหัวซวีไว้ที่คุณด้วยนะ ฉันจะได้มีสมาธิ",
+                "zh-Hans": "现在有你在，我冲浪多年的论坛账号就先托付给你，省得我老惦记。",
+                "zh-Hant": "現在有你在，我的論壇帳號就先託付給你，以免我一直惦記。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und wenn du nicht zu beschäftigt bist, warum probierst du das Programm nicht aus? Es macht wirklich Spaß! Versprochen!",
+                "en": "And if you're not too busy, why not try the program yourself? It's actually pretty fun! I promise!",
+                "es": "Si no tienes mucho para hacer, ¿por qué no pruebas el simulador? ¡Es muy divertido, lo prometo!",
+                "fr": "Si tu n'as rien d'autre à faire, tu devrais essayer le programme ! C'est assez amusant ! Juré, craché !",
+                "ja": "どうかお願いします。あ、そのプログラム、本当に楽しいので、ぜひ試してみてください。",
+                "ko": "이참에 이 시뮬레이션 프로그램을 한 번 체험해 보세요. 진짜 재밌어요. 제발요, 제 부탁 꼭 들어주세요",
+                "th": "แล้วถ้าคุณไม่ยุ่งมาก ก็ลองใช้โปรแกรมดูไหมล่ะ? มันสนุกมากเลยนะ! ฉันรับประกัน!",
+                "zh-Hans": "你可以顺便体验一下这个模拟程序，真的很有意思。拜托拜托，这是我的请求。",
+                "zh-Hant": "你可以順便體驗一下這個模擬程式，真的很有意思。拜託拜託，這是我的請求。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Na gut.",
+                    "en": "Alright, alright.",
+                    "es": "Está bien, como digas.",
+                    "fr": "D'accord, d'accord.",
+                    "ja": "分かった。",
+                    "ko": "알겠어요",
+                    "th": "ก็ได้ ก็ได้",
+                    "zh-Hans": "行吧。",
+                    "zh-Hant": "行吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wenn es langweilig ist, reiche ich eine Beschwerde über das Feedback-Formular ein.",
+                    "en": "If it's boring, I'm leaving a complaint on the feedback form.",
+                    "es": "Si es aburrido, dejaré mi queja en el formulario de comentarios.",
+                    "fr": "Si c'est barbant, je mettrai un avis négatif via leur formulaire.",
+                    "ja": "つまらなかったらフィードバック書くから。",
+                    "ko": "재미없으면 설문지에 피드백을 쓸 거예요",
+                    "th": "ถ้ามันน่าเบื่อ ฉันจะรายงานลงในแบบฟอร์มฟีดแบกเลยคอยดู",
+                    "zh-Hans": "不好玩我就在问卷里写反馈。",
+                    "zh-Hant": "不好玩我就在問卷裡回饋。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich wusste, ich kann auf dich zählen! Hier, ich konfiguriere dir dein Terminal.",
+                "en": "I knew I could count on you! Here, let me set up your terminal.",
+                "es": "¡Sabía que podría contar contigo! ¡Mira, configuraré tu terminal!",
+                "fr": "Je savais que je pouvais compter sur toi ! Attends, je vais régler ta borne.",
+                "ja": "ありがとうございます。デバイスをちょっと貸してもらえませんか。",
+                "ko": "네네. 그럼 단말기를 잠깐 주시겠어요?",
+                "th": "ฉันรู้ว่าฉันไว้ใจคุณได้! มา เดี๋ยวฉันตั้งค่าเทอร์มินัลให้",
+                "zh-Hans": "好哦，终端给我一下。",
+                "zh-Hant": "好喔，終端給我一下。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kein Problem. Warte, woher weißt du von dem Feedback-Formular … Egal, lass mich dein Terminal konfigurieren.",
+                "en": "No problem. Wait, how do you know there's a feedback form... Anyway, let me set up your terminal.",
+                "es": "No hay problema. Un momento... ¿Cómo sabes que hay un formulario? Bueno, configuraré tu terminal.",
+                "fr": "Aucun problème. Attends, comment sais-tu qu'ils ont un formulaire... ? Bref, laisse-moi régler ton appareil.",
+                "ja": "ええ、ぜひお願いします。デバイスをちょっと貸してもらえませんか？",
+                "ko": "그래요. 그런데 체험 설문지가 있다는 건 어떻게 알았어요? 단말기를 잠깐 주시겠어요?",
+                "th": "ไม่มีปัญหา เดี๋ยวนะ คุณรู้เรื่องแบบฟอร์มฟีดแบกได้ยังไง... เอาเถอะ เดี๋ยวฉันตั้งค่าเทอร์มินัลให้",
+                "zh-Hans": "可以啊，你怎么知道会有体验问卷的？终端给我一下。",
+                "zh-Hant": "可以啊，你怎麼知道會有體驗問卷的？終端給我一下。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lizhu wendet sich deinem Terminal zu und arbeitet eine Weile daran …",
+                "en": "Lizhu takes your terminal and operates on it for a while...",
+                "es": "Lizhu toma la Terminal y trabaja en ella por un momento...",
+                "fr": "Lizhu s'occupe de votre borne et la garde un moment.",
+                "ja": "リシュはデバイスを受け取ると、少し操作した……",
+                "ko": "려주는 단말기를 받은 후 한동안 조작을 진행했다...",
+                "th": "Lizhu รับเทอร์มินัลของคุณไปและใช้งานอยู่สักพัก...",
+                "zh-Hans": "骊珠接过了你的终端，在上面进行了一番操作……",
+                "zh-Hant": "驪珠接過了你的終端，在上面進行了一番操作……"
+              },
+              "id": 15
+            },
+            {
+              "text": {
+                "de": "Alles erledigt. Jetzt kannst du dich mit meinem Account einloggen.",
+                "en": "All set. Now you can log in with my account.",
+                "es": "Listo, ahora puedes iniciar sesión con mi cuenta.",
+                "fr": "Voilà. Tu peux maintenant te connecter avec mon compte.",
+                "ja": "これで私のアカウントで、プログラムにログインできるようになりました。",
+                "ko": "이젠 제 계정으로 직접 이 시뮬레이션 프로그램에 로그인할 수 있어요",
+                "th": "เรียบร้อยแล้วล่ะ ทีนี้ล็อกอินด้วยบัญชีของฉันได้แล้ว",
+                "zh-Hans": "这样一来，你就可以直接用我的账号登录这个模拟程序了。",
+                "zh-Hant": "這樣一來，你就可以直接使用我的帳號登入這個模擬程式了。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 224,
+                "name": {
+                  "zh-Hans": "骊珠"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

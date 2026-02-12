@@ -1,0 +1,651 @@
+{
+  "id": 175750006,
+  "key": "呜呜物流_第三天（采集毒莴裙藻）",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Kampagne III",
+    "en": "Lollo Campaign III",
+    "es": "Campaña Lollo: III",
+    "fr": "Projet Loulou III",
+    "ja": "ブブ企画・三",
+    "ko": "무무 기획 · Ⅲ",
+    "th": "แคมเปญลอลโล่ III",
+    "zh-Hans": "呜呜企划 · 三",
+    "zh-Hant": "嗚嗚企劃 · 三"
+  },
+  "desc": {
+    "de": "Der dritte Auftrag kommt von einer geheimnisvollen Dame. Kann Heliobane Fungia überhaupt auch als Schönheitsmittel dienen?\n\nSchließe die Hauptquest Kapitel II, Akt III ab, um den Gegenstand abzuliefern.",
+    "en": "This third errand is from a mysterious lady. Who knew Heliobane Fungia had beautifying properties?\nPlease complete Main Quest Chapter II Act 3 \"What Yesterday Wept, Today Doth Sing\" if you are unable to deliver the quest item.",
+    "es": "El tercer mandado es de una dama misteriosa. ¿Quién sabía que la Venefita sirve para embellecer?\nSi no puedes entregar los objetos, completa «Ayer lloré, y hoy canto» primero.",
+    "fr": "La cliente de la troisième commande est une dame mystérieuse. C'est la première fois qu'on entend que les Algues toxiques ont des effets de soin de peau...\nS'il est impossible de donner un article, veuillez compléter d'abord\nActe II Scène III « Ce qui pleurait hier, chante aujourd'hui »",
+    "ja": "とある謎めいたマダムから三つ目の依頼が来た。ところで、ヘリオベインファンジアに美容効果があるって本当なんだろうか？",
+    "ko": "세 번째 주문은 신비한 부인에게서 왔다. 맹독 해초가 미용에 효과가 있다는 것을 처음 들어본다",
+    "th": "งานฝากที่สามนี้มาจากหญิงสาวลึกลับ ใครจะรู้ว่าสาหร่ายเฮลิโอเบนมีคุณสมบัติช่วยให้สวยงาม\nโปรดทำเควสหลัก บทที่ 2 แอค 3 \"วันนี้ร้องขับขาน แม้วันวานเปื้อนน้ำตา\" ให้สำเร็จ หากคุณไม่สามารถส่งไอเท็มเควสได้",
+    "zh-Hans": "第三单来自一位神秘的夫人。还是第一次听说毒莴裙藻有美容功效？\n如遇无法提交道具，需完成潮汐任务第二章·第三幕「昔我悲伤，今却歌唱」",
+    "zh-Hant": "第三單來自一位神秘的夫人。還是第一次聽說毒萵裙藻有美容功效？\n如無法提交道具，需完成潮汐任務第二章·第三幕「昔我悲傷，今卻歌唱」"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Maji nach seiner Bitte",
+        "en": "Ask Maji what he needs",
+        "es": "Pregúntale a Maji qué es lo que necesita.",
+        "fr": "Parler à Maji pour savoir ce qu'il a besoin",
+        "ja": "馬計から依頼内容を聞く",
+        "ko": "마현에게 수요 파악하기",
+        "th": "ถามมาจิว่าเขาต้องการอะไร",
+        "zh-Hans": "向马计了解需求",
+        "zh-Hant": "向馬計了解需求"
+      },
+      "entities": [
+        {
+          "entityId": 175750001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+          "areaId": 1692,
+          "position": {
+            "x": 688680,
+            "y": 573670,
+            "z": 168
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 175750002,
+          "mapId": 8,
+          "blueprintType": "branch2.0_Collect201_2",
+          "name": "TsEntity_植物201_毒莴裙藻_底座_2.2_采集物",
+          "areaId": 2301,
+          "position": {
+            "x": 814028,
+            "y": 662049,
+            "z": 7229
+          },
+          "rotation": {
+            "x": 18,
+            "y": 4,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Da bist du ja, {PlayerName}!",
+                "en": "Here you are, {PlayerName}!",
+                "es": "¡Aquí estás, {PlayerName}!",
+                "fr": "Te voilà, {PlayerName} !",
+                "ja": "{PlayerName}、来たな！",
+                "ko": "{PlayerName}, 오셨네요!",
+                "th": "มาแล้วเหรอ {PlayerName}!",
+                "zh-Hans": "{PlayerName}，你来了！",
+                "zh-Hant": "{PlayerName}，你來了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hier bin ich.",
+                    "en": "Here I am.",
+                    "es": "Aquí estoy.",
+                    "fr": "Me voilà.",
+                    "ja": "おはよう。",
+                    "ko": "네",
+                    "th": "มาแล้วล่ะ",
+                    "zh-Hans": "我来了。",
+                    "zh-Hant": "我來了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gerade richtig. Ich habe soeben eine neue Bestellung erhalten von … nun, einer mysteriösen Madame.",
+                "en": "Right on time. I just received a new order from… well, a mysterious madame.",
+                "es": "Justo a tiempo. Acaba de llegar un nuevo pedido de… bueno, una dama misteriosa.",
+                "fr": "Pile à l'heure. Je viens de recevoir une nouvelle commande... d'une étrange dame.",
+                "ja": "はは、ちょうどいい。新たな注文だ。ええと……おお、これは謎のマダムからだな……",
+                "ko": "하하, 마침 잘 오셨어요. 방금 새로 주문이 들어왔는데, 어디 보자... 아, 이번 건은 어느 익명 사모님의 주문이네요...",
+                "th": "ฮ่าๆ ตรงเวลาเผงเลย เพิ่งได้ออเดอร์ใหม่มาพอดีจาก... เอ่อ คุณผู้หญิงปริศนา",
+                "zh-Hans": "哈哈，来得正好，我刚刚才接到新的代购单子，让我看看……喔，这单是来自一位神秘的夫人……",
+                "zh-Hant": "哈哈，來得正好，我剛剛才接到新的代購單子，讓我看看……喔，這單是來自一位神秘的夫人……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie benötigt eine Zutat für ihre Kosmetik und wusste zufälligerweise, dass <color=yellow>Heliobane Fungia</color> sehr feuchtigkeitsspendend ist, also bat sie uns um Hilfe.",
+                "en": "She needs an ingredient for her skincare and happens to know that <color=yellow>Heliobane Fungia</color> is quite moisturizing, so she asked us to help.",
+                "es": "Necesita un ingrediente para su rutina de belleza y dice que la <color=yellow>Venefita</color> tiene propiedades rejuvenecedoras, por lo que nos pidió que la ayudemos.",
+                "fr": "Elle a besoin d'un ingrédient pour ses soins de la peau et connaît les propriétés hydratantes des<color=yellow>algues toxiques</color>, alors elle nous a demandé de l'aide.",
+                "ja": "このマダムは、最近新しいスキンケア用品の開発中らしく、<color=yellow>ヘリオベインファンジア</color>に美容効果があると聞き付けて、誰かに採取を頼みたいそうだ。",
+                "ko": "이 사모님께서는 최근 새로운 화장품을 연구하고 있는데, <color=yellow>맹독 해초</color>가 피부 개선에 효과가 좋다고, 대신 좀 사달라고 하네요",
+                "th": "เธอกำลังวิจัยผลิตภัณฑ์บำรุงผิวใหม่ๆ แล้วก็รู้ว่า<color=yellow>สาหร่ายเฮลิโอเบน</color>มีสรรพคุณบำรุงผิว เลยมาขอให้เราช่วย",
+                "zh-Hans": "这位夫人最近正在研究新的护肤品，据说<color=yellow>毒莴裙藻</color>有养颜功效，想委托人帮忙采集。",
+                "zh-Hant": "這位夫人最近正在研究新的護膚品，據說<color=yellow>毒萵裙藻</color>有養顏功效，想委託人幫忙採集。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Aber … ist es wirklich ungefährlich?",
+                    "en": "But… is it really safe to use?",
+                    "es": "¿Seguro que no es peligrosa para la piel?",
+                    "fr": "Mais... c'est vraiment sans risque ?",
+                    "ja": "{Male=それ、本当に毒はないのか……;Female=それ、本当に毒はないの……}",
+                    "ko": "...정말 독이 없는 건가요?",
+                    "th": "ว่าแต่... มันปลอดภัยใช่มั้ย?",
+                    "zh-Hans": "这东西真的没有毒吗……",
+                    "zh-Hant": "這東西真的沒有毒嗎……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hmm … möglicherweise hat sie ihre ganz eigene Art, damit umzugehen. Vielleicht kannst du einen Blick erhaschen, wenn du die Bestellung abgibst.",
+                "en": "Hmm… she may have her own method for handling it. Maybe you can just see what she does when you deliver the order.",
+                "es": "Mmm. Tal vez ella conoce un método seguro de manejarla. Podrías ver qué es lo que hace cuando le entregues el pedido.",
+                "fr": "Hmm... elle a peut-être une méthode spéciale pour la manipuler. Tu pourrais peut-être observer ce qu'elle fait en lui livrant la commande.",
+                "ja": "さあ……マダムには何か秘伝のレシピがあるのかもな？ヘリオベインファンジアを渡す時に、彼女を探ってみたらどうだ？",
+                "ko": "글쎄요... 아마도 사모님께서 특별한 조제법을 가지고 계시겠죠. 직접 전달해드릴 때 한 번 지켜보시는 건 어떠신가요?",
+                "th": "อันนี้... เธอคงมีสูตรลับเฉพาะของตัวเองแหละ ตอนที่คุณส่งสาหร่ายเฮลิโอเบนให้เธอ ลองสังเกตดูหน่อยนะ?",
+                "zh-Hans": "这个……也许那位夫人有自己独特的秘方？等你把毒莴裙藻交给她时，可以观察一下看看？",
+                "zh-Hant": "這個……也許那位夫人有自己獨特的秘方？等你把毒萵裙藻交給她時，可以觀察一下看看？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also gut.",
+                    "en": "Alright then.",
+                    "es": "Muy bien.",
+                    "fr": "D'accord.",
+                    "ja": "わかった。",
+                    "ko": "네, 알겠어요",
+                    "th": "ได้เลย",
+                    "zh-Hans": "好吧。",
+                    "zh-Hant": "好吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich zähle auf dich, {Male=mein Freund;Female=meine Freundin}!",
+                "en": "I'm counting on you, my friend!",
+                "es": "¡Cuento contigo!",
+                "fr": "Je compte sur toi !",
+                "ja": "じゃあ我が友よ、しっかりな！",
+                "ko": "그럼 부탁할게요, 친구!",
+                "th": "ฝากด้วยล่ะ เพื่อนที่รัก!",
+                "zh-Hans": "那就交给你了，我亲爱的朋友！",
+                "zh-Hant": "那就交給你了，我親愛的朋友！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Liefere Heliobane Fungia an Maskenreverie",
+        "en": "Deliver Heliobane Fungia to the Masked Reverie",
+        "es": "Entrega Venefita a Ensoñación Enmascarada.",
+        "fr": "Livrer les Algues toxiques aux Rêveries éblouissantes",
+        "ja": "ヘリオベインファンジアを「マスクド・レヴェリー」に届ける",
+        "ko": "맹독 해초를 「마스체라 미라지」에게 보내기",
+        "th": "ส่งสาหร่ายเฮลิโอเบนให้กับหน้ากากแห่งความเพ้อฝัน",
+        "zh-Hans": "把毒莴裙藻送到「梦中人」",
+        "zh-Hant": "把毒萵裙藻送到「夢中人」"
+      },
+      "entities": [
+        {
+          "entityId": 175750002,
+          "mapId": 8,
+          "blueprintType": "branch2.0_Collect201_2",
+          "name": "TsEntity_植物201_毒莴裙藻_底座_2.2_采集物",
+          "areaId": 2301,
+          "position": {
+            "x": 814028,
+            "y": 662049,
+            "z": 7229
+          },
+          "rotation": {
+            "x": 18,
+            "y": 4,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 314900016,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC奈亚拉",
+          "name": "TsEntity_奈亚拉2",
+          "areaId": 1692,
+          "position": {
+            "x": 701797,
+            "y": 571421,
+            "z": 1060
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Nun ja, ich hatte nicht erwartet, dass {Male=der ehrenvolle Lorbeerträger;Female=die ehrenvolle Lorbeerträgerin} meine Bestellung persönlich überbringen würde.",
+                "en": "Well, well, I didn't expect the esteemed Laureate to deliver my order in person.",
+                "es": "Vaya, vaya, no esperaba que fuera esa persona quien entregara mi pedido.",
+                "fr": "Eh bien, je ne m'attendais pas à ce que notre {Male=Lauréat;Female=Lauréate} livre ma commande en personne.",
+                "ja": "あら、まさかこの依頼の引き受け人が、あの尊き「月桂冠」様でいらっしゃったとは。",
+                "ko": "어머, 이게 누구야? 귀하신 「월계관을 쟁취한 자」님께서 직접 주문을 처리하시다니",
+                "th": "แหมๆ เป็นคุณนี่เอง ผู้ครองลอเรล ที่เกียรติ ไม่คิดเลยว่าจะเป็นคุณมาส่งของให้ฉันกับมือ",
+                "zh-Hans": "是你呀，尊贵的「桂冠」。接下这个单子的竟然是你。",
+                "zh-Hant": "是你呀，尊貴的「桂冠」。接下這個單子的竟然是你。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1485,
+                "name": {
+                  "zh-Hans": "奈亚拉"
+                },
+                "entity": {
+                  "entityId": 314900016,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC奈亚拉",
+                  "name": "TsEntity_奈亚拉2",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 701797,
+                    "y": 571421,
+                    "z": 1060
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ausgerechnet du gönnst dir Kosmetik?",
+                    "en": "You, of all people, indulging in skincare?",
+                    "es": "No esperaba que tú, en particular, tuvieras una rutina de belleza.",
+                    "fr": "Les soins de la peau vous intéressent, vous ?",
+                    "ja": "ナイアーラがスキンケア用品とは……",
+                    "ko": "화장품이 필요한 분이 당신일 줄이야...",
+                    "th": "คุณสนใจการดูแลผิวด้วยเหรอ",
+                    "zh-Hans": "要用护肤品的竟然是你……",
+                    "zh-Hant": "要用護膚品的竟然是你……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Überrascht, was? Ich trage Masken, also muss da ja etwas sein, worauf sie aufliegen, oder? Aber nicht jeder hat das Glück, es zu Gesicht zu bekommen …",
+                "en": "Surprised, are we? I wear masks, so there must be... something they rest upon, yes? Though not everyone is fortunate enough to lay eyes on it...",
+                "es": "¿Te sorprende? Uso máscaras, así que tiene que haber… alguna superficie donde apoyarlas, ¿no? Aunque no todo el mundo tiene el privilegio de verla.",
+                "fr": "Étonnant, n'est-ce pas ? Je porte des masques, mais ils doivent bien... être posés sur quelque chose, non ? Même si tout le monde n'a pas la chance de voir quoi...",
+                "ja": "意外とでも？仮面をつけている以上、無論、仮面を「支える」部分があるというもの――たとえ、誰も見ることが出来なくともね。",
+                "ko": "놀랐어? 내가 이런 가면을 쓰고 있을 수 있는 건 당연히 그걸 「지탱」해주는 뭔가가 있기 때문이지——비록 모든 사람의 눈에 보이진 않겠지만",
+                "th": "ตกใจล่ะสิ ฉันใส่หน้ากาก มันก็ต้องมีส่วนที่ รองรับ หน้ากากนี้ แม้ว่าไม่ใช่ทุกคนจะมองเห็นด้วยตาเปล่า",
+                "zh-Hans": "没想到吗？既然我戴着面具，那就自然是有「支撑」面具的部分——即便不是每个人都能以双眼看见。",
+                "zh-Hant": "沒想到嗎？既然我戴著面具，那就自然是有「支撐」面具的部分——即便不是每個人都能以雙眼看見。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1485,
+                "name": {
+                  "zh-Hans": "奈亚拉"
+                },
+                "entity": {
+                  "entityId": 314900016,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC奈亚拉",
+                  "name": "TsEntity_奈亚拉2",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 701797,
+                    "y": 571421,
+                    "z": 1060
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, schon wieder diese Mimik ... wie herrlich. Hehe, vielleicht steckt mehr in mir, als du ahnst.",
+                "en": "Ah, that expression again... how delightful. Hehe, perhaps there's more to me than you realize.",
+                "es": "Y esa carita de nuevo, qué delicia. Ji, ji, quizás soy más de lo que te imaginas.",
+                "fr": "Ah, encore cette expression... quel délice ! Héhé, peut-être suis-je plus complexe que vous ne l'imaginez.",
+                "ja": "またそんな顔をされて……ふふ、でもここには、まだまだ解き明かされていない秘密がいっぱいあるかもしれませんよ。",
+                "ko": "또 그 표정이네. 하하, 여기에 당신이 모르는 것들이 아직 많을 거야",
+                "th": "คุณทำหน้าตาแบบนั้นอีกแล้วฮ่าๆ บางทีที่นี่อาจมีความลับอีกมากมายรอให้คุณค้นพบ",
+                "zh-Hans": "你又露出这样的表情了。呵呵，或许这里还有许多秘密等着你去发掘。",
+                "zh-Hant": "你又露出這樣的表情了。呵呵，或許這裡還有許多秘密等著你去發掘。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1485,
+                "name": {
+                  "zh-Hans": "奈亚拉"
+                },
+                "entity": {
+                  "entityId": 314900016,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC奈亚拉",
+                  "name": "TsEntity_奈亚拉2",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 701797,
+                    "y": 571421,
+                    "z": 1060
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einen schönen Tag noch, {PlayerName}.",
+                "en": "Have a pleasant day, {PlayerName}.",
+                "es": "Que tengas un buen día, {PlayerName}.",
+                "fr": "Passez une bonne journée, {PlayerName}.",
+                "ja": "素晴らしい一日を、{PlayerName}様。",
+                "ko": "좋은 하루 보내길, {PlayerName}",
+                "th": "ขอให้เป็นวันที่ดี {PlayerName}",
+                "zh-Hans": "祝你拥有美妙的一日，{PlayerName}。",
+                "zh-Hant": "祝你擁有美妙的一日，{PlayerName}。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1485,
+                "name": {
+                  "zh-Hans": "奈亚拉"
+                },
+                "entity": {
+                  "entityId": 314900016,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC奈亚拉",
+                  "name": "TsEntity_奈亚拉2",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 701797,
+                    "y": 571421,
+                    "z": 1060
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sammle Heliobane Fungia",
+        "en": "Collect Heliobane Fungia",
+        "es": "Recoge Venefita.",
+        "fr": "Récupérer les Algues toxiques",
+        "ja": "ヘリオベインファンジアを採取する",
+        "ko": "맹독 해초 채집",
+        "th": "เก็บสาหร่ายเฮลิโอเบน",
+        "zh-Hans": "采集毒莴裙藻",
+        "zh-Hant": "採集毒萵裙藻"
+      },
+      "dialogs": []
+    }
+  ]
+}

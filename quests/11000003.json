@@ -1,0 +1,268 @@
+{
+  "id": 11000003,
+  "key": "任务节点测试条件",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Übersetzter Text",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Übersetzter Text",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 11000094,
+          "mapId": 33,
+          "blueprintType": "Monster043",
+          "name": "错的",
+          "areaId": 0,
+          "position": {
+            "x": -10240,
+            "y": -6490,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 11000095,
+          "mapId": 33,
+          "blueprintType": "Monster015",
+          "name": "对的",
+          "areaId": 0,
+          "position": {
+            "x": -10300,
+            "y": -6880,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übersetzter Text",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 11000048,
+          "mapId": 33,
+          "blueprintType": "NPC022",
+          "name": "接取任务",
+          "areaId": 0,
+          "position": {
+            "x": -11280,
+            "y": -7350,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 11000049,
+          "mapId": 33,
+          "blueprintType": "NPC006",
+          "name": "条件选择",
+          "areaId": 0,
+          "position": {
+            "x": -10250,
+            "y": -7380,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QA_TEST",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie möchtest du wählen????",
+                "es": "¿Cómo vas a elegir??????",
+                "zh-Hans": "你要怎么选？？？？？？？",
+                "zh-Hant": "你要怎麼選"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 40,
+                "name": {
+                  "zh-Hans": "os"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich möchte die richtige wählen.",
+                    "es": "Elijo la opción correcta",
+                    "zh-Hans": "我要选择对的",
+                    "zh-Hant": "我要選擇對的"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich möchte die falsche wählen.",
+                    "es": "Elijo la opción incorrecta",
+                    "zh-Hans": "我要选择错的",
+                    "zh-Hant": "我要選擇錯的"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übersetzter Text",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 11000095,
+          "mapId": 33,
+          "blueprintType": "Monster015",
+          "name": "对的",
+          "areaId": 0,
+          "position": {
+            "x": -10300,
+            "y": -6880,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 4,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übersetzter Text",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 11000094,
+          "mapId": 33,
+          "blueprintType": "Monster043",
+          "name": "错的",
+          "areaId": 0,
+          "position": {
+            "x": -10240,
+            "y": -6490,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 6,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

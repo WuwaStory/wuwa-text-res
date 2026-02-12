@@ -1,0 +1,283 @@
+{
+  "id": 310000049,
+  "key": "道馆",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Sockelgerät",
+    "en": "Pedestal Device",
+    "es": "Dispositivo de Pedestal",
+    "fr": "Dispositif de piédestal",
+    "ja": "謎の円形の台",
+    "ko": "원형 테이블 출제",
+    "th": "อุปกรณ์แท่น",
+    "zh-Hans": "圆台命题",
+    "zh-Hant": "圓臺命題"
+  },
+  "desc": {
+    "de": "Einige seltsame Sockel in der Wildnis wecken das Interesse des Forschers Qinggong und er möchte deine Hilfe bei diesem Problem.",
+    "en": "Some strange pedestals in the wild pique Researcher Qinggong's interest and he wants your help over this issue.",
+    "es": "Algunos extraños pedestales en la naturaleza despiertan el interés del investigador Qinggong y quiere tu ayuda con este asunto.",
+    "fr": "Le chercheur Qinggong a repéré d'étranges piédestaux dans la nature. Il vous demande de l'aider à en percer le mystère.",
+    "ja": "研究員の青恭が野外にある変わった台に興味があるそうだ。あなたにその調査に手伝って欲しいという。",
+    "ko": "야외에 있는 이상한 원형 테이블에 관심이 많은 연구원 청공이 조사를 요청합니다",
+    "th": "แท่นประหลาดในป่าสะดุดตานักวิจัยฉิงกง และเขาต้องการให้คุณช่วยเรื่องนี้",
+    "zh-Hans": "研究员青恭对野外的一些奇怪的圆台非常感兴趣，并想请你帮忙调查一下。",
+    "zh-Hant": "研究員青恭對野外的一些奇怪的圓臺非常感興趣，並想請你幫忙調查一下。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe dorthin, wo die Sockel sich befinden",
+        "en": "Head to the pedestal's location",
+        "es": "Dirígete a donde se encuentran los pedestales",
+        "fr": "Se rendre au piédestal",
+        "ja": "円形の台の座標に向かう",
+        "ko": "원형 테이블 좌표로 이동",
+        "th": "ไปยังตำแหน่งของแท่น",
+        "zh-Hans": "前往圆台所在的坐标处",
+        "zh-Hant": "前往圓臺所在的座標處"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Qinggong",
+        "en": "Talk to Qinggong",
+        "es": "Habla con Qinggong",
+        "fr": "Parler à Qinggong",
+        "ja": "青恭と話す",
+        "ko": "청공과 대화",
+        "th": "คุยกับฉิงกง",
+        "zh-Hans": "和青恭交谈",
+        "zh-Hant": "和青恭交談"
+      },
+      "entities": [
+        {
+          "entityId": 11000460,
+          "mapId": 8,
+          "blueprintType": "NPC0260",
+          "name": "TsEntity_0260_157_青恭",
+          "areaId": 301,
+          "position": {
+            "x": -50399,
+            "y": 103963,
+            "z": 1392
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -46
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_中曲台地支线",
+          "flowIndex": 46,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Lufttemperatur ist angenehm, und die Luftfeuchtigkeit ist...",
+                "en": "The air temperature is comfortable, and the humidity level is…",
+                "es": "La temperatura del aire es agradable, y el nivel de humedad es...",
+                "fr": "La température de l'air est adéquate, l'humidité est...",
+                "ja": "温度は適切、湿度は……",
+                "ko": "공기의 온도는 적당하고 습도는…",
+                "th": "อากาศกำลังสบาย ส่วนระดับความชื้นก็...",
+                "zh-Hans": "空气温度适宜，湿度在……",
+                "zh-Hant": "空氣溫度適宜，濕度在……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Über diese Sockel...",
+                    "en": "About those pedestals...",
+                    "es": "Sobre esos pedestales...",
+                    "fr": "À propos des cônes...",
+                    "ja": "例の台なんだけど……",
+                    "ko": "그 원형 테이블에 대해서…",
+                    "th": "เรื่องแท่นพวกนั้น...",
+                    "zh-Hans": "关于那些圆台……",
+                    "zh-Hant": "關於那些圓臺……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hast du diese Sockel untersucht? Wie ist es gelaufen? Warte, was? Sie haben dich gegen simulierte Monster kämpfen lassen?",
+                "en": "Have you investigated those pedestals? How did it go? Wait, what? They let you fight simulated monsters?",
+                "es": "¿Has investigado esos pedestales? ¿Cómo te fue? Espera, ¿qué? ¿Te permitieron luchar contra monstruos simulados?",
+                "fr": "Vous avez vu ces cônes ? Que se passe-t-il? Vous combattez des monstres ?",
+                "ja": "おお、もう調べてきたのか？どうだった？怪物と戦えた？",
+                "ko": "벌써 그 원형 테이블을 다 조사했어요? 어때요? 실제로 몬스터와 대전을 할 수 있나요?",
+                "th": "ได้ไปตรวจสอบแท่นพวกนั้นมาหรือยัง? เป็นยังไงบ้าง? เดี๋ยว อะไรนะ? มันให้สู้กับสัตว์ประหลาดจำลองด้วยเหรอ?",
+                "zh-Hans": "你已经去调查那些圆台了吗？怎么样？居然可以和怪物进行对战？",
+                "zh-Hant": "你已經去調查那些圓臺了嗎？怎麼樣？居然可以和怪物進行對戰？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe... Jetzt kann ich es nachvollziehen.",
+                "en": "I see... Now I can understand.",
+                "es": "Ya veo... Ahora puedo entender.",
+                "fr": "Je vois... Je comprends, maintenant…",
+                "ja": "なるほど……そういうことか。",
+                "ko": "그렇군요… 이제 이해가 되네요",
+                "th": "อย่างนี้นี่เอง... เข้าใจแล้วล่ะ",
+                "zh-Hans": "原来如此……这下我能理解了。",
+                "zh-Hant": "原來如此……這下我能理解了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Gremium der Savantae hat diese Sockel wahrscheinlich erstellt, um gefährliche Tacet-Dissonanzen zu studieren.",
+                "en": "The Court of Savantae probably created these pedestals to study dangerous Tacet Discords.",
+                "es": "La Corte Jiting probablemente creó estos pedestales para estudiar peligrosas Disonancias Tácitas.",
+                "fr": "Il semblerait que ces cônes soient les instruments de recherche utilisés par les Savantaes pour analyser et étudier les grands Tacets Discords.",
+                "ja": "あれは稷廷が残した大型残像の分析と研究に用いるシミュレーター……",
+                "ko": "이러한 원형 테이블은 직정이 대형 잔상을 분석하고 연구하는 데 사용한 연구 장치인 것 같아요",
+                "th": "สภาซาวานเทย์อาจจะสร้างแท่นพวกนั้นขึ้นมาเพื่อใช้ศึกษาทาเซ็ตดิสคอร์ดที่อันตรายละมั้ง",
+                "zh-Hans": "看来，这些圆台应该是稷廷用来分析研究大型残象的研究装置。",
+                "zh-Hant": "看來，這些圓臺應該是稷廷用來分析研究大型殘象的研究裝置。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Forscher können mehr über diese Tacet-Dissonanzen erfahren, indem sie Daten aus simulierten Schlachten studieren.",
+                "en": "Researchers can learn more about those Tacet Discords by studying data from simulated battles.",
+                "es": "Los investigadores pueden aprender más sobre esas Disonancias Tácitas estudiando los datos de las batallas simuladas.",
+                "fr": "Si une bataille a lieu, ces données peuvent aider les chercheurs à mieux comprendre et analyser ces Tacets Discords.",
+                "ja": "戦闘で取れたデータを通じて、残像の情報を解析するのか……",
+                "ko": "전투가 발생하면 이러한 데이터는 연구원이 대상 잔상을 더 잘 이해하고 분석하는데 도움이 될 수 있겠어요",
+                "th": "นักวิจัยสามารถใช้ข้อมูลจากการต่อสู้จำลองมาเรียนรู้เกี่ยวกับทาเซ็ตดิสคอร์ดพวกนั้นให้มากขึ้นได้",
+                "zh-Hans": "如果发生战斗了的话，这些数据就可以帮助研究员更好地去了解和分析目标残象。",
+                "zh-Hant": "如果發生戰鬥了的話，這些數據就可以幫助研究員更好地去了解和分析目標殘象。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke für deine Hilfe! Übrigens, ich habe vor kurzem noch ein paar mehr von diesen Sockeln gefunden.",
+                "en": "Thank you for your help! By the way, I recently found a couple more of these pedestals.",
+                "es": "¡Gracias por tu ayuda! Por cierto, recientemente encontré un par más de estos pedestales.",
+                "fr": "Merci beaucoup, vraiment ! En effet, j'ai trouvé quelques autres.",
+                "ja": "助かったよ！そうだ、まだ他の場所でも同じようなシミュレーターが見つかったんだ。",
+                "ko": "정말 감사해요! 참, 이런 원형 테이블 장치를 몇 개 발견했어요",
+                "th": "ขอบคุณที่ช่วยนะ! จะว่าไป ฉันเจอแท่นพวกนั้นเพิ่มอีกสองสามที่ล่ะ",
+                "zh-Hans": "真是非常感谢！对了，我还找到了几个这样的圆盘装置。",
+                "zh-Hant": "真是非常感謝！對了，我還找到了幾個這樣的圓盤裝置。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich schicke dir die Koordinaten. Wenn du noch interessiert bist, schau sie dir an.",
+                "en": "I’ll send you the coordinates. If you’re still interested, go check them out.",
+                "es": "Te enviaré las coordenadas. Si sigues interesado, ve a echarles un vistazo.",
+                "fr": "Je vous enverrai les coordonnées de ces endroits, si cela vous intéresse toujours, vous pourrez aller les visiter.",
+                "ja": "それも全部座標を送っとくよ。興味があれば、行ってみて。",
+                "ko": "이 장소들의 좌표를 방랑자에게 보내드릴게요! 만약 관심이 있다면 한 번 가보세요",
+                "th": "เดี๋ยวจะส่งพิกัดไปให้ ถ้ายังสนใจอยู่ก็ลองแวะไปดูได้นะ",
+                "zh-Hans": "我把这几个地点的坐标传给你吧，你要是还有兴趣，可以去看看。",
+                "zh-Hant": "我把這幾個地點的座標傳給你吧，你要是還有興趣，可以去看看。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wer weiß, sie könnten dir auf deiner Reise helfen!",
+                "en": "Who knows, they might help you on your journey!",
+                "es": "Quién sabe, podrían ayudarte en tu viaje.",
+                "fr": "Cela pourrait vous aider dans votre voyage !",
+                "ja": "あなたの旅に役立つかもしれないよ。",
+                "ko": "방랑자의 여행에 도움이 될지도 몰라요!",
+                "th": "ไม่แน่ว่าพวกมันอาจมีประโยชน์กับการเดินทางของคุณก็ได้!",
+                "zh-Hans": "也许对你的旅途有所帮助也说不定！",
+                "zh-Hant": "也許對你的旅途有所幫助也說不定！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4185 @@
+{
+  "id": 114000017,
+  "key": "拍照引导任务",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Fotos von Jinzhou",
+    "en": "Photos of Jinzhou",
+    "es": "Fotos de Jinzhou",
+    "fr": "Paysages de Jinzhou",
+    "ja": "映えるスポット！今州",
+    "ko": "금주투어 인증샷",
+    "th": "ภาพถ่ายแห่งจินโจว",
+    "zh-Hans": "拍忆今州",
+    "zh-Hant": "拍憶今州"
+  },
+  "desc": {
+    "de": "Du findest eine Menschenmenge in einer eigenartigen Ecke von Jinzhou. Warum gehst du nicht hin und schaust es dir an?",
+    "en": "You find a crowd in a peculiar corner of Jinzhou. Why not go and check it out?",
+    "es": "Encuentras una multitud en un rincón peculiar de Jinzhou. ¿Por qué no ir a echar un vistazo?",
+    "fr": "Une foule s'est rassemblée dans un recoin insolite de Jinzhou. Allez jeter un œil.",
+    "ja": "なぜか人が集まっているようだ。様子を見に行こう。",
+    "ko": "여러 사람들이 금주의 어딘가에 모인 것 같습니다. 무슨 일이 발생했는지 가서 확인해 보세요...",
+    "th": "คุณพบฝูงชนในมุมประหลาดของจินโจว ลองไปตรวจที่นั่นดู",
+    "zh-Hans": "似乎有好几个人聚集在今州的某处，不如去看看情况吧……",
+    "zh-Hant": "似乎有好幾個人聚集在今州的某處，不如去看看情况吧……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage den Älteren, was passiert ist",
+        "en": "Ask the elder about what has happened",
+        "es": "Pregunta al anciano sobre lo que ha sucedido",
+        "fr": "Parler au vieux homme pour obtenir des informations",
+        "ja": "お年寄りに状況について聞く",
+        "ko": "노인에게 상황 묻기",
+        "th": "สอบถามผู้เฒ่าเกี่ยวกับเรื่องที่เกิดขึ้น",
+        "zh-Hans": "询问老人情况",
+        "zh-Hant": "詢問老人情況"
+      },
+      "entities": [
+        {
+          "entityId": 114001028,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男2",
+          "areaId": 301,
+          "position": {
+            "x": -41199,
+            "y": 107670,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -153
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114800096,
+          "mapId": 8,
+          "blueprintType": "Gameplay006",
+          "name": "TsEntity_玩法_拍照点1屋檐钩锁",
+          "areaId": 301,
+          "position": {
+            "x": -41888,
+            "y": 106678,
+            "z": 3157
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -109
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000071,
+          "mapId": 8,
+          "blueprintType": "NPC227",
+          "name": "TsEntity_154_013_老奶奶5",
+          "areaId": 301,
+          "position": {
+            "x": -41571,
+            "y": 107108,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000072,
+          "mapId": 8,
+          "blueprintType": "NPC256",
+          "name": "TsEntity_154_007_少女1_3",
+          "areaId": 301,
+          "position": {
+            "x": -41542,
+            "y": 107231,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -99
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000073,
+          "mapId": 8,
+          "blueprintType": "NPC279",
+          "name": "TsEntity_157_023_市民男6",
+          "areaId": 301,
+          "position": {
+            "x": -41661,
+            "y": 107187,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ach... Meine Hand. Das Alter holt mich wohl endlich ein, schätze ich...",
+                "en": "Ack... My hand. Age is finally catching up to me, I guess...",
+                "es": "Ay... Mi mano. Supongo que la edad finalmente me está alcanzando...",
+                "fr": "Ah... ma main fait tellement mal, je suis vraiment trop vieux, hélas...",
+                "ja": "手が……痛い……はぁ、やはり寄る年波には敵わん……",
+                "ko": "으아... 손이 너무 아프네요. 역시 나이는 어쩔 수 없다니까요. 하아...",
+                "th": "โธ่... มือฉัน ความชรามาเยือนแล้วสินะ...",
+                "zh-Hans": "嘶……手好疼，果然还是老了，唉……",
+                "zh-Hant": "嘶……手好疼，果然還是老了，唉……"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielen Dank, dass du mich gerettet hast. Wenn du nicht hier gewesen wärst, wäre ich wohl schon auf dem Boden aufgeschlagen.",
+                "en": "Thank you so much for saving me. If you wasn't here, I might have faceplanted into the ground by now.",
+                "es": "Muchas gracias por salvarme. Si no estuvieras aquí, a lo mejor ya me habría estampado contra el suelo.",
+                "fr": "Merci beaucoup de m'avoir sauvé. Si vous n'aviez pas été là, j'aurais été gravement blessé...",
+                "ja": "さっきはありがとう。あんたがいなければ、本当に落ちるところだった。",
+                "ko": "아까는 정말 고마웠어요. 그쪽이 아니었다면 전 정말로 떨어졌을 지도 몰라요",
+                "th": "ขอบคุณมากนะที่ช่วยฉันไว้ ถ้าเธอไม่อยู่แถวนี้ ฉันคงร่วงหัวทิ่มพื้นไปแล้ว",
+                "zh-Hans": "刚才真是太谢谢你了，要不是你，我可能真就摔下来了。",
+                "zh-Hant": "剛才真是太謝謝你了，要不是你，我可能真就摔下來了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Geht es dir gut?",
+                    "en": "Are you okay?",
+                    "es": "¿Estás bien?",
+                    "fr": "Tout va bien ?",
+                    "ja": "大丈夫？",
+                    "ko": "괜찮아요?",
+                    "th": "คุณไหวมั้ย?",
+                    "zh-Hans": "你没事吧？",
+                    "zh-Hant": "你沒事吧？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das war gefährlich.",
+                    "en": "That was dangerous.",
+                    "es": "Eso fue peligroso.",
+                    "fr": "C'est trop dangereux.",
+                    "ja": "本当に危なかった。",
+                    "ko": "너무 위험했어요",
+                    "th": "ทำแบบนั้นอันตรายนะ?",
+                    "zh-Hans": "太危险了。",
+                    "zh-Hant": "太危險了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist okay, mir geht es gut. Solange meine Kamera okay ist, ist alles okay. Sie funktioniert immer noch einwandfrei! Aber meine Hand... *seufz* Was ist mit den Fotos?",
+                "en": "It's okay, I'm fine. As long as my camera is okay, everything’s okay. It's still working perfectly! But my hand... *sigh* What about the photos?",
+                "es": "Está bien, estoy bien. Mientras mi cámara esté bien, todo está bien. ¡Sigue funcionando perfectamente! Pero mi mano... *suspiro* ¿Qué pasa con las fotos?",
+                "fr": "Ce n'est pas grave, je vais bien, tant que l'appareil photo est en bon état. Tout va bien. ! Ce n'est que ma main... hélas, que vais-je faire de ces photos...",
+                "ja": "大丈夫大丈夫。カメラも無事だ！しかし手が痺れて……今回の写真はどうしたものか……",
+                "ko": "전 괜찮아요. 카메라만 별일 없으면 되거든요. 그저 제 손이 좀... 윽, 이 사진은 어떻게 하지...",
+                "th": "ฉันไม่เป็นไร ถ้ากล้องฉันโอเค ทุกอย่างก็โอเค กล้องยังทำงานได้สมบูรณ์แบบ! แต่มือฉันน่ะสิ... *เฮ้อ* แล้วพวกรูปถ่ายล่ะ?",
+                "zh-Hans": "没事没事，我没关系，相机没事就行。它还好好着呢！只是我的手……唉，这照片可怎么办啊……",
+                "zh-Hant": "沒事沒事，我沒關係，相機沒事就行。它還好好著呢！只是我的手……唉，這照片可怎麼辦啊……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Fotos?",
+                    "en": "Photos?",
+                    "es": "¿Fotos?",
+                    "fr": "Photo ?",
+                    "ja": "写真？",
+                    "ko": "사진이요?",
+                    "th": "ภาพถ่ายเหรอ",
+                    "zh-Hans": "照片？",
+                    "zh-Hant": "照片？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist okay, mir geht es gut. Solange meine Kamera in Ordnung ist, ist alles in Ordnung. Sie funktioniert immer noch einwandfrei! Aber meine Hand... *seufz* Was ist mit den Fotos?",
+                "en": "It's okay, I'm fine. As long as my camera is okay, everything’s okay. It's still working perfectly! But my hand... *sigh* What about the photos?",
+                "es": "Está bien, estoy bien. Mientras mi cámara esté bien, todo está bien. ¡Sigue funcionando perfectamente! Pero mi mano... *suspiro* ¿Qué pasa con las fotos?",
+                "fr": "Je suis vraiment désolée, j'aurais dû faire plus attention, heureusement que l'appareil photo va bien ! C'est juste ma main... soupir, que faire de cette photo...",
+                "ja": "ごめんごめん。カメラを守るのに必死でな。しかし手が痺れて……今回の写真はどうしたものか……",
+                "ko": "아이구, 정말 죄송해요. 제가 조심했어야 했는데... 그저 제 손이 좀... 윽, 이 사진은 어떻게 하지...",
+                "th": "ไม่เป็นไร ฉันสบายดี ขอแค่กล้องคู่ใจไม่เป็นไรทุกอย่างก็โอเค มันยังถ่ายได้สมบูรณ์แบบเหมือนเดิม! แต่มือฉัน... *ถอนหายใจ* แล้วรูปที่ถ่ายเป็นอย่างไรบ้างนะนี่",
+                "zh-Hans": "真对不起，真对不起，我该多注意的，还好相机没事！只是我的手……唉，这照片可怎么办啊……",
+                "zh-Hant": "真對不起，真對不起，我該多注意的，還好相機沒事！只是我的手……唉，這照片可怎麼辦啊……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Fotos?",
+                    "en": "Photos?",
+                    "es": "¿Fotos?",
+                    "fr": "Photo ?",
+                    "ja": "写真？",
+                    "ko": "사진이요?",
+                    "th": "ภาพถ่ายเหรอ",
+                    "zh-Hans": "照片？",
+                    "zh-Hant": "照片？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Ich stelle eine Fotosammlung mit dem Titel „Alte Erinnerungen an Jinzhou“ zusammen. Im Grunde ist es eine Mischung aus alten und neuen Fotos der Stadt.",
+                "en": "Yeah. I'm putting together a photo collection called \"Old Memories of Jinzhou\". Basically, it's a mix of old and new photos of the city.",
+                "es": "Sí. Estoy armando una colección de fotos llamada \"Viejos Recuerdos de Jinzhou\". Básicamente, es una mezcla de fotos antiguas y nuevas de la ciudad.",
+                "fr": "Oui, je suis en train de faire une collection de photos : « Souvenirs de Jinzhou ». Je vais rassembler des photos actuelles et anciennes de Jinzhou et les publier.",
+                "ja": "そうだ。「今州回想」と銘打って、今の今州を撮影し、同じ構図の古い写真と一緒に会社に送るつもりなのだが……",
+                "ko": "네, 「금주성의 추억」에 관련된 사진이에요. 지금의 금주성의 모습을 사진으로 촬영해 예전에 촬영한 사진들과 함께 잡지사에 다시 보내려고 했었거든요",
+                "th": "ใช่ ฉันกำลังรวบรวมคอลเล็กชันรูปถ่ายชื่อว่า \"ความทรงจำหนหลังแห่งจินโจว\" ถ้าจะให้พูดก็คือรูปถ่ายของเมืองทั้งเก่าและใหม่ผสมกัน",
+                "zh-Hans": "嗯，是一组关于“今州城回忆”的照片，我想拍下现在的今州城，和以前拍的一些照片一起寄回社里。",
+                "zh-Hant": "嗯，是一組關於「今州城回憶」的照片，我想拍下現在的今州城，和以前拍的一些照片一起寄回社裡。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich arbeite für ein Magazin namens Wuthergeographie als Journalistin bei der Pioneer Association.",
+                "en": "I work for a magazine called Wutherium Geographic as a journalist with the Pioneer Association.",
+                "es": "Trabajo para una revista llamada Geografía de Wutherium como periodista de la Asociación de Pioneros.",
+                "fr": "Ah. Cela fait partie de « La Géographie Wutherium ». Je suis un journaliste de l'Association pionnière.",
+                "ja": "ああ、会社というのは『潮汐ジオグラフィック』のことだ。実は私、先駆条約の記者をやっていてな。",
+                "ko": "아, 바로 『조석 지리』를 말하는 거예요. 저는 선행 공약의 기자거든요",
+                "th": "ฉันทำงานให้นิตยสารชื่อวัธเธอเรียมจีโอกราฟิก ตำแหน่งนักข่าวในสมาคมผู้บุกเบิก",
+                "zh-Hans": "啊，就是《潮汐地理》，我是先行公约的记者。",
+                "zh-Hant": "啊，就是《潮汐地理》，我是先行公約的記者。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unsere Aufgabe ist es, Fotos zu machen und die Schönheit der Welt mit Menschen zu teilen, die nicht reisen können.",
+                "en": "Our job is to take pictures and share the beauty of the world with people who can't travel.",
+                "es": "Nuestro trabajo es tomar fotos y compartir la belleza del mundo con personas que no pueden viajar.",
+                "fr": "L'une de nos tâches habituelles consiste à sortir et à prendre des photos. Notre objectif est de permettre aux gens de profiter de la beauté du monde sans avoir à quitter leur domicile.",
+                "ja": "色んな場所へ赴き、写真を取るのが仕事。 現地にいけない人達にも美景を届けるのが、我らの目標の一つ。",
+                "ko": "저희가 평소에 하는 일 중 하나는 바로 여러 곳에서 아름다운 경치를 골라 사진을 찍는 거예요. 모든 사람들이 자신의 집에서도 이 세계의 아름다운 경치를 감상할 수 있도록 하는 게 저희의 커다란 목표거든요",
+                "th": "งานของเราคือถ่ายภาพและเผยแพร่ความงามของโลกให้ผู้คนที่ไม่สามารถเดินทางไปชม",
+                "zh-Hans": "我们平时的工作之一就是到处取景拍摄，让大家足不出户就能看到这个世界的美景是我们的一大目标。",
+                "zh-Hant": "我們平時的工作之一就是到處取景拍攝，讓大家足不出戶就能看到這個世界的美景是我們的一大目標。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe hart für dieses Ziel gearbeitet. Ich mag jetzt nicht so aussehen, aber als ich jünger war, reiste ich über Berge und Flüsse, machte unzählige Fotos, und einige davon haben sogar Preise gewonnen!",
+                "en": "I've been working hard for this goal. I may not look the part now, but when I was younger, I traveled across mountains and rivers, taking countless photos, and some of which even won awards!",
+                "es": "He estado trabajando duro para este objetivo. Puede que no parezca ahora, pero cuando era más joven, viajé a través de montañas y ríos, tomando innumerables fotos, ¡y algunas de ellas incluso ganaron premios!",
+                "fr": "J'ai travaillé dur pour atteindre cet objectif. Je n'en ai peut-être pas l'air aujourd'hui, mais quand j'étais plus jeune, j'ai parcouru les montagnes et les rivières, prenant d'innombrables photos, dont certaines ont même été primées !",
+                "ja": "そのために、かなりの苦労をしてきた。 今はこんな有様だが……若い頃は、海を越え山を越え、 ありとあらゆる写真を撮りまくった。賞を取ったこともあったね。",
+                "ko": "이 목표를 위해 계속 노력하고 있어요. 비록 현재는 이런 모습이지만 소싯적에는 산과 강을 건너며 수많은 사진을 찍어 상을 받기도 했거든요",
+                "th": "ฉันทำงานหนักเพื่อเป้าหมายนี้ ถึงตอนนี้มาดฉันจะไม่ให้ แต่สมัยหนุ่มๆ ฉันปีนภูเขา ข้ามลำน้ำ ถ่ายรูปมานับไม่ถ้วน บางรูปได้รางวัลด้วยซ้ำ!",
+                "zh-Hans": "也是为了这个目标，我一直在努力。别看我现在这样，年轻时我也是跋山涉水，拍下好多照片有些还获了奖呢！",
+                "zh-Hant": "也是為了這個目標，我一直在努力。別看我現在這樣，年輕時我也是跋山涉水，拍下好多照片有些還獲了獎呢！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber das ist alles Vergangenheit. Ich werde alt und stehe kurz vor der Pensionierung...",
+                "en": "But all of that is in the past. I'm getting old and close to retirement...",
+                "es": "Pero todo eso es cosa del pasado. Estoy envejeciendo y cerca de la jubilación...",
+                "fr": "Mais tout cela appartient au passé. Je suis âgé et proche de la retraite...",
+                "ja": "だが今はもう歳だ。定年退職も目の前……",
+                "ko": "이제는 글러먹었지만요. 사람은 나이가 들면 역시 빨리 은퇴해야 하나봐요...",
+                "th": "แต่ทั้งหมดนั้นคืออดีต ฉันแก่ตัวจนใกล้เกษียณแล้ว...",
+                "zh-Hans": "现在可不行了，人老了老了，就快要退休了……",
+                "zh-Hant": "現在可不行了，人老了老了，就快要退休了……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und jetzt ist meine Hand kaputt, was einfach großartig ist. *seufz* Und das mit nur noch drei Orten, die ich besuchen muss. Ich fürchte, ich werde das letzte Fotoset vor meiner Pensionierung nicht mehr fertigstellen können...",
+                "en": "And now my hand is busted, which is just great. *sigh* With only three places left to go, too. I guess I won't be able to finish the last set of photos before I retire...",
+                "es": "Y ahora mi mano está rota, lo que es genial. *suspiro* Con solo tres lugares a los que ir, también. Supongo que no podré terminar el último conjunto de fotos antes de jubilarme...",
+                "fr": "Même maintenant, ma main est blessée, hélas... Il ne reste que trois scènes, il semble que je ne pourrai pas finir ma dernière série de photos avant ma retraite...",
+                "ja": "なのに手をやられた。はぁ……スポットはあと三つだが……どうもこの最後の仕事は失敗に終わりそうだ……",
+                "ko": "심지어 이제는 손도 다쳤으니... 하아... 이제 세 군데만 더 찍으면 되는데... 보아하니, 은퇴 전에 마지막 사진집을 다 촬영하기에는 글러먹은 것 같네요...",
+                "th": "แล้วตอนนี้มือฉันก็เจ็บอีก *เฮ้อ* เหลือสถานที่ต้องไปอีกแค่สามแห่งเท่านั้นเอง ฉันว่าฉันคงไม่ได้ถ่ายรูปชุดสุดท้ายให้เสร็จก่อนวางมือล่ะมั้ง...",
+                "zh-Hans": "甚至现在手都伤了，唉……明明只剩三个景了，看来我这退休前最后的照片组要拍不完了……",
+                "zh-Hant": "甚至現在手都傷了，唉……明明只剩三個景了，看來我這退休前最後的照片組要拍不完了……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann dir helfen.",
+                    "en": "I can give you a hand.",
+                    "es": "Puedo echarte una mano.",
+                    "fr": "Je peux vous aider.",
+                    "ja": "手伝うよ。",
+                    "ko": "제가 도와드릴게요",
+                    "th": "ฉันช่วยคุณได้นะ",
+                    "zh-Hans": "我来帮你。",
+                    "zh-Hant": "我來幫你。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Was habe ich davon, wenn ich helfe?",
+                    "en": "What's in it for me if I help?",
+                    "es": "¿Qué gano yo si ayudo?",
+                    "fr": "Y a-t-il une récompense ?",
+                    "ja": "{Male=報酬とかある？;Female=報酬とかあるの？}",
+                    "ko": "보수는 있나요?",
+                    "th": "ถ้าฉันช่วยแล้วจะได้อะไรตอบแทนมั้ย",
+                    "zh-Hans": "有报酬吗？",
+                    "zh-Hant": "有報酬嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wirklich? Meinst du das ernst? Ich weiß nicht, was ich sagen soll! Ich werde dich auf jeden Fall im Magazin erwähnen und du wirst auf jeden Fall bezahlt. Bitte, du bist meine einzige Hoffnung!",
+                "en": "Really? Do you really mean it? I don’t know what to say! I-I'll credit you in the magazine and you’ll get paid for sure. Please, you're my only hope!",
+                "es": "¿De verdad? ¿Lo dices en serio? ¡No sé qué decir! Te acreditaré en la revista y te pagaré seguro. Por favor, ¡eres mi única esperanza!",
+                "fr": "Vraiment ? Je ne sais pas quoi dire ! Je vais créditer votre nom et vous serez payé. C'est sûr. S'il vous plaît, c'est mon seul espoir !",
+                "ja": "い、いいのか？感謝する！ 撮影協力にあんたの名前を入れて、報酬も出そう！",
+                "ko": "네? 정말 괜찮겠어요? 정말 감사드려요! 반드시 그쪽 이름도 함께 표기할게요! 또한 당연히 보수도 챙겨드릴거구요. 번거로우시겠지만 잘 좀 부탁드려요!",
+                "th": "จริงเหรอ? จะช่วยจริงใช่มั้ย? ฉันพูดไม่ออกเลย! ฉะ...ฉันจะให้เครดิตในนิตยสารและจ่ายค่าตอบแทนให้แน่นอน ได้โปรดเถอะ เธอเป็นความหวังเดียวของฉันนะ!",
+                "zh-Hans": "这，真的可以麻烦你吗？实在是太感谢了！我一定会把你的名字标上去，并且给你报酬的，麻烦你了！",
+                "zh-Hant": "這，真的可以麻煩你嗎？實在是太感謝了！我一定會把你的名字標上去，並且給你報酬的，麻煩你了！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist kein großes Ding.",
+                    "en": "It's not a big deal.",
+                    "es": "No es gran cosa.",
+                    "fr": "Pas de problème.",
+                    "ja": "お安い御用。",
+                    "ko": "괜찮아요",
+                    "th": "เรื่องเล็กน้อยเอง",
+                    "zh-Hans": "没关系。",
+                    "zh-Hant": "沒關係。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wie soll ich das machen?",
+                    "en": "How should I do it?",
+                    "es": "¿Cómo debo hacerlo?",
+                    "fr": "Comment faire ?",
+                    "ja": "どうやればいい？",
+                    "ko": "어떻게 하면 되죠?",
+                    "th": "ฉันต้องทำไงบ้าง?",
+                    "zh-Hans": "怎么做？",
+                    "zh-Hant": "怎麼做？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah! Nimm meine Kamera. Du musst sie nur auf die Landschaft richten, die du aufnehmen möchtest, und den Auslöser drücken, und der Moment wird für immer festgehalten...",
+                "en": "Ah! Take my camera. All you need to do is aim it at the scenery you want to shoot and press the shutter release, and the moment will be forever captured...",
+                "es": "¡Ah! Toma mi cámara. Todo lo que necesitas hacer es apuntarla al paisaje que quieres fotografiar y presionar el obturador, y el momento quedará capturado para siempre...",
+                "fr": "Ah ! Vous pouvez utiliser mon appareil photo. Il suffit de viser le paysage que vous souhaitez photographier et d'appuyer sur le déclencheur pour immortaliser l'instant.",
+                "ja": "ああ！私のカメラを使ってくれて構わない！ 撮影したいものに向けてシャッターを切れば、撮影できる！",
+                "ko": "제 카메라를 사용하시면 돼요. 찍고 싶은 경치를 향해 셔터를 누르기만 하면 순간의 경치를 포착할 수 있어요",
+                "th": "อ๋อ! เอากล้องฉันไป เธอแค่เล็งกล้องไปที่ทิวทัศน์แล้วกดชัตเตอร์ ช่วงเวลานั้นก็จะถูกบันทึกไว้ตลอดกาล...",
+                "zh-Hans": "啊！你可以用我的相机，只要对着想要拍摄的景色按下快门，就能把瞬间的景象永远定格下来了。",
+                "zh-Hant": "啊！你可以用我的相機，只要對著想要拍攝的景色按下快門，就能把瞬間的景象永遠定格下來了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die erste Landschaft ist das Hochland, auf dem ich vorhin war. Viel Glück und pass auf!",
+                "en": "The first scenery is that high ground where I was earlier. Good luck and be careful!",
+                "es": "El primer paisaje es esa zona alta donde estaba antes. ¡Buena suerte y ten cuidado!",
+                "fr": "La première scène est l'endroit que je viens de visiter. Faites attention à votre sécurité !",
+                "ja": "一つ目の撮影スポットはさっき私がいた高所だ。 くれぐれも気をつけて登ってくれ！",
+                "ko": "첫 번째 경치는 방금 제가 있었던 높은 곳이에요. 그럼 부탁할게요. 조심하시구요!",
+                "th": "ทิวทัศน์จุดแรกคือหลังคาที่ฉันขึ้นไปก่อนหน้านี้ ขอให้โชคดี ระวังตัวด้วยนะ!",
+                "zh-Hans": "第一个景就是刚才我到的那个高处，实在麻烦你了，可要注意安全啊！",
+                "zh-Hant": "第一個景就是剛才我到的那個高處，實在麻煩你了，可要注意安全啊！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_任务专用冒泡_刘梦蝶",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Das war wirklich knapp...",
+                "en": "That was really close...",
+                "es": "Eso estuvo realmente cerca...",
+                "fr": "C'était passionnant tout à l'heure. ......",
+                "ja": "今の危なかった………",
+                "ko": "아까 정말 아슬아슬했네요...",
+                "th": "เมื่อกี้เฉียดฉิวไปเลย...",
+                "zh-Hans": "刚刚真是好惊险啊……",
+                "zh-Hant": "剛剛真是好驚險啊……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja, Gott sei Dank wurden wir gerettet.",
+                "en": "Yeah, thank goodness we were saved.",
+                "es": "Sí, gracias a Dios que fuimos salvados.",
+                "fr": "C'est vrai. Je suis heureux que cela ait aidé.",
+                "ja": "助かってよかった………",
+                "ko": "그러게요, 다행히 구조되셨네요",
+                "th": "ใช่ โชคดีที่เราได้รับความช่วยเหลือ",
+                "zh-Hans": "是啊，幸亏被救下来了。",
+                "zh-Hant": "是啊，幸虧被救下來了。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist zu gefährlich.",
+                "en": "It's too dangerous.",
+                "es": "Es demasiado peligroso.",
+                "fr": "Trop dangereux.",
+                "ja": "本当に危なかった。",
+                "ko": "너무 위험했어요",
+                "th": "มันอันตรายเกินไป",
+                "zh-Hans": "太危险了。",
+                "zh-Hant": "太危險了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 142,
+                "name": {
+                  "zh-Hans": "3号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erfasse den gesamten Huabiao-Platz von einem hohen Ort",
+        "en": "Capture the whole Huabiao Square from high place",
+        "es": "Captura toda la Plaza Huabiao desde un lugar alto",
+        "fr": "Capturer une vue panoramique de la place de Huabiao depuis les hauteurs",
+        "ja": "高いところで広場の全体を映した写真を撮る",
+        "ko": "높은 곳에 서서 광장의 전경 촬영하기",
+        "th": "จับภาพทั่วทั้งจัตุรัสหัวเปียวจากมุมสูง",
+        "zh-Hans": "站在高处拍下华表广场的全景",
+        "zh-Hant": "站在高處拍下華表廣場的全景"
+      },
+      "entities": [
+        {
+          "entityId": 114000814,
+          "mapId": 8,
+          "blueprintType": "Gameplay163",
+          "name": "TsEntity_特殊_拍照中枢塔",
+          "areaId": 301,
+          "position": {
+            "x": -48490,
+            "y": 100840,
+            "z": 2185
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114800096,
+          "mapId": 8,
+          "blueprintType": "Gameplay006",
+          "name": "TsEntity_玩法_拍照点1屋檐钩锁",
+          "areaId": 301,
+          "position": {
+            "x": -41888,
+            "y": 106678,
+            "z": 3157
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -109
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übergebe das erste Foto an Bowen",
+        "en": "Deliver the first photo to Bowen",
+        "es": "Entrega la primera foto a Bowen",
+        "fr": "Donner la première photo à Bowen",
+        "ja": "博文に一枚目の写真を渡す",
+        "ko": "박문에게 첫 번째 사진 제출하기",
+        "th": "ส่งภาพถ่ายแรกให้กับป๋อเหวิน",
+        "zh-Hans": "向博文交付第一张照片",
+        "zh-Hant": "向博文交付第一張照片"
+      },
+      "entities": [
+        {
+          "entityId": 114001028,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男2",
+          "areaId": 301,
+          "position": {
+            "x": -41199,
+            "y": 107670,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -153
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 13,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Schön. Lass mich mal sehen.",
+                "en": "Nice. Let me take a look at it.",
+                "es": "Genial. Déjame echarle un vistazo.",
+                "fr": "C'est très bien. Permettez-moi d'y jeter un coup d'œil.",
+                "ja": "お疲れ。写真を見せてくれないか？",
+                "ko": "정말 수고하셨어요. 촬영하신 사진 좀 보여주시겠어요?",
+                "th": "ดีจัง ขอฉันดูหน่อย",
+                "zh-Hans": "麻烦你了，让我看看你拍下的照片吧！",
+                "zh-Hant": "麻煩你了，讓我看看你拍下的照片吧！"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hier, bitte.",
+                    "en": "Here you go.",
+                    "es": "Aquí lo tienes.",
+                    "fr": "Voilà.",
+                    "ja": "はい。",
+                    "ko": "여기요",
+                    "th": "เชิญเลย",
+                    "zh-Hans": "给你。",
+                    "zh-Hant": "給你。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mal sehen... Es ist spektakulär! Du hast ein natürliches Talent für die Fotografie, oder?",
+                "en": "Let's see here... It's spectacular! You're quite natural for photography, aren't you?",
+                "es": "Veamos... ¡Es espectacular! Tienes un talento natural para la fotografía, ¿verdad?",
+                "fr": "C'est spectaculaire ! Vous avez un don pour la photographie, n'est-ce pas ?",
+                "ja": "どれどれ……うん、素晴らしい。 あんた、才能あるな！",
+                "ko": "확인 좀 할게요... 정말 아름다워요. 사진 촬영에 소질이 있으신데요?",
+                "th": "ไหนดูซิ... งดงามมาก! เธอมีพรสวรรค์ทางการถ่ายภาพนะ ว่ามั้ย?",
+                "zh-Hans": "让我看看......真漂亮啊，你很有做摄影的天赋嘛！",
+                "zh-Hant": "讓我看看......真漂亮啊，你很有做攝影的天賦嘛！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau dir nur die Klarheit dieses Teiches an!",
+                "en": "Just look at the transparency of this pond!",
+                "es": "¡Solo mira la transparencia de este estanque!",
+                "fr": "Il suffit de regarder la transparence de cet étang !",
+                "ja": "ああ……この綺麗な水場！",
+                "ko": "여기 풍경을 보세요. 얼마나 아름다워요!",
+                "th": "ดูน้ำใสแจ๋วในสระนี่สิ!",
+                "zh-Hans": "你看这景，多漂亮！",
+                "zh-Hant": "你看這景，多漂亮！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als ich ein Kind war, mochte ich diesen Ort wirklich. Ich kam immer alleine hierher, um zu spielen.",
+                "en": "I really liked this place when I was a kid. I’d always come here by myself to play.",
+                "es": "Realmente me gustaba este lugar cuando era niño. Siempre venía aquí solo para jugar.",
+                "fr": "J'aimais beaucoup cet endroit quand j'étais enfant. J'y venais toujours seul pour jouer.",
+                "ja": "小さい頃からここが大好きで、 よく一人で遊びに行っていた。",
+                "ko": "어릴 때부터 저는 혼자서 여기저기 뛰어다니는 것을 좋아했어요",
+                "th": "สมัยยังเด็ก ฉันชอบที่นี่มากนะ ฉันมาเล่นคนเดียวที่นี่เป็นประจำ",
+                "zh-Hans": "小时候我就喜欢到处跑，老一个人去玩。",
+                "zh-Hant": "小時候我就喜歡到處跑，老一個人去玩。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Meine Eltern hatten Angst, dass ich vielleicht auf die Idee kommen könnte, alleine darin schwimmen zu gehen, also gaben sie mir eine Kamera.",
+                "en": "My parents was worried that I might end up go swimming in it or something on my own, so they gave me a camera.",
+                "es": "Mis padres estaban preocupados de que pudiera terminar nadando en él o algo por el estilo, así que me dieron una cámara.",
+                "fr": "Mes parents craignaient que je ne cause des ennuis et ils m'ont donné un appareil photo.",
+                "ja": "でも、大人たちは、そこで泳ぐのは危ないと思ったのだろう。それである時、私はカメラをもらったんだ。",
+                "ko": "저희 집에서는 제가 너무 돌아다닌다고 제 품에 카메라를 넣어줬어요",
+                "th": "พ่อแม่กลัวว่าฉันจะโดดลงไปว่ายน้ำหรือเล่นแผลงๆ ตามลำพัง เลยให้กล้องมาตัวหนึ่ง",
+                "zh-Hans": "家里怕我一个人上蹿下跳什么的太皮，就给我塞了个相机。",
+                "zh-Hant": "家裡怕我一個人上竄下跳什麼的太皮，就給我塞了個相機。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mein Vater sagte, wenn ich etwas sehen würde, das mir gefällt, sollte ich ein Foto davon machen.",
+                "en": "My dad said if I saw anything I liked, I should take a picture of it.",
+                "es": "Mi padre dijo que si veía algo que me gustaba, debería tomarle una foto.",
+                "fr": "Mon père m'a dit que si je voyais quelque chose qui me plaisait, je devais le prendre en photo.",
+                "ja": "あの頃は父からもよく、好きなものを見つけたら写真に収めればいい、と言われていた。",
+                "ko": "그리고 아버지께서 좋아하는 게 있으면 찍으라고 말씀하셨죠",
+                "th": "พ่อบอกว่า ถ้าฉันเจออะไรที่ชอบ ก็ถ่ายรูปเก็บไว้",
+                "zh-Hans": "我爸说要是看到什么喜欢的，就拍下来。",
+                "zh-Hant": "我爸說要是看到什麼喜歡的，就拍下來。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun, mit etwas Teurem in meinen Händen würde ich es nicht wagen, mit ihm ins Wasser zu springen.",
+                "en": "Well, with something expensive in my hands, I wouldn’t dare jump into the water with it.",
+                "es": "Bueno, con algo caro en mis manos, no me atrevería a saltar al agua con él.",
+                "fr": "Avec un objet coûteux entre les mains, je suis sage.",
+                "ja": "しかし、こんな宝を持っていたら、 池に飛び入るなんて、できるわけがない！",
+                "ko": "이렇게 귀중한 물건을 가지고 있으니 한껏 조심해졌죠",
+                "th": "พอได้ใช้ของราคาแพง ฉันเลยไม่กล้าลงเล่นน้ำ",
+                "zh-Hans": "可有这宝贝在，我就不敢乱来了，生怕一个不小心脱手摔了。",
+                "zh-Hant": "可有這寶貝在，我就不敢亂來了，生怕一個不小心脫手摔了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich habe wegen ihm viele Fotos gemacht.",
+                "en": "But I ended up taking a lot of photos because of it.",
+                "es": "Pero terminé tomando muchas fotos por eso.",
+                "fr": "J'ai fini par prendre beaucoup de photos grâce à cela.",
+                "ja": "だから、 私は写真を撮り始めたのだ。",
+                "ko": "하지만 덕분에 많은 사진을 찍을 수 있었어요",
+                "th": "แต่ก็ได้ถ่ายรูปมากมายด้วยกล้องตัวนั้น",
+                "zh-Hans": "不过也正因此，我拍了很多照片。",
+                "zh-Hant": "不過也正因此，我拍了很多照片。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gab eine Zeit, in der ich ein Foto fast aus dem gleichen Winkel wie deins gemacht und es an einen Zeitschriftenverlag geschickt habe. Und siehe da! Es wurde für eine ihrer neuen Ausgaben ausgewählt!",
+                "en": "There was this one time where I took a picture almost at the same angle as yours and mailed it to a magazine publisher. And whaddaya know! It got selected for one of their knew releases!",
+                "es": "Hubo una vez en la que tomé una foto casi desde el mismo ángulo que la tuya y la envié por correo a un editor de revistas. ¡Y adivina qué! ¡Fue seleccionada para una de sus nuevas publicaciones!",
+                "fr": "Il m'est arrivé une fois de prendre une photo presque sous le même angle que la vôtre. Je l'ai envoyé à un éditeur. Et que sais-je ? Elle a été sélectionnée et elle est publiée !",
+                "ja": "それでな、ある日、今しがたあんたが撮ったのと同じ写真を撮って新聞社に送ったら、何とお眼鏡にかなったのだよ！",
+                "ko": "한번은 제가 거기에 서서 방랑자와 비슷한 각도에서 사진을 찍어 잡지사에 보냈었는데, 뜻밖에 당첨됐지 뭐예요!",
+                "th": "มีอยู่ครั้งหนึ่ง ฉันถ่ายรูปจากมุมที่เกือบจะตรงกับของเธอ แล้วส่งไปให้สำนักพิมพ์ ใครจะไปคิด! มันได้ตีพิมพ์ในนิตยสารเล่มใหม่ด้วย!",
+                "zh-Hans": "有次我就站在那拍了张和你这角度差不多的照片，寄到杂志社去，嘿！结果中选了！",
+                "zh-Hant": "有次我就站在那拍了張和你這角度差不多的照片，寄到雜誌社去，嘿！結果中選了！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So habe ich angefangen, Fotografie zu lernen, die von Tag zu Tag besser wurde. Und so begann auch Jinzhou zu gedeihen.",
+                "en": "That's how I started learning photography, which got better and better by the day. And so did Jinzhou started to thrive.",
+                "es": "Así es como comencé a aprender fotografía, que mejoraba día a día. Y así también comenzó a prosperar Jinzhou.",
+                "fr": "C'est ainsi que j'ai commencé à apprendre la photographie. Ma technique s'améliore peu à peu. La ville a commencé à prospérer, et je trouve des choses de plus en plus intéressantes.",
+                "ja": "それからは、ひたすら撮影に力を注ぐ日々を送っていった…… その間に今州も、随分と変わったものだ……",
+                "ko": "이를 계기로 촬영 기법을 배우기 시작했죠. 제 촬영 기술이 나아지면서 이 금주성 또한 점점 시끌벅적해졌죠",
+                "th": "ตั้งแต่นั้น ฉันก็เริ่มศึกษาการถ่ายภาพ จนฝีมือดีขึ้นเรื่อยๆ แล้วจินโจวก็เริ่มพัฒนาขึ้น",
+                "zh-Hans": "也就是这样我才开始学摄影，拍照技术越来越好，这今州城也越来越热闹了。",
+                "zh-Hant": "也就是這樣我才開始學攝影，拍照技術越來越好，這今州城也越來越熱鬧了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gab mehr Leute auf den Straßen, mehr Geschäfte und die Geschäfte waren erfolgreicher. Es war eine gute Zeit.",
+                "en": "There were more people on the streets, more shops, and businesses more prosperous. It was a good time.",
+                "es": "Había más gente en las calles, más tiendas, y los negocios más prósperos. Fue un buen momento.",
+                "fr": "On a plus de monde dans les rues, plus de magasins. C'était le bon temps. J'aime beaucoup les photographier...",
+                "ja": "人も店も多くなったし……何より活気に溢れている……いい街になった。",
+                "ko": "이 거리에 사람이 점점 많아짐에 따라 거리에 가게도 많아지고 장사도 점점 번창했거든요",
+                "th": "ท้องถนนมีผู้คนมากขึ้น ร้านค้าเพิ่มจำนวน ธุรกิจขยายตัว เป็นช่วงเวลารุ่งเรือง",
+                "zh-Hans": "这街道的人变多了，当街店铺也多，生意也越来越红火，真好啊。",
+                "zh-Hant": "這街道的人變多了，當街店鋪也多，生意也越來越紅火，真好啊。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay, ich denke, das ist genug Geschwafel. Bitte entschuldige, ich kann nicht aufhören, an so etwas zu denken, wenn ich einmal anfange.",
+                "en": "Okay, I think that’s enough mumbling. Please excuse me, I can't stop thinking about things like this once I start.",
+                "es": "Bueno, creo que eso es suficiente divagación. Por favor, discúlpame, no puedo dejar de pensar en cosas como esta una vez que comienzo.",
+                "fr": "Bon, j'ai assez marmonné. Pardon. Je ne peux pas m'arrêter de penser à ce genre de choses une fois que j'ai commencé.",
+                "ja": "おっと、 悪いね、昔話に浸ってしまって……",
+                "ko": "아, 말이 많았네요. 죄송해요. 한 번 추억에 잠기면 벗어나질 못해서...",
+                "th": "เอาละ พล่ามมากพอแล้ว อย่าถือสาฉันเลยนะ พอคิดเรื่องพวกนี้เมื่อไหร่แล้วหยุดไม่ค่อยได้",
+                "zh-Hans": "好了，先不说这些了，真是不好意思，我这一回想就停不下来。",
+                "zh-Hant": "好了，先不說這些了，真是不好意思，我這一回想就停不下來。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir sollten zur nächsten Landschaft weiterziehen. Und der Ort ist...",
+                "en": "We should move on to the next scenery. And the place is...",
+                "es": "Deberíamos pasar al siguiente paisaje. Y el lugar es...",
+                "fr": "Nous devrions passer à la scène suivante. Et l'endroit est...",
+                "ja": "次の撮影スポットもあるんだ。",
+                "ko": "또 다음 장소로 이동해 주셔야겠어요. 이곳은…",
+                "th": "เราควรมุ่งหน้าไปที่ทิวทัศน์จุดถัดไป ซึ่งก็คือ...",
+                "zh-Hans": "还得麻烦你去下一个地方呢，这个地方……",
+                "zh-Hant": "還得麻煩你去下一個地方呢，這個地方……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh! Ich habe eine Idee! Magst du Katzen?",
+                "en": "Oh! I’ve got an idea! Do you like cats?",
+                "es": "¡Oh! ¡Se me ocurre una idea! ¿Te gustan los gatos?",
+                "fr": "Oh ! J'ai une idée ! Vous aimez les chats ?",
+                "ja": "そうだ！あんた、猫派か？",
+                "ko": "맞다! 혹시 고양이 좋아하세요?",
+                "th": "อ้อ! คิดออกละ! เธอชอบแมวรึเปล่า?",
+                "zh-Hans": "有了！不知道你喜欢猫吗？",
+                "zh-Hant": "有了！不知道你喜歡貓嗎？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja, ich mag Katzen.",
+                    "en": "I do.",
+                    "es": "A mí sí.",
+                    "fr": "Oui.",
+                    "ja": "もちろん。",
+                    "ko": "좋아해요",
+                    "th": "ชอบสิ",
+                    "zh-Hans": "喜欢。",
+                    "zh-Hant": "喜歡。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Tut mir leid. Ich bin eher ein Hundemensch.",
+                    "en": "Sorry. I'm a dog person.",
+                    "es": "Lo siento. Soy más de perros.",
+                    "fr": "Je préfère le chien.",
+                    "ja": "いいや、犬派だ。",
+                    "ko": "전 강아지 파이긴 해요",
+                    "th": "โทษทีนะ ชอบหมามากกว่า",
+                    "zh-Hans": "我是狗派。",
+                    "zh-Hant": "我是狗派。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Miau.",
+                    "en": "Meow.",
+                    "es": "Miau.",
+                    "fr": "Miaou.",
+                    "ja": "ニャー。",
+                    "ko": "야옹~",
+                    "th": "เมี้ยว",
+                    "zh-Hans": "喵。",
+                    "zh-Hant": "喵。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist großartig! Kleine Kätzchen, flauschig und liebenswert. Jeder liebt sie!",
+                "en": "That's great! Little kitties, fluffy and adorable. Everyone loves them!",
+                "es": "¡Eso es genial! Pequeños gatitos, esponjosos y adorables. ¡A todos les encantan!",
+                "fr": "C'est super ! Des petits chats adorables. Tout le monde les aime !",
+                "ja": "そいつはいい！もふもふな猫が、嫌い人間はいない！",
+                "ko": "정말 다행이네요! 고양이는 털이 북실북실한 게, 모두가 좋아하는 동물이죠!",
+                "th": "เยี่ยมเลย! ลูกแมวตัวน้อยๆ ขนฟู น่ารัก ใครๆ ก็รักพวกมัน!",
+                "zh-Hans": "太好了！小猫，毛绒绒，大家都喜欢！",
+                "zh-Hant": "太好了！小貓，毛絨絨，大家都喜歡！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haha, Hunde sind auch nett! Aber...",
+                "en": "Haha, dogs are nice too! But...",
+                "es": "Jaja, los perros también son agradables. Pero...",
+                "fr": "Haha, les chiens sont gentils aussi ! Mais...",
+                "ja": "はははっ！犬もいい。しかし……",
+                "ko": "하하, 물론 강아지도 좋죠! 하지만...",
+                "th": "ฮ่าฮ่า หมาก็ดี! แต่...",
+                "zh-Hans": "哈哈，狗狗也很好很好！但是……",
+                "zh-Hant": "哈哈，狗狗也很好很好！但是……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du weißt wirklich, wie man eine Katze ist!",
+                "en": "You sure know how to be a cat!",
+                "es": "¡Realmente sabes cómo ser un gato!",
+                "fr": "Tu sais vraiment comment être un chat !",
+                "ja": "に、似てるな……",
+                "ko": "저... 정말 잘 따라하시네요!",
+                "th": "เล่นเป็นแมวซะเหมือนเลยนะ!",
+                "zh-Hans": "学、学得好像啊！",
+                "zh-Hant": "學、學得好像啊！"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als nächstes möchte ich, dass du ein Foto von einer Katze machst. Klingt gut?",
+                "en": "Next, I would like you to take a picture of a cat. Sounds good?",
+                "es": "A continuación, me gustaría que tomaras una foto de un gato. ¿Te parece bien?",
+                "fr": "Ensuite, j'aimerais que vous preniez la photo des chatons. Cela vous convient-il ?",
+                "ja": "これからは猫の撮影をお願いしたい。 いいかな？",
+                "ko": "다음으로, 고양이 몇 마리를 찍고 싶은데, 괜찮을까요?",
+                "th": "ต่อไป ฉันอยากให้เธอถ่ายรูปแมวสักตัว ดีมั้ย?",
+                "zh-Hans": "接下来，我想请你拍几只小猫，可以吗？",
+                "zh-Hant": "接下來，我想請你拍幾隻小貓，可以嗎？"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kein Problem.",
+                    "en": "Not a problem.",
+                    "es": "No hay problema.",
+                    "fr": "D'accord.",
+                    "ja": "いいとも！",
+                    "ko": "알겠어요",
+                    "th": "ไม่มีปัญหา",
+                    "zh-Hans": "可以。",
+                    "zh-Hant": "可以。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich markiere den Ort für dich. Los geht's.",
+                "en": "I'll mark the location for you. Off we go.",
+                "es": "Marcaré la ubicación para ti. Vamos.",
+                "fr": "Je vais marquer l'emplacement pour vous. C'est parti.",
+                "ja": "場所はここ。さあ、一緒に向かおうか。",
+                "ko": "장소를 표시해드릴게요. 함께 가시죠",
+                "th": "ฉันจะบอกตำแหน่งให้ ไปกันเลย",
+                "zh-Hans": "地点我给你标出来，我们一起过去吧。",
+                "zh-Hant": "地點我給你標出來，我們一起過去吧。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114001028,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41199,
+                    "y": 107670,
+                    "z": 2595
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -153
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum zweiten Ort, den Bowen erwähnt hat",
+        "en": "Go the second place Bowen mentioned",
+        "es": "Ve al segundo lugar que mencionó Bowen",
+        "fr": "Se rendre au deuxième lieu indiqué par Bowen",
+        "ja": "二つ目の映えるスポットに赴く",
+        "ko": "두 번째 포토존으로 이동",
+        "th": "ไปยังสถานที่ที่สองซึ่งป๋อเหวินเอ่ยถึง",
+        "zh-Hans": "前往第二处拍照地点",
+        "zh-Hant": "前往第二處拍照地點"
+      },
+      "entities": [
+        {
+          "entityId": 114000823,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男",
+          "areaId": 301,
+          "position": {
+            "x": -29205,
+            "y": 108116,
+            "z": 967
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000043,
+          "mapId": 8,
+          "blueprintType": "NPC311001",
+          "name": "TsEntity_拍照支线_三色_小猫",
+          "areaId": 301,
+          "position": {
+            "x": -30573,
+            "y": 107293,
+            "z": 1447
+          },
+          "rotation": {
+            "x": 1,
+            "y": 2,
+            "z": 92
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000044,
+          "mapId": 8,
+          "blueprintType": "NPC311003",
+          "name": "TsEntity_拍照支线_白雪_小猫",
+          "areaId": 301,
+          "position": {
+            "x": -30765,
+            "y": 107831,
+            "z": 961
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000045,
+          "mapId": 8,
+          "blueprintType": "NPC311002",
+          "name": "TsEntity_拍照支线_狸花_小猫",
+          "areaId": 301,
+          "position": {
+            "x": -30159,
+            "y": 107811,
+            "z": 981
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 104
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000071,
+          "mapId": 8,
+          "blueprintType": "NPC227",
+          "name": "TsEntity_154_013_老奶奶5",
+          "areaId": 301,
+          "position": {
+            "x": -41571,
+            "y": 107108,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000072,
+          "mapId": 8,
+          "blueprintType": "NPC256",
+          "name": "TsEntity_154_007_少女1_3",
+          "areaId": 301,
+          "position": {
+            "x": -41542,
+            "y": 107231,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -99
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 311000073,
+          "mapId": 8,
+          "blueprintType": "NPC279",
+          "name": "TsEntity_157_023_市民男6",
+          "areaId": 301,
+          "position": {
+            "x": -41661,
+            "y": 107187,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Genau dort. Siehst du diese Katzen, du kannst sie streicheln, wenn du möchtest.",
+                "en": "Right there. See those cats, you can go give them a pet if you’d like.",
+                "es": "Justo allí. Ves a esos gatos, puedes acariciarlos si quieres.",
+                "fr": "C'est là-bas. Il y a beaucoup de chatons, si vous vous rapprochez, ils vont miauler doucement.",
+                "ja": "そこだ。見ろ、猫がいっぱいいるだろう。 触りたければ、触ってもいいぞ。",
+                "ko": "바로 저기 있네요. 보세요. 저기에 고양이가 많이 있어요. 다가가면 야옹야옹 하거든요",
+                "th": "ตรงนั้นไง เห็นแมวกลุ่มนั้นมั้ย? เข้าไปเล่นกับพวกมันก็ได้นะ",
+                "zh-Hans": "就在那里了，你看，那里有很多小猫，你要是靠近它们，它们还会冲你温柔喵喵叫呢。",
+                "zh-Hant": "就在那裡了，你看，那裡有很多小貓，你要是靠近它們，它們還會沖你溫柔喵喵叫呢。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Mache ein Foto nach Bowen",
+        "en": "Take a photo according to Bowen",
+        "es": "Toma una foto según las indicaciones de Bowen.",
+        "fr": "Prendre une photo selon le guide de Bowen",
+        "ja": "博文に頼まれた写真を撮る",
+        "ko": "박문이 지정한 사진 촬영하기",
+        "th": "ถ่ายภาพตามที่ป๋อเหวินระบุ",
+        "zh-Hans": "拍下博文指定的照片",
+        "zh-Hant": "拍下博文指定的照片"
+      },
+      "entities": [
+        {
+          "entityId": 114000864,
+          "mapId": 8,
+          "blueprintType": "Gameplay163",
+          "name": "TsEntity_特殊_拍照猫咪",
+          "areaId": 301,
+          "position": {
+            "x": -30602,
+            "y": 107324,
+            "z": 1487
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übergebe das zweite Foto an Bowen",
+        "en": "Deliver the second photo to Bowen",
+        "es": "Entrega la segunda foto a Bowen",
+        "fr": "Donner la deuxième photo à Bowen",
+        "ja": "博文に二枚目の写真を渡す",
+        "ko": "박문에게 두 번째 사진 제출하기",
+        "th": "ส่งภาพถ่ายที่สองให้กับป๋อเหวิน",
+        "zh-Hans": "向博文交付第二张照片",
+        "zh-Hant": "向博文交付第二張照片"
+      },
+      "entities": [
+        {
+          "entityId": 114000823,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男",
+          "areaId": 301,
+          "position": {
+            "x": -29205,
+            "y": 108116,
+            "z": 967
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Na, lass uns mal diese süße Fellkugel sehen.",
+                "en": "Well? Let see that cute furball.",
+                "es": "¿Y bien? Vamos a ver a esa adorable bola de pelo.",
+                "fr": "Alors, avez-vous réussi à prendre une photo du joli chat ?",
+                "ja": "どうだ。可愛い猫は撮れたか？",
+                "ko": "어때요? 귀여운 고양이를 찍으셨나요?",
+                "th": "เป็นไง? มาดูเจ้าขนฟูกัน",
+                "zh-Hans": "怎么样，有拍到可爱的小猫吗？",
+                "zh-Hant": "怎麼樣，有拍到可愛的小貓嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hier, bitte.",
+                    "en": "Here you go.",
+                    "es": "Aquí tienes.",
+                    "fr": "Voilà.",
+                    "ja": "はい。",
+                    "ko": "여기요",
+                    "th": "เชิญเลย",
+                    "zh-Hans": "给你。",
+                    "zh-Hant": "給你。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Schönes Foto. Sieh mal, wie entspannt er sein Nickerchen macht. Er sieht so gemütlich aus.",
+                "en": "Beautiful photo. Look how relaxed he is taking its nap. He looks so comfortable.",
+                "es": "Hermosa foto. Mira lo relajado que está tomando su siesta. Parece tan cómodo.",
+                "fr": "La photo est très belle, regarde comme il est détendu en dormant. Il a l'air si à l'aise.",
+                "ja": "うむ、いい出来だ。この寝顔……きっと心地良いのだろう。",
+                "ko": "잘 찍으셨네요. 느긋하게 자고 있는 모습이 정말 편안해 보여요",
+                "th": "รูปสวย หมอนี่กำลังงีบอยู่ ดูผ่อนคลายสบายตัวไปหมด",
+                "zh-Hans": "拍得真好看，看看它悠闲睡觉的样子，多舒服啊。",
+                "zh-Hant": "拍得真好看，看看它悠閒睡覺的樣子，多舒服啊。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier gab es auch mal einige kleine Kätzchen. Ich kam immer, um sie zu sehen, wenn ich von einer Geschäftsreise zurückkam.",
+                "en": "There used to be some small kittens around here as well. I’d come see them whenever I was back from a business trip.",
+                "es": "Solía haber algunos gatitos pequeños por aquí también. Venía a verlos cada vez que volvía de un viaje de negocios.",
+                "fr": "Il y avait aussi des chatons ici avant, quand je rentrais du travail, je venais les voir.",
+                "ja": "ここは昔から猫が多い。私も外勤から戻ってきた時は、よくここに寄っていた。",
+                "ko": "예전에 이곳에도 새끼 고양이들이 좀 있었어요. 외근을 나갔다가 돌아올 때면 보러 오곤 했죠",
+                "th": "เคยมีลูกแมวเล็กๆ แถวนี้ด้วย ฉันชอบแวะมาหาพวกมันหลังกลับจากเดินทางไปทำงานต่างถิ่น",
+                "zh-Hans": "以前这里也有些小猫，出外勤回来的时候我就来看看它们。",
+                "zh-Hant": "以前這裡也有些小貓，出外勤回來的時候我就來看看它們。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und es gab auch eine Glückskatze, genau wie diese hier. Sie hat sich ziemlich an mich gewöhnt.",
+                "en": "And there was a calico just like this one. He grew pretty close to me.",
+                "es": "Y había un gato de tres colores igual que este. Se acercó bastante a mí.",
+                "fr": "Il y avait un chat tricolore ici à l'époque, il ressemblait beaucoup à celui-ci, il était très affectueux envers moi.",
+                "ja": "あの時も……こいつと似た三毛が一匹いたな。 とても人懐っこいやつだった。",
+                "ko": "그때도 저 녀석과 닮은 삼색 고양이가 있었어요. 절 잘 따르곤 했었죠",
+                "th": "แล้วก็มีแมวสามสีเหมือนตัวนี้เลย มันสนิทกับฉันมาก",
+                "zh-Hans": "当时这里有只三花，就长得和它很像，还挺亲我的。",
+                "zh-Hant": "當時這裡有只三花，就長得和它很像，還挺親我的。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kam oft, um sie zu sehen, brachte ihr etwas zu essen, streichelte ihr Fell.",
+                "en": "I’d often come see him, bring him something to eat, stroke his hair.",
+                "es": "A menudo venía a verlo, le traía algo para comer, acariciaba su pelo.",
+                "fr": "Je venais souvent et je lui apportais de la nourriture, je le caressais.",
+                "ja": "懐かしいな……私もよく餌を与えたり、撫でたり……",
+                "ko": "그 녀석을 자주 보러가곤 했었죠. 먹을 것도 가져다 주고, 털도 만져주면서요",
+                "th": "ฉันมาหามันบ่อยๆ เอาอาหารมาป้อน ลูบขนให้มัน",
+                "zh-Hans": "我呢，就经常看看它，给它带点吃的，顺顺毛什么的。",
+                "zh-Hant": "我呢，就經常看看它，給它帶點吃的，順順毛什麼的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist schade, dass ich viel zu tun hatte und oft reiste, so dass ich sie nicht mit nach Hause nehmen konnte.",
+                "en": "It’s a shame that I was busy with work and traveled a lot, so I couldn’t bring him home.",
+                "es": "Es una lástima que estuviera ocupado con el trabajo y viajara mucho, por lo que no pude llevarlo a casa.",
+                "fr": "Malheureusement, j'étais très occupé par mon travail. Je devais souvent voyager, je n'avais pas le temps de m'occuper de lui.",
+                "ja": "まあ、残念なことに、仕事柄、飼う余裕はなかったのだがな。",
+                "ko": "하지만 안타깝게도 제가 일이 바쁜 관계로 여기저기로 출장을 다니는 바람에 그 녀석을 키울 수 없었어요",
+                "th": "น่าเสียดายที่ฉันงานยุ่งและต้องเดินทางบ่อย เลยพามันไปเลี้ยงที่บ้านไม่ได้",
+                "zh-Hans": "只是可惜我工作忙，总要出差，三天两头到处跑，没办法养它。",
+                "zh-Hant": "只是可惜我工作忙，總要出差，三天兩頭到處跑，沒辦法養它。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einmal war ich auf einer langen Geschäftsreise und ich konnte sie nirgendwo finden, als ich zurückkam.",
+                "en": "One time, I was away on a long business trip and I couldn’t find him anywhere after I came back.",
+                "es": "Una vez, estuve fuera en un largo viaje de negocios y no pude encontrarlo en ningún lugar después de que volví.",
+                "fr": "Une fois, j'étais en déplacement pendant une longue période. Quand je suis rentré, je n'ai pas pu retrouver le chaton.",
+                "ja": "結局……ある時、顔を見に行ってみたら、その猫はもういなくなっていた。",
+                "ko": "한 번 장기간 외근으로부터 돌아와보니 그 녀석이 사라졌어요",
+                "th": "มีอยู่ครั้งหนึ่ง ฉันเดินทางไปทำงานซะนาน พอกลับมาก็หามันไม่เจอ",
+                "zh-Hans": "结果有次外勤太久，回来后就找不到那只小猫了。",
+                "zh-Hant": "結果有次外勤太久，回來後就找不到那隻小貓了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es hat mich ein bisschen traurig gemacht, also habe ich aufgehört, für eine Weile zu besuchen.",
+                "en": "It made me a bit sad so I stopped visiting for while.",
+                "es": "Me puso un poco triste, así que dejé de visitar por un tiempo.",
+                "fr": "J'étais triste à l'époque, je n'ai pas pu venir ici pendant un certain temps.",
+                "ja": "正直、心がやられて……しばらく、ここには来れなかったよ。",
+                "ko": "그때 이후로 울적한 마음에 한 동안 이곳을 찾질 않았어요",
+                "th": "ฉันเศร้าใจจนเลิกมาที่นี่ไปพักหนึ่ง",
+                "zh-Hans": "当时是有些难过，一段时间都不过来了。",
+                "zh-Hant": "當時是有些難過，一段時間都不過來了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann bin ich eines Tages zufällig vorbeigekommen und habe diese Kätzchen gesehen. Es kamen auch Leute vorbei, um sie zu füttern und sich um sie zu kümmern.",
+                "en": "Then one day I happened to pass by and saw these kittens. There were also people coming over to feed and take care of them.",
+                "es": "Luego, un día, pasé por aquí y vi a estos gatitos. También había personas que venían a alimentarlos y a cuidarlos.",
+                "fr": "Plus tard, un jour, en passant par ici, j'ai vu qu'il y avait beaucoup de chatons ici, et qu'il y avait des gens qui les nourrissaient et les abritaient.",
+                "ja": "でも、後にここを通りがかった時、子猫がたくさんいたんだ。 そいつらに餌をやる人もいてな。",
+                "ko": "그 후로 어느 날 이곳을 지나가던 길에 우연찮게 어떤 사람의 보살핌으로 인해 이곳에 새끼 고양이가 아주 많아진 모습을 보게 되었죠",
+                "th": "วันหนึ่งฉันผ่านมา ได้เห็นลูกแมวพวกนี้ แล้วก็มีคนอื่นๆ มาให้อาหาร ดูแลพวกมัน",
+                "zh-Hans": "再后来一天路过这儿，看到这儿多了挺多猫崽，还有人来喂养安置。",
+                "zh-Hant": "再後來一天路過這兒，看到這兒多了挺多貓崽，還有人來餵養安置。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe sogar herumgefragt und zu meiner Freude wurde das dreifarbige Kätzchen von einer lieben Familie adoptiert.",
+                "en": "I even asked around, and to my delight the calico ended up being adopted by a lovely family.",
+                "es": "Incluso pregunté por ahí, y para mi alegría, el gato de tres colores terminó siendo adoptado por una encantadora familia.",
+                "fr": "J'ai aussi demandé à des gens, ils m'ont dit que le chat tricolore a maintenant trouvé une bonne maison.",
+                "ja": "気になって聞いてみたら、 あの頃の三毛は引き取られ、今は飼い主と新生活を満喫していると……",
+                "ko": "사람들에게 물어보니 그 삼색 고양이도 좋은 주인을 만났다고 하더군요",
+                "th": "ฉันก็เลยลองถามพวกเขาดู ปรากฏว่าเจ้าสามสีมีครอบครัวแสนดีรับไปเลี้ยงแล้ว",
+                "zh-Hans": "也和人打听过，他们说那只三花猫啊现在也找到个好人家啦。",
+                "zh-Hant": "也和人打聽過，他們說那隻三花貓啊現在也找到個好人家啦。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*kichern* Das ist meine Geschichte mit Katzen. Jetzt bleibt nur noch ein Ort übrig, den ich besuchen muss. Und ich habe eine Bitte.",
+                "en": "*chuckle* That's my story with cats. Now there’s only one more place left to go. And I have a favor to ask.",
+                "es": "*risa* Esa es mi historia con los gatos. Ahora solo queda un lugar más por visitar. Y tengo un favor que pedirte.",
+                "fr": "Haha, c'est l'histoire de moi et des chats. Il ne reste plus qu'un seul endroit maintenant, j'ai une faveur à demander.",
+                "ja": "ははっ。私の話はこの辺にしとこう。 残り最後の撮影スポットだが、少しお願いがあってね……",
+                "ko": "하하, 저와 고양이의 스토리는 대충 여기까지에요. 이제 마지막 한 곳만 남았군요. 부탁이 하나 있어요",
+                "th": "*หึหึ* นี่แหละ ความหลังเรื่องแมวของฉัน คราวนี้ก็เหลืออีกแห่งเดียวที่ต้องไป และฉันมีเรื่องอยากขอร้องเธอด้วย",
+                "zh-Hans": "哈哈，我和猫的故事就是这样。现在还剩最后一个地点了，我有个不情之请。",
+                "zh-Hant": "哈哈，我和貓的故事就是這樣。現在還剩最後一個地點了，我有個不情之請。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Frag einfach los.",
+                    "en": "Ask away.",
+                    "es": "Pregunta lo que quieras.",
+                    "fr": "Vous avez dit.",
+                    "ja": "どうぞ。",
+                    "ko": "말씀하세요",
+                    "th": "ถามมาได้เลย",
+                    "zh-Hans": "你说。",
+                    "zh-Hant": "你說。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich möchte dich bitten, ein Foto von mir im Wohngebiet zu machen. Ich möchte, dass es das letzte Foto der Sammlung ist.",
+                "en": "I’d like to ask you to take a picture of me in the residential area. I wish to make it the the final photo of the collection.",
+                "es": "Me gustaría que me tomaras una foto en la zona residencial. Quiero que sea la foto final de la colección.",
+                "fr": "Je voudrais que vous preniez une photo de moi dans le quartier des commerçants, comme la dernière photo de cette série.",
+                "ja": "商業区域で、私の写真を取ってほしい。 これを最後の一枚にする。",
+                "ko": "마지막으로 상업 지역에서 저를 찍어줬으면 좋겠어요",
+                "th": "ฉันจะขอให้เธอถ่ายรูปฉันในย่านที่พักอาศัย ฉันอยากให้เป็นภาพสุดท้ายในคอลเลกชัน",
+                "zh-Hans": "我想麻烦你去商业区那里拍下我，作为这组照片的最后一张。",
+                "zh-Hant": "我想麻煩你去商業區那裡拍下我，作為這組照片的最後一張。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss ein paar Vorbereitungen treffen. Wie wäre es, wenn wir uns dort in ein bisschen treffen?",
+                "en": "I need to make some preparations. Why don’t we meet there in a bit?",
+                "es": "Necesito hacer algunas preparaciones. ¿Por qué no nos encontramos allí en un rato?",
+                "fr": "Merci beaucoup ! Je t'attends là-bas.",
+                "ja": "頼む！私は先に準備してくる。あそこで合流しよう！",
+                "ko": "그럼 부탁 좀 드릴게요! 전 먼저 가서 준비하고 있을게요",
+                "th": "ฉันต้องเตรียมการบางอย่าง อีกสักพักไปเจอกันที่นั่นได้มั้ย?",
+                "zh-Hans": "麻烦你了！我去准备一下，到那里等你。",
+                "zh-Hant": "麻煩你了！我去準備一下，到那裡等你。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000823,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男",
+                  "areaId": 301,
+                  "position": {
+                    "x": -29205,
+                    "y": 108116,
+                    "z": 967
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Triff Bowen am letzten Ort",
+        "en": "Meet Bowen at the final place",
+        "es": "Encuentra a Bowen en el lugar final",
+        "fr": "Aller au dernier lieu indiqué par Bowen",
+        "ja": "最後のスポットで博文を探す",
+        "ko": "마지막 장소로 이동하여 박문과 만나기",
+        "th": "พบกับป๋อเหวินที่สถานที่สุดท้าย",
+        "zh-Hans": "前往最后的地点与博文碰面",
+        "zh-Hant": "前往最後的地點與博文碰面"
+      },
+      "entities": [
+        {
+          "entityId": 114000823,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男",
+          "areaId": 301,
+          "position": {
+            "x": -29205,
+            "y": 108116,
+            "z": 967
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000827,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男2",
+          "areaId": 301,
+          "position": {
+            "x": -44551,
+            "y": 110369,
+            "z": 1695
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000867,
+          "mapId": 8,
+          "blueprintType": "NPC308",
+          "name": "TsEntity_121_010_皇龙小孩3",
+          "areaId": 301,
+          "position": {
+            "x": -44336,
+            "y": 110440,
+            "z": 1694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -79
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000868,
+          "mapId": 8,
+          "blueprintType": "NPC007",
+          "name": "TsEntity_170_001_皇龙女1",
+          "areaId": 301,
+          "position": {
+            "x": -44306,
+            "y": 110398,
+            "z": 1694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -171
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000869,
+          "mapId": 8,
+          "blueprintType": "NPC276",
+          "name": "TsEntity_157_020_市民男1",
+          "areaId": 301,
+          "position": {
+            "x": -44295,
+            "y": 110344,
+            "z": 1695
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 147
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 14,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Das ist der Ort. Diese Brücke... es ist immer das Gleiche.",
+                "en": "This is the place. This bridge... it's always the same.",
+                "es": "Este es el lugar. Este puente... siempre es lo mismo.",
+                "fr": "C'est l'endroit. Ce pont... c'est toujours le même.",
+                "ja": "ここだな。この橋も……昔のままか。",
+                "ko": "바로 여기예요. 이 다리... 변한 게 없네요",
+                "th": "ที่นี่แหละ สะพานนี้... มันเหมือนเดิมตลอดเลย",
+                "zh-Hans": "就是这里了。这座桥……一直都没变啊。",
+                "zh-Hant": "就是這裡了。這座橋……一直都沒變啊。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist genau hier, bitte, hilf mir ein Foto zu machen.",
+                "en": "It's right here, please, help me take a photo.",
+                "es": "Está justo aquí, por favor, ayúdame a tomar una foto.",
+                "fr": "C'est ici, s'il vous plaît, aidez-moi à prendre une photo.",
+                "ja": "ここでいい。お願い！1枚撮ってもらえるかな？",
+                "ko": "여기서 사진 한 장 찍어주세요, 부탁할게요",
+                "th": "ตรงนี้แหละ ได้โปรด ช่วยถ่ายรูปให้ฉันที",
+                "zh-Hans": "就在这里，拜托你了，帮我拍一张吧。",
+                "zh-Hant": "就在這裡，拜託你了，幫我拍一張吧。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_任务专用冒泡_刘梦蝶",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Mama, Papa, lasst uns ein Foto machen!",
+                "en": "Mom, Dad, let's take a photo!",
+                "es": "¡Mamá, papá, tomemos una foto!",
+                "fr": "Papa et maman, prenons une photo !",
+                "ja": "父さん母さん！一緒に写真撮ろう！",
+                "ko": "아빠, 엄마, 우리 사진 찍어요!",
+                "th": "ท่านพ่อ ท่านแม่ มาถ่ายรูปกัน!",
+                "zh-Hans": "爸爸妈妈，我们来拍照吧！",
+                "zh-Hant": "爸爸媽媽，我們來拍照吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich, achte darauf, eine schöne Pose zu machen.",
+                "en": "Of course, make sure you strike a nice pose.",
+                "es": "Por supuesto, asegúrate de hacer una bonita pose.",
+                "fr": "Bien sûr, c'est bon. Alors, faites une pose !",
+                "ja": "いいよ？可愛いポーズとって？",
+                "ko": "그래, 멋진 포즈를 지어보렴",
+                "th": "ได้เลย อย่าลืมโพสท่าเท่ๆ นะ",
+                "zh-Hans": "当然好呀，那你可要摆个好看的动作。",
+                "zh-Hant": "當然好呀，那你可要擺個好看的動作。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lasst uns ab jetzt jedes Jahr hier ein Foto machen, was meint ihr?",
+                "en": "Let's take a photo here every year from now on, what do you think?",
+                "es": "Tomemos una foto aquí cada año a partir de ahora, ¿qué te parece?",
+                "fr": "Nous viendrons ici pour en prendre un chaque année à partir de maintenant, qu'en pensez-vous ?",
+                "ja": "うん、悪くない。これから毎年もここで写真を撮ろう！",
+                "ko": "우리 앞으로 매년 여기 와서 한 장씩 찍는 게 어때요?",
+                "th": "นับจากนี้ไปเรามาถ่ายรูปที่นี่ทุกปีกันเถอะ คุณคิดว่ายังไง",
+                "zh-Hans": "我们以后每年都来这里拍一张，怎么样？",
+                "zh-Hant": "我們以後每年都來這裏拍一張，怎麼樣？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 142,
+                "name": {
+                  "zh-Hans": "3号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Mache ein Foto für Bowen",
+        "en": "Take a photo for Bowen",
+        "es": "Toma una foto para Bowen",
+        "fr": "Prendre une photo pour Bowen",
+        "ja": "博文の写真を撮る",
+        "ko": "박문을 위해 사진 한 장 촬영하기",
+        "th": "ถ่ายภาพให้ป๋อเหวิน",
+        "zh-Hans": "为博文拍一张照片",
+        "zh-Hant": "為博文拍一張照片"
+      },
+      "entities": [
+        {
+          "entityId": 114000824,
+          "mapId": 8,
+          "blueprintType": "Gameplay163",
+          "name": "TsEntity_特殊_拍照博文",
+          "areaId": 301,
+          "position": {
+            "x": -44695,
+            "y": 110368,
+            "z": 1857
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übergebe das letzte Foto an Bowen",
+        "en": "Deliver the final photo to Bowen",
+        "es": "Entrega la foto final a Bowen",
+        "fr": "Donner la dernière photo à Bowen",
+        "ja": "博文に最後の写真を渡す",
+        "ko": "박문에게 마지막 사진 제출하기",
+        "th": "ส่งภาพถ่ายสุดท้ายให้กับป๋อเหวิน",
+        "zh-Hans": "交给博文最后一张照片",
+        "zh-Hant": "交給博文最後一張照片"
+      },
+      "entities": [
+        {
+          "entityId": 114000827,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男2",
+          "areaId": 301,
+          "position": {
+            "x": -44551,
+            "y": 110369,
+            "z": 1695
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000867,
+          "mapId": 8,
+          "blueprintType": "NPC308",
+          "name": "TsEntity_121_010_皇龙小孩3",
+          "areaId": 301,
+          "position": {
+            "x": -44336,
+            "y": 110440,
+            "z": 1694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -79
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000868,
+          "mapId": 8,
+          "blueprintType": "NPC007",
+          "name": "TsEntity_170_001_皇龙女1",
+          "areaId": 301,
+          "position": {
+            "x": -44306,
+            "y": 110398,
+            "z": 1694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -171
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000869,
+          "mapId": 8,
+          "blueprintType": "NPC276",
+          "name": "TsEntity_157_020_市民男1",
+          "areaId": 301,
+          "position": {
+            "x": -44295,
+            "y": 110344,
+            "z": 1695
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 147
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie ist das Foto? Lass es uns ansehen.",
+                "en": "How’s the photo? Let’s give it a look.",
+                "es": "¿Cómo está la foto? Echemos un vistazo.",
+                "fr": "Comment ça s'est passé, puis-je voir la photo ?",
+                "ja": "写真を見せてくれないか？",
+                "ko": "어때요? 사진 좀 보여주시겠어요?",
+                "th": "รูปเป็นไงบ้าง? มาดูกันหน่อย",
+                "zh-Hans": "怎么样，让我看看照片吧？",
+                "zh-Hant": "怎麼樣，讓我看看照片吧？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hier, bitte.",
+                    "en": "Here you go.",
+                    "es": "Aquí la tienes.",
+                    "fr": "Voilà.",
+                    "ja": "はい。",
+                    "ko": "여기요",
+                    "th": "เชิญเลย",
+                    "zh-Hans": "给你。",
+                    "zh-Hant": "給你。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, es tut mir so leid. Ich habe es zu lange angestarrt.",
+                "en": "Oh, I'm so sorry. I’ve stared at it for too long.",
+                "es": "Oh, lo siento mucho. La he mirado durante demasiado tiempo.",
+                "fr": "Ah, j'ai passé beaucoup de temps à regarder cette photo.",
+                "ja": "ああ、待たせてすまないね……",
+                "ko": "아, 정말 죄송해요. 사진을 너무 오래 봐버렸네요",
+                "th": "ขอโทษนะ ฉันจ้องมองนานไปหน่อย",
+                "zh-Hans": "啊，真不好意思，我看这张照片看了这么久。",
+                "zh-Hant": "啊，真不好意思，我看這張照片看了這麼久。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe hier früher Fotos mit meiner Familie gemacht, genau wie diese Familie.",
+                "en": "I used to take pictures here with my family, just like that family.",
+                "es": "Solía tomar fotos aquí con mi familia, igual que esa familia.",
+                "fr": "Je prenais souvent des photos avec ma famille ici, comme la famille à côté de nous.",
+                "ja": "昔はよく、ここで家族と一緒に写真を撮っていた。 さっきの人達のようにね。",
+                "ko": "예전에 가족들과 함께 자주 이곳에서 사진을 찍었었거든요. 방금 옆에 있는 가족처럼요",
+                "th": "ฉันเคยถ่ายรูปกับครอบครัวที่นี่ เหมือนครอบครัวนั้น",
+                "zh-Hans": "以前啊我常和家里人在这里合照，就像刚才旁边那一家那样。",
+                "zh-Hant": "以前啊我常和家裡人在這裡合照，就像剛才旁邊那一家那樣。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es war so eine Familientradition, hier jedes Jahr ein Foto zu machen. Als ich jünger war, musste ich in der Mitte stehen, und mein Vater musste mich hochheben, damit ich auf dem Foto zu sehen war.",
+                "en": "It’s a family thing for us to take a picture here each year. I used to stand in the middle, with my dad having to hold me up just to get in the picture frame when I was younger.",
+                "es": "Para nosotros es una tradición familiar tomar una foto aquí cada año. Solía estar en el medio, con mi padre teniendo que levantarme solo para entrar en el marco de la foto cuando era más joven.",
+                "fr": "Dans ma famille, nous avons une tradition de prendre une photo ici chaque année. Je me tenais entre mon père et ma mère. Au début, mon père devait me tenir pour que je puisse être sur la photo.",
+                "ja": "毎年、撮ってもらっていたな。小さい頃は、父さんに抱っこされながら撮ってもらい……",
+                "ko": "저희 가족은 매년 여기에서 사진을 찍던 전통이 있었어요. 아빠와 엄마 중간에 제가 있곤 했었죠. 어릴때는 사진에 제 모습이 나오려면 아빠를 꼬옥 안고 있어야 했었죠",
+                "th": "ครอบครัวเรามีธรรมเนียมถ่ายรูปที่นี่กันทุกปี ฉันเคยยืนตรงกลาง ตอนยังเด็ก พ่อจะอุ้มฉันขึ้นมาให้อยู่ในเฟรม",
+                "zh-Hans": "我家有个习惯，每年都要在这里拍上一张照片，我站在爸爸妈妈中间。最开始的时候我得爸爸抱着才能上镜头。",
+                "zh-Hant": "我家有個習慣，每年都要在這裡拍上一張照片，我站在爸爸媽媽中間。最開始的時候我得爸爸抱著才能上鏡頭。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als ich älter wurde, war ich groß genug, um meine Arme um die Schultern meiner Eltern zu legen für die Fotos.",
+                "en": "After I grew older, I got big enough to wrap my arms around my parents' shoulders for the pictures.",
+                "es": "Después de que crecí, me hice lo suficientemente grande para rodear con mis brazos los hombros de mis padres para las fotos.",
+                "fr": "Plus tard, quand j'ai grandi, je devais tenir mon père et ma mère par les épaules pour prendre la photo.",
+                "ja": "大きくなったら、私が両親の肩を抱きながら撮ってもらい……",
+                "ko": "나중에 점점 자라고나서부터는 부모님과 어깨동무하며 사진을 찍자고 했어요",
+                "th": "พอโตขึ้น ฉันตัวใหญ่พอจะโอบไหล่พ่อกับแม่ถ่ายรูปด้วยกัน",
+                "zh-Hans": "后来渐渐大了，要我搂着爸妈的肩膀，一起拍照。",
+                "zh-Hant": "後來漸漸大了，要我摟著爸媽的肩膀，一起拍照。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Anzahl der Familienfotos wurde weniger, nachdem ich für meine Arbeit von zu Hause weggezogen bin. Jetzt sind sie nirgendwo hier, aber...",
+                "en": "The amount of family photos grew less after I left home for my job. Now, they're not here anywhere, but...",
+                "es": "La cantidad de fotos familiares disminuyó después de que me fui de casa por mi trabajo. Ahora, no están aquí en ninguna parte, pero...",
+                "fr": "Plus tard, quand j'ai quitté la maison pour travailler, nous avons pris moins de photos ensemble. Maintenant, ils ne sont plus là, mais...",
+                "ja": "そして仕事で家から離れて、写真を撮る機会が少なくなり…… 今じゃ父さんも母さんもいなくなった……",
+                "ko": "그 뒤로 제가 집을 떠나 일을 하고나서부터는 함께 사진을 찍는 횟수가 줄어들었죠. 이제는 부모님도 계시지 않지만요. 하지만...",
+                "th": "หลังจากฉันออกจากบ้านไปทำงาน เราถ่ายรูปครอบครัวกันน้อยลง ตอนนี้พวกเขาก็ไม่อยู่ที่นี่แล้ว แต่...",
+                "zh-Hans": "再后来我离开家里工作，这一起拍照的次数就少了。现在呢，他们也不在了，但是啊……",
+                "zh-Hant": "再後來我離開家裡工作，這一起拍照的次數就少了。現在呢，他們也不在了，但是啊……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein weiteres Foto hier an der gleichen Stelle zu machen, kann als eine Art Mitteilung an sie gelten, dass es mir ziemlich gut geht, oder?",
+                "en": "Taking another photo here at the same spot, can count as telling them I'm doing pretty well, right?",
+                "es": "Tomar otra foto aquí en el mismo lugar, ¿puede contar como decirles que me está yendo bastante bien, verdad?",
+                "fr": "Est-ce que prendre une photo ici peut leur dire que je vais bien ?",
+                "ja": "ここでまた写真を撮るということは…… 両親に対する、「近況報告」……なんてことになるだろうか？",
+                "ko": "여기서 사진 한 장을 남기면 제가 잘 지내고 있다고 알릴 수 있겠죠?",
+                "th": "ถ่ายรูปที่นี่ตรงจุดเดิม ก็คงเป็นการบอกพวกเขาได้ว่าฉันสบายดี จริงมั้ย?",
+                "zh-Hans": "能在这里再拍一张照，算不算告诉他们自己过得很好呢？",
+                "zh-Hant": "能在這裡再拍一張照，算不算告訴他們自己過得很好呢？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Absolut.",
+                    "en": "Absolutely.",
+                    "es": "Absolutamente.",
+                    "fr": "Oui, c'est ça le cas.",
+                    "ja": "{Male=きっとそうだ。;Female=きっとそうよ。}",
+                    "ko": "분명 그럴 거예요",
+                    "th": "แน่นอน",
+                    "zh-Hans": "一定是的。",
+                    "zh-Hant": "一定是的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Ich bin wirklich dankbar für deine Hilfe heute. Wenn es dich nicht gegeben hätte, wäre es für mich wirklich schwierig gewesen, meinen Wunsch zu erfüllen, die Momente von Jinzhou festzuhalten!",
+                "en": "Yeah. I really appreciate your help today. If it wasn't for you, it would’ve been really hard for me to fulfill my wish of capturing the moments of Jinzhou!",
+                "es": "Sí. Realmente agradezco tu ayuda hoy. Si no fuera por ti, me habría sido muy difícil cumplir mi deseo de capturar los momentos de Jinzhou.",
+                "fr": "Oui, je pense la même chose. Merci beaucoup pour aujourd'hui. Sans vous, je pense que mon souhait de prendre des photos de mes souvenirs ici aurait été difficile à réaliser !",
+                "ja": "ああ……そうだな。 今日はありがとう。あんたがいなければ、 こんないい写真は撮れなかった！",
+                "ko": "네, 저도 그렇게 생각해요. 오늘 정말 감사했어요. 방랑자가 아니었다면, 금주의 추억 촬영 소원은 이룰 수 없었을 거예요!",
+                "th": "อื้อ วันนี้ฉันซึ้งใจจริงๆ ที่เธอช่วย ถ้าไม่ได้เธอ คงยากมากที่ฉันจะได้สมหวังในการบันทึกความทรงจำแห่งจินโจว!",
+                "zh-Hans": "嗯，我也这样想。今天真是太谢谢你了，要不是你的话，拍下今州回忆的这个愿望也一定很难完成吧！",
+                "zh-Hant": "嗯，我也這樣想。今天真是太謝謝你了，要不是你的話，拍下今州回憶的這個願望也一定很難完成吧！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe vor, diese Fotos an den Verlag zu schicken und deinen Namen zu nennen. Oh, mein Gott. Wir waren so mit den Fotos beschäftigt, dass ich noch nicht die Chance hatte, deinen Namen zu erfahren.",
+                "en": "I plan to mail these photos back to the publishing, crediting your name on them. Oh, dear. We’ve been so preoccupied with the photos, I haven’t got the chance to get your name yet.",
+                "es": "Planeo enviar estas fotos de vuelta a la editorial, acreditando tu nombre en ellas. Oh, {Male=querido;Female=querida}. Hemos estado tan ocupados con las fotos, que no he tenido la oportunidad de preguntar tu nombre.",
+                "fr": "Je vais envoyer ces photos à mon bureau, et je vais aussi mettre votre nom. Après tout ce travail, je ne sais même pas qui vous êtes...",
+                "ja": "これらの写真は会社に送るつもりだが…… その前に、あんたの名前を知りたい。 何せ、随分面倒を掛けたからな！",
+                "ko": "이 사진들은 당신의 이름도 함께 올려 잡지사에 부칠 거예요. 그러고 보니 이름이 뭔가요?",
+                "th": "ฉันตั้งใจจะส่งรูปถ่ายพวกนี้ไปที่สำนักพิมพ์ โดยให้เครดิตชื่อเธอด้วย ตายละ เรามัวแต่ถ่ายรูปจนฉันยังไม่ได้ถามชื่อเธอเลย",
+                "zh-Hans": "这些照片我打算寄回社里，也得把你的名字挂上去。忙了这么久，也不知道你叫什么？",
+                "zh-Hant": "這些照片我打算寄回社裡，也得把你的名字掛上去。忙了這麼久，也不知道你叫什麼？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Der geschätzte Rover, zu deinen Diensten.",
+                    "en": "The esteemed Rover, at your service.",
+                    "es": "{Male=El estimado;Female=La estimada} Errante, a tu servicio.",
+                    "fr": "Le célèbre Nomade.",
+                    "ja": "知らぬ者はいない、漂泊者だ！",
+                    "ko": "그 이름도 유명한 방랑자요",
+                    "th": "ผู้พเนจรคนดัง ยินดีรับใช้",
+                    "zh-Hans": "大名鼎鼎的漂泊者。",
+                    "zh-Hant": "大名鼎鼎的漂泊者。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "{PlayerName}.",
+                    "en": "{PlayerName}.",
+                    "es": "{PlayerName}.",
+                    "fr": "{PlayerName}.",
+                    "ja": "{PlayerName}。",
+                    "ko": "{PlayerName}",
+                    "th": "{PlayerName}",
+                    "zh-Hans": "{PlayerName}。",
+                    "zh-Hant": "{PlayerName}。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstanden. Ich bin in deiner Schuld!",
+                "en": "Got it. I am in your debt!",
+                "es": "Entendido. ¡Estoy en deuda contigo!",
+                "fr": "Je l'ai noté, merci !",
+                "ja": "覚えとくよ。",
+                "ko": "기억할게요! 감사해요!",
+                "th": "เข้าใจแล้ว ฉันเป็นหนี้บุญคุณเธอนะ!",
+                "zh-Hans": "我记下了，谢谢你！",
+                "zh-Hant": "我記下了，謝謝你！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du musst diese als deine Belohnung akzeptieren. Behalte auch meine Kamera.",
+                "en": "You must accept these as your reward. Keep my camera as well.",
+                "es": "Debes aceptar estos como tu recompensa. Conserva también mi cámara.",
+                "fr": "Vous devez absolument prendre ces trucs. Je vais aussi vous laisser cet appareil photo.",
+                "ja": "報酬は勿論渡すが…… このカメラも、あんたにやるよ。",
+                "ko": "여기 보수랑 함께 이 카메라도 드릴게요",
+                "th": "รับนี่ไปเป็นรางวัลนะ เก็บกล้องนั่นไว้ด้วย",
+                "zh-Hans": "这些报酬你一定要收下，这个相机也留给你。",
+                "zh-Hant": "這些報酬你一定要收下，這個相機也留給你。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist ein alter Kumpel von mir. Hat über die Jahre unzählige Orte mit mir besucht. Ich glaube, es verdient es, seine Reise fortzusetzen, die Schönheiten der Welt mit dir einzufangen.",
+                "en": "It's an old pal of mine. Visited countless places with me over the years. I believe it deserves to continue its journey of capturing the beauties of the world with you.",
+                "es": "Es una vieja amiga mía. Ha visitado innumerables lugares conmigo a lo largo de los años. Creo que merece continuar su viaje de capturar las bellezas del mundo contigo.",
+                "fr": "C'est aussi un vieil ami, il m'a accompagné pour longtemps, maintenant il peut vous accompagner pour capturer les beaux paysages du monde.",
+                "ja": "私のお古ということにはなるが…… これからはあんたと一緒に、見たことのない景色をたくさん見て、それらを収めてくれることを願おう。",
+                "ko": "저의 오랜 벗이라고 할 수 있는 이 카메라는 저를 따라 많은 곳을 다녔죠. 앞으로는 방랑자를 따라 세계의 아름다운 경치들을 포착하게 해주세요",
+                "th": "มันคือเพื่อนเก่าที่เดินทางไปกับฉันทุกหนทุกแห่งมานานหลายปี ฉันว่ามันควรจะได้เดินทางต่อไป เพื่อบันทึกความงามของโลกร่วมกับเธอ",
+                "zh-Hans": "它也是我的老朋友了，跟着我去了很多地方，今后就让它跟着你继续去定格世界的美景吧。",
+                "zh-Hant": "它也是我的老朋友了，跟著我去了很多地方，今後就讓它跟著你繼續去定格世界的美景吧。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich vertraue dir und deinem Talent. Wie wäre es auch, in deiner Freizeit darüber nachzudenken, Journalist zu werden?",
+                "en": "I trust you and your talent. Also, how about considering becoming a journalist in your free time?",
+                "es": "Confío en ti y en tu talento. Además, ¿qué tal si consideras convertirte en periodista en tu tiempo libre?",
+                "fr": "Après tout, je pense que vous avez du talent. Peut-être que vous deviendrez un journaliste un jour ?",
+                "ja": "あんたにはセンスを感じるしな。そうだ、 もし良かったら、記者になるつもりはないか？",
+                "ko": "제가 보기에 방랑자도 재능이 상당한 것 같은데, 나중에 한가해지면 기자가 되볼 생각은 없어요?",
+                "th": "ฉันเชื่อในตัวเธอและความสามารถของเธอนะ นี่ ว่างๆ ลองมาเป็นนักข่าวดูบ้างมั้ยล่ะ?",
+                "zh-Hans": "毕竟我看你很有天赋，以后要是闲下来，要不要考虑当个记者？",
+                "zh-Hant": "畢竟我看你很有天賦，以後要是閑下來，要不要考慮當個記者？"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                },
+                "entity": {
+                  "entityId": 114000827,
+                  "mapId": 8,
+                  "blueprintType": "NPC260",
+                  "name": "TsEntity_157_011_皇龙老研究员男2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -44551,
+                    "y": 110369,
+                    "z": 1695
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schau dir die Menge an",
+        "en": "Check out the crowd",
+        "es": "Observa a la multitud",
+        "fr": "Aller là où la foule se rassemble",
+        "ja": "野次馬が集まった場所へ向かう",
+        "ko": "사람들이 모이는 곳으로 이동",
+        "th": "ตรวจสอบฝูงชน",
+        "zh-Hans": "前往人群聚集的地方",
+        "zh-Hant": "前往人群聚集的地方"
+      },
+      "entities": [
+        {
+          "entityId": 114000658,
+          "mapId": 8,
+          "blueprintType": "NPC227",
+          "name": "TsEntity_154_013_老奶奶2",
+          "areaId": 301,
+          "position": {
+            "x": -41757,
+            "y": 107527,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -98
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000659,
+          "mapId": 8,
+          "blueprintType": "NPC256",
+          "name": "TsEntity_154_007_少女1_5",
+          "areaId": 301,
+          "position": {
+            "x": -41839,
+            "y": 107653,
+            "z": 2594
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -82
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114000660,
+          "mapId": 8,
+          "blueprintType": "NPC279",
+          "name": "TsEntity_157_023_市民男5",
+          "areaId": 301,
+          "position": {
+            "x": -41957,
+            "y": 107558,
+            "z": 2595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -75
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 114001029,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男5",
+          "areaId": 301,
+          "position": {
+            "x": -41866,
+            "y": 106860,
+            "z": 2899
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -116
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ist da jemand? Hilfe! Der Mann da vorne ist im Begriff zu fallen!",
+                "en": "Anyone? Help! That guy's about to fall!",
+                "es": "¿Alguien? ¡Ayuda! ¡Ese hombre está a punto de caer!",
+                "fr": "Il est sur le point de tomber ! Au secours !",
+                "ja": "誰か！助けて！",
+                "ko": "저 사람이 곧 떨어질 것 같아요! 누가 좀 도와주세요!",
+                "th": "ใครก็ได้ ช่วยด้วย! คนนั้นกำลังจะตกลงไปแล้ว!",
+                "zh-Hans": "他快掉下来了！谁来帮帮忙！",
+                "zh-Hant": "他快掉下來了！誰來幫幫忙！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 815,
+                "name": {
+                  "zh-Hans": "慌张的路人"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué pasó?",
+                    "fr": "Qu'est-ce qui ne va pas ?",
+                    "ja": "どうした？",
+                    "ko": "무슨 일이에요?",
+                    "th": "เกิดอะไรขึ้นเหรอ",
+                    "zh-Hans": "怎么了？",
+                    "zh-Hant": "怎麼了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Schau. Dort oben! Er kommt nicht runter!",
+                "en": "Look. Up there! He can't get down!",
+                "es": "Mira. ¡Allá arriba! ¡No puede bajar!",
+                "fr": "Regardez. Là-haut ! Il ne peut pas descendre !",
+                "ja": "あの人を見て！降りられないんだよ！",
+                "ko": "위에 저 사람 좀 보세요! 올라가서는 못 내려오고 있어요!",
+                "th": "ดูสิ บนนั้น! เขาลงไม่ได้!",
+                "zh-Hans": "你看上面那个人，他爬上去下不来了！",
+                "zh-Hant": "你看上面那個人，他爬上去下不來了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 815,
+                "name": {
+                  "zh-Hans": "慌张的路人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hilfe, Hilfe!",
+                "en": "Help, help!",
+                "es": "¡Ayuda, ayuda!",
+                "fr": "Au secours ! Au secours !",
+                "ja": "た、助けてくれ！",
+                "ko": "살, 살려주세요!",
+                "th": "ช่วยด้วย!",
+                "zh-Hans": "救、救命啊！",
+                "zh-Hant": "救、救命啊！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlasse das mir.",
+                    "en": "Leave it to me.",
+                    "es": "Déjamelo a mí.",
+                    "fr": "Je m'en occupe.",
+                    "ja": "すぐ助ける。",
+                    "ko": "제가 해볼게요",
+                    "th": "ให้ฉันจัดการเอง",
+                    "zh-Hans": "我来。",
+                    "zh-Hant": "我來。"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_任务专用冒泡_刘梦蝶",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Pass auf, ich hole Hilfe!",
+                "en": "Be careful, I'll go get help!",
+                "es": "¡Ten cuidado, iré a buscar ayuda!",
+                "fr": "Je vais aller chercher quelqu'un maintenant !",
+                "ja": "待ってろ！すぐ人を呼んでくる！",
+                "ko": "조심하세요! 사람을 불러올게요!",
+                "th": "รักษาตัวด้วย จะรีบไปหาคนมาช่วยเดี๋ยวนี้!",
+                "zh-Hans": "小心啊， 我这就去叫人！",
+                "zh-Hant": "小心啊， 我這就去叫人！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was ist los... Oh mein Gott, geh schnell in Deckung...",
+                "en": "What's going on... Oh my, get down quickly...",
+                "es": "¿Qué está pasando... Dios mío, agáchate rápido...",
+                "fr": "Qu'est-ce que vous voulez dire... Oh mon Dieu, descendez vite. ......",
+                "ja": "どうなってる………早く降りてきて………",
+                "ko": "이게 웬일... 어머나, 빨리 내려와요...",
+                "th": "เกิดอะไรขึ้น... โอ๊ย รีบลงมาเร็ว...",
+                "zh-Hans": "这怎么回事......天哪，快下来......",
+                "zh-Hant": "這怎麼回事......天哪，快下來......"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist zu gefährlich...",
+                "en": "This is too dangerous...",
+                "es": "Esto es demasiado peligroso...",
+                "fr": "C'est dangereux...",
+                "ja": "危ない！",
+                "ko": "너무 위험해요...",
+                "th": "นี่มันอันตรายเกินไป...",
+                "zh-Hans": "这也太危险了......",
+                "zh-Hant": "這也太危險了......"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 142,
+                "name": {
+                  "zh-Hans": "3号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hilfe, Hilfe...",
+                "en": "Help, help...",
+                "es": "¡Ayuda, ayuda!",
+                "fr": "Au secours...!",
+                "ja": "た、助けてくれ……",
+                "ko": "좀 살려주세요...",
+                "th": "ช่วยด้วย ช่วยด้วย...",
+                "zh-Hans": "救、救命…...",
+                "zh-Hant": "救、救命…..."
+              },
+              "id": 3,
+              "speaker": {
+                "id": 143,
+                "name": {
+                  "zh-Hans": "4号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "parentId": 20,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zu dem Ort, den Bowen erwähnt hat",
+        "en": "Go to the place Bowen mentioned",
+        "es": "Ve al lugar que mencionó Bowen",
+        "fr": "Se rendre au lieu indiqué par Bowen",
+        "ja": "博文が話したスポットに向かう",
+        "ko": "박문이 언급한 포토존으로 이동",
+        "th": "ไปยังสถานที่ซึ่งป๋อเหวินเอ่ยถึง",
+        "zh-Hans": "前往博文提到的拍照地点",
+        "zh-Hant": "前往博文提到的拍照地點"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 12,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ja. Das ist das!",
+                "en": "Yes. That's the one!",
+                "es": "Sí. ¡Ese es!",
+                "fr": "Oui, c'est comme çà !",
+                "ja": "そうだ——！そこだ！",
+                "ko": "틀림없어요! 바로 저기에요!",
+                "th": "ใช่ นั่นแหละ!",
+                "zh-Hans": "没错——就是那里！",
+                "zh-Hant": "沒錯——就是那裡！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "parentId": 20,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 26,
+      "parentId": 25,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_剧情_支线_拍照引导任务",
+          "flowIndex": 12,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ja, ein kleines Stück weiter zu dieser Seite und du bist da!",
+                "en": "Yes, a little further to that side and you're there!",
+                "es": "Sí, un poco más hacia ese lado y ya estás allí.",
+                "fr": "Oui, un peu plus loin de ce côté et vous y êtes !",
+                "ja": "そう。あともう少しで着く！",
+                "ko": "맞아요. 저쪽으로 조금만 더 가면 돼요!",
+                "th": "ใช่ ไปทางนั้นอีกหน่อยก็ถึงแล้ว!",
+                "zh-Hans": "对，再往那边一点就到了！",
+                "zh-Hant": "對，再往那邊一點就到了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 816,
+                "name": {
+                  "zh-Hans": "博文"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

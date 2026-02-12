@@ -1,0 +1,72 @@
+{
+  "id": 131700002,
+  "key": "沙虫复刷主线后延迟开启",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "de": "Erscheinen der Leere",
+    "en": "Voidspawn Emergence",
+    "es": "Rastro de Vacío",
+    "fr": "Émergence du néant",
+    "ja": "ヴォイドマターの名残り",
+    "ko": "보이드웜의 잔영",
+    "th": "รอยเงาแห่ง Voidworm",
+    "zh-Hans": "虚诞潜迹",
+    "zh-Hant": "虛誕潛跡"
+  },
+  "desc": {
+    "de": "Der abnormale Anstieg der Leerenwurm-Aktivität wurde eingedämmt, und die Krise der Akademie ist abgeklungen. Ihre Aktivität in der Region hat wieder normale Werte erreicht, aber anhaltende Leerenmaterie-Störungen haben sich noch nicht vollständig aufgelöst. Eine fortlaufende Überwachung ist notwendig.",
+    "en": "The abnormal Voidworm activity has been contained, and the Academy's crisis has passed. While the Voidworm has returned to its normal route, lingering Voidmatter disturbances have yet to fully dissipate. Continued monitoring is required.",
+    "es": "El aumento anómalo en la actividad de Sierpes de Vacío ya cesó, marcando el fin de la crisis vivida en la Academia. Su actividad en la región vuelve a ser la normal, pero las fluctuaciones de la Materia de Vacío aún no se han disipado por completo. Es necesario continuar la vigilancia.",
+    "fr": "Les activités anormales des Vers du Néant ont été neutralisées et la crise à l'Académie est désormais apaisée. Leur activité dans la région est revenue à des niveaux habituels, mais les perturbations liées à la Matière du Néant persistent. Un suivi continu reste nécessaire.",
+    "ja": "ヴォイドワームの異常な活動は抑制され、学園の危機はひとまず去った。エリア内のヴォイドワームの活動は次第に通常レベルへと戻りつつあるが、ヴォイドマターの乱れはまだ完全には消え去っておらず、引き続き警戒が必要である。",
+    "ko": "보이드웜의 비정상적 활동은 억제되었으며, 아카데미의 위기도 일단락되었다. 해당 구역 내 보이드웜의 활동은 점차 정상 순항 수준으로 회복되었으나, 구역 내 보이드 교란은 완전히 사라지지 않아 지속적인 관측이 필요하다",
+    "th": "การเคลื่อนไหวที่ผิดปกติของ Voidworm ถูกระงับแล้ว วิกฤตของสถาบันสงบลงชั่วคราว การเคลื่อนไหวของ Voidworm ในพื้นที่ค่อยๆ กลับสู่ระดับการลาดตระเวนปกติ แต่ทว่า การรบกวนของสสารสุญตาในพื้นที่ยังไม่ได้กระจายออกไปอย่างสมบูรณ์ ฉะนั้น ยังคงต้องรักษาการสังเกตการณ์",
+    "zh-Hans": "虚诞虫的异常活跃已被压制，学院危机暂告平息。区域内虚诞虫的活动逐渐恢复至常态巡游水平，但区域内的虚质扰动仍未完全散尽，仍需保持观测。",
+    "zh-Hant": "虛誕蟲的異常活躍已被壓制，學院危機暫告平息。區域內虛誕蟲的活動逐漸恢復至常態巡遊水平，但區域內的虛質擾動仍未完全散盡，仍需保持觀測。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 3,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 3,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 5,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

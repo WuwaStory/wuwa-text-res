@@ -1,0 +1,784 @@
+{
+  "id": 692000002,
+  "key": "摩托模拟赛",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Rennfahrer Nr. 1",
+    "en": "No. 1 Biker",
+    "es": "Motorista de primera",
+    "fr": "Motard n°1",
+    "ja": "ライダー・No.1",
+    "ko": "라이더 No.1",
+    "th": "นักบิดหมายเลขหนึ่ง",
+    "zh-Hans": "车手一号",
+    "zh-Hant": "車手一號"
+  },
+  "desc": {
+    "de": "Ein KI-Assistent zieht deine Aufmerksamkeit auf sich. Er erwähnt eine Strecke, die bisher noch niemand geschafft hat.",
+    "en": "You've caught the attention of a particularly perceptive Terminal assistant. He claims there exists a race track where no one has ever crossed the finish line...",
+    "es": "Le llamaste la atención a cierto asistente de Terminal especialmente perceptivo. Según él, existe una pista de carreras cuya línea de meta nadie ha alcanzado jamás…",
+    "fr": "Un assistant virtuel intégré à la Borne attire votre attention. Il parle d'un circuit où personne n'a jamais atteint la ligne d'arrivée…",
+    "ja": "あなたは、あるデバイスのスマートアシスタントに気を取られた。彼は、誰もゴールには辿り着けないという、あるコースについて語っていた……",
+    "ko": "한 단말기의 AI 비서가 당신의 주의를 끌었고, 그는 아무도 완주할 수 없는 한 트랙을 언급했습니다만...",
+    "th": "คุณถูกดึงดูดความสนใจโดยผู้ช่วยอัจฉริยะของเทอร์มินัล เขาได้กล่าวถึงสนามแข่งที่ไม่มีใครสามารถถึงเส้นชัยได้...",
+    "zh-Hans": "你被一个终端的智能助理吸引了注意力，他提到了一条无人能抵达终点的赛道……",
+    "zh-Hant": "你被一個終端的智慧助理吸引了注意力，他提到了一條無人能抵達終點的賽道……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Untersuche das Terminal",
+        "en": "Investigate the Terminal",
+        "es": "Inspecciona la Terminal.",
+        "fr": "Examiner la Borne",
+        "ja": "デバイスを調べる",
+        "ko": "단말기 조사하기",
+        "th": "สืบสวนเทอร์มินัล",
+        "zh-Hans": "调查终端",
+        "zh-Hant": "調查終端"
+      },
+      "entities": [
+        {
+          "entityId": 692700042,
+          "mapId": 906,
+          "blueprintType": "branch3.0_692_Gameplay_MotorZhongDuan",
+          "name": "TsEntity_玩法_模拟赛终端_3_0",
+          "areaId": 36172,
+          "position": {
+            "x": -77925,
+            "y": -554739,
+            "z": 44699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 692700217,
+          "mapId": 906,
+          "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+          "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+          "areaId": 36172,
+          "position": {
+            "x": -77889,
+            "y": -554370,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_POI_摩托模拟赛",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Im Terminal findest du eine Datei mit einer simulierten Rennstrecke und einer eingetragenen Rekordzeit. Wenn du die Rangliste anschaust, siehst du schon, dass bisher noch niemand 80 % davon geschafft hat.",
+                "en": "Inside the Terminal, you find a file containing a simulated racetrack along with a race record. On the leaderboard, you notice that no one has ever finished 80% of it.",
+                "es": "En la terminal encuentras un documento con una simulación holográfica de un circuito, así como los registros de otros estudiantes. Al ver el marcador, te percatas de que nadie ha superado el 80 % del recorrido.",
+                "fr": "À l'intérieur de la borne, vous trouvez un fichier contenant une piste de course simulée et un historique des courses. Au classement, personne n'a jamais terminé plus de 80 % de la piste.",
+                "ja": "【シミュレーターには、ホログラムレースのコースと、他の学生の記録が表示されている。表示されるコース達成率は、どれも80%以下だ】",
+                "ko": "단말기에는 홀로그램 시뮬레이션 트랙과 다른 학생의 참가 기록이 표시되어 있으며, 순위에 있는 트랙의 완료율은 모두 80% 이하에 머물러 있다",
+                "th": "ข้างในเทอร์มินัล คุณพบกับไฟล์ที่มีสนามแข่งจำลองพร้อมกับสถิติการแข่ง บนกระดานผู้นำ คุณสังเกตว่าไม่มีใครวิ่งจบได้ถึง 80% ของสนามเลย",
+                "zh-Hans": "终端内显示了一条全息模拟的赛道和其他学生的参赛记录，排行榜上的赛道完成率都停留在80%以下。",
+                "zh-Hant": "終端內顯示了一條全像模擬的賽道和其他學生的參賽記錄，排行榜上的賽道完成率都停留在80%以下。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Nanu? Dieses Terminal hat dieselbe Benutzeroberfläche wie die Terminals, die von der Ingenieurabteilung entwickelt wurden. Ich dachte, sie würden nur den Exoschreiter erforschen. Warum bauen sie plötzlich ein Terminal für Motorradrennen?)",
+                "en": "(Hmm? This Terminal has the same interface as the ones developed by the Department of Engineering. But I thought they only did research on the Exostrider. Why are they making a Terminal for motorbike racing?)",
+                "es": "(¿Eh? Esta terminal tiene la misma interfaz que las que desarrolla el departamento de Ingeniería. Creía que solo investigaban el Exotitán. ¿Por qué fabricarían una terminal de carreras de moto?)",
+                "fr": "(Tiens ? Cette borne a la même interface que celles du département d'Ingénierie. Mais je croyais qu'ils ne faisaient que de la recherche sur l'Exoarpenteur. Pourquoi développer une borne de course de moto ?)",
+                "ja": "{Male=（ん？このシミュレーターの画面は工学部のものと同じだが、彼らが研究しているのはエクソストライダーのはず。どうしてバイクのシミュレーターを開発したんだ？）;Female=（ん？このシミュレーターの画面は工学部のものと同じだけど、彼らが研究しているのはエクソストライダーのはず。どうしてバイクのシミュレーターを開発したんだろう？）}",
+                "ko": "(어? 단말기 화면이 공학부의 것과 같아. 하지만 그들이 연구하는 건 엑소스트라이더인데, 어떻게 오토바이 시뮬레이션 대회의 단말기를 개발한 거지?)",
+                "th": "(หืมม? เทอร์มินัลนี้มีหน้าตาอินเทอร์เฟซเหมือนกับที่แผนกวิศวกรรมพัฒนาขึ้นมาเลย แต่ฉันนึกว่าพวกเขาแค่วิจัยเกี่ยวกับ Exostrider ทำไมพวกเขาถึงทำเทอร์มินัลสำหรับการแข่งมอเตอร์ไบค์กันนะ?)",
+                "zh-Hans": "（嗯？终端界面和工学部的一样，但他们研究的是隧者，怎么会开发摩托模拟赛的终端？）",
+                "zh-Hant": "（嗯？終端介面和工學部的一樣，但他們研究的是隧者，怎麼會開發摩托車模擬賽的終端？）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Und kein einziger Fahrer hat die Strecke je geschafft. Es könnte sein, dass dieses Terminal eine Sicherheitsgefahr für die Studenten darstellt. Am besten, ich teste es erst mal selbst.)",
+                "en": "(And not a single racer finished the track. If this Terminal is a safety hazard to the students, I'd better test this out myself.)",
+                "es": "(Y pensar que ni un solo piloto ha terminado la pista... A esta terminal le sucede algo raro. Será mejor que la revise).",
+                "fr": "(Et aucun coureur n'a fini la piste. Si cette borne représente un danger pour les étudiants, je ferais mieux de la tester moi-même.)",
+                "ja": "{Male=（それに、今まで誰も完走できていない。もしシミュレーター自体が学生に何か悪い影響を与えているとしたら厄介だ。俺が試してみよう。）;Female=（それに、今まで誰も完走できていない。もしシミュレーター自体が学生に何か悪い影響を与えているとしたら厄介ね。私が試してみよう。）}",
+                "ko": "(게다가 지금까지 아무도 완주하지 못했어. 만약 단말기 자체가 학생들에게 어떤 부정적인 영향을 미친다면, 문제가 생길 거야. 내가 한번 시도해 보자)",
+                "th": "(แล้วก็ไม่มีนักแข่งคนไหนเลยที่วิ่งจนจบสนามได้ ถ้าเทอร์มินัลนี้เป็นอันตรายด้านความปลอดภัยต่อนักเรียน ฉันน่าจะลองทดสอบดูด้วยตัวเองนะ)",
+                "zh-Hans": "（而且至今没有人能完赛，如果是终端本身对学生产生了什么负面影响就麻烦了，我来尝试一下吧。）",
+                "zh-Hant": "（而且至今沒有人能完賽，如果是終端本身對學生產生了什麼負面影響就麻煩了，我來嘗試一下吧。）"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_3_0_POI_摩托模拟赛",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich wusste, dass dich das interessieren würde. Dann los! Spring auf das Motorrad-Terminal neben mir, um den Simulator zu starten. Die Trophäe des Champions wartet schon auf dich.",
+                "en": "I knew you'd be interested. Come, hop onto this motorbike Terminal next to me to start the simulator. The championship trophy is yours to win!",
+                "es": "Sabía que te interesaría. Ven, súbete a esta moto-terminal que está a mi lado para iniciar el simulador. ¡El trofeo del campeonato te espera!",
+                "fr": "Je savais que ça t'intéresserait. Allez, monte sur cette Borne de moto à côté de moi pour lancer le simulateur. Le trophée du championnat n'attend que toi !",
+                "ja": "やる気があると思っていたよ！さあ、そばにあるバイクシミュレーターに乗って、ホログラムシミュレーションレースに参加するんだ！豪華な賞品がゴールで待ってるぜ！",
+                "ko": "관심 있을 줄 알았습니다. 어서 제 옆에 있는 바이크 단말기에 올라타 홀로그램 시뮬레이션 대회에 입장하세요. 푸짐한 보상이 결승점에서 당신을 기다리고 있습니다!",
+                "th": "รู้นะว่าคุณสนใจ มาสิ โดดขึ้นเทอร์มินัลมอเตอร์ไบค์ข้างฉันแล้วเริ่มใช้งานสนามแข่งจำลองได้เลย รางวัลมากมายรอคุณอยู่นะ!",
+                "zh-Hans": "我就知道你会感兴趣，快骑上我身边的摩托终端，进入全息模拟赛吧，丰厚奖品在终点等着你！",
+                "zh-Hant": "我就知道你會感興趣，快騎上我身邊的摩托車終端，進入全像模擬賽吧，豐厚獎品在終點等著你！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "parentId": 1,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 692700042,
+          "mapId": 906,
+          "blueprintType": "branch3.0_692_Gameplay_MotorZhongDuan",
+          "name": "TsEntity_玩法_模拟赛终端_3_0",
+          "areaId": 36172,
+          "position": {
+            "x": -77925,
+            "y": -554739,
+            "z": 44699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 39,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte die Simulation erneut.",
+        "en": "Start the simulation challenge again",
+        "es": "Juega al desafío de simulación otra vez.",
+        "fr": "Relancer la simulation",
+        "ja": "シミュレーションレースをもう一度行う",
+        "ko": "시뮬레이션 대회 재도전",
+        "th": "ท้าทายการแข่งขันจำลองอีกครั้ง",
+        "zh-Hans": "再次挑战模拟赛",
+        "zh-Hant": "再次挑戰模擬賽"
+      },
+      "entities": [
+        {
+          "entityId": 692700042,
+          "mapId": 906,
+          "blueprintType": "branch3.0_692_Gameplay_MotorZhongDuan",
+          "name": "TsEntity_玩法_模拟赛终端_3_0",
+          "areaId": 36172,
+          "position": {
+            "x": -77925,
+            "y": -554739,
+            "z": 44699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 692700217,
+          "mapId": 906,
+          "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+          "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+          "areaId": 36172,
+          "position": {
+            "x": -77889,
+            "y": -554370,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_POI_摩托模拟赛",
+          "flowIndex": 5,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Na, hast du die Hinweise gefunden, nach denen du gesucht hast?",
+                "en": "How about it? Have you found the clues you were looking for?",
+                "es": "¿Qué? ¿Has encontrado las pistas que andabas buscando?",
+                "fr": "Qu'en dis-tu ? As-tu trouvé les indices que tu cherchais ?",
+                "ja": "どうだ？このコースを攻略するヒントは見つかったか！",
+                "ko": "어때요? 이 트랙을 공략할 단서를 찾으셨나요?",
+                "th": "เป็นไงบ้าง? คุณได้เจอเบาะแสที่ตามหาแล้วหรือยัง?",
+                "zh-Hans": "如何呢？找到攻略这条赛道的线索了吗！",
+                "zh-Hant": "如何呢？找到攻略這條賽道的線索了嗎！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700210,
+                "name": {
+                  "zh-Hans": "智能助理"
+                },
+                "entity": {
+                  "entityId": 692700217,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+                  "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+                  "areaId": 36172,
+                  "position": {
+                    "x": -77889,
+                    "y": -554370,
+                    "z": 44694
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Starte das Rennen einfach, wenn du bereit bist! Zur Ziellinie, los geht's!",
+                "en": "Just start the race whenever you're ready! Straight to the finish line, let's go!",
+                "es": "¡Empieza la carrera cuando quieras! ¡Directamente hacia la meta, vamos!",
+                "fr": "Commence la course quand tu es prêt ! Directement vers la ligne d'arrivée, c'est parti !",
+                "ja": "準備ができたら、もう一度コースに入って、一気に駆け抜けるんだ！",
+                "ko": "준비가 다 되면 다시 트랙에 입장해서 성적을 내보자고요!",
+                "th": "พร้อมเมื่อไหร่ก็เริ่มแข่งได้เลย! มุ่งตรงสู่เส้นชัย ไปกันเลย!",
+                "zh-Hans": "准备就绪后就再次进入赛道，来个一飞冲天吧！",
+                "zh-Hant": "準備就緒後就再次進入賽道，來個一飛衝天吧！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 700210,
+                "name": {
+                  "zh-Hans": "智能助理"
+                },
+                "entity": {
+                  "entityId": 692700217,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+                  "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+                  "areaId": 36172,
+                  "position": {
+                    "x": -77889,
+                    "y": -554370,
+                    "z": 44694
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schau dir das Video zur Streckenbeschreibung an.",
+        "en": "Watch the track introduction video",
+        "es": "Ve el vídeo de introducción de la pista.",
+        "fr": "Voir la vidéo de présentation du circuit",
+        "ja": "コース紹介動画を観る",
+        "ko": "트랙 소개 영상 확인하기",
+        "th": "ชมวิดีโอแนะนำสนามแข่ง",
+        "zh-Hans": "查看赛道介绍短片",
+        "zh-Hant": "查看賽道介紹短片"
+      },
+      "entities": [
+        {
+          "entityId": 692700217,
+          "mapId": 906,
+          "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+          "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+          "areaId": 36172,
+          "position": {
+            "x": -77889,
+            "y": -554370,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 692700260,
+          "mapId": 906,
+          "blueprintType": "Quest097",
+          "name": "TsEntity_黄光点_桌面用必要触发交互2",
+          "areaId": 36172,
+          "position": {
+            "x": -78377,
+            "y": -554633,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 46,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 51,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte die Simulation.",
+        "en": "Start the simulation challenge",
+        "es": "Juega al desafío de simulación.",
+        "fr": "Lancer la simulation",
+        "ja": "シミュレーションレースに出る",
+        "ko": "시뮬레이션 대회 도전",
+        "th": "ท้าทายการแข่งขันจำลอง",
+        "zh-Hans": "挑战模拟赛",
+        "zh-Hant": "挑戰模擬賽"
+      },
+      "entities": [
+        {
+          "entityId": 692700042,
+          "mapId": 906,
+          "blueprintType": "branch3.0_692_Gameplay_MotorZhongDuan",
+          "name": "TsEntity_玩法_模拟赛终端_3_0",
+          "areaId": 36172,
+          "position": {
+            "x": -77925,
+            "y": -554739,
+            "z": 44699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 52,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Zurück zum Simulator-Terminal.",
+        "en": "Return to the simulator terminal",
+        "es": "Regresa a la Terminal del simulador.",
+        "fr": "Retourner à la Borne de simulation",
+        "ja": "デバイスのところへ戻る",
+        "ko": "시뮬레이션 대회 단말기로 돌아가기",
+        "th": "กลับไปยังเทอร์มินัลการจำลอง",
+        "zh-Hans": "回到模拟赛终端",
+        "zh-Hant": "回到模擬賽終端"
+      },
+      "entities": [
+        {
+          "entityId": 692700042,
+          "mapId": 906,
+          "blueprintType": "branch3.0_692_Gameplay_MotorZhongDuan",
+          "name": "TsEntity_玩法_模拟赛终端_3_0",
+          "areaId": 36172,
+          "position": {
+            "x": -77925,
+            "y": -554739,
+            "z": 44699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 692700217,
+          "mapId": 906,
+          "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+          "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+          "areaId": 36172,
+          "position": {
+            "x": -77889,
+            "y": -554370,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 692700260,
+          "mapId": 906,
+          "blueprintType": "Quest097",
+          "name": "TsEntity_黄光点_桌面用必要触发交互2",
+          "areaId": 36172,
+          "position": {
+            "x": -78377,
+            "y": -554633,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_POI_摩托模拟赛",
+          "flowIndex": 5,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie schade! Aber trotzdem eine solide Leistung für den ersten Versuch!",
+                "en": "How unfortunate! But a very solid first try nonetheless!",
+                "es": "¡Qué mala suerte! ¡Pero ha sido un primer intento muy bueno!",
+                "fr": "Dommage ! Mais c'était quand même un excellent premier essai !",
+                "ja": "惜しい！だが、初めての挑戦でその成績は、もう十分すぎるよ！",
+                "ko": "정말 아쉽군요! 하지만 처음 시도에서 이런 성적을 낸 것만으로도 매우 훌륭합니다!",
+                "th": "แย่จังเลยนะ! แต่ครั้งแรกทำได้เท่านี้ก็เก่งแล้ว!",
+                "zh-Hans": "真可惜！但你第一次尝试就跑出这样的成绩已经非常棒了！",
+                "zh-Hant": "真可惜！但你第一次嘗試就跑出這樣的成績已經非常棒了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700210,
+                "name": {
+                  "zh-Hans": "智能助理"
+                },
+                "entity": {
+                  "entityId": 692700217,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+                  "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+                  "areaId": 36172,
+                  "position": {
+                    "x": -77889,
+                    "y": -554370,
+                    "z": 44694
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich hatte so ein Gefühl, dass ein riesiger Affe auftauchen würde.",
+                    "en": "I had a feeling a big monkey would show up.",
+                    "es": "Tenía el presentimiento de que aparecería un mono bien grande.",
+                    "fr": "Je me doutais qu'un gros singe allait débarquer.",
+                    "ja": "なんとなく、大猿が出てくる予感はしてた。",
+                    "ko": "어렴풋이 고릴라가 나올 것 같은 느낌이 드는군",
+                    "th": "ฉันรู้สึกได้ว่าเจ้าลิงยักษ์จะโผล่มา",
+                    "zh-Hans": "隐隐约约感觉到会出现大猩猩了。",
+                    "zh-Hant": "隱隱約約感覺到會出現大猩猩了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Dein Blick sagt mir: „Ich bin noch nicht geschlagen.“ Keine Sorge, ich habe ein kurzes Einführungsvideo für dich vorbereitet. Das gibt dir vielleicht ein paar Hinweise, wie du diese Strecke schaffen kannst!",
+                "en": "Your eyes now tell me, \"I'm not beaten yet.\" Don't worry, I've edited a short introduction video for you, and it might just give you some clues on conquering the racetrack!",
+                "es": "Tu mirada te delata: «Todavía no me he rendido», dice. No te preocupes, te he preparado un breve vídeo introductorio. ¡Puede que te dé alguna idea de cómo conquistar el circuito!",
+                "fr": "Ton regard me dit : « Je n'ai pas dit mon dernier mot. » T'inquiète, j'ai monté une petite vidéo d'intro pour toi. Elle pourrait bien te donner quelques indices pour la conquérir !",
+                "ja": "キミの眉間からは、「悔しい」ってオーラが伝わってくる。心配するな、キミのためにコース紹介のショートムービーを用意した。これを見れば、このコースを攻略するヒントが得られるかもしれない！",
+                "ko": "저는 당신의 미간에 드러난 「포기 못 하겠어」라는 분위기를 느꼈습니다. 걱정하지 마세요, 제가 당신을 위해 준비한 트랙 소개 단편 영상을 보고 나면 이 트랙을 공략할 단서를 얻을 수 있을지도 모르니까요!",
+                "th": "สายตาของคุณบอกว่า \"ฉันยังไม่แพ้หรอก\" ไม่ต้องห่วงนะ ฉันเพิ่งทำวิดิโอแนะนำคร่าวๆ ให้คุณ น่าจะมีเบาะแสวิธีการพิชิตสนามแข่งนี้ได้!",
+                "zh-Hans": "我看到你眉宇间透露着“我不甘心”的气质，别担心，我为你准备了赛道介绍短片，看完之后或许就能得到攻略这条赛道的线索！",
+                "zh-Hant": "我看到你眉宇間透露著「我不甘心」的氣質，別擔心，我為你準備了賽道介紹短片，看完之後或許就能得到攻略這條賽道的線索！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700210,
+                "name": {
+                  "zh-Hans": "智能助理"
+                },
+                "entity": {
+                  "entityId": 692700217,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+                  "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+                  "areaId": 36172,
+                  "position": {
+                    "x": -77889,
+                    "y": -554370,
+                    "z": 44694
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -25
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte die Simulation.",
+        "en": "Start the simulation challenge",
+        "es": "Juega al desafío de simulación.",
+        "fr": "Lancer la simulation",
+        "ja": "シミュレーションレースに出る",
+        "ko": "시뮬레이션 대회 도전",
+        "th": "ท้าทายการแข่งขันจำลอง",
+        "zh-Hans": "挑战模拟赛",
+        "zh-Hant": "挑戰模擬賽"
+      },
+      "entities": [
+        {
+          "entityId": 692700042,
+          "mapId": 906,
+          "blueprintType": "branch3.0_692_Gameplay_MotorZhongDuan",
+          "name": "TsEntity_玩法_模拟赛终端_3_0",
+          "areaId": 36172,
+          "position": {
+            "x": -77925,
+            "y": -554739,
+            "z": 44699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 692700217,
+          "mapId": 906,
+          "blueprintType": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3",
+          "name": "TsEntity_MN_B3_0_拉海洛_MaleM_XG_Mid1_3数据助理",
+          "areaId": 36172,
+          "position": {
+            "x": -77889,
+            "y": -554370,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -25
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 54,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte die Simulation erneut.",
+        "en": "Start the simulation challenge again",
+        "es": "Juega al desafío de simulación otra vez.",
+        "fr": "Relancer la simulation",
+        "ja": "シミュレーションレースをもう一度行う",
+        "ko": "시뮬레이션 대회 재도전",
+        "th": "ทำการแข่งขันจำลองอีกครั้ง",
+        "zh-Hans": "再次进行模拟赛",
+        "zh-Hant": "再次進行模擬賽"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 55,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte die Simulationsherausforderung erneut.",
+        "en": "Start the simulation challenge again",
+        "es": "Juega de nuevo al desafío de simulación.",
+        "fr": "Relancer la simulation",
+        "ja": "シミュレーションレースをもう一度行う",
+        "ko": "시뮬레이션 대회 재도전",
+        "th": "เล่นการแข่งขันจำลองอีกครั้ง",
+        "zh-Hans": "再次游玩模拟赛",
+        "zh-Hant": "再次遊玩模擬賽"
+      },
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,890 @@
+{
+  "id": 171750002,
+  "key": "联机道馆引导",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Wenn du in den Traumabgrund blickst",
+    "en": "If You Gaze Into the Abyss of Dreams",
+    "es": "Cuando miras al abismo de sueños",
+    "fr": "Quand vous regardez l'abysse du rêve",
+    "ja": "夢の淵をのぞく時",
+    "ko": "꿈의 심연을 들여다볼 때",
+    "th": "หากคุณจ้องมองไปที่ห้วงลึกแห่งความฝัน",
+    "zh-Hans": "当你凝视梦渊时",
+    "zh-Hant": "當你凝視夢淵時"
+  },
+  "desc": {
+    "de": "Ein Mädchen namens Dorothy erschien neben dem geheimnisvollen Tor.\nIhren Angaben zufolge brach jenseits des Tors plötzlich eine Krise aus.",
+    "en": "A girl called Dorothy appears next to a mysterious gate. She claims a sudden crisis is taking place inside.",
+    "es": "Una chica llamada Dorothy apareció junto a la misteriosa puerta. Según ella, al otro lado se había desatado una crisis inesperada.",
+    "fr": "Une jeune fille nommée Dorothée est apparue à côté d'une porte mystérieuse. Selon elle, une crise frappe soudainement le monde derrière la porte...",
+    "ja": "とある謎の扉のそばに、ドロシーという女の子が現れた。彼女によれば、扉の向こう側で突如として危機が発生したらしい。",
+    "ko": "도로시라는 이름의 소녀가 신비한 문 옆에 나타났다. 그녀가 말하길, 문 너머에 갑작스러운 위기가 생겼다고 한다",
+    "th": "เด็กสาวชื่อ Dorothy ปรากฏตัวขึ้นข้างประตูอันลึกลับ เธอกล่าวอ้างว่ากำลังเกิดวิกฤตอย่างกะทันหันภายในสถานที่แห่งนี้",
+    "zh-Hans": "名为多萝西的女孩出现在了神秘门扉旁。据她所言，门扉的另一侧出现了突如其来的危机。",
+    "zh-Hant": "名為多蘿西的女孩出現在了神秘門扉旁。據她所言，門扉的另一側出現了突如其來的危機。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rede mit Dorothy",
+        "en": "Talk to Dorothy",
+        "es": "Habla con Dorothy.",
+        "fr": "Parler à Dorothée",
+        "ja": "ドロシーと会話する",
+        "ko": "도로시와 대화",
+        "th": "พูดคุยกับ Dorothy",
+        "zh-Hans": "和多萝西交谈",
+        "zh-Hant": "和多蘿西交談"
+      },
+      "entities": [
+        {
+          "entityId": 171750003,
+          "mapId": 8,
+          "blueprintType": "NPC339",
+          "name": "TsEntity_121_015_联机BOSS“多萝西”",
+          "areaId": 10,
+          "position": {
+            "x": 88979,
+            "y": 347900,
+            "z": 58
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2道馆引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh, da bist du ja wieder! Ist schon eine Weile her, oder? Hmm, nein, sollte ich eher: „Freut mich, dich kennenzulernen“, sagen?",
+                "en": "Oh, it's you again! It's been a while, hasn't it? Hmm, no, should I say, \"Nice to meet you?\"",
+                "es": "¡Ah, eres tú de nuevo! Pasó mucho tiempo, ¿no? Mmm, no, ¿debería decir: «Qué gusto conocerte»?",
+                "fr": "Oh, c'est encore toi ! Ça fait longtemps, pas vrai ? Hmm, non, devrais-je dire « Ravie de te rencontrer ? »",
+                "ja": "あ！{Male=お兄ちゃん;Female=お姉ちゃん}！ 久しぶり……って、あれ？もしかして、初めまして……かな？",
+                "ko": "앗! {Male=오빠;Female=언니}! 오랜만이에요... 어? 아니다, 저희 초면인가요?",
+                "th": "อ๊ะ ได้เจอกันอีกรอบแล้ว! เราไม่ได้เจอกันนานเลยเนอะ อืม ไม่สิ ต้องพูดว่า \"ยินดีที่ได้รู้จัก\" รึเปล่านะ",
+                "zh-Hans": "啊！是你啊，{Male=大哥哥;Female=大姐姐}！好久不见……嗯？不对，也许我该说——初次见面吗？",
+                "zh-Hant": "啊！是你啊，{Male=大哥哥;Female=大姐姐}！好久不見……嗯？不對，也許我該說——初次見面嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube nicht, dass wir uns bereits begegnet sind.",
+                    "en": "I don't think we've met before.",
+                    "es": "No creo que nos conozcamos.",
+                    "fr": "Je ne crois pas t'avoir déjà rencontrée.",
+                    "ja": "そう。おたがい初対面かな。",
+                    "ko": "전 처음 뵙는 것 같네요",
+                    "th": "เราไม่น่าจะเคยเจอกันมาก่อนนะ",
+                    "zh-Hans": "我之前没见过你。",
+                    "zh-Hant": "我之前沒見過你。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du bist das Kind von damals.",
+                    "en": "You're the child from before.",
+                    "es": "Eres la niña de antes.",
+                    "fr": "Tu es l'enfant de la dernière fois.",
+                    "ja": "あなたは……前に会ったあの子だね……",
+                    "ko": "혹시... 전에 만났던 그 친구 맞죠?",
+                    "th": "เด็กเมื่อตอนนั้นนี่นา",
+                    "zh-Hans": "你是之前的那个孩子……",
+                    "zh-Hant": "你是之前的那個孩子……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wirklich? Das wundert mich allerdings nicht … Hier ist alles möglich! Vielleicht habe ich die Zeit durcheinander gebracht und das, was noch nicht geschehen ist, mit dem verwechselt, was bereits geschehen ist …",
+                "en": "Really? That's not too surprising though... Anything can happen here! Maybe I mixed up the time, mistaking what hasn't happened with what already has...",
+                "es": "¿De veras? Eso no me sorprende... ¡Todo puede suceder aquí! Quizás me equivoqué de tiempo, confundiendo lo que no sucedió con lo que sí...",
+                "fr": "Vraiment ? Enfin, ce n'est pas si surprenant... tout peut arriver ici, ! J'ai peut-être confondu ce qu'il ne s'est pas passé avec qu'il s'est déjà passé...",
+                "ja": "え、ホントに？そっか、ここは何が起きても不思議じゃないもんね。たぶん時間を間違えちゃって、まだ起きてないことと今をごっちゃにしちゃったのかも……",
+                "ko": "어, 그래요? 그럴 수도 있죠... 이곳에선, 어떤 일이든 일어날 수 있으니까요. 아마 제가 미래랑 현재를 헷갈린 것 같네요",
+                "th": "จริงเหรอ แต่ไม่น่าแปลกใจเท่าไรหรอก... เพราะอะไรก็เกิดขึ้นได้ที่นี่! บางทีฉันอาจจะสับสนเรื่องเวลา จำสิ่งที่ยังไม่เกิดขึ้นสลับกับสิ่งที่เกิดไปแล้ว...",
+                "zh-Hans": "欸，是吗？这也难怪……在这里，什么事都有可能发生。也许我只是记错了时间，将还没发生的事，和现在搞混了吧……",
+                "zh-Hant": "欸，是嗎？這也難怪……在這裡，什麼事都有可能發生。也許我只是記錯了時間，將還沒發生的事，和現在搞混了吧……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das stimmt! Ich habe das Gefühl, wir sind uns bereits irgendwo anders begegnet. Aber … wann?",
+                "en": "That's right! I feel like we've met somewhere else before. But... when?",
+                "es": "¡Claro! Creo que ya nos conocíamos. Pero... ¿cuándo?",
+                "fr": "Tout juste ! J'ai l'impression que ce n'est pas notre première rencontre... Mais c'était quand ?",
+                "ja": "そう！前にどこかで会った気がしたんだ。でも、いつだったっけ……",
+                "ko": "네! 아무리 생각해도 어디서 뵌 듯한 느낌이 있거든요. 근데, 그게 언제였더라...",
+                "th": "ใช่เลย! ฉันรู้สึกว่าเราเคยเจอกันมาก่อน แต่ว่า... ตอนไหนกันนะ",
+                "zh-Hans": "没错！我就觉得，我们之前一定在什么地方见过面。不过，是在什么时候呢……",
+                "zh-Hant": "沒錯！我就覺得，我們之前一定在什麼地方見過面。不過，是在什麼時候呢……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hmm, ich kann mich nicht erinnern.",
+                "en": "Hmm, I can't remember.",
+                "es": "Mmm, no puedo recordarlo.",
+                "fr": "Hmm, je ne m'en souviens pas.",
+                "ja": "……えへへ、思い出せないや。",
+                "ko": "헤헤, 기억이 안 나네요",
+                "th": "อืม จำไม่ได้เลยแฮะ",
+                "zh-Hans": "……欸嘿嘿，想不起来了。",
+                "zh-Hant": "……欸嘿嘿，想不起來了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ganz nebenbei, hast du die große schwarze Katze gesehen?",
+                "en": "Oh, by the way, have you seen that large black cat?",
+                "es": "Ah, por cierto, ¿viste al enorme gato negro?",
+                "fr": "Oh, d'ailleurs, tu as vu ce gros chat noir ?",
+                "ja": "ねえ、{PlayerName}{Male=お兄ちゃん;Female=お姉ちゃん}、あの大きな黒猫さん、見なかった？",
+                "ko": "아, {Male=오빠;Female=언니}, 혹시 엄청 큰 검은 고양이 못 보셨어요?",
+                "th": "อ้อจะว่าไป คุณเห็นแมวดำตัวใหญ่ๆ บ้างมั้ย?",
+                "zh-Hans": "对了，{PlayerName}{Male=大哥哥;Female=大姐姐}，你看到那只很大的黑猫了吗？",
+                "zh-Hant": "對了，{PlayerName}{Male=大哥哥;Female=大姐姐}，你看到那隻很大的黑貓了嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Meinst du … den Torwächter?",
+                    "en": "You mean... the Gatekeeper?",
+                    "es": "¿Te refieres... al portero?",
+                    "fr": "Tu parles... du Concierge ?",
+                    "ja": "それって……ゲートキーパーのこと？",
+                    "ko": "설마 게이트 수호자를... 말하는 건가요?",
+                    "th": "หมายถึง...ผู้พิทักษ์ประตู?",
+                    "zh-Hans": "你是说……守门人？",
+                    "zh-Hant": "你是說……守門人？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wir haben bereits gekämpft.",
+                    "en": "We fought once.",
+                    "es": "Luchamos una vez.",
+                    "fr": "On s'est affrontés une fois.",
+                    "ja": "前に彼と戦ったことがあるよ。",
+                    "ko": "본 적 있어요. 싸우기까지 한 걸요",
+                    "th": "เคยสู้ด้วยมาก่อน",
+                    "zh-Hans": "我之前和他打过一架。",
+                    "zh-Hant": "我之前和他打過一架。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich weiß den Namen nicht, aber es ist eine super große schwarze Katze! Größer als ein Tiger!",
+                "en": "I don't know its name, but it's a super big black cat! Like bigger than a tiger!",
+                "es": "No sé su nombre, ¡pero es un enorme gato negro! ¡Más grande que un tigre!",
+                "fr": "Je ne connais pas son nom, mais c'est un énorme chat noir ! Même plus gros qu'un tigre !",
+                "ja": "うーん……名前は知らないけど、すっごく大きくて、虎さんみたいに大きな黒猫さん。",
+                "ko": "음... 저도 이름은 몰라요. 다만, 아주아주 큰 호랑이만 한 검은 고양이라는 것만 알고 있어요",
+                "th": "ฉันไม่รู้ชื่อของมันหรอก แต่มันเป็นแมวดำที่ตัวใหญ่มาก! ตัวโตกว่าเสืออีก!",
+                "zh-Hans": "唔……我不知道它的名字，只是知道那是一只超级大的，像老虎一样大的黑猫。",
+                "zh-Hant": "唔……我不知道它的名字，只是知道那是一隻超級大的，像老虎一樣大的黑貓。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Huch … warum? Es ist keine böse Katze.",
+                "en": "Huh... why? It's not a bad cat.",
+                "es": "Eh... ¿por qué? No es un gato malo.",
+                "fr": "Hein... pourquoi ? Ce n'est pas un méchant chat.",
+                "ja": "え……どうして？悪い子じゃないよ。",
+                "ko": "어... 왜요? 나쁜 고양이도 아닌데",
+                "th": "เอ๊ะ... ทำไมล่ะ มันไม่ได้ใจร้ายสักหน่อย",
+                "zh-Hans": "欸……为什么呢？它又不是一只坏猫。",
+                "zh-Hant": "欸……為什麼呢？它又不是一隻壞貓。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hinter dem Tor sind furchterregende Monster. Ich habe sie schon früher gesehen, aber dieses Mal fühlen sie sich … anders an.",
+                "en": "There are scary monsters beyond the gate. I've seen them before, but this time, they feel... different.",
+                "es": "Hay monstruos más allá de la puerta. Ya los había visto, pero esta vez se sienten... diferentes.",
+                "fr": "Il y a des monstres effrayants de l'autre côté de la porte. Je les ai déjà vus, mais cette fois, ils semblent... différents.",
+                "ja": "ゲートの向こうに、怖い化け物たちが出てきたんだ。化け物は前にも見たことがあったけど……なんかいつもと違ったの。",
+                "ko": "문 쪽에 무섭게 생긴 괴물들이 나타났어요, 전에도 본 적이 있지만... 뭔가 달라 보였어요",
+                "th": "มีสัตว์ประหลาดน่ากลัวอยู่หลังประตูนั่น ฉันเคยเห็นพวกมันมาก่อน แต่ครั้งนี้มันให้ความรู้สึก... ต่างออกไป",
+                "zh-Hans": "门那边出现了一些很可怕的怪物，虽然那些坏家伙我以前也见过……但它们看起来好像不太对劲。",
+                "zh-Hant": "門那邊出現了一些很可怕的怪物，雖然那些壞傢伙我以前也見過……但它們看起來好像不太對勁。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Irgendetwas sagt mir, dass sie eher aus … den Tiefen des Inneren kommen.",
+                "en": "Something tells me they're from somewhere... \"deeper.\"",
+                "es": "Algo me dice que provienen de algún lugar... «más profundo».",
+                "fr": "Quelque chose me dit qu'ils viennent d'un endroit... « plus profond ».",
+                "ja": "なんていうか、あれって……「もっと深い」ところから来たような気がする。",
+                "ko": "뭔가 「더 깊은」 곳에서 온 것처럼 느껴졌어요...",
+                "th": "บางอย่างบอกฉันว่าพวกมันมาจากที่ที่... \"ลึกยิ่งกว่า\"",
+                "zh-Hans": "我总觉得，它们来自……“更深”的地方。",
+                "zh-Hant": "我總覺得，它們來自……「更深」的地方。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du meinst die Tiefen der Träume?",
+                    "en": "You mean, the depths of dreams?",
+                    "es": "¿Te refieres a las profundidades de los sueños?",
+                    "fr": "Tu parles des profondeurs oniriques ?",
+                    "ja": "夢のもっと深いところ？",
+                    "ko": "설마 꿈의 깊은 곳?",
+                    "th": "หมายถึงห้วงลึกของความฝันเหรอ",
+                    "zh-Hans": "梦境深处？",
+                    "zh-Hant": "夢境深處？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich weiß nicht recht. Vermutlich stammen sie von einem Ort, an dem ich noch nicht war … oder den ich nicht einmal kenne.",
+                "en": "I'm not sure. They're probably from somewhere I haven't been... or even know about.",
+                "es": "No estoy segura. Probablemente provengan de un lugar que no visité... o que ni siquiera conozco.",
+                "fr": "Je ne suis pas sûre. Ils viennent sûrement d'un endroit où je ne suis jamais allée... ou que je ne connais même pas.",
+                "ja": "私にもよくわかんない……たぶん、行ったことない、知らないところから来たんだよ。",
+                "ko": "도로시도 잘 모르겠어요... 아마도 제가 가보지 못한, 심지어 들어본 적도 없는 곳이겠죠",
+                "th": "ไม่แน่ใจเหมือนกัน พวกมันน่าจะมาจากที่ที่ฉันไม่เคยไป... หรือไม่รู้จักด้วยซ้ำ",
+                "zh-Hans": "多萝西也不太明白……应该是来自我也没去过，甚至不知道的地方吧。",
+                "zh-Hant": "多蘿西也不太明白……應該是來自我也沒去過，甚至不知道的地方吧。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die sind zäh. Meine Freunde und ich haben nicht mit ihnen fertigwerden können. Doch zum Glück tauchte diese schwarze Katze aus dem Nichts auf.",
+                "en": "They're tough. My friends and I couldn't handle them. But, thankfully, that black cat showed up out of nowhere.",
+                "es": "Son fuertes. Mis amigos y yo no pudimos vencerlos. Por suerte, el gato negro apareció de la nada.",
+                "fr": "Ils sont forts. Mes amis et moi n'avons pas réussi à les vaincre, mais par chance, ce chat noir a surgi de nulle part.",
+                "ja": "あいつらはすっごく強くて、私とお友達じゃ歯が立たなかった。その時あの黒猫さんがいきなり現れたの。",
+                "ko": "엄청 강했어요. 도로시랑 친구들은 상대도 안 됐죠. 다행히 검은 고양이가 나타나서 구해줬어요",
+                "th": "พวกมันแข็งแกร่ง ฉันกับเพื่อนก็รับมือไม่ไหว แต่จู่ๆ เจ้าแมวดำตัวนั้นก็โผล่ออกมา",
+                "zh-Hans": "那些怪物非常厉害，多萝西和朋友们都不是它们的对手。还好那只黑猫突然出现了。",
+                "zh-Hant": "那些怪物非常厲害，多蘿西和朋友們都不是它們的對手。還好那隻黑貓突然出現了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie trug mich auf ihrem Rücken und brachte mich durch das Tor, aber dann … drehte sie sich um und kehrte zurück.",
+                "en": "It carried me on its back and brought me through the gate, but then… it turned around and went back.",
+                "es": "Me trajo en su lomo hasta la puerta; luego.... se volteó y regresó.",
+                "fr": "Il m'a fait grimper sur son dos et traverser la porte, mais ensuite... il a fait demi-tour et y est retourné.",
+                "ja": "黒猫さんは私を背中に乗せて逃がしてくれた。でも、また戻って行っちゃって……",
+                "ko": "저를 업고 문밖으로 도망쳤는데 혼자서 다시 돌아갔어요",
+                "th": "มันให้ฉันขี่หลังแล้วพาออกมาจากประตู จากนั้นมันก็... กลับเข้าไปข้างใน",
+                "zh-Hans": "它把我背在背上，带着我从门那边逃了出来，但它又折回去了。",
+                "zh-Hant": "它把我背在背上，帶著我從門那邊逃了出來，但它又折回去了。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, könntest du uns helfen? Bitte besiege diese Monster und rette meine Freunde und die große schwarze Katze!",
+                "en": "{PlayerName}, could you help us? Please defeat those monsters and save my friends and that big black cat!",
+                "es": "{PlayerName}, ¿podrás ayudarnos? ¡Derrota a esos monstruos, salva a mis amigos y al enorme gato negro!",
+                "fr": "{PlayerName}, peux-tu nous aider ? Pitié, élimine ces monstres et sauve mes amis et ce gros chat noir ! !",
+                "ja": "{PlayerName}{Male=お兄ちゃん;Female=お姉ちゃん}、お願い。あいつらを倒して、あの黒猫さんと私のお友達を助けて！",
+                "ko": "{PlayerName}, 부탁 좀 드려도 될까요? 그 괴물들을 물리치고, 검은 고양이랑 친구들을 구해주세요!",
+                "th": "{PlayerName} ช่วยหน่อยได้มั้ย จัดการสัตว์ประหลาดพวกนั้นแล้วช่วยเพื่อนของฉันกับแมวดำตัวใหญ่นั่นที!",
+                "zh-Hans": "{PlayerName}，能请你帮帮我们吗？打败那些怪物，把大黑猫和我的朋友们救出来！",
+                "zh-Hant": "{PlayerName}，能請你幫幫我們嗎？打敗那些怪物，把大黑貓和我的朋友們救出來！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Auch wenn die meisten meiner Freunde immer noch auf der anderen Seite festsitzen, werden wir alle, die es raus geschafft haben, dir wie immer helfen!",
+                "en": "Even though most of my friends are still stuck on the other side, all of us who got out will help you like always!",
+                "es": "Aunque la mayoría de mis amigos están atrapados del otro lado, todos los que salimos te ayudaremos como siempre.",
+                "fr": "Même si la plupart de mes amis sont toujours coincés de l'autre côté, ceux d'entre nous qui sont sortis t'aideront, comme toujours !",
+                "ja": "お友達のほとんどはゲートの向こう側に閉じ込められちゃったけど、逃げ出せたみんなと共に応援するから、いつもみたいに！",
+                "ko": "비록 제 친구들은 대부분 문 뒤에 갇혀있지만, 저랑 도망쳐 나온 친구들은 평소처럼 함께 힘을 보탤게요!",
+                "th": "ถึงแม้เพื่อนหลายๆ คนจะยังติดอยู่ที่อีกฟาก แต่พวกเราที่ออกมาได้จะคอยช่วยเหลือคุณแบบทุกที!",
+                "zh-Hans": "虽然大多数多萝西的朋友都被困在门后面了，但我和逃出来的大家，会像往常一样支援你的！",
+                "zh-Hant": "雖然大多數多蘿西的朋友都被困在門後面了，但我和逃出來的大家，會像往常一樣支援你的！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie immer …?",
+                    "en": "As always...?",
+                    "es": "¿Como siempre...?",
+                    "fr": "Comme toujours... ?",
+                    "ja": "いつもみたいに……？",
+                    "ko": "평소처럼이라고요...?",
+                    "th": "แบบทุกที...?",
+                    "zh-Hans": "像往常一样……？",
+                    "zh-Hant": "像往常一樣……？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ist so etwas schon einmal passiert?",
+                    "en": "Has this happened before?",
+                    "es": "¿Ya ocurrió antes?",
+                    "fr": "Ça s'est déjà passé ?",
+                    "ja": "{Male=こういうこと……前にもあったのか？;Female=こういうこと……前にもあったの？}",
+                    "ko": "전에도 비슷한 일이 있었나요?",
+                    "th": "เรื่องนี้เคยเกิดขึ้นแล้วเหรอ",
+                    "zh-Hans": "这种事……之前发生过吗？",
+                    "zh-Hant": "這種事……之前發生過嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Vielleicht … irgendwann in der Zukunft? Immerhin ist die Zeit ein geschlossener Kreislauf.",
+                "en": "Maybe... at some point in the future? After all, time is a closed loop.",
+                "es": "Quizás... ¿en algún momento del futuro? Después de todo, el tiempo es un círculo.",
+                "fr": "Peut-être... à un moment dans le futur ? Après tout, le temps est une boucle fermée.",
+                "ja": "たぶん……未来の、どこかで。だって時間は、繋がってるもん。一つの輪みたいなって……",
+                "ko": "아마도... 미래에 언젠가 발생했겠죠. 시간이란 꼬리에 꼬리를 무는 뫼비우스의 띠 같은 거니까요",
+                "th": "อาจจะ... สักวันหนึ่งในอนาคตล่ะมั้ง ก็เวลามันคือวังวนปิดตายนี่นา",
+                "zh-Hans": "可能……在未来的某个时候发生过吧。毕竟时间，其实是个首尾相接的圆。",
+                "zh-Hant": "可能……在未來的某個時候發生過吧。畢竟時間，其實是個首尾相接的圓。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Schweigen)",
+                    "en": "(Remain silent)",
+                    "es": "(Permanecer en silencio)",
+                    "fr": "(Ne rien dire)",
+                    "ja": "（黙したままでいる）",
+                    "ko": "(침묵)",
+                    "th": "(เงียบต่อไป)",
+                    "zh-Hans": "（保持沉默）",
+                    "zh-Hant": "（保持沉默）"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "… das habe ich schon mal gehört.",
+                    "en": "...I've heard that before.",
+                    "es": "... Ya escuché eso antes.",
+                    "fr": "... J'ai déjà entendu ça.",
+                    "ja": "……その言葉も、聞いたことがある。",
+                    "ko": "...이것 역시 들었던 말인 것 같네요",
+                    "th": "...ฉันเคยได้ยินประโยคนั้นมาก่อน",
+                    "zh-Hans": "……就连这句话我也听过。",
+                    "zh-Hant": "……就連這句話我也聽過。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie dem auch sei, ich drücke dir die Daumen! Bitte vertreibe die bösen Typen!",
+                "en": "Anyway, I'll be rooting for you! Please drive those bad guys away!",
+                "es": "Bueno, ¡te estaré apoyando! ¡Ahuyenta a esos maleantes!",
+                "fr": "Bref, je te soutiendrai ! Aide-moi, chasse ces monstres !",
+                "ja": "とにかく、頑張って、{PlayerName}{Male=お兄ちゃん;Female=お姉ちゃん}！悪い奴らをみんなやっつけて！",
+                "ko": "아무튼 힘내요. {PlayerName} {Male=오빠;Female=언니}! 어떻게든 그 자식들을 물리쳐야 해요!",
+                "th": "เอาเป็นว่าฉันจะคอยส่งกำลังใจให้นะ! ช่วยไล่วายร้ายพวกนั้นไปที!",
+                "zh-Hans": "总之，加油吧，{PlayerName}{Male=大哥哥;Female=大姐姐}！一定要打败那些坏家伙！",
+                "zh-Hant": "總之，加油吧，{PlayerName}{Male=大哥哥;Female=大姐姐}！一定要打敗那些壞傢伙！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750102,
+                "name": {
+                  "zh-Hans": "多萝西"
+                },
+                "entity": {
+                  "entityId": 171750003,
+                  "mapId": 8,
+                  "blueprintType": "NPC339",
+                  "name": "TsEntity_121_015_联机BOSS“多萝西”",
+                  "areaId": 10,
+                  "position": {
+                    "x": 88979,
+                    "y": 347900,
+                    "z": 58
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -52
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

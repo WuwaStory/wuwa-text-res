@@ -1,0 +1,827 @@
+{
+  "id": 159900010,
+  "key": "留声机引导任务",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "La La Echo",
+    "en": "La La Echo",
+    "es": "La La Eco",
+    "fr": "La La Écho",
+    "ja": "ラ・ラ・エコー",
+    "ko": "라라 에코 랜드",
+    "th": "ลา ลา เอคโค่",
+    "zh-Hans": "爱乐之骸",
+    "zh-Hant": "愛樂之骸"
+  },
+  "desc": {
+    "de": "Ein Musiker in Ragunna scheint von seinem Echo-Begleiter Malety beunruhigt zu sein ...",
+    "en": "A musician in Ragunna City seems troubled by his Echo companion Melody...",
+    "es": "Un músico en la Ciudad de Raguna parece preocupado por su compañero Eco, Melo...",
+    "fr": "A Ragunna, un musicien semble avoir des soucis concernant son Écho compagnon « Mélodie »...",
+    "ja": "ラグーナで、一人の音楽家が自分の音骸仲間「メロディー」に向かって眉をひそめていた……",
+    "ko": "라군나 성에서, 한 음악가가 본인의 에코 파트너인 「멜로디」를 보면서 걱정에 잠긴 듯하다...",
+    "th": "นักดนตรีในเมืองรากูนน่าดูเหมือนจะไม่สบายใจกับท่วงทำนองที่เป็นคู่หูเอคโค่ของตัวเอง...",
+    "zh-Hans": "拉古那城中，一位音乐家正对着自己的声骸伙伴「麦乐帝」愁眉不展……",
+    "zh-Hant": "拉古那城中，一位音樂家正對著自己的聲骸伙伴「麥樂帝」愁眉不展……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Malety",
+        "en": "Find Melody",
+        "es": "Encuentra a Melo.",
+        "fr": "Trouver « Melodie »",
+        "ja": "「メロディー」を探す",
+        "ko": "「멜로디」 찾기",
+        "th": "ตามหาท่วงทำนอง",
+        "zh-Hans": "寻找「麦乐帝」",
+        "zh-Hant": "尋找「麥樂帝」"
+      },
+      "entities": [
+        {
+          "entityId": 159900013,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM_XGZ1_5",
+          "name": "TsEntity_157_托马索",
+          "areaId": 1692,
+          "position": {
+            "x": 693662,
+            "y": 576964,
+            "z": 151
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_留声机引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh ... meine Seelenverwandte, mein König der Inspiration ... was ist mit dir passiert ...",
+                "en": "Oh... my soulmate, my king of inspiration... what has happened to you...",
+                "es": "Ay... mi alma gemela, mi rey de la inspiración... ¿qué te ha pasado...?",
+                "fr": "Oh... mon âme sœur, mon roi de l'inspiration... qu'est-ce qui t'est arrivé...",
+                "ja": "ああ……我が心の友、我が閃きの源泉よ……一体どうしたのか……",
+                "ko": "오... 나의 친구여... 나의 영감의 원천... 대체 어떻게 된 거니...?",
+                "th": "โอ้... คู่แท้ของฉัน ราชาแห่งแรงบันดาลใจของฉัน... เกิดอะไรขึ้นกับเธอกัน...",
+                "zh-Hans": "噢……我的知音，我的灵感之王……你究竟怎么了……",
+                "zh-Hant": "噢……我的知音，我的靈感之王……你究竟怎麼了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*Buzz—buzz—whirr—clickety-clack—*",
+                "en": "*Buzz—buzz—whirr—clickety-clack—*",
+                "es": "*Zumbido—zumbido—giro—clic-clac—*",
+                "fr": "*Bzzz—bzzz—vrrr—clic-clac—*",
+                "ja": "＊ブーン――ブーン――ジジ、クーッ――カチャ、キー＊",
+                "ko": "* 부응——부응——지이지이——쿠쿠카카칙—— *",
+                "th": "หึ่ง หึ่ง หวืดด แกร๊ก แกร๊ก",
+                "zh-Hans": "*嗡——嗡——吱吱——酷酷咔咔漆——*",
+                "zh-Hant": "*嗡——嗡——吱吱——酷酷咔咔漆——*"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900095,
+                "name": {
+                  "zh-Hans": "麦乐帝"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Tommaso",
+        "en": "Talk to Tommaso",
+        "es": "Habla con Tommaso.",
+        "fr": "Parler à Tommaso",
+        "ja": "トマソと会話する",
+        "ko": "토마소와 대화하기",
+        "th": "คุยกับทอมมาโซ",
+        "zh-Hans": "与托马索交谈",
+        "zh-Hant": "與托馬索交談"
+      },
+      "entities": [
+        {
+          "entityId": 159900013,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM_XGZ1_5",
+          "name": "TsEntity_157_托马索",
+          "areaId": 1692,
+          "position": {
+            "x": 693662,
+            "y": 576964,
+            "z": 151
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_留声机引导任务",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh... meine Seelenverwandte, mein König der Inspiration ... was ist mit dir passiert ...",
+                "en": "Oh... my soulmate, my king of inspiration... what has happened to you...",
+                "es": "Ay... mi alma gemela, mi rey de la inspiración... ¿qué te ha pasado...?",
+                "fr": "Oh... mon âme sœur, mon roi de l'inspiration... qu'est-ce qui t'est arrivé...",
+                "ja": "ああ……我が心の友、我が閃きの源泉よ……一体どうしたのか……",
+                "ko": "오... 나의 친구여... 나의 영감의 원천... 대체 어떻게 된 거니...?",
+                "th": "โอ้... คู่แท้ของฉัน ราชาแห่งแรงบันดาลใจของฉัน... เกิดอะไรขึ้นกับเธอกัน...",
+                "zh-Hans": "噢……我的知音，我的灵感之王……你究竟怎么了……",
+                "zh-Hant": "噢……我的知音，我的靈感之王……你究竟怎麼了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*Buzz—buzz—whirr—clickety-clack—*",
+                "en": "*Buzz—buzz—whirr—clickety-clack—*",
+                "es": "*Zumbido—zumbido—giro—clic-clac—*",
+                "fr": "*Bzzz—bzzz—vrrr—clic-clac—*",
+                "ja": "＊ブーン――ブーン――ジジ、クーッ――カチャ、キー＊",
+                "ko": "* 부응——부응——지이지이——쿠쿠카카칙—— *",
+                "th": "หึ่ง หึ่ง หวืดด แกร๊ก แกร๊ก",
+                "zh-Hans": "*嗡——嗡——吱吱——酷酷咔咔漆——*",
+                "zh-Hant": "*嗡——嗡——吱吱——酷酷咔咔漆——*"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900095,
+                "name": {
+                  "zh-Hans": "麦乐帝"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es scheint mit diesem Echo nicht zu stimmen?",
+                    "en": "What seems to be wrong with this Echo?",
+                    "es": "¿Qué le pasa a este Eco?",
+                    "fr": "Qu'est-ce qui ne vas pas avec cet Écho ?",
+                    "ja": "{Male=この音骸、どうしたんだ？;Female=この音骸、どうしたの？}",
+                    "ko": "이 에코에 무슨 문제라도 생긴 건가요?",
+                    "th": "เอคโค่ตัวนี้เป็นอะไรน่ะ?",
+                    "zh-Hans": "这位声骸出什么问题了？",
+                    "zh-Hant": "這位聲骸出什麼問題了？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Oh mein Gott, es fängt an sich zu verwandeln!",
+                    "en": "Oh my gosh, it's starting to transform!",
+                    "es": "¡Dios mío, está empezando a transformarse!",
+                    "fr": "Oh bon sang, il commence à se transformer !",
+                    "ja": "{Male=えっ、変形しだした！？;Female=あっ、変形し始めそう！}",
+                    "ko": "우와, 에코가 변신하려고 해요!",
+                    "th": "เฮ้ย แย่แล้ว มันกำลังจะเปลี่ยนร่าง!",
+                    "zh-Hans": "我的天，它要开始变形了！",
+                    "zh-Hant": "我的天，它要開始變形了！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hallo, Reisender aus der Ferne. Mein Name ist Tomaso, ein Musiker. Das hier ist mein Echo-Partner, der „Arie Mummer“ Malety.",
+                "en": "Hello, traveler from afar. My name is Tommaso, and I am a musician. This here is my Echo partner, the \"Aria Mummer\" Melody.",
+                "es": "Hola, {Male=viajero;Female=viajera} de tierras lejanas. Mi nombre es Tomaso, soy músico. Este es mi compañero Eco, la «Maschera d'Aria» Melo.",
+                "fr": "Bonjour, {Male=voyageur;Female=voyageuse}. Je m'appelle Tomaso, un musicien. Voici mon partenaire Écho, Mélodie, un « Mime Aria ».",
+                "ja": "やあ、異国の訪問者よ。俺の名はトマソ、生業は音楽だ。こいつは音骸、「アリア・ママー」のメロディー、相棒さ。",
+                "ko": "안녕, 이방에서 온 여행객이여. 난 토마소라고 하는 음악가야. 그리고 여긴 내 에코 파트너——「레코드 연주자」, 멜로디라고 하지",
+                "th": "สวัสดี นักเดินทางจากแดนไกล ผมชื่อทอมมาโซ เป็นนักดนตรี ส่วนนี่คือเอคโค่คู่หูของผม \"นักคีตบรรเลง\" ที่ชื่อว่าเมโลดี้",
+                "zh-Hans": "你好啊，异乡的旅客。我叫托马索，是一位音乐家。这位是我的声骸搭档——「留声奏者」麦乐帝。",
+                "zh-Hant": "你好啊，異鄉的旅客。我叫托馬索，是一位音樂家。這位是我的聲骸搭檔——「留聲奏者」麥樂帝。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Malety kann solche Verwandlungen nicht verkraften... Hallo, {Male=Reisender;Female=Reisende} aus der Ferne. Mein Name ist Tomaso, ein Musiker. Das hier ist mein Echo-Partner, die „Arie Mummer“ Malety.",
+                "en": "Transform? Melody can't do that, I'm afraid... Hello, traveler from afar. My name is Tommaso, and I am a musician. This here is my Echo partner, the \"Aria Mummer\" Melody.",
+                "es": "Melo no puede manejar transformaciones como esa... Hola, {Male=viajero;Female=viajera} de tierras lejanas. Mi nombre es Tomaso, soy músico. Este es mi compañero Eco, la «Maschera d'Aria» Melo.",
+                "fr": "Mélodie ne supporte pas les transformations comme ça... Bonjour, voyageur lointain. Je m'appelle Tomaso, un musicien. Voici mon partenaire Écho, Mélodie, un « Mime Aria ».",
+                "ja": "変形するメロディーなんて初耳だよ――やあ、異国の訪問者よ。俺の名はトマソ、生業は音楽だ。こいつは音骸、「アリア・ママー」のメロディー、相棒さ",
+                "ko": "멜로디는 변신을 할 줄 몰라... 안녕, 난 토마소라고 하는 음악가야. 그리고 여긴 내 에코 파트너——「레코드 연주자」, 멜로디라고 하지",
+                "th": "เปลี่ยนร่าง? ผมเกรงว่าเมโลดี้จะทำแบบนั้นไม่ได้หรอก... สวัสดี นักเดินทางจากแดนไกล ผมชื่อทอมมาโซ เป็นนักดนตรี ส่วนนี่คือเอคโค่คู่หูของผม \"นักคีตบรรเลง\" ที่ชื่อว่าเมโลดี้",
+                "zh-Hans": "变形这种事，麦乐帝可做不到啦……你好啊，异乡的旅客。我叫托马索，是一位音乐家。这位是我的声骸搭档——「留声奏者」麦乐帝。",
+                "zh-Hant": "變形這種事，麥樂帝可做不到啦……你好啊，異鄉的旅客。我叫托馬索，是一位音樂家。這位是我的聲骸搭檔——「留聲奏者」麥樂帝。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Malety besitzt die Fähigkeit, jede Melodie, die es hört, aufzunehmen und seine umgebenden „Notenpfähle“dazu zu bringen, sie nachzuspielen.",
+                "en": "Melody possesses the ability to capture every melody it hears and orchestrate its surrounding \"Melody Ensemble\" to replay them.",
+                "es": "Melo tiene la habilidad de captar cualquier melodía que escucha y orquestar su «Orquesta de Notepoles» para reproducirla.",
+                "fr": "Il a la capacité de capturer chaque mélodie qu'il entend et d'orchestrer son ensemble de Mélodie.",
+                "ja": "メロディーは、聴いた旋律を余すことなく周りの「音虫楽団」に演奏させることが出来る。",
+                "ko": "멜로디의 능력은 자신이 들은 모든 선율을 기록하고, 주위에 있는 「하루살이 밴드」를 지휘해 다시 연주하는 거야",
+                "th": "เมโลดี้มีพลังในการเก็บทุกท่วงทำนองที่ได้ยิน แล้วร้อยเรียง \"ท่วงทำนองรวมวง\" ที่อยู่รอบๆ มาเล่นใหม่ได้",
+                "zh-Hans": "麦乐帝的能力是记录自己所听到的一切旋律，并指挥它身边的「音蜉乐队」将其重奏出来。",
+                "zh-Hant": "麥樂帝的能力是記錄自己所聽到的一切旋律，並指揮它身邊的「音蜉樂隊」將其重奏出來。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kenne Malety schon seit vielen Jahren und dank seiner Anwesenheit kann ich diese flüchtigen Melodien genießen, mit einem endlosen Strom von Inspiration, der jeden Tag zu mir fließt.",
+                "en": "I have known Melody for many years, and it is thanks to its presence that I can savor those fleeting melodies, with an endless stream of inspiration flowing to me each day.",
+                "es": "Conozco a Melo desde hace muchos años, y gracias a su presencia puedo saborear esas melodías fugaces, con un flujo interminable de inspiración que llega a mí cada día.",
+                "fr": "Je connais Mélodie depuis de nombreuses années, et c'est grâce à sa présence que je peux savourer ces mélodies fugitives, avec un flot ininterrompu d'inspiration qui me parvient chaque jour.",
+                "ja": "こいつとは長い付き合いだが、そのおかげで俺は、どんな旋律でもいつでも味わえる。それが刺激的なインスピレーションを湧き出す秘密さ。",
+                "ko": "나와 멜로디는 꽤 오래 함께해 왔지. 멜로디 덕분에 순간 사라질 뻔한 멜로디를 붙잡아 세세히 감상할 수 있었고, 매일 끊임없이 영감을 얻을 수 있었어",
+                "th": "ผมร่วมทางกับเมโลดี้มาหลายปีแล้ว และก็เพราะมันนี่เอง ผมถึงได้ซึมซับท่วงทำนองอันแสนสั้นที่พลิ้วผ่าน พร้อมกับแรงบันดาลใจไม่รู้จบที่หลั่งไหลมาทุกวัน",
+                "zh-Hans": "我与麦乐帝相识许久，也正是托它的福，我才能细细品味那些转瞬即逝的旋律，每天都有源源不断的灵感涌现。",
+                "zh-Hant": "我與麥樂帝相識許久，也正是託它的福，我才能細細品味那些轉瞬即逝的旋律，每天都有源源不斷的靈感湧現。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir gehen oft gemeinsam auf Inspirationssuche, aber in letzter Zeit, mit den Vorbereitungen für den Carnevale, war ich beschäftigt und musste Malety alleine in der Stadt lassen.",
+                "en": "We often venture out together to gather inspirations, but lately, with preparations for the Carnevale, I've been caught up and had to leave Melody to handle it alone in the city.",
+                "es": "A menudo salimos juntos para reunir inspiraciones, pero últimamente, con los preparativos para el Carnevale, he estado ocupado y he tenido que dejar a Melo manejándolo sola en la ciudad.",
+                "fr": "Nous sortons souvent ensemble pour recueillir des inspirations, mais dernièrement, avec les préparatifs pour le Carnaval, j'ai été pris et j'ai dû laisser Mélodie gérer seule dans la ville.",
+                "ja": "いつもは一緒に音楽のモチーフ探しに出かけるんだけど、最近はカルネヴァーレの準備で忙しくて、メロディーに街へのモチーフ探求を頼んだんだ。",
+                "ko": "우리는 늘 함께 영감의 소재를 찾으러 나가곤 했는데, 요즘은 카니발 준비 때문에 내가 도저히 시간이 나질 않아서, 멜로디에게 부탁할 수밖에 없었어",
+                "th": "แต่ระยะหลังมานี้ ผมมัววุ่นกับการเตรียมงานคาร์นิวัล จนต้องปล่อยให้เมโลดี้อยู่ลำพังในเมืองแห่งนี้",
+                "zh-Hans": "我们经常会一同出来采风，但最近为了筹备狂欢节，我有些抽不出身，只能托麦乐帝一「人」来城里做这件事了。",
+                "zh-Hant": "我們經常會一同出來採風，但最近為了籌備狂歡節，我有些抽不出身，只能托麥樂帝一「人」來城裡做這件事了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als ich endlich mit meiner Arbeit fertig war, bemerkte ich, dass Malety bereits so endete ...",
+                "en": "Once I finally finished my work, I realized Melody had already ended up like this...",
+                "es": "Una vez que finalmente terminé mi trabajo, me di cuenta de que Melo ya había acabado así...",
+                "fr": "Quand j'ai terminé mon travail, j'ai réalisé que Mélodie avait déjà fini comme ça...",
+                "ja": "ところが、こいつが戻って来たら、メロディーがこんな姿になっちまってて……",
+                "ko": "그런데 방금 돌아와 보니 멜로디가 이 모양이 되어 있는 거야...",
+                "th": "เมื่อเสร็จสิ้นงาน ผมก็เพิ่งตระหนักว่าเมโลดี้กลายเป็นแบบนี้ไปแล้ว...",
+                "zh-Hans": "结果，等我忙完之后才发现，麦乐帝已经变成了这个样子……",
+                "zh-Hant": "結果，等我忙完之後才發現，麥樂帝已經變成了這個樣子……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*Buzz—buzz buzz—whimper—*",
+                "en": "*Buzz—buzz buzz—whimper—*",
+                "es": "*Bzz—bzz bzz—gemido—*",
+                "fr": "*Bzzz-bzzz bzzz-gémissement—*",
+                "ja": "＊ブーン――ブーン――ウゥ――＊",
+                "ko": "* 부응——부응——우우—— *",
+                "th": "หึ่ง หึ่ง หึ่ง หวืดด",
+                "zh-Hans": "*嗡——嗡嗡——呜呜——*",
+                "zh-Hant": "*嗡——嗡嗡——嗚嗚——*"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900095,
+                "name": {
+                  "zh-Hans": "麦乐帝"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es kann keine ganzen Melodien mehr spielen. Selbst seine Stimme zeigt Anzeichen von „Verzerrung“ ... Malety ... ohne dich, wie soll ich leben?",
+                "en": "It can no longer perform entire melodies. Even its voice shows signs of \"distortion\"... Melody... without you, how am I supposed to live?",
+                "es": "Ya no puede interpretar melodías completas. Incluso su voz muestra signos de «distorsión»... Melo... sin ti, ¿cómo voy a vivir?",
+                "fr": "Il ne peut plus jouer de mélodies entières. Même sa voix montre des signes de distorsion... Mélodie... sans toi, comment suis-je censé vivre ?",
+                "ja": "まともに曲を演奏できなくなっちまった。おまけに声も歪んじまって……メロディー、俺はお前なしでどうやって生きていけばいいんだよ！",
+                "ko": "더 이상 음악을 연주할 수 없게 되었어. 심지어 소리에도 왜곡된 「증상」이 나타나고 있어... 멜로디, 너 없이 나보고 어떻게 살라는 거야!",
+                "th": "ตอนนี้มันไม่อาจบรรเลงท่วงทำนองที่สมบูรณ์ได้อีก แม้แต่เสียงก็ \"แปร่งเพี้ยน\" ไป... เมโลดี้... ถ้าขาดเธอไป ฉันจะมีชีวิตต่อยังไง?",
+                "zh-Hans": "它已经无法演奏成篇的乐曲了。甚至连它的声音也出现了一些失真的「症状」……麦乐帝……没有你，没有你我该怎么活啊！",
+                "zh-Hant": "它已經無法演奏成篇的樂曲了。甚至連它的聲音也出現了一些失真的「症狀」……麥樂帝……沒有你，沒有你我該怎麼活啊！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vielleicht liegt es daran, dass es zu viele verschiedene Dinge gehört hat ...",
+                    "en": "Maybe it's because it has listened to too many different things...",
+                    "es": "¿Ha escuchado demasiadas cosas distintas?",
+                    "fr": "Peut-être, il a écouté trop de choses…",
+                    "ja": "{Male=色んな音を聴きすぎたのかもな……;Female=色んな音を聴きすぎたのかもね……}",
+                    "ko": "너무 많은 소리를 들어서 그런 게 아닐까요...",
+                    "th": "อาจเป็นเพราะมันฟังสิ่งต่างๆ มากเกินไปก็ได้...",
+                    "zh-Hans": "或许是因为它听的东西太杂了……",
+                    "zh-Hant": "或許是因為它聽的東西太雜了……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nur Arbeit und kein Spiel machen sogar den schärfsten Verstand stumpf ...",
+                    "en": "All work and no play makes even the sharpest mind dull...",
+                    "es": "¡Todo trabajo y nada de juego, y hasta el cerebro se vuelve tonto!",
+                    "fr": "Trop travailler émousse même l'esprit le plus vif...",
+                    "ja": "たまには休ませないと、こんないびつな音骸になってしまうってことかな……",
+                    "ko": "쉬지 않고 일만 계속하면, 똑똑한 「에」도 바보가 돼요...",
+                    "th": "ถ้าเอาแต่ทำงานไม่หยุดไม่พัก ต่อให้เก่งแค่ไหนก็สมองตื้อได้...",
+                    "zh-Hans": "只工作，不玩耍，聪明「骸子」也变傻……",
+                    "zh-Hant": "只工作，不玩耍，聰明「骸子」也變傻……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sicher ... Es scheint wahrscheinlich ... Ah, {Male=werter Freund;Female=werte Freundin}, deiner Haltung und Kleidung nach zu urteilen, musst du {Male=ein erfahrener Abenteurer;Female=eine erfahrene Abenteuerin} sein.",
+                "en": "Sure... It seems likely... Ah, my friend, judging by your posture and attire, you must be a seasoned adventurer.",
+                "es": "Puede ser... Oye, con esa postura y vestimenta, seguro que eres {Male=un aventurero experimentado;Female=una aventurera experimentada}.",
+                "fr": "Oui…C'est probablement le cas... Ah, mon ami, à en juger par ta posture et ta tenue, tu dois être {Male=un aventurier expérimenté;Female=une aventurière expérimentée}.",
+                "ja": "ああ、そうかもしれん。そうだお主、その出で立ちは、きっと百戦錬磨の冒険家だな？",
+                "ko": "음... 그럴 가능성도 있겠네... 맞다, 모습과 옷차림을 보아하니 산전수전 다 겪어 온 모험가같이 보이는데",
+                "th": "อืม... ฟังดูสมเหตุสมผล... อ้อ เพื่อนเอ๋ย ดูจากท่าทางและการแต่งกาย คุณคงผ่านการผจญภัยมาโชกโชนสินะ",
+                "zh-Hans": "嗯……很有可能……对了，朋友，看你的姿态与装束，想必你一定是一位身经百战的冒险家吧。",
+                "zh-Hant": "嗯……很有可能……對了，朋友，看你的姿態與裝束，想必你一定是一位身經百戰的冒險家吧。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hast du während deines Abenteuers besonders erinnerungswürdige Musik gehört oder aufgenommen?",
+                "en": "Have you heard or recorded any particularly memorable music during your adventure?",
+                "es": "¿Has escuchado o grabado alguna música particularmente memorable durante tu aventura?",
+                "fr": "As-tu entendu ou enregistré une musique particulièrement mémorable pendant ton aventure ?",
+                "ja": "冒険の最中で、何か印象に残ったメロディーを聴いたり、記録したりしたことは？",
+                "ko": "혹시 모험하면서 인상 깊은 음악을 듣거나 기록해 본 적 있어?",
+                "th": "ระหว่างการเดินทาง คุณเคยได้ยินหรือบันทึกเสียงดนตรีที่ตราตรึงใจไว้บ้างมั้ย?",
+                "zh-Hans": "在冒险的途中，你有没有听到或是记录过一些令你印象特别深刻的音乐？",
+                "zh-Hant": "在冒險的途中，你有沒有聽到或是記錄過一些令你印象特別深刻的音樂？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Könntest du sie mit Malety teilen? Das könnte seine „Symptome“ lindern ...",
+                "en": "Could you share them with Melody? This might ease its \"symptoms\"...",
+                "es": "¿Podrías compartirla con Melo? Esto podría aliviar sus «síntomas»...",
+                "fr": "Pourrais-tu les partager avec Mélodie ? Cela pourrait atténuer ses « symptômes »...",
+                "ja": "頼む、メロディーに聴かせてくれないか？ひょっとすると少しはマシになるかもしれない……",
+                "ko": "그 음악을 멜로디에게 공유해 줄 수 있을까? 그러면 멜로디의 「증상」이 완화될 수도 있으니까 말야...",
+                "th": "คุณจะช่วยแบ่งปันให้เมโลดี้บ้างได้มั้ย? เผื่อ \"อาการ\" ของมันจะดีขึ้น...",
+                "zh-Hans": "不知你是否可以将它们分享给麦乐帝？这或许能够缓解它的「症状」……",
+                "zh-Hant": "不知你是否可以將它們分享給麥樂帝？這或許能夠紓解它的「症狀」……"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Tommaso, nachdem du die Melodienbox abgeliefert hast",
+        "en": "Talk to Tommaso after delivering the music record",
+        "es": "Habla con Tommaso después de entregar los objetos.",
+        "fr": "Livrer l'article et parler à Tommaso",
+        "ja": "アイテムを提出した後、トマソと会話する",
+        "ko": "아이템 제출한 후 토마소와 대화하기",
+        "th": "คุยกับทอมมาโซหลังจากส่งมอบบันทึกเพลง",
+        "zh-Hans": "交付道具后，与托马索交谈",
+        "zh-Hant": "交付道具後，與托馬索交談"
+      },
+      "entities": [
+        {
+          "entityId": 159900013,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_DA_MaleM_XGZ1_5",
+          "name": "TsEntity_157_托马索",
+          "areaId": 1692,
+          "position": {
+            "x": 693662,
+            "y": 576964,
+            "z": 151
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_留声机引导任务",
+          "flowIndex": 1,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh... oh! Ja! Das ist der Sound, den Malety haben sollte! Das ... das ist wahre Musik!",
+                "en": "Oh... oh! Yes! This is the sound Melody was meant to have! This... this is true music!",
+                "es": "¡Vaya...! ¡Sí! ¡Este es el sonido que Melo debía tener! ¡Esto... esto sí que es música de verdad!",
+                "fr": "Oh... oh ! Oui ! C'est le véritable son de Mélodie ! C'est... c'est de la vraie musique !",
+                "ja": "おおおお……そう！　これぞメロディー本来の音だ！　これこそまさに……真の音楽だ！",
+                "ko": "오... 오! 맞아! 이게 바로 멜로디가 있어야 할 소리야! 이, 이런 게 바로... 진정한 음악이지!",
+                "th": "โอ้... โอ้! ใช่แล้ว! นี่แหละคือเสียงที่เมโลดี้ควรจะขับขาน! นี่แหละ... ดนตรีที่แท้จริง!",
+                "zh-Hans": "哦……哦！没错！这才是麦乐帝应有的声音！这、这……才是真正的音乐！",
+                "zh-Hant": "哦……哦！沒錯！這才是麥樂帝應有的聲音！這、這……才是真正的音樂！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke dir! Reisender aus der Ferne! Diese ... „Melodienbox“ in deinen Händen, wo hast du sie gefunden? Solch wunderbare Musik, auf einer kleinen Scheibe wie dieser festgehalten ...",
+                "en": "Thank you! Traveler from afar! This… \"Melody Box\" in your hands, where did you find it? Such wondrous music, captured on a tiny disc like this...",
+                "es": "¡Gracias! ¡{Male=Viajero;Female=Viajera} de tierras lejanas! Esta... «Caja de melodía» en tus manos, ¿dónde la encontraste? Una música tan maravillosa, capturada en un pequeño disco como este...",
+                "fr": "Merci ! {Male=Voyageur venu;Female=Voyageuse venue} de loin ! Où l'as-tu trouvée cette…. « Boîte musicale » ? Une musique si merveilleuse, capturée sur un petit truc comme celui-ci…",
+                "ja": "異国の訪問者よ、心から礼を言う！この「メロディーボックス」をどうやって……？　こんなにも胸を打つ音楽が、あんなにも小さなディスクに収まっているとは……",
+                "ko": "고마워, 여행객! 손에 들고 있는 그... 「하르모니아 박스」는 어디에서 찾은 거야? 이 작은 음반에 이렇게 아름다운 음악이 들어있다니...",
+                "th": "ขอบคุณนะ นักเดินทางจากแดนไกล! คุณ... เจอ \"กล่องท่วงทำนอง\" ในมืออันนี้จากที่ไหนครับ? ไม่น่าเชื่อว่าแผ่นเสียงเล็กๆ แบบนี้จะบันทึกดนตรีอันน่าอัศจรรย์ได้...",
+                "zh-Hans": "谢谢你！异乡的旅客！你手中的这个……「鸣奏之匣」，是从哪里寻得的？如此美妙的音乐，竟能镌刻在这样一张小小的碟片里……",
+                "zh-Hant": "謝謝你！異鄉的旅客！你手中的這個……「鳴奏之匣」，是從哪裡尋得的？如此美妙的音樂，竟能鐫刻在這樣一張小小的碟片裡……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Einfach nur ein Glücksfall.",
+                    "en": "Just a stroke of luck.",
+                    "es": "Solo fue un golpe de suerte.",
+                    "fr": "Juste un coup de chance.",
+                    "ja": "偶然見つけたんだ。",
+                    "ko": "우연히 얻게 됐어요",
+                    "th": "ก็แค่โชคช่วยน่ะ",
+                    "zh-Hans": "妙手偶得。",
+                    "zh-Hant": "妙手偶得。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Basierend auf wahren Begebenheiten.",
+                    "en": "Adapted from True Experiences.",
+                    "es": "Adaptado de experiencias reales.",
+                    "fr": "« Basé sur une vraie expérience ».",
+                    "ja": "{Male=実体験を元にアレンジしたんだ。;Female=実体験を元にアレンジしたの。}",
+                    "ko": "실제 경험에서 나온 음악이에요",
+                    "th": "ดัดแปลงมาจากประสบการณ์จริงน่ะ",
+                    "zh-Hans": "改编自真实经历。",
+                    "zh-Hant": "改編自真實經歷。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin nur der Transporteur in dieser Welt.",
+                    "en": "I am merely a porter in this world.",
+                    "es": "Tal vez solo sea {Male=un mensajero;Female=una mensajera} en este mundo.",
+                    "fr": "Je ne suis qu'{Male=un servant;Female=servante} de la nature.",
+                    "ja": "{Male=俺は単なる運び屋だよ。;Female=私は単なる運び屋よ。}",
+                    "ko": "전 그냥 이런저런 물건이 많아서요",
+                    "th": "ฉันเป็นแค่นักเก็บของในโลกนี้น่ะ",
+                    "zh-Hans": "我只是这个世界的搬运工。",
+                    "zh-Hant": "我只是這個世界的搬運工。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hmm ... Also, was du sagst, ist, dass dies die Dinge sind, die du durch unzählige Abenteuer in dieser weiten Welt gesammelt hast? Wie eine ... Antwort der Welt auf dich?",
+                "en": "Hmm... So, what you're saying is, these are the things you've gathered through countless adventures in this vast world? Like a... response from the world to you?",
+                "es": "Hmm... Entonces, ¿lo que estás diciendo es que estas son las cosas que has reunido a través de incontables aventuras en este vasto mundo? ¿Como una... respuesta del mundo hacia ti?",
+                "fr": "Hmm... Donc, ce que tu dis, c'est que ce sont les choses que tu as rassemblées lors d'innombrables aventures dans ce vaste monde ? Comme une... réponse du monde à toi ?",
+                "ja": "ううむ……つまりこれは、広大なソラリスを数多の冒険を経て、お主が集めてきたと？これはまるで、世界からお主に送った答えなのか……？",
+                "ko": "음... 그 의미는, 이 드넓은 세계에서 수많은 모험을 겪으며 수집한 물건이라는 거네. 이 세상이 너에게 주는... 일종의 응답이랄까?",
+                "th": "อืมม... งั้นสิ่งที่คุณจะบอกก็คือ สิ่งเหล่านี้คือสิ่งที่คุณเก็บเกี่ยวมาจากการผจญภัยมากมายในโลกกว้างใบนี้ใช่มั้ย? เหมือนกับ... เป็นการตอบรับที่โลกมอบให้คุณ?",
+                "zh-Hans": "嗯……意思是说，这是你在这广阔的世界中，历经无数冒险收集到的东西？好比是一种……世界对你的回应？",
+                "zh-Hant": "嗯……意思是說，這是你在這廣闊的世界中，歷經無數冒險收集到的東西？好比是一種……世界對你的回應？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich hörte einmal einen Spruch: Alle Musik in dieser Welt ist vorher von den Göttern geschrieben und über das Land verstreut. Es ist die Aufgabe der Musiker, sie zu entdecken und aufzunehmen.",
+                "en": "I once heard a saying: All the music in this world is prewritten by the divine, scattered across the land. It is the duty of musicians to discover and record them.",
+                "es": "Una vez escuché un dicho: Toda la música en este mundo está preescrita por lo divino, esparcida por la tierra. Es el deber de los músicos descubrirla y grabarla.",
+                "fr": "J'ai entendu dire : Toute la musique de ce monde est préécrite par le divin. Elles sont dispersées partout et c'est le devoir des musiciens de les découvrir et de les enregistrer.",
+                "ja": "こんな話を聞いたことがある。この世すべての音楽は、神が事前に作曲し、世界に広く与えたもの。そして我ら音楽家は、それらを見つけ出し、記録する役目なのだと。",
+                "ko": "「이 세상의 모든 음악은 신들에 의해 미리 쓰여진 후 세상 곳곳에 뿌려진 것이다」라는 말을 들어본 적이 있어. 음악가들의 사명은 그걸 발견하고 기록하는 것이고 말이야",
+                "th": "ผมเคยได้ยินคำกล่าวที่ว่า ดนตรีทั้งมวลในโลกใบนี้มีเทพลิขิตไว้ก่อนแล้ว กระจัดกระจายอยู่ทั่วผืนแผ่นดิน หน้าที่ของนักดนตรีคือการค้นหาและบันทึกมันเอาไว้",
+                "zh-Hans": "我曾听过一个说法：这世上所有的音乐，都是事先被神明谱写好，散落在这个世界中的。音乐家们的职责，是发现并记录它们。",
+                "zh-Hant": "我曾聽過一個說法：這世上所有的音樂，都是事先被神明譜寫好，散落在這個世界中的。音樂家們的職責，是發現並記錄它們。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es scheint, Malety und ich sollten uns über die Stadt Ragunna hinaus wagen und die weitere Welt erkunden.",
+                "en": "It seems Melody and I should venture beyond Ragunna City and explore the wider world.",
+                "es": "Parece que Melo y yo deberíamos aventurarnos más allá de la Ciudad de Raguna y explorar el mundo más amplio.",
+                "fr": "Il semble que Mélodie et moi devrions nous aventurer au-delà de la ville de Ragunna et explorer le vaste monde.",
+                "ja": "どうやら俺とメロディーも、ラグーナ城を出て、もっと外の世界を見て回るべきかもしれないな。",
+                "ko": "나와 멜로디는 라군나 성 밖으로 나가 바깥세상을 좀 더 돌아다녀야 할 것 같아",
+                "th": "บางทีผมกับเมโลดี้ก็ควรออกจากเมืองรากูนน่าไปท่องโลกที่กว้างใหญ่บ้าง",
+                "zh-Hans": "看来，我和麦乐帝也应该从拉古那城出去，多在外面的世界走走才是。",
+                "zh-Hant": "看來，我和麥樂帝也應該從拉古那城出去，多在外面的世界走走才是。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In der Kakophonie der Weltgeräusche besteht die lebenslange Herausforderung für jeden Musiker darin, die reinsten Melodien zu destillieren... und die „Arie Mummers“ sind keine Ausnahme.",
+                "en": "In the cacophony of the world's sounds, the lifelong challenge for every musician is to distill the purest melodies... and \"Aria Mummers\" are no exception.",
+                "es": "En la cacofonía de los sonidos del mundo, el desafío de toda la vida para cada músico es destilar las melodías más puras... y Maschera d'Aria no es una excepción.",
+                "fr": "Dans la cacophonie des sons du monde, pour chaque musicien, le défi c'est de distiller les mélodies les plus pures... et les Mimes Aria ne font pas exception.",
+                "ja": "ただ、世の喧騒から、より正確な楽譜を拾い上げることこそ、音楽家にとって生涯の使命……それは「アリア・ママー」だって例外ではない。",
+                "ko": "세상의 다양한 소리 속에서 가장 정확하고 아름다운 악보를 만드는 일은 음악가들 평생의 과업이기도 하지... 「레코드 연주자」들도 예외는 아니고 말이야",
+                "th": "ท่ามกลางเสียงอึกทึกของโลก ความท้าทายตลอดชีวิตของนักดนตรีคือการกลั่นกรองท่วงทำนองที่บริสุทธิ์ที่สุด... และ \"นักคีตบรรเลง\" ก็ไม่ต่างกัน",
+                "zh-Hans": "只不过，想要在世间纷杂的声音之中，提炼出最精准的乐谱，则是每位音乐家一生的课题了……「留声奏者」们也不例外。",
+                "zh-Hant": "只不過，想要在世間紛雜的聲音之中，提煉出最精準的樂譜，則是每位音樂家一生的課題了……「留聲奏者」們也不例外。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht triffst du in Rinascita auf andere „Arie Mummers“. Sie könnten vor ähnlichen Herausforderungen stehen.",
+                "en": "Perhaps within Rinascita, you may encounter other \"Aria Mummers.\" They might be facing similar challenges.",
+                "es": "Quizás dentro de Rinascita, puedas encontrar a más Maschera d'Aria como Melo. Podrían estar enfrentando desafíos similares.",
+                "fr": "Peut-être que dans Rinascita, tu rencontreras d'autres Mimes Aria. Ils pourraient faire face à des défis similaires.",
+                "ja": "リナシータ領内では、他にも「アリア・ママー」に会うことがあるかもしれないな。そんな彼らも同様の問題で悩んでるかもな。",
+                "ko": "어쩌면 리나시타에서 같은 문제를 겪고 있는 다른 「레코드 연주자」를 만나게 될지도 몰라",
+                "th": "บางทีในรินาซิตา คุณอาจได้พบ \"นักคีตบรรเลง\" อื่นที่กำลังต่อสู้กับความท้าทายแบบเดียวกัน",
+                "zh-Hans": "也许你在黎那汐塔境内，还会遇到其他的「留声奏者」。它们可能也在被同样的难题困扰。",
+                "zh-Hant": "也許你在黎那汐塔境內，還會遇到其他的「留聲奏者」。它們可能也在被同樣的難題困擾。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe immer daran geglaubt, zusammen mit Malety, dass großartige Musik die Macht hat, andere zu berühren und Veränderungen zu bewirken.",
+                "en": "I have always believed, alongside Melody, that great music has the power to touch others and inspire change.",
+                "es": "Siempre he creído, junto a Melo, que la gran música tiene el poder de conmover a otros e inspirar el cambio.",
+                "fr": "J'ai toujours cru, avec Mélodie, que la musique a le pouvoir admirable de toucher les gens et d'inspirer le changement.",
+                "ja": "良き音楽とは人に感動と力を与えるものと、俺とメロディーはいつもそう信じている。",
+                "ko": "나와 멜로디는 믿고 있거든, 좋은 음악은 다른 사람을 감화할 수 있는 힘을 가지고 있다고 말이야",
+                "th": "ผมกับเมโลดี้เชื่อร่วมกันเสมอมา ว่าดนตรีอันยิ่งใหญ่มีพลังที่จะสัมผัสหัวใจผู้คนและจุดประกายการเปลี่ยนแปลง",
+                "zh-Hans": "我和麦乐帝一直都相信，好的音乐是能够感染他人，具有力量的。",
+                "zh-Hant": "我和麥樂帝一直都相信，好的音樂是能夠感染他人，具有力量的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Während deines Abenteuers, wenn du zufällig andere „Melodienboxen“ sammelst, bitte hilf auch den anderen „Arie Mummers“.",
+                "en": "During your adventure, if you happen to gather other \"Melody Boxes,\" please lend a hand to the other \"Aria Mummers\" as well.",
+                "es": "Durante tu aventura, si llegas a reunir otras «Cajas de melodía», por favor, ofrece tu ayuda a las otras «Maschere d'Aria» también.",
+                "fr": "Pendant ton aventure, si tu arrives à rassembler d'autres boîtes musicales, s'il te plaît, aide aussi les autres Mimes Aria.",
+                "ja": "今後もお主は冒険中に新たな「メロディーボックス」に出会うだろう。その時には別の「アリア・ママー」にも協力してやって欲しい。よいか？",
+                "ko": "모험할 때 혹시 다른 「하르모니아 박스」를 수집하게 된다면, 다른 「레코드 연주자」들도 도와주길 바랄게",
+                "th": "ระหว่างการเดินทาง หากคุณได้พบ \"กล่องท่วงทำนอง\" อื่นๆ ก็โปรดช่วยส่งต่อให้ \"นักคีตบรรเลง\" ตัวอื่นๆ ด้วยนะ",
+                "zh-Hans": "如果你在冒险的过程中，有搜集到其他的「鸣奏之匣」，可以的话，也请多帮助一下其他的「留声奏者」。",
+                "zh-Hant": "如果你在冒險的過程中，有搜集到其他的「鳴奏之匣」，可以的話，也請多幫助一下其他的「留聲奏者」。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte nimm diese als Dank für deine Hilfe an!",
+                "en": "Please accept these as a token of my gratitude for your help!",
+                "es": "¡Por favor, acepta esto como un detallito de mi gratitud por tu ayuda!",
+                "fr": "Prends ceci comme un signe de ma gratitude pour ton aide !",
+                "ja": "これはお主への感謝の気持ち、遠慮は無用だ！",
+                "ko": "도와줘서 고마워, 이걸 받아줘!",
+                "th": "ได้โปรดรับสิ่งนี้ไว้ เป็นเครื่องหมายแทนคำขอบคุณจากผมนะครับ!",
+                "zh-Hans": "这些东西请收下吧，感谢你的帮助！",
+                "zh-Hant": "這些東西請收下吧，感謝你的幫助！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900094,
+                "name": {
+                  "zh-Hans": "托马索"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Malety",
+        "en": "Talk to Melody",
+        "es": "Habla con Melo.",
+        "fr": "Parler à « Melodie »",
+        "ja": "「メロディー」と会話する",
+        "ko": "「멜로디」와 대화하기",
+        "th": "คุยกับท่วงทำนอง",
+        "zh-Hans": "与「麦乐帝」交谈",
+        "zh-Hant": "與「麥樂帝」交談"
+      },
+      "entities": [
+        {
+          "entityId": 314900010,
+          "mapId": 8,
+          "blueprintType": "NPC_Shenghai1",
+          "name": "TsEntity_声骸_留声机_400409",
+          "areaId": 1692,
+          "position": {
+            "x": 693758,
+            "y": 576810,
+            "z": 158
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 172
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

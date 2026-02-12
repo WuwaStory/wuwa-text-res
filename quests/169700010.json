@@ -1,0 +1,152 @@
+{
+  "id": 169700010,
+  "key": "呼啸隧道",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "de": "Heulender Tunnel",
+    "en": "Howling Tunnel",
+    "es": "Túnel Aullador",
+    "fr": "Tunnel Hurlant",
+    "ja": "ハウリング・トンネル",
+    "ko": "하울링 터널",
+    "th": "อุโมงค์เสียงหวีด",
+    "zh-Hans": "呼啸隧道",
+    "zh-Hant": "呼嘯隧道"
+  },
+  "desc": {
+    "de": "Setze den Wiederaufbau von Heulendem Tunnel fort.",
+    "en": "Rebuild the Howling Tunnel",
+    "es": "Reconstruye el Túnel Aullador.",
+    "fr": "Reconstruire le Tunnel Hurlant",
+    "ja": "ハウリング・トンネルの再建を進める",
+    "ko": "하울링 터널 건설 진행하기",
+    "th": "ดำเนินการฟื้นฟูอุโมงค์เสียงหวีด",
+    "zh-Hans": "进行呼啸隧道的重建",
+    "zh-Hant": "進行呼嘯隧道的重建"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 169700024,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_8",
+          "areaId": 36164,
+          "position": {
+            "x": -156190,
+            "y": -607150,
+            "z": 25612
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 31
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 169700024,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_8",
+          "areaId": 36164,
+          "position": {
+            "x": -156190,
+            "y": -607150,
+            "z": 25612
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 31
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700196,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Treasure_3_5",
+          "name": "TsEntity_3_0_涡纹物资箱",
+          "areaId": 36164,
+          "position": {
+            "x": -155454,
+            "y": -607197,
+            "z": 25559
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700309,
+          "mapId": 906,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器",
+          "areaId": 36164,
+          "position": {
+            "x": -153711,
+            "y": -609007,
+            "z": 25659
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

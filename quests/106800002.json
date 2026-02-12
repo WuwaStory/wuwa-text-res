@@ -1,0 +1,151 @@
+{
+  "id": 106800002,
+  "key": "云陵谷",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Geisterschluchten",
+    "en": "Tales of the Past and Present: Gorges of Spirits",
+    "es": "Crónicas de antaño y hoy: Valle de Almas",
+    "fr": "Histoires du passé : Yunling",
+    "ja": "古今幾多の物語・雲陵谷",
+    "ko": "고대의 이야기·운릉 협곡",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: หุบเขาแห่งวิญญาณ",
+    "zh-Hans": "古今多少故事·云陵谷",
+    "zh-Hant": "古今多少故事·雲陵谷"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese zerrissenen Seiten. Gehe und bringe sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these torn pages. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estas páginas rasgadas. Ve y entrégalas a él.",
+    "fr": "Le conteur de Jinzhou cherche des fragments de vieux livres. Donnez-lui ceux que vous avez collectés au Port de la ville Guixu.",
+    "ja": "今州城の講談師は古い書籍の残巻に興味があるようなので、雲陵谷で集めた古い書籍の残巻を彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼이 낡은 서적 잔본에 관심이 많은 것 같으니 운릉 협곡에서 수집한 서적 잔본을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมหน้ากระดาษที่ฉีกขาดเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧书残卷很感兴趣，把这些于云陵谷收集到的旧书残卷交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊書殘卷很感興趣，把這些於雲陵谷收集到的舊書殘卷交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler die „Zerrissene Seiten aus den Geisterschluchten“",
+        "en": "Deliver \"Torn Pages from Gorges of Spirits\" to the Storyteller",
+        "es": "Entrega las \"Páginas Rasgadas del Valle de Almas\" al Narrador",
+        "fr": "Donner le Fragment du livre de Yunling-la-Vallée au conteur",
+        "ja": "「雲陵谷の書籍の残巻」を講談師に渡す",
+        "ko": "「운릉 협곡 낡은 서적 잔본」을 이야기꾼에게 제출",
+        "th": "ส่ง \"หน้ากระดาษที่ฉีกขาดจากหุบเขาแห่งวิญญาณ\" ให้นักเล่าเรื่อง",
+        "zh-Hans": "将「云陵谷书籍残卷」交给说书人",
+        "zh-Hant": "將「雲陵谷書籍殘卷」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Das ist das... <i>Jinzhou Volkskunde Journal</i>.",
+                "en": "This is the... <i>Jinzhou Folklore Journal</i>.",
+                "es": "Este es el... <i>Diario de folklore de Jinzhou</i>.",
+                "fr": "C'est... « Chroniques de Folklore de Jinzhou ».",
+                "ja": "これは……『今州民俗志』か。",
+                "ko": "이건... 『금주의 민속 잡지』",
+                "th": "นี่คือ... <i>วารสารนิทานพื้นบ้านจินโจว</i>",
+                "zh-Hans": "此为……《今州民俗志》。",
+                "zh-Hant": "此為……《今州民俗志》。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl ich hier Geschichten über Jinzhou und Huanglong erzähle, kann mein Wissen nicht mit diesem Meisterwerk mithalten.",
+                "en": "Though I tell stories about Jinzhou and Huanglong here, my knowledge cannot rival this masterpiece.",
+                "es": "Aunque cuento historias sobre Jinzhou y Huanglong aquí, mi conocimiento no puede rivalizar con esta obra maestra.",
+                "fr": "La culture de Jinzhou et le caractère de ses habitants sont souvent mentionnés dans les histoires, mais ce livre les décrit de manière plus détaillée.",
+                "ja": "今州の人文と瑝瓏の風骨か、普段講談の中で触れられることもあるが、この本の中で詳しく説明されている。",
+                "ko": "금주의 인류 문화, 황룡의 기개, 제가 평소 이야기를 할 때도 언급은 하지만 사실 이 책의 내용보다는 자세하지는 않아요",
+                "th": "แม้ว่าฉันจะเป็นคนเล่าเรื่องเกี่ยวกับจินโจวและหวงหลง แต่ความรู้ฉันก็ไม่อาจเทียบได้กับผลงานชิ้นเอกนี้",
+                "zh-Hans": "今州人文、瑝珑风骨，虽说平时说书的时候也会提到，但不如这书里来得详细。",
+                "zh-Hant": "今州人文、瑝瓏風骨，雖說平時說書的時候也會提到，但不如這書裡來得詳細。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das nächste Mal, denke ich, kann ich für dich die Gründung von Jinzhou abdecken.",
+                "en": "Next time, I think I can cover the founding of Jinzhou for you.",
+                "es": "La próxima vez, creo que puedo cubrir la fundación de Jinzhou para ti.",
+                "fr": "La prochaine fois, je vous raconterai l'histoire de la création de Jinzhou !",
+                "ja": "よし、次回は今州の制度の物語を話そう！",
+                "ko": "아니면 다음번에 제가 금주의 조직 편성에 대한 이야기를 해드릴게요!",
+                "th": "คราวหน้าฉันจะเล่าเรื่องการก่อตั้งจินโจวให้ฟัง",
+                "zh-Hans": "不如下回，我也讲讲这今州建制的故事吧！",
+                "zh-Hant": "不如下回，我也講講這今州建制的故事吧！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

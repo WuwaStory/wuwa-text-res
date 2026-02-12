@@ -1,0 +1,147 @@
+{
+  "id": 30850001,
+  "key": "失败范围支持优先级判断",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 16,
+      "parentId": 7,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 11,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 11,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 11,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 16,
+      "type": "ParallelSelect",
+      "entities": [
+        {
+          "entityId": 36850012,
+          "mapId": 100,
+          "blueprintType": "Editor001",
+          "name": "失败范围支持优先级判断",
+          "areaId": 0,
+          "position": {
+            "x": -40000,
+            "y": 68000,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 36850014,
+          "mapId": 100,
+          "blueprintType": "Editor001",
+          "name": "失败范围支持优先级判断",
+          "areaId": 0,
+          "position": {
+            "x": -30000,
+            "y": 68000,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 16,
+      "type": "ParallelSelect",
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": 2000004,
+  "key": "NPC交互任务回复",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 2000007,
+          "mapId": 32,
+          "blueprintType": "NPC013",
+          "name": "小桃",
+          "areaId": 0,
+          "position": {
+            "x": -60,
+            "y": -5500,
+            "z": 56
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_示例1",
+          "flowIndex": 11,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hat er dir geantwortet?",
+                "es": "¿Te ha respondido?",
+                "zh-Hans": "请问他有回复你吗？",
+                "zh-Hant": "請問他有回復你嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wir werden uns in Zukunft nicht mehr sehen.",
+                    "es": "No nos veremos en el futuro",
+                    "zh-Hans": "以后不再相见",
+                    "zh-Hant": "以後不再相見"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe ihn noch nicht gefunden.",
+                    "es": "No lo he buscado todavía",
+                    "zh-Hans": "还没有找他",
+                    "zh-Hant": "還沒有找他"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Er wird dich gleich zurückkommen.",
+                    "es": "Él volverá a buscarte en un momento",
+                    "zh-Hans": "他等下就回来找你",
+                    "zh-Hant": "他等下就回來找你"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie konnte das passieren... Weh, Weh, Weh.",
+                "es": "¿Cómo pudo... suceder esto?",
+                "zh-Hans": "怎么会。。。呜呜呜",
+                "zh-Hant": "怎麼會。。。 嗚嗚嗚"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wunderbar, danke dir. Ich muss mich beeilen und zurückgehen, um mich vorzubereiten.",
+                "es": "Genial, gracias, tengo que volver a prepararme rápidamente",
+                "zh-Hans": "太好了，谢谢你，我得赶紧回去准备了",
+                "zh-Hant": "太好了，謝謝你，我得趕緊回去準備了"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

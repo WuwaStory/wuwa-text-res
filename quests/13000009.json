@@ -1,0 +1,120 @@
+{
+  "id": 13000009,
+  "key": "解锁接取占用-请求",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 13000023,
+          "mapId": 100,
+          "blueprintType": "NPC0005",
+          "name": "TsEntity_0005_180_陈皮2",
+          "areaId": 0,
+          "position": {
+            "x": -67660,
+            "y": -38750,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 8,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Sag etwas",
+                "es": "Di algo",
+                "zh-Hans": "说点什么吧"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 13000022,
+          "mapId": 100,
+          "blueprintType": "NPC0001",
+          "name": "TsEntity_0001_180_马和2",
+          "areaId": 0,
+          "position": {
+            "x": -67670,
+            "y": -39540,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

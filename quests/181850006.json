@@ -1,0 +1,198 @@
+{
+  "id": 181850006,
+  "key": "2.8预热day6",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lahai-Roi-Treibgut VI",
+    "en": "Daily Lahai-Roi Castaway VI",
+    "es": "Objeto Náufrago diario de Lahai-Roi VI",
+    "fr": "Résidu quotidien issu de Lahai-Roi - VI",
+    "ja": "毎日のラハイロイ漂流物・六",
+    "ko": "오늘의 라하이 로이 표류물 · Ⅵ",
+    "th": "วัตถุตกค้างจากลาไฮรอยรายวัน - 6",
+    "zh-Hans": "每日的拉海洛漂流物·六",
+    "zh-Hant": "每日的拉海洛漂流物·六"
+  },
+  "desc": {
+    "de": "Irgendwie hast du das Gefühl, dass die Suche diesmal nicht ganz reibungslos verlaufen wird. Besser, du schaust zuerst im Café vorbei und prüfst die Lage.",
+    "en": "Somehow, you get the feeling that the search won't go so smoothly this time. Better head to the cafe and check things out first.",
+    "es": "De alguna manera, tienes la sensación de que la búsqueda no irá tan bien esta vez. Mejor ve al café y revisa las cosas primero.",
+    "fr": "Un sentiment étrange vous envahit : vous sentez que la recherche du résidu ne sera pas facile cette fois. Commencez par visiter le café pour découvrir ce qui s'est passé.",
+    "ja": "どこか不安な予感がする。今回の漂流物捜索は順調にいかないかもしれない。まずは、カフェに様子を見に行こう。",
+    "ko": "이번 표류물 찾기가 순조롭지 않을 것이라는 좋지 않은 예감이 든다. 일단은 카페부터 가보자",
+    "th": "แต่คุณกลับรู้สึกว่าลางไม่ดี การค้นหาวัตถุตกค้างในครั้งนี้อาจจะไม่ราบรื่นเหมือนที่ผ่านมา อย่างไรก็ตาม ลองไปยังร้านกาแฟดูก่อนละกัน",
+    "zh-Hans": "你有不太好的预感，这次的漂流物搜寻或许不会那么顺利。总之，先前往咖啡厅看看吧。",
+    "zh-Hant": "你有不太好的預感，這次的漂流物搜尋或許不會那麼順利。總之，先前往咖啡廳看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erkunde Stadt Honami",
+        "en": "Explore Honami City",
+        "es": "Explora la ciudad de Honami.",
+        "fr": "Explorer la ville de Honami",
+        "ja": "穂波市を探索",
+        "ko": "호나미 시 탐색하기",
+        "th": "สำรวจเมืองโฮนามิ",
+        "zh-Hans": "探索穗波市",
+        "zh-Hant": "探索穗波市"
+      },
+      "entities": [
+        {
+          "entityId": 181850005,
+          "mapId": 910,
+          "blueprintType": "Quest094",
+          "name": "女仆波仔的留言",
+          "areaId": 40,
+          "position": {
+            "x": 2241,
+            "y": 4697,
+            "z": 178
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh ins Shashou-Café und hol dir neue Informationen über Treibgut.",
+        "en": "Head to the cafe to gather intel on the new castaway object",
+        "es": "Dirígete al café para recopilar información sobre el nuevo Objeto Náufrago.",
+        "fr": "Visiter le Café Shashou pour obtenir des informations",
+        "ja": "カフェに向かい、新しい漂流物の情報を確認する",
+        "ko": "카페로 이동하여 새로운 표류물 정보 획득하기",
+        "th": "ไปยังร้านกาแฟ เพื่อรับข้อมูลวัตถุตกค้างใหม่",
+        "zh-Hans": "前往咖啡厅，获取新的漂流物情报",
+        "zh-Hant": "前往咖啡廳，獲取新的漂流物情報"
+      },
+      "entities": [
+        {
+          "entityId": 181850005,
+          "mapId": 910,
+          "blueprintType": "Quest094",
+          "name": "女仆波仔的留言",
+          "areaId": 40,
+          "position": {
+            "x": 2241,
+            "y": 4697,
+            "z": 178
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2.8预热活动",
+          "flowIndex": 1,
+          "stateId": 15,
+          "talks": [
+            {
+              "text": {
+                "de": "Einige Zeit später erreichst du den in der Nachricht erwähnten Meishin-Durchgang …",
+                "en": "Some time later, you arrive near the Meishin Passageway mentioned in the note…",
+                "es": "Un tiempo después, llegas a los alrededores del Pasadizo Meishin, mencionado en la nota...",
+                "fr": "Un peu plus tard, vous arrivez près du Passage de Meishin mentionné dans le message…",
+                "ja": "しばらくして、あなたはメッセージに書かれていた迷心通路の近くへとやって来た……",
+                "ko": "한참 뒤에 쪽지에서 언급한 메이신 통로 근처에 도착한다...",
+                "th": "ในเวลาต่อมา คุณก็มาถึงบริเวณอุโมงค์เมย์ชินที่กล่าวถึงในโน้ต...",
+                "zh-Hans": "一段时间后，你来到了留言中提到的迷津隧道附近……",
+                "zh-Hant": "一段時間後，你來到了留言中提到的迷津隧道附近……"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2.8预热活动",
+          "flowIndex": 1,
+          "stateId": 10,
+          "talks": [
+            {
+              "text": {
+                "de": "Das für diese Suche verantwortliche Namipon … ist nicht hier?",
+                "en": "The Namipon in charge of this search... is not here?",
+                "es": "¿El Namipón encargado de esta búsqueda... no está aquí?",
+                "fr": "Le Namipon chargé de cette recherche… n'est pas là ?",
+                "ja": "今回の、漂流物捜索を担当するナミポンが……いない？",
+                "ko": "이번 표류물 찾기를 담당하는 나미폰은... 없나요?",
+                "th": "Namipon ที่รับผิดชอบการค้นหาครั้งนี้... ไม่อยู่ที่นี่เหรอ?",
+                "zh-Hans": "负责这次漂流物搜寻的波仔……并不在？",
+                "zh-Hant": "負責這次漂流物搜尋的波仔……並不在？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

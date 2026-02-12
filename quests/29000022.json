@@ -1,0 +1,53 @@
+{
+  "id": 29000022,
+  "key": "test/测试激活引导条件配置",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "test Anleitung Zustandsaktivierung Konfiguration",
+    "en": "test guide condition activation configuration",
+    "es": "prueba la configuración de activación de la condición de la guía",
+    "ja": "test_text",
+    "ko": "테스트 활성화 안내 조건 설정",
+    "zh-Hans": "测试激活引导条件配置",
+    "zh-Hant": "測試啟動引導條件配置"
+  },
+  "desc": {
+    "de": "test Anleitung Zustandsaktivierung Konfiguration",
+    "en": "test guide condition activation configuration",
+    "es": "prueba la configuración de activación de la condición de la guía",
+    "ja": "test_text",
+    "ko": "테스트 활성화 안내 조건 설정",
+    "zh-Hans": "测试激活引导条件配置",
+    "zh-Hant": "測試啟動引導條件配置"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Anleitung aktiviert nachdem der Timer 10s läuft",
+        "en": "guide activated after the timer times 10s",
+        "es": "guía activada después de que el temporizador marca 10s",
+        "ja": "test_text",
+        "ko": "타이머 10초 후 활성화 안내",
+        "zh-Hans": "计时器10s后激活引导",
+        "zh-Hant": "計時器10s後啟動引導"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

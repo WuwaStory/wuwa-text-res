@@ -1,0 +1,835 @@
+{
+  "id": 152750017,
+  "key": "特色收集尾声",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Wetterüberwachung: Epilog",
+    "en": "Solaris Weather Forecast: Epilogue",
+    "es": "Pronóstico de Solaris: Epílogo",
+    "fr": "Station météo Solaris : Épilogue",
+    "ja": "ソラリス気象学最前線・エピローグ",
+    "ko": "솔라리스 기상 선구 · 에필로그",
+    "th": "พยากรณ์อากาศโซลาริส: บทส่งท้าย",
+    "zh-Hans": "索拉里斯气象前沿·尾声",
+    "zh-Hant": "索拉里斯氣象前沿·尾聲"
+  },
+  "desc": {
+    "de": "Nachdem du die Datensammlung für Arno abgeschlossen hast, erhältst du eine Nachricht von ihm, die ein Treffen in Jinzhou anfordert.",
+    "en": "Having finished the data collection for Arno, you receive a message from him requesting a meeting in Jinzhou.",
+    "es": "Tras completar la recolección de datos para Arno, recibes un mensaje suyo solicitando una reunión en Jinzhou.",
+    "fr": "Après avoir terminé la collecte de données, vous recevez un message d'Arno. Il vous demande de le rencontrer à Jinzhou.",
+    "ja": "データの収集も一段落ついたので、約束通り、今州でアルノーを会いに行く",
+    "ko": "데이터 수집을 끝내고 아르노와 금주에서 만나기",
+    "th": "หลังจากรวบรวมข้อมูลให้อาร์โนเสร็จแล้ว คุณได้รับข้อความจากเขาขอให้ไปพบที่จินโจว",
+    "zh-Hans": "数据的收集告一段落，阿尔诺约你在今州会面",
+    "zh-Hant": "數據的收集告一段落，阿爾諾約你在今州會面"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Arno",
+        "en": "Talk to Arno",
+        "es": "Habla con Arno.",
+        "fr": "Parler à Arno",
+        "ja": "アルノーと会話する",
+        "ko": "아르노와 대화하기",
+        "th": "คุยกับอาร์โน",
+        "zh-Hans": "和阿尔诺交谈",
+        "zh-Hant": "和阿爾諾交談"
+      },
+      "entities": [
+        {
+          "entityId": 152750078,
+          "mapId": 8,
+          "blueprintType": "NPC420120",
+          "name": "TsEntity_卡洛_420120",
+          "areaId": 301,
+          "position": {
+            "x": -60748,
+            "y": 106261,
+            "z": 387
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_黑海岸限时收集",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Danke, {PlayerName}.",
+                "en": "Thank you, {PlayerName}.",
+                "es": "Gracias, {PlayerName}.",
+                "fr": "Merci, {PlayerName}.",
+                "ja": "{PlayerName}、お疲れ。",
+                "ko": "수고했어요, {PlayerName}",
+                "th": "ขอบคุณนะ {PlayerName}",
+                "zh-Hans": "辛苦你了，{PlayerName}。",
+                "zh-Hant": "辛苦你了，{PlayerName}。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Überwachungsdaten, die du gesammelt hast, wurden analysiert und zu den Schwarzen Küsten zurückgeschickt.",
+                "en": "The surveillance data you collected has been analyzed and sent back to the Black Shores.",
+                "es": "Los datos de vigilancia que recopilaste fueron analizados y enviados a Costa Negra.",
+                "fr": "Les données de surveillance que tu as recueillies ont été analysées et envoyées au Littoral noir.",
+                "ja": "君が収集してくれたデータは、簡単に整理してまとめた後、<ano=ブラックショア>黒海岸</ano>に転送しているよ。",
+                "ko": "당신이 수집한 탐측 데이터는 초기 정리를 거쳐 검은 해안으로 전송되었어요",
+                "th": "เราวิเคราะห์ข้อมูลการเฝ้าระวังที่คุณเก็บรวบรวมมา แล้วก็ส่งกลับไปที่แบล็กชอร์แล้ว",
+                "zh-Hans": "你所收集的侦测数据都经过初步整理和汇总后传送回黑海岸了。",
+                "zh-Hant": "你所收集的偵測數據都經過初步整理和匯總後傳送回黑海岸了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Daten sind erstklassig – vielleicht sogar gut genug, dass wir eine neue Variable in unser Prognosemodell aufnehmen können.",
+                "en": "The data is top-notch—maybe enough for us to add a new variable in our forcast model.",
+                "es": "Son datos de primera, y tal vez suficientes para agregar una nueva variable a nuestro modelo predictivo.",
+                "fr": "Ce sont des données de première qualité... Ça nous permettra peut-être d'ajouter une nouvelle variable à notre modèle de prédiction.",
+                "ja": "量も精度も申し分なかった。うまくいけば、予測モデルに新たな変数が追加されるかも。",
+                "ko": "이번 데이터는 규모도 크고 정확성도 매우 높아요. 모든 게 잘 된다면 향후 예측 모델에 새로운 변수가 추가될 수도 있어요",
+                "th": "นั่นเป็นข้อมูลชั้นยอด ซึ่งน่าจะเพียงพอให้เราเพิ่มตัวแปรใหม่ๆ ในโมเดลคาดการณ์ของเราได้",
+                "zh-Hans": "这批数据的规模和精度都非常高，如果一切顺利的话，或许未来的预测模型还会增加一项变量。",
+                "zh-Hant": "這批數據的規模和精度都非常高，如果一切順利的話，或許未來的預測模型還會增加一項變量。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hoffentlich können wir bald schon noch bessere Vorhersagen treffen.",
+                "en": "Hopefully, we'll be able to provide even better predictions soon.",
+                "es": "Con suerte, pronto podremos ofrecer proyecciones aún mejores.",
+                "fr": "Si tout se passe bien, on pourra bientôt faire des prédictions encore plus fiables.",
+                "ja": "そうすれば、<ano=ブラックショア>黒海岸</ano>はもっと正確に予測できる。",
+                "ko": "그때쯤 검은 해안에서는 더 정확한 예측 결과를 제공할 수 있겠죠",
+                "th": "ในอนาคตเราคงจะคาดการณ์ได้แม่นยำกว่าเดิมแน่นอน",
+                "zh-Hans": "届时，想必黑海岸就能提供更精确的预测结果吧。",
+                "zh-Hant": "届時，想必黑海岸就能提供更精確的預測結果吧。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es freut mich, dass ich helfen konnte.",
+                    "en": "I'm happy I could help.",
+                    "es": "Me alegro de haber podido contribuir.",
+                    "fr": "Ça m'a fait plaisir de t'aider.",
+                    "ja": "役に立てれば。",
+                    "ko": "도움이 되었다니 다행이네요",
+                    "th": "ดีใจนะที่ได้ช่วยเหลือ",
+                    "zh-Hans": "能帮上忙就好。",
+                    "zh-Hant": "能幫上忙就好。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du bist zu bescheiden. Ohne dich hätten wir das nicht geschafft …",
+                "en": "You're being too kind. We couldn't have done this without you...",
+                "es": "Estás siendo demasiado {Male=modesto;Female=modesta}. No podríamos haberlo hecho sin ti.",
+                "fr": "Tu es trop {Male=gentil;Female=gentille}. On n'aurait rien pu faire sans toi.",
+                "ja": "いやいや、本当に君のおかげなんだ。",
+                "ko": "이게 다 방랑자 덕분이에요",
+                "th": "คุณนี่มีน้ำใจมากเลยนะ เราคงทำไม่สำเร็จถ้าไม่ได้คุณช่วย...",
+                "zh-Hans": "哪里哪里，这一切真是多亏有你了……",
+                "zh-Hant": "哪裡哪裡，這一切真是多虧有你了……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "KU-Ryan und ich sind nicht gerade die sportlichsten Typen. Es wäre fast unmöglich gewesen, in so kurzer Zeit genügend Daten zu sammeln.",
+                "en": "KU-Ryan and I are not exactly the athletic type. It would’ve been nearly impossible to gather sufficient data in such a short time.",
+                "es": "KU-Ryan y yo no somos muy deportistas, que digamos. Nos habría resultado casi imposible reunir datos suficientes en tan poco tiempo.",
+                "fr": "KU-Ryan et moi, on n'est pas spécialement du genre sportif, si tu vois ce que je veux dire. On n'aurait jamais pu collecter toutes ces données en si peu de temps.",
+                "ja": "僕とクーリアンでは、これほどのデータは集められないよ。",
+                "ko": "저와 쿠 · 리안의 운동 신경으로는 제한된 시간 내에 충분한 데이터를 수집하는 게 쉽지 않거든요",
+                "th": "ผมกับ KU-Ryan ไม่ใช่พวกถนัดใช้แรงเท่าไหร่น่ะ แทบจะเป็นไปไม่ได้เลยที่จะเก็บรวบรวมข้อมูลให้มากพอในเวลาสั้นๆ แค่นั้น",
+                "zh-Hans": "以我和库里安的运动能力，想在有限的时间里收集到足够的数据绝非易事。",
+                "zh-Hant": "以我和庫里安的運動能力，想在有限的時間裡收集到足夠的數據絕非易事。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Und wird diese neue Variable eure Vorhersagen deutlich verbessern?",
+                    "en": "And will that new variable improve your predictions a lot?",
+                    "es": "¿Y esa nueva variable mejorará mucho tus predicciones?",
+                    "fr": "Et cette nouvelle variable, elle va beaucoup améliorer vos prédictions ?",
+                    "ja": "新たな変数って、それほど影響するの？",
+                    "ko": "새로운 변수가 큰 영향을 미칠까요?",
+                    "th": "แล้วตัวแปรใหม่ๆ จะช่วยให้คุณคาดการณ์ได้ดีขึ้นมากหรือเปล่า?",
+                    "zh-Hans": "新的变量会有很大影响么？",
+                    "zh-Hant": "新的變量會有很大影響嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Der Unterschied ist vielleicht nicht riesig. Vielleicht nur ein paar Sekunden oder Millisekunden.",
+                "en": "It may not have a huge impact. Maybe just a few seconds or milliseconds of difference.",
+                "es": "Quizás no tenga un gran impacto, o tal vez suponga una diferencia de unos pocos segundos o milisegundos...",
+                "fr": "Ça n'aura pas forcément un énorme impact. Peut-être seulement quelques secondes ou millisecondes.",
+                "ja": "思ってたより大差はないかも。多くて1、2秒、運が悪いと数ミリ秒くらい結果が早く出るだけだろうね。",
+                "ko": "아마도 그렇게 큰 영향은 없을 거예요. 최종 결과에 반영되는 시간 차이는 어쩌면 1~2초, 혹은 몇 밀리초 수준일 수 있어요",
+                "th": "มันอาจจะไม่ได้ส่งผลมากมายอะไร อาจจะต่างกันแค่หลักวินาทีหรือมิลลิวินาทีนี่แหละ",
+                "zh-Hans": "也许不会有想象中那么大的影响，落实在最后结果上的时间差也许只有一两秒，甚至几毫秒的级别。",
+                "zh-Hant": "也許不會有想像中那麼大的影響，落實在最後結果上的時間差也許只有一兩秒，甚至幾毫秒的級別。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wer weiß, mit welchen Situationen wir in Zukunft konfrontiert werden? Unser neues Modell könnte der Schlüssel sein, um mögliche Schlupflöcher im alten Modell aufzuspüren.",
+                "en": "But who knows what situations we'll face in the future? Our new model might be the key to unlocking any loopholes in the old one.",
+                "es": "Pero ¿quién sabe a qué situaciones nos enfrentaremos en el futuro? Nuestro nuevo modelo podría ser clave para solucionar las lagunas del antiguo.",
+                "fr": "Mais qui sait ce que l'avenir nous réserve ? Notre nouveau modèle pourrait nous aider à résoudre bien des problèmes.",
+                "ja": "でも旧モデルでは特例と見なすべき状況でも、新モデルならカバーできる場合もある。",
+                "ko": "하지만 앞으로 특별한 상황이 발생한다면, 새로운 모델이 구모델의 결점을 보완할 수 있을지도 모르죠",
+                "th": "แต่ใครจะรู้ล่ะว่าในอนาคตเราจะเจอกับสถานการณ์แบบไหนบ้าง? โมเดลใหม่ของเราอาจจะเป็นกุญแจสำคัญที่ช่วยปิดช่องโหว่เก่าๆ ก็ได้",
+                "zh-Hans": "但也有可能未来遇到了某些特别的情况，新的模型就可以填补旧模型的漏洞。",
+                "zh-Hant": "但也有可能未來遇到了某些特別的情況，新的模型就可以填補舊模型的漏洞。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Möglicherweise verstehen viele Leute nicht, warum ich so viel Aufwand bei der Datenerfassung betreibe.",
+                "en": "Many people may not understand why I collect data in such a tedious way.",
+                "es": "Seguro que mucha gente no entiende por qué recopilo datos de una forma tan tediosa,",
+                "fr": "Beaucoup de gens ne comprennent pas pourquoi je passe tant de temps à recueillir des données, alors que c'est barbant comme tout.",
+                "ja": "どうしてこんな面倒くさいやり方でデータを収集しているのか、実はあんまり理解されていないんだ。",
+                "ko": "사실 많은 사람들이 제가 이렇게 번거롭게 데이터를 수집하는 이유를 잘 이해하지 못해요",
+                "th": "หลายคนไม่เข้าใจว่าทำไมผมถึงตั้งหน้าตั้งตาเก็บรวบรวมข้อมูลขนาดนี้",
+                "zh-Hans": "其实，很多时候别人可能不太理解为什么我要用这么麻烦的方式收集数据。",
+                "zh-Hant": "其實，很多時候別人可能不太理解為什麼我要用這麼麻煩的方式收集數據。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wie man in Huanglong sagt: Ein winziger Fehler kann gewaltige Folgen haben.",
+                "en": "But like they say in Huanglong, a minuscule error could lead to major consequences.",
+                "es": "pero como dicen en Huanglong, un error minúsculo podría tener consecuencias mayúsculas.",
+                "fr": "Comme on dit à Huanglong, une erreur minuscule peut avoir des répercussions immenses.",
+                "ja": "<ano=こうりゅう>瑝瓏</ano>にもことわざがあるだろう？「小さな差も積み重なれば、大きな違いとなる」って。",
+                "ko": "근데 황룡에 아주 좋은 옛말이 있잖아요. 「작은 것이 큰 차이를 만든다.」",
+                "th": "แต่อย่างที่คนในหวงหลงพูดกันนั่นแหละ ความผิดพลาดแค่เล็กน้อยอาจทำให้เกิดผลกระทบใหญ่ตามมา",
+                "zh-Hans": "但瑝珑有句古话说得很好不是么？“失之毫厘，差之千里。”",
+                "zh-Hant": "但瑝瓏有句古話說得很好不是嗎？「失之毫釐，差之千里。」"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Wenn die Vorhersage doch nur eine Sekunde früher gekommen wäre …“ „Wenn die vorhergesagte Stelle doch nur zehn Zentimeter genauer gewesen wäre …“",
+                "en": "\"If only the forecast was one second closer...\" \"If only the projected spot was ten centimeters more precise...\"",
+                "es": "«Si el pronóstico fuera un segundo más preciso», «si el punto proyectado fuera diez centímetros más exacto»...",
+                "fr": "« Si seulement la prédiction était arrivée une seconde plus tôt... » « Si seulement notre projection pour l'emplacement avait été plus précise d'une dizaine de centimètres... »",
+                "ja": "「予測時間があと1秒早かったら……」「予測地点があと10センチ近ければ……」",
+                "ko": "「예측 결과가 단 1초만 더 정확했으면 좋겠다」, 「예측 위치가 10센티미터만 더 가까웠으면 좋겠다」",
+                "th": "ถ้าคาดการณ์ได้แม่นขึ้นอีกสักวินาทีก็คงดี...\" \"ถ้าจุดที่คาดการณ์แม่นยำขึ้นสัก 10 เซนติเมตรก็คงดี...",
+                "zh-Hans": "“哪怕只要预测结果再准确一秒就好了”，“哪怕只要预测位置再精准十公分就好了”——",
+                "zh-Hant": "「哪怕只要預測結果再準確一秒就好了」，「哪怕只要預測位置再精准十公分就好了」——"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Aber dann wäre es bereits zu spät zum Bereuen.",
+                "en": "...But by then, it would be too tardy for regrets.",
+                "es": "Pero entonces ya sería demasiado tarde para arrepentirse.",
+                "fr": "Mais les regrets arrivent toujours trop tard.",
+                "ja": "……でもそんな後悔は、いざとなれば、全部無意味な言い訳になってしまうだけだ。",
+                "ko": "하지만... 진짜로 이러한 말을 하게 될 때는 모든 것이 늦어버리죠",
+                "th": "...แต่ถึงตอนนั้น มันก็คงสายเกินไปที่จะเสียใจแล้ว",
+                "zh-Hans": "……可等真说出这句话的时候，一切就都晚了。",
+                "zh-Hant": "……可等真說出這句話的時候，一切就都晚了。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein paar Sekunden oder Zentimeter können über Leben und Tod entscheiden. Mit einer genaueren Vorhersage hätte ich mehr Leben retten können …",
+                "en": "A few seconds or centimeters could mean life and death. I could've saved more lives with a more precise prediction—",
+                "es": "Unos segundos o centímetros podrían significar la vida o la muerte. Con una predicción más exacta, podría haber salvado más vidas.",
+                "fr": "Quelques secondes, quelques centimètres, ça peut faire toute la différence entre la vie et la mort. Avec plus de précision, j'aurais pu sauver plus de monde...",
+                "ja": "「本来、彼らを助ける方法はあったんだ、1人でも多く助けられたら——」",
+                "ko": "「그들을 구할 수 있었는데, 단 한 명이라도 더 구할 수 있었을 텐데」",
+                "th": "เวลาแค่ไม่กี่วินาทีหรือระยะแค่ไม่กี่เซนติเมตรอาจเป็นตัวตัดสินความเป็นความตาย ผมคงจะช่วยชีวิตได้อีกมาก ถ้าคาดการณ์ได้แม่นยำกว่านี้",
+                "zh-Hans": "“我本可以救救他们，哪怕只是多救下一个人”——",
+                "zh-Hant": "「我本可以救救他們，哪怕只是多救下一個人」——"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Gedanke daran macht es mir unmöglich, auch nur einen einzigen Fehler in den Daten, mit denen ich arbeite, zu akzeptieren.",
+                "en": "The thought of that makes me unable to accept any error in the data I handle.",
+                "es": "Pensar en ello me hace incapaz de aceptar cualquier error en los datos que manejo.",
+                "fr": "Quand je songe à ça, je ne peux pas accepter la moindre inexactitude dans les données que j'utilise.",
+                "ja": "そんなことになってしまう可能性を考えると、自分の手で処理したデータにミスがあることを許せなくなった。",
+                "ko": "그런 생각을 하게 되면, 제가 다룬 데이터에 어떠한 오류도 허용할 수 없어요",
+                "th": "พอคิดแบบนั้นแล้ว ผมก็ทำใจยอมรับความผิดพลาดของข้อมูลที่ตัวเองจัดการไม่ได้เลย",
+                "zh-Hans": "只要想到这样的事，只要想到那种可能性，我就无法允许自己经手的数据出现任何纰漏。",
+                "zh-Hant": "只要想到這樣的事，只要想到那種可能性，我就無法允許自己經手的數據出現任何紕漏。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ups. Entschuldige, da habe ich mich ein wenig hinreißen lassen.",
+                "en": "Oops. Sorry, I got ahead of myself.",
+                "es": "Ups... Lo siento, me he puesto como una moto.",
+                "fr": "Oh, mais pardon, je m'emporte...",
+                "ja": "おや、ごめん、つい重いこと言っちゃて。",
+                "ko": "아, 죄송해요. 저도 모르게 무거운 이야기를 했네요",
+                "th": "โอ๊ะ ขอโทษที พูดพล่ามเรื่องตัวเองเยอะไปหน่อย",
+                "zh-Hans": "诶呀，不好意思，不知不觉中似乎说了很沉重的话。",
+                "zh-Hant": "哎呀，不好意思，不知不覺中似乎說了很沉重的話。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedenfalls vielen Dank, {PlayerName}.",
+                "en": "Anyway, thank you so much, {PlayerName}.",
+                "es": "De todos modos, muchas gracias, {PlayerName}.",
+                "fr": "Quoi qu'il en soit, merci beaucoup, {PlayerName}.",
+                "ja": "とにかくだ。本当にありがとう、{PlayerName}。",
+                "ko": "도와줘서 고마워요, {PlayerName}",
+                "th": "แต่ก็ขอบคุณมากนะ {PlayerName}",
+                "zh-Hans": "这次的事情非常感谢你的帮助，{PlayerName}。",
+                "zh-Hant": "這次的事情非常感謝你的幫助，{PlayerName}。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich freue mich schon auf unsere nächste Zusammenarbeit!",
+                "en": "I look forward to working with you again!",
+                "es": "¡Espero que volvamos a trabajar juntos!",
+                "fr": "J'espère qu'on retravaillera bientôt ensemble !",
+                "ja": "またいつか協力し合える日が来るといいね！",
+                "ko": "앞으로도 협력할 기회가 있으면 좋겠네요!",
+                "th": "หวังว่าจะได้ร่วมมือกันอีกนะ!",
+                "zh-Hans": "希望我们还可以有机会再度合作！",
+                "zh-Hant": "希望我們還可以有機會再次合作！"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750078,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -60748,
+                    "y": 106261,
+                    "z": 387
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

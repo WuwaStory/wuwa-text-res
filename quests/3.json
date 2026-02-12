@@ -1,0 +1,94 @@
+{
+  "id": 3,
+  "key": "杀怪任务",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 7,
+          "mapId": 100,
+          "blueprintType": "NPC004",
+          "name": "接任务Npc",
+          "areaId": 0,
+          "position": {
+            "x": -89000,
+            "y": -49760,
+            "z": 15
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_InteractTest",
+          "flowIndex": 9,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Gut gemacht!",
+                "es": "¡Bien hecho!",
+                "zh-Hans": "干得漂亮",
+                "zh-Hant": "幹得漂亮"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

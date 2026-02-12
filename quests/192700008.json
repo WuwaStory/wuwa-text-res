@@ -1,0 +1,2994 @@
+{
+  "id": 192700008,
+  "key": "任务3.0bvb引导第一环",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Spitze des Ruhms: Neu Entfacht",
+    "en": "Peaks of Prestige: Rekindled Duel",
+    "es": "Cumbre Gloriosa: Duelo reavivado",
+    "fr": "Sommet de la Gloire : Duel ravivé",
+    "ja": "グローリー・ヒルズ：激闘リターン",
+    "ko": "영광의 언덕 · 돌아온 격투",
+    "th": "สุดยอดเกียรติภูมิ: ศึกดวลครั้งใหม่",
+    "zh-Hans": "荣耀之丘：激斗重燃",
+    "zh-Hant": "榮耀之丘：激鬥重燃"
+  },
+  "desc": {
+    "de": "Ein Mädchen namens Anita hat dich in den „Spitze des Ruhms“-Fanclub eingeladen. Von ihr erfährst du, dass dem Club derzeit die Auflösung droht …",
+    "en": "A girl named Anita invites you into the Peaks of Prestige fan club. From her, you learn that the club is hanging by a thread...",
+    "es": "Una chica llamada Anita te invita a unirte al club de fans de Cumbre Gloriosa. Gracias a ella, descubres que el club está al borde del colapso…",
+    "fr": "Anita, une étudiante, vous invite à rejoindre le fan club du « Sommet de la gloire » de l'Académie Brandétoile, qui traverse sa plus grande crise depuis sa création...",
+    "ja": "アニータという名の女子学生に誘われて『グローリー・ヒルズ』同好会に入ったあなたは、彼女から同好会解散の危機を知らされた……",
+    "ko": "아니타라는 여성이 당신을 『영광의 언덕』 동호회에 초대했습니다. 그리고 당신은 그녀에게서 동호회가 현재 해산 위기에 직면하고 있다는 사실을 알게 되었습니다",
+    "th": "หญิงสาวชื่อ Anita ชวนคุณเข้าร่วมชมรม \"สุดยอดเกียรติภูมิ\" คุณได้รับรู้ว่าชมรมกำลังเผชิญกับวิกฤติ...",
+    "zh-Hans": "一位名叫安妮塔的女生邀你加入了《荣耀之丘》同好会，你从她那里得知，同好会目前正面临解散的危机……",
+    "zh-Hant": "一位名叫安妮塔的女生邀你加入了《榮耀之丘》同好會，你從她那裡得知，同好會目前正面臨解散的危機……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 41,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit der Studentin, die für ihren Fanclub wirbt.",
+        "en": "Talk to the girl promoting her fan club",
+        "es": "Habla con la chica que promociona su club de fans.",
+        "fr": "Parler à l'étudiante chargée de la promotion du club",
+        "ja": "同好会を宣伝している女子学生と会話する",
+        "ko": "동호회를 홍보하는 여자와 대화하기",
+        "th": "คุยกับสาวประชาสัมพันธ์ชมรม",
+        "zh-Hans": "和宣传同好会的女生交谈",
+        "zh-Hant": "和宣傳同好會的女生交談"
+      },
+      "entities": [
+        {
+          "entityId": 192700003,
+          "mapId": 906,
+          "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+          "areaId": 36170,
+          "position": {
+            "x": -53050,
+            "y": -539640,
+            "z": 35201
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V3.0BVB引导任务",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, {Male=lieber Kommilitone;Female=liebe Kommilitonin}!",
+                "en": "Hi there, fellow student!",
+                "es": "¡Hola, {Male=compañero;Female=compañera}!",
+                "fr": "Salut camarade !",
+                "ja": "こんにちは！",
+                "ko": "안녕하세요!",
+                "th": "สวัสดี!",
+                "zh-Hans": "你好啊，这位同学！",
+                "zh-Hant": "你好啊，這位同學！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schon mal von „Spitze des Ruhms“ gehört? Möchtest du unserem Fanclub beitreten?",
+                "en": "Ever heard of Peaks of Prestige? Would you like to join our fan club?",
+                "es": "¿Has oído hablar de Cumbre Gloriosa? ¿Te gustaría unirte a nuestro club de fans?",
+                "fr": "Tu as déjà entendu parler du Sommet de la gloire ? Ça te dirait de rejoindre notre fan club ?",
+                "ja": "グローリー・ヒルズに興味はない？うちの同好会に入ってみない？",
+                "ko": "혹시 『영광의 언덕』에 관심 있으신가요? 우리 동호회에 들어오지 않을래요?",
+                "th": "คุณสนใจเล่นเกม \"สุดยอดเกียรติภูมิ\" รึเปล่า? อยากเข้าร่วมชมรมของเรามั้ย?",
+                "zh-Hans": "请问你对《荣耀之丘》有兴趣吗？要不要加入我们的同好会？",
+                "zh-Hant": "請問你對《榮耀之丘》有興趣嗎？要加入我們的同好會嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Spitze des Ruhms“ ist aktuell das angesagteste Spiel in Rinascita. Es ist superleicht zu erlernen und macht wahnsinnig viel Spaß! Wenn du dich jetzt einschreibst, bekommst du sogar ein limitiertes Starterpaket.",
+                "en": "Peaks of Prestige is currently the hottest game in Rinascita. It's super easy to pick up and crazy fun! Sign up now and you'll even get a limited edition starter pack.",
+                "es": "Actualmente, Cumbre Gloriosa es el juego más popular de Rinascita. ¡Es facilísimo de aprender y la mar de divertido! Si te apuntas ahora, recibirás un pack de inicio de edición limitada.",
+                "fr": "Le Sommet de la gloire, c'est le jeu le plus tendance du moment à Rinascita. C'est très facile à apprendre et vraiment amusant ! Si tu t'inscris maintenant, tu auras droit à un pack de débutant en édition limitée !",
+                "ja": "グローリー・ヒルズは、リナシータで一番流行ってるゲームなんだ！楽しくて手軽にやれるのが特徴なの。今、同好会に加入してくれたら、限定版の初心者デッキをプレゼントしちゃうよ！",
+                "ko": "『영광의 언덕』은 요새 리나시타에서 가장 핫한 게임이에요, 쉽고 재밌어서 금방 배울 수 있죠! 지금 동호회에 가입하면 한정판 초기 덱을 드려요",
+                "th": "\"สุดยอดเกียรติภูมิ\" เป็นเกมที่ฮอตฮิตที่สุดในรินาซิตาตอนนี้ด้วยเกมเพลย์ที่สมจริงและเป็นมิตรกับมือใหม่! ถ้าเข้าร่วมชมรมเราตอนนี้ คุณจะได้รับแพ็กเริ่มต้นรุ่นลิมิเต็ดด้วยนะ",
+                "zh-Hans": "《荣耀之丘》可是黎那汐塔目前最火的游戏哦，轻松好玩易上手！现在加入同好会，就送限量版初始套牌。",
+                "zh-Hant": "《榮耀之丘》可是黎那汐塔目前最夯的遊戲喔，輕鬆好玩易上手！現在加入同好會，就送限量版初始套牌。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Außerdem eignet es sich wunderbar, um Echo-Taktiken und das Verhalten von Tacet-Dissonanzen zu simulieren. Wenn du das Spiel beherrschst, werden deine Dissertation und Forschungsberichte zum Kinderspiel!",
+                "en": "On top of that, it's a great way to simulate Echo tactics and Tacet Discord behavior. Master the game, and writing your thesis and research reports will be a breeze!",
+                "es": "Además, es una excelente forma de simular tácticas de Ecos y comportamientos de Disonancias Tácitas. ¡Si dominas el juego, escribir tu tesis de investigación será pan comido!",
+                "fr": "Et en plus, c'est très utile pour simuler les tactiques d'Écho et les comportements des Tacets Discords. Maîtrise le jeu, et ta mémoire et tes rapports de recherches s'écriront tous seuls !",
+                "ja": "それにグローリー・ヒルズは音骸戦術や残像生態のシミュレーションをするのにも役立つから、うまくやれば、論文も研究レポートもスムーズに書けるようになるってわけ！",
+                "ko": "게다가 에코 전술과 잔상 생태 시뮬레이션에도 유용하게 쓸 수 있어서, 마스터하고 나면 논문이나 연구 보고서 작정도 식은 죽 먹기일 거예요",
+                "th": "ยิ่งไปกว่านั้น เกมยังเป็นแพลตฟอร์มจำลองกลยุทธ์เอคโค่และระบบนิเวศทาเซ็ตดิสคอร์ดด้วย ถ้าคุณเล่นเกมนี้จนเซียนแล้ว การเขียนวิทยานิพนธ์และรายงานการวิจัยก็ไม่ใช่เรื่องยาก!",
+                "zh-Hans": "而且它能方便地用于进行声骸战术和残象生态的模拟，精通之后，论文和研究报告也能手到擒来！",
+                "zh-Hant": "而且它能用於進行聲骸戰術和殘象生態的模擬，精通之後，論文和研究報告也會手到擒來！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist „Spitze des Ruhms“?",
+                    "en": "What's Peaks of Prestige?",
+                    "es": "¿Qué es Cumbre Gloriosa?",
+                    "fr": "Qu'est-ce que c'est le Sommet de la gloire ?",
+                    "ja": "{Male=グローリー・ヒルズ？なんだそれ？;Female=グローリー・ヒルズ？なにそれ？}",
+                    "ko": "영광의 언덕이요? 그게 뭐죠?",
+                    "th": "สุดยอดเกียรติภูมิ คืออะไรเหรอ?",
+                    "zh-Hans": "荣耀之丘？那是什么？",
+                    "zh-Hant": "榮耀之丘？那是什麼？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wo habe ich das schon mal gehört …?",
+                    "en": "Now where have I heard that before...?",
+                    "es": "¿Dónde he oído yo hablar de eso?",
+                    "fr": "Ce nom me dit quelque chose…",
+                    "ja": "{Male=どこかで聞いたことがあるな……;Female=どこかで聞いたことがある……}",
+                    "ko": "어디서 많이 들어본 말투인데...",
+                    "th": "ฉันเคยได้ยินชื่อนี้ที่ไหนมาก่อนนะ...?",
+                    "zh-Hans": "似曾相识的话术……",
+                    "zh-Hant": "似曾相識的話術……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe schon mal gespielt.",
+                    "en": "I've played it before.",
+                    "es": "Ya lo he jugado antes.",
+                    "fr": "J'y ai déjà joué.",
+                    "ja": "前にやったことがある。",
+                    "ko": "전에 이 게임을 해본 적 있어요",
+                    "th": "ฉันเคยเล่นมาก่อน",
+                    "zh-Hans": "我之前玩过这个游戏。",
+                    "zh-Hant": "我之前玩過這個遊戲。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du bist also nicht mit dem Spiel vertraut? Dann lass mich dir eine kurze Einführung geben.",
+                "en": "So you're new to the game? Well, allow me to give you a quick intro.",
+                "es": "¿Así que eres {Male=nuevo;Female=nueva} en el juego? Bueno, déjame hacerte una breve introducción.",
+                "fr": "Oh tu ne connais pas ce jeu ? Je vais t'expliquer.",
+                "ja": "やったことないのね……なら、簡単に紹介してあげる。",
+                "ko": "보아하니 이 게임을 안 해보셨군요... 그럼 간단하게 소개해 드릴게요",
+                "th": "คุณไม่เคยเล่นเกมนี้มาก่อนสินะ... เอาล่ะ งั้นจะแนะนำแบบคร่าวๆ ให้ก็แล้วกัน",
+                "zh-Hans": "看来你之前没玩过这款游戏呢……那么，请让我简单介绍一下。",
+                "zh-Hant": "看來你之前沒玩過這款遊戲呢……那麼，請讓我簡單介紹一下。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Spitze des Ruhms“ wurde von Herrn Furius entwickelt. Es ist ein Simulationsspiel, das auf Septimonts Echo-Kämpfen basiert.",
+                "en": "Peaks of Prestige was developed by Mr. Furius. It's a simulation game based on Septimont's Echo battles.",
+                "es": "Cumbre Gloriosa es un juego de simulación basado en las batallas de Ecos de Septimont, desarrollado por el Sr. Furius.",
+                "fr": "Il a été développé par M. Furius. C'est un jeu de simulation basé sur les combats d'Écho de Septimont.",
+                "ja": "『グローリー・ヒルズ』は、フリウスさん開発の、セブン・ヒルズの音骸闘技大会をモチーフにした、音骸対決ゲームのことだよ。",
+                "ko": "『영광의 언덕』은 푸리우스 씨가 개발한, 일곱 언덕의 에코 검투를 모티브로 한 에코 대전 시뮬레이션 게임이에요",
+                "th": "\"สุดยอดเกียรติภูมิ\" เป็นเกมซิมูเลชันที่พัฒนาขึ้นโดยคุณ Furius ซึ่งอิงมาจากการต่อสู้ของเอคโค่แห่งเซปติมอนต์",
+                "zh-Hans": "《荣耀之丘》由富里乌斯先生研发，是一款以七丘声骸角斗为原型的模拟声骸对战游戏。",
+                "zh-Hant": "《榮耀之丘》由富里烏斯先生研發，是一款以七丘聲骸角鬥為原型的模擬聲骸對戰遊戲。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Anders als traditionelle Gladiatorenkämpfe kämpfen die Spieler, die wir „Duellanten“ nennen, nicht direkt gegeneinander.",
+                "en": "Unlike traditional Gladiator matches, the players, we call them \"duelists,\" don't fight in person.",
+                "es": "A diferencia de los enfrentamientos tradicionales entre gladiadores, los jugadores, a los que llamamos «duelistas», no luchan en persona.",
+                "fr": "Contrairement aux combats de gladiateurs, les joueurs, qui sont des « duellistes », ne se battent pas eux-mêmes.",
+                "ja": "闘技と違って、対決者――通称「デュエリスト」は自分で出場して戦う必要はないの。",
+                "ko": "검투와 달리 대전자, 그러니까 우리가 흔히 「결투자」라고 부르는 이들은 직접 전투에 참여할 필요가 없답니다",
+                "th": "การแข่งขันจะต่างไปจากกลาดิเอเตอร์แบบสมัยก่อน ผู้เล่นที่เราเรียกกันว่า \"นักดวล\" ไม่จำเป็นต้องลงไปต่อสู้กันเอง",
+                "zh-Hans": "和角斗不同，对战者——我们一般称之为“决斗家”——不需要亲自参与战斗。",
+                "zh-Hant": "和角鬥不同，對戰者——我們一般稱之為「決鬥家」——不需要親自參與戰鬥。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Stattdessen setzen sie mithilfe ihrer Terminals Aktionskarten ein und befehligen Echos aus vorgegebenen Decks, um andere Duellanten herauszufordern.",
+                "en": "Instead, they use their Terminals to deploy Action Cards and command Echoes from Preset Decks to challenge other duelists.",
+                "es": "En su lugar, usan sus terminales para desplegar cartas de acción y comandar Ecos organizados en mazos preestablecidos para desafiar a otros duelistas.",
+                "fr": "Ils se servent à la place de leurs bornes pour déployer des cartes d'action et commander aux Échos de decks préétablis de défier les autres duellistes.",
+                "ja": "デバイスでカードを操作して、自分で構築した音骸チームを指揮して敵に立ち向かうんだ。",
+                "ko": "대신 단말기에서 명령 카드를 조작하는 방식으로, 미리 구성한 에코 소대로 대전을 진행해요",
+                "th": "แต่เราจะใช้เทอร์มินัลเพื่อวางการ์ดคำสั่งแทน ออกคำสั่งพรีเซ็ตเด็คให้เอคโค่เริ่มต้นลงไปต่อสู้",
+                "zh-Hans": "而是通过在终端操控指令卡的形式，以自己预组的声骸小队进行对战。",
+                "zh-Hant": "而是透過在終端操控指令卡的形式，以自己預組的聲骸小隊進行對戰。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lade einfach die Spielmodule auf dein Terminal herunter, und schon kannst du jederzeit und überall alle herausfordern. Ziemlich praktisch, was?",
+                "en": "Just download the game modules onto your Terminal, and you can challenge anyone, anytime, anywhere. Pretty handy, right?",
+                "es": "Es tan fácil como descargar los componentes del juego en tu terminal y podrás desafiar a cualquiera, en cualquier momento y lugar. Bastante práctico, ¿verdad?",
+                "fr": "Télécharge les composants sur ta borne, et tu pourras défier n'importe qui, de n'importe où, n'importe quand ! Pratique, non ?",
+                "ja": "デバイスにゲーム用モジュールをダウンロードしておけば、いつでも他のプレイヤーとデュエルができるの。どう？便利でしょ。",
+                "ko": "단말기에 게임 컴포넌트를 다운로드하기만 하면 언제 어디서나 다른 플레이어와 대결할 수 있답니다. 어때요, 정말 편하죠?",
+                "th": "เพียงแค่ดาวน์โหลดตัวเกมลงในเทอร์มินัล คุณก็จะสามารถท้าทายผู้เล่นคนอื่นได้ทุกที่ ทุกเวลา สะดวกดีใช่มั้ยล่ะ?",
+                "zh-Hans": "只要在终端里下载游戏组件，就能随时随地和其他玩家开始对决。怎么样，是不是很方便？",
+                "zh-Hant": "只要在終端裡下載遊戲組件，就能隨時隨地和其他玩家開始對決。怎麼樣，是不是很方便呢？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sobald wir im Übungskampf sind, gehe ich näher auf die Details ein.",
+                "en": "I'll get into the nitty-gritty details once we're in the tutorial match.",
+                "es": "Entraré en detalles más específicos cuando estemos en el enfrentamiento del tutorial.",
+                "fr": "Je rentrerai plus dans les détails quand nous serons dans le match tutoriel.",
+                "ja": "詳しいことは、あとでチュートリアルの時に説明するね。",
+                "ko": "더 자세한 내용은 잠시 후 튜토리얼 대전 때 소개해 드릴게요",
+                "th": "ไว้ถ้าเราแข่งแมตช์สอนเล่นแล้วเดี๋ยวฉันจะบอกรายละเอียดยิบย่อยอีกที",
+                "zh-Hans": "更多的细节，稍后在教学对战的时候再向你介绍吧。",
+                "zh-Hant": "更多的細節，稍後在教學對戰的時候再向你介紹吧。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hm? Das ist das wortwörtliche Werbeskript aus Herrn Furius’ „Spitze des Ruhms“-Handbuch.",
+                "en": "...Huh? Well, it's the exact promo script from Mr. Furius's \"Peaks of Prestige Promotion Manual.\"",
+                "es": "¿Eh? Bueno, es exactamente el guion del «Manual de promoción de Cumbre Gloriosa» del Sr. Furius.",
+                "fr": "Ah oui ? Eh bien, c'est le texte promotionnel tiré du « Manuel promotionnel du Sommet de la gloire » de M. Furius.",
+                "ja": "……えっ？フリウスさんが書いた『グローリー・ヒルズ宣伝用パンフレット』に書いてある宣伝用語だけど。",
+                "ko": "... 어라? 이건 푸리우스 씨가 쓴 『영광의 언덕 홍보 수첩』에 있는 표준 홍보 문구인데요",
+                "th": "...หือ? เอาล่ะ นี่เป็นการแนะนำโปรโมทพื้นฐานตาม \"คู่มือการโปรโมท \"สุดยอดเกียรติภูมิ\"\" ของคุณ Furius",
+                "zh-Hans": "……诶？这是富里乌斯先生撰写的《荣耀之丘推广手册》里写的标准推广用语。",
+                "zh-Hant": "……欸？這是富里烏斯先生撰寫的《榮耀之丘推廣手冊》裡寫的標準推廣用語。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Heißt das, du hast Herrn Furius bereits kennengelernt? In Septimont …? Warte. Goldene Augen. Tacet-Zeichen auf dem Handrücken …",
+                "en": "Does this mean you've met Mr. Furius before? In Septimont...? Wait. Golden eyes. Tacet Mark on the back of the hand...",
+                "es": "¿Eso significa que ya conocías al Sr. Furius? ¿En Septimont? Espera. Ojos dorados... Marca Tácita en el dorso de la mano...",
+                "fr": "Tu as déjà rencontré M. Furius ? À Septimont… ? Une minute… des yeux dorés, une marque taciturne sur le dos de la main…",
+                "ja": "フリウスさんに会ったことがあるの？セブン・ヒルズで？ちょっと待って……金色の瞳に、手の甲の音痕……",
+                "ko": "전에 푸리우스 씨를 만난 적 있나요? 일곱 언덕에서...? 잠깐... 금색 눈동자에, 손등의 성흔...",
+                "th": "หมายความว่าคุณเคยเจอคุณ Furius มาก่อนงั้นเหรอ? ในเซปติมอนต์...? เดี๋ยวนะ... ดวงตาสีทอง เครื่องหมายทาเซ็ตที่หลังมือ...",
+                "zh-Hans": "你之前见过富里乌斯先生吗？在七丘……？等等……金色的眼睛，手背上的声痕……",
+                "zh-Hant": "你之前見過富里烏斯先生嗎？在七丘……？等等……金色的眼睛，手背上的聲痕……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kann das sein …? Du bist doch nicht {Male=der;Female=die} allererste {Male=„Apex-Duellant“;Female=„Apex-Duellantin“} aus Septimont, oder?!",
+                "en": "No way... You're not the legendary first \"Apex Duelist\" from Septimont, are you?!",
+                "es": "¡No puede ser! ¡¿No serás {Male=el legendario primer;Female=la legendaria primera} «Duelista Ápex» de Septimont?!",
+                "fr": "Mais non… Tu es {Male=le;Female=la} célèbre « duelliste suprême » de Septimont, c'est ça ?!",
+                "ja": "あなた、もしかして……あの伝説のセブン・ヒルズの初代「エイペックス・デュエリスト」じゃない！",
+                "ko": "설마 당신이 전설 속 일곱 언덕의 첫 번째 「최고의 결투자」는 아니겠죠!",
+                "th": "คุณคงไม่ใช่ \"นักดวลสูงสุด\" แห่งเซปติมอนต์คนแรกในตำนานใช่มั้ย?!",
+                "zh-Hans": "你不会就是传说中七丘的第一位“巅峰决斗家”吧！",
+                "zh-Hant": "你不會就是傳說中七丘的第一位「巔峰決鬥家」吧！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähem … Entschuldige bitte. Ich hätte nie gedacht, die Legende höchstpersönlich in Lahai-Roi anzutreffen.",
+                "en": "Ahem... Forgive me. I never expected to meet the legend {Male=himself;Female=herself} here in Lahai-Roi.",
+                "es": "*Ejem*, perdona. Nunca me habría imaginado conocer a la leyenda en persona aquí, en Lahai-Roi.",
+                "fr": "Hum… Désolée, je ne m'attendais pas à croiser la légende elle-même ici, à Lahai-Roi.",
+                "ja": "コホコホ……ごめんなさい。まさかラハイロイであの伝説人物に出会えるなんて思わなくて。",
+                "ko": "크흠... 실례했네요. 라하이 로이에서 전설 속의 인물을 만나게 될 줄은 몰랐거든요",
+                "th": "อะแฮ่ม... ขออภัยด้วย ฉันไม่เคยคาดคิดว่าจะได้พบกับตำนานตัวเป็นๆ ที่นี่ในลาไฮรอยมาก่อน",
+                "zh-Hans": "咳咳……失礼了。没想到我能在拉海洛见到传说中的人物。",
+                "zh-Hant": "咳咳……失禮了。沒想到我能在拉海洛見到傳說中的人物。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du erzählst Anita, dass du mit „Spitze des Ruhms“ bestens vertraut und {Male=der Apex-Duellant;Female=die Apex-Duellantin} aus Septimont bist.",
+                "en": "You tell Anita that you're very familiar with Peaks of Prestige, and that you're the \"Apex Duelist\" from Septimont.",
+                "es": "Le cuentas a Anita que conoces muy bien Cumbre Gloriosa y que eres {Male=el;Female=la} «Duelista Ápex» de Septimont.",
+                "fr": "Vous expliquez à Anita que vous connaissez le Sommet de la gloire et que vous êtes {Male=le;Female=la} « duelliste suprême » de Septimont.",
+                "ja": "グローリー・ヒルズのことをよく知っているばかりでなく、セブン・ヒルズの「エイペックス・デュエリスト」であることをアニータに伝えた。",
+                "ko": "아니타에게 『영광의 언덕』을 잘 알고 있으며, 자신이 일곱 언덕의 「최고의 결투자」라고 말한다",
+                "th": "คุณบอก Anita ว่าคุณคุ้นเคยกับ \"สุดยอดเกียรติภูมิ\" อย่างมากและคุณก็คือ \"นักดวลสูงสุด\" จากเซปติมอนต์",
+                "zh-Hans": "你告诉安妮塔，自己很了解《荣耀之丘》，并且是七丘的“巅峰决斗家”。",
+                "zh-Hant": "你告訴安妮塔，自己很了解《榮耀之丘》，並且是七丘的「巔峰決鬥家」。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "W-Wirklich …? Goldene Augen. Tacet-Zeichen auf dem Handrücken … Die Gerüchte sind also wahr!",
+                "en": "R-Really...? Golden eyes. Tacet Mark on the back of the hand.... Just like the rumors said!",
+                "es": "¿De ve-verdad? Ojos dorados... Marca Tácita en el dorso de la mano... ¡Tal y como decían los rumores!",
+                "fr": "V-Vraiment… ? Des yeux dorés, une marque taciturne sur le dos de la main… Comme le disent les rumeurs !",
+                "ja": "ほ、本当なの？金色の瞳に、手の甲の音痕……やっぱり噂通りなのね！",
+                "ko": "저... 정말인가요? 금색 눈동자에, 손등의 성흔... 역시 소문하고 똑같네요!",
+                "th": "จะ...จริงเหรอ...? ดวงตาสีทอง เครื่องหมายทาเซ็ตที่หลังมือ... ตรงกับที่เขาลือกันเป๊ะเลย!",
+                "zh-Hans": "真……真的吗？金色的眼睛，手背上的声痕……果然和传闻中所说的一样！",
+                "zh-Hant": "真……真的嗎？金色的眼睛，手背上的聲痕……果然和傳聞中所說的一樣！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähem … Entschuldige bitte. Ich hätte nie gedacht, die Legende höchstpersönlich in Lahai-Roi anzutreffen.",
+                "en": "Ahem... Forgive me. I never expected to meet the legend {Male=himself;Female=herself} here in Lahai-Roi.",
+                "es": "*Ejem*, perdona. Nunca me habría imaginado conocer a la leyenda en persona aquí, en Lahai-Roi.",
+                "fr": "Hum… Désolée, je ne m'attendais pas à croiser la légende elle-même ici, à Lahai-Roi.",
+                "ja": "コホコホ……失礼。まさかラハイロイであの伝説人物に出会えるなんて。",
+                "ko": "크흠... 실례했네요. 라하이 로이에서 전설 속의 인물을 만나게 될 줄은 몰랐거든요",
+                "th": "อะแฮ่ม... ขออภัยด้วย ฉันไม่เคยคาดคิดว่าจะได้พบกับตำนานตัวเป็นๆ ที่นี่ในลาไฮรอยมาก่อน",
+                "zh-Hans": "咳咳……失礼了。没想到我能在拉海洛见到传说中的人物。",
+                "zh-Hant": "咳咳……失禮了。沒想到我能在拉海洛見到傳說中的人物。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Auf jeden Fall herzlich willkommen im Fanclub!",
+                "en": "In any case, welcome to our fan club!",
+                "es": "En cualquier caso, ¡{Male=bienvenido;Female=bienvenida} a nuestro club de fans!",
+                "fr": "En tout cas, bienvenue dans notre fan club !",
+                "ja": "とにかく、うちの同好会へようこそ！",
+                "ko": "아무튼, 우리 동호회에 온 걸 환영해요",
+                "th": "ยังไงก็ตาม ยินดีต้อนรับสู่ชมรมของเรานะ!",
+                "zh-Hans": "总之，欢迎你加入我们的同好会！",
+                "zh-Hant": "總之，歡迎你加入我們的同好會！"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Moment mal, ich habe gar nicht zugesagt …",
+                    "en": "Wait, I haven't agreed to...",
+                    "es": "Espera, aún no he aceptado...",
+                    "fr": "Eh, je n'ai pas encore accepté…",
+                    "ja": "{Male=待った、まだ参加するとは言ってないだろう……;Female=待って、まだ参加するとは言ってないでしょ……}",
+                    "ko": "잠시만요, 아직 가입하겠다고 한 적 없는데...",
+                    "th": "เดี๋ยว ฉันยังไม่ได้ตอบตกลง...",
+                    "zh-Hans": "等等，我还没说我要……",
+                    "zh-Hant": "等等，我還沒說我要……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Klar. Ich mache bei eurem Club mit.",
+                    "en": "Sure, I'll join your club.",
+                    "es": "Claro que me uniré a vuestro club.",
+                    "fr": "D'accord, je vais me joindre à vous.",
+                    "ja": "分かった、参加する。",
+                    "ko": "알겠어요. 가입할게요",
+                    "th": "แน่นอน ฉันจะเข้าชมรมด้วย",
+                    "zh-Hans": "行吧。我加入。",
+                    "zh-Hant": "行吧。我加入。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Macht nichts. Ich habe dir die Spielmodule bereits geschickt. Selbst wenn du unserem Fanclub nicht beitreten möchtest, kannst du dir so die Zeit zwischen den Vorlesungen gut vertreiben.",
+                "en": "No worries, I've already sent you the game modules. Even if you don't plan on joining our fan club, it's a fun way to kill time between classes.",
+                "es": "No te preocupes, ya te he enviado los componentes del juego. Aunque no te unas a nuestro club de fans, es una forma divertida de pasar el rato entre clases.",
+                "fr": "Ne t'en fais pas, je t'ai déjà envoyé les composants. Même si tu ne rejoins pas le club, c'est sympa d'avoir quelque chose pour tuer le temps entre les cours.",
+                "ja": "大丈夫、大丈夫。もうゲーム用モジュールは送っておいたよ。同好会に参加しなくても、暇なときの息抜きとして楽しむだけでもアリだから。",
+                "ko": "괜찮아요. 이미 게임 컴포넌트를 보내드렸어요. 동호회에 가입하지 않더라도, 방과 후 여가 활동으로 즐기기에 안성맞춤이랍니다",
+                "th": "ไม่ต้องห่วง ฉันส่งตัวเกมไปให้แล้ว ถึงไม่ได้คิดจะเข้าร่วมชมรม อย่างน้อยก็คิดซะว่ามีอะไรเล่นเพลินๆ ตอนเลิกเรียนก็แล้วกัน",
+                "zh-Hans": "没事没事，我已经给你发了游戏组件。就算不加入同好会，仅仅是当成课余的娱乐活动也不错。",
+                "zh-Hant": "沒事沒事，我已經給你發了遊戲組件。就算不加入同好會，僅僅是當成課餘的娛樂活動也不錯。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Klasse! Dann werde ich dir mal die Spielmodule schicken.",
+                "en": "Great! Then I'll go ahead and send you the game modules.",
+                "es": "¡Genial! Entonces, te enviaré los componentes del juego.",
+                "fr": "Génial ! Je t'envoie les composants.",
+                "ja": "そう来なくっちゃ！じゃあゲーム用モジュールを送るね。",
+                "ko": "시원시원하시네요! 그럼 제가 게임 컴포넌트를 보내드릴게요",
+                "th": "เยี่ยมเลย! งั้นเดี๋ยวฉันจะไปส่งตัวเกมให้คุณนะ",
+                "zh-Hans": "爽快！那我就把游戏组件发给你了。",
+                "zh-Hant": "爽快！那我就把遊戲組件發給你了。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens wurde unsere Version von „Spitze des Ruhms“ durch Herrn Furius persönlich genehmigt.",
+                "en": "By the way, our club's version of Peaks of Prestige is personally authorized by Mr. Furius himself.",
+                "es": "Por cierto, la versión de Cumbre Gloriosa de nuestro club está personalmente autorizada por el mismísimo Sr. Furius.",
+                "fr": "C'est M. Furius lui-même qui a approuvé notre version.",
+                "ja": "ちなみに、同好会が使ってるグローリー・ヒルズのモジュールは、フリウスさんから直々に承認されたものなんだ。",
+                "ko": "참고로 동호회에서 사용하는 『영광의 언덕』 컴포넌트는 푸리우스 씨가 친히 승인하신 거랍니다",
+                "th": "ยังไงก็นะ ตัวเกม \"สุดยอดเกียรติภูมิ\" ที่ชมรมของเราเล่นเป็นตัวที่ได้รับอนุญาตจากคุณ Furius เองเลยนะ",
+                "zh-Hans": "顺带一提，同好会所使用的《荣耀之丘》组件得到了富里乌斯先生的亲自授权哦。",
+                "zh-Hant": "順帶一提，同好會所使用的《榮耀之丘》組件得到了富里烏斯先生的親自授權喔。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Neben den grundlegenden Echo-Karten gibt es noch zwei Erweiterungspakete, die noch in der Entwicklung sind: „Kuriositäten“ und „Felder“.",
+                "en": "Besides the basic Echo cards, it also includes two work-in-progress expansion packs—\"Novelties\" and \"Domains.\"",
+                "es": "Además de las cartas básicas de Ecos, también incluye dos paquetes de expansión en desarrollo: «Tesoros» y «Dominios».",
+                "fr": "En plus des cartes Échos standard, il y a aussi deux extensions en cours de développement : « cartes fantaisies » et « domaines ».",
+                "ja": "基礎的な音骸カード以外に、まだテスト中の拡張パック、「秘蔵」と「領域」も二つ搭載されてるんだ。",
+                "ko": "기본 버전의 에코 카드 외에도, 이 컴포넌트 세트에는 아직 테스트 중인 두 가지 확장팩인 「보물」과 「영역」이 설치되어 있어요",
+                "th": "นอกจากการ์ดเอคโค่พื้นฐานแล้ว เซ็ตของเรายังมีแพ็กส่วนขยายที่กำลังทำอยู่อีกสองตัว นั่นคือ \"นวัตกรรมใหม่\" กับ \"โดเมน\"",
+                "zh-Hans": "除了使用基础版本的声骸卡牌外，这套组件还安装了两个尚在测试的扩展包——“奇藏”和“领域”。",
+                "zh-Hant": "除了使用基礎版本的聲骸卡牌外，這套組件還安裝了兩個尚在測試的擴展包——「奇藏」和「領域」。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Benutzeroberfläche wurde von Grund auf neu gestaltet und es gibt eine Reihe brandneuer Karten.",
+                "en": "The interface is completely redesigned, and there are a bunch of brand-new cards.",
+                "es": "La interfaz está completamente rediseñada y hay un montón de cartas nuevas.",
+                "fr": "L'interface a été complètement repensée, et il y a aussi quelques nouvelles cartes.",
+                "ja": "画面も新しくデザインされたのよ。前になかったカードもいくつか収録されてるんだ。",
+                "ko": "컴포넌트 인터페이스도 새롭게 디자인됐고, 새로운 카드도 수록되어 있죠",
+                "th": "พวกนี้จะมีอินเทอร์เฟสผู้ใช้ที่ปรับปรุงและการ์ดใหม่เอี่ยม",
+                "zh-Hans": "组件的界面经过了重新设计，还收录了一些全新的卡牌。",
+                "zh-Hant": "組件的介面經過了重新設計，還收錄了一些全新的卡牌。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der einzige Nachteil ist, dass unsere Version derzeit nicht mit den „Spitze des Ruhms“-Daten anderer Regionen kompatibel ist.",
+                "en": "Only downside is, for now, it's not compatible with Peaks of Prestige data from other regions.",
+                "es": "El único inconveniente es que, por ahora, no es compatible con los datos de Cumbre Gloriosa de otras regiones.",
+                "fr": "Le seul inconvénient, c'est que, pour le moment, le jeu n'est pas compatible avec les données du Sommet de la gloire dans d'autres régions.",
+                "ja": "でもね、まだ他のエリアのグローリー・ヒルズのデータと連携できてないの。",
+                "ko": "다만, 아직은 다른 지역의 『영광의 언덕』 컴포넌트와 데이터 연동이 안 돼요",
+                "th": "แต่น่าเสียดาย ข้อมูลนี้ยังใช้กับตัวเกม \"สุดยอดเกียรติภูมิ\" จากภูมิภาคอื่นไม่ได้ อย่างน้อยก็ในตอนนี้นะ",
+                "zh-Hans": "不过目前为止，它不能和其他地区的《荣耀之丘》组件数据互通。",
+                "zh-Hant": "不過目前為止，它不能和其他地區的《榮耀之丘》組件數據互通。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt interessant.",
+                    "en": "Sounds interesting.",
+                    "es": "No suena nada mal.",
+                    "fr": "Ça a l'air intéressant.",
+                    "ja": "{Male=面白そうなゲームだな。;Female=面白そうなゲームだね。}",
+                    "ko": "꽤 재미있을 것 같네요",
+                    "th": "ฟังดูน่าสนใจดีนี่",
+                    "zh-Hans": "听起来有点意思。",
+                    "zh-Hant": "聽起來有點意思。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Neue Karten? Lass hören.",
+                    "en": "New cards? Tell me more.",
+                    "es": "¿Cartas nuevas? Cuéntame más.",
+                    "fr": "Des nouvelles cartes ?",
+                    "ja": "{Male=新しいカードもあるのか？詳しく聞かせてくれ。;Female=新しいカードもあるの？詳しく聞かせて。}",
+                    "ko": "새로운 카드요? 자세히 알려주실 수 있나요?",
+                    "th": "การ์ดใหม่หรอ? เล่าต่อสิ",
+                    "zh-Hans": "全新卡牌？详细说说？",
+                    "zh-Hant": "全新卡牌？詳細說說？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha, wie wäre es mit einem echten Kampf? Lassen wir das Spiel für sich sprechen.",
+                "en": "Haha, why don't we have a real match and let the game do the show-and-tell?",
+                "es": "¡Ji, ji, ji! ¿Por qué no tenemos un enfrentamiento real y dejamos que el juego hable por sí mismo?",
+                "fr": "Haha, et si on faisait un vrai match pour laisser le jeu te faire une démonstration ?",
+                "ja": "ははっ、私が口で紹介するより、一回デュエルをしたほうがわかりやすいと思うけど。",
+                "ko": "하하, 백문이 불여일견이죠. 실전을 통해 직접 배우는 게 더 빠를 거예요",
+                "th": "ฮ่าๆ ทำไมเราไม่ลองเจอกันสักแมตช์จริงๆ แล้วให้เกมเป็นตัวตัดสินดูล่ะ?",
+                "zh-Hans": "哈哈，比起干巴巴的介绍，还是实战更直接一些。",
+                "zh-Hant": "哈哈，比起乾巴巴的介紹，還是實戰更直接一些。"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm, {PlayerName}. Suchen wir einen Gegner für dich.",
+                "en": "I'll find you an opponent—right this way, {PlayerName}.",
+                "es": "Te buscaré un oponente. Por aquí, {PlayerName}.",
+                "fr": "Je vais te trouver un adversaire, viens {PlayerName}.",
+                "ja": "対戦相手を紹介してあげるよ。こっちに来て、{PlayerName}さん。",
+                "ko": "상대를 배정해 드릴게요. 이쪽으로 오세요, {PlayerName}",
+                "th": "เดี๋ยวฉันจะหาคนมาเป็นคู่แข่งให้นะ เชิญทางนี้ {PlayerName}",
+                "zh-Hans": "让我来为你安排一个对手——请来这边，{PlayerName}同学。",
+                "zh-Hant": "讓我來為你安排一個對手——請來這邊，{PlayerName}同學。"
+              },
+              "id": 26,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700003,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -53050,
+                    "y": -539640,
+                    "z": 35201
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_V3.0BVB引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Entschuldige, {Male=lieber Kommilitone;Female=liebe Kommilitonin}!",
+                "en": "Excuse me, fellow student!",
+                "es": "¡Disculpa, {Male=compañero;Female=compañera} de clase!",
+                "fr": "Hey, salut camarade !",
+                "ja": "そこのあなた！",
+                "ko": "안녕하세요!",
+                "th": "สวัสดี อยากร่วมชมรมเรามั้ย!",
+                "zh-Hans": "你好，这位同学！",
+                "zh-Hant": "同學，你好！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Darf ich dir unseren Fanclub vorstellen?",
+                "en": "Can I interest you in our fan club?",
+                "es": "¡Igual te interesa nuestro club de fans!",
+                "fr": "Est-ce que ça te dirait de rejoindre notre fan club ?",
+                "ja": "うちの同好会に興味はない？",
+                "ko": "우리 동호회에 대해 한번 알아보시겠어요?",
+                "th": "ฉันขอแนะนำชมรมของเราหน่อยได้ไหม?",
+                "zh-Hans": "要了解一下我们的同好会吗？",
+                "zh-Hant": "要了解一下我們的同好會嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde den Gegner, den Anita für dich ausgewählt hat.",
+        "en": "Find the opponent Anita arranged for you",
+        "es": "Encuentra al oponente que Anita ha preparado para ti.",
+        "fr": "Trouver l'adversaire dont Anita vous a parlé",
+        "ja": "アニータが手配した対戦相手を探す",
+        "ko": "아니타가 당신을 위해 준비한 상대 찾기",
+        "th": "ค้นหาคู่ต่อสู้ที่ Anita จัดหาให้คุณ",
+        "zh-Hans": "寻找安妮塔为你安排的对手",
+        "zh-Hant": "尋找安妮塔為你安排的對手"
+      },
+      "entities": [
+        {
+          "entityId": 192700010,
+          "mapId": 906,
+          "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+          "areaId": 36170,
+          "position": {
+            "x": -46301,
+            "y": -538751,
+            "z": 35233
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 192700011,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+          "areaId": 36170,
+          "position": {
+            "x": -46350,
+            "y": -538821,
+            "z": 35233
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V3.0BVB引导任务",
+          "flowIndex": 1,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Anita! Endlich bist du zurück …",
+                "en": "Anita! You're finally back...",
+                "es": "¡Anita! Por fin has vuelto...",
+                "fr": "Ah, Anita ! Te revoilà enfin…",
+                "ja": "アニータ会長！やっと帰ってきたんですね……",
+                "ko": "아니타 회장님! 드디어 돌아오셨군요...",
+                "th": "Anita! เธอกลับมาแล้ว...",
+                "zh-Hans": "安妮塔会长！你终于回来了……",
+                "zh-Hant": "安妮塔會長！你終於回來了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700242,
+                "name": {
+                  "zh-Hans": "阿希尔德"
+                },
+                "entity": {
+                  "entityId": 192700011,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46350,
+                    "y": -538821,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sei nicht so hibbelig, Ashild.",
+                "en": "Don't be so jittery, Ashild.",
+                "es": "No te pongas nerviosa, Ashild.",
+                "fr": "Détends-toi, Ashild.",
+                "ja": "そんなに慌てないでよ、オーシルド。",
+                "ko": "그렇게 허둥대지 마, 애쉴드",
+                "th": "ไม่ต้องตกใจขนาดนั้นก็ได้... Ashild",
+                "zh-Hans": "别这么慌慌张张的，阿希尔德。",
+                "zh-Hant": "別這麼慌慌張張的，阿希爾德。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tut mir leid. Wer ist das, Anita?",
+                "en": "Oh... Sorry. Who's this, Anita?",
+                "es": "Oh... perdón. ¿Quién es, Anita?",
+                "fr": "Pardon… Oh, qui c'est, Anita ?",
+                "ja": "あっ……ごめんなさい、失礼しました。会長、そちらは……？",
+                "ko": "아... 죄송해요, 실례했네요. 회장님, 이 분은...?",
+                "th": "โอ้... ขอโทษนะ นี่ใครเหรอ Anita?",
+                "zh-Hans": "啊……抱歉，失礼了。会长，这位同学是……？",
+                "zh-Hant": "啊……抱歉，失禮了。會長，這位同學是……？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700242,
+                "name": {
+                  "zh-Hans": "阿希尔德"
+                },
+                "entity": {
+                  "entityId": 192700011,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46350,
+                    "y": -538821,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin {PlayerName}.",
+                    "en": "My name's {PlayerName}.",
+                    "es": "Mi nombre es {PlayerName}.",
+                    "fr": "Je m'appelle {PlayerName}.",
+                    "ja": "{PlayerName}{Male=だ。;Female=よ。}",
+                    "ko": "제 이름은 {PlayerName}입니다",
+                    "th": "ฉันชื่อ {PlayerName}",
+                    "zh-Hans": "我叫{PlayerName}。",
+                    "zh-Hant": "我叫{PlayerName}。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin neu im Club.",
+                    "en": "I'm a new club member.",
+                    "es": "Soy {Male=nuevo;Female=nueva} en el club.",
+                    "fr": "Je viens de rejoindre le club.",
+                    "ja": "{Male=新メンバーだ。;Female=新メンバーだよ。}",
+                    "ko": "새로 가입한 회원입니다",
+                    "th": "ฉันเป็นสมาชิกชมรมคนใหม่",
+                    "zh-Hans": "我是新加入的会员。",
+                    "zh-Hant": "我是新加入的會員。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "{PlayerName} hat großes Potenzial. Ich habe das Gefühl, dass {Male=er;Female=sie} unsere Geheimwaffe gegen die Professoren sein könnte.",
+                "en": "{PlayerName} has serious duelist potential. I've got a feeling {Male=he's;Female=she's} our secret weapon against the professors.",
+                "es": "{PlayerName} tiene un gran potencial como duelista. Tengo la sensación de que será nuestra arma secreta contra los profesores.",
+                "fr": "{PlayerName} a un très fort potentiel de duelliste. Je sens qu'{Male=il;Female=elle} sera notre arme secrète face aux professeurs.",
+                "ja": "{PlayerName}さんは、とんでもないデュエリストなのよ。私の勘が囁いてる――この人こそ、先生たちに対抗するための最後の希望になるって。",
+                "ko": "{PlayerName}(은)는 아주 잠재력 있는 결투자야, 훗날 선생님들에게 맞설 우리의 마지막 희망이 될 거란 예감이 들어",
+                "th": "{PlayerName} ดูมีทรงที่จะเป็นนักดวลที่มีความสามารถ ฉันรู้สึกได้ว่า{Male=เขา;Female=เธอ}คือความหวังสูงสุดที่จะเอาชนะศาสตราจารย์ได้",
+                "zh-Hans": "{PlayerName}可是很有潜力的决斗家，我有种预感，{TA}之后会成为我们对抗老师们的终极希望哦。",
+                "zh-Hant": "{PlayerName}可是很有潛力的決鬥家，我有種預感，{TA}之後會成為我們對抗老師們的終極希望喔。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was sagst du da …? Gegen die Professoren?",
+                    "en": "Wait... Against the professors?",
+                    "es": "Espera... ¿contra los profesores?",
+                    "fr": "Euh, contre les professeurs ?",
+                    "ja": "{Male=ちょっと待て、先生たちに対抗するって言うのは……？;Female=ちょっと待ってよ、先生たちに対抗するって言うのは……？}",
+                    "ko": "잠깐만요... 선생님들에게 맞선다고요?",
+                    "th": "เดี๋ยวนะ... เอาชนะศาสตราจารย์งั้นเหรอ?",
+                    "zh-Hans": "等等……对抗老师们？",
+                    "zh-Hant": "等等……對抗老師們？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "… Geheimwaffe?",
+                    "en": "...Secret weapon?",
+                    "es": "¿Arma secreta?",
+                    "fr": "Votre arme secrète… ?",
+                    "ja": "……最後の希望？",
+                    "ko": "... 마지막 희망이라니요?",
+                    "th": "...ความหวังสูงสุด?",
+                    "zh-Hans": "……终极希望？",
+                    "zh-Hant": "……終極希望？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ach? Hast du es noch nicht gehört, {PlayerName}? Die Professoren wollen unseren Club auflösen …",
+                "en": "Oh? You haven't heard, {PlayerName}? The professors are trying to shut us down...",
+                "es": "¿Ah? ¿No lo sabías, {PlayerName}? Los profesores están intentando cancelar nuestro grupo...",
+                "fr": "Oh, tu n'es pas au courant {PlayerName} ? Les profs veulent dissoudre le fan club…",
+                "ja": "えっ？{PlayerName}さん、何も聞いてないんですか？私たちの同好会は……もうすぐ、先生たちに廃部にされちゃうかもしれないんです。",
+                "ko": "에? {PlayerName} 혹시 아직 모르시나요? 우리 동호회는 조만간 선생님들에 의해 폐지될지도 몰라서요...",
+                "th": "โอ้ คุณไม่เคยได้ยินมาก่อนเหรอ {PlayerName}? ศาสตราจารย์พยายามหาทางยุบชมรมของเรา...",
+                "zh-Hans": "诶？{PlayerName}还不知道吗？我们的同好会说不定很快就要被老师们撤销了……",
+                "zh-Hant": "欸？{PlayerName}還不知道嗎？我們的同好會說不定很快就要被老師們撤銷了……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700242,
+                "name": {
+                  "zh-Hans": "阿希尔德"
+                },
+                "entity": {
+                  "entityId": 192700011,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46350,
+                    "y": -538821,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähem … Schon gut, Ashild. Darüber können wir später reden.",
+                "en": "Ahem... All right, Ashild. We can talk about that later.",
+                "es": "*Ejem*... Muy bien, Ashild. Podemos hablar de eso más tarde.",
+                "fr": "Oui bon, Ashild… On peut parler de ça plus tard.",
+                "ja": "……コホン、まあまあ、オーシルド。同好会についての話は後でするから。",
+                "ko": "... 크흠, 됐어 됐어, 애쉴드. 동호회 사정은 이따가 다시 얘기하자",
+                "th": "อะแฮ่ม... เอาล่ะ Ashild ไว้คุยเรื่องนี้กันทีหลัง",
+                "zh-Hans": "……咳咳，好了好了，阿希尔德。同好会的情况一会再说吧。",
+                "zh-Hant": "……咳咳，好了好了，阿希爾德。同好會的情況一會再說吧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So schnell macht der Club nicht dicht. Lass uns fürs Erste das Duellieren genießen, und nicht den Teufel an die Wand malen.",
+                "en": "The club won't be going anywhere anytime soon. For now, let's just enjoy dueling instead of worrying about what-ifs.",
+                "es": "El club no va a desaparecer por ahora. Así que disfrutemos de los duelos en lugar de preocuparnos por suposiciones.",
+                "fr": "Le club n'est pas près de disparaître. Pour le moment, profitons des duels sans nous soucier de ça.",
+                "ja": "同好会はまだちゃんとあるんだし、まずはデュエルを思いっきり楽しまなきゃ！まだ起こってもいないことを、いちいち心配してる場合じゃないわ。",
+                "ko": "동호회가 존재하는 한, 다들 쓸데없는 걱정을 하기보다는 결투의 즐거움을 만끽해야지",
+                "th": "ชมรมจะไม่ยุบไปไหนเร็วๆ นี้หรอก แทนที่จะไปกังวลเรื่องที่ยังไม่เกิดขึ้น เรามาสนุกกับการดวลกันก่อนดีกว่า",
+                "zh-Hans": "既然同好会还在，那大家就应该先尽情享受决斗的乐趣，而不是考虑那些虚无缥缈的事儿。",
+                "zh-Hant": "既然同好會還在，那大家就應該先盡情享受決鬥的樂趣，而不是考慮那些虛無縹緲的事。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "A-Aber …",
+                "en": "B-But...",
+                "es": "Pe-pero...",
+                "fr": "M-Mais…",
+                "ja": "で、でも……",
+                "ko": "하, 하지만...",
+                "th": "ตะ...แต่ว่า...",
+                "zh-Hans": "可、可是……",
+                "zh-Hant": "可、可是……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700242,
+                "name": {
+                  "zh-Hans": "阿希尔德"
+                },
+                "entity": {
+                  "entityId": 192700011,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46350,
+                    "y": -538821,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Willst du gegen {PlayerName} antreten, Ashild? Halt dich nicht zurück. {Male=Er;Female=Sie} weiß sich zu wehren.",
+                "en": "Mind going up against {PlayerName}, Ashild? Give it everything you got. {Male=He's;Female=She's} no pushover.",
+                "es": "¿Te apetece enfrentarte a {PlayerName}, Ashild? Dale con todo lo que tienes. No te cortes.",
+                "fr": "Tu pourrais affronter {PlayerName}, Ashild ? Ne retiens pas tes coups, ce n'est pas {Male=un débutant;Female=une débutante}.",
+                "ja": "早速だけど、オーシルド、{PlayerName}さんの相手をお願い。全力でかかってね、この人強いんだから。",
+                "ko": "네가 {PlayerName}의 상대가 되어 줘, 애쉴드. 전력을 다해, {PlayerName}(은)는 꽤 강하니까",
+                "th": "สนใจจะวัดกับ {PlayerName} หน่อยมั้ย Ashild? ใส่สุดเต็มที่ได้เลย {Male=เขา;Female=เธอ}ฝีมือตึงอยู่เหมือนกันนะ",
+                "zh-Hans": "麻烦你来当{PlayerName}的对手，阿希尔德。使出全力就行，{TA}可是很强的。",
+                "zh-Hant": "麻煩你來當{PlayerName}的對手，阿希爾德。使出全力就行，{TA}可是很強的。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… In Ordnung. Also dann … möge {Male=der bessere Duellant;Female=die bessere Duellantin} gewinnen, {PlayerName}!",
+                "en": "...Okay. Well... May the better duelist win, {PlayerName}!",
+                "es": "Vale. Bueno... ¡Que gane {Male=el;Female=la} mejor duelista, {PlayerName}!",
+                "fr": "D'accord… Bon, que {Male=le meilleur;Female=la meilleure} gagne {PlayerName} !",
+                "ja": "……分かりました。それでは……よろしくお願いしますね、{PlayerName}さん！",
+                "ko": "... 알겠어요. 그럼... 잘 부탁드려요, {PlayerName}!",
+                "th": "...โอเค เอาล่ะ... ขอให้นักดวลที่เก่งกว่าเป็นผู้ชนะ {PlayerName}!",
+                "zh-Hans": "……好吧。那……请多指教，{PlayerName}！",
+                "zh-Hant": "……好吧。那……請多指教，{PlayerName}！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700242,
+                "name": {
+                  "zh-Hans": "阿希尔德"
+                },
+                "entity": {
+                  "entityId": 192700011,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46350,
+                    "y": -538821,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 192700010,
+          "mapId": 906,
+          "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+          "areaId": 36170,
+          "position": {
+            "x": -46301,
+            "y": -538751,
+            "z": 35233
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 192700011,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+          "areaId": 36170,
+          "position": {
+            "x": -46350,
+            "y": -538821,
+            "z": 35233
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V3.0BVB引导任务",
+          "flowIndex": 1,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Das war’s. Also, was denkst du, Ashild?",
+                "en": "—Game. So, what do you think, Ashild?",
+                "es": "Partida terminada. Entonces, ¿qué te parece, Ashild?",
+                "fr": "Et voilà. Alors, qu'en dis-tu Ashild ?",
+                "ja": "――はい、そこまで。どうだった、オーシルド？",
+                "ko": "좋아, 여기까지. 어때, 애쉴드?",
+                "th": "...พอแค่นี้ก่อน คิดว่าไงบ้างล่ะ Ashild?",
+                "zh-Hans": "——好，到此为止吧。感觉怎么样，阿希尔德？",
+                "zh-Hant": "——好，到此為止吧。感覺怎麼樣，阿希爾德？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du … du hast es echt drauf. Kein Wunder, dass Anita dich ausgewählt hat. Wenn jemand die Professoren aufhalten kann, dann du, {PlayerName}.",
+                "en": "You... you're something else. No wonder Anita picked you. If anyone has a chance of stopping the professors, it's you, {PlayerName}.",
+                "es": "Tienes... algo especial. Con razón Anita te eligió. Si alguien puede parar a los profesores, eres tú, {PlayerName}.",
+                "fr": "T'es… sacrément balèze… Pas étonnant qu'Anita t'ait {Male=choisi;Female=choisie}. Si quelqu'un peut arrêter les profs, ça sera toi {PlayerName}.",
+                "ja": "つ……強い、さすがはアニータ会長が連れて来た人ですね。{PlayerName}さんなら、もしかしたら本当に先生たちを止められるかも……",
+                "ko": "저... 정말 강하시네요, 역시 아니타 회장님이 선택한 분다워요. {PlayerName}(이)라면, 어쩌면 정말 선생님들을 막을 수 있을지도...",
+                "th": "คุณ... ไม่ธรรมดาเลย เข้าใจแล้วว่าทำไม Anita ถึงเลือกคุณ ถ้าจะมีใครสักคนหยุดศาสตราจารย์ได้ ก็ต้องเป็น {PlayerName} นี่แหละ",
+                "zh-Hans": "好……好强，不愧是安妮塔会长所选中的人。如果是{PlayerName}的话，没准真的能够阻止老师们……",
+                "zh-Hant": "好……好強，不愧是安妮塔會長所選中的人。如果是{PlayerName}的話，說不定真的能夠阻止老師們……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700242,
+                "name": {
+                  "zh-Hans": "阿希尔德"
+                },
+                "entity": {
+                  "entityId": 192700011,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46350,
+                    "y": -538821,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erfahre ich jetzt endlich, was wirklich mit dem Fanclub los ist?",
+                "en": "...Now will you tell me what's really going on with the fan club?",
+                "es": "¿Me contarás ahora qué pasa realmente con el club de fans?",
+                "fr": "Et maintenant, vous allez me dire ce qui se passe avec le club ?",
+                "ja": "{Male=……同好会にいったい何があったんだ？;Female=……同好会にいったい何があったの？}",
+                "ko": "... 동호회에 대체 무슨 일이 생긴 거죠?",
+                "th": "... ทีนี้พอจะบอกหน่อยได้มั้ยว่าเกิดอะไรขึ้นกับชมรมกันแน่?",
+                "zh-Hans": "……同好会到底出了什么事？",
+                "zh-Hant": "……同好會到底出了什麼事？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach, bloß eine administrative Spitzfindigkeit, das ist alles. Ein paar Professoren haben … gewisse Vorbehalte uns gegenüber. Kurz gesagt: Sie wollen, dass ich den Fanclub auflöse.",
+                "en": "Oh, just a minor administrative hiccup, that's all. A few professors have some... well, mild opinions about us. Long story short, they want me to disband the fan club.",
+                "es": "Ah, solo es un problemilla administrativo, nada más. Algunos profesores tienen... digamos, cierta reticencia hacia nosotros. Que quieren disolver el club de fans, vaya.",
+                "fr": "Oh, rien qu'un petit problème administratif. Quelques professeurs sont, disons, peu enthousiasmés par notre club. Pour faire court, ils veulent que je le dissolve.",
+                "ja": "ああ、ちょっと運営上の問題があっただけなの。何人かの先生が、私たちに……その、ちょっとした不満を抱いてるだけよ。まあ、簡単に言うと、私にこの同好会を解散させろって言ってるの。",
+                "ko": "아, 운영상 약간의 문제가 생겼을 뿐이에요. 몇몇 선생님이 우리한테 좀... 으음, 작은 불만이 있으시거든요. 간단히 말해서, 이 동호회를 해체시키려고 해요",
+                "th": "โอ้ ก็แค่ปัญหานิดหน่อยในการทำชมรมแค่นั้นเอง มีศาสตราจารย์บางคน... แบบว่า แสดงความคิดเห็นนิดหน่อยเกี่ยวกับพวกเรา สรุปสั้นๆ ก็คือ พวกเขาอยากให้ฉันยุบชมรมน่ะ",
+                "zh-Hans": "哦，只是运营上出了点小问题而已。有几位老师对我们有点……呃，小意见，简单来说，他们打算让我解散这个同好会。",
+                "zh-Hant": "只是營運上出了點小問題而已。有幾位老師對我們有點……呃，小意見，簡單來說，他們打算讓我解散這個同好會。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das klingt nach mehr als bloß „gewissen Vorbehalten“.",
+                    "en": "That doesn't sound like a \"mild opinion.\"",
+                    "es": "Eso no suena a «cierta reticencia».",
+                    "fr": "Ça a l'air plus sérieux qu'un manque d'enthousiasme.",
+                    "ja": "{Male=多分「ちょっとした不満」程度じゃないよな……;Female=多分「ちょっとした不満」程度じゃないよね……}",
+                    "ko": "「작은 불만」 수준이 아닌 것 같은데요",
+                    "th": "ฟังดูไม่ค่อยเหมือน \"แสดงความคิดเห็นนิดหน่อย\"",
+                    "zh-Hans": "听起来可不是什么“小意见”。",
+                    "zh-Hant": "聽起來可不是什麼「小意見」。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ist es ernst?",
+                    "en": "It's that serious?",
+                    "es": "¿Tan grave es?",
+                    "fr": "À ce point-là ?",
+                    "ja": "{Male=……かなり深刻な状況じゃないか？;Female=……かなり深刻な状況じゃない？}",
+                    "ko": "... 그렇게 심각한가요?",
+                    "th": "มันร้ายแรงขนาดนั้นเลยหรอ?",
+                    "zh-Hans": "……这么严重？",
+                    "zh-Hant": "……這麼嚴重？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Eigentlich ist es nur Professor Calith, der den Club abschaffen möchte. Die anderen haben vermutlich ihre eigenen Gründe, aber ihr Ziel ist dasselbe.",
+                "en": "Actually, it's really just Professor Calith who wants the club gone. The others probably have their own reasons, but they all ended up on the same side.",
+                "es": "En realidad, solo es el profesor Calith quien quiere hacer desaparecer el club. Supongo que los demás tendrán sus propias opiniones, pero por ahora, todos se han puesto de su lado.",
+                "fr": "À vrai dire, c'est surtout professeur Calith qui veut voir le club disparaître. Les autres ont sûrement leurs raisons, mais ils sont tous du même avis maintenant.",
+                "ja": "実は、同好会を本気で解散させようとしてるのはカリト先生だけなの。他の先生たちはそれぞれ思惑があって、たまたま目的が一致しただけ。",
+                "ko": "사실, 진짜로 동호회를 해체하고 싶어 하는 건 칼리스 선생님뿐이에요. 다른 선생님들은 아마 다른 꿍꿍이가 있었을 텐데, 마침 목적이 일치했을 뿐이겠죠",
+                "th": "อันที่จริงก็มีแค่ศาสตราจารย์ Calith นี่แหละที่อยากให้ชมรมถูกยุบ คนอื่นก็มีเหตุผลของตัวเอง แต่สุดท้ายก็ยังอยู่ข้างเรา",
+                "zh-Hans": "其实，真正想要同好会解散的也只有卡利斯老师，其他老师应该是有别的打算，只是恰好目的一致而已。",
+                "zh-Hant": "其實，真正想要同好會解散的也只有卡利斯老師，其他老師應該是有別的打算，只是恰好目的一致而已。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Seit seiner Rückkehr von einer Reise nach Septimont ist er überzeugt, dass „Spitze des Ruhms“ einen schlechten Einfluss hat. Er glaubt, dass wir alle durchfallen werden, weil wir zu fixiert auf das Duellieren sind.",
+                "en": "Ever since he returned from a trip to Septimont, he's convinced that playing Peaks of Prestige is a bad idea. Thinks we're all going to start flunking because we're too obsessed with dueling.",
+                "es": "Desde que regresó de un viaje a Septimont, está convencido de que jugar a Cumbre Gloriosa es mala idea. Cree que vamos a empezar a suspender por estar demasiado obsesionados con los duelos.",
+                "fr": "Depuis qu'il est revenu d'un voyage à Septimont, il est convaincu que jouer au Sommet de la gloire est une mauvaise idée. Il pense qu'on va tous décrocher si on passe notre temps à faire des duels.",
+                "ja": "カリト先生は、セブン・ヒルズの出張から帰ってきたら、グローリー・ヒルズをやるとデュエルにハマって学業がおろそかになると思い込むようになったの。",
+                "ko": "아마 그분은 일곱 언덕으로 출장을 다녀온 뒤로, 『영광의 언덕』을 플레이하는 건 학업 태만이고, 다들 결투에 푹 빠져서 학업을 망칠 거라고 굳게 믿게 된 모양이에요",
+                "th": "ตั้งแต่ที่เขากลับมาจากทริปที่เซปติมอนต์ เขาก็พยายามโน้มน้าวว่าการเล่น \"สุดยอดเกียรติภูมิ\" เป็นไอเดียที่ไม่ดีเลย คิดว่าพวกเราจะเสียการเรียนเพราะเอาแต่หมกมุ่นกับการดวล",
+                "zh-Hans": "他好像从七丘出差回来之后，就坚定地认为玩《荣耀之丘》属于不务正业，会导致大家沉迷决斗，从而荒废学业。",
+                "zh-Hant": "他好像從七丘出差回來之後，就堅定地認為玩《榮耀之丘》屬於不務正業，會導致大家沉迷決鬥，從而荒廢學業。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Naja … ganz unrecht hat er da nicht.",
+                    "en": "I mean... he's not entirely wrong.",
+                    "es": "La verdad es que tampoco va muy desencaminado...",
+                    "fr": "Eh bien… Il n'a pas tout à fait tort.",
+                    "ja": "確かに……{Male=一理あるとは思うが……;Female=一理あるとは思うけど……}",
+                    "ko": "듣고 보니... 나름 일리 있는 말이네요",
+                    "th": "ก็มีเหตุผลอยู่นะ",
+                    "zh-Hans": "好像……也有道理。",
+                    "zh-Hant": "好像……也有道理。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Und der echte Grund?",
+                    "en": "What's the real reason?",
+                    "es": "¿Cuál es la verdadera razón?",
+                    "fr": "Mais quelle est la vraie raison ?",
+                    "ja": "{Male=実際はどうなんだ？;Female=実際はどうなの？}",
+                    "ko": "실제로는 어떤가요?",
+                    "th": "แล้วเหตุผลที่แท้จริงล่ะ?",
+                    "zh-Hans": "实际上呢？",
+                    "zh-Hant": "實際上呢？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Tatsächlich haben wir eine Regel im Fanclub: Wenn sich deine Noten verschlechtern, weil du zu viel Zeit mit Duellen verbringst, fliegst du raus.",
+                "en": "...In reality, we have a rule in our fan club: If your grades slip because you're spending too much time dueling, you'll be kicked out.",
+                "es": "Pues que sepas que tenemos una norma en el club: si tus notas bajan por pasar demasiado tiempo haciendo duelos, significa expulsión inmediata.",
+                "fr": "En réalité, nous avons une règle au club : ceux qui passent trop de temps à jouer et dont les notes baissent trop sont expulsés.",
+                "ja": "……実は同好会にはルールがあって、もしメンバーがデュエルに夢中になりすぎて成績が下がった場合は、同好会から除名されることになっているの。",
+                "ko": "... 실제로는 동호회 내부에 규정이 있어요. 만약 동호회 회원이 결투에 푹 빠져서 성적이 떨어지게 되면, 그 회원은 동호회에서 제명돼요",
+                "th": "มีกฏอยู่ข้อนึงในชมรมของเรา ถ้าเกิดว่าผลการเรียนแย่ลงเพราะใช้เวลาดวลกันมากเกินไปก็จะถูกขับออกจากชมรม",
+                "zh-Hans": "……实际上同好会内部有规定，如果同好会成员因为沉迷决斗而导致成绩下降的话，就会被同好会除名。",
+                "zh-Hant": "……實際上同好會內部有規定，如果同好會成員因為沉迷決鬥而導致成績下降的話，就會被同好會除名。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber keine Sorge. Wir mussten noch nie jemanden rauswerfen. Alle wissen, dass die Ausbildung an erster Stelle steht.",
+                "en": "But don't worry. We've never actually had to kick anyone out. Everyone here gets that school comes first.",
+                "es": "Pero tranqui. Nunca hemos tenido que expulsar a nadie. Todos saben que la escuela va primero.",
+                "fr": "Mais ne t'en fais pas. On n'a jamais eu à le faire. Tout le monde ici sait bien que les cours passent avant tout.",
+                "ja": "まだ一人も除名されてないんだ。だって、みんな学生の本文くらいはわかってるからね。",
+                "ko": "안심하세요, 지금까지 제명된 회원은 한 명도 없어요. 학생의 본분이 뭔지는 다들 잘 알고 있으니까 말이에요",
+                "th": "แต่ไม่ต้องห่วงนะ จนถึงตอนนี้เรายังไม่เคยต้องไล่ใครออกเลย ทุกคนที่นี่เข้าใจว่าตัวเองมีหน้าที่ต้องรับผิดชอบในฐานะนักเรียนอยู่ดี",
+                "zh-Hans": "放心吧， 直到目前为止，还没有除名同好会成员的先例——毕竟，大家都知道作为学生的职责是什么。",
+                "zh-Hant": "放心吧， 直到目前為止，還沒有除名同好會成員的先例——畢竟，大家都知道作為學生的職責是什麼。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedenfalls habe ich eine Wette mit den Professoren abgeschlossen, damit sie uns den Laden nicht dichtmachen.",
+                "en": "Anyway, to stop the professors from disbanding the club, I made a bet with them.",
+                "es": "De todos modos, para evitar que los profesores disolvieran el club, hice una apuesta con ellos.",
+                "fr": "Toujours est-il que pour empêcher les profs de fermer ce club, j'ai fait un pari avec eux.",
+                "ja": "とにかく、同好会が解散されるという最悪の事態を免れるよう、私は先生たちと賭けをしたの。",
+                "ko": "아무튼, 동호회 해체를 막기 위해서 선생님들과 내기를 하나 했어요",
+                "th": "ยังไงซะ ฉันได้พนันกับศาสตราจารย์ไว้เพื่อไม่ให้ชมรมของเราต้องถูกยุบไป",
+                "zh-Hans": "总而言之，为了让同好会免于解散，我和老师们达成了一个赌约。",
+                "zh-Hant": "總而言之，為了讓同好會免於解散，我和老師們達成了一個賭約。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin die „Anführerin“ des Clubs und Calith ist der „Anführer“ der Professoren. Jede Seite wählt Mitglieder für ein Duell aus, und die letzten beiden Übriggebliebenen erhalten die Chance, den Anführer der jeweils anderen Seite herauszufordern.",
+                "en": "I'm the \"leader\" for the club, and Calith is the \"leader\" for the professors. Each side picks members to duel, and the last two standing get a shot at taking us down.",
+                "es": "Yo soy la «líder» del club, y Calith es el «líder» de los profesores. Cada bando elige a sus miembros para batirse en duelo, y así vamos eliminando jugadores hasta llegar a los líderes.",
+                "fr": "Je suis la « cheffe » du club et Calith le « chef » des professeurs. Les chefs choisissent des duellistes qui devront s'affronter, et les deux derniers restants gagnent le droit de nous battre.",
+                "ja": "私とカリト先生がそれぞれ、同好会側と教師側の「リーダー」として、メンバーを選出してデュエルをするの。そして最後に勝ち抜いた2人の勝者が、私と先生に挑む資格を手に入れられるの。",
+                "ko": "저랑 칼리스 선생님이 각각 동호회 측과 교사 측의 「리더」를 맡고, 양측에서 다른 회원들을 내보내 서로 대결하게 하는 거예요. 최후의 승자 두 명이 우리에게 도전할 자격을 얻게 되죠",
+                "th": "ฉันจะเป็น \"หัวหน้า\" ทีมของชมรม แล้วทาง Calith จะเป็น \"หัวหน้า\" ทีมของฝั่งศาสตราจารย์ ทั้งสองทีมจะเลือกสมาชิกไปแข่งดวลกัน แล้วผู้ชนะสองคนจากแต่ละฝั่งจะได้รับสิทธิ์ให้ไปท้าทายอีกฝั่ง",
+                "zh-Hans": "我和卡利斯老师分别担任同好会方和教师方的“领袖”，双方派出其他成员相互挑战，最终的两名胜者将获得挑战我们的资格。",
+                "zh-Hant": "我和卡利斯老師分別擔任同好會方和教師方的「領袖」，雙方派出其他成員相互挑戰，最終的兩名勝者將獲得挑戰我們的資格。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wird der Anführer einer Seite besiegt, bevor die Akademie die Auflösung genehmigt, verliert diese Seite die Wette.",
+                "en": "If a leader gets defeated before the faculty's disbandment request is approved, that side loses the bet.",
+                "es": "Si un líder es derrotado antes de que la solicitud de disolución del profesorado se apruebe, ese bando pierde la apuesta.",
+                "fr": "Si un chef perd avant que la demande de dissolution soit approuvée, son camp perd le pari.",
+                "ja": "先生たちが提出してる解散申請の審査が通る前に、「リーダー」が挑戦者に敗れた場合、その「リーダー」側が負けとなる。",
+                "ko": "선생님들이 제출한 해체 신청 심사가 완료되기 전에, 어느 한쪽의 리더가 도전자에 의해 패배하면, 그쪽이 내기에서 진 걸로 하는 거예요",
+                "th": "ถ้าหัวหน้าฝั่งไหนแพ้ก่อนที่คำขอยุบชมรมได้รับการอนุมัติ ทีมนั้นก็จะแพ้พนันครั้งนี้ไป",
+                "zh-Hans": "如果在老师们递交的解散申请审核完成前，任意一方的领袖被挑战者击败，那么就意味着这一方在赌约中失败了。",
+                "zh-Hant": "如果在老師們遞交的解散申請審核完成前，任意一方的領袖被挑戰者擊敗，那麼就意味著這一方在賭約中失敗了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn wir verlieren oder sie nicht besiegen, bevor der Papierkram erledigt ist … müssen wir den Club auflösen.",
+                "en": "If we lose, or we can't beat them before the paperwork goes through... we can say bye-bye to dueling.",
+                "es": "Es decir, que si perdemos o no logramos vencerlos antes de que acabe la burocracia... podemos despedirnos de los duelos.",
+                "fr": "Si nous perdons ou que nous n'arrivons pas à les vaincre avant que la demande ne soit approuvée… on pourra dire adieu aux duels.",
+                "ja": "もし同好会側が失敗したり、或いは審査が通るまでに教師側の「リーダー」が撃破されてなければ、同好会は解散する羽目になる。",
+                "ko": "만약 동호회가 지거나, 심사가 완료되기 전까지 교사 측을 꺾지 못하면, 우리 동호회는 강제로 해체되는 수밖에 없어요",
+                "th": "ถ้าเราแพ้ หรือเอาชนะศาสตราจารย์ไม่ทันก่อนที่เอกสารจะแล้วเสร็จ ชมรมจะโดนบังคับปิดตัวลง",
+                "zh-Hans": "如果同好会失败，或是没能赶在审核完成前击败教师那一方的话，同好会就只能被迫解散。",
+                "zh-Hant": "如果同好會失敗，或是沒能趕在審核完成前擊敗教師那一方的話，同好會就只能被迫解散。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn wir gewinnen, sind wir fein raus und die Professoren lassen die Angelegenheit fallen.",
+                "en": "But if we win, the professors have to back off and drop the whole thing.",
+                "es": "Pero si ganamos, los profesores tendrán que dar marcha atrás y olvidar todo el asunto.",
+                "fr": "Mais si nous gagnons, les professeurs devront faire machine arrière et abandonner la dissolution.",
+                "ja": "成功したら、先生たちは申請を撤回して、同好会を解散させるのを諦めてもらうの。",
+                "ko": "반대로 우리가 이기면, 선생님들은 해체 신청을 철회하고 동호회 해체를 포기해야 해요",
+                "th": "แต่ถ้าเราชนะ ศาสตราจารย์จะต้องเลิกยุ่งกับชมรมและล้มเลิกความคิดที่จะยุบชมรม",
+                "zh-Hans": "反之，老师们就必须要撤回申请，放弃解散同好会的目标。",
+                "zh-Hant": "反之，老師們就必須要撤回申請，放棄解散同好會的目標。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt unkompliziert.",
+                    "en": "Pretty straightforward.",
+                    "es": "Más claro, agua.",
+                    "fr": "Ça me parait clair.",
+                    "ja": "{Male=実にシンプルなやり方だな。;Female=実にシンプルなやり方だね。}",
+                    "ko": "정말 단순 명쾌한 방식이네요",
+                    "th": "ก็ตรงไปตรงมาดีนะ",
+                    "zh-Hans": "还真是直截了当的方式。",
+                    "zh-Hant": "還真是直截了當的方式。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Interessanter Ansatz …",
+                    "en": "Sounds kind of interesting...",
+                    "es": "Suena muy interesante...",
+                    "fr": "Intéressant…",
+                    "ja": "{Male=なんだか面白そうだな。;Female=なんだか面白そうね。}",
+                    "ko": "꽤 재미있을 것 같은데요...",
+                    "th": "ฟังดูก็น่าสนใจดีนี่...",
+                    "zh-Hans": "听起来还挺有意思……",
+                    "zh-Hant": "聽起來還挺有意思……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das Problem ist nur, dass alle Professoren wahnsinnig stark sind – besonders Professor Calith. Bisher konnte ihn niemand im Club auch nur annähernd schlagen.",
+                "en": "The problem is, all the professors are crazy good, especially Professor Calith. So far, nobody in the club has even come close to beating him.",
+                "es": "El problema es que todos los profesores son increíblemente buenos, especialmente el profesor Calith. Hasta ahora, no ha habido nadie en el club cerca siquiera de vencerlo.",
+                "fr": "Le problème, c'est que tous les professeurs sont super forts, surtout Calith. Pour l'instant, personne du club n'a réussi ne serait-ce qu'à l'effleurer.",
+                "ja": "残念ながら、先生たちはデュエルでもかなりの実力者なの。特にカリト先生なんか、同好会のメンバーじゃ太刀打ちできないくらい強くってさ。",
+                "ko": "유감스럽게도, 선생님들의 결투 실력도 만만치 않아요. 특히 칼리스 선생님은 말할 것도 없죠. 지금까지 우리 동호회에서 그분을 이긴 사람은 아무도 없어요",
+                "th": "ปัญหาก็คือ ศาสตราจารย์ทุกคนเก่งมาก โดยเฉพาะศาสตราจารย์ Calith จนถึงตอนนี้ยังไม่มีใครจากชมรมของเราที่เอาชนะเขาได้เลย",
+                "zh-Hans": "遗憾的是，老师们的决斗水平也很高，尤其是卡利斯老师。直到现在，同好会中还没有人能击败他。",
+                "zh-Hant": "遺憾的是，老師們的決鬥水準也很高，尤其是卡利斯老師。直到現在，同好會中還沒有人能擊敗他。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und hier kommst du ins Spiel … Unser Duell vorhin hat gezeigt, dass meine Intuition richtig war. Du bist {Male=derjenige, der;Female=diejenige, die} die Professoren besiegen und den Club retten kann.",
+                "en": "But then I met you... And that match earlier proved my hunch was right. You're the one who can defeat the professors and save our club.",
+                "es": "Pero entonces llegaste tú, y ese duelo de antes ha constatado que mi corazonada era correcta. Si alguien puede derrotar a los profesores y salvar nuestro club, {Male=ese;Female=esa} eres tú.",
+                "fr": "Mais maintenant, tu es là… Et ce match m'a prouvé que mon instinct disait vrai. Tu es {Male=celui;Female=celle} qui pourra vaincre les professeurs et sauver le club.",
+                "ja": "そんな絶望の中、あなたに出会った……さっきのデュエルで私は確信したんだ。先生を負かして、その手から同好会を救うことのできる人は、あなたなんだって。",
+                "ko": "바로 그때, 당신을 만난 거예요... 방금의 결투로 제 예감이 틀리지 않았다는 게 증명됐어요. 당신이야말로 선생님들을 꺾고, 그들로부터 동호회를 지켜낼 수 있는 사람이에요",
+                "th": "แต่พอฉันได้เจอคุณ... แมตช์ก่อนหน้านั้นพิสูจน์แล้วว่าลางสังหรณ์ฉันไม่ผิด คุณคือคนที่จะเอาชนะศาสตราจารย์และช่วยชมรมของเราไว้ได้",
+                "zh-Hans": "就在这时，我遇到了你……刚才的决斗证明我的预感没错，你就是那个能够击败老师们，从他们手中夺回同好会的人。",
+                "zh-Hant": "就在這時，我遇到了你……剛才的決鬥證明我的預感沒錯，你就是那個能夠擊敗老師們，從他們手中奪回同好會的人。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also gut, ich bin dabei. Wie lautet der Plan?",
+                    "en": "Alright, I'm in. What's the plan?",
+                    "es": "Está bien, me apunto. ¿Cuál es el plan?",
+                    "fr": "Je suis {Male=partant;Female=partante}. Quel est le plan ?",
+                    "ja": "{Male=分かった。俺は何をすればいい？;Female=分かった。私は何をすればいい？}",
+                    "ko": "알겠어요, 전 뭘 하면 되죠?",
+                    "th": "ก็ได้ แล้วฉันต้องทำอะไรบ้าง?",
+                    "zh-Hans": "行吧，我要做什么？",
+                    "zh-Hant": "行吧，我要做什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wenn du Ernst machen willst, fang mit Professor Dennis an.",
+                "en": "If you want to come out swinging, start with Professor Dennis.",
+                "es": "Si quieres empezar con buen pie, comienza con el profesor Dennis.",
+                "fr": "Si tu veux faire fort dès le début, commence par M. Dennis.",
+                "ja": "先生たちに、負けを認めてもらうには、まずデニス先生とデュエルするのがいいと思う。",
+                "ko": "선생님들이 패배를 깨끗이 인정하게 만들고 싶다면, 먼저 데니스 선생님부터 공략하는 걸 추천할게요",
+                "th": "ถ้าอยากชนะแบบขาดลอยล่ะก็ ลองเริ่มจากการดวลกับศาสตราจารย์ Dennis ก็ได้นะ",
+                "zh-Hans": "如果想要让老师们输得心服口服的话，我建议先从丹尼斯老师开始。",
+                "zh-Hant": "如果想要讓老師們輸得心服口服的話，我建議先從丹尼斯老師開始。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er ist für die Disziplin auf dem Campus verantwortlich. Und mit ihm ist nicht gut Kirschen essen.",
+                "en": "He's responsible for managing campus discipline. Total hard-ass, plays everything by the book.",
+                "es": "Es responsable de gestionar la disciplina del campus. Un tipo de lo más estricto, que nunca se salta las reglas.",
+                "fr": "C'est lui qui est responsable de la discipline sur le campus. Un vrai dur à cuire qui joue dans les règles.",
+                "ja": "デニス先生は私たちの生活指導を受け持つ、頭の固い先生なんだ。",
+                "ko": "학생들의 생활 지도를 담당하시는데, 아주 융통성이 없는 분이죠",
+                "th": "เขาเป็นฝ่ายปกครองประจำวิทยาเขต ระเบียบจัดเป๊ะตามตำราทุกอย่าง",
+                "zh-Hans": "他负责督导学生们的日常纪律，是个很古板的人。",
+                "zh-Hant": "他負責督導學生們的日常紀律，是個很古板的人。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Komische ist, dass er offenbar nicht deshalb gegen „Spitze des Ruhms“ ist, weil es „gegen die Regeln“ verstößt. Er muss irgendeinen anderen Grund haben.",
+                "en": "What's weird is that it doesn't seem like he's against Peaks of Prestige because it's \"against the rules.\" He's got some other axe to grind.",
+                "es": "Lo raro es que no se opone a Cumbre Gloriosa solo porque sí. Creo que tiene algún asunto pendiente.",
+                "fr": "Mais il ne semble pas être contre le Sommet de la gloire car ça va « à l'encontre du règlement ». Il a d'autres raisons.",
+                "ja": "でも、グローリー・ヒルズのデュエルが規律違反だと思ってるから、カリト先生の側についたわけじゃないらしいの。",
+                "ko": "한데 이상한 건, 그분은 『영광의 언덕』 결투가 규율 위반이라고 생각해서 칼리스 선생님 편에 선 건 아닌 것 같다는 거예요",
+                "th": "แต่ที่แปลกคือดูเหมือนเขาจะไม่ได้มีปัญหากับเกม \"สุดยอดเกียรติภูมิ\" ด้วยเหตุผลที่ว่า \"ขัดต่อระเบียบ\" แต่เขาอาจจะมีเหตุผลอื่นอยู่",
+                "zh-Hans": "奇怪的是，他似乎并不是因为觉得《荣耀之丘》决斗违反纪律，才加入卡利斯老师那方的。",
+                "zh-Hant": "奇怪的是，他似乎並不是因為覺得《榮耀之丘》決鬥違反紀律，才加入卡利斯老師那方的。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er wird deine Herausforderung auf jeden Fall annehmen. Hol uns den ersten Sieg!",
+                "en": "He'll definitely accept your challenge. Go get us that first win!",
+                "es": "No cabe duda de que aceptará tu desafío. ¡Hazte con la primera victoria!",
+                "fr": "Je suis sûre qu'il relèvera ton défi. Va nous chercher cette première victoire !",
+                "ja": "あなたがデュエルしたいと言えば、デニス先生はきっと断らないはずよ。まずは一勝を飾ろう！",
+                "ko": "그분이라면 분명 흔쾌히 당신의 도전을 받아주실 거예요. 멋지게 첫 승리를 따내 보자고요!",
+                "th": "เขาจะยินดีรับคำท้าของคุณแน่นอน ไปคว้าชัยชนะแรกมาให้เรากันเลย!",
+                "zh-Hans": "他一定会欣然接受你的挑战——漂亮地先赢下一局吧！",
+                "zh-Hant": "他一定會欣然接受你的挑戰——漂亮地先贏下一局吧！"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Verstanden.",
+                    "en": "Got it.",
+                    "es": "Vale.",
+                    "fr": "Compris.",
+                    "ja": "分かった。",
+                    "ko": "알겠어요",
+                    "th": "ได้เลย",
+                    "zh-Hans": "行。",
+                    "zh-Hant": "行。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wird gemacht.",
+                    "en": "Consider it done.",
+                    "es": "¡Por supuesto!",
+                    "fr": "C'est comme si c'était fait.",
+                    "ja": "{Male=任せてくれ。;Female=任せて。}",
+                    "ko": "맡겨만 주세요",
+                    "th": "ให้เป็นหน้าที่ฉันเอง",
+                    "zh-Hans": "交给我吧。",
+                    "zh-Hant": "交給我吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke, {PlayerName}.",
+                "en": "Thank you, {PlayerName}.",
+                "es": "Gracias, {PlayerName}.",
+                "fr": "Merci {PlayerName}.",
+                "ja": "ありがとう、{PlayerName}さん。",
+                "ko": "고마워요, {PlayerName}",
+                "th": "ขอบคุณนะ {PlayerName}",
+                "zh-Hans": "谢谢你，{PlayerName}。",
+                "zh-Hant": "謝謝你，{PlayerName}。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 700241,
+                "name": {
+                  "zh-Hans": "安妮塔"
+                },
+                "entity": {
+                  "entityId": 192700010,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS1_1",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46301,
+                    "y": -538751,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -115
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Äh, viel … viel Glück, {PlayerName}! Wir zählen auf dich!",
+                "en": "Well, Good... good luck, we're counting on you, {PlayerName}...!",
+                "es": "Bueno... buena suerte. ¡Contamos contigo, {PlayerName}!",
+                "fr": "Eh bien… Bonne chance {PlayerName}. On compte sur toi !",
+                "ja": "あの、か……勝ちを絶対に取ってくださいね、{PlayerName}さん……！",
+                "ko": "저기, 부... 부디 꼭 이겨주세요, {PlayerName}...!",
+                "th": "เอาล่ะ โชค... โชคดีนะ ฝากด้วยละกัน {PlayerName}...!",
+                "zh-Hans": "那个，请……请你一定要赢，{PlayerName}同学……！",
+                "zh-Hant": "那個，請……請你一定要贏，{PlayerName}同學……！"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 700242,
+                "name": {
+                  "zh-Hans": "阿希尔德"
+                },
+                "entity": {
+                  "entityId": 192700011,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -46350,
+                    "y": -538821,
+                    "z": 35233
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "parentId": 5,
+      "type": "ConditionSelector",
+      "dialogs": []
+    },
+    {
+      "id": 59,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege Ashild.",
+        "en": "Defeat Ashild in a duel",
+        "es": "Derrota a Ashild en un duelo.",
+        "fr": "Vaincre Ashild",
+        "ja": "オーシルドを倒す",
+        "ko": "애쉴드 격파하기",
+        "th": "เอาชนะ Ashild",
+        "zh-Hans": "击败阿希尔德",
+        "zh-Hant": "擊敗阿希爾德"
+      },
+      "entities": [
+        {
+          "entityId": 192700011,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_XS2_11阿希尔德任务用",
+          "areaId": 36170,
+          "position": {
+            "x": -46350,
+            "y": -538821,
+            "z": 35233
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 44,
+      "parentId": 43,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 46,
+      "parentId": 43,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 45,
+      "parentId": 44,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 46,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

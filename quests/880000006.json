@@ -1,0 +1,2114 @@
+{
+  "id": 880000006,
+  "key": "收集任务第三天",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Goldenes Insekt",
+    "en": "Golden Insect",
+    "es": "Insecto Dorado",
+    "fr": "Insecte doré",
+    "ja": "金色の昆虫",
+    "ko": "금빛 곤충",
+    "th": "แมลงสีทอง",
+    "zh-Hans": "金黄的昆虫",
+    "zh-Hant": "金黃的昆蟲"
+  },
+  "desc": {
+    "de": "Magi versucht, dich zu kontaktieren, und es scheint mit dem großangelegten Projekt namens Der Sol-2 in Verbindung zu stehen, das die Pioneer Convention in letzter Zeit geplant hat ......",
+    "en": "Maqi is trying to contact you, and it appears to be related to the Pioneer Association's ambitious project, \"Second Coming of Solaris\"...",
+    "es": "Maqi está intentando ponerse en contacto contigo. Parece que tiene que ver con el ambicioso proyecto «Segunda venida de Solaris», que la Asociación de Pioneros ha estado planeando últimamente...",
+    "fr": "Maqi tente de vous joindre. Il semblerait que ce soit en lien avec le projet ambitieux de l'Association Pionnière : le Sol-2…",
+    "ja": "馬琪からの連絡があったようだ。それが先駆条約が最近取り掛かっている「第二ソラリス」という大型プロジェクトに関わるみたい……",
+    "ko": "마치가 연락을 시도하고 있습니다. 이는 최근 선행공약이 기획한 「세컨드 솔라리스」라는 대형 프로젝트와 관련이 있는 것 같습니다...",
+    "th": "หม่าฉีพยายามติดต่อคุณ ดูเหมือนจะเกี่ยวข้องกับโครงการที่สมาคมผู้บุกเบิกมุ่งหวัง \"ดาวโซลาริสดวงที่สอง\"...",
+    "zh-Hans": "马琪正在尝试联络你，而这似乎与先行公约最近筹划的名为《第二索拉》的大型项目有关……",
+    "zh-Hant": "馬琪正在嘗試聯絡你，而這似乎與先行公約最近籌劃的名為《第二索拉》的大型專案有關……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 40,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maggie, um mehr über das heutige Spielszenario zu erfahren.",
+        "en": "Talk to Maqi to find out about today's game scenario.",
+        "es": "Habla con Maqi para averiguar sobre el escenario del juego de hoy.",
+        "fr": "Contacter Maqi pour en savoir plus sur le scénario du jour",
+        "ja": "今日作るゲームのシーンについて馬琪に聞く",
+        "ko": "마치를 찾아 오늘 만들 맵에 대해 묻기",
+        "th": "คุยกับหม่าฉีเพื่อทำความเข้าใจสถานการณ์เกมของวันนี้",
+        "zh-Hans": "找马琪了解今天要制作的游戏场景",
+        "zh-Hant": "找馬琪了解今天要製作的遊戲場景"
+      },
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880800001,
+          "mapId": 8,
+          "blueprintType": "NPC0129",
+          "name": "TsEntity_0129_121_铭铭2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108770,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880800003,
+          "mapId": 8,
+          "blueprintType": "NPC0128",
+          "name": "TsEntity_0128_121_豆豆2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108840,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Lassen Sie mich unsere Arbeit heute erklären.",
+                "en": "Let me explain our job today.",
+                "es": "Permíteme explicar nuestro trabajo de hoy.",
+                "fr": "La scène de jeu à produire aujourd'hui est comme ça...",
+                "ja": "今日お願いしたいシーンはここ……",
+                "ko": "오늘 제작할 맵은 이러해요...",
+                "th": "ให้ฉันอธิบายงานของเราในวันนี้ก่อนนะ",
+                "zh-Hans": "今天要制作的游戏场景是这样的……",
+                "zh-Hant": "今天要製作的遊戲場景是這樣的……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In diesem Kapitel besuchte unser Protagonist eine mystische Insel.",
+                "en": "In this chapter, our protagonist paid a visit to a mystic island.",
+                "es": "En este capítulo, nuestro protagonista visitó una isla mística.",
+                "fr": "Dans ce chapitre, le protagoniste visite une île mystérieuse.",
+                "ja": "主人公が謎の島にやって来た時の場面です。",
+                "ko": "이 장에서 주인공은 신비로운 섬에 도착해요",
+                "th": "ในบทนี้ ตัวเอกของเราได้เดินทางไปยังเกาะลี้ลับแห่งหนึ่ง",
+                "zh-Hans": "在这一章里，主角来到了一个神秘的岛屿。",
+                "zh-Hant": "在這一章裡，主角來到了一個神秘的島嶼。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es heißt: \"Der Herbst schien hier dauerhaft zu sein. Blätter und Laub waren in brennendes Gold getaucht...\"",
+                "en": "It goes: \"The autumn seemed to be permanent here. Leaves and foliage were bathed in burning gold...\"",
+                "es": "Dice así: \"El otoño parecía ser permanente aquí. Las hojas y el follaje estaban bañados en oro ardiente...\"",
+                "fr": "Dans le livre, il est dit que « le temps de l'île semble s'être arrêté à l'automne, toutes les feuilles et les fleurs sont d'or brûlant... »",
+                "ja": "原作では「見渡す限りの、燃え盛る金色の葉。この島の時間は、秋めく季節で停止したかのよう……」",
+                "ko": "원작에는 「섬의 시간은 가을에 멈춘 듯 모든 나뭇잎과 화초는 타오로는 듯한 황금빛...」이라고 적혀 있어요...",
+                "th": "มีเนื้อความว่า: \"ฤดูใบไม้ร่วงดูเหมือนจะคงอยู่ที่นี่อย่างถาวร แมกไม้นานาพรรณล้วนโลมไล้ไปด้วยสีทองอันลุกโชน...\"",
+                "zh-Hans": "原著里写道“岛屿的时间仿佛静止在了秋季，所有的树叶甚至花草都是几欲燃起的金色……”",
+                "zh-Hant": "原著裡寫道「島嶼的時間仿佛靜止在了秋季，所有的樹葉甚至花草都是幾欲燃起的金色……」"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"Als die Meeresbrise sanft auf die Küste traf, fiel ein goldener Schauer auf unsere Schultern...\"",
+                "en": "\"As the sea breeze gently met the shore, a golden shower fell upon our shoulders...\"",
+                "es": "\"Cuando la brisa marina se encontró suavemente con la orilla, una lluvia dorada cayó sobre nuestros hombros...\"",
+                "fr": "« Chaque fois que la brise de mer caresse l'île, nous nous baignons dans une pluie d'or... »",
+                "ja": "「海風が吹く度に、金の雨は俺らの頭上へ降り注ぐ……」",
+                "ko": "「바닷바람이 섬을 어루만질 때마다 우리는 금빛 비를 맞으며...」",
+                "th": "\"ขณะที่สายลมทะเลลูบไล้ชายฝั่งอย่างแผ่วเบา สายฝนสีทองก็โปรยปรายลงบนบ่าของเรา...\"",
+                "zh-Hans": "“每当海风抚过岛屿，我们便会沐浴一阵金色的雨……”",
+                "zh-Hant": "「每當海風撫過島嶼，我們便會沐浴一陣金色的雨……」"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"Einmal roch ich einen Duft in den gefallenen Blättern... Erst viele Jahre später erkannte ich, dass es eine Art von <color=highlight>goldenem Insekt</color> war, das in diesen Blättern getarnt war.\"",
+                "en": "\"For once, I caught a whiff of fragrance in the fallen leaves... It was only many years later that I realized it had been a kind of <color=highlight>golden insect</color> hidden in camouflage in those leaves.\"",
+                "es": "\"Por una vez, capté un aroma en las hojas caídas... Solo muchos años después me di cuenta de que había sido una especie de <color=highlight>insecto dorado</color> escondido en camuflaje en esas hojas.\"",
+                "fr": "« Une fois, il y avait une douce odeur dans les feuilles tombées... Des années plus tard, nous avons appris qu'un <color=highlight>insecte doré</color> volait dans les feuilles tombées à ce moment-là. »",
+                "ja": "「落ち葉の山から甘い匂いを感じる……何年か経って俺はようやくわかった。その中には、<color=highlight>金色の昆虫</color>がいる事を……」",
+                "ko": "「한 번은 낙엽 속에서 달콤한 냄새를 맡았었는데... 낙엽 속에는 <color=highlight>금빛 곤충</color>이 날아다닌다는 것을 알게 된 것은 수년이 지난 후였다.」",
+                "th": "\"เป็นครั้งแรกที่ข้าได้กลิ่นหอมกรุ่นในหมู่ใบไม้ร่วง... ทว่าอีกหลายปีต่อมาข้าถึงได้รู้ว่ามันคือ<color=highlight>แมลงสีทอง</color>ชนิดหนึ่งที่ซ่อนตัวอยู่ตามกองใบไม้\"",
+                "zh-Hans": "“有一次，我在落叶中闻到一阵清甜的气息……许多年后我才知道，那时在落叶中有一只<color=highlight>金黄的昆虫</color>飞过。”",
+                "zh-Hant": "「有一次，我在落葉中聞到一陣清甜的氣息……許多年後我才知道，那時在落葉中有一隻<color=highlight>金黃的昆蟲</color>飛過。」"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Insekt diente dem Autor als Metapher für die folgenden Handlungsstränge.",
+                "en": "The insect served as a metaphor by the author for the following plots.",
+                "es": "El insecto sirvió de metáfora por el autor para las siguientes tramas.",
+                "fr": "L'insecte mentionné dans ce paragraphe est importante de l'histoire à venir.",
+                "ja": "ここで出た「昆虫」！これにもちゃんと意味があるんですよね！",
+                "ko": "이 대목에서 언급된 곤충은 향후 극의 핵심 복선이에요",
+                "th": "ผู้เขียนใช้แมลงที่ว่านี้เป็นสัญลักษณ์ในเนื้อเรื่องที่ตามมา",
+                "zh-Hans": "这一段中提到的昆虫，是之后剧情的关键伏笔。",
+                "zh-Hant": "這一段中提到的昆蟲，是之後劇情的關鍵伏筆。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was noch dazu kommt. Am Ende dieses Kapitels würden die Ältesten der Insel dieses Insekt verwenden, um—",
+                "en": "What's more. At the end of this chapter, the elders of the island would use this insect to—",
+                "es": "Además. Al final de este capítulo, los ancianos de la isla usarían este insecto para—",
+                "fr": "À la fin de ce volume, le vieil homme de l'île avec cet insecte...",
+                "ja": "実はこの虫、後に島にいる老人だった判明して……",
+                "ko": "이 책의 말미에 섬의 노인들은 이 곤충으로...",
+                "th": "ยิ่งไปกว่านั้น ในตอนท้ายของบทนี้ เหล่าผู้อาวุโสบนเกาะจะใช้แมลงชนิดนี้เพื่อ...",
+                "zh-Hans": "在这一卷的末尾，岛屿的老者用这种昆虫把……",
+                "zh-Hant": "在這一卷的末尾，島嶼的老者用這種昆蟲把……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Keine Spoiler!",
+                    "en": "No spoilers!",
+                    "es": "¡Sin spoilers!",
+                    "fr": "Ne me spoilez pas !",
+                    "ja": "{Male=ネタバレ禁止！;Female=ネタバレはダメ！}",
+                    "ko": "스포하지 마세요!",
+                    "th": "ห้ามสปอยล์นะ!",
+                    "zh-Hans": "不要剧透！",
+                    "zh-Hant": "不要劇透！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich möchte es selbst sehen, wenn das Spiel online geht.",
+                    "en": "I want to see it myself when the game comes online.",
+                    "es": "Quiero verlo por mí mismo cuando el juego esté en línea.",
+                    "fr": "Je veux jouer le jeu moi-même.",
+                    "ja": "続きは自分で読みたい！",
+                    "ko": "게임이 완성되면 직접 경험할래요",
+                    "th": "ฉันอยากจะเห็นด้วยตาตัวเองตอนที่เกมเปิดให้เล่นน่ะ",
+                    "zh-Hans": "我想等游戏做好后自己体验。",
+                    "zh-Hant": "我想等遊戲做好後自己體驗。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Entschuldigung, das war mein Fehler... Das ist eine meiner Lieblingsstellen, also habe ich mich ein bisschen mitreißen lassen.",
+                "en": "Sorry, my bad... This is one of my favorite bits so I got carried away.",
+                "es": "Lo siento, mi error... Esta es una de mis partes favoritas, así que me dejé llevar.",
+                "fr": "Je suis désolé... C'est une histoire très impressionnante, j'étais sur le point de la dire.",
+                "ja": "す、すみません……とっても印象的なシーンなので、つい言いたくなってしまいました……",
+                "ko": "아, 미안해요... 이 대목이 인상 깊어서, 하마터면 한꺼번에 말할 뻔했네요",
+                "th": "ขอโทษที ฉันผิดเอง... นี่เป็นหนึ่งในตอนโปรดของฉัน ก็เลยเผลอตัวไปหน่อย",
+                "zh-Hans": "不好意思……这一段剧情我印象很深刻，差点就一股脑讲出来了。",
+                "zh-Hant": "不好意思……這一段劇情我印象很深刻，差點就一股腦講出來了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie dem auch sei, das Entwicklerteam möchte eine Referenz für ein so wichtiges Element in zukünftigen Handlungssträngen.",
+                "en": "Anyway, the dev team wants a reference for such an important element in future plots.",
+                "es": "De todos modos, el equipo de desarrollo quiere una referencia para un elemento tan importante en las tramas futuras.",
+                "fr": "Quoi qu'il en soit, en tant qu'élément important dans l'histoire à venir, le développeur espère que cet insecte sera une référence.",
+                "ja": "開発スタッフは伏線となるこの大事なシーンのため、「昆虫」の参考となるものを探しています。",
+                "ko": "결론적으로 개발자들은 후속 에피소드에 등장할 핵심 요소로 이 곤충에 대해 참고할 만한 것을 찾길 원해요",
+                "th": "อย่างไรก็ตาม ทีมพัฒนาต้องการภาพอ้างอิงสำหรับองค์ประกอบนี้ที่มีความสำคัญต่อเนื้อเรื่องในอนาคต",
+                "zh-Hans": "总之，作为后续剧情中会出场的关键元素，开发人员希望能找到这种昆虫的参考。",
+                "zh-Hant": "總之，作為後續劇情中會出場的關鍵元素，開發人員希望能找到這種昆蟲的參考。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du zufällig auf einige Proben stößt, komm gerne vorbei.",
+                "en": "If you happen to come across some samples, feel free to drop by.",
+                "es": "Si te encuentras con algunas muestras, no dudes en pasar.",
+                "fr": "Si vous trouvez quelque chose d'adéquat, donnez-le-moi à tout moment.",
+                "ja": "この類の物を見つけたら、私のところに持ってきてください。",
+                "ko": "만약 적당한 물건을 찾는다면, 언제든지 저에게 와서 제출해주세요",
+                "th": "ถ้าคุณบังเอิญเจอตัวอย่างเข้า ก็แวะมาหาฉันได้เลยนะ",
+                "zh-Hans": "如果你有找到合适的东西的话，可以随时过来交给我。",
+                "zh-Hant": "如果你有找到合適的東西的話，可以隨時過來交給我。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "parentId": 15,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 86,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 98,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 23,
+      "parentId": 20,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 89,
+      "parentId": 20,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 25,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 13,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein Entomologe... Ich habe keine Ahnung.",
+                "en": "An entomologist... I have no clues.",
+                "es": "Un entomólogo... No tengo pistas.",
+                "fr": "Les experts en insectes... en effet, je n'y avais pas pensé.",
+                "ja": "虫に詳しい人は……咄嗟に思いつきませんね。",
+                "ko": "곤충을 아는 사람... 아 생각나는 사람이 없네요",
+                "th": "นักกีฏวิทยา... ฉันไม่รู้จะไปหาจากที่ไหน",
+                "zh-Hans": "懂昆虫的人……我确实一下子想不太到。",
+                "zh-Hant": "懂昆蟲的人……我確實一下子想不太到。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht solltest du zum Teich gehen. Dort sieht man oft Kinder, die Fliegen fangen.",
+                "en": "Maybe you should go to the pond. Some kids are frequently seen catching flies there.",
+                "es": "Quizás deberías ir al estanque. Algunos niños suelen ser vistos cazando moscas allí.",
+                "fr": "Peut-être on trouve des enfants qui aiment jouer avec des insectes à l'étang de la ville ?",
+                "ja": "もしかしたら、城内の池などで、虫取りをしてる子供がいるかも……？",
+                "ko": "아, 성안의 연못가에 가서 곤충 잡는 것을 좋아하는 아이들을 만나보세요",
+                "th": "คุณลองไปที่สระน้ำดูสิ มีเด็กๆ ไปจับแมลงแถวนั้นบ่อยนะ",
+                "zh-Hans": "也许可以去城里的水池边，找找喜欢在那里抓昆虫的小孩子？",
+                "zh-Hant": "也許可以去城裡的水池邊，找找喜歡在那裡抓昆蟲的小孩子？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 95,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880800001,
+          "mapId": 8,
+          "blueprintType": "NPC0129",
+          "name": "TsEntity_0129_121_铭铭2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108770,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Großer Bruder;Female=Große Schwester} liebt diese Käfer auch?",
+                "en": "Do {Male=you;Female=you} like these bugs too?",
+                "es": "¿A {Male=hermano mayor;Female=hermana mayor} también le gustan estos insectos?",
+                "fr": "{Male=Monsieur;Female=Madame}, aimez-vous des insectes ?",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}も虫が好きなの？",
+                "ko": "{Male=오빠;Female=언니}도 곤충 잡는 거 좋아해요?",
+                "th": "{Male=พี่ชาย;Female=พี่สาว}ก็ชอบแมลงพวกนี้เหมือนกันเหรอ?",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}也很喜欢抓虫子吗？",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}也很喜歡抓蟲子嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nein, Mingming. {Male=Großer Bruder;Female=Große Schwester} braucht, dass du eine Frage beantwortest.",
+                "en": "No, Mingming. {Male=He;Female=She} needs you to answer a question.",
+                "es": "No, Mingming. {Male=hermano mayor;Female=hermana mayor} necesita que respondas una pregunta.",
+                "fr": "Non, Mingming, {Male=monsieur;Female=madame} te pose des questions.",
+                "ja": "違うよ銘々（めいめい）。{Male=お兄ちゃん;Female=お姉ちゃん}は話を聞きたいんだよ。",
+                "ko": "밍밍, {Male=오빠;Female=언니}은(는) 우리한테 질문하는 거야!",
+                "th": "ไม่หรอก Mingming {Male=พี่ชาย;Female=พี่สาว}เขาอยากให้เราตอบคำถามน่ะ",
+                "zh-Hans": "不是的，铭铭，{Male=大哥哥;Female=大姐姐}是要问我们问题。",
+                "zh-Hant": "不是的，銘銘，{Male=大哥哥;Female=大姐姐}是要問我們問題。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Papa hat uns Geschichten darüber erzählt. Die Legende von einem Helden! Erinnerst du dich noch?",
+                "en": "Daddy has told us stories about it. The legend of a hero! Do you still remember?",
+                "es": "Papá nos ha contado historias sobre eso. ¡La leyenda de un héroe! ¿Todavía lo recuerdas?",
+                "fr": "Mon père nous a déjà parlé de ce livre, une grande aventure, Mingming, vous vous en souvenez ?",
+                "ja": "この本……確か父さんが読んでくれた本だっけ。確か大冒険の話だよね。銘々、覚えてる？",
+                "ko": "이 이야기책은 아빠가 읽어주신 모험 이야기야. 밍밍, 너도 기억하고 있지?",
+                "th": "พ่อเคยเล่าให้พวกเราฟังอยู่นะ ตำนานวีรบุรุษน่ะ! เธอยังจำได้ไหม?",
+                "zh-Hans": "这本故事书，爹爹念给我们听过，是大冒险的故事，铭铭还记得吗？",
+                "zh-Hant": "這本故事書，爹爹唸給我們聽過，是大冒險的故事，銘銘還記得嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich weiß! Und ein Held und ein großer Bösewicht, der Hutlose, richtig?!",
+                "en": "Oh, I know! And a hero and a big bad guy, the Hatless, right?!",
+                "es": "¡Oh, lo sé! ¿Y un héroe y un gran malvado, el Sin Sombrero, verdad?!",
+                "fr": "Je me souviens, il y a un grand méchant sans chapeau !",
+                "ja": "あ、思い出した！無帽者（むぼうしゃ）って悪党がいたお話！",
+                "ko": "아, 나 기억났어. 그 이야기에서는 「모자 없는 사람」이 악당으로 나와!",
+                "th": "อ๋อ รู้แล้ว! แล้วก็มีวีรบุรุษกับจอมวายร้ายที่ชื่อไร้หมวกใช่ไหม!",
+                "zh-Hans": "我，我记起来了，里面有个叫无帽者的大坏蛋！",
+                "zh-Hant": "我，我記起來了，裡面有個叫無帽者的大壞蛋！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube nicht...",
+                    "en": "I don't think so...",
+                    "es": "No lo creo...",
+                    "fr": "Ce n'est sûrement pas son vrai nom...",
+                    "ja": "そんな名前あったっけ……",
+                    "ko": "그 이름이 아닌 거 같은데요...",
+                    "th": "ฉันว่าไม่ใช่นะ...",
+                    "zh-Hans": "肯定不叫这个名字……",
+                    "zh-Hant": "肯定不叫這個名字……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Der Hutlose, der große Bösewicht!",
+                    "en": "The Hatless, the big villain!",
+                    "es": "El Sin Sombrero, ¡el gran villano!",
+                    "fr": "Le grand méchant sans chapeau !",
+                    "ja": "無帽者の悪党！",
+                    "ko": "모자를 쓰지 않는 나쁜 녀석!",
+                    "th": "ไร้หมวก จอมวายร้าย!",
+                    "zh-Hans": "无帽者大坏蛋！",
+                    "zh-Hant": "無帽者大壞蛋！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also, {Male=Großer Bruder;Female=Große Schwester}, du suchst nach dem Insekt im Buch, oder?",
+                "en": "So, {Male=you;Female=you} are looking for the insect in the book, right?",
+                "es": "Entonces, {Male=hermano mayor;Female=hermana mayor}, ¿estás buscando el insecto del libro, verdad?",
+                "fr": "Alors, vous voulez trouver l'insecte du livre ?",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}はこの話に出た虫が欲しいの？",
+                "ko": "이야기책에 나오는 그 곤충를 찾고 싶은 거예요?",
+                "th": "ถ้าอย่างนั้น {Male=พี่ชาย;Female=พี่สาว}ก็กำลังตามหาแมลงในหนังสืออยู่ใช่ไหม?",
+                "zh-Hans": "所以，{Male=大哥哥;Female=大姐姐}是想找到故事书里的那种虫子吗？",
+                "zh-Hant": "所以，{Male=大哥哥;Female=大姐姐}是想找到故事書裡的那種蟲子嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine goldene Fliege, die süß riecht... Klingt wie der gelbe Schmetterling, den wir heute gefangen haben.",
+                "en": "A golden fly that smells sweet... Sounds like the yellow butterfly we caught today.",
+                "es": "Una mosca dorada que huele dulce... Suena como la mariposa amarilla que atrapamos hoy.",
+                "fr": "Doré, sucré... ressemble-t-il à ce papillon jaune que nous avons attrapé aujourd'hui ?",
+                "ja": "金色で、甘い匂いがする、か……今日捕まえた黄色い蝶に似てるかも。",
+                "ko": "금색에... 달달한... 오늘 저희가 잡은 노랑나비 느낌인가...?",
+                "th": "แมลงสีทองที่มีกลิ่นหอมหวาน... ฟังดูเหมือนผีเสื้อสีเหลืองที่พวกเราจับได้วันนี้เลย",
+                "zh-Hans": "金色的，甜甜的……感觉很像我们今天抓到的黄蝴蝶？",
+                "zh-Hant": "金色的，甜甜的……感覺很像我們今天抓到的黃蝴蝶？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein riesiger gelber Schmetterling! Zeig {Male=Großer Bruder;Female=Große Schwester}, was wir haben!",
+                "en": "A giant yellow butterfly! Just show {Male=him;Female=her} what we get!",
+                "es": "¡Una mariposa amarilla gigante! ¡Solo muestra {Male=hermano mayor;Female=hermana mayor} lo que conseguimos!",
+                "fr": "Un grand papillon jaune ! Ma sœur, montre-le vite à {Male=monsieur;Female=madame} !",
+                "ja": "おっきい蝶だよ！姉ちゃん早く見せてあげて！",
+                "ko": "엄청 큰 노랑나비! 얼릉 {Male=오빠;Female=언니}한테도 보여줘!",
+                "th": "ผีเสื้อสีเหลืองตัวยักษ์! เอาตัวที่เราจับได้มาให้{Male=พี่ชาย;Female=พี่สาว}ดูสิ!",
+                "zh-Hans": "很大的黄蝴蝶！姐姐，你快给{Male=大哥哥;Female=大姐姐}看看！",
+                "zh-Hant": "很大的黃蝴蝶！ 姐姐，你快給{Male=大哥哥;Female=大姐姐}看看！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau mal, {Male=Großer Bruder;Female=Große Schwester}. Wir haben ihn im Gebüsch gefunden.",
+                "en": "Take a look, {Male=sir;Female=miss}. We had it in the shrubs.",
+                "es": "Echa un vistazo, {Male=hermano mayor;Female=hermana mayor}. Lo teníamos en los arbustos.",
+                "fr": "Nous l'avons trouvé dans un buisson de fleurs.",
+                "ja": "ほら{Male=お兄ちゃん;Female=お姉ちゃん}、見て。お花の中で見つけたんだ。",
+                "ko": "보세요, 저희가 꽃밭에서 찾았어요",
+                "th": "ดูนี่สิ{Male=พี่ชาย;Female=พี่สาว} เราเจอในพุ่มไม้",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}你看，我们是在花丛里找到的。",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}你看，我們是在花叢裡找到的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er ernährt sich von Honig und riecht süß, genau wie die Art von Süßigkeiten, die Papa uns immer gibt.",
+                "en": "It feeds on honey and smells sweet just like the kind of candy Daddy would treat us to.",
+                "es": "Se alimenta de miel y huele dulce, justo como el tipo de dulce que papá nos daría.",
+                "fr": "Il aime le nectar des fleurs, il a une odeur sucrée comme le sucre que papa a acheté.",
+                "ja": "蜜を食べてるから甘い匂いがするよ。お父さんが買った飴みたい。",
+                "ko": "아버지가 사준 사탕처럼 달콤한 냄새가 나는 꿀을 좋아해요",
+                "th": "มันกินน้ำผึ้งเป็นอาหาร ก็เลยมีกลิ่นหอมหวานเหมือนลูกอมที่พ่อเคยซื้อให้พวกเราเลย",
+                "zh-Hans": "它喜欢吃花蜜，闻起来有甜甜的味道，像爹爹买的糖一样。",
+                "zh-Hant": "它喜歡吃花蜜，聞起來有甜甜的味道，像爹爹買的糖一樣。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Er ist so schön!",
+                    "en": "It's so beautiful!",
+                    "es": "¡Es tan hermosa!",
+                    "fr": "C'est beau !",
+                    "ja": "キレイ！",
+                    "ko": "엄청 예쁘네요",
+                    "th": "สวยจัง!",
+                    "zh-Hans": "好漂亮！",
+                    "zh-Hant": "好漂亮！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Darf ich ihn haben?",
+                    "en": "May I have it?",
+                    "es": "¿Puedo tenerla?",
+                    "fr": "Puis-je l'avoir ?",
+                    "ja": "譲ってくれない？",
+                    "ko": "저에게 줄 수 있나요?",
+                    "th": "ฉันขอได้ไหม?",
+                    "zh-Hans": "可以送给我吗？",
+                    "zh-Hant": "可以送給我嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hehe, ich mache keine Witze!",
+                "en": "Hehe, I kid you not!",
+                "es": "Jeje, ¡no te estoy tomando el pelo!",
+                "fr": "Hmm, il est beau, n'est-ce pas ?",
+                "ja": "ふふん！だよねー！",
+                "ko": "그쵸, 예쁘죠!",
+                "th": "ฮี่ๆ บอกแล้วหนูไม่ได้ล้อพี่เล่น!",
+                "zh-Hans": "哼哼，好看吧！",
+                "zh-Hant": "哼哼，好看吧！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich! Aber versprich mir, dass du zum Versteckspiel mit uns kommst!",
+                "en": "Of course! But promise me to come over to play hide-and-seek with us!",
+                "es": "¡Por supuesto! ¡Pero prométeme que vendrás a jugar al escondite con nosotros!",
+                "fr": "D'accord ! Mais si vous le voulez, {Male=monsieur;Female=madame}, venez nous trouver plus souvent.",
+                "ja": "ねえねえ{Male=お兄ちゃん;Female=お姉ちゃん}！今度一緒にかくれんぼしようよ！",
+                "ko": "네, 대신에 앞으로 자주 저희를 찾아와서 같이 숨바꼭질을 해주셔야 해요",
+                "th": "ได้เลย! แต่ต้องสัญญาก่อนนะว่าจะมาเล่นซ่อนหากับพวกเรา!",
+                "zh-Hans": "可以呀！但是想要的话，{Male=大哥哥;Female=大姐姐}以后就要经常来找我们玩捉迷藏。",
+                "zh-Hant": "可以呀！ 但是想要的話，{Male=大哥哥;Female=大姐姐}以後就要經常來找我們玩捉迷藏。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar doch.",
+                    "en": "Sure thing.",
+                    "es": "Por supuesto.",
+                    "fr": "C'est bon.",
+                    "ja": "やろう。",
+                    "ko": "문제없어요",
+                    "th": "ได้สิ",
+                    "zh-Hans": "没问题。",
+                    "zh-Hant": "沒問題。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin ein echter Experte darin.",
+                    "en": "I'm quite the expert at this.",
+                    "es": "Soy bastante experto en esto.",
+                    "fr": "Je suis un expert en cache-cache.",
+                    "ja": "このかくれんぼ名人に言ったな？",
+                    "ko": "저 숨바꼭질 잘해요!",
+                    "th": "เรื่องนี้พี่เชี่ยวชาญเป็นพิเศษเลย",
+                    "zh-Hans": "我可是捉迷藏高手。",
+                    "zh-Hant": "我可是捉迷藏高手。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Papa hat uns Tricks beigebracht. Du kannst nicht herumalbern!",
+                "en": "Daddy taught us tricks. You can't mess around!",
+                "es": "Papá nos enseñó trucos. ¡No puedes jugar en broma!",
+                "fr": "Je n'ai pas peur, nous avons la technique de la cachette que papa nous a enseignée !",
+                "ja": "怖くないもん！私たちには父さんに教わった秘密の奥義があるもんね！",
+                "ko": "저희는 두렵지 않아요! 저희도 아빠가 가르쳐준 숨바꼭질 기술이 있어요!",
+                "th": "พ่อเคยสอนเคล็ดลับให้พวกเราด้วยนะ พี่จะมาเล่นๆ ไม่ได้นะ!",
+                "zh-Hans": "我才不怕，我们有爹爹教的躲藏术！",
+                "zh-Hant": "我才不怕，我們有爹爹教的躲藏術！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte nimm den Schmetterling. Und vergiss nicht dein Versprechen!",
+                "en": "Please accept the butterfly. And don't forget your promise!",
+                "es": "Por favor, acepta la mariposa. ¡Y no olvides tu promesa!",
+                "fr": "Alors, je vous donne ce papillon. {Male=Monsieur;Female=Madame}, venez nous voir la prochaine fois.",
+                "ja": "じゃあ、この蝶はあげる！{Male=お兄ちゃん;Female=お姉ちゃん}、また遊びに来てね！約束！",
+                "ko": "여기 나비요! 다음에 꼭 놀러 오셔야 해요",
+                "th": "รับผีเสื้อตัวนี้ไปสิ แล้วก็อย่าลืมสัญญานะ!",
+                "zh-Hans": "那这只蝴蝶我们就送给你了，{Male=大哥哥;Female=大姐姐}下次要记得来找我们玩哦。",
+                "zh-Hant": "那這隻蝴蝶我們就送給你了，{Male=大哥哥;Female=大姐姐}下次要記得來找我們玩喔。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis dann!",
+                "en": "Until then!",
+                "es": "¡Hasta entonces!",
+                "fr": "À la prochaine !",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}、またね！",
+                "ko": "다음에 또 만나요!",
+                "th": "แล้วเจอกันนะ!",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}下次见！",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}下次見！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Verstecken spielen! Verstecken spielen!",
+                "en": "Hide-and-seek! Hide-and-seek!",
+                "es": "¡Al escondite! ¡Al escondite!",
+                "fr": "Cache-cache, cache-cache !",
+                "ja": "かっくれんぼ、かっくれんぼ！",
+                "ko": "숨바꼭질, 숨바꼭질!",
+                "th": "ซ่อนหา! ซ่อนหา!",
+                "zh-Hans": "捉迷藏，捉迷藏！",
+                "zh-Hant": "捉迷藏，捉迷藏！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "parentId": 82,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880800001,
+          "mapId": 8,
+          "blueprintType": "NPC0129",
+          "name": "TsEntity_0129_121_铭铭2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108770,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880800003,
+          "mapId": 8,
+          "blueprintType": "NPC0128",
+          "name": "TsEntity_0128_121_豆豆2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108840,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 4,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Fliege hat tatsächlich elegante Muster. Danke für deine Bemühungen. Ich werde es an das Entwicklerteam weitergeben.",
+                "en": "The bug does have elegant patterns. Thank you for your efforts. I'll deliver it to the dev team.",
+                "es": "La mosca sí tiene patrones elegantes. Gracias por tus esfuerzos. Se lo entregaré al equipo de desarrollo.",
+                "fr": "Merci, cet insecte est très beau ! Je vais le donner au développeur maintenant.",
+                "ja": "ありがとうございます！キレイな蝶ですね。早速開発スタッフに渡しましょう。",
+                "ko": "감사해요. 이 곤충 엄청 아름답네요. 개발자한테 전달할게요",
+                "th": "แมลงตัวนี้มีลวดลายที่งดงามมาก ขอบคุณนะที่ช่วย เดี๋ยวฉันจะนำไปมอบให้ทีมพัฒนาเอง",
+                "zh-Hans": "谢谢你，这只昆虫很好看！我现在就把这个交给开发人员。",
+                "zh-Hant": "謝謝你，這只昆蟲很好看！ 我現在就把這個交給開發人員。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es wird viel zum Aufbau der Insel beitragen.",
+                "en": "It will contribute a lot to the building of the island.",
+                "es": "Contribuirá mucho a la construcción de la isla.",
+                "fr": "Je crois que cela nous aidera à imaginer l'île.",
+                "ja": "これで島の雰囲気もバッチリですね。",
+                "ko": "이것만 있으면 섬의 장면을 상상할 수 있을 거예요",
+                "th": "มันจะมีส่วนช่วยอย่างมากในการสร้างเกาะแห่งนั้นขึ้นมา",
+                "zh-Hans": "相信有了它，大家就能够想象出岛屿的场景了。",
+                "zh-Hant": "相信有了它，大家就能夠想像出島嶼的場景了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es verging einige Zeit, während Maqi weg war, um den Gegenstand zu übergeben...",
+                "en": "Some time passed while Maqi was away to hand over the item...",
+                "es": "Pasó un tiempo mientras Maqi estaba fuera para entregar el artículo...",
+                "fr": "Après que Maqi a envoyé l'objet au développeur...",
+                "ja": "馬琪が品を開発スタッフに渡した。しばらくして……",
+                "ko": "마치가 개발자에게 물건을 건네준 후, 시간이 좀 지나서...",
+                "th": "เวลาผ่านไปครู่หนึ่งขณะที่ Maqi กำลังนำของไปส่งมอบ...",
+                "zh-Hans": "马琪将物品送给开发人员后，又过了一段时间……",
+                "zh-Hant": "馬琪將物品送給開發人員後，又過了一段時間……"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Danke. Damit ist die Arbeit für heute erledigt!",
+                "en": "Thank you. That wraps up today's work!",
+                "es": "¡Gracias. Eso concluye el trabajo de hoy!",
+                "fr": "Grâce à vous, la production de la scène d'aujourd'hui a été un succès.",
+                "ja": "おかげさまで、今日のシーンの制作が無事完了しました！",
+                "ko": "덕분에 오늘 장면 제작은 잘 끝났어요",
+                "th": "ขอบคุณนะ งานของวันนี้ก็เสร็จสิ้นเพียงเท่านี้!",
+                "zh-Hans": "多亏了你，今天的场景制作顺利完成了。",
+                "zh-Hant": "多虧了你，今天的場景製作順利完成了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis morgen, {PlayerName}.",
+                "en": "See you tomorrow, {PlayerName}.",
+                "es": "Nos vemos mañana, {PlayerName}.",
+                "fr": "Je compte sur vous demain, {PlayerName}.",
+                "ja": "それでは、明日もよろしくお願いします！{PlayerName}さん！",
+                "ko": "내일도 잘 부탁해요",
+                "th": "ไว้เจอกันใหม่พรุ่งนี้นะ {PlayerName}",
+                "zh-Hans": "明天也拜托你了，{PlayerName}。",
+                "zh-Hant": "明天也拜託你了，{PlayerName}。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "parentId": 82,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 87,
+      "parentId": 86,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 102,
+      "parentId": 87,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 91,
+      "parentId": 89,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 13,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein Entomologe... Ich habe keine Ahnung.",
+                "en": "An entomologist... I have no clues.",
+                "es": "Un entomólogo... No tengo pistas.",
+                "fr": "Les experts en insectes... en effet, je n'y avais pas pensé.",
+                "ja": "虫に詳しい人は……咄嗟に思いつきませんね。",
+                "ko": "곤충을 아는 사람... 아 생각나는 사람이 없네요",
+                "th": "นักกีฏวิทยา... ฉันไม่รู้จะไปหาจากที่ไหน",
+                "zh-Hans": "懂昆虫的人……我确实一下子想不太到。",
+                "zh-Hant": "懂昆蟲的人……我確實一下子想不太到。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht solltest du zum Teich gehen. Dort sieht man oft Kinder, die Fliegen fangen.",
+                "en": "Maybe you should go to the pond. Some kids are frequently seen catching flies there.",
+                "es": "Quizás deberías ir al estanque. Algunos niños suelen ser vistos cazando moscas allí.",
+                "fr": "Peut-être on trouve des enfants qui aiment jouer avec des insectes à l'étang de la ville ?",
+                "ja": "もしかしたら、城内の池などで、虫取りをしてる子供がいるかも……？",
+                "ko": "아, 성안의 연못가에 가서 곤충 잡는 것을 좋아하는 아이들을 만나보세요",
+                "th": "คุณลองไปที่สระน้ำดูสิ มีเด็กๆ ไปจับแมลงแถวนั้นบ่อยนะ",
+                "zh-Hans": "也许可以去城里的水池边，找找喜欢在那里抓昆虫的小孩子？",
+                "zh-Hant": "也許可以去城裡的水池邊，找找喜歡在那裡抓昆蟲的小孩子？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "parentId": 89,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 93,
+      "parentId": 89,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880800001,
+          "mapId": 8,
+          "blueprintType": "NPC0129",
+          "name": "TsEntity_0129_121_铭铭2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108770,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Großer Bruder;Female=Große Schwester} liebt diese Käfer auch?",
+                "en": "Do {Male=you;Female=you} like these bugs too?",
+                "es": "¿A {Male=hermano mayor;Female=hermana mayor} también le gustan estos insectos?",
+                "fr": "{Male=Monsieur;Female=Madame}, aimez-vous des insectes ?",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}も虫が好きなの？",
+                "ko": "{Male=오빠;Female=언니}도 곤충 잡는 거 좋아해요?",
+                "th": "{Male=พี่ชาย;Female=พี่สาว}ก็ชอบแมลงพวกนี้เหมือนกันเหรอ?",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}也很喜欢抓虫子吗？",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}也很喜歡抓蟲子嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nein, Mingming. {Male=Großer Bruder;Female=Große Schwester} braucht, dass du eine Frage beantwortest.",
+                "en": "No, Mingming. {Male=He;Female=She} needs you to answer a question.",
+                "es": "No, Mingming. {Male=hermano mayor;Female=hermana mayor} necesita que respondas una pregunta.",
+                "fr": "Non, Mingming, {Male=monsieur;Female=madame} te pose des questions.",
+                "ja": "違うよ銘々（めいめい）。{Male=お兄ちゃん;Female=お姉ちゃん}は話を聞きたいんだよ。",
+                "ko": "밍밍, {Male=오빠;Female=언니}은(는) 우리한테 질문하는 거야!",
+                "th": "ไม่หรอก Mingming {Male=พี่ชาย;Female=พี่สาว}เขาอยากให้เราตอบคำถามน่ะ",
+                "zh-Hans": "不是的，铭铭，{Male=大哥哥;Female=大姐姐}是要问我们问题。",
+                "zh-Hant": "不是的，銘銘，{Male=大哥哥;Female=大姐姐}是要問我們問題。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Papa hat uns Geschichten darüber erzählt. Die Legende von einem Helden! Erinnerst du dich noch?",
+                "en": "Daddy has told us stories about it. The legend of a hero! Do you still remember?",
+                "es": "Papá nos ha contado historias sobre eso. ¡La leyenda de un héroe! ¿Todavía lo recuerdas?",
+                "fr": "Mon père nous a déjà parlé de ce livre, une grande aventure, Mingming, vous vous en souvenez ?",
+                "ja": "この本……確か父さんが読んでくれた本だっけ。確か大冒険の話だよね。銘々、覚えてる？",
+                "ko": "이 이야기책은 아빠가 읽어주신 모험 이야기야. 밍밍, 너도 기억하고 있지?",
+                "th": "พ่อเคยเล่าให้พวกเราฟังอยู่นะ ตำนานวีรบุรุษน่ะ! เธอยังจำได้ไหม?",
+                "zh-Hans": "这本故事书，爹爹念给我们听过，是大冒险的故事，铭铭还记得吗？",
+                "zh-Hant": "這本故事書，爹爹唸給我們聽過，是大冒險的故事，銘銘還記得嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich weiß! Und ein Held und ein großer Bösewicht, der Hutlose, richtig?!",
+                "en": "Oh, I know! And a hero and a big bad guy, the Hatless, right?!",
+                "es": "¡Oh, lo sé! ¿Y un héroe y un gran malvado, el Sin Sombrero, verdad?!",
+                "fr": "Je me souviens, il y a un grand méchant sans chapeau !",
+                "ja": "あ、思い出した！無帽者（むぼうしゃ）って悪党がいたお話！",
+                "ko": "아, 나 기억났어. 그 이야기에서는 「모자 없는 사람」이 악당으로 나와!",
+                "th": "อ๋อ รู้แล้ว! แล้วก็มีวีรบุรุษกับจอมวายร้ายที่ชื่อไร้หมวกใช่ไหม!",
+                "zh-Hans": "我，我记起来了，里面有个叫无帽者的大坏蛋！",
+                "zh-Hant": "我，我記起來了，裡面有個叫無帽者的大壞蛋！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube nicht...",
+                    "en": "I don't think so...",
+                    "es": "No lo creo...",
+                    "fr": "Ce n'est sûrement pas son vrai nom...",
+                    "ja": "そんな名前あったっけ……",
+                    "ko": "그 이름이 아닌 거 같은데요...",
+                    "th": "ฉันว่าไม่ใช่นะ...",
+                    "zh-Hans": "肯定不叫这个名字……",
+                    "zh-Hant": "肯定不叫這個名字……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Der Hutlose, der große Bösewicht!",
+                    "en": "The Hatless, the big villain!",
+                    "es": "El Sin Sombrero, ¡el gran villano!",
+                    "fr": "Le grand méchant sans chapeau !",
+                    "ja": "無帽者の悪党！",
+                    "ko": "모자를 쓰지 않는 나쁜 녀석!",
+                    "th": "ไร้หมวก จอมวายร้าย!",
+                    "zh-Hans": "无帽者大坏蛋！",
+                    "zh-Hant": "無帽者大壞蛋！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also, {Male=Großer Bruder;Female=Große Schwester}, du suchst nach dem Insekt im Buch, oder?",
+                "en": "So, {Male=you;Female=you} are looking for the insect in the book, right?",
+                "es": "Entonces, {Male=hermano mayor;Female=hermana mayor}, ¿estás buscando el insecto del libro, verdad?",
+                "fr": "Alors, vous voulez trouver l'insecte du livre ?",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}はこの話に出た虫が欲しいの？",
+                "ko": "이야기책에 나오는 그 곤충를 찾고 싶은 거예요?",
+                "th": "ถ้าอย่างนั้น {Male=พี่ชาย;Female=พี่สาว}ก็กำลังตามหาแมลงในหนังสืออยู่ใช่ไหม?",
+                "zh-Hans": "所以，{Male=大哥哥;Female=大姐姐}是想找到故事书里的那种虫子吗？",
+                "zh-Hant": "所以，{Male=大哥哥;Female=大姐姐}是想找到故事書裡的那種蟲子嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine goldene Fliege, die süß riecht... Klingt wie der gelbe Schmetterling, den wir heute gefangen haben.",
+                "en": "A golden fly that smells sweet... Sounds like the yellow butterfly we caught today.",
+                "es": "Una mosca dorada que huele dulce... Suena como la mariposa amarilla que atrapamos hoy.",
+                "fr": "Doré, sucré... ressemble-t-il à ce papillon jaune que nous avons attrapé aujourd'hui ?",
+                "ja": "金色で、甘い匂いがする、か……今日捕まえた黄色い蝶に似てるかも。",
+                "ko": "금색에... 달달한... 오늘 저희가 잡은 노랑나비 느낌인가...?",
+                "th": "แมลงสีทองที่มีกลิ่นหอมหวาน... ฟังดูเหมือนผีเสื้อสีเหลืองที่พวกเราจับได้วันนี้เลย",
+                "zh-Hans": "金色的，甜甜的……感觉很像我们今天抓到的黄蝴蝶？",
+                "zh-Hant": "金色的，甜甜的……感覺很像我們今天抓到的黃蝴蝶？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein riesiger gelber Schmetterling! Zeig {Male=Großer Bruder;Female=Große Schwester}, was wir haben!",
+                "en": "A giant yellow butterfly! Just show {Male=him;Female=her} what we get!",
+                "es": "¡Una mariposa amarilla gigante! ¡Solo muestra {Male=hermano mayor;Female=hermana mayor} lo que conseguimos!",
+                "fr": "Un grand papillon jaune ! Ma sœur, montre-le vite à {Male=monsieur;Female=madame} !",
+                "ja": "おっきい蝶だよ！姉ちゃん早く見せてあげて！",
+                "ko": "엄청 큰 노랑나비! 얼릉 {Male=오빠;Female=언니}한테도 보여줘!",
+                "th": "ผีเสื้อสีเหลืองตัวยักษ์! เอาตัวที่เราจับได้มาให้{Male=พี่ชาย;Female=พี่สาว}ดูสิ!",
+                "zh-Hans": "很大的黄蝴蝶！姐姐，你快给{Male=大哥哥;Female=大姐姐}看看！",
+                "zh-Hant": "很大的黃蝴蝶！ 姐姐，你快給{Male=大哥哥;Female=大姐姐}看看！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau mal, {Male=Großer Bruder;Female=Große Schwester}. Wir haben ihn im Gebüsch gefunden.",
+                "en": "Take a look, {Male=sir;Female=miss}. We had it in the shrubs.",
+                "es": "Echa un vistazo, {Male=hermano mayor;Female=hermana mayor}. Lo teníamos en los arbustos.",
+                "fr": "Nous l'avons trouvé dans un buisson de fleurs.",
+                "ja": "ほら{Male=お兄ちゃん;Female=お姉ちゃん}、見て。お花の中で見つけたんだ。",
+                "ko": "보세요, 저희가 꽃밭에서 찾았어요",
+                "th": "ดูนี่สิ{Male=พี่ชาย;Female=พี่สาว} เราเจอในพุ่มไม้",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}你看，我们是在花丛里找到的。",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}你看，我們是在花叢裡找到的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er ernährt sich von Honig und riecht süß, genau wie die Art von Süßigkeiten, die Papa uns immer gibt.",
+                "en": "It feeds on honey and smells sweet just like the kind of candy Daddy would treat us to.",
+                "es": "Se alimenta de miel y huele dulce, justo como el tipo de dulce que papá nos daría.",
+                "fr": "Il aime le nectar des fleurs, il a une odeur sucrée comme le sucre que papa a acheté.",
+                "ja": "蜜を食べてるから甘い匂いがするよ。お父さんが買った飴みたい。",
+                "ko": "아버지가 사준 사탕처럼 달콤한 냄새가 나는 꿀을 좋아해요",
+                "th": "มันกินน้ำผึ้งเป็นอาหาร ก็เลยมีกลิ่นหอมหวานเหมือนลูกอมที่พ่อเคยซื้อให้พวกเราเลย",
+                "zh-Hans": "它喜欢吃花蜜，闻起来有甜甜的味道，像爹爹买的糖一样。",
+                "zh-Hant": "它喜歡吃花蜜，聞起來有甜甜的味道，像爹爹買的糖一樣。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Er ist so schön!",
+                    "en": "It's so beautiful!",
+                    "es": "¡Es tan hermosa!",
+                    "fr": "C'est beau !",
+                    "ja": "キレイ！",
+                    "ko": "엄청 예쁘네요",
+                    "th": "สวยจัง!",
+                    "zh-Hans": "好漂亮！",
+                    "zh-Hant": "好漂亮！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Darf ich ihn haben?",
+                    "en": "May I have it?",
+                    "es": "¿Puedo tenerla?",
+                    "fr": "Puis-je l'avoir ?",
+                    "ja": "譲ってくれない？",
+                    "ko": "저에게 줄 수 있나요?",
+                    "th": "ฉันขอได้ไหม?",
+                    "zh-Hans": "可以送给我吗？",
+                    "zh-Hant": "可以送給我嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hehe, ich mache keine Witze!",
+                "en": "Hehe, I kid you not!",
+                "es": "Jeje, ¡no te estoy tomando el pelo!",
+                "fr": "Hmm, il est beau, n'est-ce pas ?",
+                "ja": "ふふん！だよねー！",
+                "ko": "그쵸, 예쁘죠!",
+                "th": "ฮี่ๆ บอกแล้วหนูไม่ได้ล้อพี่เล่น!",
+                "zh-Hans": "哼哼，好看吧！",
+                "zh-Hant": "哼哼，好看吧！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich! Aber versprich mir, dass du zum Versteckspiel mit uns kommst!",
+                "en": "Of course! But promise me to come over to play hide-and-seek with us!",
+                "es": "¡Por supuesto! ¡Pero prométeme que vendrás a jugar al escondite con nosotros!",
+                "fr": "D'accord ! Mais si vous le voulez, {Male=monsieur;Female=madame}, venez nous trouver plus souvent.",
+                "ja": "ねえねえ{Male=お兄ちゃん;Female=お姉ちゃん}！今度一緒にかくれんぼしようよ！",
+                "ko": "네, 대신에 앞으로 자주 저희를 찾아와서 같이 숨바꼭질을 해주셔야 해요",
+                "th": "ได้เลย! แต่ต้องสัญญาก่อนนะว่าจะมาเล่นซ่อนหากับพวกเรา!",
+                "zh-Hans": "可以呀！但是想要的话，{Male=大哥哥;Female=大姐姐}以后就要经常来找我们玩捉迷藏。",
+                "zh-Hant": "可以呀！ 但是想要的話，{Male=大哥哥;Female=大姐姐}以後就要經常來找我們玩捉迷藏。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar doch.",
+                    "en": "Sure thing.",
+                    "es": "Por supuesto.",
+                    "fr": "C'est bon.",
+                    "ja": "やろう。",
+                    "ko": "문제없어요",
+                    "th": "ได้สิ",
+                    "zh-Hans": "没问题。",
+                    "zh-Hant": "沒問題。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin ein echter Experte darin.",
+                    "en": "I'm quite the expert at this.",
+                    "es": "Soy bastante experto en esto.",
+                    "fr": "Je suis un expert en cache-cache.",
+                    "ja": "このかくれんぼ名人に言ったな？",
+                    "ko": "저 숨바꼭질 잘해요!",
+                    "th": "เรื่องนี้พี่เชี่ยวชาญเป็นพิเศษเลย",
+                    "zh-Hans": "我可是捉迷藏高手。",
+                    "zh-Hant": "我可是捉迷藏高手。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Papa hat uns Tricks beigebracht. Du kannst nicht herumalbern!",
+                "en": "Daddy taught us tricks. You can't mess around!",
+                "es": "Papá nos enseñó trucos. ¡No puedes jugar en broma!",
+                "fr": "Je n'ai pas peur, nous avons la technique de la cachette que papa nous a enseignée !",
+                "ja": "怖くないもん！私たちには父さんに教わった秘密の奥義があるもんね！",
+                "ko": "저희는 두렵지 않아요! 저희도 아빠가 가르쳐준 숨바꼭질 기술이 있어요!",
+                "th": "พ่อเคยสอนเคล็ดลับให้พวกเราด้วยนะ พี่จะมาเล่นๆ ไม่ได้นะ!",
+                "zh-Hans": "我才不怕，我们有爹爹教的躲藏术！",
+                "zh-Hant": "我才不怕，我們有爹爹教的躲藏術！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte nimm den Schmetterling. Und vergiss nicht dein Versprechen!",
+                "en": "Please accept the butterfly. And don't forget your promise!",
+                "es": "Por favor, acepta la mariposa. ¡Y no olvides tu promesa!",
+                "fr": "Alors, je vous donne ce papillon. {Male=Monsieur;Female=Madame}, venez nous voir la prochaine fois.",
+                "ja": "じゃあ、この蝶はあげる！{Male=お兄ちゃん;Female=お姉ちゃん}、また遊びに来てね！約束！",
+                "ko": "여기 나비요! 다음에 꼭 놀러 오셔야 해요",
+                "th": "รับผีเสื้อตัวนี้ไปสิ แล้วก็อย่าลืมสัญญานะ!",
+                "zh-Hans": "那这只蝴蝶我们就送给你了，{Male=大哥哥;Female=大姐姐}下次要记得来找我们玩哦。",
+                "zh-Hant": "那這隻蝴蝶我們就送給你了，{Male=大哥哥;Female=大姐姐}下次要記得來找我們玩喔。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis dann!",
+                "en": "Until then!",
+                "es": "¡Hasta entonces!",
+                "fr": "À la prochaine !",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}、またね！",
+                "ko": "다음에 또 만나요!",
+                "th": "แล้วเจอกันนะ!",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}下次见！",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}下次見！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Verstecken spielen! Verstecken spielen!",
+                "en": "Hide-and-seek! Hide-and-seek!",
+                "es": "¡Al escondite! ¡Al escondite!",
+                "fr": "Cache-cache, cache-cache !",
+                "ja": "かっくれんぼ、かっくれんぼ！",
+                "ko": "숨바꼭질, 숨바꼭질!",
+                "th": "ซ่อนหา! ซ่อนหา!",
+                "zh-Hans": "捉迷藏，捉迷藏！",
+                "zh-Hant": "捉迷藏，捉迷藏！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "parentId": 98,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 99,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880800001,
+          "mapId": 8,
+          "blueprintType": "NPC0129",
+          "name": "TsEntity_0129_121_铭铭2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108770,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 13,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein Entomologe... Ich habe keine Ahnung.",
+                "en": "An entomologist... I have no clues.",
+                "es": "Un entomólogo... No tengo pistas.",
+                "fr": "Les experts en insectes... en effet, je n'y avais pas pensé.",
+                "ja": "虫に詳しい人は……咄嗟に思いつきませんね。",
+                "ko": "곤충을 아는 사람... 아 생각나는 사람이 없네요",
+                "th": "นักกีฏวิทยา... ฉันไม่รู้จะไปหาจากที่ไหน",
+                "zh-Hans": "懂昆虫的人……我确实一下子想不太到。",
+                "zh-Hant": "懂昆蟲的人……我確實一下子想不太到。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht solltest du zum Teich gehen. Dort sieht man oft Kinder, die Fliegen fangen.",
+                "en": "Maybe you should go to the pond. Some kids are frequently seen catching flies there.",
+                "es": "Quizás deberías ir al estanque. Algunos niños suelen ser vistos cazando moscas allí.",
+                "fr": "Peut-être on trouve des enfants qui aiment jouer avec des insectes à l'étang de la ville ?",
+                "ja": "もしかしたら、城内の池などで、虫取りをしてる子供がいるかも……？",
+                "ko": "아, 성안의 연못가에 가서 곤충 잡는 것을 좋아하는 아이들을 만나보세요",
+                "th": "คุณลองไปที่สระน้ำดูสิ มีเด็กๆ ไปจับแมลงแถวนั้นบ่อยนะ",
+                "zh-Hans": "也许可以去城里的水池边，找找喜欢在那里抓昆虫的小孩子？",
+                "zh-Hant": "也許可以去城裡的水池邊，找找喜歡在那裡抓昆蟲的小孩子？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Großer Bruder;Female=Große Schwester} liebt diese Käfer auch?",
+                "en": "Do {Male=you;Female=you} like these bugs too?",
+                "es": "¿A {Male=hermano mayor;Female=hermana mayor} también le gustan estos insectos?",
+                "fr": "{Male=Monsieur;Female=Madame}, aimez-vous des insectes ?",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}も虫が好きなの？",
+                "ko": "{Male=오빠;Female=언니}도 곤충 잡는 거 좋아해요?",
+                "th": "{Male=พี่ชาย;Female=พี่สาว}ก็ชอบแมลงพวกนี้เหมือนกันเหรอ?",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}也很喜欢抓虫子吗？",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}也很喜歡抓蟲子嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nein, Mingming. {Male=Großer Bruder;Female=Große Schwester} braucht, dass du eine Frage beantwortest.",
+                "en": "No, Mingming. {Male=He;Female=She} needs you to answer a question.",
+                "es": "No, Mingming. {Male=hermano mayor;Female=hermana mayor} necesita que respondas una pregunta.",
+                "fr": "Non, Mingming, {Male=monsieur;Female=madame} te pose des questions.",
+                "ja": "違うよ銘々（めいめい）。{Male=お兄ちゃん;Female=お姉ちゃん}は話を聞きたいんだよ。",
+                "ko": "밍밍, {Male=오빠;Female=언니}은(는) 우리한테 질문하는 거야!",
+                "th": "ไม่หรอก Mingming {Male=พี่ชาย;Female=พี่สาว}เขาอยากให้เราตอบคำถามน่ะ",
+                "zh-Hans": "不是的，铭铭，{Male=大哥哥;Female=大姐姐}是要问我们问题。",
+                "zh-Hant": "不是的，銘銘，{Male=大哥哥;Female=大姐姐}是要問我們問題。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Papa hat uns Geschichten darüber erzählt. Die Legende von einem Helden! Erinnerst du dich noch?",
+                "en": "Daddy has told us stories about it. The legend of a hero! Do you still remember?",
+                "es": "Papá nos ha contado historias sobre eso. ¡La leyenda de un héroe! ¿Todavía lo recuerdas?",
+                "fr": "Mon père nous a déjà parlé de ce livre, une grande aventure, Mingming, vous vous en souvenez ?",
+                "ja": "この本……確か父さんが読んでくれた本だっけ。確か大冒険の話だよね。銘々、覚えてる？",
+                "ko": "이 이야기책은 아빠가 읽어주신 모험 이야기야. 밍밍, 너도 기억하고 있지?",
+                "th": "พ่อเคยเล่าให้พวกเราฟังอยู่นะ ตำนานวีรบุรุษน่ะ! เธอยังจำได้ไหม?",
+                "zh-Hans": "这本故事书，爹爹念给我们听过，是大冒险的故事，铭铭还记得吗？",
+                "zh-Hant": "這本故事書，爹爹唸給我們聽過，是大冒險的故事，銘銘還記得嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich weiß! Und ein Held und ein großer Bösewicht, der Hutlose, richtig?!",
+                "en": "Oh, I know! And a hero and a big bad guy, the Hatless, right?!",
+                "es": "¡Oh, lo sé! ¿Y un héroe y un gran malvado, el Sin Sombrero, verdad?!",
+                "fr": "Je me souviens, il y a un grand méchant sans chapeau !",
+                "ja": "あ、思い出した！無帽者（むぼうしゃ）って悪党がいたお話！",
+                "ko": "아, 나 기억났어. 그 이야기에서는 「모자 없는 사람」이 악당으로 나와!",
+                "th": "อ๋อ รู้แล้ว! แล้วก็มีวีรบุรุษกับจอมวายร้ายที่ชื่อไร้หมวกใช่ไหม!",
+                "zh-Hans": "我，我记起来了，里面有个叫无帽者的大坏蛋！",
+                "zh-Hant": "我，我記起來了，裡面有個叫無帽者的大壞蛋！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube nicht...",
+                    "en": "I don't think so...",
+                    "es": "No lo creo...",
+                    "fr": "Ce n'est sûrement pas son vrai nom...",
+                    "ja": "そんな名前あったっけ……",
+                    "ko": "그 이름이 아닌 거 같은데요...",
+                    "th": "ฉันว่าไม่ใช่นะ...",
+                    "zh-Hans": "肯定不叫这个名字……",
+                    "zh-Hant": "肯定不叫這個名字……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Der Hutlose, der große Bösewicht!",
+                    "en": "The Hatless, the big villain!",
+                    "es": "El Sin Sombrero, ¡el gran villano!",
+                    "fr": "Le grand méchant sans chapeau !",
+                    "ja": "無帽者の悪党！",
+                    "ko": "모자를 쓰지 않는 나쁜 녀석!",
+                    "th": "ไร้หมวก จอมวายร้าย!",
+                    "zh-Hans": "无帽者大坏蛋！",
+                    "zh-Hant": "無帽者大壞蛋！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also, {Male=Großer Bruder;Female=Große Schwester}, du suchst nach dem Insekt im Buch, oder?",
+                "en": "So, {Male=you;Female=you} are looking for the insect in the book, right?",
+                "es": "Entonces, {Male=hermano mayor;Female=hermana mayor}, ¿estás buscando el insecto del libro, verdad?",
+                "fr": "Alors, vous voulez trouver l'insecte du livre ?",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}はこの話に出た虫が欲しいの？",
+                "ko": "이야기책에 나오는 그 곤충를 찾고 싶은 거예요?",
+                "th": "ถ้าอย่างนั้น {Male=พี่ชาย;Female=พี่สาว}ก็กำลังตามหาแมลงในหนังสืออยู่ใช่ไหม?",
+                "zh-Hans": "所以，{Male=大哥哥;Female=大姐姐}是想找到故事书里的那种虫子吗？",
+                "zh-Hant": "所以，{Male=大哥哥;Female=大姐姐}是想找到故事書裡的那種蟲子嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine goldene Fliege, die süß riecht... Klingt wie der gelbe Schmetterling, den wir heute gefangen haben.",
+                "en": "A golden fly that smells sweet... Sounds like the yellow butterfly we caught today.",
+                "es": "Una mosca dorada que huele dulce... Suena como la mariposa amarilla que atrapamos hoy.",
+                "fr": "Doré, sucré... ressemble-t-il à ce papillon jaune que nous avons attrapé aujourd'hui ?",
+                "ja": "金色で、甘い匂いがする、か……今日捕まえた黄色い蝶に似てるかも。",
+                "ko": "금색에... 달달한... 오늘 저희가 잡은 노랑나비 느낌인가...?",
+                "th": "แมลงสีทองที่มีกลิ่นหอมหวาน... ฟังดูเหมือนผีเสื้อสีเหลืองที่พวกเราจับได้วันนี้เลย",
+                "zh-Hans": "金色的，甜甜的……感觉很像我们今天抓到的黄蝴蝶？",
+                "zh-Hant": "金色的，甜甜的……感覺很像我們今天抓到的黃蝴蝶？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein riesiger gelber Schmetterling! Zeig {Male=Großer Bruder;Female=Große Schwester}, was wir haben!",
+                "en": "A giant yellow butterfly! Just show {Male=him;Female=her} what we get!",
+                "es": "¡Una mariposa amarilla gigante! ¡Solo muestra {Male=hermano mayor;Female=hermana mayor} lo que conseguimos!",
+                "fr": "Un grand papillon jaune ! Ma sœur, montre-le vite à {Male=monsieur;Female=madame} !",
+                "ja": "おっきい蝶だよ！姉ちゃん早く見せてあげて！",
+                "ko": "엄청 큰 노랑나비! 얼릉 {Male=오빠;Female=언니}한테도 보여줘!",
+                "th": "ผีเสื้อสีเหลืองตัวยักษ์! เอาตัวที่เราจับได้มาให้{Male=พี่ชาย;Female=พี่สาว}ดูสิ!",
+                "zh-Hans": "很大的黄蝴蝶！姐姐，你快给{Male=大哥哥;Female=大姐姐}看看！",
+                "zh-Hant": "很大的黃蝴蝶！ 姐姐，你快給{Male=大哥哥;Female=大姐姐}看看！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau mal, {Male=Großer Bruder;Female=Große Schwester}. Wir haben ihn im Gebüsch gefunden.",
+                "en": "Take a look, {Male=sir;Female=miss}. We had it in the shrubs.",
+                "es": "Echa un vistazo, {Male=hermano mayor;Female=hermana mayor}. Lo teníamos en los arbustos.",
+                "fr": "Nous l'avons trouvé dans un buisson de fleurs.",
+                "ja": "ほら{Male=お兄ちゃん;Female=お姉ちゃん}、見て。お花の中で見つけたんだ。",
+                "ko": "보세요, 저희가 꽃밭에서 찾았어요",
+                "th": "ดูนี่สิ{Male=พี่ชาย;Female=พี่สาว} เราเจอในพุ่มไม้",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}你看，我们是在花丛里找到的。",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}你看，我們是在花叢裡找到的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er ernährt sich von Honig und riecht süß, genau wie die Art von Süßigkeiten, die Papa uns immer gibt.",
+                "en": "It feeds on honey and smells sweet just like the kind of candy Daddy would treat us to.",
+                "es": "Se alimenta de miel y huele dulce, justo como el tipo de dulce que papá nos daría.",
+                "fr": "Il aime le nectar des fleurs, il a une odeur sucrée comme le sucre que papa a acheté.",
+                "ja": "蜜を食べてるから甘い匂いがするよ。お父さんが買った飴みたい。",
+                "ko": "아버지가 사준 사탕처럼 달콤한 냄새가 나는 꿀을 좋아해요",
+                "th": "มันกินน้ำผึ้งเป็นอาหาร ก็เลยมีกลิ่นหอมหวานเหมือนลูกอมที่พ่อเคยซื้อให้พวกเราเลย",
+                "zh-Hans": "它喜欢吃花蜜，闻起来有甜甜的味道，像爹爹买的糖一样。",
+                "zh-Hant": "它喜歡吃花蜜，聞起來有甜甜的味道，像爹爹買的糖一樣。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Er ist so schön!",
+                    "en": "It's so beautiful!",
+                    "es": "¡Es tan hermosa!",
+                    "fr": "C'est beau !",
+                    "ja": "キレイ！",
+                    "ko": "엄청 예쁘네요",
+                    "th": "สวยจัง!",
+                    "zh-Hans": "好漂亮！",
+                    "zh-Hant": "好漂亮！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Darf ich ihn haben?",
+                    "en": "May I have it?",
+                    "es": "¿Puedo tenerla?",
+                    "fr": "Puis-je l'avoir ?",
+                    "ja": "譲ってくれない？",
+                    "ko": "저에게 줄 수 있나요?",
+                    "th": "ฉันขอได้ไหม?",
+                    "zh-Hans": "可以送给我吗？",
+                    "zh-Hant": "可以送給我嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hehe, ich mache keine Witze!",
+                "en": "Hehe, I kid you not!",
+                "es": "Jeje, ¡no te estoy tomando el pelo!",
+                "fr": "Hmm, il est beau, n'est-ce pas ?",
+                "ja": "ふふん！だよねー！",
+                "ko": "그쵸, 예쁘죠!",
+                "th": "ฮี่ๆ บอกแล้วหนูไม่ได้ล้อพี่เล่น!",
+                "zh-Hans": "哼哼，好看吧！",
+                "zh-Hant": "哼哼，好看吧！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich! Aber versprich mir, dass du zum Versteckspiel mit uns kommst!",
+                "en": "Of course! But promise me to come over to play hide-and-seek with us!",
+                "es": "¡Por supuesto! ¡Pero prométeme que vendrás a jugar al escondite con nosotros!",
+                "fr": "D'accord ! Mais si vous le voulez, {Male=monsieur;Female=madame}, venez nous trouver plus souvent.",
+                "ja": "ねえねえ{Male=お兄ちゃん;Female=お姉ちゃん}！今度一緒にかくれんぼしようよ！",
+                "ko": "네, 대신에 앞으로 자주 저희를 찾아와서 같이 숨바꼭질을 해주셔야 해요",
+                "th": "ได้เลย! แต่ต้องสัญญาก่อนนะว่าจะมาเล่นซ่อนหากับพวกเรา!",
+                "zh-Hans": "可以呀！但是想要的话，{Male=大哥哥;Female=大姐姐}以后就要经常来找我们玩捉迷藏。",
+                "zh-Hant": "可以呀！ 但是想要的話，{Male=大哥哥;Female=大姐姐}以後就要經常來找我們玩捉迷藏。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar doch.",
+                    "en": "Sure thing.",
+                    "es": "Por supuesto.",
+                    "fr": "C'est bon.",
+                    "ja": "やろう。",
+                    "ko": "문제없어요",
+                    "th": "ได้สิ",
+                    "zh-Hans": "没问题。",
+                    "zh-Hant": "沒問題。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin ein echter Experte darin.",
+                    "en": "I'm quite the expert at this.",
+                    "es": "Soy bastante experto en esto.",
+                    "fr": "Je suis un expert en cache-cache.",
+                    "ja": "このかくれんぼ名人に言ったな？",
+                    "ko": "저 숨바꼭질 잘해요!",
+                    "th": "เรื่องนี้พี่เชี่ยวชาญเป็นพิเศษเลย",
+                    "zh-Hans": "我可是捉迷藏高手。",
+                    "zh-Hant": "我可是捉迷藏高手。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Papa hat uns Tricks beigebracht. Du kannst nicht herumalbern!",
+                "en": "Daddy taught us tricks. You can't mess around!",
+                "es": "Papá nos enseñó trucos. ¡No puedes jugar en broma!",
+                "fr": "Je n'ai pas peur, nous avons la technique de la cachette que papa nous a enseignée !",
+                "ja": "怖くないもん！私たちには父さんに教わった秘密の奥義があるもんね！",
+                "ko": "저희는 두렵지 않아요! 저희도 아빠가 가르쳐준 숨바꼭질 기술이 있어요!",
+                "th": "พ่อเคยสอนเคล็ดลับให้พวกเราด้วยนะ พี่จะมาเล่นๆ ไม่ได้นะ!",
+                "zh-Hans": "我才不怕，我们有爹爹教的躲藏术！",
+                "zh-Hant": "我才不怕，我們有爹爹教的躲藏術！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte nimm den Schmetterling. Und vergiss nicht dein Versprechen!",
+                "en": "Please accept the butterfly. And don't forget your promise!",
+                "es": "Por favor, acepta la mariposa. ¡Y no olvides tu promesa!",
+                "fr": "Alors, je vous donne ce papillon. {Male=Monsieur;Female=Madame}, venez nous voir la prochaine fois.",
+                "ja": "じゃあ、この蝶はあげる！{Male=お兄ちゃん;Female=お姉ちゃん}、また遊びに来てね！約束！",
+                "ko": "여기 나비요! 다음에 꼭 놀러 오셔야 해요",
+                "th": "รับผีเสื้อตัวนี้ไปสิ แล้วก็อย่าลืมสัญญานะ!",
+                "zh-Hans": "那这只蝴蝶我们就送给你了，{Male=大哥哥;Female=大姐姐}下次要记得来找我们玩哦。",
+                "zh-Hant": "那這隻蝴蝶我們就送給你了，{Male=大哥哥;Female=大姐姐}下次要記得來找我們玩喔。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis dann!",
+                "en": "Until then!",
+                "es": "¡Hasta entonces!",
+                "fr": "À la prochaine !",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}、またね！",
+                "ko": "다음에 또 만나요!",
+                "th": "แล้วเจอกันนะ!",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}下次见！",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}下次見！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 121,
+                "name": {
+                  "zh-Hans": "豆豆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Verstecken spielen! Verstecken spielen!",
+                "en": "Hide-and-seek! Hide-and-seek!",
+                "es": "¡Al escondite! ¡Al escondite!",
+                "fr": "Cache-cache, cache-cache !",
+                "ja": "かっくれんぼ、かっくれんぼ！",
+                "ko": "숨바꼭질, 숨바꼭질!",
+                "th": "ซ่อนหา! ซ่อนหา!",
+                "zh-Hans": "捉迷藏，捉迷藏！",
+                "zh-Hant": "捉迷藏，捉迷藏！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 206,
+                "name": {
+                  "zh-Hans": "铭铭"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "parentId": 102,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 104,
+      "parentId": 102,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880800001,
+          "mapId": 8,
+          "blueprintType": "NPC0129",
+          "name": "TsEntity_0129_121_铭铭2",
+          "areaId": 301,
+          "position": {
+            "x": -49760,
+            "y": 108770,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

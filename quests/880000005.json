@@ -1,0 +1,1574 @@
+{
+  "id": 880000005,
+  "key": "收集任务第二天",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Meer aus Blumen im Tal.",
+    "en": "Sea of Flowers in the Valley",
+    "es": "Mar de flores en el valle.",
+    "fr": "Mer de fleurs de la vallée",
+    "ja": "谷の花畑",
+    "ko": "계곡의 꽃바다",
+    "th": "ทะเลบุปผาในหุบเขา",
+    "zh-Hans": "谷地的花海",
+    "zh-Hant": "谷地的花海"
+  },
+  "desc": {
+    "de": "Magi versucht, dich zu kontaktieren, und es scheint mit dem großangelegten Projekt namens Der Sol-2 zusammenzuhängen, das die Pioneer Convention in letzter Zeit geplant hat ......",
+    "en": "Maqi is trying to contact you, and it appears to be related to the Pioneer Association's ambitious project, \"Second Coming of Solaris\"...",
+    "es": "Maqi está intentando ponerse en contacto contigo. Parece que tiene que ver con el ambicioso proyecto «Segunda venida de Solaris», que la Asociación de Pioneros ha estado planeando últimamente...",
+    "fr": "Maqi tente de vous joindre. Il semblerait que ce soit en lien avec le projet ambitieux de l'Association Pionnière : le Sol-2…",
+    "ja": "馬琪からの連絡があったようだ。それが先駆条約が最近取り掛かっている「第二ソラリス」という大型プロジェクトに関わるみたい……",
+    "ko": "마치가 연락을 시도하고 있습니다. 이는 최근 선행공약이 기획한 「세컨드 솔라리스」라는 대형 프로젝트와 관련이 있는 것 같습니다...",
+    "th": "หม่าฉีพยายามติดต่อคุณ ดูเหมือนจะเกี่ยวข้องกับโครงการที่สมาคมผู้บุกเบิกมุ่งหวัง \"ดาวโซลาริสดวงที่สอง\"...",
+    "zh-Hans": "马琪正在尝试联络你，而这似乎与先行公约最近筹划的名为《第二索拉》的大型项目有关……",
+    "zh-Hant": "馬琪正在嘗試聯絡你，而這似乎與先行公約最近籌劃的名為《第二索拉》的大型專案有關……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 40,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maggie, um mehr über das heutige Spielszenario zu erfahren.",
+        "en": "Talk to Maqi to find out about today's game scenario.",
+        "es": "Habla con Maqi para obtener información sobre el escenario del juego de hoy.",
+        "fr": "Contacter Maqi pour en savoir plus sur le scénario du jour",
+        "ja": "今日作るゲームのシーンについて馬琪に聞く",
+        "ko": "마치를 찾아 오늘 만들 맵에 대해 묻기",
+        "th": "คุยกับหม่าฉีเพื่อทำความเข้าใจสถานการณ์เกมของวันนี้",
+        "zh-Hans": "找马琪了解今天要制作的游戏场景",
+        "zh-Hant": "找馬琪了解今天要製作的遊戲場景"
+      },
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Lassen Sie mich unsere Arbeit heute erklären.",
+                "en": "Let me explain our job today.",
+                "es": "Permíteme explicar nuestro trabajo de hoy.",
+                "fr": "La scène de jeu à produire aujourd'hui est comme ça...",
+                "ja": "今日お願いしたいシーンはここ……",
+                "ko": "오늘 제작할 맵은 이러해요...",
+                "th": "ให้ฉันอธิบายงานของเราในวันนี้ก่อนนะ",
+                "zh-Hans": "今天要制作的游戏场景是这样的……",
+                "zh-Hant": "今天要製作的遊戲場景是這樣的……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In diesem Kapitel passierten sie auf ihrem Weg zum Mt. Moore ein Tal.",
+                "en": "In this chapter, they passed right by a valley on their way to Mt. Moore.",
+                "es": "En este capítulo, pasaron justo por un valle en su camino al monte Moore.",
+                "fr": "Dans ce chapitre, le groupe du protagoniste a traversé une vallée en direction des Monts Mole.",
+                "ja": "主人公がモール山脈へ向かう途中、谷に入る場面です。",
+                "ko": "이 장에서 주인공 일행은 모어 산맥으로 가는 길에 계곡을 지나게 돼요",
+                "th": "ในบทนี้ พวกเขาได้เดินทางผ่านหุบเขาแห่งหนึ่งระหว่างทางไปยังภูเขามัวร์",
+                "zh-Hans": "在这一章里，主角一行人在前往莫尔山脉的途中，经过了一处山谷。",
+                "zh-Hant": "在這一章裡，主角一行人在前往莫爾山脈的途中，經過了一處山谷。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es heißt: \"Wir durchquerten das Tal, als die Nacht hereinbrach...\"",
+                "en": "It goes: \"We ventured through the valley as the night fell...\"",
+                "es": "Dice: \"Nos aventuramos por el valle mientras caía la noche...\"",
+                "fr": "Le livre original dit : « Quand la nuit tombe, marchez dans la vallée... ».",
+                "ja": "原作では「更ける夜を背に、俺たちは急いで谷を抜けようとしている……」",
+                "ko": "원작에는 「밤이 되어 계곡을 걸어보았더니...」",
+                "th": "มีเนื้อความว่า \"เราเดินทางฝ่าหุบเขา ในขณะที่รัตติกาลมาเยือน...\"",
+                "zh-Hans": "原著里写道“入夜后，我们尝试徒步穿过谷地……”",
+                "zh-Hant": "原著裡寫道「入夜後，我們嘗試徒步穿過谷地……」"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"In der einzigartigen Dunkelheit der Nacht, schien das <color=highlight>Blumenmeer</color> schwarz zu werden... Eingeklemmt zwischen Blüten und Blättern, gingen wir, während unsere Kleidung ein sanftes Reiben verursachte...\"",
+                "en": "\"In the sole darkness of night, the <color=highlight>Sea of Flowers</color> seemed to fall noir... Pressed between petals and leaves, we walked as clothes uttered gentle friction...\"",
+                "es": "\"En la oscuridad de la noche, el <color=highlight>Mar de Flores</color> parecía caer en el noir... Apretados entre pétalos y hojas, caminamos mientras la ropa emitía una suave fricción...\"",
+                "fr": "Dans la nuit chaotique, la <color=highlight>mer de fleurs</color> des montagnes en plein jour perd sa couleur et ...... nous la traversons, des pétales et des brins d'herbe entre nos chaussures... ... »",
+                "ja": "「混沌としたこの夜では、昼にあれほど鮮烈に咲いた<color=highlight>花畑</color>も幾分色褪せて見えた。それを搔き分けて進む俺たちの靴と裾に、花びらや葉が舞い上がる……」",
+                "ko": "「혼돈의 밤, 낮동안 활짝 피었던 <color=highlight>꽃바다</color>의 색이 바래고... 우리가 지나갈 때, 옷 사이로 꽃잎과 풀잎이...」",
+                "th": "\"ท่ามกลางความมืดมิดอันเดียวดายแห่งราตรี <color=highlight>ทะเลบุปผา</color>ดูราวกับจะจมดิ่งสู่ความมืดมิด... เราเดินย่ำไปท่ามกลางกลีบดอกไม้และใบไม้ พลางฟังเสียงเสื้อผ้าเสียดสีกันเบาๆ...\"",
+                "zh-Hans": "“在混沌的夜色中，白日里漫山的<color=highlight>花海</color>失去了颜色……我们从中走过，衣履间夹满了花瓣与草叶……”",
+                "zh-Hant": "「在混沌的夜色中，白日裡漫山的<color=highlight>花海</color>失去了顏色……我們從中走過，衣履間夾滿了花瓣與草葉……」"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"Blass und still, wie sie war, erlaubte die Nacht unsere störende Existenz. Nein, ich hörte Murmeln auf den Wellen, die sagten \"O Reisende, O Winde...\"",
+                "en": "\"Pale and silent as it was, the night permitted our disturbing existence. No, I heard murmurs upon the waves, saying \"O travelers O winds...\"",
+                "es": "\"Pálida y silenciosa como era, la noche permitía nuestra inquietante existencia. No, escuché murmullos sobre las olas, diciendo \"Oh viajeros, oh vientos...\"",
+                "fr": "La nuit, quand il n'y a ni lumière ni vent, nous semblons être les seules créatures de la vallée. Non, cette vague agitée par nous, les voyageurs, c'est le vent... »",
+                "ja": "「光も風もない。俺たちはこの谷に残されたように感じた。いや、残された俺たちも花を揺らす風となり、この谷の空気に溶け込んだ……」",
+                "ko": "「빛도 바람도 없는 밤에 골짜기에는 우리가 유일한 생존자 같았다. 아니, 이건 꽃 파도가 우리에게 주는 바람 같았다...」",
+                "th": "\"แม้รัตติกาลจะดูซีดเซียวและเงียบงัน แต่ก็ยังอนุญาตให้การดำรงอยู่ของเรารบกวนมันได้ ไม่สิ ข้าได้ยินเสียงกระซิบแว่วมาตามเกลียวคลื่น กล่าวว่า 'โอ้ เหล่านักเดินทางเอ๋ย' 'โอ้ สายลมเอ๋ย...'\"",
+                "zh-Hans": "“在无光亦无风的夜里，我们似乎是谷地里唯一的活物。不，那被我们激起的花浪在说，旅人便是风……”",
+                "zh-Hant": "「在無光亦無風的夜裡，我們似乎是谷地裡唯一的活物。不，那被我們激起的花浪在說，旅人便是風……」"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich konnte die Ruhe spüren.",
+                    "en": "I could feel the tranquility.",
+                    "es": "Podía sentir la tranquilidad.",
+                    "fr": "C'est calme.",
+                    "ja": "静かだね。",
+                    "ko": "매우 고요하네요",
+                    "th": "สัมผัสได้ถึงความสงบเลย",
+                    "zh-Hans": "听起来很安静。",
+                    "zh-Hant": "聽起來很安靜。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eine entspannende Szene, so wie sie ist.",
+                    "en": "A relaxing scene, as it is.",
+                    "es": "Una escena relajante, como es.",
+                    "fr": "Une scène relaxante.",
+                    "ja": "なんだか眠くなる。",
+                    "ko": "느긋하게 느껴질 수 있는 장면이에요",
+                    "th": "ช่างเป็นฉากที่ผ่อนคลายจริงๆ",
+                    "zh-Hans": "是会让人觉得很放松的场景。",
+                    "zh-Hant": "是會讓人覺得很放鬆的場景。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Ich finde innere Ruhe darin.",
+                "en": "Yes. I find inner peace in this.",
+                "es": "Sí. Encuentro la paz interior en esto.",
+                "fr": "Oui, c'est pas mal.",
+                "ja": "はい。読んでいて心地いい一節ですよね。",
+                "ko": "네, 이 장면을 읽으면 마음이 상쾌해져요",
+                "th": "ใช่ ฉันค้นพบความสงบภายในใจได้จากฉากนี้เลย",
+                "zh-Hans": "是的，这一章读起来让人心旷神怡。",
+                "zh-Hant": "是的，這一章讀起來讓人心曠神怡。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn ich daran denke, was nach diesem Kapitel kommt, verlangsame ich mein Tempo...",
+                "en": "But to think of what comes after this chapter, I slow down my pace...",
+                "es": "Pero al pensar en lo que viene después de este capítulo, ralentizo mi ritmo...",
+                "fr": "Toutefois, compte tenu des rencontres qu'ils ont faites dans les Hauts noirs après avoir quitté la vallée, vous aurez intérêt à lire ce chapitre plus lentement....",
+                "ja": "それにしても、谷を抜けた後の黒い高地での一連の場面……何度も読み返したくなっちゃいます……",
+                "ko": "하지만 그들이 골짜기를 떠나 흑색 고지에서 겪은 일을 생각하면 이 장을 천천히 읽고 싶은 마음이 절로 들어요...",
+                "th": "แต่พอคิดถึงสิ่งที่จะเกิดขึ้นหลังจากบทนี้ ฉันก็อดไม่ได้ที่จะอ่านให้ช้าลง...",
+                "zh-Hans": "但一想到他们离开谷地后在黑色高地的遭遇，就不自觉地想慢一点读这一章……",
+                "zh-Hant": "但一想到他們離開谷地後在黑色高地的遭遇，就不自覺地想慢一點讀這一章……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, wir brauchen die Referenz für das <color=highlight>Blumenmeer</color>, um das Tal nach diesem Kapitel zu gestalten.",
+                "en": "Anyway, we need the reference for the <color=highlight>Sea of Flowers</color> to create the valley according to this chapter.",
+                "es": "De todos modos, necesitamos la referencia para el <color=highlight>Mar de Flores</color> para crear el valle de acuerdo a este capítulo.",
+                "fr": "Pour en revenir au sujet principal, une référence à la « mer de fleurs » est nécessaire pour aider les développeurs à créer des scènes de vallée qui correspondent aux scènes du roman.",
+                "ja": "おっと、話を戻しましょう。開発スタッフはこの「花畑」の参考になるものを探しています。",
+                "ko": "본론으로 돌아가서, 개발자들이 소설의 시나리오에 맞는 계곡 장면을 만들 수 있도록 돕기 위해 「꽃바다」에 대한 참고가 필요해요",
+                "th": "อย่างไรก็ตาม เราต้องการภาพอ้างอิงสำหรับทะเลบุปผา เพื่อที่จะสร้างหุบเขาตามบทนี้",
+                "zh-Hans": "回到正题，为了帮助开发人员制作出符合小说情景的谷地场景，我们需要“花海”的参考。",
+                "zh-Hant": "回到正題，為了幫助開發人員製作出符合小說情景的谷地場景，我們需要「花海」的參考。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du zufällig auf einige Proben stößt, komm gerne vorbei.",
+                "en": "If you happen to come across some samples, feel free to drop by.",
+                "es": "Si te encuentras con algunas muestras, no dudes en pasar.",
+                "fr": "Si vous trouvez quelque chose qui vous convient, vous pouvez toujours me le transmettre.",
+                "ja": "この類の物を見つけたら、私のところに持ってきてください。",
+                "ko": "만약 적당한 물건을 찾는다면, 언제든지 절 찾아와 건네주시면 돼요",
+                "th": "ถ้าคุณบังเอิญเจอตัวอย่างเข้า ก็แวะมาหาฉันได้เลยนะ",
+                "zh-Hans": "如果你有找到合适的物品的话，可以随时过来交给我。",
+                "zh-Hant": "如果你有找到合適的物品的話，可以隨時過來交給我。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "parentId": 15,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 98,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 106,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 23,
+      "parentId": 20,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 108,
+      "parentId": 20,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 25,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 14,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wenn ich vom <color=highlight>Blumenmeer</color> spreche, besuche ich Bogus Laubengang in der Geschäftsgegend, wenn ich frei habe.",
+                "en": "Speaking of the <color=highlight>Sea of Flowers</color>, I do visit Bogu's Arbor around the business area when off shift.",
+                "es": "Hablando del <color=highlight>Mar de Flores</color>, suelo visitar la Tienda de Bonsáis en la zona de negocios cuando no estoy de turno.",
+                "fr": "En parlant de la mer des fleurs ......, je vais parfois à la boutique de Bogu après le travail.",
+                "ja": "花畑、花畑……私、仕事終わりに、商業区域にある「博古盆栽屋」に寄ることがあるのですが……",
+                "ko": "꽃바다 하면... 저는 퇴근 후 가끔 상점가에 있는 「박고 분재」 가게에 들러요",
+                "th": "พูดถึงทะเลบุปผา หลังเลิกงาน ฉันมักจะไปที่ซุ้มไม้ของปั๋วกู่แถวย่านธุรกิจ",
+                "zh-Hans": "说到花海……我下班后偶尔会去商店街的博古盆景店里逛逛。",
+                "zh-Hant": "說到花海……我下班後偶爾會去商店街的博古盆景店裡逛逛。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du etwas über Pflanzen wissen möchtest, kannst du Oma Lin, die Besitzerin dort, um einige Informationen bitten.",
+                "en": "If you want to inquire about something related to plants, you can ask Grandma Lin, the owner there, for some information.",
+                "es": "Si quieres preguntar sobre algo relacionado con las plantas, puedes preguntarle a la abuela Lin, la dueña de allí, para obtener algo de información.",
+                "fr": "Peut-être, vous pouvez parler à Linsu. Le propriétaire de la boutique.",
+                "ja": "植物の話なら、そこの店主、林素（りんす）さんに聞いてみるのが良さそうですね。",
+                "ko": "식물과 관련된 것은 아마도 박고 분재의 점장인 린 할머니에게 물어볼 수 있을 거예요",
+                "th": "ถ้าคุณอยากจะสอบถามอะไรที่เกี่ยวกับพืชพันธุ์ คุณไปขอข้อมูลจาก Grandma Lin เจ้าของสถานที่ได้เลยนะ",
+                "zh-Hans": "与植物有关的东西，也许可以跟博古盆景店的店主林素打听一下？",
+                "zh-Hant": "與植物有關的東西，也許可以跟博古盆景店的店主林素打聽一下？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 95,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 11000239,
+          "mapId": 8,
+          "blueprintType": "NPC0252",
+          "name": "TsEntity_0252_154_林素",
+          "areaId": 301,
+          "position": {
+            "x": -42240,
+            "y": 112190,
+            "z": 1497
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 3,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Rongqing hat mir einiges über dieses Buch erzählt.",
+                "en": "Rongqing has told me some about this book.",
+                "es": "Rongqing me ha contado algo sobre este libro.",
+                "fr": "Rongqing a parlé de ce roman.",
+                "ja": "この本は確か……栄青（えいせい）が言っていた本かしら。",
+                "ko": "이 소설은 윤식이에게 들은 적이 있어요",
+                "th": "Rongqing ได้เล่าเรื่องหนังสือเล่มนี้ให้ฉันฟังแล้ว",
+                "zh-Hans": "这本小说，我有听荣青那孩子提到过。",
+                "zh-Hant": "這本小說，我有聽榮青那孩子提到過。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann nicht sagen, dass ich viel Erfahrung mit so etwas habe... Ich bin einfach zu alt für eine vollgepackte Seite...",
+                "en": "I can't say I have much experience with stuff like this... I'm just too old for a packed page...",
+                "es": "No puedo decir que tenga mucha experiencia con cosas así... Simplemente soy demasiado vieja para una página llena...",
+                "fr": "Mais après tout, c'est une affaire de jeunes, je ne comprends sûrement pas bien... Je suis vieux, je ne peux pas lire de petits caractères.",
+                "ja": "でも、若者の話にはついていけなくてね……それに、こんな小さい文字なんて読めないわ。",
+                "ko": "다만, 젊은이들이 주로 읽는거라, 저는 잘 모를 수도 있어요... 나이를 먹다 보니 빽빽한 글자는 보기가 힘드네요...",
+                "th": "ฉันก็พูดได้ไม่เต็มปากว่ามีประสบการณ์กับหนังสือแนวนี้มากนักหรอกนะ... ฉันแก่เกินกว่าจะมานั่งอ่านตัวหนังสือละลานตาแล้ว",
+                "zh-Hans": "但毕竟是你们年轻人的事物，我肯定是不太懂了……都一把年纪了，眼神看不了密密麻麻的字……",
+                "zh-Hant": "但畢竟是你們年輕人的事物，我肯定是不太懂了……都一把年紀了，眼神看不了密密麻麻的字……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann dir die Seiten vorlesen, wenn du möchtest.",
+                    "en": "I can read the pages to you if you like.",
+                    "es": "Puedo leerte las páginas si quieres.",
+                    "fr": "Si vous voulez, je peux vous lire.",
+                    "ja": "読んであげようか。？",
+                    "ko": "원하시면 읽어드릴게요",
+                    "th": "ฉันอ่านให้ฟังได้นะ",
+                    "zh-Hans": "如果您想看，我可以念给您听。",
+                    "zh-Hant": "如果您想看，我可以念給您聽。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du bist so lieb. Sag mir einfach, wenn du einige Topfpflanzen kaufen möchtest. Ich gebe dir Rabatte!",
+                "en": "You're so sweet. Just tell me if you want to buy some <ano=Bonsai>Penjing</ano>. I'm giving you discounts!",
+                "es": "Eres muy dulce. Solo dime si quieres comprar algunas plantas en maceta. ¡Te estoy dando descuentos!",
+                "fr": "Quoi ? Vous êtes vraiment un enfant gentil. Dites-moi si vous voulez acheter un bonsaï. Je vous ferai une réduction.",
+                "ja": "まあ……なんていい子なのかしら。今度お店に来たら、おまけしてあげるわ。",
+                "ko": "정말 착한 아이군요. 분재를 사고 싶다면 언제든지 말하세요. 특별히 할인을 해줄게요",
+                "th": "เธอช่างน่ารักจริงๆ ถ้าอยากจะซื้อ<ano=สวนถาด>บอนไซ</ano>ก็ บอกมาได้เลยนะ ฉันจะลดให้เป็นพิเศษ!",
+                "zh-Hans": "哦？你真是个善良的孩子。你要是想买盆景了随时跟我说，我给你打折。",
+                "zh-Hant": "哦？ 你真是個善良的孩子。 你要是想買盆景了隨時跟我說，我給你優惠。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gibt es etwas Ähnliches, wie es in dem Roman beschrieben wird?",
+                    "en": "Anything similar to what's described in the novel?",
+                    "es": "¿Algo similar a lo que se describe en la novela?",
+                    "fr": "Y a-t-il quelque chose comme dans le roman ?",
+                    "ja": "今、小説に出た花を探していて……",
+                    "ko": "소설에 나오는 그런 종은 없나요?",
+                    "th": "พอจะมีอะไรที่คล้ายกับที่บรรยายไว้ในนิยายบ้างไหม?",
+                    "zh-Hans": "有没有小说里描述的那种……",
+                    "zh-Hant": "有沒有小說裡描述的那種……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun, du kannst sicherlich nicht erwarten, dass eine Topfpflanze fast so beeindruckend aussieht wie ein tatsächliches Blumenmeer.",
+                "en": "Well, you certainly can't expect a potted plant to look nearly as impressive as an actual sea of flowers.",
+                "es": "Bueno, ciertamente no puedes esperar que una planta en maceta se vea casi tan impresionante como un verdadero mar de flores.",
+                "fr": "Un bonsaï ne peut pas avoir l'effet grandiose d'une mer de fleurs.",
+                "ja": "うーん、盆栽に使う植物はちょっと違うかもしれないわねぇ……",
+                "ko": "분재만으로는 꽃바다만큼 장관을 연출할 수 없을 거예요",
+                "th": "แหม จะให้ไม้กระถางดูน่าประทับใจใกล้เคียงกับทะเลดอกไม้จริงๆ ก็คงจะเป็นไปไม่ได้หรอกนะ",
+                "zh-Hans": "只说盆景的话，肯定是做不出花海那么壮观的效果了。",
+                "zh-Hant": "只說盆景的話，肯定是做不出花海那麼壯觀的效果了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich denke, ein üppiger Topf mit Iris könnte das Gefühl einfangen.",
+                "en": "But I guess a luxuriant pot of irises may capture the feel.",
+                "es": "Pero supongo que una maceta lujosa de lirios puede captar la sensación.",
+                "fr": "Mais si je devais l'imaginer, les étendues d'Iris devraient être jolies.",
+                "ja": "でも、辺り一面に咲く鳶尾花（アヤメ）なんて、とっても綺麗だと思うわ。",
+                "ko": "다만, 상상을 펼쳐보자면 연달아 펼쳐진 붓꽃이라면 참 예쁠 것 같네요",
+                "th": "แต่ฉันว่าต้นไอริสสักกระถางที่งามสะพรั่งก็น่าจะให้ความรู้สึกนั้นได้อยู่นะ",
+                "zh-Hans": "但如果要我来想象的话，连绵成一片的鸢尾花应该是很好看的。",
+                "zh-Hant": "但如果要我來想像的話，連綿成一片的鳶尾花應該是很好看的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es stammt aus dem Jaulenden Sumpf und seine Blumensprache ist zerbrechlich, unausgesprochene Zuneigungen. Romantisch, nicht wahr?",
+                "en": "It originates from Whining Aix's Mire and its flower language is fragile, untold affections. Romantic, isn't it?",
+                "es": "Proviene del Pantano de Aix y su lenguaje floral es de afectos frágiles y no contados. Romántico, ¿no es así?",
+                "fr": "Cette fleur est originaire de La Tourbe piaulante, le langage de la fleur est cassé et l'amour caché oh, très romantique, n'est-ce pas ?",
+                "ja": "怨鳥の沼に生息してる花でね。花言葉は「隠された愛」。ロマンチックでしょう？",
+                "ko": "이 붓꽃은 울음새 늪이 원산지인데 꽃말은 부서짐 그리고 은은한 사랑이에요. 낭만적이죠?",
+                "th": "มันมีต้นกำเนิดมาจากหนองปักษาร่ำไห้ และภาษาดอกไม้ของมันคือความรักที่เปราะบางและมิอาจเอ่ย ฟังดูโรแมนติกใช่ไหมล่ะ?",
+                "zh-Hans": "这种花原产自怨鸟泽，花语是破碎而隐晦的爱哦，很浪漫吧。",
+                "zh-Hant": "這種花原產自怨鳥澤，花語是破碎而隱晦的愛喔，很浪漫吧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Verkaufst du es hier?",
+                    "en": "Do you sell it here?",
+                    "es": "¿Lo vendes aquí?",
+                    "fr": "Est-ce vendu dans ce fleuriste ?",
+                    "ja": "店に売ってる？",
+                    "ko": "이곳 꽃집에서도 파나요?",
+                    "th": "ที่นี่มีขายไหม?",
+                    "zh-Hans": "这种花店里有卖吗？",
+                    "zh-Hant": "這種花店裡有賣嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es hat eine kurze Blütezeit, was es für Topfpflanzen ungeeignet macht. Daher verkaufen wir sie normalerweise nicht hier. Aber Verina kam vor ein paar Tagen vorbei und hat mir ein paar gegeben.",
+                "en": "It has a short flowering season, making it unsuitable for <ano=Bonsai>Penjing</ano>. So we usually don't sell them here. But Verina happened to drop by a few days ago and gave me a few.",
+                "es": "Tiene una corta temporada de floración, lo que la hace no apta para plantas en maceta. Por lo que normalmente no las vendemos aquí. Pero Verina pasó hace unos días y me dio algunas.",
+                "fr": "Les iris de La Tourbe piaulante ont une période de floraison très courte et ne conviennent pas pour les bonsaïs, c'est pourquoi le magasin ne les vend pas. Mais il y a deux jours, Verinay en a envoyé deux au magasin.",
+                "ja": "怨鳥の沼の鳶尾花は花期が短いし、盆栽にも向いてないから、売ってはいないんだけど……ヴェリーナちゃんからちょうど二本もらったんだ。",
+                "ko": "울음새 늪의 붓꽃은 개화 기간이 짧아 분재로 쓰기에는 적합하지 않아 판매를 하고 있지 않아요. 다만, 이틀 전에 벨리나가 가게에 두 송이를 가져온 게 있어요",
+                "th": "มันมีฤดูออกดอกที่สั้น ทำให้ไม่เหมาะจะเอามาทำ<ano=สวนถาด>บอนไซ</ano> ที่ร้านเราเลยไม่ค่อยได้ขายกัน แต่พอดีเมื่อสองสามวันก่อน Verina แวะเอามาให้ฉันไว้สองสามต้น",
+                "zh-Hans": "怨鸟泽的鸢尾花花期很短，并不适合做成盆景，所以店里并没有卖。但是前两天，维里奈有给店里送来两朵。",
+                "zh-Hant": "怨鳥澤的鳶尾花花期很短，並不適合做成盆景，所以店裡並沒有賣。 但是前兩天，維里奈有給店裡送來兩朵。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich gebe dir eine, wenn du sie brauchst.",
+                "en": "I'll give one to you if you need it.",
+                "es": "Te daré una si la necesitas.",
+                "fr": "Si vous en avez besoin, je vous en donnerai une.",
+                "ja": "必要なら持ってくといいよ。",
+                "ko": "필요하시다면, 제가 한 송이를 드릴게요",
+                "th": "ฉันให้เธอต้นหนึ่งก็ได้ถ้าเธอต้องการ",
+                "zh-Hans": "既然你有需要，我就送你一朵吧。",
+                "zh-Hant": "既然你有需要，我就送你一朵吧。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Danke, Oma Lin!",
+                    "en": "Thank you, Grandma Lin!",
+                    "es": "¡Gracias, abuela Lin!",
+                    "fr": "Merci, Mme Linsu !",
+                    "ja": "ありがとうございます！林素ばあさん！",
+                    "ko": "감사합니다. 린 할머니!",
+                    "th": "ขอบคุณมาก Grandma Lin!",
+                    "zh-Hans": "谢谢林素婆婆！",
+                    "zh-Hant": "謝謝林素婆婆！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gern geschehen. Komm einfach jederzeit vorbei.",
+                "en": "You're welcome. Just drop by anytime.",
+                "es": "De nada. Solo pasa en cualquier momento.",
+                "fr": "De rien. Venez plus souvent à la boutique.",
+                "ja": "どういたしまして。また来てくださいな。",
+                "ko": "천만에요. 앞으로도 가게에 자주 들려줘요",
+                "th": "ด้วยความยินดี แวะมาหาได้ทุกเมื่อเลยนะ",
+                "zh-Hans": "不客气，以后多来店里逛逛就行。",
+                "zh-Hant": "不客氣，以後多來店裡逛逛就行。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "parentId": 82,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 3,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Es ist wunderschön. Danke für die Arbeit. Ich werde es dem Entwicklerteam übergeben.",
+                "en": "It's beautiful. Thank you for the work. I'll hand it over to the dev team.",
+                "es": "Es hermoso. Gracias por el trabajo. Se lo entregaré al equipo de desarrollo.",
+                "fr": "C'est une belle fleur. Merci. Je la donnerai tout de suite au développeur.",
+                "ja": "キレイな花ですね、ありがとうございます。早速開発スタッフに渡しますね。",
+                "ko": "예쁜 꽃이네요. 감사해요. 개발자에게 전달할게요",
+                "th": "สวยมากเลย ขอบคุณที่ช่วยนะ เดี๋ยวฉันจะมอบให้ทีมพัฒนาเอง",
+                "zh-Hans": "很漂亮的花。谢谢你，我现在就把这个交给开发人员。",
+                "zh-Hant": "很漂亮的花。 謝謝你，我現在就把這個交給開發人員。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit diesem wird es für sie einfacher sein, sich ein Blumenmeer vorzustellen.",
+                "en": "It would be easier for them to imagine a sea of flowers with this.",
+                "es": "Sería más fácil para ellos imaginar un mar de flores con esto.",
+                "fr": "Je crois qu'on pourrait imaginer la mer de fleurs dans la vallée.",
+                "ja": "これで谷の花畑のイメージもバッチリですね。",
+                "ko": "이 꽃만 있으면 계곡의 꽃바다 장면을 상상할 수 있을 거예요",
+                "th": "พวกเขาน่าจะจินตนาการถึงทะเลบุปผาได้ง่ายขึ้น เมื่อได้ตัวอย่างนี้ไป",
+                "zh-Hans": "相信有了它，大家就能够想象出谷地里的花海场景了。",
+                "zh-Hant": "相信有了它，大家就能夠想像出谷地裡的花海場景了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einige Zeit verging, während Maqi weg war, um den Gegenstand zu übergeben...",
+                "en": "Some time passed while Maqi was away to hand over the item...",
+                "es": "Pasó un tiempo mientras Maqi se ausentó para entregar el artículo...",
+                "fr": "Un moment après que Maqi a envoyé l'objet récupéré au développeur...",
+                "ja": "馬琪が品を開発スタッフに渡した。しばらくして……",
+                "ko": "마치가 개발자에게 물건을 건네준 후, 시간이 좀 지나서...",
+                "th": "เวลาผ่านไปครู่หนึ่งขณะที่ Maqi กำลังนำของดังกล่าวไปส่งมอบ...",
+                "zh-Hans": "马琪将物品送给开发人员后，又过了一段时间……",
+                "zh-Hant": "馬琪將物品送給開發人員後，又過了一段時間……"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Danke. Damit ist die Arbeit für heute erledigt!",
+                "en": "Thank you. That wraps up today's work!",
+                "es": "Gracias. ¡Eso concluye el trabajo de hoy!",
+                "fr": "Grâce à vous, la production de la scène d'aujourd'hui a été achevée avec succès.",
+                "ja": "おかげさまで、今日のシーンの制作が無事完了しました！",
+                "ko": "덕분에 오늘 장면 제작은 잘 끝났어요",
+                "th": "ขอบคุณนะ งานของวันนี้ก็เสร็จสิ้นเพียงเท่านี้!",
+                "zh-Hans": "多亏了你，今天的场景制作顺利完成了。",
+                "zh-Hant": "多虧了你，今天的場景製作順利完成了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis morgen, {PlayerName}.",
+                "en": "See you tomorrow, {PlayerName}.",
+                "es": "Nos vemos mañana, {PlayerName}.",
+                "fr": "Je compte sur vous demain, {PlayerName}.",
+                "ja": "それでは、明日もよろしくお願いします！{PlayerName}さん！",
+                "ko": "내일도 잘 부탁해요",
+                "th": "ไว้เจอกันใหม่พรุ่งนี้นะ {PlayerName}",
+                "zh-Hans": "明天也拜托你了，{PlayerName}。",
+                "zh-Hant": "明天也拜託你了，{PlayerName}。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "parentId": 82,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 99,
+      "parentId": 98,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 99,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 11000239,
+          "mapId": 8,
+          "blueprintType": "NPC0252",
+          "name": "TsEntity_0252_154_林素",
+          "areaId": 301,
+          "position": {
+            "x": -42240,
+            "y": 112190,
+            "z": 1497
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 14,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wenn ich vom <color=highlight>Blumenmeer</color> spreche, besuche ich Bogus Laubengang in der Geschäftsgegend, wenn ich frei habe.",
+                "en": "Speaking of the <color=highlight>Sea of Flowers</color>, I do visit Bogu's Arbor around the business area when off shift.",
+                "es": "Hablando del <color=highlight>Mar de Flores</color>, suelo visitar la Tienda de Bonsáis en la zona de negocios cuando no estoy de turno.",
+                "fr": "En parlant de la mer des fleurs ......, je vais parfois à la boutique de Bogu après le travail.",
+                "ja": "花畑、花畑……私、仕事終わりに、商業区域にある「博古盆栽屋」に寄ることがあるのですが……",
+                "ko": "꽃바다 하면... 저는 퇴근 후 가끔 상점가에 있는 「박고 분재」 가게에 들러요",
+                "th": "พูดถึงทะเลบุปผา หลังเลิกงาน ฉันมักจะไปที่ซุ้มไม้ของปั๋วกู่แถวย่านธุรกิจ",
+                "zh-Hans": "说到花海……我下班后偶尔会去商店街的博古盆景店里逛逛。",
+                "zh-Hant": "說到花海……我下班後偶爾會去商店街的博古盆景店裡逛逛。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du etwas über Pflanzen wissen möchtest, kannst du Oma Lin, die Besitzerin dort, um einige Informationen bitten.",
+                "en": "If you want to inquire about something related to plants, you can ask Grandma Lin, the owner there, for some information.",
+                "es": "Si quieres preguntar sobre algo relacionado con las plantas, puedes preguntarle a la abuela Lin, la dueña de allí, para obtener algo de información.",
+                "fr": "Peut-être, vous pouvez parler à Linsu. Le propriétaire de la boutique.",
+                "ja": "植物の話なら、そこの店主、林素（りんす）さんに聞いてみるのが良さそうですね。",
+                "ko": "식물과 관련된 것은 아마도 박고 분재의 점장인 린 할머니에게 물어볼 수 있을 거예요",
+                "th": "ถ้าคุณอยากจะสอบถามอะไรที่เกี่ยวกับพืชพันธุ์ คุณไปขอข้อมูลจาก Grandma Lin เจ้าของสถานที่ได้เลยนะ",
+                "zh-Hans": "与植物有关的东西，也许可以跟博古盆景店的店主林素打听一下？",
+                "zh-Hant": "與植物有關的東西，也許可以跟博古盆景店的店主林素打聽一下？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 3,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Rongqing hat mir einiges über dieses Buch erzählt.",
+                "en": "Rongqing has told me some about this book.",
+                "es": "Rongqing me ha contado algo sobre este libro.",
+                "fr": "Rongqing a parlé de ce roman.",
+                "ja": "この本は確か……栄青（えいせい）が言っていた本かしら。",
+                "ko": "이 소설은 윤식이에게 들은 적이 있어요",
+                "th": "Rongqing ได้เล่าเรื่องหนังสือเล่มนี้ให้ฉันฟังแล้ว",
+                "zh-Hans": "这本小说，我有听荣青那孩子提到过。",
+                "zh-Hant": "這本小說，我有聽榮青那孩子提到過。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann nicht sagen, dass ich viel Erfahrung mit so etwas habe... Ich bin einfach zu alt für eine vollgepackte Seite...",
+                "en": "I can't say I have much experience with stuff like this... I'm just too old for a packed page...",
+                "es": "No puedo decir que tenga mucha experiencia con cosas así... Simplemente soy demasiado vieja para una página llena...",
+                "fr": "Mais après tout, c'est une affaire de jeunes, je ne comprends sûrement pas bien... Je suis vieux, je ne peux pas lire de petits caractères.",
+                "ja": "でも、若者の話にはついていけなくてね……それに、こんな小さい文字なんて読めないわ。",
+                "ko": "다만, 젊은이들이 주로 읽는거라, 저는 잘 모를 수도 있어요... 나이를 먹다 보니 빽빽한 글자는 보기가 힘드네요...",
+                "th": "ฉันก็พูดได้ไม่เต็มปากว่ามีประสบการณ์กับหนังสือแนวนี้มากนักหรอกนะ... ฉันแก่เกินกว่าจะมานั่งอ่านตัวหนังสือละลานตาแล้ว",
+                "zh-Hans": "但毕竟是你们年轻人的事物，我肯定是不太懂了……都一把年纪了，眼神看不了密密麻麻的字……",
+                "zh-Hant": "但畢竟是你們年輕人的事物，我肯定是不太懂了……都一把年紀了，眼神看不了密密麻麻的字……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann dir die Seiten vorlesen, wenn du möchtest.",
+                    "en": "I can read the pages to you if you like.",
+                    "es": "Puedo leerte las páginas si quieres.",
+                    "fr": "Si vous voulez, je peux vous lire.",
+                    "ja": "読んであげようか。？",
+                    "ko": "원하시면 읽어드릴게요",
+                    "th": "ฉันอ่านให้ฟังได้นะ",
+                    "zh-Hans": "如果您想看，我可以念给您听。",
+                    "zh-Hant": "如果您想看，我可以念給您聽。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du bist so lieb. Sag mir einfach, wenn du einige Topfpflanzen kaufen möchtest. Ich gebe dir Rabatte!",
+                "en": "You're so sweet. Just tell me if you want to buy some <ano=Bonsai>Penjing</ano>. I'm giving you discounts!",
+                "es": "Eres muy dulce. Solo dime si quieres comprar algunas plantas en maceta. ¡Te estoy dando descuentos!",
+                "fr": "Quoi ? Vous êtes vraiment un enfant gentil. Dites-moi si vous voulez acheter un bonsaï. Je vous ferai une réduction.",
+                "ja": "まあ……なんていい子なのかしら。今度お店に来たら、おまけしてあげるわ。",
+                "ko": "정말 착한 아이군요. 분재를 사고 싶다면 언제든지 말하세요. 특별히 할인을 해줄게요",
+                "th": "เธอช่างน่ารักจริงๆ ถ้าอยากจะซื้อ<ano=สวนถาด>บอนไซ</ano>ก็ บอกมาได้เลยนะ ฉันจะลดให้เป็นพิเศษ!",
+                "zh-Hans": "哦？你真是个善良的孩子。你要是想买盆景了随时跟我说，我给你打折。",
+                "zh-Hant": "哦？ 你真是個善良的孩子。 你要是想買盆景了隨時跟我說，我給你優惠。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gibt es etwas Ähnliches, wie es in dem Roman beschrieben wird?",
+                    "en": "Anything similar to what's described in the novel?",
+                    "es": "¿Algo similar a lo que se describe en la novela?",
+                    "fr": "Y a-t-il quelque chose comme dans le roman ?",
+                    "ja": "今、小説に出た花を探していて……",
+                    "ko": "소설에 나오는 그런 종은 없나요?",
+                    "th": "พอจะมีอะไรที่คล้ายกับที่บรรยายไว้ในนิยายบ้างไหม?",
+                    "zh-Hans": "有没有小说里描述的那种……",
+                    "zh-Hant": "有沒有小說裡描述的那種……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun, du kannst sicherlich nicht erwarten, dass eine Topfpflanze fast so beeindruckend aussieht wie ein tatsächliches Blumenmeer.",
+                "en": "Well, you certainly can't expect a potted plant to look nearly as impressive as an actual sea of flowers.",
+                "es": "Bueno, ciertamente no puedes esperar que una planta en maceta se vea casi tan impresionante como un verdadero mar de flores.",
+                "fr": "Un bonsaï ne peut pas avoir l'effet grandiose d'une mer de fleurs.",
+                "ja": "うーん、盆栽に使う植物はちょっと違うかもしれないわねぇ……",
+                "ko": "분재만으로는 꽃바다만큼 장관을 연출할 수 없을 거예요",
+                "th": "แหม จะให้ไม้กระถางดูน่าประทับใจใกล้เคียงกับทะเลดอกไม้จริงๆ ก็คงจะเป็นไปไม่ได้หรอกนะ",
+                "zh-Hans": "只说盆景的话，肯定是做不出花海那么壮观的效果了。",
+                "zh-Hant": "只說盆景的話，肯定是做不出花海那麼壯觀的效果了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich denke, ein üppiger Topf mit Iris könnte das Gefühl einfangen.",
+                "en": "But I guess a luxuriant pot of irises may capture the feel.",
+                "es": "Pero supongo que una maceta lujosa de lirios puede captar la sensación.",
+                "fr": "Mais si je devais l'imaginer, les étendues d'Iris devraient être jolies.",
+                "ja": "でも、辺り一面に咲く鳶尾花（アヤメ）なんて、とっても綺麗だと思うわ。",
+                "ko": "다만, 상상을 펼쳐보자면 연달아 펼쳐진 붓꽃이라면 참 예쁠 것 같네요",
+                "th": "แต่ฉันว่าต้นไอริสสักกระถางที่งามสะพรั่งก็น่าจะให้ความรู้สึกนั้นได้อยู่นะ",
+                "zh-Hans": "但如果要我来想象的话，连绵成一片的鸢尾花应该是很好看的。",
+                "zh-Hant": "但如果要我來想像的話，連綿成一片的鳶尾花應該是很好看的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es stammt aus dem Jaulenden Sumpf und seine Blumensprache ist zerbrechlich, unausgesprochene Zuneigungen. Romantisch, nicht wahr?",
+                "en": "It originates from Whining Aix's Mire and its flower language is fragile, untold affections. Romantic, isn't it?",
+                "es": "Proviene del Pantano de Aix y su lenguaje floral es de afectos frágiles y no contados. Romántico, ¿no es así?",
+                "fr": "Cette fleur est originaire de La Tourbe piaulante, le langage de la fleur est cassé et l'amour caché oh, très romantique, n'est-ce pas ?",
+                "ja": "怨鳥の沼に生息してる花でね。花言葉は「隠された愛」。ロマンチックでしょう？",
+                "ko": "이 붓꽃은 울음새 늪이 원산지인데 꽃말은 부서짐 그리고 은은한 사랑이에요. 낭만적이죠?",
+                "th": "มันมีต้นกำเนิดมาจากหนองปักษาร่ำไห้ และภาษาดอกไม้ของมันคือความรักที่เปราะบางและมิอาจเอ่ย ฟังดูโรแมนติกใช่ไหมล่ะ?",
+                "zh-Hans": "这种花原产自怨鸟泽，花语是破碎而隐晦的爱哦，很浪漫吧。",
+                "zh-Hant": "這種花原產自怨鳥澤，花語是破碎而隱晦的愛喔，很浪漫吧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Verkaufst du es hier?",
+                    "en": "Do you sell it here?",
+                    "es": "¿Lo vendes aquí?",
+                    "fr": "Est-ce vendu dans ce fleuriste ?",
+                    "ja": "店に売ってる？",
+                    "ko": "이곳 꽃집에서도 파나요?",
+                    "th": "ที่นี่มีขายไหม?",
+                    "zh-Hans": "这种花店里有卖吗？",
+                    "zh-Hant": "這種花店裡有賣嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es hat eine kurze Blütezeit, was es für Topfpflanzen ungeeignet macht. Daher verkaufen wir sie normalerweise nicht hier. Aber Verina kam vor ein paar Tagen vorbei und hat mir ein paar gegeben.",
+                "en": "It has a short flowering season, making it unsuitable for <ano=Bonsai>Penjing</ano>. So we usually don't sell them here. But Verina happened to drop by a few days ago and gave me a few.",
+                "es": "Tiene una corta temporada de floración, lo que la hace no apta para plantas en maceta. Por lo que normalmente no las vendemos aquí. Pero Verina pasó hace unos días y me dio algunas.",
+                "fr": "Les iris de La Tourbe piaulante ont une période de floraison très courte et ne conviennent pas pour les bonsaïs, c'est pourquoi le magasin ne les vend pas. Mais il y a deux jours, Verinay en a envoyé deux au magasin.",
+                "ja": "怨鳥の沼の鳶尾花は花期が短いし、盆栽にも向いてないから、売ってはいないんだけど……ヴェリーナちゃんからちょうど二本もらったんだ。",
+                "ko": "울음새 늪의 붓꽃은 개화 기간이 짧아 분재로 쓰기에는 적합하지 않아 판매를 하고 있지 않아요. 다만, 이틀 전에 벨리나가 가게에 두 송이를 가져온 게 있어요",
+                "th": "มันมีฤดูออกดอกที่สั้น ทำให้ไม่เหมาะจะเอามาทำ<ano=สวนถาด>บอนไซ</ano> ที่ร้านเราเลยไม่ค่อยได้ขายกัน แต่พอดีเมื่อสองสามวันก่อน Verina แวะเอามาให้ฉันไว้สองสามต้น",
+                "zh-Hans": "怨鸟泽的鸢尾花花期很短，并不适合做成盆景，所以店里并没有卖。但是前两天，维里奈有给店里送来两朵。",
+                "zh-Hant": "怨鳥澤的鳶尾花花期很短，並不適合做成盆景，所以店裡並沒有賣。 但是前兩天，維里奈有給店裡送來兩朵。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich gebe dir eine, wenn du sie brauchst.",
+                "en": "I'll give one to you if you need it.",
+                "es": "Te daré una si la necesitas.",
+                "fr": "Si vous en avez besoin, je vous en donnerai une.",
+                "ja": "必要なら持ってくといいよ。",
+                "ko": "필요하시다면, 제가 한 송이를 드릴게요",
+                "th": "ฉันให้เธอต้นหนึ่งก็ได้ถ้าเธอต้องการ",
+                "zh-Hans": "既然你有需要，我就送你一朵吧。",
+                "zh-Hant": "既然你有需要，我就送你一朵吧。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Danke, Oma Lin!",
+                    "en": "Thank you, Grandma Lin!",
+                    "es": "¡Gracias, abuela Lin!",
+                    "fr": "Merci, Mme Linsu !",
+                    "ja": "ありがとうございます！林素ばあさん！",
+                    "ko": "감사합니다. 린 할머니!",
+                    "th": "ขอบคุณมาก Grandma Lin!",
+                    "zh-Hans": "谢谢林素婆婆！",
+                    "zh-Hant": "謝謝林素婆婆！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gern geschehen. Komm einfach jederzeit vorbei.",
+                "en": "You're welcome. Just drop by anytime.",
+                "es": "De nada. Solo pasa en cualquier momento.",
+                "fr": "De rien. Venez plus souvent à la boutique.",
+                "ja": "どういたしまして。また来てくださいな。",
+                "ko": "천만에요. 앞으로도 가게에 자주 들려줘요",
+                "th": "ด้วยความยินดี แวะมาหาได้ทุกเมื่อเลยนะ",
+                "zh-Hans": "不客气，以后多来店里逛逛就行。",
+                "zh-Hant": "不客氣，以後多來店裡逛逛就行。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "parentId": 102,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 104,
+      "parentId": 102,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 11000239,
+          "mapId": 8,
+          "blueprintType": "NPC0252",
+          "name": "TsEntity_0252_154_林素",
+          "areaId": 301,
+          "position": {
+            "x": -42240,
+            "y": 112190,
+            "z": 1497
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 107,
+      "parentId": 106,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 102,
+      "parentId": 107,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 109,
+      "parentId": 108,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 14,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wenn ich vom <color=highlight>Blumenmeer</color> spreche, besuche ich Bogus Laubengang in der Geschäftsgegend, wenn ich frei habe.",
+                "en": "Speaking of the <color=highlight>Sea of Flowers</color>, I do visit Bogu's Arbor around the business area when off shift.",
+                "es": "Hablando del <color=highlight>Mar de Flores</color>, suelo visitar la Tienda de Bonsáis en la zona de negocios cuando no estoy de turno.",
+                "fr": "En parlant de la mer des fleurs ......, je vais parfois à la boutique de Bogu après le travail.",
+                "ja": "花畑、花畑……私、仕事終わりに、商業区域にある「博古盆栽屋」に寄ることがあるのですが……",
+                "ko": "꽃바다 하면... 저는 퇴근 후 가끔 상점가에 있는 「박고 분재」 가게에 들러요",
+                "th": "พูดถึงทะเลบุปผา หลังเลิกงาน ฉันมักจะไปที่ซุ้มไม้ของปั๋วกู่แถวย่านธุรกิจ",
+                "zh-Hans": "说到花海……我下班后偶尔会去商店街的博古盆景店里逛逛。",
+                "zh-Hant": "說到花海……我下班後偶爾會去商店街的博古盆景店裡逛逛。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du etwas über Pflanzen wissen möchtest, kannst du Oma Lin, die Besitzerin dort, um einige Informationen bitten.",
+                "en": "If you want to inquire about something related to plants, you can ask Grandma Lin, the owner there, for some information.",
+                "es": "Si quieres preguntar sobre algo relacionado con las plantas, puedes preguntarle a la abuela Lin, la dueña de allí, para obtener algo de información.",
+                "fr": "Peut-être, vous pouvez parler à Linsu. Le propriétaire de la boutique.",
+                "ja": "植物の話なら、そこの店主、林素（りんす）さんに聞いてみるのが良さそうですね。",
+                "ko": "식물과 관련된 것은 아마도 박고 분재의 점장인 린 할머니에게 물어볼 수 있을 거예요",
+                "th": "ถ้าคุณอยากจะสอบถามอะไรที่เกี่ยวกับพืชพันธุ์ คุณไปขอข้อมูลจาก Grandma Lin เจ้าของสถานที่ได้เลยนะ",
+                "zh-Hans": "与植物有关的东西，也许可以跟博古盆景店的店主林素打听一下？",
+                "zh-Hant": "與植物有關的東西，也許可以跟博古盆景店的店主林素打聽一下？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "parentId": 108,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 111,
+      "parentId": 108,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 11000239,
+          "mapId": 8,
+          "blueprintType": "NPC0252",
+          "name": "TsEntity_0252_154_林素",
+          "areaId": 301,
+          "position": {
+            "x": -42240,
+            "y": 112190,
+            "z": 1497
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 3,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Rongqing hat mir einiges über dieses Buch erzählt.",
+                "en": "Rongqing has told me some about this book.",
+                "es": "Rongqing me ha contado algo sobre este libro.",
+                "fr": "Rongqing a parlé de ce roman.",
+                "ja": "この本は確か……栄青（えいせい）が言っていた本かしら。",
+                "ko": "이 소설은 윤식이에게 들은 적이 있어요",
+                "th": "Rongqing ได้เล่าเรื่องหนังสือเล่มนี้ให้ฉันฟังแล้ว",
+                "zh-Hans": "这本小说，我有听荣青那孩子提到过。",
+                "zh-Hant": "這本小說，我有聽榮青那孩子提到過。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann nicht sagen, dass ich viel Erfahrung mit so etwas habe... Ich bin einfach zu alt für eine vollgepackte Seite...",
+                "en": "I can't say I have much experience with stuff like this... I'm just too old for a packed page...",
+                "es": "No puedo decir que tenga mucha experiencia con cosas así... Simplemente soy demasiado vieja para una página llena...",
+                "fr": "Mais après tout, c'est une affaire de jeunes, je ne comprends sûrement pas bien... Je suis vieux, je ne peux pas lire de petits caractères.",
+                "ja": "でも、若者の話にはついていけなくてね……それに、こんな小さい文字なんて読めないわ。",
+                "ko": "다만, 젊은이들이 주로 읽는거라, 저는 잘 모를 수도 있어요... 나이를 먹다 보니 빽빽한 글자는 보기가 힘드네요...",
+                "th": "ฉันก็พูดได้ไม่เต็มปากว่ามีประสบการณ์กับหนังสือแนวนี้มากนักหรอกนะ... ฉันแก่เกินกว่าจะมานั่งอ่านตัวหนังสือละลานตาแล้ว",
+                "zh-Hans": "但毕竟是你们年轻人的事物，我肯定是不太懂了……都一把年纪了，眼神看不了密密麻麻的字……",
+                "zh-Hant": "但畢竟是你們年輕人的事物，我肯定是不太懂了……都一把年紀了，眼神看不了密密麻麻的字……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann dir die Seiten vorlesen, wenn du möchtest.",
+                    "en": "I can read the pages to you if you like.",
+                    "es": "Puedo leerte las páginas si quieres.",
+                    "fr": "Si vous voulez, je peux vous lire.",
+                    "ja": "読んであげようか。？",
+                    "ko": "원하시면 읽어드릴게요",
+                    "th": "ฉันอ่านให้ฟังได้นะ",
+                    "zh-Hans": "如果您想看，我可以念给您听。",
+                    "zh-Hant": "如果您想看，我可以念給您聽。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du bist so lieb. Sag mir einfach, wenn du einige Topfpflanzen kaufen möchtest. Ich gebe dir Rabatte!",
+                "en": "You're so sweet. Just tell me if you want to buy some <ano=Bonsai>Penjing</ano>. I'm giving you discounts!",
+                "es": "Eres muy dulce. Solo dime si quieres comprar algunas plantas en maceta. ¡Te estoy dando descuentos!",
+                "fr": "Quoi ? Vous êtes vraiment un enfant gentil. Dites-moi si vous voulez acheter un bonsaï. Je vous ferai une réduction.",
+                "ja": "まあ……なんていい子なのかしら。今度お店に来たら、おまけしてあげるわ。",
+                "ko": "정말 착한 아이군요. 분재를 사고 싶다면 언제든지 말하세요. 특별히 할인을 해줄게요",
+                "th": "เธอช่างน่ารักจริงๆ ถ้าอยากจะซื้อ<ano=สวนถาด>บอนไซ</ano>ก็ บอกมาได้เลยนะ ฉันจะลดให้เป็นพิเศษ!",
+                "zh-Hans": "哦？你真是个善良的孩子。你要是想买盆景了随时跟我说，我给你打折。",
+                "zh-Hant": "哦？ 你真是個善良的孩子。 你要是想買盆景了隨時跟我說，我給你優惠。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gibt es etwas Ähnliches, wie es in dem Roman beschrieben wird?",
+                    "en": "Anything similar to what's described in the novel?",
+                    "es": "¿Algo similar a lo que se describe en la novela?",
+                    "fr": "Y a-t-il quelque chose comme dans le roman ?",
+                    "ja": "今、小説に出た花を探していて……",
+                    "ko": "소설에 나오는 그런 종은 없나요?",
+                    "th": "พอจะมีอะไรที่คล้ายกับที่บรรยายไว้ในนิยายบ้างไหม?",
+                    "zh-Hans": "有没有小说里描述的那种……",
+                    "zh-Hant": "有沒有小說裡描述的那種……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun, du kannst sicherlich nicht erwarten, dass eine Topfpflanze fast so beeindruckend aussieht wie ein tatsächliches Blumenmeer.",
+                "en": "Well, you certainly can't expect a potted plant to look nearly as impressive as an actual sea of flowers.",
+                "es": "Bueno, ciertamente no puedes esperar que una planta en maceta se vea casi tan impresionante como un verdadero mar de flores.",
+                "fr": "Un bonsaï ne peut pas avoir l'effet grandiose d'une mer de fleurs.",
+                "ja": "うーん、盆栽に使う植物はちょっと違うかもしれないわねぇ……",
+                "ko": "분재만으로는 꽃바다만큼 장관을 연출할 수 없을 거예요",
+                "th": "แหม จะให้ไม้กระถางดูน่าประทับใจใกล้เคียงกับทะเลดอกไม้จริงๆ ก็คงจะเป็นไปไม่ได้หรอกนะ",
+                "zh-Hans": "只说盆景的话，肯定是做不出花海那么壮观的效果了。",
+                "zh-Hant": "只說盆景的話，肯定是做不出花海那麼壯觀的效果了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich denke, ein üppiger Topf mit Iris könnte das Gefühl einfangen.",
+                "en": "But I guess a luxuriant pot of irises may capture the feel.",
+                "es": "Pero supongo que una maceta lujosa de lirios puede captar la sensación.",
+                "fr": "Mais si je devais l'imaginer, les étendues d'Iris devraient être jolies.",
+                "ja": "でも、辺り一面に咲く鳶尾花（アヤメ）なんて、とっても綺麗だと思うわ。",
+                "ko": "다만, 상상을 펼쳐보자면 연달아 펼쳐진 붓꽃이라면 참 예쁠 것 같네요",
+                "th": "แต่ฉันว่าต้นไอริสสักกระถางที่งามสะพรั่งก็น่าจะให้ความรู้สึกนั้นได้อยู่นะ",
+                "zh-Hans": "但如果要我来想象的话，连绵成一片的鸢尾花应该是很好看的。",
+                "zh-Hant": "但如果要我來想像的話，連綿成一片的鳶尾花應該是很好看的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es stammt aus dem Jaulenden Sumpf und seine Blumensprache ist zerbrechlich, unausgesprochene Zuneigungen. Romantisch, nicht wahr?",
+                "en": "It originates from Whining Aix's Mire and its flower language is fragile, untold affections. Romantic, isn't it?",
+                "es": "Proviene del Pantano de Aix y su lenguaje floral es de afectos frágiles y no contados. Romántico, ¿no es así?",
+                "fr": "Cette fleur est originaire de La Tourbe piaulante, le langage de la fleur est cassé et l'amour caché oh, très romantique, n'est-ce pas ?",
+                "ja": "怨鳥の沼に生息してる花でね。花言葉は「隠された愛」。ロマンチックでしょう？",
+                "ko": "이 붓꽃은 울음새 늪이 원산지인데 꽃말은 부서짐 그리고 은은한 사랑이에요. 낭만적이죠?",
+                "th": "มันมีต้นกำเนิดมาจากหนองปักษาร่ำไห้ และภาษาดอกไม้ของมันคือความรักที่เปราะบางและมิอาจเอ่ย ฟังดูโรแมนติกใช่ไหมล่ะ?",
+                "zh-Hans": "这种花原产自怨鸟泽，花语是破碎而隐晦的爱哦，很浪漫吧。",
+                "zh-Hant": "這種花原產自怨鳥澤，花語是破碎而隱晦的愛喔，很浪漫吧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Verkaufst du es hier?",
+                    "en": "Do you sell it here?",
+                    "es": "¿Lo vendes aquí?",
+                    "fr": "Est-ce vendu dans ce fleuriste ?",
+                    "ja": "店に売ってる？",
+                    "ko": "이곳 꽃집에서도 파나요?",
+                    "th": "ที่นี่มีขายไหม?",
+                    "zh-Hans": "这种花店里有卖吗？",
+                    "zh-Hant": "這種花店裡有賣嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es hat eine kurze Blütezeit, was es für Topfpflanzen ungeeignet macht. Daher verkaufen wir sie normalerweise nicht hier. Aber Verina kam vor ein paar Tagen vorbei und hat mir ein paar gegeben.",
+                "en": "It has a short flowering season, making it unsuitable for <ano=Bonsai>Penjing</ano>. So we usually don't sell them here. But Verina happened to drop by a few days ago and gave me a few.",
+                "es": "Tiene una corta temporada de floración, lo que la hace no apta para plantas en maceta. Por lo que normalmente no las vendemos aquí. Pero Verina pasó hace unos días y me dio algunas.",
+                "fr": "Les iris de La Tourbe piaulante ont une période de floraison très courte et ne conviennent pas pour les bonsaïs, c'est pourquoi le magasin ne les vend pas. Mais il y a deux jours, Verinay en a envoyé deux au magasin.",
+                "ja": "怨鳥の沼の鳶尾花は花期が短いし、盆栽にも向いてないから、売ってはいないんだけど……ヴェリーナちゃんからちょうど二本もらったんだ。",
+                "ko": "울음새 늪의 붓꽃은 개화 기간이 짧아 분재로 쓰기에는 적합하지 않아 판매를 하고 있지 않아요. 다만, 이틀 전에 벨리나가 가게에 두 송이를 가져온 게 있어요",
+                "th": "มันมีฤดูออกดอกที่สั้น ทำให้ไม่เหมาะจะเอามาทำ<ano=สวนถาด>บอนไซ</ano> ที่ร้านเราเลยไม่ค่อยได้ขายกัน แต่พอดีเมื่อสองสามวันก่อน Verina แวะเอามาให้ฉันไว้สองสามต้น",
+                "zh-Hans": "怨鸟泽的鸢尾花花期很短，并不适合做成盆景，所以店里并没有卖。但是前两天，维里奈有给店里送来两朵。",
+                "zh-Hant": "怨鳥澤的鳶尾花花期很短，並不適合做成盆景，所以店裡並沒有賣。 但是前兩天，維里奈有給店裡送來兩朵。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich gebe dir eine, wenn du sie brauchst.",
+                "en": "I'll give one to you if you need it.",
+                "es": "Te daré una si la necesitas.",
+                "fr": "Si vous en avez besoin, je vous en donnerai une.",
+                "ja": "必要なら持ってくといいよ。",
+                "ko": "필요하시다면, 제가 한 송이를 드릴게요",
+                "th": "ฉันให้เธอต้นหนึ่งก็ได้ถ้าเธอต้องการ",
+                "zh-Hans": "既然你有需要，我就送你一朵吧。",
+                "zh-Hant": "既然你有需要，我就送你一朵吧。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Danke, Oma Lin!",
+                    "en": "Thank you, Grandma Lin!",
+                    "es": "¡Gracias, abuela Lin!",
+                    "fr": "Merci, Mme Linsu !",
+                    "ja": "ありがとうございます！林素ばあさん！",
+                    "ko": "감사합니다. 린 할머니!",
+                    "th": "ขอบคุณมาก Grandma Lin!",
+                    "zh-Hans": "谢谢林素婆婆！",
+                    "zh-Hant": "謝謝林素婆婆！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gern geschehen. Komm einfach jederzeit vorbei.",
+                "en": "You're welcome. Just drop by anytime.",
+                "es": "De nada. Solo pasa en cualquier momento.",
+                "fr": "De rien. Venez plus souvent à la boutique.",
+                "ja": "どういたしまして。また来てくださいな。",
+                "ko": "천만에요. 앞으로도 가게에 자주 들려줘요",
+                "th": "ด้วยความยินดี แวะมาหาได้ทุกเมื่อเลยนะ",
+                "zh-Hans": "不客气，以后多来店里逛逛就行。",
+                "zh-Hant": "不客氣，以後多來店裡逛逛就行。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 786,
+                "name": {
+                  "zh-Hans": "林素"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

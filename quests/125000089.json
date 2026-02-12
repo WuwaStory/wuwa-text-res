@@ -1,0 +1,524 @@
+{
+  "id": 125000089,
+  "key": "相声大师_传信",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Geheime Nachricht",
+    "en": "Undercover Message",
+    "es": "Mensajería Encubierta",
+    "fr": "Message secret",
+    "ja": "情報伝達",
+    "ko": "잠복 메시지 전달",
+    "th": "ข้อความที่แฝงเร้น",
+    "zh-Hans": "卧底传信",
+    "zh-Hant": "臥底傳信"
+  },
+  "desc": {
+    "de": "Finde Yihu und übermittle die Nachricht",
+    "en": "Find Yihu and convey the message",
+    "es": "Encuentra a Yihu y envía el mensaje.",
+    "fr": "Retrouver Yihu pour lui transmettre l'information",
+    "ja": "一壺を見つけて伝言を伝える",
+    "ko": "일호를 찾아 메시지 전달하기",
+    "th": "ตามหา Yihu และถ่ายทอดข้อความ",
+    "zh-Hans": "找到一壶，传递信息。",
+    "zh-Hant": "找到一壺，傳遞訊息。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Yihu und übermittle die Nachricht",
+        "en": "Find Yihu and convey the message",
+        "es": "Encuentra a Yihu y envía el mensaje.",
+        "fr": "Retrouver Yihu pour lui transmettre l'information",
+        "ja": "一壺を見つけて伝言を伝える",
+        "ko": "일호를 찾아 메시지를 전달하세요",
+        "th": "ตามหา Yihu และถ่ายทอดข้อความ",
+        "zh-Hans": "找到一壶，传递信息",
+        "zh-Hant": "找到一壺，傳遞訊息"
+      },
+      "entities": [
+        {
+          "entityId": 125001048,
+          "mapId": 8,
+          "blueprintType": "NPC0102",
+          "name": "一壶7",
+          "areaId": 301,
+          "position": {
+            "x": -41466,
+            "y": 100743,
+            "z": 2327
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 73
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_相声大师",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hier bist du.",
+                "en": "Here you are.",
+                "es": "Aquí estás.",
+                "fr": "Tu es là ?",
+                "ja": "いらっしゃいませ。",
+                "ko": "왔어요?",
+                "th": "คุณมาแล้วสินะ",
+                "zh-Hans": "来了？",
+                "zh-Hant": "來了？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 194,
+                "name": {
+                  "zh-Hans": "一壶"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Jetzt ist es an der Zeit, dass ich etwas Neues mit dir teile.",
+                    "en": "It's my turn to share something fresh with you.",
+                    "es": "Es mi turno de compartir algo nuevo contigo.",
+                    "fr": "J'ai aussi une nouvelle à te partager.",
+                    "ja": "{Male=俺からの「最近の出来事」だ。;Female=私からの「最近の出来事」だ。}",
+                    "ko": "재밌는 이야기가 있어요",
+                    "th": "ถึงตาฉันเล่าเรื่องใหม่ๆ ให้คุณฟังแล้ว",
+                    "zh-Hans": "我也有新鲜事要告诉你。",
+                    "zh-Hant": "我也有新鮮事要告訴你。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh? Was ist es?",
+                "en": "Oh? What's it?",
+                "es": "¿Oh? ¿Qué es?",
+                "fr": "Oh ? Quoi ?",
+                "ja": "おお？話を聞きましょう。",
+                "ko": "어? 뭔데요?",
+                "th": "โอ้? เรื่องอะไรเหรอ?",
+                "zh-Hans": "哦？什么？",
+                "zh-Hant": "哦？什麼？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 194,
+                "name": {
+                  "zh-Hans": "一壶"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es gibt Wölfe in den Bergen.",
+                    "en": "There are wolves in the mountains.",
+                    "es": "Hay lobos en las montañas.",
+                    "fr": "Il y a un loup dans la montagne.",
+                    "ja": "山に狼がいる。",
+                    "ko": "산에 늑대가 있어요",
+                    "th": "มีหมาป่าอยู่บนภูเขา",
+                    "zh-Hans": "山里有狼。",
+                    "zh-Hant": "山裡有狼。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Und das nennst du \"frisch\"?",
+                "en": "And that's what you call \"fresh\"?",
+                "es": "¿Y eso es lo que llamas \"fresco\"?",
+                "fr": "Un loup dans la montagne est une nouvelle ?",
+                "ja": "当たり前のことでは？",
+                "ko": "산에 늑대가 있는 게 재밌는 이야기라고요?",
+                "th": "นั่นเรียกว่า \"เรื่องใหม่\" เหรอ?",
+                "zh-Hans": "山里有狼也叫新鲜事？",
+                "zh-Hant": "山裡有狼也叫新鮮事？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 194,
+                "name": {
+                  "zh-Hans": "一壶"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Für diejenigen, die noch nie Wölfe gesehen haben, ist es das sicherlich.",
+                    "en": "For those who haven't seen wolves, it certainly is.",
+                    "es": "Para aquellos que no han visto lobos, ciertamente lo es.",
+                    "fr": "Pour ceux qui n'ont jamais vu de loup, bien sûr que c'est une nouvelle.",
+                    "ja": "それは狼に会ったことない人の考え方だ。",
+                    "ko": "늑대를 본 적이 없는 사람들에게는요",
+                    "th": "สำหรับคนที่ไม่เคยเห็นหมาป่ามาก่อน ก็ต้องเป็นเรื่องใหม่อย่างแน่นอน",
+                    "zh-Hans": "对没见过狼的人来说当然是。",
+                    "zh-Hant": "對沒見過狼的人來說當然是。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha, du bist wirklich interessant.",
+                "en": "Haha, you're indeed interesting.",
+                "es": "Jaja, ciertamente eres interesante.",
+                "fr": "Haha, je pense que tu es en train de devenir le grand maître de Xiangsheng. T'es marrant !",
+                "ja": "はは、やはりお客さんは面白い方ですね。",
+                "ko": "하하, 보아하니 방랑자도 곧 만담꾼이 될 것 같네요",
+                "th": "ฮ่าๆ คุณนี่น่าสนใจจริงๆ",
+                "zh-Hans": "哈哈，我看你也快成相声大师了。",
+                "zh-Hant": "哈哈，我看你也快成相聲大師了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 194,
+                "name": {
+                  "zh-Hans": "一壶"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Freut mich, dass du es interessant findest.",
+                    "en": "Glad you found it interesting.",
+                    "es": "Me alegra que lo encuentres interesante.",
+                    "fr": "Tant que je peux t'aider.",
+                    "ja": "気に入ってくれたらいい。",
+                    "ko": "당신을 웃게 만들 수 있으면 돼요",
+                    "th": "ดีใจที่คุณคิดว่ามันน่าสนใจนะ",
+                    "zh-Hans": "能帮到你就好。",
+                    "zh-Hant": "能幫到你就好。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Übrigens, erinnerst du dich an all die Geschichten, die ich dir erzählt habe?",
+                "en": "By the way, do you remember all the stories I told you before?",
+                "es": "Por cierto, ¿recuerdas todas las historias que te conté antes?",
+                "fr": "D'ailleurs, tu as bien appris la blague de la dernière fois.",
+                "ja": "そうだ、前回の話、もう全部覚えてくれたんですね。",
+                "ko": "그건 그렇고, 지난번 이야기 다 외웠잖아요",
+                "th": "จริงสิ คุณยังจำเรื่องทั้งหมดที่ฉันเคยเล่าให้คุณฟังได้ไหม?",
+                "zh-Hans": "对了，上次的段子，你都背对了。",
+                "zh-Hant": "對了，上次的段子，你都背對了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 194,
+                "name": {
+                  "zh-Hans": "一壶"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sollen wir sie jetzt üben?",
+                    "en": "Shall we practice them now?",
+                    "es": "¿Practicamos ahora?",
+                    "fr": "Pas besoin de t'entraîner ?",
+                    "ja": "稽古はもういらない？",
+                    "ko": "더 연습할 필요가 없나요?",
+                    "th": "เรามาซ้อมกันหน่อยดีไหม?",
+                    "zh-Hans": "不用再练了？",
+                    "zh-Hant": "不用再練了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh nein, das ist nicht nötig. Sie sind die Mühe nicht wert.",
+                "en": "Oh no, not necessary. They aren't worth the effort.",
+                "es": "Oh no, no es necesario. No valen la pena.",
+                "fr": "Pas la peine. L'entraînement n'est plus le point.",
+                "ja": "必要ありません。大事なのは稽古じゃないですから。",
+                "ko": "그럼요. 연습은 그렇게 중요하지 않아요",
+                "th": "โอ้ ไม่จำเป็นหรอก เรื่องพวกนั้นไม่คุ้มจะเสียแรงซ้อมหรอกนะ",
+                "zh-Hans": "不用，这玩意儿也不在练。",
+                "zh-Hant": "不用，這玩意兒也不在練。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 194,
+                "name": {
+                  "zh-Hans": "一壶"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich einen neuen Witz habe, lasse ich es dich wissen.",
+                "en": "When I come up with a new joke, I'll let you know.",
+                "es": "Cuando se me ocurra un nuevo chiste, te lo haré saber.",
+                "fr": "La prochaine fois que je créerai une nouvelle blague, je le partagerai avec toi.",
+                "ja": "また新しいネタが完成したら、ぜひ聞いてくださいね。",
+                "ko": "다음에 제가 다시 새로운 이야기를 지어내면 꼭 방랑자와 공유할게요",
+                "th": "ไว้ถ้าฉันคิดมุกใหม่ๆ ออกเมื่อไร ฉันจะรีบบอกคุณเลย",
+                "zh-Hans": "下次我再写出新段子来，再跟你对。",
+                "zh-Hant": "下次我再寫出新段子來，再跟你對。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 194,
+                "name": {
+                  "zh-Hans": "一壶"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Langsheng und übermittle Yihus Nachricht",
+        "en": "Find Langsheng and convey Yihu’s message",
+        "es": "Encuentra a Langsheng y transmite el mensaje de Yihu.",
+        "fr": "Trouver Langsheng et transmettre le message de Yihu",
+        "ja": "琅生を見つけて一壺からの伝言を伝える",
+        "ko": "준호를 찾아 일호의 말 전달하기",
+        "th": "ตามหาหลางเซิงและถ่ายทอดข้อความของ Yihu",
+        "zh-Hans": "找到琅生，转达一壶的话",
+        "zh-Hant": "找到琅生，轉達一壺的話"
+      },
+      "entities": [
+        {
+          "entityId": 109002513,
+          "mapId": 8,
+          "blueprintType": "NPC0109",
+          "name": "TsEntity_180_008_琅生",
+          "areaId": 301,
+          "position": {
+            "x": -41580,
+            "y": 114360,
+            "z": 1472
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -135
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_相声大师",
+          "flowIndex": 7,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {},
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist alles, was ich weiß.",
+                    "en": "That's all I know.",
+                    "es": "Eso es todo lo que sé.",
+                    "fr": "Voici ce que j'ai découvert.",
+                    "ja": "わかったことはこれだけ。",
+                    "ko": "제가 얻은 정보는 이것뿐이에요",
+                    "th": "นั่นคือทั้งหมดที่ฉันรู้",
+                    "zh-Hans": "我这边得到的信息只有这些。",
+                    "zh-Hant": "我這邊得到的資訊只有這些。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hmm…",
+                "en": "Hmm…",
+                "es": "Hmm…",
+                "fr": "Hmmm ......",
+                "ja": "うーん……",
+                "ko": "음...",
+                "th": "อืม...",
+                "zh-Hans": "唔……",
+                "zh-Hant": "唔……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 200,
+                "name": {
+                  "zh-Hans": "琅生"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Yihu hat mir versichert, dass die Informationen korrekt sind.",
+                    "en": "Yihu assured me the information was accurate.",
+                    "es": "Yihu me aseguró que la información era precisa.",
+                    "fr": "Yihu dit que c'est vrai.",
+                    "ja": "言われたことはそのまま伝えたけど……",
+                    "ko": "일호가 다 정확한 정보라고 했어요",
+                    "th": "อี้หูยืนยันกับฉันว่าข้อมูลนี้ถูกต้องแน่นอน",
+                    "zh-Hans": "一壶说消息确切。",
+                    "zh-Hant": "一壺說消息確切。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich verstehe.",
+                "en": "I see.",
+                "es": "Ya veo.",
+                "fr": "Je vois...",
+                "ja": "なるほど……",
+                "ko": "알겠어요",
+                "th": "เข้าใจแล้ว",
+                "zh-Hans": "我知道了。",
+                "zh-Hant": "我知道了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 200,
+                "name": {
+                  "zh-Hans": "琅生"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke. Die Informationen, die du bereitgestellt hast, sind sehr hilfreich, um den Fall zu lösen.",
+                "en": "Thank you. The information you provided is very helpful for solving the case.",
+                "es": "Gracias. La información que proporcionaste es muy útil para resolver el caso.",
+                "fr": "Merci beaucoup. C'était très utile.",
+                "ja": "ありがとうございます。とても助かりました。",
+                "ko": "고생했어요. 이미 큰 도움이 되었어요",
+                "th": "ขอบคุณมากนะ ข้อมูลที่คุณให้มาเป็นประโยชน์ต่อการไขคดีมากๆ เลย",
+                "zh-Hans": "辛苦你了。有这些消息，已经能帮上大忙了。",
+                "zh-Hant": "辛苦你了。有這些消息，已經能幫上大忙了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 200,
+                "name": {
+                  "zh-Hans": "琅生"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sind das alles codierte Nachrichten?",
+                    "en": "Are all these coded messages?",
+                    "es": "¿Son todos estos mensajes codificados?",
+                    "fr": "Êtes-vous en train de dire qu'il est crypté ?",
+                    "ja": "あれは全部隠語ってこと？",
+                    "ko": "이게 다 암어인가요?",
+                    "th": "ทั้งหมดนี่เป็นข้อความลับงั้นเหรอ?",
+                    "zh-Hans": "这些都是暗语吗？",
+                    "zh-Hant": "這些都是暗語嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Irgendwie. Yihu hat einfache Sprache verwendet, leicht zu entschlüsseln.",
+                "en": "Kind of. Yihu used plain language, easy to decipher.",
+                "es": "En cierto modo. Yihu usó un lenguaje sencillo, fácil de descifrar.",
+                "fr": "Oui, c'est le cas. Le langage utilisé est plutôt simple, c'est compréhensible.",
+                "ja": "そうですね。ですが一壺が使う言葉はわりと簡単なので、暗号としての強度はそこまで高くありません。",
+                "ko": "네, 맞아요. 일호가 사용하는 단어는 모두 간단해서 추측하기가 어렵지 않아요",
+                "th": "ก็ทำนองนั้นน่ะ อี้หูใช้ภาษาธรรมดาๆ ที่ถอดรหัสได้ง่าย",
+                "zh-Hans": "算是吧。一壶用词都很简单，不难猜。",
+                "zh-Hant": "算是吧。一壺用詞都很簡單，不難猜。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 200,
+                "name": {
+                  "zh-Hans": "琅生"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er ist nicht gerade ein professioneller Undercover-Agent, also muss ich wirklich vorsichtig sein.",
+                "en": "He's not exactly a professional undercover, so I have to be really careful.",
+                "es": "No es exactamente un profesional encubierto, así que tengo que ser muy cuidadoso.",
+                "fr": "Je dois être vigilant, car il n'est pas un professionnel de l'infiltration.",
+                "ja": "訓練を受けた内通者じゃない分、私も慎重にいかないと……",
+                "ko": "그가 전문 정보원이 아니기 때문에 제가 더욱 조심스럽게 확인해야 해요",
+                "th": "เขาไม่ใช่สายลับมืออาชีพขนาดนั้น ฉันจึงต้องระมัดระวังเป็นพิเศษ",
+                "zh-Hans": "正因他不是专业卧底，所以我才会更小心谨慎。",
+                "zh-Hant": "正因他不是專業臥底，所以我才會更小心謹慎。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 200,
+                "name": {
+                  "zh-Hans": "琅生"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke für deine Hilfe, Rover. Ich werde das Tempo der Untersuchung erhöhen und dich auf dem Laufenden halten, wenn es neue Hinweise gibt.",
+                "en": "Thank you for your help, Rover. I'll pick up the pace of the investigation and keep you updated if there are any new leads.",
+                "es": "Gracias por tu ayuda, Errante. Aceleraré el ritmo de la investigación y te mantendré informado si hay nuevas pistas.",
+                "fr": "Quoi qu'il en soit, je vous remercie. Je vais continuer mon boulot et je vous dirai s'il y a des nouvelles.",
+                "ja": "とにかく、ありがとうございました。私は引き続き調べますので、何か進展がありましたらまた連絡します。",
+                "ko": "아무튼 감사해요. 사건 해결에 박차를 가할 수 있겠어요. 단서가 있으면 다시 알려줄게요",
+                "th": "ขอบคุณที่ช่วยนะ คุณผู้พเนจร ฉันจะเร่งการสืบสวนให้เร็วขึ้น และจะแจ้งให้คุณทราบทันที หากมีเบาะแสใหม่ๆ",
+                "zh-Hans": "多谢你了，我会加紧破案的，有线索再跟你说。",
+                "zh-Hant": "多謝你了，我會加緊破案的，有線索再跟你說。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 200,
+                "name": {
+                  "zh-Hans": "琅生"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

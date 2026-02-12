@@ -1,0 +1,314 @@
+{
+  "id": 175750013,
+  "key": "呜呜物流_第一天（购买面粉）",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Kampagne I",
+    "en": "Lollo Campaign I",
+    "es": "Campaña Lollo: I",
+    "fr": "Projet Loulou I",
+    "ja": "ブブ企画・一",
+    "ko": "무무 기획 · Ⅰ",
+    "th": "แคมเปญลอลโล่ I",
+    "zh-Hans": "呜呜企划 · 一",
+    "zh-Hant": "嗚嗚企劃 · 一"
+  },
+  "desc": {
+    "de": "Du hast einen Einkaufsauftrag aus Jinzhou erhalten – der Preis für Mehl in Ragunna beträgt ja tatsächlich nur die Hälfte des Jinzhou-Preises?!",
+    "en": "You received an errand from Jinzhou. What? Flour in Ragunna only costs half as much as in Jinzhou?!",
+    "es": "Has recibido un mandado de Jinzhou. ¿Qué? ¿La harina en Raguna solo cuesta la mitad que en Jinzhou?",
+    "fr": "Vous avez reçu un boulot d'un client de Jinzhou... à Ragunna, le prix de Farine 50% moins cher de celui à Jinzhou ?!",
+    "ja": "あなたは今州からの買い付け依頼書を受け取った――ラグーナの小麦粉の値段は、なんと今州の半額！？",
+    "ko": "당신은 금주에서 온 구매 대행 의뢰서를 받았다. 라군나의 밀가루 가격이 금주의 절반밖에 되지 않다니?！",
+    "th": "คุณได้รับงานฝากจากจินโจว ว่าไงนะ? แป้งในรากุนนาราคาถูกกว่าที่จินโจวครึ่งหนึ่ง?!",
+    "zh-Hans": "你收到了一份来自今州的代购委托单——拉古那的面粉定价居然只有今州的一半？！",
+    "zh-Hant": "你收到了一份來自今州的代購委託單——拉古那的麵粉定價居然只有今州的一半？！"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "ko": "곤돌라 수상 시장에 가서 밀가루 구입하기",
+        "zh-Hans": "test/前往贡多拉水市购买面粉"
+      },
+      "entities": [
+        {
+          "entityId": 314900002,
+          "mapId": 8,
+          "blueprintType": "NPC_Shenghai2",
+          "name": "TsEntity_声骸_贡多拉摆摊商店_400408",
+          "areaId": 1692,
+          "position": {
+            "x": 690369,
+            "y": 583087,
+            "z": -47
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "ko": "마현에게 밀가루*10 제출하기",
+        "zh-Hans": "test/（临时）找马计交付面粉*10"
+      },
+      "entities": [
+        {
+          "entityId": 175750001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+          "areaId": 1692,
+          "position": {
+            "x": 688680,
+            "y": 573670,
+            "z": 168
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 8,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist schon zurück? Das war schnell!",
+                "en": "You're back already? That was fast!",
+                "es": "¿Ya regresaste? ¡Qué rápido!",
+                "fr": "Déjà de retour ? C'était rapide !",
+                "ja": "もう戻ってきたのか！なんて手際がいい……",
+                "ko": "돌아오셨네요! 예상보다 훨씬 빠르시네요... 밀가루는 사셨어요?",
+                "th": "กลับมาแล้วเหรอ ไวมากเลย!",
+                "zh-Hans": "你回来了！真是出乎意料的高效……",
+                "zh-Hant": "你回來了！真是出乎意料的高效……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Man kann also wirklich 10 Säcke Mehl für nur 5.000 Shell-Kredite bekommen! Der Kunde hat also echt nicht übertrieben!",
+                "en": "So you really can get 10 bags of flour for just 5,000 Shell Credits! The client wasn't exaggerating after all!",
+                "es": "Así que el cliente no exageraba cuando dijo que podía conseguir 10 sacos de harina por solo 5000 monedas caparazón.",
+                "fr": "Alors, on peut vraiment acheter 10 sacs de farine pour seulement 5 000 crédits Coquilles ! Le client n'en rajoutait pas, finalement !",
+                "ja": "ラグーナじゃ5000シェルコインで小麦粉10袋！今州の半額という話は嘘じゃなかった！",
+                "ko": "라군나에서 5000 클램 코인이면 정말 밀가루 10 봉지를 살 수 있군요! 금주의 반값이네요!",
+                "th": "แค่ 5,000 เหรียญเชลล์ก็ซื้อได้แป้ง 10 ถุงจริงๆ ด้วย! ถูกกว่าจินโจวครึ่งหนึ่งจริงๆ",
+                "zh-Hans": "原来5000贝币真的能在拉古那买到十袋面粉！真的比今州便宜了一半啊！",
+                "zh-Hant": "原來5000貝幣真的能在拉古那買到十袋麵粉！真的比今州便宜了一半啊！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ragunna dürfte zur besten Stadt des Jahres gekürt werden.",
+                    "en": "Ragunna might just win best city of the year.",
+                    "es": "Raguna podría ganar el premio a mejor ciudad del año.",
+                    "fr": "Ragunna vient peut-être de gagner le titre de ville de l'année.",
+                    "ja": "{Male=今年の住みたい街ランキング1位はラグーナに決まりだな。;Female=今年の住みたい街ランキング1位はラグーナに決まりね。}",
+                    "ko": "라군나를 올해 가장 살기 좋은 도시로 꼽아야 할 것 같아요",
+                    "th": "รากูนน่าต้องได้รับรางวัลเมืองที่น่าอยู่ที่สุดแห่งปีแล้วล่ะ",
+                    "zh-Hans": "拉古那应该成为年度宜居城市。",
+                    "zh-Hant": "拉古那應該成為年度宜居城市。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Alle sollten anfangen, ihre Waren wie auf dem Gondel-Markt zu verkaufen.",
+                    "en": "Everyone should start selling goods like they do at the Gondola Market.",
+                    "es": "Todo el mundo debería vender sus productos como lo hacen en el Mercado Góndola.",
+                    "fr": "Tout le monde devrait se mettre à vendre les marchandises du Marché de la gondole.",
+                    "ja": "全世界の物価は、ゴンドラ水上市場と揃えるべき。",
+                    "ko": "다른 지역들도 라군나를 본받아야겠네요",
+                    "th": "ราคาสินค้าทั้งหมดควรจะเทียบเท่ากับตลาดกอนโดลา",
+                    "zh-Hans": "全体物价应该向贡多拉水市看齐。",
+                    "zh-Hant": "全體物價應該向貢多拉水市看齊。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun … so weit würde ich zwar nicht gehen, aber es ist definitiv der perfekte Ort für meine Botendienste …",
+                "en": "Well… I wouldn't go that far, but it's definitely the perfect place for my errand business...",
+                "es": "Bueno… no hay que ser extremistas, pero sí que es el sitio perfecto para mi negocio de recados…",
+                "fr": "Eh bien... je n'irais pas jusque là, mais c'est assurément l'endroit parfait pour mon service de commission...",
+                "ja": "まあ、ブブ物流にそんな決定権はないけど。でも、これならラグーナは確かに買い物代行ビジネスのパラダイス……",
+                "ko": "그... 그건, 저도 어떻게 할 수가 없네요. 하지만, 여긴 정말 구매대행 사업을 키우기 좋은 곳인 것 같네요...",
+                "th": "เอ่อ... อันนี้ฉันพูดไม่ได้หรอก แต่ดูเหมือนที่นี่ก็เหมาะกับธุรกิจรับหิ้วจริงๆ...",
+                "zh-Hans": "这个……这个，我说了不算。不过这么看来，这里确实是一个适合发展代购业的好地方……",
+                "zh-Hant": "這個……這個，我說了不算。不過這麼看來，這裡確實是一個適合發展代購業的好地方……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, danke für deine Hilfe! Behalte die Belohnungen, und wir sehen uns morgen!",
+                "en": "Anyway, thank you for your help today! Keep the rewards, and I'll see you tomorrow!",
+                "es": "Como sea, ¡gracias por tu ayuda! Quédate las recompensas. ¡Te veo mañana!",
+                "fr": "Enfin, merci de ton aide ! Garde les récompenses, et à demain !",
+                "ja": "今日はご苦労さん！お約束の報酬だ、明日また頼むぞ。",
+                "ko": "고생하셨어요! 이건 오늘 수당이에요, 내일 또 뵐게요",
+                "th": "ขอบคุณที่มาช่วยนะ! เอารางวัลไปแล้วจอกันใหม่พรุ่งนี้!",
+                "zh-Hans": "今天辛苦你了！记得收好报酬，明天记得再来哦。",
+                "zh-Hant": "今天辛苦你了！記得收好報酬，明天記得再來喔。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 175750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 688680,
+                    "y": 573670,
+                    "z": 168
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 55
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

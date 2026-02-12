@@ -1,0 +1,161 @@
+{
+  "id": 2000005,
+  "key": "changeOtherState",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 2000009,
+          "mapId": 32,
+          "blueprintType": "NPC019",
+          "name": "TsEntity_180_006_KuangGong",
+          "areaId": 0,
+          "position": {
+            "x": -1760,
+            "y": -9360,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 2000010,
+          "mapId": 32,
+          "blueprintType": "NPC020",
+          "name": "TsEntity_180_007_TanXianJia",
+          "areaId": 0,
+          "position": {
+            "x": -1070,
+            "y": -8610,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_示例1",
+          "flowIndex": 16,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Was möchtest du tun?",
+                "es": "¿Qué quieres hacer?",
+                "zh-Hans": "你要做什么呢?",
+                "zh-Hant": "你要做什麼呢？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wechsel zu Zustand 1.",
+                    "es": "Cambiar al estado 1",
+                    "zh-Hans": "切换状态1",
+                    "zh-Hant": "切換狀態1"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wechsel zu Zustand 2.",
+                    "es": "Cambiar al estado 2",
+                    "zh-Hans": "切换状态2",
+                    "zh-Hant": "切換狀態2"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Mache nichts.",
+                    "es": "No hacer nada",
+                    "zh-Hans": "什么都不做",
+                    "zh-Hant": "什麼都不做"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Aufgabe abgeschlossen.",
+                    "es": "Completar la tarea",
+                    "zh-Hans": "完成任务",
+                    "zh-Hant": "完成任務"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_示例1",
+          "flowIndex": 17,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Aufgabe ist bereits abgeschlossen.",
+                "es": "La tarea ya ha terminado",
+                "zh-Hans": "任务已经结束了",
+                "zh-Hant": "任務已經結束了"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

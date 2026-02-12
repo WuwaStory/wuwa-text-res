@@ -1,0 +1,294 @@
+{
+  "id": 133000006,
+  "key": "曲问趣答·三",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Eine Quest der Klugheit - III",
+    "en": "A Quest of Wits - III",
+    "es": "Una Prueba de Ingenio - III",
+    "fr": "Réponses aux questions étranges - III",
+    "ja": "曲問クイズ・その三",
+    "ko": "꿀잼 퀴즈 타임 · Ⅲ",
+    "th": "การแสวงหาปัญญา - III",
+    "zh-Hans": "曲问趣答·三",
+    "zh-Hant": "曲問趣答·三"
+  },
+  "desc": {
+    "de": "Du bist auf eine merkwürdige Person im Düsteren Wald gestoßen. Sie scheint eigenartige Fragen für dich zu haben. Sei geduldig, beantworte ihre Fragen, und du könntest einige Belohnungen erhalten.",
+    "en": "You meet a strange dual in the Dim Forest. They seem to have peculiar questions for you. Answer their questions correctly, and you might receive some rewards.",
+    "es": "Has encontrado a una persona extraña en el Bosque Oscuro. Parece que tienen preguntas peculiares para ti. Sé paciente, responde a sus preguntas, y podrías recibir algunas recompensas.",
+    "fr": "Dans la forêt aveuglante, vous croisez un duo étrange qui vous pose des questions inhabituelles. Répondez correctement pour obtenir des récompenses.",
+    "ja": "光なき森で妙な人たちと出逢い、あなたに妙なクイズを出題した。平常心を保ち、そのクイズに答えすれば、何かご褒美が手に入れるかも……",
+    "ko": "암흑 밀림에서 만난 이상한 사람들이 이상한 질문을 합니다. 인내심을 가지고 그들의 질문에 대답하면 보상을 받을 수 있을지도 모릅니다...",
+    "th": "คุณได้พบกับคู่หูแปลกๆ ในป่าสลัว ดูเหมือนว่าพวกเขาจะมีคำถามแปลกๆ สำหรับคุณ ตอบคำถามของพวกเขาให้ถูกต้อง แล้วคุณอาจจะได้รับรางวัลบางอย่าง",
+    "zh-Hans": "在无光之森遇到了奇怪的人，他们有些奇怪的问题问你。保持耐心，回答他们的问题，也许能拿到奖励……",
+    "zh-Hant": "在無光之森遇到了奇怪的人，他們有些奇怪的問題問你。保持耐心，回答他們的問題，也許能拿到獎勵……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Beende das Quiz",
+        "en": "Complete the quiz",
+        "es": "Completa el cuestionario",
+        "fr": "Répondre aux questions",
+        "ja": "クイズを完了する",
+        "ko": "퀴즈 맞히기",
+        "th": "ทำบททดสอบให้เสร็จ",
+        "zh-Hans": "完成问答",
+        "zh-Hant": "完成問答"
+      },
+      "entities": [
+        {
+          "entityId": 133001036,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男12",
+          "areaId": 702,
+          "position": {
+            "x": -3000,
+            "y": 295241,
+            "z": 3869
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133002111,
+          "mapId": 8,
+          "blueprintType": "NPC232",
+          "name": "TsEntity_180_003_皇龙男13",
+          "areaId": 702,
+          "position": {
+            "x": -2938,
+            "y": 295245,
+            "z": 3870
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_无光之森洞穴POI",
+          "flowIndex": 3,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Quiz Nummer drei. Im Düsteren Wald.",
+                "en": "Quiz number three. Inside the Dim Forest.",
+                "es": "Cuestionario número tres. Dentro del Bosque Oscuro.",
+                "fr": "Pour la troisième question, dans la Forêt sans lumière.",
+                "ja": "第3問、光なき森の中に……？",
+                "ko": "재미있는 질문 세 번째! 「암흑 밀림」 숲에서!",
+                "th": "คำถามข้อที่สาม ซ่อนอยู่ในป่าสลัว",
+                "zh-Hans": "趣题第三问，无光森林里。",
+                "zh-Hant": "趣題第三問，無光森林裡。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mond hängt von den Bäumen, wo kannst du Segen finden?",
+                "en": "Moon hanging from the trees, where can you find blessings?",
+                "es": "Luna colgando de los árboles, ¿dónde puedes encontrar bendiciones?",
+                "fr": "La lune pend dans la forêt sombre, où est la protection ?",
+                "ja": "暗い森に掛かる月。それはどこにありますか？",
+                "ko": "어두운 숲속에 걸려있는 달은 어디에 있을까요?",
+                "th": "จันทราแขวนท่ามกลางพฤกษา หากปรารถนาจะขอพรได้จากที่ใด?",
+                "zh-Hans": "月挂暗林间，护佑在何处？",
+                "zh-Hant": "月掛暗林間，護佑在何處？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Violuna Banyan.",
+                    "en": "Violuna Banyan.",
+                    "es": "Violuna Banyan.",
+                    "fr": "Banyan violet.",
+                    "ja": "紫月のガジュマル。",
+                    "ko": "자색 반얀나무",
+                    "th": "ต้นไทรไวโอรูน่า",
+                    "zh-Hans": "紫月榕。",
+                    "zh-Hant": "紫月榕。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Zentraler Baum.",
+                    "en": "Central Tree.",
+                    "es": "Árbol Central.",
+                    "fr": "Arbre géant.",
+                    "ja": "中央にある大木。",
+                    "ko": "중앙 거목",
+                    "th": "ต้นไม้ตอนกลาง",
+                    "zh-Hans": "中心巨树。",
+                    "zh-Hant": "中心巨樹。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Quiz Nummer Drei beantwortet! Violuna Banyan im Düsteren Wald.",
+                "en": "Quiz Number Three answered! Violuna Banyan in Dim Forest.",
+                "es": "¡Tercera pregunta respondida! Violuna Banyan en el Bosque Oscuro.",
+                "fr": "La troisième réponse, dans l'abri du Banyan violet.",
+                "ja": "ご名答！紫月のガジュマルにあります！",
+                "ko": "정답입니다! 자색 반얀나무!",
+                "th": "เฉลยคำถามข้อที่สาม! ต้นไทรไวโอรูน่าในป่าสลัว",
+                "zh-Hans": "妙答第三记，紫月榕林中。",
+                "zh-Hant": "妙答第三記，紫月榕林中。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm deine Belohnung. Die Quizze sind vorbei.",
+                "en": "Take your reward. The quizzes are no more.",
+                "es": "Toma tu recompensa. No hay más cuestionarios.",
+                "fr": "Prenez la récompense, l'énigme disparaît !",
+                "ja": "では、こちら景品です！受け取ってください！",
+                "ko": "보상을 수령하세요! 퀴즈 이젠 없습니다!",
+                "th": "รับรางวัลไป เราไม่มีบททดสอบต่อจากนี้แล้ว",
+                "zh-Hans": "奖励请收下，谜题消隐去！",
+                "zh-Hant": "獎勵請收下，謎題消隱去！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schwierigkeiten tauchen auf. Rover ist verwirrt.",
+                "en": "Difficulties arise. Rover confused.",
+                "es": "Surgen dificultades. Errante está confundido.",
+                "fr": "Si l'énigme est difficile, la réponse est incertaine.",
+                "ja": "残念！深く考えすぎですね。",
+                "ko": "땡! 아, 아쉽네요!",
+                "th": "อุปสรรคก่อตัว ผู้พเนจรสับสน",
+                "zh-Hans": "题有困难处，疑难解不清。",
+                "zh-Hant": "題有困難處，疑難解不清。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du es durchstehst, komm zurück und sei mein Gast!",
+                "en": "If you see it through, return and be my guest!",
+                "es": "¡Si lo ves hasta el final, vuelve y sé mi invitado!",
+                "fr": "Si vous avez une idée, la réponse sera révélée demain !",
+                "ja": "明日もう一度挑戦してみてください！",
+                "ko": "내일 다시 도전 하세요!",
+                "th": "หากต้องการทำให้สำเร็จ ก็เชิญกลับมาลองดูใหม่!",
+                "zh-Hans": "若有巧思出，明日复解疑！",
+                "zh-Hant": "若有巧思出，明日複解疑！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_无光之森洞穴POI",
+          "flowIndex": 3,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Es gibt keine Quizze mehr!",
+                "en": "Quizzes are no more!",
+                "es": "¡No hay más cuestionarios!",
+                "fr": "Tout est répondu ! Les quiz n'existent plus !",
+                "ja": "私からのクイズは以上となります！",
+                "ko": "퀴즈 이젠 없습니다!",
+                "th": "ไม่มีบททดสอบแล้ว!",
+                "zh-Hans": "谜题消隐去，此后无问题！",
+                "zh-Hant": "謎題消隱去，此後無問題！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

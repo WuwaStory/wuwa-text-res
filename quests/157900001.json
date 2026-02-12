@@ -1,0 +1,489 @@
+{
+  "id": 157900001,
+  "key": "2.0巡礼之梦2",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Traumparade: Teil 2",
+    "en": "Dream Patrol II",
+    "es": "Patrulla de sueño II",
+    "fr": "Tour de rêve - II",
+    "ja": "巡礼の夢・その二",
+    "ko": "순례의 꿈 · II",
+    "th": "ลาดตระเวนฝัน II",
+    "zh-Hans": "巡礼之梦·其二",
+    "zh-Hant": "巡禮之夢·其二"
+  },
+  "desc": {
+    "de": "Setze die Traumparade-Herausforderung fort und besiege die Albträume, die in den Knoten des Traumlandes verborgen sind.",
+    "en": "Continue the challenges of Dream Patrol and defeat the Nightmares hidden within the Dreamscape Nodes.",
+    "es": "Continúa los desafíos de la Patrulla de sueño y derrota las pesadillas ocultas dentro de los nodos del sueño.",
+    "fr": "Relever les défis du « Tour de rêve » et vaincre les cauchemars aux Nœuds oniriques",
+    "ja": "引き続き巡礼の夢のチャレンジをクリアし、各エリアのドリームノードに潜むナイトメアを倒そう。",
+    "ko": "「순례의 꿈」의 도전을 계속해서 완료하세요. 각 지역의 꿈의 노드에 숨겨져 있는 악몽을 격파하세요",
+    "th": "ทำชาเลนจ์ของลาดตระเวนแห่งความฝันต่อไปและเอาชนะฝันร้ายที่ซ่อนอยู่ในโหนดดรีมสเคป",
+    "zh-Hans": "继续完成巡礼之梦的挑战，击败各个地区隐藏在梦境节点后的梦魇。",
+    "zh-Hant": "繼續完成巡禮之夢的挑戰，擊敗隱藏在各個地區夢境節點後的夢魘。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rede mit der Seltsamen Weißen Katze in Ragunna",
+        "en": "Talk to the strange white cat in Ragunna City.",
+        "es": "Habla con el extraño gato blanco en la Ciudad de Raguna.",
+        "fr": "Parler au chat blanc étrange à Ragunna",
+        "ja": "ラグーナ城で奇妙な白猫と話す",
+        "ko": "라군나 성에서 기이한 흰 고양이와 대화하기",
+        "th": "คุยกับแมวขาวประหลาดในเมืองรากูนน่า",
+        "zh-Hans": "在拉古那城和奇异的白猫谈谈",
+        "zh-Hant": "在拉古那城和奇異的白貓談談"
+      },
+      "entities": [
+        {
+          "entityId": 157900579,
+          "mapId": 8,
+          "blueprintType": "NPC1044",
+          "name": "TsEntity_肉鸽_灯灯猫",
+          "areaId": 1692,
+          "position": {
+            "x": 693330,
+            "y": 580920,
+            "z": 1060
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导任务_巡礼之梦",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}, glaubst du, dass diese speziellen TDs ähnlich einigen der Erinnerungsfragmente im Somnoire sind?",
+                "en": "{PlayerName}, do you think that special TD is similar to some of the memory fragments in the Somnoire?",
+                "es": "{PlayerName}, ¿crees que esa Disonancia Tácita especial es similar a algunos de los fragmentos de memoria en Somnolencia?",
+                "fr": "{PlayerName}, pense-tu que ce TD spécial ressemble aux fragments de mémoire dans le Somnoire ?",
+                "ja": "{PlayerName}、今の特殊な残像、集域の中の記憶の集合体と似てると思わない……？",
+                "ko": "{PlayerName}, 방금 그 특수 잔상이 영역 내 어떤 기억 개체와 비슷한 것 같지 않나요...?",
+                "th": "{PlayerName} คุณคิดว่าทาเซ็ตดิสคอร์ดพิเศษเหมือนกับเศษเสี้ยวความทรงจำในแดนจิตนิมิตหรือเปล่า?",
+                "zh-Hans": "{PlayerName}有没有觉得，刚刚那个特殊残象和集域中的某些记忆体很像……",
+                "zh-Hant": "{PlayerName}有沒有覺得，剛剛那個特殊殘象和集域中的某些記憶體很像……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es gibt einige Ähnlichkeiten.",
+                    "en": "There are some resemblances.",
+                    "es": "Hay algunas semejanzas.",
+                    "fr": "Il y a quelques ressemblances.",
+                    "ja": "なんとなくそんな気がする。",
+                    "ko": "조금요",
+                    "th": "ก็มีส่วนคล้ายอยู่บ้างนะ",
+                    "zh-Hans": "隐约有一点。",
+                    "zh-Hant": "隱約有一點。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Und es erinnerte mich an einen alten Bekannten ...",
+                    "en": "And it reminded me of an old acquaintance...",
+                    "es": "Y me recordó a un viejo conocido...",
+                    "fr": "Et cela m'a rappelé une vieille connaissance...",
+                    "ja": "昔出会ったある人を思い出した……",
+                    "ko": "옛 친구 한 분이 생각나네요...",
+                    "th": "แถมยังทำให้ฉันนึกถึงคนคุ้นหน้าที่เคยรู้จัก...",
+                    "zh-Hans": "令我想起一位故人……",
+                    "zh-Hant": "令我想起一位故人……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, wenn du genau hinschaust, ist es sehr ähnlich zu diesen verdorbenen Träumen.",
+                "en": "Yes, if you look closely, it's very similar to those corrupted dreams.",
+                "es": "Sí, si miras de cerca, es muy similar a esos sueños corruptos.",
+                "fr": "Oui, si nous regardons de près, c'est très similaire aux rêves corrompus.",
+                "ja": "その通り、よく見比べると、汚染された夢にそっくりだ。",
+                "ko": "맞아요, 자세히 비교해 보면 그 오염된 꿈과 아주 비슷해요",
+                "th": "ใช่ ถ้าคุณดูให้ดี มันก็ดูคล้ายกับความฝันปนเปื้อนพวกนั้นมากทีเดียว",
+                "zh-Hans": "是啊，仔细对比的话，和那些被污染的梦境非常相似。",
+                "zh-Hant": "是啊，仔細對比的話，和那些被汙染的夢境非常相似。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich spreche von den verdorbenen Träumen, miau.",
+                "en": "I'm talking about the corrupted dreams, meow.",
+                "es": "Estoy hablando de los sueños corruptos, miau.",
+                "fr": "Je parle des rêves corrompus, miaou.",
+                "ja": "いや人の話じゃなくて汚染された夢のことだニャー。",
+                "ko": "그 오염된 꿈을 말하는 거예요, 냥",
+                "th": "ฉันพูดถึงความฝันปนเปื้อนน่ะ เหมียว",
+                "zh-Hans": "我是在说那些被污染的梦境喵。",
+                "zh-Hant": "我是在說那些被汙染的夢境喵。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Träume sind Visionen aus dem Unterbewusstsein. Selbst wenn sie sich zu Erinnerungsfragmenten verfestigen, tragen sie immer noch die ganze Freude und das Leid des Träumers.",
+                "en": "Dreams are visions from the subconscious. Even when they solidify into memory fragments, they still carry all the joy and sorrow of the dreamer.",
+                "es": "Los sueños son visiones del subconsciente. Incluso cuando se solidifican en fragmentos de memoria, todavía llevan toda la alegría y la tristeza del soñador.",
+                "fr": "Les rêves sont des visions de l'inconscient. Même lorsqu'ils se solidifient en fragments de mémoire, ils portent toujours toute la joie et la tristesse du rêveur.",
+                "ja": "夢は無意識から流れ出る一種の願いのようなもので、たとえ周波数が記憶の集合体として具象化したとしても、本来なら夢の持ち主の喜怒哀楽が全部混ざっているはずなんだ。",
+                "ko": "꿈은 무의식중에 흘러나오는 일종의 염원과도 같죠. 주파수가 기억 개체로 구상화된 것이더라도 보통 꿈 주인의 모든 희로애락이 섞여 있어야 하거든요",
+                "th": "ความฝันคือภาพที่เกิดจากจิตใต้สำนึก แม้มันจะกลายเป็นเศษเสี้ยวความทรงจำขึ้นมา แต่ก็ยังคงเก็บเอาความสุขและความทุกข์ของผู้ฝันไว้อย่างครบถ้วน",
+                "zh-Hans": "梦是潜意识所流出的一种愿景，就算是频率具象化成记忆体，也应该混杂了梦境主人全部的喜怒哀乐一般。",
+                "zh-Hant": "夢是潛意識所流出的一種願景，就算是頻率具象化成記憶體，也應該混雜了夢境主人全部的喜怒哀樂一般。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber diese speziellen TDs ... Es ist, als ob das Unterbewusstsein der Menschen durch ein einziges Konzept vereinigt worden wäre, das nichts als einen Wunsch enthält.",
+                "en": "But those special TDs... it's as though people's subconscious have been unified by a single concept, carrying nothing but one desire.",
+                "es": "Pero esas Disonancias Tácitas especiales... es como si los subconscientes de las personas se hubieran unificado por un solo concepto, sin llevar nada más que un deseo.",
+                "fr": "Mais ces TD spéciaux... c'est comme si l'inconscient des gens avait été unifié par un seul concept, ne portant qu'un seul désir.",
+                "ja": "でも、あの特別な残像は、まるで人々の無意識が特殊な概念によって統合され……純粋な欲望の塊みたいなものになっている。",
+                "ko": "하지만 그 특수 잔상들은 마치... 사람들의 무의식이 모두 어떤 특별한 개념에 의해 합쳐진 것 같았어요... 순수한 욕망만 남아 있게 된 거죠",
+                "th": "แต่ทาเซ็ตดิสคอร์ดพิเศษพวกนั้น... มันดูเหมือนกับจิตใต้สำนึกของผู้คนที่มารวมกันด้วยแนวคิดเดียว ซึ่งไม่มีสิ่งใดอยู่เลยนอกจากความปรารถนาเดียว",
+                "zh-Hans": "可那些特别的残象，就像是人们的潜意识都被某种特殊概念所统合……只带有一种纯粹的欲念。",
+                "zh-Hant": "但那些特別的殘象，就像是人們的潛意識都被某種特殊概念所統合……只帶有一種純粹的慾念。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich versuchte, in die Tiefen des Netzwerks zu blicken, um zu sehen, was dahinter lag. Für einen kurzen Moment sah ich ein einzelnes Bild und wurde fast von dem Flutgeräusch mitgerissen, ich verlor mich selbst.",
+                "en": "I tried to peer into the depths of the network to see what lay beyond. For a brief moment, I saw a single frame of image and almost drowned in the tidal sound, losing myself.",
+                "es": "Intenté asomarme a las profundidades de la red para ver qué había más allá. Por un breve momento, vi un solo fotograma de imagen y casi me ahogué en el sonido de la marea, perdiéndome.",
+                "fr": "J'ai essayé de vérifier et de trouver ce qui se cachait dans les profondeurs. Pendant un bref instant, j'ai vu une seule image et j'ai failli me noyer dans le son de la marée, me perdant moi-même.",
+                "ja": "そこでネットワークの奥底に一体何があるのか、覗いてみたんだ。そして一瞬だけ奇妙な光景が見えた。でも、あふれるような音と声に溺れそうにニャって、意識を失いかけたニャー。",
+                "ko": "네트워크의 깊은 곳을 들여다보았어요. 아주 잠시, 한 장면을 보았을 뿐인데 파도와 같은 소리에 파묻혀 자아를 잃을 지경이었어요, 냥",
+                "th": "ฉันพยายามเจาะลึกเข้าไปในเครือข่ายเพื่อดูสิ่งที่อยู่ลึกเข้าไป ในชั่วขณะหนึ่งฉันเห็นภาพเพียงเฟรมเดียว และเกือบจมลงในเสียงคลื่นอันถาโถมจนสติหลุดไป",
+                "zh-Hans": "我试着窥探网络深处究竟是什么。仅仅只有一瞬，只看到了一个画面，就几乎快要被潮水般的声音淹喵，失去自我。",
+                "zh-Hant": "我試著窺探網絡深處究竟是什麼。僅僅只有一瞬，只看到了一個畫面，就幾乎快要被潮水般的聲音淹喵，失去自我。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was für ein Bild?",
+                    "en": "What kind of image?",
+                    "es": "¿Qué tipo de imagen?",
+                    "fr": "Quelle sorte d'image ?",
+                    "ja": "奇妙な光景？",
+                    "ko": "한 장면이요?",
+                    "th": "ภาพแบบไหนเหรอ?",
+                    "zh-Hans": "画面？",
+                    "zh-Hant": "畫面？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich sah einen pechschwarzen Abgrund, in dem die Menschen ordentlich aufgereiht waren, krochen, die gleichen Gesten machten, die gleichen Worte murmelten, im gleichen Traum gefangen.",
+                "en": "I saw a pitch-black abyss, where people were neatly lined up, crawling, performing the same gestures, murmuring the same words, trapped in the same dream.",
+                "es": "Vi un abismo negro como la pez, donde las personas estaban alineadas ordenadamente, arrastrándose, realizando los mismos gestos, murmurando las mismas palabras, atrapadas en el mismo sueño.",
+                "fr": "J'ai vu un abîme obscur où les gens étaient alignés soigneusement, ramplant, faisant les mêmes gestes, murmurant les mêmes mots, piégés dans le même rêve.",
+                "ja": "そう……真っ暗な淵の中で、人々が整並し、ひれ伏し、同じポーズをして、同じことを呟いて、同じ夢を見ていたんだ。",
+                "ko": "네... 캄캄한 심연 속에서 사람들이 정렬하여 하나같이 바짝 엎드려 같은 자세를 취한 채, 같은 말을 중얼거리며 같은 꿈을 꾸는 듯 보였어요",
+                "th": "ฉันเห็นความเวิ้งว้างที่มืดสนิท ที่ซึ่งผู้คนเรียงแถวอย่างเป็นระเบียบ คลานไปมา ทำท่าทางเหมือนกัน พึมพำคำพูดเดียวกัน ติดอยู่ในความฝันเดียวกัน",
+                "zh-Hans": "是的……我看到一片漆黑的深渊里，人们整齐地排列、匍匐，做着同样的姿势，重复着同样的呢喃，做着同样的梦。",
+                "zh-Hant": "是的……我看到一片漆黑的深淵裡，人們整齊地排列、匍匐，做著同樣的姿勢，重複著同樣的呢喃，做著同樣的夢。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im nächsten Moment bemerkten sie meine Anwesenheit und drehten sich um, um meinen Blick zu treffen ... Ihre Augen ... Ihre Pupillen waren mit der gleichen Substanz gefärbt ...",
+                "en": "In the next moment, they noticed my presence and turned to meet my gaze... Their eyes... Their pupils were stained with the same substance...",
+                "es": "En el siguiente momento, notaron mi presencia y se giraron para encontrarse con mi mirada... Sus ojos... Sus pupilas estaban manchadas con la misma sustancia...",
+                "fr": "Et soudain, ils ont remarqué ma présence et se sont tournés pour croiser mon regard... Leurs yeux... Leurs pupilles étaient tachées de la même substance..",
+                "ja": "次の瞬間、全員が私の存在に気づき、一斉に振り返ってこっちと目が合ったんだ……彼らの瞳は同じような何かに染まっていた……",
+                "ko": "그리고는 그들이 제가 온 것을 눈치채고 다 같이 돌아보며 저와 눈을 마주쳤어요... 그들의 눈은... 눈동자는 같은 물질로 물들어 있었어요...",
+                "th": "และในวินาทีถัดมา พวกเขาก็สังเกตเห็นฉันและหันมาสบตากับฉัน... ดวงตาของพวกเขา... ลูกตาของพวกเขาปนเปื้อนสารบางอย่างเหมือนกัน...",
+                "zh-Hans": "下一刻，他们察觉到我的到来，一同回过头来和我目光相对……他们的眼睛……他们的眼瞳被同样的物质沾染……",
+                "zh-Hant": "下一刻，他們察覺到我的到來，一同回過頭來和我目光相對……他們的眼睛……他們的眼瞳被同樣的物質沾染……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und in der Dunkelheit hinter ihnen öffneten sich langsam ein Paar riesiger Augen ... Ich habe noch nie so einen Traum gesehen.",
+                "en": "And in the darkness behind them, a pair of enormous eyes slowly opened... I've never seen a dream like this before.",
+                "es": "Y en la oscuridad detrás de ellos, un par de ojos enormes se abrieron lentamente... Nunca había visto un sueño así antes.",
+                "fr": "Et dans l'obscurité derrière eux, une paire d'yeux énormes s'ouvrait lentement... Je n'ai jamais vu un rêve comme ça avant.",
+                "ja": "そして、彼らの背後の闇の中で……巨大な2つの瞳がゆっくりと開いていた……あんな夢は見たことがない。",
+                "ko": "그리고 그들 뒤의 암흑 속에서... 어떤 커다란 눈동자가 천천히 열리는 장면이었는데... 이런 꿈은 처음이었어요",
+                "th": "และในความมืดเบื้องหลังพวกเขา ดวงตาคู่มหึมาก็ค่อยๆ เปิดออก... ฉันไม่เคยเห็นความฝันแบบนี้มาก่อนเลย",
+                "zh-Hans": "而在他们身后的黑暗中……某双巨大的瞳孔正缓缓张开……我从没有见过这样的梦。",
+                "zh-Hant": "而在他們身後的黑暗中……某雙巨大的眼睛正緩緩張開……我從沒有見過這樣的夢。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das klingt beunruhigend ...",
+                    "en": "That sounds unsettling...",
+                    "es": "Eso suena inquietante...",
+                    "fr": "Ça a l'air perturbant...",
+                    "ja": "{Male=本当に奇妙な光景だな……;Female=本当に奇妙な光景だね……}",
+                    "ko": "정말 이상한 꿈이군요...",
+                    "th": "ฟังดูน่าขนลุกนะนั่น...",
+                    "zh-Hans": "听起来真奇怪……",
+                    "zh-Hant": "聽起來真奇怪……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Haben sie alle dich angesehen?",
+                    "en": "They all turned to look at you?",
+                    "es": "¿Todos se giraron para mirarte?",
+                    "fr": "Ils se sont tous tournés vers toi ?",
+                    "ja": "全員の視線が一斉に？",
+                    "ko": "모두가 나를 바라본다...?",
+                    "th": "คนพวกนั้นหันมาจ้องคุณกันหมดเลยเหรอ?",
+                    "zh-Hans": "全体目光向我看齐?",
+                    "zh-Hant": "全體目光向我看齊?"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Schon der Gedanke daran bereitet mir ein unbehagliches Gefühl.",
+                "en": "Yes. Just thinking about it gives me an uneasy feeling.",
+                "es": "Sí. Solo pensarlo me da una sensación de inquietud.",
+                "fr": "Oui. Rien que d'y penser me donne une sensation de malaise.",
+                "ja": "うん、今でもあの時見た光景を思い出すだけで、なぜかハラハラするんだ。",
+                "ko": "네, 지금도 그 장면을 생각하면 너무 두렵네요",
+                "th": "ใช่ แค่นึกถึงก็รู้สึกไม่สบายใจแล้ว",
+                "zh-Hans": "是的，现在只要回忆起当时看到的那一幕，就觉得有种莫名的心悸。",
+                "zh-Hant": "是的，現在只要回憶起當時看到的那一幕，就覺得有種莫名的心悸。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das war nicht normal, miau ... Schon der Gedanke daran bereitet mir ein unbehagliches Gefühl.",
+                "en": "It wasn't normal, meow... Just thinking about it gives me an uneasy feeling.",
+                "es": "No era normal, miau... Solo pensarlo me da una sensación de inquietud.",
+                "fr": "Ce n'était pas normal, miaou... Rien que d'y penser me donne une sensation de malaise.",
+                "ja": "すっごく重い視線だったニャー……今でもあの時見た光景を思い出すだけで、なぜかハラハラするんだ。",
+                "ko": "그런 기분 좋은 관심이 아니구요, 냥... 지금도 그 장면을 생각하면 너무 두려워요",
+                "th": "มันไม่ปกติเลย เหมียว... แค่นึกถึงก็รู้สึกไม่สบายใจแล้ว",
+                "zh-Hans": "才没有那么轻松的氛围喵……我只要回忆起当时看到的那一幕，就觉得有种莫名的心悸。",
+                "zh-Hant": "才沒有那麼輕鬆的氛圍喵……我只要回憶起當時看到的那一幕，就覺得有種莫名的心悸。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieser Traum war viel zu gefährlich und beunruhigend. Was könnte in der Dunkelheit unter Rinascitas Wassern lauern? Haben die Menschen in Ragunna immer mit solch einer Bedrohung gelebt?",
+                "en": "That dream was far too dangerous and unsettling. What could be lurking in the darkness beneath Rinascita's waters? Have the people of Ragunna always been living with such a threat?",
+                "es": "Ese sueño era demasiado peligroso e inquietante. ¿Qué podría estar acechando en la oscuridad bajo las aguas de Rinascita? ¿Ha vivido siempre la gente de Raguna con tal amenaza?",
+                "fr": "Ce rêve était bien trop dangereux et inquiétant. Qu'est-ce qui se cache dans l'obscurité sous les eaux de Rinascita ? Les habitants de Ragunna ont-ils toujours vécu avec une telle menace ?",
+                "ja": "あの夢は危険すぎるし、不気味すぎる。リナシータの水には一体何が潜んでいるんだ……もしかしたらラグーナの人々は、ずっとあんな脅威の中で暮らしているのか？",
+                "ko": "그 꿈은 너무 괴상하고 위험한 예감이 들어요. 리나시타의 물 밑의 어둠 속에는 대체 무엇이 숨겨져 있는 걸까요... 설마 라군나 사람들은 늘 이러한 위험 속에 살았다는 걸까요?",
+                "th": "ความฝันนั้นอันตรายและน่าขนลุกเกินไป จะมีอะไรซ่อนตัวอยู่ในความมืดลึกลงไปใต้ผืนน้ำของรินาซิตากันแน่? ผู้คนในรากูนน่าอยู่กับอันตรายเช่นนั้นมาตลอดเลยเหรอ?",
+                "zh-Hans": "那梦境太过于危险和诡异了，黎那汐塔水下的黑暗里到底藏了什么……拉古那的人们，难道一直都生活在这样的威胁之中么？",
+                "zh-Hant": "那夢境太過於危險和詭異了，黎那汐塔水下的黑暗裡到底藏了什麼……拉古那的人們，難道一直都生活在這樣的威脅之中嗎？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, {PlayerName}, ich möchte dich bitten, weiterhin diese TDs zu beseitigen, die im Netzwerk verborgen sind. Nur dann werden die Träume im Somnoire sicher sein.",
+                "en": "So, {PlayerName}, I'd like to ask you to keep eliminating those TDs hidden within the network. Only then will the dreams housed in the Somnoire be safe.",
+                "es": "Así que, {PlayerName}, me gustaría pedirte que sigas eliminando esas Disonancias Tácitas ocultas dentro de la red. Solo entonces los sueños albergados en Somnolencia estarán a salvo.",
+                "fr": "Alors, {PlayerName}, j'aimerais que tu continues à éliminer ces TDs cachés dans le réseau. De cette façon, les rêves logés dans le Somnoire seront en sécurité.",
+                "ja": "だから……{PlayerName}にお願いしたいんだ。ネットワークに潜む残像を全部消してほしい。そうすれば、集域の中の夢を安定させることができる。",
+                "ko": "아무래도... 네트워크 속에 숨겨진 잔상을 소멸하는 일은 계속 {PlayerName}에게 부탁드리고 싶어요. 그래야 영역에 수용된 꿈이 안전할 수 있을 거예요",
+                "th": "ดังนั้นนะ {PlayerName} ฉันก็เลยอยากขอให้คุณช่วยกำจัดทาเซ็ตดิสคอร์ดที่ซ่อนตัวอยู่ในเครือข่ายต่อไป มีเพียงวิธีนั้นเท่านั้นที่จะทำให้ความฝันที่อยู่ในแดนจิตนิมิตปลอดภัย",
+                "zh-Hans": "所以……我想继续拜托{PlayerName}把那些隐藏在网络下的残象都消灭，只有这样，集域中收容的梦境才算安全。",
+                "zh-Hant": "所以……我想繼續拜託{PlayerName}把那些隱藏在網絡下的殘象都消滅，只有這樣，集域中收容的夢境才算安全。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_2_0_引导任务_巡礼之梦",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich verstehe ... also, das war es, was tief im Netzwerk der Knoten des Traumlandes lauerte.",
+                "en": "I see... so, that's what was lurking deep within the network of Dreamscape Nodes.",
+                "es": "Ya veo... así que eso es lo que acechaba profundamente dentro de la red de nodos del sueño.",
+                "fr": "Je vois... donc, c'est ce qui se cachait au plus profond du réseau des nœuds oniriques.",
+                "ja": "なるほどニャー……これがドリームノードのネットワークの奥深くに隠されていたものか。",
+                "ko": "그랬군요, 냥... 꿈의 노드로 구성된 네트워크 깊은 곳에 이런 게 숨겨져 있었군요",
+                "th": "เข้าใจแล้ว... แสดงว่ามีบางอย่างซ่อนอยู่ในส่วนลึกของเครือข่ายจุดเชื่อมแดนฝันสินะ",
+                "zh-Hans": "原来如此喵……这就是梦境节点构成的网络深处所藏匿的东西。",
+                "zh-Hant": "原來如此喵……這就是夢境節點構成的網絡深處所藏匿的東西。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt etwas, das aktiv die Alpträume und negativen Emotionen der Menschen sammelt ...",
+                "en": "There's something actively collecting people's nightmares and negative emotions...",
+                "es": "Hay algo que está recopilando activamente las pesadillas y emociones negativas de las personas...",
+                "fr": "Il y a quelque chose qui collecte activement les cauchemars et les émotions négatives des gens...",
+                "ja": "誰かがわざと人々の悪夢と負の感情を集めているようだな……",
+                "ko": "무언가가 사람들의 악몽과 부정적인 감정을 일부러 한곳에 모은 듯 보여요...",
+                "th": "มีบางสิ่งกำลังเก็บรวบรวมฝันร้ายและอารมณ์ด้านลบของผู้คนอยู่...",
+                "zh-Hans": "看来是有什么东西刻意将人们的噩梦与负面情绪集合在了一起……",
+                "zh-Hant": "看來是有什麼東西刻意將人們的噩夢與負面情緒集合在了一起……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gut gemacht, {PlayerName}. Die Verbindung mit dem Somnoire hat bisher einige Fortschritte gemacht. Lass uns das persönlich weiter besprechen.",
+                "en": "Well done, {PlayerName}. For now, the Somnoire connection has seen some progress. Let's discuss it further in person.",
+                "es": "Bien hecho, {PlayerName}. Por ahora, la conexión con Somnolencia ha visto algunos avances. Hablemos más al respecto en persona.",
+                "fr": "Bravo, {PlayerName}. Pour l'instant, la connexion avec le Somnoire a fait quelques progrès. Discutons-en plus en personne.",
+                "ja": "お疲れ様、{PlayerName}。集域への接続は進捗があったから、直接会って話そう。",
+                "ko": "고생하셨어요, {PlayerName}. 영역의 연결이 약간의 성과를 거두었군요. 만나서 다시 얘기해요",
+                "th": "ทำได้ดีมาก {PlayerName} ตอนนี้การเชื่อมต่อแดนจิตนิมิตดูเหมือนจะมีความคืบหน้าบ้างแล้ว ไว้มาคุยกันต่อตอนเจอกันเถอะ",
+                "zh-Hans": "辛苦了，{PlayerName}。目前集域的联结已初步有了成果，我们当面聊聊吧。",
+                "zh-Hant": "辛苦了，{PlayerName}。目前集域的聯結已有了初步成果，我們當面聊聊吧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1439,
+                "name": {
+                  "zh-Hans": "奇异的白猫"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

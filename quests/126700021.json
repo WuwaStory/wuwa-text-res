@@ -1,0 +1,176 @@
+{
+  "id": 126700021,
+  "key": "倾听动物之声·蛙语翻译",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lauschen auf die Worte der Tiere: Übersetzung der Froschsprache",
+    "en": "Listen to Animals' Words: Translation of Frog's Language",
+    "es": "Escuchar las palabras de los animales: Traducción del lenguaje de las ranas",
+    "fr": "Écouter la voix des animaux : Grenouille",
+    "ja": "動物の声を聞こう・蛙語通訳",
+    "ko": "동물의 소리 듣기·개구리 언어 번역",
+    "th": "รับฟังคำพูดสัตว์: คำแปลภาษากบ",
+    "zh-Hans": "倾听动物之声·蛙语翻译",
+    "zh-Hant": "傾聽動物之聲·蛙語翻譯"
+  },
+  "desc": {
+    "de": "Du triffst Xuanyin wieder, während die Geräusche der Frösche dich umgeben...",
+    "en": "You meet Xuanyin again, while the sounds of frog surround you...",
+    "es": "Te encuentras con Xuanyin de nuevo, mientras los sonidos de las ranas te rodean...",
+    "fr": "Vous rencontrez à nouveau Xuanyin, entourée de coassements de grenouilles...",
+    "ja": "再び懸音と出会った。周りにカエルの鳴き声が絶えない……",
+    "ko": "다시 한번 현음과 마주쳤습니다. 사방에서 개구리 소리가 울립니다...",
+    "th": "คุณพบ Xuanyin อีก มีเสียงกบอยู่รอบตัวคุณ...",
+    "zh-Hans": "你又见到了悬音，四周的蛙声此起彼伏……",
+    "zh-Hant": "你又見到了懸音，四周的蛙聲此起彼伏……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Xuanyin",
+        "en": "Talk to Xuanyin",
+        "es": "Habla con Xuanyin",
+        "fr": "Parler à Xuanyin",
+        "ja": "懸音と会話",
+        "ko": "현음과 대화",
+        "th": "คุยกับ Xuanyin",
+        "zh-Hans": "和悬音交谈",
+        "zh-Hant": "和懸音交談"
+      },
+      "entities": [
+        {
+          "entityId": 126000177,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "倾听动物之声_久久蛙_悬音",
+          "areaId": 3,
+          "position": {
+            "x": -64180,
+            "y": 118450,
+            "z": 39
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界事件_倾听动物之声_久久蛙",
+          "flowIndex": 1,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Was für eine dramatische Nacht. Manchmal kann die Wahrheit Menschen verletzen.",
+                "en": "What a dramatic night. Sometimes, the truth can hurt people.",
+                "es": "Vaya una noche dramática. A veces, la verdad puede herir a las personas.",
+                "fr": "Quel drame... Parfois, la vérité est un fardeau.",
+                "ja": "こんなこともあるのですね。真実は時に人を傷つけてしまう……",
+                "ko": "정말 성능이 너무 좋아도 문제네요... 때로는 반대로 부담스러울 때가 있어요",
+                "th": "ช่างเป็นค่ำคืนที่น่าทึ่งจริงๆ บางครั้งความจริงก็ทำร้ายคนได้",
+                "zh-Hans": "真是戏剧化啊……有时候真相反而是种负担呢。",
+                "zh-Hant": "真是戲劇化啊……有時候真相反而是種負擔呢。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das stimmt.",
+                    "en": "That's right.",
+                    "es": "Así es.",
+                    "fr": "C'est toi qui as dit que la sincérité est l'esprit.",
+                    "ja": "「信じる者は救われる」ということか……",
+                    "ko": "때로는 선의의 거짓말이 필요한 거네요",
+                    "th": "ใช่แล้ว",
+                    "zh-Hans": "你说的，心诚则灵。",
+                    "zh-Hant": "你說的，心誠則靈。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, ich muss zurück. Bis zum nächsten Mal!",
+                "en": "Anyway, I need to go back. See you next time!",
+                "es": "De todas formas, necesito volver. ¡Nos vemos la próxima vez!",
+                "fr": "Haha, ne me taquinez pas. Il est temps de partir, à la prochaine fois.",
+                "ja": "はは、そうかもしれませんね。ではもう時間ですので、また今度！",
+                "ko": "하하, 그렇게 봐줘서 고마워요. 돌아가야겠네요. 다음에 봐요",
+                "th": "อย่างไรก็ตาม ฉันต้องกลับไปแล้วล่ะ ไว้เจอกันใหม่นะ!",
+                "zh-Hans": "哈哈，给我留点面子嘛。该回去了，下次见吧。",
+                "zh-Hant": "哈哈，給我留點面子嘛。該回去了，下次見吧。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "id": 181850002,
+  "key": "2.8预热day2",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lahai-Roi-Treibgut II",
+    "en": "Daily Lahai-Roi Castaway II",
+    "es": "Objeto Náufrago diario de Lahai-Roi II",
+    "fr": "Résidu quotidien issu de Lahai-Roi - II",
+    "ja": "毎日のラハイロイ漂流物・二",
+    "ko": "오늘의 라하이 로이 표류물 · Ⅱ",
+    "th": "วัตถุตกค้างจากลาไฮรอยรายวัน - 2",
+    "zh-Hans": "每日的拉海洛漂流物·二",
+    "zh-Hant": "每日的拉海洛漂流物·二"
+  },
+  "desc": {
+    "de": "Um mehr über Lahai-Roi zu erfahren, beginnst du damit, Treibgut in der Stadt Honami zu suchen. Geh zum Shashou-Café und schau mal, was du heute finden kannst.",
+    "en": "To learn more about Lahai-Roi, you begin searching for castaway objects throughout Honami City. Time to visit Shashou Cafe. What object will you find this time?",
+    "es": "Para saber más sobre Lahai-Roi, comienzas a buscar Objetos Náufragos por toda la ciudad de Honami Es hora de visitar el Shashou Café. ¿Qué objetos encontrarás esta vez?",
+    "fr": "Pour mieux connaître Lahai-Roi, vous commencez à chercher des résidus dans la ville de Honami. Passez au Café Shashou pour découvrir ce qui vous y attend.",
+    "ja": "ラハイロイのことをより詳しく知るため、あなたは穂波市内の漂流物を探すべく、車掌カフェへと向かった。今回はどんな漂流物を見つけられるのだろうか……",
+    "ko": "라하이 로이 지역에 대해 더 많이 알아보기 위해 당신은 호나미 시 곳곳에 흩어져 있는 표류물을 찾기 시작했다. 샤쇼우 카페에 가서 이번엔 어떤 표류물을 찾을 수 있을지 기대해 보자",
+    "th": "เพื่อทำความรู้จักเขตพื้นที่ลาไฮรอยให้มากขึ้น คุณเริ่มออกตามหาวัตถุตกค้างที่กระจัดกระจายอยู่ทั่วเมืองโฮนามิ มุ่งหน้าไปยังคาเฟ่นายสถานีกันเถอะ ไม่รู้ว่าครั้งนี้จะได้พบกับวัตถุตกค้างแบบไหน",
+    "zh-Hans": "为了更多地了解拉海洛地区，你开始寻找散落在穗波市各处的漂流物。前往列车长咖啡厅吧，不知道这次会找到什么样的漂流物。",
+    "zh-Hant": "為了更多地了解拉海洛地區，你開始尋找散落在穗波市各處的漂流物。前往列車長咖啡廳吧，不知道這次會找到什麼樣的漂流物。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zum Shashou-Café und sprich mit Namipon",
+        "en": "Head to Shashou Cafe and talk to Namipon",
+        "es": "Dirígete al Café Shashou y habla con Namipón.",
+        "fr": "Se rendre au Café Shashou et discuter avec Namipon",
+        "ja": "車掌カフェでナミポンと会話する",
+        "ko": "샤쇼우 카페로 이동하여 나미폰과 대화하기",
+        "th": "ไปยังคาเฟ่นายสถานี เพื่อพูดคุยกับ Namipon",
+        "zh-Hans": "前往列车长咖啡厅，和波仔聊聊",
+        "zh-Hant": "前往列車長咖啡廳，和波仔聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 181850001,
+          "mapId": 910,
+          "blueprintType": "branch2.8_880_Bozai02",
+          "name": "TsEntity_NPC_导购员波仔",
+          "areaId": 40,
+          "position": {
+            "x": 2233,
+            "y": 4916,
+            "z": 130
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2.8预热活动",
+          "flowIndex": 1,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Passagier;Female=Passagierin}, da bist du ja! Heute werde ich dich zum Treibgut führen.",
+                "en": "Passenger, you're here! I'll be guiding you to the castaway today.",
+                "es": "¡{Male=Pasajero;Female=Pasajera}, has venido! Hoy yo te guiaré hasta otro náufrago.",
+                "fr": "{Male=Passager;Female=Passagère}, te voilà ! Je vais te mener au résidu aujourd'hui.",
+                "ja": "お客様、いらっしゃいませ。今回の漂流物は、私がご案内いたします。",
+                "ko": "손님, 오셨어요? 이번엔 제가 표류물의 위치를 안내해 드릴게요",
+                "th": "ท่านผู้โดยสาร คุณมาถึงแล้วเหรอ?! ฉันจะเป็นคนนำทางคุณไปหาวัตถุตกค้างเองนะ",
+                "zh-Hans": "客人，你来啦。这次是我来负责给你提供漂流物的指引哦。",
+                "zh-Hant": "客人，你來啦。這次是我來負責給你提供漂流物的指引喔。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du bist es, der Einkaufszentrumsberater.",
+                    "en": "It's you, the mall guide.",
+                    "es": "Tú eres el guía del centro comercial.",
+                    "fr": "Tu es le guide du centre commercial.",
+                    "ja": "{Male=販売員の、ナミポンか。;Female=販売員の、ナミポンね。}",
+                    "ko": "판매원 나미폰이군요",
+                    "th": "โอ้ Namipon พนักงานขายนี่เอง",
+                    "zh-Hans": "原来是导购员波仔。",
+                    "zh-Hant": "原來是導購員波仔。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ein anderes Capybara?",
+                    "en": "Why is it you this time?",
+                    "es": "¿Un capibara diferente?",
+                    "fr": "Un autre capybara ?",
+                    "ja": "{Male=別のカピバラが出てきたな。;Female=別のカピバラが出てきた。}",
+                    "ko": "왜 카피바라가 바뀌었죠?",
+                    "th": "คาปิบาร่าอีกตัวงั้นเหรอ?",
+                    "zh-Hans": "怎么换豚了？",
+                    "zh-Hant": "怎麼換豚了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Dieses Mal befindet sich das Treibgut nicht bei der Promenade, sondern bei den Läden auf der Ginga-Straße.",
+                "en": "This time, the castaway is not at the Crossing. It's over by the shops on Ginga Street.",
+                "es": "Esta vez, el náufrago no está en el Cruce. Está cerca de las tiendas de la calle Ginga.",
+                "fr": "Cette fois, le résidu ne se trouve pas au carrefour. Il est près des boutiques sur la rue Ginga.",
+                "ja": "今回の漂流物は、スクランブルから少し離れた、銀河通りの店舗近くにございます。",
+                "ko": "이번 표류물은 보행자 거리에서 멀리 떨어진 긴가 거리 상점 근처에 있는 관계로",
+                "th": "เพราะว่าครั้งนี้วัตถุตกค้างอยู่ห่างจากถนนคนเดินค่อนข้างไกล อยู่ใกล้ๆ กับร้านค้าบนถนนกิงกะ",
+                "zh-Hans": "因为这次的漂流物离步行街比较远，位于银河商业街的店铺附近。",
+                "zh-Hant": "因為這次的漂流物離徒步區比較遠，位於銀河商業街的店鋪附近。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und ich kenne die Ginga-Straße wie meine Westentasche. Darum wurde ich geschickt, um dich zu lotsen.",
+                "en": "And I know Ginga Street inside out. So they sent me to guide you.",
+                "es": "Y como conozco la calle Ginga como la palma de mi mano, me enviaron para guiarte.",
+                "fr": "Je connais la rue Ginga comme ma poche. C'est pour ça qu'on m'envoie te guider.",
+                "ja": "つきましては、銀河通りにより詳しい個体が、お手伝いさせていただくことになりました。",
+                "ko": "긴가 거리에 대해 잘 알고 있는 제가 위치를 추적해 드리기로 했죠",
+                "th": "และฉันก็รู้จักถนนกิงกะดีทุกซอกทุกมุม พวกเขาเลยส่งฉันมานำทางให้คุณน่ะ",
+                "zh-Hans": "就换成对商业街比较熟悉的我来帮忙定位啦。",
+                "zh-Hant": "就換成對商業街比較熟悉的我來幫忙定位啦。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Zeit zum Aufbruch.",
+                    "en": "Time to set off.",
+                    "es": "Es hora de irse.",
+                    "fr": "C'est le moment d'y aller.",
+                    "ja": "{Male=また出発の時か。;Female=また出発の時ね。}",
+                    "ko": "또 출발해야겠네요",
+                    "th": "ได้เวลาออกเดินทางแล้ว",
+                    "zh-Hans": "又该动身了。",
+                    "zh-Hant": "又該動身了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das ist schon ein gutes Stück zu laufen.",
+                    "en": "That's a bit of a trek.",
+                    "es": "Eso es una buena caminata.",
+                    "fr": "Ça fait une trotte.",
+                    "ja": "{Male=今回はちょっと距離が遠いな。;Female=今回はちょっと距離が遠いね。}",
+                    "ko": "정말 머네요...",
+                    "th": "ดูเหมือนจะต้องเดินไกลหน่อยนะ",
+                    "zh-Hans": "还真有点距离……",
+                    "zh-Hant": "還真有點距離……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Warte, {Male=Passagier;Female=Passagierin}. Ich kann dich direkt dorthin teleportieren.",
+                "en": "Hold on, Passenger. I can teleport you there directly.",
+                "es": "Espera, {Male=pasajero;Female=pasajera}. Puedo teletransportarte ahí directamente.",
+                "fr": "Attends, {Male=Passager;Female=Passagère}, je peux t'y téléporter directement.",
+                "ja": "お待ちください。実は……お客様を、直接目的地へ転送することができるんです。",
+                "ko": "잠시만요, 손님. 사실 거기까지 바로 전송해 드릴 수도 있어요",
+                "th": "เดี๋ยวก่อน ท่านผู้โดยสาร ฉันเทเลพอร์ตคุณไปที่นั่นได้เลย",
+                "zh-Hans": "请留步，客人，其实我可以把你直接传送过去哦。",
+                "zh-Hant": "請留步，客人，其實我可以把你直接傳送過去喔。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ziel: Ginga-Straße! In drei, zwei, eins … los geht’s!",
+                "en": "Destination: Ginga Street! In three, two, one... off we go!",
+                "es": "¡Destino: la calle Ginga! En tres, dos, uno... ¡allá vamos!",
+                "fr": "Destination : rue Ginga ! Dans trois, deux, un... c'est parti !",
+                "ja": "目標は、銀河通り。3、2、1……転送を開始します！",
+                "ko": "목표는 긴가 거리, 하나, 둘, 셋... 출발!",
+                "th": "จุดหมาย: ถนนกิงกะ! สาม สอง หนึ่ง... ไปกันเลย!",
+                "zh-Hans": "目标是银河商业街，三，二，一……出发！",
+                "zh-Hant": "目標是銀河商業街，三，二，一……出發！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erkunde Stadt Honami",
+        "en": "Explore Honami City",
+        "es": "Explora la ciudad de Honami.",
+        "fr": "Explorer la ville de Honami",
+        "ja": "穂波市を探索",
+        "ko": "호나미 시 탐색하기",
+        "th": "สำรวจเมืองโฮนามิ",
+        "zh-Hans": "探索穗波市",
+        "zh-Hant": "探索穗波市"
+      },
+      "entities": [
+        {
+          "entityId": 181850001,
+          "mapId": 910,
+          "blueprintType": "branch2.8_880_Bozai02",
+          "name": "TsEntity_NPC_导购员波仔",
+          "areaId": 40,
+          "position": {
+            "x": 2233,
+            "y": 4916,
+            "z": 130
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bringe das Bento zurück zum Café",
+        "en": "Bring the half-priced bento back to the cafe",
+        "es": "Devuelve los bentos a mitad de precio al Café.",
+        "fr": "Apporter le bento à bon prix au Café Shashou",
+        "ja": "「半額弁当」をカフェに持ち帰る",
+        "ko": "「반값 도시락」을 카페로 가져가기",
+        "th": "นำ \"ข้าวกล่องลดครึ่งราคา\" กลับไปยังร้านกาแฟ",
+        "zh-Hans": "将“半价便当”带回咖啡厅",
+        "zh-Hant": "將「半價便當」帶回咖啡廳"
+      },
+      "entities": [
+        {
+          "entityId": 181850001,
+          "mapId": 910,
+          "blueprintType": "branch2.8_880_Bozai02",
+          "name": "TsEntity_NPC_导购员波仔",
+          "areaId": 40,
+          "position": {
+            "x": 2233,
+            "y": 4916,
+            "z": 130
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2.8预热活动",
+          "flowIndex": 1,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {},
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "de": "(Das Treibgut abliefern.)",
+                    "en": "(Deliver the castaway.)",
+                    "es": "(Entregar el náufrago)",
+                    "fr": "(Donner le résidu.)",
+                    "ja": "（集めた漂流物を渡す）",
+                    "ko": "(찾은 표류물을 제출한다)",
+                    "th": "(มอบวัตถุตกค้าง)",
+                    "zh-Hans": "（交付搜寻到的漂流物）",
+                    "zh-Hant": "（交付搜尋到的漂流物）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, {Male=Passagier;Female=Passagierin}, du hast es gefunden! Das legendäre Bento zum halben Preis!",
+                "en": "Ah, Passenger, you found it! The legendary half-priced bento!",
+                "es": "¡Ah, {Male=pasajero;Female=pasajera}, la encontraste! ¡La legendaria fiambrera a mitad de precio!",
+                "fr": "Ah, {Male=Passager;Female=Passagère}, tu l'as trouvé ! Le légendaire bento à bon prix !",
+                "ja": "あ、お客様、見つけたんですね……伝説の半額弁当を！",
+                "ko": "오, 손님! 전설의 반값 도시락을 찾으셨군요!",
+                "th": "อ่า ท่านผู้โดยสาร คุณเจอมันเข้าแล้ว! เบนโตะลดครึ่งราคาในตำนาน!",
+                "zh-Hans": "啊，客人，你找到了……传说中的半价便当!",
+                "zh-Hant": "啊，客人，你找到了……傳說中的半價便當!"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "…",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "…",
+                    "ja": "……",
+                    "ko": "...",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Was soll dieses Bento zum halben Preis überhaupt sein?",
+                    "en": "What is this half-priced bento anyway?",
+                    "es": "¿Pero qué es esta fiambrera a mitad de precio?",
+                    "fr": "C'est quoi ce bento à bon prix, en fait ?",
+                    "ja": "{Male=だから半額弁当って、いったい何なんだ！;Female=だから半額弁当って、いったい何なのよ！}",
+                    "ko": "그러니까 반값 도시락이 도대체 뭔데요?",
+                    "th": "ว่าแต่เบนโตะลดครึ่งราคานี่มันคืออะไรกันแน่?",
+                    "zh-Hans": "所以到底什么是半价便当啊！",
+                    "zh-Hant": "所以到底什麼是半價便當啊！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ein Bento zum halben Preis ist ein Bento, dessen Preis spätabends herabgesetzt wird – ein Symbol für Ordnung und Hoffnung!",
+                "en": "A half-priced bento is a bento that gets marked down late at night, a symbol of rules and hope!",
+                "es": "Una fiambrera a mitad de precio es una ración de comida rebajada, y representa la esperanza y la ley de la oferta y la demanda.",
+                "fr": "Un bento à bon prix est un bento qui est vendu à moitié prix tard le soir ; le symbole de règles et d'espoir !",
+                "ja": "半額弁当とは、お店で深夜まで売れ残り、半額で販売されるお弁当のことです。それは秩序と希望の象徴なのです！",
+                "ko": "반값 도시락이란, 가게에서 새벽까지 안 팔려서 반값에 판매하는 도시락이에요. 규칙과 희망을 상징하죠!",
+                "th": "เบนโตะลดครึ่งราคาก็คือเบนโตะที่ลดราคาตอนดึก ซึ่งเป็นสัญลักษณ์แห่งกฎเกณฑ์และความหวัง!",
+                "zh-Hans": "半价便当就是，在商店里滞留到深夜半价出售的便当哦，是规则与希望的象征！",
+                "zh-Hant": "半價便當就是在商店裡滯留到深夜半價出售的便當喔，是規則與希望的象徵！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist der kleine Lichtblick der Freude im Regal, wenn der Magen knurrt, eine Oase in der Wüste des Durstes …",
+                "en": "It's the little spark of joy on the shelf when your stomach growls, an oasis you find in the desert of thirst...",
+                "es": "Es esa pequeña chispa de alegría cuando te gruñe el estómago, un oasis en medio del desierto...",
+                "fr": "C'est la bouffée de joie sur l'étagère pour celui dont l'estomac crie famine, une oasis dans un désert quand on meurt de soif…",
+                "ja": "それは、空腹の時に棚から舞い降りる奇跡。砂漠で渇きに耐えかねる時に、ふと現れるオアシス……",
+                "ko": "배고플 때 선반에서 발견한 서프라이즈이기도 하고, 갈증이 날 때 사막에서 우연히 만난 오아시스예요...",
+                "th": "มันคือความเซอร์ไพรส์ที่พบได้บนชั้นวางเมื่อท้องร้องหิวโหย คือโอเอซิสที่เจอได้ในทะเลทรายเมื่อกระหายน้ำจนแทบขาดใจ...",
+                "zh-Hans": "是饥肠辘辘时在货架上发现的惊喜，是干渴难耐时在沙漠中偶遇的绿洲……",
+                "zh-Hant": "是飢腸轆轆時在貨架上發現的驚喜，是乾渴難耐時在沙漠中偶遇的綠洲……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähem. Hätten wir das auch geklärt. Ich werde die in dieser Frequenz enthaltenen Informationen jetzt wiederherstellen.",
+                "en": "Ahem. Anyway, I'll restore the information inside this frequency right away.",
+                "es": "*Ejem*. En fin, restauraré la información dentro de esta frecuencia ahora mismo.",
+                "fr": "Hum… Bref, je vais de ce pas aller restaurer les informations contenues dans cette fréquence.",
+                "ja": "コホン……それではお客様、周波数に含まれる情報を復元いたしますね。",
+                "ko": "크흠... 손님, 주파수 안에 담은 정보를 바로 복원해 드릴게요",
+                "th": "อะแฮ่ม เอาเถอะ ฉันจะกู้ข้อมูลในคลื่นความถี่นี้ออกมาเดี๋ยวนี้แหละ",
+                "zh-Hans": "咳咳……客人，我马上就给你还原频率里包含的信息哦。",
+                "zh-Hant": "咳咳……客人，我馬上就給你還原頻率裡包含的資訊喔。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_2.8预热活动",
+          "flowIndex": 1,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Bei einer so noblen Cafeteria kommt es mir reichlich sinnlos vor, ein Bento mit in den Unterricht zu nehmen …",
+                "en": "With a cafeteria this fancy, bringing a bento to class feels pointless...",
+                "es": "Con una cafetería tan elegante, ¿quién necesita llevar la comida en una fiambrera?",
+                "fr": "Avec une cafétéria aussi chic, venir en classe avec un bento, ça semble inutile…",
+                "ja": "こんなに豪華な学食があったら、もう自分でお弁当を作る必要もなさそうですね……",
+                "ko": "이렇게 호화로운 식당이 있으면 등교할 때 도시락을 안 챙겨도 될 거 같은데...",
+                "th": "พอมีโรงอาหารหรูหราขนาดนี้ การเอาเบนโตะไปกินที่ห้องเรียนก็ดูไร้ความหมายไปเลย...",
+                "zh-Hans": "有了这么豪华的食堂，好像也用不着带便当上学了啊……",
+                "zh-Hant": "有了這麼豪華的食堂，好像也用不著帶便當上學了啊……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Uff, ich kriege nur vom Zusehen Hunger.",
+                "en": "Oof, now I'm hungry just watching.",
+                "es": "Uf, me ha entrado hambre solo de mirarla...",
+                "fr": "Argh, rien que de le voir, ça m'ouvre l'appétit.",
+                "ja": "うーん……見てたら、ナミポンまで、お腹が空いてきちゃいました。",
+                "ko": "음... 보기만 해도 배고파요",
+                "th": "โอ๊ย ฉันดูแล้วหิวเลย",
+                "zh-Hans": "唔……看得我都饿了。",
+                "zh-Hant": "唔……看得我都餓了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50204,
+                "name": {
+                  "zh-Hans": "金牌销冠"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

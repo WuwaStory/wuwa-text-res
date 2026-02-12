@@ -1,0 +1,249 @@
+{
+  "id": 11000022,
+  "key": "不受回退影响变量",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 11000011,
+          "mapId": 32,
+          "blueprintType": "Monster001",
+          "name": "TsEntity_小怪_先锋幼岩7",
+          "areaId": 0,
+          "position": {
+            "x": -6450,
+            "y": 40,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 5,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 11000012,
+          "mapId": 32,
+          "blueprintType": "Monster009",
+          "name": "TsEntity_小怪_乌咔咔",
+          "areaId": 0,
+          "position": {
+            "x": -6430,
+            "y": 920,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 11000010,
+          "mapId": 32,
+          "blueprintType": "NPC005",
+          "name": "TsEntity_157_001_皇龙老人4",
+          "areaId": 0,
+          "position": {
+            "x": -7410,
+            "y": 320,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_QA_TEST",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist endlich da, kannst du mir helfen, die Monster dort zu bekämpfen?",
+                "es": "Finalmente has llegado, ¿puedes ayudarme a lidiar con los monstruos allá?",
+                "zh-Hans": "你终于来了，帮我处理一下那边的怪物，可以么",
+                "zh-Hant": "你終於來了，幫我處理一下那邊的怪物，可以嗎"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 59,
+                "name": {
+                  "zh-Hans": "栩栩"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "OK!!!",
+                "es": "¡¡¡Vale!!!",
+                "zh-Hans": "OK!!!",
+                "zh-Hant": "OK!!!"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 10,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 10,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 11000011,
+          "mapId": 32,
+          "blueprintType": "Monster001",
+          "name": "TsEntity_小怪_先锋幼岩7",
+          "areaId": 0,
+          "position": {
+            "x": -6450,
+            "y": 40,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 11000012,
+          "mapId": 32,
+          "blueprintType": "Monster009",
+          "name": "TsEntity_小怪_乌咔咔",
+          "areaId": 0,
+          "position": {
+            "x": -6430,
+            "y": 920,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

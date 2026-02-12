@@ -1,0 +1,591 @@
+{
+  "id": 30850004,
+  "key": "试用角色回程加回",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30850215,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩79",
+          "areaId": 0,
+          "position": {
+            "x": 79340,
+            "y": -33410,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 16,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 30850215,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩79",
+          "areaId": 0,
+          "position": {
+            "x": 79340,
+            "y": -33410,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 30850246,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩80",
+          "areaId": 0,
+          "position": {
+            "x": 78770,
+            "y": -33340,
+            "z": 670
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 4,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30850246,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩80",
+          "areaId": 0,
+          "position": {
+            "x": 78770,
+            "y": -33340,
+            "z": 670
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 6,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30850215,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩79",
+          "areaId": 0,
+          "position": {
+            "x": 79340,
+            "y": -33410,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30850246,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩80",
+          "areaId": 0,
+          "position": {
+            "x": 78770,
+            "y": -33340,
+            "z": 670
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 14,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30850246,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩80",
+          "areaId": 0,
+          "position": {
+            "x": 78770,
+            "y": -33340,
+            "z": 670
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "parentId": 16,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 30850215,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩79",
+          "areaId": 0,
+          "position": {
+            "x": 79340,
+            "y": -33410,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "parentId": 16,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 17,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 20,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30850215,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩79",
+          "areaId": 0,
+          "position": {
+            "x": 79340,
+            "y": -33410,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30850247,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩1",
+          "areaId": 0,
+          "position": {
+            "x": 78630,
+            "y": -33270,
+            "z": 1200
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "parentId": 22,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

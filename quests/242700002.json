@@ -1,0 +1,267 @@
+{
+  "id": 242700002,
+  "key": "[支线]_[拉海洛]_[完成所有磁暴]",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Verstärkung des Leerensturms.",
+    "en": "Void Storm Reinforcement",
+    "es": "Refuerzo de Tormenta de Vacío",
+    "fr": "Renfort contre la Tempête de néant",
+    "ja": "ヴォイドストーム協力戦",
+    "ko": "보이드 스톰 협력 작전",
+    "th": "ช่วยต่อต้านพายุสุญตา",
+    "zh-Hans": "虚质磁暴协助作战",
+    "zh-Hant": "虛質磁暴協助作戰"
+  },
+  "desc": {
+    "de": "Erledige alle Verstärkungsaufgaben des Leerensturms und hole dir die Belohnungen bei S.I.G.M.A.",
+    "en": "Complete all Void Storm Reinforcement assignments and claim rewards from S.I.G.M.A.",
+    "es": "Completa todas las tareas del Refuerzo de Tormenta de Vacío y reclama recompensas de SIGMA.",
+    "fr": "Terminer tous les objectifs du « Renfort contre la Tempête de néant » puis parler à A.E.G.I.S. pour obtenir les récompenses.",
+    "ja": "すべてのヴォイドストーム協力戦の目標を完了し、S.I.G.M.A.を見つけて報酬を受け取る。",
+    "ko": "모든 보이드 스톰 협력 작전 목표를 완성하여 S.I.G.M.A.선생을 찾아 협력 작전 보상을 수령하세요",
+    "th": "สำเร็จภารกิจการช่วยต่อต้านพายุสุญตาทั้งหมด แล้วไปหา S.I.G.M.A. เพื่อรับรางวัลการช่วยเหลือ",
+    "zh-Hans": "完成所有虚质磁暴协助作战目标，寻找S.I.G.M.A.先生领取协助作战奖励。",
+    "zh-Hant": "完成所有虛質磁暴協助作戰目標，尋找S.I.G.M.A.先生領取協助作戰獎勵。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde und sprich mit S.I.G.M.A.",
+        "en": "Find and speak with S.I.G.M.A.",
+        "es": "Encuentra y habla con SIGMA.",
+        "fr": "Parler à A.E.G.I.S.",
+        "ja": "S.I.G.M.A.を見つけて会話する",
+        "ko": "S.I.G.M.A. 찾아서 대화하기",
+        "th": "ค้นหาและคุยกับ S.I.G.M.A.",
+        "zh-Hans": "寻找并与S.I.G.M.A.交谈",
+        "zh-Hant": "尋找並與S.I.G.M.A.交談"
+      },
+      "entities": [
+        {
+          "entityId": 152700002,
+          "mapId": 906,
+          "blueprintType": "branch3.0_152_NPCSIGMA",
+          "name": "TsEntity_SIGMA",
+          "areaId": 36172,
+          "position": {
+            "x": -77577,
+            "y": -555264,
+            "z": 44694
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_磁暴",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Sei gegrüßt, {PlayerName}.",
+                "en": "Greetings, {PlayerName}.",
+                "es": "Hola, {PlayerName}.",
+                "fr": "Bonjour, {PlayerName}.",
+                "ja": "こんにちは、{PlayerName}さん。",
+                "ko": "안녕하세요, {PlayerName} 학생",
+                "th": "สวัสดี {PlayerName}",
+                "zh-Hans": "你好，{PlayerName}同学。",
+                "zh-Hant": "你好，{PlayerName}同學。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100209,
+                "name": {
+                  "zh-Hans": "S.I.G.M.A."
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Laut den Daten der Akademie hast du deinen Kampfauftrag gegen die Leerensturm-Organismen mit Bravour erfüllt.",
+                "en": "According to Academy data, you have executed your combat assignment against Void Storm organisms to perfection.",
+                "es": "Según los registros de la Academia, completaste de forma impecable tu misión de combate contra los organismos de la Tormenta de Vacío.",
+                "fr": "D'après les données de l'Académie, vous avez parfaitement rempli votre mission de combat contre les organismes de la tempête de néant.",
+                "ja": "学園のデータによると、あなたはヴォイドストーム由来の変異体に対する支援作戦を見事に遂行しました。",
+                "ko": "아카데미에서 지정한 데이터에 따르면, 학생은 보이드 스톰에서 파생된 생체와의 지원 전투를 완벽하게 수행했습니다",
+                "th": "ตามข้อมูลที่สถาบันระบุ คุณได้ปฏิบัติภารกิจช่วยต่อสู้กับสิ่งที่กำเนิดจากพายุสุญตาเสร็จสมบูรณ์แล้ว",
+                "zh-Hans": "依照学院指定的数据，你已完美完成了针对虚质磁暴衍生物的协助作战。",
+                "zh-Hant": "依照學院指定的數據，你已完美完成了針對虛質磁暴衍生物的協助作戰。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100209,
+                "name": {
+                  "zh-Hans": "S.I.G.M.A."
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hast du dich verletzt? Im Falle von Beschwerden solltest du dich bei N.A.N.A. zur Untersuchung melden.",
+                "en": "Are you injured? If you are experiencing any discomfort, please report to N.A.N.A. for examination.",
+                "es": "¿Te lastimaste? Si sientes alguna molestia, acude a N.A.N.A. para una revisión.",
+                "fr": "Vous n'avez rien ? Si vous ressentez une quelconque gêne, veuillez le signaler à A.R.I.A. afin de procéder à un examen.",
+                "ja": "ケガはありませんか？もし少しでも体調に異常を感じたら、すぐにN.A.N.A.で検査を受けてください。",
+                "ko": "다친 데는 없으신가요? 몸에 이상이 느껴지시면 즉시 N.A.N.A.를 찾아 검진받으시길 바랍니다",
+                "th": "ไม่ได้รับบาดเจ็บใช่ไหม? หากมีอาการผิดปกติหรือรู้สึกไม่สบายตรงไหน ขอแนะนำให้คุณติดต่อ N.A.N.A. เพื่อเข้ารับการตรวจร่างกายทันทีนะ",
+                "zh-Hans": "没有受伤吧？如果有任何身体不适的情况，建议你立刻寻找N.A.N.A.进行体检。",
+                "zh-Hant": "沒有受傷吧？如果有任何身體不適的情況，建議你立刻尋找N.A.N.A.進行體檢。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100209,
+                "name": {
+                  "zh-Hans": "S.I.G.M.A."
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nichts, womit ich nicht fertig werde.",
+                    "en": "Nothing I can't handle.",
+                    "es": "Nada que no pueda manejar.",
+                    "fr": "Rien de bien méchant.",
+                    "ja": "{Male=たいしたことなかったな。;Female=こんなの朝飯前よ。}",
+                    "ko": "이 정도야...",
+                    "th": "แค่นี้สบายมาก",
+                    "zh-Hans": "只是小菜一碟。",
+                    "zh-Hant": "只是小事一樁。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Mir geht’s gut.",
+                    "en": "I'm fine.",
+                    "es": "Estoy bien.",
+                    "fr": "Je vais bien.",
+                    "ja": "{Male=特に不調はない。;Female=特に不調はないよ。}",
+                    "ko": "전 괜찮아요",
+                    "th": "ฉันไม่ได้รู้สึกไม่สบาย",
+                    "zh-Hans": "我没什么不舒服的地方。",
+                    "zh-Hant": "我沒什麼不舒服的地方。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstanden. In Übereinstimmung mit den Akademie-Richtlinien ist es Studenten, die an Kampfeinsätzen teilgenommen haben, gestattet, Änderungen an ihren Fahrzeugen im Rahmen des Fahrzeugmanagement-Codes vorzunehmen, die ihnen bei der Durchführung künftiger Einsätze helfen.",
+                "en": "Understood. In accordance with Academy policy, students that have assisted in combat are permitted to make modifications to their vehicles under the Vehicle Management Code as individual aid in the completion of future missions.",
+                "es": "Entendido. De acuerdo con la política de la Academia, los estudiantes que hayan participado en combate pueden realizar modificaciones a sus vehículos según el Código de Gestión de Vehículos, como apoyo individual para el cumplimiento de futuras misiones.",
+                "fr": "Entendu. Conformément à la politique de l'Académie, les étudiants ayant participé au combat sont autorisés à apporter des modifications à leur véhicule, dans le cadre du Code de gestion des véhicules, en tant qu'aide individuelle à l'accomplissement de futures missions.",
+                "ja": "了解しました。学園の方針により、支援作戦に参加した学生には、\n今後の任務に備えて、管理規程の範囲で乗り物を改造する権限が与えられます。",
+                "ko": "알겠습니다. 아카데미의 규정에 따라, 지원 전투에 참여한 학생들은 향후 필요한 작전 임무에 대비해 탑승 장비 관리 규정의 허용 범위 내에서 자신의 탑승 장비를 개조할 수 있는 권한이 부여됩니다",
+                "th": "เข้าใจแล้ว ตามนโยบายของสถาบัน นักเรียนที่ช่วยต่อสู้มีสิทธิ์ในการปรับแต่งยานพาหนะของตนเองให้สอดคล้องกับกฎการจัดการยานพาหนะ เพื่อปรับให้เหมาะสมกับภารกิจต่อสู้อื่นๆ ที่จำเป็นในอนาคต",
+                "zh-Hans": "明白了。根据学院政策，协助作战的学生有一定权力对自己的载具进行符合载具管理条例的改装，以适应后续必要的其他作战任务。",
+                "zh-Hant": "明白了。根據學院政策，協助作戰的學生有一定權力對自己的運具進行符合運具管理條例的改裝，以適應後續必要的其他作戰任務。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100209,
+                "name": {
+                  "zh-Hans": "S.I.G.M.A."
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die aktuelle Freigabe und die Daten wurden auf dein Terminal übertragen …",
+                "en": "Your current clearance and data have been transferred to your Terminal—",
+                "es": "Tu autorización actual y tu información ya se transfirieron a tu terminal.",
+                "fr": "Votre habilitation et vos données actuelles ont été transférées sur votre borne...",
+                "ja": "対応する権限データと情報を、あなたのデバイスへ送信しました——",
+                "ko": "해당 권한과 데이터는 이미 학생의 단말기로 전송되었습니다——",
+                "th": "สิทธิ์และข้อมูลที่เกี่ยวข้องถูกส่งไปที่เทอร์มินัลของคุณแล้ว...",
+                "zh-Hans": "你的相应权限和数据已经发放到你的终端上——",
+                "zh-Hant": "你的相應權限和數據已經發放到你的終端上——"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100209,
+                "name": {
+                  "zh-Hans": "S.I.G.M.A."
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Turbo! Turbo! Turbo!",
+                    "en": "Turbo! Turbo! Turbo!",
+                    "es": "¡Turbo! ¡Turbo! ¡Turbo!",
+                    "fr": "Turbo ! Turbo ! Turbo !",
+                    "ja": "【バイク経験値または報酬を獲得】",
+                    "ko": "터보 업그레이드!",
+                    "th": "เทอร์โบบูสต์!",
+                    "zh-Hans": "涡！轮！增！压！",
+                    "zh-Hant": "渦！輪！增！壓！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Dann wollen wir mal sehen, was das Ding kann!",
+                    "en": "Then let's see what this thing can do!",
+                    "es": "¡Veamos qué puede hacer esto!",
+                    "fr": "Bien, voyons de quoi ce truc est capable.",
+                    "ja": "ターボ！ブースト！全開！",
+                    "ko": "탑승 장비의 최고 성능이 어떤지 한 번 보죠!",
+                    "th": "ขอดูสมรรถนะสูงสุดของยานพาหนะหน่อยสิ",
+                    "zh-Hans": "让我见识一下吧，载具的极限性能。",
+                    "zh-Hant": "讓我見識一下吧，運具的極限性能。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Null Toleranz für Verkehrsverstöße. Null Toleranz für die Gefährdung von Leben. Wie immer steht die Sicherheit an erster Stelle!",
+                "en": "Zero tolerance for traffic violations. Zero tolerance for risking lives. As always, safety comes first!",
+                "es": "Cero tolerancia a las infracciones de tránsito. Cero tolerancia a poner vidas en riesgo. ¡Como siempre, la seguridad ante todo!",
+                "fr": "Tolérance zéro concernant les infractions routières. Tolérance zéro pour la mise en danger des vies. La sécurité avant tout, comme toujours !",
+                "ja": "さあ、見せてもらいましょう。あなたのマシンの限界を。",
+                "ko": "질서에 대한 타협은 생명 위험으로 이어집니다. 항상 안전을 최우선으로 하시길 바랍니다!",
+                "th": "ปฏิบัติตามกฎระเบียบอย่างเคร่งครัด ชีวิตจะปลอดภัยไร้ความเสี่ยง ไม่ว่าอย่างไร ปลอดภัยไว้ก่อน!",
+                "zh-Hans": "秩序零妥协，生命零风险。无论如何，安全都是第一位的！",
+                "zh-Hant": "秩序零妥協，生命零風險。無論如何，安全都是第一位的！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100209,
+                "name": {
+                  "zh-Hans": "S.I.G.M.A."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

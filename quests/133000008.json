@@ -1,0 +1,1734 @@
+{
+  "id": 133000008,
+  "key": "暗探潜踪",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geheime Untersuchung",
+    "en": "Secret Investigation",
+    "es": "Investigación secreta",
+    "fr": "Trace de l'espion",
+    "ja": "アンダーカバー",
+    "ko": "잠행 조사",
+    "th": "การสืบสวนลับ",
+    "zh-Hans": "暗探潜踪",
+    "zh-Hant": "暗探潛蹤"
+  },
+  "desc": {
+    "de": "Der Patrouilleur in der Nähe der Glühwürmchen-See scheint in Schwierigkeiten zu sein. Informiere dich über die Situation, bevor die Dinge ernst werden.",
+    "en": "The Patrollers near the Fireflies Sea seems to be in trouble. Learn about the situation before things get serious.",
+    "es": "El Patrullero cerca del Mar de Luciérnagas parece estar en problemas. Infórmate sobre la situación antes de que las cosas se pongan serias.",
+    "fr": "Les Patrouilleurs près du Lac de Luciode semblent en difficulté. Découvre ce qui se passe avant que la situation ne dégénère.",
+    "ja": "螢泊海近くの巡尉は困っているようだ。事態が悪化する前に状況を聞きに行こう。",
+    "ko": "반딧불 바다 부근의 순찰관이 곤경에 처한 것 같습니다. 더 심각해지기 전에 상황을 확인해 보세요",
+    "th": "ดูเหมือนว่าผู้ตรวจการณ์ใกล้ทะเลหิ่งห้อยกำลังประสบปัญหาอยู่ ลองไปฟังสถานการณ์ก่อนที่เรื่องราวจะเลวร้ายลง",
+    "zh-Hans": "萤泊海附近的巡尉似乎陷入了困境，在事情严重之前去了解一下情况吧。",
+    "zh-Hant": "螢泊海附近的巡尉似乎陷入了困境，在事情嚴重之前去了解一下情況吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besprich den nächsten Schritt mit Qianshan",
+        "en": "Discuss your next plans with Qianshan",
+        "es": "Discute el siguiente movimiento con Qianshan.",
+        "fr": "Discuter avec Qianshan pour élaborer un plan",
+        "ja": "浅山と次の段階について話す",
+        "ko": "천산과 다음 계획 논의",
+        "th": "หารือแผนถัดไปของคุณกับ Qianshan",
+        "zh-Hans": "与浅山商讨下一步计划",
+        "zh-Hant": "與淺山商討下一步計劃"
+      },
+      "entities": [
+        {
+          "entityId": 133002084,
+          "mapId": 8,
+          "blueprintType": "NPC021",
+          "name": "TsEntity_180_008_士兵男",
+          "areaId": 4,
+          "position": {
+            "x": -81573,
+            "y": 140533,
+            "z": 2837
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133002086,
+          "mapId": 8,
+          "blueprintType": "NPC021",
+          "name": "TsEntity_180_008_士兵男6",
+          "areaId": 408,
+          "position": {
+            "x": -96103,
+            "y": 143099,
+            "z": 542
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 175
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_萤泊海潜入",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Großartig. Beeindruckende Effizienz.",
+                "en": "Great. Impressive efficiency.",
+                "es": "Genial. Impresionante eficiencia.",
+                "fr": "Bien. C'est génial.",
+                "ja": "うん、悪くない……",
+                "ko": "좋아요. 효율이 엄청 높네요",
+                "th": "เยี่ยมมาก ฝีมือคุณช่างน่าประทับใจจริงๆ",
+                "zh-Hans": "不错不错，效率很高嘛。",
+                "zh-Hant": "不錯不錯，效率很高嘛。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass mich sehen. Richtig, du hast sie alle.",
+                "en": "Let me look. Right, you have them all.",
+                "es": "Déjame ver. Correcto, los tienes todos.",
+                "fr": "C'est parfait.",
+                "ja": "これでバッチリだ。",
+                "ko": "어디 보자... 맞아요, 다 가져왔어요",
+                "th": "ไหนดูซิ อืม คุณได้มาครบแล้ว",
+                "zh-Hans": "让我看看……嗯嗯，拿全了。",
+                "zh-Hant": "讓我看看……嗯嗯，拿全了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Dann bin ich weg.",
+                    "en": "Then I’ll be off.",
+                    "es": "Entonces me iré.",
+                    "fr": "D'accord.",
+                    "ja": "出発だ。",
+                    "ko": "그럼 출발하죠",
+                    "th": "งั้นฉันไปก่อนนะ",
+                    "zh-Hans": "那我出发了。",
+                    "zh-Hant": "那我出發了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hey, nicht so hastig! Die Exilanten sind nicht so schlau, aber sie sind definitiv keine Idioten.",
+                "en": "Hey, don’t rush! The Exiles are not so smart, but they’re definitely not idiots.",
+                "es": "¡Eh, no te apresures! Los Exiliados no son muy inteligentes, pero definitivamente no son idiotas.",
+                "fr": "Ne vous précipitez pas ! Les exilés sont stupides, mais pas tous.",
+                "ja": "待つんだ！確かにアホな追放者は多いが、全員がそうではない……",
+                "ko": "조급해 하지 마세요. 추방자는 보기보다 멍청하지만, 모두가 바보는 아니에요",
+                "th": "เฮ้ อย่าเพิ่งรีบร้อนไปสิ! แม้ว่าพวกผู้ถูกเนรเทศอาจจะไม่ฉลาดนัก แต่พวกมันก็ไม่ได้โง่นะ",
+                "zh-Hans": "别急！流放者是笨，但不都是傻子。",
+                "zh-Hant": "別急！流放者是笨，但不都是傻子。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In letzter Zeit gibt es Gerüchte im Lager über einen verdeckten Kerl unter ihnen. Wenn du einfach so dahinläufst, könntest du durchaus Zweifel aufwerfen.",
+                "en": "Recently rumors around the camp have been talking about an undercover guy among them. You could well raise doubts if you just walk there like this.",
+                "es": "Recientemente, los rumores en el campamento hablan de un infiltrado entre ellos. Podrías levantar sospechas si simplemente caminas así.",
+                "fr": "Il y avait des rumeurs de traîtres récemment. Il est possible qu'on vous suspecte.",
+                "ja": "それに最近、内通者がいると噂している。そのまま突っ込めば、変に怪しまれるだろう。",
+                "ko": "최근에 캠프에서 스파이를 검거해냈어요. 지금 이렇게 가면 의심을 사기 쉬워요",
+                "th": "ช่วงนี้มีข่าวลือแพร่สะพัดในค่ายว่ามีสายลับแฝงตัวอยู่ในหมู่พวกมัน หากคุณเดินดุ่มๆ เข้าไปเช่นนี้ มีหวังถูกสงสัยแน่ๆ",
+                "zh-Hans": "最近有些人在传营地里出了卧底，你现在这样直接去，很容易引起他们的怀疑。",
+                "zh-Hant": "最近有些人在傳營地裡出了臥底，你現在這樣直接去，很容易引起他們的懷疑。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe eine falsche Identität für dich und einige Informationen über die Leute in diesem Lager, nur für den Fall. Du solltest sie alle beherrschen! Sonst verrätst du dich, sobald du den Mund aufmachst.",
+                "en": "I have a fake identity for you, and some people information of this camp, just in case. You better master them all! Or you’ll give the game away as soon as you talk.",
+                "es": "Tengo una identidad falsa para ti, y algo de información de las personas de este campamento, por si acaso. ¡Será mejor que los domines todos! O te descubrirán en cuanto hables.",
+                "fr": "Vous avez une fausse identité. Et voici les informations de certaines personnes à la base, mémorise-les, sinon on vous découvre.",
+                "ja": "だから、お前には別人に成りすましてもらう……はい、これが拠点にいる人たちの情報。これを暗記してくれ。",
+                "ko": "방랑자를 위해 가짜 신분과 이 캠프에 있는 인원 정보를 준비했어요. 전부 다 기억하는 게 좋을 거예요. 그렇지 않으면, 무슨 말을 해도 다 들통이 날 거예요",
+                "th": "ฉันมีประวัติตัวตนปลอม และข้อมูลของคนในค่ายนี้ให้คุณเผื่อไว้ใช้ในกรณีฉุกเฉินน่ะ คุณจงท่องจำมันให้ขึ้นใจ! มิเช่นนั้น ความจะแตกทันทีที่คุณเอ่ยปาก",
+                "zh-Hans": "我为你准备了假身份，还有这个营地里的一些人员信息。这些你最好能全部记住，不然，一说话就露馅了。",
+                "zh-Hant": "我為你準備了假身份，還有這個營地裡的一些人員資訊。這些你最好能全部記住，不然，一說話就露餡了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "So viele Seiten!",
+                    "en": "So many pages!",
+                    "es": "¡Son muchas páginas!",
+                    "fr": "C'est épais...",
+                    "ja": "分厚い……",
+                    "ko": "엄청 많네요",
+                    "th": "มีหลายหน้าจัง!",
+                    "zh-Hans": "好多页！",
+                    "zh-Hant": "好多頁！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Okay, ich werde sie beherrschen.",
+                    "en": "Okay, I’ll master them.",
+                    "es": "Está bien, las dominaré.",
+                    "fr": "...Je vais faire de mon mieux.",
+                    "ja": "……頑張る。",
+                    "ko": "알겠어요. 모두 외워볼게요",
+                    "th": "ได้ ฉันจะท่องให้ขึ้นใจเลย",
+                    "zh-Hans": "好，我记一下。",
+                    "zh-Hant": "好，我記一下。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich denke, es ist nicht so schwer... Ich habe eine Menge irrelevanten Informationen herausgefiltert. Das Originalpapier hat mich ganze drei Tage gekostet, um es zu beherrschen!",
+                "en": "It’s not so hard I think... I’ve filtered out a lot of irrelevant information. The original paper took me three whole days to master!",
+                "es": "No creo que sea tan difícil... He filtrado mucha información irrelevante. ¡El documento original me llevó tres días enteros dominar!",
+                "fr": "C'est si long ? C'est déjà réduit, pour mémoriser le fichier original, j'ai dû passer trois jours.",
+                "ja": "そうか？これでも要点を抜粋したものだぞ。俺は元のファイルを暗記するのに丸三日かかった。",
+                "ko": "할 수 있겠어요? ...이건 이미 제가 선별한 정보에요. 원본 서류를 외우는데 3일 밤낮이 걸렸어요!",
+                "th": "ฉันว่ามันก็ไม่ยากหรอกนะ... ฉันคัดกรองข้อมูลที่ไม่เกี่ยวข้องออกไปมากแล้ว ฉันใช้เวลาในการท่องจำข้อมูลต้นฉบับถึงสามวันเลยทีเดียว!",
+                "zh-Hans": "还好吧……这已经是我筛选过的信息了，原始文件我背了三天三夜！",
+                "zh-Hant": "還好吧……這已經是我篩選過的資訊了，原始檔案我背了三天三夜！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses Lager ist völlig anders als andere Exil-Lager, weil der Boss gnadenlos ist und die Mitglieder alle verdächtig sind.",
+                "en": "This camp is a totally different one from other Exile camps, because the boss is relentless and the members are all suspicious.",
+                "es": "Este campamento es totalmente diferente de otros campamentos de Exiliados, porque el jefe es implacable y los miembros son todos sospechosos.",
+                "fr": "Et, ici, c'est bien plus dangereux que les autres bases d'exilés, le chef est cruel et impitoyable, les membres sont prudents...",
+                "ja": "それと、ここは他の追放者拠点より遥かに危険だ。ヤツらの頭は残虐かつ無慈悲、加えてメンバーたちも用心深い……",
+                "ko": "이곳의 위험도는 다른 추방자 캠프와는 차원이 달라요. 두목은 음흉하고 잔인하며, 그 구성원들은 모두 의심이 많아요...",
+                "th": "ค่ายแห่งนี้แตกต่างจากค่ายผู้ถูกเนรเทศอื่นๆ โดยสิ้นเชิง เพราะหัวหน้าของมันนั้นโหดเหี้ยม และสมาชิกทุกคนก็ขี้ระแวงทั้งนั้น",
+                "zh-Hans": "这里的危险程度和其他流放者营地不一样，首领阴狠残忍，成员也都猜疑心强……",
+                "zh-Hant": "這裡的危險程度和其他流放者營地不一樣，首領陰狠殘忍，成員也都猜疑心強……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses Mal bist du ganz allein unter diesen Leuten, also könnten die Informationen in Schlüsselmomenten durchaus dein Leben retten.",
+                "en": "You will be all on your own this time among these people, so the information could well save your life at key moments.",
+                "es": "Estarás totalmente solo esta vez entre estas personas, por lo que la información podría salvarte la vida en momentos clave.",
+                "fr": "Une fois à l'intérieur, vous n'avez que vous-même. Ces informations pourraient sauver votre vie.",
+                "ja": "中に入れば頼れる者は自分だけ。この情報はいざという時、お前の命を救うかもしれない。",
+                "ko": "이번 작전은 방랑자 혼자서 그들 사이에서 움직여야 해요. 이 정보들은 중요한 순간에 방랑자의 생명을 구해줄 거예요",
+                "th": "ครานี้คุณจะต้องอยู่ท่ามกลางคนพวกนี้เพียงลำพัง ดังนั้นข้อมูลเหล่านี้อาจช่วยชีวิตคุณได้ในยามคับขัน",
+                "zh-Hans": "这次行动你要独自在他们之间周旋，这些信息关键时刻或许能救命。",
+                "zh-Hant": "這次行動你要獨自在他們之間周旋，這些資訊關鍵時刻或許能救命。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast du all das zusammengestellt?",
+                    "en": "You put together all of this?",
+                    "es": "¿Recopilaste todo esto?",
+                    "fr": "C'est vous qui l'avez compilé ?",
+                    "ja": "この資料はあなたがまとめたの？",
+                    "ko": "이걸 다 천산이 정리한 건가요?",
+                    "th": "คุณเป็นคนรวบรวมข้อมูลทั้งหมดนี้เองรึ",
+                    "zh-Hans": "这都是你总结的？",
+                    "zh-Hant": "這都是你總結的？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein, das hat mein verstorbener Partner Shenhai getan.",
+                "en": "No, my late partner Shenhai did.",
+                "es": "No, mi difunto compañero Shenhai lo hizo.",
+                "fr": "Non, c'est différent. C'est Shenhai, mon ancien partenaire, qui l'a compilé.",
+                "ja": "いや、違う。俺の元相棒、深海がやってくれたんだ。",
+                "ko": "아니요, 이건 제 전 잠입 파트너인 심해가 정리한 거예요",
+                "th": "ไม่ใช่ เซินไห่ สหายผู้ล่วงลับของฉันเป็นผู้รวบรวมให้",
+                "zh-Hans": "不是，这是我的前卧底搭档深海总结的。",
+                "zh-Hant": "不是，這是我的前臥底搭檔深海總結的。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Los, versuche sie zu meistern. Ich werde in einer Weile nach dir sehen.",
+                "en": "C’mon, try to master them. I’ll check up on you in a while.",
+                "es": "Vamos, intenta dominarlos. Te revisaré en un rato.",
+                "fr": "C'est l'heure de mémoriser, il y a un test après.",
+                "ja": "さあ、暗記の時間だ。後でテストもやるから、しっかり覚えるんだぞ。",
+                "ko": "빨리 외우세요. 제가 잠시 후에 검사할테니",
+                "th": "เอาเถอะ พยายามท่องจำให้ได้ล่ะ อีกสักพักฉันจะมาดูความคืบหน้าของคุณ",
+                "zh-Hans": "快，速记一下吧，我一会儿可是会检查的哦。",
+                "zh-Hant": "快，速記一下吧，我一會兒可是會檢查的喔。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Berichte Qianshan",
+        "en": "Report to Qianshan",
+        "es": "Informa a Qianshan.",
+        "fr": "Partager les informations avec Qianshan",
+        "ja": "情報を浅山に渡す",
+        "ko": "천산에게 정보 전달",
+        "th": "รายงานให้ Qianshan ทราบ",
+        "zh-Hans": "将情报信息交给浅山",
+        "zh-Hant": "將情報資訊交給淺山"
+      },
+      "entities": [
+        {
+          "entityId": 133002085,
+          "mapId": 8,
+          "blueprintType": "NPC021",
+          "name": "TsEntity_180_008_士兵男2",
+          "areaId": 4,
+          "position": {
+            "x": -81608,
+            "y": 140533,
+            "z": 2837
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_萤泊海潜入",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Rover! Geht es dir gut?",
+                "en": "Rover! Are you okay?",
+                "es": "¡Errante! ¿Estás bien?",
+                "fr": "Nomade ! Comment vas-tu ? Tu n'as pas de blessures ?",
+                "ja": "漂泊者！大丈夫か、怪我はないか？",
+                "ko": "방랑자! 괜찮아요? 다친 곳은 없죠?",
+                "th": "ผู้พเนจร! เป็นอะไรไหม",
+                "zh-Hans": "漂泊者！你怎么样，没受伤吧？",
+                "zh-Hant": "漂泊者！你怎麼樣，沒受傷吧？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hier ist alles, was wir bisher gesammelt haben.",
+                    "en": "Here's all we've gathered so far.",
+                    "es": "Esto es todo lo que hemos recopilado hasta ahora.",
+                    "fr": "Toutes les données sont ici.",
+                    "ja": "データは全部ここにある。",
+                    "ko": "모든 정보는 여기에 있어요",
+                    "th": "นี่คือข้อมูลทั้งหมดที่เรามีจนถึงตอนนี้",
+                    "zh-Hans": "所有信息都在这了。",
+                    "zh-Hant": "所有資訊都在這了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Großartig. Überlasse den Rest uns. Wir werden ihnen geben, was sie verdienen. Sowohl dieses Lager als auch die Halle der Sechs.",
+                "en": "Great. Leave the rest to us. We will give them what they deserve. Both this camp and the Hall of Six.",
+                "es": "Genial. Deja el resto en nuestras manos. Les daremos lo que se merecen. Tanto este campamento como el Salón de los Seis.",
+                "fr": "Bien joué, je m'occuperai de la suite, je ne laisserai pas les gars de la base et le Clan des Six Herbes s'échapper.",
+                "ja": "よくやった。では、後は任せてくれ。あの拠点のヤツらと六合草堂の連中を絶対捕まえてやる。",
+                "ko": "잘 됐네요. 다음 임무는 저희에게 맡겨주세요. 이번엔 저들도 육합초당도 도망치지 못할 거예요",
+                "th": "เยี่ยม ที่เหลือปล่อยให้เป็นหน้าที่ของพวกเราเอง ถึงเวลาที่พวกมันต้องชดใช้ในสิ่งที่ทำลงไปแล้ว ทั้งค่ายแห่งนี้และหอหกอสูรด้วย",
+                "zh-Hans": "太好了，接下来的任务请放心交给我们吧，这次他们和六合草堂都跑不了的。",
+                "zh-Hant": "太好了，接下來的任務請放心交給我們吧，這次他們和六合草堂都跑不了的。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke für deine Hilfe! Bitte nimm die Belohnung.",
+                "en": "Thank you for your help! Please take the reward.",
+                "es": "¡Gracias por tu ayuda! Por favor, toma la recompensa.",
+                "fr": "Merci de m'avoir aidé ! Prends ta récompense !",
+                "ja": "手伝ってくれてありがとうな！報酬を受け取ってくれ！",
+                "ko": "도와주셔서 감사해요. 여기 사례금이에요",
+                "th": "ขอบคุณที่ช่วยนะ! รับรางวัลไปสิ",
+                "zh-Hans": "感谢你的帮助！这些报酬请你收下吧！",
+                "zh-Hant": "感謝你的幫助！這些報酬請你收下吧！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Untersuche das Lager der Exilanten",
+        "en": "Investigate the Exiles camp",
+        "es": "Investiga el campamento de los Exiliados.",
+        "fr": "Inspecter le camp des exilés",
+        "ja": "追放者拠点を調べる",
+        "ko": "추방자 캠프 조사",
+        "th": "สำรวจค่ายผู้ถูกเนรเทศ",
+        "zh-Hans": "调查流放者营地",
+        "zh-Hant": "調查流放者營地"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besprich den nächsten Schritt mit Qianshan",
+        "en": "Discuss your next plans with Qianshan",
+        "es": "Discute el siguiente movimiento con Qianshan.",
+        "fr": "Discuter avec Qianshan pour élaborer un plan",
+        "ja": "浅山と次の段階について話す",
+        "ko": "천산과 다음 계획 논의",
+        "th": "หารือแผนถัดไปของคุณกับ Qianshan",
+        "zh-Hans": "与浅山商讨下一步计划",
+        "zh-Hant": "與淺山商討下一步計劃"
+      },
+      "entities": [
+        {
+          "entityId": 133002086,
+          "mapId": 8,
+          "blueprintType": "NPC021",
+          "name": "TsEntity_180_008_士兵男6",
+          "areaId": 408,
+          "position": {
+            "x": -96103,
+            "y": 143099,
+            "z": 542
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 175
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_萤泊海潜入",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Stimmt. Hast du alles verstanden?",
+                "en": "Right. Mastered all of them?",
+                "es": "Correcto. ¿Dominaste todo?",
+                "fr": "Alors, tu as tout mémorisé, {Male=petit;Female=petite}?",
+                "ja": "どう？全部暗記した？",
+                "ko": "어때요, 다 기억하셨나요?",
+                "th": "เอาล่ะ จำทั้งหมดได้หรือยัง",
+                "zh-Hans": "怎么样，都记住了吗？",
+                "zh-Hant": "怎麼樣，都記住了嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ja, werde ich dir ein paar Fragen stellen. Und wenn du sie richtig beantwortest, starten wir die Mission.",
+                "en": "If you have, I’ll ask you a few questions. And we’ll start the mission if you answer them right.",
+                "es": "Si lo has hecho, te haré algunas preguntas. Y comenzaremos la misión si las respondes correctamente.",
+                "fr": "Si tu as mémorisé, je te poserai quelques questions.",
+                "ja": "暗記できたら、いくつか問題を出すぞ。",
+                "ko": "이미 다 기억하셨다면 제가 간단한 몇 가지 질문 테스트를 할게요. 바로 진행할까요?",
+                "th": "ถ้าพร้อมแล้ว ฉันจะถามคำถามคุณสักสองสามข้อ และเราจะเริ่มภารกิจกัน หากคุณตอบได้ถูกต้องทั้งหมด",
+                "zh-Hans": "已经记好了的话，我简单问几个问题，没问题我们就出发！",
+                "zh-Hant": "已經記好了的話，我簡單問幾個問題，沒問題我們就出發！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nur noch ein paar Augenblicke.",
+                    "en": "Just a few more moments.",
+                    "es": "Solo un poco más.",
+                    "fr": "Je veux en voir un peu plus.",
+                    "ja": "もう少し見たい。",
+                    "ko": "다시 한번 볼게요",
+                    "th": "ขอเวลาอีกสักครู่นะ",
+                    "zh-Hans": "让我再看一眼。",
+                    "zh-Hant": "讓我再看一眼。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Bereit. Stell sie.",
+                    "en": "Ready. Ask them.",
+                    "es": "Listo. Haz las preguntas.",
+                    "fr": "Je m'en souviens. Viens te battre.",
+                    "ja": "覚えた。かかってこい。",
+                    "ko": "네, 다 외웠어요",
+                    "th": "พร้อมแล้ว ถามมาได้เลย",
+                    "zh-Hans": "记住了，来吧。",
+                    "zh-Hant": "記住了，來吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Okay, ich warte.",
+                "en": "Okay, I’ll wait.",
+                "es": "Está bien, esperaré.",
+                "fr": "D'accord. Je t'attends.",
+                "ja": "わかった。待ってるぞ。",
+                "ko": "알겠어요. 시간을 좀 더 드릴게요",
+                "th": "ได้ ฉันจะรอ",
+                "zh-Hans": "好，我等你。",
+                "zh-Hant": "好，我等你。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Super. Frage Nummer 1. Was hat die Mutter von Qiao Sheng und Qiao Yang beruflich gemacht?",
+                "en": "Great. Question number 1. What did the mother of Qiao Sheng and Qiao Yang do for a living?",
+                "es": "Genial. Pregunta número 1. ¿A qué se dedicaba la madre de Qiao Sheng y Qiao Yang?",
+                "fr": "Alors, première question, quel est le métier de la mère de Qiao Sheng et Qiao Yang ?",
+                "ja": "じゃあ、一つ目の質問。喬升と喬陽の母の仕事は？",
+                "ko": "자, 첫 번째 질문, 교승, 교양 어머니의 직업은 무엇인가요?",
+                "th": "เยี่ยม คำถามข้อที่ 1 แม่ของ Qiao Sheng และ Qiao Yang ทำอาชีพอะไร",
+                "zh-Hans": "好，第一个问题，乔升、乔阳的母亲是什么职业？",
+                "zh-Hant": "好，第一個問題，喬升、喬陽的母親是什麼職業？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lehrerin.",
+                    "en": "Teacher.",
+                    "es": "Profesora.",
+                    "fr": "Enseignant.",
+                    "ja": "教師。",
+                    "ko": "교사",
+                    "th": "ครู",
+                    "zh-Hans": "教师。",
+                    "zh-Hant": "教師。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ärztin.",
+                    "en": "Doctor.",
+                    "es": "Doctor.",
+                    "fr": "Médecin.",
+                    "ja": "医者。",
+                    "ko": "의사",
+                    "th": "หมอ",
+                    "zh-Hans": "医生。",
+                    "zh-Hant": "醫生。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Verbannung.",
+                    "en": "Exile.",
+                    "es": "Exiliado.",
+                    "fr": "Exilé.",
+                    "ja": "追放者。",
+                    "ko": "추방자",
+                    "th": "ถูกเนรเทศ",
+                    "zh-Hans": "流放者。",
+                    "zh-Hant": "流放者。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Richtig. Gut gemacht. Du erinnerst dich schnell an Dinge.",
+                "en": "Correct. Well done. You remember things fast.",
+                "es": "Correcto. Bien hecho. Recuerdas las cosas rápido.",
+                "fr": "Correct ! Ta mémoire ne semble pas mauvaise.",
+                "ja": "正解！中々良い記憶力だ。",
+                "ko": "맞혔어요. 빨리 외우셨네요",
+                "th": "ถูกต้อง ทำได้ดีมาก คุณจดจำสิ่งต่างๆ ได้เร็วมากเลย",
+                "zh-Hans": "答对了！不错，你记得很快嘛。",
+                "zh-Hant": "答對了！不錯，你記得很快嘛。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Falsch. Ihre Mutter war eine Lehrerin! Du musst dich daran erinnern!",
+                "en": "Incorrect. Their mother was a teacher! You have to remember it!",
+                "es": "Incorrecto. ¡Su madre era profesora! ¡Tienes que recordarlo!",
+                "fr": "Dommage, la bonne réponse est « enseignante », retiens-le bien.",
+                "ja": "残念、正解は「教師」だ、しっかり覚えてくれよ。",
+                "ko": "틀렸어요. 두 사람의 어머니 직업은 교사에요! 꼭 기억하세요!",
+                "th": "ผิด แม่ของพวกเขาเป็นครู คุณต้องจำให้ได้สิ!",
+                "zh-Hans": "不对，他们的母亲是教师！一定要记住啊！",
+                "zh-Hant": "不對，他們的母親是教師！一定要記住啊！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Falsch. Ihre Mutter war eine Lehrerin! Du musst dich daran erinnern!",
+                "en": "Incorrect. Their mother was a teacher! You have to remember it!",
+                "es": "Incorrecto. ¡Su madre era profesora! ¡Tienes que recordarlo!",
+                "fr": "Dommage, la bonne réponse est « enseignante », retiens-le bien.",
+                "ja": "残念、正解は「教師」だ、しっかり覚えてくれよ。",
+                "ko": "틀렸어요. 두 사람의 어머니 직업은 교사에요! 꼭 기억하세요!",
+                "th": "ผิด แม่ของพวกเขาเป็นครู คุณต้องจำให้ได้สิ!",
+                "zh-Hans": "不对，他们的母亲是教师！一定要记住啊！",
+                "zh-Hant": "不對，他們的母親是教師！一定要記住啊！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frage Nummer 2. Was war der Grund für die Verletzung an Qiao Shengs rechtem Bein?",
+                "en": "Question number 2. What was the reason for the injury on Qiao Sheng’s right leg?",
+                "es": "Pregunta número 2. ¿Cuál fue la razón de la lesión en la pierna derecha de Qiao Sheng?",
+                "fr": "Deuxième question, quelle est la cause de la blessure à la jambe droite de Qiao Sheng ?",
+                "ja": "二つ目の質問、喬升右足の怪我の原因は？",
+                "ko": "두 번째 질문, 교승의 오른쪽 다리 부상은 무슨 일 때문에 다친 거죠?",
+                "th": "คำถามข้อที่ 2 อะไรคือเหตุผลที่ทำให้ขาขวาของเฉียวเซิ่งบาดเจ็บ",
+                "zh-Hans": "第二个问题，乔升右腿的伤是什么事情造成的？",
+                "zh-Hant": "第二個問題，喬升右腿的傷是什麼事情造成的？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Versuchter Ladendiebstahl.",
+                    "en": "Attempted shoplifting.",
+                    "es": "Intento de robo en tiendas.",
+                    "fr": "Tentative de vol.",
+                    "ja": "窃盗未遂。",
+                    "ko": "절도 미수",
+                    "th": "พยายามขโมยของ",
+                    "zh-Hans": "盗窃未遂。",
+                    "zh-Hant": "盜竊未遂。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Fehlgeschlagene Mission.",
+                    "en": "Mission failure.",
+                    "es": "Fallo en la misión.",
+                    "fr": "Échec de la mission.",
+                    "ja": "任務失敗。",
+                    "ko": "임무 실패",
+                    "th": "ภารกิจล้มเหลว",
+                    "zh-Hans": "任务失败。",
+                    "zh-Hant": "任務失敗。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Unfallbedingter Sturz.",
+                    "en": "Accidental fall.",
+                    "es": "Caída accidental.",
+                    "fr": "Je suis tombé.",
+                    "ja": "転んだ。",
+                    "ko": "넘어졌어요",
+                    "th": "เกิดอุบัติเหตุหกล้ม",
+                    "zh-Hans": "意外摔倒。",
+                    "zh-Hant": "意外摔倒。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Richtig. Du bist wirklich zuverlässig, oder?",
+                "en": "Correct. You sure are reliable, aren’t you?",
+                "es": "Correcto. Eres bastante confiable, ¿no es así?",
+                "fr": "Correct ! Tu as l'air digne de confiance.",
+                "ja": "正解！頼もしく見えてきたぞ。",
+                "ko": "정답이에요! 역시 믿음직스럽네요",
+                "th": "ถูกต้อง คุณช่างเป็นคนที่พึ่งพาได้จริงๆ",
+                "zh-Hans": "答对了！你果然挺靠谱的嘛。",
+                "zh-Hant": "答對了！你果然挺靠譜的嘛。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Falsch. Die Verletzung war auf einen versuchten Ladendiebstahl im Alter von 9 Jahren zurückzuführen.",
+                "en": "Incorrect. The injury was due to an attempted shoplifting at the age of 9.",
+                "es": "Incorrecto. La lesión fue debido a un intento de robo en tiendas a la edad de 9 años.",
+                "fr": "Dommage, une tentative de vol à 9 ans en est la cause.",
+                "ja": "残念、9歳で窃盗未遂が原因だ。",
+                "ko": "아니에요. 다리 부상은 그가 9살 때 절도 미수로 다친 거예요",
+                "th": "ผิด อาการบาดเจ็บนั้นเกิดจากการพยายามขโมยของตอนอายุ 9 ขวบ",
+                "zh-Hans": "不对，腿伤是因为他9岁那年的盗窃未遂！",
+                "zh-Hant": "不對，腿傷是因為他9歲那年的盜竊未遂！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Falsch. Die Verletzung stammt von einem versuchten Ladendiebstahl im Alter von 9 Jahren.",
+                "en": "Incorrect. The injury was due to an attempted shoplifting at the age of 9.",
+                "es": "Incorrecto. La lesión fue debido a un intento de robo en tiendas a la edad de 9 años.",
+                "fr": "Dommage, une tentative de vol à 9 ans en est la cause.",
+                "ja": "残念、9歳で窃盗未遂が原因だ。",
+                "ko": "아니에요. 다리 부상은 그가 9살 때 절도 미수로 다친 거예요",
+                "th": "ผิด อาการบาดเจ็บนั้นเกิดจากการพยายามขโมยของตอนอายุ 9 ขวบ",
+                "zh-Hans": "不对，腿伤是因为他9岁那年的盗窃未遂！",
+                "zh-Hant": "不對，腿傷是因為他9歲那年的盜竊未遂！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frage Nummer 3. Was macht Kuixiao, ein Freund von Qiao Sheng im Camp, gerne?",
+                "en": "Question number 3. What does Kuixiao, a friend of Qiao Sheng’s at the camp like doing?",
+                "es": "Pregunta número 3. ¿Qué le gusta hacer a Kuixiao, un amigo de Qiao Sheng en el campamento?",
+                "fr": "Troisième question, qu'aime Kui Xiao, l'ami de Qiaosheng ?",
+                "ja": "三つ目の質問、喬升の友人である魁梟が好きなのは？",
+                "ko": "세 번째 질문, 교승의 캠프에 있는 친구 괴뢰는 무엇을 하는 걸 좋아하나요?",
+                "th": "คำถามข้อที่ 3 คุยเสี่ยว สหายในค่ายของเฉียวเซิ่งชอบทำอะไร",
+                "zh-Hans": "第三个问题，乔升在营地里的朋友魁枭喜欢做什么？",
+                "zh-Hant": "第三個問題，喬升在營地裡的朋友魁梟喜歡做什麼？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Technologien studieren.",
+                    "en": "Studying technologies.",
+                    "es": "Estudiar tecnologías.",
+                    "fr": "Recherche technologique.",
+                    "ja": "技術研究。",
+                    "ko": "기술 연구",
+                    "th": "ศึกษาเทคโนโลยี",
+                    "zh-Hans": "钻研技术。",
+                    "zh-Hant": "鑽研技術。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Fleisch essen.",
+                    "en": "Eating meat.",
+                    "es": "Comer carne.",
+                    "fr": "Viande.",
+                    "ja": "肉。",
+                    "ko": "고기 먹기",
+                    "th": "กินเนื้อ",
+                    "zh-Hans": "吃肉。",
+                    "zh-Hant": "吃肉。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Kämpfen.",
+                    "en": "Combating.",
+                    "es": "Combatir.",
+                    "fr": "Bagarre.",
+                    "ja": "喧嘩。",
+                    "ko": "싸움",
+                    "th": "ต่อสู้",
+                    "zh-Hans": "打架。",
+                    "zh-Hant": "打架。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Richtig. Du hast das Material sehr sorgfältig gelesen, oder?",
+                "en": "Correct. You were very careful when you read the material, weren’t you?",
+                "es": "Correcto. Fuiste muy cuidadoso cuando leíste el material, ¿no es así?",
+                "fr": "Bonne réponse ! Tu as bien lu la documentation.",
+                "ja": "正解！どうやら、ちゃんと資料を読んだようだな。",
+                "ko": "정답이에요! 자료를 꼼꼼히 보셨네요",
+                "th": "ถูกต้อง คุณอ่านข้อมูลมาอย่างรอบคอบมากสินะ",
+                "zh-Hans": "答对了！资料看得很仔细嘛。",
+                "zh-Hant": "答對了！資料看得很仔細嘛。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Falsch. Der Fleischliebhaber ist Zaijia. Kuixiao mag es, Technologien zu studieren. Verwechsele sie nicht miteinander!",
+                "en": "Incorrect. The meat lover is Zaijia. Kuixiao likes studying technologies. Don’t mistake them for one another!",
+                "es": "Incorrecto. El amante de la carne es Zaijia. A Kuixiao le gusta estudiar tecnologías. ¡No los confundas!",
+                "fr": "Dommage, c'est Zijia, Kuixiao aime la recherche technique, ne te trompe pas.",
+                "ja": "残念、それは仔伽だ。魁梟が好きなのは技術研究、間違えんなよ。",
+                "ko": "아니요, 고기를 좋아하는 사람은 대가에요. 괴뢰는 기술을 연구하는 걸 좋아해요. 절대 다른 사람이랑 헷갈리면 안 돼요",
+                "th": "ผิด คนที่ชอบกินเนื้อคือไจ้เจีย ส่วนคุยเสี่ยวชอบศึกษาเทคโนโลยี อย่าจำสลับกันสิ!",
+                "zh-Hans": "不对，喜欢吃肉的是仔伽，魁枭喜欢的是钻研技术，千万不要把人记混了！",
+                "zh-Hant": "不對，喜歡吃肉的是仔伽，魁梟喜歡的是鑽研技術，千萬不要把人記混了！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Falsch. Der Kampfliebhaber ist Auspice. Kuixiao mag es, Technologien zu studieren. Verwechsele sie nicht miteinander!",
+                "en": "Incorrect. The combat lover is Daji. Kuixiao likes studying technologies. Don’t mistake them for one another!",
+                "es": "Incorrecto. El amante de la lucha es Daji. A Kuixiao le gusta estudiar tecnologías. ¡No los confundas!",
+                "fr": "Dommage, c'est Daji, Kuixiao aime la recherche technique, ne te trompe pas.",
+                "ja": "残念、それは大吉だ。魁梟が好きなのは技術研究、間違えんなよ。",
+                "ko": "아니에요! 싸움을 좋아하는 사람은 대길이고, 괴뢰는 기술 연구를 하는 걸 좋아해요. 절대 다른 사람이랑 헷갈리면 안 돼요",
+                "th": "ผิด คนที่ชอบต่อสู้คือต้าจี ส่วนคุยเสี่ยวชอบศึกษาเทคโนโลยี อย่าจำสลับกันสิ!",
+                "zh-Hans": "不对，喜欢打架的是大吉，魁枭喜欢的是钻研技术，千万不要把人记混了！",
+                "zh-Hant": "不對，喜歡打架的是大吉，魁梟喜歡的是鑽研技術，千萬不要把人記混了！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben noch etwas Zeit. Laut den Informationen, die wir zuvor erhalten haben, werden sie heute die Bestände überprüfen. Es ist vielleicht nicht der beste Zeitpunkt, um hineinzugehen.",
+                "en": "We still got some time. According to the info we got earlier, they will be checking the stocks today. It might not be the best timing we go in.",
+                "es": "Aún nos queda algo de tiempo. Según la información que obtuvimos antes, hoy estarán revisando las existencias. Quizás no sea el mejor momento para que entremos.",
+                "fr": "Il reste encore du temps, selon les informations, il y a encore une inspection des bagages aujourd'hui, ce n'est pas le moment pour nous d'agir.",
+                "ja": "まだ時間はあるが、情報によれば今日はまだ荷物の点検があるらしい。今から動くのは危険だ。",
+                "ko": "저희에겐 아직 시간이 좀 있어요. 이전에 알아본 정보에 따르면, 오늘 그들이 화물을 점검할 거예요. 이 때는 잠입하기가 어려워요",
+                "th": "เรายังพอมีเวลาอยู่บ้าง จากข้อมูลที่ได้รับมาก่อนหน้านี้ พวกมันจะตรวจนับสินค้าในคลังกันวันนี้ และนี่อาจไม่ใช่จังหวะที่ดีที่สุดที่เราจะเข้าไป",
+                "zh-Hans": "我们还有些时间，按之前打探到的消息，今天他们应该会清点货物，这个时候进去不好行动。",
+                "zh-Hant": "我們還有些時間，按之前打探到的消息，今天他們應該會清點貨物，這個時候進去不好行動。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass uns die Mission morgen Abend starten. Du kannst die Zeit nutzen, um das Material weiter zu meistern.",
+                "en": "Let’s start the mission tomorrow evening. You can keep mastering the material with this time.",
+                "es": "Comencemos la misión mañana por la noche. Puedes seguir dominando el material con este tiempo.",
+                "fr": "Faisons-le demain soir, pour l'instant, mémorise la documentation.",
+                "ja": "行動開始は明日の夜。今は資料を頭に叩き込むんだ。",
+                "ko": "우리 내일 저녁부터 행동을 시작해요. 그동안은 계속 자료를 외우세요",
+                "th": "เรามาเริ่มภารกิจกันในเย็นวันพรุ่งนี้ดีกว่า คุณสามารถใช้เวลานี้ในการท่องจำข้อมูลต่อไปได้นะ",
+                "zh-Hans": "我们明晚开始行动吧，这段时间你还可以继续熟悉资料！",
+                "zh-Hant": "我們明晚開始行動吧，這段時間你還可以繼續熟悉資料！"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1138,
+                "name": {
+                  "zh-Hans": "浅山"
+                },
+                "entity": {
+                  "entityId": 133002086,
+                  "mapId": 8,
+                  "blueprintType": "NPC021",
+                  "name": "TsEntity_180_008_士兵男6",
+                  "areaId": 408,
+                  "position": {
+                    "x": -96103,
+                    "y": 143099,
+                    "z": 542
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 175
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133001244,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点2",
+          "areaId": 408,
+          "position": {
+            "x": -93739,
+            "y": 148394,
+            "z": 726
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133001246,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点5",
+          "areaId": 408,
+          "position": {
+            "x": -109377,
+            "y": 143004,
+            "z": 699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133001246,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点5",
+          "areaId": 408,
+          "position": {
+            "x": -109377,
+            "y": 143004,
+            "z": 699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

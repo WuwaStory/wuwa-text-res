@@ -1,0 +1,596 @@
+{
+  "id": 176800001,
+  "key": "同行忆旅",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Erinnerungsreise",
+    "en": "Memory Travelogue",
+    "es": "Huellas del ayer",
+    "fr": "Souvenirs de voyage",
+    "ja": "思い出に刻む旅の跡",
+    "ko": "동행의 추억을 따라",
+    "th": "สารคดีท่องเที่ยวในความทรงจำ",
+    "zh-Hans": "同行忆旅",
+    "zh-Hant": "同行憶旅"
+  },
+  "desc": {
+    "de": "KU-Lolo hat eine neue Idee, um deine liebsten Erinnerungen im Sol-2 in einzigartige Würfel-Souvenirs zu verwandeln! <color=HighlightB>Finde zuerst Würfel: Jinhsi und versuche, mit diesem niedlichen Würfel zu reden.</color>",
+    "en": "KU-Lolo has a new idea to turn your fondest memories into unique Cube souvenirs in the Second Coming of Solaris! <color=HighlightB>Head on over to the Memory Travelogue event</color>, collect memories with with the Cubes, and turn them in to KU-Lolo!",
+    "es": "¡KU-Lolo ha tenido una idea genial! Quiere recrear y conservar tus recuerdos más preciados en la Segunda venida de Solaris… ¡pero en forma de Dango!\n<color=HighlightB>Dirígete al Ayutamiento y habla con Dango Jinhsi.</color>",
+    "fr": "KU-Lolo du Littoral noir cherche à collecter vos précieux souvenirs pour créer de nouveaux souvenirs encore plus intéressants avec tout le monde sous forme de cube !\nMaintenant <color=HighlightB>parlez avec le Cube Jinhsi à proximité de l'Hôtel de ville pour commencer ce voyage cubique !</color>",
+    "ja": "皆とのこれまでの思い出を第二ソラリスに刻もうと考えたクハッピーは、ついにあるアイデアを思いついた。それは、皆と作った思い出を再現し、集めること――ただし、今度は皆に団子になってもらうのだ！\n<color=HighlightB>辺庭の近くで今汐を見つけて、彼女と話してみましょう！</color>",
+    "ko": "세컨드 솔라리스에 참신한 기념품을 남기고 싶었던 쿠 · 러러에게 새로운 아이디어가 떠올랐다. 쿠 · 러러는 모든 이들의 아름다운 추억을 재현 및 수집할 계획이다. 다만, 새알심의 형태로!\n<color=HighlightB>이제 변정 근처에서 새알심 금희를 찾아 그녀와 대화해 보세요!</color>",
+    "th": "KU-Lolo ได้ไอเดียใหม่ในการเปลี่ยนความทรงจำอันล้ำค่าของคุณให้เป็นลูกบาศก์จิ๋วที่ระลึกในโซลาริสที่ 2! <color=HighlightB>ไปที่กิจกรรมสารคดีท่องเที่ยวในความทรงจำ</color> รวบรวมความทรงจำร่วมกับลูกบาศก์จิ๋ว แล้วมอบให้กับ KU-Lolo!",
+    "zh-Hans": "有了新点子的库乐乐，想在第二索拉里留下些新颖的纪念品。它计划复现并收集你和大家的美好回忆——只不过，是以团子的形式！<color=HighlightB>接下来，请在边庭附近寻找团子今汐和她对话试试看吧！</color>",
+    "zh-Hant": "有了新點子的庫樂樂，想在第二索拉里留下些新穎的紀念品。它計劃復現並收集你和大家的美好回憶——只不過，是以團子的形式！<color=HighlightB>接下來，請在邊庭附近尋找團子今汐和她對話試試看吧！</color>"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sammle alle Erinnerungen",
+        "en": "Complete the memory collection",
+        "es": "Completa la recolección de recuerdos.",
+        "fr": "Collecter tous les souvenirs",
+        "ja": "思い出をすべて集める",
+        "ko": "추억 수집 완료",
+        "th": "เติมเต็มความทรงจำให้สมบูรณ์",
+        "zh-Hans": "完成回忆收集",
+        "zh-Hant": "完成回憶收集"
+      },
+      "entities": [
+        {
+          "entityId": 314800003,
+          "mapId": 8,
+          "blueprintType": "NPC420082",
+          "name": "TsEntity_库洛洛团子记忆手册",
+          "areaId": 301,
+          "position": {
+            "x": -32097,
+            "y": 119813,
+            "z": 11780
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 95
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_团子记忆手册1",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Anscheinend läuft das Programm reibungslos. Es hat den Moment, den ich sehen wollte, perfekt nachgestellt.",
+                "en": "Looks like the program is running smoothly. It perfectly recreated the moment I wanted to see.",
+                "es": "Parece que el programa funciona sin problemas. Ha recreado perfectamente el momento que quería ver.",
+                "fr": "On dirait que le programme fonctionne parfaitement. Il a recréé exactement le moment que je voulais voir.",
+                "ja": "無事に稼働してるみたいダ。見たい映像をすぐ再現してくれタ。",
+                "ko": "역시 훌륭한 프로그램이야. 아주 순조롭게 내가 보고 싶은 광경을 복구했어",
+                "th": "ดูเหมือนโปรแกรมจะทำงานได้อย่างราบรื่น สร้างฉากที่ฉันอยากเห็นออกมาได้สมบูรณ์แบบเลยล่ะ",
+                "zh-Hans": "看来程序没有出错，很顺利地就把我想看到的场景复现出来了。",
+                "zh-Hant": "看來程式沒有出錯，很順利地就把我想看到的場景復現出來了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 800095,
+                "name": {
+                  "zh-Hans": "库乐乐（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warum bin ich plötzlich zu einem Würfel geworden?",
+                "en": "Why did I turn into a cube?",
+                "es": "¿Por qué soy un Dango?",
+                "fr": "Pourquoi me j'ai la forme d'un cube ?",
+                "ja": "{Male=なぜ俺は団子に……;Female=どうして私は団子に……}",
+                "ko": "전 왜 방금 새알심 형태가 된거죠?",
+                "th": "ทำไมฉันกลายเป็นลูกบาศก์จิ๋วล่ะ?",
+                "zh-Hans": "我怎么刚刚突然就变成团子的模样了？",
+                "zh-Hant": "我怎麼剛剛突然就變成團子的模樣了？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ku-ku-ku, das habe ich mit Absicht gemacht.",
+                "en": "Ku ku ku, I did that on purpose.",
+                "es": "Ku ku ku, lo hice adrede.",
+                "fr": "Ku ku ku, j'ai fait ça exprès.",
+                "ja": "ククッ、そういうデザインなンダ。",
+                "ko": "쿠쿠쿠, 그건 내가 설정한 거니까",
+                "th": "คูๆ ๆ ฉันตั้งใจทำแบบนั้นไงล่ะ",
+                "zh-Hans": "库库库，这是我刻意安排的。",
+                "zh-Hant": "庫庫庫，這是我刻意安排的。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 800095,
+                "name": {
+                  "zh-Hans": "库乐乐（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tethys hat mir nur einen begrenzten Teil seiner Rechenleistung zur Verfügung gestellt, das bedeutet, dass wir so viel Rechenleistung wie möglich sparen müssen.",
+                "en": "After all, Tethys just retrieved the <ano=Control Core>Anniversary Cake</ano>, so we need to save as much computing power as possible.",
+                "es": "Después de todo, el Tetis acaba de recuperar <ano=la unidad de control>el pastel de aniversario</ano>, así que necesitamos ahorrar toda la potencia de cálculo posible.",
+                "fr": "Après tout, Tethys ne m'a donné que peu de ressources, nous devons donc économiser autant de puissance de calcul que possible.",
+                "ja": "テティスから分けてもらった演算リソースに限りがあるシ、ちゃんと節約しなくチャ。",
+                "ko": "테티스로부터 할당받은 연산 자원이 많지 않아서 최대한 아끼는 게 원칙이거든",
+                "th": "เพราะเธทิสให้พลังประมวลผลฉันไม่มาก เราจึงต้องประหยัดเท่าที่ทำได้",
+                "zh-Hans": "毕竟泰缇斯分给我的算力不多，原则上能省则省。",
+                "zh-Hant": "畢竟泰緹斯分給我的算力不多，原則上能省則省。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 800095,
+                "name": {
+                  "zh-Hans": "库乐乐（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Außerdem dachte ich, es wäre noch viel lustiger, wenn wir uns alle als Würfel sehen, die die besonderen Momente noch einmal erleben!",
+                "en": "Besides, I thought it'd be way more fun to watch Cubes reliving the moment!",
+                "es": "Además, ¡me pareció superdivertido ver esos dango reviviendo el momento!",
+                "fr": "Et puis, je pensais que ce serait bien plus amusant de voir les Cubes revivre ce moment !",
+                "ja": "それに、団子に出演させたほうが面白いと思っタ。",
+                "ko": "게다가, 새알심 형태로 복구하면 더 재밌잖아",
+                "th": "นอกจากนี้ การดูลูกบาศก์จิ๋วรำลึกฉากอีกครั้งก็น่าจะสนุกกว่า!",
+                "zh-Hans": "另一方面，我觉得用团子们复现出这些场景会比较有趣。",
+                "zh-Hant": "另一方面，我覺得用團子們復現出這些場景會比較有趣。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 800095,
+                "name": {
+                  "zh-Hans": "库乐乐（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das mag wahr sein.",
+                "en": "That last bit sounded like the honest truth.",
+                "es": "Sí, eso me suena a pura verdad.",
+                "fr": "Cette dernière phrase se rapproche plus de la réalité.",
+                "ja": "{Male=最後のほうこそ本音だろ。;Female=最後のほうこそ本音でしょ。}",
+                "ko": "방금 그 말이 더 진심이죠?",
+                "th": "ท่อนสุดท้ายฟังดูจริงใจจังเลยนะ",
+                "zh-Hans": "这句才是你的真心话吧。",
+                "zh-Hant": "這句才是你的真心話吧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wahr ist, woran du glaubst, ku-ku-ku.",
+                "en": "Well, the truth is yours to imagine. Ku ku ku.",
+                "es": "Bueno, la verdad es lo que tú quieras imaginar. Ku ku ku.",
+                "fr": "Eh bien, la vérité est ce que tu imagines. Ku ku ku.",
+                "ja": "何を言っているか分からないナー、クククッ。",
+                "ko": "쿠 · 러러는 아무것도 몰라, 쿠쿠쿠~",
+                "th": "KU-Lolo ไม่รู้อะไรหรอกนะ คูๆ ๆ",
+                "zh-Hans": "库乐乐什么都不知道哦，库库库~",
+                "zh-Hant": "庫樂樂什麼都不知道哦，庫庫庫~"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 800095,
+                "name": {
+                  "zh-Hans": "库乐乐（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedenfalls bist du jetzt dran, diese Momente neu zu erleben. Und wenn du die Fotos zurückbringst, kannst du mit einer ordentlichen Belohnung rechnen!",
+                "en": "Anyway, I'm counting on you to relive these moments. And if you bring those photos back, you can expect some rich rewards!",
+                "es": "En fin, cuento contigo para revivir estos momentos. ¡Y si traes fotos, te esperarán excelentes recompensas!",
+                "fr": "Bref, je compte sur toi pour revivre ces moments. Et si tu me rapportes ces photos, tu peux t'attendre à de généreuses récompenses !",
+                "ja": "では早速、色んなシーンを再現してみないカ。写真を持ち帰れタラ、それなりに報酬を用意するヨ。",
+                "ko": "그럼 부탁할께. 사진을 갖고 온다면, 널 위한 적절한 보상이 기다릴거야!",
+                "th": "เอาเถอะ ฝากรำลึกฉากพวกนั้นด้วยล่ะ ถ้าเอารูปภาพกลับมาได้ด้วย ฉันจะให้รางวัลตอบแทนอย่างงาม!",
+                "zh-Hans": "那就麻烦你去复现场景吧。如果你能将照片带回来的话，我还会为你准备合理的报酬哦！",
+                "zh-Hant": "那就麻煩你去復現場景吧。如果你能將照片帶回來的話，我還會為你準備合理的報酬喔！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 800095,
+                "name": {
+                  "zh-Hans": "库乐乐（通讯中）"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Ku-Lolo nach dem Simulationsgerät des Sol-2",
+        "en": "Ask KU-Lolo about Second Coming of Solaris Simulator",
+        "es": "Pregunta a KU-Lolo sobre el simulador de la Segunda venida de Solaris.",
+        "fr": "Parler à KU-Lolo pour obtenir les informations sur le simulateur, le « Sol-2 ».",
+        "ja": "シミュレーション装置についてクハッピーに聞く",
+        "ko": "쿠 · 러러에게 세컨드 솔라리스 시뮬레이션 장치에 관해 문의하기",
+        "th": "กลับไปที่ลานลูกบาศก์จิ๋ว คุยกับ KU-Lolo และเข้าไปในโซลาริสที่ 2ด้วยกัน",
+        "zh-Hans": "向库乐乐了解第二索拉模拟装置",
+        "zh-Hant": "向庫樂樂了解第二索拉模擬裝置"
+      },
+      "entities": [
+        {
+          "entityId": 314800003,
+          "mapId": 8,
+          "blueprintType": "NPC420082",
+          "name": "TsEntity_库洛洛团子记忆手册",
+          "areaId": 301,
+          "position": {
+            "x": -32097,
+            "y": 119813,
+            "z": 11780
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 95
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_团子记忆手册1",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Sei gegrüßt, {PlayerName}.",
+                "en": "Hello, {PlayerName}.",
+                "es": "Hola, {PlayerName}",
+                "fr": "Salut, {PlayerName}.",
+                "ja": "来てくれたネ、{PlayerName}。",
+                "ko": "안녕, {PlayerName}",
+                "th": "สวัสดี {PlayerName}",
+                "zh-Hans": "你好呀，{PlayerName}。",
+                "zh-Hant": "你好呀，{PlayerName}。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe eine Bitte. Hast du schon einmal von Encore über den Sol-2 gehört?",
+                "en": "I'm here because I have a favor to ask. Has Encore mentioned anything about the Second Coming of Solaris?",
+                "es": "He venido a pedirte un favor. ¿Encore mencionó algo sobre la Segunda venida de Solaris?",
+                "fr": "Je suis ici parce que j'ai une faveur à te demander. Est-ce qu'Encore t'a parlé du « Sol-2 » ?",
+                "ja": "ちょっと頼みたいことがあるンダ。ソウダ、アンコから第二ソラリスのこと、聞いたコトあるカ？",
+                "ko": "부탁하고 싶은 일이 있어서 널 찾아왔어. 아 맞다, 앙코가 세컨드 솔라리스에 관해선 말해줬어?",
+                "th": "ครั้งนี้เรียกคุณมาที่นี่เพราะมีเรื่องอยากฝากให้ช่วย แล้วก็... Encore เคยพูดถึงโซลาริสที่ 2 กับคุณบ้างมั้ย?",
+                "zh-Hans": "这次找你过来是有件事想拜托你。对了，安可她有和你说过第二索拉的事情吗？",
+                "zh-Hant": "這次找你過來是有件事想拜託你。對了，安可她有和你說過第二索拉的事情嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nein …",
+                    "en": "No...",
+                    "es": "No...",
+                    "fr": "Non…",
+                    "ja": "いや、何も…",
+                    "ko": "아니요...",
+                    "th": "ไม่เลย...",
+                    "zh-Hans": "没有……",
+                    "zh-Hant": "沒有……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Klar, ich habe davon gehört.",
+                    "en": "Of course.",
+                    "es": "Por supuesto.",
+                    "fr": "Bien sûr.",
+                    "ja": "もちろん。",
+                    "ko": "그럼요",
+                    "th": "พูดนะ",
+                    "zh-Hans": "当然。",
+                    "zh-Hant": "當然。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also, der Sol-2 ist eine Spielwelt, die Tethys aus deinen Erinnerungen kreiert hat. Ich möchte sie noch fesselnder entwickeln.",
+                "en": "OK. Simply put, Second Coming of Solaris is a virtual world generated by the Tethys System based on your memory. And I am trying to make it more fun for you.",
+                "es": "Bien. En resumen, la Segunda venida de Solaris es un mundo virtual generado por el Sistema Tetis usando tus recuerdos. Y estoy haciendo lo posible por que te resulte más divertido.",
+                "fr": "Bah, en tout cas, le « Sol-2 » est un monde virtuel généré par le système Tethys basé sur ta mémoire.",
+                "ja": "フムフム。一言で言うト、第二ソラリスはテティスシステムがあなたの記憶をもとに作っタ、ゲームの世界ナンダ。クハッピーは今、この世界をもっと面白くするために、毎日がんばっテル。",
+                "ko": "그래. 간단히 말하자면, 세컨드 솔라리스는 네 기억을 근거로 테티스에서 만든 게임 속 세상이야. 이 쿠 · 러러가 최대한 재밌게 만들고 있지",
+                "th": "โอเค สรุปสั้นๆ โซลาริสที่ 2 ก็คือโลกเกมที่ถูกสร้างโดยระบบเธทิสจากความทรงจำของคุณ ส่วน KU-Lolo ก็พยายามทำให้มันสนุกที่สุดเท่าที่จะทำได้",
+                "zh-Hans": "嗯嗯，简单来说，第二索拉是泰缇斯根据你的记忆所搭建的游戏世界，库乐乐在尽可能把它打造得有趣一些。",
+                "zh-Hant": "嗯嗯，簡單來說，第二索拉是泰緹斯根據你的記憶所搭建的遊戲世界，庫樂樂在盡可能把它打造得有趣一些。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Ich hatte das Gefühl, dass bei der Erschaffung irgendetwas gefehlt hat. Jetzt weiß ich es: Ich habe vergessen, ein Video zur Erinnerung für unser Team zu machen!",
+                "en": "...I felt like something was missing when I was building this world. It turns out I forgot to make a commemorative video of you and your friends!",
+                "es": "... Tenía la sensación de que me olvidaba de algo al construir este mundo. ¡Y era hacer un vídeo conmemorativo sobre ti y tus amigos!",
+                "fr": "...J'ai senti que quelque chose manquait pendant la construction. Il s'avère que j'ai oublié de créer une vidéo commémorative de l'équipe, KU !",
+                "ja": "そういえば、第二ソラリス建設中に何か忘れると思っタラ、まだ皆との記念映像を作っていなかったンダ。",
+                "ko": "만들면서 뭔가 부족하다 싶었는데 곰곰이 생각해 봤더니 너랑 친구들이 함께 찍은 기념사진을 빼먹었더라 쿠!",
+                "th": "...เหมือนจะมีบางอย่างขาดหายไปตอนที่ฉันสร้างโลกนี้ขึ้นมา กลายเป็นว่าลืมทำวิดีโอที่ระลึกของคุณกับเพื่อน!",
+                "zh-Hans": "我在搭建第二索拉的时候总感觉缺失了什么，现在意识到原来是忘了制作你与大家的留念影像啊库！",
+                "zh-Hant": "我在搭建第二索拉的時候總感覺缺失了什麼，現在意識到原來是忘了製作你與大家的留念影像啊庫！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast bei der Wiederherstellung des Sol-2 geholfen, also dachte ich mir: Warum bewahren wir deine kostbaren Erinnerungen nicht darin auf und machen aus dem Spiel eine Truhe für deine größten Schätze?",
+                "en": "Since the Second Coming of Solaris has created so many cherished memories for you and everyone else, I want to preserve these memories in the game so they're not lost.",
+                "es": "Dado que la Segunda venida de Solaris ha creado tantos recuerdos valiosos para ti y para todos, quiero guardarlos en el juego para que no se pierdan.",
+                "fr": "Comme le Sol-2 est important pour toi et tout le monde, alors je me suis dit, pourquoi ne pas y préserver tes précieux souvenirs afin qu'ils deviennent son plus grand trésor ?",
+                "ja": "第二ソラリスは、みんなにとってすっごく大切な場所。だから、みんなとの思い出をちゃんと、第二ソラリスに残しておきたいンダ。",
+                "ko": "어쨌든 세컨드 솔라리스는 너랑 친구들에겐 매우 중요한 곳이니 난 너희들의 아름다운 추억을 사진에 담아 세컨드 솔라리스의 영원한 보물로 간직하고 싶어",
+                "th": "เพราะโซลาริสที่ 2 ได้สร้างความทรงจำอันล้ำค่ามากมายให้กับคุณและทุกคน ฉันเลยเก็บความทรงจำดีๆ ของพวกคุณไว้ในนั้น เป็นสมบัติของโซลาระยะที่สองที่เก็บรักษาไว้ตลอดไป",
+                "zh-Hans": "毕竟第二索拉对你和大家都很重要。我想将你们之间的美好回忆留存其中，当作第二索拉的宝物永远珍藏。",
+                "zh-Hant": "畢竟第二索拉對你和大家都很重要。我想將你們之間的美好回憶留存其中，當作第二索拉的寶物永遠珍藏。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was die Aufzeichnung dieser Erinnerungen betrifft ... Ku-ku-ku, ich habe bereits einen Plan!",
+                "en": "As for how to record these memories... Ku ku ku, I've already got a plan!",
+                "es": "En cuanto a cómo grabarlos... Ku ku ku, ¡tengo un plan!",
+                "fr": "Quant à la façon d'enregistrer ces souvenirs... Ku ku ku, j'ai déjà un plan !",
+                "ja": "その思い出を残す方法というノハ……クククッ、もうとっくに考えてあっタヨ！",
+                "ko": "추억을 녹화하는 방법은 말이야... 쿠쿠쿠, 이미 다 생각해뒀지",
+                "th": "ส่วนวิธีบันทึกความทรงจำน่ะ... คูๆ ๆ ฉันเตรียมแผนไว้แล้ว!",
+                "zh-Hans": "至于录制回忆的方法……库库库，我早就准备好了。",
+                "zh-Hant": "至於錄製回憶的方法……庫庫庫，我早就準備好了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tada! Ich präsentiere dir hier den „Sol-2“-Simulator!",
+                "en": "Ta-da! Presenting the Second Coming of Solaris Simulator!",
+                "es": "¡Ta-chán! ¡Te presento el Simulador de Segunda venida de Solaris!",
+                "fr": "Tadaa ! Voici le Simulateur du Sol-2 !",
+                "ja": "ジャジャン、コレ、第二ソラリスシミュレーション装置ダヨ！",
+                "ko": "짜잔! 세컨드 솔라리스 시뮬레이션 장치야!",
+                "th": "แต่นแต๊น! ขอเสนอเครื่องจำลองโซลาริสที่ 2!",
+                "zh-Hans": "噔噔！第二索拉模拟装置！",
+                "zh-Hant": "噔噔！第二索拉模擬裝置！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie war das? War mein Auftritt so überzeugend, wie der Roccia-Würfel es mir beigebracht hat?",
+                "en": "How was that? Does my performance resemble what Roccia Cube taught me?",
+                "es": "¿Qué tal lo he hecho? Dango Roccia me ayudó con mi presentación.",
+                "fr": "Comment c'était ? Est-ce que ma prestation ressemble à ce que le Cube Roccia m'a appris ?",
+                "ja": "どうダ、僕の演技。ロココ団子に教わったンダ。",
+                "ko": "어때? 로코코 새알심이 가르쳐 준 건데 비슷한 것 같아?",
+                "th": "เป็นไงบ้าง การแสดงของฉันเหมือนกับที่ลูกบาศก์จิ๋ว Roccia สอนมามั้ย?",
+                "zh-Hans": "怎么样，这段洛可可团子教的表演我学得还像吗？",
+                "zh-Hant": "怎麼樣，這段洛可可團子教的表演我學得還像嗎？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja.",
+                    "en": "Yeah.",
+                    "es": "Genial.",
+                    "fr": "Oui.",
+                    "ja": "{Male=上手いな。;Female=上手いね。}",
+                    "ko": "그러네요",
+                    "th": "ไม่เลวนะ",
+                    "zh-Hans": "挺像的。",
+                    "zh-Hant": "挺像的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Woher hast du den?",
+                    "en": "Where did you get that?",
+                    "es": "¿De dónde has sacado eso?",
+                    "fr": "D'où sors-tu ça ?",
+                    "ja": "{Male=どこから取り出したんだ？;Female=どこから取り出したの？}",
+                    "ko": "어떻게 한 거죠?",
+                    "th": "ได้มาจากไหนน่ะ?",
+                    "zh-Hans": "你是从哪里变出这个的？",
+                    "zh-Hant": "你是從哪裡變出這個的？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ku-ku-ku, vielen Dank.",
+                "en": "Ku ku ku, thank you.",
+                "es": "Ku ku ku, gracias.",
+                "fr": "Ku ku ku, merci.",
+                "ja": "クク！高評価ありガトウ。",
+                "ko": "쿠쿠쿠, 고마워",
+                "th": "คูๆ ๆ ขอบคุณนะ",
+                "zh-Hans": "库库库，谢谢你的夸奖。",
+                "zh-Hant": "庫庫庫，謝謝你的誇獎。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aus einer magischen Tasche, die mit dem Sol-2 verbunden ist ... Hehe, nur ein Scherz.",
+                "en": "From a magic pocket linked to the Second Coming of Solaris... Hehe, just kidding.",
+                "es": "De un bolsillo mágico conectado a Segunda venida de Solaris... Je, je, era broma.",
+                "fr": "D'une poche magique reliée au Sol-2... Hé hé, je plaisante.",
+                "ja": "それはもちろん、第二ソラリスと繋がってるふしぎなポッケ……ククッ、冗談ダヨ。",
+                "ko": "세컨드 솔라리스의 신기한 주머니와 연결된... 농담이야",
+                "th": "จากกระเป๋าวิเศษที่เชื่อมต่อกับโซลาริสที่ 2... ฮี่ฮี่ ล้อเล่นนะ",
+                "zh-Hans": "是连接着第二索拉的神奇口袋……开玩笑的啦。",
+                "zh-Hant": "是連接著第二索拉的神奇口袋……開玩笑的啦。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieser Simulator kann deine wertvollsten Erinnerungen an Freunde nachbilden und im Sol-2 speichern. Ziemlich praktisch, oder?",
+                "en": "This Simulator can recreate your most precious memories of friends to store in the Second Coming of Solaris. Pretty convenient, eh?",
+                "es": "Este Simulador puede recrear tus recuerdos más queridos con amigos para almacenarlos en Segunda venida de Solaris. ¡A que es práctico!",
+                "fr": "Ce Simulateur peut recréer tes souvenirs les plus précieux avec tes amis pour les stocker dans Le Sol-2. Pratique, non ?",
+                "ja": "コレは、仲間との大切な思い出を記録シ、第二ソラリスに保存できル、超便利な装置。コイツがアレバ、いつでも仲間との思い出を再現できル！",
+                "ko": "이 시뮬레이션 장치만 있으면 친구들과의 소중한 추억을 자동으로 복구할 수 있고, 녹화한 다음 세컨드 솔라리스에 저장할 수도 있어. 엄청 편리하지?",
+                "th": "เครื่องจำลองนี้สามารถสร้างความทรงจำอันล้ำค่ากับเพื่อนๆ ขึ้นมาใหม่ เพื่อเก็บไว้ในโซลาริสที่ 2 สะดวกดีใช่มั้ยละ",
+                "zh-Hans": "这个模拟装置可以自动帮你复现出和伙伴们的珍贵回忆，并将它录制后储存到第二索拉之中。很方便的！",
+                "zh-Hant": "這個模擬裝置可以自動幫你復現出和夥伴們的珍貴回憶，並將它錄製後儲存到第二索拉之中。很方便的！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm, legen wir direkt los!",
+                "en": "Alright, without further ado, let's try it out!",
+                "es": "¡Muy bien, probémoslo cuanto antes!",
+                "fr": "Allez, sans plus attendre, essayons !",
+                "ja": "ホラ、早く使ってみヨウ！",
+                "ko": "말 나온 김에, 바로 사용해 봐!",
+                "th": "เอาล่ะ เพื่อไม่ให้เสียเวลา มาลองกันเลย!",
+                "zh-Hans": "事不宜迟，赶快来试试看吧！",
+                "zh-Hant": "事不宜遲，趕快來試試看吧！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 200099,
+                "name": {
+                  "zh-Hans": "库乐乐"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

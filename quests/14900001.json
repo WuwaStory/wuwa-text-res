@@ -1,0 +1,280 @@
+{
+  "id": 14900001,
+  "key": "演出QTE",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 7,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "Repeater",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 8,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 14900144,
+          "mapId": 100,
+          "blueprintType": "NPC308",
+          "name": "TsEntity_121_010_皇龙小孩3",
+          "areaId": 0,
+          "position": {
+            "x": -19500,
+            "y": -11980,
+            "z": 5
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_ZW_2_0",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 主流程 - 第一段"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "zh-Hans": "说点什么吧"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 进入Qte成功分支"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 进入Qte失败分支"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 主流程 - 第二段"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 主流程 - 第一段"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "zh-Hans": "说点什么吧"
+              },
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "zh-Hans": "QTE成功选项"
+                  }
+                },
+                {
+                  "text": {
+                    "zh-Hans": "QTE失败选项"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 进入Qte成功分支 - 结束后衔接演出第二段"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 进入Qte失败分支- 结束后衔接演出第二段"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "zh-Hans": "test/演出Qte测试 - 主流程 - 第二段"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1434,
+                "name": {
+                  "zh-Hans": "瓦伦蒂诺"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 14900145,
+          "mapId": 100,
+          "blueprintType": "branch2.0_NPC_DA_FemaleS_Girl1_1",
+          "name": "NPC-121_朱诺",
+          "areaId": 0,
+          "position": {
+            "x": -19510,
+            "y": -11750,
+            "z": 5
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 30900116,
+          "mapId": 100,
+          "blueprintType": "Editor001",
+          "name": "TsEntity_编辑器_测试地板69",
+          "areaId": 0,
+          "position": {
+            "x": -18823,
+            "y": -12119,
+            "z": -10
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_ZW_2_0",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "zh-Hans": "说点什么吧"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "zh-Hans": "说点什么吧"
+              },
+              "id": 0
+            },
+            {
+              "text": {
+                "zh-Hans": "说点什么吧"
+              },
+              "id": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1712 @@
+{
+  "id": 159900011,
+  "key": "布偶小队声匣引导",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Begegnung im Plüschtier-Dorf",
+    "en": "The Plushie Village",
+    "es": "Villa Peluchona",
+    "fr": "Village des peluches",
+    "ja": "ぬいぐるみビレッジとの出会い",
+    "ko": "인형 마을을 찾아서",
+    "th": "หมู่บ้านตุ๊กตา",
+    "zh-Hans": "邂逅布偶村",
+    "zh-Hant": "邂逅布偶村"
+  },
+  "desc": {
+    "de": "Geführt von der Pioneer Association kommst du an einem faszinierenden Ort an, der als das Plüschtier-Dorf bekannt ist.",
+    "en": "Guided by the Pioneer Association, you arrive at an intriguing place known as the Plushie Village.",
+    "es": "Siguiendo las indicaciones de Asociación de Pioneros, llegaste a un lugar maravilloso llamado Villa Peluchona.",
+    "fr": "Guidé par l'Association pionnière, vous arrivez dans un endroit fascinant qui s'appelle « Village des peluches »...",
+    "ja": "先駆条約に導かれて、あなたはぬいぐるみビレッジという奇妙な地域を訪れた……",
+    "ko": "선행공약의 안내에 따라 인형 마을이라는 신기한 곳에 도착하였다...",
+    "th": "ภายใต้การนำทางของสมาคมผู้บุกเบิก คุณเดินทางมาถึงสถานที่อันแปลกประหลาดที่มีชื่อว่าหมู่บ้านตุ๊กตา",
+    "zh-Hans": "在先行公约的指引下，你来到了一个名叫布偶村的奇妙场所……",
+    "zh-Hant": "在先行公約的指引下，你來到了一個名叫布偶村的奇妙場所……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 159900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC341",
+          "name": "TsEntity_157_马利诺",
+          "areaId": 2304,
+          "position": {
+            "x": 861181,
+            "y": 650084,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 314900019,
+          "mapId": 8,
+          "blueprintType": "TsEntity_声骸_寂寞小姐布偶_400413",
+          "name": "TsEntity_声骸_寂寞小姐布偶_400415",
+          "areaId": 2304,
+          "position": {
+            "x": 861559,
+            "y": 650547,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -68
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Du kommst mir bekannt vor … Bist du {Male=DER;Female=DIE} Rover? {Male=Der große Held;Female=Die große Heldin}, {Male=der;Female=die} Jinzhou im Alleingang gerettet hat?",
+                "en": "You look familiar... Are you THE Rover? The great hero who singlehandedly saved Jinzhou?",
+                "es": "Tu cara me suena... ¿Eres tú {Male=el;Female=la} Errante? ¿{Male=El gran héroe;Female=La gran heroína} que salvó Jinzhou sin ayuda?",
+                "fr": "Vous me dites quelque chose... Êtes-vous {Male=LE;Female=LA} Nomade ? {Male=Le grand héros;Female=La grande héroïne} qui a sauvé Jinzhou à bout de bras ?",
+                "ja": "その格好は……！まさか貴方様は、たった一人で今州を救った英雄、漂泊者様なのでしょうか！",
+                "ko": "이 옷차림은... 혹시 금주를 홀로 구한 영웅, 방랑자님이신가요?",
+                "th": "หน้าตาคุณดูคุ้นๆ นะ... คุณคือ ผู้พเนจรนั่นใช่มั้ย? ฮีโร่ยอดฝีมือที่ช่วยจินโจวไว้ได้ด้วยตัวคนเดียวน่ะ?",
+                "zh-Hans": "这身打扮……您该不会就是单枪匹马拯救了今州的英雄，漂泊者大人吧！",
+                "zh-Hant": "這身打扮……您該不會就是單槍匹馬拯救了今州的英雄，漂泊者大人吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Niemand kann so etwas im Alleingang schaffen.",
+                    "en": "No one can do that singlehandedly.",
+                    "es": "Nadie podría hacer eso {Male=solo;Female=sola}.",
+                    "fr": "Personne ne peut faire cela tout seul.",
+                    "ja": "{Male=いや、そんなことは一人ではできないと思うが。;Female=えっと、そんなことは一人ではできないと思うけど。}",
+                    "ko": "그런 일을 혼자서 해낼 수 있는 사람은 없을걸요",
+                    "th": "ไม่มีใครทำแบบนั้นด้วยตัวคนเดียวได้หรอกนะ",
+                    "zh-Hans": "没人能单枪匹马做到那种事。",
+                    "zh-Hant": "沒人能單槍匹馬做到那種事。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Höchstpersönlich.",
+                    "en": "In the flesh.",
+                    "es": "{Male=El;Female=La} que viste y calza.",
+                    "fr": "En chair et en os.",
+                    "ja": "{Male=そう、俺のことだ！;Female=そう、私のことよ！}",
+                    "ko": "네, 그게 바로 저예요!",
+                    "th": "ตัวจริงเสียงจริงเลยล่ะ",
+                    "zh-Hans": "正是在下！",
+                    "zh-Hant": "正是在下！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, tut mir leid, du hast recht. Herr Fulmine hat mir beigebracht, dass es „der Glanz jeder einzelnen Seele ist, der den Ruhm der Geschichte schmiedet“.",
+                "en": "Oh, sorry, you're right. Mr. Fulmine also taught me that \"It's the glimmer of each and every soul that forges the glories in history.\"",
+                "es": "Ah, perdona, tienes razón. Señor Fulmine también me enseñó que el destello de cada alma es lo que forja las glorias de la historia.",
+                "fr": "Oh, désolé, vous avez raison. Monsieur Fulmine m'a aussi appris que « C'est la lueur de chaque âme qui forge les gloires de l'histoire. »",
+                "ja": "あっ、申し訳ございません。確かフルミーネ先輩も教えてくれましたよ。「歴史が輝くのは、どの魂もが輝いているからだ」と。",
+                "ko": "앗, 죄송해요. 맞는 말씀이세요. 풀미네 선배도 저에게 「역사가 찬란한 것은 모든 영혼이 빛나기 때문이다」라고 가르쳐 주셨거든요",
+                "th": "อ๊ะ ขอโทษที คุณพูดถูก คุณ Fulmine ยังสอนผมไว้ด้วยว่า \"แสงประกายจากวิญญาณทุกดวงสร้างความรุ่งโรจน์ในประวัติศาสตร์\"",
+                "zh-Hans": "抱歉抱歉，您说得对。斐林前辈也教过我，“历史之所以璀璨，是因为每个灵魂都在闪光。”",
+                "zh-Hant": "抱歉抱歉，您說得對。斐林前輩也教過我，「歷史之所以璀璨，是因為每個靈魂都在閃光。」"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist ja großartig! Ich brauche gerade jemanden, der mir aus der Klemme hilft.",
+                "en": "That's awesome! I'm in need of a savior right now.",
+                "es": "¡Perfecto! Justo necesito {Male=un héroe;Female=una heroína}.",
+                "fr": "C'est génial ! J'ai vraiment besoin d'un sauveur en ce moment.",
+                "ja": "よかった、どうしたらいいかずっと悩んでいました。",
+                "ko": "천만다행이에요. 마침 어떻게 해야 할지 고민하고 있었거든요",
+                "th": "เยี่ยมไปเลย! ตอนนี้กำลังหาคนช่วยอยู่พอดี",
+                "zh-Hans": "太好了，我正愁怎么办呢。",
+                "zh-Hant": "太好了，我正愁怎麼辦呢。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich heiße Marino und bin Fotografiepraktikant in der Association. Das ist wahrscheinlich von einem Fremden etwas viel verlangt, aber könntest du mir einen Gefallen tun? Nur {Male=ein Held;Female=eine Heldin} wie du kann mir helfen!",
+                "en": "I'm Marino, an intern photographer of the Pioneer Association. Well, this may seem a bit too much to ask from a stranger, but could you lend me a hand? Only a hero like you can handle this!",
+                "es": "Me llamo Marino y soy fotógrafo en prácticas de la Asociación de Pioneros. Perdona si suena un poco directo, pero... ¿Me harías un favor? ¡Tu ayuda me vendría de perlas!",
+                "fr": "Je m'appelle Marino, photographe stagiaire de l'Association. Eh bien, je sais que c'est un peu déplacé de demander à {Male=un étranger;Female=une étrangère}, mais pourriez-vous me donner un coup de main ? {Male=Seul un héros;Female=Seule une héroïne} comme vous pouvez s'en occuper !",
+                "ja": "私は先駆条約でカメラマン見習いをしているマリーノです。突然ですが、お力をお貸しくださいませんか？私の知っている人の中では恐らく、かの有名な貴方様しかできないのです！",
+                "ko": "저는 말리노라고 해요. 선행 공약의 실습 사진작가예요. 음... 갑작스럽긴 하지만 부탁 하나 드려도 될까요? 제가 아는 사람 중에서는 유명하신 방랑자만이 해내실 수 있을 것 같아서요!",
+                "th": "ผมชื่อมาริโน เป็นช่างภาพฝึกหัดของสมาคมผู้บุกเบิก เอ่อ การขออะไรแบบนี้จากคนแปลกหน้าอาจจะดูรบกวนเกินไปสักนิด แต่คุณช่วยผมหน่อยได้มั้ย? มีเพียงฮีโร่อย่างคุณเท่านั้นที่จัดการเรื่องนี้ได้!",
+                "zh-Hans": "我叫马利诺，是先行公约的一名实习摄影师。嗯，虽然有些突兀，不过能请您帮我个忙吗。我认识的人里恐怕只有大名鼎鼎的您能做到了！",
+                "zh-Hant": "我叫馬利諾，是先行公約的一名實習攝影師。嗯，雖然有些突兀，不過能請您幫我個忙嗎。我認識的人裡恐怕只有大名鼎鼎的您能做到了！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 5,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das höre ich in letzter Zeit ziemlich oft …",
+                    "en": "I seem to have heard the line pretty often lately...",
+                    "es": "Últimamente escucho esa frase bastante a menudo...",
+                    "fr": "J'ai l'impression d'avoir souvent entendu cette phrase dernièrement...",
+                    "ja": "{Male=最近、そう言う人がますます増えてきたな……;Female=最近、そう言う人がますます増えてきたね……}",
+                    "ko": "요즘 그런 말 하는 사람이 많네요...",
+                    "th": "ดูเหมือนว่าช่วงนี้ฉันจะได้ยินประโยคนี้ค่อนข้างบ่อยเลย...",
+                    "zh-Hans": "最近这样说的人越来越多了……",
+                    "zh-Hant": "最近這樣說的人越來越多了……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 6,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was genau ist passiert?",
+                    "en": "What happened exactly?",
+                    "es": "¿Qué pasó exactamente?",
+                    "fr": "Que s'est-il passé exactement ?",
+                    "ja": "{Male=まず、内容を聞かせてくれ。;Female=まず、内容を聞かせてくれない？}",
+                    "ko": "일단 무슨 일인지부터 들어 볼게요",
+                    "th": "เกิดอะไรขึ้นกันแน่?",
+                    "zh-Hans": "先听听是什么事。",
+                    "zh-Hant": "先聽聽是什麼事。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist eine lange Geschichte. Könntest du das kleine Plüschtier neben dir etwas tätscheln?",
+                "en": "It's a bit complicated, but you can start by touching those Plushies over there to get a better sense of the situation.",
+                "es": "Es una historia muy larga. ¿Podrías echarle una mano al peluchito que está a tu lado?",
+                "fr": "C'est une longue histoire. Pourriez-vous caresser la petite peluche à côté de vous ?",
+                "ja": "説明がややこしいのですが、隣のぬいぐるみに触れていただけませんか?",
+                "ko": "설명하자면 좀 복잡한데, 혹시 옆에 있는 작은 인형을 한번 만져보시겠어요?",
+                "th": "มันค่อนข้างซับซ้อนนิดหน่อยน่ะ แต่คุณลองเริ่มจากการสัมผัสตุ๊กตาพวกนั้นดูก่อนก็ได้ มันจะช่วยให้คุณเข้าใจสถานการณ์มากขึ้น",
+                "zh-Hans": "解释起来比较复杂，能麻烦你摸一下旁边的小布偶吗？",
+                "zh-Hant": "解釋起來比較複雜，能麻煩你摸一下旁邊的小布偶嗎？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Plüschtiere brauchen also Schallkassetten?",
+                "en": "These Plushies need Sonance Caskets?",
+                "es": "¿Entonces los peluches necesitan Ataúdes de Sonancia?",
+                "fr": "Donc les peluches ont besoin de Boîtes de Sonance ?",
+                "ja": "{Male=このぬいぐるみ達は、音匣がほしいのか？;Female=このぬいぐるみ達は、音匣がほしいの？}",
+                "ko": "이 작은 인형들이 다 사운드박스를 갖고 싶어 하는 건가요?",
+                "th": "ตุ๊กตาพวกนี้ต้องใช้กล่องโซแนนซ์งั้นเหรอ?",
+                "zh-Hans": "这些小布偶是想要声匣？",
+                "zh-Hant": "這些小布偶是想要聲匣？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja. Mithilfe der Schallkassetten kann das Morph-Gemälde die besitzerlosen Echos hier mit seiner Sonoro-Sphäre stabilisieren, sodass sie sich nicht auflösen oder aggressiv werden.",
+                "en": "Yes. By using the Sonance Caskets, the morph painting can stabilize the masterless Echoes here with its Sonoro Sphere, keeping them from fading or becoming hostile.",
+                "es": "Sí. Al usar los Ataúdes de Sonancia, la pintura Eco puede estabilizar estos Ecos sin dueño con su Esfera Sonora, de forma que no se desvanezcan ni se vuelvan agresivos.",
+                "fr": "Oui. En utilisant les Boîtes de Sonance, la peinture transmutatrice peut stabiliser les Échos sans maître avec sa Sonora, afin qu'ils ne disparaissent pas ou ne deviennent pas agressifs.",
+                "ja": "その通りです。この場所に残された音骸絵は、音匣でソノラを展開することで、無主の音骸を安定させ、それらが消えたり、攻撃的な異常行動したりしないようにすることができます。",
+                "ko": "네, 여기에 남아있는 에코 그림이 사운드박스를 통해 음의 영역을 전개하면 이 주인 없는 에코가 흩어지거나 공격적인 이상 행동을 하지 않고 안정적으로 유지되도록 할 수 있어요",
+                "th": "ใช่ เมื่อใช้กล่องโซแนนซ์ ภาพวาดแปรสภาพก็จะสามารถทำให้เอคโค่ที่ไร้นายอยู่ในมิติเสียงสะท้อนได้อย่างเสถียร โดยไม่หายไปหรือก้าวร้าว",
+                "zh-Hans": "是的，留存在此地的声骸画可以通过声匣展开声之领域让这些无主的声骸保持稳定，不会消散或者做出攻击性的异常行为。",
+                "zh-Hant": "是的，留存在此地的聲骸畫可以透過聲匣展開聲之領域讓這些無主的聲骸保持穩定，不會消散或者做出攻擊性的異常行為。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Herr Fulmine und ich haben schon so viele Kassetten gesammelt, wie wir konnten, aber es reicht immer noch nicht aus, um das Gemälde vollständig wiederherzustellen. Deshalb brauchen wir deine Hilfe.",
+                "en": "Mr. Fulmine and I have been grabbing as many Caskets as we can, but it's still not enough to power the painting fully. That's why we need your help.",
+                "es": "El Sr. Fulmine y yo hemos estado recogiendo tantos Ataúdes como hemos podido, pero no son suficientes para potenciar completamente la pintura. Por eso necesitamos tu ayuda.",
+                "fr": "Monsieur Fulmine et moi avons pris autant de Boîtes que possible, mais ce n'est toujours pas suffisant pour alimenter complètement la peinture. C'est pourquoi nous avons besoin de votre aide.",
+                "ja": "ここしばらく、フルミーネ先輩と私は見つけうる限りの音匣を集めてきましたが、音骸絵を復元するにはまだもう少し音匣が必要なため、貴方様にお願いしたいと思っています。",
+                "ko": "저와 풀미네 선배가 한 동안 찾을 수 있는 사운드박스를 모두 수집해 왔어요. 하지만, 에코 그림을 완전히 복원하기까지는 아직 갈 길이 멀어서 도움을 요청드리게 되었어요",
+                "th": "คุณ Fulmine กับผมคอยรวบรวมกล่องให้ได้มากที่สุดมาสักพักแล้ว แต่ก็ยังมีไม่พอที่จะส่งพลังกับให้ภาพวาดได้เต็มที่ ดังนั้นเราเลยอยากขอให้คุณช่วยหน่อยน่ะ",
+                "zh-Hans": "过去一段时间，我和斐林前辈已经把我们能找到的声匣都收集了过来，但距离让声骸画完全恢复还有一定距离，所以才想要请您帮忙。",
+                "zh-Hant": "在過去一段時間裡，我和斐林前輩已經把我們能找到的聲匣都收集了過來，但距離讓聲骸畫完全恢復還有一定距離，所以才想要請您幫忙。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 4,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist ganz schön viel Arbeit.",
+                    "en": "That's a lot of work to do.",
+                    "es": "Eso es mucho trabajo.",
+                    "fr": "C'est beaucoup de travail.",
+                    "ja": "{Male=音匣の収集は大変なんだが。;Female=音匣の収集は大変なんだけど。}",
+                    "ko": "사운드박스를 모으는 건 꽤나 힘든 일이죠",
+                    "th": "มีอะไรให้ทำเยอะเลย",
+                    "zh-Hans": "收集声匣很费劲的。",
+                    "zh-Hant": "收集聲匣很費勁的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 5,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was springt für mich dabei raus?",
+                    "en": "What's in it for me?",
+                    "es": "¿Qué gano yo con esto?",
+                    "fr": "Qu'est-ce que j'y gagne ?",
+                    "ja": "{Male=そもそも、俺にどんなメリットがあるんだ？;Female=そもそも、私にどんなメリットがあるの？}",
+                    "ko": "보상은 없는 건가요?",
+                    "th": "ฉันทำแล้วได้อะไรล่ะ?",
+                    "zh-Hans": "我就没什么好处吗？",
+                    "zh-Hant": "我有什麼好處嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wir werden dafür sorgen, dass es sich für dich lohnt.",
+                "en": "We will definitely make it worth your while.",
+                "es": "Te prometo que merecerá la pena.",
+                "fr": "Vos efforts seront pleinement récompensés.",
+                "ja": "もちろん、タダ働きはさせません。",
+                "ko": "물론 공짜로 해달라는 건 아니에요",
+                "th": "เราจะตอบแทนให้คุ้มค่ากับที่คุณสละเวลาแน่นอน",
+                "zh-Hans": "自然不会让您打白工的。",
+                "zh-Hant": "自然不會讓您做白工的。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedes Mal, wenn das Gemälde seine Sonoro-Sphäre öffnet, nehmen sich die Plüschtiere einige Vorräte heraus, um das Lager zu versorgen.",
+                "en": "Every time the painting opens its Sonoro Sphere, the Plushies take some resources from it to keep the village going.",
+                "es": "Cada vez que el cuadro abre su Esfera Sonora, los peluches toman algunos de sus recursos para mantener la villa en funcionamiento.",
+                "fr": "Chaque fois que la peinture ouvre sa Sonora, les peluches y prennent quelques ressources pour maintenir le camp en activité.",
+                "ja": "音骸絵のソノラが展開されるたびに、ぬいぐるみ達は拠点を維持するために、中から物資を持ち出します。",
+                "ko": "에코 그림의 영역이 전개될 때마다 인형들이 그곳에서 캠프 유지를 위한 물자를 채집해 오곤 해요",
+                "th": "ทุกครั้งที่ภาพวาดเปิดมิติเสียงสะท้อน ตุ๊กตาจะไปเอาทรัพยากรจากมิติเสียงสะท้อนนั่นไปใช้เพื่อให้หมู่บ้านยังใช้งานได้",
+                "zh-Hans": "每次声骸画的领域开启时，布偶们都会从中取出一些物资用以维持营地。",
+                "zh-Hant": "每次聲骸畫的領域開啟時，布偶們都會從中取出一些物資用以維持營地。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In der Sonoro-Sphäre befinden sich sogar noch eine Menge Schätze. Die Plüschtiere würden sicher gern einige davon herausholen, um dich damit zu belohnen!",
+                "en": "In fact, there's still a ton of treasure left in the Sonoro Sphere. I'm sure the Plushies would be happy to haul out a few pieces as a reward for you!",
+                "es": "De hecho, aún quedan un montón de tesoros en la Esfera Sonora. ¡Seguro que a los peluches les encantará entregarte algunos a modo de recompensa!",
+                "fr": "En fait, il reste encore une tonne de trésors dans la Sonora. Les peluches seraient sûrement heureuses d'en faire sortir certaines comme récompenses !",
+                "ja": "物資だけでなく、中にも宝物がたくさんあります。ぬいぐるみ達はきっと喜んで、その一部を報酬として貴方様に差し上げますよ！",
+                "ko": "실은 에코 그림 속에는 더 많은 보물들이 있거든요. 인형들이 보답으로 보물 일부를 가져다 드리고 싶어 할 거예요!",
+                "th": "อันที่จริงแล้ว ยังมีสมบัติเหลืออยู่ในมิติเสียงสะท้อนเยอะเลย ผมมั่นใจว่าตุ๊กตาพวกนั้นคงยินดีช่วยขนของรางวัลมาให้คุณได้บ้างแน่นอน!",
+                "zh-Hans": "但其实声骸画中还有大量的财宝，我相信布偶们会乐意帮你取出来一些作为报酬的！",
+                "zh-Hant": "但其實聲骸畫中還有大量的財寶，我相信布偶們會樂意幫你取出來一些作為報酬的！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut. Ich habe sowieso keinen Nutzen für Schallkassetten.",
+                "en": "Fair enough. I have no use for Sonance Caskets anyway.",
+                "es": "Me parece bien. De todos modos, yo no uso los Ataúdes de Sonancia.",
+                "fr": "Ça se tient. De toute façon, je n'ai pas besoin de Boîtes de Sonance.",
+                "ja": "{Male=わかった。どうせ俺のところに置いていても何の役にも立たないしな。;Female=わかった。どうせ私のところに置いていても何の役にも立たないしね。}",
+                "ko": "좋아요, 어차피 사운드박스는 저한테 필요 없으니까요",
+                "th": "ก็ได้นะ ยังไงฉันก็ไม่ได้ใช้กล่องโซแนนซ์อยู่แล้ว",
+                "zh-Hans": "行，反正声匣留我这也没用。",
+                "zh-Hant": "行，反正聲匣我留著也沒用。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielen Dank!",
+                "en": "Thank you so much!",
+                "es": "¡Muchas gracias!",
+                "fr": "Merci beaucoup !",
+                "ja": "ご協力いただき、ありがとうございます。貴方様には、本当に感謝してもしきれません。",
+                "ko": "도와주시다니 정말 감사합니다",
+                "th": "ขอบคุณมากเลย!",
+                "zh-Hans": "您愿意帮忙我真的很感激。",
+                "zh-Hant": "您願意幫忙我真的很感激。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir zählen auf dich, mehr Schallkassetten zu sammeln, um das Gemälde wiederherzustellen. Ich werde auch auf Ungewöhnlichkeiten bei den Echos achten und dich sofort benachrichtigen, wenn etwas passiert.",
+                "en": "We're counting on you to collect more Sonance Caskets to power the painting. I'll also keep an eye out for any Echo weirdness and let you know if something comes up.",
+                "es": "Contamos contigo para recoger más Ataúdes de Sonancia con los que potenciar la pintura. No les quitaré la vista de encima a estos Ecos, por si acaso, y te avisaré si veo algo raro.",
+                "fr": "Nous comptons sur vous pour récupérer plus de Boîtes de Sonance afin d'alimenter la peinture. Je vais également garder un œil sur tout comportement étrange des Échos et vous tenir informé s'il se passe quelque chose.",
+                "ja": "では、より多くの音匣を集めて音骸絵を復元するようお願いします！もちろん、音骸異常事件があれば、すぐお知らせしますからね！",
+                "ko": "그럼 앞으로 더 많은 사운드박스를 수집해서 에코 그림을 복원해 주세요. 저도 계속 지켜보다가 에코 이상 현상이 발생하면 바로 알려드릴게요!",
+                "th": "เราขอฝากให้คุณช่วยเก็บกล่องโซแนนซ์มาให้เพิ่มเพื่อเป็นแหล่งพลังงานให้รูปวาดด้วยนะ แล้วผมจะคอยจับตาดูเหตุการณ์ประหลาดเกี่ยวกับเอคโค่ และบอกให้คุณรู้ถ้ามีเรื่องอะไร",
+                "zh-Hans": "那接下来就拜托您收集更多声匣来恢复声骸画，我也会多多关注，如果出现声骸异常事件就立刻通知您！",
+                "zh-Hant": "那接下來就拜託您收集更多聲匣來恢復聲骸畫，我也會多多關注，如果出現聲骸異常事件就立刻通知您！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Dies ist eine Nachricht von der Pioneer Association an alle Mitglieder, die im Moment die Rinascita-Region erkunden.",
+                "en": "This message is from the Pioneer Association to all members currently exploring the Rinascita region.",
+                "es": "Este es un mensaje de la Asociación de Pioneros para todos los miembros que actualmente exploran la región de Rinascita.",
+                "fr": "Ceci est un message de l'Association pionnière à tous ses membres actuellement en exploration dans la région de Rinascita.",
+                "ja": "これは、リナシータ地域を探索している先駆条約メンバーに送信される、先駆条約からのダイレクトメールです。",
+                "ko": "이것은 선행 공약의 정보 메일로, 리나시타 지역을 탐험 중인 선약 멤버에게 전달됩니다",
+                "th": "ข้อความนี้เป็นข้อความที่สมาคมผู้บุกเบิกส่งให้สมาชิกทุกคนที่กำลังออกสำรวจในภูมิภาครินาซิตาในขณะนี้",
+                "zh-Hans": "这是先行公约的定向邮件，发送给正在黎那汐塔地区探索的先约成员。",
+                "zh-Hant": "這是先行公約的定向郵件，發送給正在黎那汐塔地區探索的先約成員。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 948,
+                "name": {
+                  "zh-Hans": "未知来电"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Marino, einer unserer Fotografen, bittet um die Unterstützung eines Mitgliedes mit ausgeprägten Kampffähigkeiten. Sein Standort wurde auf eurer Karte markiert.",
+                "en": "Marino, one of our Association photographers, is asking for help from any members with strong combat skills. You can find the location on the map marked for your reference.",
+                "es": "Marino, uno de los fotógrafos de nuestra Asociación, pide la colaboración de personas con buenas habilidades de combate. Se ha señalado su ubicación en el mapa.",
+                "fr": "Marino, l'un des photographes de l'Association, demande de l'aide à tout membre ayant de solides compétences en combat. Vous trouverez son emplacement indiqué sur la carte.",
+                "ja": "先駆条約のカメラマン・マリーノは、戦闘可能なメンバーの協力を要請しています。具体的な位置は既にマップ上に表示されています。",
+                "ko": "선행 공약의 사진작가 말리노가 전투 능력이 있는 선약 멤버의 도움을 요청했습니다. 구체적인 위치는 지도에 표시되어 있습니다",
+                "th": "มาริโน หนึ่งในช่างภาพของสมาคมเรากำลังขอความช่วยเหลือจากสมาชิกทุกคนที่มีทักษะในการต่อสู้ที่ยอดเยี่ยม คุณสามารถดูตำแหน่งบนแผนที่ที่ทำเครื่องหมายไว้เพื่ออ้างอิงได้",
+                "zh-Hans": "先行公约摄影师马利诺请求一名具有战斗能力的先约成员协助，具体位置已在地图上标出。",
+                "zh-Hant": "先行公約攝影師馬利諾請求一名具有戰鬥能力的先約成員協助，具體位置已在地圖上標出。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 948,
+                "name": {
+                  "zh-Hans": "未知来电"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Anscheinend braucht jemand Hilfe. Ich sollte mir das ansehen, wenn ich in der Nähe bin.)",
+                "en": "(Looks like someone needs a hand. I should go take a look when I'm around.)",
+                "es": "(Parece que alguien necesita ayuda. Debería ir a echar un vistazo cuando esté por ahí).",
+                "fr": "(On dirait que quelqu'un a besoin d'aide. Je devrais aller voir quand je serai dans le coin.)",
+                "ja": "（{Male=助けが必要な人がいるようだ。寄り道がてら行ってみよう;Female=助けが必要な人がいるみたいね。寄り道がてら行ってみようかな}）",
+                "ko": "(누군가 도움이 필요한 것 같아. 지나가는 길이면 한번 들러봐야겠어)",
+                "th": "(ดูเหมือนจะมีคนต้องการความช่วยเหลือ ตอนที่ไปแถวนั้นฉันควรจะไปดูสักหน่อย)",
+                "zh-Hans": "（看来有人需要帮助，顺路的话就去看看吧。）",
+                "zh-Hant": "（看來有人需要幫助，順路的話就去看看吧。）"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 159900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC341",
+          "name": "TsEntity_157_马利诺",
+          "areaId": 2304,
+          "position": {
+            "x": 861181,
+            "y": 650084,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Du kommst mir bekannt vor … Bist du {Male=DER;Female=DIE} Rover? {Male=Der große Held;Female=Die große Heldin}, {Male=der;Female=die} Jinzhou im Alleingang gerettet hat?",
+                "en": "You look familiar... Are you THE Rover? The great hero who singlehandedly saved Jinzhou?",
+                "es": "Tu cara me suena... ¿Eres tú {Male=el;Female=la} Errante? ¿{Male=El gran héroe;Female=La gran heroína} que salvó Jinzhou sin ayuda?",
+                "fr": "Vous me dites quelque chose... Êtes-vous {Male=LE;Female=LA} Nomade ? {Male=Le grand héros;Female=La grande héroïne} qui a sauvé Jinzhou à bout de bras ?",
+                "ja": "その格好は……！まさか貴方様は、たった一人で今州を救った英雄、漂泊者様なのでしょうか！",
+                "ko": "이 옷차림은... 혹시 금주를 홀로 구한 영웅, 방랑자님이신가요?",
+                "th": "หน้าตาคุณดูคุ้นๆ นะ... คุณคือ ผู้พเนจรนั่นใช่มั้ย? ฮีโร่ยอดฝีมือที่ช่วยจินโจวไว้ได้ด้วยตัวคนเดียวน่ะ?",
+                "zh-Hans": "这身打扮……您该不会就是单枪匹马拯救了今州的英雄，漂泊者大人吧！",
+                "zh-Hant": "這身打扮……您該不會就是單槍匹馬拯救了今州的英雄，漂泊者大人吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Niemand kann so etwas im Alleingang schaffen.",
+                    "en": "No one can do that singlehandedly.",
+                    "es": "Nadie podría hacer eso {Male=solo;Female=sola}.",
+                    "fr": "Personne ne peut faire cela tout seul.",
+                    "ja": "{Male=いや、そんなことは一人ではできないと思うが。;Female=えっと、そんなことは一人ではできないと思うけど。}",
+                    "ko": "그런 일을 혼자서 해낼 수 있는 사람은 없을걸요",
+                    "th": "ไม่มีใครทำแบบนั้นด้วยตัวคนเดียวได้หรอกนะ",
+                    "zh-Hans": "没人能单枪匹马做到那种事。",
+                    "zh-Hant": "沒人能單槍匹馬做到那種事。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Höchstpersönlich.",
+                    "en": "In the flesh.",
+                    "es": "{Male=El;Female=La} que viste y calza.",
+                    "fr": "En chair et en os.",
+                    "ja": "{Male=そう、俺のことだ！;Female=そう、私のことよ！}",
+                    "ko": "네, 그게 바로 저예요!",
+                    "th": "ตัวจริงเสียงจริงเลยล่ะ",
+                    "zh-Hans": "正是在下！",
+                    "zh-Hant": "正是在下！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, tut mir leid, du hast recht. Herr Fulmine hat mir beigebracht, dass es „der Glanz jeder einzelnen Seele ist, der den Ruhm der Geschichte schmiedet“.",
+                "en": "Oh, sorry, you're right. Mr. Fulmine also taught me that \"It's the glimmer of each and every soul that forges the glories in history.\"",
+                "es": "Ah, perdona, tienes razón. Señor Fulmine también me enseñó que el destello de cada alma es lo que forja las glorias de la historia.",
+                "fr": "Oh, désolé, vous avez raison. Monsieur Fulmine m'a aussi appris que « C'est la lueur de chaque âme qui forge les gloires de l'histoire. »",
+                "ja": "あっ、申し訳ございません。確かフルミーネ先輩も教えてくれましたよ。「歴史が輝くのは、どの魂もが輝いているからだ」と。",
+                "ko": "앗, 죄송해요. 맞는 말씀이세요. 풀미네 선배도 저에게 「역사가 찬란한 것은 모든 영혼이 빛나기 때문이다」라고 가르쳐 주셨거든요",
+                "th": "อ๊ะ ขอโทษที คุณพูดถูก คุณ Fulmine ยังสอนผมไว้ด้วยว่า \"แสงประกายจากวิญญาณทุกดวงสร้างความรุ่งโรจน์ในประวัติศาสตร์\"",
+                "zh-Hans": "抱歉抱歉，您说得对。斐林前辈也教过我，“历史之所以璀璨，是因为每个灵魂都在闪光。”",
+                "zh-Hant": "抱歉抱歉，您說得對。斐林前輩也教過我，「歷史之所以璀璨，是因為每個靈魂都在閃光。」"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist ja großartig! Ich brauche gerade jemanden, der mir aus der Klemme hilft.",
+                "en": "That's awesome! I'm in need of a savior right now.",
+                "es": "¡Perfecto! Justo necesito {Male=un héroe;Female=una heroína}.",
+                "fr": "C'est génial ! J'ai vraiment besoin d'un sauveur en ce moment.",
+                "ja": "よかった、どうしたらいいかずっと悩んでいました。",
+                "ko": "천만다행이에요. 마침 어떻게 해야 할지 고민하고 있었거든요",
+                "th": "เยี่ยมไปเลย! ตอนนี้กำลังหาคนช่วยอยู่พอดี",
+                "zh-Hans": "太好了，我正愁怎么办呢。",
+                "zh-Hant": "太好了，我正愁怎麼辦呢。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich heiße Marino und bin Fotografiepraktikant in der Association. Das ist wahrscheinlich von einem Fremden etwas viel verlangt, aber könntest du mir einen Gefallen tun? Nur {Male=ein Held;Female=eine Heldin} wie du kann mir helfen!",
+                "en": "I'm Marino, an intern photographer of the Pioneer Association. Well, this may seem a bit too much to ask from a stranger, but could you lend me a hand? Only a hero like you can handle this!",
+                "es": "Me llamo Marino y soy fotógrafo en prácticas de la Asociación de Pioneros. Perdona si suena un poco directo, pero... ¿Me harías un favor? ¡Tu ayuda me vendría de perlas!",
+                "fr": "Je m'appelle Marino, photographe stagiaire de l'Association. Eh bien, je sais que c'est un peu déplacé de demander à {Male=un étranger;Female=une étrangère}, mais pourriez-vous me donner un coup de main ? {Male=Seul un héros;Female=Seule une héroïne} comme vous pouvez s'en occuper !",
+                "ja": "私は先駆条約でカメラマン見習いをしているマリーノです。突然ですが、お力をお貸しくださいませんか？私の知っている人の中では恐らく、かの有名な貴方様しかできないのです！",
+                "ko": "저는 말리노라고 해요. 선행 공약의 실습 사진작가예요. 음... 갑작스럽긴 하지만 부탁 하나 드려도 될까요? 제가 아는 사람 중에서는 유명하신 방랑자만이 해내실 수 있을 것 같아서요!",
+                "th": "ผมชื่อมาริโน เป็นช่างภาพฝึกหัดของสมาคมผู้บุกเบิก เอ่อ การขออะไรแบบนี้จากคนแปลกหน้าอาจจะดูรบกวนเกินไปสักนิด แต่คุณช่วยผมหน่อยได้มั้ย? มีเพียงฮีโร่อย่างคุณเท่านั้นที่จัดการเรื่องนี้ได้!",
+                "zh-Hans": "我叫马利诺，是先行公约的一名实习摄影师。嗯，虽然有些突兀，不过能请您帮我个忙吗。我认识的人里恐怕只有大名鼎鼎的您能做到了！",
+                "zh-Hant": "我叫馬利諾，是先行公約的一名實習攝影師。嗯，雖然有些突兀，不過能請您幫我個忙嗎。我認識的人裡恐怕只有大名鼎鼎的您能做到了！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 5,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das höre ich in letzter Zeit ziemlich oft …",
+                    "en": "I seem to have heard the line pretty often lately...",
+                    "es": "Últimamente escucho esa frase bastante a menudo...",
+                    "fr": "J'ai l'impression d'avoir souvent entendu cette phrase dernièrement...",
+                    "ja": "{Male=最近、そう言う人がますます増えてきたな……;Female=最近、そう言う人がますます増えてきたね……}",
+                    "ko": "요즘 그런 말 하는 사람이 많네요...",
+                    "th": "ดูเหมือนว่าช่วงนี้ฉันจะได้ยินประโยคนี้ค่อนข้างบ่อยเลย...",
+                    "zh-Hans": "最近这样说的人越来越多了……",
+                    "zh-Hant": "最近這樣說的人越來越多了……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 6,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was genau ist passiert?",
+                    "en": "What happened exactly?",
+                    "es": "¿Qué pasó exactamente?",
+                    "fr": "Que s'est-il passé exactement ?",
+                    "ja": "{Male=まず、内容を聞かせてくれ。;Female=まず、内容を聞かせてくれない？}",
+                    "ko": "일단 무슨 일인지부터 들어 볼게요",
+                    "th": "เกิดอะไรขึ้นกันแน่?",
+                    "zh-Hans": "先听听是什么事。",
+                    "zh-Hant": "先聽聽是什麼事。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist eine lange Geschichte. Könntest du das kleine Plüschtier neben dir etwas tätscheln?",
+                "en": "It's a bit complicated, but you can start by touching those Plushies over there to get a better sense of the situation.",
+                "es": "Es una historia muy larga. ¿Podrías echarle una mano al peluchito que está a tu lado?",
+                "fr": "C'est une longue histoire. Pourriez-vous caresser la petite peluche à côté de vous ?",
+                "ja": "説明がややこしいのですが、隣のぬいぐるみに触れていただけませんか?",
+                "ko": "설명하자면 좀 복잡한데, 혹시 옆에 있는 작은 인형을 한번 만져보시겠어요?",
+                "th": "มันค่อนข้างซับซ้อนนิดหน่อยน่ะ แต่คุณลองเริ่มจากการสัมผัสตุ๊กตาพวกนั้นดูก่อนก็ได้ มันจะช่วยให้คุณเข้าใจสถานการณ์มากขึ้น",
+                "zh-Hans": "解释起来比较复杂，能麻烦你摸一下旁边的小布偶吗？",
+                "zh-Hant": "解釋起來比較複雜，能麻煩你摸一下旁邊的小布偶嗎？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Also gibt es sogar in Rinascita Schallkassetten, hm?",
+                "en": "So, even Rinascita has Sonance Caskets, huh?",
+                "es": "Entonces, incluso Rinascita tiene Ataúdes de Sonancia, ¿eh?",
+                "fr": "Alors, même Rinascita a des Boîtes de Sonance, hein ?",
+                "ja": "うへー、リナシータにも音匣があったんだな。",
+                "ko": "어라, 리나시타에도 사운드박스가 있었네?",
+                "th": "สรุปว่าแม้แต่รินาซิตาก็มีกล่องโซแนนซ์งั้นสินะ?",
+                "zh-Hans": "诶，原来黎那汐塔也有声匣呀？",
+                "zh-Hant": "欸，原來黎那汐塔也有聲匣呀？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich frage mich, ob es hier jemanden gibt, der sie kaufen würde, wie Onkel Chenpi in Jinzhou.",
+                "en": "I wonder if someone here would buy them, like Uncle Chenpi back in Jinzhou.",
+                "es": "Me pregunto si a alguien aquí le interesarán, como al tío Chenpi en Jinzhou.",
+                "fr": "Je me demande si quelqu'un ici voudrait les acheter, comme l'oncle Chenpi à Jinzhou.",
+                "ja": "そんじゃ陳皮おじさんみたいに、音匣を回収する人がいるんじゃないか？",
+                "ko": "리나시타에도 진피 아저씨처럼 사운드박스를 수집하는 사람이 있을까?",
+                "th": "สงสัยจังว่าจะมีคนซื้อมันมั้ยนะ เหมือนคุณลุง Chenpi ในจินโจว",
+                "zh-Hans": "不知道黎那汐塔有没有像陈皮叔一样收购声匣的人呢。",
+                "zh-Hant": "不知道黎那汐塔有沒有像陳皮叔一樣收購聲匣的人呢。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht sollten wir mal nachsehen!",
+                "en": "We should keep an eye out!",
+                "es": "¡Podríamos comprobarlo!",
+                "fr": "Peut-être devrions-nous aller voir !",
+                "ja": "これから気に留めておくんだな！",
+                "ko": "한번 살펴봐야겠어!",
+                "th": "เราควรจะคอยระวังเอาไว้!",
+                "zh-Hans": "接下来注意下吧！",
+                "zh-Hant": "接下來留意一下吧！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 14,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 14,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 15,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Marino",
+        "en": "Talk to Marino",
+        "es": "Habla con Marino.",
+        "fr": "Parler à Marino",
+        "ja": "マリーノと会話する",
+        "ko": "말리노와 대화하기",
+        "th": "คุยกับมาริโน",
+        "zh-Hans": "与马利诺对话",
+        "zh-Hant": "與馬利諾對話"
+      },
+      "entities": [
+        {
+          "entityId": 159900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC341",
+          "name": "TsEntity_157_马利诺",
+          "areaId": 2304,
+          "position": {
+            "x": 861181,
+            "y": 650084,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Du kommst mir bekannt vor … Bist du {Male=DER;Female=DIE} Rover? {Male=Der große Held;Female=Die große Heldin}, {Male=der;Female=die} Jinzhou im Alleingang gerettet hat?",
+                "en": "You look familiar... Are you THE Rover? The great hero who singlehandedly saved Jinzhou?",
+                "es": "Tu cara me suena... ¿Eres tú {Male=el;Female=la} Errante? ¿{Male=El gran héroe;Female=La gran heroína} que salvó Jinzhou sin ayuda?",
+                "fr": "Vous me dites quelque chose... Êtes-vous {Male=LE;Female=LA} Nomade ? {Male=Le grand héros;Female=La grande héroïne} qui a sauvé Jinzhou à bout de bras ?",
+                "ja": "その格好は……！まさか貴方様は、たった一人で今州を救った英雄、漂泊者様なのでしょうか！",
+                "ko": "이 옷차림은... 혹시 금주를 홀로 구한 영웅, 방랑자님이신가요?",
+                "th": "หน้าตาคุณดูคุ้นๆ นะ... คุณคือ ผู้พเนจรนั่นใช่มั้ย? ฮีโร่ยอดฝีมือที่ช่วยจินโจวไว้ได้ด้วยตัวคนเดียวน่ะ?",
+                "zh-Hans": "这身打扮……您该不会就是单枪匹马拯救了今州的英雄，漂泊者大人吧！",
+                "zh-Hant": "這身打扮……您該不會就是單槍匹馬拯救了今州的英雄，漂泊者大人吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Niemand kann so etwas im Alleingang schaffen.",
+                    "en": "No one can do that singlehandedly.",
+                    "es": "Nadie podría hacer eso {Male=solo;Female=sola}.",
+                    "fr": "Personne ne peut faire cela tout seul.",
+                    "ja": "{Male=いや、そんなことは一人ではできないと思うが。;Female=えっと、そんなことは一人ではできないと思うけど。}",
+                    "ko": "그런 일을 혼자서 해낼 수 있는 사람은 없을걸요",
+                    "th": "ไม่มีใครทำแบบนั้นด้วยตัวคนเดียวได้หรอกนะ",
+                    "zh-Hans": "没人能单枪匹马做到那种事。",
+                    "zh-Hant": "沒人能單槍匹馬做到那種事。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Höchstpersönlich.",
+                    "en": "In the flesh.",
+                    "es": "{Male=El;Female=La} que viste y calza.",
+                    "fr": "En chair et en os.",
+                    "ja": "{Male=そう、俺のことだ！;Female=そう、私のことよ！}",
+                    "ko": "네, 그게 바로 저예요!",
+                    "th": "ตัวจริงเสียงจริงเลยล่ะ",
+                    "zh-Hans": "正是在下！",
+                    "zh-Hant": "正是在下！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, tut mir leid, du hast recht. Herr Fulmine hat mir beigebracht, dass es „der Glanz jeder einzelnen Seele ist, der den Ruhm der Geschichte schmiedet“.",
+                "en": "Oh, sorry, you're right. Mr. Fulmine also taught me that \"It's the glimmer of each and every soul that forges the glories in history.\"",
+                "es": "Ah, perdona, tienes razón. Señor Fulmine también me enseñó que el destello de cada alma es lo que forja las glorias de la historia.",
+                "fr": "Oh, désolé, vous avez raison. Monsieur Fulmine m'a aussi appris que « C'est la lueur de chaque âme qui forge les gloires de l'histoire. »",
+                "ja": "あっ、申し訳ございません。確かフルミーネ先輩も教えてくれましたよ。「歴史が輝くのは、どの魂もが輝いているからだ」と。",
+                "ko": "앗, 죄송해요. 맞는 말씀이세요. 풀미네 선배도 저에게 「역사가 찬란한 것은 모든 영혼이 빛나기 때문이다」라고 가르쳐 주셨거든요",
+                "th": "อ๊ะ ขอโทษที คุณพูดถูก คุณ Fulmine ยังสอนผมไว้ด้วยว่า \"แสงประกายจากวิญญาณทุกดวงสร้างความรุ่งโรจน์ในประวัติศาสตร์\"",
+                "zh-Hans": "抱歉抱歉，您说得对。斐林前辈也教过我，“历史之所以璀璨，是因为每个灵魂都在闪光。”",
+                "zh-Hant": "抱歉抱歉，您說得對。斐林前輩也教過我，「歷史之所以璀璨，是因為每個靈魂都在閃光。」"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist ja großartig! Ich brauche gerade jemanden, der mir aus der Klemme hilft.",
+                "en": "That's awesome! I'm in need of a savior right now.",
+                "es": "¡Perfecto! Justo necesito {Male=un héroe;Female=una heroína}.",
+                "fr": "C'est génial ! J'ai vraiment besoin d'un sauveur en ce moment.",
+                "ja": "よかった、どうしたらいいかずっと悩んでいました。",
+                "ko": "천만다행이에요. 마침 어떻게 해야 할지 고민하고 있었거든요",
+                "th": "เยี่ยมไปเลย! ตอนนี้กำลังหาคนช่วยอยู่พอดี",
+                "zh-Hans": "太好了，我正愁怎么办呢。",
+                "zh-Hant": "太好了，我正愁怎麼辦呢。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich heiße Marino und bin Fotografiepraktikant in der Association. Das ist wahrscheinlich von einem Fremden etwas viel verlangt, aber könntest du mir einen Gefallen tun? Nur {Male=ein Held;Female=eine Heldin} wie du kann mir helfen!",
+                "en": "I'm Marino, an intern photographer of the Pioneer Association. Well, this may seem a bit too much to ask from a stranger, but could you lend me a hand? Only a hero like you can handle this!",
+                "es": "Me llamo Marino y soy fotógrafo en prácticas de la Asociación de Pioneros. Perdona si suena un poco directo, pero... ¿Me harías un favor? ¡Tu ayuda me vendría de perlas!",
+                "fr": "Je m'appelle Marino, photographe stagiaire de l'Association. Eh bien, je sais que c'est un peu déplacé de demander à {Male=un étranger;Female=une étrangère}, mais pourriez-vous me donner un coup de main ? {Male=Seul un héros;Female=Seule une héroïne} comme vous pouvez s'en occuper !",
+                "ja": "私は先駆条約でカメラマン見習いをしているマリーノです。突然ですが、お力をお貸しくださいませんか？私の知っている人の中では恐らく、かの有名な貴方様しかできないのです！",
+                "ko": "저는 말리노라고 해요. 선행 공약의 실습 사진작가예요. 음... 갑작스럽긴 하지만 부탁 하나 드려도 될까요? 제가 아는 사람 중에서는 유명하신 방랑자만이 해내실 수 있을 것 같아서요!",
+                "th": "ผมชื่อมาริโน เป็นช่างภาพฝึกหัดของสมาคมผู้บุกเบิก เอ่อ การขออะไรแบบนี้จากคนแปลกหน้าอาจจะดูรบกวนเกินไปสักนิด แต่คุณช่วยผมหน่อยได้มั้ย? มีเพียงฮีโร่อย่างคุณเท่านั้นที่จัดการเรื่องนี้ได้!",
+                "zh-Hans": "我叫马利诺，是先行公约的一名实习摄影师。嗯，虽然有些突兀，不过能请您帮我个忙吗。我认识的人里恐怕只有大名鼎鼎的您能做到了！",
+                "zh-Hant": "我叫馬利諾，是先行公約的一名實習攝影師。嗯，雖然有些突兀，不過能請您幫我個忙嗎。我認識的人裡恐怕只有大名鼎鼎的您能做到了！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 5,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das höre ich in letzter Zeit ziemlich oft …",
+                    "en": "I seem to have heard the line pretty often lately...",
+                    "es": "Últimamente escucho esa frase bastante a menudo...",
+                    "fr": "J'ai l'impression d'avoir souvent entendu cette phrase dernièrement...",
+                    "ja": "{Male=最近、そう言う人がますます増えてきたな……;Female=最近、そう言う人がますます増えてきたね……}",
+                    "ko": "요즘 그런 말 하는 사람이 많네요...",
+                    "th": "ดูเหมือนว่าช่วงนี้ฉันจะได้ยินประโยคนี้ค่อนข้างบ่อยเลย...",
+                    "zh-Hans": "最近这样说的人越来越多了……",
+                    "zh-Hant": "最近這樣說的人越來越多了……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 6,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was genau ist passiert?",
+                    "en": "What happened exactly?",
+                    "es": "¿Qué pasó exactamente?",
+                    "fr": "Que s'est-il passé exactement ?",
+                    "ja": "{Male=まず、内容を聞かせてくれ。;Female=まず、内容を聞かせてくれない？}",
+                    "ko": "일단 무슨 일인지부터 들어 볼게요",
+                    "th": "เกิดอะไรขึ้นกันแน่?",
+                    "zh-Hans": "先听听是什么事。",
+                    "zh-Hant": "先聽聽是什麼事。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist eine lange Geschichte. Könntest du das kleine Plüschtier neben dir etwas tätscheln?",
+                "en": "It's a bit complicated, but you can start by touching those Plushies over there to get a better sense of the situation.",
+                "es": "Es una historia muy larga. ¿Podrías echarle una mano al peluchito que está a tu lado?",
+                "fr": "C'est une longue histoire. Pourriez-vous caresser la petite peluche à côté de vous ?",
+                "ja": "説明がややこしいのですが、隣のぬいぐるみに触れていただけませんか?",
+                "ko": "설명하자면 좀 복잡한데, 혹시 옆에 있는 작은 인형을 한번 만져보시겠어요?",
+                "th": "มันค่อนข้างซับซ้อนนิดหน่อยน่ะ แต่คุณลองเริ่มจากการสัมผัสตุ๊กตาพวกนั้นดูก่อนก็ได้ มันจะช่วยให้คุณเข้าใจสถานการณ์มากขึ้น",
+                "zh-Hans": "解释起来比较复杂，能麻烦你摸一下旁边的小布偶吗？",
+                "zh-Hant": "解釋起來比較複雜，能麻煩你摸一下旁邊的小布偶嗎？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parentId": 15,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Öffne die Abgabe-Oberfläche und sprich mit Marino",
+        "en": "Talk to Marino after opening the interface",
+        "es": "Habla con Marino después de abrir la interfaz.",
+        "fr": "Ouvrir l'interface et parler à Marino",
+        "ja": "画面を開いた後マリーノと会話する",
+        "ko": "화면 오픈 후 말리노와 대화하기",
+        "th": "คุยกับมาริโนหลังจากเปิดอินเทอร์เฟซ",
+        "zh-Hans": "打开界面后与马利诺对话",
+        "zh-Hant": "打開介面後與馬利諾對話"
+      },
+      "entities": [
+        {
+          "entityId": 159900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC341",
+          "name": "TsEntity_157_马利诺",
+          "areaId": 2304,
+          "position": {
+            "x": 861181,
+            "y": 650084,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Plüschtiere brauchen also Schallkassetten?",
+                "en": "These Plushies need Sonance Caskets?",
+                "es": "¿Entonces los peluches necesitan Ataúdes de Sonancia?",
+                "fr": "Donc les peluches ont besoin de Boîtes de Sonance ?",
+                "ja": "{Male=このぬいぐるみ達は、音匣がほしいのか？;Female=このぬいぐるみ達は、音匣がほしいの？}",
+                "ko": "이 작은 인형들이 다 사운드박스를 갖고 싶어 하는 건가요?",
+                "th": "ตุ๊กตาพวกนี้ต้องใช้กล่องโซแนนซ์งั้นเหรอ?",
+                "zh-Hans": "这些小布偶是想要声匣？",
+                "zh-Hant": "這些小布偶是想要聲匣？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja. Mithilfe der Schallkassetten kann das Morph-Gemälde die besitzerlosen Echos hier mit seiner Sonoro-Sphäre stabilisieren, sodass sie sich nicht auflösen oder aggressiv werden.",
+                "en": "Yes. By using the Sonance Caskets, the morph painting can stabilize the masterless Echoes here with its Sonoro Sphere, keeping them from fading or becoming hostile.",
+                "es": "Sí. Al usar los Ataúdes de Sonancia, la pintura Eco puede estabilizar estos Ecos sin dueño con su Esfera Sonora, de forma que no se desvanezcan ni se vuelvan agresivos.",
+                "fr": "Oui. En utilisant les Boîtes de Sonance, la peinture transmutatrice peut stabiliser les Échos sans maître avec sa Sonora, afin qu'ils ne disparaissent pas ou ne deviennent pas agressifs.",
+                "ja": "その通りです。この場所に残された音骸絵は、音匣でソノラを展開することで、無主の音骸を安定させ、それらが消えたり、攻撃的な異常行動したりしないようにすることができます。",
+                "ko": "네, 여기에 남아있는 에코 그림이 사운드박스를 통해 음의 영역을 전개하면 이 주인 없는 에코가 흩어지거나 공격적인 이상 행동을 하지 않고 안정적으로 유지되도록 할 수 있어요",
+                "th": "ใช่ เมื่อใช้กล่องโซแนนซ์ ภาพวาดแปรสภาพก็จะสามารถทำให้เอคโค่ที่ไร้นายอยู่ในมิติเสียงสะท้อนได้อย่างเสถียร โดยไม่หายไปหรือก้าวร้าว",
+                "zh-Hans": "是的，留存在此地的声骸画可以通过声匣展开声之领域让这些无主的声骸保持稳定，不会消散或者做出攻击性的异常行为。",
+                "zh-Hant": "是的，留存在此地的聲骸畫可以透過聲匣展開聲之領域讓這些無主的聲骸保持穩定，不會消散或者做出攻擊性的異常行為。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Herr Fulmine und ich haben schon so viele Kassetten gesammelt, wie wir konnten, aber es reicht immer noch nicht aus, um das Gemälde vollständig wiederherzustellen. Deshalb brauchen wir deine Hilfe.",
+                "en": "Mr. Fulmine and I have been grabbing as many Caskets as we can, but it's still not enough to power the painting fully. That's why we need your help.",
+                "es": "El Sr. Fulmine y yo hemos estado recogiendo tantos Ataúdes como hemos podido, pero no son suficientes para potenciar completamente la pintura. Por eso necesitamos tu ayuda.",
+                "fr": "Monsieur Fulmine et moi avons pris autant de Boîtes que possible, mais ce n'est toujours pas suffisant pour alimenter complètement la peinture. C'est pourquoi nous avons besoin de votre aide.",
+                "ja": "ここしばらく、フルミーネ先輩と私は見つけうる限りの音匣を集めてきましたが、音骸絵を復元するにはまだもう少し音匣が必要なため、貴方様にお願いしたいと思っています。",
+                "ko": "저와 풀미네 선배가 한 동안 찾을 수 있는 사운드박스를 모두 수집해 왔어요. 하지만, 에코 그림을 완전히 복원하기까지는 아직 갈 길이 멀어서 도움을 요청드리게 되었어요",
+                "th": "คุณ Fulmine กับผมคอยรวบรวมกล่องให้ได้มากที่สุดมาสักพักแล้ว แต่ก็ยังมีไม่พอที่จะส่งพลังกับให้ภาพวาดได้เต็มที่ ดังนั้นเราเลยอยากขอให้คุณช่วยหน่อยน่ะ",
+                "zh-Hans": "过去一段时间，我和斐林前辈已经把我们能找到的声匣都收集了过来，但距离让声骸画完全恢复还有一定距离，所以才想要请您帮忙。",
+                "zh-Hant": "在過去一段時間裡，我和斐林前輩已經把我們能找到的聲匣都收集了過來，但距離讓聲骸畫完全恢復還有一定距離，所以才想要請您幫忙。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 4,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist ganz schön viel Arbeit.",
+                    "en": "That's a lot of work to do.",
+                    "es": "Eso es mucho trabajo.",
+                    "fr": "C'est beaucoup de travail.",
+                    "ja": "{Male=音匣の収集は大変なんだが。;Female=音匣の収集は大変なんだけど。}",
+                    "ko": "사운드박스를 모으는 건 꽤나 힘든 일이죠",
+                    "th": "มีอะไรให้ทำเยอะเลย",
+                    "zh-Hans": "收集声匣很费劲的。",
+                    "zh-Hant": "收集聲匣很費勁的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 5,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was springt für mich dabei raus?",
+                    "en": "What's in it for me?",
+                    "es": "¿Qué gano yo con esto?",
+                    "fr": "Qu'est-ce que j'y gagne ?",
+                    "ja": "{Male=そもそも、俺にどんなメリットがあるんだ？;Female=そもそも、私にどんなメリットがあるの？}",
+                    "ko": "보상은 없는 건가요?",
+                    "th": "ฉันทำแล้วได้อะไรล่ะ?",
+                    "zh-Hans": "我就没什么好处吗？",
+                    "zh-Hant": "我有什麼好處嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wir werden dafür sorgen, dass es sich für dich lohnt.",
+                "en": "We will definitely make it worth your while.",
+                "es": "Te prometo que merecerá la pena.",
+                "fr": "Vos efforts seront pleinement récompensés.",
+                "ja": "もちろん、タダ働きはさせません。",
+                "ko": "물론 공짜로 해달라는 건 아니에요",
+                "th": "เราจะตอบแทนให้คุ้มค่ากับที่คุณสละเวลาแน่นอน",
+                "zh-Hans": "自然不会让您打白工的。",
+                "zh-Hant": "自然不會讓您做白工的。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedes Mal, wenn das Gemälde seine Sonoro-Sphäre öffnet, nehmen sich die Plüschtiere einige Vorräte heraus, um das Lager zu versorgen.",
+                "en": "Every time the painting opens its Sonoro Sphere, the Plushies take some resources from it to keep the village going.",
+                "es": "Cada vez que el cuadro abre su Esfera Sonora, los peluches toman algunos de sus recursos para mantener la villa en funcionamiento.",
+                "fr": "Chaque fois que la peinture ouvre sa Sonora, les peluches y prennent quelques ressources pour maintenir le camp en activité.",
+                "ja": "音骸絵のソノラが展開されるたびに、ぬいぐるみ達は拠点を維持するために、中から物資を持ち出します。",
+                "ko": "에코 그림의 영역이 전개될 때마다 인형들이 그곳에서 캠프 유지를 위한 물자를 채집해 오곤 해요",
+                "th": "ทุกครั้งที่ภาพวาดเปิดมิติเสียงสะท้อน ตุ๊กตาจะไปเอาทรัพยากรจากมิติเสียงสะท้อนนั่นไปใช้เพื่อให้หมู่บ้านยังใช้งานได้",
+                "zh-Hans": "每次声骸画的领域开启时，布偶们都会从中取出一些物资用以维持营地。",
+                "zh-Hant": "每次聲骸畫的領域開啟時，布偶們都會從中取出一些物資用以維持營地。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In der Sonoro-Sphäre befinden sich sogar noch eine Menge Schätze. Die Plüschtiere würden sicher gern einige davon herausholen, um dich damit zu belohnen!",
+                "en": "In fact, there's still a ton of treasure left in the Sonoro Sphere. I'm sure the Plushies would be happy to haul out a few pieces as a reward for you!",
+                "es": "De hecho, aún quedan un montón de tesoros en la Esfera Sonora. ¡Seguro que a los peluches les encantará entregarte algunos a modo de recompensa!",
+                "fr": "En fait, il reste encore une tonne de trésors dans la Sonora. Les peluches seraient sûrement heureuses d'en faire sortir certaines comme récompenses !",
+                "ja": "物資だけでなく、中にも宝物がたくさんあります。ぬいぐるみ達はきっと喜んで、その一部を報酬として貴方様に差し上げますよ！",
+                "ko": "실은 에코 그림 속에는 더 많은 보물들이 있거든요. 인형들이 보답으로 보물 일부를 가져다 드리고 싶어 할 거예요!",
+                "th": "อันที่จริงแล้ว ยังมีสมบัติเหลืออยู่ในมิติเสียงสะท้อนเยอะเลย ผมมั่นใจว่าตุ๊กตาพวกนั้นคงยินดีช่วยขนของรางวัลมาให้คุณได้บ้างแน่นอน!",
+                "zh-Hans": "但其实声骸画中还有大量的财宝，我相信布偶们会乐意帮你取出来一些作为报酬的！",
+                "zh-Hant": "但其實聲骸畫中還有大量的財寶，我相信布偶們會樂意幫你取出來一些作為報酬的！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut. Ich habe sowieso keinen Nutzen für Schallkassetten.",
+                "en": "Fair enough. I have no use for Sonance Caskets anyway.",
+                "es": "Me parece bien. De todos modos, yo no uso los Ataúdes de Sonancia.",
+                "fr": "Ça se tient. De toute façon, je n'ai pas besoin de Boîtes de Sonance.",
+                "ja": "{Male=わかった。どうせ俺のところに置いていても何の役にも立たないしな。;Female=わかった。どうせ私のところに置いていても何の役にも立たないしね。}",
+                "ko": "좋아요, 어차피 사운드박스는 저한테 필요 없으니까요",
+                "th": "ก็ได้นะ ยังไงฉันก็ไม่ได้ใช้กล่องโซแนนซ์อยู่แล้ว",
+                "zh-Hans": "行，反正声匣留我这也没用。",
+                "zh-Hant": "行，反正聲匣我留著也沒用。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielen Dank!",
+                "en": "Thank you so much!",
+                "es": "¡Muchas gracias!",
+                "fr": "Merci beaucoup !",
+                "ja": "ご協力いただき、ありがとうございます。貴方様には、本当に感謝してもしきれません。",
+                "ko": "도와주시다니 정말 감사합니다",
+                "th": "ขอบคุณมากเลย!",
+                "zh-Hans": "您愿意帮忙我真的很感激。",
+                "zh-Hant": "您願意幫忙我真的很感激。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir zählen auf dich, mehr Schallkassetten zu sammeln, um das Gemälde wiederherzustellen. Ich werde auch auf Ungewöhnlichkeiten bei den Echos achten und dich sofort benachrichtigen, wenn etwas passiert.",
+                "en": "We're counting on you to collect more Sonance Caskets to power the painting. I'll also keep an eye out for any Echo weirdness and let you know if something comes up.",
+                "es": "Contamos contigo para recoger más Ataúdes de Sonancia con los que potenciar la pintura. No les quitaré la vista de encima a estos Ecos, por si acaso, y te avisaré si veo algo raro.",
+                "fr": "Nous comptons sur vous pour récupérer plus de Boîtes de Sonance afin d'alimenter la peinture. Je vais également garder un œil sur tout comportement étrange des Échos et vous tenir informé s'il se passe quelque chose.",
+                "ja": "では、より多くの音匣を集めて音骸絵を復元するようお願いします！もちろん、音骸異常事件があれば、すぐお知らせしますからね！",
+                "ko": "그럼 앞으로 더 많은 사운드박스를 수집해서 에코 그림을 복원해 주세요. 저도 계속 지켜보다가 에코 이상 현상이 발생하면 바로 알려드릴게요!",
+                "th": "เราขอฝากให้คุณช่วยเก็บกล่องโซแนนซ์มาให้เพิ่มเพื่อเป็นแหล่งพลังงานให้รูปวาดด้วยนะ แล้วผมจะคอยจับตาดูเหตุการณ์ประหลาดเกี่ยวกับเอคโค่ และบอกให้คุณรู้ถ้ามีเรื่องอะไร",
+                "zh-Hans": "那接下来就拜托您收集更多声匣来恢复声骸画，我也会多多关注，如果出现声骸异常事件就立刻通知您！",
+                "zh-Hant": "那接下來就拜託您收集更多聲匣來恢復聲骸畫，我也會多多關注，如果出現聲骸異常事件就立刻通知您！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "parentId": 15,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Plüschtier",
+        "en": "Talk to the Plushie",
+        "es": "Habla con el peluche.",
+        "fr": "Parler au peluche",
+        "ja": "ぬいぐるみと会話する",
+        "ko": "인형과 대화하기",
+        "th": "คุยกับตุ๊กตา",
+        "zh-Hans": "与布偶对话",
+        "zh-Hant": "與布偶對話"
+      },
+      "entities": [
+        {
+          "entityId": 314900019,
+          "mapId": 8,
+          "blueprintType": "TsEntity_声骸_寂寞小姐布偶_400413",
+          "name": "TsEntity_声骸_寂寞小姐布偶_400415",
+          "areaId": 2304,
+          "position": {
+            "x": 861559,
+            "y": 650547,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -68
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 17,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Öffne die Abgabe-Oberfläche und sprich mit Marino",
+        "en": "Talk to Marino after opening the interface",
+        "es": "Habla con Marino después de abrir la interfaz.",
+        "fr": "Ouvrir l'interface et parler à Marino",
+        "ja": "画面を開いた後マリーノと会話する",
+        "ko": "화면 오픈 후 말리노와 대화하기",
+        "th": "คุยกับมาริโนหลังจากเปิดอินเทอร์เฟซ",
+        "zh-Hans": "打开界面后与马利诺对话",
+        "zh-Hant": "打開介面後與馬利諾對話"
+      },
+      "entities": [
+        {
+          "entityId": 159900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC341",
+          "name": "TsEntity_157_马利诺",
+          "areaId": 2304,
+          "position": {
+            "x": 861181,
+            "y": 650084,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 51
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_引导_声匣布偶村",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Plüschtiere brauchen also Schallkassetten?",
+                "en": "These Plushies need Sonance Caskets?",
+                "es": "¿Entonces los peluches necesitan Ataúdes de Sonancia?",
+                "fr": "Donc les peluches ont besoin de Boîtes de Sonance ?",
+                "ja": "{Male=このぬいぐるみ達は、音匣がほしいのか？;Female=このぬいぐるみ達は、音匣がほしいの？}",
+                "ko": "이 작은 인형들이 다 사운드박스를 갖고 싶어 하는 건가요?",
+                "th": "ตุ๊กตาพวกนี้ต้องใช้กล่องโซแนนซ์งั้นเหรอ?",
+                "zh-Hans": "这些小布偶是想要声匣？",
+                "zh-Hant": "這些小布偶是想要聲匣？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja. Mithilfe der Schallkassetten kann das Morph-Gemälde die besitzerlosen Echos hier mit seiner Sonoro-Sphäre stabilisieren, sodass sie sich nicht auflösen oder aggressiv werden.",
+                "en": "Yes. By using the Sonance Caskets, the morph painting can stabilize the masterless Echoes here with its Sonoro Sphere, keeping them from fading or becoming hostile.",
+                "es": "Sí. Al usar los Ataúdes de Sonancia, la pintura Eco puede estabilizar estos Ecos sin dueño con su Esfera Sonora, de forma que no se desvanezcan ni se vuelvan agresivos.",
+                "fr": "Oui. En utilisant les Boîtes de Sonance, la peinture transmutatrice peut stabiliser les Échos sans maître avec sa Sonora, afin qu'ils ne disparaissent pas ou ne deviennent pas agressifs.",
+                "ja": "その通りです。この場所に残された音骸絵は、音匣でソノラを展開することで、無主の音骸を安定させ、それらが消えたり、攻撃的な異常行動したりしないようにすることができます。",
+                "ko": "네, 여기에 남아있는 에코 그림이 사운드박스를 통해 음의 영역을 전개하면 이 주인 없는 에코가 흩어지거나 공격적인 이상 행동을 하지 않고 안정적으로 유지되도록 할 수 있어요",
+                "th": "ใช่ เมื่อใช้กล่องโซแนนซ์ ภาพวาดแปรสภาพก็จะสามารถทำให้เอคโค่ที่ไร้นายอยู่ในมิติเสียงสะท้อนได้อย่างเสถียร โดยไม่หายไปหรือก้าวร้าว",
+                "zh-Hans": "是的，留存在此地的声骸画可以通过声匣展开声之领域让这些无主的声骸保持稳定，不会消散或者做出攻击性的异常行为。",
+                "zh-Hant": "是的，留存在此地的聲骸畫可以透過聲匣展開聲之領域讓這些無主的聲骸保持穩定，不會消散或者做出攻擊性的異常行為。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Herr Fulmine und ich haben schon so viele Kassetten gesammelt, wie wir konnten, aber es reicht immer noch nicht aus, um das Gemälde vollständig wiederherzustellen. Deshalb brauchen wir deine Hilfe.",
+                "en": "Mr. Fulmine and I have been grabbing as many Caskets as we can, but it's still not enough to power the painting fully. That's why we need your help.",
+                "es": "El Sr. Fulmine y yo hemos estado recogiendo tantos Ataúdes como hemos podido, pero no son suficientes para potenciar completamente la pintura. Por eso necesitamos tu ayuda.",
+                "fr": "Monsieur Fulmine et moi avons pris autant de Boîtes que possible, mais ce n'est toujours pas suffisant pour alimenter complètement la peinture. C'est pourquoi nous avons besoin de votre aide.",
+                "ja": "ここしばらく、フルミーネ先輩と私は見つけうる限りの音匣を集めてきましたが、音骸絵を復元するにはまだもう少し音匣が必要なため、貴方様にお願いしたいと思っています。",
+                "ko": "저와 풀미네 선배가 한 동안 찾을 수 있는 사운드박스를 모두 수집해 왔어요. 하지만, 에코 그림을 완전히 복원하기까지는 아직 갈 길이 멀어서 도움을 요청드리게 되었어요",
+                "th": "คุณ Fulmine กับผมคอยรวบรวมกล่องให้ได้มากที่สุดมาสักพักแล้ว แต่ก็ยังมีไม่พอที่จะส่งพลังกับให้ภาพวาดได้เต็มที่ ดังนั้นเราเลยอยากขอให้คุณช่วยหน่อยน่ะ",
+                "zh-Hans": "过去一段时间，我和斐林前辈已经把我们能找到的声匣都收集了过来，但距离让声骸画完全恢复还有一定距离，所以才想要请您帮忙。",
+                "zh-Hant": "在過去一段時間裡，我和斐林前輩已經把我們能找到的聲匣都收集了過來，但距離讓聲骸畫完全恢復還有一定距離，所以才想要請您幫忙。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 4,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist ganz schön viel Arbeit.",
+                    "en": "That's a lot of work to do.",
+                    "es": "Eso es mucho trabajo.",
+                    "fr": "C'est beaucoup de travail.",
+                    "ja": "{Male=音匣の収集は大変なんだが。;Female=音匣の収集は大変なんだけど。}",
+                    "ko": "사운드박스를 모으는 건 꽤나 힘든 일이죠",
+                    "th": "มีอะไรให้ทำเยอะเลย",
+                    "zh-Hans": "收集声匣很费劲的。",
+                    "zh-Hant": "收集聲匣很費勁的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 5,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was springt für mich dabei raus?",
+                    "en": "What's in it for me?",
+                    "es": "¿Qué gano yo con esto?",
+                    "fr": "Qu'est-ce que j'y gagne ?",
+                    "ja": "{Male=そもそも、俺にどんなメリットがあるんだ？;Female=そもそも、私にどんなメリットがあるの？}",
+                    "ko": "보상은 없는 건가요?",
+                    "th": "ฉันทำแล้วได้อะไรล่ะ?",
+                    "zh-Hans": "我就没什么好处吗？",
+                    "zh-Hant": "我有什麼好處嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wir werden dafür sorgen, dass es sich für dich lohnt.",
+                "en": "We will definitely make it worth your while.",
+                "es": "Te prometo que merecerá la pena.",
+                "fr": "Vos efforts seront pleinement récompensés.",
+                "ja": "もちろん、タダ働きはさせません。",
+                "ko": "물론 공짜로 해달라는 건 아니에요",
+                "th": "เราจะตอบแทนให้คุ้มค่ากับที่คุณสละเวลาแน่นอน",
+                "zh-Hans": "自然不会让您打白工的。",
+                "zh-Hant": "自然不會讓您做白工的。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedes Mal, wenn das Gemälde seine Sonoro-Sphäre öffnet, nehmen sich die Plüschtiere einige Vorräte heraus, um das Lager zu versorgen.",
+                "en": "Every time the painting opens its Sonoro Sphere, the Plushies take some resources from it to keep the village going.",
+                "es": "Cada vez que el cuadro abre su Esfera Sonora, los peluches toman algunos de sus recursos para mantener la villa en funcionamiento.",
+                "fr": "Chaque fois que la peinture ouvre sa Sonora, les peluches y prennent quelques ressources pour maintenir le camp en activité.",
+                "ja": "音骸絵のソノラが展開されるたびに、ぬいぐるみ達は拠点を維持するために、中から物資を持ち出します。",
+                "ko": "에코 그림의 영역이 전개될 때마다 인형들이 그곳에서 캠프 유지를 위한 물자를 채집해 오곤 해요",
+                "th": "ทุกครั้งที่ภาพวาดเปิดมิติเสียงสะท้อน ตุ๊กตาจะไปเอาทรัพยากรจากมิติเสียงสะท้อนนั่นไปใช้เพื่อให้หมู่บ้านยังใช้งานได้",
+                "zh-Hans": "每次声骸画的领域开启时，布偶们都会从中取出一些物资用以维持营地。",
+                "zh-Hant": "每次聲骸畫的領域開啟時，布偶們都會從中取出一些物資用以維持營地。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In der Sonoro-Sphäre befinden sich sogar noch eine Menge Schätze. Die Plüschtiere würden sicher gern einige davon herausholen, um dich damit zu belohnen!",
+                "en": "In fact, there's still a ton of treasure left in the Sonoro Sphere. I'm sure the Plushies would be happy to haul out a few pieces as a reward for you!",
+                "es": "De hecho, aún quedan un montón de tesoros en la Esfera Sonora. ¡Seguro que a los peluches les encantará entregarte algunos a modo de recompensa!",
+                "fr": "En fait, il reste encore une tonne de trésors dans la Sonora. Les peluches seraient sûrement heureuses d'en faire sortir certaines comme récompenses !",
+                "ja": "物資だけでなく、中にも宝物がたくさんあります。ぬいぐるみ達はきっと喜んで、その一部を報酬として貴方様に差し上げますよ！",
+                "ko": "실은 에코 그림 속에는 더 많은 보물들이 있거든요. 인형들이 보답으로 보물 일부를 가져다 드리고 싶어 할 거예요!",
+                "th": "อันที่จริงแล้ว ยังมีสมบัติเหลืออยู่ในมิติเสียงสะท้อนเยอะเลย ผมมั่นใจว่าตุ๊กตาพวกนั้นคงยินดีช่วยขนของรางวัลมาให้คุณได้บ้างแน่นอน!",
+                "zh-Hans": "但其实声骸画中还有大量的财宝，我相信布偶们会乐意帮你取出来一些作为报酬的！",
+                "zh-Hant": "但其實聲骸畫中還有大量的財寶，我相信布偶們會樂意幫你取出來一些作為報酬的！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na gut. Ich habe sowieso keinen Nutzen für Schallkassetten.",
+                "en": "Fair enough. I have no use for Sonance Caskets anyway.",
+                "es": "Me parece bien. De todos modos, yo no uso los Ataúdes de Sonancia.",
+                "fr": "Ça se tient. De toute façon, je n'ai pas besoin de Boîtes de Sonance.",
+                "ja": "{Male=わかった。どうせ俺のところに置いていても何の役にも立たないしな。;Female=わかった。どうせ私のところに置いていても何の役にも立たないしね。}",
+                "ko": "좋아요, 어차피 사운드박스는 저한테 필요 없으니까요",
+                "th": "ก็ได้นะ ยังไงฉันก็ไม่ได้ใช้กล่องโซแนนซ์อยู่แล้ว",
+                "zh-Hans": "行，反正声匣留我这也没用。",
+                "zh-Hant": "行，反正聲匣我留著也沒用。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielen Dank!",
+                "en": "Thank you so much!",
+                "es": "¡Muchas gracias!",
+                "fr": "Merci beaucoup !",
+                "ja": "ご協力いただき、ありがとうございます。貴方様には、本当に感謝してもしきれません。",
+                "ko": "도와주시다니 정말 감사합니다",
+                "th": "ขอบคุณมากเลย!",
+                "zh-Hans": "您愿意帮忙我真的很感激。",
+                "zh-Hant": "您願意幫忙我真的很感激。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir zählen auf dich, mehr Schallkassetten zu sammeln, um das Gemälde wiederherzustellen. Ich werde auch auf Ungewöhnlichkeiten bei den Echos achten und dich sofort benachrichtigen, wenn etwas passiert.",
+                "en": "We're counting on you to collect more Sonance Caskets to power the painting. I'll also keep an eye out for any Echo weirdness and let you know if something comes up.",
+                "es": "Contamos contigo para recoger más Ataúdes de Sonancia con los que potenciar la pintura. No les quitaré la vista de encima a estos Ecos, por si acaso, y te avisaré si veo algo raro.",
+                "fr": "Nous comptons sur vous pour récupérer plus de Boîtes de Sonance afin d'alimenter la peinture. Je vais également garder un œil sur tout comportement étrange des Échos et vous tenir informé s'il se passe quelque chose.",
+                "ja": "では、より多くの音匣を集めて音骸絵を復元するようお願いします！もちろん、音骸異常事件があれば、すぐお知らせしますからね！",
+                "ko": "그럼 앞으로 더 많은 사운드박스를 수집해서 에코 그림을 복원해 주세요. 저도 계속 지켜보다가 에코 이상 현상이 발생하면 바로 알려드릴게요!",
+                "th": "เราขอฝากให้คุณช่วยเก็บกล่องโซแนนซ์มาให้เพิ่มเพื่อเป็นแหล่งพลังงานให้รูปวาดด้วยนะ แล้วผมจะคอยจับตาดูเหตุการณ์ประหลาดเกี่ยวกับเอคโค่ และบอกให้คุณรู้ถ้ามีเรื่องอะไร",
+                "zh-Hans": "那接下来就拜托您收集更多声匣来恢复声骸画，我也会多多关注，如果出现声骸异常事件就立刻通知您！",
+                "zh-Hant": "那接下來就拜託您收集更多聲匣來恢復聲骸畫，我也會多多關注，如果出現聲骸異常事件就立刻通知您！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900344,
+                "name": {
+                  "zh-Hans": "马利诺"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "parentId": 17,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Interagiere mit dem Plüschtier",
+        "en": "Interact with the Plushie",
+        "es": "Interactúa con el peluche.",
+        "fr": "Interagir avec le peluche",
+        "ja": "ぬいぐるみにインタラクトする",
+        "ko": "인형과 상호작용하기",
+        "th": "โต้ตอบกับตุ๊กตา",
+        "zh-Hans": "与布偶交互",
+        "zh-Hant": "與布偶互動"
+      },
+      "entities": [
+        {
+          "entityId": 314900019,
+          "mapId": 8,
+          "blueprintType": "TsEntity_声骸_寂寞小姐布偶_400413",
+          "name": "TsEntity_声骸_寂寞小姐布偶_400415",
+          "areaId": 2304,
+          "position": {
+            "x": 861559,
+            "y": 650547,
+            "z": -2136
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -68
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

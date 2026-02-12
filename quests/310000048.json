@@ -1,0 +1,741 @@
+{
+  "id": 310000048,
+  "key": "初试先行者",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Erste Prüfung",
+    "en": "First Trial",
+    "es": "Primer ensayo",
+    "fr": "Explorons le monde !",
+    "ja": "先駆者の道へ駆け出そう",
+    "ko": "초보 선행자",
+    "th": "ทดสอบครั้งแรก",
+    "zh-Hans": "初试先行者",
+    "zh-Hant": "初試先行者"
+  },
+  "desc": {
+    "de": "Du erhältst eine Broschüre der Pioneer Association in deiner Post. Gehe zur Jinzhou-Filiale und frage Maqi, was passiert ist.",
+    "en": "You receive a Pioneer Association Leaflet in your mailbox. Go to Jinzhou Branch and ask Maqi what has happened.",
+    "es": "Recibes un folleto de la Asociación de Pioneros en tu buzón. Ve a la sucursal de Jinzhou y pregunta a Maqi qué ha sucedido.",
+    "fr": "Vous avez reçu une brochure énigmatique de l'Association Pionnière. Rendez-vous à leur antenne de Jinzhou et parlez à Maqi pour en savoir plus.",
+    "ja": "先駆条約の宣伝チラシが届いた。先駆条約の今州支部に向い、馬琪に話を聞いてみよう。",
+    "ko": "우편물에 갑자기 선행 공약의 홍보 전단지가 나타났습니다. 선행 공약 금주 지부로 이동해 마치에게 상황을 알아보세요",
+    "th": "คุณได้รับแผ่นพับสมาคมผู้บุกเบิกในกล่องจดหมาย ไปที่สาขาจินโจว สอบถามหม่าฉีเกี่ยวกับเรื่องที่เกิดขึ้น",
+    "zh-Hans": "邮箱里莫名出现了先行公约的宣传单，请去往先行公约今州分部，找马琪了解一下情况吧。",
+    "zh-Hant": "郵箱裡莫名出現了先行公約的宣傳單，請去往先行公約今州分部，找馬琪了解一下情况吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lies die Mail von der Pioneer Association",
+        "en": "Read the mail from Pioneer Association",
+        "es": "Lee el correo de la Asociación de Pioneros",
+        "fr": "Consulter le message de l'Association Pionnière",
+        "ja": "先駆条約のメールを確認する",
+        "ko": "선행공약 우편물 확인하기",
+        "th": "อ่านจดหมายจากสมาคมผู้บุกเบิก",
+        "zh-Hans": "阅读先行公约的邮件",
+        "zh-Hant": "閱讀先行公約的郵件"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Maqi, was passiert ist",
+        "en": "Ask Maqi about what has happened",
+        "es": "Pregunta a Maqi sobre lo que ha sucedido",
+        "fr": "Parlez à Maqi pour obtenir des informations",
+        "ja": "馬琪に話を聞く",
+        "ko": "마치를 찾아 상황 파악하기",
+        "th": "สอบถามหม่าฉีเกี่ยวกับเรื่องที่เกิดขึ้น",
+        "zh-Hans": "找马琪对话了解情况",
+        "zh-Hant": "找馬琪對話了解情况"
+      },
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_中曲台地支线",
+          "flowIndex": 44,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo! Willkommen in der Jinzhou Filiale der Pioneer Association!",
+                "en": "Hello! Welcome to the Jinzhou branch of the Pioneer Association!",
+                "es": "¡Hola! ¡{Male=Bienvenido;Female=Bienvenida} a la Asociación de Pioneros de Jinzhou!",
+                "fr": "Bonjour ! Bienvenue à l'antenne de Jinzhou de l'association des pionniers.",
+                "ja": "どうも！先駆条約今州支部へようこそ！",
+                "ko": "안녕하세요! 선행 공약 금주 지부에 오신 것을 환영합니다",
+                "th": "สวัสดี! ยินดีต้อนรับสู่สมาคมผู้บุกเบิกสาขาจินโจว!",
+                "zh-Hans": "你好！欢迎来到先行公约今州支部。",
+                "zh-Hant": "你好！歡迎來到先行公約今州支部。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du musst Rover sein, oder?",
+                "en": "I guess you must be Rover?",
+                "es": "Supongo que debes ser Errante, ¿verdad?",
+                "fr": "Vous êtes Nomade, n'est-ce pas ?",
+                "ja": "あなたは、漂泊者さん、ですよね。",
+                "ko": "방랑자 맞죠?",
+                "th": "ฉันเดาว่าคุณคงจะเป็นผู้พเนจรสินะ",
+                "zh-Hans": "你是漂泊者，对吗？",
+                "zh-Hant": "你是漂泊者，對嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie wusstest du das?",
+                    "en": "How did you know?",
+                    "es": "¿Cómo lo supiste?",
+                    "fr": "Comment connaissez-vous mon nom ?",
+                    "ja": "知ってるの？",
+                    "ko": "어떻게 아셨어요?",
+                    "th": "เธอรู้ได้ยังไง",
+                    "zh-Hans": "你怎么知道？",
+                    "zh-Hant": "你怎麼知道？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ja, das bin ich.",
+                    "en": "Yes, I am.",
+                    "es": "Sí, lo soy.",
+                    "fr": "Oui.",
+                    "ja": "はい。",
+                    "ko": "맞아요",
+                    "th": "ใช่ ฉันเอง",
+                    "zh-Hans": "是我。",
+                    "zh-Hant": "是我。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Unsere Zentrale hat dir eine Einladung geschickt. Bitte überlege, der Pioneer Association beizutreten!",
+                "en": "Our headquarters has extended an invitation to you. Please consider joining the Pioneer Association!",
+                "es": "Nuestra sede te ha extendido una invitación. ¡Por favor, considera unirte a la Asociación de Pioneros!",
+                "fr": "L'Association pionnière vous a invité. Nous espérons que vous pourrez vous joindre à nous.",
+                "ja": "先駆条約本部が、あなたの加入を希望しています。ぜひぜひ先駆条約にご参加ください。",
+                "ko": "선행 공약 본부에서는 방랑자의 합류를 바라며 초대장을 보냈어요",
+                "th": "สำนักงานใหญ่ของเราได้ส่งคำเชิญมาถึงคุณ โปรดเข้าร่วมสมาคมผู้บุกเบิกด้วยเถอะ!",
+                "zh-Hans": "先行公约总部发出了对你的邀请，希望你可以加入我们。",
+                "zh-Hant": "先行公約總部發出了對你的邀請，希望你可以加入我們。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Den Planeten mit deinen eigenen Füßen zu vermessen und Zivilisationen mit deinen eigenen Augen zu bezeugen.",
+                "en": "Measure the planet with your own feet, and witness civilizations through your own eyes.",
+                "es": "Mide el planeta con tus propios pies y presencia civilizaciones con tus propios ojos.",
+                "fr": "Mesurez ce monde de vos propres pieds et soyez le témoin de civilisations.",
+                "ja": "「世界をその足で測定せよ！文明をその目で記録せよ！」ですね。",
+                "ko": "당신의 발자국으로 세계를 탐험하고, 두 눈으로 문명을 목격하세요!",
+                "th": "จงวัดขนาดของดาวเคราะห์ด้วยเท้าของคุณเอง และเป็นประจักษ์พยานแห่งอารยธรรมด้วยตาของคุณเองเลยสิ",
+                "zh-Hans": "以脚步丈量世界，用双眼见证文明。",
+                "zh-Hant": "以腳步丈量世界，用雙眼見證文明。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass uns gemeinsam die Welt erkunden!",
+                "en": "Let's go explore the world together!",
+                "es": "¡Vamos a explorar el mundo juntos!",
+                "fr": "Sois mon partenaire, et nous explorerons tout ensemble !",
+                "ja": "さあ！この馬琪と一緒に世界を探索しましょう！",
+                "ko": "마치와 함께 세계 탐험의 동반자가 되어보세요!",
+                "th": "ไปสำรวจโลกด้วยกันเถอะ!",
+                "zh-Hans": "和马琪成为探索世界的伙伴吧！",
+                "zh-Hant": "和馬琪成為探索世界的夥伴吧！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Pioneer Association?",
+                    "en": "The Pioneer Association?",
+                    "es": "¿La Asociación de Pioneros?",
+                    "fr": "L'Association pionnière ?",
+                    "ja": "先駆条約？",
+                    "ko": "선행 공약?",
+                    "th": "สมาคมผู้บุกเบิกงั้นเหรอ",
+                    "zh-Hans": "先行公约？",
+                    "zh-Hant": "先行公約？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Die Welt erkunden?",
+                    "en": "Explore the world?",
+                    "es": "¿Explorar el mundo?",
+                    "fr": "Explorer le monde ?",
+                    "ja": "世界探索？",
+                    "ko": "세계 탐험?",
+                    "th": "สำรวจโลกงั้นเหรอ",
+                    "zh-Hans": "探索世界？",
+                    "zh-Hant": "探索世界？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Lass mich eine kurze Einführung geben.",
+                "en": "Allow me to make a brief introduction.",
+                "es": "Permíteme hacer una breve introducción.",
+                "fr": "Permettez-moi de faire une brève présentation.",
+                "ja": "では、手短に紹介いたします。",
+                "ko": "제가 짧게 소개를 해볼게요",
+                "th": "ขอให้ฉันได้แนะนำสั้นๆ นะ",
+                "zh-Hans": "请允许我为你进行简短的介绍。",
+                "zh-Hant": "請允許我為你進行簡短的介紹。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unsere Hauptaufgabe bei der Pioneer Association besteht darin, die Grenzen des menschlichen Verständnisses durch Erforschung zu erweitern. Wir entfachen die Neugier und verfolgen eine Pioniermentalität, indem wir Abenteurer aus allen Bereichen einladen, sich uns anzuschließen.",
+                "en": "Our core mission at the Pioneer Association is to push the boundaries of humanity's understanding through exploration. We ignite curiosity and embrace a trailblazing mindset, inviting adventurers from all backgrounds to join us.",
+                "es": "Nuestra misión principal en la Asociación de Pioneros es ampliar los límites del entendimiento humano a través de la exploración. Encendemos la curiosidad y adoptamos una mentalidad de vanguardia, invitando a aventureros de todos los orígenes a unirse a nosotros.",
+                "fr": "L'exploration et la connaissance du monde sont au cœur de l'Association pionnière. Nous attisons la curiosité des gens avec un état d'esprit de pionnier. Nous nous efforçons de permettre aux gens d'accéder à des informations plus riches et plus profondes.",
+                "ja": "先駆条約とは世界探索を理念とする組織。開拓精神で人々の探求心を目覚めさせ、多くの新情報を皆さまと共有することを使命としています。",
+                "ko": "선행 공약은 세계 탐험을 핵심 이념으로 삼고 개척정신으로 사람들의 호기심을 일깨우며, 더 많고, 더 새롭고, 더 상세한 정보를 모든 사람들과 공유하기 위해 계속 노력하고 있어요",
+                "th": "ภารกิจหลักของเราที่สมาคมผู้บุกเบิกคือการผลักดันขอบเขตความเข้าใจของมนุษยชาติผ่านการสำรวจ เราจุดประกายความอยากรู้อยากเห็นและน้อมรับแนวคิดแห่งการบุกเบิก พร้อมเชิญชวนนักผจญภัยจากทุกสาขาอาชีพให้เข้าร่วมกับเรา",
+                "zh-Hans": "先行公约以探知世界为核心理念，用开拓精神唤醒人们的好奇心，力图将更多、更新、更深入的讯息分享给大家。",
+                "zh-Hant": "先行公約以探知世界為核心理念，用開拓精神喚醒人們的好奇心，力圖將更多、更新、更深入的訊息分享給大家。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unser Team besteht aus Top-Journalisten, Schriftstellern, Fotografen und Expeditionsteilnehmern aus der ganzen Welt.",
+                "en": "Our team consists of top journalists, writers, photographers, and expeditioners from around the world.",
+                "es": "Nuestro equipo está compuesto por los mejores periodistas, escritores, fotógrafos y exploradores de todo el mundo.",
+                "fr": "L'Association travaille avec les meilleurs journalistes, écrivains, photographes et expéditionnaires du monde entier. Nous accueillons tout sang neuf ayant une attitude aventureuse !",
+                "ja": "ご参加いただく方の経験は問いません。現に新聞業界の方や、コピーライター、写真家、探検家といった様々な経歴を持つ人が集まっております。",
+                "ko": "우리는 전 세계의 수많은 뛰어난 언론인, 작가, 사진작가 및 탐험가를 모았으며, 탐험 정신을 가진 사람들의 합류를 언제든지 환영하죠!",
+                "th": "ทีมงานของเราประกอบด้วยนักข่าว นักเขียน ช่างภาพ และนักสำรวจชั้นนำจากทั่วโลก",
+                "zh-Hans": "我们汇集了全球大量优秀新闻工作者、撰稿人、摄影师、探险家，并欢迎具有探索精神的人加入！",
+                "zh-Hant": "我們匯集了全球大量優秀新聞工作者、撰稿人、攝影師、探險家，並歡迎具有探索精神的人加入！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Pioniere haben die Freiheit, ihre eigenen Expeditionen mit unserer Unterstützung zu planen, und wir bieten Plattformen für die Veröffentlichung von hochwertigen Inhalten wie Zeitschriften, Podcasts und Büchern.",
+                "en": "Pioneers are free to plan their own expeditions with our support, and we offer platforms for publishing high-quality content such as magazines, podcasts, and books.",
+                "es": "Los Pioneros son libres de planificar sus propias expediciones con nuestro apoyo, y ofrecemos plataformas para la publicación de contenido de alta calidad, como revistas, podcasts y libros.",
+                "fr": "Nos pionniers peuvent planifier leur expédition librement. De plus, nous pouvons les aider à publier des contenus de qualité grâce à notre gamme de magazines, de radios et de livres.",
+                "ja": "そんなメンバーの方々は先駆者と呼ばれていて、組織から活動の援助を受けることができます。探索はもちろん、雑誌、ラジオ、書籍への投稿といった活動でも大丈夫ですよ。",
+                "ko": "선행자들의 탐험 활동은 조직의 제약을 받지 않을 뿐만 아니라 잡지, 라디오, 책 등을 통해 선행자들의 고퀄리티 투고 내용을 게시할 수 있도록 도와주고 있어요",
+                "th": "ผู้บุกเบิกมีอิสระในการวางแผนการสำรวจของตนเองโดยได้รับการสนับสนุนจากเรา และเรามีแพลตฟอร์มสำหรับเผยแพร่เนื้อหาคุณภาพสูง เช่น นิตยสาร พอดแคสต์ และหนังสือ",
+                "zh-Hans": "先行者们的探索活动不受组织限制，不仅如此，我们还会帮助他们通过杂志、电台、书籍等途径发布优质投稿内容。",
+                "zh-Hant": "先行者們的探索活動不受組織限制，不僅如此，我們還會幫助他們通過雜誌、電臺、書籍等途徑發佈優質投稿內容。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was kann ich davon haben?",
+                    "en": "What can I get from this?",
+                    "es": "¿Qué puedo obtener de esto?",
+                    "fr": "Qu'est-ce que j'obtiens en tant qu'adhérent ?",
+                    "ja": "具体的なメリットは？",
+                    "ko": "합류하면 무엇을 얻을 수 있나요?",
+                    "th": "ฉันจะได้อะไรจากสิ่งนี้",
+                    "zh-Hans": "加入的话能获得什么？",
+                    "zh-Hant": "加入的話能獲得什麼？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin dabei.",
+                    "en": "I'm in.",
+                    "es": "Estoy dentro.",
+                    "fr": "J'en suis.",
+                    "ja": "参加する。",
+                    "ko": "합류할게요!",
+                    "th": "ฉันเอาด้วย",
+                    "zh-Hans": "我加入。",
+                    "zh-Hant": "我加入。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Unsere Pioniere verdienen Geld für ihre Beiträge, plus spezielle Finanzierung für von der Organisation genehmigte Expeditionen.",
+                "en": "Our Pioneers earn cash for submissions, plus dedicated funding for approved expedition plans from the Association.",
+                "es": "Nuestros Pioneros ganan dinero por sus aportaciones, además de financiación dedicada para los planes de expedición aprobados por la Asociación.",
+                "fr": "D'une part, les pionniers dont les propositions sont acceptées seront récompensés. D'autre part, les expéditions reconnues auront accès à un fonds dédié mis en place par l'Association.",
+                "ja": "投稿を行えば組織から報酬を貰えますし、それが認められれば活動資金を獲得できることもありますよ。",
+                "ko": "성공적인 투고를 한 선행자들은 보상을 받게 되며, 인정받은 탐사 활동 역시 조직의 지원금을 받게 돼요",
+                "th": "ผู้บุกเบิกของเราจะได้รับเงินจากการส่งผลงาน พร้อมทั้งเงินทุนสนับสนุนเฉพาะสำหรับแผนการสำรวจที่ได้รับการอนุมัติจากสมาคม",
+                "zh-Hans": "投稿成功的先行者将获得报酬，得到认可的探索活动还会获得组织资助。",
+                "zh-Hant": "投稿成功的先行者將獲得報酬，得到認可的探索活動還會獲得組織資助。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Pioniere haben auch die Möglichkeit, spezielle Outdoor-Werkzeuge zu erhalten, die für ihre Reisen unerlässlich sind. Wenn sie sich weiter hinauswagen, können diese Werkzeuge zu unschätzbaren Hilfsmitteln bei der Erforschung werden.",
+                "en": "Pioneers also have the opportunity to receive special outdoor tools essential for their journeys. As they venture further, these tools can become invaluable aids in exploration.",
+                "es": "Los Pioneros también tienen la oportunidad de recibir herramientas especiales para el aire libre esenciales para sus viajes. A medida que se aventuran más, estas herramientas pueden convertirse en ayudas invaluables para la exploración.",
+                "fr": "En outre, au fur et à mesure que les explorations progresseront, nos pionniers recevront des outils de plein air spéciaux, qui peuvent s'avérer d'une aide précieuse pour les voyages.",
+                "ja": "それに、探索の進行度に応じて、組織から支給品が提供されます。ぜひ探索活動にお役立てください。",
+                "ko": "또한 지역에 대한 깊은 탐색이 이루어짐에 따라 선행자는 선약이 제공하는 야외 도구를 얻을 수 있으며 이러한 물품은 탐험 활동에 강력한 도움이 될 거예요",
+                "th": "ผู้บุกเบิกยังมีโอกาสได้รับเครื่องมือกลางแจ้งพิเศษที่จำเป็นสำหรับการเดินทางของพวกเขาอีกด้วย เมื่อพวกเขาออกเดินทางไกล เครื่องมือเหล่านี้อาจกลายเป็นเครื่องมือช่วยเหลือที่ล้ำค่าในการสำรวจก็เป็นได้",
+                "zh-Hans": "除此之外，随着对地域的探索深入，先行者可以获得先约提供的户外用具，这些物品将为你的探险旅途提供有力帮助。",
+                "zh-Hant": "除此之外，隨著對地域的探索深入，先行者可以獲得先約提供的戶外用具，這些物品將為你的探險旅途提供有力幫助。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin dabei.",
+                    "en": "I'm in.",
+                    "es": "Estoy dentro.",
+                    "fr": "J'en suis.",
+                    "ja": "参加する。",
+                    "ko": "합류할게요!",
+                    "th": "ฉันเอาด้วย",
+                    "zh-Hans": "我加入。",
+                    "zh-Hant": "我加入。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Super! Ich werde dein Profil schnell einrichten. Du kannst jederzeit auf deinem Terminal deinen bisherigen Erkundungsprozess einsehen.",
+                "en": "Great! I'll get your profile set up real quick. You'll be able to check your exploration process so far on your Terminal at any time.",
+                "es": "¡Genial! Configuraré tu perfil en un instante. Podrás revisar tu proceso de exploración hasta ahora en tu Terminal en cualquier momento.",
+                "fr": "C'est très bien ! Laissez-moi maintenant créer votre profil. Entre-temps, le Progrès de l'exploration sera enregistré dans votre appareil. Ce qui vous permettra de vérifier à tout moment la progression.",
+                "ja": "はい！では情報を登録しておきますね。完了すると、探索進捗システムがデバイスにインストールされ、いつでもご自身の進捗を確認できるようになります。",
+                "ko": "네! 그럼 제가 방랑자의 정보를 입력할게요. 이제 탐색 시스템은 단말기에 연결되어 탐색 과정을 언제든지 확인할 수 있어요",
+                "th": "เยี่ยม! เดี๋ยวฉันจะรีบตั้งค่าโปรไฟล์ให้คุณเลยนะ คุณจะสามารถตรวจสอบความคืบหน้าในการสำรวจของตนเองได้ตลอดเวลาบนเทอร์มินัลของคุณ",
+                "zh-Hans": "好！我来将你的信息进行录入。同时，探索度系统将接入你的终端，便于你随时查看自己的探索历程。",
+                "zh-Hant": "好！我來將你的資訊進行錄入。同時，探索度系統將接入你的終端，便於你隨時查看自己的探索歷程。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und... fertig! Ab jetzt bist du, Rover, ein Mitglied der Pioneer Association. Du bist jetzt sozusagen meine Familie!",
+                "en": "And... all set! From now on, Rover, you are a member of the Pioneer Association. You are sort of like my family now!",
+                "es": "Y... ¡listo! A partir de ahora, Errante, eres un miembro de la Asociación de Pioneros. ¡Eres como una especie de mi familia ahora!",
+                "fr": "Et... tout est prêt ! À partir de maintenant, Nomade, tu es membre de l'Association pionnière. Ma famille!",
+                "ja": "うん……これでオッケー！これで漂泊者さんは正式な先駆条約の一員、そして馬琪の家族です！",
+                "ko": "음… 그럼 이제부터 방랑자는 선행 공약의 일원이자 마치의 가족이에요",
+                "th": "แค่นี้ก็... เสร็จแล้ว! ผู้พเนจร จากนี้ไปคุณคือสมาชิกของสมาคมผู้บุกเบิกแล้ว และคุณก็เหมือนกับครอบครัวของฉัน!",
+                "zh-Hans": "嗯……好啦，从现在开始，漂泊者就是先行公约的一员，是马琪的家人了哦。",
+                "zh-Hant": "嗯……好啦，從現在開始，漂泊者就是先行公約的一員，是馬琪的家人了喔。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, du solltest dir unsere umfangreiche Auswahl an Publikationen und Merchandise hier ansehen, Rover. Jetzt haben wir die neueste Ausgabe der <i>Wuthergeographie</i>, die aufregende Serie <i>Into the Depths of Waves</i> und Rabattgutscheine für unsere Abonnements des Pionier-Podcasts...",
+                "en": "By the way, you should check out our expansive selection of publications and merchandise here, Rover. Now we've got the latest issue of <i>Wutherium Geographic</i>, the thrilling series of <i>Into the Depths of Waves</i>, and subscription discount coupons for our Pioneer Podcast...",
+                "es": "Por cierto, deberías echar un vistazo a nuestra amplia selección de publicaciones y mercancías aquí, Errante. Ahora tenemos el último número de <i>Geografía de Wutherium</i>, la emocionante serie de <i>En las profundidades de las olas</i> y cupones de descuento para la suscripción a nuestro Podcast Pionero...",
+                "fr": "Au fait, de nombreux produits de l'Association Pionnière sont disponibles ici, et je pense que vous pourriez aimer l'un ou plusieurs d'entre eux. Le dernier numéro de <i>La Géographie Wutherium</i>, la série complète de <i>Vingt mille lieues sous les vagues</i>, et des coupons pour les radios...",
+                "ja": "そうそう！先駆条約では様々な出版物やグッズを取り扱っており、イベントも開催しています。例えば雑誌『潮汐地理』、ドキュメンタリー『潮汐深きところ』、ラジオ契約更新割引券などなど……",
+                "ko": "참, 혹시 이러한 선약 제품들이 필요하신가요? 최신판의 『조석 지리』 잡지, 다큐멘터리 『조석의 심층』 전집, 그리고 방송국 재계약 쿠폰...",
+                "th": "ว่าแต่ คุณควรจะลองดูสิ่งพิมพ์และสินค้าที่เรามีให้เลือกมากมายที่นี่นะ ผู้พเนจร ตอนนี้เรามี <i>วัธเธอเรียมจีโอกราฟิก</i>ฉบับล่าสุด ซีรีส์สุดระทึกของ<i>สู่ห้วงลึกแห่งเกลียวคลื่น</i> และคูปองส่วนลดการสมัครสมาชิกสำหรับพอดแคสต์ผู้บุกเบิกของเรา...",
+                "zh-Hans": "对了，这里的先约产品漂泊者有需要嘛？最新的《潮汐地理》杂志、纪录片《潮汐深处》全集、电台续费优惠券……",
+                "zh-Hant": "對了，這裡的先約產品漂泊者有需要嘛？最新的《潮汐地理》雜誌、紀錄片《潮汐深處》全集、電臺續約優惠券……"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt auch den Bestseller <i>Alles, was du über die Wuthering Waves wissen musst</i> und <i>Die einhundert Leben eines Reporters der Pioneer Association</i>, plus unser Kundensiebling—Gulpuff Plüschtiere!",
+                "en": "There's also the bestselling <i>All You Have to Know about Wuthering Waves</i> and <i>The One Hundred Lives of a Pioneer Association Reporter</i>, plus our customer favorite—Gulpuff plushies!",
+                "es": "También está el superventas <i>Todo lo que debes saber sobre Wuthering Waves</i> y <i>Las cien vidas de un reportero de la Asociación de Pioneros</i>, además de nuestro favorito de los clientes: ¡los peluches de Burbujín!",
+                "fr": "Nous avons également les best-sellers <i>Tout ce qu'il faut savoir dans Wuthering Waves</i>, <i>La Philosophie du Pionnier</i>, et nos poupées préférées : la peluche Gouboule !",
+                "ja": "ベストセラー図書の『鳴潮の出来事』、『先駆者生き方100選』も……それと大人気グッズのグルッポぬいぐるみ！",
+                "ko": "베스트셀러 『명조의 이야기들』, 『선약 기자의 100가지 사는 법』, 그리고 가장 인기 있는 꾹꾹복어 피규어…",
+                "th": "แถมยังมี<i>ทุกสิ่งที่คุณต้องรู้เกี่ยวกับวูเธอริ่ง เวฟส์</i> และ <i>หนึ่งร้อยชีวิตของนักข่าวสมาคมผู้บุกเบิก</i>ที่ขายดีที่สุดอีกด้วย และยังมีกับ Gulpuff ขวัญใจลูกค้าของเราด้วยนะ!",
+                "zh-Hans": "畅销图书《鸣潮那些事》、《先约记者的100种活法》，还有最受欢迎的咕咕河豚公仔……",
+                "zh-Hant": "暢銷圖書《鳴潮那些事》、《先約記者的100種活法》，還有最受歡迎的咕咕河豚公仔……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Neukunden können eines kaufen und bekommen das zweite 50% günstiger!",
+                "en": "New customers can buy one and get one 50% off!",
+                "es": "¡Los nuevos clientes pueden comprar uno y obtener un 50% de descuento en el segundo!",
+                "fr": "Les nouveaux clients peuvent en acheter un et en obtenir un à moitié prix !",
+                "ja": "今ならちょうど新規メンバー2点目半額キャンペーンも開催しておりますので、いかがですか？",
+                "ko": "신인이라면 두 번째 상품은 반값 할인됩니다!",
+                "th": "ลูกค้าใหม่ซื้อหนึ่งชิ้น รับชิ้นที่สองลด 50%!",
+                "zh-Hans": "新人优惠第二件半价哦！",
+                "zh-Hant": "新人優惠第二件半價喔！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Neueste Ausgabe?",
+                    "en": "Latest issue?",
+                    "es": "¿Último número?",
+                    "fr": "Magazine ?",
+                    "ja": "雑誌？",
+                    "ko": "잡지?",
+                    "th": "ฉบับล่าสุดรึ",
+                    "zh-Hans": "杂志？",
+                    "zh-Hant": "雜誌？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Podcast-Abonnement?",
+                    "en": "Podcast subscription?",
+                    "es": "¿Suscripción al podcast?",
+                    "fr": "Coupon de la Radio ?",
+                    "ja": "ラジオ？",
+                    "ko": "방송국?",
+                    "th": "สมัครสมาชิกพอดแคสต์รึ",
+                    "zh-Hans": "电台？",
+                    "zh-Hant": "電臺？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Plüschtiere?",
+                    "en": "Plushies?",
+                    "es": "¿Peluches?",
+                    "fr": "Peluche ?",
+                    "ja": "ぬいぐるみ？",
+                    "ko": "피규어?",
+                    "th": "ตุ๊กตางั้นเหรอ",
+                    "zh-Hans": "公仔？",
+                    "zh-Hant": "公仔？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich verzichte erstmal.",
+                    "en": "I’ll pass for now.",
+                    "es": "Por ahora, paso.",
+                    "fr": "Merci, c'est bon pour le moment.",
+                    "ja": "今は大丈夫……",
+                    "ko": "필요 없어요!",
+                    "th": "ไว้ก่อนนะ",
+                    "zh-Hans": "暂时不用了。",
+                    "zh-Hant": "暫時不用了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wir veröffentlichen tatsächlich zwei Zeitschriften. <i>Wuthergeographie</i> für allgemeine Leser und <i>Anthropozän nach dem Lamento</i> für Akademiker.",
+                "en": "We publish two periodicals actually. <i>Wutherium Geographic</i> for general readers, and <i>Post-Lament Anthropocene</i> for academics.",
+                "es": "De hecho, publicamos dos publicaciones. <i>Geografía de Wutherium</i> para el público general, y <i>Antropoceno de poslamento</i> para académicos.",
+                "fr": "Nous publions en fait deux périodiques. La « Géographie Wutherium » s'adresse à un public plus large et l'« Anthropocène Postlamental », une revue.",
+                "ja": "現在2種類の用意があります。初心者向けの地理知識が記された『潮汐ジオグラフィック』と学術誌の『後悲鳴人類記事』です。",
+                "ko": "우리는 대중 과학 잡지 『조석 지리』와 학술 잡지 『유니버스 인류 기록』 총 두 가지 잡지를 보유하고 있어요",
+                "th": "จริงๆ แล้ว เราจัดพิมพ์วารสารสองฉบับ <i>วัธเธอเรียมจีโอกราฟิก</i>สำหรับผู้อ่านทั่วไป และ<i>บันทึกประวัติศาสตร์มนุษยชาติยุคหลังอาดูรการณ์</i>สำหรับนักวิชาการ",
+                "zh-Hans": "我们一共有两种杂志哦，科普类的《潮汐地理》和学术类的《寰宇人类注疏》。",
+                "zh-Hant": "我們一共有兩種雜誌哦，科普類的《潮汐地理》和學術類的《寰宇人類注疏》。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du daran interessiert bist, unsere Zeitschriften zu abonnieren, sag es mir jetzt und wir schicken dir jeden Monat die neuesten Ausgaben direkt zu deiner Haustür!",
+                "en": "If you're interested in subscribing to our magazines, tell me now and we’ll send the latest issues to your doorstep every month!",
+                "es": "Si te interesa suscribirte a nuestras revistas, dímelo ahora y enviaremos los últimos números a tu puerta cada mes.",
+                "fr": "Si vous souhaitez d'abonner, dites-le-moi et nous vous enverrons chaque mois le dernier exemplaire !",
+                "ja": "雑誌の定期購読であれば、私にお申し付けください！毎月最新号をお届けしますよ！",
+                "ko": "잡지 구독을 원하실 경우 저에게 직접 알려주시면 매달 최신판을 우편으로 보내드릴게요!",
+                "th": "หากคุณสนใจสมัครสมาชิกนิตยสารของเรา บอกฉันตอนนี้เลย แล้วเราจะส่งฉบับล่าสุดไปให้ถึงหน้าประตูบ้านคุณทุกเดือน!",
+                "zh-Hans": "如果你想订阅杂志，可以直接告诉我，我们每个月都会将最新版邮寄给你的！",
+                "zh-Hant": "如果你想訂閱雜誌，可以直接告訴我，我們每個月都會將最新版郵寄給你的！"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Für Abenteurer, die nach erstklassiger Unterhaltung suchen, bietet unser Pionier-Podcast alles. Der Podcast ist kostenlos und es gibt auch einen Insider-Kanal für zahlende Abonnenten.",
+                "en": "For adventurers looking for top-notch entertainment, our Pioneer Podcast has it all. The Podcast is free, and there's also an Insider Channel for paid subscribers.",
+                "es": "Para los aventureros en busca de entretenimiento de primera, nuestro Podcast Pionero lo tiene todo. El podcast es gratuito, y también hay un Canal Interno para suscriptores de pago.",
+                "fr": "Notre radio est le meilleur divertissement pour les explorateurs sur le terrain ! Nous proposons deux chaînes, l'une gratuite et l'autre premium.",
+                "ja": "先駆条約のラジオは、どこでも心安らぐエンタメとして有名なんです！ラジオには、無料のベーシックチャンネルと、有料のプレミアムチャンネルがあります。",
+                "ko": "저희 방송국은 탐험가들이 야외에서 즐길 수 있는 첫 번째 선택이에요. 방송국 채널은 무료 퍼블릭 채널과 유료 유니버스 채널로 나뉘어요",
+                "th": "สำหรับนักผจญภัยที่มองหาความบันเทิงชั้นยอด พอดแคสต์ผู้บุกเบิกของเรามีครบทุกอย่าง พอดแคสต์นี้ให้บริการฟรี แถมยังมีช่องอินไซด์สำหรับผู้สมัครสมาชิกแบบชำระเงินอีกด้วย",
+                "zh-Hans": "我们的电台是探险家们在野外时的娱乐首选。电台频道分为免费的大众频道和付费的寰宇频道。",
+                "zh-Hant": "我們的電臺是探險家們在野外時的娛樂首選。電臺頻道分為免費的大眾頻道和付費的寰宇頻道。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit vielfältigen Shows, die Nachrichten, Musik und Wissenschaft abdecken, ist für jeden etwas dabei. Für noch exklusiveren Inhalt ist unser Insider-Kanal nur für zahlende Abonnenten verfügbar.",
+                "en": "With diverse shows covering news, music, and science, there's something for everyone.",
+                "es": "Con diversos programas que cubren noticias, música y ciencia, hay algo para todos.",
+                "fr": "La chaîne gratuite diffuse une variété d'émissions allant de l'information à la musique, pour tout le monde.",
+                "ja": "ベーシックチャンネルはニュース、音楽、科学技術の普及などのコンテンツを……",
+                "ko": "퍼블릭 채널은 뉴스, 음악 및 대중 과학과 같은 다양한 콘텐츠를 포함하고",
+                "th": "ทั้งยังมีบางสิ่งสำหรับทุกคนเสมอ ด้วยรายการที่หลากหลายครอบคลุมทั้งข่าวสาร ดนตรี และวิทยาศาสตร์",
+                "zh-Hans": "大众频道涵盖新闻、音乐与科普等多种内容。",
+                "zh-Hant": "大眾頻道涵蓋新聞、音樂與科普等多種內容。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Insider-Kanal bietet Updates zu laufenden Erkundungen von vertraglich verpflichteten Reportern und erfahrenen Entdeckern.",
+                "en": "The Insider Channel features updates on ongoing explorations by contracted reporters and seasoned explorers.",
+                "es": "El Canal Interno presenta actualizaciones de exploraciones en curso de reporteros contratados y exploradores experimentados.",
+                "fr": "La chaîne premium ne diffuse que des contenus exclusifs rédigés par nos reporters et explorateurs sous contrat. La plupart du temps, ce sont des nouvelles concernant les explorations des régions.",
+                "ja": "プレミアムチャンネルは、入念に選定された専属記者と探検家の投稿を基に、各地域の最新情報を取り扱っております。",
+                "ko": "유니버스 채널은 선행 공약의 회원 기자와 계약 탐험가가 정기적으로 원고를 제공하며 각 지역을 직접 탐색한 정보를 포함해요",
+                "th": "ช่องอินไซด์จะนำเสนอข้อมูลอัปเดตเกี่ยวกับการสำรวจที่กำลังดำเนินอยู่โดยนักข่าวรับจ้าง และนักสำรวจผู้ช่ำชอง",
+                "zh-Hans": "寰宇频道由先行公约的会员记者与签约探险家定期供稿，涵盖各地区的第一手探索资讯。",
+                "zh-Hant": "寰宇頻道由先行公約的會員記者與簽約探險家定期供稿，涵蓋各地區的第一手探索資訊。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass es mich wissen, wenn du abonnieren möchtest!",
+                "en": "Let me know if you'd like to subscribe!",
+                "es": "¡Avísame si te gustaría suscribirte!",
+                "fr": "Dites-moi si vous pensez à abonner à la chaîne premium !",
+                "ja": "有料チャンネルの契約は、私にお申し付けくださいね！",
+                "ko": "선약 방송국의 유료 채널 구독을 원하시면 저에게 직접 말씀해 주세요!",
+                "th": "ถ้าคุณอยากจะสมัครก็บอกฉันได้เลยนะ!",
+                "zh-Hans": "如果你想订购先约电台的付费频道，可以直接告诉我哦！",
+                "zh-Hant": "如果你想訂購先約電臺的付費頻道，可以直接告訴我喔！"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ups, die Gulpuff Plüschtiere sind ausverkauft... Soll ich dir eins reservieren?",
+                "en": "Oops, Gulpuff plushies sold out... Want me to reserve one for you?",
+                "es": "Vaya, los peluches de Burbujín se agotaron... ¿Quieres que te reserve uno?",
+                "fr": "Oh, attendez. La peluche Gouboule est en rupture de stock. Toutefois, si vous souhaitez en acheter une, je peux réserver pour vous.",
+                "ja": "えー、少々お待ちを……すみません、また在庫切らしちゃってますね……でも大丈夫！グッズの予約も承っております！",
+                "ko": "어, 잠깐만요......꾹꾹복어 피규어가 또 품절됐네요... 괜찮아요, 구매하고 싶으시면 제가 우선 예약해 드릴 수 있어요!",
+                "th": "อ๊า Gulpuff ขายหมดแล้ว... อยากให้ฉันจองไว้ให้ตัวนึงไหม",
+                "zh-Hans": "诶，等等……咕咕河豚公仔又没货了呢……没关系，如果你想购买的话，我可以先为你预约！",
+                "zh-Hant": "欸，等等……咕咕河豚公仔又沒貨了呢……沒關係，如果你想購買的話，我可以先為你預約！"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, du kannst immer um Hilfe auf deiner Reise bitten. Die Pioneer Association ist immer für dich da, egal welche Hindernisse auf dich zukommen!",
+                "en": "Anyway, you can always reach out for help on your journey. The Pioneer Association is here for you through any obstacles!",
+                "es": "De todos modos, siempre puedes pedir ayuda en tu viaje. ¡La Asociación de Pioneros está aquí para ti a través de cualquier obstáculo!",
+                "fr": "Quoi qu'il en soit, n'oubliez pas que vous pouvez toujours nous contacter lorsque vous rencontrez des obstacles sur votre chemin. L'Association pionnière et moi-même serons toujours là pour vous.",
+                "ja": "これからの探検で、何か困ったことがありましたらいつでも連絡してください。私と先駆条約の皆さまは、いつでもあなたの味方ですので！",
+                "ko": "아무튼 탐색 여행 중에 어려움을 겪는다면 저에게 연락해 주세요. 저와 선약 공약의 모든 분들이 방랑자의 가장 든든한 후원자예요!",
+                "th": "อย่างไรก็ตาม คุณสามารถติดต่อขอความช่วยเหลือได้ในตลอดการเดินทางเลยนะ เพราะสมาคมผู้บุกเบิกพร้อมอยู่เคียงข้างคุณผ่านทุกอุปสรรค!",
+                "zh-Hans": "无论如何，请记得，探险旅途中遇到任何困难都可以联系我，我和先约的大家是你最坚强的后盾！",
+                "zh-Hant": "無論如何，請記得，探險旅途中遇到任何困難都可以聯繫我，我和先約的大家是你最堅強的後盾！"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

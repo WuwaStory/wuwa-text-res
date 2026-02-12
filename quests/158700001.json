@@ -1,0 +1,178 @@
+{
+  "id": 158700001,
+  "key": "3.0下半主线后日谈",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "en": "3.0 part 2 prologue, Mornye",
+    "ko": "후일담_모니에",
+    "zh-Hans": "test/3.0下半主线后日谈_莫宁"
+  },
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 155700127,
+          "mapId": 906,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录（唤醒销毁实体用）",
+          "areaId": 36172,
+          "position": {
+            "x": -62900,
+            "y": -539200,
+            "z": 48240
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 158700000,
+          "mapId": 906,
+          "blueprintType": "branch3.0_936_角色044_莫宁",
+          "name": "TsEntity_角色044_莫宁_主城后日谈",
+          "areaId": 36172,
+          "position": {
+            "x": -62864,
+            "y": -539295,
+            "z": 48290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -138
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_拉海洛主线_下半_炉芯领主战斗",
+          "flowIndex": 14,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Mentor;Female=Mentorin}, der Wind hat vielleicht … deine Frisur zerzaust …?",
+                "en": "Mentor, the wind may have... messed your hair...?",
+                "es": "{Male=Mentor;Female=Mentora}, ¿te has despeinado con el viento?",
+                "fr": "{Male=Mentor;Female=Mentore}, le vent… tes cheveux sont tout ébouriffés ?",
+                "ja": "先輩？髪が風で崩れそうですが……",
+                "ko": "선배? 바람 때문에 머리카락이 흐트러지겠어요...",
+                "th": "รุ่นพี่? ลมพัดผมของคุณจนยุ่งเหยิงหมดแล้ว...",
+                "zh-Hans": "前辈？你的头发要被风吹乱了……",
+                "zh-Hant": "前輩？你的頭髮要被風吹亂了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 155700126,
+          "mapId": 906,
+          "blueprintType": "branch3.0_320_SceneObj219",
+          "name": "TsEntity_场景交互_单人靠背椅学院金属",
+          "areaId": 36172,
+          "position": {
+            "x": -62960,
+            "y": -539360,
+            "z": 48241
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 158700000,
+          "mapId": 906,
+          "blueprintType": "branch3.0_936_角色044_莫宁",
+          "name": "TsEntity_角色044_莫宁_主城后日谈",
+          "areaId": 36172,
+          "position": {
+            "x": -62864,
+            "y": -539295,
+            "z": 48290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -138
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 6,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    }
+  ]
+}

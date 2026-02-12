@@ -1,0 +1,466 @@
+{
+  "id": 158900015,
+  "key": "饭店2（看看莱丽娅近况）",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Margheritas Tagesangebot II",
+    "en": "Margherita's Daily Special II",
+    "es": "Menú del dia II",
+    "fr": "Plat du jour de Margherita - II",
+    "ja": "マルゲリータの日替わりセット・二",
+    "ko": "마거리트 오늘의 세트 · II",
+    "th": "เมนูพิเศษประจำวันของมาร์เกริตา II",
+    "zh-Hans": "玛格烈特今日套餐·二",
+    "zh-Hant": "瑪格烈特今日套餐·二"
+  },
+  "desc": {
+    "de": "Lelia arbeitet schon eine Weile im Restaurant. Wenn du Hunger hast, warum schaust du nicht mal vorbei und siehst, wie es ihr geht?",
+    "en": "Lelia has been working at the restaurant for a while now. If you're hungry, why not stop by and see how she's doing?",
+    "es": "Lelia ha estado trabajando en el restaurante por un tiempo. Si tienes hambre, ¿por qué no pasas y ves cómo le va?",
+    "fr": "On se demande si le boulot de Lelia va bien, pourquoi ne pas aller goûter quelque chose si vous avez faim ?",
+    "ja": "リーリアはトラットリア・マルゲリータでうまく働けているだろうか？もしお腹が空いたら、あちらへ寄ってみよう。",
+    "ko": "라일리아가 레스토랑에서 일하는 게 잘 되고 있을까? 식사하고 싶으면 저쪽으로 가서 둘러보는 게 좋을 것 같다",
+    "th": "Lelia ทำงานที่ภัตตาคารมาได้สักพักแล้ว ถ้าคุณหิวทำไมไม่ลองแวะไปดูหน่อยล่ะว่าเธอเป็นยังไงบ้าง?",
+    "zh-Hans": "不知道莱丽娅在餐厅工作得怎么样了，如果想吃东西了就去那边转转吧。",
+    "zh-Hant": "不知道萊麗婭在餐廳工作得怎麼樣了，如果想吃東西了就去那邊轉轉吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zu Trattoria Margherita",
+        "en": "Go to Trattoria Margherita",
+        "es": "Ve a la Trattoria Margherita.",
+        "fr": "Se rendre à « Trattoria Margherita »",
+        "ja": "トラットリア・マルゲリータに向かう",
+        "ko": "마거리트 패밀리 레스토랑에 이동하기",
+        "th": "ไปที่ทรัตโทเรีย มาร์เกริตา",
+        "zh-Hans": "前往玛格烈特家庭餐厅",
+        "zh-Hant": "前往瑪格烈特家庭餐廳"
+      },
+      "entities": [
+        {
+          "entityId": 167900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_FemaleM6_5",
+          "name": "TsEntity_FemaleM6_5_莱丽娅服务生",
+          "areaId": 1693,
+          "position": {
+            "x": 703570,
+            "y": 586850,
+            "z": 160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bestelle bei Lelia",
+        "en": "Order from Lelia",
+        "es": "Haz un pedido a Lelia.",
+        "fr": "Parler à Lelia pour commander quelque chose",
+        "ja": "リーリアに声をかけて注文する",
+        "ko": "라일리아에게 주문하기",
+        "th": "สั่งอาหารจาก Lelia",
+        "zh-Hans": "找莱丽娅点单",
+        "zh-Hant": "找萊麗婭點餐"
+      },
+      "entities": [
+        {
+          "entityId": 167900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_FemaleM6_5",
+          "name": "TsEntity_FemaleM6_5_莱丽娅服务生",
+          "areaId": 1693,
+          "position": {
+            "x": 703570,
+            "y": 586850,
+            "z": 160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_玛格烈特今日套餐",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Vielen Dank für deine Geduld! Hier ist dein Essen, guten Appetit.",
+                "en": "Thank you for your patience! Here's your meal, please enjoy.",
+                "es": "¡Gracias por su paciencia! Que disfrute de su comida.",
+                "fr": "Merci pour votre patience ! Voici votre repas, bon appétit.",
+                "ja": "お待たせしました、こちらセットになります。ごゆっくりどうぞ。",
+                "ko": "오래 기다리셨습니다! 주문하신 1인 세트입니다. 맛있게 드세요!",
+                "th": "ขอบคุณที่รอค่ะ! นี่อาหารของคุณ ทานให้อร่อยนะคะ",
+                "zh-Hans": "久等了，这是您的单人套餐，请慢用。",
+                "zh-Hant": "久等了，這是您的單人套餐，請慢用。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie gefällt dir der Job bisher?",
+                    "en": "How are you liking this job so far?",
+                    "es": "¿Cómo te sientes trabajando aquí?",
+                    "fr": "Comment trouves-tu ce travail pour l'instant ?",
+                    "ja": "調子はどう？",
+                    "ko": "여기서 일하는 게 어때요? 할 만한 가요?",
+                    "th": "เป็นยังไงบ้าง รู้สึกชอบงานนี้มั้ย?",
+                    "zh-Hans": "在这里工作的感觉怎么样？",
+                    "zh-Hant": "在這裡工作的感覺怎麼樣？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es läuft super. Es gibt nichts Schöneres, als einen Kunden zu sehen, der nach dem Essen glücklich lächelt.",
+                "en": "It's been lovely. There's no better feeling than seeing a customer's smile after a good meal.",
+                "es": "Muy bien. No hay nada más gratificante que ver la sonrisa de los clientes después de comer.",
+                "fr": "C'est génial. Il n'y a pas de meilleure sensation que de voir le sourire d'un client après un bon repas.",
+                "ja": "とても楽しいです。食事の後にお客様が笑顔を見せてくれるのがすごく嬉しくて……",
+                "ko": "완전 좋지. 손님들이 식사를 마치고 웃는 모습을 보면 너무 만족스러워!",
+                "th": "ดีมากเลยค่ะ ไม่มีอะไรจะดีไปกว่าการได้เห็นรอยยิ้มของลูกค้าหลังจากทานอาหารอร่อยๆ แล้ว",
+                "zh-Hans": "挺好的。没什么比看到顾客用餐后的笑容更让人开心的了。",
+                "zh-Hant": "挺好的。沒什麼比看到顧客用餐後的笑容更讓人開心的了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erst gestern Abend hat eine Bankangestellte unsere neue Pizza probiert und sie hat Wunder bei ihr gewirkt!",
+                "en": "Just last night, a lady who works at the bank tried our new pizza, and it worked its magic on her!",
+                "es": "¡Anoche mismo, vino una señorita del banco, probó nuestra nueva pizza, y se quedó como nueva!",
+                "fr": "Juste hier soir, une dame qui travaille à la banque a essayé notre nouvelle pizza, et ça lui a fait un bien fou !",
+                "ja": "昨日の夜なんて、近くの銀行で働いている女性のお客さんが、新メニューのピザを食べた途端、とっても柔らかい雰囲気に変わったんです。",
+                "ko": "어제 저녁에는 근처 은행에서 일하는 여자분께서 신메뉴 피자를 드시고 나서는, 기분이 매우 좋아진 것 같더라구",
+                "th": "เมื่อคืนมีผู้หญิงที่ทำงานธนาคารได้มาลองพิซซาใหม่ของเรา แล้วเธอก็โดนมนต์สะกดของมันเข้าเต็มๆ",
+                "zh-Hans": "昨晚有位在附近银行上班的女士，她尝过新品的披萨后，整个人的氛围都好像完全改变了。",
+                "zh-Hant": "昨晚有位在附近銀行上班的女士，她嚐過新品的披薩後，整個人的氛圍都好像完全改變了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Konnte sie den Stress aus dem Büro abschütteln?",
+                    "en": "Did she shake off the smell of the office?",
+                    "es": "¿Se quitó de encima el olor a oficina?",
+                    "fr": "Ça l'a débarrassée de l'odeur du bureau ?",
+                    "ja": "仕事の疲れが取れたのかな？",
+                    "ko": "일로 인한 피곤함이 싹 날아갔군요?",
+                    "th": "เขาหายเหนื่อยจากงานออฟฟิศไปเลยมั้ย?",
+                    "zh-Hans": "身上的班味消除了吗？",
+                    "zh-Hant": "身上的班味消除了嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich glaube, ich weiß, wen du meinst.",
+                    "en": "I think I know who you're talking about.",
+                    "es": "Creo que sé de quién estás hablando.",
+                    "fr": "Je pense savoir de qui tu parles.",
+                    "ja": "あの人かな？",
+                    "ko": "누군지 알 것 같네요",
+                    "th": "ฉันว่าฉันรู้นะว่าเธอหมายถึงใคร",
+                    "zh-Hans": "好像知道是谁了。",
+                    "zh-Hant": "好像知道是誰了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ganz genau! Es war, als ob sich ihre Erschöpfung in Luft aufgelöst hätte. Fantastisch!",
+                "en": "Exactly! It was like her weariness melted away. Amazing!",
+                "es": "¡Desde luego! Fue como si todo su cansancio se hubiera desvanecido. ¡Fabuloso!",
+                "fr": "Exactement ! C'était comme si sa fatigue s'était envolée. Incroyable !",
+                "ja": "はい、なんだか一瞬で疲れが全部吹き飛んだみたいでした。",
+                "ko": "맞아, 피곤함이 아예 사라진 것 같았어, 엄청 신기했어",
+                "th": "ใช่เลย! เหมือนความเหนื่อยล้าหายไปหมดเลย น่าอัศจรรย์มากค่ะ!",
+                "zh-Hans": "是的，就好像身上的疲倦都被一扫而空了，真神奇。",
+                "zh-Hant": "是的，就好像身上的疲倦都被一掃而空了，真神奇。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe. Dieses Restaurant ist sehr beliebt unter Bankangestellten. Ich erkenne langsam einige Gesichter wieder.",
+                "en": "I see. This place is a go-to for bank employees. I'm also starting to recognize a few faces.",
+                "es": "Ya veo. Este lugar es casi como un santuario para la gente del banco, y algunas caras ya me van sonando.",
+                "fr": "Je vois. Cet endroit est un incontournable pour les employés de banque. Je commence à reconnaître quelques visages.",
+                "ja": "ここは銀行の人たちがよく来るみたいで、顔を覚えた人も何人かいるんですよ。",
+                "ko": "그렇구나. 은행에서 근무하시는 분들이 식사하러 많이 오시는 것 같아, 익숙한 얼굴들도 자주 보이고",
+                "th": "ที่นี่เป็นร้านประจำของพนักงานธนาคารเลยละค่ะ ฉันเองก็เริ่มจำหน้าลูกค้าได้บ้างแล้ว",
+                "zh-Hans": "这样啊。这里似乎是许多银行职员中意的用餐场所，经常会出现一些熟悉的面孔。",
+                "zh-Hant": "這樣啊。這裡似乎是許多銀行職員中意的用餐場所，經常會出現一些熟悉的面孔。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Manchmal kann ich nicht anders, als zu denken … Wenn ich doch nur so gut kochen könnte, dass auch meine Gerichte Wunder bewirken.",
+                "en": "Sometimes, I can't help but think... if only I could cook dishes that work the same magic.",
+                "es": "A veces no puedo evitar pensar... que ojalá yo pudiera cocinar platos que obraran la misma magia.",
+                "fr": "Parfois, je ne peux m'empêcher de penser... que j'aimerais pouvoir cuisiner des plats qui ont ce même effet magique.",
+                "ja": "時々、考えてしまうんです……私も、そんな風に人を感動させたいなって。",
+                "ko": "가끔, 나도 모르게 드는 생각인데... 나도 사람을 감동시키는 음식을 만들 수 있으면 좋겠어",
+                "th": "บางทีก็อดคิดไม่ได้ว่า... ถ้าฉันสามารถทำอาหารที่มีพลังแบบนั้นได้ก็คงดี",
+                "zh-Hans": "有些时候，我忍不住会想……如果我也能烹饪出打动人们的美食就好了。",
+                "zh-Hant": "有些時候，我忍不住會想……如果我也能烹飪出打動人們的美食就好了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vielleicht solltest du es mal probieren.",
+                    "en": "Maybe you should give it a try.",
+                    "es": "Quizás deberías intentarlo.",
+                    "fr": "Peut-être que tu devrais essayer.",
+                    "ja": "あなたも料理してみたら？",
+                    "ko": "바로 행동으로 옮겨 봐요",
+                    "th": "บางทีเธอน่าจะลองดูนะ",
+                    "zh-Hans": "那就开始动手做吧。",
+                    "zh-Hant": "那就開始動手做吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hm? Ich, kochen? Aber ich habe es noch nie gemacht. Ich dachte, der Zug sei bereits abgefahren …",
+                "en": "Huh? Me, cooking? But I've never done it before. I thought that ship already sailed...",
+                "es": "¿Eh? ¿Cocinar, yo? Pero si nunca lo he hecho antes. Ese barco ya ha pasado para mí.",
+                "fr": "Hein ? Moi, cuisiner ? Mais je ne l'ai jamais fait auparavant. Je pensais que c'était trop tard...",
+                "ja": "え、りょ、料理ですか？でも、全然経験ないし……今から勉強しても……",
+                "ko": "어, 요, 요리를? 난 전혀 경험이 없어서... 지금부터 배운다고 해도...",
+                "th": "หือ? ให้ฉันทำอาหารเหรอ? แต่ฉันไม่เคยทำเลยนะ มาเริ่มตอนนี้อาจจะช้าไปแล้วก็ได้...",
+                "zh-Hans": "诶，做、做菜吗？可我一点经验也没有……现在开始学习也……",
+                "zh-Hant": "欸，做、做菜嗎？可我一點經驗也沒有……現在開始學習也……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Jeder kann lernen, wie man kocht.",
+                    "en": "Anyone can learn to cook.",
+                    "es": "Cualquiera puede aprender a cocinar.",
+                    "fr": "Tout le monde peut apprendre à cuisiner.",
+                    "ja": "誰でも料理はできる。",
+                    "ko": "누구나 다 배울 수 있어요",
+                    "th": "ใครๆ ก็เรียนทำอาหารได้",
+                    "zh-Hans": "任何人都可以学做菜。",
+                    "zh-Hant": "任何人都可以學做菜。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Aber es ist noch nicht zu spät für dich, auf den Zug aufzuspringen.",
+                    "en": "It's still at the dock if you're ready to board.",
+                    "es": "Todavía está en el muelle, si estás lista para abordarlo.",
+                    "fr": "Il n'est jamais trop tard pour faire quoi que ce soit.",
+                    "ja": "今からでも遅くない。",
+                    "ko": "지금부터 시작해도 늦지 않아요",
+                    "th": "ยังไม่ช้าไปหรอก ถ้าคุณพร้อมเริ่มตอนนี้",
+                    "zh-Hans": "现在开始就不晚。",
+                    "zh-Hant": "現在開始就不晚。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hmm … Du hast recht. Ich mache mir immer zu viele Gedanken, statt zu handeln. Ich schätze, ich muss es einfach probieren.",
+                "en": "Hmm... you are right. I always overthink but never act. I guess I need to just go for it.",
+                "es": "Pues... tienes razón. Siempre pienso demasiado, pero nunca actúo. En fin, tendré que dejarme de excusas y lanzarme a por ello.",
+                "fr": "Hmm... Vous avez raison. Je réfléchis toujours trop et je n'agis jamais. Je suppose qu'il faudrait que je me lance.",
+                "ja": "わ……私っていつも色々悩んで、それで結局何もできなくて……",
+                "ko": "그래... 네 말이 맞아. 난 항상 생각만 하고 실천에 옮기지 않아서 아무것도 해 낸 게 없었어",
+                "th": "อืม... คุณพูดถูก ฉันชอบคิดเยอะเกินไปแต่ไม่เคยลงมือเลย สงสัยต้องลองดูจริงๆ แล้ว",
+                "zh-Hans": "嗯……您说得对，我总是考虑很多却没有行动，结果什么都没做成。",
+                "zh-Hant": "嗯……您說得對，我總是考慮很多卻沒有行動，結果什麼都沒做成。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe etwas gekocht. Könntest du mal probieren?",
+                "en": "If I manage to cook something, could I ask you to taste it?",
+                "es": "Si cocino alguna cosa, ¿te importaría probarla?",
+                "fr": "Si j'arrive à cuisiner quelque chose, pourrais-je vous demander d'y goûter ?",
+                "ja": "あの……もし、料理ができたら、試食してくれますか？",
+                "ko": "나중에 완성되면 시식 부탁해도 돼?",
+                "th": "ถ้าฉันทำอาหารได้แล้ว จะขอให้คุณช่วยชิมได้มั้ยคะ?",
+                "zh-Hans": "等到菜品完成了，我可以请您品尝一下吗？",
+                "zh-Hant": "等到菜品完成了，我可以請您品嚐一下嗎？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Natürlich.",
+                    "en": "Of course.",
+                    "es": "Por supuesto.",
+                    "fr": "Bien sûr.",
+                    "ja": "もちろん。",
+                    "ko": "그럼요",
+                    "th": "ได้อยู่แล้ว",
+                    "zh-Hans": "当然了。",
+                    "zh-Hant": "當然了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das kostet doch nichts, oder?",
+                    "en": "It'll be free, right?",
+                    "es": "Será gratis, ¿no?",
+                    "fr": "Ce sera gratuit, non ?",
+                    "ja": "お金は払わなくていいよね？",
+                    "ko": "돈 받는 건 아니죠?",
+                    "th": "ชิมฟรีใช่มั้ย?",
+                    "zh-Hans": "应该不用花钱吧？",
+                    "zh-Hant": "應該不用花錢吧？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Vielen Dank! Ich werde deine Worte im Hinterkopf behalten und mein Bestes geben!",
+                "en": "Thank you! I'll keep your words in mind and do my best!",
+                "es": "¡Gracias! ¡Tendré en cuenta tus palabras y lo haré lo mejor que pueda!",
+                "fr": "Merci ! Je garderai ces mots à l'esprit et je ferai de mon mieux !",
+                "ja": "ありがとうございます、これから頑張ります！",
+                "ko": "응원해 줘서 고마워, 열심히 해볼게!",
+                "th": "ขอบคุณนะคะ! ฉันจะจำคำพูดคุณไว้แล้วทุ่มสุดตัวเลย!",
+                "zh-Hans": "谢谢您的鼓励，接下来我会努力的！",
+                "zh-Hant": "謝謝您的鼓勵，接下來我會努力的！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, mach dir keine Sorgen darüber! Deine Rückmeldung ist eine angemessene Bezahlung für mich.",
+                "en": "Oh, don't worry about that! Your feedback would be payment enough for me.",
+                "es": "¡No te preocupes por eso! Tu opinión será pago suficiente para mí.",
+                "fr": "Oh, ne vous inquiétez pas pour ça ! Votre avis sur ma cuisine vaudra tout l'or du monde.",
+                "ja": "お金なんてとんでもないです。お客様の感想が一番の報酬ですから。",
+                "ko": "그럴 리가, 어떻게 돈을 받겠어. 시식해 주는 것만으로도 고마울 따름이지",
+                "th": "อ๋อ เรื่องนั้นไม่ต้องห่วงเลยค่ะ แค่ได้คำติชมจากคุณก็ถือว่าเป็นค่าตอบแทนแล้ว",
+                "zh-Hans": "不用，怎么会收您钱呢？您的感想就已经是我努力的回报了。",
+                "zh-Hant": "不用，怎麼會收您錢呢？您的感想就已經是我努力的回報了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

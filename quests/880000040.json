@@ -1,0 +1,588 @@
+{
+  "id": 880000040,
+  "key": "短支线1世界漂流瓶",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Nachricht in der Flasche",
+    "en": "Message in a Bottle",
+    "es": "Mensaje en una botella",
+    "fr": "Message dans la bouteille",
+    "ja": "世界を繋ぐ海流瓶",
+    "ko": "온 세상이 담긴 표류병",
+    "th": "ข้อความในขวด",
+    "zh-Hans": "世界漂流瓶",
+    "zh-Hant": "世界漂流瓶"
+  },
+  "desc": {
+    "de": "Wenn du eine Nachricht in einer Flasche findest, zögere nicht, sie zu überprüfen. In ihnen ruht wohl ein Universum aus Sehnsüchten und unerfüllten Wünschen.",
+    "en": "If you come across a message in a bottle, don't hesitate to check it out. Who knows, it might be one with precious dreams and hopes inside...",
+    "es": "Si ves una botella de deriva flotando en el mar, échale un vistazo. Tal vez contenga los sueños y esperanzas más preciados que alguien guardó…",
+    "fr": "Si vous avez rencontré une Bouteille à la mer, vérifiez-la. Il est possible qu'elle contienne une souhaite, un rêve...",
+    "ja": "もし海流瓶を見かけたら、それを調べてみよう。もしかすると、その中に夢と希望が入っているかもしれない。",
+    "ko": "바다에서 떠다니는 표류병을 보았다면 꼭 확인해 보세요. 그 안에 담긴 것은 소중히 간직된 꿈과 희망일지도 모르니까요...",
+    "th": "ถ้าคุณเจอข้อความในขวด อย่าลังเลที่จะเปิดดูนะ ใครจะไปรู้ อาจจะเป็นข้อความที่บันทึกความฝันและความหวังอันล้ำค่าไว้ในนั้นก็ได้...",
+    "zh-Hans": "如果在海上看到了漂流瓶，就去看看吧，也许里面装着的正是一份珍藏需求的梦想和希望……",
+    "zh-Hant": "如果在海上看到了漂流瓶，就去看看吧，也許裡面裝著的正是一份珍藏需求的夢想和希望……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Strand",
+        "en": "Go to the beach",
+        "es": "Ve a la playa.",
+        "fr": "Se rendre à la plage",
+        "ja": "海沿いへ向かう",
+        "ko": "해변으로 이동하기",
+        "th": "ไปที่ชายหาด",
+        "zh-Hans": "前往海边",
+        "zh-Hant": "前往海邊"
+      },
+      "entities": [
+        {
+          "entityId": 880000224,
+          "mapId": 8,
+          "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+          "name": "TsEntity_154_2_1短支线南妮儿",
+          "areaId": 28001,
+          "position": {
+            "x": 735288,
+            "y": 387015,
+            "z": 1810
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880000225,
+          "mapId": 8,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_支线1漂流瓶放置处光点",
+          "areaId": 28001,
+          "position": {
+            "x": 739390,
+            "y": 390770,
+            "z": -7
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.1航海活动短支线",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Das ist ein guter Ort.",
+                "en": "This spot will do.",
+                "es": "Este lugar servirá.",
+                "fr": "Cet endroit fera l'affaire.",
+                "ja": "ここなら大丈夫そうね。",
+                "ko": "여기면 되겠다",
+                "th": "จุดนี้น่าจะได้",
+                "zh-Hans": "这里就好。",
+                "zh-Hant": "這裡就好。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lege die Flasche ab",
+        "en": "Put down the bottle",
+        "es": "Deja la botella.",
+        "fr": "Déposer la bouteille",
+        "ja": "海流瓶を流す",
+        "ko": "표류병 내려놓기",
+        "th": "วางขวดลง",
+        "zh-Hans": "放下漂流瓶",
+        "zh-Hant": "放下漂流瓶"
+      },
+      "entities": [
+        {
+          "entityId": 880000225,
+          "mapId": 8,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_支线1漂流瓶放置处光点",
+          "areaId": 28001,
+          "position": {
+            "x": 739390,
+            "y": 390770,
+            "z": -7
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880700457,
+          "mapId": 8,
+          "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+          "name": "TsEntity_154_2_1短支线南妮儿2",
+          "areaId": 28001,
+          "position": {
+            "x": 739288,
+            "y": 390797,
+            "z": 5
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.1航海活动短支线",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Du schaust zu, wie Nannerl die Flasche sanft ins Wasser lässt. Ein seichte Brise weht an dir vorbei und trägt die Flasche aufs offene Meer.",
+                "en": "You watch Nannerl gently place the bottle into the water. A gentle breeze sweeps by as you watch the waves carry the bottle out to sea.",
+                "es": "Observas a Nannerl colocar la botella en el agua con delicadeza. Una suave brisa sopla mientras observas cómo las olas llevan la botella hacia el mar.",
+                "fr": "Vous regardez Nannerl placer délicatement la bouteille dans l'eau. Un légère brise passe tandis que vous observez les vagues emporter la bouteille vers le large.",
+                "ja": "ナニエルが海流瓶を海に流す。風がそっと吹き、小さな瓶が波に乗って大海原へと流れていく。",
+                "ko": "난넬이 표류병을 바다 위에 놓는 것을 바라본다. 바람이 불어오며, 당신들은 작은 표류병이 파도를 타고 바다 깊은 곳으로 떠나가는 것을 지켜본다",
+                "th": "คุณมองแนนเนิร์ลปล่อยขวดลงน้ำอย่างแผ่วเบา ลมอ่อนๆ พัดผ่าน ขณะที่คุณมองคลื่นพัดพาขวดลอยออกไปกลางทะเล",
+                "zh-Hans": "你看着南妮儿将漂流瓶放在水中。风徐徐吹过，你们看着那小小的漂流瓶乘着浪向大海深处漂流。",
+                "zh-Hant": "你看著南妮兒將漂流瓶放在水中。風徐徐吹過，你們看著那小小的漂流瓶乘著浪向大海深處漂流。"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Treibe fort. Treibe fort. Nimm weg meine Welt von diesem Ort …",
+                "en": "Drift away. Drift away. Take with you the world I convey...",
+                "es": "Flota sobre las olas. Navega con el viento. Lleva contigo mi mundo más allá...",
+                "fr": "Laisse-toi emporter. Laisse-toi emporter. Emporte avec toi le monde que je transmets...",
+                "ja": "「波に乗ってどこまでも……私の世界を乗せてどこまでも……」",
+                "ko": "흘러가라, 흘러가라, 나의 세상을 담아 흘러가라...",
+                "th": "ล่องลอยไป ล่องลอยไป พาเอาโลกที่ฉันได้พบเจอลอยไปให้ไกล...",
+                "zh-Hans": "漂流吧，漂流吧，带着我的世界漂流吧……",
+                "zh-Hant": "漂流吧，漂流吧，帶著我的世界漂流吧……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zusammen mit meiner vergessenen Kindheit und meinen zurückgelassenen Träumen.",
+                "en": "Along with my forgotten childhood and the dreams I abandoned.",
+                "es": "Recuerda mi infancia perdida y los sueños que abandoné.",
+                "fr": "Avec mon enfance oubliée et les rêves que j'ai abandonnés.",
+                "ja": "忘れた子供の頃と、諦めた夢を乗せて……",
+                "ko": "내가 잊어버린 어린 시절, 내가 포기한 꿈을 담고...",
+                "th": "รวมถึงวัยเด็กที่ฉันลืมเลือนและความฝันที่ฉันละทิ้ง",
+                "zh-Hans": "带着我被遗忘的童年，和我那被放弃的梦想。",
+                "zh-Hant": "帶著我被遺忘的童年，和我那被放棄的夢想。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erreiche meinen Bruder, damit er weiß, wie sehr seine Schwester ihn liebt.",
+                "en": "Find your way to my brother, so that he may know of his sister's love.",
+                "es": "Encuentra a mi hermano, y cuéntale el amor de su hermana.",
+                "fr": "Trouve ton chemin vers mon frère, pour qu'il sache l'amour que lui porte sa sœur.",
+                "ja": "弟の元まで、姉の想いを乗せて……",
+                "ko": "이 누나의 그리움을 알 수 있도록, 내 동생 곁으로 가주렴",
+                "th": "จงลอยไปหาน้องชายของฉัน เพื่อให้เขาได้รู้ถึงความรักจากพี่สาวคนนี้",
+                "zh-Hans": "漂流到弟弟的身边，让他知道姐姐对他的思念。",
+                "zh-Hant": "漂流到弟弟的身邊，讓他知道姐姐對他的思念。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und sag ihm, dass Nannerl seine Musik gehört hat und die Flasche ihre ganze Welt enthält.",
+                "en": "And tell him, following his music, Nannerl has put her world into this bottle.",
+                "es": "Cuéntale que Nannerl oyó su música y le envía su mundo en esta botella.",
+                "fr": "Et dis-lui qu'en suivant sa musique, Nannerl a mis son monde dans cette bouteille.",
+                "ja": "そして、あなたの音楽に導かれて、ナニエルが自分の世界をこの瓶に込めたことも。",
+                "ko": "전해주렴. 동생의 노래를 듣고, 난넬이 자신의 세상을 이 병에 넣었다고",
+                "th": "และบอกกับเขา ตามเสียงดนตรีของเขาไป แนนเนิร์ลได้ใส่โลกของเธอลงในขวดนี้แล้ว",
+                "zh-Hans": "也告诉他，跟随着他的音乐，南妮儿把自己的世界放进了漂流瓶。",
+                "zh-Hant": "也告訴他，跟隨著他的音樂，南妮兒把自己的世界放進了漂流瓶。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt wird sie den Träumen folgen, die sie einst zurückließ. Sie wird weiter die Musik und das Komponieren lernen!",
+                "en": "Now, she will pursue the dreams she once cast aside. She will continue to learn music and compose!",
+                "es": "Dile que su hermana perseguirá los sueños que tuvo que abandonar. ¡Que estudiará la música y compondrá canciones!",
+                "fr": "Maintenant, elle poursuivra les rêves qu'elle avait autrefois mis de côté. Elle poursuivra sa formation musicale et continuera à composer !",
+                "ja": "今、彼女はかつて諦めた夢を追いかける。また音楽を学び、作曲の練習を再開するの！",
+                "ko": "포기했던 꿈을 찾아 계속 음악을 배우고, 계속 노래를 만들 거라고!",
+                "th": "ในตอนนี้ เธอจะไล่ตามความฝันที่ครั้งหนึ่งเคยละทิ้ง เธอจะเรียนดนตรีและจะแต่งเพลงต่อไป!",
+                "zh-Hans": "现在，她要去追逐自己曾经放弃过的梦想，要继续学音乐，继续作曲了！",
+                "zh-Hant": "現在，她要去追逐自己曾經放棄過的夢想，要繼續學音樂，繼續作曲了！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Deine Träume werden wahr.",
+                    "en": "Your dreams will come true.",
+                    "es": "Tus sueños se harán realidad.",
+                    "fr": "Vos rêves se réaliseront.",
+                    "ja": "きっと叶うよ。",
+                    "ko": "당신은 그 꿈을 이룰 거예요",
+                    "th": "ความฝันของเธอจะเป็นจริงแน่นอน",
+                    "zh-Hans": "你会实现你的梦想的。",
+                    "zh-Hant": "你會實現你的夢想的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du folgst bereits einem Pfad deiner Wahl.",
+                    "en": "You're already on a path of your choosing.",
+                    "es": "Ya has dado el primer paso en tu nuevo camino.",
+                    "fr": "Vous êtes déjà sur le chemin de vos valeurs.",
+                    "ja": "あなたはもう自分の道を歩み始めている。",
+                    "ko": "당신은 이미 자신의 길을 걷고 있어요",
+                    "th": "เธอได้เลือกหนทางของตัวเองแล้วสินะ",
+                    "zh-Hans": "你已经走在自己的道路上了。",
+                    "zh-Hant": "你已經走在自己的道路上了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke.",
+                "en": "Thank you.",
+                "es": "Gracias.",
+                "fr": "Merci.",
+                "ja": "うん、ありがとう。",
+                "ko": "고마워",
+                "th": "ขอบคุณนะ",
+                "zh-Hans": "嗯，谢谢你。",
+                "zh-Hant": "嗯，謝謝你。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hoffentlich findet mein Bruder diese Flasche eines Tages.",
+                "en": "I hope one day my brother will find this bottle.",
+                "es": "Espero que un día esta botella encuentre a mi hermano.",
+                "fr": "J'espère qu'un jour mon frère trouvera cette bouteille.",
+                "ja": "いつか、劇団にいる弟がこの海流瓶を拾ってくれますように。",
+                "ko": "언젠가 극단에 있는 동생이 이 표류병을 발견했으면 좋겠어",
+                "th": "หวังว่าสักวันน้องชายจะเจอขวดใบนี้",
+                "zh-Hans": "希望有天，我在剧团的弟弟能捡到这个漂流瓶。",
+                "zh-Hant": "希望有天，我在劇團的弟弟能撿到這個漂流瓶。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er wird erkennen, wie stolz seine Schwester auf ihn ist und eines Tages wird er Nannerls eigener Musik horchen.",
+                "en": "Then he will realize how proud his sister is of him, and there will be a day when he will listen to Nannerl's own music.",
+                "es": "Para entonces se dará cuenta de lo orgullosa que estoy de él. Y algún día escuchará la música de su hermana Nannerl.",
+                "fr": "Et il se rendra alors compte à quel point sa sœur est fière de lui, et que viendra le jour où il écoutera ma musique.",
+                "ja": "あなたを誇りに思っていること、そして、私が作った音楽はあなたの元へ届きますように。",
+                "ko": "그때가 되면 그 애도 누나가 자신을 자랑스러워하고 있단 걸, 언젠가 세상이 난넬의 음악을 듣게 될 거란 걸 알게 될 거야",
+                "th": "แล้วเขาจะรู้ว่าพี่สาวคนนี้ภูมิใจในตัวเขามากแค่ไหน และจะมีสักวันหนึ่งที่เขาได้ฟังเสียงดนตรีที่แนนเนิร์ลแต่งด้วยตัวเอง",
+                "zh-Hans": "到时候，他一定会知道，自己的姐姐为他骄傲，而他总有一天会听到属于南妮儿的音乐。",
+                "zh-Hant": "到時候，他一定會知道，自己的姐姐為他驕傲，而他總有一天會聽到屬於南妮兒的音樂。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 100042,
+                "name": {
+                  "zh-Hans": "南妮儿"
+                },
+                "entity": {
+                  "entityId": 880700457,
+                  "mapId": 8,
+                  "blueprintType": "branch2.1_活动支线_DA_FemaleM2_1",
+                  "name": "TsEntity_154_2_1短支线南妮儿2",
+                  "areaId": 28001,
+                  "position": {
+                    "x": 739288,
+                    "y": 390797,
+                    "z": 5
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

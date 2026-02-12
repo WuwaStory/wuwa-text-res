@@ -1,0 +1,1204 @@
+{
+  "id": 146900005,
+  "key": "吞龙珠任务_终端",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Glorreiche Loongs Perle: Das letzte Ritus",
+    "en": "Glorious Loong's Pearl: The Last Rite",
+    "es": "Gloriosa Perla de Loong: El último ritual",
+    "fr": "Dernière étape de la « Cérémonie de la perle du Dragon »",
+    "ja": "龍を映す珠・最後の儀式",
+    "ko": "용을 비추는 구슬 · 마지막 의식",
+    "th": "ไข่มุกมังกรรุ่งโรจน์: พิธีกรรมสุดท้าย",
+    "zh-Hans": "照龙映珠·最后的仪式",
+    "zh-Hant": "照龍映珠·最後的儀式"
+  },
+  "desc": {
+    "de": "In der Wildnis gestrandet, bemüht sich ein entschlossenes junges Mädchen, ein heiliges Ritual für das Wohl des Wächters durchzuführen. Hilf ihr, das Opferritual zu erfüllen und diese alte Tradition aufrechtzuerhalten.",
+    "en": "Stranded in the wilderness, a determined young woman strives to perform a sacred rite for the Sentinel's well-being. Help her fulfill the Rite of Offering, and uphold this ancient tradition.",
+    "es": "Encallada en la naturaleza salvaje, una chica determinada se esfuerza por realizar un rito sagrado para el bienestar de la Centinela. Ayúdala a cumplir el rito de la ofrenda y mantén esta antigua tradición.",
+    "fr": "Une jeune fille tente de réaliser une cérémonie ancienne afin de prier pour la guérison de la Sentinelle. Perdue dans la nature, elle rencontre des obstacles avant même de pouvoir commencer. Vous pouvez l'aider à mener à bien cette cérémonie afin que la bénédiction arrive.",
+    "ja": "荒野、一人の少女がある古代の奉納儀式を通じて歳主の回復を祈りたいが、それに取り掛かる前に危険な目に遭ったようだ。彼女の祝福を伝わせるために、儀式に協力して完成させよう。",
+    "ko": "야외에 갇힌 소녀가 오래된 의식으로 수호신의 건강 회복을 기원하려 합니다. 그녀를 도와 의식의 마지막 절차를 완성하고 축복을 전달하고 의식을 계승하세요",
+    "th": "เมื่อต้องเตร็ดเตร่อยู่ท่ามกลางป่า หญิงสาวคนหนึ่งมุ่งมั่นที่จะประกอบพิธีกรรมศักดิ์สิทธิ์เพื่อความเป็นอยู่ของเซนติเนล ช่วยเธอทำพิธีบูชาให้สำเร็จ และสืบสานธรรมเนียมโบราณนี้ต่อไป",
+    "zh-Hans": "受困野外的少女想要完成古老的祭祀仪式，祈愿岁主康复。帮她完成这场祭祀仪式的最后一步吧，将祝福传达，将仪式传承。",
+    "zh-Hant": "受困野外的少女想要完成古老的祭祀儀式，祈願歲主康復。 幫她完成這場祭祀儀式的最後一步吧，將祝福傳達，將儀式傳承。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Shicheng",
+        "en": "Talk to Shicheng",
+        "es": "Habla con Shicheng.",
+        "fr": "Parlez à Shicheng",
+        "ja": "師澄と会話する",
+        "ko": "사화와 대화하기",
+        "th": "คุยกับชือเฉิง",
+        "zh-Hans": "与师澄交谈",
+        "zh-Hant": "與師澄交談"
+      },
+      "entities": [
+        {
+          "entityId": 146900219,
+          "mapId": 8,
+          "blueprintType": "NPC4880001",
+          "name": "TsEntity_主线_阿布3",
+          "areaId": 1612,
+          "position": {
+            "x": 208744,
+            "y": 326865,
+            "z": -4693
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -108
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 146900267,
+          "mapId": 8,
+          "blueprintType": "TsEntity_0369_154_师澄",
+          "name": "TsEntity_0369_154_师澄5",
+          "areaId": 1612,
+          "position": {
+            "x": 208649,
+            "y": 326606,
+            "z": -4699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -19
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_世界_乘宵山_吞龙珠2",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "So, wir sind mit dem Ritual fertig. Zeit, dich zurück nach Hongzhen zu bringen.",
+                "en": "So, we're all done with the ritual. Time to get you back to Hongzhen.",
+                "es": "Bueno, ya hemos terminado con el ritual. Es hora de llevarte de vuelta a la Villarcoíris.",
+                "fr": "Maintenant que le rituel est terminé, nous devons te ramener à Hongzhen.",
+                "ja": "なあ、お嬢ちゃん。儀式は全部終わったんだから、そろそろ<ano=こうちん>虹鎮</ano>まで送ろうか？",
+                "ko": "의식이 전부 끝났으니 널 홍진 마을로 돌려보내야겠어",
+                "th": "เอาล่ะ ในที่สุดพิธีกรรมก็เสร็จเรียบร้อยแล้ว ได้เวลาพาเธอกลับไปที่หงเจิ้นกันแล้ว",
+                "zh-Hans": "小姑娘，既然祭祀仪式全部完成了，我们差不多该想办法把你送回虹镇了。",
+                "zh-Hant": "小姑娘，既然祭祀儀式全部完成了，我們差不多該想辦法把你送回虹鎮了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                },
+                "entity": {
+                  "entityId": 146900219,
+                  "mapId": 8,
+                  "blueprintType": "NPC4880001",
+                  "name": "TsEntity_主线_阿布3",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208744,
+                    "y": 326865,
+                    "z": -4693
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -108
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warte! Es ist noch nicht fertig!",
+                "en": "Hold on! It's not done yet!",
+                "es": "¡No tan rápido! ¡Aún no ha terminado!",
+                "fr": "Attendez ! Ce n'est pas encore terminé !",
+                "ja": "待って、まだ終わってないもん！",
+                "ko": "잠깐만요, 아직 안 끝났어요!",
+                "th": "เดี๋ยวก่อน! มันยังไม่เรียบร้อยทั้งหมด!",
+                "zh-Hans": "等等，还没完成呢！",
+                "zh-Hant": "等等，還沒完成呢！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900267,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄5",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208649,
+                    "y": 326606,
+                    "z": -4699
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -19
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Neue Entdeckungen?",
+                    "en": "Any new discoveries?",
+                    "es": "¿Algún descubrimiento?",
+                    "fr": "Des nouvelles découvertes ?",
+                    "ja": "{Male=何か気づいたことでもあるのか？;Female=何か気づいたことでもあるの？}",
+                    "ko": "뭔가 새로운 단서라도 나왔나요?",
+                    "th": "เจออะไรใหม่งั้นเหรอ?",
+                    "zh-Hans": "有什么新发现吗？",
+                    "zh-Hant": "有什麼新發現嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, ich habe gerade eine Notiz von Onkel Fu gefunden. Es stellt sich heraus, dass es einmal eine einfache Initiationstradition für die Menschen des Berges Firmament war.",
+                "en": "Yeah, I just found a note left by Uncle Fu. Turns out it was once a simple coming-of-age tradition for the people of Mt. Firmament.",
+                "es": "Sí, acabo de encontrar una nota que dejó el señor Fu. Resulta que en el pasado tan solo era una ceremonia que la gente del Monte Firmamento celebrar al alcanzar la mayoría de edad.",
+                "fr": "Oui, je viens de trouver une note laissée par l'oncle Fu. Ce rituel était autrefois un rite de passage à l'âge adulte pour les habitants du Mont. Firmament.",
+                "ja": "うん、さっきここで<ano=ふく>福</ano>じいの残したメモを見つけたの。この儀式、元々は<ano=じょうしょうさん>乗霄山</ano>の住民の成人の儀として行われていたものだったんだって。",
+                "ko": "네, 방금 여기서 복 할아버지가 남긴 글을 발견했어요. 이 의식은 원래 승소산 사람들의 성년식이었다고 해요",
+                "th": "ใช่แล้ว ฉันเพิ่งพบบันทึกที่คุณลุงฟูทิ้งไว้ ปรากฏว่าเดิมทีพิธีกรรมนี้เป็นเพียงพิธีฉลองการก้าวสู่วัยผู้ใหญ่ของชาวภูผาสวรรค์",
+                "zh-Hans": "嗯，我刚才发现这里有福伯留下的笔记，原来这个仪式以前原本是乘霄山上的居民的成年仪式。",
+                "zh-Hant": "嗯，我剛才發現這裡有福伯留下的筆記，原來這個儀式以前原本是乘霄山上的居民的成年儀式。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900267,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄5",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208649,
+                    "y": 326606,
+                    "z": -4699
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -19
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nur die Flammenträger, die die Prüfungen der Weisheit und Stärke bestanden haben, wurden als Erwachsene anerkannt, da sie bewiesen haben, dass sie den Wächter und Hongzhen schützen können.",
+                "en": "Only the Flamebearers who passed the trials of wisdom and strength were recognized as adults, proving they could protect the Sentinel and Hongzhen.",
+                "es": "Los Portadores de llamas que superaban las pruebas de la sabiduría y la fuerza y demostraban ser capaces de proteger a la Centinela y la Villarcoíris eran los únicos a los que reconocían como adultos.",
+                "fr": "Seuls les Porteurs de flamme qui réussissaient les épreuves de sagesse et de force étaient reconnus comme des adultes, prouvant qu'ils pouvaient protéger la Sentinelle et Hongzhen.",
+                "ja": "儀式の<ano=しょうかしゃ>掌火者</ano>は、知恵と力の試練を乗り越えて、自分が<ano=さいしゅ>歳主</ano>様と<ano=こうちん>虹鎮</ano>を守れる存在だって証明しないと、立派な大人にはなれないらしい。",
+                "ko": "횃불 봉송자는 지혜와 힘의 시험을 통과해야만 수호신과 홍진 마을을 지킬 수 있는 능력을 갖춘 어엿한 어른이 될 수 있었어요",
+                "th": "มีเพียงผู้ถือเปลวเพลิงที่ผ่านบททดสอบด้านสติปัญญาและความแข็งแกร่งเท่านั้น ถึงจะได้รับการยอมรับว่าเป็นผู้ใหญ่อย่างเต็มตัว เป็นสิ่งพิสูจน์ให้เห็นว่าพวกเขาสามารถปกป้องเซนติเนลและหงเจิ้นได้",
+                "zh-Hans": "仪式的掌火人只有通过智慧和力量的考验之后，才能成为合格的成年人，代表他有足够的能力去保护岁主和虹镇。",
+                "zh-Hant": "儀式的掌火人只有通過智慧和力量的考驗之後，才能成為合格的成年人，代表他有足夠的能力去保護歲主和虹鎮。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900267,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄5",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208649,
+                    "y": 326606,
+                    "z": -4699
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -19
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber später verwandelte es sich in eine zeremonielle Aktivität des Segnens und Anbetens.",
+                "en": "But later, it transformed into a ceremonial activity of blessings and worship.",
+                "es": "Pero con el tiempo se transformó en una ceremonia de bendición y adoración.",
+                "fr": "Mais avec le temps, c'est devenu une cérémonie de bénédictions et de culte.",
+                "ja": "その後は、時代の流れとともに祈祷と祭祀の儀式に変わって、伝承されていったみたい。",
+                "ko": "하지만 시대가 변하면서 축복을 기원하고 신께 감사드리는 의식으로 점점 변모한 채 이어져 왔다고 해요",
+                "th": "แต่ต่อมาในภายหลัง ก็กลายเป็นการทำกิจกรรมในเชิงพิธีกรรมเพื่ออวยพรและบูชาเซนติเนล",
+                "zh-Hans": "只是后面时代变迁，渐渐演变成了一种祈福和祭祀的活动从而流传开来。",
+                "zh-Hant": "只是後面時代變遷，漸漸演變成了一種祈福和祭祀的活動從而流傳開來。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900267,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄5",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208649,
+                    "y": 326606,
+                    "z": -4699
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -19
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kein Wunder, dass es so kompliziert ist.",
+                    "en": "No wonder it's so complicated.",
+                    "es": "No me extraña que sea tan complicada.",
+                    "fr": "Pas étonnant que ce soit si compliqué.",
+                    "ja": "{Male=だから、こんなに複雑な手順を踏まなきゃいけなかったのか。;Female=だから、こんなに複雑な手順を踏まなきゃいけなかったんだ。}",
+                    "ko": "어쩐지... 복잡한 과정이 있었네요",
+                    "th": "ไม่แปลกใจเลยว่าทำไมพิธีกรรมมันถึงซับซ้อน",
+                    "zh-Hans": "怪不得会有这么多复杂的流程。",
+                    "zh-Hant": "怪不得會有這麼多複雜的流程。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Die vorherigen Prüfungen haben nur die Weisheit des Flammenträgers getestet. Der Flammenträger müsste immer noch seine Stärke beweisen.",
+                "en": "The previous trials only tested the Flamebearer's wisdom. The Flamebearer would still need to prove their strength.",
+                "es": "Las pruebas anteriores solo demostraban la sabiduría de los Portadores de llamas, pero aún tendrían que demostrar su fuerza.",
+                "fr": "Les épreuves précédentes ne testaient que la sagesse. Les Porteurs de flamme doivent encore prouver leur force.",
+                "ja": "昔の儀式は知恵を試すためでしかなくて、後から<ano=しょうかしゃ>掌火者</ano>の力を証明するための試練が加わったの。",
+                "ko": "이미 거친 의식은 그저 지혜를 시험하는 수준이었지만 다음에 횃불 봉송자는 시험을 통해 자신의 능력을 증명해야 해요",
+                "th": "บททดสอบก่อนหน้านี้เพียงแค่ทดสอบสติปัญญาของผู้ถือเปลวเพลิงเท่านั้น แต่ผู้ถือเปลวเพลิงยังต้องพิสูจน์ความแข็งแกร่งของตัวเองด้วย",
+                "zh-Hans": "之前的仪式只是考验智慧的阶段，后面掌火人还需要通过考验来证明自身的力量。",
+                "zh-Hant": "之前的儀式只是考驗智慧的階段，後面掌火人還需要通過考驗來證明自身的力量。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900267,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄5",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208649,
+                    "y": 326606,
+                    "z": -4699
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -19
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Stärke? Das ist unsere Spezialität!",
+                "en": "Strength? That's our specialty!",
+                "es": "¿Fuerza? ¡Esa es nuestra especialidad!",
+                "fr": "La force ? C'est notre spécialité !",
+                "ja": "力か～、これこそ我らの得意分野じゃないか。",
+                "ko": "힘이라... 그거라면 우릴 따라올 사람이 없지!!",
+                "th": "ความแข็งแกร่งเหรอ? งานถนัดของพวกเราเลยล่ะ!",
+                "zh-Hans": "力量啊，那就是我们最不缺的东西了。",
+                "zh-Hant": "力量啊，那就是我們最不缺的東西了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                },
+                "entity": {
+                  "entityId": 146900219,
+                  "mapId": 8,
+                  "blueprintType": "NPC4880001",
+                  "name": "TsEntity_主线_阿布3",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208744,
+                    "y": 326865,
+                    "z": -4693
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -108
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, es ist Zeit für das finale Ritual. Rover, bitte geh mit der glasierten Lampe, die ich dir gegeben habe, zu diesem Ort.",
+                "en": "Oh, it's time for the final ritual. Rover, please go to this place with the glazed lamp I gave you.",
+                "es": "Oh, es la hora del ritual final. Errante, ve a este sitio con la lámpara de vidrio que te di antes.",
+                "fr": "Oh, c'est l'heure de la cérémonie finale. Nomade, prends la lampe en verre que je t'ai donnée et rends-toi là-bas.",
+                "ja": "あっ、今の時間……そろそろ最後の儀式が始まる頃だよ。漂泊者さん、前にあげたあの<ano=るりとうさん>瑠璃灯盞</ano>を持って、儀式の場所へ行ってほしいんだ。",
+                "ko": "앗! 시간을 계산해 보니 마지막 의식이 이제 곧 시작될 거예요. 방랑자, 예전에 제가 드렸던 유리 등잔을 가지고 이리로 가 보세요",
+                "th": "โอ้ ถึงเวลาสำหรับพิธีกรรมขั้นสุดท้ายแล้ว ผู้พเนจร คุณช่วยไปที่นี่พร้อมกับโคมไฟเคลือบที่ฉันให้ไปด้วยนะ",
+                "zh-Hans": "啊，算了算时间，最后的仪式差不多要开始了，漂泊者请带上之前我给你的琉璃盏，前往这个地方吧。",
+                "zh-Hant": "啊，算了算時間，最後的儀式差不多要開始了，漂泊者請帶上之前我給你的琉璃盞，前往這個地方吧。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900267,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄5",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 208649,
+                    "y": 326606,
+                    "z": -4699
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -19
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_1_1_世界_乘宵山_吞龙珠2",
+          "flowIndex": 1,
+          "stateId": 15,
+          "talks": [
+            {
+              "text": {
+                "de": "Wow, also hast du bereits jeden Schritt des Rituals durchgeführt?!",
+                "en": "Wow, so you've completed every step of the ritual already?!",
+                "es": "¡Vaya! ¡¿Ya has completado todos los pasos del ritual?!",
+                "fr": "Ouah, alors tu as effectué toutes les étapes du rituel ?",
+                "ja": "わぁ……漂泊者さんったら、いつの間に全部の儀式を完成させちゃったの！？",
+                "ko": "와아... 방랑자, 의식의 모든 과정을 마친 건가요?!",
+                "th": "ว้าว นี่คุณทำพิธีกรรมครบทุกขั้นตอนแล้วเหรอเนี่ย?!",
+                "zh-Hans": "哇……不知不觉，漂泊者已经完成全部的祭祀仪式了？！",
+                "zh-Hant": "哇……不知不覺，漂泊者已經完成全部的祭祀儀式了？！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ist das wirklich alles? Ich habe immer noch das Gefühl, etwas fehlt.",
+                "en": "Is this really it, though? I still feel like something’s missing.",
+                "es": "¿De verdad que eso es todo? Tengo la sensación de que falta algo.",
+                "fr": "Est-ce possible ? J'ai toujours l'impression qu'il manque quelque chose.",
+                "ja": "これで終わったってことでいいのかな……わたしが覚えてる限りでは、何かが足りない気がするんだよね。",
+                "ko": "이렇게 끝나는 건가요?... 제 기억에 비하면 뭔가 빠진 것 같은데...",
+                "th": "นี่ถูกต้องแล้วจริงๆ เหรอ? ทำไมฉันยังรู้สึกว่าขาดอะไรไปบางอย่าง",
+                "zh-Hans": "但这样就算结束了吗……总觉得和记忆之中的还差点什么。",
+                "zh-Hant": "但這樣就算結束了嗎……總覺得和記憶之中的還差點什麼。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Rover, könntest du zurück zur Höhle im Xuanji-Gebirgskamm gehen? Wir haben dort vielleicht einige Hinweise übersehen.",
+                "en": "Rover, could you go back to the cave in Xuanji Ridge? We may have missed some clues there.",
+                "es": "Errante, ¿puedes volver a la cueva en la Cordillera Xuanji? Es posible que hayamos pasado por alto alguna prueba.",
+                "fr": "Nomade, pourrais-tu retourner à la grotte de la crête de Xuanji ? Nous y avons peut-être manqué quelques indices.",
+                "ja": "漂泊者さん、<ano=せいてんれい>星転嶺</ano>の洞窟に戻ってきてもらってもいいかな？他にも手がかりがないか、確認したいの。",
+                "ko": "방랑자, 선기령에 있는 동굴에 다녀와 보지 않을래요? 어쩌면 단서를 좀 더 찾을 수 있을지도 몰라요",
+                "th": "ผู้พเนจร คุณช่วยกลับไปที่ถ้ำที่สันเขาสวนจีอีกทีได้ไหม? เผื่อว่าพวกเราจะพลาดเบาะแสอะไรบางอย่างไป",
+                "zh-Hans": "麻烦漂泊者你回璇玑岭的山洞里一趟吧，我们看看能不能找到更多线索。",
+                "zh-Hant": "麻煩漂泊者你回璇璣嶺的山洞裡一趟吧，我們看看能不能找到更多線索。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Ziel und warte bis zur Nacht",
+        "en": "Head to the destination and wait until night",
+        "es": "Dirígete al destino y espera hasta la noche.",
+        "fr": "Dirigez-vous vers la destination et attendez la nuit",
+        "ja": "目的地につき、夜まで待つ",
+        "ko": "목적지로 이동하여 밤까지 기다리기",
+        "th": "ไปที่จุดหมายและรอจนถึงตอนกลางคืน",
+        "zh-Hans": "前往目的地，等待到夜晚",
+        "zh-Hant": "前往目的地，等待到夜晚"
+      },
+      "entities": [
+        {
+          "entityId": 146900066,
+          "mapId": 8,
+          "blueprintType": "Quest113",
+          "name": "TsEntity_任务_小火堆",
+          "areaId": 1612,
+          "position": {
+            "x": 196620,
+            "y": 316800,
+            "z": 195
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_世界_乘宵山_吞龙珠2",
+          "flowIndex": 1,
+          "stateId": 11,
+          "talks": [
+            {
+              "text": {
+                "de": "Dieser riesige Stein landete am Meer. Schnell! Lass uns das mal überprüfen!",
+                "en": "That giant rock landed by the seaside. Quick! Let's go check it out!",
+                "es": "La roca gigante ha caído junto al mar. ¡Rápido, vamos a echar un vistazo!",
+                "fr": "La pierre géante a atterri au bord de la mer. Vite ! Allons voir !",
+                "ja": "空から降ってきたあの石、海辺に落ちたぞ。早く早く、様子を見に行こう。",
+                "ko": "하늘에서 돌이 뚝 하고 바닷속으로 떨어졌어! 빠, 빨리 가보자",
+                "th": "หินยักษ์ก้อนนั้นตกลงที่ชายทะเล ไปเถอะ! รีบไปดูกัน!",
+                "zh-Hans": "那个从天而降的石头落在海边那里了，快，快去看看。",
+                "zh-Hant": "那個從天而降的石頭落在海邊那裡了，快，快去看看。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe dorthin, wo der Meteor gefallen ist",
+        "en": "Head to where the meteor fell",
+        "es": "Dirígete al lugar donde cayó el meteorito.",
+        "fr": "Rendez-vous là où la météorite est tombée",
+        "ja": "隕石が落ちる場所へ向かう",
+        "ko": "별똥별이 떨어진 곳으로 이동하기",
+        "th": "ไปยังจุดที่อุกกาบาตตก",
+        "zh-Hans": "前往流星坠落之地",
+        "zh-Hant": "前往流星墜落之地"
+      },
+      "entities": [
+        {
+          "entityId": 136901004,
+          "mapId": 8,
+          "blueprintType": "Monster126",
+          "name": "TsEntity_精英_踏光兽7",
+          "areaId": 1612,
+          "position": {
+            "x": 216257,
+            "y": 345226,
+            "z": 7
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 148900036,
+          "mapId": 8,
+          "blueprintType": "Gameplay387",
+          "name": "TsEntity_副本入口_自然_解锁道具_乘宵山",
+          "areaId": 1612,
+          "position": {
+            "x": 214106,
+            "y": 348162,
+            "z": 2
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_世界_乘宵山_吞龙珠2",
+          "flowIndex": 1,
+          "stateId": 16,
+          "talks": [
+            {
+              "text": {
+                "de": "Sieht so aus, als würde der Stein perfekt in das Loch dieses Geräts passen. Benutze deinen Levitator, um ihn zu greifen.",
+                "en": "Looks like the stone fits perfectly into the hole in this device. Use your Levitator to grab it.",
+                "es": "Parece que la piedra encaja a la perfección en el orificio de este dispositivo. Usa el Levitador para agarrarla.",
+                "fr": "On dirait que la pierre s'adapte parfaitement dans le trou de ce dispositif. Utilise le levitateur pour la saisir.",
+                "ja": "この石、さっきの装置の穴にピッタリはまりそうだな。「オブジェクト操作」で試してみよう。",
+                "ko": "이 돌멩이, 지난번 장치에 있던 구멍에 딱 맞을 것 같은데... 얼른 「컨트롤」로 확인해 봐!",
+                "th": "ดูเหมือนว่าหินก้อนนี้จะพอดีกับรูของอุปกรณ์นี้เลยนะ ใช้เลวิเทเตอร์ของเธอเก็บมันขึ้นมาสิ",
+                "zh-Hans": "这个石头和前面的装置上的孔洞看起来是吻合的，赶紧用「控物」来试试吧。",
+                "zh-Hant": "這個石頭和前面的裝置上的孔洞看起來是吻合的，趕緊用「控物」來試試吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Aktiviere die Barriere mit dem Meteor",
+        "en": "Activate the barrier with the Meteor",
+        "es": "Activa la barrera con el Meteorito.",
+        "fr": "Activez la barrière avec la Météor",
+        "ja": "隕石を反響壁に嵌める",
+        "ko": "별똥별을 사용하여 울림벽을 활성화하기",
+        "th": "ใช้อุกกาบาตเปิดม่านพลัง",
+        "zh-Hans": "利用流星激活回音壁",
+        "zh-Hant": "利用流星啟動回音壁"
+      },
+      "entities": [
+        {
+          "entityId": 141000156,
+          "mapId": 8,
+          "blueprintType": "Gameplay_CXS5_011",
+          "name": "TsEntity_副本入口_自然_CXS",
+          "areaId": 1612,
+          "position": {
+            "x": 213826,
+            "y": 348639,
+            "z": -102
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -153
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe die Herausforderungen an der Opferstätte ab",
+        "en": "Complete the challenges in the Offering Site",
+        "es": "Completa el desafío en el Sitio Ritual.",
+        "fr": "Compléter le défi au Site du rite",
+        "ja": "祈りの地の挑戦を完了",
+        "ko": "「기원의 땅」의 도전 완료하기",
+        "th": "ผ่านการท้าทายในจุดถวาย",
+        "zh-Hans": "完成祈祝之地中的挑战",
+        "zh-Hant": "完成祈祝之地中的挑戰"
+      },
+      "entities": [
+        {
+          "entityId": 146900218,
+          "mapId": 8,
+          "blueprintType": "TsEntity_0369_154_师澄",
+          "name": "TsEntity_0369_154_师澄4",
+          "areaId": 1612,
+          "position": {
+            "x": 214565,
+            "y": 348332,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -167
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 146900267,
+          "mapId": 8,
+          "blueprintType": "TsEntity_0369_154_师澄",
+          "name": "TsEntity_0369_154_师澄5",
+          "areaId": 1612,
+          "position": {
+            "x": 208649,
+            "y": 326606,
+            "z": -4699
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -19
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 25,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Shicheng",
+        "en": "Talk to Shicheng",
+        "es": "Habla con Shicheng.",
+        "fr": "Parlez à Shicheng",
+        "ja": "師澄と会話する",
+        "ko": "사화와 대화하기",
+        "th": "คุยกับชือเฉิง",
+        "zh-Hans": "与师澄交谈",
+        "zh-Hant": "與師澄交談"
+      },
+      "entities": [
+        {
+          "entityId": 146900218,
+          "mapId": 8,
+          "blueprintType": "TsEntity_0369_154_师澄",
+          "name": "TsEntity_0369_154_师澄4",
+          "areaId": 1612,
+          "position": {
+            "x": 214565,
+            "y": 348332,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -167
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 146900220,
+          "mapId": 8,
+          "blueprintType": "NPC4880001",
+          "name": "TsEntity_主线_阿布4",
+          "areaId": 1612,
+          "position": {
+            "x": 214277,
+            "y": 348280,
+            "z": 3
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_世界_乘宵山_吞龙珠2",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Rover, was ist passiert? Ich habe einen riesigen Meteoriten gesehen, der herunterfällt!",
+                "en": "Rover, what happened? I saw a huge meteor falling down!",
+                "es": "Errante, ¿qué ha pasado? ¡He visto cómo caía un meteorito gigante!",
+                "fr": "Nomade, que s'est-il passé ? J'ai vu une énorme pierre tomber !",
+                "ja": "漂泊者さん、おっきい隕石が落ちてくるのを見たよ！一体何があったの？",
+                "ko": "방랑자, 무슨 일이 생긴 건가요? 커다란 운석이 떨어지는 걸 봤어요!",
+                "th": "ผู้พเนจร เกิดอะไรขึ้น? ฉันเห็นอุกกาบาตยักษ์หล่นลงมาจากฟ้า!",
+                "zh-Hans": "漂泊者，发生什么了？我看到好大的陨石坠落了下来呢！",
+                "zh-Hant": "漂泊者，發生什麼了？ 我看到好大的隕石墜落了下來呢！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900218,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄4",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 214565,
+                    "y": 348332,
+                    "z": 0
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -167
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast Shicheng die Details des finalen Rituals erklärt.",
+                "en": "You explain the details of the final ritual to Shicheng.",
+                "es": "Le explicas a Shicheng los detalles del ritual final.",
+                "fr": "Expliquer les détails du rituel final à Shicheng.",
+                "ja": "最後の儀式について、<ano=シチョウ>師澄</ano>に話した。",
+                "ko": "마지막 의식에 대해서 사화에게 자세히 들려준다",
+                "th": "คุณอธิบายถึงเรื่องราวของพิธีกรรมขั้นตอนสุดท้ายที่เกิดขึ้นให้ Shicheng ฟัง",
+                "zh-Hans": "将最后的仪式内容告诉师澄。",
+                "zh-Hant": "將最後的儀式內容告訴師澄。"
+              },
+              "id": 2
+            },
+            {
+              "text": {
+                "de": "Danke, Rover…",
+                "en": "Thank you, Rover…",
+                "es": "Gracias, Errante...",
+                "fr": "Merci, Nomade…",
+                "ja": "そっか、ありがとう漂泊者さん……。",
+                "ko": "고마워요, 방랑자...",
+                "th": "ขอบคุณมากเลยนะผู้พเนจร...",
+                "zh-Hans": "谢谢你漂泊者……",
+                "zh-Hant": "謝謝你漂泊者……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900218,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄4",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 214565,
+                    "y": 348332,
+                    "z": 0
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -167
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe nie bemerkt, dass Onkel Fu all die Jahre dieses Ritual alleine durchgeführt hat, betend für den Wächter.",
+                "en": "I never realized Uncle Fu has been performing this ritual alone all these years, praying for the Sentinel.",
+                "es": "Nunca me había dado cuenta de que el señor Fu llevaba todos estos años realizando solo el ritual y rezando por la Centinela.",
+                "fr": "Je ne savais pas que l'oncle Fu faisait ce rituel tout seul, priant pour la Sentinelle.",
+                "ja": "<ano=さいしゅ>歳主</ano>様のために、こんなに長い間、<ano=ふく>福</ano>じいは人知れずこの儀式を続けてきたんだ……。",
+                "ko": "복 할아버지가 여태껏 묵묵히 의식을 치르며 수호신을 위해 간절히 기도했다는 것을 이제야 알았어요",
+                "th": "ฉันไม่เคยรู้มาก่อนเลยว่าคุณลุงฟูทำพิธีกรรมอธิษฐานให้เซนติเนลนี้โดยลำพังตลอดหลายปีมานี้",
+                "zh-Hans": "我才知道原来这么多年来，福伯一直默默地完成这个仪式，为岁主祈祷。",
+                "zh-Hant": "我才知道原來這麼多年來，福伯一直默默地完成這個儀式，為歲主祈禱。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900218,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄4",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 214565,
+                    "y": 348332,
+                    "z": 0
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -167
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hoffentlich wird der Wächter unsere Gebete hören und bald gesund werden.",
+                "en": "Hopefully the Sentinel will hear our prayers and get better soon.",
+                "es": "Espero que la Centinela escuche nuestras plegarias y se recupere pronto.",
+                "fr": "Avec tous ces vœux, j'espère vraiment que la Sentinelle ira mieux bientôt.",
+                "ja": "みんなの祝福が届いて、<ano=さいしゅ>歳主</ano>様が元気になってくれるといいな。",
+                "ko": "수호신께서 저희의 축복을 받고 조금이라도 회복하시면 좋겠어요",
+                "th": "หวังว่าเซนติเนลจะรับรู้คำอธิษฐานของพวกเราและฟื้นฟูพลังได้นะ",
+                "zh-Hans": "希望岁主真的能收到大家的祝福，慢慢地好起来吧。",
+                "zh-Hant": "希望歲主真的能收到大家的祝福，慢慢地好起來吧。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900218,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄4",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 214565,
+                    "y": 348332,
+                    "z": 0
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -167
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hoffen wir es...",
+                "en": "Let's hope so…",
+                "es": "Lo mismo digo...",
+                "fr": "Espérons-le…",
+                "ja": "そうなるといいな……。",
+                "ko": "정말 그랬으면 좋겠네...",
+                "th": "ขอให้เป็นแบบนั้นนะ...",
+                "zh-Hans": "但愿如此吧……",
+                "zh-Hant": "但願如此吧……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                },
+                "entity": {
+                  "entityId": 146900220,
+                  "mapId": 8,
+                  "blueprintType": "NPC4880001",
+                  "name": "TsEntity_主线_阿布4",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 214277,
+                    "y": 348280,
+                    "z": 3
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe meine Entscheidung getroffen. Ich werde Onkel Fu helfen, diese Tradition zu bewahren und das Bewusstsein dafür zu verbreiten.",
+                "en": "I've made up my mind. I will help Uncle Fu preserve this tradition and spread awareness about it.",
+                "es": "Lo tengo decidido: voy a ayudar al señor Fu a conservar esta tradición y a concienciar a la gente sobre ella.",
+                "fr": "J'ai pris ma décision. Je vais aider l'oncle Fu à préserver cette tradition et à la faire connaître.",
+                "ja": "決めた！わたし、<ano=ふく>福</ano>じいのためにもこの儀式を継承していく。みんなに、この儀式のことを知ってもらいたいの。",
+                "ko": "저 결심했어요! 복 할아버지를 도와 이 의식을 이어가고 모두에게 전할 거예요",
+                "th": "ฉันตัดสินใจแล้ว ฉันจะช่วยคุณลุงฟูอนุรักษ์พิธีกรรมประเพณีนี้ไว้ รวมถึงเผยแพร่ให้คนอื่นรู้จักด้วย",
+                "zh-Hans": "我决定了，我要帮福伯把这个仪式传承下去，让大家都知道。",
+                "zh-Hant": "我决定了，我要幫福伯把這個儀式傳承下去，讓大家都知道。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900218,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄4",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 214565,
+                    "y": 348332,
+                    "z": 0
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -167
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt nach einer guten Idee.",
+                    "en": "Sounds like a good idea.",
+                    "es": "Parece una buena idea.",
+                    "fr": "C'est une bonne idée.",
+                    "ja": "良い考えだと思うよ。",
+                    "ko": "좋은 생각이에요",
+                    "th": "เป็นความคิดที่ดีเลยนะ",
+                    "zh-Hans": "不错的想法。",
+                    "zh-Hant": "不錯的想法。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Na gut, dann ist es wohl Zeit, auf Wiedersehen zu sagen. Ich bleibe noch ein bisschen länger hier, um die Aufzeichnungen über dieses Ritual zu sortieren.",
+                "en": "Alright then, I guess it's time to say goodbye. I’ll stay here a bit longer to organize the records on this ritual.",
+                "es": "Bueno, supongo que es hora del adiós. Me voy a quedar aquí un poco más para organizar los registros del ritual.",
+                "fr": "Bon, je suppose qu'il est temps de dire au revoir. Je vais rester ici un peu plus longtemps pour organiser les archives du rituel.",
+                "ja": "わたしはもう少しここに残って、儀式の資料を整理するから、それじゃ、またね！",
+                "ko": "그럼 나중에 봬요. 전 한동안 여기에 남아서 의식에 관한 자료를 정리할 생각이거든요",
+                "th": "เอาล่ะ งั้นก็คงถึงเวลาที่ต้องร่ำลากันแล้วสินะ ฉันจะอยู่ตรงนี้อีกสักพักเพื่อเรียบเรียงบันทึกเกี่ยวกับพิธีกรรมนี้หน่อย",
+                "zh-Hans": "那么就此别过了，我想多留在这里一阵，整理下仪式的资料。",
+                "zh-Hant": "那麼就此別過了，我想多留在這裡一陣，整理下儀式的資料。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900025,
+                "name": {
+                  "zh-Hans": "师澄"
+                },
+                "entity": {
+                  "entityId": 146900218,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0369_154_师澄",
+                  "name": "TsEntity_0369_154_师澄4",
+                  "areaId": 1612,
+                  "position": {
+                    "x": 214565,
+                    "y": 348332,
+                    "z": 0
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -167
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

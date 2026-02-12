@@ -1,0 +1,1114 @@
+{
+  "id": 151000001,
+  "key": "洄游鱼_下层",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Das verlorene Azure Echo in der Meeresbrise: Teil II",
+    "en": "Cerulean Echoes Adrift in the Winds: Part II",
+    "es": "El eco azul perdido en la brisa marina: II",
+    "fr": "Échos azurés dans le vent - II",
+    "ja": "海風の中で失われた水色の残響・下",
+    "ko": "바람 속 잃어버린 짙푸른 메아리 · II",
+    "th": "เอคโค่ฟ้าคราม ล่องลอยตามสายลม: ตอนที่ II",
+    "zh-Hans": "海风中失落的湛蓝回声·下",
+    "zh-Hant": "海風中失落的湛藍回聲·下"
+  },
+  "desc": {
+    "de": "Gehe zur unteren Ebene und rette den gefangenen Aetherfin mit KU-Key",
+    "en": "Head to the lower level and rescue the trapped Aetherfin with KU-Key",
+    "es": "Dirígete al nivel inferior y rescata al Eterfín atrapado con KU-Key.",
+    "fr": "Descendre à l'étage inférieur et sauver l'Aetherfin piégé avec KU-Clé",
+    "ja": "黒海岸の下層に向かって、クココと一緒に回遊魚を助ける",
+    "ko": "검은 해안의 아래층으로 이동하여 쿠 · 키이와 함께 갇힌 회유어를 도와주기",
+    "th": "ไปที่ชั้นล่างและช่วยปลาเอเธอร์ฟินที่ติดอยู่ด้วย KU-คีย์",
+    "zh-Hans": "前往黑海岸下层，与库可可一起帮助被困的洄游鱼",
+    "zh-Hant": "前往黑海岸下層，與庫可可一起幫助被困的洄游魚"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 1,
+      "type": "Sequence",
+      "entities": [
+        {
+          "entityId": 151000004,
+          "mapId": 900,
+          "blueprintType": "Gameplay700",
+          "name": "TsEntity_玩法_传送门_B2",
+          "areaId": 15,
+          "position": {
+            "x": -39027,
+            "y": 70382,
+            "z": 558
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -64
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750714,
+          "mapId": 900,
+          "blueprintType": "Gameplay129_1_2",
+          "name": "TsEntity_特殊_任务第一个门显隐2",
+          "areaId": 1504,
+          "position": {
+            "x": -39846,
+            "y": 42903,
+            "z": 11381
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 33,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 43,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 27,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Standort von Aetherfin",
+        "en": "Arrive at Aetherfin's location",
+        "es": "Llega a la ubicación del Eterfín.",
+        "fr": "Arriver à l'emplacement d'Aetherfin",
+        "ja": "回遊魚のところに向かう",
+        "ko": "회유어가 있는 곳에 도착하기",
+        "th": "มาถึงตำแหน่งของปลาเอเธอร์ฟิน",
+        "zh-Hans": "到达洄游鱼所在地点",
+        "zh-Hant": "到達洄游魚所在地點"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 29,
+      "parentId": 27,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe die Aetherfin-Herausforderung ab",
+        "en": "Complete the Aetherfin challenge",
+        "es": "Completa el desafío del Eterfín.",
+        "fr": "Terminer le défi d'Aetherfin",
+        "ja": "挑戦をクリアする",
+        "ko": "회유어 도전 완료하기",
+        "th": "ทำการท้าทายปลาเอเธอร์ฟินให้เสร็จสมบูรณ์",
+        "zh-Hans": "完成洄游鱼挑战",
+        "zh-Hant": "完成洄游魚挑戰"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 28,
+      "parentId": 29,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Standort von KU-Key",
+        "en": "Head to KU-Key's location",
+        "es": "Dirígete a la ubicación de KU-Key.",
+        "fr": "Se rendre à l'emplacement de KU-Clé",
+        "ja": "クココのところに向かう",
+        "ko": "쿠 · 키이가 있는 곳으로 이동하기",
+        "th": "ไปที่ตำแหน่งของ KU-คีย์",
+        "zh-Hans": "前往库可可所在地点",
+        "zh-Hant": "前往庫可可所在地點"
+      },
+      "entities": [
+        {
+          "entityId": 151000000,
+          "mapId": 900,
+          "blueprintType": "NPC420083",
+          "name": "TsEntity_库洛洛420083",
+          "areaId": 1504,
+          "position": {
+            "x": -38720,
+            "y": 43194,
+            "z": 11479
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -112
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151000005,
+          "mapId": 900,
+          "blueprintType": "Gameplay701",
+          "name": "TsEntity_玩法_传送门_A3",
+          "areaId": 1504,
+          "position": {
+            "x": -37982,
+            "y": 43481,
+            "z": 11381
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -135
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750232,
+          "mapId": 900,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听",
+          "areaId": 1504,
+          "position": {
+            "x": -38224,
+            "y": 43183,
+            "z": 11387
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750734,
+          "mapId": 900,
+          "blueprintType": "Gameplay165",
+          "name": "TsEntity_玩法_装饰用错覆域",
+          "areaId": 1504,
+          "position": {
+            "x": -37982,
+            "y": 43481,
+            "z": 11381
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -135
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 10,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Los, gehen wir, wenn du bereit bist, {PlayerName}.",
+                "en": "Let's go if you're ready, {PlayerName}.",
+                "es": "Podemos ir en cuanto estés {Male=listo;Female=lista}, {PlayerName}.",
+                "fr": "Si vous êtes {Male=prêt;Female=prête}, {PlayerName}, allons-y.",
+                "ja": "{PlayerName}さん、準備ができたら行キマショウ。",
+                "ko": "{PlayerName}, 준비됐다면 바로 출발하죠",
+                "th": "ถ้าพร้อมแล้วก็ไปกันเถอะ {PlayerName}",
+                "zh-Hans": "{PlayerName}，准备好了我们就立刻出发吧。",
+                "zh-Hant": "{PlayerName}，準備好了我們就立刻出發吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es würde ziemlich lange dauern, dorthin zu laufen, also habe ich vorübergehenden Zugang zu Portalen der Küstenwächterin beantragt.",
+                "en": "It would take a lot of time to walk there, so I've requested temporary access to the Shorekeeper's portals.",
+                "es": "Nos tomaría mucho tiempo llegar caminando hasta allí, por eso solicité acceso temporal a los portales de la Guardacostas.",
+                "fr": "Ça nous prendrait une éternité d'y aller à pied, alors j'ai demandé un accès temporaire aux portails de la Gardienne du littoral.",
+                "ja": "汚染データのある場所への道はちょっと入り組んでいるノデ、システムにショアキーパーの姉さんのポータルの臨時権限を申請しまシタ。",
+                "ko": "오염 위치로 가는 길이 꽤나 복잡하네요, 시간은 없고, 방금 시스템에서 파수인 누나의 텔레포트 게이트 임시 권한을 신청했어요",
+                "th": "กว่าจะเดินไปถึงที่นั่นคงใช้เวลานาน ฉันก็เลยขอสิทธิ์ชั่วคราวในการใช้ประตูมิติของ Shorekeeper มาให้",
+                "zh-Hans": "前往污染位置的路有点复杂，时间有限，我刚刚和系统申请了守岸人姐姐的传送门临时权限。",
+                "zh-Hant": "前往汙染位置的路有點複雜，時間有限，我剛剛和系統申請了守岸人姐姐的傳送門的臨時權限。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Damit kommen wir viel schneller voran.",
+                "en": "With them, we can move much faster.",
+                "es": "Así podemos avanzar mucho más rápido.",
+                "fr": "Ça nous permettra de nous déplacer beaucoup plus rapidement.",
+                "ja": "直接ポータルで行キマショウ！",
+                "ko": "게이트 열고 가시죠!",
+                "th": "ถ้าใช้ประตูมิติละก็ เราจะเดินทางได้เร็วขึ้นมาก",
+                "zh-Hans": "我们直接开门过去吧！",
+                "zh-Hant": "我們直接開門過去吧！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das geht?",
+                    "en": "You can even do that?",
+                    "es": "¿Puedes hacer eso también?",
+                    "fr": "Tu peux faire ça ?",
+                    "ja": "{Male=そんな機能もあるのか？;Female=そんな機能もあるの？}",
+                    "ko": "이런 기능까지 가지고 있었어요?",
+                    "th": "คุณทำแบบนั้นได้ด้วยเหรอ?",
+                    "zh-Hans": "你居然还有这种功能？",
+                    "zh-Hant": "你居然還有這種功能？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wann kann ich das lernen?",
+                    "en": "When can I learn this skill?",
+                    "es": "¿Cuándo puedo aprender esta habilidad?",
+                    "fr": "Où est-ce que je peux apprendre à faire ça ?",
+                    "ja": "{Male=俺もそんな機能欲しいかも。;Female=私もそんな機能欲しいかも。}",
+                    "ko": "저도 언젠가 배워봐도 될까요?",
+                    "th": "ฉันจะเรียนสกิลนี้ได้เมื่อไหร่?",
+                    "zh-Hans": "什么时候我也能学这个？",
+                    "zh-Hant": "什麼時候我也能學這個？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich! Als dein Spitzenassistent muss ich diese Dinge ja wissen.",
+                "en": "Of course! As your best assistant, I've got to know these things.",
+                "es": "¡Por supuesto! Soy tu mejor asistente y tengo que saber estas cosas.",
+                "fr": "Bien entendu ! Je suis votre premier assistant, il faut que je sache faire ce genre de choses.",
+                "ja": "ウクク、ワタシは{PlayerName}マスターのアシスタントなんですカラ、こんな機能ぐらいあって当然デス！",
+                "ko": "쿠쿠쿠, 저는 {PlayerName} 마스터의 조력자인데, 습득한 스킬이 적어서는 절대 안 되죠!",
+                "th": "แน่นอนสิ! ในฐานะผู้ช่วยมือหนึ่งของคุณ ฉันก็ต้องรู้เรื่องพวกนี้อยู่แล้ว",
+                "zh-Hans": "库库库，我可是{PlayerName}大师的助手，掌握的技能不够丰富怎么行！",
+                "zh-Hant": "庫庫庫，我可是{PlayerName}大師的助手，掌握的技能不夠豐富怎麼行！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du es lernen willst … müsstest du deinen Geist mit dem Tethys-System verbinden und dann …",
+                "en": "If you want to learn it… you'd need to link your mind to the Tethys System, and then—",
+                "es": "Para aprenderlo… tendrás que conectar tu mente al Sistema Tetis, y luego…",
+                "fr": "Si vous souhaitez acquérir cette capacité, vous devrez connecter votre esprit au système Tethys, et...",
+                "ja": "自分で使いたいというのナラ……まずは{PlayerName}さんの頭をテティスシステムに繋げて、それカラ……",
+                "ko": "자발적으로 사용하려면... {PlayerName}은(는) 일단 자신의 뇌를 테티스 시스템과 연결시켜야 해요, 그리고 또...",
+                "th": "ถ้าคุณอยากเรียนรู้สกิลนี้... คุณจะต้องเชื่อมกระแสจิตกับระบบเธทิส แล้วจากนั้น...",
+                "zh-Hans": "如果要主动使用的话……{PlayerName}你需要先让自己的大脑和泰缇斯系统相连，然后再……",
+                "zh-Hant": "如果要主動使用的話……{PlayerName}你需要先讓自己的大腦和泰提斯系統相連，然後再……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich gebe auf.",
+                    "en": "I quit.",
+                    "es": "Paso.",
+                    "fr": "Laisse tomber.",
+                    "ja": "やめとく……",
+                    "ko": "포기 할게요...",
+                    "th": "งั้นไม่เอาละ",
+                    "zh-Hans": "还是算了吧……",
+                    "zh-Hant": "還是算了吧……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du kannst die Portale auch mit deiner besonderen Berechtigung aktivieren, genau wie beim letzten Mal.",
+                "en": "You can also activate the portals with your special clearance, just like last time.",
+                "es": "También puedes activar los portales con tu autorización especial, tal como la última vez.",
+                "fr": "Vous pouvez aussi activer les portails à l'aide de votre autorisation spéciale, comme la dernière fois.",
+                "ja": "まあ、この前のネクロ・スター事件の時と同じように、装置を使えば、ポータルが使えるようになりますヨ。",
+                "ko": "사실 지난 멸망의 별 사건 때와 같이, 당신도 장치 권한 부여를 통해서 텔레포트 게이트를 활성화 할 수 있어요",
+                "th": "นอกจากนี้ คุณยังเปิดใช้งานประตูมิติด้วยสิทธิ์เข้าถึงพิเศษได้ด้วย เหมือนคราวก่อนไงล่ะ",
+                "zh-Hans": "其实，就和上次噬亡星事件时一样，你也可以通过装置授权来激活传送门。",
+                "zh-Hant": "其實，就和上次噬亡星事件時一樣，你也可以通過裝置授權來啟動傳送門。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedenfalls habe ich das Portal für dich geöffnet. Auf geht’s!",
+                "en": "Anyway, I've opened up the portal for you. Let's get going!",
+                "es": "De todos modos, he abierto el portal para ti. ¡Sigamos adelante!",
+                "fr": "Quoi qu'il en soit, j'ai ouvert le portail pour vous. Allons-y !",
+                "ja": "ウ……とにかくポータル開けますネ、急いデ！",
+                "ko": "음, 아무튼 이번에는 제가 게이트를 열겠어요, 빨리 가죠!",
+                "th": "แต่ฉันเปิดประตูมิติไว้ให้คุณแล้ว ไปกันเถอะ!",
+                "zh-Hans": "唔，总之这次我先把门打开了，我们快点赶过去吧！",
+                "zh-Hant": "唔，總之這次我先把門打開了，我們快點趕過去吧！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe über das Portal zum vorgesehenen Ort",
+        "en": "Head to the designated location via the portal",
+        "es": "Dirígete a la ubicación designada a través del portal.",
+        "fr": "Se rendre à l'emplacement désigné via le portail",
+        "ja": "ポータルを抜ける",
+        "ko": "텔레포트 게이트를 지나 오염 지점으로 이동하기",
+        "th": "ไปที่ตำแหน่งที่กำหนดผ่านประตูมิติ",
+        "zh-Hans": "穿过传送门前往清理点",
+        "zh-Hant": "穿過傳送門前往清理點"
+      },
+      "entities": [
+        {
+          "entityId": 151000004,
+          "mapId": 900,
+          "blueprintType": "Gameplay700",
+          "name": "TsEntity_玩法_传送门_B2",
+          "areaId": 15,
+          "position": {
+            "x": -39027,
+            "y": 70382,
+            "z": 558
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -64
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151000005,
+          "mapId": 900,
+          "blueprintType": "Gameplay701",
+          "name": "TsEntity_玩法_传送门_A3",
+          "areaId": 1504,
+          "position": {
+            "x": -37982,
+            "y": 43481,
+            "z": 11381
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -135
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750232,
+          "mapId": 900,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听",
+          "areaId": 1504,
+          "position": {
+            "x": -38224,
+            "y": 43183,
+            "z": 11387
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750714,
+          "mapId": 900,
+          "blueprintType": "Gameplay129_1_2",
+          "name": "TsEntity_特殊_任务第一个门显隐2",
+          "areaId": 1504,
+          "position": {
+            "x": -39846,
+            "y": 42903,
+            "z": 11381
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750734,
+          "mapId": 900,
+          "blueprintType": "Gameplay165",
+          "name": "TsEntity_玩法_装饰用错覆域",
+          "areaId": 1504,
+          "position": {
+            "x": -37982,
+            "y": 43481,
+            "z": 11381
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -135
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 33,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bereinige die korrupten Daten",
+        "en": "Clear the corrupted data",
+        "es": "Elimina los datos corruptos.",
+        "fr": "Effacer les données corrompues",
+        "ja": "汚染物を除去する",
+        "ko": "오염물 제거하기",
+        "th": "ล้างข้อมูลที่เสียหาย",
+        "zh-Hans": "清除污染物",
+        "zh-Hant": "清除汙染物"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 36,
+      "parentId": 33,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erreiche den vorgesehenen Ort",
+        "en": "Arrive at the designated location",
+        "es": "Llega a la ubicación designada.",
+        "fr": "Se rendre à l'emplacement désigné",
+        "ja": "汚染のあるところに向かう",
+        "ko": "오염 소재지에 도착하기",
+        "th": "มาถึงตำแหน่งที่กำหนด",
+        "zh-Hans": "到达污染块所在地",
+        "zh-Hant": "到達汙染塊所在地"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 44,
+      "parentId": 43,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 151750174,
+          "mapId": 900,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录7鱼过场下",
+          "areaId": 1506,
+          "position": {
+            "x": -28981,
+            "y": 72824,
+            "z": 5421
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 45,
+      "parentId": 43,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 151750289,
+          "mapId": 900,
+          "blueprintType": "Treasure021",
+          "name": "TsEntity_豪华物资箱_初始隐匿",
+          "areaId": 1506,
+          "position": {
+            "x": -30548,
+            "y": 71560,
+            "z": 5672
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 126
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {},
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist fantastisch.",
+                    "en": "It's magnificent.",
+                    "es": "Es magnífico.",
+                    "fr": "C'est magnifique.",
+                    "ja": "壮観だ。",
+                    "ko": "장관이네요",
+                    "th": "อลังการสุดๆ",
+                    "zh-Hans": "真壮观。",
+                    "zh-Hant": "真壯觀。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "In der Tat.",
+                "en": "It is, indeed.",
+                "es": "Lo es, sin duda.",
+                "fr": "Oui, en effet.",
+                "ja": "そうデスネ。",
+                "ko": "그러게요, 정말로 장관이네요",
+                "th": "เห็นด้วยเลย",
+                "zh-Hans": "是啊，真的好壮观。",
+                "zh-Hant": "是啊，真的好壯觀。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 3,
+              "options": [
+                {
+                  "text": {
+                    "de": "Es kommt mir so bekannt vor.",
+                    "en": "It looks so familiar.",
+                    "es": "Me resulta familiar.",
+                    "fr": "J'ai l'impression de l'avoir déjà vu quelque part...",
+                    "ja": "何だか懐かしい。",
+                    "ko": "그리운 감정이 느껴지네요",
+                    "th": "ดูคุ้นตามากเลยแฮะ",
+                    "zh-Hans": "有种怀念的感觉。",
+                    "zh-Hant": "有種懷念的感覺。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Es ist toll, endlich zu sehen, was auf den Bildern festgehalten wurde.",
+                "en": "It's great to finally see what's captured in those pictures.",
+                "es": "Es fantástico poder ver al fin lo que se captura en esas imágenes.",
+                "fr": "C'est formidable de pouvoir enfin admirer ce que je ne pouvais voir que sur les photos...",
+                "ja": "写真とそっくりな景色を見られて本当にヨカッタデス！",
+                "ko": "사진상 똑같은 경치를 볼 수 있다니 너무 좋네요!",
+                "th": "เยี่ยมไปเลยที่ได้เห็นสิ่งที่บันทึกไว้ในรูปภาพพวกนั้นสักที",
+                "zh-Hans": "能见到和照片里一模一样的风景真是太好了！",
+                "zh-Hant": "能見到和照片裡一模一樣的風景真是太好了！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Also hattest du also vor, mir das zu zeigen?",
+                    "en": "So, you planned to show me this?",
+                    "es": "Entonces, ¿planeabas mostrarme esto?",
+                    "fr": "Alors, tu avais prévu de me montrer ça ?",
+                    "ja": "{Male=こうなると、とっくに知ってたんだな。;Female=こうなると、とっくに知ってたんだね。}",
+                    "ko": "이렇게 될 줄 이미 알고 있었나요?",
+                    "th": "ตกลงกะว่าจะพาฉันมาดูสิ่งนี้งั้นเหรอ?",
+                    "zh-Hans": "你早就知道会这样了么？",
+                    "zh-Hant": "你早就知道會這樣了嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Was genau sind das für Bilder?",
+                    "en": "What are those pictures exactly?",
+                    "es": "¿Qué son exactamente esas imágenes?",
+                    "fr": "C'est quoi, au juste, ces photos ?",
+                    "ja": "{Male=クココが言ってた写真って一体なんだ？;Female=クココが言ってた写真って一体なんなの？}",
+                    "ko": "그래서 그 사진은 대체 어떤 사진이죠?",
+                    "th": "รูปภาพพวกนั้นคืออะไรกันแน่?",
+                    "zh-Hans": "所以那到底是什么照片？",
+                    "zh-Hant": "所以那到底是什麼照片？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Äh … Entschuldigung, ich wollte dich nicht austricksen.",
+                "en": "Ah… Sorry, I didn't mean to hide this from you.",
+                "es": "Ah... Lo siento, no pretendía engañarte.",
+                "fr": "Ah... Pardon, mon intention n'était pas de vous manipuler.",
+                "ja": "あ……ごめんナサイ、騙したかったわけじゃないンデス。",
+                "ko": "아... 미안해요, 사실 저도 일부러 마스터를 속이려고 한 거 아니에요",
+                "th": "เอ่อ... ขอโทษนะ ฉันไม่ได้ตั้งใจที่จะปิดบังคุณ",
+                "zh-Hans": "啊……抱歉，其实我不是有意瞒着大师你的。",
+                "zh-Hant": "啊……抱歉，其實我不是有意瞞著大師你的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Mission sollte eine Überraschung sein.",
+                "en": "This mission was supposed to be a surprise.",
+                "es": "Se suponía que esta misión sería una sorpresa.",
+                "fr": "Cette mission était censée être une surprise.",
+                "ja": "今回のことは、ただ……{PlayerName}マスターにサプライズしたかっただけデシテ。",
+                "ko": "이번에 제가 같이 움직이자고 요청한 원인은 단지 {PlayerName} 마스터에게 서프라이즈를 해주고 싶었을 뿐이에요",
+                "th": "ภารกิจนี้คืออยากจะเซอร์ไพรส์น่ะ",
+                "zh-Hans": "我这次邀请你一起行动，只是想给{PlayerName}大师一个惊喜。",
+                "zh-Hant": "我這次邀請你一起行動，只是想給{PlayerName}大師一個驚喜。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nach der Krise habe ich beim Aufräumen der Abfalldaten des Necro-Sterns einige alte Bilder gefunden.",
+                "en": "After that crisis, I found some old pictures while cleaning Necrostar's waste data.",
+                "es": "Después de aquella emergencia, encontré algunas fotos antiguas mientras limpiaba los datos desechados de la Necroestrella.",
+                "fr": "Après le dernier incident, j'ai trouvé de vieilles photos en nettoyant les données résiduelles de Nécroastre.",
+                "ja": "前回の事件の後、ワタシがネクロ・スターが残した廃棄データを処分していたトキ、その中からたまたま、大切に保管されてた古い写真を数枚見かけたモノデ……",
+                "ko": "지난 사건 후, 제가 멸망의 별의 폐기 데이터를 처리할 때, 뜻밖에도 잘 보존한 몇 장의 낡은 사진을 보게 됐어요",
+                "th": "หลังจากวิกฤตครั้งนั้น ฉันก็ไปเจอรูปภาพเก่าๆ ตอนที่กำลังล้างข้อมูลขยะของเนโครสตาร์",
+                "zh-Hans": "上次事件后，我在处理噬亡星的废弃数据时无意间见到了几张珍藏的旧照片……",
+                "zh-Hant": "上次事件後，我在處理噬亡星的廢棄數據時無意間見到了幾張珍藏的舊照片……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah … Ich habe vergessen, dir das zu erzählen. Tut mir leid.",
+                "en": "Ah… I forgot to tell you this. Sorry.",
+                "es": "Ay… me olvidé de contarte esto. Perdona.",
+                "fr": "Ah... J'avais oublié de vous le dire. Désolé.",
+                "ja": "ずっと黙っていてごめんナサイ……",
+                "ko": "아... 미안해요, {PlayerName}에게 얘기 못 해서요",
+                "th": "อา... ฉันลืมบอกเรื่องนี้กับคุณไปเลย ขอโทษนะ",
+                "zh-Hans": "啊……抱歉，一直没有告诉你。",
+                "zh-Hant": "啊……抱歉，一直沒有告訴你。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe sie beim Aufräumen der Abfalldaten des Necro-Sterns gefunden. Aber sie sind zu alt, um ihre Herkunft zu bestimmen.",
+                "en": "I found them while cleaning Necrostar's waste data. But they're too old to be sourced.",
+                "es": "Los encontré mientras limpiaba los datos desechados de la Necroestrella, pero son demasiado antiguos como para poder localizarlos.",
+                "fr": "Je les ai trouvées en nettoyant les données résiduelles de Nécroastre. Elles sont trop anciennes pour que leur source puisse être identifiée.",
+                "ja": "実はあれは日付けもわからないほどの古い写真でしテ、ネクロ・スターの廃棄データを処分していたトキ、たまたま見かけたものデス。",
+                "ko": "사실 그건 시대를 알 수 없는 낡은 사진이에요, 제가 멸망의 별의 폐기 데이터를 처리할 때 뜻밖에도 발견한 거예요",
+                "th": "ฉันเจอรูปภาพพวกนี้ตอนที่กำลังล้างข้อมูลขยะของเนโครสตาร์ แต่มันเก่าเกินไปจนหาที่มาไม่ได้",
+                "zh-Hans": "那其实是一组无法追溯日期的老照片，是我在处理噬亡星的废弃数据时无意间发现的。",
+                "zh-Hant": "那其實是一組無法追溯日期的老照片，是我在處理噬亡星的廢棄數據時無意間發現的。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe dich auf diesen Bildern gesehen, wie du die Aetherfine bestaunt hast.",
+                "en": "I saw you in those pictures, gazing at the Aetherfins.",
+                "es": "En esas fotos salías tú, mirando a los Eterfines.",
+                "fr": "Je vous ai {Male=vu;Female=vue} sur ces photos. Vous observiez les aetherfins.",
+                "ja": "写真に映っているノハ、マスターが<ano=かいゆう>回遊</ano>魚をぼんやりと眺めている姿デス。",
+                "ko": "사진속 그림은 바로 마스터가 회유어 기경 앞에 서서 생각을 하고 있는 모습이에요",
+                "th": "ฉันเห็นคุณอยู่ในรูปภาพ กำลังจ้องมองปลาเอเธอร์ฟิน",
+                "zh-Hans": "照片的画面就是大师站在洄游鱼奇景前出神观望的样子。",
+                "zh-Hant": "照片的畫面就是大師站在洄游魚奇景前出神觀望的樣子。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wer auch immer sie gemacht hat, ist jetzt … ein Rätsel.",
+                "en": "Whoever took them is... a mystery now.",
+                "es": "Quien las tomó es... una incógnita,",
+                "fr": "Qui les a prises ? C'est un mystère...",
+                "ja": "誰がその写真を撮ったかマデハ……もう知る由もありませんネ。",
+                "ko": "누가 찍어준 사진 인지는... 지금 와서 알 수 없게 돼버렸죠",
+                "th": "ตอนนี้เรื่องที่ว่าใครเป็นคนถ่าย... ก็ยังเป็นปริศนาอยู่",
+                "zh-Hans": "至于那究竟是谁偷拍下来的……如今已经无从考证了。",
+                "zh-Hant": "至於那究竟是誰偷拍下來的……如今已經無從考證了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber sie müssen sowohl dir als auch dieser Person sehr viel bedeuten.",
+                "en": "But they must be precious to both you and that person.",
+                "es": "pero deben ser valiosas, tanto para ti como para esa persona.",
+                "fr": "Mais elles devaient être précieuses, pour vous et pour cette personne.",
+                "ja": "ですが、写真を撮った人にとっテモ、{PlayerName}さんにとっテモ、大切な思い出デスヨネ？",
+                "ko": "하지만, 그것은 사진을 찍은 사람에게도, {PlayerName}에게 있어서도 엄청 중요한 추억이겠죠?",
+                "th": "แต่รูปภาพพวกนี้คงเป็นสิ่งล้ำค่าสำหรับทั้งคุณและคนคนนั้นแน่นอน",
+                "zh-Hans": "但，那对于拍照的人和{PlayerName}而言，都会是很重要的回忆吧？",
+                "zh-Hant": "但，那對於拍照的人和{PlayerName}而言，都會是很重要的回憶吧？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Apropos Bilder, ich wollte mich seit dem letzten Mal schon richtig bei dir bedanken.",
+                "en": "Speaking of which, I've always wanted to thank you properly since last time.",
+                "es": "Hablando de lo cual, nunca pude darte las gracias apropiadamente por lo que pasó la última vez.",
+                "fr": "En parlant de cela, je ne vous ai toujours pas remercié comme il se doit pour la dernière fois.",
+                "ja": "前回の事で、ワタシは本当に{PlayerName}さんに色々と助けてもらってたノニ、ずっと感謝を伝えられてイマセン！",
+                "ko": "지난번 사건에서 {PlayerName} 마스터가 저를 너무 많이 도와주었는데, 저는 지금까지 마스터에게 감사의 뜻을 전할 기회도 못 찾았어요!",
+                "th": "จะว่าไปแล้ว ฉันอยากขอบคุณคุณให้ดีๆ ตั้งแต่คราวที่แล้ว",
+                "zh-Hans": "上次的事件中{PlayerName}真的帮了我很多忙，我一直没找到机会正式对大师表达感谢！",
+                "zh-Hant": "上次的事件中{PlayerName}真的幫了我很多忙，我一直沒找到機會正式對大師表達感謝！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie wäre es, wenn ich ein Foto von der Landschaft hier als Andenken für dich mache?",
+                "en": "How about I take a picture of the scenery here for you as a keepsake?",
+                "es": "¿Qué tal si tomo una fotografía del paisaje para ti como recuerdo?",
+                "fr": "Que diriez-vous d'une photo de ce paysage en guise de souvenir ?",
+                "ja": "お礼として、ここの風景を撮ってアゲマス！",
+                "ko": "그럼, 지금 이 경치를 사진 찍어 선물로 드릴게요!",
+                "th": "มาถ่ายรูปทิวทัศน์ที่นี่ให้คุณเป็นของที่ระลึกดีไหม?",
+                "zh-Hans": "我帮你拍一张这里的风景作为谢礼吧！",
+                "zh-Hant": "我幫你拍一張這裡的風景作為謝禮吧！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Vergangenheit mag vorbei sein, aber es warten immer neue Geschichten!",
+                "en": "The past may be gone, but new stories are always waiting!",
+                "es": "El pasado es pasado... ¡pero siempre hay nuevas historias esperando!",
+                "fr": "Le passé n'est plus, mais il n'est jamais trop tard pour écrire de nouvelles histoires !",
+                "ja": "過去の思い出の代わりにはならないのかもしれないですケド、新しい思い出にはなるデショウ。",
+                "ko": "과거의 추억을 대신할 순 없지만, 새로운 이야기는 계속될 거예요",
+                "th": "อดีตอาจผ่านพ้นไปแล้ว แต่มีเรื่องราวใหม่ๆ รอคอยอยู่เสมอ!",
+                "zh-Hans": "虽然无法代替过去的回忆，但是新的故事还会继续。",
+                "zh-Hant": "雖然無法代替過去的回憶，但是新的故事還會繼續。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "…",
+                    "en": "…",
+                    "es": "…",
+                    "fr": "...",
+                    "ja": "……",
+                    "ko": "...",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Danke.",
+                    "en": "Thank you.",
+                    "es": "Gracias.",
+                    "fr": "Merci.",
+                    "ja": "ありがとう。",
+                    "ko": "고마워요",
+                    "th": "ขอบคุณนะ",
+                    "zh-Hans": "谢谢。",
+                    "zh-Hant": "謝謝。"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 1,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Gern geschehen! Ehrlich gesagt habe ich auch schon eines gemacht, als wir im oberen Gebiet waren! Das drucke ich auch gleich aus!",
+                "en": "You're welcome! Actually, I've already taken one while we were on the surface! I'll print it as well!",
+                "es": "¡Ha sido un placer! ¡De hecho, ya tomé una mientras estábamos en la zona alta! ¡La imprimiré también!",
+                "fr": "De rien ! Pour tout vous dire, j'en avais déjà pris une dans la zone supérieure ! Je vais l'imprimer aussi !",
+                "ja": "ウクク、実はさっき、<ano=ブラックショア>黒海岸</ano>上層でもうこっそり一枚撮ったンデス、合わせてプリントするから受け取っテクダサイネ！",
+                "ko": "쿠쿠쿠, 사실 방금 검은 해안 위층에서 이미 한 장 몰래 찍었어요, 제가 같이 뽑아서 선물로 드릴게요!",
+                "th": "ยินดีเลย! จริงๆ แล้ว ฉันก็ถ่ายไว้แล้วรูปหนึ่งตอนที่เราอยู่บนผิวน้ำ! เดี๋ยวพิมพ์ออกมาให้ด้วย!",
+                "zh-Hans": "库库库，其实刚刚在黑海岸上层已经偷偷拍了一张了，我将它们冲印出来一并作为谢礼送给你！",
+                "zh-Hant": "庫庫庫，其實剛剛在黑海岸上層已經偷偷拍了一張了，我將它們沖印出來一併作為謝禮送給你！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens hat uns der Küstenwächterin gerade geholfen. Es wäre schön, wenn wir uns persönlich bei ihr bedanken könnten.",
+                "en": "By the way, the Shorekeeper just helped us. It would be nice to thank her in person.",
+                "es": "Por cierto, la Guardacostas acaba de ayudarnos. Estaría bien darle las gracias en persona.",
+                "fr": "Et n'oublions pas que la Gardienne du littoral nous a aidés... Nous devrions la remercier en personne.",
+                "ja": "そういえば、さっきショアキーパーの姉さんがポータルで助けてくれませんデシタカ？{PlayerName}さん、お姉さんに会いに行ってみてはどうでショウカ？",
+                "ko": "그런데 말인데, 방금 파수인 누나가 게이트를 열어 저희를 도와줬잖아요... {PlayerName}은(는) 직접 가서 만나보지 않을래요?",
+                "th": "แต่ Shorekeeper เพิ่งช่วยเราเอาไว้ ไปขอบคุณเธอด้วยตัวเองคงจะดีกว่า",
+                "zh-Hans": "说起来，刚刚守岸人姐姐有开门帮助过我们呀……{PlayerName}要不要去见见她呢。",
+                "zh-Hant": "說起來，剛剛守岸人姐姐有開門幫助過我們呀……{PlayerName}要不要去見見她呢。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es muss schon eine ganze Weile her sein, seit sie die Aetherfine gesehen hat.",
+                "en": "It must be quite a while since she's seen the Aetherfins again.",
+                "es": "También debía llevar bastante tiempo sin ver Eterfines.",
+                "fr": "Elle n'a pas dû voir les aetherfins depuis bien longtemps.",
+                "ja": "あの<ano=かいゆう>回遊</ano>魚の群れ、お姉さんも久しぶりに見たのカナ……",
+                "ko": "그녀도 회유어를 못 본 지 오래되지 않았을까요...",
+                "th": "ครั้งสุดท้ายที่เธอเห็นปลาเอเธอร์ฟินคงจะผ่านมานานมากแล้ว",
+                "zh-Hans": "那些洄游鱼，她是不是也很久没有见到了呢……",
+                "zh-Hant": "那些洄游魚，她是不是也很久沒有見到了呢……"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "parentId": 43,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

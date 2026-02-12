@@ -1,0 +1,1319 @@
+{
+  "id": 880000004,
+  "key": "收集任务第一天",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Spezialgetränke",
+    "en": "Specialty Drinks",
+    "es": "Bebidas locales",
+    "fr": "Boisson spéciale",
+    "ja": "ご当地飲料",
+    "ko": "특색 있는 음료",
+    "th": "เครื่องดื่มพิเศษ",
+    "zh-Hans": "特色饮品",
+    "zh-Hant": "特色飲品"
+  },
+  "desc": {
+    "de": "Magi versucht, dich zu kontaktieren, und es scheint mit dem großangelegten Projekt namens Der Sol-2 zusammenzuhängen, das die Pioneer Convention in letzter Zeit geplant hat ......",
+    "en": "Maqi is trying to contact you, and it appears to be related to the Pioneer Association's ambitious project, \"Second Coming of Solaris\"...",
+    "es": "Maqi está intentando ponerse en contacto contigo. Parece que tiene que ver con el ambicioso proyecto «Segunda venida de Solaris», que la Asociación de Pioneros ha estado planeando últimamente...",
+    "fr": "Maqi tente de vous joindre. Il semblerait que ce soit en lien avec le projet ambitieux de l'Association Pionnière : le Sol-2…",
+    "ja": "馬琪からの連絡があったようだ。それが先駆条約が最近取り掛かっている「第二ソラリス」という大型プロジェクトに関わるみたい……",
+    "ko": "마치가 연락을 시도하고 있습니다. 이는 최근 선행공약이 기획한 「세컨드 솔라리스」라는 대형 프로젝트와 관련이 있는 것 같습니다...",
+    "th": "หม่าฉีพยายามติดต่อคุณ ดูเหมือนจะเกี่ยวข้องกับโครงการที่สมาคมผู้บุกเบิกมุ่งหวัง \"ดาวโซลาริสดวงที่สอง\"...",
+    "zh-Hans": "马琪正在尝试联络你，而这似乎与先行公约最近筹划的名为《第二索拉》的大型项目有关……",
+    "zh-Hant": "馬琪正在嘗試聯絡你，而這似乎與先行公約最近籌劃的名為《第二索拉》的大型專案有關……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 40,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Kontaktiere Maqi, um mehr über die heute zu erstellende Spielszene zu erfahren.",
+        "en": "Contact Maqi to learn about today's scenario",
+        "es": "Contacta a Maqi para aprender sobre la escena del juego que se creará hoy.",
+        "fr": "Contacter Maqi pour en savoir plus sur le scénario du jour",
+        "ja": "今日作るゲームのシーンについて馬琪に聞く",
+        "ko": "마치를 찾아 오늘 만들 맵에 대해 묻기",
+        "th": "ติดต่อหม่าฉีเพื่อทำความเข้าใจสถานการณ์ของวันนี้",
+        "zh-Hans": "找马琪了解今天要制作的游戏场景",
+        "zh-Hant": "找馬琪了解今天要製作的遊戲場景"
+      },
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Lassen Sie mich unsere Aufgabe heute erklären.",
+                "en": "Let me explain our job today.",
+                "es": "Permíteme explicar nuestro trabajo de hoy.",
+                "fr": "La scène de jeu à produire aujourd'hui est comme ça...",
+                "ja": "今日お願いしたいシーンはここ……",
+                "ko": "오늘 제작할 맵은 이러해요...",
+                "th": "ให้ฉันอธิบายงานของเราในวันนี้ก่อนนะ",
+                "zh-Hans": "今天要制作的游戏场景是这样的……",
+                "zh-Hant": "今天要製作的遊戲場景是這樣的……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Eröffnungskapitel hat unser Protagonist eine Stadt namens <i>Tiancheng</i> besucht.",
+                "en": "In the opening chapter, our protagonist paid a visit to a city called <i>Tiancheng</i>.",
+                "es": "En el capítulo de apertura, nuestro protagonista visitó una ciudad llamada <i>Tiancheng</i>.",
+                "fr": "Dans ce chapitre, le protagoniste est venu à la ville de la Cité du ciel.",
+                "ja": "主人公が「天城（てんじょう）」という城にやって来る場面です。",
+                "ko": "이 장에서 주인공은 천성이라는 도시에 도착해요",
+                "th": "ในบทเปิดเรื่อง ตัวเอกของเราได้เดินทางไปยังเมืองที่ชื่อว่า<i>เทียนเฉิง</i>",
+                "zh-Hans": "在这一章里，主角来到了一个名叫天城的城市。",
+                "zh-Hant": "在這一章裡，主角來到了一個名叫天城的城市。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Laut dem Buch \"füllen die Rufe der Händler den Markt... eine verwirrende Vielfalt an Waren füllt die Regale jedes Ladens...\"",
+                "en": "According to the book, \"the cries of peddlers fill the market... a bewildering array of goods lines the shelves of every shop...\"",
+                "es": "Según el libro, \"los gritos de los vendedores llenan el mercado... una desconcertante variedad de productos llena los estantes de cada tienda...\"",
+                "fr": "Dans l'original, il est écrit que « le marché est toujours animé par les vendeurs à la criée... en arrivant au quartier commercial, chaque magasin est encore plus merveilleux... ».",
+                "ja": "原作では「市場に足を踏み入れた途端耳に入ってきた、重なり合うような集客の呼びかけ。商業区域の店先に並ぶ、輝かんばかりの珍品の数々……」",
+                "ko": "원작에는 「시장에는 노점상들의 고함소리가 끊이지 않는다... 상업 지역에 오니 상가마다 볼거리가 가득하다...」",
+                "th": "หนังสือได้บรรยายเมืองแห่งนี้ไว้ว่า \"เสียงร้องเรียกลูกค้าของพ่อค้าแม่ค้าดังไปทั่วทั้งตลาด... สินค้าละลานตาวางเรียงรายอยู่บนชั้นวางของทุกร้าน...\"",
+                "zh-Hans": "原著里写道“在集市里，摊贩们的叫卖声络绎不绝……而来到商业区，各个商铺里更是琳琅满目……”",
+                "zh-Hant": "原著裡寫道「在集市裡，攤販們的叫賣聲絡繹不絕……而來到商業區，各個商鋪裡更是琳琅滿目……」"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"Wir haben einen <color=highlight>lokalen Drink</color> probiert, der vom Hotel serviert wurde. Ich fühlte mich total erleichtert, obwohl meine Zunge ein bisschen von der Bitterkeit brannte...\"",
+                "en": "\"We had a taste of a <color=highlight>local drink</color> served by the hotel. I was caught by total relief though my tongue stung a bit from that bitterness...\"",
+                "es": "\"Probamos una <color=highlight>bebida local</color> servida por el hotel. Me sentí totalmente aliviado aunque mi lengua picaba un poco por la amargura...\"",
+                "fr": "« Dans l'hôtel où nous avons séjourné, nous avons bu une <color=highlight>boisson locale spéciale</color>. C'était amer, mais nous avons pu nous détendre... »",
+                "ja": "「宿で味わった、苦いが、何故か心が落ち着く<color=highlight>ご当地飲料</color>……」",
+                "ko": "「여관에서 특별한 <color=highlight>현지 음료</color>를 마셨는데, 맛은 씁쓸하지만 마음을 편하게 한다...」",
+                "th": "\"เราได้ลิ้มลอง<color=highlight>เครื่องดื่มท้องถิ่น</color>ที่ทางโรงแรมนำมาเสิร์ฟ ข้ารู้สึกผ่อนคลายอย่างเต็มที่ แม้ว่าลิ้นจะชาเล็กน้อยจากรสขมนั้น...\"",
+                "zh-Hans": "“在落脚的旅馆里，我们喝到了一种特殊的<color=highlight>当地饮品</color>，入口虽然苦涩，但却相当让人放松……”",
+                "zh-Hant": "「在落脚的旅舘裡，我們喝到了一種特殊的<color=highlight>當地飲品</color>，入口雖然苦澀，但卻相當讓人放鬆……」"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"Selbst in einem so fremden Land fühlen wir uns sicher und geborgen... Wir blieben dort drei Tage, um unsere Kräfte wiederherzustellen, bevor wir uns widerwillig von dieser Stadt verabschiedeten.\"",
+                "en": "\"Even on such foreign land, we feel safe and sound... We stayed there for three days to restore our strengths before we reluctantly said goodbye to this city.\"",
+                "es": "\"Incluso en una tierra tan extranjera, nos sentimos seguros... Nos quedamos allí durante tres días para recuperar nuestras fuerzas antes de despedirnos a regañadientes de esta ciudad.\"",
+                "fr": "« Cette ville nous a apaisés... Nous avons passé trois jours ici, nous avons repris des forces avant de partir à regret. »",
+                "ja": "「この城は、人を安心させる力を持っている。俺たちは丸三日の休養をし、名残惜しみながらここを発った」",
+                "ko": "「이 도시는 우리를 편안하게 한다... 우리는 여기에서 3일을 쉬고, 정신을 차린 후에야 아쉬워하며 떠났다.」",
+                "th": "\"แม้จะอยู่ในดินแดนต่างถิ่น เรากลับรู้สึกปลอดภัย... เราพักอยู่ที่นั่นสามวันเพื่อฟื้นฟูกำลังก่อนจะกล่าวคำอำลาเมืองนี้อย่างอาลัยอาวรณ์\"",
+                "zh-Hans": "“这座城市让我们感到心安……我们在此休息了三日，养足了精神后才依依不舍地离开。”",
+                "zh-Hant": "「這座城市讓我們感到心安……我們在此休息了三日，養足了精神後才依依不捨地離開。」"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses <i>Tiancheng</i> hier ähnelt sehr Jinzhou.",
+                "en": "This <i>Tiancheng</i> here is so much alike to Jinzhou.",
+                "es": "Este <i>Tiancheng</i> es muy parecido a Jinzhou.",
+                "fr": "Cette ville, Cité du ciel, ressemble à notre ville Jinzhou, n'est-ce pas ?",
+                "ja": "この「天城」……どこか今州と重なりますね。",
+                "ko": "이런 내용이 쓰여 있어요. 이 천성은 볼수록 저희 금주와 매우 흡사해요",
+                "th": "เมือง<i>เทียนเฉิง</i>มีความคล้ายคลึงกับจินโจวมาก",
+                "zh-Hans": "这个天城，听起来跟我们今州很像呢。",
+                "zh-Hant": "這個天城，聽起來跟我們今州很像呢。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann an nichts anderes denken.",
+                    "en": "I can think of nothing else.",
+                    "es": "No puedo pensar en nada más.",
+                    "fr": "C'est parfait. Trop bien !",
+                    "ja": "あまりにも似てる。",
+                    "ko": "맞아요. 많이 닮았어요",
+                    "th": "ฉันนึกถึงที่อื่นไม่ออกเลย",
+                    "zh-Hans": "像，太像了。",
+                    "zh-Hant": "像，太像了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Man könnte es sogar als Doppelgänger betrachten.",
+                    "en": "You can even see it as a doppelganger.",
+                    "es": "Incluso puedes verlo como un doble.",
+                    "fr": "C'est comme si on avait juste changé le nom.",
+                    "ja": "名前を変えただけでは？",
+                    "ko": "이름만 바꾼 것 같아요",
+                    "th": "จะเรียกว่าเป็นเมืองคู่แฝดเลยก็ยังได้",
+                    "zh-Hans": "仿佛只是换了个名字。",
+                    "zh-Hant": "仿佛只是換了個名字。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, das Entwicklerteam möchte einen Gegenstand, der diesen Wohlstand von <i>Tiancheng</i> verkörpert, das auch eine bedeutende Stadtszene im Spiel ist.",
+                "en": "Anyway, the dev team wants an item that embodies this prosperity of <i>Tiancheng</i>, which is also a significant town scene in the game.",
+                "es": "En cualquier caso, el equipo de desarrollo quiere un artículo que represente esta prosperidad de <i>Tiancheng</i>, que también es una escena de ciudad significativa en el juego.",
+                "fr": "En tout cas, en tant qu'une scène clé, les développeurs veulent trouver quelque chose qui représente cette ville dans le roman.",
+                "ja": "開発スタッフは、小説に出た「天城」を感じさせる何かが欲しい、と言っていました。",
+                "ko": "결론적으로 개발자들은 주요 배경 디자인을 위해 소설 속 천성을 대표할 만한 물건을 찾기를 원해요",
+                "th": "อย่างไรก็ตาม ทีมพัฒนาต้องการองค์ประกอบที่สื่อถึงความเจริญรุ่งเรืองของเมือง<i>เทียนเฉิง</i> ซึ่งเป็นฉากเมืองที่สำคัญในเกมอีกด้วย",
+                "zh-Hans": "总之，作为一个关键的城镇场景，开发人员希望能找到可以代表小说中的天城的物品。",
+                "zh-Hant": "總之，作為一個關鍵的城鎮場景，開發人員希望能找到可以代表小說中的天城的物品。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun, das lokale Getränk wird ausreichen.",
+                "en": "Well, that local drink will suffice.",
+                "es": "Bueno, esa bebida local será suficiente.",
+                "fr": "Par exemple, la boisson locale que le protagoniste buvait à l'époque.",
+                "ja": "例えば……主人公が飲んだ「飲料」とか……",
+                "ko": "예를 들어, 주인공이 그때 마셨던 그 현지 음료요",
+                "th": "อืม เครื่องดื่มท้องถิ่นนั่นก็น่าจะใช้ได้ดีทีเดียว",
+                "zh-Hans": "比如，主角当时喝到的那种当地饮品。",
+                "zh-Hant": "比如，主角當時喝到的那種當地飲品。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du zufällig auf einige Proben stößt, komm gerne vorbei.",
+                "en": "If you happen to come across some samples, feel free to drop by.",
+                "es": "Si te encuentras con algunas muestras, no dudes en pasar.",
+                "fr": "Si vous trouvez quelque chose de convenable, n'hésitez pas à me le donner.",
+                "ja": "この類の物を見つけたら、私のところに持ってきてください。",
+                "ko": "만약 적당한 물건을 찾는다면, 언제든지 저에게 와서 제출해주세요",
+                "th": "ถ้าคุณบังเอิญเจอตัวอย่างเข้า ก็แวะมาหาฉันได้เลยนะ",
+                "zh-Hans": "如果你有找到合适的东西的话，可以随时过来交给我。",
+                "zh-Hant": "如果你有找到合適的東西的話，可以隨時過來交給我。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "parentId": 15,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 98,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 100,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 23,
+      "parentId": 20,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 107,
+      "parentId": 20,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 25,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 15,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Getränke, die auf ausländischen Geschmacksknospen vorherrschen... Vielleicht sollte ich eine Straßenbefragung mit diesen Besuchern durchführen?",
+                "en": "Drinks that will prevail on foreign taste buds... Maybe I should do a street interview with those visitors?",
+                "es": "Bebidas que prevalecerán en los paladares extranjeros... ¿Quizás debería hacer una entrevista en la calle con esos visitantes?",
+                "fr": "Des boissons impressionnantes pour des étrangers aussi. ...... Pourquoi ne pas tenir compte davantage de l'avis des touristes ?",
+                "ja": "余所の人にとって印象深い飲料……それなら、観光客の意見を伺った方が良さそうですね。",
+                "ko": "외지인들에게 기억에 남는 음료... 아마 관광객들의 의견을 많이 참고할 수 있을 거예요",
+                "th": "เครื่องดื่มที่จะถูกปากคนต่างถิ่น... บางทีฉันควรจะไปเดินสัมภาษณ์นักท่องเที่ยวตามท้องถนนนะ",
+                "zh-Hans": "能让外地人印象深刻的饮品……也许可以多参考一下游客的意见？",
+                "zh-Hant": "能讓外地人印象深刻的飲品……也許可以多參考一下遊客的意見？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Pioneer-Waren sind seit jeher ein Grundnahrungsmittel von Ganxue. Viele Besucher bringen eines davon als Geschenk mit.",
+                "en": "The Pioneer Merchandises have been Ganxue's staple. Many visitors bring one of those back as a gift.",
+                "es": "Los productos de Pioneer han sido el alimento básico de Ganxue. Muchos visitantes llevan uno de esos de vuelta como regalo.",
+                "fr": "La boutique de Ganxue vend des souvenirs. De nombreux touristes y font leurs achats et les emportent chez eux.",
+                "ja": "甘雪のショップで先駆条約が作った旅行グッズを販売しています。観光客もよくあそこでお土産を買うようですし……",
+                "ko": "감설의 상점에는 선행 공약에 출품한 여행 굿즈를 판매하기 때문에 많은 관광객들이 그곳에서 물건을 사가지고 가요",
+                "th": "สินค้าของสมาคมผู้บุกเบิกเป็นของขึ้นชื่อของร้าน Ganxue มาตลอด นักท่องเที่ยวซื้อกลับไปเป็นของฝากกันหลายคนเลย",
+                "zh-Hans": "甘雪的商店里一直有售卖先约出品的旅行周边，很多游客都会在那里买东西带回去。",
+                "zh-Hant": "甘雪的商店裡一直有售賣先約出品的旅行周邊，很多遊客都會在那裡買東西帶回去。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es wäre eine gute Idee, Ganxue nach ihren Kommentaren zu Jinzhou zu fragen.",
+                "en": "That would be a good idea that you ask Ganxue about their comments on Jinzhou.",
+                "es": "Sería una buena idea que le preguntaras a Ganxue sobre sus comentarios sobre Jinzhou.",
+                "fr": "Ce serait un bon choix de lui demander de découvrir ce que pense un étranger qui vient d'arriver dans la ville.",
+                "ja": "今州に来るお客さんの考えを知りたければ、彼女に聞いてみるといいかもしれませんね。",
+                "ko": "금주에 처음 온 외지인들의 생각을 알고 싶다면 그녀에게 물어보는게 좋아요",
+                "th": "คงจะเป็นความคิดที่ดีนะ ถ้าคุณจะไปถามความเห็นจาก Ganxue เกี่ยวกับเมืองจินโจว",
+                "zh-Hans": "要了解初到今州的外地人的想法的话，去问问她应该是个不错的选择。",
+                "zh-Hant": "要了解初到今州的外地人的想法的話，去問問她應該是個不錯的選擇。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 95,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002500,
+          "mapId": 8,
+          "blueprintType": "NPC0004",
+          "name": "TsEntity_154_002_甘雪",
+          "areaId": 301,
+          "position": {
+            "x": -40210,
+            "y": 115837,
+            "z": 1493
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Von allen Getränken in Jinzhou mag ich Tee am meisten.",
+                "en": "Among all the drinks in Jinzhou, I like tea the most.",
+                "es": "De todas las bebidas en Jinzhou, el té es la que más me gusta.",
+                "fr": "Pour moi, la boisson que je préfère ici est le thé.",
+                "ja": "今州の飲料となると……やっぱり「お茶」ですかね。",
+                "ko": "전 금주의 음료 중에 차를 가장 좋아해요",
+                "th": "ในบรรดาเครื่องดื่มทั้งหมดของจินโจว ฉันชอบชามากที่สุดเลย",
+                "zh-Hans": "对我自己来说，今州的饮品里，我最喜欢的是茶。",
+                "zh-Hant": "對我自己來說，今州的飲品裡，我最喜歡的是茶。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...was auch die perfekte Ergänzung zu dem ist, was in <i>Der Sol-2</i> ist. Sein Geschmack ist bitter, aber anhaltend auf deiner Zunge.",
+                "en": "...which is also the perfect match for what's in <i>Second Coming of Solaris</i>. Its taste is bitter but persistent on your tongue.",
+                "es": "...que también es la combinación perfecta para lo que hay en la «Segunda venida de Solaris». Su sabor es amargo pero persistente en la lengua.",
+                "fr": "Le thé correspond bien à la description du « Sol-2 ». C'est amer en bouche, mais le goût persiste, c'est impressionnant.",
+                "ja": "このお茶も「第二ソラリス」の描写そっくりなんですよ。確かに苦いですが、深い味わいはそれ以上に印象的かと思います。",
+                "ko": "차는 「세컨드 솔라리스」의 설명과도 잘 어울려요. 입에 쓴맛이 나지만 뒤에 천천히 올라오는 맛이 인상적이거든요",
+                "th": "...และยังตรงกับเนื้อหาใน<i>โซลาริสที่ 2</i>ด้วยนะ เพราะรสชาติมันขมแต่ก็ยังคงติดอยู่ที่ปลายลิ้น",
+                "zh-Hans": "茶也很符合《第二索拉》里的描述哦，入口虽然苦涩，却又回味无穷，让人印象深刻。",
+                "zh-Hant": "茶也很符合《第二索拉》裡的描述喔，入口雖然苦澀，卻又回味無窮，讓人印象深刻。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tee ist auch der meistverkaufte Artikel in meinem Geschäft.",
+                "en": "Tea is also the most popular seller here in my shop.",
+                "es": "El té también es el producto más vendido aquí en mi tienda.",
+                "fr": "Les visiteurs aiment bien à acheter le thé.",
+                "ja": "それに、今州に来られるお客さんに一番人気なお土産は「茶葉」ですしね。",
+                "ko": "저를 찾는 관광객들을 포함해서 가장 많이 사는 것도 금주의 차예요",
+                "th": "แถมชาก็เป็นสินค้าที่ขายดีที่สุดของที่ร้านด้วย",
+                "zh-Hans": "包括来到我这里的游客，他们最常买的东西也是今州的茶叶。",
+                "zh-Hant": "包括來到我這裡的遊客，他們最常買的東西也是今州的茶葉。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Könnte ich eine Packung Tee haben?",
+                    "en": "Could I have one pack of tea?",
+                    "es": "¿Podría tener un paquete de té?",
+                    "fr": "Pourriez-vous me vendre du thé ?",
+                    "ja": "それください！",
+                    "ko": "찻잎 하나 살 수 있을까요?",
+                    "th": "ฉันขอซื้อชาสักห่อได้ไหม?",
+                    "zh-Hans": "可以卖给我一份茶叶吗？",
+                    "zh-Hant": "可以賣給我一份茶葉嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Auf jeden Fall. Das ist auch unsere Begrüßung für die Besucher von Jinzhou.",
+                "en": "By all means. That's also our greeting to visitors of Jinzhou.",
+                "es": "Por supuesto. Ese es también nuestro saludo a los visitantes de Jinzhou.",
+                "fr": "Bien sûr. Vous êtes aussi un visiteur !",
+                "ja": "はい！あなたも今州に来たお客さんの一人ですもんね。",
+                "ko": "물론이죠. 방랑자도 금주의 손님이잖아요",
+                "th": "ด้วยความยินดี นี่ถือเป็นการทักทายผู้มาเยือนจินโจวของเราด้วยนะ",
+                "zh-Hans": "当然可以，毕竟你也是来到今州的客人呀。",
+                "zh-Hant": "當然可以，畢竟你也是來到今州的客人呀。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier. Denk daran, ihn mit Quellwasser zu kochen. Das macht den Tee noch besser!",
+                "en": "Here. Remember to boil it with spring water. That makes the tea even better!",
+                "es": "Aquí. Recuerda hervirlo con agua de manantial. ¡Eso hace que el té sea aún mejor!",
+                "fr": "Voici le thé que vous avez commandé. C'est encore meilleur avec de l'eau de source de montagne.",
+                "ja": "こちら、お求めの茶葉となります。泉の水で淹れると、よりおいしくなりますよ！",
+                "ko": "주문하신 찻잎입니다~ 약수로 우려내시면 더 맛있어요~",
+                "th": "รับนี่ไปสิ อย่าลืมชงด้วยน้ำแร่จากภูเขานะ จะทำให้ชามีรสชาติดียิ่งขึ้นไปอีก!",
+                "zh-Hans": "这是你要的茶叶，如果用山泉水泡茶的话会更好喝哦~",
+                "zh-Hant": "這是你要的茶葉，如果用山泉水泡茶的話會更好喝喔~"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir freuen uns auf ein Wiedersehen. Auf Wiedersehen.",
+                "en": "We look forward to meeting you again. Goodbye.",
+                "es": "Esperamos verte de nuevo. Adiós.",
+                "fr": "Merci beaucoup, à bientôt.",
+                "ja": "ありがとうございました！また来てくださいね！",
+                "ko": "다음에 또 방문해 주세요!",
+                "th": "หวังว่าจะได้พบคุณอีกครั้งนะ ลาก่อน",
+                "zh-Hans": "欢迎下次再光临~",
+                "zh-Hant": "歡迎下次再光臨~"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "parentId": 82,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 2,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Bei einer Tasse Tee in einer Gaststätte zu plaudern... Der Dampf des heißen Tees macht es tatsächlich lebendiger.",
+                "en": "Enjoying a cup of tea over chitchats in an inn... Seeing the steam of hot tea does make it more vivid.",
+                "es": "Disfrutando de una taza de té mientras charlas en una posada... Ver el vapor del té caliente lo hace más vívido.",
+                "fr": "Les protagonistes buvaient du thé et bavardaient dans une auberge... En effet, si la boisson est du thé, l'ambiance est immédiatement là.",
+                "ja": "主人公たちがお茶を飲みながら、天城の宿でおしゃべりしている……なんだかイメージが湧いてきました！",
+                "ko": "주인공 일행은 차를 마시며 천성의 여관에서 잡담을 해요... 하긴, 음료가 차라면 단숨에 분위기가 확 살아나죠",
+                "th": "การได้เพลิดเพลินกับชาสักถ้วยระหว่างพูดคุยกันในโรงเตี๊ยม... พอได้เห็นไอร้อนจากชาก็ยิ่งทำให้ภาพมันชัดเจนขึ้นนะ",
+                "zh-Hans": "主角人一行人喝着茶，在天城的旅馆里闲聊……的确，如果饮品是茶的话，一下就很有画面感了。",
+                "zh-Hant": "主角人一行人喝著茶，在天城的旅舘裡閒聊……的確，如果飲品是茶的話，一下就很有畫面感了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das wäre genau das, was unser Entwicklerteam braucht. Ich kann mir das lebhafte Tiancheng jetzt schon vorstellen.",
+                "en": "This would be what our dev team needs. I even can picture the lively Tiancheng right now.",
+                "es": "Esto sería lo que nuestro equipo de desarrollo necesita. Incluso puedo imaginar el animado Tiancheng en este momento.",
+                "fr": "Je vais donner ceci aux développeurs. Avec cela, je crois qu'ils pourront imaginer la scène de la Cité du ciel.",
+                "ja": "早速開発スタッフに渡しましょう！これで天城のイメージもバッチリですね！",
+                "ko": "그럼 저는 이것을 개발자에게 전달할게요. 이게 있으면 천성의 장면을 상상할 수 있을 거예요",
+                "th": "นี่แหละคือสิ่งที่ทีมพัฒนาของเราต้องการ ตอนนี้ฉันนึกภาพเมืองเทียนเฉิงอันมีชีวิตชีวาออกแล้ว",
+                "zh-Hans": "我现在就把这个交给开发人员。相信有了它，大家就能够想象出天城的场景了。",
+                "zh-Hant": "我現在就把這個交給開發人員。 相信有了它，大家就能夠想像出天城的場景了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einige Zeit verging, während Maqi weg war, um den Gegenstand zu übergeben...",
+                "en": "Some time passed while Maqi was away to hand over the item...",
+                "es": "Pasó algún tiempo mientras Maqi estaba fuera para entregar el artículo...",
+                "fr": "Après qu Maqi a donné l'objet aux développeurs...",
+                "ja": "馬琪が品を開発スタッフに渡した。しばらくして……",
+                "ko": "마치가 개발자에게 물건을 건네준 후, 시간이 좀 지나서...",
+                "th": "เวลาผ่านไปครู่หนึ่งขณะที่ Maqi กำลังนำของไปส่งมอบ...",
+                "zh-Hans": "马琪将物品送给开发人员后，又过了一段时间……",
+                "zh-Hant": "馬琪將物品送給開發人員後，又過了一段時間……"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Danke. Damit ist die Arbeit für heute erledigt!",
+                "en": "Thank you. That wraps up today's work!",
+                "es": "Gracias. ¡Eso concluye el trabajo de hoy!",
+                "fr": "Grâce à vous, la création de la scène d'aujourd'hui a été un succès.",
+                "ja": "おかげさまで、今日のシーンの制作が無事完了しました！",
+                "ko": "덕분에 오늘 장면 제작은 잘 끝났어요",
+                "th": "ขอบคุณนะ งานของวันนี้ก็เสร็จสิ้นเพียงเท่านี้!",
+                "zh-Hans": "多亏了你，今天的场景制作顺利完成了。",
+                "zh-Hant": "多虧了你，今天的場景製作順利完成了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis morgen, {PlayerName}.",
+                "en": "See you tomorrow, {PlayerName}.",
+                "es": "Nos vemos mañana, {PlayerName}.",
+                "fr": "Continuez demain, s'il vous plaît, {PlayerName}. Merci !",
+                "ja": "それでは、明日もよろしくお願いします！{PlayerName}さん！",
+                "ko": "내일도 잘 부탁해요",
+                "th": "ไว้เจอกันใหม่พรุ่งนี้นะ {PlayerName}",
+                "zh-Hans": "明天也拜托你了，{PlayerName}。",
+                "zh-Hant": "明天也拜託你了，{PlayerName}。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "parentId": 82,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 99,
+      "parentId": 98,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 99,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 109002500,
+          "mapId": 8,
+          "blueprintType": "NPC0004",
+          "name": "TsEntity_154_002_甘雪",
+          "areaId": 301,
+          "position": {
+            "x": -40210,
+            "y": 115837,
+            "z": 1493
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 15,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Getränke, die auf ausländischen Geschmacksknospen vorherrschen... Vielleicht sollte ich eine Straßenbefragung mit diesen Besuchern durchführen?",
+                "en": "Drinks that will prevail on foreign taste buds... Maybe I should do a street interview with those visitors?",
+                "es": "Bebidas que prevalecerán en los paladares extranjeros... ¿Quizás debería hacer una entrevista en la calle con esos visitantes?",
+                "fr": "Des boissons impressionnantes pour des étrangers aussi. ...... Pourquoi ne pas tenir compte davantage de l'avis des touristes ?",
+                "ja": "余所の人にとって印象深い飲料……それなら、観光客の意見を伺った方が良さそうですね。",
+                "ko": "외지인들에게 기억에 남는 음료... 아마 관광객들의 의견을 많이 참고할 수 있을 거예요",
+                "th": "เครื่องดื่มที่จะถูกปากคนต่างถิ่น... บางทีฉันควรจะไปเดินสัมภาษณ์นักท่องเที่ยวตามท้องถนนนะ",
+                "zh-Hans": "能让外地人印象深刻的饮品……也许可以多参考一下游客的意见？",
+                "zh-Hant": "能讓外地人印象深刻的飲品……也許可以多參考一下遊客的意見？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Pioneer-Waren sind seit jeher ein Grundnahrungsmittel von Ganxue. Viele Besucher bringen eines davon als Geschenk mit.",
+                "en": "The Pioneer Merchandises have been Ganxue's staple. Many visitors bring one of those back as a gift.",
+                "es": "Los productos de Pioneer han sido el alimento básico de Ganxue. Muchos visitantes llevan uno de esos de vuelta como regalo.",
+                "fr": "La boutique de Ganxue vend des souvenirs. De nombreux touristes y font leurs achats et les emportent chez eux.",
+                "ja": "甘雪のショップで先駆条約が作った旅行グッズを販売しています。観光客もよくあそこでお土産を買うようですし……",
+                "ko": "감설의 상점에는 선행 공약에 출품한 여행 굿즈를 판매하기 때문에 많은 관광객들이 그곳에서 물건을 사가지고 가요",
+                "th": "สินค้าของสมาคมผู้บุกเบิกเป็นของขึ้นชื่อของร้าน Ganxue มาตลอด นักท่องเที่ยวซื้อกลับไปเป็นของฝากกันหลายคนเลย",
+                "zh-Hans": "甘雪的商店里一直有售卖先约出品的旅行周边，很多游客都会在那里买东西带回去。",
+                "zh-Hant": "甘雪的商店裡一直有售賣先約出品的旅行周邊，很多遊客都會在那裡買東西帶回去。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es wäre eine gute Idee, Ganxue nach ihren Kommentaren zu Jinzhou zu fragen.",
+                "en": "That would be a good idea that you ask Ganxue about their comments on Jinzhou.",
+                "es": "Sería una buena idea que le preguntaras a Ganxue sobre sus comentarios sobre Jinzhou.",
+                "fr": "Ce serait un bon choix de lui demander de découvrir ce que pense un étranger qui vient d'arriver dans la ville.",
+                "ja": "今州に来るお客さんの考えを知りたければ、彼女に聞いてみるといいかもしれませんね。",
+                "ko": "금주에 처음 온 외지인들의 생각을 알고 싶다면 그녀에게 물어보는게 좋아요",
+                "th": "คงจะเป็นความคิดที่ดีนะ ถ้าคุณจะไปถามความเห็นจาก Ganxue เกี่ยวกับเมืองจินโจว",
+                "zh-Hans": "要了解初到今州的外地人的想法的话，去问问她应该是个不错的选择。",
+                "zh-Hant": "要了解初到今州的外地人的想法的話，去問問她應該是個不錯的選擇。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Von allen Getränken in Jinzhou mag ich Tee am meisten.",
+                "en": "Among all the drinks in Jinzhou, I like tea the most.",
+                "es": "De todas las bebidas en Jinzhou, el té es la que más me gusta.",
+                "fr": "Pour moi, la boisson que je préfère ici est le thé.",
+                "ja": "今州の飲料となると……やっぱり「お茶」ですかね。",
+                "ko": "전 금주의 음료 중에 차를 가장 좋아해요",
+                "th": "ในบรรดาเครื่องดื่มทั้งหมดของจินโจว ฉันชอบชามากที่สุดเลย",
+                "zh-Hans": "对我自己来说，今州的饮品里，我最喜欢的是茶。",
+                "zh-Hant": "對我自己來說，今州的飲品裡，我最喜歡的是茶。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...was auch die perfekte Ergänzung zu dem ist, was in <i>Der Sol-2</i> ist. Sein Geschmack ist bitter, aber anhaltend auf deiner Zunge.",
+                "en": "...which is also the perfect match for what's in <i>Second Coming of Solaris</i>. Its taste is bitter but persistent on your tongue.",
+                "es": "...que también es la combinación perfecta para lo que hay en la «Segunda venida de Solaris». Su sabor es amargo pero persistente en la lengua.",
+                "fr": "Le thé correspond bien à la description du « Sol-2 ». C'est amer en bouche, mais le goût persiste, c'est impressionnant.",
+                "ja": "このお茶も「第二ソラリス」の描写そっくりなんですよ。確かに苦いですが、深い味わいはそれ以上に印象的かと思います。",
+                "ko": "차는 「세컨드 솔라리스」의 설명과도 잘 어울려요. 입에 쓴맛이 나지만 뒤에 천천히 올라오는 맛이 인상적이거든요",
+                "th": "...และยังตรงกับเนื้อหาใน<i>โซลาริสที่ 2</i>ด้วยนะ เพราะรสชาติมันขมแต่ก็ยังคงติดอยู่ที่ปลายลิ้น",
+                "zh-Hans": "茶也很符合《第二索拉》里的描述哦，入口虽然苦涩，却又回味无穷，让人印象深刻。",
+                "zh-Hant": "茶也很符合《第二索拉》裡的描述喔，入口雖然苦澀，卻又回味無窮，讓人印象深刻。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tee ist auch der meistverkaufte Artikel in meinem Geschäft.",
+                "en": "Tea is also the most popular seller here in my shop.",
+                "es": "El té también es el producto más vendido aquí en mi tienda.",
+                "fr": "Les visiteurs aiment bien à acheter le thé.",
+                "ja": "それに、今州に来られるお客さんに一番人気なお土産は「茶葉」ですしね。",
+                "ko": "저를 찾는 관광객들을 포함해서 가장 많이 사는 것도 금주의 차예요",
+                "th": "แถมชาก็เป็นสินค้าที่ขายดีที่สุดของที่ร้านด้วย",
+                "zh-Hans": "包括来到我这里的游客，他们最常买的东西也是今州的茶叶。",
+                "zh-Hant": "包括來到我這裡的遊客，他們最常買的東西也是今州的茶葉。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Könnte ich eine Packung Tee haben?",
+                    "en": "Could I have one pack of tea?",
+                    "es": "¿Podría tener un paquete de té?",
+                    "fr": "Pourriez-vous me vendre du thé ?",
+                    "ja": "それください！",
+                    "ko": "찻잎 하나 살 수 있을까요?",
+                    "th": "ฉันขอซื้อชาสักห่อได้ไหม?",
+                    "zh-Hans": "可以卖给我一份茶叶吗？",
+                    "zh-Hant": "可以賣給我一份茶葉嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Auf jeden Fall. Das ist auch unsere Begrüßung für die Besucher von Jinzhou.",
+                "en": "By all means. That's also our greeting to visitors of Jinzhou.",
+                "es": "Por supuesto. Ese es también nuestro saludo a los visitantes de Jinzhou.",
+                "fr": "Bien sûr. Vous êtes aussi un visiteur !",
+                "ja": "はい！あなたも今州に来たお客さんの一人ですもんね。",
+                "ko": "물론이죠. 방랑자도 금주의 손님이잖아요",
+                "th": "ด้วยความยินดี นี่ถือเป็นการทักทายผู้มาเยือนจินโจวของเราด้วยนะ",
+                "zh-Hans": "当然可以，毕竟你也是来到今州的客人呀。",
+                "zh-Hant": "當然可以，畢竟你也是來到今州的客人呀。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier. Denk daran, ihn mit Quellwasser zu kochen. Das macht den Tee noch besser!",
+                "en": "Here. Remember to boil it with spring water. That makes the tea even better!",
+                "es": "Aquí. Recuerda hervirlo con agua de manantial. ¡Eso hace que el té sea aún mejor!",
+                "fr": "Voici le thé que vous avez commandé. C'est encore meilleur avec de l'eau de source de montagne.",
+                "ja": "こちら、お求めの茶葉となります。泉の水で淹れると、よりおいしくなりますよ！",
+                "ko": "주문하신 찻잎입니다~ 약수로 우려내시면 더 맛있어요~",
+                "th": "รับนี่ไปสิ อย่าลืมชงด้วยน้ำแร่จากภูเขานะ จะทำให้ชามีรสชาติดียิ่งขึ้นไปอีก!",
+                "zh-Hans": "这是你要的茶叶，如果用山泉水泡茶的话会更好喝哦~",
+                "zh-Hant": "這是你要的茶葉，如果用山泉水泡茶的話會更好喝喔~"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir freuen uns auf ein Wiedersehen. Auf Wiedersehen.",
+                "en": "We look forward to meeting you again. Goodbye.",
+                "es": "Esperamos verte de nuevo. Adiós.",
+                "fr": "Merci beaucoup, à bientôt.",
+                "ja": "ありがとうございました！また来てくださいね！",
+                "ko": "다음에 또 방문해 주세요!",
+                "th": "หวังว่าจะได้พบคุณอีกครั้งนะ ลาก่อน",
+                "zh-Hans": "欢迎下次再光临~",
+                "zh-Hant": "歡迎下次再光臨~"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "parentId": 100,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 103,
+      "parentId": 102,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 104,
+      "parentId": 102,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002500,
+          "mapId": 8,
+          "blueprintType": "NPC0004",
+          "name": "TsEntity_154_002_甘雪",
+          "areaId": 301,
+          "position": {
+            "x": -40210,
+            "y": 115837,
+            "z": 1493
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 102,
+      "parentId": 106,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 91,
+      "parentId": 107,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 15,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Getränke, die auf ausländischen Geschmacksknospen vorherrschen... Vielleicht sollte ich eine Straßenbefragung mit diesen Besuchern durchführen?",
+                "en": "Drinks that will prevail on foreign taste buds... Maybe I should do a street interview with those visitors?",
+                "es": "Bebidas que prevalecerán en los paladares extranjeros... ¿Quizás debería hacer una entrevista en la calle con esos visitantes?",
+                "fr": "Des boissons impressionnantes pour des étrangers aussi. ...... Pourquoi ne pas tenir compte davantage de l'avis des touristes ?",
+                "ja": "余所の人にとって印象深い飲料……それなら、観光客の意見を伺った方が良さそうですね。",
+                "ko": "외지인들에게 기억에 남는 음료... 아마 관광객들의 의견을 많이 참고할 수 있을 거예요",
+                "th": "เครื่องดื่มที่จะถูกปากคนต่างถิ่น... บางทีฉันควรจะไปเดินสัมภาษณ์นักท่องเที่ยวตามท้องถนนนะ",
+                "zh-Hans": "能让外地人印象深刻的饮品……也许可以多参考一下游客的意见？",
+                "zh-Hant": "能讓外地人印象深刻的飲品……也許可以多參考一下遊客的意見？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Pioneer-Waren sind seit jeher ein Grundnahrungsmittel von Ganxue. Viele Besucher bringen eines davon als Geschenk mit.",
+                "en": "The Pioneer Merchandises have been Ganxue's staple. Many visitors bring one of those back as a gift.",
+                "es": "Los productos de Pioneer han sido el alimento básico de Ganxue. Muchos visitantes llevan uno de esos de vuelta como regalo.",
+                "fr": "La boutique de Ganxue vend des souvenirs. De nombreux touristes y font leurs achats et les emportent chez eux.",
+                "ja": "甘雪のショップで先駆条約が作った旅行グッズを販売しています。観光客もよくあそこでお土産を買うようですし……",
+                "ko": "감설의 상점에는 선행 공약에 출품한 여행 굿즈를 판매하기 때문에 많은 관광객들이 그곳에서 물건을 사가지고 가요",
+                "th": "สินค้าของสมาคมผู้บุกเบิกเป็นของขึ้นชื่อของร้าน Ganxue มาตลอด นักท่องเที่ยวซื้อกลับไปเป็นของฝากกันหลายคนเลย",
+                "zh-Hans": "甘雪的商店里一直有售卖先约出品的旅行周边，很多游客都会在那里买东西带回去。",
+                "zh-Hant": "甘雪的商店裡一直有售賣先約出品的旅行周邊，很多遊客都會在那裡買東西帶回去。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es wäre eine gute Idee, Ganxue nach ihren Kommentaren zu Jinzhou zu fragen.",
+                "en": "That would be a good idea that you ask Ganxue about their comments on Jinzhou.",
+                "es": "Sería una buena idea que le preguntaras a Ganxue sobre sus comentarios sobre Jinzhou.",
+                "fr": "Ce serait un bon choix de lui demander de découvrir ce que pense un étranger qui vient d'arriver dans la ville.",
+                "ja": "今州に来るお客さんの考えを知りたければ、彼女に聞いてみるといいかもしれませんね。",
+                "ko": "금주에 처음 온 외지인들의 생각을 알고 싶다면 그녀에게 물어보는게 좋아요",
+                "th": "คงจะเป็นความคิดที่ดีนะ ถ้าคุณจะไปถามความเห็นจาก Ganxue เกี่ยวกับเมืองจินโจว",
+                "zh-Hans": "要了解初到今州的外地人的想法的话，去问问她应该是个不错的选择。",
+                "zh-Hant": "要了解初到今州的外地人的想法的話，去問問她應該是個不錯的選擇。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "parentId": 107,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 93,
+      "parentId": 107,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 109002500,
+          "mapId": 8,
+          "blueprintType": "NPC0004",
+          "name": "TsEntity_154_002_甘雪",
+          "areaId": 301,
+          "position": {
+            "x": -40210,
+            "y": 115837,
+            "z": 1493
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Von allen Getränken in Jinzhou mag ich Tee am meisten.",
+                "en": "Among all the drinks in Jinzhou, I like tea the most.",
+                "es": "De todas las bebidas en Jinzhou, el té es la que más me gusta.",
+                "fr": "Pour moi, la boisson que je préfère ici est le thé.",
+                "ja": "今州の飲料となると……やっぱり「お茶」ですかね。",
+                "ko": "전 금주의 음료 중에 차를 가장 좋아해요",
+                "th": "ในบรรดาเครื่องดื่มทั้งหมดของจินโจว ฉันชอบชามากที่สุดเลย",
+                "zh-Hans": "对我自己来说，今州的饮品里，我最喜欢的是茶。",
+                "zh-Hant": "對我自己來說，今州的飲品裡，我最喜歡的是茶。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...was auch die perfekte Ergänzung zu dem ist, was in <i>Der Sol-2</i> ist. Sein Geschmack ist bitter, aber anhaltend auf deiner Zunge.",
+                "en": "...which is also the perfect match for what's in <i>Second Coming of Solaris</i>. Its taste is bitter but persistent on your tongue.",
+                "es": "...que también es la combinación perfecta para lo que hay en la «Segunda venida de Solaris». Su sabor es amargo pero persistente en la lengua.",
+                "fr": "Le thé correspond bien à la description du « Sol-2 ». C'est amer en bouche, mais le goût persiste, c'est impressionnant.",
+                "ja": "このお茶も「第二ソラリス」の描写そっくりなんですよ。確かに苦いですが、深い味わいはそれ以上に印象的かと思います。",
+                "ko": "차는 「세컨드 솔라리스」의 설명과도 잘 어울려요. 입에 쓴맛이 나지만 뒤에 천천히 올라오는 맛이 인상적이거든요",
+                "th": "...และยังตรงกับเนื้อหาใน<i>โซลาริสที่ 2</i>ด้วยนะ เพราะรสชาติมันขมแต่ก็ยังคงติดอยู่ที่ปลายลิ้น",
+                "zh-Hans": "茶也很符合《第二索拉》里的描述哦，入口虽然苦涩，却又回味无穷，让人印象深刻。",
+                "zh-Hant": "茶也很符合《第二索拉》裡的描述喔，入口雖然苦澀，卻又回味無窮，讓人印象深刻。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tee ist auch der meistverkaufte Artikel in meinem Geschäft.",
+                "en": "Tea is also the most popular seller here in my shop.",
+                "es": "El té también es el producto más vendido aquí en mi tienda.",
+                "fr": "Les visiteurs aiment bien à acheter le thé.",
+                "ja": "それに、今州に来られるお客さんに一番人気なお土産は「茶葉」ですしね。",
+                "ko": "저를 찾는 관광객들을 포함해서 가장 많이 사는 것도 금주의 차예요",
+                "th": "แถมชาก็เป็นสินค้าที่ขายดีที่สุดของที่ร้านด้วย",
+                "zh-Hans": "包括来到我这里的游客，他们最常买的东西也是今州的茶叶。",
+                "zh-Hant": "包括來到我這裡的遊客，他們最常買的東西也是今州的茶葉。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Könnte ich eine Packung Tee haben?",
+                    "en": "Could I have one pack of tea?",
+                    "es": "¿Podría tener un paquete de té?",
+                    "fr": "Pourriez-vous me vendre du thé ?",
+                    "ja": "それください！",
+                    "ko": "찻잎 하나 살 수 있을까요?",
+                    "th": "ฉันขอซื้อชาสักห่อได้ไหม?",
+                    "zh-Hans": "可以卖给我一份茶叶吗？",
+                    "zh-Hant": "可以賣給我一份茶葉嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Auf jeden Fall. Das ist auch unsere Begrüßung für die Besucher von Jinzhou.",
+                "en": "By all means. That's also our greeting to visitors of Jinzhou.",
+                "es": "Por supuesto. Ese es también nuestro saludo a los visitantes de Jinzhou.",
+                "fr": "Bien sûr. Vous êtes aussi un visiteur !",
+                "ja": "はい！あなたも今州に来たお客さんの一人ですもんね。",
+                "ko": "물론이죠. 방랑자도 금주의 손님이잖아요",
+                "th": "ด้วยความยินดี นี่ถือเป็นการทักทายผู้มาเยือนจินโจวของเราด้วยนะ",
+                "zh-Hans": "当然可以，毕竟你也是来到今州的客人呀。",
+                "zh-Hant": "當然可以，畢竟你也是來到今州的客人呀。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier. Denk daran, ihn mit Quellwasser zu kochen. Das macht den Tee noch besser!",
+                "en": "Here. Remember to boil it with spring water. That makes the tea even better!",
+                "es": "Aquí. Recuerda hervirlo con agua de manantial. ¡Eso hace que el té sea aún mejor!",
+                "fr": "Voici le thé que vous avez commandé. C'est encore meilleur avec de l'eau de source de montagne.",
+                "ja": "こちら、お求めの茶葉となります。泉の水で淹れると、よりおいしくなりますよ！",
+                "ko": "주문하신 찻잎입니다~ 약수로 우려내시면 더 맛있어요~",
+                "th": "รับนี่ไปสิ อย่าลืมชงด้วยน้ำแร่จากภูเขานะ จะทำให้ชามีรสชาติดียิ่งขึ้นไปอีก!",
+                "zh-Hans": "这是你要的茶叶，如果用山泉水泡茶的话会更好喝哦~",
+                "zh-Hant": "這是你要的茶葉，如果用山泉水泡茶的話會更好喝喔~"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir freuen uns auf ein Wiedersehen. Auf Wiedersehen.",
+                "en": "We look forward to meeting you again. Goodbye.",
+                "es": "Esperamos verte de nuevo. Adiós.",
+                "fr": "Merci beaucoup, à bientôt.",
+                "ja": "ありがとうございました！また来てくださいね！",
+                "ko": "다음에 또 방문해 주세요!",
+                "th": "หวังว่าจะได้พบคุณอีกครั้งนะ ลาก่อน",
+                "zh-Hans": "欢迎下次再光临~",
+                "zh-Hant": "歡迎下次再光臨~"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 98,
+                "name": {
+                  "zh-Hans": "甘雪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

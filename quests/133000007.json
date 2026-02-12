@@ -1,0 +1,206 @@
+{
+  "id": 133000007,
+  "key": "信使",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Bote",
+    "en": "Messenger",
+    "es": "Mensajero",
+    "fr": "Messager",
+    "ja": "メッセンジャー",
+    "ko": "순찰관의 부탁",
+    "th": "ผู้ส่งสาร",
+    "zh-Hans": "信使",
+    "zh-Hant": "信使"
+  },
+  "desc": {
+    "de": "Patrouilleur Chuyi im Düsteren Wald möchte dich bitten, einen Brief zu überbringen.",
+    "en": "Patroller Chuyi in the Dim Forest would like your help delivering a letter.",
+    "es": "El Patrullero Chuyi en el Bosque Oscuro quiere pedirte que entregues una carta.",
+    "fr": "Chuyi, en patrouille dans la Forêt aveuglante, vous demande de l'aider à remettre une lettre.",
+    "ja": "光なき森の巡尉初一はあなたに手紙を届く依頼を頼みたいのようだ……",
+    "ko": "암흑 밀림의 순찰관 초하루가 부탁을 하는데...",
+    "th": "ผู้ตรวจการณ์ชูยีในป่าสลัวอยากให้คุณส่งจดหมายให้เขา",
+    "zh-Hans": "无光之森的巡尉初一似乎想拜托你送一封信……",
+    "zh-Hant": "無光之森的巡尉初一似乎想拜託你送一封信……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Forscher",
+        "en": "Talk to the researcher",
+        "es": "Habla con la investigadora",
+        "fr": "Parler au chercheur",
+        "ja": "クイズを完了する",
+        "ko": "연구원과 대화",
+        "th": "คุยกับนักวิจัย",
+        "zh-Hans": "与研究员交谈",
+        "zh-Hant": "與研究員交談"
+      },
+      "entities": [
+        {
+          "entityId": 133002100,
+          "mapId": 8,
+          "blueprintType": "NPC208",
+          "name": "TsEntity_157_011_皇龙研究员男_11",
+          "areaId": 702,
+          "position": {
+            "x": -6247,
+            "y": 301451,
+            "z": 5383
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 125
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_无光之森洞穴POI",
+          "flowIndex": 3,
+          "stateId": 12,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich sollte das nächste Mal keine Pilzsuppe kochen...",
+                "en": "I should not cook mushroom soup next time...",
+                "es": "La próxima vez no debería cocinar sopa de setas...",
+                "fr": "Je ne devrais pas préparer de soupe aux champignons la prochaine fois...",
+                "ja": "次からはキノコスープはやめとくか……",
+                "ko": "다음부터는 버섯 수프를 안 끓여야겠어요…",
+                "th": "ครั้งหน้าฉันจะไม่ปรุงซุปเห็ดอีกแล้ว...",
+                "zh-Hans": "下次还是不煮蘑菇汤了……",
+                "zh-Hant": "下次還是不煮蘑菇湯了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1096,
+                "name": {
+                  "zh-Hans": "摸鱼的研究员"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Erstens möchte, dass du das siehst.",
+                    "en": "First wants you to see this.",
+                    "es": "Primero quiere que veas esto.",
+                    "fr": "Le Premier veut que vous voyiez ceci.",
+                    "ja": "初一からだ。",
+                    "ko": "이건 초하루가 당신에게 준 거예요",
+                    "th": "ก่อนอื่นฉันอยากให้คุณเห็นสิ่งนี้",
+                    "zh-Hans": "这是初一给你的。",
+                    "zh-Hant": "這是初一給你的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hm? Das ist...",
+                "en": "Hm? This is...",
+                "es": "¿Eh? Esto es...",
+                "fr": "Hm ? C'est...",
+                "ja": "え？これって……",
+                "ko": "어? 이건...",
+                "th": "หืม? นี่คือ...",
+                "zh-Hans": "咦？这是……",
+                "zh-Hant": "咦？這是……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1096,
+                "name": {
+                  "zh-Hans": "摸鱼的研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist der Datenchip, den ich gesucht habe! Wie hat er ihn gefunden? Beeindruckend!",
+                "en": "This is the data chip that I kept looking for! How did he find it? Impressive!",
+                "es": "¡Este es el chip de datos que no dejaba de buscar! ¿Cómo lo encontró? ¡Impresionante!",
+                "fr": "C'est la puce de données que je cherchais ! Comment l'a-t-on trouvée ? C'est impressionnant !",
+                "ja": "ずっと見つけられなかったデータカードじゃないか！どこで見つかった？これは助かった！",
+                "ko": "이건 제가 계속 찾고 있던 데이터 카드에요! 이걸 어떻게 찾았어요? 정말 대단해요!",
+                "th": "นี่คือชิปข้อมูลที่ฉันหาอยู่นี่นา! เขาไปเจอมันที่ไหนกันเนี่ย? สุดยอดเลย!",
+                "zh-Hans": "这是我一直找不到的数据卡！这怎么找到的，真厉害啊！",
+                "zh-Hant": "這是我一直找不到的數據卡！這怎麼找到的，真厲害啊！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1096,
+                "name": {
+                  "zh-Hans": "摸鱼的研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wertvolle Daten über meine Arbeit sind auf dem Chip gespeichert! Ich war so abgelenkt, dass ich, nachdem er verschwunden war, angefangen habe, nachzulassen.",
+                "en": "Valuable data about my work is stored in the chip! I was so spaced out that after this went missing I began slacking off.",
+                "es": "¡Datos valiosos sobre mi trabajo están almacenados en el chip! Estaba tan distraído que después de que esto desapareció, comencé a holgazanear.",
+                "fr": "Des données précieuses sur mon travail sont dans la puce ! J'ai tellement perdu la tête après la disparition de cette puce et je ne peux plus travailler...",
+                "ja": "これ、大事な資料が入っているデータカードなんだ！これがないと、なんかダルくて仕事できないんだよな。",
+                "ko": "이 카드에는 저의 소중한 업무 자료가 있거든요! 이걸 잃어버린 후부터 혼이 나간 채 일도 하기 싫어졌죠...",
+                "th": "ข้อมูลงานที่แสนล้ำค่าของฉันถูกเก็บไว้ในชิปอันนี้แหละ! พอชิปอันนี้หายไปฉันก็เหม่อลอยจนเริ่มอู้งาน",
+                "zh-Hans": "这张卡里有我珍贵的工作资料！自从这个丢了之后我就魂不守舍的，都不想工作了……",
+                "zh-Hant": "這張卡裡有我珍貴的工作資料！自從這個丟了之後我就魂不守舍的，都不想工作了……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1096,
+                "name": {
+                  "zh-Hans": "摸鱼的研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt sollte ich zur Arbeit zurückkehren. Oh, ich habe etwas für dich. Nimm es. Danke für die Hilfe.",
+                "en": "Now I should return to work. Oh, I've got something for you. Take it. Thanks for the help.",
+                "es": "Ahora debería volver al trabajo. Oh, tengo algo para ti. Tómalo. Gracias por la ayuda.",
+                "fr": "Maintenant, je devrais continuer à travailler. Oh, j'ai quelque chose pour vous. Prenez-le. Merci pour votre aide.",
+                "ja": "俺はこれから仕事に戻る。そうだ、これは俺からのほんの気持ち。ありがとう。",
+                "ko": "전 이제 돌아가서 열심히 일해야겠어요. 이건 저의 작은 성의 표시에요. 도와주셔서 감사했어요",
+                "th": "ทีนี้ก็จะได้กลับไปทำงานแล้ว โอ๊ะ ฉันมีบางอย่างจะให้คุณด้วยนะ เอาไปสิ ขอบคุณที่ช่วย",
+                "zh-Hans": "我这就回去好好工作。对了，这些给你，是我的一点心意，谢谢你的帮忙。",
+                "zh-Hant": "我這就回去好好工作。對了，這些給你，是我的一點心意，謝謝你的幫忙。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1096,
+                "name": {
+                  "zh-Hans": "摸鱼的研究员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

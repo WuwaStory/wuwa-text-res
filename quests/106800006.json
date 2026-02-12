@@ -1,0 +1,151 @@
+{
+  "id": 106800006,
+  "key": "虎口山脉",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Tigerschlund",
+    "en": "Tales of the Past and Present: Tiger's Maw",
+    "es": "Crónicas de antaño y hoy: Fauces del Tigre",
+    "fr": "Histoires du passé : Montagnes tigres",
+    "ja": "古今幾多の物語・虎口の山脈",
+    "ko": "고대의 이야기·호환 산맥",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: เทือกเขาปากพยัคฆ์",
+    "zh-Hans": "古今多少故事·虎口山脉",
+    "zh-Hant": "古今多少故事·虎口山脈"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese Datenchips. Bring sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these Data Chips. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estos Chips de Datos. Ve y entrégaselos.",
+    "fr": "Le conteur de Jinzhou cherche des puces de données abandonnées. Donnez-lui ceux que vous avez collectés dans la Plaine de Nor-Chute.",
+    "ja": "今州城の講談師は古いデータセットに興味があるようなので、虎口の山脈で集めたデータセットを彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼은 옛 데이터집에 관심이 많은 것 같으니 호환 산맥에서 수집한 데이터집을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมชิปข้อมูลเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧数据集很感兴趣，把这些于虎口山脉收集到的数据集交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊數據集很感興趣，把這些於虎口山脈收集到的數據集交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler den „Verlassenen Datenchip aus dem Tigerschlund“",
+        "en": "Deliver \"Abandoned Data Chip from Tiger's Maw\" to the Storyteller",
+        "es": "Entrega el \"Chip de Datos Abandonado de las Fauces del Tigre\" al Narrador",
+        "fr": "Donner la Puce de données des Montagnes Tigres au conteur",
+        "ja": "「虎口の山脈の古いデータセット」を講談師に渡す",
+        "ko": "「호환 산맥의 낡은 데이터집」을 이야기꾼에게 제출",
+        "th": "ส่ง \"ชิปข้อมูลที่ถูกทิ้งจากเทือกเขาปากพยัคฆ์\" ให้นักเล่าเรื่อง",
+        "zh-Hans": "将「虎口山脉旧数据集」交给说书人",
+        "zh-Hant": "將「虎口山脈舊數據集」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Seltsame Botschaften in Kombination mit einem mystischen Zug... Ein ziemlich hartnäckiger urbaner Mythos.",
+                "en": "Strange messages combined with a mystic train... Quite an urban legend to linger on.",
+                "es": "Mensajes extraños combinados con un tren místico... Bastante una leyenda urbana para persistir.",
+                "fr": "Le message de nulle part, l'itinéraire inconnu...... C'est génial.",
+                "ja": "謎のメッセージ、行方不明の列車……なかなか面白い話だ。",
+                "ko": "어디서 오는지 알 수 없는 통신, 결과를 알 수 없는 열차... 이 일은 말하자면 꽤 흥미롭네요",
+                "th": "ข้อความแปลกๆ รวมกับรถไฟลึกลับ... เป็นตำนานเมืองที่ชวนให้ฉงนสนเท่ห์",
+                "zh-Hans": "不知从哪来的通讯，不知结果的列车……这事说来还挺有意思。",
+                "zh-Hant": "不知從哪來的通訊，不知結果的列車……這事說來還挺有意思。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl du es vielleicht schwer findest, diesen Geschichten zu glauben, kommen sie manchmal aus einer vagen Reflexion der Realität.",
+                "en": "Though you may find these stories hard to believe, they sometimes come from a vague reflection of reality.",
+                "es": "Aunque puedes encontrar estas historias difíciles de creer, a veces provienen de una vaga reflexión de la realidad.",
+                "fr": "Certaines choses semblent être des légendes, pourtant, elles parlent de la vérité.",
+                "ja": "ただの都市伝説のように見える部分もあるが、実際には少し現実味がある。",
+                "ko": "어떤 일은 민간 전설처럼 보이지만 사실은 다소 현실의 그림자가 있어요",
+                "th": "คุณอาจจะคิดว่าเรื่องเล่าพวกนี้ไม่น่าเชื่อถือเท่าไหร่ แต่บางครั้งเรื่องเล่าพวกนี้ก็มีมูลความจริง",
+                "zh-Hans": "有些事看起来只是些民间传说，但其实多少有些现实的影子。",
+                "zh-Hant": "有些事看起來只是些民間傳說，但其實多少有些現實的影子。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht kannst du dir dieselbe Frage stellen, nachdem du die Botschaften gelesen hast.",
+                "en": "Perhaps you can ask yourself the same question after reading the messages.",
+                "es": "Quizás puedes hacerte la misma pregunta después de leer los mensajes.",
+                "fr": "Après l'avoir lu, pense à cela, d'où vient ce message...",
+                "ja": "読み終わったら、考えてみてください。このメッセージは……一体どこからのものか？",
+                "ko": "다 읽고 나서 이 통신은.... 도대체 어디서 온 걸까?라는 의문을 가져도 돼요",
+                "th": "คุณอาจจะลองถามคำถามเดียวกันนี้กับตัวเองดูก็ได้ หลังจากที่ไล่อ่านข้อความดูแล้ว",
+                "zh-Hans": "等你看完，不妨想想看，这通讯……到底是从哪来的呢？",
+                "zh-Hant": "等你看完，不妨想想看，這通訊……到底是從哪來的呢？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

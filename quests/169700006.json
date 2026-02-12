@@ -1,0 +1,130 @@
+{
+  "id": 169700006,
+  "key": "沙原通路",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "de": "Sandkluft-Passage",
+    "en": "Sandreach Passage",
+    "es": "Pasaje del Arenal",
+    "fr": "Passage d'Ocre",
+    "ja": "デザート・パッセージ",
+    "ko": "샌드리치 통로",
+    "th": "ทางผ่านแดนทราย",
+    "zh-Hans": "沙原通路",
+    "zh-Hant": "沙原通路"
+  },
+  "desc": {
+    "de": "Setze den Wiederaufbau von Sandkluft-Passage fort.",
+    "en": "Rebuild the Sandreach Passage",
+    "es": "Reconstruye el Pasaje del Arenal.",
+    "fr": "Reconstruire le Passage d'Ocre",
+    "ja": "デザート・パッセージの再建を進める",
+    "ko": "샌드리치 통로 건설 진행하기",
+    "th": "ดำเนินการฟื้นฟูทางผ่านแดนทราย",
+    "zh-Hans": "进行沙原通路的重建",
+    "zh-Hant": "進行沙原通路的重建"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 169700030,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_4",
+          "areaId": 36135,
+          "position": {
+            "x": 129707,
+            "y": -412455,
+            "z": 19954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -62
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 169700030,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_4",
+          "areaId": 36135,
+          "position": {
+            "x": 129707,
+            "y": -412455,
+            "z": 19954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -62
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700192,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Treasure_3_2",
+          "name": "TsEntity_3_0_基准物资箱",
+          "areaId": 36135,
+          "position": {
+            "x": 129385,
+            "y": -411934,
+            "z": 19977
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

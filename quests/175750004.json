@@ -1,0 +1,504 @@
+{
+  "id": 175750004,
+  "key": "呜呜物流_引导",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Kampagne, Start!",
+    "en": "Lollo Campaign, Set Sail!",
+    "es": "¡Campaña Lollo, zarpa!",
+    "fr": "Projet Loulou, Mettez les voiles !",
+    "ja": "ブブ企画、スタート！",
+    "ko": "무무 기획 스타트!",
+    "th": "แคมเปญลอลโล่ ออกเดินเรือ!",
+    "zh-Hans": "呜呜企划，启动！",
+    "zh-Hant": "嗚嗚企劃，啟動！"
+  },
+  "desc": {
+    "de": "Du triffst Maji von Lollo-Logistik. Scheinbar hat er neue Kampagnen mit sich?",
+    "en": "You meet Maji from Lollo Logistics in Ragunna. What new campaign is he planning?",
+    "es": "Te encuentras con Maji de Logística Lollo en Raguna. ¿Qué nueva campaña está planeando?",
+    "fr": "Maji de Loulou logistique est à Ragunna, il paraît qu'il a un plan pour sa nouvelle campagne. Parle à lui pour savoir s'il a besoin de quelque chose.",
+    "ja": "ラグーナでブブ物流の馬計に出会った。彼は今回も新しい企画に挑戦するらしい。",
+    "ko": "무무물류의 마현을 만났다. 마현이 라군나에서 새로운 기획을 가져온 듯하다",
+    "th": "คุณพบกับมาจิจากลอลโล่โลจิสติกส์ในรากุนนา เขากำลังวางแผนแคมเปญใหม่อะไรอยู่กันนะ?",
+    "zh-Hans": "你在拉古那遇到了呜呜物流的马计，他似乎带来了新的企划？",
+    "zh-Hant": "你在拉古那遇到了嗚嗚物流的馬計，他似乎帶來了新的企劃？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Maji nach seiner Bitte",
+        "en": "Ask Maji what he needs",
+        "es": "Pregúntale a Maji qué es lo que necesita.",
+        "fr": "Parler à Maji pour savoir ce qu'il a besoin",
+        "ja": "馬計から依頼内容を聞く",
+        "ko": "마현에게 수요 파악하기",
+        "th": "ถามมาจิว่าเขาต้องการอะไร",
+        "zh-Hans": "向马计了解需求",
+        "zh-Hant": "向馬計了解需求"
+      },
+      "entities": [
+        {
+          "entityId": 175750001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_呜呜物流_2.2_马计",
+          "areaId": 1692,
+          "position": {
+            "x": 688680,
+            "y": 573670,
+            "z": 168
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2_2呜呜物流引导和后续任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein Echtzeit-Wechselkurs, plus eine variable Gebühr von 0,02 %, plus 10 % Mehrwertsteuer und eine Kuriergebühr … Was zum … Oh! Wenn das nicht {PlayerName}, {Male=mein alter Freund;Female=meine alte Freundin} ist! Unglaublich, so treffen wir uns wieder!",
+                "en": "A real-time exchange rate, plus a 0.02% variable fee, plus 10% GST, and a courier fee… What the actual... Oh! If it isn't my old friend, {PlayerName}! Unbelievable, we meet again!",
+                "es": "Una tasa de cambio en tiempo real, además de una tarifa variable del 0,02 %, sumado al impuesto del 10 % por bienes y servicios, y el costo de mensajería… Qué caraj… ¡Ah! ¡Pero si es {PlayerName}! ¡Qué gusto verte otra vez!",
+                "fr": "Un taux de change en temps réel, plus 0,02 % de frais variables, plus 10 % de taxes et les frais de livraison... Qu'est-ce que... Oh ! Mais qui voilà ? {PlayerName} ! C'est incroyable de te revoir !",
+                "ja": "実勢レート+0.02、それに税込価格の10%が手間賃だから、合計は……っと！これはこれは、我が友じゃないか！こんな時に会えるなんて、まさに奇遇だな！",
+                "ko": "실시간 환율+ 0.02, 거기에 상품 세후 가격, 10% 배달비까지 하면 총... 오! 나의 친구, 다시 만나게 될 줄이야!",
+                "th": "อัตราแลกเปลี่ยนแบบเรียลไทม์ +0.02 บวกกับราคาสินค้ารวมภาษี 10% ค่าบริการส่งของ รวมทั้งหมด... โอ้! เพื่อนเก่าที่รัก น่าอัศจรรย์จริงๆ ที่เราได้พบกันอีกครั้ง!",
+                "zh-Hans": "实时汇率+0.02再加商品含税价10%跑腿费所以一共……哟！亲爱的老朋友，真是不可思议，我们又见面了！",
+                "zh-Hant": "即時匯率+0.02再加商品含稅價10%跑腿費所以一共……喲！親愛的老朋友，真是不可思議，我們又見面了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ha, wenn das nicht der gute alte Maji ist!",
+                    "en": "Well, if it isn't good old Maji!",
+                    "es": "¡Vaya, pero si es el bueno de Maji!",
+                    "fr": "Ça alors, c'est ce bon vieux Maji !",
+                    "ja": "おう！マギー！",
+                    "ko": "그러게요! 잘 지내셨죠!",
+                    "th": "โอ้! Maji!",
+                    "zh-Hans": "哟！老马！",
+                    "zh-Hant": "喲！老馬！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Warum der plötzliche Tonwechsel?",
+                    "en": "Why the sudden change in tone?",
+                    "es": "¿Por qué el cambio de humor tan repentino?",
+                    "fr": "Pourquoi ce soudain changement de ton ?",
+                    "ja": "{Male=その喋り方、なんか変だな。;Female=その喋り方、なんか変。}",
+                    "ko": "말투가 뭔가 변한 것 같네요?",
+                    "th": "ทำไมพูดจาถึงได้เปลี่ยนสำเนียงแบบนี้ล่ะ?",
+                    "zh-Hans": "你说话怎么成这个腔调了？",
+                    "zh-Hant": "你說話怎麼成這個腔調了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha, das ist die Magie von Ragunna! Die Verlockung der klassischen Ästhetik und Kultur ist einfach zu verführerisch, um ihr zu widerstehen!",
+                "en": "Haha, call it the magic of Ragunna! The allure of classical aesthetics and culture is simply too tempting to resist!",
+                "es": "Ja, ja. Digamos que es la magia de Raguna. ¡El encanto de la estética y la cultura clásicas es muy tentador y difícil de resistir!",
+                "fr": "Haha, c'est la magie de Ragunna ! Sa culture et son esthétique classique sont trop attirantes pour y résister !",
+                "ja": "ははは、せっかくラグーナに来たんだし、私も一度はこのレトロで文学的な雰囲気に浸ってみたいと思ってな。",
+                "ko": "하하하, 라군나의 복고풍 분위기에 푹 빠져 살다 보니 나도 모르게 영향을 받았나 보네요",
+                "th": "ฮ่าๆ นี่แหละคือเวทมนตร์ของรากูนน่า! เสน่ห์ของสุนทรียศาสตร์และวัฒนธรรมคลาสสิกช่างเย้ายวนเกินต้าน! ฉันก็ได้รับอิทธิพลมาบ้างเหมือนกันนะ",
+                "zh-Hans": "哈哈哈，还得是拉古那！多么让人陶醉的复古文艺气息，令人目眩神迷！我也多少受了点影响啦。",
+                "zh-Hant": "哈哈哈，因為這裡是拉古那！多麼讓人陶醉的復古文藝氣息，令人目眩神迷！我多少也受了點影響啦。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erinnerst du dich noch an „Lollo-Navigator“? Damit bin ich nach Ragunna gereist, und es erwies sich als unglaublich nützlich. Ich bin sogar auf eine neue Idee gekommen! Willst du sie hören?",
+                "en": "So, do you still remember the trial \"Lollo Navigator\"? I navigated my way to Ragunna with it, and it turned out to be incredibly useful. It even sparked a new idea! Care to hear about it?",
+                "es": "En fin, ¿recuerdas la prueba «Navegación Lollo»? Navegué hasta Raguna con ella y resultó ser tremendamente útil. ¡Hasta se me ocurrió una idea nueva! ¿Quieres oírla?",
+                "fr": "Alors, tu te souviens de l'épreuve du « Navigateur Loulou » ? Elle s'est avérée incroyablement utile et m'a permis de me faire une place à Ragunna. Elle m'a même donné une nouvelle idée ! Envie de l'entendre ?",
+                "ja": "以前テスト運用していた「ブブナビ」なんだが、覚えているか？あれは本当に便利なものだと気づいたんだ。ラグーナに来る途中も、万事順調だった！そのおかげもあって、この間新事業を閃いたんだが、ご興味はおありかい？",
+                "ko": "혹시 전에 시운행했던 「무무 내비게이션」 기억하세요? 정말 유용하더라고요. 덕분에 라군나까지 막힘 없이 올 수 있었죠! 그런데, 새로운 사업을 시작했는데 한 번 들어보시겠어요?",
+                "th": "ยังจำบททดสอบ ระบบนำทางลอลโล่ ได้มั้ย ฉันใช้มันนำทางมาที่รากูนน่านี่แหละ บอกเลยว่ามีประโยชน์สุดๆ แถมยังได้ไอเดียใหม่ด้วย! ลองฟังดูหน่อยมั้ย",
+                "zh-Hans": "还记得之前试运行的「呜呜导航」吗？我发现这真是个好东西，我来拉古那这一路都畅通无阻！托它的福，我最近还发掘出了新业务，有没有兴趣了解一下？",
+                "zh-Hant": "還記得之前試運行的「嗚嗚導航」嗎？我發現這真是個好東西，我來拉古那這一路都暢通無阻！託它的福，我最近想到了新業務方向，有沒有興趣了解一下？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Immer her damit.",
+                    "en": "I'm all ears.",
+                    "es": "A ver.",
+                    "fr": "Dis-moi tout.",
+                    "ja": "言ってごらん。",
+                    "ko": "얘기해 보세요",
+                    "th": "ว่ามาเลย",
+                    "zh-Hans": "说来听听。",
+                    "zh-Hant": "說來聽聽。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also gut, stell dir Folgendes vor: Du siehst etwas, das du haben möchtest, aber dort, wo du wohnst, ist es nicht erhältlich. Oder du findest es, aber der Preis ist völlig überzogen. Oder vielleicht ist der Preis angemessen, aber du hast keine Zeit, um es dir selbst zu besorgen …",
+                "en": "Alright, picture this: You see something you want, but it's unavailable where you live. Or maybe you find it, but the price is inflated beyond reason. Or maybe the price is acceptable, but you don't have the luxury of time to get it yourself…",
+                "es": "Muy bien, imagina esto: ves algo que quieres, pero que no puedes conseguir donde vives o que se consigue a un precio exorbitante. También puede ser que el precio sea aceptable, pero no tienes el tiempo de ir a buscarlo…",
+                "fr": "Très bien, imagine ça : tu vois une chose que tu veux, mais elle est indisponible dans ta région ; ou alors, tu arrives à la trouver, mais à un prix exorbitant ; ou bien le prix est acceptable, mais tu n'as pas le temps de te la procurer...",
+                "ja": "地元じゃ買えない気になるあの品や、地元で買えても他所より高いこの品。はたまた、買えるし値段もお手頃なんだが、忙しすぎて買いに行く機会がないとか……",
+                "ko": "예를 들어, 봐 둔 물건이 있는데 현지에서 살 수 없을 때가 있다던가 혹은 현지에서 살 수는 있는데 다른 데보다 가격이 아주 비싸다거나, 또 혹은 괜찮은 가격에 살 수는 있지만 시간이 없는 경우...",
+                "th": "โอเค ลองนึกภาพตามนะ คุณเห็นของที่คุณอยากได้แต่ไม่มีขายแถวบ้านคุณ หรืออาจจะมีแต่ก็ถูกโก่งราคาจนสูงลิ่ว หรือราคาอาจจะสมเหตุสมผล แต่คุณก็ไม่ว่างไปเอาด้วยตัวเอง...",
+                "zh-Hans": "有时你看中了一件商品，但你在本地买不到；又或是在本地能买到，价格却比外地贵了很多；再或者是能买到价格也合理，偏偏你是个大忙人……",
+                "zh-Hant": "有時你看中了一件商品，但你在本地買不到；又或是在本地能買到，價格卻比外地貴了很多；再或者是能買到價格也合理，偏偏你是個大忙人……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wo es eine Nachfrage gibt, gibt es auch einen Markt! Deshalb habe ich eine neue Kampagne namens „Lollo-Botendienst“ ins Leben gerufen!",
+                "en": "Where there's a need, there's a market! That's why I came up with a new campaign called \"Lollo Errand\"!",
+                "es": "¡Donde existe una necesidad, hay un mercado! Por eso se me ocurrió un nuevo emprendimiento al que llamo: ¡Lollo Mandado!",
+                "fr": "Là où il y a un besoin, il y a un marché ! C'est pour ça que j'ai trouvé une nouvelle campagne appelée « Commissions de Loulou » !",
+                "ja": "ニーズあるとこマーケットありだ！ってことで、「ブブ買い物代行」という新事業なんてどうだ？",
+                "ko": "수요가 시장을 만들죠! 「무무 구매대행」 기획 어떤 거 같으세요?",
+                "th": "เมื่อมีความต้องการ ก็จะมีตลาดตามมา! คุณรู้สึกยังไงบ้างกับแคมเปญ ลอลโล่รับหิ้ว?",
+                "zh-Hans": "有需求，就会有市场！你觉得「呜呜代购」这个新企划怎么样？",
+                "zh-Hant": "有需求，就會有市場！你覺得「嗚嗚代購」這個新企劃怎麼樣？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt klasse.",
+                    "en": "Sounds very nice.",
+                    "es": "Es un buen nombre.",
+                    "fr": "Ça a l'air d'une bonne idée.",
+                    "ja": "悪くないと思う。",
+                    "ko": "괜찮을 것 같네요",
+                    "th": "ฟังดูดีนะ",
+                    "zh-Hans": "听起来不错。",
+                    "zh-Hant": "聽起來不錯。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Klingt ziemlich profitabel.",
+                    "en": "Sounds rather profitable.",
+                    "es": "Parece bastante rentable.",
+                    "fr": "Ça a l'air plutôt lucratif.",
+                    "ja": "{Male=また大儲けする予感だな。;Female=また大儲けする予感だね。}",
+                    "ko": "큰돈을 버시겠네요",
+                    "th": "ฟังดูทำกำไรได้งาม",
+                    "zh-Hans": "听起来你又要赚大钱了。",
+                    "zh-Hant": "聽起來你又要賺大錢了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha, genau! Der Zeitaufwand hat sich bereits gelohnt. Ich konnte schon mehrere Aufträge abschließen!",
+                "en": "Haha, exactly! The time I've spent on it has already paid off. I've already completed several orders!",
+                "es": "¡Ja, ja, así es! Ya recuperé lo que invertí hasta ahora. ¡Entregué varios pedidos!",
+                "fr": "Haha, exactement ! Tout le temps que j'y ai passé a déjà rapporté. J'ai livré pas mal de commandes !",
+                "ja": "ははは、だろ！ここしばらくテストマーケをしていたところ、予想外に順調で、既に何件か注文を受けたんだ！",
+                "ko": "하하하, 괜찮죠! 최근 이것만 연구하고 있었거든요. 생각보다 반응이 좋더라고요. 벌써 주문도 여러 개 받았고요!",
+                "th": "ฮ่าๆ ใช่มั้ยล่ะ! เมื่อไม่นานมานี้ฉันกำลังศึกษามันอยู่ ความคืบหน้าดีเกินคาด ได้รับงานไปหลายออร์เดอร์แล้วเลย!",
+                "zh-Hans": "哈哈哈，是吧！我前段时间就在研究这个呢，进度意外地很不错，已经接了好几单！",
+                "zh-Hant": "哈哈哈，是吧！我前段時間就在研究這個呢，進度意外的很不錯，已經接了好幾單！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Moment kümmere ich mich um eine Bestellung von <color=yellow>Mehl</color> aus Ragunna. Ein scharfsinniger Kunde hat herausgefunden, dass der Preis hier nur halb so hoch ist wie in Jinzhou, und kauft deshalb schon seit einiger Zeit Mehl aus Ragunna!",
+                "en": "Right now, I'm handling an order for some <color=yellow>flour</color> from Ragunna. An astute client discovered the price here is half of what they pay in Jinzhou, so they've been buying flour from Ragunna for quite a while!",
+                "es": "Ahora mismo, voy de camino a entregar <color=yellow>harina</color> de Raguna. Un cliente astuto descubrió que aquí sale la mitad que en Jinzhou, así que lleva un tiempo comprándola en Raguna.",
+                "fr": "En ce moment, je m'occupe d'une commande de <color=yellow>farine</color> de Ragunna. Un client futé a découvert qu'elle y est moitié moins chère qu'à Jinzhou, alors il achète sa farine à Ragunna depuis un petit moment !",
+                "ja": "今回はだな、ちょうどラグーナで買い物代行の依頼を受けたんだ。えっと……そうそう、<color=yellow>小麦粉</color>だったな。ラグーナの小麦粉の価格は今州の半額だとか。この賢いお客さんは、しばらくの間こっちで購入していたらしいぞ！",
+                "ko": "이번에 받은 주문은 라군나에서 <color=yellow>밀가루</color>를 사다 달라는 건데... 듣자 하니 라군나의 밀가루 가격이 금주의 절반밖에 안 된다고 하더라고요. 이 똑똑한 손님은 이미 가격 차이를 활용해 사들인 지 꽤 됐다네요!",
+                "th": "ตอนนี้ฉันจัดการกับออเดอร์ให้ซื้อ...<color=yellow>แป้ง</color>จากรากูนน่าอยู่ มีลูกค้าฉลาดพบว่าราคาที่นี่มันถูกกว่าที่จินโจวตั้งครึ่งหนึ่ง ก็เลยซื้อแป้งจากรากูนน่ามาสักพักแล้ว!",
+                "zh-Hans": "这回的单子，刚好是委托我来拉古那代购……<color=yellow>面粉</color>。听说拉古那的面粉定价只有今州的一半，这位机敏的客人已经趁着差价买了有段时间了！",
+                "zh-Hant": "這回的單子，剛好是委託我來拉古那代購……<color=yellow>麵粉</color>。聽說拉古那的麵粉定價只有今州的一半，這位機敏的客人已經趁著差價買了有段時間了！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wirklich?!",
+                    "en": "Really?!",
+                    "es": "¡¿De verdad?!",
+                    "fr": "Vraiment ?!",
+                    "ja": "そんなことが？！",
+                    "ko": "뭐라고요?",
+                    "th": "จริงเหรอเนี่ย?!",
+                    "zh-Hans": "竟有此事？！",
+                    "zh-Hant": "竟有此事？！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "{Male=Dein scharfsinniger Freund;Female=Deine scharfsinnige Freundin} hier wusste das schon längst.",
+                    "en": "Your astute friend right here knew that a long time ago.",
+                    "es": "Aquí también tienes a alguien que hace mucho tiempo que lo sabe.",
+                    "fr": "Je le sais depuis longtemps.",
+                    "ja": "{Male=俺ならもうとっくに気づいていたけどな。;Female=私ならもうとっくに気づいていたけど。}",
+                    "ko": "똑똑한 저도 이미 발견했죠",
+                    "th": "ฉลาดแบบฉันก็สังเกตเห็นมานานแล้ว",
+                    "zh-Hans": "机敏的我也早就发现了。",
+                    "zh-Hant": "機敏的我也早就發現了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verblüffend, oder? Früher bekamen sie das Mehl von einem mysteriösen Mann, der eine Sonnenbrille trug, aber der meinte, sein Schiff sei an jemand anderen verliehen, also vorerst keine Botendienste …",
+                "en": "Amazing, right! They used to get the flour from a mysterious man wearing sunglasses, but he told them his ship was lent to someone else, so no errands for now…",
+                "es": "Fantástico, ¿no? Solía comprarle harina a un hombre misterioso que usaba gafas de sol, pero ese ahora le prestó su barco a alguien más, así que no hace recados por ahora…",
+                "fr": "C'est incroyable, pas vrai ? Il achetait sa farine auprès d'un étrange homme avec des lunettes de soleil, mais il lui a dit avoir prêté son bateau à quelqu'un d'autre, donc plus de commissions pour l'instant...",
+                "ja": "私も驚いたよ！そのお客さんの話では、以前はグラサンをかけた「アーなんとか」という謎の男に依頼していたらしいんだが、持っていた船を借りパクされたとかで、代行を受けられなくなったとか……",
+                "ko": "저도 처음엔 몰랐어요! 손님 말로는 예전엔 선글라스를 낀 정체불명의 남자한테 부탁해서 샀다고 하더군요. 그런데 얼마 전에 그 남자의 배를 누군가 가져가서 당분간 주문을 받을 수 없게 됐대요...",
+                "th": "ยอดไปเลยใช่มั้ยล่ะ! พวกเขามักซื้อแป้งจากชายปริศนาที่สวมแว่นกันแดด แต่ชายคนนั้นบอกลูกค้าว่าให้คนอื่นยืมเรือไปใช้ ก็เลยไม่สามารถรับออเดอร์ได้...",
+                "zh-Hans": "我也没想到啊！听这位客人说，他之前一直是委托一名神秘墨镜男子帮忙代购的，但最近该男子说自己的私人小船被人开走了，不接代购了……",
+                "zh-Hant": "我也沒想到啊！聽這位客人說，他之前一直是委託一名神秘墨鏡男子幫忙代購的，但最近該男子說自己的私人小船被人開走了，不接代購了……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aha! Wie zu erwarten für jemanden, der so schlau ist wie du!",
+                "en": "Aha! As expected for someone as sharp as you!",
+                "es": "¡Ajá! ¡No esperaba menos de alguien tan inteligente como tú!",
+                "fr": "Ha ! Ce n'est pas surprenant pour un esprit aussi brillant que le tien !",
+                "ja": "さすが{PlayerName}だ！",
+                "ko": "역시, 역시 {PlayerName}!",
+                "th": "ฮะฮ่า! สมแล้วที่เป็นคุณจริงๆ {PlayerName}!",
+                "zh-Hans": "不愧是，不愧是{PlayerName}！",
+                "zh-Hant": "不愧是，不愧是{PlayerName}！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieser Kunde sagte, dass sie frühe das Mehl von einem mysteriösen Mann mit Sonnenbrille bekamen, aber der meinte, sein Schiff sei an jemand anderen verliehen, also vorerst keine Botendienste …",
+                "en": "This client said they used to get the flour from a mysterious man wearing sunglasses, but he told them his ship was lent to someone else, so no errands for now…",
+                "es": "Este cliente dice que solía comprarle harina a un hombre misterioso que usaba gafas de sol, pero ese ahora le prestó su barco a alguien más, así que no puede hacer recados por ahora…",
+                "fr": "Il a dit qu'il achetait sa farine auprès d'un étrange homme avec des lunettes de soleil, mais il lui a dit avoir prêté son bateau à quelqu'un d'autre, donc plus de commissions pour l'instant...",
+                "ja": "そのお客さんの話では、以前はグラサンをかけた「アーなんとか」という謎の男に依頼していたらしいんだが、持っていた船を借りパクされたとかで、代行を受けられなくなったとか……",
+                "ko": "손님 말로는 예전엔 선글라스를 낀 정체불명의 남자한테 부탁해서 샀다고 하더군요. 그런데 얼마 전에 그 남자의 배를 누군가 가져가서 당분간 주문을 받을 수 없게 됐대요...",
+                "th": "ลูกค้าคนนี้บอกว่าพวกเขามักซื้อแป้งจากชายปริศนาที่สวมแว่นกันแดด แต่ชายคนนั้นบอกลูกค้าว่าให้คนอื่นยืมเรือไปใช้ ก็เลยไม่สามารถรับออเดอร์ได้...",
+                "zh-Hans": "我听这位客人说，他之前一直是委托一名神秘墨镜男子帮忙代购的，但最近该男子说自己的私人小船被人开走了，不接代购了……",
+                "zh-Hant": "我聽這位客人說，他之前一直是委託一名神秘墨鏡男子幫忙代購的，但最近該男子說自己的私人小船被人開走了，不接代購了……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Doch dann erfuhren sie von der neuen Dienstleistung von Lollo-Logistik und wandten sich hilfesuchend an mich. So kam das alles zusammen! Möchtest du vielleicht dieses Mal mitmachen, {PlayerName}? Dann kaufe 10 Säcke Mehl, und du bekommst dafür eine nette Provision!",
+                "en": "But later, they found out about Lollo Logistics's new service and reached out to me for help. That's how this all came together! Interested in joining me this time, {PlayerName}? Buy 10 bags of flour, and you'll earn a nice errand fee in return!",
+                "es": "Entonces, oyó hablar sobre el servicio nuevo de Logística Lollo y buscó mi ayuda. ¡Así es como comenzó todo! ¿Quieres participar de esta entrega, {PlayerName}? ¡Compra 10 sacos de harina y, a cambio, ganarás una buena suma por la entrega!",
+                "fr": "Mais il a ensuite entendu parler du nouveau service de Loulou Logistique et m'a demandé de l'aide. C'est à ce moment que j'ai eu cette idée ! Ça t'intéresse de te joindre à moi, {PlayerName} ? Achète 10 sacs de farine et tu toucheras une jolie prime de livraison en échange !",
+                "ja": "それで、ちょうどブブ物流が新事業に乗り出したのを見て、私に依頼をかけたんだ。どうだ、{PlayerName}、試してみるか？小麦粉を10袋買うだけで、かなりの代行料になるぞ！",
+                "ko": "마침, 무무 물류에서 새로운 사업을 시작한 걸 보고, 저한테 찾아온 거죠. 어때요, {PlayerName}, 한번 해보지 않을래요? 밀가루 10 봉지만 사도 수입이 꽤 괜찮거든요!",
+                "th": "แต่พอเห็นบริการใหม่ของลอลโล่โลจิสติกส์และติดต่อให้ฉันช่วยเหลือ คุณคิดว่ายังไง สนใจมาร่วมงานนี้ด้วยกันมั้ย {PlayerName}? ซื้อแป้ง 10 ถุงแล้วก็รับค่าตอบแทนงามๆ ไป!",
+                "zh-Hans": "刚好看到呜呜物流启动了全新业务，于是找到了我。怎么样，{PlayerName}，你要试一下吗？只需要买十袋面粉，就可以获得不错的代购费哦！",
+                "zh-Hant": "剛好看到嗚嗚物流啟動了全新業務，於是找到了我。怎麼樣，{PlayerName}，你要試一下嗎？只需要買十袋麵粉，就可以獲得不錯的代購費喔！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bei Prämien sage ich nie nein.",
+                    "en": "I never say no to bounties.",
+                    "es": "Nunca le digo que no a una recompensa.",
+                    "fr": "Je ne refuse jamais une prime.",
+                    "ja": "{Male=金儲けを断る理由はないな。;Female=金儲けを断る理由はないね。}",
+                    "ko": "쉽게 돈을 벌 수 있다면 당연히 해야죠",
+                    "th": "ไม่ปฏิเสธเงินอยู่แล้ว",
+                    "zh-Hans": "有钱怎么不赚？",
+                    "zh-Hant": "有錢怎麼不賺？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wenn du in Vorkasse gehst, übernehme ich das.",
+                    "en": "If you pay upfront, I'll handle it.",
+                    "es": "Si pagas por adelantado, apúntame.",
+                    "fr": "Si tu payes d'avance, je m'en charge.",
+                    "ja": "{Male=まずは資金をくれ、話はそれからだ。;Female=まずは資金をちょうだい、話はそれからよ。}",
+                    "ko": "초기 자금부터 주시죠",
+                    "th": "ถ้าจ่ายล่วงหน้าเดี๋ยวเดินงานให้เลย",
+                    "zh-Hans": "先给资金，别的好说。",
+                    "zh-Hant": "先給資金，別的好說。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wunderbar! Der Kunde hat bereits bezahlt, und ich werde es dir sofort überweisen.",
+                "en": "Wonderful! The customer has already made their payment, and I'll transfer it to you right away.",
+                "es": "¡Maravilloso! El cliente pagó de antemano; ya mismo te lo transfiero.",
+                "fr": "Merveilleux ! Le client a déjà effectué le paiement, je te le transfère immédiatement.",
+                "ja": "うんうん！お客さんは前払いしてくれたから、すぐ振り込んでおくよ。",
+                "ko": "좋아요! 손님께 이미 돈을 받았으니 바로 계좌로 보내드릴게요",
+                "th": "วิเศษเลย! ลูกค้าจ่ายมาให้เรียบร้อยแล้ว ฉันจะโอนไปให้เดี๋ยวนี้แหละ",
+                "zh-Hans": "很好很好！客户已经提前把钱打给我了，我这就转你账上。",
+                "zh-Hant": "很好很好！客戶已經提前把錢打給我了，我這就轉你帳上。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haha, natürlich! Der Kunde hat bereits bezahlt, und ich werde es dir sofort überweisen.",
+                "en": "Haha, of course! The customer has already made their payment, and I'll transfer it to you right away.",
+                "es": "¡Ja, ja, por supuesto! El cliente pagó de antemano; ya mismo te lo transfiero.",
+                "fr": "Haha, bien sûr ! Le client a déjà effectué le paiement, je te le transfère immédiatement.",
+                "ja": "はは、それはもちろん！お客さんは前払いしてくれたから、すぐ振り込んでおくよ。",
+                "ko": "하하, 당연하죠! 손님께 이미 돈을 받았으니 바로 계좌로 보내드릴게요",
+                "th": "ฮ่าๆ แน่นอน! ลูกค้าจ่ายมาให้เรียบร้อยแล้ว ฉันจะโอนไปให้เดี๋ยวนี้แหละ",
+                "zh-Hans": "哈哈那是当然！客户已经提前把钱打给我了，我这就转你账上。",
+                "zh-Hant": "哈哈那是當然！客戶已經提前把錢打給我了，我這就轉你帳上。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du solltest übrigens auch mal den <color=yellow>Gondel-Markt</color> besuchen. Ich hörte, dass es dort ein spezielles <color=yellow>nahrhaftes Mehl</color> gibt. Ich warte hier auf dich!",
+                "en": "By the way, you might want to check out the <color=yellow>Gondola Market</color>. I hear they've got a special <color=yellow>fortified flour</color>. I'll be waiting for you here!",
+                "es": "Por cierto, quizás te interese pasar por el <color=yellow>Mercado Góndola</color>. Oí que tienen una <color=yellow>harina fortificada</color> especial. ¡Te estaré esperando aquí!",
+                "fr": "D'ailleurs, tu devrais peut-être aller au <color=yellow>Marché de la gondole</color>. Il paraît qu'ils ont une sorte de <color=yellow>farine enrichie</color>. Je t'attends ici !",
+                "ja": "それと、<color=yellow>ゴンドラ水上市場</color>に新しく特製の<color=yellow>栄養満点な小麦粉</color>が入荷したらしいから、見に行ってみたらどうかな。ここで待ってるよ！",
+                "ko": "<color=yellow>곤돌라 수상 시장</color>에 특제 <color=yellow>고영양 밀가루</color>가 들어왔다고 하니, 그쪽으로 가보시죠. 전 여기서 기다리고 있을게요!",
+                "th": "ได้ยินมาว่า <color=yellow>ตลาดกอนโดลา</color>เพิ่งเข้าของใหม่เป็น<color=yellow>แป้งเสริมโภชนาการ</color> ลองไปดูที่นั่นได้นะ ฉันจะรอคุณที่นี่แหละ!",
+                "zh-Hans": "听说<color=yellow>贡多拉水市</color>新到货了特制的<color=yellow>营养面粉</color>，可以去那边看看。我在这里等你！",
+                "zh-Hant": "聽說<color=yellow>貢多拉水市</color>新到貨了特製的<color=yellow>營養麵粉</color>，可以去那邊看看。我在這裡等你！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

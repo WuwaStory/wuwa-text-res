@@ -1,0 +1,2927 @@
+{
+  "id": 189800001,
+  "key": "重建旧街第二阶段",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Morgenstern II",
+    "en": "Morning Star II",
+    "es": "Estrella del alba: II",
+    "fr": "Étoile du matin - II",
+    "ja": "黎明を告げる星（二）",
+    "ko": "새벽의 별 · II",
+    "th": "ดาวรุ่ง II",
+    "zh-Hans": "黎明之星（二）",
+    "zh-Hant": "黎明之星（二）"
+  },
+  "desc": {
+    "de": "Die Vertriebenen sehnen sich danach, die Altstadt zu ihrer neuen Heimat aufzubauen, doch das Böse haftet ihr wie ein Schatten an.",
+    "en": "The displaced long to rebuild the Old District into their new home, but evil clings like a shadow.",
+    "es": "Los sin techo anhelan reconstruir el Distrito Antiguo y convertirlo en un nuevo hogar, pero la malicia se aferra como una sombra.",
+    "fr": "Les personnes déplacées s'efforcent de reconstruire le Vieux Quartier pour en faire leur nouveau foyer, mais le mal les poursuit comme une ombre.",
+    "ja": "居場所を失った人々は旧市街地の復興を進め、新たな住まいを築こうとした。だが悪意は影に潜み、また静かに忍び寄る……",
+    "ko": "집을 잃은 사람들은 구도심을 복구하여 새로운 터전을 얻고자 하지만 악의가 그림자처럼 따라다녔다",
+    "th": "ผู้พลัดถิ่นปรารถนาที่จะฟื้นฟูเขตเมืองเก่าให้เป็นบ้านใหม่ของพวกเขา แต่ความชั่วร้ายยังคงเกาะกินราวกับเงา",
+    "zh-Hans": "流离失所的人们希望重建旧街获得新家园，但恶意却如影随形。",
+    "zh-Hant": "流離失所的人們希望重建舊街獲得新家園，但惡意卻如影隨形。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe in die Altstadt von Septimont und sprich mit Maji über die Wiederaufbauarbeiten.",
+        "en": "Head to Septimont's Old District and ask Maji about its recovery",
+        "es": "Dirígete al Distrito Antiguo de Septimont y pregunta a Maji sobre la recuperación del Distrito Antiguo.",
+        "fr": "Se rendre au Vieux quartier de Septimon et parler à Maji de la reconstruction",
+        "ja": "セブン・ヒルズに向かい、馬計に旧市街地の再建作業について聞く",
+        "ko": "일곱 언덕 구도심으로 이동하여 마현에게 구도심 복구 상황 알아보기",
+        "th": "ไปที่เขตเมืองเก่าของเซปติมอนต์และถาม Maji เกี่ยวกับการฟื้นฟู",
+        "zh-Hans": "前往七丘旧街，向马计了解旧街重建情况",
+        "zh-Hant": "前往七丘舊街，向馬計了解舊街重建情況"
+      },
+      "entities": [
+        {
+          "entityId": 189800004,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_马计",
+          "areaId": 33103,
+          "position": {
+            "x": 1216250,
+            "y": 1163650,
+            "z": 27234
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800013,
+          "mapId": 8,
+          "blueprintType": "Quest109",
+          "name": "TsEntity_任务_木箱堆1",
+          "areaId": 33002,
+          "position": {
+            "x": 1193346,
+            "y": 1082119,
+            "z": 2667
+          },
+          "rotation": {
+            "x": 4,
+            "y": -9,
+            "z": 22
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800014,
+          "mapId": 8,
+          "blueprintType": "Quest110",
+          "name": "TsEntity_任务_木箱堆2",
+          "areaId": 33002,
+          "position": {
+            "x": 1193305,
+            "y": 1082461,
+            "z": 2636
+          },
+          "rotation": {
+            "x": 5,
+            "y": -8,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}!",
+                "en": "{PlayerName}!",
+                "es": "¡{PlayerName}!",
+                "fr": "{PlayerName} !",
+                "ja": "{PlayerName}じゃないか？",
+                "ko": "{PlayerName}!",
+                "th": "{PlayerName}!",
+                "zh-Hans": "{PlayerName}！",
+                "zh-Hant": "{PlayerName}！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Maggie!",
+                    "en": "Maggie!",
+                    "es": "¡Maggie!",
+                    "fr": "Maggie !",
+                    "ja": "マギー！",
+                    "ko": "Maggie!",
+                    "th": "แม็กกี้!",
+                    "zh-Hans": "Maggie！",
+                    "zh-Hant": "Maggie！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Maji!",
+                    "en": "Maji!",
+                    "es": "¡Maji!",
+                    "fr": "Maji !",
+                    "ja": "馬計！",
+                    "ko": "마현!",
+                    "th": "Maji!",
+                    "zh-Hans": "马计！",
+                    "zh-Hant": "馬計！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mensch, bin ich froh, dich zu sehen. Meine Freunde in Ragunna haben gesagt, dass der Orden Hilfe schicken würde. Ich hätte nie gedacht, dass ausgerechnet du kommen würdest. Da bin ich aber erleichtert.",
+                "en": "Boy, am I glad to see you. My friends over at Ragunna told me they were sending some help over from the Order. I never expected it would be you. I'm relieved.",
+                "es": "Cuánto me alegro de verte. Mis amigos de Raguna me dijeron que enviarían ayuda de la Orden, pero no esperaba que fueras tú. ¡Qué alivio!",
+                "fr": "Tu n'imagines pas à quel point je suis content de te voir. Mes amis de Ragunna m'ont dit que l'Ordre allait envoyer de l'aide, mais je ne m'attendais pas du tout à ce que ce soit toi. Je suis soulagé.",
+                "ja": "教団の助っ人が来るとラグーナの友達に言われていたんだが、まさか君だったとは。これで一安心だ。",
+                "ko": "잘 됐네요. 라군나의 친구가 수도회에 도움을 요청했다고 했는데, 당신이 올 줄은 몰랐어요. 이제 마음이 놓이네요",
+                "th": "ดีใจจังเลยที่เจอคุณ เพื่อนที่รากูนน่าของฉันบอกว่าจะส่งคนจากภาคีมาช่วย ไม่คิดเลยว่าจะเป็นคุณ ฉันโล่งอกไปเยอะเลย",
+                "zh-Hans": "太好了，拉古那的朋友说找了修会来帮忙，没想到来的是你，这下我可安心了。",
+                "zh-Hant": "太好了，拉古那的朋友說找了修會來幫忙，沒想到來的是你，這下我可安心了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wurdest du nicht befördert? Was machst du noch hier?",
+                "en": "Didn't you get promoted to management? Why are you still out in the field?",
+                "es": "Te ascendieron a gerente, ¿no? ¿Cómo es que sigues trabajando a pie de campo?",
+                "fr": "Tu n'avais pas été promu au poste de direction ? Qu'est-ce que tu fais sur le terrain ?",
+                "ja": "{Male=管理職に昇進したのに、どうしてまた現場に？;Female=管理職に昇進したのに、どうしてまた現場に？}",
+                "ko": "경영진으로 승진한 거 아니었나요? 근데 왜 아직도 현장에서 뛰고 있는 거죠?",
+                "th": "คุณไม่ได้เลื่อนตำแหน่งเป็นฝ่ายจัดการแล้วเหรอ? ทำไมยังออกมาภาคสนามล่ะ?",
+                "zh-Hans": "你不是晋升管理层了吗，怎么还在跑现场？",
+                "zh-Hant": "你不是晉升管理層了嗎，怎麼還在跑現場？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach, sag doch so was nicht. Im Herzen bin ich immer noch ein Kurier. Wenn die Pflicht ruft, bin ich zur Stelle.",
+                "en": "Come on, let's not put it like that. I'm still a courier at heart. When duty calls, I answer.",
+                "es": "Vamos, no lo pintes así. En el fondo, sigo siendo un mensajero. Si el deber llama, respondo.",
+                "fr": "Oh, il ne faut pas voir les choses comme ça. Au fond de moi, je serai toujours un coursier. Quand le devoir m'appelle, j'arrive au plus vite.",
+                "ja": "物流を担う者にとって、ここが戦場なんだ。先頭に立ってお手本を見せる必要があるだろう？",
+                "ko": "그렇게 말하면 안 되죠. 물류인에게 있어 이곳은 전장이나 다름없으니, 제가 솔선수범해야죠",
+                "th": "เอาน่า อย่าพูดแบบนั้นเลย ฉันยังเป็นคนส่งของอยู่เสมอ หน้าที่เรียกหาเมื่อไหร่ ฉันก็พร้อมไป",
+                "zh-Hans": "话不能这么说，对于物流人来说这里就是战场，我肯定要身先士卒呀。",
+                "zh-Hant": "話不能這麼說，對於物流人來說這裡就是戰場，我肯定要身先士卒呀。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, mit was für einem Problem hat sich unser erfahrener regionaler Chefberater denn heute in Bedrängnis gebracht?",
+                "en": "So what kind of problem are we dealing with today that's got our Senior Regional Chief Advisor in a tight spot?",
+                "es": "¿Con qué tipo de problema nos enfrentamos hoy, Asesor Jefe Regional?",
+                "fr": "Alors, quels sont les problèmes qui donnent du fil à retordre à notre Conseiller régional en chef ?",
+                "ja": "{Male=「シニアエリア業務コンサルタント」がお手上げの問題とは？;Female=「シニアエリア業務コンサルタント」がお手上げの問題とは？}",
+                "ko": "그래서 무슨 문제가 생겼길래 베테랑 전문가이자 지역 담당 고문마저 곤란해하는 거죠?",
+                "th": "แล้วคราวนี้เรากำลังเจอปัญหาอะไรอยู่ ขนาดเดือดร้อนถึงหัวหน้าที่ปรึกษาผู้อาวุโสของภูมิภาคเลย?",
+                "zh-Hans": "所以这里遇到了什么问题，连我们的资深专家、地区业务总顾问都被难住了？",
+                "zh-Hant": "所以這裡遇到了什麼問題，連我們的資深專家、地區業務總顧問都被難住了？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einer unserer Konvois mit Baumaterial wurde beim Durchqueren des Klagetals von TDs angegriffen. Die Gladiatoren, die für die Eskorte zuständig waren, sagten, sie seien auf „ein unsterbliches Monster“ gestoßen.",
+                "en": "One of our construction material convoys was attacked by TDs while crossing Mournfell Canyon. The Gladiators in charge of escort said they came across \"undying monsters.\"",
+                "es": "Uno de nuestros convoyes con materiales de construcción fue atacado por disonancias mientras cruzaba el Valle de Luto. Los gladiadores a cargo de la escolta dijeron toparse con «monstruos que no podían matar».",
+                "fr": "Un de nos convois de matériaux de construction a été attaqué par des Tacets Discords alors qu'il traversait le Canyon du Deuil. Les gladiateurs qui l'escortaient ont déclaré avoir rencontré des monstres « indestructibles ».",
+                "ja": "建築資材の輸送中に、モーンフェル・キャニオンで残像の襲撃に遭ったんだ。担当していたグラディエーターによると、「不死の怪物」に遭遇したとか。",
+                "ko": "운송 중인 건축 자재가 탄식의 협곡에서 잔상의 습격을 받았고, 호송을 담당한 검투사가「불사의 괴물」을 만났다고 해요",
+                "th": "ทาเซ็ตดิสคอร์ดโจมตีกองคาราวานวัสดุก่อสร้างของเราตอนข้ามหุบเขาอาลัย กลาดิเอเตอร์ที่รับผิดชอบคุ้มกันบอกว่าพวกเขาเจอ \"สัตว์ประหลาดอมตะ\"",
+                "zh-Hans": "有一批建材在途经哀恸谷的时候被残象袭击，负责押运的角斗士说遇见了“打不死的怪物”。",
+                "zh-Hant": "有一批建材在途經哀慟谷的時候被殘象襲擊，負責押運的角鬥士說遇見了「打不死的怪物」。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Im Klagetal?",
+                    "en": "Mournfell Canyon?",
+                    "es": "¿Valle de Luto?",
+                    "fr": "Canyon du Deuil ?",
+                    "ja": "モーンフェル・キャニオン？",
+                    "ko": "탄식의 협곡이요?",
+                    "th": "หุบเขาอาลัย?",
+                    "zh-Hans": "哀恸谷？",
+                    "zh-Hant": "哀慟谷？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Unsterbliche Monster?",
+                    "en": "Undying monsters?",
+                    "es": "¿Monstruos que no podían matar?",
+                    "fr": "Monstres indestructibles ?",
+                    "ja": "不死の怪物？",
+                    "ko": "불사의 괴물이요?",
+                    "th": "สัตว์ประหลาดอมตะ?",
+                    "zh-Hans": "不死怪物？",
+                    "zh-Hant": "不死怪物？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ganz genau. Sie sagten, das Monster wär immer wieder aufgestanden, egal wie oft sie es getötet hätten. Es wollte einfach nicht sterben.",
+                "en": "That's right. They said those monsters would come back from the dead no matter how many times they killed them. They just wouldn't die.",
+                "es": "Así es. Decían que esos monstruos volvían de la muerte sin importar cuántas veces los mataran. Simplemente, no se morían.",
+                "fr": "Exactement. Ils ont dit que les monstres revenaient d'entre les morts à chaque fois qu'ils les tuaient. Ils refusaient de mourir.",
+                "ja": "ああ。なんでも、どんな攻撃を受けてもすぐに復活する、その名の通り、死ぬことのない化け物なんだ。",
+                "ko": "네. 철수한 검투사가 말하는데, 어떤 공격을 받아도 바로 재생하는 괴물이라고 해요. 마치 죽지 않는 것처럼요",
+                "th": "ใช่แล้ว พวกเขาบอกว่าพวกมันฟื้นคืนชีพได้ไม่ว่าจะฆ่าไปกี่ครั้ง เหมือนพวกมันไม่มีวันตาย",
+                "zh-Hans": "没错，听撤退的角斗士说，是一种无论怎么攻击都会很快复生的怪物，就像不会死一样。",
+                "zh-Hant": "沒錯，聽撤退的角鬥士說，是一種無論怎麼攻擊都會很快復生的怪物，就像不會死一樣。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich sehe mir das mal an.",
+                "en": "I'll go check it out.",
+                "es": "Iré a comprobarlo.",
+                "fr": "Je vais aller voir ça.",
+                "ja": "確認しに行ってくる。",
+                "ko": "제가 가서 확인해 볼게요",
+                "th": "ฉันจะไปดูเอง",
+                "zh-Hans": "我去看看。",
+                "zh-Hant": "我去看看。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier sind die Koordinaten. Viel Glück!",
+                "en": "Here are the coordinates. Best of luck to you!",
+                "es": "Aquí tienes las coordenadas. ¡Mucha suerte!",
+                "fr": "Voilà les coordonnées. Bonne chance !",
+                "ja": "じゃあ座標を送ろう。頼んだぜ！",
+                "ko": "그럼 좌표를 보내드릴게요. 부탁드리겠습니다!",
+                "th": "นี่คือพิกัด ขอให้โชคดีนะ!",
+                "zh-Hans": "那我把坐标发给你，就仰仗你了！",
+                "zh-Hant": "那我把坐標發給你，就仰仗你了！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich ins Klagetal und suche nach den verlorenen Baumaterialien",
+        "en": "Head to Mournfell Canyon to retrieve the lost construction materials",
+        "es": "Dirígete al Valle de Luto para recuperar el material de construcción perdido.",
+        "fr": "Se rendre au Canyon du Deuil pour retrouver les matériaux perdus",
+        "ja": "モーンフェル・キャニオンに向かい、奪われた建築資材を探す",
+        "ko": "탄식의 협곡으로 이동하여 유실된 건축 자재 찾기",
+        "th": "ไปที่หุบเขาอาลัยเพื่อกู้คืนวัสดุก่อสร้างที่หายไป",
+        "zh-Hans": "前往哀恸谷，寻找遗落的建材",
+        "zh-Hant": "前往哀慟谷，尋找遺落的建材"
+      },
+      "entities": [
+        {
+          "entityId": 189800015,
+          "mapId": 8,
+          "blueprintType": "branch2.4_Monster_branch2.4_032",
+          "name": "TsEntity_精英_朝圣者2",
+          "areaId": 33002,
+          "position": {
+            "x": 1194133,
+            "y": 1082228,
+            "z": 2594
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800016,
+          "mapId": 8,
+          "blueprintType": "branch2.4_Monster_branch2.4_005",
+          "name": "TsEntity_小怪_朝圣者6",
+          "areaId": 33002,
+          "position": {
+            "x": 1193854,
+            "y": 1082397,
+            "z": 2687
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 17
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800017,
+          "mapId": 8,
+          "blueprintType": "branch2.4_Monster_branch2.4_005",
+          "name": "TsEntity_小怪_朝圣者7",
+          "areaId": 33002,
+          "position": {
+            "x": 1193940,
+            "y": 1081980,
+            "z": 2705
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 37
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 9,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Frequenz dieser Monster kommt mir bekannt vor. Ziemlich beunruhigend. Was wollen sie mit diesen Materialien?",
+                "en": "The frequency I'm getting from these monsters feels familiar and unpleasant. What do they want with those materials?",
+                "es": "La frecuencia que percibo de estos monstruos me resulta familiar y desagradable. ¿Por qué querrán esos materiales?",
+                "fr": "La fréquence de ces monstres est à la fois familière et désagréable... Que pourraient-ils bien vouloir faire avec ces matériaux ?",
+                "ja": "{Male=この怪物たちの周波数にはもううんざりだ。荷物を奪って、一体何を？;Female=この怪物たちの周波数にはもううんざり。荷物を奪って、一体何を？}",
+                "ko": "이 괴물들의 주파수에서 익숙하면서도 싫은 느낌이 나. 이 화물들을 차지해서 뭐 하려는 걸까?",
+                "th": "ความถี่ของสัตว์ประหลาดพวกนี้มันทั้งคุ้นเคยและก็น่าขยะแขยง พวกมันต้องการวัสดุพวกนั้นไปทำอะไร?",
+                "zh-Hans": "这些怪物的频率给人一种熟悉又讨厌的感觉，它们占领这些货物干什么？",
+                "zh-Hant": "這些怪物的頻率給人一種熟悉又討厭的感覺，它們占領這些貨物幹什麼？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die „Unsterblichen Monster“",
+        "en": "Defeat the \"undying monsters\"",
+        "es": "Derrota al monstruo inmortal.",
+        "fr": "Vaincre le « Monstre indestructible »",
+        "ja": "「不死の怪物」を倒す",
+        "ko": "「불사의 괴물」 처치하기",
+        "th": "เอาชนะ \"สัตว์ประหลาดอมตะ\"",
+        "zh-Hans": "击退“不死的怪物”",
+        "zh-Hant": "擊退「不死的怪物」"
+      },
+      "entities": [
+        {
+          "entityId": 189800012,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+          "areaId": 33002,
+          "position": {
+            "x": 1193743,
+            "y": 1082276,
+            "z": 2606
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 14
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Medulius",
+        "en": "Talk to Medulius",
+        "es": "Habla con Medulius.",
+        "fr": "Parler à Medilius",
+        "ja": "メテリウスと会話する",
+        "ko": "메둘리우스와 대화하기",
+        "th": "พูดคุยกับ Medulius",
+        "zh-Hans": "与梅杜利乌斯交谈",
+        "zh-Hant": "與梅杜利烏斯交談"
+      },
+      "entities": [
+        {
+          "entityId": 189800010,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+          "name": "TsEntity_伊诺尔5（昏迷）",
+          "areaId": 33002,
+          "position": {
+            "x": 1193630,
+            "y": 1082110,
+            "z": 2635
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800011,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+          "name": "TsEntity_伊诺尔5",
+          "areaId": 33002,
+          "position": {
+            "x": 1193630,
+            "y": 1082110,
+            "z": 2635
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800012,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+          "areaId": 33002,
+          "position": {
+            "x": 1193743,
+            "y": 1082276,
+            "z": 2606
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 14
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 8,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich habe dieses Mädchen aus der Flut gezogen, bevor sie von ihr verschlungen wurde. Keine Sorge, ihr geht es gut. Sie ist nur bewusstlos.",
+                "en": "I pulled this girl out before the Tide could devour her. Don't worry, she's perfectly fine. Just unconscious.",
+                "es": "Saqué a esta chica antes de que la Marea la devorara. No te preocupes, aunque está inconsciente, está sana y salva.",
+                "fr": "J'ai sauvé cette jeune fille avant que la Marée ne puisse la dévorer. Ne t'en fais pas, elle va parfaitement bien. Elle est simplement inconsciente.",
+                "ja": "黒潮に完全に呑まれる寸でのところで、この娘を引き揚げました。今は意識を失っておいでですが。",
+                "ko": "이 소녀가 조수에 합쳐지기 전에 건져냈어요. 걱정 마세요, 그녀는 건강하니까. 단지 기절했을 뿐이에요",
+                "th": "ฉันดึงเด็กคนนี้ออกมาก่อนที่กระแสน้ำจะกลืนกินเธอ ไม่ต้องห่วง เธอโอเค ก็แค่หมดสติไป",
+                "zh-Hans": "我在这姑娘即将被潮水整合前把她捞了出来。放心，她很健康，只是昏过去了。",
+                "zh-Hant": "我在這姑娘即將被潮水整合前把她撈了出來。放心，她很健康，只是昏過去了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du würdest jemanden retten?",
+                    "en": "You'd save someone?",
+                    "es": "¿Que tú has salvado a alguien?",
+                    "fr": "Tu sauves quelqu'un, toi ?",
+                    "ja": "{Male=助けたのか？;Female=助けたの？}",
+                    "ko": "당신이 사람도 구하나요?",
+                    "th": "คุณช่วยคนด้วยเหรอ?",
+                    "zh-Hans": "你会救人？",
+                    "zh-Hant": "你會救人？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Warum?",
+                    "en": "Why?",
+                    "es": "¿Por qué?",
+                    "fr": "Pourquoi ?",
+                    "ja": "{Male=どうして？;Female=どうして？}",
+                    "ko": "왜죠?",
+                    "th": "ทำไมล่ะ?",
+                    "zh-Hans": "为什么？",
+                    "zh-Hant": "為什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Weil ich deine Gebete erhört habe, {PlayerName}.",
+                "en": "Because I heard the prayers, {PlayerName}.",
+                "es": "Porque escuché tus oraciones, {PlayerName}.",
+                "fr": "Parce que j'ai entendu ses prières, {PlayerName}.",
+                "ja": "「祈り」です。{PlayerName}様。",
+                "ko": "제가 「기도」를 들었기 때문이에요, {PlayerName} 님",
+                "th": "เพราะฉันได้ยินคำอธิษฐานของคุณ {PlayerName}",
+                "zh-Hans": "因为我听到了「祈祷」，{PlayerName}大人。",
+                "zh-Hant": "因為我聽到了「祈禱」，{PlayerName}大人。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses Mädchen hat einst auch für mich gebetet, oder etwa nicht? Eine wunderschöne Stimme direkt aus dem Himmel! Sie durchdrang sogar die Dunkle Flut, die mich verschlungen hatte, und schenkte mir Kraft.",
+                "en": "This girl once prayed for me too, did she not? A wondrous voice straight from the heavens! It even pierced through the Dark Tide that had engulfed me and gave me strength.",
+                "es": "Esta chica también oró por mí una vez, ¿no es así? ¡Una voz maravillosa, directamente desde el cielo! Incluso atravesó la Marea Oscura, que me había envuelto, y me dio fuerza.",
+                "fr": "Cette jeune fille a prié pour moi, elle aussi, non ? Une voix merveilleuse, qui semblait venir directement des cieux ! Elle a traversé la Marée noire qui m'avait englouti et m'a donné de la force.",
+                "ja": "この娘の祈りが、わしに届いたのです。甘美な声が黒潮を貫き、この耳に届いたのです。",
+                "ko": "이 소녀가 그때 저를 위해 기도를 했어요, 그렇죠? 정말 감미롭고도 기묘한 하늘의 소리였어요! 흑조를 뚫고 제 귓가에 맴돌며 저에게 자양분을 공급해 주었죠",
+                "th": "เด็กคนนี้ก็เคยอธิษฐานให้ฉันเหมือนกัน ใช่ไหมล่ะ? ช่างเป็นเสียงมหัศจรรย์ที่มาจากฟากฟ้า! มันทะลวงผ่านคลื่นทมิฬที่โอบล้อมฉันและมอบความแข็งแกร่งให้ฉัน",
+                "zh-Hans": "这女孩那时为我祈祷了，对吧？真是悦耳又奇妙的天音啊！竟能穿彻黑潮萦绕在我的耳边，持续滋养着我。",
+                "zh-Hant": "這女孩那時為我祈禱了，對吧？真是悅耳又奇妙的天音啊！竟能穿徹黑潮縈繞在我的耳邊，持續滋養著我。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin ein Senator von Septimont. Da mir ein so wunderschönes Gebet zuteilwurde, ist es nur recht, dass ich sie dafür belohne. Jetzt sind wir quitt.",
+                "en": "I am a Senator of Septimont. Having been graced with such beautiful prayers, it's natural that I reward her. Now we're even.",
+                "es": "Como senador de Septimont, al sentirme bendecido con bellas oraciones, lo natural es que las recompense. Ahora estamos en paz.",
+                "fr": "Je suis un sénateur de Septimont. Je ne pouvais pas entendre de si belles prières sans récompenser l'autrice. À présent, nous sommes quittes.",
+                "ja": "仮にもセブン・ヒルズの元老であった身。あれほど素敵な祈りを捧げられたのなら、何かを下賜せぬ方がかえって不敬というものだ。",
+                "ko": "일곱 언덕의 원로로써, 이렇게 감미로운 기도를 들었는데 당연히 그녀에게 무언가를 줘야 하죠. 그럼 이젠 계산이 끝난 셈이에요",
+                "th": "ฉันเป็นวุฒิสมาชิกของเซปติมอนต์ ในเมื่อได้ยินคำอธิษฐานอันงดงามเช่นนี้ ฉันก็ควรให้รางวัลแก่เธอ ตอนนี้ถือว่าเราหายกันแล้ว",
+                "zh-Hans": "我可是七丘的元老，既然聆听了这么美妙的祈祷，自然要赏她点什么，现在我们两清了。",
+                "zh-Hant": "我可是七丘的元老，既然聆聽了這麼美妙的祈禱，自然要賞她點什麼，現在我們兩清了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, je mehr ich eins mit der Dunklen Flut werde, desto besser verstehe ich deine Angst davor. Ich werde mich dann mal verabschieden. Ich sollte dir lieber nicht noch länger auf die Nerven gehen.",
+                "en": "{PlayerName}, the more I become one with the Dark Tide, the more I understand your fear of it. I'll be taking my leave then. I'd better not make myself more of an eyesore to you.",
+                "es": "{PlayerName}, cuanto más me fundo en la Marea Oscura, más entiendo tu miedo hacia ella. Me retiraré, pues no quiero molestarte más.",
+                "fr": "{PlayerName}, plus je me fonds dans la Marée Noire, plus je comprends à quel point elle te craint. Je vais me retirer, alors. Inutile que je devienne encore plus une gêne à tes yeux.",
+                "ja": "{PlayerName}様、わしは黒潮と一体になるほど、黒潮があなた様に抱く恐怖がよく分かります。ですから、あなた様の前で邪魔になることはいたしません。",
+                "ko": "{PlayerName} 님, 제가 흑조와 융합할수록 당신에 대한 조수의 두려움도 더 뚜렷하게 느껴져요. 그럼 전 이만 사라질게요",
+                "th": "{PlayerName} ยิ่งฉันหลอมรวมกับคลื่นทมิฬมากเท่าไหร่ ฉันก็ยิ่งเข้าใจความกลัวของคุณมากเท่านั้น ฉันคงต้องไปแล้วล่ะ จะได้ไม่อุจาดตาคุณ",
+                "zh-Hans": "{PlayerName}大人，我越是与黑潮融合，越是能体会到潮水对您的恐惧，所以我就不在您面前碍眼了。",
+                "zh-Hant": "{PlayerName}大人，我越是與黑潮融合，越是能體會到潮水對您的恐懼，所以我就不在您面前礙眼了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Suchen wir uns einen gemütlichen Platz und sehen wir zu, wie sich die Zukunft von Septimont entwickelt. Hehe.",
+                "en": "Let's each find a comfortable spot and watch the future of Septimont unravel. Hehe.",
+                "es": "Solo queda acomodarse y observar el futuro de Septimont. Je, je...",
+                "fr": "Trouvons-nous chacun une bonne place pour observer l'avenir de Septimont. Hé hé…",
+                "ja": "お互い最高の観客席で、静かにセブン・ヒルズの未来を観ようじゃありませんか、ヒヒッ。",
+                "ko": "저희 각자 관중석에서 좋은 자리를 잡아 일곱 언덕의 미래를 조용히 기대해 보죠, 히힛",
+                "th": "ต่างฝ่ายต่างหามุมสบายๆ แล้วเฝ้ามองอนาคตของเซปติมอนต์ค่อยๆ เผยออกมากันเถอะ หึๆ",
+                "zh-Hans": "让我们各自在观众席上找好位置，静静期待七丘的未来吧，嘻嘻。",
+                "zh-Hant": "讓我們各自在觀眾席上找好位置，靜靜期待七丘的未來吧，嘻嘻。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Medulius löst sich in eine dunkle Pfütze auf und versickert im Boden, als wäre er ein Teil des Klagetals selbst.",
+                "en": "Medulius dissolved into a dark puddle, seeping into the ground like part of the Mournfell Canyon itself.",
+                "es": "Medulius se disuelve en un charco oscuro, filtrándose en el suelo como parte del mismo Valle de Luto.",
+                "fr": "Medulius se dissout ne laissant derrière lui qu'une flaque sombre qui s'infiltre dans le sol pour se fondre avec le Canyon du Deuil.",
+                "ja": "メテリウスは潮水と化し、消えていった。その様はまるでモーンフェル・キャニオンと一体化したかのようだった。",
+                "ko": "메둘리우스는 마치 탄식의 협곡과 하나가 되듯이 조수로 변해 지하로 스며들어갔다",
+                "th": "Medulius สลายร่างกลายเป็นแอ่งสีดำซึมลงไปในพื้นดิน ราวกับกลายเป็นส่วนหนึ่งของหุบเขาอาลัย",
+                "zh-Hans": "梅杜利乌斯化为一滩潮水浸入地底，仿佛和哀恸谷融为了一体。",
+                "zh-Hant": "梅杜利烏斯化為一灘潮水浸入地底，彷彿和哀慟谷融為了一體。"
+              },
+              "id": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit der erwachten Lenore",
+        "en": "Talk to Lenore",
+        "es": "Habla con Lenore.",
+        "fr": "Parler à Lenore",
+        "ja": "意識が戻ったエノルと会話する",
+        "ko": "깨어난 일노르와 대화하기",
+        "th": "พูดคุยกับ Lenore",
+        "zh-Hans": "与醒来的伊诺尔交谈",
+        "zh-Hant": "與醒來的伊諾爾交談"
+      },
+      "entities": [
+        {
+          "entityId": 189800005,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+          "name": "TsEntity_伊诺尔",
+          "areaId": 33103,
+          "position": {
+            "x": 1216150,
+            "y": 1163735,
+            "z": 27234
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800011,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+          "name": "TsEntity_伊诺尔5",
+          "areaId": 33002,
+          "position": {
+            "x": 1193630,
+            "y": 1082110,
+            "z": 2635
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800013,
+          "mapId": 8,
+          "blueprintType": "Quest109",
+          "name": "TsEntity_任务_木箱堆1",
+          "areaId": 33002,
+          "position": {
+            "x": 1193346,
+            "y": 1082119,
+            "z": 2667
+          },
+          "rotation": {
+            "x": 4,
+            "y": -9,
+            "z": 22
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800014,
+          "mapId": 8,
+          "blueprintType": "Quest110",
+          "name": "TsEntity_任务_木箱堆2",
+          "areaId": 33002,
+          "position": {
+            "x": 1193305,
+            "y": 1082461,
+            "z": 2636
+          },
+          "rotation": {
+            "x": 5,
+            "y": -8,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Uff … Ist das die Unterwelt …? {PlayerName}, was machst du denn hier?! Bist du etwa …",
+                "en": "Ugh... Is this the underworld...? {PlayerName}, what are you doing here?! Could it be you're...",
+                "es": "*Ugh*. ¿Es esto el inframundo...? ¡{PlayerName}, qué haces aquí! ¿Acaso tú estás...?",
+                "fr": "Hmph… Je suis dans l'inframonde ? Oh… {PlayerName}, qu'est-ce que tu fais là ? Est-ce que ça veut dire que tu es…",
+                "ja": "うぅ……ここがあの世……って、{PlayerName}様！なんでここに！？まさか……",
+                "ko": "음... 여기가 저승인가... {PlayerName} 님! 왜 이곳에 있는 거죠?! 설마...",
+                "th": "อือ... ที่นี่คือโลกใต้พิภพเหรอ...? {PlayerName} คุณมาทำอะไรที่นี่?! หรือว่าคุณ...",
+                "zh-Hans": "唔……这里就是冥界吗……{PlayerName}大人！您怎么也在这里？！难道您也……",
+                "zh-Hant": "唔……這裡就是冥界嗎……{PlayerName}大人！您怎麼也在這裡？！難道您也……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah–! Oh nein. Nein, nein, nein. Das bedeutet, Rinascita ist verloren … Waaah …",
+                "en": "Ah—! Oh, no. No, no, no. That means Rinascita is doomed... Waaah...",
+                "es": "¡Ah! Oh, no. No, no, no. Eso significa que Rinascita está condenada... Uoooh...",
+                "fr": "Ah ! Oh, non… Non, non, non. Ça veut dire que Rinascita est condamnée… Ouiiin…",
+                "ja": "そんな——！なんてこと！それでは、リナシータは……うわーん……",
+                "ko": "아——! 망했다 망했어, 리나시타는 망했어... 우우우...",
+                "th": "อ๊า...! ไม่ ไม่นะ ไม่จริง หมายความว่ารินาซิตาถูกลิขิตให้พินาศ... ฮืออ...",
+                "zh-Hans": "啊——！完蛋了完蛋了，黎那汐塔要完蛋了……呜呜呜……",
+                "zh-Hant": "啊——！完蛋了完蛋了，黎那汐塔要完蛋了……嗚嗚嗚……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Beruhige dich, Lenore …",
+                    "en": "Calm down, Lenore...",
+                    "es": "Cálmate, Lenore...",
+                    "fr": "Calme-toi, Lenore…",
+                    "ja": "{Male=エノル、落ち着くんだ。;Female=エノル、落ち着いて。}",
+                    "ko": "일노르, 진정해요...",
+                    "th": "ใจเย็นๆ ก่อน Lenore ...",
+                    "zh-Hans": "伊诺尔，冷静点……",
+                    "zh-Hant": "伊諾爾，冷靜點……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin nicht tot, und du bist es auch nicht.",
+                    "en": "I'm not dead, and neither are you.",
+                    "es": "No estoy {Male=muerto;Female=muerta}, y tú tampoco.",
+                    "fr": "Je ne suis pas {Male=mort;Female=morte} et toi non plus.",
+                    "ja": "{Male=俺は死んでないし、あなたも死んでない。;Female=私は死んでないし、あなたも死んでない。}",
+                    "ko": "저도, 당신도 죽지 않았어요",
+                    "th": "ฉันยังไม่ตาย และคุณก็ยังไม่ตายเหมือนกัน",
+                    "zh-Hans": "我没死，你也没死。",
+                    "zh-Hant": "我沒死，你也沒死。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Die Katastrophe ist vorbei, und alle sind mit dem Wiederaufbau beschäftigt.",
+                "en": "The disaster is over, and everyone's busy rebuilding.",
+                "es": "El desastre ya ha terminado, y todos están ocupados reconstruyendo.",
+                "fr": "Le désastre est terminé et tout le monde travaille à la reconstruction.",
+                "ja": "{Male=みんなで災厄を乗り越えて、復興のために頑張っているところなんだ。;Female=みんなで災厄を乗り越えて、復興のために頑張っているところなの。}",
+                "ko": "재난은 지나갔고, 모두들 고향 복구에 착수하고 있어요",
+                "th": "หายนะผ่านพ้นไปแล้ว ตอนนี้ทุกคนกำลังเริ่มใหม่",
+                "zh-Hans": "灾难过去了，大家正着手重建家园。",
+                "zh-Hant": "災難過去了，大家正著手重建家園。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm, ich zeige es dir. Du kannst auch deinen Teil dazu beitragen.",
+                "en": "Come, I'll show you. You can be part of it.",
+                "es": "Ven, te lo enseñaré. Y siempre puedes ayudar.",
+                "fr": "Viens, je vais te montrer. Tu peux participer.",
+                "ja": "{Male=一緒に行こう。エノルも手伝ってくれ。;Female=一緒に行こう。エノルも手伝って。}",
+                "ko": "가시죠, 저랑 함께 도우러 가요",
+                "th": "มาเถอะ ฉันจะพาคุณไปดู คุณจะได้เป็นส่วนหนึ่งด้วย",
+                "zh-Hans": "走吧，我带你去看看，你也来出力。",
+                "zh-Hant": "走吧，我帶你去看看，你也來出力。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Nein, nein, {PlayerName}. Ich verdiene es nicht, zu den „allen“ zu zählen, von denen du sprichst.",
+                "en": "...No, no, {PlayerName}. I don't deserve to be part of that \"everyone\" you speak of.",
+                "es": "No, no, {PlayerName}. No merezco ser parte de ese «todos» del que hablas.",
+                "fr": "Non, non, {PlayerName}… Je ne mérite pas d'être aux côtés de « tout le monde », comme tu dis.",
+                "ja": "……いいえ、{PlayerName}様。私にその資格はありません。",
+                "ko": "... 아, 아니에요. {PlayerName} 님, 전 당신이 말씀한 「모두」에 속할 자격이 없어요",
+                "th": "...ไม่ ไม่ {PlayerName} ฉันไม่สมควรเป็นส่วนหนึ่งของ \"ทุกคน\" เหมือนที่คุณพูดหรอก",
+                "zh-Hans": "……不，不。{PlayerName}大人，我没有资格被纳入您说的那个“大家”之中。",
+                "zh-Hant": "……不，不。{PlayerName}大人，我沒有資格被納入您說的那個「大家」之中。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe mich aus freien Stücken für die Dunkle Flut entschieden.",
+                "en": "I chose to fall into Dark Tide on my own.",
+                "es": "Elegí caer en la Marea Oscura por propia voluntad.",
+                "fr": "C'est moi qui ai choisi de laisser la Marée noire me dévorer.",
+                "ja": "私は……自ら黒潮へ飛び込んだのですから。",
+                "ko": "전 스스로 흑조에 뛰어들었어요",
+                "th": "ฉันเลือกที่จะจมสู่คลื่นทมิฬด้วยตัวเอง",
+                "zh-Hans": "我是主动跳进黑潮的。",
+                "zh-Hant": "我是主動跳進黑潮的。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das blasphemische Fabrikatorium, Akolythen, die mit Terroristen zusammenarbeiten, und der wahnsinnige Primus … Was ich befürchtet hatte, ist nichts im Vergleich zu dem, was ich gesehen habe.",
+                "en": "The blasphemous Fabricatorium, Acolytes colluding with terrorists, and the delusional Primus... What I feared is nothing compared to what I witnessed.",
+                "es": "El blasfemo Fabricatorium, acólitos confabulándose con terroristas, y el iluso Primus... Lo que temía no es nada comparado con lo que presencié.",
+                "fr": "Le Fabricatorium blasphématoire, les acolytes qui s'acoquinent avec des terroristes, le Primus dément… Ce que je redoutais n'était rien comparé à ce que j'ai vu.",
+                "ja": "冒涜の実験場、暴徒と化した侍祭たち、魂を失った主座様……このような結末を誰が予想できたでしょう。",
+                "ko": "모독의 실험장, 폭도들과 함께 나쁜 짓을 하는 성직자, 꼭두각시가 된 수좌님... 제가 추측한 최악의 진실일지라도, 제가 본 것의 만 분의 일에도 미치지 못했어요",
+                "th": "ศูนย์ทดลองที่ดูหมิ่นศาสนา นักบวชที่สมคบคิดกับคนร้าย และอัครสังฆราชที่หลงผิด... สิ่งที่ฉันเกรงกลัวยังไม่เท่ากับสิ่งที่ฉันได้เห็นเลย",
+                "zh-Hans": "亵渎的试验场、与暴徒合污的教士、失魂的主座大人……哪怕是我所揣测的最糟糕的真相，也不及我所见的万分之一。",
+                "zh-Hant": "褻瀆的試驗場、與暴徒合汙的教士、失魂的主座大人……哪怕是我所揣測的最糟糕的真相，也不及我所見的萬分之一。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie nennen es Erlösung und Einheit, aber in Wirklichkeit ist es ein Sturz in den Abgrund! Eine hohle Lüge, die den Menschen ihren Willen raubt. Der Orden verspricht den Aufstieg, doch er wurde längst von derselben Dunklen Flut verschlungen, über die er vorgibt, erhaben zu sein!",
+                "en": "They call it Salvation and Unity, but it's nothing but a descent into the abyss! A hollow lie that strips people of their will. The Order promises Ascension, yet they've long drowned in the very Dark Tide they claim to rise above!",
+                "es": "Lo llaman «salvación y unidad», pero es un descenso al abismo. Una mentira hueca que roba la voluntad de la gente. ¡La Orden promete la ascensión, pero hace tiempo que se ahogó en la misma Marea Oscura que dice superar!",
+                "fr": "Ils parlent de salut et d'unité, mais ce n'est rien d'autre qu'une descente aux enfers ! Un mensonge vide qui prive le peuple de sa volonté. L'Ordre promet l'ascension, mais il a sombré dans la Marée noire à laquelle il prétend nous faire échapper !",
+                "ja": "人々を深淵へ突き落とす「救済」、人々の自我を殺す「繋ぎ」、黒潮の底へと至るための「昇華」！",
+                "ko": "「구원」은 사람을 심연으로 밀어내는 것이었고, 「연결」은 자아를 말살하는 통합이었으며, 「향상」은... 수도회는 흑조 속에 잠긴 지 오래였어요!",
+                "th": "พวกเขาเรียกมันว่าการไถ่บาปและเอกภาพ แต่ที่จริงแล้วมันไม่ต่างอะไรจากการลงสู่เหวนรก! มันคือคำโกหกที่พรากเจตจำนงของผู้คนไป ภาคีสัญญาว่าจะพาเราบรรลุ แต่พวกเขากลับจมอยู่ในคลื่นทมิฬที่อ้างว่าจะก้าวข้ามไปให้ได้!",
+                "zh-Hans": "名为「拯救」，实则将人推入深渊；名为「联结」，却是抹杀自我的整合；名为「向上」，但修会早就浸没在黑潮中了！",
+                "zh-Hant": "名為「拯救」，實則將人推入深淵；名為「聯結」，卻是抹殺自我的整合；名為「向上」，但修會早就浸沒在黑潮中了！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Threnodianer hat die Katastrophe verursacht, aber wer ist für das Erscheinen des Threnodianers verantwortlich?",
+                "en": "The Threnodian brought about disaster, but who brought about the Threnodian?",
+                "es": "El Trenodiano trajo el desastre, pero ¿quién trajo al Trenodiano?",
+                "fr": "Le Réprimantum a apporté le désastre, mais qui a apporté le Réprimantum ?",
+                "ja": "鳴式は災厄を招きました。そして、鳴式を招いたのは……",
+                "ko": "명식은 재난을 불러왔지만, 명식은 또 누가 불러왔을까요?",
+                "th": "เธรโนเดียนนำหายนะมา แต่ใครกันที่นำเธรโนเดียนมา?",
+                "zh-Hans": "鸣式招来灾难，可又是谁招来了鸣式呢？",
+                "zh-Hant": "鳴式招來災難，可又是誰招來了鳴式呢？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Orden. Ich. Ich habe die Botschaft der falschen Heiligkeit verbreitet, ich habe die Augen vor den Narren verschlossen … Wie soll ich jetzt, wo Unschuldige von der Dunklen Flut verschlungen wurden, mit gutem Gewissen hier am Ufer stehen?!",
+                "en": "It was the Order. It was me. I praised the false god's gospel, I turned a blind eye to the Fools... Now with innocents drowned by the Dark Tide, how can I stand on the shore with a clear conscience?!",
+                "es": "Fue la Orden... y también yo. Ensalcé el evangelio del falso dios, hice la vista gorda ante los Torpes... Ahora, con tantos inocentes ahogados en la Marea Oscura, ¿cómo puedo permanecer en la orilla, con la conciencia tranquila?",
+                "fr": "J'ai prêché l'évangile du faux dieu, j'ai refusé d'écouter les Fous... Et maintenant que des innocents ont été engloutis par la Marée Noire, comment pourrais-je rester sur le rivage avec la conscience tranquille ?",
+                "ja": "教団です。私なのです。偽りの神を讃え、愚者から目を逸らした私なのです。罪なき者たちが黒潮に呑み込まれたというのなら、私が許される理由はありません！",
+                "ko": "수도회이자 저예요. 제가 거짓된 신에게 복음을 전하며 우인을 보고도 못 본 척했어요... 무고한 자가 흑조에 삼켜진 지금, 제가 어떻게 마음 편히 옆에서 보고만 있을 수 있겠어요?!",
+                "th": "ก็ภาคีนั่นแหละ คือฉันเอง ฉันสรรเสริญคำสอนของเทพจอมปลอม ฉันเมินเฉยต่อพวกคนเขลา... และตอนนี้ เมื่อคลื่นทมิฬกลืนกินผู้บริสุทธิ์ ฉันจะยืนอยู่บนฝั่งอย่างสบายใจได้ยังไง?!",
+                "zh-Hans": "是修会，是我。是我向伪神赞颂福音，是我对愚人视而不见……如今无辜者被黑潮淹没，我又怎能心安理得地站在岸边？！",
+                "zh-Hant": "是修會，是我。是我向偽神讚頌福音，是我對愚人視而不見……如今無辜者被黑潮淹沒，我又怎能心安理得地站在岸邊？！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte, {PlayerName}. Ich muss für meine Sünden büßen … Und wenn es sein muss, dass ich durch deine Hand sterbe …",
+                "en": "Please, {PlayerName}. I must answer for my sins... If it's to die by your hand...",
+                "es": "Por favor, {PlayerName}. Debo responder a mis pecados, aunque sea muriendo por tu mano...",
+                "fr": "Je t'en prie, {PlayerName}, il faut que je paie pour mes péchés… Si je dois mourir de ta main…",
+                "ja": "{PlayerName}様、どうか私の罪を裁いてください……その手で終わらせてください……",
+                "ko": "{PlayerName} 님, 저의 죄를 심판하세요... 당신의 손으로 목숨을 끝낼 수 있다면...",
+                "th": "ได้โปรด {PlayerName} ฉันต้องชดใช้บาปของฉัน... ถ้ามันหมายถึงต้องตายด้วยมือของคุณ...",
+                "zh-Hans": "{PlayerName}大人，请您清算我的罪孽吧……如果是结束在您手中的话……",
+                "zh-Hant": "{PlayerName}大人，請您清算我的罪孽吧……如果是結束在您手中的話……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Stur wie immer …",
+                    "en": "Stubborn as always…",
+                    "es": "Testaruda como siempre...",
+                    "fr": "Toujours aussi têtue…",
+                    "ja": "{Male=相変わらず頑固者だな……;Female=相変わらず頑固者だね……}",
+                    "ko": "너무 멀리 갔어요...",
+                    "th": "ดื้อดึงอย่างเคย...",
+                    "zh-Hans": "又钻牛角尖……",
+                    "zh-Hant": "又鑽牛角尖……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Der Tod ist auch nur ein Weg, der Realität zu entfliehen, Lenore.",
+                    "en": "Death is only another way of escaping reality, Lenore.",
+                    "es": "La muerte es solo otra forma de escapar de la realidad, Lenore.",
+                    "fr": "La mort n'est qu'une autre façon d'échapper à la réalité, Lenore.",
+                    "ja": "{Male=それはただの現実逃避だ。;Female=それはただの現実逃避だよ。}",
+                    "ko": "죽음은 방향을 바꿔서 도망치는 거나 마찬가지예요, 일노르",
+                    "th": "ความตายเป็นเพียงวิธีหนีจากความจริงอีกอย่างหนึ่ง Lenore",
+                    "zh-Hans": "死亡不过是换个方向的逃避，伊诺尔。",
+                    "zh-Hant": "死亡不過是換個方向的逃避，伊諾爾。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wusstest du, dass es Medulius war, der dich vor der Dunklen Flut gerettet hat? Er wollte dir damit für deine Gebete danken.",
+                "en": "Did you know that it was Medulius who saved you from the Dark Tide? He did it to thank you for your prayers.",
+                "es": "¿Sabías que fue Medulius quien te salvó de la Marea Oscura? Lo hizo como agradecimiento por tus oraciones.",
+                "fr": "Tu savais que c'était Medulius qui t'avait sauvée de la Marée noire ? Il l'a fait pour te remercier pour tes prières.",
+                "ja": "あなたを黒潮から救い出したのはメテリウスだ。あなたの祈りが{Male=彼に届いたらしい。;Female=彼に届いたみたい。}",
+                "ko": "그거 알아요? 메둘리우스가 당신이 그에게 한 기도에 보답하기 위해 당신을 흑조에서 구해냈어요",
+                "th": "คุณรู้ไหมว่า Medulius คือคนที่ช่วยคุณจากคลื่นทมิฬ? เขาทำแบบนั้นเพื่อตอบแทนคำอธิษฐานของคุณ",
+                "zh-Hans": "你知道吗，是梅杜利乌斯从黑潮里把你救出来的，为了感谢你为他所做的祈祷。",
+                "zh-Hant": "你知道嗎，是梅杜利烏斯從黑潮裡把你救出來的，為了感謝你為他所做的祈禱。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was?",
+                "en": "What?",
+                "es": "¿Qué?",
+                "fr": "Quoi ?",
+                "ja": "え？",
+                "ko": "네?",
+                "th": "อะไรนะ?",
+                "zh-Hans": "诶？",
+                "zh-Hant": "欸？"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denk an deine Eltern, die dich aus der Dunklen Flut gerettet haben. An die Akolythen, die dich aufgezogen haben. An die Vorfahren des Nimbus-Heiligtums, die dir geholfen haben, Erleuchtung zu finden. Selbst an Medulius, der dir eine zweite Chance gegeben hat.",
+                "en": "Think of your parents who lifted you from the Dark Tide. The Acolytes who raised you. The Nimbus Sanctum ancestors who helped enlighten you. Even Medulius, who offered you a second chance.",
+                "es": "Piensa en tus padres, que te protegieron de la Marea Oscura. Los acólitos que te criaron. Los ancestros del Santuario del Nimbo, que te iluminaron. Incluso Medulius, que te ofreció una segunda oportunidad.",
+                "fr": "Pense à tes parents, qui t'ont tirée de la Marée noire. Aux acolytes qui t'ont élevée. Aux ancêtres du sanctuaire du Nimbus, qui t'ont donné la sagesse. Et même à Medulius, qui t'a offert une deuxième chance.",
+                "ja": "{Male=考えるんだ、黒潮からあなたを救い出した両親に、あなたを育てた侍祭、啓示を与えた雲海の先人たち、そしてたった一人、手を差し伸べてくれたメテリウスを……;Female=考えてみて、黒潮からあなたを救い出した両親に、あなたを育てた侍祭、啓示を与えた雲海の先人たち、そしてたった一人、手を差し伸べてくれたメテリウスを……}",
+                "ko": "당신을 흑조 속에서 일으켜 세운 부모님, 당신을 키운 성직자, 당신에게 깨우침을 준 구름 바다 선민, 그리고 오직 당신을 위해 손을 내밀어 준 메둘리우스를 생각해 보세요",
+                "th": "คิดถึงพ่อแม่ที่ดึงคุณขึ้นมาจากคลื่นทมิฬ นักบวชที่เลี้ยงดูคุณจนโต บรรพชนแห่งวิหารนิมบัสที่ช่วยชี้นำคุณ หรือแม้แต่ Medulius ที่ให้โอกาสคุณอีกครั้งหนึ่ง",
+                "zh-Hans": "想想将你从黑潮中托起的双亲，抚养你长大的教士，给予你启迪的云海先民，想想唯独愿意拉你一把的梅杜利乌斯。",
+                "zh-Hant": "想想將你從黑潮中托起的雙親，撫養你長大的教士，給予你啟迪的雲海先民，想想唯獨願意拉你一把的梅杜利烏斯。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In dir leben all ihre Hoffnungen weiter.",
+                "en": "You are the continuation of all their hopes.",
+                "es": "Eres la continuidad de todas sus esperanzas.",
+                "fr": "Tu es la somme de tous leurs espoirs.",
+                "ja": "あなたは、彼らが生きていた証だ。",
+                "ko": "당신은 그들의 생명이 이어진 존재예요",
+                "th": "คุณคือผู้สืบทอดความหวังทั้งมวลของพวกเขา",
+                "zh-Hans": "你是他们生命的延伸。",
+                "zh-Hant": "你是他們生命的延伸。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lenore, es war Rinascitas Güte, die dich so weit gebracht hat. Diese Reise verdient ein besseres Ende.",
+                "en": "Lenore, it was Rinascita's kindness that carried you this far. This journey deserves a better ending.",
+                "es": "Lenore, fue la bondad de Rinascita la que te llevó hasta aquí. Este viaje merece un final mejor.",
+                "fr": "Lenore, c'est grâce à la bonté de Rinascita que tu es arrivée jusqu'ici. Cette aventure mérite une meilleure fin que ça.",
+                "ja": "{Male=エノル、リナシータの心があなたをここまで導いたんだ。この旅には、もっといい結末があるはずだ。;Female=エノル、リナシータの心があなたをここまで導いたの。この旅には、もっといい結末があるはず。}",
+                "ko": "일노르, 리나시타의 선의가 당신과 함께 오늘날까지 온 거예요. 이 여정에 더 좋은 종점이 있어야 한다고 생각해요",
+                "th": "Lenore ความเมตตาของรินาซิตาต่างหากที่พาคุณเดินมาถึงจุดนี้ การเดินทางครั้งนี้ควรมีจุดสิ้นสุดที่ดีกว่า",
+                "zh-Hans": "伊诺尔，是黎那汐塔的善意陪伴你走到了今天。我想，这趟旅途值得一个更好的终点。",
+                "zh-Hant": "伊諾爾，是黎那汐塔的善意陪伴你走到了今天。我想，這趟旅途值得一個更好的終點。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich …",
+                "en": "I...",
+                "es": "Yo...",
+                "fr": "Je…",
+                "ja": "それは……",
+                "ko": "저...",
+                "th": "ฉัน...",
+                "zh-Hans": "我……",
+                "zh-Hant": "我……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hm. Es ist erstaunlich, wie schwer es ist, mit dir zu argumentieren.",
+                "en": "Err. It amazes me how hard it is to argue with you.",
+                "es": "Rayos... ¿Cómo puede ser tan difícil discutir contigo?",
+                "fr": "Hmph… C'est fou comme c'est difficile d'argumenter contre toi.",
+                "ja": "うぅ……あなた様には敵いませんね。",
+                "ko": "음, 당신의 말은 항상 설득력이 있네요",
+                "th": "น่าแปลกใจจริงๆ ที่การเถียงกับคุณมันยากขนาดนี้",
+                "zh-Hans": "唔，您的话总是这么雄辩。",
+                "zh-Hant": "唔，您的話總是這麼雄辯。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe. Dann erlaube mir bitte, vorerst an deiner Seite zu bleiben, {PlayerName}.",
+                "en": "I understand. Then please allow me to stay by your side for now, {PlayerName}.",
+                "es": "Lo entiendo. Deja que me quede a tu lado por ahora, {PlayerName}.",
+                "fr": "Mais je comprends. Permets-moi de rester un moment à tes côtés, {PlayerName}.",
+                "ja": "わかりました。しばらく{PlayerName}様のそばに居させてください。",
+                "ko": "알겠습니다. 그럼 앞으로 남은 기간 동안 당신과 함께 할 수 있도록 허락해 주세요, {PlayerName} 님",
+                "th": "ฉันเข้าใจแล้ว งั้นให้ฉันอยู่เคียงข้างคุณก่อนนะ {PlayerName}",
+                "zh-Hans": "明白了，那接下来的这段时间就请允许我跟在您身边吧，{PlayerName}大人。",
+                "zh-Hant": "明白了，那接下來的這段時間就請允許我跟在您身邊吧，{PlayerName}大人。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800011,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔5",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193630,
+                    "y": 1082110,
+                    "z": 2635
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bring Lenore in die Altstadt und erstatte Maji Bericht",
+        "en": "Bring Lenore to Septimont's Old District and inform Maji",
+        "es": "Lleva a Lenore al Distrito Antiguo de Septimont e informa a Maji.",
+        "fr": "Retourner au Vieux quartier avec Lenore et parler à Maji",
+        "ja": "エノルをセブン・ヒルズの旧市街地まで連れて帰り、馬計に状況を伝える",
+        "ko": "일노르를 데리고 일곱 언덕 구도심으로 돌아가 마현에게 상황 보고하기",
+        "th": "พา Lenore ไปที่เขตเมืองเก่าของเซปติมอนต์และแจ้งกับ Maji",
+        "zh-Hans": "带领伊诺尔回到七丘旧街，告知马计情况",
+        "zh-Hant": "帶領伊諾爾回到七丘舊街，告知馬計情況"
+      },
+      "entities": [
+        {
+          "entityId": 189800004,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_马计",
+          "areaId": 33103,
+          "position": {
+            "x": 1216250,
+            "y": 1163650,
+            "z": 27234
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800005,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+          "name": "TsEntity_伊诺尔",
+          "areaId": 33103,
+          "position": {
+            "x": 1216150,
+            "y": 1163735,
+            "z": 27234
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh, {PlayerName}. Du kannst dir gar nicht vorstellen, wie dankbar ich bin! Oh, und wer ist das?",
+                "en": "Oh, {PlayerName}. You have no idea how grateful I am! Oh, and who might this be?",
+                "es": "Oh, {PlayerName}. ¡No te puedes hacer idea de lo agradecido que estoy! Ah, ¿y quién es tu acompañante?",
+                "fr": "Oh, {PlayerName}. Tu n'imagines pas à quel point je suis reconnaissant ! Oh, mais qui avons-nous là ?",
+                "ja": "おお、{PlayerName}！あれ、そちらの方は？",
+                "ko": "이번에도 {PlayerName} 덕분이에요! 어, 이분은?",
+                "th": "โอ้ {PlayerName} คุณไม่รู้หรอกว่าฉันรู้สึกขอบคุณมากแค่ไหน! เอ๊ะ แล้วนี่ใครกัน?",
+                "zh-Hans": "{PlayerName}，这次多亏你了！咦，这位是？",
+                "zh-Hant": "{PlayerName}，這次多虧你了！咦，這位是？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hallo. Ich bin Lenore, eine Akolythin des Ordens. Falls du irgendwelche anstrengenden Arbeiten hast, kannst du sie gerne an mich weitergeben!",
+                "en": "Hello. I am an Acolyte of the Order, Lenore. Any harsh work or dirty job you have, do feel free to send them my way!",
+                "es": "Hola. Soy Lenore, acólita de la Orden. ¡Yo me haré cargo de cualquier trabajo duro o sucio que tengas!",
+                "fr": "Bonjour. Je suis Lenore, acolyte de l'Ordre. S'il y a des corvées à faire, n'hésite pas à me les confier !",
+                "ja": "はじめまして、私はエノル、教団の侍祭です。どんな仕事もやりますので、なんでもおっしゃってください！",
+                "ko": "안녕하세요, 전 수도회의 성직자 일노르라고 해요. 힘든 일이든 궂은일이든 시켜만 주세요!",
+                "th": "สวัสดี ฉันเป็นนักบวชของภาคี ชื่อ Lenore นะ ถ้ามีงานหนักหรืองานสกปรกอะไรก็โยนมาที่ฉันได้เลย!",
+                "zh-Hans": "您好，我是修会的教士伊诺尔，有什么脏活累活请随意使唤我！",
+                "zh-Hant": "您好，我是修會的教士伊諾爾，有什麼髒活累活請隨意使喚我！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800005,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216150,
+                    "y": 1163735,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dein Fleiß gefällt mir.",
+                "en": "Aggressive. I like it!",
+                "es": "¡Cuánta energía! ¡Me gusta!",
+                "fr": "Elle va droit au but. Ça me plaît !",
+                "ja": "おお、これはまた素晴らしい助っ人だ！",
+                "ko": "와, 투지가 넘치는 직원이네요!",
+                "th": "สายลุย ฉันชอบ!",
+                "zh-Hans": "我的天，好有狼性的员工！",
+                "zh-Hant": "我的天，好有狼性的員工！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sie wird damit fertig.",
+                    "en": "She can handle it.",
+                    "es": "Ella puede ayudarte.",
+                    "fr": "Tu peux lui faire confiance.",
+                    "ja": "{Male=彼女に仕事を与えてほしい。;Female=彼女に仕事を与えてほしい。}",
+                    "ko": "믿고 맡겨도 돼요",
+                    "th": "ไว้ใจเธอได้เลย",
+                    "zh-Hans": "放心给她派活吧。",
+                    "zh-Hant": "放心給她派活吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wenn du das sagst, {PlayerName}. Lasst uns alle unseren Teil dazu beitragen, die Altstadt wieder in ihrem alten Glanz erstrahlen zu lassen!",
+                "en": "Well, if you say so, {PlayerName}. Let's all do our part in restoring the Old District to its former beauty!",
+                "es": "Bueno, si tú lo dices, {PlayerName}. ¡Pongámonos manos a la obra y devolvamos al Distrito Antiguo su antigua belleza!",
+                "fr": "Si tu le dis, {PlayerName}. Faisons de notre mieux pour rendre au Vieux quartier sa beauté d'antan !",
+                "ja": "そうか、じゃあ旧市街地の再建を手伝ってもらおう！",
+                "ko": "{PlayerName}의 말이니까, 구도심을 위해 저희 함께 힘냅시다!",
+                "th": "ในเมื่อ {PlayerName} พูดมาถึงขนาดนี้ พวกเราก็ต้องพยายามกันหน่อยแล้ว!",
+                "zh-Hans": "既然{PlayerName}都这么说了，那就让我们一起为旧街奋斗吧！",
+                "zh-Hant": "既然{PlayerName}都這麼說了，那就讓我們一起為舊街奮鬥吧！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 189800004,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_马计",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216250,
+                    "y": 1163650,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jawoll!",
+                "en": "All right!",
+                "es": "¡De acuerdo!",
+                "fr": "D'accord !",
+                "ja": "はい！",
+                "ko": "네!",
+                "th": "ได้เลย!",
+                "zh-Hans": "好！",
+                "zh-Hant": "好！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50133,
+                "name": {
+                  "zh-Hans": "伊诺尔"
+                },
+                "entity": {
+                  "entityId": 189800005,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+                  "name": "TsEntity_伊诺尔",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1216150,
+                    "y": 1163735,
+                    "z": 27234
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Medulius",
+        "en": "Talk to Medulius",
+        "es": "Habla con Medulius.",
+        "fr": "Parler à Medilius",
+        "ja": "メテリウスと会話する",
+        "ko": "메둘리우스와 대화하기",
+        "th": "พูดคุยกับ Medulius",
+        "zh-Hans": "与梅杜利乌斯交谈",
+        "zh-Hant": "與梅杜利烏斯交談"
+      },
+      "entities": [
+        {
+          "entityId": 189800010,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_Side_Quest/ffsp4",
+          "name": "TsEntity_伊诺尔5（昏迷）",
+          "areaId": 33002,
+          "position": {
+            "x": 1193630,
+            "y": 1082110,
+            "z": 2635
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189800012,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+          "areaId": 33002,
+          "position": {
+            "x": 1193743,
+            "y": 1082276,
+            "z": 2606
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 14
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich hätte nicht gedacht, dass es reicht, ein paar Feiglinge zu verscheuchen, um die Aufmerksamkeit {Male=des;Female=der} legendären {PlayerName} zu erregen. Bist du {Male=der letzte Held;Female=die letzte Heldin} von Septimont?",
+                "en": "Didn't think scaring off a bunch of cowards would be enough to attract the attention of the legendary {PlayerName}. Are you all that's left of Septimont's heroes now?",
+                "es": "No pensé que la tarea de ahuyentar a un grupo de cobardes sería suficiente para atraer {Male=al legendario;Female=a la legendaria} {PlayerName}. ¿Eres todo lo que queda de los héroes de Septimont?",
+                "fr": "Je ne pensais pas qu'effrayer une bande de lâches suffirait à attirer l'attention {Male=du grand;Female=de la grande} {PlayerName}. Aucun autre héros de Septimont n'était-il disponible ?",
+                "ja": "もうここには腰抜けしかいないのかと落胆していたのですが、{PlayerName}様にお越しいただけるとは。セブン・ヒルズの英雄は、もはやあなただけですな。",
+                "ko": "겁쟁이 몇 명을 놀라게 했을 뿐인데 방랑자님께서 직접 오시다니. 일곱 언덕에 남은 영웅은 {PlayerName} 님뿐인가요?",
+                "th": "ไม่คิดเลยว่าการไล่พวกขี้ขลาดไม่กี่คน จะดึงดูดความสนใจจาก {PlayerName} ในตำนานได้ด้วย วีรชนของเซปติมอนต์เหลือแค่คุณหรือไง?",
+                "zh-Hans": "没想到只是吓跑了几个没种的软蛋就招来了您，{PlayerName}大人，七丘只剩您一位英雄了吗？",
+                "zh-Hant": "沒想到只是嚇跑了幾個沒種的軟蛋就招來了您，{PlayerName}大人，七丘只剩您一位英雄了嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Medulius. Du lebst noch?",
+                "en": "Medulius. You're alive?",
+                "es": "Medulius. ¿Estás vivo?",
+                "fr": "Medulius. Tu es en vie ?",
+                "ja": "{Male=メテリウス？生きていたのか？;Female=メテリウス？生きていたの？}",
+                "ko": "메둘리우스, 아직 살아있었다니",
+                "th": "Medulius ยังไม่ตายเหรอ?",
+                "zh-Hans": "梅杜利乌斯，你竟然还活着？",
+                "zh-Hant": "梅杜利烏斯，你竟然還活著？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tut mir echt leid, wenn das überraschend für dich kommt! So viele von Septimonts Kriegern sind der Dunklen Flut zum Opfer gefallen, aber ein einsamer, feiger Mistkerl wie ich atmet immer noch. Ironisch, nicht wahr?",
+                "en": "Well, I sincerely apologize if that comes as a surprise to you! So many warriors of Septimont perished under the Dark Tide, yet a lone gutless bastard like me still breathes the air. Ironic, isn't it?",
+                "es": "¡Bueno, si eso te sorprende, debo disculparme! Han perecido tantos guerreros de Septimont bajo la Marea Oscura, y, sin embargo, un bastardo cobarde como yo aún respira. ¿No te parece irónico?",
+                "fr": "Oh, je te présente toutes mes excuses si cela te déçoit ! La Marée noire a ôté la vie à d'innombrables braves guerriers de Septimont, mais un indécrottable vaurien comme moi a survécu. Quelle tristesse, hein ?",
+                "ja": "いやはや、なんと皮肉なことか。セブン・ヒルズの勇士たちは容赦なく殺され、わしのような卑劣なウジ虫が生き残るとは。",
+                "ko": "오, 정말 죄송합니다! 일곱 언덕의 용사들은 흑조에 의해 죽고, 오히려 저 같은 비겁하고 못난 놈만 살아남아서요. 허허",
+                "th": "หึ ถ้ามันทำให้คุณแปลกใจก็ต้องขอโทษด้วย! นักรบมากมายของเซปติมอนต์ต่างล้มตายภายใต้คลื่นทมิฬ แต่คนขี้ขลาดสารเลวอย่างฉันกลับมีชีวิตอยู่ น่าตลกสิ้นดี ใช่ไหม?",
+                "zh-Hans": "哦真是万分抱歉！七丘的勇士们被黑潮杀死，而像我这般卑鄙丑陋的家伙却苟活着，呵呵。",
+                "zh-Hant": "哦真是萬分抱歉！七丘的勇士們被黑潮殺死，而像我這般卑鄙醜陋的傢伙卻苟活著，呵呵。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das habe ich Phrolova zu verdanken! Der Fluch, den diese Hexe mir auferlegt hat, war so stark, dass er mich nach der Versiegelung des Threnodianers aus der Dunklen Flut gerissen und im Klagetal verankert hat, um hier in ewiger Qual zu leben.",
+                "en": "And for that, I have Lady Phrolova to thank! The curse that witch laid on me was so strong it ripped me out of the Dark Tide after the Threnodian was sealed, anchoring me within Mournfell Canyon so that I may live in eternal torment.",
+                "es": "¡Y eso debo agradecérselo a Lady Phrolova! La maldición que esa bruja me impuso fue tan fuerte que me arrancó de la Marea Oscura después de que el Trenodiano fuera confinado, anclándome al Valle de Luto para vivir en un tormento eterno.",
+                "fr": "C'est à Dame Phrolova que je dois mon salut ! Sa malédiction était si puissante qu'elle m'a arraché à la Marée noire quand le Réprimantum a été emprisonné. J'ai été ancré au Canyon du Deuil, où je suis condamné à mener une existence de tourment éternel.",
+                "ja": "フローヴァ様に感謝しないといけませんな。あの魔女の呪い、ここまで強力とは……鳴式が封印されたあとでも、わしを黒潮から引き揚げ、モーンフェル・キャニオンに縛りつけて苦しませ続けるとは……",
+                "ko": "다 플로로 님 덕분이에요! 그 마녀가 저에게 내린 저주가 너무 강해서, 심지어 명식이 봉인된 후에도 저를 흑조에서 끌어내어 탄식의 협곡에 가두고 계속 괴롭혔죠",
+                "th": "ฉันจึงต้องขอบคุณท่าน Phrolova! คำสาปที่แม่มดคนนั้นสาปฉันรุนแรงจนฉุดฉันออกมาจากคลื่นทมิฬได้หลังจากที่เธรโนเดียนถูกผนึก ยึดเหนี่ยวฉันไว้ในหุบเขาอาลัย ทำให้ฉันมีชีวิตอยู่ในความทรมานชั่วนิรันดร์",
+                "zh-Hans": "这还得感谢弗洛洛大人啊！那女巫对我所下的诅咒如此之强，甚至在鸣式被封印后又将我从黑潮中扯出，锚定在了哀恸谷继续折磨我。",
+                "zh-Hant": "這還得感謝弗洛洛大人啊！那女巫對我所下的詛咒如此之強，甚至在鳴式被封印後又將我從黑潮中扯出，錨定在了哀慟谷繼續折磨我。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich glaube, sie mag mich nicht besonders. Hehe …",
+                "en": "I guess I'm not her favorite. Hehe...",
+                "es": "Supongo que no soy su favorito. Je, je...",
+                "fr": "On dirait qu'elle ne m'apprécie pas particulièrement. Hé hé…",
+                "ja": "そこまでするとは、かなりお熱のようで……ヒヒッ。",
+                "ko": "제가 엄청 싫은가 봐요, 히히힛~",
+                "th": "ท่าทางฉันคงไม่ใช่คนโปรดของเธอ ฮิๆ...",
+                "zh-Hans": "看来我很不讨她喜欢呢，嘻嘻嘻~",
+                "zh-Hant": "看來我很不討她喜歡呢，嘻嘻嘻~"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber andererseits wurde mir die Ehre zuteil, Zeuge eines aufregenderen und blutigeren Schauspiels als je zuvor zu sein – ich bin ein echter Glückspilz.",
+                "en": "But on the other hand, I've been given the luxury of bearing witness to a game more exhilarating and bloody than ever—I must be the most spoiled person alive.",
+                "es": "Pero, por otro lado, tengo el privilegio de ser testigo de un juego más emocionante y sangriento que nunca. Seguro que nadie ha gozado de esto antes.",
+                "fr": "D'un autre côté, je vais avoir le privilège d'assister à l'un des spectacles les plus palpitants et sanglants qu'il m'ait été donné de voir. À cet égard, je suis la personne la plus chanceuse du monde.",
+                "ja": "いずれにせよ、これでもっと熱く、もっと血生臭い試合を見られますな。これ以上の幸せなことがありましょうか。",
+                "ko": "하지만 이제 전 더 뜨겁고 피비린내 나는 경기를 지켜볼 수 있겠죠——세상에서 가장 행복한 사람은 바로 저 아닐까요?",
+                "th": "แต่ในทางกลับกัน ฉันโชคดีที่ได้เป็นพยานในเกมที่น่าตื่นเต้นและนองเลือดยิ่งกว่าครั้งไหน... ฉันคงเป็นคนที่สุขสมหวังที่สุดบนโลกนี้แล้วแหละ",
+                "zh-Hans": "不过这样一来，我又能见证更加热烈、更加血腥的比赛了——我不会是世上最幸福的人吧？",
+                "zh-Hant": "不過這樣一來，我又能見證更加熱烈、更加血腥的比賽了——我不會是世上最幸福的人吧？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was macht dich so zuversichtlich?",
+                    "en": "What makes you so confident?",
+                    "es": "Pareces muy seguro de ti mismo.",
+                    "fr": "Pourquoi es-tu si sûr de toi ?",
+                    "ja": "{Male=やけに強気だな。;Female=やけに強気だね。}",
+                    "ko": "그렇게 자신이 있나요?",
+                    "th": "อะไรทำให้คุณมั่นใจขนาดนี้?",
+                    "zh-Hans": "你就这么自信？",
+                    "zh-Hant": "你就這麼自信？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Septimont wird die gleichen Fehler nicht zweimal machen.",
+                    "en": "Septimont will not repeat the same mistakes.",
+                    "es": "Septimont no repetirá los mismos errores.",
+                    "fr": "Septimont ne refera pas les mêmes erreurs.",
+                    "ja": "セブン・ヒルズが同じ轍を踏むことはない。",
+                    "ko": "일곱 언덕은 다시 그 전철을 밟지 않을 거예요",
+                    "th": "เซปติมอนต์จะไม่ทำผิดพลาดซ้ำรอยอีก",
+                    "zh-Hans": "七丘不会再重蹈覆辙。",
+                    "zh-Hant": "七丘不會再重蹈覆轍。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Und du? Was macht dich so zuversichtlich?",
+                "en": "And you? What gives you such confidence?",
+                "es": "¡Tú también pareces muy {Male=seguro de ti mismo;Female=segura de ti misma}!",
+                "fr": "Et toi ? Pourquoi es-tu si {Male=sûr;Female=sûre} de toi ?",
+                "ja": "その言葉、そのままお返ししますよ。",
+                "ko": "그럼 당신은 그렇게 자신이 있나요?",
+                "th": "แล้วคุณล่ะ? อะไรทำให้คุณมั่นใจขนาดนั้น?",
+                "zh-Hans": "那您就这么自信吗？",
+                "zh-Hant": "那您就這麼自信嗎？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und was, wenn es gar kein „Fehler“ war?",
+                "en": "But what if it wasn't a \"mistake\" to begin with?",
+                "es": "Pero, ¿y si, después de todo, no fue un «error»?",
+                "fr": "Et si ce n’était pas une erreur ?",
+                "ja": "もし、そうでないとしたら……？",
+                "ko": "만약 그것이 일반적인 「전철」이 아니라면요?",
+                "th": "แล้วถ้ามันไม่ใช่ \"ความผิดพลาด\" ตั้งแต่แรกล่ะ?",
+                "zh-Hans": "可如果那并不是所谓的“覆辙”呢？",
+                "zh-Hant": "可如果那並不是所謂的「覆轍」呢？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schon bevor die Dunkle Flut über dieses Land hereinbrach, galten Tavernenschlägereien den Septimontern als ideale Unterhaltung.\nBlut und Ruhm, Rost und sengende Sonne – und Kerle wie ich.\nWir sind die wahren Farben von Septimont.",
+                "en": "Even before the Dark Tide reached these lands, the Septimontians had deemed tavern fistfights the perfect entertainment. Blood and glory. Rust and burning sun—and men like me. We are the true colors of Septimont.",
+                "es": "Incluso antes de que la Marea Oscura llegara a estas tierras, los septimontinos consideraban las peleas de taberna el entretenimiento perfecto. Sangre y gloria. Óxido y sol ardiente, y hombres como yo. Somos los auténticos colores de Septimont.",
+                "fr": "Même avant l'arrivée de la Marée Noire, les Septimontais considéraient une bagarre de taverne comme le summum du divertissement. Le sang et la gloire. La rouille, un soleil étouffant… et des hommes comme moi qui sommes la véritable âme de Septimont.",
+                "ja": "黒潮がこの大地を冒す前、既にセブン・ヒルズ人は酒場での殴り合いを娯楽としていました。血と栄光、錆と烈日。わしのような者こそ、セブン・ヒルズに相応しいと言えるでしょう。",
+                "ko": "일곱 언덕 사람들은 흑조가 이 땅을 침식하기 전부터 술집에서 서로 치고받는 모습을 보는 걸 최고의 재미로 여겼죠. 피와 영광, 녹슨 철과 뜨거운 태양——그리고 저야말로 일곱 언덕의 바탕이에요",
+                "th": "ก่อนที่คลื่นทมิฬจะมาถึงแผ่นดินนี้ ชาวเซปติมอนต์ก็มองว่าการชกต่อยในร้านเหล้าเป็นความบันเทิงที่สมบูรณ์แบบอยู่แล้ว เลือดกับเกียรติยศ สนิมและดวงอาทิตย์ที่แผดเผา... และคนอย่างฉัน เราคือสีสันที่แท้จริงของเซปติมอนต์",
+                "zh-Hans": "在黑潮侵袭这片土地之前，七丘人就已经把围观酒馆互殴当成绝佳的消遣。鲜血与荣耀，铁锈与烈阳——还有我，我们才是七丘的底色。",
+                "zh-Hant": "在黑潮侵襲這片土地之前，七丘人就已經把圍觀酒館互毆當成絕佳的消遣。鮮血與榮耀，鐵鏽與烈陽——還有我，我們才是七丘的底色。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was macht dich so sicher, dass die zurückgehende Flut eine blühende Zukunft verspricht und nicht ein Land, dessen Boden mit Blut getränkt ist?",
+                "en": "What makes you so sure the receding tides reveal a fertile future and not a land soaked in blood?",
+                "es": "¿Cómo tienes la certeza de que, cuando las mareas se retiren, se revelará un terreno fértil y no una tierra empapada en sangre?",
+                "fr": "Pourquoi es-tu si {Male=certain;Female=certaine} que lorsque la marée se retirera, elle révélera un avenir radieux, et non des terres baignées de sang ?",
+                "ja": "潮の引いた大地に残るは、未来を生み出す肥沃な土地ではなく、真っ赤な戦場でございます。",
+                "ko": "흑조가 지나간 후에 드러난 것은 붉은 대지가 아닌, 미래를 잉태하는 옥토라고 확신하나요?",
+                "th": "อะไรทำให้คุณมั่นใจว่ากระแสน้ำที่ถอยร่นจะเผยให้เห็นอนาคตที่อุดมสมบูรณ์ ไม่ใช่แผ่นดินที่ชโลมไปด้วยเลือด?",
+                "zh-Hans": "您就这么确定，退潮之后露出的是孕育未来的沃土，而不是猩红的大地？",
+                "zh-Hant": "您就這麼確定，退潮之後露出的是孕育未來的沃土，而不是猩紅的大地？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie wärʼs mit einer Wette, {PlayerName}? Was kommt zuerst: meine Läuterung durch die ewige Sonne? Oder die Wiederbelebung des Blutigen Agons?",
+                "en": "How about a wager, {PlayerName}? Which will come first: My cleansing by the eternal sun? Or the revival of the Bloody Agon?",
+                "es": "¿Te apetece hacer una apuesta, {PlayerName}? ¿Qué llegará primero: mi purificación con el sol eterno, o el renacimiento del Agón Sangriento?",
+                "fr": "Que dirais-tu d'un pari, {PlayerName} ? Selon vous, qu'est-ce qui viendra en premier, ma purification par le soleil éternel ou le retour de l'Agôn Sanglant ?",
+                "ja": "不滅の太陽がこの身を滅ぼすが先か、それとも偉大なる血みどろの闘技が再開するのが先か、賭けてはみませんか？",
+                "ko": "{PlayerName} 님, 저랑 내기 하나 해요. 영원히 비추는 태양이 저를 먼저 정화할까요, 아니면 위대한 핏빛 경기가 먼저 열릴까요?",
+                "th": "งั้นพนันกันไหมล่ะ {PlayerName}? ดูว่าอันไหนจะเกิดก่อน ระหว่างดวงตะวันนิรันดร์ชำระล้างฉัน? หรืออากอนสีเลือดหวนกลับมา?",
+                "zh-Hans": "{PlayerName}大人，我们不妨打个赌吧：看看是长照不灭的太阳先将我净化，还是伟大的血色竞技先重新召开？",
+                "zh-Hant": "{PlayerName}大人，我們不妨打個賭吧：看看是長照不滅的太陽先將我淨化，還是偉大的血色競技先重新召開？"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich brauche keine Sonne, läutern kann ich dich selbst. Und zwar gleich.",
+                    "en": "No need for the sun, I can do it myself. Right now.",
+                    "es": "No nos hace falta el sol, puedo hacerlo yo {Male=mismo;Female=misma}. Ahora mismo.",
+                    "fr": "Pas besoin du soleil, je peux m'en occuper tout de suite.",
+                    "ja": "{Male=その前に俺が倒す。;Female=その前に私が倒す。}",
+                    "ko": "태양은 필요 없어요, 제가 지금 바로 정화해 주죠",
+                    "th": "ไม่ต้องมีดวงอาทิตย์หรอก ฉันทำเองเดี๋ยวนี้เลยก็ได้",
+                    "zh-Hans": "不用太阳，我这就把你净化。",
+                    "zh-Hant": "不用太陽，我這就把你淨化。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich wette nicht mit Monstern.",
+                    "en": "I don't make wagers with monsters.",
+                    "es": "No hago apuestas con monstruos.",
+                    "fr": "Je ne fais pas de paris avec les monstres.",
+                    "ja": "怪物の賭けに応じるつもりはない。",
+                    "ko": "괴물과 내기는 안 해요",
+                    "th": "ฉันไม่พนันกับพวกสัตว์ประหลาดหรอก",
+                    "zh-Hans": "我不会跟怪物打赌。",
+                    "zh-Hant": "我不會跟怪物打賭。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Komm schon, sei nicht so ein Spielverderber, {PlayerName}. Ich kann dir kein Haar krümmen, und du weißt mittlerweile, dass auch du mich nicht so leicht loswirst. Warum klären wir das nicht auf ... spektakulärere Weise?",
+                "en": "Come, now, don't be such a killjoy, {PlayerName}. I can't harm a hair on you, and I'm sure you know I'm not so easy to get rid of. Why not settle this in a more dramatic fashion?",
+                "es": "Vamos, no seas tan aguafiestas, {PlayerName}. No puedo hacerte ni un rasguño, y estoy seguro de que sabes que no soy tan fácil de eliminar. ¿Por qué no resolver esto de una manera más espectacular?",
+                "fr": "Allons, ne joue pas les rabat-joie, {PlayerName}. Je ne peux pas te faire le moindre mal et j'imagine que tu sais qu'on ne se débarrasse pas de moi si facilement. Pourquoi ne pas régler nos comptes avec un peu de panache ?",
+                "ja": "まあまあ、{PlayerName}様。わしはあなた様を傷つけられず、あなた様もわしを容易く殺せない。ならば、より鑑賞に足る勝負をしようではありませんか。",
+                "ko": "흥 깨지게 왜 그래요, {PlayerName} 님. 전 당신을 다치게 할 수 없고, 마찬가지로 당신도 저를 쉽게 죽일 수 없어요. 그렇다면 더 재미있는 대결 방식을 선택하면 좋지 않아요?",
+                "th": "อย่าทำเสียบรรยากาศสิ {PlayerName} ฉันทำร้ายคุณไม่ได้หรอก และคุณก็กำจัดฉันง่ายๆ ไม่ได้เหมือนกัน แล้วทำไมไม่ทำให้เรื่องนี้จบแบบดราม่าหน่อยล่ะ?",
+                "zh-Hans": "别这么扫兴嘛，{PlayerName}大人。我无法伤到您，您也无法轻易杀死我，何不选择一种更有观赏性的较量方式呢？",
+                "zh-Hant": "別這麼掃興嘛，{PlayerName}大人。我無法傷到您，您也無法輕易殺死我，何不選擇一種更有觀賞性的較量方式呢？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Apropos. Wirf mal einen Blick auf das „Geschenk“, das ich für dich vorbereitet hab.",
+                "en": "Speaking of which. Take a look at this \"gift\" I prepared for you.",
+                "es": "Hablando de lo cual. Echa un vistazo a este «regalo» que preparé para ti.",
+                "fr": "En parlant de ça, j'ai un petit « cadeau » pour toi.",
+                "ja": "そうだ、「プレゼント」も用意したのですよ。",
+                "ko": "얘기가 나왔으니 말인데, 보세요. 당신을 위해 「선물」을 준비했어요",
+                "th": "ซึ่งจะว่าไปแล้ว มาดู \"ของขวัญ\" ที่ฉันเตรียมไว้ให้คุณสิ",
+                "zh-Hans": "说到这个，瞧，我为您准备了件“礼物”。",
+                "zh-Hant": "說到這個，瞧，我為您準備了件「禮物」。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 850291,
+                "name": {
+                  "zh-Hans": "梅杜利乌斯"
+                },
+                "entity": {
+                  "entityId": 189800012,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+                  "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_9",
+                  "areaId": 33002,
+                  "position": {
+                    "x": 1193743,
+                    "y": 1082276,
+                    "z": 2606
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 14
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Schwall schwarzes Wasser schießt aus dem Boden hervor, bevor er genauso schnell wieder verschwindet. An seiner Stelle steht ein Mädchen – Lenore.",
+                "en": "Black water spews from the ground before vanishing just as quickly. In its place stands a girl—Lenore.",
+                "es": "Comienza a brotar agua negra del suelo y, al desvanecerse, aparece una chica: Lenore.",
+                "fr": "Un jet d'eau noire surgit du sol un court instant puis disparaît pour révéler une jeune fille : Lenore.",
+                "ja": "黒き潮が地下から湧き出したかと思うと、すぐに引いていった。そしてそこには一人の少女――エノルの姿が。",
+                "ko": "검은 조수가 지하로부터 솟아올랐다 다시 물러났고, 한 소녀가 그곳에 나타났다. 일노르였다",
+                "th": "น้ำสีดำทะลักขึ้นมาจากพื้นก่อนจะหายวาบในพริบตา ทันใดนั้นก็มีเด็กสาวคนหนึ่งปรากฏขึ้นมา... Lenore",
+                "zh-Hans": "黑色的潮水自地下涌出又退去，一名少女出现在了那里——是伊诺尔。",
+                "zh-Hant": "黑色的潮水自地下湧出又退去，一名少女出現在了那裡——是伊諾爾。"
+              },
+              "id": 14
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ah! Was für eine hervorragende Technik! {Male=Der mutigste Krieger;Female=Die mutigste Kriegerin} von allen! Ich hätte nie gedacht, dass wir uns jemals wiedersehen würden, {PlayerName}!",
+                "en": "Ah! Such proficient technique! The bravest warrior of them all! I never imagined we'd ever get another chance to see each other, {PlayerName}!",
+                "es": "¡Ah! ¡Qué técnica tan ingeniosa! ¡El más valiente de todos los guerreros! ¡Nunca imaginé que volveríamos a vernos, {PlayerName}!",
+                "fr": "Ah ! Quelle technique admirable ! Décidément, tu es {Male=un guerrier;Female=une guerrière} d'exception ! Je n'osais pas espérer te revoir un jour, {PlayerName} !",
+                "ja": "何と素晴らしい技！勇敢なる戦士、{PlayerName}様、まさかまたお会いできるとは。",
+                "ko": "이 얼마나 숙련된 전투 기술인가! 용맹한 검투사여! {PlayerName} 님, 저희가 또 만날 줄은 몰랐네요",
+                "th": "โอ! ทักษะแสนชำนาญ! นักรบผู้กล้าหาญที่สุด! ไม่คิดเลยว่าจะได้เจอกันอีก {PlayerName}!",
+                "zh-Hans": "多么纯熟的战技！多么骁勇的斗士啊！{PlayerName}大人，没想到我们又见面了。",
+                "zh-Hant": "多麼純熟的戰技！多麼驍勇的鬥士啊！{PlayerName}大人，沒想到我們又見面了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich in die Altstadt",
+        "en": "Head to the Old District",
+        "es": "Dirígete al Distrito Antiguo de Septimont.",
+        "fr": "Se rendre au Vieux quartier",
+        "ja": "セブン・ヒルズの旧市街地に向かう",
+        "ko": "일곱 언덕 구도심으로 이동하기",
+        "th": "ไปที่เขตเมืองเก่า",
+        "zh-Hans": "前往七丘旧街",
+        "zh-Hant": "前往七丘舊街"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建七丘水下旧城",
+          "flowIndex": 2,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Ankunft neuer Vorräte sorgt für Fortschritte beim Wiederaufbau der Altstadt.",
+                "en": "The arrival of fresh supplies brings progress to the Old District's recovery effort.",
+                "es": "La llegada de suministros frescos hace avanzar la recuperación del Distrito Antiguo.",
+                "fr": "L'arrivée des ravitaillements fait progresser la reconstruction du Vieux quartier.",
+                "ja": "新たな物資も届き、旧市街地の復興作業が少し進んだ。",
+                "ko": "새로운 물자가 보급되며 구도심의 복구 진도가 조금 진전되었다",
+                "th": "เมื่อมีเสบียงมาช่วยเหลือ งานบูรณะก็คืบหน้าไปด้วยดี",
+                "zh-Hans": "在新一批物资的补给帮助下，旧街的修复进度得以推进了一些。",
+                "zh-Hant": "在新一批物資的補給幫助下，舊街的修復進度得以推進了一些。"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Warte zwei Tage",
+        "en": "Wait two days",
+        "es": "Espera dos días.",
+        "fr": "Attendre 2 jours",
+        "ja": "二日後まで待つ",
+        "ko": "이틀 후를 기다리기",
+        "th": "รอสองวัน",
+        "zh-Hans": "等待两日后",
+        "zh-Hant": "等待兩日後"
+      },
+      "dialogs": []
+    }
+  ]
+}

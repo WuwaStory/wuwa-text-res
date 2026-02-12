@@ -1,0 +1,859 @@
+{
+  "id": 167900017,
+  "key": "2.0道馆引导任务",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Schatten der Vergangenheit",
+    "en": "Shadows of the Past",
+    "es": "Sombras del pasado",
+    "fr": "Fantôme du passé",
+    "ja": "過ぎ去りし日の面影",
+    "ko": "옛날의 환영",
+    "th": "เงาอดีต",
+    "zh-Hans": "往日幻影",
+    "zh-Hant": "往日幻影"
+  },
+  "desc": {
+    "de": "Der Erbe des Vermächtnisses von Fisalia scheint um Hilfe zu bitten.\nEin mysteriöses Terminal, das tief im Thessaleo Hügel ruht, sendet bedrohliche Illusionen aus. Welche Geheimnisse der Vergangenheit mögen dort verborgen sein ...?",
+    "en": "The Fisalia family's heir seems to have a request.\nIn Thessaleo Fells, a mysterious Terminal is flickering with ominous light. What secrets of the past might it hold?",
+    "es": "Parece que el heredero del legado de la Fisalia tiene un favor que pedirte. Una misteriosa Terminal parpadea en las profundidades de las Colinas Tesaleo, proyectando destellos de fantasmas amenazantes. Qué secretos yacen enterrados en su pasado...",
+    "fr": "L'héritier de la famille Fisalia demande votre aide. \nUn appareil mystérieux brille aux Hautes Terres de Thessaleo. On se demande si quelque chose de dangereux ne s'y cache pas.",
+    "ja": "フィサリアファミリーの遺産を継いだ人から頼みがあるようだ。\nディサレー海嶺の奥で眠っていたデバイスが、危険な幻影を生み出している。そこにはどんな過去が隠されているのか……",
+    "ko": "피살리아 유산 상속자가 도움이 필요해 보인다.\n테살레오 해저 산맥 깊은 곳에 조용히 있던 신비한 단말기가 위험한 환영을 비추고 있는데, 과연 어떤 과거가 숨겨져 있는 걸까...?",
+    "th": "ดูเหมือนทายาทตระกูล Fisalia กำลังร้องขอบางอย่าง\nในสันสมุทรเทสซาลีโอ มีเทอร์มินัลลึกลับที่กะพริบแสงซึ่งดูไม่น่าไว้ใจ มันเก็บซ่อนความลับจากอดีตอะไรไว้กันนะ?",
+    "zh-Hans": "翡萨烈遗产的继承者似乎有事相求。\n沉寂在狄萨莱海脊深处的神秘终端闪烁着危险的幻影，其中到底埋藏着怎样的过去……？",
+    "zh-Hant": "翡薩烈遺產的繼承者似乎有事相求。\n沉寂在狄薩萊海脊深處的神秘終端閃爍著危險的幻影，其中到底埋藏著怎樣的過去……？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Botim",
+        "en": "Chat with Botim",
+        "es": "Habla con Botim.",
+        "fr": "Parler à Botim",
+        "ja": "ボティムと会話する",
+        "ko": "포팀과 대화하러 가기",
+        "th": "คุยกับโบทิม",
+        "zh-Hans": "去和波提姆聊聊",
+        "zh-Hant": "去和波提姆聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 167900020,
+          "mapId": 8,
+          "blueprintType": "branch2.0_TsEntity_拉古纳旧贵族男4880174",
+          "name": "波提姆",
+          "areaId": 2301,
+          "position": {
+            "x": 801844,
+            "y": 651094,
+            "z": 13727
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.0道馆引导",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Ehrwürdiger Gast;Female=Ehrwürdige Gästin} aus der Ferne, es ist mir eine Freude, dich endlich zu sehen.",
+                "en": "Honored guest from afar, I am relieved to finally see you.",
+                "es": "{Male=El invitado;Female=La invitada} de tierras lejanas, qué alegría verte.",
+                "fr": "{Male=Invité honorable;Female=Invitée honorable}, je suis soulagé de vous voir enfin.",
+                "ja": "遠くからのお客さん、やっとお会いすることができました。",
+                "ko": "멀리서 오신 손님! 기다리고 있었어요",
+                "th": "แขกผู้ทรงเกียรติจากแดนไกล โล่งใจจริงๆ ที่ในที่สุดก็ได้เจอคุณสักที",
+                "zh-Hans": "远道而来的客人，总算盼到您来了。",
+                "zh-Hant": "遠道而來的客人，總算盼到您來了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich fürchte, es ist nicht richtig, dich mit so einer lästigen Angelegenheit zu belasten, aber ich kann an niemanden anderen denken, der dazu in der Lage wäre.",
+                "en": "I'm afraid it's not right to burden you with such a troublesome matter, but I can't think of anyone else capable of handling it.",
+                "es": "No debería pedirte que te encargues de algo tan problemático, pero no puedo pensar en nadie más capaz de solucionarlo.",
+                "fr": "J'ai peur que ce ne soit pas bon de vous charger d'une affaire aussi problématique, mais je ne vois personne d'autre capable de la gérer.",
+                "ja": "本来、こんなことをお願いすべきではないのですが、あなたにしか頼めないことでして……",
+                "ko": "이런 일을 부탁드려도 되나 싶지만, 방랑자님 외에 이 일을 해결할 사람이 도저히 떠오르지가 않아서요",
+                "th": "ผมเกรงว่าการมอบภาระที่ยุ่งยากแบบนี้ให้คุณคงไม่เหมาะเท่าไหร่ แต่ผมก็นึกไม่ออกว่าจะมีใครบ้างที่จัดการเรื่องนี้ได้นอกจากคุณ",
+                "zh-Hans": "按理说，这种麻烦事是不该拜托您的，但除了您，我想不到谁还有能力处理它。",
+                "zh-Hant": "按理說，這種麻煩事是不該拜託您的，但除了您，我想不到誰還有能力處理它。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist also passiert?",
+                    "en": "So what happened?",
+                    "es": "Entonces, ¿qué pasó?",
+                    "fr": "Hé, détends-toi. Qu'est-ce qui s'est passé ?",
+                    "ja": "どんな用事？",
+                    "ko": "무슨 일을 부탁하시려고요?",
+                    "th": "แล้วเกิดอะไรขึ้นล่ะ?",
+                    "zh-Hans": "有什么麻烦事要拜托我？",
+                    "zh-Hant": "有什麼麻煩事要拜託我？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Heh, Glück für dich, du bist an die richtige Person geraten.",
+                    "en": "Heh, lucky for you, you came to the right person.",
+                    "es": "Supongo que tienes razón.",
+                    "fr": "Heh, tu as de la chance, tu es venu voir la bonne personne.",
+                    "ja": "{Male=俺に任せれば問題ない。;Female=私に任せれば問題ない。}",
+                    "ko": "엣헴, 사람 잘 찾아오셨네요",
+                    "th": "เฮ้ โชคดีนะที่คุณมาหาถูกคนแล้ว",
+                    "zh-Hans": "哼哼，算你找对人了。",
+                    "zh-Hant": "哼哼，算你找對人了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist nicht so kompliziert, wie es scheint.",
+                "en": "This isn't as complicated as it seems.",
+                "es": "Esto no es tan complicado como parece.",
+                "fr": "Ce n'est pas aussi compliqué que ça en a l'air.",
+                "ja": "実は、そんなに面倒なことではないのですが。",
+                "ko": "그게 사실은...",
+                "th": "เรื่องนี้ไม่ได้ซับซ้อนอย่างที่เห็นหรอก",
+                "zh-Hans": "这事，说起来也没那么复杂。",
+                "zh-Hant": "這事，說起來也沒那麼複雜。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich wusste, dass du bereit wärst zu helfen.",
+                "en": "I knew you would be willing to help.",
+                "es": "Sabía que me ayudarías.",
+                "fr": "Je savais que tu serais {Male=prêt;Female=prête} à aider.",
+                "ja": "きっと協力してくれると思いました。",
+                "ko": "역시 도와주실 거라 생각했어요!",
+                "th": "ผมรู้อยู่แล้วล่ะว่าคุณจะยินดีช่วย",
+                "zh-Hans": "我就知道您一定愿意帮忙。",
+                "zh-Hant": "我就知道您一定願意幫忙。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vor Kurzem hat mir meine Familie die Verwaltung einer Ahnenstätte anvertraut, an der ein überlieferter „Terminal“ noch vorhanden ist.",
+                "en": "Recently, my family entrusted me with managing an ancestral site, where a handed-down \"Terminal\" still remains.",
+                "es": "Recientemente, mi familia me encargó la gestión de un lugar ancestral, donde aún se conserva una Terminal heredada.",
+                "fr": "Récemment, ma famille m'a confié la gestion d'un site ancestral, où se trouve encore une « Borne »...un appareil transmis de génération en génération.",
+                "ja": "この間、ご先祖様が残してくれた土地を私が管理することになったのですが、その地には代々引き継がれた「デバイス」があるのです。",
+                "ko": "저희 집안에는 조상께서 남기신 한 장소가 있는데, 그걸 제가 관리하게 되었거든요. 거기엔 전해져 내려오는 「단말기」가 하나 있어요",
+                "th": "เมื่อไม่นานมานี้ ทางตระกูลได้ยกที่ดินมรดกให้ผมดูแล ที่นั่นยังมี \"เทอร์มินัล\" ที่ตกทอดกันมาหลงเหลืออยู่",
+                "zh-Hans": "最近家里把一处祖上留下的地方许给我管理，那块儿地方还留着一个传下来的“终端”。",
+                "zh-Hant": "最近家裡把祖上留下的一處地方交給我管理，那地方還留著一個傳下來的「終端」。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses Ding ... es hat eine gewisse Bosheit an sich, verstehst du?",
+                "en": "This thing... it has a certain malevolence to it, you understand?",
+                "es": "Esta cosa... tiene algo raro, ¿sabes a lo que me refiero?",
+                "fr": "Cette chose... elle a une certaine malveillance, tu comprends ?",
+                "ja": "ただこれが……曰く付きのものでして。",
+                "ko": "이 물건은 뭐랄까... 좀 이상하달까요?",
+                "th": "สิ่งนี้... มันมีพลังชั่วร้ายบางอย่าง คุณเข้าใจมั้ย?",
+                "zh-Hans": "这东西呢……它有点儿邪，您懂吧？",
+                "zh-Hant": "這東西呢……它有點邪，您懂吧？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schattenhafte Monster tauchen häufig daraus auf, verursachen Chaos und verschwinden dann von selbst.",
+                "en": "Shadowy monsters frequently emerge from within, causing chaos before disappearing on their own.",
+                "es": "Monstruos sombríos emergen frecuentemente de su interior, causando caos antes de desaparecer por su cuenta.",
+                "fr": "Des monstres ombrageux émergent fréquemment de l'intérieur, causant le chaos avant de disparaître d'eux-mêmes.",
+                "ja": "中から化け物の影などが現れては、大暴れし、勝手に消えていくのです。",
+                "ko": "때때로 괴물의 그림자가 나타나더니, 한바탕 난리를 치고는 다시 사라져요",
+                "th": "มอนสเตอร์เงามักจะโผล่ออกมาจากในนั้น ก่อความวุ่นวายก่อนจะสลายไปเอง",
+                "zh-Hans": "时常从里面冒出些怪物的影子，大闹一场后又自顾自消失。",
+                "zh-Hant": "時常從裡面冒出些怪物的影子，大鬧一場後又自顧自消失。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bitte um deine Hilfe bei der Bewältigung dieser Schatten, und sei versichert, du wirst gut entlohnt.",
+                "en": "I'm asking for your assistance in dealing with these shadows, and rest assured, you'll be well compensated.",
+                "es": "Así que, lo que quiero pedirte es que me ayudes a lidiar con estas sombras. No te preocupes, la recompensa será justa.",
+                "fr": "Je te demande de m'aider à gérer ces ombres, et je t'assure que tu seras bien {Male=récompensé;Female=récompensée}.",
+                "ja": "ですので、そこから現れる影を倒していただけないかと。もちろん、報酬は弾みますので、どうか……",
+                "ko": "이 그림자들을 처리하는 일을 부탁드리고 싶어요. 물론 보수는 넉넉히 챙겨드릴게요",
+                "th": "ผมจึงอยากขอให้คุณช่วยจัดการกับเงาพวกนี้ และขอให้มั่นใจเลยว่าคุณจะได้รับค่าตอบแทนอย่างสมน้ำสมเนื้อแน่",
+                "zh-Hans": "所以，我是想拜托您帮忙处理掉这些影子，当然了，报酬方面不会亏待您。",
+                "zh-Hant": "所以，我是想拜託您幫忙處理掉這些影子，當然了，報酬方面不會虧待您。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlass das mir.",
+                    "en": "Leave it to me.",
+                    "es": "Yo me encargo.",
+                    "fr": "Je m'en occupe.",
+                    "ja": "任せて。",
+                    "ko": "제게 맡겨주세요",
+                    "th": "เชื่อมือฉันได้เลย",
+                    "zh-Hans": "交给我吧。",
+                    "zh-Hant": "交給我吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich vertraue dir diese Aufgabe an, und ich werde hier auf deinen Triumph warten.",
+                "en": "I entrust this task to you, and I shall await your triumph here.",
+                "es": "Te confío esta tarea, y esperaré tu triunfo aquí.",
+                "fr": "Je te confie cette tâche et j'attendrai ici ton triomphe.",
+                "ja": "それではお願いします。私はここで待っていますので、ご武運を！",
+                "ko": "그럼 부탁드릴게요. 전 여기서 기다릴게요",
+                "th": "ฝากภารกิจนี้ด้วย แล้วผมจะรอฟังข่าวดีอยู่ที่นี่นะ",
+                "zh-Hans": "那就拜托您了，我就在此处，等待着您的凯旋。",
+                "zh-Hant": "那就拜託您了，我就在此處等待著您的凱旋。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überprüfe den geheimnisvollen Terminal",
+        "en": "Investigate the mysterious Terminal",
+        "es": "Investiga la Terminal misteriosa.",
+        "fr": "Vérifier l'appareil mystérieux",
+        "ja": "謎のデバイスを調べる",
+        "ko": "신비한 단말기 조사하기",
+        "th": "ตรวจสอบเทอร์มินัลลึกลับ",
+        "zh-Hans": "调查神秘终端",
+        "zh-Hant": "調查神秘終端"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.0道馆引导",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "(Hier stimmt etwas nicht ... Spuren der Dunklen Flut sind noch zu finden ...)",
+                "en": "(Something's off here. Traces of the Dark Tide's power linger...)",
+                "es": "(Hay algo extraño aquí... quedan rastros del poder de la Marea Oscura...)",
+                "fr": "(Il y a quelque chose de suspect ici... des traces du pouvoir de la Marée noire persistent...)",
+                "ja": "（何かおかしい、黒潮の痕跡がここに……）",
+                "ko": "(뭔가 이상해, 여기에 <ano=검은 파도>흑조(黑潮)</ano>의 흔적이 느껴져...)",
+                "th": "(ที่นี่แปลกๆ แฮะ ยังมีร่องรอยของพลังแห่งคลื่นทมิฬหลงเหลืออยู่...)",
+                "zh-Hans": "（不太对劲，这里有黑潮力量的痕迹……）",
+                "zh-Hant": "（不太對勁，這裡有黑潮力量的痕跡……）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Den Korrumpierten Terminal untersuchen",
+                    "en": "Investigate the corrupted Terminal",
+                    "es": "Investiga la Terminal corrupta.",
+                    "fr": "Vérifier la Borne corrompue",
+                    "ja": "汚染されたデバイスを調べる",
+                    "ko": "오염된 단말기 조사하기",
+                    "th": "ตรวจสอบเทอร์มินัลที่มีพลังชั่วร้าย",
+                    "zh-Hans": "调查被污染的终端",
+                    "zh-Hant": "調查被汙染的終端"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hallo, du, {Male=der;Female=die} die Prüfung bestanden hast",
+                "en": "Hello, one who has passed the trial.",
+                "es": "Hola, has superado la prueba.",
+                "fr": "Bonjour, à toi qui as passé l'épreuve.",
+                "ja": "どうも、テストを通過した者よ。",
+                "ko": "안녕하세요, 테스트를 통과한 이여...",
+                "th": "สวัสดี ผู้ผ่านบททดสอบมาได้",
+                "zh-Hans": "你好啊，通过测试之人。",
+                "zh-Hant": "你好啊，通過測試之人。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich weiß nicht, was für ein Mensch du bist, aber deine Stärke ist unbestreitbar – eine der besten der Welt.",
+                "en": "I don't know what kind of person you are, but your strength is undeniable, among the world's finest.",
+                "es": "No sé qué tipo de persona eres, pero tu fuerza es innegable, entre las mejores del mundo.",
+                "fr": "Je ne sais pas quel genre de personne tu es, mais ta force est indéniable, parmi les meilleures du monde.",
+                "ja": "あなたがどのような人物かは分からないが、その実力は間違いなく最強。",
+                "ko": "당신이 어떤 사람인지는 모르겠지만, 당신의 실력은 의심할 여지없이 세계 최고인 듯하군요",
+                "th": "ฉันไม่รู้หรอกว่าคุณเป็นใคร แต่พลังของคุณนั้นช่างแข็งแกร่ง ถือว่าไม่เป็นสองรองใครในโลกเลยทีเดียว",
+                "zh-Hans": "不知道你会是怎样的人，但你的实力毋庸置疑，已是世上顶尖。",
+                "zh-Hant": "不知道你會是怎樣的人，但你的實力毋庸置疑，已是世上頂尖。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe ein großes Wissen angesammelt, basierend auf den Prinzipien der Türme der Dornenkrone und der Restenergie innerhalb des Nimbus Heiligtums, und habe hier Frequenzen über verschiedene Dimensionen hinweg mächtig genug nachgebildet.",
+                "en": "Drawing on the mechanics of the Thorncrown Rises and the Remnant Energy within Nimbus Sanctum, I have recreated powerful frequencies from various dimensions.",
+                "es": "He acumulado una gran cantidad de conocimiento, utilizando los principios de las Torres Spinacorona, y basado en la energía remanente dentro del mar de nubes, he recreado frecuencias lo suficientemente poderosas a través de varias dimensiones aquí.",
+                "fr": "J'ai amassé une richesse de connaissances, en utilisant les principes des Tours de Couronne d'épines et l'Énergie vestigiale dans le Sanctuaire du Nimbus, j'ai recréé des fréquences assez puissantes à travers diverses dimensions.",
+                "ja": "私は多くの知恵を集め、ソーンクラウンタワーの仕組みを利用し、雲海の反響エナジーをベースとして、ここに再現したのだ。各時空において最強の周波数を。",
+                "ko": "저는 「가시관의 탑」의 원리를 이용해 수많은 지혜를 모아, 구름바다 안의 울림 에너지를 바탕으로 이곳에 강력한 주파수를 재현해 내는 데 성공했어요",
+                "th": "ฉันใช้กลไกจากหอคอยมงกุฎหนามและพลังงานเศษเสี้ยวความถี่ในวิหารนิมบัส สร้างความถี่อันทรงพลังจากหลากมิติขึ้นมาอีกครั้ง",
+                "zh-Hans": "我集合了大量的智慧，利用三重冠塔的原理，以云海内的回音能量为基础，在此处复现了各时空中足够强大的频率。",
+                "zh-Hant": "我集合了大量的智慧，利用三重冠塔的原理，以雲海內的回音能量為基礎，在此處復現了各時空中足夠強大的頻率。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Um diese Frequenzen auf die notwendige Stärke zu verstärken, haben wir sogar das Risiko eingegangen, die Kraft der Dunklen Flut zu nutzen.",
+                "en": "To amplify these frequencies to the necessary strength, we even risked harnessing the power of the Dark Tide.",
+                "es": "Para amplificar estas frecuencias a la fuerza necesaria, incluso arriesgamos aprovechar el poder de la Marea Oscura.",
+                "fr": "Pour amplifier ces fréquences, nous avons même risqué d'exploiter le pouvoir de la Marée noire.",
+                "ja": "その周波数をより強大なものにするために、私たちは黒潮のエナジーすら使ってしまった。",
+                "ko": "이 주파수를 더욱 강력하게 만들기 위해, 저희는 심지어 <ano=검은 파도>흑조(黑潮)</ano>의 에너지를 이용하는 모험까지 했죠",
+                "th": "เราถึงขั้นเสี่ยงดึงพลังของคลื่นทมิฬมาใช้ขยายความถี่เหล่านี้ เพื่อให้มันแข็งแกร่งมากพอ",
+                "zh-Hans": "为了让这些频率足够强大，我们甚至冒险利用了黑潮的能量。",
+                "zh-Hant": "為了讓這些頻率足夠強大，我們甚至冒險利用了黑潮的能量。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben den Auftrag von Fisalia übernommen, großen Aufwand betrieben und sogar mit denen vom Orden zusammengearbeitet, alles um diese „Phantome der Erlösung“ zu nutzen und einen echten „Erlöser“ hervorzubringen.",
+                "en": "We have taken on the job from Fisalia, exerting great effort and even collaborating with those from the Order, all to harness these \"phantoms of salvation\" and bring forth a true \"savior.\"",
+                "es": "Hemos aceptado el trabajo de Fisalia, realizando un gran esfuerzo e incluso colaborando con aquellos de La Orden, todo para aprovechar estos fantasmas de salvación y traer un verdadero salvador.",
+                "fr": "Nous avons accepté le travail de Fisalia, en déployant de grands efforts et même en collaborant avec ceux de l'Ordre, tout pour exploiter ces « fantômes de salut » et faire apparaître un véritable « sauveur ».",
+                "ja": "我々はフィサリアファミリーの依頼を受け、教団のやつらと協力してまで日々研究を続けてきた。すべてはこの「救済の幻影」から、本物の「救世主」を生み出すために。",
+                "ko": "저희는 피살리아의 의뢰를 받고 심지어 수도회와 함께 협조하는 일까지 마다하지 않았어요... 모두 이 「구원의 환영」들을 이용하여 진정한 「구세주」를 탄생시키려는 거죠",
+                "th": "พวกเราได้รับมอบหมายงานจาก Fisalia ทุ่มเทแรงกายแรงใจอย่างหนักถึงขนาดร่วมมือกับคนในภาคี เพื่อควบคุม \"ภูตผีแห่งการไถ่บาป\" เหล่านี้ และทำให้ \"ผู้กอบกู้\" ที่แท้จริงปรากฏตัวขึ้นมา",
+                "zh-Hans": "我们受翡萨烈的委托，费尽心力，甚至要和修会的家伙们合作，都是为了利用这些“救济的幻影”们，催化出真正的“救世者”。",
+                "zh-Hant": "我們受翡薩烈的委託，費盡心力，甚至要和修會的傢伙們合作，都是為了利用這些「救濟的幻影」們催化出真正的「救世者」。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Retter, egal aus welcher Familie du kommst, wir haben ein großzügiges Willkommensgeschenk für dich vorbereitet!",
+                "en": "Savior, no matter which family you hail from, we have prepared a generous welcome gift for you!",
+                "es": "{Male=Salvador;Female=Salvadora}, no importa de qué familia provengas, ¡hemos preparado un generoso regalo de bienvenida para ti!",
+                "fr": "Peu importe ta famille d'origine, nous avons préparé un cadeau de bienvenue!",
+                "ja": "どのファミリーの出身でも構わない、救世主よ、あなたへのお礼はたんまり用意してある。",
+                "ko": "당신이 어느 가문의 출신이든 상관없어요. 구세주여, 충분한 선물이 당신을 기다리고 있을 겁니다!",
+                "th": "ผู้กอบกู้ ไม่ว่าคุณจะมาจากตระกูลไหน เราได้เตรียมของขวัญต้อนรับอันยิ่งใหญ่ไว้ให้แล้ว",
+                "zh-Hans": "不论你出自哪个家族，救世者，我们都为你准备了足够丰厚的见面礼！",
+                "zh-Hant": "不論你出自哪個家族，救世者，我們都為你準備了足夠豐厚的見面禮！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der „Beweis des Retters“, der nur hier erhältlich und aus dem Reichtum von Fisalia in Wappenmünzen geprägt ist, wird dir unendlichen Reichtum bringen!",
+                "en": "The \"Savior's Proof,\" obtainable only here and forged into crest coins from the wealth of Fisalia, will bring you endless riches!",
+                "es": "¡La prueba del salvador, única en este lugar, forjada con la riqueza de Fisalia en monedas, te abrirá las puertas a una fortuna interminable!",
+                "fr": "La Preuve du Sauveur, que tu peux obtenir uniquement ici est forgée à partir des richesses de Fisalia. Cela va t'apporter des richesses sans fin !",
+                "ja": "ここでしかもらえない「救世主」の証、フィサリアの富でできた試練コインは、あなたに無尽蔵の富をもたらすことになるだろう。",
+                "ko": "이곳에서 「구세주」인 것이 증명되면 피살리아 재산으로 주조된 화폐가 끝없는 재산을 가져다줄 겁니다!",
+                "th": "เหรียญตรา \"เครื่องพิสูจน์ของผู้กอบกู้\" ที่หาได้เฉพาะจากที่นี่และหลอมขึ้นจากสมบัติของ Fisalia จะนำพาความร่ำรวยมาให้คุณอย่างไม่สิ้นสุด!",
+                "zh-Hans": "只有此处能拿到的“救世者”的证明，用翡萨烈财富熔铸成的纹币，将为你带来无尽的财富！",
+                "zh-Hant": "只有此處能拿到的「救世者」的證明，用翡薩烈財富熔鑄成的紋幣，將為你帶來無盡的財富！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Um sie zu erhalten, musst du stärker werden und kontinuierliche Herausforderungen annehmen!",
+                "en": "To obtain them, you must become stronger and embrace continuous challenges!",
+                "es": "Para obtenerlas, ¡debes volverte más fuerte y superar los desafíos!",
+                "fr": "Pour les obtenir, tu dois devenir plus fort et relever des défis !",
+                "ja": "それが欲しければ、強くなれ。そして、挑み続けよ！",
+                "ko": "자, 이것들을 원한다면, 더욱 강해져 도전을 계속하세요!",
+                "th": "หากต้องการครอบครองมัน คุณจะต้องแข็งแกร่งขึ้นและก้าวผ่านความท้าทายอย่างไม่หยุดยั้ง!",
+                "zh-Hans": "想要拿到它们，就去变得更强，去不断的挑战吧！",
+                "zh-Hant": "想要拿到它們，就去變得更強，去不斷挑戰吧！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich warte hier, gespannt auf das Erscheinen des „Retters“!",
+                "en": "I await here, eagerly anticipating the emergence of the \"Savior\"!",
+                "es": "Estoy aquí, esperando con ansias el nacimiento {Male=del salvador;Female=de la salvadora}.",
+                "fr": "Je t'attends ici, anticipant avec impatience notre Sauveur !",
+                "ja": "私はここで、「救世主」が生まれる瞬間を見届けよう。",
+                "ko": "전 이곳에서 「구세주」의 탄생을 기대하고 있을게요!",
+                "th": "ฉันจะรออยู่ที่นี่เพื่อเฝ้าคอยการปรากฏตัวของ \"ผู้กอบกู้\"!",
+                "zh-Hans": "我就在此处，期盼着“救世者\"的诞生！",
+                "zh-Hant": "我就在此處，期盼著「救世者」的誕生！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900104,
+                "name": {
+                  "zh-Hans": "幻影"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sag Botim das Ergebnis",
+        "en": "Tell Botim what you discovered",
+        "es": "Dile a Botim lo que descubriste.",
+        "fr": "Partager le résultat avec Botim",
+        "ja": "調査結果をボティムに教える",
+        "ko": "포팀에게 조사 결과 알려주기",
+        "th": "เล่าให้โบทิมฟังว่าคุณค้นพบอะไร",
+        "zh-Hans": "告知波提姆调查结果",
+        "zh-Hant": "告知波提姆調查結果"
+      },
+      "entities": [
+        {
+          "entityId": 167900020,
+          "mapId": 8,
+          "blueprintType": "branch2.0_TsEntity_拉古纳旧贵族男4880174",
+          "name": "波提姆",
+          "areaId": 2301,
+          "position": {
+            "x": 801844,
+            "y": 651094,
+            "z": 13727
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.0道馆引导",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist zurück! Wie lief es?",
+                "en": "You've returned, Victor! How did it go?",
+                "es": "¡Has regresado! ¿Cómo te fue?",
+                "fr": "Tu es, {Male=revenu triomphant;Female=revenue triomphante} ! Comment ça s'est passé ?",
+                "ja": "お戻りになられたんですね！状況はどうでしたか？",
+                "ko": "돌아오셨군요! 상황은 어땠나요?",
+                "th": "กลับมาแล้วสินะ คุณผู้ชนะ เป็นยังไงบ้าง?",
+                "zh-Hans": "胜利者，您回来了！情况如何？",
+                "zh-Hant": "勝利者，您回來了！情況如何？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich würde nicht lügen, sie haben mir diesen Ort anvertraut, aber ich weiß wirklich nicht, wie ich mit diesem Terminal umgehen soll.",
+                "en": "I'm not going to lie, they've entrusted this place to me, but I truly don't know how to handle that Terminal.",
+                "es": "No voy a mentir, me han confiado este lugar, pero realmente no sé cómo manejar esa Terminal.",
+                "fr": "Je ne vais pas mentir, ils m'ont confié cet endroit, mais je ne sais vraiment pas comment gérer cette Borne.",
+                "ja": "実は、その地が僕に任せられた時、あのデバイスをどうしたらいいのか、本当に頭を抱えていましたよ。",
+                "ko": "집안에서 이 장소를 저에게 맡겼지만, 단말기를 어떻게 처리해야 할지 모르겠더군요",
+                "th": "พูดตรงๆ เลยนะ ถึงจะได้รับหน้าที่ดูแลที่นี่ แต่ผมไม่รู้จริงๆ ว่าควรจะจัดการกับเทอร์มินัลนั้นยังไงดี",
+                "zh-Hans": "实不相瞒，他们把这块地方托付给我，但我也实在不知该怎么处理那个终端。",
+                "zh-Hant": "實不相瞞，他們把這個地方託付給我，但我也實在不知道該怎麼處理那個終端。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sag ihm ehrlich die Wahrheit.",
+                    "en": "Tell him honestly.",
+                    "es": "Díselo honestamente.",
+                    "fr": "Dire la vérité.",
+                    "ja": "（聞いた話をそのまま伝える）",
+                    "ko": "사실대로 알려준다",
+                    "th": "บอกความจริงกับเขา",
+                    "zh-Hans": "如实相告。",
+                    "zh-Hant": "如實相告。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es ist besser, es ihm nicht zu sagen.",
+                    "en": "It's better not to tell him.",
+                    "es": "Es mejor no decírselo.",
+                    "fr": "Mieux vaut ne pas lui dire.",
+                    "ja": "今は伏せておこう。",
+                    "ko": "사실대로 알리지 않고 숨긴다",
+                    "th": "อย่าบอกจะดีกว่า",
+                    "zh-Hans": "不告诉他为好。",
+                    "zh-Hant": "不告訴他為好。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "(Er scheint wirklich nichts zu wissen ... Soll ich ihm die Wahrheit sagen?)",
+                "en": "(He genuinely seems unaware... Should I tell him the truth?)",
+                "es": "(Parece inconsciente... ¿Debería decirle la verdad?)",
+                "fr": "(Il semble vraiment ignorant... Devrais-je lui dire la vérité ?)",
+                "ja": "（本当に何も知らないようだ……真実を教えよう。）",
+                "ko": "(정말 모르는 것 같은데... 사실대로 알려주자)",
+                "th": "(เขาดูไม่รู้เรื่องจริงๆ... ฉันควรบอกความจริงดีมั้ย?)",
+                "zh-Hans": "（他看起来好像真的不知情……告诉他真相吧。）",
+                "zh-Hant": "（他看起來好像真的不知情……告訴他真相吧。）"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast Botim alles erzählt, was die Illusion offenbart hat ...",
+                "en": "You told Botim everything the phantom revealed...",
+                "es": "Le contaste a Botim todo lo que el fantasma reveló...",
+                "fr": "Vous avez tout dit à Botim ce que le mirage a révélé...",
+                "ja": "ボティムに幻影から聞いた話を伝えた……",
+                "ko": "포팀에게 환영이 말한 모든 내용을 알려주었다...",
+                "th": "คุณเล่าทุกอย่างที่ภูตผีเปิดเผยให้โบทิมฟัง...",
+                "zh-Hans": "向波提姆讲述了幻影所说的一切……",
+                "zh-Hant": "向波提姆講述了幻影所說的一切……"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "Jetzt ergibt alles Sinn ... Also das ist es ... Ja, ich verstehe.",
+                "en": "It all makes sense now... So that's what it is... Yes, I understand.",
+                "es": "Todo tiene sentido ahora... Así que eso es lo que es... Ya entiendo.",
+                "fr": "Tout s'éclaire maintenant... C'est donc ça... Oui, je comprends.",
+                "ja": "なるほど……あれが……はい、全部分かりました。",
+                "ko": "그렇군요... 그 단말기가... 네, 알겠어요",
+                "th": "ทุกอย่างกระจ่างแล้ว... ที่แท้ก็เป็นแบบนี้นี่เอง... อือ ผมเข้าใจแล้วล่ะ",
+                "zh-Hans": "原来是这样……它竟然是……嗯，我明白了。",
+                "zh-Hant": "原來是這樣……它竟然是……嗯，我明白了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{Male=Geschätzter Retter;Female=Geschätzte Retterin}, danke, dass du die Wahrheit mit mir geteilt hast.",
+                "en": "Esteemed Savior, thank you for sharing the truth with me.",
+                "es": "{Male=Estimado salvador;Female=Estimada Salvadora}, gracias por compartir la verdad conmigo.",
+                "fr": "Bon, tu es donc {Male=le Sauveur;Female=la Salvatrice} ! Merci de m'avoir partagé la vérité.",
+                "ja": "尊敬する「救世主」よ、真実を教えてくれて感謝します。",
+                "ko": "존경하는 「구세주」님, 진실을 알려주심에 감사합니다",
+                "th": "คุณผู้กอบกู้ผู้ทรงเกียรติ ขอบคุณที่เล่าความจริงให้ผมรู้นะ",
+                "zh-Hans": "尊敬的”救世者“，感谢您愿意告知我真相。",
+                "zh-Hant": "尊敬的「救世者」，感謝您願意告知我真相。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sicherlich ist alles, was du vom Terminal bekommst, wohlverdient. Wenn du möchtest, kannst du jederzeit zum Terminal gehen, um die Prüfungen zu starten.",
+                "en": "Certainly, anything you gain from the Terminal is well-deserved. If you wish, you may proceed to the Terminal at any time to undertake the trials.",
+                "es": "Ciertamente, cualquier cosa que consigas de la Terminal es bien merecida. Si lo deseas, puedes proceder a la Terminal en cualquier momento para emprender las pruebas.",
+                "fr": "Bien sûr, tout ce que tu as obtenu de la Borne est bien mérité. Tu peux te rendre à tout moment à l'appareil pour passer les défis.",
+                "ja": "当然ですが、デバイスからもらった物はすべて、あなたのものです。あなたさえよければ、いつでもデバイスで試練を受けることができます。",
+                "ko": "단말기에서 얻는 모든 것은 당신이 마땅히 받아야 할 것들이며, 원하신다면 언제든지 단말기로 가서 시련을 진행하셔도 됩니다",
+                "th": "ทุกอย่างที่คุณได้รับจากเทอร์มินัลนั้นสมควรเป็นของคุณแล้ว คุณสามารถไปที่เทอร์มินัลเพื่อทำบททดสอบได้ทุกเมื่อที่ต้องการเลยนะ",
+                "zh-Hans": "当然，您从终端处获取的一切都是您应得的，如果您愿意，您可以随时前往终端处进行试炼。",
+                "zh-Hant": "當然，您從終端處獲取的一切都是您應得的，如果您願意，您可以隨時前往終端處進行試煉。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe persönliche Angelegenheiten zu erledigen, also verabschiede ich mich fürs Erste.",
+                "en": "I have personal matters to attend to, so I'll take my leave for now.",
+                "es": "Tengo asuntos personales que atender, así que me retiro por ahora.",
+                "fr": "J'ai des affaires personnelles à régler, alors je vais prendre congé pour l'instant.",
+                "ja": "僕はまだ用事がありますので、先に失礼します。",
+                "ko": "저는 아직 처리해야 할 집안의 일들이 많아서 먼저 가보겠습니다",
+                "th": "ผมมีเรื่องส่วนตัวต้องไปสะสาง คงต้องขอตัวไปก่อน",
+                "zh-Hans": "我还有家事想要处理，就先告辞了。",
+                "zh-Hant": "我還有家事想要處理，就先告辭了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Botim ging, belastet von seinen Sorgen.",
+                "en": "Botim left, weighed down by his worries.",
+                "es": "Botim se fue, agobiado por sus preocupaciones.",
+                "fr": "Botim part, accablé par ses soucis.",
+                "ja": "ボティムは思い悩みながらその場を去っていった。",
+                "ko": "포팀은 무거운 발걸음을 옮기며 떠났다",
+                "th": "โบทิมจากไปพร้อมกับภาระที่หนักอึ้งในใจ",
+                "zh-Hans": "波提姆心事重重地离开了。",
+                "zh-Hant": "波提姆心事重重地離開了。"
+              },
+              "id": 9
+            },
+            {
+              "text": {
+                "de": "(Er scheint wirklich nichts zu wissen ... Es ist wahrscheinlich besser, es ihm nicht zu sagen.)",
+                "en": "(He really seems unaware... It's probably best not to tell him.)",
+                "es": "(Realmente parece inconsciente... Probablemente sea mejor no decírselo.)",
+                "fr": "(Il semble vraiment ignorant... Il vaut probablement mieux ne pas lui dire.)",
+                "ja": "（本当に何も知らないようだ……やはり真実は伏せておこう。）",
+                "ko": "(정말 모르는 것 같은데... 알려주지 않는 게 좋을 것 같아)",
+                "th": "(เขาดูไม่รู้เรื่องจริงๆ... ไม่บอกความจริงน่าจะดีกว่า)",
+                "zh-Hans": "（他看起来好像真的不知情……还是不告诉他为好。）",
+                "zh-Hant": "（他看起來好像真的不知情……還是不告訴他為好。）"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kümmere mich darum. Nur noch ein paar gefährliche Monster zu erledigen, aber ich werde es bis zum Ende durchziehen.",
+                "en": "I'm on it. Just a few dangerous monsters left to handle, but I'll see it through.",
+                "es": "Estoy en ello. Solo quedan unos pocos monstruos peligrosos por manejar, pero lo llevaré hasta el final.",
+                "fr": "Je m'en occupe. Il reste juste quelques monstres dangereux à gérer, mais je le verrai jusqu'à la fin.",
+                "ja": "{Male=特に怪しいところはなかった。ただ危ない化け物がまだ残っているようだから、俺が全部片づけるよ。;Female=特に怪しいところはなかった。ただ危ない化け物がまだ残っているようだから、私が全部片づけるよ。}",
+                "ko": "별다른 건 없었어요. 아직 처리 못한 위험한 괴물이 있어서, 제가 끝까지 책임지도록 할게요",
+                "th": "แค่พวกมอนสเตอร์อันตรายที่เหลืออีกไม่กี่ตัวน่ะ เดี๋ยวฉันจัดการเอง",
+                "zh-Hans": "没什么特别的，只是有些危险的怪物还未被清理，我会负责到底的。",
+                "zh-Hant": "沒什麼特別的，只是有些危險的怪物還未被清理，我會負責到底的。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich ... Ich weiß nicht, wie ich meinen Dank ausdrücken soll ... aber wirklich, vielen Dank!",
+                "en": "I'm... I'm not sure how to express my gratitude... but truly, thank you so much!",
+                "es": "Ya no sé cómo expresar mi gratitud... pero de verdad, ¡muchas gracias!",
+                "fr": "Je... Je ne sais pas comment exprimer ma gratitude... mais vraiment, merci beaucoup !",
+                "ja": "そ……それは恐れ入ります……分かりました、本当にありがとうございます！",
+                "ko": "이, 이거 어떻게 감사를 표할지... 정말 너무너무 감사합니다!",
+                "th": "ผม... ผมไม่รู้จะตอบแทนยังไงดีเลย... แต่ขอบคุณมากจริงๆ นะ!",
+                "zh-Hans": "这……这怎么好意思……好吧，实在是太感谢您了！",
+                "zh-Hant": "這……這怎麼好意思……好吧，實在是太感謝您了！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900105,
+                "name": {
+                  "zh-Hans": "波提姆"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

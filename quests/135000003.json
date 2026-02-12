@@ -1,0 +1,444 @@
+{
+  "id": 135000003,
+  "key": "拯救猫咪！",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Die Welt retten? Rette die Katze!",
+    "en": "Save the World? Save the Cat!",
+    "es": "¿Salvar el mundo? ¡Salvar al gato!",
+    "fr": "Sauvez le monde ? Sauvez le chat !",
+    "ja": "世界を救う？猫を救う！",
+    "ko": "세상을 구하라고? 고양이를 구할 거야!",
+    "th": "ช่วยโลกเหรอ ช่วยแมวสิ!",
+    "zh-Hans": "拯救世界？拯救猫咪！",
+    "zh-Hant": "拯救世界？拯救貓咪！"
+  },
+  "desc": {
+    "de": "Die Katze des Restaurantbesitzers Lil. Ju ist nicht zurückgekehrt. Bitte hilf, die freche Katze zu finden und bring sie zu ihrem Besitzer zurück.",
+    "en": "The cat of the restaurant owner Xiaoju has not returned. Please help find the naughty cat and bring it back to its owner.",
+    "es": "El gato de la dueña del restaurante Xiaoju no ha regresado. Por favor, ayuda a encontrar al gato travieso y devuélvelo a su dueño.",
+    "fr": "Le chat de Xiaoju, la propriétaire du restaurant, n'est pas rentrée. Aidez-la à le retrouver.",
+    "ja": "飲食店店主橘の飼い猫が帰ってこない、やんちゃな猫ちゃんを探し、主人の元へ戻そう。",
+    "ko": "음식점 사장 귤이의 고양이가 어디로 갔는지 모르는데, 장난꾸러기 고양이를 찾아 주인에게 돌려보내 주세요",
+    "th": "แมวของเสี่ยวจู ผู้เป็นเจ้าของร้านอาหาร ยังไม่กลับมา ช่วยตามหาแมวแสนซนตัวนี้และนำมันกลับไปคืนเจ้าของ",
+    "zh-Hans": "餐饮店老板小橘的猫咪至今未归，请帮忙寻找贪玩的猫咪，将它带回主人身边吧。",
+    "zh-Hant": "餐飲店老闆小橘的貓咪至今未歸，請幫忙尋找貪玩的貓咪，將它帶回主人身邊吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Hilf, die vermisste Katze zu finden",
+        "en": "Help find the missing cat",
+        "es": "Ayuda a encontrar el gato perdido",
+        "fr": "Retrouver le chat perdu",
+        "ja": "行方不明の猫ちゃんの捜索を手伝う",
+        "ko": "실종된 고양이 찾아주기",
+        "th": "ช่วยตามหาแมวที่หายไป",
+        "zh-Hans": "帮助寻找失踪猫咪",
+        "zh-Hant": "幫助尋找失蹤貓咪"
+      },
+      "entities": [
+        {
+          "entityId": 135001517,
+          "mapId": 8,
+          "blueprintType": "Animal008",
+          "name": "TsEntity_生态动物008_狸花",
+          "areaId": 406,
+          "position": {
+            "x": -81687,
+            "y": 55050,
+            "z": 14595
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 75
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135001518,
+          "mapId": 8,
+          "blueprintType": "Animal008_2",
+          "name": "TsEntity_生态动物008_狸花_静默2",
+          "areaId": 406,
+          "position": {
+            "x": -76757,
+            "y": 54126,
+            "z": 5592
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bringe die Katze zu Xiaoju zurück",
+        "en": "Return the cat to Xiaoju",
+        "es": "Devuelve el gato a Xiaoju",
+        "fr": "Ramener le chat à Xiaoju",
+        "ja": "猫ちゃんを橘の元に戻す",
+        "ko": "고양이를 귤이에게 돌려보내 주기",
+        "th": "พาแมวกลับไปหาเสี่ยวจู",
+        "zh-Hans": "将猫咪送回小橘身边",
+        "zh-Hant": "將貓咪送回小橘身邊"
+      },
+      "entities": [
+        {
+          "entityId": 135001512,
+          "mapId": 8,
+          "blueprintType": "NPC225",
+          "name": "小橘",
+          "areaId": 406,
+          "position": {
+            "x": -76365,
+            "y": 53447,
+            "z": 5578
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_猫猫咖啡厅",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist schon zurück!",
+                "en": "You're back already!",
+                "es": "¡Ya estás de vuelta!",
+                "fr": "Wow, c'était rapide !",
+                "ja": "わっ、早かったね！",
+                "ko": "이렇게 빨리 찾아내다니!",
+                "th": "คุณกลับมาแล้ว!",
+                "zh-Hans": "居然这么快就找到了！",
+                "zh-Hant": "居然這麼快就找到了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh! Lulu... Gott sei Dank bist du zu Hause. Komm, gib Mama ein paar Küsse! Mwah! Mwah!",
+                "en": "Oh! Lulu... Thank goodness you're home. Come give Mommy some kisses! Mwah! Mwah!",
+                "es": "¡Oh! Lulu... Gracias a Dios que estás en casa. ¡Ven a darle a mamá algunos besos! ¡Mua! ¡Mua!",
+                "fr": "Ah, Lulu... tu es revenu ! Laisse maman t'embrasser, mwah !",
+                "ja": "ああ……るる……戻って来てくれてよかった……",
+                "ko": "아, 루루야...... 돌아왔구나! 자~ 뽀뽀! 쪽쪽!",
+                "th": "โอ้! Lulu... โล่งอกไปทีที่แกกลับบ้านมาอย่างปลอดภัย มาให้แม่จุ๊บหน่อยเร็ว! จุ๊บ! จุ๊บ!",
+                "zh-Hans": "啊，鲁鲁……你回来了！快让妈妈亲亲，么么！",
+                "zh-Hant": "啊，魯魯……你回來了！快讓媽媽親親，麼麼！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warum hast du Mama vorhin nicht geantwortet? Hm? Wenn du das nächste Mal nicht nach Hause kommst, werde ich Lulu einfach an Mama binden. Verstanden?",
+                "en": "Why didn't you answer to Mommy earlier? Hmm? If you don't come home next time, I'll just tie Lulu up to Mommy. Got it?",
+                "es": "¿Por qué no le respondiste a mamá antes? ¿Hmm? Si la próxima vez no vuelves a casa, simplemente ataré a Lulu a mamá. ¿Entendido?",
+                "fr": "Pourquoi tu n'as pas répondu à maman tout à l'heure, hein ? Si tu ne rentres pas sagement à la maison la prochaine fois, je t'attacherai à moi, Lulu.",
+                "ja": "ほらママの話を聞いて？ね？今度またこんなことしたら、るるを縄で縛って、ぶら下げちゃうよ？",
+                "ko": "아까 왜 엄마한테 대답 안 했어? 다음에도 이러면 엄마랑 같이 묶어둘거야",
+                "th": "ทำไมเมื่อกี้แม่เรียกแล้วแกไม่ขานล่ะ? หืม? ถ้าคราวหน้ายังไม่กลับบ้านอีก แม่จะจับ Lulu มัดติดตัวไว้เลย เข้าใจรึเปล่า?",
+                "zh-Hans": "你刚才怎么不回应妈妈呢？嗯？下次再不乖乖回家我就把鲁鲁系在身上。",
+                "zh-Hant": "你剛才怎麼不回應媽媽呢？嗯？下次再不乖乖回家我就把魯魯系在身上。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich glücklich bin, werde ich Lulu für ein paar Küsse herausnehmen. Und wenn ich eine schlechte Zeit habe, werde ich Lulu für eine Kuschelrunde benutzen. Wie klingt das?",
+                "en": "When I'm happy, I'll take out Lulu for some kisses. And when I'm having a bad time, I'll use Lulu for a snuggle. How does that sound?",
+                "es": "Cuando estoy feliz, saco a Lulu para darle algunos besos. Y cuando estoy pasando un mal rato, uso a Lulu para un abrazo. ¿Qué te parece?",
+                "fr": "Quand je suis heureuse, je sors Lulu pour l'embrasser, et quand je suis en colère, je sors Lulu pour le caresser, d'accord ?",
+                "ja": "そしたら……嬉しい時はるるにいっぱいキスして、怒った時はるるを力いっぱいに揉みつぶしちゃう！どう？どう？どう？",
+                "ko": "기쁠 때나 화날 때나 우리 루루한테 뽀뽀하고 마구 쓰다듬을 거야! 알겠지?",
+                "th": "เวลาฉันอารมณ์ดี ฉันก็จะเอา Lulu ออกมาจุ๊บ และเมื่อเวลาที่ฉันอารมณ์ไม่ดี ฉันก็จะเอา Lulu ออกมาฟัด ฟังดูเยี่ยมเลยใช่ไหม?",
+                "zh-Hans": "开心的时候就拿出鲁鲁来亲亲，生气的时候也拿出鲁鲁来揉一揉，好不好呀？",
+                "zh-Hant": "開心的時候就拿出魯魯來親親，生氣的時候也拿出魯魯來揉一揉，好不好呀？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So. Ein paar Küsse hier... Mwah, mwah... Und ein weiterer Kuss dort... Mwwaaah!",
+                "en": "Like this. A few kisses here... Mwah, mwah... And another kiss there... Mwwaaah!",
+                "es": "Así. Unos cuantos besos aquí... Mua, mua... Y otro beso allí... ¡Muaaa!",
+                "fr": "Comme ça, mwah mwah... et encore un bisou, mwah !",
+                "ja": "こう、んんんー！ああ、もう一回！んんんー！",
+                "ko": "이렇게 말이야. 쪽쪽쪽... 한 번 더!",
+                "th": "แบบนี้ไง จุ๊บตรงนี้หน่อย... จุ๊บๆ... แล้วก็ตรงนั้นอีกที... จ๊วบบบ!",
+                "zh-Hans": "就像这样，么么么……再亲一个，么！",
+                "zh-Hant": "就像這樣，麼麼麼……再親一個，麼！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*kichernd*... Heeheehee...",
+                "en": "*snickering*... Heeheehee...",
+                "es": "*risitas*... Jijijiji...",
+                "fr": "Hihihi... hehehe...",
+                "ja": "ふふ、ふふふ……えへへっ、えへ……",
+                "ko": "헤헤헤... 헤헤헤...",
+                "th": "*เสียงหัวเราะคิกคัก*... ฮี่ฮี่ฮี่...",
+                "zh-Hans": "嘻嘻嘻嘻……嘿嘿嘿……",
+                "zh-Hant": "嘻嘻嘻嘻……嘿嘿嘿……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "!!!",
+                    "en": "!!!",
+                    "es": "!!!",
+                    "fr": "!!",
+                    "ja": "！！！",
+                    "ko": "!!!",
+                    "th": "!!!",
+                    "zh-Hans": "！！！",
+                    "zh-Hant": "！！！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "...",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "......",
+                    "ja": "……",
+                    "ko": "......",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, Entschuldigung, ich habe mich da gerade verloren...",
+                "en": "Oh, I'm sorry, I lost myself there for a moment...",
+                "es": "Oh, lo siento, me perdí por un momento...",
+                "fr": "Oh. Pardon. Je me suis laissé emporter...",
+                "ja": "おっと危ない。人がいるんだった……",
+                "ko": "아, 죄송해요. 실례했네요...",
+                "th": "โอ้ ขออภัยด้วย ฉันเผลอตัวไปหน่อยน่ะ...",
+                "zh-Hans": "哦，不好意思，失态了……",
+                "zh-Hant": "哦，不好意思，失態了……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hab keine Angst. Es ist nur... so zeige ich meine Liebe zu Katzen, das ist alles.",
+                "en": "Don't be afraid. It's just... how I show my love for cats, that's all.",
+                "es": "No tengas miedo. Es solo... cómo muestro mi amor por los gatos, eso es todo.",
+                "fr": "N'aie pas peur, je... j'aime juste exprimer mon amour pour les chats de cette façon.",
+                "ja": "あまり気にしないで？私はただ……ちょっと猫が好きすぎるだけで……",
+                "ko": "무서워하지 마세요. 전 그저 고양이에 대한 애정을 이렇게 표현하는 거뿐이거든요",
+                "th": "คุณไม่ต้องกลัวหรอกนะ มันก็แค่... วิธีแสดงความรักต่อแมวในแบบของฉันน่ะ ไม่มีอะไร",
+                "zh-Hans": "别害怕，我只是……喜欢这样表达对猫猫的喜爱。",
+                "zh-Hant": "別害怕，我只是……喜歡這樣表達對貓貓的喜愛。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich mag deinen Stil!",
+                    "en": "I like your style!",
+                    "es": "¡Me gusta tu estilo!",
+                    "fr": "Pas mal.",
+                    "ja": "わかる……！",
+                    "ko": "저도 그런 표현 방식을 좋아해요",
+                    "th": "ฉันชอบสไตล์ของคุณนะ!",
+                    "zh-Hans": "我喜欢你的风格！",
+                    "zh-Hant": "我喜歡你的風格！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich verstehe... Ich kann nachvollziehen, woher du kommst.",
+                    "en": "I see... I can see where you're coming from.",
+                    "es": "Ya veo... Entiendo tu punto de vista.",
+                    "fr": "Je ne sais pas, mais ......",
+                    "ja": "わからなくもないけど……",
+                    "ko": "그렇게 보여요... 이해해요",
+                    "th": "เข้าใจแล้ว... ฉันพอจะเข้าใจความรู้สึกของคุณอยู่",
+                    "zh-Hans": "感受到了……能理解。",
+                    "zh-Hant": "感受到了……能理解。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, wirklich?! Ich hatte Angst, dass ich dich erschreckt habe, hehe... Ab jetzt bist du jederzeit willkommen, zu kommen und mit Lulu zu spielen! Du kannst mir ein paar Küsse geben, wenn du willst. Hier! Er mag dich.",
+                "en": "Oh, really?! I was worried that I gave you a startle, hehe... From now on, you're welcome to visit and play with Lulu any time you want! You can give me some kisses if you want. Here! He likes you.",
+                "es": "¡¿Oh, de verdad?! Estaba preocupada de que te asustara, jeje... ¡Desde ahora, {Male=bienvenido;Female=bienvenida} a visitar y jugar con Lulu cuando quieras! Puedes darme algunos besos si quieres. ¡Aquí! Le agradas.",
+                "fr": "Vraiment ? ! J'avais peur de te faire peur, hehe... tu es le bienvenu pour venir jouer avec Lulu à tout moment ! Tu peux aussi l'embrasser, tiens ! En fait, il aime ça.",
+                "ja": "ホント！？ドン引きされたらどうしようって思ったけど……えへへっ……そうだ、あなたもるると遊んであげて！キスしても大丈夫だよ。このコ、結構そういうの好きなんだ！",
+                "ko": "정말요?! 놀란 줄 알고 걱정했잖아요. 헤헤... 앞으로도 루루를 보러와줘요! 루루한테 뽀뽀해도 돼요! 사실 얜 뽀뽀를 굉장히 좋아하거든요",
+                "th": "โอ้ จริงรึ?! ฉันกังวลว่าจะทำให้คุณตกใจน่ะ ฮิฮิ... ตั้งแต่นี้ไปคุณแวะมาเล่นกับ Lulu ได้ทุกเมื่อเลยนะ! หรือจะมาจุ๊บฉันด้วยก็ได้ถ้าจะเอาแบบนั้น ดูสิ! เหมือนเขาจะชอบคุณนะ",
+                "zh-Hans": "真的吗？！我还担心会吓到你呢，嘿嘿……欢迎你以后常来找鲁鲁玩！也可以亲亲它，喏！其实它挺喜欢的。",
+                "zh-Hant": "真的嗎？！我還擔心會嚇到你呢，嘿嘿……歡迎你以後常來找魯魯玩！也可以親親它，喏！其實它挺喜歡的。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt, vielen Dank, dass du mir geholfen hast, Lulu zu finden! Ich sollte dich und Lulu verheiraten!",
+                "en": "Now, thank you so much for helping me find Lulu! I should have you and Lulu join in marriage!",
+                "es": "Ahora, ¡muchas gracias por ayudarme a encontrar a Lulu! ¡Debería unirte en matrimonio con Lulu!",
+                "fr": "Quoi qu'il en soit, merci d'avoir aidé à retrouver Lulu ! Laisse mon Lulu te montrer sa gratitude !",
+                "ja": "ともあれ、るるを探してくれてありがとう！そうだ、このコの世話はあなたに任せてもいい？",
+                "ko": "어쨌든, 루루를 되찾아줘서 고마워요! 루루를 마음껏 만져도 좋아요!",
+                "th": "เอาล่ะ ขอบใจมากนะที่ช่วยตามหา Lulu ให้ฉัน! ฉันควรจะจับคุณกับ Lulu แต่งงานกันเสียเลยดีไหมนะ!",
+                "zh-Hans": "不论怎样，谢谢你帮我把鲁鲁找回来！让我的鲁鲁对你以身相许吧！",
+                "zh-Hant": "不論怎樣，謝謝你幫我把魯魯找回來！讓我的魯魯對你以身相許吧！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hurra!",
+                    "en": "Huzzah!",
+                    "es": "¡Hurra!",
+                    "fr": "Yay !",
+                    "ja": "{Male=望むところだ！;Female=やったあ！}",
+                    "ko": "모처럼의 좋은 기회군요!",
+                    "th": "ไชโย!",
+                    "zh-Hans": "求之不得！",
+                    "zh-Hant": "求之不得！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "D-Das ist nicht nötig!",
+                    "en": "T-That won't be necessary!",
+                    "es": "E-Eso no será necesario!",
+                    "fr": "Non, merci !",
+                    "ja": "けっ、結構です！",
+                    "ko": "아, 아니에요. 됐어요!",
+                    "th": "นะ นั่นไม่จำเป็นหรอกนะ!",
+                    "zh-Hans": "不、不用了！",
+                    "zh-Hant": "不、不用了！"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "id": 880900008,
+  "key": "Bossrush活动引导任务",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Taktische Simulacra",
+    "en": "Tactical Simulacra",
+    "es": "Simulacro táctico",
+    "fr": "Analogue tactique",
+    "ja": "強音シミュ",
+    "ko": "모킹 전략",
+    "th": "ซิมูลาครายุทธวิธี",
+    "zh-Hans": "仿声战略",
+    "zh-Hant": "仿聲戰略"
+  },
+  "desc": {
+    "de": "Qinggong rekrutiert Freiwillige für ein Forschungsprojekt. Geh und sprich mit ihm, um mehr herauszufinden.",
+    "en": "Qinggong is recruiting volunteers for a research project. Talk to him to learn more.",
+    "es": "Qinggong está reclutando voluntarios para un proyecto de investigación. Ve a hablar con él para obtener más información.",
+    "fr": "Qinggong recrute des volontaires pour un projet de recherche. Allez lui parler pour en savoir plus.",
+    "ja": "青恭が実験プロジェクトのボランティアを募集しているようだ。彼に詳細を聞いてみよう。",
+    "ko": "청공이 한 실험 프로젝트를 위해 지원자를 모집하고 있는데, 가서 상황을 확인해 보세요",
+    "th": "ฉิงกงกำลังรับอาสาสมัครเข้าร่วมโครงการวิจัย คุยกับเขาเพื่อถามข้อมูลเพิ่มเติม",
+    "zh-Hans": "青恭正在为一个实验项目招揽志愿者，去找他了解一下情况吧。",
+    "zh-Hant": "青恭正在為一個實驗專案招攬志工，去找他瞭解一下情况吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Qinggong",
+        "en": "Talk to Qinggong",
+        "es": "Habla con Qinggong.",
+        "fr": "Parlez à Qinggong",
+        "ja": "青恭と会話する",
+        "ko": "청공과 대화하기",
+        "th": "คุยกับฉิงกง",
+        "zh-Hans": "与青恭交谈",
+        "zh-Hant": "與青恭交談"
+      },
+      "entities": [
+        {
+          "entityId": 11000460,
+          "mapId": 8,
+          "blueprintType": "NPC0260",
+          "name": "TsEntity_0260_157_青恭",
+          "areaId": 301,
+          "position": {
+            "x": -50399,
+            "y": 103963,
+            "z": 1392
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -46
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1Bossrush活动",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Rover, entschuldige mich.",
+                "en": "Rover, have you got a moment?",
+                "es": "Errante, ¿tienes un momento?",
+                "fr": "Nomade, avez-vous un moment ?",
+                "ja": "漂泊者、ちょっといいか？",
+                "ko": "실례합니다, 방랑자",
+                "th": "ผู้พเนจร คุณมีเวลาสักเดี๋ยวไหม?",
+                "zh-Hans": "漂泊者，打扰你一下。",
+                "zh-Hant": "漂泊者，打擾你一下。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Möchtest du an unserem neuesten Forschungsprojekt teilnehmen?",
+                "en": "Would you like to participate in our latest research project?",
+                "es": "¿Te gustaría participar en nuestro último proyecto de investigación?",
+                "fr": "Souhaitez-vous participer à notre dernier projet de recherche ?",
+                "ja": "もしよかったら、ある実験に協力してほしいんだ。",
+                "ko": "혹시 실험 프로젝트에 관심 있어요?",
+                "th": "คุณอยากเข้าร่วมในโครงการวิจัยล่าสุดของเราไหม?",
+                "zh-Hans": "你有没有兴趣参加一个实验项目？",
+                "zh-Hant": "你有沒有興趣參加一個實驗專案？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja.",
+                    "en": "Yes.",
+                    "es": "Sí.",
+                    "fr": "Oui.",
+                    "ja": "いいよ。",
+                    "ko": "흥미로운데요",
+                    "th": "เอาสิ",
+                    "zh-Hans": "有兴趣。",
+                    "zh-Hant": "有興趣。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nein.",
+                    "en": "No.",
+                    "es": "No.",
+                    "fr": "Non.",
+                    "ja": "ごめん。",
+                    "ko": "사양할게요",
+                    "th": "ไม่ล่ะ",
+                    "zh-Hans": "没兴趣。",
+                    "zh-Hant": "沒興趣。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Klasse. Lassen Sie mich unsere Forschung vorstellen.",
+                "en": "Great. Allow me to introduce our research.",
+                "es": "¡Genial! Permíteme presentarte nuestra investigación.",
+                "fr": "Parfait. Permettez-moi de vous présenter notre recherche.",
+                "ja": "ありがとう。それじゃあ、どんな実験か説明しよう。",
+                "ko": "잘 됐군요. 그렇다면 프로젝트에 대해 소개해 드릴게요",
+                "th": "เยี่ยมเลย ขอแนะนำงานวิจัยของเราหน่อยนะ",
+                "zh-Hans": "那太好了，我跟你介绍一下项目的内容吧。",
+                "zh-Hant": "那太好了，我跟你介紹一下專案的內容吧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte, gib uns eine Chance. Ich kann zuerst erklären, worum es bei dem Projekt geht.",
+                "en": "Please, give us a chance. I can explain what the project is about first.",
+                "es": "Por favor, danos una oportunidad. Me gustaría explicarte primero de qué trata el proyecto.",
+                "fr": "Donnez-nous une chance. Je peux expliquer de quoi il s'agit.",
+                "ja": "ひとまず、どんな実験か話だけでも聞いてくれ。",
+                "ko": "급할 것 없잖아요. 일단 프로젝트에 대해 들어본 뒤에 거절하는 게 어때요?",
+                "th": "โปรดลองให้โอกาสเราหน่อยนะ ต้องขออธิบายก่อนว่าโครงการนี้เกี่ยวกับอะไร",
+                "zh-Hans": "不用急着拒绝，我先给你介绍一下项目的情况吧。",
+                "zh-Hant": "不用急著拒絕，我先給你介紹一下專案的情况吧。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warst du schon mal auf dem simulierten Übungsgelände von Ausbilder Yhan?",
+                "en": "Have you been to Instructor Yhan's simulated training grounds?",
+                "es": "¿Has estado en los campos de entrenamiento simulado del Instructor Yhan?",
+                "fr": "Avez-vous déjà été à la zone d'entraînement simulé du moniteur Yhan ?",
+                "ja": "これまでに厳彦さんのところで、仮想訓練に参加したことはあるか？",
+                "ko": "엄언 형님의 시뮬레이션 영역에서 진행되는 훈련에 참가해 본 적 있어요?",
+                "th": "คุณเคยไปที่สนามฝึกจำลองของครูฝึก Yhan หรือยัง?",
+                "zh-Hans": "你有没有在严彦大哥那里的模拟领域参与过训练？",
+                "zh-Hant": "你有沒有在嚴彥大哥那裡的模擬領域參與過訓練？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Instruktor Yhan würde Simulationen für seine Männer organisieren, um gegen Feindeshologramme zu trainieren und ihre Kampffähigkeiten zu verbessern.",
+                "en": "Instructor Yhan would arrange simulations for his men to train against enemy holograms and improve their combat skills.",
+                "es": "El Instructor Yhan envía a los soldados a unas batallas simuladas para practicar luchando contra enemigos ficticios y mejorar sus habilidades de combate.",
+                "fr": "Le moniteur Yhan envoie les soldats dans ces batailles simulées pour qu'ils puissent s'entraîner contre des ennemis fictifs et améliorer leurs compétences de combat.",
+                "ja": "厳彦さんが用意してくれた仮想空間の中で作り出された敵と戦闘訓練をするんだ。戦士たちは、そこで戦闘テクニックを鍛えることができる。",
+                "ko": "형님은 전사들의 전투 기술을 강화하기 위해 시뮬레이션 영역에 진입하도록 하여 가상의 적과 싸우게 해요",
+                "th": "ครูฝึก Yhan จะจัดเตรียมสถานการณ์จำลองเอาไว้ เพื่อให้ทหารของเขาฝึกฝนกับภาพโฮโลแกรมของศัตรูและพัฒนาทักษะการต่อสู้ของพวกเขา",
+                "zh-Hans": "严彦大哥会安排战士们进入模拟领域中，击败其中出现的敌人，以此训练战士们的战斗技巧。",
+                "zh-Hant": "嚴彥大哥會安排戰士們進入模擬領域中，擊敗其中出現的敵人，以此訓練戰士們的戰鬥技巧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In letzter Zeit haben wir eine verbesserte \"Projektionstechnologie\" entwickelt, um noch stärkere Gegner zu simulieren.",
+                "en": "Recently, we have developed an improved \"projection\" technology to simulate even stronger enemies.",
+                "es": "Recientemente, hemos desarrollado una tecnología de «proyección» mejorada para simular enemigos aún más poderosos.",
+                "fr": "Récemment, nous avons développé une technologie de « projection » améliorée pour simuler des ennemis encore plus forts.",
+                "ja": "この頃、研究院では新たに「投影」技術というものの実用化に力を入れている。これを使えば仮想空間にさらに強い敵を生み出すことができるんだ。",
+                "ko": "최근에 연구원에서 한층 강력한 적을 만들어내는 「투영」이라는 새로운 기술을 시도 중이죠",
+                "th": "ล่าสุดเราได้พัฒนาเทคโนโลยี \"การฉายภาพ\" ที่ได้รับการปรับปรุงให้ดีขึ้นเพื่อจำลองศัตรูที่แข็งแกร่งกว่าเดิม",
+                "zh-Hans": "最近，研究院在尝试使用一种全新的“投影”技术，模拟出更加强大的敌人。",
+                "zh-Hant": "最近，研究院在嘗試使用一種全新的「投影」技術，模擬出更加强大的敵人。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit dieser Technologie können wir unseren Soldaten umfassendere Schulungen bieten. Das bedeutet bessere Ergebnisse für ihre gesamten Bedürfnisse.",
+                "en": "With this technology, we can provide more comprehensive training for our soldiers. This means better results for their overall needs.",
+                "es": "Con ella, podemos ofrecer a nuestros soldados una formación más completa, lo que significa mejores resultados en general.",
+                "fr": "Avec cette technologie, nous pouvons offrir une formation plus complète à nos soldats. Cela signifie de meilleurs résultats pour leurs besoins globaux.",
+                "ja": "この技術が実際に投入されれば、仮想訓練の内容もこれまで以上に豊富になると思う。訓練の効果も格段に上がるはずだ。",
+                "ko": "이 기술이 성공한다면 시뮬레이션 영역의 훈련 내용이 한결 다양해져서 훈련 효과를 극대화시킬 수 있을 거예요",
+                "th": "ด้วยเทคโนโลยีนี้ เราจะสามารถมอบการฝึกที่รอบด้านยิ่งขึ้นกับทหารของเราได้ ซึ่งหมายความว่าพวกเขาจะมีผลลัพธ์ที่ดีขึ้นตามความต้องการโดยรวมของพวกเขา",
+                "zh-Hans": "如果这项技术能够落地，往后模拟领域中的训练就能够更加丰富，极大地提高训练的效果。",
+                "zh-Hant": "如果這項技術能夠落地，往後模擬領域中的訓練就能夠更加豐富，極大地提高訓練的效果。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir befinden uns noch in den frühen Entwicklungsstadien, daher gibt es einige technische Details, die wir klären müssen.",
+                "en": "We're still in the early stages of development, so there are some technical details we need to work out.",
+                "es": "Todavía estamos en las primeras etapas de desarrollo, por lo que hay algunos detalles técnicos que debemos resolver.",
+                "fr": "Nous en sommes encore aux premiers stades de développement, il y a donc quelques détails techniques à régler.",
+                "ja": "でも「投影」技術はまだテスト段階だから、細かいところを色々と改善しないといけない。",
+                "ko": "하지만 지금 연구원의 시뮬레이션 기술은 여전히 테스트 단계에요. 기술적으로 개선해야 할 점도 잔뜩이죠",
+                "th": "ตอนนี้เรายังอยู่ในช่วงเริ่มต้นของการพัฒนา ดังนั้นจึงยังมีรายละเอียดทางเทคนิคบางอย่างที่เราจะต้องจัดการให้เรียบร้อย",
+                "zh-Hans": "但现在这个节点，研究院的模拟技术还在测试阶段，许多技术细节还需要完善。",
+                "zh-Hant": "但現在這個節點，研究院的模擬技術還在測試階段，許多技術細節還需要完善。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wärst du bereit, es für uns zu testen und uns bei unserer Forschung zu helfen?",
+                "en": "Would you be willing to test it out for us and help with our research?",
+                "es": "¿Estarías {Male=dispuesto;Female=dispuesta} a probarla y ayudarnos con nuestra investigación?",
+                "fr": "Accepteriez-vous de la tester pour nous et d'aider à notre recherche ?",
+                "ja": "だからあなたにテストに参加してもらいたいんだ。最初のテスターとしてお願いできないか？",
+                "ko": "프로젝트의 연구를 돕는 첫 번째 테스터가 되고 싶지 않아요?",
+                "th": "คุณช่วยมาทดสอบให้เราและช่วยเราวิจัยหน่อยได้ไหม?",
+                "zh-Hans": "你愿意成为第一批测试者，来帮助项目的研究吗？",
+                "zh-Hant": "你願意成為第一批測試者，來幫助專案的研究嗎？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überlass es mir.",
+                    "en": "Sure.",
+                    "es": "No hay problema.",
+                    "fr": "D'accord.",
+                    "ja": "{Male=任せてくれ。;Female=任せて。}",
+                    "ko": "맡겨만 주세요",
+                    "th": "ได้แน่นอน",
+                    "zh-Hans": "交给我吧。",
+                    "zh-Hant": "交給我吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Was habe ich davon?",
+                    "en": "What's in it for me?",
+                    "es": "¿Qué gano yo con esto?",
+                    "fr": "Qu'y gagne-je ?",
+                    "ja": "お礼は？",
+                    "ko": "무슨 혜택이라도 있나요?",
+                    "th": "แล้วฉันจะได้อะไร?",
+                    "zh-Hans": "有没有什么好处？",
+                    "zh-Hant": "有沒有什麼好處？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich wusste, dass du die richtige Person zum Reden bist. Ich habe dir die Koordinaten geschickt. Danke für deine Hilfe!",
+                "en": "I knew you were the right person to talk to. I've sent you the coordinates. Thank you for your help!",
+                "es": "Sabía que eras con quien tenía que hablar. Te he enviado las coordenadas. ¡Gracias por tu ayuda!",
+                "fr": "Je savais que vous étiez la bonne personne à qui parler. Je vous ai envoyé les coordonnées. Merci pour votre aide !",
+                "ja": "あなたなら引き受けてくれると思ってたよ。テストを行う場所は送っておいた。それじゃあ、がんばって。",
+                "ko": "역시나 제대로 물어봤어요! 프로젝트 장소를 전송해 드렸어요. 행운을 빌어요",
+                "th": "ฉันคิดถูกจริงๆ ที่ลองมาถามคุณ ฉันส่งพิกัดไปให้คุณแล้ว ขอบคุณที่ช่วยเหลือนะ!",
+                "zh-Hans": "我果然没问错人。项目的地点我已经发送给你了，祝你测试顺利。",
+                "zh-Hant": "我果然沒問錯人。 專案的地點我已經發送給你了，祝你測試順利。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du wirst es wissen, sobald du dort bist. Vertrau mir, es wird deine Zeit wert sein.",
+                "en": "You'll know once you get there. Trust me, it's gonna be worth your time.",
+                "es": "Lo sabrás una vez que llegues allí. Merece la pena, confía en mí.",
+                "fr": "Vous le saurez une fois sur place. Croyez-moi, ça vaudra le coup.",
+                "ja": "テストを行う場所に行けば分かるよ。大丈夫、損はさせないから。",
+                "ko": "가보면 알 거예요. 절 믿어요, 절대 실망시키지 않을 테니까요",
+                "th": "พอไปถึงแล้วคุณจะรู้เอง เชื่อฉันเถอะ รับรองว่าคุ้มค่ากับเวลาของคุณแน่นอน",
+                "zh-Hans": "等你去到那里就会知道了，相信我，不会让你失望的。",
+                "zh-Hant": "等你去到那裡就會知道了，相信我，不會讓你失望的。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 952,
+                "name": {
+                  "zh-Hans": "青恭"
+                },
+                "entity": {
+                  "entityId": 11000460,
+                  "mapId": 8,
+                  "blueprintType": "NPC0260",
+                  "name": "TsEntity_0260_157_青恭",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50399,
+                    "y": 103963,
+                    "z": 1392
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -46
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche nach dem Forschungsprojektanlage",
+        "en": "Check the research project Qinggong talked about",
+        "es": "Revisa el proyecto de investigación del que habló Qinggong.",
+        "fr": "Cherchez le projet de recherche mentionné par Qinggong",
+        "ja": "実験場所を探す",
+        "ko": "청공이 말한 실험 프로젝트 찾기",
+        "th": "ตรวจสอบโครงการวิจัยที่ฉิงกงพูดถึง",
+        "zh-Hans": "寻找青恭所说的实验项目",
+        "zh-Hant": "尋找青恭所說的實驗專案"
+      },
+      "entities": [
+        {
+          "entityId": 200900015,
+          "mapId": 8,
+          "blueprintType": "Quest129",
+          "name": "TsEntity_任务_公告板_城市_bossrush",
+          "areaId": 301,
+          "position": {
+            "x": -33873,
+            "y": 97538,
+            "z": 1890
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -135
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1Bossrush活动",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Das sollte das Projektionsding sein, von dem Qinggong sprach... Ich sollte es ausprobieren.",
+                "en": "This should be the projection thing Qinggong was talking about... I should try it out.",
+                "es": "Esto debe ser la proyección de la que hablaba Qinggong... Debería probarla.",
+                "fr": "Ça doit être la projection dont Qinggong parlait... Je devrais l'essayer.",
+                "ja": "青恭が言っていた実験が行われているのはここかな……中に入ってみよう。",
+                "ko": "청공이 말한 실험 프로젝트인가 보군... 들어가서 살펴봐야겠어",
+                "th": "นี่น่าจะเป็นการฉายภาพที่ฉิงกงพูดถึง... ฉันควรลองดูหน่อย",
+                "zh-Hans": "这应该就是青恭说的实验项目了……进去看看吧。",
+                "zh-Hant": "這應該就是青恭說的實驗專案了……進去看看吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

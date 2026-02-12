@@ -1,0 +1,1332 @@
+{
+  "id": 880900002,
+  "key": "转盘第二天（玩法连电路）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo-Kampagne II",
+    "en": "Lollo Campaign II",
+    "es": "Campaña Lollo II",
+    "fr": "Projet Loulou II",
+    "ja": "ブブ企画・その二",
+    "ko": "무무 기획 · II",
+    "th": "แคมเปญลอลโล่ II",
+    "zh-Hans": "呜呜企划·二",
+    "zh-Hant": "嗚嗚企劃·二"
+  },
+  "desc": {
+    "de": "Du hast eine neue Lollo Fixit Bestellung. Bitte erfülle sie rechtzeitig.",
+    "en": "You have a new \"Lollo Fixit\" order. Please fulfill it in time.",
+    "es": "Tienes un nuevo pedido de \"Reparaciones Lollo\". Por favor, cúmplelo a tiempo.",
+    "fr": "Vous avez une nouvelle commande « Loulou Réparateur ». Veuillez la remplir à temps.",
+    "ja": "ピロリン！新しい「ブブスピード修理」依頼です、すぐに対応に向かいましょう！",
+    "ko": "신규 「무무 수리」 주문 1건이 추가됐습니다. 제때 방문하여 수리해 주세요~",
+    "th": "คุณได้รับคำสั่ง \"นักซ่อมลอลโล่\" ใหม่แล้ว โปรดไปจัดการให้ทันเวลา",
+    "zh-Hans": "您有一份新的「呜呜闪修」订单，请及时上门接单~",
+    "zh-Hant": "您有一份新的「嗚嗚閃修」訂單，請及時上門接單~"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frag Maji, was als nächstes zu tun ist",
+        "en": "Onboard yourself with Maji's business idea today",
+        "es": "Embárcate hoy con la idea de negocio de Maji.",
+        "fr": "Impliquez-vous dans l'idée d'entreprise de Maji aujourd'hui",
+        "ja": "業務のディテールについて馬計と会話する",
+        "ko": "마현과 업무 디테일을 토론하기",
+        "th": "ทำความเข้าใจกับไอเดียธุรกิจในวันนี้ของ Maji",
+        "zh-Hans": "和马计对齐业务颗粒度",
+        "zh-Hant": "和馬計對齊業務顆粒度"
+      },
+      "entities": [
+        {
+          "entityId": 880900010,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端",
+          "areaId": 10,
+          "position": {
+            "x": 37930,
+            "y": 271329,
+            "z": 4128
+          },
+          "rotation": {
+            "x": 0,
+            "y": -5,
+            "z": 24
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900027,
+          "mapId": 8,
+          "blueprintType": "Quest019",
+          "name": "TsEntity_任务_货车2",
+          "areaId": 10,
+          "position": {
+            "x": 37966,
+            "y": 271225,
+            "z": 3958
+          },
+          "rotation": {
+            "x": 5,
+            "y": 0,
+            "z": -60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein neues Geschäft, das perfekt zu dir passt: „Lollo-Reparatur“.",
+                "en": "A new business that suits just your capability: \"Lollo Fixit.\"",
+                "es": "Es un negocio que te viene como anillo al dedo: «Reparaciones Lollo».",
+                "fr": "Un nouveau business qui convient à tes capacités : « Loulou Fixit »",
+                "ja": "君にうってつけの新サービス──「ブブスピード修理」。",
+                "ko": "방랑자를 위해서 준비한 신규 업무—— 「무무 수리」예요",
+                "th": "ธุรกิจใหม่ที่เหมาะกับความสามารถของคุณ: \"ลอลโล่สารพัดช่าง\"",
+                "zh-Hans": "为你量身定制的新业务——「呜呜闪修」。",
+                "zh-Hant": "為你量身定制的新業務——「嗚嗚閃修」。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Reparateur Ro zu Ihren Diensten.",
+                    "en": "Repairperson Rover at your service.",
+                    "es": "{Male=Reparador;Female=Reparadora} Errante a su servicio.",
+                    "fr": "{Male=Réparateur;Female=Réparatrice} Nomma, à votre service.",
+                    "ja": "わたくし漂ちゃんが、誠心誠意を込めてサービスさせていただきます。",
+                    "ko": "최선을 다해 서비스할게요",
+                    "th": "ช่างซ่อมพเนจรพร้อมให้บริการแล้ว",
+                    "zh-Hans": "漂师傅为您服务。",
+                    "zh-Hant": "漂師傅為您服務。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich habe gehört, du hast allein viele Rätsel in der Wildnis gelöst, sogar die von GSK. Das sollte also kein Problem für dich sein.",
+                "en": "I heard you fixed a lot of puzzles in the wild alone, including even those left by CSC. You should find no problem doing this job.",
+                "es": "He oído que arreglaste muchos mecanismos por tu cuenta ahí fuera, incluso los de la Corte Jiting, así que este trabajo debería ser pan comido.",
+                "fr": "J'ai entendu dire que tu as résolu beaucoup de casse-têtes dans la nature, y compris ceux laissés par les Savantaes. Ce travail pour toi serait un jeu d'enfant.",
+                "ja": "君はそこらへんにあるいろんなギミック、果ては稷廷の遺物の謎解きまでしたって聞いたよ。きっと経験豊富なんじゃない？",
+                "ko": "제가 듣기론 홀로 야외에서 크고 작은 기관들과 직정이 남긴 수수께끼를 혼자서 처리했다고 하던데, 분명 수리 경험이 엄청나겠죠?",
+                "th": "ผมได้ยินมาว่าคุณแก้ปริศนาได้มากมายที่นอกเมืองตามลำพัง แม้แต่ปริศนาที่สภาซาวานเทย์ทิ้งไว้ สำหรับคุณงานนี้น่าจะเคี้ยวหมูเลยล่ะ",
+                "zh-Hans": "听说你独自搞定了野外大大小小的机关，还有稷廷留下的迷之装置，应该很有机修经验。",
+                "zh-Hant": "聽說你獨自搞定了野外大大小小的機關，還有稷廷留下的迷之裝置，應該很有機修經驗。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eines der schlimmsten Dinge auf Reisen ist der plötzliche Ausfall von Geräten. Zum Beispiel Pannen von Kurier-LKWs oder Kurzschlüsse bei elektrischen Schlössern von Paketboxen ...",
+                "en": "One of the worst nightmares during travels is the sudden breakdown of devices. For example, courier truck failures, short circuits of electric locks on courier boxes...",
+                "es": "Una de las peores pesadillas durante los viajes es que un aparato se estropee de repente; como averías de las furgonetas de reparto, cortocircuitos de las cerraduras electrónicas de las cajas de mensajería...",
+                "fr": "L'un des pires cauchemars pendant les voyages est la panne soudaine des appareils. Par exemple, les pannes de camions de courrier, les courts-circuits des serrures électriques sur les boîtes de courrier...",
+                "ja": "外出で何より心配なのは、手持ちのデバイスが突然フリーズしちゃうことだよね。",
+                "ko": "외출할 때, 가장 무서운 건 휴대 중인 설비가 먹통이 되는 거잖아요. 물류 차가 고장 났다든지, 물류 컨테이너의 전자 잠금장치가 합선되었다든지...",
+                "th": "หนึ่งในฝันร้ายที่สุดระหว่างการเดินทางคือมีอุปกรณ์พังกะทันหัน อย่างเช่น รถบรรทุกส่งของขัดข้อง ไฟฟ้าลัดวงจรที่ล็อกตู้ไปรษณีย์...",
+                "zh-Hans": "出门在外，最怕的就是随行的设备突然宕机，像什么物流车抛锚、物流箱的电子锁短路……",
+                "zh-Hant": "出門在外，最怕的就是隨行的設備突然宕機，像什麼物流車拋錨、物流箱的電子鎖短路……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was würdest du als erfahrener Reparateur dagegen tun?",
+                "en": "What would you do as an experienced repairperson to address these issues?",
+                "es": "Como {Male=reparador experto;Female=reparadora experta}, ¿qué harías para solucionar esos problemas?",
+                "fr": "Que ferais-tu en tant qu'{Male=un réparateur expérimenté;Female=une réparatrice expérimentée} pour résoudre ces problèmes ?",
+                "ja": "配送車が動かなくなったとか、物流のコンテナのパネルがショートしたとか……。",
+                "ko": "경험이 풍부한 수리 전문가로서, 방랑자는 이러한 고장을 어떻게 처리할 예정이죠?",
+                "th": "ในฐานะช่างซ่อมที่มีประสบการณ์ คุณจะทำอะไรเพื่อแก้ไขปัญหาพวกนี้?",
+                "zh-Hans": "作为经验丰富的闪修专家，你会如何处理这类故障呢？",
+                "zh-Hant": "作為經驗豐富的閃修專家，你會如何處理這類故障呢？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Draufhauen.",
+                    "en": "Knock it hard.",
+                    "es": "Darles un buen golpe.",
+                    "fr": "Frapper fort.",
+                    "ja": "そんな時は一発お見舞い！叩けば直る！",
+                    "ko": "기계는 때리면 다 고쳐져요",
+                    "th": "ทุบแรงๆ",
+                    "zh-Hans": "大力敲打出奇迹。",
+                    "zh-Hant": "大力敲打出奇跡。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Neustarten.",
+                    "en": "Reboot.",
+                    "es": "Reiniciarlos.",
+                    "fr": "Redémarrer.",
+                    "ja": "システム再起動こそ万能なり。",
+                    "ko": "시스템을 재실행해서 문제를 해결해야죠",
+                    "th": "รีบู๊ตเครื่อง",
+                    "zh-Hans": "重启系统治百病。",
+                    "zh-Hant": "重啓系統治百病。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ha, dann könnte ich auch ein Experte werden.",
+                "en": "Ha, in that case, I can make an expert myself.",
+                "es": "Ja, en ese caso yo también podría ser un experto.",
+                "fr": "Ha, dans ce cas, je peux devenir un expert moi-même.",
+                "ja": "それ以外の3つめの案にするよ。",
+                "ko": "그럼 저도 전문가가 될 수 있겠네요",
+                "th": "ฮ่า ถ้าอย่างนั้น ผมก็เป็นผู้เชี่ยวชาญได้เหมือนกันสิ",
+                "zh-Hans": "那我也能当专家了。",
+                "zh-Hant": "那我也能當專家了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ding! Du hast einen neuen Reparaturauftrag. Bitte erfülle den Auftrag rechtzeitig.",
+                "en": "Ding! You have a new repair order. Please fulfill the order in time.",
+                "es": "¡Ding! Tienes un nuevo pedido de reparación. Por favor, completa el pedido a tiempo.",
+                "fr": "Ding ! Une nouvelle commande de réparation est arrivée. Veuillez visiter le client et exécuter la commande.",
+                "ja": "ピロリン！新しい依頼です、すぐにお客様のご自宅へ修理に向かいましょう！",
+                "ko": "딩동! 신규 수리 주문 1건이 추가됐습니다. 제때 방문하여 수리해 주세요~",
+                "th": "ติ๊ง! คุณได้รับคำสั่งซ่อมใหม่แล้ว โปรดไปจัดการให้ทันเวลา",
+                "zh-Hans": "叮！您有一份新的闪修订单，请及时上门维修~",
+                "zh-Hant": "叮！ 您有一份新的閃修訂單，請及時上門維修~"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900060,
+                "name": {
+                  "zh-Hans": "马计的终端"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein neuer Auftrag! Ein automatischer Kurier-LKW ist in den Tiefen des Jaulenden Sumpfs verschwunden. Ich schicke dir die Koordinaten.",
+                "en": "A new order! An automatic courier truck went missing in the depths of Whining Aix's Mire. I'll send you the coordinates.",
+                "es": "¡Tenemos un pedido! Se ha perdido una furgoneta de reparto autónoma en las profundidades del Pantano de Aix. Voy a enviarte las coordenadas.",
+                "fr": "Voici un nouveau boulot ! Un camion de courrier automatique a disparu à la Tourbe piaulante. Je t'envoie les coordonnées.",
+                "ja": "仕事だよ、漂ちゃん！自動運転配送車の通信が、怨鳥の沼の奥で途絶えたんだ。位置情報を送るね。",
+                "ko": "주문이 들어왔어요! 울음새 늪 안쪽에서 자율 주행 물류 운송 차량의 연락이 끊어졌다고 해요. 위치를 공유해 드릴게요",
+                "th": "คำสั่งใหม่! รถบรรทุกส่งของอัตโนมัติหายไปในส่วนลึกของหนองปักษาร่ำไห้ ผมจะส่งพิกัดไปให้คุณนะ",
+                "zh-Hans": "来活儿了漂师傅！有一辆自动物流车在怨鸟泽深处失联了，我把定位发你。",
+                "zh-Hant": "來活兒了漂師傅！ 有一輛自動物流車在怨鳥澤深處失聯了，我把定位發你。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 4,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist gerade rechtzeitig hier. Der Fracht-LKW hat es heil nach Port Gunchao geschafft, ist aber kurz darauf komplett liegen geblieben.",
+                "en": "You're here just in time. The cargo truck made it to Port Gunchao in one piece, but it broke down completely shortly afterwards.",
+                "es": "Llegaste justo a tiempo. La furgoneta de reparto finalmente llegó al Puerto Gunchao, pero se averió poco después.",
+                "fr": "Vous arrivez juste à temps. Le camion de marchandises est arrivé à Port Gunchao en un seul morceau, mais il est tombé en panne juste après.",
+                "ja": "ちょうど良かった。配送車だけど、無事に鯀巣の港に着いたよ。着いた瞬間完全に壊れちゃったけどね。",
+                "ko": "마침 잘 왔어요. 물류 운송 차량이 안정적으로 곤소항까지 갔다고 해요. 비록 도착하자마자 완전히 고장 났다고 하긴 하지만요",
+                "th": "คุณมาถึงทันเวลาพอดี รถส่งของมาถึงท่าเรือกุ่นเฉาอย่างปลอดภัย แต่ไม่นานมันก็พังเสียหายจนหมด",
+                "zh-Hans": "来得正好，物流车已经平稳到达了鲧巢港，虽然到达后不久就彻底坏了。",
+                "zh-Hant": "來得正好，物流車已經平穩到達了鯀巢港，雖然到達後不久就徹底壞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier ist dein Lohn für heute. Du hältst das Momentum für morgen am Laufen, okay?",
+                "en": "Here's your pay for today. You keep that momentum rolling for tomorrow, all right?",
+                "es": "Aquí tienes tu paga de hoy. Mantén ese impulso para mañana, ¿vale?",
+                "fr": "Voici votre paie pour aujourd'hui. Continuez sur cette lancée pour demain, d'accord ?",
+                "ja": "はい、これは今日の報酬ね。明日もよろしく頼むよ。",
+                "ko": "이건 오늘의 보수에요. 내일도 잘 부탁드릴게요",
+                "th": "นี่เป็นค่าจ้างของคุณในวันนี้ พรุ่งนี้เรามาลุยงานกันต่อตอนกำลังไหลลื่นแบบนี้เลยนะ โอเคนะ?",
+                "zh-Hans": "这是今天的报酬，明天还得继续拜托你了。",
+                "zh-Hant": "這是今天的報酬，明天還得繼續拜託你了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 4,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Hier bist du. Der LKW ist erfolgreich im Hafen Gunchao angekommen, aber kurz danach komplett ausgefallen.",
+                "en": "Here you are. The truck has successfully arrived at Port Gunchao, though not long after it broke down completely.",
+                "es": "Llegas justo a tiempo. La furgoneta llegó con éxito a Puerto Gunchao, aunque se averió por completo poco después.",
+                "fr": "Voilà. Le camion est bien arrivé au Port Gunchao, bien qu'il ait complètement cassé peu de temps après.",
+                "ja": "ちょうど良かった。配送車だけど、無事に鯀巣の港に着いたよ。着いた瞬間完全に壊れちゃったけどね。",
+                "ko": "마침 잘 왔어요. 물류 운송 차량이 안정적으로 곤소항까지 갔다고 해요. 비록 도착하자마자 완전히 고장 났다고 하긴 하지만요",
+                "th": "มาแล้วเหรอ รถบรรทุกมาถึงท่าเรือกุ่นเฉาเรียบร้อยแล้ว แต่ไม่นานก็พังเสียหายหมดเลย",
+                "zh-Hans": "来得正好，物流车已经平稳到达了鲧巢港，虽然到达后不久就彻底坏了。",
+                "zh-Hant": "來得正好，物流車已經平穩到達了鯀巢港，雖然到達後不久就徹底壞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist dein Lohn für heute. Ich sehe dich morgen wieder.",
+                "en": "This is your pay today. I will welcome you tomorrow.",
+                "es": "Esta es tu paga de hoy. Nos vemos mañana.",
+                "fr": "Voici ton salaire d'aujourd'hui, à demain !",
+                "ja": "はい、これは今日の報酬ね。明日もよろしく頼むよ。",
+                "ko": "이건 오늘의 보수예요. 내일도 잘 부탁드려요",
+                "th": "นี่คือค่าจ้างของคุณสำหรับวันนี้ พรุ่งนี้ผมจะมารอต้อนรับคุณ",
+                "zh-Hans": "这是今天的报酬，明天还得继续拜托你了。",
+                "zh-Hant": "這是今天的報酬，明天還得繼續拜託你了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, übrigens, ein Kollege aus Hafen Gunchao hat gemeldet, dass etwas im LKW fehlt.",
+                "en": "Oh, right, a coworker at Port Gunchao reported that something was missing in the truck.",
+                "es": "Por cierto, un compañero en Puerto Gunchao ha informado de que a la furgoneta le faltaba algo.",
+                "fr": "Ah, oui, un collègue au Port Gunchao a signalé qu'il manquait quelque chose dans le camion.",
+                "ja": "そうだ、鯀巣の港にいる同僚が、配送車のあるものが見当たらないって言っててね……。",
+                "ko": "아, 맞다. 곤소항의 동료가 물류 운송 차량에 뭔가 빠져있다고 하던데...",
+                "th": "อ้อ ใช่ เพื่อนร่วมงานที่ท่าเรือกุ่นเฉาแจ้งมาว่ามีของบางอย่างในรถบรรทุกหายไป",
+                "zh-Hans": "对了，鲧巢港的同事说，物流车里似乎少了点东西……",
+                "zh-Hant": "對了，鯀巢港的同事說，物流車裡似乎少了點東西……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was fehlt?",
+                    "en": "What was missing?",
+                    "es": "¿Qué le faltaba?",
+                    "fr": "Qu'est-ce qui manquait ?",
+                    "ja": "何が見当たらないって？",
+                    "ko": "뭐가 빠져있는데요?",
+                    "th": "มีอะไรหายไปเหรอ?",
+                    "zh-Hans": "少了什么？",
+                    "zh-Hant": "少了什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Der Co-Pilot ist verschwunden. Hast du eine Ahnung?",
+                "en": "The copilot's missing. You got any idea?",
+                "es": "El copiloto. ¿Tienes alguna idea de por qué?",
+                "fr": "Le copilote au siège passager. Vous avez une idée ?",
+                "ja": "助手席にいたナビゲーターがいなくなってたんだってさ。何か知ってる？",
+                "ko": "조수석에 있던 네비게이터가 사라졌다고 해요. 뭔가 알고 계시나요?",
+                "th": "ผู้ช่วยคนขับหายไป คุณพอจะรู้เรื่องนี้ไหม?",
+                "zh-Hans": "副驾驶座上的领航员不见了，你有什么头绪吗？",
+                "zh-Hant": "副駕駛座上的領航員不見了，你有什麼頭緒嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde das defekte automatisierte Logistikfahrzeug",
+        "en": "Find the malfunctioning automated logistics vehicle",
+        "es": "Encuentra el vehículo logístico automatizado defectuoso.",
+        "fr": "Trouvez le véhicule logistique automatisé défectueux",
+        "ja": "故障した配送車を調べる",
+        "ko": "고장난 자율 주행 물류 운송 차량 찾기",
+        "th": "ค้นหายานพาหนะส่งของอัตโนมัติที่ทำงานผิดปกติ",
+        "zh-Hans": "找到宕机的自动物流车",
+        "zh-Hant": "找到宕機的自動物流車"
+      },
+      "entities": [
+        {
+          "entityId": 880900010,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端",
+          "areaId": 10,
+          "position": {
+            "x": 37930,
+            "y": 271329,
+            "z": 4128
+          },
+          "rotation": {
+            "x": 0,
+            "y": -5,
+            "z": 24
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {},
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "de": "Hau drauf.",
+                    "en": "Punch it.",
+                    "es": "Darle un puñetazo.",
+                    "fr": "Frapper fort.",
+                    "ja": "思いっきり叩く。",
+                    "ko": "세게 때린다",
+                    "th": "ต่อยมัน",
+                    "zh-Hans": "大力敲打。",
+                    "zh-Hant": "大力敲打。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Neustart des Bedienfelds.",
+                    "en": "Reboot the control panel.",
+                    "es": "Reiniciar el panel de control.",
+                    "fr": "Redémarrer le tableau de bord.",
+                    "ja": "パネルを再起動する。",
+                    "ko": "메인보드를 재부팅한다",
+                    "th": "รีบู๊ตแผงควบคุม",
+                    "zh-Hans": "重启面板。",
+                    "zh-Hant": "重啓面板。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Aufprall erkannt, Aufprall erkannt. Co-Pilot wird in 3141,5926 Sekunden ausgestoßen ...",
+                "en": "Impact detected, impact detected. Ejecting copilot in 3141.5926 seconds...",
+                "es": "Impacto detectado. Impacto detectado. Eyectando al copiloto 3141.5926 segundos...",
+                "fr": "Impact détecté, impact détecté. Éjection du copilote dans 3141.5926 secondes...",
+                "ja": "衝突を検出、衝突を検出、3141.5926秒後に助手席のナビゲーターを射出する……。",
+                "ko": "충격이 감지됐습니다. 충격이 감지됐습니다. 3141.5926초 후에 조수석의 네비게이터를 밖으로 발사합니다...",
+                "th": "ตรวจพบแรงกระแทก ตรวจพบแรงกระแทก กำลังดีดตัวผู้ช่วยคนขับออกใน 3,141.5926 วินาที...",
+                "zh-Hans": "检测到撞击，检测到撞击，3141.5926秒后副驾领航员将弹射出舱……",
+                "zh-Hant": "檢測到撞擊，檢測到撞擊，3141.5926秒後副駕領航員將彈射出艙……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900061,
+                "name": {
+                  "zh-Hans": "故障的物流车"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Reiseziel ... Rinascita.",
+                "en": "Traveling to... Rinascita.",
+                "es": "Viajando a... Rinascita.",
+                "fr": "En route pour... Rinascita.",
+                "ja": "現在の目的地は──リナシータ。",
+                "ko": "리나시타——로 출발합니다",
+                "th": "กำลังเดินทางไป... รินาซิตา",
+                "zh-Hans": "正在前往——黎那汐塔。",
+                "zh-Hant": "正在前往——黎那汐塔。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900061,
+                "name": {
+                  "zh-Hans": "故障的物流车"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Starte Reparatur.",
+                    "en": "Start repairing.",
+                    "es": "Iniciar reparación.",
+                    "fr": "Commencer la réparation.",
+                    "ja": "修理開始。",
+                    "ko": "수리를 시작한다",
+                    "th": "เริ่มการซ่อม",
+                    "zh-Hans": "开始维修。",
+                    "zh-Hant": "開始維修。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Repariere das Steuerungspanel des Logistikfahrzeugs",
+        "en": "Repair the control panel of the logistics courier",
+        "es": "Repara el panel de control del vehículo logístico.",
+        "fr": "Réparez le panneau de contrôle du Courrier logistique",
+        "ja": "配送車を修理する",
+        "ko": "물류 운송 차량의 제어판 수리하기",
+        "th": "ซ่อมแซมแผงควบคุมของรถส่งของ",
+        "zh-Hans": "修复物流车的控制面板",
+        "zh-Hant": "修復物流車的控制面板"
+      },
+      "entities": [
+        {
+          "entityId": 880900010,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端",
+          "areaId": 10,
+          "position": {
+            "x": 37930,
+            "y": 271329,
+            "z": 4128
+          },
+          "rotation": {
+            "x": 0,
+            "y": -5,
+            "z": 24
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Repariert, macht sich der Kurier-LKW langsam auf den Weg nach Hafen Gunchao.",
+                "en": "Repaired, the courier truck shakily makes its way to Port Gunchao.",
+                "es": "Después de repararla, la furgoneta de reparto llega tambaleándose hasta Puerto Gunchao.",
+                "fr": "Réparé, le camion de courrier tremblant se dirige vers le Port Gunchao.",
+                "ja": "修理が完了した配送車は、ガタボコと揺れながら鯀巣の港へと向かって行った。",
+                "ko": "수리가 완료된 물류 운송 차량은 휘청거리며 곤소항을 향해서 출발했다",
+                "th": "หลังจากที่ซ่อมแล้ว รถบรรทุกส่งของก็มุ่งหน้าไปยังท่าเรือกุ่นเฉาทั้งๆ ที่ยังโยกเยกไปมา",
+                "zh-Hans": "修好的物流车勉勉强强、颤颤巍巍地向着鲧巢港驶去。",
+                "zh-Hant": "修好的物流車勉勉强强、顫顫巍巍地向著鯀巢港駛去。"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bespreche das heutige Pilotgeschäft mit Maji",
+        "en": "Recap today's pilot business with Maji",
+        "es": "Revisa el negocio de prueba de hoy con Maji.",
+        "fr": "Récapituler les affaires pilotes d'aujourd'hui avec Maji",
+        "ja": "テスト業務について馬計に報告する",
+        "ko": "마현과 오늘의 시범 업무를 돌아보기",
+        "th": "ทบทวนธุรกิจนำร่องของวันนี้กับ Maji",
+        "zh-Hans": "和马计复盘今日的试点业务",
+        "zh-Hant": "和馬計復盤今日的試點業務"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 4,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist gerade rechtzeitig hier. Der Fracht-LKW hat es heil nach Port Gunchao geschafft, ist aber kurz darauf komplett liegen geblieben.",
+                "en": "You're here just in time. The cargo truck made it to Port Gunchao in one piece, but it broke down completely shortly afterwards.",
+                "es": "Llegaste justo a tiempo. La furgoneta de reparto finalmente llegó al Puerto Gunchao, pero se averió poco después.",
+                "fr": "Vous arrivez juste à temps. Le camion de marchandises est arrivé à Port Gunchao en un seul morceau, mais il est tombé en panne juste après.",
+                "ja": "ちょうど良かった。配送車だけど、無事に鯀巣の港に着いたよ。着いた瞬間完全に壊れちゃったけどね。",
+                "ko": "마침 잘 왔어요. 물류 운송 차량이 안정적으로 곤소항까지 갔다고 해요. 비록 도착하자마자 완전히 고장 났다고 하긴 하지만요",
+                "th": "คุณมาถึงทันเวลาพอดี รถส่งของมาถึงท่าเรือกุ่นเฉาอย่างปลอดภัย แต่ไม่นานมันก็พังเสียหายจนหมด",
+                "zh-Hans": "来得正好，物流车已经平稳到达了鲧巢港，虽然到达后不久就彻底坏了。",
+                "zh-Hant": "來得正好，物流車已經平穩到達了鯀巢港，雖然到達後不久就徹底壞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier ist dein Lohn für heute. Du hältst das Momentum für morgen am Laufen, okay?",
+                "en": "Here's your pay for today. You keep that momentum rolling for tomorrow, all right?",
+                "es": "Aquí tienes tu paga de hoy. Mantén ese impulso para mañana, ¿vale?",
+                "fr": "Voici votre paie pour aujourd'hui. Continuez sur cette lancée pour demain, d'accord ?",
+                "ja": "はい、これは今日の報酬ね。明日もよろしく頼むよ。",
+                "ko": "이건 오늘의 보수에요. 내일도 잘 부탁드릴게요",
+                "th": "นี่เป็นค่าจ้างของคุณในวันนี้ พรุ่งนี้เรามาลุยงานกันต่อตอนกำลังไหลลื่นแบบนี้เลยนะ โอเคนะ?",
+                "zh-Hans": "这是今天的报酬，明天还得继续拜托你了。",
+                "zh-Hant": "這是今天的報酬，明天還得繼續拜託你了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh mit Maji das heutige Pilotenprogramm durch",
+        "en": "Recap today's pilot business with Maji",
+        "es": "Revisa el negocio de prueba de hoy con Maji.",
+        "fr": "Récapituler les affaires pilotes d'aujourd'hui avec Maji",
+        "ja": "テスト業務について馬計に報告する",
+        "ko": "마현과 오늘의 시범 업무를 돌아보기",
+        "th": "ทบทวนธุรกิจนำร่องของวันนี้กับ Maji",
+        "zh-Hans": "和马计复盘今日的试点业务",
+        "zh-Hant": "和馬計復盤今日的試點業務"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 4,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Hier bist du. Der LKW ist erfolgreich im Hafen Gunchao angekommen, aber kurz danach komplett ausgefallen.",
+                "en": "Here you are. The truck has successfully arrived at Port Gunchao, though not long after it broke down completely.",
+                "es": "Llegas justo a tiempo. La furgoneta llegó con éxito a Puerto Gunchao, aunque se averió por completo poco después.",
+                "fr": "Voilà. Le camion est bien arrivé au Port Gunchao, bien qu'il ait complètement cassé peu de temps après.",
+                "ja": "ちょうど良かった。配送車だけど、無事に鯀巣の港に着いたよ。着いた瞬間完全に壊れちゃったけどね。",
+                "ko": "마침 잘 왔어요. 물류 운송 차량이 안정적으로 곤소항까지 갔다고 해요. 비록 도착하자마자 완전히 고장 났다고 하긴 하지만요",
+                "th": "มาแล้วเหรอ รถบรรทุกมาถึงท่าเรือกุ่นเฉาเรียบร้อยแล้ว แต่ไม่นานก็พังเสียหายหมดเลย",
+                "zh-Hans": "来得正好，物流车已经平稳到达了鲧巢港，虽然到达后不久就彻底坏了。",
+                "zh-Hant": "來得正好，物流車已經平穩到達了鯀巢港，雖然到達後不久就徹底壞了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist dein Lohn für heute. Ich sehe dich morgen wieder.",
+                "en": "This is your pay today. I will welcome you tomorrow.",
+                "es": "Esta es tu paga de hoy. Nos vemos mañana.",
+                "fr": "Voici ton salaire d'aujourd'hui, à demain !",
+                "ja": "はい、これは今日の報酬ね。明日もよろしく頼むよ。",
+                "ko": "이건 오늘의 보수예요. 내일도 잘 부탁드려요",
+                "th": "นี่คือค่าจ้างของคุณสำหรับวันนี้ พรุ่งนี้ผมจะมารอต้อนรับคุณ",
+                "zh-Hans": "这是今天的报酬，明天还得继续拜托你了。",
+                "zh-Hant": "這是今天的報酬，明天還得繼續拜託你了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, übrigens, ein Kollege aus Hafen Gunchao hat gemeldet, dass etwas im LKW fehlt.",
+                "en": "Oh, right, a coworker at Port Gunchao reported that something was missing in the truck.",
+                "es": "Por cierto, un compañero en Puerto Gunchao ha informado de que a la furgoneta le faltaba algo.",
+                "fr": "Ah, oui, un collègue au Port Gunchao a signalé qu'il manquait quelque chose dans le camion.",
+                "ja": "そうだ、鯀巣の港にいる同僚が、配送車のあるものが見当たらないって言っててね……。",
+                "ko": "아, 맞다. 곤소항의 동료가 물류 운송 차량에 뭔가 빠져있다고 하던데...",
+                "th": "อ้อ ใช่ เพื่อนร่วมงานที่ท่าเรือกุ่นเฉาแจ้งมาว่ามีของบางอย่างในรถบรรทุกหายไป",
+                "zh-Hans": "对了，鲧巢港的同事说，物流车里似乎少了点东西……",
+                "zh-Hant": "對了，鯀巢港的同事說，物流車裡似乎少了點東西……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was fehlt?",
+                    "en": "What was missing?",
+                    "es": "¿Qué le faltaba?",
+                    "fr": "Qu'est-ce qui manquait ?",
+                    "ja": "何が見当たらないって？",
+                    "ko": "뭐가 빠져있는데요?",
+                    "th": "มีอะไรหายไปเหรอ?",
+                    "zh-Hans": "少了什么？",
+                    "zh-Hant": "少了什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Der Co-Pilot ist verschwunden. Hast du eine Ahnung?",
+                "en": "The copilot's missing. You got any idea?",
+                "es": "El copiloto. ¿Tienes alguna idea de por qué?",
+                "fr": "Le copilote au siège passager. Vous avez une idée ?",
+                "ja": "助手席にいたナビゲーターがいなくなってたんだってさ。何か知ってる？",
+                "ko": "조수석에 있던 네비게이터가 사라졌다고 해요. 뭔가 알고 계시나요?",
+                "th": "ผู้ช่วยคนขับหายไป คุณพอจะรู้เรื่องนี้ไหม?",
+                "zh-Hans": "副驾驶座上的领航员不见了，你有什么头绪吗？",
+                "zh-Hant": "副駕駛座上的領航員不見了，你有什麼頭緒嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

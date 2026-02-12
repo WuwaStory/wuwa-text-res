@@ -1,0 +1,748 @@
+{
+  "id": 143900000,
+  "key": "[引导任务]_[乘霄山]_[山间琴音]",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Bergmelodien",
+    "en": "Mountain Melodies",
+    "es": "Melodías montañesas",
+    "fr": "Mélodies de la montagne",
+    "ja": "山に響く琴の音",
+    "ko": "산속의 멜로디",
+    "th": "ท่วงทำนองแห่งภูผา",
+    "zh-Hans": "山间琴音",
+    "zh-Hant": "山間琴音"
+  },
+  "desc": {
+    "de": "„Windpfeilen, Wasser plätschern, Vogelgezwitscher, alles hallt in den Melodien der Vergangenheit wider.“ Bringe die gesammelten Windspiele zu Xiange und erhalte verschiedene Belohnungen. Sammle die im Berg Firmament verstreuten Windspiele und lass die Musik wieder erklingen.",
+    "en": "\"Wind whistles, water purls, bird chirps, all echoed in the melodies of the past.\" Deliver the Windchimers you collect to Xian'ge and obtain various rewards. Collect the Windchimers scattered in Mt. Firmament and make the music play again.",
+    "es": "\"El sonido del viento, el agua y el canto de los pájaros resonaban en la sinfonía de recuerdos pasados.\"\nRecolecta Campanillas de viento y entrégalas a Xian'ge para obtener recompensas variosas.\nRecolecta las Campanillas de viento en el Monte Firmamento y deja que la melodía resuene de nuevo.",
+    "fr": "« Le vent siffle, l'eau gargouille, l'oiseau gazouille, tout se fait écho dans les mélodies du passé. » Livrez les Stabilisateurs du vent que vous collectez à Xian'ge et obtenez diverses récompenses. Collectez les Stabilisateurs du vent dispersés au Mont. Firmament et faites résonner la musique.",
+    "ja": "「風のざわめき、水のせせらぎ、鳥のさえずり、全てがかつての琴の音にこだまする。」「風止みの鈴」を集めて弦歌に渡すと、異なる報酬が獲得できる。乗霄山に散らばった「風止みの鈴」を集めて、琴の音を再びよみがえらせよう。",
+    "ko": "「바람, 물, 새소리, 이 모든 소리가 오래된 악기 사운드 속에 울려 퍼집니다.」 수집한 「정풍의 종」을 현가에게 제출하면 서로 다른 사례를 얻을 수 있습니다. 승소산 지역 곳곳에 흩어져 있는 「정풍의 종」을 수집하여 악기의 사운드를 되살리세요",
+    "th": "\"เสียงลมหวีด เสียงน้ำไหล นกร้องเพลง ทั้งหมดต่างสะท้อนเป็นท่วงทำนองของดีต\" ส่งกระดิ่งลมที่คุณเก็บได้ให้กับเสียนเกอและรับรางวัลหลากหลาย เก็บกระดิ่งลมที่กระจัดกระจายอยู่ในภูผาสวรรค์และให้เสียงเพลงดังขึ้นอีกครั้ง",
+    "zh-Hans": "“风声、水声、鸟鸣声，都回荡在旧日的琴音里。”将收集到的定风铎交予弦歌，可以获得不同的谢礼。收集散落在乘霄山的定风铎，让琴音再次绕梁吧。",
+    "zh-Hant": "「風聲、水聲、鳥鳴聲，都回蕩在舊日的琴音裡。」將收集到的定風鐸交予弦歌，可以獲得不同的謝禮。 收集散落在乘霄山的定風鐸，讓琴音再次繞梁吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche nach jemandem, der einen Windspielfänger braucht",
+        "en": "Look for someone who needs a Windchimer",
+        "es": "Busca a alguien que necesite una Campanilla de viento.",
+        "fr": "Chercher la personne qui s'intéresse au Stabilisateur du vent",
+        "ja": "「風止みの鈴」を集めている者を探す",
+        "ko": "정풍의 종 필요한 사람 찾기",
+        "th": "มองหาคนที่ต้องการกระดิ่งลม",
+        "zh-Hans": "寻找需要定风铎的人",
+        "zh-Hant": "尋找需要定風鐸的人"
+      },
+      "entities": [
+        {
+          "entityId": 898900207,
+          "mapId": 8,
+          "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+          "name": "TsEntity_0323_154_弦歌_站姿",
+          "areaId": 1613,
+          "position": {
+            "x": 226208,
+            "y": 307975,
+            "z": -5309
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -68
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_定风铎交付NPC",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, {Male=Herr;Female=Dame}! Würden Sie so nett sein und mir ein paar Minuten leihen? Entschuldigung für die Störung, aber haben Sie jemals ein glockenähnliches Objekt umgeben von musikalischen Noten in den Bergen gesehen?",
+                "en": "Hello, {Male=good sir;Female=good lady}! Would you be so kind as to lend me a few minutes? Sorry to bother you, but have you ever seen a bell-like object encircled by muscial notes in the mountains?",
+                "es": "¡Saludos, mi {Male=buen señor;Female=buena dama}! ¿Serías tan amable de dedicarme unos minutos? Querría saber si has visto alguna vez una especie de campana rodeada de notas musicales en las montañas.",
+                "fr": "Bonjour, {Male=Monsieur;Female=Dame} ! Pourriez-vous m'accorder quelques minutes ? Désolée de vous déranger, mais avez-vous déjà vu un objet en forme de cloche entouré de notes musicales dans les montagnes ?",
+                "ja": "よっ、お若いの！ちょっと待った。この山で、琴の音に囲まれた見た目が鈴にそっくりなものを見なかったかい？",
+                "ko": "잠시만요! 혹시 산에서 방울처럼 생기고, 거문고 소리가 나는 물건을 본 적이 있나요?",
+                "th": "สวัสดีค่ะ {Male=คุณผู้ชาย!;Female=ผู้หญิง!}ขอรบกวนเวลาสักครู่ได้ไหมคะ? ขอโทษที่รบกวนนะ แต่ว่าคุณเคยเห็นวัตถุคล้ายกระดิ่งที่ถูกล้อมด้วยโน้ตดนตรีบนภูเขาบ้างไหมคะ?",
+                "zh-Hans": "哟！这位少侠，您且留步。平日行走在这山间，您可有看到过一些长得像铃铛一样，看上去被琴音环绕的物件？",
+                "zh-Hant": "喲！ 這位少俠，您且留步。平日行走在這山間，您可有看到過一些長得像鈴鐺一樣，看上去被琴音環繞的物件？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das kommt mir bekannt vor.",
+                    "en": "It does ring a bell.",
+                    "es": "¿Una campana? Me suena.",
+                    "fr": "Ça me dit quelque chose.",
+                    "ja": "見た気がする。",
+                    "ko": "본 것 같아요",
+                    "th": "คุ้นๆ อยู่นะ",
+                    "zh-Hans": "好像见过。",
+                    "zh-Hant": "好像見過。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich kann mich nicht erinnern.",
+                    "en": "I don't recall.",
+                    "es": "Ni idea.",
+                    "fr": "Je ne me souviens pas.",
+                    "ja": "記憶にないけど。",
+                    "ko": "본 적 없어요",
+                    "th": "จำไม่ได้เลยแฮะ",
+                    "zh-Hans": "没有印象。",
+                    "zh-Hant": "沒有印象。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sieht es ähnlich aus wie diese Glocke, die an meiner Kleidung hängt?",
+                "en": "Does it look similar to this bell adorned on my clothes?",
+                "es": "¿Se parece a esta campana que adorna mi ropa?",
+                "fr": "Est-ce que ça ressemble à cette cloche sur mes vêtements ?",
+                "ja": "あたしの服についてる、こういう鈴じゃなかったかい？",
+                "ko": "제 옷에 달린 방울처럼 생겼나요?",
+                "th": "มันดูคล้ายกับกระดิ่งอันนี้ที่ประดับอยู่บนชุดของฉันไหมคะ?",
+                "zh-Hans": "是像我衣服上的这个铃铛一样的东西吗？",
+                "zh-Hant": "是像我衣服上的這個鈴鐺一樣的東西嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier, lass es mich dir zeigen. Es sieht aus wie diese Glocke, die an meiner Kleidung hängt.",
+                "en": "Here, let me show you. It looks like this bell adorned on my clothes.",
+                "es": "Claro, permíteme que te la muestre. Es como esta campana que adorna mi ropa.",
+                "fr": "Comme ça. Il ressemble à cette cloche sur mes vêtements.",
+                "ja": "ほら、あたしの服についてるこういう鈴だよ。",
+                "ko": "보세요, 제 옷에 달린 이 방울처럼 생긴 건데...",
+                "th": "เดี๋ยวฉันเอาให้ดูค่ะ มันคล้ายๆ กระดิ่งอันนี้ที่ประดับอยู่บนชุดของฉันเลยค่ะ",
+                "zh-Hans": "你看，大概类似于我衣服上的这个铃铛。",
+                "zh-Hant": "你看，大概類似於我衣服上的這個鈴鐺。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es heißt Windchimer, das eine Vielzahl von Geräuschen erfassen und bewahren kann, indem es sie in nutzbare Energie umwandelt. Vielleicht könnt ihr es euch als ein ausgeklügeltes Aufnahmegerät vorstellen, um besser zu verstehen, wie es funktioniert.",
+                "en": "It is called Windchimer, which can capture and preserve a variety of sounds, converting them into usable energy. Perhaps you can think of it as a sophisticated recorder to help you better understand how it works.",
+                "es": "Se llama Campanilla de viento, y puede capturar y conservar múltiples sonidos, convirtiéndolos en energía utilizable. Podría decirse que es como una sofisticada grabadora, para que lo entiendas mejor.",
+                "fr": "On l'appelle un Stabilisateurs de vent, il peut capturer et conserver une variété de sons, les convertissant en énergie utilisable. Vous pouvez le voir comme un enregistreur sophistiqué pour mieux comprendre son fonctionnement.",
+                "ja": "「風止みの鈴」って言ってね、音を記録してエネルギーに変えてくれるんだ。録音機みたいなものだよ。",
+                "ko": "「정풍의 종」이라고 하는 건데 소리를 담아뒀다가 에너지로 전환할 수 있어요. 일종의 녹음기같은 거예요",
+                "th": "มันเรียกว่ากระดิ่งลม ซึ่งสามารถดักจับและเก็บรักษาสารพัดเสียงไว้ได้ แล้วแปลงเป็นพลังงานที่นำไปใช้ประโยชน์ได้ ลองนึกภาพว่ามันเป็นเครื่องบันทึกเสียงขั้นสูงที่มีความซับซ้อนขึ้นก็ได้ จะได้เข้าใจการทำงานง่ายขึ้นค่ะ",
+                "zh-Hans": "这种东西叫「定风铎」。它可以存声留音，将这些声音转为能量。你就当它是个录音机吧。",
+                "zh-Hant": "這種東西叫「定風鐸」。它可以存聲留音，將這些聲音轉為能量。你就當它是個錄音機吧。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt viele Windklangspiele, die in den Bergen verstreut sind. Wenn du zufällig auf eines stößt, kannst du es läuten, um die \"Geräusche\" darin freizusetzen.",
+                "en": "There are many Windchimers scattered in the mountains. If you happen to find one, you may ring it to release the \"sounds\" within.",
+                "es": "Hay muchas Campanillas de viento dispersas en las montañas. Si encuentras alguna, puedes hacerla sonar para liberar los «sonidos» que contiene",
+                "fr": "Il y a de nombreux Stabilisateurs de vent dispersés dans les montagnes. Si tu en trouves un, tu peux le faire sonner pour libérer les « sons » qu'il contient.",
+                "ja": "「風止みの鈴」は山のあちこちにあって、鳴らすとその中の「音」を呼び起こすことができる。",
+                "ko": "산 곳곳에 흩어져 있는데 그걸 두드리면 그 속에 담긴 「소리」를 밖으로 끌어낼 수 있죠",
+                "th": "มีกระดิ่งลมกระจายอยู่หลายพื้นที่ตามภูเขา ถ้าคุณพบเห็น สามารถตีเพื่อให้มันปล่อย \"เสียง\" ที่เก็บอยู่ข้างในออกมาได้",
+                "zh-Hans": "它们分散在这山间各处，要是敲击它们，大概就能把其中的「声音」引出来。",
+                "zh-Hant": "它們分散在這山間各處，要是敲擊它們，大概就能把其中的「聲音」引出來。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und mit dem Terminal kannst du die umgewandelte Energie absorbieren.",
+                "en": "And with the Terminal, you can absorb the converted energy.",
+                "es": "y absorber la energía convertida con la Terminal.",
+                "fr": "Et avec la borne, on peut absorber l'énergie convertie.",
+                "ja": "ちょうどその時にデバイスがあれば、そのエネルギーはデバイスに吸収されるんだ。",
+                "ko": "이때 단말기가 있으면 그 에너지를 흡수할 수 있어요",
+                "th": "และยังสามารถใช้เทอร์มินัลเพื่อดูดพลังงานที่ถูกแปลงแล้วมาใช้งานได้ค่ะ",
+                "zh-Hans": "这时候要是有终端的话，就能将这些能量吸收掉了。",
+                "zh-Hant": "這時候要是有終端的話，就能將這些能量吸收掉了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe diese Gerätschaften gesammelt, um die Energie anzuhäufen, die zur Reparatur dieser Guqin verwendet werden kann. Bitte, schau es dir an.",
+                "en": "I've been collecting these gadgets to amass the energy, which can be used to repair this Guqin. Please, have a look at it.",
+                "es": "He estado recolectando esas cosas para acumular energía con la que reparar este Guqin. Por favor, échale un vistazo.",
+                "fr": "Je collecte ces gadgets pour accumuler de l'énergie, qui peut être utilisée pour réparer ce Guqin. Viens, regarde-le.",
+                "ja": "あたしゃ琴の修理のためにこいつをずっと集めててね。ごらん、これがその琴さ。",
+                "ko": "전 거문고를 고치려고 정풍의 종을 수집하고 있어요. 자, 이거 보세요",
+                "th": "ฉันกำลังรวบรวมอุปกรณ์พวกนี้เพื่อสะสมพลังงานแล้วนำมาซ่อมแซมกู่ฉินตัวนี้ ลองดูสิคะ",
+                "zh-Hans": "我一直在收集这些小玩意儿，为的是修补这把琴，你看看。",
+                "zh-Hant": "我一直在收集這些小玩意兒，為的是修補這把琴，你看看。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es ist ein schönes Stück.",
+                    "en": "It's a nice one.",
+                    "es": "Es un buen instrumento.",
+                    "fr": "Il est joli.",
+                    "ja": "{Male=素敵な琴だ。;Female=素敵な琴。}",
+                    "ko": "멋진데요",
+                    "th": "มันดูดีเลยนะ",
+                    "zh-Hans": "是把好琴。",
+                    "zh-Hant": "是把好琴。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es ist kaputt.",
+                    "en": "It's broken.",
+                    "es": "Está roto.",
+                    "fr": "Il est cassé.",
+                    "ja": "{Male=この琴、壊れてるな。;Female=この琴、壊れてるね。}",
+                    "ko": "심하게 망가졌네요",
+                    "th": "มันพังแล้วนี่",
+                    "zh-Hans": "这琴已经坏了。",
+                    "zh-Hant": "這琴已經壞了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe nicht das Geld, um es zu kaufen.",
+                    "en": "I don't have the money to buy it.",
+                    "es": "No tengo el dinero para comprarlo.",
+                    "fr": "Je n'ai pas l'argent pour l'acheter.",
+                    "ja": "{Male=琴を買うお金はないんだ。;Female=琴を買うお金はないの。}",
+                    "ko": "안 사요",
+                    "th": "ฉันไม่มีเงินพอจะซื้อมันนะ",
+                    "zh-Hans": "我没钱买。",
+                    "zh-Hant": "我沒錢買。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was für eine scharfe Beobachtungsgabe du hast! Wenn es mir gelingt, es zu reparieren, wird seine Melodie sicherlich über den Berg hinweg hallen! Nein, sogar darüber hinaus!",
+                "en": "What keen observation you have! If I manage to repair it, its melody will surely resonate across the mountain! No, even beyond!",
+                "es": "¡Qué observación tan aguda! Si logro repararlo, su melodía resonará por toda la montaña. ¡Qué digo, incluso más allá!",
+                "fr": "Quelle observation perspicace ! Si je parviens à le réparer, sa mélodie résonnera sûrement à travers la montagne ! Non, même au-delà !",
+                "ja": "あんた、見る目があるねぇ！修理さえできれば、<ano=よいん>余韻</ano>がはるか彼方まで響き渡る琴なんだよ！",
+                "ko": "안목이 있으시네요. 제대로 고치기만 하면 아름다운 음률을 마음껏 들을 수 있을 거예요!",
+                "th": "สายตาเฉียบแหลมมากค่ะ! ถ้าฉันซ่อมมันสำเร็จ ท่วงทำนองของมันจะดังก้องไปทั่วทั้งภูเขาแน่นอน! ไม่สิ อาจจะไกลกว่านั้นด้วยซ้ำ!",
+                "zh-Hans": "少侠好眼力！这琴若是修补好了，余音肯定能绕梁三柱不止！",
+                "zh-Hant": "少俠好眼力！ 這琴若是修補好了，餘音肯定能繞梁三柱不止！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tatsächlich, aber wenn ich es schaffe, es zu reparieren, wird seine Melodie sicherlich über den Berg hallen!",
+                "en": "Indeed, but if I manage to repair it, its melody will surely resonate across the mountain!",
+                "es": "En efecto, pero si logro repararlo, su melodía resonará por toda la montaña.",
+                "fr": "En effet, mais si je parviens à le réparer, sa mélodie résonnera sûrement à travers la montagne !",
+                "ja": "見くびっちゃいけないよ。修理さえできれば、<ano=よいん>余韻</ano>がはるか彼方まで響き渡る琴なんだよ！",
+                "ko": "비록 지금은 망가져 있지만 제대로 고치기만 하면 아름다운 음률을 마음껏 들을 수 있을 테니까요!",
+                "th": "นั่นน่ะสิคะ ถ้าฉันซ่อมมันสำเร็จ ท่วงทำนองของมันจะดังก้องไปทั่วทั้งภูเขาแน่นอน!",
+                "zh-Hans": "别看现在是把断弦琴，若是修补好了，那余音必然能绕梁三柱。",
+                "zh-Hant": "別看現在是把斷弦琴，若是修補好了，那餘音必然能繞梁三柱。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast mich falsch verstanden. Ich hatte nicht vor, es zu verkaufen.",
+                "en": "You got me wrong. I wasn't planning to sell it.",
+                "es": "Me temo que me has malinterpretado. No deseo venderlo.",
+                "fr": "Tu m'as mal compris. Je n'avais pas l'intention de le vendre.",
+                "ja": "あたしだって売る気はないよ。",
+                "ko": "팔 생각은 저도 없어요",
+                "th": "คุณเข้าใจผิดแล้วค่ะ ฉันไม่ได้จะขายมันหรอก",
+                "zh-Hans": "我也没想卖掉这琴啊。",
+                "zh-Hant": "我也沒想賣掉這琴啊。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "So kaputt es auch ist, ich kann immer noch die unzähligen Geschichten spüren, die es in sich trägt, und genau deshalb lohnt es sich, es zu reparieren.",
+                "en": "However broken it is, I can still feel the myriad of stories it carries, which is precisely why repairing it is worthwhile.",
+                "es": "Por muy roto que esté, aún puedo sentir la infinidad de historias que lleva consigo, y es precisamente por ello por lo que vale la pena repararlo.",
+                "fr": "Aussi cassé soit-il, je peux encore sentir les innombrables histoires qu'il porte, c'est précisément pour cela que le réparer en vaut la peine.",
+                "ja": "この琴にはいろんな物語がつまっててね、壊れててもそれを感じられるんだ。あたしが修理したいのは、こういう物語を聞くためなのさ。",
+                "ko": "이 거문고엔 수많은 이야기가 담겨 있어요. 심하게 망가지긴 했지만 음률에 담긴 이야기를 느낄 수 있어요. 전 그 이야기를 찾아, 여기까지 왔죠",
+                "th": "ต่อให้มันจะเสียหายแค่ไหน แต่ฉันก็ยังสัมผัสได้ถึงเรื่องราวนับไม่ถ้วนที่มันประสบผ่านพบมา เป็นเหตุผลว่าทำไมมันถึงคุ้มที่จะซ่อม",
+                "zh-Hans": "这琴里可是有不少故事，哪怕坏成这样，我也能感受到这琴音中存着的故事。我啊，就是为这故事而来。",
+                "zh-Hant": "這琴裡可是有不少故事，哪怕壞成這樣，我也能感受到這琴音中存著的故事。 我啊，就是為這故事而來。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Um sicherzustellen, dass die Guqin gut gestimmt ist, brauche ich die Energie vom Windchimer.",
+                "en": "To make sure the Guqin is well-tuned, I need the energy from the Windchimer.",
+                "es": "Si quiero que el Guqin esté bien afinado, necesito la energía de la Campanilla de viento.",
+                "fr": "Pour m'assurer que le Guqin est bien accordé, j'ai besoin de l'énergie de Stabilisateur de vent.",
+                "ja": "けど、この琴を修理するには「風止みの鈴」の音が必要なんだ。",
+                "ko": "하지만 거문고를 고치려면 「정풍의 종」으로 음을 다듬어야 해요",
+                "th": "ฉันจำเป็นต้องใช้พลังงานจากกระดิ่งลม เพื่อที่จะทำให้กู่ฉินบรรเลงเสียงออกมาได้อย่างไพเราะที่สุด",
+                "zh-Hans": "只是，要修这琴，就需要那「定风铎」来润音。",
+                "zh-Hant": "只是，要修這琴，就需要那「定風鐸」來潤音。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Daher wäre ich dankbar, wenn du die Windspiele sammeln und sie mir zurückschicken könntest.",
+                "en": "Therefore, I would appreciate it if you could collect the Winchimers and send them back to me.",
+                "es": "A tal efecto, te agradecería que pudieras proporcionarme todas las Campanillas de viento que puedas recolectar.",
+                "fr": "Donc, je serais reconnaissante si tu peux collecter les stabilisateurs et me les rapporter.",
+                "ja": "だから、山で「風止みの鈴」を見つけたら、あたしに渡してほしい。",
+                "ko": "그러니 만약 산에서 「정풍의 종」을 발견하거든 제게 꼭 가져다주세요",
+                "th": "ก็เลยอยากจะให้คุณช่วยรวบรวมกระดิ่งลม แล้วช่วยส่งกลับมาให้ฉันทีค่ะ",
+                "zh-Hans": "所以，你要是在这山上看见这「定风铎」，就可以交给我。",
+                "zh-Hant": "所以，你要是在這山上看見這「定風鐸」，就可以交給我。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und deine Bemühungen werden nicht unbezahlt bleiben. Mach dir keine Sorgen, ich kenne die Regeln. Bezahlung für erbrachte Dienstleistungen - das würden wir einen fairen Tausch nennen.",
+                "en": "And your efforts won't go unpaid. Don't worry, I know the rules. Payment for services rendered—that's what we'd call an equal exchange.",
+                "es": "Tus esfuerzos no serán en vano. No te preocupes, conozco las reglas. Pago por servicios prestados... digamos, lo que sería un intercambio equitativo.",
+                "fr": "Tes efforts porteront leurs fruits, ne t'en fais pas. Je connais les règles : tout service mérite salaire. C'est ça, un échange équitable.",
+                "ja": "安心しな、ちゃんと報酬は用意してある。こういうやり取りには相応の対価を支払うってのが礼儀だからね。",
+                "ko": "걱정마세요. 보수는 넉넉히 준비해 놨으니... 세상에 공짜는 없다는 것쯤은 잘 알고 있어요. 흔히 등가교환이라고 하죠",
+                "th": "และคุณก็จะไม่เสียแรงฟรีแน่นอน ไม่ต้องกังวลนะคะ ฉันเข้าใจกฎดี เรื่องการจ่ายค่าตอบแทนตามงานที่ทำ นี่แหละคือสิ่งที่เรียกว่าแลกเปลี่ยนกันอย่างยุติธรรม",
+                "zh-Hans": "你放心，我准备了些报酬给你。这走江湖的事，就讲究一个你来我往，等价交换。",
+                "zh-Hant": "你放心，我準備了些報酬給你。 這走江湖的事，就講究一個你來我往，等價交換。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 900024,
+                "name": {
+                  "zh-Hans": "弦歌"
+                },
+                "entity": {
+                  "entityId": 898900207,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_0323_154_弦歌_站姿",
+                  "name": "TsEntity_0323_154_弦歌_站姿",
+                  "areaId": 1613,
+                  "position": {
+                    "x": 226208,
+                    "y": 307975,
+                    "z": -5309
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -68
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

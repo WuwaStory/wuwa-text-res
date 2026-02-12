@@ -1,0 +1,171 @@
+{
+  "id": 106800001,
+  "key": "北落野",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Norfall Barrens",
+    "en": "Tales of the Past and Present: Norfall Barrens",
+    "es": "Crónicas de antaño y hoy: Baldíos de Norfall",
+    "fr": "Histoires du passé : Plaine de Nor-Chute",
+    "ja": "古今幾多の物語・北落野原",
+    "ko": "고대의 이야기·북락 광야",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: ทุ่งร้างนอร์ฟอลล์",
+    "zh-Hans": "古今多少故事·北落野",
+    "zh-Hant": "古今多少故事·北落野"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese Datenchips. Geh und bring sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these Data Chips. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estos Chips de Datos. Ve y entrégalos a él.",
+    "fr": "Le conteur de Jinzhou cherche des puces de données abandonnées. Donnez-lui ceux que vous avez collectés dans la Plaine de Nor-Chute.",
+    "ja": "今州城の講談師は古いデータセットに興味があるようなので、北落野原で集めた古いデータセットを彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼이 낡은 데이터집에 관심이 많은 것 같으니 북락 광야에서 수집한 데이터집을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมชิปข้อมูลเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧数据集很感兴趣，把这些于北落野收集到的旧数据集交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊數據集很感興趣，把這些於北落野收集到的舊數據集交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler den „Verlassenen Datenchip aus den Norfall Barrens“",
+        "en": "Deliver \"Abandoned Data Chip from Norfall Barrens\" to the Storyteller",
+        "es": "Entrega el \"Chip de Datos Abandonado de los Baldíos de Norfall\" al Narrador",
+        "fr": "Donner la Puce de données de la Plaine de Nor-Chute au conteur",
+        "ja": "「北落野原の古いデータセット」を講談師に渡す",
+        "ko": "「북락 광야 낡은 데이터집」을 이야기꾼에게 제출",
+        "th": "นำ \"ชิปข้อมูลที่ถูกทิ้งจากทุ่งร้างนอร์ฟอลล์\" ไปมอบให้กับนักเล่าเรื่อง",
+        "zh-Hans": "将「北落野旧数据集」交给说书人",
+        "zh-Hant": "將「北落野舊數據集」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 9,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich denke, es ist ein Bericht, der zu alt ist, um ihn als alt zu bezeichnen. Sie sollten aus einer Zeit stammen, bevor die Tacetit-Technologie geboren wurde.",
+                "en": "A report too close to call it ancient, I reckon. They should belong to a time before Tacetite Technology was born.",
+                "es": "Un informe demasiado reciente para llamarlo antiguo, supongo. Deberían pertenecer a un tiempo antes de que naciera la Tecnología de la Tacetita.",
+                "fr": "Ces données sont vraiment anciennes, il semble qu'elles parlent de l'époque avant le développement de la technologie des Tacéites.",
+                "ja": "随分古いデータだね。中身も黒石テクノロジーが発達する前のことらしい。",
+                "ko": "이 데이터는 정말 오래된 것 같네요. 모두 흑석 과학 기술이 발전하기 전의 일들이에요",
+                "th": "ฉันว่ารายงานนี้ไม่น่าจะเป็นของเก่าแก่ น่าจะมาจากยุคก่อนที่เทคโนโลยีทาเซไทต์จะถือกำเนิด",
+                "zh-Hans": "这份数据可真够老的，讲的似乎也都是黑石科技发展之前的事了。",
+                "zh-Hant": "這份數據可真夠老的，講的似乎也都是黑石科技發展之前的事了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe alle Relikte von meinem Ur-Ur-Ur-Ur-Großvater durchwühlt, um den Bericht zu reparieren...",
+                "en": "I rummaged through all the relics from my grand-grand-grand-grandpa to repair the report...",
+                "es": "Rebusqué entre todas las reliquias de mi tatarabuelo para reparar el informe...",
+                "fr": "Pour les restaurer, j'ai dû sortir des trucs anciens de mes ancêtres, cela a demandé beaucoup d'efforts...",
+                "ja": "これを復元するために、先祖から受け継いだ古いものを見つけ出した。けっこう大変だったよ……",
+                "ko": "저는 그것을 복원하기 위해 저의 조상분들이 물려준 옛것을 찾아내는 데 많은 공을 들였어요",
+                "th": "ฉันรื้อค้นโบราณวัตถุทั้งหมดที่ปู่ทวดของทวดของทวดฉันทิ้งไว้ให้ เพื่อซ่อมแซมรายงานนี้...",
+                "zh-Hans": "为了复原它，我可是找出祖祖祖爷爷传下来的老东西，花了不少功夫呢……",
+                "zh-Hant": "為了復原它，我可是找出祖祖祖爺爺傳下來的老東西，花了不少功夫呢……"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber sie alle verdienen es. Was in diesem Bericht steht, ist weit wichtiger als meine Bemühungen.",
+                "en": "But they all deserve it. What's in this report is far more important than my efforts.",
+                "es": "Pero todos lo merecen. Lo que hay en este informe es mucho más importante que mis esfuerzos.",
+                "fr": "Cependant, peu importe l'effort, ce rapport d'enquête est beaucoup plus important que le temps passé.",
+                "ja": "でもやりがいがある。この調査報告書自体がよほど重要だ。",
+                "ko": "아무리 많은 시간을 투자한다 해도 상관없어요. 이 조사 보고서 자체가 담고 있는 것은 그 시간보다 더 값진 거니까요",
+                "th": "แต่ก็นับว่าคุ้มค่า เนื้อหาในรายงานสำคัญกว่าความเหนื่อยยากของฉันมาก",
+                "zh-Hans": "不过，花再大的功夫都没事，这份调查报告本身承载的可比那些时间功夫要重要得多。",
+                "zh-Hant": "不過，花再大的功夫都沒事，這份調查報告本身承載的可比那些時間功夫要重要得多。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl wir das genaue Eintrittsdatum nicht kennen, haben ihre Bemühungen in Richtung unbekannter Katastrophen nun klarere Beweise.",
+                "en": "Though we cannot know the exact entry date, their endeavors toward unknown disasters now have more clear proof.",
+                "es": "Aunque no podemos conocer la fecha exacta de entrada, sus esfuerzos hacia desastres desconocidos ahora tienen más pruebas claras.",
+                "fr": "Bien que ce rapport d'enquête soit très ancien, le temps exact est inconnu. Mais les efforts de ces gens face à l'inconnu sont toujours visibles.",
+                "ja": "あまりにも古すぎて、具体的な時期はもう確認できない。しかし、当時の人々が未知のものに対して努力したことを垣間見える。",
+                "ko": "비록 이 조사 보고서가 너무 오래되어 구체적인 시기는 조사할 수 없지만... 그 당시 사람들이 미지의 상황에 직면했을 때의 노력은 여전히 엿볼 수 있어요",
+                "th": "ถึงจะไม่อาจรู้วันที่แน่ชัดของเหตุการณ์ในบันทึกได้ แต่ตอนนี้ความพยายามของพวกเขาในการรับมือภัยพิบัติไม่รู้ที่มาก็ปรากฏหลักฐานชัดเจนขึ้นแล้ว",
+                "zh-Hans": "虽说这调查报告太过久远，具体时间已不可考。但当时那些人面对未知时做出的努力，还是能见证一二。",
+                "zh-Hant": "雖說這調查報告太過久遠，具體時間已不可考。 但當時那些人面對未知時做出的努力，還是能見證一二。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

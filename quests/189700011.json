@@ -1,0 +1,940 @@
+{
+  "id": 189700011,
+  "key": "最后的回声（一）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Der letzte Widerhall (I)",
+    "en": "Final Reverberation I",
+    "es": "Reverberación final I",
+    "fr": "Réverbération finale - I",
+    "ja": "ラスト・エコー（1）",
+    "ko": "마지막 메아리 (Ⅰ)",
+    "th": "เสียงสะท้อนสุดท้าย (1)",
+    "zh-Hans": "最后的回声（一）",
+    "zh-Hant": "最後的回聲（一）"
+  },
+  "desc": {
+    "de": "Du übergibst den „Schatz“, den du von den Kindern erhalten hast, an I.R.I.S. Die Systemanalyse zeigt, dass er mit einem vermissten Professor in Verbindung steht. Du beschließt, der Sache weiter nachzugehen.",
+    "en": "You hand the “treasure” taken from the kids to I.R.I.S. The system analysis reveals it's connected to a missing professor. You decide to look deeper.",
+    "es": "Entregas el «tesoro» tomado de los niños a IRIS. El análisis del sistema revela que está relacionado con un profesor desaparecido. Decides investigar más a fondo.",
+    "fr": "Vous avez remis un trésor trouvé chez un enfant à S.I.R.E.N.E., et l'analyse a révélé qu'il était lié à un professeur disparu de l'académie. Vous décidez alors de lancer une enquête.",
+    "ja": "子供から受け取った「宝物」をI.R.I.S.に渡したところ、システム分析により、この「宝物」が行方不明の教授に関係していることが判明した。あなたはこの件を調査することにした。",
+    "ko": "당신은 아이에게서 받은 「보물」을 I.R.I.S.에게 넘겨주었습니다. 시스템 분석을 하자 이 「보물」은 한 실종된 교수와 관련이 있어 당신은 이 사건을 조사하기로 결정했습니다",
+    "th": "คุณส่ง \"สมบัติ\" ที่ได้รับจากเด็กๆ ให้กับ I.R.I.S. ผ่านการวิเคราะห์ระบบ พบว่าสมบัตินี้เกี่ยวข้องกับศาสตราจารย์ที่หายตัวไป คุณจึงตัดสินใจตรวจสอบเรื่องนี้",
+    "zh-Hans": "你把从孩子那里拿到的“宝藏”交给了I.R.I.S.，通过系统分析，这份“宝藏”与一位失踪的教授有关，你决定调查这件事情。",
+    "zh-Hant": "你把從孩子那裡拿到的「寶藏」交給了I.R.I.S.，透過系統分析，這份「寶藏」與一位失蹤的教授有關，你決定調查這件事情。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Liefere die Teile an I.R.I.S.",
+        "en": "Deliver the part to I.R.I.S.",
+        "es": "Entrega las piezas a IRIS.",
+        "fr": "Donner les composants retrouvés à S.I.R.E.N.E.",
+        "ja": "入手したパーツをI.R.I.S.に渡す",
+        "ko": "획득한 부품을 I.R.I.S.에게 넘겨주기",
+        "th": "ส่งชิ้นส่วนที่ได้รับให้ I.R.I.S.",
+        "zh-Hans": "将获得的零件交给I.R.I.S.",
+        "zh-Hant": "將獲得的零件交給I.R.I.S."
+      },
+      "entities": [
+        {
+          "entityId": 152700001,
+          "mapId": 906,
+          "blueprintType": "branch3.0_152_NPCIRIS",
+          "name": "TsEntity_IRIS",
+          "areaId": 36170,
+          "position": {
+            "x": -63987,
+            "y": -537911,
+            "z": 36308
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -83
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 189701875,
+          "mapId": 906,
+          "blueprintType": "branch3.0_152_NPCIRIS",
+          "name": "TsEntity_IRIS2",
+          "areaId": 36170,
+          "position": {
+            "x": -63987,
+            "y": -537911,
+            "z": 36308
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -83
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_最后的回声",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh? {PlayerName}, hast du schon wieder Probleme?",
+                "en": "Oh? Run into more trouble, {PlayerName}?",
+                "es": "¿Eh? ¿Te encontraste más problemas, {PlayerName}?",
+                "fr": "Oh ? Vous avez encore des ennuis, {PlayerName} ?",
+                "ja": "あら、{PlayerName}さん。また何かお困りごとですか？",
+                "ko": "음? {PlayerName} 학생, 또 무슨 문제가 생겼나요?",
+                "th": "โอ้? นักเรียน {PlayerName} เจอปัญหาอีกแล้วเหรอ?",
+                "zh-Hans": "哦？{PlayerName}同学，是又遇见什么问题了吗？",
+                "zh-Hant": "哦？{PlayerName}同學，是又遇見什麼問題了嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kannst du irgendwelche Informationen hierzu finden?",
+                    "en": "Can you pull up any info on this?",
+                    "es": "¿Tienes algo de información sobre esto?",
+                    "fr": "Auriez-vous des informations concernant cet objet ?",
+                    "ja": "このパーツの情報を調べてほしい。",
+                    "ko": "혹시 이 부품의 정보를 검색해 볼 수 있을까요?",
+                    "th": "ตรวจสอบข้อมูลของชิ้นส่วนนี้ให้หน่อยได้มั้ย?",
+                    "zh-Hans": "能检索一下这个零件的信息吗？",
+                    "zh-Hant": "能檢索一下這個零件的資訊嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ein bisschen näher bitte … Hmm, das ist ein Kernstück eines veralteten Assistenzdroiden der Akademie.",
+                "en": "A little closer, please... Hmm, this is a core component from an obsolete Academy assistant droid.",
+                "es": "Un poco más cerca... Mmm, esto es un componente central perteneciente a un robot asistente obsoleto de la Academia.",
+                "fr": "Un peu plus près, s'il vous plaît... Hmm, c'est l'un des composants principaux d'un assistant droïde obsolète de l'Académie.",
+                "ja": "もう少し近くまで持ってきてください。ふーん……なるほど。これは学園で昔使われていた、旧式のアシスタントロボットのコアパーツですね。",
+                "ko": "조금 더 가까이. 음... 이건 아카데미의 구식 보조 로봇의 핵심 부품입니다",
+                "th": "เอาเข้ามาใกล้ๆ หน่อย อืม... นี่เป็นชิ้นส่วนแกนหลักของหุ่นยนต์ผู้ช่วยรุ่นเก่าของสถาบัน",
+                "zh-Hans": "拿近一点啦，嗯……这是学院一种旧式助手机器人的核心零件。",
+                "zh-Hant": "拿近一點啦，嗯……這是學院一種舊式助手機器人的核心零件。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese Modelle waren streng einem einzigen Anwender zugeordnet. Einen Moment bitte, ich durchsuche die Datenbank.",
+                "en": "These models were strictly assigned to a single user. One moment while I search the database.",
+                "es": "Estos modelos se asignaron exclusivamente a un solo usuario. Espera un momento mientras examino la base de datos.",
+                "fr": "Chaque modèle était assigné à un unique utilisateur. Un instant, je lance une recherche dans la base de données.",
+                "ja": "このタイプのロボットには、それぞれ専用の使用者が割り当てられています。少々お待ちを。データを掘ってみますね。",
+                "ko": "이 유형의 로봇은 사용자와의 엄격한 대응 관계가 있기에, 조사할 시간이 좀 더 필요할 것 같습니다",
+                "th": "หุ่นยนต์นี้มีความสัมพันธ์ที่สอดคล้องกับผู้ใช้อื่นอย่างมาก ฉันขอเวลาตรวจสอบหน่อยนะ",
+                "zh-Hans": "这类机器人与其使用者有严格的对应关系，请给我一些时间查询。",
+                "zh-Hant": "這類機器人與其使用者有嚴格的對應關係，請給我一些時間查詢。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Die Seriennummer lässt sich auf einen Professor Sestan zurückführen.",
+                "en": "...The serial number traces back to a Professor Sestan.",
+                "es": "... El número de serie lleva a un profesor Sestan.",
+                "fr": "... Le numéro de série renvoie à un certain professeur Sestan.",
+                "ja": "……ありました。パーツの番号から照会した結果、使用者はセスタンという男性教授です。",
+                "ko": "... 부품 번호를 통해 조회해 본 결과, 해당 로봇의 사용자는 세이스탄이라는 남자 교수님입니다",
+                "th": "...จากการตรวจสอบผ่านหมายเลขชิ้นส่วนพบว่าผู้ใช้เป็นศาสตราจารย์ชายชื่อว่า Sestan",
+                "zh-Hans": "……通过零件编号查询到其使用者是一位名叫赛斯坦的男性教授。",
+                "zh-Hant": "……透過零件編號查詢到其使用者是一位名叫賽斯坦的男性教授。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist interessant … Aus den Aufzeichnungen geht hervor, dass alle diese Droiden verschrottet werden sollten. Bis auf einen, der als vermisst gemeldet wurde.",
+                "en": "Now this is interesting... records show all such droids were scheduled for scrapping. Except for one, which was logged as missing.",
+                "es": "Esto es interesante... los registros muestran que se programó el desmantelamiento de estos robots. Excepto uno, que se registró como perdido.",
+                "fr": "Voilà qui est intéressant...D'après les archives, tous ces droïdes ont été envoyés à la casse. Sauf un, qui a disparu, selon le registre.",
+                "ja": "記録上ではこの型のロボットはすべて廃棄済みになっているんですが……面白いことに、ひとつだけ行方不明になって記録から外れている番号が存在しますね。",
+                "ko": "재밌는 사실은, 정보 데이터 베이스엔 구식 로봇은 과거에 집중적으로 폐기 처리된 것으로 나와 있는데, 단 한 대만이 실종된 관계로 번호가 기록되어 있지 않습니다",
+                "th": "สิ่งที่น่าสนใจก็คือในฐานข้อมูลแสดงให้เห็นว่าหุ่นยนต์รุ่นเก่านั้นน่าจะถูกทำลายไปหมดแล้วในอดีต ยกเว้นหมายเลขที่หายไปจึงไม่มีอยู่ในบันทึก",
+                "zh-Hans": "有意思的是信息库中显示旧式机器人在过去都应当被集中销毁了，除了一个因失踪没在记录内的编号。",
+                "zh-Hant": "有意思的是資訊庫中顯示舊式機器人在過去都應當被集中銷毀了，除了一個因失蹤沒在記錄內的編號。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Der Droide von Professor Sestan?",
+                    "en": "Professor Sestan's droid?",
+                    "es": "¿El robot del profesor Sestan?",
+                    "fr": "Celui du professeur Sestan ?",
+                    "ja": "{Male=それが、セスタン教授のロボットか？;Female=それが、セスタン教授のロボットなの？}",
+                    "ko": "혹시 세이스탄 교수님의 로봇인가요?",
+                    "th": "หมายถึงหุ่นยนต์ของศาสตราจารย์ Sestan ใช่มั้ย?",
+                    "zh-Hans": "就是赛斯坦教授的机器人？",
+                    "zh-Hant": "就是賽斯坦教授的機器人？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Korrekt. Und wie sollte es auch anders sein, der Professor verschwand zusammen mit ihm. Der offizielle Bericht besagt, dass beide während einer Forschungsexpedition verschwunden sind.",
+                "en": "Correct. And who would've guessed, the Professor vanished alongside it. The official report states they both disappeared during a research expedition.",
+                "es": "Correcto. Y quién lo diría, el profesor se esfumó junto a él. El informe oficial indica que ambos desaparecieron durante una expedición científica.",
+                "fr": "Exact. De plus, le professeur a disparu en même temps que lui. Selon le rapport officiel, ils ont tous les deux disparu pendant une expédition de recherche.",
+                "ja": "ええ。そして、もっと興味深いのは——行方不明になったのはロボットだけではありません。セスタン教授ご本人も、同じ調査行動中に姿を消しています。",
+                "ko": "네, 더 재밌는 건, 로봇뿐만이 아니라 세이스탄 교수님도 함께 실종된 걸로 조회되었습니다. 실종 보고에 따르면, 그들은 한 과학 탐사 활동에서 함께 실종된 걸로 기록되어 있습니다",
+                "th": "อืม และสิ่งที่น่าสนใจไปกว่านั้นก็คือไม่ใช่แค่หุ่นยนต์ที่หายไป แต่รวมถึงศาสตราจารย์ Sestan ด้วย รายงานคนสูญหายระบุว่าพวกเขาหายไปพร้อมกันในระหว่างการทดสอบทางวิทยาศาสตร์",
+                "zh-Hans": "嗯，更有趣的是失踪的不仅仅是机器人，还有赛斯坦教授本人，失踪报告显示他们一同消失在了一次科考行动中。",
+                "zh-Hant": "嗯，更有趣的是失蹤的不僅僅是機器人，還有賽斯坦教授本人，失蹤報告顯示他們一同消失在了一次科考行動中。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Laut Zeugenaussagen verließ Professor Sestan das Lager nach Mitternacht ohne ein Wort zusammen mit dem Droiden. Seitdem wurden sie nie wieder gesehen.",
+                "en": "According to witnesses, Professor Sestan left the campsite with the droid after midnight, without a word, and they were never seen again.",
+                "es": "De acuerdo con los testigos, el profesor Sestan abandonó el campamento con el robot después de medianoche, sin mediar palabra, y nunca más los volvieron a ver.",
+                "fr": "D'après les témoins, le professeur Sestan a quitté le campement avec le droïde après minuit, sans un mot, et plus personne ne les a jamais revus.",
+                "ja": "当時の証言によると、教授は深夜、誰にも気づかれないようにロボットを連れてキャンプを離れ——それきり消息を絶ったそうです。",
+                "ko": "일행의 기억에 따르면, 세이스탄 교수님은 일행들 몰래 한밤중에 로봇을 데리고 주둔 캠프를 떠나 모습을 감췄다고 합니다",
+                "th": "ตามความทรงจำของผู้ที่เกี่ยวข้อง—— ศาสตราจารย์ Sestan พาหุ่นยนต์ออกจากค่ายประจำการในกลางดึกและหายตัวไปอย่างไร้ร่องรอยโดยที่ไม่มีใครรู้",
+                "zh-Hans": "据当事者回忆——赛斯坦教授在所有人不知情的情况下，深夜带着机器人离开驻扎营地就失去了踪迹。",
+                "zh-Hant": "據當事者回憶——賽斯坦教授在所有人不知情的情況下，深夜帶著機器人離開駐紮營地就失去了蹤跡。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Später durchsuchte die Akademie die Wohnung des Professors und fand einen Abschiedsbrief. Die Akademie kam zu dem Schluss, dass sein Verschwinden auf einen Selbstmord hindeutete.",
+                "en": "Later, the Academy searched the professor's quarters and discovered what appeared to be a suicide note. The Academy theorized his disappearance was a suicide.",
+                "es": "Posteriormente, la Academia investigó los aposentos del profesor y descubrió una carta semejante a una nota de suicidio. La Academia especuló que su desaparición terminó en suicido.",
+                "fr": "Par la suite, l'Académie a fouillé les quartiers du professeur et a découvert une note qui ressemblait à une lettre de suicide. L'Académie a donc émis l'hypothèse selon laquelle sa disparition était due à un suicide.",
+                "ja": "後日、教授の部屋を調査した際、遺書のような文書が見つかりました。それをもとに、失踪事件は自殺と判断されたようですね。",
+                "ko": "나중에 학교 측에서 해당 교수님의 기숙사를 조사해 본 결과, 유서로 추정되는 편지 한 통이 발견되었으며, 교수의 실종 사건은 자살 행각으로 결론지어졌습니다",
+                "th": "ต่อมา หลังจากทางสถาบันตรวจสอบห้องของศาสตราจารย์โดยละเอียด ก็พบจดหมายที่ดูคล้ายจะเป็นจดหมายลาตายฉบับหนึ่ง จึงคาดเดาได้ว่าการหายตัวไปของศาสตราจารย์นั้นเป็นการฆ่าตัวตาย",
+                "zh-Hans": "后来校方在教授房间仔细调查后，搜索到了一封疑似遗书的信件，推断教授的失踪事件为一次自杀行为。",
+                "zh-Hant": "後來校方在教授房間仔細調查後，搜索到了一封疑似遺書的信件，推斷教授的失蹤事件為一次自殺行為。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Offensichtlich betrachtete er diese Expedition als seine letzte Reise.",
+                "en": "It seems he intended that expedition to be his final journey.",
+                "es": "Parece que consideró esa expedición como su último viaje.",
+                "fr": "Il semblerait qu'il considérait cette expédition comme son ultime aventure.",
+                "ja": "おそらく教授は、今回の調査そのものを「死に向かう旅」だと考えていたのでしょう。",
+                "ko": "그는 당시 외부 탐사 활동을 자신의 마지막 여정으로 계획했던 것입니다",
+                "th": "เขาถือว่าการทดสอบทางวิทยาศาสตร์ครั้งนี้เป็นการเดินทางสู่ความตาย",
+                "zh-Hans": "他将这次科考外出当作了一场赴死之旅。",
+                "zh-Hant": "他將這次科考外出當作了一場赴死之旅。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Aber war das wirklich Selbstmord?",
+                    "en": "But was it really suicide?",
+                    "es": "¿Pero fue realmente un suicidio?",
+                    "fr": "Mais était-ce réellement un suicide ?",
+                    "ja": "{Male=本当に自殺だったのか？;Female=本当に自殺だったの？}",
+                    "ko": "하지만 정말로 자살일까요?",
+                    "th": "แต่จะเป็นการฆ่าตัวตายจริงๆ เหรอ?",
+                    "zh-Hans": "但真的是自杀吗？",
+                    "zh-Hant": "但真的是自殺嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich kann diese Frage nicht beantworten. Ich will über den Professor kein persönliches Urteil fällen.",
+                "en": "I'm not obligated to answer that. I won't pass judgement on the professor.",
+                "es": "No estoy obligada a responder eso. No emitiré juicio sobre el profesor a nivel personal.",
+                "fr": "Rien ne m'oblige à répondre à cette question. Je ne jugerai pas ce professeur à titre personnel.",
+                "ja": "その質問に答えるのは、私の職務範囲外です。個人の行動を評価するつもりはありません。",
+                "ko": "이 문제에 답하는 건 제 의무 밖의 일입니다. 교수님 개인에 관한 평가는 제공하지 않습니다",
+                "th": "การตอบคำถามข้อนี้ไม่อยู่ในขอบเขตหน้าที่ของฉัน และฉันจะไม่ขอวิจารณ์ศาสตราจารย์เป็นการส่วนตัว",
+                "zh-Hans": "回答这个问题可不是我的义务哦，我不会对教授个人进行评判。",
+                "zh-Hant": "回答這個問題可不是我的義務哦，我不會對教授個人進行評判。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Darüber hinaus kann ich jedoch mit den verfügbaren Fakten weiterhelfen.",
+                "en": "Moving on, I can provide you with some available facts.",
+                "es": "Pero más allá de eso, puedo asistir con los hechos disponibles.",
+                "fr": "Mais au-delà de ça, je peux apporter mon aide au niveau des faits tangibles connus.",
+                "ja": "ただ、今ある情報から、少しだけヒントを差し上げましょう。",
+                "ko": "대신 이미 저장된 정보에 의한 다른 도움들을 제공해 드릴 수 있습니다",
+                "th": "แต่นอกเหนือจากนี้แล้ว ฉันให้ความช่วยเหลือคุณตามข้อมูลที่มีอยู่ในปัจจุบันได้",
+                "zh-Hans": "但，在这之外，我能根据现有信息为你给予一些帮助。",
+                "zh-Hant": "但，在這之外，我能根據現有資訊為你給予一些幫助。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Vorteil dieser ausgedienten Droiden besteht darin, dass ihre Kernkomponenten über eine Blackbox-Funktion verfügen, die ihre letzten bekannten geografischen Koordinaten vor der Deaktivierung aufzeichnet.",
+                "en": "One advantage of these obsolete droids is that their core components include a black box that logs their geographic coordinates.",
+                "es": "Una ventaja de estos robots obsoletos es que sus componentes centrales contienen una caja negra que registra sus últimas coordenadas geográficas conocidas antes de desactivarse.",
+                "fr": "L'un des avantages de ces vieux droïdes est que leurs composants principaux contiennent une boîte noire qui enregistre leurs dernières coordonnées géographiques connues avant leur désactivation.",
+                "ja": "この旧式ロボットのコアパーツには、ブラックボックスのような記録機能が搭載されています。故障直前の座標データも残されているはずです。",
+                "ko": "해당 구식 로봇의 장점은 핵심 부품들이 블랙박스와 유사한 기록 기능을 갖고 있어 고장 나기 전의 마지막 지리적 좌표를 기록할 수 있습니다",
+                "th": "หุ่นยนต์รุ่นเก่านี้มีจุดเด่นอย่างหนึ่งคือชิ้นส่วนแกนหลักของมันมีฟังก์ชันบันทึกที่คล้ายกับกล่องดำ ซึ่งสามารถบันทึกพิกัดทางภูมิศาสตร์สุดท้ายก่อนที่มันจะเกิดความขัดข้องได้",
+                "zh-Hans": "这种旧式机器人有一个优点是它的核心零件拥有类似黑匣子的记录功能，能记录下它故障前最后的地理坐标。",
+                "zh-Hant": "這種舊式機器人有一個優點是它的核心零件擁有類似黑匣子的紀錄功能，能記錄下它故障前最後的地理座標。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das bedeutet, wir können herausfinden, wo der Droide und der Professor zuletzt gesehen wurden.",
+                "en": "Meaning we can find the last known location of the droid and the professor.",
+                "es": "Lo que significa que podemos buscar al robot, y al profesor, en el último lugar que los vieron.",
+                "fr": "Donc, nous pouvons retrouver l'endroit où le droïde et le professeur ont été aperçus pour la dernière fois.",
+                "ja": "{Male=彼らが最後にいた場所が分かる、ってことか;Female=彼らが最後にいた場所が分かる、ってことね}。",
+                "ko": "그러니까, 그 로봇과 교수가 실종된 후 모습을 드러냈던 장소를 찾을 수 있다는 거죠?",
+                "th": "พูดง่ายๆ ก็คือ ตอนนี้พวกเราสามารถค้นหาสถานที่ปรากฏตัวหลังจากมันและศาสตราจารย์หายตัวไปได้",
+                "zh-Hans": "也就是说，我们现在能找到它和教授失踪后出现的地点。",
+                "zh-Hant": "也就是說，我們現在能找到它和教授失蹤後出現的地點。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja, mehr kann ich im Moment nicht für dich tun. Die geografischen Koordinaten wurden auf dein Terminal hochgeladen. Deine Annahmen solltest du persönlich überprüfen.",
+                "en": "Yes, that's all I can do for you now. The coordinates have been uploaded to your Terminal. Your theory ought to be verified in person.",
+                "es": "Sí, es todo lo que puedo hacer por ti por ahora. Las coordenadas se cargaron a tu terminal. Tus especulaciones deben ser verificadas en persona.",
+                "fr": "Oui. C'est tout ce que je peux faire pour vous pour le moment. Les coordonnées géographiques ont été téléchargées sur votre borne. Vous allez devoir mettre vos théories à l'épreuve en personne.",
+                "ja": "ええ。それが今、私にできる最大限のサポートです。座標データは、あなたのデバイスに送信しました。推測の答えは、自分の目で確かめるのが一番です。",
+                "ko": "네, 현재로서는 제가 할 수 있는 최선입니다. 해당 좌표는 이미 단말기로 보내드렸습니다. 본인의 추측은 본인이 직접 확인해야 하니까요",
+                "th": "อืม นี่คือทั้งหมดที่ฉันทำได้ในตอนนี้ ฉันได้อัปโหลดพิกัดทางภูมิศาสตร์ไปยังเทอร์มินัลของคุณแล้ว ส่วนการคาดคะเนของคุณคงต้องให้คุณไปตรวจสอบเองแล้วล่ะ",
+                "zh-Hans": "嗯，这是我现在能做的所有，地理坐标已经上传到你终端了，你的猜测应该由你自己去验证。",
+                "zh-Hant": "嗯，這是我現在能做的所有，地理座標已經上傳到你終端了，你的猜測應該由你自己去驗證。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du kannst gerne hingehen und deine Neugier stillen.",
+                "en": "Feel free to go and satisfy your curiosity.",
+                "es": "No dudes en ir a satisfacer tu curiosidad.",
+                "fr": "Je vous en prie, allez satisfaire votre curiosité.",
+                "ja": "興味があるなら、行ってみるといいでしょう。",
+                "ko": "궁금하시면 직접 가서 확인해 보시기 바랍니다",
+                "th": "ถ้าสนใจก็ไปดูกันเลย",
+                "zh-Hans": "感兴趣的话就去看看吧。",
+                "zh-Hant": "感興趣的話就去看看吧。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 100204,
+                "name": {
+                  "zh-Hans": "I.R.I.S."
+                },
+                "entity": {
+                  "entityId": 189701875,
+                  "mapId": 906,
+                  "blueprintType": "branch3.0_152_NPCIRIS",
+                  "name": "TsEntity_IRIS2",
+                  "areaId": 36170,
+                  "position": {
+                    "x": -63987,
+                    "y": -537911,
+                    "z": 36308
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -83
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_3_0_支线_最后的回声",
+          "flowIndex": 11,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Diese Seriennummer entspricht dem von der Akademie verwendeten Format. Vielleicht weiß I.R.I.S. etwas darüber …",
+                "en": "This serial number is in the format used by the Academy. Maybe I.R.I.S. knows something about it...",
+                "es": "Este número de serie tiene el formato que emplea la Academia. Tal vez IRIS sabe algo al respecto...",
+                "fr": "Le format de ce numéro de série correspond à celui de l'Académie. Peut-être que S.I.R.E.N.E. en saura plus...",
+                "ja": "上にある番号は、学園のフォーマットだ。I.R.I.S.なら、何か知っているかもしれない。",
+                "ko": "위에 적힌 번호는 아카데미에서 사용하는 격식인데, I.R.I.S.라면 알 수도 있지 않을까...",
+                "th": "หมายเลขด้านบนนี้เป็นรูปแบบการใช้ของสถาบัน บางที I.R.I.S. อาจจะรู้อะไรบางอย่าง...",
+                "zh-Hans": "这上面的编号是学院使用的格式，也许I.R.I.S.知道些什么……",
+                "zh-Hant": "這上面的編號是學院使用的格式，也許I.R.I.S.知道些什麼……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Benutze den Sensor.",
+        "en": "Use Utility: Sensor",
+        "es": "Usa la Utilidad: Sensor.",
+        "fr": "Utiliser le Senseur des Outils d'exploration",
+        "ja": "探索モジュールの「感知」を使用する",
+        "ko": "탐색 모듈의 「스캔」 사용하기",
+        "th": "ใช้เครื่องมือสำรวจ: เซนเซอร์",
+        "zh-Hans": "使用探索模块的「感知」",
+        "zh-Hant": "使用探索模組的「感知」"
+      },
+      "entities": [
+        {
+          "entityId": 189701430,
+          "mapId": 906,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_地面用必要触发交互",
+          "areaId": 36109,
+          "position": {
+            "x": -15212,
+            "y": -584861,
+            "z": 37406
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lies „Verworfenes Log I“",
+        "en": "Read “Discarded Log I”",
+        "es": "Lee el «Registro descartado I».",
+        "fr": "Consulter le Journal abandonné - I",
+        "ja": "『捨てられたノート・その一』を読む",
+        "ko": "『폐기된 일기 · Ⅰ』 읽기",
+        "th": "อ่าน \"สมุดบันทึกที่ถูกทิ้งร้าง ตอนที่ 1\"",
+        "zh-Hans": "阅读《废弃的日志·一》",
+        "zh-Hant": "閱讀《廢棄的日誌·一》"
+      },
+      "entities": [
+        {
+          "entityId": 189701430,
+          "mapId": 906,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_地面用必要触发交互",
+          "areaId": 36109,
+          "position": {
+            "x": -15212,
+            "y": -584861,
+            "z": 37406
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_最后的回声",
+          "flowIndex": 12,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Also war das Verschwinden des Professors doch nicht so einfach.",
+                "en": "So the professor's disappearance wasn't so straightforward after all.",
+                "es": "Parece que la desaparición del profesor no fue tan simple después de todo.",
+                "fr": "Alors, il y avait tout de même anguille sous roche quant à la disparition du professeur, au final.",
+                "ja": "やはり、教授の失踪には何か裏がありそうだ。",
+                "ko": "교수님의 실종은 역시 뭔가 다른 원인이 있었어",
+                "th": "การหายตัวไปอย่างกะทันหันของศาสตราจารย์ท่านนั้นมีเหตุผลอื่นจริงๆ ด้วย",
+                "zh-Hans": "那位教授突然失踪果然有其他原因。",
+                "zh-Hant": "那位教授突然失蹤果然有其他原因。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In seinem Logbuch erwähnte er, dass er bei einem Stamm der Roya geblieben sei, um den Leerensturm zu erforschen. Das könnte ein Hinweis sein …",
+                "en": "His log mentioned staying with the Roya tribe to survey the Void Storm. That could be a clue...",
+                "es": "Su bitácora decía que se quedó con una tribu roya para analizar la Tormenta de Vacío. Eso podría llevar a una pista...",
+                "fr": "D'après son journal, il aurait été hébergé par une tribu royanne afin d'analyser la tempête de néant. Ce pourrait être un indice...",
+                "ja": "ノートには、ヴォイドストームの観測のため、しばらくロイ族のもとに滞在していたと書かれていた。そこに、手がかりがあるかもしれない。",
+                "ko": "일기에 그가 보이드 스톰을 관측하기 위해 로야부족에 잠시 머물렀다고 나와 있는데, 단서가 될 수도 있을 것 같아",
+                "th": "ในบันทึกระบุว่าเขาพักอยู่กับชนเผ่าโรญาระยะหนึ่งเพื่อสังเกตพายุสุญตา บางทีนี่อาจเป็นเบาะแส...",
+                "zh-Hans": "日志中提到他为观察虚质磁暴，在罗伊部族待上了一段时间，这也许是个线索……",
+                "zh-Hant": "日誌中提到他為觀察虛質磁暴，在羅伊部族待上了一段時間，這也許是個線索……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich zu dem Lager, in dem der Professor einst untergekommen war.",
+        "en": "Head to the camp where the professor once stayed",
+        "es": "Dirígete al campamento donde el profesor se alojó una vez.",
+        "fr": "Se rendre au camp du professeur",
+        "ja": "教授がいたキャンプへ向かう",
+        "ko": "교수가 주둔했던 캠프로 이동하기",
+        "th": "ไปยังค่ายที่ศาสตราจารย์เคยประจำการ",
+        "zh-Hans": "前往教授曾驻扎的营地",
+        "zh-Hant": "前往教授曾駐紮的營地"
+      },
+      "dialogs": []
+    }
+  ]
+}

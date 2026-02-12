@@ -1,0 +1,234 @@
+{
+  "id": 131000000,
+  "key": "任务4",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Herausforderung des Explosiven Speerkopf-Tests",
+    "en": "Explosive Spear Tip Testing Challenge",
+    "es": "Desafío de prueba de la Cabeza de la Lanza explosiva",
+    "fr": "Défi du test d'amélioration de la Pointe de lance",
+    "ja": "槍先テスト・上級",
+    "ko": "창끝 테스트 · 고급 도전",
+    "th": "ท้าทายบททดสอบหอกยาวปลายระเบิด",
+    "zh-Hans": "枪头测试进阶挑战",
+    "zh-Hant": "槍頭測試進階挑戰"
+  },
+  "desc": {
+    "de": "Jemand scheint am Speerkopf-Test im Vergessenen Heimatdorf interessiert zu sein. Geh und sieh es dir an!",
+    "en": "Someone seems to be interested in the spear tip testing held in Forsaken Home. Go check it out!",
+    "es": "Parece que alguien está interesado en la prueba de la cabeza de la lanza que se lleva a cabo en el Hogar abandonado. ¡Ve a echar un vistazo!",
+    "fr": "On dit qu’une personne s'intéresse au test de la Pointe de lance, là-bas, à la Maison abandonnée. Allez jeter un coup d'œil.",
+    "ja": "去られた大地の槍先テストに興味がある人がいるようで、行ってみよう",
+    "ko": "누군가 귀허항시의 창끝 테스트에 관심이 있는 것 같으니 빨리 가보세요",
+    "th": "ดูเหมือนว่ามีใครบางคนสนใจบททดสอบปลายหอกในบ้านเกิดที่ถูกทอดทิ้ง ไปตรวจสอบดู!",
+    "zh-Hans": "似乎有人对遗落原乡的枪头测试很感兴趣，快去看看吧",
+    "zh-Hant": "似乎有人對遺落原鄉的槍頭測試很感興趣，快去看看吧"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe den Test des Explosiven Speerkopfs ab",
+        "en": "Complete the Explosive Spear Tip Testing",
+        "es": "Completa la prueba de la Cabeza de la Lanza explosiva",
+        "fr": "Terminer le test d'amélioration de la Pointe de lance",
+        "ja": "槍先テスト・上級をクリア",
+        "ko": "창끝 테스트 · 고급 완료",
+        "th": "ทำบททดสอบหอกยาวปลายระเบิดให้สำเร็จ",
+        "zh-Hans": "完成枪头进阶测试",
+        "zh-Hant": "完成槍頭進階測試"
+      },
+      "entities": [
+        {
+          "entityId": 122006409,
+          "mapId": 8,
+          "blueprintType": "Gameplay518",
+          "name": "TsEntity_玩法_炮台2",
+          "areaId": 602,
+          "position": {
+            "x": -88779,
+            "y": 189378,
+            "z": 6300
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 131000405,
+          "mapId": 8,
+          "blueprintType": "NPC1041",
+          "name": "TsEntity_任务专用_标准化流放者男NPC3",
+          "areaId": 602,
+          "position": {
+            "x": -89055,
+            "y": 189664,
+            "z": 6300
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -38
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Nimm am Test des Explosiven Speerkopfs teil",
+        "en": "Participate in the Explosive Spear Tip Testing",
+        "es": "Participa en la prueba de la Cabeza de la Lanza explosiva",
+        "fr": "Participer au test d'amélioration de la Pointe de lance",
+        "ja": "槍先テスト・上級を始める",
+        "ko": "창끝 테스트 · 고급 참여",
+        "th": "เข้าร่วมบททดสอบหอกยาวปลายระเบิด",
+        "zh-Hans": "参加枪头进阶测试",
+        "zh-Hant": "參加槍頭進階測試"
+      },
+      "entities": [
+        {
+          "entityId": 131000405,
+          "mapId": 8,
+          "blueprintType": "NPC1041",
+          "name": "TsEntity_任务专用_标准化流放者男NPC3",
+          "areaId": 602,
+          "position": {
+            "x": -89055,
+            "y": 189664,
+            "z": 6300
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -38
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_遗落原乡打靶挑战",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Willkommen zum Schießstandtraining.",
+                "en": "Welcome to the shooting range training.",
+                "es": "{Male=Bienvenido;Female=Bienvenida} al entrenamiento en el campo de tiro.",
+                "fr": "Bienvenu au stand de tir.",
+                "ja": "射撃訓練へようこそ。",
+                "ko": "사격장 훈련에 오신 것을 환영합니다",
+                "th": "ยินดีต้อนรับสู่สนามซ้อมยิง",
+                "zh-Hans": "欢迎参与靶场训练。",
+                "zh-Hant": "歡迎參與靶場訓練。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Benutze die Kanone, um die Ziele auf dem Feld innerhalb einer Minute anzuschießen und Punkte zu sammeln.",
+                "en": "Use the cannon to target the objectives on the field within one minute and accumulate points.",
+                "es": "Usa el cañón para apuntar a los objetivos en el campo en un minuto y acumula puntos.",
+                "fr": "Utilisez le canon pour atteindre les cibles apparaissant sur le terrain et obtenir des points dans 1 min.",
+                "ja": "制限時間は1分。標的に射撃を命中させ、より多くの得点を獲得してください。",
+                "ko": "1분 동안 대포로 사격장에 나타나는 타깃을 명중시켜 포인트를 획득하세요",
+                "th": "ใช้ปืนใหญ่ตรงนั้นยิงเป้าในสนามภายในเวลาหนึ่งนาทีเพื่อเก็บคะแนน",
+                "zh-Hans": "在一分钟内，使用炮筒击中场上出现的炮靶，获取积分。",
+                "zh-Hant": "在一分鐘內，使用炮筒擊中場上出現的炮靶，獲取積分。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Je mehr Ziele du erfolgreich triffst und je näher du das Bullauge triffst, desto höher wird deine Punktzahl sein.",
+                "en": "The more targets you successfully hit, and the closer you hit to the bullseye, the higher your point count will be.",
+                "es": "Cuanto más objetivos golpees con éxito y más cerca golpees al centro del blanco, más puntos acumularás.",
+                "fr": "Plus vous touchez de cibles, plus vous obtenez de points. Plus vous vous rapprochez du milieu, vous obtenez plus de points.",
+                "ja": "命中数が多いほど、また、命中箇所が標的の中心に近いほど、より多くの得点を獲得できます。",
+                "ko": "더 많은 타깃을 명중시킬수록 더 많은 포인트를 획득할 수 있으며, 명중 위치가 타깃 중심에 가까울수록 더 많은 포인트를 획득할 수 있습니다",
+                "th": "ยิ่งยิงโดนเป้าและยิงได้ใกล้จุดศูนย์กลางมากเท่าไหร่ ก็จะยิ่งได้คะแนนเพิ่มขึ้น",
+                "zh-Hans": "击中的炮靶越多，积分越多；击中位置越接近靶心，积分越多。",
+                "zh-Hant": "擊中的炮靶越多，積分越多；擊中位置越接近靶心，積分越多。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sammle innerhalb einer Minute so viele Punkte wie möglich, um umfangreichere Belohnungen zu erhalten.",
+                "en": "Accumulate as many points as possible within one minute to access more substantial rewards.",
+                "es": "Acumula tantos puntos como sea posible en un minuto para acceder a recompensas más sustanciales.",
+                "fr": "Plus vous obtenez de points dans 1 min, les récompenses sont plus généreuses.",
+                "ja": "さらに、獲得した得点が多いほど、より豪華な報酬を獲得できますよ。",
+                "ko": "정해진 시간 내에 더 많은 포인트를 획득할수록 더 많은 보상을 받을 수 있습니다",
+                "th": "เก็บคะแนนให้มากที่สุดภายในหนึ่งนาทีเพื่อรับรางวัลที่มากขึ้น",
+                "zh-Hans": "规定时间内获得积分越多，奖励越丰厚。",
+                "zh-Hant": "規定時間內獲得積分越多，獎勵越豐厚。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

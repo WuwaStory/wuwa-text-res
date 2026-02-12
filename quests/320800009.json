@@ -1,0 +1,838 @@
+{
+  "id": 320800009,
+  "key": "重建寻宝小孩",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "zh-Hans": "dnt/寻宝小孩"
+  },
+  "desc": {
+    "zh-Hans": "dnt/帮助寻宝小孩找到宝藏"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "dnt/和小孩交谈"
+      },
+      "entities": [
+        {
+          "entityId": 320800311,
+          "mapId": 8,
+          "blueprintType": "TsEntity_SN_B2_4_七丘_MaleM_Old7_2",
+          "name": "TsEntity_SN_B2_4_七丘_MaleM_Old7_4",
+          "areaId": 33104,
+          "position": {
+            "x": 1241020,
+            "y": 1172310,
+            "z": 51970
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 320800312,
+          "mapId": 8,
+          "blueprintType": "TsEntity_SN_B2_4_七丘_MaleM_Old7_4",
+          "name": "TsEntity_SN_B2_4_七丘_MaleM_Old7_5",
+          "areaId": 33104,
+          "position": {
+            "x": 1241120,
+            "y": 1172340,
+            "z": 51970
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 320800313,
+          "mapId": 8,
+          "blueprintType": "TsEntity_声骸_铲子布偶_400412",
+          "name": "TsEntity_声骸_铲子布偶_400424",
+          "areaId": 33103,
+          "position": {
+            "x": 1217900,
+            "y": 1166050,
+            "z": 27456
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 320800314,
+          "mapId": 8,
+          "blueprintType": "NPC019",
+          "name": "TsEntity_180_006_矿工男",
+          "areaId": 33103,
+          "position": {
+            "x": 1217760,
+            "y": 1166090,
+            "z": 27467
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 320800315,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+          "name": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+          "areaId": 33103,
+          "position": {
+            "x": 1217050,
+            "y": 1164210,
+            "z": 27250
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 320800316,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+          "name": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+          "areaId": 33103,
+          "position": {
+            "x": 1217130,
+            "y": 1164240,
+            "z": 27250
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建生态支线",
+          "flowIndex": 6,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Glaubst du, Opa wird böse auf uns sein?",
+                "en": "You think Grandpa would get mad at us?",
+                "es": "¿Crees que el abuelo se enfadaría con nosotros?",
+                "fr": "Tu crois que grand-père sera en colère ?",
+                "ja": "おじいちゃんたち、怒るかな？",
+                "ko": "할아버지가 화내시면 어떡하지?",
+                "th": "คุณปู่จะโกรธพวกเราไหมเนี่ย?",
+                "zh-Hans": "爷爷他们不会生气吧。",
+                "zh-Hant": "爺爺他們不會生氣吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 800289,
+                "name": {
+                  "zh-Hans": "礼貌的小男孩"
+                },
+                "entity": {
+                  "entityId": 320800315,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217050,
+                    "y": 1164210,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 20
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nicht, wenn wir den Schatz finden. Keine Angst.",
+                "en": "Not if we find the treasure. Don't worry.",
+                "es": "No si encontramos el tesoro. No te preocupes.",
+                "fr": "Pas si on trouve le trésor. T'en fais pas.",
+                "ja": "お宝を見つけられたら、大丈夫だよ。",
+                "ko": "괜찮아, 우리가 보물만 찾으면 혼내지 않으실 거야",
+                "th": "ไม่โกรธหรอก ถ้าเราหาสมบัติเจอ ไม่ต้องกลัว",
+                "zh-Hans": "没关系，只要我们找到了宝藏，爷爷他们就不会训我们啦。",
+                "zh-Hant": "沒關係，只要我們找到了寶藏，爺爺他們就不會訓我們啦。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 800290,
+                "name": {
+                  "zh-Hans": "淘气的小女孩"
+                },
+                "entity": {
+                  "entityId": 320800316,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217130,
+                    "y": 1164240,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und wenn nicht?",
+                "en": "And if we don't?",
+                "es": "¿Y si no lo hacemos?",
+                "fr": "Et si on ne le trouve pas ?",
+                "ja": "でも、もしお宝がなかったら……？",
+                "ko": "못 찾으면 어떡해?",
+                "th": "แล้วถ้าหาไม่เจอล่ะ?",
+                "zh-Hans": "那要是没找到呢？",
+                "zh-Hant": "那要是沒找到呢？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 800289,
+                "name": {
+                  "zh-Hans": "礼貌的小男孩"
+                },
+                "entity": {
+                  "entityId": 320800315,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217050,
+                    "y": 1164210,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 20
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann … kriegst du Ärger, weil du mich nicht aufgehalten hast.",
+                "en": "Then... then you'll be in trouble for not stopping me.",
+                "es": "Entonces... entonces tendrás problemas por no detenerme.",
+                "fr": "Dans ce cas, tu auras des ennuis parce que tu m'as laissée faire.",
+                "ja": "それは……あんたのせいね。私を止められなかった、あんたのせい！",
+                "ko": "그... 그럼 넌 큰일 나는 거지 뭐. 날 못 막은 네 잘못이잖아?",
+                "th": "ก็... เธอจะโดนดุที่ไม่ยอมห้ามฉันไง",
+                "zh-Hans": "那……那你麻烦可就大了，谁让你没拦住我呢？",
+                "zh-Hant": "那……那你麻煩可就大了，誰讓你沒攔住我呢？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 800290,
+                "name": {
+                  "zh-Hans": "淘气的小女孩"
+                },
+                "entity": {
+                  "entityId": 320800316,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217130,
+                    "y": 1164240,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was?!",
+                "en": "What?!",
+                "es": "¡¿Qué?!",
+                "fr": "Quoi ?!",
+                "ja": "そんな！？",
+                "ko": "엥?!",
+                "th": "อะไรนะ?!",
+                "zh-Hans": "啊？！",
+                "zh-Hant": "啊？！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 800289,
+                "name": {
+                  "zh-Hans": "礼貌的小男孩"
+                },
+                "entity": {
+                  "entityId": 320800315,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217050,
+                    "y": 1164210,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 20
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach, sei doch nicht so kindisch. Ich kaufe dir Süßigkeiten!",
+                "en": "Oh, don't be such a baby. I'll buy you candy!",
+                "es": "Venga, no seas gallina. ¡Te compraré chuches!",
+                "fr": "Oh, fais pas le bébé. Je t'achèterai un bonbon !",
+                "ja": "もう、子供じゃないんだから！飴あげるから元気出しなさい！",
+                "ko": "아이 참, 애처럼 굴지 마. 사탕 사줄게!",
+                "th": "โอ๋ อย่าทำตัวเป็นเด็กน้อยสิ เดี๋ยวฉันซื้อลูกอมให้กินนะ!",
+                "zh-Hans": "哎呀，别像个小孩似的，我请你吃糖！",
+                "zh-Hant": "哎呀，別像個小孩一樣，我請你吃糖！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 800290,
+                "name": {
+                  "zh-Hans": "淘气的小女孩"
+                },
+                "entity": {
+                  "entityId": 320800316,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217130,
+                    "y": 1164240,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was sucht ihr?",
+                "en": "What are you looking for?",
+                "es": "¿Qué estáis buscando?",
+                "fr": "Qu'est-ce que vous cherchez ?",
+                "ja": "{Male=何を探してるんだ？;Female=何を探してるの？}",
+                "ko": "뭘 찾고 있는 거죠?",
+                "th": "กำลังหาอะไรกันอยู่เหรอ?",
+                "zh-Hans": "你们在找什么呢？",
+                "zh-Hant": "你們在找什麼呢？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einen Schatz!",
+                "en": "Treasure!",
+                "es": "¡Un tesoro!",
+                "fr": "Un trésor !",
+                "ja": "お宝を探してるの！",
+                "ko": "보물을 찾는 중이에요!",
+                "th": "สมบัติค่ะ!",
+                "zh-Hans": "我们在找宝藏！",
+                "zh-Hant": "我們在找寶藏！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 800290,
+                "name": {
+                  "zh-Hans": "淘气的小女孩"
+                },
+                "entity": {
+                  "entityId": 320800316,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Girl5_5",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217130,
+                    "y": 1164240,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wir müssen uns beeilen, sonst kriegen wir einen Riesenärger.",
+                "en": "But we've got to hurry or we'll be in big trouble.",
+                "es": "Pero tenemos que darnos prisa, antes de que nos pillen los mayores.",
+                "fr": "Mais on doit faire vite, sinon, on va avoir des ennuis.",
+                "ja": "急いでるんです！じゃないとお尻を叩かれる！",
+                "ko": "근데 빨리 찾아야 해요. 못 찾으면 혼날지도 몰라요!",
+                "th": "แต่เราต้องรีบแล้ว ไม่งั้นเราเจอปัญหาแน่",
+                "zh-Hans": "不过得抓紧，不然就是找打啦！",
+                "zh-Hant": "不過得抓緊，不然就是找打啦！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 800289,
+                "name": {
+                  "zh-Hans": "礼貌的小男孩"
+                },
+                "entity": {
+                  "entityId": 320800315,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "name": "TsEntity_TN_B2_4_七丘_FemaleS_Boy5_7",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217050,
+                    "y": 1164210,
+                    "z": 27250
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 20
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Soll ich euch helfen?",
+                    "en": "Want me to help?",
+                    "es": "¿Queréis ayuda?",
+                    "fr": "Vous voulez que je vous aide ?",
+                    "ja": "{Male=手伝おうか？;Female=手伝おうか？}",
+                    "ko": "좀 도와줄까?",
+                    "th": "ให้ช่วยไหม?",
+                    "zh-Hans": "我来帮帮你们吧？",
+                    "zh-Hant": "我來幫幫你們吧？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Medaille anbieten) Geht das als Schatz durch?",
+                    "en": "(Offer medal) Does this count as treasure?",
+                    "es": "(Ofrecer medalla) ¿Esto cuenta como tesoro?",
+                    "fr": "(Offrir la médaille) Est-ce que ça, ça compte comme un trésor ?",
+                    "ja": "（メダルを渡す）お宝はこれ？",
+                    "ko": "(메달을 건네준다) 이거 보물로 써도 되겠죠?",
+                    "th": "(ยื่นเหรียญ) อันนี้นับเป็นสมบัติหรือเปล่า?",
+                    "zh-Hans": "（交出奖牌）这个可以当宝藏吗？",
+                    "zh-Hant": "（交出獎牌）這個可以當寶藏嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Super! Danke!",
+                "en": "Great! Thank you!",
+                "es": "¡Genial! ¡Gracias!",
+                "fr": "Génial ! Merci !",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}ありがとう！",
+                "ko": "고마워요, {Male=오빠;Female=언니}!\n고마워요, {Male=형;Female=누나}!",
+                "th": "เยี่ยมเลย! ขอบคุณมาก!",
+                "zh-Hans": "谢谢{Male=哥哥;Female=姐姐}！",
+                "zh-Hant": "謝謝{Male=哥哥;Female=姐姐}！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 100165,
+                "name": {
+                  "zh-Hans": "孩子们"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dürfen wir die wirklich haben? Vielen, vielen Dank!",
+                "en": "Can we really have it? Thank you so much!",
+                "es": "¿De verdad podemos quedárnosla? ¡Muchas gracias!",
+                "fr": "Vous nous la donnez pour de vrai ? Merci infiniment.",
+                "ja": "いいの？{Male=お兄ちゃん;Female=お姉ちゃん}ありがとう！",
+                "ko": "정말 우리한테 주는 거예요? 고마워요, {Male=오빠;Female=언니}!\n정말 우리한테 주는 거예요? 고마워요, {Male=형;Female=누나}!",
+                "th": "คุณให้เราจริงเหรอ? ขอบคุณมาก!",
+                "zh-Hans": "这个真的可以给我们嘛，谢谢{Male=哥哥;Female=姐姐}！",
+                "zh-Hant": "這個真的可以給我們嘛，謝謝{Male=哥哥;Female=姐姐}！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 100165,
+                "name": {
+                  "zh-Hans": "孩子们"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "dnt/和施工工人交谈"
+      },
+      "entities": [
+        {
+          "entityId": 320800313,
+          "mapId": 8,
+          "blueprintType": "TsEntity_声骸_铲子布偶_400412",
+          "name": "TsEntity_声骸_铲子布偶_400424",
+          "areaId": 33103,
+          "position": {
+            "x": 1217900,
+            "y": 1166050,
+            "z": 27456
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 320800314,
+          "mapId": 8,
+          "blueprintType": "NPC019",
+          "name": "TsEntity_180_006_矿工男",
+          "areaId": 33103,
+          "position": {
+            "x": 1217760,
+            "y": 1166090,
+            "z": 27467
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_7_支线_重建生态支线",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hm, eine Medaille?",
+                "en": "Huh, a medal?",
+                "es": "¿Eh? ¿Una medalla?",
+                "fr": "Hein, une médaille ?",
+                "ja": "あれ？こんなところにメダルが……",
+                "ko": "어? 여기에 왜 메달이 있지?",
+                "th": "เอ๊ะ เหรียญรางวัลเหรอ?",
+                "zh-Hans": "咦，这怎么有块奖牌啊？",
+                "zh-Hant": "咦，這怎麼有塊獎牌啊？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 800284,
+                "name": {
+                  "zh-Hans": "大桦"
+                },
+                "entity": {
+                  "entityId": 320800314,
+                  "mapId": 8,
+                  "blueprintType": "NPC019",
+                  "name": "TsEntity_180_006_矿工男",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217760,
+                    "y": 1166090,
+                    "z": 27467
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hat die jemand fallen lassen?",
+                "en": "Did someone drop this?",
+                "es": "¿A alguien se le ha caído esto?",
+                "fr": "Quelqu'un l'a fait tomber ?",
+                "ja": "誰かの持ち物か？",
+                "ko": "누가 흘린 건가?",
+                "th": "เป็นของใครลืมไว้มั้ยนะ?",
+                "zh-Hans": "是谁遗漏的吗？",
+                "zh-Hant": "是誰遺漏的嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 800284,
+                "name": {
+                  "zh-Hans": "大桦"
+                },
+                "entity": {
+                  "entityId": 320800314,
+                  "mapId": 8,
+                  "blueprintType": "NPC019",
+                  "name": "TsEntity_180_006_矿工男",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217760,
+                    "y": 1166090,
+                    "z": 27467
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie es aussieht, hat sie wohl jemand Berühmten gehört. Aber hier ist schon so lange alles unter Wasser, dass diese Person wohl nicht mehr hier ist.",
+                "en": "The owner was probably someone famous by the looks of it. But this place's been underwater for so long, I doubt they're still around.",
+                "es": "Por lo que se ve, el dueño debía ser alguien famoso. Pero este lugar lleva tanto tiempo bajo el agua que dudo que siga por aquí.",
+                "fr": "Son propriétaire était sans doute célèbre, vu son apparence. Mais ce lieu a été englouti sous les eaux depuis si longtemps. Ça m'étonnerait qu'il soit encore dans le coin.",
+                "ja": "それにしても、すごい彫刻だな。偉い人の物だったのだろうか。だが、ここは長く黒潮の中にあった。きっとその持ち主も……",
+                "ko": "문양을 보니 메달 주인은 대단한 사람이었던 모양이네. 근데 여긴 오래전에 침수된 곳이라, 주인은 이미 세상을 떠났겠어",
+                "th": "เจ้าของเหรียญน่าจะเป็นคนมีชื่อเสียงนะ แต่ที่นี่น้ำท่วมตั้งนานแล้ว เจ้าของคงไม่อยู่แล้วมั้ง",
+                "zh-Hans": "瞧这上面画的，这奖牌的主人应该挺了不起的，不过这地方淹了很久吧，它的主人应该已经离世了。",
+                "zh-Hant": "瞧這上面畫的，這獎牌的主人應該挺了不起的，不過這地方淹了很久吧，它的主人應該已經離世了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 800284,
+                "name": {
+                  "zh-Hans": "大桦"
+                },
+                "entity": {
+                  "entityId": 320800314,
+                  "mapId": 8,
+                  "blueprintType": "NPC019",
+                  "name": "TsEntity_180_006_矿工男",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217760,
+                    "y": 1166090,
+                    "z": 27467
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na ja, ich kann damit nichts anfangen. Warum nimmst du sie nicht?",
+                "en": "Well, it's no use to me. Why don't you take it?",
+                "es": "Bueno, a mí no me sirve. ¿Por qué no te la quedas tú?",
+                "fr": "Eh bien, ça ne me sera d'aucune aide. Prends-la donc.",
+                "ja": "俺が持っていてもしょうがない。君にあげるよ。",
+                "ko": "이걸 내가 가지고 있어 봐야 소용없으니, 네가 가져갈래?",
+                "th": "ของนี่ใช้ทำอะไรก็ไม่ได้ ให้เธอดีกว่านะ",
+                "zh-Hans": "我留着这东西也没什么用，不然你拿着吧？",
+                "zh-Hant": "我留著這東西也沒什麼用，不然你拿著吧？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 800284,
+                "name": {
+                  "zh-Hans": "大桦"
+                },
+                "entity": {
+                  "entityId": 320800314,
+                  "mapId": 8,
+                  "blueprintType": "NPC019",
+                  "name": "TsEntity_180_006_矿工男",
+                  "areaId": 33103,
+                  "position": {
+                    "x": 1217760,
+                    "y": 1166090,
+                    "z": 27467
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

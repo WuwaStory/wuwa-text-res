@@ -1,0 +1,239 @@
+{
+  "id": 162700002,
+  "key": "刮刮乐引导任务",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Jenseits der Wellen",
+    "en": "Beyond the Waves",
+    "es": "Más allá de las olas",
+    "fr": "Au-delà des vagues",
+    "ja": "潮騒探検",
+    "ko": "조수 탐험",
+    "th": "ผจญกระแสคลื่น",
+    "zh-Hans": "踏潮探历",
+    "zh-Hant": "踏潮探歷"
+  },
+  "desc": {
+    "de": "Lollo-Logistik hat eine Partnerschaft mit der Pioneer Association eingegangen, um ein neues Event mit großzügigen Belohnungen zu starten. Besuche den Kurierwagen, um mehr zu erfahren.",
+    "en": "The Pioneer Association and Lollo Logistics introduced another joint campaign. Go check it out over at the Lollo Logistics Truck.",
+    "es": "Logística Lollo se ha aliado nuevamente con la Asociación de Pioneros para lanzar un evento con generosas recompensas. Dirígete a la furgoneta de reparto para más detalles.",
+    "fr": "Vérifier le Camion de Loulou Logistique. Obtenir l'information concernant l'événement de collaboration avec l'Association pionnière.",
+    "ja": "ブブ物流と先駆条約による、豪華報酬が獲得可能な共催イベントが始まった。配送車のところへ行ってみよう。",
+    "ko": "선행 공약 그리고 무무물류가 다시 손을 잡아 푸짐한 보상을 제공해주는 새로운 이벤트를 준비하였습니다. 물류 운송 차량에 있는 곳으로 가서 확인해 보시죠",
+    "th": "สมาคมผู้บุกเบิกและลอลโล่โลจิสติกส์เปิดตัวแคมเปญร่วมกันอีกครั้ง แวะไปดูกันได้ที่รถบรรทุกลอลโล่โลจิสติกส์",
+    "zh-Hans": "先行公约与呜呜物流再次联合推出了奖励丰厚的新活动，去物流车那里看看吧。",
+    "zh-Hant": "先行公約與嗚嗚物流再次聯合推出了獎勵豐厚的新活動，去物流車那裡看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überprüfe den Lollo-Logistik-Kurierwagen",
+        "en": "Inspect the Lollo Logistics Truck",
+        "es": "Inspecciona la furgoneta de reparto Lollo.",
+        "fr": "Camion de Loulou Logistique",
+        "ja": "ブブ物流の配送車を調べる",
+        "ko": "무무물류 운송 차량 조사하기",
+        "th": "ตรวจสอบรถบรรทุกลอลโล่โลจิสติกส์",
+        "zh-Hans": "调查呜呜物流车",
+        "zh-Hant": "調查嗚嗚物流車"
+      },
+      "entities": [
+        {
+          "entityId": 162700001,
+          "mapId": 8,
+          "blueprintType": "branch2.1_TsEntity_刮刮乐活动_2_1_呜呜物流车",
+          "name": "TsEntity_任务_2_1_呜呜物流车",
+          "areaId": 301,
+          "position": {
+            "x": -61810,
+            "y": 105130,
+            "z": 370
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_1_刮刮乐",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ein Fahrzeug von Lollo-Logistik mit einer seltsamen Lackierung. Es kommt mir bekannt vor ...",
+                "en": "A Lollo Logistics vehicle with a strange paint job... Now where have I seen it before?",
+                "es": "Furgoneta de reparto con una pintura extraña... ¿me suena un poco familiar?",
+                "fr": "Un véhicule de Loulou Logistique à la peinture étrange. Je me demande qui l'a garé juste devant Ça a l'air familier...",
+                "ja": "変わった塗装の配送車だ……前にも見たような気もするが……",
+                "ko": "특이한 도색을 한 물류차네... 어디서 본 것 같기도 하고",
+                "th": "รถสีสันประหลาดคันหนึ่งของลอลโล่โลจิสติกส์... ฉันเคยเห็นที่ไหนมาก่อนกันนะ?",
+                "zh-Hans": "一辆奇异涂装的物流车……好像有点眼熟？",
+                "zh-Hant": "一輛奇異塗裝的物流車……好像有點眼熟？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das Fahrzeug untersuchen.",
+                    "en": "Examine the vehicle.",
+                    "es": "Observar la furgoneta de reparto",
+                    "fr": "Examiner le véhicule",
+                    "ja": "配送車を観察する。",
+                    "ko": "물류 운송 차량 관찰하기",
+                    "th": "ตรวจสอบรถ",
+                    "zh-Hans": "观察物流车。",
+                    "zh-Hant": "觀察物流車。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Verlassen.",
+                    "en": "Leave.",
+                    "es": "Irse",
+                    "fr": "Quitter",
+                    "ja": "離れる。",
+                    "ko": "떠나기",
+                    "th": "เดินจากไป",
+                    "zh-Hans": "离开。",
+                    "zh-Hant": "離開。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Über den Lautsprecher des Fahrzeugs läuft Werbung mit lustiger Musik.",
+                "en": "The loudspeaker on the vehicle is playing an advertisement with funny music.",
+                "es": "Está reproduciendo un anuncio con música divertida.",
+                "fr": "Le haut-parleur du véhicule laisse entendre une publicité à la musique très étrange.",
+                "ja": "カースピーカーからは奇妙な音楽と宣伝文句が流れている……",
+                "ko": "물류 운송 차량 스피커에서 묘한 음악과 광고 대사가 흘러나온다...",
+                "th": "ลำโพงบนรถกำลังเล้นโฆษณาพร้อมเสียงดนตรีตลกๆ",
+                "zh-Hans": "车载音响正放着奇妙的音乐和广告词……",
+                "zh-Hant": "汽車音響正放著奇妙的音樂和廣告詞……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Hol dein Terminal raus – den zuverlässigen Wunscherfüller! Lollo-Logistik und die Pioneer-Association kehren zurück, vollgepackt mit Vorteilen und Geschenken, um deine Lieblingskampagne: Jenseits der Wellen, zurückzubringen!“",
+                "en": "\"Take out your Terminal—your trusty wish-granter! Lollo Logistics and the Pioneer Association are here to back your favorite campaign: Beyond the Waves, loaded up with perks and goodies!\"",
+                "es": "«Saca la Terminal, ¡tu gran ayudante que hace realidad los deseos de todos! Logística Lollo y la Asociación de Pioneros regresan, cargados de regalos y sorpresas, trayendo de vuelta tu campaña favorita: ¡Más allá de las olas!»",
+                "fr": "« Attrapez votre borne, votre lampe de génie personnelle ! Recevez à nouveau de super avantages grâce aux subventions de Loulou Logistique. Au-delà des vagues, l'événement aimé est revenu ! »",
+                "ja": "「さあ、デバイスを開いて～みんなの願いを叶えるお手伝い！ブブ物流は先駆条約と再びタッグを組み、豊富なプレゼントを用意したコラボイベント「潮騒探検」をあなたにお届けします！」",
+                "ko": "「당신의 단말기를 켜주세요—— 여러분의 소원을 이루어줄 도우미! 무무 물류가 선행 공약과 함께 풍성한 선물을 싣고, 특별 협업 이벤트: 조수 탐험으로 다시 돌아왔습니다!」",
+                "th": "หยิบเทอร์มินัลของคุณ ผู้ช่วยที่ไว้ใจได้และทำให้คุณสมปรารถนาออกมา! ลอลโล่โลจิสติกส์และสมาคมผู้บุกเบิกพร้อมช่วยสนับสนุนแคมเปญสุดโปรดของคุณแล้ว นั่นคือผจญกระแสคลื่น ที่อัดแน่นไปด้วยสิทธิพิเศษและของรางวัลมากมาย!",
+                "zh-Hans": "「打开你的终端机——实现大家愿望的好助手！呜呜物流携手先行公约，满载着丰富赠礼，再度为您带来联名活动：踏潮探历！」",
+                "zh-Hant": "「打開你的終端——實現大家願望的好助手！嗚嗚物流攜手先行公約，滿載著豐富贈禮，再度為您帶來聯名活動：踏潮探歷！」"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 800079,
+                "name": {
+                  "zh-Hans": "呜呜物流车"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Lade deine Abenteuer in Jinzhou einfach am Kurierwagen hoch und du erhältst ein ‚Abenteuerpaket‘ voller Überraschungen für den entsprechenden Ort!“",
+                "en": "\"Upload your Adventure Logs to this courier truck, and you'll receive an 'Adventure Package' for the corresponding location filled with surprises!\"",
+                "es": "«Sube tus notas de aventura a la furgoneta de reparto y recibirás el paquete de aventura correspondiente que incluirá sorpresas adicionales!»",
+                "fr": "« Que vous ayez exploré des montagnes, des vallées, une ville débordante d'activité ou au contraire très calme, vous n'avez qu'à envoyer vos aventures à notre camion de livraison pour recevoir un Pack d'aventure de la zone correspondante rempli de surprises ! »",
+                "ja": "「配送車に探検ノートをアップロードすれば、ミニマップ上で選択したブロックから『探検補給』を獲得できます！補給には様々なサプライズも！」",
+                "ko": "「물류 운송 차량에 탐험 후기를 올리고 출석 확인만 하시면, 해당되는 미니맵의 탐험 보상을 획득하실 수 있습니다! 보상에는 여러 가지 깜짝선물도 함께 포함되어 있습니다!」",
+                "th": "เพียงอัปโหลดบันทึกการผจญภัยของคุณบนรถส่งของคันนี้ คุณก็จะได้รับ \"เสบียงผจญภัย\" ของสถานที่เหล่านั้นที่เต็มไปด้วยเซอร์ไพรส์!",
+                "zh-Hans": "「只要您于物流车处上传探历札记完成打卡，就可以获得相应小地图上的“探历补给”！补给中更有多种不同额外惊喜！」",
+                "zh-Hant": "「只要您於物流車處上傳探歷札記完成打卡，就可以獲得相應小地圖上的『探歷補給』！補給中更有多種額外驚喜！」"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 800079,
+                "name": {
+                  "zh-Hans": "呜呜物流车"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Lollo-Logistik Versanddienste erhalten ein weiteres Upgrade! Gestaffelte Rabatte sind jetzt größer, besser und stärker denn je während der gesamten Kampagne!“",
+                "en": "\"Lollo express shipping service gets another upgrade! Tiered discounts are now bigger, better, and stronger than ever across the whole campaign!\"",
+                "es": "«¡El servicio de envío Lollo Express está mejor que nunca! ¡Disfruta ahora de los descuentos por niveles más grandes, más espectaculares y más mejores de toda la campaña!»",
+                "fr": "« L'express de Loulou logistique apporte encore plus de surprise ! Participez à l'événement maintenant ! Les offres et ventes privées vous attendent ! »",
+                "ja": "「さらに、ブブ物流独自の即配サービスもアップグレードしました。イベント期間中、一定額以上のお買い上げで、さらに割引率アップ！」",
+                "ko": "「무무 물류의 특별 퀵서비스도 더욱 업그레이드되어, 이벤트 기간 내에 액수를 만족할 시 더욱 많은 할인 혜택을 누리실 수 있습니다!」",
+                "th": "บริการส่งด่วนของลอลโล่อัปเกรดใหม่อีกครั้งแล้ว! ส่วนลดแบบขั้นบันไดจะเยอะขึ้น ดีขึ้น และอลังการยิ่งกว่าที่เคยตลอดทั้งแคมเปญ!",
+                "zh-Hans": "「呜呜物流特色闪送服务也再次升级，活动期间，满额减免优惠力度更强！」",
+                "zh-Hant": "「嗚嗚物流特色閃送服務也再次升級，活動期間，滿額減免優惠力度更強！」"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 800079,
+                "name": {
+                  "zh-Hans": "呜呜物流车"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "„Achtung: Während wunderschöne Aussichten und Belohnungen auf dich warten, denke daran, dass Sicherheit immer an erster Stelle steht! Sei sicher und viel Spaß beim Abenteuer!“",
+                "en": "\"A friendly reminder: While lovely views and rewards are up for grabs, remember that safety always comes first! Be safe and happy adventuring!\"",
+                "es": "«Y les recordamos amablemente que, aunque hay bellos paisajes y recompensas disponibles, ¡la seguridad siempre es la prioridad! ¡Que disfrutes de la aventura!»",
+                "fr": "« Petit rappel : nous savons que les beaux paysages et les superbes récompenses vous font rêver, mais n'oubliez pas que votre sécurité prime sur le reste ! Bon voyage ! »",
+                "ja": "「注意事項：景色も報酬も素晴らしいですが、探検の際は安全を第一にお願いします！どうぞ良い旅を！」",
+                "ko": "「알림: 풍경과 보상도 좋지만, 여러분 모두 탐색 시 안전에 유의해 주시기 바랍니다! 무무 물류가 당신의 즐거운 여행을 응원합니다! 」",
+                "th": "ขอเตือนอย่างเป็นมิตร แม้ว่าทิวทัศน์และรางวัลจะน่าดึงดูด แต่ความปลอดภัยต้องมาก่อนเสมอ! ขอให้ปลอดภัยและสนุกกับการผจญภัยละ!",
+                "zh-Hans": "「友情提示：风景和奖励虽好，但请诸位探索时注意安全！呜呜物流，祝您旅途愉快！」",
+                "zh-Hant": "「友情提示：風景和獎勵雖好，但請諸位探索時注意安全！嗚嗚物流，祝您旅途愉快！」"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 800079,
+                "name": {
+                  "zh-Hans": "呜呜物流车"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

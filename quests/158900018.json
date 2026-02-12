@@ -1,0 +1,455 @@
+{
+  "id": 158900018,
+  "key": "饭店4B（吃烤糊披萨）",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Margheritas Tagesangebot IV",
+    "en": "Margherita's Daily Special IV",
+    "es": "Menú del dia IV",
+    "fr": "Plat du jour de Margherita - IV",
+    "ja": "マルゲリータの日替わりセット・四",
+    "ko": "마거리트 오늘의 세트 · IV",
+    "th": "เมนูพิเศษประจำวันของมาร์เกริตา IV",
+    "zh-Hans": "玛格烈特今日套餐·四",
+    "zh-Hant": "瑪格烈特今日套餐·四"
+  },
+  "desc": {
+    "de": "Lelia, die sich nicht von vergangenen Misserfolgen aufhalten lässt, hat sich in ihren nächsten Versuch gestürzt.",
+    "en": "Not one to dwell on past failures, Lelia has thrown herself into her next attempt.",
+    "es": "Lelia no es de las que se detienen en fracasos pasados, se ha lanzado a su siguiente intento.",
+    "fr": "Ne se laissant pas abattre par ses échecs passés, Lelia s'est lancée dans sa prochaine tentative.",
+    "ja": "前回の失敗に悲しむ暇もなく、リーリアは再び新たな挑戦に立ち向かっている……",
+    "ko": "지난번 실패를 슬퍼할 겨를도 없이, 라일리아가 바로 새로운 시도를 시작하였다...",
+    "th": "เธอไม่ใช่คนแบบที่จะมัวจมอยู่กับความล้มเหลวในอดีต Lelia พร้อมแล้วที่จะทุ่มเทความพยายามครั้งใหม่",
+    "zh-Hans": "来不及为上次的失败而悲伤，莱丽雅又努力地开始了新的尝试……",
+    "zh-Hant": "來不及為上次的失敗而悲傷，萊麗雅又努力地開始了新的嘗試……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Probier Lelias Gericht",
+        "en": "Taste Lelia's dish",
+        "es": "Prueba el plato de Lelia.",
+        "fr": "Goûter le plat de Lelia",
+        "ja": "リーリアが作った料理を食べてみる",
+        "ko": "라일리아가 만든 음식 시식하기",
+        "th": "ชิมอาหารของ Lelia",
+        "zh-Hans": "去尝尝莱丽娅做的菜",
+        "zh-Hant": "去嚐嚐萊麗婭做的菜"
+      },
+      "entities": [
+        {
+          "entityId": 167900016,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_FemaleM6_5",
+          "name": "TsEntity_FemaleM6_5_莱丽娅见习厨师",
+          "areaId": 1693,
+          "position": {
+            "x": 703880,
+            "y": 586890,
+            "z": 160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 167900028,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录餐厅buff2",
+          "areaId": 1693,
+          "position": {
+            "x": 703570,
+            "y": 587067,
+            "z": 72
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_玛格烈特今日套餐",
+          "flowIndex": 3,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Tut mir leid, heute wird es wohl keine Verköstigung geben.",
+                "en": "Sorry, I'm afraid there's no taste test today.",
+                "es": "Lo siento, pero me temo que hoy no tengo nada para que pruebes.",
+                "fr": "Désolée, je crains qu'il n'y ait pas de dégustation aujourd'hui.",
+                "ja": "ご、ごめんなさい。今日は試食の用意ができていなくて……",
+                "ko": "미, 미안... 더 이상 시식을 부탁해선 안 될 것 같아...",
+                "th": "ขอโทษนะคะ วันนี้ไม่ได้เตรียมอะไรให้ลองชิมเลย",
+                "zh-Hans": "抱、抱歉，这次应该不能让您试吃了。",
+                "zh-Hant": "抱、抱歉，這次應該不能讓您試吃了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hast du nichts Neues ausprobiert?",
+                    "en": "Didn't try anything new?",
+                    "es": "¿No has cocinado nada nuevo?",
+                    "fr": "Tu n'as rien essayé de nouveau ?",
+                    "ja": "{Male=作ってないのか？;Female=作ってないの？}",
+                    "ko": "새로 만든 요리가 없나요?",
+                    "th": "ไม่ได้ลองทำเมนูใหม่ๆ เหรอ?",
+                    "zh-Hans": "没做新菜吗？",
+                    "zh-Hant": "沒做新菜嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Doch! Heute sollte es Margherita-Pizza geben, aber …",
+                "en": "I did! Today was supposed to be Margherita Pizza, but...",
+                "es": "¡Sí que lo hice! Hoy se suponía que iba a haber pizza Margherita, pero...",
+                "fr": "Si ! Aujourd'hui, ça devait être une pizza Margherita, mais...",
+                "ja": "いえ、実は「マルゲリータ・ピザ」を作ってみたのですが……",
+                "ko": "있긴 해, 오늘은 「마르게리타 피자」를 만들어봤어, 하지만...",
+                "th": "ลองสิ! จริงๆ วันนี้ตั้งใจทำพิซซา Margherita แต่...",
+                "zh-Hans": "做了的，今天学着做了「玛格烈特披萨」，但是……",
+                "zh-Hant": "做了的，今天學著做了「瑪格烈特披薩」，但是……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum so geheimnisvoll?",
+                    "en": "Why so mysterious about it?",
+                    "es": "Venga, suéltalo.",
+                    "fr": "Pourquoi tu fais autant de mystère ?",
+                    "ja": "ちゃんと作ってるじゃん。",
+                    "ko": "뭔가 감추는 것 같네요?",
+                    "th": "ทำไมต้องพูดให้ลึกลับด้วย?",
+                    "zh-Hans": "怎么神神秘秘的？",
+                    "zh-Hant": "怎麼神神秘秘的？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Schon gut. Lass uns probieren.",
+                    "en": "It's alright. Let's see it.",
+                    "es": "No pasa nada. Vamos a probarla.",
+                    "fr": "Ça va aller. Voyons voir.",
+                    "ja": "見せて。",
+                    "ko": "보여주세요",
+                    "th": "ไม่เป็นไร เอามาดูหน่อยสิ",
+                    "zh-Hans": "给我看看。",
+                    "zh-Hant": "給我看看。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Bist du sicher? Okay … Sag nicht, dass ich dich nicht gewarnt habe.",
+                "en": "Are you sure? Okay… don't say I didn't warn you.",
+                "es": "¿Seguro? Bueno... no digas que no te advertí.",
+                "fr": "Vous êtes {Male=sûr;Female=sûre} ? D'accord... Je vous aurai {Male=prévenu;Female=prévenue}.",
+                "ja": "えっと……あまり人に見せられるものじゃないと言いますか……",
+                "ko": "어? 정말로 보고 싶어? 그래 뭐...",
+                "th": "แน่ใจนะคะ? ก็ได้... อย่าหาว่าฉันไม่เตือนแล้วกันนะ",
+                "zh-Hans": "诶？真的要看吗？好吧……",
+                "zh-Hant": "欸？真的要看嗎？好吧……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was vor dir auf dem Teller liegt, ist die Bezeichnung „Pizza“ nicht wert. Die Oberseite ist fast vollständig verkohlt, nur einige Stellen sehen ansatzweise genießbar aus.",
+                "en": "What lies before you can barely be called a pizza. Most of its surface is charred, with only a few spots that look remotely edible.",
+                "es": "Lo que tienes ante ti apenas puede llamarse pizza. La mayor parte de su superficie está carbonizada, y apenas una pequeña superficie de la misma parece remotamente comestible.",
+                "fr": "Ce qui se trouve devant vous a difficilement la forme d'une pizza. La plupart de sa surface est carbonisée, et seuls quelques endroits semblent relativement comestibles.",
+                "ja": "目の前の焼け焦げた物体は、わずかに無事な部分が残っているものの、とてもピザと呼べる料理ではない。",
+                "ko": "눈앞의 물체는 피자라고 하기에는 무리가 있었다. 대부분이 까맣게 타버렸고, 정상적으로 보이는 부분은 얼마 되지 않았다",
+                "th": "สิ่งที่อยู่ตรงหน้าคุณนี่แทบจะเรียกว่าพิซซาไม่ได้เลย เกือบทั้งแผ่นเป็นรอยไหม้เกรียม เหลือแค่ไม่กี่จุดเท่านั้นที่พอจะกินได้",
+                "zh-Hans": "眼前的物体已经不能被称为披萨了，焦糊的表面上只剩下少许完好的区域。",
+                "zh-Hant": "眼前的物體已經不能被稱為披薩了，焦糊的表面上只剩下少許完好的區域。"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "Vorsichtig brichst du ein kleines Stück ab, das nicht verbrannt ist und beißt ab.",
+                "en": "Carefully, you break off a piece that looks safe and take a bite.",
+                "es": "Con cuidado, arrancas un trozo que parece seguro y le das un mordisco.",
+                "fr": "Prudemment, vous détachez un morceau qui semble sûr et tentez le coup.",
+                "ja": "意を決して、その物体のピザのような部分をちぎり、口に運んでみるが……",
+                "ko": "정상으로 보이는 부분을 조심스레 떼어서 입에 넣고 씹기 시작했다",
+                "th": "คุณค่อยๆ หักเอาชิ้นที่ดูพอกินได้ออกมา แล้วลองกัดหนึ่งคำ",
+                "zh-Hans": "你小心地扯下了一点色泽正常的面饼，将它送入口中，咀嚼。",
+                "zh-Hant": "你小心地扯下了一點色澤正常的麵餅，將它送入口中，咀嚼。"
+              },
+              "id": 5
+            },
+            {
+              "text": {
+                "de": "… Du hast wirklich probiert?",
+                "en": "...You're really trying it?",
+                "es": "... ¿No te repugna?",
+                "fr": "... Vous allez vraiment l'essayer ?",
+                "ja": "……あ、味の方は……？",
+                "ko": "먹을 수는 있는 거지?",
+                "th": "...คุณจะชิมจริงๆ เหรอ?",
+                "zh-Hans": "……这真的还能吃吗？",
+                "zh-Hant": "……這真的還能吃嗎？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sie … ist nicht völlig hinüber?",
+                    "en": "It's... not too bad?",
+                    "es": "No está... tan mal.",
+                    "fr": "Ce n'est... pas trop mal ?",
+                    "ja": "意外と……食べれる、かも……",
+                    "ko": "생각보다... 괜찮은 거 같은데요?",
+                    "th": "ก็... ไม่แย่เท่าไหร่นะ?",
+                    "zh-Hans": "好像……还行？",
+                    "zh-Hant": "好像……還行？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich hatte schon bessere Pizza.",
+                    "en": "I've had better.",
+                    "es": "Las he probado mejores.",
+                    "fr": "J'ai connu mieux.",
+                    "ja": "……まずい。",
+                    "ko": "못 먹겠어요",
+                    "th": "เคยกินที่ดีกว่านี้",
+                    "zh-Hans": "……难吃。",
+                    "zh-Hant": "……難吃。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich weiß, du willst nur höflich sein. Schon gut. Ich werde es trotzdem wieder versuchen.",
+                "en": "I know you're just being kind. It's all right. I won't let this stop me from trying again.",
+                "es": "Sé que solo estás siendo amable. Está bien, no pasa nada. No dejaré que esto me impida intentarlo de nuevo.",
+                "fr": "Vous voulez vous montrer sympathique. Je le sais. Ça ne m'empêchera pas d'essayer à nouveau.",
+                "ja": "うう、励ましてくれるのですね。次こそは必ず美味しい料理を作ります。",
+                "ko": "일부러 좋게 말해주는 거 알아. 걱정 마, 이대로 포기하지 않을 테니까",
+                "th": "ฉันรู้ว่าคุณพูดปลอบใจ แต่ไม่เป็นไรหรอกค่ะ ฉันจะไม่ยอมแพ้เพราะเรื่องแค่นี้แน่",
+                "zh-Hans": "我知道您是在安慰我。放心，我不会就这样放弃的。",
+                "zh-Hant": "我知道您是在安慰我。放心，我不會就這樣放棄的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist alles meine Schuld. All diese köstlichen Zutaten müssen weggeworfen werden.",
+                "en": "It's all my fault. All these good ingredients have gone to waste.",
+                "es": "Todo es por mi culpa... He echado a perder un montón de buenos ingredientes.",
+                "fr": "Tout est de ma faute. J'ai gaspillé tous ces bons ingrédients.",
+                "ja": "私が悪いんです、せっかくの食材まで無駄にして……",
+                "ko": "다 내 탓이야, 좋은 재료들을 낭비만 하고",
+                "th": "โทษทีนะคะ วัตถุดิบดีๆ ต้องเสียเปล่าเพราะฉันหมดเลย",
+                "zh-Hans": "都是我的问题，好好的食材都被浪费了。",
+                "zh-Hant": "都是我的問題，好好的食材都被浪費了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich glaube, ich muss noch mehr mit Bakie üben. Ich habe sie zu lange im Ofen gelassen.",
+                "en": "Guess I still need more practice with Bakie. I left it in for too long this time.",
+                "es": "Creo que todavía necesito más práctica con Bakito. Esta vez la dejé demasiado tiempo.",
+                "fr": "Je suppose que j'ai besoin de pratiquer un peu plus avec Fourno. Je l'ai laissée dedans trop longtemps cette fois.",
+                "ja": "もっと「ベイキー」と息を合わせないと……今回は焼きすぎてしまいました。",
+                "ko": "「베키」랑 손발을 더 맞춰봐야겠어... 너무 오래 구운 것 같아",
+                "th": "ฉันคงต้องฝึกกับ Bakie อีกเยอะเลย รอบนี้ฉันอบทิ้งไว้นานเกินไป",
+                "zh-Hans": "我得和「焙焙」培养默契才行……这次烤得太久了。",
+                "zh-Hant": "我得和「焙焙」培養默契才行……這次烤得太久了。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das richtige Timing ist entscheidend.",
+                    "en": "Timing is everything.",
+                    "es": "El tiempo lo es todo.",
+                    "fr": "Le timing est essentiel.",
+                    "ja": "火加減は大事。",
+                    "ko": "불의 세기가 매우 중요하죠",
+                    "th": "เวลาเป็นสิ่งสำคัญนะ",
+                    "zh-Hans": "火候很重要。",
+                    "zh-Hant": "火候很重要。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Vielleicht kannst du dir nächstes Mal einen Wecker stellen?",
+                    "en": "Maybe set a timer next time?",
+                    "es": "¿Y si te pones una alarma la próxima vez?",
+                    "fr": "Utilise un minuteur la prochaine fois ?",
+                    "ja": "次はタイマーを忘れないで。",
+                    "ko": "다음엔 꼭 시간을 체크하세요",
+                    "th": "คราวหน้าลองจับเวลาสิ",
+                    "zh-Hans": "下次记得掐表。",
+                    "zh-Hant": "下次記得計時。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstanden. Ich werde die Garzeiten für jedes einzelne Gericht aufschreiben.",
+                "en": "Got it. I'll take note of the cooking time for every single dish.",
+                "es": "Así lo haré. Tomaré nota del tiempo de cocción de cada receta.",
+                "fr": "Compris. Je vais noter le temps de cuisson pour chaque plat.",
+                "ja": "わかりました、すべての料理の調理時間をきちんとメモしておきます。",
+                "ko": "알겠어, 모든 요리의 조리 시간을 기록해야겠어",
+                "th": "เข้าใจแล้วค่ะ คราวหน้าจะลองจับเวลาทุกเมนูเลย",
+                "zh-Hans": "明白，我会认真地记下每一道菜品的烹饪时间的。",
+                "zh-Hant": "明白，我會認真地記下每一道菜品的烹飪時間的。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einen Zeitmesser zu benutzen, klingt gut. Ich lasse mich immer von der Flamme ablenken und dann verbrennt das Essen.",
+                "en": "A timer sounds like a good idea. I always get distracted watching the fire and overcook the food.",
+                "es": "Una alarma parece una buena idea. Siempre me distraigo mirando el fuego y cocino la comida demasiado.",
+                "fr": "Un minuteur semble être une bonne idée. Je me laisse toujours distraire en regardant le feu et je cuis trop la nourriture.",
+                "ja": "そうですね……私、いつも火を見てぼーっとしてしまって、気がついたら食材が焦げてるんです。",
+                "ko": "진작 도구의 도움을 받을걸... 늘 화덕을 보면서 멍을 때리거든. 정신을 차려 보면 이미 다 타 있고 말이야",
+                "th": "ฟังดูเป็นความคิดที่ดีนะคะ ปกติฉันชอบเผลอมองไฟจนเพลินแล้วอาหารก็ไหม้ทุกที",
+                "zh-Hans": "借助工具应该会好一些……我总是盯着炉火走神，等回过神来，食材就烤过头了。",
+                "zh-Hant": "借助工具應該會好一些……我總是盯著爐火走神，等回過神來，食材就烤過頭了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ab jetzt ist es mein oberstes Ziel, mein Essen nicht zu verbrennen!",
+                "en": "From now on, my goal is to master the art of not burning the food!",
+                "es": "¡A partir de ahora, mi objetivo es dominar el arte de no quemar la comida!",
+                "fr": "À partir de maintenant, mon objectif est de maîtriser l'art de ne pas cramer la bouffe !",
+                "ja": "次からは、「今度こそ料理を焦がさない」ということを目標に頑張ります！",
+                "ko": "다음엔, 「절대 태우지 않기」를 목표로 할 거야!",
+                "th": "จากนี้ไป เป้าหมายของฉันคือการทำอาหารโดยไม่ให้ไหม้อีก!",
+                "zh-Hans": "接下来，我会以“下次不把食物烤焦”为目标而努力！",
+                "zh-Hant": "接下來，我會以「下次不把食物烤焦」為目標而努力！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Willst du dir nicht höhere Ziele setzen?",
+                    "en": "Shouldn't you try to aim a little higher?",
+                    "es": "¿No deberías intentar apuntar un poco más alto?",
+                    "fr": "Ne devrais-tu pas viser un poil plus haut ?",
+                    "ja": "ちょっと簡単すぎない？",
+                    "ko": "목표가 너무 소박한 거 아닌가요?",
+                    "th": "ตั้งเป้าให้สูงกว่านี้หน่อยจะดีกว่ามั้ย?",
+                    "zh-Hans": "目标太简单了吧？",
+                    "zh-Hant": "目標太簡單了吧？"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

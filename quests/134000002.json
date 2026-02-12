@@ -1,0 +1,4365 @@
+{
+  "id": 134000002,
+  "key": "传说中的密方机关术·三",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Die sagenumwobene Mechanik des magnetischen Würfels - III",
+    "en": "The Fabled Magnetic Cube Mechanics - III",
+    "es": "La legendaria mecánica del cubo magnético: III",
+    "fr": "Légende des Cubes magnétiques : III",
+    "ja": "完全なる密方機巧術・その三",
+    "ko": "전설의 큐브 기관술 · Ⅲ",
+    "th": "กลไกลูกบาศก์แม่เหล็กในตำนาน - III",
+    "zh-Hans": "传说中的密方机关术·三",
+    "zh-Hant": "傳說中的密方機關術·三"
+  },
+  "desc": {
+    "de": "Mizhi ist aufgewacht. Was hat er genau in der verlassenen Mine erlebt und hat er die ultimative Automatenmechanik gefunden, die er verfolgt hat?",
+    "en": "Mizhi has come to his senses. What exactly did he encounter in the abandoned mine, and did he manage to find the ultimate Mechanics he had been pursuing?",
+    "es": "Mizhi se ha despertado. ¿Qué es exactamente lo que encontró en la mina abandonada, y encontró la mecánica cibernética definitiva que había estado persiguiendo?",
+    "fr": "Mizhi a repris ses esprits. Mais qu'a-t-il vraiment découvert dans la mine abandonnée ? Et a-t-il réussi à mettre la main sur la technique ultime qu'il recherchait ?",
+    "ja": "覓知が目覚めた。廃鉱山で一体何があったのか、究極の機巧術を見つけただろうか？",
+    "ko": "문연이 깨어났습니다. 페기된 광산 동굴에서 대체 무슨 일을 당했고 완벽한 기관술을 찾아냈을까요?",
+    "th": "มิจิได้สติแล้ว เขาไปเจออะไรมาในเหมืองร้างกันแน่ แล้วเขาหากลไกขั้นสุดยอดที่เขาแสวงหาเจอหรือไม่",
+    "zh-Hans": "觅知醒了，他究竟在废弃矿洞里遭遇了什么，有没有追寻到究极机关术呢？",
+    "zh-Hant": "覓知醒了，他究竟在廢棄礦洞裡遭遇了什麼，有沒有追尋到究極機關術呢？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 16,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zur Mechanik-Wartungsstelle in der Mine",
+        "en": "Head to the Mechanics maintenance area at the mine",
+        "es": "Dirígete al punto de mantenimiento de la mecánica en la mina",
+        "fr": "Aller à la zone d'entretien des Cubes magnétiques",
+        "ja": "採掘場の密方機巧に向かう",
+        "ko": "광산에 위치한 큐브 기관 정비소로 이동",
+        "th": "มุ่งหน้าไปยังพื้นที่บำรุงรักษากลไกที่เหมือง",
+        "zh-Hans": "前往矿场密方机关维护处",
+        "zh-Hant": "前往礦場密方機關維護處"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Mizhi",
+        "en": "Talk to Mizhi",
+        "es": "Habla con Mizhi",
+        "fr": "Parler à Mizhi",
+        "ja": "覓知と話す",
+        "ko": "문연과 대화",
+        "th": "คุยกับมิจิ",
+        "zh-Hans": "和觅知对话",
+        "zh-Hant": "和覓知對話"
+      },
+      "entities": [
+        {
+          "entityId": 134000725,
+          "mapId": 8,
+          "blueprintType": "NPC240",
+          "name": "TsEntity_170_002_皇龙女_晴淑4",
+          "areaId": 1203,
+          "position": {
+            "x": -30624,
+            "y": 188294,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -155
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000726,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男_觅知3",
+          "areaId": 1203,
+          "position": {
+            "x": -30689,
+            "y": 188319,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -109
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_SideTask_HKSM_001",
+          "flowIndex": 6,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}, Mi’zhi ist jetzt wach und sucht nach dir.",
+                "en": "{PlayerName}, Mi'zhi is awake now, and he's looking for you.",
+                "es": "{PlayerName}, Mizhi ya está despierto y te está buscando.",
+                "fr": "{PlayerName}, Mi'zhi est réveillé et il vous cherche.",
+                "ja": "{PlayerName}さん、覓知の意識が戻りました！",
+                "ko": "{PlayerName}, 문연이가 깨자마자 방랑자를 찾고 있어요",
+                "th": "{PlayerName} Mi'zhi ฟื้นแล้ว เขาอยากพบคุณ",
+                "zh-Hans": "{PlayerName}，觅知稍微清醒了点，正嚷嚷着找你呢。",
+                "zh-Hant": "{PlayerName}，覓知稍微清醒了點，正嚷嚷著找你呢。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 950,
+                "name": {
+                  "zh-Hans": "晴淑"
+                },
+                "entity": {
+                  "entityId": 134000725,
+                  "mapId": 8,
+                  "blueprintType": "NPC240",
+                  "name": "TsEntity_170_002_皇龙女_晴淑4",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30624,
+                    "y": 188294,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -155
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}!",
+                "en": "{PlayerName}!",
+                "es": "¡{PlayerName}!",
+                "fr": "{PlayerName} !",
+                "ja": "{PlayerName}……！",
+                "ko": "{PlayerName}...!",
+                "th": "{PlayerName}!",
+                "zh-Hans": "{PlayerName}……！",
+                "zh-Hant": "{PlayerName}……！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich weiß nicht, wie ich dir danken könnte. Du hast die Rätsel mit der aufgezeichneten ID für mich gelöst und mich aus der Grube gerettet...",
+                "en": "I don't know how I could repay you. You solved the puzzles with ID recorded for me, and you saved from the pit...",
+                "es": "No sé cómo podría agradecerte. Resolviste los acertijos con ID registrada para mí y me salvaste del pozo...",
+                "fr": "Je ne sais pas comment je pourrais te remercier. Tu as résolu les énigmes avec l'identifiant, et tu as sauvé de le puis ...",
+                "ja": "本当にありがとう……！どう感謝すべきだろうか……！機巧を解き、私を救い……",
+                "ko": "정말 어떻게 감사해야 할지 모르겠어요. 아이디 기록 있는 기관도 풀어주시고, 또 저를 구해주시고...",
+                "th": "ไม่รู้จะตอบแทนคุณยังไงดี คุณไขปริศนาให้ฉันด้วยไอดีของคุณ และช่วยพาฉันออกมาจากช่องลับ...",
+                "zh-Hans": "我真不知道该怎么谢你呀，你又帮我解开了带id记录的机关，又在矿洞里救了我……",
+                "zh-Hant": "我真不知道該怎麼謝你呀，你又幫我解開了帶id記錄的機關，又在礦洞裡救了我……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... und am wichtigsten, du hast mir geholfen, die ultimative Automatenmechanik zu finden!",
+                "en": "... And most importantly, you helped me find the ultimate Automatic Mechanics!",
+                "es": "... Y lo más importante, me ayudaste a encontrar la mecánica definitiva del cubo magnético!",
+                "fr": "... Et surtout, vous m'avez aidé à trouver la mécanique ultime !",
+                "ja": "そして、完全なる機巧術に導いてくれた！",
+                "ko": "가장 중요한 건, 방랑자가 저를 도와 최고의 기관술을 찾아주셨다는 거예요!",
+                "th": "... และที่สำคัญที่สุด คุณช่วยฉันหาสุดยอดกลไกอัตโนมัติจนเจอ!",
+                "zh-Hans": "最最重要的，你还帮我找到了极致的机关锁技术！",
+                "zh-Hant": "最最重要的，你還幫我找到了極致的機關鎖技術！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich?",
+                    "en": "Me?",
+                    "es": "¿Yo?",
+                    "fr": "Moi ?",
+                    "ja": "{Male=俺が？;Female=私が？}",
+                    "ko": "저요?",
+                    "th": "ฉันเหรอ?",
+                    "zh-Hans": "我？",
+                    "zh-Hant": "我？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, du! Schau nicht herum, du bist es.",
+                "en": "Yes, you! Don't look around, it's just you.",
+                "es": "¡Sí, tú! No mires a tu alrededor, solo eres tú.",
+                "fr": "Oui, vous ! Ne regardez pas autour de vous, il n'y a que vous.",
+                "ja": "そうだ！そうだとも！他でもないあなたがだ！",
+                "ko": "맞아요! 바로 방랑자예요",
+                "th": "ใช่ คุณไง! ไม่ต้องมองไปทางอื่น คุณนั่นแหละ",
+                "zh-Hans": "是你是你就是你！别怀疑，就是你。",
+                "zh-Hant": "是你是你就是你！別懷疑，就是你。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin in die Grube für die ultimative Automatenmechanik hinabgestiegen, aber ich bin fast erfroren.",
+                "en": "I went down the pit for the ultimate Magnetic Cube Mechanics, but I was just almost frozen to death.",
+                "es": "Bajé al pozo en busca de la mecánica cibernética definitiva, pero casi me congelo hasta la muerte.",
+                "fr": "J'ai descendu dans le puits pour la mécanique ultime, mais j'étais presque gelé à mort.",
+                "ja": "あの洞窟に入ったのは完全なる機巧術を手に入れるため。結果、凍死しかけたんだがな。",
+                "ko": "제가 그 최고의 기관술을 찾으러 들어갔는데, 진짜 얼어 죽을 뻔했어요",
+                "th": "ฉันเข้าช่องลับไปหาสุดยอดกลไกลูกบาศก์แม่เหล็ก แต่เกือบแข็งตายอยู่ที่นั่น",
+                "zh-Hans": "我去矿洞就是为了找究极机关术，结果吧，差点没冻死。",
+                "zh-Hant": "我去礦洞就是為了找究極機關術，結果吧，差點沒凍死。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In dem Moment, als ich hineinging, überwältigte mich die eisige Luft, und eine Stimme in meinem Kopf sagte immer wieder, dass die ultimative Automatenmechanik gerade in der Kälte versteckt ist und dass ich die Luft berühren sollte.",
+                "en": "The moment I entered it, the freezing air overwhelmed me, and a voice kept saying in my head that the ultimate Magnetic Cube Mechanics was just hidden in the cold and that I should touch the air.",
+                "es": "En el momento en que entré, el aire congelado me abrumó, y una voz en mi cabeza seguía diciendo que la mecánica cibernética definitiva estaba oculta en el frío y que debería tocar el aire.",
+                "fr": "Dès que j'y suis entré, l'air glacial m'a envahi. Une voix n'a cessé de répéter que la mécanique ultime était juste cachée dans le froid et que je devais toucher l'air.",
+                "ja": "洞窟に入った途端、尋常じゃない冷気を感じた。だが、脳内にある声が響いたのだ。完全なる機巧術がその冷気の奥にあると。",
+                "ko": "동굴에 들어가자마자 냉기가 느껴지는데  머릿속에서 자꾸 누군가가 최고의 기관술이 바로 그 냉기 뒤에 숨겨져 있다고 하더군요...",
+                "th": "ทันทีที่เข้าไป อากาศเย็นเยือกทำเอาฉันสะท้าน และเสียงในหูบอกว่าสุดยอดกลไกลูกบาศก์แม่เหล็กซ่อนอยู่ในความหนาวเหน็บ และฉันควรสัมผัสอากาศ",
+                "zh-Hans": "一进矿洞，那冷气就嗖嗖直冒，脑海里一直有个声音叫我去碰，说究极机关术就藏在冷气之中。",
+                "zh-Hant": "一進礦洞，那冷氣就嗖嗖直冒，腦海裡一直有個聲音叫我去碰，說究極機關術就藏在冷氣之中。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und sobald ich die Luft berührte, begannen Jammern meine Gedanken zu füllen... Sie klangen genau wie die hoffnungslosen Klagen, die Menschen vor dem Sterben ausstoßen würden.",
+                "en": "And as soon as I touch the air, yowls started to crowd my mind... They sounded just like the hopeless wails human would make before dying.",
+                "es": "Y en cuanto toqué el aire, los aullidos comenzaron a abrumar mi mente... Sonaban como los lamentos desesperados que los humanos harían antes de morir.",
+                "fr": "Et dès que j'ai touché l'air, des hurlements ont commencé à envahir mon esprit... Ils ressemblaient aux gémissements désespérés que les humains poussent avant de mourir.",
+                "ja": "そしてその冷気に触れた途端、脳内に悲鳴の波が押し寄せてきた。まるで人の断末魔のように。",
+                "ko": "냉기를 터치하자 슬피 울부짖는 소리가 제 머릿속으로 들어오는데... 마치, 죽기 전 절망적인 외침과 같았어요",
+                "th": "และทันทีที่ฉันสัมผัสอากาศ เสียงโหยหวนก็บดบังความคิดฉัน... มันเหมือนคนกรีดร้องอย่างสิ้นหวังก่อนลาโลกไป",
+                "zh-Hans": "一碰冷气，阵阵哀嚎涌入我的脑海……就像、像人临走前绝望的叫喊。",
+                "zh-Hant": "一碰冷氣，陣陣哀嚎湧入我的腦海……就像、像人臨走前絕望的叫喊。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich sah die Ingenieure vor mir wie in Trance... Sie kämpften verzweifelt... und wurden schließlich von der Kälte verzehrt.",
+                "en": "I saw those engineers before me in a trance... They were struggling desperately... and finally consumed by the cold.",
+                "es": "Vi a esos ingenieros delante de mí en un trance... Estaban luchando desesperadamente... y finalmente consumidos por el frío.",
+                "fr": "J'ai vu ces ingénieurs qui ont disparu... Ils luttaient désespérément... et finissaient par être consumés par le froid.",
+                "ja": "その中で一瞬だけ、行方不明になったエンジニアの先輩たちが見えた……彼らも冷気に襲われて、呑み込まれたのだろう。",
+                "ko": "그 순간, 실종된 엔지니어 선배님들을 보았는데... 그들은 절망적으로 발버둥 치며... 결국 냉기에 삼켜져 버렸어요",
+                "th": "ฉันเห็นกลุ่มวิศวกรก่อนหน้าฉันตกอยู่ในภวังค์... พวกเขาดิ้นรนอย่างหมดหวัง... แล้วในที่สุดก็โดนความหนาวเย็นดูดกลืนไป",
+                "zh-Hans": "一瞬间，我看到了失踪的工程师前辈们……他们绝望地挣扎着……最终被冷气吞噬。",
+                "zh-Hant": "一瞬間，我看到了失蹤的工程師前輩們……他們絕望地掙扎著……最終被冷氣吞噬。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Nachhinein war die Stimme, die mich rief, vielleicht nur ein Köder. Seufz... es gab dort unten keine \"ultimative Automatenmechanik\".",
+                "en": "Looking back now, the voice calling me was maybe just a bait. Sigh... there wasn't any \"ultimate Magnetic Cube Mechanics\" down there.",
+                "es": "Mirando hacia atrás ahora, la voz que me llamaba quizás solo era una carnada. Suspiro... no había ninguna \"mecánica cibernética definitiva\" allí abajo.",
+                "fr": "En y repensant, la voix qui m'appelait n'était peut-être qu'un appât. Hélas, il n'y avait pas de la mécanique ultime.",
+                "ja": "今思えば、あの声こそが私を誘い込むための仕掛けだったのだな……完全なる機巧術なんてあそこにはない。",
+                "ko": "생각해 보니 절 부르는 그 소리들은 아마 미끼일 뿐이에요... 에휴... 거기엔 최고의 기관술이 없었던 거예요",
+                "th": "มาย้อนคิดดู เสียงที่เรียกฉันคงเป็นแค่เหยื่อล่อ เฮ้อ... ไม่มี \"สุดยอดกลไกลูกบาศก์แม่เหล็ก\" อยู่ที่นั่น",
+                "zh-Hans": "想来，那些呼唤我的声音应该只是诱饵……唉……这里并没有什么究极机关术。",
+                "zh-Hant": "想來，那些呼喚我的聲音應該只是誘餌……唉……這裡並沒有什麼究極機關術。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber als ich dort war und in dem Moment gefangen war, fand ich meinen Rückzug blockiert. Die Eiskokons schwärmte aus dem Ausgang.",
+                "en": "But when I was there and caught up in the moment, I found my retreat blocked. The Ice Chrysalises swarmed the exit.",
+                "es": "Pero cuando estaba allí y atrapado en el momento, encontré mi retiro bloqueado. Las Crisálidas de Hielo invadieron la salida.",
+                "fr": "Mais lorsque je me retrouve et cherche à quitter, les cocons ont bloqué la sortie !",
+                "ja": "逃げようとした時には、すでに氷のまゆに出口を封じられていた。",
+                "ko": "정신 차려보니 얼음 고치는 출구를 막아버렸더라고요",
+                "th": "แต่ตอนอยู่ที่นั่น และตกอยู่ในภวังค์ ฉันพบว่าทางถอยหนีโดนปิดกั้น มีดักแด้น้ำแข็งล้อมทางออกไว้หมด",
+                "zh-Hans": "等我回过神来，也来不及抽身了，冰茧已经封住出口。",
+                "zh-Hant": "等我回過神來，也來不及抽身了，冰繭已經封住出口。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und als ich aufgrund der Kälte das Bewusstsein verlor, warst du es, {PlayerName}, der mir in den Sinn kam.",
+                "en": "And when I lost conscious due to the frost, it was you, {PlayerName}, that crossed my mind.",
+                "es": "Y cuando perdí la conciencia debido a la helada, fuiste tú, {PlayerName}, lo que me vino a la mente.",
+                "fr": "Et lorsque j'ai perdu conscience à cause du gel, c'est à vous, {PlayerName}, que j'ai pensé.",
+                "ja": "だが意識を失う寸前、脳裏をよぎったのが、{PlayerName}、あなたの姿だ……",
+                "ko": "너무 추워서 의식을 잃었을 때, 제 머릿속에 갑자기 {PlayerName}의 모습이 떠올랐어요...",
+                "th": "พอฉันหมดสติเพราะความหนาว ก็เป็นคุณนะ {PlayerName} ที่ฉันนึกถึง",
+                "zh-Hans": "在我被冻得失去知觉时，脑海里闪过的，竟是{PlayerName}你的身影……",
+                "zh-Hant": "在我被凍得失去知覺時，腦海裡閃過的，竟是{PlayerName}你的身影……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe gelesen, dass die Nahtoderfahrung den instinktivsten Wunsch des Menschen stimulieren kann.",
+                "en": "I read that the near-death experience could stimulate human's most instinctive desire.",
+                "es": "Leí que la experiencia cercana a la muerte podría estimular el deseo más instintivo del ser humano.",
+                "fr": "J'ai lu que l'expérience de mort imminente pouvait stimuler le désir le plus instinctif.",
+                "ja": "臨死体験は人の最も根源的な渇望を蘇らせると以前読んだ本に書かれてあったが……",
+                "ko": "죽음을 직면할 때 사람은 가장 본능적인 갈망을 불러일으킨다고 예전에 책에서 봤었거든요...",
+                "th": "ฉันเคยอ่านเจอว่าประสบการณ์เฉียดตายจะกระตุ้นความปรารถนาตามสัญชาตญาณที่ลึกที่สุด",
+                "zh-Hans": "书上说，濒死体验可以唤起人最本能的渴望……",
+                "zh-Hant": "書上說，瀕死體驗可以喚起人最本能的渴望……"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 950,
+                "name": {
+                  "zh-Hans": "晴淑"
+                },
+                "entity": {
+                  "entityId": 134000725,
+                  "mapId": 8,
+                  "blueprintType": "NPC240",
+                  "name": "TsEntity_170_002_皇龙女_晴淑4",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30624,
+                    "y": 188294,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -155
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Husten. Ich habe die ganze Zeit die ultimative Automatenmechanik begehrt... ... Aber wenn ich jetzt darüber nachdenke, ist sie genau an meiner Seite!",
+                "en": "Cough. I've been desiring the ultimate Magnetic Cube Mechanics all the time... ... But when I think of it now, it is just by my side!",
+                "es": "Tos. He estado deseando la mecánica cibernética definitiva todo el tiempo... ... Pero cuando lo pienso ahora, ¡está justo a mi lado!",
+                "fr": "Je pense toujours à la mécanique ultime... Mais quand j'y pense maintenant, elle est juste à côté de moi !",
+                "ja": "コホン、長年求めてきた完全なる機巧術が、まさか目の前にあったとは！",
+                "ko": "으흠, 저는 늘 최고의 기관술을 찾고 있었어요. 하지만 지금 생각해 보니, 바로 제 앞에 있는걸요!",
+                "th": "แค่ก ฉันปรารถนาจะได้สุดยอดกลไกลูกบาศก์แม่เหล็กมาตลอด... ... แต่พอมาคิดดูตอนนี้ มันก็อยู่ข้างๆ ฉันนี่เอง!",
+                "zh-Hans": "咳咳，我一直渴望着追寻到究极机关术。现在想来，远在天边近在眼前啊！",
+                "zh-Hant": "咳咳，我一直渴望著追尋到究極機關術。現在想來，遠在天邊近在眼前啊！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bist du es, {PlayerName}! Immer wenn ich an deine wunderbaren Techniken denke, kommen mir Inspirationen zur Automatenmechanik in den Sinn.",
+                "en": "It's you, {PlayerName}! Whenever I think of your marvellous techniques, inspirations about Magnetic Cube Mechanics will spring out in my head.",
+                "es": "¡Eres tú, {PlayerName}! Siempre que pienso en tus maravillosas técnicas, las inspiraciones sobre la mecánica cibernética brotarán en mi cabeza.",
+                "fr": "C'est toi, {PlayerName} ! Chaque fois que je pense à tes merveilleuses techniques, des inspirations sur la mécanique des automates surgissent dans ma tête.",
+                "ja": "{PlayerName}、あなたのことだ！あなたの操作を想うたびに、機巧術のひらめきが途絶えることなく湧いてくる！",
+                "ko": "바로 당신이에요, {PlayerName}! 당신의 그 기묘하고 세련된 조작을 떠올리기만 하면 새로운 기관술 영감이 끊임없이 제 머릿속에 들어오거든요...",
+                "th": "ก็คุณไง {PlayerName}! เมื่อคิดถึงเทคนิคสุดมหัศจรรย์ของคุณแล้ว มันสร้างแรงบันดาลใจเกี่ยวกับกลไกลูกบาศก์แม่เหล็กให้ฉัน",
+                "zh-Hans": "就是你，{PlayerName}！只要想起你那神乎其技的手法，新的机关术灵感就会源源不断涌入我的脑海……",
+                "zh-Hant": "就是你，{PlayerName}！只要想起你那神乎其技的手法，新的機關術靈感就會源源不斷湧入我的腦海……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Darf ich diese Techniken noch einmal sehen?",
+                "en": "May I see that techniques again?",
+                "es": "¿Podría ver esas técnicas de nuevo?",
+                "fr": "Puis-je revoir ces techniques ?",
+                "ja": "あの操作、もう一度見せてくれ！",
+                "ko": "혹시 다시 한번 보여줄 수 있나요?",
+                "th": "ขอดูเทคนิคนั้นอีกครั้งได้ไหม?",
+                "zh-Hans": "那种手法，能再让我看一遍吗？",
+                "zh-Hant": "那種手法，能再讓我看一遍嗎？"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Jetzt?",
+                    "en": "Now?",
+                    "es": "¿Ahora?",
+                    "fr": "Maintenant ?",
+                    "ja": "今すぐ？",
+                    "ko": "지금요?",
+                    "th": "ตอนนี้เหรอ?",
+                    "zh-Hans": "现在？",
+                    "zh-Hant": "現在？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, jetzt. Ich kann nicht aufhören zu lügen, wenn ich an diese Techniken denke.",
+                "en": "Yes, now. I can't keep lying whenever I think of those techniques.",
+                "es": "Sí, ahora. No puedo seguir mintiendo cada vez que pienso en esas técnicas.",
+                "fr": "Oui, maintenant. Je ne peux pas continuer à mentir quand je pense à ces techniques.",
+                "ja": "そう、今すぐに！ああ、もう冷静になんていられない！",
+                "ko": "네, 지금요. 벌써 기대돼요!",
+                "th": "ใช่ ตอนนี้เลย ไม่อ้อมค้อมแล้วนะว่าฉันคิดเรื่องเทคนิคพวกนั้นบ่อยแค่ไหน",
+                "zh-Hans": "对，就现在，我一想起你那手法，就躺不下去了。",
+                "zh-Hant": "對，就現在，我一想起你那手法，就躺不下去了。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm es nicht übel, {PlayerName}. Er ist einfach der Typ Mensch, der nicht einmal liegen und sich ausruhen kann, wenn es um Automatenmechanik geht.",
+                "en": "Don't take this amiss, {PlayerName}. He's just the kind of person who couldn't even lie down and rest when there's something about Magnetic Cube Mechanics.",
+                "es": "¡Eres tú, {PlayerName}! Siempre que pienso en tus maravillosas técnicas, las inspiraciones sobre la mecánica cibernética brotarán en mi cabeza.",
+                "fr": "Ne le prenez pas mal, {PlayerName}. C'est le genre de personne qui ne peut même pas s'allonger et se reposer quand il s'agit des mécaniques.",
+                "ja": "{PlayerName}さん、彼はこういう人間なんです。機巧術が絡むと、急にブレーキがなくなるんです……",
+                "ko": "이 사람 기관술이라하면 흥분하는 성격이라 {PlayerName}가 좀 이해해 줘요",
+                "th": "อย่าเข้าใจผิดนะ {PlayerName} เขาเป็นคนที่กินไม่ได้นอนไม่หลับ ถ้าเป็นเรื่องกลไกลูกบาศก์แม่เหล็ก",
+                "zh-Hans": "{PlayerName}你别见怪啊，他这人就这样，一碰到机关术的事，就非得打破砂锅问到底，不然躺都躺不安生。",
+                "zh-Hant": "{PlayerName}你別見怪啊，他這人就這樣，一碰到機關術的事，就非得打破砂鍋問到底，不然躺都躺不安生。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 950,
+                "name": {
+                  "zh-Hans": "晴淑"
+                },
+                "entity": {
+                  "entityId": 134000725,
+                  "mapId": 8,
+                  "blueprintType": "NPC240",
+                  "name": "TsEntity_170_002_皇龙女_晴淑4",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30624,
+                    "y": 188294,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -155
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja. Ich habe gerade an ein paar neue Automatenkombinationen gedacht, als ich mich ausruhte. Sie sind für dich gedacht.",
+                "en": "Yes. I just thought of a few new mechanic combinations when I was resting. They are meant for you.",
+                "es": "Sí. Acabo de pensar en algunas nuevas combinaciones de autómatas mientras descansaba. Están destinados para ti.",
+                "fr": "Oui. Je viens de penser à quelques nouvelles combinaisons d'automates pendant que je me reposais. Elles sont faites pour toi.",
+                "ja": "そうだ、横になっていた時に、幾つか機巧術の組み合わせを思いついたのだよ！しかも、{PlayerName}の神技にふさわしいレベルのもの……",
+                "ko": "네, 맞아요. 제가 누워 있는 동안 몇 가지 새로운 기관 조립 기술을 생각했는데, 특별히 {PlayerName}을(를) 위해 준비한 거예요",
+                "th": "ใช่ ฉันเพิ่งคิดเรื่องการจัดเรียงกลไกใหม่ๆ ออกสองสามแบบตอนกำลังพัก สำหรับคุณโดยเฉพาะเลย",
+                "zh-Hans": "对对，我躺着的时候又想了几种新的机关组合技术，专门给{PlayerName}你准备的。",
+                "zh-Hant": "對對，我躺著的時候又想了幾種新的機關組合技術，專門給{PlayerName}你準備的。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nur deine Rätsellösung bringt mir die meisten Inspirationen.",
+                "en": "Only your puzzle-solving brings me the most inspirations.",
+                "es": "Solo tu resolución de acertijos me trae las mayores inspiraciones.",
+                "fr": "Seule la résolution d'énigmes m'inspire le plus.",
+                "ja": "あなたの操作からインスパイアを受けたのだよ！",
+                "ko": "오직 방랑자의 조작만이 저에게 영감을 줄 수 있거든요",
+                "th": "การไขปริศนาของคุณสร้างแรงบันดาลใจให้ฉันได้มากที่สุด",
+                "zh-Hans": "唯有你的操作，最能激发我的灵感。",
+                "zh-Hant": "唯有你的操作，最能激發我的靈感。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                },
+                "entity": {
+                  "entityId": 134000726,
+                  "mapId": 8,
+                  "blueprintType": "NPC233",
+                  "name": "TsEntity_180_003_皇龙男_觅知3",
+                  "areaId": 1203,
+                  "position": {
+                    "x": -30689,
+                    "y": 188319,
+                    "z": -3795
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -109
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 134000727,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点3",
+          "areaId": 1203,
+          "position": {
+            "x": -47427,
+            "y": 197090,
+            "z": -4122
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_SideTask_HKSM_001",
+          "flowIndex": 6,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Es ist alles dir zu verdanken, dass ich die ultimative Automatenmechanik erreichen konnte.",
+                "en": "It's all thanks to you that I could have reached the ultimate Magnetic Cube Mechanics.",
+                "es": "Todo esto es gracias a ti que pude alcanzar la mecánica cibernética definitiva.",
+                "fr": "C'est grâce à toi que j'ai pu trouvé la mécanisme ultime !",
+                "ja": "あなたのおかげで、完全なる機巧術ができた！",
+                "ko": "덕분에 드디어 최고의 기관술을 발견했네요",
+                "th": "ทั้งหมดนี้เป็นเพราะคุณ ฉันจึงสามารถบรรลุกลไกลูกบาศก์แม่เหล็กขั้นสุดยอดได้",
+                "zh-Hans": "多亏了你啊，才让我终于追寻到了究极机关术。",
+                "zh-Hant": "多虧了你啊，才讓我終於追尋到了究極機關術。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als das entdeckt wurde, war all mein Schmerz verschwunden und all meine Sorgen verblassten. Ich war so erleichtert, es fühlte sich an, als wäre ich nicht mehr krank. Vielen Dank!",
+                "en": "When that was discovered, all my pain was gone and all my worries fade away. I was so relieved it felt like I'm no longer sick. Thank you so much!",
+                "es": "Cuando eso fue descubierto, todo mi dolor desapareció y todas mis preocupaciones se desvanecieron. Me sentí tan aliviado que parecía que ya no estaba enfermo. ¡Muchas gracias!",
+                "fr": "Lorsque j'ai découvert cela, toute ma douleur a disparu et toutes mes inquiétudes se sont évanouies. J'étais tellement soulagée que j'avais l'impression de ne plus être malade. Merci beaucoup !",
+                "ja": "感動のあまり、アドレナリンも分泌されまくりで、もう痛くも痒くもなくなったよ！とにかく、感謝、感謝だ！",
+                "ko": "뭔가 후련하네요. 정말 어떻게 감사해야 할지 모르겠어요!",
+                "th": "เมื่อค้นพบแล้ว ความเจ็บปวดทั้งหมดของฉันก็พลันสลาย ความกังวลล้วนมลายไปสิ้น ฉันโล่งใจจนรู้สึกว่าไม่ได้ป่วยอีกต่อไปแล้ว ขอบคุณมากนะ!",
+                "zh-Hans": "这机关术一出，我腰不疼了腿不酸了，浑身上下松了一口气，好了似的。真不知道该怎么谢你才好！",
+                "zh-Hant": "這機關術一出，我腰不疼了腿不酸了，渾身上下松了一口氣，好了似的。真不知道該怎麼謝你才好！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du solltest Qingshu danken.",
+                    "en": "You should thank Qingshu.",
+                    "es": "Deberías agradecer a Qingshu.",
+                    "fr": "Tu dois remercier Qingshu.",
+                    "ja": "晴淑にもちゃんと礼を言って。",
+                    "ko": "청숙에게 감사하세요",
+                    "th": "คุณควรจะขอบคุณ Qingshu",
+                    "zh-Hans": "你应该谢谢晴淑。",
+                    "zh-Hant": "你應該謝謝晴淑。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh ja, ich sollte Qingshu danken. Wenn sie nicht immer die Rätsel aktualisiert und versucht hätte, mich davon abzuhalten, die Grube zu betreten, hätte ich nicht so hart studiert und so dramatisch Fortschritte gemacht.",
+                "en": "Oh yes, I should thank Qingshu. If it weren't her who was always updating the puzzles and trying to stop me from entering the pit, I wouldn't have studied it so hard and progressed so dramatically.",
+                "es": "Oh sí, debería agradecer a Qingshu. Si no fuera por ella, que siempre estaba actualizando los rompecabezas e intentando impedirme entrar en la fosa, no lo habría estudiado tan a fondo y no habría progresado tan dramáticamente.",
+                "fr": "Oh oui, je dois remercier Qingshu. Si ce n'était pas elle qui mettait constamment à jour les énigmes et essayait de m'empêcher d'entrer dans la fosse, je n'aurais pas étudié avec autant d'acharnement et je n'aurais pas progressé de façon aussi spectaculaire.",
+                "ja": "そうだ。晴淑、あなたにも感謝する！あなたは度々機巧ロックをアップデートしてくれた……あなたの妨害が私の進歩の礎となった！",
+                "ko": "아, 그러네요.청숙님이 기관 잠금장치를 계속 업데이트하는 바람에 저도 잠금장치 푸는데 많이 능숙해졌죠!",
+                "th": "ใช่ ฉันควรจะขอบคุณ Qingshu ถ้าไม่ใช่เพราะเธอคอยอัปเดตปริศนาอยู่ตลอดเวลา และพยายามขัดขวางไม่ให้ฉันเข้าช่องลับ ฉันก็คงไม่ได้ศึกษามันอย่างหนักและคืบหน้าไปแบบก้าวกระโดด",
+                "zh-Hans": "哦对，是该谢谢晴淑，要不是晴淑天天升级机关锁，变着法子阻挠我进矿洞，我还不会绞尽脑汁钻研，进步得这么快呢！",
+                "zh-Hant": "哦對，是該謝謝晴淑，要不是晴淑天天升級機關鎖，變著法子阻撓我進礦洞，我還不會絞盡腦汁鑽研，進步得這麼快呢！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sie macht sich Sorgen um dich.",
+                    "en": "She's worried about you.",
+                    "es": "Ella está preocupada por ti.",
+                    "fr": "Elle s'inquiète pour toi.",
+                    "ja": "あなたのこと、心配してたよ。",
+                    "ko": "당신을 많이 걱정했어요",
+                    "th": "เธอเป็นห่วงคุณนะ",
+                    "zh-Hans": "她很关心你。",
+                    "zh-Hant": "她很關心你。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Kannst du nicht andere Dinge als Automatenmechanik sehen?",
+                    "en": "Can't you see other things than Magnetic Cube Mechanics?",
+                    "es": "¿No puedes ver otras cosas que no sean la mecánica cibernética?",
+                    "fr": "Autre chose que la mécanique ?",
+                    "ja": "機巧術の話じゃない！",
+                    "ko": "왜 기관술밖에 모르는 거예요!",
+                    "th": "ไม่เห็นอย่างอื่นนอกจากกลไกลูกบาศก์แม่เหล็กเลยหรือไง?",
+                    "zh-Hans": "你怎么只知道机关术啊！",
+                    "zh-Hant": "你怎麼只知道機關術啊！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, du hast recht...",
+                "en": "Yes, you're right...",
+                "es": "Sí, tienes razón...",
+                "fr": "Oui, tu as raison...",
+                "ja": "そうだな……",
+                "ko": "그렇긴 하네요...",
+                "th": "ใช่ คุณพูดถูก...",
+                "zh-Hans": "说得也是……",
+                "zh-Hant": "說得也是……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was, was sollte ich sehen? Oh!",
+                "en": "What, what should I see? Oh!",
+                "es": "¿Qué, qué debería ver? ¡Oh!",
+                "fr": "Que dois-je voir ? Oh !",
+                "ja": "なら何の話というのか……ああ、あれか！",
+                "ko": "아니, 아니면... 오!",
+                "th": "ฉันควรเห็นอะไร? อ้อ!",
+                "zh-Hans": "不、不然呢……哦！",
+                "zh-Hant": "不、不然呢……哦！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "J-Ja, tatsächlich... Ich muss Frau Qingshu danken.",
+                "en": "Yes... Got to thank Miss Qingshu.",
+                "es": "S-Sí, en efecto... Debo agradecer a la señorita Qingshu.",
+                "fr": "Oui... Je dois remercier Mlle Qingshu.",
+                "ja": "た、確かに、晴淑の気配りにも感謝している！",
+                "ko": "그렇죠... 청숙님에겐 정말 감사해요...",
+                "th": "ใช่ ต้องขอบคุณคุณ Qingshu...",
+                "zh-Hans": "确、确实……要谢谢晴淑姐的关心……",
+                "zh-Hant": "確、確實……要謝謝晴淑姐的關心……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich war zu sehr in meinen Gedanken und habe über Automatenmechanik nachgedacht. Mein Herumtollen hat Frau Qingshu und {PlayerName} Ärger bereitet.",
+                "en": "I've been in my head too much and thinking about Magnetic Cube Mechanics. My messing around has caused Miss Qingshu and {PlayerName} trouble.",
+                "es": "He estado demasiado en mi cabeza pensando en la mecánica cibernética. Mis travesuras han causado problemas a la señorita Qingshu y a {PlayerName}.",
+                "fr": "J'ai trop réfléchi à la mécanique... Mes recherches ont causé des ennuis à Qingshu et à {PlayerName}.",
+                "ja": "機巧術のために無闇に走り回って、晴淑と{PlayerName}にも色々と迷惑をかけた。",
+                "ko": "저 때문에 청숙님과  {PlayerName}께 폐를 끼쳤어요",
+                "th": "ฉันหมกมุ่นเรื่องกลไกลูกบาศก์แม่เหล็กมากเกินไป จนก่อเรื่องให้คุณ Qingshu และ {PlayerName} ต้องเดือดร้อน",
+                "zh-Hans": "我老是只想着机关术，自己乱跑，给晴淑姐和{PlayerName}添麻烦了。",
+                "zh-Hant": "我老是只想著機關術，自己亂跑，給晴淑姐和{PlayerName}添麻煩了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt, wo ich solch großartige Automatenmechanik entwickelt habe, sollte ich stillhalten und mich davon abhalten, Ärger zu verursachen.",
+                "en": "Now that I have developed such great Magnetic Cube Mechanics, I should stay put and refrain from causing trouble.",
+                "es": "Ahora que he desarrollado una gran mecánica cibernética, debería quedarme quieto y evitar causar problemas.",
+                "fr": "Maintenant que j'ai développé de si bonnes mécaniques, je devrais rester sur place et m'abstenir de causer des ennuis.",
+                "ja": "もう完全なる機巧術は完成した。これからはもう少し大人しくなるだろう！",
+                "ko": "이렇게 훌륭한 기관술이 개발되었으니 앞으로 얌전히 있겠습니다",
+                "th": "ในเมื่อตอนนี้พัฒนากลไกลูกบาศก์แม่เหล็กที่ยิ่งใหญ่ได้แล้ว ฉันก็ควรอยู่นิ่งๆ ไม่สร้างปัญหาอะไรอีก",
+                "zh-Hans": "既然这么棒的机关术已经研发出来了，我以后会老老实实地待着，不惹事了。",
+                "zh-Hant": "既然這麼棒的機關術已經研發出來了，我以後會老老實實地待著，不惹事了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe privat etwas Geld gespart, ursprünglich für das Studium der Automatenmechanik, aber jetzt, wo {PlayerName} mir geholfen hat, die ultimative Automatenmechanik zu finden, solltest du das Geld haben.",
+                "en": "I have saved some money privately, originally for the purpose of Magnetic Cube Mechanics studying, but now that {PlayerName} has helped me find the ultimate Magnetic Cube Mechanics, you should have the money.",
+                "es": "He ahorrado algo de dinero en privado, originalmente para el propósito de estudiar la mecánica cibernética definitiva, pero ahora que {PlayerName} me ha ayudado a encontrarla, deberías tener el dinero.",
+                "fr": "J'ai gardé un peu de l'argent pour étudier la mécanique. Mais maintenant que {PlayerName} m'a aidé à trouver l'ultime mécanique, tu dois les avoir.",
+                "ja": "機巧術探しの旅に出るために貯金をしていたのだが、{PlayerName}のおかげでその必要もなくなった。これは報酬として{PlayerName}にあげるとしよう！",
+                "ko": "제가 원래 최고의 기관술을 찾기 위해 돈을 좀 모았거든요. 근데 이미 방랑자 덕분에 찾았으니 다 드리겠습니다",
+                "th": "ฉันมีเงินเก็บส่วนตัวจำนวนหนึ่ง เดิมตั้งใจจะใช้เพื่อศึกษากลไกลูกบาศก์แม่เหล็ก แต่ในเมื่อตอนนี้ {PlayerName} ช่วยให้ฉันพบสุดยอดกลไกลูกบาศก์แม่เหล็กแล้ว คุณควรรับเงินนี้ไป",
+                "zh-Hans": "我攒了一些私房钱，本身是留着追寻究极机关术的，既然{PlayerName}帮我找到了，就给{PlayerName}吧。",
+                "zh-Hant": "我攢了一些私房錢，本身是留著追尋究極機關術的，既然{PlayerName}幫我找到了，就給{PlayerName}吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist der Schatz, von dem ich gesprochen habe. Ich schicke dir die Koordinaten. Vergiss nicht, ihn abzuholen.",
+                "en": "That's the treasure I talked about. I'll send you the coordinates. Don't forget to collect it.",
+                "es": "Ese es el tesoro del que hablé. Te enviaré las coordenadas. No olvides recogerlo.",
+                "fr": "C'est le trésor dont j'ai parlé. Je vous enverrai les coordonnées. N'oublie pas de le récupérer.",
+                "ja": "そうだ。前にも言った例の宝物の座標も送っておく。",
+                "ko": "이게 바로 제가 전에 말했던 보물이에요. 좌표는 단말기로 전송되었으니, 잊지 말고 수령하러 가세요",
+                "th": "นั่นแหละสมบัติที่ฉันพูดถึง เดี๋ยวฉันจะส่งพิกัดให้คุณ อย่าลืมรับมันไปล่ะ",
+                "zh-Hans": "这就是我之前说过的宝藏啦，坐标发你终端上了，等下记得去拿。",
+                "zh-Hant": "這就是我之前說過的寶藏啦，座標發你終端上了，等下記得去拿。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und Fräulein Qingshu... Was möchtest du? Ich kenne deine Vorlieben noch nicht.",
+                "en": "And Miss Qingshu... What would you like? I don't know your favorites yet.",
+                "es": "Y señorita Qingshu... ¿Qué te gustaría? Todavía no conozco tus gustos.",
+                "fr": "Et Mme Qingshu... Qu'aimez-vous ? Je ne connais pas encore vos préférences.",
+                "ja": "晴淑の方は……何かほしいものある？",
+                "ko": "청숙님은... 무엇을 원하시나요? 무엇을 좋아하는지 제가 잘 몰라서요",
+                "th": "คุณ Qingshu... คุณอยากได้อะไรล่ะ? ฉันยังไม่รู้เลยว่าคุณชอบอะไร",
+                "zh-Hans": "至于晴淑姐……你想要什么？你喜欢什么，我还不知道呢。",
+                "zh-Hant": "至於晴淑姐……你想要什麼？你喜歡什麼，我還不知道呢。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich brauche nichts. Deine Gesundheit ist wichtiger als alles andere.",
+                "en": "I don't need anything. Your health means more than anything.",
+                "es": "No necesito nada. Tu salud significa más que cualquier cosa.",
+                "fr": "Je n'ai besoin de rien. Ta santé compte plus que tout.",
+                "ja": "あなたが大人しくしてくれれば、それが一番の報酬だよ。",
+                "ko": "전 아무것도 필요 없어요. 당신이 얌전히 있어주는게 그게 제일 큰 선물이에요",
+                "th": "ฉันไม่ต้องการอะไร สุขภาพของคุณสำคัญกว่าอะไรทั้งนั้น",
+                "zh-Hans": "我、我什么都不要，你好好的比什么都强。",
+                "zh-Hant": "我、我什麼都不要，你好好的比什麼都強。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 950,
+                "name": {
+                  "zh-Hans": "晴淑"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "......",
+                "en": "……",
+                "es": "……",
+                "fr": "......",
+                "ja": "……",
+                "ko": "......",
+                "th": "......",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann werde ich das später ausgleichen, wenn wir zusammenarbeiten.",
+                "en": "Then, I'll make up for it when we work together later.",
+                "es": "Entonces, lo compensaré cuando trabajemos juntos más tarde.",
+                "fr": "Ensuite, je me rattraperai lorsque nous travaillerons ensemble plus tard.",
+                "ja": "ならば、今後の仕事で償っていこう。",
+                "ko": "그, 그럼 앞으로 더 열심히 노력하겠습니다",
+                "th": "งั้นฉันจะชดเชยให้ทีหลัง ตอนที่เราทำงานร่วมกัน",
+                "zh-Hans": "那、那在以后的工作中，我慢慢向你赔罪吧。",
+                "zh-Hant": "那、那在以後的工作中，我慢慢向你賠罪吧。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "parentId": 11,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 29,
+      "parentId": 11,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 34,
+      "parentId": 11,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 39,
+      "parentId": 11,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 25,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Berichte Mizhi",
+        "en": "Report to Mizhi",
+        "es": "Informa a Mizhi",
+        "fr": "Parler à Mizhi",
+        "ja": "覓知に報告する",
+        "ko": "문연에게 찾아가기",
+        "th": "รายงานให้มิจิทราบ",
+        "zh-Hans": "回复觅知",
+        "zh-Hant": "回覆覓知"
+      },
+      "entities": [
+        {
+          "entityId": 134000726,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男_觅知3",
+          "areaId": 1203,
+          "position": {
+            "x": -30689,
+            "y": 188319,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -109
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000788,
+          "mapId": 8,
+          "blueprintType": "Gameplay382",
+          "name": "TsEntity_玩法_悬浮磁石_底座7",
+          "areaId": 1203,
+          "position": {
+            "x": -30887,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000789,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石7",
+          "areaId": 1203,
+          "position": {
+            "x": -31774,
+            "y": 186893,
+            "z": -3784
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000790,
+          "mapId": 8,
+          "blueprintType": "Gameplay382",
+          "name": "TsEntity_玩法_悬浮磁石_底座8",
+          "areaId": 1203,
+          "position": {
+            "x": -30888,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000791,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石8",
+          "areaId": 1203,
+          "position": {
+            "x": -31472,
+            "y": 186807,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000803,
+          "mapId": 8,
+          "blueprintType": "Gameplay026",
+          "name": "TsEntity_玩法_通用_开关8",
+          "areaId": 1203,
+          "position": {
+            "x": -30873,
+            "y": 187111,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000809,
+          "mapId": 8,
+          "blueprintType": "SceneObj002",
+          "name": "TsEntity_破碎物002_木箱中",
+          "areaId": 1203,
+          "position": {
+            "x": -30712,
+            "y": 187389,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000854,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听7-1",
+          "areaId": 1203,
+          "position": {
+            "x": -31226,
+            "y": 186693,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000855,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门7-1",
+          "areaId": 1203,
+          "position": {
+            "x": -31232,
+            "y": 186708,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000856,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门7-2",
+          "areaId": 1203,
+          "position": {
+            "x": -30899,
+            "y": 186864,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000857,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听7-2",
+          "areaId": 1203,
+          "position": {
+            "x": -30893,
+            "y": 186847,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000858,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听7-3",
+          "areaId": 1203,
+          "position": {
+            "x": -30227,
+            "y": 187143,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000859,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门7-3",
+          "areaId": 1203,
+          "position": {
+            "x": -30233,
+            "y": 187175,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000860,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听7-4",
+          "areaId": 1203,
+          "position": {
+            "x": -31177,
+            "y": 187535,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000861,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门7-4",
+          "areaId": 1203,
+          "position": {
+            "x": -31209,
+            "y": 187530,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000862,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-1",
+          "areaId": 1203,
+          "position": {
+            "x": -30220,
+            "y": 187169,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000863,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-1",
+          "areaId": 1203,
+          "position": {
+            "x": -30233,
+            "y": 187175,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000864,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31198,
+            "y": 187523,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000865,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31210,
+            "y": 187531,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000866,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31442,
+            "y": 187613,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000867,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31455,
+            "y": 187620,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000868,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-4",
+          "areaId": 1203,
+          "position": {
+            "x": -31623,
+            "y": 187117,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000869,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-4",
+          "areaId": 1203,
+          "position": {
+            "x": -31635,
+            "y": 187125,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000935,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录74",
+          "areaId": 1203,
+          "position": {
+            "x": -30888,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000936,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座7",
+          "areaId": 1203,
+          "position": {
+            "x": -30899,
+            "y": 186864,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000937,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座7",
+          "areaId": 1203,
+          "position": {
+            "x": -30722,
+            "y": 187353,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_SideTask_HKSM_001",
+          "flowIndex": 6,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Gut gemacht. Sieht so aus, als könntest du noch ein paar mehr gebrauchen...",
+                "en": "Well done. Seems like you can use some more…",
+                "es": "Bien hecho. Parece que puedes usar algo más...",
+                "fr": "Bien joué. Cela peut être plus difficile...",
+                "ja": "やはりあなたの可能性は未知数だ……",
+                "ko": "역시, 난이도를 좀 높여야 할 것 같네요...",
+                "th": "ดีมาก ดูเหมือนคุณจะรับได้อีก...",
+                "zh-Hans": "可以啊，看来还能加码……",
+                "zh-Hant": "可以啊，看來還能加點碼……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "parentId": 25,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 134000789,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石7",
+          "areaId": 1203,
+          "position": {
+            "x": -31774,
+            "y": 186893,
+            "z": -3784
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000805,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_进入",
+          "areaId": 1203,
+          "position": {
+            "x": -30880,
+            "y": 187270,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000806,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_退出",
+          "areaId": 1203,
+          "position": {
+            "x": -30863,
+            "y": 187369,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000809,
+          "mapId": 8,
+          "blueprintType": "SceneObj002",
+          "name": "TsEntity_破碎物002_木箱中",
+          "areaId": 1203,
+          "position": {
+            "x": -30712,
+            "y": 187389,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 48,
+      "parentId": 25,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 27,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Hilf Mizhi, die Mechanik zu kalibrieren",
+        "en": "Help Mizhi calibrate the Mechanics",
+        "es": "Ayuda a Mizhi a calibrar la mecánica",
+        "fr": "Aider Mizhi à calibrer le mécanisme secret",
+        "ja": "覓知に協力して密方機巧を調整する",
+        "ko": "문연과 협력하여 큐브 기관 풀기",
+        "th": "ช่วยมิจิปรับเทียบกลไก",
+        "zh-Hans": "配合觅知调试密方机关",
+        "zh-Hant": "配合覓知調試密方機關"
+      },
+      "entities": [
+        {
+          "entityId": 134000788,
+          "mapId": 8,
+          "blueprintType": "Gameplay382",
+          "name": "TsEntity_玩法_悬浮磁石_底座7",
+          "areaId": 1203,
+          "position": {
+            "x": -30887,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000789,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石7",
+          "areaId": 1203,
+          "position": {
+            "x": -31774,
+            "y": 186893,
+            "z": -3784
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000805,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_进入",
+          "areaId": 1203,
+          "position": {
+            "x": -30880,
+            "y": 187270,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000806,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_退出",
+          "areaId": 1203,
+          "position": {
+            "x": -30863,
+            "y": 187369,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 28,
+      "parentId": 27,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 42,
+      "parentId": 27,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Berichte Mizhi",
+        "en": "Report to Mizhi",
+        "es": "Informa a Mizhi",
+        "fr": "Parler à Mizhi",
+        "ja": "覓知に報告する",
+        "ko": "문연에게 찾아가기",
+        "th": "รายงานให้มิจิทราบ",
+        "zh-Hans": "回复觅知",
+        "zh-Hant": "回覆覓知"
+      },
+      "entities": [
+        {
+          "entityId": 134000726,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男_觅知3",
+          "areaId": 1203,
+          "position": {
+            "x": -30689,
+            "y": 188319,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -109
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000790,
+          "mapId": 8,
+          "blueprintType": "Gameplay382",
+          "name": "TsEntity_玩法_悬浮磁石_底座8",
+          "areaId": 1203,
+          "position": {
+            "x": -30888,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000791,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石8",
+          "areaId": 1203,
+          "position": {
+            "x": -31472,
+            "y": 186807,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000792,
+          "mapId": 8,
+          "blueprintType": "Gameplay382",
+          "name": "TsEntity_玩法_悬浮磁石_底座9",
+          "areaId": 1203,
+          "position": {
+            "x": -30889,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000793,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石9",
+          "areaId": 1203,
+          "position": {
+            "x": -30454,
+            "y": 187259,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000803,
+          "mapId": 8,
+          "blueprintType": "Gameplay026",
+          "name": "TsEntity_玩法_通用_开关8",
+          "areaId": 1203,
+          "position": {
+            "x": -30873,
+            "y": 187111,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000804,
+          "mapId": 8,
+          "blueprintType": "Gameplay026",
+          "name": "TsEntity_玩法_通用_开关9",
+          "areaId": 1203,
+          "position": {
+            "x": -30759,
+            "y": 187096,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000808,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录",
+          "areaId": 1203,
+          "position": {
+            "x": -31273,
+            "y": 187492,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000862,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-1",
+          "areaId": 1203,
+          "position": {
+            "x": -30220,
+            "y": 187169,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000863,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-1",
+          "areaId": 1203,
+          "position": {
+            "x": -30233,
+            "y": 187175,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000864,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31198,
+            "y": 187523,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000865,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31210,
+            "y": 187531,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000866,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31442,
+            "y": 187613,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000867,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31455,
+            "y": 187620,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000868,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听8-4",
+          "areaId": 1203,
+          "position": {
+            "x": -31623,
+            "y": 187117,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000869,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门8-4",
+          "areaId": 1203,
+          "position": {
+            "x": -31635,
+            "y": 187125,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000870,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31534,
+            "y": 187422,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000871,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31544,
+            "y": 187375,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000872,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-1",
+          "areaId": 1203,
+          "position": {
+            "x": -31046,
+            "y": 187242,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000873,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-1",
+          "areaId": 1203,
+          "position": {
+            "x": -31055,
+            "y": 187197,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000874,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31712,
+            "y": 186932,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000875,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31722,
+            "y": 186886,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000876,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-4",
+          "areaId": 1203,
+          "position": {
+            "x": -30491,
+            "y": 186486,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000877,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-4",
+          "areaId": 1203,
+          "position": {
+            "x": -30500,
+            "y": 186442,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000935,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录74",
+          "areaId": 1203,
+          "position": {
+            "x": -30888,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000936,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座7",
+          "areaId": 1203,
+          "position": {
+            "x": -30899,
+            "y": 186864,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000937,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座7",
+          "areaId": 1203,
+          "position": {
+            "x": -30722,
+            "y": 187353,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000938,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录75",
+          "areaId": 1203,
+          "position": {
+            "x": -30889,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000939,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座8",
+          "areaId": 1203,
+          "position": {
+            "x": -30989,
+            "y": 186620,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000940,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座8",
+          "areaId": 1203,
+          "position": {
+            "x": -30544,
+            "y": 187841,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000941,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录76",
+          "areaId": 1203,
+          "position": {
+            "x": -30889,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000942,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座9",
+          "areaId": 1203,
+          "position": {
+            "x": -30789,
+            "y": 187930,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000943,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座9",
+          "areaId": 1203,
+          "position": {
+            "x": -30966,
+            "y": 187442,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_SideTask_HKSM_001",
+          "flowIndex": 6,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Art, wie du es gelöst hast... Es erstaunt mich immer noch, obwohl ich das schon einmal gesehen habe.",
+                "en": "The way you solved it... It amazed me still though I've watched this before.",
+                "es": "La forma en que lo resolviste... Aunque lo he visto antes, todavía me asombra.",
+                "fr": "Cette façon ! Cette technique ! J'ai été stupéfait ...",
+                "ja": "神技！やはり底が見えない！",
+                "ko": "다시 봐도 여전히 충격적이네요!",
+                "th": "วิธีไขปริศนาของคุณ... ยังทำให้ฉันทึ่งอยู่ดี ถึงจะเคยเห็นแบบนี้มาก่อนแล้วก็เถอะ",
+                "zh-Hans": "这手法，再看一遍还是这么震撼！",
+                "zh-Hant": "這手法，再看一遍還是這麼震撼！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh... mehr Inspiration...",
+                "en": "Oh... more inspiration...",
+                "es": "Oh... más inspiración...",
+                "fr": "Oh... plus d'inspiration...",
+                "ja": "おぁ……新しいアイディアが次々と浮かんでくる！",
+                "ko": "음... 또 새로운 영감이 떠오르네요...",
+                "th": "โอ้... ขอแรงบันดาลใจอีก...",
+                "zh-Hans": "唔……又有新的灵感了……",
+                "zh-Hant": "唔……又有新的靈感了……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "parentId": 29,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 134000805,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_进入",
+          "areaId": 1203,
+          "position": {
+            "x": -30880,
+            "y": 187270,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000806,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_退出",
+          "areaId": 1203,
+          "position": {
+            "x": -30863,
+            "y": 187369,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 49,
+      "parentId": 29,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Hilf Mizhi, die Mechanik zu kalibrieren",
+        "en": "Help Mizhi calibrate the Mechanics",
+        "es": "Ayuda a Mizhi a calibrar la mecánica",
+        "fr": "Aider Mizhi à calibrer le mécanisme secret",
+        "ja": "覓知に協力して密方機巧を調整する",
+        "ko": "문연과 협력하여 큐브 기관 풀기",
+        "th": "ช่วยมิจิปรับเทียบกลไก",
+        "zh-Hans": "配合觅知调试密方机关",
+        "zh-Hant": "配合覓知調試密方機關"
+      },
+      "entities": [
+        {
+          "entityId": 134000790,
+          "mapId": 8,
+          "blueprintType": "Gameplay382",
+          "name": "TsEntity_玩法_悬浮磁石_底座8",
+          "areaId": 1203,
+          "position": {
+            "x": -30888,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000791,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石8",
+          "areaId": 1203,
+          "position": {
+            "x": -31472,
+            "y": 186807,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000803,
+          "mapId": 8,
+          "blueprintType": "Gameplay026",
+          "name": "TsEntity_玩法_通用_开关8",
+          "areaId": 1203,
+          "position": {
+            "x": -30873,
+            "y": 187111,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000805,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_进入",
+          "areaId": 1203,
+          "position": {
+            "x": -30880,
+            "y": 187270,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000806,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_退出",
+          "areaId": 1203,
+          "position": {
+            "x": -30863,
+            "y": 187369,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 33,
+      "parentId": 31,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 34,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Berichte Mizhi",
+        "en": "Report to Mizhi",
+        "es": "Informa a Mizhi",
+        "fr": "Parler à Mizhi",
+        "ja": "覓知に報告する",
+        "ko": "문연에게 찾아가기",
+        "th": "รายงานให้มิจิทราบ",
+        "zh-Hans": "回复觅知",
+        "zh-Hant": "回覆覓知"
+      },
+      "entities": [
+        {
+          "entityId": 134000726,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男_觅知3",
+          "areaId": 1203,
+          "position": {
+            "x": -30689,
+            "y": 188319,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -109
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_SideTask_HKSM_001",
+          "flowIndex": 6,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Perfekt, so perfekt...",
+                "en": "Perfect, so perfect...",
+                "es": "Perfecto, tan perfecto...",
+                "fr": "Parfait, si parfait...",
+                "ja": "あぁ……完璧だ……！",
+                "ko": "대박, 너무 완벽해요...",
+                "th": "ช่างสมบูรณ์แบบเหลือเกิน...",
+                "zh-Hans": "完美，太完美了……",
+                "zh-Hant": "完美，太完美了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Timing, die Schritte. Du hast das genau und passend gemacht. Eine Lösung wie aus dem Lehrbuch.",
+                "en": "The timeing, the steps. You made that exact and fitted. A textbook solving.",
+                "es": "El tiempo, los pasos. Lo hiciste exacto y encajado. Una resolución de acertijos de libro de texto.",
+                "fr": "Le timing, les étapes. Tu as fait en sorte que ce soit exact et adapté. Une résolution digne d'un manuel.",
+                "ja": "タイミングも、手順もミスなし！全人類が見習うべき最高の手本だ！",
+                "ko": "타이밍이며 순서며 아주 훌륭해요... 예시로 할 수 있을 만큼이요...",
+                "th": "จังหวะ ขั้นตอน คุณทำได้ลงตัวเป๊ะ อย่างกับออกมาจากตำรา",
+                "zh-Hans": "这时机，这步骤，把控得严丝合缝，堪称教科书级别的操作……",
+                "zh-Hant": "這時機，這步驟，把控得嚴絲合縫，堪稱教科書級別的操作……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Richtig, warum schreiben wir das nicht einfach in ein Lehrbuch? Meine Automatenmechanik und deine Techniken.",
+                "en": "Right, why don't we just write that into a textbook? My Magnetic Cube Mechanics and your techniques.",
+                "es": "Correcto, ¿por qué no lo escribimos en un libro de texto? Mi mecánica cibernética y tus técnicas.",
+                "fr": "D'accord, pourquoi ne pas écrire cela dans un manuel ? Ma mécanique et tes techniques.",
+                "ja": "そうだ、そうしよう！私の機巧術とあなたの操作方法を一緒に世に残すのだ！",
+                "ko": "참, 차라리 제 기관술과 방랑자의 조작을 함께 기록해 보는게 어때요!",
+                "th": "นั่นสินะ ทำไมเราไม่เขียนตำราเสียเลย? กลไกลูกบาศก์แม่เหล็กของฉันกับเทคนิคของคุณ",
+                "zh-Hans": "对了，不如就写进教科书吧，把我的机关术和你的操作一起！",
+                "zh-Hant": "對了，不如就寫進教科書吧，把我的機關術和你的操作一起！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erst jetzt hat die Automatenmechanik das Ultimative erreicht.",
+                "en": "Only now Magnetic Cube Mechanics reached the ultimate.",
+                "es": "Solo ahora la mecánica cibernética ha alcanzado su máxima expresión.",
+                "fr": "Ce n'est qu'aujourd'hui que la mécanique ultime prend forme !",
+                "ja": "これこそが、完全なる機巧術そのもの！",
+                "ko": "이로써 이 기관술은 마침내 완벽이라고 할 수 있어요!",
+                "th": "ตอนนี้กลไกลูกบาศก์แม่เหล็กถึงระดับสูงสุดแล้ว",
+                "zh-Hans": "至此，这机关术总算是能称得上极致了！",
+                "zh-Hant": "至此，這機關術總算是能稱得上極致了！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nur die Automatenmechanik, die ich Schritt für Schritt selbst entwickelt habe, ist so erfüllend.",
+                "en": "Only the Magnetic Cube Mechanics developed step by step by myself is so fulfilling.",
+                "es": "Solo la mecánica cibernética desarrollada paso a paso por mí mismo es tan satisfactoria.",
+                "fr": "Seule la mécanique développée peu à peu par moi-même est aussi satisfaisante !",
+                "ja": "やはり近道などない、自分の研究成果でないと意味がないんだ！",
+                "ko": "역시 기관술은 스스로 차근차근 연구해야 된다니깐요!",
+                "th": "มีเพียงกลไกลูกบาศก์แม่เหล็กที่ฉันพัฒนาทีละขั้นเท่านั้นที่น่าพึงพอใจ",
+                "zh-Hans": "果然机关术还是自己一步步研发出来的才踏实！",
+                "zh-Hant": "果然機關術還是自己一步步研發出來的才踏實！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "parentId": 34,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 134000805,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_进入",
+          "areaId": 1203,
+          "position": {
+            "x": -30880,
+            "y": 187270,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000806,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_退出",
+          "areaId": 1203,
+          "position": {
+            "x": -30863,
+            "y": 187369,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 50,
+      "parentId": 34,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 36,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Hilf Mizhi, die Mechanik zu kalibrieren",
+        "en": "Help Mizhi calibrate the Mechanics",
+        "es": "Ayuda a Mizhi a calibrar la mecánica",
+        "fr": "Aider Mizhi à calibrer le mécanisme secret",
+        "ja": "覓知に協力して密方機巧を調整する",
+        "ko": "문연과 협력하여 큐브 기관 풀기",
+        "th": "ช่วยมิจิปรับเทียบกลไก",
+        "zh-Hans": "配合觅知调试密方机关",
+        "zh-Hant": "配合覓知調試密方機關"
+      },
+      "entities": [
+        {
+          "entityId": 134000792,
+          "mapId": 8,
+          "blueprintType": "Gameplay382",
+          "name": "TsEntity_玩法_悬浮磁石_底座9",
+          "areaId": 1203,
+          "position": {
+            "x": -30889,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000793,
+          "mapId": 8,
+          "blueprintType": "Gameplay381",
+          "name": "TsEntity_玩法_悬浮磁石9",
+          "areaId": 1203,
+          "position": {
+            "x": -30454,
+            "y": 187259,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000804,
+          "mapId": 8,
+          "blueprintType": "Gameplay026",
+          "name": "TsEntity_玩法_通用_开关9",
+          "areaId": 1203,
+          "position": {
+            "x": -30759,
+            "y": 187096,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 71
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000805,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_进入",
+          "areaId": 1203,
+          "position": {
+            "x": -30880,
+            "y": 187270,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000806,
+          "mapId": 8,
+          "blueprintType": "Gameplay104",
+          "name": "TsEntity_特殊_触发器_退出",
+          "areaId": 1203,
+          "position": {
+            "x": -30863,
+            "y": 187369,
+            "z": -3789
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 38,
+      "parentId": 36,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 39,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde die Truhe",
+        "en": "Find the chest",
+        "es": "Encuentra el cofre",
+        "fr": "Trouver le trésor",
+        "ja": "宝を見つける",
+        "ko": "보물상자 찾기",
+        "th": "ค้นหาหีบ",
+        "zh-Hans": "找到宝藏",
+        "zh-Hant": "找到寶藏"
+      },
+      "entities": [
+        {
+          "entityId": 134000727,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点3",
+          "areaId": 1203,
+          "position": {
+            "x": -47427,
+            "y": 197090,
+            "z": -4122
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000728,
+          "mapId": 8,
+          "blueprintType": "Treasure024",
+          "name": "TsEntity_丰厚物资箱_任务用",
+          "areaId": 1203,
+          "position": {
+            "x": -47436,
+            "y": 197197,
+            "z": -4121
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 178
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000808,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录",
+          "areaId": 1203,
+          "position": {
+            "x": -31273,
+            "y": 187492,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000870,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31534,
+            "y": 187422,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000871,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-2",
+          "areaId": 1203,
+          "position": {
+            "x": -31544,
+            "y": 187375,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000872,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-1",
+          "areaId": 1203,
+          "position": {
+            "x": -31046,
+            "y": 187242,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000873,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-1",
+          "areaId": 1203,
+          "position": {
+            "x": -31055,
+            "y": 187197,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000874,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31712,
+            "y": 186932,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000875,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-3",
+          "areaId": 1203,
+          "position": {
+            "x": -31722,
+            "y": 186886,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000876,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听9-4",
+          "areaId": 1203,
+          "position": {
+            "x": -30491,
+            "y": 186486,
+            "z": -3531
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000877,
+          "mapId": 8,
+          "blueprintType": "Gameplay534",
+          "name": "TsEntity_玩法_悬浮磁石_传送门9-4",
+          "areaId": 1203,
+          "position": {
+            "x": -30500,
+            "y": 186442,
+            "z": -3739
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000893,
+          "mapId": 8,
+          "blueprintType": "NPC240",
+          "name": "TsEntity_170_002_皇龙女_晴淑5",
+          "areaId": 1203,
+          "position": {
+            "x": -30752,
+            "y": 188276,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -35
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000894,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男_觅知4",
+          "areaId": 1203,
+          "position": {
+            "x": -30681,
+            "y": 188245,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 171
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000938,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录75",
+          "areaId": 1203,
+          "position": {
+            "x": -30889,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000939,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座8",
+          "areaId": 1203,
+          "position": {
+            "x": -30989,
+            "y": 186620,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000940,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座8",
+          "areaId": 1203,
+          "position": {
+            "x": -30544,
+            "y": 187841,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000941,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录76",
+          "areaId": 1203,
+          "position": {
+            "x": -30889,
+            "y": 187275,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000942,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座9",
+          "areaId": 1203,
+          "position": {
+            "x": -30789,
+            "y": 187930,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000943,
+          "mapId": 8,
+          "blueprintType": "Gameplay587",
+          "name": "TsEntity_玩法_悬浮磁石_可交换底座9",
+          "areaId": 1203,
+          "position": {
+            "x": -30966,
+            "y": 187442,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 40,
+      "parentId": 39,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 41,
+      "parentId": 40,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 134000725,
+          "mapId": 8,
+          "blueprintType": "NPC240",
+          "name": "TsEntity_170_002_皇龙女_晴淑4",
+          "areaId": 1203,
+          "position": {
+            "x": -30624,
+            "y": 188294,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -155
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134000726,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男_觅知3",
+          "areaId": 1203,
+          "position": {
+            "x": -30689,
+            "y": 188319,
+            "z": -3795
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -109
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_SideTask_HKSM_001",
+          "flowIndex": 13,
+          "stateId": 9,
+          "talks": [
+            {
+              "text": {
+                "de": "Mi'zhi, es war alles dank {PlayerName}, dass du diesmal nicht getötet wurdest. Mach das nicht noch einmal.",
+                "en": "Mi'zhi, you're lucky to be alive thanks to Rover. Never take such risks again.",
+                "es": "Mi’zhi, has tenido suerte de salir con vida gracias a Errante. No vuelvas a hacer algo tan peligroso.",
+                "fr": "Mi'zhi, c'est Nomade qui t'a sauvé. Soyez prudent la prochaine fois !",
+                "ja": "覓知、今回は幸運にも{PlayerName}がいたから、命拾いした。こんなこと、もうしないでよ……",
+                "ko": "문연, 다음부턴 다시는 이러지 마요...",
+                "th": "Mi'zhi คุณโชคดีที่รอดมาได้เพราะผู้พเนจร อย่าเสี่ยงอะไรแบบนั้นอีกนะ",
+                "zh-Hans": "觅知，这次多亏漂泊者你才捡回一条命，下次可别这么冲动了……",
+                "zh-Hant": "覓知，這次多虧漂泊者你才撿回一條命，下次可別這麼衝動了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast mir Angst gemacht...",
+                "en": "You made me afraid...",
+                "es": "Me hiciste tener miedo...",
+                "fr": "Vous m'avez fait peur...",
+                "ja": "心臓に悪いから……",
+                "ko": "진짜 놀랐어요...",
+                "th": "คุณทำให้ฉันกลัว...",
+                "zh-Hans": "别吓我了……",
+                "zh-Hant": "別嚇我了……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frau Qingshu, ich verspreche, dass ich das nicht noch einmal tun werde.",
+                "en": "Miss Qingshu, I promise I won't do that again.",
+                "es": "Señorita Qingshu, prometo que no lo haré de nuevo.",
+                "fr": "Mlle Qingshu, je promets de ne pas recommencer.",
+                "ja": "うん、約束する。もうしない。",
+                "ko": "청숙님, 걱정 마세요. 다시는 이런 일 없을거예요",
+                "th": "คุณ Qingshu ฉันสัญญาว่าจะไม่ทำแบบนั้นอีก",
+                "zh-Hans": "晴淑姐，你放心，以后我再也不会这么冲动了。",
+                "zh-Hant": "晴淑姐，你放心，以後我再也不會這麼衝動了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Denn in meinem Herzen gibt es jetzt etwas Wichtigeres als die Automatenmechanik...",
+                "en": "Because in my heart, there is something more important that Magnetic Cube Mechanics now...",
+                "es": "Porque en mi corazón, ahora hay algo más importante que la mecánica cibernética...",
+                "fr": "Parce que dans mon cœur, il y a quelque chose de plus important que Automata Mechanics maintenant...",
+                "ja": "機巧術以上に大切なものがあると知ったから。",
+                "ko": "왜냐하면 제 마음속에 기관술보다 더 중요한 것이 있으니까요...",
+                "th": "เพราะในหัวใจฉันตอนนี้ มีบางสิ่งที่สำคัญยิ่งกว่ากลไกลูกบาศก์แม่เหล็กนั่น...",
+                "zh-Hans": "因为我心里有了比机关术更重要的东西……",
+                "zh-Hant": "因為我心裡有了比機關術更重要的東西……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wann hast du das gelernt...",
+                "en": "When did you learn that...",
+                "es": "¿Cuándo aprendiste eso...",
+                "fr": "Quand avez-vous appris que...",
+                "ja": "あ、あなた……たまにはいいこと言えるのね！",
+                "ko": "언, 언제부터 말을 이렇게 잘하게 됐죠...",
+                "th": "คุณรู้ตัวตั้งแต่เมื่อไหร่...",
+                "zh-Hans": "你、你什么时候这么会说话了……",
+                "zh-Hant": "你、你什麼時候這麼會說話了……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich wusste erst, was wirklich für mich bestimmt war, als ich fast mein Leben verloren hatte.",
+                "en": "I only knew what was truly meant for me after I nearly lost my life.",
+                "es": "Solo supe lo que realmente era para mí después de que casi perdí la vida.",
+                "fr": "Je n'ai su ce qui m'était vraiment destiné qu'après avoir failli perdre la vie.",
+                "ja": "今回の一件を通じて、本当に大切なものが何かわかったからな。",
+                "ko": "죽을 고비를 넘기면서 깨달았어요",
+                "th": "ฉันเพิ่งรู้ว่าอะไรสำคัญกับฉันอย่างแท้จริง หลังจากเกือบไม่รอด",
+                "zh-Hans": "鬼门关走过一遭，我明白了真正重要的东西。",
+                "zh-Hant": "鬼門關走過一遭，我明白了真正重要的東西。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Verfolgung der Automatenmechanik ist endlos, aber ich sollte nicht die Menschen neben mir dafür aus den Augen verlieren.",
+                "en": "The pursue for Magnetic Cube Mechanics is endless, but I shouldn't lose sight of the people beside me for that.",
+                "es": "La búsqueda de la mecánica cibernética es interminable, pero no debería perder de vista a las personas a mi lado por eso.",
+                "fr": "La poursuite de l'Automata Mechanics est infinie, mais je ne dois pas perdre de vue les personnes qui se trouvent à mes côtés pour cela.",
+                "ja": "機巧術の高みは際限のないもの。それを求めて身近な人を無視してしまえば本末転倒だ。",
+                "ko": "기관술도 비록 중요하지만 주변 사람들을 더 이상 소홀하지 말자는 거요",
+                "th": "การศึกษากลไกลูกบาศก์แม่เหล็กนั้นไม่มีวันจบ แต่ฉันก็ไม่ควรละเลยผู้คนที่อยู่เคียงข้างฉัน",
+                "zh-Hans": "机关术的追求是无止境的，我不能为此忽略了身边的人。",
+                "zh-Hant": "機關術的追求是無止境的，我不能為此忽略了身邊的人。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du an meiner Seite, Frau Qingshu, und all diese scheinbar langweiligen Tage. Das sind die wirklich wertvollen Dinge. Das habe ich gelernt, nachdem ich sie fast verloren hatte.",
+                "en": "You by my side, Miss Qingshu, and all these seemingly bland days. These are the real precious things. I learned that after I almost lost them.",
+                "es": "Tú a mi lado, señorita Qingshu, y todos estos días aparentemente insípidos. Estas son las cosas realmente preciosas. Aprendí eso después de que casi las perdí.",
+                "fr": "Vous à mes côtés, Mlle Qingshu, et tous ces jours apparemment fades. Ce sont les vraies choses précieuses. Je l'ai appris après avoir failli les perdre.",
+                "ja": "晴淑も、この代わり映えしない日常も……実は大事なものだったんだ……失いかけて、それを酷く痛感した。",
+                "ko": "청숙님도 그렇고 평소에 평범하다고 생각했던 이 일상도 얼마나 소중한지 다시 한번 깨달았거든요...",
+                "th": "มีคุณ Qingshu อยู่เคียงข้างในวันที่สุดแสนจืดชืด นั่นเป็นสิ่งที่มีค่าอย่างแท้จริง ฉันได้รู้แล้วหลังเกือบสูญเสียมันไป",
+                "zh-Hans": "身边的晴淑姐还有这一天天看似平淡的日常，差点失去后才知道有多么宝贵呢……",
+                "zh-Hant": "身邊的晴淑姐還有這一天天看似平淡的日常，差點失去後才知道有多麼寶貴呢……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "parentId": 42,
+      "type": "Action",
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_SideTask_HKSM_001",
+          "flowIndex": 12,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Siehst du diese Heiligenscheine auf den Basen? Das ist das neueste Teleportsystem, das ich entwickelt habe!",
+                "en": "See those halos on the bases? That's the lastest teleport system I developed!",
+                "es": "¿Ves esos halos en las bases? ¡Ese es el último sistema de teletransporte que desarrollé!",
+                "fr": "Tu vois ces halos sur les bases ? C'est le système de téléportation que j'ai développé !",
+                "ja": "台座にある光の輪を見ろ！それが私が考えた新しいギミックなのだ！",
+                "ko": "그 베이스 위의 빛의 테두리를 보았나요? 그건 제가 최근에 발명한 전송 메커니즘이에요!",
+                "th": "เห็นแสงเรืองๆ ตามฐานนั่นไหม? นั่นคือระบบเทเลพอร์ตล่าสุดที่ฉันพัฒนาขึ้นมา!",
+                "zh-Hans": "看到那些底座上的光圈了吗？那是我最新发明的传送机制！",
+                "zh-Hant": "看到那些底座上的光圈了嗎？那是我最新發明的傳送機制！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Immer wenn ein Cuvik zu den Heiligenscheinen bewegt wird, wird es zu den markierten Orten teleportiert.",
+                "en": "Whenever a Magnetic Cube is moved to the halos, it will be teleported to the marked locations.",
+                "es": "Cada vez que un Cuvik se mueve a los halos, será teletransportado a las ubicaciones marcadas.",
+                "fr": "Chaque fois qu'un Cube est déplacé vers les halos, il est téléporté aux endroits indiqués.",
+                "ja": "密方がその光の輪に触れると、相応の位置にテレポートする。",
+                "ko": "큐브가 빛의 테두리에 닿는 즉시 해당 위치로 전송돼요!",
+                "th": "พอเลื่อนลูกบาศก์แม่เหล็กไปที่แสง มันจะเทเลพอร์ตไปยังตำแหน่งที่ทำเครื่องหมายไว้",
+                "zh-Hans": "密方一旦接触到那些光圈啊，就会被立刻传送到对应的位置！",
+                "zh-Hant": "密方一旦接觸到那些光圈啊，就會被立刻傳送到對應的位置！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Beachte, die Markierungen sind mit einzigartigen Farben gemacht.",
+                "en": "Take note, the marks are made with unique colors.",
+                "es": "Toma nota, las marcas se hacen con colores únicos.",
+                "fr": "Et les marques sont faites avec des couleurs !",
+                "ja": "色が同じ光の輪は対になっているぞ！",
+                "ko": "아, 그리고 해당 빛의 테두리는 같은 컬러로 표기되어 있어요!",
+                "th": "สังเกตว่าเครื่องหมายจะมีสีเฉพาะ",
+                "zh-Hans": "注意注意，对应光圈是用颜色来标记的哦！",
+                "zh-Hant": "注意注意，對應光圈是用顏色來標記的喔！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 947,
+                "name": {
+                  "zh-Hans": "觅知"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "parentId": 48,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 45,
+      "parentId": 48,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Öffne das mechanische Schloss",
+        "en": "Solve the Mechanics",
+        "es": "Desbloquea el candado mecánico",
+        "fr": "Résoudre le casse-tête",
+        "ja": "機巧を解除する",
+        "ko": "기관 잠금장치 풀기",
+        "th": "ไขกลไก",
+        "zh-Hans": "解开机关锁",
+        "zh-Hant": "解開機關鎖"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 49,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 46,
+      "parentId": 49,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Öffne das mechanische Schloss",
+        "en": "Solve the Mechanics",
+        "es": "Desbloquea el bloqueo mecánico",
+        "fr": "Résoudre le casse-tête",
+        "ja": "機巧を解除する",
+        "ko": "기관 잠금장치 풀기",
+        "th": "ไขกลไก",
+        "zh-Hans": "解开机关锁",
+        "zh-Hant": "解開機關鎖"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 36,
+      "parentId": 50,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 50,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Entsperre das mechanische Schloss",
+        "en": "Solve the Mechanics",
+        "es": "Desbloquea el bloqueo mecánico",
+        "fr": "Résoudre le casse-tête",
+        "ja": "機巧を解除する",
+        "ko": "기관 잠금장치 풀기",
+        "th": "ไขกลไก",
+        "zh-Hans": "解开机关锁",
+        "zh-Hant": "解開機關鎖"
+      },
+      "dialogs": []
+    }
+  ]
+}

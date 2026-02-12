@@ -1,0 +1,308 @@
+{
+  "id": 126700020,
+  "key": "倾听动物之声·鱼语翻译",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lauschen auf die Worte der Tiere: Übersetzung der Fischsprache",
+    "en": "Listen to Animals' Words: Translation of Fish's Language",
+    "es": "Escuchar las palabras de los animales: Traducción del lenguaje de los peces",
+    "fr": "Écouter la voix des animaux : Poisson",
+    "ja": "動物の声を聞こう・魚語通訳",
+    "ko": "동물의 소리 듣기·물고기 언어 번역",
+    "th": "รับฟังคำพูดสัตว์: คำแปลภาษาปลา",
+    "zh-Hans": "倾听动物之声·鱼语翻译",
+    "zh-Hant": "傾聽動物之聲·魚語翻譯"
+  },
+  "desc": {
+    "de": "Du triffst Xuanyin wieder. Dieses Mal beobachtet sie die Tetra...",
+    "en": "You meet Xuanyin again. This time, she is spying on the Tetra...",
+    "es": "Te encuentras con Xuanyin de nuevo. Esta vez, ella está espiando a Tetra...",
+    "fr": "Vous rencontrez à nouveau Xuanyin. Cette fois, elle observe les Tetras...",
+    "ja": "再び懸音と出会った。彼女は群彩を観察しているようだ……",
+    "ko": "다시 한번 현음과 마주쳤습니다. 그녀가 잉어를 관찰하고 있습니다...",
+    "th": "คุณพบ Xuanyin อีก ครั้งนี้เธอกำลังแอบสังเกตเทตรา...",
+    "zh-Hans": "你又见到了悬音，她正在观察群彩……",
+    "zh-Hant": "你又見到了懸音，她正在觀察群彩……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Xuanyin",
+        "en": "Talk to Xuanyin",
+        "es": "Habla con Xuanyin",
+        "fr": "Parler à Xuanyin",
+        "ja": "懸音と会話",
+        "ko": "현음과 대화",
+        "th": "คุยกับ Xuanyin",
+        "zh-Hans": "和悬音交谈",
+        "zh-Hant": "和懸音交談"
+      },
+      "entities": [
+        {
+          "entityId": 126000176,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "倾听动物之声_救鱼要紧_悬音",
+          "areaId": 4,
+          "position": {
+            "x": -107511,
+            "y": 84751,
+            "z": 3851
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_世界事件_倾听动物之声_救鱼要紧",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie konnte das passieren...",
+                "en": "How could this happen...",
+                "es": "¿Cómo pudo pasar esto...?",
+                "fr": "Comment...",
+                "ja": "どうしてこんなことに……",
+                "ko": "어떻게 이럴 수가...",
+                "th": "เป็นไปได้ไงกัน...",
+                "zh-Hans": "怎么会这样……",
+                "zh-Hant": "怎麼會這樣……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sie sind gestorben.",
+                    "en": "They died.",
+                    "es": "Han muerto.",
+                    "fr": "Ils sont bel et bien morts.",
+                    "ja": "完全に、事切れたね……",
+                    "ko": "숨을 쉬지 않아요",
+                    "th": "พวกมันลาโลกไปแล้ว",
+                    "zh-Hans": "它们完全没气了。",
+                    "zh-Hant": "它們完全沒氣了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "*Seufz*, das ist ein notwendiges Opfer, um der Wahrheit näher zu kommen. Ruhe in Frieden. Ich werde ihnen auch in den Danksagungen Tribut zollen.",
+                "en": "Sigh, this is a necessary sacrifice for closing in on the truth. Rest in peace. I will pay tribute to them too in the acknowledgments.",
+                "es": "Suspiro, esto es un sacrificio necesario para acercarnos a la verdad. Descansen en paz. También les rendiré homenaje en los agradecimientos.",
+                "fr": "C'est un sacrifice consenti pour s'approcher de la vérité. Je les inscrirai également dans les remerciements.",
+                "ja": "はあ……これも、真理に近づくための尊い犠牲です。 群彩たちの名前は、論文の謝辞に入れましょう。",
+                "ko": "어휴, 이것도 진리에 접근하기 위한 희생이라고 할 수 있겠죠. 나중에 따로 잉어들에 대해서도 감사의 말을 넣어야겠어요",
+                "th": "เฮ้อ นี่เป็นการเสียสละที่จำเป็นเพื่อค้นพบความจริง จงไปสู่สุคติเถิด ฉันจะรำลึกถึงพวกมันในหน้าคำขอบคุณด้วย",
+                "zh-Hans": "哎，这也算是为了逼近真理而做的牺牲，我会把它们也写进致谢词的。",
+                "zh-Hant": "哎，這也算是為了逼近真理而做的犧牲，我會把它們也寫進致謝詞的。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Super, jetzt kannst du meinen Namen davon entfernen.",
+                    "en": "Great, now you can remove my name from it.",
+                    "es": "Genial, ahora puedes quitar mi nombre de eso.",
+                    "fr": "Donc, retirez mon nom des remerciements s'il vous plaît.",
+                    "ja": "{Male=魚の隣に俺の名前が並ぶのはちょっと……;Female=魚の隣に私の名前が並ぶのはちょっと……}",
+                    "ko": "그럼 거기서 제 이름은 빼주세요",
+                    "th": "ก็ดี งั้นคราวนี้คุณก็ลบชื่อฉันออกจากหน้านั้นได้แล้ว",
+                    "zh-Hans": "那你还是把我的名字从致谢中去掉吧。",
+                    "zh-Hant": "那你還是把我的名字從致謝中去掉吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hey, sag das nicht. Ich schätze wirklich jeden, der mir geholfen hat, einschließlich Tiere.",
+                "en": "Hey, don't say that. I genuinely appreciate everyone who helped me, including animals.",
+                "es": "Oye, no digas eso. Aprecio genuinamente a todos los que me ayudaron, incluyendo a los animales.",
+                "fr": "Ne dites pas cela, j'apprécie sincèrement tous les animaux qui m'ont aidé.",
+                "ja": "そう言わないであげてください。 協力してくれた全ての動物への感謝の気持ちは本物です！",
+                "ko": "어, 그렇게 말하지 마세요. 전 절 도와준 모든 동물에게 진심으로 감사하고 있어요",
+                "th": "เอ๊ย อย่าพูดงั้นสิ ฉันขอบคุณทุกคนที่ช่วยฉันจากใจจริง รวมถึงสัตว์ด้วย",
+                "zh-Hans": "欸，别这么说嘛，我可是真心实意地感谢所有帮助过我的动物。",
+                "zh-Hant": "欸，別這麼說嘛，我可是真心實意地感謝所有幫助過我的動物。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Um ihren verbleibenden Wert zu schätzen, warum nimmst du es nicht mit nach Hause? Ich habe gehört, es schmeckt gut...",
+                "en": "To cherish their remaining value, why don't you take it home? I heard it tastes fine...",
+                "es": "Para apreciar su valor restante, ¿por qué no te lo llevas a casa? Escuché que sabe bien...",
+                "fr": "Pour ne pas gâcher sa valeur restante, vous le reprenez, j'ai entendu dire qu'ils sont délicieux...",
+                "ja": "今回は、尊い犠牲ということで、それはあなたにあげます。群彩の肉はなかなか美味しいと聞きましたよ……",
+                "ko": "그냥 두기엔 아까우니 방랑자가 가져가세요. 듣자 하니 육질이 꽤 괜찮다고 하던데...",
+                "th": "คุณเอากลับไปด้วยไหม? เพื่อถนอมคุณค่าที่ยังเหลืออยู่ของพวกมัน ฉันได้ยินมาว่ารสชาติใช้ได้อยู่นะ...",
+                "zh-Hans": "为了不浪费它剩余的价值，你就带回去吧，听说它的肉质还不错……",
+                "zh-Hant": "為了不浪費它剩餘的價值，你就帶回去吧，聽說它的肉質還不錯……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was das Übersetzungsmodul betrifft, habe ich nicht erwartet, dass dieses Mal so viele Störungen auftreten. Ich muss es mir genau ansehen.",
+                "en": "As for the translation module, I didn't expect so many malfunctions occuring this time. I need to check it out carefully.",
+                "es": "En cuanto al módulo de traducción, no esperaba tantas fallas que ocurrieron esta vez. Necesito revisarlo cuidadosamente.",
+                "fr": "Quant à ce module de traduction, cette fois-ci les erreurs sont particulièrement nombreuses, laissez-moi vérifier...",
+                "ja": "この翻訳モジュールは、今回故障が多かったから、念入りに確認しないと……",
+                "ko": "번역 모듈이 이번에 고장이 특히나 많네요. 제가 검사해볼게요",
+                "th": "ส่วนเรื่องโมดูลแปลภาษา ฉันไม่คิดว่าจะทำงานผิดพลาดมากขนาดนี้ ฉันต้องตรวจสอบอย่างละเอียดซะแล้ว",
+                "zh-Hans": "至于这个翻译模块，这次的故障尤其的多啊，让我来检查下……",
+                "zh-Hant": "至於這個翻譯模組，這次的故障尤其的多啊，讓我來檢查下……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe mich gefragt, warum es keinen unleserlichen Text anzeigt. Es stellt sich heraus, dass es schon vor langer Zeit abgestürzt ist, haha. Gut, lass mich es gleich deinstallieren.",
+                "en": "I was wondering why it didn't show any garbled text. Turns out it crashed a long time ago, haha. Alright, let me uninstall it while I'm at it.",
+                "es": "Me preguntaba por qué no mostraba ningún texto enredado. Resulta que se estrelló hace mucho tiempo, jaja. Bueno, déjame desinstalarlo mientras estoy en ello.",
+                "fr": "Je me demandais pourquoi il n'y a pas de monjibake... Il est tranquillement planté. D'accord, je vais le désinstaller.",
+                "ja": "文字化けしてないなって思っていたら、 起動して早々に落ちてしまったていたようです。それでは外しますね。",
+                "ko": "잉어는 왜 오류 코드가 발생하지 않을까 궁금했는데, 보니까 이미 다운된 상태네요. 좋아요. 그럼 확인하는 김에 제거할게요",
+                "th": "ฉันสงสัยอยู่ว่าทำไมมันถึงไม่แสดงข้อความที่อ่านไม่ออก ที่แท้เป็นเพราะว่ามันหยุดทำงานไปนานแล้วนี่เอง ฮ่าฮ่า งั้นฉันถอนการติดตั้งเลยละกัน",
+                "zh-Hans": "我还奇怪它怎么没报乱码，居然早就悄悄宕机了。好吧，那我就顺便卸载了。",
+                "zh-Hant": "我還奇怪它怎麼沒報亂碼，居然早就悄悄宕機了。好吧，那我就順便卸載了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis zum nächsten Mal, {PlayerName}.",
+                "en": "See you next time, {PlayerName}.",
+                "es": "Hasta la próxima, {PlayerName}.",
+                "fr": "À la prochaine fois, {PlayerName}.",
+                "ja": "ではまたお会いしましょう、{PlayerName}。",
+                "ko": "그럼 다음에 만나요",
+                "th": "แล้วพบกันใหม่นะ {PlayerName}",
+                "zh-Hans": "下次见，{PlayerName}。",
+                "zh-Hant": "下次見，{PlayerName}。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Fange die Tetra im Wasser",
+        "en": "Catch the Tetra in the water",
+        "es": "Atrapa a Tetra en el agua",
+        "fr": "Capturer le Tetra dans l'eau",
+        "ja": "水中の群彩を掬う",
+        "ko": "물속의 잉어 건져 올리기",
+        "th": "จับเทตราในน้ำ",
+        "zh-Hans": "捞起水中的群彩",
+        "zh-Hant": "撈起水中的群彩"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "id": 859000001,
+  "key": "任务性别条件判断",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 859000002,
+          "mapId": 33,
+          "blueprintType": "NPC0010",
+          "name": "TsEntity_0010_180_七对",
+          "areaId": 0,
+          "position": {
+            "x": 6440,
+            "y": -4800,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_测试_任务树性别判断",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist gekommen, ah, ich werde dir je nach deinem Geschlecht unterschiedliche Aufgaben geben.",
+                "es": "Has llegado, te daré diferentes diálogos de tareas según tu género.",
+                "zh-Hans": "你来了啊，我会根据你的性别交付给你不同的任务对话",
+                "zh-Hant": "你來了啊，我會根據你的性別交付給你不同的任務對話"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 478,
+                "name": {
+                  "zh-Hans": "七对"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du ein Junge bist, wird dir der nächste NPC sagen: Du bist ein Junge.",
+                "es": "Si eres un chico, el próximo Npc te dirá: eres un chico.",
+                "zh-Hans": "如果你是男生，下一个Npc会告诉你：你是男生",
+                "zh-Hant": "如果你是男生，下一個Npc會告訴你：你是男生"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 478,
+                "name": {
+                  "zh-Hans": "七对"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du ein Mädchen bist, wird dir der nächste NPC sagen: Du bist ein Mädchen.",
+                "es": "Si eres una chica, el próximo Npc te dirá: eres una chica.",
+                "zh-Hans": "如果你是女生，下一个Npc会告诉你：你是女生",
+                "zh-Hant": "如果你是女生，下一個Npc會告訴你：你是女生"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 478,
+                "name": {
+                  "zh-Hans": "七对"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 859000003,
+          "mapId": 33,
+          "blueprintType": "NPC0108",
+          "name": "TsEntity_0108_180_倾如",
+          "areaId": 0,
+          "position": {
+            "x": 6060,
+            "y": -4470,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_测试_任务树性别判断",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist ein Junge.",
+                "es": "Eres un chico.",
+                "zh-Hans": "你是男的",
+                "zh-Hant": "你是男的"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 199,
+                "name": {
+                  "zh-Hans": "擎如"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_剧情_测试_任务树性别判断",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist ein Mädchen.",
+                "es": "Eres una chica.",
+                "zh-Hans": "你是女的",
+                "zh-Hant": "你是女的"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 199,
+                "name": {
+                  "zh-Hans": "擎如"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 859000002,
+          "mapId": 33,
+          "blueprintType": "NPC0010",
+          "name": "TsEntity_0010_180_七对",
+          "areaId": 0,
+          "position": {
+            "x": 6440,
+            "y": -4800,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_测试_任务树性别判断",
+          "flowIndex": 2,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Hehe, ich weiß, welches Geschlecht ich bin.",
+                "es": "Jeje, ya sé mi género.",
+                "zh-Hans": "嘿嘿，我知道我的性别了",
+                "zh-Hant": "嘿嘿，我知道我的性別了"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 478,
+                "name": {
+                  "zh-Hans": "七对"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 859000003,
+          "mapId": 33,
+          "blueprintType": "NPC0108",
+          "name": "TsEntity_0108_180_倾如",
+          "areaId": 0,
+          "position": {
+            "x": 6060,
+            "y": -4470,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_测试_任务树性别判断",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist ein Junge.",
+                "es": "Eres un chico.",
+                "zh-Hans": "你是男的",
+                "zh-Hant": "你是男的"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 199,
+                "name": {
+                  "zh-Hans": "擎如"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 859000003,
+          "mapId": 33,
+          "blueprintType": "NPC0108",
+          "name": "TsEntity_0108_180_倾如",
+          "areaId": 0,
+          "position": {
+            "x": 6060,
+            "y": -4470,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_剧情_测试_任务树性别判断",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist ein Mädchen.",
+                "es": "Eres una chica.",
+                "zh-Hans": "你是女的",
+                "zh-Hant": "你是女的"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 199,
+                "name": {
+                  "zh-Hans": "擎如"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

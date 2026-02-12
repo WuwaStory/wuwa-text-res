@@ -1,0 +1,651 @@
+{
+  "id": 880900003,
+  "key": "转盘第三天（玩法交道具）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo Kampagne III",
+    "en": "Lollo Campaign III",
+    "es": "Campaña Lollo III",
+    "fr": "Projet Loulou III",
+    "ja": "ブブ企画・その三",
+    "ko": "무무 기획 · III",
+    "th": "แคมเปญลอลโล่ III",
+    "zh-Hans": "呜呜企划·三",
+    "zh-Hant": "嗚嗚企劃·三"
+  },
+  "desc": {
+    "de": "Du hast eine neue Lollo Lebensmitteleinkauf-Bestellung. Bitte erfülle sie rechtzeitig.",
+    "en": "You have a new \"Lollo Grocery Shopping\" order. Please fulfill it in time.",
+    "es": "Tienes un nuevo pedido de \"Tienda Online Lollo\". Por favor, cúmplelo a tiempo.",
+    "fr": "Vous avez une nouvelle commande « Loulou Courses ». Veuillez la remplir à temps.",
+    "ja": "ピロリン！新しい「ブブフレッシュ」依頼です、すぐに対応に向かいましょう！",
+    "ko": "신규 「무무 장보기」 주문 1건이 추가됐습니다. 제때 방문하여 처리해 주세요~",
+    "th": "คุณได้รับคำสั่ง \"ลอลโล่จ่ายตลาด\" ใหม่แล้ว โปรดไปจัดการให้ทันเวลา",
+    "zh-Hans": "您有一份新的「呜呜买菜」订单，请及时上门接单~",
+    "zh-Hant": "您有一份新的「嗚嗚買菜」訂單，請及時上門接單~"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Quatsch mit Maji über das heutige Pilotgeschäft",
+        "en": "Chat with Maji about today's pilot business",
+        "es": "Charla con Maji acerca del negocio de prueba de hoy.",
+        "fr": "Discutez avec Maji de l'affaire pilote d'aujourd'hui",
+        "ja": "テスト業務について馬計と会話する",
+        "ko": "마현과 오늘의 시범 업무에 대해 이야기하기",
+        "th": "คุยกับ Maji เกี่ยวกับธุรกิจนำร่องของวันนี้",
+        "zh-Hans": "和马计聊聊今天的试点业务",
+        "zh-Hant": "和馬計聊聊今天的試點業務"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900028,
+          "mapId": 8,
+          "blueprintType": "NPC018",
+          "name": "TsEntity_180_005_胖达物流男2",
+          "areaId": 407,
+          "position": {
+            "x": -124732,
+            "y": 115019,
+            "z": 11425
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Das heutige Geschäft ist „Lollo-Einkaufsservice“. Lass mich dir zuerst den Hintergrund erklären.",
+                "en": "The business today is \"Lollo Grocery Shopping\". Let me brief you on the background first.",
+                "es": "El negocio de hoy es Supermercado Lollo. Déjame que te explique brevemente su origen.",
+                "fr": "Le business d'aujourd'hui est « Loulou Fait les Courses ». Laissez-moi vous expliquer le contexte d'abord.",
+                "ja": "今日の業務は「ブブフレッシュ」という食材の購買代行とお届けサービスだよ。まず業務の背景から説明するね──",
+                "ko": "오늘 업무는 「무무 장보기」예요. 업무에 대해서 설명할게요",
+                "th": "ธุรกิจวันนี้คือ \"ลอลโล่จ่ายตลาด\" ผมจะเล่าภูมิหลังให้ฟังแบบคร่าวๆ",
+                "zh-Hans": "今天的业务是「呜呜买菜」，我来介绍一下前情——",
+                "zh-Hant": "今天的業務是「嗚嗚買菜」，我來介紹一下前情——"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Tacet-Feld in der Hafenstadt Guixu breitet sich aus und das nahegelegene Dorf Xiehua wurde zur Notfall-Evakuierungszone erklärt. Das Entwicklungsministerium und die Patrouilleure sind bereits sehr beschäftigt.",
+                "en": "The Tacet Field in the Port City of Guixu is expanding, and the nearby Xiehua Village has been included in the emergency evacuation area. The Ministry of Development and the Patrollers are already very busy.",
+                "es": "El Campo Tácito en la Ciudad Portuaria de Guixu se está expandiendo, y han incluido a la cercana Aldea Xiehua en la zona de evacuación de emergencia. El Ministerio de Desarrollo y los Patrulleros no dan abasto.",
+                "fr": "La Zone taciturne dans le Port de la ville Guixu s'agrandit, et la ville Jiehua a été incluse dans la zone d'évacuation d'urgence. Le Ministère du développement et les Patrouilleurs sont déjà très occupés.",
+                "ja": "帰来の港の無音区が拡張中で、近隣の採華庄は緊急避難エリアに指定された。それもあって、天工と巡尉は目が回りそうなくらい忙しいんだ。",
+                "ko": "귀허항시의 무음구역이 확장되는 추세라 인접 지역인 연화 장원이 급하게 비상 대피 구역에 포함되었어요. 천공부와 순찰관들은 이미 눈코 뜰 새 없이 바쁘다고 해요",
+                "th": "สนามทาเซ็ตในเมืองท่ากุยซวีกำลังขยายตัว และหมู่บ้านเซี่ยฮวาที่อยู่ใกล้ๆ ก็ถูกรวมอยู่ในพื้นที่อพยพฉุกเฉินแล้ว กระทรวงการพัฒนาและหน่วยลาดตระเวนกำลังยุ่งมากๆ เลย",
+                "zh-Hans": "归墟港市的无音区有扩张的趋势，邻近的撷华庄被纳入了应急疏散区，天工和巡尉已经忙得不可开交了。",
+                "zh-Hant": "歸墟港市的無音區有擴張的趨勢，鄰近的擷華莊被納入了應急疏散區，天工和巡尉已經忙得不可開交了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt kaum noch Händler, die nach Dorf Xiehua gehen wollen, wegen der Nähe zur Hafenstadt Guixu. Und jetzt auch noch die Probleme im Tacet-Feld ...",
+                "en": "Merchants willing to go to Xiehua Village are few already because of the short distance to the Port City of Guixu. Now with the trouble in the Tacet Field...",
+                "es": "Ya de por sí hay muy pocos comerciantes dispuestos a ir a la Aldea Xiehua por lo cerca que está de la Ciudad Portuaria de Guixu, y ahora encima con el problema del Campo Tácito...",
+                "fr": "Les commerçants prêts à aller à la ville Jiehua sont déjà peu nombreux à cause de la courte distance à la ville de Guixu. Maintenant, avec le problème dans la Zone taciturne...",
+                "ja": "採華庄は帰来の港から近い。元々行きたがる商人だって少ないのに、そこに無音区が現れたら……。",
+                "ko": "연화 장원은 귀허항시의 옆에 있어서, 그쪽까지 가려고 하는 상인들이 적기도 하고, 무음구역 소란 때문에 또...",
+                "th": "พ่อค้าที่ยินดีจะไปหมู่บ้านเซี่ยฮวามีอยู่ไม่มาก เพราะอยู่ไม่ไกลจากเมืองท่ากุยซวี ที่ตอนนี้มีปัญหาเรื่องสนามทาเซ็ตอีก...",
+                "zh-Hans": "撷华庄临近归墟港市，本来愿意去那儿的货商就少，再加上这无音区一闹……",
+                "zh-Hant": "擷華莊臨近歸墟港市，本來願意去那兒的貨商就少，再加上這無音區一鬧……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Ziel dieses Pilotprojekts ist es, den Dorfbewohnern vom Dorf Xiehua mit dem „Lollo-Einkaufsservice“ zu helfen.",
+                "en": "The purpose of piloting this business is to help the villagers of Xiehua Village with \"Lollo Grocery Shopping.\"",
+                "es": "El objetivo de este negocio es ayudar a la gente de la Aldea Xiehua con Supermercado Lollo.",
+                "fr": "Le but de ce business est d'aider les villageois de la ville Jiehua avec « Loulou Fait les Course »",
+                "ja": "「ブブフレッシュ」のテスト運用が、採華庄の住民たちの役に立つといいなと思ってるんだ。",
+                "ko": "「무무 장보기」 시범 사업이 재료 공급의 압박을 다소 완화할 수 있었으면 좋겠어요",
+                "th": "วัตถุประสงค์ของการทดลองนำร่องธุรกิจนี้คือเพื่อช่วยเหลือชาวบ้านในหมู่บ้านเซี่ยฮวาด้วย \"ลอลโล่จ่ายตลาด\"",
+                "zh-Hans": "试点买菜业务，也是希望「呜呜买菜」多少能缓解物资供应的压力。",
+                "zh-Hant": "試點買菜業務，也是希望「嗚嗚買菜」多少能緩解物資供應的壓力。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Verstanden.",
+                    "en": "I understand your idea.",
+                    "es": "Entiendo la idea.",
+                    "fr": "C'est une bonne idée.",
+                    "ja": "そうか、理解したよ。",
+                    "ko": "이해했어요",
+                    "th": "ฉันเข้าใจความคิดของคุณนะ",
+                    "zh-Hans": "懂你的意思。",
+                    "zh-Hant": "懂你的意思。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ding! Du hast zehn neue Einkaufsaufträge. Bitte erledige sie rechtzeitig.",
+                "en": "Ding! You have ten new grocery orders. Please handle them on time.",
+                "es": "¡Ding! Tienes diez nuevos pedidos del supermercado. Por favor, ocúpate de ellos a tiempo.",
+                "fr": "Ding ! Vous avez dix nouvelles commandes ! Veuillez les traiter à temps.",
+                "ja": "ピロリン！新しい依頼が10件です、すぐに依頼の対応をしましょう！",
+                "ko": "딩동! 신규 장보기 주문 10건이 추가됐습니다. 제때 처리해 주세요~",
+                "th": "ติ๊ง! คุณได้รับคำสั่งของชำใหม่สิบรายการ โปรดไปจัดการให้ทันเวลา",
+                "zh-Hans": "叮！你有十份新的买菜订单，请及时处理~",
+                "zh-Hant": "叮！ 你有十份新的買菜訂單，請及時處理~"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900060,
+                "name": {
+                  "zh-Hans": "马计的终端"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass mich mal sehen ... <color=highlight>3 Säcke Mehl und 2 Flaschen Speiseöl</color>. Du kannst sie im Mahes Lebensmittelgeschäft kaufen.",
+                "en": "Let me see... <color=highlight>3 bags of flour and 2 bottles of cooking oil</color>. You can buy them from Mahe's Grocery.",
+                "es": "Veamos... <color=highlight>3 sacos de harina y 2 botellas de aceite de cocina</color>. Las puedes comprar en la Tienda de Mahe.",
+                "fr": "Laissez-moi voir... <color=highlight>3 sacs de farine et 2 bouteilles d'huile de cuisson</color> sont commandés. Ils devraient tous être disponibles à l'Epicerie de Mahe.",
+                "ja": "どれどれ……全部で<color=highlight>3袋の小麦粉に、2つの食用油</color>か。どれも馬和雑貨で調達できそうだね。",
+                "ko": "어디 보자... <color=highlight>밀가루 3봉지와 식용기름 2개</color>가 필요하다고 하네요. 마화 잡화점에서 살 수 있겠어요",
+                "th": "ไหนดูซิ... <color=highlight>แป้ง 3 ถุง กับน้ำมันพืช 2 ขวด</color> หาซื้อได้ที่ร้านชำของ Mahe",
+                "zh-Hans": "我看看……一共需要<color=highlight>3袋面粉，2份食用油</color>，应该都能在马和杂货买到。",
+                "zh-Hant": "我看看……一共需要<color=highlight>3袋麵粉，2份食用油</color>，應該都能在馬和雜貨買到。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich gehe mit dir einkaufen. Du findest die Einkaufsliste jetzt auf deinem Terminal.",
+                "en": "I will do the purchasing with you. You can find the shopping list on your Terminal now.",
+                "es": "Yo te acompaño a comprar. Ya tienes en tu Terminal la lista de la compra.",
+                "fr": "Je ferai les achats avec toi. Tu trouves la liste de courses dans la Borne maintenant.",
+                "ja": "買い物リストは君のデバイスに同期しておいたよ。さあ、一緒に買い付けに行こう！",
+                "ko": "저랑 같이 구매해요. 구매 리스트는 단말기로 공유했어요!",
+                "th": "ผมจะไปซื้อของกับคุณเอง คุณสามารถดูรายการซื้อของบนเทอร์มินัลของคุณได้",
+                "zh-Hans": "我会一起帮忙采购，购物清单已经同步到你的终端上了！",
+                "zh-Hant": "我會一起幫忙採購，購物清單已經同步到你的終端上了！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du alles hast, treffen wir uns im Dorf Xiehua.",
+                "en": "When you've got everything done, meet me at Xiehua Village.",
+                "es": "Reúnete conmigo en la Aldea Xiehua cuando lo tengas todo.",
+                "fr": "Quand tu as tout terminé, nous nous renconterons à la Ville Jiehua.",
+                "ja": "じゃあ、またあとで採華庄で会おう！",
+                "ko": "다 됐으면, 연화 장원에서 만나요!",
+                "th": "เมื่อทุกอย่างเสร็จเรียบร้อยแล้ว ไปเจอกันที่หมู่บ้านเซี่ยฮวานะ",
+                "zh-Hans": "搞定了我们就撷华庄见！",
+                "zh-Hant": "搞定了我們就擷華莊見！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Liefer die Zutaten ins Dorf Xiehua",
+        "en": "Deliver the ingredients to Xiehua Village",
+        "es": "Entrega los ingredientes a la Aldea Xiehua.",
+        "fr": "Livrez les ingrédients à la Ville Jiehua",
+        "ja": "食材を採華庄に届ける",
+        "ko": "식재료를 연화 장원에 전달하기",
+        "th": "จัดส่งวัตถุดิบให้กับหมู่บ้านเซี่ยฮวา",
+        "zh-Hans": "将食材送往撷华庄",
+        "zh-Hant": "將食材送往擷華莊"
+      },
+      "entities": [
+        {
+          "entityId": 880900028,
+          "mapId": 8,
+          "blueprintType": "NPC018",
+          "name": "TsEntity_180_005_胖达物流男2",
+          "areaId": 407,
+          "position": {
+            "x": -124732,
+            "y": 115019,
+            "z": 11425
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 5,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {},
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "de": "Wer bist du ...?",
+                    "en": "Who are you...?",
+                    "es": "¿Quién eres...?",
+                    "fr": "Qui êtes-vous... ?",
+                    "ja": "えっと、あなたは……？",
+                    "ko": "누구시죠...?",
+                    "th": "คุณเป็นใครกัน...?",
+                    "zh-Hans": "你是……?",
+                    "zh-Hant": "你是……？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Erkennst du mich nicht, nur weil ich das Outfit gewechselt habe?",
+                "en": "You don't recognize me just because I changed the outfit?",
+                "es": "¿No me reconoces solo por haberme cambiado de ropa?",
+                "fr": "Tu ne me reconnais pas juste parce que j'ai changé de tenue ?",
+                "ja": "服装を変えたら、誰だか分からなくなっちゃったのかな？",
+                "ko": "옷을 갈아입었다고 저를 못 알아보시는 건가요?",
+                "th": "พอผมเปลี่ยนชุดคุณก็จำผมไม่ได้งั้นเหรอ?",
+                "zh-Hans": "换了一身行头你就认不出我啦？",
+                "zh-Hant": "換了一身行頭你就認不出我啦？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Maggie! Ich bin’s, Maji!",
+                "en": "Maggie! It's me, Maji!",
+                "es": "¡Maggie! ¡Soy yo, Maji!",
+                "fr": "Maggie ! C'est moi, Maji !",
+                "ja": "私だよ！マギー！馬、計！",
+                "ko": "매기(Maggie)예요! 저라고요! 마현!",
+                "th": "แม็กกี้ไง! นี่ผมเอง Maji!",
+                "zh-Hans": "Maggie！我！马计！",
+                "zh-Hant": "Maggie！ 我！ 馬計！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich fühle mich immer noch nostalgisch in diesem Outfit. Es passt mir gut.",
+                "en": "I still feel nostalgic about this outfit. It fits me well.",
+                "es": "Esta ropa me trae muchos recuerdos, y me queda como un guante.",
+                "fr": "Cette tenue me rend toujours nostalgique. Elle me va bien.",
+                "ja": "この服、サイズもピッタリだなぁ。懐かしい気持ちになるね。",
+                "ko": "이 옷이 아직도 잘 맞아요. 옛날 생각 나네요",
+                "th": "ผมยังคิดถึงชุดนี้อยู่เลย มันเข้ากับผมดีน่าดู",
+                "zh-Hans": "感觉还是这套衣服合身，真是令人怀念。",
+                "zh-Hant": "感覺還是這套衣服合身，真是令人懷念。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Stimmt, es steht dir.",
+                    "en": "Indeed, it suits you.",
+                    "es": "Y que lo digas.",
+                    "fr": "C'est parfait pour toi.",
+                    "ja": "確かに似合ってるね。",
+                    "ko": "정말 잘 어울려요",
+                    "th": "ใช่ ชุดนี้เหมาะกับคุณมาก",
+                    "zh-Hans": "确实很适合你。",
+                    "zh-Hant": "確實很適合你。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich habe die Zutaten schon meinen Patrouillenfreunden gegeben. Sie werden sie verteilen!",
+                "en": "I have already handed over the ingredients to my Patroller friends. They will distribute them!",
+                "es": "Ya he entregado los ingredientes a mis amigos Patrulleros. ¡Ellos se encargarán de distribuirlos!",
+                "fr": "J'ai déjà remis les ingrédients à mes amis Patrouilleurs. Ils les distribueront !",
+                "ja": "食材は巡尉の友人たちに渡してきたよ。代わりに配達してくれるって！",
+                "ko": "식재료는 순찰관 친구들에게 전달했으니 그들이 대신 전달해 줄 거예요!",
+                "th": "ผมส่งวัตถุดิบไปให้เพื่อนๆ หน่วยลาดตระเวนเรียบร้อยแล้ว พวกเขาจะเอาไปแจกจ่ายให้นะ!",
+                "zh-Hans": "食材我已经转交给当巡尉的朋友们啦，他们会帮忙派发的！",
+                "zh-Hant": "食材我已經轉交給當巡尉的朋友們啦，他們會幫忙派發的！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach ja, die Ausgaben und den Lohn überweise ich dir über das Terminal.",
+                "en": "Oh, by the way, I will transfer the expense and pay to you through the terminal.",
+                "es": "Por cierto, voy a enviarte al Terminal el dinero de la comida y tu paga.",
+                "fr": "Au fait, je vais transférer la salerie via la Borne.",
+                "ja": "あっそうそう、食材の費用と報酬はデバイスでまとめて送金するね。",
+                "ko": "아, 맞다, 맞다. 물건 구매 비용과 보수는 단말기로 같이 보내드릴게요",
+                "th": "โอ้ อีกอย่างนึง ผมจะโอนค่าใช้จ่ายไปจ่ายให้คุณผ่านเทอร์มินัลนะครับ",
+                "zh-Hans": "对了对了，我把菜钱和报酬用终端一起汇给你。",
+                "zh-Hant": "對了對了，我把菜錢和報酬用終端一起用匯給你。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bis morgen! Sei nicht zu spät!",
+                "en": "See you tomorrow! Don't be late!",
+                "es": "¡Hasta mañana! ¡No llegues tarde!",
+                "fr": "À demain ! Ne soyez pas en retard !",
+                "ja": "また明日、いつもの場所で会おう！じゃあね！",
+                "ko": "내일도 원래 보던 곳에서 만나요!",
+                "th": "ไว้เจอกันใหม่พรุ่งนี้นะ! อย่ามาสายล่ะ!",
+                "zh-Hans": "明天还是老地方！不见不散！",
+                "zh-Hant": "明天還是老地方！ 不見不散！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1036 @@
+{
+  "id": 880900004,
+  "key": "转盘第四天（玩法打小怪）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo Kampagne IV",
+    "en": "Lollo Campaign IV",
+    "es": "Campaña Lollo IV",
+    "fr": "Projet Loulou IV",
+    "ja": "ブブ企画・その四",
+    "ko": "무무 기획 · IV",
+    "th": "แคมเปญลอลโล่ IV",
+    "zh-Hans": "呜呜企划·四",
+    "zh-Hant": "嗚嗚企劃·四"
+  },
+  "desc": {
+    "de": "Frag Maji, was passiert ist",
+    "en": "Maji looks strange today. Ask him what happened.",
+    "es": "Maji parece extraño hoy. Pregúntale qué ha pasado.",
+    "fr": "Maji a l'air étrange aujourd'hui. Demandez-lui ce qui s'est passé.",
+    "ja": "今日はいつもと違う、馬計に事情を聞いてみよう。",
+    "ko": "오늘의 상황은 좀 특수합니다. 마현에게 무슨 일이 일어났는지 물어보세요.",
+    "th": "วันนี้ Maji ดูแปลกๆ ถามเขาว่าเกิดอะไรขึ้น",
+    "zh-Hans": "今天的情况有些特殊，问问马计发生了什么。",
+    "zh-Hant": "今天的情况有些特殊，問問馬計發生了什麼。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frag Maji, ob er Hilfe braucht",
+        "en": "Ask Maji if he needs help",
+        "es": "Pregunta a Maji si necesita ayuda.",
+        "fr": "Demandez à Maji s'il a besoin d'aide",
+        "ja": "馬計に事情を聞く",
+        "ko": "마현에게 도움이 필요한지 물어보기",
+        "th": "ถาม Maji ว่าเขาต้องการความช่วยเหลือหรือไม่",
+        "zh-Hans": "询问马计是否需要帮助",
+        "zh-Hant": "詢問馬計是否需要幫助"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900029,
+          "mapId": 8,
+          "blueprintType": "NPC018",
+          "name": "TsEntity_180_005_胖达物流男4",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Es tut mir leid, {PlayerName}. Wir müssen das Pilotprojekt für heute aussetzen. Ich habe etwas Dringendes zu erledigen.",
+                "en": "I'm sorry, {PlayerName}. We'll have to suspend the pilot business for today. I have something urgent to attend to.",
+                "es": "Lo siento, {PlayerName}, pero hoy vamos a tener que suspender lo del negocio piloto. Me ha surgido algo importante.",
+                "fr": "Désolé, {PlayerName}. Nous devons suspendre le business de pilote pour aujourd'hui. J'ai une urgence.",
+                "ja": "{PlayerName}、すまない。今日はテスト運用業務を一時停止しなきゃいけなさそうだ。急遽対応しなくちゃならないことがあってね。",
+                "ko": "{PlayerName}, 죄송해요. 오늘은 시범 업무를 잠시 중단해야 할 것 같아요. 제가 급하게 처리할 일이 있어서요",
+                "th": "ขอโทษด้วยครับ {PlayerName} วันนี้เราต้องระงับการทดลองธุรกิจนำร่องเอาไว้ก่อน ผมมีเรื่องด่วนต้องไปจัดการครับ",
+                "zh-Hans": "抱歉，{PlayerName}。今天恐怕要暂停一下试点业务了，我有点紧急的事要处理。",
+                "zh-Hant": "抱歉，{PlayerName}。 今天恐怕要暫停一下試點業務了，我有點緊急的事要處理。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900029,
+                  "mapId": 8,
+                  "blueprintType": "NPC018",
+                  "name": "TsEntity_180_005_胖达物流男4",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué pasa?",
+                    "fr": "Qu'est-ce qui s'est passé ?",
+                    "ja": "{Male=何があったんだ？;Female=何があったの？}",
+                    "ko": "무슨 일인가요?",
+                    "th": "เกิดอะไรขึ้นเหรอ?",
+                    "zh-Hans": "发生了什么？",
+                    "zh-Hant": "發生了什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ein Kurier namens Guanxian an der Station Jinzhou ist verschwunden. Er sollte die Waren vor einer Stunde zum Logistikzentrum im Hafen Gunchao liefern, aber wir konnten ihn nicht erreichen.",
+                "en": "A courier at the Jinzhou Station, Guanxian, has gone missing. He was supposed to deliver the goods to the Port Gunchao Logistics Station an hour ago, but we haven't been able to reach him.",
+                "es": "Ha desaparecido Guanxian, un mensajero de la Estación de Jinzhou. Se suponía que tenía que realizar una entrega en la Estación Logística de Puerto Gunchao hace una hora, pero no da señales de vida.",
+                "fr": "Un courrier de la station de Jinzhou, Guanxian, a disparu. Il devait livrer les marchandises à la station de logistique de Port Gunchao il y a une heure, mais nous n'avons pas pu le joindre.",
+                "ja": "今州営業所の配達員、管羨が音信不通になったんだ。1時間前、彼は荷物を鯀巣の港の営業所に届けるはずだったんだけど、突然一切連絡が取れなくなったんだよ。",
+                "ko": "금주 창고의 물류 직원이 연락이 끊겼어요. 정상적이라면 한 시간 전에 곤소항에 물건을 보냈어야 해요",
+                "th": "กวนเซียน คนส่งของประจำสถานีจินโจวหายตัวไป เขาควรจะเอาสินค้าไปส่งที่สถานีโลจิสติกส์ท่าเรือกุ่นเฉาเมื่อชั่วโมงที่แล้ว แต่เรายังติดต่อเขาไม่ได้",
+                "zh-Hans": "今州站的物流员管羡失联了，一小时前他就该把货物送到鲧巢港了。",
+                "zh-Hant": "今州站的物流員管羨失聯了，一小時前他就該把貨物送到鯀巢港了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900029,
+                  "mapId": 8,
+                  "blueprintType": "NPC018",
+                  "name": "TsEntity_180_005_胖达物流男4",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Navigationssystem zeigt an, dass Guanxian sich im Düsteren Wald befindet. Ich wollte gerade losgehen und ihn suchen, deshalb habe ich dieses Outfit angezogen.",
+                "en": "The navigation system shows that Guanxian is in Dim Forest. I was about to go and find him, that's why I changed into this outfit.",
+                "es": "El sistema de navegación indica que Guanxian está en Bosque Oscuro. Justo iba a salir para buscarle, por eso me he puesto esta ropa.",
+                "fr": "Le système de navigation indique que Guanxian est dans la Forêt aveuglante. J'étais sur le point de partir à sa recherche, c'est pour ça que j'ai changé de tenue.",
+                "ja": "位置情報では、管羨は光なき森の中にいることになってる。彼を探しに行くために、この服に着替えたんだ。",
+                "ko": "위치 정보에 따르면 관선은 아직 암흑 밀림의 산림 지역 부근에 있어요. 방금 옷을 갈아입고 그를 찾으러 가려고 했어요",
+                "th": "ระบบนำทางบอกว่ากวนเซียนอยู่ในป่าสลัว ผมกำลังจะไปตามหาเขาพอดี ก็เลยเปลี่ยนชุดเป็นชุดนี้",
+                "zh-Hans": "定位显示，管羡还在无光之森的林区附近，我刚换上衣服准备去找他。",
+                "zh-Hant": "定位顯示，管羨還在無光之森的林區附近，我剛換上衣服準備去找他。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900029,
+                  "mapId": 8,
+                  "blueprintType": "NPC018",
+                  "name": "TsEntity_180_005_胖达物流男4",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum ist er in den Düsteren Wald gegangen?",
+                    "en": "Why did he go to Dim Forest?",
+                    "es": "¿Qué hacía en Bosque Oscuro?",
+                    "fr": "Pourquoi est-il allé dans la Forêt aveuglante ?",
+                    "ja": "光なき森で何をしているんだろう？",
+                    "ko": "암흑 밀림에는 뭐 하러 간 거죠?",
+                    "th": "เขาไปที่ป่าสลัวทำไม?",
+                    "zh-Hans": "去无光之森做什么？",
+                    "zh-Hant": "去無光之森做什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wahrscheinlich wollte er eine Abkürzung nehmen.",
+                "en": "Most likely, trying to take a shortcut.",
+                "es": "Lo más probable es que quisiera tomar un atajo.",
+                "fr": "Il a probablement essayé de prendre un raccourci.",
+                "ja": "近道でもしようと思ったんでしょ。",
+                "ko": "아마도 지름길로 가려고 한 것 같네요",
+                "th": "น่าจะเพราะพยายามใช้ทางลัด",
+                "zh-Hans": "大概率是为了抄近路。",
+                "zh-Hant": "大概率是為了抄近路。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900029,
+                  "mapId": 8,
+                  "blueprintType": "NPC018",
+                  "name": "TsEntity_180_005_胖达物流男4",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, die Situation ist dringend. Ich habe gehört, dass du mit dem Resonanz-Leuchtfeuer schneller zum Düsteren Wald gelangen kannst. Ich muss dich um Hilfe bitten.",
+                "en": "{PlayerName}, the situation is urgent. I heard that you can use the Resonance Beacon to reach Dim Forest faster. I must ask you for help.",
+                "es": "{PlayerName}, la situación es muy urgente. He oído que puedes usar la Baliza de resonancia para llegar más rápido a Bosque Oscuro, así que necesito tu ayuda.",
+                "fr": "{PlayerName}, c'est urgent. J'ai entendu dire que vous tu peux utiliser la Balise résonatrice pour atteindre la Forêt aveuglante plus rapidement. Dépêche-toi, aidez Guanxian.",
+                "ja": "事は急を要する、{PlayerName}、君は信号塔でより早く光なき森へたどり着けるって聞いたよ、お願いできるかな。",
+                "ko": "사태가 시급해요. 방랑자는 비콘을 사용해서 암흑 밀림에 더 빨리 도착하실 수 있다고 들었어요. 도와달라고 부탁해도 될까요?",
+                "th": "{PlayerName} ตอนนี้สถานการณ์เร่งด่วนมาก ได้ยินมาว่าคุณสามารถใช้เสาสัญญาณเรโซแนนซ์เพื่อไปที่ป่าสลัวได้เร็วขึ้น ผมต้องขอความช่วยเหลือจากคุณแล้ว",
+                "zh-Hans": "{PlayerName}，事态紧急。听说你能借助信标更快地到达无光之森，我只能拜托你了。",
+                "zh-Hant": "{PlayerName}，事態緊急。 聽說你能借助信標更快地到達無光之森，我只能拜託你了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900029,
+                  "mapId": 8,
+                  "blueprintType": "NPC018",
+                  "name": "TsEntity_180_005_胖达物流男4",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Los geht’s.",
+                    "en": "Let's go.",
+                    "es": "En marcha.",
+                    "fr": "Allons-y.",
+                    "ja": "出発しよう。",
+                    "ko": "네, 출발하죠!",
+                    "th": "ไปกันเถอะ",
+                    "zh-Hans": "出发吧。",
+                    "zh-Hant": "出發吧。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maji",
+        "en": "Talk to Maji",
+        "es": "Habla con Maji.",
+        "fr": "Parlez à Maji",
+        "ja": "馬計と会話する",
+        "ko": "마현과 대화하기",
+        "th": "คุยกับ Maji",
+        "zh-Hans": "和马计交谈",
+        "zh-Hant": "和馬計交談"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 6,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Danke für deine Hilfe, {PlayerName}. Guanxian ist in Ordnung, nur ein paar Kratzer.",
+                "en": "Thanks for your help, {PlayerName}. Guanxian is fine, with just a few scratches.",
+                "es": "Gracias por la ayuda, {PlayerName}. Guanxian está bien, solo tiene varios rasguños.",
+                "fr": "Merci beaucoup, {PlayerName}. Guanxian va bien, il a juste quelques égratignures.",
+                "ja": "ありがとう、{PlayerName}のおかげだ。幸い、管羨もちょっとかすり傷だけで済んだよ。",
+                "ko": "{PlayerName}(이)가 도와준 덕에 관선은 찰과상만 약간 입고 별문제 없이 돌아올 수 있었어요",
+                "th": "ขอบคุณที่ช่วยครับ {PlayerName} กวนเซียนไม่เป็นอะไรแล้ว มีแค่แผลถลอกเล็กน้อยเท่านั้น",
+                "zh-Hans": "幸亏有你的帮助，{PlayerName}。管羡没什么大碍，就是受了些擦伤。",
+                "zh-Hant": "幸虧有你的幫助，{PlayerName}。 管羨沒什麼大礙，就是受了些擦傷。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er hat versucht, eine Abkürzung zu nehmen, und eine Gruppe Hoochiefs hat ihn entdeckt und wollte das Paket in seiner Box.",
+                "en": "When he was taking the shortcut, a group of Hoochiefs found him and got greedy for the package in his box.",
+                "es": "Un grupo de Jefemicos lo encontró cuando estaba tomando el atajo y les llamó la atención el paquete que llevaba en la caja.",
+                "fr": "Quand il a pris le raccourci, un groupe d'Hoolices l'a trouvé et a voulu le colis dans sa boîte.",
+                "ja": "管羨が近道する時、いたずら猿の群れに箱の中身に目をつけられたらしい。",
+                "ko": "지름길로 가려고 하다가, 상자 안의 작은 물건이 까부는 원숭이들의 눈에 주시된 것 같아요",
+                "th": "ในขณะที่เขากำลังใช้ทางลัด ก็มีกลุ่ม Hoochief มาพบเขาเข้า และเกิดความละโมบอยากได้ของที่อยู่ในกล่องของเขา",
+                "zh-Hans": "这小子抄近路的时候，箱子里的小件被戏猿群盯上了。",
+                "zh-Hant": "這小子抄近路的時候，箱子裡的小件被戲猿群盯上了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl er von den Hoochiefs verfolgt wurde, konnte er das Paket verstecken, als sie abgelenkt waren.",
+                "en": "Even though he was chased by the Hoochiefs all around, he managed to hide the package while the Hoochiefs were distracted.",
+                "es": "Los Jefemicos le persiguieron sin descanso, pero logró esconder el paquete aprovechando que estaban distraídos.",
+                "fr": "Même s'il a été pourchassé par les Hoolices, il a réussi à cacher le colis pendant que les Hoochiefs étaient distraits.",
+                "ja": "いたずら猿につきまとわれながらも、管羨は奴らが目を離した隙に箱の中身を隠したんだそうだ。",
+                "ko": "까부는 원숭이들에게 쫓기며 뒹구는 와중에도 그들이 주의를 신경 쓰지 못한 틈을 타서 작은 물건들을 길가의 나무 구멍에 숨겼대요",
+                "th": "แม้ว่าเขาจะถูกพวก Hoochief ไล่ตามไปทั่ว แต่เขาก็สามารถซ่อนของเอาไว้ได้ในขณะที่พวก Hoochief ไม่ทันมอง",
+                "zh-Hans": "就算被戏猿追得满地打滚，这小子还是趁着戏猿不注意，把小件藏在了沿途的树洞里。",
+                "zh-Hant": "就算被戲猿追得滿地打滾，這小子還是趁著戲猿不注意，把小件藏在了沿途的樹洞裡。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als wir ihn gerettet haben, hat er es irgendwie geschafft, die Sachen wiederzufinden.",
+                "en": "When we rescued him, he somehow managed to find the items from somewhere.",
+                "es": "Cuando le rescatamos se las apañó de alguna forma para encontrar los objetos en algún lado.",
+                "fr": "Quand nous l'avons sauvé, il a réussi à retrouver les articles quelque part.",
+                "ja": "私たちが助け出した時には、またどこからかこの中身を取り戻してきたけどね。",
+                "ko": "자기 말로는 자신이 엄청 영리하다고 하는데, 전... 정말 한 대 때리고 싶은 심정이에요",
+                "th": "ตอนที่เราช่วยเขาไว้ เขาก็ไปเอาของออกมาจากที่ซ่อนตรงไหนสักแห่ง",
+                "zh-Hans": "他还觉得自己挺机灵，我可太想揍他一顿了。",
+                "zh-Hant": "他還覺得自己挺機靈，我可太想揍他一頓了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Zum Glück hat alles gut geklappt.",
+                    "en": "Luckily, everything turned out fine.",
+                    "es": "Menos mal que todo acabó bien.",
+                    "fr": "Heureusement, tout s'est bien passé.",
+                    "ja": "とりあえず、大事に至らなくてよかった。",
+                    "ko": "놀라긴 했지만 별일 없었네요",
+                    "th": "โชคดีจริงๆ ที่ทุกอย่างจบลงได้ด้วยดี",
+                    "zh-Hans": "还算有惊无险。",
+                    "zh-Hant": "還算有驚無險。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Als Kurier bei Lollo-Logistik ist es oberste Priorität, auf deine eigene Sicherheit zu achten. Sonst, wie kannst du die Verantwortung für die Pakete übernehmen, die du transportierst?",
+                "en": "As a Lollo Logistics courier, the first priority is to take responsibility for your own safety. Otherwise, how can you take responsibility for the packages you handle?",
+                "es": "La primera prioridad de los mensajeros de Logística Lollo es hacerse responsable de su propia seguridad, ¿cómo si no van a poder responsabilizarse de sus paquetes?",
+                "fr": "En tant que courrier de Loulou Logistique, la priorité est de veiller à sa propre sécurité, sinon, comment peut-on veiller à la sécurité des colis que l'on va livrer ?",
+                "ja": "ブブ配達員として、まず優先すべきは自分の命だよ。命なくして、お客さんの荷物を守れるわけないでしょ？",
+                "ko": "무무물류의 배송원으로서, 최우선으로 해야 할 것은 자신의 안전을 지키는 거예요. 그렇지 않으면 어떻게 자신에게 배당된 택배를 책임질 수 있겠어요?",
+                "th": "ในฐานะคนส่งของของลอลโล่โลจิสติกส์ สิ่งสำคัญอันดับแรกคือการรับผิดชอบต่อความปลอดภัยของตนเอง ไม่อย่างงั้น คุณจะรับผิดชอบต่อพัสดุที่คุณต้องส่งได้ยังไงกัน?",
+                "zh-Hans": "作为呜呜物流员，优先要对自己的生命安全负责，否则又何谈对经手的快件负责？",
+                "zh-Hant": "作為嗚嗚物流員，優先要對自己的生命安全負責，否則又何談對經手的快件負責？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Letzte, was Lollo-Logistik-Kuriere hören wollen, ist der Alarm für die Aktivierung des „Staffelplans“, was bedeutet ...",
+                "en": "What Lollo Logistics couriers least want to hear is the alarm for the activation of the \"relay plan,\" which means...",
+                "es": "Lo que los mensajeros de Logística Lollo más odian escuchar es la alarma de activación del «plan de relevo», lo que significa...",
+                "fr": "Ce que les courriers de Loulou Logistique veulent le moins entendre, c'est l'alarme de l'activation du « plan de relais », qui signifie…",
+                "ja": "ブブ配達員として一番見たくないものは、「バトン計画」発動の警報が鳴り響く光景なんだ。そうなったということは、つまり……。",
+                "ko": "무무물류의 배송원으로서 가장 보고 싶지 않은 게 바로 「릴레이 플랜」에서 경보가 울리는 거예요 그건 바로...",
+                "th": "สิ่งที่คนส่งของของลอลโล่โลจิสติกส์ไม่อยากได้ยินมากที่สุดก็คือสัญญาณเตือนการเปิดใช้งาน \"แผนถ่ายทอด\" ซึ่งนั่นหมายความว่า...",
+                "zh-Hans": "呜呜物流员最不愿意看到的，就是「接力计划」启动的警报响起，那意味着……",
+                "zh-Hant": "嗚嗚物流員最不願意看到的，就是「接力計畫」啟動的警報響起，那意味著……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Maji bleibt eine Weile still, bevor er sich beruhigt.",
+                "en": "Maji remains silent for a while before calming down.",
+                "es": "Maji se queda un rato en silencio antes de calmarse.",
+                "fr": "Maji est resté silencieux un moment avant de se calmer.",
+                "ja": "馬計はしばらく黙り込んだ後、平静を取り戻した。",
+                "ko": "마현이 오랫동안 침묵하더니, 다시 마음을 가다듬는다",
+                "th": "Maji เงียบไปครู่หนึ่งก่อนที่จะสงบลง",
+                "zh-Hans": "马计沉默了良久，才平复了心绪。",
+                "zh-Hant": "馬計沉默了良久，才平復了心緒。"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Tut mir leid, {PlayerName}, ich war frivol. Vielen Dank für deine Hilfe.",
+                "en": "I'm sorry, {PlayerName}, I was being frivolous. Thank you very much for your help.",
+                "es": "Lo siento, {PlayerName}, he perdido los estribos. Muchísimas gracias por la ayuda.",
+                "fr": "Pardon, j'étais frivole. Merci beaucoup, {PlayerName}.",
+                "ja": "すまない、{PlayerName}。見苦しいところをお見せしてしまった。助けてくれて、本当に感謝するよ。",
+                "ko": "{PlayerName}, 미안해요. 제가 약한 모습을 보였네요. 도와줘서 고마워요",
+                "th": "ผมขอโทษด้วย {PlayerName} ผมทำตัวเหลาะแหละไปหน่อย ขอบคุณมากๆ ครับสำหรับความช่วยเหลือ",
+                "zh-Hans": "抱歉{PlayerName}，我失态了。非常感谢你的帮助。",
+                "zh-Hant": "抱歉{PlayerName}，我失態了。 非常感謝你的幫助。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier ist deine Belohnung für heute. Danke, dass du eingesprungen bist!",
+                "en": "Here is today's reward. Thank you for lending a hand!",
+                "es": "Esta es tu recompensa de hoy. ¡Gracias por echarme una mano!",
+                "fr": "Voici la récompense d'aujourd'hui. Merci de prêter main-forte !",
+                "ja": "これは今日の報酬だよ、手を差し伸べてくれてありがとう！",
+                "ko": "이건 오늘의 보수예요. 도움을 주셔서 감사해요!",
+                "th": "นี่คือรางวัลของวันนี้ ขอบคุณที่มาช่วยครับ!",
+                "zh-Hans": "这是今天的报酬，感谢你伸出援手！",
+                "zh-Hant": "這是今天的報酬，感謝你伸出援手！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde das vermisste Lollo-Logistikpersonal im Dim-Wald",
+        "en": "Go find the missing Lollo Logistics staff in Dim Forest",
+        "es": "Ve a buscar al personal perdido de Logística Lollo en el Bosque Oscuro.",
+        "fr": "Allez trouver le personnel manquant de Loulou Logistique dans la Forêt aveuglante",
+        "ja": "光なき森に向かって、配達員を探し出す",
+        "ko": "암흑 밀림으로 이동하여 실종된 무무물류의 배송원 찾기",
+        "th": "ไปหาพนักงานลอลโล่โลจิสติกส์ที่หายตัวไปในป่าสลัว",
+        "zh-Hans": "前往无光之森，寻找失踪的呜呜物流员",
+        "zh-Hant": "前往無光之森，尋找失踪的嗚嗚物流員"
+      },
+      "entities": [
+        {
+          "entityId": 880900030,
+          "mapId": 8,
+          "blueprintType": "Monster146",
+          "name": "TsEntity_小怪_近战捣蛋猿3",
+          "areaId": 8,
+          "position": {
+            "x": -56596,
+            "y": 240233,
+            "z": 12275
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900031,
+          "mapId": 8,
+          "blueprintType": "Monster146",
+          "name": "TsEntity_小怪_近战捣蛋猿4",
+          "areaId": 8,
+          "position": {
+            "x": -56335,
+            "y": 240530,
+            "z": 12425
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900032,
+          "mapId": 8,
+          "blueprintType": "Monster147",
+          "name": "TsEntity_小怪_近战孢子捣蛋猿4",
+          "areaId": 8,
+          "position": {
+            "x": -56475,
+            "y": 240390,
+            "z": 12345
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900051,
+          "mapId": 8,
+          "blueprintType": "NPC018",
+          "name": "TsEntity_180_005_胖达物流男",
+          "areaId": 8,
+          "position": {
+            "x": -56880,
+            "y": 240750,
+            "z": 12750
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 6,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Zerstreue die Horde der Hoochiefs",
+        "en": "Disperse the horde of Hoochiefs",
+        "es": "Dispersa la horda de Jefemicos.",
+        "fr": "Dispersez la horde de Hoochiefs",
+        "ja": "いたずら猿の群れを追い払う",
+        "ko": "까부는 원숭이 떼를 쫓아내기",
+        "th": "ขับไล่ฝูง Hoochief",
+        "zh-Hans": "驱散戏猿群",
+        "zh-Hant": "驅散戲猿群"
+      },
+      "entities": [
+        {
+          "entityId": 880900030,
+          "mapId": 8,
+          "blueprintType": "Monster146",
+          "name": "TsEntity_小怪_近战捣蛋猿3",
+          "areaId": 8,
+          "position": {
+            "x": -56596,
+            "y": 240233,
+            "z": 12275
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900031,
+          "mapId": 8,
+          "blueprintType": "Monster146",
+          "name": "TsEntity_小怪_近战捣蛋猿4",
+          "areaId": 8,
+          "position": {
+            "x": -56335,
+            "y": 240530,
+            "z": 12425
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900032,
+          "mapId": 8,
+          "blueprintType": "Monster147",
+          "name": "TsEntity_小怪_近战孢子捣蛋猿4",
+          "areaId": 8,
+          "position": {
+            "x": -56475,
+            "y": 240390,
+            "z": 12345
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 130
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900051,
+          "mapId": 8,
+          "blueprintType": "NPC018",
+          "name": "TsEntity_180_005_胖达物流男",
+          "areaId": 8,
+          "position": {
+            "x": -56880,
+            "y": 240750,
+            "z": 12750
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 6,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Nachdem ihr die Gruppe von Hoochiefs vertrieben habt, bringt ihr den verängstigten neuen Kurier zurück nach Jinzhou.",
+                "en": "After dispersing the group of Hoochiefs, you and Maji bring the frightened freshman courier back to Jinzhou.",
+                "es": "Maji y tú lleváis de vuelta a Jinzhou al mensajero primerizo después de dispersar al grupo de Jefemicos.",
+                "fr": "Après avoir dispersé le groupe de Hoolices, vous et Maji avez ramené le courrier novice effrayé à Jinzhou.",
+                "ja": "いたずら猿の群れを追い払った後、馬計とともに気が動転している配達員を連れ、今州へと戻った。",
+                "ko": "까부는 원숭이 떼를 쫓아낸 후, 마현과 함께 겁먹고 있는 신입 배송원을 데리고 금주로 돌아왔다",
+                "th": "หลังจากที่ไล่กลุ่ม Hoochief ไปแล้ว คุณกับ Maji ก็พาคนส่งของมาใหม่ที่กำลังหวาดกลัวกลับไปที่จินโจว",
+                "zh-Hans": "驱散了戏猿群后，你和马计一同将惊魂未定的新人物流员带回了今州。",
+                "zh-Hant": "驅散了戲猿群後，你和馬計一同將驚魂未定的新人物流員帶回了今州。"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 9,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

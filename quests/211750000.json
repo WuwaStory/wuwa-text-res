@@ -1,0 +1,842 @@
+{
+  "id": 211750000,
+  "key": "坎特蕾拉偶遇任务",
+  "type": "branch",
+  "typeId": 14,
+  "name": {
+    "de": "Festgast: Cantarella",
+    "ja": "宴の来客・カンタレラ",
+    "ko": "만찬의 손님 · 칸타렐라",
+    "zh-Hans": "夜宴来客·坎特蕾拉",
+    "zh-Hant": "夜宴來客·坎特蕾拉"
+  },
+  "desc": {
+    "de": "Cantarella überprüft die Speisen. Hat ihr Geschmackssinn endlich zurückgefunden? Begib dich zur Speisebar und unterhalte dich ein wenig mit ihr.",
+    "ja": "カンタレラは料理を味わっている。まさか、彼女の味覚は回復したのか。ダイニングバーへ行って、彼女と話してみよう。",
+    "ko": "음식을 맛보고 있는 칸타렐라, 설마 그녀의 미각이 돌아온 걸까? 레스토랑에 가서 그녀와 이야기를 나눠 보자",
+    "zh-Hans": "坎特蕾拉正在品评美食，难道她的味觉恢复了？去餐吧和她聊聊吧。",
+    "zh-Hant": "坎特蕾拉正在品嚐美食，難道她的味覺恢復了？去餐吧和她聊聊吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich zur Speisebar.",
+        "ja": "ダイニングバーに向かう",
+        "ko": "레스토랑으로 이동하기",
+        "zh-Hans": "前往餐吧",
+        "zh-Hant": "前往餐吧"
+      },
+      "entities": [
+        {
+          "entityId": 194000001,
+          "mapId": 8900,
+          "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+          "name": "TsEntity_角色035_坎特蕾拉",
+          "areaId": 0,
+          "position": {
+            "x": -2836,
+            "y": -636,
+            "z": 499
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 105
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动角色邀约_坎特蕾拉",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hm … langsam einen Spritzer Kräuter-Fruchtessig in die Soße geben, während sie köchelt. Was für ein netter Trick.",
+                "en": "Hm… a slow drizzle of herb-infused fruit vinegar into the sauce while it simmers. What a lovely little trick.",
+                "fr": "Hmm… Un filet de vinaigre de fruit infusé aux herbes déposé dans la sauce pendant qu'elle mijote. C'est très ingénieux.",
+                "ja": "ふむ……ソースを作る時にハーブの入ったフルーツビネガーをゆっくりと入れるのね……なかなかに興味深いわ。",
+                "ko": "음... 소스를 끓일 때는 향을 돋우는 약초가 들어간 과일 식초를 천천히 넣는다...? 참 재미있는 팁이네",
+                "th": "อืม... การทำน้ำซอสที่ค่อยๆ หยดน้ำส้มสายชูจากผลไม้ที่มีกลิ่นหอมจากสมุนไพรเข้าไปเหรอ? เป็นเคล็ดลับที่น่าสนใจจริงๆ",
+                "zh-Hans": "嗯……在熬制酱汁时缓慢滴入些许用草药提香的果醋吗？真是有趣的诀窍。",
+                "zh-Hant": "嗯……在熬製醬汁時緩慢滴入些許用草藥提香的果醋嗎？真是有趣的訣竅。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Hauch von Säure überdeckt die anderen Aromen nicht. Stattdessen entfaltet er sich auf der Zunge wie eine Rosenmeduse und hinterlässt einen köstlichen Nachklang auf der Zungenspitze …",
+                "en": "A whisper of acidity won't bully the other flavors. Instead, it will bloom on the tongue, like a Jellyrose Medusa unfurling, leaving a delicious echo on the tip of the tongue…",
+                "fr": "La touche d'acidité n'écrase pas les autres saveurs. Elle s'épanouit dans la bouche, comme une Méduse Rose-Gélatine qui s'étire et laisse un écho délicieux sur le bout de la langue…",
+                "ja": "加えられた酸味は、全体的な味を壊さず、綻びるジェリーローズメデューサと同じように、舌先に印象深い後味を残す……",
+                "ko": "적당한 신맛은 전체적인 맛을 망치지 않으면서도, 붉은 해파리가 피어나는 것처럼 혀끝에 인상적인 울림을 남길 수 있을 거야...",
+                "th": "ความเปรี้ยวที่เติมเข้าไปอย่างพอดี ไม่ทำให้เสียรสชาติหลักของอาหาร แต่จะเหมือนกับกุหลาบแมงกะพรุนที่เบ่งบาน ทิ้งความรู้สึกที่ตราตรึงไว้บนลิ้น...",
+                "zh-Hans": "额外添加的恰当酸味并不会破坏整体的味型结构，却会像绽放的瑰红水母一样， 在舌尖留下令人印象深刻的回响……",
+                "zh-Hant": "額外添加的恰當酸味並不會破壞整體的味型結構，卻會像綻放的瑰紅水母一樣， 在舌尖留下令人印象深刻的迴響……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was für eine fachkundige Einschätzung.",
+                    "en": "Such an expert appraisal.",
+                    "fr": "J'ai affaire à une experte.",
+                    "ja": "{Male=プロの評価だな。;Female=プロの評価だね。}",
+                    "ko": "평가가 너무 전문적이네요",
+                    "th": "คำติชมดูมืออาชีพจัง",
+                    "zh-Hans": "好专业的点评。",
+                    "zh-Hant": "好專業的評論。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du machst mich ganz hungrig.",
+                    "en": "You're making me hungry.",
+                    "fr": "Tu me mets l'eau à la bouche.",
+                    "ja": "カンタレラの評価を聞いて、お腹が空いてきた。",
+                    "ko": "듣기만 해도 배가 고파요",
+                    "th": "ฟังแล้วอยากชิมเลย",
+                    "zh-Hans": "听得我都饿了。",
+                    "zh-Hant": "聽得我都餓了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sei gegrüßt, {PlayerName}. Möchtest du etwas zu Essen?",
+                "en": "Greetings, {PlayerName}. Care for something to eat?",
+                "fr": "Salutations, {PlayerName}. Souhaites-tu manger quelque chose ?",
+                "ja": "{PlayerName}、久しぶりね。せっかくだし、食事はいかがかしら？",
+                "ko": "안녕, {PlayerName}. 뭐라도 좀 먹을래?",
+                "th": "สวัสดี {PlayerName} อยากทานอะไรหน่อยไหม?",
+                "zh-Hans": "你好哦，{PlayerName}。要吃点东西吗？",
+                "zh-Hant": "你好哦，{PlayerName}。要吃點東西嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier werden einfache Zutaten verwendet, aber die Zubereitungstechniken sind ziemlich faszinierend.",
+                "en": "They use humble ingredients here, but their techniques are rather intriguing.",
+                "fr": "Les ingrédients qu'ils utilisent ici ne paient pas de mine, mais leur technique est intrigante.",
+                "ja": "どこにでもあるような食材で作られているけど、調理方法はなかなか面白いのよ。",
+                "ko": "여기 음식들은 어디서나 볼 수 있는 식재료로 만든 거지만, 만드는 법이 꽤 재미있더라고",
+                "th": "แม้ว่าอาหารที่นี่จะใช้วัตถุดิบที่หาง่าย แต่เทคนิคการทำน่าสนใจทีเดียว",
+                "zh-Hans": "这里的餐点虽然用的都是随处可见的食材，但烹饪手法倒是挺有意思。",
+                "zh-Hant": "這裡的餐點雖然用的都是隨處可見的食材，但烹飪手法倒是挺有意思。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Glaub mir … Du wirst nicht enttäuscht sein.",
+                "en": "Trust me… They won't disappoint.",
+                "fr": "Crois-moi… tu ne seras pas {Male=déçu;Female=déçue}.",
+                "ja": "食べてみたら……絶対、がっかりはしないわ。",
+                "ko": "날 믿어... 널 절대 실망시키지 않을 거야",
+                "th": "เชื่อฉันเถอะ... คุณจะไม่ผิดหวังแน่นอน",
+                "zh-Hans": "相信我……它们绝不会让你失望。",
+                "zh-Hant": "相信我……它們絕不會讓你失望。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ist dein Geschmackssinn wieder da?",
+                    "en": "Has your sense of taste returned?",
+                    "fr": "Tu as retrouvé le sens du goût ?",
+                    "ja": "{Male=味覚は治ったのか？;Female=味覚は治ったの？}",
+                    "ko": "미각이 회복됐어요?",
+                    "th": "การลิ้มรสของคุณกลับมาเป็นปกติหรือยัง?",
+                    "zh-Hans": "你的味觉恢复了吗？",
+                    "zh-Hant": "你的味覺恢復了嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, ist er. Nachdem der Fisalia-Fluch aufgehoben wurde, begann ich langsam wieder zu schmecken.",
+                "en": "It has. After the Fisalia curse was lifted, I slowly began to taste again.",
+                "fr": "En effet. Une fois la malédiction des Fisalia levée, mon palais s'est peu à peu réveillé.",
+                "ja": "ええ。フィサリアファミリーの呪いが消えてから、徐々に味が分かるようになったのよ。",
+                "ko": "그래. 피살리아 가문을 뒤덮었던 저주가 사라진 뒤로, 점점 음식의 맛을 느낄 수 있게 됐어",
+                "th": "อืม... หลังจากถอนคำสาปของตระกูล Fisalia ได้ ฉันก็เริ่มสามารถรับรสชาติอาหารได้บ้างแล้ว",
+                "zh-Hans": "嗯，在翡萨烈家族蒙受的诅咒消散后，我就渐渐能尝出食物的味道了。",
+                "zh-Hant": "嗯，在翡薩烈家族蒙受的詛咒消散後，我就漸漸能嚐出食物的味道了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es war natürlich eine allmähliche Rückkehr, kein Wunder von einem Tag auf den anderen. Aber im Vergleich zu vorher, als ich nicht mal bitter von süß unterscheiden konnte, ist das eine enorme Verbesserung.",
+                "en": "It was a gradual homecoming, of course, not an overnight miracle. But compared to when I couldn't tell bitter from sweet, it's a vast improvement.",
+                "fr": "Bien sûr, ce fut une longue convalescence, pas un miracle soudain ; mais j'ai fait des progrès considérables depuis l'époque où je ne différenciais pas l'aigre du sucré.",
+                "ja": "もちろん、すぐに治ったわけじゃなかったけれど。苦味と甘味の区別もつかなかった頃と比べたら、だいぶマシね。",
+                "ko": "물론 천천히 회복되고 있기 때문에 한 번에 나아질 수는 없지만, 그래도 쓴맛과 단맛조차 구별하기 힘들었던 때와 비교하면 많이 좋아졌지",
+                "th": "แต่ก็ต้องค่อยเป็นค่อยไป คงดีขึ้นทันตาเห็นไม่ได้หรอก แต่ก็ถือว่าดีกว่าก่อนหน้านี้ที่แยกรสขมกับหวานแทบไม่ได้เลย",
+                "zh-Hans": "当然，这是一个缓慢的过程，没办法一蹴而就。但和之前连苦和甜都难以分辨相比，这已经要好太多了。",
+                "zh-Hant": "當然，這是一個緩慢的過程，沒辦法一蹴而就。但和之前連苦和甜都難以分辨相比，這已經要好太多了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und das habe ich nur dir zu verdanken, {PlayerName}. Durch alles, was du in Rinascita getan hast, habe ich die Welt zurückgewonnen – ein Aroma nach dem anderen.",
+                "en": "And I have you to thank for that, {PlayerName}. Everything you did in Rinascita gave world back me, one flavor at a time.",
+                "fr": "Et cette guérison, c'est à toi que je la dois, {PlayerName}. Tes exploits à Rinascita m'ont redonné goût à la vie, littéralement.",
+                "ja": "すべてはあなたのおかげよ、{PlayerName}。あなたがリナシータを救い、わたくしにもう一度世界を味わうチャンスをくれた。",
+                "ko": "이게 다... 네 덕분이야, {PlayerName}. 네가 리나시타에서 해준 모든 일이 나한테 이 세상을 다시 맛볼 기회를 줬어",
+                "th": "ฉันดีขึ้นได้เพราะคุณเลยนะ {PlayerName} ทุกอย่างที่คุณทำที่รินาซิตา ทำให้ฉันมีโอกาสได้ลิ้มรสอาหารของโลกใบนี้อีกครั้ง",
+                "zh-Hans": "这都是因为你——{PlayerName}。是你在黎那汐塔所做的一切，给了我重新品尝这个世界的机会。",
+                "zh-Hant": "這都是因為你——{PlayerName}。是你在黎那汐塔所做的一切，給了我重新品嘗這個世界的機會。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hehe … Ich habe dir zwar schon ein <ano=Elixier>Zeichen meiner Dankbarkeit</ano> gegeben, aber solltest du noch mehr haben wollen … erfülle ich dir deinen Wunsch gerne.",
+                "en": "Hehe… Though I've already given you my <ano=elixir>token of gratitude</ano>, should you desire more… I would be pleased to oblige.",
+                "fr": "Héhé… Je t'ai déjà donné mon <ano=élixir>gage de gratitude</ano>, mais si tu en veux encore… je me ferais un plaisir de satisfaire ta demande.",
+                "ja": "ふふっ……<ano=秘薬>お礼</ano>はとっくに渡したけど、もっと欲しいというのなら……もう少しあげてもいいわ。",
+                "ko": "후후... <ano=비약>감사의 선물</ano>은 이미 줬지만, 바란다면... 더 줄 수도 있어",
+                "th": "หุๆ... ถึงฉันจะเคยให้<ano=น้ำอมฤต>ของขวัญตอบแทน</ano>ไปแล้ว แต่ถ้าคุณอยากได้มากกว่านั้น... ฉันก็ไม่ติดนะ",
+                "zh-Hans": "呵呵……虽然<ano=秘药>谢礼</ano>早就给过你了，不过，如果你想要更多的话……也没问题哦。",
+                "zh-Hant": "呵呵……雖然<ano=秘藥>謝禮</ano>早就給過你了，不過，如果你想要更多的話……也沒問題哦。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Apropos … nun, da in der Familie Fisalia wieder alles in geordneten Bahnen läuft, habe ich als ihr Oberhaupt plötzlich … recht wenig zu tun.",
+                "en": "Speaking of which, with Fisalia family affairs back in order, I find myself, as its head... somewhat idle.",
+                "fr": "En parlant de ça, la famille Fisalia a remis la cathédrale au milieu du village, pour ainsi dire, et je me retrouve à sa tête… les bras ballants.",
+                "ja": "そういえば……フィサリアファミリーも順調に発展しているわ。当主としては、やることが少なくなって手持ち無沙汰ね。",
+                "ko": "아무튼, 지금은 피살리아의 일도 모두 순조롭게 흘러가고 있어서, 가주인 나도 좀 심심하던 차였거든",
+                "th": "พูดถึงเรื่องนี้... ตอนนี้ทุกอย่างในตระกูล Fisalia ก็เริ่มเข้าที่แล้ว ฉันในฐานะหัวหน้าตระกูลก็เริ่มรู้สึกว่าตัวเองว่างงานมากเลย",
+                "zh-Hans": "说到这个……目前翡萨烈的一切已然步入正轨。我这个家主也变得有些无所事事了呢。",
+                "zh-Hant": "說到這個……目前翡薩烈的一切已然步入正軌。我這個家主也變得有些無所事事了呢。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Statt weiter auf dem Anwesen zu bleiben, würde ich gern reisen. Orte sehen, die ich noch nie gesehen habe. Die Welt ist so groß … und ich rechne damit, dass es eine lange Reise wird.",
+                "en": "Rather than remain confined to the estate, I'd like to travel. To see sights I've never seen. The world is vast, and... I expect it to be a long journey.",
+                "fr": "Plutôt que de m'enfermer dans notre domaine, je préfèrerais voyager et découvrir des paysages. Le monde est vaste, et… l'aventure sera sûrement longue.",
+                "ja": "だから、いつまでもお城に引きこもっていないで、各地へ旅して、見たことのない景色に触れようと思ったのよ。世界はこんなにも広い……さぞ長い旅路になるでしょう。",
+                "ko": "저택에만 있는 것보단 여러 지역을 여행하면서 보지 못한 풍경을 보고 싶어졌어. 세상은 넓으니까... 분명 아주 긴 여정이 될 거야",
+                "th": "ฉันอยากจะเดินทางไปตามที่ต่างๆ และไปชมทิวทัศน์ที่ไม่เคยเห็นมาก่อน ดีกว่าเอาแต่หมกตัวอยู่ในคฤหาสน์ โลกนี้กว้างใหญ่มาก... การเดินทางคงจะยาวนานมากจริงๆ",
+                "zh-Hans": "比起继续待在宅邸里，我想去各地游历，去看看之前没见过的风景。这个世界这么广阔……这一定会是一场很漫长的旅程吧。",
+                "zh-Hant": "比起繼續待在宅邸裡，我想去各地遊歷，去看看之前沒見過的風景。這個世界這麼廣闊……這一定會是一場很漫長的旅程吧。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich würde ich auch gerne neue Speisen probieren und versuchen, sie mit meinen eigenen Händen ebenfalls zuzubereiten. Betrachte es als … eine Art Rehabilitation für meinen Gaumen.",
+                "en": "Of course, I'd also enjoy trying new foods and attempting to recreate them with my own hands. Consider it... a form of palate rehabilitation.",
+                "fr": "Bien entendu, j'aimerais goûter de nouveaux plats, et tenter de les reproduire de mes propres mains. Vois ceci comme… une forme de réhabilitation de mon palais.",
+                "ja": "それに、色々な食も経験して、味を再現したいわ。味覚のリハビリとしてね。",
+                "ko": "그리고 그 길에서 전에 먹어본 적 없는 음식도 맛보고, 그 맛을 내 방식으로 재현해 보려고 해. 미뢰 재활 연습이라고 할까?",
+                "th": "แน่นอนว่าระหว่างการเดินทาง ฉันจะต้องแวะชิมอาหารที่ไม่เคยกินมาก่อน แล้วพยายามนึกถึงรสชาติเดิมๆ ของพวกมันเท่าที่ฉันจำได้ ถือเป็นการฝึกฟื้นฟูต่อมรับรสก็แล้วกัน",
+                "zh-Hans": "当然，还要在旅途中品尝各种之前没吃过的食物，并靠我自己的理解来还原它们的味道。就当是对味蕾的复健练习吧。",
+                "zh-Hant": "當然，還要在旅途中品嘗各種之前沒吃過的食物，並靠我自己的理解來還原它們的味道。就當是對味蕾的復健練習吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Würdest du mit mir zusammen reisen, {PlayerName}? Und unterwegs vielleicht auch meine Kreationen kosten?",
+                "en": "Would you travel with me, {PlayerName}? And sample my creations along the way?",
+                "fr": "Accepterais-tu de voyager à mes côtés, {PlayerName} ? Et de goûter mes nombreuses créations culinaires ?",
+                "ja": "同行してくれないかしら、{PlayerName}？ついでに、わたくしの作品を食べてちょうだい。",
+                "ko": "{PlayerName}, 나랑 같이 갈래? 이참에 내 작품도 맛보면 좋고",
+                "th": "คุณอยากจะเดินทางไปกับฉันไหม {PlayerName}? ถือโอกาสลองชิมฝีมือของฉันด้วย",
+                "zh-Hans": "你愿意和我同行吗，{PlayerName}？顺便，也尝尝看我的作品？",
+                "zh-Hant": "你願意和我同行嗎，{PlayerName}？順便，也嚐嚐看我的作品？"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Dazu bin ich mehr als bereit.",
+                    "en": "I'm more than willing.",
+                    "fr": "Avec plaisir.",
+                    "ja": "喜んで。",
+                    "ko": "당연하죠",
+                    "th": "ยินดีอย่างยิ่ง",
+                    "zh-Hans": "乐意之至。",
+                    "zh-Hant": "樂意之至。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eher nicht.",
+                    "en": "I don't think so.",
+                    "fr": "Je ne crois pas, non.",
+                    "ja": "やめておくよ。",
+                    "ko": "그건 됐어요",
+                    "th": "ยังก่อนดีกว่า",
+                    "zh-Hans": "还是算了吧。",
+                    "zh-Hant": "還是算了吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "… Ah. Wie immer sehr zuvorkommend, {PlayerName}. Dann ist es beschlossen.",
+                "en": "...Ah. Ever so gracious, {PlayerName}. Then it's settled.",
+                "fr": "Ah… Toujours aussi serviable, {PlayerName}. Alors c'est décidé.",
+                "ja": "……ふふ。相変わらず優しいのね、{PlayerName}は。それじゃあ、約束よ。",
+                "ko": "...후후, 여전히 다정하구나. 그럼 약속한 거야, {PlayerName}",
+                "th": "...อ๊ะ คุณยังคงใจดีเหมือนเดิมนะ {PlayerName} งั้นเราก็ถือว่าสัญญากันแล้วนะ",
+                "zh-Hans": "……哎呀，你果然还是这么温柔呢，{PlayerName}。那么，我们就说定了哦。",
+                "zh-Hant": "……哎呀，你果然還是這麼溫柔呢，{PlayerName}。那麼，我們就說定了哦。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber sag mal, hast du nicht die geringsten Bedenken, ich könnte dich vergiften? Hehe …",
+                "en": "But tell me, are you not the least bit concerned I might poison you? Heh...",
+                "fr": "Mais, dis-moi, une part de toi n'a-t-elle pas peur que je t'empoisonne ? Hé hé…",
+                "ja": "毒が入っている心配は、もうしなくなったのね。ふふっ……",
+                "ko": "그런데, 이제는 내가 독을 먹일까 봐 걱정하지 않나 봐? 후후...",
+                "th": "แต่ตอนนี้คุณไม่กลัวว่าฉันจะใส่ยาพิษแล้วใช่ไหม? หุๆ...",
+                "zh-Hans": "不过，你现在不怕被我下毒了吗？呵……",
+                "zh-Hant": "不過，你現在不怕被我下毒了嗎？呵……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich muss wohl leider noch mehr üben, um dich zu überzeugen. Meine Kochkünste müssen eindeutig noch verfeinert werden.",
+                "en": "Alas, I suppose I must practice more to win you over. My culinary skills clearly need refinement.",
+                "fr": "Hélas, on dirait que je vais devoir mettre les bouchées doubles pour te convaincre. De toute évidence, mes aptitudes culinaires ne sont pas à la hauteur.",
+                "ja": "あら……わたくしの料理は、お好みじゃなかったかしら？なら、もっと腕を磨いておきましょう。",
+                "ko": "하아... 어떻게 해도 네 마음을 움직일 수는 없구나? 내 요리 솜씨를 더 길러야겠어",
+                "th": "อ๊ะ... ฉันยังไม่น่าสนใจพองั้นเหรอ? ดูเหมือนว่าฝีมือทำอาหารของฉันยังต้องพัฒนาอีกเยอะเลย",
+                "zh-Hans": "哎呀……没办法打动你吗？看来我的厨艺还需要精进呢。",
+                "zh-Hant": "哎呀……沒辦法打動你嗎？看來我的廚藝還需要精進呢。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oder … hast du Angst, ich könnte dich vergiften? Hehe …",
+                "en": "Or… are you afraid I might poison you? Heh…",
+                "fr": "Ou alors… as-tu peur que je t'empoisonne ? Hé hé…",
+                "ja": "それか、わたくしの毒が怖いのね？ふふっ……",
+                "ko": "아니면... 내가 독을 먹일까 봐 걱정하는 거야? 후후...",
+                "th": "หรือว่า... คุณกลัวถูกฉันวางยา? หุๆ...",
+                "zh-Hans": "还是说……你担心被我下毒吗？呵……",
+                "zh-Hant": "還是說……你擔心被我下毒嗎？呵……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 150009,
+                "name": {
+                  "zh-Hans": "坎特蕾拉"
+                },
+                "entity": {
+                  "entityId": 194000001,
+                  "mapId": 8900,
+                  "blueprintType": "branch2.2_TsEntity_角色035_坎特蕾拉",
+                  "name": "TsEntity_角色035_坎特蕾拉",
+                  "areaId": 0,
+                  "position": {
+                    "x": -2836,
+                    "y": -636,
+                    "z": 499
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 105
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "id": 181700007,
+  "key": "第四天",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Genie IV",
+    "en": "Lollo Genie Campaign: Day 4",
+    "es": "Genio Lollo IV",
+    "fr": "Génie Loulou - IV",
+    "ja": "ブブジーニー企画・四",
+    "ko": "무무 요정 기획 · Ⅳ",
+    "th": "แคมเปญ Lollo Genie - 4",
+    "zh-Hans": "呜呜精灵企划·四",
+    "zh-Hant": "嗚嗚精靈企劃·四"
+  },
+  "desc": {
+    "de": "Maji erhält eine Beschwerde über ein verlorenes Paket. Du beschließt, nach ihm zu suchen und es seinem Echo-Besitzer zurückzugeben.",
+    "en": "Maji receives a complaint about a missing package. You decide to track it down and return it to its Echo owner.",
+    "es": "Maji recibe una queja por un paquete perdido. Decides buscarlo y devolvérselo a su dueño Eco.",
+    "fr": "Maji reçoit une plainte concernant un colis disparu, vous décidez de le retrouver et de le rendre à son propriétaire Écho.",
+    "ja": "馬計の受けた紛失物の苦情を解決し、失われた配送物を音骸に返そう。",
+    "ko": "마현은 분실 신고를 받았고, 당신은 잃어버린 우편물을 에코에게 돌려주기로 했다",
+    "th": "Maji ได้รับใบร้องเรียนของหาย คุณตัดสินใจช่วยหาพัสดุสูญหายกลับคืนมาให้กับเอคโค่",
+    "zh-Hans": "马计收到了丢件投诉单，你决定帮忙找回丢失的快件交还给声骸。",
+    "zh-Hant": "馬計收到了丟件投訴單，你決定幫忙找回遺失的快件交還給聲骸。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maji",
+        "en": "Talk to Maji",
+        "es": "Habla con Maji.",
+        "fr": "Parler à Maji",
+        "ja": "馬計と会話する",
+        "ko": "마현과 대화하기",
+        "th": "คุยกับ Maji",
+        "zh-Hans": "与马计交谈",
+        "zh-Hant": "與馬計交談"
+      },
+      "entities": [
+        {
+          "entityId": 181700001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理",
+          "areaId": 1692,
+          "position": {
+            "x": 693440,
+            "y": 583100,
+            "z": 166
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_导引+7天日常",
+          "flowIndex": 1,
+          "stateId": 10,
+          "talks": [
+            {
+              "text": {
+                "de": "Zurück zum Tagesgeschäft: Pakete ausliefern.",
+                "en": "I'm giving the good-old package delivery job a bit of swing today.",
+                "es": "Hoy vuelvo a repartir paquetes, como antaño.",
+                "fr": "Aujourd'hui, je livre des colis, comme au bon vieux temps.",
+                "ja": "今日は本職に立ち返る時だ。つまり——宅配便のことだな。",
+                "ko": "오늘은 잠깐 본업으로 돌아가죠. 바로 택배 배송이에요",
+                "th": "วันนี้ขอแวบกลับมาทำงานหลักหน่อยนะ ก็ส่งพัสดุนั่นแหละ",
+                "zh-Hans": "今天稍微回归一下本职工作哈，就是送快递。",
+                "zh-Hant": "今天稍微回歸一下本職工作哈，就是送快遞。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn man sich mit vollem Swing auf Innovationen und die neuesten Trends gestürzt hat, tut es gut, etwas innezuhalten und sich auf das Wesentliche zu besinnen. Auf dem Weg zu Innovationen darf man nicht das Kerngeschäft vernachlässigen!",
+                "en": "After constantly going full speed on the path of innovation, sometimes you just gotta slow down and return to basics. On the road to a new business venture, we must hold on to our foundations!",
+                "es": "Tras avanzar sin descanso por la senda de la innovación, a veces poner ciertos límites y volver a lo esencial. Cuando se trata de un negocio, mantenerse fiel a tus principios es una garantía de éxito.",
+                "fr": "Quand on passe sa vie à foncer à toute allure sur la route de l'innovation, ça fait du bien de ralentir pour retourner aux sources de temps en temps. Pour réussir, il ne faut pas oublier d'où l'on vient !",
+                "ja": "改革の道を猛進するのも良いが、たまには足元を見直さないといけない。新しい業務を広げるためにも、基礎業務をほったらかしにするわけにはいかない！",
+                "ko": "혁신의 길을 달려가더라도 가끔은 본질로 돌아가야 해요. 새로운 사업을 개척하는 도중에도 기본적인 업무는 소홀히 해선 안 되죠!",
+                "th": "วิ่งสุดแรงบนเส้นทางแห่งนวัตกรรมแล้ว บางทีก็ต้องหวนคืนสู่สามัญบ้าง บนทางแห่งการบุกเบิกธุรกิจ จะทิ้งขว้างงานพื้นฐานไปไม่ได้เด็ดขาด!",
+                "zh-Hans": "在创新的路上狂奔，偶尔也要返璞归真。在开拓新业务的道路上，基础的业务也不能随意丢弃！",
+                "zh-Hant": "在創新的路上狂奔，偶爾也要返璞歸真。在開拓新業務的道路上，基礎的業務也不能隨意丟棄！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Siehst du das hier? Eine Beschwerde über ein verlorenes Paket.",
+                "en": "See this? A lost package complaint.",
+                "es": "¿Ves esto? Ha llegado una reclamación por un paquete perdido.",
+                "fr": "Tu vois ça ? Une réclamation pour un colis perdu.",
+                "ja": "って……おいおい、もう荷物紛失のクレームが来てるじゃないか！",
+                "ko": "이거 봐요, 분실 신고가 들어왔어요",
+                "th": "นี่มัน... ได้ใบร้องเรียนเรื่องพัสดุหายมาจนได้",
+                "zh-Hans": "这不，收到丢件投诉单了。",
+                "zh-Hant": "這不，收到丟件投訴單了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich brauche deine Hilfe, {PlayerName}. Bitte! Hilf mir, dieses Paket dem wütenden Echo zuzustellen!",
+                "en": "I need your help, {PlayerName}. Please! Help me deliver this package to the enraged Echo!",
+                "es": "Necesito tu ayuda, {PlayerName}. ¡Por favor! ¡Ayúdame a entregar este paquete al eco que está enfadado!",
+                "fr": "J'ai besoin de ton aide, {PlayerName}. Aide-moi à livrer ce colis à l'Écho en colère !",
+                "ja": "お願いだ——{PlayerName}——！助けてくれ！この怒りのオーラ全開の音骸の元へ、この荷物を届けてくれ！",
+                "ko": "제발요—— {PlayerName}—— 살려주세요! 이 택배를 다시 화가 난 에코한테 전해주세요!",
+                "th": "ขอร้องล่ะ... ช่วยฉันหน่อยนะ... {PlayerName}! ช่วยเอาพัสดุไปส่งให้เอคโค่ที่กำลังโกรธจัดพวกนั้นใหม่ทีนะ!",
+                "zh-Hans": "拜托你了——帮帮我——{PlayerName}！帮我把件重新送给盛怒中的声骸吧！",
+                "zh-Hant": "拜託你了——幫幫我——{PlayerName}！幫我把件重新送給盛怒中的聲骸吧！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Mercurio",
+        "en": "Talk to Mercurio",
+        "es": "Habla con Mercurio.",
+        "fr": "Parler à Mercurio",
+        "ja": "メルクリオと会話する",
+        "ko": "메르쿠리우스 머신과 대화하기",
+        "th": "พูดคุยกับ Mercurio",
+        "zh-Hans": "与墨丘利机聊天",
+        "zh-Hant": "與墨丘利機聊天"
+      },
+      "entities": [
+        {
+          "entityId": 181700025,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_ATM本体",
+          "name": "TsEntity_NPC_声骸_ATM本体6",
+          "areaId": 1692,
+          "position": {
+            "x": 683390,
+            "y": 574720,
+            "z": 320
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_导引+7天日常",
+          "flowIndex": 1,
+          "stateId": 11,
+          "talks": [
+            {
+              "text": {
+                "de": "Mercurio drückt mit seinen gut gepflegten Fingern seine Dankbarkeit über Gesten aus.",
+                "en": "Mercurio waves their manicured fingers in an expression of gratitude.",
+                "es": "Mercurio agita sus delicadas manos como muestra de gratitud.",
+                "fr": "Mercurio agite ses doigts manucurés en signe de gratitude.",
+                "ja": "メルクリオは手を動かし、手話で感謝の気持ちを伝えている。",
+                "ko": "메르쿠리우스 머신은 가녀린 두 손을 흔들며 수화로 감사를 표했다",
+                "th": "Mercurio โบกมือเรียวงามดั่งหยกคู่นั้นไปมา เพื่อส่งภาษามือขอบคุณ",
+                "zh-Hans": "墨丘利机挥动着一双纤纤玉手，用手语向你表达感谢。",
+                "zh-Hant": "墨丘利機揮動著一雙纖纖玉手，用手語向你表達感謝。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Vielen Dank, du freundliche Seele. Danke, dass du mein kostbares Sparbuch zurückgebracht hast. Das Privateigentum unserer Kunden ist heilig und Vertraulichkeit ist unser oberstes Prinzip.)",
+                "en": "(Thank you, kind soul. Thank you for helping me find my precious passbook. A customer's private property is sacred, and confidentiality must be preserved.)",
+                "es": "(Gracias, alma amable. Gracias por ayudarme a encontrar mi preciada libreta de ahorros. La propiedad privada de un cliente es sagrada y debe preservarse de forma confidencial).",
+                "fr": "(Merci bien, âme généreuse. Merci de m'avoir rapporté ce précieux livret. La propriété des clients est sacrée, et la confidentialité doit être respectée à tout prix.)",
+                "ja": "（心の優しい方、大切な通帳を見つけてくださって、本当にありがとうございます。お客様の私有財産は、神聖で、絶対に侵してはいけないものなんです。）",
+                "ko": "(고마워요, 정말 착한 사람이네요. 소중한 통장을 찾아주셔서 감사해요. 고객의 개인 재산은 신성불가침이니까요)",
+                "th": "(ขอบคุณมากนะ ขอบคุณมากที่ช่วยฉันตามหาสมุดบัญชีอันล้ำค่ากลับมาได้ ทรัพย์สินส่วนตัวของลูกค้าคือสิ่งศักดิ์สิทธิ์ที่ไม่อาจล่วงละเมิดได้)",
+                "zh-Hans": "（多谢，好心人，多谢你帮我找回珍贵的存折。客户的私人财产是神圣不可侵犯的。）",
+                "zh-Hant": "（多謝，好心人，多謝你幫我找回珍貴的存摺。客戶的私人財產是神聖不可侵犯的。）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700161,
+                "name": {
+                  "zh-Hans": "“墨丘利机”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Nanu? Der Kontoinhaber benutzt ja ein Pseudonym?! Wer würde denn so etwas tun? Wissen sie nicht, dass in den Transportbedingungen klar aufgeschrieben ist: „Die Bank ist nicht verantwortlich, wenn Wertsachen beim Transport beschädigt werden oder verloren gehen.“?)",
+                "en": "(Hmm, the account holder uses an alias?! What kind of person would do such a thing... Do they not know it is clearly stated within the package delivery rules that \"The bank is not liable for any valuables lost during transportation\"?)",
+                "es": "(Mmm, ¿el titular de la cuenta usa un alias? ¿Qué clase de persona hace eso?... ¿No sabe que las normas de entrega de paquetes especifican que «El banco no se hace responsable de la pérdida de ningún objeto de valor durante el transporte»?)",
+                "fr": "(Hmm, le propriétaire du compte utilise un pseudonyme ? Qui ferait une telle chose ? Les conditions de livraison indiquent clairement que la banque n'est pas responsable des articles perdus lors du transport…)",
+                "ja": "（おや？この通帳の名義人は偽名を使っている？！この人はどういうつもりなんでしょう……宅配便の利用約款にある「貴重品が紛失した場合、一切責任は負いません」という記載が見えていないのでしょうか？）",
+                "ko": "(음, 계좌주의 이름이 가명이라고요?! 참 별일 다 있네요... 택배 수칙에 적힌 「귀중품 분실 시 책임지지 않는다」는 걸 모르는 사람이 있나?)",
+                "th": "(หืม ชื่อเจ้าของบัญชีเป็นนามแฝงงั้นเหรอ?! นี่มันคนประเภทไหนกันเนี่ย... หรือว่ายังมีคนไม่รู้อีกเหรอว่าในกฎระเบียบการขนส่งเขียนไว้ว่า \"ทางเราจะไม่รับผิดชอบใดๆ หากของมีค่าสูญหาย\"?)",
+                "zh-Hans": "（唔，户主是化名？！这都什么人啊……难道还有人不认识快递守则上写的“贵重物品遗失概不负责？”）",
+                "zh-Hant": "（唔，戶主是化名？！這都什麼人啊……難道還有人不認識快遞守則上寫的「貴重物品遺失概不負責？」）"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700161,
+                "name": {
+                  "zh-Hans": "“墨丘利机”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Moment, das Sparbuch ist ja versichert ... Ein Vermögen von 10 Monnaie und eine Versicherung von 10.000 Shell-Krediten?)",
+                "en": "(Wait, this passbook seems to be insured... A deposit of 10 Monnaie with an insurance of 10,000 Credits?)",
+                "es": "(Un momento, parece que esta libreta de ahorros está asegurada... Un depósito de 10 monés con un seguro de 10 000 Monedas Caparazón?)",
+                "fr": "(Un instant, on dirait que ce livret est assuré… Un solde de 10 monnaies avec une assurance de 10 000 crédits ?)",
+                "ja": "（ちょっと待って……この通帳、配送保険が付与されていますね？預金はたったの10モネなのに、保険金額は1万？）",
+                "ko": "(잠깐, 보험을 든 것 같은데... 예금은 10 모네, 보장액이 1만?)",
+                "th": "(เดี๋ยวนะ สมุดบัญชีเล่มนี้เหมือนจะทำประกันพัสดุไว้ด้วย... เงินฝาก 10 มันเนย์แต่ทำประกันไว้หมื่นนึงเนี่ยนะ?)",
+                "zh-Hans": "（等等，这份存折好像保价了……存款10莫内，保价1万？）",
+                "zh-Hant": "（等等，這份存摺好像保價了……存款10莫內，保價1萬？）"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700161,
+                "name": {
+                  "zh-Hans": "“墨丘利机”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Vielleicht sollte ich die Behörden benachrichtigen.)",
+                "en": "(...Perhaps I should notify the authorities.)",
+                "es": "(Quizá debería informar a las autoridades...)",
+                "fr": "(Je devrais peut-être avertir les autorités.)",
+                "ja": "（通報したほうがいいかもしれませんね……）",
+                "ko": "(... 신고하는 게 좋을 것 같아요)",
+                "th": "(...หรือฉันควรแจ้งความ)",
+                "zh-Hans": "（……或许我应该报警。）",
+                "zh-Hant": "（……或許我應該報警。）"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700161,
+                "name": {
+                  "zh-Hans": "“墨丘利机”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mercurio schaut nachdenklich und versinkt in Grübelei.",
+                "en": "A complicated expression forms on Mercurio's face as it goes into deep thought.",
+                "es": "A Mercurio se le dibuja una expresión un tanto extraña mientras le da vueltas al asunto.",
+                "fr": "Mercurio se plonge dans des réflexions intenses, avec une expression complexe qui se dessine sur son visage.",
+                "ja": "メルクリオの表情は複雑に揺れ、困惑している様子がうかがえた。",
+                "ko": "메르쿠리우스 머신은 복잡한 표정을 지으며 다시 생각에 잠겼다",
+                "th": "สีหน้าของ Mercurio ค่อนข้างซับซ้อน และจมดิ่งสู่ปริศนาใหม่",
+                "zh-Hans": "墨丘利机表情复杂，陷入了新的迷思。",
+                "zh-Hant": "墨丘利機表情複雜，陷入了新的迷思。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du gibst deinen Auftrag ab und der Benachrichtigungston, dass Lollo-Briefmarken auf dein Konto überwiesen wurden, unterbricht die peinliche Stille.",
+                "en": "You submit the task, and the ringtone of Lollo Stamps being deposited to your account breaks the awkward silence.",
+                "es": "Das la tarea por terminada y el sonido característico al recibir los Sellos de Lollo en tu cuenta rompe ese silencio incómodo.",
+                "fr": "Vous confirmez que la tâche est terminée, et la notification indiquant que les Jetons Loulou ont été déposés sur votre compte brise le silence gênant.",
+                "ja": "依頼達成。ブブコインの入金を知らせる通知音が、その気まずい空気を破った。",
+                "ko": "임무를 제출하자 무무코인이 계좌에 입금되는 소리가 들렸고, 덕분에 어색한 침묵이 깨졌다",
+                "th": "คุณส่งมอบภารกิจ เสียงเหรียญลอลโล่ก็ไหลเข้าสู่บัญชีดังติ๊งๆ จนทำลายบรรยากาศที่เงียบจนอึดอัด",
+                "zh-Hans": "你提交了任务，呜呜邮币叮咚到账的声音打破了尴尬的沉默。",
+                "zh-Hant": "你提交了任務，嗚嗚郵幣叮咚到帳的聲音打破了尷尬的沉默。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Puh, vielen Dank, {Male=mein Freund;Female=meine Freundin}! Du hast mich vor einem horrenden Bußgeld bewahrt. Das wäre so teuer gewesen, dass ich mir nicht einmal eine Rückreise nach Huanglong mehr hätte leisten können.",
+                "en": "Phew, thank you, my friend! You saved me from a massive fine... An amount so big that I wouldn't even afford a return ticket to Huanglong.",
+                "es": "¡Uf, gracias, {Male=amigo mío;Female=amiga mía}! Me has salvado de una multa estratosférica... Es que ni habría podido comprar un billete de vuelta a Huanglong.",
+                "fr": "Pfiou, merci bien, {Male=mon ami;Female=mon amie} ! Tu m'as évité une sacrée amende... Je n'aurais même pas eu de quoi payer un billet retour pour Huanglong.",
+                "ja": "ふー。助かったよ、友よ！おかげで、高額罰金を免れた……。もしあれを払ってたら、帰りの乗船券すら買えなかったんだ！",
+                "ko": "후, 고마워요, 친구! 덕분에 거액 벌금을 면했어요... 돌아가는 배표를 살 수 없을 정도로 금액이 엄청났거든요",
+                "th": "ฟู่... ขอบคุณมากนะสหาย! คุณช่วยให้เราไม่ต้องถูกปรับเป็นเงินก้อนใหญ่... จำนวนเงินนั้นเยอะมากจนจ่ายไม่ไหวเลย",
+                "zh-Hans": "呼——多谢，挚友！你为我避免了一笔巨额罚款……那数额巨大到会让我连回程的船票都买不起。",
+                "zh-Hant": "呼——多謝，摯友！你為我避免了一筆巨額罰款……那數額巨大到會讓我連回程的船票都買不起。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750149,
+                "name": {
+                  "zh-Hans": "马计（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was war das? Ein unbekannter Anrufer sagt, dass sie mich auf einem privaten Boot mitnehmen würden, wenn ich für die Firma das Bußgeld zahlen muss. Wäre das dann nicht ein illegaler Grenzübertritt? Wäre das überhaupt legal?",
+                "en": "What's that? An unknown caller says they'll give me a lift on a private boat if the company chooses to pay the fine. But that would qualify as illegal border crossing, wouldn't it? Is it even legal?",
+                "es": "¿Qué es eso? Una persona desconocida me llama para decirme que me invitará a su barco privado si la empresa decide pagar la multa. Pero eso sería paso no autorizado por la frontera, ¿no? Yo diría que es ilegal.",
+                "fr": "Quoi ? Un appel inconnu me propose une place sur un bateau privé si la boîte paie l'amende. Mais c'est légal de traverser la frontière comme ça ?",
+                "ja": "……なんだ？知らない番号から着信だと？「会社に賠償させれば、自分の船で送ってやる」だと？おいおい、それって密航じゃないか！？法を破る気か！？",
+                "ko": "네? 알 수 없는 전화가 와서, 회사가 변상하게 만들면 자신의 개인 배로 절 태워준다고 하네요. 이건 밀입국 아닌가요? 불법 아니에요?",
+                "th": "อะไรนะ? มีสายที่ไม่รู้จักบอกว่าถ้าบริษัทจ่ายเงินชดเชย ก็จะช่วยบรรทุกให้ส่วนตัวเหรอ? นี่มันลักลอบขนส่งเลยนะ จะผิดกฎหมายรึเปล่า?",
+                "zh-Hans": "什么？有个未知来电说只要让公司赔款，就可以用私船载我一程？这不是偷渡么，这合乎律法吗？",
+                "zh-Hant": "什麼？有個未知來電說只要讓公司賠款，就可以用私船載我一程？這不是偷渡嗎，這合乎律法嗎？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750149,
+                "name": {
+                  "zh-Hans": "马计（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Egal, das wäre zu riskant. Als professioneller Mitarbeiter eines Unternehmens mit tadellosem Ruf gibt es bestimmte ethische Grenzen, die ich nicht überschreiten darf.",
+                "en": "Anyway, it's too much of a risk. I'm a professional employee of a decent company. There are certain ethical boundaries I refuse to cross.",
+                "es": "En cualquier caso, es mucho riesgo. Soy un empleado profesional de una empresa decente. Hay ciertos límites éticos que no voy a traspasar.",
+                "fr": "C'est trop risqué. Je suis un employé professionnel d'une entreprise respectable. Il y a des limites éthiques que je refuse de franchir.",
+                "ja": "ダメだダメだ、危なすぎる！この馬計、正規企業の正社員だぞ！この一線だけは絶対に踏み外しちゃいけない！",
+                "ko": "아니, 아니다. 너무 위험해요. 전 떳떳한 회사의 떳떳한 직원으로서, 도덕규범에 어긋나는 행동은 하면 안 되죠",
+                "th": "ช่างเถอะ มันอันตรายไปหน่อย เราคือพนักงานที่ถูกต้องของบริษัท จะทำผิดกฎที่กำหนดไว้ไม่ได้",
+                "zh-Hans": "算了算了，太危险了，我是正经公司的正经员工，不能踩道德高压红线。",
+                "zh-Hant": "算了算了，太危險了，我是正經公司的正經員工，不能踩道德高壓紅線。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750149,
+                "name": {
+                  "zh-Hans": "马计（通讯中）"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 181700025,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_ATM本体",
+          "name": "TsEntity_NPC_声骸_ATM本体6",
+          "areaId": 1692,
+          "position": {
+            "x": 683390,
+            "y": 574720,
+            "z": 320
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bringe Mercurio das verlorene Paket",
+        "en": "Deliver the lost package to Mercurio",
+        "es": "Entrega el paquete perdido a Mercurio.",
+        "fr": "Donner le colis perdu à Mercurio",
+        "ja": "なくなっていた配送物をメルクリオに渡す",
+        "ko": "잃어버린 우편물을 메르쿠리우스 머신에게 전달하기",
+        "th": "นำพัสดุสูญหายมอบให้กับ Mercurio",
+        "zh-Hans": "把丢失的快件交给墨丘利机",
+        "zh-Hant": "把遺失的快件交給墨丘利機"
+      },
+      "entities": [
+        {
+          "entityId": 181700025,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_ATM本体",
+          "name": "TsEntity_NPC_声骸_ATM本体6",
+          "areaId": 1692,
+          "position": {
+            "x": 683390,
+            "y": 574720,
+            "z": 320
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

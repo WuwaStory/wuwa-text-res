@@ -1,0 +1,151 @@
+{
+  "id": 106800003,
+  "key": "中曲台地",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Zentralebenen",
+    "en": "Tales of the Past and Present: Central Plains",
+    "es": "Crónicas de antaño y hoy: Llanuras Centrales",
+    "fr": "Histoires du passé : Plaine centrale",
+    "ja": "古今幾多の物語・中部台地",
+    "ko": "고대의 이야기·중부 평원",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: ที่ราบตอนกลาง",
+    "zh-Hans": "古今多少故事·中曲台地",
+    "zh-Hant": "古今多少故事·中曲臺地"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese zerrissenen Seiten. Geh und bring sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these torn pages. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estas páginas desgarradas. Ve y entrégaselas.",
+    "fr": "Le conteur de Jinzhou cherche des fragments de vieux livres. Donnez-lui ceux que vous avez collectés au Port de la ville Guixu.",
+    "ja": "今州城の講談師は古い書籍の残巻に興味があるようなので、中部台地で集めた古い書籍の残巻を彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼이 낡은 서적 잔본에 관심이 많은 것 같으니 중부 평원에서 수집한 서적 잔본을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมหน้ากระดาษที่ฉีกขาดเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧书残卷很感兴趣，把这些于中曲台地收集到的旧书残卷交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊書殘卷很感興趣，把這些於中曲臺地收集到的舊書殘卷交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler die „Zerrissenen Seiten aus den Zentralebenen“",
+        "en": "Deliver \"Torn Pages from Central Plains\" to the Storyteller",
+        "es": "Entrega las \"Páginas Rasgadas de las Llanuras Centrales\" al Narrador",
+        "fr": "Donner le Fragment du livre de la plaine centrale au conteur",
+        "ja": "「中部台地の書籍の残巻」を講談師に渡す",
+        "ko": "중부 평원 서적 잔본을 이야기꾼에게 제출",
+        "th": "ส่ง \"หน้ากระดาษที่ฉีกขาดจากที่ราบตอนกลาง\" ให้นักเล่าเรื่อง",
+        "zh-Hans": "将「中曲台地书籍残卷」交给说书人",
+        "zh-Hant": "將「中曲臺地書籍殘卷」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Aus dem Artikel, glaube ich, ist es eine Spekulation von einem unbekannten Forscher.",
+                "en": "From the article, I believe it's a speculation from an unknown researcher.",
+                "es": "Del artículo, creo que es una especulación de un investigador desconocido.",
+                "fr": "Cela doit être une hypothèse laissée par l'un des chercheurs.",
+                "ja": "これはある学者が残した推測のはずだ。",
+                "ko": "이건 어떤 학자가 남긴 추측일 거예요",
+                "th": "จากบทความนี้ ฉันเชื่อว่าเป็นการคาดการณ์ของนักวิจัยนิรนาม",
+                "zh-Hans": "这应是某位学者留下来的猜测。",
+                "zh-Hant": "這應是某位學者留下來的猜測。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "\"Hier kommt ein Biest, ähnlich einem Löwen. Es strahlt Macht und Intellekt aus, umarmt eine menschliche Handlung...\"\"",
+                "en": "\"Here comes a beast, akin to a lion. It exudes might and intellect, embraces a human's act...\"\"",
+                "es": "\"Aquí viene una bestia, similar a un león. Irradia poder e intelecto, abraza el acto de un humano...\"",
+                "fr": "« Il existe une bête, dont la forme est comme un lion. Genre puissant, il a l'esprit et il comprend les hommes... »",
+                "ja": "「その獣は、獅子のような姿で、瞳は獰猛で、霊性があり、人の理を理解している……」",
+                "ko": "「야수가 어찌 그 모양이 사자 같으랴, 위세를 떨치고, 영리하고, 도리를 통하랴...」",
+                "th": "\"อสูรร้ายโผล่มา ลักษณะคล้ายสิงโต เปี่ยมด้วยพลังและสติปัญญา ทั้งยังเข้าใจการกระทำของมนุษย์...\"",
+                "zh-Hans": "“有兽焉，其状如狮，睁崃威武，存灵性，通人理……”",
+                "zh-Hant": "「有獸焉，其狀如獅，睜崍威武，存靈性，通人理……」"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach. So stark es auch ist, es kann nicht gegen das Lamento ankämpfen.",
+                "en": "Alas. Strong as it is, it cannot strive against the Lament.",
+                "es": "Ay. Por fuerte que sea, no puede luchar contra El Lamento.",
+                "fr": "Mais même ce type de bête auspice ne peut pas résister aux changements apportés par la Lamentation. Hélas.",
+                "ja": "しかし、このような瑞獣でさえ、悲鳴による変化には抗えない。ああ、悲しいかな。",
+                "ko": "하지만 이런 종류의 서수라도 이 비명의 변화를 이겨낼 수는 없었죠. 정말 안타깝네요...",
+                "th": "อนิจจา ถึงมันจะแข็งแกร่งแค่ไหน ก็ไม่อาจต่อกรกับอาดูรการณ์ได้",
+                "zh-Hans": "但即便是这类瑞兽，也抵不过这悲鸣变化，可叹、可叹。",
+                "zh-Hant": "但即便是這類瑞獸，也抵不過這悲鳴變化，可歎、可歎。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

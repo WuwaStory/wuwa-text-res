@@ -1,0 +1,660 @@
+{
+  "id": 158900014,
+  "key": "饭店1（偶遇莱丽娅）",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Margheritas Tagesangebot I",
+    "en": "Margherita's Daily Special I",
+    "es": "Menú del dia I",
+    "fr": "Plat du jour de Margherita - I",
+    "ja": "マルゲリータの日替わりセット・一",
+    "ko": "마거리트 오늘의 세트 · I",
+    "th": "เมนูพิเศษประจำวันของมาร์เกริตา I",
+    "zh-Hans": "玛格烈特今日套餐·一",
+    "zh-Hant": "瑪格烈特今日套餐·一"
+  },
+  "desc": {
+    "de": "Ein paar vorsichtige Blicke aus der Ecke von Margheritas Restaurant ziehen offenbar deine Aufmerksamkeit auf sich. Schau vorbei, wenn du die Gelegenheit hast, und sieh dir das an.",
+    "en": "A pair of cautious eyes from the corner of Margherita's restaurant seem to call for your attention. Drop by and take a look when you have the chance.",
+    "es": "Un par de ojos cautelosos desde la esquina de la Trattoria Margherita llaman tu atención. Pásate a echar un vistazo.",
+    "fr": "Vous percevez un regard timide dans un coin du restaurant de Margherita. Passez jeter un coup d'œil quand vous en aurez l'occasion.",
+    "ja": "「トラットリア・マルゲリータ」の片隅から、ためらいがちに見つめる視線を感じる……時間があれば、様子を見に行ってみよう。",
+    "ko": "「마거리트」 구석에서 한 줄기 망설이는 시선이... 시간이 있으면 어떻게 된 일인지 보러 가보는 게 좋을 것 같다",
+    "th": "สายตาที่เฝ้ามองอย่างระแวดระวังคู่หนึ่งจากมุมภัตตาคารของมาร์เกริตาทำให้คุณรู้สึกสนใจ ลองแวะไปดูเมื่อคุณมีโอกาส",
+    "zh-Hans": "从“玛格烈特”的角落传来了一道犹豫的视线……有空的话去看看怎么回事吧。",
+    "zh-Hant": "從「瑪格烈特」的角落傳來了一道猶豫的視線……有空的話去看看怎麼回事吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Mädchen hinter der Säule",
+        "en": "Talk to the girl behind the pillar",
+        "es": "Habla con la chica detrás del pilar.",
+        "fr": "Parler à la jeune fille derrière la colonne",
+        "ja": "柱の後ろの少女と会話する",
+        "ko": "기둥 뒤에 있는 소녀와 대화하기",
+        "th": "คุยกับเด็กสาวที่อยู่หลังเสา",
+        "zh-Hans": "和柱子后的少女聊聊",
+        "zh-Hant": "和柱子後的少女聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 167900015,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_FemaleM6_5",
+          "name": "TsEntity_FemaleM6_5_莱丽娅_未入职",
+          "areaId": 1693,
+          "position": {
+            "x": 703382,
+            "y": 587225,
+            "z": 162
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -75
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_玛格烈特今日套餐",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ah! Tut mir echt leid! Ich wollte nicht rumschnüffeln … Ich werde jetzt gehen.",
+                "en": "Ah! I'm so sorry! I didn't mean to sneak around... I'll leave right now.",
+                "es": "¡Ah! ¡Perdón! No era mi intención andar a hurtadillas... Mejor me voy.",
+                "fr": "Ah ! Je suis vraiment désolée ! Je ne cherchais pas à me faufiler... Je m'en vais tout de suite.",
+                "ja": "あ、あの、すみません、何でもないです……すぐ行きますので！",
+                "ko": "미, 미안해, 일부러 엿보려고 한 건 아니었어... 금방 갈게!",
+                "th": "อ๊ะ! ขอโทษค่ะ! ไม่ได้ตั้งใจแอบดูนะ... จะไปเดี๋ยวนี้ละ",
+                "zh-Hans": "对、对不起，我不是故意在这里偷看的……我马上就走！",
+                "zh-Hant": "對、對不起，我不是故意在這裡偷看的……我馬上就走！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum hast du dich hinter der Säule versteckt?",
+                    "en": "Why were you hiding behind the pillar?",
+                    "es": "¿Por qué te escondiste detrás del pilar?",
+                    "fr": "Pourquoi tu te cachais derrière le pilier ?",
+                    "ja": "{Male=なぜ隠れてたんだ？;Female=どうして隠れてたの？}",
+                    "ko": "왜 기둥 뒤에 숨어있는 거죠?",
+                    "th": "ทำไมถึงไปซ่อนตัวอยู่หลังเสาล่ะ?",
+                    "zh-Hans": "为什么要藏在柱子后面？",
+                    "zh-Hant": "為什麼要藏在柱子後面？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich … Ich habe gehört, dass sie Mitarbeiter suchen, also wollte ich vorbeischauen. Aber Frau Margherita wirkt sehr beschäftigt, deshalb wollte ich nicht stören.",
+                "en": "I... I heard they were hiring, so I thought I'd take a peek. But Ms. Margherita seems really busy, and I didn't want to be a bother.",
+                "es": "Yo... Escuché que estaban contratando, así que pensé en echar un vistazo... pero doña Margherita parecía muy ocupada y no quería ser una molestia.",
+                "fr": "Je... J'ai entendu dire qu'ils embauchaient, alors je suis venue jeter un coup d'œil. Mais Margherita a l'air occupée, et je ne voulais pas la déranger.",
+                "ja": "実は、ここでアルバイトを募集していると聞いて……でも、マルゲリータさん、忙しそうだから、声をかけづらくて……",
+                "ko": "그... 여기서 사람을 구한다는 소식을 듣고 오게 됐어. 근데 마거리트가 바빠 보여서, 가서 물어보기가 좀 그렇네",
+                "th": "ฉัน... ฉันได้ยินว่าที่นี่กำลังรับคนอยู่ เลยลองแวะมาดูหน่อย แต่คุณ Margherita ดูยุ่งมาก ฉันก็เลยไม่อยากรบกวน",
+                "zh-Hans": "那个……我听说这边在招人，所以想来看看。但玛格烈特女士看起来很忙的样子，我不太好去打扰她。",
+                "zh-Hant": "那個……我聽說這邊在招人，所以想來看看。但瑪格烈特女士看起來很忙的樣子，我不太好去打擾她。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gelegenheiten muss man beim Schopf packen.",
+                    "en": "Opportunity waits for no one.",
+                    "es": "La oportunidad no espera a nadie.",
+                    "fr": "L'opportunité n'attend personne.",
+                    "ja": "待っているだけじゃ、チャンスはつかめない。",
+                    "ko": "가만히 기다리기만 하면 기회는 사라질 거예요",
+                    "th": "โอกาสไม่รอใครหรอกนะ",
+                    "zh-Hans": "一直等下去的话，机会就会溜走的。",
+                    "zh-Hant": "一直等下去的話，機會就會溜走的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du hast recht. Ich sollte hingehen und…",
+                "en": "You're right. I should go and—",
+                "es": "Tienes razón. Debería ir y...",
+                "fr": "Vous avez raison. Je devrais y aller et...",
+                "ja": "そうですよね……行ってきま——",
+                "ko": "맞아, 바로 가서 말하려고...",
+                "th": "คุณพูดถูก ฉันควรไปและ...",
+                "zh-Hans": "您说得对，我这就过去……",
+                "zh-Hant": "您說得對，我這就過去……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "<i>*Magengrummeln*</i>.",
+                "en": "<i>Growl</i>.",
+                "es": "<i>Rugido</i>.",
+                "fr": "<i>Grrr</i>.",
+                "ja": "「グゥゥゥー」",
+                "ko": "꼬르륵——",
+                "th": "<i>โครกกก</i>",
+                "zh-Hans": "咕——",
+                "zh-Hant": "咕——"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "…",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "...",
+                    "ja": "……",
+                    "ko": "...",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Hast du Hunger?",
+                    "en": "Are you hungry?",
+                    "es": "¿Eso era tu estómago?",
+                    "fr": "Tu as faim ?",
+                    "ja": "お腹すいた？",
+                    "ko": "배고프세요?",
+                    "th": "เธอหิวเหรอ?",
+                    "zh-Hans": "你饿了吗？",
+                    "zh-Hant": "你餓了嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Aah! Tut mir leid! Ich, äh, habe heute noch nichts gegessen und das Essen hier riecht so gut.",
+                "en": "Eek! Sorry! I, um, haven't eaten anything today, and the food here smells amazing.",
+                "es": "¡Aaah! ¡Perdón! Yo, eh, no he comido nada hoy y aquí huele de maravilla.",
+                "fr": "Hiii ! Désolée ! Je, euh, je n'ai rien mangé aujourd'hui, et ça sent incroyablement bon ici.",
+                "ja": "う……美味しそうな匂いのせいでしょうか……あ、そういえば今日はまだ何も食べてなかった。",
+                "ko": "미안, 음식 냄새를 계속 맡다 보니... 급하게 나오느라, 아직 아무것도 못 먹었거든",
+                "th": "อ๊ะ! ขอโทษที! คือวันนี้ฉันยังไม่ได้กินอะไรเลย แล้วกลิ่นอาหารที่นี่ก็หอมมาก",
+                "zh-Hans": "不好意思……食物的香气一直在飘过来。今天出来得急，我还没吃过东西。",
+                "zh-Hant": "不好意思……食物的香氣一直在飄過來。今天出來得急，我還沒吃過東西。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es ist sowieso bald Zeit zum Essen.",
+                    "en": "It's about time for a meal, anyway.",
+                    "es": "De todos modos, ya es la hora del almuerzo.",
+                    "fr": "Il est l'heure de manger, de toute façon.",
+                    "ja": "ご飯の時間だ。",
+                    "ko": "식사 시간이 다 됐네요",
+                    "th": "จะถึงเวลากินข้าวพอดีเลย",
+                    "zh-Hans": "干饭时间到了。",
+                    "zh-Hant": "吃飯時間到了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du solltest wirklich etwas essen.",
+                    "en": "You should really eat something.",
+                    "es": "Deberías comer algo.",
+                    "fr": "Tu devrais vraiment manger quelque chose.",
+                    "ja": "とりあえず、ご飯食べよう。",
+                    "ko": "아무튼, 식사부터 하시죠",
+                    "th": "เธอควรกินอะไรสักหน่อยนะ",
+                    "zh-Hans": "总之，先吃饭吧。",
+                    "zh-Hant": "總之，先吃飯吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das würde ich gerne, aber ich habe nicht genug Geld …",
+                "en": "I'd love to, but I don't have enough money...",
+                "es": "Me encantaría, pero no tengo bastante dinero...",
+                "fr": "J'adorerais, mais je n'ai pas assez d'argent...",
+                "ja": "え、ええと、実はあんまりお金を持ってきてなくて……",
+                "ko": "그, 그래... 근데 돈이 부족해서...",
+                "th": "ฉันก็อยากกินนะ แต่มีเงินไม่พอ...",
+                "zh-Hans": "好、好的，但其实我没带够钱……",
+                "zh-Hant": "好、好的，但其實我沒帶夠錢……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das geht auf mich.",
+                    "en": "It will be my treat.",
+                    "es": "Yo te invito.",
+                    "fr": "Alors c'est pour moi.",
+                    "ja": "奢るよ。",
+                    "ko": "제가 사드릴게요",
+                    "th": "ฉันเลี้ยงเอง",
+                    "zh-Hans": "这顿算我的。",
+                    "zh-Hant": "這頓算我的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Echt? Margherita macht das beste Essen überhaupt! Meine Mama hat mich früher ständig dorthin mitgenommen.",
+                "en": "Really? Margherita makes the best food! My mum used to bring me here all the time.",
+                "es": "¿En serio? ¡Margherita es la mejor pizzería del mundo! Mi mamá siempre me traía aquí.",
+                "fr": "Vraiment ? Margherita est une excellente cuisinière ! Ma mère m'amenait ici tout le temps.",
+                "ja": "いいんですか？「マルゲリータ」の料理は、すごく美味しいって有名で、昔、母によく連れてきてもらったんです。",
+                "ko": "정말? 「마거리트」 식당은 음식을 잘하기로 워낙 유명해. 예전에 엄마랑 자주 왔었거든!",
+                "th": "จริงเหรอ? คุณ Margherita ทำอาหารอร่อยที่สุดเลย! แม่ฉันเคยพามาที่นี่บ่อยๆ",
+                "zh-Hans": "真的？“玛格烈特”的菜品是远近闻名的地道美味，以前母亲经常带我来这里。",
+                "zh-Hant": "真的？「瑪格烈特」的菜品是遠近聞名的地道美味，以前母親經常帶我來這裡。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber es ist mir unangenehm, weil wir uns gerade erst kennengelernt haben.",
+                "en": "But it doesn't feel quite right since we just met.",
+                "es": "Pero no sé si debo aceptar, acabamos de conocernos.",
+                "fr": "Mais ça ne semble pas honnête, puisque nous venons juste de nous rencontrer.",
+                "ja": "でも、初対面なのに、奢ってもらうなんて……",
+                "ko": "안 지도 얼마 안 됐는데 밥을 얻어먹다니, 좀 아닌 것 같네...",
+                "th": "แต่ก็รู้สึกแปลกๆ อยู่ดีเพราะเราเพิ่งเจอกันเอง",
+                "zh-Hans": "但我们才刚见面就让您请客，不太好……",
+                "zh-Hant": "但我們才剛見面就讓您請客，不太好……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sagen wir erstmal Margherita Hallo.",
+                    "en": "Let's go see Margherita first.",
+                    "es": "Primero, vayamos a ver a Margherita.",
+                    "fr": "Allons d'abord voir Margherita.",
+                    "ja": "まずはオーナーに挨拶しよう。",
+                    "ko": "우선 사장님부터 만나러 가보죠",
+                    "th": "ไปหา Margherita กันก่อนเถอะ",
+                    "zh-Hans": "先去见下店主吧。",
+                    "zh-Hant": "先去見一下店主吧。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Margherita",
+        "en": "Talk to Margherita",
+        "es": "Habla con Margherita.",
+        "fr": "Parler à Margherita",
+        "ja": "マルゲリータと会話する",
+        "ko": "가게 주인 마거리트와 대화하기",
+        "th": "คุยกับ Margherita",
+        "zh-Hans": "与店长玛格烈特交谈",
+        "zh-Hant": "與店長瑪格烈特交談"
+      },
+      "entities": [
+        {
+          "entityId": 314900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC玛格烈特",
+          "name": "TsEntity_拉古纳_玛格烈特4",
+          "areaId": 1693,
+          "position": {
+            "x": 703786,
+            "y": 586638,
+            "z": 160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 159
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_玛格烈特今日套餐",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ah, du bist doch {PlayerName}! Willkommen! Was darf es heute sein?",
+                "en": "Ah, if it isn't {PlayerName}! Welcome! What will it be today?",
+                "es": "¡Pero bueno, si es {PlayerName}! ¡{Male=Bienvenido;Female=Bienvenida}! ¿Qué te apetece hoy?",
+                "fr": "Ah, mais c'est {PlayerName} ! Bienvenue ! Qu'est-ce que ce sera aujourd'hui ?",
+                "ja": "あ、{PlayerName}さん、いらっしゃい、今日は何にしますチュ？",
+                "ko": "어머, {PlayerName} 아니야? 어서 와, 오늘은 어떤 걸로 먹을래?",
+                "th": "อ้าว {PlayerName} นี่เอง! ยินดีต้อนรับจ้า! วันนี้สั่งอะไรดี?",
+                "zh-Hans": "呀，这不是{PlayerName}吗？欢迎，今天想吃什么啾？",
+                "zh-Hant": "呀，這不是{PlayerName}嗎？歡迎，今天想吃什麼啾？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1490,
+                "name": {
+                  "zh-Hans": "玛格烈特"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was möchtest du essen?",
+                    "en": "What would you like to eat?",
+                    "es": "¿Qué te gustaría comer?",
+                    "fr": "Qu'aimerais-tu manger ?",
+                    "ja": "何が食べたい？",
+                    "ko": "뭘 먹고 싶나요?",
+                    "th": "เธออยากกินอะไร?",
+                    "zh-Hans": "你想吃什么？",
+                    "zh-Hant": "你想吃什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich? Ich nehme es, wie es kommt.",
+                "en": "Me? I'm fine with anything.",
+                "es": "¿A mí? Cualquier cosa me vale.",
+                "fr": "Moi ? Tout me va.",
+                "ja": "え？わ、私は何でも大丈夫です。",
+                "ko": "나? 난 아무거나 다 좋아",
+                "th": "ฉันเหรอ? อะไรก็ได้ค่ะ",
+                "zh-Hans": "我？我什么都可以。",
+                "zh-Hant": "我？我什麼都可以。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50172,
+                "name": {
+                  "zh-Hans": "腼腆的少女"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, du bist Lelia vom Gondel-Markt, oder? Du warst schon ewig nicht mehr hier! Nuvola-Pasta, so wie früher?",
+                "en": "Oh, you're Lelia from down by the Gondola Market, right? It's been ages since you stopped by! Nuvola Pasta, same as before?",
+                "es": "Anda, pero si tú eres Lelia, del Mercado Góndola de más abajo, ¿verdad? ¡Hacía mucho tiempo que no te veía! ¿Pasta Nuvola, como siempre?",
+                "fr": "Oh, tu es Lelia du marché de la gondole, n'est-ce pas ? Ça fait une éternité que tu n'étais pas venue ! Des pâtes Nuvola, comme avant ?",
+                "ja": "あれ、リーリアちゃん？お久しぶりですチュ！いつもの「ヌヴォラ・パスタ」にしますチュ？",
+                "ko": "어, 수상 시장 쪽에 사는 라일리아 맞지? 못 본 지 오래됐네, 어쩜 하나도 안 변했니, 「미트 소스 파스타」 어때?",
+                "th": "อ้าว เธอคือ Lelia ที่อยู่แถวตลาด Gondola ใช่ไหม? ไม่ได้แวะมาที่นี่นานเลยนะ! เอานูโวลาพาสตาเหมือนเดิมหรือเปล่า?",
+                "zh-Hans": "啊，你是住在水市边上的莱丽娅？好久没见到你光顾了啾，还是老样子，「云凝肉酱烩面」啾？",
+                "zh-Hant": "啊，你是住在水市邊上的萊麗婭？好久沒見到你光顧了啾，還是老樣子，「雲凝肉醬燴麵」啾？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1490,
+                "name": {
+                  "zh-Hans": "玛格烈特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich hätte nicht gedacht, dass du dich an mich erinnerst. Eigentlich wollte ich …",
+                "en": "I didn't expect you to remember me. Actually, there's something I…",
+                "es": "No esperaba que te acordaras de mí. Aunque la verdad es que quería...",
+                "fr": "Je ne m'attendais pas à ce que tu te souviennes de moi. En fait, il y a quelque chose que je...",
+                "ja": "覚えててくれたんですね。あの……実は……私……",
+                "ko": "날 아직 기억하네. 근데... 사실... 나...",
+                "th": "ไม่นึกเลยว่าคุณจะยังจำฉันได้ จริงๆ แล้วฉันมีเรื่องอยากจะ...",
+                "zh-Hans": "没想到您还记得我。那个……其实……我……",
+                "zh-Hant": "沒想到您還記得我。那個……其實……我……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Du stupst das Mädchen sanft an.)",
+                    "en": "(You give the girl a gentle nudge)",
+                    "es": "(Le das un suave empujón a la chica)",
+                    "fr": "(Vous donnez à la fille un petit coup de coude.)",
+                    "ja": "（黙って少女を軽くつつく）",
+                    "ko": "(아무도 모르게 소녀를 가볍게 찌른다)",
+                    "th": "(คุณสะกิดเธอเบาๆ)",
+                    "zh-Hans": "（默不作声地戳一下女孩。）",
+                    "zh-Hant": "（默不作聲地戳一下女孩。）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Fräulein Margherita, ich bin hier, um mich für einen Job zu bewerben!",
+                "en": "Ms. Margherita, I'm here to apply for a job!",
+                "es": "Doña Margherita, ¡he venido para pedirle trabajo!",
+                "fr": "Margherita, je suis venue postuler pour un travail !",
+                "ja": "マルゲリータさん——ここでアルバイトをさせてください！",
+                "ko": "마거리트, 사실—— 나 면접 보러 온 거였어!",
+                "th": "คุณ Margherita ฉันอยากมาสมัครงานค่ะ!",
+                "zh-Hans": "玛格烈特女士，其实——我是来应聘的！",
+                "zh-Hant": "瑪格烈特女士，其實——我是來應聘的！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aha! Ach darum druckst du so herum! Du kommst genau richtig – Wir sind gerade so im Stress, dass selbst Bakie im Quadrat springt!",
+                "en": "Aha! So that's why you were being all squirrely! You are right on time—we're so busy right now that even poor Bakie is going nuts!",
+                "es": "¡Ajá! ¡Así que por eso estabas tan nerviosa! Llegas justo a tiempo: ¡tenemos tanta faena que el pobre Bakito se está volviendo loco!",
+                "fr": "Ah ah ! C'est donc pour ça que tu étais si nerveuse ! Tu arrives au bon moment ; nous sommes tellement occupés en ce moment que même le pauvre Fourno devient fou !",
+                "ja": "それでずっと隠れていたのですかチュ？最近人手不足で「ベイキー」が倒れる寸前なのですチュ。",
+                "ko": "그래서 아까 숨어 있었구나? 안 그래도 요즘 일손이 부족해서, 가게가 너무 바쁜 나머지 「베키」가 쓰러질 뻔했거든",
+                "th": "อ๋อ! ถึงว่าทำไมทำท่าทางลับๆ ล่อๆ! มาได้จังหวะพอดีเลย... ตอนนี้เรายุ่งสุดๆ ขนาด Bakie ที่น่าสงสารยังหัวหมุนแล้ว!",
+                "zh-Hans": "这就是刚才你藏在那边的原因啾？最近人手紧缺，店里忙得「焙焙」都快晕倒了啾。",
+                "zh-Hant": "這就是剛才你藏在那邊的原因啾？最近人手緊缺，店裡忙得「焙焙」都快暈倒了啾。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1490,
+                "name": {
+                  "zh-Hans": "玛格烈特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe zwar nicht viel Erfahrung, aber wenn du mich einstellst, werde ich mich reinhängen und immer mein Bestes geben!",
+                "en": "I may not have a lot of experience, but if you hire me, I'm ready to dive in and give my absolute best!",
+                "es": "Puede que no tenga mucha experiencia, pero si me contrata, ¡prometo dar lo mejor de mí!",
+                "fr": "Je n'ai peut-être pas beaucoup d'expérience, mais si tu m'embauches, je suis prête à foncer et à donner le meilleur de moi-même !",
+                "ja": "ご迷惑をおかけしますが……一生懸命頑張ります。",
+                "ko": "비록 아직은 아무것도 할 줄 모르지만... 열심히 배워서 실망시키지 않을게!",
+                "th": "ถึงจะยังไม่ค่อยมีประสบการณ์ แต่ถ้าคุณรับฉันไว้ ฉันพร้อมลุยเต็มที่แน่นอนค่ะ!",
+                "zh-Hans": "虽然我还什么都不会……但我会努力学习，不会让您失望的。",
+                "zh-Hant": "雖然我還什麼都不會……但我會努力學習，不會讓您失望的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das geht aber auf keinen Fall mit leerem Magen! Nun, für meine beiden besonderen Stammgäste …",
+                "en": "You definitely can't do that on an empty belly! Well now, for you two special regulars...",
+                "es": "Vale, ¡pero no puedes trabajar en un restaurante con el estómago vacío! Bueno, pues para dos de mis clientes más especiales...",
+                "fr": "Tu ne pourras pas faire ça le ventre vide ! Eh bien, pour deux clients spéciaux comme vous...",
+                "ja": "何をするにも、まずはお腹を満たさないとチュ。お二人とも常連さんですし、じゃあ——",
+                "ko": "그래도 우선 허기부터 달래야지. 두 사람 다 단골이니, 그렇다면——",
+                "th": "จะทำงานทั้งที่ท้องว่างไม่ได้สิ! เอาล่ะตอนนี้ สำหรับลูกค้าประจำพิเศษทั้งสอง...",
+                "zh-Hans": "无论做什么都得先填饱肚子啾。既然两位都是老主顾，那么——",
+                "zh-Hant": "無論做什麼都得先填飽肚子啾。既然兩位都是老主顧，那麼——"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1490,
+                "name": {
+                  "zh-Hans": "玛格烈特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich würde ein „Danke-Menü für 2“ mit Nuvola-Nudeln vorschlagen!",
+                "en": "I suggest a \"Thank-You Meal for Two\" with Nuvola Pasta!",
+                "es": "¡La casa os propone una «Comida de agradecimiento para dos» con Pasta Nuvola!",
+                "fr": "Je suggère un « repas de remerciement pour deux » avec des pâtes Nuvola !",
+                "ja": "「感謝セット」はいかがですチュ？パスタが絶品ですよチュ。",
+                "ko": "파스타가 포함된 「감사의 인사 세트」가 좋겠어!",
+                "th": "ฉันขอแนะนำ \"มื้อขอบคุณสำหรับสองคน\" คู่กับนูโวลาพาสตา!",
+                "zh-Hans": "包含烩面在内的「感恩回馈套餐」啾！",
+                "zh-Hant": "包含燴麵在內的「感恩回饋套餐」啾！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1490,
+                "name": {
+                  "zh-Hans": "玛格烈特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das geht auf mich. Und jetzt aufessen!",
+                "en": "This one's my treat. Now eat up!",
+                "es": "Corre de mi cuenta. Ahora, ¡a comer!",
+                "fr": "C'est la maison qui régale. Allez, à table !",
+                "ja": "今日はサービスですチュ。もちろん、{PlayerName}さんの分もありますチュ。",
+                "ko": "공짜로 줄 테니까, {PlayerName}도 같이 먹어",
+                "th": "มื้อนี้ฉันเลี้ยงเอง ทานให้อร่อยนะ!",
+                "zh-Hans": "这次不用付钱了，{PlayerName}当然也有份啾。",
+                "zh-Hant": "這次不用付錢了，{PlayerName}當然也有份啾。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1490,
+                "name": {
+                  "zh-Hans": "玛格烈特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich wünsche euch beiden guten Appetit. Kurz darauf fängt Lelia an, im Restaurant zu arbeiten.",
+                "en": "You and Lelia enjoy the delicious meal together. Shortly after, Lelia becomes the restaurant's new member.",
+                "es": "Lelia y tú disfrutáis {Male=juntos;Female=juntas} de la deliciosa comida. Poco después, Lelia se convierte en la nueva camarera del restaurante.",
+                "fr": "Lelia et vous profitez ensemble du délicieux repas. Peu après, Lelia intègre le personnel du restaurant.",
+                "ja": "リーリアと一緒に、マルゲリータが用意してくれたセットを食べた。その後、彼女は無事、店の一員になったようだ……",
+                "ko": "당신은 라일리아와 함께 사장이 제공한 세트를 먹었고, 라일리아도 순조롭게 가게의 직원이 되었다...",
+                "th": "คุณกับ Lelia ทานอาหารอร่อยๆ ด้วยกันอย่างมีความสุข ไม่นานหลังจากนั้น Lelia ก็ได้เป็นสมาชิกใหม่ของร้านอาหารแห่งนี้",
+                "zh-Hans": "你和莱丽娅一同享用了店主提供的套餐。之后，她顺利地成为了餐馆的一员……",
+                "zh-Hant": "你和萊麗婭一同享用了店主提供的套餐。之後，她順利地成為了餐館的一員……"
+              },
+              "id": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

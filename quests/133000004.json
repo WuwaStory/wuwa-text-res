@@ -1,0 +1,353 @@
+{
+  "id": 133000004,
+  "key": "曲问趣答-一",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Eine Quest der Klugheit - I",
+    "en": "A Quest of Wits - I",
+    "es": "Una Prueba de Ingenio - I",
+    "fr": "Réponses aux questions étranges - I",
+    "ja": "曲問クイズ・その一",
+    "ko": "꿀잼 퀴즈 타임 · Ⅰ",
+    "th": "การแสวงหาปัญญา - I",
+    "zh-Hans": "曲问趣答-一",
+    "zh-Hant": "曲問趣答·一"
+  },
+  "desc": {
+    "de": "Du bist auf eine seltsame Person im Düsteren Wald gestoßen. Sie scheint seltsame Fragen für dich zu haben. Sei geduldig, beantworte ihre Fragen, und du könntest einige Belohnungen erhalten.",
+    "en": "You meet a strange dual in the Dim Forest. They seem to have peculiar questions for you. Answer their questions correctly, and you might receive some rewards.",
+    "es": "Has encontrado a una persona extraña en el Bosque Oscuro. Parece que tienen preguntas peculiares para ti. Sé paciente, responde a sus preguntas, y podrías recibir algunas recompensas.",
+    "fr": "Dans la forêt aveuglante, vous croisez un duo étrange qui vous pose des questions inhabituelles. Répondez correctement pour obtenir des récompenses.",
+    "ja": "光なき森で妙な人たちと出逢い、あなたに妙なクイズを出題した。平常心を保ち、そのクイズに答えすれば、何かご褒美が手に入れるかも……",
+    "ko": "암흑 밀림에서 만난 이상한 사람들이 이상한 질문을 합니다. 인내심을 가지고 그들의 질문에 대답하면 보상을 받을 수 있지도 모릅니다...",
+    "th": "คุณได้พบกับคู่หูแปลกๆ ในป่าสลัว ดูเหมือนว่าพวกเขาจะมีคำถามแปลกๆ สำหรับคุณ ตอบคำถามของพวกเขาให้ถูกต้อง แล้วคุณอาจจะได้รับรางวัลบางอย่าง",
+    "zh-Hans": "在无光之森遇到了奇怪的人，他们有些奇怪的问题问你。保持耐心，回答他们的问题，也许能拿到奖励……",
+    "zh-Hant": "在無光之森遇到了奇怪的人，他們有些奇怪的問題問你。保持耐心，回答他們的問題，也許能拿到獎勵……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe das Quiz ab",
+        "en": "Complete the quiz",
+        "es": "Completa el cuestionario",
+        "fr": "Répondre aux questions",
+        "ja": "クイズを完了する",
+        "ko": "퀴즈 맞히기",
+        "th": "ทำบททดสอบให้เสร็จ",
+        "zh-Hans": "完成问答",
+        "zh-Hant": "完成問答"
+      },
+      "entities": [
+        {
+          "entityId": 133000500,
+          "mapId": 8,
+          "blueprintType": "NPC233",
+          "name": "TsEntity_180_003_皇龙男10",
+          "areaId": 702,
+          "position": {
+            "x": -2965,
+            "y": 295326,
+            "z": 3869
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133002109,
+          "mapId": 8,
+          "blueprintType": "NPC232",
+          "name": "TsEntity_180_003_皇龙男3",
+          "areaId": 702,
+          "position": {
+            "x": -2917,
+            "y": 295347,
+            "z": 3870
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_无光之森洞穴POI",
+          "flowIndex": 3,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Frage Nummer eins. Was ist Jinhsis Berufstitel?",
+                "en": "Quiz number one. What is Jinhsi's job title?",
+                "es": "Pregunta número uno. ¿Cuál es el título de trabajo de Jinhsi?",
+                "fr": "La première question, le titre de Jinhsi !",
+                "ja": "第1問、今汐様の役職はなんですか？",
+                "ko": "재미있는 퀴즈 첫 번째! 금희의 관직명은 무엇일까요?",
+                "th": "คำถามข้อที่หนึ่ง ตำแหน่งงานของ Jinhsi คืออะไร?",
+                "zh-Hans": "趣题第一问，今汐官职名！",
+                "zh-Hant": "趣題第一問，今汐官職名！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Magistrat von Jinzhou.",
+                    "en": "Magistrate of Jinzhou.",
+                    "es": "Magistrada de Jinzhou.",
+                    "fr": "La Magistrate de Jinzhou.",
+                    "ja": "今州今令尹。",
+                    "ko": "금주의 영윤!",
+                    "th": "เจ้าเมืองแห่งจินโจว",
+                    "zh-Hans": "今州今令尹。",
+                    "zh-Hant": "今州今令尹。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Magier von Jinzhou.",
+                    "en": "Magician of Jinzhou.",
+                    "es": "Mago de Jinzhou.",
+                    "fr": "La Magistrate de Lingzhou.",
+                    "ja": "令州今令尹。",
+                    "ko": "영윤의 금주!",
+                    "th": "นักมายากลแห่งจินโจว",
+                    "zh-Hans": "令州今令尹。",
+                    "zh-Hant": "令州今令尹。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Minister von Jinzhou.",
+                    "en": "Minister of Jinzhou.",
+                    "es": "Ministro de Jinzhou.",
+                    "fr": "La Maestro de Jinzhou.",
+                    "ja": "今州令今尹。",
+                    "ko": "금주의 윤영!",
+                    "th": "นายกแห่งจินโจว",
+                    "zh-Hans": "今州令今尹。",
+                    "zh-Hant": "今州令今尹。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Hierarch von Jinzhou.",
+                    "en": "Hierarch of Jinzhou.",
+                    "es": "Jerarca de Jinzhou.",
+                    "fr": "La Maestro de Lingzhou.",
+                    "ja": "令州令今尹。",
+                    "ko": "윤영의 금주!",
+                    "th": "พระราชาคณะแห่งจินโจว",
+                    "zh-Hans": "令州令今尹。",
+                    "zh-Hant": "令州令今尹。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Frage Nummer eins beantwortet! Magistrat von Jinzhou.",
+                "en": "Quiz number one answered! Magistrate of Jinzhou.",
+                "es": "¡Primera pregunta respondida! Magistrada de Jinzhou.",
+                "fr": "La première réponse, la Magistrate de Jinzhou !",
+                "ja": "ご名答！今州今令尹です！",
+                "ko": "바로 정답! 금주의 영윤!",
+                "th": "เฉลยคำถามข้อที่หนึ่ง! เจ้าเมืองแห่งจินโจว",
+                "zh-Hans": "妙答第一记，今州今令尹！",
+                "zh-Hant": "妙答第一記，今州今令尹！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm deine Belohnung und komm morgen für mehr zurück!",
+                "en": "Take your reward and come back for more tomorrow!",
+                "es": "¡Toma tu recompensa y vuelve mañana por más!",
+                "fr": "Prenez la récompense, la question sera posée demain !",
+                "ja": "本日は以上です！明日もよろしく！",
+                "ko": "보상 드립니다! 내일 또 오세요!",
+                "th": "รับรางวัลและกลับมาใหม่ในวันพรุ่งนี้นะ!",
+                "zh-Hans": "奖励请收下，明日复来题！",
+                "zh-Hant": "獎勵請收下，明日複來題！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1108,
+                "name": {
+                  "zh-Hans": "趣问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schwierigkeiten tauchen auf. Rover ist verwirrt.",
+                "en": "Difficulties arise. Rover confused.",
+                "es": "Surgen dificultades. Errante confundido.",
+                "fr": "Si l'énigme est difficile, la réponse est incertaine.",
+                "ja": "残念！深く考えすぎですね。",
+                "ko": "땡! 아, 아쉽네요!",
+                "th": "อุปสรรคก่อตัว ผู้พเนจรสับสน",
+                "zh-Hans": "题有困难处，疑难解不清。",
+                "zh-Hant": "題有困難處，疑難解不清。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du es durchstehst, komm zurück und sei mein Gast!",
+                "en": "If you see it through, return and be my guest!",
+                "es": "¡Si lo superas, vuelve y serás mi invitado!",
+                "fr": "Si vous avez une idée, la réponse sera révélée demain !",
+                "ja": "明日もう一度挑戦してみてください！",
+                "ko": "내일 다시 도전 하세요!",
+                "th": "หากต้องการทำให้สำเร็จ ก็เชิญกลับมาลองดูใหม่!",
+                "zh-Hans": "若有巧思出，明日复解疑！",
+                "zh-Hant": "若有巧思出，明日複解疑！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schwierigkeiten tauchen auf. Rover ist verwirrt.",
+                "en": "Difficulties arise. Rover confused.",
+                "es": "Surgen dificultades. Errante confundido.",
+                "fr": "Si l'énigme est difficile, la réponse est incertaine.",
+                "ja": "残念！深く考えすぎですね。",
+                "ko": "땡! 아, 아쉽네요!",
+                "th": "อุปสรรคก่อตัว ผู้พเนจรสับสน",
+                "zh-Hans": "题有困难处，疑难解不清。",
+                "zh-Hant": "題有困難處，疑難解不清。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du es durchstehst, komm zurück und sei mein Gast!",
+                "en": "If you see it through, return and be my guest!",
+                "es": "¡Si lo superas, vuelve y serás mi invitado!",
+                "fr": "Si vous avez une idée, la réponse sera révélée demain !",
+                "ja": "明日もう一度挑戦してみてください！",
+                "ko": "내일 다시 도전 하세요!",
+                "th": "หากต้องการทำให้สำเร็จ ก็เชิญกลับมาลองดูใหม่!",
+                "zh-Hans": "若有巧思出，明日复解疑！",
+                "zh-Hant": "若有巧思出，明日複解疑！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schwierigkeiten tauchen auf. Rover ist verwirrt.",
+                "en": "Difficulties arise. Rover confused.",
+                "es": "Surgen dificultades. Errante confundido.",
+                "fr": "Si l'énigme est difficile, la réponse est incertaine.",
+                "ja": "残念！深く考えすぎですね。",
+                "ko": "땡! 아, 아쉽네요!",
+                "th": "อุปสรรคก่อตัว ผู้พเนจรสับสน",
+                "zh-Hans": "题有困难处，疑难解不清。",
+                "zh-Hant": "題有困難處，疑難解不清。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du es durchstehst, komm zurück und sei mein Gast!",
+                "en": "If you see it through, return and be my guest!",
+                "es": "¡Si lo superas, vuelve y serás mi invitado!",
+                "fr": "Si vous avez une idée, la réponse sera révélée demain !",
+                "ja": "明日もう一度挑戦してみてください！",
+                "ko": "내일 다시 도전 하세요!",
+                "th": "หากต้องการทำให้สำเร็จ ก็เชิญกลับมาลองดูใหม่!",
+                "zh-Hans": "若有巧思出，明日复解疑！",
+                "zh-Hant": "若有巧思出，明日複解疑！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1109,
+                "name": {
+                  "zh-Hans": "曲问"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

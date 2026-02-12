@@ -1,0 +1,294 @@
+{
+  "id": 181850003,
+  "key": "2.8预热day3",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lahai-Roi-Treibgut III",
+    "en": "Daily Lahai-Roi Castaway III",
+    "es": "Objeto Náufrago diario de Lahai-Roi III",
+    "fr": "Résidu quotidien issu de Lahai-Roi - III",
+    "ja": "毎日のラハイロイ漂流物・三",
+    "ko": "오늘의 라하이 로이 표류물 · Ⅲ",
+    "th": "วัตถุตกค้างจากลาไฮรอยรายวัน - 3",
+    "zh-Hans": "每日的拉海洛漂流物·三",
+    "zh-Hant": "每日的拉海洛漂流物·三"
+  },
+  "desc": {
+    "de": "Aus irgendeinem Grund schickt die „Namipon-Familie“ jedes Mal ein anderes Namipon, um dich über das Treibgut zu informieren. Wer wird es diesmal sein?",
+    "en": "For some reason, the \"Namipon family\" always sends a different Namipon to brief you on castaway objects. Who will it be this time?",
+    "es": "Por alguna razón, la «Familia Namipón» siempre envía a un Namipón diferente para informarte sobre los Objetos Náufragos. ¿Quién será esta vez?",
+    "fr": "Pour une raison ou une autre, chaque jour, un Namipon différent vous rend visite pour vous transmettre des informations concernant le résidu. Qui vous rencontrera aujourd'hui ?",
+    "ja": "なぜか、「ナミポン大家族」は毎回違うナミポンで漂流物の情報を届けてくる。今回現れるのはどのナミポンだろうか。",
+    "ko": "이유는 모르겠지만, 「나미폰 대가족」은 매번 다른 나미폰으로 당신에게 표류물 정보를 전해준다. 이번에는 어떤 나미폰이 나타날까?",
+    "th": "ไม่รู้เหมือนกันว่าทำไมทุกครั้งที่ \"ตระกูล Namipon\" ให้ข้อมูลวัตถุตกค้างกับคุณจะมักจะส่งสมาชิกคนละตัวมาตลอดเลย แล้วครั้งนี้จะส่ง Namipon ตัวไหนที่มาให้ข้อมูลกันนะ?",
+    "zh-Hans": "不知道为什么，“波仔大家族”每次都会派出一个不同的个体来给你漂流物情报。这次登场的会是哪个波仔呢？",
+    "zh-Hant": "不知道為什麼，「波仔大家族」每次都會派出一個不同的個體來給你漂流物情報。這次登場的會是哪個波仔呢？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh ins Shashou-Café und hol dir neue Informationen über Treibgut.",
+        "en": "Head to the cafe to gather intel on the new castaway object",
+        "es": "Dirígete al café para recopilar información sobre el nuevo Objeto Náufrago.",
+        "fr": "Visiter le Café Shashou pour obtenir des informations",
+        "ja": "カフェに向かい、新しい漂流物の情報を確認する",
+        "ko": "카페로 이동하여 새로운 표류물 정보 획득하기",
+        "th": "ไปยังร้านกาแฟ เพื่อรับข้อมูลวัตถุตกค้างใหม่",
+        "zh-Hans": "前往咖啡厅，获取新的漂流物情报",
+        "zh-Hant": "前往咖啡廳，獲取新的漂流物情報"
+      },
+      "entities": [
+        {
+          "entityId": 181850002,
+          "mapId": 910,
+          "blueprintType": "branch2.8_181_Bozai16",
+          "name": "TsEntity_NPC_快递波仔",
+          "areaId": 40,
+          "position": {
+            "x": 2300,
+            "y": 4727,
+            "z": 130
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2.8预热活动",
+          "flowIndex": 1,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Schlechte Nachrichten … Ein für das Café bestimmtes Paket ist verschwunden.",
+                "en": "I've got bad news... A package meant for the cafe has gone missing.",
+                "es": "Tengo malas noticias. Un paquete para el café ha desaparecido.",
+                "fr": "Mauvaise nouvelle… un colis destiné au café a disparu.",
+                "ja": "悪い知らせがあるの。カフェに届くはずだった荷物が、一つなくなっちゃったんだ……",
+                "ko": "나쁜 소식이 하나 있어요... 카페에 보냈어야 할 소포를 잃어버렸어요",
+                "th": "ฉันมีข่าวร้าย... พัสดุที่ควรจะส่งไปที่ร้านกาแฟได้หายไปน่ะ",
+                "zh-Hans": "有个坏消息……一个本该寄到咖啡厅来的包裹丢了。",
+                "zh-Hant": "有個壞消息……一個本該寄到咖啡廳來的包裹丟了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50263,
+                "name": {
+                  "zh-Hans": "波仔速递"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué ha pasado?",
+                    "fr": "Que s'est-il passé ?",
+                    "ja": "{Male=なにかあったのか？;Female=なにかあったの？}",
+                    "ko": "어떻게 된 거죠?",
+                    "th": "เกิดอะไรขึ้นกัน?",
+                    "zh-Hans": "怎么回事？",
+                    "zh-Hant": "怎麼回事？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Schon wieder neue Outfits?",
+                    "en": "New outfits again?",
+                    "es": "¿Más disfraces, otra vez?",
+                    "fr": "Encore de nouvelles tenues ?",
+                    "ja": "{Male=また、新しい格好だな……;Female=また、新しい格好ね……}",
+                    "ko": "또 새로운 스타일이네요...",
+                    "th": "ชุดใหม่อีกแล้วเหรอ?",
+                    "zh-Hans": "又换新造型了啊……",
+                    "zh-Hant": "又換新造型了啊……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Eines von uns hat draußen Treibgut gefunden. Wir dachten, wir machen es dir leichter, indem wir es direkt hierherschicken.",
+                "en": "One of us found a castaway outside, and we figured it'd be easier for you if we mailed it straight here.",
+                "es": "Uno de nosotros encontró un náufrago afuera, y pensamos que sería más fácil si lo enviábamos aquí por correspondencia.",
+                "fr": "L'un de nous a trouvé un résidu. On s'est dit qu'il serait plus facile pour toi si on l'envoyait directement ici.",
+                "ja": "ナミポンの内の一人が、外で見つけた漂流物をカフェに送ろうとしたんだ。そうすれば、お客様が探しに出る手間が省けるからね。",
+                "ko": "한 나미폰이 밖에서 찾은 표류물을 카페로 보낸다고 했거든요. 그러니 손님께서 직접 나가서 찾을 필요도 없고요",
+                "th": "มีคนของเราไปเจอวัตถุตกค้างอยู่ข้างนอก และเราก็คิดว่ามันคงจะง่ายสำหรับคุณมากกว่า ถ้าเราส่งไปรษณีย์มาที่ร้านกาแฟ",
+                "zh-Hans": "我们中有个体在外面找到了漂流物，准备寄到咖啡厅来，这样就省得客人再外出寻找了。",
+                "zh-Hant": "我們中有個體在外面找到了漂流物，準備寄到咖啡廳來，這樣就省得客人再外出尋找了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50263,
+                "name": {
+                  "zh-Hans": "波仔速递"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Während der Lieferung bot ein hilfsbereiter Bürger an, es zuzustellen, aber er kam nie an.",
+                "en": "Along the way, a helpful citizen offered to deliver it, but he never showed up.",
+                "es": "Por el camino, un ciudadano muy atento se ofreció a entregar el paquete, pero no apareció nunca.",
+                "fr": "En chemin, un aimable citoyen nous a proposé de s'occuper de la livraison. Mais il n'est jamais venu.",
+                "ja": "途中で親切な市民の人が、荷物を運ぶのを手伝ってくれるって言ってたんだけど……その人がまだ来てなくて。",
+                "ko": "도중에 한 친절한 시민께서 소포 배송을 돕겠다고 하셨는데... 아직까지 오지 않았어요",
+                "th": "ในระหว่างทาง มีพลเมืองดีคนหนึ่งอาสาอยากช่วยส่งพัสดุให้ แต่เขาก็หายไปเลย...",
+                "zh-Hans": "中途有一位热心市民表示愿意帮忙运送包裹，但现在……他一直没有过来。",
+                "zh-Hant": "中途有一位熱心市民表示願意幫忙運送包裹，但現在……他一直沒有過來。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50263,
+                "name": {
+                  "zh-Hans": "波仔速递"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt dubios.",
+                    "en": "That sounds fishy.",
+                    "es": "Uy, qué sospechoso.",
+                    "fr": "Ça ne sent pas bon.",
+                    "ja": "{Male=少し怪しいな。;Female=少し怪しいね。}",
+                    "ko": "좀 수상하네요",
+                    "th": "ฟังดูแปลกๆ นะ",
+                    "zh-Hans": "事情有点蹊跷。",
+                    "zh-Hant": "事情有點蹊蹺。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "… Bist du dir sicher, dass er nur „hilfsbereit“ war?",
+                    "en": "... Are you sure he was just being \"helpful\"?",
+                    "es": "¿Seguro que solo era «atento»?",
+                    "fr": "Vous êtes sûrs qu'il voulait juste vous aider, votre « aimable » citoyen ?",
+                    "ja": "{Male=……本当に、親切心からか？;Female=……本当に、親切心から？}",
+                    "ko": "... 과연 친절한 사람일까요?",
+                    "th": "...คุณแน่ใจนะว่า เขาแค่ \"อยากช่วย\" น่ะ?",
+                    "zh-Hans": "……真的只是因为热心吗？",
+                    "zh-Hant": "……真的只是因為熱心嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das weiß ich nicht … aber ich kann den Standort jedes verlorenen Pakets verfolgen.",
+                "en": "I don't know... but I can track every lost package's location.",
+                "es": "No lo sé, pero puedo rastrear la ubicación de cualquier paquete perdido.",
+                "fr": "Je ne sais pas trop… mais je peux traquer la position de chaque colis perdu.",
+                "ja": "どうだろう……でもナミポンは、失くした荷物の位置を全部特定できるんだよね。",
+                "ko": "잘 모르겠어요... 대신 잃어버린 소포의 위치를 추적할 수 있어요",
+                "th": "ฉันไม่รู้... แต่ฉันสามารถติดตามตำแหน่งพัสดุที่หายไปทุกชิ้นได้",
+                "zh-Hans": "还不清楚……但是，我能定位到每一个丢失包裹的位置哦。",
+                "zh-Hant": "還不清楚……但是，我能定位到每一個遺失包裹的位置喔。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50263,
+                "name": {
+                  "zh-Hans": "波仔速递"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Derzeit befindet es sich irgendwo in der Hanakage-Untergrundpassage. Bitte folge mir!",
+                "en": "Right now, it's sitting deep inside the Hanakage Underground Street. Please come with me!",
+                "es": "Ahora mismo, está en lo más profundo del Pasaje Subterráneo Hanakage. ¡Por favor, ven conmigo!",
+                "fr": "En ce moment, il se trouve dans la rue souterraine Hanakage. Viens avec moi !",
+                "ja": "荷物は花影地下街の奥深くにあるみたい。ナミポンについてきて！",
+                "ko": "소포는 지금 하나카게 지하상가 깊은 곳에 있어요, 절 따라오세요!",
+                "th": "ตอนนี้ มันอยู่ลึกเข้าไปในถนนใต้ดินฮานะคาเงะ ได้โปรดมากับฉันทีสิ!",
+                "zh-Hans": "包裹现在就停留在花影地下街的深处，请跟我来吧！",
+                "zh-Hant": "包裹現在就停留在花影地下街的深處，請跟我來吧！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50263,
+                "name": {
+                  "zh-Hans": "波仔速递"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erkunde Stadt Honami",
+        "en": "Explore Honami City",
+        "es": "Explora la ciudad de Honami.",
+        "fr": "Explorer la ville de Honami",
+        "ja": "穂波市を探索",
+        "ko": "호나미 시 탐색하기",
+        "th": "สำรวจเมืองโฮนามิ",
+        "zh-Hans": "探索穗波市",
+        "zh-Hant": "探索穗波市"
+      },
+      "entities": [
+        {
+          "entityId": 181850009,
+          "mapId": 910,
+          "blueprintType": "Quest094",
+          "name": "第3天传送保底交互",
+          "areaId": 40,
+          "position": {
+            "x": 2230,
+            "y": 4690,
+            "z": 180
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

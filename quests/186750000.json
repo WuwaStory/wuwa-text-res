@@ -1,0 +1,1003 @@
+{
+  "id": 186750000,
+  "key": "2_6狩猎寻痕引导任务",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Zeichen der Wildnis",
+    "en": "Marks of the Wild",
+    "es": "Marcas de lo salvaje",
+    "fr": "Marques sauvages",
+    "ja": "獣痕解析",
+    "ko": "야수의 흔적 분석",
+    "th": "ร่องรอยแห่งพงไพร",
+    "zh-Hans": "兽痕解析",
+    "zh-Hant": "獸痕解析"
+  },
+  "desc": {
+    "de": "Du hast eine neue Nachricht aus der Jägerhöhle erhalten: Bitte untersuche die Spuren, die von den TDs hinterlassen wurden, und verfolge sie.",
+    "en": "You receive a new message from the Hunter's Den: Please examine the traces left by TDs and track them down.",
+    "es": "Has recibido un nuevo mensaje del Refugio de los Cazadores: Por favor, examina las huellas dejadas por las Disonancias Tácitas y rastréalas.",
+    "fr": "Vous avez reçu un message du repaire du chasseur : on vous invite à examiner les traces des Tacets Discords et à les retrouver.",
+    "ja": "狩人のキャンプより：残像が残した痕跡を解析し、獲物の行方を突き止めてください。",
+    "ko": "사냥단 캠프에서 온 새로운 메시지: 잔상이 남긴 흔적을 분석하고, 사냥감의 행방을 찾아보세요",
+    "th": "คุณได้รับข้อความใหม่จากรังของนักล่า: โปรดตรวจสอบร่องรอยที่พวกทาเซ็ตดิสคอร์ดทิ้งไว้ และออกติดตามพวกมัน",
+    "zh-Hans": "狩猎者营地传来新的信息：请你比对残象留下的痕迹，找到猎物的去向。",
+    "zh-Hant": "狩獵者營地傳來新的訊息：請你比對殘象留下的痕跡，找到獵物的去向。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rede mit Dane",
+        "en": "Talk to Dane",
+        "es": "Habla con Dane.",
+        "fr": "Parler à Dane",
+        "ja": "ディアンと会話する",
+        "ko": "데인과 대화하기",
+        "th": "คุยกับ Dane",
+        "zh-Hans": "与迪安对话",
+        "zh-Hant": "與迪安對話"
+      },
+      "entities": [
+        {
+          "entityId": 186750000,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+          "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+          "areaId": 36002,
+          "position": {
+            "x": 1174567,
+            "y": 1307341,
+            "z": 32381
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_6_狩猎寻痕",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Möge dir Applaus entgegenkommen!",
+                "en": "May applause greet you!",
+                "es": "¡Que te reciban los aplausos!",
+                "fr": "Puisse une ovation t'accueillir !",
+                "ja": "咆哮の戦士に祝福を！",
+                "ko": "박수갈채가 영원히 함께하길!",
+                "th": "ขอมอบเสียงกู่ร้องเป็นเกียรติแด่คุณ!",
+                "zh-Hans": "以呼嚎向你致意！",
+                "zh-Hant": "以呼嚎向你致意！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, {Male=Krieger;Female=Kriegerin} … Kenne ich dich von irgendwoher? Hast du am Großen Agon teilgenommen?",
+                "en": "Ah, warrior... Do I know you from somewhere? Did you participate in the Great Agon?",
+                "es": "Oh, {Male=guerrero;Female=guerrera}, me suenas de algo... ¿Puede ser que participaras en el Gran Agón?",
+                "fr": "Ah, {Male=guerrier;Female=guerrière}… On se connait ? Tu n'aurais pas participé au Grand agôn ?",
+                "ja": "あれ、君……どこかで見た顔だな。闘技大会に出てなかったか？",
+                "ko": "당신은... 좀 낯이 익은데, 혹시 최고의 검투 대회에 참가하셨었나요?",
+                "th": "เอ่อ นักรบ... ฉันเคยรู้จักคุณมาก่อนหรือเปล่า? คุณเคยเข้าร่วมมหาศึกอากอนไหม?",
+                "zh-Hans": "这位战士……有点眼熟啊，你是不是参加过大角斗赛？",
+                "zh-Hant": "這位戰士……有點眼熟啊，你是不是參加過大角鬥賽？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Da verwechselst du mich.",
+                    "en": "You've got the wrong person.",
+                    "es": "Te confundes de persona.",
+                    "fr": "Tu dois me confondre avec quelqu'un d'autre.",
+                    "ja": "{Male=人違いだ。;Female=人違いだよ。}",
+                    "ko": "사람 잘못 봤어요",
+                    "th": "ทักผิดคนแล้ว",
+                    "zh-Hans": "你认错了。",
+                    "zh-Hant": "你認錯了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nicht nur das. Ich bin der diesjährige Champion.",
+                    "en": "You're looking at this year's champion.",
+                    "es": "Tienes ante ti {Male=al campeón;Female=a la campeona} de este año.",
+                    "fr": "Je suis {Male=le champion;Female=la championne} de cette année.",
+                    "ja": "{Male=俺が今回のチャンピオンだ。;Female=私が今回のチャンピオンよ。}",
+                    "ko": "제가 바로 이번 대회의 챔피언이에요",
+                    "th": "ฉันนี่แหละแชมป์ปีนี้",
+                    "zh-Hans": "我正是这一届的冠军。",
+                    "zh-Hant": "我正是這一屆的冠軍。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ach so? Warte mal, du bist … Da ist es, du bist Champion des diesjährigen Agons!",
+                "en": "Is that so? Hold on, you must... There it is, you're the champion of this year's Agon!",
+                "es": "¿Seguro? Espera, tú eres... ¡Ya lo sé! ¡Eres {Male=el campeón;Female=la campeona} del Agón de este año!",
+                "fr": "Ah bon ? Attends… Mais oui, je sais, tu es {Male=le champion;Female=la championne} de l'agôn de cette année !",
+                "ja": "そうか？……あ、思い出した。君、今回のチャンピオンだな！",
+                "ko": "그래요? 잠깐만요. 저 생각났어요, 이번 대회의 챔피언이잖아요!",
+                "th": "งั้นเหรอ? เดี๋ยวนะ คุณต้องเป็น... นี่ไง คุณคือแชมป์อากอนของปีนี้นี่นา!",
+                "zh-Hans": "是吗？等等，你就是我想起来了，你不就是这一届的冠军吗！",
+                "zh-Hant": "是嗎？等等，你就是我想起來了，你不就是這一屆的冠軍嗎！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aha, du bist es also wirklich! Deshalb kommst du mir so bekannt vor.",
+                "en": "Aha, so it's you! Thought you looked familiar.",
+                "es": "¡Ajá, eres tú! Sabía que me resultabas familiar.",
+                "fr": "Aha, alors c'est toi ! Je me disais bien que je te connaissais.",
+                "ja": "ああ、道理で見たことがあるわけだ！",
+                "ko": "아, 당신이었군요! 어쩐지 눈에 익다 했어요",
+                "th": "อะฮ่า เป็นคุณนี่เอง! นึกแล้วว่าดูคุ้นหน้าคุ้นตา",
+                "zh-Hans": "啊，原来是你！我就说你怎么这么眼熟。",
+                "zh-Hant": "啊，原來是你！我就說你怎麼這麼眼熟。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin schon so lange in den Jagdgründen unterwegs, da musst du mir verzeihen, dass ich unseren Champion nicht auf Anhieb erkannt habe.",
+                "en": "I've been out here in the hunting grounds for longer than I can remember, so do forgive me for not recognizing our beloved champion at first glance.",
+                "es": "Llevo aquí, en los terrenos de caza, más tiempo del que recuerdo, así que ya me perdonarás por no reconocer a {Male=nuestro querido campeón;Female=nuestra querida campeona} a la primera.",
+                "fr": "Je suis sur les terrains de chasse depuis tellement longtemps, pardonne-moi de ne pas avoir reconnu notre {Male=champion;Female=championne} au premier regard.",
+                "ja": "悪いな。ずっとここにこもってるせいで、外のことに疎いんだ。",
+                "ko": "사냥 평원에 너무 오래 머물렀더니 좀처럼 바깥 출입을 안 하게 되었네요. 우리 용사를 한눈에 알아보지 못한 건 양해해 주세요",
+                "th": "ฉันอยู่ในสนามล่านี่มานานจนลืมไปแล้วว่าอยู่มาตั้งแต่เมื่อไหร่ อย่าถือสาที่ฉันจำแชมป์ที่รักของเราไม่ได้ตั้งแต่แรกเห็นเลยนะ",
+                "zh-Hans": "我在狩原待得太久了，不常出门，没能第一眼认出我们的勇士，见谅。",
+                "zh-Hant": "我在狩原待得太久了，不常出門，沒能第一眼認出我們的勇士，見諒。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nichtsdestotrotz bin ich sehr dankbar, dass du gekommen bist.",
+                "en": "Nevertheless, I am deeply grateful that it was you who showed up.",
+                "es": "No obstante, estoy profundamente agradecido de que hayas aparecido.",
+                "fr": "En tout cas, je suis bien content d'être tombé sur toi.",
+                "ja": "でも……来てくれて助かったよ！",
+                "ko": "아무튼 {PlayerName}, 마침 잘 왔어요",
+                "th": "แต่ยังไงฉันก็ซาบซึ้งใจที่คุณมามากอยู่ดี",
+                "zh-Hans": "总之，来得是你真是太好了。",
+                "zh-Hant": "總之，來得是你真是太好了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wieso das?",
+                    "en": "How so?",
+                    "es": "¿Y eso?",
+                    "fr": "Ah oui ?",
+                    "ja": "{Male=どういうことだ？;Female=どういうこと？}",
+                    "ko": "무슨 일 있으신가요?",
+                    "th": "ไหงงั้นล่ะ?",
+                    "zh-Hans": "为什么这么说？",
+                    "zh-Hant": "為什麼這麼說？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Die Sache ist, wir haben hier ein kleines Problem.",
+                "en": "The thing is, we've run into a bit of trouble.",
+                "es": "La cosa es que tenemos un problemilla.",
+                "fr": "Voilà, on a quelques soucis ici.",
+                "ja": "実はちょっと困ってるんだ。",
+                "ko": "솔직히 지금 좀 골치 아픈 문제가 있어요",
+                "th": "เรื่องก็คือ เรามีปัญหานิดหน่อย",
+                "zh-Hans": "事实上，现在这儿正有点麻烦。",
+                "zh-Hant": "事實上，現在這裡正有點麻煩。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Hochflut hat so viele TDs angezogen, und selbst nachdem sich das Wasser zurückgezogen hat, wollen diese verdammten Dinger einfach nicht verschwinden.",
+                "en": "The High Tide's drawn in so many TDs, and even after it receded, plenty of those bastards still refuse to leave.",
+                "es": "La Marea Alta atrajo tantas DT que tuvimos que retroceder, pero ellas siguen allí.",
+                "fr": "La Marée montante a ramené un paquet de TD, et même maintenant qu'elle s'est retirée, certains de ces salopards refusent de partir.",
+                "ja": "高潮のせいで湧いた残像が、まだこの辺に残ってるんだ。",
+                "ko": "만조 시기에 끌려온 잔상이 워낙 많아서, 시기가 지나간 뒤에도 이곳에 꽤 많이 남아 있어요",
+                "th": "มหาคลื่นดึงดูดทาเซ็ตดิสคอร์ดมามากมาย แม้คลื่นจะลดแล้ว เจ้าพวกนั้นก็ไม่ยอมไปไหนเลย",
+                "zh-Hans": "被涨潮期吸引来的残象太多了，即使是退潮之后，也有不少残象遗留在这里。",
+                "zh-Hant": "被漲潮期吸引來的殘象太多了，即使是退潮之後，也有不少殘象遺留在這裡。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die können wir natürlich nicht einfach hier rumlaufen lassen.",
+                "en": "Can't just leave them running around the place.",
+                "es": "No podemos dejarlas sueltas por ahí.",
+                "fr": "Je ne peux pas les laisser gambader librement.",
+                "ja": "こんな危険な状況を放ってはおけない。",
+                "ko": "위험한 놈들을 이대로 내버려둘 순 없어요",
+                "th": "คงจะปล่อยพวกมันเพ่นพ่านอยู่ที่นี่ไม่ได้หรอกนะ",
+                "zh-Hans": "不能放任这些危险的家伙乱跑。",
+                "zh-Hant": "不能放任這些危險的傢伙亂跑。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist ein potenzielles Risiko.",
+                    "en": "That's a potential risk.",
+                    "es": "Son un riesgo potencial.",
+                    "fr": "Ça représente un risque, effectivement.",
+                    "ja": "{Male=確かに危ない。;Female=確かに危ない。}",
+                    "ko": "확실히 위험하네요",
+                    "th": "อาจเกิดอันตรายได้เลยนะ",
+                    "zh-Hans": "这很危险。",
+                    "zh-Hant": "這很危險。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Zählen die nicht als Ziele für die Jagd?",
+                    "en": "Do they not count as targets for a hunt?",
+                    "es": "¿No son objetivos para una cacería?",
+                    "fr": "Ils ne peuvent pas servir de cible pour la chasse ?",
+                    "ja": "{Male=それは狩猟対象じゃないのか？;Female=それは狩猟対象じゃないの？}",
+                    "ko": "이것도 사냥이라고 할 수 있지 않을까요?",
+                    "th": "พวกนี้ไม่นับเป็นเป้าในการล่าเหรอ?",
+                    "zh-Hans": "这不算在狩猎的范围内吗？",
+                    "zh-Hant": "這不算在狩獵的範圍內嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Stimmt genau. Ein echter Krieger sorgt dafür, dass seine Klinge immer scharf ist, auch nach der Jagd.",
+                "en": "Exactly. A true warrior should always keep their blade sharpened, even after a hunt.",
+                "es": "Ahí está el tema. Un auténtico guerrero debe mantener su espada siempre afilada, incluso después de una cacería.",
+                "fr": "Exactement. La lame d'un véritable guerrier doit toujours être affûtée, même après une partie de chasse.",
+                "ja": "ああ、そうだ。戦が終わったからってすぐ気を抜くようじゃ、一人前とは言えないぜ。",
+                "ko": "맞아요. 어엿한 전사라면 사냥이 끝나도 방심하면 안 되죠",
+                "th": "ใช่เลย นักรบที่แท้จริงต้องลับดาบให้คมอยู่เสมอ แม้การล่าจะจบไปแล้วก็เถอะ",
+                "zh-Hans": "没错。一个合格的战士，不该在狩猎结束后，就放松警惕。",
+                "zh-Hant": "沒錯。一個合格的戰士，不該在狩獵結束後，就放鬆警惕。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese Jagd ist schon vorbei, und die TDs sind nicht mehr als ein paar verstreute Brotkrumen, die es nicht mal auf die Liste schaffen. Trotzdem stellen sie eine Gefahr dar.",
+                "en": "The hunt this round's already wrapped up, and these TDs are just scattered breadcrumbs that can't even make the list. Yet, they still pose a threat.",
+                "es": "Cuando terminó la última cacería, esas DT quedaron vivas. Son solo migajas, pero aun así, podrían suponer una amenaza.",
+                "fr": "Le tour de chasse est déjà terminé, et ces TD ne sont que des restes trop minables pour compter. Mais ils représentent tout de même un risque.",
+                "ja": "「狩猟」と呼ぶには相応しくない逃げ残りだけど……こいつらも牙を剥いてくる危険な奴らさ。",
+                "ko": "사냥은 이미 끝났으며 이들은 그저 잔상 중 잔당에 불과하고 사냥이라 부를 자격조차 없지만 그래도 여전히 위험해요",
+                "th": "การล่ารอบนี้สิ้นสุดลงแล้ว ทาเซ็ตดิสคอร์ดพวกนี้เป็นแค่พวกเศษเหลือๆ ที่จัดเข้ารายการไม่ได้ด้วยซ้ำน่ะนะ แต่ก็ยังเป็นภัยคุกคามอยู่ดี",
+                "zh-Hans": "狩猎已经结束，这些只是残象里的逃兵，配不上狩猎之名，但它们仍然危险。",
+                "zh-Hant": "狩獵已經結束，這些只是殘象裡的逃兵，配不上狩獵之名，但它們仍然危險。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Gelände ist ziemlich unübersichtlich. Du musst die Augen schon offen halten, bevor der ganze Spaß losgeht.",
+                "en": "The surrounding terrain is complex, so you'll need to keep a watchful eye before the real action starts.",
+                "es": "El terreno colindante es complicado, así que hay que estar atento antes de que empiece otra vez el jaleo.",
+                "fr": "Le terrain ici est complexe, il faudra donc faire preuve de vigilance avant que la véritable partie commence.",
+                "ja": "しかもこの地形だ……戦う前に、しっかりと見極める必要がある。",
+                "ko": "이 근처 지형은 복잡해서 전투 실력보다 눈썰미가 중요해요",
+                "th": "ภูมิประเทศแถบนี้มีความซับซ้อน คุณต้องระวังให้ดีก่อนเกิดการปะทะจริงด้วยล่ะ",
+                "zh-Hans": "这附近地貌复杂，在考验战斗技艺之前，首先考验的，是我们的眼力。",
+                "zh-Hant": "這附近地貌複雜，在考驗戰鬥技藝之前，首先考驗的，是我們的眼力。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein TD-Jäger muss die Augen eines Adlers haben und die Tapferkeit eines Löwen.",
+                "en": "A TD hunter must have eyes as sharp as an eagle's, and the explosive prowess of a lion.",
+                "es": "Un cazador de DT debe tener los ojos alerta de un águila y la destreza explosiva de un león.",
+                "fr": "{Male=Un chasseur;Female=Une chasseuse} de TD doit avoir l'œil aussi perçant que l'aigle, et le cœur aussi brave qu'un lion.",
+                "ja": "残像狩りには、鷲のような眼と、獅子のような強さが求められるんだ！",
+                "ko": "잔상 사냥꾼은 독수리처럼 날카로운 눈과 사자 같은 민첩함, 그리고 용맹함을 갖춰야 하죠!",
+                "th": "นักล่าทาเซ็ตดิสคอร์ดต้องมีสายตาแหลมคมดุจเหยี่ยว และดุดันดุจราชสีห์",
+                "zh-Hans": "一个残象狩猎者，要有鹫鸟般锐利的眼睛，和狮子般的迅捷武勇！",
+                "zh-Hant": "一個殘象狩獵者，要有鷲鳥般銳利的眼睛，和獅子般的迅捷武勇！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Spüren wir sie nur auf?",
+                    "en": "Are we just tracking them down?",
+                    "es": "Entonces, ¿solo rastreamos?",
+                    "fr": "Il s'agit juste de les traquer ?",
+                    "ja": "{Male=ただの痕跡調査？;Female=ただの痕跡調査？}",
+                    "ko": "흔적만 추적하는 건가요?",
+                    "th": "เราแค่ตามรอยพวกมันเหรอ?",
+                    "zh-Hans": "只是追寻痕迹吗？",
+                    "zh-Hant": "只是追尋痕跡嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das Aufspüren von TDs ist eine anspruchsvolle Aufgabe. Ein kleiner Fehler und schon entwischt dir deine Beute.",
+                "en": "TD tracking is a skill-demanding work. A slight lapse in judgment and your prey will slip through your fingers.",
+                "es": "Rastrear DT es un trabajo que exige habilidad. Un pequeño error de juicio y te quedas sin presa.",
+                "fr": "La traque de TD requiert des compétences. Il suffit d'une petite erreur de jugement pour que la proie te glisse entre les doigts.",
+                "ja": "残像の痕跡を探すにも、ちゃんとした技術がいる。見誤ったら最後、あっという間に取り逃がす。",
+                "ko": "잔상의 흔적을 추적하는 건 참 심오한 기술이에요. 자칫 잘못 판별하면 잔상이 손가락 사이로 빠져나갈 수도 있어요",
+                "th": "การตามรอยทาเซ็ตดิสคอร์ดต้องใช้ทักษะสูงมากเลยนะ ตัดสินใจพลาดแค่ชั่ววูบอาจทำให้เหยื่อพ้นมือไปได้",
+                "zh-Hans": "追寻残象的痕迹可是一门高深的技术。一旦判别失误，残象就会从你的手下溜走。",
+                "zh-Hant": "追尋殘象的痕跡可是一門高深的技術。一旦判別失誤，殘象就會從你的手下溜走。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings ist mir aufgefallen, dass du schon seit deiner Ankunft die Spuren in der Nähe unter die Lupe nimmst. Du scheinst Erfahrung damit zu haben?",
+                "en": "However, I notice you've been probing the nearby traces ever since you arrived. I take it you've got some experience in this?",
+                "es": "De todas formas, he visto que tú ya examinas las huellas próximas. Tu experiencia te delata.",
+                "fr": "Mais j'ai remarqué que tu scrutais les empreintes à proximité depuis ton arrivée. J'imagine que tu as de l'expérience dans le domaine ?",
+                "ja": "……でも君、さっきから、やたら地面を見てたな？さては何か心得があるんだな。",
+                "ko": "하지만 방금 근처에 있는 흔적을 계속 쳐다보시던 걸 보면 경험이 있으신가 봐요",
+                "th": "ยังไงก็เถอะ ฉันเห็นว่าคุณสืบหาร่องรอยที่อยู่แถบนั้นตั้งแต่มาถึงแล้ว คงมีประสบการณ์อยู่บ้างใช่ไหมล่ะ?",
+                "zh-Hans": "不过，你刚刚一直盯着附近的痕迹看，好像是有点经验啊？",
+                "zh-Hant": "不過，你剛剛一直盯著附近的痕跡看，好像有點經驗呢？"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich weiß das eine oder andere übers Jagen.",
+                    "en": "I may know a thing or two about hunting.",
+                    "es": "Puede que me suene alguna cosa sobre la caza.",
+                    "fr": "Je m'y connais un peu en termes de chasse.",
+                    "ja": "{Male=狩りのコツくらいは知ってる。;Female=狩りの基本くらいはわかってるよ。}",
+                    "ko": "사냥 기술에 대해 조금 알고 있어요",
+                    "th": "ก็พอรู้เรื่องการล่าอยู่บ้าง",
+                    "zh-Hans": "略通狩猎技巧。",
+                    "zh-Hant": "略通狩獵技巧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe bereits die Genehmigung der Jägergilde.",
+                    "en": "I've already gotten approval from the Hunter's Guild.",
+                    "es": "Cuento con la aprobación del Gremio de Cazadores.",
+                    "fr": "J'ai déjà reçu l'approbation de la guilde des chasseurs.",
+                    "ja": "{Male=もうギルドの狩猟許可取ってる。;Female=もうギルドから狩猟許可もらってるよ。}",
+                    "ko": "저는 이미 프로 조합의 사냥 허가를 받았어요",
+                    "th": "ฉันได้รับการอนุมัติจากสมาคมนักล่าแล้ว",
+                    "zh-Hans": "我已经取得公会的狩猎许可了。",
+                    "zh-Hant": "我已經取得公會的狩獵許可了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Haha. Mein Jagdinstinkt ist immer noch so gut wie früher.",
+                "en": "Haha. My hunter's instincts are still as sharp as they were.",
+                "es": "¡Ja! Mi instinto de cazador sigue igual de perspicaz.",
+                "fr": "Haha, mon instinct de chasseur fait encore des merveilles.",
+                "ja": "ははっ、俺の狩人センスも捨てたもんじゃないな。",
+                "ko": "하하, 사냥꾼으로서 제 촉도 예리한 편이죠",
+                "th": "ฮ่าๆ สัญชาตญาณนักล่าของฉันยังเฉียบคมเหมือนเคย",
+                "zh-Hans": "哈哈，我作为猎人的直觉还是蛮有用的嘛。",
+                "zh-Hant": "哈哈，我作為獵人的直覺還是蠻有用的嘛。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Genehmigung der Jägergilde? Ist die neu? Meine Güte, ich bin wohl schon zu lange hier draußen.",
+                "en": "Approval from the Hunter's Guild? Is that something new they're doing now? Goodness, I've been here for too long.",
+                "es": "¿Aprobación del Gremio de Cazadores? ¿Eso qué es, una novedad de ahora? Dios mío, llevo demasiado tiempo aquí.",
+                "fr": "L'approbation de la guilde des chasseurs ? C'est nouveau, ça ? Bon sang, ça fait trop longtemps que je traîne ici.",
+                "ja": "狩猟許可？俺がこもってる間に、そんな制度ができてたのか。",
+                "ko": "사냥 허가? 사냥 평원에서 오랫동안 벗어나질 않았더니, 그런 신기한 게 다 생겼군요",
+                "th": "ได้รับการอนุมัติจากสมาคมนักล่างั้นเหรอ? น่าจะเป็นเรื่องใหม่หรือเปล่า? ให้ตาย ฉันอยู่ที่นี่นานเกินไปแล้ว",
+                "zh-Hans": "狩猎许可？太久没出狩原了，还有这种新奇东西。",
+                "zh-Hant": "狩獵許可？太久沒出狩原了，還有這種新奇東西。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also dann, lasst die Jagd beginnen!",
+                "en": "Well then, without further ado, let the hunt begin!",
+                "es": "Bueno, basta de preámbulos, ¡cacemos!",
+                "fr": "Eh bien alors, que la chasse commence !",
+                "ja": "よし、話はこれくらいにして……早速狩りを始めようぜ！",
+                "ko": "서둘러서 바로 사냥을 시작해요!",
+                "th": "งั้นเพื่อไม่เป็นการเสียเวลา เริ่มการล่าได้เลย!",
+                "zh-Hans": "事不宜迟，立刻开始狩猎吧！",
+                "zh-Hant": "事不宜遲，立刻開始狩獵吧！"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Möge der Ruhm mit uns sein, {Male=mein Freund;Female=meine Freundin}!",
+                "en": "May glory be with us, my friend!",
+                "es": "¡Que la gloria nos acompañe, {Male=amigo mío;Female=amiga mía}!",
+                "fr": "Que la gloire nous accompagne, {Male=mon ami;Female=mon amie} !",
+                "ja": "戦友よ、栄光は俺たちとともにある！",
+                "ko": "나의 친구여, 영광이 우리와 함께하길!",
+                "th": "ขอเกียรติยศจงอยู่คู่เรา สหาย!",
+                "zh-Hans": "我的朋友，荣耀将与我们同在！",
+                "zh-Hant": "我的朋友，榮耀將與我們同在！"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750170,
+                "name": {
+                  "zh-Hans": "迪安"
+                },
+                "entity": {
+                  "entityId": 186750000,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_18",
+                  "name": "TsEntity_TN_B2_6_七丘_MaleM_JDS2_迪安",
+                  "areaId": 36002,
+                  "position": {
+                    "x": 1174567,
+                    "y": 1307341,
+                    "z": 32381
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

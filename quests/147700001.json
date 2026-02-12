@@ -1,0 +1,371 @@
+{
+  "id": 147700001,
+  "key": "教会商店",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Brot und heilige Rituale",
+    "en": "Bread and Holy Rituals",
+    "es": "Pan y rituales sagrados",
+    "fr": "Le pain et le rite",
+    "ja": "パンと聖事",
+    "ko": "빵과 성스러운 의식",
+    "th": "ขนมปังและพิธีศักดิ์สิทธิ์",
+    "zh-Hans": "面包与圣事",
+    "zh-Hant": "麵包與聖事"
+  },
+  "desc": {
+    "de": "Butler der Betreuer scheint sich Sorgen um die Akolythen im Fabrikatorium der Tiefe zu machen. Sprich mit ihm und frage, was ihn belastet.",
+    "en": "Butler the Steward seems troubled about taking care of the Acolytes in the Fabricatorium of the Deep. Talk to him and learn what's weighing on his mind.",
+    "es": "Butler, el mayordomo parece preocupado por cuidar a los acólitos en el Fabricatorium Abisal. Háblale y descubre qué le está preocupando.",
+    "fr": "Butler, le « Serviteur » semble préoccupé par le soin des Acolytes dans le Fabricatorium des Profondeurs. Parlez-lui pour découvrir ce qui le tracasse.",
+    "ja": "「輔祭」のバデリは、隠海実験場で暮らす侍祭たちの生活をどう支えるかに悩んでいるようだ。詳しく聞いてみよう。",
+    "ko": "「시종」 베르톨리가 깊은 바다 실험장에서 생활하는 성직자들을 돌보는 일에 대해 걱정하고 있다. 그를 찾아가 걱정하는 이유에 대해 물어보자",
+    "th": "Butler \"ผู้ดูแล\" กำลังกังวลเรื่องการดูแลเหล่านักบวชที่อาศัยอยู่ในศูนย์ทดลองเร้นสมุทร ไปถามเขาว่ากังวลอะไรอยู่",
+    "zh-Hans": "「服事人」巴德勒正为照顾生活于隐海试验场中的教士们而担忧，去问问他到底因何担忧吧。",
+    "zh-Hant": "「服事人」巴德勒正為照顧生活於隱海試驗場中的教士們而擔憂，去問問他到底因何擔憂吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rede mit dem Akolyth",
+        "en": "Talk to the Acolyte",
+        "es": "Habla con el acólito.",
+        "fr": "Parler à l'Acolyte",
+        "ja": "侍祭と会話する",
+        "ko": "성직자와 대화하기",
+        "th": "คุยกับนักบวช",
+        "zh-Hans": "与教士对话",
+        "zh-Hant": "與教士對話"
+      },
+      "entities": [
+        {
+          "entityId": 147700048,
+          "mapId": 905,
+          "blueprintType": "branch2.0_NPC346",
+          "name": "TsEntity_157_教廷教士男5",
+          "areaId": 3208,
+          "position": {
+            "x": -221801,
+            "y": -15996,
+            "z": -44389
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -29
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_5_支线_教会商店",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Warte, nein ... Wie öffne ich das nur ...",
+                "en": "Wait, no... How do I open it...",
+                "es": "Espera, no... ¿Cómo lo abro...?",
+                "fr": "Attends… Non… Mais comment…",
+                "ja": "これも違う......開けるには......",
+                "ko": "아니야... 열 수 있는 방법이...",
+                "th": "เดี๋ยวนะ ไม่... เปิดยังไงเนี่ย...",
+                "zh-Hans": "不对……打开的办法是……",
+                "zh-Hant": "不對……打開的辦法是……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist denn hier los?",
+                    "en": "What's going on?",
+                    "es": "¿Qué está pasando?",
+                    "fr": "Qu'est-ce qui ne va pas ?",
+                    "ja": "{Male=何をしてるんだ？;Female=何をしてるの？}",
+                    "ko": "뭐 하세요?",
+                    "th": "เกิดอะไรขึ้น?",
+                    "zh-Hans": "你在做什么？",
+                    "zh-Hant": "你在做什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich sammle Heiliges Salz für zukünftige Zwecke.",
+                "en": "I'm collecting Sacred Salt for future needs.",
+                "es": "Estoy recolectando Sales sagradas para necesidades futuras.",
+                "fr": "Je récolte du Sel Sacré, au cas où il serait nécessaire un jour.",
+                "ja": "次に使う「潮汐聖塩」を集めています。",
+                "ko": "다음번에 사용할 「조수 성염」을 수집하고 있어요",
+                "th": "ผมกำลังรวบรวมเกลือศักดิ์สิทธิ์ไว้ใช้ในอนาคตน่ะ",
+                "zh-Hans": "收集下一次要用的「潮汐圣盐」。",
+                "zh-Hant": "收集下一次要用的「潮汐聖鹽」。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Betreuer darf keinen Fehler machen. Ich muss sehr auf das Wohlergehen der Akolythen achten.",
+                "en": "There is no room for errors in the work of a Steward. I must take great care of the Acolytes' welfare.",
+                "es": "No hay margen para errores en el trabajo de un Mayordomo. Debo cuidar mucho del bienestar de los acólitos.",
+                "fr": "Le travail du « Serviteur » ne peut souffrir la moindre erreur. C'est moi qui m'occupe des besoins des acolytes.",
+                "ja": "「輔祭」である以上、ミスは許されません。<ano=わたくし>私</ano>は......ここで暮らす侍祭たちの暮らしを守る責任がありますから。",
+                "ko": "「시종」은 실수를 해선 안돼요. 저는... 이곳 성직자들의 식사와 생활을 제대로 책임져야 하니까요",
+                "th": "ทำงานเป็นผู้ดูแลนี่ผิดพลาดไม่ได้เลย ผมต้องคอยดูแลสวัสดิการของนักบวชให้มากๆ",
+                "zh-Hans": "「服事人」不能出错，我要……好好负责此地教士们的饮食起居。",
+                "zh-Hant": "「服事人」不能出錯，我要……好好負責此地教士們的飲食起居。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Märtyrer haben alles für das Wohl von Ragunna geopfert. Selbst wenn sie scheitern, haben sie das Recht, ihre verbleibenden Tage in Frieden zu verbringen ...",
+                "en": "The martyrs sacrificed everything for the cause of saving Ragunna. Even in failure, they are entitled to live out their days in peace...",
+                "es": "Los mártires sacrificaron todo por la causa de salvar a Raguna. Incluso en el fracaso, tienen derecho a vivir sus días en paz...",
+                "fr": "Ces martyrs ont tout sacrifié pour sauver Ragunna. Même s'ils ont échoué, ils ont le droit de vivre paisiblement jusqu'à leurs derniers instants…",
+                "ja": "殉教者たちは皆、ラグーナを救うために、己の全てを犠牲にしました。たとえ失敗したとしても、穏やかに暮らす権利はあるはずです......",
+                "ko": "순교자들은 자신의 모든 것을 바쳐 스스로 라군나를 구하는 길을 걸었어요. 실패했더라도, 평화롭게 살아갈 권리가 있으니까요...",
+                "th": "พวกมรณสักขียอมสละทุกอย่างเพื่อช่วยรากูนน่า ถึงจะล้มเหลว แต่พวกเขาก็มีสิทธิ์ที่จะมีชีวิตสงบสุข...",
+                "zh-Hans": "殉道者们牺牲了自己的一切，自愿加入拯救拉古那的行动中，即便失败了，也应有权继续安然地生活下去……",
+                "zh-Hant": "殉道者們犧牲了自己的一切，自願加入拯救拉古那的行動中，即便失敗了，也應有權繼續安然地生活下去……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das Heilige Salz ist also für sie bestimmt?",
+                    "en": "So the Sacred Salt is for them?",
+                    "es": "¿Entonces la Sal sagrada es para ellos?",
+                    "fr": "Le Sel Sacré est donc pour eux ?",
+                    "ja": "{Male=「潮汐聖塩」は彼らのために用意しているのか？;Female=「潮汐聖塩」は彼らのために用意しているの？}",
+                    "ko": "「조수 성염」은 그들을 위해 준비한 건가요？",
+                    "th": "งั้นเกลือศักดิ์สิทธิ์นี่ก็สำหรับพวกเขาเหรอ?",
+                    "zh-Hans": "「潮汐圣盐」是为他们准备的？",
+                    "zh-Hant": "「潮汐聖鹽」是為他們準備的？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. In diesem gesegneten Land gilt alles, was nicht vom Segen des Hütenden berührt wurde, als befleckt und verflucht – möglicherweise vom Threnodianer.",
+                "en": "Yes. For they hold onto the belief that anything untouched by the Sentinel's grace on this blessed land could be potentially tainted or cursed by the Threnodian.",
+                "es": "Sí. Porque mantienen la creencia de que todo lo que no ha sido tocado por la gracia del Centinela en esta tierra bendita podría estar potencialmente contaminado o maldito por los Trenodianos.",
+                "fr": "Oui. Ils croyaient que, sur cette terre bénie, tout être n'ayant pas reçu la bénédiction de la Sentinelle pouvait être corrompu par la malédiction du Réprimantum.",
+                "ja": "ええ。彼らは、歳主の祝福を賜っていない外界の物は全て、鳴式に穢され、呪われた不浄の物なのだと考えているのです。",
+                "ko": "네, 이 축복받은 땅에서, 그들은 수호신의 은혜를 받지 못한 외부의 물건은 전부 명식의 오염과 저주가 깃든 부정물이라 여기거든요",
+                "th": "ครับ เพราะพวกเขายึดมั่นในความเชื่อว่า อะไรที่ความกรุณาของเทพผู้พิทักษ์ไม่แตะต้องในดินแดนที่ได้รับการประสาทพรนี้ อาจแปดเปื้อนหรือโดนเธรโนเดียนสาป",
+                "zh-Hans": "是的。他们在这片福地中，执着地认为凡是未受岁主赐福的外来物，皆为隐含鸣式污染与诅咒的不净之物。",
+                "zh-Hant": "是的。他們在這片福地中，執著地認為凡是未受歲主賜福的外來物，皆為隱含鳴式汙染與詛咒的不淨之物。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deshalb verwende ich Heiliges Salz, um alle Vorräte vor ihren Augen zu reinigen und zu weihen.",
+                "en": "That's why I would perform cleansing and consecration rites with Sacred Salt on all provisions before their eyes.",
+                "es": "Por eso realizo rituales de purificación y consagración con Sal sagrada en todas las provisiones ante sus ojos.",
+                "fr": "C'est pourquoi je les purifie et les consacre avec le Sel Sacré, devant eux, avant de leur distribuer les provisions.",
+                "ja": "ですから、「潮汐聖塩」を使い、彼らの前で物資を浄化して祝福を与えるのです。",
+                "ko": "그래서 저는 「조수 성염」을 이용해, 그들 앞에서 모든 물자에 세례식과 축성식을 진행하죠",
+                "th": "ผมเลยต้องใช้เกลือศักดิ์สิทธิ์ทำพิธีกรรมชำระล้างและอุทิศตนกับเสบียงทุกอย่างต่อหน้าพวกเขา",
+                "zh-Hans": "所以我会借助「潮汐圣盐」，在他们面前对所有物资进行施洗与祝圣。",
+                "zh-Hant": "所以我會借助「潮汐聖鹽」，在他們面前對所有物資進行施洗與祝聖。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn Mahlzeiten zu Sakramenten für Körper und Seele werden und gewöhnliche Getränke sich in heiliges Blut verwandeln, das den Geist öffnet, gibt es für sie keinen Grund abzulehnen.",
+                "en": "To lead them into thinking they're taking the Divinity's nurturing meal, drinking holy blood that grants enlightenment. So they have no reason to refuse.",
+                "es": "Para hacerles creer que están tomando la comida nutritiva de la Divinidad, bebiendo sangre sagrada que otorga iluminación. Así no tienen razón para rechazarlo.",
+                "fr": "Ainsi, ils croient recevoir une nourriture divine, comme s'ils buvaient le sang sacré qui accorde l'illumination. Et ils n'ont aucune raison de la refuser.",
+                "ja": "そうすれば、食事は癒しの聖餐、ワインや水は知恵を授ける御血として受け入れてくれますので。",
+                "ko": "일반 음식은 몸과 마음을 치유하는 성찬이 되고, 평범한 술은 정신을 차리게 만드는 성혈이 되죠. 이렇게 하면 그들도 안심하고 받아들일 수 있어요",
+                "th": "เพื่อให้พวกเขาคิดว่าตัวเองกำลังกินอาหารบำรุงร่างกายจากเทพเจ้า ดื่มโลหิตศักดิ์สิทธิ์อันนำมาซึ่งความตื่นรู้ พวกเขาจะได้หาอะไรมาปฏิเสธไม่ได้",
+                "zh-Hans": "普通餐食将是疗愈身心的圣餐，寻常酒水即是启迪灵智的圣血，这样他们就会安心接受了。",
+                "zh-Hant": "普通餐食將是療癒身心的聖餐，尋常酒水即是啟迪靈智的聖血，這樣他們就會安心接受了。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber in letzter Zeit geht uns das Heilige Salz aus. Als Akolyth der Sakramentsdisziplin, ich ...",
+                "en": "But lately, we are running short on Sacred Salt. As an Acolyte of the Ministry of Holy Rituals, I...",
+                "es": "Pero últimamente, nos estamos quedando sin Sal sagrada. Como acólito del Ministerio de los Rituales Sagrados, yo...",
+                "fr": "Malheureusement, le Sel Sacré vient à manquer, dernièrement. En tant qu'acolyte du Ministère des Rituels Sacrés, je dois…",
+                "ja": "しかし、最近「潮汐聖塩」が足りておらず......聖事部の輔祭として、<ano=わたくし>私</ano>は......",
+                "ko": "하지만 요즘 「조수 성염」이 점점 부족해지고 있어요... 성사성의 성직자인 전...",
+                "th": "แต่ช่วงนี้เกลือศักดิ์สิทธิ์เราขาดครับ ในฐานะของนักบวชแห่งกระทรวงพิธีศักดิ์สิทธิ์แล้ว ผม...",
+                "zh-Hans": "不过，最近「潮汐圣盐」出现了短缺的情况……作为圣事部的教士，我……",
+                "zh-Hant": "不過，最近「潮汐聖鹽」出現了短缺的情況……作為聖事部的教士，我……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Er wirkt auch etwas geistig angeschlagen ... Besser, wir drängen ihn nicht. Wir sollten einen Weg finden, ihm zu helfen.)",
+                "en": "(He seems a bit unsettled too... Best not to push him. We should figure out a way to help.)",
+                "es": "(Parece un poco extraño también... Mejor no presionarlo. Debemos encontrar una forma de ayudar.)",
+                "fr": "(Il a l'air troublé… Mieux vaut ne pas insister. Peut-être devrais-je trouver un moyen de l'aider.)",
+                "ja": "（少し様子がおかしい。あまり刺激せずに、解決策を考えてみよう。）",
+                "ko": "(그의 정신 상태가 약간 이상해 보여. 괜히 자극하지 말고, 그를 도와 방법을 찾아보자)",
+                "th": "(เขาเองดูกระวนกระวายเหมือนกัน... อย่าไปกดดันจะดีที่สุด เราควรคิดหาทางช่วยนะ)",
+                "zh-Hans": "（他的精神似乎也有些轻微的异常，还是不要刺激他了，帮他想想解决的办法试试。）",
+                "zh-Hant": "（他的精神似乎也有些輕微的異常，還是不要刺激他了，幫他想想解決的辦法試試。）"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Hat der Orden diese Situation vorausgesehen?",
+                    "en": "Did the Order anticipate this situation?",
+                    "es": "¿La Orden anticipó esta situación?",
+                    "fr": "L'Ordre a-t-il prévu cela ?",
+                    "ja": "{Male=教団はこうなることを想定して、何か手を打ったのか？;Female=教団はこうなることを想定して、何か手を打ったの？}",
+                    "ko": "수도회에서 혹시 이런 상황에 대비해 둔 게 있을까요?",
+                    "th": "ทางภาคีได้คาดการณ์สถานการณ์นี้ไว้รึเปล่า?",
+                    "zh-Hans": "修会有为这种情况早做准备吗？",
+                    "zh-Hant": "修會有為這種情況早做準備嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, ja. Wir haben etwas Heiliges Salz im Fabrikatorium für solche Fälle zurückgelegt. Es befindet sich in den Triptychon-Truhen und an anderen Orten ...",
+                "en": "Ah, yes. We've set aside some Sacred Salt in the Fabricatorium for times like this. It's kept in the Triptych Chests and other places...",
+                "es": "Ah, sí. Hemos apartado algo de Sal sagrada en el Fabricatorium para momentos como este. Se guarda en los Cofres trípticos y otros lugares...",
+                "fr": "Ah, oui. Nous avons stocké du Sel Sacré au Fabricatorium, en \nprévision de ce genre de situation dans les Coffres triptyques,\nentre autres emplacements...",
+                "ja": "ええ......実験場の各所に、予備用の「潮汐聖塩」が保存されています。聖物箱の中や、他の場所にも。",
+                "ko": "네... 있어요. 실험장 안에 저장된 예비용 「조수 성염」이 남아 있어요. 신성한 상자 안에도 있고... 그 외 장소에도 있고... 엄청 많아요...",
+                "th": "อ๋อ ครับ เรากันเกลือศักดิ์สิทธิ์ส่วนหนึ่งจากในศูนย์ทดลองเอาไว้เผื่อเวลาแบบนี้ จะอยู่ในหีบภาพสามตอนกับที่อื่นๆ...",
+                "zh-Hans": "嗯……有的，试验场里存放着留作备用的「潮汐圣盐」。它们在许多地方，圣箱里有，还有其他地方……",
+                "zh-Hant": "嗯……有的，試驗場裡存放著留作備用的「潮汐聖鹽」。它們在許多地方，聖箱裡有，還有其他地方……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Findest du welches, bring es mir. Dafür bekommst du etwas Schönes von mir. Bist du dabei?",
+                "en": "If you happen upon any, bring it to me. I'll offer you plenty in return. What do you think?",
+                "es": "Si la encuentras, tráemela. Te daré suficiente a cambio. ¿Qué opinas?",
+                "fr": "Si tu le retrouves, apporte-le-moi, et je t'offrirai une généreuse récompense. Qu'en dis-tu ?",
+                "ja": "もし見つけたら、集めて<ano=わたくし>私</ano>のところに持ってきていただけませんか。お礼に、ご満足いただける報酬を差し上げます。いかがでしょう？",
+                "ko": "혹시 발견하시면, 수집해서 저에게 가져다주실 수 있을까요? 보답으로 넉넉한 물자를 나누어 드릴게요. 어때요?",
+                "th": "ถ้าคุณบังเอิญเจอ เอามาให้ผมหน่อยนะครับ ผมจะตอบแทนอย่างงามเลย ตกลงมั้ยครับ?",
+                "zh-Hans": "如果你见到了，可以收集起来带给我，我与你分享充足的物什作为答谢，怎么样？",
+                "zh-Hant": "如果你見到了，可以收集起來帶給我，我與你分享充足的物什作為答謝，怎麼樣？"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 300067,
+                "name": {
+                  "zh-Hans": "巴德勒"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Abgemacht.",
+                    "en": "It's a deal.",
+                    "es": "Es un trato.",
+                    "fr": "Marché conclu.",
+                    "ja": "{Male=その話乗った。;Female=その話乗ったわ。}",
+                    "ko": "알겠어요",
+                    "th": "ตามนั้น",
+                    "zh-Hans": "一言为定。",
+                    "zh-Hant": "一言為定。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

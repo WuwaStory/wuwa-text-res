@@ -1,0 +1,128 @@
+{
+  "id": 30000013,
+  "key": "清场 - 排除自身和其他任务实体",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30000375,
+          "mapId": 100,
+          "blueprintType": "NPC002",
+          "name": "TsEntity_121_002_皇龙小孩12",
+          "areaId": 0,
+          "position": {
+            "x": -58160,
+            "y": 20400,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 30000316,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "NPC_清场_排除其他任务实体",
+          "areaId": 0,
+          "position": {
+            "x": -53540,
+            "y": 16430,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_测试_GBL",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Erfolgreich interagiert",
+                "es": "\\testÉxito en la interacción",
+                "zh-Hans": "\\test交互成功"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 14,
+                "name": {
+                  "zh-Hans": "阿诚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

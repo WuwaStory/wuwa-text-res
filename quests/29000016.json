@@ -1,0 +1,243 @@
+{
+  "id": 29000016,
+  "key": "test/交付不同的道具不同分支流程",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 29000195,
+          "mapId": 100,
+          "blueprintType": "NPC001",
+          "name": "TsEntity_121_001_皇龙小孩3",
+          "areaId": 0,
+          "position": {
+            "x": -15070,
+            "y": -38990,
+            "z": 10
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 20,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Gegrillte Spieße sind lecker.",
+                "es": "Los pinchos son deliciosos",
+                "zh-Hans": "烤串好吃",
+                "zh-Hant": "烤串好吃"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 20,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Fladenbrote schmecken nicht gut.",
+                "es": "El pan plano no es delicioso",
+                "zh-Hans": "锅盔不好吃",
+                "zh-Hant": "鍋盔不好吃"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 20,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Der kalte Salat mit Perilla schmeckt nicht gut.",
+                "es": "El ensalada de perifollo no es delicioso",
+                "zh-Hans": "凉拌香苏不好吃",
+                "zh-Hant": "凉拌香蘇不好吃"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "parentId": 15,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 15,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 15,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 16,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 20,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Gegrillte Spieße sind lecker.",
+                "es": "Los pinchos son deliciosos",
+                "zh-Hans": "烤串好吃",
+                "zh-Hant": "烤串好吃"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "parentId": 18,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 20,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Fladenbrote schmecken nicht gut.",
+                "es": "El pan plano no es delicioso",
+                "zh-Hans": "锅盔不好吃",
+                "zh-Hant": "鍋盔不好吃"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 20,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Der kalte Salat mit Perilla schmeckt nicht gut.",
+                "es": "El ensalada de perifollo no es delicioso",
+                "zh-Hans": "凉拌香苏不好吃",
+                "zh-Hant": "凉拌香蘇不好吃"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

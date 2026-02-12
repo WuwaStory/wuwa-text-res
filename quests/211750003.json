@@ -1,0 +1,1006 @@
+{
+  "id": 211750003,
+  "key": "琳奈偶遇任务",
+  "type": "branch",
+  "typeId": 14,
+  "name": {
+    "de": "Festgast: Lynae",
+    "ja": "宴の来客・リンネー",
+    "ko": "만찬의 손님 · 린네",
+    "zh-Hans": "夜宴来客·琳奈",
+    "zh-Hant": "夜宴來客·琳奈"
+  },
+  "desc": {
+    "de": "Du hast Lynae im Vorführraum entdeckt. Könnte es sein, dass sie wieder blau macht ...? Du solltest sie besser mal fragen.",
+    "ja": "シアタールームにリンネーがいた。彼女はまた授業をサボっているのか……とりあえず、声をかけてみよう。",
+    "ko": "방영실에서 린네를 보았다. 또 수업을 빠진 건 아니겠지... 혹시 모르니 가서 물어보자",
+    "zh-Hans": "你在放映厅发现了琳奈，她该不会是又逃课了吧……还是去问问看吧。",
+    "zh-Hant": "你在放映廳發現了琳奈，她該不會是又翹課了吧……還是去問問看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich zum Vorführraum.",
+        "ja": "シアタールームに向かう",
+        "ko": "방영실로 이동하기",
+        "zh-Hans": "前往放映厅",
+        "zh-Hant": "前往放映廳"
+      },
+      "entities": [
+        {
+          "entityId": 194000003,
+          "mapId": 8900,
+          "blueprintType": "branch3.0_角色043_琳奈",
+          "name": "TsEntity_角色043_琳奈",
+          "areaId": 0,
+          "position": {
+            "x": 2890,
+            "y": -1180,
+            "z": 400
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 70
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动角色邀约_琳奈",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "– Hey, {PlayerName}! Hier drüben!",
+                "en": "—Hey, {PlayerName}! Over here!",
+                "fr": "— Hé, {PlayerName} ! Par ici !",
+                "ja": "――お～い、{PlayerName}{Male=君;Female=ちゃん}！こっちこっち！",
+                "ko": "——{PlayerName}, {PlayerName}! 여기야, 여기!",
+                "th": "เฮ้! {PlayerName}! ทางนี้ๆ !",
+                "zh-Hans": "——喂，{PlayerName}！这里这里！",
+                "zh-Hant": "——喂，{PlayerName}！這裡這裡！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lynae? Du machst doch nicht etwa schon wieder blau …",
+                "en": "Lynae? Don't tell me you're skipping class again…",
+                "fr": "Lynae ? Ne me dis pas que tu sèches encore les cours…",
+                "ja": "リンネー……？まさか、{Male=また授業をサボったのか……？;Female=また授業をサボったの……？}",
+                "ko": "린네...? 설마... 또 수업을 빼먹은 거예요?",
+                "th": "Lynae...? เธอคงไม่ได้... โดดเรียนมาหรอกนะ...?",
+                "zh-Hans": "琳奈……？你不会是……又逃课了吧……？",
+                "zh-Hant": "琳奈……？你不會是……又翹課了吧……？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Pff, bitte lass die Vorurteile! Ich schwänze diesmal nicht. Ich habe hier tatsächlich etwas zu erledigen.",
+                "en": "Tsk, don't stereotype me! I'm not playing hooky this time. I've actually got business here.",
+                "fr": "Tss, ne me range pas dans cette case ! Sache que je ne fais pas l'école buissonnière : je suis ici pour affaires.",
+                "ja": "いやいや、それは偏見だよ！こっそり授業を抜けてきたわけじゃなくて、ちゃんとした仕事だから。",
+                "ko": "쳇... 날 뭘로 보고! 이번엔 몰래 놀러 온 게 아니라 진짜 중요한 일이 있어서 온 거야",
+                "th": "ชิ... ฉันมีภาพจำแบบนั้นไปแล้วรึไง! ครั้งนี้ฉันไม่ได้แอบโดดเรียนมาซะหน่อย แต่มีเรื่องสำคัญจริงๆ",
+                "zh-Hans": "嘁……这是偏见！这次我可不是偷偷溜出来玩的，而是有正事哦。",
+                "zh-Hant": "嘁……這是偏見！這次我可不是偷偷溜出來玩的，而是有正事哦。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Siehst du den Ausstellungsstand da? Die Akademie hat sich mit Lollo-Logistik zusammengetan, um einige Fahrzeugtechnologien für den Transport von Fracht in unwegsamem Gelände vorzustellen.",
+                "en": "See this display? The Academy teamed up with Lollo Logistics to share some vehicle tech for hauling cargo over rough terrain.",
+                "fr": "Tu vois ce présentoir ? L'académie s'est associée à Loulou Logistique pour partager des technologies de transport qui leur permettront de déplacer des cargaisons sur un terrain abrupt.",
+                "ja": "この展示台は見た？学園とブブ物流で協力したの。乗り物技術の一部をブブ物流と共有することで、複雑な地形でも貨物を輸送できるようになったんだ。",
+                "ko": "이 전시대 보이지? 아카데미가 무무물류랑 협력 계약을 체결해서, 일부 탑승 장비 기술을 무무물류와 공유해 복잡한 지형의 화물 운송에 활용할 예정이야",
+                "th": "เห็นตู้แสดงสินค้าอันนี้ไหม? ทางสถาบันและลอลโล่โลจิสติกส์ทำข้อตกลงร่วมกัน เพื่อแบ่งปันเทคโนโลยีเกี่ยวกับยานพาหนะ สำหรับการขนส่งสินค้าในภูมิประเทศที่ซับซ้อน",
+                "zh-Hans": "看到这个展示台了吗？学院和呜呜物流达成了合作协议，会将一部分载具技术与呜呜物流共享，用于复杂地形的货物运输。",
+                "zh-Hant": "看到這個展示台了嗎？學院和嗚嗚物流達成了合作協議，會將一部分運具技術與嗚嗚物流共享，用於複雜地形的貨物運輸。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich glaube, ich habe davon gehört …",
+                    "en": "I recall hearing something about that…",
+                    "fr": "Je crois que j'en ai entendu parler…",
+                    "ja": "そんなこともあったような……",
+                    "ko": "그런 일이 있었던 것 같아요",
+                    "th": "เหมือนจะได้ยินเรื่องนี้เหมือนกันนะ",
+                    "zh-Hans": "好像确实有这么回事。",
+                    "zh-Hant": "好像確實有這麼回事。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Deshalb habt ihr also mein Motorrad hierhergebracht?",
+                    "en": "Is that's why you brought my motorbike here?",
+                    "fr": "C'est pour ça que tu as amené ma moto ici ?",
+                    "ja": "{Male=それで、俺のバイクを持ってきたわけか？;Female=それで、私のバイクを持ってきたわけね？}",
+                    "ko": "그래서, 제 바이크를 가지고 온 건가요",
+                    "th": "พวกเธอก็เลยเอามอเตอร์ไบค์ของฉันมาด้วย",
+                    "zh-Hans": "所以你们就把我的摩托带过来了。",
+                    "zh-Hant": "所以你們就把我的摩托車帶過來了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ähm, darum geht es doch gar nicht! Jedenfalls fing das Vorführfahrzeug während der Tests an, Probleme zu machen, und einige der maßgefertigten Teile wurden nicht rechtzeitig fertig.",
+                "en": "Ahem, that's not the point! Anyway, the demo vehicle started acting up during testing, and some of the custom parts weren't ready in time.",
+                "fr": "Ahem, ce n'est pas le sujet ! Bref, au cours des tests, le véhicule de démonstration a commencé à présenter des dysfonctionnements, et plusieurs pièces sur mesure n'ont pas été terminées à temps.",
+                "ja": "コホン。とにかく、展示用の乗り物はテストの時に予期せぬ故障が起きちゃってさ。それと今は、カスタマイズのパーツも揃ってないとか……",
+                "ko": "크흠, 그건 중요한 게 아니야. 아무튼, 전시용 탑승 장비를 테스트하던 중에 예상치 못한 고장을 발견했어. 커스텀 부품도 제대로 준비되지 않았고",
+                "th": "อะแฮ่ม เรื่องนี้ไม่สำคัญหรอก คืองี้นะ... ตอนที่ทดสอบใช้ยานพาหนะก่อนที่นำมาแสดง พวกเขาพบปัญหาที่คาดไม่ถึงบางอย่าง และอะไหล่ปรับแต่งเฉพาะตัวก็ยังไม่พร้อม",
+                "zh-Hans": "咳，这不重要。总之，展示用的载具在之前测试时发现了一些预期外的故障，个性化改装构件也准备得不够全。",
+                "zh-Hant": "咳，這不重要。總之，展示用的運具在之前測試時發現了一些預期外的故障，個性化改裝構件也準備得不夠全。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn das so bleibt, könnte der Ruf der Akademie ernsthaft Schaden nehmen. Um also einen reibungslosen Ablauf zu gewährleisten und sicherzustellen, dass es bei der Partnerschaft keine Probleme gibt …",
+                "en": "If this keeps up, the Academy's reputation could take a real hit. So, to keep things on track and make sure the partnership goes smoothly…",
+                "fr": "À ce rythme, la réputation de l'académie en pâtira. Par conséquent, afin de respecter les délais et d'assurer le bon déroulement du partenariat…",
+                "ja": "このままじゃ学園の名前に傷がつくから、学園の評判を守って協力を順調に進められるように……",
+                "ko": "이렇게 되면 아카데미의 명예에 흠집이 날 거야. 아카데미의 명예를 지키고 이번 협력을 완벽하게 이끌어야 돼",
+                "th": "ขืนยังเป็นแบบนี้อยู่ ชื่อเสียงของสถาบันเละเทะแน่ ดังนั้นเพื่อปกป้องชื่อเสียงของสถาบัน และทำให้การร่วมมือครั้งนี้สมบูรณ์แบบ...",
+                "zh-Hans": "这样下去学院可是会名誉扫地的。于是，为了维护学院的声誉，以及完美达成这次合作……",
+                "zh-Hant": "這樣下去學院可是會名譽掃地的。於是，為了維護學院的聲譽，以及完美達成這次合作……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haben sie mir die Verantwortung übertragen. Die Lehrer waren sich einig, dass ich mich darum kümmern sollte, da ich mich gut mit Wartungsarbeiten und Modifikationen auskenne.",
+                "en": "They put me in charge. The teachers agreed I should handle it, since I'm pretty handy with maintenance and mods.",
+                "fr": "Ils m'ont placée aux commandes. Les professeurs sont du même avis, étant donné que je suis calée en matière de maintenance et de modifs.",
+                "ja": "先生たちから展示品のメンテを引き受けたの。あたし、乗り物の修理や改造は結構得意だし。",
+                "ko": "그래서 선생님들이 나한테 전시품 관리 업무를 맡겨 주셨어. 탑승 장비 수리랑 개조는 내가 도울 수 있으니까",
+                "th": "อาจารย์มอบหมายให้ฉันเป็นคนดูแลสิ่งของที่จะนำมาแสดง เพราะฉันเก่งเรื่องซ่อมแซมและดัดแปลงยานพาหนะน่ะ หลับตาทำยังได้เลย",
+                "zh-Hans": "我临危受命，从老师们那里得到了维护展品的差事。毕竟在维修和改造载具这方面，我也是能帮上忙的嘛。",
+                "zh-Hant": "我臨危受命，從老師們那裡得到了維護展品的差事。畢竟在維修和改造運具這方面，我也是能幫上忙的嘛。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 8,
+              "options": [
+                {
+                  "text": {
+                    "de": "Es ist in Ordnung, dir das zu überlassen. Aber …",
+                    "en": "I'm glad to see you in charge. But...",
+                    "ja": "{Male=リンネーなら心配はいらないだろうが……;Female=リンネーなら心配はいらないだろうけど……}",
+                    "ko": "당신에게 맡긴다면 안심이지만...",
+                    "th": "ฉันว่าเธอก็เหมาะที่จะทำงานนี้นะ แต่...",
+                    "zh-Hans": "虽然交给你我挺放心，不过……",
+                    "zh-Hant": "雖然交給你我挺放心，不過……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 9,
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann kaum glauben, dass die Akademie dich ausgewählt hat.",
+                    "en": "I can't believe the Academy chose you.",
+                    "fr": "Je n'arrive pas à croire que l'Académie t'ait choisie.",
+                    "ja": "{Male=本当に学園の仕事で来てるのか？;Female=本当に学園の仕事で来てるの……？}",
+                    "ko": "정말 아카데미에서 당신을 파견했다고요?",
+                    "th": "...สถาบันส่งเธอมาจริงเหรอ?",
+                    "zh-Hans": "……你真是被学院派过来的吗？",
+                    "zh-Hant": "……你真是被學院派過來的嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe gehört, dass du zurzeit sehr beschäftigt bist.",
+                    "en": "They told you're really busy these days.",
+                    "fr": "On m'a dit que tu étais très occupée ces temps-ci.",
+                    "ja": "{Male=最近、すごく忙しいようだが……;Female=最近、すごく忙しいみたいだけど……}",
+                    "ko": "하지만, 당신 요즘 엄청 바쁘다고 들었는데요...",
+                    "th": "...แต่ฉันได้ยินมาว่าช่วงนี้เธอยุ่งมากเลยนี่นา",
+                    "zh-Hans": "……可我听说你最近忙得很。",
+                    "zh-Hant": "……可我聽說你最近忙得很。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Na klar! Glaubst du etwa, ich würde mitmachen, nur weil die Party hier spaßig erscheint?",
+                "en": "Of course! You think I'd sign up just 'cause this party looks fun?",
+                "fr": "Évidemment ! Tu crois que je me suis inscrite juste parce que la fête avait l'air sympa ?",
+                "ja": "もちろん。決して面白そうなパーティーに参加したくて、学園に申請したわけじゃないからね。",
+                "ko": "물론이지. 난 절대, 이런 재미있고 시끌벅적한 파티에 참가하고 싶어서, 이런 일을 지원한 게 아니라고",
+                "th": "ก็จริงน่ะสิ ฉันไม่ได้ขออนุญาตสถาบันมา เพียงเพราะอยากร่วมงานปาร์ตี้ที่ดูน่าสนุกและคึกคักแบบนี้หรอกนะ",
+                "zh-Hans": "那是当然。我可绝对不是为了参加这个一看就很好玩又很热闹的派对才向学院提出申请的。",
+                "zh-Hant": "那是當然。我可絕對不是為了參加這個一看就很好玩又很熱鬧的派對才向學院提出申請的。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hm? Oh, du hast von Frau Voss gehört, dass ich bereits bis zum Hals in ehrenamtlichen Aktivitäten stecke, und du machst dir Sorgen, dass ich überfordert sein könnte? Entspann dich. Das ist für mich alles ein Klacks.",
+                "en": "Hm? Oh, you heard from Ms. Voss that I'm already neck-deep in voluntary activities, and you're worried I'll be overwhelmed? Relax. It's all a piece of cake for me.",
+                "fr": "Hm ? Oh, Mme Voss a dû te dire que je faisais du bénévolat à longueur de journée, et donc tu as peur que je me surmène ? Détends-toi. Pour moi, c'est une partie de plaisir.",
+                "ja": "えっ……？あたしがボランティア活動をたくさんしてるから、忙し過ぎないか心配だって、ウォース先生から聞いたの？平気平気、どうってことないよ！",
+                "ko": "뭐...? 보스 선생님께 내가 자원봉사에 너무 많이 지원했다고 들었구나? 내가 너무 바쁠까 봐 걱정돼? 괜찮아 괜찮아, 문제없어",
+                "th": "อะไรนะ...? อาจารย์ Voss บอกกับคุณว่าฉันทำกิจกรรมอาสาสมัครเยอะจนกลัวว่าฉันจะไม่มีเวลาเหรอ ไม่ต้องห่วงเลยนะ งานยุ่งแค่ไหนฉันก็เอาอยู่!",
+                "zh-Hans": "什么……？你听沃斯老师说我参加了很多志愿活动？担心我忙不过来？放心放心，这些都是小问题！",
+                "zh-Hant": "什麼……？你聽沃斯老師說我參加了很多志願活動？擔心我忙不過來？放心放心，這些都是小問題！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Solange ich das Exponat für die Vorführung reibungslos zum Laufen bringe, bleibt mir noch reichlich Zeit für mich selbst.",
+                "en": "As long as I get the exhibit running smoothly for the demo, I'll still have plenty of time to myself.",
+                "fr": "L'important, c'est que l'exposition se passe sans accrocs lors de la démonstration. Tant que j'y parviens, j'aurai amplement du temps pour moi.",
+                "ja": "展示品を新品みたくピッカピカにして、展示中ちゃんと動くようにしたら、それ以外の時間はぜ～んぶプライベートな時間でいいんだって。",
+                "ko": "전시품을 새것처럼 잘 관리하고 전시할 때 별일 없도록 살펴보기만 하면 나머지 시간은 자유롭게 쓸 수 있거든",
+                "th": "ฉันแค่ต้องดูแลมอเตอร์ไบค์ให้ดูใหม่เอี่ยมอ่อง และโชว์ให้ในงานเห็นว่าเครื่องฟิตสตาร์ทติดง่ายก็พอ ส่วนเวลาที่เหลือฉันก็จัดสรรเองได้ตามใจ",
+                "zh-Hans": "只要我把展品维护得像新的一样，并且保证它不会在展示时掉链子，剩下的自由时间我都能自由支配。",
+                "zh-Hant": "只要我把展品維護得像新的一樣，並且保證它不會在展示時出差錯，剩下的自由時間我都能自由支配。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "So gesehen macht das schon Sinn …",
+                    "en": "Put that way, it makes sense…",
+                    "fr": "Dit comme ça, ça paraît logique…",
+                    "ja": "{Male=確かにそうだが……;Female=確かにそうだけど……}",
+                    "ko": "논리적으로는 맞지만...",
+                    "th": "ถ้าพูดตามเหตุผล ก็คงเป็นแบบนั้นแหละ...",
+                    "zh-Hans": "按道理说的话，好像确实……",
+                    "zh-Hant": "按道理說的話，好像確實……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Aber dennoch …",
+                    "en": "But still...",
+                    "fr": "Quand bien même…",
+                    "ja": "けど……",
+                    "ko": "그 말이 맞긴 하지만...",
+                    "th": "แต่ถึงอย่างนั้นก็เถอะ...",
+                    "zh-Hans": "话虽如此……",
+                    "zh-Hant": "話雖如此……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mach dir keine Sorgen um mich. Ich habe sogar mit den Lehrern gesprochen, die hier Urlaub machen. Weißt du, was sie gesagt haben? „So was kommt nicht jeden Tag vor. Da du sowieso auf der Party bist, amüsier dich doch einfach.“",
+                "en": "Don't worry about me. I even checked with the teachers who came here on vacation. You know what they said? \"This doesn't happen every day. Since you're at the party anyway, go enjoy yourself.\"",
+                "fr": "Ne t'en fais pas pour moi. J'ai même demandé la permission aux professeurs venus pour des vacances. Tu sais ce qu'ils m'ont répondu ? « Une occasion pareille ne se présente pas tous les jours. Puisque tu seras à la fête, amuse-toi bien. »",
+                "ja": "大丈夫大丈夫。ここで休暇してる先生には報告しておいたよ。「せっかくパーティーに来てるんだから、思う存分楽しんで」って言われちゃった。",
+                "ko": "걱정 마. 휴가 온 선생님들께도 보고했으니까. 선생님들도 이렇게 말씀하셨어. 「기회도 흔치 않은데 파티에 온 김에 마음껏 즐겨」",
+                "th": "เอาน่า ฉันแจ้งกับอาจารย์ที่มาพักร้อนที่นี่แล้ว พวกเขาบอกว่า \"โอกาสดีๆ ไม่ได้มีบ่อยๆ ในเมื่อมาปาร์ตี้แล้ว ก็สนุกสุดเหวี่ยงไปเลย\"",
+                "zh-Hans": "别担心，我已经向来这里度假的老师们报过备了。他们说“机会难得，既然已经来了派对，就玩个痛快吧”。",
+                "zh-Hant": "別擔心，我已經向來這裡度假的老師們報過備了。他們說「機會難得，既然已經來了派對，就玩個痛快吧」。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Apropos, Lollo-Logistik ist wirklich beeindruckend. Ich dachte, sie würden nur Fracht sicher rund um den Globus transportieren, aber wie sich herausstellt, können sie auch ein richtiges Festmahl ausrichten!",
+                "en": "Speaking of which, Lollo Logistics is really amazing. I thought they only shipped cargo safely across the globe, but turns out they can throw a feast too!",
+                "fr": "En parlant de ça, Loulou Logistique m'épate. Je croyais qu'ils s'occupaient juste de transporter des marchandises aux quatre coins du monde, mais finalement, ils ont aussi le sens du festin !",
+                "ja": "そういえば、ブブ物流ってホントすごいね……荷物を各地に運べるってことしか知らなかったけど、こんなパーティーを開くこともあるなんて……",
+                "ko": "그나저나, 무무물류는 진짜 대단하단 말이지... 화물을 세계 각지로 안전하게 운송할 수 있다는 거야 알고 있었지만, 파티 기획까지 할 줄은 몰랐어",
+                "th": "จะว่าไปลอลโล่โลจิสติกส์นี่ก็เจ๋งนะ... เมื่อก่อนฉันรู้แค่ว่าพวกเขาส่งของไปทั่วโลกได้อย่างปลอดภัย ไม่นึกเลยว่าพวกเขาก็จัดปาร์ตี้เก่งเหมือนกัน",
+                "zh-Hans": "说起来，呜呜物流还真厉害啊……我之前只知道他们能把货物安全运送到世界各地，从没听说过他们还有举办派对的业务。",
+                "zh-Hant": "說起來，嗚嗚物流還真厲害啊……我之前只知道他們能把貨物安全運送到世界各地，從沒聽說過他們還有舉辦派對的業務。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt hier sogar Spezialitäten der Neuen Föderation! Die habe ich schon ewig nicht mehr gegessen …",
+                "en": "They've even got New Federation specialties here! Been ages since I last had those…",
+                "fr": "Ils ont même rapporté des spécialités de la Nouvelle Fédération ! Je n'en avais pas mangé depuis des lustres…",
+                "ja": "しかも、こんな立派に……ネオユニオンの料理もあるんだよ。食べるの、久しぶりだね。",
+                "ko": "게다가 이렇게 멋지게 준비하다니... 심지어 신 연방 특색 요리까지 있던데? 진짜 간만에 먹어봤어",
+                "th": "แถมทำถึงสุดๆ... ในงานปาร์ตี้มีอาหารท้องถิ่นจากสหพันธรัฐใหม่ด้วยนะ ฉันไม่ได้กินมานานแล้ว!",
+                "zh-Hans": "而且，还把派对办得这么棒……这里竟然还有新联邦的特色菜，我已经好久没吃到了！",
+                "zh-Hant": "而且，還把派對辦得這麼棒……這裡竟然還有新聯邦的特色菜，我已經好久沒吃到了！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mm … Vielleicht wäre es gar keine schlechte Idee, nach dem Abschluss bei Lollo-Logistik anzufangen. Mit meinen Fähigkeiten könnte ich Mechanikerin oder sogar Kurierin werden …",
+                "en": "Mm… Maybe after graduation, joining Lollo Logistics wouldn't be a bad idea. With my skills, I could be a mechanic or even a courier...",
+                "fr": "Hmm… Peut-être que quand j'aurai reçu mon diplôme, il faudra que je rejoigne Loulou Logistique. Compte tenu de mes talents, je pourrais jouer les mécanos ou les livreuses…",
+                "ja": "うーん……学園を卒業したら、ブブ物流で仕事するのも悪くないかな。あたしの乗り物の知識があれば、機械工でも、配達員でも全然問題ないし……",
+                "ko": "음... 아카데미를 졸업한 후 무무물류에 들어가는 것도 나쁘지 않을 것 같아. 내 탑승 장비에 대한 지식으로는 엔지니어든, 바이크를 타고 하는 운송 일이든 문제없으니까...",
+                "th": "ไม่แน่นะพอเรียนจบ ฉันอาจจะร่วมงานกับลอลโล่โลจิสติกส์ก็ได้ จากความรู้เกี่ยวกับยานพาหนะที่ฉันมี จะให้ฉันเป็นช่างกลก็ได้ หรือขับรถส่งของก็ดี ได้ทั้งนั้นแหละ...",
+                "zh-Hans": "嗯……也许等我从学院毕业之后，加入呜呜物流也不错？凭借我对载具的了解，无论是当机械师，还是骑车送货应该都没问题……",
+                "zh-Hant": "嗯……也許等我從學院畢業之後，加入嗚嗚物流也不錯？憑藉我對運具的了解，無論是當機械師，還是騎車送貨應該都沒問題……"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klingt gut. Ich kenne übrigens ein paar Leute bei Lollo-Logistik.",
+                    "en": "Sounds nice. I actually know a few people at Lollo Logistics.",
+                    "fr": "Ça me semble bien. À vrai dire, j'ai quelques contacts chez Loulou Logistique.",
+                    "ja": "{Male=ブブ物流に知り合いがいるから、紹介してみようか？;Female=ブブ物流に知り合いがいるから、紹介してみる？}",
+                    "ko": "좋은 생각이에요. 전 무무물류 직원하고도 아주 친해요",
+                    "th": "ดีเลย ฉันก็สนิทกับคนที่ลอลโล่โลจิสติกส์อยู่แล้ว",
+                    "zh-Hans": "好啊，我和呜呜物流的人还挺熟的。",
+                    "zh-Hant": "好啊，我和嗚嗚物流的人還挺熟的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Findest du nicht, dass du … ein bisschen überqualifiziert bist?",
+                    "en": "Don't you think you're… a little overqualified?",
+                    "fr": "Tu n'as pas peur d'être… un peu surqualifiée ?",
+                    "ja": "{Male=もっと才能を活かせる仕事もあるんじゃないか？;Female=もっと才能を活かせる仕事もあるんじゃない？}",
+                    "ko": "그건 인재를 썩히는 것 아니에요?",
+                    "th": "ฝีมือขั้นเทพอย่างเธอต้องไปไกลกว่านี้สิ",
+                    "zh-Hans": "有点大材小用了吧。",
+                    "zh-Hant": "有點大材小用了吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Dann zähle ich darauf, dass du mich ihnen vorstellst, {PlayerName}!",
+                "en": "Then I'll count on you to introduce me, {PlayerName}!",
+                "fr": "Dans ce cas, je compte sur toi pour faire les présentations, {PlayerName} !",
+                "ja": "じゃあ、その時はよろしくね、{PlayerName}{Male=君;Female=ちゃん}！",
+                "ko": "그럼 그때가 되면 소개 좀 부탁해, 방랑자!",
+                "th": "ถึงตอนนั้นคุณค่อยแนะนำฉันก็แล้วกันนะ {PlayerName}!",
+                "zh-Hans": "那到时候就麻烦你帮忙介绍了，{PlayerName}！",
+                "zh-Hant": "那到時候就麻煩你幫忙介紹了，{PlayerName}！"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Professoren sagen, dass Interesse die beste Motivation für eine Arbeit oder ein Studium ist. Wenn ich also Spaß daran habe, ist es ein guter Job für mich!",
+                "en": "Professors say interest is the best motivation for work or study. So if I'm into it, it's a good job!",
+                "fr": "D'après les professeurs, l'intérêt est la meilleure des motivations pour le travail ou les études. Donc, si un emploi m'intéresse, c'est qu'il me convient !",
+                "ja": "教授たちが言ってたの。興味こそ一番の原動力だって。だから、興味を持てる仕事は、いい仕事だよ。",
+                "ko": "교수님들이 그러셨거든. 취미야말로 일과 학습의 가장 좋은 원동력이라고. 그러니까 내가 관심 있는 일이 바로 좋은 일자리란 말씀",
+                "th": "อาจารย์เคยบอกว่า ความสนใจคือแรงผลักดันที่ดีที่สุดในการทำงานและการเรียน เพราะงั้นงานไหนที่ฉันรัก ก็คืองานที่ดีทั้งนั้นแหละ",
+                "zh-Hans": "教授们说过，兴趣才是工作和学习的最佳动力。所以只要我有兴趣的工作，就是好工作。",
+                "zh-Hant": "教授們說過，興趣才是工作和學習的最佳動力。所以只要我有興趣的工作，就是好工作。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Moment mal … du meinst das doch nicht ernst, oder?",
+                "en": "Wait… you're not actually serious, are you?",
+                "fr": "Attends… Rassure-moi, tu n'es pas sérieuse ?",
+                "ja": "{Male=ちょっと待て、まさか本気で……;Female=ちょっと、まさか本気で……}",
+                "ko": "잠깐만요, 설마 진심이에요...?",
+                "th": "เดี๋ยวนะ... เธอจริงจังใช่ไหมเนี่ย...",
+                "zh-Hans": "等等，你不会是认真的吧……",
+                "zh-Hant": "等等，你不會是認真的吧……"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich meine ich es ernst. Ich habe beschlossen, mein Leben nach meinen eigenen Vorstellungen zu leben, weißt du noch?",
+                "en": "Of course I'm serious. I've decided I'm gonna live life on my own terms, remember?",
+                "fr": "Bien sûr que si. J'ai décidé que je mènerai ma vie selon mes propres règles, tu te souviens ?",
+                "ja": "もちろん！だって、自分の人生を生きるって決めたから。",
+                "ko": "당연하지. 어쨌든—— 난 내 삶을 어떻게 시작할지 이미 결정했으니까",
+                "th": "แน่นอนสิ เพราะฉันตัดสินใจแล้วไงล่ะ... ว่าจะเริ่มต้นชีวิตใหม่ของตัวเอง",
+                "zh-Hans": "当然啦，毕竟——我已经决定要开始属于我自己的人生了嘛。",
+                "zh-Hant": "當然啦，畢竟——我已經決定要開始屬於我自己的人生了嘛。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deshalb muss ich alles ausprobieren, was meine Aufmerksamkeit erregt! Wer weiß? Vielleicht bin ich ja ein Naturtalent darin.",
+                "en": "That's why I've gotta try everything that catches my eye! Who knows? I might just be a natural at it.",
+                "fr": "C'est pourquoi je dois essayer tout ce qui capte mon attention ! Qui sait ? Peut-être découvrirai-je un talent naturel.",
+                "ja": "興味があることは、ぜ～んぶやってみないと！意外に合ってたりするかもしれないでしょ？",
+                "ko": "그러니까 관심이 가는 건 다 해봐야지! 그게 나랑 딱 맞을 수도 있잖아?",
+                "th": "ดังนั้นเรื่องไหนที่สนใจ ฉันจะลองทำให้หมดเลย! บางทีอาจจะได้เจอสิ่งที่เข้ากับฉันก็ได้นะ?",
+                "zh-Hans": "所以对于感兴趣的事，我当然得都试试看才行！说不定就会意外地很合拍呢？",
+                "zh-Hant": "所以對於感興趣的事，我當然得都試試看才行！說不定就會意外地很合拍呢？"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Ungläubig den Kopf schütteln)",
+                    "en": "(Shake your head in disbelief)",
+                    "fr": "(Secouer la tête d'incrédulité)",
+                    "ja": "（理解できない、と思いながら頭を横に振る）",
+                    "ko": "(이해하지 못해 고개를 젓는다)",
+                    "th": "(ส่ายหัวอย่างไม่เข้าใจ)",
+                    "zh-Hans": "（不理解地摇摇头）",
+                    "zh-Hant": "（不理解地搖搖頭）"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "(Ermutigend nicken)",
+                    "en": "(Shake your head in encouragement)",
+                    "fr": "(Opiner pour l'encourager)",
+                    "ja": "（リンネーを励ますように頷く）",
+                    "ko": "(격려하듯 고개를 끄덕인다)",
+                    "th": "(พยักหน้าอย่างให้กำลังใจ)",
+                    "zh-Hans": "（鼓励地点点头）",
+                    "zh-Hant": "（鼓勵地點點頭）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Okay, ich gehe zurück zur Party. Dir auch noch viel Spaß!",
+                "en": "Alright, I'm heading back to the party. You have fun too!",
+                "fr": "Bon, je retourne à la fête. N'oublie pas de t'amuser !",
+                "ja": "それじゃ、{PlayerName}{Male=君;Female=ちゃん}もパーティー楽しんで！",
+                "ko": "자, 그럼 난 파티를 계속 즐기러 갈게. 너도 신나게 놀아!",
+                "th": "เอาล่ะ ได้เวลาลั๊ลลาในงานปาร์ตี้แล้ว... ขอให้คุณม่วนจอยเหมือนกันน้า!",
+                "zh-Hans": "好啦，我该去继续享受派对了——你也要玩得开心哦！",
+                "zh-Hant": "好啦，我該去繼續享受派對了——你也要玩得開心哦！"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 100085,
+                "name": {
+                  "zh-Hans": "琳奈"
+                },
+                "entity": {
+                  "entityId": 194000003,
+                  "mapId": 8900,
+                  "blueprintType": "branch3.0_角色043_琳奈",
+                  "name": "TsEntity_角色043_琳奈",
+                  "areaId": 0,
+                  "position": {
+                    "x": 2890,
+                    "y": -1180,
+                    "z": 400
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 70
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

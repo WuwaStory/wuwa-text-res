@@ -1,0 +1,686 @@
+{
+  "id": 880800000,
+  "key": "收集初始引导任务",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Der Sol-2",
+    "en": "Second Coming of Solaris",
+    "es": "Segunda venida de Solaris",
+    "fr": "Le Sol-2",
+    "ja": "第二ソラリス",
+    "ko": "세컨드 솔라리스",
+    "th": "ดาวโซลาริสดวงที่สอง",
+    "zh-Hans": "第二索拉",
+    "zh-Hant": "第二索拉"
+  },
+  "desc": {
+    "de": "Magi versucht, dich zu kontaktieren, und es scheint mit dem großangelegten Projekt namens „Der Sol-2“ zu tun zu haben, das die Pionierkonvention in letzter Zeit geplant hat ......",
+    "en": "Maqi is trying to contact you, and it appears to be related to the Pioneer Association's ambitious project The Second Coming of Solaris...",
+    "es": "Maqi está intentando ponerse en contacto contigo. Parece que tiene que ver con el ambicioso proyecto «Segunda venida de Solaris», que la Asociación de Pioneros ha estado planeando últimamente...",
+    "fr": "Maqi tente de vous joindre. Il semblerait que ce soit en lien avec le projet ambitieux de l'Association Pionnière : le Sol-2…",
+    "ja": "馬琪からの連絡があったようだ。それが先駆条約が最近取り掛かっている「第二ソラリス」という大型プロジェクトに関わるみたい……",
+    "ko": "마치가 연락을 시도하고 있습니다. 이는 최근 선행공약이 기획한 「세컨드 솔라리스」라는 대형 프로젝트와 관련이 있는 것 같습니다...",
+    "th": "หม่าฉีพยายามติดต่อคุณ ดูเหมือนจะเกี่ยวข้องกับโครงการที่สมาคมผู้บุกเบิกมุ่งหวัง ดาวโซลาริสดวงที่สอง...",
+    "zh-Hans": "马琪正在尝试联络你，而这似乎与先行公约最近筹划的名为《第二索拉》的大型项目有关……",
+    "zh-Hant": "馬琪正在嘗試聯絡你，而這似乎與先行公約最近籌劃的名為《第二索拉》的大型專案有關……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maggie, um herauszufinden, was los ist",
+        "en": "Talk to Maqi to find out what's going on",
+        "es": "Habla con Maqi para averiguar qué está pasando",
+        "fr": "Parler à Maqi pour obtenir des informations",
+        "ja": "馬琪のところに行く",
+        "ko": "마치와 대화하여 상황 알아보기",
+        "th": "คุยกับหม่าฉีเพื่อทราบเรื่องที่กำลังดำเนินอยู่",
+        "zh-Hans": "与马琪对话了解情况",
+        "zh-Hant": "與馬琪對話了解情况"
+      },
+      "entities": [
+        {
+          "entityId": 109002516,
+          "mapId": 8,
+          "blueprintType": "NPC0006",
+          "name": "TsEntity_170_006_马琪",
+          "areaId": 301,
+          "position": {
+            "x": -61913,
+            "y": 108494,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_V1.0收集活动",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hast du schon mal von <i>Der Sol-2</i> gehört, {PlayerName}?",
+                "en": "Ever heard of <i>Second Coming of Solaris</i> before, {PlayerName}?",
+                "es": "¿Alguna vez has oído hablar de «Segunda venida de Solaris» antes, {PlayerName}?",
+                "fr": "{PlayerName}, avez-vous déjà entendu parler du « Sol-2 » ?",
+                "ja": "{PlayerName}さん。「第二ソラリス」って知っていますか？",
+                "ko": "방랑자, 혹시 「세컨드 솔라리스」라고 들어보셨나요?",
+                "th": "คุณเคยได้ยินเรื่อง<i>โซลาริสที่ 2</i>มาก่อนไหม {PlayerName}?",
+                "zh-Hans": "{PlayerName}，你听说过《第二索拉》吗？",
+                "zh-Hant": "{PlayerName}，你聽說過《第二索拉》嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nö.",
+                    "en": "Nope.",
+                    "es": "No.",
+                    "fr": "Non.",
+                    "ja": "全然。",
+                    "ko": "아니요",
+                    "th": "ไม่เคยเลย",
+                    "zh-Hans": "没有。",
+                    "zh-Hant": "沒有。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Eine neue Zeitschrift von der Pioneer Association?",
+                    "en": "A new periodical by the Pioneer Association?",
+                    "es": "¿Un nuevo periódico de la Asociación de Pioneros?",
+                    "fr": "Une revue ?",
+                    "ja": "先駆条約の新刊？",
+                    "ko": "새로 출간하기로 한 간행물인가요?",
+                    "th": "เป็นวารสารฉบับใหม่ของสมาคมผู้บุกเบิกเหรอ?",
+                    "zh-Hans": "是先约新出版的刊物吗？",
+                    "zh-Hant": "是先約新出版的刊物嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ein neues Merch von der Pioneer Association?",
+                    "en": "A new merch by the Pioneer Association?",
+                    "es": "¿Un nuevo producto de la Asociación de Pioneros?",
+                    "fr": "Un nouveau produit dérivé ?",
+                    "ja": "グッズか何か？",
+                    "ko": "새로 나온 굿즈인가요?",
+                    "th": "เป็นสินค้าใหม่ของสมาคมผู้บุกเบิกเหรอ?",
+                    "zh-Hans": "是你们新出的周边产品？",
+                    "zh-Hant": "是你們新出的周邊產品？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Also weißt du nichts darüber?",
+                "en": "So you don't know about it?",
+                "es": "¿Así que no sabes de ello?",
+                "fr": "Vous ne savez pas ?",
+                "ja": "では、ご説明しますね。",
+                "ko": "아, 모르시는군요",
+                "th": "แสดงว่าคุณยังไม่รู้เรื่องนี้สินะ",
+                "zh-Hans": "你不知道吗？",
+                "zh-Hant": "你不知道嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, das ist nicht mein Job. Zeitschriften und Merchandise werden nur in Ganxues Laden verkauft.",
+                "en": "Oh, that's not my job. Periodicals and merchandise are only sold at Ganxue's shop.",
+                "es": "Oh, eso no es mi trabajo. Los periódicos y la mercancía solo se venden en la tienda de Ganxue.",
+                "fr": "Ce n'est pas mon domaine de travail. C'est le boulot de la boutique de Ganxue, qui vend des prépublications et des produits de l'Association pionnière.",
+                "ja": "それは私の管轄じゃありませんよ。本やグッズのお問い合わせは甘雪（かんせつ）の方までお願いします。",
+                "ko": "그건 제 일이 아니에요. 감설의 상점에서 선행 공약 간행물과 굿즈 제품을 판매해요",
+                "th": "โอ้ นั่นไม่ใช่เรื่องของฉันหรอก วารสารกับสินค้าจะวางขายเฉพาะในร้านของ Ganxue เท่านั้น",
+                "zh-Hans": "那不是我的工作内容，甘雪的商店才会售卖先约刊物和周边产品。",
+                "zh-Hant": "那不是我的工作內容，甘雪的商店才會售賣先約刊物和周邊產品。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wie kommt es, dass du nichts von diesem Buch weißt?",
+                "en": "But how come you don't know about this book?",
+                "es": "¿Pero cómo es que no sabes de este libro?",
+                "fr": "D'ailleurs, ne connaissez-vous pas vraiment ce livre ?",
+                "ja": "でも、本当に知らないのですか？",
+                "ko": "그보다 정말 이 책에 대해서 모르나요?",
+                "th": "แต่ทำไมคุณถึงไม่รู้จักหนังสือเล่มนี้ล่ะ?",
+                "zh-Hans": "但是话说回来，你真的不知道这本书吗？",
+                "zh-Hant": "但是話說回來，你真的不知道這本書嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "<i>Der Sol-2</i>... Es ist die Fiktion, über die in ganz Huanglong gesprochen wird. Es ist schon drei Wochen in Folge ein Bestseller!",
+                "en": "<i>Second Coming of Solaris</i>... It's the fiction that everyone's talking about across Huanglong. It has been a bestseller for three weeks in a row!",
+                "es": "«Segunda venida de Solaris»... Es la ficción de la que todos hablan en Huanglong. ¡Ha sido un superventas durante tres semanas seguidas!",
+                "fr": "« Le Sol-2 » est le roman le plus populaire dans le pays. Il est le best-seller n°1 depuis trois semaines !",
+                "ja": "「第二ソラリス」は近頃大人気の小説です。もう3週連続でベストセラーに輝いています！",
+                "ko": "「세컨드 솔라리스」는 최근 각 지역에서 가장 인기 있는 소설로 3주 연속 베스터셀러 1위를 차지했어요!",
+                "th": "<i>โซลาริสที่ 2</i>... มันคือนิยายที่ทุกคนทั่วทั้งหวงหลงต่างก็พูดถึงกันอยู่ แถมยังเป็นหนังสือขายดีติดต่อกันมาสามสัปดาห์แล้ว!",
+                "zh-Hans": "《第二索拉》是最近各大地区人气最火爆的小说，已经连续三周位居畅销榜榜首了！",
+                "zh-Hant": "《第二索拉》是最近各大地區人氣最火爆的小說，已經連續三周位居暢銷榜榜首了！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sein Autor, Karl, kommt aus der Neuen Föderation. Es ist sein Debütwerk und er wurde bereits mit diesem einzigen Buch zu einem der bestverdienenden Autoren der letzten Jahre.",
+                "en": "Its author, Karl, is from the New Federation. It's his debut work and he's already been named one of the top-earning writers in recent years with this single book.",
+                "es": "Su autor, Karl, es de la Nueva Federación. Es su trabajo debut y ya ha sido nombrado uno de los escritores de mayores ingresos en los últimos años con este solo libro.",
+                "fr": "Son auteur, le nouvel écrivain de la Fédération Nouvelle, Carl, est devenu l'un des écrivains les plus rentables ces dernières années.",
+                "ja": "作者はネオユニオンの新人作家カール氏。なんと、この本だけで作家年収ランキングの上位入りを果たしてしまったとか……",
+                "ko": "신 연방의 신인 작가 카를은 이 책 하나로 최근 2년간 가장 많은 수입을 올린 작가 중 한 명이에요",
+                "th": "ผู้เขียนคือ Karl จากสหพันธ์ใหม่ นี่เป็นผลงานเปิดตัวของเขา และเขาก็ได้รับการขนานนามว่าเป็นหนึ่งในนักเขียนที่ทำรายได้สูงสุดในช่วงไม่กี่ปีที่ผ่านมาด้วยหนังสือเพียงเล่มเดียว",
+                "zh-Hans": "它的作者是新联邦的新人作家卡尔，仅仅靠着这一本书，他就已经成为了近两年收入最高的作家之一。",
+                "zh-Hant": "它的作者是新聯邦的新人作家卡爾，僅僅靠著這一本書，他就已經成為了近兩年收入最高的作家之一。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es fesselt fast die gesamte Aufmerksamkeit unserer Redakteure aus der Zentrale.",
+                "en": "It rivets nearly all the attention of our editors from the headquarters.",
+                "es": "Atrae casi toda la atención de nuestros editores de la sede.",
+                "fr": "Dans l'équipe éditoriale de la prépublication, la plupart des éditeurs étudient ce livre.",
+                "ja": "それに、先駆条約本部の編集者たちは、ほぼ全員がこの本を拝読していたようでして……",
+                "ko": "선행 공약 본부 편집진의 거의 모든 편집자가 이 책을 연구하고 있어요",
+                "th": "หนังสือเล่มนี้กลายเป็นที่กล่าวขวัญถึงไปทั่วทั้งกองบรรณาธิการที่สำนักงานใหญ่เลย",
+                "zh-Hans": "先行公约总部的编辑团队里几乎所有编辑都在研究这本书。",
+                "zh-Hant": "先行公約總部的編輯團隊裡幾乎所有編輯都在研究這本書。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Lesen sie alle gerne Romane?",
+                    "en": "They all enjoy reading fiction?",
+                    "es": "¿A todos les gusta leer ficción?",
+                    "fr": "Les éditeurs aiment-ils lire des romans ?",
+                    "ja": "編集者たち全員は読書好き……？",
+                    "ko": "편집자들은 모두 소설을 즐겨 읽나요?",
+                    "th": "พวกเขาชอบอ่านนิยายกันทุกคนเลยเหรอ?",
+                    "zh-Hans": "编辑们都很爱看小说吗？",
+                    "zh-Hant": "編輯們都很愛看小說嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich nicht... Einige sind nur aufgetaucht, um den Trick zu finden, einen Bestseller zu schreiben.",
+                "en": "Of course not... Some swooped in only to try to find the trick to write a top seller.",
+                "es": "Por supuesto que no... Algunos se lanzaron solo para intentar encontrar el truco para escribir un superventas.",
+                "fr": "Ce n'est pas toujours le cas. Certains veulent juste apprendre à écrire des livres et des articles que les gens aiment.",
+                "ja": "中にはネタ探しや勉強のために読んだ、という方もいるとは思いますが、好きな人は多いかもしれませんね。",
+                "ko": "물론 아니죠... 그냥 대박난 책은 글을 어떻게 쓰는지 배우려고 하는 거죠",
+                "th": "ไม่เชิงหรอก... บางคนก็แค่เข้ามาหาเคล็ดลับในการเขียนหนังสือให้ขายดีที่สุดน่ะ",
+                "zh-Hans": "当然不是……有一部分人应该只是想学习怎么写出爆款的书籍和文章。",
+                "zh-Hant": "當然不是……有一部分人應該只是想學習怎麼寫出爆款的書籍和文章。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich kann nicht leugnen, dass es das beste Werk unter allen Kandidaten der letzten Jahre ist.",
+                "en": "But I can't deny that it's the best piece of work among all the candidates in recent years.",
+                "es": "Pero no puedo negar que es la mejor obra de todos los candidatos en los últimos años.",
+                "fr": "Mais, après avoir lu ce livre, je dois admettre que c'est l'un des meilleurs que j'ai lus ces dernières années.",
+                "ja": "そこで私も、流行っているのなら、と思い読んでみたのですが……この本はなんと、他に類を見ないほどの良作だったのです！",
+                "ko": "하지만, 저도 이 책을 읽으면서, 이 책이 확실히 제가 최근 몇 년 동안 읽은 책 중 최고의 작품 중 하나라는 것을 인정하지 않을 수가 없었어요",
+                "th": "แต่ฉันก็ปฏิเสธไม่ได้ว่ามันเป็นผลงานที่ดีที่สุดในบรรดาตัวเลือกทั้งหมดในช่วงไม่กี่ปีที่ผ่านมา",
+                "zh-Hans": "但是，我也读了这本书，不得不承认，它的确是我近年读到过最好的作品之一。",
+                "zh-Hant": "但是，我也讀了這本書，不得不承認，它的確是我近年讀到過最好的作品之一。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich wurde auf ein episches Abenteuer mit dem Protagonisten mitgenommen, während ich <i>Der Sol-2</i> las...",
+                "en": "I was taken on an epic adventure through the protagonist while I was reading <i>Second Coming of Solaris</i>...",
+                "es": "Fui llevado en una aventura épica a través del protagonista mientras leía «Segunda venida de Solaris»...",
+                "fr": "Selon le point de vue du protagoniste, j'ai l'impression d'avoir vécu une aventure épique dans le monde du « Sol-2 »...",
+                "ja": "ページを読み進めるにつれ、私もまた「第二ソラリス」の世界を大冒険した気分に……",
+                "ko": "주인공의 시각에 따라 저 역시 「세컨드 솔라리스」의 세계에서 한 편의 모험을 한 것 같은...",
+                "th": "ตอนที่ฉันอ่าน<i>โซลาริสที่ 2</i> ฉันรู้สึกเหมือนได้ร่วมผจญภัยครั้งยิ่งใหญ่ไปกับตัวเอกเลย...",
+                "zh-Hans": "跟随着主角的视角，我仿佛自己也在《第二索拉》的世界中历经了一场场史诗般的冒险……",
+                "zh-Hant": "跟隨著主角的視角，我仿佛自己也在《第二索拉》的世界中歷經了一場場史詩般的冒險……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich habe mich mitreißen lassen. Lassen Sie uns zu unserem Thema zurückkehren. {PlayerName}, wir hoffen, dass Sie uns ein wenig helfen könnten.",
+                "en": "Oh, I got carried away. Let's turn back to our topic. {PlayerName}, we hope you could lend us some help.",
+                "es": "Oh, me dejé llevar. Volvamos a nuestro tema. {PlayerName}, esperamos que puedas prestarnos algo de ayuda.",
+                "fr": "Je m'éloigne du sujet, {PlayerName}, j'espère que vous pourrez nous aider.",
+                "ja": "おっと、話が逸れてしまいましたね。{PlayerName}さん、実はあなたにお知らせしたいことがあるのです……",
+                "ko": "이야기가 많이 엇나갔네요. 방랑자에게 연락을 드린 건 저희에게 도움을 주셨으면 해서예요",
+                "th": "โอ้ ฉันลืมตัวไปหน่อย กลับมาเข้าเรื่องของเรากันดีกว่า {PlayerName} เราหวังว่าคุณจะพอช่วยเราได้นะ",
+                "zh-Hans": "话题扯远了，{PlayerName}，先约联系你，是希望你可以为我们提供一些帮助。",
+                "zh-Hant": "話題扯遠了，{PlayerName}，先約聯繫你，是希望你可以為我們提供一些幫助。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Pioneer Association hat eine Vereinbarung über die Entwicklung einer Spielreihe auf der Grundlage von <i>Der Sol-2</i> getroffen und die Produktion des Spiels ist bereits im Gange.",
+                "en": "The Pioneer Association has reached an agreement on developing a game franchise based on <i>Second Coming of Solaris</i> and the production of the game is already underway.",
+                "es": "La Asociación de Pioneros ha llegado a un acuerdo para desarrollar una franquicia de juegos basada en «Segunda venida de Solaris» y la producción del juego ya está en marcha.",
+                "fr": "En fait, la prépublication a déjà pris le travail d'adaptation du jeu « Le Sol-2 ».",
+                "ja": "……先駆条約は「第二ソラリス」を原作としたゲーム制作を開始しました！",
+                "ko": "실제로 선행 공약은 「세컨드 솔라리스」 관련해서 파생 게임을 제작하고 있어요",
+                "th": "สมาคมผู้บุกเบิกได้บรรลุข้อตกลงในการพัฒนาแฟรนไชส์เกมจาก<i>โซลาริสที่ 2</i> และการผลิตเกมก็ได้เริ่มต้นขึ้นแล้ว",
+                "zh-Hans": "实际上，先行公约已经接手了《第二索拉》的游戏改编工作，正在制作它的衍生游戏作品。",
+                "zh-Hant": "實際上，先行公約已經接手了《第二索拉》的遊戲改編工作，正在製作它的衍生遊戲作品。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Ablegerspiel!",
+                    "en": "A spin-off game!",
+                    "es": "¡Un juego derivado!",
+                    "fr": "Un jeu de propriété intellectuelle !",
+                    "ja": "IPゲー……！",
+                    "ko": "IP 게임화인가요?",
+                    "th": "เป็นเกมภาคแยกเหรอ!",
+                    "zh-Hans": "IP改编游戏！",
+                    "zh-Hant": "IP改編遊戲！"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wann wird es voraussichtlich veröffentlicht?",
+                    "en": "When is it expected to be released?",
+                    "es": "¿Cuándo se espera que se lance?",
+                    "fr": "Quand serait-il disponible ?",
+                    "ja": "リリース日は？",
+                    "ko": "언제 오픈하나요?",
+                    "th": "จะวางจำหน่ายเมื่อไรเหรอ?",
+                    "zh-Hans": "什么时候上线？",
+                    "zh-Hant": "什麼時候上線？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Die Entwicklung befindet sich noch in einem sehr frühen Stadium. Das Grundgerüst ist fertig, aber wir arbeiten noch an der Produktion einer riesigen Menge an Kunstwerken.",
+                "en": "The development is still at a very early stage. The basic framework is complete, but we're still working on the production of a huge body of art assets.",
+                "es": "El desarrollo aún se encuentra en una etapa muy temprana. El marco básico está completo, pero aún estamos trabajando en la producción de una gran cantidad de activos de arte.",
+                "fr": "Le projet de jeu est encore à un stade préliminaire, le cadre de base est terminé, mais les ressources artistiques sont encore insuffisantes.",
+                "ja": "プロトタイプは概ね完成してるのですが、まだまだ開発段階にあり……特にビジュアル方面の開発が難航しています。",
+                "ko": "게임 프로젝트는 아직 초기 단계로 기본 틀은 완성되었지만 여전히 많은 미술적 자원이 부족해요",
+                "th": "การพัฒนายังอยู่ในช่วงเริ่มต้นน่ะ โครงสร้างพื้นฐานเสร็จสมบูรณ์แล้ว แต่เรากำลังทำงานเพื่อผลิตงานศิลป์จำนวนมหาศาลอยู่",
+                "zh-Hans": "游戏项目目前还处于很早期的阶段，基本框架已经完成，但还缺少大量的美术资源。",
+                "zh-Hant": "遊戲專案目前還處於很早期的階段，基本框架已經完成，但還缺少大量的美術資源。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Entwicklerteam ist noch auf der Suche nach einer kreativen Richtung, die es ihnen ermöglicht, die Grandiosität der Welt in dem Roman wieder einzufangen.",
+                "en": "The dev team is still struggling to find a creative direction that enables them to recapture the grandeur of the world in the novel.",
+                "es": "El equipo de desarrollo aún está luchando por encontrar una dirección creativa que les permita recapturar la grandeza del mundo en la novela.",
+                "fr": "Tout le monde est encore indécis sur la façon de restaurer le monde grandiose du roman.",
+                "ja": "小説の壮大なシーンを、どうゲームならではの表現に落とし込むのか……皆さん大変頭を悩ませているみたいですね……",
+                "ko": "다들 아직 방향을 못 잡고 있어요. 도대체 어떻게 해야 소설 속의 웅대한 세계관을 표현할 수 있을까요?",
+                "th": "แถมทีมพัฒนาก็ยังประสบปัญหาในการหาทิศทางการสร้างสรรค์ที่จะทำให้พวกเขาสามารถถ่ายทอดความยิ่งใหญ่ของโลกในนิยายออกมาได้อีกครั้ง",
+                "zh-Hans": "大家现在还有些找不准方向，到底要怎么去还原小说里的宏大世界。",
+                "zh-Hant": "大家現在還有些找不准方向，到底要怎麼去還原小說裡的宏大世界。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In unserem Meeting gestern haben einige Kollegen erwähnt, dass ein weit gereister Gast gerade in Jinzhou angekommen ist... das hat mich zu dir geführt.",
+                "en": "In our meeting yesterday, a few colleagues mentioned that a well-traveled guest had just arrived in Jinzhou... that is what brought me to you.",
+                "es": "En nuestra reunión de ayer, algunos colegas mencionaron que un huésped muy viajado acababa de llegar a Jinzhou... eso es lo que me trajo a ti.",
+                "fr": "Lors de la réunion d'hier, certains collègues ont mentionné que des clients très éclairés étaient venus à Jinzhou récemment... donc je vous ai demandé.",
+                "ja": "そんな重たい空気の中、昨日会議が行われました。そこで、見聞の広い今州の「客人」に手伝ってもらおうとなり……こうして{PlayerName}にお話させてもらった次第です。",
+                "ko": "어제 회의 때 몇몇 동료가 말하길, 금주에 최근 견문이 넓은 손님이 왔다고 언급하더라고요... 그래서 제가 방랑자를 찾아달라고 부탁했어요",
+                "th": "ในการประชุมเมื่อวาน เพื่อนร่วมงานสองสามคนพูดถึงแขกที่เคยเดินทางมาอย่างโชกโชนที่เพิ่งมาถึงจินโจว... และนั่นคือสาเหตุที่ฉันมาพบคุณ",
+                "zh-Hans": "昨天开会的时候，有几位同事提到了今州最近来了一位见多识广的客人……所以就拜托我找到了您。",
+                "zh-Hant": "昨天開會的時候，有幾位同事提到了今州最近來了一位見多識廣的客人……所以就拜託我找到了您。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bekomme ich als Vorteil einen frühen Zugang zu dem Spiel?",
+                    "en": "Do I get an early access to the game as a perk?",
+                    "es": "¿Obtengo un acceso temprano al juego como una ventaja?",
+                    "fr": "Puis-je jouer le jeu avant qu'il soit disponible si je vous aide ?",
+                    "ja": "手伝う代わりに、先行プレイしたい。",
+                    "ko": "도와주면 미리 게임을 할 수 있나요?",
+                    "th": "แล้วฉันจะได้สิทธิ์เล่นเกมก่อนใครไหม?",
+                    "zh-Hans": "帮忙的话能不能提前玩到游戏？",
+                    "zh-Hant": "幫忙的話能不能提前玩到遊戲？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Aber ich habe es noch nie zuvor gelesen...",
+                    "en": "But I've never read it before...",
+                    "es": "Pero nunca lo he leído antes...",
+                    "fr": "Cependant, je n'ai pas lu ce roman.",
+                    "ja": "この小説読んだことないけど……",
+                    "ko": "전 이 소설책을 본 적이 없어요",
+                    "th": "แต่ฉันไม่เคยอ่านเรื่องนี้มาก่อนเลย...",
+                    "zh-Hans": "可是我没看过这本小说。",
+                    "zh-Hant": "可是我沒看過這本小說。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich, wir werden dich informieren, sobald es Fortschritte in dem Spiel gibt.",
+                "en": "Of course, we'll let you know whenever there's progress in the game.",
+                "es": "Por supuesto, te informaremos siempre que haya progreso en el juego.",
+                "fr": "Bien sûr, je vous informerai à chaque avancée du jeu.",
+                "ja": "もちろん！ゲーム開発の進展がある場合も、随時報告しますね。",
+                "ko": "물론이죠. 게임 개발이 진행될 때마다 알려드릴게요",
+                "th": "แน่นอน เราจะแจ้งให้คุณทราบทุกครั้งที่เกมมีความคืบหน้า",
+                "zh-Hans": "当然，每当游戏有进展我们都会告知你的。",
+                "zh-Hant": "當然，每當遊戲有進展我們都會告知你的。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist in Ordnung. Ich werde dir die entsprechenden Szenen in dem Roman detailliert beschreiben, wenn du es brauchst.",
+                "en": "It's okay. I'll describe to you in detail the related scenes in the novel when you need me to.",
+                "es": "Está bien. Te describiré en detalle las escenas relacionadas en la novela cuando me necesites.",
+                "fr": "Ne vous inquiétez pas, je vous expliquerai en détail les scènes du roman à ce moment-là.",
+                "ja": "私が小説の該当シーンをじっくり紹介しますので大丈夫です！",
+                "ko": "괜찮아요. 저희가 필요할 때마다 소설 속 장면을 자세히 알려줄게요",
+                "th": "ไม่เป็นไร เดี๋ยวฉันจะอธิบายฉากที่เกี่ยวข้องในนิยายให้คุณฟังอย่างละเอียดเองถ้าคุณต้องการ",
+                "zh-Hans": "没关系的，到时候，我会跟你详细讲述小说里的场景。",
+                "zh-Hant": "沒關係的，到時候，我會跟你詳細講述小說裡的場景。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Einfach ausgedrückt, du musst uns nur einige realen Referenzen finden, die zu den Beschreibungen in dem Roman passen.",
+                "en": "Simply put, all you need to do is find us some real-world references that fit the descriptions in the novel.",
+                "es": "En pocas palabras, todo lo que necesitas hacer es encontrarnos algunas referencias del mundo real que se ajusten a las descripciones en la novela.",
+                "fr": "En bref, vous devez fournir des références réalistes en accord avec les descriptions du roman.",
+                "ja": "お手伝いいただきたい内容なのですが、簡単に言うと資料集め……小説に出た「何か」と近いものを探してきてほしいのです。",
+                "ko": "간단히 말해서, 소설의 묘사에 부합하는 현실적인 물건들을 찾아주시면 돼요",
+                "th": "พูดง่ายๆ ก็คือ คุณแค่หารูปภาพอ้างอิงจากโลกแห่งความเป็นจริงที่ตรงกับคำอธิบายในนิยายมาให้เราเท่านั้นเอง",
+                "zh-Hans": "简单来说，你需要做的，就是提供一些符合小说描述的现实物品参考。",
+                "zh-Hant": "簡單來說，你需要做的，就是提供一些符合小說描述的現實物品參考。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit diesen Referenzen können die Entwickler ein allgemeines Bild davon bekommen, wie die Spielwelt aussehen sollte.",
+                "en": "With these references, the developers can have a general picture of what the in-game world should look like.",
+                "es": "Con estas referencias, los desarrolladores pueden tener una imagen general de cómo debería ser el mundo del juego.",
+                "fr": "En se référant à des objets réels, les développeurs peuvent savoir comment créer les scènes du jeu.",
+                "ja": "実物を見れば開発スタッフもそのシーンのイメージが湧く、ということなのでしょう。",
+                "ko": "실제 아이템을 통해 개발자는 게임의 장면을 어떻게 만들어야 하는지 알 수 있거든요",
+                "th": "ภาพอ้างอิงเหล่านี้จะช่วยให้ทีมพัฒนาเห็นภาพรวมว่าโลกในเกมควรจะมีหน้าตาเป็นอย่างไร",
+                "zh-Hans": "有了现实物品参考，开发人员就知道要把游戏里的场景做成什么样子了。",
+                "zh-Hant": "有了現實物品參考，開發人員就知道要把遊戲裡的場景做成什麼樣子了。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gibt es Belohnungen für diesen Job?",
+                    "en": "Any rewards for this job?",
+                    "es": "¿Hay recompensas por este trabajo?",
+                    "fr": "Y a-t-il une récompense ?",
+                    "ja": "報酬はある？",
+                    "ko": "보상은 있나요?",
+                    "th": "แล้วงานนี้มีรางวัลอะไรบ้างไหม?",
+                    "zh-Hans": "有什么奖励吗？",
+                    "zh-Hant": "有什麼獎勵嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Darüber musst du dir keine Sorgen machen. Wir haben ein großes Budget für das Spiel und du wirst für deine Bemühungen gut entlohnt.",
+                "en": "You don't need to worry about that. We have a deep budget for the game and you'll be well compensated for your efforts.",
+                "es": "No necesitas preocuparte por eso. Tenemos un gran presupuesto para el juego y serás bien recompensado por tus esfuerzos.",
+                "fr": "Ne vous inquiétez pas, le budget du jeu est suffisant, et on a préparé une récompense considérable.",
+                "ja": "ご安心ください！ゲームの開発予算は十二分に用意していますので、満足のいく額を約束しましょう。",
+                "ko": "걱정마세요. 게임의 개발 비용은 충분해요. 보상도 충분히 드릴 거예요",
+                "th": "เรื่องนั้นคุณไม่ต้องกังวล เรามีงบประมาณสำหรับเกมนี้เยอะมาก และคุณจะได้รับค่าตอบแทนอย่างงามสำหรับความพยายามอย่างแน่นอน",
+                "zh-Hans": "这个你可以放心，游戏的开发费用还是很充足的，会提供相当丰厚的报酬。",
+                "zh-Hant": "這個你可以放心，遊戲的開發費用還是很充足的，會提供相當豐厚的報酬。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin dabei.",
+                    "en": "I'm in.",
+                    "es": "Estoy dentro.",
+                    "fr": "Oui, c'est bon;",
+                    "ja": "その話、乗った！",
+                    "ko": "제가 도와줄게요",
+                    "th": "ฉันเอาด้วย",
+                    "zh-Hans": "这个忙我帮了。",
+                    "zh-Hant": "這個忙我幫了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Vergiss nicht, mich in den Credits aufzunehmen.",
+                    "en": "Don't forget to include me in the credits.",
+                    "es": "No olvides incluirme en los créditos.",
+                    "fr": "Incluez-moi dans la liste de l'équipe de développement.",
+                    "ja": "クレジットにも入れて！",
+                    "ko": "개발팀 명단에 절 넣는 거 잊지 마세요",
+                    "th": "อย่าลืมใส่ชื่อฉันลงในเครดิตด้วยนะ",
+                    "zh-Hans": "记得把我放进开发组名单。",
+                    "zh-Hant": "記得把我放進開發組名單。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich. Wenn das reibungslos läuft, könnte der Name von {PlayerName} auf unserer \"Besonderen Dank\" Liste erscheinen.",
+                "en": "Of course. If this goes smoothly, the name of {PlayerName} may appear on our \"Special Thanks\" list.",
+                "es": "Por supuesto. Si todo va bien, el nombre de {PlayerName} puede aparecer en nuestra lista de \"Agradecimientos especiales\".",
+                "fr": "Bien sûr, si le jeu est terminé avec succès, le grand nom de {PlayerName} sera ajouté à notre liste de remerciements spéciaux.",
+                "ja": "はい！ゲームが無事完成したら、{PlayerName}の名前をスペシャルサンクスに入れさせていただきます。",
+                "ko": "물론이죠. 게임이 잘 마무리되면 방랑자의 이름은 저희의 특별 감사 명단에 올라 있을 거예요",
+                "th": "แน่นอน ถ้าทุกอย่างราบรื่น ชื่อ {PlayerName} อาจจะไปปรากฏอยู่ในรายชื่อ \"ขอขอบคุณเป็นพิเศษ\" ของเราก็ได้",
+                "zh-Hans": "这是当然的，如果游戏能够顺利完成，{PlayerName}的大名会放在我们的特别感谢名单中。",
+                "zh-Hant": "這是當然的，如果遊戲能夠順利完成，{PlayerName}的大名會放在我們的特別感謝名單中。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass uns mit der heutigen Aufgabe beginnen, wenn du bereit bist.",
+                "en": "Let's begin with today's job if you're ready.",
+                "es": "Comencemos con el trabajo de hoy si estás {Male=listo;Female=lista}.",
+                "fr": "Si vous êtes prêt, commençons à préparer la scène du jeu d'aujourd'hui.",
+                "ja": "では早速、資料集め開始です！",
+                "ko": "준비가 다 되셨다면 오늘 맵 제작을 시작할까요?",
+                "th": "ถ้าคุณพร้อมแล้ว เรามาเริ่มงานของวันนี้กันเลยดีกว่า",
+                "zh-Hans": "如果你准备好了的话，我们就开始准备制作今天的游戏场景吧？",
+                "zh-Hant": "如果你準備好了的話，我們就開始準備製作今天的遊戲場景吧？"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 201,
+                "name": {
+                  "zh-Hans": "马琪"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

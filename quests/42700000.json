@@ -1,0 +1,120 @@
+{
+  "id": 42700000,
+  "key": "251023",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "zh-Hans": "测试文本"
+  },
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 42700089,
+          "mapId": 100,
+          "blueprintType": "NPC229",
+          "name": "TsEntity_180_001_皇龙男3",
+          "areaId": 0,
+          "position": {
+            "x": -149000,
+            "y": -106560,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 42700089,
+          "mapId": 100,
+          "blueprintType": "NPC229",
+          "name": "TsEntity_180_001_皇龙男3",
+          "areaId": 0,
+          "position": {
+            "x": -149000,
+            "y": -106560,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 5,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    }
+  ]
+}

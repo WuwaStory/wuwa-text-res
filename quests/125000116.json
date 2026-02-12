@@ -1,0 +1,840 @@
+{
+  "id": 125000116,
+  "key": "三流画家3",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Drittklassiger Maler",
+    "en": "Third-rate Painter",
+    "es": "Pintor de tercera categoría",
+    "fr": "Un peintre très « célèbre »",
+    "ja": "三流画家",
+    "ko": "삼류 화가",
+    "th": "จิตรกรชั้นสาม",
+    "zh-Hans": "三流画家",
+    "zh-Hant": "三流畫家"
+  },
+  "desc": {
+    "de": "Der besorgte Maler hat seine frühere Vitalität verloren. Frag ihn warum und biete deine Hilfe an.",
+    "en": "The worried painter has lost his former vigor. Ask him why and offer your help.",
+    "es": "El pintor preocupado ha perdido su antiguo vigor. Pregúntale por qué y ofrece tu ayuda.",
+    "fr": "Le peintre inquiet a perdu sa fougue d'antan. Demandez-lui pourquoi et proposez-lui votre aide.",
+    "ja": "画家が何故か落胆しているようだ。その原因を聞いて助けよう。",
+    "ko": "수심에 잠긴 화가한테 가서 원인을 물어보고 도움을 주세요",
+    "th": "จิตรกรผู้กลัดกลุ้มไร้ชีวิตชีวาอย่างที่เคยเป็น สอบถามเหตุผลและเสนอตัวช่วยเหลือเขา",
+    "zh-Hans": "愁眉苦脸的画家失去了往日的活力，前去询问原因并提供帮助吧。",
+    "zh-Hant": "愁眉苦臉的畫家失去了往日的活力，前去詢問原因並提供幫助吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Dianran",
+        "en": "Talk to Dianran",
+        "es": "Habla con Dianran",
+        "fr": "Parler à Dianran",
+        "ja": "点染と話す",
+        "ko": "주현과 대화",
+        "th": "คุยกับ Dianran",
+        "zh-Hans": "与点染交谈",
+        "zh-Hant": "與點染交談"
+      },
+      "entities": [
+        {
+          "entityId": 125001072,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "画画摆件控制器",
+          "areaId": 301,
+          "position": {
+            "x": -49268,
+            "y": 117941,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001077,
+          "mapId": 8,
+          "blueprintType": "NPC0277",
+          "name": "点染3",
+          "areaId": 301,
+          "position": {
+            "x": -49312,
+            "y": 117780,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001078,
+          "mapId": 8,
+          "blueprintType": "SceneObj205",
+          "name": "椅子3",
+          "areaId": 301,
+          "position": {
+            "x": -49076,
+            "y": 117778,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_三流画家",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Seufz…",
+                "en": "Sigh…",
+                "es": "Suspiro…",
+                "fr": "Ah...",
+                "ja": "はぁ～",
+                "ko": "에이...",
+                "th": "เฮ้อ...",
+                "zh-Hans": "唉……",
+                "zh-Hant": "唉……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum so ein langes Gesicht?",
+                    "en": "Why the long face?",
+                    "es": "¿Por qué esa cara larga?",
+                    "fr": "Quelque chose de désagréable s'est-il passé ?",
+                    "ja": "嫌な事でもあった？",
+                    "ko": "왜 우거지상을 하고 있나요?",
+                    "th": "ทำไมทำหน้าเศร้าแบบนั้นล่ะ?",
+                    "zh-Hans": "你怎么愁眉苦脸的？",
+                    "zh-Hant": "你怎麼愁眉苦臉的？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Weil mein Geschäft schlecht läuft. Die Leute sagen ständig, meine Gemälde könnten mit dem Trend nicht mithalten.",
+                "en": "Because my business is slow. People keep saying my paintings can't keep up with the trend.",
+                "es": "Porque mi negocio está lento. La gente sigue diciendo que mis pinturas no pueden seguir la tendencia.",
+                "fr": "On ne cesse de me dire que mes dessisn sont mauvais...",
+                "ja": "商売がうまくいかないんですよ……いつまでもいつまでも、下手下手と言われ続けますし……",
+                "ko": "장사가 잘 안돼서요... 사람들은 제가 그림을 잘 그리지 못한다고 하는데...",
+                "th": "นั่นก็เพราะช่วงนี้ธุรกิจของฉันซบเซาน่ะสิ ผู้คนเอาแต่พูดกันว่า ภาพวาดของฉันล้าสมัยไม่ตามเทรนด์เลย",
+                "zh-Hans": "还不是因为生意不好……总有人说我画得不入流……",
+                "zh-Hant": "還不是因為生意不好……總有人說我畫得不入流……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann nicht nur vom Malen leben... Am Ende des Tages zahlen all diese Gespräche über Kunst und geistige Befriedigung nicht die Rechnungen.",
+                "en": "I can't make a living just by painting… At the end of the day, all that talk about art and spiritual gratification won't pay the bills.",
+                "es": "No puedo ganarme la vida solo pintando... Al final del día, todo ese discurso sobre el arte y la gratificación espiritual no paga las facturas.",
+                "fr": "En tant qu'artiste, je ne peux pas manger...Qu'est-ce que l'art... Qu'est-ce que l'épanouissement... mais je veux juste un pain...",
+                "ja": "絵描きじゃ、飯なんて食えやしない……何が芸術……何が心の充実だよ……結局、腹は満たせないじゃないか……",
+                "ko": "그림 그리는 걸로는 먹고 살수도 없잖아요... 예술이니, 정신적 풍요이니 해도 결국 저에게 중요한 건 빵 한조각이에요",
+                "th": "ฉันไม่สามารถหาเงินด้วยการวาดภาพเพียงอย่างเดียวได้... ท้ายที่สุดแล้วเรื่องศิลปะกับความสุขทางใจมันก็เอามาประทังชีวิตไม่ได้",
+                "zh-Hans": "画画根本养不活我嘛……什么艺术，什么心灵的富足，到头来不如先给我一块锅盔。",
+                "zh-Hant": "畫畫根本養不活我嘛……什麼藝術，什麼心靈的富足，到頭來不如先給我一塊鍋盔。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich dachte, nach dem Abschluss könnte ich mit dem Malen Geld verdienen, um meine Eltern für das Geld, das sie für meine Kunstschule ausgegeben haben, zurückzuzahlen. Es scheint, als würde ich nur träumen.",
+                "en": "I thought after graduation I could make money from painting to repay my parents for the money they'd spent to put me in art school. It seemed like I was daydreaming.",
+                "es": "Pensé que después de graduarme podría ganar dinero pintando para devolver a mis padres el dinero que habían gastado para ponerme en la escuela de arte. Parecía que estaba soñando despierto.",
+                "fr": "Une fois diplômé, je voulais gagner ma vie en dessinant, gagner de l'argent que mes parents avaient payés... Mais, peut-être que ce n'était qu'un rêve irréalisable...",
+                "ja": "卒業したら、絵を描いて稼いで、両親が出してくれた学費も返済して……でも、そんなの単なる絵空事だったのかな……",
+                "ko": "부모님께서는 많은 돈을 써서 미술을 배우게 해주셨고, 졸업 후 그림 그리는걸로 부모님에게 보답할 만큼 돈을 벌 수 있을 거라 생각했는데... 제가 너무 이상적으로만 생각했나 봐요",
+                "th": "ฉันเคยคิดว่าพอเรียนจบ จะหาเงินจากการวาดภาพไปคืนเงินพ่อกับแม่ที่ส่งเสียให้ฉันเรียนโรงเรียนศิลปะได้ แต่ตอนนี้รู้สึกว่านั่นเหมือนฝันกลางวันไปเลยน่ะ",
+                "zh-Hans": "本来以为毕业之后画画赚钱能把父母供我学艺术的花销补回来，看来是我异想天开了。",
+                "zh-Hant": "本來以為畢業之後畫畫賺錢能把父母供我學藝術的花銷補回來，看來是我異想天開了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe in letzter Zeit darüber nachgedacht, ob ich den Beruf wechseln sollte. Vielleicht bin ich einfach nicht gut im Porträtmalen?",
+                "en": "I've been thinking whether I should switch careers recently. Maybe I'm just not good at portrait painting?",
+                "es": "He estado pensando si debería cambiar de carrera recientemente. ¿Quizás simplemente no soy bueno en la pintura de retratos?",
+                "fr": "En fait, j'y pense depuis un moment. Peut-être que je ne suis pas fait pour dessiner des gens...",
+                "ja": "実は少し前から考えてるんです。もしかして僕は、人を描くの向いてないんじゃないかって……",
+                "ko": "얼마 전부터 그림 주제를 바꿀까 말까 고민했는데, 제가 그냥 초상화를 잘 못 그리는 건지도 모르겠네요",
+                "th": "ฉันคิดมาสักพักหนึ่งแล้วว่า ฉันควรหางานอื่นดีไหม บางทีฉันอาจจะวาดภาพไม่เก่งจริงๆ ก็ได้",
+                "zh-Hans": "我前段时间认真考虑了要不要换个赛道，说不定我只是不擅长画人像？",
+                "zh-Hant": "我前段時間認真考慮了要不要換個賽道，說不定我只是不擅長畫人像？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau, gestern bin ich aus Jinzhou rausgegangen, um Landschaften zu skizzieren.",
+                "en": "Look, yesterday I went out of Jinzhou to sketch landscapes.",
+                "es": "Mira, ayer salí de Jinzhou para esbozar paisajes.",
+                "fr": "Regardez s'il vous plaît. C'est un paysage que j'ai dessiné hier à l'extérieur de la ville.",
+                "ja": "見てください。これは昨日、城外で描いた風景画です。",
+                "ko": "좀 봐주세요, 어제 스케치하러 성 밖으로 나갔었어요",
+                "th": "ดูนี่สิ เมื่อวานฉันออกไปวาดภาพวิวทิวทัศน์ที่จินโจวมา",
+                "zh-Hans": "你看，我昨天还出城去写生风景。",
+                "zh-Hant": "你看，我昨天還出城去寫生風景。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Glaubst du, ich sollte weiter Porträts malen oder auf Landschaftsmalerei umsteigen?",
+                "en": "Do you think I should continue to paint portraits or switch to painting landscapes?",
+                "es": "¿Crees que debería seguir pintando retratos o cambiar a pintar paisajes?",
+                "fr": "Qu'en pensez-vous ?\nQu'est-ce qui est mieux dessiné, le portrait ou le paysage ?",
+                "ja": "どうですか？肖像画と風景画、どっちがよく描けていますか？",
+                "ko": "의견 좀 주세요. 제가 그린 초상화나 풍경화 중에 뭐가 더 낫다고 생각하시나요?",
+                "th": "คุณคิดว่าฉันควรวาดภาพเหมือนต่อไป หรือหันไปวาดภาพทิวทัศน์ดีนะ?",
+                "zh-Hans": "你帮我看看呗，你觉得我画的人像好还是风景好？",
+                "zh-Hant": "你幫我看看唄，你覺得我畫的人像好還是風景好？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Porträts.",
+                    "en": "Portraits.",
+                    "es": "Retratos.",
+                    "fr": "Portrait.",
+                    "ja": "肖像画。",
+                    "ko": "초상화가 더 나아요",
+                    "th": "ภาพเหมือน",
+                    "zh-Hans": "人像好。",
+                    "zh-Hant": "人像好。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Landschaften.",
+                    "en": "Landscapes.",
+                    "es": "Paisajes.",
+                    "fr": "Paysage.",
+                    "ja": "風景画。",
+                    "ko": "풍경화가 더 나아요",
+                    "th": "ภาพทิวทัศน์",
+                    "zh-Hans": "风景好。",
+                    "zh-Hant": "風景好。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nicht viel Unterschied.",
+                    "en": "Not much difference.",
+                    "es": "No hay mucha diferencia.",
+                    "fr": "Ça ne change pas.",
+                    "ja": "変わらない。",
+                    "ko": "수준이 비슷하고 별 차이가 없어요",
+                    "th": "ก็ไม่ต่างกันเท่าไร",
+                    "zh-Hans": "水平差不多，没什么区别。",
+                    "zh-Hant": "水準差不多，沒什麼區別。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wirklich? Hast du noch andere Meinungen?",
+                "en": "Really? Do you have any other opinions?",
+                "es": "¿En serio? ¿Tienes alguna otra opinión?",
+                "fr": "Je vois... Avez-vous d'autres opinions ou suggestions ?",
+                "ja": "そうですか……私は一体どうすればいいのでしょうか？",
+                "ko": "혹시... 다른 의견 있나요?",
+                "th": "จริงเหรอ? คุณพอจะมีความเห็นอื่นอีกไหม?",
+                "zh-Hans": "这样吗……你还有其他意见吗？",
+                "zh-Hant": "這樣嗎……你還有其他意見嗎？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Versuche deinen Stil zu ändern.",
+                    "en": "Try changing your style.",
+                    "es": "Prueba cambiando tu estilo.",
+                    "fr": "Essayez un autre style.",
+                    "ja": "……違うスタイルに挑戦してみては？",
+                    "ko": "다른 스타일을 시도해 보세요",
+                    "th": "ลองเปลี่ยนสไตล์ดูสิ",
+                    "zh-Hans": "换个风格试试吧。",
+                    "zh-Hant": "換個風格試試吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Versuche deinen Beruf zu ändern.",
+                    "en": "Try changing your career.",
+                    "es": "Prueba cambiando tu carrera.",
+                    "fr": "Essayez un autre métier.",
+                    "ja": "……他の業界を目指してみては？",
+                    "ko": "다른 업종을 시도해 보세요",
+                    "th": "ลองเปลี่ยนอาชีพดูสิ",
+                    "zh-Hans": "换个行业试试吧。",
+                    "zh-Hant": "換個行業試試吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mein Stil... das macht Sinn. Warum habe ich das nicht schon früher bedacht?",
+                "en": "My style… that makes sense. Why didn't I think of that before?",
+                "es": "Mi estilo... tiene sentido. ¿Por qué no pensé en eso antes?",
+                "fr": "Essayer un autre style ? Peut-être... c'est raisonnable.",
+                "ja": "他のスタイル……確かに一理ありますね。僕としたことが、失念してしました……",
+                "ko": "스타일을 바꾸라고요? 좋은 생각이네요! 저는 왜 그런 생각을 못 했죠?",
+                "th": "เปลี่ยนสไตล์... ฟังดูสมเหตุผลดี ทำไมฉันไม่เคยคิดเรื่องนี้มาก่อนเลยนะ?",
+                "zh-Hans": "换个风格……有道理。我之前怎么没想到呢？",
+                "zh-Hant": "換個風格……有道理。我之前怎麼沒想到呢？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mein Beruf... ich habe das überhaupt nicht bedacht.",
+                "en": "My career... I haven't thought about that at all.",
+                "es": "Mi carrera... no lo había pensado en absoluto.",
+                "fr": "D'autres métiers ? Alors, je n'ai pas d'idée...",
+                "ja": "他の業界？そんなの考えた事ありませんね。",
+                "ko": "업종을 바꾸라고요? 저는 그런 생각은 해 본 적이 없거든요",
+                "th": "อาชีพใหม่เหรอ... ฉันไม่เคยคิดถึงเรื่องนั้นเลย",
+                "zh-Hans": "换个行业？我倒是没有想过这个呢。",
+                "zh-Hant": "換個行業？我倒是沒有想過這個呢。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich würde nicht einmal daran denken. Ich liebe das Malen immer noch. Selbst wenn niemand meine Werke schätzt und niemand dafür bezahlt, möchte ich das, was ich wirklich liebe und genieße, nicht aufgeben.",
+                "en": "I wouldn't even think about it. I still love painting. Even if no one appreciates my pieces and no one pays for them, I still don't want to give up what I truly love and enjoy.",
+                "es": "Ni siquiera lo pensaría. Todavía amo pintar. Incluso si nadie aprecia mis obras y nadie las paga, aún no quiero renunciar a lo que realmente amo y disfruto.",
+                "fr": "Non, ou plutôt, je ne peux pas y penser. J'aime dessiner. Même si personne n'aime mes œuvres, même si je ne suis pas reconnu, je ne veux pas abandonner.",
+                "ja": "いいや、というか考えられません。僕は、描く事が好きなんです。人に嫌われても、認められなくても、諦めたくはない。",
+                "ko": "아니요, 업종을 바꾸는 걸 전혀 고려하지 않을 거예요. 저는 여전히 그림을 사랑해요. 아무도 칭찬해 주지 않고, 아무도 돈을 주지 않더라도 저는 사랑하는 것을 포기하고 싶지 않아요...",
+                "th": "ฉันไม่แม้แต่จะคิดเรื่องนั้นเลย... ฉันยังรักการวาดรูปอยู่นะ ถึงจะไม่มีใครเห็นค่าหรือยอมจ่ายเงินซื้อมันก็เถอะ ฉันไม่อยากทิ้งสิ่งที่ฉันรักและสนุกกับมันจริงๆ น่ะ",
+                "zh-Hans": "不，不如说我根本不会考虑这个。我还是很喜欢画画的，就算没人叫好，没人买单，我也还不想放弃我所热爱的……",
+                "zh-Hant": "不，不如說我根本不會考慮這個。我還是很喜歡畫畫的，就算沒人叫好，沒人買單，我也還不想放棄我所熱愛的……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht ist es eine gute Wahl, meinen Stil zu ändern.",
+                "en": "Maybe changing my style is a good choice.",
+                "es": "Quizás cambiar mi estilo sea una buena elección.",
+                "fr": "Mais essayer un style différent pourrait être une bonne idée...",
+                "ja": "そうですね……違うスタイルに挑戦してみるというのも良いかもしれませんね……",
+                "ko": "스타일을 바꾸는 게 좋은 선택일 수도 있겠어요",
+                "th": "บางทีการเปลี่ยนสไตล์ของฉันอาจจะเป็นทางเลือกที่ดีก็ได้",
+                "zh-Hans": "换个风格或许是不错的选择。",
+                "zh-Hant": "換個風格或許是不錯的選擇。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warte, mir ist plötzlich eine Idee gekommen. Schnell, setz dich. Lass mich das in die Praxis umsetzen.",
+                "en": "Wait, an idea suddenly came to me. Quick, take a seat. Let me put it into practice.",
+                "es": "Espera, de repente se me ocurrió una idea. Rápido, siéntate. Déjame ponerla en práctica.",
+                "fr": "Ah, j'ai une idée ! Allez, par ici... Laissez-moi vous montrer mon nouveau style !",
+                "ja": "おお、閃いた！ささ、こちらへ……僕の新スタイルをお見せしましょう！",
+                "ko": "갑자기 영감이 떠올랐어요! 자, 빨리 앉아보세요. 제가 한번 시도해 볼게요!",
+                "th": "เดี๋ยวนะ อยู่ๆ ฉันก็มีไอเดียผุดขึ้นมา เร็วเข้า นั่งลงหน่อย ฉันอยากจะลองไอเดียนี้ดู",
+                "zh-Hans": "说到这个我突然来灵感了。快，你坐，让我实践一番。",
+                "zh-Hant": "說到這個我突然來靈感了。快，你坐，讓我實踐一番。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Setz dich",
+        "en": "Sit Down",
+        "es": "Siéntate.",
+        "fr": "S'asseoir",
+        "ja": "座る",
+        "ko": "앉기",
+        "th": "นั่งลง",
+        "zh-Hans": "坐下",
+        "zh-Hant": "坐下"
+      },
+      "entities": [
+        {
+          "entityId": 125001078,
+          "mapId": 8,
+          "blueprintType": "SceneObj205",
+          "name": "椅子3",
+          "areaId": 301,
+          "position": {
+            "x": -49076,
+            "y": 117778,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Dianran",
+        "en": "Talk to Dianran",
+        "es": "Habla con Dianran",
+        "fr": "Parler à Dianran",
+        "ja": "点染と話す",
+        "ko": "주현과 대화",
+        "th": "คุยกับ Dianran",
+        "zh-Hans": "与点染交谈",
+        "zh-Hant": "與點染交談"
+      },
+      "entities": [
+        {
+          "entityId": 125001072,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "画画摆件控制器",
+          "areaId": 301,
+          "position": {
+            "x": -49268,
+            "y": 117941,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001077,
+          "mapId": 8,
+          "blueprintType": "NPC0277",
+          "name": "点染3",
+          "areaId": 301,
+          "position": {
+            "x": -49312,
+            "y": 117780,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_三流画家",
+          "flowIndex": 3,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich habe das Thema abstrahiert und einen symbolistischen Ansatz gewählt, um die Emotionen zu erklären. Was denkst du?",
+                "en": "I abstracted the subject and adopted a symbolistic approach to explicate the emotions. What do you think?",
+                "es": "He abstraído el sujeto y adoptado un enfoque simbolista para explicar las emociones. ¿Qué te parece?",
+                "fr": "En abstrayant l'objet, nous avons transformé les émotions en expressions concrètes via plusieurs symboles. Qu'en pensez-vous ?",
+                "ja": "対象を抽象化する事で、いくつかのシンボルを介し、感情を具体的な表現へとトランスフォームさせました。どうですか？",
+                "ko": "사물을 추상화하고 기호를 활용하여 감정을 표현으로 구체화시켜 보았는데, 이번에는 어떻게 생각하시나요?",
+                "th": "ฉันรังสรรค์แบบออกมาให้เป็นนามธรรม และใช้แนวทางเชิงสัญลักษณ์เพื่อถ่ายทอดอารมณ์ความรู้สึกออกมา คุณคิดว่าเป็นอย่างไรบ้าง?",
+                "zh-Hans": "我将对象进行了抽象化处理，利用符号将情绪外化为表现，这次你觉得怎么样？",
+                "zh-Hant": "我將對象進行了抽象化處理，利用符號將情緒外化為表現，這次你覺得怎麼樣？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ziemlich cool.",
+                    "en": "Pretty cool.",
+                    "es": "Bastante genial.",
+                    "fr": "C'est cool !",
+                    "ja": "カッコいい！",
+                    "ko": "멋져요",
+                    "th": "แจ๋วไปเลยนะ",
+                    "zh-Hans": "酷。",
+                    "zh-Hant": "酷。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ein großer dunkler Fleck. Kann nicht verstehen, was du zu ausdrücken versuchst...",
+                    "en": "A large dark blob. Can't understand what you're trying to express…",
+                    "es": "Un gran manchón oscuro. No entiendo lo que intentas expresar…",
+                    "fr": "C'est...obscure.",
+                    "ja": "真っ黒でわからなくなった……",
+                    "ko": "어둡고 좀 추상적으로 보이는데 이해가 안가네요...",
+                    "th": "ก็แค่ปื้นสีดำก้อนใหญ่ ฉันไม่เข้าใจว่าคุณพยายามจะสื่ออะไร...",
+                    "zh-Hans": "黑漆漆的一团，我看不懂了……",
+                    "zh-Hant": "黑漆漆的一團，我看不懂了……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nicht schlecht. Scheint die Gemeinsamkeit menschlicher Emotionen zu metaphorisieren.",
+                    "en": "Not bad. Seems to metaphorize the commonality of human emotions.",
+                    "es": "No está mal. Parece que metaforiza la comunalidad de las emociones humanas.",
+                    "fr": "Est-ce une métaphore du sentiment humaine...",
+                    "ja": "悪くない……これは人類が持つ共感性への隠喩か……",
+                    "ko": "괜찮은데요! 인간의 감정적 공통성을 은유한 것 같아요",
+                    "th": "ก็ไม่เลวนะ ดูเหมือนจะเป็นการเปรียบเปรยถึงความรู้สึกร่วมของอารมณ์มนุษย์น่ะ",
+                    "zh-Hans": "不错，似乎隐喻了人类情感共性。",
+                    "zh-Hant": "不錯，似乎隱喻了人類情感共性。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Macht nichts. Ich hatte Spaß beim Malen. Ob das Publikum es versteht oder nicht, ist nicht meine Sorge.",
+                "en": "Never mind. I had fun painting it. Whether the audience understands it or not is not my concern.",
+                "es": "No importa. Me divertí pintándolo. Si el público lo entiende o no, no es mi preocupación.",
+                "fr": "C'est parfait comme ça. J'ai créé mon chef-d'œuvre... « Comprendre » ou « ne pas comprendre » n'est qu'une question de mauvais goût.",
+                "ja": "これでいいんです。僕は今、最高傑作を生みだした……“わかる”とか“わからない”は、無粋な問題でしかありません。",
+                "ko": "아무튼 이번에는 제가 즐겁고 편하게 그림을 그렸으니, 방랑자가 이해하지 못하셔도 괜찮아요!",
+                "th": "ช่างมันเถอะ ฉันสนุกที่ได้วาดก็พอแล้ว ส่วนผู้ชมจะเข้าใจหรือไม่ นั่นไม่ใช่ธุระของฉัน",
+                "zh-Hans": "别管了，我这次画得快乐又轻松，看不看得懂又有什么关系呢。",
+                "zh-Hant": "別管了，我這次畫得快樂又輕鬆，看不看得懂又有什麼關係呢。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hey! Du hast die Fachsprache schon drauf! Und... du klingst sehr überzeugend.",
+                "en": "Hey! You're already picking up the lingo! And... you sound very convincing.",
+                "es": "¡Hey! ¡Ya estás adoptando el lenguaje! Y... suenas muy convincente.",
+                "fr": "Hein ? Vous êtes aussi de ce côté ? C'est une remarque intéressante ...",
+                "ja": "ん？あなたもこっち側の人間ですか？なかなか鋭い切り口の感想ですね……",
+                "ko": "벌써 이런 말을 할 줄 아시는군요? 음... 듣기만 해도 일리가 있네요",
+                "th": "เฮ้! คุณเริ่มพูดภาษาศิลปะเป็นแล้วนี่นา! แถม... ยังพูดได้น่าเชื่อถืออีกต่างหาก",
+                "zh-Hans": "嗯？你这么快也会说这种话了。嗯……听起来就很有道理。",
+                "zh-Hant": "嗯？你這麼快也會說這種話了。嗯……聽起來就很有道理。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe gesehen, dass die Galerie wieder eine öffentliche Ausschreibung macht, und ich versuche mein Glück wieder mit diesen Stücken im neuen Stil.",
+                "en": "I saw that the gallery is advertising a public tender again, and I'm to try my luck again with these pieces with a new style.",
+                "es": "Vi que la galería está anunciando una licitación pública de nuevo, y voy a intentar mi suerte de nuevo con estas piezas con un nuevo estilo.",
+                "fr": "J'ai entendu dire qu'une galerie sollicite des œuvres d'art actuellement. Donc, je souhaite soumettre à nouveau, avec ce nouveau style.",
+                "ja": "今、ある画廊が展示作品を募集していると聞きました。だから、この新スタイルで、もう一度提出してみたいと思います。",
+                "ko": "요즘 갤러리에서 작품을 공모하고 있는데, 이런 스타일의 작품을 가지고 다시 한번 투고를 해보려고 해요",
+                "th": "ฉันเห็นว่าหอศิลป์เปิดรับผลงานเข้าประกวดอีกแล้ว ฉันว่าจะลองเสี่ยงโชคอีกครั้งด้วยผลงานสไตล์ใหม่พวกนี้ดู",
+                "zh-Hans": "我看到画廊最近又在征集作品，我打算拿这个风格的作品再去试一次。",
+                "zh-Hant": "我看到畫廊最近又在徵集作品，我打算拿這個風格的作品再去試一次。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm dieses Landschaftsbild als Geschenk. Hehe, bewahre es gut auf. Wer weiß, vielleicht ist es eines Tages ein paar Tausend wert.",
+                "en": "Take this landscape painting as a gift. Hehe, keep it well. Who knows, maybe one day it'll be worth a few grand.",
+                "es": "Toma este cuadro de paisaje como un regalo. Jeje, cuídalo bien. Quién sabe, tal vez un día valga unos cuantos miles.",
+                "fr": "Je vous offre ce paysage. Prenez-en bien soin, d'accord ? Sa valeur pourrait bien augmenter !",
+                "ja": "風景画はあなたに差し上げます。ちゃんと大事にしてくださいよ？ひょっとしたら、価値が跳ね上がるかもしれませんので！",
+                "ko": "이 풍경화를 선물로 방랑자에게 드릴게요! 헤헤, 언젠가 제 그림이 비싸질지도 모르니까 잘 보관하세요!",
+                "th": "เอานี่ รับภาพทิวทัศน์นี่ไปเป็นของขวัญสิ ฮิฮิ เก็บไว้ให้ดีล่ะ ใครจะไปรู้ ไม่แน่ว่าวันหนึ่งมันอาจจะมีมูลค่ามหาศาลขึ้นมาก็ได้นะ",
+                "zh-Hans": "这张风景画送给你吧！嘿嘿，好好保存哦，说不定哪天我的画就变贵了呢。",
+                "zh-Hant": "這張風景畫送給你吧！嘿嘿，好好保存喔，說不定哪天我的畫就變貴了呢。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, danke für deine Hilfe! Du bist meine Muse. Wünsch mir Glück!",
+                "en": "Anyway, thanks for your help! You're my muse. Wish me luck!",
+                "es": "De todos modos, ¡gracias por tu ayuda! Eres mi musa. ¡Deséame suerte!",
+                "fr": "Merci beaucoup en tout cas. Vous êtes vraiment, ma muse... Ah, bénissez mon brillant avenir !",
+                "ja": "とにかくありがとうございました。あなたは正に、僕のミューズです……ああ、僕の輝かしい未来に祝福を！",
+                "ko": "어쨌든, 도와주셔서 너무 감사해요. 방랑자는 저에게 정말 뮤즈 같은 존재예요. 저의 뮤즈, 행운을 빌어주세요!",
+                "th": "ยังไงก็ขอบใจสำหรับความช่วยเหลือของคุณนะ! คุณเป็นแรงบันดาลใจของฉันเลย อวยพรให้ฉันโชคดีด้วยนะ!",
+                "zh-Hans": "总之，谢谢你的帮忙，你简直就是我的缪斯，祝我好运吧！",
+                "zh-Hant": "總之，謝謝你的幫忙，你簡直就是我的繆斯，祝我好運吧！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_三流画家",
+          "flowIndex": 3,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Das ist es! Zerlege die Realität. Nutze die Vielfalt der menschlichen Gedanken als Leitfaden. Nutze das kollektive Gedächtnis und die emotionale Resonanz der Menschheit, um eine surrealistische Darstellung der Realität zu schaffen.",
+                "en": "That's it! Deconstruct the reality. Use the diversity of human minds as the lead. Leverage the collective memory and emotional resonance of humanity to create a surrealistic rendition of reality.",
+                "es": "¡Eso es! Deconstruir la realidad. Utilizar la diversidad de las mentes humanas como guía. Aprovechar la memoria colectiva y la resonancia emocional de la humanidad para crear una representación surrealista de la realidad.",
+                "fr": "...En sortant de l'image, si l'on se base sur la diversité de l'esprit humain...Cela peut devenir une vision surréaliste grâce à la mémoire collective et à l'empathie spirituelle.",
+                "ja": "……イメージを脱し、人間の精神多様化を母体にすれば……集合的記憶と精神共感でシュルレアリスム的なビジョンとなり得る。",
+                "ko": "맞아요, 바로 이런 거예요! 이미지는 해체되어 인간 정신의 다양성을 상징하고 집단 기억과 정서적 공감을 통해 초현실적인 반영을 형성하게 돼요",
+                "th": "นี่แหละ! ถอดองค์ประกอบจากความจริง ใช้ความหลากหลายของจิตใจมนุษย์เป็นตัวนำ ใช้ประโยชน์จากความทรงจำร่วมและเสียงสะท้อนอารมณ์ของมนุษย์ เพื่อรังสรรค์ภาพวาดเหนือจินตนาการที่หยั่งรากจากความเป็นจริง",
+                "zh-Hans": "没错，就是这样。将形象进行解构，以人的精神多元化为母体，依托于集体记忆和情感共鸣，形成一种超现实的映照。",
+                "zh-Hant": "沒錯，就是這樣。將形象進行解構，以人的精神多元化為母體，依託於集體記憶和情感共鳴，形成一種超現實的映照。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun, ich verstehe kein Wort, das aus meinem Mund kommt. Ich habe die Ausstellungen anderer renommierter Künstler besucht. Die Leute dort haben alle so geredet.",
+                "en": "Well, I don't understand a word of what's coming out of my mouth. I visited the exhibitions of other renowned artists. People there all talked like this.",
+                "es": "Bueno, no entiendo una palabra de lo que sale de mi boca. Visité las exposiciones de otros artistas renombrados. La gente allí hablaba de esta manera.",
+                "fr": "...Même si je ne comprends pas... Lorsque je visite l'exposition d'un peintre célèbre, j'entends souvent ce genre de conversations.",
+                "ja": "……と言っても僕にはわからないけど……有名な画家の個展に見学してると、よくこんな話が聞こえてくる。",
+                "ko": "음... 저도 제가 무슨 말을 하는지 잘 모르겠지만, 얼마 전에 제가 다른 유명 화가들의 작품 전시회를 보러 갔는데 거기 사람들이 다 이렇게 얘기하더군요",
+                "th": "เอ่อ ฉันไม่เข้าใจเลยสักนิดว่ากำลังพูดอะไรออกมา แต่เวลาไปดูงานแสดงของศิลปินดังคนอื่น คนเขาชอบพูดอะไรทำนองนี้กันน่ะ",
+                "zh-Hans": "我也不太懂我在说什么。但是前段时间我去看其他知名画家的展览作品，那里的人们都是这么说话的。",
+                "zh-Hant": "我也不太懂我在說什麼。但是前段時間我去看其他知名畫家的展覽作品，那裡的人們都是這麼說話的。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht ist das, was mir gefehlt hat. Lach nicht. Wenn ich diese Dinge sage, habe ich sofort das Gefühl, Teil der zeitgenössischen Kunstwelt zu sein.",
+                "en": "Maybe that's what I've been missing. Don't laugh. When I say these things, I immediately feel like I'm part of the contemporary art world.",
+                "es": "Quizás eso es lo que me ha faltado. No te rías. Cuando digo estas cosas, de inmediato siento que soy parte del mundo del arte contemporáneo.",
+                "fr": "Ce qui me manque, sûrement, c'est cette idée ! En prononçant rapidement ces mots ! Je me sens comme un maître de l'art contemporain...",
+                "ja": "僕に足りないのは、きっとこんな発想なんです！それにこういう単語を口早にまくしたてると、なんだか自分も現代芸術の達人になれる気がして……",
+                "ko": "어쩌면 제가 부족한 게 바로 이런 것들일 수도 있어요. 느낌이 왔어요! 제가 이 말을 하는 순간 저는 마치 현대 미술계의 일원이 된 듯한 느낌을 받았어요",
+                "th": "บางทีนี่อาจจะเป็นสิ่งที่ฉันขาดไป... ได้โปรดอย่าหัวเราะฉันเลยนะ พอฉันได้พูดอะไรแบบนี้แล้วฉันรู้สึกเหมือนได้ก้าวเข้าสู่โลกแห่งศิลปะร่วมสมัยเลยล่ะ",
+                "zh-Hans": "或许我缺少的就是这些。你别说，我说出这些话的时候，立刻感觉自己是当代艺术世界的一员了。",
+                "zh-Hant": "或許我缺少的就是這些。你別說，我說出這些話的時候，立刻感覺自己是當代藝術世界的一員了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dianran hat das Gemälde schnell mit ein paar launischen Strichen fertiggestellt.",
+                "en": "Dianran quickly completes the painting with a few whimsical strokes.",
+                "es": "Dianran completó rápidamente la pintura con unos pocos trazos caprichosos.",
+                "fr": "Les mains de Dianran bougent rapidement. Il finit son œuvre.",
+                "ja": "いとも簡単そうに筆を走らせて、点染はすぐに描き上げた。",
+                "ko": "주현은 호기롭게 붓을 몇 번 휘둘러 빠르게 그림을 완료했다",
+                "th": "Dianran วาดภาพเสร็จอย่างรวดเร็วด้วยการตวัดพู่กันไปมาเพียงไม่กี่ครั้ง",
+                "zh-Hans": "点染豪放挥笔几下，很快完成了画作。",
+                "zh-Hant": "點染豪放揮筆幾下，很快完成了畫作。"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

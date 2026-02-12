@@ -1,0 +1,987 @@
+{
+  "id": 108750001,
+  "key": "生态舱后日谈",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Ungefrorene Hoffnung",
+    "en": "Unfrozen Hope",
+    "ja": "厳冬の希望",
+    "ko": "추운 겨울의 희망",
+    "th": "ความหวังเหนือเยือกแข็ง",
+    "zh-Hans": "凛冬的希望",
+    "zh-Hant": "凜冬的希望"
+  },
+  "desc": {
+    "de": "Hoffnung findet man nicht im Frühling, sondern im tiefen Winter, wenn das Leben zum ersten Mal zu sprießen beginnt.",
+    "ja": "希望は春にあらず、初めて芽吹く深冬にこそ宿る。",
+    "ko": "희망은 봄에 아닌, 처음으로 싹을 틔우는 깊은 겨울에 있다",
+    "zh-Hans": "希望不在春天，而在第一次抽芽的深冬。",
+    "zh-Hant": "希望不在春天，而在第一次抽芽的深冬。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lies die WavesLine-Nachricht.",
+        "ja": "受け取ったメッセージを読む",
+        "ko": "받은 메시지 읽기",
+        "th": "อ่านข้อความที่ได้รับ",
+        "zh-Hans": "阅读收到的飞讯",
+        "zh-Hant": "閱讀收到的飛訊"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Skavitz.",
+        "ja": "スカルドヴィズルと会話する",
+        "ko": "스칼비츠에게 물어보기",
+        "zh-Hans": "询问斯卡维兹",
+        "zh-Hant": "詢問斯卡維茲"
+      },
+      "entities": [
+        {
+          "entityId": 108750265,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_1",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_3",
+          "areaId": 0,
+          "position": {
+            "x": 46196,
+            "y": -704396,
+            "z": -25050
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -108
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_1_一级POI_生态舱_后日谈",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Schön, euch wiederzusehen! Danke, dass ihr den weiten Weg auf euch genommen habt.",
+                "en": "It is good to see you again! Thank you for coming all this way.",
+                "fr": "C'est un plaisir de te revoir ! Merci d'avoir fait tout ce chemin.",
+                "ja": "久方ぶりであるな。はるばる来てくれて、感謝する。",
+                "ko": "오랜만이에요! 이렇게 먼 곳까지 오시느라 고생하셨어요",
+                "th": "ไม่ได้เจอกันนานเลย! ลำบากหน่อยนะ มาจากที่ไกลขนาดนี้",
+                "zh-Hans": "好久不见！辛苦你们了，这么远跑过来。",
+                "zh-Hant": "好久不見！辛苦你們了，這麼遠跑過來。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du hast erwähnt, einen neuen Pfad entdeckt zu haben?",
+                    "en": "You mentioned discovering a new path?",
+                    "fr": "Tu as parlé d'un nouveau passage ?",
+                    "ja": "{Male=新しい道を見つけたと言っていたが……;Female=新しい道を見つけたって言ってたけど……}",
+                    "ko": "새로운 길을 발견했다고요?",
+                    "th": "คุณบอกว่าพบเส้นทางใหม่งั้นเหรอ?",
+                    "zh-Hans": "你说发现了新的道路？",
+                    "zh-Hant": "你說發現了新的道路？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Er ist ganz in der Nähe. Ich habe das Gefühl, dass sich die Kronafäule irgendwo entlang des Pfades aufhält.",
+                "en": "Yes. It is nearby. I have a feeling that the Kronablight might be somewhere along the path.",
+                "fr": "Oui. Il est tout proche. J'ai la sensation qu'il pourrait mener au Fléauronne.",
+                "ja": "いかにも。この近くにある道だ。あのメカファルコンは、恐らくこの道の奥にいるのではないかと予感している。",
+                "ko": "네, 바로 이 근처예요. 그 크로나클라우는 아마 이 길 안 쪽에 있을 것 같아요",
+                "th": "ใช่ แถวๆ นี้เอง ฉันมีลางสังหรณ์ว่า Kronablight ตัวนั้นอาจอยู่ในส่วนลึกของเส้นทางนี้",
+                "zh-Hans": "是的，就在这附近，我有预感，那只械隼可能就在这条路的深处。",
+                "zh-Hant": "是的，就在這附近，我有預感，那隻械隼可能就在這條路的深處。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir dürfen keine Zeit verlieren. Gehen wir.",
+                "en": "There is no time to lose. Let's go.",
+                "fr": "Il n'y a pas un instant à perdre. Mettons-nous en route.",
+                "ja": "では、さっそく出発するとしよう。",
+                "ko": "지체할 시간 없으니 출발하시죠",
+                "th": "อย่ารอช้าเลย เราออกเดินทางกันเถอะ",
+                "zh-Hans": "事不宜迟，我们出发吧。",
+                "zh-Hant": "事不宜遲，我們出發吧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe tief in die Höhle.",
+        "ja": "洞窟の深部に向かう",
+        "ko": "동굴 깊은 곳으로 이동하기",
+        "th": "เข้าไปยังส่วนลึกของถ้ำ",
+        "zh-Hans": "前往洞窟的深处",
+        "zh-Hant": "前往洞窟的深處"
+      },
+      "entities": [
+        {
+          "entityId": 108750217,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_3.1生态舱2D_离开玩法",
+          "areaId": 41005,
+          "position": {
+            "x": 48248,
+            "y": -675328,
+            "z": -26742
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 81
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe tief in die Höhle.",
+        "ja": "洞窟の深部に向かう",
+        "ko": "동굴 깊은 곳으로 이동하기",
+        "th": "เข้าไปยังส่วนลึกของถ้ำ",
+        "zh-Hans": "前往洞窟的深处",
+        "zh-Hant": "前往洞窟的深處"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 23,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 35,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Skavitz.",
+        "ko": "스칼비츠와 대화하기",
+        "zh-Hans": "test/和斯卡维兹交谈"
+      },
+      "entities": [
+        {
+          "entityId": 108750153,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B3_1_拉海洛_MaleM_YJY4_7",
+          "name": "TsEntity_TN_B3_1_拉海洛_MaleM_YJY4_7",
+          "areaId": 41005,
+          "position": {
+            "x": 17164,
+            "y": -770586,
+            "z": -2822
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -17
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 108750162,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_1",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_4",
+          "areaId": 0,
+          "position": {
+            "x": 46027,
+            "y": -653812,
+            "z": -18767
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -128
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 108750182,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B3_1_拉海洛_MaleM_YJY4_7",
+          "name": "TsEntity_TN_B3_1_拉海洛_MaleM_YJY4_8",
+          "areaId": 41005,
+          "position": {
+            "x": 20488,
+            "y": -770702,
+            "z": -2673
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -39
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 108750225,
+          "mapId": 8,
+          "blueprintType": "branch3.0_693_Treasure_3_4",
+          "name": "TsEntity_3_0_辉光物资箱",
+          "areaId": 0,
+          "position": {
+            "x": 46119,
+            "y": -653691,
+            "z": -18768
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 142
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 108750249,
+          "mapId": 8,
+          "blueprintType": "TsEntity_3_1_特殊_交互摆件牧杖",
+          "name": "TsEntity_3_1_特殊_交互摆件牧杖",
+          "areaId": 41005,
+          "position": {
+            "x": 45965,
+            "y": -704393,
+            "z": -24954
+          },
+          "rotation": {
+            "x": -7,
+            "y": -77,
+            "z": -104
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 108750265,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_1",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_3",
+          "areaId": 0,
+          "position": {
+            "x": 46196,
+            "y": -704396,
+            "z": -25050
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -108
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_1_一级POI_生态舱_后日谈",
+          "flowIndex": 16,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "…",
+                "en": "...",
+                "fr": "…",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Mein Beileid.",
+                    "en": "My condolences.",
+                    "fr": "Toutes mes condoléances.",
+                    "ja": "どうか、安らかに……",
+                    "ko": "너무 슬퍼하지 마세요",
+                    "th": "ขอแสดงความเสียใจด้วย",
+                    "zh-Hans": "请节哀。",
+                    "zh-Hant": "請節哀。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Er wollte uns nie etwas antun.",
+                    "en": "It never meant to harm us.",
+                    "fr": "Il n'a jamais voulu nous faire du mal.",
+                    "ja": "{Male=俺たちを傷付けたくなかったようだ。;Female=私たちを傷付けたくなかったみたい。}",
+                    "ko": "우리를 해치고 싶지 않아 했어요",
+                    "th": "มันไม่ได้อยากทำร้ายพวกเรา",
+                    "zh-Hans": "它不想伤害我们。",
+                    "zh-Hant": "它不想傷害我們。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Er ist jetzt frei.",
+                    "en": "It is free now.",
+                    "fr": "Il est libre, à présent.",
+                    "ja": "{Male=もう苦しみから解き放たれたはずだ。;Female=もう苦しみから解き放たれたはず。}",
+                    "ko": "이젠 편안해졌을 거예요",
+                    "th": "ตอนนี้มันได้หลุดพ้นแล้ว",
+                    "zh-Hans": "现在它解脱了。",
+                    "zh-Hant": "現在它解脫了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja …",
+                "en": "Yes…",
+                "fr": "Oui…",
+                "ja": "そうであるな……",
+                "ko": "네...",
+                "th": "อืม...",
+                "zh-Hans": "嗯……",
+                "zh-Hant": "嗯……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich frage mich die ganze Zeit, warum er sich, nachdem die Verderbnis Besitz von ihm ergriffen hatte, dazu entschied, hierher zurückzukehren.",
+                "en": "I keep asking myself why, after the corruption took hold of it, it chose to return here.",
+                "fr": "Je me demande sans cesse pourquoi, après avoir été touché par la corruption, il a décidé de revenir ici.",
+                "ja": "なぜなのだろう……ヴォイドストームに侵蝕されてまでここに戻って来た理由は一体……",
+                "ko": "녀석은 보이드 스톰에 침식된 후, 왜 이곳으로 돌아오려고 했을까요?",
+                "th": "ฉันกำลังคิดอยู่ว่า หลังจากที่มันถูกพายุสุญตากัดกร่อนแล้ว ทำไมมันถึงกลับมาที่นี่?",
+                "zh-Hans": "我在想，它被虚质磁暴侵蚀后为何要回到这里？",
+                "zh-Hant": "我在想，它被虛質磁暴侵蝕後為何要回到這裡？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Um dir keinen Schaden zuzufügen?",
+                    "en": "To avoid harming you?",
+                    "fr": "Pour éviter de te faire du mal ?",
+                    "ja": "あなたを傷つけないようにするため？",
+                    "ko": "당신을 해치지 않기 위해서 일까요?",
+                    "th": "เพื่อไม่ให้ทำร้ายคุณ?",
+                    "zh-Hans": "为了避免伤害你？",
+                    "zh-Hant": "為了避免傷害你？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Um die Exoschwärme zu beschützen?",
+                    "en": "To protect the Exoswarm?",
+                    "fr": "Pour protéger les Exonuées ?",
+                    "ja": "他のエクソスウォームを守るため？",
+                    "ko": "다른 엑소스웜들을 지키기 위해서 일까요?",
+                    "th": "เพื่อปกป้อง Exoswarm ตัวอื่นๆ?",
+                    "zh-Hans": "为了保护其他隧群？",
+                    "zh-Hant": "為了保護其他隧群？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wenn das seine Absicht gewesen wäre, hätte er an einen Ort weit weg von mir und den Exoschwärmen fliehen können.",
+                "en": "If that were its intent, it could have fled far, away from me, and from the Exoswarm.",
+                "fr": "Si telle était son intention, il aurait pu s'éloigner encore plus de moi et des Exonuées.",
+                "ja": "それならば、私やエクソスウォームもいない遠い地へ飛んで行けばいいはず。",
+                "ko": "그랬다면 그냥 빠르게 멀리 도망쳐서, 저도 없고 엑소스웜들도 없는 곳으로 가면 됐을 텐데",
+                "th": "ถ้าเป็นอย่างนั้น มันแค่ต้องหนีให้เร็วและไกลพอ ไปยังที่ที่ไม่มีทั้งฉันและไม่มี Exoswarm ก็พอแล้ว",
+                "zh-Hans": "那样的话，它只需要跑得够快够远，去一个既没有我，也没有隧群的地方就好了。",
+                "zh-Hant": "那樣的話，它只需要跑得夠快夠遠，去一個既沒有我，也沒有隧群的地方就好了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er muss also einen anderen Grund gehabt haben.",
+                "en": "So it must have had another reason.",
+                "fr": "Il avait forcément une autre raison.",
+                "ja": "ここに来たのにはきっと別の理由が……",
+                "ko": "제 생각엔 녀석이 여기 온 건 분명 다른 이유가 있을 거예요...",
+                "th": "ฉันคิดว่ามันมาที่นี่ต้องมีเหตุผลอื่นแน่ๆ...",
+                "zh-Hans": "我觉得它来到这里，一定有别的原因……",
+                "zh-Hant": "我覺得它來到這裡，一定有別的原因……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Exoschwärme sind Teile des Exoschreiters. Zum Exoschreiter zurückzukehren ist gleichzusetzen mit einer Rückkehr zu seinen Wurzeln – eine Heimkehr.",
+                "en": "Exoswarm are a part of the Exostrider. To return to the Exostrider is to return to one's origin, a homecoming.",
+                "fr": "Les Exonuées font partie de l'Exoarpenteur. Quand elles retournent à lui, elles retrouvent leurs origines.",
+                "ja": "エクソスウォームはエクソストライダーの一部、エクソストライダーに還るというのは、己の本源に回帰し、故郷に帰るのと同じこと。",
+                "ko": "엑소스웜은 엑소스트라이더의 일부이니, 엑소스트라이더에게 돌아가는 건 자신의 근원, 자신의 고향으로 돌아가는 것과 같죠",
+                "th": "Exoswarm เป็นส่วนหนึ่งของ Exostrider การกลับไปหา Exostrider ก็เหมือนกับการกลับสู่ต้นกำเนิดของตนเอง กลับไปยังบ้านเกิดของตนเอง",
+                "zh-Hans": "隧群是隧者的一部分，回归隧者，就像回归自己的本源，回到自己的家乡一样。",
+                "zh-Hant": "隧群是隧者的一部分，回歸隧者，就像回歸自己的本源，回到自己的家鄉一樣。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Aber er war doch vom Leerensturm verdorben …",
+                    "en": "But it was corrupted by the Void Storm...",
+                    "fr": "Mais il a été corrompu par la tempête de néant…",
+                    "ja": "{Male=だがヴォイドストームに侵蝕されていた……;Female=でもヴォイドストームに侵蝕されていた……}",
+                    "ko": "하지만 보이드 스톰에 침식됐잖아요...",
+                    "th": "แต่มันถูกพายุสุญตากัดกร่อนแล้ว...",
+                    "zh-Hans": "但它被磁暴侵蚀了……",
+                    "zh-Hant": "但它被磁暴侵蝕了……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Aber seine Frequenz war doch bereits durch den Leerensturm destabilisiert worden. Eine Rückkehr zum Exoschreiter hätte unvorhersehbare Folgen haben können.",
+                "en": "But its frequency had already been destabilized by the Void Storm. Returning to the Exostrider could have brought unpredictable consequences.",
+                "fr": "Mais sa fréquence avait déjà été déstabilisée par la tempête de néant. S'il était retourné à l'Exoarpenteur dans cet état, les conséquences auraient pu être désastreuses.",
+                "ja": "{Male=だが、あいつはヴォイドストームに侵蝕されたせいで、周波数が極めて不安定だった。エクソストライダーに還れば、何が起こるか分からない。;Female=でも、あの子はヴォイドストームに侵蝕されたせいで、周波数が極めて不安定だった。エクソストライダーに還れば、何が起こるか分からない。}",
+                "ko": "하지만 보이드 스톰에 침식되면 주파수가 매우 불안정해져요. 만약 엑소스트라이더에게 돌아간다면, 예측 불가능한 결과를 초래할 수도 있죠",
+                "th": "แต่เมื่อมันถูกพายุสุญตากัดกร่อนแล้ว ความถี่ของมันก็ไม่เสถียรอย่างมาก หากกลับไปหา Exostrider อาจก่อให้เกิดผลลัพธ์ที่ไม่อาจคาดเดาได้",
+                "zh-Hans": "但已被虚质磁暴侵蚀的它，频率十分不稳定，如果回归隧者，可能带来无法预料的后果。",
+                "zh-Hant": "但已被虛質磁暴侵蝕的它，頻率十分不穩定，如果回歸隧者，可能帶來無法預料的後果。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja. Und um den Exoschreiter zu schützen, konnte er den anderen auf diesem Weg nicht folgen …",
+                "en": "Yes. And so, to protect the Exostrider, it could not follow the others on that path...",
+                "fr": "En effet. Alors, pour protéger l'Exoarpenteur, il n'a pas pu suivre les autres sur cette voie.",
+                "ja": "いかにも……。だからあの子はエクソストライダーを守るため、群れと一緒に帰ることすらできなかった……",
+                "ko": "맞아요. 그래서 녀석은 엑소스트라이더를 지키기 위해 다른 엑소스웜들과 함께 귀로에 오를 수 없었겠죠...",
+                "th": "ใช่แล้ว เพราะงั้น เพื่อปกป้อง Exostrider มันจึงไม่อาจเดินทางกลับพร้อมกับ Exoswarm ตัวอื่นๆ ได้...",
+                "zh-Hans": "是的，所以为了保护隧者，它不能跟着其他隧群一起踏上归途……",
+                "zh-Hant": "是的，所以為了保護隧者，它不能跟著其他隧群一起踏上歸途……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber hat ein Exoschwarm, der den Exoschreiter, und damit seinen Ursprung, verloren hat … überhaupt noch ein „Zuhause“?",
+                "en": "But for an Exoswarm that has lost the Exostrider, its origin… does it still have \"home\"?",
+                "fr": "Mais quand une Exonuée n'a plus l'Exoarpenteur… quelle origine lui reste-t-il ?",
+                "ja": "しかし、エクソスウォームとして、エクソストライダーを失い、帰る場所を失ってしまえば、他のどこに変えるべき場所があるのであろう……",
+                "ko": "하지만 엑소스웜이 엑소스트라이더를 잃고, 돌아갈 곳을 잃는다면... 과연 녀석에게 「고향」이 남아있을까요?",
+                "th": "และในฐานะ Exoswarm หากมันสูญเสีย Exostrider สูญเสียที่มาของตัวเอง แล้วมันจะยังมี \"บ้าน\" อยู่อีกเหรอ?",
+                "zh-Hans": "而作为隧群的它如果失去了隧者，失去了来处，那它还有“家园”吗？",
+                "zh-Hant": "而作為隧群的它如果失去了隧者，失去了來處，那它還有「家園」嗎？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Deshalb ist er in den Upphaf-Wald zurückgekehrt …",
+                    "en": "That's why it returned to the Upphaf Forest…",
+                    "fr": "C'est pour ça qu'il est retourné dans la forêt d'Upphaf.",
+                    "ja": "だから始元林に戻った……",
+                    "ko": "그래서 옛 밀림으로 돌아오길 선택했군요...",
+                    "th": "เพราะอย่างนั้น มันจึงเลือกกลับมาที่ป่าอุพฮาฟ...",
+                    "zh-Hans": "所以它选择回到元林……",
+                    "zh-Hant": "所以它選擇回到元林……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Dieser Wald war sein Zuhause …",
+                    "en": "This forest was its home...",
+                    "fr": "Cette forêt, c'était son chez-lui…",
+                    "ja": "{Male=この始元林が家ということか……;Female=この始元林が家ということね……}",
+                    "ko": "크로나클라우의 집은 이 옛 밀림이니까요...",
+                    "th": "บ้านของ Kronaclaw คือป่าอุพฮาฟแห่งนี้...",
+                    "zh-Hans": "苍隼的家是这片元林……",
+                    "zh-Hant": "蒼隼的家是這片元林……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja. Er hatte seinen Platz als Exoschwarm verloren, aber er war noch mehr als das.",
+                "en": "Yes. It had lost its place as an Exoswarm, yet that was not all it was.",
+                "fr": "Oui. Il avait perdu sa place parmi les Exonuées, mais son existence ne se limitait pas à cela.",
+                "ja": "きっとそうなのであろう……エクソスウォームとして、もう行き場を失っている。しかし、あの子はエクソスウォームであるだけではない。",
+                "ko": "맞아요... 엑소스웜으로서 갈 곳은 없어졌지만, 녀석은 평범한 엑소스웜은 아니었으니까요",
+                "th": "ใช่แล้ว... ในฐานะ Exoswarm มันไม่มีที่ไปแล้ว แต่มันไม่ได้เป็นแค่ Exoswarm เท่านั้น",
+                "zh-Hans": "是的……它作为隧群已经无处可去，但它不只是隧群。",
+                "zh-Hant": "是的……它作為隧群已經無處可去，但它不只是隧群。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er hatte die Gestalt der alten Kronaklaue angenommen und folgte seinen Instinkten. In diesem Sinne war er wahrhaftig eine Kronaklaue.",
+                "en": "It had taken the form of the ancient Kronaclaw and lived by its instincts. In that sense, it truly was a Kronaclaw.",
+                "fr": "Ayant adopté l'apparence du Griffouronne, il avait également ses instincts. À cet égard, il était vraiment l'une de ces anciennes créatures.",
+                "ja": "古の時代のクロナファルコンの擬態をし、クロナファルコンの習性で生きていた――ある意味、あの子はクロナファルコンと同じと言えよう。",
+                "ko": "녀석은 고대의 크로나클라우를 의태하여, 크로나클라우의 습성대로 살아왔어요. 어떤 의미에서는 녀석이 바로 크로나클라우 자체인 거죠",
+                "th": "มันเลียนแบบรูปร่างของ Kronaclaw ในยุคโบราณ และดำรงชีวิตตามสัญชาตญาณของ Kronaclaw ดังนั้นในอีกแง่ มันก็คือ Kronaclaw นั่นเอง",
+                "zh-Hans": "它拟态成了远古时期的冠顶苍隼，并以苍隼的习性生存着——某种意义上，它就是苍隼。",
+                "zh-Hant": "它擬態成了遠古時期的冠頂蒼隼，並以蒼隼的習性生存著——某種意義上，它就是蒼隼。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er suchte dennoch nach einem Ort, an den er zurückkehren konnte. Er wünschte sich immer noch ein Zuhause. Und dieser Ort war dieser Wald.",
+                "en": "It still sought a place of return. It still wished for a home. And that place was this forest.",
+                "fr": "Il avait toujours besoin de rentrer. Il se cherchait toujours un chez-lui. Et ce chez-lui, c'était cette forêt.",
+                "ja": "だからこうして帰る場所を求めている。それがここ、始元林なのだろう。",
+                "ko": "녀석은 여전히 돌아갈 곳을 찾고 싶어했고, 여전히 집을 원했죠. 그게 바로 이 옛 밀림이었던 거고요",
+                "th": "มันยังคงต้องการหาที่พึ่งพิง ยังคงอยากมีบ้านสักแห่ง และนั่นก็คือป่าอุพฮาฟแห่งนี้",
+                "zh-Hans": "它依然想找一个归处，依然想有一个家园，而那便是这片元林。",
+                "zh-Hant": "它依然想找一個歸處，依然想有一個家園，而那便是這片元林。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Durch seine Rückkehr nach Hause schützte er die anderen vor der Verderbnis durch den Leerensturm.",
+                "en": "By returning home, it kept the others safe from the Void Storm corruption.",
+                "fr": "En rentrant chez lui, il a protégé ses compagnons de la corruption de la tempête de néant.",
+                "ja": "{Male=ここに戻ることが「家」に帰るということであり、同時にヴォイドストームの侵蝕が他のエクソスウォームに影響を及ぼすリスクも回避できたというわけだな。;Female=ここに戻るということは、「家」に帰るということであり、同時にヴォイドストームの侵蝕が他のエクソスウォームに影響を及ぼすリスクも回避できるということね。}",
+                "ko": "「집」으로 돌아온 거예요. 자신의 보이드 스톰이 다른 엑소스웜들을 침식하는 걸 막기도 하면서요",
+                "th": "มันกลับมาที่ \"บ้าน\" พร้อมทั้งหลีกเลี่ยงไม่ให้พายุสุญตาที่เกาะกุมร่างของมันไปกัดกร่อน Exoswarm ตัวอื่นๆ",
+                "zh-Hans": "它回到了“家”，同时避免了身上的虚质磁暴侵蚀其他隧群。",
+                "zh-Hant": "它回到了「家」，同時避免了身上的虛質磁暴侵蝕其他隧群。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Selbst als er bereits verdorben war, versuchte er immer noch, dem Exoschreiter zu helfen.",
+                "en": "Even corrupted, it was still trying to help the Exostrider.",
+                "fr": "Même corrompu, il voulait toujours aider l'Exoarpenteur.",
+                "ja": "たとえヴォイドストームに侵蝕されていても、あのメカファルコンは自分なりのやり方でエクソストライダーを守ったんだ。",
+                "ko": "보이드 스톰에 침식되었어도, 다른 방식으로 엑소스웜을 도울 생각을 했던 거예요",
+                "th": "แม้จะถูกพายุสุญตากัดกร่อนแล้ว Kronablight ตัวนี้ก็ยังคิดหาหนทางอื่นเพื่อช่วยเหลือ Exostrider",
+                "zh-Hans": "就算被磁暴侵蚀了，这只械隼也在想着以其他方式帮助隧者。",
+                "zh-Hant": "就算被磁暴侵蝕了，這隻械隼也在想著以其他方式幫助隧者。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin mir nicht sicher, ob ich alles verstanden habe, aber es klingt so, als wäre dieser große Vogel … Entschuldigung, die Kronafäule, ziemlich nett gewesen.",
+                "en": "I'm not sure I get all of it, but it sounds like that big bird... sorry, the Kronablight, was a kind fella.",
+                "fr": "Je ne sais pas si j'ai tout bien compris, mais on dirait que le gros piaf… pardon, le Fléauronne était quelqu'un de bien.",
+                "ja": "よく分からないんだけど、聞く限りあのデカい鳥……じゃなくて、あのメカファルコンは、良いやつなんだな。",
+                "ko": "무슨 말인지는 잘 모르겠지만, 들어보니 그 큰 새... 아니 크로나클라우 말이야, 엄청 착하네",
+                "th": "แม้จะไม่เข้าใจ แต่จากที่ฟังดูแล้ว นกใหญ่ตัวนั้น... ฉันหมายถึง Kronablight มันอ่อนโยนมาก",
+                "zh-Hans": "虽然不明白，但听起来那只大鸟……我是说械隼，它很善良。",
+                "zh-Hant": "雖然不明白，但聽起來那隻大鳥……我是說械隼，它很善良。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1316,
+                "name": {
+                  "zh-Hans": "阿布"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja. Sie ist ihrem Zweck treu geblieben.",
+                "en": "Yes. It remained faithful to its purpose.",
+                "fr": "Oui. Il n'a jamais renoncé à sa mission.",
+                "ja": "{Male=ああ、自分の使命を忠実に全うした。;Female=そうね、自分の使命を忠実に全うした。}",
+                "ko": "맞아. 자신의 사명에 충실했던 거지",
+                "th": "อืม มันซื่อสัตย์ต่อภารกิจของตัวเอง",
+                "zh-Hans": "嗯，它忠于了自己的使命。",
+                "zh-Hant": "嗯，它忠於了自己的使命。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dank euch konnte ich ihre wahre Absicht verstehen … Ich bin euch sehr dankbar.",
+                "en": "Because of you, I was able to understand its true intent... You have my thanks.",
+                "fr": "Grâce à toi, j'ai pu comprendre quelles étaient ses véritables intentions… Je te remercie.",
+                "ja": "おかげで、あの子の思いを知れた……感謝する……",
+                "ko": "여러분 덕분에 녀석의 진짜 속마음을 알 수 있었습니다. ... 고마워요",
+                "th": "เพราะมีพวกคุณ ฉันถึงได้เข้าใจความคิดที่แท้จริงของมัน... ขอบคุณพวกคุณนะ...",
+                "zh-Hans": "因为有你们，我才能知道它真正的想法……谢谢你们……",
+                "zh-Hant": "因為有你們，我才能知道它真正的想法……謝謝你們……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als Hirte bin ich unzählige Male in die Frostlande gekommen, um Exoschwärme zurück zum Exoschreiter zu führen.",
+                "en": "As a Shepherd, I have come to the frostlands countless times to guide Exoswarm back to the Exostrider.",
+                "fr": "En tant que berger, j'ai guidé les Exonuées jusqu'à l'Exoarpenteur à travers les terres givrées à d'innombrables reprises.",
+                "ja": "牧者として、私は氷原で幾度となく、エクソスウォームの帰還を見届けてきた……",
+                "ko": "저는 빙원에서 목자로서 엑소스웜의 회귀를 수십 번 인도해 왔어요...",
+                "th": "ในฐานะผู้เลี้ยงดู ฉันเคยเดินทางมายังทุ่งน้ำแข็งเพื่อนำทาง Exoswarm กลับบ้านมาหลายสิบครั้งแล้ว...",
+                "zh-Hans": "作为一名牧者，我已来到冰原引导过数十次隧群的回归……",
+                "zh-Hant": "作為一名牧者，我已來到冰原引導過數十次隧群的回歸……"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber diese Reise mit dir und mit dieser Kronafäule war eine völlig neue Erfahrung für mich.",
+                "en": "But this journey with you, and with that Kronablight, has been an experience I have never known before.",
+                "fr": "Mais ce voyage à tes côtés et à ceux de ce Fléauronne fut une expérience unique en son genre.",
+                "ja": "しかし、あなたやあのメカファルコンとの旅路は、今までにない経験となった。",
+                "ko": "하지만 당신과 이 크로나클라우와 함께한 여정은 제 평생 겪어본 적 없는 경험이었어요",
+                "th": "แต่การเดินทางกับคุณ และกับ Kronablight ตัวนี้ เป็นประสบการณ์ที่ฉันไม่เคยมีพบมาก่อนในชีวิต",
+                "zh-Hans": "但和你，和这只冠顶械隼的旅途，是我此生前所未有的经历。",
+                "zh-Hant": "但和你，和這隻冠頂械隼的旅途，是我此生前所未有的經歷。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich werde diese Reise immer in Erinnerung behalten. Durch dich habe ich meine Berufung als Hirte sowie die Exoschwärme und den Exoschreiter mit neuer Klarheit gesehen.",
+                "en": "I will remember this journey always. Through you, I have come to see my calling as a Shepherd as well as the Exoswarm and the Exostrider with new clarity.",
+                "fr": "Je n'oublierai jamais cette aventure. Grâce à toi, je porte un regard nouveau sur ma vocation de berger, ainsi que sur les Exonuées et l'Exoarpenteur.",
+                "ja": "牧者とは何なのか、エクソスウォームやエクソストライダーとは何なのかを、あなたのおかげで、さらに理解を深めることができた。",
+                "ko": "이 여정을 반드시 기억할게요. 덕분에 목자, 엑소스웜, 그리고 엑소스트라이더에 대한 이해가 조금 더 깊어졌네요",
+                "th": "ฉันจะจดจำการเดินทางครั้งนี้ไว้เสมอ พวกคุณทำให้ฉันเข้าใจผู้เลี้ยงดู Exoswarm และแม้กระทั่ง Exostrider ได้ลึกซึ้งยิ่งขึ้น",
+                "zh-Hans": "我一定会铭记这段旅程。你们让我对牧者，对隧群，乃至对隧者的理解又深刻了几分。",
+                "zh-Hant": "我一定會銘記這段旅程。你們讓我對牧者，對隧群，乃至對隧者的理解又深刻了幾分。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sollte dir einmal die Zeit dazu bleiben, komm doch wieder hierher zurück … Ich werde das ebenfalls tun.",
+                "en": "If you ever find the time, come back and visit this place again… I will do the same.",
+                "fr": "Si jamais tu en as le temps, reviens ici… Pour ma part, je le ferai.",
+                "ja": "もし時間があれば、またここに戻って見てみるのも悪くない……私もぜひそうしたい。",
+                "ko": "나중에 시간 되시면, 가끔 이곳에 들러주세요... 저도 그렇게 할게요",
+                "th": "ถ้าคุณมีเวลาว่างเมื่อไหร่ ก็แวะกลับมาที่นี่บ้างนะ... ฉันเองก็จะกลับมาเช่นกัน",
+                "zh-Hans": "以后有空的话，你可以偶尔回来这里看看……我也会的。",
+                "zh-Hant": "以後有空的話，你可以偶爾回來這裡看看……我也會的。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieses Kind … Ich möchte, dass es weiß, dass dieser Ort sein Zuhause ist. Wir sind jetzt zu Hause.",
+                "en": "That child… I want it to know, this place is home. We are home now.",
+                "fr": "Cet enfant… Je veux qu'il sache qu'il est ici chez lui. Nous sommes chez nous.",
+                "ja": "あの子に……伝えたい。ここが家であると。そして、もう帰っていると。",
+                "ko": "그 녀석에게... 말해 주고 싶네요. 여기가 바로 고향이라고, 우리 이제 집에 도착했다고요",
+                "th": "เด็กคนนั้น... ฉันอยากบอกมันว่า ที่นี่แหละคือบ้าน พวกเรากลับถึงบ้านแล้ว",
+                "zh-Hans": "那个孩子……我想告诉它，这里就是家园，我们到家了。",
+                "zh-Hant": "那個孩子……我想告訴它，這裡就是家園，我們到家了。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 750346,
+                "name": {
+                  "zh-Hans": "斯卡维兹"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "parentId": 23,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 34,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Dringe in die Tiefen der Höhle vor.",
+        "ja": "洞窟の深部に向かう",
+        "ko": "동굴 깊은 곳으로 이동하기",
+        "zh-Hans": "前往洞窟的深处",
+        "zh-Hant": "前往洞窟的深處"
+      },
+      "entities": [
+        {
+          "entityId": 108750217,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_3.1生态舱2D_离开玩法",
+          "areaId": 41005,
+          "position": {
+            "x": 48248,
+            "y": -675328,
+            "z": -26742
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 81
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 29,
+      "parentId": 28,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 32,
+      "parentId": 28,
+      "type": "QuestFailed",
+      "entities": [
+        {
+          "entityId": 108750217,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_状态触发器_3.1生态舱2D_离开玩法",
+          "areaId": 41005,
+          "position": {
+            "x": 48248,
+            "y": -675328,
+            "z": -26742
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 81
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Dringe in die Tiefen der Eishöhle vor."
+      },
+      "dialogs": []
+    }
+  ]
+}

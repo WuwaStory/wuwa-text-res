@@ -1,0 +1,534 @@
+{
+  "id": 320750001,
+  "key": "塔防玩法后",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Gezeitenfäule-Simulation",
+    "en": "Tidal Defense Simulator",
+    "es": "Simulador de defensa",
+    "fr": "Simulateur de contre-marée",
+    "ja": "潮蝕シミュレーション",
+    "ko": "흑조의 침식 시뮬레이션",
+    "th": "เครื่องจำลองการป้องกันคลื่น",
+    "zh-Hans": "潮蚀模拟",
+    "zh-Hant": "潮蝕模擬"
+  },
+  "desc": {
+    "de": "Kehre zu Valentina zurück und erstatte Bericht",
+    "en": "Report back to Valentina",
+    "es": "Informa a Valentina.",
+    "fr": "Parler à Valentina",
+    "ja": "戻ってワレンチナに報告する",
+    "ko": "돌아가서 발렌티나에게 보고하기",
+    "th": "กลับไปรายงาน Valentina",
+    "zh-Hans": "回去向瓦莲京娜报告",
+    "zh-Hant": "回去向瓦蓮京娜報告"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Valentina",
+        "en": "Talk to Valentina",
+        "es": "Habla con Valentina.",
+        "fr": "Parler à Valentina",
+        "ja": "ワレンチナと会話する",
+        "ko": "발렌티나와 대화하기",
+        "th": "คุยกับ Valentina",
+        "zh-Hans": "和瓦莲京娜交谈",
+        "zh-Hant": "和瓦蓮京娜交談"
+      },
+      "entities": [
+        {
+          "entityId": 320750000,
+          "mapId": 8,
+          "blueprintType": "NPC420091",
+          "name": "TsEntity_瓦莲京娜_420091",
+          "areaId": 3116,
+          "position": {
+            "x": 957947,
+            "y": 600285,
+            "z": 43
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 320750001,
+          "mapId": 8,
+          "blueprintType": "NPC420083",
+          "name": "TsEntity_库洛洛420084",
+          "areaId": 3116,
+          "position": {
+            "x": 957926,
+            "y": 600154,
+            "z": 83
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2.6黎那汐塔塔防活动引导任务",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie läuft alles bisher, {PlayerName}?",
+                "en": "How's everything going so far, {PlayerName}?",
+                "es": "¿Cómo va todo hasta ahora, {PlayerName}?",
+                "fr": "Comment ça se passe, {PlayerName} ?",
+                "ja": "テストは順調か、{PlayerName}？",
+                "ko": "잘 되고 있어요? {PlayerName}",
+                "th": "เป็นยังไงบ้าง {PlayerName}",
+                "zh-Hans": "还顺利吗，{PlayerName}？",
+                "zh-Hant": "還順利嗎，{PlayerName}？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750018,
+                "name": {
+                  "zh-Hans": "瓦莲京娜"
+                },
+                "entity": {
+                  "entityId": 320750000,
+                  "mapId": 8,
+                  "blueprintType": "NPC420091",
+                  "name": "TsEntity_瓦莲京娜_420091",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957947,
+                    "y": 600285,
+                    "z": 43
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wie geschmiert.",
+                    "en": "Going very smoothly.",
+                    "es": "Todo va muy bien.",
+                    "fr": "Tout va très bien.",
+                    "ja": "{Male=上々だ。;Female=上々だよ。}",
+                    "ko": "아주 잘 되고 있죠",
+                    "th": "ราบรื่นมาก",
+                    "zh-Hans": "顺利得很。",
+                    "zh-Hant": "順利得很。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nicht schlecht … denke ich?",
+                    "en": "Okay... I guess?",
+                    "es": "Bien... supongo.",
+                    "fr": "Ça va... j'imagine ?",
+                    "ja": "……まあまあ、かな？",
+                    "ko": "…나쁘지는 않아요?",
+                    "th": "ก็... ได้อยู่?",
+                    "zh-Hans": "……还行？",
+                    "zh-Hant": "……還行？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Die Testergebnisse wurden archiviert. Den Daten nach hat {PlayerName} außerordentliche taktische Fähigkeiten demonstriert.",
+                "en": "{PlayerName}'s test results have been archived. Based on the data, Bloom Bearer {PlayerName} has demonstrated extraordinary tactical capabilities.",
+                "es": "Se archivaron los resultados de la prueba de {PlayerName}. Según los datos, {Male=el portador de flor;Female=la portadora de flor} {PlayerName} demostró unas capacidades tácticas extraordinarias.",
+                "fr": "Les résultats du test de {PlayerName} ont été archivés. D'après les données, {PlayerName} a fait preuve de capacités tactiques extraordinaires.",
+                "ja": "{PlayerName}のテストデータをアーカイブ化シマシタ。データに基ヅクと、花持ち{PlayerName}は驚くべき戦術力を発揮シタと言えマス。",
+                "ko": "{PlayerName}의 테스트 데이터를 기록하였습니다. 데이터에 따르면 흑화집사 {PlayerName}은(는) 놀라울 정도의 전술 능력을 보여줍니다",
+                "th": "ได้ทำการจัดเก็บข้อมูลการทดสอบของ {PlayerName} เรียบร้อยแล้ว จากการวิเคราะห์ข้อมูล พบว่า ผู้ครองผกา {PlayerName} แสดงความสามารถทางยุทธวิธีที่ไม่ธรรมดา",
+                "zh-Hans": "已将{PlayerName}的测试数据进行归档。根据数据判断，执花{PlayerName}展现出了令人惊讶的战术能力。",
+                "zh-Hant": "已將{PlayerName}的測試數據進行歸檔。根據數據判斷，執花{PlayerName}展現出了令人驚訝的戰術能力。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750171,
+                "name": {
+                  "zh-Hans": "库伊贡"
+                },
+                "entity": {
+                  "entityId": 320750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC420083",
+                  "name": "TsEntity_库洛洛420084",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957926,
+                    "y": 600154,
+                    "z": 83
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vorrichtungen, die von {PlayerName} verwendet wurden, weisen eine Kampfeffizienz auf, die 52,63 % höher als der Durchschnitt der Schwarzen Küsten ist.",
+                "en": "Machines set up by {PlayerName} produced a combat efficiency 52.63% higher than the Black Shores average.",
+                "es": "Las máquinas configuradas por {PlayerName} produjeron una eficiencia de combate un 52,63 % superior que el promedio de la Costa Negra.",
+                "fr": "L'efficacité des machines configurées par {PlayerName} était supérieure de 52,63 % à la moyenne du Littoral noir.",
+                "ja": "{Male=彼;Female=彼女}が設置した戦闘装置の戦闘効率は、ブラックショアテストエンジニアの平均値より52.63%高いデス。",
+                "ko": "{Male=그;Female=그녀}가 설치한 전투 장치의 전투 효율은 검은 해안 테스트 담당자의 평균보다 52.63% 높습니다",
+                "th": "อุปกรณ์ต่อสู้ที่ {TA} ติดตั้งมีประสิทธิภาพในการต่อสู้สูงกว่าค่าเฉลี่ยของผู้ทดสอบแบล็กชอร์ถึง 52.63%",
+                "zh-Hans": "{TA}所设置的作战装置，其战斗效率比黑海岸测试人员的平均值高出52.63%。",
+                "zh-Hant": "{TA}所設定的作戰裝置，其戰鬥效率比黑海岸測試人員的平均值高出52.63%。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750171,
+                "name": {
+                  "zh-Hans": "库伊贡"
+                },
+                "entity": {
+                  "entityId": 320750001,
+                  "mapId": 8,
+                  "blueprintType": "NPC420083",
+                  "name": "TsEntity_库洛洛420084",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957926,
+                    "y": 600154,
+                    "z": 83
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 80
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "52,63 % … So eine Zahl sieht man nicht alle Tage. Das bedeutet aber wohl auch, dass keiner der bisherigen Tests das wahre Potenzial der Kampfvorrichtungen einfangen konnte.",
+                "en": "52.63%... That's a number you don't see very often. Then again, it means that none of the previous tests truly captured the Combat Machines' full potential.",
+                "es": "52,63 %... Es una cifra que no se ve muy a menudo. Significa que ninguna de las pruebas anteriores capturó realmente todo el potencial de las máquinas de combate.",
+                "fr": "52,63 %... On voit rarement un tel chiffre. Cela confirme qu'aucun de nos tests précédents n'avait vraiment révélé le plein potentiel de ces machines.",
+                "ja": "52.63%か……随分な数字だな。だが、これではっきりした。以前のテストでは戦闘装置の潜在能力を満足に活かせていなかったのだな。",
+                "ko": "52.63%라니… 엄청난 수치네요. 그래도 전에 했던 테스트에선 전투 장치들의 모든 잠재력을 끌어내지 못했다는 걸 증명했어요",
+                "th": "52.63%... เป็นตัวเลขช่างสุดโต่งจริงๆ นะ แต่นี่ยิ่งชี้ให้เห็นว่าการทดสอบก่อนหน้านั้นยังไม่ได้ดึงศักยภาพเต็มที่ของอุปกรณ์ต่อสู้เหล่านี้ออกมา",
+                "zh-Hans": "52.63%……还真是夸张的数据啊。不过，这也说明之前的测试并没有发挥出这些作战装置的全部潜力。",
+                "zh-Hant": "52.63%……還真是誇張的數據啊。不過，這也說明之前的測試並沒有發揮出這些作戰裝置的全部潛力。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750018,
+                "name": {
+                  "zh-Hans": "瓦莲京娜"
+                },
+                "entity": {
+                  "entityId": 320750000,
+                  "mapId": 8,
+                  "blueprintType": "NPC420091",
+                  "name": "TsEntity_瓦莲京娜_420091",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957947,
+                    "y": 600285,
+                    "z": 43
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich werde einen Antrag verfassen, um basierend auf deinen Testergebnissen die taktischen Richtlinien für die Kampfvorrichtungen zu verfassen.",
+                "en": "I'll file an application to develop the tactical guidelines on the Combat Machines based on your test results.",
+                "es": "Presentaré una solicitud para desarrollar las directrices tácticas en las máquinas de combate según los resultados de tu prueba.",
+                "fr": "Je vais demander l'autorisation de développer de nouveaux guides tactiques basés sur tes résultats.",
+                "ja": "ブラックショアに申請しよう。君のテスト記録に基づき、戦闘装置の実戦運用に関するマニュアルを作成する。",
+                "ko": "당신의 테스트 데이터를 기반으로 전투 장치의 실전 응용에 관한 전술 교본을 작성할 수 있도록 검은 해안에 보고할게요",
+                "th": "ฉันจะยื่นใบคำร้องต่อแบล็กชอร์ โดยใช้บันทึกการทดสอบของคุณเป็นพื้นฐาน เพื่อจัดทำคู่มือกลยุทธ์สำหรับการใช้งานจริงของอุปกรณ์ต่อสู้",
+                "zh-Hans": "我会向黑海岸提交申请，以你的测试记录为基础，编写关于作战装置实际运用的战术教程。",
+                "zh-Hant": "我會向黑海岸提交申請，以你的測試記錄為基礎，編寫關於作戰裝置實際運用的戰術教學。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750018,
+                "name": {
+                  "zh-Hans": "瓦莲京娜"
+                },
+                "entity": {
+                  "entityId": 320750000,
+                  "mapId": 8,
+                  "blueprintType": "NPC420091",
+                  "name": "TsEntity_瓦莲京娜_420091",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957947,
+                    "y": 600285,
+                    "z": 43
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es freut mich, helfen zu können.",
+                    "en": "Glad to be of help.",
+                    "es": "Me alegra haberte ayudado.",
+                    "fr": "{Male=Ravi;Female=Ravie} d'avoir pu aider.",
+                    "ja": "{Male=役に立ったなら何よりだ。;Female=役に立ったなら何より。}",
+                    "ko": "도움이 됐으면 좋겠어요",
+                    "th": "ดีใจที่ได้ช่วยนะ",
+                    "zh-Hans": "能帮上忙就好。",
+                    "zh-Hant": "能幫上忙就好。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Deine Bemühungen haben sich natürlich als besonders hilfreich erwiesen. Mit diesen Testdaten sind die Geräte dem Feldeinsatz einen Schritt näher.",
+                "en": "And, of course, your efforts were of considerable help to us. With these test data, the devices are one step closer to field deployment.",
+                "es": "Y, por supuesto, tus esfuerzos nos fueron de gran ayuda. Con estos datos, los dispositivos están un paso más cerca de su implementación en el campo.",
+                "fr": "Tes efforts nous ont énormément aidés. Ces données vont nous aider à déployer les appareils sur le terrain.",
+                "ja": "とても助かったよ。君のおかげで、戦闘装置の実用化にまた一歩近づいた。",
+                "ko": "물론이죠, 진짜 큰 도움이 됐어요. 이 테스트 데이터 덕분에 전투 장치의 실용화까지 한 걸음 더 가까워졌어요",
+                "th": "แน่นอน นี่ช่วยเราได้มากจริงๆ ด้วยข้อมูลการทดสอบเหล่านี้ อุปกรณ์ต่อสู้ก็เข้าใกล้ขั้นใช้งานจริงขึ้นอีกขั้นหนึ่ง",
+                "zh-Hans": "当然，这可帮了我们不少忙。有了这些测试数据，作战装置距离实用化又近了一步。",
+                "zh-Hant": "當然，這可幫了我們不少忙。有了這些測試數據，作戰裝置距離實用化又近了一步。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750018,
+                "name": {
+                  "zh-Hans": "瓦莲京娜"
+                },
+                "entity": {
+                  "entityId": 320750000,
+                  "mapId": 8,
+                  "blueprintType": "NPC420091",
+                  "name": "TsEntity_瓦莲京娜_420091",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957947,
+                    "y": 600285,
+                    "z": 43
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir wissen deine Hilfe zu schätzen, {PlayerName}.",
+                "en": "We appreciate the assistance, {PlayerName}.",
+                "es": "Apreciamos tu ayuda, {PlayerName}.",
+                "fr": "Merci pour ton aide, {PlayerName}.",
+                "ja": "改めて感謝する、{PlayerName}。",
+                "ko": "협조 감사합니다, {PlayerName}",
+                "th": "เราขอขอบคุณสำหรับความช่วยเหลือนะ {PlayerName}",
+                "zh-Hans": "谢谢你的协助，{PlayerName}。",
+                "zh-Hant": "謝謝你的協助，{PlayerName}。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750018,
+                "name": {
+                  "zh-Hans": "瓦莲京娜"
+                },
+                "entity": {
+                  "entityId": 320750000,
+                  "mapId": 8,
+                  "blueprintType": "NPC420091",
+                  "name": "TsEntity_瓦莲京娜_420091",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957947,
+                    "y": 600285,
+                    "z": 43
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir bleiben hier, bis wir die weiteren Daten zum TD-Ausbruch vollständig analysiert haben.",
+                "en": "We'll be staying here until we've finished analyzing the additional TD Outbreak data.",
+                "es": "Nos quedaremos aquí hasta que hayamos terminado de analizar los datos adicionales del brote de DT.",
+                "fr": "Nous restons ici pour terminer l'analyse des données sur l'Éruption des TDs.",
+                "ja": "我々はしばらくここに残り、集めた残像潮データを引き続き分析する。",
+                "ko": "우린 당분간 이곳에 더 머물면서 수집된 잔상류 데이터를 계속해서 분석할 거예요",
+                "th": "เราจะอยู่ที่นี่ต่อเป็นชั่วคราวจนกว่าจะวิเคราะห์ข้อมูลการแพร่กระจายของทาเซ็ตดิสคอร์ดเพิ่มเติมเสร็จ",
+                "zh-Hans": "我们会暂时留在这里，继续分析收集到的残象潮数据。",
+                "zh-Hant": "我們會暫時留在這裡，繼續分析收集到的殘象潮數據。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750018,
+                "name": {
+                  "zh-Hans": "瓦莲京娜"
+                },
+                "entity": {
+                  "entityId": 320750000,
+                  "mapId": 8,
+                  "blueprintType": "NPC420091",
+                  "name": "TsEntity_瓦莲京娜_420091",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957947,
+                    "y": 600285,
+                    "z": 43
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du in der Gezeitenfäule-Simulation weitere Tests unter herausfordernderen Bedingungen durchführen möchtest, kannst du das hier gerne jederzeit tun.",
+                "en": "If you wish to conduct further testing in the Tidal Defense Simulator under even more challenging environments, you are welcome to come here anytime.",
+                "es": "Si quieres realizar más pruebas en el Simulador de defensa en entornos aún más desafiantes, puedes venir cuando quieras.",
+                "fr": "Si tu veux continuer les tests dans des environnements plus difficiles, le Simulateur de contre-marée reste à ta disposition.",
+                "ja": "もし君が、より厳しい環境下で「潮蝕シミュレーション」テストを続けたいのであれば、いつでもここへ来てくれ。",
+                "ko": "더 가혹한 인공 환경 속에 「흑조의 침식 시뮬레이션」 테스트를 계속하고 싶다면 언제든지 이곳으로 와주세요",
+                "th": "หากคุณต้องการทดสอบ การจำลองต้านคลื่น ต่อในสภาพแวดล้อมเทียมที่เข้มงวดกว่า เรายินดีต้อนรับให้คุณมาที่นี่ได้ทุกเมื่อนะ",
+                "zh-Hans": "如果你想在更为严苛的人工环境下继续进行「潮蚀模拟」测试的话，欢迎你随时来这里。",
+                "zh-Hant": "如果你想在更為嚴苛的人工環境下繼續進行「潮蝕模擬」測試的話，歡迎你隨時來這裡。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750018,
+                "name": {
+                  "zh-Hans": "瓦莲京娜"
+                },
+                "entity": {
+                  "entityId": 320750000,
+                  "mapId": 8,
+                  "blueprintType": "NPC420091",
+                  "name": "TsEntity_瓦莲京娜_420091",
+                  "areaId": 3116,
+                  "position": {
+                    "x": 957947,
+                    "y": 600285,
+                    "z": 43
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -110
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

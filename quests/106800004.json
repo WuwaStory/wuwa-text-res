@@ -1,0 +1,151 @@
+{
+  "id": 106800004,
+  "key": "怨鸟泽",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Jaulender Sumpf",
+    "en": "Tales of the Past and Present: Whining Aix's Mire",
+    "es": "Crónicas de antaño y hoy: Pantano de Aix",
+    "fr": "Histoires du passé : Tourbe piaulante",
+    "ja": "古今幾多の物語・怨鳥の沼",
+    "ko": "고대의 이야기·울음새 늪",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: หนองปักษาร่ำไห้",
+    "zh-Hans": "古今多少故事·怨鸟泽",
+    "zh-Hant": "古今多少故事·怨鳥澤"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese Datenchips. Geh und bring sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these Data Chips. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estos Chips de Datos. Ve y entrégaselos.",
+    "fr": "Le conteur de Jinzhou cherche des puces de données abandonnées. Donnez-lui ceux que vous avez collectés dans la Plaine de Nor-Chute.",
+    "ja": "今州城の講談師は古いデータセットに興味があるようなので、怨鳥の沼で集めたデータセットを彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼이 낡은 데이터집에 관심이 많은 것 같으니 울음새 늪에서 수집한 데이터집을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมชิปข้อมูลเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧数据集很感兴趣，把这些于怨鸟泽收集到的数据集交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊數據集很感興趣，把這些於怨鳥澤收集到的數據集交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler den „Verlassenen Datenchip aus dem Jaulenden Sumpf“",
+        "en": "Deliver \"Abandoned Data Chip from Whining Aix's Mire\" to the Storyteller",
+        "es": "Entrega el \"Chip de Datos Abandonado del Pantano de Aix\" al Narrador",
+        "fr": "Donner la Puce de données de la Tourbe piaulante au conteur",
+        "ja": "「怨鳥の沼の古いデータセット」を講談師に渡す",
+        "ko": "「울음새 늪의 낡은 데이터집」을 이야기꾼에게 제출",
+        "th": "ส่ง \"ชิปข้อมูลที่ถูกทิ้งจากหนองปักษาร่ำไห้\" ให้นักเล่าเรื่อง",
+        "zh-Hans": "将「怨鸟泽旧数据集」交给说书人",
+        "zh-Hant": "將「怨鳥澤舊數據集」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "<i>Lo, Lo, Lollo-Logistik!</i>? Ein interessanter Titel, das ist es!",
+                "en": "<i>Lo, Lo, Lollo Logistics!</i>? An interesting title, it is!",
+                "es": "¿<i>¡Lo, Lo, Logística Lollo!</i>? ¡Un título interesante, es!",
+                "fr": "« Loulou Logistique, Loulou, Loulou, Loulou ! » Quel nom intéressant, intéressant !",
+                "ja": "『ブブ物流、ブ～ブ～ブ！』？面白い名前だね！",
+                "ko": "「무무물류, 무~무~무!」 이름이 재미있지 않나요?",
+                "th": "<i>โล โล ลอลโล่โลจิสติกส์!</i>? ชื่อน่าสนใจนะเนี่ย!",
+                "zh-Hans": "《呜呜物流，呜~呜~呜！》？这名字有意思、有意思！",
+                "zh-Hant": "《嗚嗚物流，嗚~嗚~嗚！》？ 這名字有意思、有意思！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich glaube, das ist das Tagebuch eines Kuriers. Ihre Liebe zur Arbeit tropft aus jedem Wort in diesem Tagebuch.",
+                "en": "I believe this is a diary of a courier. Her love for work drips from every syllable in this diary.",
+                "es": "Creo que este es un diario de un mensajero. Su amor por el trabajo se desprende de cada sílaba en este diario.",
+                "fr": "Il s'agit probablement du journal d'une livreuse, il semble qu'elle aime beaucoup son travail !",
+                "ja": "これは、配達員の手記のようだね。彼女は自分の仕事が大好きなようだ！",
+                "ko": "이건 어느 무무물류 택배원의 수기일 거예요. 한눈에 그녀가 얼마나 자신의 일을 좋아하는지 알 수 있네요!",
+                "th": "ฉันเชื่อว่านี่เป็นบันทึกของคนส่งสาร ทุกพยางค์ในบันทึกเล่มนี้ล้วนกลั่นมาจากความรักในงานที่เธอทำ",
+                "zh-Hans": "这应该是一位物流员的手记，看上去，她可喜欢自己的工作！",
+                "zh-Hant": "這應該是一位物流員的手記，看上去，她很喜歡自己的工作！"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber die Schreie aus dem Jaulenden Sumpf scheinen ein interessanter Aufhänger zu sein. Vielleicht könnte ich das in meine Geschichte einbauen...",
+                "en": "But the screams from Whining Aix's Mire do seem to be an interesting hook. Maybe I could incorporate that into my story...",
+                "es": "Pero los gritos del Pantano de Aix sí parecen ser un gancho interesante. Quizás podría incorporar eso en mi historia...",
+                "fr": "Le son « ouou » mentionné dans le livre, dans « La Tourbe piaulante », est un point intéressant. Si on pouvait le transformer en histoire...",
+                "ja": "中に書かれている怨鳥の沼の鳴き声は、面白い要素だね。もし物語にできれば…",
+                "ko": "책에서 언급한 울음새 늪은 뭔가 흥미롭네요. 이야깃거리로 만든다면...",
+                "th": "แต่เรื่องเสียงกรีดร้องจากหนองปักษาร่ำไห้เนี่ยก็ดูเป็นประเด็นที่น่าสนใจ ฉันอาจจะเอามาเป็นเรื่องเล่าได้...",
+                "zh-Hans": "书里提到的怨鸟泽的呜声，倒是个有趣的点。要是能讲成故事……",
+                "zh-Hant": "書裡提到的怨鳥澤的嗚聲，倒是個有趣的點。 要是能講成故事……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

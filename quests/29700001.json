@@ -1,0 +1,106 @@
+{
+  "id": 29700001,
+  "key": "延迟销毁测试",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 29700008,
+          "mapId": 100,
+          "blueprintType": "NPC002",
+          "name": "TsEntity_121_002_皇龙小孩2",
+          "areaId": 0,
+          "position": {
+            "x": 15010,
+            "y": -36010,
+            "z": 10
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_NPCFlowTest01",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Blaseninhalt1-1",
+                "es": "contenido de burbuja 1-1",
+                "zh-Hans": "冒泡内容1-1"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Blaseninhalt1-2",
+                "es": "contenido de burbuja 1-2",
+                "zh-Hans": "冒泡内容1-2"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Blaseninhalt1-3",
+                "es": "contenido de burbuja 1-3",
+                "zh-Hans": "冒泡内容1-3"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 141,
+                "name": {
+                  "zh-Hans": "2号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

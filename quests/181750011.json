@@ -1,0 +1,381 @@
+{
+  "id": 181750011,
+  "key": "冰原往事",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Es war einmal in den Frostlanden",
+    "ja": "ワンス・アポン・ア・タイム・イン・フロストランド",
+    "ko": "원스 어폰 어 타임 인 프로스트랜드",
+    "th": "ทุ่งน้ำแข็งในอดีต",
+    "zh-Hans": "冰原往事",
+    "zh-Hant": "冰原往事"
+  },
+  "desc": {
+    "de": "Was wie ein gewöhnlicher Eisblock aussieht, verbirgt die letzten Spuren der Mitglieder eines Außenpostens. Bring den wiedergefundenen Kassettenrekorder und das Außenposten-Protokoll zurück zum Forschungsinstitut und sprich mit dem zuständigen Mitarbeiter für die Kassettenrückholung.",
+    "ja": "一見すると、何の変哲もない氷の塊。だがその中には、観測基地のメンバーが遺した最期の痕跡が封じ込められていた。\n発見した周波数記録装置と基地の日誌を研究院へ持ち帰り、記録回収の担当スタッフと話をしよう。",
+    "ko": "겉보기엔 평범해 보이는 얼음 조각 속에, 과학 탐사대원이 마지막으로 남긴 흔적이 숨겨져 있었다. 발견한 주파수 기록 장치와 탐사기지 일지를 연구소로 가져가 카세트 테이프 회수를 담당하는 직원과 대화해 보세요",
+    "th": "ก้อนน้ำแข็งที่ดูปกติ แต่กลับมีร่องรอยสุดท้ายที่สมาชิกสถานีสำรวจทิ้งไว้ นำตลับเทปบันทึกความถี่และบันทึกสถานีสำรวจที่พบ กลับไปยังสถาบันวิจัย แล้วพูดคุยกับเจ้าหน้าที่ที่รับตลับเทปคืนเถอะ",
+    "zh-Hans": "看似平平无奇的冰块，其中竟有科考站成员最后留下的痕迹。将发现的频录装置和科考站日志带回研究院，与回收磁带的工作人员谈谈吧。",
+    "zh-Hant": "看似平平無奇的冰塊，其中竟有科考站成員最後留下的痕跡。將發現的頻錄裝置和科考站日誌帶回研究院，與回收磁帶的工作人員談談吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Lies das Protokoll.",
+        "ja": "『観測基地日誌』を読む",
+        "ko": "『탐사 기지 일지』 일기",
+        "th": "อ่าน \"บันทึกสถานีสำรวจ\"",
+        "zh-Hans": "阅读《科考站日志》",
+        "zh-Hant": "閱讀《科考站日誌》"
+      },
+      "entities": [
+        {
+          "entityId": 181750324,
+          "mapId": 8,
+          "blueprintType": "Quest096",
+          "name": "TsEntity_黄光柱_地面用必要触发交互2",
+          "areaId": 41013,
+          "position": {
+            "x": -161107,
+            "y": -711862,
+            "z": 20308
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 181750544,
+          "mapId": 8,
+          "blueprintType": "branch3.0_320_摩托车生态1",
+          "name": "TsEntity_摩托车_摩托车关灯生态",
+          "areaId": 41013,
+          "position": {
+            "x": -160690,
+            "y": -713200,
+            "z": 20405
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich zum Forschungsinstitut.",
+        "ko": "연구소로 이동하기",
+        "zh-Hans": "前往研究院",
+        "zh-Hant": "前往研究院"
+      },
+      "entities": [
+        {
+          "entityId": 181750544,
+          "mapId": 8,
+          "blueprintType": "branch3.0_320_摩托车生态1",
+          "name": "TsEntity_摩托车_摩托车关灯生态",
+          "areaId": 41013,
+          "position": {
+            "x": -160690,
+            "y": -713200,
+            "z": 20405
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 181750545,
+          "mapId": 8,
+          "blueprintType": "Quest001",
+          "name": "TsEntity_任务_空实体",
+          "areaId": 41013,
+          "position": {
+            "x": -160700,
+            "y": -713210,
+            "z": 20350
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bringe das Terminal in die Akademie.",
+        "ja": "デバイスを研究院に送る",
+        "ko": "단말기를 연구소로 보내기",
+        "th": "ส่งเทอร์มินัลไปยังสถาบันวิจัย",
+        "zh-Hans": "将终端送往研究院",
+        "zh-Hant": "將終端送往研究院"
+      },
+      "entities": [
+        {
+          "entityId": 181750027,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM_Old7_3",
+          "areaId": 36008,
+          "position": {
+            "x": 1210347,
+            "y": 1353339,
+            "z": 10047
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_1_支线_冰原往事",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, bist du hier, um deine Kassette zu brennen?",
+                "en": "Hello, are you here to burn your Cassette?",
+                "fr": "Bonjour. Tu viens brûler ta cassette ?",
+                "ja": "こんにちは。カセットの書き込みにいらしたのですか？",
+                "th": "สวัสดี คุณมาบันทึกตลับเทปใช่ไหม?",
+                "zh-Hans": "你好。你是来刻录磁带的吗？",
+                "zh-Hant": "你好。你是來燒錄磁帶的嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "(Den leicht beschädigten Frequenz-Kassettenrekorder und das Protokoll überreichen.)",
+                    "en": "(Deliver the mildly damaged FCR and log)",
+                    "fr": "(Donner le MAF légèrement endommagé contenant le journal)",
+                    "ja": "（軽微な損傷がある周波数レコーダーと日誌を渡す）",
+                    "th": "(ส่งมอบตลับเทปบันทึกความถี่ที่เสียหายเล็กน้อยและบันทึกประจำวัน)",
+                    "zh-Hans": "（提交轻微受损的频录装置和日志）",
+                    "zh-Hant": "（提交輕微受損的頻錄裝置和日誌）"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah, das ist der Frequenz-Kassettenrekorder aus der Forschungsstation, die durch den Leerensturm zerstört wurde …",
+                "en": "Ah, this FCR is from the research outpost destroyed by that Void Storm burst...",
+                "fr": "Ah, ce MAF vient de l'avant-poste de recherche qui a été détruit par la tempête de néant…",
+                "ja": "ああ……この周波数レコーダーは、突発的なヴォイドストームによって壊滅した、あの観測基地の……",
+                "th": "อ่า ตลับเทปบันทึกความถี่นี้... มาจากสถานีสำรวจที่ถูกพายุสุญตาทำลายสินะ...",
+                "zh-Hans": "啊，这个频录装置，是被突发磁暴毁灭的那个科考站的……",
+                "zh-Hant": "啊，這個頻錄裝置，是被突發磁暴毀滅的那個科考站的……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "*seufz* Ich verstehe …",
+                "en": "*Sigh* I see...",
+                "fr": "Ah… Je vois…",
+                "ja": "……はい、確かに受領しました。",
+                "th": "...เฮ้อ รับทราบแล้ว",
+                "zh-Hans": "……唉，收到。",
+                "zh-Hant": "……唉，收到。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Kassetten aller vier Forscher wurden geborgen.",
+                "en": "The Cassettes belonging to all four researchers have been recovered.",
+                "fr": "Les cassettes des quatre chercheurs ont été récupérées.",
+                "ja": "これで、4人全員分のカセットが戻ってきました。",
+                "th": "แบบนี้ ตลับเทปของทั้งสี่คนก็กลับมาครบแล้ว",
+                "zh-Hans": "这样一来，四个人的磁带都回来了。",
+                "zh-Hant": "這樣一來，四個人的磁帶都回來了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Älteste war erst fünfzig, der Jüngste gerade einmal sechsundzwanzig.",
+                "en": "The oldest was only fifty, the youngest was just twenty-six.",
+                "fr": "La plus âgée avait seulement cinquante ans, et le plus jeune en avait tout juste vingt-six.",
+                "ja": "はぁ……彼らの中で最年長でもまだ50歳、最年少は26歳でした。",
+                "th": "เฮ้อ... ในบรรดาพวกเขา คนที่อายุมากที่สุดก็เพียงห้าสิบปีส่วนคนที่อายุน้อยที่สุด ก็เพิ่งยี่สิบหกเท่านั้น",
+                "zh-Hans": "唉……他们中年纪最大的也只有五十岁，最年轻的二十六岁。",
+                "zh-Hant": "唉……他們中年紀最大的也只有五十歲，最年輕的二十六歲。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wer weiß, was für eine vielversprechende Zukunft auf sie gewartet hätte, wären sie noch am Leben.",
+                "en": "If they survived, who knows what promising futures they might have had.",
+                "fr": "Qui sait ce qu'ils auraient pu accomplir s'ils avaient survécu ?",
+                "ja": "もし無事に帰還できていれば、どれほど輝かしい未来が待っていたことか。",
+                "th": "ถ้าหากทุกคนได้กลับมา ไม่รู้ว่าอนาคตข้างหน้าจะยิ่งใหญ่และไกลแค่ไหน",
+                "zh-Hans": "如果都能回来，不知道未来还会有多么壮阔的前景。",
+                "zh-Hant": "如果都能回來，不知道未來還會有多麼壯闊的前景。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber genug davon. Der Frequenz-Kassettenrekorder, den du mir gebracht hast, ist der am besten erhaltene von den vieren. Vermutlich hat er den gesamten Verlauf der Ereignisse vom Ausbruch des Leerensturms bis zu seiner Auflösung aufgezeichnet.",
+                "en": "But enough of that. The frequency recorder you brought back is the most intact of the four. It probably captured the whole sequence of events from the sudden onset of the Voidstorm to its eventual dispersion.",
+                "fr": "Mais inutile de s'attarder là-dessus. L'enregistreur de fréquences que tu as rapporté est le plus intact des quatre. Il a probablement gardé en mémoire tout ce qui s'est passé du début de la tempête de néant à sa dispersion.",
+                "ja": "……感傷に浸るのはやめましょう。あなたが持ち帰ったこのレコーダーは、現存する中で、最も保存状態が良いものです。ストームの発生から減衰までの全過程が、記録されている可能性が高いでしょう。",
+                "th": "ไม่พูดเรื่องนี้แล้ว ตลับเทปบันทึกความถี่ที่คุณนำมานี้เป็นอันที่สมบูรณ์ที่สุด มีความเป็นไปได้สูงว่ามันได้บันทึกกระบวนการทั้งหมด ตั้งแต่พายุสุญตาเกิดขึ้นอย่างกะทันหัน จนกระทั่งเสื่อมถอย",
+                "zh-Hans": "不说这个了。你带回的这个频录装置是最完整的一个，它很可能记录了从虚质磁暴突然发生到衰减的全过程。",
+                "zh-Hant": "不說這個了。你帶回的這個頻錄裝置是最完整的一個，它很可能記錄了從虛質磁暴突然發生到衰減的全過程。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Angesicht des Unvermeidlichen haben diese vier Menschen sich dafür entschieden, ihr Wissen weiterzugeben …",
+                "en": "When faced with the inevitable, these four individuals chose pass on the torch of knowledge…",
+                "fr": "Quand ils ont été confrontés à l'inévitable, ces quatre individus ont décidé de transmettre le témoin de la connaissance…",
+                "ja": "逃れられない結末が訪れた時、4人の研究員は「知識」という名の灯火を、私たちに託すことを選んだ……",
+                "th": "เมื่อเผชิญหน้ากับจุดจบที่ไม่อาจหลีกเลี่ยง นักวิจัยทั้งสี่คนเลือกที่จะโยนคบเพลิงแห่งความรู้ส่งต่อมายังพวกเรา...",
+                "zh-Hans": "在注定的结局到来时，四位研究员选择将知识的炬火抛向我们……",
+                "zh-Hant": "在注定的結局到來時，四位研究員選擇將知識的炬火拋向我們……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir dürfen nie vergessen, welches Opfer sie gebracht haben, und müssen ihre Seelen für immer in Ehren halten.",
+                "en": "We must never forget their sacrifice and forever honor their departed souls.",
+                "fr": "Nous devons garder leur sacrifice en mémoire et honorer leurs âmes qui nous ont quittés.",
+                "ja": "私たちはこの献身を胸に刻み、燃え尽きた彼らの魂を、永遠に讃え続けます。",
+                "th": "เราจะจดจำความเสียสละนี้ไว้ และจะรำลึกถึงดวงวิญญาณที่ลุกโชนไม่มีวันมอดดับเหล่านี้ตลอดไป",
+                "zh-Hans": "我们会铭记这份付出，永远纪念这些燃烧不灭的灵魂。",
+                "zh-Hant": "我們會銘記這份付出，永遠紀念這些燃燒不滅的靈魂。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 701040,
+                "name": {
+                  "zh-Hans": "工作人员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

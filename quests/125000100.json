@@ -1,0 +1,105 @@
+{
+  "id": 125000100,
+  "key": "清理流放者3",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Besiege die Exilanten",
+    "en": "Defeat the Exiles",
+    "es": "Derrota a los Exiliados",
+    "fr": "Vaincre les Exilés",
+    "ja": "追放者を倒す",
+    "ko": "추방자 격퇴",
+    "th": "พิชิตผู้ถูกเนรเทศ",
+    "zh-Hans": "击退流放者",
+    "zh-Hant": "擊退流放者"
+  },
+  "desc": {
+    "de": "Einige Exilanten sind wieder in der Wildnis aufgetaucht. Geh und besiege sie.",
+    "en": "Some Exiles showed up in the wild again. Go and defeat them.",
+    "es": "Algunos Exiliados aparecieron de nuevo en el salvaje. Ve y derrotales.",
+    "fr": "Des exilés sont réapparus dans les terres sauvages. Allez les vaincre.",
+    "ja": "追放者が再び野外に現れた。そいつらを倒しに行こう。",
+    "ko": "일부 추방자들이 다시 야외에 나타났습니다. 그들을 격퇴하러 이동하세요",
+    "th": "พบผู้ถูกเนรเทศจำนวนหนึ่งในที่รกร้างอีก ไปพิชิตให้หมด",
+    "zh-Hans": "一些流放者再次出现在野外，请前往并击退他们。",
+    "zh-Hant": "一些流放者再次出現在野外，請前往並擊退他們。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die Exilanten ({q_count}/5)",
+        "en": "Defeat the Exiles ({q_count}/3)",
+        "es": "Derrota a los Exiliados ({q_count}/3)",
+        "fr": "Vaincre les Exilés ({q_count}/3)",
+        "ja": "追放者を倒す（{q_count}/3）",
+        "ko": "추방자 격퇴 ({q_count}/3)",
+        "th": "พิชิตผู้ถูกเนรเทศ ({q_count}/3)",
+        "zh-Hans": "前往击退流放者（{q_count}/3）",
+        "zh-Hant": "前往擊退流放者（{q_count}/3）"
+      },
+      "entities": [
+        {
+          "entityId": 125001009,
+          "mapId": 8,
+          "blueprintType": "SceneObj002",
+          "name": "TsEntity_破碎物002_木箱中11",
+          "areaId": 4,
+          "position": {
+            "x": -66000,
+            "y": 120239,
+            "z": 832
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001010,
+          "mapId": 8,
+          "blueprintType": "SceneObj001",
+          "name": "TsEntity_破碎物001_木箱小20",
+          "areaId": 4,
+          "position": {
+            "x": -66167,
+            "y": 120224,
+            "z": 834
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

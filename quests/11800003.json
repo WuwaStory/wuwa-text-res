@@ -1,0 +1,480 @@
+{
+  "id": 11800003,
+  "key": "割草活动任务回复",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Alloy Schmelze",
+    "en": "Alloy Smelt",
+    "es": "Fundir aleación",
+    "fr": "Alliages spéciaux",
+    "ja": "試作合金",
+    "ko": "합금 샘플",
+    "th": "หลอมโลหะผสม",
+    "zh-Hans": "试冶合金",
+    "zh-Hant": "試冶合金"
+  },
+  "desc": {
+    "de": "Kürzlich ist ein mysteriöser Riss in der Mine aufgetaucht und der Erz-Händler, Shilang, ist von dieser Angelegenheit beunruhigt...",
+    "en": "Recently, a mysterious rift has appeared in the mine, and the ore merchant, Shilang is troubled by this matter...",
+    "es": "Recientemente, una misteriosa grieta ha aparecido en la mina, y el comerciante de minerales, Shilang, está preocupado por este asunto...",
+    "fr": "Dernièrement, une faille mystérieuse est apparue dans la mine, et le marchand de minerais, Shilang, s'en trouve préoccupé…",
+    "ja": "最近鉱山にできた謎の亀裂に、鉱石商人の石琅が悩まされていた……",
+    "ko": "최근 동굴에 신비한 균열이 생겨 광석 상인 석랑이 고민에 빠진 것 같습니다...",
+    "th": "เมื่อไม่นานนี้ เกิดรอยแยกลี้ลับขึ้นในเหมือง ผู้ค้าแร่ ฉือหลางเป็นกังวลเรื่องนี้...",
+    "zh-Hans": "最近在矿洞中出现一个神秘的裂隙，矿石商人石琅正被此事困扰着……",
+    "zh-Hant": "最近在礦洞中出現一個神秘的裂隙，礦石商人石琅正被此事困擾著……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Informiere Shilang über die Situation im Riss",
+        "en": "Inform Shilang about the situation in the rift",
+        "es": "Informa a Shilang sobre la situación en la grieta",
+        "fr": "Parler à Shilang de la situation dans la faille",
+        "ja": "石琅に亀裂の状況を伝える",
+        "ko": "석랑에게 균열 상황 알리기",
+        "th": "แจ้งฉือหลางเกี่ยวกับสถานการณ์ในรอยแยก",
+        "zh-Hans": "告知石琅裂隙中的情况",
+        "zh-Hant": "告知石琅裂隙中的情况"
+      },
+      "entities": [
+        {
+          "entityId": 11800018,
+          "mapId": 8,
+          "blueprintType": "NPC0278",
+          "name": "TsEntity_0278_157_石琅3",
+          "areaId": 1203,
+          "position": {
+            "x": -49530,
+            "y": 170740,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_活动_1.0割草活动",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist zurück!",
+                "en": "You're back!",
+                "es": "¡Has vuelto!",
+                "fr": "Bienvenue à la maison !",
+                "ja": "おお、帰って来たのか。",
+                "ko": "다녀왔어요!",
+                "th": "ท่านกลับมาแล้ว!",
+                "zh-Hans": "你回来了！",
+                "zh-Hant": "你回來了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie ist es drinnen gelaufen?",
+                "en": "How's it going in there?",
+                "es": "¿Cómo te va ahí dentro?",
+                "fr": "Qu'est ce qui s'est passé là bas ?",
+                "ja": "様子はどうだったか？",
+                "ko": "내부 상황은 어떤가요?",
+                "th": "ข้างในนั้นเป็นยังไงบ้าง",
+                "zh-Hans": "里面情况怎么样？",
+                "zh-Hant": "裡面情况怎麼樣？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es gab viele Tacet-Dissonanzen darin.",
+                    "en": "There were a lot of Tacet Discords inside.",
+                    "es": "Había muchas Disonancias Tácitas dentro.",
+                    "fr": "Il y a de nombreuses images rémanentes à l'intérieur.",
+                    "ja": "中にたくさん残像がいた。",
+                    "ko": "안에 많은 잔상이 있어요",
+                    "th": "มีทาเซ็ตดิสคอร์ดมากมายอยู่ภายใน",
+                    "zh-Hans": "里面有很多的残象。",
+                    "zh-Hant": "裡面有很多的殘象。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich wusste nicht, dass es dort so gefährlich ist... Bist du verletzt?",
+                "en": "I didn't know it was so dangerous there... Are you hurt?",
+                "es": "No sabía que era tan peligroso ahí... ¿Estás {Male=herido;Female=herida}?",
+                "fr": "Je n'avais pas réalisé à quel point cette frissure était dangereuse. Tout va bien ?",
+                "ja": "そんなに危険だったとは……怪我はしてないか？",
+                "ko": "균열이 이렇게 위험한 줄은 몰랐어요... 혹시 다쳤나요?",
+                "th": "ฉันไม่รู้ว่าที่นั่นจะอันตรายขนาดนี้... ท่านบาดเจ็บตรงไหนไหม",
+                "zh-Hans": "没想到这裂隙中竟然这么危险……你受伤了吗？",
+                "zh-Hant": "沒想到這裂隙中竟然這麼危險……你受傷了嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin in Ordnung.",
+                    "en": "I'm fine.",
+                    "es": "Estoy bien.",
+                    "fr": "Je vais bien.",
+                    "ja": "大丈夫。",
+                    "ko": "전 괜찮아요",
+                    "th": "ฉันไม่เป็นไร",
+                    "zh-Hans": "我没事。",
+                    "zh-Hant": "我沒事。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist gut, das ist gut...",
+                "en": "That's good, that's good...",
+                "es": "Eso es bueno, eso es bueno...",
+                "fr": "C'est bien, c'est bien...",
+                "ja": "よかった……",
+                "ko": "안 다쳤으면 됐어요...",
+                "th": "ดีจัง ดีจังเลย...",
+                "zh-Hans": "那就好，那就好……",
+                "zh-Hant": "那就好，那就好……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Deine Legierung hat mir sehr geholfen.",
+                    "en": "Your alloy helped me a lot.",
+                    "es": "Tu aleación me ayudó mucho.",
+                    "fr": "Les alliages m'ont beaucoup aidé.",
+                    "ja": "あなたの合金が役に立った。",
+                    "ko": "합금 감지기가 많은 도움이 됐어요",
+                    "th": "โลหะผสมของท่านช่วยฉันได้มาก",
+                    "zh-Hans": "你的合金帮了我很多。",
+                    "zh-Hant": "你的合金幫了我很多。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hat, hat sie das wirklich?! Wie hat sie dir geholfen?",
+                "en": "Did, did it really?! How did it help you?",
+                "es": "¿De, de verdad?! ¿Cómo te ayudó?",
+                "fr": "Oh, je vois ! Vraiment, comment l'avez-vous sauvé ? Comment ?",
+                "ja": "ほ、本当か？具体的には……どんなふうに？",
+                "ko": "정말요? 어떻게 도움이 되었나요?",
+                "th": "จริงเหรอเนี่ย?! มันช่วยท่านได้ยังไง",
+                "zh-Hans": "是、是吗！真的吗！它是怎么帮到你的？",
+                "zh-Hant": "是、是嗎！ 真的嗎！ 它是怎麼幫到你的？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es scheint, dass sie mich gestärkt hat.",
+                    "en": "It seemed to have strengthened me.",
+                    "es": "Parece que me ha fortalecido.",
+                    "fr": "Cela semble renforcer mon pouvoir.",
+                    "ja": "共鳴能力を強化してくれた。",
+                    "ko": "저의 힘을 강화시켜 주는 것 같았어요",
+                    "th": "เหมือนมันจะทำให้ฉันแข็งแกร่งขึ้น",
+                    "zh-Hans": "它好像能强化我的力量。",
+                    "zh-Hant": "它好像能强化我的力量。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Meine Legierung hat den Träger in dieser Sonoro-Sphäre gestärkt...",
+                "en": "My alloy strengthened the bearer in this Sonoro Sphere...",
+                "es": "Mi aleación fortaleció al portador en esta Esfera Sonora...",
+                "fr": "Mes alliages peuvent renforcer le pouvoir du propriétaire dans ce champ Sonora...",
+                "ja": "ソノラで持ち主の力を強化する合金……",
+                "ko": "제 합금이 이 음의 영역에서 소지자의 힘을 강화시켜주는...",
+                "th": "โลหะผสมของฉันทำให้ผู้ที่ครอบครองมันแข็งแกร่งขึ้นในมิติเสียงสะท้อน......",
+                "zh-Hans": "我的合金在这个声之领域中能够强化持有者的力量……",
+                "zh-Hant": "我的合金在這個聲之領域中能夠强化持有者的力量……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich, ich bin wirklich gut im Schmelzen!",
+                "en": "I, I'm really good at smelting!",
+                "es": "¡Yo, yo soy realmente bueno en la fundición!",
+                "fr": "Moi, j'ai toujours un talent !",
+                "ja": "そんなものを生み出してしまうなんて……やはり僕は天賦の才を持っている！",
+                "ko": "저, 저 역시 제련에 재능이 있나봐요!",
+                "th": "ฉัน ฉันเก่งเรื่องการหลอมมากเลยนะ!",
+                "zh-Hans": "我、我果然有冶炼的天赋！",
+                "zh-Hant": "我、我果然有冶煉的天賦！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Weißt du was, ich gebe dir noch mehr Legierungen, und du hilfst mir, sie in der Sonoro-Sphäre zu testen!",
+                "en": "Tell you what, I'll give you some more alloys, and you help me test them in the Sonoro Sphere!",
+                "es": "¿Sabes qué? Te daré más aleaciones, ¡y me ayudarás a probarlas en la Esfera Sonora!",
+                "fr": "Je vous donnerai quelques alliages et vous me testerez aussi les effets dans ces zones sonores !",
+                "ja": "よし、ならば……他の合金の力も試してきてくれないか？",
+                "ko": "이렇게 하죠! 제가 합금을 더 드릴 테니, 이 음의 영역에서 그 효과를 테스트해 보세요!",
+                "th": "ฉันจะมอบโลหะผสมให้กับท่านเพิ่มอีกหน่อย และขอให้ท่านช่วยทดสอบมันในมิติเสียงสะท้อนด้วย!",
+                "zh-Hans": "这样吧，我再给你一些合金，你也帮我测试测试它们在这个声之领域里的效果！",
+                "zh-Hant": "這樣吧，我再給你一些合金，你也幫我測試測試它們在這個聲之領域裡的效果！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist mit der Beseitigung der Bedrohung durch den Spalt passiert?",
+                    "en": "What happened to eliminating the threat of the crevice?",
+                    "es": "¿Qué pasó con la eliminación de la amenaza de la grieta?",
+                    "fr": "Il peut éliminer la menace de fissures.",
+                    "ja": "亀裂の危険を解消したかったのでは？",
+                    "ko": "균열의 위협을 없애야 하는 것 아닌가요?",
+                    "th": "เกิดอะไรขึ้นกับการกำจัดภัยคุกคามจากรอยแยก",
+                    "zh-Hans": "不是要消除裂隙的威胁吗？",
+                    "zh-Hant": "不是要消除裂隙的威脅嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Was ist mit deinem Geschäft?",
+                    "en": "What about your business?",
+                    "es": "¿Qué pasa con tu negocio?",
+                    "fr": "Et la boutique ?",
+                    "ja": "店じまいになるのでは？",
+                    "ko": "사업은 어떻게 하려고요?",
+                    "th": "แล้วธุรกิจของท่านเป็นยังไงบ้าง",
+                    "zh-Hans": "你的生意怎么办？",
+                    "zh-Hant": "你的生意怎麼辦？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist nicht der Punkt. Zwei Tage Geschäftsausfall werden mich nicht umbringen.",
+                "en": "That's not the point. Two days out of business won't kill me.",
+                "es": "Eso no es lo importante. Dos días fuera de negocio no me matarán.",
+                "fr": "Ce n'est pas grave. On ne mourra de faim si l'on repose quelque jours.",
+                "ja": "大丈夫。2日くらい売上がなかったとしても死にはしない。",
+                "ko": "지금은 그게 중요한 게 아니에요. 가게 문을 하루 이틀 닫는다고 굶어 죽지는 않아요",
+                "th": "นั่นไม่ใช่ประเด็นหรอก การหยุดงานสองวันไม่ทำให้ข้าตายได้หรอก",
+                "zh-Hans": "这不是重点，关门两天又饿不死。",
+                "zh-Hant": "這不是重點，關門兩天又餓不死。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Obwohl ich Geschäftsmann bin, habe ich einen Traum.",
+                "en": "Even though I'm a businessman, I have a dream.",
+                "es": "Aunque soy un hombre de negocios, tengo un sueño.",
+                "fr": "Je suis un commerçant, mais j'ai aussi un rêve.",
+                "ja": "それに、僕には夢があるんだ。",
+                "ko": "비록 저는 사업가이지만, 저에게도 꿈이 있어요",
+                "th": "แม้ว่าฉันจะเป็นนักธุระกิจ แต่ฉันก็มีความฝัน",
+                "zh-Hans": "虽然我是个商人，但我也有梦想。",
+                "zh-Hant": "雖然我是個商人，但我也有夢想。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich die stärkste Legierung der Welt herstellen kann, dann werden sich alle Bergbauunternehmen an meinen Namen erinnern!",
+                "en": "If I can make the most powerful alloy in the world, then all the mine companies will remember my name!",
+                "es": "¡Si puedo hacer la aleación más poderosa del mundo, entonces todas las compañías mineras recordarán mi nombre!",
+                "fr": "Si je parviens à créer l'alliage le plus puissant du monde, toutes les mines se souviendront de mon nom !",
+                "ja": "それは、世界一の合金を製錬し、僕の名前をこの業界に轟かせること……",
+                "ko": "만약 제가 세상에서 가장 강한 합금을 만들 수 있다면, 모든 광산은 제 이름을 기억할 거예요",
+                "th": "หากฉันสามารถสร้างโลหะผสมที่แข็งแกร่งที่สุดในโลก บริษัทเหมืองแร่ทั้งหมดก็จะจดจำชื่อของฉันได้!",
+                "zh-Hans": "如果我能制造出世上最强的合金，那所有矿行都会记住我的名字！",
+                "zh-Hant": "如果我能製造出世上最强的合金，那所有礦行都會記住我的名字！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Vergleich dazu ist ein vorübergehender Geschäftsrückschlag keine große Sache.",
+                "en": "Compared to that, a temporary business setback is no big deal.",
+                "es": "Comparado con eso, un contratiempo temporal en los negocios no es gran cosa.",
+                "fr": "Donc, un petit obstacle ne peut pas m'empêcher.",
+                "ja": "そのためなら、少しくらい商売ができなくたって、何てことはない。",
+                "ko": "그에 비하면 일시적인 사업 차질은 별거 아니에요",
+                "th": "เมื่อเทียบกับสิ่งนั้น การหยุดชะงักทางธุรกิจชั่วคราวก็ไม่ใช่เรื่องใหญ่อะไร",
+                "zh-Hans": "与之相比，一时的生意受阻那都不是事儿。",
+                "zh-Hant": "與之相比，一時的生意受阻那都不是事。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte!",
+                "en": "Please!",
+                "es": "¡Por favor!",
+                "fr": "S'il te plaît !",
+                "ja": "では、頼んだぞ！",
+                "ko": "잘 부탁드려요!",
+                "th": "ได้โปรด!",
+                "zh-Hans": "拜托你了！",
+                "zh-Hant": "拜託你了！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1285,
+                "name": {
+                  "zh-Hans": "石琅"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Untersuche \"Atem Riss\"",
+        "en": "Investigate \"Breath Rift\"",
+        "es": "Investiga la \"Grieta de Aliento\".",
+        "fr": "Vérifier la Faille soufflante",
+        "ja": "光息の亀裂を調べる",
+        "ko": "빛나는 균열 조사하기",
+        "th": "สำรวจ \"รอยแยกลมหายใจ\"",
+        "zh-Hans": "调查息芒裂隙",
+        "zh-Hant": "調查息芒裂隙"
+      },
+      "entities": [
+        {
+          "entityId": 200800011,
+          "mapId": 8,
+          "blueprintType": "Gameplay124",
+          "name": "TsEntity_副本_副本入口_割草活动",
+          "areaId": 12,
+          "position": {
+            "x": -40104,
+            "y": 168606,
+            "z": -9605
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

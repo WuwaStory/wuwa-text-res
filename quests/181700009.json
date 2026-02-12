@@ -1,0 +1,850 @@
+{
+  "id": 181700009,
+  "key": "第六天",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lollo-Genie VI",
+    "en": "Lollo Genie Campaign: Day 6",
+    "es": "Genio Lollo VI",
+    "fr": "Génie Loulou - VI",
+    "ja": "ブブジーニー企画・六",
+    "ko": "무무 요정 기획 · Ⅵ",
+    "th": "แคมเปญ Lollo Genie - 6",
+    "zh-Hans": "呜呜精灵企划·六",
+    "zh-Hant": "嗚嗚精靈企劃·六"
+  },
+  "desc": {
+    "de": "Majis System erhält einen Auftrag von einem Wanne-Welpen, der um deine Hilfe bittet, um den Badeservice aufzuwerten.",
+    "en": "Maji's system receives a request from a Tubpup who's asking for your help to upgrade the bathing service.",
+    "es": "El sistema de Maji recibe una solicitud de Canbañera, que pide tu ayuda para mejorar el servicio de baño.",
+    "fr": "Maji a reçu une commande d'un Bainpatou qui vous invite à l'aider à améliorer le service de bain.",
+    "ja": "馬計のシステムにタブドッグから依頼が届いた。泡風呂サービスの改善を手伝ってほしいとのことだ。",
+    "ko": "마현의 시스템에 목욕 서비스 최적화에 대한 욕조견의 도움 요청 의뢰가 접수되었다",
+    "th": "ระบบของ Maji ได้รับคำขอจาก Tubpup อยากให้คุณช่วยปรับปรุงบริการแช่อ่างให้หน่อย",
+    "zh-Hans": "马计的系统收到了浴缸狗的委托，希望你们帮忙优化泡澡业务。",
+    "zh-Hant": "馬計的系統收到了浴缸狗的委託，希望你們幫忙優化泡澡業務。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 181700035,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_浴缸狗无水",
+          "name": "TsEntity_NPC_声骸_浴缸狗无水2",
+          "areaId": 2004,
+          "position": {
+            "x": 782500,
+            "y": 617480,
+            "z": 5220
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Maji",
+        "en": "Talk to Maji",
+        "es": "Habla con Maji.",
+        "fr": "Parler à Maji",
+        "ja": "馬計と会話する",
+        "ko": "마현과 대화하기",
+        "th": "คุยกับ Maji",
+        "zh-Hans": "与马计交谈",
+        "zh-Hant": "與馬計交談"
+      },
+      "entities": [
+        {
+          "entityId": 181700001,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理",
+          "areaId": 1692,
+          "position": {
+            "x": 693440,
+            "y": 583100,
+            "z": 166
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_导引+7天日常",
+          "flowIndex": 1,
+          "stateId": 18,
+          "talks": [
+            {
+              "text": {
+                "de": "So ein Jammer – jetzt bleibt gar kein Jahresendbonus mehr übrig ...",
+                "en": "Just great... There goes all of my end-of-the-year bonuses...",
+                "es": "Genial... Allá van mis bonus de finales de año...",
+                "fr": "Génial… Là, c'est toute ma prime de fin d'année qui part en fumée…",
+                "ja": "ああ……私のボーナスが……",
+                "ko": "아... 연말 상여금이 물 건너갔어요...",
+                "th": "อ๊ะ... โบนัสไม่เหลือแล้ว...",
+                "zh-Hans": "啊……年终奖完全泡汤了……",
+                "zh-Hant": "啊……年終獎金完全泡湯了……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber egal, wie niedergeschlagen ich auch bin, ich darf diese armen kleinen Echos nicht ihrer schönen Erinnerungen berauben!",
+                "en": "Yet, no matter how down I'm feeling, I can't deprive those poor little Echoes of their precious memories!",
+                "es": "Pero bueno, da igual que esté mal, ¡soy incapaz de dejar a esos pobres Ecos sin sus preciados recuerdos!",
+                "fr": "Même si je suis déprimé, je ne peux pas priver ces pauvres petits Échos de leurs précieux souvenirs !",
+                "ja": "だが、いくら落ちぶれようと、かわいそうな音骸から、わずかばかりの思い出を奪うわけにはいかない！",
+                "ko": "제가 아무리 힘들어도 가여운 에코들의 작은 희망까지 빼앗을 순 없어요!",
+                "th": "ต่อให้ฉันเศร้าแค่ไหน ก็จะมานึกถึงเรื่องเล็กน้อยแบบนั้นไม่ได้หรอกนะ",
+                "zh-Hans": "就算我再落魄，也不能抢可怜小骸的那一点点念想啊！",
+                "zh-Hant": "就算我再落魄，也不能搶可憐小骸的那一點點念想啊！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist schon in Ordnung. Ich muss einfach nur einen Auftrag nach dem nächsten erfüllen, und eines Tages werde ich ...",
+                "en": "That's all right. As long as I do one order at a time... One day I'll...",
+                "es": "Pero no importa. Mientras siga trabajando duro, habrá algún día que...",
+                "fr": "Ça va, tant que je prends les commandes une par une… Un jour, je…",
+                "ja": "大丈夫だ！頑張れば、いつかきっと……",
+                "ko": "그래도 괜찮아요, 열심히 일하면 언젠간...",
+                "th": "แต่ไม่เป็นไรหรอก ขอแค่ขยันรับออเดอร์... คงต้องมีสักวันแหละ...",
+                "zh-Hans": "不过没关系，只要努力做单……总有一天……",
+                "zh-Hant": "不過沒關係，只要努力完成訂單……總有一天……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Piep – Systemnachricht: Neuen Auftrag erhalten.",
+                "en": "Beep—System notification: New order received.",
+                "es": "Bip... Notificación del sistema: Nuevo encargo recibido.",
+                "fr": "Bip ! Notification système : nouvelle commande.",
+                "ja": "ピコンッ——システム通知です。新しい依頼が届きました。",
+                "ko": "띠—— 시스템 알림입니다. 새로운 주문이 있습니다",
+                "th": "ติ๊ด—ประกาศจากระบบ คุณมีออเดอร์ใหม่",
+                "zh-Hans": "滴——系统提示，您有新的订单。",
+                "zh-Hant": "滴——系統提示，您有新的訂單。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nanu? Der Auftrag eines Wanne-Welpen, seinen Badeservice zu optimieren? Das klingt spannend.",
+                "en": "Hmm... A Tubpup requests to optimize its bath services! Sounds interesting.",
+                "es": "Mmm... ¡Ha llegado un encargo de Canbañera en el que se nos pide optimizar sus servicios de baño! Parece interesante.",
+                "fr": "Hmm… Bainpatou aimerait qu'on l'aide à optimiser ses services ! Ça pourrait être intéressant.",
+                "ja": "おおっ——「タブドッグの快適入浴サービス」だと！なんとも魅力的じゃないか。",
+                "ko": "아—— 욕조견의 목욕 서비스 최적화! 괜찮아 보이네요",
+                "th": "อ้อ... กิจการอาบน้ำที่อัปเกรด Tubpup! ฟังดูไม่เลวเลยนะ",
+                "zh-Hans": "哦——浴缸狗的优化泡澡业务！听起来很不错呢。",
+                "zh-Hant": "哦——浴缸狗的優化泡澡業務！聽起來很不錯呢。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach, es wäre so schön, wenn ich einfach schon Feierabend machen und ein schönes Schaumbad nehmen könnte ...",
+                "en": "Oh, it would be so nice if I could just clock out and go enjoy a bubble bath...",
+                "es": "Me encantaría disfrutar ahora mismo de un baño de burbujas...",
+                "fr": "Ah, si seulement je pouvais arrêter de bosser et prendre un bon bain…",
+                "ja": "はぁ……私も今すぐ仕事を放り出して、ゆっくりとお風呂に浸かりたいもんだ……。",
+                "ko": "저도 당장 퇴근하고 느긋하게 목욕을 즐기고 싶어요...",
+                "th": "ฉันก็อยากเลิกงานตอนนี้เลยนะ แล้วไปอาบน้ำล้างตัวซะหน่อย....",
+                "zh-Hans": "我也好想现在就下班，然后美美泡个澡……",
+                "zh-Hant": "我也好想現在就下班，然後美美泡個澡……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 181700001,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 693440,
+                    "y": 583100,
+                    "z": 166
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 120
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde den Wanne-Welpen",
+        "en": "Find the Tubpup",
+        "es": "Encuentra a Canbañera.",
+        "fr": "Trouver Bainpatou",
+        "ja": "タブドッグを探す",
+        "ko": "욕조견 찾기",
+        "th": "ตามหา Tubpup",
+        "zh-Hans": "寻找浴缸狗",
+        "zh-Hant": "尋找浴缸狗"
+      },
+      "entities": [
+        {
+          "entityId": 181700035,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_浴缸狗无水",
+          "name": "TsEntity_NPC_声骸_浴缸狗无水2",
+          "areaId": 2004,
+          "position": {
+            "x": 782500,
+            "y": 617480,
+            "z": 5220
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_导引+7天日常",
+          "flowIndex": 1,
+          "stateId": 19,
+          "talks": [
+            {
+              "text": {
+                "de": "Mensch! Ich will, dass mehr Menschen Hunde mögen.",
+                "en": "Human. Me want more humans to like dogs.",
+                "es": "{Male=Humano;Female=Humana}. Quiero que haya más humanos a los que les gusten los perros.",
+                "fr": "{Male=Humain;Female=Humaine}. Moi veux que plus d'humains aiment chiens.",
+                "ja": "人間よ、ワンワンはもっと多くの人に気に入ってもらいたいんだ。",
+                "ko": "인간, 더 많은 인간들이 욕조견을 좋아하게 만들고 싶어요",
+                "th": "อยากให้มนุษย์หันมาชอบสุนัขมากกว่านี้",
+                "zh-Hans": "人，狗想要让更多人喜欢狗。",
+                "zh-Hant": "人，狗想要讓更多人喜歡狗。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich will mehr Menschen baden. Ich will auch, dass mehr Menschen Hunde baden.",
+                "en": "Me want to bathe more humans. Me want more humans to bathe dogs.",
+                "es": "Quiero bañar a más humanos. Y que más humanos bañen a los perros.",
+                "fr": "Moi veux prendre bain avec plus d'humains. Veux plus d'humains pour donner bain à chiens.",
+                "ja": "もっとたくさんの人にバスタブに入ってほしい。もっともっと、みんなに好きになってもらいたい！",
+                "ko": "더 많은 인간을 목욕시키고 싶고, 더 많은 인간이 욕조견을 좋아하게 만들고 싶어요",
+                "th": "อยากให้มนุษย์หันมาชอบสุนัขมากกว่านี้",
+                "zh-Hans": "狗想要泡更多的人。狗想要让更多的人喜欢泡狗。",
+                "zh-Hant": "狗想要泡更多的人。狗想要讓更多的人喜歡泡狗。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe gehört, dass Menschen duftende Blumen mögen. Korrekt, Mensch?",
+                "en": "Me heard that humans like scented flowers, yes, human?",
+                "es": "He oído que a los humanos os gustan las flores aromáticas, ¿es verdad?",
+                "fr": "Entendu dire que humains aiment fleurs qui sentent bon. Vrai, {Male=humain;Female=humaine} ?",
+                "ja": "人間はいい香りがする花が好きだって、ワンワンは聞いたぞ。そうなのか？",
+                "ko": "인간은 향긋한 꽃을 좋아한다고 들었는데, 진짜인가요?",
+                "th": "ได้ยินมาว่า มนุษย์ชอบดอกไม้หอมๆ จริงมั้ย?",
+                "zh-Hans": "狗听说，人喜欢香香的花花，是吗，人？",
+                "zh-Hant": "狗聽說，人喜歡香香的花花，是嗎，人？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja, Hundi.",
+                    "en": "Yes, doggy.",
+                    "es": "Sí, perrito.",
+                    "fr": "Oui, toutou.",
+                    "ja": "そうだよ。",
+                    "ko": "맞아요",
+                    "th": "ใช่แล้ว เจ้าสุนัข",
+                    "zh-Hans": "是的，狗。",
+                    "zh-Hant": "是的，狗。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Hunden ein Bad mit Blumen zu geben, ist eine schöne Idee.",
+                    "en": "Giving dogs a bath using flowers is a nice idea.",
+                    "es": "Dar un baño a los perros con flores es una gran idea.",
+                    "fr": "Donner un bain aux chiens en utilisant des fleurs, bonne idée.",
+                    "ja": "お湯に花を浮かべるといいかも。",
+                    "ko": "꽃과 욕조견, 좋을 것 같네요",
+                    "th": "ใช้ดอกไม้อาบน้ำให้สุนัข เป็นความคิดที่ไม่เลวเลย",
+                    "zh-Hans": "用花花泡狗，很不错。",
+                    "zh-Hant": "用花花泡狗，很不錯。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gut. Mensch, gib mir Blumen. Blumenart egal.",
+                "en": "Okay, human, give me flowers. Any flowers will do.",
+                "es": "Vale, {Male=humano;Female=humana}, dame flores. Cualquiera me sirve.",
+                "fr": "D'accord, {Male=humain;Female=humaine}, donne-moi des fleurs. N'importe quelle fleur va bien.",
+                "ja": "やっぱりそうか！人間よ、ワンワンに花をくれないか？なんの花でもいいんだ。",
+                "ko": "좋아요, 인간. 꽃을 좀 주세요, 아무거나 다 좋아요",
+                "th": "ได้สิมนุษย์ ช่วยมอบดอกไม้ให้สุนัขหน่อย ดอกอะไรก็ได้",
+                "zh-Hans": "好的，人，请给小狗一点花花，随便什么花花都可以。",
+                "zh-Hant": "好的，人，請給小狗一點花花，隨便什麼花花都可以。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schenke den Wanne-Welpen die Blumen",
+        "en": "Give the flower to the Tubpup",
+        "es": "Dale la flor a Canbañera.",
+        "fr": "Donner les fleurs à Bainpatou",
+        "ja": "タブドッグに花を贈る",
+        "ko": "욕조견에게 꽃 주기",
+        "th": "มอบดอกไม้ให้กับ Tubpup",
+        "zh-Hans": "把花送给浴缸狗",
+        "zh-Hant": "把花送給浴缸狗"
+      },
+      "entities": [
+        {
+          "entityId": 181700035,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_浴缸狗无水",
+          "name": "TsEntity_NPC_声骸_浴缸狗无水2",
+          "areaId": 2004,
+          "position": {
+            "x": 782500,
+            "y": 617480,
+            "z": 5220
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Wanne-Welpen",
+        "en": "Talk to the Tubpup",
+        "es": "Habla con Canbañera.",
+        "fr": "Parler à Bainpatou",
+        "ja": "タブドッグと会話する",
+        "ko": "욕조견과 대화하기",
+        "th": "คุยกับ Tubpup",
+        "zh-Hans": "与浴缸狗交谈",
+        "zh-Hant": "與浴缸狗交談"
+      },
+      "entities": [
+        {
+          "entityId": 181700035,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_浴缸狗无水",
+          "name": "TsEntity_NPC_声骸_浴缸狗无水2",
+          "areaId": 2004,
+          "position": {
+            "x": 782500,
+            "y": 617480,
+            "z": 5220
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 181700037,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_浴缸狗",
+          "name": "TsEntity_NPC_声骸_浴缸狗",
+          "areaId": 2004,
+          "position": {
+            "x": 782490,
+            "y": 617420,
+            "z": 5220
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_导引+7天日常",
+          "flowIndex": 1,
+          "stateId": 20,
+          "talks": [
+            {
+              "text": {
+                "de": "Jaul ... Riecht gut. Welpennase empfindlich. Zu viele Blumen, Welpennase juckt.",
+                "en": "Achoo... So good-smelling. My nose is too sensitive. Many flowers make nose itchy.",
+                "es": "Achís... Qué bien huele. Mi nariz es muy sensible. Si hay demasiadas flores, me irritarán la nariz.",
+                "fr": "Atchoum ! Sent bon. Truffe trop sensible. Beaucoup fleurs grattouillent truffe.",
+                "ja": "はっくしょん——いい匂いだけど、ワンワンは鼻が利くから、たくさんの花が近くにあると、鼻がくすぐったいな。",
+                "ko": "에취—— 향기롭네요. 욕조견의 코는 예민해서, 꽃이 많으니까 코가 살짝 간지럽네요",
+                "th": "อู้ว... หอมจัง สุนัขจมูกไวมาก ดอกไม้เยอะขนาดนี้ รู้สึกคันจมูกแฮะ",
+                "zh-Hans": "阿嚏——很香，狗鼻子太灵了，这么多花花，鼻子有点痒痒。",
+                "zh-Hant": "阿嚏——很香，狗鼻子太靈了，這麼多花花，鼻子有點癢癢。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber okay. Mensch soll Blumen mögen.",
+                "en": "But it's okay, as long as humans like it.",
+                "es": "Pero si a los humanos les gusta, no pasa nada.",
+                "fr": "Mais pas grave, si humains aiment bien.",
+                "ja": "でもいいんだ！みんなに気に入ってもらえれば！",
+                "ko": "하지만 괜찮아요, 인간이 좋으면 상관없어요",
+                "th": "แต่ไม่เป็นไรหรอก มนุษย์ชอบก็โอเค",
+                "zh-Hans": "不过没关系，人喜欢就好。",
+                "zh-Hant": "不過沒關係，人喜歡就好。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Willst du baden, Mensch?",
+                "en": "Want to bathe together, human?",
+                "es": "¿Quieres que nos bañemos juntos, {Male=humano;Female=humana}?",
+                "fr": "On prend bain, {Male=humain;Female=humaine} ?",
+                "ja": "人間、入ってみるか？",
+                "ko": "인간, 목욕할래요?",
+                "th": "มาอาบน้ำเหรอ มนุษย์?",
+                "zh-Hans": "来泡泡吧？人。",
+                "zh-Hant": "來泡泡吧？人。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Okay.",
+                    "en": "Okay.",
+                    "es": "Vale.",
+                    "fr": "D'accord.",
+                    "ja": "入る。",
+                    "ko": "좋아요",
+                    "th": "ตกลง",
+                    "zh-Hans": "好的。",
+                    "zh-Hant": "好的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Lass mich Wasser einfüllen.",
+                    "en": "Let me fill you up with water.",
+                    "es": "Deja que te llene de agua.",
+                    "fr": "Laisse-moi te remplir d'eau.",
+                    "ja": "{Male=お湯を入れてやるよ。;Female=お湯を入れてあげるよ。}",
+                    "ko": "물을 채워놓을게요",
+                    "th": "ฉันจะช่วยเทน้ำให้",
+                    "zh-Hans": "我帮你倒水。",
+                    "zh-Hant": "我幫你倒水。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du füllst den Wanne-Welpe mit heißem Wasser und ein zarter Duft treibt durch die Luft.",
+                "en": "You fill the Tubpup with hot water, and a fragrant aroma slowly drifts in the air above it.",
+                "es": "Llenas a Canbañera de agua caliente y un aroma fragante flota en el aire.",
+                "fr": "Vous remplissez le Bainpatou d'eau, et un parfum agréable se répand dans l'air au-dessus de lui.",
+                "ja": "タブドッグにお湯を満たすと、ふわりと良い香りが空中に広がった。",
+                "ko": "욕조견이 물을 가득 채웠고, 향긋한 향기가 물속에서 번져갔다",
+                "th": "Tubpup เติมน้ำจนเต็ม กลิ่นหอมละมุนลอยขึ้นมาเหนือน้ำ",
+                "zh-Hans": "浴缸狗接满了水，芬芳的香气从水中飘散开。",
+                "zh-Hant": "浴缸狗接滿了水，芬芳的香氣從水中飄散開。"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "Danke, Mensch. Ich bin sehr glücklich.",
+                "en": "Thank you, human. Me very happy now.",
+                "es": "Gracias, {Male=humano;Female=humana}. Me haces muy feliz.",
+                "fr": "Merci, {Male=humain;Female=humaine}. Moi très content, maintenant.",
+                "ja": "ありがとう！ワンワンは、今とっても幸せだ！",
+                "ko": "인간, 고마워요. 욕조견은 지금 너무 행복해요",
+                "th": "ขอบคุณนะมนุษย์ ตอนนี้ฉันมีความสุขมาก",
+                "zh-Hans": "谢谢，人，狗现在很幸福。",
+                "zh-Hant": "謝謝，人，狗現在很幸福。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700162,
+                "name": {
+                  "zh-Hans": "“浴缸狗”"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_导引+7天日常",
+          "flowIndex": 1,
+          "stateId": 21,
+          "talks": [
+            {
+              "text": {
+                "de": "Du gibst den Auftrag ab und erhältst Lollo-Briefmarken sowie das Glücksgefühl des schwanzwedelnden Wanne-Welpen.",
+                "en": "You submit the task and receive Lollo Stamps along with the happiness from Tubpup's wagging tail.",
+                "es": "Das la tarea por terminada y recibes los Sellos de Lollo mientras Canbañera mueve la cola como muestra de felicidad.",
+                "fr": "Vous confirmez que la tâche est terminée et vous recevez des Jetons Loulou. Mais la vraie récompense, c'est de voir la queue du Bainpatou s'agiter joyeusement.",
+                "ja": "依頼達成。タブドッグがしっぽを振るところを見ながら、ブブコインの入金を確認した。",
+                "ko": "임무를 제출하자 무무코인이 즐겁게 꼬리를 흔드는 욕조견과 함께 계좌에 입금되었다",
+                "th": "คุณส่งมอบภารกิจ เสียงเหรียญลอลโล่ก็ไหลเข้าสู่บัญชี เจ้าสุนัขน้อยกระดิกหางอย่างมีความสุข",
+                "zh-Hans": "你提交了任务，呜呜邮币和小狗的摇尾一起快乐到账了。",
+                "zh-Hant": "你提交了任務，嗚嗚郵幣和小狗的搖尾一起快樂到帳了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Selbst mein müdes Angestelltenherz wird angesichts des Wanne-Welpen ganz weich. So ein guter Hund.",
+                "en": "Even my tired salaryman's heart has been mended by the Tubpup. Such a good dog.",
+                "es": "Incluso mi corazoncito de persona agotada por la rutina siente cierto alivio gracias a Canbañera. Me encanta ese perro.",
+                "fr": "Mon âme de salarié surmené a été apaisée par Bainpatou. C'est vraiment un bon chien.",
+                "ja": "ああ……この疲れ切った社畜の私の心でさえ、バスタブドッグに癒されてしまった……ワンコ最高じゃないか！",
+                "ko": "직장인으로서 지쳐버린 제 마음마저 욕조견 덕분에 힐링 됐어요. 욕조견 최고예요",
+                "th": "แม้ว่าจะทำงาจจนเหน็ดเหนื่อย แต่ก็ผ่อนคลายได้เพราะเจ้าสุนัขอ่างอาบน้ำ",
+                "zh-Hans": "就连我这疲惫的社畜之心，都被浴缸小狗治愈了，狗好。",
+                "zh-Hant": "就連我這疲憊的社畜之心，都被浴缸小狗治癒了，狗好。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750149,
+                "name": {
+                  "zh-Hans": "马计（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er mag zwar kein Fell haben, aber er hat ein warmes, treues Herz, so wie jeder andere Hund.",
+                "en": "It's got no hair, but it has a fluffy, warm heart just like any other dog.",
+                "es": "No tiene pelo, pero su corazón es dulce y cálido como el de cualquier otro perro.",
+                "fr": "Il n'a pas de fourrure, mais son cœur est aussi doux et chaleureux que celui des autres chiens.",
+                "ja": "モフモフの毛並みじゃないが……あいつの心は、普通の子犬たちと同じように、純粋であったかいんだ！",
+                "ko": "욕조견은 털이 없지만, 다른 강아지처럼 복슬복슬하고 따뜻한 마음이 있어요",
+                "th": "ถึงแม้มันจะไม่มีขน แต่ก็มีหัวใจที่อบอุ่น",
+                "zh-Hans": "虽然它没有长毛，但它有和其他小狗一样毛茸茸暖呼呼的心。",
+                "zh-Hant": "雖然它沒有長毛，但它有和其他小狗一樣毛茸茸暖呼呼的心。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750149,
+                "name": {
+                  "zh-Hans": "马计（通讯中）"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Genieße das Schaumbad mit dem Wanne-Welpen",
+        "en": "Enjoy the bubble bath with the Tubpup",
+        "es": "Disfruta del baño con Canbañera.",
+        "fr": "Profiter d'un bain de balles avec Bainpatou",
+        "ja": "タブドッグと「泡遊び」",
+        "ko": "욕조견과 함께 「목욕하기」",
+        "th": "\"แช่อ่าง\" ด้วยกันกับ Tubpup",
+        "zh-Hans": "与浴缸狗一起“泡泡”",
+        "zh-Hant": "與浴缸狗一起「泡泡」"
+      },
+      "entities": [
+        {
+          "entityId": 181700037,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_浴缸狗",
+          "name": "TsEntity_NPC_声骸_浴缸狗",
+          "areaId": 2004,
+          "position": {
+            "x": 782490,
+            "y": 617420,
+            "z": 5220
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

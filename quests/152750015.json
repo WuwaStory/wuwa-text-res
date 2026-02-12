@@ -1,0 +1,503 @@
+{
+  "id": 152750015,
+  "key": "1.3转盘活动第一天（战斗）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo-Kampagne: Navigation I",
+    "en": "Lollo Campaign: Navigation I",
+    "es": "Campaña Lollo: Navegación I",
+    "fr": "Projet Loulou : Navigation I",
+    "ja": "ブブナビ企画・一",
+    "ko": "무무 내비게이션 기획 · Ⅰ",
+    "th": "แคมเปญลอลโล่: การนำทาง 1",
+    "zh-Hans": "呜呜导航企划·一",
+    "zh-Hant": "嗚嗚導航企劃·一"
+  },
+  "desc": {
+    "de": "Der Inhalt der Tageskampagne 1 wurde aktualisiert. Maji ist bereit, dass du dich anschließt und die neuen Aufgaben übernimmst.",
+    "en": "The Day 1 Campaign content has been updated. Maji is ready for you to join forces and take on the new tasks.",
+    "es": "El contenido de la Campaña del día 1 se ha actualizado. Maji está listo para que te unas a él y asumas las nuevas tareas.",
+    "fr": "Le contenu du Jour 1 du projet de Maji est disponible. Le gérant vous attend pour que vous participiez et releviez les nouveaux défis.",
+    "ja": "一日目の企画内容が更新された。馬計はあなたと一緒にそれを完成させることに期待している。",
+    "ko": "첫째 날 기획 내용이 업데이트되었습니다. 마현이 당신과 함께 완성하기를 기다리고 있습니다",
+    "th": "เนื้อหาแคมเปญวันที่ 1 ได้รับการอัปเดตแล้ว Maji พร้อมให้คุณเข้าร่วมกองกำลังและรับภารกิจใหม่แล้ว",
+    "zh-Hans": "第一天企划的内容已更新，马计正等待着你一同完成它。",
+    "zh-Hant": "第一天企劃的內容已更新，馬計正等待著你一同完成它。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Unterhalte dich mit Maji über das heutige Geschäft",
+        "en": "Chat with Maji about today's business",
+        "es": "Habla con Maji sobre los asuntos del primer día.",
+        "fr": "Discutez avec Maji des affaires du jour",
+        "ja": "馬計と一日目の企画について話し合う",
+        "ko": "마현과 첫날 기획 내용을 논의하기",
+        "th": "คุยเรื่องงานวันนี้กับ Maji",
+        "zh-Hans": "与马计讨论首日的企划内容",
+        "zh-Hant": "與馬計討論首日的企劃內容"
+      },
+      "entities": [
+        {
+          "entityId": 152750032,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理3",
+          "areaId": 301,
+          "position": {
+            "x": -42456,
+            "y": 89517,
+            "z": 432
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Für diesen Testlauf möchte ich alle Benutzer in einer Gruppe zusammenfassen, {PlayerName}. Die Gruppe, die ich am besten kenne ist, Lollo-Logistik ...",
+                "en": "For this trial run, {PlayerName}. I plan to merge the users as one group. A group I know best, the Lollo Logistics.",
+                "es": "{PlayerName}, para esta fase de test, quiero fusionar a todos los usuarios en un mismo grupo. Un grupo que conozco mejor que nadie: ¡Logística Lollo!",
+                "fr": "Écoute bien, {PlayerName}. Pour cette phase d'essai, je veux mettre tous les utilisateurs dans un même groupe. Celui de Loulou Logistique, que je connais le mieux.",
+                "ja": "{PlayerName}、今回の運用テストは、一つの客層に絞ることが決定したよ。それも私が一番知っている客層である配達員さ。",
+                "ko": "{PlayerName}, 이번 시범 운행은 제가 가장 잘 아는 무무 택배원 집단에 초점을 맞추려고요",
+                "th": "สำหรับการทดลองปฏิบัติการครั้งนี้ {PlayerName} ฉันวางแผนที่จะรวมผู้ใช้จำนวนหนึ่งเข้าด้วยกันเป็นกลุ่มเดียว กลุ่มที่ฉันรู้จักดีที่สุด นั่นคือ ลอลโล่โลจิสติกส์",
+                "zh-Hans": "{PlayerName}，这次的试运行我打算将用户聚焦在一个群体，也是我最了解的群体，呜呜物流员。",
+                "zh-Hant": "{PlayerName}，這次的試運行我打算將用戶聚焦在一個群體，也是我最了解的群體，嗚嗚物流員。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Karte ist für sie ein Trumpf, solange ...",
+                "en": "For them, the map is king. As long as...",
+                "es": "Para ellos, el mapa es el rey. Además, vamos a...",
+                "fr": "Pour les livreurs de colis, il n'y a que la carte qui compte. Du moment que...",
+                "ja": "彼らにとって、マップは大事な仲間だからね。こんな感じに……",
+                "ko": "그들에게 지도는 가장 중요하거든요. 그러니까...",
+                "th": "สำหรับพวกเขาแล้ว แผนที่คือราชา ตราบใดที่...",
+                "zh-Hans": "对于他们来说，地图最为重要，只要……",
+                "zh-Hant": "對於他們來說，地圖最為重要，只要……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Majis wollte dir gerade die Details erklären, als die App des Lollo-Navigators plötzlich aufheult.",
+                "en": "Just as Maji is about to explain the details to you, the applet on the \"Lollo Navigator\" starts chiming…",
+                "es": "Justo cuando Maji estaba a punto de explicarte los detalles, la miniaplicación de la «Navegación Lollo» comienza a sonar.",
+                "fr": "Au moment où Maji s'apprête à vous donner les détails, une alerte se déclenche dans la mini-application du navigateur Loulou...",
+                "ja": "<ano=マーケイ>馬計</ano>が解説しようとした時、「ブブナビ」アプリから通知音がした。",
+                "ko": "마현이 자세히 설명하려고 하자, 「무무 내비게이션」 프로그램이 울리기 시작한다...",
+                "th": "ในขณะที่ Maji กำลังจะอธิบายรายละเอียดให้คุณฟัง แอปเล็ตบน \"ผู้นำทางลอลโล่\" ก็เริ่มส่งเสียงเตือน...",
+                "zh-Hans": "正当马计想向你详细解说时，「呜呜导航」小程序响动了起来……",
+                "zh-Hant": "正當馬計想向你詳細解說時，「嗚嗚導航」小程式響動了起來……"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Siehst du das? Das ist ein Hilferuf vom Lollo-Navigator. Ich schicke dir die Koordinaten, die ich gerade empfangen habe.",
+                "en": "See that? That's a call for action for \"Lollo Navigator.\" I'm sending you the coordinates I just received.",
+                "es": "¿Ves eso? Es la «Navegación Lollo» haciendo una llamada a la acción. Te envío las coordenadas que acabo de recibir.",
+                "fr": "Tu vois ça ? C'est une demande envoyée au navigateur Loulou. Je vais te transmettre les coordonnées.",
+                "ja": "ほら、さっそく「ブブナビ」の出番さ。受信した座標を送っておいた。",
+                "ko": "자, 「무무 내비게이션」이 역할을 할 때가 됐어요. 방금 받은 지리 좌표를 당신에게 보냈어요",
+                "th": "ได้ยินไหม? มีคนเรียกใช้บริการ \"ผู้นำทางลอลโล่\" แล้ว ฉันจะส่งพิกัดที่เพิ่งได้รับไปให้คุณนะ",
+                "zh-Hans": "瞧，「呜呜导航」发挥作用的时候到了，我将刚刚收到的地理坐标发送给你了。",
+                "zh-Hant": "瞧，「嗚嗚導航」發揮作用的時候到了，我將剛剛收到的地理座標發送給你了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Am besten du gehst selbst dahin, damit du vor Ort mit allen Funktionen vertraut wirst.",
+                "en": "To get familiarized with all the features, it's better to go and see for yourself.",
+                "es": "Para familiarizarte con todas las funciones, es mejor que vayas a verlo por ti {Male=mismo;Female=misma}.",
+                "fr": "Si tu veux maîtriser toutes les fonctionnalités, le mieux, c'est que tu découvres par toi-même.",
+                "ja": "「ブブナビ」の機能については、自分で体験した方が早いかもしれないね。それじゃ、お願いするよ。",
+                "ko": "그것의 기능은 실제로 경험해 보는 게 더 나을 거예요. 직접 가서 확인해 보세요",
+                "th": "เพื่อทำความคุ้นเคยกับฟีเจอร์ทั้งหมด คุณควรจะออกไปทดลองใช้ด้วยตัวเอง",
+                "zh-Hans": "关于它的功能，也许实践能理解得更快，亲眼去看看吧。",
+                "zh-Hant": "關於它的功能，也許實踐能理解得更快，親眼去看看吧。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zum Zielgebiet",
+        "en": "Proceed to the designated area",
+        "es": "Dirígete a la zona objetiva.",
+        "fr": "Se rendre à la zone indiquée",
+        "ja": "目標地点に向かう",
+        "ko": "목표 구역으로 이동",
+        "th": "มุ่งหน้าไปยังพื้นที่ที่กำหนด",
+        "zh-Hans": "前往目标区域",
+        "zh-Hant": "前往目標區域"
+      },
+      "entities": [
+        {
+          "entityId": 140800363,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器8",
+          "areaId": 4,
+          "position": {
+            "x": -43361,
+            "y": 41453,
+            "z": 5287
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 6,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege alle Gegner innerhalb der vorgegebenen Zeit",
+        "en": "Defeat the enemies within the specified time",
+        "es": "Derrota a los enemigos dentro del tiempo límite.",
+        "fr": "Vaincre les ennemis dans le temps imparti",
+        "ja": "制限時間内に敵を倒す",
+        "ko": "제한 시간 내에 적군 격파하기",
+        "th": "เอาชนะศัตรูภายในเวลาที่กำหนด",
+        "zh-Hans": "在限制时间内击败敌人",
+        "zh-Hant": "在限制時間內擊敗敵人"
+      },
+      "entities": [
+        {
+          "entityId": 140800363,
+          "mapId": 8,
+          "blueprintType": "Gameplay581",
+          "name": "TsEntity_特殊_行人NPC生成器8",
+          "areaId": 4,
+          "position": {
+            "x": -43361,
+            "y": 41453,
+            "z": 5287
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Das Programm zeigt, dass sich die Farbe auf diesem Bereich der Karte geändert hat. Das warst du, {PlayerName}, oder?",
+                "en": "The program shows the color on this part of the map has changed. You did it, {PlayerName}.",
+                "es": "El programa señala que el color de esta parte del mapa ha cambiado. Esto lo hiciste tú, {PlayerName}.",
+                "fr": "Le programme indique que la couleur de cette partie de la carte a changé. Tu as réussi, {PlayerName}.",
+                "ja": "アプリで見る限り、その辺りはマップの色が変わっているね。どうやら成功したみたいだよ、{PlayerName}。",
+                "ko": "프로그램에서 지도 상 이 부분의 색이 바뀌었으니 {PlayerName}(이)가 이미 성공한 것 같네요",
+                "th": "โปรแกรมรายงานว่าสีของแผนที่ส่วนนี้เปลี่ยนไปแล้ว คุณทำสำเร็จแล้วนะ {PlayerName}",
+                "zh-Hans": "程序里地图这一块发生了颜色变化，看起来{PlayerName}你已经成功了。",
+                "zh-Hant": "程式裡地圖這一塊發生了顏色變化，看起來{PlayerName}你已經成功了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erinnerst du dich noch an den Lollo-Hitman vom letzten Mal? Ich habe ein paar seiner Funktionen in das neue Programm übertragen. Die Straßenverhältnisse in der Wildnis sind schwierig und es kann immer wieder zu unerwarteten Notsituationen kommen.",
+                "en": "Remember \"Lollo Hitman\" from last time? I've loaded some of its features into this new program. The trips out in the wild can be tough, and emergencies can pop up any time.",
+                "es": "¿Te acuerdas de las «Escoltas Lollo» de la última vez? He integrado algunas de sus funciones en este nuevo programa. Los caminos que atraviesan la naturaleza no son precisamente seguros, y en cualquier momento pueden surgir situaciones inesperadas.",
+                "fr": "Tu te souviens de Loulou Hitman ? J'ai intégré quelques-unes de ses fonctions au nouveau programme. Des dangers inattendus se cachent partout, et il faut se préparer à toutes les éventualités.",
+                "ja": "「ブブスピードファイター」はまだ覚えているかい？一部の機能を新アプリにも実装しといたんだ。野外で活動する時は道路状況も複雑だし、緊急事態もよくあるからね。",
+                "ko": "「무무 해결사」를 기억하시나요? 새 프로그램에 무무 해결사의 일부 기능을 추가했어요. 야외에서 길이 복잡하기도 하고 예상치 못한 상황도 자주 발생하니까요",
+                "th": "จำ \"มือปืนลอลโล่\" จากคราวก่อนได้ไหม? ฉันโหลดฟีเจอร์บางส่วนของมันมาไว้ในโปรแกรมใหม่นี้ด้วย การเดินทางออกไปข้างนอกอาจเกิดเรื่องลำบาก เหตุฉุกเฉินเกิดขึ้นได้ตลอดเวลา",
+                "zh-Hans": "还记得「呜呜快打」吗？我将它的部分功能附加在了新程序上。野外路况复杂，时常会遭遇突发情况。",
+                "zh-Hant": "還記得「嗚嗚快打」嗎？我將它的部分功能附加在了新程式上。野外路況複雜，時常會遭遇突發情況。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn man Lollo-Hitman als Reaktionssystem für Notfälle betrachtet, dann stellt das neue Programm ein Frühwarnsystem dar.",
+                "en": "If \"Lollo Hitman\" was a response measure for emergencies, then the new program acts as an early warning system.",
+                "es": "Así como «Escoltas Lollo» es una forma de respuesta ante emergencias, el nuevo programa actúa como un sistema de alerta temprana.",
+                "fr": "Loulou Hitman était conçu pour réagi aux urgences, mais le nouveau programme sert à les prévoir.",
+                "ja": "緊急事態に対する対策が「ブブスピードファイター」ならば、事前に緊急事態を未然に防ぐのが新アプリさ。",
+                "ko": "「무무 해결사」가 응급 상황에 대한 사후 조치라고 하면, 새 프로그램은 응급 상황에 대한 사전 예방이에요",
+                "th": "ถ้าเปรียบ \"มือปืนลอลโล่\" เป็นมาตรการรับมือฉุกเฉิน โปรแกรมใหม่ก็จะทำหน้าที่เป็นเหมือนระบบเตือนภัยล่วงหน้า",
+                "zh-Hans": "如果说「呜呜快打」是对突发事件的补救措施，那新程序则是对突发事件的预前处理。",
+                "zh-Hant": "如果說「嗚嗚快打」是對突發事件的補救措施，那新程式則是對突發事件的預前處理。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kuriere können jetzt über den Lollo-Navigator in Echtzeit Rückmeldungen zu den Straßenverhältnissen geben. Das heißt, die Karte wird ständig aktualisiert.",
+                "en": "Couriers can provide real-time feedback on road conditions to the \"Lollo Navigator,\" which means the map is constantly being updated.",
+                "es": "Los mensajeros pueden proporcionar información en tiempo real sobre las condiciones de la carretera a la «Navegación Lollo», haciendo que el mapa se actualice constantemente.",
+                "fr": "S'il y a des problèmes sur la route, les courriers peuvent les signaler au navigateur Loulou, ce qui permet de mettre la carte à jour en temps réel.",
+                "ja": "配達員たちに「ブブナビ」にリアルタイムで道路状況のフィードバックをお願いしてるんだ。だからマップもリアルタイムで変化しているわけだ。",
+                "ko": "택배원이 도로의 실제 상황을 「무무 내비게이션」에 실시간으로 올려서 프로그램의 지도는 항상 업데이트되고 있어요",
+                "th": "คนส่งของสามารถแจ้งข่าวเรื่องสภาพถนนแบบเรียลไทม์กับ \"ผู้นำทางลอลโล่\" ได้ ซึ่งหมายความว่าแผนที่จะได้รับการอัปเดตอย่างต่อเนื่อง",
+                "zh-Hans": "物流员们会向「呜呜导航」实时反馈道路的实际情况，所以程序里的地图是处在动态之中。",
+                "zh-Hant": "物流員們會向「嗚嗚導航」實时回報道路的實際情況，所以程式裡的地圖是處在動態之中。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das heißt, du würdest gerne die Karte mit den ganzen Funktionen, die du vorher genannt hast, kombinieren, oder?",
+                "en": "So your plan is to combine the map with the various services mentioned earlier?",
+                "es": "Entonces, ¿tu plan es combinar el mapa con los distintos servicios que dijiste antes?",
+                "fr": "Donc, tu veux associer la carte aux autres services dont tu as parlé plus tôt ?",
+                "ja": "マップにこの前試していた事業を統合させたい？",
+                "ko": "그래서 지도를 앞서 말씀하신 업무와 결합할 예정인가요?",
+                "th": "คุณก็เลยวางแผนที่จะรวมแผนที่เข้ากับบริการต่างๆ ที่พูดถึงก่อนหน้านี้งั้นสินะ?",
+                "zh-Hans": "所以你打算将地图与之前提到过的各类业务结合起来？",
+                "zh-Hant": "所以你打算將地圖與之前提到過的各類業務結合起來？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Genau. Wir haben auch weitere Funktionen entwickelt, die sich gerade in ihrer Testphase befinden. Du hast für heute aber schon echt gute Arbeit geleistet. Lass uns die anderen Funktionen ein andermal testen.",
+                "en": "Exactly. We also have other new services currently running in their trial phases. You've done a great job today. Let's try out the rest of the features some other time.",
+                "es": "Exactamente. También contamos con otros nuevos servicios que actualmente están en fase de prueba. Has hecho un gran trabajo hoy. Probaremos el resto de funciones en otro momento.",
+                "fr": "Exactement. Il y a encore d'autres services qui sont en phase d'essai. Tu as fait un excellent boulot aujourd'hui. On verra le reste une autre fois.",
+                "ja": "その通り。他も色々と運行テスト中の事業があってね。とにかく今日はお疲れ様。残りはまた後日、連絡するよ。",
+                "ko": "네, 그리고 다른 새로운 업무도 시범 운영 중이에요. 오늘 고생했어요. 나머지 기능은 다음에 해봐요",
+                "th": "ใช่เลย และเรายังมีบริการใหม่อื่นๆ ที่กำลังอยู่ในช่วงทดลองใช้งานอีกด้วย วันนี้คุณทำผลงานได้เยี่ยมมาก ไว้มาลองใช้ฟีเจอร์อื่นๆ ที่เหลือในโอกาสต่อไปกันนะ",
+                "zh-Hans": "没错，其它新业务也都在试运行中，今天辛苦你了，其余的功能等合适的时间再试试看吧。",
+                "zh-Hant": "沒錯，其它新業務也都在試運行中，今天辛苦你了，其餘的功能等合適的時間再試試看吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 8,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

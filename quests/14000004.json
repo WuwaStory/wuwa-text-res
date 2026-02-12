@@ -1,0 +1,162 @@
+{
+  "id": 14000004,
+  "key": "限时任务测试任务回退",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "entities": [
+        {
+          "entityId": 14000208,
+          "mapId": 37,
+          "blueprintType": "Gameplay120",
+          "name": "TsEntity_玩法_通用开关_稷廷立式3",
+          "areaId": 0,
+          "position": {
+            "x": -2561,
+            "y": -16529,
+            "z": 19
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 80,
+            "z": 80
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 14000208,
+          "mapId": 37,
+          "blueprintType": "Gameplay120",
+          "name": "TsEntity_玩法_通用开关_稷廷立式3",
+          "areaId": 0,
+          "position": {
+            "x": -2561,
+            "y": -16529,
+            "z": 19
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 80,
+            "z": 80
+          }
+        },
+        {
+          "entityId": 14000209,
+          "mapId": 37,
+          "blueprintType": "Gameplay200",
+          "name": "TsEntity_玩法_全息模拟训练仪4",
+          "areaId": 0,
+          "position": {
+            "x": -1489,
+            "y": -13229,
+            "z": 15
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    }
+  ]
+}

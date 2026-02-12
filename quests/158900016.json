@@ -1,0 +1,435 @@
+{
+  "id": 158900016,
+  "key": "饭店3（试试莱丽娅的菜）",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Margheritas Tagesangebot III",
+    "en": "Margherita's Daily Special III",
+    "es": "Menú del dia III",
+    "fr": "Plat du jour de Margherita - III",
+    "ja": "マルゲリータの日替わりセット・三",
+    "ko": "마거리트 오늘의 세트 · III",
+    "th": "เมนูพิเศษประจำวันของมาร์เกริตา III",
+    "zh-Hans": "玛格烈特今日套餐·三",
+    "zh-Hant": "瑪格烈特今日套餐·三"
+  },
+  "desc": {
+    "de": "Dank deiner Unterstützung hat Lelia den Mut gefunden, eine Karriere als Köchin zu starten. Komm vorbei und probiere ihr Gericht, wenn du Zeit hast.",
+    "en": "Thanks to your support, Lelia has found the courage to pursue a career of cooking. Stop by and taste her dish when you're free.",
+    "es": "Gracias a tu apoyo, Lelia ha encontrado el valor para seguir una carrera en la cocina. Pasa a probar su plato cuando tengas tiempo.",
+    "fr": "Grâce à votre soutien, Lelia a trouvé le courage de se lancer dans une carrière de cuisinière. Passez goûter son plat quand vous aurez le temps.",
+    "ja": "あなたの励ましのおかげで、リーリアは勇気を振り絞り、料理を始めた。時間があれば、この初心者の料理を味わってみよう。",
+    "ko": "당신의 격려로, 라일리아는 용기를 내어 그녀의 요리 솜씨의 길로 들어섰다. 시간이 나면 이 초보자의 솜씨를 맛보러 가보는 게 좋을 것 같다",
+    "th": "ด้วยการช่วยเหลือของคุณ Lelia จึงกล้าที่จะเลือกเดินตามความฝันในการทำอาหารของเธอ แวะไปชิมอาหารของเธอเมื่อคุณว่าง",
+    "zh-Hans": "在你的鼓励下，莱丽娅鼓起勇气走上了她的厨艺之路。有空就去尝尝这位初学者的手艺吧。",
+    "zh-Hant": "在你的鼓勵下，萊麗婭鼓起勇氣走上了她的廚藝之路。有空就去嚐嚐這位初學者的手藝吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Probier Lelias Gericht",
+        "en": "Taste Lelia's dish",
+        "es": "Prueba el plato de Lelia.",
+        "fr": "Goûter le plat de Lelia",
+        "ja": "リーリアが作った料理を食べてみる",
+        "ko": "라일리아가 만든 음식 시식하기",
+        "th": "ชิมอาหารของ Lelia",
+        "zh-Hans": "去尝尝莱丽娅做的菜",
+        "zh-Hant": "去嚐嚐萊麗婭做的菜"
+      },
+      "entities": [
+        {
+          "entityId": 167900014,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_FemaleM6_5",
+          "name": "TsEntity_FemaleM6_5_莱丽娅服务生",
+          "areaId": 1693,
+          "position": {
+            "x": 703570,
+            "y": 586850,
+            "z": 160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 167900027,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录餐厅buff1",
+          "areaId": 1693,
+          "position": {
+            "x": 703570,
+            "y": 586931,
+            "z": 72
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_玛格烈特今日套餐",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh, du kommt gerade rechtzeitig. Ich habe endlich mein erstes Gericht gekocht.",
+                "en": "Oh, you got here just in time. I finally finished my first dish.",
+                "es": "¡Anda! Has llegado justo a tiempo. Por fin terminé mi primer plato.",
+                "fr": "Oh, vous arrivez juste à temps. J'ai enfin fini mon premier plat.",
+                "ja": "あ、ちょうど良いところに。料理が完成しました。",
+                "ko": "마침 잘 왔어, 나의 첫 요리가 완성됐거든!",
+                "th": "อ้าว คุณมาพอดีเลย ฉันเพิ่งทำอาหารจานแรกเสร็จค่ะ",
+                "zh-Hans": "啊，您来得正好，我的第一道菜总算完成了。",
+                "zh-Hant": "啊，您來得正好，我的第一道菜總算完成了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe ein bekanntes Gericht genommen, um mich nicht gleich zu überfordern. Also, hier sind meine Nuvola-Nudeln. Bitte, probiere sie!",
+                "en": "I choose something familiar to ease into it. So here's my Nuvola Pasta. Please give it a try!",
+                "es": "Para que me resultara más sencillo, he elegido algo que me resultase familiar. Así que aquí está mi Pasta Nuvola. Por favor, ¡pruébala!",
+                "fr": "J'ai choisi quelque chose de familier pour commencer en douceur. Voici donc mes pâtes Nuvola. Bon appétit !",
+                "ja": "まずは、作りやすいものからと思って……はい、こちら「ヌヴォラ・パスタ」です、どうぞ！",
+                "ko": "처음이라 익숙한 음식부터 시작해 보고 싶었어... 「미트 소스 파스타」야, 어서 먹어봐!",
+                "th": "ฉันเลือกเมนูที่คุ้นเคยหน่อยจะได้เริ่มง่ายๆ นี่ค่ะนูโวลาพาสตาช่วยลองชิมให้หน่อยนะคะ!",
+                "zh-Hans": "我想先从熟悉的菜式入手……这是「云凝肉酱烩面」，请慢用！",
+                "zh-Hant": "我想先從熟悉的菜式入手……這是「雲凝肉醬燴麵」，請慢用！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Auf den Nudeln thront eine ordentliche Schicht Sauce und die Enden der Nudeln sind so gezwirbelt, dass man sie kaum erkennt. Ein eigentümlicher Geruch strömt von dem Gericht aus.",
+                "en": "The pasta lies beneath a thick layer of sauce, its strands barely recognizable as they seem to squirm. A questionable aroma wafts up from the dish.",
+                "es": "La pasta se encuentra debajo de una espesa capa de salsa de textura grumosa e irregular. Desde el plato se eleva un aroma indescriptible.",
+                "fr": "Les pâtes reposent sous une épaisse couche de sauce, à peine reconnaissables toutes entortillées. Un arôme douteux émane du plat.",
+                "ja": "パスタは大量のソースに覆われていて、原型をとどめていない。うねうねとうごめく麺が怪しい香りを発している。",
+                "ko": "눈앞의 파스타 위에는 대량의 소스가 부어져 있었고, 형태를 알아볼 수 없을 정도의 면은 마치 살아 움직이는 것 같은 데다 뭔가 특이한 냄새까지 났다",
+                "th": "เส้นพาสตาที่ดูเหมือนขยับยุกยิกไปมาซ่อนอยู่ใต้ชั้นซอสหนาเตอะ จนแทบมองไม่ออกว่ามันคืออะไร แถมมีกลิ่นแปลกๆ ลอยออกมา",
+                "zh-Hans": "眼前的烩面顶部覆盖着巨量的酱汁，面目全非的面条似乎仍在蠕动，散发着一股可疑的香气。",
+                "zh-Hant": "眼前的燴麵頂部覆蓋著巨量的醬汁，面目全非的麵條似乎仍在蠕動，散發著一股可疑的香氣。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Vorsichtig probierst du einen Bissen. Die breiige Konsistenz und der beißende Geruch überwältigen dich für einen Moment. Eine dicke Wolkenschicht scheint dich zu umgeben … Nein, das ist keine Illusion.",
+                "en": "Cautiously, you take a bite. For a moment, the mushy texture and sharp aroma overwhelm your senses. A heavy cloud seems to close in around you… No, it's just an illusion.",
+                "es": "Con cautela, te llevas una pinchada a la boca. Por un momento, la textura blandurria y el intenso sabor abruman tus sentidos. Una pesada nube parece cerrarse a tu alrededor... No, es solo una ilusión.",
+                "fr": "Prudemment, vous prenez une bouchée. Pendant un instant, la texture molle et l'arôme piquant submergent vos sens. Un nuage pesant semble vous entourer... Non, c'est juste une illusion.",
+                "ja": "恐る恐る口に入れてみると、ドロッとした食感と鼻をつく香りが、まるで巨大な雲のように押し迫ってくる……うっ、これは幻覚だろうか。",
+                "ko": "조심스레 먹어보았지만, 물렁물렁한 식감, 코를 찌르는 특이한 냄새, 거대한 구름 덩어리가 압박해 오는 느낌... 아니, 그건 착각이었다",
+                "th": "คุณค่อยๆ ลองกัดคำหนึ่ง เนื้อสัมผัสเละๆ กับกลิ่นฉุนครอบงำประสาทสัมผัสของคุณทันที รู้สึกเหมือนมีหมอกหนาทึบปกคลุมรอบตัว... ไม่ หมอกนั่นเป็นแค่จิตนาการของคุณ",
+                "zh-Hans": "你谨慎地品尝，软糊的口感、刺鼻的异香，庞大的云团正朝你压来……不，那是错觉。",
+                "zh-Hant": "你謹慎地品嘗，軟糊的口感、刺鼻的異香，龐大的雲團正朝你壓來……不，那是錯覺。"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "Also … Was meinst du? Schmeckt es dir?",
+                "en": "So... How is it? Is the flavor alright?",
+                "es": "¿Y bien? ¿Qué tal? ¿Te gusta el sabor?",
+                "fr": "Alors... c'est comment ? Ça a du goût ?",
+                "ja": "あの……味はいかがでしょうか？",
+                "ko": "맛은 좀 어때? 솔직하게 말해 줘!",
+                "th": "เอ่อ... ว่าไงคะ? รสชาติเป็นยังไงบ้าง?",
+                "zh-Hans": "请问……这道菜的口味还可以吗？",
+                "zh-Hant": "請問……這道菜的口味還可以嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "…",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "...",
+                    "ja": "……",
+                    "ko": "...",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was hast du? Sag doch bitte was!",
+                "en": "What is it? Say something, please!",
+                "es": "¿Qué sucede? ¡Dime algo, por favor!",
+                "fr": "Qu'y a-t-il ? Dites quelque chose, s'il vous plaît !",
+                "ja": "どうしました？",
+                "ko": "이상해? 왜 말이 없어?",
+                "th": "ว่าไง? ช่วยพูดอะไรสักอย่างสิคะ!",
+                "zh-Hans": "怎么了？您怎么不说话？",
+                "zh-Hant": "怎麼了？您怎麼不說話？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es ist ziemlich stark, fast ein wenig überwältigend.",
+                    "en": "It's quite strong, almost a little dizzying.",
+                    "es": "Es bastante fuerte, casi mareante.",
+                    "fr": "C'est assez fort, j'en ai la tête qui tourne.",
+                    "ja": "ちょっと意識が飛んでただけ。",
+                    "ko": "충격적이라, 어지럽네요",
+                    "th": "รสค่อนข้างจัดนะ เกือบทำให้เวียนหัวนิดๆ",
+                    "zh-Hans": "冲击力很强，让我都恍惚了。",
+                    "zh-Hant": "衝擊力很強，讓我都恍惚了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es schmeckt gut, aber beim nächsten Mal solltest du weniger würzen.",
+                    "en": "It's good, but next time go easier on it.",
+                    "es": "Está bien, pero para la próxima, hay que ser más comedida.",
+                    "fr": "C'est bon, mais la prochaine fois, vas-y plus doucement.",
+                    "ja": "悪くはないけど、もうやめておこう。",
+                    "ko": "괜찮네요, 하지만 다음부터는 이렇게 만들지 마요",
+                    "th": "อร่อยนะ แต่ลดเครื่องปรุงหน่อยจะดีกว่านี้",
+                    "zh-Hans": "菜品很好，下次别这么做了。",
+                    "zh-Hant": "菜品很好，下次別這麼做了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ups, tut mir leid. Das muss am Wolkentränenharz liegen. Ich habe extra etwas mehr genommen, damit es noch besser schmeckt.",
+                "en": "Oops, sorry. That must've been the Mastic Nuvola. I thought adding a little more would make it tastier for you.",
+                "es": "Ay, lo siento... Eso debe haber sido la Nuvola. Pensé que un poco más de la cuenta lo haría más sabroso.",
+                "fr": "Oups, désolée. Ça devait être le Nuvola. Je pensais qu'en rajouter un peu le rendrait plus savoureux.",
+                "ja": "ごめんなさい、お客様の口に合うかもと思って、いつもより多めに調味料を入れたんです。もしかしたら……クラウドティアの樹脂を入れすぎたのかも。",
+                "ko": "미안, 네게 맛 보여 주려고 이것저것 많이 넣었어. 아마도... 구름유향을 너무 많이 넣었나 봐...",
+                "th": "โอ๊ะ ขอโทษค่ะ คงเป็นเพราะยางสนสุคนธ์เมฆาฉันนึกว่าใส่เพิ่มอีกนิดจะทำให้อร่อยขึ้น",
+                "zh-Hans": "抱歉，因为是给您品尝，所以就多放了一些配料，可能……加了太多的云凝乳香。",
+                "zh-Hant": "抱歉，因為是給您品嘗，所以就多放了一些配料，可能……加了太多的雲凝乳香。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das Gericht steht und fällt mit den Gewürzen.",
+                    "en": "A little seasoning goes a long way.",
+                    "es": "Un poco de condimento cunde mucho.",
+                    "fr": "Un peu d'assaisonnement suffit largement.",
+                    "ja": "調味料は程々に。",
+                    "ko": "적당히 넣는 게 좋을 것 같네요",
+                    "th": "แค่ปรุงนิดเดียวก็พอแล้ว",
+                    "zh-Hans": "配料应该适量。",
+                    "zh-Hant": "配料應該適量。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Sie müssen im Gleichgewicht sein.",
+                    "en": "It's all about balance.",
+                    "es": "Todo es cuestión de equilibrio.",
+                    "fr": "C'est une question d'équilibre.",
+                    "ja": "料理は食材と調味料のバランスが大事。",
+                    "ko": "식재료들끼리 적당히 밸런스를 이루어야 할 것 같아요",
+                    "th": "ทุกอย่างอยู่ที่ความพอดี",
+                    "zh-Hans": "各种食材的搭配要均衡。",
+                    "zh-Hant": "各種食材的搭配要均衡。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Verstanden. Das werde ich gleich anpassen.",
+                "en": "Understood. I'll adjust it right away.",
+                "es": "Entiendo. Ya sé cómo evitarlo.",
+                "fr": "Compris. Je vais l'ajuster tout de suite.",
+                "ja": "わかりました、次からは気をつけます。",
+                "ko": "알겠어, 바로 고쳐볼게",
+                "th": "เข้าใจแล้วค่ะ เดี๋ยวฉันจะปรับให้เลย",
+                "zh-Hans": "明白了，我马上就改进。",
+                "zh-Hant": "明白了，我馬上就改進。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast viel Erfahrung beim Kochen. Könntest du mir beim nächsten Mal ein paar Tipps geben, wenn du eines meiner Gerichte probierst?",
+                "en": "You seem to know a lot about cooking. Could I get some tips from you next time you try one of my dishes?",
+                "es": "Parece que sabes mucho de cocina. ¿Podrías darme algún consejo la próxima vez que pruebes uno de mis platos?",
+                "fr": "Vous semblez en savoir pas mal sur la cuisine. Pourrais-je avoir quelques conseils de votre part la prochaine fois que vous goûterez à un de mes plats ?",
+                "ja": "あの、お客様は料理に詳しいのですか？今度試食する時に、料理について教えてもらえませんか？",
+                "ko": "요리에 대해 잘 아는 모양이네, 다음 시식 때 가르쳐 줄 수 있어?",
+                "th": "ดูเหมือนคุณจะรู้เรื่องทำอาหารเยอะเลย คราวหน้าถ้าคุณได้ลองชิมอาหารที่ฉันทำอีก ช่วยสอนเคล็ดลับฉันบ้างนะคะ?",
+                "zh-Hans": "您看起来也很懂做菜，以后试吃时可以顺便指导我一下吗？",
+                "zh-Hant": "您看起來也很懂做菜，以後試吃時可以順便指導我一下嗎？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kein Problem.",
+                    "en": "No problem.",
+                    "es": "Sin problema.",
+                    "fr": "Aucun problème.",
+                    "ja": "いいよ。",
+                    "ko": "그래요",
+                    "th": "ได้เลย",
+                    "zh-Hans": "没问题。",
+                    "zh-Hant": "沒問題。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es gibt ein nächstes Mal?",
+                    "en": "There's a next time?",
+                    "es": "¿Habrá una próxima vez?",
+                    "fr": "Parce qu'il y aura une prochaine fois ?",
+                    "ja": "また試食させてくれるの？",
+                    "ko": "다음에 또 먹어야 한다는 거네요?",
+                    "th": "ยังมีคราวหน้าอีกเหรอ?",
+                    "zh-Hans": "原来还有以后吗？",
+                    "zh-Hant": "原來還有以後嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Super! Ich werde weitere Rezepte lernen – und dich nicht enttäuschen, versprochen!",
+                "en": "Great! I'll be practicing more recipes—you won't be disappointed, I promise!",
+                "es": "¡Genial! Practicaré más recetas. ¡No te decepcionarán, te lo prometo!",
+                "fr": "Super ! Je vais m'entraîner sur d'autres recettes, vous ne serez pas {Male=déçu;Female=déçue}, je vous le promets !",
+                "ja": "ありがとうございます！これからももっとたくさんの料理を勉強します。次こそはご期待通りに……！",
+                "ko": "응, 앞으로 더 많은 요리를 배워서, 실망 시키지 않을게",
+                "th": "เยี่ยมเลย! งั้นฉันจะฝึกทำสูตรใหม่ๆ อีก คุณจะไม่ผิดหวังแน่นอน!",
+                "zh-Hans": "嗯，接下来我也会学习更多的菜式，不会让您失望。",
+                "zh-Hant": "嗯，接下來我也會學習更多的菜式，不會讓您失望。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deine Tipps helfen mir wirklich weiter, danke! Ich werde mich verbessern, versprochen!",
+                "en": "Please, your advice means so much to me! I'll get better, I promise!",
+                "es": "¡Por favor, tu consejo significa mucho para mí! ¡Mejoraré, lo prometo!",
+                "fr": "S'il vous plaît... Vos conseils comptent beaucoup pour moi ! Je vais m'améliorer, je vous le promets !",
+                "ja": "ぜひお願いします。お客さんのアドバイスが必要なんです。腕を磨くためにも学ばせてください！",
+                "ko": "부탁할게, 너의 평가가 나한텐 아주 중요하단 말이야. 빠르게 실력을 늘려 볼게!",
+                "th": "คำแนะนำของคุณมีค่ากับฉันมากนะคะ! ฉันจะพยายามเก่งขึ้นให้ได้ สัญญาเลย!",
+                "zh-Hans": "拜托拜托，您的建议对我非常重要。我一定会很快进步的！",
+                "zh-Hant": "拜託拜託，您的建議對我非常重要。我一定會很快進步的！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Okay, ich komme bald wieder vorbei.",
+                    "en": "Okay, I'll come by again.",
+                    "es": "Está bien, vendré otro día.",
+                    "fr": "D'accord, je repasserai.",
+                    "ja": "わかった、また来るよ。",
+                    "ko": "네, 그럼 또 올게요",
+                    "th": "ได้สิ คราวหน้าฉันจะแวะมาอีก",
+                    "zh-Hans": "好，我还会再来。",
+                    "zh-Hant": "好，我還會再來。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

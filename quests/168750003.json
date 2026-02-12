@@ -1,0 +1,225 @@
+{
+  "id": 168750003,
+  "key": "雕像显隐检测",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "de": "Statue von Egla: Sichtbarkeitstest",
+    "en": "Egla Town Statue Visibility Test",
+    "es": "Prueba de visibilidad de la estatua de Egla",
+    "fr": "Test de visibilité de la statue de la ville d'Egla",
+    "ja": "エグラの町の像の表示・非表示検知",
+    "ko": "숨겨진 에글라 타운 조각상 탐색",
+    "th": "การทดสอบการมองเห็นรูปปั้นเมืองเอ็กลา",
+    "zh-Hans": "埃格拉小镇雕像显隐检测",
+    "zh-Hant": "埃格拉小鎮雕像顯隱檢測"
+  },
+  "desc": {
+    "en": "Egla Town Statue Visibility Test",
+    "zh-Hans": "dnt/埃格拉小镇雕像显隐检测"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 170,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 133900728,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录女主雕像",
+          "areaId": 2004,
+          "position": {
+            "x": 787679,
+            "y": 623279,
+            "z": 6999
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900729,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录男主雕像",
+          "areaId": 2004,
+          "position": {
+            "x": 787797,
+            "y": 623072,
+            "z": 6999
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900730,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录玩偶雕像",
+          "areaId": 2004,
+          "position": {
+            "x": 787723,
+            "y": 623163,
+            "z": 6999
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 171,
+      "parentId": 170,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 173,
+      "parentId": 170,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 172,
+      "parentId": 171,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133900729,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录男主雕像",
+          "areaId": 2004,
+          "position": {
+            "x": 787797,
+            "y": 623072,
+            "z": 6999
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900730,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录玩偶雕像",
+          "areaId": 2004,
+          "position": {
+            "x": 787723,
+            "y": 623163,
+            "z": 6999
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 174,
+      "parentId": 173,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133900728,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录女主雕像",
+          "areaId": 2004,
+          "position": {
+            "x": 787679,
+            "y": 623279,
+            "z": 6999
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900730,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录玩偶雕像",
+          "areaId": 2004,
+          "position": {
+            "x": 787723,
+            "y": 623163,
+            "z": 6999
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

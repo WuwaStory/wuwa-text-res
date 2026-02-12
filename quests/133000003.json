@@ -1,0 +1,229 @@
+{
+  "id": 133000003,
+  "key": "逐猿委托",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Anfrage zur Vertreibung von Hoochiefs",
+    "en": "De-Hoochief",
+    "es": "Solicitud de expulsión de Jefemicos",
+    "fr": "Chasser les Hoolices",
+    "ja": "猿退治の依頼",
+    "ko": "까부는 원숭이 퇴치 의뢰",
+    "th": "พิชิตฮูชีฟ",
+    "zh-Hans": "逐猿委托",
+    "zh-Hant": "逐猿委託"
+  },
+  "desc": {
+    "de": "Du bist auf eine besorgte Forscherin gestoßen, und sie möchte, dass du hilfst, einige Hoochiefs zu vertreiben.",
+    "en": "You encountered an anxious researcher, who requests your help to fight off the Hoochiefs.",
+    "es": "Has encontrado a una investigadora ansiosa, y ella quiere que la ayudes a expulsar a algunos Jefemicos.",
+    "fr": "Vous croisez une chercheuse anxieuse qui sollicite votre aide pour chasser les Hoolices.",
+    "ja": "焦っている研究員を見かけた。彼女はいたずら猿の退治をあなたに頼みたいようだ。",
+    "ko": "애타는 연구원이 까부는 원숭이를 쫓아내는 데 도움을 청했습니다",
+    "th": "คุณพบนักวิจัยที่กำลังวิตกกังวล ซึ่งขอความช่วยเหลือจากคุณในการต่อสู้กับพวกฮูชีฟ",
+    "zh-Hans": "你遇到一个焦急的研究员，她想麻烦你帮忙驱逐捣蛋猿。",
+    "zh-Hant": "你遇到一個焦急的研究員，她想麻煩你幫忙驅逐搗蛋猿。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Vertreibe Hoochiefs",
+        "en": "Fend off the Hoochiefs",
+        "es": "Expulsar a los Jefemicos.",
+        "fr": "Repousser les Hoolices",
+        "ja": "いたずら猿を退治する",
+        "ko": "까부는 원숭이 퇴치하기",
+        "th": "ขับไล่พวกฮูชีฟ",
+        "zh-Hans": "击退捣蛋猿",
+        "zh-Hant": "擊退搗蛋猿"
+      },
+      "entities": [
+        {
+          "entityId": 133000590,
+          "mapId": 8,
+          "blueprintType": "Monster052",
+          "name": "TsEntity_小怪_捣蛋猿48",
+          "areaId": 10,
+          "position": {
+            "x": 6590,
+            "y": 297350,
+            "z": 3010
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133000591,
+          "mapId": 8,
+          "blueprintType": "Monster052",
+          "name": "TsEntity_小怪_捣蛋猿93",
+          "areaId": 10,
+          "position": {
+            "x": 6330,
+            "y": 298440,
+            "z": 2977
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Berichte der Forscherin",
+        "en": "Report to the researcher",
+        "es": "Informar a la investigadora.",
+        "fr": "Parler à la chercheuse",
+        "ja": "報告する",
+        "ko": "의뢰 보고",
+        "th": "รายงานให้นักวิจัยทราบ",
+        "zh-Hans": "汇报委托",
+        "zh-Hant": "匯報委託"
+      },
+      "entities": [
+        {
+          "entityId": 133002103,
+          "mapId": 8,
+          "blueprintType": "NPC259",
+          "name": "TsEntity_154_010_皇龙研究员女_14",
+          "areaId": 702,
+          "position": {
+            "x": 2397,
+            "y": 296220,
+            "z": 4191
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_无光之森洞穴POI",
+          "flowIndex": 3,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Warum gibt es so viele Hoochiefs in der Höhle?",
+                "en": "Why are there so many Hoochiefs in the cave?",
+                "es": "¿Por qué hay tantos Jefemicos en la cueva?",
+                "fr": "D'où viennent tous ces Hoolices dans la grotte... !",
+                "ja": "どこから来たよ、このいたずら猿の群れ……",
+                "ko": "동굴에 까부는 원숭이들이 왜 이렇게 많이...",
+                "th": "ทำไมมีพวก Hoochief อยู่เต็มถ้ำเลยล่ะ?",
+                "zh-Hans": "洞里哪来那么多捣蛋猿啊……",
+                "zh-Hant": "洞裡哪來那麼多搗蛋猿啊……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1107,
+                "name": {
+                  "zh-Hans": "焦急的研究员"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich habe sie alle losgeworden.",
+                    "en": "I got rid of them all.",
+                    "es": "Me deshice de todos ellos.",
+                    "fr": "Ils ont tous été chassés.",
+                    "ja": "全部追い出したよ。",
+                    "ko": "모두 쫓아냈어요",
+                    "th": "ฉันกำจัดมันหมดแล้วล่ะ",
+                    "zh-Hans": "都赶跑了。",
+                    "zh-Hant": "都趕跑了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du, du hast das gemacht? Das war beeindruckend! Hier, nimm das. Das ist deine Belohnung für den Umgang mit den Hoochiefs!",
+                "en": "You, you did? That was awe-inspiring! Here, take this. It's your reward for dealing with the Hoochiefs!",
+                "es": "¿Tú, tú lo hiciste? ¡Eso fue impresionante! Toma esto. ¡Es tu recompensa por lidiar con los Jefemicos!",
+                "fr": "Vraiment ? C'est incroyable ! Voici la récompense pour avoir chassé ces animaux ennuyeux, prenez-la !",
+                "ja": "ほ、本当？すごい！ありがとう！これは報酬だよ！",
+                "ko": "지, 진짜요? 정말 대단해요! 이건 까부는 원숭이들을 쫓아낸 보수에요. 가져가세요!",
+                "th": "กะ กำจัดหมดแล้วเหรอ? นั่นน่าทึ่งชะมัดเลย! เอ้า รับนี่ไปสิ เป็นรางวัลสำหรับการกำจัดพวก Hoochief น่ะ!",
+                "zh-Hans": "真、真的吗？太厉害了！这是驱逐捣蛋猿的报酬，拿去吧！",
+                "zh-Hant": "真、真的嗎？太厲害了！這是驅逐搗蛋猿的報酬，拿去吧！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1107,
+                "name": {
+                  "zh-Hans": "焦急的研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Seufz, ich frage mich, warum es so viele Hoochiefs gibt...",
+                "en": "Sigh, I wonder why there are so many Hoochiefs...",
+                "es": "Suspiro, me pregunto por qué hay tantos Jefemicos...",
+                "fr": "Hélas, je ne sais pas pourquoi il y a tant de Hoolices ...",
+                "ja": "まさか、こんなにたくさんいたずら猿が来るなんて……",
+                "ko": "하아, 왜 이렇게 까부는 원숭이가 많은지 모르겠어요...",
+                "th": "เฮ้อ ฉันยังสงสัยอยู่เลยทำไมถึงมีพวก Hoochief มากถึงขนาดนั้นได้...",
+                "zh-Hans": "唉，也不知道为什么会有这么多捣蛋猿……",
+                "zh-Hant": "唉，也不知道為什麼會有這麼多搗蛋猿……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1107,
+                "name": {
+                  "zh-Hans": "焦急的研究员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

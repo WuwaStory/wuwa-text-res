@@ -1,0 +1,658 @@
+{
+  "id": 133900000,
+  "key": "哭泣的小女孩",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "de": "Ein weinendes Mädchen",
+    "en": "A crying girl",
+    "es": "Una niña llorando",
+    "fr": "Fille pleurante",
+    "ja": "泣いている女の子",
+    "ko": "울고 있는 여자 아이",
+    "th": "เด็กสาวร้องไห้",
+    "zh-Hans": "哭泣的小女孩",
+    "zh-Hant": "哭泣的小女孩"
+  },
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133900683,
+          "mapId": 8,
+          "blueprintType": "Monster126",
+          "name": "TsEntity_精英_踏光兽8",
+          "areaId": 1615,
+          "position": {
+            "x": 255602,
+            "y": 347505,
+            "z": 1611
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900684,
+          "mapId": 8,
+          "blueprintType": "Gameplay109",
+          "name": "TsEntity_特殊_组刷新器51",
+          "areaId": 1615,
+          "position": {
+            "x": 255616,
+            "y": 347186,
+            "z": 1606
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "entities": [
+        {
+          "entityId": 133900683,
+          "mapId": 8,
+          "blueprintType": "Monster126",
+          "name": "TsEntity_精英_踏光兽8",
+          "areaId": 1615,
+          "position": {
+            "x": 255602,
+            "y": 347505,
+            "z": 1611
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900684,
+          "mapId": 8,
+          "blueprintType": "Gameplay109",
+          "name": "TsEntity_特殊_组刷新器51",
+          "areaId": 1615,
+          "position": {
+            "x": 255616,
+            "y": 347186,
+            "z": 1606
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133900629,
+          "mapId": 8,
+          "blueprintType": "TsEntity_0343_121_小棠",
+          "name": "TsEntity_0343_121_小棠2",
+          "areaId": 1613,
+          "position": {
+            "x": 234761,
+            "y": 300679,
+            "z": -4978
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 169
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_乘霄山野外POI",
+          "flowIndex": 3,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Miau!",
+                "en": "Meow—",
+                "es": "*Miau*",
+                "fr": "Miaou...",
+                "ja": "にゃ～",
+                "ko": "냐앙——",
+                "th": "เมี๊ยว~",
+                "zh-Hans": "喵——",
+                "zh-Hant": "喵——"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900022,
+                "name": {
+                  "zh-Hans": "小狸"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schnurr—",
+                "en": "Purr—",
+                "es": "*Ronroneo*",
+                "fr": "Ronron...",
+                "ja": "ごろごろごろっ……。",
+                "ko": "골골골...",
+                "th": "หง่าว~",
+                "zh-Hans": "呼噜呼噜……",
+                "zh-Hant": "呼嚕呼嚕……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900023,
+                "name": {
+                  "zh-Hans": "小花"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tabbie und Patchie mögen dich sehr, {Male=Großer Bruder;Female=Große Schwester}.",
+                "en": "Tabbie and Patchie like you very much, {Male=Big Brother;Female=Big Sister}.",
+                "es": "Tabbie y Patchie te quieren mucho, {Male=hermano;Female=hermana} mayor.",
+                "fr": "Tabbie et Patchie t'aiment beaucoup, {Male=grand frère;Female=grande sœur}.",
+                "ja": "リーちゃんもハナちゃんもすっごく、{Male=お兄ちゃん;Female=お姉ちゃん}が好きみたい。",
+                "ko": "코코와 하나가 {Male=오빠;Female=언니}가 마음에 들었나 봐",
+                "th": "Tabbie กับ Patchie ชอบคุณมากเลยนะ {Male=พี่ชาย;Female=พี่สาว}",
+                "zh-Hans": "{Male=大哥哥;Female=大姐姐}，小狸和小花很喜欢你哦。",
+                "zh-Hant": "{Male=大哥哥;Female=大姐姐}，小狸和小花很喜歡你哦。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Miau, miau miau.",
+                "en": "Meow, meow meow.",
+                "es": "*Miau* *Miau* *Miau*",
+                "fr": "Miaou, miaou miaou.",
+                "ja": "にゃ～、にゃんにゃんっ。",
+                "ko": "냐앙, 냥냥냥",
+                "th": "เมี๊ยว เมี๊ยว เมี๊ยว",
+                "zh-Hans": "喵，喵喵喵。",
+                "zh-Hant": "喵，喵喵喵。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900022,
+                "name": {
+                  "zh-Hans": "小狸"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das gestreifte Kätzchen umkreist dich und miaut dann besorgt zu Klein Tang.",
+                "en": "The tabby kitten circles around you and then meows anxiously at Little Tang.",
+                "es": "El gatito atigrado te rodea y luego maúlla ansiosamente a Little Tang.",
+                "fr": "Tabbie tourne autour de vous et miaule anxieusement vers Xiaotang.",
+                "ja": "トラ柄の子猫があなたの周りをぐるりと回った後、<ano=ショウドウ>小棠</ano>にむけて何かを訴えるかのように鳴いた。",
+                "ko": "얼룩 고양이가 방랑자의 주변을 한 바퀴 돌더니 소당을 향해 다급하게 운다",
+                "th": "ลูกแมวลายขวางจะมาคลอเคลียวนรอบตัวคุณ จากนั้นก็จะร้องเหมียวๆ อย่างงุ่นง่านใส่ Tang น้อย",
+                "zh-Hans": "狸花色的小猫围着你转了一圈，随后向小棠急切地叫着。",
+                "zh-Hant": "狸花色的小貓圍著你轉了一圈，隨後向小棠急切地叫著。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was ist los, Streifi? Hmm, du meinst dieser {Male=Großer Bruder;Female=Große Schwester} hat dich vor dem Bösewicht gerettet?",
+                "en": "What is it, Tabbie? Hmm, you mean this {Male=Big Brother;Female=Big Sister} saved you from the bad guy?",
+                "es": "¿Qué pasa, Tabbie? ¿Igual quieres decir que {Male=el hermano;Female=la hermana} mayor te salvó del señor malo?",
+                "fr": "Qu'y a-t-il, Tabbie ? Hmm, tu veux dire que {Male=ce grand frère;Female=cette grande sœur} t'a sauvé du méchant ?",
+                "ja": "えっ、この{Male=お兄ちゃん;Female=お姉ちゃん}がリーちゃんたちを悪い人から助けてくれたの？",
+                "ko": "앗, 코코! 그러니까 네 말은 {Male=오빠;Female=언니}가 너희들을 나쁜 사람 손에서 구해줬다는 거야?",
+                "th": "ว่าไง เจ้า Tabbie? {Male=พี่ชาย;Female=พี่สาว}คนนี้ช่วยเธอไว้จากคนไม่ดีงั้นเหรอ?",
+                "zh-Hans": "诶，小狸，你是说，是这个{Male=大哥哥;Female=大姐姐}从大坏蛋那里救你们出来的？",
+                "zh-Hant": "欸，小狸，你是說，是這個{Male=大哥哥;Female=大姐姐}從大壞蛋那裡救你們出來的？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Miau.",
+                "en": "Meow.",
+                "es": "*Miau*",
+                "fr": "Miaou.",
+                "ja": "にゃ～ん。",
+                "ko": "냐앙~",
+                "th": "เมี๊ยว",
+                "zh-Hans": "喵呜。",
+                "zh-Hant": "喵嗚。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900022,
+                "name": {
+                  "zh-Hans": "小狸"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe. Vielen Dank, {Male=Großer Bruder;Female=Große Schwester}.",
+                "en": "I see. Thank you so much, {Male=Big Brother;Female=Big Sister}.",
+                "es": "Ya veo. ¡Muchas gracias, {Male=hermano;Female=hermana} mayor!",
+                "fr": "Je vois. Merci beaucoup, {Male=grand frère;Female=grande sœur}.",
+                "ja": "わぁぁ、ありがとう{Male=お兄ちゃん;Female=お姉ちゃん}！",
+                "ko": "{Male=오빠;Female=언니}, 정말 고마워!",
+                "th": "งี้นี่เอง ขอบคุณมากเลย {Male=พี่ชาย;Female=พี่สาว}",
+                "zh-Hans": "啊，谢谢{Male=大哥哥;Female=大姐姐}！",
+                "zh-Hant": "啊，謝謝{Male=大哥哥;Female=大姐姐}！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Los, ihr beiden. Sagt \"Danke schön!\"",
+                "en": "Come on, you two. Say \"Thank you!\"",
+                "es": "Vamos, chiquitines, decid «¡Gracias!»",
+                "fr": "Allez, vous deux. Dites merci !",
+                "ja": "ほらほら、リーちゃんもハナちゃんも、早く{Male=お兄ちゃん;Female=お姉ちゃん}に「ありがとう」って言って。",
+                "ko": "코코, 하나~ 자, 얼른 이리 와서 {Male=오빠;Female=언니}한테 「고맙습니다」 하고 인사해야지",
+                "th": "มานี่สิ ทั้งคู่เลย พูด \"ขอบคุณ!\" สิ",
+                "zh-Hans": "小狸，小花，来，快和{Male=大哥哥;Female=大姐姐}说——“谢谢”。",
+                "zh-Hant": "小狸，小花，來，快和{Male=大哥哥;Female=大姐姐}說——「謝謝」。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Miau!",
+                "en": "Meow!",
+                "es": "¡*Miau*!",
+                "fr": "Miaou !",
+                "ja": "にゃにゃ～にゃ。",
+                "ko": "냐앙~",
+                "th": "เมี๊ยว!",
+                "zh-Hans": "喵喵。",
+                "zh-Hant": "喵喵。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900022,
+                "name": {
+                  "zh-Hans": "小狸"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Miau, miau!",
+                "en": "Meow, meow!",
+                "es": "¡*Miau, miau*!",
+                "fr": "Miaou, miaou !",
+                "ja": "にゃう……。",
+                "ko": "미야옹...",
+                "th": "เมี๊ยว เมี๊ยว!",
+                "zh-Hans": "咪呜……",
+                "zh-Hant": "咪嗚……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900023,
+                "name": {
+                  "zh-Hans": "小花"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Überhaupt kein Problem.",
+                    "en": "No trouble at all.",
+                    "es": "No es ninguna molestia.",
+                    "fr": "Aucun problème.",
+                    "ja": "お礼なんていいのに。",
+                    "ko": "고맙긴",
+                    "th": "ไม่มีปัญหาเลย",
+                    "zh-Hans": "举手之劳。",
+                    "zh-Hant": "舉手之勞。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Warum haben die Verbannten sie genommen?",
+                    "en": "Why did the Exiles take them?",
+                    "es": "¿Por qué se los llevaron los Exiliados?",
+                    "fr": "Pourquoi les Exilés les ont-ils pris ?",
+                    "ja": "{Male=この子たちは、どうして追放者に連れていかれてたんだ？;Female=この子たちは、どうして追放者に連れていかれちゃったの？}",
+                    "ko": "어쩌다 고양이들이 추방자한테 잡혀간 거야?",
+                    "th": "พวกผู้ถูกเนรเทศเอาพวกมันไปทำไมกันนะ?",
+                    "zh-Hans": "它们怎么会被流放者带走？",
+                    "zh-Hant": "它們怎麼會被流放者帶走？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "...Oma hat mir erzählt, dass einige böse Onkel und Tanten in letzter Zeit in der Stadt Unfug treiben.",
+                "en": "…Granny told me some bad uncles and aunties are doing bad things in the town recently.",
+                "es": "... La yaya me contó que había señores y señoras malos haciendo de las suyas en el pueblo últimamente.",
+                "fr": "Mamie m'a dit que de méchants grands faisaient de vilaines choses en ville, récemment.",
+                "ja": "……この頃、悪いおじさんやおばさんがここまで来て、たくさん悪いことをしているって、おばあちゃんが言ってた。",
+                "ko": "...할머니가 그러는데, 요새 수상한 사람들이 마을에서 몰래 나쁜 짓을 하고 있대",
+                "th": "...คุณยายเล่าให้ฉันฟังว่าไม่นานมานี้ พวกลุงๆ ป้าๆ นิสัยไม่ดีบางคนกำลังทำเรื่องเลวร้ายในเมือง",
+                "zh-Hans": "……听阿婆说，最近有一些坏叔叔、坏阿姨，在镇上偷偷干坏事。",
+                "zh-Hant": "……聽阿婆說，最近有一些壞叔叔、壞阿姨，在鎮上偷偷幹壞事。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tabbie und Patchie schlafen gerne in der Kiste. Vielleicht dachten diese bösen Kerle, es gäbe einen \"Schatz\" darin, wie andere sagten, also schnappten sie sich die Kiste und nahmen Tabbie und Patchie mit.",
+                "en": "Tabbie and Patchie like to sleep in the box. Maybe those bad guys thought there was a \"treasure\" inside, like others said, so they grabbed the box and took Tabbie and Patchie with them.",
+                "es": "A Tabbie y a Patchie les gusta dormir en la caja. Quizás esos malos pensaron que había un «tesoro» dentro, como decían los demás, así que agarraron la caja y se llevaron a Tabbie y Patchie con ellos.",
+                "fr": "Tabbie et Patchie aiment dormir dans la boîte. Peut-être que ces méchants pensaient qu'un trésor s'y trouvait, comme d'autres l'ont dit, et ils ont pris la boîte dans laquelle se trouvaient Tabbie et Patchie.",
+                "ja": "リーちゃんとハナちゃんは箱の中で寝るのがすきなんだから。もしかしたら、悪い人たちがその箱の中に大人たちがいつも言ってる「良いもの」が入っているんじゃないかと思って、連れて行っちゃったのかも。",
+                "ko": "코코와 하나는 평소에 상자 안에서 자는 걸 좋아하는데, 아마 그 사람들이 상자 안에 「돈이 될 만한 물건」이 있는 줄 알고 같이 가져가 버렸던 것 같아",
+                "th": "Tabbie กับ Patchie ชอบนอนในกล่อง บางทีพวกคนไม่ดีอาจคิดว่ามี \"สมบัติ\" อยู่ข้างในอย่างที่คนเขาว่ากัน เลยคว้ากล่องนั้นมาแล้วพา Tabbie กับ Patchie ไปด้วย",
+                "zh-Hans": "小狸和小花平常喜欢在箱子里睡觉，可能、可能那些坏蛋以为箱子里有大人们说的“值钱的东西”，所以就被一起带走了。",
+                "zh-Hant": "小狸和小花平常喜歡在箱子裏睡覺，可能、可能那些壞蛋以為箱子裡有大人們說的「值錢的東西」，所以就被一起帶走了。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe schon lange nach ihnen gesucht... Danke, dass du sie sicher nach Hause gebracht hast.",
+                "en": "I've been looking for them for quite a long time... Thank you for bringing them home safely.",
+                "es": "Llevo buscándolos mucho tiempo... Gracias por traerlos de vuelta a casa sanos y salvos.",
+                "fr": "Je les cherchais depuis longtemps… Merci de les avoir ramenés sains et saufs.",
+                "ja": "<ano=ショウドウ>小棠</ano>、すっごくたくさん探したんだよ……{Male=お兄ちゃん;Female=お姉ちゃん}がいてくれて本当によかった！おかげで、リーちゃんもハナちゃんもお家に帰ることができたんだもん。",
+                "ko": "한참이나 찾았는데... {Male=오빠;Female=언니} 덕분에 코코와 하나가 무사히 집에 돌아올 수 있었어!",
+                "th": "ฉันตามหาพวกมันมานานมากแล้ว... ขอบคุณนะที่พาน้องๆ กลับบ้านอย่างปลอดภัย",
+                "zh-Hans": "小棠找了它们好久呢……还好有{Male=大哥哥;Female=大姐姐}！小狸、小花平安回家了。",
+                "zh-Hant": "小棠找了它們好久呢……還好有{Male=大哥哥;Female=大姐姐}！ 小狸、小花平安回家了。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Keine Sorge. Ich habe ihnen beigebracht, sich zu benehmen.",
+                    "en": "Don’t worry. I’ve taught them to behave.",
+                    "es": "No te preocupes. Les he enseñado a portarse bien.",
+                    "fr": "Ne t'inquiète pas. Je leur ai appris à bien se comporter.",
+                    "ja": "もう大丈夫、悪い人は懲らしめたから。",
+                    "ko": "걱정하지 마. 나쁜 사람들은 내가 혼내줬으니까",
+                    "th": "ไม่ต้องห่วง ฉันสอนเจ้าพวกนี้ให้ทำตัวดีๆ แล้วล่ะ",
+                    "zh-Hans": "放心吧，坏人我教训过了。",
+                    "zh-Hant": "放心吧，壞人我教訓過了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wow! Du bist so cool! Ich muss stärker werden und Tabbie und Patchie beschützen.",
+                "en": "Wow! You are so cool! I need to be stronger and protect Tabbie and Patchie.",
+                "es": "¡Vaya! ¡Eres genial! Tengo que hacerme más fuerte para proteger a Tabbie y Patchie.",
+                "fr": "Ouah ! Tu es tellement cool ! Je dois devenir plus fort et protéger Tabbie et Patchie.",
+                "ja": "わぁ！{Male=お兄ちゃん;Female=お姉ちゃん}、すごい！<ano=ショウドウ>小棠</ano>も頑張って、リーちゃんとハナちゃんを守らないと。",
+                "ko": "와아, 정말 대단해! 나도 {Male=오빠;Female=언니}처럼 강해질 거야! 그래야 코코와 하나를 지켜줄 수 있어!",
+                "th": "โห! คุณเก่งจังเลย! ฉันต้องเข้มแข็งขึ้น จะได้ปกป้อง Tabbie กับ Patchie ได้",
+                "zh-Hans": "哇！{Male=大哥哥;Female=大姐姐}好厉害！小棠也要努力保护好小狸、小花才行。",
+                "zh-Hant": "哇！{Male=大哥哥;Female=大姐姐}好厲害！ 小棠也要努力保護好小狸、小花才行。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und ich habe ihnen ein neues Zuhause gebaut, mit einer schönen neuen Kiste! Ich habe es in mein Haus gestellt, also ist es dort sicher.",
+                "en": "And I made a new home for them using a beautiful new box! I put it in my home, so it's safe there.",
+                "es": "¡Y les hice un nuevo hogar con una caja nueva, más grande y mejor! La he puesto en mi casa, para que estén más seguros.",
+                "fr": "Et j'ai fabriqué une nouvelle maison pour eux avec une belle boîte neuve ! Je l'ai mise chez moi, donc ils sont en sûreté.",
+                "ja": "そうだ！<ano=ショウドウ>小棠</ano>ね、リーちゃんとハナちゃんのために、新しいベッドを作ったんだ。新しくて大きな箱でね。お家の中に置いておいたから、もう心配ないよね。",
+                "ko": "아, 맞다! 코코와 하나를 위해서 새로운 집을 준비했어. 엄청 예쁜 커다란 상자로 만든 집이야. 집안에 두면 안전할 거야",
+                "th": "แล้วฉันสร้างบ้านใหม่ให้พวกมันด้วยกล่องใหม่สวยๆ นี่ด้วยละ! ฉันวางไว้ในบ้านตัวเอง พวกเค้าจะได้ปลอดภัยน่ะ",
+                "zh-Hans": "对了对了，小棠有给小狸、小花做新窝哦，用一个新的、漂亮的大箱子做的。就放在家里面，很安全的。",
+                "zh-Hant": "對了對了，小棠有給小狸、小花做新窩哦，用一個新的、漂亮的大箱子做的。 就放在家裡面，很安全的。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du bist jederzeit eingeladen, mit uns zu spielen!",
+                "en": "You are welcomed to come and play with us at any time!",
+                "es": "¡Vente cuando quieras a jugar con nosotros!",
+                "fr": "N'hésite pas à venir jouer avec nous à tout moment !",
+                "ja": "{Male=お兄ちゃん;Female=お姉ちゃん}、いつでも遊びに来てね！",
+                "ko": "{Male=오빠;Female=언니}, 언제든지 우리 집에 놀러 와!",
+                "th": "คุณแวะมาเล่นกับพวกเราได้ตลอดเวลาเลยนะ!",
+                "zh-Hans": "欢迎{Male=大哥哥;Female=大姐姐}随时来找我们玩！",
+                "zh-Hant": "歡迎{Male=大哥哥;Female=大姐姐}隨時來找我們玩！"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 900048,
+                "name": {
+                  "zh-Hans": "小棠"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich werde es tun. Danke.",
+                    "en": "I will. Thank you.",
+                    "es": "Lo haré. Gracias.",
+                    "fr": "A bientôt. Merci.",
+                    "ja": "分かった。",
+                    "ko": "그렇게 할게",
+                    "th": "จะแวะมาแน่นอน ขอบใจนะ",
+                    "zh-Hans": "我记下了。",
+                    "zh-Hant": "我記下了。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 4,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133900630,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录23",
+          "areaId": 1613,
+          "position": {
+            "x": 234637,
+            "y": 300664,
+            "z": -4978
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 4
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900671,
+          "mapId": 8,
+          "blueprintType": "NPC311002",
+          "name": "TsEntity_拍照支线_狸花_小猫2",
+          "areaId": 1613,
+          "position": {
+            "x": 234679,
+            "y": 300712,
+            "z": -4978
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -26
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900672,
+          "mapId": 8,
+          "blueprintType": "NPC311001",
+          "name": "TsEntity_拍照支线_三色_小猫2",
+          "areaId": 1613,
+          "position": {
+            "x": 234658,
+            "y": 300656,
+            "z": -4978
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 4
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

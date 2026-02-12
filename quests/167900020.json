@@ -1,0 +1,424 @@
+{
+  "id": 167900020,
+  "key": "2.0联机活动尾声",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Unberührbare Farbe: Epilog",
+    "en": "Although Colors Have No Form: Epilogue",
+    "es": "Colores intangibles: Epílogo",
+    "fr": "Couleurs invisibles : Épilogue",
+    "ja": "色に形はないけれど・エピローグ",
+    "ko": "색채는 형태가 없지만 · 에필로그",
+    "th": "แม้ว่าสีสันจะไร้รูป: บทส่งท้าย",
+    "zh-Hans": "虽然色彩无形·尾声",
+    "zh-Hant": "雖然色彩無形·尾聲"
+  },
+  "desc": {
+    "de": "Die Untersuchung des mysteriösen Morph-Gemäldes ist reibungslos abgeschlossen und es scheint, als würde Claudia dir persönlich danken wollen. \nVielleicht ist es an der Zeit, sie zu besuchen.",
+    "en": "The investigation of the mysterious morph painting concludes smoothly, and it seems Claudia wishes to thank you in person.\nPerhaps it's time to pay her a visit.",
+    "es": "La investigación de la misteriosa pintura Eco ha terminado sin problemas, y parece que Claudia desea agradecerte en persona.\nQuizás sea hora de hablar con ella.",
+    "fr": "L'enquête sur la peinture se termine sans problème et il semble que Claudia souhaite vous remercier en personne.\nIl serait peut-être temps de lui rendre visite.",
+    "ja": "神秘的な音骸絵の調査は一段落した。クラウディアはあなたにお礼をしたいようだ。クラウディアと話をしてみよう。",
+    "ko": "신비한 에코 그림에 대한 조사가 끝났고, 클라우디아는 당신에게 감사의 마음을 전하고 싶은 것 같다.\n클라우디아와 대화하세요",
+    "th": "การตรวจสอบภาพวาดแปรสภาพลึกลับจบลงอย่างราบรื่น ดูเหมือนว่าคลอเดียต้องการที่จะแสดงความขอบคุณคุณด้วยตัวเอง\nอาจถึงเวลาต้องแวะไปหาเธอซักหน่อยแล้ว",
+    "zh-Hans": "神秘声骸画的调查告一段落了，克劳迪亚似乎想要对你表达感谢。\n和克劳迪亚谈谈吧。",
+    "zh-Hant": "神秘聲骸畫的調查告一段落了，克勞迪亞似乎想要對你表達感謝。\n和克勞迪亞談談吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Claudia",
+        "en": "Talk to Claudia",
+        "es": "Habla con Claudia.",
+        "fr": "Parler à Claudia",
+        "ja": "クラウディアと会話する",
+        "ko": "클라우디아와 대화",
+        "th": "คุยกับคลอเดีย",
+        "zh-Hans": "和克劳迪亚对话",
+        "zh-Hant": "和克勞迪亞對話"
+      },
+      "entities": [
+        {
+          "entityId": 167900023,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC1",
+          "name": "TsEntity_NPC_克劳迪亚引导睡醒",
+          "areaId": 20,
+          "position": {
+            "x": 784899,
+            "y": 632891,
+            "z": 6944
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -103
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.0联机副本",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Was hast du in diesem Gemälde gesehen, {PlayerName}?",
+                "en": "What did you see in that painting, {PlayerName}?",
+                "es": "¿Qué viste en esa pintura, {PlayerName}?",
+                "fr": "Qu'as-tu vu dans ce tableau, {PlayerName} ?",
+                "ja": "{PlayerName}さん、絵の中で何を見たのですか？",
+                "ko": "{PlayerName}, 그림에서 무언가 알아냈나요?",
+                "th": "คุณเห็นอะไรในภาพวาดนั่นเหรอ {PlayerName}?",
+                "zh-Hans": "{PlayerName}，你在那幅画中见到了什么呢？",
+                "zh-Hant": "{PlayerName}，你在那幅畫中見到了什麼呢？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was? Jedes Mal eine andere Welt? Das Gemälde ist voller Monster? Mein Talisman hat sich in ein Echo verwandelt? Wie kurios ...",
+                "en": "What? A different world every time? The painting is filled with monsters? My talisman turned into an Echo? How quaint...",
+                "es": "¿Qué? ¿Un mundo diferente cada vez? ¿La pintura está llena de monstruos? ¿Mi amuleto se convirtió en un Eco? Qué curioso...",
+                "fr": "Quoi ? Un monde différent à chaque fois ? Le tableau est plein de monstres ? Mon amulette s'est transformée en un Écho ? Comme c'est étrange...",
+                "ja": "えっ？入るたびに違う世界が出てくるのですか？私のお守りが音骸になったと……？そのようなことがあったなんて……",
+                "ko": "응? 매번 달라지는 세상이라구요? 그림 속에 괴물이 가득 차 있고, 심지어 제 부적도 에코로 변해버렸다는 말인가요? 어떻게 이런 경이로운 일이...",
+                "th": "อะไรนะ? ทุกครั้งที่เข้าไปจะเจอโลกที่ต่างกัน? ในภาพเต็มไปด้วยมอนสเตอร์? เครื่องรางของฉันกลายเป็นเอคโค่? น่าทึ่งจริงๆ...",
+                "zh-Hans": "诶？每次都不同的世界？画中充满了怪物？我的护身符居然变成了声骸？居然还有这种奇妙的事……",
+                "zh-Hant": "欸？每次都不同的世界？畫中充滿了怪物？我的護身符居然變成了聲骸？居然還有這種奇妙的事……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber dank dem Hütenden bist du sicher und unversehrt, {PlayerName}, und das ist das Wichtigste. Ich bin tatsächlich neugierig auf deine Gedanken, {PlayerName}. Was hast du in den Welten innerhalb des Gemäldes gefühlt?",
+                "en": "But thank the Sentinel you're safe and sound, {PlayerName}, and that's the most important thing. I'm actually curious about your thoughts, {PlayerName}. What did you feel in the worlds inside the painting?",
+                "es": "Pero me alegro de que no te haya pasado nada, {PlayerName}, y eso es lo más importante. De hecho, tengo curiosidad por tus pensamientos, {PlayerName}. ¿Qué sentiste en los mundos dentro de la pintura?",
+                "fr": "Mais, tu es sain et sauf, {PlayerName}, c'est le plus important. Que la Sentinelle soit louée ! Et je suis vraiment curieuse de tes pensées. Qu'as-tu ressenti dans les mondes de la peinture ?",
+                "ja": "でも{PlayerName}さんが無事で何よりです。{PlayerName}さんにお聞きしたいのですが、あなたは絵の中の世界をどういうふうに感じているんでしょうか？",
+                "ko": "아무튼 {PlayerName}이(가) 무사해서 정말 다행이네요. 사실 전 {PlayerName}의 생각이 궁금한데, 그림 속 세계에서는 뭘 느끼셨나요?",
+                "th": "แต่ก็ต้องขอบคุณเทพผู้พิทักษ์เลยล่ะ ที่คุณปลอดภัยดี {PlayerName} นั่นแหละคือเรื่องสำคัญที่สุด จริงๆ แล้วฉันอยากรู้ว่าคุณคิดยังไงมากกว่า {PlayerName} คุณรู้สึกยังไงกับโลกในภาพวาดพวกนั้นล่ะ?",
+                "zh-Hans": "不过{PlayerName}能够平安无事就好。我其实很好奇{PlayerName}自己的想法，你在画对面的世界里感受到了什么呢？",
+                "zh-Hant": "不過{PlayerName}能夠平安無事就好。我其實很好奇{PlayerName}你自己的想法，你在畫對面的世界裡感受到了什麼呢？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Es fühlt sich an wie ein Traum aus dem Somnoire ...",
+                    "en": "It feels like a dream from the Somnoire...",
+                    "es": "Se siente como un sueño de Somnolencia...",
+                    "fr": "Cela ressemble à un rêve de Somnoire...",
+                    "ja": "心の集域の夢と似ている……",
+                    "ko": "마음의 영역 속의 꿈의 세계와 비슷해요",
+                    "th": "เหมือนฝันจากแดนจิตนิมิต...",
+                    "zh-Hans": "很像心之集域中的梦境……",
+                    "zh-Hant": "很像心之集域中的夢境……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich spürte einen Wirbel von herzlichen Emotionen von vielen Schöpfern.",
+                    "en": "I felt a vortex of heartfelt emotions from many creators.",
+                    "es": "Sentí un vórtice de emociones sinceras de muchos creadores.",
+                    "fr": "J'ai ressenti un tourbillon d'émotions sincères de nombreux créateurs.",
+                    "ja": "色んな創作者の純粋な感情を感じた。",
+                    "ko": "여러 창작자들의 진심 어린 감정이 느껴졌어요",
+                    "th": "ฉันสัมผัสได้ถึงอารมณ์ความรู้สึกที่แรงกล้าของเหล่าศิลปินมากมาย",
+                    "zh-Hans": "不同创作者的真挚情感。",
+                    "zh-Hant": "不同創作者的真摯情感。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich war erregt, als ob etwas mich zum Kampf rief.",
+                    "en": "I was exhilarated, as if something was calling me to battle.",
+                    "es": "Me sentí emocionado, como si algo me estuviera llamando a la batalla.",
+                    "fr": "J'étais {Male=exhalté;Female=exhaltée}, comme si quelque chose m'appelait à la bataille.",
+                    "ja": "{Male=熱いバトルが俺を呼んでいた。;Female=熱いバトルが私を呼んでいた。}",
+                    "ko": "짜릿한 전투가 저를 부르고 있었어요",
+                    "th": "ฉันรู้สึกฮึกเหิม เหมือนมีบางสิ่งกระตุ้นให้ฉันอยากต่อสู้",
+                    "zh-Hans": "酣畅淋漓的战斗呼唤我。",
+                    "zh-Hant": "酣暢淋漓的戰鬥呼喚我。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ein Traum aus ... dem Somnoire? Ist das ein Ort, an dem die Träume der Menschen zusammenkommen?",
+                "en": "A dream from... the Somnoire? Is that a place where people's dreams come together?",
+                "es": "Un sueño de... ¿Somnolencia? ¿Es ese un lugar donde se juntan los sueños de las personas?",
+                "fr": "Un rêve de... Somnoire ? Est-ce un endroit où les rêves des gens se rassemblent ?",
+                "ja": "心の……集域の夢ですか？人々の夢の集合体のような場所ということですか？",
+                "ko": "마음의 영역 속의... 꿈의 세계라니요? {PlayerName}, 설마 사람들의 꿈이 모여 있는 어떤 장소를 말하는 건가요?",
+                "th": "ความฝันจาก... แดนจิตนิมิต? ที่นั่นเป็นที่ที่ความฝันของผู้คนมาบรรจบกันใช่ไหม?",
+                "zh-Hans": "心之……集域的梦境？{PlayerName}是指某种让人们的梦境汇集起来的地方么？",
+                "zh-Hant": "心之……集域的夢境？{PlayerName}是指某種讓人們的夢境匯集起來的地方嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe von den Ältesten gehört, dass das Hütende unsere Seelen verbinden kann, uns zu einem macht ... Aber wenn ich es mir jetzt so ansehe, ist das wirklich eine gute Sache?",
+                "en": "I've heard from the elders that the Sentinel can connect our souls, making us one... But looking at it now, is that really a good thing?",
+                "es": "He oído de los ancianos que el Centinela puede conectar nuestras almas, haciéndonos uno solo... Pero viéndolo ahora, ¿es eso realmente algo bueno?",
+                "fr": "Les aînés de ma famille ont dit que la Sentinelle peut connecter nos âmes, nous rendant un... Mais en y regardant de plus près, est-ce vraiment une bonne chose ?",
+                "ja": "確かにファミリーの年長者から聞いたことはありますね。歳主様が私たちの心を繋げて、一つにすることができるのだとか……でも、それって果たしていいことなのでしょうか。",
+                "ko": "확실히... 수호신이 사람의 마음을 하나로 연결시킬 수 있다는 말을 어른들께 들은 적이 있어요. 그런데, 지금 보니 그게 정말 좋은 일인 걸까요?",
+                "th": "ฉันเคยได้ยินผู้อาวุโสเล่าว่าเทพผู้พิทักษ์สามารถเชื่อมโยงวิญญาณของเราให้กลายเป็นหนึ่งเดียว... แต่พอมองอีกมุมแล้ว มันจะเป็นสิ่งที่ดีจริงมั้ยนะ?",
+                "zh-Hans": "我的确有听长辈们提过，岁主能够让我们的心灵彼此相连，合而为一……可是，现在看来那真的会是好事么？",
+                "zh-Hant": "我的確有聽長輩們提過，歲主能夠讓我們的心靈彼此相連，合而為一……可是，現在看來那真的會是好事嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich verstehe. Kein Wunder, dass ich immer das Gefühl hatte, dass dieses Gemälde kein vollständiges Konzept zu präsentieren scheint. Meine Ältesten erwähnten auch, dass das Hütende die Herzen der Menschen verbinden kann, zu einem werden lässt ...",
+                "en": "I see. No wonder I've always felt that this painting doesn't seem to present a full concept. My elders also mentioned that the Sentinel can make people's hearts connect, becoming one...",
+                "es": "Ya veo. No es de extrañar que siempre haya sentido que esta pintura no parece presentar un concepto completo. Loss ancianos también mencionaron que el Centinela puede hacer que los corazones de las personas se conecten, convirtiéndose en uno solo...",
+                "fr": "Je vois. Pas étonnant que j'ai toujours eu l'impression que cette peinture ne semble pas présenter un concept complet. Les aînés ont également mentionné que la Sentinelle peut faire connecter les cœurs des gens, devenant un...",
+                "ja": "そうですね。私はどうも、この絵が一つのまとまったテーマを表しているわけではないと感じています……ファミリーの年長者から聞いたことなのですが、歳主様は私たちの心を繋げて、一つにすることができるのだとか……",
+                "ko": "그렇군요. 어쩐지 이 그림에서는 한 가지 이상의 창작 의도를 엿볼 수 있다는 느낌이 늘 들었어요... 어른들 말씀에 따르면, 수호신은 사람의 마음을 하나로 연결시킬 수 있다고 해요...",
+                "th": "เข้าใจแล้ว มิน่าล่ะ ฉันถึงได้รู้สึกอยู่ตลอดเลยว่าภาพวาดนี้ยังไม่ได้บอกเล่าเรื่องราวทั้งหมด ผู้อาวุโสก็เคยบอกเหมือนกันว่าเทพผู้พิทักษ์ทำให้หัวใจของผู้คนเชื่อมถึงกันจนกลายเป็นหนึ่งเดียว...",
+                "zh-Hans": "原来是这样，难怪我总觉得这幅画并不像一个完整的意向……我听长辈们提过，岁主能够让人们心灵彼此相连，合而为一……",
+                "zh-Hant": "原來是這樣，難怪我總覺得這幅畫並不像一個完整的意象……我聽長輩們提過，歲主能夠讓人們心靈彼此相連，合而為一……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wenn alle zu einem werden, dann verlieren, egal wie tief die Gefühle der Künstler waren, alles seine Form und Bedeutung, wenn die Farben zusammenmischen.",
+                "en": "But if all become one, then no matter how deep the artists' feelings were, everything loses its shape and meaning when the colors mix together.",
+                "es": "Pero si todos se vuelven uno, entonces, por muy profundas que sean las emociones de los artistas, todo pierde su forma y significado cuando los colores se mezclan.",
+                "fr": "Mais si tout devient un, alors peu importe combien les sentiments des artistes étaient profonds, tout perd sa forme et son sens lorsque les couleurs se mélangent.",
+                "ja": "しかしそれなら、画家たちの感情がどれほど純粋でも、色が混ざり合ってしまえば、すべてが無意味になってしまいます。",
+                "ko": "그러나 그렇게 되면 화가들의 감정이 아무리 진지해도 색깔이 뒤섞이는 순간 모든 것은 본래의 모습을 잃고 무의미해지죠",
+                "th": "แต่ถ้าทุกอย่างกลายเป็นหนึ่งเดียว ต่อให้ความรู้สึกของศิลปินจะลึกซึ้งแค่ไหน สุดท้ายเมื่อสีทั้งหมดปะปนกัน มันก็จะสูญเสียรูปทรงและความหมายไปอยู่ดี",
+                "zh-Hans": "可那样的话，无论画家们的感情多么真挚，当色彩混淆在一起的时候，一切也就都失去了形状，没了意义。",
+                "zh-Hant": "但那樣的話，無論畫家們的感情多麼真摯，當色彩混淆在一起的時候，一切也就都失去了形狀，沒了意義。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Eine überraschende Antwort. Du sagst immer, was du denkst, {PlayerName}. Ich ... bewundere, wie direkt du bist.",
+                "en": "A surprising answer. You always speak your mind, {PlayerName}. I... admire how straightforward you are.",
+                "es": "Una respuesta sorprendente. Siempre dices lo que piensas, {PlayerName}. Yo... admiro eso.",
+                "fr": "Une réponse surprenante. Tu dis toujours ce que tu penses, {PlayerName}. J'... admire ta franchise.",
+                "ja": "ちょっと驚きました。{PlayerName}さんって、本当に素直なお方なのですね。私……少し羨ましいです。",
+                "ko": "뜻밖의 대답인데, {PlayerName}은(는) 역시 직설적인 사람이네요. 사실은... 좀 부럽기도 하고요",
+                "th": "คำตอบนี้น่าประหลาดใจจริงๆ คุณพูดตรงตลอดเลยนะ {PlayerName} ฉัน... ชื่นชมในความตรงไปตรงมาของคุณจัง",
+                "zh-Hans": "稍微有点惊讶的回答，{PlayerName}果真是一位率真的人。我……稍微有些羡慕呢。",
+                "zh-Hant": "稍微有點讓人驚訝的回答，{PlayerName}果真是一位率真的人。我……有些羨慕呢。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber egal, wie leuchtend die Farben sind, sie verwandeln sich nur in ein gräulich-schwarzes Durcheinander, wenn sie zusammen gemischt werden ...",
+                "en": "But no matter how vibrant the colors are, they just turn into a grayish-black mess when mixed together...",
+                "es": "Pero no importa cuán vibrantes sean los colores, simplemente se convierten en un desorden gris oscuro cuando se mezclan...",
+                "fr": "Mais peu importe la vivacité des couleurs, elles se transforment simplement en un gâchis gris-noir lorsqu'elles sont mélangées...",
+                "ja": "残念ながらどんなに純粋な色でも、混ざり合うと、霞んでしまうんですね……",
+                "ko": "안타깝게도 아무리 맑은 색깔이라도 섞이는 순간, 온통 새까만 모습으로 변해버리죠...",
+                "th": "แต่ไม่ว่าสีสันจะสดใสแค่ไหน พอผสมเข้าด้วยกัน มันก็กลายเป็นเพียงสีหม่นๆ คล้ำๆ อยู่ดี...",
+                "zh-Hans": "可惜无论多么澄澈的颜色，混淆在一起的时候，也都只剩下灰黑的一片……",
+                "zh-Hant": "可惜無論多麼澄澈的顏色，混淆在一起的時候，也都只剩下灰黑的一片……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Malerei ist schließlich eine Kunst, die die Farben des Herzens ausdrückt. Diese erdrückenden Blautöne und feurigen Rottöne sind die verborgenen Spiegelbilder der inneren Welt des Schöpfers.",
+                "en": "Painting, after all, is an art that expresses the colors of the heart. Those stifling blues and fiery reds are the hidden reflections of the creator's inner world.",
+                "es": "La pintura, después de todo, es un arte que expresa los colores del corazón. Esos azules sofocantes y rojos ardientes son los reflejos ocultos del mundo interior del creador.",
+                "fr": "La peinture, après tout, est un art qui exprime les couleurs du cœur. Ces bleus étouffants et ces rouges ardents sont les reflets cachés du monde intérieur du créateur.",
+                "ja": "絵とは、心の内の色を表に出すという芸術だと思います。むっとした青、いらいらした赤、どれも、作者の心の内の現れですよ。",
+                "ko": "그림이란 마음속의 색깔을 표현하는 예술이죠. 그 우울한 듯한 파란색과 불타는 듯한 빨간색은 모두 창작자의 내면의 감정에 대한 표현이거든요",
+                "th": "ยังไงซะ การวาดภาพก็เป็นศิลปะที่ถ่ายทอดสีสันจากหัวใจนี่นะ สีน้ำเงินที่อึดอัดหรือสีแดงที่ร้อนแรง ล้วนเป็นสิ่งที่สะท้อนโลกเร้นลับภายในจิตใจของศิลปิน",
+                "zh-Hans": "所谓绘画，本就是将心底色彩表现出来的艺术，那些闷热的蓝，燥郁的红，都是作者内心隐秘的具现。",
+                "zh-Hant": "所謂繪畫，本就是將心底色彩表現出來的藝術，那些悶熱的藍，躁鬱的紅，都是作者內心隱秘的具現。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Welten innerhalb des Gemäldes sind faszinierend, aber darin gefangen zu sein hindert mich daran, meine eigene Arbeit zu schaffen ... Ich sollte meinen Fokus nach außen verlagern und mehr beobachten.",
+                "en": "The worlds within the painting are fascinating, but being trapped in them prevents me from creating my own work... I should shift my focus outward and observe more.",
+                "es": "Los mundos dentro de la pintura son fascinantes, pero estar atrapado en ellos me impide crear mi propia obra... Debería centrarme más hacia afuera y observar más.",
+                "fr": "Les mondes à l'intérieur de la peinture sont fascinants, mais être piégé à l'intérieur m'empêche de créer mon propre travail... Je devrais observer le monde avec mes yeux.",
+                "ja": "絵の世界は確かに面白いです。しかし、絵ばかりにこだわっていると、自分の心を表せる作品は作り出せません……私はやはり、この目で世界をもっと観察しておかなければならないのですね。",
+                "ko": "그림 속 세상은 정말 재미있지만, 그 속에 갇혀서는 자신의 작품을 만들 수 없으니까요... 자신의 눈으로 주변의 모든 것을 관찰해야 하는 거겠죠",
+                "th": "โลกในภาพวาดน่ะน่าหลงใหลก็จริง แต่การติดอยู่ในนั้นทำให้ฉันไม่อาจสร้างผลงานของตัวเองได้... ฉันควรหันไปสนใจและสังเกตโลกภายนอกให้มากขึ้น",
+                "zh-Hans": "画中世界的确有趣，可囿于其中是无法创作出自己的作品的……我还是应该用自己的眼睛去观察才行。",
+                "zh-Hant": "畫中世界的確有趣，可囿於其中是無法創作出自己的作品的……我還是應該用自己的眼睛去觀察才行。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, danke für deine Hilfe bei der Durchführung dieser Untersuchung und dafür, dass du deine Gefühle geteilt hast.",
+                "en": "{PlayerName}, thank you for your assistance in completing this investigation and for sharing your feelings.",
+                "es": "{PlayerName}, gracias por tu ayuda en completar esta investigación y por compartir tus sentimientos.",
+                "fr": "{PlayerName}, merci pour ton aide et pour avoir partagé tes sentiments.",
+                "ja": "{PlayerName}さん、今度の調査、本当にお疲れ様でした。そして、あなたが感じた絵の世界を、私に教えていただいて、本当にありがとうございました。",
+                "ko": "{PlayerName}, 그림 조사에 도움도 주시고, 느낀 감정도 솔직히 공유해 주셔서 정말 감사드려요",
+                "th": "{PlayerName} ขอบคุณที่ช่วยฉันสืบเรื่องนี้และบอกเล่าความรู้สึกของคุณให้ฟังด้วยนะ",
+                "zh-Hans": "非常感谢{PlayerName}帮我完成这次调查，并且，也非常感谢你愿意把感受分享给我。",
+                "zh-Hant": "非常感謝{PlayerName}幫我完成這次調查，且願意把感受分享給我。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte nimm dieses Amulett, wenn es dir nichts ausmacht.",
+                "en": "Please take this talisman, if you don't mind.",
+                "es": "Por favor, toma este amuleto, si no te importa.",
+                "fr": "Prends cette amulette, si ça ne te dérange pas.",
+                "ja": "よかったらそのお守り、{PlayerName}さんがそのままお受け取りください。",
+                "ko": "아, 참, {PlayerName}, 그 부적도 함께 받아주셨으면 좋겠어요",
+                "th": "รับเครื่องรางนี้ไปสิ ถ้าคุณไม่รังเกียจ",
+                "zh-Hans": "那枚护身符，不介意的话就请{PlayerName}也一并收下吧。",
+                "zh-Hant": "那枚護身符，不介意的話就請{PlayerName}也一併收下吧。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Immerhin kann er nur in jenen Welten seinen Zweck erfüllen.",
+                "en": "After all, it can only serve its purpose in those worlds.",
+                "es": "Al final, solo puede cumplir su propósito en esos mundos.",
+                "fr": "Après tout, elle ne peut servir son but que dans ces mondes.",
+                "ja": "だって……あの世界でこそ、本当の効果を発揮できるのですから。",
+                "ko": "결국... 그 부적은 그 세계에서만 자신의 역할을 할 수 있지 않을까요?",
+                "th": "เพราะสุดท้าย มันจะมีคุณค่าก็ต่อเมื่ออยู่ในโลกเหล่านั้น",
+                "zh-Hans": "毕竟……只有在那个世界里，它才能发挥自己真正的作用吧？",
+                "zh-Hant": "畢竟……只有在那個世界裡，它才能發揮自己真正的作用吧？"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 50145,
+                "name": {
+                  "zh-Hans": "克劳迪亚"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

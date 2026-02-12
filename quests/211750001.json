@@ -1,0 +1,916 @@
+{
+  "id": 211750001,
+  "key": "忌炎偶遇任务",
+  "type": "branch",
+  "typeId": 14,
+  "name": {
+    "de": "Festgast: Jiyan",
+    "ja": "宴の来客・忌炎",
+    "ko": "만찬의 손님 · 기염",
+    "zh-Hans": "夜宴来客·忌炎",
+    "zh-Hant": "夜宴來客·忌炎"
+  },
+  "desc": {
+    "de": "Selten kommt Jiyan zu einem Fest, doch nun steht er vor einem Echo und scheint in Gedanken versunken. Gehe ins Foyer und begrüße ihn.",
+    "ja": "せっかく時間を作って宴に顔を出した忌炎が、考え込むように音骸を見つめ続けている。彼に話しかけてみよう。",
+    "ko": "보기 드물게 기염이 연회에 왔건만, 생각에 잠긴 듯 에코만 바라보고 있다... 가서 인사하자",
+    "zh-Hans": "难得忌炎有时间来到宴会，他却一直在若有所思地盯着声骸……去和他打个招呼吧。",
+    "zh-Hant": "難得忌炎有時間來到宴會，他卻一直在若有所思地盯著聲骸……去和他打個招呼吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche Jiyan auf.",
+        "ja": "忌炎を探す",
+        "ko": "기염 찾기",
+        "zh-Hans": "寻找忌炎",
+        "zh-Hant": "尋找忌炎"
+      },
+      "entities": [
+        {
+          "entityId": 194000002,
+          "mapId": 8900,
+          "blueprintType": "Player014",
+          "name": "TsEntity_角色014_忌炎",
+          "areaId": 0,
+          "position": {
+            "x": -219,
+            "y": -1577,
+            "z": 398
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -75
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_春节活动角色邀约_忌炎",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Lange nicht gesehen, {PlayerName}.",
+                "en": "It has been some time, {PlayerName}.",
+                "fr": "Ça faisait longtemps, {PlayerName}.",
+                "ja": "久しぶりだな、{PlayerName}。",
+                "ko": "오랜만이군, 방랑자",
+                "th": "{PlayerName} ไม่เจอกันนานเลยนะ",
+                "zh-Hans": "久疏问候，{PlayerName}。",
+                "zh-Hant": "久疏問候，{PlayerName}。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist dir ins Auge gefallen?",
+                    "en": "What's caught your eye?",
+                    "fr": "Quelque chose a attiré ton attention ?",
+                    "ja": "{Male=何を見てるんだ？;Female=何を見てるの？}",
+                    "ko": "뭘 보고 있는 거예요?",
+                    "th": "กำลังดูอะไรอยู่เหรอ?",
+                    "zh-Hans": "你在看什么？",
+                    "zh-Hant": "你在看什麼？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Diese Echos hier. In Jinzhou gibt es zwar Echo-Terminals, aber der Herbeirufungsprozess unterliegt starken Einschränkungen.",
+                "en": "These Echoes. While Jinzhou does have Echo Terminals, the summoning process is heavily restricted.",
+                "fr": "Ces Échos… Jinzhou possède certes des terminaux à Échos, mais leur processus d'invocation est extrêmement restreint.",
+                "ja": "ああ、ここに展示されている音骸を研究していた。今州にも音骸デバイスはあるが、それを使って音骸を召喚する場合、様々な制限がかかる。",
+                "ko": "여기 전시된 에코를 연구하고 있었네. 금주에도 에코 단말기가 있지만, 그걸로 에코를 소환하려면 많은 제약이 따르지",
+                "th": "อ๊ะ... ฉันกำลังศึกษาเอคโค่ที่ตั้งโชว์ตรงนี้น่ะ ถึงแม้จินโจวก็มีเทอร์มินัลเอคโค่เหมือนกัน แต่ถ้าใช้มันอัญเชิญเอคโค่ก็มีข้อจำกัดเยอะเลย",
+                "zh-Hans": "哦，我在研究陈列于此处的声骸。今州虽也有声骸终端，但若用它们召唤声骸，便会受到诸多限制。",
+                "zh-Hant": "哦，我在研究陳列於此處的聲骸。今州雖也有聲骸終端，但若用它們召喚聲骸，便會受到諸多限制。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe gehört, dass der Genesis-Nexus von Rinascita die Kraft des Hütenden nutzt, wodurch Echos ihre Form viel länger beibehalten können.",
+                "en": "I heard that Rinascita's Genesis Nexus draws on the Sentinel's power, allowing Echoes to maintain form far longer.",
+                "fr": "J'ai entendu dire que le Noyau de genèse de Rinascita puisait dans les pouvoirs de la Sentinelle, ce qui permettait aux Échos de se manifester bien plus longtemps.",
+                "ja": "リナシータの「起源信号塔」には歳主の力が秘められているおかげで、音骸を長時間顕現できると聞いた……",
+                "ko": "리나시타의 「기원 비콘」에는 수호신의 힘이 담겨 있어서 에코를 더 오래 나타나게 할 수 있다고 들었네",
+                "th": "ได้ยินมาว่า \"เจเนซิสเน็กซัส\" ของรินาซิตามีพลังจากเซนติเนล ทำให้เอคโค่ดำรงอยู่บนโลกต่อได้",
+                "zh-Hans": "听闻黎那汐塔的「起源信标」蕴含岁主之力，能使声骸长存于世间。",
+                "zh-Hant": "聽聞黎那汐塔的「起源信標」蘊含歲主之力，能使聲骸長存於世間。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn wir diese Technologie in Jinzhou einsetzen könnten, würde dies die Mitternachtsranger erheblich entlasten.",
+                "en": "If we could use this technology in Jinzhou, the Midnight Rangers would see their burden greatly lifted.",
+                "fr": "Si nous pouvions utiliser cette technologie à Jinzhou, le fardeau des Gardiens de minuit en serait drastiquement allégé.",
+                "ja": "その技術を今州にも導入すれば、夜帰軍の負担を大きく軽減できるはず。",
+                "ko": "이 기술을 금주에 도입할 수 있다면, 야귀군의 부담을 크게 줄일 수 있을 거야",
+                "th": "ถ้านำเทคโนโลยีนี้มาใช้ในจินโจวได้ คงช่วยมิดไนท์เรนเจอร์แบ่งเบาภาระได้ไม่น้อยเลย",
+                "zh-Hans": "如果此技术能够引入今州，一定能为夜归军减轻不少负担。",
+                "zh-Hant": "如果此技術能夠引入今州，一定能為夜歸軍減輕不少負擔。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich sind die Prinzipien hinter dem Genesis-Nexus komplex. Das Ganze bedarf sorgfältiger Untersuchungen …",
+                "en": "Of course, the principles behind the Genesis Nexus are complex. It will require careful study...",
+                "fr": "Bien entendu, les principes fondamentaux du Noyau de genèse sont complexes, et une étude prudente est de mise…",
+                "ja": "もちろん、「起源信号塔」に用いられている原理は難解だろう。今すぐに、とはいかないかもしれない……",
+                "ko": "물론 「기원 비콘」의 원리를 해석하는 건 어려우니, 신중하게 논의해 봐야겠지만",
+                "th": "ฉันยังวิเคราะห์หลักการที่ใช้ใน \"เจเนซิสเน็กซัส\" ไม่ได้ เรื่องแบบนี้ต้องวางแผนพิจารณาให้รอบคอบ...",
+                "zh-Hans": "当然，「起源信标」所用原理难以解析，此事还需从长计议……",
+                "zh-Hant": "當然，「起源信標」所用原理難以解析，此事還需從長計議……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Moment, Moment.",
+                    "en": "Hold it. Hold it.",
+                    "fr": "Une petite seconde.",
+                    "ja": "ストップストップ。",
+                    "ko": "잠깐, 잠깐만요",
+                    "th": "หยุดๆ ๆ",
+                    "zh-Hans": "停停停。",
+                    "zh-Hant": "停停停。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh? Was ist denn, {PlayerName}? Kannst du etwas darüber sagen?",
+                "en": "What is it, {PlayerName}? Do you have some insight?",
+                "fr": "Oh ? Qu'y a-t-il, {PlayerName} ? Une correction que tu souhaiterais faire ?",
+                "ja": "ん？どうかしたのか、{PlayerName}？もしや、いいアイデアでも思い浮かんだか？",
+                "ko": "음? 무슨 일이지, {PlayerName}. 좋은 생각이라도 있나?",
+                "th": "มีอะไรเหรอ {PlayerName}? คุณมีความคิดดีๆ งั้นเหรอ?",
+                "zh-Hans": "哦？怎么了，{PlayerName}？是有什么好主意吗？",
+                "zh-Hant": "哦？怎麼了，{PlayerName}？是有什麼好主意嗎？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Darum geht es nicht … Bist du nicht eigentlich im Urlaub? Warum denkst du immer noch über Grenzverteidigung nach?",
+                "en": "That's not the point… Aren't you supposed to be on vacation? Why are you still thinking about border defenses?",
+                "fr": "Rien à voir… Tu n'es pas censé être en vacances ? Pourquoi te préoccupes-tu encore des défenses de la frontière ?",
+                "ja": "そういう問題じゃない……{Male=忌炎は休暇中なんだろ？しばらくは辺境の防衛のことなんて忘れたらどうだ？;Female=忌炎は休暇中なんでしょ？しばらくは辺境の防衛のことなんて忘れたらどう？}",
+                "ko": "그건 아니지만... 지금 휴가 중 아니신가요? 그런데 왜 여기서까지 관문 수비를 생각하고 있는 거예요?",
+                "th": "ไม่ใช่ประเด็นนั้น... คุณหยุดพักผ่อนอยู่นี่นา ทำไมถึงยังคิดถึงเรื่องการป้องกันแนวชายแดนอยู่อีกล่ะ",
+                "zh-Hans": "不是这个问题……你明明应该是在休假吧？怎么还想着边关的防务啊。",
+                "zh-Hant": "不是這個問題……你明明應該是在休假吧？怎麼還想著邊關的防務啊。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Urlaub …? Ich befürchte, das hast du falsch verstanden. Ich bin nicht privat hier.",
+                "en": "Vacation…? I fear you misunderstand. I'm not here in a personal capacity.",
+                "fr": "Des vacances… ? Je crois que tu fais erreur. Je ne suis pas là par choix.",
+                "ja": "休暇中……？何か誤解をしているようだな。俺はプライベートで来ているわけではない。",
+                "ko": "휴가...? 오해한 모양이군. 난 개인적인 신분으로 온 게 아니야",
+                "th": "หยุดพักผ่อน...? เข้าใจผิดแล้วล่ะ ครั้งนี้ฉันเดินไม่ได้ทางมาตัวคนเดียว",
+                "zh-Hans": "休假……？你一定是误会了。我此行并非以私人身份前来。",
+                "zh-Hant": "休假……？你一定是誤會了。我此行並非以私人身分前來。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Magistratin hat eine Delegation nach Rinascita entsandt, um neue Vereinbarungen über Handel und Verteidigung zu treffen.",
+                "en": "The Magistrate dispatched a delegation to Rinascita to seek new agreements on trade and defense.",
+                "fr": "Le magistrat a dépêché une délégation à Rinascita pour négocier de nouveaux accords commerciaux et de défense.",
+                "ja": "今令尹がリナシータに訪問団を派遣した。防衛や貿易の分野で、新たな協力事業を模索している。",
+                "ko": "영윤 대인께서 리나시타와 군사 및 무역 협력을 추진하기 위해 이곳에 방문단을 보냈네",
+                "th": "ตอนนี้ท่านเจ้าเมืองส่งคณะผู้เยี่ยมเยือนไปที่รินาซิตา เพราะอยากสร้างข้อตกลงใหม่เกี่ยวกับการป้องกันและการค้าขายน่ะ",
+                "zh-Hans": "今令尹向黎那汐塔派遣了访问团，希望能够在防卫和贸易上达成新的合作。",
+                "zh-Hant": "今令尹向黎那汐塔派遣了訪問團，希望能夠在防衛和貿易上達成新的合作。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin der Militärattaché der Delegation. Es ist meine Aufgabe, für ihre Sicherheit zu sorgen.",
+                "en": "I serve as the delegation's military attaché. It is my responsibility to ensure their safety.",
+                "fr": "Je suis l'attaché militaire de cette délégation. Garantir leur sécurité est ma responsabilité.",
+                "ja": "今回の訪問団において、俺は外交武官を務めているんだ。同時に、訪問団の人員を守る任も任されている。",
+                "ko": "나는 그 방문단의 외교 무관으로서 단원들의 안전을 책임지고 있지",
+                "th": "ฉันคือทูตฝ่ายทหารของคณะผู้เยี่ยมเยือนในครั้งนี้ แล้วก็มีหน้าที่ปกป้องคณะผู้เยี่ยมเยือนด้วย",
+                "zh-Hans": "我此次担任访问团中的外交武官，同时负责对访问团人员的保卫任务。",
+                "zh-Hant": "我此次擔任訪問團中的外交武官，同時負責對訪問團人員的保衛任務。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Bewertung des Genesis-Nexus im Hinblick auf eine mögliche Übernahme gehört ebenfalls zu meinen Aufgaben.",
+                "en": "Evaluating the Genesis Nexus for potential adoption is also part of my duty.",
+                "fr": "Il est également de mon devoir d'évaluer les noyaux de genèse pour adoption potentielle.",
+                "ja": "そして、「起源信号塔」の技術が導入可能か確かめるのも、仕事のひとつ。",
+                "ko": "「기원 비콘」 기술의 타당성을 평가하는 것도 내 임무 중 하나고",
+                "th": "การประเมินความเป็นไปได้ในการนำเทคโนโลยี \"เจเนซิสเน็กซัส\" มาใช้ ก็เป็นหน้าที่ของฉันด้วยเหมือนกัน",
+                "zh-Hans": "对引进「起源信标」技术可行性的研判，也在我的职责之内。",
+                "zh-Hant": "對引進「起源信標」技術可行性的研判，也在我的職責之內。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Streng genommen ist es also eine Geschäftsreise?",
+                "en": "So strictly speaking, this is a work trip?",
+                "fr": "Donc, à proprement parler, c'est un voyage d'affaires ?",
+                "ja": "つまり……本当は休暇じゃなくて、{Male=仕事をしてるんだな？;Female=仕事をしてるんだね？}",
+                "ko": "그러니까... 엄밀히 말하면 지금은 휴가 중이 아니라 근무 중인 거군요",
+                "th": "หมายความว่า... ตอนนี้คุณไม่ได้หยุดพักผ่อนเลยเหรอ? แต่คุณกำลังทำงานอยู่?",
+                "zh-Hans": "也就是说……严格来说，你现在并不是在休假？而是在工作？",
+                "zh-Hant": "也就是說……嚴格來說，你現在並不是在休假？而是在工作？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Richtig. Dieser Ort war Teil unserer Reiseroute, unter anderem, um neue Beziehungen zu Lollo-Logistik aufzubauen.",
+                "en": "Correct. Our itinerary included this place, in part to establish new ties with Lollo Logistics.",
+                "fr": "Exact. Comme nous cherchons à tisser de nouveaux liens avec Loulou Logistique, cet endroit était sur notre itinéraire.",
+                "ja": "ああ。この地を訪問団が通り過ぎたのは、ブブ物流と新業務をするにあたって共同認識を築くためでもある。",
+                "ko": "그렇지. 일정에 이곳 방문이 포함되어 있는 것도, 무무물류와 새로운 협력을 논의하기 위해서고",
+                "th": "ใช่แล้วล่ะ ครั้งนี้คณะผู้เยี่ยมเยือนผ่านมาที่นี่พอดี ก็เลยอยากทำข้อตกลงใหม่กับ \"ลอลโล่โลจิสติกส์\" เกี่ยวกับทิศทางธุรกิจใหม่ๆ",
+                "zh-Hans": "嗯，没错。此次访问团经过此地，也是为了与呜呜物流在新业务方向上达成共识。",
+                "zh-Hant": "嗯，沒錯。此次訪問團經過此地，也是為了與嗚嗚物流在新業務方向上達成共識。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich so darüber nachdenke, hast du die Grenze ja kaum verlassen.",
+                "en": "Come to think of it, you've barely left the border.",
+                "fr": "Maintenant que j'y pense, tu as rarement quitté la frontière.",
+                "ja": "あらためて考えると……{Male=忌炎はずっと辺境の地を守り続けてるな。;Female=忌炎はずっと辺境の地を守り続けてるね。}",
+                "ko": "가만 생각해 보면... 거의 항상 관문을 지키고 계신 것 같네요",
+                "th": "งั้นคุณก็ดูเหมือนประจำอยู่ที่แนวชายแดนตลอดเลยนะ",
+                "zh-Hans": "这么一想的话……你好像一直都驻守在边关。",
+                "zh-Hant": "這麼一想的話……你好像一直都駐守在邊關。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Na ja, abgesehen von dem einen Mal in der Kommune Taoyuan, bei den <ano=Gulpuff-Rennen>Ufer-Spielen</ano>.",
+                "en": "Oh, except that one time in Taoyuan Vale for the <ano=Gulpuff Race>Riverside Games</ano>.",
+                "fr": "Oh, sauf cette fois, à la Ville Fleur-de-Pêche, pour <ano=la course au Gulboule>les jeux riverains</ano>.",
+                "ja": "あっ、桃源郷で開催された<ano=グルッポの試合>競渡会</ano>以外は。",
+                "ko": "아, 도원향에서 <ano=꾹꾹복어 시합>레이스 대회</ano>가 열렸던 때만 빼고요",
+                "th": "อ้อ มีแค่ตอนจัด<ano=การแข่ง Gulpuff>เกมชิงชัยกลางลำน้ำ</ano>ในหมู่บ้านเถาหยวนเนี่ยแหละที่เป็นข้อยกเว้น",
+                "zh-Hans": "哦，只有桃源乡举办<ano=河豚比赛>竞渡会</ano>那次例外。",
+                "zh-Hant": "哦，只有桃源鄉舉辦<ano=河豚比賽>競渡會</ano>那次例外。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Lage war damals aufgrund des Wiedererwachens des Threnodianers sehr unbeständig. Es war meine Aufgabe, an der Grenze zu bleiben, um die Stadt zu schützen.",
+                "en": "The situation back then was volatile with the Threnodian's resurgence. Remaining at the border to safeguard the city was my responsibility.",
+                "fr": "À l'époque, la résurgence du Réprimantum avait rendu la situation explosive. Il m'incombait donc de rester à la frontière pour protéger la ville.",
+                "ja": "……当時は今ほど情勢も落ち着いていなかったうえに、鳴式も蠢いていた。俺が長いこと辺境を守り、今州城に戻らないのは、責任を全うするため。",
+                "ko": "...그땐 상황이 불안정했고, 명식도 암암리에 움직이고 있었지. 내가 오랫동안 성안으로 들어가지 않고 관외를 지키고 있었던 것도 직책 때문이었네",
+                "th": "...ตอนนั้นสถานการณ์ยังไม่มั่นคง เธรโนเดียนก็ออกอาละวาด การประจำอยู่ที่ชายแดนโดยไม่เข้ามาในเมืองก็ถือว่าเป็นหน้าที่สำคัญ",
+                "zh-Hans": "……当时毕竟局势未定，鸣式蠢蠢欲动。我驻守关外，久不入城，也是职责所系。",
+                "zh-Hant": "……當時畢竟局勢未定，鳴式蠢蠢欲動。我駐守關外，久不入城，也是職責所系。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings kann ich mich kaum daran erinnern, wann ich das letzte Mal wirklich eine Auszeit hatte …",
+                "en": "That said, I can scarcely recall the last time I had a true respite...",
+                "fr": "Cela étant, je peine à me souvenir de la dernière fois que j'ai pris un vrai repos…",
+                "ja": "前回の休暇がいつだったのか、もう忘れてしまった。",
+                "ko": "말은 이렇게 하지만, 지난번 휴가가 언제였는지 잘 기억나지 않는군...",
+                "th": "จะว่าไป ฉันก็จำไม่ได้แล้วว่าได้หยุดพักครั้งสุดท้ายตอนไหน...",
+                "zh-Hans": "话虽如此，我确实也记不得上次休假是什么时候的事了……",
+                "zh-Hant": "話雖如此，我確實也記不得上次休假是什麼時候的事了……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da du nun schon auf der Party bist, warum betrachtest du das Ganze nicht als Urlaub und entspannst dich ein wenig? Selbst ein General muss mal neue Energie tanken.",
+                "en": "Since you're already at the party, why not treat this as a vacation and relax a little? Even a general needs to recharge.",
+                "fr": "Puisque tu es déjà à la fête, considère ça comme des vacances et détends-toi un peu ! Même un général a parfois besoin de se ressourcer.",
+                "ja": "{Male=パーティーに来た以上、今から休みを取って、ゆっくりリラックスするのはどうだ？あまり気を引き締めすぎても良くない。;Female=パーティーに来た以上、今から休みを取って、ゆっくりリラックスするのはどう？あまり気を引き締めすぎても良くない。}",
+                "ko": "이왕 파티에 온 거, 차라리 지금부터라도 자신에게 휴가를 주고 마음껏 즐겨보는 건 어때요? 일과 휴식 사이의 균형도 아주 중요하니까요",
+                "th": "ไหนๆ ก็มาอยู่ในปาร์ตี้แล้ว งั้นก็ถือโอกาสพักผ่อนซะเลยสิ สนุกให้เต็มที่ไปเลย! ทำงานหนักก็ต้องรู้จักพักผ่อนด้วยนะ",
+                "zh-Hans": "既然已经来了派对，那不如从现在开始就给自己放个假，好好享受一下？劳逸结合可是很重要的。",
+                "zh-Hant": "既然已經來了派對，那不如從現在開始就給自己放個假，好好享受一下？勞逸結合可是很重要的。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Du hast recht. Wie lange ich auch nachdenke: Alle Entscheidungen müssen warten, bis ich nach Jinzhou zurückkehre.",
+                "en": "...You're right. No matter how much I deliberate, decisions must wait until I return to Jinzhou.",
+                "fr": "Tu as raison… J'aurais beau me triturer la cervelle, les décisions ne seront prises qu'une fois que je serai de retour à Jinzhou.",
+                "ja": "うむ……一理ある。ここでいくら考えても、結論は今州に戻ってからでないと出せない。",
+                "ko": "음... 일리 있는 말이군. 지금 아무리 고민해도, 결정은 금주에 돌아간 후에야 내릴 수 있으니까",
+                "th": "อืม... ฟังดูเข้าท่าดีนะ ถึงจะมีเรื่องให้คิดมากมาย แต่ก็ต้องกลับไปถึงจินโจวก่อนถึงจะตัดสินใจได้",
+                "zh-Hans": "嗯……有道理，即使考虑得再多，也需等到返回今州后才有定论。",
+                "zh-Hant": "嗯……有道理，即使考慮得再多，也需等到返回今州後才有定論。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Delegation ist vorerst sicher. Eine kurze Ruhepause hier schadet wohl nicht …",
+                "en": "The delegation is secure for now. A brief rest here shouldn't hurt...",
+                "fr": "La délégation n'a rien à craindre pour le moment. Un peu de repos ne me fera pas de mal…",
+                "ja": "訪問団も今のところ問題ない。このあたりで休息を取るのも悪くないか……",
+                "ko": "지금 방문단도 별일 없이 안전한 상태니, 여기서 잠시 쉬는 것도 괜찮을 것 같군",
+                "th": "ตอนนี้คณะผู้เยี่ยมเยือนก็ปลอดภัยดี ไม่มีอะไรน่าเป็นห่วงแล้ว พักผ่อนที่นี่สักหน่อยคงไม่เป็นไรหรอก…",
+                "zh-Hans": "访问团目前也无安全之忧，在此略作休憩应也无妨……",
+                "zh-Hant": "訪問團目前也無安全之憂，在此略作休憩應也無妨……"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Viel Spaß, Jiyan!",
+                    "en": "Have fun, Jiyan!",
+                    "fr": "Amuse-toi bien, Jiyan !",
+                    "ja": "それじゃあ、{Male=ゆっくりしてくれ。;Female=ゆっくりしてね。}",
+                    "ko": "그럼, 좋은 시간 보내세요",
+                    "th": "ขอให้สนุกนะ",
+                    "zh-Hans": "那么，要玩得开心哦。",
+                    "zh-Hant": "那麼，要玩得開心喔。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Genieße deine Auszeit!",
+                    "en": "Enjoy your time off!",
+                    "fr": "Profite bien de tes vacances !",
+                    "ja": "{Male=休暇をゆっくり楽しんでくれ;Female=休暇をゆっくり楽しんでね}",
+                    "ko": "휴가를 즐기세요!",
+                    "th": "พักผ่อนให้เต็มที่เลยล่ะ!",
+                    "zh-Hans": "好好享受假期吧！",
+                    "zh-Hant": "好好享受假期吧！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "… Danke. Ich hoffe, du genießt die Party auch, {PlayerName}.",
+                "en": "…Thank you. May you also find joy at this party, {PlayerName}.",
+                "fr": "Merci… Puisses-tu toi aussi trouver de l'allégresse dans cette fête, {PlayerName}.",
+                "ja": "……ああ、感謝する。その言葉、お前にも送ろう、{PlayerName}。",
+                "ko": "...그래, 고맙네. 자네도 좋은 시간을 보내길, {PlayerName}",
+                "th": "...ขอบคุณนะ ขอให้คุณสนุกเหมือนกันนะ {PlayerName}",
+                "zh-Hans": "……嗯，谢谢。也祝你玩得开心，{PlayerName}。",
+                "zh-Hant": "……嗯，謝謝。也祝你玩得開心，{PlayerName}。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 92,
+                "name": {
+                  "en": "Taoqi",
+                  "ja": "桃祈",
+                  "zh-Hans": "忌炎"
+                },
+                "entity": {
+                  "entityId": 194000002,
+                  "mapId": 8900,
+                  "blueprintType": "Player014",
+                  "name": "TsEntity_角色014_忌炎",
+                  "areaId": 0,
+                  "position": {
+                    "x": -219,
+                    "y": -1577,
+                    "z": 398
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -75
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

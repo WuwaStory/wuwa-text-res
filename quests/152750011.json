@@ -1,0 +1,424 @@
+{
+  "id": 152750011,
+  "key": "1.3转盘活动第六天（采集与采购）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo-Kampagne: Navigation VI",
+    "en": "Lollo Campaign: Navigation VI",
+    "es": "Campaña Lollo: Navegación VI",
+    "fr": "Projet Loulou : Navigation VI",
+    "ja": "ブブナビ企画・六",
+    "ko": "무무 내비게이션 기획 · Ⅵ",
+    "th": "แคมเปญลอลโล่: การนำทาง 6",
+    "zh-Hans": "呜呜导航企划·六",
+    "zh-Hant": "嗚嗚導航企劃·六"
+  },
+  "desc": {
+    "de": "Lollo-Navigation wird derzeit gewartet und benötigt Referenzinformationen. Einige deiner gesammelten Gegenstände könnten Maji helfen, das Problem zu lösen ...",
+    "en": "Lollo Navigator is currently undergoing maintenance and needs reference information. Some of the items you've collected might help Maji resolve the issue…",
+    "es": "La Navegación Lollo actualmente está en mantenimiento y necesita información de referencia. Algunos de los objetos que has recogido podrían ayudar a Maji a resolver el problema…",
+    "fr": "Le Navigateur Loulou est en maintenance et nécessite des informations de référence. Certains objets que vous avez collectés pourraient aider Maji à résoudre le problème...",
+    "ja": "今日はブブナビのメンテナンス日だが、参考になるような情報を探すことはできる。普段よく見かけるでも役に立ちそう……",
+    "ko": "서버 정지 중인 무무 내비게이션은 정보 참고용 물건이 필요합니다. 어쩌면 평소에 본 채집물이 마현을 도울지도 모릅니다...",
+    "th": "ขณะนี้ผู้นำทางลอลโล่อยู่ระหว่างการซ่อมบำรุงและต้องการข้อมูลอ้างอิง ไอเทมบางอย่างที่คุณเก็บมาอาจช่วย Maji แก้ไขปัญหานี้ได้...",
+    "zh-Hans": "停服更新的呜呜导航需要一些信息参考，也许平日里你所见的一些采集物能够帮上马计……",
+    "zh-Hant": "停服更新的嗚嗚導航需要一些資訊參考，也許平日裡你所見的一些採集物能夠幫上馬計……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Unterhalte dich mit Maji über die heutigen Geschäfte",
+        "en": "Chat with Maji about today's business",
+        "es": "Habla con Maji sobre los asuntos del día.",
+        "fr": "Discuter des affaires du jour avec Maji",
+        "ja": "馬計と今日の企画について話し合う",
+        "ko": "마현과 오늘의 기획 내용을 논의하기",
+        "th": "คุยเรื่องงานวันนี้กับ Maji",
+        "zh-Hans": "与马计讨论今日的企划内容",
+        "zh-Hant": "與馬計討論今日的企劃內容"
+      },
+      "entities": [
+        {
+          "entityId": 152750032,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理3",
+          "areaId": 301,
+          "position": {
+            "x": -42456,
+            "y": 89517,
+            "z": 432
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750034,
+          "mapId": 8,
+          "blueprintType": "Collect007",
+          "name": "TsEntity_植物007_虞美人",
+          "areaId": 6,
+          "position": {
+            "x": -118939,
+            "y": 216008,
+            "z": 844
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750035,
+          "mapId": 8,
+          "blueprintType": "Collect107",
+          "name": "TsEntity_植物107_香柠草2",
+          "areaId": 606,
+          "position": {
+            "x": -125284,
+            "y": 218211,
+            "z": 24
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750038,
+          "mapId": 8,
+          "blueprintType": "Collect104_1",
+          "name": "TsEntity_植物104_凌冬花_底座4",
+          "areaId": 6,
+          "position": {
+            "x": -116943,
+            "y": 215046,
+            "z": 743
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Für heute werden alle weiteren Probeläufe abgebrochen, {PlayerName}. Wir müssen uns etwas um die Wartung vom Lollo-Navigator kümmern!",
+                "en": "We're temporarily suspending all trial runs for today, {PlayerName}. We need to do some maintenance on \"Lollo Navigator\"!",
+                "es": "Suspenderemos temporalmente todas las pruebas por hoy, {PlayerName}. Tenemos que llevar a cabo un mantenimiento en la «Navegación Lollo».",
+                "fr": "On va devoir arrêter les essais pour aujourd'hui, {PlayerName}. Il y a de la maintenance à faire sur le navigateur Loulou !",
+                "ja": "{PlayerName}、今日はメンテナンスがあるから、「ブブナビ」の運行テストは一旦中止だ。",
+                "ko": "{PlayerName}, 오늘은 기능의 시범 운행을 잠시 중단하죠. 「무무 내비게이션」이 점검을 진행할 예정이라서요",
+                "th": "วันนี้การทดลองปฏิบัติการทั้งหมดถูกระงับไว้ชั่วคราวน่ะ {PlayerName} เราจำเป็นต้องซ่อมบำรุง \"ผู้นำทางลอลโล่\"!",
+                "zh-Hans": "{PlayerName}，今天就先暂停功能试运行体验了，我们要对「呜呜导航」进行维护！",
+                "zh-Hant": "{PlayerName}，今天就先暫停功能試運行體驗了，我們要對「嗚嗚導航」進行維護！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Die Server sind ausgefallen.",
+                    "en": "Servers are down.",
+                    "es": "Los servidores se han caído.",
+                    "fr": "Les serveurs ne fonctionnent plus.",
+                    "ja": "サービス停止？",
+                    "ko": "서버 정지네요",
+                    "th": "เซิร์ฟเวอร์ล่ม",
+                    "zh-Hans": "停服了。",
+                    "zh-Hant": "停服了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Im ganzen System?",
+                    "en": "A system-wide crash?",
+                    "es": "¿Se ha colapsado todo el sistema?",
+                    "fr": "Un plantage du système ?",
+                    "ja": "クラッシュ？",
+                    "ko": "시스템이 다운됐나요?",
+                    "th": "พังทั้งระบบเลยเหรอ?",
+                    "zh-Hans": "系统崩溃了？",
+                    "zh-Hant": "系統崩潰了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja ... schon, aber nur zeitweise. Wir müssen jetzt erstmal die Informationen, die sich bei diesem langen Testlauf der dynamischen Karte des Lollo-Navigator angesammelt haben, ordnen und rekalibrieren.",
+                "en": "Well... in a way, yes, but it's only temporary. We need to recalibrate the dynamic map info of \"Lollo Navigator\" after its long trial run.",
+                "es": "Bueno... en cierto modo sí, pero solo es temporal. Teníamos que recalibrar la información existente en el mapa dinámico de la «Navegación Lollo» después de su largo período de prueba.",
+                "fr": "Euh... Plus ou moins, oui, mais ce n'est que temporaire. Faut qu'on recalibre les données existantes sur la carte du navigateur Loulou après la période d'essai.",
+                "ja": "うん……そう理解できなくもないけど、一時的なものさ。この前の運行テストで集めたデータに基づいて「ブブナビ」のダイナミックマップに情報の修正と変更を加えるんだ。",
+                "ko": "네... 그렇게 이해하셔도 돼요. 하지만 그냥 잠시뿐이에요. 「무무 내비게이션」은 시범 운행 후 기존의 동적 지도에 대한 정보 수정이 필요하거든요",
+                "th": "อืม... ก็ประมาณนั้น ใช่แหละ แต่ก็แค่ชั่วคราวนะ เราจำเป็นต้องปรับเทียบข้อมูลแผนที่ไดนามิกของ \"ผู้นำทางลอลโล่\" ใหม่อีกครั้ง หลังจากที่ทดลองปฏิบัติการมาเป็นเวลานาน",
+                "zh-Hans": "嗯……也可以这样理解，但这只是暂时的，「呜呜导航」经过试运行后，我们需要对现有的动态地图进行信息更正。",
+                "zh-Hant": "嗯……也可以這樣理解，但這只是暫時的，「嗚嗚導航」經過試運行後，我們需要對現有的動態地圖進行資訊更正。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nein, nein, nein! Wir müssen nur die Informationen, die sich bei diesem langen Testlauf der dynamischen Karte des Lollo-Navigator angesammelt haben, ordnen und rekalibrieren.",
+                "en": "No, no, no. We just need to recalibrate the dynamic map info of \"Lollo Navigator\" after its long trial run.",
+                "es": "No, para nada. Solo necesitamos recalibrar la información existente en el mapa dinámico de la «Navegación Lollo» después de una prueba tan larga.",
+                "fr": "Non, pas du tout. Faut juste qu'on recalibre les données existantes sur la carte du navigateur Loulou après la période d'essai.",
+                "ja": "いやいやいや、ただこの前の運行テストで集めたデータに基づいて「ブブナビ」のダイナミックマップに情報の修正と変更を加える必要があるというだけだよ。",
+                "ko": "아니에요. 「무무 내비게이션」은 시범 운행 후 기존의 동적 지도에 대한 정보 수정이 필요하거든요",
+                "th": "ไม่ๆ ๆ เราแค่ต้องปรับเทียบข้อมูลแผนที่ไดนามิกของ \"ผู้นำทางลอลโล่\" ใหม่อีกครั้ง หลังจากที่ทดลองปฏิบัติการมาเป็นเวลานาน",
+                "zh-Hans": "不不不，「呜呜导航」经过试运行后，我们需要对现有的动态地图进行信息更正。",
+                "zh-Hant": "不不不，「嗚嗚導航」經過試運行後，我們需要對現有的動態地圖進行資訊更正。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nur so können wir sicherstellen, dass alle Daten akkurat und aktuell sind. Da du einmal hier bist ... Magst du mir nicht dabei helfen und ein paar Referenzobjekte für die Daten finden?",
+                "en": "We need to ensure everything's accurate and on time. Now that you're here, why not help me find a few things as references for the information?",
+                "es": "Para garantizar su precisión y asegurarnos de que todo llegará a tiempo. Ya que estás aquí, ¿por qué no me ayudas a tomar algunas referencias para cotejar la información?",
+                "fr": "Comme ça, on sera certain que tout est correct et qu'il n'y a pas de retard. Tant que tu es là, pourrais-tu m'aider à trouver quelques références ?",
+                "ja": "そうすることで、情報の適時性と正確性が保証できるんだ。まあせっかく来てくれたんだし、探しものに協力してもらおうかな？参考になるだろうし。",
+                "ko": "정보를 확보할 때 효율성과 정확성을 보장하기 위해서죠. 마침 오셨으니, 정보 참고용 물건 몇 개를 찾아주시겠어요?",
+                "th": "เราต้องดูให้แน่ใจว่าทุกอย่างถูกต้องและทันเวลา ไหนๆ คุณก็มาแล้ว ช่วยฉันหาของสองสามอย่างเพื่อใช้เป็นแหล่งอ้างอิงข้อมูลทีได้ไหม?",
+                "zh-Hans": "以确保信息的时效性和准确性，既然你来了，要不帮忙寻找几样东西作为信息的参考？",
+                "zh-Hant": "以確保資訊的時效性和準確性，既然你來了，要不幫忙尋找幾樣東西作為資訊的參考？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Referenzobjekte?",
+                    "en": "References?",
+                    "es": "¿Referencias?",
+                    "fr": "Des références ?",
+                    "ja": "サンプル？",
+                    "ko": "참고용이요?",
+                    "th": "แหล่งอ้างอิงเหรอ?",
+                    "zh-Hans": "参考？",
+                    "zh-Hant": "參考？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Na ja, außer den Straßenverhältnissen bilden auch Objekte wie Pflanzen, Tiere, auch Mineralien, ihre Wachstumszyklen und typischen Vorkommen wichtige Referenzen für dynamische Informationen.",
+                "en": "You know, besides road conditions, things like plants, animals, minerals, their growth cycles, and their environments are also key references for dynamic information.",
+                "es": "Ya sabes, cosas como plantas, animales e incluso minerales, así como sus ciclos de crecimiento y el entorno en que se encuentran a lo largo de la vía, junto con las condiciones de esta.",
+                "fr": "Eh bien, en plus des conditions sur la route, il nous faudrait des infos sur la faune, la plante, les minéraux, les cycles de croissance, l'environnement... C'est crucial d'avoir des données en temps réel.",
+                "ja": "道路の状況以外にも、動物や植物、鉱石などの状態や環境も重要な参考資料になるんだ。",
+                "ko": "도로 외에 동식물, 심지어 일부 광석의 성장 주기와 성장 환경도 동적 정보에 대한 중요한 참고 자료에요",
+                "th": "ก็แบบว่า นอกเหนือจากสภาพถนน ของอย่างต้นไม้ สัตว์ แร่ธาตุ วงจรการเติบโต และสภาพแวดล้อม ก็ถือเป็นแหล่งอ้างอิงสำคัญสำหรับข้อมูลไดนามิกด้วยเช่นกัน",
+                "zh-Hans": "要知道除开路况外，动植物类，甚至于一些矿石，它们的生长周期、生长环境也是动态信息的重要参考。",
+                "zh-Hant": "要知道除了路況外，動植物類，甚至於一些礦石，它們的生長週期、生長環境也是動態資訊的重要參考。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe dir eine Liste der benötigten Objekte auf dein Terminal geschickt. Viel Glück da draußen!",
+                "en": "The objects I need are sent to your Terminal. Good luck out there!",
+                "es": "He enviado a tu Terminal los objetos que necesito. ¡Buena suerte ahí fuera!",
+                "fr": "Je t'ai envoyé la liste de ce dont j'ai besoin sur ta borne. Bon courage !",
+                "ja": "{PlayerName}、参考になりそうなものはデバイスに送っておいたよ。それじゃ、よろしくね！",
+                "ko": "{PlayerName}, 필요한 참고 자료는 단말기에 전송했어요. 부탁드려요!",
+                "th": "ฉันส่งวัตถุที่ต้องการไปที่เทอร์มินัลของคุณแล้ว ขอให้โชคดีนะ!",
+                "zh-Hans": "{PlayerName}，所需要的参考物发送到你的终端了，就拜托你了！",
+                "zh-Hant": "{PlayerName}，所需要的參考物發送到你的終端了，就拜託你了！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überreiche die Pflanzenproben",
+        "en": "Deliver the plant samples",
+        "es": "Entrega las muestras de plantas.",
+        "fr": "Livrer les échantillons de plantes",
+        "ja": "植物サンプルを提出",
+        "ko": "채집한 식물 샘플 전달하기",
+        "th": "ส่งมอบตัวอย่างพืช",
+        "zh-Hans": "交付采集的植物样本",
+        "zh-Hant": "交付採集的植物樣本"
+      },
+      "entities": [
+        {
+          "entityId": 152750032,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理3",
+          "areaId": 301,
+          "position": {
+            "x": -42456,
+            "y": 89517,
+            "z": 432
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 6,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Vielen Dank für deine harte Arbeit! Die Referenzobjekte sind wirklich nützlich. Hier ist deine Bezahlung für heute. Du hast sie dir echt verdient.",
+                "en": "Really appreciate the hard work. These reference objects will definitely come in handy. Here's your pay for today, you earned it.",
+                "es": "No sabes cuánto aprecio tu trabajo. Estas referencias van a ser la mar de útiles. Aquí está tu sueldo de hoy. ¡Te lo has ganado!",
+                "fr": "J'apprécie vraiment tout ce que tu fais pour moi. Ces références me seront très utiles. Voilà ta paie pour aujourd'hui, tu l'as bien méritée.",
+                "ja": "ありがとう。役に立つといいんだけど。これが本日の報酬さ。それじゃお疲れ様。",
+                "ko": "고마워요. 참고 자료가 도움이 됐으면 좋겠네요. 이건 오늘의 보수예요. 수고하셨어요",
+                "th": "ขอบคุณมากสำหรับการทำงานหนัก วัตถุอ้างอิงเหล่านี้จะมีประโยชน์อย่างแน่นอน นี่คือค่าตอบแทนของคุณในวันนี้ รับไปสิ",
+                "zh-Hans": "谢谢你，这些参考物希望能派上用场，这是今天的报酬，辛苦你了。",
+                "zh-Hant": "謝謝你，這些參考物希望能派上用場，這是今天的報酬，辛苦你了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erreiche den Stadtrand der Hafenstadt Guixu",
+        "en": "Arrive at the Port City of Guixu outskirts",
+        "es": "Llega a las afueras de la Ciudad Portuaria de Guixu.",
+        "fr": "Se rendre à la périphérie de la ville de Guixu",
+        "ja": "帰来の港の外縁に着く",
+        "ko": "귀허항시 외곽에 도착",
+        "th": "มาถึงชานเมืองของเมืองท่ากุยซวี",
+        "zh-Hans": "到达归墟港市外围",
+        "zh-Hant": "到達歸墟港市週邊"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+{
+  "id": 320800004,
+  "key": "幸存者活动和约兰通讯",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Lamento-Simulation: Solaris-Krieger",
+    "en": "Lament Recon: Solaris Soldier",
+    "es": "Recon Lamento: Soldado Solaris",
+    "fr": "Lamentation Recon : Soldat de Solaris",
+    "ja": "ラメントリコン：ソラソルジャー",
+    "ko": "비명 리콘 솔라리스 솔져",
+    "th": "หน่วยลาดตระเวนอาดูรการณ์: ทหารโซลาริส",
+    "zh-Hans": "悲鸣行动·索拉战士",
+    "zh-Hant": "悲鳴行動·索拉戰士"
+  },
+  "desc": {
+    "de": "Begib dich nach Ragunna",
+    "en": "Head to Ragunna City",
+    "es": "Ve a la Ciudad de Raguna.",
+    "fr": "Visitez la ville de Ragunna.",
+    "ja": "ラグーナ城に向かう",
+    "ko": "라군나 성으로 이동하기",
+    "th": "ไปที่เมืองรากูนน่า",
+    "zh-Hans": "前往拉古那城",
+    "zh-Hant": "前往拉古那城"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich nach Ragunna",
+        "en": "Head to Ragunna City",
+        "es": "Ve a la Ciudad de Raguna.",
+        "fr": "Se rendre à la ville de Ragunna",
+        "ja": "ラグーナ城に向かう",
+        "ko": "라군나 성으로 이동하기",
+        "th": "ไปที่เมืองรากูนน่า",
+        "zh-Hans": "前往拉古那城",
+        "zh-Hant": "前往拉古那城"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_2.7幸存者活动引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh, jetzt haben sie mich endlich durchgestellt. Hallo, {PlayerName}? Kannst du mich hören?",
+                "en": "Oh, I'm finally patched through. Hello? {PlayerName}... Can you hear me?",
+                "es": "Oh, por fin hay línea. ¿Hola? {PlayerName}..., ¿me oyes?",
+                "fr": "Ah, la communication est enfin passée. Allô ? {PlayerName}… Tu me reçois ?",
+                "ja": "あっ、やっと繋がりました……もしもし{PlayerName}さん、聞こえますか？",
+                "ko": "어? 드디어 연결됐네... {PlayerName}, 잘 들리세요?",
+                "th": "โอ๊ะ เชื่อมสัญญาณได้สักที สวัสดี? {PlayerName}... ได้ยินฉันไหม?",
+                "zh-Hans": "诶？线路终于接通了……{PlayerName}，听得到么？",
+                "zh-Hant": "欸？線路終於接通了……{PlayerName}，聽得到嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Laut und deutlich.",
+                "en": "Loud and clear.",
+                "es": "Alto y claro.",
+                "fr": "Cinq sur cinq.",
+                "ja": "{Male=ああ。;Female=ええ。}",
+                "ko": "네",
+                "th": "ชัดแจ๋วเลย",
+                "zh-Hans": "是我。",
+                "zh-Hant": "是我。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, schön, deine Stimme zu hören. Ich bin Yhoran. Wir haben uns einmal an den Schwarzen Küsten getroffen.",
+                "en": "Aha, good to hear your voice. I'm Yhoran. We met back at the Black Shores.",
+                "es": "Ajá, me alegra oír tu voz. Soy Yhoran. Nos conocimos en Costa Negra.",
+                "fr": "Ah, c'est un plaisir d'entendre ta voix. Ici Yhoran. On s'est {Male=rencontrés;Female=rencontrées} au Littoral noir.",
+                "ja": "はあ……本当によかった。こちらヨランです。以前、ブラックショアでお会いしましたよね。",
+                "ko": "좋아요, 연락이 돼서 다행이에요. 저는 욜랑드라고 해요. 전에 검은 해안에서 만난 적 있죠?",
+                "th": "อาฮะ ดีใจที่ได้ยินเสียงนะ นี่ฉันเยว่หลานเอง เราเคยเจอกันที่แบล็กชอร์",
+                "zh-Hans": "啊……好，能联系上就好，我是约兰，之前在黑海岸我们见过的。",
+                "zh-Hant": "啊……好，能聯繫上就好，我是約蘭，之前在黑海岸我們見過的。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erinnerst du dich noch an die taktische Prüfung, an der du damals teilgenommen hast? Wir führen gerade ein ähnliches Projekt durch und könnten dabei deine Unterstützung brauchen.",
+                "en": "Do you still remember the Tactical Trial you took part in before? We're currently running a similar project, and we could use your assistance again.",
+                "es": "¿Aún recuerdas la prueba táctica en la que participaste? Pues ahora estamos con un proyecto parecido y nos vendría bien tu ayuda de nuevo.",
+                "fr": "Tu te souviens de l'épreuve tactique de la dernière fois ? On travaille sur un autre projet du même genre, et on pourrait à nouveau avoir besoin de ton aide.",
+                "ja": "以前ブラックショアで行った戦術研究を覚えていますか。今回も似たようなお仕事をお願いしたいんです。",
+                "ko": "{PlayerName}, 전에 검은 해안에서 전술 연구를 했던 것 기억하세요? 사실 이번에도 비슷한 일이 있어서 협조해 주셨으면 해서요",
+                "th": "คุณยังจำบททดสอบเชิงกลยุทธ์ที่คุณเคยเข้าร่วมได้ไหม? ตอนนี้เราทำโครงการลักษณะเดียวกันอยู่ และอยากขอความช่วยเหลือจากคุณอีกครั้ง",
+                "zh-Hans": "{PlayerName}还记得之前在黑海岸的战术研究么，这次其实是有些类似的工作希望能够得到你的协助。",
+                "zh-Hant": "{PlayerName}還記得之前在黑海岸的戰術研究嗎，這次其實是有些類似的工作希望能夠得到你的協助。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du bist noch in Rinascita, oder?",
+                "en": "I suppose you're still in Rinascita?",
+                "es": "Supongo que todavía sigues en Rinascita, ¿no?",
+                "fr": "Tu es toujours à Rinascita, pas vrai ?",
+                "ja": "{PlayerName}さんは、今もリナシータにいらっしゃいますよね？",
+                "ko": "{PlayerName}, 아직 리나시타 지역에 있죠?",
+                "th": "นี่คุณยังอยู่ที่รินาซิตาสินะ?",
+                "zh-Hans": "{PlayerName}现在应该还在黎那汐塔地区吧？",
+                "zh-Hant": "{PlayerName}現在應該還在黎那汐塔地區吧？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dann kannst du mich in Ragunna treffen und ich werde dir persönlich alles dazu erklären, wenn du Zeit hast.",
+                "en": "You can find me in Ragunna City and I'll brief you on the details in person when you have the time.",
+                "es": "Si vienes a verme a ciudad de Raguna cuando tengas un hueco, te daré todos los detalles en persona.",
+                "fr": "Passe me voir dans la ville de Ragunna quand tu auras un moment, je te donnerai tous les détails.",
+                "ja": "私もちょうど今、ラグーナに来てます。もしお時間があれば、一度お会いして、詳しくお話しできればと思います。",
+                "ko": "저흰 지금 라군나 성 안에 있는데, 시간이 있으면 직접 만나서 자세히 얘기하고 싶어요",
+                "th": "คุณมาหาฉันที่เมืองรากูนน่าได้เลย พอคุณมีเวลา ฉันจะอธิบายรายละเอียดให้ฟัง",
+                "zh-Hans": "我们目前就在拉古那城内，有空最好能够见面详谈一下。",
+                "zh-Hant": "我們目前就在拉古那城內，有空最好能夠見面詳談一下。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Yhoran",
+        "en": "Talk to Yhoran",
+        "es": "Habla con Yhoran.",
+        "fr": "Parler à Yhoran",
+        "ja": "ヨランと会話する",
+        "ko": "욜랑드와 대화하기",
+        "th": "พูดคุยกับ Yhoran",
+        "zh-Hans": "找约兰聊聊",
+        "zh-Hant": "找約蘭聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 320800003,
+          "mapId": 8,
+          "blueprintType": "NPC4134005",
+          "name": "TsEntity_约兰_4134005",
+          "areaId": 1692,
+          "position": {
+            "x": 686199,
+            "y": 580736,
+            "z": 75
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2.7幸存者活动引导任务",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Lange nicht gesehen, {PlayerName}. Hier in Ragunna erzählen die Leute überall von deinen Abenteuern!",
+                "en": "Long time no see, {PlayerName}. Stories of your adventures in Ragunna are all over the streets!",
+                "es": "Cuánto tiempo, {PlayerName}. ¡Las historias de tus aventuras en Raguna corren como la pólvora!",
+                "fr": "Ça faisait longtemps, {PlayerName}. Tout le monde ne parle que de tes aventures à Ragunna !",
+                "ja": "お久しぶりです、{PlayerName}さん。ラグーナに来てから、あなたのここでの冒険譚をたくさん耳にしましたよ！",
+                "ko": "정말 오랜만이에요, {PlayerName}. 라군나에 온 후 당신에 관한 모험담을 많이 들었어요!",
+                "th": "ไม่เจอกันนานเลยนะ {PlayerName} เรื่องราวการผจญภัยของคุณในรากูนน่ายังโด่งดังไปทั่วทุกหัวถนนอยู่เลย!",
+                "zh-Hans": "好久不见了，{PlayerName}，来到拉古那以后，我听说了不少你在这边的传奇冒险啊！",
+                "zh-Hant": "好久不見了，{PlayerName}，來到拉古那以後，我聽說了不少你在這邊的傳奇冒險啊！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer. Das Tethys-System überwacht schon seit langem Rinascita sehr genau und unser Kriseneinsatzteam hat gerade neue Daten über die Aktivität der Dunklen Flut erhalten.",
+                "en": "Jokes aside. The Tethys System has always kept a close watch on Rinascita, and our emergency response team just received new data linked to Dark Tide activity.",
+                "es": "Bueno, pongámonos serios. El Sistema Tetis lleva vigilando Rinascita todo este tiempo, y nuestro equipo de respuesta a emergencias ha recibido nuevos datos relacionados con la actividad de la Marea Oscura.",
+                "fr": "Mais trêve de bavardages. Le système Tethys surveille étroitement Rinascita, et notre équipe d'intervention d'urgence vient de recevoir de nouvelles données concernant l'activité de la Marée noire.",
+                "ja": "冗談はさておき、テティスシステムは以前からリナシータの環境データを観測しており、ここ最近、私たち応急班も黒潮の活動に関するデータを受け取りました。",
+                "ko": "헤헤, 장난이에요. 테티스 시스템은 줄곧 리나시타에 관심을 가지고 있었고, 최근에 저희 응급소대도 <ano=검은 파도>흑조(黑潮)</ano> 활동과 관련된 데이터를 받았어요",
+                "th": "เอาจริงๆ นะ ระบบเธทิสคอยติดตามดูรินาซิตามาตลอด และทีมหน่วยฉุกเฉินของเราเพิ่งได้รับข้อมูลใหม่ ที่เชื่อมโยงกับความเคลื่อนไหวของคลื่นทมิฬ",
+                "zh-Hans": "开个玩笑，泰缇斯系统一直都在关注着黎那汐塔。近期，我们应急小组也收到了黑潮活动的相关数据。",
+                "zh-Hant": "開個玩笑，泰緹斯系統一直都在關注著黎那汐塔。近期，我們應急小組也收到了黑潮活動的相關數據。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir möchten verhindern, dass es zu einem neuen Auftreten des Waveworn-Phänomens in Form einer Dunklen Flut kommt. Daher arbeiten wir mit den lokalen Behörden zusammen, um mithilfe eines Hologrammgeräts in den Regionen, die gegenüber der Macht des Threnodianers verwundbar sind, Simulationen durchzuführen.",
+                "en": "To help prevent another Waveworn Phenomenon on the scale of a Dark Tide, we've been working with local authorities to conduct simulations using a hologram device in regions vulnerable to the Threnodian's power.",
+                "es": "Para prevenir un nuevo fenómeno de Erosionda de la magnitud de una Marea Oscura, hemos colaborado con las autoridades locales para llevar a cabo simulacros con un dispositivo holográfico en regiones vulnerables al poder del Trenodiano.",
+                "fr": "Afin d'éviter un nouveau phénomène d'érosion aussi dévastateur que la Marée noire, nous collaborons avec les autorités locales pour réaliser des simulations holographiques dans les régions qui sont vulnérables au pouvoir du Réprimantum.",
+                "ja": "将来起こりうる黒潮と同種の海蝕現象の発生を防ぐため、私たちは現地の各方面と協議し、ホログラムシミュレーション装置を通じて、鳴式の力の影響を受ける可能性のある地域で演習を行うことに決めたのです。",
+                "ko": "미래에 발생할 수 있는 <ano=검은 파도>흑조(黑潮)</ano>와 유사한 이상 현상을 예방하기 위해, 저희는 현지의 여러 곳과 협력을 하기로 했어요. 파노라마 시뮬레이션 장치를 통해 명식의 힘에 영향을 받을 수 있는 지역에서 훈련을 진행할 거예요",
+                "th": "เพื่อป้องกันปรากฏการณ์รอยคลื่นระดับเดียวกับคลื่นทมิฬเกิดขึ้นอีกครั้ง เราจึงร่วมมือกับเจ้าหน้าที่ท้องถิ่น จำลองสถานการณ์ด้วยเครื่องโฮโลแกรมในพื้นที่ที่เปราะบางต่ออำนาจของเธรโนเดียน",
+                "zh-Hans": "为了预防未来可能出现的，与黑潮同类的海蚀现象，我们与本地的各方协调达成了一项合作：我们将通过全景模拟装置，在可能受到鸣式力量影响的地区进行演习。",
+                "zh-Hant": "為了預防未來可能出現的，與黑潮同類的海蝕現象，我們與本地的各方協調達成了一項合作：我們將通過全景模擬裝置，在可能受到鳴式力量影響的地區進行演習。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "So wie damals beim Projekt „Virtuelle Krise“?",
+                    "en": "Like the Virtual Crisis project？",
+                    "es": "¿Como en el proyecto Crisis Virtual?",
+                    "fr": "Comme « Crise virtuelle » ?",
+                    "ja": "{Male=虚無領域のクライシスの時みたいに？;Female=虚無領域のクライシスの時みたいに？}",
+                    "ko": "허상의 위기 때처럼요?",
+                    "th": "เหมือนกับโปรเจกต์วิกฤตจำลองงี้เหรอ?",
+                    "zh-Hans": "就像虚域危局时那样？",
+                    "zh-Hant": "就像虛域危局時那樣？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich spüre die Krise schon.",
+                    "en": "I can feel the crisis already.",
+                    "es": "Suena bastante urgente.",
+                    "fr": "Ça sent la crise, cette histoire…",
+                    "ja": "{Male=それは安全なのか？;Female=それは安全なの？}",
+                    "ko": "꽤 긴장감 있는 거 같은데요?",
+                    "th": "ฉันรู้สึกได้แล้วว่าวิกฤตกำลังจะบังเกิด",
+                    "zh-Hans": "听起来还蛮有危机感的？",
+                    "zh-Hant": "聽起來還蠻有危機感的？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Genau. Wir verwenden eine ähnliche Technologie, allerdings bilden die Szenarien, die du prüfen sollst, nur Simulationen der von Tethys berechneten Extremwerte. Das heißt, es wird schon nicht so schlimm kommen, {PlayerName}.",
+                "en": "Exactly. It utilizes a similar technology, but the scenarios you'll experience are only extreme predictions simulated by Tethys, so nothing to worry about, {PlayerName}.",
+                "es": "Exactamente. Se usa una tecnología similar, pero los posibles escenarios que experimentarás solamente son predicciones extremas simuladas por Tetis, así que no hay de qué preocuparse, {PlayerName}.",
+                "fr": "Exactement. Ça fait appel à la même technologie, mais les scénarios auxquels tu seras {Male=confronté;Female=confrontée} ne sont que des simulations des prédictions les plus extrêmes de Tethys, alors tu n'as pas du tout à t'en faire, {PlayerName}.",
+                "ja": "はい、確かにそれと同じような技術を応用しています。シミュレーションは、あくまでテティスが最悪の事態を想定し演算したものに過ぎないので、深刻に捉えていただく必要はありません。",
+                "ko": "맞아요, 비슷한 기술이 적용된 거예요. 그래서 시뮬레이션 상황에 나타난 건 테티스 연산의 비관적인 예측일 뿐이니까 {PlayerName}, 너무 신경 쓰지 않아도 돼요",
+                "th": "ถูกต้อง มันใช้เทคโนโลยีคล้ายกัน แต่สถานการณ์ที่คุณจะเจอเป็นแค่การพยากรณ์แบบสุดขั้วที่เธทิสจำลองขึ้นมาเท่านั้น ไม่มีอะไรต้องกังวลหรอกนะ {PlayerName}",
+                "zh-Hans": "是的，的确应用的是类似的技术，所以模拟情景内的只是泰缇斯演算中的悲观预期，{PlayerName}也不必过于在意。",
+                "zh-Hant": "是的，的確應用的是類似的技術，所以模擬情景內的只是泰緹斯演算中的悲觀預期，{PlayerName}也不必過於在意。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schließlich ist es die Aufgabe von Tethys, uns auf jedes mögliche Szenario vorzubereiten. Es heißt ja ... Wie ging das nochmal?",
+                "en": "After all, Tethys is in charge of preparing us for every possible scenario. As they like to say… hmm, what was it again?",
+                "es": "Al fin y al cabo, el cometido de Tetis es prepararnos para cualquier situación. Como se suele decir..., mmm, ¿qué era?",
+                "fr": "Après tout, la mission de Tethys est de nous préparer à toutes les éventualités possibles. Et puis, comme on dit… euh, c'était comment, déjà ?",
+                "ja": "ご安心ください！それに、テティスシステムは常に全ての状況を想定し、その対策を講じておく必要がありますから、ええと……たしか有名な言葉が……",
+                "ko": "어쨌든 테티스 시스템은 모든 예측 가능한 상황에 관한 대책을 마련해야 해요, 마치... 뭐라고 하더라?",
+                "th": "เพราะยังไงแล้ว เธทิสก็มีหน้าที่เตรียมเราให้พร้อมรับมือกับทุกสถานการณ์ เหมือนที่เขาว่ากันว่า... อืมม ว่าไงแล้วนะ?",
+                "zh-Hans": "毕竟，泰缇斯系统总是需要准备好所有预期情况的对策，就像……那句话是怎么说的来着？",
+                "zh-Hant": "畢竟，泰緹斯系統總是需要準備好所有預期情況的對策，就像……那句話是怎麼說的來著？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, so war der Wortlaut: „Der Sensenmann wird nicht zu dir kommen, wenn du bereit für ihn bist.“",
+                "en": "Ah, right: \"The grim reaper won't come when you're ready for him.\"",
+                "es": "Ah, sí: «La Parca no vendrá a por ti cuando te vaya bien».",
+                "fr": "Ah, oui : « La mort n'arrive jamais quand on s'y attend. »",
+                "ja": "迎撃態勢を取っていれば、死神は来ない、でしたっけ？",
+                "ko": "준비만 되어 있다면, 사신은 결코 찾아오지 못한다",
+                "th": "เอ้อ ใช่ๆ \"ยมทูตจะไม่มาเยือนในเวลาที่เราพร้อม\"",
+                "zh-Hans": "当你做好准备时，死神是不会找上你的。",
+                "zh-Hant": "當你做好準備時，死神是不會找上你的。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dabei wäre noch zu erwähnen, dass es diesmal nicht wie sonst um einfache Kämpfe geht. Tethys gibt uns vielmehr Szenarien, bei denen individuelle Resonatoren eingesetzt werden.",
+                "en": "It's worth mentioning that unlike our usual training, which revolves around skirmishes, this time Tethys wants to focus on scenarios concerning the deployment of individual Resonators.",
+                "es": "Cabe destacar también que, a diferencia del entrenamiento normal y corriente, que se centra en las escaramuzas, esta vez Tetis quiere que nos centremos en escenarios que contemplen el despliegue de Resonadores de forma individual.",
+                "fr": "Et attention, contrairement à l'entraînement habituel, qui est centré sur le combat classique, Tethys souhaite mettre l'accent sur le déploiement de Résonateurs isolés.",
+                "ja": "ただし、今回テティスシステムが想定したシナリオは、従来の遭遇戦形式の訓練とは異なり、共鳴者単独での戦闘区域降下作戦です。",
+                "ko": "그런데 주목할 점은, 전에 했던 조우전 같은 형식의 전술 훈련과 달리 이번에 테티스 시스템은 공명자에 의한 단독 병사 투입 작전을 테스트하려고 해요",
+                "th": "แล้วต้องบอกด้วยว่า ครั้งนี้จะไม่เหมือนการฝึกตามปกติของเราที่เน้นการปะทะย่อย คราวนี้เธทิสอยากเน้นสภาวการณ์ที่มีการส่งเรโซเนเตอร์เดี่ยวๆ ออกไปปฏิบัติการ",
+                "zh-Hans": "不过值得注意的是，和以往常规的遭遇战形式的战术训练不同，这次泰缇斯系统想要测试依靠共鸣者来完成的单兵投放作战。",
+                "zh-Hant": "不過值得注意的是，和以往常規的遭遇戰形式的戰術訓練不同，這次泰緹斯系統想要測試依靠共鳴者來完成的單兵投放作戰。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn das Lamento einen TD-Ausbruch bei der Simulation auslöst, dann werden einzelne mächtige Resonatoren an Schwachpunkten hinter der gegnerischen Front eingesetzt, um dort die Truppen abzulenken oder besonders wertvolle Ziele auszuschalten.",
+                "en": "To put it simply, in the event of a TD outbreak triggered by the Lament, elite Resonators will be deployed across weak points behind enemy lines to create diversions or take out high-value targets.",
+                "es": "En resumidas cuentas, en caso de que haya un brote de DT desencadenado por el Lamento, los Resonadores de élite serán desplegados en los puntos vulnerables de la retaguardia enemiga para crear distracciones o acabar con objetivos de alto valor.",
+                "fr": "Pour faire simple, en cas d'assaut des Tacets Discords déclenché par la Lamentation, des Résonateurs d'élite seront déployés derrière les lignes ennemies afin de faire diversion ou d'éliminer des cibles stratégiques.",
+                "ja": "悲鳴が残像潮を誘発した際に、強力な共鳴者を敵陣後方に投下し、短時間での局所的な敵戦力の足止め、あるいは、敵陣の急所にピンポイントで攻撃を行うなどなど……",
+                "ko": "간단하게 말하면, 비명이 잔상류를 일으킬 때 강한 공명자를 적군 진지 후방 약한 곳에 투입해 일정 기간 동안 상대방의 병력을 부분 견제하거나, 약한 곳을 정확하게 타격하는 거죠",
+                "th": "พูดง่ายๆ คือ ในกรณีที่เกิดการระบาดของทาเซ็ตดิสคอร์ดเพราะอาดูรการณ์ขึ้นมา จะมีการส่งเรโซเนเตอร์ระดับหัวกะทิไปตามจุดอ่อนหลังแนวศัตรู เพื่อเบี่ยงเบนความสนใจหรือกำจัดเป้าหมายสำคัญๆ",
+                "zh-Hans": "简单来说就是悲鸣诱发残象潮时，将强大的共鸣者投放到对方阵地后方薄弱处，从而在一定时间内进行兵力的局部牵制，或者执行薄弱处的精确打击。",
+                "zh-Hant": "簡單來說就是悲鳴誘發殘象潮時，將強大的共鳴者投放到對方陣地後方薄弱處，從而在一定時間內進行兵力的局部牽制，或者執行薄弱處的精確打擊。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das klingt wie in einem Action-Film, oder?",
+                "en": "Sounds like something straight out of an action movie, doesn't it?",
+                "es": "Parece algo sacado de una película de acción, ¿no?",
+                "fr": "On se croirait dans un film d'action, pas vrai ?",
+                "ja": "とてもカッコいいですよね。まるで映画みたいです。",
+                "ko": "영화를 찍는 것처럼 아주 멋있을 거 같죠?",
+                "th": "ฟังดูเหมือนหนังแอ็กชันเลยใช่ไหมล่ะ?",
+                "zh-Hans": "听起来超帅对吧，简直像拍电影一样。",
+                "zh-Hant": "聽起來超帥對吧，簡直像拍電影一樣。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "KU-Cass hat sich sogar einen coolen Namen dafür ausgedacht – Lamento-Simulation: Solaris-Krieger. Er sagt, seine Sammlung alter Videospiele hätte ihm die Inspiration dazu gegeben.",
+                "en": "KU-Cass even came up with a cool name for it—Lament Recon: Solaris Soldier. Said the name was inspired by some of its retro video games.",
+                "es": "A KU-Cass incluso se le ha ocurrido un nombre chulo para la operación: Recon Lamento: Soldado Solaris. Dice que se ha inspirado en el título de algunos juegos de su colección retro.",
+                "fr": "Ku-Carto a même trouvé un nom plutôt stylé : « Lamentation Recon : Soldat de Solaris ». Il dit qu'il s'est inspiré de sa collection de jeux vidéo rétro.",
+                "ja": "クーカスったら、今回の演習装置に名前まで付けたんですよ……『ラメントリコン：ソラソルジャー』って。あの子がコレクションしている、古いゲームからインスピレーションを得たそうです……",
+                "ko": "쿠 · 카스가 이번 시뮬레이션 장치에 이름도 지어줬어요... 이른바 「비명 리콘 : 솔라리스 솔져」, 쿠 · 카스가 소장하고 있는 어떤 옛날 게임에서 영감을 받았대요",
+                "th": "KU-แคสส์ถึงกับคิดชื่อเจ๋งๆ ให้ด้วยนะ \"หน่วยลาดตระเวนอาดูรการณ์: ทหารโซลาริส\" บอกว่าได้แรงบันดาลใจมาจากพวกวิดีโอเกมย้อนยุคน่ะ",
+                "zh-Hans": "库卡斯还给这次的演习装置起了个名字来着……叫做「悲鸣行动：索拉战士」，据说灵感来源源自它收藏的某些古老游戏……",
+                "zh-Hant": "庫卡斯還給這次的演習裝置取了個名字來著……叫做「悲鳴行動：索拉戰士」，據說靈感來源源自它收藏的某些古老遊戲……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir zählen jedenfalls auf dich, dass du die Hologramme einmal testest, und wir werden dich – wie gewohnt – auch dafür entlohnen.",
+                "en": "Anyway, we're counting on you to give the holograms a run. And as always, we'll make it worth your while.",
+                "es": "Sea como sea, contamos contigo para que pruebes lo del holograma. Haremos que merezca la pena.",
+                "fr": "Mais quoi qu'il en soit, on compte sur toi pour tester l'hologramme. Et comme toujours, on te récompensera comme il se doit !",
+                "ja": "というわけで、{PlayerName}さん、特殊演習装置のテストをお願いします。もちろん、相応の報酬を用意いたしますので。",
+                "ko": "아무튼 {PlayerName}, 이번 특수 시뮬레이션 장치의 테스트를 부탁드려요, 그에 맞는 보수를 드릴게요",
+                "th": "ยังไงก็เถอะ เราอยากให้คุณมาช่วยทดสอบโฮโลแกรม และเช่นเคยก็คือเราจะตอบแทนคุณอย่างคุ้มค่า",
+                "zh-Hans": "总之，就拜托{PlayerName}来帮忙测试一下这次的特殊演习装置了，这边也会准备好相应的报酬。",
+                "zh-Hant": "總之，就拜託{PlayerName}來幫忙測試一下這次的特殊演習裝置了，這邊也會準備好相應的報酬。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und wenn es passt, kannst du gerne auch ein paar Freunde zu der Simulation einladen. Je mehr Daten wir gewinnen können, desto besser.",
+                "en": "And if possible, feel free to call over some friends to take a spin on the simulation. The more data we can get our hands on, the better.",
+                "es": "Y si puedes, no dudes en llamar a amigos por si también quieren probar el simulacro. Cuantos más datos tengamos, mejor.",
+                "fr": "Si possible, n'hésite pas à inviter des amis à faire la simulation avec toi. Plus on pourra collecter de données, mieux ce sera.",
+                "ja": "もし可能なら、信頼できる仲間もテストに参加していただけると助かります。データが一つ増えれば、それだけ成果も一つ増えますからね。",
+                "ko": "괜찮다면 믿음직한 동료를 테스트에 초대해도 좋아요. 데이터가 많을수록 결과가 잘 나올 테니까",
+                "th": "และถ้าเป็นไปได้ ก็ชวนเพื่อนๆ มาทดสอบระบบจำลองนี้ด้วยกันซะเลยนะ ยิ่งเราได้ข้อมูลมาไว้ในมือมากเท่าไหร่ก็ยิ่งดี",
+                "zh-Hans": "如果条件允许的话，也欢迎邀请可靠的伙伴来参与测试，毕竟多一份数据，就多一份成果。",
+                "zh-Hant": "如果條件允許的話，也歡迎邀請可靠的夥伴來參與測試，畢竟多一份數據，就多一份成果。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, {PlayerName} – ich freue mich schon auf deinen Testlauf!",
+                "en": "Well, {PlayerName}, I'll be looking forward to your performance!",
+                "es": "Bueno, {PlayerName}, ¡tengo ganas de ver qué tal te va!",
+                "fr": "J'ai hâte de voir comment tu vas t'en sortir, {PlayerName} !",
+                "ja": "では、吉報をお待ちしています！",
+                "ko": "그럼 당신의 활약을 기대할게요!",
+                "th": "ถ้างั้น ฉันจะรอดูผลงานคุณนะ {PlayerName}!",
+                "zh-Hans": "那么，期待你的发挥了！",
+                "zh-Hant": "那麼，期待你的發揮了！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750010,
+                "name": {
+                  "zh-Hans": "约兰"
+                },
+                "entity": {
+                  "entityId": 320800003,
+                  "mapId": 8,
+                  "blueprintType": "NPC4134005",
+                  "name": "TsEntity_约兰_4134005",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 686199,
+                    "y": 580736,
+                    "z": 75
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 160
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

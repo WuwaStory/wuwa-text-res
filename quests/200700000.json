@@ -1,0 +1,64 @@
+{
+  "id": 200700000,
+  "key": "大世界割草隐藏任务",
+  "type": "branch",
+  "typeId": 11,
+  "name": {},
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 200700003,
+          "mapId": 8,
+          "blueprintType": "Gameplay422",
+          "name": "TsEntity_副本入口_空实体-雨中冒险",
+          "areaId": 11,
+          "position": {
+            "x": 322430,
+            "y": 119660,
+            "z": 2280
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

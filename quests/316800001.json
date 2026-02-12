@@ -1,0 +1,220 @@
+{
+  "id": 316800001,
+  "key": "浴血模式功能验收用例-大世界",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "zh-Hans": "测试文本"
+  },
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 316800006,
+          "mapId": 100,
+          "blueprintType": "branch2.0_Gameplay_WordlRevive",
+          "name": "TsEntity_特殊_大世界复活点_无模型",
+          "areaId": 0,
+          "position": {
+            "x": -193990,
+            "y": 102670,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 316800002,
+          "mapId": 100,
+          "blueprintType": "Monster060",
+          "name": "TsEntity_BOSS_伤痕_复刷专用",
+          "areaId": 0,
+          "position": {
+            "x": -194200,
+            "y": 101970,
+            "z": 10
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 316800003,
+          "mapId": 100,
+          "blueprintType": "Monster060",
+          "name": "TsEntity_BOSS_伤痕_复刷专用2",
+          "areaId": 0,
+          "position": {
+            "x": -193910,
+            "y": 101970,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 4,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 5,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 316800002,
+          "mapId": 100,
+          "blueprintType": "Monster060",
+          "name": "TsEntity_BOSS_伤痕_复刷专用",
+          "areaId": 0,
+          "position": {
+            "x": -194200,
+            "y": 101970,
+            "z": 10
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "entities": [
+        {
+          "entityId": 316800003,
+          "mapId": 100,
+          "blueprintType": "Monster060",
+          "name": "TsEntity_BOSS_伤痕_复刷专用2",
+          "areaId": 0,
+          "position": {
+            "x": -193910,
+            "y": 101970,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "tip": {
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 14,
+      "parentId": 13,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}

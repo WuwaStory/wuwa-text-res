@@ -1,0 +1,131 @@
+{
+  "id": 106800007,
+  "key": "无光之森",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Düsterer Wald",
+    "en": "Tales of the Past and Present: Dim Forest",
+    "es": "Crónicas de antaño y hoy: Bosque Oscuro",
+    "fr": "Histoires du passé : Forêt aveuglante",
+    "ja": "古今幾多の物語・光なき森",
+    "ko": "고대의 이야기·암흑 밀림",
+    "th": "เรื่องเล่าอดีตและปัจจุบัน: ป่าสลัว",
+    "zh-Hans": "古今多少故事·无光之森",
+    "zh-Hant": "古今多少故事·無光之森"
+  },
+  "desc": {
+    "de": "Der Geschichtenerzähler des Jinzhou-Theaters sammelt diese Datenchips. Geh und bring sie ihm.",
+    "en": "The Storyteller of Jinzhou Theater is collecting these Data Chips. Go and deliver them to him.",
+    "es": "El Narrador del Teatro de Jinzhou está recogiendo estos Chips de Datos. Ve y entrégaselos.",
+    "fr": "Le conteur de Jinzhou cherche des puces de données abandonnées. Donnez-lui ceux que vous avez collectés dans la Plaine de Nor-Chute.",
+    "ja": "今州城の講談師は古いデータセットに興味があるようなので、光なき森で集めたデータセットを彼に渡してみましょう。",
+    "ko": "금주성의 이야기꾼이 낡은 데이터 세트에 관심이 많은 것 같으니 암흑 밀림에서 수집한 데이터집을 그에게 보여 주세요",
+    "th": "นักเล่าเรื่องแห่งโรงละครจินโจวกำลังรวบรวมชิปข้อมูลเหล่านี้อยู่ นำไปส่งให้เขาเลยสิ",
+    "zh-Hans": "今州城的说书人似乎对旧数据集很感兴趣，把这些于无光之森收集到的数据集交给他看看吧。",
+    "zh-Hant": "今州城的說書人似乎對舊數據集很感興趣，把這些於無光之森收集到的數據集交給他看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überbringe dem Geschichtenerzähler den „Verlassenen Datenchip aus dem Düsteren Wald“",
+        "en": "Deliver \"Abandoned Data Chip from Dim Forest\" to the Storyteller",
+        "es": "Entrega el \"Chip de Datos Abandonado del Bosque Oscuro\" al Narrador",
+        "fr": "Donner la Puce de données de la Forêt aveuglante au conteur",
+        "ja": "「光なき森の古いデータセット」を講談師に渡す",
+        "ko": "「암흑 밀림의 낡은 데이터집」을 이야기꾼에게  제출",
+        "th": "ส่ง \"ชิปข้อมูลที่ถูกทิ้งจากป่าสลัว\" ให้นักเล่าเรื่อง",
+        "zh-Hans": "将「无光之森旧数据集」交给说书人",
+        "zh-Hant": "將「無光之森舊數據集」交給說書人"
+      },
+      "entities": [
+        {
+          "entityId": 311000282,
+          "mapId": 8,
+          "blueprintType": "NPC0283",
+          "name": "TsEntity_0283_157_说书人",
+          "areaId": 301,
+          "position": {
+            "x": -35585,
+            "y": 107105,
+            "z": 813
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 88
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集",
+          "flowIndex": 8,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich glaube, das ist das Tagebuch des Expeditionsteams des Düsteren Waldes. Mit verschiedenen Autoren haben die Forscher ihre wertvollen Ergebnisse zusammen mit den Generationenwechseln darin aufgezeichnet.",
+                "en": "I believe this is the diary of the Dim Forest Expedition Team. With various writers, researchers recorded their precious fruits alongside changes of generation in it.",
+                "es": "Creo que este es el diario del Equipo de Expedición del Bosque Oscuro. Con varios escritores, los investigadores registraron sus preciados frutos junto con los cambios de generación en él.",
+                "fr": "Il semble que ce soit le journal de l'équipe d'exploration de la Forêt aveuglante. Ces journaux ne sont pas écrits par une seule personne, mais sont le résultat de la recherche de générations de chercheurs.",
+                "ja": "これは、光なき森調査隊の日誌のようだ。しかも一人が書いたものではなく、数世代の研究者たちの研究成果だ。",
+                "ko": "이건 암흑 밀림 탐사소대의 일지에요. 한 사람이 쓴 게 아니라 대대로 이어져온 연구원들의 연구 결과예요",
+                "th": "ฉันเชื่อว่านี่เป็นบันทึกประจำวันของทีมสำรวจป่าสลัว นักวิจัยหลายคนได้บันทึกผลสำรวจอันมีค่าจากรุ่นสู่รุ่นไว้ในบันทึกนี้",
+                "zh-Hans": "看起来，这是无光之森勘查小队的日志，这些日志并不由一个人写成，而是代代研究员的研究成果。",
+                "zh-Hant": "看起來，這是無光之森勘查小隊的日誌，這些日誌並不由一個人寫成，而是代代研究員的研究成果。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Studien sind kein sofortiger Erfolg. Lass mich das nächste Mal genauer erklären.",
+                "en": "Studies aren't instant success to achieve. Let me explain this in detail next time.",
+                "es": "Los estudios no son un éxito instantáneo para lograr. Permíteme explicar esto en detalle la próxima vez.",
+                "fr": "La recherche scientifique n'est pas une chose qui peut être accomplie du jour au lendemain. La prochaine fois que je raconterai une histoire, je parlerai de cela.",
+                "ja": "科学研究は一朝一夕で結果が出るものではない。次の講談の時、この話をしよう。",
+                "ko": "과학 연구는 하루아침에 결과가 나오는 게 아니니, 다음에 이야기 할 때 그것에 대해 이야기해 줄게요",
+                "th": "การสำรวจนี้ไม่ได้สำเร็จลุล่วงในทันที ไว้คราวหน้าฉันจะอธิบายรายละเอียดเรื่องนี้ให้ฟัง",
+                "zh-Hans": "科学研究并不是一朝一夕就能得出结果的事情，下次说书的时候，就把这事讲讲吧。",
+                "zh-Hant": "科學研究並不是一朝一夕就能得出結果的事情，下次說書的時候，就把這事講講吧。"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 967,
+                "name": {
+                  "zh-Hans": "说书人"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": 880700004,
+  "key": "尾声",
+  "type": "main",
+  "typeId": 2,
+  "name": {
+    "de": "Auf der Mondjagd",
+    "en": "Chasing the Moon, Here and Now",
+    "es": "Cazando la luna",
+    "fr": "Chasser la lune, ici et maintenant",
+    "ja": "月追進行中",
+    "ko": "달맞이 축제 진행 시",
+    "th": "ไล่ตามดวงจันทร์ในกาลปัจจุบัน",
+    "zh-Hans": "追月进行时",
+    "zh-Hant": "追月進行時"
+  },
+  "desc": {
+    "de": "Mondlichtmarkt ist erfolgreich eröffnet.",
+    "en": "The Moonlit Fair has started as expected. Please maintain its popularity.",
+    "es": "La Feria de la Luna ha comenzado según lo planeado. Mantén su popularidad alta.",
+    "fr": "Le Marché de la lune a commencé comme prévu. Veuillez maintenir sa popularité.",
+    "ja": "宵月会無事開催、人気値を維持してください",
+    "ko": "달맞이 야시장이 순조롭게 개막되었으니, 그 열기를 계속 유지시키세요",
+    "th": "เทศกาลแสงจันทร์เริ่มต้นแล้วตามที่คาดการณ์ไว้ โปรดรักษาความนิยมของงานนี้ไว้ให้ได้",
+    "zh-Hans": "宵月会顺利开幕，请让它的热度继续保持下去。",
+    "zh-Hant": "宵月會順利開幕，請讓它的熱度繼續保持下去。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 2,
+      "type": "Condition",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum „Wunschstand“ und sorge für noch mehr Festivalstimmung (Erhöhe die Beliebtheit auf über 20.000)",
+        "en": "Head to the \"Wishing Stall\" and create even more festival vibe (Raise the Popularity to above 20,000)",
+        "es": "Dirígete al Puesto de deseos para aumentar la popularidad del festival (aumenta la popularidad a 20,000 o más)",
+        "fr": "Aller au kiosque de vœux et faire monter encore la fièvre du festival (Augmenter la Popularité à plus de 20 000)",
+        "ja": "「祈願所」で祭りを盛り上げる（人気値を20000以上にアップ）",
+        "ko": "「기원 가게」로 이동하여 축제 열기 상승(인기 척도 20,000 이상까지 상승)",
+        "th": "ไปที่ \"ซุ้มปรารถนา\" แล้วสร้างบรรยากาศงานเทศกาลให้คึกคักยิ่งขึ้น (เพิ่มความนิยมให้เกิน 20,000 หน่วย)",
+        "zh-Hans": "前往「祈愿摊」，提升节日热度（将人气值提升至20000或更高）",
+        "zh-Hant": "前往「祈願攤」，提升節日熱度（將人氣值提升至20000或更高）"
+      },
+      "entities": [
+        {
+          "entityId": 880700228,
+          "mapId": 8,
+          "blueprintType": "Gameplay540",
+          "name": "TsEntity_通用不可见交互物8",
+          "areaId": 406,
+          "position": {
+            "x": -92060,
+            "y": 53640,
+            "z": 7290
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.2追月节主线明线（第二周）",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Der Mondlichtmarkt ist noch nicht vorbei. Es könnte etwas geben, bei dem ich helfen kann. Ich sollte den Wunschstand auschecken.",
+                "en": "The Moonlit Fair isn't over yet. There might be something I can help with. I should check out the Wishing Stall.",
+                "es": "La Feria de la Luna aún no ha terminado. Puede que haya algo en lo que pueda ayudar. Debería echar un vistazo al Puesto de deseos.",
+                "fr": "Le Marché de la lune n'est pas encore terminé. Il y a peut-être quelque chose avec lequel je peux aider. Je devrais jeter un œil au Kiosque de vœux.",
+                "ja": "<ano=よいづきかい>宵月会</ano>はまだ終わっていない。何か手伝うことはないか<ano=きがんじょ>祈願所</ano>のところへ行ってみよう。",
+                "ko": "달맞이 야시장이 아직 끝나지 않았으니 내가 도울 수 있는 일이 있는지 기원 가게로 가보자",
+                "th": "เทศกาลจันทร์พรายแสงยังไม่จบ อาจมีอะไรที่ฉันช่วยได้ ฉันควรแวะไปที่ซุ้มอธิษฐาน",
+                "zh-Hans": "宵月会还没有结束，不知道还有什么我能帮上忙的，再去祈愿摊那边看看吧。",
+                "zh-Hant": "宵月會還沒有結束，不知道還有什麼我能幫上忙的，再去祈願攤那邊看看吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "parentId": 6,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Mache eine Tour durch die Kommune Taoyuan",
+        "en": "Tour around Taoyuan Vale",
+        "es": "Explora la Aldea Taoyuan",
+        "fr": "Se promener dans la Ville Fleur-de-Pêche",
+        "ja": "桃源郷を見て回る",
+        "ko": "도원향 둘러보기",
+        "th": "เที่ยวชมรอบๆ หมู่บ้านเถาหยวน",
+        "zh-Hans": "在桃源乡逛一逛",
+        "zh-Hant": "在桃源鄉逛一逛"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.2追月节主线明线（第二周）",
+          "flowIndex": 5,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Mit dem Ende des Mondlichtmarktes entscheidest du dich für einen Spaziergang in der Kommune Taoyuan...",
+                "en": "With the Moonlit Fair drawing to a close, you decide to take a stroll in Taoyuan Vale...",
+                "es": "Con la Feria de la Luna llegando a su fin, decides dar un paseo por la Aldea Taoyuan...",
+                "fr": "Alors que le Marché de la lune touche à sa fin, tu décides de faire une promenade dans la Ville Fleur-de-Pêche...",
+                "ja": "<ano=よいづきかい>宵月会</ano>も終盤に差し掛かっている。あなたは終わる前にもう一度<ano=とうげんきょう>桃源郷</ano>に行ってみることにした……",
+                "ko": "달맞이 야시장이 이제 막바지에 이르렀으니 끝나기 전에 다시 도원향을 둘러보려고 한다...",
+                "th": "เมื่อเทศกาลจันทร์พรายแสงใกล้จะสิ้นสุดลง คุณก็ตัดสินใจไปเดินเล่นในหมู่บ้านเถาหยวน...",
+                "zh-Hans": "宵月会已经到了尾声，结束前你决定再去桃源乡逛一逛……",
+                "zh-Hant": "宵月會已經到了尾聲，結束前你決定再去桃源鄉逛一逛……"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

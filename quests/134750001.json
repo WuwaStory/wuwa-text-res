@@ -1,0 +1,275 @@
+{
+  "id": 134750001,
+  "key": "离开神秘房间",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Der verborgene Schatz der Schwarzen Küsten",
+    "en": "The Hidden Treasure of the Black Shores",
+    "es": "El tesoro escondido de Costa Negra",
+    "fr": "La salle des trésors cachés du Littoral noir",
+    "ja": "黒海岸の秘宝",
+    "ko": "검은 해안의 비밀 보물",
+    "th": "สมบัติที่ซ่อนอยู่ของแบล็กชอร์",
+    "zh-Hans": "黑海岸的秘密宝物",
+    "zh-Hant": "黑海岸的秘密寶物"
+  },
+  "desc": {
+    "de": "Nachdem du den Hinweisen gefolgt bist, entdeckst du den Raum, der angeblich verborgene Schätze birgt. Doch es scheint ein ganz gewöhnlicher Raum zu sein …",
+    "en": "After following the clues, you discover the room said to conceal hidden treasures. Yet, it appears to be just an ordinary room…",
+    "es": "Después de seguir las pistas, descubrirás la sala que se dice que esconde tesoros ocultos. Sin embargo, parece ser simplemente una sala normal…",
+    "fr": "En suivant les indices, vous découvrez la salle où les trésors cachés sont censés se trouver... et elle a l'air d'être tout à fait ordinaire.",
+    "ja": "手がかりを追って、やっと秘宝の隠されている部屋にたどり着いた。しかし、それはありふれたただの黒海岸の部屋だ……",
+    "ko": "단서를 따라, 마침내 당신은 전설 속 보물이 숨겨둔 방을 찾게 된다. 하지만 이건 그냥 검은 해안 수많은 평범한 방 중의 하나였다...",
+    "th": "หลังจากตามเบาะแสต่างๆ ไป คุณจะพบห้องที่ว่ากันว่ามีสมบัติซ่อนอยู่ แต่ห้องนั้นกลับดูเหมือนห้องธรรมดาทั่วไป...",
+    "zh-Hans": "追寻着线索，你终于找到了传说中藏有秘宝的房间。可这看起来只是一间在黑海岸再普通不过的房间……",
+    "zh-Hant": "追尋著線索，你終於找到了傳說中藏有秘寶的房間。 可這看起來只是一間在黑海岸再普通不過的房間……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erkunde den geheimnisvollen Raum",
+        "en": "Investigate the mysterious room",
+        "es": "Investiga la sala misteriosa.",
+        "fr": "Enquêter sur la salle mystérieuse",
+        "ja": "謎の部屋を調べる",
+        "ko": "신비한 방 조사하기",
+        "th": "ตรวจสอบห้องลึกลับ",
+        "zh-Hans": "调查神秘房间",
+        "zh-Hant": "調查神秘房間"
+      },
+      "entities": [
+        {
+          "entityId": 134001254,
+          "mapId": 8,
+          "blueprintType": "Treasure010",
+          "name": "TsEntity_丰厚物资箱_初始可开",
+          "areaId": 1102,
+          "position": {
+            "x": 313198,
+            "y": 137258,
+            "z": -3121
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134001256,
+          "mapId": 8,
+          "blueprintType": "Gameplay540",
+          "name": "TsEntity_通用不可见交互物6_暂时替代笔记",
+          "areaId": 1102,
+          "position": {
+            "x": 313882,
+            "y": 137386,
+            "z": -3024
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_支线_X门怪谈",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Auf dem Schreibtisch leuchtet der Bildschirm des Terminals noch immer.",
+                "en": "On the desk, the terminal's screen is still lit.",
+                "es": "En el escritorio, la pantalla de la terminal sigue encendida.",
+                "fr": "Sur le bureau, l'écran du terminal est toujours allumé.",
+                "ja": "デバイスのスクリーンはついたままだ。",
+                "ko": "책상의 단말기 스크린 아직 켜져있다",
+                "th": "บนโต๊ะนั้น หน้าจอเทอร์มินัลยังคงส่องสว่าง",
+                "zh-Hans": "桌上终端的屏幕依然亮着。",
+                "zh-Hant": "桌上終端的螢幕依然亮著。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du siehst dir die angezeigten Informationen an—es scheint eine Sprach-zu-Text-Memo zu sein.",
+                "en": "You look at the information displayed—seems to be a voice-to-text memo.",
+                "es": "Miras la información mostrada—parece ser una nota de voz convertida a texto.",
+                "fr": "Vous regardez les informations affichées. Il paraît que c'est la transcription d'un mémo vocal.",
+                "ja": "スクリーンを見てみると、これは録音の文字起こしだと気づいた。",
+                "ko": "스크린의 정보를 보았다. 오디오 파일이 텍스트로 전환된 식별 기록이다",
+                "th": "คุณมองดูข้อมูลที่แสดงอยู่ น่าจะเป็นบันทึกการถอดเสียง",
+                "zh-Hans": "你查看了屏幕上的信息，这是一份语音转文字的识别记录。",
+                "zh-Hant": "你查看了螢幕上的訊息，這是一份語音轉文字的識別記錄。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist eine Aufzeichnung eines Gesprächs, das hier einst stattgefunden hat. Leider ist die ursprüngliche Audiodatei beschädigt.",
+                "en": "It appears to be a record of conversation that once took place here. Unfortunately, the original audio file is corrupted.",
+                "es": "Parece ser un registro de una conversación que tuvo lugar aquí. Desafortunadamente, el archivo de audio original está dañado.",
+                "fr": "On se demande si c'est un enregistrement d'une conversation qui a eu lieu ici. Malheureusement, le fichier audio original a été corrompu.",
+                "ja": "昔ここで交わされた会話のようだ。元となる録音のファイルはもう再生できない。",
+                "ko": "과거에 여기서 일어난 대화인 것 같다. 하지만 오디오 원본이 이미 파손되었다",
+                "th": "ดูเหมือนว่าจะเป็นไฟล์บันทึกการสนทนาที่เคยมีการพูดคุยที่นี่ แต่โชคร้ายที่ไฟล์เสียงต้นฉบับนั้นเสียหาย",
+                "zh-Hans": "似乎是过去发生在这里的一段对话，原音频文件已经损坏。",
+                "zh-Hant": "似乎是過去發生在這裡的一段對話，原音訊檔案已經損壞。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_1_3_支线_X门怪谈",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "...",
+                "en": "...",
+                "es": "...",
+                "fr": "...",
+                "ja": "……",
+                "ko": "......",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 10,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verlasse den „Küstenraum“",
+        "en": "Leave the \"Coastal Room\"",
+        "es": "Sal de la «Sala Costera».",
+        "fr": "Quitter la salle côtière",
+        "ja": "「海岸の密室」を出る",
+        "ko": "「해안 밀실」에서 나가기",
+        "th": "ออกจาก \"ห้องชายฝั่ง\"",
+        "zh-Hans": "离开“海岸密室”",
+        "zh-Hant": "離開「海岸密室」"
+      },
+      "entities": [
+        {
+          "entityId": 134001252,
+          "mapId": 8,
+          "blueprintType": "Gameplay540",
+          "name": "TsEntity_通用不可见交互物_房间入口",
+          "areaId": 1102,
+          "position": {
+            "x": 313974,
+            "y": 136840,
+            "z": -3017
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 134750259,
+          "mapId": 8,
+          "blueprintType": "Gameplay540",
+          "name": "TsEntity_通用不可见交互物_残响集域便捷门",
+          "areaId": 11,
+          "position": {
+            "x": 325004,
+            "y": 118381,
+            "z": 467
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

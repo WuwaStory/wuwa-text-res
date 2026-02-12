@@ -1,0 +1,252 @@
+{
+  "id": 135000001,
+  "key": "等待戈铎",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Warte auf Godo",
+    "en": "Wait for Godo",
+    "es": "Espera a Godo",
+    "fr": "Attendre Godo",
+    "ja": "戈鐸を待ちながら",
+    "ko": "고탁 기다리기",
+    "th": "รอโกโด",
+    "zh-Hans": "等待戈铎",
+    "zh-Hant": "等待戈鐸"
+  },
+  "desc": {
+    "de": "Ersetze den Wachdienst der Mitternachtsranger Godo",
+    "en": "Take Midnight Rangers Godo's place on guard duty",
+    "es": "Reemplaza a Godo de los Rangers de Medianoche en el deber de guardia",
+    "fr": "Assurer la garde à la place de Godo, le gardien de minuit",
+    "ja": "戈鐸の代わりに見張りをする",
+    "ko": "야귀 병사 고탁을 대신하여 당직 서기",
+    "th": "เฝ้ายามแทนมิดไนท์เรนเจอร์โกโด",
+    "zh-Hans": "临时顶替夜归士兵戈铎站岗",
+    "zh-Hant": "臨時頂替夜歸士兵戈鐸站崗"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Steige auf den Wachturm und halte Wache",
+        "en": "Climb the watchtower and stand guard",
+        "es": "Asciende a la torre de vigilancia y mantén la guardia",
+        "fr": "Monter au sommet de la tour de guet pour surveiller les environ",
+        "ja": "見張り塔に登る",
+        "ko": "감시탑에 올라 당직 서기",
+        "th": "ปีนหอคอยเฝ้าระวังและเข้าประจำการ",
+        "zh-Hans": "登上哨塔站岗",
+        "zh-Hant": "登上哨塔站崗"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die eindringenden TDs",
+        "en": "Defeat incoming TDs",
+        "es": "Derrota a las DT invasoras.",
+        "fr": "Vaincre les Tacets Discords",
+        "ja": "残像を倒す",
+        "ko": "침입한 잔상 처치",
+        "th": "กำจัดทาเซ็ตดิสคอร์ดที่บุกเข้ามา",
+        "zh-Hans": "消灭入侵的残象",
+        "zh-Hant": "消滅入侵的殘象"
+      },
+      "entities": [
+        {
+          "entityId": 135000911,
+          "mapId": 8,
+          "blueprintType": "Treasure006",
+          "name": "TsEntity_标准物资箱_玩法刷新",
+          "areaId": 1301,
+          "position": {
+            "x": 42473,
+            "y": 75908,
+            "z": 14
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -141
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_中曲台地_NPC对话",
+          "flowIndex": 19,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Während die Sonne brennt und die Meeresbrise dich einlullt, können deine Augen nicht anders, als zu dem massiven Schatten, der über dem Strand schwebt, hingezogen zu werden. Er ruft dich, verlangt deine Aufmerksamkeit und Unterwerfung - Diese von Menschenhand geschaffenen, unheimlichen Schatten werden für dich tanzen. Du musst nur das Zepter in deiner Hand schwingen.",
+                "en": "As the sun beats down and the ocean breeze lulls you, your eyes can't help but be drawn to the massive shadow looming over the beach. It beckons to you, calling for your attention and submission—Those man-made, sinister shadows will dance for you. You need only wave the scepter in your hand.",
+                "es": "Mientras el sol golpea y la brisa del océano te arrulla, tus ojos no pueden evitar ser atraídos por la enorme sombra que se cierne sobre la playa. Te llama, pidiendo tu atención y sumisión, esas sombras siniestras y hechas por el hombre bailarán para ti. Solo necesitas agitar el cetro en tu mano.",
+                "fr": "Le soleil, le bord de mer, la brise... Tout semble si irréel, presque endormant, mais votre regard est fixé sur l'ombre imposante sur la plage. Vous le savez, elle vous désire, elle désire vous engloutir. Ces ombres artificielles et malveillantes danseront pour vous, tout ce que vous avez à faire, c'est de brandir votre sceptre.",
+                "ja": "日差しも、海辺も、そよ風も…すべてはまどろみを誘い、あなたの目は砂浜に広がる巨大な影を見る。あなたは知っている。それはあなたを求め、あなた自身をその中に置くことを望む――人工的で悪意のある影があなたのために踊りだす。あなたがすべきことは、その手に持つ杖を振るだけ。",
+                "ko": "햇살, 해변, 산들바람... 모든 게 너무나 몽환적이라서 그런지 몸이 나른해요. 하지만 그대의 시선은 백사장의 거대한 그림자에 고정되어 있겠죠. 그것이 당신을 갈망하고, 당신이 그 환상의 세계에 있기를 갈망한다는 건 그쪽도 알잖아요. 인공적이고 사악한 그림자들이 그대를 위해 춤을 출테니 당신은 그저 손에 든 권력의 상징인 지팡이를 휘두르세요",
+                "th": "ขณะที่พระอาทิตย์สาดแสง ลมทะเลโชยเอื่อย สายตาของท่านไปกระทบกับเงาทะมึนขนาดมหึมาเหนือชายหาด มันกวักมือเรียก ร้องหาความสนใจและความสยบยอมจากท่าน เงาชั่วร้ายที่มีผู้สร้างขึ้นนี้จะเริงระบำให้ท่าน เพียงแค่ท่านแกว่งคทาในมือ",
+                "zh-Hans": "阳光，海滨，和风……一切虚幻得令人昏昏欲睡，但你的目光死死盯着沙滩上巨大的阴影。你知道的，它渴望着你，渴望你置身其中——那些人造的、不怀好意的影子将因你起舞，你所需要做的，只是挥舞着手中的权杖。",
+                "zh-Hant": "陽光，海濱，和風……一切虛幻得令人昏昏欲睡，但你的目光死死盯著沙灘上巨大的陰影。你知道的，它渴望著你，渴望你置身其中——那些人造的、不懷好意的影子將因你起舞，你所需要做的，只是揮舞著手中的權杖。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 41,
+                "name": {
+                  "zh-Hans": "谜之声"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Zepter?",
+                    "en": "Scepter?",
+                    "es": "¿Cetro?",
+                    "fr": "Sceptre ?",
+                    "ja": "杖？",
+                    "ko": "지팡이?",
+                    "th": "คทาเหรอ",
+                    "zh-Hans": "权杖？",
+                    "zh-Hant": "權杖？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "„Ja, du erinnerst dich, wie diese Schatten aussahen. Die Erinnerungen sind kristallklar. Sie fließen in deinem Kopf ein und aus wie Wellen, und doch lassen sie dich ohne etwas zum Festhalten zurück.“",
+                "en": "\"Yes, you remember what those shadows looked like. The memories are crystal clear. They flow in and out of your mind like waves, yet they leave you with nothing to keep.\"",
+                "es": "\"Sí, recuerdas cómo se veían esas sombras. Los recuerdos son cristalinos. Fluyen dentro y fuera de tu mente como olas, pero no te dejan nada para conservar.\"",
+                "fr": "« Oui, vous connaissez leur véritable forme, elle est dans votre mémoire. Elles vont et viennent librement comme la marée, mais elles ne vous laissent rien. »",
+                "ja": "ああ、あなたはそれらの正体を知っている。記憶の中にあるその正体を。それらは潮汐のように自由にやって来ては、何も残さず去っていく。",
+                "ko": "맞아요. 당신은 그것들의 원래 모습을 알고 있잖아요. 바로 당신의 기억 속에 있어요. 그들은 파도처럼 자유롭게 왔다 갔다 하지만 아무것도 남기지 않아요",
+                "th": "\"ใช่ เจ้าจำได้ว่าเงาเหล่านั้นหน้าตาเป็นอย่างไร ความทรงจำยังคงชัดเจน พวกมันไหลเข้าและออกจากความคิดของเจ้าราวกับคลื่น แต่ไม่ทิ้งอะไรไว้ให้เจ้าเลย\"",
+                "zh-Hans": "\"是的，你认识它们原本的模样，就在你的记忆中。它们像潮汐般自由来去，却什么都没给你留下。\"",
+                "zh-Hant": "「是的，你認識它們原本的模樣，就在你的記憶中。它們像潮汐般自由來去，卻什麼都沒給你留下。」"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 41,
+                "name": {
+                  "zh-Hans": "谜之声"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wellen?",
+                    "en": "Waves?",
+                    "es": "¿Olas?",
+                    "fr": "Marée ?",
+                    "ja": "潮汐？",
+                    "ko": "파도?",
+                    "th": "คลื่นเหรอ",
+                    "zh-Hans": "潮汐？",
+                    "zh-Hant": "潮汐？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "\"Ja... wie Wellen. Zeit und Tränen wirbeln in einem ewigen Tanz. Ich gebe zu, du weißt alles über die Vergangenheit und die Zukunft. Und doch bist du hier, in dieser Ära gestrandet, stolpernd wie ein Neugeborenes. Willkommen in dieser Ära, Rover, während du wieder erwachst... das ist mein herzlicher Gruß für dich.\"",
+                "en": "\"Yes… like waves. Time and tears swirl together in an eternal dance. I admit, you know everything about the past and future. Yet here you are, shipwrecked in this era, stumbling like a newborn. Welcome to this era, Rover, as you awaken again… that's my warm greeting for you.\"",
+                "es": "\"Sí... como olas. El tiempo y las lágrimas se mezclan en un baile eterno. Lo admito, sabes todo sobre el pasado y el futuro. Sin embargo, aquí estás, naufragado en esta era, tropezando como un recién nacido. Te damos la bienvenida a esta era, Errante, a medida que despiertas de nuevo... ese es mi cálido saludo para ti.\"",
+                "fr": "« Oui, la marée mélangée de temps et de larmes. Je l'admets, vous savez tout sur le passé et le futur. Mais vous êtes échoué, échoué dans cette époque, comme un bébé qui vient de naître. \"Bienvenue à votre éveil dans cette époque, Nomade\" c'est le message de bienvenue que je vous offre. »",
+                "ja": "ああ、時間と涙が混ざり合った潮汐。 過去と未来、あなたは全てを知っている。 しかし、あなたはこの時代に<ano=ストランディング>漂着</ano>した。赤ん坊のようにふらふらしながら。 「この時代の目覚めを歓迎しよう」。これは私からの歓迎の言葉だ。",
+                "ko": "그래요. 시간과 눈물이 뒤섞인 파도죠. 저는 당신이 과거와 미래에 대해 모르는 것이 없다는 것을 인정해요. 하지만 지금은 이 시대에 좌초되어, 신생아처럼 비틀거리고 있어요. 「이 시대에 깨어난 것을 환영해요, 방랑자」 이건 당신을 위해 드리는 환영 축사예요",
+                "th": "\"ใช่แล้ว... ราวกับคลื่น เวลาและน้ำตาหมุนวนไปในการเต้นรำชั่วนิรันดร์ ข้ายอมรับว่าเจ้ารู้ทุกอย่างเกี่ยวกับอดีตและอนาคต แต่เจ้ากลับมาติดอยู่ในยุคนี้ ล้มลุกคลุกคลานราวกับเด็กแรกเกิด ยินดีต้อนรับสู่ยุคสมัยนี้ผู้พเนจร นั่นคือคำทักทายอันอบอุ่นจากข้าถึงเจ้า ในฐานะที่เจ้าตื่นขึ้นมาอีกครั้ง...\"",
+                "zh-Hans": "\"是的，时间和眼泪混合的潮汐。我承认，对于过去和未来，你无所不知。但你却搁浅了，搁浅在这个时代，如同呱呱坠地的婴儿那般蹒跚。「欢迎在这个时代醒来，漂泊者」这也是我为您奉上的欢迎祝词。\"",
+                "zh-Hant": "「是的，時間和眼淚混合的潮汐。我承認，對於過去和未來，你無所不知。但你卻擱淺了，擱淺在這個時代，如同呱呱墜地的嬰兒那般蹣跚。『歡迎在這個時代醒來，漂泊者』這也是我為您奉上的歡迎祝詞。」"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 41,
+                "name": {
+                  "zh-Hans": "谜之声"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Beachte meinen Rat: Berühre die Wahrheit noch nicht. Das ist zu deinem Besten.",
+                "en": "Heed my advice: Don't touch the truth yet. This is for your own good.",
+                "es": "Atiende mi consejo: No toques la verdad todavía. Esto es para tu propio bien.",
+                "fr": "Ne touchez pas à la vérité trop tôt, c'est pour vous.",
+                "ja": "だが、まだ真相に触れる時ではない。あなたのために。",
+                "ko": "제가 살짝 충고해 드리죠. 진실을 너무 일찍 건드리지 마세요",
+                "th": "ข้าขอแนะนำว่า อย่าเพิ่งแตะต้องความจริง เพื่อประโยชน์ของตัวท่านเอง",
+                "zh-Hans": "不要过早地触及真相，这是为了你好。",
+                "zh-Hant": "不要過早地觸及真相，這是為了你好。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 41,
+                "name": {
+                  "zh-Hans": "谜之声"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "...Ich sollte aufwachen.",
+                    "en": "...I should wake up.",
+                    "es": "...Debería despertar.",
+                    "fr": "... Je devrais me réveiller.",
+                    "ja": "……目を覚ます時だ。",
+                    "ko": "...이제 깨어날 시간이에요",
+                    "th": "...ข้าควรจะตื่นขึ้น",
+                    "zh-Hans": "……我该醒了。",
+                    "zh-Hant": "……我該醒了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich habe noch Arbeit zu erledigen.",
+                    "en": "I still have work to do.",
+                    "es": "Todavía tengo trabajo que hacer.",
+                    "fr": "Il y a du travail à faire.",
+                    "ja": "まだやるべきことがある。",
+                    "ko": "아직 할 일이 남아 있어요",
+                    "th": "ข้ายังมีงานต้องทำ",
+                    "zh-Hans": "还有正事要干。",
+                    "zh-Hant": "還有正事要幹。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

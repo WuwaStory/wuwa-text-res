@@ -1,0 +1,969 @@
+{
+  "id": 152750000,
+  "key": "活动引导限时收集",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Wetterüberwachung",
+    "en": "Solaris Weather Forecast",
+    "es": "Pronóstico de Solaris",
+    "fr": "Station météo Solaris",
+    "ja": "ソラリス気象学最前線",
+    "ko": "솔라리스 기상 선구",
+    "th": "พยากรณ์อากาศโซลาริส",
+    "zh-Hans": "索拉里斯气象前沿",
+    "zh-Hant": "索拉里斯氣象前沿"
+  },
+  "desc": {
+    "de": "Arno, Mitglied der Schwarzen Küsten, benötigt deine Hilfe.",
+    "en": "Arno, the Black Shores member, needs your help.",
+    "es": "Arno, el miembro de la Costa Negra, necesita tu ayuda.",
+    "fr": "Arno, membre du Littoral noir, a besoin de votre aide.",
+    "ja": "ブラックショアの外勤収容員・アルノーがあなたの協力を求めている",
+    "ko": "검은 해안의 외근인원 아르노가 당신의 도움이 필요합니다",
+    "th": "อาร์โน สมาชิกแบล็กชอร์ ต้องการให้คุณช่วย",
+    "zh-Hans": "黑海岸的外勤人员阿尔诺需要你的帮助",
+    "zh-Hant": "黑海岸的外勤人員阿爾諾需要你的幫助"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Arno",
+        "en": "Talk to Arno",
+        "es": "Habla con Arno.",
+        "fr": "Parler à Arno",
+        "ja": "アルノーと会話する",
+        "ko": "아르노와 대화하기",
+        "th": "คุยกับอาร์โน",
+        "zh-Hans": "和阿尔诺交谈",
+        "zh-Hant": "和阿爾諾交談"
+      },
+      "entities": [
+        {
+          "entityId": 152750077,
+          "mapId": 8,
+          "blueprintType": "NPC420120",
+          "name": "TsEntity_卡洛_420120",
+          "areaId": 301,
+          "position": {
+            "x": -50922,
+            "y": 95593,
+            "z": 1807
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750384,
+          "mapId": 8,
+          "blueprintType": "Gameplay097",
+          "name": "TsEntity_特殊_条件监听6",
+          "areaId": 301,
+          "position": {
+            "x": -50918,
+            "y": 95746,
+            "z": 1807
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_黑海岸限时收集",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, {PlayerName}! Ich bin Agent Arno von den Schwarzen Küsten. Schön, dich endlich persönlich kennenzulernen.",
+                "en": "Hello, {PlayerName}! I'm Agent Arno from the Black Shores. I'm glad to finally meet you in person.",
+                "es": "¡Hola, {PlayerName}! Soy el agente Arno de Costa Negra. Me alegro de conocerte al fin en persona.",
+                "fr": "Bonjour, {PlayerName} ! Je suis l'agent Arno, du Littoral noir. Ça me fait plaisir de te voir enfin en personne.",
+                "ja": "やあ、これは{PlayerName}じゃないか。やっと会えたね。僕は<ano=ブラックショア>黒海岸</ano>の特別外勤収容員、アルノーだ。",
+                "ko": "반가워요, {PlayerName}. 드디어 만났군요. 저는 검은 해안의 특파 수용원 아르노입니다",
+                "th": "สวัสดี {PlayerName}! ผมคือเจ้าหน้าที่ Arno จากแบล็กชอร์นะ ดีใจจริงๆ ที่ในที่สุดก็ได้เจอคุณตัวเป็นๆ สักที",
+                "zh-Hans": "嗨，{PlayerName}，终于见面了，我是黑海岸外派特勤收容员阿尔诺。",
+                "zh-Hant": "嗨，{PlayerName}，終於見面了，我是黑海岸外派特勤收容員阿爾諾。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du kennst mich?",
+                    "en": "You know me?",
+                    "es": "¿Habías oído hablar de mí?",
+                    "fr": "Tu me connais ?",
+                    "ja": "{Male=俺のこと、知ってたのか？;Female=私のこと、知ってたの？}",
+                    "ko": "저를 아시나요?",
+                    "th": "รู้จักฉันด้วยเหรอ?",
+                    "zh-Hans": "你知道我？",
+                    "zh-Hant": "你知道我？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich, Encore hat von dir erzählt. Ich habe dich sofort erkannt.",
+                "en": "Of course, Encore was talking about you. I recognized you in an instant.",
+                "es": "Por supuesto, Encore no para de contarnos cosas sobre ti. Te reconocí al momento.",
+                "fr": "Évidemment. Encore m'a parlé de toi, et je t'ai {Male=reconnu;Female=reconnue} au premier coup d'œil.",
+                "ja": "もちろん。アンコちゃんから聞いたよ。本人を見たらすぐわかる。",
+                "ko": "물론이죠. 앙코에게서 방랑자에 대한 이야기를 들었어요. 직접 보니 한눈에 알아보겠더라고요",
+                "th": "แน่นอน Encore เคยพูดถึงคุณอยู่ ผมเลยรู้ทันทีว่าเป็นคุณ",
+                "zh-Hans": "当然，我从安可那边听她讲过你的事，见到本尊的时候一眼就认出来了。",
+                "zh-Hant": "當然，我從安可那邊聽她講過你的事，見到本尊的時候一眼就認出來了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du bist die erste Person, die je so viel Lob von diesem Mädchen erhalten hat. Ich habe mich schon darauf gefreut, dich persönlich zu treffen.",
+                "en": "You're the first person ever to get so much praise from that girl. I had been looking forward to meet you in person.",
+                "es": "Nadie había recibido tantos elogios de esa chica. Estaba deseando conocerte en persona.",
+                "fr": "C'est la première fois que j'entends cette fille dire autant de bien de quelqu'un. J'avais hâte de faire ta connaissance.",
+                "ja": "アンコちゃんがあんなに高く買う人がいるとはね。ずっと会いたかったよ。",
+                "ko": "앙코가 이렇게 높은 평가를 준 사람은 방랑자가 처음이에요. 당신과의 만남을 엄청 기대하고 있었어요",
+                "th": "คุณเป็นคนแรกเลยนะที่เด็กคนนั้นเอ่ยปากชื่นชมขนาดนั้น ผมตั้งตารอที่จะได้พบคุณมาตลอดเลย",
+                "zh-Hans": "没想到居然有人能让安可给出这么高的评价。我可一直很期待和你见面的。",
+                "zh-Hant": "沒想到居然有人能讓安可給出這麼高的評價。我可一直很期待和你見面的。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens, bist du für einen Nebenjob zu haben?",
+                "en": "By the way, are you available for a side gig?",
+                "es": "Por cierto, ¿estás disponible para un trabajo extra?",
+                "fr": "Mais dis-moi, est-ce que tu serais disponible pour un petit boulot ?",
+                "ja": "そうだ。もし暇ならちょっといい？",
+                "ko": "맞다. 요즘 바쁘신가요?",
+                "th": "จะว่าไป คุณว่างรับงานนอกบ้างหรือเปล่า?",
+                "zh-Hans": "对了，不知道你最近是否有空闲呢？",
+                "zh-Hant": "對了，不知道你最近是否有空閒呢？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin bei meinem Arbeitsauftrag auf ein kleines Problem gestoßen und brauche etwas Hilfe. Hättest du Interesse?",
+                "en": "I ran into a little problem with the work I'm tasked with, and I'm looking for some help. I was wondering if you'd be interested.",
+                "es": "Me topé con un pequeño problema con la tarea que tengo asignada y estoy buscando ayuda. Me preguntaba si te interesaría.",
+                "fr": "J'ai un petit problème avec mon travail, et je cherche quelqu'un qui pourrait m'aider. Ça te tente ?",
+                "ja": "我々の仕事に厄介なことがあってね。適任の協力者を探しているんだ……もし{PlayerName}が助けてくれたら最高だね。",
+                "ko": "업무에 약간의 어려움을 겪고 있어서, 적합한 협조자를 찾고 있어요... 만약 {PlayerName}이(가) 도와주신다면 일이 훨씬 수월해질 거예요",
+                "th": "ผมเจอปัญหานิดหน่อยเกี่ยวกับงานที่ได้รับมอบหมาย กำลังหาคนช่วยอยู่พอดีเลย คุณสนใจหรือเปล่า?",
+                "zh-Hans": "目前我们工作上遇到了一点麻烦，正在寻找合适的协助者……如果{PlayerName}能帮忙的话事情就简单了。",
+                "zh-Hant": "目前我們工作上遇到了一點麻煩，正在尋找合適的協助者……如果{PlayerName}能幫忙的話事情就簡單了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das kommt darauf an.",
+                    "en": "It depends.",
+                    "es": "Depende.",
+                    "fr": "Ça dépend.",
+                    "ja": "状況による。",
+                    "ko": "상황을 봐서요",
+                    "th": "ขอดูก่อนว่างานอะไร",
+                    "zh-Hans": "看情况吧。",
+                    "zh-Hant": "看情況吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich helfe immer gern.",
+                    "en": "I'm happy to help.",
+                    "es": "Me encanta poder ayudar.",
+                    "fr": "Je t'aiderai avec plaisir.",
+                    "ja": "喜んで。",
+                    "ko": "좋아요",
+                    "th": "ได้สิ เดี๋ยวฉันช่วยเอง",
+                    "zh-Hans": "乐意帮忙。",
+                    "zh-Hant": "樂意幫忙。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Äh … Es ist eigentlich ganz einfach. Ich erkläre dir kurz die Situation. Hoffentlich hast du dann Interesse.",
+                "en": "Uh... It's simple, actually. Let me explain the situation to you first. I hope you'll be interested.",
+                "es": "Esto... En realidad es muy sencillo. Déjame explicarte la situación primero. Espero que te interese.",
+                "fr": "Oh... C'est tout simple, en fait. Je vais t'expliquer, et j'espère que ça t'intéressera.",
+                "ja": "うん……実はそれほど複雑なことでもないんだけど、説明しておこう。興味を持ってくれると幸いだ。",
+                "ko": "음... 그렇게 복잡한 일은 아니에요. 우선 상황을 설명해 드릴게요. 관심이 있으셨으면 좋겠네요",
+                "th": "เอ่อ... ที่จริงมันก็เป็นงานง่ายๆ แหละ ให้ผมอธิบายสถานการณ์ให้คุณฟังก่อนก็แล้วกัน หวังว่าคุณจะสนใจนะ",
+                "zh-Hans": "嗯……其实事情并没有那么复杂，我先和你说明一下情况吧，如果你有兴趣的话就再好不过了。",
+                "zh-Hant": "嗯……其實事情並沒有那麼複雜，我先和你說明一下情況吧，如果你有興趣的話就再好不過了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Großartig. Ich erkläre dir kurz die Situation.",
+                "en": "That's great. Let me explain the situation to you first.",
+                "es": "Genial. Déjame explicarte la situación primero. \nEvento_SLLSQXQY_2_11, creo que ya deberías saber lo que hacemos. En pocas palabras",
+                "fr": "Génial. Laisse-moi quand même t'expliquer.",
+                "ja": "それは良かった。じゃあ先に説明しておこう。",
+                "ko": "잘 됐네요. 그럼 우선 상황을 설명해 드릴게요",
+                "th": "เยี่ยมเลย ให้ผมอธิบายสถานการณ์ให้คุณฟังก่อนก็แล้วกัน",
+                "zh-Hans": "那太好了，那我先和你说明一下情况吧。",
+                "zh-Hant": "那太好了，那我先和你說明一下情況吧。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich glaube, du weißt bereits, was wir hier machen. Einfach ausgedrückt: Wir treffen Lamento-Vorhersagen, so wie Meteorologen Wettervorhersagen treffen.",
+                "en": "I think you should know what we do already. Simply put, we do Lament forecasts like meteorologists do weather forecasts.",
+                "es": "Creo que ya deberías saber lo que hacemos. En pocas palabras, hacemos predicciones del Lamento como los meteorólogos pronostican el clima.",
+                "fr": "J'imagine que tu sais déjà en quoi consiste notre travail. Pour faire simple, on fait des prédictions sur le comportement de la Lamentation, un peu comme des météorologues qui essaient de deviner le temps qu'il va faire.",
+                "ja": "{PlayerName}なら、<ano=ブラックショア>黒海岸</ano>の事業はおおむね知ってるだろう。端的に言えば、<ano=ブラックショア>黒海岸</ano>は悲鳴の<ano=きしょうだい>気象台</ano>のようなものだ。世界各地に悲鳴の予報を知らせる役目を持っている。",
+                "ko": "{PlayerName}, 검은 해안의 업무에 대해선 대략 알고 계시겠죠? 간단히 말하자면, 비명의 기상관측소와 같은 검은 해안은 각 지역에 비명 기상예보를 제공하고 있어요",
+                "th": "ผมคิดว่าคุณคงรู้อยู่แล้วว่างานของเราคืออะไร ถ้าให้พูดง่ายๆ เราทำหน้าที่คาดการณ์การเกิดอาดูรการณ์เหมือนที่นักพยากรณ์อากาศเขาทำงานนั่นแหละ",
+                "zh-Hans": "{PlayerName}应该大致了解黑海岸的业务吧，简单说，黑海岸就像是悲鸣的气象站，负责为各地区提供悲鸣的天气预报。",
+                "zh-Hant": "{PlayerName}應該大致瞭解黑海岸的業務吧，簡單說，黑海岸就像是悲鳴的氣象站，負責為各地區提供悲鳴的天氣預報。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Als Spezialagent reise ich regelmäßig um die ganze Welt, um an verschiedenen Orten Daten zu sammeln und damit unsere Vorhersagemodelle zu verbessern.",
+                "en": "As a special agent, I periodically travel all around the world to collect data from various locations to improve our prediction models.",
+                "es": "Como agente especial, viajo periódicamente por todo el mundo para recopilar datos que permitan mejorar nuestros modelos de predicción.",
+                "fr": "En tant qu'agent spécial, je parcours régulièrement le monde afin de recueillir des données qui nous aideront à améliorer nos modèles de prédiction.",
+                "ja": "特別収容員として、僕はよく外勤に出て、定期的に世界各地でデータを集めて、テティスシステムの演算の根拠となるデータを提供する。",
+                "ko": "그리고 특파 수용원으로서 저는 주로 각지에서 탐측된 데이터를 주기적으로 수집하고, 테티스 시스템의 비명 연산에 필요한 데이터를 제공하는 일을 하고 있어요",
+                "th": "ในฐานะเจ้าหน้าที่พิเศษ ผมมักจะเดินทางไปทั่วโลกอยู่เป็นระยะเพื่อเก็บรวบรวมข้อมูลจากสถานที่ต่างๆ มาพัฒนาโมเดลคาดการณ์ของเรา",
+                "zh-Hans": "而我作为特勤的工作就是前往各地周期性收容侦测数据，为泰缇斯系统的悲鸣演算提供数据基础。",
+                "zh-Hant": "而我作為特勤的工作就是前往各地週期性收容偵測數據，為泰緹斯系統的悲鳴演算提供數據基礎。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Datenerfassung für diesen Zyklus ist fast abgeschlossen, aber ich vermute, dass mir an ein paar Orten noch genaue Daten fehlen.",
+                "en": "The data collection for this cycle is almost done, but I suspect I'm still missing accurate data in a few spots.",
+                "es": "Casi he terminado de recopilar la información para este ciclo, pero todavía me faltan datos precisos en algunos lugares.",
+                "fr": "La collecte pour ce cycle est presque terminée, mais je crois qu'il me manque encore des données précises pour quelques endroits.",
+                "ja": "今回もそろそろ終わるけど、いくつかの特殊な場所の情報がまだ完璧に集まっていないんだ。",
+                "ko": "이번 주기의 데이터 수집은 마무리 단계에 접어들었지만, 몇몇 특별한 지역의 정보가 아직 정확하지 않은 것 같아서 마음에 걸려요",
+                "th": "ผมเก็บรวบรวมข้อมูลรอบนี้เกือบเสร็จแล้ว แต่ก็ยังรู้สึกว่าตัวเองยังขาดข้อมูลที่ถูกต้องในบางจุด",
+                "zh-Hans": "这一周期的数据收集已经进入了收尾工作，但有几个特殊地点的信息我总是觉得还不够准确。",
+                "zh-Hant": "這一週期的數據收集已經進入了收尾工作，但有幾個特殊地點的數據我總是覺得還不够準確。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Alleine kann ich nicht viele Daten sammeln, aber mit deiner Hilfe werden wir sicher präzisere Proben erhalten.",
+                "en": "I can't gather much data on my own, but with your assistance, I'm confident we can obtain more precise samples.",
+                "es": "No puedo reunir muchos datos por mi cuenta, pero con tu ayuda, seguro que podremos obtener muestras más precisas.",
+                "fr": "Je ne peux pas collecter toutes les données tout seul, mais avec ton aide, je suis sûr qu'on parviendra à obtenir des échantillons d'une grande précision.",
+                "ja": "僕一人だと、どうしても集まるデータの量が足りない……君が手伝ってくれたら、きっと正確なサンプルが採れるはず。",
+                "ko": "아쉽게도 저 혼자서 수집할 수 있는 데이터는 제한적이에요... 하지만 당신의 도움이 있다면 더 정확한 샘플을 얻을 수 있을 거예요",
+                "th": "ผมเก็บข้อมูลเองคนเดียวไม่ได้มากนัก แต่ถ้าได้คุณช่วยละก็ ผมจะต้องเก็บตัวอย่างที่แม่นยำมากขึ้นได้แน่ๆ",
+                "zh-Hans": "可惜我一个人能收集到的数据实在有限……但如果有你帮忙的话，一定能拿到更精确的样本。",
+                "zh-Hant": "可惜我一個人能收集到的數據實在有限……但如果有你幫忙的話，一定能拿到更精確的樣本。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich versichere dir, dass deine Bemühungen nicht umsonst sein werden. Wenn wir die entscheidenden Daten beschaffen, können wir uns eine großzügige Finanzierung sichern.",
+                "en": "I assure you, your efforts won't be wasted. If we secure the crucial data, we can secure a generous amount of funding.",
+                "es": "Te aseguro que tus esfuerzos no serán en vano. Si logramos asentar los datos principales, podremos conseguir una financiación muy generosa.",
+                "fr": "Et puis, tu ne travailleras pas pour rien. Si on arrive à recueillir des données de qualité, on obtiendra des financements importants.",
+                "ja": "無駄足にはならないよう、報酬を用意する。大事なデータを入手できれば、活動経費の申請もできる……",
+                "ko": "물론 공짜로 도와달라는 건 아니에요. 중요한 데이터를 얻는다면 경비도 많이 신청할 수 있으니까요...",
+                "th": "ผมรับประกันเลยว่าความพยายามของคุณจะไม่สูญเปล่า ถ้าเราหาข้อมูลที่สำคัญมาได้ เราจะได้งบก้อนใหญ่อย่างแน่นอน",
+                "zh-Hans": "当然绝不会让你白跑一趟的，而且如果拿到重要数据的话，我们就可以申报一大笔活动经费了……",
+                "zh-Hant": "當然絕不會讓你白跑一趟的，而且如果拿到重要數據的話，我們就可以申報一大筆活動經費了……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was genau soll ich tun?",
+                    "en": "What should I do exactly?",
+                    "es": "¿Qué debo hacer exactamente?",
+                    "fr": "Qu'est-ce qu'il faut que je fasse, au juste ?",
+                    "ja": "具体的にはどうすればいい？",
+                    "ko": "구체적으로 뭘 해야 하나요?",
+                    "th": "แล้วจะให้ฉันทำอะไรบ้างล่ะ?",
+                    "zh-Hans": "那具体需要做什么呢？",
+                    "zh-Hant": "那具體需要做什麼呢？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Aktuell brauchen wir ein spezielles Erkennungsgerät für die Erfassung der Lamento-Überwachungsdaten.",
+                "en": "Currently, we need a special detection device to collect the Lament surveilance data.",
+                "es": "Actualmente, necesitamos un dispositivo de detección especial para recopilar los datos de vigilancia del Lamento.",
+                "fr": "À l'heure actuelle, on utilise un dispositif spécial pour recueillir les données relatives à la Lamentation.",
+                "ja": "今、悲鳴の<ano=しゅうはすう>周波数</ano>を観測するには、観測装置が必要なんだ。",
+                "ko": "현재 탐측된 비명의 주파수를 수집하려면 탐측 장치를 사용해야 해요",
+                "th": "ในตอนนี้เรามีเครื่องตรวจจับพิเศษที่ใช้เก็บรวบรวมข้อมูลการเฝ้าระวังอาดูรการณ์",
+                "zh-Hans": "目前收集这些悲鸣的侦测频率需要通过侦测装置来完成。",
+                "zh-Hant": "目前收集這些悲鳴的偵測頻率需要透過偵測裝置來完成。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Gerät erkennt und markiert Datenproben, die die Kriterien erfüllen. Du musst nur in ihre Nähe kommen, dann werden sie automatisch erfasst.",
+                "en": "The device detects and marks datasets that fit the criteria. Just walk near them to collect automatically.",
+                "es": "Este dispositivo identifica y señala muestras de datos que se ajustan a los criterios. Solo tienes que caminar cerca de ellos para recogerlos automáticamente.",
+                "fr": "Il détecte les échantillons qui correspondent à nos critères et indique leur emplacement. Si tu t'en approches suffisamment, tu recueilleras automatiquement les données.",
+                "ja": "観測装置は起動後に、基準を満たしているデータサンプルをマークする。{PlayerName}、君がデータサンプルに触れると、収集作業が自動的に完了する。",
+                "ko": "탐측 장치를 활성화하면, 기준에 맞는 특수 탐측 데이터가 시각화된 데이터 모듈 샘플로 표시돼요. {PlayerName}이(가) 그 데이터 샘플을 지나면 자동으로 수집할 수 있어요",
+                "th": "อุปกรณ์นี้จะตรวจจับและทำเครื่องหมายชุดข้อมูลที่มีลักษณะเข้าเกณฑ์ แค่เดินไปใกล้ข้อมูลพวกนั้น อุปกรณ์ก็จะเก็บรวบรวมให้โดยอัตโนมัติ",
+                "zh-Hans": "启动侦测装置后，那些符合标准的特殊侦测数据会被标记为可视化的数据模块样本，{PlayerName}只要经过那些数据样本就可以自动完成收集。",
+                "zh-Hant": "啟動偵測裝置後，那些符合標準的特殊偵測數據會被標記為視覺化的數據樣本，{PlayerName}只要經過那些數據樣本就可以自動完成收集。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber wegen des hohen Energieverbrauchs <color=Highlight>kann es nicht ununterbrochen laufen</color>. Wenn du in einer bestimmten Zeit nicht genug Daten sammelst, schaltet es sich automatisch ab.",
+                "en": "But it <color=Highlight>cannot run continuously</color> due to high energy consumption. If you fail to gather enough data in a set time, it will shut down automatically.",
+                "es": "Pero consume mucha energía, por lo que <color=Highlight>no puede funcionar de forma continua</color>. Si no consigues recopilar suficientes datos en un tiempo dado, se apagará automáticamente.",
+                "fr": "Le problème, c'est qu'il <color=Highlight>ne peut pas fonctionner en continu</color> car il consomme énormément d'énergie. Si tu ne collectes pas suffisamment de données dans le temps imparti, il s'éteindra automatiquement.",
+                "ja": "しかし、観測装置はエナジーの消耗が激しいから、起動するたびに<color=Highlight>一定の時間</color>しか作動できない。十分なデータを集められないと、自動的にシャットダウンされる。",
+                "ko": "하지만 에너지 소모가 크기 때문에 매번 장치를 작동할 때는 <color=Highlight>정해진 시간 내에만 유지</color>돼요. 그 시간 안에 충분한 데이터를 수집하지 못하면 장치가 자동으로 꺼질 거예요",
+                "th": "แต่อุปกรณ์นี้<color=Highlight>ทำงานต่อเนื่องไม่ได้นาน</color>เพราะต้องใช้พลังงานสูง ถ้าคุณเก็บรวบรวมข้อมูลได้ไม่เพียงพอภายในเวลาที่กำหนด มันก็จะหยุดทำงานโดยอัตโนมัติ",
+                "zh-Hans": "不过由于能量消耗较大，装置每次启动<color=Highlight>只能维持一段时间</color>，如果没能在这段时间内收集到足够的数据，装置就会自动关闭。",
+                "zh-Hant": "不過由於能量消耗較大，裝置每次啟動<color=Highlight>只能維持一段時間</color>，如果沒能在這段時間內收集到足夠的數據，裝置就會自動關閉。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte hilf uns, <color=Highlight>so viele Proben wie möglich</color> zu sammeln, um ein exaktes Ergebnis zu erhalten.",
+                "en": "Please help us collect <color=Highlight>as many datasets as possible</color> to yield an accurate result.",
+                "es": "Ayúdanos a recolectar <color=Highlight>tantas muestras como sea posible</color> para obtener un resultado preciso.",
+                "fr": "Aide-nous à rassembler <color=Highlight>un maximum d'échantillons</color> pour obtenir des résultats fiables.",
+                "ja": "データサンプルの量は正確さに影響するから、可能な限り、<color=Highlight>多くのデータサンプルを集めて</color>ほしい。",
+                "ko": "최종 탐측 데이터의 정확성을 높이기 위해 <color=Highlight>최대한 많은 데이터 샘플을 수집하는 게</color> 좋겠죠",
+                "th": "ช่วยเราเก็บรวบรวม<color=Highlight>ชุดข้อมูลให้มากที่สุดเท่าที่จะทำได้</color> เพื่อให้ได้ผลลัพธ์ที่แม่นยำที่สุดเถอะนะ",
+                "zh-Hans": "为了使最后获得的侦测数据尽可能地精确，请<color=Highlight>尽量多收集一些数据样本</color>吧。",
+                "zh-Hant": "為了使最後獲得的偵測數據盡可能地精確，請<color=Highlight>儘量多收集一些數據樣本</color>吧。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Übrigens haben wir an den Zielorten auch vorübergehende Mechanismen angebracht. Sie werden zusammen mit dem Erkennungsgerät aktiviert.",
+                "en": "By the way, we have also set up temporary mechanisms at the target locations. They'll activate along with the detection device.",
+                "es": "Por cierto, también hemos establecido mecanismos temporales en los lugares objetivo que se activarán junto con el dispositivo de detección.",
+                "fr": "On a aussi installé des mécanismes temporaires sur les sites cibles. Ils s'activeront en même temps que le dispositif de détection.",
+                "ja": "おっと、それから、目標地点付近にサポート機能を持つ臨時<ano=きこう>機巧</ano>を設置しているんだ。<ano=きこう>機巧</ano>は観測装置と同時に起動する。",
+                "ko": "아, 맞다. 목표 장소에 보조용 임시 기관을 설치했어요. 그 기관들은 탐측 장치와 함께 작동하게 돼요",
+                "th": "อ้อ เราตั้งกลไกชั่วคราวไว้ตรงสถานที่เป้าหมายด้วยนะ กลไกจะทำงานไปพร้อมกับอุปกรณ์ตรวจจับข้อมูล",
+                "zh-Hans": "哦对了，我们还在目标地点设置了临时机关进行辅助，那些机关会随着侦测装置一并启动。",
+                "zh-Hant": "對了，我們還在目標地點設置了臨時機關進行輔助，那些機關會隨著偵測裝置一併啟動。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du Interesse hast, wird dir mein Assistent KU-Ryan den Ablauf der Datenerfassung erklären.",
+                "en": "If you are interested, my assistant KU-Ryan will walk you through the data collection process.",
+                "es": "Si te interesa, mi asistente KU-Ryan te guiará a través del proceso de recopilación de datos.",
+                "fr": "Si ça t'intéresse, mon assistant KU-Ryan va t'expliquer le processus de collecte de données.",
+                "ja": "興味を持ってくれるなら、現場に行って僕の助手のクーリアンに聞いて。あの子がデータの収集に協力する。",
+                "ko": "관심이 있다면 현장에 있는 제 조수 쿠 · 리안을 찾아가면 돼요. 그가 탐측 데이터 수집을 도와줄 거예요",
+                "th": "ถ้าคุณสนใจ KU-Ryan ผู้ช่วยของผม จะคอยแนะนำขั้นตอนในการเก็บรวบรวมข้อมูลให้คุณ",
+                "zh-Hans": "感兴趣的话，你可以直接去现场找我的助手库里安，它会协助你完成侦测数据的收集。",
+                "zh-Hant": "感興趣的話，你可以直接去現場找我的助手庫里安，它會協助你完成偵測數據的收集。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Großartig! Ich freue mich auf die Zusammenarbeit mit dir, {PlayerName}.",
+                "en": "I'll be waiting for you good news, {PlayerName}.",
+                "es": "¡Genial! Estoy deseando trabajar contigo, {PlayerName}.",
+                "fr": "Génial ! J'ai hâte de travailler avec toi, {PlayerName}.",
+                "ja": "それでは、健闘を祈る。期待しているよ、{PlayerName}。",
+                "ko": "힘내요! 당신의 성과를 기대하고 있을게요, {PlayerName}",
+                "th": "แล้วจะรอฟังข่าวดีนะ {PlayerName}",
+                "zh-Hans": "加油呀，非常期待你的结果，{PlayerName}。",
+                "zh-Hant": "加油呀，非常期待你的結果，{PlayerName}。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 750012,
+                "name": {
+                  "zh-Hans": "阿尔诺"
+                },
+                "entity": {
+                  "entityId": 152750077,
+                  "mapId": 8,
+                  "blueprintType": "NPC420120",
+                  "name": "TsEntity_卡洛_420120",
+                  "areaId": 301,
+                  "position": {
+                    "x": -50922,
+                    "y": 95593,
+                    "z": 1807
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 50
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

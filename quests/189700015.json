@@ -1,0 +1,574 @@
+{
+  "id": 189700015,
+  "key": "无人分享的深空前置",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Wo Sternenmeere stehenbleiben I",
+    "en": "Where Starry Seas Endure I",
+    "es": "Mar de estrellas imperecedero I",
+    "fr": "Là où les mers étoilées perdurent - I",
+    "ja": "星の海は変わらず・一",
+    "ko": "한결 같은 별바다 Ⅰ",
+    "th": "ทะเลดาวดั่งวันวาน (1)",
+    "zh-Hans": "星海如故（一）",
+    "zh-Hant": "星海如故（一）"
+  },
+  "desc": {
+    "de": "Du bekommst eine WavesLine-Nachricht, die um Hilfe bittet. Schau besser mal nach, wer dich braucht.",
+    "en": "You receive a WavesLine message asking for help. Check what it's about.",
+    "es": "Has recibido un mensaje de WavesLine pidiendo ayuda. Mejor comprueba quién te necesita.",
+    "fr": "Vous avez reçu un message qui appelle à l'aide, allez voir ce qui s'est passé.",
+    "ja": "助けを求めるメッセージを受け取ったあなたは、その差出人を探しはじめる。",
+    "ko": "당신은 도움 요청 메시지를 받았는데, 누가 도움이 필요한지 확인하러 가보세요",
+    "th": "คุณได้รับข้อความขอความช่วยเหลือ ไปดูว่าใครต้องการความช่วยเหลือสิ",
+    "zh-Hans": "你收到了一条求助飞讯，去看看是谁需要帮助吧。",
+    "zh-Hant": "你收到了一條求助飛訊，去看看是誰需要幫助吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Du hast eine Hilfenachricht",
+        "en": "Help request received",
+        "es": "Has recibido un mensaje pidiendo ayuda.",
+        "fr": "Recevoir le message qui appelle à l'aide",
+        "ja": "届いた依頼メッセージを読む",
+        "ko": "도움 요청 메시지 확인하기",
+        "th": "ได้รับข้อความขอความช่วยเหลือ",
+        "zh-Hans": "收到求助飞讯",
+        "zh-Hant": "收到求助飛訊"
+      },
+      "entities": [
+        {
+          "entityId": 189701394,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+          "areaId": 36112,
+          "position": {
+            "x": 135369,
+            "y": -449569,
+            "z": 34382
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde die Person, die um Hilfe gebeten hat.",
+        "en": "Find the one who requested help",
+        "es": "Encuentra a quien pidió ayuda.",
+        "fr": "Trouver la personne qui appelle à l'aide",
+        "ja": "差出人を探す",
+        "ko": "도움 요청자 찾기",
+        "th": "ค้นหาผู้ขอความช่วยเหลือ",
+        "zh-Hans": "寻找求助者",
+        "zh-Hant": "尋找求助者"
+      },
+      "entities": [
+        {
+          "entityId": 189701394,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+          "areaId": 36112,
+          "position": {
+            "x": 135369,
+            "y": -449569,
+            "z": 34382
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_无人分享的星空",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo … Mein Name ist Harriet. Ich bin eine der Forscherinnen, die am Wiederaufbau des Spacetrek-Observatoriums beteiligt ist.",
+                "en": "Hello. I am Harriet, one of the researchers involved in the Spacetrek Observatory's reconstruction.",
+                "es": "Hola... Soy Harriet, una de las investigadoras implicadas en la restauración del Observatorio Intergaláctico.",
+                "fr": "Bonjour, je suis Harriet, l'une des chercheuses qui travaille sur la restauration de l'observatoire Trek-spatial.",
+                "ja": "こんにちは……ハリエットです。スペーストレック観測台の修復作業に参加している研究員の一人です。",
+                "ko": "안녕하세요... 전 해리엇이에요. 스페이스트렉 관측대 복구 작업에 참여한 연구원이에요",
+                "th": "สวัสดี... ฉันชื่อ Harriet เป็นหนึ่งในนักวิจัยที่เข้าร่วมงานซ่อมแซมศูนย์สังเกตการณ์สเปซเทรค",
+                "zh-Hans": "您好……我是哈丽雅特，参与深空测界台修复工作的研究员之一。",
+                "zh-Hant": "您好……我是哈麗雅特，參與深空測界台修復工作的研究員之一。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du bist {PlayerName}, richtig? Dhalifa hat von dir erzählt.",
+                "en": "You're {PlayerName}, right? Dhalifa told us about you.",
+                "es": "Eres {PlayerName}, ¿verdad? Dhalifa nos ha hablado de ti.",
+                "fr": "Tu dois être {PlayerName}, n'est-ce pas ? Dhalifa nous a parlé de toi.",
+                "ja": "その……あなたが{PlayerName}さんですよね。ディリファから聞いています。",
+                "ko": "혹시 {PlayerName}인가요? 달리파가 저희에게 당신을 언급한 적이 있어요",
+                "th": "คุณคือ {PlayerName} ใช่มั้ย? Dhalifa เคยพูดถึงคุณกับพวกเราน่ะ",
+                "zh-Hans": "那个，您就是{PlayerName}吧？德莉珐和我们提到过您。",
+                "zh-Hant": "那個，您就是{PlayerName}吧？德莉琺和我們提到過您。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Genau. Steckst du in Schwierigkeiten?",
+                "en": "That's me. Are you in trouble?",
+                "es": "Sí. ¿Hay algún problema?",
+                "fr": "Oui. As-tu des soucis ?",
+                "ja": "{Male=そうだ。何かあったのか？;Female=そうだよ。何かあったの？}",
+                "ko": "네, 저 맞아요. 무슨 문제라도 있나요?",
+                "th": "ฉันเอง คุณเจอปัญหาอะไรรึเปล่า?",
+                "zh-Hans": "是我。你遇到麻烦了？",
+                "zh-Hant": "是我。你遇到麻煩了？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja … Ich wusste nicht, was ich tun sollte, aber zum Glück bist du gekommen.",
+                "en": "Yes... I was just wondering what to do. Good thing you're here.",
+                "es": "Sí... me preguntaba qué hacer, pero por suerte, has aparecido.",
+                "fr": "Oui… Je me demandais ce que je pouvais bien faire, mais tu es arrivée.",
+                "ja": "はい……今どうしたらいいか分からなくて。でも、来てくれて助かりました。",
+                "ko": "네... 지금 마침 고민하고 있었는데, 와주셔서 다행이에요",
+                "th": "อืม... ตอนนี้กำลังกลุ้มใจอยู่ว่าควรทำยังไง แต่โชคดีที่คุณมาพอดี",
+                "zh-Hans": "是的……现在正在发愁该怎么办，还好您来了。",
+                "zh-Hant": "是的……現在正在發愁該怎麼辦，還好您來了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie du weißt, wurde das Spacetrek-Observatorium einst durch einen Leerensturm beschädigt. Um die Leerenstürme überwachen zu können, haben wir mehrere Standorte zur Radarüberwachung bestimmt.",
+                "en": "As you know, the Spacetrek Observatory was once damaged by a Void Storm. Since then, we've set up multiple radar points to continue with our monitoring.",
+                "es": "Como ya sabes, el Observatorio Intergaláctico sufrió daños durante una tormenta de vacío. Para supervisar las condiciones de las tormentas de vacío, hemos designado múltiples ubicaciones que controlar mediante radar.",
+                "fr": "Comme tu le sais, l'observatoire Trek-spatial a été endommagé par une tempête de néant. Afin de surveiller ces tempêtes, nous avons repéré plusieurs emplacements à contrôler avec un radar.",
+                "ja": "知っていると思いますが、観測台は以前のヴォイドストームで損傷してしまって……今は観測用に、いくつかの地点でレーダーを使用しています。",
+                "ko": "스페이스트렉 관측대가 과거에 보이드 스톰 때문에 파손되었어요. 보이드 스톰의 상황을 모니터링하기 위해 저희는 이미 여러 지점을 지정하고 레이더를 사용하여 모니터링하고 있어요",
+                "th": "คุณก็รู้ว่า ศูนย์สังเกตการณ์สเปซเทรคเคยได้รับความเสียหายจากพายุ เพื่อตรวจสอบสถานการณ์พายุ พวกเราจึงได้ระบุตำแหน่งไว้หลายแห่งเพื่อใช้เรดาร์ในการตรวจสอบ",
+                "zh-Hans": "您知道，深空测界台曾经因为磁暴而损毁，为了监测磁暴情况，我们已经划定了多个点位来使用雷达进行监测。",
+                "zh-Hant": "您知道，深空測界台曾經因為磁暴而損毀，為了監測磁暴情況，我們已經劃定了多個點位來使用雷達進行監測。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das hier ist einer davon. Normalerweise müssten wir nur den Radarwürfel aktivieren, um ein Leerensturm-Radar einzurichten.",
+                "en": "This is one of them. Usually, we just needed to activate the Smartprint Cube to build a Void Storm monitoring radar.",
+                "es": "Esta es una de ellas. Normalmente, solo necesitábamos activar el Cubo Smartprint para crear un radar de control de tormentas de vacío.",
+                "fr": "Ce lieu est l'un d'eux. En temps normal, il nous suffisait d'activer le Cube intelligent pour créer un radar qui surveille les tempêtes de néant.",
+                "ja": "ここもそのひとつで、本来ならインテリ・キューブを起動すればヴォイドストーム観測レーダーを作れるはずでした。",
+                "ko": "여기도 그중 한 곳이에요. 원래 스마트프린트 큐브를 작동하면 보이드 스톰 모니터링 레이더를 만들 수 있어요",
+                "th": "และที่นี่ก็เป็นหนึ่งในนั้น ปกติแค่เปิดใช้ลูกบาศก์อัจฉริยะก็สามารถสร้างเรดาร์ตรวจสอบพายุได้แล้ว",
+                "zh-Hans": "这里也是其中之一，原本启动智造立方就可以制造磁暴监测雷达了。",
+                "zh-Hant": "這裡也是其中之一，原本啟動智造立方就可以製造磁暴監測雷達了。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Allerdings hatte ich nicht damit gerechnet, dass die Akademie den Radarwürfel derart tief vergraben würde.",
+                "en": "But… I didn't expect the Smartprint Cube that the Academy buried would be so much deeper than I had originally predicted.",
+                "es": "Ahora bien... no esperaba que el Cubo Smartprint que la Academia enterró estuviera tan profundo.",
+                "fr": "En revanche… Je ne m'attendais pas à ce que l'académie ait enterré le Cube intelligent aussi profondément.",
+                "ja": "でも……学園が地下に埋めているインテリ・キューブが、予想より深い場所にあったみたいで。",
+                "ko": "하지만... 아카데미의 지하에 묻힌 스마트프린트 큐브가 제가 예상했던 것보다 더 깊은 곳에 위치해 있어요",
+                "th": "แต่... ฉันไม่คิดว่าลูกบาศก์อัจฉริยะที่สถาบันฝังไว้ใต้ดินจะอยู่ลึกกว่าที่คาดไว้",
+                "zh-Hans": "但是……我没想到学院在地下埋藏的智造立方，所处方位比我原本预测的更深。",
+                "zh-Hant": "但是……我沒想到學院在地下埋藏的智造立方，所處方位比我原本預測的更深。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich schaffe es nicht, ihn allein zu bedienen … Könntest du mir helfen?",
+                "en": "I'm having trouble operating it alone… Could you give me a hand?",
+                "es": "Así me resulta un poco difícil operar... ¿Me ayudarías, por favor?",
+                "fr": "J'ai du mal à le faire fonctionner. Tu veux bien m'aider ?",
+                "ja": "一人では少し手が回らなくて……手伝ってもらえませんか。",
+                "ko": "저 혼자서 조작하는 데 좀 어려워서 그런데... 혹시 협력을 부탁드려도 될까요?",
+                "th": "ฉันคนเดียวคงทำได้ยาก... เลยอยากรบกวนให้คุณช่วยหน่อยได้มั้ย?",
+                "zh-Hans": "我一个人有些难操作……可以麻烦您协助我吗？",
+                "zh-Hant": "我一個人有些難操作……可以麻煩您協助我嗎？"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Klar.",
+                    "en": "Sure.",
+                    "es": "Claro.",
+                    "fr": "Bien sûr.",
+                    "ja": "分かった。",
+                    "ko": "네",
+                    "th": "ได้สิ",
+                    "zh-Hans": "好。",
+                    "zh-Hant": "好。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Natürlich.",
+                    "en": "Of course.",
+                    "es": "Por supuesto.",
+                    "fr": "Avec plaisir.",
+                    "ja": "{Male=もちろん。遠慮しなくていい。;Female=もちろん。遠慮しなくていいよ。}",
+                    "ko": "물론이죠",
+                    "th": "ได้อยู่แล้ว ไม่ต้องเกรงใจ",
+                    "zh-Hans": "当然可以，不必客气。",
+                    "zh-Hant": "當然可以，不必客氣。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Vielen Dank …",
+                "en": "Thank you...",
+                "es": "Gracias...",
+                "fr": "Merci !",
+                "ja": "ありがとうございます……",
+                "ko": "감사합니다...",
+                "th": "ขอบคุณนะ...",
+                "zh-Hans": "谢谢您……",
+                "zh-Hant": "謝謝您……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 701041,
+                "name": {
+                  "zh-Hans": "哈丽雅特"
+                },
+                "entity": {
+                  "entityId": 189701394,
+                  "mapId": 906,
+                  "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+                  "areaId": 36112,
+                  "position": {
+                    "x": 135369,
+                    "y": -449569,
+                    "z": 34382
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Aktviere den Smartprint-Würfel.",
+        "en": "Activate the Smartprint Cube",
+        "es": "Activa el Cubo Smartprint.",
+        "fr": "Activer le Cube d'impression intelligente",
+        "ja": "インテリ・キューブを起動する",
+        "ko": "스마트프린트 큐브 작동시키기",
+        "th": "เปิดใช้งานลูกบาศก์อัจฉริยะ",
+        "zh-Hans": "启动智造立方",
+        "zh-Hant": "啟動智造立方"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Harriet",
+        "en": "Talk to Harriet",
+        "es": "Habla con Harriet.",
+        "fr": "Parler à Harriet",
+        "ja": "ハリエットと会話する",
+        "ko": "해리엇과 대화하기",
+        "th": "คุยกับ Harriet",
+        "zh-Hans": "与哈丽雅特交谈",
+        "zh-Hant": "與哈麗雅特交談"
+      },
+      "entities": [
+        {
+          "entityId": 189701394,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+          "name": "TsEntity_TN_B3_0_拉海洛_FemaleM_YJY1_4",
+          "areaId": 36112,
+          "position": {
+            "x": 135369,
+            "y": -449569,
+            "z": 34382
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

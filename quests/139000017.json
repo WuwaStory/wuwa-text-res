@@ -1,0 +1,4358 @@
+{
+  "id": 139000017,
+  "key": "新声骸引导",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Silberhaariger Echotrainer - I",
+    "en": "Silver-haired Echo Trainer - I",
+    "es": "Entrenador de eco de pelo plateado - I",
+    "fr": "Traîneur d'Écho aux cheveux blancs - I",
+    "ja": "銀髪の音骸トレーナー・一",
+    "ko": "은발 에코 트레이너 · I",
+    "th": "ครูฝึกสอนเอคโค่ผมเงิน - 1",
+    "zh-Hans": "银发声骸训练师·一",
+    "zh-Hant": "銀髮聲骸訓練師·一"
+  },
+  "desc": {
+    "de": "Warum besteht Großvater Jingzhu darauf, Echos zu fangen? Triff dich mit Chixia und hilf Großvater Jingzhu zusammen.",
+    "en": "Why does Grandpa Jingzhu insist on capturing Echoes? Go meet up with Chixia and help Grandpa Jingzhu together.",
+    "es": "¿Por qué el abuelo Jingzhu insiste en capturar Ecos? Ve a encontrarte con Chixia y ayuda al abuelo Jingzhu juntos.",
+    "fr": "Pourquoi M. Jingzhu poursuit-il les Échos ? Partez avec Chixia à la découverte de son secret et prêtez-lui main-forte.",
+    "ja": "景燭じいさんがいい年してなお音骸を捕りたい理由は一体何だろうか？熾霞の話を聞き、一緒に協力してみよう。",
+    "ko": "경호 할아버지가 이 나이에 갑자기 에코를 잡으려는 이유는 무엇일까요? 치샤에게 무슨 일인지 알아본 후 함께 경호 할아버지를 도와주세요",
+    "th": "ทำไมปู่จิงจูจึงยืนกรานให้เก็บเอคโค่? ไปพบกับ Chixia และช่วยปู่จิงจูด้วยกัน",
+    "zh-Hans": "景烛爷爷一把年纪了还硬要去抓声骸，到底是为什么呢？找炽霞了解下情况，一起帮帮景烛爷爷吧。",
+    "zh-Hant": "景燭爺爺一把年紀了還硬要去抓聲骸，到底是為什麼呢？ 找熾霞了解下情况，一起幫幫景燭爺爺吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Triff dich mit Chixia",
+        "en": "Meet with Chixia",
+        "es": "Encuentra a Chixia.",
+        "fr": "Rencontrer Chixia",
+        "ja": "熾霞に会う",
+        "ko": "치샤 만나러 가기",
+        "th": "พบกับ Chixia",
+        "zh-Hans": "与炽霞会面",
+        "zh-Hant": "與熾霞會面"
+      },
+      "entities": [
+        {
+          "entityId": 139000079,
+          "mapId": 8,
+          "blueprintType": "Player002",
+          "name": "TsEntity_角色002_炽霞13",
+          "areaId": 301,
+          "position": {
+            "x": -46181,
+            "y": 102859,
+            "z": 1410
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 139000080,
+          "mapId": 8,
+          "blueprintType": "NPC005",
+          "name": "TsEntity_157_001_皇龙老人6",
+          "areaId": 301,
+          "position": {
+            "x": -46049,
+            "y": 102853,
+            "z": 1410
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Chixia spricht mit jemandem. Komm zurück, wenn sie fertig sind mit dem Gespräch.",
+                "en": "Chixia is talking to someone. Come back when they’re done talking.",
+                "es": "Chixia está hablando con alguien. Vuelve cuando hayan terminado de hablar.",
+                "fr": "Chixia parle à un vieil homme. Revenez quand ils auront fini de parler.",
+                "ja": "おじいさんと話している熾霞がいる。邪魔しないようが良さそうだ。",
+                "ko": "치샤가 어르신과 이야기하고 있는 것 같으니, 지금은 그들을 방해하지 말자",
+                "th": "Chixia กำลังคุยกับใครคนหนึ่งอยู่ กลับมาใหม่ตอนพวกเขาคุยกันเสร็จแล้วดีกว่า",
+                "zh-Hans": "炽霞在和一位老大爷说话，先不打扰他们了。",
+                "zh-Hant": "熾霞在和一位老大爺說話，先不打擾他們了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Seufz...",
+                "en": "*sigh*...",
+                "es": "Suspiro...",
+                "fr": "Soupir... Aïe...",
+                "ja": "はあ……はあ……",
+                "ko": "에이... 아... 으윽...",
+                "th": "*เฮ้อ*...",
+                "zh-Hans": "唉……唉……嘶……",
+                "zh-Hant": "唉……唉……嘶……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 759,
+                "name": {
+                  "zh-Hans": "老大爷"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Opa Jingzhu, wirklich, du bist nicht in Ordnung... Lass uns das Einfangen der <ano=Tacet-Dissonanz Frequenzen, die eingefangen werden können>Echos</ano> für jetzt vergessen und direkt ins Krankenhaus gehen, okay?",
+                "en": "Grandpa Jingzhu, seriously, you’re not well... Let’s forget about capturing <ano=TD Frequencies>Echoes</ano> for now and head straight to the hospital, okay?",
+                "es": "Abuelo Jingzhu, en serio, no estás bien... Olvidémonos de capturar <ano=Frecuencias de DT>Ecos</ano> por ahora y vayamos directo al hospital, ¿vale?",
+                "fr": "Monsieur Jingzhu, franchement, vous n'êtes pas en forme... Oubliez la capture des <ano=Fréquences de TDs absorbables>Échos</ano> maintenant et allez directement à l'hôpital, d'accord ?",
+                "ja": "景燭じいちゃん！今は<ano=吸収できる残響>音骸</ano>なんてどうでもいいって！早く病院行こ！",
+                "ko": "할아버지! <ano=흡수 가능한 잔상 주파수>에코</ano> 잡는 것보다 상처 치료가 급하다고!! 병원부터 가자니까!!",
+                "th": "ปู่ Jingzhu นี่จริงๆ เลย ปู่ไม่สบายอยู่นะ... ลืมเรื่องจับ<ano=ความถี่ของทาเซ็ตดิสคอร์ด>เอคโค่</ano>ไปได้เลย แล้วรีบไปโรงพยาบาล เข้าใจไหม?",
+                "zh-Hans": "景烛爷爷，你都这样了，就别急着去抓什么<ano=可吸收的残象频率>声骸</ano>了，先去医院吧！",
+                "zh-Hant": "景燭爺爺，你都這樣了，就別急著去抓什麼<ano=可吸收的殘象頻率>聲骸</ano>了，先去醫院吧！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Auf keinen Fall! Wenn ich kein beeindruckendes Echo fange, werde ich zu nervös sein, um auch nur ans Essen oder Schlafen zu denken.",
+                "en": "No way! If I don't capture an impressive Echo, I'll be too anxious to even think about eating or sleeping.",
+                "es": "¡De ninguna manera! Si no capturo un Eco impresionante, estaré demasiado ansioso como para pensar en comer o dormir.",
+                "fr": "Pas question ! Si je ne capture pas un Écho impressionnant, je serai trop anxieux pour penser à manger ou à dormir.",
+                "ja": "……ダメだ！何としても、カッコイイ音骸を捕まえないと……でなきゃ、飯が喉を通らねえ！",
+                "ko": "...안 돼 이 녀석아! 강력한 에코부터 잡아야 한다고 몇 번을 말했는데!! 못 잡으면 밤에 잠을 못 잔다니까!",
+                "th": "ไม่มีทาง! ถ้าฉันจับเอคโค่ที่น่าทึ่งไม่ได้ คงกระวนกระวายจนไม่เป็นอันกินอันนอน",
+                "zh-Hans": "……不行！我必须得抓个威风的声骸，不然我饭都吃不下，觉也睡不着……",
+                "zh-Hant": "……不行！我必須得抓個威風的聲骸，不然我飯都吃不下，覺也睡不著……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach komm! In deinem Alter solltest du nicht da draußen sein, um sie zu jagen. Warum musst du eins fangen?",
+                "en": "Oh, come on! You shouldn't be out there chasing them at your age. Why do you have to get one?",
+                "es": "¡Vamos! No deberías estar persiguiéndolos a tu edad. ¿Por qué tienes que conseguir uno?",
+                "fr": "Oh, voyons ! À votre âge, vous ne devriez pas courir après ces choses. Pourquoi vous tenez tant à en attraper un ?",
+                "ja": "もう、景燭じいちゃん！いい歳して何で今更音骸捕りにハマってるのさ！",
+                "ko": "아!! 할아버지 나이가 몇인데 에코를 잡겠다고 하는 거야!!!",
+                "th": "โธ่ ไม่เอาน่า! อายุปูนนี้แล้วยังจะไปไล่จับอะไรแบบนั้นอีก จะเอามาทำอะไรเนี่ย?",
+                "zh-Hans": "哎呀，景烛爷爷，你都这个岁数了，硬要去抓声骸做什么？",
+                "zh-Hant": "哎呀，景燭爺爺，你都這個歲數了，硬要去抓聲骸做什麼？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähm, weil die Person, die ich mag, eins will!",
+                "en": "Ahem, because the person I like wants one!",
+                "es": "Ejem, ¡porque la persona que me gusta quiere uno!",
+                "fr": "Eh bien... Parce que la personne que j'aime en veut un !",
+                "ja": "そいつは違う。俺のためじゃない！俺が好きな人のためだ！",
+                "ko": "크흠, 이 녀석아! 내가 좋아서가 아니라 내가 좋아하는 사람이 좋아해서 잡겠다는거란다",
+                "th": "อะแฮ่ม เพราะคนที่ฉันชอบอยากได้น่ะสิ!",
+                "zh-Hans": "咳咳，不是我喜欢，是我喜欢的人喜欢！",
+                "zh-Hant": "咳咳，不是我喜歡，是我喜歡的人喜歡！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Person, die du magst...?",
+                "en": "The person you like...?",
+                "es": "¿La persona que te gusta...?",
+                "fr": "La personne que vous aimez... ?",
+                "ja": "好きな人のため……？",
+                "ko": "좋아하는 사람...?",
+                "th": "คนที่ปู่ชอบงั้นเหรอ?",
+                "zh-Hans": "喜欢的人喜欢……？",
+                "zh-Hant": "喜歡的人喜歡……？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja. Weißt du, es ist nicht üblich, dass ein Mann in meinem Alter die Liebe sucht, aber ich liebe sie. Sie weist mich immer wieder ab.",
+                "en": "Yes. You know, it's not usual for a man of my years to seek love, but I love her. She keeps rejecting me.",
+                "es": "Sí. Sabes, no es usual que un hombre de mis años busque amor, pero la amo. Ella sigue rechazándome.",
+                "fr": "Oui. Ce n'est pas courant qu'un homme de mon âge cherche encore l'amour, mais je l'aime. Elle me rejette tout le temps.",
+                "ja": "そうだ。こんな歳だが俺には……好きなばあさんがいる。まあ、向こうは頑なに拒んでいるがな……",
+                "ko": "그래... 이 나이에 오랜만에 날 설레게하는 사람이 생겼는데... 근데 매번 차여서...",
+                "th": "ใช่แล้ว รู้ไหมว่าผู้ชายวัยฉันน่ะไม่ค่อยแสวงหารักกันนักหรอก แต่ฉันหลงรักเธอ และเธอก็เอาแต่ปฏิเสธฉัน",
+                "zh-Hans": "嗯……我都这把岁数了，好不容易有个喜欢的老太太，但是对方一直拒绝我。",
+                "zh-Hant": "嗯……我都這把歲數了，好不容易有個喜歡的老太太，但是對方一直拒絕我。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie steht auf beeindruckende Echos, also ist das meine Chance.",
+                "en": "She’s into impressive Echoes, so that’s my in.",
+                "es": "Ella está interesada en Ecos impresionantes, así que esa es mi oportunidad.",
+                "fr": "Elle adore des Échos impressionnants, alors je me dis que c'est ma chance.",
+                "ja": "彼女はカッコイイ音骸が好きなんだ。",
+                "ko": "그녀가 강력한 에코를 좋아해서 그걸 공략해야 한다니까!",
+                "th": "เธอชอบเอคโค่ที่น่าทึ่ง ฉันจะจีบเธอด้วยวิธีนี้แหละ",
+                "zh-Hans": "我知道她喜欢威风的声骸，就只能从这点入手了。",
+                "zh-Hant": "我知道她喜歡威風的聲骸，就只能從這點入手了。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Leider habe ich nur eine Hoartoise. Rundes Gesicht, runder Kopf. Weit entfernt von beeindruckend.",
+                "en": "Sadly, I only have a Hoartoise. Round face, round head. Far from impressive.",
+                "es": "Lamentablemente, solo tengo una Escartuga. Cara y cabeza redondas. Nada impresionante.",
+                "fr": "Mais regardez, l'Écho que j'ai... Mon Écho est juste un Torturoid. Une tête ronde, un visage rond. Pas vraiment impressionnant.",
+                "ja": "しかし……今の俺は、この「寒霜亀」しか持っていない。こいつはどう見ても、カッコイイとは無縁じゃないか。",
+                "ko": "근데 내 에코는... 바로 이 둥근 머리를 가진 서릿땅거북인데, 에이... 딱 봐도 전혀 강력하지 않아",
+                "th": "น่าเสียดายที่ฉันมีแค่เต่าน้ำค้างแข็ง หน้ากลมๆ หัวกลมๆ ไม่ค่อยน่าประทับใจเท่าไหร่",
+                "zh-Hans": "哎……但是我的声骸嘛……喏，就是这霜寒陆龟，圆头圆脑的，看着一点都不威风啊。",
+                "zh-Hant": "哎……但是我的聲骸嘛……喏，就是這霜寒陸龜，圓頭圓腦的，看著一點都不威風啊。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich nur ein Echo fangen könnte, das ihren Ansprüchen genügt, würde sie mir vielleicht eine Chance geben.",
+                "en": "If I could just get an Echo that meets her standards, maybe she’d let me have a chance.",
+                "es": "Si solo pudiera conseguir un Eco que cumpla con sus estándares, tal vez me daría una oportunidad.",
+                "fr": "Si je pouvais juste capturer un Écho à son goût, peut-être qu'elle me donnerait une chance.",
+                "ja": "だから、彼女をオトすためには……新しい音骸が必要だ！",
+                "ko": "만약 강력한 에코가 있다면, 그녀는 다시는 나를 거절하지 않을 거야",
+                "th": "ถ้าฉันจับเอคโค่ที่เข้าตาเธอได้ เธออาจจะให้โอกาสฉันบ้างก็ได้",
+                "zh-Hans": "要是有个威风的声骸，她一定不会再拒绝我！",
+                "zh-Hant": "要是有個威風的聲骸，她一定不會再拒絕我！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Äh... Opa Jingzhu, bist du dir da wirklich sicher? Das klingt ein bisschen seltsam. Es ist nicht jeden Tag, dass man eine Dame sieht, die auf Echos steht.",
+                "en": "Uh... Grandpa Jingzhu, are you really sure about that? It sounds a bit strange. It's not every day you see a lady keen on Echoes.",
+                "es": "Eh... Abuelo Jingzhu, ¿estás realmente seguro de eso? Suena un poco extraño. No todos los días ves a una dama interesada en Ecos.",
+                "fr": "Euh... C'est un peu étrange, non ? Une dame qui aime les Échos impressionnants ? Vous êtes vraiment sûr ?",
+                "ja": "え……？なんかおかしくない……？普通のばあさんが、音骸に興味を持つなんて……景燭じいちゃん、それホント？",
+                "ko": "음... 듣자 하니 좀 이상하네... 할머니가 에코를 좋아한다고? 할아버지 정말 그 정보 확실한 거야?",
+                "th": "เอ่อ... ปู่ Jingzhu แน่ใจเหรอว่าจะเอาแบบนี้? ฟังดูแปลกๆ ยังไงชอบกล เดี๋ยวนี้ยังมีผู้หญิงที่สนใจเอคโค่อยู่อีกเหรอ?",
+                "zh-Hans": "额……听起来怎么有点怪怪的……老太太……怎么会喜欢声骸？景烛爷爷，你确定吗？",
+                "zh-Hant": "額……聽起來怎麼有點怪怪的……老太太……怎麼會喜歡聲骸？ 景燭爺爺，你確定嗎？"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zumindest scheint es der einzige Weg zu ihrem Herzen zu sein.",
+                "en": "At least, it seems to be the only way to her heart.",
+                "es": "Al menos, parece ser la única manera de llegar a su corazón.",
+                "fr": "En amour, comment savoir si on ne tente pas ? Même si j'ai une petite chance, je veux essayer pour elle !",
+                "ja": "ああ、本当さ！",
+                "ko": "이 녀석! 할머니는 에코 좋아하면 안 된다는 법이라도 있냐?",
+                "th": "ก็วิธีนี้ดูเป็นวิธีเดียวที่จะได้หัวใจเธอมาครอง",
+                "zh-Hans": "哎呀，感情的事情，不试试怎么知道呢？",
+                "zh-Hant": "哎呀，感情的事情，不試試怎麼知道呢？"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Trotz der Widrigkeiten bin ich entschlossen, es zu versuchen.",
+                "en": "Despite the odds, I’m resolved to attempt it.",
+                "es": "A pesar de las probabilidades, estoy decidido a intentarlo.",
+                "fr": "Malgré tout, je suis déterminé à essayer.",
+                "ja": "少しでも可能性があるのなら、どんなことだってやってやる！",
+                "ko": "만에 하나라도 그녀를 위해 시도는 해봐야지!",
+                "th": "ถึงมีอุปสรรค ฉันก็จะลองดูสักตั้ง",
+                "zh-Hans": "只要有万分之一的可能，我都愿意为了她试一试！",
+                "zh-Hant": "只要有萬分之一的可能，我都願意為了她試一試！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber du bist nicht in Bestform. Du solltest wirklich eine gute Ruhepause einlegen.",
+                "en": "But you’re not at your best. You really should take some good rest.",
+                "es": "Pero no estás en tu mejor momento. Realmente deberías descansar bien.",
+                "fr": "Mais dans votre état, vous devriez vraiment vous reposer.",
+                "ja": "でも、その体じゃ……さすがに無茶は良くないよ。",
+                "ko": "근데 지금은 그렇게 막무가내로 행동하면 안 되지",
+                "th": "แต่ปู่ไม่ค่อยแข็งแรง ปู่ควรไปพักผ่อนให้เพียงพอดีกว่านะ",
+                "zh-Hans": "但是你现在这个情况，可千万不能再乱动了。",
+                "zh-Hant": "但是你現在這個情况，可千萬不能再亂動了。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wer weiß, was passieren könnte, wenn du erneut diesen Hang hinunterstürzt...",
+                "en": "Who knows what might happen if you take another tumble down that hillside...",
+                "es": "Quién sabe qué podría suceder si te caes de nuevo por esa ladera...",
+                "fr": "Qui sait ce qui pourrait arriver si vous tombiez encore dans cette colline...",
+                "ja": "また転んじゃったら、今度こそ……",
+                "ko": "만약에 말이야, 한 번 더 언덕에서 굴러떨어지면 어쩌려고...",
+                "th": "ใครจะรู้ว่าอะไรจะเกิดขึ้นถ้าปู่หกล้มบนเนินเขาอีกน่ะ...",
+                "zh-Hans": "不然，再从山坡上滚下来一次，谁都不好说……",
+                "zh-Hant": "不然，再從山坡上滾下來一次，誰都不好說……"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, entschuldige! Ich hätte so etwas nicht sagen sollen!",
+                "en": "Oh, sorry! I shouldn’t have said such things!",
+                "es": "¡Oh, lo siento! ¡No debería haber dicho esas cosas!",
+                "fr": "Oh, désolée ! Je ne dois pas dire des choses malchanceuses !",
+                "ja": "ああ、いや……あたしは単に、じいちゃんを心配してるんだよ！",
+                "ko": "퉤퉤퉤, 말이 씨가 되면 안 되는데!",
+                "th": "อุ้ย ขอโทษนะปู่! ฉันไม่น่าพูดแบบนั้นเลย!",
+                "zh-Hans": "呸呸呸，我怎么能说这种不吉利的话！",
+                "zh-Hant": "呸呸呸，我怎麼能說這種不吉利的話！"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kleiner Patrouilleur, du bist noch zu jung, um zu verstehen, was Liebe bedeutet. Körperliche Schmerzen zu ertragen, ist eine Sache, aber der Schmerz der unerwiderten Liebe ist eine Herausforderung, der kein Held gewachsen ist.",
+                "en": "Little Patroller, you're still too young to understand what love means. Enduring physical pain is one thing, but the ache of unrequited love is something even great heroes can't overcome.",
+                "es": "Pequeño Patrullero, aún eres demasiado joven para entender lo que significa el amor. Soportar el dolor físico es una cosa, pero el dolor de un amor no correspondido es un desafío que ningún héroe puede superar.",
+                "fr": "Patrouilleuse, vous êtes encore trop jeune pour comprendre... Les blessures physiques, ça va, mais un cœur brisé, c'est bien pire.",
+                "ja": "巡尉ちゃんよ。あんたは何もわかってない。心の痛みと比べたら、体の痛みなんて大した事ないのだよ……",
+                "ko": "이 녀석 아직도 모르는군. 몸의 아픔은 단지 표면적인 것일 뿐 진정한 아픔은 마음의 아픔이란다",
+                "th": "ยัยหนูหน่วยลาดตระเวน เธอยังเด็กเกินกว่าจะเข้าใจความหมายของความรัก การอดทนต่อความเจ็บปวดทางกายก็เป็นเรื่องหนึ่ง แต่ความเจ็บปวดจากรักที่ไม่สมหวังนั้นเป็นสิ่งที่แม้แต่วีรบุรุษผู้ยิ่งใหญ่ก็ไม่อาจเอาชนะได้",
+                "zh-Hans": "小巡尉，你现在还不明白，身上的痛只是皮毛而已，心里的痛才是……",
+                "zh-Hant": "小巡尉，你現在還不明白，身上的痛只是皮毛而已，心裡的痛才是……"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, ich werde ein beeindruckendes Echo einfangen und meine Liebe erlangen.",
+                "en": "Anyway, I’ll capture an impressive Echo and seize my love.",
+                "es": "De todos modos, capturaré un impresionante Eco y conquistaré mi amor.",
+                "fr": "De toute façon, je vais capturer un Écho impressionnant et conquérir son cœur.",
+                "ja": "とにかく！俺はカッコイイ音骸がほしい！でなきゃ気が済まない！",
+                "ko": "됐어. 아무튼 꼭 내 손으로 에코를 잡아야 마음이 편해질 거야",
+                "th": "เอาเถอะ ฉันจะไปหาเอคโค่ที่น่าทึ่ง เพื่อคว้ารัก",
+                "zh-Hans": "唉，总之我就是要去抓威风的声骸，抓到了才能安心。",
+                "zh-Hant": "唉，總之我就是要去抓威風的聲骸，抓到了才能安心。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, bitte überdenke es nochmal, Großvater Jingzhu! Echos werden immer da sein, um sie einzufangen. Sobald du dich erholst, kannst du so viele einfangen, wie du willst!",
+                "en": "Oh, please reconsider, Grandpa Jingzhu! Echoes will always be there for you to capture. Once you recover, you can catch as many as you want!",
+                "es": "¡Oh, por favor reconsidera, Abuelo Jingzhu! Los Ecos siempre estarán ahí para que los captures. ¡Una vez que te recuperes, puedes atrapar todos los que quieras!",
+                "fr": "S'il vous plaît, réfléchissez-y encore, Monsieur Jingzhu ! Les Échos seront toujours là à capturer. Une fois que vous serez rétabli, vous pourrez en attraper autant que vous voudrez !",
+                "ja": "ああ、もう、だからダメだって！音骸ならいくらでもあるじゃん！今度体が治ったら、きっと捕れるって！",
+                "ko": "할아버지, 그렇게 급할 거 없잖아. 건강이 우선이지! 어차피 에코는 언제든지 잡을 수 있잖아. 다음에 꼭 잡을 수 있을 거야",
+                "th": "โอ๊ย ปู่ Jingzhu คิดใหม่เถอะ! เอคโค่น่ะจะจับเมื่อไหร่ก็ได้แต่ต้องรอให้หายป่วยก่อน พอหายดีแล้ว จะจับสักกี่ตัวก็ได้!",
+                "zh-Hans": "景烛爷爷，急不得急不得，声骸啥时候没有，你先把身体养好，下次肯定一抓一个准！",
+                "zh-Hant": "景燭爺爺，急不得急不得，聲骸啥時候沒有，你先把身體養好，下次肯定一抓一個准！"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sobald ich mich erhole... Aber Kind, ich werde es leid zu warten. Wann wird sich die Gelegenheit wieder ergeben?",
+                "en": "Once I recover... But kid, I grow tired of waiting. When will the opportunity arise again?",
+                "es": "Una vez que me recupere... Pero chico, me canso de esperar. ¿Cuándo surgirá de nuevo la oportunidad?",
+                "fr": "Une fois rétabli... On me dit toujours d'attendre, mais à mon âge, combien de « prochaines fois » il me reste ?",
+                "ja": "今度、今度……もう聞き飽きた……この歳じゃ、「今度」の数だってたかが知れてる。",
+                "ko": "다음에, 다음에... 맨날 다음에냐? 이 나이에 다음을 언제까지 기다려야 하냐?",
+                "th": "รอให้หายป่วยก่อนงั้นเรอะ... แต่ฉันเริ่มเบื่อที่จะรอแล้วนะยัยหนู แบบนี้เมื่อไหร่ฉันมีโอกาสอีกล่ะ?",
+                "zh-Hans": "下次，下次……总说下次，我都这把年纪了，下次得等到什么时候？",
+                "zh-Hant": "下次，下次……總說下次，我都這把年紀了，下次得等到什麼時候？"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Außerdem sind die Tacet-Dissonanzen in letzter Zeit am aktivsten, also ist es die beste Zeit, um beeindruckende Echos einzufangen!",
+                "en": "Besides, Tacet Discords are most active recently, so it’s the best time to capture impressive Echoes!",
+                "es": "Además, las Disonancias Tácitas están muy activas recientemente, ¡así que es el mejor momento para capturar Ecos impresionantes!",
+                "fr": "En plus, les Tacets Discords sont très actifs en ce moment, c'est donc le moment idéal pour en capturer de bons !",
+                "ja": "それに、近頃は音骸の活動も多い……強い音骸を捕るなら、今だ。",
+                "ko": "게다가 요즘이 한창 에코가 활약하는 시기인데, 이럴 때야말로 엄청난 에코를 잡을 수 있는 기회야",
+                "th": "อีกอย่าง ช่วงนี้พวกทาเซ็ตดิสคอร์ดมีความเคลื่อนไหวมากที่สุด จึงเป็นช่วงเวลาที่ดีที่สุดในการจับเอคโค่ที่น่าทึ่ง!",
+                "zh-Hans": "再说，最近正是声骸活跃的时候，最容易抓到厉害的声骸。",
+                "zh-Hant": "再說，最近正是聲骸活躍的時候，最容易抓到厲害的聲骸。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann diese Chance nicht verpassen.",
+                "en": "I can’t let this chance slip away.",
+                "es": "No puedo dejar que esta oportunidad se me escape.",
+                "fr": "Je ne peux pas laisser passer cette opportunité.",
+                "ja": "これを逃したら、「今度」はない。",
+                "ko": "이번 기회를 놓치고 다음에 강력한 에코를 잡으려면 엄청 힘들 거라고",
+                "th": "ฉันไม่ปล่อยให้โอกาสนี้หลุดมือไปหรอกนะ",
+                "zh-Hans": "错过这次，下次就难说咯。",
+                "zh-Hant": "錯過這次，下次就難說咯。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay, okay. Wie wäre es damit?",
+                "en": "Okay, okay. How about this?",
+                "es": "De acuerdo, de acuerdo. ¿Qué te parece esto?",
+                "fr": "Bon. Que diriez-vous de ça ?",
+                "ja": "じゃあさ……こうしよう！",
+                "ko": "이러면... 차라리 거래를 해보자!",
+                "th": "โอเค โอเค งั้นเอาแบบนี้ไหม?",
+                "zh-Hans": "那……咱们做个交易吧！",
+                "zh-Hant": "那……咱們做個交易吧！"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich fange Echos für dich und du gehst ins Krankenhaus. Ist das okay?",
+                "en": "I’ll go catch Echoes for you and you’ll go to the hospital. Is that okay?",
+                "es": "Yo atraparé Ecos para ti y tú irás al hospital. ¿Está bien?",
+                "fr": "Je vais attraper des Échos pour vous, vous allez à l'hôpital. D'accord ?",
+                "ja": "音骸は、あたしが捕ってくる。代わりに、じいちゃんは大人しく病院に行って。どう？",
+                "ko": "에코를 잡아줄 테니 대신 할아버지는 병원에 가서 치료를 받아야 해, 어때?",
+                "th": "ฉันจะไปจับเอคโค่ให้ปู่เอง ส่วนปู่ก็ไปโรงพยาบาล โอเคไหม?",
+                "zh-Hans": "我替你去抓声骸，但是作为交换，你要乖乖去医院处理伤口，可以吗？",
+                "zh-Hant": "我替你去抓聲骸，但是作為交換，你要乖乖去醫院處理傷口，可以嗎？"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich möchte dich nicht mit meinem eigenen Problem belästigen...",
+                "en": "But I don’t want to bother you with my own issue...",
+                "es": "Pero no quiero molestarte con mi problema...",
+                "fr": "Mais je ne veux pas vous déranger avec mes soucis...",
+                "ja": "い、いや、自分で捕ってこその……",
+                "ko": "그건 좀 그렇잖아",
+                "th": "แต่ฉันไม่อยากเอาเรื่องส่วนตัวมารบกวนเธอ...",
+                "zh-Hans": "这、这怎么好意思？",
+                "zh-Hant": "這、這怎麼好意思？"
+              },
+              "id": 26,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Sorge. Es ist überhaupt kein Problem! Schließlich ist es die Pflicht eines Patrouilleurs, sich um die Bedürfnisse der Bewohner zu kümmern.",
+                "en": "No worries. It’s no trouble at all! After all, it’s a Patroller’s duty to take care of the residents’ needs.",
+                "es": "No te preocupes. ¡No es ningún problema! Después de todo, es el deber de un Patrullero atender las necesidades de los residentes.",
+                "fr": "Ne vous inquiétez pas. C'est pas un problème ! Après tout, c'est la responsabilité d'une Patrouilleuse de s'occuper des habitants.",
+                "ja": "住民を助けるのが巡尉の仕事だからね。あたしに任せれば大丈夫だって！",
+                "ko": "괜찮아! 이웃을 돌보는 것도 지역 순찰관의 책임이잖아~ 내 일이니까 마음 불편해하지 않아도 돼",
+                "th": "ไม่ต้องห่วง ฉันไม่ลำบากเลย! เพราะยังไงเสียก็เป็นหน้าที่ของหน่วยลาดตระเวนที่ต้องดูแลความต้องการของชาวเมืองอยู่แล้ว",
+                "zh-Hans": "照顾街坊是社区巡尉的职责呀~这是我的工作，不用不好意思。",
+                "zh-Hant": "照顧街坊是社區巡尉的職責呀~這是我的工作，不用不好意思。"
+              },
+              "id": 27,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun, aber es ist mir unangenehm, dich mit meinem persönlichen Problem Überstunden machen zu lassen... Wenn du darauf bestehst zu helfen, wirst du eine Entschädigung als Zeichen meiner Dankbarkeit aus meinen Ersparnissen akzeptieren.",
+                "en": "Well, it doesn’t sit right with me having you work overtime for my personal issues. If you’re going to help, you have to accept some compensation from my savings. It’s the least I can do.",
+                "es": "Bueno, pero me siento incómodo dejándote trabajar horas extras con mi problema personal... Si insistes en ayudar, aceptarás una compensación como muestra de mi gratitud de mis ahorros.",
+                "fr": "Eh bien, ça ne me semble pas juste que vous travaillez en heures supplémentaires pour mes affaires personnelles. Si vous m'aidez, vous devez accepter une compensation de mes économies. C'est la moindre des choses.",
+                "ja": "と言っても、俺の事で残業させるのはどうもなあ……そうだ。少ないが金を出そう。仕事なら、金を払うのが筋だろう？",
+                "ko": "나 때문에 야근을 하게 되어 좀 미안하네. 이렇게 하자. 할아버지가 몇 년 동안 돈을 좀 모았으니, 날 도와주는 대신 보수를 꼭 지불할게",
+                "th": "เอ่อ ฉันไม่สบายใจเลยที่ต้องให้เธอทำงานล่วงเวลาเพียงเพื่อเรื่องส่วนตัวของฉัน ถ้าเธอจะช่วย เธอต้องยอมรับค่าตอบแทนจากฉัน ฉันพอมีเงินเก็บอยู่บ้าง อย่างน้อยก็พอช่วยอะไรได้บ้าง",
+                "zh-Hans": "话虽这么说，但为了老头子我的私事让你加班……实在是过意不去呀。这样吧，我这些年攒了一些钱，你要帮忙可以，必须收下报酬。",
+                "zh-Hant": "話雖這麼說，但為了老頭子我的私事讓你加班……實在是過意不去呀。 這樣吧，我這些年攢了一些錢，你要幫忙可以，必須收下報酬。"
+              },
+              "id": 28,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, nein, bitte mach dir keine Sorgen um eine Entschädigung. Mein Gehalt ist völlig ausreichend. Tatsächlich habe ich einen kompetenten Freund im Kopf. Wie wäre es, wenn wir {Male=ihn;Female=sie} stattdessen einstellen?",
+                "en": "Oh, no need to worry about paying me! Actually, I have a really skilled friend who could help. What if we hire {Male=him;Female=her} to help instead?",
+                "es": "Oh, no, por favor no te preocupes por la compensación. Mi salario es perfectamente adecuado. De hecho, tengo un amigo competente en mente. ¿Qué tal si contratamos a {Male=él;Female=ella} para que ayude en su lugar?",
+                "fr": "Mon salaire me suffit largement ! Mais je vous recommande une personne, pourquoi ne pas {Male=lui;Female=la} demander de venir aider, et vous pourrez {Male=lui;Female=la} donner la récompense ?",
+                "ja": "あたしの給料は別に……でも、すっごい友達が一人いるんだ。その人に手伝ってもらって、お金もそっちに払えばいいんじゃない？",
+                "ko": "에이~ 괜찮아, 나 돈 많아! 아 맞다! 나한테 대단한 친구가 있어. 정 그렇다면 그에게 보상을 주고 도움을 구하는 게 어때?",
+                "th": "อ๋อ ไม่ต้องห่วงเรื่องจ่ายเงินให้ฉันหรอก! จริงๆ แล้วฉันมีเพื่อนที่เก่งมากคนหนึ่งที่ช่วยได้ ถ้าเราจ้าง{Male=เขา;Female=เธอ}มาช่วยแทนล่ะ?",
+                "zh-Hans": "我的工资够用啦！唔……不过我有个很厉害的朋友，不如我叫{TA}来帮忙，报酬给{TA}就好啦。",
+                "zh-Hant": "我的工資夠用啦！ 唔……不過我有個很厲害的朋友，不如我叫{TA}來幫忙，報酬給{TA}就好啦。"
+              },
+              "id": 29,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist für mich in Ordnung.",
+                "en": "That’s fine for me.",
+                "es": "Eso está bien para mí.",
+                "fr": "Ça me va.",
+                "ja": "なるほど、悪くない。",
+                "ko": "그래",
+                "th": "เอาแบบนั้นก็ได้",
+                "zh-Hans": "也好，也好。",
+                "zh-Hant": "也好，也好。"
+              },
+              "id": 30,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ausgezeichnet! Überlassen Sie das mir! Großvater Jingzhu, gehen Sie jetzt bitte ins Krankenhaus und kümmern Sie sich um Ihre Verletzungen.",
+                "en": "Excellent! Leave it to me! Grandpa Jingzhu, now please go to the hospital and tend to your injuries.",
+                "es": "¡Excelente! ¡Déjamelo a mí! Abuelo Jingzhu, ahora por favor ve al hospital y atiende tus heridas.",
+                "fr": "C'est réglé alors ! Monsieur Jingzhu, allez d'abord à l'hôpital, il ne faut pas négliger vos blessures.",
+                "ja": "じゃ、決まりだね！景燭じいちゃんは早く病院に行って。んで、傷の手当てをしてもらわないと。",
+                "ko": "그럼 그렇게 하는 거다! 할아버지는 빨리 병원에 가서 치료를 받아!",
+                "th": "เยี่ยมเลย! ปล่อยเป็นหน้าที่ฉันเอง! ปู่ Jingzhu ไปโรงพยาบาลเดี๋ยวนี้เลย ไปรักษาอาการบาดเจ็บของปู่ให้หายดีเถอะ",
+                "zh-Hans": "那就这么说定了！景烛爷爷你先去医院吧，伤口可耽误不得。",
+                "zh-Hant": "那就這麼說定了！ 景燭爺爺你先去醫院吧，傷口可耽誤不得。"
+              },
+              "id": 31,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 27,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich habe endlich Großvater Jingzhu überzeugt, ins Krankenhaus zu gehen... Es wird spät. {PlayerName} sollte bald hier sein...",
+                "en": "Finally convinced Grandpa Jingzhu to go to the hospital... It's getting late. {PlayerName} should be arriving here soon...",
+                "es": "Finalmente convencí al abuelo Jingzhu de ir al hospital... Se está haciendo tarde. {PlayerName} debería estar llegando aquí pronto...",
+                "fr": "J'ai enfin convaincu monsieur Jingzhu d'aller à l'hôpital... Il commence à se faire tard. {PlayerName} devrait arriver bientôt…",
+                "ja": "はぁ……やっとじいちゃん、病院に行ってくれた……って、やばっ！もうこんな時間！？",
+                "ko": "휴~ 할아버지 드디어 병원에 가셨네... 헐, 벌써 이 시간이군. 그럼 {PlayerName}도 거의 다 왔겠네...",
+                "th": "ในที่สุดก็เกลี้ยกล่อมปู่ Jingzhu ให้ไปโรงพยาบาลได้สำเร็จ... นี่ก็เริ่มจะค่ำแล้ว {PlayerName} น่าจะมาถึงในเร็วๆ นี้แหละ...",
+                "zh-Hans": "唉，好说歹说总算把景烛爷爷劝去医院了……唔，都这个点儿了啊，那{PlayerName}应该也快到了吧……",
+                "zh-Hant": "唉，好說歹說總算把景燭爺爺勸去醫院了……唔，都這個點兒了啊，那{PlayerName}應該也快到了吧……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bin hier.",
+                    "en": "I’m here.",
+                    "es": "Estoy aquí.",
+                    "fr": "Je suis là.",
+                    "ja": "やっほー。",
+                    "ko": "저 여기 있어요",
+                    "th": "ฉันมาแล้ว",
+                    "zh-Hans": "我在这呢。",
+                    "zh-Hant": "我在這呢。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh mein Gott, du hast mich erschreckt! Wann bist du hier angekommen?",
+                "en": "Oh my, you scared me! When did you get here?",
+                "es": "¡Dios mío, me asustaste! ¿Cuándo llegaste aquí?",
+                "fr": "Oh, tu m'as fait peur ! Depuis quand es-tu là ?",
+                "ja": "うわぁびっくりした！いつからそこに！？",
+                "ko": "깜짝이야! 언제 왔어? 설마 다 들었어?",
+                "th": "ว้าย ตกใจหมดเลย! มาตั้งแต่เมื่อไหร่เนี่ย?",
+                "zh-Hans": "哇，吓我一跳！你啥时候到的？",
+                "zh-Hant": "哇，嚇我一跳！ 你啥時候到的？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Am Anfang deines Gesprächs.",
+                    "en": "At the start of your conversation.",
+                    "es": "Al inicio de tu conversación.",
+                    "fr": "Depuis le début de ta conversation.",
+                    "ja": "最初くらい？",
+                    "ko": "다 들었어요",
+                    "th": "มาตอนที่พวกคุณเริ่มคุยกัน",
+                    "zh-Hans": "话都听得七七八八。",
+                    "zh-Hant": "話都聽得七七八八。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was denkst du also?",
+                "en": "Then what do you think?",
+                "es": "¿Entonces, qué opinas?",
+                "fr": "Alors, qu'est-ce que t'en penses ?",
+                "ja": "そう……じゃ、返事は？",
+                "ko": "그럼 어떻게 생각해?",
+                "th": "แล้วคุณว่าไง?",
+                "zh-Hans": "噢，那你怎么想嘛？",
+                "zh-Hant": "噢，那你怎麼想嘛？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Solange du bezahlst.",
+                    "en": "As long as you pay.",
+                    "es": "Siempre que pagues.",
+                    "fr": "Tant que tu paies.",
+                    "ja": "報酬があれば。",
+                    "ko": "보수가 있다면 괜찮은 것 같아요",
+                    "th": "ถ้าจ่ายก็ได้หมด",
+                    "zh-Hans": "有报酬就行。",
+                    "zh-Hant": "有報酬就行。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin ein bisschen neugierig.",
+                    "en": "I’m a bit curious.",
+                    "es": "Estoy un poco {Male=curioso;Female=curiosa}.",
+                    "fr": "Je suis un peu {Male=curieux;Female=curieuse}.",
+                    "ja": "気になる……",
+                    "ko": "조금 궁금하네요",
+                    "th": "ฉันสงสัยนิดหน่อยน่ะ",
+                    "zh-Hans": "有点好奇。",
+                    "zh-Hant": "有點好奇。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Super, du kannst ein bisschen extra Geld verdienen, während du Großvater Jingzhu hilfst. Zwei Fliegen mit einer Klappe, oder?",
+                "en": "Great, you can make some extra money while helping Grandpa Jingzhu. Talk about killing two birds with one stone, right?",
+                "es": "Genial, puedes ganar un poco de dinero extra mientras ayudas al abuelo Jingzhu. Es como matar dos pájaros de un tiro, ¿verdad?",
+                "fr": "Super, tu vas gagner un peu d'argent tout en aidant monsieur Jingzhu. Deux oiseaux avec une pierre, non ?",
+                "ja": "うんうん！報酬も出るし、景燭じいちゃんの助けにもなるし……良いことずくめだね！",
+                "ko": "그렇긴 하지. 돈도 벌 수 있고 할아버지도 도울 수 있으니 당연히 좋은 일이지",
+                "th": "เยี่ยมเลย คุณจะมีรายได้เสริมพร้อมกับได้ช่วยปู่ Jingzhu ไปด้วย เหมือนยิงปืนนัดเดียวได้นกสองตัวเลยเนอะ?",
+                "zh-Hans": "嗯嗯，能赚些外快，还能帮上景烛爷爷，也算好事一桩啦！",
+                "zh-Hant": "嗯嗯，能賺些外快，還能幫上景燭爺爺，也算好事一樁啦！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ehrlich gesagt, bin ich auch super neugierig. Es ergibt einfach keinen Sinn, dass eine alte Dame so auf Echos steht!",
+                "en": "Honestly, I'm super curious too. Something just doesn't add up with an old lady being so into Echoes!",
+                "es": "Honestamente, también estoy súper curioso. ¡Algo no cuadra con una anciana tan interesada en los Ecos!",
+                "fr": "Franchement, je suis super curieuse aussi. Il y a quelque chose de bizarre dans cette histoire de vieille dame obsédée par les Échos !",
+                "ja": "あたしも……音骸好きのばあちゃん……見たことないな……",
+                "ko": "얘기를 들으니 나도 좀 궁금하네. 에코를 좋아하는 할머니가 어디 있어?",
+                "th": "จริงๆ นะ ฉันก็อยากรู้เหมือนกัน บางอย่างฟังดูไม่เข้าเค้าเลย ผู้หญิงมีอายุที่ไหนจะชอบเอคโค่!",
+                "zh-Hans": "是哦，你这么一说，我也有点好奇了。到底为什么会有老太太喜欢声骸嘛！",
+                "zh-Hant": "是喔，你這麼一說，我也有點好奇了。到底為什麼會有老太太喜歡聲骸嘛！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und warum ist Großvater Jingzhu so stur...",
+                "en": "And why is Grandpa Jingzhu being so stubborn...",
+                "es": "Y ¿por qué el abuelo Jingzhu es tan terco...",
+                "fr": "Et pourquoi monsieur Jingzhu est-il si têtu…",
+                "ja": "それに、どうして景燭じいちゃんはあんな無理しようとするんだろう……",
+                "ko": "그리고 할아버지가 왜 그렇게 고집이 센지...",
+                "th": "แล้วทำไมปู่ Jingzhu ถึงได้รั้นนักล่ะ...?",
+                "zh-Hans": "而且，到底为什么景烛爷爷会那么倔呢……",
+                "zh-Hant": "而且，到底為什麼景燭爺爺會那麼倔呢……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht bekommen wir einige Antworten, sobald wir diese Echos geschnappt haben.",
+                "en": "Maybe we'll get some answers once we've snagged those Echoes.",
+                "es": "Quizás obtendremos algunas respuestas una vez que hayamos conseguido esos Ecos.",
+                "fr": "On aura peut-être des réponses une fois qu'on aura capturé ces Échos.",
+                "ja": "疑問は尽きないけど……まずは音骸を捕らないとね。",
+                "ko": "아마 에코를 잡아봐야 이유를 알 수 있을 것 같은데...",
+                "th": "เราอาจจะได้คำตอบตอนที่จับเอคโค่มาให้คุณปู่สำเร็จ",
+                "zh-Hans": "可能要抓了声骸才知道了吧……",
+                "zh-Hant": "可能要抓了聲骸才知道了吧……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also dann, lass uns vorbereiten und loslegen!",
+                "en": "Alrighty then, let’s get prepped and roll out!",
+                "es": "Muy bien, ¡preparémonos y pongámonos en marcha!",
+                "fr": "Bon, préparons-nous et c'est parti !",
+                "ja": "んじゃ、さっそく出発だ！",
+                "ko": "그럼 준비하고 출발하자",
+                "th": "เอาล่ะ มาเตรียมตัวและออกเดินทางกันเลยดีกว่า!",
+                "zh-Hans": "那，我们准备一下就动身吧~",
+                "zh-Hant": "那，我們準備一下就動身吧~"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Jingzhu und übe seine Einführungslinien",
+        "en": "Talk to Jingzhu and practice his opening lines",
+        "es": "Habla con Jingzhu y practica sus líneas de apertura.",
+        "fr": "Parler à Jingzhu et pratiquer ses lignes d'ouverture",
+        "ja": "景燭と会話し、一緒に練習する",
+        "ko": "치샤와 대화를 나누고 함께 오프닝 대사 연습하기",
+        "th": "คุยกับจิงจู แล้วเรียนรู้คำพูดของเขา",
+        "zh-Hans": "和景烛对话，一起练习开场白",
+        "zh-Hant": "和景燭對話，一起練習開場白"
+      },
+      "entities": [
+        {
+          "entityId": 139000156,
+          "mapId": 8,
+          "blueprintType": "NPC005",
+          "name": "TsEntity_157_001_皇龙老人5",
+          "areaId": 301,
+          "position": {
+            "x": -52120,
+            "y": 110409,
+            "z": 1541
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 21,
+          "talks": [
+            {
+              "text": {
+                "de": "Ihr Haus ist dort drüben. Ich bin diesen Weg schon oft gegangen und ich werde keinen Fehler machen.",
+                "en": "Her house is over there. I've walked that path many times and I won't make a mistake.",
+                "es": "Su casa está allí. He caminado ese camino muchas veces y no cometeré un error.",
+                "fr": "Sa maison est par là. J'ai emprunté ce chemin tellement de fois que je ne peux pas me tromper.",
+                "ja": "彼女の家はあそこだ……もう何度も行ったんだ、間違えようもない。",
+                "ko": "그녀의 집은 바로 저쪽이야. 여러 번 가봤으니까 틀림없어",
+                "th": "บ้านเธออยู่ตรงนั้น ฉันเดินผ่านเส้นทางนั้นหลายครั้งแล้ว จำไม่ผิดแน่",
+                "zh-Hans": "她家就在那边……我去过好多次，不会记错的。",
+                "zh-Hant": "她家就在那邊……我去過好多次，不會記錯的。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bevor ich an ihre Tür klopfe, muss ich dich um einen Gefallen bitten.",
+                "en": "Before I go knocking on her door, there's a favor I must ask of you.",
+                "es": "Antes de ir a tocar a su puerta, hay un favor que debo pedirte.",
+                "fr": "Avant d'aller frapper à sa porte, j'ai une faveur à vous demander.",
+                "ja": "だが……その前に、一つ頼み事がある。",
+                "ko": "다만... 만나기 전에 부탁이 하나 더 있어",
+                "th": "ก่อนจะไปเคาะประตูบ้านเธอ ฉันมีเรื่องจะขอร้องอย่างหนึ่ง",
+                "zh-Hans": "就是……在去找她之前，还有件事情拜托你们。",
+                "zh-Hant": "就是……在去找她之前，還有件事情拜託你們。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ähm, ich habe einige Anmachsprüche vorbereitet und ich brauche deine Hilfe, um sie zu überbringen.",
+                "en": "Ahem, I’ve prepared some opening lines and I need your assistance in delivering them.",
+                "es": "Ejem, he preparado algunas frases de apertura y necesito tu ayuda para decirlas.",
+                "fr": "J'ai préparé quelques phrases d'introduction, et j'ai besoin de votre aide pour les dire.",
+                "ja": "コホン！俺はいくつか口説き文句を用意した。",
+                "ko": "내가 오프닝 대사를 좀 준비했으니, 이따가 너희들의 협조가 필요할 수도 있어",
+                "th": "อะแฮ่ม ฉันเตรียมคำพูดไว้บ้างแล้ว และอยากให้ช่วยพูดประโยคพวกนี้หน่อย",
+                "zh-Hans": "咳咳，我准备了一些开场白，待会儿可能需要你们配合下。",
+                "zh-Hant": "咳咳，我準備了一些開場白，待會兒可能需要你們配合下。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Anmachsprüche?",
+                    "en": "Opening lines?",
+                    "es": "¿Frases de apertura?",
+                    "fr": "Des phrases d'introduction ?",
+                    "ja": "口説き文句？",
+                    "ko": "오프닝 대사?",
+                    "th": "เตรียมคำพูดไว้งั้นเหรอ?",
+                    "zh-Hans": "开场白？",
+                    "zh-Hant": "開場白？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun, nur einige nette Worte, sorgfältig ausgewählt, und ich glaube, sie werden definitiv Wirkung zeigen.",
+                "en": "Well, just some nice words, carefully chosen, and I believe they’ll definitely do the trick.",
+                "es": "Bueno, solo algunas palabras agradables, cuidadosamente elegidas, y creo que definitivamente funcionarán.",
+                "fr": "Eh bien, juste quelques mots choisis avec soin, et je suis sûr qu'ils feront l'affaire.",
+                "ja": "ああ、俺が苦労して調べ上げたものだ。",
+                "ko": "그냥 듣기 좋은 말들이야! 내가 나름 공부해서 짜온거야",
+                "th": "แค่คำพูดหวานๆ สองสามคำที่เลือกสรรมาอย่างดี และฉันเชื่อว่าจะต้องได้ผลแน่นอน",
+                "zh-Hans": "就是一些好听的话，老头子我查了老半天呢，准灵。",
+                "zh-Hant": "就是一些好聽的話，老頭子我查了老半天呢，准靈。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Weißt du, was süßer ist als jede Blüte? Nicht das Leuchten der Wasserlampe, noch der Duft der Iris, sondern das Aufblühen unserer perfekten Liebe!",
+                "en": "Do you know what’s sweeter than any bloom? Not the Waterlamp’s glow, nor the Iris’s perfume, but the blossom of our love’s perfect tune!",
+                "es": "¿Sabes qué es más dulce que cualquier flor? No el resplandor de la Flor de lámpara, ni el perfume del lirio, ¡sino el florecimiento de la melodía perfecta de nuestro amor!",
+                "fr": "Savez-vous ce qui est plus doux que toutes les fleurs ? Ce n'est ni l'éclat de la Lanterne d'eau, ni le parfum de l'Iris, mais l'épanouissement parfait de notre amour !",
+                "ja": "一番綺麗な花は……鳶尾花（アヤメ）でもない、水灯花（イグサ）でもない！君と出会ったその日から、私の心に咲いた、恋の花！",
+                "ko": "삶을 달콤하게 만드는 100가지 방법이 있는데 뭔지 알아요? 「용수염 사탕」을 먹거나 「구름솜사탕」을 먹거나 당신을 98번 생각하는거예요!",
+                "th": "รู้ไหมว่าอะไรรัญจวนใจกว่าดอกไม้บานสะพรั่ง? มิใช่แสงเรืองรองของโคมไฟวารี หรือกลิ่นหอมของดอกไอริสหรอกหนา หากแต่เป็นเพลงรักอันไพเราะที่พรั่งพรูออกมา!",
+                "zh-Hans": "你知道最好看的是什么花吗？不是水灯花，不是鸢尾花，是我遇到你，如同铁树开花！",
+                "zh-Hant": "你知道最好看的是什麼花嗎？ 不是水燈花，不是鳶尾花，是我遇到你，如同鐵樹開花！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Weißt du, was in Wuthering Waves ewig anhält? Nicht flüchtige Zivilisationen, noch die Geschichten der Tacet-Dissonanz, sondern meine unerschütterliche Liebe zu dir, für immer und ewig!",
+                "en": "Do you know what lasts forever in Wuthering Waves? Not fleeting civilizations, nor Tacet Discords’ lore, but my unwavering love for you, forevermore!",
+                "es": "¿Sabes qué dura para siempre en Wuthering Waves? No las civilizaciones efímeras, ni la leyenda de la Disonancia Tácita, ¡sino mi amor inquebrantable por ti, por siempre!",
+                "fr": "Savez-vous ce qui dure pour toujours dans le monde ? Ce ne sont ni les civilisations éphémères, ni les légendes des Zones taciturnes, mais mon amour inébranlable pour vous, pour toujours !",
+                "ja": "一番綺麗な色は……青色でもない、赤色でもない！私たちが歩いてきた人生を照らす、夕焼けの色！",
+                "ko": "내 마음이 어느 쪽에 있는지 알아요? 왼쪽도 아니고 오른쪽도 아닌 당신 쪽에 있어요!",
+                "th": "รู้ไหมว่าอะไรจะคงอยู่ในวัธเธอริงเวฟตลอดกาล? มิใช่อารยธรรมที่เปลี่ยนผ่านหรือตำนานทาเซ็ตดิสคอร์ด แต่เป็นรักมั่นที่ฉันมีให้เธอตลอด ตราบชั่วนิรันดร์!",
+                "zh-Hans": "你知道最美的是什么颜色吗？不是紫红，不是粉红，是最美不过我们的夕阳红！",
+                "zh-Hant": "你知道最美的是什麼顏色嗎？ 不是紫紅，不是粉紅，是最美不過我們的夕陽紅！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "...",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "……",
+                    "ja": "……",
+                    "ko": "......",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun... Großvater Jingzhu, was sind das für Sachen?",
+                "en": "Well... Grandpa Jingzhu, what are these?",
+                "es": "Bueno... Abuelo Jingzhu, ¿qué son estas?",
+                "fr": "Euh... Monsieur Jingzhu, c'est quoi ça ?",
+                "ja": "景燭じいちゃん……また変な事調べて……一体何に影響されたんだよ……",
+                "ko": "할아버지, 대체 이런건 어디서 배우는 거야?",
+                "th": "เอ่อ... ปู่ Jingzhu นี่คืออะไรเหรอคะ?",
+                "zh-Hans": "景烛爷爷，你查的什么呀？",
+                "zh-Hant": "景燭爺爺，你查的什麼呀？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "<i>Beliebte Liebesbotschaften in Huanglong</i>! Ähem, ich weiß, es mag ein bisschen seltsam erscheinen, dass jemand in meinem Alter so etwas sagt...",
+                "en": "<i>Popular Love Messages in Huanglong</i>! Ahem, I know it might seem a bit strange for someone of my age to say such things...",
+                "es": "¡<i>Mensajes de amor populares en Huanglong</i>! Ejem, sé que puede parecer un poco extraño que alguien de mi edad diga estas cosas...",
+                "fr": "<i>Messages d'Amour Populaires à Huanglong</i> ! Euh, je sais que ça peut sembler un peu étrange venant de quelqu'un de mon âge...",
+                "ja": "《誰でもできる！最新口説き文句百選》だが？そりゃいい歳して、俺だって恥ずかしいさ！",
+                "ko": "『황룡 사랑의 멘트 대전』에서 배웠어! 사실 나도 알아, 이 나이에 이런 말을 하는 건 좀 어색하지만...",
+                "th": "<i>ข้อความบอกรักสุดฮิตในหวงหลง</i>! เอ่อ... ฉันรู้ว่าอาจจะดูแปลกหน่อยที่คนอายุปูนนี้แล้วมาพูดอะไรแบบนี้...",
+                "zh-Hans": "《瑝珑热门情话大全》呀！咳咳，我知道，一把年纪了还说这些话，是有点……",
+                "zh-Hant": "《瑝瓏熱門情話大全》呀！ 咳咳，我知道，一把年紀了還說這些話，是有點……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber solange ich ihr Herz gewinnen kann, kann ich meinen Stolz beiseite legen.",
+                "en": "But as long as I can win her heart, I can put aside my pride.",
+                "es": "Pero mientras pueda ganar su corazón, puedo dejar de lado mi orgullo.",
+                "fr": "Mais tant que je peux gagner son cœur, je suis prêt à mettre ma fierté de côté.",
+                "ja": "でも、彼女のためなら……こんなの大した事じゃない！",
+                "ko": "그녀를 위해서라면 창피해도 괜찮아!",
+                "th": "แต่ขอแค่พิชิตใจ Linghan ได้ ฉันยอมทิ้งศักดิ์ศรี",
+                "zh-Hans": "可为了她，我这一张老脸呀，也就豁出去了。",
+                "zh-Hant": "可為了她，我這一張老臉呀，也就豁出去了。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich zähle auf dich. Nachdem ich meinen Text gesagt habe, wirst du das perfekte Ambiente schaffen.",
+                "en": "I’m counting on you. After I say my line, you’ll follow up to set the perfect mood.",
+                "es": "Cuento contigo. Después de que diga mi frase, seguirás para crear el ambiente perfecto.",
+                "fr": "Je compte sur vous. Après que je dise ma réplique, vous enchaînerez pour créer l'ambiance parfaite.",
+                "ja": "お前たちには場を盛り上げてもらいたい。俺と一緒に今の言葉を大きな声で言うんだ。",
+                "ko": "이따가 부탁할게! 옆에서 맞장구를 치며 분위기 띄워줘!",
+                "th": "ฝากด้วยนะ พอฉันพูดจบ ก็พูดตามเพื่อสร้างบรรยากาศหวานแหวว",
+                "zh-Hans": "等下就拜托你们了，我一句，你们一句，帮我烘托点气氛。",
+                "zh-Hant": "等下就拜託你們了，我一句，你們一句，幫我烘托點氣氛。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Okay, in Ordnung.",
+                    "en": "Okay, fine.",
+                    "es": "Está bien, de acuerdo.",
+                    "fr": "D'accord, ça marche.",
+                    "ja": "{Male=任せろ！;Female=任せて！}",
+                    "ko": "그래요",
+                    "th": "โอเค ได้",
+                    "zh-Hans": "行吧。",
+                    "zh-Hant": "行吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich verlange eine Gehaltserhöhung.",
+                    "en": "I require a raise.",
+                    "es": "Necesito un aumento.",
+                    "fr": "Je demande une augmentation.",
+                    "ja": "別料金でいい？",
+                    "ko": "그건 추가 요금이 붙어요",
+                    "th": "ฉันขอค่าตอบแทนเพิ่ม",
+                    "zh-Hans": "这是另外的价钱。",
+                    "zh-Hant": "這是另外的價錢。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, ich hatte keine Ahnung, dass du sogar hilfreicher bist als ich! Gut gemacht!",
+                "en": "{PlayerName}, I had no idea you’re even more helpful than me! Way to go!",
+                "es": "{PlayerName}, ¡no tenía idea de que eres incluso más útil que yo! ¡Bien hecho!",
+                "fr": "{PlayerName}, je ne savais pas que tu étais encore plus serviable que moi !",
+                "ja": "{PlayerName}……なんかわかんないけどノリノリだね！",
+                "ko": "{PlayerName}, 나보다 더 열정적인 사람이군!",
+                "th": "{PlayerName} ไม่ยักรู้ว่าคุณมีประโยชน์กว่าฉันเสียอีก! เยี่ยมไปเลย!",
+                "zh-Hans": "{PlayerName}，没看出来，你比我还热心啊！",
+                "zh-Hant": "{PlayerName}，沒看出來，你比我還熱心啊！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich werde ich nicht an der Entlohnung sparen. Deine Bemühungen werden gebührend belohnt.",
+                "en": "Of course, I won’t stint on compensation. Your efforts will be duly rewarded.",
+                "es": "Por supuesto, no escatimaré en compensación. Tus esfuerzos serán debidamente recompensados.",
+                "fr": "Bien sûr, je ne lésinerai pas sur la récompense. Vos efforts seront dûment compensés.",
+                "ja": "報酬は勿論、弾むからな！",
+                "ko": "당연히 보수를 줘야지! 걱정 마, 나중에 같이 줄게",
+                "th": "แน่นอน ฉันจะไม่งกเรื่องค่าตอบแทน ฉันจะตอบแทนอย่างสมน้ำสมเนื้อเลยล่ะ",
+                "zh-Hans": "报酬好说，好说！到时候一起算，不会少的。",
+                "zh-Hant": "報酬好說，好說！ 到時候一起算，不會少的。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist also geklärt. Danke, Kinder.",
+                "en": "That’s settled then. Thank you, kids.",
+                "es": "Entonces, está decidido. Gracias, chicos.",
+                "fr": "C'est réglé alors. Merci, les jeunes.",
+                "ja": "これで決まりだ。本当に、何から何まで……ありがとう！",
+                "ko": "그럼 그렇게 해주는거다! 정말 고마워!",
+                "th": "งั้นเป็นอันตกลง ขอบคุณนะทั้งสองคน",
+                "zh-Hans": "那就这样说定了，老头子我提前跟你们道声谢谢。",
+                "zh-Hant": "那就這樣說定了，老頭子我提前跟你們道聲謝謝。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage Linghan nach ihren Gedanken",
+        "en": "Ask Linghan for her thoughts",
+        "es": "Pregunta a Linghan sus pensamientos.",
+        "fr": "Demander l'opinion de Linghan",
+        "ja": "凌寒の意見を聞く",
+        "ko": "소희의 생각 물어보기",
+        "th": "สอบถามความเห็นจากหลิงฮัน",
+        "zh-Hans": "询问凌寒的看法",
+        "zh-Hant": "詢問凌寒的看法"
+      },
+      "entities": [
+        {
+          "entityId": 139000151,
+          "mapId": 8,
+          "blueprintType": "NPC227",
+          "name": "TsEntity_154_013_老奶奶4",
+          "areaId": 301,
+          "position": {
+            "x": -52649,
+            "y": 111486,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 14,
+          "talks": [
+            {
+              "text": {
+                "de": "Schau! Sind diese Echos nicht beeindruckend? Diese beiden jungen Leute haben mir geholfen, sie zu fangen.",
+                "en": "Look! Aren’t these Echoes impressive? These two youngsters assisted me in capturing them.",
+                "es": "¡Mira! ¿No son impresionantes estos Ecos? Estos dos jóvenes me ayudaron a capturarlos.",
+                "fr": "Regardez ! Ces Échos ne sont-ils pas impressionnants ? Ces deux jeunes m'ont aidé à les capturer.",
+                "ja": "見ろこの音骸を。若者にわざわざ頼んで捕ってきてもらった優れものだ。",
+                "ko": "보세요, 에코 정말 위풍당당하죠! 제가 특별히 이 두 젊은이에게 부탁해서 잡아온 거예요",
+                "th": "ดูสิ! เอคโค่พวกนี้น่าประทับใจใช่ไหมล่ะ? สองคนนี้ช่วยฉันจับพวกมัน",
+                "zh-Hans": "看，这声骸威风吧！这可是我特意拜托这两位年轻人抓来的。",
+                "zh-Hant": "看，這聲骸威風吧！ 這可是我特意拜託這兩位年輕人抓來的。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Linghan, wir sind im ähnlichen Alter, mit gemeinsamen Interessen. Ich schätze dich und wünsche mir nichts mehr, als mit dir durchs Leben zu gehen. Würdest du mir die Ehre erweisen, diese Nachteminze zu akzeptieren?",
+                "en": "Linghan, we’re of similar age, with shared interests. I hold you dear and desire nothing more than to journey through life with you. Would you do me the honor of accepting this Noctemint?",
+                "es": "Linghan, somos de la misma edad, con intereses compartidos. Te aprecio mucho y no deseo nada más que recorrer la vida contigo. ¿Me harías el honor de aceptar esta Menta nocturna?",
+                "fr": "Linghan, nous avons le même âge, des intérêts communs. Vous m'êtes chère, et je ne désire rien de plus que de traverser la vie à vos côtés. M'accorderiez-vous l'honneur d'accepter ces Menthes poivrées ?",
+                "ja": "なあ、俺たちは歳も近く、趣味も似通ってる……頼む！この花を受け取ってもらえないか！",
+                "ko": "저기... 우리는 나이도 비슷하고 취향도 비슷하니, 혹시 이 베리민트를 받아줄 수 있을까요?",
+                "th": "Linghan เราอายุไล่เลี่ยกัน สนใจเรื่องเดียวกัน ฉันรักเธอและปรารถนาเพียงแค่ได้ร่วมชีวิตกัน เธอช่วยให้เกียรติรับสะระแหน่ราตรีได้ไหม?",
+                "zh-Hans": "再加上咱们年龄相仿，志趣相投，你看能不能赏个脸，收下我手中的夜息香？",
+                "zh-Hant": "再加上咱們年齡相仿，志趣相投，你看能不能賞個臉，收下我手中的夜息香？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn es um Echos geht, das ist meine Spezialität.",
+                "en": "Speaking of Echoes, that’s my specialty.",
+                "es": "Hablando de Ecos, esa es mi especialidad.",
+                "fr": "À propos des Échos, c'est ma spécialité.",
+                "ja": "音骸ね……私から言えるのは……",
+                "ko": "에코에 대해서는 제가 잘 알아요",
+                "th": "ถ้าเป็นเรื่องเอคโค่ ฉันเชี่ยวชาญมากเลยล่ะ",
+                "zh-Hans": "声骸我熟啊，里面的门道可多着呢。",
+                "zh-Hant": "聲骸我熟啊，裡面的門道可多著呢。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 762,
+                "name": {
+                  "zh-Hans": "凌寒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du ein Echo-Meister werden willst, kannst du ein Echo nicht nur nach seinem Aussehen beurteilen. Nehmen wir zum Beispiel diesen Karapax. Trotz seiner beeindruckenden Scheren, ist es vielleicht nicht das, was es zu sein scheint.",
+                "en": "If you’re aiming to become an Echo Master, you can’t judge an Echo solely from its appearance. Take this Carapace, for instance. Despite its imposing scythes, it may not be what it seems.",
+                "es": "Si apuntas a convertirte en un Maestro de Ecos, no puedes juzgar un Eco solo por su apariencia. Toma este Caparazón, por ejemplo. A pesar de sus imponentes guadañas, puede que no sea lo que parece.",
+                "fr": "Vous ne pouvez pas juger un Écho uniquement sur son apparence. Malgré ses imposantes faucilles, il n'est peut-être pas ce qu'il paraît.",
+                "ja": "カッコイイものを求めるだけじゃダメ。そんなハリボテ、何の役にも立たない。",
+                "ko": "강력한 잔상이 있다고 사방을 쓸어버릴 수 있는 건 아니에요, 그건 겉치레일 뿐이죠",
+                "th": "ถ้าคุณมีเป้าหมายจะเป็นปรมาจารย์เอคโค่ คุณต้องไม่ตัดสินเอคโค่จากรูปลักษณ์ภายนอกเพียงอย่างเดียว อย่างนักรบฮาวอคตัวนี้ ถึงจะมีเคียวน่าเกรงขาม แต่มันอาจไม่ได้เป็นอย่างที่เห็น",
+                "zh-Hans": "可不是有个威风的声骸就能横扫四方，虚有其表，没用，没用！",
+                "zh-Hant": "可不是有個威風的聲骸就能橫掃四方，虛有其表，沒用，沒用！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 762,
+                "name": {
+                  "zh-Hans": "凌寒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was wirklich zählt, ist das Echo zu finden, das mit dir resoniert und es klug zu pflegen. Denke immer daran, lass dich nie von Äußerlichkeiten beeinflussen!",
+                "en": "What truly counts is finding the Echo that resonates with you and nurturing it wisely. Always remember, never let appearances sway your decisions!",
+                "es": "Lo que realmente cuenta es encontrar el Eco que resuena contigo y nutrirlo sabiamente. Siempre recuerda, ¡nunca dejes que las apariencias influyan en tus decisiones!",
+                "fr": "Ce qui compte vraiment, c'est de trouver l'Écho qui résonne avec vous et de le cultiver avec sagesse. Souvenez-vous toujours, ne vous laissez jamais tromper par les apparences !",
+                "ja": "本気で極めたいのなら……相応しい音骸を見つけて、ちゃんと育てなきゃダメ。外見に惑わされないようにね……",
+                "ko": "에코를 잘 쓰려면 자신에게 맞는 에코를 찾아 잘 육성해야 해요. 화려한 에코만 모으는 건 아무 소용이 없어요",
+                "th": "สิ่งสำคัญที่แท้จริงคือการค้นหาเอคโค่ที่เหมาะกับตนเอง และบ่มเพาะมันอย่างชาญฉลาด จำไว้เสมอว่า อย่าปล่อยให้รูปลักษณ์ภายนอกมีอิทธิพลต่อการตัดสินใจของคุณ!",
+                "zh-Hans": "你们要是有心用好声骸啊，还是得找准适合自己的，好好养起来才行。净整这些花里胡哨的有啥用啊。",
+                "zh-Hant": "你們要是有心用好聲骸啊，還是得找准適合自己的，好好養起來才行。 淨整這些花裡胡哨的有啥用啊。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 762,
+                "name": {
+                  "zh-Hans": "凌寒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja, ja. Also, würdest du vielleicht diese Nachteminze annehmen?",
+                "en": "Yes, yes. So, might you consider accepting this Noctemint?",
+                "es": "Sí, sí. Entonces, ¿considerarías aceptar esta Menta nocturna?",
+                "fr": "Oui. Alors, accepteriez-vous ces Menthes poivrées ?",
+                "ja": "た、確かに……じゃ、じゃあ、返事の方は……？",
+                "ko": "네, 네... 그럼, 이 베리민트는?",
+                "th": "ได้ ได้ งั้นช่วยรับสะระแหน่ราตรีได้ไหม?",
+                "zh-Hans": "是，是……那，这夜息香？",
+                "zh-Hant": "是，是……那，這夜息香？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nein, danke. Ich bin nicht interessiert. Ich würde lieber in der Sonne liegen und ganz alleine einige getrocknete Melonensamen genießen.",
+                "en": "No, thank you. I’m not interested. I’d rather bask in the sunshine and enjoy some dried melon seeds all by myself.",
+                "es": "No, gracias. No estoy interesada. Prefiero disfrutar del sol y comer algunas semillas de melón secas por mi cuenta.",
+                "fr": "Non, merci. Je ne suis pas intéressée. Je préfère rester toute seule.",
+                "ja": "興味ないわ。\n一人で日向ぼっこをしてる方が性に合ってるから。",
+                "ko": "관심 없어요. 저는 그냥 혼자 햇볕을 쬐는 게 더 좋아요",
+                "th": "ไม่เป็นไร ฉันไม่สนใจหรอก ฉันอยากนอนอาบแดดกินเมล็ดแตงอบแห้งคนเดียวมากกว่า",
+                "zh-Hans": "那我可就不感兴趣了，我一个人晒晒太阳嗑嗑瓜子挺好的。",
+                "zh-Hant": "那我可就不感興趣了，我一個人曬曬太陽嗑嗑瓜子挺好的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 762,
+                "name": {
+                  "zh-Hans": "凌寒"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bereiten Sie sich darauf vor, mit Chixia zu gehen",
+        "en": "Prepare to leave with Chixia",
+        "es": "Prepárate para salir con Chixia.",
+        "fr": "Se préparer à partir avec Chixia",
+        "ja": "準備して出発する",
+        "ko": "준비를 마치고 함께 출발하기",
+        "th": "เตรียมไปกับ Chixia",
+        "zh-Hans": "准备妥当，一起出发",
+        "zh-Hant": "準備妥當，一起出發"
+      },
+      "entities": [
+        {
+          "entityId": 139000079,
+          "mapId": 8,
+          "blueprintType": "Player002",
+          "name": "TsEntity_角色002_炽霞13",
+          "areaId": 301,
+          "position": {
+            "x": -46181,
+            "y": 102859,
+            "z": 1410
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 139000186,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男3",
+          "areaId": 504,
+          "position": {
+            "x": -32730,
+            "y": -2996,
+            "z": 17720
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 125
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 139000187,
+          "mapId": 8,
+          "blueprintType": "Player002",
+          "name": "TsEntity_角色002_炽霞18",
+          "areaId": 504,
+          "position": {
+            "x": -32870,
+            "y": -3010,
+            "z": 17740
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 16,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}, bist du bereit?",
+                "en": "{PlayerName}, are you ready?",
+                "es": "¿{PlayerName}, estás listo?",
+                "fr": "{PlayerName}, tu es {Male=prêt;Female=prête} ?",
+                "ja": "{PlayerName}，準備出来た？",
+                "ko": "{PlayerName}, 준비는 다 됐어?",
+                "th": "{PlayerName} พร้อมหรือยัง?",
+                "zh-Hans": "{PlayerName}，准备得咋样了？",
+                "zh-Hant": "{PlayerName}，準備得咋樣了？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Noch nicht.",
+                    "en": "Not yet.",
+                    "es": "Todavía no.",
+                    "fr": "Pas encore.",
+                    "ja": "まだ……",
+                    "ko": "아직 안 됐어요",
+                    "th": "ยังไม่พร้อม",
+                    "zh-Hans": "还没好。",
+                    "zh-Hant": "還沒好。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin bereit.",
+                    "en": "I’m ready.",
+                    "es": "Estoy {Male=listo;Female=lista}.",
+                    "fr": "Je suis {Male=prêt;Female=prête}.",
+                    "ja": "出来た。",
+                    "ko": "준비 다 됐어요!",
+                    "th": "พร้อมแล้ว",
+                    "zh-Hans": "准备好了。",
+                    "zh-Hant": "準備好了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Keine Sorge. Nimm dir Zeit, um deine Waffen zu schärfen.",
+                "en": "No worries. Take your time to sharpen your weapons.",
+                "es": "No te preocupes. Tómate tu tiempo para afilar tus armas.",
+                "fr": "Pas de souci. Prends ton temps pour bien préparer.",
+                "ja": "オッケー。準備は大事だからね。",
+                "ko": "서두르지 말고 천천히 컨디션을 조절해! 출발하기 전에 만반의 준비를 해야지~",
+                "th": "ไม่ต้องกังวลนะ ใช้เวลาลับอาวุธของคุณให้เต็มที่",
+                "zh-Hans": "不急不急，调整好状态，擦亮了刀枪再出发~",
+                "zh-Hant": "不急不急，調整好狀態，擦亮了刀槍再出發~"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Super, auf geht's! Opa Jingzhu sagte, es ist die beste Zeit, um Echos zu fangen, und ich bin bereit, eine Menge zu schnappen!",
+                "en": "Awesome, let’s do this! Grandpa Jingzhu said it’s the best time for Echo-catching, and I’m ready to snag a bunch!",
+                "es": "¡Genial, hagámoslo! El abuelo Jingzhu dijo que es el mejor momento para atrapar Ecos, ¡y estoy lista para atrapar un montón!",
+                "fr": "Génial, c'est parti ! Monsieur Jingzhu a dit que c'est le meilleur moment pour attraper des Échos, on va en capturer un bon paquet !",
+                "ja": "よっし、行こう！\n最近は強い音骸が発生する時って景燭じいちゃんが言ってたし……\nさっさと捕っちゃおう！",
+                "ko": "좋아, 그럼 출발하자! 할아버지가 지금이 에코를 잡기에 좋은 시기라고 했어! 그러니까 금방 잡을 수 있을걸!",
+                "th": "เจ๋ง! ไปกันเลย! ปู่ Jingzhu บอกว่านี่เป็นช่วงเวลาที่เหมาะจะจับเอคโค่ที่สุด ฉันพร้อมจะไปโกยมาเยอะๆ แล้วล่ะ!",
+                "zh-Hans": "好，那咱们出发吧！景烛爷爷说最近正是抓声骸的好时候，咱们一定能旗开得胜！",
+                "zh-Hant": "好，那咱們出發吧！景燭爺爺說最近正是抓聲骸的好時候，咱們一定能旗開得勝！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 18,
+          "talks": [
+            {
+              "text": {
+                "de": "Opa Jingzhu, du bist schon mit der Behandlung fertig? Das ging schnell!",
+                "en": "Grandpa Jingzhu, you’re already done with treatment? That was quick!",
+                "es": "¿Abuelo Jingzhu, ya terminaste con el tratamiento? ¡Eso fue rápido!",
+                "fr": "Monsieur Jingzhu, vous avez déjà terminé vos soins ? C'était rapide !",
+                "ja": "げー！？景燭じいちゃん？！\nもう大丈夫なの？傷は治った？",
+                "ko": "뭐야?! 할아버지, 왜 이렇게 빨리 나왔어? 치료 다 받았어?",
+                "th": "ปู่ Jingzhu รักษาเสร็จแล้วเหรอ? เร็วจังเลย!",
+                "zh-Hans": "诶？！景烛爷爷，你怎么这么快就从医院里出来了，伤口处理好了吗？",
+                "zh-Hant": "欸？！景燭爺爺，你怎麼這麼快就從醫院裡出來了，傷口處理好了嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Lass dich nicht von meinem Alter täuschen. Ich bin immer noch stark und diese Verletzungen bremsen mich kaum!",
+                "en": "Don’t let this old man’s age fool you. I’m still strong and these injuries hardly slow me down!",
+                "es": "No te dejes engañar por la edad de este viejo. Todavía estoy fuerte y estas lesiones apenas me ralentizan.",
+                "fr": "Ne vous laissez pas tromper par l'âge de ce vieil homme. Je suis encore fort, et ces blessures ne me ralentissent pas beaucoup !",
+                "ja": "かーははっ！この歳でも、ちゃんと鍛えてるんでな！あんなかすり傷、唾でもつけておけばあっという間に治る！",
+                "ko": "야! 이 녀석! 이 나이가 되었지만, 몸은 아직도 정정한다니까! 상처만 조금 난 거라 금방 치료했어!",
+                "th": "อย่าตัดสินปู่คนนี้ที่อายุสิ ฉันยังแข็งแรงดี แถมอาการบาดเจ็บพวกนี้ก็ไม่ได้ทำให้ฉันช้าลงเลย!",
+                "zh-Hans": "咳咳，别看老头子我这把岁数了，身子骨还硬朗着呢，那些皮外伤，稍微处理一下就行了！",
+                "zh-Hant": "咳咳，別看老頭子我這把歲數了，身子骨還硬朗著呢，那些皮外傷，稍微處理一下就行了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wirklich? Ähm... es scheint allerdings, als wärst du jetzt völlig in Ordnung.",
+                "en": "Really? Um... though it does seem like you’re totally fine now.",
+                "es": "¿De verdad? Um... aunque parece que estás totalmente bien ahora.",
+                "fr": "Vraiment ? Euh… on dirait effectivement que vous allez bien maintenant.",
+                "ja": "マジか……でも、本当に大丈夫そう……",
+                "ko": "진짜? 그래, 괜찮아 보이긴 하네...",
+                "th": "จริงเหรอ? อืม... ปู่ก็ดูแข็งแรงดีแล้วจริงๆ นั่นแหละ",
+                "zh-Hans": "真的假的？！额……虽然看上去真的没有什么问题了……",
+                "zh-Hant": "真的假的？！呃……雖然看上去真的沒有什麼問題了……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich! Ich bin Verletzungen gewohnt. Wie auch immer, ich fühle mich jetzt völlig in Ordnung. Sollen wir losgehen?",
+                "en": "Of course! I’m used to injuries. Anyway, I’m feeling perfectly fine now. Shall we go?",
+                "es": "¡Por supuesto! Estoy acostumbrado a las lesiones. De todos modos, me siento perfectamente bien ahora. ¿Vamos?",
+                "fr": "Bien sûr ! J'ai l'habitude des blessures. De toute façon, je me sens parfaitement bien. On y va ?",
+                "ja": "当たり前だ！ちょっとしくじったくらい……いたたっ……コホン！俺も万全になったわけだし、音骸捕りに出発だ！",
+                "ko": "당연하지! 그냥 작은 상처일 뿐... 어차피 이제 거의 다 나았으니 같이 출발하자고",
+                "th": "แน่นอน! ฉันชินกับการบาดเจ็บแล้ว ยังไงก็เถอะ ตอนนี้ฉันหายดีเป็นปลิดทิ้งแล้ว ไปกันเลยไหม?",
+                "zh-Hans": "那是自然！什么皮外伤，家常便……咳咳，反正你看我也好得差不多了，咱们动身吧？",
+                "zh-Hant": "那是自然！什麼皮外傷，家常便……咳咳，反正你看我也好得差不多了，咱們動身吧？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kommst du mit uns, Opa Jingzhu?",
+                "en": "Are you coming with us, Grandpa Jingzhu?",
+                "es": "¿Vas a venir con nosotros, abuelo Jingzhu?",
+                "fr": "Vous venez avec nous, Monsieur Jingzhu ?",
+                "ja": "景燭じいちゃん、本当に行くの？",
+                "ko": "할아버지도 함께 가겠다는 말이야？",
+                "th": "จะมากับพวกเราด้วยเหรอ ปู่ Jingzhu?",
+                "zh-Hans": "景烛爷爷，你也要一起去吗？",
+                "zh-Hant": "景燭爺爺，你也要一起去嗎？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich, wie könnte ich es zulassen, dass ihr jungen Leute meine Angelegenheiten erledigt, während ich herumsitze? Es ist gefährlich außerhalb von Jinzhou und ich kenne die Situation dort. Ich bin sicher, ich kann von einiger Hilfe sein.",
+                "en": "Of course, how could I let you youngsters handle my affairs while I sit around? It’s dangerous outside Jinzhou and I’m familiar with the situation there. I’m sure I can be of some help.",
+                "es": "Por supuesto, ¿cómo podría dejar que ustedes, los jóvenes, manejen mis asuntos mientras yo me siento? Es peligroso fuera de Jinzhou y estoy familiarizado con la situación allí. Estoy seguro de que puedo ser de alguna ayuda.",
+                "fr": "Bien sûr, comment pourrais-je vous laisser, vous les jeunes, gérer mes affaires quand je me tourne les pouces ? C'est dangereux en dehors de Jinzhou, et je connais bien la situation là-bas. Je suis sûr de pouvoir être utile.",
+                "ja": "勿論だ。若者だけに行かせて、城内でサボる気など端からない。確かに外は危険だが、道案内くらいこのじじいにもできる。",
+                "ko": "물론이지! 내가 그냥 누워서 쉬는 동안 젊은이들이 나를 위해 모험을 하게 할 수는 없겠지? 성 밖은 너무 위험해. 난 바깥 상황을 잘 알고 있으니 조금이나마 도움이 될 거야",
+                "th": "แน่นอนสิ จะปล่อยให้พวกเธอจัดการเรื่องของฉันโดยที่ตัวเองนั่งเฉยๆ ได้ยังไง? ข้างนอกจินโจวมันอันตราย และฉันคุ้นเคยกับสถานการณ์แถวนั้น ฉันมั่นใจว่าช่วยได้",
+                "zh-Hans": "那当然，总不能让你们年轻人为了我去冒险，我自己却躺着享清福吧？城外危险，老头子我对路况还是很熟悉的，肯定能帮上点什么。",
+                "zh-Hant": "那當然，總不能讓你們年輕人為了我去冒險，我自己卻躺著享清福吧？城外危險，老頭子我對路況還是很熟悉的，肯定能幫上點什麼。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber...",
+                "en": "But...",
+                "es": "Pero...",
+                "fr": "Mais...",
+                "ja": "でも……",
+                "ko": "그렇지만...",
+                "th": "แต่...",
+                "zh-Hans": "可是……",
+                "zh-Hant": "可是……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haha, mach dir keine Sorgen! Dieser alte Mann war zu seiner Zeit ziemlich etwas! Obwohl ich jetzt alt bin, kann ich mich immer noch gegen jede Gefahr behaupten.",
+                "en": "Haha, don’t worry! This old man used to be quite something in his day! Even though I’m old now, I can still hold my own against any danger.",
+                "es": "¡Jaja, no te preocupes! ¡Este viejo solía ser algo en su día! Aunque ahora estoy viejo, todavía puedo defenderme de cualquier peligro.",
+                "fr": "Haha, ne vous inquiétez pas ! Ce vieux bonhomme en a vu d'autres à son époque ! Même si je suis vieux maintenant, je peux encore faire face à n'importe quel danger.",
+                "ja": "なに、心配はいらん。こう見えても、昔は結構なやり手だった！身を守るだけなら全く問題ない。",
+                "ko": "하하, 걱정 마! 내가 젊었을 때 얼마나 대단했는데! 나이가 조금 들었어도 내 앞가림은 해!",
+                "th": "ฮ่าๆ ไม่ต้องห่วงหรอก! สมัยหนุ่มๆ ฉันเองก็ฝีมือใช่ย่อย! ถึงตอนนี้จะแก่แล้ว ก็ยังเอาตัวรอดจากอันตรายต่างๆ ได้อยู่",
+                "zh-Hans": "哈哈，放心放心，老头子我当年厉害着呢！就算年纪大了，自保也绰绰有余。",
+                "zh-Hant": "哈哈，放心放心，老頭子我當年厲害著呢！就算年紀大了，自保也綽綽有餘。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay, Opa Jingzhu, versprich mir, dass du auf dich aufpasst. Wenn etwas Gefährliches auftaucht, versuche nicht, es zu ertragen. Ruf mich sofort an!",
+                "en": "Okay, Grandpa Jingzhu, promise me you’ll take care of yourself. If anything dangerous pops up, don’t try to tough it out. Just give me a holler right away!",
+                "es": "Está bien, abuelo Jingzhu, prométeme que te cuidarás. Si surge algo peligroso, no intentes resistirlo. ¡Solo avísame de inmediato!",
+                "fr": "D'accord, Monsieur Jingzhu, promettez-moi que vous prendrez soin de vous. Si quelque chose de dangereux se présente, ne jouez pas les durs. Appelez-moi tout de suite !",
+                "ja": "そこまで言うのなら……でも、ホントに気をつけてね！いざとなったらあたしを呼んでね！",
+                "ko": "그럼... 할아버지, 꼭 조심해야 해! 위험할 땐 혼자 버티지 말고, 꼭 나를 불러. 알겠지?",
+                "th": "เอาล่ะ ปู่ Jingzhu สัญญากับฉันนะว่าปู่จะดูแลตัวเอง ถ้ามีอันตรายเกิดขึ้น อย่าฝืน รีบตะโกนบอกฉันทันทีเลยนะ!",
+                "zh-Hans": "那……景烛爷爷你一定要照顾好自己哦，遇到危险不要硬抗，一定要及时叫我啊。",
+                "zh-Hant": "那……景燭爺爺你一定要照顧好自己喔，遇到危險不要硬抗，一定要及時叫我啊。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schließlich ist es Teil meiner Pflichten als Patrouilleur.",
+                "en": "After all, it’s part of my Patroller duties.",
+                "es": "Después de todo, es parte de mis deberes de Patrullero.",
+                "fr": "Après tout, c'est une partie de mon travail de <ano=Patrouilleuse de Jinzhou>Patrouilleuse</ano>.",
+                "ja": "これも、<ano=今州城巡尉>今巡尉</ano>の仕事だからね。",
+                "ko": "이건 우리 <ano=금주성 순찰관>금주 순찰관</ano>의 책임이야",
+                "th": "ยังไงเสียก็เป็นหน้าที่ของฉันในฐานะหน่วยลาดตระเวน",
+                "zh-Hans": "毕竟这是<ano=今州城巡尉>今巡尉</ano>的职责所在嘛。",
+                "zh-Hant": "畢竟這是<ano=今州城巡尉>今巡尉</ano>的職責所在嘛。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besuche Linghan mit Jingzhu",
+        "en": "Visit Linghan with Jingzhu",
+        "es": "Visita a Linghan con Jingzhu.",
+        "fr": "Rencontrer Linghan",
+        "ja": "一緒に凌寒を訪ねる",
+        "ko": "함께 소희에게 방문하기",
+        "th": "ไปพบหลิงฮันพร้อมกับจิงจู",
+        "zh-Hans": "一起去拜访凌寒",
+        "zh-Hant": "一起去拜訪凌寒"
+      },
+      "entities": [
+        {
+          "entityId": 139000151,
+          "mapId": 8,
+          "blueprintType": "NPC227",
+          "name": "TsEntity_154_013_老奶奶4",
+          "areaId": 301,
+          "position": {
+            "x": -52649,
+            "y": 111486,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 13,
+          "talks": [
+            {
+              "text": {
+                "de": "Da ist sie, Linghan, meine geliebte Frau... meine zukünftige Frau.",
+                "en": "There she is, Linghan, m-my beloved wife... wife-to-be.",
+                "es": "Ahí está, Linghan, mi amada esposa... futura esposa.",
+                "fr": "La voilà, Linghan, ma... ma future femme.",
+                "ja": "か、彼女が凌寒……夢にまで出る伴……好きな人だ。",
+                "ko": "이, 이분이 바로 소희야. 내가 꿈꿔왔던... 사람",
+                "th": "นั่นไง Linghan ภะ...ภรรยาสุดที่รักของฉัน... ว่าที่ภรรยาน่ะ",
+                "zh-Hans": "她，她就是凌寒，我朝思暮想的老……预备老伴。",
+                "zh-Hant": "她，她就是凌寒，我朝思暮想的老……預備老伴。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Und diese Blume ist...?",
+                    "en": "And this flower is...?",
+                    "es": "¿Y esta flor es...?",
+                    "fr": "Et cette fleur, c’est…?",
+                    "ja": "その花は？",
+                    "ko": "손에 들고 있는 꽃은 뭐예요?",
+                    "th": "แล้วดอกไม้นี้คือ...?",
+                    "zh-Hans": "你手里拿的花？",
+                    "zh-Hant": "你手裡拿的花？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist die Nachteminze, ihre Lieblingsblume.",
+                "en": "It’s the Noctemint, her favorite flower.",
+                "es": "Es la Menta nocturna, su flor favorita.",
+                "fr": "C'est la Menthe poivrée, sa fleur préférée.",
+                "ja": "これは夜息草（ミント）……彼女の大好きな花だ。",
+                "ko": "아, 이건 이분이 가장 좋아하는 베리민트야",
+                "th": "มันคือสะระแหน่ราตรี ดอกไม้โปรดของเธอ",
+                "zh-Hans": "哦，这是夜息香，她最喜欢的花。",
+                "zh-Hant": "哦，這是夜息香，她最喜歡的花。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin dabei, sie zu fragen: \"Würdest du diese Nachteminze annehmen und dich mir auf einer lebenslangen Reise anschließen?\"",
+                "en": "I’m about to ask her, \"Would you accept this Noctemint and join me on a lifelong journey?\"",
+                "es": "Estoy a punto de preguntarle, \"¿Aceptarías esta Menta nocturna y te unirías a mí en un viaje de por vida?\"",
+                "fr": "Je m'apprête à lui demander : « Accepteriez-vous ces Menthes poivrées et m'accompagneriez-vous dans ce voyage pour la vie ? » Ah, ces mots sont tels élégants !",
+                "ja": "「この夜息草（ミント）を手に取って、俺と一緒に生きてみないか？」……くぅ～！この決めゼリフ、痺れる～！",
+                "ko": "한번 들어봐! 여기 제 베리민트를 받아주시고... 제 애인이 되어 주실 수 있나요? 어때? 기품있는 젠틀맨 같아?",
+                "th": "ฉันจะถามเธอว่า \"คุณจะรับสะระแหน่ราตรีดอกนี้และร่วมทางไปกับฉันตลอดชีวิตไหม?\"",
+                "zh-Hans": "你听听：你愿意收下我的夜息香，成为我的老伴吗？多么优雅的瑝珑话，多么有内涵的瑝珑人！",
+                "zh-Hant": "你聽聽：你願意收下我的夜息香，成為我的老伴嗎？ 多麼優雅的瑝瓏話，多麼有內涵的瑝瓏人！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ach, meine Bemühungen scheinen zu scheitern... Ich hoffe wirklich, dass sie diese Nachteminze diesmal zu schätzen weiß.",
+                "en": "But alas, my efforts seem to fall short... I truly hope she’ll appreciate this Noctemint this time.",
+                "es": "Pero, por desgracia, parece que mis esfuerzos no son suficientes... Realmente espero que esta vez aprecie esta Menta nocturna.",
+                "fr": "Mais hélas, mes efforts semblent toujours insuffisants... J'espère vraiment qu'elle appréciera ces Menthes poivrées cette fois-ci.",
+                "ja": "この夜息草を手に取ってくれれば……今はまだ見知らぬ隣人だとしても……",
+                "ko": "그녀와 나 사이는 아직 너무 멀지만... 그녀가 내 베리민트를 받아주면 좋겠어",
+                "th": "แต่น่าเสียดายที่ความพยายามของฉันเหมือนจะไม่พอ... หวังว่าคราวนี้เธอจะชอบสะระแหน่ราตรี",
+                "zh-Hans": "不过，我和她现在……还只能算陌生人，真希望她能接过我手中的夜息香。",
+                "zh-Hant": "不過，我和她現在……還只能算陌生人，真希望她能接過我手中的夜息香。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht, mit meinen sorgfältig vorbereiteten Eröffnungssätzen und den majestätischen Echos, die du eingefangen hast, wird sie endlich meine Liebe annehmen.",
+                "en": "Perhaps, with my carefully prepared opening lines and the majestic Echoes you’ve captured, she’ll finally accept my love.",
+                "es": "Quizás, con mis cuidadosamente preparadas primeras palabras y los majestuosos Ecos que has capturado, finalmente aceptará mi amor.",
+                "fr": "Peut-être qu'avec mes phrases soigneusement préparées et les majestueux Échos que vous avez capturés, elle finira par accepter mon amour.",
+                "ja": "今度は入念に準備した。それに、あんたたちが用意した音骸もある……きっと、上手くいくぞ！",
+                "ko": "어쩌면 이번엔 내가 정성껏 준비한 오프닝 멘트에 네들이 잡아준 강력한 에코까지 있으니 결과가 달라질지도 몰라",
+                "th": "ไม่แน่ ด้วยประโยคเปิดที่ฉันเตรียมมาอย่างดีกับเอคโค่แสนอลังการที่จับมา คราวนี้เธออาจจะยอมรับรักฉันก็ได้",
+                "zh-Hans": "或许这次，她听过我精心准备的开场白，再加上你们抓的威风声骸，结果会有所不同。",
+                "zh-Hant": "或許這次，她聽過我精心準備的開場白，再加上你們抓的威風聲骸，結果會有所不同。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erinnerst du dich an die Eröffnungssätze? Ich sage meinen Satz zuerst, und du machst weiter! Denk daran, die Stimmung zu setzen!",
+                "en": "Do you remember the opening lines? I’ll say my line first, and you’ll follow up! Remember to set the mood!",
+                "es": "¿Recuerdas las primeras palabras? ¡Yo diré mi línea primero, y tú seguirás! ¡Recuerda establecer el ambiente!",
+                "fr": "Vous vous souvenez des phrases d'introduction ? Je dis la mienne d'abord, et vous enchaînez ! N'oubliez pas de bien mettre l'ambiance !",
+                "ja": "よし、口説き文句は暗記できたか？合図に合わせて、一人ずつに大声で言う！気合いだ気合い！",
+                "ko": "멘트 다 외웠어? 분위기가 잡히도록 해줘야 돼!",
+                "th": "จำประโยคเปิดได้ไหม? ฉันจะพูดประโยคของฉันก่อน แล้วค่อยพูดตามนะ! อย่าลืมสร้างบรรยากาศด้วยล่ะ!",
+                "zh-Hans": "开场白都记住了吗，我说一句，你们说一句，一起说出气势来！",
+                "zh-Hant": "開場白都記住了嗎，我說一句，你們說一句，一起說出氣勢來！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nun, aber...",
+                    "en": "Well, but...",
+                    "es": "Bueno, pero...",
+                    "fr": "Eh bien, mais...",
+                    "ja": "さすがに恥ずかしい……",
+                    "ko": "뭔가 좀...",
+                    "th": "เอ่อ แต่...",
+                    "zh-Hans": "还是有点……",
+                    "zh-Hant": "還是有點……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Immer bereit!",
+                    "en": "Always ready!",
+                    "es": "¡Siempre listo!",
+                    "fr": "Allons-y !",
+                    "ja": "おっす！",
+                    "ko": "준비 다 됐어요!",
+                    "th": "ฉันพร้อมนานแล้ว!",
+                    "zh-Hans": "准备好了！",
+                    "zh-Hant": "準備好了！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Okay, es gibt keine Zeit zu verlieren. Ich muss handeln!",
+                "en": "Alright, there’s no time to waste. I must make my move!",
+                "es": "Está bien, no hay tiempo que perder. ¡Debo hacer mi jugada!",
+                "fr": "Pas de temps à perdre. Il est temps que je me lance !",
+                "ja": "ええい！一か八かだ！",
+                "ko": "화살이 이미 시위에 걸렸으니, 쏘지 않을 수가 없다!",
+                "th": "เอาล่ะ จะมัวเสียเวลาอีกไม่ได้ ต้องลงมือแล้ว!",
+                "zh-Hans": "箭在弦上，不得不发了！",
+                "zh-Hant": "箭在弦上，不得不發了！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wow, {PlayerName}, deine Leidenschaft ist ansteckend! Du hast mich auch ganz aufgeregt!",
+                "en": "Whoa, {PlayerName}, your passion is contagious! You’ve got me all fired up too!",
+                "es": "¡Vaya, {PlayerName}, tu pasión es contagiosa! ¡También me has animado!",
+                "fr": "{PlayerName}, ta passion est contagieuse ! Tu me motives aussi !",
+                "ja": "おお！{PlayerName}、気合い入ってるね！なんかあたしも燃えてきた！",
+                "ko": "와, {PlayerName}, 정말 에너지가 넘치네!",
+                "th": "โอ้โห {PlayerName} ทำเอาฉันอินตามไปด้วยเลยเนี่ย! สุดยอดไปเลย!",
+                "zh-Hans": "哇，{PlayerName}，你还真豁得出去！弄得我也热血沸腾了！",
+                "zh-Hant": "哇，{PlayerName}，你還真豁得出去！ 弄得我也熱血沸騰了！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Weißt du, was süßer ist als jede Blüte?",
+                "en": "Do you know what’s sweeter than any bloom?",
+                "es": "¿Sabes qué es más dulce que cualquier flor?",
+                "fr": "Linghan, savez-vous ce qui est plus doux que toutes les fleurs ?",
+                "ja": "凌寒さん……！一番綺麗な花は……",
+                "ko": "소희, 삶을 달콤하게 만드는 100가지 방법이 있는데 뭔지 알아요?",
+                "th": "รู้ไหมว่าอะไรรัญจวนใจกว่าดอกไม้บานสะพรั่ง?",
+                "zh-Hans": "凌寒啊凌寒，你知道最好看的是什么花吗？",
+                "zh-Hant": "凌寒啊凌寒，你知道最好看的是什麼花嗎？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nicht das Leuchten der Wasserlampe!",
+                "en": "Not the Waterlamp’s glow!",
+                "es": "¡No es el resplandor de la Flor de lámpara!",
+                "fr": "Ce n'est ni l'éclat de la Lanterne d'eau !",
+                "ja": "水灯花でもない！",
+                "ko": "「용수염 사탕」을 먹거나!",
+                "th": "มิใช่แสงเรืองรองของโคมไฟวารี",
+                "zh-Hans": "不是水灯花！",
+                "zh-Hant": "不是水燈花！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Noch der Duft der Iris.",
+                    "en": "Nor the Iris’s perfume.",
+                    "es": "Ni el perfume del lirio.",
+                    "fr": "Ni le parfum de l'Iris",
+                    "ja": "鳶尾花でもない。",
+                    "ko": "「구름솜사탕」을 먹거나!",
+                    "th": "หรือกลิ่นหอมของดอกไอริสหรอกหนา",
+                    "zh-Hans": "不是鸢尾花。",
+                    "zh-Hant": "不是鳶尾花。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Aber das Blühen unserer perfekt abgestimmten Liebe!",
+                "en": "But the blossom of our love’s perfect tune!",
+                "es": "¡Pero el florecimiento de la melodía perfecta de nuestro amor!",
+                "fr": "Mais l'épanouissement parfait de notre amour !",
+                "ja": "君と出会ったその日から、私の心に咲いた、恋の花！",
+                "ko": "당신을 98번 생각하는 거예요!",
+                "th": "หากแต่เป็นเพลงรักอันไพเราะที่พรั่งพรูออกมา!",
+                "zh-Hans": "是我遇到你，如同铁树开花！",
+                "zh-Hant": "是我遇到你，如同鐵樹開花！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gut! Besser zuschlagen, solange das Eisen heiß ist!",
+                "en": "Good! Better strike while the iron’s hot!",
+                "es": "¡Bueno! ¡Es mejor aprovechar el momento!",
+                "fr": "Très bien ! On continue !",
+                "ja": "いいぞいいぞ！もうひと押し！",
+                "ko": "좋아! 더 힘차게!",
+                "th": "ดี! ตีเหล็กตอนยังร้อนจะดีที่สุด!",
+                "zh-Hans": "效果不错，再接再厉！",
+                "zh-Hant": "效果不錯，再接再厲！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Weißt du, was in Wuthering Waves ewig hält?",
+                "en": "Do you know what lasts forever in Wuthering Waves?",
+                "es": "¿Sabes qué es lo que perdura para siempre en Wuthering Waves?",
+                "fr": "Savez-vous ce qui dure pour toujours dans le monde ?",
+                "ja": "凌寒さん……！一番綺麗な色は……",
+                "ko": "소희, 내 마음이 어느 쪽에 있는지 알아요?",
+                "th": "รู้ไหมว่าอะไรจะคงอยู่ในวัธเธอริงเวฟตลอดกาล?",
+                "zh-Hans": "凌寒啊凌寒，你知道最美的是什么颜色吗？",
+                "zh-Hant": "凌寒啊凌寒，你知道最美的是什麼顏色嗎？"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nicht flüchtige Zivilisationen!",
+                "en": "Not fleeting civilizations!",
+                "es": "¡No las civilizaciones efímeras!",
+                "fr": "Ce ne sont ni les civilisations éphémères !",
+                "ja": "青色でもない！",
+                "ko": "왼쪽이 아니에요!",
+                "th": "มิใช่อารยธรรมที่ผันผ่าน!",
+                "zh-Hans": "不是紫红！",
+                "zh-Hant": "不是紫紅！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Noch die Überlieferungen der Tacet-Dissonanz.",
+                    "en": "Nor Tacet Discords’ lore.",
+                    "es": "Ni la tradición de la Disonancia Tácita.",
+                    "fr": "Ni les légendes des Zones taciturnes !",
+                    "ja": "赤色でもない。",
+                    "ko": "오른쪽도 아니에요!",
+                    "th": "หรือตำนานทาเซ็ตดิสคอร์ด",
+                    "zh-Hans": "不是粉红。",
+                    "zh-Hant": "不是粉紅。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Aber meine unerschütterliche Liebe zu dir, für immer und ewig!",
+                "en": "But my unwavering love for you, forevermore!",
+                "es": "¡Sino mi amor inquebrantable por ti, por siempre!",
+                "fr": "Mais mon amour inébranlable pour vous, pour toujours !",
+                "ja": "私たちが歩いてきた人生を照らす、夕焼けの色！",
+                "ko": "당신 쪽에 있어요!",
+                "th": "แต่เป็นรักมั่นที่ฉันที่มีต่อเธอตลอด ตราบชั่วนิรันดร์!",
+                "zh-Hans": "是最美不过我们的夕阳红！",
+                "zh-Hant": "是最美不過我們的夕陽紅！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...",
+                "en": "...",
+                "es": "...",
+                "fr": "……",
+                "ja": "……",
+                "ko": "......",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 762,
+                "name": {
+                  "zh-Hans": "凌寒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bist du fertig? Entschuldige mich bitte.",
+                "en": "You done? Please excuse me.",
+                "es": "¿Terminaste? Por favor, discúlpame.",
+                "fr": "Vous avez fini ? Excusez-moi.",
+                "ja": "それだけ？",
+                "ko": "할말이 끝나셨으면 저는 이만...",
+                "th": "จบรึยัง? ขอตัวก่อนนะ",
+                "zh-Hans": "没事了？那我走了？",
+                "zh-Hant": "沒事了？ 那我走了？"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 762,
+                "name": {
+                  "zh-Hans": "凌寒"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warte! Ich habe eine Überraschung für dich!",
+                "en": "Wait! I have a surprise for you!",
+                "es": "¡Espera! ¡Tengo una sorpresa para ti!",
+                "fr": "Attendez ! J'ai une surprise pour vous !",
+                "ja": "待ってくれ。こいつもある！",
+                "ko": "잠깐만요! 깜짝 선물도 준비했어요!",
+                "th": "เดี๋ยวก่อน! ฉันมีเซอร์ไพรส์ให้เธอ!",
+                "zh-Hans": "等等，我还准备了一份惊喜！",
+                "zh-Hant": "等等，我還準備了一份驚喜！"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Beeil dich! Zeige ihr diese majestätischen Echos!",
+                "en": "Hurry! Show her those majestic Echoes!",
+                "es": "¡Rápido! ¡Muéstrale esos majestuosos Ecos!",
+                "fr": "Montrez-lui ces majestueux Échos !",
+                "ja": "さあ、カッコイイ音骸を見てくれ！",
+                "ko": "나의 강력한 에코를 보여줘야지!",
+                "th": "เร็วเข้า! โชว์พวกเอคโค่แสนสง่าให้เธอเห็นสิ!",
+                "zh-Hans": "快，快让她看看我们威风的声骸。",
+                "zh-Hant": "快，快讓她看看我們威風的聲骸。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frage, ob es Jingzhu gut geht",
+        "en": "Ask if Jingzhu's alright",
+        "es": "Pregunta si Jingzhu está bien.",
+        "fr": "Vérifier si Jingzhu va bien",
+        "ja": "景燭の具合を尋ねる",
+        "ko": "경호의 상태 걱정하기",
+        "th": "สอบถามว่าจิงจูเป็นไรหรือไม่",
+        "zh-Hans": "关心景烛的状态",
+        "zh-Hant": "關心景燭的狀態"
+      },
+      "entities": [
+        {
+          "entityId": 139000152,
+          "mapId": 8,
+          "blueprintType": "NPC005",
+          "name": "TsEntity_157_001_皇龙老人",
+          "areaId": 301,
+          "position": {
+            "x": -52525,
+            "y": 111406,
+            "z": 1616
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 145
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 22,
+          "talks": [
+            {
+              "text": {
+                "de": "Oma Linghan hat ihn abgelehnt, nicht wahr?",
+                "en": "Grandma Linghan turned him down, right?",
+                "es": "¿La abuela Linghan lo rechazó, verdad?",
+                "fr": "Madame Linghan l'a repoussé, non ?",
+                "ja": "ばあちゃんの返事は……ダメだったのかな……",
+                "ko": "할머니의 뜻은 거절이겠지",
+                "th": "ย่า Linghan ปฏิเสธเขาใช่ไหม?",
+                "zh-Hans": "老奶奶的意思，应该是拒绝吧。",
+                "zh-Hant": "老奶奶的意思，應該是拒絕吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist definitiv eine Ablehnung.",
+                    "en": "It’s definitely a rejection.",
+                    "es": "Es definitivamente un rechazo.",
+                    "fr": "C'est clairement un rejet.",
+                    "ja": "ダメだった……",
+                    "ko": "확실한 거절이죠",
+                    "th": "เมื่อกี้เป็นการปฏิเสธแน่ๆ",
+                    "zh-Hans": "绝对是拒绝吧。",
+                    "zh-Hant": "絕對是拒絕吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sie hat meine Nachteminze nicht angenommen...",
+                "en": "She didn’t accept my Noctemint...",
+                "es": "Ella no aceptó mi Menta nocturna...",
+                "fr": "Elle n'a pas accepté ces Menthes poivrées...",
+                "ja": "俺の花を……受け取ってくれなかった……",
+                "ko": "그녀는 심지어 베리민트도 안 받아줬어...",
+                "th": "เธอไม่ยอมรับสะระแหน่ราตรีของฉัน...",
+                "zh-Hans": "她没有收下我的夜息香……",
+                "zh-Hant": "她沒有收下我的夜息香……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Opa Jingzhu muss sehr verärgert sein.",
+                    "en": "Grandpa Jingzhu must be very upset.",
+                    "es": "El abuelo Jingzhu debe estar muy molesto.",
+                    "fr": "Monsieur Jingzhu doit être très triste.",
+                    "ja": "景燭じい……あまり気を落とさないで……",
+                    "ko": "속상하시겠어요",
+                    "th": "ปู่ Jingzhu คงจะผิดหวังมากแน่ๆ",
+                    "zh-Hans": "景烛爷爷应该很难过吧。",
+                    "zh-Hant": "景燭爺爺應該很難過吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, das ist ein bisschen ein Dämpfer. Ich bin auch ein bisschen niedergeschlagen...",
+                "en": "Yeah, that's a bit of a bummer. I'm feeling a little down about it too...",
+                "es": "Sí, es un poco decepcionante. También me siento un poco triste por eso...",
+                "fr": "Oui, c'est un peu déprimant. Je me sens un peu mal aussi...",
+                "ja": "そうだよ……なんかあたしまで悲しくなってきちゃう……",
+                "ko": "아마도? 나도 좀 속상하네...",
+                "th": "ใช่ ค่อนข้างน่าเสียดายนะ ฉันเองก็รู้สึกแย่เหมือนกัน...",
+                "zh-Hans": "是吧，连我都跟着有点难过了……",
+                "zh-Hant": "是吧，連我都跟著有點難過了……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hey, Opa Jingzhu, wie wäre es, wenn wir die Traurigkeit mit einem Spaziergang abschütteln? Oder vielleicht etwas essen gehen? Ich kenne ein Ort, der großartiges Maocai serviert, scharf aber lecker!",
+                "en": "Hey, Grandpa Jingzhu, how about we shake off the blues with a stroll? Or maybe grab a bite to eat? I know a place that serves great Maocai, spicy but delicious!",
+                "es": "Oye, abuelo Jingzhu, ¿qué tal si nos deshacemos de la tristeza con un paseo? ¿O tal vez comer algo? Conozco un lugar que sirve un excelente Maocai, picante pero delicioso.",
+                "fr": "Monsieur Jingzhu, et si on se changeait les idées avec une petite promenade ? Ou bien on pourrait aller manger un bout ? Je connais un endroit qui fait la cuisine du Sichuan, épicée mais délicieuse !",
+                "ja": "景燭じいちゃん……気を落とさないで……そうだ、少し気分転換しない？この辺りでいい屋台を知ってるから……",
+                "ko": "할아버지, 우리 같이 산책할래? 뭐 좀 먹을래? 내가 마라탕 맛집을 알아, 같이 먹으러 갈래?",
+                "th": "นี่ ปู่ Jingzhu เราไปเดินเล่นคลายเศร้ากันไหม? หรือจะหาอะไรกินสักหน่อยดี? ฉันรู้จักร้านที่มีหม้อไฟอร่อยๆ ด้วยนะ ถึงจะเผ็ด แต่อร่อย!",
+                "zh-Hans": "景烛爷爷，要不要我们陪你散散心？吃点东西？我知道有家冒菜很好吃——",
+                "zh-Hant": "景燭爺爺，要不要我們陪你散散心？ 吃點東西？ 我知道有家冒菜很好吃——"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin nicht entmutigt, nicht im Geringsten!",
+                "en": "I’m not disheartened, not in the slightest!",
+                "es": "¡No estoy desanimado, ni un poco!",
+                "fr": "Je ne suis pas du tout découragé, pas le moins du monde !",
+                "ja": "気を落とす？バカ言え！",
+                "ko": "속상? 에이... 이게 뭐가 속상해!",
+                "th": "ฉันไม่รู้สึกหมดกำลังใจเลยสักนิด!",
+                "zh-Hans": "难过？没有的事！",
+                "zh-Hant": "難過？ 沒有的事！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe über Linghans Worte nachgedacht und es ist mir klar geworden.",
+                "en": "I’ve been reflecting on Linghan’s words, and it’s become clear to me.",
+                "es": "He estado reflexionando sobre las palabras de Linghan, y me ha quedado claro.",
+                "fr": "J'ai réfléchi aux paroles de Linghan, et tout est devenu clair pour moi.",
+                "ja": "彼女の真意はそんな単純なものじゃない！",
+                "ko": "난 그냥 소희가 한 말을 곰곰이 생각해보고 있었어",
+                "th": "ฉันไตร่ตรองคำพูดของ Linghan ดูแล้ว และตอนนี้เข้าใจแจ่มแจ้งแล้วล่ะ",
+                "zh-Hans": "我刚才翻来覆去品味凌寒说的话，终于悟了！",
+                "zh-Hant": "我剛才翻來覆去品味凌寒說的話，終於悟了！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie hat mich nicht abgelehnt. Sie hat mich dazu gedrängt, die Echos sorgfältig zu pflegen. Es ist ihre Art, mich nach vorne zu führen.",
+                "en": "She wasn’t rejecting me. She was urging me to nurture the Echoes with care.",
+                "es": "No me estaba rechazando. Me estaba instando a cuidar de los Ecos con esmero.",
+                "fr": "Elle ne m'a pas rejeté. En fait, elle m’a encouragée à m’occuper des Échos.",
+                "ja": "……音骸は十分カッコよかった……だが、見た目だけじゃ足りないと言われた。つまり、必要なのはその芯となる強さだ。",
+                "ko": "위풍당당한 에코라도 겉만 번지르르해서는 안 된다는 걸 알려준거야",
+                "th": "เธอไม่ได้ปฏิเสธฉัน เธอแนะนำให้ฉันดูแลเอคโค่ด้วยความเอาใจใส่",
+                "zh-Hans": "她是在暗示我，声骸已经够威风了，但徒有其表可不行，关键在于进一步的精心栽培。",
+                "zh-Hant": "她是在暗示我，聲骸已經夠威風了，但徒有其表可不行，關鍵在於進一步的精心栽培。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist ihre Art, mich nach vorne zu führen. Hahaha, sie kümmert sich wirklich um mich!",
+                "en": "It’s her way of guiding me forward. Hahaha, she truly does care about me!",
+                "es": "Es su forma de guiarme hacia adelante. Jajaja, ¡realmente se preocupa por mí!",
+                "fr": "C'est sa manière de me montrer la voie. Elle tient vraiment à moi !",
+                "ja": "俺に教えてくれたんだよ、彼女は！俺もまだまだ諦める時じゃない！がははっ！",
+                "ko": "그녀가 나에게 방향을 알려주고 있어! 하하하, 그녀의 마음속에는 내가 아직 있다는 뜻이야!",
+                "th": "เธอพูดแบบนั้นเพื่อสอนฉัน ฮ่าๆ เธอแคร์ฉันจริงๆ ด้วยสินะ!",
+                "zh-Hans": "她在指点我！哈哈哈，她心里有我！",
+                "zh-Hant": "她在指點我！ 哈哈哈，她心裡有我！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "...",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "……",
+                    "ja": "……",
+                    "ko": "......",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "...Ich frage mich, ob Großvater Jingzhu sich den Kopf gestoßen hat.",
+                "en": "...Starting to wonder if Grandpa Jingzhu bumped his head.",
+                "es": "...Empezando a preguntarme si el abuelo Jingzhu se golpeó la cabeza.",
+                "fr": "Je commence à me demander si monsieur Jingzhu s'est cogné la tête.",
+                "ja": "……景燭じいちゃん、ちょっと心配だよ……",
+                "ko": "...할아버지의 정신 상태가 조금 걱정되네",
+                "th": "...เริ่มสงสัยแล้วสิว่าปู่ Jingzhu ไปล้มหัวฟาดพื้นที่ไหนเข้าหรือเปล่า",
+                "zh-Hans": "……有点担心景烛爷爷的精神状态。",
+                "zh-Hant": "……有點擔心景燭爺爺的精神狀態。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kommt, meine jungen Freunde! Es ist keine Zeit zu verschwenden. Wir verlassen die Stadt, um die benötigten Materialien zu sammeln...",
+                "en": "Come along, my young friends! There's no time to waste. We're leaving the city to gather the materials needed...",
+                "es": "¡Vamos, mis jóvenes amigos! No hay tiempo que perder. Vamos a salir de la ciudad para recoger los materiales necesarios...",
+                "fr": "Allez ! Il n'y a pas de temps à perdre. Nous quittons la ville pour rassembler les matériaux nécessaires.",
+                "ja": "善は急げだ！さっそく城外に……",
+                "ko": "가자, 이참에 에코 더 잡으러 가자! 다시 성 밖으로 나가자...",
+                "th": "มาเลย ผองเพื่อนรุ่นเยาว์ของฉัน! จะมัวเสียเวลาไม่ได้แล้ว เราจะออกจากเมืองไปรวบรวมของที่จำเป็น...",
+                "zh-Hans": "走，乘胜追击！咱们现在就出城……",
+                "zh-Hant": "走，乘勝追擊！ 咱們現在就出城……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warte, Großvater Jingzhu! Mach es ruhig! Es wird spät und du erholst dich noch von deiner Verletzung. Außerdem, {PlayerName} muss nach dem Einfangen all dieser Echos erschöpft sein...",
+                "en": "Wait, Grandpa Jingzhu! Take it easy! It's getting late, and you're still recovering from your injury. Plus, {PlayerName} must be beat after capturing all those Echoes...",
+                "es": "¡Espera, abuelo Jingzhu! ¡Vamos con calma! Se está haciendo tarde, y todavía te estás recuperando de tu lesión. Además, {PlayerName} debe estar agotado después de capturar todos esos Ecos...",
+                "fr": "Attendez, Monsieur Jingzhu ! Doucement ! Il commence à se faire tard, vous vous remettez toujours de votre blessure, et {PlayerName} doit être {Male=épuisé;Female=épuisée}après avoir capturé tous ces Échos...",
+                "ja": "待って待って待って！もう夜だし……傷が治ったばかりの人を無茶させらんないし、{PlayerName}も一日中戦ってクタクタだよ……",
+                "ko": "할아버지 너무 조급해 하지 마! 시간이 이미 늦었고, 할아버지 몸에 상처도 있잖아! 게다가 {PlayerName}도 하루 종일 고생했으니까...",
+                "th": "รอแป๊บนึงนะปู่ Jingzhu! ใจเย็นๆ หน่อยสิ! นี่มันดึกแล้ว ปู่ยังไม่ฟื้นตัวจากอาการบาดเจ็บเลย แถม {PlayerName} ก็คงเหนื่อยจากการตามจับเอคโค่ทั้งหมดนั่นด้วย...",
+                "zh-Hans": "诶诶景烛爷爷别太心急，现在天色可不早了。况且你身上还有伤呢，{PlayerName}也跑了一天了……",
+                "zh-Hant": "欸欸景燭爺爺別太心急，現在天色可不早了。 况且你身上還有傷呢，{PlayerName}也跑了一天了……"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, meine Entschuldigung. Ich habe mich hinreißen lassen und die Zeit aus den Augen verloren. Du musst erschöpft sein. Lass es uns an einem anderen Tag machen.",
+                "en": "Oh, my apologies. I got carried away and lost track of time. You must be exhausted. Let’s do it another day.",
+                "es": "Oh, mis disculpas. Me dejé llevar y perdí la noción del tiempo. Debes estar agotado. Lo haremos otro día.",
+                "fr": "Oh, désolé. Je me suis laissé emporter et j'ai perdu la notion du temps. On le fera un autre jour.",
+                "ja": "ああ悪い悪い……気持ちだけ先走ってしまった。あんたたちも疲れているよな。また日を改めよう。",
+                "ko": "아 미안 미안! 너무 조급해서 시간 늦은 줄도 몰랐네. 너희도 엄청 피곤하겠지? 그럼 다음에 가자",
+                "th": "โอ้ ขอโทษที ฉันมัวคุยเพลินจนลืมเวลา คงจะเหนื่อยแย่เลยสิ ไว้คุยกันใหม่นะ",
+                "zh-Hans": "啊，抱歉抱歉，我太心急了没注意时间。你们也累了吧，那改天吧。",
+                "zh-Hant": "啊，抱歉抱歉，我太心急了沒注意時間。 你們也累了吧，那改天吧。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, fast vergessen. Hier ist deine Entlohnung. Bitte, nimm sie an.",
+                "en": "Ah, almost forgot. Here’s your compensation. Please, accept it.",
+                "es": "Ah, casi lo olvido. Aquí está tu compensación. Por favor, acéptala.",
+                "fr": "Ah, j'ai presque oublié. Voici votre récompense. Acceptez-la, je vous en prie.",
+                "ja": "そうだ、報酬も渡さなくてはな……さあ受け取ってくれ。",
+                "ko": "참, 깜빡할 뻔했는데, 이 보수도 꼭 받아줘",
+                "th": "โอ๊ะ เกือบลืมเลย นี่ค่าตอบแทนของเธอ รับไว้เถอะ!",
+                "zh-Hans": "对了，差点忘了，还有这些报酬，请你们务必收下。",
+                "zh-Hant": "對了，差點忘了，還有這些報酬，請你們務必收下。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wenn du darauf bestehst.",
+                    "en": "If you insist.",
+                    "es": "Si insistes.",
+                    "fr": "Si vous insistez.",
+                    "ja": "お言葉に甘えて……",
+                    "ko": "그럼 사양하지 않을게요",
+                    "th": "งั้นจะรับไว้",
+                    "zh-Hans": "恭敬不如从命。",
+                    "zh-Hant": "恭敬不如從命。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Wirklich? Einfach so nehmen?",
+                    "en": "Really? Just take it?",
+                    "es": "¿En serio? ¿Solo lo tomo?",
+                    "fr": "Vraiment ?",
+                    "ja": "本当にいいの？",
+                    "ko": "그냥 받아도 되나요?",
+                    "th": "จริงเหรอ? ให้จริงๆ นะ?",
+                    "zh-Hans": "直接拿就行？",
+                    "zh-Hant": "直接拿就行？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gut! Das nächste Mal, wenn ich um deine Hilfe bitte, werde ich dir auch einen anständigen Betrag zahlen. So entstehen Verbindungen, oder?",
+                "en": "Good! Next time I ask for your help, I’ll also pay you a decent sum. It’s how connections are forged, isn’t it?",
+                "es": "¡Bien! La próxima vez que te pida ayuda, también te pagaré una suma decente. Así es como se forjan las conexiones, ¿no es así?",
+                "fr": "Bien ! La prochaine fois que je demanderai votre aide, je vous paierai également une bonne somme. C'est ainsi que se tissent les liens, non ?",
+                "ja": "若者はこうでなくてはな！次もたっぷり報酬を用意してやろう。",
+                "ko": "그래! 앞으로도 충분한 보수를 줄게! 다음에도 잘 부탁해!",
+                "th": "ดีเลย! ครั้งหน้าถ้าฉันขอความช่วยเหลือ ฉันก็จะจ่ายเงินให้อย่างงามอีก นี่แหละวิธีสร้างสายสัมพันธ์ ใช่ไหมล่ะ?",
+                "zh-Hans": "可以，很爽快！下次找你们帮忙，我也会给足报酬的，有来才有往嘛！",
+                "zh-Hant": "可以，很爽快！ 下次找你們幫忙，我也會給足報酬的，有來才有往嘛！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm es, Kleiner. Du hast es dir verdient. Das nächste Mal, wenn ich um deine Hilfe bitte, werde ich dir auch einen anständigen Betrag zahlen. So entstehen Verbindungen, oder?",
+                "en": "Take it, kid. You’ve earned it. Next time I ask for your help, I’ll also pay you a decent sum. It’s how connections are forged, isn’t it?",
+                "es": "Tómalo, chico. Te lo has ganado. La próxima vez que pida tu ayuda, también te pagaré una suma decente. Así es como se forjan las conexiones, ¿no es así?",
+                "fr": "N'hésitez pas, vous avez bien travaillé. La prochaine fois que je vous demanderai votre aide, je vous paierai aussi une belle somme. C'est ainsi que se forgent les relations, non ?",
+                "ja": "なーに遠慮してるんだ！助けてくれたお礼だからな。次もたっぷり報酬を用意してやろう。",
+                "ko": "이건 너희들이 마땅히 받아야 할 것이니 꼭 받아줘! 앞으로도 충분한 보수를 줄게! 다음에도 잘 부탁해!",
+                "th": "รับไปเถอะ ไม่เป็นไรหรอก ครั้งหน้าถ้าฉันขอความช่วยเหลือ ฉันก็จะจ่ายให้อย่างงามอีก นี่แหละวิธีสร้างสายสัมพันธ์ ใช่ไหมล่ะ?",
+                "zh-Hans": "哎呀，客气什么，这是你们该得的。下次找你们帮忙，我也会给足报酬的，有来才有往嘛。",
+                "zh-Hant": "哎呀，客氣什麼，這是你們該得的。 下次找你們幫忙，我也會給足報酬的，有來才有往嘛。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ihr habt beide heute hart gearbeitet. Beeilt euch nach Hause und ruht euch aus! Danke!",
+                "en": "You’ve both worked hard today. Hurry home and rest up! Thank you!",
+                "es": "Ambos han trabajado duro hoy. ¡Apresúrense a casa y descansen! ¡Gracias!",
+                "fr": "Vous avez bien travaillé aujourd'hui. Rentrez vite chez vous et reposez-vous ! Merci à vous !",
+                "ja": "今日はありがとう。ちゃんと休むんだぞ！",
+                "ko": "시간이 늦었으니, 너희들도 하루 종일 고생했으니 일찍 쉬어!",
+                "th": "วันนี้ทั้งคู่ทำงานหนักมากเลยนะ รีบกลับบ้านไปพักผ่อนเถอะ! ขอบคุณนะ!",
+                "zh-Hans": "天色不早了，你们也累了一天了，早点休息啊！",
+                "zh-Hant": "天色不早了，你們也累了一天了，早點休息啊！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Chaos-Krieger",
+        "en": "Locate Havoc Warriors",
+        "es": "Localiza a los Guerreros de Destrucción.",
+        "fr": "Chercher le Combattant Havoc",
+        "ja": "審判の戦士を探す",
+        "ko": "심판하는 전사 찾기",
+        "th": "ระบุตำแหน่ง Havoc Warrior",
+        "zh-Hans": "寻找审判战士",
+        "zh-Hant": "尋找審判戰士"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Wir sind fast da. Bleib mir nahe!",
+                "en": "We’re almost there. Stick close to me!",
+                "es": "Ya casi llegamos. ¡Quédate cerca de mí!",
+                "fr": "On y est presque. Restez près de moi !",
+                "ja": "この辺りだね。付いてきて！",
+                "ko": "바로 이 근처야, 따라와!",
+                "th": "จะถึงแล้ว อยู่ใกล้ๆ ฉันไว้!",
+                "zh-Hans": "就是这附近啦，跟紧我！",
+                "zh-Hant": "就是這附近啦，跟緊我！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Opa Jingzhu, geht es dir gut?",
+                "en": "Grandpa Jingzhu, are you feeling alright?",
+                "es": "Abuelo Jingzhu, ¿te sientes bien?",
+                "fr": "Monsieur Jingzhu, vous vous sentez bien ?",
+                "ja": "景燭じいちゃん、傷は平気？",
+                "ko": "할아버지 괜찮은 거지?",
+                "th": "ปู่ Jingzhu ไม่เป็นไรใช่ไหม?",
+                "zh-Hans": "景烛爷爷，你的伤还好吧？",
+                "zh-Hant": "景燭爺爺，你的傷還好吧？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mir geht es perfekt gut. Anstatt mich zu beunruhigen, konzentrieren wir uns auf diese <ano=Energieeinheiten mit chaotischen Frequenzen>Tacet-Dissonanzen</ano>.",
+                "en": "I’m feeling perfectly good. Instead of worrying me, let’s focus on these <ano=Energy entities with chaotic frequencies>Tacet Discords</ano>.",
+                "es": "Me siento perfectamente bien. En lugar de preocuparte por mí, concentrémonos en estas <ano=Entidades de energía con frecuencias caóticas>Disonancias Tácitas</ano>.",
+                "fr": "Je me sens parfaitement bien. Au lieu de vous inquiéter pour moi, concentrons-nous sur ces <ano=Énergies aux fréquences chaotiques>Tacets Discords</ano>.",
+                "ja": "平気平気！俺より<ano=周波数が乱れた実体エナジー>残像</ano>に気を付けるといい！",
+                "ko": "괜찮아. 걱정 안 해도 돼! 먼저 <ano=혼돈 주파수의 에너지체>잔상</ano>부터 걱정하라고!",
+                "th": "ฉันไม่เป็นไรเลย แทนที่จะกังวลเรื่องฉัน มาจดจ่อกับ<ano=กลุ่มก้อนพลังงานที่มีความถี่แปรปรวน>ทาเซ็ตดิสคอร์ด</ano>กันดีกว่า",
+                "zh-Hans": "没事没事，比起我，你先关心关心<ano=频率杂乱的能量体>残象</ano>吧！",
+                "zh-Hant": "沒事沒事，比起我，你先關心關心<ano=頻率雜亂的能量體>殘象</ano>吧！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast recht. Es gibt eine ganze Menge Tacet-Dissonanzen. Welche denkst du, sollten wir zuerst einfangen?",
+                "en": "You’re right. There’s a whole bunch of Tacet Discords around. Which one do you think we should capture first?",
+                "es": "Tienes razón. Hay un montón de Disonancias Tácitas alrededor. ¿Cuál crees que deberíamos capturar primero?",
+                "fr": "Vous avez raison. Il y en a plein autour de nous. Lequel on devrait capturer en premier, tu penses ?",
+                "ja": "そうだね。ここらは特に多いし……まずは、どんな残像がいいかな……",
+                "ko": "알겠어! 그런데 여기 잔상이 정말 엄청 많아... 어떤 잔상을 먼저 잡아야 할지...",
+                "th": "ปู่พูดถูก มีทาเซ็ตดิสคอร์ดเยอะแยะเลย คิดว่าเราควรจับตัวไหนก่อนดี?",
+                "zh-Hans": "是哦，这边的残象确实不少，乌泱泱的一片……要先抓哪种呢……",
+                "zh-Hant": "是喔，這邊的殘象確實不少，烏泱泱的一片……要先抓哪種呢……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Die beeindruckende.",
+                    "en": "The impressive one.",
+                    "es": "El impresionante.",
+                    "fr": "Le plus impressionnant.",
+                    "ja": "カッコイイの。",
+                    "ko": "당연히 강력한 잔상이죠",
+                    "th": "ตัวที่น่าประทับใจ",
+                    "zh-Hans": "威风的。",
+                    "zh-Hant": "威風的。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Der beeindruckende.",
+                    "en": "The formidable one.",
+                    "es": "El formidable.",
+                    "fr": "Le plus redoutable.",
+                    "ja": "強いの。",
+                    "ko": "당연히 가장 센 잔상이죠",
+                    "th": "ตัวที่สู้เก่ง",
+                    "zh-Hans": "厉害的。",
+                    "zh-Hant": "厲害的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Genau, das ist mein Ziel. Lass uns das beeindruckendste von allen fangen!",
+                "en": "Exactly, that’s my goal. Let’s aim to capture the most impressive of them all!",
+                "es": "Exactamente, ese es mi objetivo. ¡Apuntemos a capturar el más impresionante de todos!",
+                "fr": "Exactement, c'est mon objectif. Viser le plus impressionnant de tous !",
+                "ja": "そうだ！カッコイイのが一番だ！",
+                "ko": "맞아! 강력한 잔상! 잔상 중에서 제일 세보이는 잔상을 잡아야지!",
+                "th": "ใช่เลย นั่นแหละเป้าหมายของฉัน เล็งตัวที่น่าประทับใจที่สุดกันดีกว่า!",
+                "zh-Hans": "对对，要威风的，这片最威风的！",
+                "zh-Hant": "對對，要威風的，這片最威風的！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die beeindruckenden sind immer die beeindruckendsten. Es ist ein und dasselbe.",
+                "en": "The formidable ones are always the most impressive. It’s one and the same.",
+                "es": "Los formidables siempre son los más impresionantes. Es uno y lo mismo.",
+                "fr": "Les redoutables sont toujours les plus impressionnants. Ça revient au même.",
+                "ja": "強いやつはカッコイイからな！",
+                "ko": "제일 세보이는 게 가장 강력한 잔상 아니겠어?",
+                "th": "ตัวที่สู้เก่งก็มักจะน่าประทับใจที่สุดนั่นแหละ นิยามเดียวกันเลย",
+                "zh-Hans": "厉害的自然就是威风的，一种东西嘛。",
+                "zh-Hant": "厲害的自然就是威風的，一種東西嘛。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ah, lass mich nachdenken... das beeindruckendste und beeindruckendste hier ist... Chaos-Krieger! Lass uns das fangen!",
+                "en": "Ah, let me think... the most formidable and impressive one around here is... Havoc Warrior! Let's capture it!",
+                "es": "Ah, déjame pensar... el más formidable e impresionante por aquí es... ¡El Guerrero de la Destrucción! ¡Vamos a capturarlo!",
+                "fr": "Ah, laissez-moi réfléchir... Le plus redoutable et impressionnant ici est... Le Combattant Havoc ! Allons le capturer !",
+                "ja": "ここらで一番強いのは……審判の戦士か！よし、そいつを捕ろう！",
+                "ko": "가장 강력한 잔상은... 바로 「심판하는 전사」! 「심판하는 전사」를 잡으러 가자",
+                "th": "อ่า ขอคิดดูก่อน... ตัวที่สู้เก่งและน่าประทับใจที่สุดแถวนี้คือ... Havoc Warrior! ไปจับมันเลย!",
+                "zh-Hans": "这片最厉害最威风的是……审判战士！对，咱们去抓审判战士就成。",
+                "zh-Hant": "這片最厲害最威風的是……審判戰士！對，咱們去抓審判戰士就成。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Chaos-Krieger ist das Monster mit den großen Sensen, oder? Es ist wirklich beeindruckend! Opa Jingzhu, ich hatte keine Ahnung, dass du so viel über die Tacet-Dissonanzen wusstest!",
+                "en": "Havoc Warrior is the monster with those big scythes, right? It’s indeed impressive! Grandpa Jingzhu, I had no idea you were so knowledgeable about Tacet Discords!",
+                "es": "El Guerrero de la Destrucción es el monstruo con esas grandes guadañas, ¿verdad? ¡Es realmente impresionante! Abuelo Jingzhu, ¡no tenía idea de que supieras tanto sobre las Disonancias Tácitas!",
+                "fr": "Le Combattant Havoc, c'est bien le Tacet Discord avec les grandes faucilles, non ? Il est vraiment impressionnant ! Monsieur Jingzhu, je ne savais pas que vous connaissez autant de choses sur les Tacets Discords !",
+                "ja": "おおっ！あの大きい鎌を使う残像かあ。確かに強そうだしカッコいいな。やっぱ景燭じいちゃん、音骸に詳しいんだね！",
+                "ko": "오오, 「심판하는 전사」는 큰 낫을 멘 에코지? 확실히 강력해 보이네! 할아버지가 에코에 대해 이렇게 잘 알고 있을 줄 몰랐네",
+                "th": "Havoc Warrior คือพวกปีศาจที่มีเคียวอันใหญ่ใช่ไหม? ก็เท่จริงๆ นั่นแหละ! ปู่ Jingzhu ไม่ยักรู้ว่าปู่เชี่ยวเรื่องทาเซ็ตดิสคอร์ดขนาดนี้!",
+                "zh-Hans": "哦哦，审判战士是那种扛着大镰刀的声骸吧，确实威风！没想到景烛爷爷你对声骸也这么熟悉啊。",
+                "zh-Hant": "哦哦，審判戰士是那種扛著大鐮刀的聲骸吧，確實威風！沒想到景燭爺爺你對聲骸也這麼熟悉啊。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Natürlich! In meiner Blütezeit haben mein Kapitän und ich alle Arten von Tacet-Dissonanzen gefangen...",
+                "en": "Of course! Back in my prime, with my captain, we captured all kinds of Tacet Discords...",
+                "es": "¡Por supuesto! En mis mejores tiempos, con mi capitán, capturamos todo tipo de Disonancias Tácitas...",
+                "fr": "Bien sûr ! À l'époque, avec ma capitaine, on capturait toutes sortes de Tacets Discords…",
+                "ja": "ははっ、それは勿論。昔は隊長と一緒に、色んな音骸を……",
+                "ko": "흥흥, 당연하지. 그때 대장을 따라다니면서 모든 에코를...",
+                "th": "แน่นอน! สมัยหนุ่มๆ ฉันกับผู้บังคับกองจับทาเซ็ตดิสคอร์ดไว้หลายชนิดเลย...",
+                "zh-Hans": "哼哼，那当然。当年我跟着队长，可把各个声骸都……",
+                "zh-Hant": "哼哼，那當然。當年我跟著隊長，可把各個聲骸都……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hm? Es gibt mehrere Chaos-Krieger vor uns. Lass uns gehen!",
+                "en": "Hm? There are several Havoc Warriors ahead. Let’s go!",
+                "es": "¿Mm? Hay varios Guerreros de la Destrucción adelante. ¡Vamos!",
+                "fr": "Hm ? Il y a plusieurs Combattants Havoc devant. Allons-y !",
+                "ja": "ん？あれは審判の戦士じゃないか。\nちょうどいい、片付けよう！",
+                "ko": "응? 바로 앞에 「심판하는 전사」가 몇 마리 있는데 일단 잡아보자",
+                "th": "หืม? ข้างหน้ามี Havoc Warrior ตั้งหลายตัวแน่ะ ลุยเลย!",
+                "zh-Hans": "嗯？前面就有几只审判战士。先不说了，快上吧。",
+                "zh-Hant": "嗯？前面就有幾隻審判戰士。先不說了，快上吧。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege Chaos-Krieger ({q_count}/3)",
+        "en": "Defeat Havoc Warriors ({q_count}/3)",
+        "es": "Derrota a los Guerreros de Destrucción ({q_count}/3)",
+        "fr": "Vaincre les Combattants Havoc ({q_count}/3)",
+        "ja": "審判の戦士を倒す({q_count}/3)",
+        "ko": "심판하는 전사 처치 ({q_count}/3)",
+        "th": "พิชิต Havoc Warrior ({q_count}/3)",
+        "zh-Hans": "消灭审判战士（{q_count}/3）",
+        "zh-Hant": "消滅審判戰士（{q_count}/3）"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 24,
+          "talks": [
+            {
+              "text": {
+                "de": "Hehe, wusste, dass wir das schaffen könnten! Wir haben jetzt ein Echo, kinderleicht.",
+                "en": "Hehe, knew we could pull it off! We’ve got an Echo now, easy peasy.",
+                "es": "Jeje, sabía que podríamos lograrlo. ¡Ahora tenemos un Eco, fácil y sencillo.",
+                "fr": "Héhé, je savais qu'on pouvait le faire ! On a capturé un Écho, facile !",
+                "ja": "へへっ、どうよ！幸先がいいね。",
+                "ko": "헤헤, 성공했군! 에코가 나타났어!",
+                "th": "ฮ่าๆ กะแล้วว่าพวกเราต้องทำได้! ตอนนี้เราจับเอคโค่ได้แล้ว ง่ายมากเลย",
+                "zh-Hans": "嘿嘿，果然是旗开得胜！这就有声骸了。",
+                "zh-Hant": "嘿嘿，果然是旗開得勝！這就有聲骸了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hey {PlayerName}, beeil dich und absorbier es, bevor es verschwindet!",
+                "en": "Hey {PlayerName}, hurry and absorb it before it poofs away!",
+                "es": "¡Oye {PlayerName}, apresúrate y absórbelo antes de que desaparezca!",
+                "fr": "Hé, {PlayerName}, dépêche-toi de l'absorber avant qu'il ne disparaisse !",
+                "ja": "消える前に回収しちゃおう！",
+                "ko": "{PlayerName}, 에코가 사라지기 전에 빨리 흡수해야 해!",
+                "th": "เฮ้ {PlayerName} รีบดูดซับมันก่อนจะหายไป!",
+                "zh-Hans": "趁着还没消散，{PlayerName}赶紧收了它吧！",
+                "zh-Hant": "趁著還沒消散，{PlayerName}趕緊收了它吧！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Ankunft im Tacet-Feld",
+        "en": "Arrive at Tacet Field",
+        "es": "Llega al Campo Tácito.",
+        "fr": "Se rendre à la Zone taciturne",
+        "ja": "無音区に向かう",
+        "ko": "무음구역 도착",
+        "th": "เดินทางมาถึงสนามทาเซ็ต",
+        "zh-Hans": "抵达无音区",
+        "zh-Hant": "抵達無音區"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 9,
+          "talks": [
+            {
+              "text": {
+                "de": "Wow, es gibt tatsächlich ein Tacet-Feld! Großvater Jingzhu, du weißt wirklich viel!",
+                "en": "Wow, there is indeed a Tacet Field! Grandpa Jingzhu, you really know a lot!",
+                "es": "¡Vaya, en efecto hay un Campo Tácito! Abuelo Jingzhu, ¡realmente sabes mucho!",
+                "fr": "Il y a vraiment une Zone taciturne ! Monsieur Jingzhu, vous en connaissez vraiment un rayon !",
+                "ja": "うわぁ……本当にあるね！\n景燭じいちゃん、あんた一体何者なんだよ……",
+                "ko": "대박! 정말 무음구역이 있어. 할아버지는 정말 다 아네?",
+                "th": "ว้าว มีสนามทาเซ็ตจริงด้วย! ปู่ Jingzhu ปู่นี่ช่างรอบรู้จริงๆ!",
+                "zh-Hans": "神了，还真有一个无音区。景烛爷爷你到底还知道多少事情啊！",
+                "zh-Hant": "神了，還真有一個無音區。 景燭爺爺你到底還知道多少事情啊！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hehe, ich habe es dir schon gesagt, dieser alte Mann hatte in seiner Blütezeit seine Abenteuer!",
+                "en": "Hehe, I already told you, this old man had his fair share of adventures in his prime!",
+                "es": "Jeje, ya te lo dije, este viejo tuvo su cuota de aventuras en su mejor momento!",
+                "fr": "Hehe, je vous ai déjà dit, ce vieux bonhomme a vécu pas mal d'aventures dans sa jeunesse !",
+                "ja": "ははっ。だから言ったろ？じいちゃんは昔やり手だった！",
+                "ko": "헤헤, 말했잖아. 난 젊었을 때 정말 대단한 사람이었다고!",
+                "th": "ฮี่ฮี่ บอกแล้วไงว่าตอนหนุ่มๆ ฉันคนนี้เคยออกผจญภัยไปทั่วสารทิศ!",
+                "zh-Hans": "嘿嘿，我都说了，老头子我啊，当年可是很厉害的！",
+                "zh-Hant": "嘿嘿，我都說了，老頭子我啊，當年可是很厲害的！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt ist es an der Zeit, dass du glänzt. Räum dieses Tacet-Feld auf und du solltest in der Lage sein, einige Echos zu fangen.",
+                "en": "Now, it’s your moment to shine. Clear this Tacet Field and you should be able to capture some Echoes.",
+                "es": "Ahora, es tu momento para brillar. Despeja este Campo Tácito y deberías ser capaz de capturar algunos Ecos.",
+                "fr": "Maintenant, c'est votre moment de briller. Nettoyez cette Zone taciturne, et vous devriez pouvoir capturer quelques Échos.",
+                "ja": "後は若い衆に任せた！\n無音区を全部浄化すれば、新しい音骸も手に入るはずだ。",
+                "ko": "다음은 너희들에게 맡길게. 무음구역을 클리어하면 새로운 에코를 잡을 수 있을 거야",
+                "th": "ตอนนี้ถึงเวลาแสดงความสามารถกันแล้ว เคลียร์สนามทาเซ็ตนี้ให้ได้ แล้วพวกเธอก็น่าจะจับเอคโค่ได้",
+                "zh-Hans": "接下来就靠你们年轻人了，清理无音区，应该就能抓到一些新声骸。",
+                "zh-Hant": "接下來就靠你們年輕人了，清理無音區，應該就能抓到一些新聲骸。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Tacet-Feld-Herausforderung abschließen",
+        "en": "Complete Tacet Field Challenge",
+        "es": "Completa el desafío del Campo Tácito.",
+        "fr": "Terminer le défi de la Zone taciturne",
+        "ja": "無音区をクリア",
+        "ko": "무음구역 완료",
+        "th": "ผ่านการท้าทายสนามทาเซ็ต",
+        "zh-Hans": "完成无音区",
+        "zh-Hant": "完成無音區"
+      },
+      "entities": [
+        {
+          "entityId": 139000150,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男",
+          "areaId": 504,
+          "position": {
+            "x": -31280,
+            "y": -8100,
+            "z": 18377
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 25,
+          "talks": [
+            {
+              "text": {
+                "de": "Puh, endlich fertig! Lass mich sehen...",
+                "en": "Whew, finally done! Let me see...",
+                "es": "¡Uf, finalmente terminamos! Déjame ver...",
+                "fr": "Ouf, enfin terminé ! Voyons voir...",
+                "ja": "ふぅ～浄化完了！どれどれ……",
+                "ko": "휴~드디어 끝났어! 어디 보자...",
+                "th": "โอ้โห ในที่สุดก็เสร็จแล้ว! ไหนดูซิ...",
+                "zh-Hans": "呼~终于打完了！让我看看……",
+                "zh-Hant": "呼~終於打完了！讓我看看……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wow, noch zwei Echos zu gehen! {PlayerName}, du hast wirklich Glück!",
+                "en": "Whoa, two more Echoes to go! {PlayerName}, you’re so lucky!",
+                "es": "¡Vaya, solo faltan dos Ecos más! {PlayerName}, ¡qué suerte tienes!",
+                "fr": "Waouh, encore deux Échos à capturer ! {PlayerName}, tu as de la chance !",
+                "ja": "おおっ！二つも！{PlayerName}、あんたついてるね！",
+                "ko": "우와! 두 마리인데! {PlayerName}, 운이 정말 좋네!",
+                "th": "ว้าว เหลือเอคโค่อีกสองตัว! {PlayerName} คุณนี่โชคดีจริงๆ!",
+                "zh-Hans": "嚯，两个！{PlayerName}，你运气真好！",
+                "zh-Hant": "嚯，兩個！{PlayerName}，你運氣真好！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Weißt du, die Chancen, dass Echos auftauchen, nachdem Tacet-Dissonanzen besiegt wurden, sind gering, ganz zu schweigen davon, zwei auf einmal zu fangen!",
+                "en": "You know, the chances for Echoes to appear after taking down Tacet Discords are slim, not to mention bagging two at once!",
+                "es": "Sabes, las posibilidades de que aparezcan Ecos después de derribar Disonancias Tácitas son escasas, ¡y no hablemos de conseguir dos a la vez!",
+                "fr": "Tu sais, les chances de voir des Échos apparaître après avoir éliminé des Zones taciturnes sont faibles, alors en attraper deux d'un coup, c'est rare !",
+                "ja": "残像を倒しても音骸が手に入らないこともあるからね。一回の戦いで二つも入手できるなんて、もはやレア事件だよ！",
+                "ko": "매번 에코가 나타나는 것도 아니고 게다가 한 번에 두 개씩 나타나는 건 굉장히 드문 일이야!",
+                "th": "รู้ไหมว่าโอกาสที่เอคโค่จะปรากฏหลังจากปราบทาเซ็ตดิสคอร์ดได้มีน้อยมากเลยนะ เรื่องจะจับสองตัวในคราวเดียวนี่ยิ่งไม่ต้องพูดถึง!",
+                "zh-Hans": "可不是每次都能掉声骸的，一下掉两个那就更少见了！",
+                "zh-Hant": "可不是每次都能掉聲骸的，一下掉兩個那就更少見了！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Man sagt, je stärker dein Terminal, desto wahrscheinlicher ist es, dass Echos auftauchen. Das liegt daran... daran... Wie auch immer, dein Terminal muss wahnsinnig stark sein! Oder?",
+                "en": "They say the stronger your Terminal, the likelier it is for Echoes to pop up. That's because... because... Anyway, your Terminal must be crazy powerful! Right?",
+                "es": "Dicen que cuanto más fuerte es tu Terminal, más probable es que aparezcan Ecos. Eso es porque... porque... De todos modos, ¡tu Terminal debe ser increíblemente poderosa! ¿Verdad?",
+                "fr": "On dit que plus ta Gourde est puissante, plus les Échos ont de chances d'apparaître. C'est parce que... parce que... Bon, bref, ta Gourde doit être sacrément puissante, non ?",
+                "ja": "確か、デバイスの機能が高い程、音骸も出やすいって話だったっけ……さすがに理論までは知らないけど、あんたのデバイスすごいじゃん！",
+                "ko": "호리병의 시스템이 강할수록 에코가 나타나는 확룔이 더 높은 것 같은데... 구체적인 원리는 나도 잘 모르겠지만 방랑자가 갖고 있는 호리병의 시스템은 분명 대단한 것 같아!",
+                "th": "ว่ากันว่า ยิ่งเทอร์มินัลแข็งแกร่งเท่าไหร่ โอกาสที่เอคโค่จะโผล่มาก็ยิ่งสูงขึ้นเท่านั้น นั่นก็เพราะ... เพราะ... ยังไงก็เถอะ เทอร์มินัลของคุณคงจะทรงพลังสุดๆ ไปเลย! ใช่ไหม?",
+                "zh-Hans": "好像葫芦的系统越厉害，残象就越容易掉声骸……具体原理我也说不清，但你葫芦的系统一定很厉害吧！",
+                "zh-Hant": "好像葫蘆的系統越厲害，殘象就越容易掉聲骸……具體原理我也說不清，但你葫蘆的系統一定很厲害吧！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Jingzhu und kehre nach Jinzhou zurück",
+        "en": "Talk to Jingzhu and head back to Jinzhou",
+        "es": "Habla con Jingzhu y vuelve a Jinzhou.",
+        "fr": "Parler à Jingzhu et retourner à Jinzhou",
+        "ja": "景燭と会話し、ともに今州に戻る",
+        "ko": "경호와 대화를 나누고 함께 금주로 돌아가기",
+        "th": "คุยกับจิงจู แล้วกลับไปจินโจว",
+        "zh-Hans": "与景烛对话，一同返回今州",
+        "zh-Hant": "與景燭對話，一同返回今州"
+      },
+      "entities": [
+        {
+          "entityId": 139000150,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男",
+          "areaId": 504,
+          "position": {
+            "x": -31280,
+            "y": -8100,
+            "z": 18377
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 139000151,
+          "mapId": 8,
+          "blueprintType": "NPC227",
+          "name": "TsEntity_154_013_老奶奶4",
+          "areaId": 301,
+          "position": {
+            "x": -52649,
+            "y": 111486,
+            "z": 1620
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 139000156,
+          "mapId": 8,
+          "blueprintType": "NPC005",
+          "name": "TsEntity_157_001_皇龙老人5",
+          "areaId": 301,
+          "position": {
+            "x": -52120,
+            "y": 110409,
+            "z": 1541
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 139000189,
+          "mapId": 8,
+          "blueprintType": "Player002",
+          "name": "TsEntity_角色002_炽霞20",
+          "areaId": 301,
+          "position": {
+            "x": -52226,
+            "y": 110411,
+            "z": 1541
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 17,
+          "talks": [
+            {
+              "text": {
+                "de": "Gut gemacht, wirklich gut gemacht. Dieses Echo-Team ist viel beeindruckender als meines damals, haha!",
+                "en": "Well done, well done indeed. This Echo team is much more impressive than mine back in the day, haha!",
+                "es": "Bien hecho, muy bien hecho. Este equipo de Ecos es mucho más impresionante que el mío en su día, ¡jaja!",
+                "fr": "Bien joué, vraiment. Cette équipe d'Échos est bien plus impressionnante que celle que j'avais à l'époque, haha !",
+                "ja": "これはいい。あの頃よりずっといい……！ははははっ！",
+                "ko": "나쁘지 않아! 젊은 시절의 나보다 더 위풍당당하네, 하하하!",
+                "th": "เยี่ยมมาก เยี่ยมจริงๆ ทีมเอคโค่ทีมนี้ดูดีกว่าของฉันเมื่อสมัยก่อนโน้นเยอะเลย ฮ่าๆ!",
+                "zh-Hans": "不错不错，比我当年还威风，哈哈哈！",
+                "zh-Hant": "不錯不錯，比我當年還威風，哈哈哈！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gut, ich kann das Selbstvertrauen in mir aufsteigen fühlen! Lass uns nach Jinzhou zurückkehren und sie beeindrucken!",
+                "en": "Alright, I can feel the confidence swelling within me! Let’s return to Jinzhou and dazzle her!",
+                "es": "Bien, puedo sentir la confianza creciendo en mí. ¡Volvamos a Jinzhou y deslumbrémosla!",
+                "fr": "Bon, je sens la confiance monter en moi ! Retournons à Jinzhou et éblouissons-la !",
+                "ja": "これなら大丈夫そうだ。さあ戻ろう。彼女に見せる時だ！",
+                "ko": "이제 자신이 생겼어! 그녀를 만나러 성으로 돌아가자!",
+                "th": "เอาล่ะ ฉันรู้สึกได้ถึงความมั่นใจล้นปรี่! กลับไปจินโจวแล้วไปทำให้ Linghan ตะลึงกันเถอะ!",
+                "zh-Hans": "这下我就有把握了，走，回城里找她去！",
+                "zh-Hant": "這下我就有把握了，走，回城裡找她去！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gut, lass uns gehen.",
+                    "en": "Alright, let’s go.",
+                    "es": "Bien, vayamos.",
+                    "fr": "D'accord, allons-y.",
+                    "ja": "すぐ戻ろう。",
+                    "ko": "그럼, 돌아가죠!",
+                    "th": "เอาล่ะ ไปกันเถอะ",
+                    "zh-Hans": "好，咱们现在就回去吧。",
+                    "zh-Hant": "好，咱們現在就回去吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Gib mir ein paar Momente.",
+                    "en": "Give me a few moments.",
+                    "es": "Dame unos momentos.",
+                    "fr": "Donnez-moi juste un moment.",
+                    "ja": "ちょっと待ってくれ。",
+                    "ko": "잠시만요",
+                    "th": "รอฉันแป๊บนะ",
+                    "zh-Hans": "稍等我一下。",
+                    "zh-Hant": "稍等我一下。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hehe, ich kann mir schon das Gesicht von ihr vorstellen!",
+                "en": "Hehe, I can already picture the look on her face!",
+                "es": "Jeje, ¡ya puedo imaginar la expresión en su rostro!",
+                "fr": "Hehe, je peux déjà imaginer l'expression sur son visage !",
+                "ja": "どんな顔を見せてくれるのか楽しみじゃ！",
+                "ko": "하하, 그녀의 표정이 벌써 기대되는군!",
+                "th": "อิอิ นึกสีหน้าเธอออกเลยล่ะ!",
+                "zh-Hans": "嘿嘿，我已经开始期待她的表情了！",
+                "zh-Hant": "嘿嘿，我已經開始期待她的表情了！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Eile. Ich muss auch einige Vorbereitungen treffen. Was soll ich ihr sagen...",
+                "en": "No rush. I also need to make some preparations. What should I say to her…",
+                "es": "No hay prisa. También necesito hacer algunas preparaciones. ¿Qué debería decirle…",
+                "fr": "Pas de précipitation. Moi aussi, j'ai besoin de me préparer. Qu'est-ce que je vais lui dire…",
+                "ja": "おう。俺も準備しとこうか……まずは挨拶を……",
+                "ko": "그래그래, 그럼 나도 다시 준비를 해야겠군... 그녀를 만나면 무슨 말을 해야할지...",
+                "th": "ไม่ต้องรีบหรอก ฉันต้องเตรียมตัวอีกหน่อย แล้วฉันควรพูดอะไรกับเธอดีล่ะ...",
+                "zh-Hans": "好好，我也再准备准备……见她时该说些什么好呢……",
+                "zh-Hant": "好好，我也再準備準備……見她時該說些什麼好呢……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Antworte Chixia und Jingzhu",
+        "en": "Reply to Chixia and Jingzhu",
+        "es": "Responde a Chixia y Jingzhu.",
+        "fr": "Parler à Chixia et Jingzhu",
+        "ja": "熾霞、景燭に報告する",
+        "ko": "치샤 및 경호와 대화하기",
+        "th": "ตอบกลับ Chixia และจิงจู",
+        "zh-Hans": "回复炽霞和景烛",
+        "zh-Hant": "回覆熾霞和景燭"
+      },
+      "entities": [
+        {
+          "entityId": 139000150,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男",
+          "areaId": 504,
+          "position": {
+            "x": -31280,
+            "y": -8100,
+            "z": 18377
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 10,
+          "talks": [
+            {
+              "text": {
+                "de": "Großvater Jingzhu, sind das genug Echos?",
+                "en": "Grandpa Jingzhu, are these Echoes enough?",
+                "es": "Abuelo Jingzhu, ¿son suficientes estos Ecos?",
+                "fr": "Monsieur Jingzhu, est-ce que ces Échos suffisent ?",
+                "ja": "景燭じいちゃん。これでどう？",
+                "ko": "어때? 할아버지, 이 에코들 괜찮지?",
+                "th": "ปู่ Jingzhu เอคโค่เท่านี้พอรึยัง?",
+                "zh-Hans": "景烛爷爷，这些声骸可以不？",
+                "zh-Hant": "景燭爺爺，這些聲骸可以不？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Absolut! Siehst du? Die Echos, die in diesem Tacet-Feld gesammelt wurden, können ein Team mit dem Chaos-Krieger bilden.",
+                "en": "Absolutely! See? The Echoes obtained in this Tacet Field can make up a team with Havoc Warrior.",
+                "es": "¡Absolutamente! ¿Ves? Los Ecos obtenidos en este Campo Tácito pueden formar un equipo con el Guerrero de Destrucción.",
+                "fr": "Absolument ! Vous voyez ? Les Échos obtenus dans cette Zone taciturne peuvent former une équipe avec le Combattant Havoc.",
+                "ja": "ああ、よくやった。この無音区で入手した音骸なら、審判の戦士とセットで組めるな。",
+                "ko": "그래그래. 이 무음구역에서 흡수한 에코는 마침 「심판하는 전사」와 한 팀을 구성할 수 있군",
+                "th": "พอแน่นอน! เห็นไหม? เอคโค่ที่จับได้จากสนามทาเซ็ตนี่นำมารวมทีมกับ Havoc Warrior ได้",
+                "zh-Hans": "可以可以。果然这个无音区掉落的声骸，刚好可以和审判战士凑成一队。",
+                "zh-Hant": "可以可以。 果然這個無音區掉落的聲骸，剛好可以和審判戰士凑成一隊。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hmm... Lass mich mal sehen. Du hast recht!",
+                "en": "Hmm... Let me take a look. You're right!",
+                "es": "Hmm... Déjame echar un vistazo. ¡Tienes razón!",
+                "fr": "Hmm... Vous avez raison !",
+                "ja": "どれどれ……あ、本当だ！",
+                "ko": "어디 보자... 와! 진짜네!",
+                "th": "อืม... ขอฉันดูหน่อยสิ จริงด้วย!",
+                "zh-Hans": "唔……我看看，还真是！",
+                "zh-Hant": "唔……我看看，還真是！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{PlayerName}, das Glück ist auf deiner Seite, hm? So schnell ein Team zusammenzustellen. Normalerweise kostet es uns einiges an Mühe, ein Echo-Team zu bilden.",
+                "en": "{PlayerName}, luck is on your side, huh? Putting together a team so quickly. Usually, it takes us quite a bit of effort to form an Echo team.",
+                "es": "{PlayerName}, la suerte está de tu lado, ¿eh? Armando un equipo tan rápidamente. Normalmente, nos lleva bastante esfuerzo formar un equipo de Ecos.",
+                "fr": "{PlayerName}, la chance est de ton côté, hein ? Assembler une équipe si rapidement, c'est rare. D'habitude, ça nous prend pas mal de temps pour former une équipe d'Échos.",
+                "ja": "やるじゃん、{PlayerName}！あたしたちだって普段あんなに苦労するのに！",
+                "ko": "{PlayerName}, 진짜 대단해, 벌써 한 팀이 되었네! 보통 한 팀을 구성하려면 시간이 꽤 오래 걸리거든",
+                "th": "{PlayerName} โชคเข้าข้างคุณแล้วสินะ? การรวมทีมได้รวดเร็วแบบนี้ ปกติแล้วต้องใช้ความพยายามค่อนข้างมากในการจัดตั้งทีมเอคโค่",
+                "zh-Hans": "{PlayerName}，不错嘛，这么快就凑成一队了！平时我们都得凑老半晌。",
+                "zh-Hant": "{PlayerName}，不錯嘛，這麼快就凑成一隊了！ 平時我們都得凑老半晌。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Echo-Team bilden?",
+                    "en": "Form an Echo team?",
+                    "es": "¿Formar un equipo de Ecos?",
+                    "fr": "Former une équipe d'Échos ?",
+                    "ja": "セット？",
+                    "ko": "한 팀을 구성하는 게 뭐죠?",
+                    "th": "การจัดตั้งทีมเอคโค่เหรอ?",
+                    "zh-Hans": "凑成一队？",
+                    "zh-Hant": "凑成一隊？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ups, mein Fehler! Ich habe mich mitgerissen und vergessen zu erklären, worum es dabei geht.",
+                "en": "Oops, my bad! I got carried away and forgot to explain what that’s all about.",
+                "es": "¡Vaya, lo siento! Me emocioné y olvidé explicar de qué se trata.",
+                "fr": "Oups, désolée ! Je suis un peu excitée et j'ai oublié de t'expliquer ce que c'est.",
+                "ja": "あ、そっか。説明するの忘れてたね。",
+                "ko": "아, 미안! 너무 흥분해서 설명하는 걸 깜빡했네",
+                "th": "อุ๊ย ขอโทษที! เผลอพูดเพลินไปหน่อย ลืมอธิบายว่ามันคืออะไร",
+                "zh-Hans": "啊，对不住，刚刚太兴奋了，一时忘了介绍。",
+                "zh-Hant": "啊，對不住，剛剛太興奮了，一時忘了介紹。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hmm... Gib mir eine Sekunde. Ich suche hier nach den richtigen Worten.",
+                "en": "Hmm... Give me a sec. I’m searching for the right words here.",
+                "es": "Hmm... Dame un segundo. Estoy buscando las palabras correctas aquí.",
+                "fr": "Hmm... Donne-moi une seconde. Je cherche les bons mots.",
+                "ja": "えっと……どう説明したもんかな……",
+                "ko": "음... 이걸 어떻게 설명해야 할지 잠시만 생각해볼게",
+                "th": "อืม... ขอเวลาแป๊บนะ กำลังหาคำอธิบายเหมาะๆ อยู่",
+                "zh-Hans": "唔，让我想想该怎么跟你说。",
+                "zh-Hant": "唔，讓我想想該怎麼跟你說。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie du bereits weißt, hat jedes Echo seine eigene einzigartige Frequenz. Wenn wir mehrere Echos zusammenbringen, ist es wie...",
+                "en": "As you already know, each Echo has its own unique frequency. When we gather several Echoes together, it's like...",
+                "es": "Como ya sabes, cada Eco tiene su propia frecuencia única. Cuando reunimos varios Ecos, es como...",
+                "fr": "Comme vous le savez déjà, chaque Écho a sa propre fréquence unique. Quand nous rassemblons plusieurs Écho, c'est comme...",
+                "ja": "音骸にはそれぞれ独自の周波数がある……てのはもう知ってるよね。で、複数の音骸が一か所に集まると……ええと……",
+                "ko": "각 에코에는 각자의 주파수가 있는데, 여러 에코를 모으면, 마치... 뭐라고 하더라?",
+                "th": "อย่างที่รู้กันว่าเอคโค่แต่ละตัวมีความถี่เฉพาะ พอเรารวมเอคโค่หลายๆ ตัวไว้ด้วยกัน ก็เหมือนกับ...",
+                "zh-Hans": "声骸都有各自的频率，当我们把几个声骸凑起来，就像什么呢……",
+                "zh-Hant": "聲骸都有各自的頻率，當我們把幾個聲骸凑起來，就像什麼呢……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist, als ob eine Gruppe von Leuten verschiedene Instrumente spielt. Die meiste Zeit kollidieren die Melodien und es ist ein totales Durcheinander.",
+                "en": "It's like having a bunch of people playing different instruments. Most of the time, the melodies clash and it's a total mess.",
+                "es": "Es como tener un montón de personas tocando diferentes instrumentos. La mayoría de las veces, las melodías chocan y es un total desastre.",
+                "fr": "C'est comme avoir un groupe de personnes jouant de différents instruments. La plupart du temps, les mélodies se heurtent et c'est un total désordre.",
+                "ja": "そう！集まると楽器の音みたく聞こえることがあるんだ。殆どの場合は相性が悪くて、騒音っぽく聞こえるけど……",
+                "ko": "아, 생각났어! 마치 여러 사람이 서로 다른 악기를 연주하는 것처럼, 대부분의 경우 불협화음이 될거야",
+                "th": "เหมือนกับมีกลุ่มคนที่เล่นเครื่องดนตรีต่างชนิดกัน ส่วนใหญ่แล้วท่วงทำนองจะทับซ้อนกันจนเละตุ้มเป๊ะ",
+                "zh-Hans": "哦对！就像几个人在吹奏不同的乐器，大多数时候呢，几种旋律会互相打架，让人听得耳朵疼。",
+                "zh-Hant": "哦對！ 就像幾個人在吹奏不同的樂器，大多數時候呢，幾種旋律會互相打架，讓人聽得耳朵疼。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber es gibt Zeiten, in denen die Melodien perfekt zusammenpassen und eine wunderschöne Harmonie erzeugen!",
+                "en": "But there are times when melodies blend together perfectly, creating a beautiful harmony!",
+                "es": "¡Pero hay veces en que las melodías se mezclan perfectamente, creando una hermosa armonía!",
+                "fr": "Mais il y a des moments où les mélodies se mélangent parfaitement, créant une belle harmonie !",
+                "ja": "たまに、何故かいい感じに聞こえる……って感じ！",
+                "ko": "하지만 때로는 여러 멜로디가 서로 어우러져 듣기 좋은 음악이 될 수도 있어!",
+                "th": "แต่บางครั้งท่วงทำนองก็ผสานกันอย่างลงตัวจนกลายเป็นการประสานเสียงที่งดงาม!",
+                "zh-Hans": "但有时候，几种旋律能够互相配合，奏出一首悦耳的乐曲！",
+                "zh-Hant": "但有時候，幾種旋律能夠互相配合，奏出一首悅耳的樂曲！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Echo-Team zu bilden ist genau so!",
+                "en": "Forming an Echo team is just like that!",
+                "es": "¡Formar un equipo de Ecos es justo como eso!",
+                "fr": "Former une équipe d'Écho, c'est exactement comme ça !",
+                "ja": "音骸のセットはこういう話ね。",
+                "ko": "에코를 모으는 것도 마찬가지야!",
+                "th": "การจัดตั้งทีมเอคโค่ก็เป็นแบบเดียวกัน",
+                "zh-Hans": "凑声骸，就是这个道理！",
+                "zh-Hant": "凑聲骸，就是這個道理！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich hoffe, das ergibt Sinn... Wie auch immer, warum probierst du es nicht selbst aus? Es ist der schnellste Weg zu verstehen!",
+                "en": "I hope that made sense... Anyway, why not give it a shot yourself? It's the quickest way to understand!",
+                "es": "Espero que eso tenga sentido... De todos modos, ¿por qué no lo intentas tú mismo? ¡Es la forma más rápida de entender!",
+                "fr": "J'espère que c'est clair... Quoi qu'il en soit, pourquoi ne pas essayer vous-même ? C'est le moyen le plus rapide de comprendre !",
+                "ja": "うぅ……うまく説明できたかな……やっぱり、自分で試すのが一番わかりやすいかも？",
+                "ko": "내가 잘 설명했는지 모르겠는데... 방랑자가 직접 시도해 봐!",
+                "th": "หวังว่าคงเข้าใจนะ... ว่าแต่ไม่ลองทำดูล่ะ? แบบนั้นจะเข้าใจเร็วที่สุด!",
+                "zh-Hans": "不知道说没说明白……要不，你还是直接上手试试吧！",
+                "zh-Hant": "不知道說沒說明白……要不，你還是直接上手試試吧！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "parentId": 8,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 33,
+      "parentId": 8,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Antworte Chixia und Jingzhu",
+        "en": "Reply to Chixia and Jingzhu",
+        "es": "Responde a Chixia y Jingzhu.",
+        "fr": "Parler à Chixia et Jingzhu",
+        "ja": "熾霞、景燭に報告する",
+        "ko": "치샤 및 경호와 대화하기",
+        "th": "ตอบกลับ Chixia และจิงจู",
+        "zh-Hans": "回复炽霞和景烛",
+        "zh-Hant": "回覆熾霞和景燭"
+      },
+      "entities": [
+        {
+          "entityId": 139000292,
+          "mapId": 8,
+          "blueprintType": "NPC260",
+          "name": "TsEntity_157_011_皇龙老研究员男7",
+          "areaId": 504,
+          "position": {
+            "x": -30846,
+            "y": -4210,
+            "z": 17990
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_引导_新声骸",
+          "flowIndex": 1,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "Schau mal, Großvater Jingzhu! Diese riesigen Sensen sind einfach zu cool, oder?",
+                "en": "Check it out, Grandpa Jingzhu! These massive scythes are just too cool, huh?",
+                "es": "Mira, Abuelo Jingzhu. ¡Estas guadañas masivas son demasiado geniales, verdad?",
+                "fr": "Regardez ça, Monsieur Jingzhu ! C'est vraiment trop cool, non ?",
+                "ja": "出来た！どうよ景燭じいちゃん。中々イカす鎌でしょ？",
+                "ko": "성공했어! 할아버지 어때? 이 에코 꽤 괜찮지!",
+                "th": "ดูสิปู่ Jingzhu! เจ้าตัวที่มีเคียวอันใหญ่พวกนี้เท่ชะมัดเลยใช่ไหมล่ะ?",
+                "zh-Hans": "成了！怎么样景烛爷爷，这声骸可以吧！",
+                "zh-Hant": "成了！ 怎麼樣景燭爺爺，這聲骸可以吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mm, nicht schlecht. Sie sollte diesmal zufrieden sein.",
+                "en": "Mm, not bad. She should be pleased this time.",
+                "es": "Mm, no está mal. Ella debería estar satisfecha esta vez.",
+                "fr": "Pas mal. Elle devrait être satisfaite cette fois.",
+                "ja": "ああ、確かに悪くない。これなら彼女も満足してくれるかもな……",
+                "ko": "음, 나쁘지 않아. 이번에는 만족하겠지...",
+                "th": "อืม ไม่เลวเลย เธอน่าจะพอใจนะคราวนี้",
+                "zh-Hans": "唔，不赖。这回她该满意了吧……",
+                "zh-Hant": "唔，不賴。這回她該滿意了吧……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich hoffe, nur dieses eine Mal, wird sie lange genug bleiben, um mir zuzuhören, bevor sie einfach weggeht...",
+                "en": "I hope, just this once, she’ll stay long enough to hear me out before walking straight away...",
+                "es": "Espero, solo esta vez, que se quede lo suficiente para escucharme antes de irse directamente...",
+                "fr": "J'espère, juste cette fois, qu'elle restera assez longtemps pour m'écouter avant de partir...",
+                "ja": "少なくとも、前回みたいに全く話を聞いてもらえない、なんてことはないだろう……",
+                "ko": "지난 번엔 내가 제대로 시작하기도 전에 그녀는 그냥 가버렸어... 이번엔 지난번처럼 실패하지 않으면 좋겠는데...",
+                "th": "หวังว่าครั้งนี้เธอจะอยู่ฟังฉันพูดจบก่อนจะเดินหนีไปนะ...",
+                "zh-Hans": "可别像上次那样，我开场白还没说完，她就走开了，唉……",
+                "zh-Hant": "可別像上次那樣，我開場白還沒說完，她就走開了，唉……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich habe eine Idee! Was, wenn wir uns in die Sensen verwandeln würden? Das würde sie bestimmt beeindrucken!",
+                "en": "Ooh, I’ve got an idea! What if we transformed into the Scythes? That’d definitely impress her!",
+                "es": "¡Oh, se me ocurre una idea! ¿Y si nos transformáramos en las Guadañas? ¡Eso definitivamente la impresionaría!",
+                "fr": "Oh, j'ai une idée ! Et si on se transformait en ces faucilles ? Ça l'impressionnerait sûrement !",
+                "ja": "じゃあさ、こいつに変身したらどう？絶対カッコいいよ！",
+                "ko": "아니면 직접 큰 낫으로 변신하면 어때? 그러면 진짜 강력해 보이겠지!",
+                "th": "อ๋อ ฉันมีไอเดียแล้ว! ถ้าเราแปลงร่างเป็นเจ้าตัวที่มีเคียวอันใหญ่ๆ ล่ะ? เธอต้องประทับใจแน่!",
+                "zh-Hans": "或者咱们直接变成大镰刀，这总够威风了吧！",
+                "zh-Hant": "或者咱們直接變成大鐮刀，這總夠威風了吧！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, bitte nicht, Liebes. Sie könnte sich erschrecken. Vielleicht sollten wir noch ein paar mehr sammeln, nur um sicher zu sein.",
+                "en": "Oh, please don’t, dear. She might be scared. Perhaps we should gather a few more, just to be sure.",
+                "es": "Oh, por favor, no, querido. Ella podría asustarse. Quizás deberíamos reunir unas cuantas más, solo para estar seguros.",
+                "fr": "Oh, non, elle pourrait être effrayée. Peut-être qu'on devrait en capturer quelques autres, juste pour être sûrs.",
+                "ja": "いや、それではかえって怖がらせてしまうかもしれん。念のため、他のも捕っておこう。",
+                "ko": "그건 아니야. 놀랠 수 있잖아. 혹시 모르니까 몇 마리 더 잡을까?",
+                "th": "โอ๊ย อย่าเลย เธออาจจะกลัวก็ได้ เราน่าจะหาเพิ่มอีกสักสองสามตัวเพื่อความชัวร์",
+                "zh-Hans": "别别别，我怕吓着她。保险起见，要不还是再多抓几只？",
+                "zh-Hant": "別別別，我怕嚇著她。保險起見，要不還是再多抓幾隻？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Chaos-Krieger ist zweifellos beeindruckend, aber sich auf ein einziges Echo zu verlassen, ist vielleicht nicht genug, um ihr Herz zu erobern...",
+                "en": "Havoc Warrior is undoubtedly impressive, but relying on a single Echo might not be enough to capture her heart...",
+                "es": "El Guerrero de la Destrucción es sin duda impresionante, pero confiar en un solo Eco podría no ser suficiente para conquistar su corazón...",
+                "fr": "Le Combattant Havoc est sans doute impressionnant, mais se fier à un seul Écho ne suffira peut-être pas à conquérir son cœur...",
+                "ja": "それに、審判の戦士が一体だけじゃ少し物足りないしな。",
+                "ko": "「심판하는 전사」가 괜찮긴 하지만, 하나만 있으면 좀 적은 것 같거든",
+                "th": "Havoc Warrior นี่น่าประทับใจจริงๆ นั่นแหละ แต่เอคโค่ตัวเดียวอาจไม่พอที่จะคว้าหัวใจเธอมาครอง...",
+                "zh-Hans": "审判战士确实不错，但光就这孤伶伶的一个，总觉得单薄了些。",
+                "zh-Hant": "審判戰士確實不錯，但光就這\t孤伶伶的一個，總覺得單薄了些。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir brauchen eine Sammlung, eine Ausstellung mehrerer Echos, um wirklich Eindruck zu hinterlassen!",
+                "en": "We need a collection, a display of multiple Echoes to truly leave an impression!",
+                "es": "¡Necesitamos una colección, una exhibición de múltiples Ecos para dejar verdaderamente una impresión!",
+                "fr": "Il nous faut une collection, une démonstration de plusieurs Échos pour vraiment faire impression !",
+                "ja": "もっと捕ってきてチームを組ませよう！そうすれば、もっとカッコよくなるに違いない！",
+                "ko": "몇 마리 더 모아야 진짜 강력해보일 수 잇지!",
+                "th": "เราต้องมีคอลเลกชันรวบรวมเอคโค่หลายๆ ตัวเพื่อสร้างความประทับใจ!",
+                "zh-Hans": "得多抓几个，聚在一起，那才叫威风呢!",
+                "zh-Hant": "得多抓幾個，聚在一起，那才叫威風呢！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja! Eine Menge Echos hinter sich zu haben, zieht die Blicke auf sich, aber wie können wir mehr fangen?",
+                "en": "Yep! Having a bunch of Echoes following behind turns head, but how can we snag more?",
+                "es": "¡Sí! Tener un montón de Ecos siguiéndote atrae la atención, pero ¿cómo podemos conseguir más?",
+                "fr": "Oui ! Avoir plein d'Échos qui nous suivent, ça attire les regards, mais comment en attraper plus ?",
+                "ja": "確かにカッコいいな……でも、他に音骸を入手できる場所は……",
+                "ko": "하긴, 에코 여러 개를 몰고 다니는게 확실히 위풍당당하겠네. 근데 어디서 더 잡지?",
+                "th": "ใช่แล้ว! มีเอคโค่ตามหลังเป็นพรวน เป็นใครก็ต้องเหลียวหลัง แต่เราจะไปหามาเพิ่มได้ไงล่ะ?",
+                "zh-Hans": "也是，一提溜儿声骸跟着，确实威风。可眼下去哪抓更多的呢……",
+                "zh-Hant": "也是，一提溜兒聲骸跟著，確實威風。可眼下去哪抓更多的呢……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 101,
+                "name": {
+                  "en": "Chixia",
+                  "ja": "熾霞",
+                  "zh-Hans": "炽霞"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zum <ano=Einen Ort, an dem TDs sich versammeln>Tacet-Feld</ano>! Tacet-Dissonanzen werden zu diesen Orten hingezogen, wie Motten zu einer Flamme.",
+                "en": "To <ano=A place where TDs gather>Tacet Field</ano>! Tacet Discords are drawn to those grounds like moths to a flame.",
+                "es": "¡Al <ano=Un lugar donde se reúnen las DT>Campo Tácito</ano>! Las Disonancias Tácitas se sienten atraídas por esos terrenos como las polillas a la llama.",
+                "fr": "Direction de la <ano=Un endroit où les TDs se rassemblent>Zone taciturne</ano> ! Les Tacets Discords sont attirés par cet endroit comme des papillons de nuit par la lumière.",
+                "ja": "<ano=残像の集結する場所>無音区</ano>だ！隊長が昔、「無音区は残像を呼び寄せる」と言っていた。",
+                "ko": "<ano=잔상 부화구역>무음구역</ano>! 대장은 잔상이 무음구역에 모인다고 말했었어",
+                "th": "ก็ไป<ano=ที่ที่ทาเซ็ตดิสคอร์ดอยู่รวมกัน>สนามทาเซ็ต</ano>ไงล่ะ! พวกทาเซ็ตดิสคอร์ดถูกดึงดูดไปยังพื้นที่เหล่านั้นเหมือนแมลงเม่าบินเข้ากองไฟ",
+                "zh-Hans": "<ano=残象的富集区>无音区</ano>啊！队长说过，残象会被无音区吸引。",
+                "zh-Hant": "<ano=殘象的富集區>無音區</ano>啊！隊長說過，殘象會被無音區吸引。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Pssst... Ich glaube, ich spüre es. Die Frequenzen des Tacet-Felds...",
+                "en": "Shh... I think I sense it. The frequencies of the Tacet Field...",
+                "es": "Shh... Creo que lo siento. Las frecuencias del Campo Tácito...",
+                "fr": "Je crois que je sens les fréquences de la Zone taciturne…",
+                "ja": "し……見つけた……これは無音区の周波数……",
+                "ko": "쉿... 무음구역의 주파수를 감지한 것 같아...",
+                "th": "ชู่... ฉันว่าฉันสัมผัสได้ ความถี่ของสนามทาเซ็ต...",
+                "zh-Hans": "嘘……我好像感知到了……无音区的频率……",
+                "zh-Hant": "嘘……我好像感知到了……無音區的頻率……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt ein Tacet-Feld in der Nähe!",
+                "en": "There’s a Tacet Field nearby!",
+                "es": "¡Hay un Campo Tácito cerca!",
+                "fr": "Il y a une Zone taciturne tout près !",
+                "ja": "無音区がある。この近くに！",
+                "ko": "근처에 무음구역이 있어!",
+                "th": "มีสนามทาเซ็ตอยู่ใกล้ๆ",
+                "zh-Hans": "有无音区，就在附近！",
+                "zh-Hant": "有無音區，就在附近！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 761,
+                "name": {
+                  "zh-Hans": "景烛"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 26,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rüste entsprechend Echos aus, um ein 2-Teile-Set zu machen",
+        "en": "Equip Echoes accordingly to make a 2-piece set",
+        "es": "Equipa los Ecos de manera adecuada para hacer un conjunto de 2 piezas.",
+        "fr": "Équiper les Échos afin de constituer un ensemble de 2 pièces",
+        "ja": "チュートリアルに従って音骸を装備し、2セットにする",
+        "ko": "안내에 따라 에코를 장착하여 두 세트를 구성하세요",
+        "th": "ติดตั้งเอคโค่ให้เรียบร้อยเพื่อทำเซ็ต 2 ชิ้น",
+        "zh-Hans": "按照教程装配声骸，组成两件套",
+        "zh-Hant": "按照教程裝配聲骸，組成兩件套"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 28,
+      "parentId": 26,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 28,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 29,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verwende Dienstprogramme - Projektor, um jedes Echo zu projizieren",
+        "en": "Use Utility: Projector to project any Echo",
+        "es": "Usa Utilidades - Proyector para proyectar cualquier Eco.",
+        "fr": "Présenter un Écho à l'aide du Projecteur des Outils d'exploration",
+        "ja": "探索モジュール-音骸顕現で任意の音骸を呼び出す",
+        "ko": "탐색 모듈 - 임의 에코 전시하기",
+        "th": "ใช้เครื่องมือ - เครื่องฉาย เพื่อฉายเอคโค่",
+        "zh-Hans": "使用探索工具-显像展示任意声骸",
+        "zh-Hant": "使用探索工具-顯像展示任意聲骸"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 29,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 32,
+      "parentId": 31,
+      "type": "ChildQuest",
+      "dialogs": []
+    }
+  ]
+}

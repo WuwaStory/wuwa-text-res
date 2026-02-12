@@ -1,0 +1,1025 @@
+{
+  "id": 880900005,
+  "key": "转盘第五天（玩法连电路）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo Kampagne V",
+    "en": "Lollo Campaign V",
+    "es": "Campaña Lollo V",
+    "fr": "Projet Loulou V",
+    "ja": "ブブ企画・その五",
+    "ko": "무무 기획 · V",
+    "th": "แคมเปญลอลโล่ V",
+    "zh-Hans": "呜呜企划·五",
+    "zh-Hant": "嗚嗚企劃·五"
+  },
+  "desc": {
+    "de": "Du hast eine neue Lollo-Streichel-Bestellung. Bitte erfülle sie rechtzeitig.",
+    "en": "You have a new \"Lollo Petter\" order. Please fulfill it in time.",
+    "es": "Tienes un nuevo pedido de \"Mascotas Lollo\". Por favor, cúmplelo a tiempo.",
+    "fr": "Vous avez une nouvelle commande « Loulou Câlin ». Veuillez l'accomplir à temps.",
+    "ja": "ピロリン！新しい「ブブ餌やり」依頼です、すぐに対応に向かいましょう！",
+    "ko": "신규 「무무 먹이 주기」 주문 1건이 추가됐습니다. 제때 방문하여 처리해 주세요~",
+    "th": "คุณได้รับคำสั่ง \"ลอลโล่รับเลี้ยงสัตว์\" ใหม่แล้ว โปรดไปจัดการให้ทันเวลา",
+    "zh-Hans": "您有一份新的「呜呜投喂」订单，请及时上门接单~",
+    "zh-Hant": "您有一份新的「嗚嗚投餵」訂單，請及時上門接單~"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Frag Maji nach dem heutigen Pilotenprogramm",
+        "en": "Ask Maji about today's pilot business",
+        "es": "Charla con Maji acerca del negocio de prueba de hoy.",
+        "fr": "Demandez à Maji au sujet des affaires pilotes d'aujourd'hui",
+        "ja": "テスト業務について馬計と会話する",
+        "ko": "마현과 오늘의 시범 업무에 대해 이야기하기",
+        "th": "ถาม Maji เกี่ยวกับธุรกิจนำร่องของวันนี้",
+        "zh-Hans": "和马计聊聊今天的试点业务",
+        "zh-Hant": "和馬計聊聊今天的試點業務"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Das Geschäft heute heißt: „Lollo-Verfütterung“.",
+                "en": "The business today is: \"Lollo Petter.\"",
+                "es": "El negocio de hoy es Mascotas Lollo.",
+                "fr": "Le travail d'aujourd'hui est : « Loulou Petting ».",
+                "ja": "今日の業務は──「ブブ餌やり」だよ。",
+                "ko": "오늘의 업무는—— 「무무 먹이 주기」예요",
+                "th": "ธุรกิจวันนี้คือ: \"ลอลโล่รับเลี้ยงสัตว์\"",
+                "zh-Hans": "今天的业务是——「呜呜投喂」。",
+                "zh-Hant": "今天的業務是——「嗚嗚投餵」。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Willst du, dass ich dich streichle?",
+                    "en": "You want me to pet you?",
+                    "es": "¿Quieres que te dé de comer?",
+                    "fr": "C'est-à-dire…je te petting ?",
+                    "ja": "{Male=馬計に餌やりするのか？;Female=馬計に餌やりするの？}",
+                    "ko": "당신에게 음식을 주는 건가요?",
+                    "th": "คุณอยากให้ฉันเลี้ยงคุณเหรอ?",
+                    "zh-Hans": "投喂你吗？",
+                    "zh-Hant": "投餵你嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das wäre nett ... nur Spaß. Du sollst Tiere für andere Leute streicheln. Die Nachfrage ist in letzter Zeit gestiegen.",
+                "en": "That would be nice... Just kidding. You'll be petting animals for other people. The demand has been growing lately.",
+                "es": "Me encantaría... Es broma. Vas a tener que dar de comer a los animales de otras personas. Últimamente hay mucha demanda.",
+                "fr": "Ce serait bien... Je plaisante. Nous allons <ano=petting>câliner</ano> des animaux pour d'autres. La demande a récemment augmenté.",
+                "ja": "へへっ、餌やりしてくれてもいいけど……っと、冗談はここまでにして。近頃は、「リモート餌やり」っていうのが流行ってるんだってさ。",
+                "ko": "헤헤, 저 말고요~ 업무 이름 그대로예요. 요즘은 「원격 먹이 주기」 업무가 유행이라고 하네요",
+                "th": "ถ้าได้ก็ดีครับ... ล้อเล่นน่า คุณจะได้เลี้ยงสัตว์ของผู้คนทั่วไป แล้วช่วงนี้ความต้องการก็เพิ่มขึ้นเรื่อยๆ เลยด้วย",
+                "zh-Hans": "还有这种好事？言归正传，最近好像很流行「远程投喂」业务。",
+                "zh-Hant": "還有這種好事？ 言歸正傳，最近好像很流行「遠程投餵」業務。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es gibt viele Tiere in der Stadt. Leute, die woanders wohnen, möchten, dass du ihre Tiere streichelst und fütterst.",
+                "en": "There are many animals roaming in the city. People living in other places would like you to pet and feed the animals in their place.",
+                "es": "Hay muchos animales por la ciudad. A la gente que vive en otros sitios le gustaría que desde comer a los animales en su lugar.",
+                "fr": "Il y a beaucoup d'animaux dans la ville. Les gens d'autres endroits aimeraient qu'on câlinie et nourrit les animaux à leur place.",
+                "ja": "どんなのかっていうと、遠くにいる人たちのために、街の小動物の餌やりをする、というものらしい。",
+                "ko": "원격으로 동물들을 돌봐주거나 먹이를 주는 것을 부탁하는 거예요",
+                "th": "มีสัตว์มากมายเดินไปมาอยู่ในเมือง คนที่อาศัยอยู่ที่อื่นคงอยากให้คุณช่วยเลี้ยงและให้อาหารแทนพวกเขาหน่อย",
+                "zh-Hans": "大概就是一些身处外地的朋友，会托人帮忙照顾、投喂一下城内散养的小动物。",
+                "zh-Hant": "大概就是一些身處外地的朋友，會托人幫忙照顧、投餵一下城內散養的小動物。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tatsächlich hatte ich mal einen ähnlichen Auftrag als Kurier. Der Absender war ein Mensch, aber der Empfänger war ein Hund namens „Mimi“ ...",
+                "en": "Actually, I once dealt with a similar order as a courier. The sender was a human, but the recipient was a hound named \"Mimi\"...",
+                "es": "Durante mi época de mensajero tuve un pedido parecido. El remitente era humano, pero el destinatario era un sabueso que se llamaba Mimi...",
+                "fr": "En fait, j'ai eu des commandes similaires. L'expéditeur était un humain, mais le destinataire était un chien nommé « Mimi »...",
+                "ja": "似たようなニーズの仕事を受けたことはあるけどね。差出人は人間なのに、受取人は「ミミー」って名前の黄犬でさ。",
+                "ko": "비슷한 주문을 받아본 적이 있어요. 한번은 어떤 사람이 화물을 보냈는데, 수령인의 이름이 「미미」라는 누렁이였어요",
+                "th": "จริงๆ แล้ว ผมก็เคยจัดการกับคำสั่งคล้ายๆ กันนี้ในฐานะคนส่งของ ตอนนั้นผู้ส่งเป็นมนุษย์ แต่ผู้รับเป็นสุนัขล่าเนื้อชื่อ \"มิมิ\"...",
+                "zh-Hans": "类似的需求我倒是也收到过，什么寄件的是人类，但收件人是名叫「咪咪」的黄犬——",
+                "zh-Hant": "類似的需求我倒是也收到過，什麼寄件的是人類，但收件人是名叫「咪咪」的黃犬——"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und der Kunde sagte mir ... „Ich habe etwas Trockenfleisch in Rinascita gekauft. Bitte füttere damit Mimi den Hund in Jinzhou!“",
+                "en": "And the customer told me... \"I bought some jerky in Rinascita. Please help me feed the jerky to Mimi the dog in Jinzhou city!\"",
+                "es": "El cliente me dijo «He comprado un poco de cecina en Rinascita. ¡Por favor, dásela a Mimi, un perro de Jinzhou!».",
+                "fr": "Et la note de la commande disait : J'envoie du jerky de Rinascita pour que Mimi de Jinzhou y goûte. M. le Courrier, aidez-moi à la nourrir !",
+                "ja": "配送伝票の備考欄にこう書いてあったんだよ。「箱の中身はリナシータから取り寄せたジャーキーです。今州のミミーにあげたいので、配達員さんは餌やりをお願いします！」ってね。",
+                "ko": "운송장의 비고에 \"상자 속에 리나시타에서 부친 육포가 있어요. 이걸 금주에 있는 미미에게 맛보게 해주고 싶어요, 대신 먹여주세요!\"라는 내용이 적혀 있었죠",
+                "th": "แล้วลูกค้าก็บอกผมว่า... \"ผมซื้อเนื้อตากแห้งมาจากรินาซิตา ช่วยเอาเนื้อตากแห้งไปให้ Mimi ที่เป็นน้องหมาในเมืองจินโจวกินหน่อยสิ!\"",
+                "zh-Hans": "运单的备注写着：箱里是我从黎那汐塔寄来的肉干，想给今州的咪咪尝尝，求物流员代我投喂！",
+                "zh-Hant": "運單的備註寫著：箱裡是我從黎那汐塔寄來的肉乾，想給今州的咪咪嚐嚐，求物流員代我投餵！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Damals war ich total verwirrt, weil wir so einen Service nicht angeboten haben, aber es hat mich auf eine ganz neue Geschäftsidee gebracht.",
+                "en": "At that time, I was totally lost because offering that service wasn't something we did, but it really got me thinking about a whole new business opportunity.",
+                "es": "La verdad que no supe qué hacer, porque entonces no ofrecíamos ese tipo de servicios, pero aquello me hizo plantearme una nueva oportunidad de negocio.",
+                "fr": "Ce genre de commande était embarrassant à l'époque car elles dépassaient notre champ de service, mais elles m'ont ouvert de nouvelles possibilités.",
+                "ja": "当時はサービス対象外の依頼だし、正直どうしたらいいか分からなかったよ。でも私はその時にビジネスチャンスを見出したんだ。",
+                "ko": "이렇게 업무 범주를 넘어서는 요구를 받을 때마다, 굉장히 당황했지만, 저는 새로운 가능성을 발견했죠",
+                "th": "ในตอนนั้น ผมรู้สึกสับสนมาก เพราะการเสนอบริการนั้นไม่ใช่สิ่งที่เราทำ แต่มันทำให้ผมคิดถึงโอกาสทางธุรกิจใหม่ๆ ขึ้นมาได้",
+                "zh-Hans": "遇到这种超出业务范畴的需求，当下真挺手足无措的，但也让我看到了新的可能性。",
+                "zh-Hant": "遇到這種超出業務範疇的需求，當下真挺手足無措的，但也讓我看到了新的可能性。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ding! Du hast einen neuen Streichelauftrag. Bitte erfülle ihn pünktlich.",
+                "en": "Ding! You have a new petting order.Please fulfill the order in time.",
+                "es": "¡Ding! Tienes un pedido de alimentación. Por favor, complétalo a tiempo.",
+                "fr": "Ding ! Une nouvelle commande de câlins est arrivée. Veuillez la traiter à temps.",
+                "ja": "ピロリン！新しい依頼です、すぐに対応に向かいましょう！",
+                "ko": "딩동! 신규 먹이 주기 주문 1건이 추가됐습니다. 제때 방문하여 처리해 주세요~",
+                "th": "ติ๊ง! คุณได้รับคำสั่งดูแลสัตว์ใหม่ โปรดไปจัดการให้ทันเวลา",
+                "zh-Hans": "叮！您有一份新的投喂订单，请及时上门处理~",
+                "zh-Hant": "叮！您有一份新的投餵訂單，請及時上門處理~"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 900060,
+                "name": {
+                  "zh-Hans": "马计的终端"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und diesmal suchen wir ... eine getigerte Katze namens „Wangcai“? Oh mein Gott, die kenne ich. Ich habe ein Meme von dieser Katze auf meinem Terminal gespeichert!",
+                "en": "And this time we're looking for... a tabby cat named \"Wangcai\"? Oh my, I know this cat. I even have an emoji of it on my Terminal!",
+                "es": "En esta ocasión se trata de... ¿un gato atigrado que se llama Buddy? ¡Vaya, pero si sé cuál es! ¡Tengo un meme suyo en mi Terminal!",
+                "fr": "Notre cible est... un chat tigré nommé « Wangcai » ? Oh la la, je le reconnais. J'ai enregistré des mèmes de ce chat sur mon appareil !",
+                "ja": "餌やりの対象は……「太郎」って名前の茶トラ猫？「太郎」っていえば、私あの有名キャラ「太郎」のデバイス用スタンプ、送ったことあるぞ！",
+                "ko": "먹이를 줄 대상은... 「재재」라고 하는 고양이인가 보네요? 아, 저도 이 「재재」의 단말기 이모티콘을 써본 적이 있어요!",
+                "th": "และคราวนี้เรามาหา... แมวลายขวางชื่อ \"Wangcai\" เหรอ? โอ้โห ผมรู้จักแมวตัวนี้นะ แถมยังมีอีโมจิของมันอยู่ในเทอร์มินัลด้วย!",
+                "zh-Hans": "投喂的对象是……名叫「旺财」的三花猫？哇，我还用过「旺财」的终端表情包哎！",
+                "zh-Hant": "投餵的對象是……名叫「旺財」的三花貓？ 哇，我還用過「旺財」的終端貼圖欸！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich brauche das Meme. Schick es mir!",
+                    "en": "I must have the emoji. Send it to me!",
+                    "es": "Necesito ese meme. ¡Envíamelo!",
+                    "fr": "Envoie-moi en un !",
+                    "ja": "{Male=俺にも送って！;Female=私にも送って！}",
+                    "ko": "저한테도 보내봐요!",
+                    "th": "ฉันอยากได้อิโมจิบ้าง ส่งมาให้ฉันหน่อย!",
+                    "zh-Hans": "发我一个！",
+                    "zh-Hant": "發我一個！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Lass mich nachschauen ... das Meme und die Koordinaten von Wangcai ... Ich habe dir alles geschickt! Vergiss nicht, Wangcais Lieblingsfischfilet mitzunehmen!",
+                "en": "Let's see here... The emoji, and Wangcai's location... There, I've forwarded them to you! Remember to bring Wangcai's favorite fish fillet!",
+                "es": "Déjame ver... el meme y las coordenadas de Buddy... ¡Te lo he enviado todo! ¡Acuérdate de llevarle un filete de pescado, es lo que más le gusta!",
+                "fr": "Laissez-moi vérifier... l'emoji, le mème, et les coordonnées de Wangcai... Envoyés ! N'oubliez pas d'apporter le filet de poisson préféré de Wangcai !",
+                "ja": "ちょっと待ってて……「太郎」のスタンプに絵文字と座標も……全部送ったよ！そうそう、太郎の大好きな魚肉を忘れずにね！",
+                "ko": "이모티콘을 한번 찾아볼게요... 아 그리고 재재의 위치 정보도... 모두 보냈어요! 아 그리고 재재가 가장 좋아하는 생선 살코기도 잊지 말고 챙겨주세요!",
+                "th": "ไหนดูซิ... อิโมจิและตำแหน่งของ Wangcai... ผมส่งต่อไปให้คุณแล้วนะ! อย่าลืมเอาเนื้อปลาแล่ที่ Wangcai ชอบไปด้วยนะ!",
+                "zh-Hans": "我找找……终端表情包，还有旺财的坐标……都发给你了！记得带上旺财最爱的鱼肉嗷！",
+                "zh-Hant": "我找找……終端貼圖，還有旺財的座標……都發給你了！ 記得帶上旺財最愛的魚肉嗷！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 880900018,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理2",
+                  "areaId": 301,
+                  "position": {
+                    "x": -41550,
+                    "y": 89850,
+                    "z": 430
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -180
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überprüfe das heutige Pilotgeschäft mit Maji",
+        "en": "Recap today's pilot business with Maji",
+        "es": "Revisa el negocio de prueba de hoy con Maji.",
+        "fr": "Récapitulez les affaires pilotes d'aujourd'hui avec Maji",
+        "ja": "テスト業務について馬計に報告する",
+        "ko": "마현과 오늘의 시범 업무를 돌아보기",
+        "th": "ทบทวนธุรกิจนำร่องของวันนี้กับ Maji",
+        "zh-Hans": "和马计复盘今日的试点业务",
+        "zh-Hant": "和馬計復盤今日的試點業務"
+      },
+      "entities": [
+        {
+          "entityId": 880900018,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理2",
+          "areaId": 301,
+          "position": {
+            "x": -41550,
+            "y": 89850,
+            "z": 430
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -180
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 7,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Du erzählst Maji von dem Vorfall, was ihn einen Moment sprachlos macht.",
+                "en": "You tell Maji about the event, leaving him speechless for a moment.",
+                "es": "Le cuentas a Maji lo que ha pasado y se queda sin palabras.",
+                "fr": "Vous parlez à Maji de l'événement, le laissant sans voix pendant un moment.",
+                "ja": "先ほどの出来事を馬計に伝えた。馬計は、しばらく黙り込んでいた。",
+                "ko": "좀 전에 있었던 일을 마현에게 이야기하자 마현은 한참 동안 말이 없었다",
+                "th": "คุณเล่าเหตุการณ์ที่เกิดขึ้นให้ Maji ฟัง ทำให้เขาพูดไม่ออกไปครู่หนึ่ง",
+                "zh-Hans": "你将方才的遭遇告诉了马计，马计一时无语。",
+                "zh-Hant": "你將方才的遭遇告訴了馬計，馬計一時無語。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist los?",
+                    "en": "What's the matter?",
+                    "es": "¿Qué pasa?",
+                    "fr": "Quel est le problème ?",
+                    "ja": "{Male=どうしたんだ？;Female=どうしたの？}",
+                    "ko": "무슨 생각해요?",
+                    "th": "เป็นอะไรไป?",
+                    "zh-Hans": "你怎么了？",
+                    "zh-Hant": "你怎麼了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Als Katze hat man es echt besser als Mensch.",
+                "en": "Being a cat is way better than being a human.",
+                "es": "Ser un gato es mucho mejor que ser humano.",
+                "fr": "Être un chat est bien mieux qu'être un humain.",
+                "ja": "猫はいいな、人間はやだな。",
+                "ko": "고양이로 사는 게 사람으로 사는 것보다 낫네요",
+                "th": "การเป็นแมวนี่ดีกว่าเป็นมนุษย์ซะอีกนะเนี่ย",
+                "zh-Hans": "做猫好，做人坏。",
+                "zh-Hant": "做貓好，做人壞。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich versteh’s nicht ...",
+                    "en": "I don't get it...",
+                    "es": "No te entiendo...",
+                    "fr": "Je ne comprends pas...",
+                    "ja": "言ってることよくわからないけど……。",
+                    "ko": "무슨 말씀인지 모르겠네요",
+                    "th": "ฉันไม่เข้าใจ...",
+                    "zh-Hans": "我不理解……",
+                    "zh-Hant": "我不理解……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich kann den Bericht heute nicht schreiben, aber wenn ich eine Katze wäre, müsste ich nie Berichte schreiben. Schnief schnief ...",
+                "en": "I can't write today's report in this case, but if I were a cat, I would never have to write any report. Sob sob...",
+                "es": "Hoy no tengo manera de redactar un informe, pero si fuese un gato, ¡nunca tendría que hacerlo! Aah...",
+                "fr": "Je ne peux pas rédiger le rapport d'aujourd'hui dans ce cas, mais si j'étais un chat, je n'aurais jamais à rédiger de rapport. Snif snif...",
+                "ja": "今日は、テスト運用業務のレポートは書けない。でも、私が猫なら書かなくたっていいんだ、うう……。",
+                "ko": "오늘 시범사업 보고서는 못 쓸 것 같네요. 고양이라면 안 써도 되겠지만, 엉엉...",
+                "th": "แบบนี้ผมก็เขียนรายงานของกรณีนี้ไม่ได้น่ะสิ แต่ถ้าผมเป็นแมว ผมคงไม่ต้องเขียนรายงานอะไรทั้งนั้น ฮือ ฮือ...",
+                "zh-Hans": "今天的业务试点报告我是没法写了，但是做猫就可以不用写了，呜呜……",
+                "zh-Hant": "今天的業務試點報告我是沒法寫了，但是做貓就可以不用寫了，嗚嗚……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Morgen kannst du eine andere deiner Geschäftsideen ausprobieren.",
+                    "en": "You can try another of your business ideas tomorrow.",
+                    "es": "Mañana puedes probar otra de tus ideas de negocio.",
+                    "fr": "Continuons notre boulot demain.",
+                    "ja": "{Male=明日はまた新しい業務があるんだろ！;Female=明日はまた新しい業務があるんでしょ！}",
+                    "ko": "내일 또 새로운 업무가 있잖아요!",
+                    "th": "พรุ่งนี้คุณก็ได้ทดลองแนวคิดธุรกิจอื่นของคุณแล้วนี่",
+                    "zh-Hans": "明天不是还有新的业务嘛！",
+                    "zh-Hant": "明天不是還有新的業務嘛！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du hast recht. Ich kümmere mich jetzt darum. Morgen wird alles gut.",
+                "en": "You're right. Let me cope with this now. Everything will be fine tomorrow.",
+                "es": "Tienes razón. Déjame que me ocupe de esto. Mañana todo estará solucionado.",
+                "fr": "Tu as raison. Laissez-moi gérer ça maintenant. Tout ira bien demain.",
+                "ja": "まあね。とりあえずどうするか考えるよ、明日のことは明日話そう！",
+                "ko": "그것도 그렇네요. 저는 일단 방법을 생각해 보고, 내일 일은 내일 이야기하죠!",
+                "th": "คุณพูดถูก ขอผมทำใจกับเรื่องนี้ก่อน พรุ่งนี้ทุกๆ อย่างจะดีขึ้น",
+                "zh-Hans": "也是，我先想想办法，明天的事明天说！",
+                "zh-Hant": "也是，我先想想辦法，明天的事明天說！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Füttere die Katze namens Wangcai",
+        "en": "Feed the cat named \"Wangcai\"",
+        "es": "Alimenta al gato llamado Buddy.",
+        "fr": "Nourrissez le chat nommé « Wangcai »",
+        "ja": "「太郎」に餌やりをする",
+        "ko": "「재재」라고 하는 고양이에게 먹이 주기",
+        "th": "ให้อาหารแมวที่ชื่อ \"วังไฉ\"",
+        "zh-Hans": "投喂名叫“旺财”的猫咪",
+        "zh-Hant": "投餵名叫「旺財」的貓咪"
+      },
+      "entities": [
+        {
+          "entityId": 880900035,
+          "mapId": 8,
+          "blueprintType": "NPC216",
+          "name": "TsEntity_154_010_皇龙研究员女",
+          "areaId": 301,
+          "position": {
+            "x": -33910,
+            "y": 96000,
+            "z": 2690
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900036,
+          "mapId": 8,
+          "blueprintType": "NPC275",
+          "name": "TsEntity_154_032_市民女4",
+          "areaId": 301,
+          "position": {
+            "x": -33990,
+            "y": 96100,
+            "z": 2690
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900037,
+          "mapId": 8,
+          "blueprintType": "NPC277",
+          "name": "TsEntity_157_021_市民男2",
+          "areaId": 301,
+          "position": {
+            "x": -33895,
+            "y": 95880,
+            "z": 2690
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 880900039,
+          "mapId": 8,
+          "blueprintType": "Animal007",
+          "name": "TsEntity_生态动物007_三色6",
+          "areaId": 301,
+          "position": {
+            "x": -34172,
+            "y": 95989,
+            "z": 2710
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 7,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Wir haben zu viele Leute, die gleichzeitig versuchen, zu füttern. Die Katze hat Angst. Tretet zurück, alle!",
+                "en": "We have too many people trying to feed it at once. It looks scared. Step back, everyone!",
+                "es": "Tenemos demasiadas personas intentando alimentarlo a la vez. Parece asustado. ¡Retroceded, todos!",
+                "fr": "Il y a trop de gens qui essaient de le nourrir en même temps. Il a l'air effrayé. Reculez, tout le monde !",
+                "ja": "餌やりする人が多すぎて、太郎もビックリしてるぞ。みんなもっと離れろって！",
+                "ko": "먹이를 주려는 사람이 너무 많아서, 재재가 놀란 것 같아요, 다들 물러서세요!",
+                "th": "มีคนพยายามเอาอาหารให้มันพร้อมกันเยอะเกินไป ดูเหมือนว่ามันจะกลัวนะ ถอยออกไปหน่อยทุกคน!",
+                "zh-Hans": "投喂的人太多，好像吓到旺财了，大家散一散！",
+                "zh-Hant": "投餵的人太多，好像嚇到旺財了，大家散一散！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1365,
+                "name": {
+                  "zh-Hans": "围观群众"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Verstanden! Wangcai versteckt sich hinter dem Lichtkasten, aber sein Bauch ist zu dick. Er steckt fest.",
+                "en": "Got it! Wangcai is hiding in the braces behind the light box, but his primordial pouch is too fat. He's stuck.",
+                "es": "¡Ahí está! Buddy está escondido entre las patas de la caja de luz, pero está tan gordo que se ha quedado atascado.",
+                "fr": "Compris ! Wangcai se cache dans les supports derrière la boîte à lumière, mais son ventre est trop gros. Il est coincé.",
+                "ja": "見えた！太郎は看板照明の後ろに隠れたみたいだ。でもお腹のたるんでいるところが大きすぎて引っかかってるな。",
+                "ko": "저기 있어요! 재재가 조명 간판 뒤의 받침대에 숨었는데, 살이 너무 많이 쪄서 끼었어요",
+                "th": "เข้าใจแล้ว! Wangcai ขดตัวซ่อนอยู่หลังกล่องไฟ แต่ตัวของเขาอ้วนเกินไป เขาเลยติดอยู่ในนั้น",
+                "zh-Hans": "看到了！旺财躲在灯箱后的支架里，但它的原始袋太肥，卡里头了。",
+                "zh-Hant": "看到了！ 旺財躲在燈箱後的支架裡，但它的原始袋太肥，卡裡頭了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1365,
+                "name": {
+                  "zh-Hans": "围观群众"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Miau miau miau ...",
+                "en": "Meow meow meow...",
+                "es": "Miau... Miau... Miau...",
+                "fr": "Miaou miaou miaou...",
+                "ja": "ミャオミャオミャオ～ン——",
+                "ko": "야옹, 야옹, 야옹——",
+                "th": "เหมียว เหมียว เหมียว...",
+                "zh-Hans": "咪呜咪呜咪——",
+                "zh-Hant": "咪嗚咪嗚咪——"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 511,
+                "name": {
+                  "zh-Hans": "旺财"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich versuche es mal mit dem Katzenübersetzungsmodul!",
+                "en": "Let me try the cat language translation module!",
+                "es": "¡Voy a probar el módulo de traducción gatuno!",
+                "fr": "Laissez-moi essayer le module de traduction de la langue des chats !",
+                "ja": "私の猫語翻訳モジュールの出番ですね！",
+                "ko": "제가 고양이어 번역 모듈로 알아볼게요",
+                "th": "เดี๋ยวฉันลองใช้โมดูลแปลภาษาแมวดู!",
+                "zh-Hans": "我用猫语翻译模块试试！",
+                "zh-Hant": "我用貓語翻譯模組試試！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                },
+                "entity": {
+                  "entityId": 880900035,
+                  "mapId": 8,
+                  "blueprintType": "NPC216",
+                  "name": "TsEntity_154_010_皇龙研究员女",
+                  "areaId": 301,
+                  "position": {
+                    "x": -33910,
+                    "y": 96000,
+                    "z": 2690
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wangcai sagt: „Taub. Irgendwas zappt mich im Lichtkasten. Mein Bauch fühlt sich taub an. Holt mich schnell hier raus.“",
+                "en": "Wangcai said: \"Numb. Something's zapping me inside the light box. My tummy feels numb. Please get me out quickly.\"",
+                "es": "Buddy acaba de decir: «Me duele. Algo dentro de la caja de luz me está dando calambres. Me duele la barriga. Por favor, sacadme de aquí».",
+                "fr": "Wangcai dit : « Engourdi. Il y a une fuite électrique à la boîte à lumière. Mon ventre est engourdi. S'il vous plaît, sortez-moi rapidement. »",
+                "ja": "太郎いわく、「看板照明が漏電しててお腹がしびれてる、何とかして」だそうです。",
+                "ko": "조명 간판에서 전기가 조금 누출되어서 배가 저릿저릿하다고 빨리 구출해 달라고 하네요",
+                "th": "Wangcai บอกว่า \"ชาไปหมดแล้ว มีบางอย่างในกล่องไฟกำลังช็อตฉันอยู่ ท้องฉันชาไปหมดแล้ว ช่วยพาฉันออกไปเร็วๆ เข้า\"",
+                "zh-Hans": "旺财说：麻麻的，灯箱有点漏电，肚子麻麻的，快把我弄出来。",
+                "zh-Hant": "旺財說：麻麻的，燈箱有點漏電，肚子麻麻的，快把我弄出來。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                },
+                "entity": {
+                  "entityId": 880900035,
+                  "mapId": 8,
+                  "blueprintType": "NPC216",
+                  "name": "TsEntity_154_010_皇龙研究员女",
+                  "areaId": 301,
+                  "position": {
+                    "x": -33910,
+                    "y": 96000,
+                    "z": 2690
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schnell, schalte das Strommodul aus, ich rette Wangcai.",
+                "en": "Quick. Turn off the circuit module, and I'll go save Wangcai.",
+                "es": "Rápido. Apaga el módulo del circuito, yo voy a salvar a Buddy.",
+                "fr": "Vite. Éteignez le module de circuit, et je vais sauver Wangcai.",
+                "ja": "早く、回路の電流を切るのです。太郎を助けなくては。",
+                "ko": "우선 빨리 두꺼비집을 내려 주세요. 제가 재재를 구하러 갈게요",
+                "th": "เร็วเข้า ปิดโมดูลวงจรไฟฟ้าก่อน ฉันจะไปช่วย Wangcai",
+                "zh-Hans": "快，来个人把电路模块断了，我去救旺财。",
+                "zh-Hant": "快，來個人把電路模組斷開，我去救旺財。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 361,
+                "name": {
+                  "zh-Hans": "悬音"
+                },
+                "entity": {
+                  "entityId": 880900035,
+                  "mapId": 8,
+                  "blueprintType": "NPC216",
+                  "name": "TsEntity_154_010_皇龙研究员女",
+                  "areaId": 301,
+                  "position": {
+                    "x": -33910,
+                    "y": 96000,
+                    "z": 2690
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -170
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 2,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schalte das Schaltkreismodul aus",
+        "en": "Turn off the circuit module",
+        "es": "Apaga el módulo de circuito.",
+        "fr": "Éteignez le module de circuit",
+        "ja": "回路の電流を切る",
+        "ko": "조명 간판의 회로 모듈 닫기",
+        "th": "ปิดโมดูลแผงวงจร",
+        "zh-Hans": "关闭灯箱的电路模块",
+        "zh-Hant": "關閉燈箱的電路模組"
+      },
+      "entities": [
+        {
+          "entityId": 880900011,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端2",
+          "areaId": 301,
+          "position": {
+            "x": -34446,
+            "y": 96294,
+            "z": 2777
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -45
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V1.1转盘活动",
+          "flowIndex": 7,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Du und Xuanyin retten Wangcai, was die Menge jubeln lässt.\nNachdem Xuanyin sich bedankt hat, bringt er Wangcai in die medizinische Abteilung der Akademie.\nEs sieht so aus, als müsstest du bis zum nächsten Mal warten, um Wangcai zu füttern.",
+                "en": "You and Xuanyin join forces to save Wangcai, prompting cheers from the crowd. After thanking you, Xuanyin takes Wangcai to the Academy's medical department. It seems you'll have to wait until next time to feed Wangcai.",
+                "es": "Xuanyin y tú unís fuerzas para salvar a Buddy y os ganáis los aplausos de la multitud.\nXuanyin te da las gracias y se lleva a Buddy al departamento médico de la Academia.\nParece que tendrás que esperar a la próxima para darle de comer a Buddy.",
+                "fr": "Avec Xuanyin, vous avez sauvé Wangcai, ce qui provoque les acclamations de la foule.\nAprès vous avoir remercié, Xuanyin emmène Wangcai au département médical de l'Académie.\nIl semble que vous devrez attendre la prochaine fois pour nourrir Wangcai.",
+                "ja": "懸音と力を合わせて太郎を救出すると、人々はどっと歓喜の声に沸いた。\n懸音は礼を言ってから、太郎を抱え、華胥の医療課へ検査に向かった。\n餌やりは、どうやら次回にするしかなさそうだ。",
+                "ko": "방랑자와 현음이 힘을 합쳐서 재재를 구해내자 사람들이 환호했다.\n현음이 감사의 말을 전한 후, 재재를 데리고 화서연구원 의료과에 검사를 받으러 갔다.\n먹이 주는 일은 다음으로 미뤄야 할 것 같다",
+                "th": "คุณกับ Xuanyin ร่วมมือกันช่วย Wangcai จนได้รับเสียงเชียร์มากมายจากฝูงชน หลังจากที่ขอบคุณคุณแล้ว สวนยินก็พา Wangcai ไปที่แผนกการแพทย์ของสถาบัน ดูเหมือนว่าคุณคงต้องรอให้อาหาร Wangcai ในคราวหน้า",
+                "zh-Hans": "你和悬音合力救出了旺财，人群爆发出一阵欢呼。\n悬音道谢后，先行带着旺财去华胥医疗科检查。\n至于投喂的事情，看来要等下次了。",
+                "zh-Hant": "你和懸音合力救出了旺財，人群爆發出一陣歡呼。\n懸音道謝後，先行帶著旺財去華胥醫療科檢查。\n至於投餵的事情，看來要等下次了。"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

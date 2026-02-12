@@ -1,0 +1,270 @@
+{
+  "id": 880000003,
+  "key": "索拉等阶突破·其三",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "SOL3 Phasenaufstieg: Phase III",
+    "en": "SOL3 Phase Ascension: Phase III",
+    "es": "Ascensión de la Fase de SOL3: Fase III",
+    "fr": "Ascension de Phase SOL3 : III",
+    "ja": "ソラランク突破・3",
+    "ko": "솔라리스 랭크 돌파 · Rank3",
+    "th": "เลื่อนขั้นระดับ SOL3: เฟส 3",
+    "zh-Hans": "索拉等阶突破·三级",
+    "zh-Hant": "索拉等階突破·三級"
+  },
+  "desc": {
+    "de": "Dein Terminal hat wieder ähnliche Signale empfangen. Vielleicht kann der Resonanznexus dir helfen, die darin enthaltenen Informationen zu entschlüsseln.",
+    "en": "Your Terminal has received similar signals again. Maybe the Nexus Beacon can help you decipher the information contained within.",
+    "es": "Tu Terminal ha recibido señales similares de nuevo. Quizás el Nexo de resonancia pueda ayudarte a descifrar la información contenida en ellas.",
+    "fr": "Votre Borne a capté à nouveau des signaux flous. Peut-être que le Nexus pourra vous aider à en décrypter le contenu.",
+    "ja": "その特別なメッセージを再び受信した。中枢信号塔に行けば、その情報がはっきり聴き取れるようになるかもしれない。",
+    "ko": "또 한번 특수한 신호를 받았습니다. 더 큰 중추 비콘에 가면 정보를 파악할 수 있을 지도 모릅니다",
+    "th": "เทอร์มินัลของคุณได้รับสัญญาณที่คล้ายคลึงกันอีกครั้ง บางทีเสาสัญญาณเน็กซัสอาจช่วยคุณถอดรหัสข้อมูลในนั้นก็ได้",
+    "zh-Hans": "再一次，你收到了那种特殊的信号。如果能到大点的中枢信标处，或许就能听清这次的信息了吧。",
+    "zh-Hant": "再一次，你收到了那種特殊的訊號。 如果能到大點的中樞信標處，或許就能聽清這次的訊息了吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde das Tor zur Prüfung und absolviere es",
+        "en": "Complete the Phase Ascension Trial",
+        "es": "Completa la prueba de ascensión de fase.",
+        "fr": "Terminer l'épreuve de l'ascension",
+        "ja": "試練の扉を見つけて試練をクリア",
+        "ko": "시련의 문을 찾아 시련 클리어",
+        "th": "ทำบททดสอบเลื่อนเฟสให้สำเร็จ",
+        "zh-Hans": "寻到试炼之门并完成试炼",
+        "zh-Hant": "尋到試煉之門並完成試煉"
+      },
+      "entities": [
+        {
+          "entityId": 880000004,
+          "mapId": 8,
+          "blueprintType": "Gameplay124",
+          "name": "TsEntity_副本_剧情副本入口4",
+          "areaId": 401,
+          "position": {
+            "x": -12410,
+            "y": 67680,
+            "z": 2920
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Resonanznexus in Jinzhou",
+        "en": "Head to the Nexus Beacon in Jinzhou",
+        "es": "Dirígete al Nexo de resonancia de Jinzhou.",
+        "fr": "Aller au Nexus de Jinzhou",
+        "ja": "今州城内の中枢信号塔へ向かう",
+        "ko": "금주성 내로 가는 중추 비콘",
+        "th": "มุ่งหน้าไปยังเสาสัญญาณเน็กซัสในจินโจว",
+        "zh-Hans": "前往今州城内的中枢信标",
+        "zh-Hant": "前往今州城內的中樞信標"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 880000004,
+          "mapId": 8,
+          "blueprintType": "Gameplay124",
+          "name": "TsEntity_副本_剧情副本入口4",
+          "areaId": 401,
+          "position": {
+            "x": -12410,
+            "y": 67680,
+            "z": 2920
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_主线_鸣域突破流程",
+          "flowIndex": 3,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, Rover.",
+                "en": "Hello, Rover.",
+                "es": "Hola, Errante.",
+                "fr": "Bonjour, Nomade.",
+                "ja": "こんにちは。漂泊者さま。",
+                "ko": "방랑자, 안녕하세요",
+                "th": "สวัสดี ผู้พเนจร",
+                "zh-Hans": "您好，漂泊者。",
+                "zh-Hant": "您好，漂泊者。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir haben bemerkt, dass du die Landschaften dieser Welt bereist hast und dabei sowohl deine körperlichen Funktionen als auch geistigen Fähigkeiten voll und ganz trainiert werden.",
+                "en": "The system has concluded that you have explored this realm and honed your physical and mental capabilities.",
+                "es": "Se ha detectado que has recorrido los paisajes de este mundo, tu cuerpo y mente han sido completamente entrenados.",
+                "fr": "En explorant ce monde, votre personnalité et vos capacités semblent avoir grandement évolué.",
+                "ja": "この旅路につき、心も体も著しく成長したようにお見受けしました。",
+                "ko": "이 세계를 여행하는 방랑자의 상태를 감지한 결과 신체 기능과 심리적 자질이 충분히 단련되었음을 확인했어요",
+                "th": "ระบบสรุปว่าคุณได้สำรวจดินแดนแห่งนี้แล้ว และขัดเกลาทั้งฝีมือและฝึกฝนจิตใจมาแล้วเป็นอย่างดี",
+                "zh-Hans": "检测到您遍历这个世界的风景，您的身体机能、心理素质都得到充分的锻炼。",
+                "zh-Hant": "檢測到您遍歷這個世界的風景，您的身體機能、心理素質都得到充分的鍛煉。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deshalb werden wir gemäß den Anweisungen die Prüfung für dich in der Wildnis von Jinzhou vorbereiten.",
+                "en": "As instructed, I will set up a test for you in the Jinzhou wilderness.",
+                "es": "Por lo tanto, de acuerdo con las instrucciones, se te han preparado pruebas en la afuera de Jinzhou.",
+                "fr": "Selon l'ordre donné, nous vous imposons une épreuve à la campagne de Jinzhou.",
+                "ja": "そこで古からの指令により、今州野外で試練を課させていただきます。",
+                "ko": "따라서 지침에 따라 야외에 테스트를 설치할 거예요",
+                "th": "ตามที่ได้แจ้งไว้ ฉันจะเตรียมบททดสอบที่ป่าจินโจวไว้ให้คุณ",
+                "zh-Hans": "因此，将根据指令，在今州野外为您布设考验。",
+                "zh-Hant": "因此，將根據指令，在今州野外為您佈設考驗。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn die Prüfung bestanden ist, wird sich vor dir der Schlüssel ins Unbekannte offenbaren.",
+                "en": "Once you pass the test, a key to the unknown will reveal itself to you.",
+                "es": "Cuando superes las pruebas, la llave hacia lo desconocido aparecerá ante ti.",
+                "fr": "En surmontant cette épreuve, vous obtiendrez une clé vers l'inconnu.",
+                "ja": "この試練を無事乗り越えた時……未知へと繋がる鍵を手にすることになるでしょう。",
+                "ko": "시련을 통과하면 미지의 열쇠가 방랑자의 앞에 나타날 거예요",
+                "th": "เมื่อผ่านบททดสอบนั้นแล้ว กุญแจสู่สิ่งที่ยังไม่รู้จะปรากฏให้คุณเห็นเอง",
+                "zh-Hans": "当考验通过时，通往未知的钥匙将出现在您的面前。",
+                "zh-Hant": "當考驗通過時，通往未知的鑰匙將出現在您的面前。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Deine Antworten könnten die Zukunft von SOL-3 verändern.",
+                "en": "The responses you provide could potentially shape the future of SOL-3.",
+                "es": "Tus respuestas podrían cambiar el futuro de SOL-3.",
+                "fr": "Il est possible que votre réponse change l'avenir de Solaris.",
+                "ja": "いずれ至る答えは、ソラリスの未来を変えるものですから……",
+                "ko": "방랑자의 답변은 솔라리스의 미래를 변화시킬 수 있어요",
+                "th": "คำตอบของคุณอาจเป็นตัวกำหนดอนาคตของ SOL-3 ก็เป็นได้",
+                "zh-Hans": "您的解答，也许能让索拉的未来有所不同。",
+                "zh-Hant": "您的解答，也許能讓索拉的未來有所不同。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir hoffen, dass du deine Reise genießt.",
+                "en": "I hope you will enjoy your journey.",
+                "es": "Espero que disfrutes tu viaje.",
+                "fr": "Profitez de votre voyage.",
+                "ja": "それでは……ご自身の旅路をお楽しみください。",
+                "ko": "마음에 드는 여행 되셨으면 좋겠네요",
+                "th": "ขอให้สนุกกับการผจญภัยครั้งนี้",
+                "zh-Hans": "希望您喜欢自己的旅行。",
+                "zh-Hant": "希望您喜歡自己的旅行。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 178,
+                "name": {
+                  "en": "Gleamtender",
+                  "ja": "輝光の螢軍",
+                  "zh-Hans": "？？？"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

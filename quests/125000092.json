@@ -1,0 +1,735 @@
+{
+  "id": 125000092,
+  "key": "猫咪拯救计划02",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Weltrettung? Rettung der Katzen!",
+    "en": "Save the World? Save the Cat!",
+    "es": "¿Salvar el mundo? ¡Salva al gato!",
+    "fr": "Sauvez le monde ? Sauvez le chat !",
+    "ja": "世界を救う？猫を救う！",
+    "ko": "세상을 구하라고? 고양이를 구할 거야!",
+    "th": "ช่วยโลกเหรอ ช่วยแมวสิ!",
+    "zh-Hans": "拯救世界？拯救猫咪！",
+    "zh-Hant": "拯救世界？拯救貓咪！"
+  },
+  "desc": {
+    "de": "Du findest eine weitere streunende Katze. Bitte rette sie und bring sie zu Xiaoju.",
+    "en": "You find another stray cat. Please rescue it and bring it to Xiaoju.",
+    "es": "Has encontrado otro gato callejero. Por favor, rescátalo y llévalo a Xiaoju.",
+    "fr": "Un nouveau chat errant est apparu. Aidez Xiaoju à le recueillir et à en prendre soin.",
+    "ja": "新しい野良猫が現れた。助けて、橘に預けよう。",
+    "ko": "새로운 길고양이가 나타났습니다. 귤이를 도와 길고양이를 구하고 그녀에게 고양이를 전달하세요",
+    "th": "พบแมวจรจัดอีกตัว โปรดช่วยเหลือมันและพาไปหา Xiaoju",
+    "zh-Hans": "新的流浪猫出现了，请帮小橘拯救流浪猫，并将猫咪交给她抚养吧。",
+    "zh-Hant": "新的流浪貓出現了，請幫小橘拯救流浪貓，並將貓咪交給她撫養吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die TDs",
+        "en": "Defeat the TDs",
+        "es": "Derrota a las DT.",
+        "fr": "Vaincre les ennemis",
+        "ja": "残像を倒す",
+        "ko": "잔상 격파하기",
+        "th": "พิชิตทาเซ็ตดิสคอร์ด",
+        "zh-Hans": "击败残象",
+        "zh-Hant": "擊敗殘象"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bring die streunende Katze zu Xiaoju",
+        "en": "Bring the stray cat to Xiaoju",
+        "es": "Lleva el gato callejero a Xiaoju",
+        "fr": "Apporter le chat errant à Xiaoju",
+        "ja": "野良猫を橘に預ける",
+        "ko": "길고양이를 귤이에게 전달",
+        "th": "พาแมวจรจัดไปหา Xiaoju",
+        "zh-Hans": "将流浪猫交给小橘",
+        "zh-Hant": "將流浪貓交給小橘"
+      },
+      "entities": [
+        {
+          "entityId": 135001512,
+          "mapId": 8,
+          "blueprintType": "NPC225",
+          "name": "小橘",
+          "areaId": 406,
+          "position": {
+            "x": -76365,
+            "y": 53447,
+            "z": 5578
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 59
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_猫咪拯救计划",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Rover, du bist hier! Wie ist es gelaufen?",
+                "en": "Rover, you're here! How did it go?",
+                "es": "¡Errante, estás aquí! ¿Cómo te fue?",
+                "fr": "Salut Nomade ! Comment ça va, tout s'est bien passé ?",
+                "ja": "漂泊者さん！どう？うまくいった？",
+                "ko": "방랑자. 왔군요! 어때요? 잘 해결했어요?",
+                "th": "ท่านผู้พเนจร คุณมาแล้ว! เป็นอย่างไรบ้าง?",
+                "zh-Hans": "漂泊者你来啦！怎么样，一切顺利吗？",
+                "zh-Hant": "漂泊者你來啦！怎麼樣，一切順利嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kein Problem.",
+                    "en": "No sweat.",
+                    "es": "Sin problemas.",
+                    "fr": "Très bien.",
+                    "ja": "ああ、うまくいった。",
+                    "ko": "네",
+                    "th": "สบายมาก",
+                    "zh-Hans": "非常顺利。",
+                    "zh-Hant": "非常順利。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gut... Nur ein paar Kratzer. Gut, dass du rechtzeitig da warst!",
+                "en": "Good... Only a few scratches. Good thing you got there in time!",
+                "es": "Bien... Solo un par de rasguños. ¡Menos mal que llegaste a tiempo!",
+                "fr": "Hmm... On dirait que tu n'es pas trop blessé, petit ! Heureusement que tu es arrivé à temps !",
+                "ja": "うん……怪我もそこまでひどくないね。間に合って良かった！",
+                "ko": "음... 부상이 심각해 보이진 않네요. 방랑자가 때맞춰 도착해서 다행이에요!",
+                "th": "ดีจัง... มีแค่แผลขีดข่วนเล็กน้อยเท่านั้น โชคดีที่คุณไปถึงทันเวลาพอดี!",
+                "zh-Hans": "嗯……看起来受伤还不是特别严重，还好你及时赶到！",
+                "zh-Hant": "嗯……看起來受傷還不是特別嚴重，還好你及時趕到！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Rover, wie immer. Du solltest ihm einen Namen geben!",
+                "en": "Rover, as usual. You should give him a name!",
+                "es": "Errante, como siempre. ¡Deberías ponerle un nombre!",
+                "fr": "Nomade, comme d'habitude, tu lui donnes un nom !",
+                "ja": "漂泊者さん、やはり今回も……あなたが名付けてあげて！",
+                "ko": "방랑자. 늘 하던 대로 이름을 지어주세요!",
+                "th": "รอบนี้ก็เหมือนเดิมนะ ท่านผู้พเนจร คุณควรจะเป็นคนตั้งชื่อให้เขานะ!",
+                "zh-Hans": "漂泊者，老规矩，你给它起个名字吧！",
+                "zh-Hant": "漂泊者，老規矩，你給它起個名字吧！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kuku.",
+                    "en": "Kuku.",
+                    "es": "Kuku.",
+                    "fr": "Kuku.",
+                    "ja": "クク！",
+                    "ko": "쿠쿠",
+                    "th": "คูคู",
+                    "zh-Hans": "库库。",
+                    "zh-Hant": "庫庫。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Jinhu.",
+                    "en": "Jinhu.",
+                    "es": "Jinhu.",
+                    "fr": "Jinhu.",
+                    "ja": "金虎！",
+                    "ko": "금호",
+                    "th": "จินฮู",
+                    "zh-Hans": "金虎。",
+                    "zh-Hant": "金虎。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Heulsuse.",
+                    "en": "Crybaby.",
+                    "es": "Llorón.",
+                    "fr": "Lamenteur",
+                    "ja": "……っしゃーぶるる？",
+                    "ko": "소리",
+                    "th": "ขี้แย",
+                    "zh-Hans": "叫得惨。",
+                    "zh-Hant": "叫得慘。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Okay. Hallo, Kuku! Ab jetzt ist das hier dein neues Zuhause. Ich werde dafür sorgen, dass du dich richtig wohl fühlst!",
+                "en": "Okay. Hello, Kuku! From now on, this is your new home. I'll make sure you feel real comfy!",
+                "es": "De acuerdo. ¡Hola, Kuku! A partir de ahora, esta es tu nueva casa. ¡Me aseguraré de que te sientas realmente cómodo!",
+                "fr": "D'accord, coucou Kuku, à partir de maintenant, c'est ta nouvelle maison, je vais bien m'occuper de toi !",
+                "ja": "いいか、クク！今日からここはあなたの家。私がちゃんと、面倒見てあげるからね！",
+                "ko": "좋아. 쿠쿠야. 안녕! 이제부터 여기가 네 새로운 보금자리야. 앞으로 내가 잘 돌봐줄게!",
+                "th": "ได้เลย สวัสดี คูคู! จากนี้ไป ที่นี่คือบ้านใหม่ของเจ้านะ ฉันจะดูแลให้เจ้าอยู่อย่างสุขสบายที่สุดเลย!",
+                "zh-Hans": "好哦，库库你好呀，以后这里就是你的新家了，我会好好照顾你的！",
+                "zh-Hant": "好喔，庫庫你好呀，以後這裡就是你的新家了，我會好好照顧你的！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay. Hallo, Jinhu! Ab jetzt ist das hier dein neues Zuhause. Ich werde dafür sorgen, dass du dich richtig wohl fühlst!",
+                "en": "Okay. Hello, Jinhu! From now on, this is your new home. I'll make sure you feel real comfy!",
+                "es": "De acuerdo. ¡Hola, Jinhu! A partir de ahora, esta es tu nueva casa. ¡Me aseguraré de que te sientas realmente cómodo!",
+                "fr": "D'accord, coucou Jinhu, à partir de maintenant, c'est ta nouvelle maison, je vais bien m'occuper de toi !",
+                "ja": "いいか、金虎！今日からここはあなたの家。私がちゃんと、面倒見てあげるからね！",
+                "ko": "좋아. 금호야. 안녕! 이제부터 여기가 네 새로운 보금자리야. 앞으로 내가 잘 돌봐줄게!",
+                "th": "ได้เลย สวัสดี จินฮู! จากนี้ไป ที่นี่คือบ้านใหม่ของเจ้านะ ฉันจะดูแลให้เจ้าอยู่อย่างสุขสบายที่สุดเลย!",
+                "zh-Hans": "好哦，金虎你好呀，以后这里就是你的新家了，我会好好照顾你的！",
+                "zh-Hant": "好喔，金虎你好呀，以後這裡就是你的新家了，我會好好照顧你的！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warum hast du dich für diesen entschieden?",
+                "en": "Why did you pick that one?",
+                "es": "¿Por qué elegiste ese?",
+                "fr": "Pourquoi ce nom ?",
+                "ja": "どうして？",
+                "ko": "왜 이렇게 지은 거죠?",
+                "th": "ทำไมคุณถึงเลือกชื่อนั้นล่ะ?",
+                "zh-Hans": "为什么起这个名字？",
+                "zh-Hant": "為什麼起這個名字？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Er hat einen Fluss voller Tränen geweint, als ich ihn gefunden habe.",
+                    "en": "He was crying a river when I found him.",
+                    "es": "Estaba llorando un río cuando lo encontré.",
+                    "fr": "Parce qu'il criait douloureusement quand je l'ai trouvé.",
+                    "ja": "見つけた時、すごい形相で「っしゃーぶるる」って鳴かれたから……",
+                    "ko": "이 녀석을 찾아냈을 때 시끄럽게 울어대더라고요",
+                    "th": "ก็ตอนที่ฉันไปเจอ เขากำลังร้องไห้ขี้มูกโป่งอยู่เลย",
+                    "zh-Hans": "因为找到它的时候它叫得很惨。",
+                    "zh-Hant": "因為找到它的時候它叫得很慘。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "...Ich bin überzeugt!",
+                "en": "...I'm sold!",
+                "es": "...¡Estoy convencido!",
+                "fr": "...Très convaincant !",
+                "ja": "……説得力高すぎ！",
+                "ko": "그러고 보니 그렇네요!",
+                "th": "...ฉันชอบนะ!",
+                "zh-Hans": "……很有说服力！",
+                "zh-Hant": "……很有說服力！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hallo, Heulsuse! Ab jetzt ist das hier dein neues Zuhause. Ich werde dafür sorgen, dass du dich richtig wohl fühlst!",
+                "en": "Hello, Crybaby! From now on, this is your new home. I'll make sure you feel real comfy!",
+                "es": "¡Hola, llorón! A partir de ahora, esta es tu nueva casa. ¡Me aseguraré de que te sientas muy cómodo!",
+                "fr": "Salut, Lamenteur, à partir de maintenant, c'est ta nouvelle maison, je vais bien m'occuper de toi !",
+                "ja": "いいか、っしゃーぶるる！今日からここはあなたの家。私がちゃんと、面倒見てあげるからね！",
+                "ko": "소리야. 안녕! 이제부터 여기가 네 새로운 보금자리야. 앞으로 내가 잘 돌봐줄게!",
+                "th": "สวัสดี เจ้าขี้แย! จากนี้ไป ที่นี่คือบ้านใหม่ของเจ้านะ ฉันจะดูแลให้เจ้าอยู่อย่างสุขสบายที่สุดเลย!",
+                "zh-Hans": "叫得惨你好呀，以后这里就是你的新家了，我会好好照顾你的！",
+                "zh-Hant": "叫得慘你好呀，以後這裡就是你的新家了，我會好好照顧你的！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 960,
+                "name": {
+                  "zh-Hans": "小橘"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 125000969,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "叫得惨",
+          "areaId": 406,
+          "position": {
+            "x": -75727,
+            "y": 53771,
+            "z": 5585
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 124
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125000970,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "库库",
+          "areaId": 406,
+          "position": {
+            "x": -75710,
+            "y": 53782,
+            "z": 5586
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 124
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125000971,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "金虎",
+          "areaId": 406,
+          "position": {
+            "x": -75718,
+            "y": 53776,
+            "z": 5585
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 124
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 13,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Rette streunende Katzen",
+        "en": "Rescue the stray cat",
+        "es": "Rescata gatos callejeros",
+        "fr": "Aller sauver le chat errant",
+        "ja": "野良猫を助ける",
+        "ko": "길고양이 구조하기",
+        "th": "ช่วยเหลือแมวจรจัด",
+        "zh-Hans": "前往救助流浪猫",
+        "zh-Hant": "前往救助流浪貓"
+      },
+      "entities": [
+        {
+          "entityId": 125000938,
+          "mapId": 8,
+          "blueprintType": "Monster002",
+          "name": "TsEntity_小怪_裂变幼岩9",
+          "areaId": 4,
+          "position": {
+            "x": -48390,
+            "y": 36960,
+            "z": 6260
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125000939,
+          "mapId": 8,
+          "blueprintType": "Monster002",
+          "name": "TsEntity_小怪_裂变幼岩10",
+          "areaId": 4,
+          "position": {
+            "x": -48400,
+            "y": 36820,
+            "z": 6250
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125000968,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "小狸花1",
+          "areaId": 4,
+          "position": {
+            "x": -48200,
+            "y": 36890,
+            "z": 6273
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_猫咪拯救计划",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Rover, entschuldige, dass ich dich störe. Kann ich dich um einen Gefallen bitten?",
+                "en": "Rover, sorry for bothering you. Can I ask you a favor?",
+                "es": "Errante, perdona la molestia. ¿Podrías hacerme un favor?",
+                "fr": "Nomade, je te dérange. Mais peux-tu m'aider ?",
+                "ja": "漂泊者さん。突然ごめんね？一つ頼みたい事があって……",
+                "ko": "방랑자. 미안한데 좀 도와줄래요?",
+                "th": "ท่านผู้พเนจร ขอโทษที่รบกวนคุณนะ ฉันขอให้คุณช่วยอะไรสักอย่างได้ไหม?",
+                "zh-Hans": "漂泊者，很抱歉打扰你了，能请你帮个忙吗？",
+                "zh-Hant": "漂泊者，很抱歉打擾你了，能請你幫個忙嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 961,
+                "name": {
+                  "zh-Hans": "小橘（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Stammkunde von mir hat mir gerade einen Anruf über eine streunende Katze gegeben, die auf seinem Weg zurück in die Stadt von Tacet-Dissonanzen umgeben ist. Das hat mich wirklich besorgt...",
+                "en": "A frequent customer of mine just gave me a call about a stray cat that’s being surrounded by Tacet Discords on his way back to the city. It got me really worried...",
+                "es": "Un cliente habitual me llamó preocupado: vio un gato callejero acorralado por Disonancias Tácitas mientras regresaba a la ciudad… Me preocupa mucho.",
+                "fr": "Mon bon client m'a contacté. Il a vu un chat errant entouré de Tacet Discord sur le chemin du retour, je suis inquiet…",
+                "ja": "さっきある常連さんから連絡があったんだけど……今州城に戻る途中、残像に囲まれた野良猫がいたんだって……",
+                "ko": "방금 한 단골 고객에게 연락이 왔는데, 그가 성으로 돌아가는 길에 야외에서 길고양이 한 마리가 잔상에 포위된 모습을 목격했다네요. 좀 걱정돼서요...",
+                "th": "ลูกค้าประจำของฉันคนหนึ่งเพิ่งโทรมาบอกฉันว่า เขาเห็นแมวจรจัดตัวหนึ่งกำลังถูกพวกทาเซ็ตดิสคอร์ดล้อมอยู่ระหว่างทางที่เขากำลังกลับเมืองน่ะ พอได้ยินแล้ว ฉันก็เป็นห่วงมากเลย...",
+                "zh-Hans": "刚才有个老顾客联系我，说他在回城的路上看到野外有只流浪猫被残象包围了，我有些担心……",
+                "zh-Hant": "剛才有個老顧客聯繫我，說他在回城的路上看到野外有隻流浪貓被殘象包圍了，我有些擔心……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 961,
+                "name": {
+                  "zh-Hans": "小橘（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kannst du mir helfen, diese streunende Katze zu retten? Hier sind die Koordinaten, wenn du Zeit hast!",
+                "en": "Can you help me save that stray cat? Here are the coordinates if you got the time!",
+                "es": "¿Puedes ayudarme a salvar a ese gato callejero? ¡Aquí están las coordenadas si tienes tiempo!",
+                "fr": "Peux-tu m'aider à sauver ce chat ? Si tu peux, je vais t'envoyer l'adresse !",
+                "ja": "良ければ、その野良猫を助けてくれないかな？場所も教えておくわ！",
+                "ko": "그 길고양이를 좀 잡아줄래요? 방랑자만 괜찮다면 주소를 보내줄게요!",
+                "th": "คุณพอจะไปช่วยแมวจรจัดตัวนั้นให้ฉันหน่อยได้ไหม? นี่คือพิกัดตำแหน่ง เผื่อว่าคุณจะมีเวลาว่างน่ะ!",
+                "zh-Hans": "可以请你帮忙救下那只流浪猫吗？如果可以，我把地址发给你！",
+                "zh-Hant": "可以請你幫忙救下那隻流浪貓嗎？如果可以，我把地址發給你！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 961,
+                "name": {
+                  "zh-Hans": "小橘（通讯中）"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nachdem du ihn hast, bring ihn zu mir und ich werde ihm ein warmes Zuhause geben! Danke!",
+                "en": "After you’ve got him, bring him to my place and I'll give him a warm home to stay! Thanks!",
+                "es": "Cuando lo tengas, tráelo a mi casa. ¡Le daré un hogar cálido! ¡Gracias!",
+                "fr": "Quand tu l'as trouvé, amène-le ici, je vais l'adopter ! Merci !",
+                "ja": "捕まえたら私のところに来て。私が面倒を見るから！頼んだよ！",
+                "ko": "잡은 다음 제가 있는 곳으로 데려와주세요! 제가 키워 보려구요! 고마워요!",
+                "th": "หลังจากที่คุณได้ตัวเขาแล้ว ก็พาเขามาที่บ้านของฉันได้เลยนะ แล้วฉันจะให้ที่พักพิงอันอบอุ่นแก่เขาเอง! ขอบใจนะ!",
+                "zh-Hans": "抓到后请送到我这里来吧，我来收养它！谢谢啦！",
+                "zh-Hant": "抓到後請送到我這裡來吧，我來收養它！謝謝啦！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 961,
+                "name": {
+                  "zh-Hans": "小橘（通讯中）"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Nimm die streunende Katze mit",
+        "en": "Take away the stray cat",
+        "es": "Lleva al gato callejero",
+        "fr": "Ramener le chat errant",
+        "ja": "野良猫を連れて帰る",
+        "ko": "길고양이 데려가기",
+        "th": "พาแมวจรจัดไป",
+        "zh-Hans": "抱走流浪猫",
+        "zh-Hant": "抱走流浪貓"
+      },
+      "entities": [
+        {
+          "entityId": 125000968,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "小狸花1",
+          "areaId": 4,
+          "position": {
+            "x": -48200,
+            "y": 36890,
+            "z": 6273
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 6,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 11,
+      "parentId": 6,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 125000970,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "库库",
+          "areaId": 406,
+          "position": {
+            "x": -75710,
+            "y": 53782,
+            "z": 5586
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 124
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 125000971,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "金虎",
+          "areaId": 406,
+          "position": {
+            "x": -75718,
+            "y": 53776,
+            "z": 5585
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 124
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 11,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 125000969,
+          "mapId": 8,
+          "blueprintType": "Animal008_little",
+          "name": "叫得惨",
+          "areaId": 406,
+          "position": {
+            "x": -75727,
+            "y": 53771,
+            "z": 5585
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 124
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

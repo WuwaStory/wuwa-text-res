@@ -1,0 +1,789 @@
+{
+  "id": 125000108,
+  "key": "吊唁碑林1",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Denkmäler der Anteilnahme",
+    "en": "Monuments of Condolence",
+    "es": "Monumentos de condolencia",
+    "fr": "Condoléances",
+    "ja": "老兵による手向け",
+    "ko": "안식의 묘지",
+    "th": "อนุสรณ์ไว้อาลัย",
+    "zh-Hans": "吊唁碑林",
+    "zh-Hant": "弔唁碑林"
+  },
+  "desc": {
+    "de": "Der alte Mann, der von weitem auf den Friedhof schaut, hofft, mit den Blumen, die er hält, seinen ehemaligen Kameraden Tribut zu zollen. Bitte hilf ihm, seinen Wunsch zu erfüllen.",
+    "en": "The old man looking at the cemetery from a distance hopes to pay tribute with the flowers he holds to his past comrades. Please help him fulfill his wishes.",
+    "es": "El anciano que mira el cementerio desde la distancia espera rendir homenaje con las flores que sostiene a sus antiguos camaradas. Por favor, ayúdale a cumplir sus deseos.",
+    "fr": "Un homme observe le cimetière à distance. Il souhaite offrir les fleurs qu'il tient à ses anciens camarades de guerre. Aidez-le à accomplir son souhait.",
+    "ja": "ある老人が戦友の手向けとして、彼らの墓標に献花したいと思っている。彼の願いを叶えてあげてください。",
+    "ko": "공동묘지를 바라보던 노인은 손에 든 꽃을 옛 전우에게 바치고 싶어합니다. 그의 소원이 이루어질 수 있게 도와주세요",
+    "th": "ชายชรามองดูสุสานจากระยะไกล หวังจะไว้อาลัยถึงสหายเก่าด้วยดอกไม้ที่เขาถืออยู่ โปรดช่วยให้เขาสมปรารถนา",
+    "zh-Hans": "遥望公墓的老人希望将自己手中的鲜花献给过去的战友，请帮忙完成他的心愿吧。",
+    "zh-Hant": "遙望公墓的老人希望將自己手中的鮮花獻給過去的戰友，請幫忙完成他的心願吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Gongming",
+        "en": "Talk to Gongming",
+        "es": "Habla con Gongming",
+        "fr": "Parler à Gongming",
+        "ja": "公明と話す",
+        "ko": "공명과 대화",
+        "th": "คุยกับ Gongming",
+        "zh-Hans": "与公明交谈",
+        "zh-Hant": "與公明交談"
+      },
+      "entities": [
+        {
+          "entityId": 125001049,
+          "mapId": 8,
+          "blueprintType": "NPC0126",
+          "name": "公明1",
+          "areaId": 504,
+          "position": {
+            "x": -49089,
+            "y": 21073,
+            "z": 10959
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -37
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_吊唁碑林",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich frage mich, warum immer noch keine Antwort kommt...",
+                "en": "Wonder why there's still no reply...",
+                "es": "¿Por qué aún no hay respuesta...?",
+                "fr": "Pas de réponse...",
+                "ja": "なかなか返事がないな……",
+                "ko": "왜 아직도 답장이 없는 거지...",
+                "th": "สงสัยจังว่าทำไมยังไม่มีการตอบกลับมานะ...",
+                "zh-Hans": "怎么还不给我回复……",
+                "zh-Hant": "怎麼還不給我回復……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hallo, Fremder. Bist du ein Mitternachtsranger? Könntest du einem alten Mann einen Gefallen tun und nachsehen, warum der General meinen Rückkehrantrag noch nicht genehmigt hat?",
+                "en": "Hello there, stranger. Are you a Midnight Ranger? Could you do this old man a favor and check why General hasn't approved my return application?",
+                "es": "Hola, desconocido. ¿Eres un Guardián de Medianoche? ¿Podrías hacerle un favor a este viejo y averiguar por qué el General no ha aprobado mi solicitud de regreso?",
+                "fr": "Êtes-vous de Gardiens de minuit ? Pouvez-vous m'aider à entrer et à demander pourquoi le général n'a pas encore approuvé ma demande de permission ?",
+                "ja": "そこのお前、夜帰軍か？なあ、俺の帰還申請がどうなってるか聞いてきてくれないか？",
+                "ko": "처음 보는 얼굴이군. 혹시 야귀군인가? 나 대신 들어가 장군님이 왜 아직 내 출입 신청을 승인해주지 않는지 물어봐 줄 수 있나?",
+                "th": "สวัสดี ท่านผู้มาเยือนแปลกหน้า เจ้าเป็นมิดไนต์เรนเจอร์รึเปล่า? จะพอช่วยคนแก่อย่างข้าหน่อยได้ไหม ช่วยไปดูให้ทีว่าทำไมท่านนายพลถึงยังไม่อนุมัติใบขอกลับของข้า?",
+                "zh-Hans": "这位陌生人，你是不是夜归军？你能不能帮我进去问问，为什么将军还没有批复我的归营申请啊？",
+                "zh-Hant": "這位陌生人，你是不是夜歸軍？你能不能幫我進去問問，為什麼將軍還沒有批復我的歸營申請啊？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist das?",
+                    "en": "What's that?",
+                    "es": "¿Qué es eso?",
+                    "fr": "Permission ?",
+                    "ja": "帰還申請？",
+                    "ko": "출입 신청이요?",
+                    "th": "เกิดอะไรขึ้นงั้นเหรอ?",
+                    "zh-Hans": "归营申请？",
+                    "zh-Hant": "歸營申請？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Der General hat versprochen, mich zurückkommen und meine Kameraden besuchen zu lassen.",
+                "en": "General promised to let me come back and visit my comrades.",
+                "es": "El General prometió dejarme regresar y visitar a mis camaradas.",
+                "fr": "Le général m'a promis que quand je rentrerai, je pourrai voir mes camarades.",
+                "ja": "将軍が約束してくれたんだ……俺が帰ったら戦士たちと会わせてやるって。",
+                "ko": "전우들을 보러 와도 된다고 장군께서 내게 약속했거든",
+                "th": "ท่านนายพลเคยสัญญาไว้แล้วว่าจะให้ข้ากลับมาเยี่ยมสหายของข้าได้",
+                "zh-Hans": "我们将军答应过我，让我回来看看战友们。",
+                "zh-Hant": "我們將軍答應過我，讓我回來看看戰友們。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau, ich habe einen Strauß Blumen für Qiu mitgebracht.",
+                "en": "Look, I brought a bunch of flowers for Qiu.",
+                "es": "Mira, traje un montón de flores para Qiu.",
+                "fr": "Regarde, j'ai même apporté un bouquet de fleurs pour Qiu.",
+                "ja": "ほら、わざわざ丘くんのために花束まで持って来たんだ。",
+                "ko": "보게나 특별히 중구를 위해서 꽃까지 가져왔네...",
+                "th": "ดูสิ ข้าซื้อช่อดอกไม้มาฝากชิวด้วยนะ",
+                "zh-Hans": "你看，我专门为阿丘带了一束花……",
+                "zh-Hant": "你看，我專門為阿丘帶了一束花……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe ihnen gesagt, dass der General mir bereits die Erlaubnis gegeben hat, aber sie lassen mich immer noch nicht durch! Warum hören sie nicht zu?",
+                "en": "I've told them General has already given me permission, but they still won't let me through! Why won't they listen?",
+                "es": "Les he dicho que el General ya me ha dado permiso, ¡pero aún no me dejan pasar! ¿Por qué no me escuchan?",
+                "fr": "Pourtant, ces gars-là... Je leur ai dit que le général avait donné son autorisation, mais ils refusent obstinément !",
+                "ja": "なのにアイツらときたら……将軍が許可したって伝えたのに、頑なに通してくれないんだよ！",
+                "ko": "장군님이 허락해 주셨다고 했는데도, 병사들이 자꾸 날 못 가게 막고 있네. 저들은 왜 사람 말을 듣지 않는 건가?",
+                "th": "ข้าบอกพวกเขาไปแล้วว่าท่านนายพลอนุญาตข้าแล้ว แต่พวกเขาก็ยังไม่ยอมให้ข้าผ่านเข้าไป! ทำไมถึงไม่ยอมฟังกันเลยนะ?",
+                "zh-Hans": "我都说了将军已经给我许可了，这群兵居然还是不让我过去！他们怎么都不听人说话呢！",
+                "zh-Hant": "我都說了將軍已經給我許可了，這群兵居然還是不讓我過去！他們怎麼都不聽人說話呢！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{Male=Fremder;Female=Fremde}, könntest du so nett sein und diese Blumen für mich zu ihm bringen?",
+                "en": "Young {Male=man;Female=lady}, could you kindly take these flowers to him for me?",
+                "es": "¿Podrías llevarle estas flores por mí?",
+                "fr": "Pourriez-vous apporter le bouquet de fleurs à ma place ?",
+                "ja": "そうだ！俺の代わりに花束を持っていってくれるか？",
+                "ko": "첫 만남에 미안하지만, 대신 꽃을 그에게 가져다줄 수 있겠나?",
+                "th": "{Male=พ่อหนุ่ม;Female=แม่สาวน้อย} ช่วยนำดอกไม้พวกนี้ไปให้เขาแทนข้าทีได้ไหม?",
+                "zh-Hans": "这位陌生人，你能帮我把花给他带去吗？",
+                "zh-Hant": "這位陌生人，你能幫我把花給他帶去嗎？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn sie mich nicht aufgehalten hätten, würde ich sie persönlich besuchen und ihnen sagen, dass ich sie nicht vergessen habe.",
+                "en": "If it weren't for them stopping me, I'd want to visit them in person and tell them I haven't forgotten about them.",
+                "es": "Si no fuera por ellos deteniéndome, me gustaría visitarlos en persona y decirles que no me he olvidado de ellos.",
+                "fr": "Je voulais vraiment aller rendre visite à leurs tombes… Je voulais dire que je ne les ai pas oubliés…",
+                "ja": "どうしても俺は自分の足で墓参りに行きたかった……俺はヤツらのこと忘れてねえってこの口から伝えたかった……",
+                "ko": "저들이 막지 않았다면 내가 직접 공동묘지에 가서 전우들에게 말했을 거네. 난 아직 그들을 잊지 않았다고... 말이야",
+                "th": "ถ้าไม่ใช่เพราะพวกเขามาขวางไว้ ข้าก็อยากจะไปเยี่ยมพวกเขาด้วยตัวเอง และบอกให้รู้ว่าข้ายังไม่เคยลืมพวกเขาเลย",
+                "zh-Hans": "如果不是他们拦着，我真想自己去公墓看看，亲口告诉他们，我还没有忘记他们呐……",
+                "zh-Hant": "如果不是他們攔著，我真想自己去公墓看看，親口告訴他們，我還沒有忘記他們呐……"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich helfe dir, diese Blumen zu liefern.",
+                    "en": "I'll help you deliver these flowers.",
+                    "es": "Te ayudaré a entregar estas flores.",
+                    "fr": "Je vais t'aider.",
+                    "ja": "手伝うよ。",
+                    "ko": "제가 대신 전해줄게요",
+                    "th": "ฉันจะช่วยท่านนำดอกไม้ไปให้เอง",
+                    "zh-Hans": "我帮你去送吧。",
+                    "zh-Hant": "我幫你去送吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist großartig. Vielen Dank.",
+                "en": "That's great. Thank you so much.",
+                "es": "Eso es genial. Muchas gracias.",
+                "fr": "Je suis soulagé... merci beaucoup.",
+                "ja": "よかった……感謝するぞ若者。",
+                "ko": "정말? 고마우이",
+                "th": "ยอดเยี่ยมเลย ขอบคุณเจ้ามากนะ",
+                "zh-Hans": "太好了，谢谢你啊年轻人。",
+                "zh-Hant": "太好了，謝謝你啊年輕人。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe Blumen niederlegen",
+        "en": "Go to Lay flowers",
+        "es": "Ve a dejar flores.",
+        "fr": "Aller offrir des fleurs",
+        "ja": "献花しに行く",
+        "ko": "헌화하러 이동",
+        "th": "ไปวางดอกไม้",
+        "zh-Hans": "前往献花",
+        "zh-Hant": "前往獻花"
+      },
+      "entities": [
+        {
+          "entityId": 125001050,
+          "mapId": 8,
+          "blueprintType": "Quest036",
+          "name": "花束1",
+          "areaId": 501,
+          "position": {
+            "x": -64823,
+            "y": -55420,
+            "z": 33310
+          },
+          "rotation": {
+            "x": 0,
+            "y": 22,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001051,
+          "mapId": 8,
+          "blueprintType": "Quest054",
+          "name": "空实体1",
+          "areaId": 501,
+          "position": {
+            "x": -64892,
+            "y": -55471,
+            "z": 33355
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_吊唁碑林",
+          "flowIndex": 1,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Du legst die Blumen vor den Grabstein...",
+                "en": "You put the flowers in front of the tombstone…",
+                "es": "Dejas las flores frente a la lápida...",
+                "fr": "Placer le bouquet sur la tombe.",
+                "ja": "お墓に花束を供えた……",
+                "ko": "묘비 앞에 꽃을 놓는다...",
+                "th": "คุณเอาดอกไม้ไปวางไว้หน้าหลุมศพ...",
+                "zh-Hans": "把鲜花放在了墓碑前……",
+                "zh-Hant": "把鮮花放在了墓碑前……"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Berichte Gongming von deiner Arbeit",
+        "en": "Tell Gongming your work",
+        "es": "Cuenta a Gongming tu trabajo",
+        "fr": "Faites votre rapport à Gongming",
+        "ja": "公明に報告する",
+        "ko": "공명 찾아가기",
+        "th": "บอก Gongming ถึงสิ่งที่คุณทำ",
+        "zh-Hans": "回复公明",
+        "zh-Hant": "回覆公明"
+      },
+      "entities": [
+        {
+          "entityId": 125001049,
+          "mapId": 8,
+          "blueprintType": "NPC0126",
+          "name": "公明1",
+          "areaId": 504,
+          "position": {
+            "x": -49089,
+            "y": 21073,
+            "z": 10959
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -37
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_吊唁碑林",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo Fremder, bist du ein Mitternachtsranger? Könntest du einem alten Mann einen Gefallen tun und nachschauen, warum der General meinen Rückkehrantrag noch nicht genehmigt hat?",
+                "en": "Hello there, stranger. Are you a Midnight Ranger? Could you do this old man a favor and check why General hasn't approved my return application?",
+                "es": "Hola, {Male=desconocido;Female=desconocida}. ¿Eres {Male=un;Female=una} Ranger de la Medianoche? ¿Podrías hacerme un favor y averiguar por qué el General aún no ha aprobado mi solicitud de regreso?",
+                "fr": "Êtes-vous de Gardiens de minuit ? Pouvez-vous m'aider à entrer et à demander pourquoi le général n'a pas encore approuvé ma demande de permission ?",
+                "ja": "そこのお前、夜帰軍か？なあ、俺の帰還申請がどうなってるか聞いてきてくれないか？",
+                "ko": "처음 보는 얼굴이군. 혹시 야귀군인가? 나 대신 들어가 장군님이 왜 아직 내 출입 신청을 승인해주지 않는지 물어봐 줄 수 있나?",
+                "th": "สวัสดี ท่านผู้มาเยือนแปลกหน้า เจ้าเป็นมิดไนต์เรนเจอร์รึเปล่า? จะพอช่วยคนแก่อย่างข้าหน่อยได้ไหม ช่วยไปดูให้ทีว่าทำไมท่านนายพลถึงยังไม่อนุมัติใบขอกลับของข้า?",
+                "zh-Hans": "这位陌生人，你是不是夜归军？你能不能帮我进去问问，为什么将军还没有批复我的归营申请啊？",
+                "zh-Hant": "這位陌生人，你是不是夜歸軍？你能不能幫我進去問問，為什麼將軍還沒有批覆我的歸營申請啊？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich habe die Blumen bereits geliefert.",
+                    "en": "I already delivered the flowers.",
+                    "es": "Ya entregué las flores.",
+                    "fr": "J'ai placé le bouquet.",
+                    "ja": "花束なら供えてきた。",
+                    "ko": "꽃은 잘 전달했어요",
+                    "th": "ฉันนำดอกไม้ไปส่งให้แล้วนะ",
+                    "zh-Hans": "我帮你送完花了。",
+                    "zh-Hant": "我幫你送完花了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Was hast du geliefert? Bist du hier, um mir zu sagen, dass die Genehmigung durchgegangen ist?!",
+                "en": "Delivered what? Are you here to tell me the approval has gone through?!",
+                "es": "¿Entregado qué? ¿Estás aquí para decirme que la aprobación ha sido concedida?",
+                "fr": "Quoi ? Êtes-vous venu me dire que la procédure de ma demande est finie ?",
+                "ja": "あ？俺の申請が通ったのか？",
+                "ko": "전달? 결재가 통과되었다는 걸 알려주러 왔나?!",
+                "th": "ส่งอะไรนะ? เจ้าจะมาบอกว่าใบคำร้องของข้าได้รับการอนุมัติแล้วงั้นรึ?!",
+                "zh-Hans": "送什么？你是来告诉我审批通过了吗？！",
+                "zh-Hant": "送什麼？你是來告訴我審批通過了嗎？！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wann bist du zurückgekommen? Wie läuft alles?",
+                "en": "When did you come back? How's everything going?",
+                "es": "¿Cuándo volviste? ¿Cómo va todo?",
+                "fr": "Oh, quand êtes-vous {Male=revenu;Female=revenue} ? Comment ça s'est passé, tout s'est bien passé ?",
+                "ja": "って、さっきの若者じゃねえか？いつの間に帰って来た？どうだ？花は？",
+                "ko": "어? 언제 돌아온 겐가? 어찌, 잘 되고 있나?",
+                "th": "เจ้ากลับมาตั้งแต่เมื่อใดกัน? ทุกอย่างเรียบร้อยดีไหม?",
+                "zh-Hans": "哎呀年轻人你什么时候回来的？怎么样，一切顺利吗？",
+                "zh-Hant": "哎呀年輕人你什麼時候回來的？怎麼樣，一切順利嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Alles ist gut gelaufen.",
+                    "en": "Everything went well.",
+                    "es": "Todo ha ido bien.",
+                    "fr": "Tout va bien.",
+                    "ja": "供えてきた。",
+                    "ko": "모든 게 순조로워요",
+                    "th": "ทุกอย่างเรียบร้อยดี",
+                    "zh-Hans": "一切顺利。",
+                    "zh-Hant": "一切順利。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das ist wunderbar. Ich hoffe, Qiu kann spüren, wie sehr ich ihn vermisse.",
+                "en": "That's wonderful. I hope Qiu can sense how much I miss him.",
+                "es": "Eso es maravilloso. Espero que Qiu pueda sentir cuánto lo extraño.",
+                "fr": "C'est super, j'espère que Qiu pourra ressentir mes pensées...",
+                "ja": "よかった、丘くんに俺の思いが届くといいな……",
+                "ko": "잘 됐군, 중구가 내가 그리워하는 마음을 느꼈으면 좋겠군...",
+                "th": "เยี่ยมเลย ข้าหวังว่าชิวจะรับรู้ได้นะว่าข้าคิดถึงเขามากแค่ไหน",
+                "zh-Hans": "太好了，希望阿丘他能感受到我的思念……",
+                "zh-Hant": "太好了，希望阿丘他能感受到我的思念……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1125,
+                "name": {
+                  "zh-Hans": "公明"
+                },
+                "entity": {
+                  "entityId": 125001049,
+                  "mapId": 8,
+                  "blueprintType": "NPC0126",
+                  "name": "公明1",
+                  "areaId": 504,
+                  "position": {
+                    "x": -49089,
+                    "y": 21073,
+                    "z": 10959
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -37
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,899 @@
+{
+  "id": 135000008,
+  "key": "荒石灯塔",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Repariere den Leuchtturm im Hochland von Desorock",
+    "en": "Repair the lighthouse in Desorock Highland",
+    "es": "Repara el faro en las Tierras altas de Desoroca.",
+    "fr": "Réparer le phare des Hauts des roches",
+    "ja": "石崩れの高地の灯台を修復",
+    "ko": "잡석 고지에 위치한 등대 복구하기",
+    "th": "ซ่อมแซมประภาคารในที่ราบสูงเดโซร็อก",
+    "zh-Hans": "修复荒石高地灯塔",
+    "zh-Hant": "修復荒石高地燈塔"
+  },
+  "desc": {
+    "de": "Der Ingenieur wird auf dem Weg zum Leuchtturm von Tacet-Dissonanzen blockiert. Begleite sie zum Leuchtturm!",
+    "en": "Tacet Discords threaten the engineer on her way to the lighthouse. Provide her with escort.",
+    "es": "El ingeniero está bloqueado por las Disonancias Tácitas en el camino al faro. ¡Acompáñala al faro!",
+    "fr": "Le chemin de l'ingénieur vers le phare a été bloqué par le Tacet Discord, protégez-la en chemin vers le phare !",
+    "ja": "灯台に向かう途中、エンジニアは残像と遭遇した。彼女を守り、灯台へ向かおう！",
+    "ko": "엔지니어가 등대로 가는 길이 잔상에 의해 막혀 있습니다. 그녀를 등대로 호송하세요!",
+    "th": "ทาเซ็ตดิสคอร์ดกำลังคุกคามวิศวกรระหว่างทางไปประภาคาร จงรีบไปคุ้มกันเธอ",
+    "zh-Hans": "工程师前往灯塔的路上被残象挡住了，保护她前往灯塔吧！",
+    "zh-Hant": "工程師前往燈塔的路上被殘象擋住了，保護她前往燈塔吧！"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit der Jungingenieurin",
+        "en": "Talk to the Junior Engineer",
+        "es": "Habla con la ingeniera novata.",
+        "fr": "Parler à l'ingénieure débutante",
+        "ja": "新米エンジニアと会話",
+        "ko": "초보 엔지니어와 대화",
+        "th": "คุยกับวิศวกรฝึกหัด",
+        "zh-Hans": "与新手工程师对话",
+        "zh-Hant": "與新手工程師對話"
+      },
+      "entities": [
+        {
+          "entityId": 135002057,
+          "mapId": 8,
+          "blueprintType": "NPC245",
+          "name": "TsEntity_170_005_矿工女_3",
+          "areaId": 501,
+          "position": {
+            "x": -46830,
+            "y": -58545,
+            "z": 38665
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002578,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录28",
+          "areaId": 5,
+          "position": {
+            "x": -34496,
+            "y": -56805,
+            "z": 43359
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 3,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Was hat so lange gedauert...? Hast du wieder herumgetrödelt?",
+                "en": "What took you so long...? Did you go slacking off again?",
+                "es": "¿Qué te ha llevado tanto tiempo...? ¿Has vuelto a hacer el vago?",
+                "fr": "Combien de temps comptes-tu passer à récupérer des pièces ! Tu te traînes, n'est-ce pas ?",
+                "ja": "パーツ取りにどんだけ時間食う気か！さてはサボりか？あぁん？",
+                "ko": "어떻게 부품을 가지고 오는 데 한나절이나 걸리니... 설마 게으름 피운 거야?",
+                "th": "ทำไมหายไปนานขนาดนี้... ไปอู้ที่ไหนมาอีกหรือเปล่าเนี่ย",
+                "zh-Hans": "怎么拿个零件都要老半天……偷懒去了吧？",
+                "zh-Hant": "怎麼拿個零件都要老半天……偷懶去了吧？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1292,
+                "name": {
+                  "zh-Hans": "老练的工程师"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Chie! Ich kann es erklären! Es waren diese TDs. Ich... Ich wollte so schnell wie möglich zurückkommen. Du kannst Rover fragen, was passiert ist.",
+                "en": "Chief! I can explain! It was those TDs. I-I wanted to get back as fast I could. You can ask Rover what happened.",
+                "es": "¡Jefe! ¡Puedo explicarlo! Fueron esas DT. Yo-Yo quería volver lo más rápido que pudiera. Puedes preguntarle a Errante lo que pasó.",
+                "fr": "Écoutez, maître ! Il y a plein d'images rémanentes sur la route... Je suis aussi en difficulté ! Nomade peut le prouver !",
+                "ja": "聞いてくださいよ師匠！残像がいっぱいいて……僕だって大変だったんです！ほらあなたも何とか言ってよ！",
+                "ko": "스승님, 제 말 좀 들어보세요. 길에 위험한 잔상이 너무 많아서 저로서는 어쩔 수 없었어요. 방랑자가 증언해 줄 거예요",
+                "th": "หัวหน้า! ฉันอธิบายได้นะคะ! มันเป็นเพราะทาเซ็ตดิสคอร์ด ฉะ ฉันก็อยากกลับมาให้เร็วที่สุดเหมือนกัน ลองถามผู้พเนจรดูก็ได้ค่ะ",
+                "zh-Hans": "师傅你听我解释啊！路上有那么多危险的残象，我也不想的，漂泊者也可以作证。",
+                "zh-Hant": "師傅你聽我解釋啊！路上有那麼多危險的殘象，我也不想的，漂泊者也可以作證。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1293,
+                "name": {
+                  "zh-Hans": "新手工程师"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sie hat recht.",
+                    "en": "She's right.",
+                    "es": "Ella tiene razón.",
+                    "fr": "C'est vrai.",
+                    "ja": "そうだね。",
+                    "ko": "네, 맞아요",
+                    "th": "ตามที่เธอว่าเลย",
+                    "zh-Hans": "是的。",
+                    "zh-Hant": "是的。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Na gut. Ich lasse es dieses Mal durchgehen... Nun, da du noch Arme und Beine hast, komm her und hilf mir mit diesem Ding, ja?",
+                "en": "All right. I'll let it slide this time... Well, since you still got your arms and legs, get over here and give me a hand with this thing, will ya?",
+                "es": "Está bien. Lo dejaré pasar esta vez... Bueno, ya que todavía tienes tus brazos y piernas, ven aquí y ayúdame con esto, ¿quieres?",
+                "fr": "Je te laisserai passer cette fois. Aide-moi vite !",
+                "ja": "はぁ……今回は見逃してやる。五体満足なら、さっさと手伝え！",
+                "ko": "사람이 더 중요하니 이번만 용서해 주마. 문제없으면 멍 때리지 말고 와서 돕거라",
+                "th": "เอาเถอะ คราวนี้ไม่เอาเรื่องก็ได้... ในเมื่อแขนขายังอยู่ครบ ก็เข้ามาช่วยฉันจัดการกับเจ้านี่หน่อยได้ไหม",
+                "zh-Hans": "这次就饶了你吧，人没事的话就别愣着了，赶紧过来帮忙。",
+                "zh-Hant": "這次就饒了你吧，人沒事的話就別愣著了，趕緊過來幫忙。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1292,
+                "name": {
+                  "zh-Hans": "老练的工程师"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Ingenieure haben den Leuchtturm im Handumdrehen repariert.",
+                "en": "The engineers fixed up the the lighthouse in no time.",
+                "es": "Los ingenieros arreglaron el faro en un abrir y cerrar de ojos.",
+                "fr": "Les ingénieurs ont rapidement réparé le phare.",
+                "ja": "エンジニアたちはすぐに灯台を修理した。",
+                "ko": "엔지니어들이 곧 등대를 수리하였다",
+                "th": "เหล่าวิศวกรทำการซ่อมประภาคารในชั่วพริบตา",
+                "zh-Hans": "工程师们很快便将灯塔维修完毕。",
+                "zh-Hant": "工程師們很快便將燈塔維修完畢。"
+              },
+              "id": 4
+            },
+            {
+              "text": {
+                "de": "Da. Ich weiß nicht, wie viele Jahre dieses alte Gebäude noch in sich hat, aber die Leute, die es gebaut haben, haben gute, zuverlässige Arbeit geleistet. Die meisten Geräte im Inneren sind noch in Betrieb.",
+                "en": "There. Don't know how many years this old hunk of building's got in it, but the people who built it did a good reliable job. Most of the equipments inside are still in running condition.",
+                "es": "Ahí. No sé cuántos años le quedan a este viejo edificio, pero las personas que lo construyeron hicieron un trabajo confiable. La mayoría de los equipos en su interior aún están en funcionamiento.",
+                "fr": "Hmm. Il semble que l'équipement fonctionne. Il est assez robuste pour un vieil appareil.",
+                "ja": "ふむ。中の設備はまだ生きてる……おんぼろにしては中々頑丈だな。",
+                "ko": "몇 년 전인지 알 수 없는 오래된 골동품이지만, 의외로 믿을 만하고, 기본적으로 내용물은 아직 쓸만하네요",
+                "th": "เรียบร้อย ไม่รู้หรอกนะว่าประภาคารเก่าๆ นี่มันอายุกี่ปีกันแน่ แต่คนที่สร้างมันขึ้นมาถือว่าฝีมือยอดเยี่ยมทีเดียว อุปกรณ์ด้านในส่วนใหญ่ก็ยังอยู่ในสภาพใช้งานได้",
+                "zh-Hans": "嗯，虽然是不知道多少年前的老古董，但意外地可靠，基本上里面的东西还能用。",
+                "zh-Hant": "嗯，雖然是不知道多少年前的老古董，但意外地可靠，基本上裡面的東西還能用。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1292,
+                "name": {
+                  "zh-Hans": "老练的工程师"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt kannst du dort hochgehen und sehen, was du finden kannst, Rover. Du solltest in der Lage sein, die Konsole in Betrieb zu nehmen.",
+                "en": "Now, you can get up there and see what you can find, Rover. You should be able to get the console going.",
+                "es": "Ahora, puedes subir allí y ver qué puedes encontrar, Errante. Deberías ser capaz de poner en marcha la consola.",
+                "fr": "Tu peux monter maintenant. Toutes les fonctions devraient être en marche.",
+                "ja": "もう上に登っていいぜ。今は問題ないはずだ。",
+                "ko": "방랑자도 이제 한 번 올라가 보세요. 이대로라면 위의 단말기가 작동할 거예요",
+                "th": "ผู้พเนจร ตอนนี้คุณสามารถขึ้นไปดูได้แล้วว่ามีอะไรข้างบนบ้าง คุณน่าจะสามารถใช้แผงควบคุมได้แล้วนะ",
+                "zh-Hans": "现在漂泊者你可以上去看看了，按道理上面的终端应该能启动起来。",
+                "zh-Hant": "現在漂泊者你可以上去看看了，按道理上面的終端應該能啟動起來。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1292,
+                "name": {
+                  "zh-Hans": "老练的工程师"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Hacke in das Leuchtturm-Terminalsystem",
+        "en": "Hack into the lighthouse terminal system",
+        "es": "Hackear el sistema de la terminal del faro",
+        "fr": "Pirater le système terminal du phare",
+        "ja": "灯台システムにハッキング",
+        "ko": "등대 단말 시스템 연결하기",
+        "th": "แฮ็กเข้าระบบเทอร์มินัลของประภาคาร",
+        "zh-Hans": "骇入灯塔终端系统",
+        "zh-Hant": "駭入燈塔終端系統"
+      },
+      "entities": [
+        {
+          "entityId": 135002070,
+          "mapId": 8,
+          "blueprintType": "Gameplay064",
+          "name": "TsEntity_玩法_控物_信号器终端3",
+          "areaId": 5,
+          "position": {
+            "x": -34022,
+            "y": -56803,
+            "z": 43740
+          },
+          "rotation": {
+            "x": -28,
+            "y": -16,
+            "z": 66
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002071,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点5",
+          "areaId": 501,
+          "position": {
+            "x": -33352,
+            "y": -59455,
+            "z": 43976
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 3,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Überprüfung der Schiffregistrierung>>>>> Extrahieren des neuesten Logbucheintrags - Abgeschlossen",
+                "en": "Verifying Ship Registration>>>>> Extracting latest log entry—Complete",
+                "es": "Verificando Registro de Nave>>>>> Extrayendo la última entrada de registro — Completo",
+                "fr": "Informations d'enregistrement du navire, en cours de lecture>>>>>Comparaison des fichiers audio en cours - Comparaison terminée",
+                "ja": "船舶登録情報、読み込み中>>>>>録音ファイル照合中——照合完了",
+                "ko": "선박 정보 읽는 중>>>최근 기록정보 호출--완료",
+                "th": "กำลังตรวจสอบทะเบียนเรือ>>>>> กำลังดึงบันทึกล่าสุด—เสร็จสิ้น",
+                "zh-Hans": "登录船舶信息读取中>>>>>调用最近期记录信息——已完成",
+                "zh-Hant": "登錄船舶信息讀取中>>>>>調用最近期記錄信息——已完成"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1295,
+                "name": {
+                  "zh-Hans": "灯塔终端"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schiffsregistrierung [NUS8910]>>>>> Start der Sprachaufnahme",
+                "en": "Ship Registration [NUS8910]>>>>> Initiating voice recording",
+                "es": "Registro de Nave [NUS8910]>>>>> Iniciando grabación de voz",
+                "fr": "Numéro d'enregistrement du navire « NUS8910 »>>>>>Début de la lecture de l'enregistrement",
+                "ja": "船舶登録ナンバー「NUS8910」>>>>>録音再生開始",
+                "ko": "선박등록번호 [NUS8910]>>>>녹음기록이 곧 방송됩니다",
+                "th": "ทะเบียนเรือ [NUS8910]>>>>> เริ่มการบันทึกเสียง",
+                "zh-Hans": "船舶登录编号[NUS8910]>>>>>即将播放录音记录",
+                "zh-Hant": "船舶登錄編號[NUS8910]>>>>>即將播放錄音記錄"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1295,
+                "name": {
+                  "zh-Hans": "灯塔终端"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier spricht der stellvertretende Kapitän Moak der Stachelrochen... Heute ist unser dreiundvierzigster Tag seit unserer Abfahrt vom Hafen.",
+                "en": "This is Acting Captain Moak of the Stingray... Today is our forty-third day since our departure from the harbor.",
+                "es": "Este es el Capitán en funciones Moak de la Mantarraya... Hoy es nuestro cuadragésimo tercer día desde nuestra salida del puerto.",
+                "fr": "Ici le capitaine par intérim du « Manta », Mock... 43 jours se sont écoulés depuis le dernier port.",
+                "ja": "こちら「マンタ」号代理キャプテン、モック……前の港からもう、43日過ぎた。",
+                "ko": "여기는 데블 피쉬호 선장 대행인 모크입니다... 저희가 항구를 떠난 지 43일이 지났습니다",
+                "th": "นี่คือรักษาการกัปตันโมคแห่งเรือกระเบน... วันนี้เป็นวันที่สี่สิบสามหลังจากเดินทางออกจากท่าเรือ",
+                "zh-Hans": "这里是魔鬼鱼号代理船长莫克……现在距离我们离开港口已经过去了43天了。",
+                "zh-Hant": "這裡是魔鬼魚號代理船長莫克……現在距離我們離開港口已經過去了43天了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Xie Qi meldete die erste Sichtung des Leuchtturmlichts vom Hochland aus. Wir folgten ihm und kamen auf diesen Koordinaten zur Landungsvorbereitung an...",
+                "en": "Xie Qi reported the ship's first sighting of a lighthouse's light beam from up on the highlands. We followed it and arrived at these coordinates in preparation for landing...",
+                "es": "Xie Qi informó el primer avistamiento del faro desde las tierras altas. Lo seguimos y llegamos a estas coordenadas en preparación para el aterrizaje...",
+                "fr": "Xie Qi a été le premier à voir la lumière du phare. Nous avons débarqué l'un après l'autre...",
+                "ja": "謝琦は灯台の光を見つけた一人目だ。俺たちも次々と上陸したが……",
+                "ko": "고지에 있는 등대의 불빛을 처음 발견한 사람은 사옥입니다. 그 후 우리는 불빛을 향해 와서 이곳에 상륙하려고 합니다...",
+                "th": "เซี่ยฉีรายงานว่าเรือของพวกเราพบลำแสงจากประภาคารบนที่สูงเป็นครั้งแรก เราจึงตามลำแสงนั่นไปและมาหยุดที่พิกัดนี้เพื่อเตรียมตัวเทียบท่า...",
+                "zh-Hans": "谢琦是第一个发现高地上灯塔亮光的人，在之后我们顺着灯光前来，准备在此处登陆……",
+                "zh-Hant": "謝琦是第一個發現高地上燈塔亮光的人，在之後我們順著燈光前來，準備在此處登陸……"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zu unserer Überraschung fanden wir nicht eine einzige Person an den Ufern, nur den Leuchtturm, der sein einsames Licht ausstrahlt... Nicht gerade ein sehr beruhigender Anblick, um es gelinde auszudrücken.",
+                "en": "To our surprise, not a single person was found on the shores, only the lighthouse projecting its lonely light... Not a very assuring sight to say the least.",
+                "es": "Para nuestra sorpresa, no encontramos a ninguna persona en las costas, solo el faro proyectando su solitaria luz... No es un panorama muy alentador, para ser honestos.",
+                "fr": "Il n'y a personne ici. Mais la lumière du phare est toujours allumée... C'est étrangement inquiétant.",
+                "ja": "ここには誰もいない。しかし、灯台の光は放たれたまま……やけに不気味だ。",
+                "ko": "하지만 기슭에는 아무도 없었고, 등대의 빛만 덩그러니 켜져 있어... 걱정이 많이 됩니다",
+                "th": "แต่ก็แปลกมากที่เราไม่เจอใครบนฝั่งเลย มีเพียงประภาคารที่ส่องแสงอันดูโดดเดี่ยวออกมามาเท่านั้น... พูดตามตรง ภาพแบบนี้มันดูไม่น่าไว้ใจเท่าไหร่",
+                "zh-Hans": "但岸上一个人也没有，只有灯塔的光在孤零零地亮着……真是有够让人不安的。",
+                "zh-Hant": "但岸上一個人也沒有，只有燈塔的光在孤零零地亮著……真是有夠讓人不安的。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Xie Qi bestand darauf zu bleiben... Als Ingenieur wollte er zurückbleiben und die Kommunikationsausrüstung des Leuchtturms modifizieren.",
+                "en": "Xie Qi insisted on staying... As an engineer, he wanted to stay behind and modify the communications equipment of the lighthouse.",
+                "es": "Xie Qi insistió en quedarse... Como ingeniero, quería quedarse y modificar el equipo de comunicación del faro.",
+                "fr": "Xie Qi a dit qu'il voulait rester ici. En tant qu'ingénieur, il semble intéressé par l'équipement de communication ici.",
+                "ja": "謝琦はここに残りたいと伝えた。エンジニアとして、ここの通信装置に興味を持ったらしい。",
+                "ko": "근데 사옥은 남겠다고... 그는 자신이 엔지니어라며, 이곳에 남아 등대의 통신 장치를 개조하고 싶다고 말합니다",
+                "th": "เซี่ยฉียืนกรานที่จะอยู่ต่อ... ในฐานะวิศวกร เขาอยากอยู่ปรับปรุงอุปกรณ์สื่อสารของประภาคารต่อ",
+                "zh-Hans": "不过谢琦说要留下来……他说自己是一个工程师，想留在这里改装灯塔的通讯装置。",
+                "zh-Hant": "不過謝琦說要留下來……他說自己是一個工程師，想留在這裡改裝燈塔的通訊裝置。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "In seinen Worten, mit den notwendigen Modifikationen sollte die Kommunikation mit anderen Überlebenden möglich sein. Er wird uns informieren, wenn die Zeit gekommen ist... Wir hoffen, dass seine Bemühungen nicht umsonst sein werden.",
+                "en": "In his words, with necessary modifications in place should make communication with other survivors possible. He'll inform us when the time comes... We hope his efforts will not go in vain.",
+                "es": "En sus palabras, con las modificaciones necesarias en su lugar, debería ser posible la comunicación con otros supervivientes. Nos informará cuando llegue el momento... Esperamos que sus esfuerzos no sean en vano.",
+                "fr": "Il a dit qu'il le modifierait pour attirer les survivants à proximité, puis nous contacterait à nouveau... J'espère qu'il pourra le faire.",
+                "ja": "それを改造して付近の生存者を呼び寄せたら、改めて俺たちに連絡を寄越すと……できるといいな。",
+                "ko": "그의 말대로라면 개조 후 다른 생존자와 연락이 될 것 같다고 합니다. 그때 저희에게 알려준다는데... 그가 성공하기를 기원합니다",
+                "th": "เขาบอกว่าถ้าปรับแก้ถูกจุดก็น่าจะติดต่อผู้รอดชีวิตคนอื่นได้ ถ้าเสร็จเมื่อไหร่เขาจะแจ้งมา... หวังว่าความพยายามของเขาจะไม่สูญเปล่านะ",
+                "zh-Hans": "按他说的，改装好之后应该可以联系到其他幸存者，到时候会通知我们的……但愿他能成功。",
+                "zh-Hant": "按他說的，改裝好之後應該可以聯繫到其他倖存者，到時候會通知我們的……但願他能成功。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da Xie Qi der Hellste von uns allen ist, hätte er es nicht vorgeschlagen, wenn er nicht wüsste, was er tut. Wir respektierten seine Entscheidung und gaben ihm einige der Vorräte, bevor wir erneut in See stachen.",
+                "en": "Since Xie Qi's the brightest out of any of us, he wouldn't have suggested it if he didn't know what he was doing. We respected his decision and provided him some of the supplies before setting sail again.",
+                "es": "Dado que Xie Qi es el más brillante de todos nosotros, no lo habría sugerido si no supiera lo que estaba haciendo. Respetamos su decisión y le proporcionamos algunos de los suministros antes de zarpar de nuevo.",
+                "fr": "Il est plus intelligent que nous, il devrait pouvoir s'en sortir. Nous laissons des fournitures pour une personne, puis nous levons l'ancre.",
+                "ja": "俺たちよりも賢いあいつなら、何とかなるだろう。彼に一人分の物資を残し、これから抜錨する。",
+                "ko": "그는 저희보다 더 똑똑합니다. 분명 자신이 있기 때문에 남는다고 말하는 걸 겁니다. 그래서 저희는 약간의 물자를 그에게 남기고 다시 출항하였습니다",
+                "th": "ในเมื่อเซี่ยฉีคือคนที่หัวดีที่สุดในกลุ่ม ถ้าเขาทำไม่ได้ก็คงไม่พูดออกมาหรอก เราเลยยอมรับการตัดสินใจนั้น และแบ่งเสบียงบางส่วนให้ ก่อนจะแล่นเรือต่อไป",
+                "zh-Hans": "他比我们都要聪明，肯定是有所把握才会这么做的，于是我们也听他的留下了一些物资给他后就再次起航了。",
+                "zh-Hant": "他比我們都要聰明，肯定是有所把握才會這麼做的，於是我們也聽他的留下了一些物資給他後就再次起航了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1291,
+                "name": {
+                  "zh-Hans": "\"NUS8910\""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 3,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "(Ein Satz von <color=Highlight>Koordinaten</color> erschien auf dem Bildschirm nach der Aufnahme.)",
+                "en": "(A set of <color=Highlight>coordinates</color> appeared on-screen after the recording.)",
+                "es": "(Un conjunto de <color=Highlight>coordenadas</color> apareció en la pantalla después de la grabación.)",
+                "fr": "(Des <color=Highlight>coordonnées</color> ont été fournies à la fin de l'enregistrement.)",
+                "ja": "（録音の最後に<color=Highlight>座標</color>が残されていた）",
+                "ko": "(기록된 정보의 마지막에서 <color=Highlight>좌표</color>가 발견되었다)",
+                "th": "(มีชุด<color=Highlight>พิกัด</color>ปรากฏขึ้นบนหน้าจอหลังจากบันทึกเสียงจบลง)",
+                "zh-Hans": "（在记录信息的最后发现了一个<color=Highlight>坐标</color>。）",
+                "zh-Hant": "（在記錄信息的最後發現了一個<color=Highlight>座標</color>。）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Ich sollte diese Koordinaten überprüfen und sehen, was ich finden kann.)",
+                "en": "(I should check out these coordinates I see what I can find.)",
+                "es": "(Debería revisar estas coordenadas y ver qué puedo encontrar.)",
+                "fr": "(Il se peut que nous trouvions quelque chose si nous y allons.)",
+                "ja": "（そこに行けば何か見つかるかも）",
+                "ko": "(가서 확인해 보면 무언가 발견할 수 있을 것 같다)",
+                "th": "(ฉันควรไปตรวจสอบพิกัดนี้ดูว่าจะเจออะไรบ้าง)",
+                "zh-Hans": "（去查看一下，可能会有什么发现。）",
+                "zh-Hant": "（去查看一下，可能會有什麼發現。）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche nach Schätzen",
+        "en": "Search for treasures",
+        "es": "Busca tesoros",
+        "fr": "Cherchez le trésor",
+        "ja": "宝を探す",
+        "ko": "보물찾기",
+        "th": "ค้นหาสมบัติ",
+        "zh-Hans": "寻找宝藏",
+        "zh-Hant": "尋找寶藏"
+      },
+      "entities": [
+        {
+          "entityId": 135002071,
+          "mapId": 8,
+          "blueprintType": "Quest060",
+          "name": "TsEntity_任务通用采集光点5",
+          "areaId": 501,
+          "position": {
+            "x": -33352,
+            "y": -59455,
+            "z": 43976
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002072,
+          "mapId": 8,
+          "blueprintType": "Treasure006",
+          "name": "TsEntity_标准物资箱_玩法刷新5",
+          "areaId": 501,
+          "position": {
+            "x": -33173,
+            "y": -59475,
+            "z": 44000
+          },
+          "rotation": {
+            "x": 16,
+            "y": 0,
+            "z": 83
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 1,
+      "type": "Sequence",
+      "entities": [
+        {
+          "entityId": 135002057,
+          "mapId": 8,
+          "blueprintType": "NPC245",
+          "name": "TsEntity_170_005_矿工女_3",
+          "areaId": 501,
+          "position": {
+            "x": -46830,
+            "y": -58545,
+            "z": 38665
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002057,
+          "mapId": 8,
+          "blueprintType": "NPC245",
+          "name": "TsEntity_170_005_矿工女_3",
+          "areaId": 501,
+          "position": {
+            "x": -46830,
+            "y": -58545,
+            "z": 38665
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002059,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器16",
+          "areaId": 501,
+          "position": {
+            "x": -41848,
+            "y": -55275,
+            "z": 40752
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 3,
+          "stateId": 6,
+          "talks": [
+            {
+              "text": {
+                "de": "Wenn ich darüber nachdenke. TDs sind so unberechenbar. Es gibt keine Möglichkeit zu wissen, wo und wann sie auftauchen werden.",
+                "en": "Come to think of it. TDs are so unpredictable. There's no way of knowing where and when they're going to pop out.",
+                "es": "Ahora que lo pienso. Las DT son tan impredecibles. No hay forma de saber dónde y cuándo van a aparecer.",
+                "fr": "Je me demande d'où viennent ces TDs... ils me surprennent à chaque fois...",
+                "ja": "残像って一体どこから出てくるんだろう……毎度毎度びっくりする……",
+                "ko": "잔상에 대해 말하자면, 정말 막을래야 막을 수가 없는 어디서 나타날지도 모르는 존재예요",
+                "th": "พอมาลองคิดดูแล้ว พวกทาเซ็ตดิสคอร์ดมันคาดการณ์ไม่ได้เลยแฮะ ไม่มีทางรู้เลยว่ามันจะโผล่มาจากไหนหรือเมื่อไหร่",
+                "zh-Hans": "说起来，残象这东西真是防不胜防，都不知道会在哪里冒出来的。",
+                "zh-Hant": "說起來，殘象這東西真是防不勝防，都不知道會在哪裡冒出來的。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1293,
+                "name": {
+                  "zh-Hans": "新手工程师"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann mir gar nicht vorstellen, wie die Leute sie in den alten Tagen in den Griff bekommen haben.",
+                "en": "I can't even imagine how people managed to deal with them back in the old days.",
+                "es": "No puedo ni imaginar cómo la gente logró lidiar con ellos en los viejos tiempos.",
+                "fr": "Je me demande comment les humains de l'ancien temps ont fait face à de telles choses...",
+                "ja": "昔の人はあんなものと、どうやって戦ったのかな……",
+                "ko": "아주 오래전 그들이 처음 나타났을 때, 당시 인류는 어떻게 그들에게 대항했을까요?",
+                "th": "นึกภาพไม่ออกเลยว่าคนเมื่อก่อหาทางสู้กับพวกมันได้ยังไง",
+                "zh-Hans": "真不知道它们在很久很久之前最开始出现的时候，当时的人类是怎么对抗它们的。",
+                "zh-Hant": "真不知道它們在很久很久之前最開始出現的時候，當時的人類是怎麼對抗它們的。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1293,
+                "name": {
+                  "zh-Hans": "新手工程师"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002057,
+          "mapId": 8,
+          "blueprintType": "NPC245",
+          "name": "TsEntity_170_005_矿工女_3",
+          "areaId": 501,
+          "position": {
+            "x": -46830,
+            "y": -58545,
+            "z": 38665
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 135002066,
+          "mapId": 8,
+          "blueprintType": "Gameplay101",
+          "name": "TsEntity_特殊_刷怪器17",
+          "areaId": 5,
+          "position": {
+            "x": -35018,
+            "y": -57368,
+            "z": 43412
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002057,
+          "mapId": 8,
+          "blueprintType": "NPC245",
+          "name": "TsEntity_170_005_矿工女_3",
+          "areaId": 501,
+          "position": {
+            "x": -46830,
+            "y": -58545,
+            "z": 38665
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 21,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 135002057,
+          "mapId": 8,
+          "blueprintType": "NPC245",
+          "name": "TsEntity_170_005_矿工女_3",
+          "areaId": 501,
+          "position": {
+            "x": -46830,
+            "y": -58545,
+            "z": 38665
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 40
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_灯塔迷航",
+          "flowIndex": 3,
+          "stateId": 7,
+          "talks": [
+            {
+              "text": {
+                "de": "*seufz* Ich glaube, ich habe mich selbst verflucht. Da sind sie wieder, tauchen aus dem Nichts auf... Ich habe mich fast zu Tode erschreckt.",
+                "en": "*sigh* I think I might of jinxed myself. There they go again, appearing out of thin air... Almost scared myself to death.",
+                "es": "*suspiro* Creo que podría haberme gafado a mí mismo. Ahí van de nuevo, apareciendo de la nada... Casi me asusto hasta la muerte.",
+                "fr": "Ces TDs sortent juste après avoir parlé... J'étais surpris.",
+                "ja": "言ったそばから出てきた……びっくりしたよ……",
+                "ko": "에휴, 말을 마치자마자 잔상들이 튀어나와서... 깜짝 놀랐어요",
+                "th": "*เฮ้อ* ดันพูดเป็นลางร้ายใส่ตัวเองเสียอย่างนั้น โผล่มาจากไหนกันไม่รู้อีกแล้ว... เกือบตกใจตายแล้วฉัน",
+                "zh-Hans": "唉，刚才话才刚说完，那些残象就冒出来了……真是吓死人了。",
+                "zh-Hant": "唉，剛才話才剛說完，那些殘象就冒出來了……真是嚇死人了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1293,
+                "name": {
+                  "zh-Hans": "新手工程师"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich weiß nicht, wie du so ruhig bleiben kannst, während du gegen diese TDs kämpfst. Muss wohl ein Vorteil sein, ein Resonator zu sein.",
+                "en": "I don't know how you're keeping a straight face while you fight TDs like that. Must be a perk of being a Resonator.",
+                "es": "No sé cómo mantienes la cara seria mientras luchas contra las DT de esa manera. Debe ser una ventaja de ser un Resonador.",
+                "fr": "Il est étonnant que tu puisses vaincre si calmement. {Male=Les résonateurs sont vraiment forts;Female=Les résonatrices sont vraiment fortes}.",
+                "ja": "というか、そんな軽々と倒せるなんてすごいね。共鳴者はやっぱり強い。",
+                "ko": "방랑자는 평온한 얼굴로 잔상들을 모두 처리하셨네요. 역시 공명자... 정말 존경스러워요",
+                "th": "ไม่เข้าใจเลยว่าทำไมคุณถึงสู้กับพวกทาเซ็ตดิสคอร์ดได้หน้าตาเฉย คงเพราะเป็นเรโซเนเตอร์ละมั้ง",
+                "zh-Hans": "真是佩服你能够这么一脸平常地消灭那些残象，果然共鸣者就是厉害。",
+                "zh-Hant": "真是佩服你能夠這麼一臉平常地消滅那些殘象，果然共鳴者就是厲害。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1293,
+                "name": {
+                  "zh-Hans": "新手工程师"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wäre es eine normale Person... Alles, was sie tun können, ist, um ihr Leben zu rennen. Genau wie ich. *seufz*",
+                "en": "If it were a normal person... All they can do is run for their lives. Just like me. *sigh*",
+                "es": "Si fuera una persona normal... Todo lo que pueden hacer es correr por sus vidas. Al igual que yo. *suspiro*",
+                "fr": "Pour une personne comme moi... Je suppose que je n'ai d'autre choix que de fuir. Ha...",
+                "ja": "僕みたい一般人は……逃げるしかないかな……はぁ……",
+                "ko": "보통 사람이라면... 잔상 앞에서 도망갈 수밖에 없을 텐데... 저처럼요.",
+                "th": "ถ้าเป็นคนปกติทั่วไป... ก็ได้แต่วิ่งหนีเอาชีวิตรอดแบบฉันนี่แหละ *เฮ้อ*",
+                "zh-Hans": "如果是普通人的话……面对残象恐怕也只能尽量逃跑了，像我一样，唉。",
+                "zh-Hant": "如果是普通人的話……面對殘象恐怕也只能儘量逃跑了，像我一樣，唉。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1293,
+                "name": {
+                  "zh-Hans": "新手工程师"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

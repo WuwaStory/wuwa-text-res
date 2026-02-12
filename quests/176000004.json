@@ -1,0 +1,1617 @@
+{
+  "id": 176000004,
+  "key": "基建任务_一阶段",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Auf geht's! Straßenkonstruktor!",
+    "en": "Fire It Up! Route Constructor!",
+    "es": "¡Ánimo! ¡Constructor de caminos!",
+    "fr": "Allumez le Constructeur !",
+    "ja": "起動せよ！浮遊式ロードビルダー！",
+    "ko": "작동하라! 공중 건설 기계!",
+    "th": "ทำงานเถอะ เครื่องสร้างเส้นทาง!",
+    "zh-Hans": "启动吧！造路悬仪！",
+    "zh-Hant": "啟動吧！造路懸儀！"
+  },
+  "desc": {
+    "de": "Der Wiederaufbau des Verkehrsnetzes wird dabei helfen, das Projekt des Spacetrek-Observatoriums voranzutreiben. Dafür musst du Chonglin finden, der dir Zugang zum Straßenkonstruktor verschafft und dir zeigt, wie du ihn benutzt.",
+    "en": "Reconstructing the route network will help advance the Spacetrek Observatory's project. To do this, you need to find Chonglin, who will give you access to the Route Constructor and show you how to use it.",
+    "es": "Reconstruir la red de rutas ayudará a avanzar en el proyecto del Observatorio Intergaláctico. Para hacerlo, necesitas encontrar a Chonglin, quien te dará acceso al Constructor de rutas y te mostrará cómo usarlo.",
+    "fr": "Reconstruire le réseau de routes aidera à faire progresser le projet de l'Observatoire Trek-spatial. Pour ce faire, vous devez trouver Chonglin, qui vous donnera accès au constructeur routier et vous montrera comment l'utiliser.",
+    "ja": "道路網の再建は、スペーストレック観測台の修復を進めるうえで大きな助けとなる。そのためには、崇林を見つけ、浮遊式ロードビルダーの使用権限を入手し、使用方法について知る必要がある。",
+    "ko": "도로망 재건은 스페이스트렉 관측대 재건 프로젝트에 도움이 될 것이다. 이를 위해 숭림을 찾아 공중 건설 기계의 사용 권한과 사용 방법을 획득해야 한다",
+    "th": "การสร้างเส้นทางใหม่จะช่วยสนับสนุนโครงการของศูนย์สังเกตการณ์สเปซเทรค ดังนั้นคุณต้องไปหา Chonglin เพื่อรับสิทธิ์และวิธีใช้เครื่องสร้างเส้นทาง",
+    "zh-Hans": "重建路网将为深空测界台的工程提供助力，为此你需要找到崇林，获取造路悬仪的使用权限和使用方法。",
+    "zh-Hant": "重建路網將為深空測界台的工程提供助力，為此你需要找到崇林，獲取造路懸儀的使用權限和使用方法。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege Säbelzahnpirscher und hol die Materialien zurück",
+        "en": "Defeat the Sabercat Prowler to retrieve the materials",
+        "es": "Derrota al Merodeador Félido para recuperar los materiales.",
+        "fr": "Vaincre le Rôdeur à dents de sabre pour retrouver les matériaux",
+        "ja": "プラウラーシェードを倒し、素材を取り戻す",
+        "ko": "세이버캣 프라울러를 격파하여 재료 되찾기",
+        "th": "เอาชนะ Sabercat Prowler และนำวัสดุกลับมา",
+        "zh-Hans": "击败隐迹铁影追回材料",
+        "zh-Hant": "擊敗隱跡鐵影追回材料"
+      },
+      "entities": [
+        {
+          "entityId": 169700174,
+          "mapId": 906,
+          "blueprintType": "branch3.0_678_Monster_monster3_1",
+          "name": "TsEntity_精英_暗_追猎者3",
+          "areaId": 36109,
+          "position": {
+            "x": 18379,
+            "y": -619179,
+            "z": 29367
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_基建新手引导任务",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "(Er trägt nur das raffinierte ultra-komprimierte Grundgestein … Der Reine Mechanit, den er mitgenommen hat, sollte in der Nähe sein. Ich schaue mich mal um.)",
+                "en": "(It got the Refined Compressed Bedrock in its mouth… The Purified Mechanite it took should be nearby. I'll have to take a look around.)",
+                "es": "(Solo lleva encima el lecho de roca ultracomprimido y refinado... La mecanita pura debería estar cerca. Echaré un vistazo alrededor.)",
+                "fr": "(Il ne porte que le substrat compressé raffiné... La mécanite pure qu'il a prise doit être dans le coin. Je vais chercher.)",
+                "ja": "{Male=（奴が咥えてるのは、「精製ハイパーコンデンス基盤岩」だけか。持って行かれた「純粋なメカニカル・オーア」は、この近くにあるはず。探してみよう）;Female=（奴が咥えてるのは、「精製ハイパーコンデンス基盤岩」だけね。持って行かれた「純粋なメカニカル・オーア」は、この近くにあるはず。探してみよう）}",
+                "ko": "(정제 하이퍼 콘덴스 기반암만 물고 있네. 빼앗긴 순수한 메카니컬 오어는 근처에 있을 거야. 찾아보자)",
+                "th": "(มันคาบอยู่แต่หินอัดเบดร็อกกลั่น งั้นหินเมคาไนต์บริสุทธิ์ที่เอาไปก็น่าจะอยู่แถวๆ นี้ ลองหาดูหน่อย)",
+                "zh-Hans": "（它只叼着精炼超缩基岩，被带走的纯净械晶石应该在附近，找找看吧。）",
+                "zh-Hant": "（它只叼著精煉超縮基岩，被帶走的純淨械晶石應該在附近，找找看吧。）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde die Spuren von Säbelzahnpirscher",
+        "en": "Track down the Sabercat Prowler",
+        "es": "Localiza al Merodeador Félido.",
+        "fr": "Trouver le Rôdeur à dents de sabre",
+        "ja": "プラウラーシェードの痕跡を探す",
+        "ko": "세이버캣 프라울러 찾기",
+        "th": "ค้นหาร่องรอยของ Sabercat Prowler",
+        "zh-Hans": "寻找隐迹铁影的踪迹",
+        "zh-Hant": "尋找隱跡鐵影的蹤跡"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_基建新手引导任务",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "(Da ist er, der kontaminierte Säbelzahnpirscher …)",
+                "en": "(There it is, the contaminated Sabercat Prowler…)",
+                "es": "(Ahí está, el Merodeador Félido contaminado...)",
+                "fr": "(Le voilà, le rôdeur à dents de sabre contaminé...)",
+                "ja": "（見つけた。汚染された「プラウラーシェード」……）",
+                "ko": "(찾았다, 오염된 세이버캣 프라울러...)",
+                "th": "(เจอแล้ว Sabercat Prowler ที่ถูกครอบงำ...)",
+                "zh-Hans": "（找到了，被污染的隐迹铁影……）",
+                "zh-Hant": "（找到了，被汙染的隱跡鐵影……）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche in der Umgebung nach Reinen Mechaniten.",
+        "en": "Look for Purified Mechanites nearby",
+        "es": "Busca Mecanitas purificadas por los alrededores.",
+        "fr": "Trouver les mécanites purifiés",
+        "ja": "近くで純粋なメカニカル・オーアを探す",
+        "ko": "근처에서 순수한 메카니컬 오어 찾기",
+        "th": "ค้นหาแมคคาไนต์บริสุทธิ์ใกล้เคียง",
+        "zh-Hans": "在附近寻找纯净械晶石",
+        "zh-Hant": "在附近尋找純淨械晶石"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Überreiche Chonglin die Materialien.",
+        "en": "Give the materials to Chonglin",
+        "es": "Entrega los materiales a Chonglin.",
+        "fr": "Donner les matériaux à Chonglin",
+        "ja": "素材を崇林に渡す",
+        "ko": "재료를 숭림에게 제출하기",
+        "th": "ส่งวัสดุให้ Chonglin",
+        "zh-Hans": "将材料交给崇林",
+        "zh-Hant": "將材料交給崇林"
+      },
+      "entities": [
+        {
+          "entityId": 169700026,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_1",
+          "areaId": 36109,
+          "position": {
+            "x": 18631,
+            "y": -602949,
+            "z": 29591
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700173,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_7",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_9",
+          "areaId": 36109,
+          "position": {
+            "x": 18359,
+            "y": -602493,
+            "z": 29603
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -84
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_基建新手引导任务",
+          "flowIndex": 10,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}! Geht es dir gut?",
+                "en": "{PlayerName}! Are you okay?",
+                "es": "¡{PlayerName}! ¿Estás bien?",
+                "fr": "{PlayerName} ! Ça va ?",
+                "ja": "{PlayerName}！無事か！",
+                "ko": "{PlayerName}! 괜찮아요?!",
+                "th": "{PlayerName}! คุณเป็นอะไรรึเปล่า?",
+                "zh-Hans": "{PlayerName}！你没事吧！",
+                "zh-Hant": "{PlayerName}！你沒事吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was?",
+                    "en": "All good. Anything wrong?",
+                    "es": "¿Qué?",
+                    "fr": "Ben quoi ?",
+                    "ja": "心配だった？",
+                    "ko": "무슨 일이에요?",
+                    "th": "มีอะไรเหรอ?",
+                    "zh-Hans": "怎么了？",
+                    "zh-Hant": "怎麼了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Mm? Säbelzahnpirscher gelten in Exoschwärmen als Spitzenprädatoren. Ich war besorgt, dass du verletzt worden sein könntest.",
+                "en": "Oh, nothing. I was just worried you might be hurt. Sabercat Prowlers are considered apex predators among the Exoswarm, after all.",
+                "es": "¿Eh? Los Merodeadores Félidos cuentan como depredadores alfa. Me preocupaba que te hubiesen herido.",
+                "fr": "Hmm… Les rôdeurs à dents de sabre des Exonuées sont parmi les prédateurs les plus dangereux. J'avais peur pour toi.",
+                "ja": "ああ。プラウラーシェードは、エクソスウォームの中でも頂点捕食者と言える存在だからね。君が怪我でもしたんじゃないかと。",
+                "ko": "어? 세이버캣 프라울러는 엑소스웜 중에서도 거의 최상위 포식잔데, 혹시라도 다치지 않았을까 걱정했어요",
+                "th": "หืม? เจ้า Sabercat Prowler เรียกได้ว่าเป็นนักล่าระดับสูงในบรรดา Exoswarm เลยนะ ฉันกลัวว่าคุณจะบาดเจ็บน่ะสิ",
+                "zh-Hans": "嗯？隐迹铁影在隧群里也称得上是顶级掠食者，我担心你会不会受伤呢。",
+                "zh-Hant": "嗯？隱跡鐵影在隧群裡也稱得上是頂級掠食者，我擔心你會不會受傷呢。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke, mir geht's gut, und ich habe alles gefunden, wonach du gefragt hast.",
+                "en": "I'm fine. Thanks for checking. Here's everything you asked for.",
+                "es": "Gracias, estoy bien. Y he encontrado todo lo que me habías pedido.",
+                "fr": "Merci, ça va, et j'ai trouvé tout ce que tu demandais.",
+                "ja": "{Male=平気だ。頼まれたものは全部見つけてきた。;Female=平気よ。頼まれたものは全部見つけてきた。}",
+                "ko": "고마워요, 전 멀쩡해요. 필요한 건 다 찾아왔어요",
+                "th": "ขอบคุณนะ ฉันปลอดภัยดี แล้วของที่คุณต้องการ ฉันได้มาครบแล้ว",
+                "zh-Hans": "谢谢，我没事，你要的东西我都找到了。",
+                "zh-Hant": "謝謝，我沒事，你要的東西我都找到了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh! Das sind sie! Das war bestimmt ziemlich mühsam, oder?",
+                "en": "Oh, this is it! You must've gone through a lot to find these, huh?",
+                "es": "¡Oh, eso es! Habrá sido un rollo recuperar todo esto, ¿eh?",
+                "fr": "Oh ! C'est ça ! Tu as dû en baver pour tout rassembler, non ?",
+                "ja": "おお！全部集めてきたな！結構、大変だっただろう？",
+                "ko": "오! 딱 이거예요! 모으느라 꽤 힘들었죠?",
+                "th": "โอ้! ของพวกนี้นี่เอง! กว่าจะเก็บได้คงลำบากน่าดูใช่มั้ย?",
+                "zh-Hans": "噢！就是这些！收集起来还挺麻烦的吧？",
+                "zh-Hant": "噢！就是這些！收集起來還挺麻煩的吧？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mach dir keine Sorgen. Bis auf dieser hier sind alle anderen Straßenkonstruktoren die neuen Modelle.",
+                "en": "But don't worry, every other Route Constructor is a newer model.",
+                "es": "No te preocupes. Quitando este, el resto de constructores de rutas son ya el modelo nuevo.",
+                "fr": "Mais ne t'inquiète pas, tous les autres constructeurs routiers sont des modèles plus récents.",
+                "ja": "でも心配いらないよ。こいつを除けば、残りのロードビルダーは全部新型だ。",
+                "ko": "걱정 마세요, 이 구형만 빼고 나머지 공중 건설 기계는 전부 새 모델이에요",
+                "th": "ไม่ต้องกังวลนะ นอกจากเครื่องนี้แล้ว เครื่องสร้างเส้นทางเครื่องอื่นๆ เป็นรุ่นใหม่ทั้งนั้น",
+                "zh-Hans": "不用担心，除了这台，剩下的造路悬仪都是新款。",
+                "zh-Hant": "不用擔心，除了這台，剩下的造路懸儀都是新款。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du musst nur gewöhnlichen Mechanit, ultra-komprimiertes Grundgestein und Standard-Konstruktorkern finden.",
+                "en": "You'll only need standard Mechanite, Compressed Bedrock, and regular Constructor Cores to activate those.",
+                "es": "Solo te hacen falta mecanita normal, lecho de roca ultracomprimido y un Núcleo de construcción estándar.",
+                "fr": "Il te suffit de récupérer de la mécanite ordinaire, du substrat compressé et un noyau de constructeur standard pour les activer.",
+                "ja": "普通の「メカニカル・オーア」と「ハイパーコンデンス基盤岩」、それに通常規格の「ロードビルダーの駆動コア」を見つければいい！",
+                "ko": "일반 메카니컬 오어랑 하이퍼 콘덴스 기반암, 그리고 보통 규격의 공중 건설 기계 코어만 구하면 돼요!",
+                "th": "แค่หาหินเมคาไนต์ หินอัดเบดร็อก แล้วก็แกนกลไกแบบปกติ ก็ใช้ได้แล้ว!",
+                "zh-Hans": "你只需要找到普通的械晶石、超缩基岩，以及正常规格的悬仪芯源就行！",
+                "zh-Hant": "你只需要找到普通的械晶石、超縮基岩，以及正常規格的懸儀芯源就行！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay, ich übergebe dir diesen verstärkten Konstruktorkern und die restlichen Materialien. Du solltest derjenige sein, der den Straßenkonstruktor startet.",
+                "en": "Alright, I'm handing this boosted Constructor Core and the rest of the materials to you. You should be the one to activate the Route Constructor!",
+                "es": "Vale, te voy a dar este Núcleo de construcción potenciado y el resto de materiales. Deberías ser tú quien ponga en marcha el constructor de rutas.",
+                "fr": "Bon, je te confie ce noyau de constructeur boosté et le reste des matériaux. C'est à toi de démarrer le constructeur routier.",
+                "ja": "よし。この「増幅された駆動コア」と残りの材料は、全部君に渡そう。君自身の手でロードビルダーを起動してみてくれ！",
+                "ko": "좋아요, 이 증폭 공중 건설 기계 코어랑 나머지 재료를 전부 맡길 테니, 직접 공중 건설 기계를 작동해 봐요!",
+                "th": "ถ้างั้น คุณเอาแกนกลไกอัปเกรดชิ้นนี้กับวัสดุอื่นๆ ไป แล้วเปิดใช้งานเครื่องสร้างเส้นทางได้เลยนะ!",
+                "zh-Hans": "好啦，这块增幅过的悬仪芯源和其余材料都交给你，由你来亲手启动造路悬仪吧！",
+                "zh-Hant": "好啦，這塊增幅過的懸儀芯源和其餘材料都交給你，由你來親手啟動造路懸儀吧！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_3_0_一级POI_基建新手引导任务",
+          "flowIndex": 9,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{PlayerName}! Geht es dir gut?",
+                "en": "{PlayerName}! Are you okay?",
+                "es": "¡{PlayerName}! ¿Estás bien?",
+                "fr": "{PlayerName} ! Ça va ?",
+                "ja": "{PlayerName}！無事か！",
+                "ko": "{PlayerName}! 괜찮아요?!",
+                "th": "{PlayerName}! คุณเป็นอะไรรึเปล่า?",
+                "zh-Hans": "{PlayerName}！你没事吧！",
+                "zh-Hant": "{PlayerName}！你沒事吧！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 140,
+                "name": {
+                  "zh-Hans": "1号演员"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte den Straßenkonstruktor",
+        "en": "Activate the Route Constructor",
+        "es": "Activa el Constructor de rutas.",
+        "fr": "Démarrer le constructeur routier",
+        "ja": "ロードビルダーを起動する",
+        "ko": "공중 건설 기계 작동시키기",
+        "th": "เปิดใช้งานเครื่องสร้างเส้นทาง",
+        "zh-Hans": "启动造路悬仪",
+        "zh-Hant": "啟動造路懸儀"
+      },
+      "entities": [
+        {
+          "entityId": 169700022,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_10",
+          "areaId": 36113,
+          "position": {
+            "x": -304154,
+            "y": -830914,
+            "z": 250
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -113
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700023,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_7",
+          "areaId": 36107,
+          "position": {
+            "x": -284496,
+            "y": -551243,
+            "z": 36288
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -22
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700024,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_8",
+          "areaId": 36164,
+          "position": {
+            "x": -156190,
+            "y": -607150,
+            "z": 25612
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 31
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700025,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_9",
+          "areaId": 36109,
+          "position": {
+            "x": -80572,
+            "y": -642174,
+            "z": 32373
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 142
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700026,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_1",
+          "areaId": 36109,
+          "position": {
+            "x": 18631,
+            "y": -602949,
+            "z": 29591
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700027,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_2",
+          "areaId": 36109,
+          "position": {
+            "x": 78865,
+            "y": -575435,
+            "z": 31283
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -15
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700028,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_3",
+          "areaId": 36135,
+          "position": {
+            "x": 158907,
+            "y": -491452,
+            "z": 22041
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 119
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700030,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_4",
+          "areaId": 36135,
+          "position": {
+            "x": 129707,
+            "y": -412455,
+            "z": 19954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -62
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700051,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_5",
+          "areaId": 36111,
+          "position": {
+            "x": -18947,
+            "y": -467549,
+            "z": 36005
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700052,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_6",
+          "areaId": 36127,
+          "position": {
+            "x": -142600,
+            "y": -431570,
+            "z": 40402
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700173,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_7",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_9",
+          "areaId": 36109,
+          "position": {
+            "x": 18359,
+            "y": -602493,
+            "z": 29603
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -84
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700180,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Treasure_3_2",
+          "name": "TsEntity_3_0_基准物资箱",
+          "areaId": 36109,
+          "position": {
+            "x": 19014,
+            "y": -602394,
+            "z": 29593
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 96
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700216,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36109,
+          "position": {
+            "x": 78865,
+            "y": -575435,
+            "z": 31283
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700217,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36135,
+          "position": {
+            "x": 158907,
+            "y": -491452,
+            "z": 22041
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -97
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700218,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36135,
+          "position": {
+            "x": 129707,
+            "y": -412455,
+            "z": 19954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700219,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36111,
+          "position": {
+            "x": -18947,
+            "y": -467549,
+            "z": 36005
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700220,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36127,
+          "position": {
+            "x": -142600,
+            "y": -431570,
+            "z": 40402
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700221,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36107,
+          "position": {
+            "x": -284496,
+            "y": -551243,
+            "z": 36288
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700222,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36164,
+          "position": {
+            "x": -156190,
+            "y": -607150,
+            "z": 25612
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700223,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36109,
+          "position": {
+            "x": -80572,
+            "y": -642174,
+            "z": 32374
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700224,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common3",
+          "name": "TsEntity_铺路机光柱",
+          "areaId": 36113,
+          "position": {
+            "x": -304154,
+            "y": -830914,
+            "z": 250
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 24,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte den Straßenkonstruktor",
+        "en": "Activate the Route Constructor",
+        "es": "Activa el Constructor de rutas.",
+        "fr": "Démarrer le constructeur routier",
+        "ja": "ロードビルダーを起動する",
+        "ko": "공중 건설 기계 작동시키기",
+        "th": "เปิดใช้งานเครื่องสร้างเส้นทาง",
+        "zh-Hans": "启动造路悬仪",
+        "zh-Hant": "啟動造路懸儀"
+      },
+      "entities": [
+        {
+          "entityId": 169700026,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_1",
+          "areaId": 36109,
+          "position": {
+            "x": 18631,
+            "y": -602949,
+            "z": 29591
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700173,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_7",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YJY1_9",
+          "areaId": 36109,
+          "position": {
+            "x": 18359,
+            "y": -602493,
+            "z": 29603
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -84
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700175,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花",
+          "areaId": 36109,
+          "position": {
+            "x": 15454,
+            "y": -622312,
+            "z": 29484
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -62
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700176,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花2",
+          "areaId": 36109,
+          "position": {
+            "x": 14833,
+            "y": -622911,
+            "z": 29467
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -92
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700177,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花3",
+          "areaId": 36109,
+          "position": {
+            "x": 15759,
+            "y": -621594,
+            "z": 29499
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 106
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700178,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花4",
+          "areaId": 36109,
+          "position": {
+            "x": 16100,
+            "y": -622322,
+            "z": 29483
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700179,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花5",
+          "areaId": 36109,
+          "position": {
+            "x": 15496,
+            "y": -622837,
+            "z": 29489
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_基建新手引导任务",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Der Straßenkonstruktor kann nicht gestartet werden, da Materialien fehlen. In diesem Moment kommt ein Forscher von der anderen Seite des Hangs auf dich zugerannt.",
+                "en": "The Route Constructor can't start due to insufficient materials. Just then, a researcher comes running towards you from the other side of the hill.",
+                "es": "El constructor de rutas no puede empezar porque le faltan materiales. Justo entonces, un investigador viene corriendo hacia ti desde la otra punta de la ladera.",
+                "fr": "Le constructeur routier ne peut pas démarrer parce qu'il manque des matériaux. À ce moment, un chercheur arrive en courant depuis l'autre côté de la pente.",
+                "ja": "素材が足りず、「浮遊式ロードビルダー」は起動できない。その時、一人の研究員が坂の向こうから走ってくる。",
+                "ko": "재료가 부족해, 공중 건설 기계는 작동할 수 없었다. 그때 언덕 반대편에서 한 연구원이 이쪽으로 달려왔다",
+                "th": "เครื่องสร้างเส้นทางที่ขาดวัสดุไม่สามารถเปิดใช้งานได้ ทันใดนั้นก็มีนักวิจัยคนหนึ่งวิ่งมาหาคุณจากอีกฝั่งของเนินเขา",
+                "zh-Hans": "缺少材料的造路悬仪无法启动，这时一位研究员从山坡另一头朝你跑来。",
+                "zh-Hant": "缺少材料的造路懸儀無法啟動，這時一位研究員從山坡另一頭朝你跑來。"
+              },
+              "id": 1
+            },
+            {
+              "text": {
+                "de": "Oh? Du musst {PlayerName} sein. Rakosan hat mir bereits von dir erzählt.",
+                "en": "Oh? You must be {PlayerName}? Rakosan already told me about you.",
+                "es": "¿Eh? Tú debes ser {PlayerName}. Rakosan ya me ha hablado de ti.",
+                "fr": "Oh ? Tu dois être {PlayerName}. Rakosan m'a déjà parlé de toi.",
+                "ja": "おや、君が{PlayerName}だね？ラコーサから話は聞いているよ。",
+                "ko": "오? {PlayerName} 맞죠? 라코산한테 이야기 들었어요",
+                "th": "โอ้? คุณคือ {PlayerName} ใช่มั้ย? Rakosan เล่าเรื่องของคุณให้ฉันฟังแล้ว",
+                "zh-Hans": "噢？你就是{PlayerName}吧？拉科萨跟我说了你的事。",
+                "zh-Hant": "噢？你就是{PlayerName}吧？拉科薩跟我說了你的事。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du bist wirklich ein Lebensretter – du hast dem Spacetrek-Observatorium nicht nur eine Chance auf den Wiederaufbau gegeben, jetzt brauche ich auch dringend deine Hilfe.",
+                "en": "You're a real lifesaver—you gave us the chance to rebuild the Spacetrek Observatory. And honestly, I could really use your help now.",
+                "es": "Lo tuyo es de leyenda. Le has dado al Observatorio Intergaláctico la oportunidad de avanzar en la reconstrucción, pero resulta que ahora mismo también necesito tu ayuda urgente.",
+                "fr": "Tu arrives à point nommé. L'Observatoire Trek-spatial a une chance de reprendre ses activités grâce à toi, mais j'ai besoin de ton aide de toute urgence.",
+                "ja": "ちょうどいい所に来てくれた。観測台の再建を手伝ってくれるんだってね。実は、私からもお願いしたいことがあるんだ。",
+                "ko": "정말 딱 맞게 와 줬네요. 스페이스트렉 관측대 재건에도 숨통을 열어 줬을 뿐만 아니라, 지금은 저한테도 도움이 꼭 필요하거든요!",
+                "th": "คุณมาได้จังหวะพอดี ไม่เพียงแค่ช่วยให้การสร้างศูนย์สังเกตการณ์สเปซเทรคมีความหวังขึ้นมา ตอนนี้ฉันเองก็ต้องการให้คุณช่วยเหมือนกัน!",
+                "zh-Hans": "你可真是及时雨，不仅给深空测界台的重建带来转机，现在我也很需要你拔刀相助呢！",
+                "zh-Hant": "你可真是及時雨，不僅給深空測界台的重建帶來轉機，現在我也很需要你拔刀相助呢！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist wirklich etwas peinlich. Ich war bereit, dir zu zeigen, wie man den Straßenkonstruktor bedient, aber dann ist etwas Unerwartetes passiert.",
+                "en": "I actually came fully prepared to teach you how to operate the Route Constructor, but I hit a bit of a snag.",
+                "es": "Me da un pelín de vergüenza. Iba a enseñarte cómo funciona el constructor de rutas, pero ha surgido un asunto inesperado.",
+                "fr": "C'est un peu embarrassant… J'étais prêt à t'apprendre à utiliser le constructeur routier, mais quelque chose d'inattendu est arrivé.",
+                "ja": "少し恥ずかしい話だが……ロードビルダーの使い方を教える準備をしてたら、ちょっと予想外の事態になってしまってね。",
+                "ko": "좀 민망하네요. 원래는 공중 건설 기계 쓰는 법을 차근차근 알려 드리려고 했는데, 일이 살짝 꼬여 버렸어요",
+                "th": "ก็รู้สึกผิดอยู่นะ ที่จริงฉันเตรียมสอนวิธีใช้เครื่องสร้างเส้นทางไว้แล้ว แต่ดันเกิดเหตุไม่คาดฝันขึ้น",
+                "zh-Hans": "有些惭愧，本来准备好要教你如何使用造路悬仪，但现在碰上了些意外情况。",
+                "zh-Hant": "有些慚愧，本來準備好要教你如何使用造路懸儀，但現在碰上了些意外情況。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Um den Straßenkonstruktor zu aktivieren, brauchst du drei Materialien: Mechanit und Ultra-Komprimiertes Grundgestein als Rohstoffe sowie einen Konstruktorkern als Energiequelle.",
+                "en": "You see, to power up a Route Constructor, you need three materials:\nMechanite and Condensed Bedrock as the raw components, plus a Constructor Core as the energy source.",
+                "es": "Para encender el constructor de rutas necesitas tres materiales: mecanita y lecho de roca ultracomprimido como materias primas, y un Núcleo de construcción como fuente de energía.",
+                "fr": "Pour le faire fonctionner, il faut trois matériaux : de la mécanite, du substrat compressé comme matières premières, et un noyau de constructeur comme source d'énergie.",
+                "ja": "ロードビルダーの起動には3種類の材料が必要なんだ。原料の「メカニカル・オーア」と「ハイパーコンデンス基盤岩」、それにエネルギー源の「ロードビルダーの駆動コア」だ。",
+                "ko": "공중 건설 기계를 작동시키려면 재료가 세 가지 필요해요. 원료인 메카니컬 오어랑 하이퍼 콘덴스 기반암, 그리고 에너지원인 공중 건설 기계 코어예요",
+                "th": "การจะให้เครื่องสร้างเส้นทางทำงานต้องใช้วัสดุ 3 อย่าง ก็คือ หินเมคาไนต์และหินอัดเบดร็อกที่ใช้เป็นวัตถุดิบ อีกอย่างคือแกนกลไกที่ใช้เป็นพลังงาน",
+                "zh-Hans": "启动造路悬仪需要三种材料，分别是作为原料的械晶石和超缩基岩，以及作为能源的悬仪芯源。",
+                "zh-Hant": "啟動造路懸儀需要三種材料，分別是作為原料的械晶石和超縮基岩，以及作為能源的懸儀芯源。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast vielleicht schon einige gesammelt, aber ohne Berechtigung kannst du den Straßenkonstruktor trotzdem nicht aktivieren, oder?",
+                "en": "You might already have some on you, but without clearance, you still can't activate the Route Constructor, can you?",
+                "es": "Puede que ya tengas alguno de estos materiales, pero sin autorización, sigues sin poder activar el constructor de rutas, ¿verdad?",
+                "fr": "Tu en as peut-être déjà collecté, mais sans autorisation, tu ne peux pas l'activer.",
+                "ja": "もしかしたら、もういくつか持っているかもしれないね。でも権限がないから起動できなかったんだろう。",
+                "ko": "아마 좀 모아두셨을 수도 있는데, 권한이 없어서 공중 건설 기계를 작동 못하셨을 거예요",
+                "th": "คุณอาจจะเก็บมาได้บางส่วนแล้ว แต่ยังไม่มีสิทธิ์ใช้งาน ก็เลยเปิดเครื่องสร้างเส้นทางไม่ได้น่ะ",
+                "zh-Hans": "或许你已经收集了一些，但没有权限，无法启动造路悬仪吧。",
+                "zh-Hant": "或許你已經收集了一些，但沒有權限，無法啟動造路懸儀吧。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der hier ist ein Sonderfall. Es war der allererste Straßenkonstruktor, der in Betrieb genommen wurde, deshalb sind die Materialien, die er braucht, maßgeschneidert.",
+                "en": "But this Constructor before us is special. It was the very first Route Constructor ever put into use, so the materials it requires have to be custom-made.",
+                "es": "El que tenemos delante es un caso especial: es el primer constructor de rutas que se usó, así que los materiales que necesita están hechos a medida.",
+                "fr": "Mais ce constructeur devant nous est spécial. C'est le tout premier constructeur routier jamais mis en service, donc les matériaux dont il a besoin doivent être fabriqués sur mesure.",
+                "ja": "目の前のこいつは少し特殊でね。一番最初に実用化されたもので、必要な材料も特製なんだ。",
+                "ko": "우리 앞에 있는 이 기계는 좀 특별해요. 가장 먼저 현장에 투입된 공중 건설 기계라서, 필요한 재료도 따로 만들어 둔 거죠",
+                "th": "เครื่องตรงหน้าเราค่อนข้างพิเศษ มันเป็นเครื่องสร้างเส้นทางรุ่นแรกที่ใช้งานจริง วัสดุที่ต้องใช้ก็เป็นแบบพิเศษ",
+                "zh-Hans": "我们面前这台就比较特殊啦，它是最早投入使用的造路悬仪，需要的材料也是特制的。",
+                "zh-Hant": "我們面前這台就比較特殊啦，它是最早投入使用的造路懸儀，需要的材料也是特製的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin heute mit meinem Fahrzeug und den Materialien hierher gefahren, als plötzlich aus dem Nichts ein Säbelzahnpirscher auftauchte – nun ja, sie können sich unsichtbar machen.",
+                "en": "I was hauling those materials earlier today when a Sabercat Prowler suddenly swooped down on me. You know how they can turn invisible...",
+                "es": "Estaba de camino en mi vehículo con los materiales cuando un Merodeador Félido apareció de la nada. Se vuelven invisibles, ¿sabes?",
+                "fr": "Aujourd'hui, alors que je transportais les matériaux, un rôdeur à dents de sabre est apparu… ces créatures peuvent devenir invisibles.",
+                "ja": "今日、私が乗り物で材料を運んできた時、突然「プラウラーシェード」が一匹現れたんだ。奴らは姿を消せるから、すぐには気づけなかったよ。",
+                "ko": "오늘 탑승 장비에 재료를 싣고 오는데, 갑자기 세이버캣 프라울러가 툭 튀어나왔어요. 걔네는 원래 은신술을 쓸 수 있잖아요",
+                "th": "วันนี้ตอนที่ฉันขับรถขนวัสดุมาที่นี่ อยู่ๆ ก็มี Sabercat Prowler ตัวหนึ่งโผล่มา ก็เพราะว่าพวกมันล่องหนได้",
+                "zh-Hans": "我今天骑着载具把材料带来这里时，突然凭空冒出一头隐迹铁影，毕竟它们会隐身嘛。",
+                "zh-Hant": "我今天騎著運具把材料帶來這裡時，突然憑空冒出一頭隱跡鐵影，畢竟它們會隱身嘛。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er schien sich nicht für mich zu interessieren. Er hat nur mein Fahrzeug umgeworfen und sich die Materialien geschnappt, die ich mitgebracht hatte. Ich habe mich versteckt, bis er weg war.",
+                "en": "But strangely enough, it didn't come after me. It just flipped my ride, stole the materials, and took off. I hid until it was gone.",
+                "es": "No parecía interesado en mí; volcó el vehículo y agarró los materiales que llevaba. Yo me escondí hasta que se marchó.",
+                "fr": "Il ne s'intéressait pas à moi. Il a renversé mon véhicule, pris les matériaux, et je me suis caché jusqu'à son départ.",
+                "ja": "だが、奴は私には興味がなかったようだ。ただ乗り物をひっくり返し、材料を咥えて走り去った。私も脇に隠れて、奴が遠くへ行くのを待ったよ。",
+                "ko": "그런데, 제 쪽에는 관심도 없더라고요. 운송 도구만 홱 뒤집어엎고, 제가 가져온 재료를 물고 가 버렸어요. 저도 옆으로 숨어서 멀리 갈 때까지 기다렸죠",
+                "th": "แต่ดูเหมือนมันไม่สนใจฉัน แค่พลิกรถให้คว่ำแล้วก็คาบเอาวัสดุไป ฉันเลยหลบอยู่ข้างๆ รอให้มันไปซะก่อน",
+                "zh-Hans": "但它好像对我不感兴趣，只是把载具掀翻，叼走了我带来的材料，我也躲到一边，等它走远。",
+                "zh-Hant": "但它好像對我不感興趣，只是把運具掀翻，叼走了我帶來的材料，我也躲到一邊，等它走遠。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht können diese Materialien für Threnodianer-kontaminierte Exoschwärme als Treibstoff dienen … oder ihre Instinkte wurden einfach überschrieben.",
+                "en": "I'm guessing the materials acted like fuel to Exoswarm contaminated by the Threnodian, or maybe the contamination altered their properties somehow.",
+                "es": "Quizá, para los Exoenjambres con contaminación trenodiana, ese material sirva de combustible... O, quizá, han cambiado sus instintos.",
+                "fr": "Peut-être que pour les Exonuées contaminées par le Réprimantum, ce matériau pourrait servir de carburant… ou bien leurs instincts ont été réécrits.",
+                "ja": "鳴式に汚染されたエクソスウォームにとって、あれはエネルギー源にでもなるんだろうか？それとも本能が改変されたのか……",
+                "ko": "어쩌면 명식으로 오염된 엑소스웜한테는 그런 것들이 에너지 같은 걸 공급할지도 모르겠네요. 아니면 누군가 그들의 본능을 고쳐 써버린 걸까요?",
+                "th": "สำหรับ Exoswarm ที่ถูกเธรโนเดียนครอบงำน่ะ ของพวกนั้นเป็นพลังงานให้มันได้เหรอ? หรือสัญชาตญาณเดิมถูกปรับเปลี่ยนไปแล้ว?",
+                "zh-Hans": "或许对于被鸣式污染的隧群来说，那些东西能为它们提供能量？或者原有的本能被篡改了？",
+                "zh-Hant": "或許對於被鳴式汙染的隧群來說，那些東西能為它們提供能量？或者原有的本能被篡改了？"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist nicht mein Forschungsbereich; da musst du die Leute von der Abteilung für Leerenmaterie fragen.",
+                "en": "That's not my field, though. You'd have to ask the Department of Voidmatters for the details.",
+                "es": "No es mi especialidad; tendrás que preguntarle a la gente del Departamento de Materia de Vacío.",
+                "fr": "Ce n'est pas mon domaine. Il faudra demander aux spécialistes du Département des Matières du Néant.",
+                "ja": "まあ、私の専門分野じゃないな。ヴォイドマター学部の連中に聞いてみないと。",
+                "ko": "이쪽은 제 전공이 아니라서, 보이드매터 과학부 사람들한테 물어봐야 할 것 같아요",
+                "th": "ฉันไม่ได้วิจัยด้านนี้ซะด้วยสิ ต้องไปถามคนที่แผนกสุญตาวิทยา",
+                "zh-Hans": "这就不是我的研究方向了，得去问问虚质科学部的人。",
+                "zh-Hant": "這就不是我的研究方向了，得去問問虛質科學部的人。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedenfalls musst du für mich diesen kontaminierten Säbelzahnpirscher aufspüren und die speziellen Materialien zurückzuholen.",
+                "en": "Anyway, I need you to track down that contaminated Sabercat Prowler and get those custom materials back.",
+                "es": "Sea como fuere, te va a tocar rastrear al Merodeador Félido contaminado y recuperar los materiales especiales.",
+                "fr": "Quoi qu'il en soit, j'ai besoin que tu retrouves ce rôdeur contaminé et récupères ces matériaux sur mesure.",
+                "ja": "とにかく、君にあの汚染された「プラウラーシェード」を見つけて、特製の材料を取り返してきてほしいんだ。",
+                "ko": "아무튼, 그 오염된 세이버캣 프라울러를 찾아서 특수 재료를 찾아와 줬으면 해요",
+                "th": "สรุปคือฉันอยากขอให้คุณช่วยหา Sabercat Prowler ที่ถูกครอบงำตัวนั้น แล้วเอาวัสดุพิเศษกลับมา",
+                "zh-Hans": "总之，希望你能帮我找到那头被污染的隐迹铁影，然后把特制材料取回来。",
+                "zh-Hant": "總之，希望你能幫我找到那頭被汙染的隱跡鐵影，然後把特製材料取回來。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er hat den Reinen Mechanit und das Raffinierte ultra-komprimierte Grundgestein mitgenommen. Ich zähle auf dich.",
+                "en": "I'm counting on you to retrieve my Purified Mechanite and Refined Compressed Bedrock!",
+                "es": "Se llevó la mecanita pura y el lecho de roca ultracomprimido y refinado. Cuento contigo.",
+                "fr": "Il a pris la mécanite pure et le substrat compressé raffiné. Je compte sur toi.",
+                "ja": "奴が持って行ったのは「純粋なメカニカル・オーア」と「精製ハイパーコンデンス基盤岩」だ。頼んだぞ！",
+                "ko": "걔가 물고 간 재료는 순수한 메카니컬 오어랑 정제 하이퍼 콘덴스 기반암이에요. 잘 부탁드릴게요!",
+                "th": "วัสดุที่มันเอาไปคือ หินเมคาไนต์บริสุทธิ์และหินอัดเบดร็อกกลั่น รบกวนหน่อยนะ!",
+                "zh-Hans": "被它带走的材料是纯净械晶石与精炼超缩基岩，就拜托你了！",
+                "zh-Hant": "被它帶走的材料是純淨械晶石與精煉超縮基岩，就拜託你了！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 700994,
+                "name": {
+                  "zh-Hans": "崇林"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Starte den Straßenkonstruktor",
+        "en": "Activate the Route Constructor",
+        "es": "Activa el Constructor de rutas.",
+        "fr": "Démarrer le constructeur routier",
+        "ja": "ロードビルダーを起動する",
+        "ko": "공중 건설 기계 작동시키기",
+        "th": "เปิดใช้งานเครื่องสร้างเส้นทาง",
+        "zh-Hans": "启动造路悬仪",
+        "zh-Hant": "啟動造路懸儀"
+      },
+      "entities": [
+        {
+          "entityId": 169700026,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_1",
+          "areaId": 36109,
+          "position": {
+            "x": 18631,
+            "y": -602949,
+            "z": 29591
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 55
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Begib dich zum Straßenkonstruktor, bei dem sich Chonglin befindet.",
+        "en": "Head to the Route Constructor next to Chonglin",
+        "es": "Dirígete al Constructor de rutas donde está Chonglin.",
+        "fr": "Se rendre à la position du constructeur routier et parler à Chonglin",
+        "ja": "崇林がいるロードビルダーへ向かう",
+        "ko": "숭림이 있는 공중 건설 기계로 이동하기",
+        "th": "ไปยังเครื่องสร้างเส้นทางที่ Chonglin อยู่",
+        "zh-Hans": "前往崇林所在的造路悬仪",
+        "zh-Hant": "前往崇林所在的造路懸儀"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 28,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 15,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 15,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 30,
+      "parentId": 28,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 169700175,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花",
+          "areaId": 36109,
+          "position": {
+            "x": 15454,
+            "y": -622312,
+            "z": 29484
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -62
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700176,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花2",
+          "areaId": 36109,
+          "position": {
+            "x": 14833,
+            "y": -622911,
+            "z": 29467
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -92
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700177,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花3",
+          "areaId": 36109,
+          "position": {
+            "x": 15759,
+            "y": -621594,
+            "z": 29499
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 106
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700178,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花4",
+          "areaId": 36109,
+          "position": {
+            "x": 16100,
+            "y": -622322,
+            "z": 29483
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 52
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700179,
+          "mapId": 906,
+          "blueprintType": "branch3.0_151_Collect_SBS10",
+          "name": "TsEntity_3_0植物_霜信花5",
+          "areaId": 36109,
+          "position": {
+            "x": 15496,
+            "y": -622837,
+            "z": 29489
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_一级POI_基建新手引导任务",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "(Dieser Glanz … Das muss der Reine Mechanit sein.)",
+                "en": "(That shine… this must be the Purified Mechanite.)",
+                "es": "(Ese resplandor... Esto debe ser el cristal de mecanita pura.)",
+                "fr": "(Cet éclat... ce doit être la mécanite pure.)",
+                "ja": "{Male=（この光……「純粋なメカニカル・オーア」だな）;Female=（この光……「純粋なメカニカル・オーア」ね）}",
+                "ko": "(이 광택은... 순수한 메카니컬 오어야)",
+                "th": "(แสงประกายนี้... ต้องเป็นหินเมคาไนต์บริสุทธิ์แน่)",
+                "zh-Hans": "（这光泽……是纯净械晶石。）",
+                "zh-Hant": "（這光澤……是純淨械晶石。）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Er ist unter diesen Eiswisperblüten vergraben. Ich sollte sie entfernen und alles einsammeln.)",
+                "en": "(It's buried between these Rimewisps. I should clear them out and collect everything.)",
+                "es": "(Está enterrado en estos capullos de Hiloescarcha. Será mejor que me deshaga de ellos y la recoja toda).",
+                "fr": "(Il est enfoui dans ces givresprits. Je devrais les dégager et tout récupérer.)",
+                "ja": "（「霜の便り」の中に埋まっている。まずは全部採ってしまおう）",
+                "ko": "(서리꽃 속에 묻혀 있었네. 먼저 전부 다 채집하자)",
+                "th": "(มันฝังอยู่ในดอกช่อน้ำค้าง เก็บให้หมดก่อนก็แล้วกัน)",
+                "zh-Hans": "（被埋在霜信花里了，先把它们都采集干净吧。）",
+                "zh-Hant": "（被埋在霜信花裡了，先把它們都採集乾淨吧。）"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_3_0_一级POI_基建新手引导任务",
+          "flowIndex": 8,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich habe beide Materialien. Zeit, zurückzugehen und mit Chonglin zu sprechen.",
+                "en": "I've got both materials. Time to head back and talk to Chonglin.",
+                "es": "Tengo ambos materiales. Hora de volver y hablar con Rowan.",
+                "fr": "J'ai les deux matériaux. Il est temps de retourner parler à Chonglin.",
+                "ja": "（二種類とも手に入った。崇林のところへ戻ろう。）",
+                "ko": "(두 재료를 다 손에 넣었어. 돌아가서 숭림과 이야기해 보자)",
+                "th": "(ได้วัสดุทั้งสองอย่างครบแล้ว กลับไปคุยกับ Chonglin ดีกว่า)",
+                "zh-Hans": "（两种材料都到手了，回去和崇林谈谈吧。）",
+                "zh-Hant": "（兩種材料都到手了，回去和崇林談談吧。）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,906 @@
+{
+  "id": 176800009,
+  "key": "2_3肉鸽引导任务",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Traumtiefe: Solaris-Filmfest",
+    "en": "Dreaming Deep: Solaris Film Festival",
+    "es": "Abismo de ensueño: Festival de cine de Solaris",
+    "fr": "Un rêve profond : Festival de Solaris",
+    "ja": "夢現のシーベッド・ソラ映画祭",
+    "ko": "꿈에 젖은 해저 · 솔라리스 영화제",
+    "th": "ก้นบึ้งที่หลับฝัน: เทศกาลภาพยนตร์โซลาริส",
+    "zh-Hans": "浸梦海床·索拉电影节",
+    "zh-Hant": "浸夢海床·索拉電影節"
+  },
+  "desc": {
+    "de": "Du hast eine Nachricht von Ebenholz- und Elfenbein-Torwächter erhalten. Etwas muss mit dem Somnoire passiert sein.",
+    "en": "You received a contact from the Ivory and Ebony Gatekeepers. Something must've happened with the Somnoire.",
+    "es": "Recibiste un contacto de los Porteros de marfil y de ébano. Algo debió haber sucedido con la Somnolencia.",
+    "fr": "Vous avez reçu un message des Concierges, quelque chose a dû se passer avec le Somnoire.",
+    "ja": "白きゲートキーパーと黒きゲートキーパーからの連絡――どうやら、心の集域でまた何かあったようだ。",
+    "ko": "당신은 블랙 게이트 수호자와 화이트 게이트 수호자의 연락을 받았다. 마음의 영역에 무슨 일이 벌어진 것 같다",
+    "th": "คุณได้รับการติดต่อจากผู้พิทักษ์ประตูสีงาช้างและสีดำ ต้องมีบางอย่างเกิดขึ้นกับแดนจิตนิมิตแน่ๆ",
+    "zh-Hans": "你收到了黑色守门人和白色守门人的联络，似乎是心之集域中出现了一些新的情况。",
+    "zh-Hant": "你收到了黑色守門人和白色守門人的聯絡，似乎是心之集域中出現了一些新的情況。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde den Elfenbein-Torwächter",
+        "en": "Find the Ivory Gatekeeper",
+        "es": "Encuentra al Portero de marfil.",
+        "fr": "Trouver le Concierge blanc",
+        "ja": "白きゲートキーパーを見つける",
+        "ko": "화이트 게이트 수호자 찾기",
+        "th": "หาผู้พิทักษ์ประตูสีงาช้าง",
+        "zh-Hans": "找到白色守门人",
+        "zh-Hant": "找到白色守門人"
+      },
+      "entities": [
+        {
+          "entityId": 176800034,
+          "mapId": 8,
+          "blueprintType": "branch2.2_221_NPC0998",
+          "name": "TsEntity_肉鸽_黑羊",
+          "areaId": 23,
+          "position": {
+            "x": 860126,
+            "y": 668249,
+            "z": 489
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 176800035,
+          "mapId": 8,
+          "blueprintType": "branch2.2_221_NPC0999",
+          "name": "TsEntity_肉鸽_白羊",
+          "areaId": 23,
+          "position": {
+            "x": 860161,
+            "y": 668368,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 204800000,
+          "mapId": 8,
+          "blueprintType": "Gameplay571",
+          "name": "TsEntity_副本_rogue副本门BW3",
+          "areaId": 23,
+          "position": {
+            "x": 860158,
+            "y": 667855,
+            "z": 488
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_V2.3肉鸽引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Da bist du ja! Genau rechtzeitig, {PlayerName}.",
+                "en": "There you are! Right on time, {PlayerName}.",
+                "es": "¡Aquí estás! Justo a tiempo, {PlayerName}.",
+                "fr": "Te voilà ! Tu tombes à pic, {PlayerName}.",
+                "ja": "おお、{PlayerName}！ちょうどいいタイミングに！",
+                "ko": "타이밍 딱 맞춰 오셨네요! {PlayerName}",
+                "th": "มาแล้วเหรอ! ตรงเวลาเป๊ะเลย {PlayerName}",
+                "zh-Hans": "你来了！时机正好，{PlayerName}。",
+                "zh-Hant": "你來了！時機正好，{PlayerName}。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist passiert?",
+                    "en": "What happened?",
+                    "es": "¿Qué ha pasado?",
+                    "fr": "Qu'est-ce qu'il y a ?",
+                    "ja": "{Male=何かあったのか？;Female=何かあったの？}",
+                    "ko": "무슨 일이죠?",
+                    "th": "เกิดอะไรขึ้น",
+                    "zh-Hans": "发生什么了？",
+                    "zh-Hant": "發生什麼事了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "…",
+                "en": "...",
+                "es": "...",
+                "fr": "…",
+                "ja": "……",
+                "ko": "...",
+                "th": "...",
+                "zh-Hans": "……",
+                "zh-Hant": "……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                },
+                "entity": {
+                  "entityId": 176800034,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0998",
+                  "name": "TsEntity_肉鸽_黑羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860126,
+                    "y": 668249,
+                    "z": 489
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keine Sorge. Es gibt keine unmittelbare Krise, die deine Aufmerksamkeit erfordert … Zumindest noch nicht.",
+                "en": "Don't worry. There's no immediate crisis that requires your attention… at least, not yet.",
+                "es": "No te preocupes. No hay ninguna crisis que requiera tu atención inmediata... por ahora.",
+                "fr": "Ne t'en fais pas, ce n'est rien de grave... du moins, pas pour l'instant.",
+                "ja": "心配するな。別に今回はあなたの助けが必要な緊急事態ってわけじゃない……少なくとも今は。",
+                "ko": "걱정 마세요, 당신이 급히 처리해야 할 위기 상황이 발생하진 않았어요... 적어도 아직은",
+                "th": "ไม่ต้องห่วง ไม่ใช่วิกฤตด่วนที่คุณต้องช่วยทันที... อย่างน้อยก็ในตอนนี้",
+                "zh-Hans": "不用担心，这次并没有出现什么急需你处理的危机情况……至少暂时是这样。",
+                "zh-Hant": "不用擔心，這次並沒有出現什麼急需你處理的危機情況……至少暫時是這樣。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diesmal geht es um eine unerwartete Einladung.",
+                "en": "This time, it's an invitation we never saw coming.",
+                "es": "Esta vez es una invitación que no esperábamos.",
+                "fr": "On a reçu une invitation totalement inattendue.",
+                "ja": "実は、意外なところから招待状が届いたんだ。",
+                "ko": "사실, 저희도 예상하지 못한 깜짝 초대였어요",
+                "th": "คราวนี้ มีบัตรเชิญที่เราคาดไม่ถึง",
+                "zh-Hans": "其实，是一个我们都不曾预想到的突发邀请。",
+                "zh-Hant": "其實，是一個我們都不曾預想到的突發邀請。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Elfenbein-Torwächter überreicht dir eine liebevoll gestaltete Einladung. Als du die unbekannte Handschrift überfliegst, stechen dir die Worte „Solaris-Filmfest“ ins Auge.",
+                "en": "The Ivory Gatekeeper hands you a finely crafted invitation. As you scan the unfamiliar handwriting, the words \"Solaris Film Festival\" stand out.",
+                "es": "El Portero de Marfil te entrega una elegante invitación. No reconoces la letra, pero lees las palabras «Festival de Cine de Somnolencia».",
+                "fr": "Le Concierge blanc vous tend une invitation de bonne facture. Vous distinguez les mots « Festival du film du Somnoire », rédigés dans une écriture inconnue.",
+                "ja": "白きゲートキーパーが手渡してきたものを受け取ると、それは確かに一通の招待状だった。そこには見知らぬ筆跡で「心の集域映画祭」と書かれている。",
+                "ko": "당신은 화이트 게이트 수호자가 건네준 물건을 받았다. 정교하게 제작된 초대장에 낯선 필적으로 쓰인 「마음의 영역 영화제」가 당신의 눈에 들어왔다",
+                "th": "ผู้พิทักษ์ประตู Ivory ยื่นบัตรเชิญที่จัดทำอย่างประณีตให้แก่คุณ ระหว่างที่คุณอ่านลายมือที่ไม่คุ้นเคย คุณก็สะดุดตากับคำว่า \"เทศกาลภาพยนตร์โซลาริส\"",
+                "zh-Hans": "你接过了白色守门人递来的东西：一封制作精美的邀请函，由陌生字迹写就的“心之集域电影节”映入你眼中。",
+                "zh-Hant": "你接過了白色守門人遞來的東西：一封製作精美的邀請函，由陌生字跡寫就的「心之集域電影節」映入你眼中。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist das?",
+                    "en": "What is this?",
+                    "es": "¿Qué es esto?",
+                    "fr": "Qu'est-ce que c'est ?",
+                    "ja": "これは？",
+                    "ko": "이게 뭐죠?",
+                    "th": "นี่มันอะไรกัน",
+                    "zh-Hans": "这是什么东西？",
+                    "zh-Hant": "這是什麼東西？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Habt ihr beiden das organisiert?",
+                    "en": "Did you two organize this?",
+                    "es": "¿Lo habéis organizado vosotros dos?",
+                    "fr": "C'est vous qui avez organisé ça ?",
+                    "ja": "{Male=二人が主催者なのか？;Female=二人が主催者なの？}",
+                    "ko": "두 분이 개최하는 건가요?",
+                    "th": "พวกคุณเป็นคนจัดงานนี้เหรอ",
+                    "zh-Hans": "你俩举办的吗？",
+                    "zh-Hant": "你倆舉辦的嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich weiß nicht.",
+                "en": "I don't know.",
+                "es": "No lo sé.",
+                "fr": "Je ne sais pas.",
+                "ja": "分からない。",
+                "ko": "저도 모르겠어요",
+                "th": "ฉันไม่รู้",
+                "zh-Hans": "我不知道。",
+                "zh-Hant": "我不知道。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                },
+                "entity": {
+                  "entityId": 176800034,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0998",
+                  "name": "TsEntity_肉鸽_黑羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860126,
+                    "y": 668249,
+                    "z": 489
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "… Nein, wir waren es nicht.",
+                "en": "...No, it wasn't us.",
+                "es": "... No, no es cosa nuestra.",
+                "fr": "Non, on n'a rien à voir là-dedans.",
+                "ja": "……いや。",
+                "ko": "...아뇨",
+                "th": "...ไม่ ไม่ใช่พวกเรา",
+                "zh-Hans": "……不是。",
+                "zh-Hant": "……不是。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                },
+                "entity": {
+                  "entityId": 176800034,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0998",
+                  "name": "TsEntity_肉鸽_黑羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860126,
+                    "y": 668249,
+                    "z": 489
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist auch für uns eine Premiere. Die Einladung hat zweifellos die tiefen Traumsequenzen des Somnoire, aber … das ist eine Traumwelt. Gegenstände aus Träumen sollten nicht in der Wirklichkeit auftauchen.",
+                "en": "This is a first for us as well. The invitation undeniably carries the deep dream frequencies of the Somnoire, but… that's a dreamscape. Objects from a dream aren't supposed to manifest in reality.",
+                "es": "Para nosotros también es una sorpresa. Sin duda, la invitación tiene las frecuencias profundas de Somnolencia, pero... es un sueño. Y los objetos de los sueños no deberían manifestarse en la vida real.",
+                "fr": "C'est nouveau pour nous aussi. Clairement, l'invitation contient les fréquences oniriques profondes du Somnoire, mais… en tout cas, c'est le domaine du rêve. Les objets du rêve ne sont pas censés se manifester dans la vraie vie.",
+                "ja": "私たちもこのような招待状を受け取るのは初めてのことなのだが、周波数は間違いなく集域の深層の夢からのもの。でも、あれはあくまで夢であり、夢から現実に物が届くなんてありえない。",
+                "ko": "저희도 이런 상황은 처음이에요. 초대장에서 의심할 여지 없이 마음의 영역 깊은 곳에 존재하는 꿈의 주파수가 느껴져요. 하지만 그건 그저 꿈일 뿐, 아쉽게도 꿈속에서 현실로 보낼 수 있는 물건은 없어요",
+                "th": "พวกเราก็เพิ่งเคยเห็นเหมือนกัน บัตรเชิญนั่นมีความถี่ความฝันลึกของแดนจิตนิมิตอย่างชัดเจน แต่ว่า... นั่นมันดินแดนแห่งความฝัน วัตถุจากความฝันไม่ควรโผล่มาในความเป็นจริงได้",
+                "zh-Hans": "我们也是第一次遇到这种状况。邀请函上读取到的是心之集域深层的梦境频率无疑，但——那是梦境，梦境中不该有能送到现实中的物件。",
+                "zh-Hant": "我們也是第一次遇到這種狀況。邀請函上讀取到的是心之集域深層的夢境頻率無疑，但——那是夢境，夢境中不該有能送到現實中的物件。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "…",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "…",
+                    "ja": "……",
+                    "ko": "...",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wir haben zwei Vermutungen: Erstens: Das Somnoire hat ein eigenes Bewusstsein entwickelt. Zweitens: Eine unbekannte Person im Inneren des Somnoire scheint fähig zu sein, die Grenze zwischen Traum und Wirklichkeit verschwimmen zu lassen. Bislang war uns ihre Existenz nicht bekannt.",
+                "en": "We have two theories. One, the Somnoire has developed a consciousness of its own. Two, someone within the Somnoire possesses an ability powerful enough to shatter the boundary between dreams and reality, someone we never knew existed.",
+                "es": "Tenemos dos teorías: la primera es que Somnolencia ha desarrollado conciencia propia. La segunda, que alguien de Somnolencia posee una habilidad suficientemente poderosa como para romper la barrera entre sueño y realidad. Hasta ahora no sabíamos que existiera alguien así.",
+                "fr": "Nous avons deux théories. Soit le Somnoire a développé sa propre conscience, soit quelqu'un à l'intérieur du Somnoire possède une capacité suffisamment puissante pour briser la frontière entre les rêves et la réalité. Quelqu'un dont on ignorait l'existence jusqu'ici.",
+                "ja": "心の集域に自意識が生まれたのか、それとも、心の集域には私たちの知らない夢と現実の隔たりを打ち破る強大な存在がいるのか……",
+                "ko": "저희의 추측에 따르면, 첫 번째는 마음의 영역에 자아의식이 탄생했다는 것, 그리고 두 번째는 마음의 영역에 꿈과 현실의 족쇄를 깨뜨릴 수 있는 강력한 능력을 가진 누군가가 숨어 있다는 거예요...",
+                "th": "มีสองทฤษฎีที่เป็นไปได้ อย่างแรกคือแดนจิตนิมิตได้พัฒนาจิตสำนึกของตนเองขึ้นมา หรืออีกอย่างคือ ใครบางคนในแดนจิตนิมิตที่มีพลังมากพอจะทำลายเขตแดนระหว่างความฝันและความเป็นจริง บุคคลที่เราไม่เคยรู้ว่ามีตัวตน",
+                "zh-Hans": "我们有两个猜测：一是心之集域诞生了自我意识，二是，心之集域中还潜藏着不为我们所知、却拥有能打破梦境与现实桎梏的强大能力的人……",
+                "zh-Hant": "我們有兩個猜測：一是心之集域誕生了自我意識，二是，心之集域中還潛藏著不為我們所知、卻擁有能打破夢境與現實桎梏的強大能力的人……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und jetzt haben sie eine Einladung geschickt. Vielleicht hat sich endlich ein Weg zu den tieferen Schichten des Somnoire geöffnet.",
+                "en": "And now, they've sent an invitation. Maybe a path to the deeper layers of the Somnoire has finally opened.",
+                "es": "Y ahora mandan una invitación. Quizá al fin se haya abierto un camino a las capas más profundas de Somnolencia.",
+                "fr": "Et c'est cette personne qui aurait envoyé l'invitation. Peut-être qu'un chemin menant aux couches les plus profondes du Somnoire s'est enfin ouvert.",
+                "ja": "今、その存在が現実と繋がった。これは夢の深層への道が現れたということなのかもしれない。",
+                "ko": "그리고 지금 외부 세계에 러브콜을 보냈어요. 어쩌면 꿈의 아래층인 심해로 가는 길이 마침내 열린 걸 수도 있어요",
+                "th": "แล้วตอนนี้บุคคลนั้นก็ส่งบัตรเชิญมาให้ เส้นทางสู่แดนจิตนิมิตชั้นลึกลงไปอาจจะเปิดแล้วก็ได้นะ",
+                "zh-Hans": "并且，现在向外界发出了邀约。或许那条通往梦境下层的深水区的路，终于敞开了。",
+                "zh-Hant": "並且，現在向外界發出了邀約。或許那條通往夢境下層的深水區的路，終於敞開了。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                },
+                "entity": {
+                  "entityId": 176800034,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0998",
+                  "name": "TsEntity_肉鸽_黑羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860126,
+                    "y": 668249,
+                    "z": 489
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das klingt nach Ärger.",
+                    "en": "That sounds like trouble.",
+                    "es": "Eso puede traer problemas.",
+                    "fr": "Ça n'augure rien de bon.",
+                    "ja": "{Male=不穏な気配がする。;Female=不穏な気配がする。}",
+                    "ko": "큰일이네요",
+                    "th": "ฟังดูน่าปวดหัวจัง",
+                    "zh-Hans": "要有麻烦了。",
+                    "zh-Hant": "要有麻煩了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Oder … vielleicht ist es einfach nur ein neues Filmfest?",
+                    "en": "Or… maybe it's just a new film festival?",
+                    "es": "O... a lo mejor solo es un nuevo festival de cine.",
+                    "fr": "Ou alors… il s'agit juste d'un nouveau festival du film ?",
+                    "ja": "本当にただの映画祭なのでは？",
+                    "ko": "그냥 새로운 영화제 아닐까요?",
+                    "th": "หรืออาจจะ... เป็นแค่เทศกาลภาพยนตร์ครั้งใหม่เฉยๆ?",
+                    "zh-Hans": "或许真的只是一个新的电影节呢？",
+                    "zh-Hant": "或許真的只是一個新的電影節呢？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das tut es. Wir wissen zwar noch nichts über die wahren Absichten des Gastgebers, aber eines ist sicher: Keiner von uns Torwächtern kann die tieferen Schichten betreten. Nur du kannst das tun.",
+                "en": "It does. While we can't determine the host's true intentions yet, one thing is certain: neither of us Gatekeepers can access the deeper layers. Only you can.",
+                "es": "Pues sí. Todavía no sabemos qué intenciones hay detrás, pero una cosa es segura: ninguno de los Porteros podemos acceder a las capas más profundas. Solo tú.",
+                "fr": "C'est sûr. On ignore encore les véritables intentions de l'expéditeur, mais une chose est sûre : aucun de nous ne peut accéder aux couches les plus profondes. Il n'y a que toi qui peux t'y rendre.",
+                "ja": "ああ。主催者の目的はまだ分からない。だが、私も黒いのも権限がなく入ることのできない夢の深層、そこに行くことができるのはあなただけ。",
+                "ko": "맞아요! 아직 주최자의 목적이 뭔지 추측할 순 없지만, 한 가지 확실한 건 저희는 꿈의 깊은 곳까지 들어갈 수 있는 권한이 없어요. 그게 가능한 건 오직 당신뿐이죠",
+                "th": "เห็นด้วย ถึงเราจะไม่รู้ว่าผู้จัดงานมีเป้าหมายอะไร แต่ที่แน่ๆ พวกเราผู้พิทักษ์ประตูไม่สามารถลงไปยังชั้นลึกได้ มีแต่คุณเท่านั้น",
+                "zh-Hans": "没错！虽然现在还无法推断举办者的目的，但有一点是确定的：我和他并没有能进入梦境深层的权限，能进去的只有你。",
+                "zh-Hant": "沒錯！雖然現在還無法推斷舉辦者的目的，但有一點是確定的：我和他並沒有能進入夢境深層的權限，能進去的只有你。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast recht. Das ist nicht auszuschließen. Das Somnoire ist ein Ort voller unbegrenzten Möglichkeiten. Vielleicht ist etwas Neues entstanden, das nicht unbedingt Ärger bedeutet.",
+                "en": "You're right. There's no reason to dismiss that idea. The Somnoire is a place of endless possibilities. Maybe something new has come into existence, and it doesn't necessarily spell trouble.",
+                "es": "Tienes razón. No deberíamos descartar esa idea. Somnolencia es un lugar con posibilidades infinitas; puede que haya aparecido algo nuevo y no tiene por qué ser negativo ni traernos problemas.",
+                "fr": "Tu as raison. Il faut aussi prendre en compte cette éventualité. Le Somnoire est un lieu aux multiples possibilités. Peut-être que quelque chose de nouveau a vu le jour, et ce n'est pas forcément synonyme de chaos.",
+                "ja": "もちろん、その可能性もある。何せ心の集域には色んなことが起こり得るからな。新たに未知のものが生まれたからと言って、悪いほうに走るとも限らない。",
+                "ko": "그런 가설도 배제할 순 없죠... 마음의 영역에서는 모든 것이 가능하니까요. 새로운 미지의 것이 탄생했다고 해서 꼭 나쁜 것 만은 아닐 수도 있어요...",
+                "th": "คุณพูดถูก เราไม่มีสาเหตุที่ต้องปัดความคิดนั้นตกไป แดนจิตนิมิตคือสถานที่แห่งความเป็นไปได้อย่างไร้ที่สิ้นสุด อาจจะมีอะไรใหม่ๆ เกิดขึ้นมา แล้วก็ใช่ว่ามันจะต้องก่อปัญหาซะทีเดียว",
+                "zh-Hans": "确实也不能排除这种假设……毕竟心之集域中一切皆有可能，也许是有什么未知的新东西诞生了，未必就一定是坏的方向……",
+                "zh-Hant": "確實也不能排除這種假設……畢竟心之集域中一切皆有可能，也許是有什麼未知的新東西誕生了，未必就一定是壞的方向……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber keiner von uns Torwächtern kann die tieferen Schichten betreten. Nur du schaffst das.",
+                "en": "But neither of us Gatekeepers can access the deeper layers. Only you can.",
+                "es": "Pero ninguno de los Porteros podemos acceder a las capas más profundas. Solo tú.",
+                "fr": "Mais aucun de nous ne peut accéder aux couches les plus profondes. Il n'y a que toi qui peux t'y rendre.",
+                "ja": "だが、私も黒いのも夢の深層に入る権限がなく、あなたしか入れないのだ。",
+                "ko": "다만, 저희는 꿈의 깊은 곳에 들어갈 수 있는 권한이 없어요. 들어갈 수 있는 사람은 오직 당신뿐이에요",
+                "th": "แต่พวกเราเป็นผู้พิทักษ์ประตูไม่สามารถลงไปยังชั้นลึกได้ มีแต่คุณเท่านั้น",
+                "zh-Hans": "只是，我和他并没有能进入梦境深层的权限，能进去的只有你。",
+                "zh-Hant": "只是，我和他並沒有能進入夢境深層的權限，能進去的只有你。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit anderen Worten: Diese Einladung ist allein für dich bestimmt.",
+                "en": "In other words, this invitation was meant for you alone.",
+                "es": "En otras palabras: la invitación era solo para ti.",
+                "fr": "C'est-à-dire, cette invitation n'est destinée qu'à toi.",
+                "ja": "つまりだな、この映画祭に招待されているのは、あなたなんだ。",
+                "ko": "다시 말해서, 이 영화제가 정말로 초대하고 싶은 사람은 당신뿐이라는 거죠",
+                "th": "พูดอีกอย่างคือ บัตรเชิญนี้ส่งมาให้คุณโดยเฉพาะ",
+                "zh-Hans": "换而言之，这个电影节——真正想要邀请的人，其实只有你。",
+                "zh-Hant": "換而言之，這個電影節——真正想要邀請的人，其實只有你。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "…",
+                    "en": "...",
+                    "es": "...",
+                    "fr": "…",
+                    "ja": "……",
+                    "ko": "...",
+                    "th": "...",
+                    "zh-Hans": "……",
+                    "zh-Hant": "……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Sieht aus, als hätte ich keine andere Wahl.",
+                "en": "Looks like I don't have much of a choice.",
+                "es": "Parece que no tengo otra opción.",
+                "fr": "Je crois que je n'ai pas trop le choix, alors.",
+                "ja": "{Male=参加しないわけにはいかないようだ。;Female=参加しないわけにはいかないようだね。}",
+                "ko": "이번엔 갈 수 밖에 없겠군요",
+                "th": "ดูท่าฉันจะไม่มีทางเลือกสินะ",
+                "zh-Hans": "看来这趟是非去不可了。",
+                "zh-Hant": "看來這趟是非去不可了。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir können nur hoffen, dass die Einladung freundlich gemeint ist und du einfach nur ein Filmfest in einem Traum besuchst ... Aber was auch passiert, bleib wachsam. Wir unterstützen dich, so gut wir können.",
+                "en": "Our best hope is that the invitation comes with goodwill, and you are just attending a film festival within a dream... But no matter what happens, keep your guard up. We'll support you however we can.",
+                "es": "Vamos a confiar en que la invitación no va con mala fe. Espero que se trate de un festival de cine en un sueño y nada más, pero, por si acaso, no bajes la guardia. Nosotros te ayudaremos en lo que podamos.",
+                "fr": "Espérons que ce n'est qu'un simple festival de cinéma dans un rêve. Quoi qu'il arrive, reste sur tes gardes. Nous te soutiendrons du mieux qu'on peut.",
+                "ja": "最良のシナリオは、この招待状の送り主がただの善良な者で、ただ夢の中で映画祭を開催しようとしている、という展開だが……いずれにせよ警戒を怠ってはいけない。私たちもできる限り協力する。",
+                "ko": "가장 좋은 상황은, 초대한 사람이 선의를 품고 있는 것이죠. 이건 그저 꿈속에서 열리는 영화제일 뿐이긴 하지만 경계를 늦추지는 마세요. 저희 또한 최선을 다해 도와드릴게요",
+                "th": "หวังได้แค่ว่าคำเชิญนี้ถูกส่งมาด้วยเจตนาดี และคุณก็ไปเข้าร่วมเทศกาลภาพยนตร์ที่จัดขึ้นในฝันเฉยๆ... แต่ไม่ว่าจะเกิดอะไรขึ้น อย่าประมาทเด็ดขาด พวกเราจะสนับสนุนคุณเท่าทีเราทำได้",
+                "zh-Hans": "最好的情况是，来者抱有的是善意，这只是一场在梦中举办的电影节……但不论如何，不要放松警惕，我们会尽可能地给予你帮助。",
+                "zh-Hant": "最好的情況是，來者抱有的是善意，這只是一場在夢中舉辦的電影節……但不論如何，不要放鬆警惕，我們會盡可能地給予你幫助。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1220,
+                "name": {
+                  "zh-Hans": "白色守门人"
+                },
+                "entity": {
+                  "entityId": 176800035,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0999",
+                  "name": "TsEntity_肉鸽_白羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860161,
+                    "y": 668368,
+                    "z": 488
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -30
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn es sich als sicher herausstellt, genieße das Fest. Wir warten hier auf deine Rückkehr.",
+                "en": "If it turns out to be safe, enjoy the festival. We'll be waiting for your return.",
+                "es": "Si al final resulta ser inofensivo, disfruta del festival. Te estaremos esperando.",
+                "fr": "Si tu vois qu'il n'y a aucun danger, profite du festival. On t'attendra.",
+                "ja": "映画祭を楽しむのもいいが、どうか細心の注意を払いながら真相を探ってきてほしい。我々はここで待っていよう。",
+                "ko": "안전이 확보된 상황에서 영화제를 즐기세요. 무사히 돌아오기를 기다릴게요",
+                "th": "ถ้าไม่มีเรื่องร้ายแรงอะไร ก็ขอให้คุณสนุกไปกับเทศกาล แล้วเราจะรอคุณกลับมา",
+                "zh-Hans": "在确认安全的情况下，享受电影节。等你回来。",
+                "zh-Hant": "在確認安全的情況下，享受電影節。等你回來。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1218,
+                "name": {
+                  "zh-Hans": "黑色守门人"
+                },
+                "entity": {
+                  "entityId": 176800034,
+                  "mapId": 8,
+                  "blueprintType": "branch2.2_221_NPC0998",
+                  "name": "TsEntity_肉鸽_黑羊",
+                  "areaId": 23,
+                  "position": {
+                    "x": 860126,
+                    "y": 668249,
+                    "z": 489
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 10
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

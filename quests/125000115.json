@@ -1,0 +1,677 @@
+{
+  "id": 125000115,
+  "key": "三流画家2",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Drittklassiger Maler",
+    "en": "Third-rate Painter",
+    "es": "Pintor de tercera categoría",
+    "fr": "Un peintre très « célèbre »",
+    "ja": "三流画家",
+    "ko": "삼류 화가",
+    "th": "จิตรกรชั้นสาม",
+    "zh-Hans": "三流画家",
+    "zh-Hant": "三流畫家"
+  },
+  "desc": {
+    "de": "Der Maler bittet dich, ihm dabei zu helfen, Kunden zu werben. Arbeitet zusammen, um den Plan voranzutreiben.",
+    "en": "The painter begs that you help him solicit customers. Work together to push forward the plan.",
+    "es": "El pintor ruega que le ayudes a atraer clientes. Trabaja en conjunto para avanzar en el plan.",
+    "fr": "Le peintre revient vers vous, désespéré. Il veut attirer des clients. Aidez-le à réaliser son projet.",
+    "ja": "また画家から集客のアイデアを考えてほしいと頼まれた。",
+    "ko": "화가가 다시 한번 도움을 간청합니다. 그가 계획을 완료할 수 있도록 도와주세요",
+    "th": "จิตรกรขอร้องให้คุณช่วยหาลูกค้า ร่วมดำเนินการตามแผนกับเขา",
+    "zh-Hans": "画家再次恳求你帮他招揽生意，请配合他完成计划吧。",
+    "zh-Hant": "畫家再次懇求你幫他招攬生意，請配合他完成計畫吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Dianran",
+        "en": "Talk to Dianran",
+        "es": "Habla con Dianran",
+        "fr": "Parler à Dianran",
+        "ja": "点染と話す",
+        "ko": "주현과 대화",
+        "th": "คุยกับ Dianran",
+        "zh-Hans": "与点染交谈",
+        "zh-Hant": "與點染交談"
+      },
+      "entities": [
+        {
+          "entityId": 125001072,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "画画摆件控制器",
+          "areaId": 301,
+          "position": {
+            "x": -49268,
+            "y": 117941,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001074,
+          "mapId": 8,
+          "blueprintType": "SceneObj205",
+          "name": "椅子2",
+          "areaId": 301,
+          "position": {
+            "x": -49076,
+            "y": 117778,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001075,
+          "mapId": 8,
+          "blueprintType": "NPC0277",
+          "name": "点染2",
+          "areaId": 301,
+          "position": {
+            "x": -49312,
+            "y": 117780,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_三流画家",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Mein liebes Modell, wie gefällt dir dein Porträt?",
+                "en": "My dear model, how do you like your portrait?",
+                "es": "Mi querido modelo, ¿qué te parece tu retrato?",
+                "fr": "Amigo, un portrait, ça vous dit ?",
+                "ja": "どうぞどうぞ、「サクラ」さん！今日も肖像画、いかがですか？",
+                "ko": "저의 바람잡이가 왔군요, 초상화 한 번 더 그리실래요?",
+                "th": "คุณโมเดลที่รัก คุณอยากได้ภาพวาดของตัวเองไหม?",
+                "zh-Hans": "我的托，画像吗？",
+                "zh-Hant": "我的暗樁，畫像嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ugh... Nenn mich einfach Rover.",
+                    "en": "Ugh... Just call me Rover.",
+                    "es": "Ugh... Simplemente llámame Errante.",
+                    "fr": "... Pas d' « amigo », merci. Nomade, c'est bon.",
+                    "ja": "なんか気持ち悪い……漂泊者って呼んで。",
+                    "ko": "듣기 안 좋네요. 방랑자라고 불러주세요",
+                    "th": "เอ่อ... เรียกฉันว่าผู้พเนจรเถอะ",
+                    "zh-Hans": "好难听，还是叫我漂泊者吧。",
+                    "zh-Hant": "好難聽，還是叫我漂泊者吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Sicher.",
+                    "en": "Sure.",
+                    "es": "Seguro.",
+                    "fr": "Allons-y.",
+                    "ja": "いいだろう。",
+                    "ko": "네, 그러죠",
+                    "th": "ได้สิ",
+                    "zh-Hans": "来吧。",
+                    "zh-Hant": "來吧。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Kann ich ablehnen?",
+                    "en": "Can I refuse?",
+                    "es": "¿Puedo negarme?",
+                    "fr": "Puis-je refuser ?",
+                    "ja": "断っても？",
+                    "ko": "거절 가능할까요?",
+                    "th": "ฉันจะปฏิเสธได้ยังไงกัน?",
+                    "zh-Hans": "我能拒绝吗？",
+                    "zh-Hant": "我能拒絕嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Okay, du bist der Chef. Rover, bitte nimm Platz.",
+                "en": "Alright, you're the boss. Rover, please take a seat.",
+                "es": "Está bien, tú eres el jefe. Errante, por favor, toma asiento.",
+                "fr": "D'accord, vous êtes le patron, asseyez-vous, s'il vous plaît.",
+                "ja": "勿論です、漂泊者さん！ささ、こちらへ……",
+                "ko": "알겠어요, 방랑자. 여기 앉으세요",
+                "th": "ได้ตามคุณสั่งเลย ท่านผู้พเนจร เชิญนั่งตรงนี้เลย",
+                "zh-Hans": "行，您说啥算啥，请坐。",
+                "zh-Hant": "行，您說啥算啥，請坐。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Perfekt! Bitte nimm Platz.",
+                "en": "Perfect! Have a seat, please.",
+                "es": "¡Perfecto! Por favor, toma asiento.",
+                "fr": "D'accord ! Asseyez-vous.",
+                "ja": "ありがとうございます！ささ、こちらへ……",
+                "ko": "네! 여기 앉으세요",
+                "th": "เยี่ยมเลย! เชิญนั่งก่อนนะ",
+                "zh-Hans": "好嘞！您坐。",
+                "zh-Hant": "好嘞！您坐。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "...Kannst du die Bitte eines bescheidenen Künstlers ablehnen?",
+                "en": "...Can you refuse a humble artist's request?",
+                "es": "...¿Puedes negarte a la petición de un humilde artista?",
+                "fr": "...S'il vous plaît ?",
+                "ja": "……この僕の瞳を見て、同じことが言えますか？",
+                "ko": "...냉정하시네요",
+                "th": "...คุณจะปฏิเสธคำขอของศิลปินผู้ต่ำต้อยคนนี้ได้เหรอ?",
+                "zh-Hans": "……你忍心吗？",
+                "zh-Hant": "……你忍心嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ja. Tschüss.",
+                    "en": "Yes. Bye.",
+                    "es": "Sí. Adiós.",
+                    "fr": "Non, merci.",
+                    "ja": "言える。",
+                    "ko": "네, 저 냉정해요",
+                    "th": "ใช่ ลาก่อน",
+                    "zh-Hans": "我忍心。",
+                    "zh-Hant": "我忍心。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Gut, mach weiter.",
+                    "en": "Fine, go on.",
+                    "es": "Está bien, continúa.",
+                    "fr": "...D'accord, vous pouvez dessiner.",
+                    "ja": "……もういい。好きにして。",
+                    "ko": "...됐어요, 그냥 그리세요",
+                    "th": "ก็ได้ มีอะไรว่ามา",
+                    "zh-Hans": "……算了，你画吧。",
+                    "zh-Hant": "……算了，你畫吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Bleib, bitte! Mein Lebensretter! Meine einzige Hoffnung! Bitte hilf mir! Niemand sonst ist bereit, mich zu unterstützen, außer dir! Ich bitte dich!",
+                "en": "Stay, please! My life saver! My only hope! Please help me! No one else is willing to support me except for you! I'm begging you!",
+                "es": "¡Quédate, por favor! ¡Mi salvador! ¡Mi única esperanza! ¡Por favor, ayúdame! ¡Nadie más está dispuesto a apoyarme excepto tú! ¡Te lo ruego!",
+                "fr": "Non ! Mon sauveur, vous êtes mon sauveur, aidez-moi, s'il vous plaît, personne d'autre ne veut me soutenir, je vous en supplie, je vous en supplie...",
+                "ja": "そんな！恩人さん！僕の恩人さ～ん！助けてください！あなた以外に頼れる人がいないんです！お願いします！何卒……お願いします！",
+                "ko": "아, 안돼요! 은인, 생명의 은인, 저 좀 도와주세요. 방랑자 말고는 절 지지해 줄 사람이 없어요. 제발요... 제발...",
+                "th": "ได้โปรดอยู่ก่อนเถอะนะ! ผู้มีพระคุณของฉัน! คุณคือความหวังเดียวของฉันเลยนะ! โปรดช่วยฉันด้วย! นอกจากคุณแล้วก็ไม่มีใครยอมช่วยฉันอีกแล้ว! ฉันขอร้องคุณล่ะ!",
+                "zh-Hans": "别啊！恩人，救命恩人，你就帮帮我嘛，除了你没有别人愿意支持我了，求你了，求你了……",
+                "zh-Hant": "別啊！恩人，救命恩人，你就幫幫我嘛，除了你沒有別人願意支持我了，求你了，求你了……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Gut, ich helfe dir.",
+                    "en": "Fine, I'll help you.",
+                    "es": "Está bien, te ayudaré.",
+                    "fr": "D'accord, je vais vous aider.",
+                    "ja": "……わかったわかった。",
+                    "ko": "알겠어요. 도와줄게요",
+                    "th": "ก็ได้ ฉันจะช่วยเอง",
+                    "zh-Hans": "好吧，我帮你。",
+                    "zh-Hant": "好吧，我幫你。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Danke! Deine Unterstützung bedeutet mir alles!",
+                "en": "Thank you! Your support means the world to me!",
+                "es": "¡Gracias! ¡Tu apoyo significa el mundo para mí!",
+                "fr": "Merci, mon sauveur...!",
+                "ja": "ありがとうございましゅうう……！",
+                "ko": "감사합니다. 제 은인이세요... 흑흑흑...",
+                "th": "ขอบคุณมาก! ความช่วยเหลือของคุณมีความหมายต่อฉันมากจริงๆ!",
+                "zh-Hans": "谢谢恩人呜呜呜……",
+                "zh-Hant": "謝謝恩人嗚嗚嗚……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielen Dank! Ich wusste, du würdest mich nicht im Stich lassen!",
+                "en": "Thanks a bunch! I knew you wouldn't let me down!",
+                "es": "¡Muchas gracias! Sabía que no me defraudarías.",
+                "fr": "Merci ! Je savais que vous ne m'abandonneriez pas !",
+                "ja": "ありがとう……！僕を見捨てないでくれて……",
+                "ko": "감사해요, 전 방랑자가 포기하지 않을 줄 알았어요",
+                "th": "ขอบคุณมาก! ฉันรู้ว่าคุณต้องไม่ทำให้ฉันผิดหวังแน่!",
+                "zh-Hans": "谢谢！我就知道你不会放弃我的！",
+                "zh-Hant": "謝謝！我就知道你不會放棄我的！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Setz dich",
+        "en": "Sit Down",
+        "es": "Siéntate.",
+        "fr": "S'asseoir",
+        "ja": "座る",
+        "ko": "앉기",
+        "th": "นั่งลง",
+        "zh-Hans": "坐下",
+        "zh-Hant": "坐下"
+      },
+      "entities": [
+        {
+          "entityId": 125001074,
+          "mapId": 8,
+          "blueprintType": "SceneObj205",
+          "name": "椅子2",
+          "areaId": 301,
+          "position": {
+            "x": -49076,
+            "y": 117778,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Dianran",
+        "en": "Talk to Dianran",
+        "es": "Habla con Dianran",
+        "fr": "Parler à Dianran",
+        "ja": "点染と話す",
+        "ko": "주현과 대화",
+        "th": "คุยกับ Dianran",
+        "zh-Hans": "与点染交谈",
+        "zh-Hant": "與點染交談"
+      },
+      "entities": [
+        {
+          "entityId": 125001072,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "画画摆件控制器",
+          "areaId": 301,
+          "position": {
+            "x": -49268,
+            "y": 117941,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 125001075,
+          "mapId": 8,
+          "blueprintType": "NPC0277",
+          "name": "点染2",
+          "areaId": 301,
+          "position": {
+            "x": -49312,
+            "y": 117780,
+            "z": 1544
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_三流画家",
+          "flowIndex": 2,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie habe ich diesmal abgeschnitten?",
+                "en": "How'd I do this time?",
+                "es": "¿Cómo lo hice esta vez?",
+                "fr": "Comment trouvez-vous mon dessin cette fois-ci ?",
+                "ja": "今回はどうですか？",
+                "ko": "이번 그림은 어떠세요?",
+                "th": "ครั้งนี้ฉันเป็นยังไงบ้าง?",
+                "zh-Hans": "你看我这次画得怎么样？",
+                "zh-Hant": "你看我這次畫得怎麼樣？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Du bist schneller im Malen geworden.",
+                    "en": "You've gotten faster at painting.",
+                    "es": "Has pintado más rápido.",
+                    "fr": "C'était plutôt rapide, n'est-ce pas...",
+                    "ja": "随分速かったね……",
+                    "ko": "...그림 그리는 속도가 빨라졌네요",
+                    "th": "คุณวาดภาพได้เร็วขึ้นนะ",
+                    "zh-Hans": "……你画画速度变快了。",
+                    "zh-Hant": "……你畫畫速度變快了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nun... Ich habe in letzter Zeit ziemlich viele Leute eingestellt, um für mich zu werben. Also werde ich schneller mit meinem Malen. Übung macht den Meister, hehe!",
+                "en": "Well... I've hired quite a few people to shill for me lately, so I'm getting faster with my painting. Practice makes perfect, hehe!",
+                "es": "Bueno... He contratado a bastantes personas para que me hagan publicidad últimamente, así que estoy pintando más rápido. La práctica hace la perfección, ¡jeje!",
+                "fr": "Hélas, j'ai dessiné beaucoup… gratuitement. Dessiner en grande quantité m'a rendu plus rapide. Hehe.",
+                "ja": "それは……最近「サクラ」をいっぱいに頼んだせいですかね？大量に描いたら何故か早くなりました。へへっ。",
+                "ko": "아, 이거... 요즘 바람잡이를 많이 고용했는데 그림을 많이 그릴수록 손도 빨라지더라고요. 익숙해지면 요령이 생기잖아요, 헤헤",
+                "th": "เอ่อ... ช่วงนี้ฉันจ้างคนมาเป็นแบบบ่อยขึ้นน่ะ ฉันก็เลยวาดเร็วขึ้น ฝึกฝนบ่อยๆ เดี๋ยวก็เก่งเองใช่ไหมล่ะ ฮิฮิ!",
+                "zh-Hans": "啊这个……最近找了不少托，画得多了手速自然就上来了，熟能生巧嘛，嘿嘿。",
+                "zh-Hant": "啊這個……最近找了不少暗樁，畫得多了手速自然就上來了，熟能生巧嘛，嘿嘿。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich verstehe.",
+                    "en": "I see.",
+                    "es": "Ya veo.",
+                    "fr": "Je vois...",
+                    "ja": "なるほど……",
+                    "ko": "그렇군요",
+                    "th": "อย่างนี้นี่เอง",
+                    "zh-Hans": "原来是这样。",
+                    "zh-Hant": "原來是這樣。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du warst bei anderen Strohmännern!",
+                    "en": "You've been with other shills!",
+                    "es": "¡Has estado con otros publicistas!",
+                    "fr": "Alors, il y a d'autres « Amigos ».",
+                    "ja": "他に「サクラ」もいるなんて……ガッカリ……",
+                    "ko": "다른 바람잡이가 있다니요?",
+                    "th": "คุณจ้างคนอื่นมาเป็นแบบด้วยสินะ!",
+                    "zh-Hans": "原来你还有其他托。",
+                    "zh-Hant": "原來你還有其他暗樁。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Uh-oh, sei nicht sauer! Du bist immer der professionellste und geduldigste von all meinen Strohmännern!",
+                "en": "Uh-oh, don't be mad! You're always the most professional and patient of all my shills!",
+                "es": "¡Uh-oh, no te enfades! ¡Siempre eres el más profesional y paciente de todos mis promotores!",
+                "fr": "Mais... malgré tout, vous êtes le plus coopératif! Vous êtes celui avec qui j'ai la plus longue relation, n'est-ce pas !",
+                "ja": "そ……それでも、あなたは一番協力的で、一番付き合いが長いじゃないですか！",
+                "ko": "음... 맞아요. 하지만 화내지 마세요! 방랑자는 제가 만난 바람잡이 중 가장 전문적이고 참을성 있는 바람잡이예요!",
+                "th": "โอ๊ย อย่าเพิ่งโกรธสิ! ในบรรดาคนที่ฉันจ้างมาเป็นแบบทั้งหมด คุณเป็นมืออาชีพและอดทนมากที่สุดเลยนะ!",
+                "zh-Hans": "呃…是这样，但是你别生气，你是我遇到的最专业、最有耐心的托！",
+                "zh-Hant": "呃…是這樣，但是你別生氣，你是我遇到的最專業、最有耐心的暗樁！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dank dieser Modelle läuft mein Geschäft gut, aber viele Kunden haben immer noch das Gefühl, dass meine Gemälde sie nicht ganz einfangen, also habe ich nicht viel Geld verdient.",
+                "en": "Thanks to these models, my business is thriving, but many customers still feel my paintings don't quite capture them, so I haven't made much money.",
+                "es": "Gracias a estos modelos, mi negocio está prosperando, pero muchos clientes aún sienten que mis pinturas no los capturan del todo, así que no he ganado mucho dinero.",
+                "fr": "En fait, grâce à ces faux clients, quelques vrais clients viennent aussi...La réputation de ne pas ressembler beaucoup ne change pas. Je ne gagne pas beaucoup d'argent...",
+                "ja": "実はこういう偽客のお陰で、本当のお客さんもわずかですが来てくれています……あまり似てないという評判は変わらないので、特に儲かってはいないのですが……",
+                "ko": "이 가짜 손님들 덕분에 최근에 장사가 좀 됐는데, 하지만 어떤 분들은 제가 못 그린다고 생각하셔서 실제로는 돈을 많이 벌지 못했어요",
+                "th": "ต้องขอบคุณนายแบบนางแบบทั้งหลายที่ทำให้ธุรกิจของฉันไปได้สวยขึ้น แต่ลูกค้าหลายคนก็ยังรู้สึกว่าภาพของฉันยังไม่โดนใจพวกเขาเท่าไร ก็เลยยังทำเงินได้ไม่มากน่ะ",
+                "zh-Hans": "受这些假客人的影响，我最近还真有了些生意，但是有的人觉得我画得不像，所以其实也没赚到什么钱。",
+                "zh-Hant": "受這些假客人的影響，我最近還真有了些生意，但是有的人覺得我畫得不像，所以其實也沒賺到什麼錢。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, ich werde nicht aufhören zu üben! Danke für deine Hilfe! Oh, warte! Jemand dort drüben scheint an meinem Gemälde interessiert zu sein!",
+                "en": "Anyway, I won't give up practicing! Thanks for your help! Oh, wait! Someone over there seems interested in my painting!",
+                "es": "De todos modos, no dejaré de practicar! ¡Gracias por tu ayuda! ¡Oh, espera! ¡Alguien por allí parece interesado en mi pintura!",
+                "fr": "Mais je continuerai à suivre la voie de l'art ! Merci pour votre coopé... Ah ! Quelqu'un me regarde !",
+                "ja": "でも大丈夫！僕は絵描きの道をこれからも進み続けます！ご協力ありが……あ！誰か見てくれてます！",
+                "ko": "아무튼 저는 연습을 포기하지 않을 거예요! 도와주고 응원해 주셔서 감사해요... 잠깐만, 누군가 이쪽을 보고 있는 것 같아요!",
+                "th": "แต่ยังไงเสีย ฉันจะไม่หยุดฝึกฝนหรอกนะ! ขอบคุณที่มาช่วยนะ! อ๊ะ เดี๋ยวก่อน! เหมือนจะมีใครตรงโน้นสนใจภาพวาดของฉันแล้วสิ!",
+                "zh-Hans": "不说了，我是不会放弃练习的！谢谢你的帮助和捧场……等等，好像有个人在往这边看呢！",
+                "zh-Hant": "不說了，我是不會放棄練習的！謝謝你的幫助和捧場……等等，好像有個人在往這邊看呢！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Sieht so aus, als hätte dein Plan funktioniert. Ich gehe jetzt.",
+                    "en": "Looks like your plan worked. I'm leaving.",
+                    "es": "Parece que tu plan funcionó. Me voy.",
+                    "fr": "Bien.",
+                    "ja": "計画通りだね。",
+                    "ko": "계획이 성공한 것 같네요, 그럼 이만!",
+                    "th": "ดูเหมือนว่าแผนของคุณจะได้ผลนะ งั้นฉันขอตัวก่อน",
+                    "zh-Hans": "看起来计划成功了，那我走了。",
+                    "zh-Hant": "看起來計劃成功了，那我走了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "In Ordnung! Ich werde auf diesen potenziellen Kunden zugehen. Bis dann!",
+                "en": "Alright! I'm going to approach that potential customer. See you!",
+                "es": "¡Bien! Voy a acercarme a ese posible cliente. ¡Nos vemos!",
+                "fr": "D'accord ! J'essaie d'attaquer ce client ! Allez !",
+                "ja": "はい！あのお客さんにアタックしてみます！では！",
+                "ko": "네! 그럼 제가 지금 바로 저 잠재 고객을 잡아와야겠어요! 다음에 또 만나요!",
+                "th": "โอเค! ฉันขอตัวไปต้อนรับลูกค้าผู้มุ่งหวังโน่นก่อนนะ ไว้เจอกันใหม่!",
+                "zh-Hans": "好！我现在就去把这个潜在客人抓过来，回见！",
+                "zh-Hant": "好！我現在就去把這個潛在客人抓過來，回見！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1267,
+                "name": {
+                  "zh-Hans": "点染"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_每日_三流画家",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Dianran hat das Gemälde schnell fertiggestellt.",
+                "en": "Dianran quickly completes the painting.",
+                "es": "Dianran terminó rápidamente la pintura.",
+                "fr": "Dianran termine rapidement le dessin.",
+                "ja": "点染は驚異的な速さで描き上げた。",
+                "ko": "주현이 빠른 속도로 그림을 완료했다",
+                "th": "Dianran วาดภาพเสร็จอย่างรวดเร็ว",
+                "zh-Hans": "点染很快完成了画作。",
+                "zh-Hant": "點染很快完成了畫作。"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

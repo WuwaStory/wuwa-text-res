@@ -1,0 +1,130 @@
+{
+  "id": 169700007,
+  "key": "远行公路",
+  "type": "branch",
+  "typeId": 11,
+  "name": {
+    "de": "Wandererstraße",
+    "en": "Farer's Road",
+    "es": "Camino del Viajero",
+    "fr": "Route du Voyageur",
+    "ja": "トラベラーズ・ロード",
+    "ko": "페얼스 도로",
+    "th": "เส้นทางสู่แดนไกล",
+    "zh-Hans": "远行公路",
+    "zh-Hant": "遠行公路"
+  },
+  "desc": {
+    "de": "Setze den Wiederaufbau von Wandererstraße fort.",
+    "en": "Rebuild Farer's Road",
+    "es": "Reconstruye el Camino del Viajero.",
+    "fr": "Reconstruire la Route du Voyageur",
+    "ja": "トラベラーズ・ロードの再建を進める",
+    "ko": "페얼스 도로 건설 진행하기",
+    "th": "ดำเนินการฟื้นฟูเส้นทางสู่แดนไกล",
+    "zh-Hans": "进行远行公路的重建",
+    "zh-Hant": "進行遠行公路的重建"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 169700051,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_5",
+          "areaId": 36111,
+          "position": {
+            "x": -18947,
+            "y": -467549,
+            "z": 36005
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 169700051,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_5",
+          "areaId": 36111,
+          "position": {
+            "x": -18947,
+            "y": -467549,
+            "z": 36005
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 169700193,
+          "mapId": 906,
+          "blueprintType": "branch3.0_693_Treasure_3_3",
+          "name": "TsEntity_3_0_精密物资箱5",
+          "areaId": 36111,
+          "position": {
+            "x": -19519,
+            "y": -467349,
+            "z": 35966
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

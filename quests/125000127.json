@@ -1,0 +1,635 @@
+{
+  "id": 125000127,
+  "key": "2_4_七丘主线后日谈_卡提希娅",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Drei Wünsche",
+    "en": "Three Wishes",
+    "es": "Tres deseos",
+    "fr": "Trois voeux",
+    "ja": "三つの願い",
+    "ko": "세 가지 소원",
+    "th": "สามคำอธิษฐาน",
+    "zh-Hans": "三个愿望",
+    "zh-Hant": "三個願望"
+  },
+  "desc": {
+    "de": "Die Unruhen in Septimont sind vorbei. Genieße den Moment der friedlichen Ruhe mit deiner Reisebegleiterin.",
+    "en": "The turmoil in Septimont has been resolved. Enjoy the moment of peaceful respite with your fellow traveler.",
+    "es": "El caos en Septimont se ha resuelto. Disfruta de este momento de respiro pacífico junto a tu compañera de viaje.",
+    "fr": "Les troubles à Septimont ont été résolus. Profitez de ce moment de répit paisible avec votre campagne de voyage.",
+    "ja": "セブン・ヒルズの波乱がようやく収まった今、ずっと探し続けた彼女と、この束の間の安らぎを分かち合おう。",
+    "ko": "일곱 언덕의 풍파가 일단락되었으니 당신이 찾고 있던 그녀와 이 순간의 고요함을 즐기세요",
+    "th": "ความโกลาหลในเซปติมอนต์คลี่คลายแล้ว ขอให้สนุกไปกับช่วงเวลาแห่งการพักผ่อนอันเงียบสงบร่วมกับเพื่อนร่วมเดินทางของคุณ",
+    "zh-Hans": "七丘的风波告一段落，和你一路寻找的她享受这片刻宁静吧。",
+    "zh-Hant": "七丘的風波告一段落，和你一路尋找的她享受這片刻寧靜吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Restaurant und sprich mit Cartethyia.",
+        "en": "Go to the restaurant and talk to Cartethyia",
+        "es": "Ve al restaurante y habla con Cartethyia.",
+        "fr": "Se rendre au restaurant et parler à Cartethyia",
+        "ja": "「ソリス」に向かい、カルテジアと会話する",
+        "ko": "식당으로 이동하여 카르티시아와 대화",
+        "th": "ไปที่ร้านอาหารแล้วคุยกับ Cartethyia",
+        "zh-Hans": "前往餐馆，和卡提希娅聊聊",
+        "zh-Hant": "前往餐館，和卡提希婭聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 125001424,
+          "mapId": 8,
+          "blueprintType": "branch2.0_Player2",
+          "name": "TsEntity_角色034_卡提希娅4",
+          "areaId": 33104,
+          "position": {
+            "x": 1243874,
+            "y": 1176123,
+            "z": 51249
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 38
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Drei Wünsche",
+        "en": "Three Wishes",
+        "es": "Tres deseos",
+        "fr": "Trois voeux",
+        "ja": "三つの願い",
+        "ko": "세 가지 소원",
+        "th": "สามคำอธิษฐาน",
+        "zh-Hans": "三个愿望",
+        "zh-Hant": "三個願望"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_七丘主线_放水后日谈",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {},
+              "id": 1,
+              "options": [
+                {
+                  "text": {
+                    "de": "Was hast du gerade gegessen?",
+                    "en": "What were you eating just now?",
+                    "es": "¿Qué estabas comiendo?",
+                    "fr": "Qu'est-ce que tu mangeais ?",
+                    "ja": "{Male=何を食べてたんだ？;Female=何を食べてたの？}",
+                    "ko": "방금 뭐 먹고 있었어요?",
+                    "th": "เมื่อกี้เธอกินอะไรอยู่น่ะ?",
+                    "zh-Hans": "你刚才在吃什么？",
+                    "zh-Hant": "你剛才在吃什麼？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Hast du mir was übrig gelassen?",
+                    "en": "Didn't save me a bite?",
+                    "es": "¿No me has guardado ni un bocado?",
+                    "fr": "Tu ne m'as pas gardé un morceau ?",
+                    "ja": "一口残しておいてほしかった！",
+                    "ko": "왜 한 입도 안 남겨줘요!",
+                    "th": "ไม่เหลือให้ฉันสักคำเลยเหรอ?",
+                    "zh-Hans": "怎么不给我留一口！",
+                    "zh-Hant": "怎麼不給我留一口！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ah … es ist alles weg. Aber ich frage den Wirt, ob er später noch was für dich machen kann.",
+                "en": "Ah... it's all gone now. But I'll ask the tavern keeper if he can prepare something for you later.",
+                "es": "Ah... Ya no queda. Pero le pediré a la tabernera que te prepare algo luego.",
+                "fr": "Ah… Désolée, il ne reste rien. Je demanderai à la patronne s'il peut te mijoter quelque chose.",
+                "ja": "あっ……もう完食してしまいました。また今度、厨房を借りて作りましょうか。",
+                "ko": "버... 벌써 다 먹었는데... 이따가 주방을 빌려서 새로 만들어 드릴게요",
+                "th": "อ๊ะ... หมดแล้วล่ะ แต่เดี๋ยวฉันจะลองถามเจ้าของร้านดูว่าจะทำอีกจานให้คุณได้มั้ย",
+                "zh-Hans": "啊……已经吃完了，等会儿我再借老板的厨房给你做一份吧。",
+                "zh-Hant": "啊……已經吃完了，等會我再借老闆的廚房給你做一份吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Laurus-Salat war so lecker wie immer. Es hat sich gelohnt, ihn mal wieder zu probieren. Jetzt kann ich ihn selbst machen.",
+                "en": "The Laurus Salad was as delightful as ever. Well worth reacquainting myself with so I can make a bowl myself.",
+                "es": "La Ensalada de Laurus estaba tan rica como siempre. Merece la pena volver a probarla, a ver si así podría prepararla yo misma.",
+                "fr": "La salade Laurus reste un de mes plats préférés. J'ai bien fait de renouer avec la recette pour la préparer moi-même.",
+                "ja": "ラウルスサラダは前と同じ味で美味しかったです。いっぱい練習した甲斐がありました。",
+                "ko": "푸른 가지 월계 샐러드는 여전히 맛있네요. 다시 연습해서 만든 보람이 있어요",
+                "th": "สลัดลอรัสยังคงอร่อยเหมือนเดิม คุ้มจริงๆ ที่ได้กลับมาลิ้มรสชาติอีกครั้ง จะได้ลองเอาไปทำเองดูบ้าง",
+                "zh-Hans": "青枝月桂沙拉还是和以前一样美味，不枉我重新练手，给自己做了一份。",
+                "zh-Hant": "青枝月桂沙拉還是和以前一樣美味，不枉我重新練手，給自己做了一份。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Frisch, knackig, süß … Heh.",
+                "en": "Fresh, crisp, sweet... Heh.",
+                "es": "Fresca, crujiente, dulce... Je.",
+                "fr": "Fraîche, croustillante et un peu sucrée…",
+                "ja": "爽やかで甘い味付けになっています……ふふっ",
+                "ko": "상큼하고, 시원하고, 아삭아삭하기까지...",
+                "th": "ทั้งสดชื่น ทั้งกรอบ ทั้งหวาน... ฮิๆ",
+                "zh-Hans": "清新、爽口、脆甜……呵呵。",
+                "zh-Hant": "清新、爽口、脆甜……呵呵。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm, setz dich zu mir, {PlayerName}. Gönnen wir uns eine ruhige Minute.",
+                "en": "Come, sit with me, {PlayerName}. Let's enjoy a moment of peace.",
+                "es": "Ven, siéntate conmigo, {PlayerName}. Disfrutemos de un momento de paz.",
+                "fr": "Viens, assieds-toi avec moi. Profitons d'un moment de paix.",
+                "ja": "どうぞ座ってください。少しお話をしませんか。",
+                "ko": "앗, 여기 앉으세요, {PlayerName}. 잠깐 얘기 좀 할까요?",
+                "th": "นั่งสิ {PlayerName} มาดื่มด่ำกับความสงบสุขกันสักหน่อย",
+                "zh-Hans": "坐吧，{PlayerName}，我们聊会儿天。",
+                "zh-Hant": "坐吧，{PlayerName}，我們聊會兒天。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Dein Geschmackssinn ist also wieder da?",
+                    "en": "It seems your sense of taste has returned then?",
+                    "es": "Parece que tu sentido del gusto ha vuelto, ¿eh?",
+                    "fr": "J'en déduis que tu as retrouvé le sens du goût ?",
+                    "ja": "{Male=味覚はもう治ったのか？;Female=味覚はもう治ったの？}",
+                    "ko": "미각은 회복됐나요?",
+                    "th": "ดูเหมือนว่าการรับรสของเธอกลับมาแล้วใช่ไหม?",
+                    "zh-Hans": "你的味觉已经恢复了？",
+                    "zh-Hant": "你的味覺已經恢復了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja … ich habe darüber nachgedacht, was ich dir geschworen habe.",
+                "en": "Yes, and so... I've been thinking about what I vowed to you before.",
+                "es": "Sí, y por eso... he estado pensando en aquello que te juré.",
+                "fr": "Oui, et… J'ai réfléchi à la promesse que je t'ai faite.",
+                "ja": "ええ……なので、前に言っていた新しい目標を実践しようと思いまして。",
+                "ko": "네. 그래서... 전에 말한 새로운 목표에 도전하려고요",
+                "th": "อื้ม นี่ทำให้ฉันนึกถึงคำสัญญาที่เคยให้ไว้กับคุณด้วย",
+                "zh-Hans": "嗯，所以……我就想，我要实践之前你和我说的新目标。",
+                "zh-Hant": "嗯，所以……我就想，我要實踐之前你和我說的新目標。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Dinge zu genießen, die ich mir wünsche, die Orte zu besuchen, die ich sehen will, und die Leute zu treffen, die ich gerne um mich habe.",
+                "en": "To savor the things I desire, visit the places I long for, and meet those I wish to see.",
+                "es": "Saborear las cosas que deseo, visitar lugares que ansío ver, y encontrarme con quienes quiero ver.",
+                "fr": "Savourer ce qui me fait envie, visiter les destinations qui me font rêver, et rencontrer les personnes que je veux connaître.",
+                "ja": "食べたい物を食べ、行きたい所に行き、会いたい人に会う。",
+                "ko": "먹어보고 싶은 걸 먹어 보고, 가보고 싶은 곳에 가 보고, 만나 보고 싶은 사람을 만나 보는 거예요",
+                "th": "ได้ลิ้มลองในสิ่งที่ต้องการ ได้เดินทางไปยังที่ที่โหยหา และได้พบเจอกับคนที่อยากจะพบ",
+                "zh-Hans": "吃自己想吃的东西，去自己想去的地方，见自己想见的人。",
+                "zh-Hant": "吃自己想吃的東西，去自己想去的地方，見自己想見的人。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mein größter Traum ist es, eine umherziehende Ritterin zu werden. So eine Wunschliste sollte man Schritt für Schritt angehen.",
+                "en": "To become a roving knight is my true ambition. A wish list is something to be experienced one step at a time.",
+                "es": "Mi verdadera ambición es convertirme en una caballera errante. Una lista de deseos es algo que se debe vivir paso a paso.",
+                "fr": "Devenir une chevaleresse errante est ma véritable ambition. J'ai une longue liste de souhaits, et je les exaucerai un par un.",
+                "ja": "放浪騎士になることが、私の大きな目標です。そのためには、ウィッシュリストを一つひとつ叶えていくのが大切でしょう？",
+                "ko": "떠돌이 기사가 되는 건 장기적인 목표고요. 소원 목록 같은 건 결국 하나하나 완성해 나가는 거니까요",
+                "th": "การได้เป็นอัศวินพเนจรคือความฝันที่แท้จริงของฉัน ส่วนรายการความปรารถนานั่นก็ต้องค่อยๆ ทำให้สำเร็จไปทีละข้อ",
+                "zh-Hans": "当一名流浪骑士是我的长期目标。愿望清单这种东西，总要一项项完成。",
+                "zh-Hant": "當一名流浪騎士是我的長期目標。願望清單這種東西，總要一項項完成。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich würde sagen, dein erster Wunsch ist bereits in Erfüllung gegangen.",
+                "en": "I'd say your first wish has already been fulfilled.",
+                "es": "Diría que tu primer deseo ya se ha cumplido.",
+                "fr": "Je dirais que ton premier souhait a déjà été exaucé.",
+                "ja": "{Male=その話を聞くと、一つ目の願いはもう叶ったんだな。;Female=その話を聞くと、一つ目の願いはもう叶ったんだね。}",
+                "ko": "첫 번째 소원은 이미 이루어진 것 같은데요?",
+                "th": "ฉันว่าความปรารถนาข้อแรกของเธอก็เป็นจริงแล้วนะ",
+                "zh-Hans": "听起来，第一个愿望已经实现了？",
+                "zh-Hant": "聽起來，第一個願望已經實現了？"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der dritte auch … wenn auch auf unerwartete Weise.",
+                "en": "The third, too... though by unexpected means.",
+                "es": "Y el tercero también... aunque de forma inesperada.",
+                "fr": "Le troisième aussi… Mais d'une manière inattendue.",
+                "ja": "三つ目の願いも叶いました……偶然ではありますが。",
+                "ko": "세 번째도 이뤄졌어요... 저도 이룰 수 있을 거라곤 생각 못 했지만요",
+                "th": "ข้อที่สามก็ด้วย... แม้จะเป็นไปในแบบที่ฉันเองก็นึกไม่ถึงก็ตาม",
+                "zh-Hans": "第三个也算实现了……虽然是因为意外。",
+                "zh-Hant": "第三個也算實現了……雖然是因為意外。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Meine Adoptiveltern … und ihr Kind.",
+                "en": "Those are my adoptive parents... and their child.",
+                "es": "Son mis padres adoptivos... y su hija.",
+                "fr": "Ce sont mes parents adoptifs… et leur enfant.",
+                "ja": "あれは、私の養父母とその子どもです。",
+                "ko": "제 양부모님들이세요. 저 소녀는 두 분의 딸이고요",
+                "th": "นั่นคือพ่อแม่บุญธรรมของฉัน... กับลูกของพวกเขา",
+                "zh-Hans": "那是我的养父母，还有他们的孩子。",
+                "zh-Hant": "那是我的養父母，還有他們的孩子。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht war es ein grausamer Scherz des Schicksals. Nachdem sie aus Ragunna weggezogen waren, hatte ich jede Spur von ihnen verloren, aber hier in Septimont habe ich erfahren, wo sie sich niedergelassen haben.",
+                "en": "Perhaps it was fate's cruel jest. I couldn't find any trace of them after they moved from Ragunna, but here in Septimont, I discovered where they had resettled.",
+                "es": "Quizás fue una broma cruel del destino. No encontré ni rastro de ellos después de que se marcharan de Raguna, pero aquí, en Septimont, descubrí dónde se habían instalado.",
+                "fr": "Peut-être que c'est un tour cruel du destin. Après leur départ de Ragunna, j'ai perdu toute trace d'eux, mais c'est ici, à Septimont, que j'ai découvert où ils avaient entamé leur nouvelle vie.",
+                "ja": "運命のいたずらなのかもしれませんね。ラグーナでは、彼らが引っ越した後の情報は手に入りませんでしたが、まさかセブン・ヒルズに移り住んでいたとは。",
+                "ko": "아마도 운명의 장난인 거겠죠. 그분들이 라군나를 떠난 후 전혀 소식을 들을 수 없었는데, 일곱 언덕에서 이렇게 찾게 됐네요",
+                "th": "บางทีคงเป็นเรื่องตลกร้ายของโชคชะตาล่ะมั้ง ฉันไม่พบเบาะแสใดๆ ของพวกเขาในรากูนน่า แต่กลับมาพบว่าพวกเขาตั้งรกรากใหม่ที่เซปติมอนต์แห่งนี้",
+                "zh-Hans": "或许是命运的捉弄吧，在拉古那我没有找到他们搬迁后的线索，却在七丘找到了移居的他们。",
+                "zh-Hant": "或許是命運的捉弄吧，在拉古那我沒有找到他們搬遷後的線索，卻在七丘找到了移居的他們。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nur … erkennen sie mich nicht mehr.",
+                "en": "Only... they no longer recognize me.",
+                "es": "Pero... ya no me reconocen.",
+                "fr": "Le seul pépin… c'est qu'ils ne me reconnaissent plus.",
+                "ja": "ただ……お二人はもう、私のことなど覚えていないでしょう。",
+                "ko": "다만, 절 알아보진 못하시더라고요",
+                "th": "เพียงแต่... พวกเขาจำฉันไม่ได้แล้ว",
+                "zh-Hans": "只不过，他们已经认不出我了。",
+                "zh-Hant": "只不過，他們已經認不出我了。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Wahrheit, dass ich ihre Tochter sei, war eine Erinnerung, die der Threnodianer ihnen eingepflanzt hatte und die verschwand, als er im Turm eingeschlossen wurde.",
+                "en": "The truth that I was their daughter was a memory the Threnodian crafted for them, disappearing when It was sealed away in the tower.",
+                "es": "Que yo fuera su hija no era más que un recuerdo que el Trenodiano creó para ellos y, cuando quedó sellado en la torre, ese recuerdo desapareció.",
+                "fr": "La vérité selon laquelle j'étais leur fille était un souvenir fabriqué par le Réprimantum, et elle a disparu quand il a été scellé dans la tour.",
+                "ja": "私がお二人の娘だという記憶は、<ano=めいしき>鳴式</ano>によって捏造されたものですから。当然、鳴式が塔に封じ込められたと同時に、消えてなくなっています。",
+                "ko": "「이 아이는 우리의 딸이다」... 명식은 이렇게 저분들의 기억을 조작했어요. 명식이 탑에 갇히면서 조작도 풀렸죠",
+                "th": "เรื่องที่ฉันเคยเป็นลูกสาวของพวกเขาเป็นเพียงความทรงจำที่เธรโนเดียนสร้างขึ้นมาให้ พอตัวตนนั้นถูกผนึกไว้ในหอคอย ความทรงจำนั่นก็เลือนหายไปด้วย",
+                "zh-Hans": "“我是他们的女儿”这件事，本就是鸣式为他们捏造的记忆，也随着祂被封入塔中而消失。",
+                "zh-Hant": "「我是他們的女兒」這件事，本就是鳴式為他們捏造的記憶，也隨著祂被封入塔中而消失。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich weiß nicht, was sie seit diesem schicksalhaften Tag alles durchgemacht haben, aber wenigstens sind sie noch am Leben. Sie haben sogar ein eigenes Kind.",
+                "en": "I don't know what they went through after that fateful day, but at least... they are still alive. They even have their own child.",
+                "es": "No sé qué fue de ellos tras ese fatídico día, pero al menos... siguen vivos. Incluso tienen su propia hija.",
+                "fr": "J'ignore ce qu'ils ont traversé après ce jour fatidique, mais au moins… ils sont en vie. Et ils ont leur propre enfant.",
+                "ja": "当時、あの事件が起きてから、お二人の身に何が起きたのかは分かりません。ですが……こうして生きていますし、子どもまで授かっているようで何よりです。",
+                "ko": "그 이후로 두분에게 무슨 일이 있었는지는 알 수 없지만, 적어도... 아직 살아계시고, 딸도 두고 계시니까요",
+                "th": "ฉันไม่รู้หรอกว่าพวกเขาต้องผ่านอะไรมาบ้างหลังจากวันแห่งโชคชะตานั้น แต่อย่างน้อย... พวกเขาก็ยังมีชีวิตอยู่ แถมยังมีลูกเป็นของตัวเองแล้วด้วย",
+                "zh-Hans": "我不知道当年事发后他们遭遇了什么，但至少……他们还活着，也有了自己的孩子。",
+                "zh-Hant": "我不知道當年事發後他們遭遇了什麼，但至少……他們還活著，也有了自己的孩子。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie gehen jeden Tag hier spazieren, also setze ich mich eine Weile hin und beobachte sie aus der Ferne.",
+                "en": "They walk here every day, so I come and sit for a while to watch them from a distance.",
+                "es": "Pasean por aquí todos los días, así que vengo y me siento un rato para verlos desde lejos.",
+                "fr": "Chaque jour, ils viennent se promener ici. Alors moi, je reste assise là, et je les regarde de loin.",
+                "ja": "彼らは毎日ここで散歩をしているので、遠くから眺めているのです。",
+                "ko": "매일 산책을 하셔서, 저도 여기 잠깐 앉아서 멀리서나마 지켜보고 있어요",
+                "th": "พวกเขาจะเดินมาที่นี่ทุกวัน ฉันก็เลยมานั่งเฝ้ามองพวกเขาอยู่ห่างๆ แบบนี้สักพักแล้ว",
+                "zh-Hans": "他们每天都会来这里散步，所以我也会在这里坐一会儿，远远地看看他们。",
+                "zh-Hant": "他們每天都會來這裡散步，所以我也會在這裡坐一會，遠遠地看看他們。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Cartethyia …",
+                "en": "Cartethyia...",
+                "es": "Cartethyia...",
+                "fr": "Cartethyia…",
+                "ja": "カルテジア……",
+                "ko": "카르티시아...",
+                "th": "Cartethyia...",
+                "zh-Hans": "卡提希娅……",
+                "zh-Hant": "卡提希婭……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ist schon gut, {PlayerName}. Ich habe mich damit abgefunden.",
+                "en": "It's alright, {PlayerName}. In fact, I'm at peace with it now.",
+                "es": "No pasa nada, {PlayerName}. De hecho, estoy en paz con ello.",
+                "fr": "Ne t'en fais pas pour moi, {PlayerName}. J'ai fait la paix avec cette réalité.",
+                "ja": "大丈夫です。私は十分幸せですよ。",
+                "ko": "전 괜찮아요, {PlayerName}. 사실, 지금 이 순간조차도 저한테는 더없이 큰 행복이에요",
+                "th": "ไม่เป็นไรหรอก {PlayerName} ที่จริง... ตอนนี้ฉันทำใจได้แล้ว",
+                "zh-Hans": "没事的，{PlayerName}。其实，此刻我已经觉得很幸福。",
+                "zh-Hant": "沒事的，{PlayerName}。其實，此刻我已經覺得很幸福。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn sie durch die harte Hand des Ordens gestorben wären, hätte mir das das Herz gebrochen. Aber so … Ein besseres Ergebnis hätte ich mir kaum wünschen können.",
+                "en": "If they had died because of the Order's heavy hand, I would've felt true pain. But this... this is the best outcome I could hope for.",
+                "es": "Habría sufrido de verdad si hubieran muerto por culpa de la mano dura de la Orden. Pero esto... Esto es lo mejor que podía esperar.",
+                "fr": "S'ils avaient été écrasés par la main tyrannique de l'Ordre, j'aurais été sincèrement anéantie. Mais ça… Je n'aurais pas pu espérer mieux.",
+                "ja": "教団の迫害で命を落とすほうが、よほどつらかったでしょうから。ハッピーエンドを迎えられたと言って良いでしょう。",
+                "ko": "만약 두 분이 그때 수도회의 박해로 돌아가셨다면, 전 정말 고통스러웠을 거예요. 그러니까... 지금이 최고의 결말이라고 생각해요",
+                "th": "ถ้าพวกเขาต้องตายไปเพราะน้ำมืออันโหดเหี้ยมของภาคี ฉันคงรู้สึกเจ็บปวดจริงๆ แต่พอเป็นแบบนี้... ก็ถือเป็นผลลัพธ์ที่ดีที่สุดเท่าที่ฉันจะหวังได้แล้ว",
+                "zh-Hans": "如果他们当年因为修会的迫害而失去性命，我才会痛苦万分，现在已经是最好的结局了。",
+                "zh-Hant": "如果他們當年因為修會的迫害而失去性命，我才會痛苦萬分，現在已經是最好的結局了。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Zwanzig Jahre mit dem Verlust eines Kindes leben … den Schmerz will ich mir gar nicht ausmalen.",
+                "en": "To live twenty years with the weight of a lost child... I don't want to imagine that kind of torment.",
+                "es": "Vivir veinte años con el peso de una hija perdida... No quiero ni imaginar ese tormento.",
+                "fr": "Vivre vingt longues années en portant le fardeau de la disparition d'un enfant… Je ne veux même pas imaginer ce tourment.",
+                "ja": "私のために、お二人が二十年も我が子を失った痛みを味わい続けるだなんて……想像したくありません。",
+                "ko": "자식을 잃은 아픔을 20년 동안이나 품는다니... 두 분이 저 때문에 그런 고통을 받는 건 상상조차 하고 싶지 않아요",
+                "th": "การต้องใช้ชีวิต 20 ปีโดยแบกรับความทุกข์ทรมานจากการสูญเสียลูกไป... ฉันไม่อยากจะจินตนาการถึงความทรมานแบบนั้นเลย",
+                "zh-Hans": "二十年的丧子之痛……我不愿意去想象他们为我遭受这种痛苦。",
+                "zh-Hant": "二十年的喪子之痛……我不願意去想像他們為我遭受這種痛苦。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Abgesehen davon haben sich dank dieser schicksalhaften Wendungen alle drei meiner Wünsche erfüllt.",
+                "en": "Besides, through all these twists of fate, all three of my wishes have been fulfilled.",
+                "es": "Además, con todos estos giros del destino, mis tres deseos se han cumplido.",
+                "fr": "Malgré, ou plutôt grâce à ces caprices du destin, mes trois vœux ont été exaucés.",
+                "ja": "それに、この結末だからこそ、三つの願いが全て叶えられたのです。",
+                "ko": "게다가, 이런 우연 덕에 세 가지 소원이 전부 이루어졌는걸요",
+                "th": "อีกอย่างนะ แม้โชคชะตาจะพลิกผันไปบ้าง แต่ความปรารถนาทั้งสามข้อของฉันก็เป็นจริงแล้ว",
+                "zh-Hans": "更何况，因为这样的阴差阳错，我的三个愿望都已经实现了。",
+                "zh-Hant": "更何況，因為這樣的陰差陽錯，我的三個願望都已經實現了。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn ich jetzt Lust auf einen Laurus-Salat hab, kann ich mir selbst einen machen und ihn in vollen Zügen genießen.",
+                "en": "Now if I crave a Laurus Salad, I can prepare it myself and savor its taste.",
+                "es": "Ahora, si me apetece una Ensalada de Laurus, la puedo preparar yo misma y saborearla.",
+                "fr": "Désormais, si j'ai envie d'une salade Laurus, je peux la cuisiner moi-même et profiter de ses saveurs.",
+                "ja": "ずっと食べたかったラウルスサラダは自分で作れましたし、美味しさも味わえました。",
+                "ko": "먹고 싶었던 푸른 가지 월계 샐러드도 직접 요리해서 먹을 수 있었고,",
+                "th": "ตอนนี้ถ้าฉันอยากกินสลัดลอรัส ฉันก็ทำเองได้แล้ว และจะได้ลิ้มรสชาติของมันอย่างเต็มที่",
+                "zh-Hans": "我想吃的青枝月桂沙拉，我可以自己烹饪，也能品尝出味道。",
+                "zh-Hant": "我想吃的青枝月桂沙拉，我可以自己烹飪，也能品嚐出味道。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und ich hab noch viele Jahre Zeit, mir die Welt anzusehen und die Orte zu besuchen, die ich unbedingt mal sehen will.",
+                "en": "And I still have many years ahead to see the world and the places I long to visit.",
+                "es": "Y aún me quedan muchos años por delante para ver el mundo y visitar los lugares que ansío ver.",
+                "fr": "Et j'ai encore de longues années devant moi pour voir le monde et découvrir les destinations de mes rêves.",
+                "ja": "行きたかった場所も、これからはいつだって自由に行けますし、景色も楽しめます。",
+                "ko": "가고 싶은 곳을 하나하나 직접 경험할 수 있을 만큼 시간도 잔뜩 남아 있는 데다가...",
+                "th": "แล้วฉันก็ยังมีเวลาอีกมากมายที่จะได้ออกเดินทางท่องโลก ไปยังสถานที่ต่างๆ ที่ฉันใฝ่ฝัน",
+                "zh-Hans": "我想去的地方，未来还有漫长的时间得以一一探寻，遍历风景。",
+                "zh-Hant": "我想去的地方，未來還有漫長的時間得以一一探尋，遍歷風景。"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was die Leute angeht, die ich treffen will … diese unerwartete Reise hat dazu geführt, dass ich sie in einer anderen Stadt gefunden habe.",
+                "en": "As for the people I hope to meet... this unexpected journey led me to find them in another city.",
+                "es": "Y en cuanto a la gente que quiero ver... Este viaje inesperado me ha llevado a encontrarlos en otra ciudad.",
+                "fr": "Quant aux personnes que je veux rencontrer… grâce à ce voyage inattendu, j'ai pu faire leur connaissance dans une autre ville.",
+                "ja": "それに今回の思わぬ旅では、新しい街であなたに再会できましたし。",
+                "ko": "뜻밖의 여행 덕분에, 이런 곳에서 보고 싶던 사람을 만나게 됐으니까요",
+                "th": "ส่วนคนที่อยากพบ... การเดินทางที่คาดไม่ถึงครั้งนี้ก็นำพาให้ฉันได้พบพวกเขาในเมืองอีกแห่งจนได้",
+                "zh-Hans": "我想见的人，因为这次意外之旅，得以在另一座城邦相逢。",
+                "zh-Hant": "我想見的人，因為這次意外之旅，得以在另一座城邦相逢。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Wind von Rinascita scheint mir immer das zu bringen, was ich suche. Ich bin zufrieden.",
+                "en": "The winds of Rinascita always seem to bring me what I seek. I am content.",
+                "es": "Parece que los vientos de Rinascita siempre me traen lo que busco. Estoy en paz.",
+                "fr": "Les vents de Rinascita semblent toujours m'apporter l'objet de mes désirs. Je suis satisfaite.",
+                "ja": "リナシータの風は、いつも私の願いを叶えてくれます。これ以上は、何も望みません。",
+                "ko": "리나시타의 바람은 늘 제가 바라는 것들을 가져다줘요. 전 이미 만족해요",
+                "th": "สายลมแห่งรินาซิตาดูเหมือนจะพัดพาสิ่งที่ฉันตามหามาให้เสมอ แค่นี้ฉันก็พอใจมากแล้ว",
+                "zh-Hans": "黎那汐塔的风总是能为我送来希求的事物，我已心满意足。",
+                "zh-Hant": "黎那汐塔的風總是能為我送來希求的事物，我已心滿意足。"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 50074,
+                "name": {
+                  "zh-Hans": "卡提希娅"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

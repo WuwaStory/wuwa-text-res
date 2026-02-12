@@ -1,0 +1,1076 @@
+{
+  "id": 152750010,
+  "key": "转盘活动第四天（清理道路）",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Lollo-Kampagne: Navigation IV",
+    "en": "Lollo Campaign: Navigation IV",
+    "es": "Campaña Lollo: Navegación IV",
+    "fr": "Projet Loulou : Navigation IV",
+    "ja": "ブブナビ企画・四",
+    "ko": "무무 내비게이션 기획 · Ⅳ",
+    "th": "แคมเปญลอลโล่: การนำทาง 4",
+    "zh-Hans": "呜呜导航企划·四",
+    "zh-Hant": "嗚嗚導航企劃·四"
+  },
+  "desc": {
+    "de": "Der Inhalt der Kampagne für Tag 4 wurde aktualisiert. Die Karte zeigt jetzt eine potenzielle Bedrohung entlang der Route an. Untersuche das Gebiet und bewerte die Gefahr.",
+    "en": "The Day 4 Campaign content has been updated. The map now indicates a potential threat along the route. Investigate the area and assess the danger.",
+    "es": "El contenido de la Campaña del día 4 se ha actualizado. El mapa ahora muestra una posible amenaza en la ruta. Investiga el área y evalúa el peligro.",
+    "fr": "Le Jour 4 du projet, la carte indique désormais une menace potentielle le long de l'itinéraire. Veuillez se rendre à la zone indiquée et évaluez le danger.",
+    "ja": "四日目の企画内容が更新された。道路に潜在リスクがあることが判明されたので、それを調べてみよう。",
+    "ko": "넷째 날 기획 내용이 업데이트되었습니다. 지도에 표시된 도로에 어떤 잠재적인 위협이 있을지도 모르니 조사를 부탁드립니다",
+    "th": "เนื้อหาแคมเปญวันที่ 4 ได้รับการอัปเดตแล้ว ตอนนี้แผนที่จะแสดงภัยคุกคามที่อาจเกิดขึ้นตามทาง ไปตรวจสอบพื้นที่และประเมินอันตราย",
+    "zh-Hans": "第四天企划内容已更新，地图上显示道路存在着某种潜在威胁，请帮忙排查一下吧。",
+    "zh-Hant": "第四天企劃內容已更新，地圖上顯示道路存在著某種潜在威脅，請幫忙排查一下吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Unterhalte dich mit Maji über die heutigen Geschäfte",
+        "en": "Chat with Maji about today's business",
+        "es": "Habla con Maji sobre los asuntos del día.",
+        "fr": "Discuter des affaires du jour avec Maji",
+        "ja": "馬計と今日の企画について話し合う",
+        "ko": "마현과 오늘의 기획 내용을 논의하기",
+        "th": "คุยเรื่องงานวันนี้กับ Maji",
+        "zh-Hans": "与马计讨论今日的企划内容",
+        "zh-Hant": "與馬計討論今日的企劃內容"
+      },
+      "entities": [
+        {
+          "entityId": 152750032,
+          "mapId": 8,
+          "blueprintType": "NPC122002",
+          "name": "TsEntity_157_001_经理3",
+          "areaId": 301,
+          "position": {
+            "x": -42456,
+            "y": 89517,
+            "z": 432
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 140
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Dieser Kartenbereich ist jetzt rot markiert, {PlayerName}. Außerdem schicken uns die Kuriere lauter Berichte über die Gegend.",
+                "en": "This area of the map turned red, {PlayerName}. There's also an increase in reports from the couriers.",
+                "es": "{PlayerName}, esta área del mapa se ha vuelto roja. También hay un aumento en los informes de los mensajeros.",
+                "fr": "Cette zone de la carte est devenue rouge, {PlayerName}. Nous constatons également une augmentation des signalements des livreurs.",
+                "ja": "{PlayerName}、マップのこの辺りが赤くなってるのがわかるかな。配達員たちからのデータ転送量も増えてきたんだ。",
+                "ko": "{PlayerName}, 지도의 이 부분이 빨간색으로 변했어요. 택배원들이 피드백한 정보도 점점 많아지고 있어요",
+                "th": "{PlayerName} บริเวณนี้ของแผนที่เปลี่ยนเป็นสีแดง และมีจำนวนรายงานที่ได้รับจากคนส่งของเพิ่มมากขึ้นด้วย",
+                "zh-Hans": "{PlayerName}，地图这块的颜色变成了红色，物流员们的反馈信息也越来越多。",
+                "zh-Hant": "{PlayerName}，地圖這塊的顏色變成了紅色，物流員們的回報資訊也越來越多。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Anscheinend braut sich in dort eine Art Bedrohung zusammen. Ich würde dich bitten, die Gegend mal zu untersuchen.",
+                "en": "There might be some kind of threat brewing in the area. I'll leave the investigation to you.",
+                "es": "Podría haber algún tipo de amenaza formándose en la zona. Dejo en tus manos la tarea de investigarlo.",
+                "fr": "Il y a peut-être une menace dans la zone. Je te laisse enquêter là-dessus.",
+                "ja": "何かしらの脅威があるらしいから、その調査を頼みたいんだ。",
+                "ko": "이곳에 어떤 위협이 있을지도 모르니 도로 조사를 부탁드려요",
+                "th": "อาจจะมีภัยคุกคามบางอย่างเกิดขึ้นในบริเวณดังกล่าว คุณช่วยเข้าไปตรวจสอบให้ทีนะ",
+                "zh-Hans": "兴许这里的确存在某种威胁，排查路况的任务就拜托你了。",
+                "zh-Hant": "可能這裡的確存在某種威脅，排查路況的任務就拜託你了。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du damit fertig bist, kannst du einfach von dort Echtzeit-Informationen an den Lollo-Navigator schicken.",
+                "en": "Once you're done, you can also try sending live information to \"Lollo Navigator\" remotely.",
+                "es": "Cuando hayas terminado, también puedes intentar transmitir información en vivo a la «Navegación Lollo» de forma remota.",
+                "fr": "Quand tu auras fini, tu pourras essayer de transmettre des informations à distance en temps réel au navigateur Loulou.",
+                "ja": "終わったら、リアルタイム情報を「ブブナビ」にアップロードしてほしいんだ。",
+                "ko": "조사를 마친 후 실시간 정보를 「무무 내비게이션」에 원거리 전송할 수 있어요",
+                "th": "หลังคุณตรวจสอบเสร็จ คุณลองส่งข้อมูลไลฟ์ไปที่ \"ผู้นำทางลอลโล่\" จากระยะไกลด้วยก็ได้นะ",
+                "zh-Hans": "排查完，你也可以试着将实时信息远距离传输给「呜呜导航」。",
+                "zh-Hant": "排查完，你也可以試著將即時資訊遠距離傳輸給「嗚嗚導航」。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900059,
+                "name": {
+                  "zh-Hans": "马计"
+                },
+                "entity": {
+                  "entityId": 152750032,
+                  "mapId": 8,
+                  "blueprintType": "NPC122002",
+                  "name": "TsEntity_157_001_经理3",
+                  "areaId": 301,
+                  "position": {
+                    "x": -42456,
+                    "y": 89517,
+                    "z": 432
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 140
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 7,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 7,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zum Zielgebiet",
+        "en": "Proceed to the designated area",
+        "es": "Dirígete a la zona objetiva.",
+        "fr": "Se rendre à la zone indiquée",
+        "ja": "目標地点に向かう",
+        "ko": "목표 구역으로 이동",
+        "th": "มุ่งหน้าไปยังพื้นที่ที่กำหนด",
+        "zh-Hans": "前往目标区域",
+        "zh-Hant": "前往目標區域"
+      },
+      "entities": [
+        {
+          "entityId": 152750046,
+          "mapId": 8,
+          "blueprintType": "Quest017",
+          "name": "TsEntity_任务_空实体_天空盒",
+          "areaId": 8,
+          "position": {
+            "x": 6527,
+            "y": 264266,
+            "z": 3171
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750062,
+          "mapId": 8,
+          "blueprintType": "SceneObj012",
+          "name": "TsEntity_破碎物012_石化人形3",
+          "areaId": 8,
+          "position": {
+            "x": 6897,
+            "y": 263982,
+            "z": 3094
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Statuen dort ...",
+                "en": "Those statues over there are...",
+                "es": "Esas estatuas de allí son...",
+                "fr": "Ces statues, là-bas...",
+                "ja": "前の石像は……",
+                "ko": "전방의 석상은...",
+                "th": "พวกรูปปั้นที่อยู่ตรงนั้น...",
+                "zh-Hans": "前方的那些石像是……",
+                "zh-Hant": "前方的那些石像是……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Maji hat sie, glaube ich, nie erwähnt ...",
+                "en": "I don't remember Maji ever mentioning them...",
+                "es": "No recuerdo que Maji las hubiera mencionado antes...",
+                "fr": "Je ne me souviens pas que Maji en ait parlé...",
+                "ja": "こんなのあるって<ano=マーケイ>馬計</ano>は言ってなかった気がする。",
+                "ko": "마현이 언급한 적 없었는데...",
+                "th": "เหมือน Maji ไม่เคยพูดถึงพวกมันมาก่อน...",
+                "zh-Hans": "我记得马计没有提到过它们……",
+                "zh-Hant": "我記得馬計沒有提到過它們……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 7,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 9,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege die TDs",
+        "en": "Defeat the Tacet Discords",
+        "es": "Derrota a las DT.",
+        "fr": "Vaincre les TDs",
+        "ja": "残像を倒す",
+        "ko": "잔상 처치",
+        "th": "เอาชนะทาเซ็ตดิสคอร์ด",
+        "zh-Hans": "消灭残象",
+        "zh-Hant": "消滅殘象"
+      },
+      "entities": [
+        {
+          "entityId": 152750044,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形",
+          "areaId": 8,
+          "position": {
+            "x": 6654,
+            "y": 264401,
+            "z": 3101
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750045,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形",
+          "areaId": 8,
+          "position": {
+            "x": 6700,
+            "y": 263981,
+            "z": 3092
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750046,
+          "mapId": 8,
+          "blueprintType": "Quest017",
+          "name": "TsEntity_任务_空实体_天空盒",
+          "areaId": 8,
+          "position": {
+            "x": 6527,
+            "y": 264266,
+            "z": 3171
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750048,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形2",
+          "areaId": 8,
+          "position": {
+            "x": 6100,
+            "y": 263879,
+            "z": 3131
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750049,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形3",
+          "areaId": 8,
+          "position": {
+            "x": 6125,
+            "y": 264865,
+            "z": 3392
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750050,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形2",
+          "areaId": 8,
+          "position": {
+            "x": 5966,
+            "y": 264575,
+            "z": 3103
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750051,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形3",
+          "areaId": 8,
+          "position": {
+            "x": 5958,
+            "y": 263592,
+            "z": 3451
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750052,
+          "mapId": 8,
+          "blueprintType": "SceneObj012",
+          "name": "TsEntity_破碎物012_石化人形2",
+          "areaId": 8,
+          "position": {
+            "x": 5575,
+            "y": 264200,
+            "z": 3101
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750053,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形4",
+          "areaId": 8,
+          "position": {
+            "x": 5746,
+            "y": 264355,
+            "z": 3505
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750054,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形4",
+          "areaId": 8,
+          "position": {
+            "x": 7133,
+            "y": 264447,
+            "z": 3413
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_3_转盘任务",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ich bin wieder dort, wo ich angefangen habe ... Und alle Statuen sind verschwunden! Ich sollte diese Anomalie aufzeichnen.",
+                "en": "I'm back where I started. And the other statues are gone... I should record this anomaly.",
+                "es": "Estoy de nuevo donde empecé. Y las otras estatuas desaparecieron... Debería registrar esta anomalía.",
+                "fr": "Je suis de retour à la case départ, et les autres statues ont disparu... Je devrais enregistrer ce phénomène étrange.",
+                "ja": "またスタート地点に戻ってるし、ほかの石像も消えた……これも記録しておこう。",
+                "ko": "왜 다시 원래 자리로 돌아온 거지... 다른 석상들도 사라지고... 이 이상도 기록해 두자",
+                "th": "ฉันกลับมาเริ่มต้นใหม่อีกแล้ว แถมรูปปั้นอื่นๆ ก็หายไปแล้วด้วย... ฉันควรที่จะบันทึกเหตุการณ์แปลกประหลาดนี้เอาไว้",
+                "zh-Hans": "又回到了原点，其它石像也消失了……也将这则异象一同记录下来吧。",
+                "zh-Hant": "又回到了原點，其它石像也消失了……也將這則異象一同記錄下來吧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Maji hat mir ja beigebracht, wie ich Daten verschicken kann. Mal schauen ...",
+                "en": "I remember Maji taught me how to transmit data. Let's see here...",
+                "es": "Recuerdo que Maji me enseñó cómo transmitir datos. Vamos a ver...",
+                "fr": "Maji m'a expliqué comment transmettre les données. Voyons un peu...",
+                "ja": "これで……情報をリアルタイムで転送できるはず。",
+                "ko": "마현이 정보 전송 절차를 가르쳐줬었는데...",
+                "th": "ฉันจำได้ว่า Maji เคยสอนวิธีส่งข้อมูลเอาไว้ น่าจะตรงนี้...",
+                "zh-Hans": "我记得马计教给我传输信息的步骤是……",
+                "zh-Hant": "我記得馬計教給我傳輸資訊的步驟是……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Genau ... Das ging so ... Glaube ich zumindest.",
+                "en": "There... This should do the trick... I think.",
+                "es": "Eso es... Esto debería funcionar. Creo...",
+                "fr": "Et voilà... Ça devrait marcher... enfin, je crois.",
+                "ja": "<ano=マーケイ>馬計</ano>から教わった、情報を転送する手順は確か……",
+                "ko": "이렇게 하면... 실시간 정보 전송이 완료된 거겠지",
+                "th": "เอาล่ะ... เท่านี้ก็น่าจะเรียบร้อย... มั้งนะ",
+                "zh-Hans": "这样……应该就完成实时信息传输了吧。",
+                "zh-Hant": "這樣……應該就完成即時資訊傳輸了吧。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "parentId": 9,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 15,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Greife die seltsamen Statuen an",
+        "en": "Hit the strange statues",
+        "es": "Ataca las estatuas anormales.",
+        "fr": "Attaquer les statues qui ont l'air louche",
+        "ja": "異常の石像を攻撃する",
+        "ko": "이상한 석상 조사하기",
+        "th": "โจมตีรูปปั้นประหลาด",
+        "zh-Hans": "攻击异常的石像",
+        "zh-Hant": "攻擊異常的石像"
+      },
+      "entities": [
+        {
+          "entityId": 152750043,
+          "mapId": 8,
+          "blueprintType": "SceneObj012",
+          "name": "TsEntity_破碎物012_石化人形",
+          "areaId": 8,
+          "position": {
+            "x": 6515,
+            "y": 264210,
+            "z": 3094
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750044,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形",
+          "areaId": 8,
+          "position": {
+            "x": 6654,
+            "y": 264401,
+            "z": 3101
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750045,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形",
+          "areaId": 8,
+          "position": {
+            "x": 6700,
+            "y": 263981,
+            "z": 3092
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750055,
+          "mapId": 8,
+          "blueprintType": "Monster005",
+          "name": "TsEntity_小怪_审判战士",
+          "areaId": 8,
+          "position": {
+            "x": 6046,
+            "y": 264777,
+            "z": 3112
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -30
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750056,
+          "mapId": 8,
+          "blueprintType": "Monster003",
+          "name": "TsEntity_小怪_惊蛰猎手",
+          "areaId": 8,
+          "position": {
+            "x": 6660,
+            "y": 263694,
+            "z": 3079
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750057,
+          "mapId": 8,
+          "blueprintType": "Monster011",
+          "name": "TsEntity_小怪_巡徊猎手",
+          "areaId": 8,
+          "position": {
+            "x": 6998,
+            "y": 264436,
+            "z": 3097
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750058,
+          "mapId": 8,
+          "blueprintType": "Monster004",
+          "name": "TsEntity_小怪_泣血战士",
+          "areaId": 8,
+          "position": {
+            "x": 5867,
+            "y": 264164,
+            "z": 3098
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750059,
+          "mapId": 8,
+          "blueprintType": "Monster039",
+          "name": "TsEntity_精英_蛊魂乐师",
+          "areaId": 8,
+          "position": {
+            "x": 7071,
+            "y": 263994,
+            "z": 3083
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 16,
+      "parentId": 15,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 16,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 18,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 152750043,
+          "mapId": 8,
+          "blueprintType": "SceneObj012",
+          "name": "TsEntity_破碎物012_石化人形",
+          "areaId": 8,
+          "position": {
+            "x": 6515,
+            "y": 264210,
+            "z": 3094
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750051,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形3",
+          "areaId": 8,
+          "position": {
+            "x": 5958,
+            "y": 263592,
+            "z": 3451
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -60
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750053,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形4",
+          "areaId": 8,
+          "position": {
+            "x": 5746,
+            "y": 264355,
+            "z": 3505
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750054,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形4",
+          "areaId": 8,
+          "position": {
+            "x": 7133,
+            "y": 264447,
+            "z": 3413
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 20,
+      "parentId": 18,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 152750048,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形2",
+          "areaId": 8,
+          "position": {
+            "x": 6100,
+            "y": 263879,
+            "z": 3131
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750049,
+          "mapId": 8,
+          "blueprintType": "SceneObj013",
+          "name": "TsEntity_破碎物013_石化人形3",
+          "areaId": 8,
+          "position": {
+            "x": 6125,
+            "y": 264865,
+            "z": 3392
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -150
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 18,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 152750050,
+          "mapId": 8,
+          "blueprintType": "SceneObj014",
+          "name": "TsEntity_破碎物014_石化人形2",
+          "areaId": 8,
+          "position": {
+            "x": 5966,
+            "y": 264575,
+            "z": 3103
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 170
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 152750052,
+          "mapId": 8,
+          "blueprintType": "SceneObj012",
+          "name": "TsEntity_破碎物012_石化人形2",
+          "areaId": 8,
+          "position": {
+            "x": 5575,
+            "y": 264200,
+            "z": 3101
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

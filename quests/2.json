@@ -1,0 +1,104 @@
+{
+  "id": 2,
+  "key": "杀怪",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 21,
+          "mapId": 31,
+          "blueprintType": "NPC004",
+          "name": "TsEntity_154_002_商人女3",
+          "areaId": 0,
+          "position": {
+            "x": 4020,
+            "y": -9400,
+            "z": 20
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_InteractTest",
+          "flowIndex": 8,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist wirklich stark, junger Mann!",
+                "es": "¡Chico, eres increíble!",
+                "zh-Hans": "少年真厉害！",
+                "zh-Hant": "少年真厲害！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nur eine Kleinigkeit!",
+                    "es": "¡No es gran cosa!",
+                    "zh-Hans": "小事一桩！",
+                    "zh-Hant": "小事一樁！"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

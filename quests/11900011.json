@@ -1,0 +1,711 @@
+{
+  "id": 11900011,
+  "key": "金牌推销员·四",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Ace Promoter: IV",
+    "en": "Ace Salesman: IV",
+    "es": "Promotor As: IV",
+    "fr": "Super Promoteur : IV",
+    "ja": "トップセールスマン・4",
+    "ko": "탑 셀러 · IV",
+    "th": "นักขายมือฉมัง: IV",
+    "zh-Hans": "金牌推销员·四",
+    "zh-Hant": "金牌推銷員·四"
+  },
+  "desc": {
+    "de": "Alle Geschäftspläne von Yong'xin endeten in Misserfolgen. Wartet auf ihn ein Wendepunkt?",
+    "en": "All of Yongxin's business plans ended in failure. Could there be a turning point waiting for him?",
+    "es": "Todos los planes de negocios de Yongxin terminaron en fracaso. ¿Le estará esperando un punto de inflexión?",
+    "fr": "Tous les plans commerciaux de Yongxin ont échoué. Un tournant l'attend-il ?",
+    "ja": "永新の販売計画は完全に失敗した。しかし、もしかしたら……最後はいい結末を迎えるかも？",
+    "ko": "영신의 판매 계획은 결국 실패를 맛보았지만 어쩌면... 반전을 맞이할지도 모르잖아요?",
+    "th": "แผนธุรกิจของ Yongxinทั้งหมดล่มไม่เป็นท่า จะมีจุดพลิกผันรอคอยเขาอยู่หรือเปล่านะ",
+    "zh-Hans": "永新的推销计划一败涂地。但也许……一切最终都会迎来转机？",
+    "zh-Hant": "永新的推銷計劃一敗塗地。 但也許……一切最終都會迎來轉機？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Yong'xin",
+        "en": "Talk to Yongxin",
+        "es": "Habla con Yongxin.",
+        "fr": "Parler à Yongxin",
+        "ja": "永新と会話する",
+        "ko": "영신과 대화",
+        "th": "คุยกับ Yongxin",
+        "zh-Hans": "与永新交谈",
+        "zh-Hant": "與永新交談"
+      },
+      "entities": [
+        {
+          "entityId": 11900119,
+          "mapId": 8,
+          "blueprintType": "NPC316",
+          "name": "TsEntity_157_034_市民男20",
+          "areaId": 1613,
+          "position": {
+            "x": 228750,
+            "y": 310590,
+            "z": -5903
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_1_1_每日_虹镇地推大使",
+          "flowIndex": 12,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hey, du bist da, {PlayerName}. Komm, trink was.",
+                "en": "Hey, it's you, {PlayerName}. Come, grab a drink.",
+                "es": "{PlayerName}, eres tú. Vamos, siéntate a beber algo.",
+                "fr": "Oh, bonjour, {PlayerName}. Viens, prends un verre.",
+                "ja": "ああ、漂泊者か。まぁ座んなって、何か飲もうぜ。",
+                "ko": "아, 방랑자군요. 앉으세요, 같이 한잔해요",
+                "th": "ไง คุณนี่เอง {PlayerName} มา มาดื่มอะไรหน่อย",
+                "zh-Hans": "啊，是漂泊者啊。坐，一起喝点吧。",
+                "zh-Hant": "啊，是漂泊者啊。 坐，一起喝點吧。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe alles total vermasselt. Die letzten Tage waren eine komplette Zeitverschwendung. Ich habe kaum Geld verdient und konnte überhaupt keinen Fuß in den Markt fassen.",
+                "en": "I totally screwed everything up. These past few days have been a complete waste of time. I barely made any money, and I haven't been able to get a foothold in the market at all.",
+                "es": "Lo he fastidiado todo. Estos días han sido una pérdida de tiempo total. Apenas he ganado dinero, y no he podido hacerme un hueco en el mercado.",
+                "fr": "Tout est fichu. Ces derniers jours ont été une perte de temps. J'ai à peine gagné de l'argent et je n'ai pas réussi à m'implanter sur le marché.",
+                "ja": "俺が全部ダメにしちまったんだ。ここ数日は商売も上手くいかないし、市場の開拓もできてない。",
+                "ko": "제가 모든 것을 망쳐버렸어요. 요 며칠은 완전히 쓸데없는 일만 했어요. 돈도 얼마 못 벌고, 시장도 개척하지 못했어요",
+                "th": "ฉันทำทุกอย่างพังไปหมด สองสามวันมานี้เสียเวลาไปเปล่าๆ โดยแทบไม่ได้เงินเลย แถมฉันยังไม่ได้ที่ยืนมั่นคงในตลาดอีกต่างหาก",
+                "zh-Hans": "我把一切都搞砸了。这几天基本上都是在白忙活，钱没赚到多少，市场也没打开。",
+                "zh-Hant": "我把一切都搞砸了。 這幾天基本上都是在白忙活，錢沒賺到多少，市場也沒打開。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Meine Versetzungsanweisung sollte jeden Tag eintreffen. Dann muss ich zurück nach Jinzhou und dem Chef erklären, dass ich alles vermasselt habe.",
+                "en": "My transfer order should come through any day now. After that I'll be back in Jinzhou explaining to my boss how I messed everything up.",
+                "es": "La orden de transferencia debe estar al caer, y entonces tendré que volver a Jinzhou y explicarme a mi jefe cómo lo fastidié todo.",
+                "fr": "Ma demande de transfert devrait arriver d'un jour à l'autre. Ensuite je vais devoir retourner à Jinzhou et expliquer au patron que j'ai tout gâché.",
+                "ja": "あと数日で異動の知らせが来るだろうな。はぁ……今州に戻って、社長にダメにしちまった経緯を説明しなきゃいけなさそうだ。",
+                "ko": "회사에서 조만간 전근 명령이 내려올 거예요. 에휴, 저는 이제 금주로 돌아가서, 사장님께 제가 어떻게 일을 망쳤는지 보고해야겠죠",
+                "th": "ฉันคงได้รับคำสั่งย้ายในเร็วๆ นี้ แหละ หลังจากนั้น ฉันจะกลับไปจินโจวแล้วอธิบายให้เถ้าแก่ฟังว่าทำไมฉันถึงทำทุกอย่างเละเทะไปหมด",
+                "zh-Hans": "公司的调令大概这几天就要下来了。唉。然后我就要回今州，向老板解释我是怎么把这一切都搞砸的。",
+                "zh-Hant": "公司的調令大概這幾天就要下來了。 唉。 然後我就要回今州，向老闆解釋我是怎麼把這一切都搞砸的。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ding, ding ding ...",
+                "en": "Brrring brrring...",
+                "es": "Brrring brrring...",
+                "fr": "Bip bip bip...",
+                "ja": "──プルルルル……。",
+                "ko": "——따르르르릉~",
+                "th": "กริ๊งงง กริ๊งง...",
+                "zh-Hans": "——叮铃铃铃铃~",
+                "zh-Hant": "——叮鈴鈴鈴鈴~"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Entschuldigung, {PlayerName}, ich muss rangehen.",
+                "en": "Excuse me, {PlayerName}, I have to take this.",
+                "es": "Perdona, {PlayerName}, tengo que responder.",
+                "fr": "Pardon, {PlayerName}, je dois prendre cet appel.",
+                "ja": "悪いな、誰かが俺に用があるみたいだ。",
+                "ko": "방랑자, 미안해요. 누가 저를 찾는 것 같네요",
+                "th": "ขอโทษทีนะ {PlayerName} ฉันต้องรับสายนี้น่ะ",
+                "zh-Hans": "不好意思，漂泊者，有人找我。",
+                "zh-Hant": "不好意思，漂泊者，有人找我。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Yongxin hat eine kurze Unterhaltung mit dem Kunden über das Terminal. Obwohl er immer noch etwas nervös zu sein scheint, kannst du sehen, wie er ein echter Verkäufer direkt vor deinen Augen wird.",
+                "en": "Yongxin has a brief exchange with a client through his Terminal. Though a bit nervous, you can see a true salesman emerging right before you.",
+                "es": "Yongxin mantiene una breve conversación con el cliente a través de la terminal. Se le ve un poco nervioso, pero eres testigo de cómo le sale el auténtico vendedor que lleva dentro.",
+                "fr": "Yongxin échange brièvement avec le client via le terminal. Bien qu'il semble encore un peu nerveux, on voit émerger en lui un véritable vendeur.",
+                "ja": "永新はデバイスで簡単に言葉を交わした。緊張の面持ちながらも、セールスマンとしての話しぶりもだんだん板についてきた。",
+                "ko": "영신은 단말기로 간단하게 몇 마디를 나눴고, 조금 긴장하고 있는 것 같지만 이제 제법 영업에 어울리는 느낌이었다",
+                "th": "Yongxin ได้พูดคุยกับลูกค้าสั้นๆ ผ่านเทอร์มินัลของเขา แม้จะดูประหม่าเล็กน้อย แต่คุณก็เห็นได้ว่ายอดเซลล์ตัวจริงอยู่ตรงหน้าคุณแล้ว",
+                "zh-Hans": "永新和终端简单地谈了几句，虽然他看起来还是有点紧张，但已经像一个合格销售的样子了。",
+                "zh-Hant": "永新和終端簡單地談了幾句，雖然他看起來還是有點緊張，但已經像一個合格銷售的樣子了。"
+              },
+              "id": 6
+            },
+            {
+              "text": {},
+              "id": 7,
+              "options": [
+                {
+                  "text": {
+                    "de": "... Also, hast du gerade einen großen Deal gelandet?",
+                    "en": "...So, did you just land a big deal?",
+                    "es": "... Entonces, ¿acabas de cerrar un trato importante?",
+                    "fr": "Alors, vous venez de décrocher une grosse affaire ?",
+                    "ja": "{Male=……で、大口の注文が来たのか？;Female=……で、大口の注文が来たの？}",
+                    "ko": "그래서, 큰 주문을 받은 건가요?",
+                    "th": "... ว่าไง นี่ปิดดีลใหญ่ได้แล้วใช่ไหม?",
+                    "zh-Hans": "……所以，这是接到大单了？",
+                    "zh-Hant": "……所以，這是接到大單了？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja ... ich bin auch überrascht.",
+                "en": "Yeah... I really didn't expect that.",
+                "es": "Sí... A mí también me sorprende.",
+                "fr": "Oui... Moi aussi, je suis surpris.",
+                "ja": "そ……そうだ。俺もにわかには信じられなくてさ。",
+                "ko": "네... 맞아요. 저도 이상했어요",
+                "th": "อืม... ไม่คาดคิดมาก่อนเลยจริงๆ",
+                "zh-Hans": "是……是啊。我也觉得奇怪。",
+                "zh-Hant": "是……是啊。 我也覺得奇怪。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Er sagte, er sei ein Händler aus Mengzhou, der in den Tourismus rund um den Berg Firmament investieren möchte.",
+                "en": "He said he's a merchant from Mengzhou looking to invest in tourism around Mt. Firmament.",
+                "es": "Dice que es un comerciante de Mengzhou que quiere invertir en turismo alrededor del Monte Firmamento.",
+                "fr": "Il a dit qu'il était un marchand de Mengzhou cherchant à investir dans le tourisme autour du Mont. Firmament.",
+                "ja": "連絡してきたのは夢州の貿易商で、乗霄山の旅行業への投資を検討してるそうだ。",
+                "ko": "그분은 자신이 몽주 쪽 상인이라고 했는데, 승소산의 관광업에 투자하실 예정이라고 하더군요",
+                "th": "เขาบอกว่าเขาเป็นพ่อค้าจากเมิ่งโจวที่กำลังต้องการลงทุนด้านท่องเที่ยวแถวๆ ภูผาสวรรค์น่ะ",
+                "zh-Hans": "他说他是梦州那边的客商，打算来投资乘霄山的旅游业。",
+                "zh-Hant": "他說他是夢州那邊的客商，打算來投資乘霄山的旅遊業。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Bergpässe um Hongzhen herum sind seit langem verfallen und nicht mehr für Reisen geeignet, daher plant er, einige Steine zu kaufen und sie zu pflastern.",
+                "en": "The mountain passes around Hongzhen have long fallen into disrepair and are no longer suitable for travel, so he plans to buy some stones and pave them up.",
+                "es": "Las montañas que atraviesan Villarcoíris llevan mucho tiempo descuidadas y no son apropiadas para viajar, así que tiene pensado comprar piedras para pavimentar los caminos.",
+                "fr": "Les passages de montagne autour de Hongzhen sont depuis longtemps en mauvais état, et ne sont plus adaptés aux voyages, donc il prévoit d'acheter des pierres pour les paver.",
+                "ja": "虹鎮一帯の山道は長年手入れされていなくて、観光客には不便だ。そこで、石材を買って山道を補修するつもりらしい。",
+                "ko": "홍진 마을 주변의 산길은 고친지 오래되어서, 관광객이 통행하기 어려워요. 그분이 석재를 구매해서 산길을 고칠 예정이라고 하셨어요",
+                "th": "ช่องเขาที่อยู่รอบๆ หงเจิ้นทรุดโทรมมานานแสนนานแล้ว และไม่เหมาะสำหรับการเดินทางอีกต่อไป เขาก็เลยวางแผนที่จะซื้อหินไปปูทางใหม่",
+                "zh-Hans": "虹镇周围的山路早已年久失修，不方便游客通行，他就想采购一些石料，把那些山路整修一下。",
+                "zh-Hant": "虹鎮周圍的山路早已年久失修，不方便遊客通行，他就想採購一些石料，把那些山路整修一下。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ursprünglich hatte er nicht vor, bei uns zu kaufen, aber er traf zufällig diesen Forscher in Hongzhen auf einer Geschäftsreise.",
+                "en": "He actually did not consider buying from us at first, but he happened to meet that researcher in Hongzhen on a business trip.",
+                "es": "Al principio no se planteó comprárnoslas a nosotros, pero coincidió con aquel investigador en la Villarcoíris durante un viaje de negocios.",
+                "fr": "Il n'avait pas envisagé d'acheter chez nous au début, mais il a rencontré le chercheur à Hongzhen lors d'un voyage d'affaires.",
+                "ja": "はじめは、うちの石材を買うつもりじゃなかったそうだ。けど、虹鎮へ下見に来ていた時に、あの研究員と出会ったらしくてさ。",
+                "ko": "사실 처음에는 저희 회사에서 석재를 구매할 생각이 없었는데, 그가 홍진 마을에 시장 조사하러 왔을 때 그 연구원과 만났다더라구요",
+                "th": "จริงๆ แล้วตอนแรกเขาไม่ได้คิดจะซื้อจากเรา แต่บังเอิญได้พบกับนักวิจัยคนนั้นที่หงเจิ้นระหว่างเดินทางไปติดต่อธุรกิจ",
+                "zh-Hans": "其实他一开始也没考虑过从我们公司购买石料，恰好他在虹镇考察的时候见到了那位研究员。",
+                "zh-Hant": "其實他一開始也沒考慮過從我們公司購買石料，恰好他在虹鎮考察的時候見到了那位研究員。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nachdem er erfahren hatte, dass wir eine Charge Steine zu einem niedrigen Preis zur Unterstützung der wissenschaftlichen Arbeit in Hongzhen geliefert hatten, schien er zu denken, dass das ... eine gewisse Qualität unserer Firma demonstriert.",
+                "en": "After learning we supplied a batch of stones at a low price to support the scientific effort in Hongzhen, he seemed to think that demonstrated... a certain quality of our company.",
+                "es": "Después de que les entregásemos un lote de piedras tan baratas para apoyar los esfuerzos científicos en la Villarcoíris, le pareció que nuestra compañía demostró... ciertas cualidades.",
+                "fr": "Après avoir appris que nous avions fourni un lot de pierres à bas prix pour soutenir l'effort scientifique à Hongzhen, il a pensé que cela démontrait la qualité de notre entreprise.",
+                "ja": "その時、俺たちが虹鎮の科学事業を支援するために低価格で石材を提供したって話を聞いたらしくて、その姿勢こそが品質の証だと……感銘を受けたらしい。",
+                "ko": "그리고 저희가 홍진 마을의 과학 사업을 응원하기 위해 저가로 석재를 판매한 걸 알고 저희 회사의... 퀄리티에 인정했던 모양이에요",
+                "th": "พอได้รู้ว่าเราจำหน่ายหินชุดหนึ่งในราคาถูกเพื่อสนับสนุนงานวิจัยทางวิทยาศาสตร์ที่หงเจิ้น เขาก็น่าจะคิดว่านั่นแสดงถึง... คุณภาพเฉพาะบางอย่างของบริษัทเรา",
+                "zh-Hans": "在听说我们为了支持虹镇的科学事业，低价提供了一批石料后，他似乎认为这体现了我们公司的……某种品质。",
+                "zh-Hant": "在聽說我們為了支持虹鎮的科學事業，低價提供了一批石料後，他似乎認為這體現了我們公司的……某種品質。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ein Segen im Unglück.",
+                    "en": "A blessing in disguise.",
+                    "es": "La suerte llega cuando menos te lo esperas.",
+                    "fr": "Un mal pour un bien.",
+                    "ja": "{Male=人間万事塞翁が馬、だな。;Female=人間万事塞翁が馬、だね。}",
+                    "ko": "전화위복이자 새옹지마네요",
+                    "th": "ในเรื่องร้ายๆ ก็ยังมีสิ่งดีๆ อยู่บ้างล่ะนะ",
+                    "zh-Hans": "塞翁失马，焉知非福。",
+                    "zh-Hant": "塞翁失馬，焉知非福。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Stimmt. Gute Dinge passieren guten Leuten, oder?",
+                "en": "True. Good things tend to happen to good people, perhaps?",
+                "es": "Es verdad. A la gente buena le suele pasar cosas buenas, ¿no?",
+                "fr": "C'est vrai. Les bonnes choses arrivent souvent aux bonnes personnes, peut-être ?",
+                "ja": "まさにその通りだ。これも良い人には良い報いがある、ってやつか？あはは……。",
+                "ko": "맞아요. 이런 게... 착한 일을 하면 좋은 일이 생긴다는 건가요? 하...",
+                "th": "จริงนะ คนทำดีก็ย่อมได้ดีล่ะมั้ง?",
+                "zh-Hans": "没错，这也算是……好人有好报？哈……",
+                "zh-Hant": "沒錯，這也算是……好人有好報？ 哈……"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin froh, dass ich damals die richtige Entscheidung getroffen habe, alles dank dir, Rover.",
+                "en": "I'm glad I made the right call that day, all thanks to you, Rover.",
+                "es": "Me alegro de haber tomado la decisión correcta aquel día. Fue todo gracias a ti, Errante.",
+                "fr": "Je suis content d'avoir pris la bonne décision ce jour-là grâce à toi, Nomade.",
+                "ja": "あの日、正しい選択ができて良かった。漂泊者のおかげだ、ありがとうな。",
+                "ko": "제가 그날 정확한 선택을 한 건 정말 행운이었어요. 이게 모두 방랑자 덕분이에요",
+                "th": "ฉันดีใจจริงๆ ที่ตัดสินใจถูกในวันนั้น ทั้งหมดนี่ต้องขอบคุณคุณมากนะ ผู้พเนจร",
+                "zh-Hans": "我很庆幸我那天做出了正确的选择。这都要感谢你，漂泊者。",
+                "zh-Hant": "我很慶幸我那天做出了正確的選擇。 這都要感謝你，漂泊者。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nee, das lag nur an dir.",
+                    "en": "Nah, it was all you.",
+                    "es": "Qué va, fue tu decisión.",
+                    "fr": "Mais non, c'est toi qui as fait tout cela.",
+                    "ja": "{Male=俺じゃない、永新さんが自分で決めたことだよ。;Female=私じゃない、永新さんが自分で決めたことだよ。}",
+                    "ko": "이건 영신이 직접 한 선택이에요",
+                    "th": "ไม่หรอกน่า เพราะคุณเองนั่นแหละ",
+                    "zh-Hans": "这可是你自己的选择。",
+                    "zh-Hant": "這可是你自己的選擇。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "So lange ich mich erinnern kann, haben mir weder meine Familie, meine Lehrer noch meine Kollegen je geglaubt, dass ich etwas erreichen könnte.",
+                "en": "For as long as I can remember, whether it was my family, teachers or colleagues, no one believed I could achieve anything.",
+                "es": "Desde que tengo uso de razón, nadie ha confiado nunca en que fuese capaz de lograr algo; ni mi familia, ni mis profesores ni mis compañeros.",
+                "fr": "Aussi loin que je me souvienne, que ce soit ma famille, mes professeurs ou mes collègues, personne ne croyait que je pouvais accomplir quoi que ce soit.",
+                "ja": "これまで、家族も先生も同僚も、みんな俺のことを信じちゃくれなかった。",
+                "ko": "가족이나 선생님, 심지어 동료들까지, 항상 제가 뭔가를 해낼 거라고 믿어준 사람은 없었어요",
+                "th": "เท่าที่ฉันจำได้ ไม่ว่าจะเป็นครอบครัว ครู หรือเพื่อนร่วมงาน ไม่มีใครเชื่อว่าฉันจะสามารถทำอะไรสำเร็จได้เลย",
+                "zh-Hans": "一直以来，不管是家人，老师，还是同事，都没人相信我能做好什么事。",
+                "zh-Hant": "一直以來，不管是家人，老師，還是同事，都沒人相信我能做好什麼事。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie haben mir nur die unwichtigen und untergeordneten Aufgaben überlassen und mich nie nach meiner Meinung gefragt.",
+                "en": "They would leave the most menial, insignificant jobs to me and never ask for my opinions.",
+                "es": "Siempre me dejan las tareas más insignificantes, y nunca me piden mi opinión.",
+                "fr": "Ils me confiaient les tâches les plus ingrates et insignifiantes et ne me demandaient jamais mon avis.",
+                "ja": "だからいつも、一番面倒で重要じゃない仕事ばかり任せられるんだ。俺の意見に耳を傾けてくれる人はいなかった。",
+                "ko": "모두 저에게 가장 자질구레하고 불필요한 업무만을 주고, 저에게 어떠한 의견도 물어보지 않았죠",
+                "th": "พวกเขาจะให้ฉันทำงานเล็กๆ น้อยๆ ที่ต่ำต้อยไร้ค่าที่สุด และไม่เคยขอความเห็นจากฉันเลย",
+                "zh-Hans": "大家都把那些最琐碎，最不重要的工作交给我，也从不询问我的意见。",
+                "zh-Hant": "大家都把那些最瑣碎，最不重要的工作交給我，也從不詢問我的意見。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn es dich nicht gäbe, der bereit war, Vertrauen in mich zu setzen und zu glauben, dass sogar jemand wie ich es schaffen könnte ...",
+                "en": "If it weren't for you, who were willing to put faith in me and believe that even someone like me could do it...",
+                "es": "Si tú no hubieras tenido fe en mí y confiado en que alguien como yo podría lograrlo...",
+                "fr": "Tu me fais confiance et tu crois que je pouvait y arriver...",
+                "ja": "けど、漂泊者のおかげで気づいたんだ。誰かに信じてもらえることで、俺でもここまでできるんだって……。",
+                "ko": "만약에 방랑자가 저를 믿어주지 않았다면, 제가 무언가 해낼 거라고 믿어주지 않았다면...",
+                "th": "ถ้าไม่ใช่เพราะคุณที่ยอมศรัทธาในตัวฉัน และเชื่อว่าแม้แต่คนอย่างฉันก็สามารถทำได้...",
+                "zh-Hans": "如果不是因为漂泊者愿意相信我，相信就算是我这种人，也有能做到的事……",
+                "zh-Hant": "如果不是因為漂泊者願意相信我，相信就算是我這種人，也有能做到的事……"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich glaube nicht ... Ich hätte nie den Mut gehabt, eine Entscheidung zu treffen.",
+                "en": "I don't think... I would have never had the courage to make a decision.",
+                "es": "No creo que... hubiese tenido el coraje para tomar una decisión.",
+                "fr": "Je n'aurais jamais eu le courage de prendre une décision.",
+                "ja": "俺は……自分だけだったら、こんな勇気は出せなかった。",
+                "ko": "저는 아마도... 영원히 스스로 결정할 용기를 내지 못했겠죠",
+                "th": "ฉันไม่คิดว่า... ฉันจะมีวันที่กล้าตัดสินใจอะไรด้วยตัวเอง",
+                "zh-Hans": "我觉得……我永远都不会有做出决定的勇气。",
+                "zh-Hant": "我覺得……我永遠都不會有做出決定的勇氣。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Warum wirst du auf einmal so emotional?",
+                    "en": "Why are you getting so emotional all of a sudden?",
+                    "es": "¿Cómo es que de repente estás tan sentimental?",
+                    "fr": "T'es si émotif tout à coup ?",
+                    "ja": "{Male=あはは、急に感極まっちゃってどうしたんだ。;Female=あはは、急に感極まっちゃってどうしたの。}",
+                    "ko": "갑자기 엄청 들떴네요",
+                    "th": "ทำไมอยู่ๆ ก็ดราม่าชวนซึ้งซะล่ะนี่?",
+                    "zh-Hans": "怎么还感慨起来了。",
+                    "zh-Hant": "怎麼還感慨起來了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Es ist nicht so eine große Sache.",
+                    "en": "It's not that big of a deal.",
+                    "es": "No es para tanto.",
+                    "fr": "Ce n'est pas grand-chose.",
+                    "ja": "そんな大げさなことじゃないよ。",
+                    "ko": "뭘 그렇게까지요",
+                    "th": "ไม่ใช่เรื่องใหญ่อะไรขนาดนั้นหรอก",
+                    "zh-Hans": "哪有那么夸张。",
+                    "zh-Hant": "哪有那麼誇張。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich bin wahrscheinlich nur zu aufgeregt, weil ich endlich einen großen Deal gemacht habe.",
+                "en": "I'm probably just too excited because I finally got a big deal.",
+                "es": "Probablemente estoy demasiado emocionado porque finalmente conseguí un gran trato.",
+                "fr": "Je suis probablement juste trop content parce que j'ai enfin décroché une grosse affaire.",
+                "ja": "突然大口の注文が舞い込んできたから、嬉しくなっちまったのかもな。",
+                "ko": "아, 큰 주문을 따낸 것 때문에 조금 흥분한 것 같아요",
+                "th": "ฉันคงตื่นเต้นมากไปที่ปิดการขายครั้งสำคัญได้สักทีน่ะ",
+                "zh-Hans": "可能是因为终于接到大单，所以有点兴奋吧。",
+                "zh-Hant": "可能是因為終於接到大單，所以有點興奮吧。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber ich meinte alles, was ich gerade gesagt habe.",
+                "en": "But I meant everything I just said.",
+                "es": "Puedes que sean los nervios por haber cerrado un trato importante después de tanto tiempo.",
+                "fr": "Mais tout ce que j'ai dit, je le pensais vraiment.",
+                "ja": "けど、本当にそう思ってるんだからな。",
+                "ko": "방금 한 말은 전부 진심이에요",
+                "th": "แต่ฉันหมายความอย่างที่พูดจริงๆ นะ",
+                "zh-Hans": "这些可都是真心话哦。",
+                "zh-Hant": "這些可都是真心話喔。"
+              },
+              "id": 20,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Okay, jetzt wird’s richtig geschäftig. Danke, dass du mir geholfen hast, {PlayerName}.",
+                "en": "Okay, things are going to get busy from now. Thanks for helping me out, {PlayerName}.",
+                "es": "Bueno, creo que a partir de ahora voy a estar muy ocupado. {PlayerName}, gracias por echarme una mano.",
+                "fr": "Bon, je vais avoir un emploi du temps chargé à partir de maintenant. Merci pout ton aide, {PlayerName}.",
+                "ja": "よし、この後はしばらく忙しくなりそうだ。手伝ってくれてありがとうな、漂泊者。",
+                "ko": "자, 이제부터 바빠질 것 같네요. 지금까지 도와줘서 고마워요",
+                "th": "โอเค จากนี้คงมีงานให้ทำมากขึ้นแล้ว ขอบคุณที่ช่วยฉันนะ {PlayerName}",
+                "zh-Hans": "好，接下来应该就要忙起来了。谢谢你这段时间的帮忙，漂泊者。",
+                "zh-Hant": "好，接下來應該就要忙起來了。 謝謝你這段時間的幫忙，漂泊者。"
+              },
+              "id": 21,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe in den letzten Tagen viel gelernt. Ich glaube, ich bin jetzt bereit, jede Verkaufschance zu nutzen, die sich mir bietet.",
+                "en": "I learned a lot over the past few days. I feel like I'm ready to handle any sales opportunity that comes my way.",
+                "es": "Estos últimos días he aprendido un montón de cosas. Estoy listo para ocuparme de cualquier oportunidad de venta cuando se me presente.",
+                "fr": "J'ai beaucoup appris ces derniers jours. Je me sens prêt à gérer n'importe quelle opportunité de vente qui se présente.",
+                "ja": "この数日間で、いろいろと勉強になったよ。今後の商売は、自力で何とかできるはずだ。",
+                "ko": "지난 며칠 동안 많은 걸 배웠어요. 다음에 만약 이런 영업 업무를 맡게 된다면, 그때는 더 잘 해낼 수 있을 거 같아요",
+                "th": "ไม่กี่วันที่ผ่านมา ฉันได้เรียนรู้อะไรมากมายเลย รู้สึกว่าฉันพร้อมรับมือกับทุกโอกาสขายที่เข้ามาหาฉันแล้วล่ะ",
+                "zh-Hans": "我这几天学到了很多东西，下次再有这样的推销工作，我觉得我也能应付得来了。",
+                "zh-Hant": "我這幾天學到了很多東西，下次再有這樣的推銷工作，我覺得我也能應付得來了。"
+              },
+              "id": 22,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Selbstvertrauen ist doch das Wichtigste.",
+                    "en": "Confidence is the key, after all.",
+                    "es": "La confianza es la clave, después de todo.",
+                    "fr": "La confiance est la clé, après tout.",
+                    "ja": "一番大事なのは、自分を信じる心だよ。",
+                    "ko": "가장 중요한 건 자신감이에요",
+                    "th": "ยังไงซะ ความมั่นใจคือสิ่งสำคัญที่สุดอยู่แล้ว",
+                    "zh-Hans": "毕竟信心最重要。",
+                    "zh-Hant": "畢竟信心最重要。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Der Anfang ist immer der härteste.",
+                    "en": "The beginning is always the hardest.",
+                    "es": "Los comienzos siempre son los más difíciles.",
+                    "fr": "Le début est toujours le plus difficile.",
+                    "ja": "何事も、はじめが一番難しいからね。",
+                    "ko": "모든 일은 첫걸음이 가장 어려워요",
+                    "th": "ก้าวแรกย่อมยากที่สุดเสมอ",
+                    "zh-Hans": "万事开头难。",
+                    "zh-Hant": "萬事開頭難。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Das stimmt. Aber wenn du einmal Erfolg hast, ist es das nächste Mal viel einfacher ...",
+                "en": "That's right. But once you succeed, it's much easier the second time around...",
+                "es": "Tienes razón. Pero después de conseguirlo una vez, el resto resulta mucho más fácil...",
+                "fr": "C'est vrai. Mais il suffit de réussir une fois pour que tout se passe mieux ensuite.",
+                "ja": "ああ。今回上手くいったんだ、次だってきっと大丈夫さ……。",
+                "ko": "맞아요. 한 번만 성공해 본다면, 두 번 세 번 성공하는 건 어렵지 않아요...",
+                "th": "ใช่เลย แต่พอทำสำเร็จ ครั้งที่สองก็จะง่ายขึ้นเยอะเลย...",
+                "zh-Hans": "没错，只要成功了一次，就一定能做成第二次……",
+                "zh-Hant": "沒錯，只要成功了一次，就一定能做成第二次……"
+              },
+              "id": 23,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, ich muss zurück nach Jinzhou. Da wartet noch ein großer Deal auf mich.",
+                "en": "Oh, I gotta run back to Jinzhou. There's this big deal waiting for me to take care of.",
+                "es": "Bueno, debo volver a Jinzhou cuanto antes. Tengo un negocio importante del que ocuparme.",
+                "fr": "Je dois retourner à Jinzhou. J'ai encore une grosse affaire à gérer.",
+                "ja": "そうだ、今州に戻って、もう1つの大口案件を処理しないとな。",
+                "ko": "아, 저는 이제 금주로 돌아가 봐야 할 것 같아요. 가서 다른 큰 주문을 처리해야죠!",
+                "th": "โอ้ ฉันต้องรีบกลับจินโจวแล้ว มีดีลใหญ่รอฉันไปจัดการอยู่",
+                "zh-Hans": "啊，我得赶回今州了，还有一个大单要处理呢。",
+                "zh-Hant": "啊，我得趕回今州了，還有一個大單要處理呢。"
+              },
+              "id": 24,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Danke, Rover. Ich werde definitiv der beste Steinverkäufer in ganz Jinzhou sein, wenn wir uns wiedersehen!",
+                "en": "Thank you, Rover. I'll definitely be the greatest stone salesman in all of Jinzhou when we meet again!",
+                "es": "Gracias, Errante. ¡Cuando volvamos a vernos seré el mejor vendedor de piedra de todo Jinzhou!",
+                "fr": "Merci, Nomade. Je serai certainement le meilleur vendeur de pierres de tout Jinzhou quand on se reverra !",
+                "ja": "ありがとうな、漂泊者。次に会う時までには、今州一の石材販売員になってみせるぜ！",
+                "ko": "방랑자, 고마워요! 다음에 만날 때면 전 아마도 금주에서 가장 뛰어난 석재 영업 사원이 되어 있을 거예요. 약속해요!",
+                "th": "ขอบคุณนะผู้พเนจร พอเจอกันคราวหน้า ฉันต้องเป็นเซลล์ขายหินที่เก่งที่สุดในจินโจวแน่นอน!",
+                "zh-Hans": "谢谢你，漂泊者。等下次见面的时候，我一定会成为今州最厉害的石料推销员的！",
+                "zh-Hant": "謝謝你，漂泊者。 等下次見面的時候，我一定會成為今州最厲害的石料推銷員的！"
+              },
+              "id": 25,
+              "speaker": {
+                "id": 900008,
+                "name": {
+                  "zh-Hans": "永新"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh zu Spring's Taste",
+        "en": "Head to Spring's Taste",
+        "es": "Dirígete al Gusto de Manantial.",
+        "fr": "Se rendre aux Saveurs de la source",
+        "ja": "落泉居に向かう",
+        "ko": "낙천 하우스로 이동",
+        "th": "ไปยังเรือนน้ำพุริน",
+        "zh-Hans": "前往落泉居",
+        "zh-Hant": "前往落泉居"
+      },
+      "entities": [
+        {
+          "entityId": 11900119,
+          "mapId": 8,
+          "blueprintType": "NPC316",
+          "name": "TsEntity_157_034_市民男20",
+          "areaId": 1613,
+          "position": {
+            "x": 228750,
+            "y": 310590,
+            "z": -5903
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 80
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

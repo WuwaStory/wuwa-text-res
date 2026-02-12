@@ -1,0 +1,825 @@
+{
+  "id": 133900005,
+  "key": "重建布偶村阶段一",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Wiederaufbau des Plüschtier-Dorfes I",
+    "en": "Restore Plushie Village I",
+    "es": "Reconstruir la Villa Peluchona I",
+    "fr": "Reconstruire le village des peluches : I",
+    "ja": "ぬいぐるみビレッジの再建・1期",
+    "ko": "인형 마을 재건 · 1기",
+    "th": "ฟื้นฟูหมู่บ้านตุ๊กตา I",
+    "zh-Hans": "重建布偶村·一期",
+    "zh-Hant": "重建布偶村·一期"
+  },
+  "desc": {
+    "de": "Durch deine harte Arbeit haben bedeutende Veränderungen in Plüschtier-Dorf Wurzeln geschlagen. Inzwischen erhält das Dorf einen neuen Besucher – eine Wanne Welpe.",
+    "en": "Through your hard work, meaningful changes have taken root in Plushie Village. In the meantime, the village receives a new visitor—a Tubpup.",
+    "es": "Gracias a tu arduo trabajo, se han logrado cambios significativos en la Villa Peluchona. Mientras tanto, el pueblo recibe a un nuevo visitante: ¿una Canbañera?",
+    "fr": "Un nouveau visiteur est arrivé au Village des peluches, il semble que ce soit un Bainpatou ?",
+    "ja": "しばらく再建をしていくと、ぬいぐるみビレッジに新しい客が来た……タブドッグのようだ……？",
+    "ko": "어느 정도 복구된 후, 인형 마을에 새로운 손님이 찾아오는 듯... 욕조견인 것 같은데...?",
+    "th": "ด้วยความทุ่มเทอย่างหนักของคุณ จึงเกิดการเปลี่ยนแปลงที่สำคัญขึ้นภายในหมู่บ้านตุ๊กตา ในขณะเดียวกันหมู่บ้านก็ได้มีโอกาสต้อนรับผู้มาเยือนหน้าใหม่ ซึ่งก็คือเจ้าหมาอ่างน้ำ",
+    "zh-Hans": "经过一段时间的修复，布偶村似乎迎来了新客人……看起来是只浴缸犬？",
+    "zh-Hant": "經過一段時間的修復，布偶村似乎迎來了新客人……看起來是隻浴缸犬？"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Untersuche die Wanne Welpe",
+        "en": "Inspect the Tubpup",
+        "es": "Inspecciona la Canbañera.",
+        "fr": "Bainpatou",
+        "ja": "タブドッグを調べる",
+        "ko": "욕조견 확인하기",
+        "th": "ตรวจสอบเจ้าหมาอ่างน้ำ",
+        "zh-Hans": "查看浴缸犬",
+        "zh-Hant": "查看浴缸犬"
+      },
+      "entities": [
+        {
+          "entityId": 133900760,
+          "mapId": 8,
+          "blueprintType": "branch2.0_TsEntity_157_斐林",
+          "name": "TsEntity_157_斐林3",
+          "areaId": 2304,
+          "position": {
+            "x": 865366,
+            "y": 648068,
+            "z": -3106
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900967,
+          "mapId": 8,
+          "blueprintType": "TsEntity_声骸_大布偶_400411",
+          "name": "TsEntity_声骸_大布偶_400414",
+          "areaId": 2304,
+          "position": {
+            "x": 865347,
+            "y": 647978,
+            "z": -3114
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 145
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_支线_重建布偶村",
+          "flowIndex": 5,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Oh, {Male=Herr;Female=Frau} {PlayerName}, du bist hier! Dank dir hat das Gemälde schon viel von seiner Kraft wiedererlangt. Und sieh doch, wir haben einen neuen Freund in unserem kleinen Dorf!",
+                "en": "Oh, {Male=Mr.;Female=Ms.} {PlayerName}, you're here! Thanks to you, much of the painting's power has been restored. And look, a new friend has joined our little village!",
+                "es": "¡Mi {Male=querido;Female=querida} {PlayerName}, estás aquí! Gracias a ti, el cuadro ha recuperado casi todo su poder. ¡Y mira, un nuevo amiguito se ha unido a nuestra pequeña comunidad!",
+                "fr": "Oh, {Male=M.;Female=Mme} {PlayerName}, vous êtes là ! Grâce à vous, la peinture a retrouvé une grande partie de sa puissance. Et regardez, un nouvel ami rejoint notre petit village !",
+                "ja": "ああ、{PlayerName}か！音匣を集めてくれたおかげて、音骸絵の力がだいぶ回復してきた。ほら、ぬいぐるみビレッジに新しいお友達が来ているよ！",
+                "ko": "아, {PlayerName}님! 덕분에 사운드박스를 수집하여 에코 그림의 힘이 많이 회복됐어요. 보세요, 인형 마을에 새 친구가 왔답니다!",
+                "th": "อ้าว คุณ {PlayerName} มาแล้วสินะ เป็นเพราะคุณเลย พลังของภาพวาดถึงกลับคืนมาเกือบหมดแล้ว แล้วก็ดูสิ มีเพื่อนใหม่มาอยู่หมู่บ้านเล็กๆ ของเราด้วย!",
+                "zh-Hans": "啊，{PlayerName}大人！多亏了您收集声匣，声骸画的力量恢复了不少，看，布偶村来新朋友了！",
+                "zh-Hant": "啊，{PlayerName}大人！多虧了您收集聲匣，聲骸畫的力量恢復了不少，看，布偶村來新朋友了！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Tubpup?",
+                "en": "A Tubpup？",
+                "es": "¿Una Canbañera?",
+                "fr": "Un Bainpatou ?",
+                "ja": "タブドッグ？",
+                "ko": "욕조견인가요?",
+                "th": "เจ้า Tubpup?",
+                "zh-Hans": "浴缸犬？",
+                "zh-Hant": "浴缸犬？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jepp. Er heißt Bubble!",
+                "en": "Yep. This is Bubble!",
+                "es": "Sí. ¡Se llama Pompa!",
+                "fr": "Oui. Voici Bubulle !",
+                "ja": "そう、ボッポちゃんって言うんだ！",
+                "ko": "네, 맞아요. 이름은 바비예요",
+                "th": "ใช่แล้ว นี่คือบับเบิล!",
+                "zh-Hans": "没错，它的名字叫小波！",
+                "zh-Hant": "沒錯，它的名字叫小波！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bubble hat früher in Egla gewohnt, aber sein Besitzer ist jetzt in die Stadt gezogen. Leider war es zu teuer, ein Tubpup beim Umzug mitzunehmen.",
+                "en": "Bubble used to live in Egla Town, but its master moved to the city. Unfortunately, it was too costly to bring a Tubpup along.",
+                "es": "Pompa vivía en Egla, pero su amo se mudó a la ciudad y, lamentablemente, le era complicado llevarse a su Canbañera.",
+                "fr": "Bubulle vivait à Egla, mais son maître a déménagé en ville. Et c'était malheureusement trop coûteux d'emmener un Bainpatou avec lui.",
+                "ja": "ボッポちゃんはもともとエグラの町に住んでいたんだけど、家族が最近城の方に引っ越してしまったようでね。かわいそうなことに、お金がかかるってことで、一緒に連れてってもらえなかったんだ。",
+                "ko": "바비는 원래 에글라 타운에 살았는데, 최근에 그 집이 도시로 이사를 가게 됐어요. 안타깝게도 욕조견까지 데려가기엔 비용이 너무 많이 들더라고요",
+                "th": "แต่ก่อนบับเบิลเคยอยู่ที่เมืองเอ็กลา แต่เจ้าของเขาย้ายไปอยู่ในเมือง น่าเสียดายที่การจะพาเจ้า Tubpup ไปด้วยมีค่าใช้จ่ายสูงเกินเอื้อม",
+                "zh-Hans": "小波原本住在埃格拉小镇，但那一户人最近搬去城里了，很遗憾，要把浴缸犬也一并带去成本有些太高了。",
+                "zh-Hant": "小波原本住在埃格拉小鎮，但那一戶人最近搬去城裡了，很遺憾，要把浴缸犬也一併帶去成本有些太高了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist wohl keine so gute Idee, Bubble unbeaufsichtigt herumwandern zu lassen, also habe ich ihn hergebracht.",
+                "en": "It's probably not a good idea to leave Bubble wandering around, so I brought it here instead.",
+                "es": "No me pareció buena idea dejar a Pompa vagando por ahí, así que lo traje aquí.",
+                "fr": "Ce n'était pas une bonne idée de laisser Bubulle traîner partout, alors je l'ai amené ici.",
+                "ja": "ボッポちゃんが野良になったら危ない目に遭うんじゃないかと心配して、ここに連れてきてあげたのだ。",
+                "ko": "바비가 이렇게 밖에서 떠돌다가 위험해질까 봐, 제가 이곳으로 데려왔어요",
+                "th": "คงไม่ดีแน่ถ้าปล่อยให้บับเบิลเดินเตร่ไปมา ผมเลยพามันมาที่นี่แทน",
+                "zh-Hans": "我怕小波这样在外面流浪会有隐患，就把它带到这来了。",
+                "zh-Hant": "我怕小波這樣在外面流浪會有隱患，就把它帶到這來了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Es ist normal, in einem neuen Zuhause auch eine neue Wanne zu haben. Aber in Rinascita scheinen Echos für die Leute mehr zu sein als nur Möbelstücke.)",
+                "en": "(It's understandable to want a new tub for a new home. But it seems that Echoes are more than just furniture for people in Rinascita.)",
+                "es": "(Es normal tener una bañera nueva en una casa nueva, pero parece que los Ecos son más que simples muebles para la gente de Rinascita).",
+                "fr": "(C'est naturel d'avoir une nouvelle baignoire dans une nouvelle maison. Mais il semble que les Échos soient plus que de simples meubles pour les gens à Rinascita.)",
+                "ja": "{Male=（引っ越しでバスタブを変えるのは別に普通だが、リナシータじゃ、音骸は人々にとってただの家具じゃないようだ。）;Female=（引っ越しでバスタブを変えるのは別に普通だけど、リナシータじゃ、音骸は人々にとってただの家具じゃないみたい。）}",
+                "ko": "(이사할 때 욕조를 바꾸는 건 당연하지만, 리나시타에서는 에코가 사람들에게 단순한 가구 이상의 의미인 것 같아)",
+                "th": "(อยากได้อ่างใหม่ในบ้านใหม่ก็ดูสมเหตุสมผล แต่ดูเหมือนว่าเอคโค่จะมีความหมายมากกว่าแค่ของตกแต่งสำหรับชาวรินาซิตา)",
+                "zh-Hans": "（搬家了换个浴缸很正常，可在黎那汐塔，声骸对人似乎远非家具那么简单。）",
+                "zh-Hant": "（搬家了換個浴缸很正常，可在黎那汐塔，聲骸對人似乎遠非家具那麼簡單。）"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {},
+              "id": 7,
+              "options": [
+                {
+                  "text": {
+                    "de": "Wirst du einen neuen Besitzer für Bubble finden?",
+                    "en": "Are you going to find a new owner for Bubble?",
+                    "es": "¿Vas a buscarle un nuevo amo a Pompa?",
+                    "fr": "Tu comptes trouver un nouveau maître pour Bubulle ?",
+                    "ja": "ボッポちゃんに新しい家を探してあげようか？",
+                    "ko": "바비에게 새 주인을 찾아줘야 하나요?",
+                    "th": "คุณจะหาเจ้าของใหม่ให้บับเบิลเหรอ?",
+                    "zh-Hans": "要给小波找户新人家吗？",
+                    "zh-Hant": "要給小波找戶新人家嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {},
+              "id": 8,
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich kann dir helfen, ihn dorthin zu bringen.",
+                    "en": "I can help you deliver it there.",
+                    "es": "Puedo ayudarte a llevarlo allí.",
+                    "fr": "Je peux t'aider à le livrer.",
+                    "ja": "ボッポちゃんをそこに届けるよ。",
+                    "ko": "제가 바비를 데려다줄 수 있어요",
+                    "th": "ฉันช่วยพามันไปส่งได้นะ",
+                    "zh-Hans": "我可以帮忙把小波送过去。",
+                    "zh-Hant": "我可以幫忙把小波送過去。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Oh, das ist nicht nötig.",
+                "en": "Well, it's not necessary.",
+                "es": "Bueno, no es necesario.",
+                "fr": "Eh bien, ce n'est pas nécessaire.",
+                "ja": "うーん、それはまあ大丈夫かな！",
+                "ko": "음, 그럴 필요는 없을 것 같아요!",
+                "th": "เอ่อ ไม่จำเป็นหรอก",
+                "zh-Hans": "嗯，我觉得不需要了！",
+                "zh-Hant": "嗯，我覺得不需要了！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Wichtigste in einer Gemeinschaft ist, dass man einander hilft, und die Plüschtiere hier können eine ordentliche Wanne gerade gut gebrauchen. Also ist Bubble dafür bestimmt, hier zu sein!",
+                "en": "The most important thing in a community is looking out for each other's needs, and the Plushies just happen to need a proper tub. Bubble is meant to be here!",
+                "es": "Lo más importante en una comunidad es atender las necesidades de los demás, y resulta que los peluches necesitan una bañera adecuada. ¡En resumen, que Pompa estaba destinado a estar aquí!",
+                "fr": "La chose la plus importante dans une communauté est de veiller aux besoins de chacun, et il se trouve que les peluches ont besoin d'une baignoire adéquate. Donc, Bubulle a sa place ici !",
+                "ja": "共同生活するには、必要とし合うことがもっとも大事なこと――ぬいぐるみたちにはサイズがちょうどいいバスタブが必要だと思わない？ここがボッポちゃんの運命の居場所なんだ！",
+                "ko": "제 생각에는 함께 사는 데 가장 중요한 건 서로가 필요한지예요. 보세요, 인형들에게 딱 맞는 크기의 욕조가 필요했잖아요. 바비는 천생 이곳에 어울려요!",
+                "th": "สิ่งสำคัญที่สุดในชุมชนคือการคอยดูแลใส่ใจกันและกัน แล้วพวกตุ๊กตาก็บังเอิญต้องการอ่างที่เหมาะสมพอดี บับเบิลเลยเหมาะที่จะอยู่ที่นี่น่ะ!",
+                "zh-Hans": "我想，共同生活最重要的就是互相需要了——您没发现布偶们正缺一个大小合适的浴缸吗，小波天生就属于这里！",
+                "zh-Hant": "我想，共同生活最重要的就是互相需要了——您沒發現布偶們正缺一個大小合適的浴缸嗎，小波天生就屬於這裡！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Stimmt schon. Bubbles Wanne hat genau die richtige Größe für die Plüschtiere.",
+                    "en": "True enough. Bubble suits the Plushies well.",
+                    "es": "Muy cierto. La bañera de Pompa le sienta de maravilla a los peluches.",
+                    "fr": "C'est vrai. Une baignoire comme Bubulle convient bien aux peluches.",
+                    "ja": "{Male=たしかに、ぬいぐるみならボッポちゃんの大きさにぴったりだな。;Female=たしかに、ぬいぐるみならボッポちゃんの大きさにぴったりね。}",
+                    "ko": "그러네요, 인형들이 바비를 쓰면 딱이겠어요",
+                    "th": "ก็จริงนะ บับเบิลเข้ากับพวกตุ๊กตาได้ดีเลย",
+                    "zh-Hans": "这倒是，布偶们用小波正合适。",
+                    "zh-Hant": "這倒是，布偶們用小波正合適。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Hmm, der Große da drüben passt allerdings nicht rein.",
+                    "en": "Bubble is too small for that big fella over there.",
+                    "es": "Mmh... pero sigue siendo pequeña para ese grandullón de allí.",
+                    "fr": "Hmm, mais trop petite pour le grand gaillard là-bas.",
+                    "ja": "{Male=いや、あの大きなやつは明らかにぴったりじゃないだろ。;Female=いや、あの大きなやつは明らかにぴったりじゃないでしょ。}",
+                    "ko": "저 큰 녀석은 들어갈 수 없겠네요",
+                    "th": "แต่ดูท่าบับเบิลจะเล็กไปสำหรับเจ้าตัวโตตรงโน้น",
+                    "zh-Hans": "那个大个子明显就装不下啊。",
+                    "zh-Hant": "那個大個子明顯就裝不下啊。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, genau!",
+                "en": "That's the idea!",
+                "es": "¡Esa es la idea!",
+                "fr": "C'est ça l'idée !",
+                "ja": "そうでしょう！",
+                "ko": "그렇겠죠!",
+                "th": "นั่นแหละที่ผมคิด!",
+                "zh-Hans": "可不是嘛！",
+                "zh-Hant": "可不是嘛！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Enttäuschtes Murmeln)",
+                "en": "*Mumbles in disappointment*",
+                "es": "(Murmullo decepcionado)",
+                "fr": "(Murmure de déception)",
+                "ja": "（がっかりしてつぶやく）",
+                "ko": "(실망한 듯 중얼거린다)",
+                "th": "*บ่นพึมพำอย่างผิดหวัง*",
+                "zh-Hans": "（沮丧地嘟囔）",
+                "zh-Hant": "（沮喪地嘟囔）"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 900327,
+                "name": {
+                  "zh-Hans": "巨布偶"
+                },
+                "entity": {
+                  "entityId": 133900967,
+                  "mapId": 8,
+                  "blueprintType": "TsEntity_声骸_大布偶_400411",
+                  "name": "TsEntity_声骸_大布偶_400414",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865347,
+                    "y": 647978,
+                    "z": -3114
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 145
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Haha, keine Sorge, mein Großer. Ich wasche dich selbst!",
+                "en": "Haha, take it easy, big guy. I'll clean you up myself!",
+                "es": "¡Ja, ja! No te enojes, grandullón. ¡Yo mismo te lavaré!",
+                "fr": "Ha ha, tranquille, mon grand. Je vais te nettoyer moi-même !",
+                "ja": "あはは、大丈夫。時間があったら洗ってやるから！",
+                "ko": "아하하, 괜찮아. 내가 기회 될 때 씻겨줄게!",
+                "th": "ฮ่าๆ ใจเย็นสิเจ้าตัวโต เดี๋ยวฉันจะทำความสะอาดให้แกเอง!",
+                "zh-Hans": "啊哈哈，没事，我找机会帮你洗！",
+                "zh-Hant": "啊哈哈，沒事，我找機會幫你洗！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun, wir brauchen immer noch deine Hilfe beim Sammeln von mehr Schallkassetten. Das Plüschdorf wird immer weiter wachsen!",
+                "en": "Now, we still need your help to collect more Sonance Caskets. The Plushie Village is only just getting started!",
+                "es": "Pero todavía necesitamos tu ayuda para recolectar más Ataúdes de Sonancia. ¡Villa Peluchona seguirá prosperando!",
+                "fr": "Nous avons quand même besoin de votre aide pour récupérer plus de Boîtes de Sonance. Le village des peluches continuera de prospérer !",
+                "ja": "これからは{PlayerName}により多くの音匣を集めてほしい！ぬいぐるみビレッジもきっとますます栄えていくと信じてるよ！",
+                "ko": "앞으로도 {PlayerName}님께서 사운드박스를 더 모아주시면 좋겠어요. 그럼 점점 더 활기찬 인형 마을이 될 거예요!",
+                "th": "ตอนนี้เรายังต้องการให้คุณช่วยเก็บกล่องโซแนนซ์เพิ่มอีก หมู่บ้านตุ๊กตาเพิ่งเริ่มต้นเท่านั้นเอง!",
+                "zh-Hans": "接下来还要麻烦{PlayerName}大人收集更多声匣，我相信布偶村一定会越来越热闹的！",
+                "zh-Hant": "接下來還要麻煩{PlayerName}大人收集更多聲匣，我相信布偶村一定會越來越熱鬧的！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Kein Problem.",
+                    "en": "Easy peasy.",
+                    "es": "Coser y cantar.",
+                    "fr": "Les doigts dans le nez.",
+                    "ja": "{Male=楽勝だ。;Female=楽勝よ。}",
+                    "ko": "그 정도는 식은 죽 먹기죠",
+                    "th": "เรื่องกล้วยๆ",
+                    "zh-Hans": "小事一桩",
+                    "zh-Hant": "小事一樁"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Solange ich dafür bezahlt werde.",
+                    "en": "As long as I get paid.",
+                    "es": "Mientras me paguen...",
+                    "fr": "Je propose un service contre rémunération.",
+                    "ja": "報酬さえあればいい。",
+                    "ko": "보상만 있다면 얼마든지요",
+                    "th": "ขอแค่ได้เงินก็พอ",
+                    "zh-Hans": "有报酬拿都好说。",
+                    "zh-Hant": "有報酬拿都好說。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du, {Male=Herr;Female=Frau} {PlayerName}, bist {Male=der wahre Held;Female=die wahre Heldin}!",
+                "en": "You, {Male=Mr.;Female=Ms.} {PlayerName}, are the true hero!",
+                "es": "¡Tú, mi {Male=querido;Female=querida} {PlayerName}, eres {Male=un verdadero héroe;Female=una verdadera heroína}!",
+                "fr": "Vous, {Male=M.;Female=Mme} {PlayerName}, avez votre place parmi les plus grands héros !",
+                "ja": "さすが{PlayerName}！",
+                "ko": "역시 {PlayerName}님이세요!",
+                "th": "คุณ {PlayerName} ช่างสมเป็นฮีโร่ตัวจริง!",
+                "zh-Hans": "不愧是{PlayerName}大人！",
+                "zh-Hant": "不愧是{PlayerName}大人！"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gar kein Problem! Je mehr Kraft wir für das Gemälde wiederherstellen, desto mehr Belohnungen kann es bereitstellen – garantiert!",
+                "en": "No problem at all! The more power we restore to the painting, the more rewards it will be able to give out—guaranteed!",
+                "es": "¡Ningún problema, de verdad! Cuanto más poder devolvamos a la pintura, más recompensas podrá ofrecernos. ¡Garantizado!",
+                "fr": "Pas de problème ! Plus nous restaurons de puissance à la peinture, plus elle pourra distribuer de récompenses, c'est garanti !",
+                "ja": "うん、音骸絵の回復につれて、きっとより多くの物資を提供してくれるはず！",
+                "ko": "그럼요! 에코 그림이 점점 회복되면서 더 많은 물자를 제공할 수 있을 거예요!",
+                "th": "ไม่มีปัญหาเลย! ยิ่งเราฟื้นฟูพลังให้ภาพวาดได้มากเท่าไหร่ ภาพวาดก็จะยิ่งตอบแทนเราได้มากเท่านั้น รับประกันเลย!",
+                "zh-Hans": "嗯嗯，我相信随着声骸画逐渐恢复，它肯定能提供更多物资的！",
+                "zh-Hant": "嗯嗯，我相信隨著聲骸畫逐漸恢復，它肯定能提供更多物資的！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 133900760,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 2304,
+                  "position": {
+                    "x": 865366,
+                    "y": 648068,
+                    "z": -3106
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 133900916,
+          "mapId": 8,
+          "blueprintType": "TsEntity_NPC_声骸_浴缸狗无水",
+          "name": "TsEntity_NPC_声骸_浴缸狗6",
+          "areaId": 2304,
+          "position": {
+            "x": 865112,
+            "y": 648106,
+            "z": -3101
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -20
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 133900967,
+          "mapId": 8,
+          "blueprintType": "TsEntity_声骸_大布偶_400411",
+          "name": "TsEntity_声骸_大布偶_400414",
+          "areaId": 2304,
+          "position": {
+            "x": 865347,
+            "y": 647978,
+            "z": -3114
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 145
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_支线_重建布偶村",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Etwas hat sich im Dorf verändert. Hier kommt ein ... Wanne Welpe ...",
+                "en": "Subtle but significant changes have taken root in Plushie Village. A Tubpup has come along.",
+                "es": "La Villa Peluchona ha experimentado algunos cambios. Parece que ha llegado una Canbañera.",
+                "fr": "Un Bainpatou est arrivé au Village des peluches.",
+                "ja": "ぬいぐるみビレッジに一匹のタブドッグがやってきた。",
+                "ko": "인형 마을이 달라진 것 같다. 욕조견이 온 것 같다",
+                "th": "หมู่บ้านตุ๊กตาเริ่มมีการเปลี่ยนแปลงเล็กๆ แต่ยิ่งใหญ่ เพราะตอนนี้มีเจ้า Tubpup มาเข้าร่วมแล้ว",
+                "zh-Hans": "布偶村内发生了些变化，似乎来了一只浴缸犬。",
+                "zh-Hant": "布偶村內發生了些變化，似乎來了一隻浴缸犬。"
+              },
+              "id": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

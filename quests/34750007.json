@@ -1,0 +1,50 @@
+{
+  "id": 34750007,
+  "key": "线上修复专用任务",
+  "type": "branch",
+  "typeId": 11,
+  "name": {},
+  "desc": {},
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ChildQuest",
+      "tip": {
+        "ja": "branch2_2_修復プロセスマップピン追加",
+        "zh-Hans": "test/分支2_2_修复流程添加地图标记"
+      },
+      "dialogs": []
+    }
+  ]
+}

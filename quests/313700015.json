@@ -1,0 +1,113 @@
+{
+  "id": 313700015,
+  "key": "道路_环天文台高速西段",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Schließe den Wiederaufbau der Sandkluft-Passage ab",
+    "en": "Rebuild the Sandreach Passage",
+    "es": "Reconstruye el Pasaje del Arenal.",
+    "fr": "Reconstruire le Passage d'Ocre",
+    "ja": "デザート・パッセージの再建を進める",
+    "ko": "샌드리치 통로 재건하기",
+    "th": "ฟื้นฟูทางผ่านแดนทราย",
+    "zh-Hans": "进行沙原通路的重建",
+    "zh-Hant": "進行沙原通路的重建"
+  },
+  "desc": {
+    "de": "Basierend auf dem aktuellen Netzstatus empfehlen wir, die Sandkluft-Passage vorrangig wiederaufzubauen. Dies beschleunigt die Wiederherstellung des Verkehrsnetzes von Lahai-Roi und unterstützt den Wiederaufbau des Spacetrek-Observatoriums.",
+    "en": "Based on the current network status, we recommend prioritizing the rebuild of the Sandreach Passage. This will accelerate the renewal of Lahai-Roi's route network and support the reconstruction of the Spacetrek Observatory.",
+    "es": "Con base en el estado actual de la red, recomendamos priorizar la reconstrucción del Pasaje del Arenal. Esto acelerará la renovación de la red de rutas de Lahai-Roi y apoyará la reconstrucción del Observatorio Intergaláctico.",
+    "fr": "Selon l'état actuel du réseau, nous vous conseillons de commencer par reconstruire le Passage d'Ocre. Cela accélérera la remise en service des routes de Lahai-Roi et contribuera à la restauration de l'Observatoire Trek-spatial.",
+    "ja": "道路網の現状に基づき、デザート・パッセージの再建を優先することをお勧めします。ラハイロイの道路網リニューアルとスペーストレック観測台の再建プロジェクトの助けとなります！",
+    "ko": "현재 도로망 운행 상황에 따라, 샌드리치 통로 재건부터 진행하는 것을 권장합니다. 이는 라하이 로이 도로망 복구와 스페이스트렉 관측대 재건 프로젝트에 큰 도움이 될 것입니다!",
+    "th": "ตามสภาพการทำงานของเครือข่ายเส้นทางปัจจุบัน แนะนำให้คุณเริ่มฟื้นฟูทางผ่านแดนทรายก่อน เพื่อช่วยฟื้นฟูเครือข่ายเส้นทางลาไฮรอยและโครงการฟื้นฟูศูนย์สังเกตการณ์สเปซเทรค",
+    "zh-Hans": "根据当前路网运行状况，推荐您优先进行沙原通路的重建，为拉海洛路网恢复与深空测界台的重建工程提供助力！",
+    "zh-Hant": "根據當前路網運行狀況，推薦您優先進行沙原通路的重建，為拉海洛路網恢復與深空測界台的重建工程提供助力！"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 5,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 10,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe den Wiederaufbau der Sandkluft-Passage ab",
+        "en": "Rebuild the Sandreach Passage",
+        "es": "Reconstruye el Pasaje del Arenal.",
+        "fr": "Reconstruire le Passage d'Ocre",
+        "ja": "デザート・パッセージの再建を進める",
+        "ko": "샌드리치 통로 재건하기",
+        "th": "สร้างทางผ่านแดนทรายใหม่",
+        "zh-Hans": "进行沙原通路的重建",
+        "zh-Hant": "進行沙原通路的重建"
+      },
+      "entities": [
+        {
+          "entityId": 169700030,
+          "mapId": 906,
+          "blueprintType": "branch3.0_169_Gameplay_3_0/Common2",
+          "name": "TsEntity_铺路机_4",
+          "areaId": 36135,
+          "position": {
+            "x": 129707,
+            "y": -412455,
+            "z": 19954
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -62
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ]
+}

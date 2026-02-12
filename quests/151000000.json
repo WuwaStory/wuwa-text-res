@@ -1,0 +1,1830 @@
+{
+  "id": 151000000,
+  "key": "洄游鱼_上层",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Das verlorene Azure Echo in der Meeresbrise: Teil I",
+    "en": "Cerulean Echoes Adrift in the Winds: Part I",
+    "es": "El eco azul perdido en la brisa marina: I",
+    "fr": "Échos azurés dans le vent - I",
+    "ja": "海風の中で失われた水色の残響・上",
+    "ko": "바람 속 잃어버린 짙푸른 메아리 · I",
+    "th": "เอคโค่ฟ้าคราม ล่องลอยตามสายลม: ตอนที่ I",
+    "zh-Hans": "海风中失落的湛蓝回声·上",
+    "zh-Hant": "海風中失落的湛藍回聲·上"
+  },
+  "desc": {
+    "de": "Rette den gefangenen Aetherfin mit KU-Key",
+    "en": "Rescue the trapped Aetherfin with KU-Key",
+    "es": "Rescata al Eterfín atrapado con KU-Key.",
+    "fr": "Sauver l'Aetherfin piégé avec KU-Clé",
+    "ja": "クココと一緒に回遊魚を助ける",
+    "ko": "쿠 · 키이와 함께 갇힌 회유어를 도와주기",
+    "th": "ช่วยปลาเอเธอร์ฟินที่ติดอยู่ด้วย KU-คีย์",
+    "zh-Hans": "与库可可一起帮助被困的洄游鱼",
+    "zh-Hant": "與庫可可一起幫助被困的洄游魚"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum vorgesehenen Signal auf der höheren Ebene, um die Nachricht zu erhalten",
+        "en": "Head to the designated beacon on the higher level to receive the message",
+        "es": "Dirígete a la baliza designada en el nivel superior para recibir el mensaje.",
+        "fr": "Se rendre à la balise indiquée à l'étage supérieur pour recevoir le message",
+        "ja": "黒海岸の地上にある信号塔に向かう",
+        "ko": "검은 해안 위층의 지정된 비콘에 도착하여 정보 수신하기",
+        "th": "ไปที่เสาสัญญาณที่กำหนดในชั้นสูงขึ้นไปเพื่อรับข้อความ",
+        "zh-Hans": "到达黑海岸上层指定信标处接收信息",
+        "zh-Hant": "到達黑海岸上層指定信標處接收訊息"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Meister;Female=Meisterin} {PlayerName}! Endlich hast du geantwortet!",
+                "en": "Master {PlayerName}! You finally answered!",
+                "es": "¡{Male=Maestro;Female=Maestra} {PlayerName}! ¡Por fin respondes!",
+                "fr": "Maître {PlayerName} ! Vous répondez enfin à mon appel !",
+                "ja": "{PlayerName}マスター、元気にしてイマシタカ！やっと連絡ができましタ！",
+                "ko": "{PlayerName} 마스터, 안녕하세요! 이제야 연락이 되네요!",
+                "th": "นายท่าน {PlayerName}! ในที่สุดก็ตอบสักที!",
+                "zh-Hans": "{PlayerName}大师，你好呀！终于联系上你啦！",
+                "zh-Hant": "{PlayerName}大師，你好呀！ 終於聯繫上你啦！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Erinnerst du dich an mich? Ich bin es, KU-Key!",
+                "en": "Do you remember me? It's KU-Key!",
+                "es": "¿Te acuerdas de mí? ¡Soy KU-Key!",
+                "fr": "Vous vous souvenez de moi ? C'est KU-Clé !",
+                "ja": "覚えてイマスカ、ワタシ、クココデスヨ！",
+                "ko": "저를 기억하세요? 쿠 · 키이예요!",
+                "th": "จำกันได้ไหม? นี่ KU-Key เอง!",
+                "zh-Hans": "还记得我么，我是库可可呀！",
+                "zh-Hant": "還記得我嗎，我是庫可可呀！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "KU-Key?",
+                    "en": "KU-Key?",
+                    "es": "¿KU-Key?",
+                    "fr": "KU-Clé ?",
+                    "ja": "{Male=クココって誰だ？;Female=クココって誰？}",
+                    "ko": "쿠 · 키이가 누구죠?",
+                    "th": "KU-Key?",
+                    "zh-Hans": "谁是库可可？",
+                    "zh-Hant": "誰是庫可可？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du weißt schon, dein Spitzenassistent {Male=des Meisters;Female=der Meisterin} der Bereinigung an den Schwarzen Küsten? Fällt dir was ein?",
+                "en": "You know, the top assistant of our Master of Cleaning at the Black Shores? Ring any bells?",
+                "es": "Ya sabes, el asistente principal de {Male=nuestro Maestro;Female=nuestra Maestra} de Limpieza de datos corruptos en Costa Negra. ¿Te suena de algo?",
+                "fr": "Mais oui, vous savez, le premier assistant {Male=du grand nettoyeur;Female=de la grande nettoyeuse} du Littoral noir ? Ça vous dit quelque chose, pas vrai ?",
+                "ja": "<ano=ブラックショア>黒海岸</ano>エリア汚染除去マスター{PlayerName}さんのベストアシスタントのクココデスヨ！",
+                "ko": "바로 검은 해안 오염 데이터 제거 마스터 {PlayerName} 최고의 조력자 쿠 · 키이예요!",
+                "th": "ก็สุดยอดผู้ช่วยของจ้าวแห่งการกวาดล้างที่แบล็กชอร์ไง? จำได้หรือเปล่า?",
+                "zh-Hans": "就是黑海岸污染数据清除大师{PlayerName}最好的助手库可可呀！",
+                "zh-Hant": "就是黑海岸汙染數據清除大師{PlayerName}最好的助手庫可可呀！"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Wer?",
+                    "en": "Who?",
+                    "es": "¿Quién?",
+                    "fr": "Qui ?",
+                    "ja": "誰？",
+                    "ko": "누구세요?",
+                    "th": "ใครน่ะ?",
+                    "zh-Hans": "谁？",
+                    "zh-Hant": "誰？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Der kleine Roboter, den du so oft gerettet hast …",
+                "en": "The little robot you've saved so many times…",
+                "es": "El robotito al que has salvado tantas veces...",
+                "fr": "Le petit robot qui vous a sauvé la vie des dizaines de fois...",
+                "ja": "前に何度も助けてもらってたロボットデスヨ……",
+                "ko": "지난번 사건에서 당신이 몇 번씩이나 구해준 로봇이요...",
+                "th": "หุ่นยนต์ตัวจิ๋วที่คุณช่วยไว้ตั้งหลายครั้งไง...",
+                "zh-Hans": "就是上次事件中您救了好几次的那个小机器人……",
+                "zh-Hant": "就是上次事件中您救了好幾次的那個小機器人……"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ah! Du bist es!",
+                    "en": "Ah! It's you!",
+                    "es": "¡Ah! ¡Eres tú!",
+                    "fr": "Ah, c'est toi !",
+                    "ja": "思い出した！",
+                    "ko": "기억났어요!",
+                    "th": "อ๋อ! คุณเองเหรอ!",
+                    "zh-Hans": "我想起来了！",
+                    "zh-Hant": "我想起來了！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja, ich bin es! Ich wusste, du würdest mich nicht vergessen!",
+                "en": "Yes, it's me! I knew you wouldn't forget me!",
+                "es": "¡Sí, soy yo! ¡Sabía que no te habrías olvidado de mí!",
+                "fr": "Eh oui, c'est moi ! Je savais que vous ne m'oublieriez pas !",
+                "ja": "わーい、よかった！{PlayerName}さんがワタシのこと忘れるはずないデスヨネ！",
+                "ko": "얏! 잘 됐네요, {PlayerName}(이)가 절대로 저를 잊지 않을 거라고 믿고 있었어요!",
+                "th": "ใช่แล้ว ฉันเอง! ว่าแล้วเชียวว่าคุณต้องจำได้!",
+                "zh-Hans": "呀！太好了，我就知道{PlayerName}不会忘记我的！",
+                "zh-Hant": "呀！太好了，我就知道{PlayerName}不會忘記我的！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich wende mich an dich, weil ich deine Hilfe brauche. Unser System hat eine Frequenz entdeckt, die fast identisch mit jener der Aetherfine an den Schwarzen Küsten ist.",
+                "en": "I'm reaching out because I need your help. Our system detected a frequency almost identical to the Aetherfin's in the Black Shores.",
+                "es": "Me comunico contigo porque necesito tu ayuda. Nuestro sistema ha detectado una frecuencia casi idéntica a la del Eterfín en Costa Negra,",
+                "fr": "Si je vous contacte, c'est parce que j'ai besoin de votre aide. Notre système a détecté au Littoral noir une fréquence quasi-identique à celle de l'aetherfin.",
+                "ja": "えーとネ、システムデバイスの測定によるト、<ano=かいゆう>回遊</ano>魚に酷似した<ano=しゅうはすう>周波数</ano> が <ano=ブラックショア>黒海岸</ano>で現れたみたいデス。",
+                "ko": "어떻게 된 거냐면요, 시스템 단말기가 회유어의 주파수와 매우 비슷한 주파수가 검은 해안에 출현됐다는 것을 검측했어요",
+                "th": "ฉันติดต่อมาเพราะอยากจะขอความช่วยเหลือจากคุณ ระบบของเราตรวจพบความถี่ที่เกือบเหมือนกับของปลาเอเธอร์ฟินในแบล็กชอร์",
+                "zh-Hans": "事情是这样的，系统终端检测到与洄游鱼高度相仿的频率在黑海岸出现了。",
+                "zh-Hant": "事情是這樣的，系統終端檢測到與洄游魚高度相仿的頻率在黑海岸出現了。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber die Stelle ist immer noch mit korrupten Daten übersät und muss bereinigt werden …",
+                "en": "But the location's still covered in corrupted data and needs some cleaning…",
+                "es": "pero la ubicación está repleta de datos corruptos y necesita una buena limpieza...",
+                "fr": "Malheureusement, les données de localisation sont corrompues et ont besoin d'être restaurées.",
+                "ja": "でも現れたエリアには、まだ除去しきれていない汚染データがありマシテ……",
+                "ko": "또 그 지역에는 아직 지난번 사건에서 처리하지 못한 잔류 오염 데이터가 남아 있어요",
+                "th": "แต่ที่นั่นมีข้อมูลที่เสียหายอยู่เยอะมาก ต้องเก็บกวาดก่อน...",
+                "zh-Hans": "而那片地区却还残留着一些上次事件的污染数据没来得及清理……",
+                "zh-Hant": "而那片地區卻還殘留著一些上次事件的汙染數據沒來得及清理……"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und du, {Male=Meister;Female=Meisterin} {PlayerName}, bist definitiv die beste Person für diesen Job!",
+                "en": "And you, Master {PlayerName}, are definitely the best person for the job!",
+                "es": "¡Y tú, {Male=Maestro;Female=Maestra} {PlayerName}, eres sin duda {Male=el más indicado;Female=la más indicada} para hacerlo!",
+                "fr": "Et je ne vois pas qui pourrait mieux s'acquitter de cette tâche que vous, {PlayerName} !",
+                "ja": "大事なことだったノデ、いち早く{PlayerName}マスターのことを考えマシタ！",
+                "ko": "그래서 바로 {PlayerName}(이)가 생각난 거죠!",
+                "th": "ดังนั้นนายท่าน {PlayerName} จึงเป็นคนที่เหมาะกับงานนี้ที่สุด",
+                "zh-Hans": "这么重要的事我一下子就想到{PlayerName}你啦！",
+                "zh-Hant": "這麼重要的事我一下子就想到{PlayerName}你啦！"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Supersäuberungsduo wieder im Einsatz! Also los, suchen wir die Aetherfine, {PlayerName}!",
+                "en": "Super cleaner duo, ready to show again! Let's go Aetherfishing, {PlayerName}!",
+                "es": "¡Nuestro extraordinario dueto limpiador está listo para la acción! ¡Vamos a por los Eterfines, {PlayerName}!",
+                "fr": "Le super duo de nettoyeurs va une fois de plus faire des siennes ! Allons trouver ces aetherfins, {PlayerName} !",
+                "ja": "ここはワタシたち、<ano=ブラックショア>黒海岸</ano>最強の汚染除去コンビの出番デスヨ！{PlayerName}さん、一緒に<ano=かいゆう>回遊</ano>魚を探しに行きまショウ！",
+                "ko": "우리 검은 해안의 데이터 제거 에이스 조합이 컴백할 때가 됐어요! {PlayerName}, 우리 같이 회유어 찾으러 가죠!",
+                "th": "สุดยอดคู่หูนักเก็บกวาดพร้อมที่จะโชว์ตัวอีกครั้งแล้ว! ไปตกปลาเอเธอร์ฟินกันเลย {PlayerName}!",
+                "zh-Hans": "是我们黑海岸最强清除污染组合重出江湖的时候了！{PlayerName}，我们一起去找洄游鱼吧！",
+                "zh-Hant": "是我們黑海岸最強清除汙染組合重出江湖的時候了！{PlayerName}我們一起去找洄游魚吧！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was ist ein Aetherfin?",
+                    "en": "What's an Aetherfin?",
+                    "es": "¿Qué es un Eterfín?",
+                    "fr": "C'est quoi, un aetherfin ?",
+                    "ja": "<ano=かいゆう>回遊</ano>魚って？",
+                    "ko": "회유어가 뭐죠?",
+                    "th": "ปลาเอเธอร์ฟินคืออะไรเหรอ?",
+                    "zh-Hans": "洄游鱼是什么？",
+                    "zh-Hant": "洄游魚是什麼？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich bin bereit, KU-Patrick!",
+                    "en": "I'm ready, KU-Patrick!",
+                    "es": "¡Estoy {Male=listo;Female=lista}, KU-Patrick!",
+                    "fr": "{Male=Je suis prêt;Female=Je suis prête}, KU-Patrick !",
+                    "ja": "準備できたよクースター！",
+                    "ko": "준비됐습니다, 쿠 · 키키!",
+                    "th": "ฉันพร้อมแล้ว KU-Patrick!",
+                    "zh-Hans": "我准备好了库大星！",
+                    "zh-Hant": "我準備好了庫大星！"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ku-ku-ku, Aetherfine sind legendäre Relikt-Kreaturen, die seit zwei Jahrzehnten nicht mehr gesichtet wurden!",
+                "en": "Ku ku ku, the Aetherfin is a legendary Remnant creature that hasn't been seen in two decades!",
+                "es": "¡Ku, ku, ku! ¡El Eterfín es una criatura remanente legendaria que lleva dos décadas sin ser vista!",
+                "fr": "Ku ku ku, l'aetherfin est une créature vestigiale légendaire que personne n'a vue depuis près de vingt ans !",
+                "ja": "ウクク、<ano=かいゆう>回遊</ano>魚はここ二十年も現れていない超希少な<ano=はんきょう>反響</ano>生物なンデスヨ！",
+                "ko": "쿠쿠쿠, 회유어란 전설 속 거의 20년 동안 나타난 적 없는 희귀한 울림 생물이지요!",
+                "th": "คูๆ ๆ ปลาเอเธอร์ฟินคือสิ่งมีชีวิตที่เกิดจากเศษเสี้ยวความถี่ในตำนาน ซึ่งไม่มีใครเคยพบเห็นมาสองทศวรรษแล้ว",
+                "zh-Hans": "库库库，洄游鱼可是传说中近二十年都没有再出现过的稀有回音生物！",
+                "zh-Hant": "庫庫庫，洄游魚可是傳說中近二十年都沒有再出現過的稀有回音生物！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber warum schaust du sie dir nicht einfach selbst an, anstatt mir beim Reden zuzuhören?",
+                "en": "But instead of listening to me ramble, how about you come see it for yourself?",
+                "es": "Pero no dejes que te lo explique. ¿Por qué no vienes a verlo {Male=tú mismo;Female=tú misma}?",
+                "fr": "Mais plutôt que d'écouter mes explications interminables, que diriez-vous d'en voir par vous-même ?",
+                "ja": "通信ではうまく説明できませんノデ、{PlayerName}さん、来てみればわかると思いまスヨ！",
+                "ko": "통신에서는 설명하기가 힘드네요, {PlayerName}(이)가 직접 와서 친히 봤으면 하네요!",
+                "th": "แต่แทนที่จะฟังฉันพูดไปเรื่อยๆ ไปดูด้วยตาตัวเองไม่ดีกว่าเหรอ?",
+                "zh-Hans": "通讯里说不清楚，不如{PlayerName}亲眼来看看吧！",
+                "zh-Hant": "通訊裡說不清楚，不如{PlayerName}親眼來看看吧！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und ich bin KU-Key, {Male=Meister;Female=Meisterin} {PlayerName} …",
+                "en": "It's KU-Key, Master {PlayerName}…",
+                "es": "Soy KU-Key, {Male=Maestro;Female=Maestra} {PlayerName}…",
+                "fr": "C'est KU-Clé, {PlayerName}...",
+                "ja": "{PlayerName}マスター、ワタシの名前はクココデスヨ！",
+                "ko": "{PlayerName} 마스터, 제 이름이 쿠 · 키이라고요!",
+                "th": "นี่ KU-Key เอง นายท่าน {PlayerName}...",
+                "zh-Hans": "{PlayerName}大师，我叫库可可啦！",
+                "zh-Hant": "{PlayerName}大師，我叫庫可可啦！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jedenfalls habe ich dir die Koordinaten geschickt.",
+                "en": "Anyway, I've sent the coordinates to you.",
+                "es": "De todos modos, te he enviado las coordenadas.",
+                "fr": "Très bien, je vous ai envoyé les coordonnées.",
+                "ja": "とにかく、位置情報を送りましたヨ。",
+                "ko": "아, 아무튼, 위치는 {PlayerName}에게 동기화했어요",
+                "th": "เอาเป็นว่าฉันส่งพิกัดไปให้คุณแล้วแหละ",
+                "zh-Hans": "总之，我已经把位置同步给你了。",
+                "zh-Hant": "總之，我已經把位置同步給你了。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich warte dort auf dich, also lass mich nicht hängen!",
+                "en": "I'll be waiting there, so don't keep me hanging!",
+                "es": "¡Te estaré esperando allí, así que no me dejes colgado!",
+                "fr": "Je vais rester ici. Ne me faites pas trop attendre !",
+                "ja": "先に行っているノデ、必ず来てくださいネ！",
+                "ko": "저는 먼저 목표 지점에 가 있을게요, 꼭 와주세요!",
+                "th": "จะรอคุณอยู่ที่นั่นนะ อย่าปล่อยให้ฉันคอยเก้อล่ะ!",
+                "zh-Hans": "我先一步去目标地点等你啦。一定要来哦！",
+                "zh-Hant": "我先一步去目標地點等你啦。一定要來喔！"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Standort von KU-Key",
+        "en": "Arrive at KU-Key's location",
+        "es": "Llega a la ubicación de KU-Key.",
+        "fr": "Arriver à l'emplacement de KU-Clé",
+        "ja": "クココのところに向かう",
+        "ko": "쿠 · 키이가 있는 곳에 도착하기",
+        "th": "มาถึงตำแหน่งของ KU-คีย์",
+        "zh-Hans": "到达库可可所在地点",
+        "zh-Hant": "到達庫可可所在地點"
+      },
+      "entities": [
+        {
+          "entityId": 151750027,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_鱼灯光组上",
+          "areaId": 11,
+          "position": {
+            "x": 319596,
+            "y": 114135,
+            "z": 92
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750039,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_鱼灯开关上",
+          "areaId": 11,
+          "position": {
+            "x": 319790,
+            "y": 114065,
+            "z": 89
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750100,
+          "mapId": 8,
+          "blueprintType": "Gameplay_HHA15",
+          "name": "TsEntity_玩法_滑水开启2",
+          "areaId": 11,
+          "position": {
+            "x": 320099,
+            "y": 114359,
+            "z": 278
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 41,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 51,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 55,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 59,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit KU-Key",
+        "en": "Talk to KU-Key",
+        "es": "Habla con KU-Key.",
+        "fr": "Parler à KU-Clé",
+        "ja": "クココと会話する",
+        "ko": "쿠 · 키이와 대화하기",
+        "th": "คุยกับ KU-คีย์",
+        "zh-Hans": "与库可可对话",
+        "zh-Hant": "與庫可可對話"
+      },
+      "entities": [
+        {
+          "entityId": 151000002,
+          "mapId": 8,
+          "blueprintType": "NPC420083",
+          "name": "TsEntity_库洛洛420083",
+          "areaId": 11,
+          "position": {
+            "x": 320868,
+            "y": 113100,
+            "z": 226
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 2,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Ha … Ein Glück, dass du mich gerettet hast! Vielen Dank, {Male=Meister;Female=Meisterin} {PlayerName}!",
+                "en": "Ha… Thank goodness you saved me! Thank you so much, Master {PlayerName}!",
+                "es": "¡Uuuuuf! ¡Menos mal que me has salvado! ¡Muchas gracias, {Male=Maestro;Female=Maestra} {PlayerName}!",
+                "fr": "Ha... Vous m'avez sauvé ! Merci infiniment, {PlayerName} !",
+                "ja": "びっくりシタ……助けてくれてアリガトウゴザイマス、{PlayerName}さん！",
+                "ko": "놀... 놀라 죽을 뻔했네요... 고마워요 {PlayerName}!",
+                "th": "เฮ้อ... สวรรค์ทรงโปรด นายท่านช่วยฉันไว้! ขอบคุณมากนะ นายท่าน {PlayerName}!",
+                "zh-Hans": "吓死我了……终于得救了，谢谢你{PlayerName}！",
+                "zh-Hant": "嚇死我了……終於得救了，謝謝你{PlayerName}！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Alles in Ordnung?",
+                    "en": "Are you alright?",
+                    "es": "¿Estás bien?",
+                    "fr": "Tu vas bien ?",
+                    "ja": "大丈夫？",
+                    "ko": "괜찮아요?",
+                    "th": "เป็นอะไรรึเปล่า?",
+                    "zh-Hans": "你没事吧？",
+                    "zh-Hant": "你沒事吧？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ja! Dank dir.",
+                "en": "Yes! All thanks to you!",
+                "es": "¡Sí! Todo gracias a ti.",
+                "fr": "Oui ! Et c'est grâce à vous.",
+                "ja": "{PlayerName}さんのおかげで大丈夫デシタ。",
+                "ko": "{PlayerName} 덕분에 괜찮아요",
+                "th": "ไม่เป็นไรเลย! เพราะคุณช่วยไว้แท้ๆ",
+                "zh-Hans": "多亏有了{PlayerName}，我没事。",
+                "zh-Hant": "多虧有了{PlayerName}，我沒事。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn du nicht gewesen wärst, wäre ich jetzt nicht mehr in einem Stück.",
+                "en": "If you hadn't been here, I wouldn't be in one piece.",
+                "es": "Si no hubieras estado aquí, no me quedaría ni una pieza en su sitio.",
+                "fr": "Si vous n'aviez pas été là, je serais bon pour la casse.",
+                "ja": "{PlayerName}さんがいなかったら、今頃ワタシはもうスクラップにされてたのかもしれマセン……",
+                "ko": "{PlayerName}(이)가 아니었다면 저는 지금 폐품이 됐을 거예요...",
+                "th": "ถ้าคุณไม่อยู่แถวนี้ ฉันคงกลายเป็นซอยจุ๊ไปแล้ว",
+                "zh-Hans": "不过如果刚刚{PlayerName}不在的话，我现在已经是一地废件了……",
+                "zh-Hant": "不過如果剛剛{PlayerName}不在的話，我現在已經是一地廢件了……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe die Aetherfine zwischen den korrupten Daten entdeckt und dachte, ich könnte helfen, aber diese Tacet-Dissonanzen kamen einfach aus dem Nichts …",
+                "en": "Sorry, I was trying to be a hero with no plan and backup.",
+                "es": "Vi el Eterfín entre los datos corruptos y pensé que podía hacerme cargo, pero esas Disonancias aparecieron de la nada y...",
+                "fr": "J'ai vu des aetherfins au milieu des données corrompues... J'ai voulu m'en approcher, mais ces TDs ont surgi de nulle part...",
+                "ja": "ごめんナサイ、ワタシが不注意だったばかりニ……",
+                "ko": "죄송해요, 제가 너무 경솔했어요",
+                "th": "ขออภัย ฉันพยายามทำตัวเป็นฮีโร่โดยไม่มีแผนและกำลังเสริม",
+                "zh-Hans": "抱歉，是我太冒失了。",
+                "zh-Hant": "抱歉，是我太冒失了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe nicht aufgepasst, Entschuldigung.",
+                "en": "I saw some Aetherfin were trapped in the corrupted data and thought I could help, but those Tacet Discords just came out of nowhere...",
+                "es": "Lo siento, bajé la guardia.",
+                "fr": "Pardonnez-moi, j'ai baissé ma garde.",
+                "ja": "あの汚染データの中に<ano=かいゆう>回遊</ano>魚の姿を見かけたので、どうしようかと迷ってたところ、データの<ano=ざんぞう>残像</ano>が現れて……",
+                "ko": "오염 데이터 속에서 회유어의 자취가 발견되어 어떻게 도와야 할지 고려하는 중에 데이터 잔상들이 갑자기 튀어나왔어요...",
+                "th": "ฉันเห็นปลาเอเธอร์ฟินติดอยู่ในข้อมูลที่เสียหาย คิดว่าน่าจะช่วยได้ แต่ทาเซ็ตดิสคอร์ดดิจิทัลพวกนั้นโผล่มาจากไหนก็ไม่รู้...",
+                "zh-Hans": "我在那些污染数据中发现了洄游鱼的身影，还在犹豫该怎么帮忙的时候，数据残象就忽然出现了……",
+                "zh-Hant": "我在那些汙染數據中發現了洄游魚的身影，還在猶豫該怎麼幫忙的時候，數據殘象就忽然出現了……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das kommt mir alles irgendwie bekannt vor …",
+                    "en": "This all feels a bit familiar...",
+                    "es": "Todo esto me resulta un poco familiar...",
+                    "fr": "J'ai comme une impression de déjà-vu...",
+                    "ja": "何だか前にもこういうことがあったような……",
+                    "ko": "어쩐지 너무 익숙한 느낌인데...",
+                    "th": "เหตุการณ์ดูคุ้นๆ นะ...",
+                    "zh-Hans": "总觉得这一幕似曾相识……",
+                    "zh-Hant": "總覺得這一幕似曾相識……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wie auch immer, wir haben noch viel Arbeit vor uns!",
+                "en": "But still, we've got work to do!",
+                "es": "Pero aun así, ¡tenemos trabajo que hacer!",
+                "fr": "Quoi qu'il en soit, nous avons encore beaucoup de travail !",
+                "ja": "とにかく急ギマショウ！",
+                "ko": "아, 아무튼, 저희 어서 움직이죠!",
+                "th": "แต่ถึงยังไง เราก็ต้องรีบลงมือ!",
+                "zh-Hans": "总之，我们快点行动吧！",
+                "zh-Hant": "總之，我們快點行動吧！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du musst nur den Kern der korrupten Daten finden und ihn mit der Berechtigung des Systems säubern, genau wie beim letzten Mal.",
+                "en": "All you need to do is find the corrupted data's core and clean it with the System's clearance, just like last time.",
+                "es": "Hay que encontrar el núcleo de los datos corruptos y limpiarlos con la autorización del sistema, tal como la última vez.",
+                "fr": "Il suffit de trouver le noyau des données corrompues et de le nettoyer avec l'aval du système, comme la dernière fois.",
+                "ja": "前と同じように、汚染データのコアを見つけたら権限を付与して回収すればいいのデスヨ。",
+                "ko": "예전 우리가 파트너로 일할 때처럼, 오염 데이터의 코어를 찾을 수만 있다면  「권한 부여」 링크를 통해 처리할 수 있어요",
+                "th": "คุณจะต้องหาแกนข้อมูลที่เสียหายให้เจอ แล้วล้างแกนข้อมูลด้วยสิทธิ์เข้าถึงระบบเหมือนคราวก่อน",
+                "zh-Hans": "就和我们之前做搭档时一样，只要找到污染数据的核心就能通过授权链接解决它们。",
+                "zh-Hant": "就和我們之前做搭檔時一樣，只要找到汙染數據的核心就能通過授權連結解決它們。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich versuche, dir so gut wie möglich zu helfen! Aber vergiss nicht, dir die Berechtigung von mir einzuholen, bevor du mit der Säuberung beginnst!",
+                "en": "I'll do everything I can to assist you! Just don't forget to get clearance from me before you start cleaning!",
+                "es": "¡Haré todo lo que pueda para ayudarte! ¡No olvides pedirme autorización antes de empezar a limpiar!",
+                "fr": "Je ferai tout mon possible pour vous aider ! N'oubliez pas de me demander l'autorisation avant de commencer votre nettoyage !",
+                "ja": "ちゃんと{PlayerName}さんをフォローするから、汚染を回収する前にワタシからシステム権限をもらってくださいネ！",
+                "ko": "저는 최선을 다해 {PlayerName}을(를) 협조할 거예요, 단 오염을 제거하기 전에 저에게서 시스템 권한 부여를 받아 가세요",
+                "th": "ฉันจะพยายามช่วยคุณเต็มที่เลย! แค่อย่าลืมรับสิทธิ์เข้าถึงจากฉันก่อนที่คุณจะเริ่มเก็บกวาด!",
+                "zh-Hans": "我会竭尽全力地协助{PlayerName}的，每次清除污染之前记得来找我获取系统授权！",
+                "zh-Hant": "我會竭盡全力地協助{PlayerName}的，每次清除汙染之前記得來找我獲取系統授權！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 63,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 41,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 48,
+      "parentId": 41,
+      "type": "QuestFailed",
+      "entities": [
+        {
+          "entityId": 151750016,
+          "mapId": 8,
+          "blueprintType": "Gameplay081",
+          "name": "TsEntity_玩法_嘲讽守护物",
+          "areaId": 11,
+          "position": {
+            "x": 320867,
+            "y": 113099,
+            "z": 185
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 3,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Sichtmodul beschädigt … System wird abgeschaltet … Werde ich … formatiert?",
+                "en": "Visual module damaged… System disconnecting… Am I... getting formatted?",
+                "es": "Módulo visual dañado… Sistema desconectándose… Me estoy... ¿formateando?",
+                "fr": "Module visuel endommagé... Déconnexion du système... Serais-je en train de me faire... formater ?",
+                "ja": "視覚モジュール作動不能……システム通信切断……ワタシ……フォーマットされマスカ？",
+                "ko": "아... 저... 앞이 안 보여요... 초기화되고 있는 걸까요?",
+                "th": "โมดูลการมองเห็นเสียหาย... ระบบขาดการเชื่อมต่อ นี่ฉัน... ถูกล้างเครื่องเหรอเนี่ย?",
+                "zh-Hans": "视觉模块已下线……系统即将断开连接……我要被格式化了么？",
+                "zh-Hant": "視覺模組已下線……系統即將斷開連接……我要被格式化了嗎？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "KU-Key ist nun ohnmächtig. Mission gescheitert.",
+                "en": "KU-Key is unconscious now. Mission failed.",
+                "es": "KU-Key está inconsciente. Misión fallida.",
+                "fr": "KU-Clé a perdu connaissance. Échec de la mission.",
+                "ja": "クココが意識を失ったため、任務に失敗しました。",
+                "ko": "쿠 · 키이가 의식을 잃었습니다, 임무 실패",
+                "th": "KU-Key หมดสติไปแล้ว ภารกิจล้มเหลว",
+                "zh-Hans": "库可可失去意识，任务失败。",
+                "zh-Hant": "庫可可失去意識，任務失敗。"
+              },
+              "id": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "parentId": 47,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Standort von KU-Key",
+        "en": "Arrive at KU-Key's location",
+        "es": "Llega a la ubicación de KU-Key.",
+        "fr": "Arriver à l'emplacement de KU-Clé",
+        "ja": "クココのところに向かう",
+        "ko": "쿠 · 키이가 있는 곳에 가기",
+        "th": "มาถึงตำแหน่งของ KU-คีย์",
+        "zh-Hans": "赶到库可可所在地点",
+        "zh-Hant": "趕到庫可可所在地點"
+      },
+      "entities": [
+        {
+          "entityId": 151000002,
+          "mapId": 8,
+          "blueprintType": "NPC420083",
+          "name": "TsEntity_库洛洛420083",
+          "areaId": 11,
+          "position": {
+            "x": 320868,
+            "y": 113100,
+            "z": 226
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750016,
+          "mapId": 8,
+          "blueprintType": "Gameplay081",
+          "name": "TsEntity_玩法_嘲讽守护物",
+          "areaId": 11,
+          "position": {
+            "x": 320867,
+            "y": 113099,
+            "z": 185
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 38,
+      "parentId": 47,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Standort von KU-Key",
+        "en": "Arrive at KU-Key's location",
+        "es": "Llega a la ubicación de KU-Key.",
+        "fr": "Arriver à l'emplacement de KU-Clé",
+        "ja": "クココのところに向かう",
+        "ko": "쿠 · 키이가 있는 곳에 도착하기",
+        "th": "มาถึงตำแหน่งของ KU-คีย์",
+        "zh-Hans": "到达库可可所在地点",
+        "zh-Hant": "到達庫可可所在地點"
+      },
+      "entities": [
+        {
+          "entityId": 151000002,
+          "mapId": 8,
+          "blueprintType": "NPC420083",
+          "name": "TsEntity_库洛洛420083",
+          "areaId": 11,
+          "position": {
+            "x": 320868,
+            "y": 113100,
+            "z": 226
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151000042,
+          "mapId": 8,
+          "blueprintType": "Monster009",
+          "name": "TsEntity_小怪_乌咔咔4",
+          "areaId": 11,
+          "position": {
+            "x": 321015,
+            "y": 113041,
+            "z": 219
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 139
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151000043,
+          "mapId": 8,
+          "blueprintType": "Monster009",
+          "name": "TsEntity_小怪_乌咔咔5",
+          "areaId": 11,
+          "position": {
+            "x": 320720,
+            "y": 113227,
+            "z": 205
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -74
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750016,
+          "mapId": 8,
+          "blueprintType": "Gameplay081",
+          "name": "TsEntity_玩法_嘲讽守护物",
+          "areaId": 11,
+          "position": {
+            "x": 320867,
+            "y": 113099,
+            "z": 185
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 2,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Ahhh! Warum greifen mich diese digitalen Tacet-Dissonanzen schon wieder an?! Bleibt zurück!",
+                "en": "Ahhh! Why are these digital Tacet Discords attacking me again!? Stay back!",
+                "es": "¡Ahhh! ¿Por qué me atacan de nuevo estas Disonancias digitales? ¡Atrás!",
+                "fr": "Ah ! Pourquoi ces TDs numériques m'attaquent-ils ? Reculez !",
+                "ja": "ウワワ――なんでまたデータの<ano=ざんぞう>残像</ano>ナンデスカ――やめて、もう近づかないで！",
+                "ko": "우와아- 왜 또 데이터 잔상이야- 그만해, 더 이상 가까이 오지 마!",
+                "th": "เหวอ! ทำไมทาเซ็ตดิสคอร์ดดิจิทัลพวกนี้ถึงโจมตีฉันอีกแล้วล่ะ!? ถอยไปเลยนะ!",
+                "zh-Hans": "呜哇哇——为什么又是数据残象啊——快住手，你们不要再靠近了呀！",
+                "zh-Hant": "嗚哇哇——為什麼又是數據殘象啊——快住手，你們不要再靠近了呀！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "P… Passt gut auf! Noch ein Schritt und ich aktiviere den Vernichtungsmodus!",
+                "en": "L-listen up! Take one more step and I'll activate extermination mode!",
+                "es": "¡Oi-oídme bien! ¡Si dais un paso más, activaré el modo exterminio!",
+                "fr": "A... Attention ! Si vous faites un pas de plus, je passe en mode Extermination !",
+                "ja": "言っておきマスガ、これ以上近づいたら<ano=せんめつ>殲滅</ano>モードを起動しますヨ！",
+                "ko": "나, 경고는 했다, 더 이상 가까이 오면 섬멸 모드 가동할 거야!",
+                "th": "ฟะ...ฟังนะ! ถ้าเข้ามาอีกก้าวเดียว ฉันจะเปิดโหมดทำลายล้างเอาให้กระจุยเลย!",
+                "zh-Hans": "我警告你们，再靠近的话我就要启动歼灭模式了！",
+                "zh-Hant": "我警告你們，再靠近的話我就要啟動殲滅模式了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "KU-Key wechselt in den Vernichtungsmodus! Ultimative Macht!",
+                "en": "KU-Key switching to extermination mode! Ultimate power!",
+                "es": "¡KU-Key pasando a modo exterminio! ¡Poder al máximo!",
+                "fr": "Activation du mode Extermination de KU-Clé ! Puissance ultime !",
+                "ja": "クココ、<ano=せんめつ>殲滅</ano>モード起動――フルパワーバーストモード！",
+                "ko": "쿠 · 키이, 섬멸 모드 가동 - 극한 출력 폭렬 형태!",
+                "th": "KU-Key เปลี่ยนเป็นโหมดทำลายล้าง! พลังขั้นสุดยอด!",
+                "zh-Hans": "库可可，歼灭模式启动——极限功率爆裂形态！",
+                "zh-Hant": "庫可可，殲滅模式啟動——極限功率爆裂形態！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Warnung! Warnung! Dieser Modus ist nicht verfügbar! So hilf mir doch jemand!",
+                "en": "Warning! Warning—I'm not equipped with this module! Somebody help me!",
+                "es": "¡Atención! ¡Atención! ¡Este modo no está disponible! ¡¡Que alguien me ayude!!",
+                "fr": "Attention ! Attention ! Ce mode n'est pas disponible ! À l'aide !",
+                "ja": "警告！警告！ウワ――助けて！ワタシ、そんな機能搭載されてイマセン！",
+                "ko": "비상! 비상! 와- 로봇 살려! 나한테 그런 기능이 탑재가 안 돼 있잖아!",
+                "th": "แจ้งเตือน! แจ้งเตือน! อ๊าก... ไม่มีการติดตั้งโมดูลนี้ในตัวฉัน! ใครก็ได้ช่วยด้วย!",
+                "zh-Hans": "警告！警告！哇——救命呀！我根本没有搭载这样的功能呀！",
+                "zh-Hant": "警告！警告！哇——救命呀！我根本沒有搭載這樣的功能呀！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Halte durch …",
+                "en": "Hang in there...",
+                "es": "Espera ahí...",
+                "fr": "Tiens bon...",
+                "ja": "早く助けに行かなければ……",
+                "ko": "빨리 가보자...",
+                "th": "รอเดี๋ยวนะ...",
+                "zh-Hans": "要赶快过去才行……",
+                "zh-Hant": "要趕快過去才行……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 354,
+                "name": {
+                  "en": "Rover",
+                  "ja": "漂泊者",
+                  "zh-Hans": "漂泊者"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "parentId": 51,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gehe zum Standort von Aetherfin",
+        "en": "Arrive at Aetherfin's location",
+        "es": "Llega a la ubicación del Eterfín.",
+        "fr": "Arriver à l'emplacement d'Aetherfin",
+        "ja": "回遊魚のところに向かう",
+        "ko": "회유어가 있는 위치에 도착하기",
+        "th": "มาถึงตำแหน่งของปลาเอเธอร์ฟิน",
+        "zh-Hans": "到达洄游鱼所在地点",
+        "zh-Hant": "到達洄游魚所在地點"
+      },
+      "entities": [
+        {
+          "entityId": 151000002,
+          "mapId": 8,
+          "blueprintType": "NPC420083",
+          "name": "TsEntity_库洛洛420083",
+          "areaId": 11,
+          "position": {
+            "x": 320868,
+            "y": 113100,
+            "z": 226
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 52,
+      "parentId": 51,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 17,
+      "parentId": 52,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Schließe die Aetherfin-Herausforderung ab",
+        "en": "Complete the Aetherfin challenge",
+        "es": "Completa el desafío del Eterfín.",
+        "fr": "Terminer le défi d'Aetherfin",
+        "ja": "挑戦をクリアする",
+        "ko": "회유어 도전 완료하기",
+        "th": "ทำการท้าทายปลาเอเธอร์ฟินให้เสร็จสมบูรณ์",
+        "zh-Hans": "完成洄游鱼挑战",
+        "zh-Hant": "完成洄游魚挑戰"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 53,
+      "parentId": 52,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 56,
+      "parentId": 55,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 60,
+      "parentId": 55,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Erhalte die Berechtigung",
+        "en": "Obtain clearance",
+        "es": "Obtén la autorización.",
+        "fr": "Obtenir l'autorisation",
+        "ja": "権限を得る",
+        "ko": "권한 인증 완료하기",
+        "th": "รับการอนุมัติ",
+        "zh-Hans": "获得授权",
+        "zh-Hant": "獲得授權"
+      },
+      "entities": [
+        {
+          "entityId": 151000002,
+          "mapId": 8,
+          "blueprintType": "NPC420083",
+          "name": "TsEntity_库洛洛420083",
+          "areaId": 11,
+          "position": {
+            "x": 320868,
+            "y": 113100,
+            "z": 226
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 49,
+      "parentId": 56,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Bereinige die korrupten Daten",
+        "en": "Clear the corrupted data",
+        "es": "Elimina los datos corruptos.",
+        "fr": "Effacer les données corrompues",
+        "ja": "汚染物を除去する",
+        "ko": "오염물 제거하기",
+        "th": "ล้างข้อมูลที่เสียหาย",
+        "zh-Hans": "清除污染物",
+        "zh-Hant": "清除汙染物"
+      },
+      "entities": [
+        {
+          "entityId": 151750027,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_鱼灯光组上",
+          "areaId": 11,
+          "position": {
+            "x": 319596,
+            "y": 114135,
+            "z": 92
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Wir haben es geschafft! Das sind also die Aetherfine! Ich sehe sie auch zum ersten Mal.",
+                "en": "We did it! So these are the Aetherfins! It's my first time seeing them myself.",
+                "es": "¡Lo logramos! ¡Así que estos son los Eterfines! Es la primera vez que los veo.",
+                "fr": "Nous avons réussi ! C'est donc à cela que ressemble un aetherfin ! C'est la première fois que j'en vois.",
+                "ja": "やったナ！これが<ano=かいゆう>回遊</ano>魚デスカ……初めて見ましタ。",
+                "ko": "성공했어요! 이게 바로 회유어 인가요? 제 눈으로 직접 보는 건 이번이 처음이네요",
+                "th": "เราทำสำเร็จแล้ว! เจ้าพวกนี้คือปลาเอเธอร์ฟินสินะ! เพิ่งเคยเห็นกับตาเป็นครั้งแรกเลย",
+                "zh-Hans": "我们成功了！这就是洄游鱼么？我还是第一次亲眼见到。",
+                "zh-Hant": "我們成功了！這就是洄游魚嗎？我還是第一次親眼見到。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie sehen genauso auf wie auf diesen Bildern. Unglaublich …",
+                "en": "They look exactly the same as those pictures. Incredible…",
+                "es": "Son exactamente como en las fotos. Increíble…",
+                "fr": "Ils sont exactement comme sur les photos. Incroyable...",
+                "ja": "写真とそっくり、信じられマセン……",
+                "ko": "사진에 기록된 것과 똑같네요, 세상에...",
+                "th": "หน้าตาเหมือนในรูปภาพเป๊ะเลย มหัศจรรย์จัง...",
+                "zh-Hans": "看起来和照片记载中的一模一样，难以置信……",
+                "zh-Hant": "看起來和照片記載中的一模一樣，難以置信……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "parentId": 56,
+      "type": "QuestFailed",
+      "dialogs": []
+    },
+    {
+      "id": 18,
+      "parentId": 62,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 151000033,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录6鱼过场上",
+          "areaId": 1102,
+          "position": {
+            "x": 304491,
+            "y": 137770,
+            "z": 832
+          },
+          "rotation": {
+            "x": 0,
+            "y": -5,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750099,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_滑水氛围渐变",
+          "areaId": 11,
+          "position": {
+            "x": 316028,
+            "y": 112684,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 7,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Die Aetherfine können wirklich tanzen, genau wie auf den Bildern!",
+                "en": "The Aetherfins really can dance, just like in the pictures!",
+                "es": "¡Los Eterfines pueden bailar, igualito que en las fotos!",
+                "fr": "Les aetherfins savent vraiment danser, comme sur les photos !",
+                "ja": "あの写真が映った光景は本物だったンデスネ。<ano=かいゆう>回遊</ano>魚って、本当に一列になって飛んでいるナンテ！",
+                "ko": "그 사진들 속의 그림이 다 진실이었다니, 회유어는 정말로 나란히 줄 서 춤을 추네요!",
+                "th": "ปลาเอเธอร์ฟินเต้นได้จริงๆ ด้วย เหมือนกับในรูปภาพเลย!",
+                "zh-Hans": "原来那些照片里的场景是真的，洄游鱼真的会排列起舞！",
+                "zh-Hant": "原來那些照片裡的場景是真的，洄游魚真的會排列起舞！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Bildern?",
+                    "en": "Pictures?",
+                    "es": "¿Qué fotos?",
+                    "fr": "Les photos ?",
+                    "ja": "写真？",
+                    "ko": "사진이요?",
+                    "th": "รูปภาพเหรอ?",
+                    "zh-Hans": "照片？",
+                    "zh-Hant": "照片？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Du kennst diese Art von Fisch anscheinend ziemlich gut.",
+                    "en": "You seem to know this type of fish pretty well.",
+                    "es": "Parece que conoces bastante bien este tipo de pez.",
+                    "fr": "Tu as l'air de bien les connaître, ces poissons.",
+                    "ja": "{Male=回遊魚のこと詳しいな。;Female=回遊魚のこと詳しいね。}",
+                    "ko": "회유어에 대해 많이 알고 있는 거 같은데요?",
+                    "th": "ดูเหมือนว่าคุณจะรู้จักปลาพันธุ์นี้ดีเลยนะ",
+                    "zh-Hans": "你似乎对洄游鱼很了解？",
+                    "zh-Hant": "你似乎對洄游魚很了解？"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 1,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Es sind nur alte Daten, nichts Besonderes …",
+                "en": "It's just old data, nothing special…",
+                "es": "Solo son datos antiguos, no tienen nada de especial…",
+                "fr": "Oh, ce sont juste des vieilles données...",
+                "ja": "イヤー、ただの古いデータデスヨ……",
+                "ko": "아니에요... 낡은 데이터뿐인데요...",
+                "th": "แค่ข้อมูลเก่าๆ ไม่ได้มีอะไรพิเศษหรอก...",
+                "zh-Hans": "没什么，只是一些旧数据而已……",
+                "zh-Hant": "沒什麼，只是一些舊數據而已……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das System hat zwar Aufzeichnungen über die Aetherfine, aber da sie seit fast zwanzig Jahren nicht mehr gesichtet wurden, hatte ich nie die Chance, einen zu sehen.",
+                "en": "The System does have records on the Aetherfins, but since they haven't been spotted in almost twenty years, I never got the chance to see one.",
+                "es": "Existen registros de los Eterfines en el Sistema, pero hace casi veinte años que no se los ve.",
+                "fr": "Le système dispose d'informations sur les aetherfins, mais comme personne n'en a vu un depuis presque vingt ans, je n'ai jamais pu les vérifier par moi-même.",
+                "ja": "システムに記録はあったンデスケド、ワタシは見たことはありまセン。だって、もう二十年も現れてないノデスカラ。",
+                "ko": "시스템에 일부가 기록돼 있었지만, 저는 아직 본 적이 없어요, 왜냐면 이 친구들이 20년 가까이 나타나지 않았거든요",
+                "th": "ถึงในระบบจะมีบันทึกเกี่ยวกับปลาเอเธอร์ฟิน แต่เพราะไม่มีใครเคยเห็นมาเกือบ 2 ปีแล้ว ฉันเลยไม่เคยมีโอกาสได้เห็น",
+                "zh-Hans": "虽然系统中有过一些记载，但我从没有亲眼见过，毕竟，它们已经有近二十年没出现了。",
+                "zh-Hant": "雖然系統中有過一些記載，但我從沒有親眼見過，畢竟，它們已經有近二十年沒出現了。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du hast schon einmal Klangschmetterlinge gesehen, oder? Sie sind die gleiche Art von Wesen – beide bestehen aus reiner Relikt-Energie.",
+                "en": "You've seen the Mutterflies before, right? They're the same kind of creature—both made of pure Remnant Energy.",
+                "es": "Las Mascuposas sí que te suenan, ¿no? Son el mismo tipo de criatura, ambas creadas de pura Energía Remanente,",
+                "fr": "Vous avez déjà vu des papillons sonorants, n'est-ce pas ? C'est le même genre de créature ; les deux sont faites d'énergie vestigiale à l'état pur.",
+                "ja": "{PlayerName}さんは<ano=そうせいちょう>走声蝶</ano>を見たことありますヨネ？<ano=かいゆう>回遊</ano>魚もそれらと同じように、純粋な<ano=はんきょう>反響</ano>エナジーでできた生物なノデス。",
+                "ko": "{PlayerName}은(는) 축음나비를 본 적 있죠? 회유어도 그들이랑 비슷해요, 모두 순수한 울림 에너지로 구성된 생물이에요",
+                "th": "คุณเคยเห็นผีเสื้อเสียงกระซิบมาก่อนใช่ไหม? นั่นก็เป็นสิ่งมีชีวิตประเภทเดียวกัน เกิดขึ้นมาจากพลังงานเศษเสี้ยวความถี่บริสุทธิ์เหมือนกันนี่แหละ",
+                "zh-Hans": "{PlayerName}应该有见过隙声蝶的吧？其实洄游鱼和那些一样，都是由纯粹回音能量构成的生物。",
+                "zh-Hant": "{PlayerName}應該有見過隙聲蝶的吧？其實洄游魚和那些一樣，都是由純粹回音能量構成的生物。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber im Gegensatz zu Klangschmetterlingen wirst du außerhalb der Schwarzen Klippen keine Aetherfine finden. Es gibt sie nur hier.",
+                "en": "But unlike the Mutterflies, you won't find any Aetherfin outside the Black Shores. They're unique to this place.",
+                "es": "pero a diferencia de las Mascuposas, no encontrarás Eterfines fuera de Costa Negra. Son autóctonos.",
+                "fr": "Cependant, contrairement aux papillons sonorants, les aetherfins ne se trouvent nulle part ailleurs qu'au Littoral noir.",
+                "ja": "違う点といえば、<ano=かいゆう>回遊</ano>魚は<ano=ブラックショア>黒海岸</ano>特有の生命の形だってところデス、<ano=ブラックショア>黒海岸</ano>の外じゃ見かけられマセン。",
+                "ko": "하지만 다른 곳을 따지자면, 회유어는 검은 해안에서만 볼 수 있는 특별한 생명 형식이에요",
+                "th": "แต่ที่ต่างจากผีเสื้อเสียงกระซิบก็คือ คุณจะไม่เจอปลาเอเธอร์ฟินนอกแบล็กชอร์หรอก มันอยู่แค่ที่นี่เท่านั้น",
+                "zh-Hans": "不过不同之处在于，洄游鱼是黑海岸特有的一种生命形式，离开黑海岸的话就看不到了。",
+                "zh-Hant": "不過不同之處在於，洄游魚是黑海岸特有的一種生命形式，離開黑海岸的話就看不到了。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "parentId": 62,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 151750095,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_滑水氛围控制",
+          "areaId": 11,
+          "position": {
+            "x": 316095,
+            "y": 113799,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 1,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Hey, KU-Key, ich sehe gerade, dass die korrupten Daten im oberen Gebiet bereinigt wurden. Bist du noch mit {PlayerName} zusammen?",
+                "en": "Hey, KU-Key, I just noticed the corrupted data in the upper area has been cleaned. Are you with {PlayerName} now?",
+                "es": "Oye, KU-Key, acabo de percatarme de que se han limpiado los datos corruptos del área superior. ¿Estás con {PlayerName} ahora?",
+                "fr": "Dis, KU-Clé, je viens de remarquer que les données corrompues de la zone supérieure ont été nettoyées. Tu es avec {PlayerName} ?",
+                "ja": "クココ、上層の汚染の除去を確認しました。今{PlayerName}さんと一緒にいるんですね？",
+                "ko": "쿠 · 키이, 위층 오염 제거가 확인됐습니다. 지금 {PlayerName}와(과) 같이 있는 거죠?",
+                "th": "นี่ KU-Key ฉันเพิ่งเห็นว่าข้อมูลที่เสียหายในบริเวณด้านบนถูกล้างไปแล้ว นายอยู่กับ {PlayerName} หรือเปล่า?",
+                "zh-Hans": "库可可，这边确认到上层污染已经清除了，你现在和{PlayerName}在一起对么？",
+                "zh-Hant": "庫可可，這邊確認到上層汙染已經清除了，你現在和{PlayerName}在一起對嗎？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 750093,
+                "name": {
+                  "zh-Hans": "黑海岸研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ja! Wir haben gerade eine Gruppe Aetherfine gerettet!",
+                "en": "Yes! We just saved a bunch of Aetherfins!",
+                "es": "¡Sí! ¡Acabamos de salvar un montón de Eterfines!",
+                "fr": "Oui ! Nous venons de sauver tout un groupe d'aetherfins !",
+                "ja": "はい、さっき汚染データからたくさんの<ano=かいゆう>回遊</ano>魚を助け出しましタ！",
+                "ko": "맞아요, 저희가 방금 오염 데이터에서 엄청 많은 회유어를 구했거든요!",
+                "th": "ใช่แล้ว! เราเพิ่งช่วยปลาเอเธอร์ฟินไปตั้งหลายตัว!",
+                "zh-Hans": "是的，我们刚刚从污染数据中救出了好多洄游鱼！",
+                "zh-Hant": "是的，我們剛剛從汙染數據中救出了好多洄游魚！"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Gut gemacht, ihr beiden. Es gibt einen weiteren Notfall für euch. Ich werde mich kurz halten.",
+                "en": "Good job, you two. There's another emergency for you. I'll keep it short.",
+                "es": "Buen trabajo a ambos. Tengo otra urgencia para vosotros. Seré breve.",
+                "fr": "Excellent travail. Il y a une autre urgence. Je vais être brève.",
+                "ja": "{PlayerName}さんもいてくれて助かりました。緊急事態なので、手短に話します。",
+                "ko": "{PlayerName}이(가) 곁에 있다니 마음이 놓이네요, 비상 사태라 짧게 말하겠습니다",
+                "th": "ทำได้ดีมากทั้งสองคน มีงานด่วนมาให้อีกงานน่ะ จะพูดสั้นๆ ก็แล้วกันนะ",
+                "zh-Hans": "{PlayerName}也在我就放心了，事态紧急我就长话短说了。",
+                "zh-Hant": "{PlayerName}也在我就放心了，事態緊急我就長話短說了。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 750093,
+                "name": {
+                  "zh-Hans": "黑海岸研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unser Frequenzmonitor hat gerade weitere Aetherfine im unteren Gebiet entdeckt.",
+                "en": "Our frequency monitor just detected more Aetherfins in the lower area.",
+                "es": "Nuestro monitor de frecuencia acaba de detectar más Eterfines en el área inferior.",
+                "fr": "Notre détecteur de fréquence a repéré d'autres aetherfins dans la zone inférieure.",
+                "ja": "さっきのデバイスの<ano=しゅうはすう>周波数</ano>観測情報によると、<ano=ブラックショア>黒海岸</ano>の下層にも<ano=かいゆう>回遊</ano>魚の群れが現れたようです。",
+                "ko": "방금 전 말단기의 주파수 모니터링에서 검은 해안 아래층에도 회유어 무리가 나타났다고 떴어요",
+                "th": "เครื่องมือตรวจสอบความถี่ของเราตรวจพบว่ามีปลาเอเธอร์ฟินในบริเวณด้านล่างอีก",
+                "zh-Hans": "刚刚终端的频率监控显示，黑海岸下层也出现了洄游鱼群。",
+                "zh-Hant": "剛剛終端的頻率監控顯示，黑海岸下層也出現了洄游魚群。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 750093,
+                "name": {
+                  "zh-Hans": "黑海岸研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Die Wellenform stimmt mit dem überein, was du hochgeladen hast, also könnten sie auch in korrupten Daten gefangen sein.",
+                "en": "The waveform matches what you uploaded, so they might be trapped in corrupted data too.",
+                "es": "El patrón de onda coincide con lo que cargaste, así que también podrían estar atrapados en datos corruptos.",
+                "fr": "Les ondulations correspondent à celles que vous avez enregistrées, il est donc possible qu'ils soient eux aussi prisonniers de données corrompues.",
+                "ja": "<ano=しゅうはすう>周波数</ano>の波形はクココが提出したものと一致しています。恐らくは汚染データに閉じ込められているのでしょう。",
+                "ko": "주파수 파형도 쿠 · 키이가 제출한 것과 일치합니다, 그 친구들도 잔여 오염 데이터에게 갇힌 거 같아요",
+                "th": "รูปร่างของคลื่นตรงกับข้อมูลที่คุณเพิ่งอัปโหลด พวกมันอาจจะติดอยู่ในข้อมูลที่เสียหายเหมือนกันก็ได้",
+                "zh-Hans": "频率波形和库可可你提交的那组一致，应该是也被残余的污染数据困住了。",
+                "zh-Hant": "頻率波形和庫可可你提交的那組一致，應該也是被殘餘的汙染數據困住了。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 750093,
+                "name": {
+                  "zh-Hans": "黑海岸研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Könntet ihr euch das mal ansehen?",
+                "en": "Could you go check it out?",
+                "es": "¿Podríais ir a comprobarlo?",
+                "fr": "Pourriez-vous aller jeter un œil ?",
+                "ja": "またお願いできますか。",
+                "ko": "두분의 지원 부탁드립니다!",
+                "th": "ช่วยไปเช็กดูหน่อยได้ไหม?",
+                "zh-Hans": "拜托二位再跑一趟了！",
+                "zh-Hant": "拜託二位再跑一趟了！"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 750093,
+                "name": {
+                  "zh-Hans": "黑海岸研究员"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Kein Problem! Überlass das uns!",
+                "en": "No problem! Just leave it to us!",
+                "es": "¡Claro que sí! ¡Déjalo en nuestras manos!",
+                "fr": "Pas de problème ! Nous en faisons notre affaire !",
+                "ja": "いいデスヨ、任せてクダサイ！",
+                "ko": "알겠어요, 저희에게 맡기세요!",
+                "th": "ไม่มีปัญหา! เชื่อมือเราได้เลย!",
+                "zh-Hans": "没问题，就交给我们吧！",
+                "zh-Hant": "沒問題，就交給我們吧！"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "parentId": 63,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 151750096,
+          "mapId": 8,
+          "blueprintType": "Gameplay166",
+          "name": "TsEntity_洄游鱼特效15",
+          "areaId": 11,
+          "position": {
+            "x": 320094,
+            "y": 114306,
+            "z": 334
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 151750100,
+          "mapId": 8,
+          "blueprintType": "Gameplay_HHA15",
+          "name": "TsEntity_玩法_滑水开启2",
+          "areaId": 11,
+          "position": {
+            "x": 320099,
+            "y": 114359,
+            "z": 278
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 2,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Es scheint, als wollten sie dich irgendwo hinbringen. So etwas habe ich noch nie erlebt.",
+                "en": "It seems they want to take you somewhere. I've never encountered anything like this.",
+                "es": "Parece que quieren llevarte a algún lugar. Nunca me he encontrado con algo parecido.",
+                "fr": "Ils ont l'air de vouloir vous emmener quelque part... Je n'avais jamais rien vu de tel.",
+                "ja": "どこかへ導いているヨウデス、こんなこと聞いたことありまセン。",
+                "ko": "친구들이 당신을 어디론가 안내하고 있는 거 같은데요? 이런 경우도 처음이네요",
+                "th": "ดูท่าทางพวกมันอยากจะพาคุณไปที่ไหนสักแห่งนะ ไม่เคยเห็นอะไรแบบนี้มาก่อนเลย",
+                "zh-Hans": "它们似乎想要带你去某个地方？我从没见过这种情况。",
+                "zh-Hant": "它們似乎想要帶你去某個地方？我從沒見過這種情況。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_支线_黑海岸洄游鱼",
+          "flowIndex": 2,
+          "stateId": 5,
+          "talks": [
+            {
+              "text": {
+                "de": "Los, folgen wir ihnen, {PlayerName}!",
+                "en": "Let's follow them, {PlayerName}!",
+                "es": "¡Sigámoslos, {PlayerName}!",
+                "fr": "Suivons-les, {PlayerName} !",
+                "ja": "ついていきマショウ、{PlayerName}さん！",
+                "ko": "어서 따라가시죠, {PlayerName}!",
+                "th": "ตามพวกมันไปกันเถอะ {PlayerName}!",
+                "zh-Hans": "我们快点跟上去吧，{PlayerName}！",
+                "zh-Hant": "我們快點跟上去吧，{PlayerName}！"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1433,
+                "name": {
+                  "zh-Hans": "库可可"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

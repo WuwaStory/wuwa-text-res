@@ -1,0 +1,151 @@
+{
+  "id": 106900006,
+  "key": "狄萨莱海脊",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Geschichten aus Vergangenheit und Gegenwart: Thessaleo Hügel",
+    "en": "Tales of the Past and Present: Thessaleo Fells",
+    "es": "Crónicas de antaño y hoy: Colinas Tesaleo",
+    "fr": "Histoires du passé : Thessaleo",
+    "ja": "古今幾多の物語・ディサレー海嶺",
+    "ko": "고대의 이야기 · 테살레오 해저 산맥",
+    "th": "เรื่องเล่าแห่งอดีตและปัจจุบัน: สันสมุทรเทสซาลีโอ",
+    "zh-Hans": "古今多少故事·狄萨莱海脊",
+    "zh-Hant": "古今多少故事·狄薩萊海脊"
+  },
+  "desc": {
+    "de": "Fuling ist in der Gemeinde Egla und scheint sich für die verlorenen Seiten zu interessieren. Übergib ihr die verlorenen Seiten, die du auf dem Thessaleo Hügel gefunden hast.",
+    "en": "Fuling in Egla Town is collecting these pages of scattered books. Go and deliver the pages found in Thessaleo Fells to her.",
+    "es": "Fuling, del Pueblo de Egla, está recogiendo estas Páginas perdidas. Lleva las páginas encontradas en Colinas Tesaleo y entrégaselas.",
+    "fr": "Fuling est à la ville d'Egla et il paraît qu'elle s'intéresse beaucoup aux pages perdues des livres. Apportez-lui les pages retrouvées aux Hautes Terres de Thessaleo.",
+    "ja": "エグラにいる伏翎は散逸したページに興味があるようなので、ディサレー海嶺で集めたページを彼女に渡してみましょう。",
+    "ko": "에글라 타운의 복령이 흩어진 책장에 관심이 있는 것 같으니 테살레오 해저 산맥에서 수집한 책장들을 그녀에게 보여 주세요",
+    "th": "Fuling ในเมืองเอ็กลากำลังเก็บรวบรวมหน้ากระดาษหนังสือที่กระจัดกระจายเหล่านี้ นำหน้ากระดาษที่พบในสันสมุทรเทสซาลีโอไปส่งมอบให้เธอ",
+    "zh-Hans": "埃格拉镇的伏翎似乎对散佚的书页很感兴趣，把这些于狄萨莱海脊收集到的书页交给她看看吧。",
+    "zh-Hant": "埃格拉鎮的伏翎似乎對散佚的書頁很感興趣，把這些於狄薩萊海脊收集到的書頁交給她看看吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Übergib Fuling „Thessaleo Hügel: Zerrissene Seiten“",
+        "en": "Deliver Torn Pages from Thessaleo Fells to Fuling",
+        "es": "Entrega las Páginas perdidas de Colinas Tesaleo a Fuling.",
+        "fr": "Donner les « Pages retrouvées aux Hautes Terres de Thessaleo » à Fuling",
+        "ja": "「ディサレー海嶺・散逸したページ」を伏翎に渡す",
+        "ko": "「테살레오 해저 산맥 · 흩어진 책장」을 복령에게 제출하기",
+        "th": "ส่งมอบหน้ากระดาษขาดรุ่งริ่งจากสันสมุทรเทสซาลีโอให้กับ Fuling",
+        "zh-Hans": "将「狄萨莱海脊·散佚书页」交给伏翎",
+        "zh-Hant": "將「狄薩萊海脊·散佚書頁」交給伏翎"
+      },
+      "entities": [
+        {
+          "entityId": 106901131,
+          "mapId": 8,
+          "blueprintType": "NPC-伏翎",
+          "name": "TsEntity_154_长离线_伏翎",
+          "areaId": 20,
+          "position": {
+            "x": 770257,
+            "y": 620752,
+            "z": 3830
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -118
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_支线_书页收集V2",
+          "flowIndex": 6,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Dieses Buch dokumentiert einen Teil der Geschichte der Familie Fisalia.",
+                "en": "This book documents some of the Fisalia family's history.",
+                "es": "Este libro documenta parte de la historia de la familia Fisalia.",
+                "fr": "Ce livre documente une partie de l'histoire de la famille Fisalia.",
+                "ja": "この本にはフィサリアファミリーの昔のことが記録されている。",
+                "ko": "이 책에는 피살리아 가문의 일들이 기록되어 있네요",
+                "th": "หนังสือเล่มนี้บันทึกประวัติบางส่วนของตระกูล Fisalia ไว้",
+                "zh-Hans": "这本书记载了一些翡萨烈家族的往事。",
+                "zh-Hant": "這本書記載了一些翡薩烈家族的往事。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1314,
+                "name": {
+                  "zh-Hans": "梧黎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich bin mir nicht sicher, ob du an dieser geheimnisvollen Familie interessiert bist, aber als wir ankamen, haben wir auch ein paar seltsame Dinge über sie gehört...",
+                "en": "I'm not sure if you're interested in this mysterious family, but when we first arrived, we also heard some strange things about them...",
+                "es": "No sé si te interesa esta misteriosa familia, pero cuando llegamos por primera vez, también escuchamos algunas cosas extrañas sobre ellos...",
+                "fr": "Je ne suis pas sûr que tu t'intéresses à cette famille mystérieuse, mais quand nous sommes arrivés, nous avons aussi entendu des choses étranges à leur sujet...",
+                "ja": "このミステリアスな家族に興味があるのか知らないが…来たばかりの時、この家族に関する怪しいことも聞いた…",
+                "ko": "방랑자가 이 신비로운 가문에 대해 관심이 있으신지는 모르겠지만... 저희가 처음에 왔을 때도 이 가문에 대한 이상한 소문을 들은 적이 있어요...",
+                "th": "ฉันไม่แน่ใจว่าคุณสนใจตระกูลลึกลับนี้หรือเปล่า แต่ตอนที่เรามาถึงครั้งแรก เราก็ได้ยินเรื่องราวแปลกๆ เกี่ยวกับพวกเขาเหมือนกัน...",
+                "zh-Hans": "不知道你对这个神秘的家族有没有兴趣……我们刚来的时候，也听说了一些关于这个家族的怪事……",
+                "zh-Hant": "不知道你對這個神秘的家族有沒有興趣……我們剛來的時候，也聽說了一些關於這個家族的怪事……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1314,
+                "name": {
+                  "zh-Hans": "梧黎"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hier, sieh selbst.",
+                "en": "Here, see for yourself.",
+                "es": "Aquí, mira.",
+                "fr": "Tiens, regarde par toi-même.",
+                "ja": "ほら、読んでみればいい。",
+                "ko": "여기요, 한번 읽어보세요",
+                "th": "นี่ไง ลองดูเองสิ",
+                "zh-Hans": "给，看看吧。",
+                "zh-Hant": "給，看看吧。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1314,
+                "name": {
+                  "zh-Hans": "梧黎"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

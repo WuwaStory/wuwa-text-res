@@ -1,0 +1,397 @@
+{
+  "id": 158900017,
+  "key": "饭店4A（吃菌子）",
+  "type": "other",
+  "typeId": 4,
+  "name": {
+    "de": "Margheritas Tagesangebot IV",
+    "en": "Margherita's Daily Special IV",
+    "es": "Menú del dia IV",
+    "fr": "Plat du jour de Margherita - IV",
+    "ja": "マルゲリータの日替わりセット・四",
+    "ko": "마거리트 오늘의 세트 · IV",
+    "th": "เมนูพิเศษประจำวันของมาร์เกริตา IV",
+    "zh-Hans": "玛格烈特今日套餐·四",
+    "zh-Hant": "瑪格烈特今日套餐·四"
+  },
+  "desc": {
+    "de": "Lelia, die sich nicht von vergangenen Misserfolgen aufhalten lässt, hat sich in ihren nächsten Versuch gestürzt.",
+    "en": "Not one to dwell on past failures, Lelia has thrown herself into her next attempt.",
+    "es": "Lelia no es de las que se detienen en fracasos pasados, se ha lanzado a su siguiente intento.",
+    "fr": "Ne se laissant pas abattre par ses échecs passés, Lelia s'est lancée dans sa prochaine tentative.",
+    "ja": "前回の失敗に悲しむ暇もなく、リーリアは再び新たな挑戦に立ち向かっている……",
+    "ko": "지난번 실패를 슬퍼할 겨를도 없이, 라일리아가 바로 새로운 시도를 시작하였다...",
+    "th": "เธอไม่ใช่คนแบบที่จะมัวจมอยู่กับความล้มเหลวในอดีต Lelia พร้อมแล้วที่จะทุ่มเทความพยายามครั้งใหม่",
+    "zh-Hans": "来不及为上次的失败而悲伤，莱丽雅又努力地开始了新的尝试……",
+    "zh-Hant": "來不及為上次的失敗而悲傷，萊麗雅又努力地開始了新的嘗試……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Probier Lelias Gericht",
+        "en": "Taste Lelia's dish",
+        "es": "Prueba el plato de Lelia.",
+        "fr": "Goûter le plat de Lelia",
+        "ja": "リーリアが作った料理を食べてみる",
+        "ko": "라일리아가 만든 음식 시식하기",
+        "th": "ชิมอาหารของ Lelia",
+        "zh-Hans": "去尝尝莱丽娅做的菜",
+        "zh-Hant": "去嚐嚐萊麗婭做的菜"
+      },
+      "entities": [
+        {
+          "entityId": 167900016,
+          "mapId": 8,
+          "blueprintType": "branch2.0_NPC_FemaleM6_5",
+          "name": "TsEntity_FemaleM6_5_莱丽娅见习厨师",
+          "areaId": 1693,
+          "position": {
+            "x": 703880,
+            "y": 586890,
+            "z": 160
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 167900030,
+          "mapId": 8,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录餐厅buff4",
+          "areaId": 1693,
+          "position": {
+            "x": 703561,
+            "y": 587385,
+            "z": 72
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_每日_玛格烈特今日套餐",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Du bist hier! Ich kann es nicht erwarten, dein heutiges Gericht zu probieren!",
+                "en": "You're here! I can't wait for you to taste what I cooked today!",
+                "es": "¡Has venido! ¡Tengo unas ganas locas de que pruebes lo que cociné hoy!",
+                "fr": "Vous êtes là ! J'ai hâte que vous goûtiez ce que j'ai préparé aujourd'hui !",
+                "ja": "いらっしゃいませ。お客さん、また試食お願いします！",
+                "ko": "왔네! 오늘 금방 한 새로운 요리야, 어서 먹어봐!",
+                "th": "มาพอดีเลย! ฉันแทบรอให้คุณได้ชิมอาหารที่ฉันทำวันนี้ไม่ไหวแล้ว!",
+                "zh-Hans": "您来了！快来试试我今天做的新菜！",
+                "zh-Hant": "您來了！快來試試我今天做的新菜！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich habe dich noch nie so aufgeregt gesehen.",
+                    "en": "I've never seen you this excited.",
+                    "es": "Nunca te había visto tan emocionada.",
+                    "fr": "Je ne t'ai jamais vu aussi excitée.",
+                    "ja": "楽しそうだね。",
+                    "ko": "좀처럼 많이 신나 보이네요",
+                    "th": "ไม่เคยเห็นเธอตื่นเต้นแบบนี้มาก่อนเลย",
+                    "zh-Hans": "难得见到你这么兴奋。",
+                    "zh-Hant": "難得見到你這麼興奮。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Bist du zufrieden?",
+                    "en": "Was it a success?",
+                    "es": "¿Te ha salido mejor esta vez?",
+                    "fr": "J'en conclus que tu t'en es bien sortie ?",
+                    "ja": "今回は成功した？",
+                    "ko": "이번엔 성공인가요?",
+                    "th": "คราวนี้สำเร็จใช่ไหม?",
+                    "zh-Hans": "成功了吗？",
+                    "zh-Hant": "成功了嗎？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Ich habe probiert und ich würde sagen, es ist perfekt abgeschmeckt. Guten Appetit, das ist eine Egla-Pilzsuppe.",
+                "en": "I've tasted it, and I'd say the seasoning is just right. Please enjoy, Egla Mushroom Soup.",
+                "es": "Lo he probado y diría que el condimento es perfecto. Sopa de champiñones de Egla. ¡Que la disfrutes!",
+                "fr": "J'y ai goûté, et je pense que l'assaisonnement est parfait. Je vous présente la soupe aux champignons d'Egla.",
+                "ja": "はい！今回はちゃんと味見もしています。どうぞ、こちら「エグラ風クリームマッシュルームスープ」です。",
+                "ko": "만들면서 먹어봤는데, 괜찮았어. 이름은 「에글라 맛 버섯 수프」야",
+                "th": "ฉันชิมเองแล้ว รสชาติกำลังพอดีเลยค่ะ เชิญทานซุปเห็ดเอ็กลาได้เลย!",
+                "zh-Hans": "我在烹饪时自己尝过调味，还可以。请慢用，这是「埃格拉浓香蘑菇汤」。",
+                "zh-Hant": "我在烹飪時自己嚐過調味，還可以。請慢用，這是「埃格拉濃香蘑菇湯」。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Alles klar.",
+                    "en": "Alright, here goes.",
+                    "es": "Muy bien, allá vamos.",
+                    "fr": "D'accord, c'est parti.",
+                    "ja": "いただきます。",
+                    "ko": "먹어볼게요",
+                    "th": "งั้นลองดูแล้วกัน",
+                    "zh-Hans": "那我尝尝吧。",
+                    "zh-Hant": "那我嚐嚐吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Du probierst ein wenig. Die warme Suppe schmeckt köstlich cremig, sodass du gleich noch mehr Essen willst. Du schlürfst noch mehr von der Suppe.",
+                "en": "You take a small sip. The warm soup has a rich, creamy flavor that makes you want to go back for more. You eat a few more spoonfuls.",
+                "es": "La pruebas con cuidado. La sopa está caliente y es bastante cremosa, y su delicioso sabor te invita a seguir degustándola. Tomas unas cucharadas más.",
+                "fr": "Vous prenez une petite gorgée. La soupe a une saveur riche et crémeuse qui vous donne envie de lécher le plat. Vous avalez quelques cuillerées de plus.",
+                "ja": "温かく濃厚なスープの香りに釣られ、思わず何度もスプーンを口に運んでしまう。とても絶品だ。",
+                "ko": "가볍게 맛을 보니, 따뜻한 수프에 진한 우유 향이 나면서 아주 맛있었다. 참지 못하고 더 먹었다",
+                "th": "คุณตักซุปอุ่นๆ ขึ้นมาชิมคำเล็กๆ รสเข้มข้นและความนุ่มลิ้นทำให้อยากทานต่อ คุณตักเพิ่มไปอีกหลายคำ",
+                "zh-Hans": "你浅尝了一下，温热的汤汁口感鲜美，奶香浓郁。你忍不住多舀了几勺。",
+                "zh-Hant": "你淺嚐了一下，溫熱的湯汁口感鮮美，奶香濃郁。你忍不住多舀了幾勺。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Was meinst du? Sie ist aus ganz besonderen Zutaten gemacht.",
+                "en": "What do you think? It's made with some special ingredients.",
+                "es": "¿Qué te parece? Le he puesto unos ingredientes muy especiales.",
+                "fr": "Qu'en pensez-vous ? C'est fait avec quelques ingrédients spéciaux.",
+                "ja": "いかがでしょうか？スープの具材にこだわってみたのですが……",
+                "ko": "어때? 수프에 들어간 식재료도 좋은 것만 사용했어",
+                "th": "เป็นยังไงบ้าง? ฉันใส่วัตถุดิบพิเศษเพิ่มเข้าไปด้วยนะ",
+                "zh-Hans": "怎么样？汤里的食材也是很讲究的。",
+                "zh-Hant": "怎麼樣？湯裡的食材也是很講究的。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Nicht schlecht.",
+                    "en": "Not bad at all.",
+                    "es": "No está nada mal.",
+                    "fr": "Pas mal du tout.",
+                    "ja": "悪くない。",
+                    "ko": "맛이 괜찮네요",
+                    "th": "ไม่เลวเลย",
+                    "zh-Hans": "还不错。",
+                    "zh-Hant": "還不錯。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Um den echten Egla-Geschmack zu erzeugen, bin ich früh aufgestanden und zum Gondel-Markt gegangen, um Pilze aus der Umgebung des Flüsterwind-Hafens zu kaufen.",
+                "en": "To capture true Egla flavor, I got up early and went to the Gondola Market to buy wild mushrooms from Whisperwind Haven.",
+                "es": "Para capturar el verdadero sabor de Egla, me levanté temprano y fui al Mercado Góndola a comprar hongos silvestres de Borgo Cantabrisa.",
+                "fr": "Pour capturer l'essence d'Egla, je me suis levée tôt et suis allée au marché de la gondole pour acheter des champignons sauvages du Havre aux murmures.",
+                "ja": "エグラらしさを再現するために、早起きして、そよ風のヘイヴン産のキノコを水上市場で買ってきたんです。",
+                "ko": "에글라 타운의 맛을 살리려고 아침 일찍부터 수상 시장에 가서, 바람 부는 물가에서 자란 자연산 버섯을 사 왔어",
+                "th": "เพื่อให้ได้รสชาติแท้ๆ แบบเอ็กลา ฉันถึงกับตื่นแต่เช้าไปตลาด Gondola เพื่อซื้อเห็ดป่าจากท่าเรือลมกระซิบเชียวนะ",
+                "zh-Hans": "为了还原埃格拉小镇的风味，我可是特意起早，在水市上买了产自拂风水畔的野生蘑菇。",
+                "zh-Hant": "為了還原埃格拉小鎮的風味，我可是特意起早，在水市上買了產自拂風水畔的野生蘑菇。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Irgendwie schmecken die Pilze … komisch.",
+                    "en": "Something about these mushrooms feels… off.",
+                    "es": "Estos hongos tienen un aspecto un tanto... extraño.",
+                    "fr": "Il y a quelque chose... d'étrange avec ces champignons.",
+                    "ja": "……このキノコ、何かおかしい。",
+                    "ko": "... 버섯이 뭔가 이상한데요?",
+                    "th": "แต่รู้สึกว่าเห็ดนี่... แปลกๆ แฮะ",
+                    "zh-Hans": "……这蘑菇不太对劲。",
+                    "zh-Hant": "……這蘑菇不太對勁。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Gerade als du den Satz beendet hast, wird dir schwarz vor Augen.",
+                "en": "Just as you finish speaking, your vision darkens.",
+                "es": "Justo cuando terminas de hablar, tu visión se nubla.",
+                "fr": "Au moment où vous terminez votre phrase, votre vision s'assombrit.",
+                "ja": "急に視界が暗くなってきた。",
+                "ko": "말이 끝나자마자, 무섭게도 눈앞이 어두워졌다",
+                "th": "ทันทีที่คุณพูดจบ สายตาก็เริ่มพร่าเลือน",
+                "zh-Hans": "话音刚落，你的视野忽然一暗。",
+                "zh-Hant": "話音剛落，你的視野忽然一暗。"
+              },
+              "id": 6
+            },
+            {
+              "text": {
+                "de": "Hey, geht es dir gut?",
+                "en": "Hey, are you okay?",
+                "es": "Oye, ¿estás bien?",
+                "fr": "Hé, ça va ?",
+                "ja": "え……だ、大丈夫ですか？",
+                "ko": "정신 차려봐... 괜찮아?",
+                "th": "เฮ้ คุณเป็นอะไรมั้ย?",
+                "zh-Hans": "喂……您还好吧？",
+                "zh-Hant": "喂……您還好吧？"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was zur … Wer sind all die Leute?!",
+                    "en": "What the... who are all these people?!",
+                    "es": "Qué... ¡¿quiénes son todas estas personas?!",
+                    "fr": "Qu'est-ce que... qui sont tous ces gens ?!",
+                    "ja": "……人が増えた？",
+                    "ko": "눈앞에... 사람이 몇 명 더 나타난 거 같은데?",
+                    "th": "อะไรเนี่ย... คนพวกนี้โผล่มาจากไหน?!",
+                    "zh-Hans": "眼前……好像多了几个人？",
+                    "zh-Hant": "眼前……好像多了幾個人？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Ich glaube, ich halluziniere.",
+                    "en": "I think I must be hallucinating.",
+                    "es": "Creo que debo estar alucinando.",
+                    "fr": "Je pense que je suis en train d'halluciner.",
+                    "ja": "幻覚が見える。",
+                    "ko": "환각까지 생겼어요",
+                    "th": "หรือว่าฉันกำลังเห็นภาพหลอน?",
+                    "zh-Hans": "我都出现幻觉了。",
+                    "zh-Hant": "我都出現幻覺了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hm? Stimmt, mir ist auch ein bisschen schwindelig und mein Herz rast.",
+                "en": "Huh? Now that you mention it, I'm feeling a bit dizzy too, and my heart won't stop racing.",
+                "es": "¿Eh? Ahora que lo mencionas, yo también me siento un poco mareada, y tengo el corazón desbocado.",
+                "fr": "Hein ? Maintenant que vous le dites, je me sens un peu étourdie moi aussi, et mon cœur bat très vite.",
+                "ja": "え？そういえば、私も頭がクラクラして、なんだか落ち着かないような……",
+                "ko": "어? 그렇게 말하니, 나도 뭔가 어지럽고, 기분이 이상해지네...",
+                "th": "หือ? พอคุณพูดแบบนั้น ฉันเองก็เริ่มรู้สึกเวียนหัวนิดๆ เหมือนกัน หัวใจก็เต้นแรงไม่หยุดด้วย",
+                "zh-Hans": "啊？说起来，我也觉得头晕晕的，心情很难平静……",
+                "zh-Hant": "啊？說起來，我也覺得頭暈暈的，心情很難平靜……"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Vielleicht solltest du die besonderen Zutaten nächstes Mal weglassen?",
+                    "en": "Maybe skip the special ingredients next time?",
+                    "es": "Creo que la próxima vez omitiré los ingredientes especiales...",
+                    "fr": "Mieux vaudrait éviter les ingrédients spéciaux la prochaine fois, hein ?",
+                    "ja": "次は普通の食材を使おう。",
+                    "ko": "다음부턴 이상한 식재료를 쓰지 말아줘요",
+                    "th": "คราวหน้าช่วยงดวัตถุดิบพิเศษจะดีกว่านะ",
+                    "zh-Hans": "下次别用奇怪的食材了。",
+                    "zh-Hant": "下次別用奇怪的食材了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Tut mir echt leid! Das passiert nie wieder!",
+                "en": "I'm terribly sorry! It won't happen again!",
+                "es": "¡Lo siento tantísimo! ¡No volverá a suceder!",
+                "fr": "Je suis terriblement désolée ! Ça ne se reproduira pas !",
+                "ja": "うう、本当に申し訳ございません！",
+                "ko": "음, 정말 미안해!",
+                "th": "ขอโทษจริงๆ ค่ะ! จะไม่ให้เกิดขึ้นอีกแล้ว!",
+                "zh-Hans": "呜，真是非常抱歉！",
+                "zh-Hant": "嗚，真是非常抱歉！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50173,
+                "name": {
+                  "zh-Hans": "莱丽娅"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

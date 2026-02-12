@@ -1,0 +1,915 @@
+{
+  "id": 939850003,
+  "key": "排水口捡私房钱",
+  "type": "branch",
+  "typeId": 2,
+  "name": {
+    "de": "Samousas' Schatz",
+    "en": "Samousas's Treasure",
+    "es": "El Tesoro de Samousas",
+    "fr": "Trésor de Samousas",
+    "ja": "サムシャスの宝物",
+    "ko": "사무사스의 보물",
+    "th": "สมบัติของซามูซัส",
+    "zh-Hans": "萨姆沙斯的宝物",
+    "zh-Hant": "薩姆沙斯的寶物"
+  },
+  "desc": {
+    "de": "Samousas Schatz wurde flussabwärts gespült. Um seinen Kindheitstraum zu erfüllen, bittet er dich, die verlorene Kiste zu finden.",
+    "en": "Samousas stash was washed downstream. To fulfill his childhood dream, he asks you to retrieve the lost box.",
+    "es": "La caja de Samousa fue arrastrada por la corriente. Para cumplir su sueño de infancia, te pide que la recuperes.",
+    "fr": "L'argent que Samousas avait caché a été emporté en aval par le flot. Pour réaliser son rêve d'enfance, il vous demande de l'aider à retrouver ce coffre.",
+    "ja": "サムシャスが大切にしていたお金が下流のほうへ流されてしまった。子供の頃の夢を叶うために、その箱を見つけてほしいとあなたに頼んだ。",
+    "ko": "사무사스가 소중히 간직하던 돈이 물살에 휩쓸려 하류로 떠내려 갔다. 어릴 적 꿈을 이루기 위해 그는 당신에게 상자 찾는 걸 도와달라고 요청했다",
+    "th": "คลังเก็บของของซามูซัสถูกพัดพาไปทางปลายน้ำ เพื่อเติมเต็มความฝันในวัยเด็ก เขาจึงขอให้คุณนำกล่องที่หายไปกลับคืนมา",
+    "zh-Hans": "萨姆沙斯珍藏起来的钱被水流冲到下游去了。为了实现小时候的梦想，他请求你帮忙找到那个箱子。",
+    "zh-Hant": "薩姆沙斯珍藏起來的錢被水流沖到下游去了。為了實現小時候的夢想，他請求你幫忙找到那個箱子。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 939850069,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM13_4",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM13_10",
+          "areaId": 33104,
+          "position": {
+            "x": 1265720,
+            "y": 1163978,
+            "z": 51918
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 939850102,
+          "mapId": 8,
+          "blueprintType": "Gameplay000",
+          "name": "TsEntity_通用采集光点2",
+          "areaId": 33004,
+          "position": {
+            "x": 1283080,
+            "y": 1160790,
+            "z": 15990
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_彩蛋_排水口",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Mein Freund! Mein Retter!;Female=Meine Freundin! Meine Retterin!} Tausend Dank! Du hast es tatsächlich für mich gefunden!",
+                "en": "My benefactor! My savior! Oh, thank you! Thank you! You've found it!",
+                "es": "¡{Male=Amigo mío;Female=Amiga mía}! ¡Eres mi {Male=héroe;Female=heroína}! ¡Mil gracias! ¡De verdad lo has encontrado!",
+                "fr": "Fantastique ! Tu me sauves ! Merci mille fois ! Tu l'as vraiment trouvé pour moi !",
+                "ja": "恩人様！ありがとう！見つけてくれて本当に感謝する！",
+                "ko": "정말 제 은인이자 귀인이세요! 찾아주셔서 감사해요!",
+                "th": "ผู้มีพระคุณ! ผู้ช่วยชีวิต! โอ้ ขอบคุณ! ขอบคุณ! คุณหาเจอจนได้!",
+                "zh-Hans": "恩公！贵人！感谢您啊！感谢您帮我把它找回来！",
+                "zh-Hant": "恩公！貴人！感謝您啊！感謝您幫我把它找回來！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt bin ich dem Kauf meines nächsten limitierten Decks einen Schritt näher ... Und wenn ich diesmal diese eine Echo-Karte bekomme, dann bin ich wohl der Profi-Kartenspieler!",
+                "en": "Now I'm one step closer to buying my next card pack... And if I finally manage to draw that Echo card, I'll become the ultimate duel master!",
+                "es": "Ya estoy más cerca de comprar mi próximo mazo limitado... Y si consigo esa carta de eco, ¡seré el rey de las cartas!",
+                "fr": "Maintenant, je vais bientôt pouvoir acheter mon jeu limité... Et si j'obtiens cette carte d'Écho cette fois-ci, je serai le roi des jeux de cartes !",
+                "ja": "あと少しであの限定カードボックスが買えるんだ……もし今回あの音骸をゲットすることができれば、私は伝説のカードキングになれる！",
+                "ko": "그 한정 카드를 사기까지 얼마 안남았었는데... 만약 이번에 그 에코를 얻는다면, 전 전설의 카드왕이 될 수 있어요!",
+                "th": "อีกนิดเดียวก็ซื้อซองการ์ดซองต่อไปได้แล้ว... และถ้าครั้งนี้เปิดได้การ์ดเอคโค่นั่น ฉันก็จะกลายเป็นจ้าวแห่งการดวล!",
+                "zh-Hans": "只差一点我就能买下那盒限定卡牌了……如果这次能开到那张声骸，我就可以变成传说中的牌斗王了！",
+                "zh-Hant": "只差一點我就能買下那盒限定卡牌了……如果這次能開到那張聲骸，我就可以變成傳說中的牌斗王了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Während Samousas sich bei dir bedankt, kommt eine Frau zu euch.",
+                "en": "Just as Samousas thanks you, a woman walks over to you.",
+                "es": "Justo cuando Samousas te da las gracias, una mujer se acerca.",
+                "fr": "Alors que Samousas te remercie, une femme s'approche.",
+                "ja": "サムシャスがあなたにお礼を言っている時に、一人の女性がこちらに向かってきた。",
+                "ko": "사무사스가 당신에게 고맙다고 말하는 순간 한 여성이 다가왔다",
+                "th": "ขณะที่ Samousas กำลังขอบคุณคุณ ผู้หญิงคนหนึ่งก็เดินมาหา",
+                "zh-Hans": "萨姆沙斯向你道谢时，一位女性走了过来。",
+                "zh-Hant": "薩姆沙斯向你道謝時，一位女性走了過來。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Samousas? Was machst du hier? Habe ich dich gerade „limitiertes Deck“ und „Profi-Kartenspieler“ sagen hören? Worum geht es hier?",
+                "en": "Samousas? What're you doing here? Did I just hear you yell \"card pack\" and \"ultimate duel master\"? What's this all about?",
+                "es": "¿Samousas? ¿Qué haces aquí? ¿He oído «mazo limitado» y «rey de las cartas»? ¿Me explicas de qué va todo esto?",
+                "fr": "Samousas ? Qu'est-ce que tu fais ici ? Est-ce que je viens de t'entendre dire « jeu limité » et « roi des jeux de cartes » ? De quoi s'agit-il ?",
+                "ja": "サムシャス？ここで何をしているの？今話していた「限定カード」や「カードキング」というのは？どういうことなの？",
+                "ko": "사무사스? 여기서 뭐하고 있어? 방금 무슨 「한정 카드」랑 「카드왕」이라고 했지? 그게 무슨 말이야?",
+                "th": "Samousas มาทำอะไรที่นี่น่ะ เมื่อกี้ฉันได้ยินคุณตะโกนว่า \"ซองการ์ด\" กับ \"จ้าวแห่งการดวล\" หรือเปล่า มันเรื่องอะไรกัน",
+                "zh-Hans": "萨姆沙斯？你在这里做什么？你刚刚提到什么“限定卡牌”“牌斗王”？这是怎么回事？",
+                "zh-Hant": "薩姆沙斯？你在這裡做什麼？你剛剛提到什麼「限定卡牌」「牌斗王」？這是怎麼回事？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du spielst doch nicht etwa ... „Spitze des Ruhms“, oder? Und woher hast du eigentlich das Geld?",
+                "en": "You're not planning on playing Peaks of Prestige, are you? And where'd you get that money from?",
+                "es": "No piensas... jugar a Cumbre Gloriosa, ¿verdad? ¿Y de dónde sacaste ese dinero?",
+                "fr": "Tu ne vas pas... jouer au Sommet de la Gloire, n'est-ce pas ? Et d'où vient cet argent que tu as là ?",
+                "ja": "まさか……グローリー・ヒルズをやろうとしているの？手に持ってるお金はどこから来たものなの？",
+                "ko": "설마... 영광의 언덕을 하려는 거야? 수중에 있는 돈은 어디서 난거야!",
+                "th": "คงไม่ได้คิดจะไปเล่นสุดยอดเกียรติภูมิใช่มั้ย แล้วไปเอาเงินนั่นมาจากไหน",
+                "zh-Hans": "你不会是……打算去玩荣耀之丘吧？你手上的钱是哪来的？",
+                "zh-Hant": "你不會是……打算去玩榮耀之丘吧？你手上的錢是哪來的？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aaah! Ich ... ich habe nicht ... ich würde nie ... Die- dieses Geld gehört nicht mir! Das gehört {Male=meinem Kumpel;Female=meiner Kumpeline}! Ich wollte es gerade zurückgeben, oder?",
+                "en": "Eek! Favnia! I-I didn't... I'm n-not... This is not my money! My friend here was asking me for some safekeeping! A-And I was just about to give it back to you, isn't that right?",
+                "es": "¡Ay! Yo... no... No estoy... ¡E-este dinero no es mío! ¡Mi {Male=amigo;Female=amiga} me ha pedido que se lo guarde! Y... justo se lo iba a devolver, ¿verdad?",
+                "fr": "Arg ! Je... Je n'ai pas... Je ne suis pas... Cet-cet argent n'est pas à moi ! La personne ici présente me l'a confié ! Et-et j'étais sur le point de le lui rendre, n'est-ce pas ?",
+                "ja": "ひぃ！ハニー、違う、そんなことしない！こ、これは私のお金ではなく、この方が資産管理のために私に預けたものなんだ。今、お金を返そうとしているところだ。そうだろ？",
+                "ko": "어! 여보, 난 아니, 그게 이, 이 돈은 내게 아니야. 이 친구가 나에게 자산 관리를 맡겼는데 지금 돈을 돌려주려고 하던 참이야. 맞죠?",
+                "th": "อึ๋ย! Favnia! ฉะ...ฉันเปล่า... ฉันไม่ได้... นี่ไม่ใช่เงินฉัน! สหายฉันคนนี้ขอให้ฉันช่วยเก็บรักษาเงินให้! ละ...แล้วฉันก็กำลังจะคืนเงินนี้ให้อยู่พอดี ใช่มั้ยล่ะ",
+                "zh-Hans": "噫！老婆大人，我不是，我没有，这，这钱不是我的，是这位朋友交给我做资产管理的，我正准备把钱还回去，是吧？",
+                "zh-Hant": "噫！老婆大人，我不是，我沒有，這，這錢不是我的，是這位朋友交給我做資產管理的，我正準備把錢還回去，是吧？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Samousas wirft dir einen bedeutungsvollen Blick zu.",
+                "en": "Samousas give you a look.",
+                "es": "Samousas te hace un gesto con la mirada.",
+                "fr": "Samousas vous lance un regard significatif.",
+                "ja": "サムシャスがあなたに向かって目配せをした。",
+                "ko": "사무사스가 당신에게 눈짓을 보냈다",
+                "th": "Samousas ส่งสายตาให้คุณ",
+                "zh-Hans": "萨姆沙斯向你使了个眼色。",
+                "zh-Hant": "薩姆沙斯向你使了個眼色。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Ja genau, natürlich.",
+                "en": "...That's right, of course.",
+                "es": "... Así es, por supuesto.",
+                "fr": "... C'est exact, bien sûr.",
+                "ja": "……そうです。",
+                "ko": "...맞아요",
+                "th": "...ใช่แล้ว",
+                "zh-Hans": "……是的。",
+                "zh-Hant": "……是的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wirklich? Dann gib es ihr zurück – sofort!",
+                "en": "Well, is it now? Then you'd best give it back, Samousas!",
+                "es": "¿En serio? ¡Pues dáselo ya!",
+                "fr": "Vraiment ? Eh bien donne-lui, maintenant !",
+                "ja": "そうなの？それなら早くこの方にお金を返して！",
+                "ko": "진짜? 그럼 빨리 돌려줘",
+                "th": "อย่างนั้นเหรอ งั้นก็คืนให้เขาไปสิ Samousas",
+                "zh-Hans": "是么？那就快把钱还给人家！",
+                "zh-Hant": "是嗎？那就快把錢還給人家！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit einem leidenden Gesichtsausdruck übergibt dir Samousas sein Geldbeutel, bevor er von Favnia weggezerrt wird ...",
+                "en": "With great pain, Samousas hands you the box of money before being dragged away by Favnia...",
+                "es": "Con gran dolor, Samousas te entrega la bolsa de dinero y Favnia se lo lleva a rastras...",
+                "fr": "Avec grande douleur, Samousas vous remet la bourse d'argent avant d'être traîné au loin par Favnia...",
+                "ja": "サムシャスは仕方なさそうにお金の入った袋をあなたに渡し、その後ファフナーヤに連れてかれた……",
+                "ko": "사무사스는 아쉬움을 참으며 돈 봉투를 건네준 뒤, 파브니아에게 끌려갔다...",
+                "th": "Samousas ยื่นกล่องเงินให้คุณด้วยความจำใจ ก่อนจะถูก Favnia ลากตัวไป...",
+                "zh-Hans": "萨姆沙斯忍痛将钱袋交给了你，然后就被法芙娜娅拉走了……",
+                "zh-Hant": "薩姆沙斯忍痛將錢袋交給了你，然後就被法芙娜婭拉走了……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "entities": [
+        {
+          "entityId": 939850069,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM13_4",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM13_10",
+          "areaId": 33104,
+          "position": {
+            "x": 1265720,
+            "y": 1163978,
+            "z": 51918
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 939850070,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_FemaleM13_8",
+          "name": "TsEntity_TN_B2_4_七丘_FemaleM13_8",
+          "areaId": 33104,
+          "position": {
+            "x": 1265797,
+            "y": 1164062,
+            "z": 51918
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -160
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 6,
+      "parentId": 2,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Suche nach Hinweisen entlang dem Fluss",
+        "en": "Search for clues downstream",
+        "es": "Busca pistas aguas abajo.",
+        "fr": "Chercher des indices au aval du canal",
+        "ja": "水道の排出口で手がかりを探す",
+        "ko": "수로 하류로 가서 단서 찾기",
+        "th": "ค้นหาเบาะแสที่ปลายน้ำ",
+        "zh-Hans": "前往水道下游寻找线索",
+        "zh-Hant": "前往水道下游尋找線索"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 8,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verwende den Aufladenhieb des Helden, um das Hindernis zu durchtrennen.",
+        "en": "Use \"Hero's Rend\" to cut open the suspicious object",
+        "es": "Usa Corte cargado del héroe para abrir el objeto sospechoso.",
+        "fr": "Couper la chose suspecte avec « le Coup chargé »",
+        "ja": "「英雄の溜め斬り」を使って障害物を斬り払う",
+        "ko": "「영웅의 모아 베기」를 사용하여 의심스러운 물건 베기",
+        "th": "ใช้ \"วีรชนฉีกผ่า\" เพื่อผ่าวัตถุน่าสงสัย",
+        "zh-Hans": "使用「英雄的蓄斩」切开可疑物",
+        "zh-Hant": "使用「英雄的蓄斬」切開可疑物"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 9,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gib die Kiste an Samousas.",
+        "en": "Give the box to Samousas",
+        "es": "Entrega la caja a Samousas.",
+        "fr": "Donner le coffre à Samousas",
+        "ja": "箱をサムシャスに渡す",
+        "ko": "사무사스에게 상자 제출하기",
+        "th": "มอบกล่องให้ซามูซัส",
+        "zh-Hans": "将箱子交给萨姆沙斯",
+        "zh-Hant": "將箱子交給薩姆沙斯"
+      },
+      "entities": [
+        {
+          "entityId": 939850069,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM13_4",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM13_10",
+          "areaId": 33104,
+          "position": {
+            "x": 1265720,
+            "y": 1163978,
+            "z": 51918
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_彩蛋_排水口",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Mein Freund! Mein Retter!;Female=Meine Freundin! Meine Retterin!} Tausend Dank! Du hast es tatsächlich für mich gefunden!",
+                "en": "My benefactor! My savior! Oh, thank you! Thank you! You've found it!",
+                "es": "¡{Male=Amigo mío;Female=Amiga mía}! ¡Eres mi {Male=héroe;Female=heroína}! ¡Mil gracias! ¡De verdad lo has encontrado!",
+                "fr": "Fantastique ! Tu me sauves ! Merci mille fois ! Tu l'as vraiment trouvé pour moi !",
+                "ja": "恩人様！ありがとう！見つけてくれて本当に感謝する！",
+                "ko": "정말 제 은인이자 귀인이세요! 찾아주셔서 감사해요!",
+                "th": "ผู้มีพระคุณ! ผู้ช่วยชีวิต! โอ้ ขอบคุณ! ขอบคุณ! คุณหาเจอจนได้!",
+                "zh-Hans": "恩公！贵人！感谢您啊！感谢您帮我把它找回来！",
+                "zh-Hant": "恩公！貴人！感謝您啊！感謝您幫我把它找回來！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt bin ich dem Kauf meines nächsten limitierten Decks einen Schritt näher ... Und wenn ich diesmal diese eine Echo-Karte bekomme, dann bin ich wohl der Profi-Kartenspieler!",
+                "en": "Now I'm one step closer to buying my next card pack... And if I finally manage to draw that Echo card, I'll become the ultimate duel master!",
+                "es": "Ya estoy más cerca de comprar mi próximo mazo limitado... Y si consigo esa carta de eco, ¡seré el rey de las cartas!",
+                "fr": "Maintenant, je vais bientôt pouvoir acheter mon jeu limité... Et si j'obtiens cette carte d'Écho cette fois-ci, je serai le roi des jeux de cartes !",
+                "ja": "あと少しであの限定カードボックスが買えるんだ……もし今回あの音骸をゲットすることができれば、私は伝説のカードキングになれる！",
+                "ko": "그 한정 카드를 사기까지 얼마 안남았었는데... 만약 이번에 그 에코를 얻는다면, 전 전설의 카드왕이 될 수 있어요!",
+                "th": "อีกนิดเดียวก็ซื้อซองการ์ดซองต่อไปได้แล้ว... และถ้าครั้งนี้เปิดได้การ์ดเอคโค่นั่น ฉันก็จะกลายเป็นจ้าวแห่งการดวล!",
+                "zh-Hans": "只差一点我就能买下那盒限定卡牌了……如果这次能开到那张声骸，我就可以变成传说中的牌斗王了！",
+                "zh-Hant": "只差一點我就能買下那盒限定卡牌了……如果這次能開到那張聲骸，我就可以變成傳說中的牌斗王了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Während Samousas sich bei dir bedankt, kommt eine Frau zu euch.",
+                "en": "Just as Samousas thanks you, a woman walks over to you.",
+                "es": "Justo cuando Samousas te da las gracias, una mujer se acerca.",
+                "fr": "Alors que Samousas te remercie, une femme s'approche.",
+                "ja": "サムシャスがあなたにお礼を言っている時に、一人の女性がこちらに向かってきた。",
+                "ko": "사무사스가 당신에게 고맙다고 말하는 순간 한 여성이 다가왔다",
+                "th": "ขณะที่ Samousas กำลังขอบคุณคุณ ผู้หญิงคนหนึ่งก็เดินมาหา",
+                "zh-Hans": "萨姆沙斯向你道谢时，一位女性走了过来。",
+                "zh-Hant": "薩姆沙斯向你道謝時，一位女性走了過來。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Samousas? Was machst du hier? Habe ich dich gerade „limitiertes Deck“ und „Profi-Kartenspieler“ sagen hören? Worum geht es hier?",
+                "en": "Samousas? What're you doing here? Did I just hear you yell \"card pack\" and \"ultimate duel master\"? What's this all about?",
+                "es": "¿Samousas? ¿Qué haces aquí? ¿He oído «mazo limitado» y «rey de las cartas»? ¿Me explicas de qué va todo esto?",
+                "fr": "Samousas ? Qu'est-ce que tu fais ici ? Est-ce que je viens de t'entendre dire « jeu limité » et « roi des jeux de cartes » ? De quoi s'agit-il ?",
+                "ja": "サムシャス？ここで何をしているの？今話していた「限定カード」や「カードキング」というのは？どういうことなの？",
+                "ko": "사무사스? 여기서 뭐하고 있어? 방금 무슨 「한정 카드」랑 「카드왕」이라고 했지? 그게 무슨 말이야?",
+                "th": "Samousas มาทำอะไรที่นี่น่ะ เมื่อกี้ฉันได้ยินคุณตะโกนว่า \"ซองการ์ด\" กับ \"จ้าวแห่งการดวล\" หรือเปล่า มันเรื่องอะไรกัน",
+                "zh-Hans": "萨姆沙斯？你在这里做什么？你刚刚提到什么“限定卡牌”“牌斗王”？这是怎么回事？",
+                "zh-Hant": "薩姆沙斯？你在這裡做什麼？你剛剛提到什麼「限定卡牌」「牌斗王」？這是怎麼回事？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du spielst doch nicht etwa ... „Spitze des Ruhms“, oder? Und woher hast du eigentlich das Geld?",
+                "en": "You're not planning on playing Peaks of Prestige, are you? And where'd you get that money from?",
+                "es": "No piensas... jugar a Cumbre Gloriosa, ¿verdad? ¿Y de dónde sacaste ese dinero?",
+                "fr": "Tu ne vas pas... jouer au Sommet de la Gloire, n'est-ce pas ? Et d'où vient cet argent que tu as là ?",
+                "ja": "まさか……グローリー・ヒルズをやろうとしているの？手に持ってるお金はどこから来たものなの？",
+                "ko": "설마... 영광의 언덕을 하려는 거야? 수중에 있는 돈은 어디서 난거야!",
+                "th": "คงไม่ได้คิดจะไปเล่นสุดยอดเกียรติภูมิใช่มั้ย แล้วไปเอาเงินนั่นมาจากไหน",
+                "zh-Hans": "你不会是……打算去玩荣耀之丘吧？你手上的钱是哪来的？",
+                "zh-Hant": "你不會是……打算去玩榮耀之丘吧？你手上的錢是哪來的？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aaah! Ich ... ich habe nicht ... ich würde nie ... Die- dieses Geld gehört nicht mir! Das gehört {Male=meinem Kumpel;Female=meiner Kumpeline}! Ich wollte es gerade zurückgeben, oder?",
+                "en": "Eek! Favnia! I-I didn't... I'm n-not... This is not my money! My friend here was asking me for some safekeeping! A-And I was just about to give it back to you, isn't that right?",
+                "es": "¡Ay! Yo... no... No estoy... ¡E-este dinero no es mío! ¡Mi {Male=amigo;Female=amiga} me ha pedido que se lo guarde! Y... justo se lo iba a devolver, ¿verdad?",
+                "fr": "Arg ! Je... Je n'ai pas... Je ne suis pas... Cet-cet argent n'est pas à moi ! La personne ici présente me l'a confié ! Et-et j'étais sur le point de le lui rendre, n'est-ce pas ?",
+                "ja": "ひぃ！ハニー、違う、そんなことしない！こ、これは私のお金ではなく、この方が資産管理のために私に預けたものなんだ。今、お金を返そうとしているところだ。そうだろ？",
+                "ko": "어! 여보, 난 아니, 그게 이, 이 돈은 내게 아니야. 이 친구가 나에게 자산 관리를 맡겼는데 지금 돈을 돌려주려고 하던 참이야. 맞죠?",
+                "th": "อึ๋ย! Favnia! ฉะ...ฉันเปล่า... ฉันไม่ได้... นี่ไม่ใช่เงินฉัน! สหายฉันคนนี้ขอให้ฉันช่วยเก็บรักษาเงินให้! ละ...แล้วฉันก็กำลังจะคืนเงินนี้ให้อยู่พอดี ใช่มั้ยล่ะ",
+                "zh-Hans": "噫！老婆大人，我不是，我没有，这，这钱不是我的，是这位朋友交给我做资产管理的，我正准备把钱还回去，是吧？",
+                "zh-Hant": "噫！老婆大人，我不是，我沒有，這，這錢不是我的，是這位朋友交給我做資產管理的，我正準備把錢還回去，是吧？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Samousas wirft dir einen bedeutungsvollen Blick zu.",
+                "en": "Samousas give you a look.",
+                "es": "Samousas te hace un gesto con la mirada.",
+                "fr": "Samousas vous lance un regard significatif.",
+                "ja": "サムシャスがあなたに向かって目配せをした。",
+                "ko": "사무사스가 당신에게 눈짓을 보냈다",
+                "th": "Samousas ส่งสายตาให้คุณ",
+                "zh-Hans": "萨姆沙斯向你使了个眼色。",
+                "zh-Hant": "薩姆沙斯向你使了個眼色。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Ja genau, natürlich.",
+                "en": "...That's right, of course.",
+                "es": "... Así es, por supuesto.",
+                "fr": "... C'est exact, bien sûr.",
+                "ja": "……そうです。",
+                "ko": "...맞아요",
+                "th": "...ใช่แล้ว",
+                "zh-Hans": "……是的。",
+                "zh-Hant": "……是的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wirklich? Dann gib es ihr zurück – sofort!",
+                "en": "Well, is it now? Then you'd best give it back, Samousas!",
+                "es": "¿En serio? ¡Pues dáselo ya!",
+                "fr": "Vraiment ? Eh bien donne-lui, maintenant !",
+                "ja": "そうなの？それなら早くこの方にお金を返して！",
+                "ko": "진짜? 그럼 빨리 돌려줘",
+                "th": "อย่างนั้นเหรอ งั้นก็คืนให้เขาไปสิ Samousas",
+                "zh-Hans": "是么？那就快把钱还给人家！",
+                "zh-Hant": "是嗎？那就快把錢還給人家！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit einem leidenden Gesichtsausdruck übergibt dir Samousas sein Geldbeutel, bevor er von Favnia weggezerrt wird ...",
+                "en": "With great pain, Samousas hands you the box of money before being dragged away by Favnia...",
+                "es": "Con gran dolor, Samousas te entrega la bolsa de dinero y Favnia se lo lleva a rastras...",
+                "fr": "Avec grande douleur, Samousas vous remet la bourse d'argent avant d'être traîné au loin par Favnia...",
+                "ja": "サムシャスは仕方なさそうにお金の入った袋をあなたに渡し、その後ファフナーヤに連れてかれた……",
+                "ko": "사무사스는 아쉬움을 참으며 돈 봉투를 건네준 뒤, 파브니아에게 끌려갔다...",
+                "th": "Samousas ยื่นกล่องเงินให้คุณด้วยความจำใจ ก่อนจะถูก Favnia ลากตัวไป...",
+                "zh-Hans": "萨姆沙斯忍痛将钱袋交给了你，然后就被法芙娜娅拉走了……",
+                "zh-Hant": "薩姆沙斯忍痛將錢袋交給了你，然後就被法芙娜婭拉走了……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Untersuche die Kiste",
+        "en": "Pick up the box",
+        "es": "Recoge la caja.",
+        "fr": "Prendre la boîte",
+        "ja": "落ちた箱を取得",
+        "ko": "떨어진 상자 줍기",
+        "th": "เก็บกล่องขึ้นมา",
+        "zh-Hans": "拾取掉落的箱子",
+        "zh-Hant": "拾取掉落的箱子"
+      },
+      "entities": [
+        {
+          "entityId": 939850102,
+          "mapId": 8,
+          "blueprintType": "Gameplay000",
+          "name": "TsEntity_通用采集光点2",
+          "areaId": 33004,
+          "position": {
+            "x": 1283080,
+            "y": 1160790,
+            "z": 15990
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 6,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Gib die Kiste an Samousas.",
+        "en": "Give the box to Samousas",
+        "es": "Entrega la caja a Samousas.",
+        "fr": "Donner le coffre à Samousas",
+        "ja": "箱をサムシャスに渡す",
+        "ko": "사무사스에게 상자 제출하기",
+        "th": "มอบกล่องให้ซามูซัส",
+        "zh-Hans": "将箱子交给萨姆沙斯",
+        "zh-Hant": "將箱子交給薩姆沙斯"
+      },
+      "entities": [
+        {
+          "entityId": 939850069,
+          "mapId": 8,
+          "blueprintType": "TsEntity_TN_B2_4_七丘_MaleM13_4",
+          "name": "TsEntity_TN_B2_4_七丘_MaleM13_10",
+          "areaId": 33104,
+          "position": {
+            "x": 1265720,
+            "y": 1163978,
+            "z": 51918
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 115
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_4_彩蛋_排水口",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Mein Freund! Mein Retter!;Female=Meine Freundin! Meine Retterin!} Tausend Dank! Du hast es tatsächlich für mich gefunden!",
+                "en": "My benefactor! My savior! Oh, thank you! Thank you! You've found it!",
+                "es": "¡{Male=Amigo mío;Female=Amiga mía}! ¡Eres mi {Male=héroe;Female=heroína}! ¡Mil gracias! ¡De verdad lo has encontrado!",
+                "fr": "Fantastique ! Tu me sauves ! Merci mille fois ! Tu l'as vraiment trouvé pour moi !",
+                "ja": "恩人様！ありがとう！見つけてくれて本当に感謝する！",
+                "ko": "정말 제 은인이자 귀인이세요! 찾아주셔서 감사해요!",
+                "th": "ผู้มีพระคุณ! ผู้ช่วยชีวิต! โอ้ ขอบคุณ! ขอบคุณ! คุณหาเจอจนได้!",
+                "zh-Hans": "恩公！贵人！感谢您啊！感谢您帮我把它找回来！",
+                "zh-Hant": "恩公！貴人！感謝您啊！感謝您幫我把它找回來！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jetzt bin ich dem Kauf meines nächsten limitierten Decks einen Schritt näher ... Und wenn ich diesmal diese eine Echo-Karte bekomme, dann bin ich wohl der Profi-Kartenspieler!",
+                "en": "Now I'm one step closer to buying my next card pack... And if I finally manage to draw that Echo card, I'll become the ultimate duel master!",
+                "es": "Ya estoy más cerca de comprar mi próximo mazo limitado... Y si consigo esa carta de eco, ¡seré el rey de las cartas!",
+                "fr": "Maintenant, je vais bientôt pouvoir acheter mon jeu limité... Et si j'obtiens cette carte d'Écho cette fois-ci, je serai le roi des jeux de cartes !",
+                "ja": "あと少しであの限定カードボックスが買えるんだ……もし今回あの音骸をゲットすることができれば、私は伝説のカードキングになれる！",
+                "ko": "그 한정 카드를 사기까지 얼마 안남았었는데... 만약 이번에 그 에코를 얻는다면, 전 전설의 카드왕이 될 수 있어요!",
+                "th": "อีกนิดเดียวก็ซื้อซองการ์ดซองต่อไปได้แล้ว... และถ้าครั้งนี้เปิดได้การ์ดเอคโค่นั่น ฉันก็จะกลายเป็นจ้าวแห่งการดวล!",
+                "zh-Hans": "只差一点我就能买下那盒限定卡牌了……如果这次能开到那张声骸，我就可以变成传说中的牌斗王了！",
+                "zh-Hant": "只差一點我就能買下那盒限定卡牌了……如果這次能開到那張聲骸，我就可以變成傳說中的牌斗王了！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Während Samousas sich bei dir bedankt, kommt eine Frau zu euch.",
+                "en": "Just as Samousas thanks you, a woman walks over to you.",
+                "es": "Justo cuando Samousas te da las gracias, una mujer se acerca.",
+                "fr": "Alors que Samousas te remercie, une femme s'approche.",
+                "ja": "サムシャスがあなたにお礼を言っている時に、一人の女性がこちらに向かってきた。",
+                "ko": "사무사스가 당신에게 고맙다고 말하는 순간 한 여성이 다가왔다",
+                "th": "ขณะที่ Samousas กำลังขอบคุณคุณ ผู้หญิงคนหนึ่งก็เดินมาหา",
+                "zh-Hans": "萨姆沙斯向你道谢时，一位女性走了过来。",
+                "zh-Hant": "薩姆沙斯向你道謝時，一位女性走了過來。"
+              },
+              "id": 3
+            },
+            {
+              "text": {
+                "de": "Samousas? Was machst du hier? Habe ich dich gerade „limitiertes Deck“ und „Profi-Kartenspieler“ sagen hören? Worum geht es hier?",
+                "en": "Samousas? What're you doing here? Did I just hear you yell \"card pack\" and \"ultimate duel master\"? What's this all about?",
+                "es": "¿Samousas? ¿Qué haces aquí? ¿He oído «mazo limitado» y «rey de las cartas»? ¿Me explicas de qué va todo esto?",
+                "fr": "Samousas ? Qu'est-ce que tu fais ici ? Est-ce que je viens de t'entendre dire « jeu limité » et « roi des jeux de cartes » ? De quoi s'agit-il ?",
+                "ja": "サムシャス？ここで何をしているの？今話していた「限定カード」や「カードキング」というのは？どういうことなの？",
+                "ko": "사무사스? 여기서 뭐하고 있어? 방금 무슨 「한정 카드」랑 「카드왕」이라고 했지? 그게 무슨 말이야?",
+                "th": "Samousas มาทำอะไรที่นี่น่ะ เมื่อกี้ฉันได้ยินคุณตะโกนว่า \"ซองการ์ด\" กับ \"จ้าวแห่งการดวล\" หรือเปล่า มันเรื่องอะไรกัน",
+                "zh-Hans": "萨姆沙斯？你在这里做什么？你刚刚提到什么“限定卡牌”“牌斗王”？这是怎么回事？",
+                "zh-Hant": "薩姆沙斯？你在這裡做什麼？你剛剛提到什麼「限定卡牌」「牌斗王」？這是怎麼回事？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du spielst doch nicht etwa ... „Spitze des Ruhms“, oder? Und woher hast du eigentlich das Geld?",
+                "en": "You're not planning on playing Peaks of Prestige, are you? And where'd you get that money from?",
+                "es": "No piensas... jugar a Cumbre Gloriosa, ¿verdad? ¿Y de dónde sacaste ese dinero?",
+                "fr": "Tu ne vas pas... jouer au Sommet de la Gloire, n'est-ce pas ? Et d'où vient cet argent que tu as là ?",
+                "ja": "まさか……グローリー・ヒルズをやろうとしているの？手に持ってるお金はどこから来たものなの？",
+                "ko": "설마... 영광의 언덕을 하려는 거야? 수중에 있는 돈은 어디서 난거야!",
+                "th": "คงไม่ได้คิดจะไปเล่นสุดยอดเกียรติภูมิใช่มั้ย แล้วไปเอาเงินนั่นมาจากไหน",
+                "zh-Hans": "你不会是……打算去玩荣耀之丘吧？你手上的钱是哪来的？",
+                "zh-Hant": "你不會是……打算去玩榮耀之丘吧？你手上的錢是哪來的？"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aaah! Ich ... ich habe nicht ... ich würde nie ... Die- dieses Geld gehört nicht mir! Das gehört {Male=meinem Kumpel;Female=meiner Kumpeline}! Ich wollte es gerade zurückgeben, oder?",
+                "en": "Eek! Favnia! I-I didn't... I'm n-not... This is not my money! My friend here was asking me for some safekeeping! A-And I was just about to give it back to you, isn't that right?",
+                "es": "¡Ay! Yo... no... No estoy... ¡E-este dinero no es mío! ¡Mi {Male=amigo;Female=amiga} me ha pedido que se lo guarde! Y... justo se lo iba a devolver, ¿verdad?",
+                "fr": "Arg ! Je... Je n'ai pas... Je ne suis pas... Cet-cet argent n'est pas à moi ! La personne ici présente me l'a confié ! Et-et j'étais sur le point de le lui rendre, n'est-ce pas ?",
+                "ja": "ひぃ！ハニー、違う、そんなことしない！こ、これは私のお金ではなく、この方が資産管理のために私に預けたものなんだ。今、お金を返そうとしているところだ。そうだろ？",
+                "ko": "어! 여보, 난 아니, 그게 이, 이 돈은 내게 아니야. 이 친구가 나에게 자산 관리를 맡겼는데 지금 돈을 돌려주려고 하던 참이야. 맞죠?",
+                "th": "อึ๋ย! Favnia! ฉะ...ฉันเปล่า... ฉันไม่ได้... นี่ไม่ใช่เงินฉัน! สหายฉันคนนี้ขอให้ฉันช่วยเก็บรักษาเงินให้! ละ...แล้วฉันก็กำลังจะคืนเงินนี้ให้อยู่พอดี ใช่มั้ยล่ะ",
+                "zh-Hans": "噫！老婆大人，我不是，我没有，这，这钱不是我的，是这位朋友交给我做资产管理的，我正准备把钱还回去，是吧？",
+                "zh-Hant": "噫！老婆大人，我不是，我沒有，這，這錢不是我的，是這位朋友交給我做資產管理的，我正準備把錢還回去，是吧？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 850330,
+                "name": {
+                  "zh-Hans": "萨姆沙斯"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Samousas wirft dir einen bedeutungsvollen Blick zu.",
+                "en": "Samousas give you a look.",
+                "es": "Samousas te hace un gesto con la mirada.",
+                "fr": "Samousas vous lance un regard significatif.",
+                "ja": "サムシャスがあなたに向かって目配せをした。",
+                "ko": "사무사스가 당신에게 눈짓을 보냈다",
+                "th": "Samousas ส่งสายตาให้คุณ",
+                "zh-Hans": "萨姆沙斯向你使了个眼色。",
+                "zh-Hant": "薩姆沙斯向你使了個眼色。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "... Ja genau, natürlich.",
+                "en": "...That's right, of course.",
+                "es": "... Así es, por supuesto.",
+                "fr": "... C'est exact, bien sûr.",
+                "ja": "……そうです。",
+                "ko": "...맞아요",
+                "th": "...ใช่แล้ว",
+                "zh-Hans": "……是的。",
+                "zh-Hant": "……是的。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 750088,
+                "name": {
+                  "zh-Hans": "{PlayerName}"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wirklich? Dann gib es ihr zurück – sofort!",
+                "en": "Well, is it now? Then you'd best give it back, Samousas!",
+                "es": "¿En serio? ¡Pues dáselo ya!",
+                "fr": "Vraiment ? Eh bien donne-lui, maintenant !",
+                "ja": "そうなの？それなら早くこの方にお金を返して！",
+                "ko": "진짜? 그럼 빨리 돌려줘",
+                "th": "อย่างนั้นเหรอ งั้นก็คืนให้เขาไปสิ Samousas",
+                "zh-Hans": "是么？那就快把钱还给人家！",
+                "zh-Hant": "是嗎？那就快把錢還給人家！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 850331,
+                "name": {
+                  "zh-Hans": "法芙娜娅"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Mit einem leidenden Gesichtsausdruck übergibt dir Samousas sein Geldbeutel, bevor er von Favnia weggezerrt wird ...",
+                "en": "With great pain, Samousas hands you the box of money before being dragged away by Favnia...",
+                "es": "Con gran dolor, Samousas te entrega la bolsa de dinero y Favnia se lo lleva a rastras...",
+                "fr": "Avec grande douleur, Samousas vous remet la bourse d'argent avant d'être traîné au loin par Favnia...",
+                "ja": "サムシャスは仕方なさそうにお金の入った袋をあなたに渡し、その後ファフナーヤに連れてかれた……",
+                "ko": "사무사스는 아쉬움을 참으며 돈 봉투를 건네준 뒤, 파브니아에게 끌려갔다...",
+                "th": "Samousas ยื่นกล่องเงินให้คุณด้วยความจำใจ ก่อนจะถูก Favnia ลากตัวไป...",
+                "zh-Hans": "萨姆沙斯忍痛将钱袋交给了你，然后就被法芙娜娅拉走了……",
+                "zh-Hant": "薩姆沙斯忍痛將錢袋交給了你，然後就被法芙娜婭拉走了……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

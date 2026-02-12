@@ -1,0 +1,112 @@
+{
+  "id": 2000010,
+  "key": "播放剧情任务",
+  "type": "other",
+  "typeId": 100,
+  "name": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "desc": {
+    "de": "Testtext",
+    "es": "Texto de prueba",
+    "zh-Hans": "测试文本"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Testtext",
+        "es": "Texto de prueba",
+        "zh-Hans": "测试文本"
+      },
+      "dialogs": [
+        {
+          "flowId": "剧情_QuestText",
+          "flowIndex": 5,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Spielen Sie die Handlung 1 ab",
+                "es": "Reproduce la trama 1",
+                "zh-Hans": "播放剧情1"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 38,
+                "name": {
+                  "en": "An'ke",
+                  "ja": "アンコ",
+                  "zh-Hans": "安可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Spielen Sie die Handlung 2 ab",
+                "es": "Reproduce la trama 2",
+                "zh-Hans": "播放剧情2"
+              },
+              "id": 0,
+              "speaker": {
+                "id": 38,
+                "name": {
+                  "en": "An'ke",
+                  "ja": "アンコ",
+                  "zh-Hans": "安可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Spielen Sie die Handlung 3 ab",
+                "es": "Reproduce la trama 3",
+                "zh-Hans": "播放剧情3"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 38,
+                "name": {
+                  "en": "An'ke",
+                  "ja": "アンコ",
+                  "zh-Hans": "安可"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sagen Sie etwas.",
+                "es": "Di algo",
+                "zh-Hans": "说点什么吧",
+                "zh-Hant": "說點什麼吧"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 7,
+                "name": {
+                  "zh-Hans": "朔月"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

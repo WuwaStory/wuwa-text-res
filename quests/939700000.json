@@ -1,0 +1,973 @@
+{
+  "id": 939700000,
+  "key": "日灵收集引导",
+  "type": "branch",
+  "typeId": 7,
+  "name": {
+    "de": "Rückkehr des Glanzes",
+    "en": "Radiance's Return",
+    "es": "El regreso del resplandor",
+    "fr": "Retour des Soligraines",
+    "ja": "巡りて林に帰る",
+    "ko": "푸른 열매의 숲",
+    "th": "ผลสุริยะหวนสู่พงไพร",
+    "zh-Hans": "青实归林",
+    "zh-Hant": "青實歸林"
+  },
+  "desc": {
+    "de": "Auf den Solissamen-Ebenen sucht Lyosroth nach den verlorenen Solislingen …",
+    "en": "On the Soliseed Plains, Lyosroth is searching for the missing Soliskin…",
+    "es": "En las Llanuras Soliseed, Lyosroth está buscando al Solistirpe desaparecido…",
+    "fr": "À la plaine des Soligraines, Lyosroth cherche des Solisiens perdus...",
+    "ja": "青実の原のリョゥスロゥトが、迷子になった太陽の精霊を探しているらしい。",
+    "ko": "푸른 열매 평원 안에 있는 리오슬로트가 잃어버린 태양의 정령을 찾고 있습니다...",
+    "th": "Lyosroth ในทุ่งผลสุริยะกำลังตามหา Soliskin ที่หลงทางอยู่...",
+    "zh-Hans": "青实原内的留索罗特正在寻找走失的日灵……",
+    "zh-Hant": "青實原內的留索羅特正在尋找走失的日靈……"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 4,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 7,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Hirten.",
+        "en": "Talk to the Shepherd",
+        "es": "Habla con el Pastor.",
+        "fr": "Parler au berger",
+        "ja": "牧者と会話する",
+        "ko": "목자와 대화하기",
+        "th": "คุยกับผู้เลี้ยงดู",
+        "zh-Hans": "与牧者对话",
+        "zh-Hant": "與牧者對話"
+      },
+      "entities": [
+        {
+          "entityId": 939700326,
+          "mapId": 906,
+          "blueprintType": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_1SB1LJ",
+          "name": "TsEntity_TN_B3_0_拉海洛_MaleM_YZMMZ1_1SB1LJ",
+          "areaId": 36121,
+          "position": {
+            "x": -366740,
+            "y": -654770,
+            "z": 4919
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_日灵收集引导任务",
+          "flowIndex": 2,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Hallo, {PlayerName}. Tut mir leid, wenn ich so forsch bin, aber es gibt da etwas, wobei du uns hoffentlich helfen könntest.",
+                "en": "Hello, {PlayerName}. Forgive me for being so blunt, but there's something I was hoping you could help us with.",
+                "es": "Hola, {PlayerName}. Perdóname por ser tan directo, pero quería ver si podías ayudarnos con algo.",
+                "fr": "Bonjour, {PlayerName}. Pardon d'être un peu direct, mais j'aurais aimé que tu nous aides à régler un souci.",
+                "ja": "{PlayerName}さん、こんにちは。突然呼び出して申し訳ありません、一つお願いしたいことがあるのです。",
+                "ko": "{PlayerName}, 안녕하세요. 갑작스러우시겠지만, 당신의 도움이 필요한 일이 하나 있어서요",
+                "th": "{PlayerName} สวัสดี ออกจะกะทันหันไปหน่อยนะ แต่เรามีเรื่องหนึ่งอยากขอให้คุณช่วยน่ะ",
+                "zh-Hans": "{PlayerName}，你好。虽然十分唐突，但有一件事希望你能帮忙。",
+                "zh-Hant": "{PlayerName}，你好。雖然十分唐突，但有一件事希望你能幫忙。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Großteil der Hirten im Bjartr-Wald ist derzeit mit Aufträgen beschäftigt, wobei jeder von ihnen über zwanzig Solislinge zu betreuen hat.",
+                "en": "The bulk of the Shepherds at Bjartr Woods are engaged in tasks lately, with each having to look after over twenty Soliskin.",
+                "es": "La mayoría de los pastores del Bosque Bjartr están muy atareados últimamente, y a cada uno le toca cuidar a más de veinte Solistirpes.",
+                "fr": "La majorité des bergers des bois de Bjartr sont très occupés dernièrement, et chacun d'eux doit s'occuper de plus d'une vingtaine de Solisiens.",
+                "ja": "最近、ビヤートル・ウーズの牧者は深刻な人手不足で、一人の牧者が二十体以上の精霊の世話をしなければならないのです。",
+                "ko": "최근 비야토르 숲의 목자 일손이 너무 부족해서, 평균적으로 목자 한 명당 20마리 이상의 태양의 정령을 돌봐야 하는 상황이에요",
+                "th": "ช่วงนี้ป่าบียาร์เตอร์มีผู้เลี้ยงดูไม่พออย่างหนัก โดยเฉลี่ยผู้เลี้ยงดูแต่ละคนต้องดูแล Soliskin มากกว่า 20 ตัว",
+                "zh-Hans": "最近浮光林的牧者人手十分短缺，平均每个牧者需要照顾二十个以上的日灵。",
+                "zh-Hant": "最近浮光林的牧者人手十分短缺，平均每個牧者需要照顧二十個以上的日靈。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Und allein gestern sind wieder über hundert Solislinge von der Solisbaum-Lichtung heruntergekommen …",
+                "en": "And over a hundred Soliskin descended from the Solvein Canopy again just yesterday alone...",
+                "es": "Y más de cien Solistirpes volvieron a descender del Dosel Solvena, solo durante el día de ayer...",
+                "fr": "Et plus d'une centaine de Solisiens sont redescendus de la clairière de l'arbre de Solis rien qu'hier...",
+                "ja": "昨日も、日脈の浮遊森から百体以上の精霊が地上へ降りてきてしまって……",
+                "ko": "바로 어제, 태양의 하늘숲에서 또 백여 마리의 태양의 정령이 지상에 내려왔어요...",
+                "th": "เมื่อวานนี้เอง ก็มี Soliskin ร้อยกว่าตัวร่วงลงมาจากป่าลอยฟ้าโซลเวย์น...",
+                "zh-Hans": "就在昨天，日脉悬林上又降下了一百多个日灵来到地面……",
+                "zh-Hant": "就在昨天，日脈懸林上又降下了一百多個日靈來到地面……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Da es so wenige Hirten gibt, irren viele Solislinge nun ziellos durch Lahai-Roi … Und selbstverständlich gibt es auch solche, die einfach irgendwohin verschwunden sind.",
+                "en": "With so few Shepherds, many Soliskin are now wandering aimlessly around Lahai-Roi... And of course, there are those that simply ran off to who knows where.",
+                "es": "Con tan pocos pastores, muchos Solistirpes ahora deambulan sin rumbo por Lahai-Roi... Y, por supuesto, hay algunos que simplemente se fueron quién sabe a dónde.",
+                "fr": "Avec si peu de bergers, de nombreux Solisiens errent actuellement dans Lahai-Roi... Et bien sûr, certains d'eux se sont même enfuis on ne sait trop où.",
+                "ja": "手が回らず、多くの精霊がはぐれて、ラハイロイの各地で迷子になってしまいました……もちろん、中にはやんちゃで遠くへ行ってしまった子も……",
+                "ko": "일손이 부족해서 안내를 받지 못한 수많은 태양의 정령들이 라하이 로이 각지에서 길을 잃었어요... 물론, 어떤 녀석들은 노는 데 열중하다가 먼 곳까지 가버린 경우도 있고요",
+                "th": "เพราะว่าคนไม่พอ ทำให้ Soliskin หลายตัวไม่มีใครให้คำแนะนำ จนหลงทางไปทั่วลาไฮรอย... แน่นอน บางส่วนก็หนีไปเที่ยวเล่นซะไกล",
+                "zh-Hans": "由于人手不足，许多日灵缺少指引，迷失在了拉海洛各地……当然，也有些是贪玩溜到了远处。",
+                "zh-Hant": "由於人手不足，許多日靈缺少指引，迷失在了拉海洛各地……當然，也有些是貪玩溜到了遠處。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wir würden ja selbst nach ihnen suchen, aber wir können unsere Solislinge nicht allein lassen …",
+                "en": "We would search for them ourselves, but we can't afford to leave the ones under our care...",
+                "es": "Los buscaríamos nosotros mismos, pero no podemos darnos el lujo de dejar solos a los que ya estamos cuidando...",
+                "fr": "Nous les aurions bien cherchés nous-mêmes, mais nous ne pouvons pas abandonner ceux qui sont sous notre surveillance...",
+                "ja": "我々も探したいのは山々なのですが、各自担当している精霊たちの世話もあるため、どうしても手が離せないのです……",
+                "ko": "저희가 찾으려고 했지만, 주변 태양의 정령도 도움이 필요한 상황이라 자리를 비울 수가 없어요...",
+                "th": "ถึงเราอยากจะออกไปตามหา แต่ก็ต้องดูแล Soliskin พวกนี้ด้วย ทำให้ไปไหนไม่ได้จริงๆ...",
+                "zh-Hans": "我们虽有心寻找，但自己身边的日灵也需要帮助，实在是抽不开身……",
+                "zh-Hant": "我們雖有心尋找，但自己身邊的日靈也需要幫助，實在是抽不開身……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn es nicht zu viel verlangt ist, könntest du uns dann helfen, die vermissten Solislinge zu finden?",
+                "en": "If it's not too much to ask, could you help us find the missing Soliskin?",
+                "es": "Si no es mucha molestia, ¿podrías ayudarnos a encontrar a los Solistirpes desaparecidos?",
+                "fr": "Si ce n'est pas trop te demander, pourrais-tu nous aider à retrouver les Solisiens disparus ?",
+                "ja": "もしよろしければ、迷子の精霊たちを探していただけませんか？",
+                "ko": "괜찮으시다면 잃어버린 태양의 정령들을 찾아줄 수 있을까요?",
+                "th": "ถ้าเป็นไปได้ อยากจะขอร้องคุณให้ไปตามหา Soliskin ที่หายไปหน่อยได้มั้ย?",
+                "zh-Hans": "如果可以的话，能拜托您去寻找走失的日灵们吗？",
+                "zh-Hant": "如果可以的話，能拜託您去尋找走失的日靈們嗎？"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Verstecken, mein Lieblingsspiel!",
+                    "en": "Hide-and-seek. My favorite game!",
+                    "es": "Las escondidas. ¡Mi juego favorito!",
+                    "fr": "J'adore jouer à cache-cache !",
+                    "ja": "{Male=かくれんぼの鬼役は得意なんだ。;Female=かくれんぼの鬼役は得意なの。}",
+                    "ko": "제가 가장 좋아하는 게 숨바꼭질이에요",
+                    "th": "เล่นซ่อนหาเนี่ย ฉันชอบที่สุด",
+                    "zh-Hans": "捉迷藏，我最喜欢了。",
+                    "zh-Hant": "捉迷藏，我最喜歡了。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Werde ich dafür bezahlt?",
+                    "en": "Do I get paid?",
+                    "es": "¿Me pagarán?",
+                    "fr": "C'est rémunéré ?",
+                    "ja": "{Male=連れ戻したら、報酬はあるのか？;Female=連れ戻したら、報酬はあるの？}",
+                    "ko": "찾으면 보수는 있나요?",
+                    "th": "ถ้าหาเจอจะมีรางวัลมั้ย?",
+                    "zh-Hans": "找到了有报酬吗？",
+                    "zh-Hant": "找到了有報酬嗎？"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Freut mich, helfen zu können.",
+                    "en": "Glad to help.",
+                    "es": "Me alegra poder ayudar.",
+                    "fr": "Je vous aiderai avec plaisir.",
+                    "ja": "{Male=任せてくれ。;Female=任せて。}",
+                    "ko": "저한테 맡기세요",
+                    "th": "ไว้ใจฉันได้เลย",
+                    "zh-Hans": "包在我身上。",
+                    "zh-Hant": "包在我身上。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich.",
+                "en": "Of course.",
+                "es": "Por supuesto.",
+                "fr": "Bien sûr.",
+                "ja": "もちろんです。",
+                "ko": "물론입니다",
+                "th": "แน่นอนอยู่แล้ว",
+                "zh-Hans": "那是当然。",
+                "zh-Hant": "那是當然。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du findest mich beim Großen Solisling im Herzen der Solissamen-Ebenen, sobald du einen Solisling zurückgebracht hast.",
+                "en": "You may find me with the Giant Soliskin at the heart of Soliseed Plains once you've retrieved a Soliskin.",
+                "es": "Me encontrarás junto al Gran Solistirpe, en el corazón del Llano Solisemilla, cuando rescates a un Solistirpe.",
+                "fr": "Quand tu auras retrouvé un Solisien, retrouve-moi au cœur des plaines de Soligraine, je serai avec le Solisien géant.",
+                "ja": "もし精霊を見つけ出していただけたら、ぜひ私のところまでお越しください。",
+                "ko": "태양의 정령을 되찾으시면, 푸른 열매 평원 중심의 거대한 태양의 정령한테서 저를 찾으세요",
+                "th": "ถ้าคุณหา Soliskin กลับคืนมาได้ ไปหาฉันที่ Giant Soliskin กลางทุ่งผลสุริยะได้เลย",
+                "zh-Hans": "如果你找回了日灵，可以到青实原中心的巨日灵那里找我。",
+                "zh-Hant": "如果你找回了日靈，可以到青實原中心的巨日靈那裡找我。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Unsere Belohnungen warten. Wir zählen auf dich, {PlayerName}.",
+                "en": "Our rewards await. We're counting on you, {PlayerName}.",
+                "es": "Nuestras recompensas te esperan. Contamos contigo, {PlayerName}.",
+                "fr": "Nos récompenses t'attendent. Nous comptons sur toi, {PlayerName} !",
+                "ja": "巨霊と一緒にお礼を差し上げますので。どうかお願いします、{PlayerName}さん。",
+                "ko": "저와 거대한 태양의 정령이 함께 당신에게 사례 선물을 드릴게요. 부탁드립니다, {PlayerName}",
+                "th": "พวกเราจะมอบของตอบแทนให้คุณ รบกวนด้วยนะ {PlayerName}",
+                "zh-Hans": "我和它会一起给予你谢礼。拜托你了，{PlayerName}。",
+                "zh-Hant": "我和它會一起給予你謝禮。拜託你了，{PlayerName}。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "parentId": 1,
+      "type": "ConditionSelector",
+      "entities": [
+        {
+          "entityId": 939700181,
+          "mapId": 906,
+          "blueprintType": "branch3.0_939_Gameplay_3_0/Common1",
+          "name": "TsEntity_MN_生态NPC_声骸_巨日灵4",
+          "areaId": 36121,
+          "position": {
+            "x": -366649,
+            "y": -654751,
+            "z": 4965
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_日灵收集引导任务",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Tschuuu? Tschuuu-Tschuuu! (*Aufgeregt*)",
+                "en": "Luu? Luu-Luu! (*Excited cheeps*)",
+                "es": "¿Chuuu? ¡Chuuu! ¡Chuuu! (*Emocionado*)",
+                "fr": "Chuuu ? Chuuu, chuuu ! (*Excité*)",
+                "ja": "ル？ルル！（*興奮した声*）",
+                "ko": "루? 루루! (*설레는 목소리*)",
+                "th": "ลู้วว? ลู้ววว! (*เสียงตื่นเต้น*)",
+                "zh-Hans": "噜？噜噜！（*激动的声音*）",
+                "zh-Hant": "嚕？嚕嚕！（*激動的聲音*）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700220,
+                "name": {
+                  "zh-Hans": "巨日灵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Solisling ist gerade zu uns zurückgekehrt, {PlayerName}! Hast du etwas damit zu tun?",
+                "en": "A Soliskin has just returned to us, {PlayerName}! Was it your doing?",
+                "es": "¡Un Solistirpe acaba de volver, {PlayerName}! ¿Lo trajiste tú?",
+                "fr": "Un Solisien est revenu, {PlayerName} ! C'est grâce à toi ?",
+                "ja": "{PlayerName}さん、たった今、精霊がここへ戻ってきたので、もしやあなたかと思いました。",
+                "ko": "{PlayerName}, 방금 태양의 정령이 여기로 돌아오는 걸 봤는데, 당신이 한 게 아닌가 생각하고 있었죠",
+                "th": "{PlayerName} เมื่อกี้ฉันเห็นมี Soliskin กลับมาที่นี่แล้ว ยังคิดอยู่เลยว่าเป็นฝีมือคุณรึเปล่า",
+                "zh-Hans": "{PlayerName}，我刚看到有日灵回到了这里，就在想是不是你做的。",
+                "zh-Hant": "{PlayerName}，我剛看到有日靈回到了這裡，就在想是不是你做的。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist erstaunlich, wie schnell du diesen verlorenen Solisling gefunden hast.! Moment, was hast du da in deiner Hand?",
+                "en": "It's astonishing how you managed to find this lost Soliskin so quickly! Wait, what's that in your hand?",
+                "es": "¡Es increíble que hayas encontrado tan rápido a este Solistirpe extraviado! Un momento, ¿qué es eso que tienes en la mano?",
+                "fr": "Je suis impressionné que tu aies retrouvé ce Solisien si rapidement ! Attends, qu'est-ce que tu as dans les mains ?",
+                "ja": "こんなに早く迷子になった子を見つけ出すとは。やはりあなたにお願いしてよかった……！ おや、もしかして、その手にあるものは……",
+                "ko": "잃어버린 태양의 정령을 이렇게 빨리 찾을 줄이야. 역시 제가 사람을 제대로 찾았네요! 잠깐, 당신 손에 있는 물건은...",
+                "th": "หา Soliskin ที่หายไปได้เร็วขนาดนี้ ฉันไหว้วานไม่ผิดคนจริงๆ! เดี๋ยวนะ... ของในมือคุณนั่นคือ...",
+                "zh-Hans": "这么快就找到了走失的日灵，我果然没找错人！等等，你手里的东西是……",
+                "zh-Hant": "這麼快就找到了走失的日靈，我果然沒找錯人！等等，你手裡的東西是……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist ein Solissamen vom Essehalo! {PlayerName}, hast du den vom verlorenen Solisling bekommen?",
+                "en": "It's a Soliseed of Essehalo! Did you receive this from the lost Soliskin, {PlayerName}?",
+                "es": "¡Son Solisemillas del Essehalo! ¿Te las dio el Solistirpe que estaba perdido, {PlayerName}?",
+                "fr": "C'est une Soligraine de l'Essehalo ! C'est le Solisien disparu qui te l'a donnée, {PlayerName} ?",
+                "ja": "これは、ひげ根の輪の青実ではないですか！迷子の精霊が{PlayerName}さんに渡したのですか？",
+                "ko": "이건 실빛 고리의 푸른 열매예요! {PlayerName}, 잃어버린 태양의 정령이 준 건가요?",
+                "th": "นี่มัน ผลสุริยะจากรัศมีเมล็ดพันธุ์! {PlayerName} Soliskin ที่หายไปมอบให้คุณเหรอ?",
+                "zh-Hans": "这是须轮的青实！{PlayerName}，是走失的日灵交给你的吗？",
+                "zh-Hant": "這是須輪的青實！{PlayerName}，是走失的日靈交給你的嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Solislinge produzieren Solissamen aus ihren Essehalos und behandeln diese wie ihre eigenen Nachkommen.",
+                "en": "Soliskin produce Soliseeds from their Essehalos, and treat them as their own offspring.",
+                "es": "Los Solistirpes producen Solisemillas desde sus Essehalos y las tratan como si fueran sus propias crías.",
+                "fr": "Les Solisiens produisent des Soligraines depuis leurs Essehalos et les considèrent comme leurs propres petits.",
+                "ja": "精霊は頭上の輪から実を産み落とします。彼らにとってその実は、まるで自分の子供のように大切なものなのです。",
+                "ko": "태양의 정령은 머리 위에 있는 실빛 고리에서 푸른 열매를 만드는데, 이 열매들은 그들의 아이들처럼 중요한 존재예요",
+                "th": "Soliskin จะออกผลสุริยะจากรัศมีเมล็ดพันธุ์บนศีรษะ ผลนี้ถือว่าสำคัญเหมือนเป็นลูกๆ ของพวกมันเลย",
+                "zh-Hans": "日灵会从头顶的须轮中诞下青实，这些果实就像它们的孩子一般重要。",
+                "zh-Hant": "日靈會從頭頂的須輪中誕下青實，這些果實就像它們的孩子一般重要。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie geben sie nur an diejenigen weiter, denen sie vertrauen. Es scheint, dass es die richtige Entscheidung war, dich um Hilfe zu bitten, {PlayerName}!",
+                "en": "They only give them to people they trust. It seems seeking your help was the right decision, {PlayerName}!",
+                "es": "Solo se las dan a personas en quienes confían. Parece que pedirte ayuda fue la decisión correcta, {PlayerName}.",
+                "fr": "Ils n'en donnent qu'aux personnes en qui ils ont confiance. Il semblerait que j'ai eu raison de faire appel à toi, {PlayerName} !",
+                "ja": "信頼できる人にしか、それを渡しません。{PlayerName}さん、あなたにお願いしたのは、やはり正解でした！",
+                "ko": "그리고 태양의 정령은 그것을 믿을 만한 사람에게만 맡기죠. {PlayerName}, 역시 당신한테 도움을 요청하길 잘했어요!",
+                "th": "และ Soliskin จะมอบผลนี้ให้กับคนที่เชื่อใจได้เท่านั้น {PlayerName} ฉันขอให้คุณมาช่วย ถือเป็นการตัดสินใจที่ถูกต้องที่สุด!",
+                "zh-Hans": "日灵只会把它交给值得信任的人。{PlayerName}，我找你帮忙果然是最正确的选择！",
+                "zh-Hant": "日靈只會把它交給值得信任的人。{PlayerName}，我找你幫忙果然是最正確的選擇！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tschuuu! (*Aufgeregt*)",
+                "en": "Chuu, luuluu! (*Excited cheeps*)",
+                "es": "¡Chuuu! (*Emocionado*)",
+                "fr": "Chuuu ! (*Excité*)",
+                "ja": "チュ、ルル！（*興奮した声*）",
+                "ko": "츄, 루루! (*흥분된 목소리*)",
+                "th": "จู้วว ลู้ววว! (*เสียงดีใจ*)",
+                "zh-Hans": "啾，噜噜！（*兴奋的声音*）",
+                "zh-Hant": "啾，嚕嚕！（*興奮的聲音*）"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700220,
+                "name": {
+                  "zh-Hans": "巨日灵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Große Solisling bedankt sich und möchte, dass du dieses Geschenk annimmst.",
+                "en": "The Giant Soliskin shows its thanks and would like you to accept this gift.",
+                "es": "El Gran Solistirpe te agradece y quiere que aceptes este regalo.",
+                "fr": "Le Solisien géant te remercie et aimerait que tu acceptes ce cadeau.",
+                "ja": "巨霊があなたにとても感謝しており、このお礼をぜひ受け取ってほしいと言っています。",
+                "ko": "거대한 태양의 정령이 아주 감사해 하네요. 게다가 이 선물을 당신에게 주고 싶어 해요",
+                "th": "Giant Soliskin ขอบคุณใหญ่เลย มันอยากมอบของตอบแทนนี้ให้คุณแหนะ",
+                "zh-Hans": "巨日灵非常感谢你，并希望给予你这份谢礼。",
+                "zh-Hant": "巨日靈非常感謝你，並希望給予你這份謝禮。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte, nimm es an. Wir haben noch mehr Geschenke für dich bereit, wenn du weitere Solislinge und Solissamen findest!",
+                "en": "Please, take it. We will have more gifts waiting for you if you manage to find more Soliskin and Soliseeds!",
+                "es": "Por favor, acéptalo. ¡Tendremos más regalos para ti si logras encontrar más Solistirpes y Solisemillas!",
+                "fr": "Prends-le. Nous t'offrirons d'autres cadeaux si tu parviens à trouver d'autres Solisiens et Soligraines !",
+                "ja": "ぜひ、遠慮なくお受け取りください。もしあなたがもっと多くの精霊を見つけ、青実を手に入れてくださるなら、さらに多くのお礼をご用意しましょう！",
+                "ko": "괜찮으니까 받아 주세요. 더 많은 태양의 정령을 찾고, 더 많은 푸른 열매를 얻는다면, 당신을 위해 더 많은 선물을 준비해 둘 거예요!",
+                "th": "ไม่ต้องเกรงใจนะ รับไว้เถอะ ถ้าคุณหา Soliskin เจอ และได้รับผลสุริยะมาอีก เราก็จะมีรางวัลให้คุณอีก!",
+                "zh-Hans": "不用客气，尽管收下吧。如果你能找到更多日灵，获得更多青实的话，我们还会准备更多的礼物！",
+                "zh-Hant": "不用客氣，儘管收下吧。如果你能找到更多日靈，獲得更多青實的話，我們還會準備更多的禮物！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_3_0_支线_日灵收集引导任务",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Tschuuu … (*Enttäuscht*)",
+                "en": "Luu, luu... (*Disappointed cheeps*)",
+                "es": "Chuuu... (*Decepcionado*)",
+                "fr": "Chuuu... (*Déçu*)",
+                "ja": "ル、ル……（*残念そうな声*）",
+                "ko": "루, 루... (*유감스러운 목소리*)",
+                "th": "ลู้วว... (*เสียงเสียใจ*)",
+                "zh-Hans": "噜，噜……（*遗憾的声音*）",
+                "zh-Hant": "嚕，嚕……（*遺憾的聲音*）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700220,
+                "name": {
+                  "zh-Hans": "巨日灵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Anscheinend will es etwas … Was könnte das sein?",
+                "en": "Looks like it's asking for something... What could it be?",
+                "es": "Parece que quiere algo... ¿Qué será?",
+                "fr": "Il a l'air d'avoir besoin de quelque chose... mais quoi ?",
+                "ja": "巨霊は何かを欲しがっているようだが……一体何を欲しがっているのだろう？",
+                "ko": "뭔가 필요한 것 같은데... 뭘까?",
+                "th": "ท่าทางเหมือนอยากได้อะไรบางอย่าง... จะเป็นอะไรนะ?",
+                "zh-Hans": "它好像需要什么东西……会是什么？",
+                "zh-Hant": "它好像需要什麼東西……會是什麼？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_日灵收集引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "(Kontaktaufnahme) {PlayerName}, es tut mir leid, dass ich störe, aber könntest du zu den Solissamen-Ebenen kommen?",
+                "en": "(Contacting) Sorry to bother you, {PlayerName}, but would you mind coming to the Soliseed Plains?",
+                "es": "(Llamando) Perdón por molestarte, {PlayerName}, pero ¿podrías venir al Llano Solisemilla?",
+                "fr": "(Communication) Pardon de te déranger, {PlayerName}, mais pourrais-tu aller dans les plaines de Soligraine ?",
+                "ja": "（通信中）すみません、{PlayerName}さん。青実の原まできていただけませんか？",
+                "ko": "(통신 중) {PlayerName}, 실례합니다. 수고스럽겠지만 푸른 열매 평원까지 와주시겠어요?",
+                "th": "(เสียงในสาย) รบกวนหน่อยนะ {PlayerName} พอจะมาที่ทุ่งผลสุริยะหน่อยได้มั้ย?",
+                "zh-Hans": "（通讯中）打扰了{PlayerName}，能辛苦您到青实原来一趟吗？",
+                "zh-Hant": "（通訊中）打擾了{PlayerName}，能辛苦您到青實原來一趟嗎？"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "(Kontaktaufnahme) Wir sind im Moment hier im Bjartr-Wald ziemlich unterbesetzt. Wir könnten deine Hilfe wirklich gebrauchen…",
+                "en": "(Contacting) We are terribly short-handed on Shepherds here in Bjartr Woods at the moment. We could really use your help...",
+                "es": "(Llamando) Tenemos una gran escasez de pastores aquí en el Bosque Bjartr en este momento. Nos vendría muy bien tu ayuda...",
+                "fr": "(Communication) Nous manquons cruellement de bergers dans les bois de Bjartr en ce moment, et nous aurions vraiment besoin de ton aide...",
+                "ja": "（通信中）ビヤートル・ウーズの牧者が人手不足でして。あなたの助けが必要なのです……",
+                "ko": "(통신 중) 비야토르 숲에 목자 일손이 부족해서요, 당신의 도움이 필요합니다...",
+                "th": "(เสียงในสาย) ป่าบียาร์เตอร์ขาดผู้เลี้ยงดู เราต้องการความช่วยเหลือจากคุณ...",
+                "zh-Hans": "（通讯中）浮光林中牧者人手紧缺，我们需要你的帮助……",
+                "zh-Hant": "（通訊中）浮光林中牧者人手緊缺，我們需要你的幫助……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "parentId": 4,
+      "type": "ChildQuest",
+      "dialogs": []
+    },
+    {
+      "id": 23,
+      "parentId": 22,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 25,
+      "parentId": 22,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 24,
+      "parentId": 23,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Großen Solisling.",
+        "en": "Talk to the Giant Soliskin",
+        "es": "Habla con el Gran Solistirpe.",
+        "fr": "Parler à Solisien géant",
+        "ja": "太陽の巨霊と会話する",
+        "ko": "거대한 태양의 정령과 대화하기",
+        "th": "คุยกับ Giant Soliskin",
+        "zh-Hans": "与巨日灵对话",
+        "zh-Hant": "與巨日靈對話"
+      },
+      "entities": [
+        {
+          "entityId": 939700181,
+          "mapId": 906,
+          "blueprintType": "branch3.0_939_Gameplay_3_0/Common1",
+          "name": "TsEntity_MN_生态NPC_声骸_巨日灵4",
+          "areaId": 36121,
+          "position": {
+            "x": -366649,
+            "y": -654751,
+            "z": 4965
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_日灵收集引导任务",
+          "flowIndex": 4,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Tschuuu? Tschuuu-Tschuuu! (*Aufgeregt*)",
+                "en": "Luu? Luu-Luu! (*Excited cheeps*)",
+                "es": "¿Chuuu? ¡Chuuu! ¡Chuuu! (*Emocionado*)",
+                "fr": "Chuuu ? Chuuu, chuuu ! (*Excité*)",
+                "ja": "ル？ルル！（*興奮した声*）",
+                "ko": "루? 루루! (*설레는 목소리*)",
+                "th": "ลู้วว? ลู้ววว! (*เสียงตื่นเต้น*)",
+                "zh-Hans": "噜？噜噜！（*激动的声音*）",
+                "zh-Hant": "嚕？嚕嚕！（*激動的聲音*）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700220,
+                "name": {
+                  "zh-Hans": "巨日灵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ein Solisling ist gerade zu uns zurückgekehrt, {PlayerName}! Hast du etwas damit zu tun?",
+                "en": "A Soliskin has just returned to us, {PlayerName}! Was it your doing?",
+                "es": "¡Un Solistirpe acaba de volver, {PlayerName}! ¿Lo trajiste tú?",
+                "fr": "Un Solisien est revenu, {PlayerName} ! C'est grâce à toi ?",
+                "ja": "{PlayerName}さん、たった今、精霊がここへ戻ってきたので、もしやあなたかと思いました。",
+                "ko": "{PlayerName}, 방금 태양의 정령이 여기로 돌아오는 걸 봤는데, 당신이 한 게 아닌가 생각하고 있었죠",
+                "th": "{PlayerName} เมื่อกี้ฉันเห็นมี Soliskin กลับมาที่นี่แล้ว ยังคิดอยู่เลยว่าเป็นฝีมือคุณรึเปล่า",
+                "zh-Hans": "{PlayerName}，我刚看到有日灵回到了这里，就在想是不是你做的。",
+                "zh-Hant": "{PlayerName}，我剛看到有日靈回到了這裡，就在想是不是你做的。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist erstaunlich, wie schnell du diesen verlorenen Solisling gefunden hast.! Moment, was hast du da in deiner Hand?",
+                "en": "It's astonishing how you managed to find this lost Soliskin so quickly! Wait, what's that in your hand?",
+                "es": "¡Es increíble que hayas encontrado tan rápido a este Solistirpe extraviado! Un momento, ¿qué es eso que tienes en la mano?",
+                "fr": "Je suis impressionné que tu aies retrouvé ce Solisien si rapidement ! Attends, qu'est-ce que tu as dans les mains ?",
+                "ja": "こんなに早く迷子になった子を見つけ出すとは。やはりあなたにお願いしてよかった……！ おや、もしかして、その手にあるものは……",
+                "ko": "잃어버린 태양의 정령을 이렇게 빨리 찾을 줄이야. 역시 제가 사람을 제대로 찾았네요! 잠깐, 당신 손에 있는 물건은...",
+                "th": "หา Soliskin ที่หายไปได้เร็วขนาดนี้ ฉันไหว้วานไม่ผิดคนจริงๆ! เดี๋ยวนะ... ของในมือคุณนั่นคือ...",
+                "zh-Hans": "这么快就找到了走失的日灵，我果然没找错人！等等，你手里的东西是……",
+                "zh-Hant": "這麼快就找到了走失的日靈，我果然沒找錯人！等等，你手裡的東西是……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das ist ein Solissamen vom Essehalo! {PlayerName}, hast du den vom verlorenen Solisling bekommen?",
+                "en": "It's a Soliseed of Essehalo! Did you receive this from the lost Soliskin, {PlayerName}?",
+                "es": "¡Son Solisemillas del Essehalo! ¿Te las dio el Solistirpe que estaba perdido, {PlayerName}?",
+                "fr": "C'est une Soligraine de l'Essehalo ! C'est le Solisien disparu qui te l'a donnée, {PlayerName} ?",
+                "ja": "これは、ひげ根の輪の青実ではないですか！迷子の精霊が{PlayerName}さんに渡したのですか？",
+                "ko": "이건 실빛 고리의 푸른 열매예요! {PlayerName}, 잃어버린 태양의 정령이 준 건가요?",
+                "th": "นี่มัน ผลสุริยะจากรัศมีเมล็ดพันธุ์! {PlayerName} Soliskin ที่หายไปมอบให้คุณเหรอ?",
+                "zh-Hans": "这是须轮的青实！{PlayerName}，是走失的日灵交给你的吗？",
+                "zh-Hant": "這是須輪的青實！{PlayerName}，是走失的日靈交給你的嗎？"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Solislinge produzieren Solissamen aus ihren Essehalos und behandeln diese wie ihre eigenen Nachkommen.",
+                "en": "Soliskin produce Soliseeds from their Essehalos, and treat them as their own offspring.",
+                "es": "Los Solistirpes producen Solisemillas desde sus Essehalos y las tratan como si fueran sus propias crías.",
+                "fr": "Les Solisiens produisent des Soligraines depuis leurs Essehalos et les considèrent comme leurs propres petits.",
+                "ja": "精霊は頭上の輪から実を産み落とします。彼らにとってその実は、まるで自分の子供のように大切なものなのです。",
+                "ko": "태양의 정령은 머리 위에 있는 실빛 고리에서 푸른 열매를 만드는데, 이 열매들은 그들의 아이들처럼 중요한 존재예요",
+                "th": "Soliskin จะออกผลสุริยะจากรัศมีเมล็ดพันธุ์บนศีรษะ ผลนี้ถือว่าสำคัญเหมือนเป็นลูกๆ ของพวกมันเลย",
+                "zh-Hans": "日灵会从头顶的须轮中诞下青实，这些果实就像它们的孩子一般重要。",
+                "zh-Hant": "日靈會從頭頂的須輪中誕下青實，這些果實就像它們的孩子一般重要。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sie geben sie nur an diejenigen weiter, denen sie vertrauen. Es scheint, dass es die richtige Entscheidung war, dich um Hilfe zu bitten, {PlayerName}!",
+                "en": "They only give them to people they trust. It seems seeking your help was the right decision, {PlayerName}!",
+                "es": "Solo se las dan a personas en quienes confían. Parece que pedirte ayuda fue la decisión correcta, {PlayerName}.",
+                "fr": "Ils n'en donnent qu'aux personnes en qui ils ont confiance. Il semblerait que j'ai eu raison de faire appel à toi, {PlayerName} !",
+                "ja": "信頼できる人にしか、それを渡しません。{PlayerName}さん、あなたにお願いしたのは、やはり正解でした！",
+                "ko": "그리고 태양의 정령은 그것을 믿을 만한 사람에게만 맡기죠. {PlayerName}, 역시 당신한테 도움을 요청하길 잘했어요!",
+                "th": "และ Soliskin จะมอบผลนี้ให้กับคนที่เชื่อใจได้เท่านั้น {PlayerName} ฉันขอให้คุณมาช่วย ถือเป็นการตัดสินใจที่ถูกต้องที่สุด!",
+                "zh-Hans": "日灵只会把它交给值得信任的人。{PlayerName}，我找你帮忙果然是最正确的选择！",
+                "zh-Hant": "日靈只會把它交給值得信任的人。{PlayerName}，我找你幫忙果然是最正確的選擇！"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Tschuuu! (*Aufgeregt*)",
+                "en": "Chuu, luuluu! (*Excited cheeps*)",
+                "es": "¡Chuuu! (*Emocionado*)",
+                "fr": "Chuuu ! (*Excité*)",
+                "ja": "チュ、ルル！（*興奮した声*）",
+                "ko": "츄, 루루! (*흥분된 목소리*)",
+                "th": "จู้วว ลู้ววว! (*เสียงดีใจ*)",
+                "zh-Hans": "啾，噜噜！（*兴奋的声音*）",
+                "zh-Hant": "啾，嚕嚕！（*興奮的聲音*）"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 700220,
+                "name": {
+                  "zh-Hans": "巨日灵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Der Große Solisling bedankt sich und möchte, dass du dieses Geschenk annimmst.",
+                "en": "The Giant Soliskin shows its thanks and would like you to accept this gift.",
+                "es": "El Gran Solistirpe te agradece y quiere que aceptes este regalo.",
+                "fr": "Le Solisien géant te remercie et aimerait que tu acceptes ce cadeau.",
+                "ja": "巨霊があなたにとても感謝しており、このお礼をぜひ受け取ってほしいと言っています。",
+                "ko": "거대한 태양의 정령이 아주 감사해 하네요. 게다가 이 선물을 당신에게 주고 싶어 해요",
+                "th": "Giant Soliskin ขอบคุณใหญ่เลย มันอยากมอบของตอบแทนนี้ให้คุณแหนะ",
+                "zh-Hans": "巨日灵非常感谢你，并希望给予你这份谢礼。",
+                "zh-Hant": "巨日靈非常感謝你，並希望給予你這份謝禮。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Bitte, nimm es an. Wir haben noch mehr Geschenke für dich bereit, wenn du weitere Solislinge und Solissamen findest!",
+                "en": "Please, take it. We will have more gifts waiting for you if you manage to find more Soliskin and Soliseeds!",
+                "es": "Por favor, acéptalo. ¡Tendremos más regalos para ti si logras encontrar más Solistirpes y Solisemillas!",
+                "fr": "Prends-le. Nous t'offrirons d'autres cadeaux si tu parviens à trouver d'autres Solisiens et Soligraines !",
+                "ja": "ぜひ、遠慮なくお受け取りください。もしあなたがもっと多くの精霊を見つけ、青実を手に入れてくださるなら、さらに多くのお礼をご用意しましょう！",
+                "ko": "괜찮으니까 받아 주세요. 더 많은 태양의 정령을 찾고, 더 많은 푸른 열매를 얻는다면, 당신을 위해 더 많은 선물을 준비해 둘 거예요!",
+                "th": "ไม่ต้องเกรงใจนะ รับไว้เถอะ ถ้าคุณหา Soliskin เจอ และได้รับผลสุริยะมาอีก เราก็จะมีรางวัลให้คุณอีก!",
+                "zh-Hans": "不用客气，尽管收下吧。如果你能找到更多日灵，获得更多青实的话，我们还会准备更多的礼物！",
+                "zh-Hant": "不用客氣，儘管收下吧。如果你能找到更多日靈，獲得更多青實的話，我們還會準備更多的禮物！"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 700372,
+                "name": {
+                  "zh-Hans": "留索罗特"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "parentId": 25,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit dem Großen Solisling.",
+        "en": "Talk to the Giant Soliskin",
+        "es": "Habla con el Gran Solistirpe.",
+        "fr": "Parler à Solisien géant",
+        "ja": "太陽の巨霊と会話する",
+        "ko": "거대한 태양의 정령과 대화하기",
+        "th": "คุยกับ Giant Soliskin",
+        "zh-Hans": "与巨日灵对话",
+        "zh-Hant": "與巨日靈對話"
+      },
+      "entities": [
+        {
+          "entityId": 939700181,
+          "mapId": 906,
+          "blueprintType": "branch3.0_939_Gameplay_3_0/Common1",
+          "name": "TsEntity_MN_生态NPC_声骸_巨日灵4",
+          "areaId": 36121,
+          "position": {
+            "x": -366649,
+            "y": -654751,
+            "z": 4965
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 120
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_3_0_支线_日灵收集引导任务",
+          "flowIndex": 3,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Tschuuu … (*Enttäuscht*)",
+                "en": "Luu, luu... (*Disappointed cheeps*)",
+                "es": "Chuuu... (*Decepcionado*)",
+                "fr": "Chuuu... (*Déçu*)",
+                "ja": "ル、ル……（*残念そうな声*）",
+                "ko": "루, 루... (*유감스러운 목소리*)",
+                "th": "ลู้วว... (*เสียงเสียใจ*)",
+                "zh-Hans": "噜，噜……（*遗憾的声音*）",
+                "zh-Hant": "嚕，嚕……（*遺憾的聲音*）"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 700220,
+                "name": {
+                  "zh-Hans": "巨日灵"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Anscheinend will es etwas … Was könnte das sein?",
+                "en": "Looks like it's asking for something... What could it be?",
+                "es": "Parece que quiere algo... ¿Qué será?",
+                "fr": "Il a l'air d'avoir besoin de quelque chose... mais quoi ?",
+                "ja": "巨霊は何かを欲しがっているようだが……一体何を欲しがっているのだろう？",
+                "ko": "뭔가 필요한 것 같은데... 뭘까?",
+                "th": "ท่าทางเหมือนอยากได้อะไรบางอย่าง... จะเป็นอะไรนะ?",
+                "zh-Hans": "它好像需要什么东西……会是什么？",
+                "zh-Hant": "它好像需要什麼東西……會是什麼？"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

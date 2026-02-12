@@ -1,0 +1,960 @@
+{
+  "id": 320800000,
+  "key": "2.7战斗拍照引导任务",
+  "type": "branch",
+  "typeId": 10,
+  "name": {
+    "de": "Momentaufnahme: Action-Highlights",
+    "en": "Freeze Frame: Action Highlights",
+    "es": "Instantánea: Momentos destacados",
+    "fr": "Arrêt sur image : Moments forts de l'action",
+    "ja": "瞬刻・光と影の刹那",
+    "ko": "순간 포착 · 찰나의 빛과 그림자",
+    "th": "ภาพนิ่ง: ช็อตเด็ดช่วงต่อสู้",
+    "zh-Hans": "定格·光影瞬息",
+    "zh-Hant": "定格·光影瞬息"
+  },
+  "desc": {
+    "de": "Fulmine scheint etwas von dir zu wollen. Geh und sieh nach.",
+    "en": "Fulmine seems to have something to discuss. Go see what's up.",
+    "es": "Habla con Fulmine, que parece tener algo que comentar.",
+    "fr": "On dit que Fulmine a besoin d'aide. Rendez-lui visite.",
+    "ja": "フルミーネはあなたに用があるようだ。話しかけてみよう。",
+    "ko": "풀미네가 당신에게 볼일이 있는 것 같으니, 그를 찾아가 이야기하세요",
+    "th": "Fulmine ดูเหมือนจะมีเรื่องที่ต้องพูดคุย ไปดูว่าเกิดอะไรขึ้น",
+    "zh-Hans": "斐林好像有事找你，去找他聊聊吧。",
+    "zh-Hant": "斐林好像有事找你，去找他聊聊吧。"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Fulmine",
+        "en": "Talk to Fulmine",
+        "es": "Habla con Fulmine.",
+        "fr": "Parler à Fulmine",
+        "ja": "フルミーネと会話する",
+        "ko": "풀미네와 대화하기",
+        "th": "พูดคุยกับ Fulmine",
+        "zh-Hans": "和斐林聊聊",
+        "zh-Hant": "和斐林聊聊"
+      },
+      "entities": [
+        {
+          "entityId": 320800000,
+          "mapId": 8,
+          "blueprintType": "branch2.0_TsEntity_157_斐林",
+          "name": "TsEntity_157_斐林3",
+          "areaId": 1692,
+          "position": {
+            "x": 700190,
+            "y": 572850,
+            "z": 780
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2.7战斗拍照引导任务",
+          "flowIndex": 1,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Ah, {PlayerName}! Lange nicht gesehen!",
+                "en": "Ah, {PlayerName}! Long time no see!",
+                "es": "¡Ah, {PlayerName}! ¡Cuánto tiempo!",
+                "fr": "Ah, {PlayerName} ! Ça faisait longtemps !",
+                "ja": "やあ、{PlayerName}！久しぶりだね！",
+                "ko": "어, {PlayerName}, 오랜만이에요!",
+                "th": "อ้าว {PlayerName}! ไม่เจอกันนานเลยนะ!",
+                "zh-Hans": "哟，{PlayerName}，好久不见！",
+                "zh-Hant": "喲，{PlayerName}，好久不見！"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "{Male=Retter;Female=Retterin} aus einem fernen Land, dunkler Blitz, der die Wolken zerreißt ... Jedes Mal, wenn ich dich sehe, habe ich den Wunsch, diesen außergewöhnlichen Moment festzuhalten!",
+                "en": "Savior from a foreign land, the dark thunderbolt streaking across the world… Every time I see you, I feel an urge to capture this extraordinary moment!",
+                "es": "{Male=Salvador;Female=Salvadora} de otras tierras, relámpago negro que se cierne sobre el mundo... ¡Cada vez que te veo, siento deseos de capturar nuestro encuentro!",
+                "fr": "{Male=Le sauveur venu;Female=La salvatrice venue} d'une contrée lointaine, le sombre coup de tonnerre qui a résonné à travers le monde... Chaque fois que je te vois, je suis envahie par le désir d'immortaliser ce moment extraordinaire !",
+                "ja": "異国の救世主、世界を奔る黒き雷光……！あなたと会う度に、その輝く瞬間を記録せずにはいられない！",
+                "ko": "이국의 구원자, 세계를 누비는 검은 번개... 당신을 만날 때마다 이 눈부신 순간을 기록하고 싶어요!",
+                "th": "ผู้กอบกู้จากต่างแดน อัสนีทมิฬที่ฟาดลงทั่วโลก... ทุกครั้งที่ได้พบคุณ ผมรู้สึกว่าอยากจะเก็บรักษาช่วงเวลาแสนพิเศษนี้เอาไว้!",
+                "zh-Hans": "异国的拯救者，穿行世界的黑色闪电……每次和您见面，都想记录下这闪耀的瞬间！",
+                "zh-Hant": "異國的拯救者，穿行世界的黑色閃電……每次和您見面，都想記錄下這閃耀的瞬間！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Das ist mir etwas zu viel. Was gibt's?",
+                    "en": "That's too much. Cut it out.",
+                    "es": "No te pases. Corta el rollo.",
+                    "fr": "N'en fais pas des tonnes, non plus.",
+                    "ja": "{Male=ちょっと落ち着こう。;Female=ちょっと落ち着こう。}",
+                    "ko": "잠깐, 잠깐만요",
+                    "th": "นั่นก็เกินไป พอได้แล้ว",
+                    "zh-Hans": "停一下，停一下。",
+                    "zh-Hant": "停一下，停一下。"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Komm bitte zum Punkt.",
+                    "en": "Let's get to the point.",
+                    "es": "Al grano.",
+                    "fr": "Passons au vif du sujet, d'accord ?",
+                    "ja": "{Male=用件は何だ？;Female=用件は何？}",
+                    "ko": "본론부터 얘기하죠",
+                    "th": "เข้าเรื่องกันดีกว่า",
+                    "zh-Hans": "还是先说正事吧。",
+                    "zh-Hant": "還是先說正事吧。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Hahaha, tut mir leid. Ich bin nur immer ganz überwältigt, wenn ich deine heldenhafte Gestalt sehe ...",
+                "en": "Hahaha, forgive me. I just get carried away whenever I see your majestic figure…",
+                "es": "Ja, ja, ja, discúlpame. Siempre que veo tu figura majestuosa, me dejo llevar...",
+                "fr": "Ha ha ha, pardonne-moi, j'ai tendance à me laisser emporter quand j'ai le privilège de contempler ton majestueux profil...",
+                "ja": "はは、すまない。あなたの勇姿を目にすると、つい昂ってしまって……",
+                "ko": "하하, 죄송해요. 매번 당신의 멋진 모습을 보면 저절로 감탄이 나와 기록하고 싶어서...",
+                "th": "ฮ่าๆ ๆ ขอโทษทีครับ ผมเผลอตื่นเต้นทุกทีที่ได้เห็นรูปลักษณ์อันสง่างามของคุณ...",
+                "zh-Hans": "哈哈，抱歉，每次看到您的英姿都忍不住由衷地想要赞叹、记录……",
+                "zh-Hant": "哈哈，抱歉，每次看到您的英姿都忍不住由衷地想要讚嘆、記錄……"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nun gut. Es gibt da etwas, worum ich dich gerne bitten würde.",
+                "en": "Right, right. I actually have a favor to ask.",
+                "es": "Vale, vale. Pero tengo que pedirte un favor.",
+                "fr": "Enfin, passons. Pour tout te dire, j'ai une faveur à te demander.",
+                "ja": "ああ、そうだ。今回はお願いしたいことがあって来てもらったんだ。",
+                "ko": "참, 부탁할 일이 있어서 불렀어요",
+                "th": "ใช่ๆ ที่จริงแล้วผมมีเรื่องจะขอร้องครับ",
+                "zh-Hans": "哦对了，这次请您过来，是有事相求。",
+                "zh-Hant": "哦對了，這次請您過來，是有事相求。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Seitdem ich zum ersten Mal deine Tapferkeit im Kampf gesehen habe, ist meine Faszination für Kampf-Resonatoren nur gewachsen.",
+                "en": "Ever since I saw your valor in battle, my fascination with combat-type Resonators has only grown.",
+                "es": "Tras ser testigo de tus hazañas, mi fascinación por los Resonadores de combate no ha dejado de aumentar.",
+                "fr": "Depuis que je t'ai {Male=vu;Female=vue} sur le champ de bataille, ma fascination pour les Résonateurs de combat n'a fait que s'accroître.",
+                "ja": "あなたの戦う姿を見て以来、戦闘型共鳴者への関心がますます強まってね。",
+                "ko": "당신의 용맹한 자태를 본 뒤로 전투형 공명자에 대한 제 관심이 점점 더 커졌어요",
+                "th": "ตั้งแต่ได้เห็นความกล้าหาญของคุณในการต่อสู้ ความหลงใหลที่ผมมีต่อเรโซเนเตอร์สายต่อสู้ก็ยิ่งทวีคูณ",
+                "zh-Hans": "自从见过您的英姿，我对战斗型共鸣者的兴趣就有增无减。",
+                "zh-Hant": "自從見過您的英姿，我對戰鬥型共鳴者的興趣就有增無減。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Immer wenn ich deinen kühnen Rundkick und deine tadellose Haltung sehe, beginnen sich die Filmrollen in meinen Haaren wild zu drehen ...",
+                "en": "Every time I think of your fierce roundhouse kick, that unyielding stance… and then, the reels in my hair start growing wildly—",
+                "es": "Cada vez que pienso en tu patada giratoria, esa firmeza... se me erizan los carretes, vaya.",
+                "fr": "À chaque fois que je repense à ton redoutable coup de pied circulaire, à ta posture inébranlable… les pellicules dans mes cheveux se mettent à s'allonger fébrilement...",
+                "ja": "あの戦いの中で見た鋭い回し蹴り、凛として揺るがない姿を思い浮かべると……髪に伸びるフィルムがどんどん増えていくんだ。",
+                "ko": "전투할 때 보여준 힘찬 돌려차기, 꼿꼿하고 강인한 자태를 떠올릴 때마다 머리의 필름이 미친 듯이 자라나요",
+                "th": "ทุกครั้งที่นึกถึงท่าเตะหมุนอันดุดัน ท่วงท่าที่ไม่ยอมอ่อนข้อของคุณ... ม้วนฟิล์มในหัวผมก็เริ่มพลุ่งพล่านอย่างหนัก...",
+                "zh-Hans": "每当我想到那战斗时铿锵有力的回旋踢，挺拔坚韧的身姿，头发上的胶片就会疯狂生长——",
+                "zh-Hant": "每當我想到那戰鬥時鏗鏘有力的迴旋踢，挺拔堅韌的身姿，頭髮上的底片就會瘋狂生長——"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Doch leider ... sind sie alle leer.",
+                "en": "But alas… they're blank.",
+                "es": "Una lástima que estén vacíos.",
+                "fr": "Mais hélas… elles sont vides.",
+                "ja": "でも、残念ながら生えてきたフィルムは空っぽなんだ。",
+                "ko": "아쉽게도 형성된 필름은 다 공백으로 나와요",
+                "th": "แต่น่าเศร้า... มันกลับว่างเปล่า",
+                "zh-Hans": "可惜，长出来的胶片是空的。",
+                "zh-Hant": "可惜，長出來的底片是空的。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Leer?",
+                    "en": "Blank?",
+                    "es": "¿Vacíos?",
+                    "fr": "Vides ?",
+                    "ja": "{Male=空っぽ……？;Female=空っぽ……？}",
+                    "ko": "공백이요?",
+                    "th": "ว่างเปล่าเหรอ?",
+                    "zh-Hans": "空的？",
+                    "zh-Hant": "空的？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Als Leiter des Wutherium Filmstudios bin ich bedauerlicherweise hier zu stark eingebunden und kann Ragunna nicht verlassen.",
+                "en": "Exactly. As the head of Wutherium Film Studio, I'm tied to my duties every day. I can't leave Ragunna.",
+                "es": "Sí, como director del Wutherium Film Studio, no me puedo permitir abandonar Raguna.",
+                "fr": "Eh oui. En tant que directeur du Studio Wutherium, je croule en permanence sous le travail. Je ne peux pas quitter Ragunna.",
+                "ja": "うん。ワザリム映像スタジオのコンセプターとして、俺は毎日スタジオを切り盛りしていて、ラグーナから離れることができない。",
+                "ko": "네, 조수 영상의 책임자로서 매일 스튜디오를 운영하느라 라군나 성을 떠날 수 없어요",
+                "th": "ใช่แล้วแล้ว ในฐานะหัวหน้าวัธเธอเรียมฟิล์มสตูดิโอ ผมมีภารกิจติดพันทุกวัน ออกไปจากรากูนน่าไม่ได้เลย",
+                "zh-Hans": "嗯，作为潮汐影像的主理人，我每天都要打理工作室，无法离开拉古那城。",
+                "zh-Hant": "嗯，作為潮汐影像的主理人，我每天都要打理工作室，無法離開拉古那城。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Außerdem gibt es in dieser Stadt keine geeignete Bühne für Kämpfe, sodass es mir unmöglich ist, all jene zauberhaften Kampftechniken der Resonatoren zu bewundern.",
+                "en": "And in this city, there's no real stage for battle, making it impossible to admire the graceful battle postures of Resonators.",
+                "es": "Y en esta ciudad no acontece ningún combate real, así que me resulta imposible admirar las gráciles posturas de los Resonadores.",
+                "fr": "Et cette ville n'est pas exactement le décor idéal pour une scène de combat, ce qui m'empêche d'admirer la grâce martiale des Résonateurs..",
+                "ja": "だがこの城には、戦闘を記録できるような場所がない……だから、共鳴者たちの美しい戦いの姿を目にすることができないんだ。",
+                "ko": "하지만 라군나 성 안에는 전투하기 좋은 곳이 없으니... 공명자들이 분투하는 멋진 모습을 눈에 담을 수 없죠",
+                "th": "แล้วในเมืองนี้ก็ไม่มีสังเวียนให้ต่อสู้จริงๆ ทำให้ผมไม่มีโอกาสได้ชื่นชมท่วงท่าการต่อสู้อันสง่างามของเหล่าเรโซเนเตอร์เลย",
+                "zh-Hans": "而拉古那城内，并没有适合战斗的地方……我也就无法观瞻到共鸣者们奋战的优美身姿。",
+                "zh-Hant": "而拉古那城內，並沒有適合戰鬥的地方……我也就無法觀瞻到共鳴者們奮戰的優美身姿。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das heißt, ich kann nur meiner Vorstellungskraft freien Lauf lassen, bis sich all diese leeren Filmrollen in meinen Haaren verfangen ...",
+                "en": "So all I can do is let my imagination run wild, until it turns into empty reels, tangled with my hair...",
+                "es": "Lo único que puedo hacer es dar rienda suelta a mi imaginación, de ahí la cinta de carrete vacía de mi cabello.",
+                "fr": "Je ne peux donc rien faire d'autre que laisser libre cours à mon imagination, et cela se traduit par des pellicules vides emmêlées dans mes cheveux…",
+                "ja": "結局、想像ばかりが頭の中で膨らんで、白いフィルムが髪先に絡みつくだけ。",
+                "ko": "그저 생각이 머릿속에서 끝없이 자라나 결국은 텅 빈 필름이 돼서 머리끝을 감아버려요",
+                "th": "ผมก็เลยได้แต่ปล่อยจินตนาการให้พลุ่งพล่าน จนเหลือแค่ม้วนฟิล์มที่ว่างเปล่า พันกันยุ่งเหยิงอยู่ในหัว...",
+                "zh-Hans": "只能仍由念想在脑中疯狂生长，最终化为空白胶片缠满发梢。",
+                "zh-Hant": "只能仍由念想在腦中瘋狂生長，最終化為空白底片纏滿髮梢。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, ich bitte dich! Ich brauche dich, um sie mit Bildern zu füllen!",
+                "en": "So please! I need you to breathe life into them!",
+                "es": "¡Por favor! ¡Necesito que les insufles vida!",
+                "fr": "Je t'en implore, remplis-les d'images à couper le souffle !",
+                "ja": "だからお願いだ、あなたにこれを埋めてもらいたいんだ！",
+                "ko": "그러니까 제발 공백을 채워주세요!",
+                "th": "ดังนั้น ขอร้องเถอะครับ! ผมอยากให้คุณช่วยปลุกชีวิตให้กับมัน!",
+                "zh-Hans": "所以，拜托您，填满它吧！",
+                "zh-Hant": "所以，拜託您，填滿它吧！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Ich bezweifle, dass ich das alleine tun kann ...",
+                    "en": "I doubt I can do it alone…",
+                    "es": "Dudo que pueda hacerlo en solitario...",
+                    "fr": "Je ne sais pas si j'y arriverai {Male=seul;Female=seule}...",
+                    "ja": "{Male=俺一人じゃ、とても……;Female=私一人じゃ、とても……}",
+                    "ko": "저 혼자는 좀...",
+                    "th": "ฉันคงทำคนเดียวไม่ไหวหรอก...",
+                    "zh-Hans": "光靠我一人恐怕……",
+                    "zh-Hant": "光靠我一人恐怕……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Das klingt etwas eklig, Kumpel.",
+                    "en": "Sounds a bit creepy, mate.",
+                    "es": "Da un poco de asquete.",
+                    "fr": "Tu me fiches un peu les jetons, là…",
+                    "ja": "{Male=なんだか少し怖い話に聞こえるな……;Female=ちょっと怖い話に聞こえるんだけど……}",
+                    "ko": "왠지 무섭게 들리네요...",
+                    "th": "ฟังดูน่าขยะแขยงชอบกลนะ",
+                    "zh-Hans": "怎么听着有点可怕……",
+                    "zh-Hant": "怎麼聽著有點可怕……"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Nein, nein – du missverstehst mich! Ich bitte dich nicht darum, jede einzelne Filmrolle selbst zu füllen.",
+                "en": "No, no, no, you misunderstand! I'm not asking you to fill every reel yourself.",
+                "es": "No, no, no... ¡no me debo haber expresado bien! No te pido que lo hagas por tu cuenta.",
+                "fr": "Non, non, tu n'as pas compris ! Je ne te demande pas d'être {Male=le;Female=la} protagoniste de chaque film.",
+                "ja": "誤解しないでくれ。あなた一人の姿で埋めてほしいわけじゃないんだ。",
+                "ko": "오해하지 마세요, 당신 혼자 다 채우라는 게 아니에요",
+                "th": "ไม่ๆ ๆ คุณเข้าใจผิดแล้ว! ผมไม่ได้จะให้คุณอัดภาพใส่ม้วนฟิล์มทุกม้วนด้วยตัวเองซะหน่อย",
+                "zh-Hans": "您误会了，并不是想靠您一人的身姿填满全部。",
+                "zh-Hant": "您誤會了，並不是想靠您一人的身姿填滿全部。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Schau mal! Das Spezialprodukt des Wutherium Filmstudios: Resonatoren im Kampf!",
+                "en": "Behold! The Wutherium Film Studio Special Feature: Resonators in Combat Edition!",
+                "es": "¡Tachán! ¡La edición de combate de Wutherium Film Studio!",
+                "fr": "Regarde un peu ça… Studio Wutherium présente : les Résonateurs au combat !",
+                "ja": "ジャジャーン！「ワザリム映像特別企画・共鳴者戦闘篇」！",
+                "ko": "짜잔, 조수 영상 특별 기획 · 공명자 전투 편!",
+                "th": "แต่น แตน แต๊น... เชิญชม! รายการพิเศษ - ฉบับการต่อสู้ของเรโซเนเตอร์!",
+                "zh-Hans": "铛铛铛——潮汐影像特别企划·共鸣者战斗篇！",
+                "zh-Hant": "鐺鐺鐺——潮汐影像特別企劃·共鳴者戰鬥篇！"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nimm die beeindruckenden Posen der Resonatoren im Kampf auf!",
+                "en": "Capture the breathtaking moments of Resonators in battle!",
+                "es": "¡Captura lo mejor de los Resonadores en acción!",
+                "fr": "Enregistre les plus beaux exploits des Résonateurs sur le champ de bataille !",
+                "ja": "カメラで共鳴者たちの輝かしい勇姿を記録するんだ！",
+                "ko": "카메라로 공명자들의 분전하는 빛난 모습을 기록해 보세요!",
+                "th": "บันทึกช่วงเวลาการต่อสู้ที่ตราตรึงใจของเหล่าเรโซเนเตอร์!",
+                "zh-Hans": "用相机记录下共鸣者们奋战的闪耀英姿吧！",
+                "zh-Hant": "用相機記錄下共鳴者們奮戰的閃耀英姿吧！"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Sei es die untote Jägerin, der durch die Unterwelt schreitet ...",
+                "en": "Whether it's the undying hunter who walks the underworld…",
+                "es": "No importa si es un cazador inmortal en el inframundo...",
+                "fr": "Il peut s'agir d'une chasseresse immortelle qui parcourt l'inframonde…",
+                "ja": "地獄から来た不死の狩人でも……",
+                "ko": "지옥에서 온 불사의 사냥꾼이든...",
+                "th": "ไม่ว่าจะเป็นนักล่าฆ่าไม่ตายที่ท่องไปในโลกใต้พิภพ...",
+                "zh-Hans": "无论是来自地狱的不死猎手……",
+                "zh-Hant": "無論是來自地獄的不死獵手……"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oder der geheimnisvolle Schwertkämpfer, in Schatten gehüllt ...",
+                "en": "Or the mysterious swordsman wrapped in shadows…",
+                "es": "O un misterioso espadachín en las sombras...",
+                "fr": "Ou d'un mystérieux épéiste qui se cache dans l'ombre…",
+                "ja": "神秘に包まれた剣士でも……",
+                "ko": "헤아릴 수 없는 신비한 검객이든...",
+                "th": "หรือนักดาบลึกลับที่รายล้อมด้วยเงามืด...",
+                "zh-Hans": "还是高深莫测的神秘剑客……",
+                "zh-Hant": "還是高深莫測的神秘劍客……"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Folge ihnen mit deinen Schritten, fixiere sie mit deinem Blick und bewahre sie für die Nachwelt mit der Linse deiner Kamera!",
+                "en": "Seek them out with your steps, seize them with your gaze, and preserve them with your lens!",
+                "es": "¡Búscalos dondequiera que vayas y captúralo todo con la cámara!",
+                "fr": "Laisse tes pas te guider jusqu'à eux, traque-les avec ton regard, et capture-les avec ton objectif !",
+                "ja": "あなたの歩みで追い、あなたの視線で捉え、手にしたカメラで記録するんだ！",
+                "ko": "당신의 발걸음으로 찾아다니고, 눈으로 포착하고, 손에 든 카메라로 기록하세요!",
+                "th": "ตามหาพวกเขาด้วยฝีเท้า จับภาพพวกเขาด้วยสายตา แล้วเก็บรักษาพวกเขาไว้ด้วยเลนส์ของคุณ!",
+                "zh-Hans": "用您的脚步去追寻，用您的目光去捕捉，用手中的相机去记录吧！",
+                "zh-Hant": "用您的腳步去追尋，用您的目光去捕捉，用手中的相機去記錄吧！"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hilf mir, meine Filmrollen mit leuchtenden Bildern zu füllen.",
+                "en": "Help my reels regain their rightful brilliance.",
+                "es": "Ayúdame a recuperar el antiguo esplendor de mis rollos.",
+                "fr": "Aide mes films à être aussi épiques qu'ils le méritent.",
+                "ja": "そうして俺の頭のフィルムに、本来の輝きを取り戻してほしい。",
+                "ko": "제 머리카락에 감긴 필름이 알맞은 빛을 되찾게 해주세요",
+                "th": "ช่วยทำให้ม้วนฟิล์มของผมกลับมาส่องประกายสมศักดิ์ศรีอีกครั้งนะครับ",
+                "zh-Hans": "让我的发丝胶片恢复它应有的光彩。",
+                "zh-Hant": "讓我的髮絲底片恢復它應有的光彩。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "C-MOSS und ich werden dir für deine Hilfe auf ewig dankbar sein.",
+                "en": "C-MOSS and I will be forever grateful for your help.",
+                "es": "Simos y yo te estaremos eternamente agradecidos.",
+                "fr": "Simos et moi-même te serons éternellement reconnaissants.",
+                "ja": "俺とシモスのためにも、よろしくお願いするよ。",
+                "ko": "저와 시모스 선생은 당신의 은혜에 깊이 감사드리겠습니다",
+                "th": "ผมกับ C-MOSS จะขอบคุณในความช่วยเหลือของคุณตลอดไป",
+                "zh-Hans": "我和西莫斯先生会感谢您的恩德。",
+                "zh-Hant": "我和西莫斯先生會感謝您的恩德。"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 50068,
+                "name": {
+                  "zh-Hans": "斐林"
+                },
+                "entity": {
+                  "entityId": 320800000,
+                  "mapId": 8,
+                  "blueprintType": "branch2.0_TsEntity_157_斐林",
+                  "name": "TsEntity_157_斐林3",
+                  "areaId": 1692,
+                  "position": {
+                    "x": 700190,
+                    "y": 572850,
+                    "z": 780
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    }
+  ]
+}

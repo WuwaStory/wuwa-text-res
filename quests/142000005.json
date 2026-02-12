@@ -1,0 +1,3060 @@
+{
+  "id": 142000005,
+  "key": "统驭冠塔",
+  "type": "branch",
+  "typeId": 9,
+  "name": {
+    "de": "Der Schatten des Turms: Turm der Herrschaft",
+    "en": "Shadow of the Towers: Command Rise",
+    "es": "Sombra de las torres: Torre de Comando",
+    "fr": "Fantôme de la Tour : Tour de domination",
+    "ja": "タワーの幽霊・ドミニオンタワー",
+    "ko": "높은 탑의 그림자 · 통솔의 탑",
+    "th": "เงาแห่งหอคอย: หอคอยบัญชาการ",
+    "zh-Hans": "高塔的幽影·统驭冠塔",
+    "zh-Hant": "高塔的幽影·統馭冠塔"
+  },
+  "desc": {
+    "de": "Laut Itzels Vermutung könnte Liel sich im Turm nebenan aufhalten.\nIhr drei beschließt, gemeinsam hineinzutreten, um Liel zu suchen.\n\n<color=highlight>In diesem Questsgebiet kannst du zusätzliche, versteckte Belohnungen erhalten.</color>",
+    "en": "Itzel suggests that Liel might be in the nearby rise. So the three of you decide to venture inside to search for Liel.\n\n<color=highlight>Hidden rewards can be found in this area.</color>",
+    "es": "Según la deducción de Izel, Liel podría estar en la torre cercana.\nDecides entrar con ellos.\n\n<color=highlight>Esta área de misión guarda recompensas secretas por descubrir.</color>",
+    "fr": "Itzel suggère que Liel pourrait se trouver sur la colline voisine.\nVous décidez donc tous les trois d'y entrer pour chercher Liel.\n\n<color=highlight>Explorez la zone de la quête pour obtenir les récompenses cachées</color>.",
+    "ja": "イツェルの推測によれば、リールは隣のタワーにいる可能性が高い。\n三人は一緒にタワーに入って、リールを探すと決めた。\n\n<color=highlight>この任務エリアでは隠された特別報酬を獲得できる</color>",
+    "ko": "이젤의 추론에 따르면 리엘은 바로 옆에 있는 높은 탑에 있을 수 있다.\n당신들은 함께 탑에 들어가 리엘을 찾기로 결정했다.\n\n<color=highlight>해당 임무 구역 내에 숨겨진 추가 보상을 획득할 수 있다</color>",
+    "th": "อิตเซลบอกว่าลิเอลอาจจะอยู่บนเนินใกล้ๆ นี้ พวกคุณทั้งสามจึงตัดสินใจเข้าไปข้างในเพื่อตามหาลิเอล\n\n<color=highlight>อาจพบรางวัลที่ซ่อนอยู่ในพื้นที่นี้</color>",
+    "zh-Hans": "根据伊泽尔的推断，利尔有可能在一旁的高塔之中。\n你们三人决定一同进入其中寻找利尔的下落。\n\n<color=highlight>该任务区域内可获得隐藏的额外奖励</color>",
+    "zh-Hant": "根據伊澤爾的推斷，利爾有可能在一旁的高塔之中。\n你們三人決定一同進入其中尋找利爾的下落。\n\n<color=highlight>該任務區域內可獲得隱藏的額外獎勵</color>"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 3,
+      "parentId": 1,
+      "type": "QuestSucceed",
+      "dialogs": []
+    },
+    {
+      "id": 12,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Betritt den Turm der Herrschaft",
+        "en": "Enter the Command Rise",
+        "es": "Entra en la Torre de Comando.",
+        "fr": "Entrer dans la Tour de domination",
+        "ja": "ドミニオンタワーに入る",
+        "ko": "통솔의 탑 진입",
+        "th": "เข้าสู่หอคอยบัญชาการ",
+        "zh-Hans": "进入统驭冠塔",
+        "zh-Hant": "進入統馭冠塔"
+      },
+      "entities": [
+        {
+          "entityId": 138900007,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Branch1.1_2",
+          "name": "TsEntity_特殊_主塔门控制",
+          "areaId": 2301,
+          "position": {
+            "x": 762828,
+            "y": 708597,
+            "z": 15229
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 138900009,
+          "mapId": 8,
+          "blueprintType": "Gameplay422",
+          "name": "TsEntity_副本_主塔入口",
+          "areaId": 2301,
+          "position": {
+            "x": 762496,
+            "y": 708879,
+            "z": 15357
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -78
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 15,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Finde Insula und Itzel im Lager",
+        "en": "Head to the camp to find Insula and Itzel",
+        "es": "Dirígete al campamento para encontrar a Ínsula e Itzel.",
+        "fr": "Trouver Insula et Itzel au camp",
+        "ja": "拠点にインシュラとイツェルを探しに行く",
+        "ko": "캠프로 가서 이안수라와 이젤 찾기",
+        "th": "ไปที่แคมป์เพื่อตามหาอินซูลาและอิตเซล",
+        "zh-Hans": "前往营地寻找伊恩苏拉和伊泽尔",
+        "zh-Hant": "前往營地尋找伊恩蘇拉和伊澤爾"
+      },
+      "entities": [
+        {
+          "entityId": 142007587,
+          "mapId": 8,
+          "blueprintType": "NPC204",
+          "name": "TsEntity_NPC_流放共鸣者",
+          "areaId": 2301,
+          "position": {
+            "x": 800253,
+            "y": 677055,
+            "z": 579
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 86
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142007597,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领",
+          "areaId": 2301,
+          "position": {
+            "x": 800512,
+            "y": 677204,
+            "z": 579
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 172
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_世界_三重冠塔_POI任务",
+          "flowIndex": 13,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Wie ich dir gesagt habe, Itzel. Da ist unser Ziel.",
+                "en": "What did I tell ya, Itzel? There's our destination.",
+                "es": "¿Qué te decía, Itzel? Ahí está nuestro destino.",
+                "fr": "J'avais raison, Itzel ! On y est.",
+                "ja": "イツェル、俺の言った通りだ。あの場所で間違いねえ。",
+                "ko": "이젤, 내가 한 말이 맞나 봐, 바로 여기야",
+                "th": "ฉันบอกแล้วใช่ไหม อิตเซล? นั่นแหละจุดหมายของเรา",
+                "zh-Hans": "伊泽尔，看来我说的没错，就是那个地方了。",
+                "zh-Hant": "伊澤爾，看來我說的沒錯，就是那個地方了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                },
+                "entity": {
+                  "entityId": 142007597,
+                  "mapId": 8,
+                  "blueprintType": "NPC203",
+                  "name": "TsEntity_NPC_流放者首领",
+                  "areaId": 2301,
+                  "position": {
+                    "x": 800512,
+                    "y": 677204,
+                    "z": 579
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 172
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ach komm schon ... Wir wären jetzt total im Durcheinander, wenn ich auf dich gehört hätte. Ich war es, die diesen Turm festgenagelt hat!",
+                "en": "Shut up... We'd be running around like headless chickens if I listened to you. It was I who pinned that tower down!",
+                "es": "Cállate... Si te hubiera hecho caso, estaríamos corriendo sin rumbo. ¡Fui yo quien señaló esa torre!",
+                "fr": "La ferme...Tu prétends avoir trouvé la tour ? Si je t'avais écouté, on allait errer en rond comme un fou.",
+                "ja": "何がさ！あんたの話を聞いてちゃ、リールと再会なんて夢のまた夢さ……あのタワーをロックしたのはどこのどいつさ？",
+                "ko": "네 말이 맞긴 뭐가 맞아. 만약 네 말대로 했다가 리엘을 못 찾으면... 누가 그 탑을 정했는지 잊지 마!",
+                "th": "เงียบไปเลย ถ้าฉันฟังนาย เราคงวิ่งวุ่นเหมือนไก่ไม่มีหัวแล้ว ฉันนี่แหละที่หาตำแหน่งหอคอยได้!",
+                "zh-Hans": "什么你说的没错，如果听你的根本找不到利尔……别忘了是谁锁定那座塔的！",
+                "zh-Hant": "什麼你說的沒錯，如果聽你的根本找不到利爾……別忘了是誰鎖定那座塔的！"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                },
+                "entity": {
+                  "entityId": 142007587,
+                  "mapId": 8,
+                  "blueprintType": "NPC204",
+                  "name": "TsEntity_NPC_流放共鸣者",
+                  "areaId": 2301,
+                  "position": {
+                    "x": 800253,
+                    "y": 677055,
+                    "z": 579
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 86
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hey, mach keinen Aufstand ... Oh, hallo! Du bist hier!",
+                "en": "Hey, don't make a fuss... Oh, hi friend! You're here!",
+                "es": "Oye, no hagas un escándalo... ¡Ey, hola! ¿Qué haces aquí?",
+                "fr": "Ahem, que du menu fretin, ne t'en prends la tête… Te voilà, mon {Male=ami;Female=amie}.",
+                "ja": "それはその、細かいこと気にすんなって……ん？おお、お前も来たのか！",
+                "ko": "그렇게 사소한 부분까지는 신경 쓰지 마... 어? 친구, 너도 왔구나!",
+                "th": "นี่ อย่าเพิ่งหงุดหงิดสิ... อ้าว ว่าไงเพื่อน! มาพอดีเลย!",
+                "zh-Hans": "咳咳，不要在意这些细节……嗯？朋友，你也来了！",
+                "zh-Hant": "咳咳，不要在意這些細節……嗯？朋友，你也來了！"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                },
+                "entity": {
+                  "entityId": 142007597,
+                  "mapId": 8,
+                  "blueprintType": "NPC203",
+                  "name": "TsEntity_NPC_流放者首领",
+                  "areaId": 2301,
+                  "position": {
+                    "x": 800512,
+                    "y": 677204,
+                    "z": 579
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 172
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Und ihr beide seid auch hier.",
+                    "en": "And so are you two.",
+                    "es": "Nos hemos encontrado otra vez.",
+                    "fr": "Vous êtes tous sains et sauf.",
+                    "ja": "{Male=二人ともいるな。;Female=二人ともいるね。}",
+                    "ko": "둘 다 있었네요",
+                    "th": "คุณสองคนก็เหมือนกัน",
+                    "zh-Hans": "原来你们都在。",
+                    "zh-Hant": "原來你們都在。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Natürlich. Itzel sagt, sie spürt die Frequenzen des Monsters aus diesem Turm.",
+                "en": "Of course. Itzel says she feels the monster's frequencies from within that tower.",
+                "es": "Si. Itzel dice que siente las frecuencias del monstruo desde dentro de esa torre.",
+                "fr": "Bien sûr. Selon Itzel, il y a des fréquences de monstre venant de cette tour.",
+                "ja": "もちろんさ。あのタワーに例のヤツの周波数があるって、イツェルがな。",
+                "ko": "당연하지, 이젤이 멀리 높은 탑에 그 괴물의 주파수가 있다고 말했어",
+                "th": "แน่อยู่แล้ว อิตเซลบอกว่าเธอสัมผัสได้ถึงความถี่ของสัตว์ประหลาดจากภายในหอคอยแห่งนั้น",
+                "zh-Hans": "那当然。伊泽尔说，远处有一座高塔里有那个怪物的频率。",
+                "zh-Hant": "那當然。伊澤爾說，遠處有一座高塔裡有那個怪物的頻率。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                },
+                "entity": {
+                  "entityId": 142007597,
+                  "mapId": 8,
+                  "blueprintType": "NPC203",
+                  "name": "TsEntity_NPC_流放者首领",
+                  "areaId": 2301,
+                  "position": {
+                    "x": 800512,
+                    "y": 677204,
+                    "z": 579
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 172
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Im Gegensatz zu den Ablenkungen in den anderen beiden Türmen ist dieser hier wahrscheinlich echt.",
+                "en": "Unlike the decoys in the other two towers, this one there is probably real.",
+                "es": "A diferencia de los señuelos en las otras dos torres, esta probablemente es real.",
+                "fr": "Celui-ci semble être plus coriace, par rapport aux autres dans les deux tours.",
+                "ja": "この前タワーをウロチョロしてた影とは違う、ありゃきっとあいつの正体さ。",
+                "ko": "앞의 두 탑에서 이리저리 도망 다니던 그림자와 달리 그곳은 분명 그 녀석의 진짜 위치일 거야",
+                "th": "ไม่เหมือนตัวหลอกในหอคอยอีกสองแห่ง ความถี่นี้อาจจะเป็นของจริงก็ได้",
+                "zh-Hans": "和之前的两座塔里窜来窜去的影子不同，那里应该是那个家伙真正的所在。",
+                "zh-Hant": "和之前的兩座塔裡竄來竄去的影子不同，那裡應該是那個傢伙真正的所在。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                },
+                "entity": {
+                  "entityId": 142007587,
+                  "mapId": 8,
+                  "blueprintType": "NPC204",
+                  "name": "TsEntity_NPC_流放共鸣者",
+                  "areaId": 2301,
+                  "position": {
+                    "x": 800253,
+                    "y": 677055,
+                    "z": 579
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 86
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Los geht's. Es ist Zeit, Liel zurückzuholen.",
+                "en": "Come on. Time to bring Liel back.",
+                "es": "Vamos, esta vez traeremos a Liel de vuelta, sí o sí.",
+                "fr": "C'est le moment de ramener Liel, pardi !",
+                "ja": "行くぞ、今度こそリールを連れ戻す。",
+                "ko": "가자! 이번에는 반드시 리엘을 찾아서 데려와야 해",
+                "th": "มาเถอะ ได้เวลาไปพา Liel กลับมาแล้ว",
+                "zh-Hans": "走吧，我们这次一定要把利尔找回来。",
+                "zh-Hant": "走吧，我們這次一定要把利爾找回來。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                },
+                "entity": {
+                  "entityId": 142007597,
+                  "mapId": 8,
+                  "blueprintType": "NPC203",
+                  "name": "TsEntity_NPC_流放者首领",
+                  "areaId": 2301,
+                  "position": {
+                    "x": 800512,
+                    "y": 677204,
+                    "z": 579
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 172
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Dieser Bengel sollte noch unversehrt sein, wenn wir ihn finden!",
+                "en": "That brat had better be in one piece when we find him!",
+                "es": "¡Ese chico más vale que se cuide y esté bien cuando lo encontremos!",
+                "fr": "Tu ferais mieux de rester sain et sauf quand je te retrouverai, Liel !",
+                "ja": "まったく世話のやける……大人しく待ってな！",
+                "ko": "네 몸이나 간수 잘하고, 안에서 얌전히 날 기다려!",
+                "th": "ตอนที่เราเจอตัว หวังว่าเจ้าเด็กนั่นจะยังอยู่ครบสามสิบสองนะ!",
+                "zh-Hans": "臭小子，给我保护好自己，在里面乖乖等着我！",
+                "zh-Hant": "臭小子，給我保護好自己，在裡面乖乖等著我！"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                },
+                "entity": {
+                  "entityId": 142007587,
+                  "mapId": 8,
+                  "blueprintType": "NPC204",
+                  "name": "TsEntity_NPC_流放共鸣者",
+                  "areaId": 2301,
+                  "position": {
+                    "x": 800253,
+                    "y": 677055,
+                    "z": 579
+                  },
+                  "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 86
+                  },
+                  "scale": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 100
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "parentId": 1,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 21,
+      "parentId": 1,
+      "type": "Action",
+      "entities": [
+        {
+          "entityId": 142900031,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领2",
+          "areaId": 2301,
+          "position": {
+            "x": 760671,
+            "y": 710743,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -165
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900032,
+          "mapId": 8,
+          "blueprintType": "NPC204",
+          "name": "TsEntity_NPC_流放共鸣者2",
+          "areaId": 2301,
+          "position": {
+            "x": 760518,
+            "y": 710480,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 22,
+      "parentId": 1,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 47,
+      "parentId": 1,
+      "type": "ChildQuest",
+      "entities": [
+        {
+          "entityId": 142900031,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领2",
+          "areaId": 2301,
+          "position": {
+            "x": 760671,
+            "y": 710743,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -165
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900032,
+          "mapId": 8,
+          "blueprintType": "NPC204",
+          "name": "TsEntity_NPC_流放共鸣者2",
+          "areaId": 2301,
+          "position": {
+            "x": 760518,
+            "y": 710480,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 19,
+      "parentId": 18,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Insula",
+        "en": "Talk to Insula",
+        "es": "Habla con Ínsula.",
+        "fr": "Parler à Insula",
+        "ja": "インシュラと会話する",
+        "ko": "이안수라와 대화",
+        "th": "คุยกับอินซูลา",
+        "zh-Hans": "与伊恩苏拉交谈",
+        "zh-Hant": "與伊恩蘇拉交談"
+      },
+      "entities": [
+        {
+          "entityId": 142900031,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领2",
+          "areaId": 2301,
+          "position": {
+            "x": 760671,
+            "y": 710743,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -165
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_世界_三重冠塔_POI任务",
+          "flowIndex": 12,
+          "stateId": 1,
+          "talks": [
+            {
+              "text": {
+                "de": "Danke, dass du uns geholfen hast.",
+                "en": "Thank you for helping us, friend.",
+                "es": "Gracias por ayudarnos, {Male=amigo;Female=amiga}.",
+                "fr": "Merci de ton aide, mon {Male=ami;Female=amie}.",
+                "ja": "友よ、苦労をかけたな。",
+                "ko": "친구, 고생 많았어",
+                "th": "ขอบคุณที่ช่วยเรานะ เพื่อนเอ๋ย",
+                "zh-Hans": "朋友，辛苦你了。",
+                "zh-Hant": "朋友，辛苦你了。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Hast du mit Itzel gesprochen? Sie könnte ein freundliches Ohr gebrauchen.",
+                "en": "Have you spoken to Itzel? She could use a kind ear.",
+                "es": "¿Has hablado con Itzel? Ahora ella probablemente te necesita más que yo.",
+                "fr": "Tu lui as parlé ? Elle a vraiment besoin d'une oreille attentive.",
+                "ja": "イツェルとはもう？彼女のほうこそお前を必要なんじゃないか。",
+                "ko": "이젤과는 얘기해 봤어? 지금 그녀는 나보단 네가 더 필요할 것 같아",
+                "th": "คุณได้คุยกับอิตเซลหรือยัง? ถ้าเธอได้คนรับฟังก็คงดี",
+                "zh-Hans": "你跟伊泽尔说过话了吗？现在她应该比我更需要你。",
+                "zh-Hant": "你跟伊澤爾說過話了嗎？現在她應該比我更需要你。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Was für ein Tag. Das Leben eines Inselverbannten, Rauben nur um zu überleben ... Menschen wie wir sterben jeden Tag.",
+                "en": "What a day. The life of an island Exile, robbing just to survive... People like us die every day.",
+                "es": "¿Cómo me siento? Gente como nosotros, saqueando barcos mercantes, algún día tendríamos que pagar por esto.",
+                "fr": "Quelle journée, hein ? Cette vie d'exilé, de pirate que nous menons sur l'ile… certain en périt tous les jours.",
+                "ja": "俺の気持ち？この俺は島じゃ追放者で、海じゃ海賊だぞ？毎日誰かしら失ってんだよ。",
+                "ko": "내 기분은 어떠냐고? 섬에서 추방자 생활을 하고, 해적질을 하고, 상선을 약탈하고, 이런 짓을 하면서 실제로는 매일 희생자가 발생해",
+                "th": "วันนี้ช่างหนักหนาเหลือเกิน ชีวิตของผู้ถูกเนรเทศบนเกาะ ได้แต่ปล้นเพื่อเอาตัวรอด... คนแบบเราตายกันทุกวัน",
+                "zh-Hans": "我的心情如何？在岛屿上当流放者，做海盗打劫商船，干这种勾当其实每天都有人牺牲。",
+                "zh-Hant": "我的心情如何？在島嶼上當流放者，做海盜打劫商船，幹這種勾當其實每天都有人犧牲。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber Liel ... Liel war anders. Er war für dieses Leben zu gut. Er hat für uns gesegelt, nie geplündert.",
+                "en": "But Liel... Liel was different. He was too kind for this kind of life. He did the sailing for us, never the plundering.",
+                "es": "Pero Liel... Liel era diferente. Era demasiado amable para este tipo de vida. Él solo navegaba por nosotros, nunca saqueaba.",
+                "fr": "Mais Liel... lui était différent. Il était agréable et adorait ce style de vie. Il préférait travailler tranquillement plutôt que se bagarrer.",
+                "ja": "でもな、リールは違う。心根が良すぎて追放者失格さ。強奪なんてガラじゃない、ただの雑用だ。",
+                "ko": "하지만... 리엘은 달라. 그 아이는 추방자답지 않게 착했거든. 강도 짓도 가담하지 않고, 후방 근무만 했어",
+                "th": "แต่ Liel... Liel น่ะต่างออกไป เขาใจดีเกินกว่าจะมาใช้ชีวิตแบบนี้ เขาทำหน้าที่คุมเรือให้เรา แต่ไม่เคยปล้นใคร",
+                "zh-Hans": "但是……利尔不一样。他善良得不像个流放者，从不参与打劫，只干后勤的活。",
+                "zh-Hant": "但是……利爾不一樣。他善良得不像個流放者，從不參與打劫，只做後勤的事。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich mochte diesen Jungen wirklich ... Hatte Träume, ihn zum nächsten Kapitän auszubilden. Ha, eine merkwürdige Wahl, jetzt wo ich darüber nachdenke ...",
+                "en": "I really liked that kid... Had dreams of training him to be the next captain. Ha, an odd choice now that I think about it...",
+                "es": "Me gustaba mucho ese chico... Soñaba con entrenarlo para ser el próximo capitán. Ja, una elección extraña ahora que lo pienso...",
+                "fr": "Je l'aimais vraiment... J'espérai tant qu'il devienne le prochain capitaine de l'équipage. Ha, ça fait drôle d'y penser maintenant...",
+                "ja": "でも俺は気に入ってた。後継ぎだと思ってたと言ったろ？はは……変か？",
+                "ko": "난 그 녀석이 엄청 맘에 들었어... 심지어 후계자로 키우고 싶었고... 하하, 이상하지?",
+                "th": "ฉันชอบเจ้าเด็กนั่นจริงๆ... เคยฝันเอาไว้ว่าจะฝึกเขาให้เป็นกัปตันคนต่อไป เฮอะ พอมาคิดดูตอนนี้ก็เป็นตัวเลือกที่แปลกอยู่นะ",
+                "zh-Hans": "我很中意这个小子……甚至想把他当作接班人培养，哈哈……很奇怪吧。",
+                "zh-Hant": "我很中意這個小子……甚至想把他當作接班人培養，哈哈……很奇怪吧。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn er Kapitän geworden wäre, hätten wir vielleicht aufgehört, Verbannte zu sein und ein neues Blatt gewendet – als legitime Händler und so weiter.",
+                "en": "If he became captain, maybe we'd stop being Exiles and turn a new leaf—as legitimate traders and such.",
+                "es": "Si se convirtiera en capitán, tal vez dejaríamos de ser Exiliados y daríamos un giro— como comerciantes legítimos y demás.",
+                "fr": "Avec lui comme capitaine, nous pourrions peut-être briser le joug de la malédiction d'exilé et nous faire une place dans le monde des affaires.",
+                "ja": "あいつがお頭なら……きっとまともな商売で大成して、子分らと普通の暮らしをするかもな。",
+                "ko": "만약 그가 두목이 된다면 동생들은 추방자 생활을 할 필요가 없을지도 몰라, 제대로 된 사업을 할 수 있을지도 모르고",
+                "th": "ถ้า Liel เป็นกัปตัน บางทีเราคงเลิกถูกเนรเทศแล้วได้เริ่มชีวิตใหม่—ได้ค้าขายอย่างถูกกฎหมายอะไรแบบนั้น",
+                "zh-Hans": "如果他当上了老大，说不定小弟们就不用当流放者了，能做起正经生意也说不定。",
+                "zh-Hant": "如果他當上了老大，說不定小弟們就不用當流放者了，能做起正經生意也說不定。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber das ist jetzt alles ein sinnloser Traum ... Das Schicksal der Crew liegt immer noch bei mir. Ich muss sie durch diesen Dreck führen.",
+                "en": "But that's all a pointless dream now... The fate of the crew still rests with me. I have to guide them through this muck.",
+                "es": "Pero ahora todo eso es un sueño inútil... Están dependiendo de mí y tengo que guiarlos.",
+                "fr": "Tout ceci n'est dorénavant qu'un rêve... Pas de tire-au-flanc, l'avenir de l'équipage repose toujours sur mes épaules.",
+                "ja": "それも夢と消えちまった……これからも俺がしっかりしねえと。全員闇に生きるしかねえ。",
+                "ko": "그런데 이게 다 불가능해졌어... 패거리들의 앞길은 여전히 나에게 달려 있고, 모두들 여전히 회색 지대에서만 살겠지",
+                "th": "แต่ตอนนี้ทุกอย่างกลายเป็นฝันที่เปล่าประโยชน์แล้ว... ชะตากรรมของพวกลูกเรือยังขึ้นอยู่กับฉัน ฉันต้องพาพวกเขาผ่านโคลนตมนี้ไปให้ได้",
+                "zh-Hans": "但这些都不可能了……帮派的前途还得靠我，大家依然只能在灰色地带里生活。",
+                "zh-Hant": "但這些都不可能了……幫派的前途還得靠我，大家依然只能在灰色地帶裡生活。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es ist jetzt vorbei, Freund. Itzel und ich danken dir, dass du uns begleitet hast.",
+                "en": "It's over now, friend. Itzel and I thank you for accompanying us.",
+                "es": "Se acabó, {Male=amigo;Female=amiga}. Itzel y yo te agradecemos por acompañarnos.",
+                "fr": "Il est temps de se dire au revoir, mon {Male=ami;Female=amie}. Merci de nous avoir accompagnés dans cette mission.",
+                "ja": "友よ、じゃあな。これで一件落着だ。今まで本当にありがとう。",
+                "ko": "친구, 이번 일은 여기서 끝난 것 같아. 우리와 함께해 줘서 고마워!",
+                "th": "มันจบแล้วล่ะเพื่อน อิตเซลกับฉันต้องขอบคุณที่คุณร่วมทางมากับเรา",
+                "zh-Hans": "朋友，这件事就先告一段落了，谢谢你一路陪着我和伊泽尔。",
+                "zh-Hant": "朋友，這件事就先告一段落了，謝謝你一路陪著我和伊澤爾。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Was steht als nächstes für dich und deine Crew an?",
+                    "en": "What's next for you and your crew?",
+                    "es": "¿Y algún plan para el futuro?",
+                    "fr": "Qu'est-ce que vous comptez faire maintenant ?",
+                    "ja": "これからどうする？",
+                    "ko": "이후의 계획이 있나요?",
+                    "th": "แล้วคุณกับลูกเรือจะไปไหนกันต่อ?",
+                    "zh-Hans": "接下来你们有什么打算？",
+                    "zh-Hant": "接下來你們有什麼打算？"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wir werden unser Schiff reparieren und diesen Ort der Trauer hinter uns lassen.",
+                "en": "We'll fix our ship and leave this place of sorrow behind.",
+                "es": "Arreglaremos nuestro barco y dejaremos atrás este lugar de tristeza.",
+                "fr": "Nous allons réparer le navire et quitter ce maudit endroit.",
+                "ja": "船をどうにか直し、この悲しみの地を離れるさ。",
+                "ko": "배를 수리하고 나면 이 슬픈 곳을 떠날 방법을 찾을 거야",
+                "th": "เราจะซ่อมเรือแล้วออกจากสถานที่น่าหดหู่นี่",
+                "zh-Hans": "我们应该会想办法修好船，离开这个伤心的地方吧。",
+                "zh-Hant": "我們應該會想辦法修好船，離開這個傷心的地方吧。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Keiner von uns will nach dem, was wir durchgemacht haben, in Rinascita bleiben.",
+                "en": "None of us want to stay in Rinascita after what we've been through.",
+                "es": "Ninguno de nosotros quiere quedarse en Rinascita después de lo que hemos pasado.",
+                "fr": "Rester à Rinascita pourrait être trop à supporter pour nous tous.",
+                "ja": "ここに居座ったら、イツェルや子分どもにとって、辛いからな。",
+                "ko": "리나시타에 계속 있는 건 이젤이나 나, 그리고 패거리들에게는 매우 무거운 일이야",
+                "th": "หลังจากเราได้ผ่านเรื่องพวกนั้นมาก็ไม่มีใครอยากอยู่ที่รินาซิตาแล้วล่ะ",
+                "zh-Hans": "继续待在黎那汐塔，对伊泽尔，对我以及对帮里的人来说都是件很沉重的事。",
+                "zh-Hant": "繼續待在黎那汐塔，對伊澤爾，對我以及對幫裡的人來說都是件很沉重的事。"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich denke, wir sollten uns verabschieden. Auf Wiedersehen, {Male=lieber Freund;Female=liebe Freundin}!",
+                "en": "I guess we should say our goodbyes. So long, friend!",
+                "es": "Supongo que deberíamos despedirnos. ¡Adiós, {Male=amigo;Female=amiga}!",
+                "fr": "Nos chemins se séparent ici. Au revoir, mon {Male=ami;Female=amie} !",
+                "ja": "これで本当にお別れだ、またな、友よ。",
+                "ko": "이제는 정말 작별이네, 안녕, 친구!",
+                "th": "เราคงต้องบอกลากันแล้วล่ะ ไว้เจอกันนะเพื่อน!",
+                "zh-Hans": "这下就是彻底的告别了，回见，朋友！",
+                "zh-Hant": "這下就是徹底的告別了，待會見，朋友！"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Oh, und wenn du jemals auf einem Schiff bist, das wir erobert haben, darfst du deine Sachen behalten, haha!",
+                "en": "Oh, and if you're ever on a ship we've captured, you get to keep your stuff, haha!",
+                "es": "Ah, y si alguna vez subes a un barco mercante que capturamos, ¡no te preocupes, no te lo robaremos, jaja!",
+                "fr": "Si jamais nous nous croisons à nouveau, nous ne lèverons le petit doigt contre toi. Tu seras en sécurité, haha !",
+                "ja": "この先、お前の乗った商船に出くわしても、見逃してやるよ、ははっ。",
+                "ko": "만약 상선에 탔다가 우리랑 부딪힌다면, 약탈하지 않을 테니까 걱정 마, 하하!",
+                "th": "อ้อ แล้วถ้าคุณไปอยู่บนเรือที่เรายึดได้ล่ะก็ เราก็จะไม่ยึดของคุณหรอก ฮ่าๆ!",
+                "zh-Hans": "如果你上了哪艘商船，被我们撞见了的话，我们不会打劫的，哈哈。",
+                "zh-Hant": "如果你上了哪艘商船，被我們撞見了的話，我們不會打劫的，哈哈。"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber Insulas Lachen klingt hohl. Sein Gesichtsausdruck bleibt steinern, und er versinkt in tiefer Stille.",
+                "en": "But Insula's laughter is hollow. His expression is stony, and he sinks into silence.",
+                "es": "Ínsula soltó una broma, pero su rostro permaneció impasible. Después de hablar, cayó en un silencio profundo.",
+                "fr": "Mais le rire d'Insula est creux. Son expression est de pierre, et il tombe dans le silence.",
+                "ja": "冗談を言ったインシュラは無表情だった。それから彼は口をつぐむばかりだった……",
+                "ko": "이안수라는 농담을 던졌지만 표정은 담담했다. 말을 마친 후, 그는 침묵에 빠졌다",
+                "th": "แต่เสียงหัวเราะของอินซูลาฟังดูช่างกลวงเปล่า สีหน้าของเขานิ่งเฉย และเขาก็จมอยู่กับความเงียบ",
+                "zh-Hans": "伊恩苏拉开了个玩笑，但脸上却并没有表情。说完话后，他陷入了沉默。",
+                "zh-Hant": "伊恩蘇拉開了個玩笑，但臉上卻並沒有表情。說完話後，他陷入了沉默。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_2_0_世界_三重冠塔_POI任务",
+          "flowIndex": 12,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Itzel murmelt vor sich hin, während sie den Kompassanhänger drückt.",
+                "en": "Itzel mutters to herself while squeezing the compass pendant.",
+                "es": "Itzel murmura para sí misma mientras aprieta el colgante.",
+                "fr": "Itzel marmonne pour elle-même en serrant le pendentif du compas.",
+                "ja": "イツェルはコンパス形のペンダントを握り締めながら、何か囁いている。",
+                "ko": "이젤은 나침반 모양의 펜던트를 움켜쥐며 중얼거린다",
+                "th": "อิตเซลพึมพำกับตัวเองในขณะที่กำจี้เข็มทิศเอาไว้แน่น",
+                "zh-Hans": "伊泽尔紧握着一枚罗盘形状的吊坠，一边喃喃自语着。",
+                "zh-Hant": "伊澤爾緊握著一枚羅盤形狀的吊墜，一邊喃喃自語著。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm nach Hause, Liel ...",
+                "en": "Come home Liel...",
+                "es": "Es hora de volver a casa, Liel...",
+                "fr": "Rentres à la maison, Liel...",
+                "ja": "そろそろ帰ろう、リール……",
+                "ko": "집에 갈 시간이야, 리엘...",
+                "th": "กลับมาบ้านนะ Liel...",
+                "zh-Hans": "该回家了，利尔……",
+                "zh-Hant": "該回家了，利爾……"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "parentId": 18,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Itzel",
+        "en": "Talk to Itzel",
+        "es": "Habla con Itzel.",
+        "fr": "Parler à Itzel",
+        "ja": "イツェルと会話する",
+        "ko": "이젤과 대화",
+        "th": "คุยกับอิตเซล",
+        "zh-Hans": "与伊泽尔交谈",
+        "zh-Hant": "與伊澤爾交談"
+      },
+      "entities": [
+        {
+          "entityId": 142900032,
+          "mapId": 8,
+          "blueprintType": "NPC204",
+          "name": "TsEntity_NPC_流放共鸣者2",
+          "areaId": 2301,
+          "position": {
+            "x": 760518,
+            "y": 710480,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_世界_三重冠塔_POI任务",
+          "flowIndex": 12,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "{Male=Freund;Female=Freundin} ...",
+                "en": "Friend...",
+                "es": "{Male=Amigo;Female=Amiga}...",
+                "fr": "{Male=Mon pote;Female=Mon amie}…",
+                "ja": "相棒……",
+                "ko": "친구...",
+                "th": "เพื่อน...",
+                "zh-Hans": "朋友……",
+                "zh-Hant": "朋友……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich kann Liel nicht von den Toten zurückbringen, aber ich habe seinen Tod gerächt, indem ich den Mörder getötet habe. Das ist alles, was ich tun kann.",
+                "en": "I can't bring Liel back from the dead, but I've avenged his death by destroying his killer. That's all I can do.",
+                "es": "No puedo traer a Liel de vuelta de la muerte, pero he vengado su muerte destruyendo a su asesino. Eso es todo lo que puedo hacer.",
+                "fr": "Rien ne pourra ramener Liel à la vie... La seule chose que je puisse faire, c'est de finir ce monstre moi-même.",
+                "ja": "リールを取り返せなかったが、仇討ち出来たのが、今のあたしの精一杯。",
+                "ko": "이것으로 리엘의 죽음을 메울 수는 없지만... 하지만 내가 죽인 괴물들은 어쩌면 내가 할 수 있는 유일한 일일지도 몰라",
+                "th": "ฉันทำให้ Liel ฟื้นคืนชีพไม่ได้ แต่ฉันได้ล้างแค้นให้เขาแล้วด้วยการกำจัดฆาตกรของเขา นั่นคือทั้งหมดที่ฉันทำได้",
+                "zh-Hans": "虽然这也弥补不了利尔的死……但手刃那个怪物，也许是我唯一能做的事。",
+                "zh-Hant": "雖然這也彌補不了利爾的死……但手刃那個怪物，也許是我唯一能做的事。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Also, hast du Fragen an mich?",
+                "en": "So, you got any questions for me?",
+                "es": "Así que, ¿tienes alguna pregunta para mí?",
+                "fr": "Alors, tu as des questions pour moi ?",
+                "ja": "何か聞きたいことはある？",
+                "ko": "혹시 나한테 뭐 물어보고 싶은 거라도 있어?",
+                "th": "มีอะไรอยากถามฉันงั้นเหรอ?",
+                "zh-Hans": "你有什么想问我的吗？",
+                "zh-Hant": "你有什麼想問我的嗎？"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              },
+              "options": [
+                {
+                  "text": {
+                    "de": "Über dich und Liel ...",
+                    "en": "About you and Liel...",
+                    "es": "Sobre ti y Liel...",
+                    "fr": "A propos de toi et Liel...",
+                    "ja": "あなたとリールのことについて……",
+                    "ko": "당신과 리엘에 대해서...",
+                    "th": "เรื่องของคุณกับลิเอล...",
+                    "zh-Hans": "关于你和利尔……",
+                    "zh-Hant": "關於你和利爾……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Über diesen Turm ...",
+                    "en": "About this tower...",
+                    "es": "Sobre esta torre...",
+                    "fr": "A propos de cette tour...",
+                    "ja": "このタワーについて……",
+                    "ko": "이 탑에 대해서...",
+                    "th": "เกี่ยวกับหอคอยแห่งนี้...",
+                    "zh-Hans": "关于这座塔……",
+                    "zh-Hant": "關於這座塔……"
+                  }
+                },
+                {
+                  "text": {
+                    "de": "Nichts weiter.",
+                    "en": "I don't have any.",
+                    "es": "Nada.",
+                    "fr": "Je n'en ai pas.",
+                    "ja": "特にない。",
+                    "ko": "궁금한 게 없어요",
+                    "th": "ไม่มีอะไรจะถาม",
+                    "zh-Hans": "没有了。",
+                    "zh-Hant": "沒有了。"
+                  }
+                }
+              ]
+            },
+            {
+              "text": {
+                "de": "Wir sind viele Meere gesegelt. Ich dachte immer, das Meer würde unser Grab sein.",
+                "en": "We sailed Sentinel knows how many seas. I always thought the ocean would be our grave.",
+                "es": "Hemos navegado por innumerables mares. Siempre pensé que algún día moriríamos juntos en el mar.",
+                "fr": "Nous deux avons bravé d'innombrables mers et d'océans. J'ai toujours cru que nous serons à la merci de ces vagues, un jour ou l'autre.",
+                "ja": "あたしら二人は多くの海域を渡ってきた。きっと最後は海で死ぬだろうと思ってた。",
+                "ko": "우리 남매는 수많은 바다를 건넜어. 난 항상 미래의 우리는 바다에서 함께 죽을 거라고 생각했지",
+                "th": "เราแล่นเรือผ่านทะเลมานับไม่ถ้วนซึ่งคงมีแต่เซนติเนลที่รู้ว่าเท่าไหร่ ฉันเคยคิดว่ามหาสมุทรนี่แหละจะกลายเป็นหลุมฝังศพของเรา",
+                "zh-Hans": "我们姐弟两个途径过无数片海域。我一直以为，未来某天我们会一起死在海上。",
+                "zh-Hant": "我們姐弟兩個途經過無數片海域。我一直以為，未來某天我們會一起死在海上。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nie gedacht, dass Liel an Land sterben würde ... in der Tiefe eines eisigen Turms ...",
+                "en": "Never thought Liel would meet his end on land... in the depth of an icy tower...",
+                "es": "Nunca imaginé que el final de Liel sería en tierra... en lo alto de una torre helada...",
+                "fr": "Mais Liel trouvant la mort sur le rivage... dans une tour aussi froide, au milieu de nulle part.",
+                "ja": "まさか、リールは陸でお迎えがくるなんて。しかもこんな、冷たいタワーで……",
+                "ko": "하지만 리엘의 종착점이 육지, 그것도 차갑고 높은 탑일 거라고는 생각지도 못했어...",
+                "th": "ไม่คิดเลยว่า Liel จะต้องมาพบจุดจบบนดินแดนนี้... ลึกเข้าไปในหอคอยอันหนาวเย็น",
+                "zh-Hans": "但没想到，利尔的终点会是在陆地上，而且是在一座冰冷的高塔里……",
+                "zh-Hant": "但沒想到，利爾的終點會是在陸地上，而且是在一座冰冷的高塔裡……"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe eine Theorie über den Turm.",
+                "en": "I've got a theory for the tower.",
+                "es": "Tengo una teoría sobre la torre.",
+                "fr": "Je me fais des idées à ce sujet, ces tours.",
+                "ja": "それなら、あたしなりに考えた。",
+                "ko": "이것에 대해선 내게 이미 기본적인 추측이 하나 있어",
+                "th": "ฉันมีทฤษฎีเกี่ยวกับหอคอยแห่งนี้",
+                "zh-Hans": "关于这个，我已经有了一个基本的猜想。",
+                "zh-Hant": "關於這個，我已經有了一個基本的猜想。"
+              },
+              "id": 6,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe hinten in den meisten Ecken kleine Geräte versteckt gesehen ... sehr ähnlich dem gebrochenen Halo oben auf dem Turm.",
+                "en": "I saw small devices hidden away in most corners back there... much like the fractured halo at the top of the tower.",
+                "es": "Vi pequeños dispositivos escondidos en la mayoría de las esquinas... Muy parecidos al halo fracturado en la cima de la torre.",
+                "fr": "J'ai vu toutes sortes de dispositifs cachés dans des coins... cette auréole brisée au sommet est probablement l'appareil qui les contrôle.",
+                "ja": "タワーに登りながら、そこかしこに小型装置が隠されているのに気付いた。てっぺんで壊れてたあの光輪みたいな。",
+                "ko": "이 탑을 오를 때, 난 탑 안에 많은 작은 장치가 숨겨져 있다는 걸 알아차렸어. 탑 꼭대기의 깨진 그 아우라처럼 말야",
+                "th": "ฉันสังเกตเห็นอุปกรณ์เล็กๆ ซ่อนอยู่เกือบทุกมุม... คล้ายวงแสงแตกร้าวบนยอดหอคอย",
+                "zh-Hans": "攀登这座塔时，我注意到塔里藏有许多小型的装置……就和塔顶碎裂的那个光环一样。",
+                "zh-Hant": "攀登這座塔時，我注意到塔裡藏有許多小型的裝置……就和塔頂碎裂的那個光環一樣。"
+              },
+              "id": 7,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Meine Vermutung ist, dass der Turm ein Labor ist und diese Geräte als eine Art experimentelle Echo-Kontrolle verwendet wurden.",
+                "en": "My guess is the tower is a lab, and those devices were used as some kind of experimental Echo control.",
+                "es": "Supongo que la torre es un laboratorio y esos dispositivos se usaron como algún tipo de control experimental de Eco.",
+                "fr": "Je pense que cet endroit est un laboratoire pour fabriquer des dispositifs de contrôle d'Écho.",
+                "ja": "ここは音骸の制御装置の製造所じゃないか？",
+                "ko": "내 추측으로는, 이곳은 일종의 에코 제어 장치를 만드는 실험실이야",
+                "th": "ฉันเดาว่าหอคอยนี้คือห้องทดลอง และอุปกรณ์พวกนี้ก็มีไว้เพื่อใช้ทดสอบอะไรบางอย่างในการควบคุมเอคโค่",
+                "zh-Hans": "我猜想，这里是制造某种声骸控制装置的实验室。",
+                "zh-Hant": "我猜想，這裡是製造某種聲骸控制裝置的實驗室。"
+              },
+              "id": 8,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Diese kontrollierten Echos waren extrem gefährlich ... das genaue Gegenteil der kuscheligen Echos in Rinascita.",
+                "en": "Those controlled Echoes were extremely dangerous... the exact opposite of the cuddly Echoes I heard about in Rinascita.",
+                "es": "Esos Ecos controlados eran extremadamente peligrosos... Todo lo contrario a los Ecos adorables en Rinascita.",
+                "fr": "Les Échos contrôlés par cet appareil sont redoutables… Contrairement aux adorables Échos de Rinascita.",
+                "ja": "でも、その制御下の音骸は危ない……噂に聞くリナシータ人に役立つのとはまるで違う。",
+                "ko": "하지만 보다시피, 이런 장치에 의해 제어되는 에코는 매우 위험해... 리나시타의 친근한 에코와 같은 소문과는 정반대야",
+                "th": "เอคโค่ที่ถูกควบคุมพวกนั้นอันตรายมาก... ซึ่งแตกต่างจากเอคโค่น่ากอดที่ฉันเคยได้ยินในรินาซิตา",
+                "zh-Hans": "但如你所见，被这种装置控制的声骸十分危险……和传说中黎那汐塔的友善声骸根本截然相反。",
+                "zh-Hant": "但如你所見，被這種裝置控制的聲骸十分危險……和傳說中黎那汐塔的友善聲骸根本截然相反。"
+              },
+              "id": 9,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Jemand im Land der Echos wollte sie als Waffen einsetzen ...",
+                "en": "Someone in the Land of Echoes sought to weaponize them...",
+                "es": "Alguien en la tierra de los Ecos buscaba convertirlos en armas...",
+                "fr": "Certains, au « Pays des Échos », usent des méthodes tordues pour les contrôler…",
+                "ja": "音骸の国リナシータでは、こんな方法で音骸を操る人もいるなんて……",
+                "ko": "에코 랜드 리나시타에서 이런 식으로 에코를 통제하는 사람이 있다니...",
+                "th": "มีคนในดินแดนแห่งเอคโค่พยายามที่จะใช้เอคโค่เป็นอาวุธ...",
+                "zh-Hans": "声骸之国黎那汐塔里，原来也有人会用这种手段控制声骸……",
+                "zh-Hant": "聲骸之國黎那汐塔裡，原來也有人會用這種手段控制聲骸……"
+              },
+              "id": 10,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das gebrochene Halo des Turms muss das größte und mächtigste ihrer Geräte gewesen sein.",
+                "en": "The tower's broken halo must have been the largest and most powerful of their devices.",
+                "es": "El halo roto de la torre debe haber sido el más grande y poderoso de sus dispositivos.",
+                "fr": "Cette auréole brisée au sommet est probablement l'appareil qui les contrôle, mais en tout cas, il paraît que c'est incomplet.",
+                "ja": "てっぺんで壊れてた光輪って、たぶん一番強力な制御装置のひとつかも。未完成っぽいけど。",
+                "ko": "탑 꼭대기의 깨진 아우라는 아마도 가장 강력한 제어 장치일 거야. 하지만 아직 완벽히 완성되지는 않았어",
+                "th": "วงแสงที่แตกหักของหอคอยต้องเป็นอุปกรณ์ที่ใหญ่ที่สุดและทรงพลังที่สุดของพวกนั้นแน่",
+                "zh-Hans": "塔顶那个碎裂的光环，应该是其中效能最强的控制装置，但它还没有完全完成。",
+                "zh-Hant": "塔頂那個碎裂的光環，應該是其中效能最強的控制裝置，但它還沒有完全完成。"
+              },
+              "id": 11,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich schaudere bei dem Gedanken an die Schrecken, die entfesselt würden, wenn es jemals fertiggestellt würde ...",
+                "en": "I shudder to think of the horrors that'd be unleashed it ever got completed...",
+                "es": "Me estremezco al pensar en los horrores que se desatarían si alguna vez se completara...",
+                "fr": "Je n'imagine même pas tout le mal que cela aurait pu engendrer si jamais, c'était abouti...",
+                "ja": "あれが完成したら、どれだけ恐ろしいヤツを操れるようになるのか……",
+                "ko": "그것이 완성되면 얼마나 무서운 존재가 될지는 상상하기도 싫어...",
+                "th": "ฉันขนลุกจนตัวสั่นเมื่อคิดถึงความสยดสยองที่จะเกิดขึ้น หากอุปกรณ์นี้สร้างเสร็จ...",
+                "zh-Hans": "我不敢想象它完成后，能驱使多么恐怖的存在……",
+                "zh-Hant": "我不敢想像它完成後，能驅使多麼恐怖的存在……"
+              },
+              "id": 12,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Das Einzige, was mir von Liel geblieben ist, ist dieser Kompassanhänger.",
+                "en": "The only thing I have left of Liel is this compass pendant.",
+                "es": "Lo único que me queda de Liel es este colgante brújula.",
+                "fr": "À présent, ce pendentif est tout ce qui me reste de Liel.",
+                "ja": "リールが残してくれたものは、このペンダントだけ。",
+                "ko": "내게 남은 이 펜던트가 이제 리엘이야",
+                "th": "ของของ Liel เพียงชิ้นเดียวที่ฉันเหลืออยู่คือจี้เข็มทิศอันนี้",
+                "zh-Hans": "现在我全身上下，只有一个吊坠是属于利尔的了。",
+                "zh-Hant": "現在我全身上下，只有一個吊墜是屬於利爾的了。"
+              },
+              "id": 13,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Es war mein Geschenk an ihn, nachdem wir die Beute von unserem ersten Job aufgeteilt haben.",
+                "en": "It was my gift to him after we divvied the spoils from our first job.",
+                "es": "Cuando ganamos nuestra primera fortuna, le compré este colgante como regalo.",
+                "fr": "Je lui en avais fait cadeau après notre premier boulot réussi.",
+                "ja": "初めて金を稼いだ時、あたしが買ってやった物。",
+                "ko": "우리가 처음으로 돈을 벌었을 때, 난 이 펜던트를 사서 리엘에게 줬어",
+                "th": "ฉันมอบจี้อันนี้เป็นของขวัญให้เขาหลังจากเราแบ่งของที่ได้จากการทำงานครั้งแรกของเรา",
+                "zh-Hans": "我们刚挣到第一桶金时，我买下这个吊坠送给了他。",
+                "zh-Hant": "我們剛掙到第一桶金時，我買下這個吊墜送給了他。"
+              },
+              "id": 14,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Immer wenn wir auf See verloren gingen, hat er uns immer wieder nach Hause geführt.",
+                "en": "Whenever we got lost at sea, it always guided us back home.",
+                "es": "Es también una brújula... Si nos perdíamos en el mar, con ella podíamos encontrar el camino de regreso a casa.",
+                "fr": "C'est une boussole... Chaque fois que nous nous perdions en mer, elle nous guidait pour rentrer chez nous.",
+                "ja": "これさ、コンパスにも使えるんだ……海で遭難したら、これで帰れる。",
+                "ko": "이건 나침판의 기능도 있어서... 바다로 나갔다가 길을 잃으면 집으로 가는 길을 찾을 수 있지",
+                "th": "ทุกครั้งที่เราหลงทางในทะเล สิ่งนี้ก็ช่วยนำทางเรากลับบ้านทุกครั้ง",
+                "zh-Hans": "它同时是一个罗盘……出海时如果迷了路，用它就能找到回家的方向。",
+                "zh-Hant": "它同時是一個羅盤……出海時如果迷了路，用它就能找到回家的方向。"
+              },
+              "id": 15,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber Liel hatte so Angst, es zu verlieren, deshalb hat er ihn mir zur Aufbewahrung gegeben.",
+                "en": "But Liel was so afraid of losing it, so he left it with me for safekeeping.",
+                "es": "Pero Liel tenía tanto miedo de perderlo, que lo dejó conmigo para que lo cuidara.",
+                "fr": "Il avait toujours peur de le perdre, alors il me l'a confié pour que je veille dessus.",
+                "ja": "無くさないようにと、いつもあたしに預けてたんだ。",
+                "ko": "하지만 리엘은 잊어버릴까 두려운지 내게 줬어",
+                "th": "แต่ Liel กลัวที่จะทำมันหายมาก เขาก็เลยฝากไว้กับฉันให้ดูแลมัน",
+                "zh-Hans": "但他总担心自己弄丢，所以放在了我这。",
+                "zh-Hant": "但他總擔心自己弄丟，所以放在了我這。"
+              },
+              "id": 16,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Nachdem wir diesen Turm verlassen haben, werden Insula und ich unser Schiff reparieren und diesen elenden Ort verlassen.",
+                "en": "After we leave this tower, Insula and I will repair our ship and leave this wretched place.",
+                "es": "Después de que dejemos esta torre, Ínsula y yo repararemos nuestro barco y dejaremos este lugar triste.",
+                "fr": "Quand nous sortirons de cette tour, je rejoindrai Insula pour réparer le navire et quitter ce maudit endroit.",
+                "ja": "ここから出たら、インシュラと一緒に船を修理して、ここを離れるつもりだ。",
+                "ko": "이 탑에서 나가면, 난 이안수라와 배를 수리해서 이곳을 떠날 준비를 할 거야",
+                "th": "หลังจากที่เราออกจากหอคอยนี้แล้ว อินซูลากับฉันจะซ่อมเรือ แล้วออกไปจากสถานที่ชั่วร้ายนี่",
+                "zh-Hans": "出了这座塔，我跟伊恩苏拉准备去想把船修好，然后离开这里。",
+                "zh-Hant": "出了這座塔，我跟伊恩蘇拉準備去想把船修好，然後離開這裡。"
+              },
+              "id": 17,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Wenn wir wieder in vertraute Gewässer zurückkehren, werde ich diesen Kompass ins Meer werfen.",
+                "en": "Once we return to familiar waters, I'll throw this compass out at sea.",
+                "es": "Una vez que regresemos a aguas conocidas, tiraré esta brújula al mar.",
+                "fr": "Je jeterais cette boussole dans la mer quand nous serons dans des eaux connues.",
+                "ja": "そして馴染みの海域に戻ったら、このコンパスを海に捨てる。",
+                "ko": "그리고 익숙한 바다로 돌아가면 이 나침반을 바다에 던져버릴 거야",
+                "th": "พอเรากลับไปยังน่านน้ำที่คุ้นเคยแล้ว ฉันจะโยนเข็มทิศอันนี้ลงทะเล",
+                "zh-Hans": "等回到熟悉的海域后，我要把这个罗盘扔进海里。",
+                "zh-Hant": "等回到熟悉的海域後，我要把這個羅盤扔進海裡。"
+              },
+              "id": 18,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Vielleicht, nur vielleicht, wird Liel unserem Kurs folgen, den Kompass finden und ihn nach Hause führen …",
+                "en": "Maybe, just maybe, Liel will follow our ship's course, find the compass, and let it guide him home...",
+                "es": "Quizás, Liel siga el rumbo de nuestro barco, encuentre la brújula y lo guíe de regreso a casa...",
+                "fr": "Peut-être, Liel retrouvera son chemin en mer, la boussole pourra ensuite le guider jusqu'à chez lui...",
+                "ja": "こいつがリールを導いて、家まで連れ戻してくれるはず。きっとそうさ……",
+                "ko": "어쩌면 어둠 속에서, 이게 리엘을 바다로, 그리고 집으로 가는 길로 안내해 줄 거야...",
+                "th": "บางทีนะบางที Liel อาจจะตามเส้นทางเรือของเรา เจอเข็มทิศนี่ แล้วก็ใช้มันนำทางเพื่อกลับมาบ้านก็ได้...",
+                "zh-Hans": "也许冥冥之中，它能带利尔回到那片海域，找到回家的路……",
+                "zh-Hant": "也許冥冥之中，它能帶利爾回到那片海域，找到回家的路……"
+              },
+              "id": 19,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "flowId": "剧情_2_0_世界_三重冠塔_POI任务",
+          "flowIndex": 12,
+          "stateId": 4,
+          "talks": [
+            {
+              "text": {
+                "de": "Insula wirkt niedergeschlagen, als ob alles, was er sieht und hört, bedeutungslos wäre.",
+                "en": "Insula appears downcast as if everything he sees and hears means nothing.",
+                "es": "Ínsula guarda un largo silencio, como si nada de lo que ve o escucha tuviera ya importancia.",
+                "fr": "Insula semble abattu comme si tout ce qu'il voit et entend ne signifie rien.",
+                "ja": "インシュラは黙り込んだままだ。まるでこの世界は自分と無関係だと言わんばかりに。",
+                "ko": "이안수라는 오랫동안 침묵을 지켰다. 마치 이곳의 모든 것이 더 이상 그가 듣고 볼 가치가 없는 것처럼 느껴졌다",
+                "th": "อินซูลาดูหม่นหมอง ราวกับทุกสิ่งที่เขาเห็นและได้ยินไม่มีค่าอะไรเลย",
+                "zh-Hans": "伊恩苏拉久久地沉默着，仿佛这里的一切都不再值得他去听、去看。",
+                "zh-Hant": "伊恩蘇拉久久地沉默著，彷彿這裡的一切都不再值得他去聽、去看。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 83,
+                "name": {
+                  "zh-Hans": "Speaker_83_Name"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Geh tief in den Turm der Herrschaft",
+        "en": "Go deeper into the Command Rise",
+        "es": "Adéntrate más en la Torre de Comando.",
+        "fr": "Explorer la Tour de domination",
+        "ja": "ドミニオンタワーの奥に向かう",
+        "ko": "통솔의 탑에 깊게 진입",
+        "th": "เดินลึกเข้าไปในหอคอยบัญชาการ",
+        "zh-Hans": "深入统驭冠塔",
+        "zh-Hant": "深入統馭冠塔"
+      },
+      "entities": [
+        {
+          "entityId": 142000600,
+          "mapId": 8,
+          "blueprintType": "Collect117",
+          "name": "TsEntity_植物117_龙衔珠337",
+          "areaId": 705,
+          "position": {
+            "x": -98449,
+            "y": 280283,
+            "z": 3886
+          },
+          "rotation": {
+            "x": -52,
+            "y": 21,
+            "z": -13
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900289,
+          "mapId": 8,
+          "blueprintType": "Gameplay292",
+          "name": "TsEntity_特殊D_范围指定9",
+          "areaId": 2302,
+          "position": {
+            "x": 836150,
+            "y": 680068,
+            "z": 9317
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 24,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900028,
+          "mapId": 8,
+          "blueprintType": "Gameplay102",
+          "name": "TsEntity_特殊_玩法中心实体6",
+          "areaId": 2301,
+          "position": {
+            "x": 827282,
+            "y": 675760,
+            "z": 9821
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 25,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900029,
+          "mapId": 8,
+          "blueprintType": "Gameplay102",
+          "name": "TsEntity_特殊_玩法中心实体7",
+          "areaId": 2301,
+          "position": {
+            "x": 771896,
+            "y": 699207,
+            "z": 428
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 26,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900030,
+          "mapId": 8,
+          "blueprintType": "Gameplay102",
+          "name": "TsEntity_特殊_玩法中心实体8",
+          "areaId": 2302,
+          "position": {
+            "x": 841323,
+            "y": 681665,
+            "z": 3493
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 27,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900031,
+          "mapId": 8,
+          "blueprintType": "NPC203",
+          "name": "TsEntity_NPC_流放者首领2",
+          "areaId": 2301,
+          "position": {
+            "x": 760671,
+            "y": 710743,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -165
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 28,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900032,
+          "mapId": 8,
+          "blueprintType": "NPC204",
+          "name": "TsEntity_NPC_流放共鸣者2",
+          "areaId": 2301,
+          "position": {
+            "x": 760518,
+            "y": 710480,
+            "z": 34096
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 29,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900033,
+          "mapId": 8,
+          "blueprintType": "Teleport3",
+          "name": "TsEntity_传送_华表2_大5",
+          "areaId": 23,
+          "position": {
+            "x": 818475,
+            "y": 647828,
+            "z": 9236
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 132
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 30,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 31,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 32,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142000806,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录9",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 14000,
+            "z": 12800
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900164,
+          "mapId": 8,
+          "blueprintType": "Gameplay292",
+          "name": "TsEntity_特殊D_范围指定5",
+          "areaId": 2302,
+          "position": {
+            "x": 833176,
+            "y": 692716,
+            "z": 10078
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900240,
+          "mapId": 2505,
+          "blueprintType": "Gameplay369",
+          "name": "TsEntity_特殊_触发器_可移动2",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 12190,
+            "z": 13669
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 33,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142000609,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录11",
+          "areaId": 0,
+          "position": {
+            "x": 4600,
+            "y": 8150,
+            "z": 12783
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000806,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录9",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 14000,
+            "z": 12800
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900165,
+          "mapId": 8,
+          "blueprintType": "Gameplay292",
+          "name": "TsEntity_特殊D_范围指定6",
+          "areaId": 2302,
+          "position": {
+            "x": 835109,
+            "y": 695823,
+            "z": 9138
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900241,
+          "mapId": 2505,
+          "blueprintType": "Gameplay369",
+          "name": "TsEntity_特殊_触发器_可移动3",
+          "areaId": 0,
+          "position": {
+            "x": 3170,
+            "y": 8960,
+            "z": 11827
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 34,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142000609,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录11",
+          "areaId": 0,
+          "position": {
+            "x": 4600,
+            "y": 8150,
+            "z": 12783
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000806,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录9",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 14000,
+            "z": 12800
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000807,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录12",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 3900,
+            "z": 14700
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900166,
+          "mapId": 8,
+          "blueprintType": "Gameplay292",
+          "name": "TsEntity_特殊D_范围指定7",
+          "areaId": 2302,
+          "position": {
+            "x": 831996,
+            "y": 688680,
+            "z": 11171
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900242,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Dungeon/2_0_Kamola1",
+          "name": "TsEntity_副本_可破坏气球14",
+          "areaId": 2302,
+          "position": {
+            "x": 842969,
+            "y": 684862,
+            "z": 5350
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -35
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 35,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142000609,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录11",
+          "areaId": 0,
+          "position": {
+            "x": 4600,
+            "y": 8150,
+            "z": 12783
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000806,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录9",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 14000,
+            "z": 12800
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000807,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录12",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 3900,
+            "z": 14700
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900167,
+          "mapId": 8,
+          "blueprintType": "Gameplay292",
+          "name": "TsEntity_特殊D_范围指定8",
+          "areaId": 2302,
+          "position": {
+            "x": 829457,
+            "y": 685384,
+            "z": 11905
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900243,
+          "mapId": 2505,
+          "blueprintType": "Gameplay369",
+          "name": "TsEntity_特殊_触发器_可移动5",
+          "areaId": 0,
+          "position": {
+            "x": -2700,
+            "y": 9000,
+            "z": 14800
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 36,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142000609,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录11",
+          "areaId": 0,
+          "position": {
+            "x": 4600,
+            "y": 8150,
+            "z": 12783
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000806,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录9",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 14000,
+            "z": 12800
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142000807,
+          "mapId": 2505,
+          "blueprintType": "Gameplay098",
+          "name": "TsEntity_特殊_状态记录12",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 3900,
+            "z": 14700
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900167,
+          "mapId": 8,
+          "blueprintType": "Gameplay292",
+          "name": "TsEntity_特殊D_范围指定8",
+          "areaId": 2302,
+          "position": {
+            "x": 829457,
+            "y": 685384,
+            "z": 11905
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900282,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条15",
+          "areaId": 2302,
+          "position": {
+            "x": 840062,
+            "y": 681800,
+            "z": 3842
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900283,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条16",
+          "areaId": 2302,
+          "position": {
+            "x": 843142,
+            "y": 681704,
+            "z": 4442
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900284,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条17",
+          "areaId": 2302,
+          "position": {
+            "x": 844296,
+            "y": 683112,
+            "z": 5070
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 41,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verlasse den Turm der Herrschaft",
+        "en": "Leave the Command Rise",
+        "es": "Sale de la Torre de Comando.",
+        "fr": "Quitter la Tour de domination",
+        "ja": "ドミニオンタワーから出る",
+        "ko": "통솔의 탑 나가기",
+        "th": "ออกจากหอคอยบัญชาการ",
+        "zh-Hans": "离开统驭冠塔",
+        "zh-Hant": "離開統馭冠塔"
+      },
+      "entities": [
+        {
+          "entityId": 142900239,
+          "mapId": 2505,
+          "blueprintType": "Gameplay125",
+          "name": "TsEntity_副本_副本出口2",
+          "areaId": 0,
+          "position": {
+            "x": -322,
+            "y": 21479,
+            "z": 55983
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 42,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142000016,
+          "mapId": 100,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条13",
+          "areaId": 0,
+          "position": {
+            "x": 89350,
+            "y": 116050,
+            "z": 6100
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900240,
+          "mapId": 2505,
+          "blueprintType": "Gameplay369",
+          "name": "TsEntity_特殊_触发器_可移动2",
+          "areaId": 0,
+          "position": {
+            "x": 0,
+            "y": 12190,
+            "z": 13669
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 43,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142000028,
+          "mapId": 100,
+          "blueprintType": "Gameplay132",
+          "name": "TsEntity_玩法_黑石污染_黑石锁7",
+          "areaId": 0,
+          "position": {
+            "x": 102972,
+            "y": 128493,
+            "z": 1222
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 90,
+            "y": 90,
+            "z": 90
+          }
+        },
+        {
+          "entityId": 142900242,
+          "mapId": 8,
+          "blueprintType": "Gameplay_Dungeon/2_0_Kamola1",
+          "name": "TsEntity_副本_可破坏气球14",
+          "areaId": 2302,
+          "position": {
+            "x": 842969,
+            "y": 684862,
+            "z": 5350
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -35
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 50,
+      "parentId": 22,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 51,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900119,
+          "mapId": 8,
+          "blueprintType": "Monster020",
+          "name": "TsEntity_小怪_流放者男撬棍",
+          "areaId": 2301,
+          "position": {
+            "x": 799611,
+            "y": 676639,
+            "z": 579
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -110
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 52,
+      "parentId": 22,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Verfolge den Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Persigue al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを追撃する",
+        "ko": "파트리시우스 귀족 추격",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "追击毒冠贵族",
+        "zh-Hant": "追擊毒冠貴族"
+      },
+      "dialogs": []
+    },
+    {
+      "id": 39,
+      "parentId": 44,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Betreten",
+        "en": "Enter",
+        "es": "Sube a la cima de la torre.",
+        "fr": "Entrer",
+        "ja": "塔の頂上まで進む",
+        "ko": "탑 꼭대기로 진입",
+        "th": "เข้า",
+        "zh-Hans": "进入塔顶",
+        "zh-Hant": "進入塔頂"
+      },
+      "entities": [
+        {
+          "entityId": 142900296,
+          "mapId": 8,
+          "blueprintType": "Treasure_LNXT_Update04",
+          "name": "TsEntity_2_0_豪华物资箱_玩法刷新3",
+          "areaId": 2302,
+          "position": {
+            "x": 851312,
+            "y": 691634,
+            "z": 4798
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 91
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 45,
+      "parentId": 44,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 46,
+      "parentId": 44,
+      "type": "AlwaysFalse",
+      "dialogs": []
+    },
+    {
+      "id": 37,
+      "parentId": 45,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Itzel",
+        "en": "Talk to Itzel",
+        "es": "Habla con Itzel.",
+        "fr": "Parler à Itzel",
+        "ja": "イツェルと会話する",
+        "ko": "이젤과 대화",
+        "th": "คุยกับอิตเซล",
+        "zh-Hans": "和伊泽尔交谈",
+        "zh-Hant": "和伊澤爾交談"
+      },
+      "entities": [
+        {
+          "entityId": 142900284,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条17",
+          "areaId": 2302,
+          "position": {
+            "x": 844296,
+            "y": 683112,
+            "z": 5070
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_世界_三重冠塔_POI任务",
+          "flowIndex": 4,
+          "stateId": 3,
+          "talks": [
+            {
+              "text": {
+                "de": "Liel ...",
+                "en": "Liel...",
+                "es": "Liel...",
+                "fr": "Liel...",
+                "ja": "リール……",
+                "ko": "리엘...",
+                "th": "ลิเอล...",
+                "zh-Hans": "利尔……",
+                "zh-Hant": "利爾……"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Ich habe nur einen Witz über die Fischinnereien gemacht. Geh nicht, Liel, ich serviere dir die prallste Seite des fettesten Fisches, den wir haben.",
+                "en": "I was kidding about the fish guts. Don't go Liel, I'll serve you the plumpest side of the fattest fish we have.",
+                "es": "Estaba bromeando. En cuanto regreses, te freiré el pescado más fresco, y solo la parte que más te gusta, el vientre.",
+                "fr": "Je ne voulais pas dire ça tout à l'heure. Je veux juste que tu rentres sain et sauf. Je te préparerai un ventre de poisson mérou pané, ton plat préféré…",
+                "ja": "残飯なんてもちろん嘘。姉ちゃんが、とれたての魚を焼いてあげる。腹身の部分、お前が大好物の……！",
+                "ko": "전에는 농담한 거야... 돌아오기만 하면 내가 꼭 가장 신선한 생선으로 구워줄게, 그리고 네가 가장 좋아하는 생선 배만 튀겨줄게",
+                "th": "พี่ล้อเล่นนะ เรื่องไส้ปลานั่นน่ะ อย่าไปเลยนะ Liel พี่จะเอาปลาชิ้นที่อวบที่สุดจากปลาที่อ้วนที่สุดที่เรามีให้นายกินนะ",
+                "zh-Hans": "我之前是开玩笑的，只要你回来了，我一定煎最新鲜的鱼给你吃，而且只煎你最爱吃的鱼肚。",
+                "zh-Hant": "我之前是開玩笑的，只要你回來了，我一定煎最新鮮的魚給你吃，而且只煎你最愛吃的魚肚。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Weißt du ... Liels Liebe zum Fischen hat mich erst dazu gebracht, zu angeln.",
+                "en": "You know... Liel's love of fish was what got me into fishing.",
+                "es": "Sabes... El amor de Liel por el pescado fue lo que me llevó a la pesca.",
+                "fr": "Tu sais... Je suis devenue pêcheuse parce que Liel adore manger le poisson.",
+                "ja": "姉ちゃん実はさ、お前が魚好きだから、釣りが得意になれたのさ。",
+                "ko": "사실 난 리엘이 생선을 좋아해서 낚시라는 취미를 갖게 됐거든",
+                "th": "รู้อะไรไหม... ที่ฉันเริ่มตกปลาก็เพราะ Liel ชอบปลานี่แหละ",
+                "zh-Hans": "朋友……其实我也是因为利尔喜欢吃鱼，才有了钓鱼这个爱好。",
+                "zh-Hant": "朋友……其實我也是因為利爾喜歡吃魚，才有了釣魚這個愛好。"
+              },
+              "id": 3,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Du kannst all meinen Fang haben, sobald wir hier raus sind. Sie bedeuten mir jetzt nichts mehr.",
+                "en": "You can have all my catch once we're out of here. They're meaningless to me now.",
+                "es": "Cuando salgamos de esta torre, te daré todos los peces que pesqué en la orilla. Ya no tienen sentido para mí",
+                "fr": "Tu pourras avoir tous mes poissons dès notre sortie de la tour. Ça n'a plus d'importance maintenant.",
+                "ja": "このタワーを出たら、釣れた魚を全部やる。ほら、持ってても仕方ないだろ？",
+                "ko": "이 탑에서 나가면, 내가 해안가에서 잡은 물고기를 다 줄게, 그것들은 더 이상 나에겐 의미가 없어",
+                "th": "พอเราออกไปจากที่นี่แล้ว คุณก็เอาปลาที่ฉันจับมาได้ไปให้หมดได้เลย ตอนนี้มันไม่มีความหมายอะไรกับฉันแล้ว",
+                "zh-Hans": "等出了这座塔，我在岸边钓的那些鱼就都给你吧。它们对我已经没有意义了。",
+                "zh-Hant": "等出了這座塔，我在岸邊釣的那些魚就都給你吧。它們對我已經沒有意義了。"
+              },
+              "id": 4,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Aber bevor wir gehen, muss das Monster oben auf dem Turm ausgeschaltet werden.",
+                "en": "But before we leave, that monster at the top of the tower must die.",
+                "es": "Por supuesto... después de matar al monstruo en la cima de la torre.",
+                "fr": "Mais avant de partir, ce monstre au sommet de la tour doit mourir.",
+                "ja": "もちろん――あのクソをブチ殺してからね……！",
+                "ko": "물론 이 탑 꼭대기에 있는 괴물을 죽인 후에 말이지!",
+                "th": "แต่ก่อนที่เราจะออกไป สัตว์ประหลาดที่อยู่ชั้นบนสุดของหอคอยจะต้องตาย",
+                "zh-Hans": "当然——是在杀了这个塔顶的怪物之后。",
+                "zh-Hant": "當然——是在殺了這個塔頂的怪物之後。"
+              },
+              "id": 5,
+              "speaker": {
+                "id": 50008,
+                "name": {
+                  "zh-Hans": "伊泽尔"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "parentId": 46,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Sprich mit Insula",
+        "en": "Talk to Insula",
+        "es": "Habla con Ínsula.",
+        "fr": "Parler à Insula",
+        "ja": "インシュラと会話する",
+        "ko": "이안수라와 대화",
+        "th": "คุยกับอินซูลา",
+        "zh-Hans": "和伊恩苏拉交谈",
+        "zh-Hant": "和伊恩蘇拉交談"
+      },
+      "entities": [
+        {
+          "entityId": 142900283,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条16",
+          "areaId": 2302,
+          "position": {
+            "x": 843142,
+            "y": 681704,
+            "z": 4442
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": [
+        {
+          "flowId": "剧情_2_0_世界_三重冠塔_POI任务",
+          "flowIndex": 4,
+          "stateId": 2,
+          "talks": [
+            {
+              "text": {
+                "de": "Liel ... Ich habe ihn darauf trainiert, irgendwann unsere Crew zu führen.",
+                "en": "Liel... I was training him to lead our crew someday.",
+                "es": "Liel... Siempre lo he considerado como mi sucesor.",
+                "fr": "Ce gamin... Je l'ai préparé pour devenir le prochain capitaine de l'équipage.",
+                "ja": "こいつを……俺の後を継ぐのはこいつしかいないって、ずっと面倒をみてたのによ。",
+                "ko": "그 녀석... 난 줄곧 그 녀석을 내 후계자로 삼아 키워왔는데...",
+                "th": "Liel... ฉันกำลังฝึกเขาให้กลายเป็นคนที่จะมาเป็นหัวหน้าลูกเรือในสักวันหนึ่ง",
+                "zh-Hans": "那个小子……我一直是把他当作接班人来培养的。",
+                "zh-Hant": "那個小子……我一直是把他當作接班人來培養的。"
+              },
+              "id": 1,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            },
+            {
+              "text": {
+                "de": "Komm, lass uns gehen ... was auch immer uns im Weg steht, wird zu Brei geschlagen.",
+                "en": "Come friend, let's go... whatever's in our way will get smashed to a pulp.",
+                "es": "Vámonos. Ahora solo quiero destrozar todo lo que se nos cruce.",
+                "fr": "Allons-y, mon {Male=ami;Female=amie}. Actuellement, j'ai envie de bastonner tout ce qui se mettra en travers de mon chemin.",
+                "ja": "友よ、やろうぜ。これ以上俺は、自分を抑えきれねえ……！",
+                "ko": "가자... 나 지금 모든 걸 부숴버리고 싶단 말이야",
+                "th": "มาเถอะเพื่อน ไปกันเถอะ... ฉันจะซัดทุกอย่างที่มาขวางทางเราให้เละ",
+                "zh-Hans": "朋友，我们走吧……我现在只想砸烂等会儿碰到的所有东西。",
+                "zh-Hant": "朋友，我們走吧……我現在只想砸爛等會碰到的所有東西。"
+              },
+              "id": 2,
+              "speaker": {
+                "id": 1435,
+                "name": {
+                  "zh-Hans": "伊恩苏拉"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "parentId": 48,
+      "type": "ChildQuest",
+      "tip": {
+        "de": "Besiege Tiefen Patrizier",
+        "en": "Pursue the Abyssal Patricius",
+        "es": "Derrota al Patricius Abisal.",
+        "fr": "Rattraper le Patricius abyssal",
+        "ja": "アビサル・パトリシウスを倒す",
+        "ko": "파트리시우스 귀족 격파",
+        "th": "ไล่ล่า Abyssal Patricius",
+        "zh-Hans": "击败毒冠贵族",
+        "zh-Hant": "擊敗毒冠貴族"
+      },
+      "entities": [
+        {
+          "entityId": 142900282,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条15",
+          "areaId": 2302,
+          "position": {
+            "x": 840062,
+            "y": 681800,
+            "z": 3842
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900283,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条16",
+          "areaId": 2302,
+          "position": {
+            "x": 843142,
+            "y": 681704,
+            "z": 4442
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        },
+        {
+          "entityId": 142900284,
+          "mapId": 8,
+          "blueprintType": "Gameplay293",
+          "name": "TsEntity_特殊_通用样条17",
+          "areaId": 2302,
+          "position": {
+            "x": 844296,
+            "y": 683112,
+            "z": 5070
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 100,
+            "y": 100,
+            "z": 100
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "id": 44,
+      "parentId": 48,
+      "type": "ParallelSelect",
+      "dialogs": []
+    },
+    {
+      "id": 48,
+      "parentId": 50,
+      "type": "Sequence",
+      "dialogs": []
+    },
+    {
+      "id": 49,
+      "parentId": 50,
+      "type": "QuestFailed",
+      "dialogs": []
+    }
+  ]
+}
